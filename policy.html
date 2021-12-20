@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no" />
+    <title>초이스스탁</title>
+    <meta name="robots" content="초이스스탁US - 미국주식 쉽고 편리하게'">
+    <meta name="description" content="투자를 쉽고 편리하게, 미국주식가이드, 종목분석, 종목토론, 데이터히어로">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="theme-color" content="#2C295D">
+    <!-- 오픈 그래프 -->
+    <meta property="og:title" content="초이스스탁US - 미국주식 쉽고 편리하게'" />
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="투자를 쉽고 편리하게, 미국주식가이드, 종목분석, 종목토론, 데이터히어로">
+    <meta property="og:image" content="http://godlife.ivyro.net/test/img/choicestockus_thumb.png">
+    <meta property="og:image:width" content="410" />
+    <meta property="og:image:height" content="210" />
+    <meta property="og:url" content="http://us.itooza.com">
+    <!-- jquery-1.12 -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <!-- highcharts -->
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/series-label.js"></script>
+    <script src="https://code.highcharts.com/highcharts-more.js"></script>
+    <script src="https://code.highcharts.com/modules/solid-gauge.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+    <script src="https://code.highcharts.com/modules/no-data-to-display.js"></script>
+    <script src="js/chartjs.js"></script>
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="css/choicestock.css" />
+    <!-- js -->
+    <script src="js/globalstock.js"></script>
+</head>
+
+<!-- 제휴사이트 민트 칼라 적용 class = mint  -->
+<body class="globalStock">
+    <div id="wrap">
+        <div id="header" class="header">
+            <div class="headerTop">
+                <h1 class="headerLogo"><span>개인정보처리방침</span></h1>
+                <a href="#" class="his_back"><img src="img/icon_back.svg" alt="뒤로가기"></a>
+            </div>
+            <!-- //headerTop -->
+        </div>
+
+        <!-- 이용약관 class = sub_terms-->
+        <div id="container" class="sub_terms">
+            <h2 class="terms_title">개인정보처리방침</h2>
+            <p class="txt_B">
+            주식회사 데이터히어로(이하 "회사")는 이용자의 ‘동의를 기반으로 개인정보를 수집・이용 및 제공'하고 있으며, ‘이용자의 권리(개인정보 자기결정권)를 적극적으로 보장'합니다. 회사는 정보통신서비스제공자가 준수하여야 하는 대한민국의 관련 법령 및 개인정보 규정과 가이드라인을 준수하고 있습니다. <br>
+            본 개인정보방침은 회사에 제공한 이용자의 개인정보가 보호 받을 수 있도록 회사가 준수해야 할 지침을 의미하며, 회사가 제공하는 회원계정 기반의 서비스(이하'서비스')에 적용됩니다.                
+            </p>
+            <p class="txt_B">
+            1. 개인정보 수집<br>
+            2. 개인정보 이용<br>
+            3. 개인정보 제공<br>
+            4. 개인정보 파기<br>
+            5. 자동 수집 장치의 설치/운영<br>
+            6. 개인정보 보호책임자 안내<br>
+            7. 개인정보처리방침 변경
+            </p>            
+
+            <h3 class="terms_sum">1. 개인정보 수집</h3>
+            <p class="txt">
+            회원 가입 시 또는 서비스 이용 과정에서 홈페이지 또는 개별 어플리케이션이나 프로그램등을 통해 아래와 같은 서비스 제공을 위해 필요한  최소한의 개인정보를 수집하고 있습니다.                
+            </p>
+
+            <h3 class="terms_sum_n">1) 개인정보 수집 항목</h3>
+            <p class="txt">
+            [회원가입 시]<br>
+            - 필수 : 이메일, 비밀번호, 이름<br>
+                * 소셜 계정 간편로그인 가입 시 : 이메일, 이름, 암호화된 이용자 확인값<br>
+                <br>
+            [유료서비스 이용 시]<br>
+            - 신용카드 결제 시 : 카드번호(일부), 카드사명, 휴대폰번호<br>
+            - 계좌이체 시 : 예금주명, 계좌번호, 계좌은행 등, 휴대폰번호<br>
+            <br>
+            [환불처리 시]<br>
+            - 계좌은행, 계좌번호, 예금주 명<br>
+            <br>
+            [현금영수증 발행 시]<br>
+            - 휴대폰번호, 현금영수증 카드번호                
+            </p>
+
+            <h3 class="terms_sum_n">2) 개인정보 수집 방법</h3>
+            <p class="txt">
+            개인정보를 수집하는 경우 반드시 사전에 이용자에게 해당 사실을 알리고 동의를 구하고 있으며, 아래와 같은 방법을 통해 개인정보를 수집합니다.<br>
+            ・ 회원가입 및 서비스 이용 과정에서 이용자가 개인정보 수집에 대해 동의를 하고 직접 정보를 입력하는 경우<br>
+            ・ 제휴 서비스로부터 개인정보를 제공받은 경우<br>
+            ・ 고객센터를 통한 상담 과정의 웹페이지, 메일, 팩스 전화를 통한 정보 입력/전달 시<br>
+            ・ 온/오프라인에서 진행되는 이벤트/행사 등 참여를 통한 정보 입력/전달 시<br>
+            <br>
+            PC웹, 모바일 웹/앱 서비스 이용 과정에서 이용자의 단말기정보, IP주소, 쿠키, 방문일시, 부정이용기록, 서비스 이용 기록 등의 정보가 자동으로 생성되어 수집될 수 있습니다.                
+            </p>
+
+            <h3 class="terms_sum">2. 개인정보 이용</h3>
+            <p class="txt">
+            회원 가입 또는 서비스 이용 과정에서 홈페이지 또는 개별 어플리케이션이나 프로그램을 통해 아래와 같은 서비스 제공을 위해 필요한 최소한의 개인정보를 수집하고 있습니다. <br>
+            ・ 회원 식별/가입의사 확인, 본인 확인, 부정이용 방지<br>
+            ・ 신규 서비스 개발, 다양한 서비스 제공, 문의사항 또는 불만처리, 공지사항 전달<br>
+            ・ 유료서비스 이용 시 콘텐츠 등의 전송이나 배송-요금 정산<br>
+            ・ 서비스의 원활한 운영에 지장을 주는 행위(계정 도용 및 부정 이용 행위 등 포함)에 대한 방지 및 제재<br>
+            ・ 인구통계학적 특성과 이용자의 관심, 기호, 성향의 추정을 통한 맞춤형 콘텐츠 추천 및 마케팅에 활용<br>
+            ・ 서비스 이용 기록, 접속 빈도 및 서비스 이용에 대한 통계, 프라이버시 보호 측면의 서비스 환경 구축, 서비스 개선에 활용               
+            </p>
+
+            <h3 class="terms_sum">3. 개인정보 제공</h3>
+            <p class="txt">
+            회사는 이용자의 사전 동의 없이 개인정보를 제3자에게 제공하지 않습니다. 다만, 이용자가 외부 제휴사 등의 서비스를 이용하기 위하여 필요한 범위 내에서 이용자의 동의를 얻은 후에 개인정보를 제3자에게 제공하고 있습니다.<br>
+            ・ NICE페이먼츠(주) : 유료서비스 결제 대행 - 성명, 은행명, 계좌번호, 신용카드 정보<br>
+            ・ 다우기술(모바일 문자 발송 서비스) : 카카오 알림톡/휴대폰 문자 발송 - 이름, 휴대폰번호               
+            </p>
+
+            <h3 class="terms_sum">4. 개인정보 파기</h3>
+            <p class="txt">
+            이용자의 개인정보는 수집 및 이용목적이 달성되면 지체 없이 파기합니다.<br>
+            전자적인 파일 형태인 경우 복구 및 재생되지 않도록 안전하게 삭제하고, 그밖에 기록물,인쇄물, 서면 등의 경우 분쇄하거나 소각하여 파기합니다.<br>
+            <br>
+            다만, 상법, 전자상거래 등에서 소비자보호에 관한 법률 등 관계법령에 따라 일정기간 보관해야 하는 개인정보 및 해당 법령은 다음과 같습니다.<br>
+            <br>            
+            1) 계약 또는 청약철회 등에 관한 기록<br>
+            - 근거법령 : 전자상거래 등에서의 소비자보호에 관한 법률<br>
+            - 보존기간 : 5년<br>
+            2) 대금결제 및 재화 등의 공급에 관한 기록<br>
+                - 근거법령 : 전자상거래 등에서의 소비자보호에 관한 법률<br>
+                - 보존기간 : 5년<br>
+            3) 소비자의 불만 또는 분쟁처리에 관한 기록<br>
+                - 근거법령 : 전자상거래 등에서의 소비자보호에 관한 법률<br>
+                - 보존기간 : 3년<br>
+            4) 서비스 방문 기록 <br>
+                - 근거법령 : 통신비밀보호법<br>
+                - 보존기간 : 3개월
+            </p>
+
+            <h3 class="terms_sum">5. 자동 수집 장치의 설치/운영 안내</h3>
+            <p class="txt">
+            <strong>쿠키의 이용</strong><br>
+            보다 빠르고 편리한 웹사이트 사용을 지원하고 맞춤형 서비스를 제공하기 위해 ‘쿠키'가 사용됩니다.<br>
+            쿠키(Cookie)는 웹사이트를 운영하는데 이용되는서버가 이용자의 디바이스에 전송 저장되는 작은 텍스트 파일입니다. 이용자가 웹사이트에 방문할 경우 이용자의 디바이스에 저장되어 있는 쿠키의 내용을 읽어 이용자의 환경설정을 유지하고 맞춤화된 서비스를 제공하게 됩니다. 쿠키는 이용자가 웹 사이트를 방문할 때, 웹 사이트 사용을 설정한대로 접속하고 편리하게 사용할 수 있도록 돕습니다. 또한, 이용자의 웹사이트 방문 기록, 이용 형태를 통해서 최적화된 광고 등 맞춤형 정보를 제공하기 위해 활용됩니다.
+            <br>
+            이용자는 쿠키 설치에 대한 선택권을 가지고 있으며, 웹 브라우저에서 옵션을 설정함으로써 모든 쿠키를 허용하거나, 쿠키가 저장될 때마다 확인을 거치거나, 모든 쿠키의 저장을 거부할 수도 있습니다. 다만, 쿠키 설치를 거부할 경우 웹 사용이 불편해지며, 로그인이 필요한 일부 서비스 이용에 어려움이 있을 수 있습니다.<br>            
+            <br>
+            <strong>쿠키 설정 변경 방법의 예</strong><br>
+            ・  Internet Explorer의 경우 :   웹 브라우저 상단의 도구 메뉴 > 인터넷 옵션 > 개인정보 > 설정 <br>
+            ・  Chrome의 경우 :  웹 브라우저 우측의 설정 메뉴 > 화면 하단의 고급 설정 표시 > 개인정보의 콘텐츠 설정 버튼 > 쿠키<br>
+            </p>
+
+            <h3 class="terms_sum">6. 개인정보 보호책임자 안내</h3>
+            <p class="txt">
+            <strong>쿠키의 이용</strong><br>
+            서비스를 이용하면서 발생하는 모든 개인정보보호 관련 문의, 불만, 조언이나 기타 사항은 개인정보 보호책임자 및 담당부서로 연락해 주시기 바랍니다.<br>
+            <br>
+            <strong>개인정보 보호책임자</strong><br>
+            ・ 책임자 : 오영훈 | 개발팀 팀장<br>
+            ・ 문의 : 고객센터 02)6225 - 2300,  hero@datahero.co.kr<br>
+            <br>
+            기타 개인정보침해에 대한 신고나 상담이 필요하신 경우, 아래 기관에 문의하시기 바랍니다.<br>
+            ・ 개인정보침해신고센터 (privacy.kisa.or.kr / 국번없이 118<br>
+            ・ 대검찰청 사이버범죄수사단 (www.spo.go.kr / 02-3480-3571)<br>
+            ・ 경찰청 사이버안전국 (www.ctrc.go.kr / 국번없이 182)
+            </p>
+
+            <h3 class="terms_sum">7. 개인정보처리방침의 변경</h3>
+            <p class="txt">
+            개인정보 처리방침은 시행일로부터 적용됩니다. 이용자의 개인정보처리방침이 변경되는 경우 변경사항의 시행 최소 7일 전부터 공지사항을 통해 미리 알려드립니다. 단, 수집하는 개인정보의 항목, 이용목적의 변경 등과 같이 이용자 권리의 중대한 변경이 발생할 경우에는 최소 14일 전에 공지합니다.<br>
+            <br>
+            공고일자: 2020년 05월 27일<br>
+            시행일자: 2020년 05월 27일                
+            </p>
+
+        </div>
+        <!-- //container -->
+
+        <div id="footer" class="type2">
+            <div class="notice">
+                <ul class="terms_list">
+                    <li><a href="">이용약관</a></li>
+                    <li><a href="">개인정보처리방침</a></li>
+                    <li><a href="">데이터히어로</a></li>
+                </ul>
+                <p class="copyright">Copyright <span>ⓒ (주)데이터히어로</span> All rights reserved.</p>
+            </div>
+            <!-- //notice -->
+        </div>
+        <!-- //footer -->
+
+    </div>
+    <!-- //wrap -->
+</body>
+
+</html>

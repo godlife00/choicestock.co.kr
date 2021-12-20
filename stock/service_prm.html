@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no" />
+    <title>초이스스탁</title>
+    <meta name="robots" content="데이터히어로 미국주식">
+    <meta name="description" content="투자를 쉽고 편리하게, 미국주식가이드, 종목분석, 종목토론, 데이터히어로">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="theme-color" content="#2C295D">
+    <!-- 오픈 그래프 -->
+    <meta property="og:title" content="데이터히어로 미국주식" />
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="투자를 쉽고 편리하게, 미국주식가이드, 종목분석, 종목토론, 데이터히어로">
+    <meta property="og:image" content="http://godlife.ivyro.net/test/img/choicestockus_thumb.png">
+    <meta property="og:image:width" content="410" />
+    <meta property="og:image:height" content="210" />
+    <meta property="og:url" content="http://us.itooza.com">
+    <!-- jquery-1.12 -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <!-- highcharts -->
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/series-label.js"></script>
+    <script src="https://code.highcharts.com/highcharts-more.js"></script>
+    <script src="https://code.highcharts.com/modules/solid-gauge.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+    <script src="https://code.highcharts.com/modules/no-data-to-display.js"></script>
+    <script src="../js/chartjs.js"></script>
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="../css/choicestock.css" />
+    <!-- js -->
+    <script src="../js/globalstock.js"></script>
+</head>
+
+<!-- 제휴사이트 민트 칼라 적용 class = mint  -->
+
+<body class="globalStock">
+    <div id="wrap">
+        <!-- 하단 GNB -->
+        <div class="gnb">
+            <ul class="list">
+                <li class="home"><a href="../index.html"><i></i> 홈</a></li>
+                <li class="stock active"><a href="stock/recom.html">추천</a></li>
+                <li class="analysis"><a href="#">진단</a></li>
+                <li class="excavation"><a href="../attractiveness/attractiveness.html">발굴</a></li>
+                <li class="menu"><a href="stock/menu.html">메뉴</a></li>
+            </ul>
+        </div>
+        <!-- //gnb -->
+
+        <div id="header" class="header">
+            <div class="headerTop">
+                <h1 class="headerLogo"><span>서비스소개</span></h1>
+                <a href="#" class="his_back"><img src="../img/icon_back.svg" alt="뒤로가기"></a>
+            </div>
+            <!-- //headerTop -->
+        </div>
+
+        <!-- 서비스소개 class = sub_service-->
+        <div id="container" class="sub_service">
+            <!-- 주요 콘텐츠 -->
+
+            <!-- 미국주식에 미치다 TV -->
+            <div class="service_mijumi">
+                <h1 class="logo"><img src="../img/logo_mijumi_B.png" alt="미주미x데이터히어로"></h1>
+                <p class="mijumi_sum"><strong><b>국내최고!</b> 분석과 데이터 서비스의 만남</strong>
+                    미국주식투자를 위해 미주미와 데이터히어로가 함께합니다.
+                </p>
+            </div>
+
+            <div class="sub_top service_t02">
+                <h2 class="h2_title">미국주식 쉽고 편리하게! <strong>초이스스탁US</strong></h2>
+                <p class="sum">초이스스탁US에서는 지루하고<br>복잡한 미국주식투자는 없습니다.<br>쉽고 편리하게 매력적인<br>종목을 찾아 투자하세요. </p>
+            </div>
+            <!-- //sub_top -->
+
+            <div class="sub_mid">
+                <div class="tab_area">
+                    <ul class="tbas_lb tabs_3">
+                        <li><a href="service.html">서비스소개</a></li>
+                        <li><a href="service_prm.html" class="active">프리미엄</a></li>
+                        <li><a href="https://www.notion.so/US-FAQ-274298fadcbe4651aa06d58e9c9b9e7f"
+                                target="_blank">가이드(FAQ)</a></li>
+                    </ul>
+                </div>
+
+                <div class="sub_con">
+                    <h3 class="prm_title"><strong>초이스스탁US</strong>프리미엄</h3>
+                    <p class="service_txt">초이스스탁US 프리미엄에 가입하시면 모든 서비스를 제한없이 이용할 수 있습니다.</p>
+
+                    <div
+                        class="swiper-container swiper_service swiper-container-initialized swiper-container-horizontal swiper-container-autoheight swiper-container-android">
+                        <div class="swiper-wrapper" style="transition-duration: 0ms;">
+                            <div class="swiper-slide">
+                                <p class="service_img"><img src="/img/img_service_07.jpg" alt="1. 종목진단"></p>
+                            </div>
+                            <!-- //swiper-slide -->
+                            <div class="swiper-slide">
+                                <p class="service_img"><img src="/img/img_service_09.jpg" alt="2. 벨류에이션(적정주가)"></p>
+                            </div>
+                            <!-- //swiper-slide -->
+                            <div class="swiper-slide">
+                                <p class="service_img"><img src="/img/img_service_10.jpg" alt="3. 종목캐치"></p>
+                            </div>
+                            <!-- //swiper-slide -->
+                        </div>
+                        <!-- //swiper-wrapper -->
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination swiper-pagination-bullets"></div>
+                        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                    </div>
+
+                    <div class="w_box">
+                        <h4 class="box_title">1. 매력적인 종목을 한눈에 - 종목진단</h4>
+                        <p class="txt">
+                            5분이면 매력적인 종목을 찾을 수 있습니다. 기업개요, 투자매력, 재무정보, 배당매력, 경쟁사 등 5,000여 상장기업의 정보를 입체적으로 제공합니다. 주요
+                            재무제표를 알기 쉽게 시각화된 점수와 차트로 제공합니다.
+                        </p>
+
+                        <h4 class="box_title">2. 매력적인 종목만 콕! - 종목추천/종목분석</h4>
+                        <p class="txt">
+                            투자자를 위한 저평가 우량주를 엄선하여 추천합니다. 매수가/목표가/손절가의 매매전략과 투자포인트로 추천 종목을 쉽게 확인할 수 있습니다.
+                        </p>
+
+                        <h4 class="box_title">3. 주가 판단을 빠르게! - 밸류에이션(적정주가 정보)</h4>
+                        <p class="txt">
+                            적정 주가 정보로 주식을 얼마에 사고 팔지 투자 판단을 빠르게 할 수 있습니다.
+                        </p>
+
+                        <h4 class="box_title">4. 나만의 맞춤 관심종목 - 관심종목 &amp; 종목캐치</h4>
+                        <p class="txt">
+                            최애종목인 관심종목은 가장 먼저 눈에 띄게!
+                            배당주? IT 기술주? 내가 어떤 종목을 선호하는지 초이스스탁US는 알고 있습니다.
+                            쇼핑하듯, SNS하듯 편리하게 나의 투자성향에 맞는 종목을 확인해 보세요.
+                        </p>
+
+                        <h4 class="box_title">5. 정보는 타이밍 - 나만의 알림서비스</h4>
+                        <p class="txt">
+                            최신 종목추천/분석 업데이트 알림과 나의 관심종목 정보를 빠르고 편리하게 확인해 보세요.
+                            (*알림서비스를 받기 위해서는 ‘카카오톡 계정’이 필요합니다.)
+                        </p>
+
+                    </div>
+                    <div class="s_box">
+                        <h4 class="box_title">그 밖에 종목발굴을 위한 서비스</h4>
+                        <dl>
+                            <dt>투자매력도 </dt>
+                            <dd>배당매력, 사업독점력, 재무안전성, 수익성, 현금창출력 등 투자매력점수별 전종목 리스트를 제공합니다.</dd>
+                        </dl>
+                        <dl>
+                            <dt>투자레시피</dt>
+                            <dd>배당주, 성장주, 인기주 등 매력적인 종목발굴 레시피를 제공합니다.</dd>
+                        </dl>
+                        <dl>
+                            <dt>미국주식 종목노트</dt>
+                            <dd>미국주식투자를 위한 팁&amp;정보 제공합니다.</dd>
+                        </dl>
+                    </div>
+                    <!-- //s_box -->
+
+                    <div class="step_box">
+                        <h3 class="title">초이스스탁US 프리미엄</h3>
+                        <div class="payRight">
+                            <span class="pay01">월 &nbsp;&nbsp;&nbsp; 55,000<b>원</b></span>
+                            <span class="pay02">33,000<b>원</b></span>
+                            <p class="guide_txt">(40% 할인, 월 정기결제 시)</p>
+                        </div>
+                        <!-- //payRight -->
+
+
+                        <div class="banner_prm prm_service">
+                            <span class="cho_prm">초이스스탁US 프리미엄</span>
+                            <a href="/payment/choice" class="weeks_free">[ 첫달 3,000원! ]</a>
+                        </div>
+                        <div class="banner_prm prm_service">
+                            <span class="cho_prm">초이스스탁US 프리미엄</span>
+                            <a href="/payment/choice" class="weeks_free">[ 2주 무료보기 ]</a>
+                        </div>
+                    </div>
+                    <!-- //step_box -->
+
+                    <div class="compare_box">
+                        <h4 class="box_title">[회원별 서비스 비교]</h4>
+
+                        <table cellspacing="0" border="0" class="tableRanking type_compare">
+                            <tbody>
+                                <tr>
+                                    <th class="top_th"><span></span></th>
+                                    <th class="top_th"><span>프리미엄 회원</span></th>
+                                    <th class="top_th"><span>무료</span></th>
+                                </tr>
+                                <tr>
+                                    <th colspan="3" class="line_th"><span>종목검색</span></th>
+                                </tr>
+                                <tr>
+                                    <td class="mid_td"><span>- 기업개요, 주가, 주가차트</span></td>
+                                    <td class="com_select"><span></span></td>
+                                    <td><span>항목제한</span></td>
+
+                                </tr>
+                                <tr>
+                                    <td class="mid_td"><span>- 10년 재무차트, 투자지표</span></td>
+                                    <td class="com_select"><span></span></td>
+                                    <td class="not_select"><span></span></td>
+                                </tr>
+                                <tr>
+                                    <td class="mid_td"><span>- 투자매력</span></td>
+                                    <td class="com_select"><span></span></td>
+                                    <td class="not_select"><span></span></td>
+                                </tr>
+                                <tr>
+                                    <td class="mid_td"><span>- 적정주가</span></td>
+                                    <td class="com_select"><span></span></td>
+                                    <td class="not_select"><span></span></td>
+                                </tr>
+                                <tr>
+                                    <td class="mid_td"><span>- 배당투자매력</span></td>
+                                    <td class="com_select"><span></span></td>
+                                    <td class="not_select"><span></span></td>
+                                </tr>
+                                <tr>
+                                    <td class="mid_td"><span>- 경쟁사</span></td>
+                                    <td class="com_select"><span></span></td>
+                                    <td class="not_select"><span></span></td>
+                                </tr>
+                                <!-- 종목추천/포트폴리오 -->
+                                <tr>
+                                    <th colspan="3" class="line_th pdiT_th"><span>종목추천/포트폴리오</span></th>
+                                </tr>
+                                <tr>
+                                    <td class="mid_td"><span>- 종목추천</span></td>
+                                    <td class="com_select"><span></span></td>
+                                    <td class="not_select"><span></span></td>
+                                </tr>
+                                <tr>
+                                    <td class="mid_td"><span>- 추천 포트폴리오</span></td>
+                                    <td class="com_select"><span></span></td>
+                                    <td class="not_select"><span></span></td>
+                                </tr>
+                                <tr>
+                                    <td class="mid_td"><span>- 승부주</span></td>
+                                    <td class="com_select"><span></span></td>
+                                    <td class="not_select"><span></span></td>
+                                </tr>
+                                <tr>
+                                    <td class="mid_td"><span>- 종목캐치</span></td>
+                                    <td class="com_select"><span></span></td>
+                                    <td><span>종목 수 제한</span></td>
+                                </tr>
+                                <!-- 종목발굴 -->
+                                <tr>
+                                    <th colspan="3" class="line_th pdiT_th"><span>종목발굴</span></th>
+                                </tr>
+                                <tr>
+                                    <td class="mid_td"><span>- 투자매력도</span></td>
+                                    <td class="com_select"><span></span></td>
+                                    <td><span>종목 수 제한</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="mid_td"><span>- 투자레시피</span></td>
+                                    <td class="com_select"><span></span></td>
+                                    <td class="not_select"><span></span></td>
+                                </tr>
+                                <tr>
+                                    <td class="mid_td"><span>- 종목노트</span></td>
+                                    <td class="com_select"><span></span></td>
+                                    <td><span>항목제한</span></td>
+                                </tr>
+                                <!-- 관심종목 -->
+                                <tr>
+                                    <th colspan="3" class="line_th pdiT_th"><span>관심종목</span></th>
+                                </tr>
+                                <tr>
+                                    <td class="mid_td"><span>- 관심종목관리</span></td>
+                                    <td class="com_select"><span></span></td>
+                                    <td class="not_select"><span></span></td>
+                                </tr>
+                                <tr>
+                                    <td class="mid_td"><span>- 원스톱 진단</span></td>
+                                    <td class="com_select"><span></span></td>
+                                    <td class="not_select"><span></span></td>
+                                </tr>
+                                <!-- 알림 -->
+                                <tr>
+                                    <th colspan="3" class="line_th pdiT_th"><span>알림</span></th>
+                                </tr>
+                                <tr>
+                                    <td class="mid_td"><span>- 신규 종목추천</span></td>
+                                    <td class="com_select"><span></span></td>
+                                    <td class="not_select"><span></span></td>
+                                </tr>
+                                <tr>
+                                    <td class="mid_td"><span>- 추천 포트폴리오 업데이트</span></td>
+                                    <td class="com_select"><span></span></td>
+                                    <td class="not_select"><span></span></td>
+                                </tr>
+                                <tr>
+                                    <td class="mid_td line_2">
+                                        <span>- 관심종목 알림</span>
+                                        <span>(전일종가/배당/실적발표 정보)</span>
+                                    </td>
+                                    <td class="com_select"><span></span></td>
+                                    <td class="not_select"><span></span></td>
+                                </tr>
+                                <tr>
+                                    <td class="mid_td"><span>- 콘텐츠 업데이트</span></td>
+                                    <td class="com_select"><span></span></td>
+                                    <td class="not_select"><span></span></td>
+                                </tr>
+                                <tr style="border-bottom: none;">
+                                    <th rowspan="2" class="line_th pdiT_th"><span>광고표시</span></th>
+                                    <td class="not_select" style="padding-top: 23px;"><span></span></td>
+                                    <td class="com_select" style="padding-top: 23px;"><span></span></td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- //compare_box -->
+
+                    <!-- 프리미엄 서비스 부분 -->
+                    <div class="prm_div weeks_free event_900">
+                        <div class="box">
+                            <p class="title"><i></i>초이스스탁US 프리미엄</p>
+                            <p class="txt">모든 서비스를 제한없이 이용하실 수 있습니다.</p>
+                            <p><a href="/payment/choice" class="btn_900">초이스스탁US 프리미엄, <strong>첫 달 3,000원</strong><i></i></a></p>
+                        </div>
+                        <div class="box">
+                            <p class="title"><i></i>초이스스탁US 프리미엄</p>
+                            <p class="txt">모든 서비스를 제한없이 이용하실 수 있습니다.</p>
+                            <p><a href="/payment/choice" class="btn_900">초이스스탁US 프리미엄, <strong>2주 무료보기</strong><i></i></a></p>
+                        </div>
+                    </div>
+                    <!-- //프리미엄 서비스 부분 -->
+
+                    <!--  비 로그인 화면에만 표시 -->
+                    <div class="middle_banner event service_event">                        
+                        <div class="box">
+                            <p class="title">지금 로그인하시면 <strong>프리미엄 서비스 2주 무료 체험</strong>이 제공됩니다.</p>
+                            <a href="../member/login_sns.html" class="link_btn">로그인</a>
+                            <p class="txt">초이스스탁US의 프리미엄 서비스를 먼저 체험해보세요!</p>
+                            <p class="guide_txt">(2주 무료 체험은 최초 1회만 제공되며,  기간  만료 시 자동 종료됩니다.)</p>                            
+                        </div>
+                    </div>
+                    <!-- //middle_banner -->
+
+                </div>
+                <!-- //sub_con -->
+            </div>
+            <!-- //sub_mid -->
+        </div>
+        <!-- //container -->
+
+        <div id="footer" class="type2">
+            <div class="notice">
+                <ul class="terms_list">
+                    <li><a href="/member/terms">이용약관</a></li>
+                    <li><a href="/member/policy">개인정보처리방침</a></li>
+                    <li><a href="https://www.datahero.co.kr" target="_blank">회사소개</a></li>
+                </ul>
+                <a href="https://www.datahero.co.kr" target="_blank">ⓒ (주)데이터히어로</a>
+            </div>
+            <!-- //notice -->
+        </div>
+        <!-- //footer -->
+
+    </div>
+    <!-- //wrap -->
+</body>
+
+</html>

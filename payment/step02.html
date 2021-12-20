@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no" />
+    <title>초이스스탁</title>
+    <meta name="robots" content="데이터히어로 미국주식">
+    <meta name="description" content="투자를 쉽고 편리하게, 미국주식가이드, 종목분석, 종목토론, 데이터히어로">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="theme-color" content="#2C295D">
+    <!-- 오픈 그래프 -->
+    <meta property="og:title" content="데이터히어로 미국주식" />
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="투자를 쉽고 편리하게, 미국주식가이드, 종목분석, 종목토론, 데이터히어로">
+    <meta property="og:image" content="http://godlife.ivyro.net/test/img/choicestockus_thumb.png">
+    <meta property="og:image:width" content="410" />
+    <meta property="og:image:height" content="210" />
+    <meta property="og:url" content="http://us.itooza.com">
+    <!-- jquery-1.12 -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <!-- highcharts -->
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/series-label.js"></script>
+    <script src="https://code.highcharts.com/highcharts-more.js"></script>
+    <script src="https://code.highcharts.com/modules/solid-gauge.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+    <script src="https://code.highcharts.com/modules/no-data-to-display.js"></script>
+    <script src="../js/chartjs.js"></script>
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="../css/choicestock.css" />
+    <!-- js -->
+    <script src="../js/globalstock.js"></script>
+</head>
+
+<!-- 제휴사이트 민트 칼라 적용 class = mint  -->
+
+<body class="globalStock">
+    <div id="wrap">
+        <div id="header" class="header">
+            <div class="headerTop">
+                <h1 class="headerLogo"><span>서비스 가입/결제</span></h1>
+            </div>
+            <!-- //headerTop -->
+        </div>
+
+        <!-- 가입 class = sub_payment-->
+        <div id="container" class="sub_payment">
+            <!-- 주요 콘텐츠 -->
+            <div class="step_area">
+                <ul>
+                    <li>1. 가입방법 선택</li>
+                    <li class="active">2. 결제하기</li>
+                    <li>3. 결제완료</li>
+                </ul>
+            </div>
+            <!-- //step_area -->
+
+            <div class="serviceStep step01">
+                <div class="step_top">
+                    <h2 class="step_title">결제하기</h2>
+                    <a href="http://www.itooza.com/ads/popup/card_event.html" class="btn_cardEvent"
+                        onclick="window.open('https://pg.nicepay.co.kr/shared/info.html', 'location', 'width=420, height=700, scrollbars=yes'); return false;">
+                        <img src="../img/btn_cardEvent..png" alt="카드 무이자 할부 안내">
+                    </a>
+                </div>
+                <!-- //step_top -->
+
+                <div class="step_box active event_1year">
+                    <!-- 1주년 900원 이벤트 class = event_1year -->
+                    <h3 class="title">월 정기결제 <span class="way">&nbsp;</span></h3>
+                    <div class="payRight">
+                        <span class="pay01">55,000<b>원</b><span class="pay_sale"><strong>신규결제</strong> 할인!</span></span>
+                        <span class="pay02">3,300<b>원</b></span>
+                        <div class="txt_line">
+                            <p class="txt"><strong>신규 월 정기결제 시 프리미엄 서비스를 한달 간 3,300원에 이용</strong> 할 수 있으며, 둘째 달 부터는 매월 33,000원(정상가에서 40%할인)으로 자동 결제됩니다.</p>                            
+                            <p class="txt"><strong>약정 기간 없이 언제든 해지 가능합니다.</strong></p>
+                        </div>
+                    </div>
+                    <!-- //payRight -->
+                </div>
+                <!-- //step_box -->
+
+                <div class="step_box active event_1year" style="display: none;">
+                    <!-- 1주년 900원 이벤트 class = event_1year -->
+                    <h3 class="title">월 정기결제 <span class="way">&nbsp;</span></h3>
+                    <div class="payRight">
+                        <span class="pay01">55,000<b>원</b><span class="pay_sale">40% 할인!</span></span>
+                        <span class="pay02">33,000<b>원</b></span>
+                        <div class="txt_line">
+                            <p class="txt"><strong>월 정기결제시 프리미엄 서비스를 40% 할인된 금액에 이용</strong> 할 수 있습니다. (월 33,000원)</p>                            
+                            <p class="txt">월 정기 결제는 신용카드 결제만 가능합니다.</p>
+                            <p class="txt"><strong>약정 기간 없이 언제든 해지 가능합니다.</strong></p>
+                        </div>
+                    </div>
+                    <!-- //payRight -->
+                </div>
+                <!-- //step_box -->
+            </div>
+            <!-- //serviceStep -->
+
+            <div class="payment_guide">
+                <!--<ul class="guide">
+                    <li class="th">결제방법</li>
+                    <li class="td_txt card_list">신용카드 <span>(롯데, 삼성, 신한, 현대, NH)</span></li>
+                </ul>-->
+                <div class="mapage_form">
+					<fieldset>
+						<div class="form_table">
+							<table border="1" class="">
+								<tbody>                      
+									<tr>
+										<th scope="row">결제수단</th>
+										<td>                                                                                                
+											<div class="selectbox">
+												<label for="select">신용카드(체크카드)</label>
+												<select name="card" id="select">
+													<option value="">신용카드(체크카드)</option>
+													<option value="롯데">롯데카드</option>
+													<option value="삼성">삼성카드</option>
+													<option value="신한">신한카드</option>
+													<option value="현대">현대카드</option>
+													<option value="NH">NH카드</option>
+												</select>
+											</div>   
+											<div class="item mod_coupon">
+												<p class="i_dsc coupon">월 정기 결제는 신용카드와 체크카드 결제가 가능합니다.</p>                                                    
+												<p class="i_dsc">결제카드 : 롯데, 삼성, 신한, 현대, NH</p><!-- ㄱㄴㄷ순 -->
+											</div>
+										</td>
+									</tr>                  
+								</tbody>
+							</table>
+						</div>
+					</fieldset>
+                </div>
+
+				
+				                <ul class="guide">
+                    <li class="th">결제금액</li>
+					                    <li class="td_txt" id="payPrice_1"><strong>3,300</strong>원 <span>(부가세포함)</span></li>
+					                    <li class="td_sum">(월 정기 결제는 신용카드와 체크카드 결제가 가능합니다.)</li>
+                                    </ul>
+            </div>
+
+            <div class="payment_note">
+                <h4 class="h4_title">[ 서비스 결제 유의사항 ]</h4>
+                <strong>월 정기결제</strong>
+                 <ul class="note">
+                    <li><span>정기결제는 1개월 단위로 제공</span>되며 <strong>구매하신 날과 매월 동일 한 날짜에 결제</strong>가 이루어집니다</li>
+                    <li>결제 일자가 특정 월에 포함되지 않은 경우(예: 31일)에는 <span>해당 월의 마지막날에 청구</span>됩니다.</li>
+                    <li>월정기결제는 언제든 해지할 수 있습니다.
+                        월정기결제 해지 시 잔여 일이 있으면, 만료 일자까지 이용 하실 수 있으며, 환불신청이 적용되지 않습니다. <strong>단, 결제 당일 해지 시에는 전액 취소 및 서비스 중지 됩니다.</strong>
+                    </li>
+                    <li>신용카드 승인오류 및 잔액 부족시에는 결제가 해지될 수 있습니다</li>
+                    <li>결제일은 실제 신용카드사에서 결제 요청하는 날짜로 실제 출금일은 카드사별로 다를 수 있습니다.</li>
+                    <li>상기 내용은 당사의 사정에 따라 사전고지 없이 변경될 수 있습니다.</li>
+                </ul>
+
+                <div class="note_chk">
+                    <p class="txt"><i></i>결제금액과 결제유의사항을 확인했습니다.</p>                    
+                </div>
+
+            </div>
+            <!-- //payment_note -->
+
+            <div class="btnArea payBtn fix_btn">
+                <a href="#" class="btn btn_cncl"><i></i>결제취소</a>
+                <a href="step02_1.html" class="btn btn_save">다음<i></i></a>
+            </div>
+
+        </div>
+        <!-- //container -->
+
+        <div id="footer" class="chous_footer">
+            <!-- 인증 -->
+            <div class="certification">
+                <ul>
+                    <li class="cer_logo_01"><img src="../img/logo_kiwoom.svg" alt="키움증권"></li>
+                    <li class="cer_logo_02"><img src="../img/logo_eugene.svg" alt="유진투자증권"></li>
+                    <li class="cer_logo_03"><img src="../img/logo_truefriend.svg" alt="한국투자증권"></li>                    
+                </ul>
+                <ul>                    
+                    <!-- <li class="cer_logo_04"><img src="img/logo_shinhan.svg" alt="신한금융투자" target="_blank"></li> -->
+                    <li class="cer_logo_05"><img src="../img/logo_hana.svg" alt="하나금융투자"></li>
+                    <li class="cer_logo_06"><img src="../img/logo_mirae.svg" alt="미래에셋증권"></li>
+                </ul>
+            </div>
+            <!-- //인증 -->
+
+            <div class="notice">
+
+                <div class="service_info">
+                    <p>본 서비스는 투자판단에 참고용으로만 사용하실 수 있으며, 모든 투자판단은 투자자 본인의 책임으로 당사는 그 결과에 대해 법적인 일체의 책임을 지지 않습니다.</p>
+                    <p class="dataLink">data from <a href="https://www.quandl.com/" target="_blank">Quandl and Sharadar</a>
+                    </p>
+                </div>
+
+                <ul class="terms_list">
+                    <li><a href="terms.html" target="_black">이용약관</a></li>
+                    <li><a href="https://www.notion.so/US-FAQ-274298fadcbe4651aa06d58e9c9b9e7f" target="_blank">서비스 FAQ</a></li>
+                    <li><a href="policy.html" target="_black"><strong>개인정보처리방침</strong></a></li>
+                    <li><a href="https://www.notion.so/f160286b2fa848fb92ea6bf20af9f502" target="_black">업데이트 소식</a></li>
+                    <li><a href="https://www.datahero.co.kr" target="_blank">회사소개</a></li>
+                </ul>
+
+                <div class="foot_info">
+                    <div class="info_tel_box">
+                        <p><span class="sns_kakao"><a href="http://pf.kakao.com/_QDLHxb/chat" target="_blank"><img src="../img/sns_kakao.svg" alt="카카오톡 문의하기"></a></span></p>
+                        <span class="cs">평일 9:00 ~ 17:00 (주말/공휴일 제외)<br>점심시간 11:20 ~ 12:20</span>
+                    </div>
+                    <!-- //info_tel_box -->
+                    <p class="copyright"><a href="https://www.datahero.co.kr" target="_blank">ⓒ (주)데이터히어로</a><i></i>
+                        <strong>대표자</strong> 김인중 <br>서울시 강남구 강남대로 365, 1304호 <strong>사업자등록번호 291-88-01393</strong> <i></i> 대표번호 02-6625-2300
+                    </p>
+                    
+                </div>
+                <!-- //foot_info -->
+
+            </div>
+            <!-- //notice -->
+        </div>
+        <!-- //footer -->
+    </div>
+    <!-- //wrap -->
+
+</body>
+
+</html>

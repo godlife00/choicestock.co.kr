@@ -1,0 +1,1202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no" />
+    <title>초이스스탁</title>
+    <meta name="robots" content="데이터히어로 미국주식">
+    <meta name="description" content="투자를 쉽고 편리하게, 미국주식가이드, 종목분석, 종목토론, 데이터히어로">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="theme-color" content="#2C295D">
+    <!-- 오픈 그래프 -->
+    <meta property="og:title" content="데이터히어로 미국주식" />
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="투자를 쉽고 편리하게, 미국주식가이드, 종목분석, 종목토론, 데이터히어로">
+    <meta property="og:image" content="http://godlife.ivyro.net/test/img/choicestockus_thumb.png">
+    <meta property="og:image:width" content="410" />
+    <meta property="og:image:height" content="210" />
+    <meta property="og:url" content="http://us.itooza.com">
+    <!-- jquery-1.12 -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <!-- highcharts -->
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/series-label.js"></script>
+    <script src="https://code.highcharts.com/highcharts-more.js"></script>
+    <script src="https://code.highcharts.com/modules/solid-gauge.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+    <script src="https://code.highcharts.com/modules/no-data-to-display.js"></script>
+    <script src="../js/chartjs.js"></script>
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="../../../미국주식(초이스스탁)/mobile_1.5/html/css/choicestock.css" />
+    <link rel="stylesheet" type="text/css" href="../css/choicestock.css" />
+    <!-- js -->
+    <script src="../js/globalstock.js"></script>
+</head>
+
+<!-- 제휴사이트 민트 칼라 적용 class = mint  -->
+
+<body class="globalStock">
+    <div id="wrap">
+        <!-- 하단 GNB -->
+        <div class="gnb">
+            <ul class="list">
+                <li class="home"><a href="../index.html"><i></i> 홈</a></li>
+                <li class="stock active"><a href="stock/recom.html">추천</a></li>
+                <li class="analysis"><a href="#">진단</a></li>
+                <li class="excavation"><a href="../attractiveness/attractiveness.html">발굴</a></li>
+                <li class="menu"><a href="stock/menu.html">메뉴</a></li>
+            </ul>
+        </div>
+        <!-- //gnb -->
+
+        <div id="header" class="header h_sub">
+            <div class="headerTop">
+                <h1 class="headerLogo"><span>초이스스탁</span>
+                </h1>
+                <div class="hm">
+                    <a href="../search/searching.html" class="go_sch"><img src="../img/icon_search.svg" alt="검색하기"></a>
+                </div>
+                <!-- //hm -->
+            </div>
+            <!-- //headerTop -->
+        </div>
+
+        <!-- 포트폴리오 class = sub_portfolio-->
+        <div id="container" class="sub_recom sub_portfolio">
+            <!-- 주요 콘텐츠 -->
+            <h2 class="h2_title">종목</h2>
+            <div class="tab_area">
+                <ul class="tbas_lb tabs_3">
+                    <li><a href="recom.html">종목추천</a></li>
+                    <li><a href="portfolio.html" class="active">포트폴리오</a></li>
+                    <li><a href="game.html">승부주</a></li>
+                </ul>
+            </div>
+            <!-- //tab_area -->
+
+            <div class="sub_top">
+                <div class="">
+                    <div class="txt_box">
+                        <p class="txt">
+                            종목추천 및 실시간 리딩 서비스를 제공합니다.<br>
+                            종목 당 투자 비중은 3% 입니다. 매수부터 매도까지 포트폴리오에 필요한 모든 서비스를 제공합니다.<br>
+                            <span class="port_time">(*포트 시작 : 2020. 06/30)</span>
+                        </p>
+                    </div>
+                    <!-- //txt_box -->
+                </div>
+            </div>
+            <!-- //sub_top -->
+
+            <div class="sub_mid eventPicks_area">
+                <!-- 포트폴리오 -->
+                <div class="ptfo_area">
+                    <div class="detail_data">
+                        <div class="line">
+                            <span class="th">편입종목</span>
+                            <span class="td">14 <i>개</i></span>
+                        </div>
+                        <div class="line">
+                            <span class="th">수익률</span>
+                            <span class="td increase">+0.84.<b>00%</b></span>
+                        </div>
+                        <!-- <div class="line">
+                            <span class="th">누적수익률</span>
+                            <span class="td decrease">-0.84<b>%</b></span>
+                        </div> -->
+                    </div>
+
+                    <div class="sub_mid bandchart_more">
+                        <p><i></i>종목추천&amp;포트폴리오 운영안내 <a href="#more" class="more">자세히</a></p>
+                    </div>
+
+                    <div class="tabsArea">
+                        <ul class="tabs recom_tabs">
+                            <li class="new_recom active" rel="tab1"><span>편입종목</span></li>
+                            <li class="ptfo" rel="tab2"><span>제외종목</li>
+                        </ul>
+                        <span class="day">19.05/15 기준</span>
+                        <div class="tab_container">
+                            <!-- 편입종목 -->
+                            <div id="tab1" class="tab_content">
+                                <!-- 포트폴리오 테이블 -->
+                                <table cellspacing="0" border="0" class="tableRanking sum_table">
+                                    <thead>
+                                        <tr>
+                                            <th></th>
+                                            <th>주가</th>
+                                            <th>목표가</th>
+                                            <th>수익률</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="name">
+                                                <a href="#" data-modal="modal-3" class="btn_free md-trigger">마<span
+                                                        class="remark">
+                                                        <div class="txt_filter size_M"><i></i><i></i><i></i><i></i>
+                                                        </div>
+                                                    </span><span class="ticker"><span class="remark">
+                                                            <div class="txt_filter size_S"><i></i><i></i><i></i><i></i>
+                                                            </div>
+                                                        </span></span></a>
+                                            </td>
+                                            </td>
+                                            <td class="num">
+                                                <span class="">8888.<b>00</b></span>
+                                                <span class="decrease pp">-29.9<b>%</b></span>
+                                                <!-- increase 증가, decrease 감소 -->
+                                            </td>
+                                            <td class="goal">88.<b>00</b></td>
+                                            <td class="num">
+                                                <span class="decrease">-24.<b>90%</b></span>
+                                                <!-- increase 증가, decrease 감소 -->
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="name"><a href="">마이크로소프트마이크로소프트<span
+                                                        class="ticker">MSFT</span></a></td>
+                                            <td class="num">
+                                                <span class="">8888.<b>00</b></span>
+                                                <span class="increase pp">+29.9<b>%</b></span>
+                                                <!-- increase 증가, decrease 감소 -->
+                                            </td>
+                                            <td class="prm_lock"><span><img src="../img/prm_lock.png" alt="잠김"></span>
+                                            </td>
+                                            <td class="num">
+                                                <span class="increase">+24.<b>90%</b></span>
+                                                <!-- increase 증가, decrease 감소 -->
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="name"><a href="">마이크로소프트마이크로소프트
+                                                    <span class="ticker">MSFT</span>
+                                                </a></td>
+                                            <td class="num">
+                                                <span class="">8888.<b>00</b></span>
+                                                <span class="increase pp">+29.9<b>%</b></span>
+                                                <!-- increase 증가, decrease 감소 -->
+                                            </td>
+                                            <td class="prm_lock"><span><img src="../img/prm_lock.png" alt="잠김"></span>
+                                            </td>
+                                            <td class="num">
+                                                <span class="increase">+24.<b>90%</b></span>
+                                                <!-- increase 증가, decrease 감소 -->
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="name"><a href="">마이크로소프트마이크로소프트
+                                                    <span class="ticker">MSFT</span>
+                                                </a></td>
+                                            <td class="num">
+                                                <span class="">8888.<b>00</b></span>
+                                                <span class="increase pp">+29.9<b>%</b></span>
+                                                <!-- increase 증가, decrease 감소 -->
+                                            </td>
+                                            <td class="goal">88.<b>00</b></td>
+                                            <td class="num">
+                                                <span class="increase">+24.<b>90%</b></span>
+                                                <!-- increase 증가, decrease 감소 -->
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="name"><a href="">마이크로소프트마이크로소프트
+                                                    <span class="ticker">MSFT</span>
+                                                </a></td>
+                                            <td class="num">
+                                                <span class="">8888.<b>00</b></span>
+                                                <span class="increase pp">+29.9<b>%</b></span>
+                                                <!-- increase 증가, decrease 감소 -->
+                                            </td>
+                                            <td class="goal">88.<b>00</b></td>
+                                            <td class="num">
+                                                <span class="increase">+24.<b>90%</b></span>
+                                                <!-- increase 증가, decrease 감소 -->
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="name"><a href="">마이크로소프트마이크로소프트
+                                                    <span class="ticker">MSFT</span>
+                                                </a></td>
+                                            <td class="num">
+                                                <span class="">8888.<b>00</b></span>
+                                                <span class="increase pp">+29.9<b>%</b></span>
+                                                <!-- increase 증가, decrease 감소 -->
+                                            </td>
+                                            <td class="goal">88.<b>00</b></td>
+                                            <td class="num">
+                                                <span class="increase">+24.<b>90%</b></span>
+                                                <!-- increase 증가, decrease 감소 -->
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="name"><a href="">마이크로소프트마이크로소프트
+                                                    <span class="ticker">MSFT</span>
+                                                </a></td>
+                                            <td class="num">
+                                                <span class="">8888.<b>00</b></span>
+                                                <span class="increase pp">+29.9<b>%</b></span>
+                                                <!-- increase 증가, decrease 감소 -->
+                                            </td>
+                                            <td class="goal">88.<b>00</b></td>
+                                            <td class="num">
+                                                <span class="increase">+24.<b>90%</b></span>
+                                                <!-- increase 증가, decrease 감소 -->
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="name"><a href="">마이크로소프트마이크로소프트
+                                                    <span class="ticker">MSFT</span>
+                                                </a></td>
+                                            <td class="num">
+                                                <span class="">8888.<b>00</b></span>
+                                                <span class="increase pp">+29.9<b>%</b></span>
+                                                <!-- increase 증가, decrease 감소 -->
+                                            </td>
+                                            <td class="goal">88.<b>00</b></td>
+                                            <td class="num">
+                                                <span class="increase">+24.<b>90%</b></span>
+                                                <!-- increase 증가, decrease 감소 -->
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="name"><a href="">마이크로소프트마이크로소프트
+                                                    <span class="ticker">MSFT</span>
+                                                </a></td>
+                                            <td class="num">
+                                                <span class="">8888.<b>00</b></span>
+                                                <span class="increase pp">+29.9<b>%</b></span>
+                                                <!-- increase 증가, decrease 감소 -->
+                                            </td>
+                                            <td class="goal">88.<b>00</b></td>
+                                            <td class="num">
+                                                <span class="increase">+24.<b>90%</b></span>
+                                                <!-- increase 증가, decrease 감소 -->
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <!-- 제외종목 -->
+                            <div id="tab2" class="tab_content">
+                                <!-- 포트폴리오 테이블 -->
+                                <table cellspacing="0" border="1" class="tableRanking sum_table">
+                                    <colgroup>
+                                        <col width="16px">
+                                        <col width="">
+                                        <col width="">
+                                        <col width="">
+                                        <col width="">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th></th>
+                                            <th>추천가</th>
+                                            <th>매도가</th>
+                                            <th>수익률</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="name">
+                                                <a href="/stock/recommend_view/2130">엣시<span
+                                                        class="ticker">ETSY</span></a>
+                                            </td>
+                                            <td class="goal">110.<b>57</b></td>
+                                            <td class="num"><span class="">
+
+                                                    180.<b>00</b> </span><span class="decrease pp">20.12/29</span>
+                                            </td>
+                                            <td class="num">
+                                                <span class="increase">62.<b>79</b><b>%</b></span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="name">
+                                                <a href="/stock/recommend_view/2068">램리서치<span
+                                                        class="ticker">LRCX</span></a>
+                                            </td>
+                                            <td class="goal">243.<b>00</b></td>
+                                            <td class="num"><span class="">
+                                                    370.<b>00</b> </span><span class="decrease pp">20.07/30</span>
+                                            </td>
+                                            <td class="num">
+                                                <span class="increase">52.<b>26</b><b>%</b></span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="name">
+                                                <a href="/stock/recommend_view/2118">램리서치<span
+                                                        class="ticker">LRCX</span></a>
+                                            </td>
+                                            <td class="goal">334.<b>50</b></td>
+                                            <td class="num"><span class="">
+                                                    500.<b>00</b> </span><span class="decrease pp">20.12/04</span>
+                                            </td>
+                                            <td class="num">
+                                                <span class="increase">49.<b>48</b><b>%</b></span>
+                                            </td>
+                                        </tr>
+
+
+                                        <tr>
+                                            <td class="name">
+                                                <a href="/stock/recommend_view/2188">어드밴스드 마이크로 디바이스<span
+                                                        class="ticker">AMD</span></a>
+                                            </td>
+                                            <td class="goal">83.<b>00</b></td>
+                                            <td class="num"><span class="">
+                                                    121.<b>00</b> </span><span class="decrease pp">21.08/04</span>
+                                            </td>
+                                            <td class="num">
+                                                <span class="increase">45.<b>78</b><b>%</b></span>
+                                            </td>
+                                        </tr>
+
+
+                                        <tr>
+                                            <td class="name">
+                                                <a href="/stock/recommend_view/2182">퀄컴<span
+                                                        class="ticker">QCOM</span></a>
+                                            </td>
+                                            <td class="goal">89.<b>50</b></td>
+                                            <td class="num"><span class="">
+
+                                                    128.<b>94</b> </span><span class="decrease pp">21.05/11</span>
+                                            </td>
+                                            <td class="num">
+                                                <span class="increase">44.<b>07</b><b>%</b></span>
+                                            </td>
+                                        </tr>
+
+
+                                        <tr>
+                                            <td class="name">
+                                                <a href="/stock/recommend_view/2237">엑슨모빌<span
+                                                        class="ticker">XOM</span></a>
+                                            </td>
+                                            <td class="goal">39.<b>36</b></td>
+                                            <td class="num"><span class="">
+
+                                                    54.<b>05</b> </span><span class="decrease pp">21.09/09</span>
+                                            </td>
+                                            <td class="num">
+                                                <span class="increase">37.<b>32</b><b>%</b></span>
+                                            </td>
+                                        </tr>
+
+
+                                        <tr>
+                                            <td class="name">
+                                                <a href="/stock/recommend_view/2049">록히드마틴<span
+                                                        class="ticker">LMT</span></a>
+                                            </td>
+                                            <td class="goal">277.<b>00</b></td>
+                                            <td class="num"><span class="">
+                                                    379.<b>00</b> </span><span class="decrease pp">20.04/15</span>
+                                            </td>
+                                            <td class="num">
+                                                <span class="increase">36.<b>82</b><b>%</b></span>
+                                            </td>
+                                        </tr>
+
+
+                                        <tr>
+                                            <td class="name">
+                                                <a href="/stock/recommend_view/2106">메디패스트<span
+                                                        class="ticker">MED</span></a>
+                                            </td>
+                                            <td class="goal">152.<b>85</b></td>
+                                            <td class="num"><span class="">
+                                                    204.<b>00</b> </span><span class="decrease pp">20.11/27</span>
+                                            </td>
+                                            <td class="num">
+                                                <span class="increase">33.<b>46</b><b>%</b></span>
+                                            </td>
+                                        </tr>
+
+
+                                        <tr>
+                                            <td class="name">
+                                                <a href="/stock/recommend_view/2055">자일링스<span
+                                                        class="ticker">XLNX</span></a>
+                                            </td>
+                                            <td class="goal">84.<b>00</b></td>
+                                            <td class="num"><span class="">
+                                                    110.<b>00</b> </span><span class="decrease pp">20.07/30</span>
+                                            </td>
+                                            <td class="num">
+                                                <span class="increase">30.<b>95</b><b>%</b></span>
+                                            </td>
+                                        </tr>
+
+
+                                        <tr>
+                                            <td class="name">
+                                                <a href="/stock/recommend_view/2218">맷슨<span
+                                                        class="ticker">MATX</span></a>
+                                            </td>
+                                            <td class="goal">69.<b>00</b></td>
+                                            <td class="num"><span class="">
+                                                    90.<b>00</b> </span><span class="decrease pp">21.10/13</span>
+                                            </td>
+                                            <td class="num">
+                                                <span class="increase">30.<b>43</b><b>%</b></span>
+                                            </td>
+                                        </tr>
+
+
+                                        <tr>
+                                            <td class="name">
+                                                <a href="/stock/recommend_view/2184">인튜이트<span
+                                                        class="ticker">INTU</span></a>
+                                            </td>
+                                            <td class="goal">371.<b>01</b></td>
+                                            <td class="num"><span class="">
+                                                    465.<b>00</b> </span><span class="decrease pp">21.06/09</span>
+                                            </td>
+                                            <td class="num">
+                                                <span class="increase">25.<b>33</b><b>%</b></span>
+                                            </td>
+                                        </tr>
+
+
+                                        <tr>
+                                            <td class="name">
+                                                <a href="/stock/recommend_view/2104">레즈메드<span
+                                                        class="ticker">RMD</span></a>
+                                            </td>
+                                            <td class="goal">177.<b>68</b></td>
+                                            <td class="num"><span class="">
+                                                    220.<b>00</b> </span><span class="decrease pp">20.11/09</span>
+                                            </td>
+                                            <td class="num">
+                                                <span class="increase">23.<b>82</b><b>%</b></span>
+                                            </td>
+                                        </tr>
+
+
+                                        <tr>
+                                            <td class="name">
+                                                <a href="/stock/recommend_view/2150">CVS 헬스<span
+                                                        class="ticker">CVS</span></a>
+                                            </td>
+                                            <td class="goal">59.<b>18</b></td>
+                                            <td class="num"><span class="">
+
+                                                    72.<b>98</b> </span><span class="decrease pp">21.02/09</span>
+                                            </td>
+                                            <td class="num">
+                                                <span class="increase">23.<b>32</b><b>%</b></span>
+                                            </td>
+                                        </tr>
+
+
+                                        <tr>
+                                            <td class="name">
+                                                <a href="/stock/recommend_view/2235">프로그레시브<span
+                                                        class="ticker">PGR</span></a>
+                                            </td>
+                                            <td class="goal">78.<b>02</b></td>
+                                            <td class="num"><span class="">
+
+                                                    94.<b>26</b> </span><span class="decrease pp">21.09/08</span>
+                                            </td>
+                                            <td class="num">
+                                                <span class="increase">20.<b>82</b><b>%</b></span>
+                                            </td>
+                                        </tr>
+
+
+                                        <tr>
+                                            <td class="name">
+                                                <a href="/stock/recommend_view/2212">익스피디아<span
+                                                        class="ticker">EXPE</span></a>
+                                            </td>
+                                            <td class="goal">133.<b>00</b></td>
+                                            <td class="num"><span class="">
+
+                                                    155.<b>00</b> </span><span class="decrease pp">21.08/04</span>
+                                            </td>
+                                            <td class="num">
+                                                <span class="increase">16.<b>54</b><b>%</b></span>
+                                            </td>
+                                        </tr>
+
+
+                                        <tr>
+                                            <td class="name">
+                                                <a href="/stock/recommend_view/2232">존슨앤존슨<span
+                                                        class="ticker">JNJ</span></a>
+                                            </td>
+                                            <td class="goal">150.<b>00</b></td>
+                                            <td class="num"><span class="">
+
+                                                    172.<b>93</b> </span><span class="decrease pp">21.08/30</span>
+                                            </td>
+                                            <td class="num">
+                                                <span class="increase">15.<b>29</b><b>%</b></span>
+                                            </td>
+                                        </tr>
+
+
+                                        <tr>
+                                            <td class="name">
+                                                <a href="/stock/recommend_view/2012">버크셔 해서웨이<span
+                                                        class="ticker">BRK.B</span></a>
+                                            </td>
+                                            <td class="goal">203.<b>00</b></td>
+                                            <td class="num"><span class="">
+                                                    229.<b>70</b> </span><span class="decrease pp">20.01/16</span>
+                                            </td>
+                                            <td class="num">
+                                                <span class="increase">13.<b>15</b><b>%</b></span>
+                                            </td>
+                                        </tr>
+
+
+                                        <tr>
+                                            <td class="name">
+                                                <a href="/stock/recommend_view/2243">모건스탠리<span
+                                                        class="ticker">MS</span></a>
+                                            </td>
+                                            <td class="goal">88.<b>50</b></td>
+                                            <td class="num"><span class="">
+
+                                                    100.<b>04</b> </span><span class="decrease pp">21.10/11</span>
+                                            </td>
+                                            <td class="num">
+                                                <span class="increase">13.<b>04</b><b>%</b></span>
+                                            </td>
+                                        </tr>
+
+
+                                        <tr>
+                                            <td class="name">
+                                                <a href="/stock/recommend_view/2245">자빌<span
+                                                        class="ticker">JBL</span></a>
+                                            </td>
+                                            <td class="goal">55.<b>00</b></td>
+                                            <td class="num"><span class="">
+
+                                                    62.<b>00</b> </span><span class="decrease pp">-1.11/30</span>
+                                            </td>
+                                            <td class="num">
+                                                <span class="increase">12.<b>73</b><b>%</b></span>
+                                            </td>
+                                        </tr>
+
+
+                                        <tr>
+                                            <td class="name">
+                                                <a href="/stock/recommend_view/2059">앱티브<span
+                                                        class="ticker">APTV</span></a>
+                                            </td>
+                                            <td class="goal">76.<b>64</b></td>
+                                            <td class="num"><span class="">
+
+                                                    85.<b>44</b> </span><span class="decrease pp">20.08/27</span>
+                                            </td>
+                                            <td class="num">
+                                                <span class="increase">11.<b>48</b><b>%</b></span>
+                                            </td>
+                                        </tr>
+
+
+                                        <tr>
+                                            <td class="name">
+                                                <a href="/stock/recommend_view/2108">브리스톨마이어스스큅<span
+                                                        class="ticker">BMY</span></a>
+                                            </td>
+                                            <td class="goal">59.<b>00</b></td>
+                                            <td class="num"><span class="">
+
+                                                    65.<b>00</b> </span><span class="decrease pp">20.11/09</span>
+                                            </td>
+                                            <td class="num">
+                                                <span class="increase">10.<b>17</b><b>%</b></span>
+                                            </td>
+                                        </tr>
+
+
+                                        <tr>
+                                            <td class="name">
+                                                <a href="/stock/recommend_view/2086">일렉트로닉 아츠<span
+                                                        class="ticker">EA</span></a>
+                                            </td>
+                                            <td class="goal">117.<b>38</b></td>
+                                            <td class="num"><span class="">
+
+                                                    128.<b>42</b> </span><span class="decrease pp">20.09/24</span>
+                                            </td>
+                                            <td class="num">
+                                                <span class="increase">9.<b>41</b><b>%</b></span>
+                                            </td>
+                                        </tr>
+
+
+                                        <tr>
+                                            <td class="name">
+                                                <a href="/stock/recommend_view/2048">휴매나<span
+                                                        class="ticker">HUM</span></a>
+                                            </td>
+                                            <td class="goal">371.<b>80</b></td>
+                                            <td class="num"><span class="">
+
+                                                    400.<b>00</b> </span><span class="decrease pp">20.09/29</span>
+                                            </td>
+                                            <td class="num">
+                                                <span class="increase">7.<b>58</b><b>%</b></span>
+                                            </td>
+                                        </tr>
+
+
+                                        <tr>
+                                            <td class="name">
+                                                <a href="/stock/recommend_view/2057">애브비<span
+                                                        class="ticker">ABBV</span></a>
+                                            </td>
+                                            <td class="goal">90.<b>00</b></td>
+                                            <td class="num"><span class="">
+
+                                                    94.<b>35</b> </span><span class="decrease pp">20.08/27</span>
+                                            </td>
+                                            <td class="num">
+                                                <span class="increase">4.<b>83</b><b>%</b></span>
+                                            </td>
+                                        </tr>
+
+
+                                        <tr>
+                                            <td class="name">
+                                                <a href="/stock/recommend_view/2072">페이첵스<span
+                                                        class="ticker">PAYX</span></a>
+                                            </td>
+                                            <td class="goal">73.<b>50</b></td>
+                                            <td class="num"><span class="">
+
+                                                    76.<b>07</b> </span><span class="decrease pp">20.09/24</span>
+                                            </td>
+                                            <td class="num">
+                                                <span class="increase">3.<b>50</b><b>%</b></span>
+                                            </td>
+                                        </tr>
+
+
+                                        <tr>
+                                            <td class="name">
+                                                <a href="/stock/recommend_view/2077">바이오젠<span
+                                                        class="ticker">BIIB</span></a>
+                                            </td>
+                                            <td class="goal">268.<b>88</b></td>
+                                            <td class="num"><span class="">
+
+                                                    268.<b>91</b> </span><span class="decrease pp">20.10/22</span>
+                                            </td>
+                                            <td class="num">
+                                                <span class="increase">0.<b>01</b><b>%</b></span>
+                                            </td>
+                                        </tr>
+
+
+                                        <tr>
+                                            <td class="name">
+                                                <a href="/stock/recommend_view/2098">바이오젠<span
+                                                        class="ticker">BIIB</span></a>
+                                            </td>
+                                            <td class="goal">268.<b>88</b></td>
+                                            <td class="num"><span class="">
+
+                                                    268.<b>91</b> </span><span class="decrease pp">20.10/22</span>
+                                            </td>
+                                            <td class="num">
+                                                <span class="increase">0.<b>01</b><b>%</b></span>
+                                            </td>
+                                        </tr>
+                                        <tr class="hide_line">
+                                            <td class="name">
+                                                <a href="/stock/recommend_view/2153">월마트<span
+                                                        class="ticker">WMT</span></a>
+                                            </td>
+                                            <td class="goal">144.<b>71</b></td>
+                                            <td class="num"><span class="">
+
+                                                    137.<b>66</b> </span><span class="decrease pp">21.02/19</span>
+                                            </td>
+                                            <td class="num">
+                                                <span class="decrease">-4.<b>87</b><b>%</b></span>
+                                            </td>
+                                        </tr>
+                                        <tr class="hide_line">
+                                            <td class="name">
+                                                <a href="/stock/recommend_view/2074">가민<span
+                                                        class="ticker">GRMN</span></a>
+                                            </td>
+                                            <td class="goal">99.<b>36</b></td>
+                                            <td class="num"><span class="">
+
+                                                    93.<b>46</b> </span><span class="decrease pp">20.09/24</span>
+                                            </td>
+                                            <td class="num">
+                                                <span class="decrease">-5.<b>94</b><b>%</b></span>
+                                            </td>
+                                        </tr>
+
+
+                                        <tr class="hide_line">
+                                            <td class="name">
+                                                <a href="/stock/recommend_view/2063">오토매틱 데이터 프로세싱<span
+                                                        class="ticker">ADP</span></a>
+                                            </td>
+                                            <td class="goal">149.<b>00</b></td>
+                                            <td class="num"><span class="">
+                                                    134.<b>00</b> </span><span class="decrease pp">20.07/30</span>
+                                            </td>
+                                            <td class="num">
+                                                <span class="decrease">-10.<b>07</b><b>%</b></span>
+                                            </td>
+                                        </tr>
+
+
+                                        <tr class="hide_line">
+                                            <td class="name">
+                                                <a href="/stock/recommend_view/2201">익스피다이터스<span
+                                                        class="ticker">EXPD</span></a>
+                                            </td>
+                                            <td class="goal">128.<b>00</b></td>
+                                            <td class="num"><span class="">
+                                                    115.<b>00</b> </span><span class="decrease pp">21.10/05</span>
+                                            </td>
+                                            <td class="num">
+                                                <span class="decrease">-10.<b>16</b><b>%</b></span>
+                                            </td>
+                                        </tr>
+
+
+                                        <tr class="hide_line">
+                                            <td class="name">
+                                                <a href="/stock/recommend_view/2221">디어앤컴퍼니<span
+                                                        class="ticker">DE</span></a>
+                                            </td>
+                                            <td class="goal">382.<b>00</b></td>
+                                            <td class="num"><span class="">
+                                                    343.<b>00</b> </span><span class="decrease pp">21.09/20</span>
+                                            </td>
+                                            <td class="num">
+                                                <span class="decrease">-10.<b>21</b><b>%</b></span>
+                                            </td>
+                                        </tr>
+
+
+                                        <tr class="hide_line">
+                                            <td class="name">
+                                                <a href="/stock/recommend_view/2223">블랙스톤<span
+                                                        class="ticker">BX</span></a>
+                                            </td>
+                                            <td class="goal">125.<b>00</b></td>
+                                            <td class="num"><span class="">
+                                                    112.<b>00</b> </span><span class="decrease pp">21.10/05</span>
+                                            </td>
+                                            <td class="num">
+                                                <span class="decrease">-10.<b>40</b><b>%</b></span>
+                                            </td>
+                                        </tr>
+
+
+                                        <tr class="hide_line">
+                                            <td class="name">
+                                                <a href="/stock/recommend_view/2229">파이서브<span
+                                                        class="ticker">FISV</span></a>
+                                            </td>
+                                            <td class="goal">115.<b>00</b></td>
+                                            <td class="num"><span class="">
+                                                    103.<b>00</b> </span><span class="decrease pp">21.10/14</span>
+                                            </td>
+                                            <td class="num">
+                                                <span class="decrease">-10.<b>43</b><b>%</b></span>
+                                            </td>
+                                        </tr>
+
+
+                                        <tr class="hide_line">
+                                            <td class="name">
+                                                <a href="/stock/recommend_view/2199">나이키<span
+                                                        class="ticker">NKE</span></a>
+                                            </td>
+                                            <td class="goal">168.<b>00</b></td>
+                                            <td class="num"><span class="">
+                                                    150.<b>00</b> </span><span class="decrease pp">21.09/24</span>
+                                            </td>
+                                            <td class="num">
+                                                <span class="decrease">-10.<b>71</b><b>%</b></span>
+                                            </td>
+                                        </tr>
+
+
+                                        <tr class="hide_line">
+                                            <td class="name">
+                                                <a href="/stock/recommend_view/2222">노바티스 AG<span
+                                                        class="ticker">NVS</span></a>
+                                            </td>
+                                            <td class="goal">92.<b>00</b></td>
+                                            <td class="num"><span class="">
+                                                    82.<b>00</b> </span><span class="decrease pp">21.09/29</span>
+                                            </td>
+                                            <td class="num">
+                                                <span class="decrease">-10.<b>87</b><b>%</b></span>
+                                            </td>
+                                        </tr>
+
+
+                                        <tr class="hide_line">
+                                            <td class="name">
+                                                <a href="/stock/recommend_view/2083">켈로그<span
+                                                        class="ticker">K</span></a>
+                                            </td>
+                                            <td class="goal">69.<b>68</b></td>
+                                            <td class="num"><span class="">
+                                                    62.<b>00</b> </span><span class="decrease pp">20.09/23</span>
+                                            </td>
+                                            <td class="num">
+                                                <span class="decrease">-11.<b>02</b><b>%</b></span>
+                                            </td>
+                                        </tr>
+
+
+                                        <tr class="hide_line">
+                                            <td class="name">
+                                                <a href="/stock/recommend_view/2202">줌 비디오 커뮤니케이션<span
+                                                        class="ticker">ZM</span></a>
+                                            </td>
+                                            <td class="goal">365.<b>00</b></td>
+                                            <td class="num"><span class="">
+                                                    324.<b>00</b> </span><span class="decrease pp">21.08/31</span>
+                                            </td>
+                                            <td class="num">
+                                                <span class="decrease">-11.<b>23</b><b>%</b></span>
+                                            </td>
+                                        </tr>
+
+
+                                        <tr class="hide_line">
+                                            <td class="name">
+                                                <a href="/stock/recommend_view/2140">서비스나우<span
+                                                        class="ticker">NOW</span></a>
+                                            </td>
+                                            <td class="goal">561.<b>72</b></td>
+                                            <td class="num"><span class="">
+                                                    498.<b>00</b> </span><span class="decrease pp">21.03/04</span>
+                                            </td>
+                                            <td class="num">
+                                                <span class="decrease">-11.<b>34</b><b>%</b></span>
+                                            </td>
+                                        </tr>
+
+
+                                        <tr class="hide_line">
+                                            <td class="name">
+                                                <a href="/stock/recommend_view/2089">마스터카드<span
+                                                        class="ticker">MA</span></a>
+                                            </td>
+                                            <td class="goal">329.<b>88</b></td>
+                                            <td class="num"><span class="">
+
+                                                    291.<b>38</b> </span><span class="decrease pp">20.10/29</span>
+                                            </td>
+                                            <td class="num">
+                                                <span class="decrease">-11.<b>67</b><b>%</b></span>
+                                            </td>
+                                        </tr>
+
+
+                                        <tr class="hide_line">
+                                            <td class="name">
+                                                <a href="/stock/recommend_view/2102">마스터카드<span
+                                                        class="ticker">MA</span></a>
+                                            </td>
+                                            <td class="goal">329.<b>88</b></td>
+                                            <td class="num"><span class="">
+
+                                                    291.<b>38</b> </span><span class="decrease pp">20.10/29</span>
+                                            </td>
+                                            <td class="num">
+                                                <span class="decrease">-11.<b>67</b><b>%</b></span>
+                                            </td>
+                                        </tr>
+
+
+                                        <tr class="hide_line">
+                                            <td class="name">
+                                                <a href="/stock/recommend_view/2133">잭 헨리 &amp; 어소시에이츠<span
+                                                        class="ticker">JKHY</span></a>
+                                            </td>
+                                            <td class="goal">166.<b>80</b></td>
+                                            <td class="num"><span class="">
+                                                    145.<b>00</b> </span><span class="decrease pp">21.01/29</span>
+                                            </td>
+                                            <td class="num">
+                                                <span class="decrease">-13.<b>07</b><b>%</b></span>
+                                            </td>
+                                        </tr>
+
+
+                                        <tr class="hide_line">
+                                            <td class="name">
+                                                <a href="/stock/recommend_view/2054">인텔<span
+                                                        class="ticker">INTC</span></a>
+                                            </td>
+                                            <td class="goal">56.<b>50</b></td>
+                                            <td class="num"><span class="">
+                                                    49.<b>00</b> </span><span class="decrease pp">20.07/29</span>
+                                            </td>
+                                            <td class="num">
+                                                <span class="decrease">-13.<b>27</b><b>%</b></span>
+                                            </td>
+                                        </tr>
+
+
+                                        <tr class="hide_line">
+                                            <td class="name">
+                                                <a href="/stock/recommend_view/2203">ASML 홀딩<span
+                                                        class="ticker">ASML</span></a>
+                                            </td>
+                                            <td class="goal">845.<b>00</b></td>
+                                            <td class="num"><span class="">
+                                                    725.<b>00</b> </span><span class="decrease pp">21.10/04</span>
+                                            </td>
+                                            <td class="num">
+                                                <span class="decrease">-14.<b>20</b><b>%</b></span>
+                                            </td>
+                                        </tr>
+
+
+                                        <tr class="hide_line">
+                                            <td class="name">
+                                                <a href="/stock/recommend_view/2236">서던 코퍼<span
+                                                        class="ticker">SCCO</span></a>
+                                            </td>
+                                            <td class="goal">70.<b>00</b></td>
+                                            <td class="num"><span class="">
+
+                                                    60.<b>01</b> </span><span class="decrease pp">21.09/09</span>
+                                            </td>
+                                            <td class="num">
+                                                <span class="decrease">-14.<b>27</b><b>%</b></span>
+                                            </td>
+                                        </tr>
+
+
+                                        <tr class="hide_line">
+                                            <td class="name">
+                                                <a href="/stock/recommend_view/2181">시그나<span
+                                                        class="ticker">CI</span></a>
+                                            </td>
+                                            <td class="goal">245.<b>00</b></td>
+                                            <td class="num"><span class="">
+                                                    210.<b>00</b> </span><span class="decrease pp">21.08/05</span>
+                                            </td>
+                                            <td class="num">
+                                                <span class="decrease">-14.<b>29</b><b>%</b></span>
+                                            </td>
+                                        </tr>
+
+
+                                        <tr class="hide_line">
+                                            <td class="name">
+                                                <a href="/stock/recommend_view/2161">마켓액세스 홀딩스<span
+                                                        class="ticker">MKTX</span></a>
+                                            </td>
+                                            <td class="goal">537.<b>00</b></td>
+                                            <td class="num"><span class="">
+                                                    459.<b>00</b> </span><span class="decrease pp">21.05/05</span>
+                                            </td>
+                                            <td class="num">
+                                                <span class="decrease">-14.<b>53</b><b>%</b></span>
+                                            </td>
+                                        </tr>
+
+
+                                        <tr class="hide_line">
+                                            <td class="name">
+                                                <a href="/stock/recommend_view/2171">마켓액세스 홀딩스<span
+                                                        class="ticker">MKTX</span></a>
+                                            </td>
+                                            <td class="goal">537.<b>00</b></td>
+                                            <td class="num"><span class="">
+                                                    459.<b>00</b> </span><span class="decrease pp">21.05/05</span>
+                                            </td>
+                                            <td class="num">
+                                                <span class="decrease">-14.<b>53</b><b>%</b></span>
+                                            </td>
+                                        </tr>
+
+
+                                        <tr class="hide_line">
+                                            <td class="name">
+                                                <a href="/stock/recommend_view/2151">어드밴스드 마이크로 디바이스<span
+                                                        class="ticker">AMD</span></a>
+                                            </td>
+                                            <td class="goal">92.<b>35</b></td>
+                                            <td class="num"><span class="">
+                                                    78.<b>00</b> </span><span class="decrease pp">21.03/04</span>
+                                            </td>
+                                            <td class="num">
+                                                <span class="decrease">-15.<b>54</b><b>%</b></span>
+                                            </td>
+                                        </tr>
+
+
+                                        <tr class="hide_line">
+                                            <td class="name">
+                                                <a href="/stock/recommend_view/2128">페덱스<span
+                                                        class="ticker">FDX</span></a>
+                                            </td>
+                                            <td class="goal">291.<b>72</b></td>
+                                            <td class="num"><span class="">
+                                                    245.<b>00</b> </span><span class="decrease pp">21.01/08</span>
+                                            </td>
+                                            <td class="num">
+                                                <span class="decrease">-16.<b>02</b><b>%</b></span>
+                                            </td>
+                                        </tr>
+
+
+                                        <tr class="hide_line">
+                                            <td class="name">
+                                                <a href="/stock/recommend_view/2154">팔란티어<span
+                                                        class="ticker">PLTR</span></a>
+                                            </td>
+                                            <td class="goal">26.<b>50</b></td>
+                                            <td class="num"><span class="">
+                                                    20.<b>00</b> </span><span class="decrease pp">21.05/06</span>
+                                            </td>
+                                            <td class="num">
+                                                <span class="decrease">-24.<b>53</b><b>%</b></span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <div class="btn_more show_table show">
+                                    <span>더보기</span>                                    
+                                </div>
+                                <!-- //btn_more -->
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <!-- tabsArea -->
+                </div>
+                <!-- //ptfo_area -->
+
+                <div class="bandchart_sume" id="more">
+
+                    <div class="box info">
+                        <p><i></i>‘종목추천&amp;포트폴리오’는 금융 빅 데이터 분석과 알고리즘에 따라 저평가 우량주를 최적의 시점에 매매할 수 있도록 도움을 드리는 서비스입니다.</p>
+                    </div>
+                    <!-- //box -->
+
+                    <div class="box sum">
+                        <p class="title">종목추천&amp;포트폴리오 서비스는</p>
+                        <p class="txt">매일 미국주식 5,700여개 종목에 대한 실적, 재무, 적정주가, 주가추세 분석을 통해 최고의 주식을 발굴합니다. </p>
+                        <ul>
+                            <li>기업의 수익성, 성장성, 안전성, 독점력 등을 평가하고 최고의 우량주를 발굴합니다.</li>
+                            <li>자체 개발한 적정주가 산정 알고리즘에 따라 최적의 적정주가를 계산합니다.</li>
+                            <li>주가가 빠르게 상승할 가능성이 있는지, 단기/중기/장기 주가 추세 분석을 통해 최적의 매매 시점을 알려 드립니다. </li>
+                        </ul>
+                    </div>
+                    <!-- //box -->
+
+                    <div class="box rule">
+                        <p class="title">[운영원칙]</p>
+                        <ul>
+                            <li>종목 추천은 주5회(월 ~ 금) 진행합니다.</li>
+                            <li>포트폴리오 종목별 투자비중은 3%입니다.</li>
+                            <li>포트폴리오 최대 보유 종목수는 33종목입니다.(장기보유 9종목, 3개월 보유 24종목) 단, 목표가&#47;손절가 도달시 일괄 매도를 원칙으로 합니다.
+                            </li>
+                            <li>CNN의 주식시장 탐욕, 공포 지수 등을 활용해 주식과 현금 비중을 조절합니다.</li>
+                        </ul>
+                    </div>
+                    <!-- //box -->
+                </div>
+                <!-- //bandchart_sume -->
+
+                <!-- 프리미엄 서비스 사용자가 아닌 경우 -->
+                <div class="banner_prm">
+                    <span class="cho_prm"><i></i>초이스스탁US 프리미엄</span>
+                    <a href="#" class="weeks_free">[ 첫 달 3,000원! ]</a>
+                </div>
+                <div class="banner_prm">
+                    <span class="cho_prm"><i></i>초이스스탁US 프리미엄</span>                    
+                    <a href="#" class="weeks_free">[ 2주 무료보기 ]</a>
+                </div>
+                <!-- //프리미엄 서비스 사용자가 아닌 경우 -->
+            </div> <!-- //sub_mid -->
+
+        </div>
+        <!-- //container -->
+
+        <div id="footer" class="type_sub">
+
+            <!-- 인증 -->
+            <div class="certification">
+                <ul>
+                    <li><span>과학기술정보통신부</span><a
+                            href="http://www.datahero.co.kr/%eb%8d%b0%ec%9d%b4%ed%84%b0%ed%9e%88%ec%96%b4%eb%a1%9c-%ea%b3%bc%ea%b8%b0%ec%a0%95%ed%86%b5%eb%b6%80-2020-%eb%8d%b0%ec%9d%b4%ed%84%b0%ec%8a%a4%ed%83%80%ec%a6%88-%ec%84%a0%ec%a0%95/"
+                            title="데이터스타즈" target="_black"><img src="../img/datastars.png" alt="데이터스타즈"></a></li>
+                    <li><span>벤처기업인증</span><a
+                            href="http://www.datahero.co.kr/%eb%8d%b0%ec%9d%b4%ed%84%b0%ed%9e%88%ec%96%b4%eb%a1%9c-%ea%b8%b0%ec%88%a0%eb%b3%b4%ec%a6%9d%ea%b8%b0%ea%b8%88-%eb%b2%a4%ec%b2%98%ea%b8%b0%ec%97%85-%ec%9d%b8%ec%a6%9d-%ed%9a%8d%eb%93%9d/"
+                            title="벤처인증" target="_black"><img src="../img/kobo_logo.png" alt="벤처인증"></a></li>
+                </ul>
+            </div>
+            <!-- //인증 -->
+
+            <div class="notice">
+                <ul class="terms_list">
+                    <li><a href="/member/terms">이용약관</a></li>
+                    <li><a href="/member/policy">개인정보처리방침</a></li>
+                    <li><a href="https://www.datahero.co.kr" target="_blank">회사소개</a></li>
+                </ul>
+
+                <div class="foot_info">
+                    <div class="info_tel_box">
+                        <p>
+                            <span class="tel_num"><i></i>02-6225-2300</span>
+                            <span class="sns_kakao"><a href="http://pf.kakao.com/_QDLHxb/chat" target="_blank"><img
+                                        src="../img/sns_kakao_l.png" alt="카카오톡 문의하기"></a></span>
+                        </p>
+                    </div>
+                    <!-- //info_tel_box -->
+                    <p class="copyright"><a href="https://www.datahero.co.kr" target="_blank">ⓒ (주)데이터히어로</a><i></i>
+                        <strong>대표자</strong> 김인중 <i></i> <strong>사업자등록번호 291-88-01393</strong> <i></i> 서울특별시 서초구 강남대로
+                        311, 1021호
+                    </p>
+                    <div class="service_info">
+                        <p>본 서비스는 투자판단에 참고용으로만 사용하실 수 있으며, 모든 투자판단은 투자자 본인의 책임으로 당사는 그 결과에 대해 법적인 일체의 책임을 지지 않습니다.</p>
+                        <p class="dataLink">data from <a href="https://www.quandl.com/" target="_blank">Quandl and
+                                Sharadar</a>
+                        </p>
+                    </div>
+                </div>
+                <!-- //foot_info -->
+            </div>
+            <!-- //notice -->
+        </div>
+        <!-- //footer -->
+
+    </div>
+    <!-- //wrap -->
+</body>
+
+</html>

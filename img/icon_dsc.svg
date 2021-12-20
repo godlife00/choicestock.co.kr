@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="14" height="37" viewBox="0 0 14 37">
+  <g id="그룹_2844" data-name="그룹 2844" transform="translate(-24 -841)">
+    <g id="그룹_2843" data-name="그룹 2843">
+      <g id="그룹_2842" data-name="그룹 2842">
+        <g id="그룹_2789" data-name="그룹 2789" transform="translate(0 31)">
+          <g id="icon_-_delete" data-name="icon - delete" transform="translate(24 810)">
+            <path id="패스_637" data-name="패스 637" d="M7,0A7,7,0,1,1,0,7,7,7,0,0,1,7,0Z" fill="#82929f"/>
+            <path id="패스_4402" data-name="패스 4402" d="M17.057,4,12.134,8.923,9.241,6.03" transform="translate(-6.171 0.962)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+          </g>
+        </g>
+      </g>
+      <g id="icon_-_delete-2" data-name="icon - delete" transform="translate(24 864)">
+        <path id="패스_637-2" data-name="패스 637" d="M7,0A7,7,0,1,1,0,7,7,7,0,0,1,7,0Z" fill="#82929f"/>
+        <line id="선_17" data-name="선 17" x2="6" y2="6" transform="translate(4 4)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1"/>
+        <line id="선_18" data-name="선 18" y1="6" x2="6" transform="translate(4 4)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1"/>
+      </g>
+    </g>
+  </g>
+</svg>

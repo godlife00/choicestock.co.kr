@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="54" height="14" viewBox="0 0 54 14">
+  <g id="그룹_2408" data-name="그룹 2408" transform="translate(-116 -392.13)">
+    <g id="그룹_1423" data-name="그룹 1423" transform="translate(-172 -13.87)">
+      <circle id="타원_287" data-name="타원 287" cx="7" cy="7" r="7" transform="translate(288 406)" fill="#ff2929"/>
+      <g id="그룹_1417" data-name="그룹 1417" transform="translate(292.667 410.852)">
+        <path id="패스_3599" data-name="패스 3599" d="M16.765,14.382,14.382,12,12,14.382" transform="translate(-12 -12)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <path id="패스_3600" data-name="패스 3600" d="M18,16.765V12" transform="translate(-15.618 -12)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+    </g>
+    <g id="그룹_1422" data-name="그룹 1422" transform="translate(-173 -13.87)">
+      <circle id="타원_287-2" data-name="타원 287" cx="7" cy="7" r="7" transform="translate(309 406)" fill="#41b765"/>
+      <g id="그룹_1523" data-name="그룹 1523" transform="translate(318.431 410.852) rotate(90)">
+        <path id="패스_3599-2" data-name="패스 3599" d="M4.765,2.382,2.382,0,0,2.382" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <path id="패스_3600-2" data-name="패스 3600" d="M0,4.765V0" transform="translate(2.382)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+    </g>
+    <g id="그룹_1442" data-name="그룹 1442" transform="translate(-155 163.13)">
+      <circle id="타원_287-3" data-name="타원 287" cx="7" cy="7" r="7" transform="translate(311 229)" fill="#25abff"/>
+      <g id="그룹_1415" data-name="그룹 1415" transform="translate(320.431 238.616) rotate(180)">
+        <path id="패스_3599-3" data-name="패스 3599" d="M4.765,2.382,2.382,0,0,2.382" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"/>
+        <path id="패스_3600-3" data-name="패스 3600" d="M0,4.765V0" transform="translate(2.382)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"/>
+      </g>
+    </g>
+  </g>
+</svg>

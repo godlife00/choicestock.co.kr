@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
+  <g id="icon_list_lock" transform="translate(-306 -565)">
+    <rect id="사각형_1522" data-name="사각형 1522" width="14" height="14" rx="7" transform="translate(306 565)" fill="#b3b9e6"/>
+    <path id="Icon_material-lock" data-name="Icon material-lock" d="M10.918,3.959h-.351v-.7a1.756,1.756,0,0,0-3.513,0v.7H6.7a.7.7,0,0,0-.7.7V8.174a.7.7,0,0,0,.7.7h4.215a.7.7,0,0,0,.7-.7V4.662A.7.7,0,0,0,10.918,3.959ZM8.81,7.12a.7.7,0,1,1,.7-.7A.7.7,0,0,1,8.81,7.12ZM9.9,3.959H7.721v-.7a1.089,1.089,0,1,1,2.178,0Z" transform="translate(304.19 566.812)" fill="#fff"/>
+  </g>
+</svg>

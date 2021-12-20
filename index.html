@@ -1,0 +1,1713 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no" />
+    <title>초이스스탁US</title>
+    <meta name="robots" content="초이스스탁US - 미국주식 쉽고 편리하게'">
+    <meta name="description" content="투자를 쉽고 편리하게, 미국주식가이드, 종목분석, 종목토론, 데이터히어로">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="theme-color" content="#2C295D">
+    <!-- 오픈 그래프 -->
+    <meta property="og:title" content="초이스스탁US - 미국주식 쉽고 편리하게'" />
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="투자를 쉽고 편리하게, 미국주식가이드, 종목분석, 종목토론, 데이터히어로">
+    <meta property="og:image" content="http://godlife.ivyro.net/test/img/choicestockus_thumb.png">
+    <meta property="og:image:width" content="410" />
+    <meta property="og:image:height" content="210" />
+    <meta property="og:url" content="www.choicestock.co.kr">
+    <!-- 파비콘 favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="img/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <!-- jquery-1.12 -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <!-- highcharts -->
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/series-label.js"></script>
+    <script src="https://code.highcharts.com/highcharts-more.js"></script>
+    <script src="https://code.highcharts.com/modules/solid-gauge.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+    <script src="https://code.highcharts.com/modules/no-data-to-display.js"></script>
+    <script src="js/chartjs.js"></script>
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="css/choicestock.css?ver=2.02" />
+    <!-- js -->
+    <script src="js/globalstock.js"></script>
+    <!-- <script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> -->
+    <!-- 구글 애드센스 자동광고-->
+</head>
+<!-- 제휴사이트 민트 칼라 적용 class = mint  -->
+
+<body class="globalStock">
+    
+    <!-- 정식 오픈 이후 버전 -->
+    <div class="free_2weeks" id="layer_pop">
+        <!-- 보여줘야 하는 경우 class open -->
+        <div class="bg_gray"></div>
+        <div class="box">        
+            <div class="content">                
+                <div class="info_txt">
+                    <p class="txt01">무료로 <strong>미국주식 추천주와</strong><br><strong>포트폴리오 서비스</strong>를 받아보세요!</p>
+                    <br>
+                    <p class="txt02">추천종목, 포트폴리오, 시황 등<br><span>알림서비스가 함께 제공</span>됩니다</p>
+                </div>                
+                <div class="btn_area">
+                    <a href="#" class="free">프리미엄 무료체험</a>
+                </div>            
+            </div>
+            <div class="ftr">
+                <label for="pop_today" class="btn_day">
+                <input type="checkbox" name="pop_today" id="pop_today"/> 오늘 하루 열지 않기</label>
+                <a href="javascript:closeWin();" class="btn_close">닫기</a>
+            </div>        
+        </div>        
+    </div>
+    <!-- 오늘 하루 열지 않기 -->
+    <script language="Javascript" type="text/javascript">
+        cookiedata = document.cookie;
+        if (cookiedata.indexOf("ncookie=done") < 0) {
+            document.getElementById('layer_pop').style.display = "inline";
+        } else {
+            document.getElementById('layer_pop').style.display = "none";
+        }    
+        function setCookie(name, value, expirehours) {
+            var todayDate = new Date();
+            todayDate.setHours(todayDate.getHours() + expirehours);
+            document.cookie = name + "=" + escape(value) + "; path=/; expires=" + todayDate.toGMTString() + ";"
+        }
+        $('#pop_today').on('click', function() {            
+            setCookie("ncookie", "done", 24);            
+            document.getElementById('layer_pop').style.display = "none";
+        });
+    </script>    
+
+    <!-- <div class="top_banner event" id="layer_pop">
+        <a href="https://www.choicestock.co.kr/stock/research_view/846"><img src="img/banner/wowtv_open.png" alt="미국주식창 전격 오픈" style="display: inline-block; width: 100%;"></a>        
+        <label for="pop_today" class="btn_day" style="color: #000; opacity: 0.85; font-weight: 300;">
+            <input type="checkbox" name="pop_today" id="pop_today" /> 오늘 하루 열지 않기</label>
+        <a href="javascript:closeWin();" class="btn_close" style="color: #d4c9dd; border: 1px solid #d4c9dd; text-align: center;">X</a>
+    </div> -->
+    <!-- popup 영역 -->
+
+    <!-- 서비스장애 상단배너 -->
+    <div class="limit_banner" style="display: none;">
+        <p>시스템정비로 <a href="#">서비스가 일시 중지</a> 됩니다. (11/5, 4시 ~ 최대10분) <a href="#" class="btn_close">X</a></p>
+    </div>
+    <script language="Javascript" type="text/javascript">
+        $('.globalStock .limit_banner p .btn_close').on("click", function () {
+            $('.globalStock .limit_banner').slideUp();
+        })
+    </script>
+    <!-- //서비스장애 상단배너 -->
+
+    <!-- 2주 무료체험 상단배너 -->
+    <div class="weeks_free3">
+        <p><a href="stock/service_prm.html"> 프리미엄 2주 무료 체험</a> 중 입니다(~6/20까지) <a href="#" class="btn_close">X</a></p>
+    </div>
+    <script language="Javascript" type="text/javascript">
+        $('.globalStock .weeks_free3 p .btn_close').on("click", function () {
+            $('.globalStock .weeks_free3').slideUp();
+        })
+    </script>
+    <!-- //2주 무료체험 상단배너 -->
+
+    <!-- 미주미 상단 협업프로모션-->
+    <div class="mijumi_promotion top_banner">
+        <h1 class="logo"><img src="img/logo_mijumi.png" alt="미주미x데이터히어로"></h1>
+        <p>미국주식투자를 위해 함께합니다.</p>
+    </div>
+
+    <div id="wrap">
+        <!-- 하단 GNB -->
+        <div class="gnb">
+            <ul class="list">
+                <li class="home active"><a href="#"><i></i> 홈</a></li>
+                <li class="stock"><a href="stock/recom.html">추천</a></li>
+                <li class="analysis"><a href="search/search_diagnosis.html">진단</a></li>
+                <li class="excavation"><a href="attractiveness/attractiveness.html">발굴</a></li>
+                <li class="menu"><a href="stock/menu.html">메뉴</a></li>
+            </ul>
+        </div>
+        <!-- //gnb -->
+
+        <div id="header" class="header h_sub">
+            <div class="headerTop">
+                <h1 class="headerLogo"><span>초이스스탁</span>
+                </h1>
+                <div class="hm">
+                    <!-- 확인안한 알림이 있는 경우 class = alarm 보여짐 -->
+                    <a href="member/login_sns.html" class="btn_login">로그인</a>
+                    <a href="stock/alarm_list.html" class="alarm"><img src="img/icon_alarm.png" alt="알림">
+                        <i>확인안함</i></a>
+                    <!-- <a href="search/searching.html" class="go_sch"><img src="img/icon_search.svg" alt="검색하기"></a> -->
+                </div>
+                <!-- //hm -->
+            </div>
+            <!-- //headerTop -->
+        </div>
+
+        <div id="container">
+            <!-- 로그인 체크 -->
+            <div class="log_chk">
+                <!-- 회원로그인 -->
+                <div class="login">
+                    <p><span class="user_name">초이스스탁US </span>미국주식 쉽고 편리하게!</p>
+                </div>
+                <!-- 비로그인 -->
+                <!-- <div class="logout">
+                    <p>* 원활한 서비스 이용을 위해 <span>메일 인증이 필요</span>합니다. <a href="">[자세히]</a></p>
+                </div> -->
+            </div>
+            <!-- //log_chk -->
+
+            <div class="main_searching">
+
+                <!-- 종목명 검색창 -->
+                <div class="searchArea">
+                    <form action="">
+                        <fieldset>
+                            <input type="text" placeholder="종목명 또는 심볼을 입력하세요.." class="searchInput">
+                            <input type="image" src="img/icon_search.svg" alt="검색" class="searchBtn">
+                        </fieldset>
+                    </form>
+                </div>
+                <!-- //종목명 검색창 -->
+
+                <!-- 검색어 입력시 자동완성 -->
+                <div class="sch_autocomplete focus_on" style="display: none;">
+                    <!-- //자동완성 결과 노출 class : _show -->
+                    <!-- 검색결과 있을경우 -->
+                    <ul>
+                        <li>
+                            <a href="search_diagnosis.html" class="_on">
+                                <span class="schCode">APPLAPPLAPPLAPPL</span>
+                                <span class="schList"><strong>Ap</strong>ple Inc 애플</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="search_diagnosis.html">
+                                <span class="schCode">AP</span>
+                                <span class="schList">AmpcoPittsburgh Corporation 애플</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="search_diagnosis.html">
+                                <span class="schCode">APLT</span>
+                                <span class="schList"><strong>Ap</strong>plied Ther<strong>ap</strong>eutics, Inc.
+                                    애플</span>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <!-- 검색결과 없을경우 -->
+                    <div class="no_result">
+                        <p><strong>sdyfsd</strong>에 대한 검색결과가 없습니다.</p>
+                    </div>
+                    <!-- //no_result -->
+                </div>
+                <!-- //sch_autocomplete -->
+            </div>
+            <!-- //main_searching -->
+
+            <!-- 모닝브리핑, 종목추천 3개 -->
+            <div class="main_mid briefing_recom">
+                <div class="mainbriefingSwiper">                    
+                    <ul>
+                        <li class="txt"><a href="https://www.choicestock.co.kr/stock/morning"><span class="note_issue">이슈</span>[모닝브리핑] 11국채금리 상승세 나스닥 2.7% 국채금리 상승세나스닥 2.7% 국채금리 상승세</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- //모닝브리핑, 종목노트 -->            
+
+            <div class="main_mid attention_area">
+                <h3 class="title"><a href="search/searching.html">관심종목</a></h3>
+                <a href="search/searching.html" class="more"><img src="img/more_Black.png" alt="더보기"></a>
+
+                <!-- Swiper -->
+                <div class="swiper-container attentionSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <table cellspacing="0" border="0" class="tableRanking type_2Line">
+                                <tbody>
+                                    <tr>
+                                        <td class="title"><a href="stock/recom.html">넷플릭스<span
+                                                    class="ticker">AAPL</span></a>
+                                        </td>
+                                        <td class="num">
+                                            <span>69.<b>00</b></span>
+                                        </td>
+                                        <td class="num dod">
+                                            <span class="increase">+198.9<b>%</b></span>
+                                            <!-- increase 증가, decrease 감소 -->
+                                        </td>
+                                        <!-- 프리미엄 서비스 부분 -->
+                                        <td class="prm_lock"><span><img src="img/prm_lock.png" alt="잠김"></span>
+                                        </td>
+                                        <!-- //프리미엄 서비스 부분 -->
+                                    </tr>
+                                    <tr>
+                                        <td class="title"><a href="stock/recom.html">애질런트 테크놀러지스<span
+                                                    class="ticker">A</span></a>
+                                        </td>
+                                        <td class="num">
+                                            <span>852.<b>64</b></span>
+                                        </td>
+                                        <td class="num dod">
+                                            <span class="decrease">-2.9<b>%</b></span><!-- increase 증가, decrease 감소 -->
+                                        </td>
+                                        <td class="recom"><span>적정가</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="title"><a href="stock/recom.html">애질런트 테크놀러지스<span
+                                                    class="ticker">A</span></a>
+                                        </td>
+                                        <td class="num">
+                                            <span>69.<b>00</b></span>
+                                        </td>
+                                        <td class="num dod">
+                                            <span class="decrease">-87.9<b>%</b></span><!-- increase 증가, decrease 감소 -->
+                                        </td>
+                                        <td class="recom"><span>적정가</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="title"><a href="#">애질런트 테크놀러지스<span class="ticker">A</span></a>
+                                        </td>
+                                        <td class="num">
+                                            <span>69.<b>00</b></span>
+                                        </td>
+                                        <td class="num dod">
+                                            <span class="decrease">-2.9<b>%</b></span><!-- increase 증가, decrease 감소 -->
+                                        </td>
+                                        <td class="recom"><span>적정가</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- //swiper-slide -->
+                        <div class="swiper-slide">
+                            <table cellspacing="0" border="0" class="tableRanking type_2Line">
+                                <tbody>
+                                    <tr>
+                                        <td class="title"><a href="search/_searching.html">넷플릭스<span
+                                                    class="ticker">AAPL</span></a>
+                                        </td>
+                                        <td class="num">
+                                            <span>1180.<b>00</b></span>
+                                        </td>
+                                        <td class="num dod">
+                                            <span class="increase">+198.9<b>%</b></span>
+                                            <!-- increase 증가, decrease 감소 -->
+                                        </td>
+                                        <!-- 프리미엄 서비스 부분 -->
+                                        <td class="prm_lock"><span><img src="img/prm_lock.png" alt="잠김"></span>
+                                        </td>
+                                        <!-- //프리미엄 서비스 부분 -->
+                                    </tr>
+                                    <tr>
+                                        <td class="title"><a href="search/_searching.html">애질런트 테크놀러지스<span
+                                                    class="ticker">A</span></a>
+                                        </td>
+                                        <td class="num">
+                                            <span>69.<b>00</b></span>
+                                        </td>
+                                        <td class="num dod">
+                                            <span class="decrease">-2.9<b>%</b></span><!-- increase 증가, decrease 감소 -->
+                                        </td>
+                                        <td class="recom"><span>적정가</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="title"><a href="search/_searching.html">애질런트 테크놀러지스<span
+                                                    class="ticker">A</span></a>
+                                        </td>
+                                        <td class="num">
+                                            <span>69.<b>00</b></span>
+                                        </td>
+                                        <td class="num dod">
+                                            <span class="decrease">-87.9<b>%</b></span><!-- increase 증가, decrease 감소 -->
+                                        </td>
+                                        <td class="recom"><span>적정가</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="title"><a href="#">애질런트 테크놀러지스<span class="ticker">A</span></a>
+                                        </td>
+                                        <td class="num">
+                                            <span>69.<b>00</b></span>
+                                        </td>
+                                        <td class="num dod">
+                                            <span class="decrease">-2.9<b>%</b></span><!-- increase 증가, decrease 감소 -->
+                                        </td>
+                                        <td class="recom"><span>적정가</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- //swiper-slide -->
+
+                        <div class="swiper-slide">
+                            <table cellspacing="0" border="0" class="tableRanking type_2Line">
+                                <tbody>
+                                    <tr>
+                                        <td class="title"><a href="search/_searching.html">넷플릭스<span
+                                                    class="ticker">AAPL</span></a>
+                                        </td>
+                                        <td class="num">
+                                            <span>1180.<b>00</b></span>
+                                        </td>
+                                        <td class="num dod">
+                                            <span class="increase">+198.9<b>%</b></span>
+                                            <!-- increase 증가, decrease 감소 -->
+                                        </td>
+                                        <!-- 프리미엄 서비스 부분 -->
+                                        <td class="prm_lock"><span><img src="img/prm_lock.png" alt="잠김"></span>
+                                        </td>
+                                        <!-- //프리미엄 서비스 부분 -->
+                                    </tr>
+                                    <tr>
+                                        <td class="title"><a href="search/_searching.html">애질런트 테크놀러지스<span
+                                                    class="ticker">A</span></a>
+                                        </td>
+                                        <td class="num">
+                                            <span>69.<b>00</b></span>
+                                        </td>
+                                        <td class="num dod">
+                                            <span class="decrease">-2.9<b>%</b></span><!-- increase 증가, decrease 감소 -->
+                                        </td>
+                                        <td class="recom"><span>적정가</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- //swiper-slide -->
+
+                        <div class="swiper-slide">
+                            <div class="attention_all">
+                                <a href="">관심종목 전체보기 <i></i></a>
+                            </div>
+                        </div>
+                        <!-- //swiper-slide -->
+
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+                <!-- //attentionSwiper -->
+                <div class="one_step">
+                    <span class="txt">나의 관심종목은 얼마나 매력적일까?</span>
+                    <a href="stock/recom.html" class="more"><span>원스톱 진단</span><img src="img/more_yel.png"
+                            alt="더보기"></a>
+                </div>
+                <!-- //one_step -->
+            </div>
+            <!-- //eventPicks_area -->
+
+            <!-- 투자레시피 -->
+            <div class="main_mid event_recipe">
+
+                <div class="tabsArea">
+                    <ul class="tabs recipe_tabs">
+                        <li class="active" rel="tab1"><span>급등주</span></li>
+                        <li rel="tab2"><span>최근실적</span></li>
+                        <li rel="tab3"><span>관심TOP50</span></li>
+                        <li rel="tab4"><span>배당주</span></li>
+                    </ul>
+
+                    <div class="tab_container">
+                        <!-- 급등주 -->
+                        <div id="tab1" class="tab_content">
+                            <div class="tableth_box">
+                                <ul class="game_th">
+                                    <li>1개월간 상승률</li>
+                                    <li>주가추이</li>
+                                </ul>
+                                <table cellspacing="0" border="0" class="tableRanking type_2Line">
+                                    <tbody>
+                                        <tr>
+                                            <td class="title t_short">
+                                                <a href="#" data-modal="modal-3" class="md-trigger">
+                                                    마<span class="remark">
+                                                        <div class="txt_filter size_M"><i></i><i></i><i></i><i></i>
+                                                        </div>
+                                                    </span>
+
+                                                    <span class="ticker"><span class="remark">
+                                                            <div class="txt_filter size_S"><i></i><i></i><i></i><i></i>
+                                                            </div>
+                                                        </span>
+                                                    </span>
+                                                </a>
+                                            </td>
+                                            <td class="num">
+                                                <span>69.<b>00</b></span>
+                                            </td>
+                                            <td class="num dod">
+                                                <span class="increase">+98.9<b>%</b></span>
+                                                <!-- increase 증가, decrease 감소 -->
+                                            </td>
+                                            <td class="trans trans"><i></i><span>중립</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="title t_short"><a
+                                                    href="stock/recipejump_view.html">마이크로소프트마이크로소프트<span
+                                                        class="ticker">AAPL</span></a></td>
+                                            <td class="num">
+                                                <span>180.<b>00</b></span>
+                                            </td>
+                                            <td class="num dod">
+                                                <span class="increase">+98.9<b>%</b></span>
+                                                <!-- increase 증가, decrease 감소 -->
+                                            </td>
+                                            <td class="trans up"><i></i><span>강세</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="title t_short"><a href="stock/recom.html">넷플릭스넷플릭스넷플릭스넷플릭스<span
+                                                        class="ticker">AAPL</span></a></td>
+                                            <td class="num">
+                                                <span>1180.<b>00</b></span>
+                                            </td>
+                                            <td class="num dod">
+                                                <span class="increase">+298.9<b>%</b></span>
+                                                <!-- increase 증가, decrease 감소 -->
+                                            </td>
+                                            <td class="trans down"><i></i><span>단기</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="title t_short"><a href="#">넷플릭스<span
+                                                        class="ticker">AAPL</span></a></td>
+                                            <td class="num">
+                                                <span>80.<b>00</b></span>
+                                            </td>
+                                            <td class="num dod">
+                                                <span class="decrease">-8.9<b>%</b></span>
+                                                <!-- increase 증가, decrease 감소 -->
+                                            </td>
+                                            <td class="trans down"><i></i><span>단기</span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="table_btmarea">
+                                    <a href="stock/recipe.html" class="more">더보기<i></i></a>
+                                </div>
+                                <!-- //table_btmarea -->
+                            </div>
+                        </div>
+
+                        <!-- 최근실적 -->
+                        <div id="tab2" class="tab_content">
+                            <div class="tableth_box">
+                                <ul class="game_th">
+                                    <li class="ths_2">전년대비</li>
+                                    <li class="ths_2">발표순이익</li>
+                                </ul>
+                                <table cellspacing="0" border="0" class="tableRanking type_2Line">
+                                    <tbody>
+                                        <tr>
+                                            <td class="title t_short"><a href="stock/recipe_view.html">넷플릭스<span
+                                                        class="ticker">AAPL</span></a></td>
+                                            <td class="num">
+                                                <span>9680.<b>00</b></span>
+                                            </td>
+                                            <td class="num dod">
+                                                <span class="increase">+98.9<b>%</b></span>
+                                                <!-- increase 증가, decrease 감소 -->
+                                            </td>
+                                            <td class="num profit">
+                                                <span>183</span>
+                                                <span class="hit">백만달러</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="title t_short"><a href="stock/recipe_view.html">넷플릭스넷플릭스넷플릭스<span
+                                                        class="ticker">AAPL</span></a></td>
+                                            <td class="num">
+                                                <span>80.<b>00</b></span>
+                                            </td>
+                                            <td class="num dod">
+                                                <span class="increase">+198.9<b>%</b></span>
+                                                <!-- increase 증가, decrease 감소 -->
+                                            </td>
+                                            <td class="num profit">
+                                                <span>84,345</span>
+                                                <span class="hit">백만달러</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="title t_short"><a href="#">넷플릭스<span
+                                                        class="ticker">AAPL</span></a></td>
+                                            <td class="num">
+                                                <span>110.<b>00</b></span>
+                                            </td>
+                                            <td class="num dod">
+                                                <span class="increase">+8.9<b>%</b></span>
+                                                <!-- increase 증가, decrease 감소 -->
+                                            </td>
+                                            <td class="num profit">
+                                                <span>33</span>
+                                                <span class="hit">백만달러</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="title t_short"><a href="#">넷플릭스<span
+                                                        class="ticker">AAPL</span></a></td>
+                                            <td class="num">
+                                                <span>180.<b>00</b></span>
+                                            </td>
+                                            <td class="num dod">
+                                                <span class="increase">+198.9<b>%</b></span>
+                                                <!-- increase 증가, decrease 감소 -->
+                                            </td>
+                                            <td class="num profit">
+                                                <span class="txt">흑자전환</span>
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                                <div class="table_btmarea">
+                                    <a href="stock/recipe_intro" class="more">더보기<i></i></a>
+                                </div>
+                                <!-- //table_btmarea -->
+                            </div>
+                        </div>
+
+                        <!-- 관심TOP50 -->
+                        <div id="tab3" class="tab_content">
+                            <div class="tableth_box">
+                                <ul class="game_th">
+                                    <li class="ths_2">전일상승률</li>
+                                    <li class="ths_2">관심수</li>
+                                </ul>
+                                <table cellspacing="0" border="0" class="tableRanking type_2Line">
+                                    <colgroup>
+                                        <col width="100px">
+                                        <col width="">
+                                        <col width="">
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <td class="title t_short"><a href="stock/recipetop_view.html">넷플릭스<span
+                                                        class="ticker">AAPL</span></a></td>
+                                            <td class="num">
+                                                <span>180.<b>00</b></span>
+                                            </td>
+                                            <td class="num dod">
+                                                <span class="increase">+198.9<b>%</b></span>
+                                                <!-- increase 증가, decrease 감소 -->
+                                            </td>
+                                            <td class="num profit td_attention">
+                                                <p class="attention on"><i></i>828K</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="title t_short"><a href="stock/recipetop_view.html">넷플릭스<span
+                                                        class="ticker">AAPL</span></a></td>
+                                            <td class="num">
+                                                <span>8.<b>00</b></span>
+                                            </td>
+                                            <td class="num dod">
+                                                <span class="decrease">-98.9<b>%</b></span>
+                                                <!-- increase 증가, decrease 감소 -->
+                                            </td>
+                                            <td class="num profit td_attention">
+                                                <p class="attention on"><i></i>888</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="title t_short"><a href="#">넷플릭스<span
+                                                        class="ticker">AAPL</span></a></td>
+                                            <td class="num">
+                                                <span>1180.<b>00</b></span>
+                                            </td>
+                                            <td class="num dod">
+                                                <span class="increase">+198.9<b>%</b></span>
+                                                <!-- increase 증가, decrease 감소 -->
+                                            </td>
+                                            <td class="num profit td_attention">
+                                                <p class="attention on"><i></i>8</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="title t_short"><a href="#">넷플릭스넷플릭스넷플릭스<span
+                                                        class="ticker">AAPL</span></a></td>
+                                            <td class="num">
+                                                <span>80.<b>00</b></span>
+                                            </td>
+                                            <td class="num dod">
+                                                <span class="increase">+198.9<b>%</b></span>
+                                                <!-- increase 증가, decrease 감소 -->
+                                            </td>
+                                            <td class="num profit td_attention">
+                                                <p class="attention on"><i></i>828K</p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="table_btmarea">
+                                    <a href="stock/recipe_intro" class="more">더보기<i></i></a>
+                                </div>
+                                <!-- //table_btmarea -->
+                            </div>
+                        </div>
+
+                        <!-- 배당주 -->
+                        <div id="tab4" class="tab_content">
+                            <div class="tableth_box">
+                                <ul class="game_th">
+                                    <li class="ths_2">배당수익률</li>
+                                    <li class="ths_2">주당배당금</li>
+                                </ul>
+                                <table cellspacing="0" border="0" class="tableRanking type_2Line">
+                                    <tbody>
+                                        <tr>
+                                            <td class="title t_short">
+                                                <a href="#" data-modal="modal-3" class="md-trigger">
+                                                    마<span class="remark">
+                                                        <div class="txt_filter size_M"><i></i><i></i><i></i><i></i>
+                                                        </div>
+                                                    </span>
+
+                                                    <span class="ticker">
+                                                        <span class="remark">
+                                                            <div class="txt_filter size_S"><i></i><i></i><i></i><i></i>
+                                                            </div>
+                                                        </span>
+                                                    </span>
+                                                </a>
+                                            </td>
+                                            <td class="num">
+                                                <span>1180.<b>00</b></span>
+                                            </td>
+                                            <td class="num dod">
+                                                <span class="decrease">-8.9<b>%</b></span>
+                                                <!-- increase 증가, decrease 감소 -->
+                                            </td>
+                                            <td class="num profit">
+                                                <span>8.<b>24</b></span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="title t_short"><a href="stock/recipe_view.html">넷플릭스<span
+                                                        class="ticker">AAPL</span></a></td>
+                                            <td class="num">
+                                                <span>180.<b>00</b></span>
+                                            </td>
+                                            <td class="num dod">
+                                                <span class="increase">+198.9<b>%</b></span>
+                                                <!-- increase 증가, decrease 감소 -->
+                                            </td>
+                                            <td class="num profit">
+                                                <span>10.<b>24</b></span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="title t_short"><a href="stock/recipe_view.html">넷플릭스<span
+                                                        class="ticker">AAPL</span></a></td>
+                                            <td class="num">
+                                                <span>1180.<b>00</b></span>
+                                            </td>
+                                            <td class="num dod">
+                                                <span class="increase">+198.9<b>%</b></span>
+                                                <!-- increase 증가, decrease 감소 -->
+                                            </td>
+                                            <td class="num profit">
+                                                <span>18.<b>00</b></span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="title t_short"><a href="#">넷플릭스<span
+                                                        class="ticker">AAPL</span></a></td>
+                                            <td class="num">
+                                                <span>1180.<b>00</b></span>
+                                            </td>
+                                            <td class="num dod">
+                                                <span class="increase">+198.9<b>%</b></span>
+                                                <!-- increase 증가, decrease 감소 -->
+                                            </td>
+                                            <td class="num profit">
+                                                <span>18.<b>00</b></span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="table_btmarea">
+                                    <a href="stock/recipe_intro" class="more">더보기<i></i></a>
+                                </div>
+                                <!-- //table_btmarea -->
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- //event_recipe -->
+
+            <div class="main_top recommend_area">
+
+                <h3 class="title"><a href="stock/recom.html">종목추천</a></h3>
+                <a href="stock/game.html" class="more"><img src="img/more_Black.png" alt="더보기"></a>
+                
+                <div class="recomlist_area">
+                    <div class="swiper-container  maingameSwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="area">
+                                    <ul class="list">
+                                        <li class="title"><a href="">마이크로소프트</a></li>
+                                        <li class="sum">MSFT</li>
+                                        <li class="detail">
+                                            <div class="num">
+                                                <span>831,496.<b>25</b></span>
+                                            </div>
+                                            <div class="per">
+                                                <span class="increase">238.34<b>%</b></span>
+                                            </div>
+                                        </li>
+                                        <li class="num">
+                                            <div>
+                                                <span class="th">목표가</span>
+                                                <span class="td">8869.<b>88</b></span>
+                                            </div>
+                                            <div>
+                                                <span class="th">수익률</span>
+                                                <span class="increase dod">23.99<b>%</b></span>
+                                                <!-- increase 증가, decrease 감소 -->
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="area">
+                                    <ul class="list">
+                                        <li class="title"><a href="#">마<span class="remark">
+                                                    <div class="txt_filter size_M"><i></i><i></i><i></i><i></i>
+                                                    </div>
+                                                </span></a></li>
+                                        <li class="sum"><span class="remark">
+                                                <div class="txt_filter size_S"><i></i><i></i><i></i><i></i></div>
+                                            </span></li>
+                                        <li class="detail">
+                                            <div class="num">
+                                                <span>831,496.<b>25</b></span>
+                                            </div>
+                                            <div class="per">
+                                                <span class="increase">238.34<b>%</b></span>
+                                            </div>
+                                        </li>
+                                        <li class="num">
+                                            <div>
+                                                <span class="th">목표가</span>
+                                                <span class="td prm_lock"><a href="#"><img src="img/prm_lockW.png" alt="잠김"></a></span>
+                                            </div>
+                                            <div>
+                                                <span class="th">수익률</span>
+                                                <span class="increase dod">888.88<b>%</b></span>
+                                                <!-- increase 증가, decrease 감소 -->
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="area">
+                                    <ul class="list">
+                                        <li class="title"><a href="">마이크로소프트</a></li>
+                                        <li class="sum">MSFT</li>
+                                        <li class="detail">
+                                            <div class="num">
+                                                <span>831,496.<b>25</b></span>
+                                            </div>
+                                            <div class="per">
+                                                <span class="decrease">238.34<b>%</b></span>
+                                            </div>
+                                        </li>
+                                        <li class="num">
+                                            <div>
+                                                <span class="th">목표가</span>
+                                                <span class="td">8869.<b>88</b></span>
+                                            </div>
+                                            <div>
+                                                <span class="th">수익률</span>
+                                                <span class="decrease dod">-88.99<b>%</b></span>
+                                                <!-- increase 증가, decrease 감소 -->
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="area">
+                                    <ul class="list">
+                                        <li class="title"><a href="">마이크로소프트</a></li>
+                                        <li class="sum">MSFT</li>
+                                        <li class="detail">
+                                            <div class="num">
+                                                <span>831,496.<b>25</b></span>
+                                            </div>
+                                            <div class="per">
+                                                <span class="increase">238.34<b>%</b></span>
+                                            </div>
+                                        </li>
+                                        <li class="num">
+                                            <div>
+                                                <span class="th">목표가</span>
+                                                <span class="td">8869.<b>88</b></span>
+                                            </div>
+                                            <div>
+                                                <span class="th">수익률</span>
+                                                <span class="increase dod">23.99<b>%</b></span>
+                                                <!-- increase 증가, decrease 감소 -->
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="area">
+                                    <ul class="list">
+                                        <li class="title"><a href="">마이크로소프트</a></li>
+                                        <li class="sum">MSFT</li>
+                                        <li class="detail">
+                                            <div class="num">
+                                                <span>831,496.<b>25</b></span>
+                                            </div>
+                                            <div class="per">
+                                                <span class="increase">238.34<b>%</b></span>
+                                            </div>
+                                        </li>
+                                        <li class="num">
+                                            <div>
+                                                <span class="th">목표가</span>
+                                                <span class="td">8869.<b>88</b></span>
+                                            </div>
+                                            <div>
+                                                <span class="th">수익률</span>
+                                                <span class="increase dod">23.99<b>%</b></span>
+                                                <!-- increase 증가, decrease 감소 -->
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+                <!-- //recomlist_area -->
+
+                <div class="ptfo_recom">
+                    <h4 class="ptfo_title">추천포트폴리오</h4>
+                    <dl class="revenue">
+                        <dt>수익률</dt>
+                        <dd class="increase">+379.00<b>%</b></dd>
+                        <!-- increase 증가, decrease 감소 -->
+                    </dl>
+                    <a href="stock/recom.html" class="more">종목 <span>14개</span><img src="img/more_Black.png"
+                            alt="더보기"></a>
+                </div>
+                <!-- //ptfo_recom -->
+                <div class="ptfo_datatable">
+                    <table cellspacing="0" border="0" class="tableRanking ptfo_table">
+                        <tbody>
+                            <tr>
+                                <td class="name">
+                                    <a href="">애<span class="remark">
+                                            <div class="txt_filter size_M"><i></i><i></i><i></i><i></i></div>
+                                        </span></a>
+                                </td>
+                                <td class="num">
+                                    <span class="">227.<b>56</b></span>
+                                    <span class="increase pp">+29.9<b>%</b></span>
+                                    <!-- increase 증가, decrease 감소 -->
+                                </td>
+                                <td class="num">
+                                    <span class="yield">수익률</span>
+                                    <span class="increase pp">+29.9<b>%</b></span>
+                                    <!-- increase 증가, decrease 감소 -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="name">
+                                    <a href="">마이크로소프트마이크로소프트</a>
+                                </td>
+                                <td class="num">
+                                    <span class="">8888.<b>00</b></span>
+                                    <span class="decrease pp">-29.9<b>%</b></span>
+                                    <!-- increase 증가, decrease 감소 -->
+                                </td>
+                                <td class="num">
+                                    <span class="yield">수익률</span>
+                                    <span class="increase pp">+29.9<b>%</b></span>
+                                    <!-- increase 증가, decrease 감소 -->
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <!-- 모닝브리핑, 종목추천 3개 -->
+                <div class="main_mid briefing_recom">
+                    <div class="swiper-container mainbriefingSwiper">
+                        <div class="swiper-wrapper">                            
+                            <div class="swiper-slide">
+                                <ul>
+                                    <li class="txt"><a href="stock/recom_view.html"><span class="note_recom">추천</span>[종목추천] <span class="remark">마 <div class="txt_filter size_S"><i></i><i></i><i></i><i></i></div></span> 10배 성장하는 생각법-월드클래스 창업자</a></li>
+                                </ul>
+                            </div>
+                            <div class="swiper-slide">
+                                <ul>
+                                    <li class="txt"><a href="stock/recom_view.html"><span class="note_recom">추천</span>[종목추천] <span class="remark">마 <div class="txt_filter size_S"><i></i><i></i><i></i><i></i></div></span> 10배 성장하는 생각법-월드클래스 창업자</a></li>
+                                </ul>
+                            </div>
+                            <div class="swiper-slide">
+                                <ul>
+                                    <li class="txt"><a href="stock/recom_view.html"><span class="note_recom">추천</span>[종목추천] <span class="remark">마 <div class="txt_filter size_S"><i></i><i></i><i></i><i></i></div></span> 10배 성장하는 생각법-월드클래스 창업자</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- //모닝브리핑, 종목노트 -->
+
+                <!-- 구글 에드센스 추천포트폴리오 하단 -->
+                <!-- 사각형(new) -->
+                <ins class="adsbygoogle"
+                    style="display:block"
+                    data-ad-client="ca-pub-6864430327621783"
+                    data-ad-slot="3945317009"
+                    data-ad-format="auto"
+                    data-full-width-responsive="true">
+                </ins>
+                <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+                <!-- //구글 에드센스 -->
+
+                <div class="main_mid game_area">
+                    <h3 class="title"><a href="stock/game.html">승부주</a> <span class="remark">스탁히어로 알고리즘 종목추천</span></h3>
+                    <a href="stock/game.html" class="more"><img src="img/more_Black.png" alt="더보기"></a>
+
+                    <div class="list_area">
+
+                        <div class="swiper-container  maingameSwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="area">
+                                        <ul class="list">
+                                            <li class="title"><a href="">마이크로소프트</a></li>
+                                            <li class="sum">MSFT</li>
+                                            <li class="num">
+                                                <div>
+                                                    <span class="th">추천가</span>
+                                                    <span class="td">8869.<b>88</b></span>
+                                                </div>
+                                                <div>
+                                                    <span class="th">목표수익률</span>
+                                                    <span class="increase dod">+23.99<b>%</b></span>
+                                                    <!-- increase 증가, decrease 감소 -->
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <div class="analysis_score">
+                                            <div class="game_tip">
+                                                <h3 class="game_title">주가추세</h3>
+                                                <!-- trans up : 강세, trans down : 약세, trans : 중립 -->
+                                                <i class="trans_icn trans"></i>
+                                                <i class="trans_icn up"></i>
+                                                <i class="trans_icn down"></i>
+                                            </div>
+                                        </div>
+                                        <!-- //analysis_score -->
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="area">
+                                        <ul class="list">
+                                            <li class="title"><a href="#">마<span class="remark">
+                                                        <div class="txt_filter size_M"><i></i><i></i><i></i><i></i>
+                                                        </div>
+                                                    </span></a></li>
+                                            <li class="sum"><span class="remark">
+                                                    <div class="txt_filter size_S"><i></i><i></i><i></i><i></i></div>
+                                                </span></li>
+                                            <li class="num">
+                                                <div>
+                                                    <span class="th">추천가</span>
+                                                    <span class="td">8869.<b>88</b></span>
+                                                </div>
+                                                <div>
+                                                    <span class="th">목표수익률</span>
+                                                    <span class="increase dod prm_lock"><a href="#"><img
+                                                                src="img/prm_lock.png" alt="잠김"></a></span>
+                                                    <!-- increase 증가, decrease 감소 -->
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <div class="analysis_score">
+                                            <div class="game_tip">
+                                                <h3 class="game_title">주가추세</h3>
+                                                <!-- trans up : 강세, trans down : 약세, trans : 중립 -->
+                                                <i class="trans_icn trans"></i>
+                                                <i class="trans_icn up"></i>
+                                                <i class="trans_icn down"></i>
+                                            </div>
+                                        </div>
+                                        <!-- //analysis_score -->
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="area">
+                                        <ul class="list">
+                                            <li class="title"><a href="#">마이크로소프트2</a></li>
+                                            <li class="sum">MSFT</li>
+                                            <li class="num">
+                                                <div>
+                                                    <span class="th">추천가</span>
+                                                    <span class="td">8869.<b>88</b></span>
+                                                </div>
+                                                <div>
+                                                    <span class="th">목표수익률</span>
+                                                    <span class="decrease dod">-23.99<b>%</b></span>
+                                                    <!-- increase 증가, decrease 감소 -->
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <div class="analysis_score">
+                                            <div class="game_tip">
+                                                <h3 class="game_title">주가추세</h3>
+                                                <!-- trans up : 강세, trans down : 약세, trans : 중립 -->
+                                                <i class="trans_icn down"></i>
+                                                <i class="trans_icn up"></i>
+                                            </div>
+                                        </div>
+                                        <!-- //analysis_score -->
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="area">
+                                        <ul class="list">
+                                            <li class="title"><a href="#">마이크로소프트3</a></li>
+                                            <li class="sum">MSFT</li>
+                                            <li class="num">
+                                                <div>
+                                                    <span class="th">추천가</span>
+                                                    <span class="td">8869.<b>88</b></span>
+                                                </div>
+                                                <div>
+                                                    <span class="th">목표수익률</span>
+                                                    <span class="increase dod">+23.99<b>%</b></span>
+                                                    <!-- increase 증가, decrease 감소 -->
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <div class="analysis_score">
+                                            <div class="game_tip">
+                                                <h3 class="game_title">주가추세</h3>
+                                                <!-- trans up : 강세, trans down : 약세, trans : 중립 -->
+                                                <i class="trans_icn down"></i>
+                                                <i class="trans_icn up"></i>
+                                            </div>
+                                        </div>
+                                        <!-- //analysis_score -->
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="area">
+                                        <ul class="list">
+                                            <li class="title"><a href="#">마이크로소프트</a></li>
+                                            <li class="sum">MSFT</li>
+                                            <li class="num">
+                                                <div>
+                                                    <span class="th">추천가</span>
+                                                    <span class="td">8869.<b>88</b></span>
+                                                </div>
+                                                <div>
+                                                    <span class="th">목표수익률</span>
+                                                    <span class="increase dod">+23.99<b>%</b></span>
+                                                    <!-- increase 증가, decrease 감소 -->
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <div class="analysis_score">
+                                            <div class="game_tip">
+                                                <h3 class="game_title">주가추세</h3>
+                                                <!-- trans up : 강세, trans down : 약세, trans : 중립 -->
+                                                <i class="trans_icn down"></i>
+                                                <i class="trans_icn up"></i>
+                                            </div>
+                                        </div>
+                                        <!-- //analysis_score -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //list_area -->
+
+                </div>
+                <!-- //game_area -->
+
+                <!-- 초이스스탁US 프리미엄, 첫 달 3,000원! -->
+                <div class="banner_event">
+                    <a href="#" class="link_banner" target="_black"><img src="img/banner_prm3000.png" alt="초이스스탁US 프리미엄, 첫 달 3,000원!"></a>
+                </div>
+                <!-- //초이스스탁US 프리미엄, 첫 달 3,000원! -->                
+
+                <!-- 초이스스탁US 홈 화면에 추가하기 -->
+                <div class="banner_event" style="display: none;">
+                    <a href="http://naver.me/G9bEnpic" class="link_banner" target="_black"><img src="img/banner_home.png" alt="초이스스탁US 홈 화면에 추가하기"></a>
+                </div>
+                <!-- //초이스스탁US 홈 화면에 추가하기 -->
+
+                <!-- 초이스스탁US 홈 화면에 추가하기 -->
+                <div class="banner_event" style="display: none;">
+                    <a href="https://www.choicestock.co.kr/stock/vod_view/13" class="link_banner"><img
+                            src="img/banner_chouse.svg" alt="초이스스탁US 사용법"></a>
+                </div>
+                <!-- //초이스스탁US 홈 화면에 추가하기 -->
+
+                <!-- 동영상 -->
+                <div class="main_mid youtube_mijumi">
+                    <h3 class="title"><a href="#">동영상</a></h3>
+                    <a href="#" class="more"><img src="img/more_Black.png" alt="더보기"></a>
+
+                    <div class="swiper-container mijumiSwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="video_box">
+                                    <a href="https://youtu.be/a3H1uvno8fs" target="_blank">
+                                        <img class="video_thumbnail"
+                                            src="https://i.ytimg.com/vi/a3H1uvno8fs/mqdefault.jpg"
+                                            alt="테슬라 S&amp;P 500 편입, 코스트코 특별배당, 버크셔해서웨이 최고가">
+                                        <p class="video_title">테슬라 S&amp;P 500 편입, 코스트코 특별배당, 버크셔해서웨이 최고가</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="video_box">
+                                    <a href="https://youtu.be/3mMmfjvg9IQ" target="_blank">
+                                        <img class="video_thumbnail"
+                                            src="https://i.ytimg.com/vi/3mMmfjvg9IQ/mqdefault.jpg"
+                                            alt="[미국주식]  백신 기대감  3대지수 사상최고가 직행, 관련주 5개? 이제는 3900?? #미주미 #이항영 #장우석">
+                                        <p class="video_title">[미국주식] 백신 기대감 3대지수 사상최고가 직행, 관련주 5개? 이제는 3900??</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="video_box">
+                                    <a href="https://youtu.be/3yz63o8YWAM" target="_blank">
+                                        <img class="video_thumbnail"
+                                            src="https://i.ytimg.com/vi/3yz63o8YWAM/mqdefault.jpg"
+                                            alt="[미주미 특집]  바이든, 해리스 시대 관심주 5선,  ETF 9선 #미주미 #이항영 #장우석">
+                                        <p class="video_title">[미주미 특집] 바이든, 해리스 시대 관심주 5선, ETF 9선</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="video_box">
+                                    <a href="https://youtu.be/qJ4EmwgIx44" target="_blank">
+                                        <img class="video_thumbnail"
+                                            src="https://i.ytimg.com/vi/qJ4EmwgIx44/mqdefault.jpg"
+                                            alt="[미국주식 라이브] 포스트 선거 랠리 언제까지 이어질 수국주식 라이브] 포스트 선거 랠리 언제까지 이어질 수 있을까? 비트코인?">
+                                        <p class="video_title">[미국주식 라이브] 포스트 선거 랠리 언제까지 이어질 수국주식 라이브] 포스트 선거 랠리 언제까지
+                                            이어질 수 있을까? 비트코인?</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- mijumiSwiper -->
+                </div>
+                <!-- //youtube_mijumi -->
+
+                <!-- 종목노트, 탐구생활, 주요뉴스 -->
+                <div class="main_mid note_area note_tabs">
+                    <div class="tabsArea_note">
+                        <ul class="tabs_note note_tabs">
+                            <li class="active" rel="tab5"><span>종목노트</span></li>
+                            <li rel="tab6"><span>탐구생활</span></li>
+                            <li rel="tab7"><span>주요뉴스</span></li>                            
+                        </ul>
+
+                        <div class="tab_container">
+                            <!-- 종목노트 -->
+                            <div id="tab5" class="tab_content">
+                                <ul class="lst_type">
+                                    <li>
+                                        <dl class="lst_type2">
+                                            <dt class="tit">
+                                                <a href="stock/note.html"><strong>10배 성장하는 생각법 - 월드클래스 창업자의 특징</strong></a>
+                                            </dt>
+                                            <dd class="photo">
+                                                <a href="stock/note.html"><img src="https://img.stibee.com/30864_1612495409.jpg"
+                                                        alt=""></a>
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl class="lst_type2">
+                                            <dt class="tit">
+                                                <a href="stock/note.html"><strong>10배 성장하는 생각법 - 월드클래스 창업자의 특징</strong></a>
+                                            </dt>
+                                            <dd class="photo">
+                                                <a href="stock/note.html"></a>
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl class="lst_type2">
+                                            <dt class="tit">
+                                                <a href="stock/note.html"><strong>10배 성장하는 생각법 - 월드클래스 창업자의 특징</strong></a>
+                                            </dt>
+                                            <dd class="photo">
+                                                <a href="stock/note.html"><img src="https://img.stibee.com/30864_1612495409.jpg"
+                                                        alt=""></a>
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                </ul>
+                                <!-- //lst_type -->
+                            </div>
+                            <!-- 탐구생활 -->
+                            <div id="tab6" class="tab_content">
+                                <ul class="lst_type">
+                                    <li>
+                                        <dl class="lst_type2">
+                                            <dt class="tit">
+                                                <a href="stock/note.html"><strong>10배 성장하는 생각법 - 월드클래스 창업자의 특징</strong></a>
+                                            </dt>
+                                            <dd class="photo">
+                                                <a href="stock/note.html"><img src="https://img.stibee.com/30864_1612495409.jpg"
+                                                        alt=""></a>
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl class="lst_type2">
+                                            <dt class="tit">
+                                                <a href="stock/note.html"><strong>10배 성장하는 생각법 - 월드클래스 창업자의 특징</strong></a>
+                                            </dt>
+                                            <dd class="photo">
+                                                <a href="stock/note.html"></a>
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl class="lst_type2">
+                                            <dt class="tit">
+                                                <a href="stock/note.html"><strong>10배 성장하는 생각법 - 월드클래스 창업자의 특징</strong></a>
+                                            </dt>
+                                            <dd class="photo">
+                                                <a href="stock/note.html"><img src="https://img.stibee.com/30864_1612495409.jpg"
+                                                        alt=""></a>
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                </ul>
+                                <!-- //lst_type -->
+                            </div>
+                            <!-- 주요뉴스 -->
+                            <div id="tab7" class="tab_content">
+                                <ul class="lst_type">
+                                    <li>
+                                        <dl class="lst_type2">
+                                            <dt class="tit">
+                                                <a href="stock/note.html"><strong>10배 성장하는 생각법 - 월드클래스 창업자의 특징</strong></a>
+                                            </dt>
+                                            <dd class="photo">
+                                                <a href="stock/note.html"><img src="https://img.stibee.com/30864_1612495409.jpg"
+                                                        alt=""></a>
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl class="lst_type2">
+                                            <dt class="tit">
+                                                <a href="stock/note.html"><strong>10배 성장하는 생각법 - 월드클래스 창업자의 특징</strong></a>
+                                            </dt>
+                                            <dd class="photo">
+                                                <a href="stock/note.html"></a>
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl class="lst_type2">
+                                            <dt class="tit">
+                                                <a href="stock/note.html"><strong>10배 성장하는 생각법 - 월드클래스 창업자의 특징</strong></a>
+                                            </dt>
+                                            <dd class="photo">
+                                                <a href="stock/note.html"><img src="https://img.stibee.com/30864_1612495409.jpg"
+                                                        alt=""></a>
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                </ul>
+                                <!-- //lst_type -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //tabsArea_note -->
+                </div>
+                <!-- //event_recipe -->
+
+
+                <!-- 서비스 바로가기 퀵메뉴 -->
+                <div class="main_mid quick_link">
+                    <div class="list_area">
+                        <div class="swiper-container mainrecipeSwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <a href="stock/game.html">
+                                        알고리즘<br>투자로봇 추천
+                                        <span>승부주</span>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="search/search_adequate.html">
+                                        애플,<br>지금 매매신호는?
+                                        <span>적정주가</span>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="stock/recipe.html">
+                                        급등? 배당주?<br>저평가 세일주?
+                                        <span>투자레시피</span>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="stock/recom.html">
+                                        매수 월, 수, 금<br>즐거운 투자
+                                        <span>종목추천</span>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="search/searching.html">
+                                        관심종목 중<br>투자 유망 종목은?
+                                        <span>원스톱 진단</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- //note_area -->
+            </div>
+            <!-- //main_top -->
+
+            <!-- 구글 에드센스 투자레시피 상단 -->
+            <ins class="adsbygoogle"
+                style="display:block"
+                data-ad-client="ca-pub-6864430327621783"
+                data-ad-slot="3945317009"
+                data-ad-format="auto"
+                data-full-width-responsive="true">
+            </ins>
+            
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+            <!-- //구글 에드센스 -->
+
+            <div class="main_btm banner_area">
+
+                <!-- 프리미엄 서비스 사용자가 아닌 경우 -->
+                <div class="banner_prm">
+                    <span class="cho_prm"><i></i>초이스스탁US 프리미엄</span>
+                    <a href="#" class="weeks_free">[ 첫 달 3,000원!]</a>                    
+                </div>
+                <div class="banner_prm">
+                    <span class="cho_prm"><i></i>초이스스탁US 프리미엄</span>                    
+                    <a href="#" class="weeks_free">[ 2주 무료보기 ]</a>
+                </div>
+                <!-- //banner_prm -->
+
+                <!-- 프리미엄 서비스 사용자인 경우 -->
+                <div class="banner_prm" style="display: none;">
+                    <span class="cho_prm">초이스스탁US 프리미엄</span>
+                    <a href="#" class="weeks_free">[주요 서비스 안내]</a>
+                </div>
+
+            </div>
+            <!-- //main_btm //recipe_area -->
+
+        </div>
+        <!-- //container -->
+
+        <div id="footer" class="chous_footer">
+            <!-- 인증 -->
+            <div class="certification">
+                <a href="https://www.notion.so/0370b2650fed4a0ea50cb8a4a0b1a8dc#22d99f1236c54b1187bbea8fe24b6f35"
+                    target="_blank" style="display: block;">
+                    <ul>
+                        <li class="cer_logo_01"><img src="img/logo_kiwoom.svg" alt="키움증권"></li>
+                        <li class="cer_logo_02"><img src="img/logo_eugene.svg" alt="유진투자증권"></li>
+                        <li class="cer_logo_03"><img src="img/logo_truefriend.svg" alt="한국투자증권"></li>
+                    </ul>
+                    <ul>
+                        <!-- <li class="cer_logo_04"><img src="img/logo_shinhan.svg" alt="신한금융투자" target="_blank"></li> -->
+                        <li class="cer_logo_05"><img src="img/logo_hana.svg" alt="하나금융투자"></li>
+                        <li class="cer_logo_06"><img src="img/logo_mirae.svg" alt="미래에셋증권"></li>
+                    </ul>
+                </a>
+            </div>
+            <!-- //인증 -->
+
+            <div class="notice">
+
+                <div class="service_info">
+                    <p>본 서비스는 투자판단에 참고용으로만 사용하실 수 있으며, 모든 투자판단은 투자자 본인의 책임으로 당사는 그 결과에 대해 법적인 일체의 책임을 지지 않습니다.</p>
+                    <p class="dataLink">data from <a href="https://www.quandl.com/" target="_blank">Quandl and
+                            Sharadar</a>
+                    </p>
+                </div>
+
+                <ul class="terms_list">
+                    <li><a href="terms.html" target="_black">이용약관</a></li>
+                    <li><a href="https://www.notion.so/US-FAQ-274298fadcbe4651aa06d58e9c9b9e7f" target="_blank">서비스
+                            FAQ</a></li>
+                    <li><a href="policy.html" target="_black"><strong>개인정보처리방침</strong></a></li>
+                    <li><a href="https://www.notion.so/f160286b2fa848fb92ea6bf20af9f502" target="_black">업데이트 소식</a>
+                    </li>
+                    <li><a href="https://www.datahero.co.kr" target="_blank">회사소개</a></li>
+                </ul>
+
+                <div class="foot_info">
+                    <div class="info_tel_box">
+                        <p><span class="sns_kakao"><a href="http://pf.kakao.com/_QDLHxb/chat" target="_blank"><img
+                                        src="img/sns_kakao.svg" alt="카카오톡 문의하기"></a></span></p>
+                        <span class="cs">평일 9:00 ~ 17:00 (주말/공휴일 제외)<br>점심시간 11:20 ~ 12:20</span>
+                    </div>
+                    <!-- //info_tel_box -->
+                    <p class="copyright"><a href="https://www.datahero.co.kr" target="_blank">ⓒ (주)데이터히어로</a><i></i>
+                        <strong>대표자</strong> 김인중 <br>
+                        서울특별시 서초구 강남대로 311 <i></i> 사업자등록번호 291-88-01393 <i></i> <strong>대표번호 <a
+                                href="tel:02-6225-2300"><strong>02-6225-2300</strong></a></strong>
+                    </p>
+
+                </div>
+                <!-- //foot_info -->
+
+            </div>
+            <!-- //notice -->
+        </div>
+        <!-- //footer -->
+    </div>
+    <!-- //wrap -->
+</body>
+
+<!-- Modal popup -->
+<!-- 초이스스탁US 프리미엄 2주 무료로 이용하세요 -->
+<div class="free_pop md-modal md-effect-3" id="modal-3">
+    <!-- class : md-show 가 없는 경우 팝업 숨김, md-show 있는 경우 팝업 노출  -->
+    <div class="md-content">
+        <div id="setting" class="setting_area">
+            <div class="pop_header">
+                <a href="#setting_anchor" title="로그인 레이어 닫기" class="close"><img src="img/clse_w.png" alt="팝업닫기"></a>
+                <div class="sub_top">
+                    <h2 class="h2_title">초이스스탁US 프리미엄<span><strong>2주 무료로 이용</strong> 하세요.</span></h2>
+
+                </div>
+            </div>
+            <!-- //pop_header -->
+            <div class="pop_con">
+                <h3 class="service_title"><strong>초이스스탁US 프리미엄</strong></h3>
+                <ul>
+                    <li class="txt">1. 엄선한 저평가 우량주, 매주 2종목 추천</li>
+                    <li class="txt">2. 추천 종목 포트폴리오</li>
+                    <li class="txt">3. 투자매력 점수와 적정주가 등 종목진단</li>
+                    <li class="txt">4. 전 종목 투자매력도 순위</li>
+                    <li class="txt">5. 정보는 타이밍, 나만의 알림서비스</li>
+                    <li class="txt">6. 취향에 맞는 종목추천, 종목캐치</li>
+                    <li class="txt">7. 배당주, 성장주, 슈퍼스톡 등 종목 족보 리스트</li>
+                    <li class="txt">8. 10년 재무차트 및 투자지표</li>
+                    <li class="txt">9. 배당 투자매력 정보</li>
+                    <li class="txt">10. 미국주식 탐구생활과 함께 초보 탈출</li>
+                </ul>
+            </div>
+            <div class="pop_btm">
+                <div class="btnArea payBtn">
+                    <a href="login_complete.html" class="btn btn_save">2주 무료 이용 신청<i></i></a>
+                </div>
+                <ul class="link_menu">
+                    <li><a href="stock/service_prm.html">[프리미엄자세히보기]</a></li>
+                    <li><a href="member/login_sns.html">[로그인]</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- [1주년 이벤트] 초이스스탁US 프리미엄 첫달 900원 -->
+<div class="event_1year md-modal md-effect-3" id="modal-4">
+    <!-- class : md-show 가 없는 경우 팝업 숨김, md-show 있는 경우 팝업 노출  -->
+    <div class="md-content">
+        <div id="setting" class="setting_area">
+            <div class="pop_header">
+                <a href="#setting_anchor" title="로그인 레이어 닫기" class="close"><img src="img/clse_w.png" alt="팝업닫기"></a>
+                <div class="sub_top">
+                    <h2 class="h2_title">초이스스탁US 프리미엄<span><strong>첫 달 900원!</strong></span></h2>
+                    <p class="period">이벤트 ~ 10/4 까지</p>
+                </div>
+            </div>
+            <!-- //pop_header -->
+            <div class="pop_con">
+                <table cellspacing="0" border="0" class="tableRanking type_compare">
+                    <tbody>
+                        <tr>
+                            <th class="top_th"><span>초이스스탁US 프리미엄</span></th>
+                            <th class="top_th"><span>무료</span></th>
+                            <th class="top_th"><span>프리미엄</span></th>
+                        </tr>
+                        <tr>
+                            <td class="mid_td"><span>한글로 쉽고 편리한 <b>종목검색</b></span></td>
+                            <td class="com_select"><span></span></td>
+                            <td class="com_select"><span></span></td>
+                        </tr>
+                        <tr>
+                            <td class="mid_td"><span>투자매력&#47;적정주가 <b>종목진단</b></span></td>
+                            <td><span>항목제한</span></td>
+                            <td class="com_select"><span></span></td>
+                        </tr>
+                        <tr>
+                            <td class="mid_td"><span>엄선된 <b>종목추천&#47;포트폴리오</b></span></td>
+                            <td><span></span></td>
+                            <td class="com_select"><span></span></td>
+                        </tr>
+                        <tr>
+                            <td class="mid_td"><span>투자매력+저평가+수급 <b>승부주</b></span></td>
+                            <td><span></span></td>
+                            <td class="com_select"><span></span></td>
+                        </tr>
+                        <tr>
+                            <td class="mid_td"><span>취향저격 종목추천 <b>종목캐치</b></span></td>
+                            <td><span>항목제한</span></td>
+                            <td class="com_select"><span></span></td>
+                        </tr>
+                        <tr>
+                            <td class="mid_td"><span>나만의 <b>관심종목&#47;원스톱진단</b></span></td>
+                            <td><span></span></td>
+                            <td class="com_select"><span></span></td>
+                        </tr>
+                        <tr>
+                            <td class="mid_td"><span>종목발굴 <b>투자레시피&#47;탐구생활</b></span></td>
+                            <td><span>항목제한</span></td>
+                            <td class="com_select"><span></span></td>
+                        </tr>
+                        <tr>
+                            <td class="mid_td"><span>관심&#47;추천&#47;업데이트 <b>알림</b></span></td>
+                            <td><span></span></td>
+                            <td class="com_select"><span></span></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+            <div class="pop_btm">
+                <div class="btnArea payBtn">
+                    <a href="login_complete.html" class="btn btn_save"><b>프리미엄</b> 가입하기<i></i></a>
+                </div>
+                <ul class="link_menu">
+                    <li><a href="stock/service_prm.html">[프리미엄자세히보기]</a></li>
+                    <li><a href="member/login_sns.html">[로그인]</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- [첫달 3,000] 초이스스탁US 프리미엄 첫달 3,000원 -->
+<div class="first_month_3300 md-modal md-effect-3" id="modal-5">
+    <!-- class : md-show 가 없는 경우 팝업 숨김, md-show 있는 경우 팝업 노출  -->
+    <div class="md-content">
+        <div id="setting" class="setting_area">
+            <div class="pop_header">
+                <a href="#setting_anchor" title="로그인 레이어 닫기" class="close"><img src="img/clse_w.png" alt="팝업닫기"></a>
+                <div class="sub_top">
+                    <h2 class="h2_title">초이스스탁US 프리미엄<span><strong>첫 달 3,000원</strong></span></h2>                    
+                    <p class="period">하루 100원으로 투자의 즐거움을 경험하세요.</p>                    
+                    <h2 class="h2_title">초이스스탁US 프리미엄<span><strong>로그인만하면 2주 무료!</strong></span></h2>
+                    <p class="period">무료로 미국주식 추천주와 포트폴리오 서비스를 받아보세요.</p>
+                </div>
+            </div>
+            <!-- //pop_header -->
+            <div class="pop_con">
+                <table cellspacing="0" border="0" class="tableRanking type_compare">
+                    <tbody>
+                        <tr>
+                            <th class="top_th"><span>초이스스탁US 프리미엄</span></th>
+                            <th class="top_th"><span>프리미엄</span></th>
+                            <th class="top_th"><span>무료</span></th>                            
+                        </tr>
+                        <tr>
+                            <td class="mid_td"><span>한글로 쉽고 편리한 <b>종목검색</b></span></td>
+                            <td class="com_select"><span></span></td>
+                            <td class="com_select"><span></span></td>
+                        </tr>
+                        <tr>
+                            <td class="mid_td"><span>투자매력/적정주가 <b>종목진단</b></span></td>
+                            <td class="com_select"><span></span></td>
+                            <td><span>항목제한</span></td>
+                        </tr>
+                        <tr>
+                            <td class="mid_td"><span>엄선된 <b>종목추천/포트폴리오</b></span></td>
+                            <td class="com_select"><span></span></td>
+                            <td class="not_select"><span></span></td>                            
+                        </tr>
+                        <tr>
+                            <td class="mid_td"><span>투자매력+저평가+수급 <b>승부주</b></span></td>
+                            <td class="com_select"><span></span></td>
+                            <td class="not_select"><span></span></td>
+                        </tr>
+                        <tr>
+                            <td class="mid_td"><span>취향저격 종목추천 <b>종목캐치</b></span></td>
+                            <td class="com_select"><span></span></td>
+                            <td><span>항목제한</span></td>                            
+                        </tr>
+                        <tr>
+                            <td class="mid_td"><span>나만의 <b>관심종목/원스톱진단</b></span></td>
+                            <td class="com_select"><span></span></td>
+                            <td class="not_select"><span></span></td>                            
+                        </tr>
+                        <tr>
+                            <td class="mid_td"><span>종목발굴 <b>투자레시피/종목노트</b></span></td>
+                            <td class="com_select"><span></span></td>
+                            <td><span>항목제한</span></td>
+                        </tr>
+                        <tr>
+                            <td class="mid_td"><span>관심/추천/업데이트 <b>알림</b></span></td>
+                            <td class="com_select"><span></span></td>
+                            <td class="not_select"><span></span></td>                            
+                        </tr>                        
+                    </tbody>
+                </table>
+
+            </div>
+            <div class="pop_btm">
+                <div class="btnArea payBtn">
+                    <!-- <a href="login_complete.html" class="btn btn_save"><b>프리미엄</b> 가입하기<i></i></a> -->
+                    <a href="login_complete.html" class="btn btn_save"><b>프리미엄 2주 무료체험</b><i></i></a>
+                </div>
+                <ul class="link_menu">
+                    <li><a href="stock/service_prm.html">[프리미엄자세히보기]</a></li>
+                    <li><a href="member/login_sns.html">[로그인]</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="md-overlay"></div><!-- the overlay element -->
+
+
+</html>

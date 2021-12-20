@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no" />
+    <title>초이스스탁</title>
+    <meta name="robots" content="데이터히어로 미국주식">
+    <meta name="description" content="투자를 쉽고 편리하게, 미국주식가이드, 종목분석, 종목토론, 데이터히어로">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="theme-color" content="#2C295D">
+    <!-- 오픈 그래프 -->
+    <meta property="og:title" content="데이터히어로 미국주식" />
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="투자를 쉽고 편리하게, 미국주식가이드, 종목분석, 종목토론, 데이터히어로">
+    <meta property="og:image" content="http://godlife.ivyro.net/test/img/choicestockus_thumb.png">
+    <meta property="og:image:width" content="410" />
+    <meta property="og:image:height" content="210" />
+    <meta property="og:url" content="http://us.itooza.com">
+    <!-- jquery-1.12 -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <!-- highcharts -->
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/series-label.js"></script>
+    <script src="https://code.highcharts.com/highcharts-more.js"></script>
+    <script src="https://code.highcharts.com/modules/solid-gauge.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+    <script src="https://code.highcharts.com/modules/no-data-to-display.js"></script>
+    <script src="../js/chartjs.js"></script>
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="../css/choicestock.css" />
+    <!-- js -->
+    <script src="../js/globalstock.js"></script>
+</head>
+
+<!-- 제휴사이트 민트 칼라 적용 class = mint  -->
+
+<body class="globalStock">
+    <div id="wrap">
+        <!-- 하단 GNB -->
+        <div class="gnb">
+            <ul class="list">
+                <li class="home"><a href="../index.html"><i></i> 홈</a></li>
+                <li class="stock"><a href="stock/recom.html">추천</a></li>
+                <li class="analysis"><a href="#">진단</a></li>
+                <li class="excavation"><a href="../attractiveness/attractiveness.html">발굴</a></li>
+                <li class="menu active"><a href="stock/menu.html">메뉴</a></li>
+            </ul>
+        </div>
+        <!-- //gnb -->
+        <div id="header" class="header">
+            <div class="headerTop">
+                <h1 class="headerLogo"><span>회원탈퇴</span></h1>
+                <a href="#" class="his_back"><img src="../img/icon_back.svg" alt="뒤로가기"></a>
+            </div>
+            <!-- //headerTop -->
+        </div>
+
+        <!-- 로그인 class = sub_login-->
+        <div id="container" class="sub_login">
+            <!-- 주요 콘텐츠 -->
+            <div class="withdrawal_com">
+                <h2 class="h2_title">회원탈퇴</h2>
+                <p class="txt"><strong>회원탈퇴</strong>가 완료되면 가입시 입력했던 회원정보가 모두 삭제됩니다.</p>
+
+                <div class="att_service">
+                    <ul class="guide_txt bg_blue">
+                        <h3 class="h3_title"><strong>초이스스탁 프리미엄</strong>을 이용중입니다.</h3>
+                        <p class="term">서비스 사용 기간 : 2020.10.10 ~ 2021.10.09</p>
+                        <a href="#" class="payment_bd">서비스 결제내역</a>
+                    </ul>
+                </div>
+                <!-- //att_service -->
+
+                <ul class="withdrawal_freetxt">
+                    <h3 class="service_title"><strong>회원탈퇴 전에 꼭! 확인해주세요.</strong></h3>
+                    <li class="title">회원탈퇴와 동시에 회원 서비스를 이용할 수 없습니다.</li>
+                    <li class="title">유료서비스를 이용 중이라면, 서비스해지 후 회원탈퇴를 진행해주세요.</li>
+                    <li class="title">작성한 게시글은 회원탈퇴 후 수정/삭제 할 수 없습니다.</li>
+                    <li class="title"><strong>회원탈퇴 후 6개월 간 재가입이 불가합니다.</strong></li>
+                    <li class="title">회원자격이 운영자에 의해 정지된 경우에는 회원탈퇴 후 재가입이 제한됩니다.</li>
+                </ul>
+                <!-- //withdrawal_freetxt -->
+                <div class="btnArea wtwalBtn">
+                    <a href="#" class="btn btn_ssin">회원탈퇴</a>
+                </div>
+            </div>
+            <!-- //withdrawal_com -->
+        </div>
+        <!-- //sub_login -->
+
+        <!-- //container -->
+        <div id="footer" class="type2">
+            <div class="notice">
+                <ul class="terms_list">
+                    <li><a href="/member/terms">이용약관</a></li>
+                    <li><a href="/member/policy">개인정보처리방침</a></li>
+                    <li><a href="https://www.datahero.co.kr" target="_blank">회사소개</a></li>
+                </ul>
+                <a href="https://www.datahero.co.kr" target="_blank">ⓒ (주)데이터히어로</a>
+            </div>
+            <!-- //notice -->
+        </div>
+    </div>
+    <!-- //wrap -->
+
+</body>
+
+</html>

@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no" />
+    <title>초이스스탁</title>
+    <meta name="robots" content="데이터히어로 미국주식">
+    <meta name="description" content="투자를 쉽고 편리하게, 미국주식가이드, 종목분석, 종목토론, 데이터히어로">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="theme-color" content="#2C295D">
+    <!-- 오픈 그래프 -->
+    <meta property="og:title" content="데이터히어로 미국주식" />
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="투자를 쉽고 편리하게, 미국주식가이드, 종목분석, 종목토론, 데이터히어로">
+    <meta property="og:image" content="http://godlife.ivyro.net/test/img/choicestockus_thumb.png">
+    <meta property="og:image:width" content="410" />
+    <meta property="og:image:height" content="210" />
+    <meta property="og:url" content="http://us.itooza.com">
+    <!-- jquery-1.12 -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <!-- highcharts -->
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/series-label.js"></script>
+    <script src="https://code.highcharts.com/highcharts-more.js"></script>
+    <script src="https://code.highcharts.com/modules/solid-gauge.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+    <script src="https://code.highcharts.com/modules/no-data-to-display.js"></script>
+    <script src="../js/chartjs.js"></script>
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="../css/choicestock.css" />
+    <!-- js -->
+    <script src="../js/globalstock.js"></script>
+</head>
+
+<!-- 제휴사이트 민트 칼라 적용 class = mint  -->
+
+<body class="globalStock">
+    <div id="wrap">
+        <!-- 서비스소개 class = sub_service-->
+        <div id="container" class="sub_service v_1_5">
+            <!-- 제휴사이트 class = alliance_wrap, 서비스소개, 서비스FAQ -->
+            <div class="alliance_wrap">
+                <!-- 서브 해더 -->
+                <div class="h_top">
+                    <div class="headerTop">
+                        <h1 class="headerLogo"><span>서비스소개</span></h1>
+                        <!-- 키움 : 메뉴 제공 -->
+                        <!-- <a href="https://www.choicestock.co.kr/member/menu" class="his_back"><img src="../img/icon_menu2.png" alt="메뉴"></a> -->
+
+                        <!-- 이머니, 팍스넷 홈이동 제공 -->
+                        <a href="../index.html" class="his_back"><img src="../img/icon_back.svg" alt="뒤로가기"></a>
+                    </div>
+                    <!-- //headerTop -->
+                </div>
+                <!-- 주요 콘텐츠 -->
+                <div class="sub_top service_t01">
+                    <h2 class="h2_title"><strong>초이스스탁US</strong>미국주식 쉽고 편리하게!</h2>
+                </div>
+                <!-- //sub_top -->
+
+                <div class="sub_mid">
+                    <div class="tab_area">
+                        <ul class="tbas_lb tabs_3">
+                            <li><a href="service_alliance.html">서비스안내</a></li>
+                            <li><a href="service_guide_alliance.html" class="active">FAQ</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="sub_guide">
+                        <p class="sum">초이스스탁US 의 자주묻는 질문과 서비스 100%활용 팁을 알려드립니다.</p>
+
+                        <h3 class="h3_title">서비스일반</h3>
+                        <div class="faqArea">
+                            <!-- 서비스일반 -->
+                            <div class="faq02">
+                                <div class="faq">
+                                    <ul>
+                                        <li class="article">
+                                            <p class="q"><a href="#a1" class="trigger">데이터 업데이트 주기는 어떻게 되나요?</a><i></i>
+                                            </p>
+                                            <div class="a">
+                                                전체 미국 상장사 약 5,000여 개를 대상으로 한글 기업정보, 주가, 재무제표, 투자지표, 최근 실적, 뉴스, 투자매력 점수,
+                                                적정주가, 경쟁사 등의 정보를 제공합니다.<br>
+                                                매일 새벽 업데이트 되며, 오전 9시 정도에 완료됩니다. ETF 정보는 제공하지 않습니다.
+                                            </div>
+                                        </li>
+                                        <li class="article">
+                                            <p class="q"><a href="#a1" class="trigger">종목 캐치는 어떤 서비스인가요?</a><i></i></p>
+                                            <div class="a">
+                                                초이스스탁US는 회원님이 선호하는 종목을 파악한 후 이를 바탕으로 유사한 종목을 회원님께 추천해주는 서비스를 도입했습니다.<br>
+                                                회원님께서 일일이 종목을 검색하지 않고, 종목캐치만으로도 회원님 취향에 맞는 종목을 찾을 수 있습니다.<br>
+                                                <br>
+                                                종목캐치에서 찾아드린 종목이 익숙하지 않다고 지나쳐 버리지 마세요.<br>
+                                                회원님도 몰랐던 회원님의 취향에 더 잘 맞는 종목일수도 있답니다.<br>
+                                                <br>
+                                                종목캐치의 리스트 중에 투자매력 점수가 높고, 저평가 된 종목을 우선 관심종목에 두고 투자매력 점수와 적정주가를 확인해 보세요.
+                                            </div>
+                                        </li>
+                                        <!-- <li class="article">
+                                        <p class="q"><a href="#a1" class="trigger">알림 서비스는 무엇인가요?</a><i></i></p>
+                                        <div class="a">
+                                            알림 서비스는 '프리미엄'유료회원에 제공되는 서비스 입니다.<br>
+                                            - 제공서비스 : 관심종목 주가/실적발표/배당, 종목추천/분석 알림 등 (관심종목 알림은 최대 10개 종목으로 제한됩니다.)<br>
+                                            - 알림 서비스는 '카카오 알림톡'으로 제공되며, '카카오톡'앱이 필요합니다.<br>
+                                            <br>
+                                            프리미엄 회원의 알림 설정은, [메뉴 > 설정 > 관심종목 알림 / 서비스 알림 / 마케팅정보수신]에서 설정할 수 있습니다.
+                                        </div>
+                                    </li> -->
+                                        <li class="article">
+                                            <p class="q"><a href="#a1" class="trigger">관심종목 설정은 어떻게 하나요?</a><i></i></p>
+                                            <div class="a">
+                                                관심종목 관리 서비스는 '프리미엄'유료회원에 제공되는 서비스 입니다.<br>
+                                                <br>
+                                                종목검색 후 종목명(기업명) 왼쪽 하트표시를 누르면 관심종목으로 설정됩니다.<br>
+                                                [진단 > 관심종목 > 관심종목 관리]에서도 등록된 관심종목을 설정할 수 있습니다.
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- //faqArea -->
+
+                        <h3 class="h3_title">종목솔루션/진단</h3>
+                        <div class="faqArea">
+                            <!-- 종목솔루션/진단 -->
+                            <div class="faq03">
+                                <div class="faq">
+                                    <ul>
+                                        <li class="article">
+                                            <p class="q"><a href="#a1" class="trigger">스파이더 차트는 무엇이고, 어떻게
+                                                    산정되나요?</a><i></i>
+                                            </p>
+                                            <div class="a">
+                                                스파이더 차트는 기업의 투자매력 점수를 5개 항목으로 구분해 차트로 제공합니다.<br>
+                                                항목별 점수를 통해 기업의 강점과 약점 등 종합적인 투자매력을 입체적으로 보여 드립니다.<br>
+                                                <br>
+                                                투자매력 점수는 빅 데이터와 알고리즘을 활용해 재무제표 등 22개 요인(Factor)을 분석하고,
+                                                배당매력, 현금창출력, 수익성장성, 재무안전성, 사업독점력 5개 항목별로 점수를 제공합니다.
+                                            </div>
+                                        </li>
+                                        <li class="article">
+                                            <p class="q"><a href="#a1" class="trigger">투자매력 점수는 믿을 수 있나요?</a><i></i>
+                                            </p>
+                                            <div class="a">
+                                                투자매력 점수는 빅 데이터와 알고리즘을 활용해 재무제표 등 22개 요인(Factor)을 분석하고,
+                                                배당매력, 현금창출력, 수익성장성, 재무안전성, 사업독점력 5개 항목별로 점수를 제공합니다.<br>
+                                                <br>
+                                                투자매력 점수 상위 그룹은 하위 그룹에 비해 월등한 수익률을 나타냈습니다.<br>
+                                                과거 10년간(2009년~2019년) 투자매력 점수 상위그룹은 연평균 11.9%, 누적 수익률 210%를 기록했습니다.<br>
+                                                반면, 하위그룹은 연평균 3.52%, 누적 수익률 41%를 나타내, 상위 그룹이 하위 그룹 대비 5배 높은 성과를
+                                                나타냈습니다.<br>
+                                                <br>
+                                                투자매력 점수는 높을수록 좋고, 우량 기업 여부를 판단하는데도 유용합니다.<br>
+                                                * 81~100점 : 초우량 기업<br>
+                                                * 66~80점 : 우량 기업<br>
+                                                * 51~65점 : 보통 기업<br>
+                                                * 31~50점 : 주의 기업<br>
+                                                * 0~30점 : 위험 기업
+                                            </div>
+                                        </li>
+                                        <li class="article">
+                                            <p class="q"><a href="#a1" class="trigger">적정주가는 어떻게 산정되나요?</a><i></i>
+                                            </p>
+                                            <div class="a">
+                                                기업의 과거 실적과 이익 성장 유지 가능성 및 향후 전망을 반영해 계산합니다.<br>
+                                                밸류에이션에 필요한 데이터가 충분하지 않으면 적정주가를 제시하지 않습니다.<br>
+                                                <br>
+                                                투자매력 점수가 우량 기업 이상이고, 현재가가 저평가 상태에 있는 기업에 투자하는 것이 좋습니다.<br>
+                                                * 적극 매수 : 현재가 &#60; 매우 저평가<br>
+                                                * 매수 : 매우 저평가 &#60; 현재가 &#60; 적정가<br>
+                                                * 보유 : 저평가 &#60; 현재가 &#60; 고평가<br>
+                                                * 매도 : 고평가 &#60; 현재가
+                                            </div>
+                                        </li>
+                                        <li class="article">
+                                            <p class="q"><a href="#a1" class="trigger">재무차트는 무엇인가요?</a><i></i>
+                                            </p>
+                                            <div class="a">
+                                                재무제표와 투자지표를 차트로 보여드리는 서비스입니다.<br>
+                                                <br>
+                                                재무제표 숫자 때문에 현기증이 나셨다면, 재무차트를 이용해 보세요.<br>
+                                                숫자 대신 차트로 보여 드리기 때문에 재무제표를 모르는 분들도 쉽게 이해할 수 있습니다.<br>
+                                                <br>
+                                                실적 관련 차트는 우상향하면 좋고, 비용이나 부채 관련 차트는 낮아질수록 좋다는 것만 기억하세요.<br>
+                                                나머진 재무차트 아래 해설을 읽으면 쉽게 분석할 수 있습니다.<br>
+                                                <br>
+                                                만약, 그래도 잘 이해가 안된다면?<br>
+                                                재무제표 분석을 모두 반영한 투자매력 점수를 활용하세요. 일단, 80점을 초과한 기업은 부실 위험이 없는 초우량 기업으로 판단하면
+                                                됩니다.
+                                            </div>
+                                        </li>
+                                        <li class="article">
+                                            <p class="q"><a href="#a1" class="trigger">경쟁사(경쟁 기업)를 비교해 볼 수
+                                                    있나요?</a><i></i>
+                                            </p>
+                                            <div class="a">
+                                                종목 검색 결과 페이지의 '경쟁사' 메뉴를 누르면 산업내 경쟁사를 확인할 수 있습니다.<br>
+                                                경쟁사의 매출액과 투자지표(PER,PBR,ROE)를 통해 경쟁사 대비 회사 규모와 투자지표를 비교할 수 있습니다.<br>
+                                                <br>
+                                                동일 업종 내 기업을 시가총액 규모로 그룹을 나누어(Mega, Large, Mid, Small, Nano) 동일 그룹에 속한
+                                                기업들을
+                                                표시합니다.<br>
+                                                동일 그룹 중 매출액 상위 10개 기업이 경쟁사로 표시됩니다.
+                                            </div>
+                                        </li>
+                                        <li class="article">
+                                            <p class="q"><a href="#a1" class="trigger">투자매력 점수는 언제 업데이트되나요?</a><i></i>
+                                            </p>
+                                            <div class="a">
+                                                투자매력 점수는 매일 아침 8~9시 사이에 업데이트 됩니다.<br>
+                                                <br>
+                                                투자매력 점수는 기업의 핵심 가치를 반영하기 때문에 일별 변동은 거의 없는 편입니다.<br>
+                                                투자매력 점수 아래에 표시되는 전월대비 점수 증감을 통해 기업의 투자 매력이 오르고 있는지 확인할 수 있습니다.<br>
+                                                <br>
+                                                기업의 실적과 독점력, 안전성이 높아지면 투자매력 점수는 오르고 그 반대는 내리게 됩니다.
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- //faqArea -->
+
+                        <h3 class="h3_title">종목추천/분석</h3>
+                        <div class="faqArea">
+                            <!-- 종목추천/분석 -->
+                            <div class="faq04">
+                                <div class="faq">
+                                    <ul>
+                                        <li class="article">
+                                            <p class="q"><a href="#a1" class="trigger">종목추천는 언제 업데이트되나요?</a><i></i>
+                                            </p>
+                                            <div class="a">
+                                                주 1~2회 종목추천 리포트를 제공합니다.<br>
+                                                리포트는 기업분석 내용 및 적정주가, 손절가, 적정가 등 매매전략을 함께 제시합니다.<br>
+                                                추천 후 기업 분기 실적을 발표하면 매 분기 '업데이트 리포트'를 통해 실적분석과 적정가 변경을 알려 드립니다.<br>
+                                                <br>
+                                                알림을 설정하면 신규 종목추천/종목분석 글이 등록되면 카카오톡으로 알려드립니다.<br>
+                                                알림 설정은 [메뉴 > 설정 > 관심종목 알림 / 서비스 알림 / 마케팅정보수신]에서 설정할 수 있습니다.
+                                            </div>
+                                        </li>
+                                        <li class="article">
+                                            <p class="q"><a href="#a1" class="trigger">업데이트 리포트는 무엇인가요?</a><i></i>
+                                            </p>
+                                            <div class="a">
+                                                추천 종목 중 현재 보유중인 기업이 분기 실적을 발표하면 해당 내용과 적정가 변경 등의 사항을 업데이트해 업데이트 리포트로
+                                                제공합니다.<br>
+                                                일반적으로 업데이트 리포트는 최근 실적과 이슈, 적정주가 변동 사항을 주로 다룹니다.<br>
+                                                기업 분석 내용은 업데이트 리포트 이전에 종목 추천 리포트를 참고하시면 됩니다.
+                                            </div>
+                                        </li>
+                                        <li class="article">
+                                            <p class="q"><a href="#a1" class="trigger">종목추천는 어떻게 이루어지나요?</a><i></i>
+                                            </p>
+                                            <div class="a">
+                                                종목추천의 핵심은 '싸고 좋은 기업'을 발굴, 추천하는 것입니다.<br>
+                                                <br>
+                                                빅 데이터와 알고리즘에 따른 투자매력 점수와 최근 실적 및 향후 실적 예상 컨센서스 등을 분석해 종목을 선정합니다.<br>
+                                                이후, 적정주가와 현재가를 비교해 저평가된 종목만 추천합니다. 투자자가 안심하고 투자할 수 있도록 엄선한 종목만을
+                                                추천합니다.<br>
+                                                <br>
+                                                종목추천 리포트에는 기업분석 내용, 매수가, 적정가, 손절가, 주가 촉매 이벤트 등을 제공합니다.
+                                            </div>
+                                        </li>
+                                        <li class="article">
+                                            <p class="q"><a href="#a1" class="trigger">국내 종목추천 서비스도 제공하나요?</a><i></i>
+                                            </p>
+                                            <div class="a">
+                                                초이스스탁US 서비스에선 국내 종목은 추천하지 않습니다. 미국 상장사 5,000여개를 대상으로 추천합니다.
+                                            </div>
+                                        </li>
+                                        <li class="article">
+                                            <p class="q"><a href="#a1" class="trigger">목표가보다 올랐는데 사도 되나요?</a><i></i>
+                                            </p>
+                                            <div class="a">
+                                                현재가가 목표가대비 +5% 이하라면 매수해도 괜찮습니다.<br>
+                                                그 이상이라면 관심종목에 등록하고 주가가 하락하면 매수하는 것이 좋습니다.<br>
+                                                <br>
+                                                한 주에 1~2개 종목을 신규 추천합니다. 기존 종목을 매수하지 못했다면 다음에 추천되는 신규 추천 종목을 매수하는 것도 좋은
+                                                방법입니다.<br>
+                                                알람을 설정해 두시면 신규 종목 추천시 알림톡을 통해 놓치지 않고 정보를 확인하실 수 있습니다.<br>
+                                                <br>
+                                                알람은 [메뉴 > 설정 > 관심종목 알림 / 서비스 알림 / 마케팅정보수신]에서 설정할 수 있습니다.
+                                            </div>
+                                        </li>
+                                        <li class="article">
+                                            <p class="q"><a href="#a1" class="trigger">적정가에 도달한 종목은 어떻게 해야
+                                                    하나요?</a><i></i>
+                                            </p>
+                                            <div class="a">
+                                                적정가에 도달하면 매도해 수익을 실현하는 것을 권해 드립니다.<br>
+                                                혹여 적정가를 돌파하고 더 오를 수도 있지만, 저평가된 신규 추천 종목을 매수하는 것이 투자 수익률이나 안정성면에서
+                                                좋습니다.<br>
+                                                <br>
+                                                적정가에 도달했을때 못팔고 다시 가격이 떨어졌다면 고민인데요.<br>
+                                                현재가가 적정가 대비 5% 이내에 있다면 매도해 수익을 실현하는 게 좋습니다.
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- //faqArea -->
+                    </div>
+                    <!-- //sub_con -->
+                </div>
+                <!-- //sub_mid -->
+            </div>
+            <!-- //alliance_wrap -->
+        </div>
+        <!-- //container -->
+
+    </div>
+    <!-- //wrap -->
+</body>
+
+</html>

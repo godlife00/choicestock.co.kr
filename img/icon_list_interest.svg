@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
+  <g id="icon_list_fav" transform="translate(-24 -222)">
+    <rect id="사각형_5736" data-name="사각형 5736" width="14" height="14" transform="translate(24 222)" fill="red" opacity="0"/>
+    <path id="Icon_material-stars" data-name="Icon material-stars" d="M9.174,3A6.18,6.18,0,1,0,15.36,9.18,6.177,6.177,0,0,0,9.174,3Zm2.62,9.888L9.18,11.312,6.566,12.888l.692-2.973-2.305-2,3.041-.26L9.18,4.854l1.187,2.8,3.041.26-2.305,2,.692,2.979Z" transform="translate(21.82 219.82)" fill="#ff3178"/>
+  </g>
+</svg>

@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no" />
+    <title>초이스스탁</title>
+    <meta name="robots" content="데이터히어로 미국주식">
+    <meta name="description" content="투자를 쉽고 편리하게, 미국주식가이드, 종목분석, 종목토론, 데이터히어로">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="theme-color" content="#2C295D">
+    <!-- 오픈 그래프 -->
+    <meta property="og:title" content="데이터히어로 미국주식" />
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="투자를 쉽고 편리하게, 미국주식가이드, 종목분석, 종목토론, 데이터히어로">
+    <meta property="og:image" content="http://godlife.ivyro.net/test/img/choicestockus_thumb.png">
+    <meta property="og:image:width" content="410" />
+    <meta property="og:image:height" content="210" />
+    <meta property="og:url" content="http://us.itooza.com">
+    <!-- jquery-1.12 -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <!-- highcharts -->
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/series-label.js"></script>
+    <script src="https://code.highcharts.com/highcharts-more.js"></script>
+    <script src="https://code.highcharts.com/modules/solid-gauge.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+    <script src="https://code.highcharts.com/modules/no-data-to-display.js"></script>
+    <script src="../js/chartjs.js"></script>
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="../css/choicestock.css" />
+    <!-- js -->
+    <script src="../js/globalstock.js"></script>
+</head>
+
+<!-- 제휴사이트 민트 칼라 적용 class = mint  -->
+<body class="globalStock">
+    <div id="wrap">
+        <!-- 하단 GNB -->
+        <div class="gnb">
+            <ul class="list">
+                <li class="home"><a href="../index.html"><i></i> 홈</a></li>
+                <li class="stock"><a href="../stock/recom.html">추천</a></li>
+                <li class="analysis"><a href="../search/search_diagnosis.html">진단</a></li>
+                <li class="excavation active"><a href="../attractiveness/attractiveness.html">발굴</a></li>
+                </li>
+                <li class="menu"><a href="../stock/menu.html">메뉴</a></li>
+            </ul>
+        </div>
+        <!-- //gnb -->
+
+        <div id="header" class="header h_sub">
+            <div class="headerTop">
+                <h1 class="headerLogo"><span>초이스스탁</span>
+                </h1>
+                <div class="hm">
+                    <a href="../search/searching.html" class="go_sch"><img src="../img/icon_search.svg" alt="검색하기"></a>
+                </div>
+                <!-- //hm -->
+            </div>
+            <!-- //headerTop -->
+        </div>
+
+        <!-- 전종목 투자매력도 class = sub_attract-->
+        <div id="container" class="sub_attract">
+            <!-- 주요 콘텐츠 -->
+            <h2 class="h2_title">발굴</h2>
+            <div class="tab_area">
+                <ul class="tbas_lb tabs_4">                    
+                    <li><a href="../stock/recipe.html">레시피</a></li>
+                    <li><a href="../attractiveness/attractiveness.html" class="active">투자매력도</a></li>
+                    <li><a href="../stock/catch.html">캐치</a></li>                    
+                    <li><a href="../stock/note.html">종목노트</a></li>
+                </ul>
+            </div>
+            <!-- //tab_area -->            
+
+            <div class="sub_top">
+                <div class="">
+                    <div class="txt_box">
+                        <p class="txt">
+                            미국 주식 5,000개 기업의 투자매력도 순위를 매일 제공합니다.<br>
+                            <br>
+                            투자매력 종합점수가 높을수록 우량주입니다. 점수가 높고 주가가 적정주가 보다 낮은 기업에 투자하면 장기적으로 좋은 수익률을 낼 수 있습니다.<br>
+                            <br>
+                            투자매력 종합점수는 빅 데이터 전문 기업인 (주)데이터히어로가  22개 요인(Factor) 분석에 따라 기업의 배당, 독점력, 안전성, 성장성, 현금창출력을 종합 평가해 점수와 순위를 제공합니다.
+                        </p>
+                    </div>
+                    <!-- //txt_box -->
+                </div> <!-- //best_research -->
+            </div>
+            <!-- //sub_top -->
+
+            <div class="sub_mid attract_sub">
+                <div class="set">
+                    <ul>
+                        <li class=""><strong>시가총액</strong>20억달러~100억달러 미만</li>
+                        <li class="">흑자기업</li>
+                    </ul>                                        
+                    <a href="#setting" data-modal="modal-3" class="md-trigger btn_schSet button" ><i></i>정렬</a>
+                </div>
+
+                <p class="table_guide">*항목 점수/시가총액 순 정렬</p>
+                <table cellspacing="0" border="1" class="tableRanking attract_table">
+                    <colgroup>
+                        <col width="80px">
+                        <col width="">
+                        <col width="">
+                        <col width="">
+                        <col width="">
+                        <col width="">
+                        <col width="">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th class="">
+                                <span class="txt_guide"><img src="../img/txt_guide.svg" alt="가이드보기"></span>
+                                <!-- 투자의견, 투자매력 가이드 레이어 -->
+                                <div class="guide_box">
+                                    <span class="clse">닫기</span>                          
+                                    <p class="txt"><strong>투자매력 점수</strong>는 해당 종목의 우량주 여부를 판단하는데 도움을 드립니다.</p>
+                                    <p class="txt">10년 이상의 금융 빅데이터에서 우량주 발굴을 위해 22개 요인(Factor)을 종목별로 분석하고, 동종업종내 경쟁사와 비교합니다.</p>
+                                    <ul>
+                                        <li class="list_txt">투자매력 점수는 높을수록 매력적인 기업이며, 65점(상위 20%) 이상이면 우량 기업으로 판단합니다.</li>
+                                        <li class="list_txt">투자매력 세부 항목인 독점력, 수익성, 안전성, 성장성, 현금창출력, 미래성장성으로 별점(★) 5점 만점에 3점 이상이면 각 항목을 통과한 것으로 판단합니다.</li>
+                                        <li class="list_txt">세부 항목 평가에서 별점 0~1점을 받았다면 위험 요인으로, 투자 판단시 유의해서 봐야 합니다.</li>                                        
+                                        <li class="list_txt">우량주 여부를 판단한 후에는 적정주가로 저평가 여부를 확인하세요.</li>
+                                    </ul>
+                                </div>
+                                <!-- //guide_box -->
+                            </th>
+                            <th class="">종합</th>
+                            <th class="">미래<br>성장성</th>
+                            <th class="">사업<br>독점력<i></i></th>
+                            <th class="">재무<br>안전성</th>
+                            <th class="">수익성</th>
+                            <th class="">현금<br>창출력</th>
+                        </tr>
+                        <tr>
+                            <td class="title">
+                                <a href="">애플<span class="ticker">AAPL</span></a>
+                            </td>
+                            <td>
+                                <span>100</span>
+                            </td>
+                            <td>
+                                <span>20</span>
+                            </td>
+                            <td>
+                                <span>10</span>
+                            </td>
+                            <td>
+                                <span>5</span>
+                            </td>
+                            <td>
+                                <span>20</span>
+                            </td>
+                            <td>
+                                <span>88</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="title">
+                                <a href="">마이크로소프트</a>
+                            </td>
+                            <td>
+                                <span>100</span>
+                            </td>
+                            <td>
+                                <span>20</span>
+                            </td>
+                            <td>
+                                <span>10</span>
+                            </td>
+                            <td>
+                                <span>5</span>
+                            </td>
+                            <td>
+                                <span>20</span>
+                            </td>
+                            <td>
+                                <span>88</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="title">
+                                <a href="">애플<span class="ticker">AAPL</span></a>
+                            </td>
+                            <td>
+                                <span>100</span>
+                            </td>
+                            <td>
+                                <span>20</span>
+                            </td>
+                            <td>
+                                <span>10</span>
+                            </td>
+                            <td>
+                                <span>5</span>
+                            </td>
+                            <td>
+                                <span>20</span>
+                            </td>
+                            <td>
+                                <span>88</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="title">
+                                <a href="">마이크로소프트</a>
+                            </td>
+                            <td>
+                                <span>100</span>
+                            </td>
+                            <td>
+                                <span>20</span>
+                            </td>
+                            <td>
+                                <span>10</span>
+                            </td>
+                            <td>
+                                <span>5</span>
+                            </td>
+                            <td>
+                                <span>20</span>
+                            </td>
+                            <td>
+                                <span>88</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="title">
+                                <a href="">애플<span class="ticker">AAPL</span></a>
+                            </td>
+                            <td>
+                                <span>100</span>
+                            </td>
+                            <td>
+                                <span>20</span>
+                            </td>
+                            <td>
+                                <span>10</span>
+                            </td>
+                            <td>
+                                <span>5</span>
+                            </td>
+                            <td>
+                                <span>20</span>
+                            </td>
+                            <td>
+                                <span>88</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="title">
+                                <a href="">마이크로소프트</a>
+                            </td>
+                            <td>
+                                <span>100</span>
+                            </td>
+                            <td>
+                                <span>20</span>
+                            </td>
+                            <td>
+                                <span>10</span>
+                            </td>
+                            <td>
+                                <span>5</span>
+                            </td>
+                            <td>
+                                <span>20</span>
+                            </td>
+                            <td>
+                                <span>88</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="title">
+                                <a href="">애플<span class="ticker">AAPL</span></a>
+                            </td>
+                            <td>
+                                <span>100</span>
+                            </td>
+                            <td>
+                                <span>20</span>
+                            </td>
+                            <td>
+                                <span>10</span>
+                            </td>
+                            <td>
+                                <span>5</span>
+                            </td>
+                            <td>
+                                <span>20</span>
+                            </td>
+                            <td>
+                                <span>88</span>
+                            </td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+
+                <!-- 프리미엄 서비스 사용자가 아닌 경우 -->
+                <div class="prm_div weeks_free">
+                    <div class="box">
+                        <div class="left">
+                            <p class="title"><i></i>초이스스탁US 프리미엄</p>
+                            <p class="txt">모든 서비스를 제한없이 이용하실 수 있습니다.</p>
+                        </div>
+                        <div class="right">
+                            <p><a href="#" class="btn_free">첫 달 3,000원<i></i></a></p>      
+                            <p><a href="../stock/service.html" class="go_link">[서비스 안내]</a></p>                        
+                        </div>                       
+                    </div>
+                    <div class="box">
+                        <div class="left">
+                            <p class="title"><i></i>초이스스탁US 프리미엄</p>
+                            <p class="txt">모든 서비스를 제한없이 이용하실 수 있습니다.</p>
+                        </div>
+                        <div class="right">
+                            <p><a href="#" class="btn_free">2주 무료보기<i></i></a></p>      
+                            <p><a href="../stock/service.html" class="go_link">[서비스 안내]</a></p>                        
+                        </div>                       
+                    </div>
+                </div>
+                <!-- //프리미엄 서비스 사용자가 아닌 경우 -->
+
+                <div class="btn_more">
+                    <a href=""><i></i>더보기</a>
+                </div>
+
+            </div> <!-- //sub_mid -->            
+
+            <!-- 구글 에드센스 표 하단 -->            
+            <!-- //구글 에드센스 -->
+
+        </div>
+        <!-- //container -->
+
+        <div id="footer" class="type_sub">
+            <!-- 인증 -->
+            <div class="certification">
+                <ul>
+                    <li><span>과학기술정보통신부</span><a
+                            href="http://www.datahero.co.kr/%eb%8d%b0%ec%9d%b4%ed%84%b0%ed%9e%88%ec%96%b4%eb%a1%9c-%ea%b3%bc%ea%b8%b0%ec%a0%95%ed%86%b5%eb%b6%80-2020-%eb%8d%b0%ec%9d%b4%ed%84%b0%ec%8a%a4%ed%83%80%ec%a6%88-%ec%84%a0%ec%a0%95/"
+                            title="데이터스타즈" target="_black"><img src="../img/datastars.png" alt="데이터스타즈"></a></li>
+                    <li><span>벤처기업인증</span><a
+                            href="http://www.datahero.co.kr/%eb%8d%b0%ec%9d%b4%ed%84%b0%ed%9e%88%ec%96%b4%eb%a1%9c-%ea%b8%b0%ec%88%a0%eb%b3%b4%ec%a6%9d%ea%b8%b0%ea%b8%88-%eb%b2%a4%ec%b2%98%ea%b8%b0%ec%97%85-%ec%9d%b8%ec%a6%9d-%ed%9a%8d%eb%93%9d/"
+                            title="벤처인증" target="_black"><img src="../img/kobo_logo.png" alt="벤처인증"></a></li>
+                </ul>
+            </div>
+            <!-- //인증 -->
+
+            <div class="notice">
+                <ul class="terms_list">
+                    <li><a href="/member/terms">이용약관</a></li>
+                    <li><a href="/member/policy">개인정보처리방침</a></li>
+                    <li><a href="https://www.datahero.co.kr" target="_blank">회사소개</a></li>
+                </ul>
+
+                <div class="foot_info">
+                    <div class="info_tel_box">
+                        <p>
+                            <span class="tel_num"><i></i>02-6225-2300</span>
+                            <span class="sns_kakao"><a href="http://pf.kakao.com/_QDLHxb/chat" target="_blank"><img
+                                        src="../img/sns_kakao_l.png" alt="카카오톡 문의하기"></a></span>
+                        </p>
+                    </div>
+                    <!-- //info_tel_box -->
+                    <p class="copyright"><a href="https://www.datahero.co.kr" target="_blank">ⓒ (주)데이터히어로</a><i></i>
+                        <strong>대표자</strong> 김인중 <i></i> <strong>사업자등록번호 291-88-01393</strong> <i></i> 서울특별시 서초구 강남대로
+                        311, 1021호
+                    </p>
+                    <div class="service_info">
+                        <p>본 서비스는 투자판단에 참고용으로만 사용하실 수 있으며, 모든 투자판단은 투자자 본인의 책임으로 당사는 그 결과에 대해 법적인 일체의 책임을 지지 않습니다.</p>
+                        <p class="dataLink">data from <a href="https://www.quandl.com/" target="_blank">Quandl and
+                                Sharadar</a>
+                        </p>
+                    </div>
+                </div>
+                <!-- //foot_info -->
+            </div>
+            <!-- //notice -->
+        </div>
+        <!-- //footer -->
+
+    </div>
+    <!-- //wrap -->
+
+    <!-- Modal popup -->
+    <!-- 전종목 투자매력도 -->        
+    <div class="md-modal md-effect-3" id="modal-3">
+        <div class="md-content">
+            <div id="setting" class="setting_area">
+                <div class="pop_header">
+                    <a href="#setting_anchor" title="로그인 레이어 닫기" class="close"><img src="../img/clse.png" alt="팝업닫기"></a>
+                    <h1 class="pop_title">정렬</h1>
+                </div>
+                <!-- //pop_header -->
+                <div class="pop_con">
+                    <form action="" method="post">
+                        <table cellspacing="0" border="1" class="tableRanking attract_table">
+                            <colgroup>
+                                <col width="65%">
+                                <col width="">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th><span>시가총액</span></th>
+                                    <th><span>순이익(연환산)</span></th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input name="amount" type="radio" id="amount1" value="" checked="checked"
+                                            class="input_radio">
+                                        <label for="amount1">전체</label>
+                                    </td>
+                                    <td>
+                                        <input name="profit" type="radio" id="profit1" value="" checked="checked"
+                                            class="input_radio">
+                                        <label for="profit1">전체</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input name="amount" type="radio" id="amount2" value="" class="input_radio">
+                                        <label for="amount2">3억달러 미만</label>
+                                    </td>
+                                    <td>
+                                        <input name="profit" type="radio" id="profit2" value="" class="input_radio">
+                                        <label for="profit2">흑자기업</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input name="amount" type="radio" id="amount3" value="" class="input_radio">
+                                        <label for="amount3">3억달러 ~ 20억달러 미만</label>
+                                    </td>
+                                    <td>
+                                        <input name="profit" type="radio" id="profit3" value="" class="input_radio">
+                                        <label for="profit3">적자기업</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <input name="amount" type="radio" id="amount4" value="" class="input_radio">
+                                        <label for="amount4">20억달러~100억달러 미만</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <input name="amount" type="radio" id="amount5" value="" class="input_radio">
+                                        <label for="amount5">100억달러 이상</label>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+    
+                        <div class="pop_footer">
+                            <span class="title">정렬</span>
+                            <ul class="sort">
+                                <li><a href="#">종합</a></li>
+                                <li><a href="#">미래<br>성장성</a></li>
+                                <li class="active"><a href="#">사업<br>독점력</a></li>
+                                <li><a href="#">재무<br>안전성</a></li>
+                                <li><a href="#">수익성</a></li>
+                                <li><a href="#">현금<br>창출력</a></li>
+                            </ul>
+                            <div class="btnArea edtBtn">
+                                <a href="#" class="btn btn_save">확인</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="md-overlay"></div><!-- the overlay element -->
+
+
+
+</body>
+
+</html>
