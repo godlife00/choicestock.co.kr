@@ -26967,7 +26967,7 @@ width: auto;
 .globalStock .sub_search .sub_mid .eventsum_area .tableRanking.sum_table {	
 	border-bottom:1px solid #E0E4E9;
 	margin:15px auto;
-	width:calc(100% - 30px);	
+	width:calc(100% - 30px);	 
 }
 .globalStock .sub_search .sub_mid .eventsum_area .tableRanking.sum_table tr {
 	border-bottom:1px solid #E0E4E9;
