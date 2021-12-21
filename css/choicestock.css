@@ -26166,6 +26166,10 @@ width: auto;
 	border-radius:50%;
 	font-size:0;
 }
+.globalStock .sub_search .sub_mid.outline_box .box .value_chart .no_data + .line .g_action,
+.globalStock .sub_search .sub_mid.outline_box .box .value_chart .prm_lock + .line .g_action {
+	background-color: #9ea6e0;	
+}
 .globalStock .sub_search .sub_mid.outline_box .box .value_chart .adequate {
 	margin-top: 13px;
 }
@@ -26235,12 +26239,12 @@ width: auto;
 .globalStock .sub_search .sub_mid.outline_box .box .value_chart .line .situation.St_buying::after {
 	margin-left: -19px;
 }
-/* 매수 */
+/* 매우 저평가 */
 .globalStock .sub_search .sub_mid.outline_box .box .value_chart .line .situation.buying {
 	left: 4%;  
 }
 .globalStock .sub_search .sub_mid.outline_box .box .value_chart .line .situation.buying::after {
-	margin-left: -10px;
+	margin-left: -4px;
 }
 /* 매도 */
 .globalStock .sub_search .sub_mid.outline_box .box .value_chart .line .situation.sell {
@@ -26249,14 +26253,14 @@ width: auto;
 .globalStock .sub_search .sub_mid.outline_box .box .value_chart .line .situation.sell::after {
 	margin-left: -10px;
 }
-/* 적극매도 */
+/* 매우 고평가 */
 .globalStock .sub_search .sub_mid.outline_box .box .value_chart .line .situation.St_sell {
 	left: auto;
 	right: 0;
 	text-align: right;
 }
 .globalStock .sub_search .sub_mid.outline_box .box .value_chart .line .situation.St_sell::after {
-	margin-left: 0;
+	margin-left: 4px;
 }
 /* 적정가 */
 .globalStock .sub_search .sub_mid.outline_box .box .value_chart .line .situation.propriety {
