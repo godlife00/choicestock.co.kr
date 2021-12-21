@@ -26201,10 +26201,10 @@ width: auto;
 .globalStock .sub_search .sub_mid.outline_box .box .value_chart .line .situation {
 	position: absolute;
 	left: 0;
-	top: -25px;
+	top: -30px;
 	width: 56px;  
 	text-align: center;  
-	padding-bottom: 3px;
+	padding-bottom: 10px;
 }
 @media (min-width:320px) and (max-width:374px) {
   .globalStock .sub_search .sub_mid.outline_box .box .value_chart .line .situation {
@@ -26220,9 +26220,11 @@ width: auto;
 	content: " ";  
 	position: absolute;
 	pointer-events: none;  
-	width: 14px;
-	height: 10px;
-	background: url('../img/situation_arow.svg') no-repeat center center;
+	width: 4px;
+	height: 4px;
+	/* background: url('../img/situation_arow.svg') no-repeat center center; */
+	border-radius: 50%;
+	background-color: #404fc3;
 	z-index: 90;
 }
 /* 적극매수 */
@@ -26235,7 +26237,7 @@ width: auto;
 }
 /* 매수 */
 .globalStock .sub_search .sub_mid.outline_box .box .value_chart .line .situation.buying {
-	left: 17%;  
+	left: 4%;  
 }
 .globalStock .sub_search .sub_mid.outline_box .box .value_chart .line .situation.buying::after {
 	margin-left: -10px;
