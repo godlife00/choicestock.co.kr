@@ -26554,6 +26554,181 @@ width: auto;
 .globalStock .sub_search .sub_mid .adequate_stock .box .con {
 	padding-top: 11px;
 }
+
+/* 종목진단 AI적정주가 벨류라인 차트 */
+.globalStock .sub_search .sub_mid .adequate_stock .box .con .value_chart {	
+	width:100%;
+	padding: 0;
+	overflow: initial;
+}
+
+.globalStock .sub_search .sub_mid .adequate_stock .box .con .value_chart .line {
+	position: relative;
+	width: 100%;
+	height: 2px;  
+	border-radius: 20px;
+	background-color: #e6e7f4;
+	margin-top: 35px;
+}
+.globalStock .sub_search .sub_mid .adequate_stock .box .con .value_chart .line .g_action {
+	position:absolute;
+	left:0;
+	top:-6px;
+	margin-left:-5px;
+	z-index:2;
+	display:inline-block;
+	background:#404FC3;
+	width:14px;
+	height:14px;
+	border-radius:50%;
+	font-size:0;
+}
+.globalStock .sub_search .sub_mid .adequate_stock .box .con .value_chart .line .g_action::after {
+	content:"";
+	position:absolute;
+	left:2px;
+	top:2px;
+	display:inline-block;
+	background:#fff;
+	width:10px;
+	height:10px;
+	border-radius:50%;
+	font-size:0;
+}
+
+.globalStock .sub_search .sub_mid .adequate_stock .box .con .value_chart .adequate {
+	margin-top: 13px;
+}
+.globalStock .sub_search .sub_mid .adequate_stock .box .con .value_chart .adequate span {
+	display: block;
+	font-size: 0.7rem;	
+	font-weight: 300;
+	line-height: 1.3;
+	text-align: center;
+	color: #333;
+}
+.globalStock .sub_search .sub_mid .adequate_stock .box .con .value_chart .adequate strong {
+	display: block;
+	padding-top: 3px;
+	font-size: 0.8125rem;
+	font-weight: normal;  
+	line-height: 1;  
+	text-align: center;
+	color: #333;
+}
+.globalStock .sub_search .sub_mid .adequate_stock .box .con .value_chart .adequate strong b {
+	font-weight: 300;
+}
+.globalStock .sub_search .sub_mid .adequate_stock .box .con .value_chart .adequate .remark {
+	margin-top: 3px;
+}
+.globalStock .sub_search .sub_mid .adequate_stock .box .con .value_chart .adequate .remark .txt_filter.size_B i {
+	width: 8px;
+    height: 8px;
+	margin: 0 1px 1px;	
+	opacity: 0.67;
+}
+.globalStock .sub_search .sub_mid .adequate_stock .box .con .value_chart .line .situation {
+	position: absolute;
+	left: 0;
+	top: -30px;
+	width: 56px;  
+	text-align: center;  
+	padding-bottom: 10px;
+}
+@media (min-width:320px) and (max-width:374px) {
+  .globalStock .sub_search .sub_mid .adequate_stock .box .con .value_chart .line .situation {
+	padding-bottom: 5px;
+  }
+}
+.globalStock .sub_search .sub_mid .adequate_stock .box .con .value_chart .line .situation::after {
+	content:"";
+	top: 100%;
+	left: 50%;
+	margin-left: -10px;
+	border: solid transparent;
+	content: " ";  
+	position: absolute;
+	pointer-events: none;  
+	width: 4px;
+	height: 4px;
+	border-radius: 50%;
+	background-color: #404fc3;
+	z-index: 90;
+}
+/* 적극매수 */
+.globalStock .sub_search .sub_mid .adequate_stock .box .con .value_chart .line .situation.St_buying {  
+	left: 0;
+	text-align: left;
+}
+.globalStock .sub_search .sub_mid .adequate_stock .box .con .value_chart .line .situation.St_buying::after {
+	margin-left: -19px;
+}
+/* 매우 저평가 */
+.globalStock .sub_search .sub_mid .adequate_stock .box .con .value_chart .line .situation.buying {
+	left: 4%;  
+}
+.globalStock .sub_search .sub_mid .adequate_stock .box .con .value_chart .line .situation.buying::after {
+	margin-left: -4px;
+}
+/* 매도 */
+.globalStock .sub_search .sub_mid .adequate_stock .box .con .value_chart .line .situation.sell {
+	left: 47%;  
+}
+.globalStock .sub_search .sub_mid .adequate_stock .box .con .value_chart .line .situation.sell::after {
+	margin-left: -10px;
+}
+/* 매우 고평가 */
+.globalStock .sub_search .sub_mid .adequate_stock .box .con .value_chart .line .situation.St_sell {
+	left: auto;
+	right: 0;
+	text-align: right;
+}
+.globalStock .sub_search .sub_mid .adequate_stock .box .con .value_chart .line .situation.St_sell::after {
+	margin-left: 4px;
+}
+/* 적정가 */
+.globalStock .sub_search .sub_mid .adequate_stock .box .con .value_chart .line .situation.propriety {
+	left: 50%;
+	margin-left: -27px;  
+}
+.globalStock .sub_search .sub_mid .adequate_stock .box .con .value_chart .line .situation.propriety::after {
+	display: none;
+	margin-left: -10px;  
+	top: calc(100% - 2px);
+}
+.globalStock .sub_search .sub_mid .adequate_stock .box .con .value_chart .line .situation span {  
+	font-size: 0.875rem;
+	font-weight: bold;	
+	line-height: 0.93;	
+	color: #404fc3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .globalStock .sub_search .sub_mid .adequate_stock .box .adequate_price {
 	width:100%;
 }
@@ -27279,7 +27454,7 @@ width: auto;
 	.globalStock .sub_search .sub_mid.outline_box {
 		overflow: hidden;
 	}
-	.globalStock .sub_search .sub_mid.outline_box .box {		
+	.globalStock .sub_search .sub_mid .adequate_stock .box .con {		
 		display: inline-block;
 		width: calc(100% / 2 - 5px);
 		margin-bottom: 10px;
@@ -27290,29 +27465,29 @@ width: auto;
 	.globalStock .sub_search .sub_mid.outline_box .box:nth-child(2n) {				
 		float: right;		
 	}
-	.globalStock .sub_search .sub_mid.outline_box .box .data_attainment ul {
+	.globalStock .sub_search .sub_mid .adequate_stock .box .con .data_attainment ul {
 
 	}
-	.globalStock .sub_search .sub_mid.outline_box .box .data_attainment ul li {
+	.globalStock .sub_search .sub_mid .adequate_stock .box .con .data_attainment ul li {
 		display: inline-block;
 		width: calc(100% / 2 - 5px);
 		margin-bottom: 15px;
 	}
-	.globalStock .sub_search .sub_mid.outline_box .box .event_attractiveness ul {
+	.globalStock .sub_search .sub_mid .adequate_stock .box .con .event_attractiveness ul {
 		
 	}
-	.globalStock .sub_search .sub_mid.outline_box .box .event_attractiveness ul li {
+	.globalStock .sub_search .sub_mid .adequate_stock .box .con .event_attractiveness ul li {
 		display: inline-block;
 		margin-bottom: 7px;		
 	}
-	.globalStock .sub_search .sub_mid.outline_box .box .event_attractiveness li.att {
+	.globalStock .sub_search .sub_mid .adequate_stock .box .con .event_attractiveness li.att {
 		display: block;
 	}
-	.globalStock .sub_search .sub_mid.outline_box .box .value_chart .line .situation span {
+	.globalStock .sub_search .sub_mid .adequate_stock .box .con .value_chart .line .situation span {
 		display: inline-block;		
 	}
 	
-	.globalStock .sub_search .sub_mid.outline_box .box .value_chart .prm_lock span {
+	.globalStock .sub_search .sub_mid .adequate_stock .box .con .value_chart .prm_lock span {
 		background: #404fc3 url('../img/more_yel.svg') no-repeat 95% center;
     	background-size: 5px 8px		
 	}
