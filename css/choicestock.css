@@ -26651,15 +26651,28 @@ width: auto;
 	text-align: center;	
 }
 .globalStock .sub_search .sub_mid .adequate_stock .box .con .value_chart .adequate strong {	
+	position: relative;
 	display: inline-block;
-	margin-top: 13px;
-    padding: 4px 10px;
+	margin-top: 20px;
+    padding: 4px 14px;
     border-radius: 3px;
     background-color: #f5f6ff;
     font-size: 1rem;
     font-weight: normal;
     line-height: 0.87;
     color: #333;	
+}
+.globalStock .sub_search .sub_mid .adequate_stock .box .con .value_chart .adequate strong::before {
+	content:"";			
+	position: absolute;
+	left: 50%;
+	top: -14px;
+	margin-left: 2px;
+	pointer-events: none;  
+	width: 1px;
+	height: 15px;	
+	background-color: #404fc3;
+	z-index: 90;
 }
 .globalStock .sub_search .sub_mid .adequate_stock .box .con .value_chart .adequate span {
 	display: block;
@@ -26789,61 +26802,8 @@ width: auto;
 	opacity: 1;	
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .globalStock .sub_search .sub_mid .adequate_stock .box .adequate_price {
 	width:100%;
-}
-
-.globalStock .sub_search .sub_mid .adequate_stock .box .adequate_price .g_action {
-	position:absolute;
-	left:0;
-	top:-13px;
-	margin-left:-5px;
-	z-index:2;
-	display:inline-block;
-	background:#404FC3;
-	width:10px;
-	height:10px;
-	border-radius:50%;
-	font-size:0;
-	display: none !important;
-}
-.globalStock .sub_search .sub_mid .adequate_stock .box .adequate_price .g_action::after {
-	content:"";
-	position:absolute;
-	left:2px;
-	top:2px;
-	display:inline-block;
-	background:#fff;
-	width:6px;
-	height:6px;
-	border-radius:50%;
-	font-size:0;
 }
 .globalStock .sub_search .sub_mid .adequate_stock .box .adequate_price .line {	
 	display: flex;
@@ -26921,6 +26881,91 @@ width: auto;
 	font-size: 0.875rem;	
 	line-height: 1.21;		
 	color: #404fc3;	
+}
+.globalStock .sub_search .sub_mid .adequate_stock .box .adequate_price .nodata_area .line {	
+	position: relative;
+	width: 100%;
+	height: 2px;  
+	border-radius: 20px;
+	background-color: #e6e7f4;
+	margin-top: 20px;	
+}
+.globalStock .sub_search .sub_mid .adequate_stock .box .adequate_price .nodata_area .line .g_action {
+	background-color: red;
+	position:absolute;
+	left:0;
+	top:-6px;
+	margin-left:-5px;
+	z-index:2;
+	display:inline-block;
+	background:#aaaee8;
+	width:14px;
+	height:14px;
+	border-radius:50%;
+	font-size:0;
+}
+.globalStock .sub_search .sub_mid .adequate_stock .box .adequate_price .nodata_area .line .g_action::after {
+	content:"";
+	position:absolute;
+	left:2px;
+	top:2px;
+	display:inline-block;
+	background:#fff;
+	width:10px;
+	height:10px;
+	border-radius:50%;
+	font-size:0;
+}
+/* 매우저평가 */
+.globalStock .sub_search .sub_mid .adequate_stock .box .adequate_price .nodata_area .line .g_action.g_buying {
+	top: -3px;
+	left: 4%;
+	right: auto;
+	width: 8px;
+    height: 8px;
+	background-color: #aaaee8;	
+}
+.globalStock .sub_search .sub_mid .adequate_stock .box .adequate_price .nodata_area .line .g_action.g_buying::after {	
+	content:"매우저평가";
+	position:absolute;
+	left:0;
+	top:20px;
+	display:inline-block;	
+	width: 60px;
+	font-size: 12px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.08;
+	letter-spacing: normal;
+	text-align: left;
+	color: #c3c3c3;		
+}
+/* 매우고평가 */
+.globalStock .sub_search .sub_mid .adequate_stock .box .adequate_price .nodata_area .line .g_action.g_sell {
+	top: -3px;		
+	left: auto;
+	right: 4%;	
+	width: 8px;
+    height: 8px;
+	background-color: #aaaee8;	
+}
+.globalStock .sub_search .sub_mid .adequate_stock .box .adequate_price .nodata_area .line .g_action.g_sell::after {	
+	content:"매우고평가";
+	position:absolute;
+	left: auto;
+	right:0;
+	top:20px;
+	display:inline-block;	
+	width: 60px;
+	font-size: 12px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.08;
+	letter-spacing: normal;
+	text-align: left;
+	color: #c3c3c3;		
 }
 .globalStock .sub_search .sub_mid .adequate_stock .box .adequate_price .nodata_area .line .domain .price_line::before {
 	background: #ebebeb;
