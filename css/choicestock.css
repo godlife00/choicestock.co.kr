@@ -26568,7 +26568,7 @@ width: auto;
 	height: 2px;  
 	border-radius: 20px;
 	background-color: #e6e7f4;
-	margin-top: 70px;
+	margin-top: 35px;
 }
 .globalStock .sub_search .sub_mid .adequate_stock .box .con .value_chart .line .g_action {
 	position:absolute;
@@ -26631,10 +26631,10 @@ width: auto;
 .globalStock .sub_search .sub_mid .adequate_stock .box .con .value_chart .line .situation {
 	position: absolute;
 	left: 0;
-	top: -60px;	
-	min-width: 56px;
+	top: -30px;
+	width: 56px;  
 	text-align: center;  
-	padding: 1px 8px 7px;
+	padding: 1px 8px 5px;
 	border-radius: 3px;
   	background-color: #404fc3;
 }
@@ -26645,7 +26645,7 @@ width: auto;
 }
 .globalStock .sub_search .sub_mid .adequate_stock .box .con .value_chart .line .situation::after {
 	content:"";
-	top: 56px;
+	top: 100%;
 	left: 50%;
 	margin-left: -10px;
 	border: solid transparent;
@@ -26655,17 +26655,6 @@ width: auto;
 	width: 4px;
 	height: 4px;
 	border-radius: 50%;
-	background-color: #404fc3;
-	z-index: 90;
-}
-.globalStock .sub_search .sub_mid .adequate_stock .box .con .value_chart .line .situation::before {
-	content:"";			
-	position: absolute;
-	left: 50%;
-	top: 42px;
-	pointer-events: none;  
-	width: 1px;
-	height: 20px;	
 	background-color: #404fc3;
 	z-index: 90;
 }
@@ -26719,7 +26708,7 @@ width: auto;
 	opacity: 0.5;
 }
 .globalStock .sub_search .sub_mid .adequate_stock .box .con .value_chart .line .situation .sync_price {  
-	display: block;
+	display: inline-block;
 	padding-top: 5px;
 	font-size: 1rem;	
 	line-height: 0.81;	
