@@ -66,28 +66,30 @@
                 </div>
 
                 <div class="mapage_service">
-                    <table border="1" class="service_table">
-                        <tbody>
-                            <tr>
-                                <th class="service">프리미엄 서비스:</th>
-                                <td class="day">
-                                    2020.09/18 ~ 2030.10/18
-                                    (월 정기결제)</td>
-                            </tr>
-                            <tr>
-                                <th rowspan="2" class="system"><span>월정기결제</span>
-                                    <a href="#pay_cncl" class="btn_payCan show_pop02 auto_cncl">정기결제취소</a>
 
-                                </th>
-                                <td class="num"><span>ㆍ카드번호</span> <strong>*********3423</strong><a
-                                        href="../payment/step02_card.html" class="card_ch">변경</a></td>
-                            </tr>
-                            <tr>
-                                <td class="num"><span>ㆍ결제일</span> <strong>일</strong></td>
-                            </tr>
-                        </tbody>
-                    </table>
+					
+                    <table border="1" class="service_table">
+    <tbody>
+        <tr>
+            <th class="service">프리미엄 서비스:</th>
+            <td class="day">
+                                            2020.09/18 ~ 2030.10/18																
+             (월 정기결제)</td>
+        </tr>
+        <tr>
+            <th rowspan="2" class="system"><span>월정기결제</span>
+                                                                                <a href="javascript:showPayCancel('721', 'A', '990', '23', '447', '0', '');" class="auto_cncl">정기결제취소</a>
+                                            
+            </th>
+            <td class="num"><span>ㆍ카드번호</span> <strong>*********3423</strong><a href="/payment/card_update/721" class="card_ch">변경</a></td>
+        </tr>
+        <tr>
+            <td class="num"><span>ㆍ결제일</span> <strong>일</strong></td>
+        </tr>
+    </tbody>
+</table>
                 </div>
+                <!-- //mapage_service -->
 
                 <div class="history_area">
                     <table cellspacing="0" border="1" class="history_table">
@@ -100,45 +102,54 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td>20.07/06</td>
-                                <td>33,000원 <span class="in">
-                                        월자동
-                                    </span> </td>
-                                <td>카드 <span class="in">
-                                        (**3423)
 
-                                    </span></td>
-
-
-                                <td>결제취소 <span class="in">(2020.07/06)</span></td>
-                            </tr>                            <tr>
-                                <td>20.06/03</td>
-                                <td>3,300원 <span class="in">
-                                        월자동
-                                    </span> </td>
-                                <td>카드 <span class="in">
-                                        (**3423)
-
-                                    </span></td>
+			            												
+							
+														
+								<tr>
+																		<td>20.07/06</td>
+																											<td>33,000원 <span class="in">
+																		월자동 
+																		</span> </td>
+									<td>카드 <span class="in">
+																		(**3423)
+																		
+									</span></td>
 
 
-                                <td><span class="in"></span></td>
-                            </tr>
-                            <tr>
-                                <td>20.06/03</td>
-                                <td>3,300원 <span class="in">
-                                        월자동
-                                    </span> </td>
-                                <td>카드 <span class="in">
-                                        (**3423)
+																			<td>결제취소 <span class="in">(2020.07/06)</span></td>
+																	</tr>
+							
+														
+								<tr>
+																		<td>20.06/03</td>
+																											<td>3,300원 <span class="in">
+																		월자동 
+																		</span> </td>
+									<td>카드 <span class="in">
+																		(**3423)
+																		
+									</span></td>
 
-                                    </span></td>
+
+																			<td><span class="in"></span></td>
+																	</tr>
+							
+														
+								<tr>
+																		<td>20.06/03</td>
+																											<td>3,300원 <span class="in">
+																		월자동 
+																		</span> </td>
+									<td>카드 <span class="in">
+																		(**3423)
+																		
+									</span></td>
 
 
-                                <td>결제취소 <span class="in">(2020.06/03)</span></td>
-                            </tr>
-                        </tbody>
+																			<td>결제취소 <span class="in">(2020.06/03)</span></td>
+																	</tr>
+													                        </tbody>
                     </table>
                 </div>
                 <!-- //history_area -->
@@ -232,17 +243,16 @@
     <!-- 서비스 해지/환불 (월정기) -->
     <div class="setting_pop pay_edt pay_edt_02">
         <div class="bg"></div>
-        <div id="pay_cncl" class="setting_area">
+        <div id="pay_cncl_tr" class="setting_area">
             <div class="pop_header">
-                <a href="#setting_anchor" title="로그인 레이어 닫기" class="close"><img src="/img/clse.png" alt="팝업닫기"></a>
-                <h1 class="pop_title">결제취소 <span id="now_time">2021.12/23 9:47</span> </h1>
+                <a href="#setting_anchor" title="로그인 레이어 닫기" class="close"><img src="../img/clse.png" alt="팝업닫기"></a>
+                <h1 class="pop_title">결제취소 <span>2019.12/23 12:24</span> </h1>
             </div>
             <!-- //pop_header -->
             <div class="pop_con">
+                <p class="pop_sum">이용중인 <strong>‘초이스스탁US’</strong> 서비스 결제를 취소합니다.</p>
                 <div class="mapage_form">
-                    <form name="payForm" method="post" action="/payment/pay_cancel" onsubmit="return false;">
-                        <input type="hidden" name="cs_ano" value="721">
-                        <input type="hidden" name="srv_name" value="초이스스탁">
+                    <form action="" method="post">
                         <fieldset>
                             <div class="form_table">
                                 <table border="1" class="">
@@ -251,7 +261,7 @@
                                             <th scope="row">서비스</th>
                                             <td>
                                                 <div class="item">
-                                                    <p class="txt_info" id="pay_srv_name">초이스스탁 (월자동)</p>
+                                                    <p class="txt_info">초이스스탁 (기간결제)</p>
                                                 </div>
                                             </td>
                                         </tr>
@@ -259,53 +269,53 @@
                                             <th scope="row">결제금액</th>
                                             <td>
                                                 <div class="item">
-                                                    <p class="txt_info" id="pay_srv_price">990원</p>
+                                                    <p class="txt_info">35,000원</p>
                                                 </div>
                                             </td>
                                         </tr>
                                         <tr>
-                                            <th scope="row">사용일수</th>
+                                            <th scope="row">결제수단</th>
                                             <td>
                                                 <div class="item">
-                                                    <p class="txt_info" id="pay_use_day">462일</p>
+                                                    <p class="txt_info">신용카드(**8787)</p>
                                                 </div>
                                             </td>
                                         </tr>
+
                                         <tr>
-                                            <th scope="row">환불금액</th>
+                                            <th scope="row">환불계좌</th>
                                             <td>
-                                                <div class="item">
-                                                    <p class="txt_info" id="pay_refund_price">0원</p>
-                                                    <p class="i_dsc phone" id="pay_free_price"></p>
+                                                <div class="selectbox">
+                                                    <label for="select">은행 선택</label>
+                                                    <select id="select">
+                                                        <option selected>신한은행</option>
+                                                        <option>농협은행</option>
+                                                        <option>국민은행</option>
+                                                        <option>우리은행</option>
+                                                        <option>신한은행</option>
+                                                    </select>
                                                 </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row"></th>
-                                            <td>
-                                                <div class="item">
-                                                    <p class="txt_info" id="pay_card_no">신용카드(****23)</p>
-                                                </div>
+                                                <input type="number" placeholder="계좌번호 입력" name="" id="" class="tr_num">
+
                                                 <div class="certification_area">
                                                     <p class="txt">결제취소는 신청 즉시(또는 영업일 기준 D+2 이내) 처리되며, 가상계좌/계좌이체 결제금액은
                                                         D+7 이내 등록하신 환불계좌로 입금처리됩니다.</p>
                                                     <a href="../stock/service_guide.html" class="go_link"
                                                         target="_blank"><i></i>환불정책 바로가기</a>
                                                 </div>
-                                                <!-- //certification_area -->
                                             </td>
                                         </tr>
                                     </tbody>
                                 </table>
-                                <p class="label_chk" id="requestCancel"><i></i>위 내용을 확인했으며, 결제취소를 신청합니다.</p>
+                                <p class="label_chk"><i></i>위 내용을 확인했으며, 결제취소를 신청합니다.</p>
                             </div>
                             <!-- //form_table -->
-                            <div class="btnArea edtBtn">
-                                <a href="javascript:fnPayCanCel()" class="btn btn_save">결제취소</a>
-                            </div>
                         </fieldset>
                     </form>
                 </div>
+            </div>
+            <div class="btnArea edtBtn">
+                <a href="#" class="btn btn_save">결제 취소</a>
             </div>
         </div>
     </div>
