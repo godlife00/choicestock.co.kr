@@ -1472,7 +1472,8 @@
 	color: #333;
 }
 .globalStock.wowtv .sub_search .sub_mid.outline_box .box .value_chart .line .situation::after {
-	background: url('../img/wow_situation_arow.svg') no-repeat center center;
+	/* background: url('../img/wow_situation_arow.svg') no-repeat center center; */
+	background-color: #3A9DF5;
 } 
 
 .globalStock.wowtv .sub_search .sub_mid.outline_investCharm .summary .etc li a {
@@ -3402,3 +3403,12 @@
 	right: 6px;
 	background-color: #014b8d;
 }
+.globalStock.wowtv .sub_search .sub_mid .adequate_stock .box .con .value_chart .adequate strong {
+	background-color: #fff;	
+}
+.globalStock.wowtv .sub_search .sub_mid .adequate_stock .box .con .value_chart .line .situation.buying,
+.globalStock.wowtv .sub_search .sub_mid .adequate_stock .box .con .value_chart .line .situation::before,
+.globalStock.wowtv .sub_search .sub_mid .adequate_stock .box .con .value_chart .line .situation.buying::after {
+	background-color: #014b8d;	
+}
+
