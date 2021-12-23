@@ -26595,27 +26595,82 @@ width: auto;
 	border-radius:50%;
 	font-size:0;
 }
+/* 매우저평가 */
+.globalStock .sub_search .sub_mid .adequate_stock .box .con .value_chart .line .g_action.g_buying {
+	top: -3px;
+	left: 4%;
+	right: auto;
+	width: 8px;
+    height: 8px;
+	background-color: #aaaee8;	
+}
+.globalStock .sub_search .sub_mid .adequate_stock .box .con .value_chart .line .g_action.g_buying::after {	
+	content:"매우저평가";
+	position:absolute;
+	left:0;
+	top:20px;
+	display:inline-block;	
+	width: 60px;
+	font-size: 12px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.08;
+	letter-spacing: normal;
+	text-align: left;
+	color: #c3c3c3;		
+}
+/* 매우고평가 */
+.globalStock .sub_search .sub_mid .adequate_stock .box .con .value_chart .line .g_action.g_sell {
+	top: -3px;		
+	left: auto;
+	right: 4%;	
+	width: 8px;
+    height: 8px;
+	background-color: #aaaee8;	
+}
+.globalStock .sub_search .sub_mid .adequate_stock .box .con .value_chart .line .g_action.g_sell::after {	
+	content:"매우고평가";
+	position:absolute;
+	left: auto;
+	right:0;
+	top:20px;
+	display:inline-block;	
+	width: 60px;
+	font-size: 12px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.08;
+	letter-spacing: normal;
+	text-align: left;
+	color: #c3c3c3;		
+}
 
-.globalStock .sub_search .sub_mid .adequate_stock .box .con .value_chart .adequate {
+.globalStock .sub_search .sub_mid .adequate_stock .box .con .value_chart .adequate {	
+	text-align: center;	
+}
+.globalStock .sub_search .sub_mid .adequate_stock .box .con .value_chart .adequate strong {	
+	display: inline-block;
 	margin-top: 13px;
+    padding: 4px 10px;
+    border-radius: 3px;
+    background-color: #f5f6ff;
+    font-size: 1rem;
+    font-weight: normal;
+    line-height: 0.87;
+    color: #333;	
 }
 .globalStock .sub_search .sub_mid .adequate_stock .box .con .value_chart .adequate span {
 	display: block;
-	font-size: 0.7rem;	
+	padding-bottom: 5px;
+	font-size: 10px;
 	font-weight: 300;
 	line-height: 1.3;
 	text-align: center;
 	color: #333;
 }
-.globalStock .sub_search .sub_mid .adequate_stock .box .con .value_chart .adequate strong {
-	display: block;
-	padding-top: 3px;
-	font-size: 0.8125rem;
-	font-weight: normal;  
-	line-height: 1;  
-	text-align: center;
-	color: #333;
-}
+
 .globalStock .sub_search .sub_mid .adequate_stock .box .con .value_chart .adequate strong b {
 	font-weight: 300;
 }
