@@ -1430,9 +1430,30 @@
 	padding-top: 0;
 	background: #fff;	
 }
-.globalStock.wowtv .sub_search .sub_mid.outline_box .box .value_chart .line {
-	background: #e0e5f0;
+.globalStock.wowtv .sub_search .sub_mid.outline_box .box .value_chart .line,
+.globalStock.wowtv .sub_search .sub_mid .adequate_stock .box .con .value_chart .line,
+.globalStock.wowtv .sub_search .sub_mid .adequate_stock .box .adequate_price .nodata_area .line {
+	background: #c0d0de;
 }
+.globalStock.wowtv .sub_search .sub_mid.outline_box .box .value_chart .line .g_action,
+.globalStock.wowtv .sub_search .sub_mid .adequate_stock .box .con .value_chart .line .g_action,
+.globalStock.wowtv .sub_search .sub_mid .adequate_stock .box .adequate_price .nodata_area .line .g_action {
+	background: #1d4a88;
+}
+.globalStock.wowtv .sub_search .sub_mid .adequate_stock .box .con .value_chart .line .g_action.g_buying,
+.globalStock.wowtv .sub_search .sub_mid .adequate_stock .box .con .value_chart .line .g_action.g_sell,
+.globalStock.wowtv .sub_search .sub_mid .adequate_stock .box .adequate_price .nodata_area .line .g_action.g_buying,
+.globalStock.wowtv .sub_search .sub_mid .adequate_stock .box .adequate_price .nodata_area .line .g_action.g_sell {
+	background-color: #549EF4;	
+}
+.globalStock.wowtv .sub_search .sub_mid .adequate_stock .box .con .value_chart .line .g_action.g_buying::after,
+.globalStock.wowtv .sub_search .sub_mid .adequate_stock .box .con .value_chart .line .g_action.g_sell::after,
+.globalStock.wowtv .sub_search .sub_mid .adequate_stock .box .adequate_price .nodata_area .line .g_action.g_buying::after,
+.globalStock.wowtv .sub_search .sub_mid .adequate_stock .box .adequate_price .nodata_area .line .g_action.g_sell::after {
+	color: #82929F;
+	background: none;
+}
+
 .globalStock.wowtv .sub_search .tabs_5 {
 	margin-top: 0;
 }
@@ -1471,9 +1492,8 @@
 .globalStock.wowtv .sub_search .search_top .attention_box li.attention strong {
 	color: #333;
 }
-.globalStock.wowtv .sub_search .sub_mid.outline_box .box .value_chart .line .situation::after {
-	/* background: url('../img/wow_situation_arow.svg') no-repeat center center; */
-	background-color: #3A9DF5;
+.globalStock.wowtv .sub_search .sub_mid.outline_box .box .value_chart .line .situation::after {	
+	background-color: #549EF4;
 } 
 
 .globalStock.wowtv .sub_search .sub_mid.outline_investCharm .summary .etc li a {
