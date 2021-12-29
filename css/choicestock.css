@@ -5782,6 +5782,8 @@ width: auto;
 	color: #939393;
 	margin-left: 5px;
 	padding: 1px 2px;
+	position: relative;
+	top: -1px;
 }
 .globalStock .sub_recom .sub_top.view .chart_area .chartData .info li.day {
 	color:#939393;
@@ -6744,7 +6746,7 @@ width: auto;
 	font-size:0.8125rem;
 	margin-top:3px;
 }
-.globalStock .sub_recom .sub_mid.eventPicks_area .ptfo_area .tabsArea .tab_container .tab_content#tab2 .tableRanking.sum_table td.num span.pp {
+.globalStock .sub_recom .sub_mid.eventPicks_area .ptfo_area .tabsArea .tab_container .tab_content#tab3 .tableRanking.sum_table td.num span.pp {
 	color:#939393;
 	font-weight:normal;
 	font-size:0.75rem;

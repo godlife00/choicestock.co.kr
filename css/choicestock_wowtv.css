@@ -3431,4 +3431,30 @@
 .globalStock.wowtv .sub_search .sub_mid .adequate_stock .box .con .value_chart .line .situation.buying::after {
 	background-color: #014b8d;	
 }
-
+.globalStock.wowtv .sub_recom .sub_mid.eventPicks_area .chart_area .chartData .event_name {
+	display: flex;	
+}
+.globalStock.wowtv .sub_recom .sub_mid.eventPicks_area .chart_area .chartData .event_name a {
+	width: auto;
+}
+.globalStock.wowtv .sub_recom .sub_mid.eventPicks_area .chart_area .chartData .event_name .port {		
+	display: inline-block;		
+	vertical-align: top;
+	margin-left: 5px;
+	border-radius: 3px;
+	border: solid 1px #E1E5EF;		
+	font-size: 9px;
+	font-weight: normal;
+	text-align: center;
+	color: #82929F;
+	box-sizing: border-box;
+	padding: 0 2px;
+	position: relative;
+	top: -1px;
+	height: 14px;
+	line-height: 14px;
+}
+.globalStock.wowtv .sub_recom .sub_top.view .chart_area .chartData .info li.port {
+	border: solid 1px #E1E5EF;			
+	color: #82929F;
+}
