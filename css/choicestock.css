@@ -5273,13 +5273,12 @@ width: auto;
     text-decoration: none;
 }
 .globalStock .sub_recom .sub_mid.eventPicks_area .recom_chartList .chartData .left .event_name.port a {	
-	width: calc(100% - 40px);
+	width: calc(100% - 24%);
 }
-.globalStock .sub_recom .sub_mid.eventPicks_area .recom_chartList .chartData .left .event_name .port {	
-	display: inline-block;
-	border-radius: 3px;
-	border: solid 1px #d3d3d3;	
+.globalStock .sub_recom .sub_mid.eventPicks_area .recom_chartList .chartData .left .event_name .port {		
 	float: right;
+	border-radius: 3px;
+	border: solid 1px #d3d3d3;		
 	font-size: 9px;
 	font-weight: normal;
 	text-align: center;
