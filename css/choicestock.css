@@ -5766,6 +5766,19 @@ width: auto;
 	font-size:0.75rem;
 	line-height:normal;
 }
+.globalStock .sub_recom .sub_top.view .chart_area .chartData .info li.sum {
+	display: inline-block;
+}
+.globalStock .sub_recom .sub_top.view .chart_area .chartData .info li.port {
+	display: inline-block;	
+	border-radius: 3px;
+	border: solid 1px #d3d3d3;
+	font-size: 9px;
+	font-weight: normal;	
+	color: #939393;
+	margin-left: 5px;
+	padding: 1px 2px;
+}
 .globalStock .sub_recom .sub_top.view .chart_area .chartData .info li.day {
 	color:#939393;
 	font-size:0.85rem;
