@@ -5245,7 +5245,9 @@ width: auto;
 .globalStock .sub_recom .sub_mid.eventPicks_area .recom_chartList .chartData .left {
 	
 }
-.globalStock .sub_recom .sub_mid.eventPicks_area .recom_chartList .chartData .left .event_name {
+.globalStock .sub_recom .sub_mid.eventPicks_area .recom_chartList .chartData .left .event_name {	
+	display: inline-block;	
+	width: 100%;	
 	color: #333;
     font-size: 0.9375rem;
     height: 17px;
@@ -5263,12 +5265,26 @@ width: auto;
     font-size: 0.9375rem;
     box-sizing: border-box;
     display: inline-block;
-    width: 100%;
+    width: 100%;	
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
     font-weight: normal;
     text-decoration: none;
+}
+.globalStock .sub_recom .sub_mid.eventPicks_area .recom_chartList .chartData .left .event_name.port a {	
+	width: calc(100% - 40px);
+}
+.globalStock .sub_recom .sub_mid.eventPicks_area .recom_chartList .chartData .left .event_name .port {	
+	display: inline-block;
+	border-radius: 3px;
+	border: solid 1px #d3d3d3;	
+	float: right;
+	font-size: 9px;
+	font-weight: normal;
+	text-align: center;
+	color: #939393;
+	padding: 1px 2px;
 }
 .globalStock .sub_recom .sub_mid.eventPicks_area .recom_chartList .chartData .left .info {
 	margin-top: 8px;
