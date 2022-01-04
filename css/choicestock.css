@@ -43,7 +43,7 @@ html {
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
 	display:block
 }
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
 	margin:0;
 	padding:0;
 	border:0;
@@ -75,13 +75,6 @@ audio:not([controls]) {
 }
 ul,ol,li {
 	list-style:none
-}
-blockquote,q {
-	quotes:'none'
-}
-blockquote:before,blockquote:after,q:before,q:after {
-	content:'';
-	content:'none'
 }
 fieldset,img {
 	border:0
@@ -16665,20 +16658,38 @@ width: auto;
 	margin:0 auto;
 	border-top:1px solid #F4F4F5;
 	border-bottom:1px solid #F4F4F5;
-}
-.globalStock .sub_research .view_con .mid img {
-	width:100% !important;
-	height:auto !important;
-	display:inline-block;
-	margin-bottom:15px;
-}
-.globalStock .sub_research .view_con .mid {
 	color:#333;
 	font-size:0.9375rem;
 	line-height:26px;
 	margin-bottom:30px;
 	word-break: break-all;
 	word-wrap: break-word;
+}
+.globalStock .sub_research .view_con .mid address,
+.globalStock .sub_research .view_con .mid caption,
+.globalStock .sub_research .view_con .mid em,
+.globalStock .sub_research .view_con .mid var {
+	font-style: italic;                
+}
+.globalStock .sub_research .view_con .mid ol {
+	list-style: decimal;
+	padding-left: 15px;
+}
+.globalStock .sub_research .view_con .mid ol li {
+	list-style: list-item;;
+}
+.globalStock .sub_research .view_con .mid blockquote:before,
+.globalStock .sub_research .view_con .mid blockquote:after,
+.globalStock .sub_research .view_con .mid q:before,
+.globalStock .sub_research .view_con .mid q:after {
+	content: '';                
+}
+
+.globalStock .sub_research .view_con .mid img {
+	width:100% !important;
+	height:auto !important;
+	display:inline-block;
+	margin-bottom:15px;
 }
 .globalStock .sub_research .view_con .mid p,
 .globalStock .sub_research .view_con .mid a {
