@@ -197,41 +197,28 @@
                             </div>
                         </div>
                     </div>
-                </a>
+                </a>                
                 <a href="" class="box">
                     <p class="title"><span>적정주가</span></p>
                     <div class="con">
                         <div class="value_chart">
-                            <div class="line">
-                                <!--
-                                    매우 저평가: buying,
-                                    적정가: propriety,                                    
-                                    매우 고평가: St_sell
-                                -->
-                                <div class="situation propriety">
+                            <div class="line">   
+                                <!-- 0 미만인 경우 클래스 under 추가 -->                                
+                                <div class="situation under" style="left: -10px;">
                                     <span>현재가</span>                                    
                                 </div>
-                                <span class="g_action" style="left: 50%;"></span>
-                            </div>
-                            <div class="adequate">
-                                <span>적정가</span>
-                                <strong>108.<b>88</b></strong>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-                <a href="" class="box">
-                    <p class="title"><span>적정주가</span></p>
-                    <div class="con">
-                        <div class="value_chart">
-                            <div class="line">
-                                <!--
-                                    매우 저평가: buying,
-                                    적정가: propriety,                                    
-                                    매우 고평가: St_sell
-                                -->
-                                <div class="situation buying">
+                                <!-- <div class="situation" style="left: 0;">
                                     <span>현재가</span>                                    
+                                </div> -->
+                                <div class="situation" style="left: 50%;">
+                                    <span>현재가</span>                                    
+                                </div>
+                                <!-- <div class="situation" style="left: 100%;">
+                                    <span>현재가</span>                                    
+                                </div> -->
+                                <!-- 100% 벗어난 경우 클래스 over 추가 -->
+                                <div class="situation over" style="right: -10px">
+                                    <span>현재가</span>
                                 </div>
                                 <span class="g_action" style="left: 50%;"></span>
                             </div>
@@ -285,9 +272,6 @@
                         </div>
                     </div>
                 </a>
-
-                
-
 
                 <div class="box">
                     <p class="title"><a href="../stock/recipe.html">투자레시피</a></p>

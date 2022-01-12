@@ -181,15 +181,29 @@
 
                             <div class="value_chart">
                                 <div class="line">
-                                    <!--
-                                        매우 저평가: buying,
-                                        적정가: propriety,                                    
-                                        매우 고평가: St_sell
-                                    -->
-                                    <div class="situation buying">
+                                    <!-- 0 미만인 경우 클래스 under 추가 -->
+                                    <div class="situation under" style="left: -10px;">
+                                        <span>현재가</span>
+                                        <span class="sync_price">-823.<b>00</b></span>
+                                    </div>
+                                    <!-- <div class="situation" style="left: 0%;">
+                                        <span>현재가</span>
+                                        <span class="sync_price">23.<b>00</b></span>
+                                    </div> -->
+                                    <div class="situation" style="left: 50%;">
+                                        <span>현재가</span>
+                                        <span class="sync_price">823,823.<b>00</b></span>
+                                    </div>
+                                    <!-- <div class="situation" style="left: 100%;">
+                                        <span>현재가</span>
+                                        <span class="sync_price">23.<b>00</b></span>
+                                    </div> -->
+                                    <!-- 100% 벗어난 경우 클래스 over 추가 -->
+                                    <div class="situation over" style="right: -10px">
                                         <span>현재가</span>
                                         <span class="sync_price">23.<b>00</b></span>
                                     </div>
+
                                     <span class="g_action g_buying"></span><!-- 매우저평가 -->
                                     <span class="g_action" style="left: 50%;"></span><!-- 적정가 -->
                                     <span class="g_action g_sell"></span><!-- 매우고평가 -->
@@ -303,7 +317,7 @@
                 <!-- //adequate_stock -->
 
                 <div class="bandchart_more">
-                    <p><i></i>‘적정주가 밴드차트’는 적정주가 추세를 시계열로 제공하여, 매매전략을 세우는데 도움을 드리는 서비스입니다.</p>
+                    <p><i></i>‘AI적정주가 밴드차트’는 적정주가 추세를 시계열로 제공하여, 매매전략을 세우는데 도움을 드리는 서비스입니다.</p>
                     <a href="#more" class="more">자세히</a>
                 </div>
                 <!-- //bandchart_more -->
@@ -390,11 +404,11 @@
                 <!-- //eventsum_area -->
 
                 <div class="bandchart_sume" id="more">
-                    <p class="txt"><i></i>‘적정주가 밴드차트’는 적정주가 추세를 시계열로 제공하여, 매매전략을 세우는데 도움을 드리는 서비스입니다. </p>
+                    <p class="txt"><i></i>‘AI적정주가 밴드차트’는 적정주가 추세를 시계열로 제공하여, 매매전략을 세우는데 도움을 드리는 서비스입니다. </p>
                     <p class="txt">‘적정주가(intrinsic value)’란 기업의 미래 창출 이익 또는 현금 흐름을 현재 기준으로 평가한 가격입니다.</p>
 
                     <div class="box">
-                        <p class="title">초이스스탁US의 적정주가 밴드차트는</p>
+                        <p class="title">초이스스탁US의 AI적정주가 밴드차트는</p>
                         <ul>
                             <li><i>1.</i>초보자도 알기 쉽게 주가의 매수/보유/매도 상태를 명확히 표시합니다.</li>
                             <li><i>2.</i>어느 지점이 저평가/고평가 영역인지 알기 쉽게 표시합니다.</li>

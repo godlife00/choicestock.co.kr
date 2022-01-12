@@ -6654,8 +6654,7 @@ width: auto;
 .globalStock .sub_recom .sub_mid.eventPicks_area .ptfo_area .tabsArea .tab_container .tab_content .tableRanking.sum_table tr {
 	border-bottom:1px solid #E0E4E9;
 }
-.globalStock .sub_recom .sub_mid.eventPicks_area .ptfo_area .tabsArea .tab_container .tab_content .tableRanking.sum_table tr.hide_line {
-	/* background-color: red; */
+.globalStock .sub_recom .sub_mid.eventPicks_area .ptfo_area .tabsArea .tab_container .tab_content .tableRanking.sum_table tr.hide_line {	
 	display: none;
 }
 .globalStock .sub_recom .sub_mid.eventPicks_area .ptfo_area .tabsArea .tab_container .tab_content .tableRanking.sum_table th,
@@ -10175,8 +10174,7 @@ width: auto;
 	padding-right:15px;
 }
 .globalStock .sub_search .latest_results .tabsArea .onestep_chart .labels_y,
-.globalStock .sub_search .latest_results .tabsArea .onestep_chart .labels_x {
-	background:yellow;
+.globalStock .sub_search .latest_results .tabsArea .onestep_chart .labels_x {	
 	width:100%;
 }
 .globalStock .sub_search .latest_results .tabsArea .onestep_chart .labels_x span {
@@ -26138,7 +26136,7 @@ width: auto;
 	padding: 0;
 	overflow: initial;
 }
-.globalStock .sub_search .sub_mid.outline_box .box .value_chart .no_data {
+.globalStock .sub_search .sub_mid.outline_box .box .value_chart .no_data {	
 	padding: 6px 14px;
 	border-radius: 2px;
 	background-color: #e6e7f4;
@@ -26181,11 +26179,28 @@ width: auto;
 }
 .globalStock .sub_search .sub_mid.outline_box .box .value_chart .line {
 	position: relative;
-	width: 100%;
+	width: calc(100% - 20px);	
+	box-sizing: border-box;
 	height: 2px;  
 	border-radius: 20px;
 	background-color: #e6e7f4;
-	margin-top: 35px;
+	margin: 35px auto 0;
+}
+/* .globalStock .sub_search .sub_mid.outline_box .box .value_chart .line::before,
+.globalStock .sub_search .sub_mid.outline_box .box .value_chart .line::after {
+	content: '';
+	display: inline-block;
+	position: absolute;
+	left: -15px;
+	bottom: 0;
+	width: 15px;
+	height: 2px;  
+	border-radius: 20px;
+	background-color: #e6e7f4;
+} */
+.globalStock .sub_search .sub_mid.outline_box .box .value_chart .line::after {
+	left: auto;
+	right: -15px;
 }
 .globalStock .sub_search .sub_mid.outline_box .box .value_chart .line .g_action {
 	position:absolute;
@@ -26252,31 +26267,54 @@ width: auto;
 	position: absolute;
 	left: 0;
 	top: -30px;
-	width: 56px;  
+	width: 56px;  	
 	text-align: center;  
 	padding-bottom: 10px;
+	margin-left: calc(-54px / 2);
 }
 @media (min-width:320px) and (max-width:374px) {
   .globalStock .sub_search .sub_mid.outline_box .box .value_chart .line .situation {
-	padding-bottom: 5px;
+	padding-bottom: 12px;
+	width: 42px;  	
+	margin-left: calc(-41px / 2);	
   }
 }
 .globalStock .sub_search .sub_mid.outline_box .box .value_chart .line .situation::after {
 	content:"";
 	top: 100%;
 	left: 50%;
-	margin-left: -10px;
-	border: solid transparent;
+	margin-left: -4px;
+	/* border: solid transparent; */
 	content: " ";  
 	position: absolute;
 	pointer-events: none;  
-	width: 4px;
-	height: 4px;
+	width: 10px;
+	height: 10px;
 	/* background: url('../img/situation_arow.svg') no-repeat center center; */
 	border-radius: 50%;
 	background-color: #404fc3;
 	z-index: 90;
 }
+/* 0 미만인 경우 */
+.globalStock .sub_search .sub_mid.outline_box .box .value_chart .line .situation.under {
+	margin-left: calc(-24px / 2);
+	width: auto;	
+}
+.globalStock .sub_search .sub_mid.outline_box .box .value_chart .line .situation.under::after {
+	left: calc(50% - 10px);
+}
+/* 100% 초과인 경우 */
+.globalStock .sub_search .sub_mid.outline_box .box .value_chart .line .situation.over {
+	left: auto;
+	right: auto;
+	margin-left: auto;
+	margin-right: calc(-18px / 2);	
+	width: auto;	
+}
+.globalStock .sub_search .sub_mid.outline_box .box .value_chart .line .situation.over::after {
+	left: calc(50% + 10px);
+}
+
 /* 적극매수 */
 .globalStock .sub_search .sub_mid.outline_box .box .value_chart .line .situation.St_buying {  
 	left: 0;
@@ -26319,10 +26357,11 @@ width: auto;
 	top: calc(100% - 2px);
 }
 .globalStock .sub_search .sub_mid.outline_box .box .value_chart .line .situation span {  
+	position: relative;
 	font-size: 0.875rem;
 	font-weight: bold;	
 	line-height: 0.93;	
-	color: #404fc3;
+	color: #404fc3;	
 }
 .globalStock .sub_search .sub_mid.outline_box .box .event_attractiveness {
 	width:100%;
@@ -26610,17 +26649,34 @@ width: auto;
 
 .globalStock .sub_search .sub_mid .adequate_stock .box .con .value_chart .line {
 	position: relative;
-	width: 100%;
+	width: calc(100% - 46px);
+	margin: 70px auto 0;
 	height: 2px;  
 	border-radius: 20px;
-	background-color: #e6e7f4;
-	margin-top: 70px;
+	background-color: #e6e7f4;	
+}
+.globalStock .sub_search .sub_mid .adequate_stock .box .con .value_chart .line::before,
+.globalStock .sub_search .sub_mid .adequate_stock .box .con .value_chart .line::after {
+	content: '';
+	display: inline-block;
+	position: absolute;
+	left: -14px;
+	bottom: 0;
+	width: 14px;
+	height: 2px;  
+	border-radius: 20px;
+	background-color: #e6e7f4;		
+}
+.globalStock .sub_search .sub_mid .adequate_stock .box .con .value_chart .line::after {
+	left: auto;
+	right: -14px;		
 }
 .globalStock .sub_search .sub_mid .adequate_stock .box .con .value_chart .line .g_action {
 	position:absolute;
 	left:0;
 	top:-6px;
-	margin-left:-5px;
+	/* margin-left:-5px; */
+	transform:translateX(-50%);
 	z-index:2;
 	display:inline-block;
 	background:#404FC3;
@@ -26644,11 +26700,12 @@ width: auto;
 /* 매우저평가 */
 .globalStock .sub_search .sub_mid .adequate_stock .box .con .value_chart .line .g_action.g_buying {
 	top: -3px;
-	left: 4%;
+	left: 0;
 	right: auto;
 	width: 8px;
     height: 8px;
 	background-color: #aaaee8;	
+	margin-left: -2px;
 }
 .globalStock .sub_search .sub_mid .adequate_stock .box .con .value_chart .line .g_action.g_buying::after {	
 	content:"매우저평가";
@@ -26669,11 +26726,12 @@ width: auto;
 /* 매우고평가 */
 .globalStock .sub_search .sub_mid .adequate_stock .box .con .value_chart .line .g_action.g_sell {
 	top: -3px;		
-	left: auto;
-	right: 4%;	
+	left: auto;	
+	right: -3px;	
 	width: 8px;
     height: 8px;
 	background-color: #aaaee8;	
+	margin-right: -5px;
 }
 .globalStock .sub_search .sub_mid .adequate_stock .box .con .value_chart .line .g_action.g_sell::after {	
 	content:"매우고평가";
@@ -26713,7 +26771,8 @@ width: auto;
 	position: absolute;
 	left: 50%;
 	top: -14px;
-	margin-left: 2px;
+	margin-left: 1px;
+	transform:translateX(-50%);
 	pointer-events: none;  
 	width: 1px;
 	height: 15px;	
@@ -26746,31 +26805,37 @@ width: auto;
 	position: absolute;
 	left: 0;
 	top: -60px;	
+	/* margin-left: -34px; */
+	transform:translateX(-50%);
 	min-width: 56px;
 	text-align: center;  
 	padding: 1px 8px 7px;
 	border-radius: 3px;
   	background-color: #404fc3;
+	z-index: 10;
 }
 @media (min-width:320px) and (max-width:374px) {
-  .globalStock .sub_search .sub_mid .adequate_stock .box .con .value_chart .line .situation {
-	padding-bottom: 5px;
-  }
+  
 }
 .globalStock .sub_search .sub_mid .adequate_stock .box .con .value_chart .line .situation::after {
 	content:"";
+	display: inline-block;
 	top: 56px;
 	left: 50%;
-	margin-left: -10px;
-	border: solid transparent;
+	transform:translateX(-50%);
+	/* margin-left: -5px; */
+	/* border: solid transparent; */
 	content: " ";  
 	position: absolute;
-	pointer-events: none;  
-	width: 4px;
-	height: 4px;
-	border-radius: 50%;
+	pointer-events: none;  	
 	background-color: #404fc3;
 	z-index: 90;
+		
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    font-size: 0;
+	
 }
 .globalStock .sub_search .sub_mid .adequate_stock .box .con .value_chart .line .situation::before {
 	content:"";			
@@ -26782,6 +26847,36 @@ width: auto;
 	height: 20px;	
 	background-color: #404fc3;
 	z-index: 90;
+}
+@media (min-width:320px) and (max-width:374px) {
+	.globalStock .sub_search .sub_mid .adequate_stock .box .con .value_chart .line .situation::before {		
+		top: 36px;		
+	}
+}
+/* 0 미만인 경우 */
+.globalStock .sub_search .sub_mid .adequate_stock .box .con .value_chart .line .situation.under {
+	left: auto;
+	right: auto;	
+	margin-left: 12px;			
+}
+.globalStock .sub_search .sub_mid .adequate_stock .box .con .value_chart .line .situation.under:before {
+	left: calc(50% - 20px);	
+}
+.globalStock .sub_search .sub_mid .adequate_stock .box .con .value_chart .line .situation.under::after {
+	left: calc(50% - 20px)
+}
+/* 100% 초과인 경우 */
+.globalStock .sub_search .sub_mid .adequate_stock .box .con .value_chart .line .situation.over {
+	left: auto;
+	right: auto;	
+	margin-left: auto;
+	margin-right: -64px;
+}
+.globalStock .sub_search .sub_mid .adequate_stock .box .con .value_chart .line .situation.over:before {
+	left: calc(50% + 20px);	
+}
+.globalStock .sub_search .sub_mid .adequate_stock .box .con .value_chart .line .situation.over::after {
+	left: calc(50% + 20px)
 }
 /* 적극매수 */
 .globalStock .sub_search .sub_mid .adequate_stock .box .con .value_chart .line .situation.St_buying {  
@@ -26937,7 +27032,6 @@ width: auto;
 	margin-top: 20px;	
 }
 .globalStock .sub_search .sub_mid .adequate_stock .box .adequate_price .nodata_area .line .g_action {
-	background-color: red;
 	position:absolute;
 	left:0;
 	top:-6px;
@@ -27064,8 +27158,7 @@ width: auto;
 	text-align: center;
 	margin-top: 10px;
 }
-.globalStock .sub_search .sub_mid .adequate_stock .box .adequate_price .adequate strong span {	
-	color: red;
+.globalStock .sub_search .sub_mid .adequate_stock .box .adequate_price .adequate strong span {		
 	display: block;
 	color: #333;
 	font-size: 0.6rem;
@@ -27955,3 +28048,23 @@ width: auto;
 .layerPopup .layerBox .c_btn a:first-child {
 	border-right: 1px solid #E0E5F0;
 }
+@media (min-width:320px) and (max-width:374px) {	
+	.globalStock .sub_search .sub_mid .adequate_stock .box .con .value_chart .line .situation {
+		padding-bottom: 5px;
+		/* margin-left: -27px; */
+		min-width: 42px;
+	  }	  
+	
+	.globalStock .sub_search .sub_mid.outline_box .box .value_chart .line .situation.under {
+	  margin-left: calc(-13px / 2);
+	}
+	.globalStock .sub_search .sub_mid.outline_box .box .value_chart .line .situation.over {
+	  margin-right: calc(-13px / 2);
+	}
+	.globalStock .sub_search .sub_mid .adequate_stock .box .con .value_chart .line .situation.under {
+		margin-left: 7px
+	}
+	.globalStock .sub_search .sub_mid .adequate_stock .box .con .value_chart .line .situation.over {
+		margin-right: -56px;		
+	}
+  }
