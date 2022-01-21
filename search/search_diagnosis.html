@@ -45,6 +45,7 @@
 <!-- 제휴사이트 민트 칼라 적용 class = mint  -->
 
 <body class="globalStock">
+
     <div id="wrap">
         <!-- 하단 GNB -->
         <div class="gnb">
@@ -166,7 +167,7 @@
                 <div class="chart_area diagnosis">
                     <div class="chartData">
                         <dl>
-                            <dt class="charm">투자매력
+                            <dt class="charm">종목진단
                                 <span class="txt_guide"><img src="../img/txt_guide.svg" alt="가이드보기"></span>
                                 <div class="guide_box">
                                     <span class="clse">닫기</span>                          
@@ -814,6 +815,50 @@
                 <!-- //foot_info -->
             </div>
             <!-- //notice -->
+
+            <!-- 신규서비스 2주 안내 팝업 -->
+            <div class="free_2weeks valueChart open" id="layer_pop">
+                <!-- 보여줘야 하는 경우 class open -->
+                <div class="bg_gray"></div>
+                <div class="box">        
+                    <div class="content">                
+                        <div class="info_txt">
+                            <p class="txt01"><strong>AI적정주가 차트</strong>가 개선되었습니다.</p>
+                            <br>
+                            <p class="txt02">종목의 적정주가와 매매타이밍을 보다 쉽게 확인할 수 있습니다.</p>
+                        </div>                                
+                        <div class="info_tip">
+                            <p class="tip">TIP.</p>
+                            <p class="tip">‘진단점수’로 우량주를 확인하고, ‘AI적정주가’로 매매타이밍을 잡아보세요~</p>
+                        </div>
+                    </div>
+                    
+                    <div class="ftr">
+                        <label for="pop_today" class="btn_day">
+                        <input type="checkbox" name="pop_today" id="pop_today"/> 오늘 하루 열지 않기</label>
+                        <a href="javascript:closeWin();" class="btn_close">닫기</a>
+                    </div>        
+                </div>        
+            </div>
+            <!-- 오늘 하루 열지 않기 -->
+            <script language="Javascript" type="text/javascript">
+                cookiedata = document.cookie;
+                if (cookiedata.indexOf("2weekspop=done") < 0) {
+                    document.getElementById('layer_pop').style.display = "inline";
+                } else {
+                    document.getElementById('layer_pop').style.display = "none";
+                }    
+                function setCookie(name, value, expirehours) {
+                    var todayDate = new Date();
+                    todayDate.setHours(todayDate.getHours() + expirehours);
+                    document.cookie = name + "=" + escape(value) + "; path=/; expires=" + todayDate.toGMTString() + ";"
+                }
+                $('#pop_today').on('click', function() {            
+                    setCookie("2weekspop", "done", 24);            
+                    document.getElementById('layer_pop').style.display = "none";
+                });
+            </script>
+
         </div>
         <!-- //footer -->
     </div>

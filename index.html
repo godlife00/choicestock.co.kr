@@ -53,7 +53,7 @@
 <body class="globalStock">
     
     <!-- 정식 오픈 이후 버전 -->
-    <div class="free_2weeks" id="layer_pop">
+    <div class="free_2weeks" id="layer_pop" style="display: none;">
         <!-- 보여줘야 하는 경우 class open -->
         <div class="bg_gray"></div>
         <div class="box">        
@@ -75,9 +75,9 @@
         </div>        
     </div>
     <!-- 오늘 하루 열지 않기 -->
-    <script language="Javascript" type="text/javascript">
+    <!-- <script language="Javascript" type="text/javascript">
         cookiedata = document.cookie;
-        if (cookiedata.indexOf("ncookie=done") < 0) {
+        if (cookiedata.indexOf("mainpop=done") < 0) {
             document.getElementById('layer_pop').style.display = "inline";
         } else {
             document.getElementById('layer_pop').style.display = "none";
@@ -88,10 +88,10 @@
             document.cookie = name + "=" + escape(value) + "; path=/; expires=" + todayDate.toGMTString() + ";"
         }
         $('#pop_today').on('click', function() {            
-            setCookie("ncookie", "done", 24);            
+            setCookie("mainpop", "done", 24);            
             document.getElementById('layer_pop').style.display = "none";
         });
-    </script>    
+    </script>     -->
 
     <!-- <div class="top_banner event" id="layer_pop">
         <a href="https://www.choicestock.co.kr/stock/research_view/846"><img src="img/banner/wowtv_open.png" alt="미국주식창 전격 오픈" style="display: inline-block; width: 100%;"></a>        
@@ -1492,8 +1492,8 @@
                     </div>
                     <!-- //info_tel_box -->
                     <p class="copyright"><a href="https://www.datahero.co.kr" target="_blank">ⓒ (주)데이터히어로</a><i></i>
-                        <strong>대표자</strong> 김인중 <br>
-                        서울특별시 서초구 강남대로 311 <i></i> 사업자등록번호 291-88-01393 <i></i> <strong>대표번호 <a
+                        <strong>대표이사</strong> 김인중 <br>
+                        서울특별시 서초구 강남대로 311 <i></i> 사업자등록번호 291-88-01393 <i></i> <strong>대표전화 <a
                                 href="tel:02-6225-2300"><strong>02-6225-2300</strong></a></strong>
                     </p>
 

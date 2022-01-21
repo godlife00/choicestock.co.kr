@@ -10869,7 +10869,7 @@ width: auto;
 	position:absolute;
 	top:23px;
 	right:0;
-	z-index:999;
+	z-index:998;
 }
 .globalStock .sub_search .search_top .go_page.only {
 	padding-right:26px;
@@ -10922,6 +10922,7 @@ width: auto;
 	border-radius:7px;
 	padding:4px 8px 5px;
 }
+
 .globalStock .sub_search .search_top .data_area.fix_data {
 	padding:12px 17px;
 	margin:0;
@@ -10932,7 +10933,7 @@ width: auto;
 	right:0;
 	top:0;
 	box-sizing:border-box;
-	z-index:9999;
+	z-index:998;
 	box-shadow:0 5px 10px 0 rgba(0,0,0,0.08);
 	background-color:#404fc3;
 }
@@ -27893,6 +27894,8 @@ width: auto;
 	font-size: 12px;
 	font-weight: 300;
 }
+
+/* 신규서비스 2주 안내 팝업 기본 / 메인 */
 .free_2weeks {
 	
 }
@@ -27938,7 +27941,6 @@ width: auto;
 .free_2weeks.open .box {	
 	opacity: 1;	
 }
-
 .free_2weeks .content { 	
 	padding: 0 25px;		
 	box-sizing: border-box;
@@ -27950,7 +27952,7 @@ width: auto;
 }
 .free_2weeks .content .info_txt .txt01 {
 	display: inline-block;
-	width: 230px;
+	width: 60%;	
 	font-size: 17px;
 	font-weight: bold;	
 	line-height: 1.24;	
@@ -27973,6 +27975,12 @@ width: auto;
 .free_2weeks .content .info_txt .txt02 span {
 	color: #000;		
 	text-decoration: underline;
+}
+.free_2weeks .content .info_tip .tip {
+	font-size: 13px;
+	line-height: 1.24;	
+	margin-top: 3px;
+    color: #939393;
 }
 .free_2weeks .content .btn_area {
 	
@@ -28007,6 +28015,7 @@ width: auto;
 	background-color: #f4f4f5;		
 }
 .free_2weeks .ftr .btn_day {
+	cursor: pointer;
 	padding-left: 5px;
 	font-size: 13px;	
 	color: #939393;
@@ -28017,13 +28026,22 @@ width: auto;
 	top: -1px;
 	left: -3px;
 }
-
 .free_2weeks .ftr .btn_close {
 	font-size: 13px;	
 	text-align: right;
 	color: #939393;
 }
-
+/* 신규서비스 2주 안내 팝업 AI적정주가 차트 개선 */
+.free_2weeks.valueChart {
+	display: none;
+}
+.free_2weeks.valueChart .content .info_txt .txt01 {
+	color: #000;
+}
+.free_2weeks.valueChart .content .info_txt {
+	background: url('../img/banner/bg_2w_valueChart.png') no-repeat right 36px;	
+	background-size: 109px auto;
+}
 
 
 /* 오늘하루 열지 않음 */

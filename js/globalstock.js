@@ -22,7 +22,7 @@ $(document).ready(function () {
     var setterms_02 = $('.pay_terms_02');
     var setterms_03 = $('.pay_terms_03');
 
-	// Show Hide
+    // Show Hide
     $('.clse_trigger').click(function () {
         setWindow.addClass('open');
         $('html, body').css("overflow", "hidden");
@@ -84,7 +84,7 @@ $(document).ready(function () {
         $('html, body').css("overflow", "hidden");
     });
 
-	$('#setting .close').click(function () {
+    $('#setting .close').click(function () {
         setWindow.removeClass('open');
         $('html, body').css("overflow", "scroll");
     });
@@ -106,52 +106,53 @@ $(document).ready(function () {
         $('html, body').css("overflow", "scroll");
         return false;
     });
-    
+
     //검색 상단 고정 종목명,
-    var search_height = $('.globalStock .sub_search .search_top').height();        
-    var recom_height = $('.globalStock .sub_recom .search_top').height();        
+    var search_height = $('.globalStock .sub_search .search_top').height();
+    var recom_height = $('.globalStock .sub_recom .search_top').height();
     var chartarea_height = $('.globalStock .sub_recom .sub_top.view .chart_area .chartData').height();
-    $(window).scroll(function () {                        
-        
-        if ($(this).scrollTop() > 210) {                        
+    $(window).scroll(function () {
+
+        if ($(this).scrollTop() > 210) {
             $('.globalStock .sub_search .search_top .data_area').addClass('fix_data');
-            $('.globalStock .sub_search .search_top').css('height', search_height);                           
+            $('.globalStock .sub_search .search_top').css('height', search_height);
         } else {
             $('.globalStock .sub_search .search_top .data_area').removeClass('fix_data');
-            $('.globalStock .sub_search .search_top').css('height', 'auto');            
+            $('.globalStock .sub_search .search_top').css('height', 'auto');
         };
 
         if ($(this).scrollTop() > 210) {
             $('.globalStock .sub_recom .sub_top.view .chart_area .chartData').addClass('fix_data');
             $('.globalStock .sub_recom .search_top').css('height', recom_height);
             $('.globalStock .sub_recom .sub_top.view .chart_area .chartData').css({
-                'padding-top' : '58px'
+                'padding-top': '58px'
             });
         } else {
             $('.globalStock .sub_recom .sub_top.view .chart_area .chartData').removeClass('fix_data');
             $('.globalStock .sub_recom .search_top').css('height', 'auto');
-            $('.globalStock .sub_recom .sub_top.view .chart_area .chartData').css({                
-                'padding-top' : '30px'
+            $('.globalStock .sub_recom .sub_top.view .chart_area .chartData').css({
+                'padding-top': '30px'
             });
         }
     });
     // 미국주식창 검색바 하단 이벤트 배너 있는 경우 처리
-    if ($('.search_top .event_banner').length) {        
-        $(window).scroll(function () {          
-            if ($(this).scrollTop() > 210) {                                        
-                $('.globalStock .sub_search .search_top').css('height', 'auto');                      
-            }    
-            if ($(this).scrollTop() > 210) {                
-                $('.globalStock .sub_recom .search_top').css('height', 'auto');                           }
+    if ($('.search_top .event_banner').length) {
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 210) {
+                $('.globalStock .sub_search .search_top').css('height', 'auto');
+            }
+            if ($(this).scrollTop() > 210) {
+                $('.globalStock .sub_recom .search_top').css('height', 'auto');
+            }
         });
     }
 
     // 검색결과 박스 위치 조정
     if ($('.arrow_box').length) {
-        var arrowLEft = $(".arrow_box.btm").offset();    
-        if (arrowLEft.left < 100) {        
+        var arrowLEft = $(".arrow_box.btm").offset();
+        if (arrowLEft.left < 100) {
             $(".arrow_box.btm").addClass('left_22');
-        } else if (arrowLEft.left > 600 ) {
+        } else if (arrowLEft.left > 600) {
             $(".arrow_box.btm").addClass('left_65');
         }
     }
@@ -192,7 +193,7 @@ $(document).ready(function () {
         });
         $("#sortable").disableSelection();
     });
-    
+
     //푸터 하단 고정 search_top searching
     var winHeight = $(window).height();
     var footerHeight = $('#footer').height() - 66;
@@ -210,7 +211,7 @@ $(document).ready(function () {
     }
 
     // #footer padding-bottom 계산
-    if (!$('.globalStock .gnb').length) {        
+    if (!$('.globalStock .gnb').length) {
         $('#footer').css('padding-bottom', '0');
     }
     if ($('.sub_payment .fix_btn').length) {
@@ -285,47 +286,47 @@ $(document).ready(function () {
 
     // 뉴스탭 링크시 해시태그 #news_list
     if (window.location.hash == '#news_list') {
-        $("ul.tabs li").removeClass("active");        
-        $("ul.tabs li:nth-child(2)").addClass("active");        
+        $("ul.tabs li").removeClass("active");
+        $("ul.tabs li:nth-child(2)").addClass("active");
         $(".tabsArea .tab_content").hide();
         $(".tabsArea #tab2").show();
     }
 
     $("ul.tabs li").click(function () {
         $(".sub_mid.eventPicks_area .ptfo_area.ptfo_tabview").removeClass('ptfo_tabview');
-        if ($('.recom_tabs li.ptfo').hasClass("active")) {            
+        if ($('.recom_tabs li.ptfo').hasClass("active")) {
             // $('.globalStock .sub_mid .btn_more, .globalStock .main_btm.banner_area .notice').hide();
-            $('.globalStock .main_btm').css('margin-top','0')
-        } else {            
+            $('.globalStock .main_btm').css('margin-top', '0')
+        } else {
             // $('.globalStock .sub_mid .btn_more, .globalStock .main_btm.banner_area .notice').show();
-            $('.globalStock .main_btm').css('margin-top','20px')
-        }        
+            $('.globalStock .main_btm').css('margin-top', '20px')
+        }
     });
     //포트폴리오 제외종목 마이나스 보여주기    
-    $('.globalStock .sub_mid .btn_more.show_table').on('click', function () {     
-        if ($(this).hasClass("show")) {            
+    $('.globalStock .sub_mid .btn_more.show_table').on('click', function () {
+        if ($(this).hasClass("show")) {
             $('.globalStock .sub_recom .sub_mid.eventPicks_area .ptfo_area .tabsArea .tab_container .tab_content .tableRanking.sum_table tr.hide_line').show();
             $(this).removeClass('show').addClass('hide');
-            $('.globalStock .sub_mid .btn_more.show_table span').text("숨기기");            
+            $('.globalStock .sub_mid .btn_more.show_table span').text("숨기기");
 
-        } else {                        
+        } else {
             $('html, body').animate({
-                scrollTop : 300
-            }, 300);            
+                scrollTop: 300
+            }, 300);
 
             $('.globalStock .sub_recom .sub_mid.eventPicks_area .ptfo_area .tabsArea .tab_container .tab_content .tableRanking.sum_table tr.hide_line').slideUp();
             $(this).removeClass('hide').addClass('show');
             $('.globalStock .sub_mid .btn_more.show_table span').text("더보기");
 
-        }        
-    });  
+        }
+    });
 
-    
+
 
     // 종목추천 - 포트폴리오 탭 노출
-    if ($('.globalStock .sub_recom .sub_mid.eventPicks_area .ptfo_area').hasClass('ptfo_tabview') == 1) {        
+    if ($('.globalStock .sub_recom .sub_mid.eventPicks_area .ptfo_area').hasClass('ptfo_tabview') == 1) {
         $('.globalStock .main_btm.banner_area .notice').hide();
-        $('.globalStock .main_btm').css('margin-top','0')
+        $('.globalStock .main_btm').css('margin-top', '0')
     } else {
         $('.globalStock .main_btm.banner_area .notice').show();
         // $('.globalStock .main_btm').css('margin-top','20px')
@@ -367,7 +368,7 @@ $(document).ready(function () {
     $('.globalStock .sub_search .sub_mid.tabs_area .evaluation_data .txt_guide').on("click", function () {
         $('.guide_layer').css({ 'z-index': 9997 });
         $('.globalStock .sub_search .sub_mid.tabs_area .evaluation_data .guide_box').show();
-    });    
+    });
     $('.globalStock .sub_search .sub_mid.outline_box .box .attention_box .txt_guide').on("click", function () {
         $('.guide_layer').css({ 'z-index': 9997 });
         $('.globalStock .sub_search .sub_mid.outline_box .box .attention_box .guide_box').show();
@@ -397,7 +398,7 @@ $(document).ready(function () {
     $('.globalStock .guide_box .clse').on("click", function () {
         $('.guide_layer').css({ 'z-index': -1 });
         $('.globalStock .sub_search .sub_mid.outline_box .box .guide_box').hide();
-    });   
+    });
     //승부주 툴팁
     $('.globalStock .sub_game .gamePicks_area .game_list .list .game_data li.th .txt_guide').on("click", function () {
         console.log("test");
@@ -472,10 +473,10 @@ $(document).ready(function () {
             $(this).children('div').animate({
                 height: '100%'
             }, 300);
-            $(this).removeClass('small').addClass('big');            
+            $(this).removeClass('small').addClass('big');
         }
     });
-    
+
 
     $(".globalStock .sub_search .sub_mid.outline_investCharm .summary").after().on("click", function () {
         // div 사이즈는 big, small        
@@ -531,7 +532,7 @@ $(document).ready(function () {
         $(this).parent().children(".chart_star").show();
         $(this).parent().children(".chart_star").css('height', '179').animate({
             'height': 179,
-        }, 'fast', function () {            
+        }, 'fast', function () {
             $(this).parent().children().children(".more").show();
         });
     });
@@ -550,7 +551,7 @@ $(document).ready(function () {
         slidesPerView: 2,
         slidesPerGroup: 2,
         loopAdditionalSlides: 1,
-        spaceBetween: 10,        
+        spaceBetween: 10,
     });
     var swiper = new Swiper('.event_anaySwiper', {
         slidesPerView: 1.4,
@@ -583,15 +584,15 @@ $(document).ready(function () {
     //메인 하단 레시피
     var swiper = new Swiper('.mainrecipeSwiper', {
         slidesPerView: "auto",
-        spaceBetween: 10,                
+        spaceBetween: 10,
     });
     //미국주식창 메인 이벤트 배너 3개 롤링
-    var swiper = new Swiper('.event_bannerSwiper', {                
+    var swiper = new Swiper('.event_bannerSwiper', {
         autoplay: {
             delay: 3500,
             disableOnInteraction: false,
-        },        
-        spaceBetween: 30,        
+        },
+        spaceBetween: 30,
         loop: true,
     });
 
@@ -622,13 +623,13 @@ $(document).ready(function () {
         },
     });
     //서브 발굴 - 뉴스
-    var swiper = new Swiper('.newsSwiper', {                
+    var swiper = new Swiper('.newsSwiper', {
         autoplay: {
             delay: 3500,
             disableOnInteraction: false,
         },
         loop: true,
-        spaceBetween: 10,        
+        spaceBetween: 10,
     });
     //서비스소개
     var swiper = new Swiper('.swiper_service', {
@@ -675,7 +676,7 @@ $(document).ready(function () {
     $('.globalStock .main_mid.event_recipe .recipe_list li').on("click", function () {
         $('.globalStock .main_mid.event_recipe .recipe_list li').removeClass("active");
         $(this).addClass("active");
-    });    
+    });
     //결제
     $('.globalStock .sub_payment .serviceStep .step_box').on("click", function () {
         $('.globalStock .sub_payment .serviceStep .step_box').removeClass("active");
@@ -738,15 +739,15 @@ $(document).ready(function () {
         $(this).toggleClass("active");
     });
     //tabs
-    $('.tab_area .tbas_lb li a').on("click", function () {        
-        if(text.indexOf("_blank") != -1) {
-            console.log("있음");            
+    $('.tab_area .tbas_lb li a').on("click", function () {
+        if (text.indexOf("_blank") != -1) {
+            console.log("있음");
         } else {
             console.log("없음");
             $('.tab_area .tbas_lb li a').removeClass("active");
             $(this).addClass("active");
         }
-        
+
     });
     //전종목 투자매력도 Popup
     $('.globalStock .setting_pop .sort li').on("click", function () {
@@ -841,10 +842,10 @@ $(document).ready(function () {
         }
     });
 
-    $('.attract_sub .btn_schSet').on("click", function () {        
-        $('html, body').css("overflow", "hidden");        
+    $('.attract_sub .btn_schSet').on("click", function () {
+        $('html, body').css("overflow", "hidden");
     });
-    $('.pop_header .close, .md-overlay').on("click", function () {        
+    $('.pop_header .close, .md-overlay').on("click", function () {
         $('.globalStock .md-modal').removeClass('md-show');
         $('html, body').css("overflow", "scroll");
     });
@@ -858,8 +859,8 @@ $(document).ready(function () {
 
     // 스크롤시 tab_scr bg 숨김
     var windowWidth = $('html, body').width();
-    $('.globalStock .main_mid.event_recipe .tabsArea .tab_scr').css('width',windowWidth);
-    $('.globalStock .main_mid.event_recipe .tabsArea > span').addClass('change');        
+    $('.globalStock .main_mid.event_recipe .tabsArea .tab_scr').css('width', windowWidth);
+    $('.globalStock .main_mid.event_recipe .tabsArea > span').addClass('change');
 
     $('.tabsArea .tab_scr').on("touchmove", function (e) {
         $('.globalStock .main_mid.event_recipe .tabsArea > span').hide();
@@ -936,47 +937,47 @@ $(document).ready(function () {
 
     })(window);
 
-	var ModalEffects = (function () {
+    var ModalEffects = (function () {
         function init() {
             var overlay = document.querySelector('.md-overlay');
             [].slice.call(document.querySelectorAll('.md-trigger')).forEach(function (el, i) {
                 var modal = document.querySelector('#' + el.getAttribute('data-modal'));
                 el.addEventListener('click', function (ev) {
-                    classie.add(modal, 'md-show');                    
+                    classie.add(modal, 'md-show');
                 });
             });
         }
         init();
     })();
 
-	if ($('#modal-3').length) {
-        $('.globalStock .sub_research .sub_mid.research_board .lst_type, .globalStock .sub_mid .tab_container .tab_content, .globalStock .sub_briefing .lst_type, .globalStock .sub_research .sub_mid.research_board .lst_type').on('click', '.md-trigger', function() {        
-            $('.globalStock .first_month_3300#modal-3').addClass('md-show');                        
+    if ($('#modal-3').length) {
+        $('.globalStock .sub_research .sub_mid.research_board .lst_type, .globalStock .sub_mid .tab_container .tab_content, .globalStock .sub_briefing .lst_type, .globalStock .sub_research .sub_mid.research_board .lst_type').on('click', '.md-trigger', function () {
+            $('.globalStock .first_month_3300#modal-3').addClass('md-show');
         });
     };
 
     //재무제표 좌측 고정 테이블
-    
-	
-	// 키움초이스스탁 스크립트
+
+
+    // 키움초이스스탁 스크립트
     if ($('.schfix_inc').length) {
         // 상단 검색 GNB 고정
         var jbOffset = $('.globalStock .schfix_inc .searching').offset();
         $(window).scroll(function () {
-            if ($(document).scrollTop() > jbOffset.top) {        
+            if ($(document).scrollTop() > jbOffset.top) {
                 $('.globalStock.kiwoom .schfix_inc').addClass('fix_sch');
                 $('.globalStock.wowtv .schfix_inc .search_top .event_banner').slideUp();
             }
             else {
                 $('.globalStock.kiwoom .schfix_inc').removeClass('fix_sch');
                 $('.globalStock.wowtv .schfix_inc .search_top .event_banner').slideDown();
-            }            
+            }
         });
 
         // 상단 검색 GNB 고정
         // var jbOffset = $('.globalStock .schfix_inc .searching').offset();
         $(window).scroll(function () {
-            if ($(document).scrollTop() > jbOffset.top) {        
+            if ($(document).scrollTop() > jbOffset.top) {
                 $('.globalStock.wowtv .schfix_inc').addClass('fix_sch');
             }
             else {
@@ -985,44 +986,44 @@ $(document).ready(function () {
         });
     }
     //검색    
-    $('.globalStock .schfix_inc .searching .searchArea .searchInput').on("keydown", function () {                
+    $('.globalStock .schfix_inc .searching .searchArea .searchInput').on("keydown", function () {
         $(this).addClass('keydown');
         $('.globalStock .schfix_inc .searching .searchArea .searchBtn').css('top', '15px');
         $('.globalStock .schfix_inc .searching .searchArea .sch_title').addClass('keydown');
-        $('.globalStock .schfix_inc .searching .sch_autocomplete').addClass('focus_on').show();        
-        $('.globalStock.kiwoom .schfix_inc .top_btn').hide();    
-        $('.globalStock.kiwoom .schfix_inc .searching .top_btn + .searchArea').css('width','calc(100% - 40px)');            
+        $('.globalStock .schfix_inc .searching .sch_autocomplete').addClass('focus_on').show();
+        $('.globalStock.kiwoom .schfix_inc .top_btn').hide();
+        $('.globalStock.kiwoom .schfix_inc .searching .top_btn + .searchArea').css('width', 'calc(100% - 40px)');
         $('.globalStock.wowtv .schfix_inc .searching .searchArea .searchBtn').css('top', '11px');
     });
-    $('.globalStock .schfix_inc .searching .searchArea .searchInput').on("focusout", function () {                
+    $('.globalStock .schfix_inc .searching .searchArea .searchInput').on("focusout", function () {
         $('.globalStock .schfix_inc .searching .searchArea .sch_title').removeClass('keydown');
         $(this).removeClass('keydown');
         $('.globalStock .schfix_inc .searching .searchArea .searchBtn').css('top', '6px');
-        $('.globalStock .schfix_inc .searching .sch_autocomplete').hide();                
-        $('.globalStock.kiwoom .schfix_inc .top_btn').show();        
-        $('.globalStock.kiwoom .schfix_inc .searching .searchArea').css('width','100%');        
-        $('.globalStock.kiwoom .schfix_inc .searching .top_btn + .searchArea').css('width','calc(100% - 70px)');        
+        $('.globalStock .schfix_inc .searching .sch_autocomplete').hide();
+        $('.globalStock.kiwoom .schfix_inc .top_btn').show();
+        $('.globalStock.kiwoom .schfix_inc .searching .searchArea').css('width', '100%');
+        $('.globalStock.kiwoom .schfix_inc .searching .top_btn + .searchArea').css('width', 'calc(100% - 70px)');
         $('.globalStock.wowtv .header_wowtv + .search_top.searching .searchArea .searchBtn').css('top', '11px');
-        
+
     });
     // 키움 따라다니는 서비스신청 버튼
     // #footer padding-bottom 계산
-    if ($('.globalStock.kiwoom .cho_applybtn').length) {                
+    if ($('.globalStock.kiwoom .cho_applybtn').length) {
         $('.globalStock.kiwoom #footer').css('padding-bottom', '50px');
-        $('.globalStock.kiwoom .sub_service .alliance_wrap .f_nightalarm').css('margin-bottom','67px')
-    } 	
+        $('.globalStock.kiwoom .sub_service .alliance_wrap .f_nightalarm').css('margin-bottom', '67px')
+    }
     // 알람 수신-미수신
-    $(".globalStock.wowtv .sub_alarm .alarm_from .label label").on("click", function () {           
-        var labelTxT = $('.globalStock.wowtv .sub_alarm .mapage_form .alarm_from .label .label_chk');     
-        setTimeout(function() {
-            if (labelTxT.hasClass("rcpt")) {                                    
-                labelTxT.removeClass("rcpt").text("미수신")            
-            } else {                        
-                labelTxT.addClass("rcpt").text("수신")            
+    $(".globalStock.wowtv .sub_alarm .alarm_from .label label").on("click", function () {
+        var labelTxT = $('.globalStock.wowtv .sub_alarm .mapage_form .alarm_from .label .label_chk');
+        setTimeout(function () {
+            if (labelTxT.hasClass("rcpt")) {
+                labelTxT.removeClass("rcpt").text("미수신")
+            } else {
+                labelTxT.addClass("rcpt").text("수신")
             }
         }, 150);
     });
-    
+
     // 주문하기 버튼            
     // Hide Header on on scroll down
     var didScroll;
@@ -1040,55 +1041,55 @@ $(document).ready(function () {
         if (Math.abs(lastScrollTop - st) <= delta) return; if (st > lastScrollTop && st > navbarHeight) {
             //스크롤  내릴때 
             $('.globalStock .purchase_area').css({
-                'padding' : '0 10px',                                
-                'bottom' : '30px'
-            }, 300);                
-            $('.globalStock.wowtv .purchase_area').css({                
-                'bottom' : '80px'
-            }, 300);                
+                'padding': '0 10px',
+                'bottom': '30px'
+            }, 300);
+            $('.globalStock.wowtv .purchase_area').css({
+                'bottom': '80px'
+            }, 300);
             $('.globalStock .purchase_area .btn_purchase span, .globalStock .purchase_area .btn_purchase i').hide(150);
 
             if ($('.gnb_hide').length) {
                 // 본문에서 GNB 메뉴 숨김
-                $('.globalStock .gnb').slideUp(150);            
-                $('#footer .notice .foot_info').css('padding-bottom','0');                                
+                $('.globalStock .gnb').slideUp(150);
+                $('#footer .notice .foot_info').css('padding-bottom', '0');
             }
         } else {
             //스크롤 올릴때                         
             $('.globalStock .purchase_area').css({
-                'padding' : '0 17px',                                
-                'bottom' : '80px'
-            }, 300);                
+                'padding': '0 17px',
+                'bottom': '80px'
+            }, 300);
             $('.globalStock .purchase_area .btn_purchase span, .globalStock .purchase_area .btn_purchase i').show(150);
 
-            $('.globalStock .gnb').show();               
-        } lastScrollTop = st;        
+            $('.globalStock .gnb').show();
+        } lastScrollTop = st;
     }
 
-    
-    $('.btn_purchase').on('click', function() {
-        $('.purchase_wrapper').addClass('open');          
+
+    $('.btn_purchase').on('click', function () {
+        $('.purchase_wrapper').addClass('open');
         $('.purchase_wrapper .box').animate({
-            'opacity' : 1,
-            'height' : 272
-        });        
-        // return false;
-     });     
-     $('.btn-close, .purchase_wrapper .bg_gray').on('click', function() {
-        $('.purchase_wrapper').removeClass('open');          
-        $('.purchase_wrapper .box').animate({
-            'opacity' : 0,
-            'height' : 0
+            'opacity': 1,
+            'height': 272
         });
         // return false;
-     });
-     $('.btn_close, .free_2weeks .bg_gray').on('click', function() {
-        $('.free_2weeks').removeClass('open');          
+    });
+    $('.btn-close, .purchase_wrapper .bg_gray').on('click', function () {
+        $('.purchase_wrapper').removeClass('open');
+        $('.purchase_wrapper .box').animate({
+            'opacity': 0,
+            'height': 0
+        });
+        // return false;
+    });
+    $('.btn_close, .free_2weeks .bg_gray').on('click', function () {
+        $('.free_2weeks').removeClass('open');
         $('.free_2weeks .box').animate({
-            'opacity' : 0,
-            'height' : 0
+            'opacity': 0,
+            'height': 0
         });
         // return false;
-     });
+    });
     
 });
