@@ -1,5 +1,7 @@
 $(document).ready(function () {
-    $('.globalStock .main_mid.youtube_mijumi .video_thumbnail').show(); // 페이지 로드 완료후 이미지 노출
+    // 페이지 로드 완료후 이미지 노출
+    $('.globalStock .main_mid.youtube_mijumi .video_thumbnail').show();
+    
 
     /************************/
     /****  Modal popup  *****/
