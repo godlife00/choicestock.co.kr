@@ -6,7 +6,7 @@
 html {
 	font-size:16px
 }
-@media (min-width:320px) and (max-width:374px) {
+@media (min-width:320px) and (max-width:359px) {
 	html {
 		font-size:14px
 	}
@@ -1728,7 +1728,7 @@ table.tableRanking td {
 	height:26px;
 	display:inline-block;
 }
-@media (min-width:320px) and (max-width:374px) {
+@media (min-width:320px) and (max-width:359px) {
 	#footer .notice .foot_info .info_tel_box .sns_kakao img {
 		height:23px;		
 	}
@@ -1970,7 +1970,7 @@ table.tableRanking td {
 	background:url('../img/more_yel.png') no-repeat 0 0;
 	background-size:cover;
 }
-@media (min-width:320px) and (max-width:374px) {
+@media (min-width:320px) and (max-width:359px) {
 	.globalStock .cho_applybtn .btn.btn_apply i {
 		right:calc(50% - 88px);
 		top:21px;
@@ -2338,7 +2338,7 @@ table.tableRanking td {
 	white-space:nowrap;
 	font-weight:normal;
 }
-@media (min-width:320px) and (max-width:374px) {
+@media (min-width:320px) and (max-width:359px) {
 	.globalStock .main_top.recommend_area .chart_area .chartData .event_name {
 		max-width:123px;
 	}
@@ -2932,7 +2932,7 @@ table.tableRanking td {
 	padding-bottom:3px;
 	display:inline-block;
 }
-@media (min-width:320px) and (max-width:374px) {
+@media (min-width:320px) and (max-width:359px) {
 	.globalStock .main_mid.event_recipe .recipe_tabs li span {
 		font-size:16px;
 	}
@@ -3202,7 +3202,7 @@ table.tableRanking td {
 .globalStock .main_mid.event_recipe .tab_content#tab4 .tableth_box table.tableRanking .title.t_short a {
 	width:100px;	
 }
-@media (min-width:320px) and (max-width:374px) {
+@media (min-width:320px) and (max-width:359px) {
 	.globalStock .main_mid.event_recipe .tab_content .tableth_box table.tableRanking .title.t_short a {
 		width:100px;
 		font-size: 15px;
@@ -3402,7 +3402,7 @@ table.tableRanking td {
 	padding: 0 15px;
 	box-sizing: border-box;
 }
-@media (min-width:320px) and (max-width:374px) {
+@media (min-width:320px) and (max-width:359px) {
 	.globalStock .main_mid.game_area .list_area {	
 		margin: 15px 0;				
 	}
@@ -3433,7 +3433,7 @@ table.tableRanking td {
     text-overflow: ellipsis;
     white-space: nowrap;    
 }
-@media (min-width:320px) and (max-width:374px) {
+@media (min-width:320px) and (max-width:359px) {
 	.globalStock .main_mid.game_area .list_area .area .list .title a {
 		font-size: 15px;
 	}	
@@ -3568,7 +3568,7 @@ table.tableRanking td {
 	padding: 0 15px;
 	box-sizing: border-box;
 }
-@media (min-width:320px) and (max-width:374px) {
+@media (min-width:320px) and (max-width:359px) {
 	.globalStock .main_top.recommend_area .recomlist_area {	
 		margin: 15px 0;				
 	}
@@ -3603,7 +3603,7 @@ table.tableRanking td {
 .globalStock .main_top.recommend_area .recomlist_area .area .list .title .remark .txt_filter.size_M {
 	vertical-align: text-bottom;
 }
-@media (min-width:320px) and (max-width:374px) {
+@media (min-width:320px) and (max-width:359px) {
 	.globalStock .main_top.recommend_area .recomlist_area .area .list .title a {
 		font-size: 15px;
 	}	
@@ -3752,7 +3752,7 @@ width: auto;
 	width: 100%;	
 	margin:0 auto;	
 }
-@media (min-width:320px) and (max-width:374px) {
+@media (min-width:320px) and (max-width:359px) {
 	.globalStock .main_mid.note_area.note_tabs .lst_type {
 		width: 100%;	
 	}
@@ -3786,7 +3786,7 @@ width: auto;
 	padding-bottom:3px;
 	display:inline-block;
 }
-@media (min-width:320px) and (max-width:374px) {
+@media (min-width:320px) and (max-width:359px) {
 	.globalStock .main_mid.note_area.note_tabs .tabsArea_note .note_tabs li span {
 		font-size:16px;
 	}
@@ -3804,7 +3804,7 @@ width: auto;
 	width:calc(100% - 30px);
 	margin:13px auto 0;	
 }
-@media (min-width:320px) and (max-width:374px) {
+@media (min-width:320px) and (max-width:359px) {
 	.globalStock .main_mid.note_area .lst_type {
 		width:calc(100% - 20px);
 	}
@@ -3987,7 +3987,7 @@ width: auto;
 	display:grid;
 	grid-template-columns:auto 80px;
 }
-@media (min-width:320px) and (max-width:374px) {
+@media (min-width:320px) and (max-width:359px) {
 	.globalStock .main_mid.event_anay .area ul.list {
 		grid-template-columns:auto 60px;
 	}
@@ -4324,7 +4324,7 @@ width: auto;
 	padding:20px 15px;
 	text-align:center;
 }
-@media (min-width:320px) and (max-width:374px) {
+@media (min-width:320px) and (max-width:359px) {
 	.globalStock .main_mid.catch_area .weeks_free .box {
 		grid-template-columns:auto 127px;
 	}
@@ -4674,7 +4674,7 @@ width: auto;
 	padding:0;
 	box-sizing:border-box;
 }
-@media (min-width:320px) and (max-width:374px) {
+@media (min-width:320px) and (max-width:359px) {
 	.globalStock .sub_recom .sub_top .chart_area {
 		
 	}
@@ -4704,7 +4704,7 @@ width: auto;
 	display:inline-block;
 	max-width:170px;
 }
-@media (min-width:320px) and (max-width:374px) {
+@media (min-width:320px) and (max-width:359px) {
 	.globalStock .sub_recom .sub_top .left_area .title {
 		max-width:140px;
 	}
@@ -4980,7 +4980,7 @@ width: auto;
 	display: flex;
 	justify-content: space-between;
 }
-@media (min-width:320px) and (max-width:374px) {
+@media (min-width:320px) and (max-width:359px) {
 	.globalStock .sub_recom .sub_mid.eventPicks_area .chart_area {
 		
 	}
@@ -5329,7 +5329,7 @@ width: auto;
 	padding: 17px 10px 10px;	
 }
 
-@media (min-width:320px) and (max-width:374px) {
+@media (min-width:320px) and (max-width:359px) {
 	.globalStock .sub_recom .sub_mid.eventPicks_area .recom_chartList .chartGoal {			
 		flex-basis: 154px;
 		max-width: 154px;
@@ -5371,7 +5371,7 @@ width: auto;
 	width: calc(100% / 2);
 	vertical-align: top;
 }
-@media (min-width:320px) and (max-width:374px) {
+@media (min-width:320px) and (max-width:359px) {
 	.globalStock .sub_recom .sub_mid.eventPicks_area .recom_chartList .chartGoal .target {	
 		width: calc(100% / 2 - 13px);	
 	}
@@ -5390,7 +5390,7 @@ width: auto;
 	display: inline-block;
     height: 22px;
 }
-@media (min-width:320px) and (max-width:374px) {
+@media (min-width:320px) and (max-width:359px) {
 	.globalStock .sub_recom .sub_mid.eventPicks_area .recom_chartList .chartGoal .target .att.prm_lock img {	
 		width: 50px;
 	}
@@ -6935,7 +6935,7 @@ width: auto;
 	display: flex;
 	justify-content: space-between;
 }
-@media (min-width:320px) and (max-width:374px) {
+@media (min-width:320px) and (max-width:359px) {
 	.globalStock .sub_game .gamePicks_area .game_list .list {
 		
 	}
@@ -6951,7 +6951,7 @@ width: auto;
 	border-bottom-left-radius:10px;
 	vertical-align:top;
 }
-@media (min-width:320px) and (max-width:374px) {
+@media (min-width:320px) and (max-width:359px) {
 	.globalStock .sub_game .gamePicks_area .game_list .list .game_event {
 		width: 107px;	
 	}
@@ -6969,7 +6969,7 @@ width: auto;
 	margin:2px 2px 1px 0;
 	vertical-align:top;
 }
-@media (min-width:320px) and (max-width:374px) {	
+@media (min-width:320px) and (max-width:359px) {	
 	.globalStock .sub_game .gamePicks_area .game_list .list .game_data {
 		width:calc(100% - 102px);		
 	}
@@ -9448,9 +9448,10 @@ width: auto;
 	word-wrap: break-word;
 	word-break: break-all;
 }
-@media (min-width:320px) and (max-width:374px) {
+@media (min-width:320px) and (max-width:359px) {
 	.globalStock .sub_menu .sub_top .login .user_name {
 		max-width: 145px;	
+		line-height: 21px;
 	}
 }
 .globalStock .sub_menu .sub_top .login .mem_rank {
@@ -9512,7 +9513,7 @@ width: auto;
 	background:url('../img/icon_menu_list_on.png') no-repeat -79px 2px;
 	background-size:auto 26px;
 }
-@media (min-width:320px) and (max-width:374px) {
+@media (min-width:320px) and (max-width:359px) {
 	.globalStock .sub_menu .sub_top .menu_list li:nth-child(1) a {
 		background-position-x:7px;
 	}
@@ -10145,7 +10146,7 @@ width: auto;
 	color:#333;
 	font-size:0.9rem;
 }
-@media (min-width:320px) and (max-width:374px) {
+@media (min-width:320px) and (max-width:359px) {
 	.globalStock .sub_search .latest_results .tabsArea .one_step.no_bg .txt {
 		font-size:0.9rem;
 		padding:0;
@@ -10326,7 +10327,7 @@ width: auto;
 	display:grid;
 	grid-template-columns:auto 133px;
 }
-@media (min-width:320px) and (max-width:374px) {
+@media (min-width:320px) and (max-width:359px) {
 	.globalStock .sub_search .latest_results .tabsArea .onestep_sample .box {
 		grid-template-columns:auto 119px;
 	}
@@ -10391,7 +10392,7 @@ width: auto;
 	margin-top:35px;
 	margin-bottom:30px;
 }
-@media (min-width:320px) and (max-width:374px) {
+@media (min-width:320px) and (max-width:359px) {
 	.globalStock .sub_search .latest_results .tabsArea .att_service {
 		padding:20px 10px;
 	}
@@ -10445,7 +10446,7 @@ width: auto;
 	display:grid;
 	grid-template-columns:auto 133px;
 }
-@media (min-width:320px) and (max-width:374px) {
+@media (min-width:320px) and (max-width:359px) {
 	.globalStock .sub_search .latest_results .tabsArea .weeks_free .box {
 		grid-template-columns:auto 119px;
 	}
@@ -10542,7 +10543,7 @@ width: auto;
 	margin-right:5px;
 	margin-bottom:2px;
 }
-@media (min-width:320px) and (max-width:374px) {
+@media (min-width:320px) and (max-width:359px) {
 	.globalStock .sub_search .search_top .data_area .title a i.attention,
 	.globalStock .sub_search .search_top .data_area .title .attention {
 		margin-bottom:1px;
@@ -10659,7 +10660,7 @@ width: auto;
 	width: calc(100% - 30px);
 	background: #E6E7F4;	
 }
-@media (min-width:320px) and (max-width:374px) {
+@media (min-width:320px) and (max-width:359px) {
 	.globalStock .sub_search .search_top .attention_box::before {	
 		left: 10px;
 		width: calc(100% - 20px);
@@ -10672,7 +10673,7 @@ width: auto;
 	overflow: hidden;
 	text-align: right;
 }
-@media (min-width:320px) and (max-width:374px) {
+@media (min-width:320px) and (max-width:359px) {
 	.globalStock .sub_search .search_top .attention_box .lately_update {
 		width: 130px;			
 	}
@@ -10760,7 +10761,7 @@ width: auto;
 	height:18px;
 	background:#E0E4E9;
 }
-@media (min-width:320px) and (max-width:374px) {
+@media (min-width:320px) and (max-width:359px) {
 	.globalStock .sub_search .search_top .attention_box .game_tip::after {
 		left:38px;
 		height:16px;
@@ -10893,7 +10894,7 @@ width: auto;
 	margin-bottom:2px;
 	margin-top:2px;
 }
-@media (min-width:320px) and (max-width:374px) {
+@media (min-width:320px) and (max-width:359px) {
 	.globalStock .sub_search .search_top .go_page i.attention,
 	.globalStock .sub_search .search_top .go_page i.attention {
 		margin-bottom:1px;
@@ -11090,7 +11091,7 @@ width: auto;
 	background: url('../img/prm_tabsLock.svg') no-repeat calc(100% - 1px) center;
 	background-size:8px auto;
 }
-@media (min-width:320px) and (max-width:374px) {
+@media (min-width:320px) and (max-width:359px) {
 	.globalStock .sub_search .tabs_5.prm_tabs li:nth-child(5) {		
 		background: url('../img/prm_tabsLock.svg') no-repeat calc(100% - 0px) center;
 		background-size:8px auto;
@@ -11885,7 +11886,7 @@ width: auto;
 	display:grid;
 	grid-template-columns:auto 140px;
 }
-@media (min-width:320px) and (max-width:374px) {
+@media (min-width:320px) and (max-width:359px) {
 	.globalStock .sub_search .sub_mid .tab_diagnosis_area .weeks_free .box {
 		grid-template-columns:auto 110px;
 	}
@@ -11993,7 +11994,7 @@ width: auto;
 	line-height:1.3rem;
 	padding:0;
 }
-@media (min-width:320px) and (max-width:374px) {
+@media (min-width:320px) and (max-width:359px) {
 	.globalStock .sub_search .sub_mid .tab_diagnosis_area .hiding_box .alloca_star .txt {
 		padding:0 5px 10px;
 	}
@@ -12830,7 +12831,7 @@ width: auto;
 	grid-column:1 / 2;
 	grid-row:2 / 1;
 }
-@media (min-width:320px) and (max-width:374px) {
+@media (min-width:320px) and (max-width:359px) {
 	.globalStock .sub_search .sub_mid.tabs_area .chart_area.diagnosis {
 		grid-template-columns:88px auto;
 	}
@@ -13466,7 +13467,7 @@ width: auto;
 .globalStock .sub_search .sub_mid .search_financials_area .scroll_table_wrap .scroll_table .table_search_invest td:nth-child(2) {
 	padding-left:105px;
 }
-@media (min-width:320px) and (max-width:374px) {
+@media (min-width:320px) and (max-width:359px) {
 	.globalStock .sub_search .sub_mid .search_financials_area .scroll_table_wrap .scroll_table th:first-child,
 	.globalStock .sub_search .sub_mid .search_financials_area .scroll_table_wrap .scroll_table td:first-child {
 		width:70px;
@@ -15429,7 +15430,7 @@ width: auto;
 	box-sizing:border-box;
 	padding:94px 6px 17px;
 }
-@media (min-width:320px) and (max-width:374px) {
+@media (min-width:320px) and (max-width:359px) {
 	.globalStock .sub_recipe .sub_mid.recipe_tabs .box_tabs li > a {	
 		padding-top: 88px;
 	}
@@ -15595,7 +15596,7 @@ width: auto;
 	display: inline-block;
 	float: right;
 }
-@media (min-width:320px) and (max-width:374px) {
+@media (min-width:320px) and (max-width:359px) {
 	.globalStock .sub_recipe .sub_mid.recipe_view .recipe_area .area ul.list li.trans {
 		display: block;	
 		float: none;
@@ -15648,7 +15649,7 @@ width: auto;
 .globalStock .sub_recipe .sub_mid.recipe_view .recipe_area .area .title a .remark .txt_filter.size_M i {
 	vertical-align: middle;	
 }
-@media (min-width:320px) and (max-width:374px) {
+@media (min-width:320px) and (max-width:359px) {
 	.globalStock .sub_recipe .sub_mid.recipe_view .recipe_area .area .title a {
 		font-size: 15px;
 	}
@@ -15726,7 +15727,7 @@ width: auto;
 	vertical-align:top;
 	display:inline-block;
 }
-@media (min-width:320px) and (max-width:374px) {
+@media (min-width:320px) and (max-width:359px) {
 	.globalStock .sub_recipe .sub_mid.recipe_view .recipe_area .area .num span {
 		font-size:15px;
 	}	
@@ -15778,7 +15779,7 @@ width: auto;
 	padding-right: 10px;
 	font-weight: normal;	
 }
-@media (min-width:320px) and (max-width:374px) {
+@media (min-width:320px) and (max-width:359px) {
 	.globalStock .sub_recipe .sub_mid.recipe_view .recipe_area .area .num .increase:nth-child(2) {		
 		padding-top:3px;
 	}
@@ -15808,7 +15809,7 @@ width: auto;
 	float:right;
 	margin-top: 4px;
 }
-@media (min-width:320px) and (max-width:374px) {
+@media (min-width:320px) and (max-width:359px) {
 	.globalStock .sub_recipe .sub_mid.recipe_view .recipe_area .area .num .update {
 		display: block;
 		float: none;
@@ -15865,7 +15866,7 @@ width: auto;
 	display: inline-block;
 	vertical-align: top;	
 }
-@media (min-width: 320px) and (max-width: 374px) {
+@media (min-width: 320px) and (max-width: 359px) {
 	.globalStock .sub_recipe .sub_mid.recipe_view .recipe_area .area .analysis_score {		
 		width: 150px;		
 		padding-right: 5px;
@@ -15936,7 +15937,7 @@ width: auto;
 	width: calc(100% - 182px);
 	overflow: hidden;	
 }
-@media (min-width: 320px) and (max-width: 374px) {
+@media (min-width: 320px) and (max-width: 359px) {
 	.globalStock .sub_recipe .sub_mid.recipe_view .recipe_area .area .trans_list {			
 		width: calc(100% - 160px);
 		padding-top: 4px;
@@ -15949,7 +15950,7 @@ width: auto;
 	display: inline-block;
 	float: right;
 }
-@media (min-width:320px) and (max-width:374px) {
+@media (min-width:320px) and (max-width:359px) {
 	.globalStock .sub_recipe .sub_mid.recipe_view .recipe_area .area .trans_list li.trans {
 		display: block;	
 		float: none;		
@@ -16044,7 +16045,7 @@ width: auto;
 	line-height: 18px;
 	color: #333;
 }
-@media (min-width:320px) and (max-width:374px) {
+@media (min-width:320px) and (max-width:359px) {
 	.globalStock .sub_recipe .sub_mid.recipe_view .recipe_area .area .analysis_score .attention {
 		font-size: 12px;
 	}
@@ -16091,7 +16092,7 @@ width: auto;
 .globalStock .sub_recipe .sub_top.recipejump + .sub_mid.recipe_view .recipe_tabs li span {		
 	color: #939393;	
 }
-@media (min-width:320px) and (max-width:374px) {
+@media (min-width:320px) and (max-width:359px) {
 	.globalStock .sub_recipe .sub_top.recipejump + .sub_mid.recipe_view .recipe_tabs li span {		
 		font-size: 12px;		
 	}
@@ -16153,7 +16154,7 @@ width: auto;
 	float:right;
 	margin-top: 0;	
 }
-@media (min-width:320px) and (max-width:374px) {
+@media (min-width:320px) and (max-width:359px) {
 	.globalStock .sub_recipe .sub_mid.recipe_view .recipe_area .area .analysis_score .game_tip::after {
 		left:38px;
 		height:16px;
@@ -18333,7 +18334,7 @@ width: auto;
 	display:inline-block;
 	max-width:250px;
 }
-@media (min-width:320px) and (max-width:374px) {
+@media (min-width:320px) and (max-width:359px) {
 	.form_table .item .txt_info {
 		max-width:200px;
 	}
@@ -21401,7 +21402,7 @@ width: auto;
 	padding:0 23px;
 	background-color:#fff;
 }
-@media (min-width:320px) and (max-width:374px) {
+@media (min-width:320px) and (max-width:359px) {
 	.globalStock .sub_service .sub_mid .sub_guide .guide_join {
 		padding:0 15px;
 	}
@@ -23471,7 +23472,7 @@ width: auto;
 	width: 100%; color: #939393;
 	font-size: 0.75rem;	
 }
-@media (min-width:320px) and (max-width:374px) {
+@media (min-width:320px) and (max-width:359px) {
 	.globalStock .sub_service .alliance_wrap .sub_top.service_t01 + .service_guide {		
 		letter-spacing: -0.035rem
 	}	
@@ -23523,7 +23524,7 @@ width: auto;
 	background:#fff;
 	padding:19px 23px;
 }
-@media (min-width:320px) and (max-width:374px) {
+@media (min-width:320px) and (max-width:359px) {
 	.globalStock .sub_service .alliance_wrap .sub_con .sum {
 		padding:15px 15px;
 	}
@@ -23592,7 +23593,7 @@ width: auto;
 .globalStock .sub_service .alliance_wrap .sub_con .tips {
 	padding:30px 23px;
 }
-@media (min-width:320px) and (max-width:374px) {
+@media (min-width:320px) and (max-width:359px) {
 	.globalStock .sub_service .alliance_wrap .sub_con .tips {
 		padding:25px 15px;
 	}
@@ -23691,7 +23692,7 @@ width: auto;
 		height:auto;
 	}
 }
-@media (min-width:320px) and (max-width:374px) {
+@media (min-width:320px) and (max-width:359px) {
 	.globalStock .sub_service .alliance_wrap .sub_con .banner_mijumicho {
 		height:auto;
 	}
@@ -24204,7 +24205,7 @@ width: auto;
 }
 
 /* 320 지원 */
-@media (min-width:320px) and (max-width:374px) {
+@media (min-width:320px) and (max-width:359px) {
 	/* 공통 레이아웃 */
 	.globalStock .log_chk {
 		padding:5px 10px
@@ -24657,7 +24658,7 @@ width: auto;
 	right:15px;
 	top:9px;
 }
-@media (min-width:320px) and (max-width:374px) {
+@media (min-width:320px) and (max-width:359px) {
 	.globalStock.kiwoom #header .go_briefing {
 		right:15px;
 		top:9px;
@@ -24813,7 +24814,7 @@ width: auto;
 	background: url('../img/prm_tabsLock.svg') no-repeat calc(100% - 3px) center;
 	background-size:8px auto;
 }
-@media (min-width:320px) and (max-width:374px) {
+@media (min-width:320px) and (max-width:359px) {
 	.globalStock.kiwoom .sub_search .tabs_5.prm_tabs li:nth-child(4) {		
 		background: url('../img/prm_tabsLock.svg') no-repeat calc(100% - 0px) center;
 		background-size:8px auto;
@@ -25130,7 +25131,7 @@ width: auto;
 .globalStock.kiwoom .sub_recom .sub_mid.eventPicks_area .ptfo_area .recom_tabs li.ptfo_old {
 	width:calc(100% / 3 + 9px);
 }
-@media (min-width:320px) and (max-width:374px) {
+@media (min-width:320px) and (max-width:359px) {
 	.globalStock.kiwoom .sub_portfolio .sub_mid.eventPicks_area .ptfo_area .day {
 		width:90px;
 		right: 0px;
@@ -25170,7 +25171,7 @@ width: auto;
 	margin-top:5px;
 	line-height:100%;
 }
-@media (min-width:320px) and (max-width:374px) {
+@media (min-width:320px) and (max-width:359px) {
 	.globalStock .schfix_inc .searching .searchArea .sch_title {
 		margin-top:8px;
 	}
@@ -25379,7 +25380,7 @@ width: auto;
 	font-weight:normal;
 	text-align:left;
 }
-@media (min-width:320px) and (max-width:374px) {
+@media (min-width:320px) and (max-width:359px) {
 	.globalStock .ptfo_datatable .tableRanking.ptfo_table td.name {
 		font-size: 14px;
 	}
@@ -25772,7 +25773,7 @@ width: auto;
 	gap:8px;
 	grid-template-columns:50% 50%;
 }
-@media (min-width:320px) and (max-width:374px) {
+@media (min-width:320px) and (max-width:359px) {
 	.globalStock .sub_search .sub_mid.outline_box {
 		width:calc(100% - 20px);
 	}
@@ -25787,7 +25788,7 @@ width: auto;
 	width: 100%;
 	/* overflow: hidden;	 */
 }
-@media (min-width:320px) and (max-width:374px) {
+@media (min-width:320px) and (max-width:359px) {
   .globalStock .sub_search .sub_mid.outline_box .box {    
     padding:14px 10px 7px 10px;
   }
@@ -26019,7 +26020,7 @@ width: auto;
     z-index: 9998;
     display: none;
 }
-@media (min-width:320px) and (max-width:374px) {
+@media (min-width:320px) and (max-width:359px) {
 	.globalStock .sub_search .sub_mid.outline_box .box .attention_box .guide_box {    
 		width: 300px;
 	}
@@ -26279,7 +26280,7 @@ width: auto;
 	padding-bottom: 10px;
 	margin-left: calc(-54px / 2);
 }
-@media (min-width:320px) and (max-width:374px) {
+@media (min-width:320px) and (max-width:359px) {
   .globalStock .sub_search .sub_mid.outline_box .box .value_chart .line .situation {
 	padding-bottom: 12px;
 	width: 42px;  	
@@ -26628,7 +26629,7 @@ width: auto;
 	border-radius: 16px;
 	background-color: #ffffff;
 }
-@media (min-width:320px) and (max-width:374px) {
+@media (min-width:320px) and (max-width:359px) {
 	.globalStock .sub_search .sub_mid .adequate_stock {		
 		width: calc(100% - 20px);	
 	}
@@ -26821,7 +26822,7 @@ width: auto;
   	background-color: #404fc3;
 	z-index: 10;
 }
-@media (min-width:320px) and (max-width:374px) {
+@media (min-width:320px) and (max-width:359px) {
   
 }
 .globalStock .sub_search .sub_mid .adequate_stock .box .con .value_chart .line .situation::after {
@@ -26855,7 +26856,7 @@ width: auto;
 	background-color: #404fc3;
 	z-index: 90;
 }
-@media (min-width:320px) and (max-width:374px) {
+@media (min-width:320px) and (max-width:359px) {
 	.globalStock .sub_search .sub_mid .adequate_stock .box .con .value_chart .line .situation::before {		
 		top: 36px;		
 	}
@@ -28072,7 +28073,7 @@ width: auto;
 .layerPopup .layerBox .c_btn a:first-child {
 	border-right: 1px solid #E0E5F0;
 }
-@media (min-width:320px) and (max-width:374px) {	
+@media (min-width:320px) and (max-width:359px) {	
 	.globalStock .sub_search .sub_mid .adequate_stock .box .con .value_chart .line .situation {
 		padding-bottom: 5px;
 		/* margin-left: -27px; */
