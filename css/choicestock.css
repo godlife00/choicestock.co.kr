@@ -1065,56 +1065,66 @@ table.tableRanking td {
 	height:55px;
 	box-sizing:border-box;
 	border-top:1px solid #E0E4E9;
-	padding:10px 16px;
+	padding:10px 10px;
 	background:#fff;
 	z-index:92;
 	box-shadow:0 -5px 10px 0 rgba(0,0,0,0.08);
 }
+.globalStock .gnb .list {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	align-content: space-evenly;
+	gap: 5px;
+}
 .globalStock .gnb li {
-	font-size:0;
-	display:inline-block;
-	width:calc(100% / 5);
-	text-align:center;
-	vertical-align:middle;
+	flex: 2 1 0;
+	text-align: center;		
+	box-sizing: border-box;		
+	height: 35px;		
 }
 .globalStock .gnb li a {
-	display:inline-block;
+	display:inline-block;	
+	height: 35px;
+	line-height: 35px;	
+	box-sizing: border-box;	
 	color:#82929f;
-	font-size:1rem;
+	font-size:1rem;	
 }
 .globalStock .gnb li.active {
 	border-radius:10px;
 	background-color:#f4f4f5;
-	padding:9.5px 15px;
+	padding: 0 10px;
 }
 .globalStock .gnb li.active a {
 	color:#404fc3;
 }
 .globalStock .gnb li.menu {
-	width:calc(100% / 5 - 35px);
-}
-.globalStock .gnb li.menu.active {
-	margin-left:8px;
-	padding:5.5px 15px;
+	flex: 1.5 1 0;
 }
 .globalStock .gnb li.menu a {
 	font-size:0;
 	width:24px;
-	height:24px;
-	background-image:url('../img/icon_menu.svg');
+	background: url('../img/icon_menu.svg') no-repeat 0 6px;	
 	background-size:24px 24px;
 }
 .globalStock .gnb li.menu.active a {
 	background-image:url('../img/icon_menu_on.svg');
 }
-.globalStock .gnb li.home {
-	padding:5.5px 0;
-	width:calc(100% / 5 - 17px);
+.globalStock .gnb li.myinfo {
+	flex: 1.5 1 0;	
 }
-.globalStock .gnb li.home.active {
-	padding:5.5px 10px;
-	width:calc(100% / 5);
+.globalStock .gnb li.myinfo a {
+	font-size:0;
+	width:24px;
+	background: url('../img/icon_menu_list_on.png') no-repeat 0 6px;
+    background-size: auto 26px;
+	opacity: 0.35;	
 }
+.globalStock .gnb li.myinfo.active a {
+	opacity: 1;	
+}
+
 .globalStock .gnb li.home i {
 	display:inline-block;
 	width:24px;
@@ -1134,15 +1144,14 @@ table.tableRanking td {
 	font-size:0;
 }
 .globalStock .gnb li.home.active a {
-	font-size:1rem;
-	position:relative;
-	top:2px;
+	font-size:1rem;	
 }
 .globalStock .gnb li.excavation {
 }
 .globalStock .gnb li.excavation.active {
-	margin-right: 8px;
+	/* margin-right: 8px; */
 }
+
 .globalStock .purchase_area {
 	overflow: hidden;
 	position: fixed;
@@ -24382,10 +24391,7 @@ width: auto;
 	}
 	.globalStock .gnb li.home {
 		width:52px;
-	}
-	.globalStock .gnb li.active {
-		padding:9.5px 8px;
-	}
+	}	
 	.globalStock .gnb li.menu.active {
 		margin-left:0px;
 	}	

@@ -24,10 +24,31 @@
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="192x192" href="img/android-chrome-192x192.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <!-- jquery-1.12 -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <!-- 이미지 순차적 로딩 lazysizes -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js"></script>    
+    <!-- highcharts -->
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/series-label.js"></script>
+    <script src="https://code.highcharts.com/highcharts-more.js"></script>
+    <script src="https://code.highcharts.com/modules/solid-gauge.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+    <script src="https://code.highcharts.com/modules/no-data-to-display.js"></script>
+    <script src="js/chartjs.js"></script>
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
     <!-- css -->
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" type="text/css" href="css/choicestock.css?ver=2.02" />
-    
+    <!-- js -->
+    <script src="js/globalstock.js"></script>
+    <!-- <script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> -->
+    <!-- 구글 애드센스 자동광고-->
 </head>
 <!-- 제휴사이트 민트 칼라 적용 class = mint  -->
 
@@ -114,11 +135,13 @@
         <!-- 하단 GNB -->
         <div class="gnb">
             <ul class="list">
+                <!-- <li class="home active"><a href="#"><i></i> 홈</a></li> -->
                 <li class="home active"><a href="#"><i></i> 홈</a></li>
-                <li class="stock"><a href="stock/recom.html">추천</a></li>
-                <li class="analysis"><a href="search/search_diagnosis.html">진단</a></li>
-                <li class="excavation"><a href="attractiveness/attractiveness.html">발굴</a></li>
-                <li class="menu"><a href="stock/menu.html">메뉴</a></li>
+                <li class="stock"><a href="#">추천</a></li>
+                <li class="analysis"><a href="#">진단</a></li>
+                <li class="excavation"><a href="#">발굴</a></li>
+                <li class="menu"><a href="#">메뉴</a></li>
+                <!-- <li class="myinfo"><a href="#">내정보</a></li> -->
             </ul>
         </div>
         <!-- //gnb -->
@@ -1140,10 +1163,13 @@
 
                 </div>
                 <!-- //game_area -->
+                
 
                 <!-- 초이스스탁US 프리미엄, 첫 달 3,000원! -->
                 <div class="banner_event">
-                    <a href="#" class="link_banner" target="_black"><img src="img/banner_prm3000.png" alt="초이스스탁US 프리미엄, 첫 달 3,000원!"></a>
+                    <a href="#" class="link_banner" target="_black">
+                        <img src="img/banner_prm3000.png" alt="초이스스탁US 프리미엄, 첫 달 3,000원!">                        
+                    </a>
                 </div>
                 <!-- //초이스스탁US 프리미엄, 첫 달 3,000원! -->                
 
@@ -1487,26 +1513,6 @@
         <!-- //footer -->
     </div>
     <!-- //wrap -->
-
-    <!-- jquery-1.12 -->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>    
-    <!-- highcharts -->
-    <script src="https://code.highcharts.com/highcharts.js" async></script>
-    <script src="https://code.highcharts.com/modules/series-label.js" async></script>
-    <script src="https://code.highcharts.com/highcharts-more.js" async></script>
-    <script src="https://code.highcharts.com/modules/solid-gauge.js" async></script>
-    <script src="https://code.highcharts.com/modules/exporting.js" async></script>
-    <script src="https://code.highcharts.com/modules/export-data.js" async></script>
-    <script src="https://code.highcharts.com/modules/accessibility.js" async></script>
-    <script src="https://code.highcharts.com/modules/no-data-to-display.js" async></script>
-    <script src="js/chartjs.js" async></script>
-    <!-- Swiper -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css" async>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js" async></script>
-    <!-- js -->
-    <script src="js/globalstock.js" async></script>    
-    
 </body>
 
 <!-- Modal popup -->
