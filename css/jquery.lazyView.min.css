@@ -1,0 +1,11 @@
+.invisible {
+    opacity:0;visibility:hidden;border:0 solid #fff
+}
+/* .visible {    
+    transition:opacity .3s cubic-bezier(0,.95,1,.955);
+    animation:flyin .3s ease forwards
+}
+@keyframes flyin{
+    0%{transform:translate(0,10px)}
+    100%{transform:translate(0,10px)}
+} */

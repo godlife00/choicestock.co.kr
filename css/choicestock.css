@@ -13256,7 +13256,17 @@ width: auto;
 	font-weight:normal;
 }
 .globalStock .sub_search .sub_mid .financecachart_area .chart_area .containerfinance1 {
-	text-align:center;
+	text-align:center;	
+	height: 300px;	
+}
+.testview {		
+	height: 300px;
+	margin: 10px 0;
+	background-color: blanchedalmond;;
+}
+.highcharts-root, .highcharts-plot-background {	
+	display: block;
+	width: 330px;
 	height: 300px;
 }
 .highcharts-point-up {
