@@ -13259,16 +13259,6 @@ width: auto;
 	text-align:center;	
 	height: 300px;	
 }
-.testview {		
-	height: 300px;
-	margin: 10px 0;
-	background-color: blanchedalmond;;
-}
-.highcharts-root, .highcharts-plot-background {	
-	display: block;
-	width: 330px;
-	height: 300px;
-}
 .highcharts-point-up {
 	fill: rgb(211, 0, 0);
     stroke: rgb(211, 0, 0);

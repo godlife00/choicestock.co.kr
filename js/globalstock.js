@@ -1092,5 +1092,20 @@ $(document).ready(function () {
         });
         // return false;
     });
+
+    // 캐시 지우기    
+    $('.noCache').attr('src', function () {
+        return $(this).attr('src') + "?v=" + Math.random()
+    });
+    // 저용량 이미지 로드 후 src 반영    
+    function lodSmallSrc() {        
+        $('img.s_img').each(function () {
+            var source = $(this).attr("data-src");        
+            $(this).attr("src", source + "?v=" + Math.random()).removeAttr("data-src");            
+        });        
+    }
+    lodSmallSrc();
+    
+    
     
 });
