@@ -1102,32 +1102,15 @@ table.tableRanking td {
 .globalStock .gnb li.menu {
 	position: relative;
 	flex: 1.5 1 0;
-	
-}
-.globalStock .gnb li.menu::after {	
-	content: 'menu';
-	display: inline-block;
-	position: absolute;
-	left: 0;
-	right: 0;
-	width: 100%;
-	text-align: center;
-	bottom: -5px;
-	color:#82929f;	
-	font-size:0.75rem;	
-}
-.globalStock .gnb li.menu.active::after {	
-	display: none;
 }
 .globalStock .gnb li.menu a {
 	font-size:0;
 	width:24px;
-	background: url('../img/icon_menu.svg') no-repeat 0 3px;	
+	background: url('../img/icon_menu.svg') no-repeat 0 6px;	
 	background-size: 24px auto;
 }
 .globalStock .gnb li.menu.active a {
-	background-image:url('../img/icon_menu_on.svg');
-	background-position: 0 6px;
+	background-image:url('../img/icon_menu_on.svg');	
 }
 .globalStock .gnb li.myinfo {
 	flex: 1.5 1 0;	
