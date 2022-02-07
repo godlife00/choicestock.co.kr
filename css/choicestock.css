@@ -25119,7 +25119,7 @@ width: auto;
 	/* width:calc(100% / 3 - 12px); */
 }
 .globalStock.kiwoom .sub_recom .sub_mid.eventPicks_area .ptfo_area .recom_tabs li.ptfo {
-	width:calc(100% / 3 - 12px);
+	/* width:calc(100% / 3 - 12px); */
 }
 .globalStock.kiwoom .sub_recom .sub_mid.eventPicks_area .ptfo_area .recom_tabs li.ptfo_old {
 	width:calc(100% / 3 + 9px);
