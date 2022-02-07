@@ -1100,8 +1100,13 @@ table.tableRanking td {
 	color:#404fc3;
 }
 .globalStock .gnb li.menu {
+	border: 1px solid #e8e8e8;
+	border-radius: 6px;
 	position: relative;
 	flex: 1.5 1 0;
+}
+.globalStock .gnb li.menu.active {
+	border: none;
 }
 .globalStock .gnb li.menu a {
 	font-size:0;
