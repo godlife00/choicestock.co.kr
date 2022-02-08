@@ -1101,6 +1101,8 @@ table.tableRanking td {
 }
 .globalStock .gnb li.menu {
 	border: 1px solid #e8e8e8;
+	/* box-shadow: 0 0 3px #e6e7f5 inset; */
+	/* box-shadow: 1px 1px 1px 1px #f4f4f5 inset; */
 	border-radius: 6px;
 	position: relative;
 	flex: 1.5 1 0;
