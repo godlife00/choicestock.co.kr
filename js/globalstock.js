@@ -1106,6 +1106,4 @@ $(document).ready(function () {
     }
     lodSmallSrc();
     
-    
-    
 });
