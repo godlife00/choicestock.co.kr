@@ -1106,4 +1106,8 @@ $(document).ready(function () {
     }
     lodSmallSrc();
     
+    // img Lazy Loading
+    $(".lazy-img").Lazy()
+    
+
 });
