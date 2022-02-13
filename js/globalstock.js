@@ -1,7 +1,6 @@
 $(document).ready(function () {
     // 페이지 로드 완료후 이미지 노출
     $('.globalStock .main_mid.youtube_mijumi .video_thumbnail').show();
-    
 
     /************************/
     /****  Modal popup  *****/
@@ -1093,5 +1092,72 @@ $(document).ready(function () {
         });
         // return false;
     });
+
+    // 캐시 지우기    
+    $('.noCache').attr('src', function () {
+        return $(this).attr('src') + "?v=" + Math.random()
+    });
+    // 저용량 이미지 로드 후 src 반영    
+    function lodSmallSrc() {        
+        $('img.s_img').each(function () {
+            var source = $(this).attr("data-src");        
+            $(this).attr("src", source + "?v=" + Math.random()).removeAttr("data-src");            
+        });        
+    }
+    lodSmallSrc();
+    
     
 });
+
+// img Lazy Loading    
+document.addEventListener("DOMContentLoaded", function() {
+    var lazyloadImages;    
+  
+    if ("IntersectionObserver" in window) {
+      lazyloadImages = document.querySelectorAll(".lazy");
+      var imageObserver = new IntersectionObserver(function(entries, observer) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            var image = entry.target;
+            image.src = image.dataset.src;
+            image.classList.remove("lazy");
+            imageObserver.unobserve(image);
+          }
+        });
+      });
+  
+      lazyloadImages.forEach(function(image) {
+        imageObserver.observe(image);
+      });
+    } else {  
+      var lazyloadThrottleTimeout;
+      lazyloadImages = document.querySelectorAll(".lazy");
+      
+      function lazyload () {
+        if(lazyloadThrottleTimeout) {
+          clearTimeout(lazyloadThrottleTimeout);
+        }    
+  
+        lazyloadThrottleTimeout = setTimeout(function() {
+          var scrollTop = window.pageYOffset;
+          lazyloadImages.forEach(function(img) {
+              if(img.offsetTop < (window.innerHeight + scrollTop)) {
+                img.src = img.dataset.src;
+                img.classList.remove('lazy');
+              }
+          });
+          if(lazyloadImages.length == 0) { 
+            document.removeEventListener("scroll", lazyload);
+            window.removeEventListener("resize", lazyload);
+            window.removeEventListener("orientationChange", lazyload);
+          }
+        }, 20);
+      }
+  
+      document.addEventListener("scroll", lazyload);
+      window.addEventListener("resize", lazyload);
+      window.addEventListener("orientationChange", lazyload);
+    }
+  })
+  
+  

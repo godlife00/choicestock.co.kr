@@ -27,6 +27,9 @@
     <!-- jquery-1.12 -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <!-- 이미지 순차적 로딩 lazysizes -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js"></script>
     <!-- highcharts -->
     <script src="https://code.highcharts.com/highcharts.js"></script>
     <script src="https://code.highcharts.com/modules/series-label.js"></script>
@@ -51,28 +54,28 @@
 <!-- 제휴사이트 민트 칼라 적용 class = mint  -->
 
 <body class="globalStock">
-    
+
     <!-- 정식 오픈 이후 버전 -->
     <div class="free_2weeks" id="layer_pop" style="display: none;">
         <!-- 보여줘야 하는 경우 class open -->
         <div class="bg_gray"></div>
-        <div class="box">        
-            <div class="content">                
+        <div class="box">
+            <div class="content">
                 <div class="info_txt">
                     <p class="txt01">무료로 <strong>미국주식 추천주와</strong><br><strong>포트폴리오 서비스</strong>를 받아보세요!</p>
                     <br>
                     <p class="txt02">추천종목, 포트폴리오, 시황 등<br><span>알림서비스가 함께 제공</span>됩니다</p>
-                </div>                
+                </div>
                 <div class="btn_area">
                     <a href="#" class="free">프리미엄 무료체험</a>
-                </div>            
+                </div>
             </div>
             <div class="ftr">
                 <label for="pop_today" class="btn_day">
-                <input type="checkbox" name="pop_today" id="pop_today"/> 오늘 하루 열지 않기</label>
+                    <input type="checkbox" name="pop_today" id="pop_today" /> 오늘 하루 열지 않기</label>
                 <a href="javascript:closeWin();" class="btn_close">닫기</a>
-            </div>        
-        </div>        
+            </div>
+        </div>
     </div>
     <!-- 오늘 하루 열지 않기 -->
     <!-- <script language="Javascript" type="text/javascript">
@@ -134,10 +137,10 @@
         <div class="gnb">
             <ul class="list">
                 <li class="home active"><a href="#"><i></i> 홈</a></li>
-                <li class="stock"><a href="stock/recom.html">추천</a></li>
-                <li class="analysis"><a href="search/search_diagnosis.html">진단</a></li>
-                <li class="excavation"><a href="attractiveness/attractiveness.html">발굴</a></li>
-                <li class="menu"><a href="stock/menu.html">메뉴</a></li>
+                <li class="stock"><a href="#">추천</a></li>
+                <li class="analysis"><a href="#">진단</a></li>
+                <li class="excavation"><a href="#">발굴</a></li>
+                <li class="menu"><a href="#">메뉴</a></li>
             </ul>
         </div>
         <!-- //gnb -->
@@ -223,13 +226,15 @@
 
             <!-- 모닝브리핑, 종목추천 3개 -->
             <div class="main_mid briefing_recom">
-                <div class="mainbriefingSwiper">                    
+                <div class="mainbriefingSwiper">
                     <ul>
-                        <li class="txt"><a href="https://www.choicestock.co.kr/stock/morning"><span class="note_issue">이슈</span>[모닝브리핑] 11국채금리 상승세 나스닥 2.7% 국채금리 상승세나스닥 2.7% 국채금리 상승세</a></li>
+                        <li class="txt"><a href="https://www.choicestock.co.kr/stock/morning"><span
+                                    class="note_issue">이슈</span>[모닝브리핑] 11국채금리 상승세 나스닥 2.7% 국채금리 상승세나스닥 2.7% 국채금리
+                                상승세</a></li>
                     </ul>
                 </div>
             </div>
-            <!-- //모닝브리핑, 종목노트 -->            
+            <!-- //모닝브리핑, 종목노트 -->
 
             <div class="main_mid attention_area">
                 <h3 class="title"><a href="search/searching.html">관심종목</a></h3>
@@ -758,7 +763,7 @@
 
                 <h3 class="title"><a href="stock/recom.html">종목추천</a></h3>
                 <a href="stock/game.html" class="more"><img src="img/more_Black.png" alt="더보기"></a>
-                
+
                 <div class="recomlist_area">
                     <div class="swiper-container  maingameSwiper">
                         <div class="swiper-wrapper">
@@ -810,7 +815,8 @@
                                         <li class="num">
                                             <div>
                                                 <span class="th">목표가</span>
-                                                <span class="td prm_lock"><a href="#"><img src="img/prm_lockW.png" alt="잠김"></a></span>
+                                                <span class="td prm_lock"><a href="#"><img src="img/prm_lockW.png"
+                                                            alt="잠김"></a></span>
                                             </div>
                                             <div>
                                                 <span class="th">수익률</span>
@@ -902,7 +908,7 @@
                                     </ul>
                                 </div>
                             </div>
-                           
+
                         </div>
                     </div>
                 </div>
@@ -957,24 +963,33 @@
                         </tbody>
                     </table>
                 </div>
-                
+
                 <!-- 모닝브리핑, 종목추천 3개 -->
                 <div class="main_mid briefing_recom">
                     <div class="swiper-container mainbriefingSwiper">
-                        <div class="swiper-wrapper">                            
+                        <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <ul>
-                                    <li class="txt"><a href="stock/recom_view.html"><span class="note_recom">추천</span>[종목추천] <span class="remark">마 <div class="txt_filter size_S"><i></i><i></i><i></i><i></i></div></span> 10배 성장하는 생각법-월드클래스 창업자</a></li>
+                                    <li class="txt"><a href="stock/recom_view.html"><span
+                                                class="note_recom">추천</span>[종목추천] <span class="remark">마 <div
+                                                    class="txt_filter size_S"><i></i><i></i><i></i><i></i></div></span>
+                                            10배 성장하는 생각법-월드클래스 창업자</a></li>
                                 </ul>
                             </div>
                             <div class="swiper-slide">
                                 <ul>
-                                    <li class="txt"><a href="stock/recom_view.html"><span class="note_recom">추천</span>[종목추천] <span class="remark">마 <div class="txt_filter size_S"><i></i><i></i><i></i><i></i></div></span> 10배 성장하는 생각법-월드클래스 창업자</a></li>
+                                    <li class="txt"><a href="stock/recom_view.html"><span
+                                                class="note_recom">추천</span>[종목추천] <span class="remark">마 <div
+                                                    class="txt_filter size_S"><i></i><i></i><i></i><i></i></div></span>
+                                            10배 성장하는 생각법-월드클래스 창업자</a></li>
                                 </ul>
                             </div>
                             <div class="swiper-slide">
                                 <ul>
-                                    <li class="txt"><a href="stock/recom_view.html"><span class="note_recom">추천</span>[종목추천] <span class="remark">마 <div class="txt_filter size_S"><i></i><i></i><i></i><i></i></div></span> 10배 성장하는 생각법-월드클래스 창업자</a></li>
+                                    <li class="txt"><a href="stock/recom_view.html"><span
+                                                class="note_recom">추천</span>[종목추천] <span class="remark">마 <div
+                                                    class="txt_filter size_S"><i></i><i></i><i></i><i></i></div></span>
+                                            10배 성장하는 생각법-월드클래스 창업자</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -984,12 +999,8 @@
 
                 <!-- 구글 에드센스 추천포트폴리오 하단 -->
                 <!-- 사각형(new) -->
-                <ins class="adsbygoogle"
-                    style="display:block"
-                    data-ad-client="ca-pub-6864430327621783"
-                    data-ad-slot="3945317009"
-                    data-ad-format="auto"
-                    data-full-width-responsive="true">
+                <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6864430327621783"
+                    data-ad-slot="3945317009" data-ad-format="auto" data-full-width-responsive="true">
                 </ins>
                 <script>
                         (adsbygoogle = window.adsbygoogle || []).push({});
@@ -1160,15 +1171,19 @@
                 </div>
                 <!-- //game_area -->
 
+
                 <!-- 초이스스탁US 프리미엄, 첫 달 3,000원! -->
                 <div class="banner_event">
-                    <a href="#" class="link_banner" target="_black"><img src="img/banner_prm3000.png" alt="초이스스탁US 프리미엄, 첫 달 3,000원!"></a>
+                    <a href="#" class="link_banner" target="_black">
+                        <img src="img/banner_prm3000.png" alt="초이스스탁US 프리미엄, 첫 달 3,000원!">
+                    </a>
                 </div>
-                <!-- //초이스스탁US 프리미엄, 첫 달 3,000원! -->                
+                <!-- //초이스스탁US 프리미엄, 첫 달 3,000원! -->
 
                 <!-- 초이스스탁US 홈 화면에 추가하기 -->
                 <div class="banner_event" style="display: none;">
-                    <a href="http://naver.me/G9bEnpic" class="link_banner" target="_black"><img src="img/banner_home.png" alt="초이스스탁US 홈 화면에 추가하기"></a>
+                    <a href="http://naver.me/G9bEnpic" class="link_banner" target="_black"><img
+                            src="img/banner_home.png" alt="초이스스탁US 홈 화면에 추가하기"></a>
                 </div>
                 <!-- //초이스스탁US 홈 화면에 추가하기 -->
 
@@ -1190,8 +1205,8 @@
                                 <div class="video_box">
                                     <a href="https://youtu.be/a3H1uvno8fs" target="_blank">
                                         <img class="video_thumbnail"
-                                            src="https://i.ytimg.com/vi/a3H1uvno8fs/mqdefault.jpg"
-                                            alt="테슬라 S&amp;P 500 편입, 코스트코 특별배당, 버크셔해서웨이 최고가">
+                                            src="https://hero.datahero.co.kr/webdata/attach_data/vod_mjm/2022/02/0e924189cf8fdd0c0bc6d0fbd4e531ff.png"
+                                            style="display: inline;">
                                         <p class="video_title">테슬라 S&amp;P 500 편입, 코스트코 특별배당, 버크셔해서웨이 최고가</p>
                                     </a>
                                 </div>
@@ -1200,8 +1215,8 @@
                                 <div class="video_box">
                                     <a href="https://youtu.be/3mMmfjvg9IQ" target="_blank">
                                         <img class="video_thumbnail"
-                                            src="https://i.ytimg.com/vi/3mMmfjvg9IQ/mqdefault.jpg"
-                                            alt="[미국주식]  백신 기대감  3대지수 사상최고가 직행, 관련주 5개? 이제는 3900?? #미주미 #이항영 #장우석">
+                                            src="https://hero.datahero.co.kr/webdata/attach_data/vod_mjm/2022/02/0e924189cf8fdd0c0bc6d0fbd4e531ff.png"
+                                            style="display: inline;">
                                         <p class="video_title">[미국주식] 백신 기대감 3대지수 사상최고가 직행, 관련주 5개? 이제는 3900??</p>
                                     </a>
                                 </div>
@@ -1234,132 +1249,50 @@
                 <!-- //youtube_mijumi -->
 
                 <!-- 종목노트, 탐구생활, 주요뉴스 -->
-                <div class="main_mid note_area note_tabs">
-                    <div class="tabsArea_note">
-                        <ul class="tabs_note note_tabs">
-                            <li class="active" rel="tab5"><span>종목노트</span></li>
-                            <li rel="tab6"><span>탐구생활</span></li>
-                            <li rel="tab7"><span>주요뉴스</span></li>                            
-                        </ul>
-
-                        <div class="tab_container">
-                            <!-- 종목노트 -->
-                            <div id="tab5" class="tab_content">
-                                <ul class="lst_type">
-                                    <li>
-                                        <dl class="lst_type2">
-                                            <dt class="tit">
-                                                <a href="stock/note.html"><strong>10배 성장하는 생각법 - 월드클래스 창업자의 특징</strong></a>
-                                            </dt>
-                                            <dd class="photo">
-                                                <a href="stock/note.html"><img src="https://img.stibee.com/30864_1612495409.jpg"
-                                                        alt=""></a>
-                                            </dd>
-                                        </dl>
-                                    </li>
-                                    <li>
-                                        <dl class="lst_type2">
-                                            <dt class="tit">
-                                                <a href="stock/note.html"><strong>10배 성장하는 생각법 - 월드클래스 창업자의 특징</strong></a>
-                                            </dt>
-                                            <dd class="photo">
-                                                <a href="stock/note.html"></a>
-                                            </dd>
-                                        </dl>
-                                    </li>
-                                    <li>
-                                        <dl class="lst_type2">
-                                            <dt class="tit">
-                                                <a href="stock/note.html"><strong>10배 성장하는 생각법 - 월드클래스 창업자의 특징</strong></a>
-                                            </dt>
-                                            <dd class="photo">
-                                                <a href="stock/note.html"><img src="https://img.stibee.com/30864_1612495409.jpg"
-                                                        alt=""></a>
-                                            </dd>
-                                        </dl>
-                                    </li>
-                                </ul>
-                                <!-- //lst_type -->
-                            </div>
-                            <!-- 탐구생활 -->
-                            <div id="tab6" class="tab_content">
-                                <ul class="lst_type">
-                                    <li>
-                                        <dl class="lst_type2">
-                                            <dt class="tit">
-                                                <a href="stock/note.html"><strong>10배 성장하는 생각법 - 월드클래스 창업자의 특징</strong></a>
-                                            </dt>
-                                            <dd class="photo">
-                                                <a href="stock/note.html"><img src="https://img.stibee.com/30864_1612495409.jpg"
-                                                        alt=""></a>
-                                            </dd>
-                                        </dl>
-                                    </li>
-                                    <li>
-                                        <dl class="lst_type2">
-                                            <dt class="tit">
-                                                <a href="stock/note.html"><strong>10배 성장하는 생각법 - 월드클래스 창업자의 특징</strong></a>
-                                            </dt>
-                                            <dd class="photo">
-                                                <a href="stock/note.html"></a>
-                                            </dd>
-                                        </dl>
-                                    </li>
-                                    <li>
-                                        <dl class="lst_type2">
-                                            <dt class="tit">
-                                                <a href="stock/note.html"><strong>10배 성장하는 생각법 - 월드클래스 창업자의 특징</strong></a>
-                                            </dt>
-                                            <dd class="photo">
-                                                <a href="stock/note.html"><img src="https://img.stibee.com/30864_1612495409.jpg"
-                                                        alt=""></a>
-                                            </dd>
-                                        </dl>
-                                    </li>
-                                </ul>
-                                <!-- //lst_type -->
-                            </div>
-                            <!-- 주요뉴스 -->
-                            <div id="tab7" class="tab_content">
-                                <ul class="lst_type">
-                                    <li>
-                                        <dl class="lst_type2">
-                                            <dt class="tit">
-                                                <a href="stock/note.html"><strong>10배 성장하는 생각법 - 월드클래스 창업자의 특징</strong></a>
-                                            </dt>
-                                            <dd class="photo">
-                                                <a href="stock/note.html"><img src="https://img.stibee.com/30864_1612495409.jpg"
-                                                        alt=""></a>
-                                            </dd>
-                                        </dl>
-                                    </li>
-                                    <li>
-                                        <dl class="lst_type2">
-                                            <dt class="tit">
-                                                <a href="stock/note.html"><strong>10배 성장하는 생각법 - 월드클래스 창업자의 특징</strong></a>
-                                            </dt>
-                                            <dd class="photo">
-                                                <a href="stock/note.html"></a>
-                                            </dd>
-                                        </dl>
-                                    </li>
-                                    <li>
-                                        <dl class="lst_type2">
-                                            <dt class="tit">
-                                                <a href="stock/note.html"><strong>10배 성장하는 생각법 - 월드클래스 창업자의 특징</strong></a>
-                                            </dt>
-                                            <dd class="photo">
-                                                <a href="stock/note.html"><img src="https://img.stibee.com/30864_1612495409.jpg"
-                                                        alt=""></a>
-                                            </dd>
-                                        </dl>
-                                    </li>
-                                </ul>
-                                <!-- //lst_type -->
-                            </div>
-                        </div>
-                    </div>
-                    <!-- //tabsArea_note -->
+                <div class="main_mid note_area">
+                    <h3 class="title"><a href="/stock/note">종목노트</a></h3>
+                    <a href="/stock/note" class="more"><img src="img/more_Black.png" alt="더보기"></a>                    
+                    <ul class="lst_type">
+                        <li>
+                            <dl class="lst_type2">
+                                <dt class="tit">
+                                    <a href="/stock/research_view/1211">
+                                        <strong>[실적발표] 토요타 모터, 주당순이익 4.95 달러..예상치 4.13 달러 상회</strong></a>
+                                </dt>
+                                <dd class="photo">
+                                    <a href="/stock/research_view/1211">
+                                    </a>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl class="lst_type2">
+                                <dt class="tit">
+                                    <a href="/stock/research_view/1205">
+                                        <strong>테마주-소셜미디어 : 당신도 인플루언서블 한가요? (feat. MZ세대의 일상템)</strong></a>
+                                </dt>
+                                <dd class="photo">
+                                    <a href="/stock/research_view/1205">
+                                        <img
+                                            src="https://hero.datahero.co.kr/webdata/attach_data/explore/202202/a3f8877e0ef18959d801b49d514c93bd.png">
+                                    </a>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl class="lst_type2">
+                                <dt class="tit">
+                                    <a href="/stock/research_view/1207">
+                                        <strong>[실적발표] 화이자, 주당순이익 1.08 달러..예상치 0.8742 달러 상회</strong></a>
+                                </dt>
+                                <dd class="photo">
+                                    <a href="/stock/research_view/1207">
+                                    </a>
+                                </dd>
+                            </dl>
+                        </li>
+                    </ul>
+                    <!-- //lst_type -->
                 </div>
                 <!-- //event_recipe -->
 
@@ -1408,14 +1341,10 @@
             <!-- //main_top -->
 
             <!-- 구글 에드센스 투자레시피 상단 -->
-            <ins class="adsbygoogle"
-                style="display:block"
-                data-ad-client="ca-pub-6864430327621783"
-                data-ad-slot="3945317009"
-                data-ad-format="auto"
-                data-full-width-responsive="true">
+            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6864430327621783"
+                data-ad-slot="3945317009" data-ad-format="auto" data-full-width-responsive="true">
             </ins>
-            
+
             <script>
                 (adsbygoogle = window.adsbygoogle || []).push({});
             </script>
@@ -1426,10 +1355,10 @@
                 <!-- 프리미엄 서비스 사용자가 아닌 경우 -->
                 <div class="banner_prm">
                     <span class="cho_prm"><i></i>초이스스탁US 프리미엄</span>
-                    <a href="#" class="weeks_free">[ 첫 달 3,000원!]</a>                    
+                    <a href="#" class="weeks_free">[ 첫 달 3,000원!]</a>
                 </div>
                 <div class="banner_prm">
-                    <span class="cho_prm"><i></i>초이스스탁US 프리미엄</span>                    
+                    <span class="cho_prm"><i></i>초이스스탁US 프리미엄</span>
                     <a href="#" class="weeks_free">[ 2주 무료보기 ]</a>
                 </div>
                 <!-- //banner_prm -->
@@ -1635,8 +1564,8 @@
             <div class="pop_header">
                 <a href="#setting_anchor" title="로그인 레이어 닫기" class="close"><img src="img/clse_w.png" alt="팝업닫기"></a>
                 <div class="sub_top">
-                    <h2 class="h2_title">초이스스탁US 프리미엄<span><strong>첫 달 3,000원</strong></span></h2>                    
-                    <p class="period">하루 100원으로 투자의 즐거움을 경험하세요.</p>                    
+                    <h2 class="h2_title">초이스스탁US 프리미엄<span><strong>첫 달 3,000원</strong></span></h2>
+                    <p class="period">하루 100원으로 투자의 즐거움을 경험하세요.</p>
                     <h2 class="h2_title">초이스스탁US 프리미엄<span><strong>로그인만하면 2주 무료!</strong></span></h2>
                     <p class="period">무료로 미국주식 추천주와 포트폴리오 서비스를 받아보세요.</p>
                 </div>
@@ -1648,7 +1577,7 @@
                         <tr>
                             <th class="top_th"><span>초이스스탁US 프리미엄</span></th>
                             <th class="top_th"><span>프리미엄</span></th>
-                            <th class="top_th"><span>무료</span></th>                            
+                            <th class="top_th"><span>무료</span></th>
                         </tr>
                         <tr>
                             <td class="mid_td"><span>한글로 쉽고 편리한 <b>종목검색</b></span></td>
@@ -1663,7 +1592,7 @@
                         <tr>
                             <td class="mid_td"><span>엄선된 <b>종목추천/포트폴리오</b></span></td>
                             <td class="com_select"><span></span></td>
-                            <td class="not_select"><span></span></td>                            
+                            <td class="not_select"><span></span></td>
                         </tr>
                         <tr>
                             <td class="mid_td"><span>투자매력+저평가+수급 <b>승부주</b></span></td>
@@ -1673,12 +1602,12 @@
                         <tr>
                             <td class="mid_td"><span>취향저격 종목추천 <b>종목캐치</b></span></td>
                             <td class="com_select"><span></span></td>
-                            <td><span>항목제한</span></td>                            
+                            <td><span>항목제한</span></td>
                         </tr>
                         <tr>
                             <td class="mid_td"><span>나만의 <b>관심종목/원스톱진단</b></span></td>
                             <td class="com_select"><span></span></td>
-                            <td class="not_select"><span></span></td>                            
+                            <td class="not_select"><span></span></td>
                         </tr>
                         <tr>
                             <td class="mid_td"><span>종목발굴 <b>투자레시피/종목노트</b></span></td>
@@ -1688,8 +1617,8 @@
                         <tr>
                             <td class="mid_td"><span>관심/추천/업데이트 <b>알림</b></span></td>
                             <td class="com_select"><span></span></td>
-                            <td class="not_select"><span></span></td>                            
-                        </tr>                        
+                            <td class="not_select"><span></span></td>
+                        </tr>
                     </tbody>
                 </table>
 

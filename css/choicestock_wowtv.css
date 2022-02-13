@@ -91,7 +91,6 @@
 	font-size:0.75rem;
 }
 .globalStock .sub_briefing .sub_mid.research_board .lst_type2 dd.photo {
-	display:inline-block;
 	float:left;
 	margin:-80px 10px 0 0;
 	color:#fff;
@@ -291,7 +290,6 @@
 	border: none;
 	margin: 0 auto 30px;
 }
-.globalStock.wowtv .sub_research .sub_mid.research_board.news_mid .tab_content .lst_type.news_list {}
 .globalStock.wowtv .sub_research .sub_mid.research_board.news_mid .tab_content .lst_type.news_list li {
 	box-sizing: border-box;
 	padding: 13px 0 7px;
@@ -300,7 +298,6 @@
 	padding: 5px 0 0 0;	
 	margin: 0 0 0 96px;
 }
-.globalStock.wowtv .sub_research .sub_mid.research_board.news_mid .tab_content .lst_type2 dt {}
 .globalStock.wowtv .sub_research .sub_mid.research_board.news_mid .tab_content .lst_type2 dt.tit {
 	padding-top: 20px;
 }
@@ -562,7 +559,6 @@
 .globalStock.wowtv .wowtv_55000.md-modal #setting .pop_header .sub_top .h2_title b {
 	color: #014b8d;	
 }
-.globalStock.wowtv .wowtv_55000.md-modal #setting .pop_header .sub_top .pay_pop {}
 .globalStock.wowtv .wowtv_55000.md-modal #setting .pop_header .sub_top .pay_pop span,
 .globalStock.wowtv .wowtv_55000.md-modal #setting .pop_header .sub_top .pay_pop span b {
 	color: #333;
@@ -579,7 +575,6 @@
 	font-size: 0.875rem;	
 	padding-right: 5px;
 }
-.globalStock.wowtv .wowtv_55000.md-modal #setting .pop_header .sub_top .pay_pop span.pay01 span {}
 .globalStock.wowtv .wowtv_55000.md-modal #setting .pop_header .sub_top .pay_pop span.pay01::before {
     content: '';
     background: url('../img/c_line.png') no-repeat right center;
@@ -867,7 +862,6 @@
 	grid-template-columns: 1fr 1fr;
 	gap: 20px 25px;
 }
-.globalStock.wowtv .main_mid.miju_nasdaq .list {}
 .globalStock.wowtv .main_mid.miju_nasdaq .list .title {
 	color: #82929f;
 	font-size: 0.75rem;	
@@ -944,7 +938,6 @@
 	height: 77px;
 	background: #f2faff;
 }
-.globalStock.wowtv .main_mid.briefing_note .mainbriefingSwiper {}
 .globalStock.wowtv .main_mid.briefing_note .mainbriefingSwiper ul {
 	padding: 16px 14px 10px;
 	border-top: 1px solid #e0edff;
@@ -1015,7 +1008,6 @@
 	color: #fff;
 	font-size: 0.875rem;
 	line-height: 23px;
-	vertical-align: middle;    
 	width: 100%;
 	display: block;
     overflow: hidden;
@@ -1072,7 +1064,6 @@
 	gap: 0 3px;
 	grid-template-columns: 1fr 1fr;	
 }
-.globalStock.wowtv .main_mid.game_scr .list .num .th {}
 .globalStock.wowtv .main_mid.game_scr .list .num .dod {
 	display: inline-block;
     background: #f2333a;
@@ -1126,7 +1117,6 @@
 	display: flex;
 	margin: 13px 0px 3px;
 }
-.globalStock.wowtv .main_mid.game_area .list_area .area .list .detail .num {}
 .globalStock.wowtv .main_mid.game_area .list_area .area .list .detail .per {
 	padding-left: 10px;
 }
@@ -1282,7 +1272,6 @@
 .globalStock.wowtv .ptfo_datatable ul li.num {
 	margin-top: 3px;
 }
-.globalStock.wowtv .ptfo_datatable ul li.num span {}
 .globalStock.wowtv .ptfo_datatable ul li.num span.yield {
 	font-size: 0.75rem;	
 	line-height: normal;	
@@ -1417,7 +1406,6 @@
 }
 
 /* 종목검색 결과 */
-.globalStock.wowtv .sub_search .sub_mid.outline_box {}
 .globalStock.wowtv .sub_search .sub_mid.outline_box .box {
 	background: #f6f7fa;
 }
@@ -1597,7 +1585,6 @@
 .globalStock.wowtv .sub_research .view_con {
 	padding-bottom: 0;
 }
-.globalStock.wowtv .sub_research .view_con.news_video {}
 .globalStock.wowtv .sub_research .view_con.news_video .mid,
 .globalStock.wowtv .sub_research .view_con.news_video .mid {
 	width: 100%;
@@ -1668,7 +1655,6 @@
 }
 
 /* 검색결과 검색중인 경우 */
-.globalStock.wowtv .header_wowtv ~ .search_top.searching .searchArea {}
 .globalStock.wowtv .header_wowtv ~ .search_top.searching .searchArea .searchInput.keydown {
 	border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
@@ -1709,7 +1695,6 @@
 	font-size: 10px;
 	margin-top: 3px;
 }
-.globalStock.wowtv .sub_attract .sub_mid.attract_sub .weeks_free .box {}
 .globalStock.wowtv .sub_recipe .sub_mid.recipe_tabs .box_tabs li strong {
 	margin-bottom: 8px;
 }
@@ -2062,7 +2047,6 @@
     color: #333;
     border-bottom: 1px solid #c6c6c6;
 }
-.globalStock.wowtv .news_video_tabs li.active {}
 .globalStock.wowtv .news_video_tabs li.active a {	
 	display: inline-block;
 	width: 100%;
@@ -2180,7 +2164,6 @@
 	color: #006BFC;
 	font-size: 0.78rem;
 }
-.globalStock.wowtv .sub_recom .sub_mid.eventPicks_area .chart_area .chartData .detail .per .decrease b {}
 .globalStock.wowtv .sub_recom .sub_mid.eventPicks_area .chart_area .chartGoal dd {
 	font-weight: bold;
 }
@@ -2317,9 +2300,6 @@
 	border: 1px solid #e1e5ef;
 	border-left: none;
 	margin: 0;
-}
-.globalStock.wowtv .sub_game .gamePicks_area .game_list .list .game_data ul.score {
-	/* flex-basis: 155px; */
 }
 .globalStock.wowtv .sub_game .gamePicks_area .game_list .list .game_data .score li.td {
 	font-weight: bold;
@@ -2655,7 +2635,6 @@
 	background: #e3f3ff url('../img/more_blue.svg') no-repeat calc(100% - 15px) 50%;
 	background-size: 5px 10px;
 }
-.globalStock.wowtv .sub_menu .sub_top .menu_list {} 
 .globalStock.wowtv .sub_menu .sub_top .menu_list li:nth-child(1) a {
 	background: url('../img/icon_menulist_wow_on.svg') no-repeat 13px 0;
     background-size: auto 27px;
@@ -2699,7 +2678,6 @@
 	float: left;
 	width: calc(100% - 100px);
 	box-sizing: border-box;
-    display: inline-block;    
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -2896,7 +2874,6 @@
   	letter-spacing: -0.75px;	
 	margin-top: 27px;
 }
-.globalStock.wowtv .sub_login .loign_chk .txt b {}
 .globalStock.wowtv .sub_login .agree_area {
 	padding: 24px 16px 90px;	
 	box-sizing: border-box;
