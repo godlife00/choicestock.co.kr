@@ -1091,7 +1091,7 @@ table.tableRanking td {
 	flex: 1.5 1 0;
 	
 }
-.globalStock .gnb li.menu::after {	
+/* .globalStock .gnb li.menu::after {	
 	content: 'menu';
 	display: inline-block;
 	position: absolute;
@@ -1102,14 +1102,14 @@ table.tableRanking td {
 	bottom: -5px;
 	color:#82929f;	
 	font-size:0.75rem;	
-}
+} */
 .globalStock .gnb li.menu.active::after {	
 	display: none;
 }
 .globalStock .gnb li.menu a {
 	font-size:0;
 	width:24px;
-	background: url('../img/icon_menu.svg') no-repeat 0 3px;	
+	background: url('../img/icon_menu.svg') no-repeat 0 6px;	
 	background-size: 24px auto;
 }
 .globalStock .gnb li.menu.active a {
