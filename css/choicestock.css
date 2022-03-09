@@ -448,9 +448,9 @@ body {
 #footer.chous_footer.typeSub_f {
 	background-color: #e0e4e9;	
 }
-#footer.chous_footer.typeSub_f .notice {
+/* #footer.chous_footer.typeSub_f .notice {
 	padding: 24px 30px;
-}
+} */
 #footer.chous_footer.typeMini_f {
 	overflow: hidden;
 	background-color: #e0e4e9;
