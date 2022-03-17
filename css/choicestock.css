@@ -1068,7 +1068,7 @@ table.tableRanking td {
 	flex: 2 1 0;
 	text-align: center;		
 	box-sizing: border-box;		
-	height: 35px;		
+	/* height: 35px;		 */
 }
 .globalStock .gnb li a {
 	display:inline-block;	
