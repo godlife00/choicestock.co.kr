@@ -1887,11 +1887,16 @@
 .globalStock.wowtv .sub_research .sub_mid.research_board .expert_corner .list {
 	margin-top: 8px;
 	font-size: 0;	
+	display: flex;	
+	justify-content: flex-start;
+	gap: 8px;
+	flex-wrap: wrap;
 }
 .globalStock.wowtv .sub_research .sub_mid.research_board .expert_corner .list li {
-	display: inline-block;	
+	flex: 1 1 30%;
+	/* display: inline-block;	
 	width: calc(100% / 3 - 6px);
-	margin-left: 8px;
+	margin-left: 8px; */
 }
 .globalStock.wowtv .sub_research .sub_mid.research_board .expert_corner .list li:first-child {
 	margin-left: 0;
