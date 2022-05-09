@@ -1165,7 +1165,7 @@ table.tableRanking td {
 	right: 0;
 	width: 26px;
 	height: 26px;
-	background: url('../img/select.png') no-repeat 0 0;
+	background: url('/img/select.png') no-repeat 0 0;
 }
 
 .selectbox label {
@@ -1225,7 +1225,7 @@ table.tableRanking td {
 	position: absolute;
 	right: 15px;
 	top: 15px;
-	background: url('../img/clse.png') no-repeat 0 0;
+	background: url('/img/clse.png') no-repeat 0 0;
 	background-size: 100% 100%;
 }
 
@@ -1349,7 +1349,7 @@ table.tableRanking td {
 	margin-right: 10px;
 	line-height: 42px;
 	padding-bottom: 3px;
-	background: url('../img/more_btm.svg') no-repeat center center;
+	background: url('/img/more_btm.svg') no-repeat center center;
 	position: relative;
 	top: 4px;
 }
@@ -1428,12 +1428,12 @@ table.tableRanking td {
 .globalStock .gnb li.menu a {
 	font-size: 0;
 	width: 24px;
-	background: url('../img/icon_menu.svg') no-repeat 0 6px;
+	background: url('/img/icon_menu.svg') no-repeat 0 6px;
 	background-size: 24px auto;
 }
 
 .globalStock .gnb li.menu.active a {
-	background-image: url('../img/icon_menu_on.svg');
+	background-image: url('/img/icon_menu_on.svg');
 	background-position: 0 6px;
 }
 
@@ -1444,7 +1444,7 @@ table.tableRanking td {
 .globalStock .gnb li.myinfo a {
 	font-size: 0;
 	width: 24px;
-	background: url('../img/icon_menu_list_on.png') no-repeat 0 6px;
+	background: url('/img/icon_menu_list_on.png') no-repeat 0 6px;
 	background-size: auto 26px;
 	opacity: 0.35;
 }
@@ -1457,7 +1457,7 @@ table.tableRanking td {
 	display: inline-block;
 	width: 24px;
 	height: 24px;
-	background: url('../img/icon_home.svg') no-repeat center -2px;
+	background: url('/img/icon_home.svg') no-repeat center -2px;
 	background-size: 24px 24px;
 	vertical-align: middle;
 	position: relative;
@@ -1465,7 +1465,7 @@ table.tableRanking td {
 }
 
 .globalStock .gnb li.home.active i {
-	background: url('../img/icon_home_on.svg') no-repeat center -2px;
+	background: url('/img/icon_home_on.svg') no-repeat center -2px;
 	top: 0;
 	margin-right: 2px;
 }
@@ -1511,7 +1511,7 @@ table.tableRanking td {
 	display: inline-block;
 	width: 22px;
 	height: 22px;
-	background: url('../img/icon_purchase.svg') no-repeat center center;
+	background: url('/img/icon_purchase.svg') no-repeat center center;
 	margin-right: 11px;
 	vertical-align: sub;
 }
@@ -1569,7 +1569,7 @@ table.tableRanking td {
 
 /* 별점 */
 .starR {
-	background: url('../img/ico_review.png') no-repeat -24px 0;
+	background: url('/img/ico_review.png') no-repeat -24px 0;
 	background-size: auto 100%;
 	width: 14px;
 	height: 14px;
@@ -1596,7 +1596,7 @@ table.tableRanking td {
 .globalStock .sub_search .no_attdata {
 	margin: 20px auto 50px;
 	border-radius: 20px;
-	background: #fff url('../img/bg_nodata.png') no-repeat center 50px;
+	background: #fff url('/img/bg_nodata.png') no-repeat center 50px;
 	width: calc(100% - 30px);
 	height: 400px;
 	text-align: center;
@@ -1643,7 +1643,7 @@ table.tableRanking td {
 	width: 30px;
 	height: 40px;
 	font-size: 0;
-	background: url('../img/bg_del.png') no-repeat 50% 16px;
+	background: url('/img/bg_del.png') no-repeat 50% 16px;
 	vertical-align: top;
 	z-index: 999;
 }
@@ -1668,7 +1668,7 @@ table.tableRanking td {
 	float: right;
 	width: 38px;
 	height: 38px;
-	background: url('../img/btn_handle.png') no-repeat center center;
+	background: url('/img/btn_handle.png') no-repeat center center;
 	font-size: 0;
 	background-size: 20px 12px
 }
@@ -2127,7 +2127,7 @@ table.tableRanking td {
 	width: 14px;
 	height: 14px;
 	margin-right: 8px;
-	background: url('../img/Icon_phone_l.png') no-repeat 0 0;
+	background: url('/img/Icon_phone_l.png') no-repeat 0 0;
 	background-size: 100% 100%;
 }
 
@@ -2157,6 +2157,30 @@ table.tableRanking td {
 	font-size: 0.7rem;
 	line-height: 1.4;
 }
+
+#footer .notice .family_site {
+	margin-top: 10px;
+	font-size: 11px; 
+	color: #808993;       	
+}
+#footer .notice .family_site a {
+	font-size: 11px;
+    line-height: 1.55;
+    letter-spacing: -0.55px;
+    color: #808993;    
+	text-decoration: underline;
+}
+#footer .notice .family_site i {
+	vertical-align: top;
+    position: relative;
+    top: 5px;
+    margin: 0 5px;
+    display: inline-block;
+    width: 1px;
+    height: 10px;
+    border-right: 1px solid #c2c8ce;
+}
+	
 
 #footer .notice .copyright,
 #footer .notice .home_page {
@@ -2404,7 +2428,7 @@ table.tableRanking td {
 	position: absolute;
 	left: 0;
 	bottom: 0;
-	background: url('../img/bg_btn_apply.png') no-repeat 0 0;
+	background: url('/img/bg_btn_apply.png') no-repeat 0 0;
 	width: 76px;
 	height: 62px;
 	background-size: 100%;
@@ -2417,7 +2441,7 @@ table.tableRanking td {
 	display: inline-block;
 	width: 5px;
 	height: 10px;
-	background: url('../img/more_yel.png') no-repeat 0 0;
+	background: url('/img/more_yel.png') no-repeat 0 0;
 	background-size: cover;
 }
 
@@ -3220,7 +3244,7 @@ table.tableRanking td {
 	display: inline-block;
 	width: 5px;
 	height: 8px;
-	background: url('../img/more_blue.png') no-repeat 0 0;
+	background: url('/img/more_blue.png') no-repeat 0 0;
 	background-size: cover;
 }
 
@@ -3962,7 +3986,7 @@ table.tableRanking td {
 	width: 18px;
 	height: 18px;
 	margin-bottom: 0;
-	background: url('../img/game_trans_b.svg') no-repeat 0 0;
+	background: url('/img/game_trans_b.svg') no-repeat 0 0;
 	background-size: 60px 18px;
 }
 
@@ -4032,7 +4056,7 @@ table.tableRanking td {
 	display: inline-block;
 	width: 5px;
 	height: 10px;
-	background: url('../img/icon_moreR.png') no-repeat center center;
+	background: url('/img/icon_moreR.png') no-repeat center center;
 	background-size: cover;
 }
 
@@ -4049,7 +4073,7 @@ table.tableRanking td {
 	top: 2px;
 	width: 13px;
 	height: 12px;
-	background: url('../img/heart_attention.svg') no-repeat 0 1px;
+	background: url('/img/heart_attention.svg') no-repeat 0 1px;
 	margin-right: 3px;
 	background-size: 12px 24px;
 }
@@ -4242,7 +4266,7 @@ table.tableRanking td {
 	height: 18px;
 	margin-bottom: 0;
 	margin-top: 2px;
-	background: url('../img/game_trans_b.svg') no-repeat 0 0;
+	background: url('/img/game_trans_b.svg') no-repeat 0 0;
 	background-size: auto 18px;
 }
 
@@ -4586,7 +4610,7 @@ table.tableRanking td {
 
 .globalStock .main_mid.note_area .lst_type2.lst_lock dt.tit strong {
 	padding-left: 20px;
-	background: url('../img/prm_tabsLock.svg') no-repeat 0 center;
+	background: url('/img/prm_tabsLock.svg') no-repeat 0 center;
 	word-break: break-all;
 }
 
@@ -4611,7 +4635,7 @@ table.tableRanking td {
 	position: relative;
 	float: left;
 	margin: -80px 10px 0 0;
-	background: #fff url('../img/noimg.png') no-repeat center center;
+	background: #fff url('/img/noimg.png') no-repeat center center;
 	background-size: cover;
 	border: 1px solid #E0E4E9;
 	border-radius: 5px;
@@ -4960,7 +4984,7 @@ table.tableRanking td {
 	margin-left: -41px;
 	z-index: 2;
 	display: inline-block;
-	background: #E6E7F4 url('../img/graph_prmB.png') no-repeat 0 0;
+	background: #E6E7F4 url('/img/graph_prmB.png') no-repeat 0 0;
 	background-size: 100% auto;
 	width: 81px;
 	height: 19px;
@@ -5176,7 +5200,7 @@ table.tableRanking td {
 	display: inline-block;
 	width: 6px;
 	height: 10px;
-	background: url('../img/more_yel.png') no-repeat 0 0;
+	background: url('/img/more_yel.png') no-repeat 0 0;
 	background-size: 6px 10px;
 	margin-left: 10px;
 }
@@ -5416,7 +5440,7 @@ table.tableRanking td {
 
 .globalStock .main_btm.banner_area .banner_prm .cho_prm i {
 	display: inline-block;
-	background: url('../img/Icon_lock.svg') no-repeat;
+	background: url('/img/Icon_lock.svg') no-repeat;
 	width: 10px;
 	height: 13px;
 	background-size: 10px 13px;
@@ -5463,7 +5487,7 @@ table.tableRanking td {
 	margin: 0 8px;
 	position: relative;
 	top: 1px;
-	background: url('../img/Icon_phone.png') no-repeat 0 0;
+	background: url('/img/Icon_phone.png') no-repeat 0 0;
 	background-size: 100% 100%;
 }
 
@@ -5830,7 +5854,7 @@ table.tableRanking td {
 	top: 3px;
 	width: 12px;
 	height: 12px;
-	background: url('../img/icon_awesome.svg') no-repeat center center;
+	background: url('/img/icon_awesome.svg') no-repeat center center;
 }
 
 .globalStock .sub_recom .sub_mid.bandchart_more p a.more {
@@ -6485,7 +6509,7 @@ table.tableRanking td {
 	top: 3px;
 	width: 12px;
 	height: 12px;
-	background: url('../img/icon_awesome.svg') no-repeat center center;
+	background: url('/img/icon_awesome.svg') no-repeat center center;
 }
 
 .globalStock .sub_recom .sub_mid.eventPicks_area .bandchart_sume .box.info p a.more {
@@ -6667,7 +6691,7 @@ table.tableRanking td {
 
 .globalStock .sub_recom .sub_mid.eventPicks_area .banner_prm .cho_prm i {
 	display: inline-block;
-	background: url('../img/Icon_lock.svg') no-repeat;
+	background: url('/img/Icon_lock.svg') no-repeat;
 	width: 10px;
 	height: 13px;
 	background-size: 10px 13px;
@@ -7226,7 +7250,7 @@ table.tableRanking td {
 	top: 3px;
 	width: 12px;
 	height: 12px;
-	background: url('../img/icon_awesome.svg') no-repeat center center;
+	background: url('/img/icon_awesome.svg') no-repeat center center;
 }
 
 .globalStock .sub_recom .sub_mid .tabsArea .tab_container .tab_content .one_step {
@@ -7984,7 +8008,7 @@ table.tableRanking td {
 	top: 23px;
 	width: 14px;
 	height: 14px;
-	background: url('../img/swiper_btn.png') no-repeat 0 0;
+	background: url('/img/swiper_btn.png') no-repeat 0 0;
 	background-size: 32px 14px;
 	border: 0;
 	outline: none;
@@ -8430,7 +8454,7 @@ table.tableRanking td {
 	width: 18px;
 	height: 18px;
 	margin-bottom: 4px;
-	background: url('../img/game_trans_b.svg') no-repeat 0 -25px;
+	background: url('/img/game_trans_b.svg') no-repeat 0 -25px;
 	background-size: auto 18px;
 }
 
@@ -8667,7 +8691,7 @@ table.tableRanking td {
 	margin-left: -30px;
 	z-index: 2;
 	display: inline-block;
-	background: #E6E7F4 url('../img/graph_prm.png') no-repeat 0 0;
+	background: #E6E7F4 url('/img/graph_prm.png') no-repeat 0 0;
 	background-size: 100% auto;
 	width: 60px;
 	height: 19px;
@@ -9134,7 +9158,7 @@ table.tableRanking td {
 	margin-left: -30px;
 	z-index: 2;
 	display: inline-block;
-	background: #E6E7F4 url('../img/graph_prm.png') no-repeat 0 0;
+	background: #E6E7F4 url('/img/graph_prm.png') no-repeat 0 0;
 	background-size: 100% auto;
 	width: 60px;
 	height: 19px;
@@ -9245,7 +9269,7 @@ table.tableRanking td {
 
 .globalStock .sub_analysis .sub_mid.eventPicks_area .banner_prm .cho_prm i {
 	display: inline-block;
-	background: url('../img/Icon_lock.svg') no-repeat;
+	background: url('/img/Icon_lock.svg') no-repeat;
 	width: 10px;
 	height: 13px;
 	background-size: 10px 13px;
@@ -9566,7 +9590,7 @@ table.tableRanking td {
 	margin-left: -30px;
 	z-index: 2;
 	display: inline-block;
-	background: #E6E7F4 url('../img/graph_prm.png') no-repeat 0 0;
+	background: #E6E7F4 url('/img/graph_prm.png') no-repeat 0 0;
 	background-size: 100% auto;
 	width: 60px;
 	height: 19px;
@@ -10012,7 +10036,7 @@ table.tableRanking td {
 	display: inline-block;
 	width: 18px;
 	height: 16px;
-	background: url('../img/heart_attention.svg') no-repeat 0 1px;
+	background: url('/img/heart_attention.svg') no-repeat 0 1px;
 	margin-right: 5px;
 }
 
@@ -10259,7 +10283,7 @@ table.tableRanking td {
 	margin-left: -32px;
 	z-index: 2;
 	display: inline-block;
-	background: #E6E7F4 url('../img/graph_prm.png') no-repeat 0 0;
+	background: #E6E7F4 url('/img/graph_prm.png') no-repeat 0 0;
 	background-size: 100% auto;
 	width: 60px;
 	height: 19px;
@@ -10361,7 +10385,7 @@ table.tableRanking td {
 	top: 3px;
 	width: 18px;
 	height: 16px;
-	background: url('../img/heart_attention.svg') no-repeat 0 1px;
+	background: url('/img/heart_attention.svg') no-repeat 0 1px;
 	background-size: auto 34px;
 	margin-right: 5px;
 }
@@ -10397,7 +10421,7 @@ table.tableRanking td {
 .globalStock .catch_wrap .no_data {
 	margin-top: 20px;
 	border-radius: 20px;
-	background: #fff url('../img/bg_nodata.png') no-repeat center 70px;
+	background: #fff url('/img/bg_nodata.png') no-repeat center 70px;
 	box-sizing: border-box;
 	padding-top: 220px;
 	padding-bottom: 20px;
@@ -10424,7 +10448,7 @@ table.tableRanking td {
 	display: inline-block;
 	width: 10px;
 	height: 13px;
-	background: url('../img/Icon_lockB.png') no-repeat 0 0;
+	background: url('/img/Icon_lockB.png') no-repeat 0 0;
 	background-size: 10px 13px;
 	margin-right: 3px;
 }
@@ -10450,7 +10474,7 @@ table.tableRanking td {
 	display: inline-block;
 	width: 6px;
 	height: 10px;
-	background: url('../img/more_yel.png') no-repeat 0 0;
+	background: url('/img/more_yel.png') no-repeat 0 0;
 	background-size: 6px 10px;
 	margin-left: 10px;
 }
@@ -10524,7 +10548,7 @@ table.tableRanking td {
 	display: inline-block;
 	width: 5px;
 	height: 10px;
-	background: url('../img/icon_moreRR.png') no-repeat 0 0;
+	background: url('/img/icon_moreRR.png') no-repeat 0 0;
 	background-size: cover;
 }
 
@@ -10586,7 +10610,7 @@ table.tableRanking td {
 	display: inline-block;
 	width: 12px;
 	height: 10px;
-	background: url('../img/more_yel.png') no-repeat right 0;
+	background: url('/img/more_yel.png') no-repeat right 0;
 	background-size: 6px 10px;
 }
 
@@ -10697,7 +10721,7 @@ table.tableRanking td {
 	content: '';
 	width: 16px;
 	height: 16px;
-	background: url('../img/icon_checkmark.png') no-repeat 100% 0;
+	background: url('/img/icon_checkmark.png') no-repeat 100% 0;
 	position: absolute;
 	right: 6px;
 	top: 6px;
@@ -10737,7 +10761,7 @@ table.tableRanking td {
 	display: inline-block;
 	width: 5px;
 	height: 10px;
-	background: url('../img/icon_moreL.png') no-repeat 0 0;
+	background: url('/img/icon_moreL.png') no-repeat 0 0;
 	background-size: cover;
 }
 
@@ -10748,7 +10772,7 @@ table.tableRanking td {
 	display: inline-block;
 	width: 5px;
 	height: 10px;
-	background: url('../img/icon_moreRR.png') no-repeat 0 0;
+	background: url('/img/icon_moreRR.png') no-repeat 0 0;
 	background-size: cover;
 }
 
@@ -11068,12 +11092,12 @@ table.tableRanking td {
 }
 
 .globalStock .sub_menu .sub_top .menu_list li:nth-child(1) a {
-	background: url('../img/icon_menu_list_on.png') no-repeat 13px 0;
+	background: url('/img/icon_menu_list_on.png') no-repeat 13px 0;
 	background-size: auto 26px;
 }
 
 .globalStock .sub_menu .sub_top .menu_list li:nth-child(2) a {
-	background: url('../img/icon_menu_list_on.png') no-repeat -79px 2px;
+	background: url('/img/icon_menu_list_on.png') no-repeat -79px 2px;
 	background-size: auto 26px;
 }
 
@@ -11088,12 +11112,12 @@ table.tableRanking td {
 }
 
 .globalStock .sub_menu .sub_top .menu_list li:nth-child(3) a {
-	background: url('../img/icon_menu_list_on.png') no-repeat -190px 0;
+	background: url('/img/icon_menu_list_on.png') no-repeat -190px 0;
 	background-size: auto 26px;
 }
 
 .globalStock .sub_menu .sub_top .menu_list li:nth-child(4) a {
-	background: url('../img/icon_menu_list_on.png') no-repeat calc(100% - 2px) 0;
+	background: url('/img/icon_menu_list_on.png') no-repeat calc(100% - 2px) 0;
 	background-size: auto 26px;
 }
 
@@ -11116,7 +11140,7 @@ table.tableRanking td {
 
 .globalStock .sub_menu .sub_top .btn_save {
 	color: #404fc3;
-	background: #d8dbff url('../img/more_white.png') no-repeat calc(100% - 15px) 50%;
+	background: #d8dbff url('/img/more_white.png') no-repeat calc(100% - 15px) 50%;
 	border: 1px solid #d8dbff;
 }
 
@@ -11156,12 +11180,12 @@ table.tableRanking td {
 	color: #333;
 	font-size: 0.9375rem;
 	display: block;
-	background: url('../img/more_Black.png') no-repeat calc(100% - 5px) 50%;
+	background: url('/img/more_Black.png') no-repeat calc(100% - 5px) 50%;
 	line-height: 2.33;
 }
 
 .globalStock .sub_menu .sub_mid .menu_link .txt.dub_a {
-	background: url('../img/more_Black.png') no-repeat calc(100% - 5px) 50%;
+	background: url('/img/more_Black.png') no-repeat calc(100% - 5px) 50%;
 }
 
 .globalStock .sub_menu .sub_mid .menu_link .txt.dub_a a {
@@ -11394,7 +11418,7 @@ table.tableRanking td {
 .globalStock .sub_search .latest_results .tabsArea .tab_container .no_data {
 	margin: 20px auto 0;
 	border-radius: 20px;
-	background: #fff url('../img/bg_nodata.png') no-repeat center 50px;
+	background: #fff url('/img/bg_nodata.png') no-repeat center 50px;
 	width: calc(100% - 30px);
 	height: 400px;
 	text-align: center;
@@ -11959,7 +11983,7 @@ table.tableRanking td {
 	box-sizing: border-box;
 	width: 100%;
 	height: 658px;
-	background: url('../img/onestep_sample.jpg') no-repeat 0 0;
+	background: url('/img/onestep_sample.jpg') no-repeat 0 0;
 	background-size: 100% auto;
 	margin-bottom: -18px;
 }
@@ -12033,7 +12057,7 @@ table.tableRanking td {
 	display: inline-block;
 	width: 10px;
 	height: 13px;
-	background: url('../img/Icon_lockB.png') no-repeat 0 0;
+	background: url('/img/Icon_lockB.png') no-repeat 0 0;
 	background-size: 10px 13px;
 	margin-right: 3px;
 }
@@ -12071,7 +12095,7 @@ table.tableRanking td {
 	display: inline-block;
 	width: 6px;
 	height: 10px;
-	background: url('../img/more_yel.png') no-repeat 0 0;
+	background: url('/img/more_yel.png') no-repeat 0 0;
 	background-size: 6px 10px;
 	margin-left: 10px;
 }
@@ -12171,7 +12195,7 @@ table.tableRanking td {
 	display: inline-block;
 	width: 10px;
 	height: 13px;
-	background: url('../img/Icon_lockB.png') no-repeat 0 0;
+	background: url('/img/Icon_lockB.png') no-repeat 0 0;
 	background-size: 10px 13px;
 	margin-right: 3px;
 }
@@ -12210,7 +12234,7 @@ table.tableRanking td {
 	display: inline-block;
 	width: 6px;
 	height: 10px;
-	background: url('../img/more_yel.png') no-repeat 0 0;
+	background: url('/img/more_yel.png') no-repeat 0 0;
 	background-size: 6px 10px;
 	margin-left: 10px;
 }
@@ -12259,7 +12283,7 @@ table.tableRanking td {
 	display: inline-block;
 	width: 18px;
 	height: 16px;
-	background: url('../img/heart_attention.svg') no-repeat 0 1px;
+	background: url('/img/heart_attention.svg') no-repeat 0 1px;
 	margin-right: 5px;
 	margin-bottom: 2px;
 }
@@ -12444,7 +12468,7 @@ table.tableRanking td {
 	top: 2px;
 	width: 13px;
 	height: 12px;
-	background: url('../img/heart_attention.svg') no-repeat 0 1px;
+	background: url('/img/heart_attention.svg') no-repeat 0 1px;
 	margin-right: 5px;
 	background-size: 12px 24px;
 }
@@ -12474,7 +12498,7 @@ table.tableRanking td {
 	top: 2px;
 	width: 15px;
 	height: 16px;
-	background: url('../img/Icon_m_chart.png') no-repeat 0 0;
+	background: url('/img/Icon_m_chart.png') no-repeat 0 0;
 	margin-right: 5px;
 	background-size: 15px 16px;
 }
@@ -12538,7 +12562,7 @@ table.tableRanking td {
 	vertical-align: top;
 	width: 18px;
 	height: 20px;
-	background: url('../img/game_trans.png') no-repeat 0 -25px;
+	background: url('/img/game_trans.png') no-repeat 0 -25px;
 	background-size: 18px 68px;
 }
 
@@ -12664,7 +12688,7 @@ table.tableRanking td {
 	display: inline-block;
 	width: 20px;
 	height: 17.4px;
-	background: url('../img/heart_attention.svg') no-repeat 0 0;
+	background: url('/img/heart_attention.svg') no-repeat 0 0;
 	margin-right: 5px;
 	margin-bottom: 2px;
 	margin-top: 2px;
@@ -12872,7 +12896,7 @@ table.tableRanking td {
 .globalStock .sub_search .tabs_5 li a strong i {
 	display: inline-block;
 	font-size: 0;
-	background: url('../img/star_icon.png') no-repeat 0 0;
+	background: url('/img/star_icon.png') no-repeat 0 0;
 	background-size: 100% 100%;
 	width: 9px;
 	height: 9px;
@@ -12886,19 +12910,19 @@ table.tableRanking td {
 }
 
 .globalStock .sub_search .tabs_5.prm_tabs li:nth-child(5) {
-	background: url('../img/prm_tabsLock.svg') no-repeat calc(100% - 1px) center;
+	background: url('/img/prm_tabsLock.svg') no-repeat calc(100% - 1px) center;
 	background-size: 8px auto;
 }
 
 @media (min-width:320px) and (max-width:359px) {
 	.globalStock .sub_search .tabs_5.prm_tabs li:nth-child(5) {
-		background: url('../img/prm_tabsLock.svg') no-repeat calc(100% - 0px) center;
+		background: url('/img/prm_tabsLock.svg') no-repeat calc(100% - 0px) center;
 		background-size: 8px auto;
 	}
 }
 
 .globalStock .sub_search .tabs_5.prm_tabs li:nth-child(6) {
-	background: url('../img/prm_tabsLock.svg') no-repeat calc(100% - 2px) center;
+	background: url('/img/prm_tabsLock.svg') no-repeat calc(100% - 2px) center;
 	background-size: 8px auto;
 }
 
@@ -12967,12 +12991,12 @@ table.tableRanking td {
 }
 
 .globalStock .sub_search .tabs_3.tabs_depth2.prm_tabs li:nth-child(2) {
-	background: #ececef url('../img/prm_tabsLock.svg') no-repeat calc(50% + 36px) center;
+	background: #ececef url('/img/prm_tabsLock.svg') no-repeat calc(50% + 36px) center;
 	background-size: 8px auto;
 }
 
 .globalStock .sub_search .tabs_3.tabs_depth2.prm_tabs li.active:nth-child(2) {
-	background: #fff url('../img/prm_tabsLock.svg') no-repeat calc(50% + 36px) center;
+	background: #fff url('/img/prm_tabsLock.svg') no-repeat calc(50% + 36px) center;
 	background-size: 8px auto;
 }
 
@@ -13577,7 +13601,7 @@ table.tableRanking td {
 	position: absolute;
 	right: 15px;
 	top: 15px;
-	background: url('../img/clse.png') no-repeat 0 0;
+	background: url('/img/clse.png') no-repeat 0 0;
 	background-size: 100% 100%;
 }
 
@@ -13825,7 +13849,7 @@ table.tableRanking td {
 	display: inline-block;
 	width: 10px;
 	height: 13px;
-	background: url('../img/Icon_lockF.png') no-repeat 0 0;
+	background: url('/img/Icon_lockF.png') no-repeat 0 0;
 	background-size: 10px 13px;
 	margin-right: 3px;
 }
@@ -13864,7 +13888,7 @@ table.tableRanking td {
 	display: inline-block;
 	width: 6px;
 	height: 10px;
-	background: url('../img/more_blue.png') no-repeat 0 0;
+	background: url('/img/more_blue.png') no-repeat 0 0;
 	background-size: 6px 10px;
 	margin-left: 10px;
 }
@@ -14041,7 +14065,7 @@ table.tableRanking td {
 }
 
 .globalStock .sub_search .sub_mid .hiding_box .small_star .star_area .starR {
-	background: url('../img/ico_review.png') no-repeat -24px 0;
+	background: url('/img/ico_review.png') no-repeat -24px 0;
 	background-size: auto 100%;
 	width: 14px;
 	height: 14px;
@@ -14296,7 +14320,7 @@ table.tableRanking td {
 	position: absolute;
 	right: 15px;
 	top: 15px;
-	background: url('../img/clse.png') no-repeat 0 0;
+	background: url('/img/clse.png') no-repeat 0 0;
 	background-size: 100% 100%;
 }
 
@@ -14754,7 +14778,7 @@ table.tableRanking td {
 	display: inline-block;
 	width: 6px;
 	height: 8px;
-	background: url('../img/more_white.svg') no-repeat 0 0;
+	background: url('/img/more_white.svg') no-repeat 0 0;
 	background-size: 6px 8px;
 }
 
@@ -15043,7 +15067,7 @@ table.tableRanking td {
 	position: absolute;
 	right: 15px;
 	top: 15px;
-	background: url('../img/clse.png') no-repeat 0 0;
+	background: url('/img/clse.png') no-repeat 0 0;
 	background-size: 100% 100%;
 	padding: 2px;
 }
@@ -15726,7 +15750,7 @@ table.tableRanking td {
 	position: absolute;
 	right: 15px;
 	top: 15px;
-	background: url('../img/clse.png') no-repeat 0 0;
+	background: url('/img/clse.png') no-repeat 0 0;
 	background-size: 100% 100%;
 }
 
@@ -15812,7 +15836,7 @@ table.tableRanking td {
 	display: inline-block;
 	width: 10px;
 	height: 13px;
-	background: url('../img/Icon_lockF.png') no-repeat 0 0;
+	background: url('/img/Icon_lockF.png') no-repeat 0 0;
 	background-size: 10px 13px;
 	margin-right: 3px;
 }
@@ -15852,7 +15876,7 @@ table.tableRanking td {
 	display: inline-block;
 	width: 6px;
 	height: 10px;
-	background: url('../img/more_blue.png') no-repeat 0 0;
+	background: url('/img/more_blue.png') no-repeat 0 0;
 	background-size: 6px 10px;
 	margin-left: 10px;
 }
@@ -15932,7 +15956,7 @@ table.tableRanking td {
 }
 
 .globalStock .sub_search .alloca_wrap .alloca_star .star_area .starR {
-	background: url('../img/ico_reviewB.png') no-repeat -55px 0;
+	background: url('/img/ico_reviewB.png') no-repeat -55px 0;
 	width: 32px;
 	height: 32px;
 }
@@ -16439,7 +16463,7 @@ table.tableRanking td {
 	display: inline-block;
 	width: 20px;
 	height: 16px;
-	background: url('../img/btn_schSet.svg') no-repeat 50% 50%;
+	background: url('/img/btn_schSet.svg') no-repeat 50% 50%;
 	background-size: auto 100%;
 	margin-right: 5px;
 }
@@ -16690,7 +16714,7 @@ table.tableRanking td {
 	display: inline-block;
 	width: 10px;
 	height: 13px;
-	background: url('../img/Icon_lockB.png') no-repeat 0 0;
+	background: url('/img/Icon_lockB.png') no-repeat 0 0;
 	background-size: 10px 13px;
 	margin-right: 3px;
 }
@@ -16728,7 +16752,7 @@ table.tableRanking td {
 	display: inline-block;
 	width: 6px;
 	height: 10px;
-	background: url('../img/more_yel.png') no-repeat 0 0;
+	background: url('/img/more_yel.png') no-repeat 0 0;
 	background-size: 6px 10px;
 	margin-left: 10px;
 }
@@ -17040,7 +17064,7 @@ table.tableRanking td {
 
 .globalStock .free_pop.md-modal #setting .pop_header .sub_top {
 	padding-bottom: 3px;
-	background: url('../img/bg_free_pop.png') no-repeat right bottom;
+	background: url('/img/bg_free_pop.png') no-repeat right bottom;
 	background-size: 60px 60px;
 }
 
@@ -17127,7 +17151,7 @@ table.tableRanking td {
 	display: inline-block;
 	width: 5px;
 	height: 10px;
-	background: url('../img/icon_moreRR.png') no-repeat 0 0;
+	background: url('/img/icon_moreRR.png') no-repeat 0 0;
 	background-size: cover;
 }
 
@@ -17171,7 +17195,7 @@ table.tableRanking td {
 
 .globalStock .premium_pop.md-modal #setting .pop_header {
 	padding: 17px 10px 0;
-	background: url('../img/bg_premium_pop.png') no-repeat right top;
+	background: url('/img/bg_premium_pop.png') no-repeat right top;
 	background-size: cover;
 	border-top-left-radius: 20px;
 	border-top-right-radius: 20px;
@@ -17269,7 +17293,7 @@ table.tableRanking td {
 	display: inline-block;
 	width: 5px;
 	height: 10px;
-	background: url('../img/icon_moreRR.png') no-repeat 0 0;
+	background: url('/img/icon_moreRR.png') no-repeat 0 0;
 	background-size: cover;
 }
 
@@ -17313,7 +17337,7 @@ table.tableRanking td {
 
 .globalStock .event_1year.md-modal #setting .pop_header {
 	padding: 10px 10px 15px;
-	background: #1a918d url('../img/banner/pop_event1year.png') no-repeat right bottom;
+	background: #1a918d url('/img/banner/pop_event1year.png') no-repeat right bottom;
 	background-size: 114px 81px;
 	border-top-left-radius: 20px;
 	border-top-right-radius: 20px;
@@ -17342,7 +17366,7 @@ table.tableRanking td {
 	color: #fff;
 	font-weight: bold;
 	padding: 0 2px;
-	background: url('../img/banner/bg_gbline.png') repeat-x 0 calc(100% + 8px);
+	background: url('/img/banner/bg_gbline.png') repeat-x 0 calc(100% + 8px);
 	font-weight: 500;
 }
 
@@ -17468,7 +17492,7 @@ table.tableRanking td {
 
 .globalStock .event_1year.md-modal #setting .pop_con .tableRanking.type_compare .com_select span {
 	display: inline-block;
-	background: url('../img/com_select.png') no-repeat 50% 50%;
+	background: url('/img/com_select.png') no-repeat 50% 50%;
 	background-size: 14px 11px;
 	width: 14px;
 	height: 11px
@@ -17512,7 +17536,7 @@ table.tableRanking td {
 	display: inline-block;
 	width: 5px;
 	height: 10px;
-	background: url('../img/icon_moreRR.png') no-repeat 0 0;
+	background: url('/img/icon_moreRR.png') no-repeat 0 0;
 	background-size: cover;
 }
 
@@ -17556,7 +17580,7 @@ table.tableRanking td {
 
 .globalStock .first_month_3300.md-modal #setting .pop_header {
 	padding: 10px 10px 15px;
-	background: #404fc3 url('../img/bg_pop_first_month.png') no-repeat right bottom;
+	background: #404fc3 url('/img/bg_pop_first_month.png') no-repeat right bottom;
 	background-size: 105px 100px;
 	border-top-left-radius: 20px;
 	border-top-right-radius: 20px;
@@ -17708,7 +17732,7 @@ table.tableRanking td {
 
 .globalStock .first_month_3300.md-modal #setting .pop_con .tableRanking.type_compare .com_select span {
 	display: inline-block;
-	background: url('../img/com_select.png') no-repeat 50% 50%;
+	background: url('/img/com_select.png') no-repeat 50% 50%;
 	background-size: 14px 11px;
 	width: 14px;
 	height: 11px
@@ -17781,7 +17805,7 @@ table.tableRanking td {
 	display: inline-block;
 	width: 5px;
 	height: 10px;
-	background: url('../img/icon_moreRR.png') no-repeat 0 0;
+	background: url('/img/icon_moreRR.png') no-repeat 0 0;
 	background-size: cover;
 }
 
@@ -17957,51 +17981,51 @@ table.tableRanking td {
 
 .globalStock .sub_recipe .sub_mid.recipe_tabs .box_tabs li.jump a {
 	/* 급등주 */
-	background: #fff url('../img/recipe_jump.svg') no-repeat center 25px;
+	background: #fff url('/img/recipe_jump.svg') no-repeat center 25px;
 	background-size: 54px 54px;
 }
 
 .globalStock .sub_recipe .sub_mid.recipe_tabs .box_tabs li.top50 a {
 	/* TOP50 */
-	background: #fff url('../img/recipe_top50.svg') no-repeat center 25px;
+	background: #fff url('/img/recipe_top50.svg') no-repeat center 25px;
 	background-size: 80px 53px;
 }
 
 .globalStock .sub_recipe .sub_mid.recipe_tabs .box_tabs li:nth-child(3) a {
 	/* 실적발표 */
-	background: #fff url('../img/recipe_05.png') no-repeat center 25px;
+	background: #fff url('/img/recipe_05.png') no-repeat center 25px;
 	background-size: 50px 49px;
 }
 
 .globalStock .sub_recipe .sub_mid.recipe_tabs .box_tabs li.sale a {
 	/* 세일 */
-	background: #fff url('../img/recipe_sale.svg') no-repeat center 15px;
+	background: #fff url('/img/recipe_sale.svg') no-repeat center 15px;
 	background-size: auto 62px;
 }
 
 .globalStock .sub_recipe .sub_mid.recipe_tabs .box_tabs li:nth-child(5) a {
 	/* 배당매력주 */
-	background: #fff url('../img/recipe_01.png') no-repeat center 18px;
+	background: #fff url('/img/recipe_01.png') no-repeat center 18px;
 }
 
 .globalStock .sub_recipe .sub_mid.recipe_tabs .box_tabs li:nth-child(6) a {
 	/* 이익성장주 */
-	background: #fff url('../img/recipe_02.png') no-repeat center 21px;
+	background: #fff url('/img/recipe_02.png') no-repeat center 21px;
 }
 
 .globalStock .sub_recipe .sub_mid.recipe_tabs .box_tabs li:nth-child(7) a {
 	/* 소비자독점 */
-	background: #fff url('../img/recipe_03.png') no-repeat center 21px;
+	background: #fff url('/img/recipe_03.png') no-repeat center 21px;
 }
 
 .globalStock .sub_recipe .sub_mid.recipe_tabs .box_tabs li:nth-child(8) a {
 	/* 슈퍼스톡 */
-	background: #fff url('../img/recipe_04.png') no-repeat center 29px;
+	background: #fff url('/img/recipe_04.png') no-repeat center 29px;
 }
 
 /* 발굴 - 투자레시피 view */
 .globalStock .sub_recipe .sub_top.view .box_tabs {
-	background: #fff url('../img/recipe_01.png') no-repeat center 33px;
+	background: #fff url('/img/recipe_01.png') no-repeat center 33px;
 	background-size: auto 59px;
 	padding: 110px 15px 23px;
 	color: #939393;
@@ -18013,39 +18037,39 @@ table.tableRanking td {
 
 .globalStock .sub_recipe .sub_top.view.bgimg02 .box_tabs {
 	/* 실적발표 */
-	background-image: url('../img/recipe_05.png');
+	background-image: url('/img/recipe_05.png');
 }
 
 .globalStock .sub_recipe .sub_top.view.bgimg03 .box_tabs {
 	/* 배당매력주 */
-	background-image: url('../img/recipe_01.png');
+	background-image: url('/img/recipe_01.png');
 }
 
 .globalStock .sub_recipe .sub_top.view.bgimg04 .box_tabs {
 	/* 이익성장주 */
-	background-image: url('../img/recipe_02.png');
+	background-image: url('/img/recipe_02.png');
 }
 
 .globalStock .sub_recipe .sub_top.view.bgimg05 .box_tabs {
 	/* 소비자독점 */
-	background-image: url('../img/recipe_03.png');
+	background-image: url('/img/recipe_03.png');
 }
 
 .globalStock .sub_recipe .sub_top.view.bgimg01 .box_tabs {
 	/* 슈퍼스톡 */
-	background-image: url('../img/recipe_04.png');
+	background-image: url('/img/recipe_04.png');
 }
 
 .globalStock .sub_recipe .sub_top.view.recipejump .box_tabs {
-	background-image: url('../img/recipe_jump.svg');
+	background-image: url('/img/recipe_jump.svg');
 }
 
 .globalStock .sub_recipe .sub_top.view.recipetop .box_tabs {
-	background-image: url('../img/recipe_top50.svg');
+	background-image: url('/img/recipe_top50.svg');
 }
 
 .globalStock .sub_recipe .sub_top.view.recipesale .box_tabs {
-	background-image: url('../img/recipe_sale.svg');
+	background-image: url('/img/recipe_sale.svg');
 	background-size: auto 64px;
 }
 
@@ -18055,7 +18079,7 @@ table.tableRanking td {
 	width: 22px;
 	height: 22px;
 	border-radius: 50%;
-	background: url('../img/icon_sale.svg') no-repeat center center;
+	background: url('/img/icon_sale.svg') no-repeat center center;
 	vertical-align: top;
 	margin-right: 3px;
 	position: relative;
@@ -18619,7 +18643,7 @@ table.tableRanking td {
 
 .globalStock .sub_recipe .sub_mid.recipe_view .banner_prm .cho_prm i {
 	display: inline-block;
-	background: url('../img/Icon_lock.svg') no-repeat;
+	background: url('/img/Icon_lock.svg') no-repeat;
 	width: 10px;
 	height: 13px;
 	background-size: 10px 13px;
@@ -18653,7 +18677,7 @@ table.tableRanking td {
 	display: inline-block;
 	width: 9px;
 	height: 11px;
-	background: url('../img/heart_attention_gray.svg') no-repeat 0 1px;
+	background: url('/img/heart_attention_gray.svg') no-repeat 0 1px;
 	margin: 0 3px;
 	background-size: 14px 25px;
 }
@@ -18679,7 +18703,7 @@ table.tableRanking td {
 	display: inline-block;
 	width: 15px;
 	height: 11px;
-	background: url('../img/heart_attention_gray.svg') no-repeat 0 1px;
+	background: url('/img/heart_attention_gray.svg') no-repeat 0 1px;
 	margin-right: 3px;
 	background-size: 14px 25px;
 	vertical-align: middle;
@@ -18779,7 +18803,7 @@ table.tableRanking td {
 	width: 14px;
 	height: 14px;
 	padding: 1px 0;
-	background: url('../img/icon_transition.svg') no-repeat 0 1px;
+	background: url('/img/icon_transition.svg') no-repeat 0 1px;
 	background-size: 14px 14px;
 	margin-left: 2px;
 	position: relative;
@@ -18819,7 +18843,7 @@ table.tableRanking td {
 	vertical-align: top;
 	width: 14px;
 	height: 14px;
-	background: url('../img/game_trans_b.svg') no-repeat 0 0;
+	background: url('/img/game_trans_b.svg') no-repeat 0 0;
 	background-size: 60px 14px;
 	margin-top: 3px;
 }
@@ -18863,7 +18887,7 @@ table.tableRanking td {
 	vertical-align: top;
 	width: 14px;
 	height: 14px;
-	background: url('../img/game_trans_b.svg') no-repeat 0 0;
+	background: url('/img/game_trans_b.svg') no-repeat 0 0;
 	background-size: 60px 14px;
 }
 
@@ -18925,7 +18949,7 @@ table.tableRanking td {
 	display: inline-block;
 	width: 15px;
 	height: 11px;
-	background: url('../img/heart_attention_gray.svg') no-repeat 0 1px;
+	background: url('/img/heart_attention_gray.svg') no-repeat 0 1px;
 	margin-right: 3px;
 	background-size: 14px 25px;
 	vertical-align: middle;
@@ -18987,7 +19011,7 @@ table.tableRanking td {
 	display: inline-block;
 	width: 13px;
 	height: 13px;
-	background: url('../img/icon_saledeal.svg') no-repeat center center;
+	background: url('/img/icon_saledeal.svg') no-repeat center center;
 	margin-right: 3px;
 }
 
@@ -19017,7 +19041,7 @@ table.tableRanking td {
 .globalStock .sub_research .sub_top .best_research {
 	display: flex;
 	align-items: center;
-	background: url('../img/research_bg.png') no-repeat center center;
+	background: url('/img/research_bg.png') no-repeat center center;
 	margin: 25px 15px;
 	box-sizing: border-box;
 	padding: 22px 20px;
@@ -19132,7 +19156,7 @@ table.tableRanking td {
 	top: 4px;
 	width: 10px;
 	height: 13px;
-	background: #F6F7FA url('../img/prm_tabsLock.svg') no-repeat center center;
+	background: #F6F7FA url('/img/prm_tabsLock.svg') no-repeat center center;
 }
 
 .globalStock .sub_research .sub_mid.research_board .lst_type2 dt.tit a {
@@ -19159,7 +19183,7 @@ table.tableRanking td {
 	border: none;
 	width: 67px;
 	height: 60px;
-	background: #fff url('../img/noimg.png') no-repeat center center;
+	background: #fff url('/img/noimg.png') no-repeat center center;
 	background-size: cover;
 	border: 1px solid #E0E4E9;
 	border-radius: 5px;
@@ -19224,7 +19248,7 @@ table.tableRanking td {
 	width: calc(100% - 60px);
 	min-height: 177px;
 	box-sizing: border-box;
-	background: url('../img/bg_wow_video.jpg') no-repeat center center;
+	background: url('/img/bg_wow_video.jpg') no-repeat center center;
 	background-size: cover;
 	position: relative;
 	padding-bottom: 48%;
@@ -19512,7 +19536,7 @@ table.tableRanking td {
 	display: inline-block;
 	width: 67px;
 	height: 60px;
-	background: #fff url('../img/noimg.png') no-repeat 0 0;
+	background: #fff url('/img/noimg.png') no-repeat 0 0;
 	background-size: cover;
 	border: 1px solid #E0E4E9;
 	border-radius: 5px;
@@ -19580,7 +19604,7 @@ table.tableRanking td {
 	display: inline-block;
 	width: 112px;
 	height: 63px;
-	background: #fff url('../img/noimg_wowtv.svg') no-repeat center center;
+	background: #fff url('/img/noimg_wowtv.svg') no-repeat center center;
 }
 
 .globalStock .sub_research .sub_mid.research_board .lst_type.video_list .video_box>a .video_title {
@@ -19612,7 +19636,7 @@ table.tableRanking td {
 
 .globalStock .sub_research .sub_mid.research_board .lst_type.video_list .video_box.lst_lock>a .video_title span {
 	text-indent: 20px;
-	background: url('../img/prm_tabsLock.svg') no-repeat 0 2px;
+	background: url('/img/prm_tabsLock.svg') no-repeat 0 2px;
 }
 
 .globalStock .sub_research .view_con .mid .iframe_video {
@@ -19684,7 +19708,7 @@ table.tableRanking td {
 	display: inline-block;
 	width: 5px;
 	height: 10px;
-	background: url('../img/icon_moreRR.png') no-repeat 0 0;
+	background: url('/img/icon_moreRR.png') no-repeat 0 0;
 	background-size: cover;
 }
 
@@ -19890,7 +19914,7 @@ table.tableRanking td {
 	display: inline-block;
 	width: 67px;
 	height: 60px;
-	background: #fff url('../img/face_noimg.png') no-repeat 0 0;
+	background: #fff url('/img/face_noimg.png') no-repeat 0 0;
 	background-size: cover;
 	border: 1px solid #E0E4E9;
 	border-radius: 10px;
@@ -19917,7 +19941,7 @@ table.tableRanking td {
 }
 
 .globalStock .sub_briefing .sub_top .best_research {
-	background: url('../img/research_bg.png') no-repeat center center;
+	background: url('/img/research_bg.png') no-repeat center center;
 	margin: 25px 15px;
 	box-sizing: border-box;
 	padding: 22px 20px;
@@ -20029,7 +20053,7 @@ table.tableRanking td {
 .globalStock .sub_briefing .sub_mid.research_board .lst_type2.lst_lock dt.tit strong {
 	display: inline-block;
 	text-indent: 20px;
-	background: url('../img/icon_list_lock.svg') no-repeat 0 4px;
+	background: url('/img/icon_list_lock.svg') no-repeat 0 4px;
 }
 
 .globalStock .sub_briefing .sub_mid.research_board .lst_type2 dt.tit a {
@@ -20071,7 +20095,7 @@ table.tableRanking td {
 	display: inline-block;
 	width: 80px;
 	height: 71px;
-	background: #fff url('../img/face_noimg.png') no-repeat 0 0;
+	background: #fff url('/img/face_noimg.png') no-repeat 0 0;
 	background-size: cover;
 	border: 1px solid #E0E4E9;
 	border-radius: 10px;
@@ -20125,19 +20149,19 @@ table.tableRanking td {
 }
 
 .globalStock .alarmArea .alarmList li span.title i.note {
-	background-image: url('../img/icon_list_note.svg');
+	background-image: url('/img/icon_list_note.svg');
 }
 
 .globalStock .alarmArea .alarmList li span.title i.recom {
-	background-image: url('../img/icon_list_recom.svg');
+	background-image: url('/img/icon_list_recom.svg');
 }
 
 .globalStock .alarmArea .alarmList li span.title i.interest {
-	background-image: url('../img/icon_list_interest.svg');
+	background-image: url('/img/icon_list_interest.svg');
 }
 
 .globalStock .alarmArea .alarmList li span.title i.event {
-	background-image: url('../img/icon_list_event.svg');
+	background-image: url('/img/icon_list_event.svg');
 }
 
 .globalStock .alarmArea .alarmList li span.day {
@@ -20195,7 +20219,7 @@ table.tableRanking td {
 .globalStock .sub_alarm .alarm_note .list li.sum {
 	font-size: 0.82rem;
 	color: #333;
-	background: url('../img/dot_blue.png') no-repeat 0 7px;
+	background: url('/img/dot_blue.png') no-repeat 0 7px;
 	padding-left: 9px;
 }
 
@@ -20421,11 +20445,11 @@ table.tableRanking td {
 }
 
 .globalStock .sub_login .loign .sns li:first-child a::before {
-	background: url('../img/icon_sns_n.svg') no-repeat left top;
+	background: url('/img/icon_sns_n.svg') no-repeat left top;
 }
 
 .globalStock .sub_login .loign .sns li:last-child a::before {
-	background: url('../img/icon_sns_k.svg') no-repeat left top;
+	background: url('/img/icon_sns_k.svg') no-repeat left top;
 }
 
 .globalStock .sub_login .loign .sns li a,
@@ -20543,7 +20567,7 @@ table.tableRanking td {
 	top: -2px;
 	width: 16px;
 	height: 16px;
-	background: url('../img/icon_agreecheck.png') no-repeat 0 100%;
+	background: url('/img/icon_agreecheck.png') no-repeat 0 100%;
 	margin-right: 7px;
 }
 
@@ -20609,7 +20633,7 @@ table.tableRanking td {
 	display: inline-block;
 	width: 5px;
 	height: 10px;
-	background: url('../img/icon_moreRR.png') no-repeat 0 0;
+	background: url('/img/icon_moreRR.png') no-repeat 0 0;
 	background-size: cover;
 }
 
@@ -20846,7 +20870,7 @@ table.tableRanking td {
 
 /* 로그인 - 가입완료 */
 .globalStock .sub_login .loign_com {
-	background: url('../img/bg_loign_com.png') no-repeat 110% 33px;
+	background: url('/img/bg_loign_com.png') no-repeat 110% 33px;
 	padding: 265px 15px 30px;
 }
 
@@ -20960,7 +20984,7 @@ table.tableRanking td {
 }
 
 .globalStock .sub_login .phone_regbox .txt {
-	background: url('../img/dot_line.png') no-repeat 0 11px;
+	background: url('/img/dot_line.png') no-repeat 0 11px;
 	padding-left: 10px;
 	margin-top: 0;
 	font-size: 0.9375rem;
@@ -20978,7 +21002,7 @@ table.tableRanking td {
 	width: 12.5px;
 	height: 15.5px;
 	margin-right: 5px;
-	background: url('../img/banner/icon_alarm2.png') no-repeat 0 0;
+	background: url('/img/banner/icon_alarm2.png') no-repeat 0 0;
 	background-size: 12.5px 15.5px;
 	position: relative;
 	top: 2px;
@@ -21019,7 +21043,7 @@ table.tableRanking td {
 	height: 6px;
 	padding: 0 1px;
 	margin-right: 3px;
-	background: url('../img/more_Black.png') no-repeat 0 0;
+	background: url('/img/more_Black.png') no-repeat 0 0;
 	background-size: 3px 6px;
 	position: relative;
 	top: -2px;
@@ -21032,7 +21056,7 @@ table.tableRanking td {
 	display: inline-block;
 	width: 5px;
 	height: 10px;
-	background: url('../img/icon_moreRR.png') no-repeat 0 0;
+	background: url('/img/icon_moreRR.png') no-repeat 0 0;
 	background-size: cover;
 }
 
@@ -21109,7 +21133,7 @@ table.tableRanking td {
 	display: inline-block;
 	width: 14px;
 	height: 14px;
-	background: url('../img/bg_x.png') no-repeat 0 0;
+	background: url('/img/bg_x.png') no-repeat 0 0;
 }
 
 .globalStock .sub_login .loign_com .att_service.free_service .mapage_form .form_table td .i_dsc.phone {
@@ -21240,7 +21264,7 @@ table.tableRanking td {
 	margin-right: 3px;
 	position: relative;
 	top: 2px;
-	background: url('../img/icon_home_on.png') no-repeat center center;
+	background: url('/img/icon_home_on.png') no-repeat center center;
 	background-size: 15px 14px;
 }
 
@@ -21384,11 +21408,11 @@ table.tableRanking td {
 	display: inline-block;
 	width: 14px;
 	height: 14px;
-	background: url('../img/bg_x.png') no-repeat 0 0;
+	background: url('/img/bg_x.png') no-repeat 0 0;
 }
 
 .globalStock .sub_login .mapage_area .mapage_form .form_table td .i_dsc.email i {
-	background: url('../img/banner/Icon_preinfo.png') no-repeat 0 0;
+	background: url('/img/banner/Icon_preinfo.png') no-repeat 0 0;
 	background-size: 14px 14px;
 }
 
@@ -21411,7 +21435,7 @@ table.tableRanking td {
 }
 
 .globalStock .sub_login .mapage_area .mapage_form .form_table td .i_dsc.phone_premium i {
-	background: url('../img/banner/Icon_preinfo.png') no-repeat 0 0;
+	background: url('/img/banner/Icon_preinfo.png') no-repeat 0 0;
 	background-size: 14px 14px;
 }
 
@@ -21556,7 +21580,7 @@ table.tableRanking td {
 	display: inline-block;
 	width: 6px;
 	height: 10px;
-	background: url('../img/more_Black.png') no-repeat 0 0;
+	background: url('/img/more_Black.png') no-repeat 0 0;
 	background-size: 6px 10px;
 	margin-left: 10px;
 }
@@ -21713,7 +21737,7 @@ table.tableRanking td {
 }
 
 .globalStock .sub_login .mapage_service_free .mid ul:last-child li {
-	background: url('../img/dot_line.png') no-repeat 0 8px;
+	background: url('/img/dot_line.png') no-repeat 0 8px;
 	padding-left: 8px;
 	color: #333;
 }
@@ -22018,7 +22042,7 @@ table.tableRanking td {
 }
 
 .globalStock .pay_edt .form_table td .certification_area .txt {
-	background: url('../img/dot_line.png') no-repeat 0 8px;
+	background: url('/img/dot_line.png') no-repeat 0 8px;
 	padding-left: 8px;
 	color: #939393;
 	font-size: 0.84rem;
@@ -22039,7 +22063,7 @@ table.tableRanking td {
 	display: inline-block;
 	width: 14px;
 	height: 14px;
-	background: url('../img/icon_moreR.png') no-repeat 0 100%;
+	background: url('/img/icon_moreR.png') no-repeat 0 100%;
 	background-size: auto;
 	padding: 4px 3px;
 	box-sizing: border-box;
@@ -22060,7 +22084,7 @@ table.tableRanking td {
 	top: -2px;
 	width: 16px;
 	height: 16px;
-	background: url('../img/icon_agreecheck.png') no-repeat 0 100%;
+	background: url('/img/icon_agreecheck.png') no-repeat 0 100%;
 	margin-right: 7px;
 }
 
@@ -22110,7 +22134,7 @@ table.tableRanking td {
 }
 
 .globalStock .sub_login .notice_freetxt .title {
-	background: url('../img/dot_line.png') no-repeat 0 8px;
+	background: url('/img/dot_line.png') no-repeat 0 8px;
 	padding-left: 8px;
 	color: #939393;
 	font-size: 0.84rem;
@@ -22173,7 +22197,7 @@ table.tableRanking td {
 
 .globalStock .sub_login .mapage_area .btn_save {
 	color: #404fc3;
-	background: #d8dbff url('../img/more_white.png') no-repeat calc(100% - 15px) 50%;
+	background: #d8dbff url('/img/more_white.png') no-repeat calc(100% - 15px) 50%;
 	border: 1px solid #d8dbff;
 }
 
@@ -22258,7 +22282,7 @@ table.tableRanking td {
 }
 
 .globalStock .sub_login .withdrawal_com .withdrawal_freetxt .title {
-	background: url('../img/dot_line.png') no-repeat 0 8px;
+	background: url('/img/dot_line.png') no-repeat 0 8px;
 	padding-left: 8px;
 	color: #939393;
 	font-size: 0.84rem;
@@ -22300,7 +22324,7 @@ table.tableRanking td {
 }
 
 .globalStock .sub_payment.sub_freeguide .sub_top.service_t01 {
-	background: #fff url('../img/bg_sub_freeguide.png') no-repeat right bottom;
+	background: #fff url('/img/bg_sub_freeguide.png') no-repeat right bottom;
 	background-size: 100% auto;
 	box-sizing: border-box;
 	height: 237px;
@@ -22473,7 +22497,7 @@ table.tableRanking td {
 	display: inline-block;
 	width: 5px;
 	height: 10px;
-	background: url('../img/icon_moreRR.png') no-repeat 0 0;
+	background: url('/img/icon_moreRR.png') no-repeat 0 0;
 	background-size: cover;
 }
 
@@ -22522,7 +22546,7 @@ table.tableRanking td {
 	line-height: 1.3;
 	margin-bottom: 10px;
 	padding-left: 7px;
-	background: url('../img/dot_gray.gif') no-repeat 0 7px;
+	background: url('/img/dot_gray.gif') no-repeat 0 7px;
 }
 
 .globalStock .sub_payment.sub_freeguide .sub_mid .notice_txt {
@@ -22573,7 +22597,7 @@ table.tableRanking td {
 }
 
 .globalStock .sub_payment.sub_freeguide .sub_top.service_com {
-	background: #fff url('../img/bg_sub_freeguide_com.png') no-repeat right bottom;
+	background: #fff url('/img/bg_sub_freeguide_com.png') no-repeat right bottom;
 	background-size: 144px auto;
 	box-sizing: border-box;
 	height: 214px;
@@ -22651,7 +22675,7 @@ table.tableRanking td {
 }
 
 .globalStock .sub_payment.sub_freeguide .notice_freetxt .title {
-	background: url('../img/dot_line.png') no-repeat 0 8px;
+	background: url('/img/dot_line.png') no-repeat 0 8px;
 	padding-left: 8px;
 	color: #939393;
 	font-size: 0.84rem;
@@ -22729,7 +22753,7 @@ table.tableRanking td {
 	bottom: 12px;
 	width: 5px;
 	height: 10px;
-	background: url('../img/icon_moreR.png') no-repeat 0 0;
+	background: url('/img/icon_moreR.png') no-repeat 0 0;
 	background-size: cover;
 }
 
@@ -22780,7 +22804,7 @@ table.tableRanking td {
 	content: '';
 	width: 16px;
 	height: 16px;
-	background: url('../img/icon_checkmark.png') no-repeat 100% 0;
+	background: url('/img/icon_checkmark.png') no-repeat 100% 0;
 	position: absolute;
 	right: 12px;
 	top: 13px;
@@ -22878,7 +22902,7 @@ table.tableRanking td {
 
 .globalStock .sub_payment .serviceStep .step_box .payRight .pay01::before {
 	content: '';
-	background: url('../img/c_line.png') no-repeat 100% 0;
+	background: url('/img/c_line.png') no-repeat 100% 0;
 	position: absolute;
 	left: 0;
 	top: 50%;
@@ -22915,7 +22939,7 @@ table.tableRanking td {
 	font-size: 0.75rem !important;
 	line-height: 1.1rem;
 	padding-left: 15px;
-	background: url('../img/dot_gray.gif') no-repeat 4px 8px;
+	background: url('/img/dot_gray.gif') no-repeat 4px 8px;
 }
 
 .globalStock .sub_payment .serviceStep .step_box .payRight .txt_line .txt:nth-child(2),
@@ -22958,7 +22982,7 @@ table.tableRanking td {
 	display: inline-block;
 	width: 5px;
 	height: 10px;
-	background: url('../img/icon_moreL.png') no-repeat 0 0;
+	background: url('/img/icon_moreL.png') no-repeat 0 0;
 	background-size: cover;
 }
 
@@ -22969,7 +22993,7 @@ table.tableRanking td {
 	display: inline-block;
 	width: 5px;
 	height: 10px;
-	background: url('../img/icon_moreRR.png') no-repeat 0 0;
+	background: url('/img/icon_moreRR.png') no-repeat 0 0;
 	background-size: cover;
 }
 
@@ -23056,7 +23080,7 @@ table.tableRanking td {
 	display: inline-block;
 	width: 14px;
 	height: 14px;
-	background: url('../img/bg_x.png') no-repeat 0 0;
+	background: url('/img/bg_x.png') no-repeat 0 0;
 }
 
 .globalStock .sub_payment .mapage_form .form_table td .i_dsc.phone {
@@ -23176,7 +23200,7 @@ table.tableRanking td {
 	top: -2px;
 	width: 16px;
 	height: 16px;
-	background: url('../img/icon_agreecheck.png') no-repeat 0 100%;
+	background: url('/img/icon_agreecheck.png') no-repeat 0 100%;
 	margin-right: 7px;
 }
 
@@ -23255,7 +23279,7 @@ table.tableRanking td {
 	display: inline-block;
 	width: 5px;
 	height: 10px;
-	background: url('../img/icon_moreRR.png') no-repeat 0 0;
+	background: url('/img/icon_moreRR.png') no-repeat 0 0;
 	background-size: cover;
 }
 
@@ -23365,7 +23389,7 @@ table.tableRanking td {
 	display: inline-block;
 	width: 13px;
 	height: 13px;
-	background: url('../img/icon_sale.png') no-repeat 0 0;
+	background: url('/img/icon_sale.png') no-repeat 0 0;
 	margin-right: 5px;
 }
 
@@ -23422,7 +23446,7 @@ table.tableRanking td {
 	display: inline-block;
 	width: 14px;
 	height: 14px;
-	background: url('../img/bg_x.png') no-repeat 0 0;
+	background: url('/img/bg_x.png') no-repeat 0 0;
 }
 
 .globalStock .sub_payment .payment_guide .mapage_form .form_table td .i_dsc.coupon {
@@ -23525,7 +23549,7 @@ table.tableRanking td {
 	margin-top: 10px;
 	color: #404fc3;
 	font-size: 0.82rem;
-	background: url('../img/dot_blue.png') no-repeat 0 4px;
+	background: url('/img/dot_blue.png') no-repeat 0 4px;
 	padding-left: 7px;
 }
 
@@ -23534,7 +23558,7 @@ table.tableRanking td {
 }
 
 .globalStock .sub_payment .payment_note .note li {
-	background: url('../img/dot_line.png') no-repeat 0 8px;
+	background: url('/img/dot_line.png') no-repeat 0 8px;
 	padding-left: 8px;
 	color: #939393;
 	font-size: 0.75rem;
@@ -23576,7 +23600,7 @@ table.tableRanking td {
 	vertical-align: top;
 	width: 16px;
 	height: 16px;
-	background: url('../img/icon_agreecheck.png') no-repeat 0 100%;
+	background: url('/img/icon_agreecheck.png') no-repeat 0 100%;
 	margin-right: 7px;
 }
 
@@ -23750,7 +23774,7 @@ table.tableRanking td {
 	vertical-align: top;
 	width: 16px;
 	height: 16px;
-	background: url('../img/icon_agreecheck.png') no-repeat 0 100%;
+	background: url('/img/icon_agreecheck.png') no-repeat 0 100%;
 	margin-right: 7px;
 }
 
@@ -23809,13 +23833,13 @@ table.tableRanking td {
 	vertical-align: top;
 	width: 20px;
 	height: 20px;
-	background: url('../img/select_on.png') no-repeat 0 100%;
+	background: url('/img/select_on.png') no-repeat 0 100%;
 	background-size: 20px 20px;
 	margin-right: 7px;
 }
 
 .globalStock .sub_payment .payment_note .top .agree.active i {
-	background: url('../img/select.png') no-repeat 0 100%;
+	background: url('/img/select.png') no-repeat 0 100%;
 	background-size: 20px 20px;
 }
 
@@ -23833,20 +23857,20 @@ table.tableRanking td {
 	vertical-align: top;
 	width: 20px;
 	height: 20px;
-	background: url('../img/select_on.png') no-repeat 0 100%;
+	background: url('/img/select_on.png') no-repeat 0 100%;
 	background-size: 20px 20px;
 	margin-right: 7px;
 }
 
 .globalStock .sub_payment .agree_chk .txt.active i {
-	background: url('../img/select.png') no-repeat 0 100%;
+	background: url('/img/select.png') no-repeat 0 100%;
 	background-size: 20px 20px;
 }
 
 .globalStock .sub_payment .agree_chk .age_link {
 	float: right;
 	padding: 11px 5px;
-	background: url('../img/more_Black.png') no-repeat center center;
+	background: url('/img/more_Black.png') no-repeat center center;
 	font-size: 0;
 	width: 7px;
 	height: 12px;
@@ -23876,13 +23900,13 @@ table.tableRanking td {
 	vertical-align: top;
 	width: 20px;
 	height: 20px;
-	background: url('../img/select_on.png') no-repeat 0 100%;
+	background: url('/img/select_on.png') no-repeat 0 100%;
 	background-size: 20px 20px;
 	margin-right: 7px;
 }
 
 .globalStock .sub_payment .payment_chk .txt.active i {
-	background: url('../img/select.png') no-repeat 0 100%;
+	background: url('/img/select.png') no-repeat 0 100%;
 	background-size: 20px 20px;
 }
 
@@ -23982,7 +24006,7 @@ table.tableRanking td {
 	width: 12.5px;
 	height: 15.5px;
 	margin-right: 3px;
-	background: url('../img/banner/icon_alarm2.png') no-repeat 0 0;
+	background: url('/img/banner/icon_alarm2.png') no-repeat 0 0;
 	background-size: 12.5px 15.5px;
 	position: relative;
 	top: 2px;
@@ -24021,7 +24045,7 @@ table.tableRanking td {
 	height: 6px;
 	padding: 0 1px;
 	margin-right: 3px;
-	background: url('../img/more_Black.png') no-repeat 0 0;
+	background: url('/img/more_Black.png') no-repeat 0 0;
 	background-size: 3px 6px;
 	position: relative;
 	top: -2px;
@@ -24029,7 +24053,7 @@ table.tableRanking td {
 
 /* 가입 - 결제완료 step 03 */
 .globalStock .sub_payment.step03 .step_top {
-	background: #fff url('../img/bg_payment_com.png') no-repeat 105% 22px;
+	background: #fff url('/img/bg_payment_com.png') no-repeat 105% 22px;
 	min-height: 200px;
 	box-sizing: border-box;
 }
@@ -24086,7 +24110,7 @@ table.tableRanking td {
 }
 
 .globalStock .sub_service .sub_top.service_t01 {
-	background: #fff url('../img/bg_service.png') no-repeat calc(100% + 70px) calc(100% - 8px);
+	background: #fff url('/img/bg_service.png') no-repeat calc(100% + 70px) calc(100% - 8px);
 	background-size: 202px 148px;
 }
 
@@ -24307,7 +24331,7 @@ table.tableRanking td {
 	display: inline-block;
 	width: 6px;
 	height: 10px;
-	background: url('../img/more_white.png') no-repeat 0 0;
+	background: url('/img/more_white.png') no-repeat 0 0;
 	background-size: 6px 10px;
 	margin-left: 10px;
 }
@@ -24350,7 +24374,7 @@ table.tableRanking td {
 /* 서비스소개 제휴사이트 */
 /* 서비스소개 프리미엄 */
 .globalStock .sub_service .sub_top.service_t02 {
-	background: #404fc3 url('../img/bg_service_2.png') no-repeat calc(100% + 16px) calc(100% + 4px);
+	background: #404fc3 url('/img/bg_service_2.png') no-repeat calc(100% + 16px) calc(100% + 4px);
 	background-size: 172px 196px;
 }
 
@@ -24390,7 +24414,7 @@ table.tableRanking td {
 .globalStock .sub_service .sub_con .w_box .box_title {
 	color: #333;
 	font-size: 1rem;
-	background: url('../img/bg_line.png') repeat-x 0 calc(100% + 10px);
+	background: url('/img/bg_line.png') repeat-x 0 calc(100% + 10px);
 	padding: 0 2px 5px 2px;
 	display: inline-block;
 	letter-spacing: -0.075rem;
@@ -24512,7 +24536,7 @@ table.tableRanking td {
 
 .globalStock .sub_service .sub_con .step_box .payRight .pay01::before {
 	content: '';
-	background: url('../img/c_line.png') no-repeat 100% 0;
+	background: url('/img/c_line.png') no-repeat 100% 0;
 	position: absolute;
 	right: 0;
 	top: 50%;
@@ -24616,7 +24640,7 @@ table.tableRanking td {
 
 .globalStock .sub_service .sub_con .compare_box .tableRanking.type_compare .com_select span {
 	display: inline-block;
-	background: url('../img/com_select.png') no-repeat 50% 50%;
+	background: url('/img/com_select.png') no-repeat 50% 50%;
 	background-size: 14px 11px;
 	width: 14px;
 	height: 11px
@@ -24694,7 +24718,7 @@ table.tableRanking td {
 	display: inline-block;
 	width: 70px;
 	height: 70px;
-	background: url('../img/bg_service_prm.png') no-repeat 0 0;
+	background: url('/img/bg_service_prm.png') no-repeat 0 0;
 	background-size: 100% 100%;
 }
 
@@ -24755,7 +24779,7 @@ table.tableRanking td {
 
 .globalStock .sub_service .sub_mid .sub_con .banner_prm .cho_prm i {
 	display: inline-block;
-	background: url('../img/Icon_lock.svg') no-repeat;
+	background: url('/img/Icon_lock.svg') no-repeat;
 	width: 10px;
 	height: 13px;
 	background-size: 10px 13px;
@@ -24831,7 +24855,7 @@ table.tableRanking td {
 
 /* 서비스소개 가이드 */
 .globalStock .sub_service .sub_top.service_t03 {
-	background: #fff url('../img/bg_service_3.png') no-repeat calc(100% + 70px) calc(100% + 40px);
+	background: #fff url('/img/bg_service_3.png') no-repeat calc(100% + 70px) calc(100% + 40px);
 	background-size: 235px 175px;
 }
 
@@ -25113,7 +25137,7 @@ table.tableRanking td {
 	margin-bottom: 19px;
 	margin-left: 10px;
 	display: inline-block;
-	background: url('../img/icon_faq.png') no-repeat center top;
+	background: url('/img/icon_faq.png') no-repeat center top;
 	width: 10px;
 	height: 5px;
 	background-size: 100% auto;
@@ -25753,7 +25777,7 @@ table.tableRanking td {
 	display: inline-block;
 	width: 12px;
 	height: 12px;
-	background: url('../img/event_clse.png') no-repeat right 2px;
+	background: url('/img/event_clse.png') no-repeat right 2px;
 	background-size: 10px 10px;
 	vertical-align: top;
 	padding-left: 5px;
@@ -25849,7 +25873,7 @@ table.tableRanking td {
 	display: inline-block;
 	width: 14px;
 	height: 14px;
-	background: url('../img/banner/Icon_info.png') no-repeat 0 0;
+	background: url('/img/banner/Icon_info.png') no-repeat 0 0;
 	margin-bottom: 2px;
 	margin-right: 3px;
 	background-size: 14px 14px;
@@ -26017,7 +26041,7 @@ table.tableRanking td {
 }
 
 .globalStock.mint .main_mid.event_anay .area .analysis_score .chart_analysis .line .i_graph.graph_prm .g_action {
-	background-image: url('../img/graph_prmB_mint.gif');
+	background-image: url('/img/graph_prmB_mint.gif');
 }
 
 .globalStock.mint .tab_area .tbas_lb.tabs_3 li a.active {
@@ -26150,7 +26174,7 @@ table.tableRanking td {
 }
 
 .globalStock.mint .sub_attract .sub_mid.attract_sub .weeks_free .box .title i {
-	background-image: url('../img/Icon_lockB_mint.png');
+	background-image: url('/img/Icon_lockB_mint.png');
 }
 
 .globalStock.mint .sub_research .sub_mid.research_board .set span.active {
@@ -26188,7 +26212,7 @@ table.tableRanking td {
 }
 
 .globalStock.mint .sub_search .latest_results .tabsArea .weeks_free .box .title i {
-	background-image: url('../img/Icon_lockB_mint.png');
+	background-image: url('/img/Icon_lockB_mint.png');
 }
 
 .globalStock.mint .sub_search .latest_results .tabsArea .weeks_free .box .title {
@@ -26208,7 +26232,7 @@ table.tableRanking td {
 }
 
 .globalStock.mint .sub_search .latest_results .tabsArea .onestep_sample .box .title i {
-	background-image: url('../img/Icon_lockB_mint.png');
+	background-image: url('/img/Icon_lockB_mint.png');
 }
 
 .globalStock.mint .sub_search .latest_results .tabsArea .onestep_sample .box .title {
@@ -26238,7 +26262,7 @@ table.tableRanking td {
 }
 
 .globalStock.mint .gnb li.home.active i {
-	background-image: url('../img/icon_home_on_mint.png');
+	background-image: url('/img/icon_home_on_mint.png');
 }
 
 .globalStock.mint .free_pop.md-modal #setting .pop_btm .btn_save {
@@ -26340,7 +26364,7 @@ table.tableRanking td {
 }
 
 .globalStock.mint .sub_search .sub_mid .tab_diagnosis_area .weeks_free .box .btn_free i {
-	background-image: url('../img/more_Black.png');
+	background-image: url('/img/more_Black.png');
 }
 
 .globalStock.mint .sub_search .sub_mid.tabs_area .compet_chart_uses .title strong {
@@ -26360,7 +26384,7 @@ table.tableRanking td {
 }
 
 .globalStock.mint .sub_search .sub_mid.tabs_area>.weeks_free .box .btn_free i {
-	background-image: url('../img/more_Black.png');
+	background-image: url('/img/more_Black.png');
 }
 
 .globalStock.mint .sub_search .sub_mid.tabs_area .alloca_info .term strong {
@@ -26495,7 +26519,7 @@ table.tableRanking td {
 }
 
 .globalStock.mint .sub_service .sub_top.service_t01 {
-	background: #404FC3 url('../img/bg_service_alliance.png') no-repeat center bottom;
+	background: #404FC3 url('/img/bg_service_alliance.png') no-repeat center bottom;
 	background-size: 342px auto;
 }
 
@@ -26614,7 +26638,7 @@ table.tableRanking td {
 	font-size: 0.9rem;
 	color: #404fc3;
 	margin-right: 4px;
-	background: url('../img/bg_bbline.png') repeat-x 0 calc(100% + 7px);
+	background: url('/img/bg_bbline.png') repeat-x 0 calc(100% + 7px);
 }
 
 .globalStock.mint .sub_service .sub_con .tips .txt {
@@ -26634,7 +26658,7 @@ table.tableRanking td {
 }
 
 .globalStock.mint .sub_service .sub_con .banner_cho {
-	background: #404fc3 url('../img/bg_banner_cho.png') no-repeat left bottom;
+	background: #404fc3 url('/img/bg_banner_cho.png') no-repeat left bottom;
 	background-size: auto 167px;
 	padding: 30px 30px;
 	text-align: right;
@@ -26649,7 +26673,7 @@ table.tableRanking td {
 .globalStock.mint .sub_service .sub_con .banner_cho .b_title strong {
 	display: inline-block;
 	color: #1ee8be;
-	background: url('../img/bg_bline.png') repeat-x 0 calc(100% + 6px);
+	background: url('/img/bg_bline.png') repeat-x 0 calc(100% + 6px);
 }
 
 .globalStock.mint .sub_service .sub_con .banner_cho .link_cho {
@@ -26672,7 +26696,7 @@ table.tableRanking td {
 	display: inline-block;
 	width: 6px;
 	height: 10px;
-	background: url('../img/more_white.png') no-repeat 0 0;
+	background: url('/img/more_white.png') no-repeat 0 0;
 	background-size: 6px 10px;
 	margin-left: 10px;
 }
@@ -27064,7 +27088,7 @@ table.tableRanking td {
 
 .globalStock.red .sub_game .gameSwiper .swiper-button-next,
 .globalStock.red .sub_game .gameSwiper .swiper-button-prev {
-	background-image: url('../img/swiper_btn_b.png');
+	background-image: url('/img/swiper_btn_b.png');
 }
 
 .globalStock.red .sub_attract .sub_mid.attract_sub .btn_schSet {
@@ -27202,7 +27226,7 @@ table.tableRanking td {
 
 .globalStock.red .sub_search .sub_mid.tabs_area>.weeks_free .box .btn_free i,
 .globalStock.red .sub_search .sub_mid .tab_diagnosis_area .weeks_free .box .btn_free i {
-	background: url('../img/more_yel.png') no-repeat right 0;
+	background: url('/img/more_yel.png') no-repeat right 0;
 	background-size: 6px 10px;
 }
 
@@ -27225,7 +27249,7 @@ table.tableRanking td {
 }
 
 .globalStock.red .sub_research .sub_mid.research_board .lst_type2.lst_lock dt.tit strong {
-	background: url('../img/prm_tabsLock_red.png') no-repeat 0 2px;
+	background: url('/img/prm_tabsLock_red.png') no-repeat 0 2px;
 	background-size: 12px 16px;
 }
 
@@ -27255,14 +27279,14 @@ table.tableRanking td {
 }
 
 .globalStock.red .sub_service .alliance_wrap .sub_con .banner_cho {
-	background: #E56468 url('../img/px_bg_banner_cho.png') no-repeat left bottom;
+	background: #E56468 url('/img/px_bg_banner_cho.png') no-repeat left bottom;
 	background-size: auto 167px;
 }
 
 .globalStock.red .sub_service .alliance_wrap .sub_con .banner_cho .b_title strong {
 	display: inline-block;
 	color: #FFFF00;
-	background: url('../img/bg_rline.png') repeat-x 0 calc(100% + 6px);
+	background: url('/img/bg_rline.png') repeat-x 0 calc(100% + 6px);
 }
 
 .globalStock.red .sub_service .alliance_wrap .sub_con .banner_cho .link_cho {
@@ -27278,7 +27302,7 @@ table.tableRanking td {
 	display: inline-block;
 	width: 6px;
 	height: 10px;
-	background: url('../img/more_white.png') no-repeat 0 0;
+	background: url('/img/more_white.png') no-repeat 0 0;
 	background-size: 6px 10px;
 	margin-left: 10px;
 }
@@ -27332,7 +27356,7 @@ table.tableRanking td {
 }
 
 .globalStock .sub_service .alliance_wrap .sub_top.service_t01 {
-	background: #404FC3 url('../img/bg_service_alliance.png') no-repeat center bottom;
+	background: #404FC3 url('/img/bg_service_alliance.png') no-repeat center bottom;
 	background-size: 342px auto;
 	position: relative;
 }
@@ -27362,7 +27386,7 @@ table.tableRanking td {
 }
 
 .globalStock.red .sub_service .alliance_wrap .sub_top.service_t01 {
-	background: #E56468 url('../img/px_bg_service_alliance.png') no-repeat center bottom;
+	background: #E56468 url('/img/px_bg_service_alliance.png') no-repeat center bottom;
 	background-size: 342px auto;
 }
 
@@ -27538,7 +27562,7 @@ table.tableRanking td {
 	font-size: 0.9rem;
 	color: #404fc3;
 	margin-right: 4px;
-	background: url('../img/bg_bbline.png') repeat-x 0 calc(100% + 7px);
+	background: url('/img/bg_bbline.png') repeat-x 0 calc(100% + 7px);
 }
 
 .globalStock .sub_service .alliance_wrap .sub_con .tips .txt {
@@ -27558,7 +27582,7 @@ table.tableRanking td {
 }
 
 .globalStock .sub_service .alliance_wrap .sub_con .banner_cho {
-	background: #404fc3 url('../img/bg_banner_cho.png') no-repeat left bottom;
+	background: #404fc3 url('/img/bg_banner_cho.png') no-repeat left bottom;
 	background-size: auto 167px;
 	padding: 30px 30px;
 	text-align: right;
@@ -27575,7 +27599,7 @@ table.tableRanking td {
 	display: inline-block;
 	font-weight: 500;
 	color: #1ee8be;
-	background: url('../img/bg_bline.png') repeat-x 0 calc(100% + 6px);
+	background: url('/img/bg_bline.png') repeat-x 0 calc(100% + 6px);
 }
 
 .globalStock .sub_service .alliance_wrap .sub_con .banner_cho .link_cho {
@@ -27601,7 +27625,7 @@ table.tableRanking td {
 	display: inline-block;
 	width: 6px;
 	height: 10px;
-	background: url('../img/more_white.png') no-repeat 0 0;
+	background: url('/img/more_white.png') no-repeat 0 0;
 	background-size: 6px 10px;
 	margin-left: 10px;
 }
@@ -27643,7 +27667,7 @@ table.tableRanking td {
 	height: 160px;
 	padding: 30px 30px;
 	box-sizing: border-box;
-	background: url('../img/bg_banner_outDH.jpg') no-repeat right top, url('../img/banner/bg_banner_outDH.jpg') no-repeat right top;
+	background: url('/img/bg_banner_outDH.jpg') no-repeat right top, url('/img/banner/bg_banner_outDH.jpg') no-repeat right top;
 	background-color: #404fc3;
 	background-size: auto 100%;
 }
@@ -27690,7 +27714,7 @@ table.tableRanking td {
 	display: inline-block;
 	width: 6px;
 	height: 10px;
-	background: url('../img/more_blue.png') no-repeat 0 0;
+	background: url('/img/more_blue.png') no-repeat 0 0;
 	background-size: 6px 10px;
 	margin-left: 10px;
 }
@@ -27722,7 +27746,7 @@ table.tableRanking td {
 	display: inline-block;
 	width: 14px;
 	height: 14px;
-	background: url('../img/icon_nightalarm.png') no-repeat 0 0;
+	background: url('/img/icon_nightalarm.png') no-repeat 0 0;
 	background-size: 14px 14px;
 }
 
@@ -27731,7 +27755,7 @@ table.tableRanking td {
 /******** (팍스넷) **********/
 /****************************/
 .globalStock .main_btm.banner_area .banner_1yearevent {
-	background: #404FC3 url('../img/banner/bg_1yearevent.png') no-repeat calc(100% + 10px) bottom;
+	background: #404FC3 url('/img/banner/bg_1yearevent.png') no-repeat calc(100% + 10px) bottom;
 	background-size: 59px 29px;
 	border-radius: 5px;
 	margin-top: 25px;
@@ -27746,7 +27770,7 @@ table.tableRanking td {
 
 .globalStock .main_btm.banner_area .banner_1yearevent .cho_prm i {
 	display: inline-block;
-	background: url('../img/Icon_lock.svg') no-repeat;
+	background: url('/img/Icon_lock.svg') no-repeat;
 	width: 10px;
 	height: 13px;
 	background-size: 10px 13px;
@@ -27794,7 +27818,7 @@ table.tableRanking td {
 
 .globalStock .sub_recom .sub_mid.eventPicks_area .banner_1yearevent .cho_prm i {
 	display: inline-block;
-	background: url('../img/Icon_lock.svg') no-repeat;
+	background: url('/img/Icon_lock.svg') no-repeat;
 	width: 10px;
 	height: 13px;
 	background-size: 10px 13px;
@@ -27840,7 +27864,7 @@ table.tableRanking td {
 
 .globalStock .sub_service .sub_mid .sub_con .banner_1yearevent .cho_prm i {
 	display: inline-block;
-	background: url('../img/Icon_lock.svg') no-repeat;
+	background: url('/img/Icon_lock.svg') no-repeat;
 	width: 10px;
 	height: 13px;
 	background-size: 10px 13px;
@@ -27882,7 +27906,7 @@ table.tableRanking td {
 }
 
 .globalStock .sub_search .sub_mid .tab_diagnosis_area .weeks_free.event_900 .box {
-	background: #404fc3 url('../img/banner/bg_1yearevent02.png') no-repeat right bottom;
+	background: #404fc3 url('/img/banner/bg_1yearevent02.png') no-repeat right bottom;
 	background-size: 128px 70px;
 }
 
@@ -27902,7 +27926,7 @@ table.tableRanking td {
 	display: inline-block;
 	width: 6px;
 	height: 10px;
-	background: url('../img/more_white.png') no-repeat 0 0;
+	background: url('/img/more_white.png') no-repeat 0 0;
 	background-size: 6px 10px;
 	margin-left: 10px;
 }
@@ -27915,12 +27939,12 @@ table.tableRanking td {
 	display: inline-block;
 	width: 33px;
 	height: 13px;
-	background: url('../img/banner/img_y_box.png') no-repeat 0 0;
+	background: url('/img/banner/img_y_box.png') no-repeat 0 0;
 	background-size: 33px 13px;
 }
 
 .globalStock .sub_attract .sub_mid.attract_sub .weeks_free.event_900 .box {
-	background: #404fc3 url('../img/banner/bg_1yearevent02.png') no-repeat right bottom;
+	background: #404fc3 url('/img/banner/bg_1yearevent02.png') no-repeat right bottom;
 	background-size: 128px 70px;
 }
 
@@ -27934,7 +27958,7 @@ table.tableRanking td {
 	display: inline-block;
 	width: 10px;
 	height: 13px;
-	background: url('../img/Icon_lockF.png') no-repeat 0 0;
+	background: url('/img/Icon_lockF.png') no-repeat 0 0;
 	background-size: 10px 13px;
 	margin-right: 3px;
 }
@@ -27964,7 +27988,7 @@ table.tableRanking td {
 	display: inline-block;
 	width: 6px;
 	height: 10px;
-	background: url('../img/more_white.png') no-repeat 0 0;
+	background: url('/img/more_white.png') no-repeat 0 0;
 	background-size: 6px 10px;
 	margin-left: 10px;
 }
@@ -27977,12 +28001,12 @@ table.tableRanking td {
 	display: inline-block;
 	width: 33px;
 	height: 13px;
-	background: url('../img/banner/img_y_box.png') no-repeat 0 0;
+	background: url('/img/banner/img_y_box.png') no-repeat 0 0;
 	background-size: 33px 13px;
 }
 
 .globalStock .sub_service .sub_mid .sub_con .weeks_free.event_900 .box {
-	background: #404fc3 url('../img/banner/bg_1yearevent03.png') no-repeat right bottom;
+	background: #404fc3 url('/img/banner/bg_1yearevent03.png') no-repeat right bottom;
 	background-size: 106px 142px;
 	padding: 25px 22px;
 }
@@ -28025,7 +28049,7 @@ table.tableRanking td {
 	display: inline-block;
 	width: 6px;
 	height: 10px;
-	background: url('../img/more_white.png') no-repeat 0 0;
+	background: url('/img/more_white.png') no-repeat 0 0;
 	background-size: 6px 10px;
 	margin-left: 10px;
 }
@@ -28038,12 +28062,12 @@ table.tableRanking td {
 	display: inline-block;
 	width: 33px;
 	height: 13px;
-	background: url('../img/banner/img_y_box.png') no-repeat 0 0;
+	background: url('/img/banner/img_y_box.png') no-repeat 0 0;
 	background-size: 33px 13px;
 }
 
 .globalStock .sub_search .sub_mid.tabs_area>.weeks_free.event_900 .box {
-	background: #404fc3 url('../img/banner/bg_1yearevent02.png') no-repeat right bottom;
+	background: #404fc3 url('/img/banner/bg_1yearevent02.png') no-repeat right bottom;
 	background-size: 128px 70px;
 }
 
@@ -28063,7 +28087,7 @@ table.tableRanking td {
 	display: inline-block;
 	width: 6px;
 	height: 10px;
-	background: url('../img/more_white.png') no-repeat 0 0;
+	background: url('/img/more_white.png') no-repeat 0 0;
 	background-size: 6px 10px;
 	margin-left: 10px;
 }
@@ -28076,12 +28100,12 @@ table.tableRanking td {
 	display: inline-block;
 	width: 33px;
 	height: 13px;
-	background: url('../img/banner/img_y_box.png') no-repeat 0 0;
+	background: url('/img/banner/img_y_box.png') no-repeat 0 0;
 	background-size: 33px 13px;
 }
 
 .globalStock .sub_search .latest_results .tabsArea .weeks_free.event_900 .box {
-	background: #404fc3 url('../img/banner/bg_1yearevent02.png') no-repeat right bottom;
+	background: #404fc3 url('/img/banner/bg_1yearevent02.png') no-repeat right bottom;
 	background-size: 128px 70px;
 }
 
@@ -28095,7 +28119,7 @@ table.tableRanking td {
 	display: inline-block;
 	width: 10px;
 	height: 13px;
-	background: url('../img/Icon_lockF.png') no-repeat 0 0;
+	background: url('/img/Icon_lockF.png') no-repeat 0 0;
 	background-size: 10px 13px;
 	margin-right: 3px;
 }
@@ -28125,7 +28149,7 @@ table.tableRanking td {
 	display: inline-block;
 	width: 6px;
 	height: 10px;
-	background: url('../img/more_white.png') no-repeat 0 0;
+	background: url('/img/more_white.png') no-repeat 0 0;
 	background-size: 6px 10px;
 	margin-left: 10px;
 }
@@ -28138,12 +28162,12 @@ table.tableRanking td {
 	display: inline-block;
 	width: 33px;
 	height: 13px;
-	background: url('../img/banner/img_y_box.png') no-repeat 0 0;
+	background: url('/img/banner/img_y_box.png') no-repeat 0 0;
 	background-size: 33px 13px;
 }
 
 .globalStock .catch_wrap .weeks_free.event_900 .box {
-	background: #e6e7f4 url('../img/banner/bg_1yearevent03.png') no-repeat right bottom;
+	background: #e6e7f4 url('/img/banner/bg_1yearevent03.png') no-repeat right bottom;
 	background-size: 106px 142px;
 }
 
@@ -28164,7 +28188,7 @@ table.tableRanking td {
 	display: inline-block;
 	width: 6px;
 	height: 10px;
-	background: url('../img/more_white.png') no-repeat 0 0;
+	background: url('/img/more_white.png') no-repeat 0 0;
 	background-size: 6px 10px;
 	margin-left: 10px;
 }
@@ -28177,7 +28201,7 @@ table.tableRanking td {
 	display: inline-block;
 	width: 33px;
 	height: 13px;
-	background: url('../img/banner/img_y_box.png') no-repeat 0 0;
+	background: url('/img/banner/img_y_box.png') no-repeat 0 0;
 	background-size: 33px 13px;
 }
 
@@ -28201,7 +28225,7 @@ table.tableRanking td {
 	width: auto;
 	padding: 0 3px;
 	right: -73px;
-	background: url('../img/banner/bg_ybline.png') repeat-x 0 calc(100% + 8px);
+	background: url('/img/banner/bg_ybline.png') repeat-x 0 calc(100% + 8px);
 	padding: 0;
 }
 
@@ -28961,20 +28985,20 @@ table.tableRanking td {
 
 .globalStock.kiwoom .sub_search .tabs_5.prm_tabs li:nth-child(4) {
 	padding: 0 2px;
-	background: url('../img/prm_tabsLock.svg') no-repeat calc(100% - 3px) center;
+	background: url('/img/prm_tabsLock.svg') no-repeat calc(100% - 3px) center;
 	background-size: 8px auto;
 }
 
 @media (min-width:320px) and (max-width:359px) {
 	.globalStock.kiwoom .sub_search .tabs_5.prm_tabs li:nth-child(4) {
-		background: url('../img/prm_tabsLock.svg') no-repeat calc(100% - 0px) center;
+		background: url('/img/prm_tabsLock.svg') no-repeat calc(100% - 0px) center;
 		background-size: 8px auto;
 	}
 }
 
 .globalStock.kiwoom .sub_search .tabs_5.prm_tabs li:nth-child(5) {
 	padding: 0 6px;
-	background: url('../img/prm_tabsLock.svg') no-repeat calc(100% - 6px) center;
+	background: url('/img/prm_tabsLock.svg') no-repeat calc(100% - 6px) center;
 	background-size: 8px auto;
 }
 
@@ -29270,7 +29294,7 @@ table.tableRanking td {
 	display: inline-block;
 	width: 5px;
 	height: 10px;
-	background: url('../img/icon_moreRR.png') no-repeat 0 0;
+	background: url('/img/icon_moreRR.png') no-repeat 0 0;
 	background-size: cover;
 }
 
@@ -30122,7 +30146,7 @@ table.tableRanking td {
 	font-size: 0.75rem;
 	font-weight: bold;
 	color: #8c90ad;
-	background: url('../img/more_blue.svg') no-repeat right center;
+	background: url('/img/more_blue.svg') no-repeat right center;
 }
 
 .globalStock .sub_search .sub_mid.outline_box .box .title .txt_guide {
@@ -30371,7 +30395,7 @@ table.tableRanking td {
 	position: absolute;
 	right: 15px;
 	top: 15px;
-	background: url('../img/clse.png') no-repeat 0 0;
+	background: url('/img/clse.png') no-repeat 0 0;
 	background-size: 100% 100%;
 	padding: 2px;
 }
@@ -30434,7 +30458,7 @@ table.tableRanking td {
 	vertical-align: top;
 	width: 24px;
 	height: 25px;
-	background: url('../img/game_trans.svg') no-repeat 0 0;
+	background: url('/img/game_trans.svg') no-repeat 0 0;
 	background-size: 114px 24px;
 }
 
@@ -30529,7 +30553,7 @@ table.tableRanking td {
 	line-height: 1.18;
 	color: #f9db4c;
 	text-align: center;
-	background: #404fc3 url('../img/more_yel.svg') no-repeat calc(100% - 10px) center;
+	background: #404fc3 url('/img/more_yel.svg') no-repeat calc(100% - 10px) center;
 	background-size: 5px 8px;
 }
 
@@ -30542,7 +30566,7 @@ table.tableRanking td {
 	width: 10px;
 	height: 13px;
 	margin-right: 4px;
-	background: url('../img/Icon_lock.svg') no-repeat 0 0;
+	background: url('/img/Icon_lock.svg') no-repeat 0 0;
 	background-size: 10px 13px;
 }
 
@@ -30676,7 +30700,7 @@ table.tableRanking td {
 	pointer-events: none;
 	width: 10px;
 	height: 10px;
-	/* background: url('../img/situation_arow.svg') no-repeat center center; */
+	/* background: url('/img/situation_arow.svg') no-repeat center center; */
 	border-radius: 50%;
 	background-color: #404fc3;
 	z-index: 90;
@@ -30766,7 +30790,7 @@ table.tableRanking td {
 
 .globalStock .sub_search .sub_mid.outline_box .box .event_attractiveness {
 	width: 100%;
-	background: url('../img/bg_event_attractiveness.svg') no-repeat 9px center;
+	background: url('/img/bg_event_attractiveness.svg') no-repeat 9px center;
 }
 
 .globalStock .sub_search .sub_mid.outline_box .box .event_attractiveness ul {
@@ -30789,7 +30813,7 @@ table.tableRanking td {
 .globalStock .sub_search .sub_mid.outline_box .box .event_attractiveness li.att_on {
 	padding: 0 2px;
 	color: #404fc3;
-	background: url('../img/bg_bbline.png') repeat-x 0 calc(100% + 8px);
+	background: url('/img/bg_bbline.png') repeat-x 0 calc(100% + 8px);
 }
 
 .globalStock .sub_search .sub_mid.outline_box .box .event_attractiveness li.att_on a {
@@ -31640,7 +31664,7 @@ table.tableRanking td {
 
 .globalStock .sub_search .sub_mid .adequate_stock .box .adequate_price .nodata_area .banner_prm .cho_prm i {
 	display: inline-block;
-	background: url('../img/Icon_lock.svg') no-repeat;
+	background: url('/img/Icon_lock.svg') no-repeat;
 	width: 10px;
 	height: 13px;
 	background-size: 10px 13px;
@@ -31796,7 +31820,7 @@ table.tableRanking td {
 	top: 3px;
 	width: 12px;
 	height: 12px;
-	background: url('../img/icon_awesome.svg') no-repeat center center;
+	background: url('/img/icon_awesome.svg') no-repeat center center;
 }
 
 .globalStock .sub_search .sub_mid .bandchart_more .more {
@@ -31850,7 +31874,7 @@ table.tableRanking td {
 	top: 3px;
 	width: 12px;
 	height: 12px;
-	background: url('../img/icon_awesome.svg') no-repeat center center;
+	background: url('/img/icon_awesome.svg') no-repeat center center;
 }
 
 .globalStock .sub_search .sub_mid .bandchart_sume .box {
@@ -31915,7 +31939,7 @@ table.tableRanking td {
 	display: inline-block;
 	width: 15px;
 	height: 12px;
-	background: url('../img/icon_youtube.svg') no-repeat center center;
+	background: url('/img/icon_youtube.svg') no-repeat center center;
 	margin-right: 8px;
 }
 
@@ -31994,7 +32018,7 @@ table.tableRanking td {
 .globalStock .sub_search .sub_mid.research_board .news_no_data {
 	margin: 20px 15px 0;
 	border-radius: 20px;
-	background: #fff url('../img/bg_nodata.png') no-repeat center 70px;
+	background: #fff url('/img/bg_nodata.png') no-repeat center 70px;
 	box-sizing: border-box;
 	padding-top: 240px;
 	padding-bottom: 15px;
@@ -32087,7 +32111,7 @@ table.tableRanking td {
 
 .globalStock .sub_search .sub_mid.research_board .lst_type2.lst_lock dt.tit strong {
 	padding-left: 20px;
-	background: url('../img/prm_tabsLock.svg') no-repeat 0 center;
+	background: url('/img/prm_tabsLock.svg') no-repeat 0 center;
 	background-size: 11px auto;
 	word-break: break-all;
 }
@@ -32146,7 +32170,7 @@ table.tableRanking td {
 	display: inline-block;
 	width: 80px;
 	height: 71px;
-	background: #fff url('../img/noimg.png') no-repeat center center;
+	background: #fff url('/img/noimg.png') no-repeat center center;
 	background-size: cover;
 	border: 1px solid #E0E4E9;
 	border-radius: 10px;
@@ -32280,17 +32304,17 @@ table.tableRanking td {
 	}
 
 	.globalStock .sub_service .sub_top.service_t01 {
-		background: #fff url('../img/bg_service.png') no-repeat right bottom;
+		background: #fff url('/img/bg_service.png') no-repeat right bottom;
 		background-size: 202px 148px;
 	}
 
 	.globalStock .sub_service .sub_top.service_t03 {
-		background: #fff url('../img/bg_service_3.png') no-repeat right bottom;
+		background: #fff url('/img/bg_service_3.png') no-repeat right bottom;
 		background-size: 235px 175px;
 	}
 
 	.globalStock .sub_service .sub_top.service_t02 {
-		background: #404fc3 url('../img/bg_service_2.png') no-repeat right bottom;
+		background: #404fc3 url('/img/bg_service_2.png') no-repeat right bottom;
 		background-size: 172px 196px;
 	}
 
@@ -32346,7 +32370,7 @@ table.tableRanking td {
 	}
 
 	.globalStock .sub_search .sub_mid .adequate_stock .box .con .value_chart .prm_lock span {
-		background: #404fc3 url('../img/more_yel.svg') no-repeat 95% center;
+		background: #404fc3 url('/img/more_yel.svg') no-repeat 95% center;
 		background-size: 5px 8px
 	}
 }
@@ -32555,7 +32579,7 @@ table.tableRanking td {
 .free_2weeks .content .info_txt {
 	padding-top: 35px;
 	padding-bottom: 25px;
-	background: url('../img/bg_free_2weeks.svg') no-repeat right 17px;
+	background: url('/img/bg_free_2weeks.svg') no-repeat right 17px;
 }
 
 .free_2weeks .content .info_txt .txt01 {
@@ -32571,7 +32595,7 @@ table.tableRanking td {
 .free_2weeks .content .info_txt .txt01 strong {
 	display: inline;
 	color: #404fc3;
-	background: url('../img/bg_blue_line.gif') repeat-x right bottom;
+	background: url('/img/bg_blue_line.gif') repeat-x right bottom;
 }
 
 .free_2weeks .content .info_txt .txt02 {
@@ -32657,7 +32681,7 @@ table.tableRanking td {
 }
 
 .free_2weeks.valueChart .content .info_txt {
-	background: url('../img/banner/bg_2w_valueChart.png') no-repeat right 36px;
+	background: url('/img/banner/bg_2w_valueChart.png') no-repeat right 36px;
 	background-size: 109px auto;
 }
 

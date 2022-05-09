@@ -3088,7 +3088,7 @@ $(document).ready(function () {
 
             tooltip: {
                 shared: true,
-                pointFormat: '<span style="color:{series.color}">{series.name} : <b>{point.y:,.0f} 백만달러</b><br/>',
+                pointFormat: '{series.name}: <b>{point.y}</b><br/>',
             },
 
             xAxis: [{
