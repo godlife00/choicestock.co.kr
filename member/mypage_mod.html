@@ -101,60 +101,58 @@
                                             <td>
                                                 <div class="item mod_phone">
                                                     <p class="txt_info" id="phone_number">010-4754-9624</p>
-                                                    <span class="mod_btn"><a href="javascript:fnChangePhone();">휴대폰 번호 변경</a></span>
-                                                    <p class="i_dsc phone_premium"><i></i>프리미엄회원에게는 휴대폰으로 종목추천/관심 종목 등 알림서비스가 제공됩니다.</p>
+                                                    <span class="mod_btn">휴대폰 번호 변경</span>
+                                                    <!-- 휴대폰 번호 변경 시 입력 폼 노출 -->
+                                                    <script>
+                                                        $(document).ready(function () {                                                            
+                                                            $('.mapage_form .form_table .phonePin_form').show();
+                                                            $('.mapage_form .form_table td .mod_btn').on("click", function () {
+                                                                console.log("폰변경");        
+                                                                $('.mapage_form .form_table .phonePin_form').fadeIn();
+                                                            });
+                                                        });
+                                                    </script>    
+                                                    <!-- //휴대폰 번호 변경 시 입력 폼 노출 -->                                                
+                                                    <p class="i_dsc phone_premium"><i></i>프리미엄회원에게는 서비스 편의를 위해 휴대폰 문자 또는 알림 메시지(Push) 등으로 종목추천/관심 종목 등 알림서비스가 제공됩니다. 단, 알림서비스는 통신사 또는 인터넷 업체 사정에 따라 지연/미수신 될 수 있습니다.</p>
                                                 </div>
                                             </td>
                                         </tr>
                                         <tr>
-                                            <th scope="row">휴대폰번호</th>
-                                            <td>
-                                                <div class="item mod_phone">
-                                                    <input type="number" name="" id="" class="phone_mod">
-                                                    <span class="certifi_btn">인증문자 전송</span>
-                                                    <p class="i_guide">휴대폰 번호로 프리미엄 알림서비스가 제공됩니다.</p>
-                                                    <p class="i_dsc phone"><i></i>현재 사용중인 휴대폰번호 입니다</p>
-                                                </div>
+                                            <!-- <th scope="row">휴대폰번호</th> -->
+                                            <td colspan="2" class="phonePin_form">
+                                                <form action="">
+                                                    <fieldset>
+                                                        <div class="box">
+                                                            <input type="tel" placeholder="010-1234-4567" class="pinInput">
+                                                            <input type="button" src="../img/icon_search.svg" value="인증번호요청" class="pinBtn">
+                                                            <p class="dsc_error">사용중인 휴대폰번호 입니다</p>
+                                                        </div>
+                                                        <div class="box">
+                                                            <p class="" id="auth_result"></p>
+                                                            <input type="number" class="pinInput_out" name="auth-token" inputmode="numeric" pattern="[0-9]*"
+                                                                autocomplete="one-time-code" placeholder="인증번호 입력 (2:37) ">
+                                                            <input type="button" src="../img/icon_search.svg" value="인증번호 확인" class="pin_completion">
+                                                            <!-- <p class="pin_countDown" id="time_zone">제한시간 내 입력해주세요. (<span id="timer">05:59</span>)</p> -->
+                                                            <p class="dsc_error" id="auth_result">인증번호가 일치하지 않습니다. 다시 입력해주세요.</p>
+                                                            <p class="txt_reject">휴대폰으로 전송된 인증번호 입력 후 '확인' 버튼을 눌러주세요.</p>
+                                                        </div>
+                                                    </fieldset>
+                                                    <!-- 인증번호 요청 성공하면 실행되는 추가되는 스크립트 -->
+                                                    <script>
+                                                        $(document).ready(function () {
+                                                            $('.phonePin_form .pinBtn').on("click", function () {
+                                                                console.log("인증번호 요청 성공");
+                                                                $('.phonePin_form .box:first-child').slideUp(280);
+                                                                $('.phonePin_form .box:last-child').slideDown(300);
+                                                            });
+                                                        });
+                                                    </script>
+                                                    <!-- //인증번호 요청 성공하면 실행되는 추가되는 스크립트 -->
+                                                </form>
                                             </td>
+                                            <!-- //phonePin_form -->
+                                            <!-- //휴대폰 등록 -->
                                         </tr>
-
-                                        <tr>
-                                            <th scope="row">신규 휴대폰번호</th>
-                                            <td>
-                                                <div class="item mod_phone">
-                                                    <input type="number" name="" id="" class="phone_mod">
-                                                    <span class="certifi_btn">인증문자 전송</span>
-                                                    <p class="i_guide">휴대폰 번호로 프리미엄 알림서비스가 제공됩니다.</p>
-                                                    <p class="i_dsc phone"><i></i>현재 사용중인 휴대폰번호 입니다</p>
-                                                </div>
-                                            </td>
-                                        </tr>
-
-                                        <tr>
-                                            <th scope="row">인증코드 입력</th>
-                                            <td>
-                                                <div class="item mod_phone">
-                                                    <input type="number" name="" id="" class="phone_mod">
-                                                    <span class="certifi_btn">확인</span>
-                                                    <p class="i_dsc phone">인증완료!</p>
-                                                    <p class="i_dsc phone">제한시간 내 입력해주세요. - 2분 49초</p>
-                                                </div>
-                                            </td>
-                                        </tr>
-
-                                        <tr id="new_phone_area">
-                                            <th scope="row">신규 휴대폰번호</th>
-                                            <td>
-                                                <div class="item mod_phone">
-                                                    <input type="tel" name="new_phone_number" id="new_phone_number" class="phone_mod" maxlength="13"
-                                                        pattern="[0-9]*" inputmode="numeric" min="0">
-                                                    <a href="javascript:fnSendAuthNo('info');"><span class="certifi_btn">인증문자 전송</span></a>
-                                                    <p class="i_dsc phone_premium"><i></i>프리미엄회원에게는 휴대폰으로 종목추천/관심 종목 등 알림서비스가 제공됩니다.</p>
-                                                    <!--<p class="i_guide">휴대폰 번호로 프리미엄 알림서비스가 제공됩니다.</p>-->
-                                                    <p class="i_dsc phone" id="phone_noti" style="display:none;"></p>
-                                                </div>
-                                            </td>
-                                        </tr>                                        
                                     </tbody>
                                 </table>
                             </div>
