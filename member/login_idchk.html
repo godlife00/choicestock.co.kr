@@ -85,21 +85,25 @@
                         <p class="guide_txt">서비스 편의를 위해 휴대폰 문자 또는 알림 메시지(Push) 등으로 종목추천/관심 종목 등 알림서비스가 제공됩니다. 단, 알림서비스는
                             통신사 또는 인터넷 업체 사정에 따라 지연/미수신 될 수 있습니다.</p>
                     </div>
-                    <div class="phonePin_form">                                                
+                    <div class="phonePin_form">
                         <form action="">
                             <fieldset>
                                 <div class="box">
                                     <input type="tel" placeholder="010-1234-4567" class="pinInput">
-                                    <input type="button" src="../img/icon_search.svg" value="인증번호요청" class="pinBtn">                                    
-                                    <p class="dsc_error">사용중인 휴대폰번호 입니다</p>
+                                    <!-- 최초 인증 요청 -->
+                                    <input type="button" src="../img/icon_search.svg" value="인증 요청"
+                                        class="pinBtn pin_req">
+                                    <!-- 다시 인증 요청 -->
+                                    <input type="button" src="../img/icon_search.svg" value="다시 요청"
+                                        class="pinBtn pin_reqAgain">
+                                    <p class="dsc_error">사용중인 휴대폰번호 입니다.</p>
                                 </div>
                                 <div class="box">
                                     <p class="" id="auth_result"></p>
                                     <input type="number" class="pinInput_out" name="auth-token" inputmode="numeric"
-                                        pattern="[0-9]*" autocomplete="one-time-code" placeholder="인증번호 입력 (2:37) ">
-                                    <input type="button" src="../img/icon_search.svg" value="인증번호 확인"
+                                        pattern="[0-9]*" autocomplete="one-time-code" placeholder="인증번호 입력 (2:37)">
+                                    <input type="button" src="../img/icon_search.svg" value="번호 확인"
                                         class="pin_completion">
-                                    <!-- <p class="pin_countDown" id="time_zone">제한시간 내 입력해주세요. (<span id="timer">05:59</span>)</p> -->
                                     <p class="dsc_error" id="auth_result">인증번호가 일치하지 않습니다. 다시 입력해주세요.</p>
                                     <p class="txt_reject">휴대폰으로 전송된 인증번호 입력 후 '확인' 버튼을 눌러주세요.</p>
                                 </div>
@@ -107,17 +111,27 @@
                             <!-- 인증번호 요청 성공하면 실행되는 추가되는 스크립트 -->
                             <script>
                                 $(document).ready(function () {
-                                    $('.phonePin_form .pinBtn').on("click", function () {
-                                        console.log("인증번호 요청 성공");                                        
-                                        $('.phonePin_form .box:first-child').slideUp(280);
-                                        $('.phonePin_form .box:last-child').slideDown(300);                                        
+                                    $('.phonePin_form .pinBtn.pin_req').on("click", function () {
+                                        console.log("인증번호 요청 성공");
+                                        $(this).fadeOut();
+                                        $('.phonePin_form .pinBtn.pin_reqAgain').fadeIn();
+                                        $('.phonePin_form .pinInput').attr('disabled', true).css('cursor', 'not-allowed'); //휴대폰입력 비활성화
+                                        $('.phonePin_form .box:last-child').slideDown(300);
+
+                                    });
+                                    $('.phonePin_form .pinBtn.pin_reqAgain').on("click", function () {
+                                        console.log("다시 요청한 경우");
+                                        $(this).fadeOut();
+                                        $('.phonePin_form .pinBtn.pin_req').fadeIn();
+                                        $('.phonePin_form .pinInput').val('').attr('disabled', false).css('cursor', 'auto'); //휴대폰입력 활성화
+                                        $('.phonePin_form .box:last-child').slideUp(300);
                                     });
                                 });
                             </script>
                             <!-- //인증번호 요청 성공하면 실행되는 추가되는 스크립트 -->
                         </form>
                     </div>
-                    <!-- //phonePin_form -->                    
+                    <!-- //phonePin_form -->
                     <!-- //휴대폰 등록 -->
 
                     <div class="label sub_label">

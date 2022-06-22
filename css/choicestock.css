@@ -20735,19 +20735,32 @@ table.tableRanking td {
 	position: absolute;
 	right: 42px;
 	top: 6px;
-	width: 81px;
+	width: 70px;
 	height: 25px;
 	font-size: 0.75rem;
 	font-weight: normal;
 	letter-spacing: -0.6px;
-	text-align: center;
-	color: #404fc3;
+	text-align: center;	
 	outline: none;
 	padding: 4px 8px;
 	border-radius: 3px;
+	color: #404fc3;
 	border: solid 1px #424fbc;
 	background-color: #fff;
 }
+.globalStock .sub_login .agree_area .agree_from .phonePin_form .pinBtn.pin_req {
+	display: block;	
+	color: #fff;    
+    border: solid 1px #404fc3;
+    background-color: #404fc3;
+}
+.globalStock .sub_login .agree_area .agree_from .phonePin_form .pinBtn.pin_reqAgain {
+	display: none;
+	color: #404fc3;
+	border: solid 1px #424fbc;
+	background-color: #fff;
+}
+
 
 .globalStock .sub_login .agree_area .agree_from .phonePin_form .pinInput_out {
 	font-size: 1rem;
@@ -20789,12 +20802,17 @@ table.tableRanking td {
 	color: #549ef4;
 }
 
+.globalStock .sub_login .agree_area .agree_from .phonePin_form .pin_cncl {
+	color: #333;
+	text-decoration: underline;
+}
+
 .globalStock .sub_login .agree_area .agree_from .phonePin_form .pin_completion {
 	cursor: pointer;
 	position: absolute;
 	right: 42px;
 	top: 6px;
-	width: 81px;
+	width: 70px;
 	height: 25px;
 	box-sizing: border-box;
 	font-size: 0.75rem;
@@ -33135,12 +33153,13 @@ table.tableRanking td {
 }
 
 .globalStock .sub_login .mapage_area .mapage_form .form_table .phonePin_form {
+	padding: 12px 0;
 	display: none;	
-	background-color: #E6E7F4;
+	/* background-color: #E6E7F4; */
 }
 
 .globalStock .sub_login .mapage_area .mapage_form .form_table .phonePin_form .box {
-	padding: 0 15px 0 60px;	
+	padding: 0 0 10px;
 	position: relative;
 }
 
@@ -33155,9 +33174,9 @@ table.tableRanking td {
 .globalStock .sub_login .mapage_area .mapage_form .form_table .phonePin_form .pinInput,
 .globalStock .sub_login .mapage_area .mapage_form .form_table .phonePin_form .pinInput_out {
 	color: #333;
-	font-size: 1rem;
+	font-size: 0.875rem;
 	letter-spacing: -0.8px;
-	padding: 8px 13px;
+	padding: 11px 13px;
 	width: 100%;
 	box-sizing: border-box;
 	border-radius: 5px;
@@ -33190,9 +33209,9 @@ table.tableRanking td {
 .globalStock .sub_login .mapage_area .mapage_form .form_table .phonePin_form .pinBtn {
 	cursor: pointer;
 	position: absolute;
-	right: 22px;
+	right: 9px;
 	top: 6px;
-	width: 81px;
+	width: 70px;
 	height: 25px;
 	font-size: 0.75rem;
 	font-weight: normal;
@@ -33205,9 +33224,21 @@ table.tableRanking td {
 	border: solid 1px #424fbc;
 	background-color: #404FC3;
 }
+.globalStock .sub_login .mapage_area .mapage_form .form_table .phonePin_form .pinBtn.pin_req {
+	display: block;	
+	color: #fff;    
+    border: solid 1px #404fc3;
+    background-color: #404fc3;
+}
+.globalStock .sub_login .mapage_area .mapage_form .form_table .phonePin_form .pinBtn.pin_reqAgain {
+	display: none;
+	color: #404fc3;
+	border: solid 1px #424fbc;
+	background-color: #fff;
+}
 
 .globalStock .sub_login .mapage_area .mapage_form .form_table .phonePin_form .pinInput_out {
-	font-size: 1rem;
+	font-size: 0.875rem;
 	font-weight: bold;
 	letter-spacing: 1.6px;
 	color: #333;
@@ -33220,7 +33251,7 @@ table.tableRanking td {
 
 .globalStock .sub_login .mapage_area .mapage_form .form_table .phonePin_form .pinInput::placeholder,
 .globalStock .sub_login .mapage_area .mapage_form .form_table .phonePin_form .pinInput_out::placeholder {
-	font-size: 16px;
+	font-size: 0.875rem;
 	font-weight: normal;
 	color: #82929f;
 	letter-spacing: -0.8px;
@@ -33246,12 +33277,30 @@ table.tableRanking td {
 	color: #549ef4;
 }
 
+.globalStock .sub_login .mapage_area .mapage_form .form_table .phonePin_form .pin_cncl {
+	cursor: pointer;
+	position: absolute;
+	right: 93px;
+	top: 6px;
+	width: 38px;
+	height: 25px;
+	font-size: 0.75rem;
+    font-weight: normal;
+    letter-spacing: -0.6px;
+    text-align: center;
+    color: #939393;
+    outline: none;
+    padding: 4px 8px;
+    border-radius: 3px;
+    border: solid 1px #939393;
+    background-color: #fff;
+}
 .globalStock .sub_login .mapage_area .mapage_form .form_table .phonePin_form .pin_completion {
 	cursor: pointer;
 	position: absolute;
-	right: 22px;
+	right: 9px;
 	top: 6px;
-	width: 81px;
+	width: 70px;
 	height: 25px;
 	box-sizing: border-box;
 	font-size: 0.75rem;
