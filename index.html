@@ -53,6 +53,49 @@
 </head>
 <!-- 제휴사이트 민트 칼라 적용 class = mint  -->
 
+<!-- Channel Plugin Scripts -->
+<script>
+    (function () {
+        var w = window;
+        if (w.ChannelIO) {
+            return (window.console.error || window.console.log || function () { })('ChannelIO script included twice.');
+        }
+        var ch = function () {
+            ch.c(arguments);
+        };
+        ch.q = [];
+        ch.c = function (args) {
+            ch.q.push(args);
+        };
+        w.ChannelIO = ch;
+        function l() {
+            if (w.ChannelIOInitialized) {
+                return;
+            }
+            w.ChannelIOInitialized = true;
+            var s = document.createElement('script');
+            s.type = 'text/javascript';
+            s.async = true;
+            s.src = 'https://cdn.channel.io/plugin/ch-plugin-web.js';
+            s.charset = 'UTF-8';
+            var x = document.getElementsByTagName('script')[0];
+            x.parentNode.insertBefore(s, x);
+        }
+        if (document.readyState === 'complete') {
+            l();
+        } else if (window.attachEvent) {
+            window.attachEvent('onload', l);
+        } else {
+            window.addEventListener('DOMContentLoaded', l, false);
+            window.addEventListener('load', l, false);
+        }
+    })();
+    ChannelIO('boot', {
+        "pluginKey": "09196b5e-03b3-46d7-b58b-572697149e0f"
+    });
+</script>
+<!-- End Channel Plugin -->
+
 <body class="globalStock">
 
     <!-- 정식 오픈 이후 버전 -->
@@ -1251,7 +1294,7 @@
                 <!-- 종목노트, 탐구생활, 주요뉴스 -->
                 <div class="main_mid note_area">
                     <h3 class="title"><a href="/stock/note">종목노트</a></h3>
-                    <a href="/stock/note" class="more"><img src="img/more_Black.png" alt="더보기"></a>                    
+                    <a href="/stock/note" class="more"><img src="img/more_Black.png" alt="더보기"></a>
                     <ul class="lst_type">
                         <li>
                             <dl class="lst_type2">
@@ -1430,7 +1473,8 @@
                 <!-- //foot_info -->
 
                 <div class="family_site">
-                    <strong>Family</strong>&nbsp;&nbsp;&nbsp;>&nbsp;&nbsp;&nbsp;<a href="https://super.choicestock.co.kr/" target="blank">슈퍼스톡스</a> <i></i> <a
+                    <strong>Family</strong>&nbsp;&nbsp;&nbsp;>&nbsp;&nbsp;&nbsp;<a
+                        href="https://super.choicestock.co.kr/" target="blank">슈퍼스톡스</a> <i></i> <a
                         href="https://value.choicestock.co.kr/" target="blank">밸류라인</a> <i></i>
                     <a href="https://bigfinance.co.kr/" target="blank">빅파이넨스</a>
                 </div>
