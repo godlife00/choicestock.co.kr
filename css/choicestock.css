@@ -13981,8 +13981,7 @@ table.tableRanking td {
 	height: 180px;
 }
 .globalStock .sub_search .sub_mid .tab_diagnosis_area .hiding_box .alloca_star .chart_box .containeralloca_star1 .highcharts-text-outline,
-.globalStock .sub_search .highcharts-container .highcharts-text-outline
- {	
+.globalStock .sub_search .highcharts-container .highcharts-text-outline {	
     stroke-width: 0px;
     stroke-linejoin: round;	
 }
