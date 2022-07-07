@@ -3059,37 +3059,50 @@ $(document).ready(function () {
     // 검색 - 종목진단 - 재무차트탭 11개 BIC차트
     /* 매출과이익 */
     if ($('#chart_BICchart011').length) {
-        Highcharts.chart('chart_BICchart011', {
+        Highcharts.stockChart('chart_BICchart011', {            
             chart: {
-                type: 'column',
-                zoomType: 'xy',
-                renderTo: 'chart_BICchart011',
                 backgroundColor: {
                     // linearGradient: { x1: 0, y1: 1, x2: 1, y2: 0 },
-                    stops: [
-                        [0, '#ffffff'],
-                        [1, '#ffffff']
-                    ]
-                },
-                style: {
-                    fontFamily: "'Lato', 'Noto Sans KR'"
-                },
-                marginTop: 30,
-                marginBottom: 90,
-                plotBorderColor: null,
-                plotBorderWidth: null,
-                plotShadow: false,
+                },                
+            },
+            // 하단 네비게이션 제거
+            navigator: {
+                enabled: false
+            },
+            
+            // 스크롤바 제거
+            scrollbar: {
+                enabled: false
             },
 
-            colors: ["#C4C4C4 ", "#404fc3", "#5CAC00"],
-            title: {
-                text: null,
+            // 기간범위선택 
+            rangeSelector: {
+                enabled: false,
+                // allButtonsEnabled: true,                
+                // selected: 0,                
+            },
+
+            legend: {
+                enabled: false,
+            },
+
+            credits: {
+                enabled: false
+            },
+
+            exporting: {
+                enabled: false
             },
 
             tooltip: {
-                shared: true,
-                pointFormat: '{series.name}: <b>{point.y}</b><br/>',
+                enabled: false
             },
+
+            title: {
+                text: null
+            },
+
+            colors: ["#C4C4C4 ", "#404fc3", "#5CAC00"],            
 
             xAxis: [{
                 categories: ['2005', '2006', '2007', '2008', '2009', '2010', '2011', '2012', '2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020'],
@@ -3118,14 +3131,6 @@ $(document).ready(function () {
                 },
                 opposite: true
             }],
-
-            credits: {
-                enabled: false
-            },
-
-            exporting: {
-                enabled: false
-            },
 
             legend: {
                 layout: 'horizontal',
