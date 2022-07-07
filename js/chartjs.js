@@ -2,337 +2,7 @@ $(document).ready(function () {
 
     // ***************************** //
     // **********  종목추천 ********* //
-    // ***************************** //
-    // 서브 - 종목추천 메인 line 작은 차트
-    if ($('#containerS1_1').length) {
-        Highcharts.stockChart('containerS1_1', {
-            chart: {
-                type: 'line',
-                renderTo: 'containerS1_1',
-                backgroundColor: {
-                    // linearGradient: { x1: 0, y1: 1, x2: 1, y2: 0 },
-                },
-                style: {
-                    fontFamily: "'Lato', 'Noto Sans KR'"
-                },
-                height: 88,
-                plotBorderColor: null,
-                plotBorderWidth: null,
-                plotShadow: false
-            },
-
-            // 하단 네비게이션 제거
-            navigator: {
-                enabled: false
-            },
-
-            // 스크롤바 제거
-            scrollbar: {
-                enabled: false
-            },
-
-            // 기간범위선택 
-            rangeSelector: {
-                enabled: false,
-                // allButtonsEnabled: true,                
-                // selected: 0,                
-            },
-
-            legend: {
-                enabled: true,
-                layout: 'horizontal',
-                align: 'center',
-                verticalAlign: 'bottom',
-            },
-
-            credits: {
-                enabled: false
-            },
-
-            exporting: {
-                enabled: false
-            },
-
-            tooltip: {
-                enabled: false
-            },
-
-            title: {
-                text: null
-            },
-
-            colors: ["#877edf"],
-
-            tooltip: {
-                shared: true,
-                pointFormat: '<span style="color:{series.color}">{series.name}: <b>{point.y:,.0f}</b><br/>'
-            },
-
-            xAxis: {
-                title: {
-                    text: null
-                },
-                lineColor: null,
-                minorGridLineWidth: 0,
-                gridLineWidth: 0,
-                alternateGridColor: null,
-                showFirstLabel: false,
-                tickColor: null,
-                labels: {
-                    enabled: false
-                }
-            },
-
-            yAxis: {
-                title: {
-                    text: null
-                },
-                lineColor: null,
-                minorGridLineWidth: 0,
-                gridLineWidth: 0,
-                alternateGridColor: null,
-                showFirstLabel: false,
-                labels: {
-                    enabled: false
-                }
-            },
-
-            series: [{
-                name: '',
-                data: [
-                    3.7, 3.3, 3.9, 5.1, 3.5, 3.8, 4.0, 5.0, 6.1, 3.7, 3.3, 6.4,
-                    6.9, 6.0, 6.8, 4.4, 4.0, 3.8, 5.0, 4.9, 9.2, 9.6, 9.5, 6.3,
-                    9.5, 10.8, 14.0, 11.5, 10.0, 10.2, 10.3, 9.4, 8.9, 10.6, 10.5, 11.1,
-                    10.4, 10.7, 11.3, 10.2, 9.6, 10.2, 11.1, 10.8, 13.0, 12.5, 12.5, 11.3,
-                    10.1
-                ]
-            }],
-
-            plotOptions: {
-                series: {
-                    label: {
-                        connectorAllowed: false
-                    },
-                    pointStart: null,
-                    marker: {
-                        enabled: false,
-                    }
-                }
-            },
-        });
-    }
-    if ($('#containerS1_2').length) {
-        Highcharts.stockChart('containerS1_2', {
-            chart: {
-                type: 'line',
-                renderTo: 'containerS1_2',
-                backgroundColor: {
-                    // linearGradient: { x1: 0, y1: 1, x2: 1, y2: 0 },
-                },
-                style: {
-                    fontFamily: "'Lato', 'Noto Sans KR'"
-                },
-                height: 88,
-                plotBorderColor: null,
-                plotBorderWidth: null,
-                plotShadow: false
-            },
-
-            // 하단 네비게이션 제거
-            navigator: {
-                enabled: false
-            },
-
-            // 스크롤바 제거
-            scrollbar: {
-                enabled: false
-            },
-
-            // 기간범위선택 
-            rangeSelector: {
-                enabled: false,
-                // allButtonsEnabled: true,                
-                // selected: 0,                
-            },
-
-            legend: {
-                enabled: true,
-                layout: 'horizontal',
-                align: 'center',
-                verticalAlign: 'bottom',
-            },
-
-            credits: {
-                enabled: false
-            },
-
-            exporting: {
-                enabled: false
-            },
-
-            tooltip: {
-                enabled: false
-            },
-
-            title: {
-                text: null
-            },
-
-            colors: ["#877edf"],
-
-            xAxis: {
-                title: {
-                    text: null
-                },
-                lineColor: null,
-                minorGridLineWidth: 0,
-                gridLineWidth: 0,
-                alternateGridColor: null,
-                showFirstLabel: false,
-                tickColor: null,
-                labels: {
-                    enabled: false
-                }
-            },
-
-            yAxis: {
-                title: {
-                    text: null
-                },
-                lineColor: null,
-                minorGridLineWidth: 0,
-                gridLineWidth: 0,
-                alternateGridColor: null,
-                showFirstLabel: false,
-                labels: {
-                    enabled: false
-                }
-            },
-
-            series: [{
-                name: '',
-                data: [43934, 52503, 57177, 69658, 97031, 119931, 137133, 154175, 43934, 52503, 57177, 69658, 97031, 119931, 137133, 154175]
-            }],
-
-            plotOptions: {
-                series: {
-                    label: {
-                        connectorAllowed: false
-                    },
-                    pointStart: null,
-                    marker: {
-                        enabled: false,
-                    }
-                }
-            },
-        });
-    }
-    if ($('#containerS1_3').length) {
-        Highcharts.stockChart('containerS1_3', {
-            chart: {
-                type: 'line',
-                renderTo: 'containerS1_3',
-                backgroundColor: {
-                    // linearGradient: { x1: 0, y1: 1, x2: 1, y2: 0 },
-                },
-                style: {
-                    fontFamily: "'Lato', 'Noto Sans KR'"
-                },
-                height: 88,
-                plotBorderColor: null,
-                plotBorderWidth: null,
-                plotShadow: false
-            },
-
-            // 하단 네비게이션 제거
-            navigator: {
-                enabled: false
-            },
-
-            // 스크롤바 제거
-            scrollbar: {
-                enabled: false
-            },
-
-            // 기간범위선택 
-            rangeSelector: {
-                enabled: false,
-                // allButtonsEnabled: true,                
-                // selected: 0,                
-            },
-
-            legend: {
-                enabled: true,
-                layout: 'horizontal',
-                align: 'center',
-                verticalAlign: 'bottom',
-            },
-
-            credits: {
-                enabled: false
-            },
-
-            exporting: {
-                enabled: false
-            },
-
-            tooltip: {
-                enabled: false
-            },
-
-            title: {
-                text: null
-            },
-
-            colors: ["#877edf"],
-
-            xAxis: {
-                title: {
-                    text: null
-                },
-                lineColor: null,
-                minorGridLineWidth: 0,
-                gridLineWidth: 0,
-                alternateGridColor: null,
-                showFirstLabel: false,
-                tickColor: null,
-                labels: {
-                    enabled: false
-                }
-            },
-
-            yAxis: {
-                title: {
-                    text: null
-                },
-                lineColor: null,
-                minorGridLineWidth: 0,
-                gridLineWidth: 0,
-                alternateGridColor: null,
-                showFirstLabel: false,
-                labels: {
-                    enabled: false
-                }
-            },
-
-            series: [{
-                name: '',
-                data: [43934, 52503, 57177, 69658, 97031, 119931, 137133, 154175, 43934, 52503, 57177, 69658, 97031, 119931, 137133, 154175]
-            }],
-
-            plotOptions: {
-                series: {
-                    label: {
-                        connectorAllowed: false
-                    },
-                    pointStart: null,
-                    marker: {
-                        enabled: false,
-                    }
-                }
-            },
-        });
-    }
+    // ***************************** //    
     // 서브 - 종목추천 투자포인트, 종목진단 line 차트    
     if ($('#containerArea_1').length) {
         Highcharts.stockChart('containerArea_1', {
@@ -396,6 +66,10 @@ $(document).ready(function () {
             tooltip: {
                 shared: true,
                 pointFormat: '<span style="color:{series.color}">{series.name}: <b>{point.y:,.0f} 달러</b><br/>'
+            },
+
+            legend: {
+                enabled: false
             },
 
             xAxis: [{
@@ -1437,6 +1111,10 @@ $(document).ready(function () {
                 shared: true
             },
 
+            legend: {
+                enabled: false
+            },
+
             pane: {
                 size: '80%',
                 center: ['50%', '50%'],
@@ -1504,8 +1182,47 @@ $(document).ready(function () {
                 plotShadow: false
             },
 
-            colors: ["#404fc3", "#545872", "#a1a1a1"],
+            // 하단 네비게이션 제거
+            navigator: {
+                enabled: false
+            },
 
+            // 스크롤바 제거
+            scrollbar: {
+                enabled: false
+            },
+
+            // 기간범위선택 
+            rangeSelector: {
+                enabled: false,
+                // allButtonsEnabled: true,                
+                // selected: 0,                
+            },
+
+            legend: {
+                enabled: true,
+                layout: 'horizontal',
+                align: 'center',
+                verticalAlign: 'bottom',
+            },
+
+            credits: {
+                enabled: false
+            },
+
+            exporting: {
+                enabled: false
+            },
+
+            tooltip: {
+                enabled: false
+            },
+
+            title: {
+                text: null
+            },
+
+            colors: ["#404fc3", "#545872", "#a1a1a1"],
 
             tooltip: {
                 shared: true,
@@ -1546,28 +1263,6 @@ $(document).ready(function () {
                 labels: {
                     enabled: false
                 }
-            },
-
-            title: {
-                style: {
-                    'font-weight': "bold",
-                    color: '#E0E0E3',
-                    textTransform: 'uppercase',
-                    fontSize: '0',
-                },
-                text: ''
-            },
-
-            credits: {
-                enabled: false
-            },
-
-            exporting: {
-                enabled: false
-            },
-
-            legend: {
-                enabled: false,
             },
 
             series: [{
@@ -1620,6 +1315,46 @@ $(document).ready(function () {
                 plotShadow: false
             },
 
+            // 하단 네비게이션 제거
+            navigator: {
+                enabled: false
+            },
+
+            // 스크롤바 제거
+            scrollbar: {
+                enabled: false
+            },
+
+            // 기간범위선택 
+            rangeSelector: {
+                enabled: false,
+                // allButtonsEnabled: true,                
+                // selected: 0,                
+            },
+
+            legend: {
+                enabled: true,
+                layout: 'horizontal',
+                align: 'center',
+                verticalAlign: 'bottom',
+            },
+
+            credits: {
+                enabled: false
+            },
+
+            exporting: {
+                enabled: false
+            },
+
+            tooltip: {
+                enabled: false
+            },
+
+            title: {
+                text: null
+            },
+
             colors: ["#404fc3", "#545872", "#a1a1a1"],
 
             tooltip: {
@@ -1661,28 +1396,6 @@ $(document).ready(function () {
                 labels: {
                     enabled: false
                 }
-            },
-
-            title: {
-                style: {
-                    'font-weight': "bold",
-                    color: '#E0E0E3',
-                    textTransform: 'uppercase',
-                    fontSize: '0',
-                },
-                text: ''
-            },
-
-            credits: {
-                enabled: false
-            },
-
-            exporting: {
-                enabled: false
-            },
-
-            legend: {
-                enabled: false,
             },
 
             series: [{
@@ -1735,6 +1448,46 @@ $(document).ready(function () {
                 plotShadow: false
             },
 
+            // 하단 네비게이션 제거
+            navigator: {
+                enabled: false
+            },
+
+            // 스크롤바 제거
+            scrollbar: {
+                enabled: false
+            },
+
+            // 기간범위선택 
+            rangeSelector: {
+                enabled: false,
+                // allButtonsEnabled: true,                
+                // selected: 0,                
+            },
+
+            legend: {
+                enabled: true,
+                layout: 'horizontal',
+                align: 'center',
+                verticalAlign: 'bottom',
+            },
+
+            credits: {
+                enabled: false
+            },
+
+            exporting: {
+                enabled: false
+            },
+
+            tooltip: {
+                enabled: false
+            },
+
+            title: {
+                text: null
+            },
+
             colors: ["#404fc3", "#545872", "#a1a1a1"],
 
             tooltip: {
@@ -1776,28 +1529,6 @@ $(document).ready(function () {
                 labels: {
                     enabled: false
                 }
-            },
-
-            title: {
-                style: {
-                    'font-weight': "bold",
-                    color: '#E0E0E3',
-                    textTransform: 'uppercase',
-                    fontSize: '0',
-                },
-                text: ''
-            },
-
-            credits: {
-                enabled: false
-            },
-
-            exporting: {
-                enabled: false
-            },
-
-            legend: {
-                enabled: false,
             },
 
             series: [{
@@ -1850,6 +1581,46 @@ $(document).ready(function () {
                 plotShadow: false
             },
 
+            // 하단 네비게이션 제거
+            navigator: {
+                enabled: false
+            },
+
+            // 스크롤바 제거
+            scrollbar: {
+                enabled: false
+            },
+
+            // 기간범위선택 
+            rangeSelector: {
+                enabled: false,
+                // allButtonsEnabled: true,                
+                // selected: 0,                
+            },
+
+            legend: {
+                enabled: true,
+                layout: 'horizontal',
+                align: 'center',
+                verticalAlign: 'bottom',
+            },
+
+            credits: {
+                enabled: false
+            },
+
+            exporting: {
+                enabled: false
+            },
+
+            tooltip: {
+                enabled: false
+            },
+
+            title: {
+                text: null
+            },
+
             colors: ["#404fc3", "#545872", "#a1a1a1"],
 
             tooltip: {
@@ -1891,28 +1662,6 @@ $(document).ready(function () {
                 labels: {
                     enabled: false
                 }
-            },
-
-            title: {
-                style: {
-                    'font-weight': "bold",
-                    color: '#E0E0E3',
-                    textTransform: 'uppercase',
-                    fontSize: '0',
-                },
-                text: ''
-            },
-
-            credits: {
-                enabled: false
-            },
-
-            exporting: {
-                enabled: false
-            },
-
-            legend: {
-                enabled: false,
             },
 
             series: [{
@@ -1965,6 +1714,46 @@ $(document).ready(function () {
                 plotShadow: false
             },
 
+            // 하단 네비게이션 제거
+            navigator: {
+                enabled: false
+            },
+
+            // 스크롤바 제거
+            scrollbar: {
+                enabled: false
+            },
+
+            // 기간범위선택 
+            rangeSelector: {
+                enabled: false,
+                // allButtonsEnabled: true,                
+                // selected: 0,                
+            },
+
+            legend: {
+                enabled: true,
+                layout: 'horizontal',
+                align: 'center',
+                verticalAlign: 'bottom',
+            },
+
+            credits: {
+                enabled: false
+            },
+
+            exporting: {
+                enabled: false
+            },
+
+            tooltip: {
+                enabled: false
+            },
+
+            title: {
+                text: null
+            },
+
             colors: ["#404fc3", "#545872", "#a1a1a1"],
 
             tooltip: {
@@ -2006,28 +1795,6 @@ $(document).ready(function () {
                 labels: {
                     enabled: false
                 }
-            },
-
-            title: {
-                style: {
-                    'font-weight': "bold",
-                    color: '#E0E0E3',
-                    textTransform: 'uppercase',
-                    fontSize: '0',
-                },
-                text: ''
-            },
-
-            credits: {
-                enabled: false
-            },
-
-            exporting: {
-                enabled: false
-            },
-
-            legend: {
-                enabled: false,
             },
 
             series: [{
@@ -2080,6 +1847,46 @@ $(document).ready(function () {
                 plotShadow: false
             },
 
+            // 하단 네비게이션 제거
+            navigator: {
+                enabled: false
+            },
+
+            // 스크롤바 제거
+            scrollbar: {
+                enabled: false
+            },
+
+            // 기간범위선택 
+            rangeSelector: {
+                enabled: false,
+                // allButtonsEnabled: true,                
+                // selected: 0,                
+            },
+
+            legend: {
+                enabled: true,
+                layout: 'horizontal',
+                align: 'center',
+                verticalAlign: 'bottom',
+            },
+
+            credits: {
+                enabled: false
+            },
+
+            exporting: {
+                enabled: false
+            },
+
+            tooltip: {
+                enabled: false
+            },
+
+            title: {
+                text: null
+            },
+
             colors: ["#404fc3", "#545872", "#a1a1a1"],
 
             tooltip: {
@@ -2121,28 +1928,6 @@ $(document).ready(function () {
                 labels: {
                     enabled: false
                 }
-            },
-
-            title: {
-                style: {
-                    'font-weight': "bold",
-                    color: '#E0E0E3',
-                    textTransform: 'uppercase',
-                    fontSize: '0',
-                },
-                text: ''
-            },
-
-            credits: {
-                enabled: false
-            },
-
-            exporting: {
-                enabled: false
-            },
-
-            legend: {
-                enabled: false,
             },
 
             series: [{
@@ -2195,6 +1980,46 @@ $(document).ready(function () {
                 plotShadow: false
             },
 
+            // 하단 네비게이션 제거
+            navigator: {
+                enabled: false
+            },
+
+            // 스크롤바 제거
+            scrollbar: {
+                enabled: false
+            },
+
+            // 기간범위선택 
+            rangeSelector: {
+                enabled: false,
+                // allButtonsEnabled: true,                
+                // selected: 0,                
+            },
+
+            legend: {
+                enabled: true,
+                layout: 'horizontal',
+                align: 'center',
+                verticalAlign: 'bottom',
+            },
+
+            credits: {
+                enabled: false
+            },
+
+            exporting: {
+                enabled: false
+            },
+
+            tooltip: {
+                enabled: false
+            },
+
+            title: {
+                text: null
+            },
+
             colors: ["#404fc3", "#545872", "#d3d3d3"],
 
             tooltip: {
@@ -2236,28 +2061,6 @@ $(document).ready(function () {
                 labels: {
                     enabled: false
                 }
-            },
-
-            title: {
-                style: {
-                    'font-weight': "bold",
-                    color: '#E0E0E3',
-                    textTransform: 'uppercase',
-                    fontSize: '0',
-                },
-                text: ''
-            },
-
-            credits: {
-                enabled: false
-            },
-
-            exporting: {
-                enabled: false
-            },
-
-            legend: {
-                enabled: false,
             },
 
             series: [{
@@ -2314,11 +2117,47 @@ $(document).ready(function () {
                 plotShadow: false
             },
 
-            colors: ["#877edf"],
+            // 하단 네비게이션 제거
+            navigator: {
+                enabled: false
+            },
+
+            // 스크롤바 제거
+            scrollbar: {
+                enabled: false
+            },
+
+            // 기간범위선택 
+            rangeSelector: {
+                enabled: false,
+                // allButtonsEnabled: true,                
+                // selected: 0,                
+            },
+
+            legend: {
+                enabled: true,
+                layout: 'horizontal',
+                align: 'center',
+                verticalAlign: 'bottom',
+            },
+
+            credits: {
+                enabled: false
+            },
+
+            exporting: {
+                enabled: false
+            },
+
+            tooltip: {
+                enabled: false
+            },
 
             title: {
                 text: null
             },
+
+            colors: ["#877edf"],
 
             tooltip: {
                 shared: true,
@@ -2349,18 +2188,6 @@ $(document).ready(function () {
                 labels: {
                     enabled: false
                 }
-            },
-
-            exporting: {
-                enabled: false
-            },
-
-            legend: {
-                enabled: false
-            },
-
-            credits: {
-                enabled: false
             },
 
             series: [{
@@ -2405,11 +2232,47 @@ $(document).ready(function () {
                 plotShadow: false
             },
 
-            colors: ["#877edf"],
+            // 하단 네비게이션 제거
+            navigator: {
+                enabled: false
+            },
+
+            // 스크롤바 제거
+            scrollbar: {
+                enabled: false
+            },
+
+            // 기간범위선택 
+            rangeSelector: {
+                enabled: false,
+                // allButtonsEnabled: true,                
+                // selected: 0,                
+            },
+
+            legend: {
+                enabled: true,
+                layout: 'horizontal',
+                align: 'center',
+                verticalAlign: 'bottom',
+            },
+
+            credits: {
+                enabled: false
+            },
+
+            exporting: {
+                enabled: false
+            },
+
+            tooltip: {
+                enabled: false
+            },
 
             title: {
                 text: null
             },
+
+            colors: ["#877edf"],
 
             tooltip: {
                 shared: true,
@@ -2440,18 +2303,6 @@ $(document).ready(function () {
                 labels: {
                     enabled: false
                 }
-            },
-
-            exporting: {
-                enabled: false
-            },
-
-            legend: {
-                enabled: false
-            },
-
-            credits: {
-                enabled: false
             },
 
             series: [{
@@ -2496,11 +2347,47 @@ $(document).ready(function () {
                 plotShadow: false
             },
 
-            colors: ["#877edf"],
+            // 하단 네비게이션 제거
+            navigator: {
+                enabled: false
+            },
+
+            // 스크롤바 제거
+            scrollbar: {
+                enabled: false
+            },
+
+            // 기간범위선택 
+            rangeSelector: {
+                enabled: false,
+                // allButtonsEnabled: true,                
+                // selected: 0,                
+            },
+
+            legend: {
+                enabled: true,
+                layout: 'horizontal',
+                align: 'center',
+                verticalAlign: 'bottom',
+            },
+
+            credits: {
+                enabled: false
+            },
+
+            exporting: {
+                enabled: false
+            },
+
+            tooltip: {
+                enabled: false
+            },
 
             title: {
                 text: null
             },
+
+            colors: ["#877edf"],
 
             tooltip: {
                 shared: true,
@@ -2531,18 +2418,6 @@ $(document).ready(function () {
                 labels: {
                     enabled: false
                 }
-            },
-
-            exporting: {
-                enabled: false
-            },
-
-            legend: {
-                enabled: false
-            },
-
-            credits: {
-                enabled: false
             },
 
             series: [{
@@ -2583,16 +2458,47 @@ $(document).ready(function () {
                 plotShadow: false
             },
 
-            colors: ["#877edf"],
+            // 하단 네비게이션 제거
+            navigator: {
+                enabled: false
+            },
+
+            // 스크롤바 제거
+            scrollbar: {
+                enabled: false
+            },
+
+            // 기간범위선택 
+            rangeSelector: {
+                enabled: false,
+                // allButtonsEnabled: true,                
+                // selected: 0,                
+            },
+
+            legend: {
+                enabled: true,
+                layout: 'horizontal',
+                align: 'center',
+                verticalAlign: 'bottom',
+            },
+
+            credits: {
+                enabled: false
+            },
+
+            exporting: {
+                enabled: false
+            },
+
+            tooltip: {
+                enabled: false
+            },
+
             title: {
-                style: {
-                    'font-weight': "bold",
-                    color: '#E0E0E3',
-                    textTransform: 'uppercase',
-                    fontSize: '0',
-                },
                 text: null
             },
+
+            colors: ["#877edf"],
 
             tooltip: {
                 shared: true,
@@ -2614,18 +2520,6 @@ $(document).ready(function () {
                 labels: {
                     enabled: false
                 }
-            },
-
-            credits: {
-                enabled: false,
-            },
-
-            legend: {
-                enabled: false,
-            },
-
-            exporting: {
-                enabled: false
             },
 
             series: [{
@@ -2674,6 +2568,46 @@ $(document).ready(function () {
                 plotShadow: false
             },
 
+            // 하단 네비게이션 제거
+            navigator: {
+                enabled: false
+            },
+
+            // 스크롤바 제거
+            scrollbar: {
+                enabled: false
+            },
+
+            // 기간범위선택 
+            rangeSelector: {
+                enabled: false,
+                // allButtonsEnabled: true,                
+                // selected: 0,                
+            },
+
+            legend: {
+                enabled: true,
+                layout: 'horizontal',
+                align: 'center',
+                verticalAlign: 'bottom',
+            },
+
+            credits: {
+                enabled: false
+            },
+
+            exporting: {
+                enabled: false
+            },
+
+            tooltip: {
+                enabled: false
+            },
+
+            title: {
+                text: null
+            },
+
             colors: ["#404fc3", "#545872", "#d3d3d3"],
 
             tooltip: {
@@ -2715,28 +2649,6 @@ $(document).ready(function () {
                 labels: {
                     enabled: false
                 }
-            },
-
-            title: {
-                style: {
-                    'font-weight': "bold",
-                    color: '#E0E0E3',
-                    textTransform: 'uppercase',
-                    fontSize: '0',
-                },
-                text: ''
-            },
-
-            credits: {
-                enabled: false
-            },
-
-            exporting: {
-                enabled: false
-            },
-
-            legend: {
-                enabled: false,
             },
 
             series: [{
@@ -2789,6 +2701,46 @@ $(document).ready(function () {
                 plotShadow: false
             },
 
+            // 하단 네비게이션 제거
+            navigator: {
+                enabled: false
+            },
+
+            // 스크롤바 제거
+            scrollbar: {
+                enabled: false
+            },
+
+            // 기간범위선택 
+            rangeSelector: {
+                enabled: false,
+                // allButtonsEnabled: true,                
+                // selected: 0,                
+            },
+
+            legend: {
+                enabled: true,
+                layout: 'horizontal',
+                align: 'center',
+                verticalAlign: 'bottom',
+            },
+
+            credits: {
+                enabled: false
+            },
+
+            exporting: {
+                enabled: false
+            },
+
+            tooltip: {
+                enabled: false
+            },
+
+            title: {
+                text: null
+            },
+
             colors: ["#404fc3", "#545872", "#d3d3d3"],
 
             tooltip: {
@@ -2830,28 +2782,6 @@ $(document).ready(function () {
                 labels: {
                     enabled: false
                 }
-            },
-
-            title: {
-                style: {
-                    'font-weight': "bold",
-                    color: '#E0E0E3',
-                    textTransform: 'uppercase',
-                    fontSize: '0',
-                },
-                text: ''
-            },
-
-            credits: {
-                enabled: false
-            },
-
-            exporting: {
-                enabled: false
-            },
-
-            legend: {
-                enabled: false,
             },
 
             series: [{
@@ -2904,6 +2834,46 @@ $(document).ready(function () {
                 plotShadow: false
             },
 
+            // 하단 네비게이션 제거
+            navigator: {
+                enabled: false
+            },
+
+            // 스크롤바 제거
+            scrollbar: {
+                enabled: false
+            },
+
+            // 기간범위선택 
+            rangeSelector: {
+                enabled: false,
+                // allButtonsEnabled: true,                
+                // selected: 0,                
+            },
+
+            legend: {
+                enabled: true,
+                layout: 'horizontal',
+                align: 'center',
+                verticalAlign: 'bottom',
+            },
+
+            credits: {
+                enabled: false
+            },
+
+            exporting: {
+                enabled: false
+            },
+
+            tooltip: {
+                enabled: false
+            },
+
+            title: {
+                text: null
+            },
+
             colors: ["#404fc3", "#545872", "#d3d3d3"],
 
             tooltip: {
@@ -2945,28 +2915,6 @@ $(document).ready(function () {
                 labels: {
                     enabled: false
                 }
-            },
-
-            title: {
-                style: {
-                    'font-weight': "bold",
-                    color: '#E0E0E3',
-                    textTransform: 'uppercase',
-                    fontSize: '0',
-                },
-                text: ''
-            },
-
-            credits: {
-                enabled: false
-            },
-
-            exporting: {
-                enabled: false
-            },
-
-            legend: {
-                enabled: false,
             },
 
             series: [{
@@ -3019,6 +2967,46 @@ $(document).ready(function () {
                 plotShadow: false
             },
 
+            // 하단 네비게이션 제거
+            navigator: {
+                enabled: false
+            },
+
+            // 스크롤바 제거
+            scrollbar: {
+                enabled: false
+            },
+
+            // 기간범위선택 
+            rangeSelector: {
+                enabled: false,
+                // allButtonsEnabled: true,                
+                // selected: 0,                
+            },
+
+            legend: {
+                enabled: true,
+                layout: 'horizontal',
+                align: 'center',
+                verticalAlign: 'bottom',
+            },
+
+            credits: {
+                enabled: false
+            },
+
+            exporting: {
+                enabled: false
+            },
+
+            tooltip: {
+                enabled: false
+            },
+
+            title: {
+                text: null
+            },
+
             colors: ["#404fc3", "#545872", "#d3d3d3"],
 
             tooltip: {
@@ -3060,28 +3048,6 @@ $(document).ready(function () {
                 labels: {
                     enabled: false
                 }
-            },
-
-            title: {
-                style: {
-                    'font-weight': "bold",
-                    color: '#E0E0E3',
-                    textTransform: 'uppercase',
-                    fontSize: '0',
-                },
-                text: ''
-            },
-
-            credits: {
-                enabled: false
-            },
-
-            exporting: {
-                enabled: false
-            },
-
-            legend: {
-                enabled: false,
             },
 
             series: [{
@@ -3134,6 +3100,46 @@ $(document).ready(function () {
                 plotShadow: false
             },
 
+            // 하단 네비게이션 제거
+            navigator: {
+                enabled: false
+            },
+
+            // 스크롤바 제거
+            scrollbar: {
+                enabled: false
+            },
+
+            // 기간범위선택 
+            rangeSelector: {
+                enabled: false,
+                // allButtonsEnabled: true,                
+                // selected: 0,                
+            },
+
+            legend: {
+                enabled: true,
+                layout: 'horizontal',
+                align: 'center',
+                verticalAlign: 'bottom',
+            },
+
+            credits: {
+                enabled: false
+            },
+
+            exporting: {
+                enabled: false
+            },
+
+            tooltip: {
+                enabled: false
+            },
+
+            title: {
+                text: null
+            },
+
             colors: ["#404fc3", "#545872", "#d3d3d3"],
 
             tooltip: {
@@ -3175,28 +3181,6 @@ $(document).ready(function () {
                 labels: {
                     enabled: false
                 }
-            },
-
-            title: {
-                style: {
-                    'font-weight': "bold",
-                    color: '#E0E0E3',
-                    textTransform: 'uppercase',
-                    fontSize: '0',
-                },
-                text: ''
-            },
-
-            credits: {
-                enabled: false
-            },
-
-            exporting: {
-                enabled: false
-            },
-
-            legend: {
-                enabled: false,
             },
 
             series: [{
@@ -3249,6 +3233,46 @@ $(document).ready(function () {
                 plotShadow: false
             },
 
+            // 하단 네비게이션 제거
+            navigator: {
+                enabled: false
+            },
+
+            // 스크롤바 제거
+            scrollbar: {
+                enabled: false
+            },
+
+            // 기간범위선택 
+            rangeSelector: {
+                enabled: false,
+                // allButtonsEnabled: true,                
+                // selected: 0,                
+            },
+
+            legend: {
+                enabled: true,
+                layout: 'horizontal',
+                align: 'center',
+                verticalAlign: 'bottom',
+            },
+
+            credits: {
+                enabled: false
+            },
+
+            exporting: {
+                enabled: false
+            },
+
+            tooltip: {
+                enabled: false
+            },
+
+            title: {
+                text: null
+            },
+
             colors: ["#404fc3", "#545872", "#d3d3d3"],
 
             tooltip: {
@@ -3292,28 +3316,6 @@ $(document).ready(function () {
                 }
             },
 
-            title: {
-                style: {
-                    'font-weight': "bold",
-                    color: '#E0E0E3',
-                    textTransform: 'uppercase',
-                    fontSize: '0',
-                },
-                text: ''
-            },
-
-            credits: {
-                enabled: false
-            },
-
-            exporting: {
-                enabled: false
-            },
-
-            legend: {
-                enabled: false,
-            },
-
             series: [{
                 name: '매출액',
                 data: [97, 45, 75]
@@ -3354,6 +3356,7 @@ $(document).ready(function () {
                     // linearGradient: { x1: 0, y1: 1, x2: 1, y2: 0 },
                 },
             },
+
             // 하단 네비게이션 제거
             navigator: {
                 enabled: false
@@ -3423,8 +3426,6 @@ $(document).ready(function () {
                 },
                 opposite: true
             }],
-
-
 
             series: [{
                 style: {
@@ -3499,11 +3500,47 @@ $(document).ready(function () {
                 plotShadow: false,
             },
 
-            colors: ["#404fc3", "#5CAC00"],
+            // 하단 네비게이션 제거
+            navigator: {
+                enabled: false
+            },
+
+            // 스크롤바 제거
+            scrollbar: {
+                enabled: false
+            },
+
+            // 기간범위선택 
+            rangeSelector: {
+                enabled: false,
+                // allButtonsEnabled: true,                
+                // selected: 0,                
+            },
+
+            legend: {
+                enabled: true,
+                layout: 'horizontal',
+                align: 'center',
+                verticalAlign: 'bottom',
+            },
+
+            credits: {
+                enabled: false
+            },
+
+            exporting: {
+                enabled: false
+            },
+
+            tooltip: {
+                enabled: false
+            },
 
             title: {
                 text: null
             },
+
+            colors: ["#404fc3", "#5CAC00"],
 
             tooltip: {
                 shared: true,
@@ -3525,14 +3562,6 @@ $(document).ready(function () {
                 title: {
                     text: null,
                 }
-            },
-
-            credits: {
-                enabled: false
-            },
-
-            exporting: {
-                enabled: false
             },
 
             series: [{
@@ -3579,13 +3608,47 @@ $(document).ready(function () {
                 plotShadow: false,
             },
 
-            colors: ["#404fc3", "#5CAC00"],
+            // 하단 네비게이션 제거
+            navigator: {
+                enabled: false
+            },
+
+            // 스크롤바 제거
+            scrollbar: {
+                enabled: false
+            },
+
+            // 기간범위선택 
+            rangeSelector: {
+                enabled: false,
+                // allButtonsEnabled: true,                
+                // selected: 0,                
+            },
+
+            legend: {
+                enabled: true,
+                layout: 'horizontal',
+                align: 'center',
+                verticalAlign: 'bottom',
+            },
+
+            credits: {
+                enabled: false
+            },
+
+            exporting: {
+                enabled: false
+            },
+
+            tooltip: {
+                enabled: false
+            },
 
             title: {
-                style: {
-                    fontSize: '0',
-                },
+                text: null
             },
+
+            colors: ["#404fc3", "#5CAC00"],
 
             tooltip: {
                 shared: true,
@@ -3619,14 +3682,6 @@ $(document).ready(function () {
                 },
                 opposite: true
             }],
-
-            credits: {
-                enabled: false
-            },
-
-            exporting: {
-                enabled: false
-            },
 
             series: [{
                 name: '부채비율',
@@ -3671,13 +3726,47 @@ $(document).ready(function () {
                 plotShadow: false,
             },
 
-            colors: ["#C4C4C4", "#404fc3", "#5CAC00"],
+            // 하단 네비게이션 제거
+            navigator: {
+                enabled: false
+            },
+
+            // 스크롤바 제거
+            scrollbar: {
+                enabled: false
+            },
+
+            // 기간범위선택 
+            rangeSelector: {
+                enabled: false,
+                // allButtonsEnabled: true,                
+                // selected: 0,                
+            },
+
+            legend: {
+                enabled: true,
+                layout: 'horizontal',
+                align: 'center',
+                verticalAlign: 'bottom',
+            },
+
+            credits: {
+                enabled: false
+            },
+
+            exporting: {
+                enabled: false
+            },
+
+            tooltip: {
+                enabled: false
+            },
 
             title: {
-                style: {
-                    fontSize: '0',
-                },
+                text: null
             },
+
+            colors: ["#C4C4C4", "#404fc3", "#5CAC00"],
 
             tooltip: {
                 shared: true,
@@ -3710,14 +3799,6 @@ $(document).ready(function () {
                 },
                 opposite: true
             }],
-
-            credits: {
-                enabled: false
-            },
-
-            exporting: {
-                enabled: false
-            },
 
             legend: {
                 layout: 'horizontal',
@@ -3781,13 +3862,47 @@ $(document).ready(function () {
                 plotShadow: false,
             },
 
-            colors: ["#404fc3", "#5CAC00"],
+            // 하단 네비게이션 제거
+            navigator: {
+                enabled: false
+            },
+
+            // 스크롤바 제거
+            scrollbar: {
+                enabled: false
+            },
+
+            // 기간범위선택 
+            rangeSelector: {
+                enabled: false,
+                // allButtonsEnabled: true,                
+                // selected: 0,                
+            },
+
+            legend: {
+                enabled: true,
+                layout: 'horizontal',
+                align: 'center',
+                verticalAlign: 'bottom',
+            },
+
+            credits: {
+                enabled: false
+            },
+
+            exporting: {
+                enabled: false
+            },
+
+            tooltip: {
+                enabled: false
+            },
 
             title: {
-                style: {
-                    fontSize: '0',
-                },
+                text: null
             },
+
+            colors: ["#404fc3", "#5CAC00"],
 
             tooltip: {
                 shared: true,
@@ -3820,14 +3935,6 @@ $(document).ready(function () {
                 },
                 opposite: true
             }],
-
-            credits: {
-                enabled: false
-            },
-
-            exporting: {
-                enabled: false
-            },
 
             series: [{
                 name: '자기자본이익률',
@@ -3878,13 +3985,47 @@ $(document).ready(function () {
                 plotShadow: false,
             },
 
-            colors: ["#C4C4C4", "#404fc3", "#5CAC00"],
+            // 하단 네비게이션 제거
+            navigator: {
+                enabled: false
+            },
+
+            // 스크롤바 제거
+            scrollbar: {
+                enabled: false
+            },
+
+            // 기간범위선택 
+            rangeSelector: {
+                enabled: false,
+                // allButtonsEnabled: true,                
+                // selected: 0,                
+            },
+
+            legend: {
+                enabled: true,
+                layout: 'horizontal',
+                align: 'center',
+                verticalAlign: 'bottom',
+            },
+
+            credits: {
+                enabled: false
+            },
+
+            exporting: {
+                enabled: false
+            },
+
+            tooltip: {
+                enabled: false
+            },
 
             title: {
-                style: {
-                    fontSize: '0',
-                },
+                text: null
             },
+
+            colors: ["#C4C4C4", "#404fc3", "#5CAC00"],
 
             tooltip: {
                 shared: true,
@@ -3918,14 +4059,6 @@ $(document).ready(function () {
                 },
                 opposite: true
             }],
-
-            credits: {
-                enabled: false
-            },
-
-            exporting: {
-                enabled: false
-            },
 
             series: [{
                 type: 'line',
@@ -3975,13 +4108,47 @@ $(document).ready(function () {
                 plotShadow: false,
             },
 
-            colors: ["#C4C4C4", "#404fc3", "#5CAC00"],
+            // 하단 네비게이션 제거
+            navigator: {
+                enabled: false
+            },
+
+            // 스크롤바 제거
+            scrollbar: {
+                enabled: false
+            },
+
+            // 기간범위선택 
+            rangeSelector: {
+                enabled: false,
+                // allButtonsEnabled: true,                
+                // selected: 0,                
+            },
+
+            legend: {
+                enabled: true,
+                layout: 'horizontal',
+                align: 'center',
+                verticalAlign: 'bottom',
+            },
+
+            credits: {
+                enabled: false
+            },
+
+            exporting: {
+                enabled: false
+            },
+
+            tooltip: {
+                enabled: false
+            },
 
             title: {
-                style: {
-                    fontSize: '0',
-                },
+                text: null
             },
+            
+            colors: ["#C4C4C4", "#404fc3", "#5CAC00"],
 
             tooltip: {
                 shared: true,
@@ -4003,14 +4170,6 @@ $(document).ready(function () {
                 title: {
                     text: null,
                 }
-            },
-
-            credits: {
-                enabled: false
-            },
-
-            exporting: {
-                enabled: false
             },
 
             series: [{
@@ -4061,13 +4220,47 @@ $(document).ready(function () {
                 plotShadow: false,
             },
 
-            colors: ["#404fc3"],
+            // 하단 네비게이션 제거
+            navigator: {
+                enabled: false
+            },
+
+            // 스크롤바 제거
+            scrollbar: {
+                enabled: false
+            },
+
+            // 기간범위선택 
+            rangeSelector: {
+                enabled: false,
+                // allButtonsEnabled: true,                
+                // selected: 0,                
+            },
+
+            legend: {
+                enabled: true,
+                layout: 'horizontal',
+                align: 'center',
+                verticalAlign: 'bottom',
+            },
+
+            credits: {
+                enabled: false
+            },
+
+            exporting: {
+                enabled: false
+            },
+
+            tooltip: {
+                enabled: false
+            },
 
             title: {
-                style: {
-                    fontSize: '0',
-                },
+                text: null
             },
+
+            colors: ["#404fc3"],
 
             tooltip: {
                 shared: true,
@@ -4089,14 +4282,6 @@ $(document).ready(function () {
                 title: {
                     text: null,
                 }
-            },
-
-            credits: {
-                enabled: false
-            },
-
-            exporting: {
-                enabled: false
             },
 
             series: [{
@@ -4138,13 +4323,47 @@ $(document).ready(function () {
                 plotShadow: false,
             },
 
-            colors: ["#404fc3", "#5CAC00"],
+            // 하단 네비게이션 제거
+            navigator: {
+                enabled: false
+            },
+
+            // 스크롤바 제거
+            scrollbar: {
+                enabled: false
+            },
+
+            // 기간범위선택 
+            rangeSelector: {
+                enabled: false,
+                // allButtonsEnabled: true,                
+                // selected: 0,                
+            },
+
+            legend: {
+                enabled: true,
+                layout: 'horizontal',
+                align: 'center',
+                verticalAlign: 'bottom',
+            },
+
+            credits: {
+                enabled: false
+            },
+
+            exporting: {
+                enabled: false
+            },
+
+            tooltip: {
+                enabled: false
+            },
 
             title: {
-                style: {
-                    fontSize: '0',
-                },
+                text: null
             },
+
+            colors: ["#404fc3", "#5CAC00"],
 
             tooltip: {
                 shared: true,
@@ -4166,14 +4385,6 @@ $(document).ready(function () {
                 title: {
                     text: null,
                 }
-            },
-
-            credits: {
-                enabled: false
-            },
-
-            exporting: {
-                enabled: false
             },
 
             series: [{
@@ -4219,11 +4430,47 @@ $(document).ready(function () {
                 plotShadow: false,
             },
 
-            colors: ["#404fc3"],
+            // 하단 네비게이션 제거
+            navigator: {
+                enabled: false
+            },
+
+            // 스크롤바 제거
+            scrollbar: {
+                enabled: false
+            },
+
+            // 기간범위선택 
+            rangeSelector: {
+                enabled: false,
+                // allButtonsEnabled: true,                
+                // selected: 0,                
+            },
+
+            legend: {
+                enabled: true,
+                layout: 'horizontal',
+                align: 'center',
+                verticalAlign: 'bottom',
+            },
+
+            credits: {
+                enabled: false
+            },
+
+            exporting: {
+                enabled: false
+            },
+
+            tooltip: {
+                enabled: false
+            },
 
             title: {
                 text: null
             },
+
+            colors: ["#404fc3"],
 
             tooltip: {
                 shared: true,
@@ -4245,14 +4492,6 @@ $(document).ready(function () {
                 title: {
                     text: null,
                 }
-            },
-
-            credits: {
-                enabled: false
-            },
-
-            exporting: {
-                enabled: false
             },
 
             series: [{
@@ -4306,13 +4545,48 @@ $(document).ready(function () {
                 plotShadow: false,
             },
 
-            colors: ["#404fc3", "#5CAC00"],
-            title: {
-                style: {
-                    fontSize: '0',
-                },
+            // 하단 네비게이션 제거
+            navigator: {
+                enabled: false
             },
 
+            // 스크롤바 제거
+            scrollbar: {
+                enabled: false
+            },
+
+            // 기간범위선택 
+            rangeSelector: {
+                enabled: false,
+                // allButtonsEnabled: true,                
+                // selected: 0,                
+            },
+
+            legend: {
+                enabled: true,
+                layout: 'horizontal',
+                align: 'center',
+                verticalAlign: 'bottom',
+            },
+
+            credits: {
+                enabled: false
+            },
+
+            exporting: {
+                enabled: false
+            },
+
+            tooltip: {
+                enabled: false
+            },
+
+            title: {
+                text: null
+            },
+
+            colors: ["#404fc3", "#5CAC00"],
+            
             tooltip: {
                 shared: true,
                 pointFormat: '<span style="color:{series.color}">{series.name} : <b>{point.y:,.0f} 달러</b><br/>'
@@ -4345,14 +4619,6 @@ $(document).ready(function () {
                 },
                 opposite: true
             }],
-
-            credits: {
-                enabled: false
-            },
-
-            exporting: {
-                enabled: false
-            },
 
             series: [{
                 type: 'line',
@@ -4399,11 +4665,47 @@ $(document).ready(function () {
                 plotShadow: false,
             },
 
-            colors: ["#404fc3"],
+            // 하단 네비게이션 제거
+            navigator: {
+                enabled: false
+            },
+
+            // 스크롤바 제거
+            scrollbar: {
+                enabled: false
+            },
+
+            // 기간범위선택 
+            rangeSelector: {
+                enabled: false,
+                // allButtonsEnabled: true,                
+                // selected: 0,                
+            },
+
+            legend: {
+                enabled: true,
+                layout: 'horizontal',
+                align: 'center',
+                verticalAlign: 'bottom',
+            },
+
+            credits: {
+                enabled: false
+            },
+
+            exporting: {
+                enabled: false
+            },
+
+            tooltip: {
+                enabled: false
+            },
 
             title: {
                 text: null
             },
+
+            colors: ["#404fc3"],
 
             tooltip: {
                 shared: true,
@@ -4425,14 +4727,6 @@ $(document).ready(function () {
                 title: {
                     text: null,
                 }
-            },
-
-            credits: {
-                enabled: false
-            },
-
-            exporting: {
-                enabled: false
             },
 
             series: [{
@@ -4486,11 +4780,47 @@ $(document).ready(function () {
                 plotShadow: false,
             },
 
-            colors: ["#404fc3"],
+            // 하단 네비게이션 제거
+            navigator: {
+                enabled: false
+            },
+
+            // 스크롤바 제거
+            scrollbar: {
+                enabled: false
+            },
+
+            // 기간범위선택 
+            rangeSelector: {
+                enabled: false,
+                // allButtonsEnabled: true,                
+                // selected: 0,                
+            },
+
+            legend: {
+                enabled: true,
+                layout: 'horizontal',
+                align: 'center',
+                verticalAlign: 'bottom',
+            },
+
+            credits: {
+                enabled: false
+            },
+
+            exporting: {
+                enabled: false
+            },
+
+            tooltip: {
+                enabled: false
+            },
 
             title: {
                 text: null
             },
+
+            colors: ["#404fc3"],
 
             tooltip: {
                 shared: true,
@@ -4512,14 +4842,6 @@ $(document).ready(function () {
                 title: {
                     text: null,
                 }
-            },
-
-            credits: {
-                enabled: false
-            },
-
-            exporting: {
-                enabled: false
             },
 
             series: [{
@@ -4570,13 +4892,47 @@ $(document).ready(function () {
                 plotShadow: false
             },
 
-            colors: ["#404fc3", "#545872", "#d3d3d3"],
+            // 하단 네비게이션 제거
+            navigator: {
+                enabled: false
+            },
+
+            // 스크롤바 제거
+            scrollbar: {
+                enabled: false
+            },
+
+            // 기간범위선택 
+            rangeSelector: {
+                enabled: false,
+                // allButtonsEnabled: true,                
+                // selected: 0,                
+            },
+
+            legend: {
+                enabled: true,
+                layout: 'horizontal',
+                align: 'center',
+                verticalAlign: 'bottom',
+            },
+
+            credits: {
+                enabled: false
+            },
+
+            exporting: {
+                enabled: false
+            },
 
             tooltip: {
-                shared: true,
-                crosshairs: true,
-                pointFormat: '<span style="color:{series.color}">{series.name}: <b>{point.y:,.0f}</b><br/>'
+                enabled: false
             },
+
+            title: {
+                text: null
+            },
+
+            colors: ["#404fc3", "#545872", "#d3d3d3"],
 
             xAxis: [{
                 categories: ['2015', '2016', '2017', '2018', '2019', '2019', '2019', '2019', '2020', '2021'],
@@ -4611,28 +4967,6 @@ $(document).ready(function () {
                 labels: {
                     enabled: false
                 }
-            },
-
-            title: {
-                style: {
-                    'font-weight': "bold",
-                    color: '#E0E0E3',
-                    textTransform: 'uppercase',
-                    fontSize: '0',
-                },
-                text: ''
-            },
-
-            credits: {
-                enabled: false
-            },
-
-            exporting: {
-                enabled: false
-            },
-
-            legend: {
-                enabled: false,
             },
 
             series: [{
@@ -4679,6 +5013,46 @@ $(document).ready(function () {
                 plotShadow: false
             },
 
+            // 하단 네비게이션 제거
+            navigator: {
+                enabled: false
+            },
+
+            // 스크롤바 제거
+            scrollbar: {
+                enabled: false
+            },
+
+            // 기간범위선택 
+            rangeSelector: {
+                enabled: false,
+                // allButtonsEnabled: true,                
+                // selected: 0,                
+            },
+
+            legend: {
+                enabled: true,
+                layout: 'horizontal',
+                align: 'center',
+                verticalAlign: 'bottom',
+            },
+
+            credits: {
+                enabled: false
+            },
+
+            exporting: {
+                enabled: false
+            },
+
+            tooltip: {
+                enabled: false
+            },
+
+            title: {
+                text: null
+            },
+
             colors: ["#545872"],
 
             tooltip: {
@@ -4720,28 +5094,6 @@ $(document).ready(function () {
                 labels: {
                     enabled: false
                 }
-            },
-
-            title: {
-                style: {
-                    'font-weight': "bold",
-                    color: '#E0E0E3',
-                    textTransform: 'uppercase',
-                    fontSize: '0',
-                },
-                text: ''
-            },
-
-            credits: {
-                enabled: false
-            },
-
-            exporting: {
-                enabled: false
-            },
-
-            legend: {
-                enabled: false,
             },
 
             series: [{
@@ -4788,6 +5140,46 @@ $(document).ready(function () {
                 plotShadow: false
             },
 
+            // 하단 네비게이션 제거
+            navigator: {
+                enabled: false
+            },
+
+            // 스크롤바 제거
+            scrollbar: {
+                enabled: false
+            },
+
+            // 기간범위선택 
+            rangeSelector: {
+                enabled: false,
+                // allButtonsEnabled: true,                
+                // selected: 0,                
+            },
+
+            legend: {
+                enabled: true,
+                layout: 'horizontal',
+                align: 'center',
+                verticalAlign: 'bottom',
+            },
+
+            credits: {
+                enabled: false
+            },
+
+            exporting: {
+                enabled: false
+            },
+
+            tooltip: {
+                enabled: false
+            },
+
+            title: {
+                text: null
+            },
+
             // colors: ["#d3d3d3"],
 
             tooltip: {
@@ -4829,28 +5221,6 @@ $(document).ready(function () {
                 labels: {
                     enabled: false
                 }
-            },
-
-            title: {
-                style: {
-                    'font-weight': "bold",
-                    color: '#E0E0E3',
-                    textTransform: 'uppercase',
-                    fontSize: '0',
-                },
-                text: ''
-            },
-
-            credits: {
-                enabled: false
-            },
-
-            exporting: {
-                enabled: false
-            },
-
-            legend: {
-                enabled: false,
             },
 
             series: [{
@@ -4897,14 +5267,28 @@ $(document).ready(function () {
                 marginBottom: 0,
             },
 
-            title: {
-                text: null
+            // 하단 네비게이션 제거
+            navigator: {
+                enabled: false
             },
 
-            accessibility: {
-                point: {
-                    valueDescriptionFormat: '{index}. {point.name}, fat: {point.x}g, sugar: {point.y}g, obesity: {point.z}%.'
-                }
+            // 스크롤바 제거
+            scrollbar: {
+                enabled: false
+            },
+
+            // 기간범위선택 
+            rangeSelector: {
+                enabled: false,
+                // allButtonsEnabled: true,                
+                // selected: 0,                
+            },
+
+            legend: {
+                enabled: true,
+                layout: 'horizontal',
+                align: 'center',
+                verticalAlign: 'bottom',
             },
 
             credits: {
@@ -4915,8 +5299,22 @@ $(document).ready(function () {
                 enabled: false
             },
 
-            legend: {
-                enabled: false,
+            tooltip: {
+                enabled: false
+            },
+
+            title: {
+                text: null
+            },
+
+            title: {
+                text: null
+            },
+
+            accessibility: {
+                point: {
+                    valueDescriptionFormat: '{index}. {point.name}, fat: {point.x}g, sugar: {point.y}g, obesity: {point.z}%.'
+                }
             },
 
             xAxis: {
@@ -5030,6 +5428,65 @@ $(document).ready(function () {
                 plotBorderWidth: null,
                 plotShadow: false,
             },
+
+            // 하단 네비게이션 제거
+            navigator: {
+                enabled: false
+            },
+
+            // 스크롤바 제거
+            scrollbar: {
+                enabled: false
+            },
+
+            // 기간범위선택 
+            rangeSelector: {
+                enabled: false,
+                // allButtonsEnabled: true,                
+                // selected: 0,                
+            },
+
+            legend: {
+                enabled: true,
+                layout: 'horizontal',
+                align: 'center',
+                verticalAlign: 'bottom',
+            },
+
+            credits: {
+                enabled: false
+            },
+
+            exporting: {
+                enabled: false
+            },
+
+            tooltip: {
+                enabled: false
+            },
+
+            title: {
+                text: null
+            },
+
+            legend: {
+                itemDistance: 6,
+            },
+            
+            colors: ["#f2333a", "#bec3ed", "#e4e6fc", "#c6c6c6", "#737edd"],
+            
+            tooltip: {
+                crosshairs: true,
+                shared: true,
+                valueDecimals: 2,
+                style: {
+                    fontfamily: 'Spoqa Han Sans Neo',
+                    fontWeight: 'nomal',
+                    fontSize: '11px',
+                    color: '#8380A0',
+                }
+            },
+
             xAxis: {
                 type: 'year',
                 categories: ['20.06', '20.06', '20.06', '20.06', '20.06', '20.06', '20.06', '20.06', '20.06', '20.06', '20.06', '20.06', '20.06', '20.06', '20.06', '20.06', '20.06', '20.06', '20.06', '20.06', '20.06', '20.06', '20.07', '20.07', '20.07', '20.07', '20.07', '20.07', '20.07', '20.07', '20.07', '20.07', '20.07', '20.07', '20.07', '20.07', '20.07', '20.07', '20.07', '20.07', '20.07', '20.07', '20.07', '20.07', '20.08', '20.08', '20.08', '20.08', '20.08', '20.08', '20.08', '20.08', '20.08', '20.08', '20.08', '20.08', '20.08', '20.08', '20.08', '20.08', '20.08', '20.08', '20.08', '20.08', '20.08', '20.09', '20.09', '20.09', '20.09', '20.09', '20.09', '20.09', '20.09', '20.09', '20.09', '20.09', '20.09', '20.09', '20.09', '20.09', '20.09', '20.09', '20.09', '20.09', '20.09', '20.09', '20.10', '20.10', '20.10', '20.10', '20.10', '20.10', '20.10', '20.10', '20.10', '20.10', '20.10', '20.10', '20.10', '20.10', '20.10', '20.10', '20.10', '20.10', '20.10', '20.10', '20.10', '20.10', '20.11', '20.11', '20.11', '20.11', '20.11', '20.11', '20.11', '20.11', '20.11', '20.11', '20.11', '20.11', '20.11', '20.11', '20.11', '20.11', '20.11', '20.11', '20.11', '20.11', '20.12', '20.12', '20.12', '20.12', '20.12', '20.12', '20.12', '20.12', '20.12', '20.12', '20.12', '20.12', '20.12', '20.12', '20.12', '20.12', '20.12', '20.12', '20.12', '20.12', '20.12', '20.12', '21.01', '21.01', '21.01', '21.01', '21.01', '21.01', '21.01', '21.01', '21.01', '21.01', '21.01', '21.01', '21.01', '21.01', '21.01', '21.01', '21.01', '21.01', '21.01', '21.02', '21.02', '21.02', '21.02', '21.02', '21.02', '21.02', '21.02', '21.02', '21.02', '21.02', '21.02', '21.02', '21.02', '21.02', '21.02', '21.02', '21.02', '21.02', '21.03', '21.03', '21.03', '21.03', '21.03', '21.03', '21.03', '21.03', '21.03', '21.03', '21.03', '21.03', '21.03', '21.03', '21.03', '21.03', '21.03', '21.03', '21.03', '21.03', '21.01', '21.02', '21.03', '21.04', '21.05', '21.06', '21.07', '21.08', '21.09', '21.10', '21.11', '21.12', '21.01', '21.02', '21.03', '21.04'],
@@ -5061,30 +5518,7 @@ $(document).ready(function () {
                 showFirstLabel: true,
                 opposite: true,
             },
-            legend: {
-                itemDistance: 6,
-            },
-            title: {
-                text: null
-            },
-            colors: ["#f2333a", "#bec3ed", "#e4e6fc", "#c6c6c6", "#737edd"],
-            tooltip: {
-                crosshairs: true,
-                shared: true,
-                valueDecimals: 2,
-                style: {
-                    fontfamily: 'Spoqa Han Sans Neo',
-                    fontWeight: 'nomal',
-                    fontSize: '11px',
-                    color: '#8380A0',
-                }
-            },
-            credits: {
-                enabled: false,
-            },
-            exporting: {
-                enabled: false
-            },
+            
             lang: {
                 noData: "밸류에이션에 필요한 데이터가 충분하지 않아<br>적정주가를 제시하지 않습니다..",
             },
