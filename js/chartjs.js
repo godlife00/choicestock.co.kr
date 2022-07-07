@@ -5,7 +5,7 @@ $(document).ready(function () {
     // ***************************** //
     // 서브 - 종목추천 메인 line 작은 차트
     if ($('#containerS1_1').length) {
-        Highcharts.chart('containerS1_1', {
+        Highcharts.stockChart('containerS1_1', {
             chart: {
                 type: 'line',
                 renderTo: 'containerS1_1',
@@ -20,11 +20,48 @@ $(document).ready(function () {
                 plotBorderWidth: null,
                 plotShadow: false
             },
-            colors: ["#877edf"],
+
+            // 하단 네비게이션 제거
+            navigator: {
+                enabled: false
+            },
+
+            // 스크롤바 제거
+            scrollbar: {
+                enabled: false
+            },
+
+            // 기간범위선택 
+            rangeSelector: {
+                enabled: false,
+                // allButtonsEnabled: true,                
+                // selected: 0,                
+            },
+
+            legend: {
+                enabled: true,
+                layout: 'horizontal',
+                align: 'center',
+                verticalAlign: 'bottom',
+            },
+
+            credits: {
+                enabled: false
+            },
+
+            exporting: {
+                enabled: false
+            },
+
+            tooltip: {
+                enabled: false
+            },
 
             title: {
                 text: null
             },
+
+            colors: ["#877edf"],
 
             tooltip: {
                 shared: true,
@@ -60,18 +97,6 @@ $(document).ready(function () {
                 }
             },
 
-            credits: {
-                enabled: false,
-            },
-
-            legend: {
-                enabled: false,
-            },
-
-            exporting: {
-                enabled: false
-            },
-
             series: [{
                 name: '',
                 data: [
@@ -97,7 +122,7 @@ $(document).ready(function () {
         });
     }
     if ($('#containerS1_2').length) {
-        Highcharts.chart('containerS1_2', {
+        Highcharts.stockChart('containerS1_2', {
             chart: {
                 type: 'line',
                 renderTo: 'containerS1_2',
@@ -112,20 +137,48 @@ $(document).ready(function () {
                 plotBorderWidth: null,
                 plotShadow: false
             },
-            colors: ["#877edf"],
-            title: {
-                style: {
-                    'font-weight': "bold",
-                    color: '#E0E0E3',
-                    textTransform: 'uppercase',
-                    fontSize: '0',
-                },
-                text: null
+
+            // 하단 네비게이션 제거
+            navigator: {
+                enabled: false
+            },
+
+            // 스크롤바 제거
+            scrollbar: {
+                enabled: false
+            },
+
+            // 기간범위선택 
+            rangeSelector: {
+                enabled: false,
+                // allButtonsEnabled: true,                
+                // selected: 0,                
+            },
+
+            legend: {
+                enabled: true,
+                layout: 'horizontal',
+                align: 'center',
+                verticalAlign: 'bottom',
+            },
+
+            credits: {
+                enabled: false
+            },
+
+            exporting: {
+                enabled: false
             },
 
             tooltip: {
-                enabled: false,
+                enabled: false
             },
+
+            title: {
+                text: null
+            },
+
+            colors: ["#877edf"],
 
             xAxis: {
                 title: {
@@ -154,18 +207,6 @@ $(document).ready(function () {
                 labels: {
                     enabled: false
                 }
-            },
-
-            credits: {
-                enabled: false,
-            },
-
-            legend: {
-                enabled: false,
-            },
-
-            exporting: {
-                enabled: false
             },
 
             series: [{
@@ -187,7 +228,7 @@ $(document).ready(function () {
         });
     }
     if ($('#containerS1_3').length) {
-        Highcharts.chart('containerS1_3', {
+        Highcharts.stockChart('containerS1_3', {
             chart: {
                 type: 'line',
                 renderTo: 'containerS1_3',
@@ -202,20 +243,48 @@ $(document).ready(function () {
                 plotBorderWidth: null,
                 plotShadow: false
             },
-            colors: ["#877edf"],
-            title: {
-                style: {
-                    'font-weight': "bold",
-                    color: '#E0E0E3',
-                    textTransform: 'uppercase',
-                    fontSize: '0',
-                },
-                text: null
+
+            // 하단 네비게이션 제거
+            navigator: {
+                enabled: false
+            },
+
+            // 스크롤바 제거
+            scrollbar: {
+                enabled: false
+            },
+
+            // 기간범위선택 
+            rangeSelector: {
+                enabled: false,
+                // allButtonsEnabled: true,                
+                // selected: 0,                
+            },
+
+            legend: {
+                enabled: true,
+                layout: 'horizontal',
+                align: 'center',
+                verticalAlign: 'bottom',
+            },
+
+            credits: {
+                enabled: false
+            },
+
+            exporting: {
+                enabled: false
             },
 
             tooltip: {
-                enabled: false,
+                enabled: false
             },
+
+            title: {
+                text: null
+            },
+
+            colors: ["#877edf"],
 
             xAxis: {
                 title: {
@@ -244,18 +313,6 @@ $(document).ready(function () {
                 labels: {
                     enabled: false
                 }
-            },
-
-            credits: {
-                enabled: false,
-            },
-
-            legend: {
-                enabled: false,
-            },
-
-            exporting: {
-                enabled: false
             },
 
             series: [{
@@ -278,7 +335,7 @@ $(document).ready(function () {
     }
     // 서브 - 종목추천 투자포인트, 종목진단 line 차트    
     if ($('#containerArea_1').length) {
-        Highcharts.chart('containerArea_1', {
+        Highcharts.stockChart('containerArea_1', {
 
             chart: {
                 type: 'line',
@@ -294,16 +351,47 @@ $(document).ready(function () {
                 plotShadow: false
             },
 
-            colors: ["#877edf"],
+            // 하단 네비게이션 제거
+            navigator: {
+                enabled: false
+            },
+
+            // 스크롤바 제거
+            scrollbar: {
+                enabled: false
+            },
+
+            // 기간범위선택 
+            rangeSelector: {
+                enabled: false,
+                // allButtonsEnabled: true,                
+                // selected: 0,                
+            },
+
+            legend: {
+                enabled: true,
+                layout: 'horizontal',
+                align: 'center',
+                verticalAlign: 'bottom',
+            },
+
+            credits: {
+                enabled: false
+            },
+
+            exporting: {
+                enabled: false
+            },
+
+            tooltip: {
+                enabled: false
+            },
+
             title: {
-                style: {
-                    'font-weight': "bold",
-                    color: '#E0E0E3',
-                    textTransform: 'uppercase',
-                    fontSize: '0',
-                },
                 text: null
             },
+
+            colors: ["#877edf"],
 
             tooltip: {
                 shared: true,
@@ -325,18 +413,6 @@ $(document).ready(function () {
                 labels: {
                     enabled: false
                 }
-            },
-
-            credits: {
-                enabled: false,
-            },
-
-            legend: {
-                enabled: false,
-            },
-
-            exporting: {
-                enabled: false
             },
 
             series: [{
@@ -366,7 +442,7 @@ $(document).ready(function () {
     // 서브 - 종목추천 투자포인트, 종목진단 spider 차트    
     if ($('#containerSpider_1').length) {
 
-        Highcharts.chart('containerSpider_1', {
+        Highcharts.stockChart('containerSpider_1', {
             chart: {
                 polar: true,
                 type: 'area',
@@ -390,8 +466,44 @@ $(document).ready(function () {
                 marginRight: 30,
             },
 
+            // 하단 네비게이션 제거
+            navigator: {
+                enabled: false
+            },
+
+            // 스크롤바 제거
+            scrollbar: {
+                enabled: false
+            },
+
+            // 기간범위선택 
+            rangeSelector: {
+                enabled: false,
+                // allButtonsEnabled: true,                
+                // selected: 0,                
+            },
+
+            legend: {
+                enabled: true,
+                layout: 'horizontal',
+                align: 'center',
+                verticalAlign: 'bottom',
+            },
+
+            credits: {
+                enabled: false
+            },
+
+            exporting: {
+                enabled: false
+            },
+
+            tooltip: {
+                enabled: false
+            },
+
             title: {
-                text: ''
+                text: null
             },
 
             colors: ["#877edf"],
@@ -441,7 +553,6 @@ $(document).ready(function () {
                     });
                     return s;
                 },
-                shared: true
             },
 
             pane: {
@@ -459,7 +570,6 @@ $(document).ready(function () {
                         fontSize: '13px'
                     }
                 }
-
             },
 
             yAxis: {
@@ -471,18 +581,6 @@ $(document).ready(function () {
                 labels: {
                     enabled: false
                 }
-            },
-
-            exporting: {
-                enabled: false
-            },
-
-            credits: {
-                enabled: false
-            },
-
-            legend: {
-                enabled: false,
             },
 
             series: [{
@@ -505,7 +603,7 @@ $(document).ready(function () {
     // ***************************** //
     // 서브 - 종목분석 메인 line 차트    
     if ($('#containerArea1_1').length) {
-        Highcharts.chart('containerArea1_1', {
+        Highcharts.stockChart('containerArea1_1', {
             chart: {
                 type: 'line',
                 renderTo: 'containerArea1_1',
@@ -520,15 +618,56 @@ $(document).ready(function () {
                 plotBorderWidth: null,
                 plotShadow: false
             },
-            colors: ["#877edf"],
+
+            // 하단 네비게이션 제거
+            navigator: {
+                enabled: false
+            },
+
+            // 스크롤바 제거
+            scrollbar: {
+                enabled: false
+            },
+
+            // 기간범위선택 
+            rangeSelector: {
+                enabled: false,
+                // allButtonsEnabled: true,                
+                // selected: 0,                
+            },
+
+            legend: {
+                enabled: true,
+                layout: 'horizontal',
+                align: 'center',
+                verticalAlign: 'bottom',
+            },
+
+            credits: {
+                enabled: false
+            },
+
+            exporting: {
+                enabled: false
+            },
+
+            tooltip: {
+                enabled: false
+            },
 
             title: {
                 text: null
             },
 
+            colors: ["#877edf"],
+
             tooltip: {
                 shared: true,
                 pointFormat: '<span style="color:{series.color}">{series.name}: <b>{point.y:,.0f}</b><br/>'
+            },
+
+            legend: {
+                enabled: false
             },
 
             xAxis: {
@@ -558,18 +697,6 @@ $(document).ready(function () {
                 labels: {
                     enabled: false
                 }
-            },
-
-            credits: {
-                enabled: false,
-            },
-
-            legend: {
-                enabled: false,
-            },
-
-            exporting: {
-                enabled: false
             },
 
             series: [{
@@ -597,7 +724,7 @@ $(document).ready(function () {
         });
     }
     if ($('#containerArea1_2').length) {
-        Highcharts.chart('containerArea1_2', {
+        Highcharts.stockChart('containerArea1_2', {
             chart: {
                 type: 'line',
                 renderTo: 'containerArea1_2',
@@ -612,15 +739,56 @@ $(document).ready(function () {
                 plotBorderWidth: null,
                 plotShadow: false
             },
-            colors: ["#877edf"],
+
+            // 하단 네비게이션 제거
+            navigator: {
+                enabled: false
+            },
+
+            // 스크롤바 제거
+            scrollbar: {
+                enabled: false
+            },
+
+            // 기간범위선택 
+            rangeSelector: {
+                enabled: false,
+                // allButtonsEnabled: true,                
+                // selected: 0,                
+            },
+
+            legend: {
+                enabled: true,
+                layout: 'horizontal',
+                align: 'center',
+                verticalAlign: 'bottom',
+            },
+
+            credits: {
+                enabled: false
+            },
+
+            exporting: {
+                enabled: false
+            },
+
+            tooltip: {
+                enabled: false
+            },
 
             title: {
                 text: null
             },
 
+            colors: ["#877edf"],
+
             tooltip: {
                 shared: true,
                 pointFormat: '<span style="color:{series.color}">{series.name}: <b>{point.y:,.0f}</b><br/>'
+            },
+
+            legend: {
+                enabled: false
             },
 
             xAxis: {
@@ -650,18 +818,6 @@ $(document).ready(function () {
                 labels: {
                     enabled: false
                 }
-            },
-
-            credits: {
-                enabled: false,
-            },
-
-            legend: {
-                enabled: false,
-            },
-
-            exporting: {
-                enabled: false
             },
 
             series: [{
@@ -689,7 +845,7 @@ $(document).ready(function () {
         });
     }
     if ($('#containerArea1_3').length) {
-        Highcharts.chart('containerArea1_3', {
+        Highcharts.stockChart('containerArea1_3', {
             chart: {
                 type: 'line',
                 renderTo: 'containerArea1_3',
@@ -704,15 +860,56 @@ $(document).ready(function () {
                 plotBorderWidth: null,
                 plotShadow: false
             },
-            colors: ["#877edf"],
+
+            // 하단 네비게이션 제거
+            navigator: {
+                enabled: false
+            },
+
+            // 스크롤바 제거
+            scrollbar: {
+                enabled: false
+            },
+
+            // 기간범위선택 
+            rangeSelector: {
+                enabled: false,
+                // allButtonsEnabled: true,                
+                // selected: 0,                
+            },
+
+            legend: {
+                enabled: true,
+                layout: 'horizontal',
+                align: 'center',
+                verticalAlign: 'bottom',
+            },
+
+            credits: {
+                enabled: false
+            },
+
+            exporting: {
+                enabled: false
+            },
+
+            tooltip: {
+                enabled: false
+            },
 
             title: {
                 text: null
             },
 
+            colors: ["#877edf"],
+
             tooltip: {
                 shared: true,
                 pointFormat: '<span style="color:{series.color}">{series.name}: <b>{point.y:,.0f}</b><br/>'
+            },
+
+            legend: {
+                enabled: false
             },
 
             xAxis: {
@@ -742,18 +939,6 @@ $(document).ready(function () {
                 labels: {
                     enabled: false
                 }
-            },
-
-            credits: {
-                enabled: false,
-            },
-
-            legend: {
-                enabled: false,
-            },
-
-            exporting: {
-                enabled: false
             },
 
             series: [{
@@ -781,7 +966,7 @@ $(document).ready(function () {
         });
     }
     if ($('#containerArea1_4').length) {
-        Highcharts.chart('containerArea1_4', {
+        Highcharts.stockChart('containerArea1_4', {
             chart: {
                 type: 'line',
                 renderTo: 'containerArea1_4',
@@ -796,15 +981,55 @@ $(document).ready(function () {
                 plotBorderWidth: null,
                 plotShadow: false
             },
-            colors: ["#877edf"],
+            // 하단 네비게이션 제거
+            navigator: {
+                enabled: false
+            },
+
+            // 스크롤바 제거
+            scrollbar: {
+                enabled: false
+            },
+
+            // 기간범위선택 
+            rangeSelector: {
+                enabled: false,
+                // allButtonsEnabled: true,                
+                // selected: 0,                
+            },
+
+            legend: {
+                enabled: true,
+                layout: 'horizontal',
+                align: 'center',
+                verticalAlign: 'bottom',
+            },
+
+            credits: {
+                enabled: false
+            },
+
+            exporting: {
+                enabled: false
+            },
+
+            tooltip: {
+                enabled: false
+            },
 
             title: {
                 text: null
             },
 
+            colors: ["#877edf"],
+
             tooltip: {
                 shared: true,
                 pointFormat: '<span style="color:{series.color}">{series.name}: <b>{point.y:,.0f}</b><br/>'
+            },
+
+            legend: {
+                enabled: false
             },
 
             xAxis: {
@@ -834,18 +1059,6 @@ $(document).ready(function () {
                 labels: {
                     enabled: false
                 }
-            },
-
-            credits: {
-                enabled: false,
-            },
-
-            legend: {
-                enabled: false,
-            },
-
-            exporting: {
-                enabled: false
             },
 
             series: [{
@@ -873,7 +1086,7 @@ $(document).ready(function () {
         });
     }
     if ($('#containerArea1_5').length) {
-        Highcharts.chart('containerArea1_5', {
+        Highcharts.stockChart('containerArea1_5', {
             chart: {
                 type: 'line',
                 renderTo: 'containerArea1_5',
@@ -888,15 +1101,56 @@ $(document).ready(function () {
                 plotBorderWidth: null,
                 plotShadow: false
             },
-            colors: ["#877edf"],
+
+            // 하단 네비게이션 제거
+            navigator: {
+                enabled: false
+            },
+
+            // 스크롤바 제거
+            scrollbar: {
+                enabled: false
+            },
+
+            // 기간범위선택 
+            rangeSelector: {
+                enabled: false,
+                // allButtonsEnabled: true,                
+                // selected: 0,                
+            },
+
+            legend: {
+                enabled: true,
+                layout: 'horizontal',
+                align: 'center',
+                verticalAlign: 'bottom',
+            },
+
+            credits: {
+                enabled: false
+            },
+
+            exporting: {
+                enabled: false
+            },
+
+            tooltip: {
+                enabled: false
+            },
 
             title: {
                 text: null
             },
 
+            colors: ["#877edf"],
+
             tooltip: {
                 shared: true,
                 pointFormat: '<span style="color:{series.color}">{series.name}: <b>{point.y:,.0f}</b><br/>'
+            },
+
+            legend: {
+                enabled: false
             },
 
             xAxis: {
@@ -926,18 +1180,6 @@ $(document).ready(function () {
                 labels: {
                     enabled: false
                 }
-            },
-
-            credits: {
-                enabled: false,
-            },
-
-            legend: {
-                enabled: false,
-            },
-
-            exporting: {
-                enabled: false
             },
 
             series: [{
@@ -966,7 +1208,7 @@ $(document).ready(function () {
     }
     // 서브 - 종목분석 뷰 line 차트    
     if ($('#chart_subanalysis1').length) {
-        Highcharts.chart('chart_subanalysis1', {
+        Highcharts.stockChart('chart_subanalysis1', {
 
             chart: {
                 type: 'line',
@@ -982,20 +1224,55 @@ $(document).ready(function () {
                 plotShadow: false
             },
 
-            colors: ["#877edf"],
-            title: {
-                style: {
-                    'font-weight': "bold",
-                    color: '#E0E0E3',
-                    textTransform: 'uppercase',
-                    fontSize: '0',
-                },
-                text: null
+            // 하단 네비게이션 제거
+            navigator: {
+                enabled: false
+            },
+
+            // 스크롤바 제거
+            scrollbar: {
+                enabled: false
+            },
+
+            // 기간범위선택 
+            rangeSelector: {
+                enabled: false,
+                // allButtonsEnabled: true,                
+                // selected: 0,                
+            },
+
+            legend: {
+                enabled: true,
+                layout: 'horizontal',
+                align: 'center',
+                verticalAlign: 'bottom',
+            },
+
+            credits: {
+                enabled: false
+            },
+
+            exporting: {
+                enabled: false
             },
 
             tooltip: {
+                enabled: false
+            },
+
+            title: {
+                text: null
+            },
+
+            colors: ["#877edf"],
+
+            tooltip: {
                 shared: true,
-                pointFormat: '<span style="color:{series.color}">{series.name}: <b>{point.y:,.0f} 달러</b><br/>'
+                pointFormat: '<span style="color:{series.color}">{series.name}: <b>{point.y:,.0f}</b><br/>'
+            },
+
+            legend: {
+                enabled: false
             },
 
             xAxis: [{
@@ -1013,18 +1290,6 @@ $(document).ready(function () {
                 labels: {
                     enabled: false
                 }
-            },
-
-            credits: {
-                enabled: false,
-            },
-
-            legend: {
-                enabled: false,
-            },
-
-            exporting: {
-                enabled: false
             },
 
             series: [{
@@ -1058,7 +1323,7 @@ $(document).ready(function () {
     // 검색 - 종목진단 - 투자매력 spider 차트    
     if ($('#containercharm1_1').length) {
 
-        Highcharts.chart('containercharm1_1', {
+        Highcharts.stockChart('containercharm1_1', {
             chart: {
                 polar: true,
                 type: 'area',
@@ -1082,8 +1347,44 @@ $(document).ready(function () {
                 marginRight: 30,
             },
 
+            // 하단 네비게이션 제거
+            navigator: {
+                enabled: false
+            },
+
+            // 스크롤바 제거
+            scrollbar: {
+                enabled: false
+            },
+
+            // 기간범위선택 
+            rangeSelector: {
+                enabled: false,
+                // allButtonsEnabled: true,                
+                // selected: 0,                
+            },
+
+            legend: {
+                enabled: true,
+                layout: 'horizontal',
+                align: 'center',
+                verticalAlign: 'bottom',
+            },
+
+            credits: {
+                enabled: false
+            },
+
+            exporting: {
+                enabled: false
+            },
+
+            tooltip: {
+                enabled: false
+            },
+
             title: {
-                text: ''
+                text: null
             },
 
             colors: ["#877edf"],
@@ -1165,18 +1466,6 @@ $(document).ready(function () {
                 }
             },
 
-            exporting: {
-                enabled: false
-            },
-
-            credits: {
-                enabled: false
-            },
-
-            legend: {
-                enabled: false,
-            },
-
             series: [{
                 name: '투자매력도',
                 data: [5, 5, 5, 5, 5],
@@ -1192,10 +1481,10 @@ $(document).ready(function () {
             },
         });
     }
-    
+
     // 검색 - 종목진단 - 투자매력탭 column 차트
     if ($('#containeralloca_star1_1').length) {
-        Highcharts.chart('containeralloca_star1_1', {
+        Highcharts.stockChart('containeralloca_star1_1', {
             chart: {
                 type: 'column',
                 renderTo: 'containeralloca_star1_1',
@@ -1312,7 +1601,7 @@ $(document).ready(function () {
         });
     }
     if ($('#containeralloca_star1_1_2').length) {
-        Highcharts.chart('containeralloca_star1_1_2', {
+        Highcharts.stockChart('containeralloca_star1_1_2', {
             chart: {
                 type: 'column',
                 renderTo: 'containeralloca_star1_1_2',
@@ -1427,7 +1716,7 @@ $(document).ready(function () {
         });
     }
     if ($('#containeralloca_star1_1_3').length) {
-        Highcharts.chart('containeralloca_star1_1_3', {
+        Highcharts.stockChart('containeralloca_star1_1_3', {
             chart: {
                 type: 'column',
                 renderTo: 'containeralloca_star1_1_3',
@@ -1542,7 +1831,7 @@ $(document).ready(function () {
         });
     }
     if ($('#containeralloca_star1_1_4').length) {
-        Highcharts.chart('containeralloca_star1_1_4', {
+        Highcharts.stockChart('containeralloca_star1_1_4', {
             chart: {
                 type: 'column',
                 renderTo: 'containeralloca_star1_1_4',
@@ -1657,7 +1946,7 @@ $(document).ready(function () {
         });
     }
     if ($('#containeralloca_star1_2').length) {
-        Highcharts.chart('containeralloca_star1_2', {
+        Highcharts.stockChart('containeralloca_star1_2', {
             chart: {
                 type: 'column',
                 renderTo: 'containeralloca_star1_2',
@@ -1772,7 +2061,7 @@ $(document).ready(function () {
         });
     }
     if ($('#containeralloca_star1_2_1').length) {
-        Highcharts.chart('containeralloca_star1_2_1', {
+        Highcharts.stockChart('containeralloca_star1_2_1', {
             chart: {
                 type: 'column',
                 renderTo: 'containeralloca_star1_2_1',
@@ -1887,7 +2176,7 @@ $(document).ready(function () {
         });
     }
     if ($('#containeralloca_star1_2_2').length) {
-        Highcharts.chart('containeralloca_star1_2_2', {
+        Highcharts.stockChart('containeralloca_star1_2_2', {
             chart: {
                 type: 'column',
                 renderTo: 'containeralloca_star1_2_2',
@@ -2005,7 +2294,7 @@ $(document).ready(function () {
     // 검색 - 종목진단 - 투자매력탭 경쟁사 투자매력도 spider 차트
     if ($('#chart_spider_mini_01').length) {
 
-        Highcharts.chart('chart_spider_mini_01', {
+        Highcharts.stockChart('chart_spider_mini_01', {
             chart: {
                 polar: true,
                 type: 'area',
@@ -2096,7 +2385,7 @@ $(document).ready(function () {
     }
     if ($('#chart_spider_mini_02').length) {
 
-        Highcharts.chart('chart_spider_mini_02', {
+        Highcharts.stockChart('chart_spider_mini_02', {
             chart: {
                 polar: true,
                 type: 'area',
@@ -2187,7 +2476,7 @@ $(document).ready(function () {
     }
     if ($('#chart_spider_mini_03').length) {
 
-        Highcharts.chart('chart_spider_mini_03', {
+        Highcharts.stockChart('chart_spider_mini_03', {
             chart: {
                 polar: true,
                 type: 'area',
@@ -2278,7 +2567,7 @@ $(document).ready(function () {
     }
 
     if ($('#containersummary1').length) {
-        Highcharts.chart('containersummary1', {
+        Highcharts.stockChart('containersummary1', {
 
             chart: {
                 type: 'line',
@@ -2366,7 +2655,7 @@ $(document).ready(function () {
 
     // 검색 - 종목진단 - 기업개요탭 재무제표 column 차트
     if ($('#containerfinancials1_1').length) {
-        Highcharts.chart('containerfinancials1_1', {
+        Highcharts.stockChart('containerfinancials1_1', {
             chart: {
                 type: 'column',
                 renderTo: 'containerfinancials1_1',
@@ -2481,7 +2770,7 @@ $(document).ready(function () {
         });
     }
     if ($('#containerfinancials1_2').length) {
-        Highcharts.chart('containerfinancials1_2', {
+        Highcharts.stockChart('containerfinancials1_2', {
             chart: {
                 type: 'column',
                 renderTo: 'containerfinancials1_2',
@@ -2596,7 +2885,7 @@ $(document).ready(function () {
         });
     }
     if ($('#containerfinancials1_3').length) {
-        Highcharts.chart('containerfinancials1_3', {
+        Highcharts.stockChart('containerfinancials1_3', {
             chart: {
                 type: 'column',
                 renderTo: 'containerfinancials1_3',
@@ -2711,7 +3000,7 @@ $(document).ready(function () {
         });
     }
     if ($('#containerfinancials2_1').length) {
-        Highcharts.chart('containerfinancials2_1', {
+        Highcharts.stockChart('containerfinancials2_1', {
             chart: {
                 type: 'column',
                 renderTo: 'containerfinancials2_1',
@@ -2826,7 +3115,7 @@ $(document).ready(function () {
         });
     }
     if ($('#containerfinancials2_2').length) {
-        Highcharts.chart('containerfinancials2_2', {
+        Highcharts.stockChart('containerfinancials2_2', {
             chart: {
                 type: 'column',
                 renderTo: 'containerfinancials2_2',
@@ -2941,7 +3230,7 @@ $(document).ready(function () {
         });
     }
     if ($('#containerfinancials2_3').length) {
-        Highcharts.chart('containerfinancials2_3', {
+        Highcharts.stockChart('containerfinancials2_3', {
             chart: {
                 type: 'column',
                 renderTo: 'containerfinancials2_3',
@@ -3059,17 +3348,17 @@ $(document).ready(function () {
     // 검색 - 종목진단 - 재무차트탭 11개 BIC차트
     /* 매출과이익 */
     if ($('#chart_BICchart011').length) {
-        Highcharts.stockChart('chart_BICchart011', {            
+        Highcharts.stockChart('chart_BICchart011', {
             chart: {
                 backgroundColor: {
                     // linearGradient: { x1: 0, y1: 1, x2: 1, y2: 0 },
-                },                
+                },
             },
             // 하단 네비게이션 제거
             navigator: {
                 enabled: false
             },
-            
+
             // 스크롤바 제거
             scrollbar: {
                 enabled: false
@@ -3083,7 +3372,10 @@ $(document).ready(function () {
             },
 
             legend: {
-                enabled: false,
+                enabled: true,
+                layout: 'horizontal',
+                align: 'center',
+                verticalAlign: 'bottom',
             },
 
             credits: {
@@ -3102,7 +3394,7 @@ $(document).ready(function () {
                 text: null
             },
 
-            colors: ["#C4C4C4 ", "#404fc3", "#5CAC00"],            
+            colors: ["#C4C4C4 ", "#404fc3", "#5CAC00"],
 
             xAxis: [{
                 categories: ['2005', '2006', '2007', '2008', '2009', '2010', '2011', '2012', '2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020'],
@@ -3132,15 +3424,7 @@ $(document).ready(function () {
                 opposite: true
             }],
 
-            legend: {
-                layout: 'horizontal',
-                align: 'center',
-                verticalAlign: 'bottom',
-                floating: true,
-                backgroundColor:
-                    Highcharts.defaultOptions.legend.backgroundColor || // theme
-                    'rgba(255,255,255,0.25)'
-            },
+
 
             series: [{
                 style: {
@@ -3192,7 +3476,7 @@ $(document).ready(function () {
     }
     //D012. 이익률
     if ($('#chart_BICchart012').length) {
-        Highcharts.chart('chart_BICchart012', {
+        Highcharts.stockChart('chart_BICchart012', {
             chart: {
                 type: 'line',
                 zoomType: 'xy',
@@ -3272,7 +3556,7 @@ $(document).ready(function () {
     }
     //D015. 부채비율과 유동비율    
     if ($('#chart_BICchart015').length) {
-        Highcharts.chart('chart_BICchart015', {
+        Highcharts.stockChart('chart_BICchart015', {
             chart: {
                 type: 'line',
                 zoomType: 'xy',
@@ -3364,7 +3648,7 @@ $(document).ready(function () {
     }
     //D022. 주당배당금과 배당률
     if ($('#chart_BICchart022').length) {
-        Highcharts.chart('chart_BICchart022', {
+        Highcharts.stockChart('chart_BICchart022', {
             chart: {
                 type: 'column',
                 zoomType: 'xy',
@@ -3474,7 +3758,7 @@ $(document).ready(function () {
     }
     //D024. ROE 와 PBR
     if ($('#chart_BICchart024').length) {
-        Highcharts.chart('chart_BICchart024', {
+        Highcharts.stockChart('chart_BICchart024', {
             chart: {
                 type: 'line',
                 zoomType: 'xy',
@@ -3571,7 +3855,7 @@ $(document).ready(function () {
     }
     //D027. 운전자본 회전일수
     if ($('#chart_BICchart027').length) {
-        Highcharts.chart('chart_BICchart027', {
+        Highcharts.stockChart('chart_BICchart027', {
             chart: {
                 type: 'line',
                 zoomType: 'xy',
@@ -3668,7 +3952,7 @@ $(document).ready(function () {
     }
     //D029. 현금흐름표
     if ($('#chart_BICchart029').length) {
-        Highcharts.chart('chart_BICchart029', {
+        Highcharts.stockChart('chart_BICchart029', {
             chart: {
                 type: 'line',
                 zoomType: 'xy',
@@ -3754,7 +4038,7 @@ $(document).ready(function () {
     }
     //D032. 주가수익배수
     if ($('#chart_BICchart032').length) {
-        Highcharts.chart('chart_BICchart032', {
+        Highcharts.stockChart('chart_BICchart032', {
             chart: {
                 type: 'line',
                 zoomType: 'xy',
@@ -3831,7 +4115,7 @@ $(document).ready(function () {
     }
     //D033. 주가와 주당순이익
     if ($('#chart_BICchart033').length) {
-        Highcharts.chart('chart_BICchart033', {
+        Highcharts.stockChart('chart_BICchart033', {
             chart: {
                 type: 'line',
                 zoomType: 'xy',
@@ -3912,7 +4196,7 @@ $(document).ready(function () {
     }
     //D034. 주가순자산배수
     if ($('#chart_BICchart034').length) {
-        Highcharts.chart('chart_BICchart034', {
+        Highcharts.stockChart('chart_BICchart034', {
             chart: {
                 type: 'line',
                 zoomType: 'xy',
@@ -3999,7 +4283,7 @@ $(document).ready(function () {
     }
     //D035. 주가와 주당순자산
     if ($('#chart_BICchart035').length) {
-        Highcharts.chart('chart_BICchart035', {
+        Highcharts.stockChart('chart_BICchart035', {
             chart: {
                 type: 'line',
                 zoomType: 'xy',
@@ -4092,7 +4376,7 @@ $(document).ready(function () {
     }
     //D036. 주가순자산배수(PSR)
     if ($('#chart_BICchart036').length) {
-        Highcharts.chart('chart_BICchart036', {
+        Highcharts.stockChart('chart_BICchart036', {
             chart: {
                 type: 'line',
                 zoomType: 'xy',
@@ -4179,7 +4463,7 @@ $(document).ready(function () {
     }
     //D037. 주가주당매출액
     if ($('#chart_BICchart037').length) {
-        Highcharts.chart('chart_BICchart037', {
+        Highcharts.stockChart('chart_BICchart037', {
             chart: {
                 type: 'line',
                 zoomType: 'xy',
@@ -4267,7 +4551,7 @@ $(document).ready(function () {
 
     // 검색 - 배당탭 column 차트
     if ($('#containeralloca1_1').length) {
-        Highcharts.chart('containeralloca1_1', {
+        Highcharts.stockChart('containeralloca1_1', {
             chart: {
                 type: 'column',
                 renderTo: 'containeralloca1_1',
@@ -4376,7 +4660,7 @@ $(document).ready(function () {
         });
     }
     if ($('#containeralloca1_2').length) {
-        Highcharts.chart('containeralloca1_2', {
+        Highcharts.stockChart('containeralloca1_2', {
             chart: {
                 type: 'column',
                 renderTo: 'containeralloca1_2',
@@ -4485,7 +4769,7 @@ $(document).ready(function () {
         });
     }
     if ($('#containeralloca1_3').length) {
-        Highcharts.chart('containeralloca1_3', {
+        Highcharts.stockChart('containeralloca1_3', {
             chart: {
                 type: 'column',
                 renderTo: 'containeralloca1_3',
@@ -4596,7 +4880,7 @@ $(document).ready(function () {
 
     // 원스톱 진단
     if ($('#onestep_chart1_1').length) {
-        Highcharts.chart('onestep_chart1_1', {
+        Highcharts.stockChart('onestep_chart1_1', {
 
             chart: {
                 type: 'bubble',
@@ -4724,7 +5008,7 @@ $(document).ready(function () {
     // 밴드 차트
     if ($('#sum_topchart_band').length) {
         // 검색 - 적정가밴드 주가비교
-        Highcharts.chart('sum_topchart_band', {
+        Highcharts.stockChart('sum_topchart_band', {
             chart: {
                 zoomType: 'xy',
                 // scrollablePlotArea: {
@@ -4758,7 +5042,7 @@ $(document).ready(function () {
                     step: 23,
                 },
                 showLastLabel: true,
-                crosshair: {                    
+                crosshair: {
                     color: 'rgba(204,214,235,1)',
                     zIndex: 3
                 }
@@ -4775,7 +5059,7 @@ $(document).ready(function () {
                 minorTickInterval: 'auto',
                 // tickInterval: 'auto',
                 showFirstLabel: true,
-                opposite: true,                
+                opposite: true,
             },
             legend: {
                 itemDistance: 6,
@@ -4786,14 +5070,14 @@ $(document).ready(function () {
             colors: ["#f2333a", "#bec3ed", "#e4e6fc", "#c6c6c6", "#737edd"],
             tooltip: {
                 crosshairs: true,
-                shared: true,                                
-                valueDecimals: 2,    
+                shared: true,
+                valueDecimals: 2,
                 style: {
                     fontfamily: 'Spoqa Han Sans Neo',
                     fontWeight: 'nomal',
                     fontSize: '11px',
-                    color: '#8380A0',                    
-                }            
+                    color: '#8380A0',
+                }
             },
             credits: {
                 enabled: false,
@@ -4833,7 +5117,7 @@ $(document).ready(function () {
             }, {
                 name: '저평가-고평가',
                 data: [
-                    [null,null],[63.06,106.60],[63.06,106.60],[63.06,106.60],[63.06,106.60],[63.06,106.60],[63.06,106.60],[63.06,106.60],[63.06,106.60],[null,null],[null,null],[null,null],[63.06,106.60],[63.06,106.60],[63.06,106.60],[63.06,106.60],[63.06,106.60],[63.06,106.60],[63.06,106.60],[63.06,106.60],[63.06,106.60],[63.06,106.60],[63.06,106.60],[63.06,106.60],[63.06,106.60],[63.06,106.60],[63.06,106.60],[63.06,106.60],[63.06,106.60],[63.06,106.60],[63.06,106.60],[63.06,106.60],[63.06,106.60],[63.06,106.60],[63.06,106.60],[63.06,106.60],[63.06,106.60],[63.06,106.60],[63.06,106.60],[63.06,106.60],[63.06,106.60],[63.06,106.60],[63.06,106.60],[63.06,106.60],[63.06,106.60],[63.06,106.60],[63.06,106.60],[63.06,106.60],[63.06,106.60],[63.06,106.60],[63.06,106.60],[63.06,106.60],[63.06,106.60],[63.06,106.60],[63.06,106.60],[63.06,106.60],[63.06,106.60],[63.06,106.60],[63.06,106.60],[63.06,106.60],[63.06,106.60],[63.06,106.60],[63.06,106.60],[63.06,106.60],[63.06,106.60],[63.06,106.60],[63.06,106.60],[54.60,92.30],[54.60,92.30],[54.60,92.30],[54.60,92.30],[54.60,92.30],[54.60,92.30],[54.60,92.30],[54.60,92.30],[54.60,92.30],[54.60,92.30],[54.60,92.30],[54.60,92.30],[54.60,92.30],[54.60,92.30],[54.60,92.30],[54.60,92.30],[54.60,92.30],[54.60,92.30],[54.60,92.30],[54.60,92.30],[54.60,92.30],[54.60,92.30],[54.60,92.30],[54.60,92.30],[54.60,92.30],[54.60,92.30],[54.60,92.30],[54.60,92.30],[54.60,92.30],[54.60,92.30],[54.60,92.30],[54.60,92.30],[54.60,92.30],[54.60,92.30],[54.60,92.30],[54.60,92.30],[54.60,92.30],[54.60,92.30],[54.60,92.30],[54.60,92.30],[54.60,92.30],[54.60,92.30],[54.60,92.30],[54.60,92.30],[54.60,92.30],[54.60,92.30],[54.60,92.30],[54.60,92.30],[54.60,92.30],[54.60,92.30],[54.60,92.30],[54.60,92.30],[54.60,92.30],[54.60,92.30],[54.60,92.30],[54.60,92.30],[54.60,92.30],[54.60,92.30],[54.60,92.30],[54.60,92.30],[54.60,92.30],[54.60,92.30],[54.60,92.30],[54.60,92.30],[54.60,92.30],[54.60,92.30],[54.60,92.30],[54.60,92.30],[54.60,92.30],[54.60,92.30],[54.60,92.30],[54.60,92.30],[54.60,92.30],[54.60,92.30],[54.60,92.30],[54.60,92.30],[54.60,92.30],[54.60,92.30],[54.60,92.30],[54.60,92.30],[54.60,92.30],[54.60,92.30],[54.60,92.30],[54.60,92.30],[54.60,92.30],[54.60,92.30],[54.60,92.30],[54.60,92.30],[54.60,92.30],[54.60,92.30],[54.60,92.30],[54.60,92.30],[54.60,92.30],[54.60,92.30],[54.60,92.30],[54.60,92.30],[54.60,92.30],[54.60,92.30],[54.60,92.30],
+                    [null, null], [63.06, 106.60], [63.06, 106.60], [63.06, 106.60], [63.06, 106.60], [63.06, 106.60], [63.06, 106.60], [63.06, 106.60], [63.06, 106.60], [null, null], [null, null], [null, null], [63.06, 106.60], [63.06, 106.60], [63.06, 106.60], [63.06, 106.60], [63.06, 106.60], [63.06, 106.60], [63.06, 106.60], [63.06, 106.60], [63.06, 106.60], [63.06, 106.60], [63.06, 106.60], [63.06, 106.60], [63.06, 106.60], [63.06, 106.60], [63.06, 106.60], [63.06, 106.60], [63.06, 106.60], [63.06, 106.60], [63.06, 106.60], [63.06, 106.60], [63.06, 106.60], [63.06, 106.60], [63.06, 106.60], [63.06, 106.60], [63.06, 106.60], [63.06, 106.60], [63.06, 106.60], [63.06, 106.60], [63.06, 106.60], [63.06, 106.60], [63.06, 106.60], [63.06, 106.60], [63.06, 106.60], [63.06, 106.60], [63.06, 106.60], [63.06, 106.60], [63.06, 106.60], [63.06, 106.60], [63.06, 106.60], [63.06, 106.60], [63.06, 106.60], [63.06, 106.60], [63.06, 106.60], [63.06, 106.60], [63.06, 106.60], [63.06, 106.60], [63.06, 106.60], [63.06, 106.60], [63.06, 106.60], [63.06, 106.60], [63.06, 106.60], [63.06, 106.60], [63.06, 106.60], [63.06, 106.60], [63.06, 106.60], [54.60, 92.30], [54.60, 92.30], [54.60, 92.30], [54.60, 92.30], [54.60, 92.30], [54.60, 92.30], [54.60, 92.30], [54.60, 92.30], [54.60, 92.30], [54.60, 92.30], [54.60, 92.30], [54.60, 92.30], [54.60, 92.30], [54.60, 92.30], [54.60, 92.30], [54.60, 92.30], [54.60, 92.30], [54.60, 92.30], [54.60, 92.30], [54.60, 92.30], [54.60, 92.30], [54.60, 92.30], [54.60, 92.30], [54.60, 92.30], [54.60, 92.30], [54.60, 92.30], [54.60, 92.30], [54.60, 92.30], [54.60, 92.30], [54.60, 92.30], [54.60, 92.30], [54.60, 92.30], [54.60, 92.30], [54.60, 92.30], [54.60, 92.30], [54.60, 92.30], [54.60, 92.30], [54.60, 92.30], [54.60, 92.30], [54.60, 92.30], [54.60, 92.30], [54.60, 92.30], [54.60, 92.30], [54.60, 92.30], [54.60, 92.30], [54.60, 92.30], [54.60, 92.30], [54.60, 92.30], [54.60, 92.30], [54.60, 92.30], [54.60, 92.30], [54.60, 92.30], [54.60, 92.30], [54.60, 92.30], [54.60, 92.30], [54.60, 92.30], [54.60, 92.30], [54.60, 92.30], [54.60, 92.30], [54.60, 92.30], [54.60, 92.30], [54.60, 92.30], [54.60, 92.30], [54.60, 92.30], [54.60, 92.30], [54.60, 92.30], [54.60, 92.30], [54.60, 92.30], [54.60, 92.30], [54.60, 92.30], [54.60, 92.30], [54.60, 92.30], [54.60, 92.30], [54.60, 92.30], [54.60, 92.30], [54.60, 92.30], [54.60, 92.30], [54.60, 92.30], [54.60, 92.30], [54.60, 92.30], [54.60, 92.30], [54.60, 92.30], [54.60, 92.30], [54.60, 92.30], [54.60, 92.30], [54.60, 92.30], [54.60, 92.30], [54.60, 92.30], [54.60, 92.30], [54.60, 92.30], [54.60, 92.30], [54.60, 92.30], [54.60, 92.30], [54.60, 92.30], [54.60, 92.30], [54.60, 92.30], [54.60, 92.30], [54.60, 92.30], [54.60, 92.30],
                 ],
                 type: 'arearange',
                 lineWidth: 0,
@@ -4870,14 +5154,14 @@ $(document).ready(function () {
                     // connectNulls: true,
                     marker: {
                         fillColor: 'white',
-                        lineWidth: 1,                        
+                        lineWidth: 1,
                         lineColor: Highcharts.getOptions(),
                     }
                 }
             },
         });
     }
-    
+
 
     //이 아래부터 차트 테스트 영역
     if ($('#chart_BICchart011_test2').length) {
@@ -4886,7 +5170,7 @@ $(document).ready(function () {
             // navigator: {
             //     enabled: false
             // },
-            
+
             // 스크롤바 제거
             scrollbar: {
                 enabled: false
@@ -4895,8 +5179,8 @@ $(document).ready(function () {
             // 기간범위선택 
             rangeSelector: {
                 // enabled: false,
-                allButtonsEnabled: true,                
-                selected: 0,                
+                allButtonsEnabled: true,
+                selected: 0,
             },
 
             credits: {
@@ -4908,8 +5192,8 @@ $(document).ready(function () {
             },
 
             series: [{
-                type: 'hollowcandlestick',            
-                data: [[1574692200000,65.68,66.61,65.63,66.59,84020400],[1574778600000,66.74,66.79,65.63,66.07,105207600],[1574865000000,66.39,67,66.33,66.96,65235600],[1575037800000,66.65,67,66.47,66.81,46617600],[1575297000000,66.82,67.06,65.86,66.04,94487200],[1575383400000,64.58,64.88,64.07,64.86,114430400],[1575469800000,65.27,65.83,65.17,65.43,67181600],[1575556200000,65.95,66.47,65.68,66.39,74424400],[1575642600000,66.87,67.75,66.82,67.68,106075600],[1575901800000,67.5,67.7,66.23,66.73,128042400],[1575988200000,67.15,67.52,66.46,67.12,90420400],[1576074600000,67.2,67.78,67.13,67.69,78756800],[1576161000000,66.94,68.14,66.83,67.86,137310400],[1576247400000,67.86,68.82,67.73,68.79,133587600],[1576506600000,69.25,70.2,69.25,69.96,128186000],[1576593000000,69.89,70.44,69.7,70.1,114158400],[1576679400000,69.95,70.47,69.78,69.93,116028400],[1576765800000,69.88,70.29,69.74,70,98369200],[1576852200000,70.56,70.66,69.64,69.86,275978000],[1577111400000,70.13,71.06,70.09,71,98572000],[1577197800000,71.17,71.22,70.73,71.07,48478800],[1577370600000,71.21,72.5,71.18,72.48,93121200],[1577457000000,72.78,73.49,72.03,72.45,146266000],[1577716200000,72.36,73.17,71.31,72.88,144114400],[1577802600000,72.48,73.42,72.38,73.41,100805600],[1577975400000,74.06,75.15,73.8,75.09,135480400],[1578061800000,74.29,75.14,74.13,74.36,146322800],[1578321000000,73.45,74.99,73.19,74.95,118387200],[1578407400000,74.96,75.22,74.37,74.6,108872000]],                
+                type: 'hollowcandlestick',
+                data: [[1574692200000, 65.68, 66.61, 65.63, 66.59, 84020400], [1574778600000, 66.74, 66.79, 65.63, 66.07, 105207600], [1574865000000, 66.39, 67, 66.33, 66.96, 65235600], [1575037800000, 66.65, 67, 66.47, 66.81, 46617600], [1575297000000, 66.82, 67.06, 65.86, 66.04, 94487200], [1575383400000, 64.58, 64.88, 64.07, 64.86, 114430400], [1575469800000, 65.27, 65.83, 65.17, 65.43, 67181600], [1575556200000, 65.95, 66.47, 65.68, 66.39, 74424400], [1575642600000, 66.87, 67.75, 66.82, 67.68, 106075600], [1575901800000, 67.5, 67.7, 66.23, 66.73, 128042400], [1575988200000, 67.15, 67.52, 66.46, 67.12, 90420400], [1576074600000, 67.2, 67.78, 67.13, 67.69, 78756800], [1576161000000, 66.94, 68.14, 66.83, 67.86, 137310400], [1576247400000, 67.86, 68.82, 67.73, 68.79, 133587600], [1576506600000, 69.25, 70.2, 69.25, 69.96, 128186000], [1576593000000, 69.89, 70.44, 69.7, 70.1, 114158400], [1576679400000, 69.95, 70.47, 69.78, 69.93, 116028400], [1576765800000, 69.88, 70.29, 69.74, 70, 98369200], [1576852200000, 70.56, 70.66, 69.64, 69.86, 275978000], [1577111400000, 70.13, 71.06, 70.09, 71, 98572000], [1577197800000, 71.17, 71.22, 70.73, 71.07, 48478800], [1577370600000, 71.21, 72.5, 71.18, 72.48, 93121200], [1577457000000, 72.78, 73.49, 72.03, 72.45, 146266000], [1577716200000, 72.36, 73.17, 71.31, 72.88, 144114400], [1577802600000, 72.48, 73.42, 72.38, 73.41, 100805600], [1577975400000, 74.06, 75.15, 73.8, 75.09, 135480400], [1578061800000, 74.29, 75.14, 74.13, 74.36, 146322800], [1578321000000, 73.45, 74.99, 73.19, 74.95, 118387200], [1578407400000, 74.96, 75.22, 74.37, 74.6, 108872000]],
             }],
 
             plotOptions: {
@@ -4933,7 +5217,7 @@ $(document).ready(function () {
                 type: 'area',
                 zoomType: 'xy',
                 renderTo: 'chart_BICchart011_test',
-                backgroundColor: {                    
+                backgroundColor: {
                     stops: [
                         [0, '#ffffff'],
                         [1, '#ffffff']
@@ -5063,11 +5347,11 @@ $(document).ready(function () {
             },
         });
     }
-    
-    
-    
 
-    
-    
+
+
+
+
+
 
 });
