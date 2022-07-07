@@ -4147,7 +4147,7 @@ $(document).ready(function () {
             title: {
                 text: null
             },
-            
+
             colors: ["#C4C4C4", "#404fc3", "#5CAC00"],
 
             tooltip: {
@@ -4586,7 +4586,7 @@ $(document).ready(function () {
             },
 
             colors: ["#404fc3", "#5CAC00"],
-            
+
             tooltip: {
                 shared: true,
                 pointFormat: '<span style="color:{series.color}">{series.name} : <b>{point.y:,.0f} 달러</b><br/>'
@@ -5472,9 +5472,9 @@ $(document).ready(function () {
             legend: {
                 itemDistance: 6,
             },
-            
+
             colors: ["#f2333a", "#bec3ed", "#e4e6fc", "#c6c6c6", "#737edd"],
-            
+
             tooltip: {
                 crosshairs: true,
                 shared: true,
@@ -5518,7 +5518,7 @@ $(document).ready(function () {
                 showFirstLabel: true,
                 opposite: true,
             },
-            
+
             lang: {
                 noData: "밸류에이션에 필요한 데이터가 충분하지 않아<br>적정주가를 제시하지 않습니다..",
             },
@@ -5595,197 +5595,4 @@ $(document).ready(function () {
             },
         });
     }
-
-
-    //이 아래부터 차트 테스트 영역
-    if ($('#chart_BICchart011_test2').length) {
-        Highcharts.stockChart('chart_BICchart011_test2', {
-            // 하단 네비게이션 제거
-            // navigator: {
-            //     enabled: false
-            // },
-
-            // 스크롤바 제거
-            scrollbar: {
-                enabled: false
-            },
-
-            // 기간범위선택 
-            rangeSelector: {
-                // enabled: false,
-                allButtonsEnabled: true,
-                selected: 0,
-            },
-
-            credits: {
-                enabled: false
-            },
-
-            exporting: {
-                enabled: false
-            },
-
-            series: [{
-                type: 'hollowcandlestick',
-                data: [[1574692200000, 65.68, 66.61, 65.63, 66.59, 84020400], [1574778600000, 66.74, 66.79, 65.63, 66.07, 105207600], [1574865000000, 66.39, 67, 66.33, 66.96, 65235600], [1575037800000, 66.65, 67, 66.47, 66.81, 46617600], [1575297000000, 66.82, 67.06, 65.86, 66.04, 94487200], [1575383400000, 64.58, 64.88, 64.07, 64.86, 114430400], [1575469800000, 65.27, 65.83, 65.17, 65.43, 67181600], [1575556200000, 65.95, 66.47, 65.68, 66.39, 74424400], [1575642600000, 66.87, 67.75, 66.82, 67.68, 106075600], [1575901800000, 67.5, 67.7, 66.23, 66.73, 128042400], [1575988200000, 67.15, 67.52, 66.46, 67.12, 90420400], [1576074600000, 67.2, 67.78, 67.13, 67.69, 78756800], [1576161000000, 66.94, 68.14, 66.83, 67.86, 137310400], [1576247400000, 67.86, 68.82, 67.73, 68.79, 133587600], [1576506600000, 69.25, 70.2, 69.25, 69.96, 128186000], [1576593000000, 69.89, 70.44, 69.7, 70.1, 114158400], [1576679400000, 69.95, 70.47, 69.78, 69.93, 116028400], [1576765800000, 69.88, 70.29, 69.74, 70, 98369200], [1576852200000, 70.56, 70.66, 69.64, 69.86, 275978000], [1577111400000, 70.13, 71.06, 70.09, 71, 98572000], [1577197800000, 71.17, 71.22, 70.73, 71.07, 48478800], [1577370600000, 71.21, 72.5, 71.18, 72.48, 93121200], [1577457000000, 72.78, 73.49, 72.03, 72.45, 146266000], [1577716200000, 72.36, 73.17, 71.31, 72.88, 144114400], [1577802600000, 72.48, 73.42, 72.38, 73.41, 100805600], [1577975400000, 74.06, 75.15, 73.8, 75.09, 135480400], [1578061800000, 74.29, 75.14, 74.13, 74.36, 146322800], [1578321000000, 73.45, 74.99, 73.19, 74.95, 118387200], [1578407400000, 74.96, 75.22, 74.37, 74.6, 108872000]],
-            }],
-
-            plotOptions: {
-                series: {
-                    label: {
-                        connectorAllowed: false
-                    },
-                    pointStart: null,
-                    marker: {
-                        enabled: false,
-                    }
-                }
-            },
-        });
-    }
-
-
-    if ($('#chart_BICchart011_test').length) {
-        Highcharts.stockChart('chart_BICchart011_test', {
-            chart: {
-                type: 'area',
-                zoomType: 'xy',
-                renderTo: 'chart_BICchart011_test',
-                backgroundColor: {
-                    stops: [
-                        [0, '#ffffff'],
-                        [1, '#ffffff']
-                    ]
-                },
-                style: {
-                    fontFamily: "'Lato', 'Noto Sans KR'"
-                },
-                plotBorderColor: null,
-                plotBorderWidth: null,
-                plotShadow: false,
-            },
-            // 하단 네비게이션 제거
-            // navigator: {
-            //     enabled: false
-            // },
-            // 스크롤바 제거
-            scrollbar: {
-                enabled: false
-            },
-            // 기간범위선택 제거
-            rangeSelector: {
-                enabled: false
-            },
-
-            colors: ["#C4C4C4 ", "#404fc3", "#5CAC00"],
-            title: {
-                text: null,
-            },
-
-            tooltip: {
-                shared: true,
-                pointFormat: '<span style="color:{series.color}">{series.name} : <b>{point.y:,.0f} 백만달러</b><br/>',
-            },
-
-            xAxis: [{
-                categories: ['2005', '2006', '2007', '2008', '2009', '2010', '2011', '2012', '2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020'],
-                crosshair: true,
-            }],
-
-            yAxis: [{ // Primary yAxis
-                title: {
-                    text: null,
-                },
-                labels: {
-                    // format: '{value}</b><br/>백만달러',
-                    style: {
-                        color: ["#959393"],
-                    }
-                },
-            }, { // Secondary yAxis
-                title: {
-                    text: null,
-                },
-                labels: {
-                    // format: '{value}</b><br/>백만달러(USD)',
-                    style: {
-                        color: ["#623FA8"],
-                    }
-                },
-                opposite: true
-            }],
-
-            credits: {
-                enabled: false
-            },
-
-            exporting: {
-                enabled: false
-            },
-
-            legend: {
-                layout: 'horizontal',
-                align: 'center',
-                verticalAlign: 'bottom',
-                floating: true,
-                backgroundColor:
-                    Highcharts.defaultOptions.legend.backgroundColor || // theme
-                    'rgba(255,255,255,0.25)'
-            },
-
-            series: [{
-                style: {
-                    fontSize: '0',
-                },
-                name: '매출액',
-                type: 'column',
-                data: [150, 126, 129, 234, 228, 121, 150, 126, 129, 234, 228, 121],
-
-            }, {
-                name: '영업이익',
-                type: 'line',
-                yAxis: 1,
-                data: [49, 71.5, 20.4, 92, 44.0, 76.0, 49, 71.5, 20.4, 92, 44.0, 76.0],
-
-            }, {
-                name: '지배지분순이익',
-                type: 'line',
-                yAxis: 1,
-                data: [19.9, 71.5, 106.4, 29.2, 14.0, 76.0, 19.9, 71.5, 106.4, 29.2, 14.0, 76.0],
-
-            }],
-
-            lang: {
-                noData: "해당 데이터가 없습니다.<br> 데이터 선택 기간을 변경해 보세요.",
-            },
-
-            noData: {
-                style: {
-                    fontWeight: 'nomal',
-                    fontSize: '1rem',
-                    color: '#8380A0',
-                    align: 'left'
-                }
-            },
-
-            dataLabels: {
-                enabled: false,
-            },
-
-            plotOptions: {
-                series: {
-                    marker: {
-                        enabled: false,
-                    }
-                }
-            },
-        });
-    }
-
-
-
-
-
-
-
 });
