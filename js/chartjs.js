@@ -229,6 +229,10 @@ $(document).ready(function () {
                 },
             },
 
+            legend: {
+                enabled: false,                
+            },
+
             pane: {
                 size: '80%',
                 center: ['50%', '50%'],
