@@ -3112,7 +3112,7 @@ $(document).ready(function () {
                         color: ["#623FA8"],
                     }
                 },
-                // opposite: true
+                opposite: false
             }],
 
             series: [{
