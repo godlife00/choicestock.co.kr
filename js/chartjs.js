@@ -2165,6 +2165,10 @@ $(document).ready(function () {
                 pointFormat: '<span style="color:{series.color}">{series.name}: <b>{point.y:,.0f} 달러</b><br/>'
             },
 
+            legend: {
+                enabled: false,                
+            },
+
             xAxis: [{
                 labels: {
                     enabled: false
@@ -2274,6 +2278,10 @@ $(document).ready(function () {
                 shared: true,
                 crosshairs: true,
                 pointFormat: '<span style="color:{series.color}">{series.name}: <b>{point.y:,.0f}</b><br/>'
+            },
+
+            legend: {
+                enabled: false,                
             },
 
             xAxis: [{
@@ -2409,6 +2417,10 @@ $(document).ready(function () {
                 pointFormat: '<span style="color:{series.color}">{series.name}: <b>{point.y:,.0f}</b><br/>'
             },
 
+            legend: {
+                enabled: false,                
+            },
+
             xAxis: [{
                 categories: ['2017', '2018', '2019'],
                 crosshair: true,
@@ -2540,6 +2552,10 @@ $(document).ready(function () {
                 shared: true,
                 crosshairs: true,
                 pointFormat: '<span style="color:{series.color}">{series.name}: <b>{point.y:,.0f}</b><br/>'
+            },
+
+            legend: {
+                enabled: false,                
             },
 
             xAxis: [{
@@ -2675,6 +2691,10 @@ $(document).ready(function () {
                 pointFormat: '<span style="color:{series.color}">{series.name}: <b>{point.y:,.0f}</b><br/>'
             },
 
+            legend: {
+                enabled: false,                
+            },
+
             xAxis: [{
                 categories: ['2017', '2018', '2019'],
                 crosshair: true,
@@ -2808,6 +2828,10 @@ $(document).ready(function () {
                 pointFormat: '<span style="color:{series.color}">{series.name}: <b>{point.y:,.0f}</b><br/>'
             },
 
+            legend: {
+                enabled: false,                
+            },
+
             xAxis: [{
                 categories: ['2017', '2018', '2019'],
                 crosshair: true,
@@ -2939,6 +2963,10 @@ $(document).ready(function () {
                 shared: true,
                 crosshairs: true,
                 pointFormat: '<span style="color:{series.color}">{series.name}: <b>{point.y:,.0f}</b><br/>'
+            },
+
+            legend: {
+                enabled: false,                
             },
 
             xAxis: [{
@@ -3460,15 +3488,6 @@ $(document).ready(function () {
                 opposite: true
             }],
 
-            legend: {
-                layout: 'horizontal',
-                align: 'center',
-                verticalAlign: 'bottom',
-                floating: true,
-                backgroundColor:
-                    Highcharts.defaultOptions.legend.backgroundColor || // theme
-                    'rgba(255,255,255,0.25)'
-            },
 
             series: [{
                 name: '주당배당금',
