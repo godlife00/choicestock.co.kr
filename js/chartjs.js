@@ -3368,7 +3368,7 @@ $(document).ready(function () {
                         color: ["#5CAC00"],
                     }
                 },
-                opposite: true
+                opposite: false
             }],
 
             series: [{
@@ -3485,7 +3485,7 @@ $(document).ready(function () {
                         color: ["#404fc3"],
                     }
                 },
-                opposite: true
+                opposite: false
             }],
 
 
@@ -3612,7 +3612,7 @@ $(document).ready(function () {
                         color: ["#5CAC00"],
                     }
                 },
-                opposite: true
+                opposite: false
             }],
 
             series: [{
@@ -3736,7 +3736,7 @@ $(document).ready(function () {
                         color: ["#FF9700"],
                     }
                 },
-                opposite: true
+                opposite: false
             }],
 
             series: [{
@@ -4296,7 +4296,7 @@ $(document).ready(function () {
                 title: {
                     text: null,
                 },
-                opposite: true
+                opposite: false
             }],
 
             series: [{
@@ -5195,7 +5195,7 @@ $(document).ready(function () {
                 minorTickInterval: 'auto',
                 // tickInterval: 'auto',
                 showFirstLabel: true,
-                opposite: true,
+                opposite: false,
             },
 
             lang: {
