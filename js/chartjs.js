@@ -5149,6 +5149,7 @@ $(document).ready(function () {
             },
 
             legend: {
+                enabled: true,
                 itemDistance: 6,
             },
 
