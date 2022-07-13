@@ -5195,8 +5195,7 @@ $(document).ready(function () {
                 minPadding: 0.15,
                 minorTickInterval: 'auto',
                 // tickInterval: 'auto',
-                showFirstLabel: true,
-                opposite: false,
+                showFirstLabel: true,                
             },
 
             lang: {
