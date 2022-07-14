@@ -109,27 +109,13 @@ $(document).ready(function () {
     if ($('#containerSpider_1').length) {
 
         Highcharts.stockChart('containerSpider_1', {
+
             chart: {
                 polar: true,
                 type: 'area',
-                renderTo: 'containerSpider_1',
                 backgroundColor: {
                     // linearGradient: { x1: 0, y1: 1, x2: 1, y2: 0 },
-                    stops: [
-                        [0, '#ffffff'],
-                        [1, '#ffffff']
-                    ]
-                },
-                style: {
-                    fontFamily: "'Lato', 'Noto Sans KR'"
-                },
-                plotBorderColor: null,
-                plotBorderWidth: null,
-                plotShadow: false,
-                marginTop: 0,
-                marginBottom: 0,
-                marginLeft: 30,
-                marginRight: 30,
+                },                
             },
 
             // 하단 네비게이션 제거
@@ -175,7 +161,7 @@ $(document).ready(function () {
             colors: ["#877edf"],
 
             tooltip: {
-                shared: true,
+                // shared: true,
                 useHTML: true,
                 formatter: function () {
                     var imgOne = '<img src = "../img/startol_one.png" height="10" width="10"/>'  /* 1점 */
