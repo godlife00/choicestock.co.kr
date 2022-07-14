@@ -11,7 +11,7 @@ $(document).ready(function () {
                 backgroundColor: {
                     // linearGradient: { x1: 0, y1: 1, x2: 1, y2: 0 },
                 },
-                marginRight: 40,
+                // marginRight: 40,
             },
 
             // 하단 네비게이션 제거
@@ -81,7 +81,8 @@ $(document).ready(function () {
                 title: {
                     text: null
                 },
-                gridLineWidth: 0,
+                lineColor: '#333',
+                gridLineDashStyle: 'Dot',
                 labels: {
                     enabled: false
                 }
