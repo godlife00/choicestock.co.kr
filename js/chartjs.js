@@ -248,8 +248,13 @@ $(document).ready(function () {
             plotOptions: {
                 series: {
                     lineWidth: 1,
-                    fillOpacity: 0.3
-                }
+                    fillOpacity: 0.3,
+                    
+                    marker: {
+                        enabled: true,                        
+                    }
+                },
+
             },
         });
     }
