@@ -2404,6 +2404,23 @@ table.tableRanking td {
 	font-size: 0.75rem;
 }
 
+.globalStock .note_list {
+	padding: 12px 15px 60px;
+}
+
+.globalStock .note_list p {
+	color: #939393;
+	font-size: 15px;
+	line-height: 1.7;
+	letter-spacing: -0.9px;
+	word-wrap: break-word;
+	word-break: break-all;
+}
+
+.globalStock .note_list p.impt {
+	color: #ff2929;
+}
+
 .globalStock .cho_applybtn {
 	position: fixed;
 	bottom: 0;
@@ -27425,7 +27442,18 @@ table.tableRanking td {
 	display: inline-block;
 	width: 100%;
 }
-
+.globalStock.kiwoom .sub_service .alliance_wrap .sub_top .box_01 .txt {		
+	color: #939393;
+    font-size: 14px;
+	padding: 15px 15px;
+    line-height: 1.7;
+    letter-spacing: -0.9px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+.globalStock.kiwoom .sub_service .alliance_wrap .sub_top .box_01 .txt span {		
+	color: #ff2929;    
+}
 .globalStock.red .sub_service .alliance_wrap .sub_top.service_t01 {
 	background: #E56468 url('/img/px_bg_service_alliance.png') no-repeat center bottom;
 	background-size: 342px auto;
