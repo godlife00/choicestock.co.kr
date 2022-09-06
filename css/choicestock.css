@@ -29988,9 +29988,10 @@ table.tableRanking td {
 	margin-left: 15px;
 	margin-top: 9px;
 	display: inline-block;
+	float: left;
 	width: calc(100% - 110px);
 	padding-right: 0;
-	position: relative;
+	position: relative;	
 }
 
 .globalStock .sub_portfolio .sub_mid.eventPicks_area .ptfo_area .day {
