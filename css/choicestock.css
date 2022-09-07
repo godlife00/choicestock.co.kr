@@ -872,7 +872,7 @@ body {
 /* 이벤트 배너 banner_event */
 .globalStock .banner_event {
 	display: block;
-	margin-top: 60px;
+	margin-top: 40px;
 }
 
 .globalStock .banner_event .link_banner,
@@ -32657,7 +32657,7 @@ table.tableRanking td {
 	width: 60%;
 	font-size: 17px;
 	font-weight: bold;
-	line-height: 1.24;
+	line-height: 1.6;
 	text-align: left;
 	color: #00aece;
 }
@@ -32670,7 +32670,7 @@ table.tableRanking td {
 
 .free_2weeks .content .info_txt .txt02 {
 	display: inline-block;
-	width: 196px;
+	width: 80%;
 	margin-top: 14px;
 	font-size: 15px;
 	line-height: 1.27;

@@ -1089,50 +1089,50 @@ $(document).ready(function () {
             colors: ["#877edf"],
 
             tooltip: {
-                // shared: true,
-                // useHTML: true,
-                // formatter: function () {
-                //     var imgOne = '<img src = "../img/startol_one.png" height="10" width="10"/>'  /* 1점 */
-                //     var imgZero = '<img src = "../img/startol_zero.png" height="10" width="10"/>'  /* 0점 */
-                //     var imgHalf = '<img src = "../img/startol_half.png" height="10" width="10"/>'  /* 0.5점 */
-                //     var s = '<b>' + this.x + '</b>';
-                //     $.each(this.points, function (i, point) {
-                //         if (point.y == '5') {
-                //             s += imgOne + imgOne + imgOne + imgOne + imgOne + '&nbsp;' + point.y;
-                //         }
-                //         else if (point.y >= '4.5') {
-                //             s += imgOne + imgOne + imgOne + imgOne + imgHalf + '&nbsp;' + point.y;
-                //         }
-                //         else if (point.y >= '4') {
-                //             s += imgOne + imgOne + imgOne + imgOne + imgZero + '&nbsp;' + point.y;
-                //         }
-                //         else if (point.y >= '3.5') {
-                //             s += imgOne + imgOne + imgOne + imgHalf + imgZero + '&nbsp;' + point.y;
-                //         }
-                //         else if (point.y >= '3') {
-                //             s += imgOne + imgOne + imgOne + imgZero + imgZero + '&nbsp;' + point.y;
-                //         }
-                //         else if (point.y >= '2.5') {
-                //             s += imgOne + imgOne + imgHalf + imgZero + imgZero + '&nbsp;' + point.y;
-                //         }
-                //         else if (point.y >= '2') {
-                //             s += imgOne + imgOne + imgZero + imgZero + imgZero + '&nbsp;' + point.y;
-                //         }
-                //         else if (point.y >= '1.5') {
-                //             s += imgOne + imgHalf + imgZero + imgZero + imgZero + '&nbsp;' + point.y;
-                //         }
-                //         else if (point.y >= '1') {
-                //             s += imgOne + imgZero + imgZero + imgZero + imgZero + '&nbsp;' + point.y;
-                //         }
-                //         else if (point.y >= '0.5') {
-                //             s += imgHalf + imgZero + imgZero + imgZero + imgZero + '&nbsp;' + point.y;
-                //         }
-                //         else {
-                //             s += imgZero + imgZero + imgZero + imgZero + imgZero + '&nbsp;' + point.y;
-                //         }
-                //     });
-                //     return s;
-                // },                
+                shared: true,
+                useHTML: true,
+                formatter: function () {
+                    var imgOne = '<img src = "../img/startol_one.png" height="10" width="10"/>'  /* 1점 */
+                    var imgZero = '<img src = "../img/startol_zero.png" height="10" width="10"/>'  /* 0점 */
+                    var imgHalf = '<img src = "../img/startol_half.png" height="10" width="10"/>'  /* 0.5점 */
+                    var s = '<b>' + this.x + '</b>';
+                    $.each(this.points, function (i, point) {
+                        if (point.y == '5') {
+                            s += imgOne + imgOne + imgOne + imgOne + imgOne + '&nbsp;' + point.y;
+                        }
+                        else if (point.y >= '4.5') {
+                            s += imgOne + imgOne + imgOne + imgOne + imgHalf + '&nbsp;' + point.y;
+                        }
+                        else if (point.y >= '4') {
+                            s += imgOne + imgOne + imgOne + imgOne + imgZero + '&nbsp;' + point.y;
+                        }
+                        else if (point.y >= '3.5') {
+                            s += imgOne + imgOne + imgOne + imgHalf + imgZero + '&nbsp;' + point.y;
+                        }
+                        else if (point.y >= '3') {
+                            s += imgOne + imgOne + imgOne + imgZero + imgZero + '&nbsp;' + point.y;
+                        }
+                        else if (point.y >= '2.5') {
+                            s += imgOne + imgOne + imgHalf + imgZero + imgZero + '&nbsp;' + point.y;
+                        }
+                        else if (point.y >= '2') {
+                            s += imgOne + imgOne + imgZero + imgZero + imgZero + '&nbsp;' + point.y;
+                        }
+                        else if (point.y >= '1.5') {
+                            s += imgOne + imgHalf + imgZero + imgZero + imgZero + '&nbsp;' + point.y;
+                        }
+                        else if (point.y >= '1') {
+                            s += imgOne + imgZero + imgZero + imgZero + imgZero + '&nbsp;' + point.y;
+                        }
+                        else if (point.y >= '0.5') {
+                            s += imgHalf + imgZero + imgZero + imgZero + imgZero + '&nbsp;' + point.y;
+                        }
+                        else {
+                            s += imgZero + imgZero + imgZero + imgZero + imgZero + '&nbsp;' + point.y;
+                        }
+                    });
+                    return s;
+                },                
             },
 
             pane: {
