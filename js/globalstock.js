@@ -108,6 +108,12 @@ $(document).ready(function () {
         return false;
     });
 
+    // a태그 페이지 상단 이동 막기
+    $('a').on('click', function () {
+        console.log("상단이동제한");
+        return false;
+    });
+
     //검색 상단 고정 종목명,
     var search_height = $('.globalStock .sub_search .search_top').height();
     var recom_height = $('.globalStock .sub_recom .search_top').height();
