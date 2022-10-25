@@ -13966,6 +13966,87 @@ table.tableRanking td {
 	margin-left: -77px;
 }
 
+.globalStock .sub_search .sub_mid .tab_diagnosis_area .compet_chart {
+	background-color: blanchedalmond;
+}
+
+
+.globalStock .sub_search .sub_mid .tab_diagnosis_area .compet_chart .tableRanking.sum_table {
+	width: 100%;
+}
+
+.globalStock .sub_search .sub_mid .tab_diagnosis_area .compet_chart .tableRanking.sum_table {
+	border-top: 1px solid #939393;
+	border-bottom: 1px solid #E0E4E9;
+	margin: 15px auto;
+	width: calc(100% - 30px);
+}
+
+.globalStock .sub_search .sub_mid .tab_diagnosis_area .compet_chart .tableRanking.sum_table tr {
+	border-bottom: 1px solid #E0E4E9;
+}
+
+.globalStock .sub_search .sub_mid .tab_diagnosis_area .compet_chart .tableRanking.sum_table th,
+.globalStock .sub_search .sub_mid .tab_diagnosis_area .compet_chart .tableRanking.sum_table td {
+	padding: 10px 3px;
+	text-align: center;
+}
+
+.globalStock .sub_search .sub_mid .tab_diagnosis_area .compet_chart .tableRanking.sum_table th {
+	color: #939393;
+	font-size: 0.75rem;
+	line-height: 20px;
+	padding: 4px 0 8px;
+}
+
+.globalStock .sub_search .sub_mid .tab_diagnosis_area .compet_chart .tableRanking.sum_table th span {
+	display: block;
+	color: #939393;
+}
+
+.globalStock .sub_search .sub_mid .tab_diagnosis_area .compet_chart .tableRanking.sum_table td {
+	color: #939393;
+	font-size: 0.9375rem;
+}
+
+.globalStock .sub_search .sub_mid .tab_diagnosis_area .compet_chart .tableRanking.sum_table td.name {
+	color: #333;
+	text-align: left;
+	display: inline-block;
+	width: 110px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	font-weight: normal;
+}
+
+.globalStock .sub_search .sub_mid .tab_diagnosis_area .compet_chart .tableRanking.sum_table td.name a {
+	color: #333;
+}
+
+.globalStock .sub_search .sub_mid .tab_diagnosis_area .compet_chart .tableRanking.sum_table td.name .ticker {
+	display: block;
+	line-height: 1.2rem;
+	color: #939393;
+	font-size: 0.75rem;
+	margin-right: 10px;
+	max-width: 100px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.globalStock .sub_search .sub_mid .tab_diagnosis_area .compet_chart .tableRanking.sum_table td.increase {
+	color: #F8385A;
+}
+
+.globalStock .sub_search .sub_mid .tab_diagnosis_area .compet_chart .tableRanking.sum_table td.decrease {
+	color: #0094FF;
+}
+
+
+
+
 .globalStock .sub_search .sub_mid .tab_diagnosis_area .charm_num.lately_allocation {
 	display: inline-block;
 	vertical-align: bottom;
