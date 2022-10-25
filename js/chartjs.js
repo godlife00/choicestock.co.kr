@@ -2008,6 +2008,7 @@ $(document).ready(function () {
             chart: {
                 polar: true,
                 type: 'area',
+                margin: [0, 0, 0, 0],
                 renderTo: 'chart_spider_mini_01',
                 backgroundColor: {
                     // linearGradient: { x1: 0, y1: 1, x2: 1, y2: 0 },
@@ -2024,7 +2025,7 @@ $(document).ready(function () {
                 plotShadow: false
             },
 
-            colors: ["#877edf"],
+            // colors: ["#877edf"],
 
             title: {
                 text: null
@@ -2045,6 +2046,7 @@ $(document).ready(function () {
                 },
                 categories: ['', '', '', '', ''],
                 tickmarkPlacement: 'on',
+                // gridLineColor: '#197F07',
                 lineWidth: 0,
             },
 
@@ -2053,6 +2055,7 @@ $(document).ready(function () {
                     fontSize: '0',
                 },
                 gridLineInterpolation: 'polygon',
+                // gridLineColor: '#939393',
                 lineWidth: 0,
                 min: 1,
                 max: 5,
@@ -2084,7 +2087,7 @@ $(document).ready(function () {
                 series: {
                     enableMouseTracking: false,
                     lineWidth: 1,
-                    fillOpacity: 0.3,
+                    fillOpacity: 0.4,
                     marker: {
                         enabled: false,
                     }

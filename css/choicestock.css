@@ -13967,7 +13967,7 @@ table.tableRanking td {
 }
 
 .globalStock .sub_search .sub_mid .tab_diagnosis_area .compet_chart {
-	background-color: blanchedalmond;
+	/* background-color: blanchedalmond; */
 }
 
 
@@ -14152,8 +14152,8 @@ table.tableRanking td {
 }
 
 .globalStock .sub_search .sub_mid.tabs_area .compet_chart .containercompet1 {
-	width: 160px;
-	height: 160px;
+	width: 50px;
+	height: 50px;
 }
 
 .globalStock .sub_search .sub_mid.tabs_area .compet_chart .chart_name,
@@ -16407,6 +16407,16 @@ table.tableRanking td {
 .globalStock .sub_search .sub_mid.competitors_table .tableRanking.sum_table td.decrease {
 	color: #0094FF;
 }
+
+.globalStock .sub_search .sub_mid.competitors_table .chartData {
+	position: relative;
+}
+.globalStock .sub_search .sub_mid.competitors_table .containercompet1 {
+    width: 50px;
+    height: 50px;
+	background-color: greenyellow;
+}
+
 
 /********************/
 /**** 발굴 *****/
