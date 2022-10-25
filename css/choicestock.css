@@ -16375,23 +16375,31 @@ table.tableRanking td {
 
 .globalStock .sub_search .sub_mid.competitors_table .tableRanking.sum_table td.name {
 	color: #333;	
+	padding-left: 5px;
 }
 
 .globalStock .sub_search .sub_mid.competitors_table .tableRanking.sum_table td.name a {
-	color: #333;
+	color: #333;	
 	text-align: left;
-	display: inline-block;
-	width: 110px;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	white-space: nowrap;
+	width: 110px;	
 	font-weight: normal;	
+    display: inline-block;
+    display: -webkit-box;
+    overflow: hidden;
+    max-height: 38px;
+    line-height: 19px;
+    box-sizing: border-box;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
 }
 
 .globalStock .sub_search .sub_mid.competitors_table .tableRanking.sum_table td.name .ticker {
 	display: block;
 	line-height: 1.2rem;
 	color: #939393;
+	text-align: left;
 	font-size: 0.75rem;
 	margin-right: 10px;
 	max-width: 100px;
