@@ -16374,6 +16374,10 @@ table.tableRanking td {
 }
 
 .globalStock .sub_search .sub_mid.competitors_table .tableRanking.sum_table td.name {
+	color: #333;	
+}
+
+.globalStock .sub_search .sub_mid.competitors_table .tableRanking.sum_table td.name a {
 	color: #333;
 	text-align: left;
 	display: inline-block;
@@ -16381,11 +16385,7 @@ table.tableRanking td {
 	overflow: hidden;
 	text-overflow: ellipsis;
 	white-space: nowrap;
-	font-weight: normal;
-}
-
-.globalStock .sub_search .sub_mid.competitors_table .tableRanking.sum_table td.name a {
-	color: #333;
+	font-weight: normal;	
 }
 
 .globalStock .sub_search .sub_mid.competitors_table .tableRanking.sum_table td.name .ticker {
@@ -16413,8 +16413,7 @@ table.tableRanking td {
 }
 .globalStock .sub_search .sub_mid.competitors_table .containercompet1 {
     width: 50px;
-    height: 50px;
-	background-color: greenyellow;
+    height: 50px;	
 }
 
 
