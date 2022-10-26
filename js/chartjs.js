@@ -2086,8 +2086,8 @@ $(document).ready(function () {
             plotOptions: {
                 series: {
                     enableMouseTracking: false,
-                    lineWidth: 1,
-                    fillOpacity: 0.4,
+                    lineWidth: 2,
+                    fillOpacity: 0.5,
                     marker: {
                         enabled: false,
                     }
@@ -2180,13 +2180,14 @@ $(document).ready(function () {
             plotOptions: {
                 series: {
                     enableMouseTracking: false,
-                    lineWidth: 1,
-                    fillOpacity: 0.4,
+                    lineWidth: 2,
+                    fillOpacity: 0.5,
                     marker: {
                         enabled: false,
                     }
                 }
             },
+
 
         })
     }if ($('#chart_spider_mini_03').length) {
@@ -2273,13 +2274,14 @@ $(document).ready(function () {
             plotOptions: {
                 series: {
                     enableMouseTracking: false,
-                    lineWidth: 1,
-                    fillOpacity: 0.4,
+                    lineWidth: 2,
+                    fillOpacity: 0.5,
                     marker: {
                         enabled: false,
                     }
                 }
             },
+
 
         })
     }
