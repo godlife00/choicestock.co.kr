@@ -1410,6 +1410,59 @@
             </div>
             <!-- //main_btm //recipe_area -->
 
+            <!-- 하단 서비스 노출 배너 -->
+            <script>
+                $(document).ready(function () {
+                    var swiper = new Swiper('.bannerSwiper', {
+                        loop: true,
+                        spaceBetween: 30,
+                        centeredSlides: true,
+                        autoplay: {
+                            delay: 3500,
+                        },
+                        pagination: {
+                            el: ".swiper-pagination",
+                        },
+                    });
+                });
+            </script>
+            <style>
+                .family_banner {
+                    padding: 35px 15px 0;
+                }
+
+                .family_banner .bannerSwiper {
+                    padding-bottom: 30px;
+                }
+
+                .family_banner .bannerSwiper img {
+                    display: inline-block;
+                    width: 100%;
+                    height: 100%;
+                }
+            </style>
+            <div class="family_banner">
+                <div class="swiper-container bannerSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="https://value.choicestock.co.kr/" target="_blank"><img
+                                    src="img/banner/family_vl.png" alt="밸류라인"></a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://super.choicestock.co.kr/" target="_blank"><img
+                                    src="img/banner/family_sst.png" alt="슈퍼스톡스"></a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://bigfinance.co.kr/home" target="_blank"><img src="img/banner/family_vp.png"
+                                    alt="빅파이낸스"></a>
+                        </div>
+                    </div>
+                    <!-- //swiper-wrapper -->
+                    <div class="swiper-pagination"></div>
+                </div>
+                <!-- //swiper-container -->
+            </div>
+            <!-- //family_banner -->
         </div>
         <!-- //container -->
 
