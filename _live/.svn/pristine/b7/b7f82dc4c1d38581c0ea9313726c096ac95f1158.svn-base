@@ -1,0 +1,135 @@
+	public function {method_name}() {
+		$this->load->model(DBNAME.'/{table_name}_model');
+		$sess = $this->session->userdata('admin');
+		$request = $this->input->get();
+
+        $data = array();
+
+		if(isset($request['mode']) && $request['mode'] == 'list') {
+			// ajax reqeust. ==> grid list data 
+
+			$page = $this->input->get('page');
+			$limit = $this->input->get('rows');
+			$_search = $this->input->get('_search');
+
+			$params = array();
+			$extra = array();
+
+			if(isset($_GET['filters'])){
+				$filters = $_GET['filters'];
+				$params = $this->common->filter_to_params($filters, $_search, array({between_field_list}));
+			}
+			
+
+			if(isset($request['sidx']) && strlen($request['sidx']) > 0) {
+				$order_by = $request['sidx']." ".$request['sord'];
+				$extra['order_by'] = array($order_by);
+			}
+
+			$extra['offset'] = ($page-1)*$limit;
+			$extra['limit'] = $limit;
+
+			$list = $this->{table_name}_model->getList($params, $extra)->getData();
+
+			$totalCount = $this->{table_name}_model->getCount($params)->getData();
+
+			$json_data = new stdClass;
+			$json_data->rows = array();
+			foreach($list as $k=>$r){
+					$json_data->rows[$k]['id'] = $r['{pk}'];
+					$json_data->rows[$k]['cell'] = $r;
+			}
+
+			$json_data->total = ceil($totalCount / $limit);
+			$json_data->page = $page;
+			$json_data->records = $totalCount;
+
+			echo json_encode($json_data);
+			return;
+		}
+		if(isset($request['mode']) && $request['mode'] == 'edit') {
+			$request = $this->input->post();
+
+			if(isset($request['oper']) && $request['oper'] == 'add') {
+				$data = $request;
+				unset($data['oper']);
+				unset($data['id']);
+
+				$data['{created_at}'] = date('Y-m-d H:i:s');
+				$data['{updated_at}'] = date('Y-m-d H:i:s');
+
+				// todo. $request 데이터 이외 셋팅할 부분 이 아래에서 채우기. 함승목.
+
+				if($this->{table_name}_model->doInsert($data)->isSuccess() == false) {
+					print_r($this->{table_name}_model->getErrorMsg());
+					return;
+				}
+
+                $act_key = $this->{table_name}_model->getData();
+                $log_array = array();
+                $log_array['params'] = $data;
+                $this->common->write_history_log($sess, 'INSERT', $act_key, $log_array, '{table_name}');
+				return;
+			}
+
+			if(isset($request['id']) && isset($request['ids']) == false) {
+				// 1 row 수정
+				if($request['edit_action_is'] == 'DEL') {
+					// 삭제 상태로 셋팅. 삭제.
+                    if($this->{table_name}_model->get($request['id'])->isSuccess()){
+                        $del_data = $this->{table_name}_model->getData();
+                        $this->{table_name}_model->doDelete($request['id']);
+                        $act_key = $request['id'];
+                        $log_array = array();
+                        $log_array['params'] = $del_data;
+                        $this->common->write_history_log($sess, 'DELETE', $act_key, $log_array, '{table_name}');
+                    }
+					return;
+				}
+				
+				// row 수정
+				$request['{updated_at}'] = date('Y-m-d H:i:s');
+				//todo. Update시 추가 셋팅값 여기서 채우기. 함승목
+
+				$this->{table_name}_model->doUpdate($request['id'], $request);
+                $act_key = $request['id'];
+                $log_array = array();
+                $log_array['params'] = $request;
+                $this->common->write_history_log($sess, 'UPDATE', $act_key, $log_array, '{table_name}');
+				return;
+			}
+
+			// 일괄 상태변경
+
+			$ids = explode(',',$request['ids']);
+
+			if(sizeof($ids) > 0 && sizeof($request['multi_update_field_data_map']) > 0) {
+				$data = $request['multi_update_field_data_map'];
+				foreach($ids as $id) {
+					if($request['edit_action_is'] == 'DEL') {
+                        if($this->{table_name}_model->get($id)->isSuccess()){
+                            $del_data = $this->{table_name}_model->getData();
+                            $this->{table_name}_model->doDelete($id);
+                            $act_key = $id;
+                            $log_array = array();
+                            $log_array['params'] = $del_data;
+                            $this->common->write_history_log($sess, 'DELETE', $act_key, $log_array, '{table_name}');
+                        }
+					} else {
+						$this->{table_name}_model->doUpdate($id, $data);
+                        $act_key = $id;
+                        $log_array = array();
+                        $log_array['params'] = $data;
+                        $this->common->write_history_log($sess, 'UPDATE', $act_key, $log_array, '{table_name}');
+					}
+				}
+				echo 'success';
+			} else {
+				echo 'fail';
+			}
+			return;
+
+		}
+
+		$this->_view('{view_path}', $data);
+	}

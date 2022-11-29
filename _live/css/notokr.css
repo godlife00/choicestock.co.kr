@@ -1,0 +1,56 @@
+@font-face {
+	font-family:'noto_sans';
+	font-style:normal;
+	font-weight:100;
+	src:url(/~static/home/fonts/notokr-thin.eot);
+	src:url(/~static/home/fonts/notokr-thin.eot?#iefix) format('embedded-opentype'),
+	url(/~static/home/fonts/notokr-thin.woff) format('woff');
+}
+@font-face {
+	font-family:'noto_sans';
+	font-style:normal;
+	font-weight:200;
+	src:url(/~static/home/fonts/notokr-light.eot);
+	src:url(/~static/home/fonts/notokr-light.eot?#iefix) format('embedded-opentype'),
+	url(/~static/home/fonts/notokr-light.woff) format('woff');
+}
+@font-face {
+	font-family:'noto_sans';
+	font-style:normal;
+	font-weight:300;
+	src:url(/~static/home/fonts/notokr-demiLight.eot);
+	src:url(/~static/home/fonts/notokr-demiLight.eot?#iefix) format('embedded-opentype'),
+	url(/~static/home/fonts/notokr-demiLight.woff) format('woff');
+}  
+@font-face {
+	font-family:'noto_sans';
+	font-style:normal;
+	font-weight:400;
+	src:url(/~static/home/fonts/notokr-regular.eot);
+	src:url(/~static/home/fonts/notokr-regular.eot?#iefix) format('embedded-opentype'),
+	url(/~static/home/fonts/notokr-regular.woff) format('woff');
+}
+@font-face {
+	font-family:'noto_sans';
+	font-style:normal;
+	font-weight:500;
+	src:url(/~static/home/fonts/notokr-medium.eot);
+	src:url(/~static/home/fonts/notokr-medium.eot?#iefix) format('embedded-opentype'),
+	url(/~static/home/fonts/notokr-medium.woff) format('woff');
+}
+@font-face {
+	font-family:'noto_sans';
+	font-style:normal;
+	font-weight:600;
+	src:url(/~static/home/fonts/notokr-bold.eot);
+	src:url(/~static/home/fontss/notokr-bold.eot?#iefix) format('embedded-opentype'),
+	url(/~static/home/fonts/notokr-bold.woff) format('woff');
+}
+@font-face {
+	font-family:'noto_sans';
+	font-style:normal;
+	font-weight:700;
+	src:url(/~static/home/fonts/notokr-black.eot);
+	src:url(/~static/home/fontss/notokr-black.eot?#iefix) format('embedded-opentype'),
+	url(/~static/home/fonts/notokr-black.woff) format('woff');
+}

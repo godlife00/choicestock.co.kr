@@ -1,0 +1,33 @@
+@font-face {
+ font-family: 'NanumSquare';
+ font-weight: 300;
+ src: url(/~static/home/fonts/NanumSquareL.eot);
+ src: url(/~static/home/fonts/NanumSquareL.eot?#iefix) format('embedded-opentype'),
+      url(/~static/home/fonts/NanumSquareL.woff) format('woff'),
+      url(/~static/home/fonts/NanumSquareL.ttf) format('truetype');
+}
+
+@font-face {
+ font-family: 'NanumSquare';
+ font-weight: 400;
+ src: url(/~static/home/fonts/NanumSquareR.eot);
+ src: url(/~static/home/fonts/NanumSquareR.eot?#iefix) format('embedded-opentype'),
+      url(/~static/home/fonts/NanumSquareR.woff) format('woff'),
+      url(/~static/home/fonts/NanumSquareR.ttf) format('truetype');
+}
+@font-face {
+ font-family: 'NanumSquare';
+ font-weight: 500;
+ src: url(/~static/home/fonts/NanumSquareB.eot);
+ src: url(/~static/home/fonts/NanumSquareB.eot?#iefix) format('embedded-opentype'),
+      url(/~static/home/fonts/NanumSquareB.woff) format('woff'),
+      url(/~static/home/fonts/NanumSquareB.ttf) format('truetype');
+}
+@font-face {
+ font-family: 'NanumSquare';
+ font-weight: 600;
+ src: url(/~static/home/fonts/NanumSquareEB.eot);
+ src: url(/~static/home/fonts/NanumSquareEB.eot?#iefix) format('embedded-opentype'),
+      url(/~static/home/fonts/NanumSquareEB.woff) format('woff'),
+      url(/~static/home/fonts/NanumSquareEB.ttf) format('truetype');
+}

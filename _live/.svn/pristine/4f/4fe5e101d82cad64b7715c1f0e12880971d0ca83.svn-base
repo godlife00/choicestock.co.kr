@@ -1,0 +1,26 @@
+{
+    "properties": {
+<!-- LOOP START same_type -->
+
+        "{field}": {
+            "type": "{type}"
+        },
+<!-- LOOP END same_type --><!-- LOOP START text -->
+        "{field}": {
+            "type": "text",
+            "fielddata" : {is_sortable}
+            {keyword}
+        },
+<!-- LOOP END text --><!-- LOOP START date -->
+        "{field}": {
+            "type": "date",
+            "format": "yyyy-MM-dd{hhmmss}"
+        },
+<!-- LOOP END date --><!-- LOOP START scaled_float -->
+        "{field}": {
+            "type": "scaled_float",
+            "scaling_factor": {dot_count}
+        },
+<!-- LOOP END scaled_float -->
+    }
+}

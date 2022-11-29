@@ -1,0 +1,109 @@
+
+	public function {edit_method_name}($id=0) {
+		$this->load->model(DBNAME.'/{table_name}_model');
+
+		$id = intval($id);
+
+		$assign = array();
+		$assign['mode'] = 'insert';
+		$assign['pk'] = '{pk}';
+		
+		if($id > 0) {
+			$this->{table_name}_model->get($id);
+			if($this->{table_name}_model->isSuccess() == false) {
+				$this->common->alert('pk '.$id.' is empty.');
+				$this->common->locationhref('/adminpanel/{controller_name}/{method_name}?keep=yes');
+				return;
+			}
+			$assign['mode'] = 'update';
+			$values = $this->{table_name}_model->getData();
+			foreach($values as $field => &$value) {
+				switch($field) {
+					// todo. 디폴트값 설정은 여기서
+					/*
+					case 'g_status' : 
+						$value = form_dropdown('dr_groups[]', $user_group_sel, $selected_groups, "multiple style='height:200px;width:215px;' required");
+						break;
+					*/
+					default : 
+						$value = htmlspecialchars($value);
+				}
+			}
+			$assign['values'] = $values;
+		} else {
+			// insert
+			$fields = $this->{table_name}_model->getFields();
+			$values = array();
+			foreach($fields as $field) {
+				switch($field) {
+					// todo. 디폴트값 설정은 여기서
+					/*
+					case 'g_created_at' : 
+						$values[$field] = date('Y-m-d H:i:s');
+						break;
+					*/
+					default : 
+						$values[$field] = '';
+				}
+			}
+			$assign['values'] = $values;
+		}
+
+		$this->_view('{edit_view_path}', $assign);
+	}
+
+	public function {edit_process_method_name}() {
+		$request = $this->input->post();
+
+		$id = $request['{pk}'];
+		unset($request['{pk}']);
+
+		$edit_url = {edit_url}
+
+		$this->load->model(DBNAME.'/{table_name}_model');
+
+		$field_list = $this->{table_name}_model->getFields();
+
+		$data = array();
+		foreach($field_list as $key) {
+			if(array_key_exists($key, $request)) {
+				$data[$key] = $request[$key];
+				continue;
+			}
+
+			if(array_key_exists($key.'_date', $request) && array_key_exists($key.'_time', $request)) {
+				$data[$key] = $request[$key.'_date'].' '.$request[$key.'_time'];
+			}
+		}
+
+		if($request['mode'] == 'update') {
+			$data['{updated_at}'] = date('Y-m-d H:i:s');
+			// todo. add update data set.
+
+
+			if($this->{table_name}_model->doUpdate($id, $data)->isSuccess() == false) {
+				$this->common->alert($this->{table_name}_model->getErrorMsg());
+			}
+			$this->common->locationhref($edit_url);
+			return;
+		} else if($request['mode'] == 'insert') {
+			$data['{created_at}'] = date('Y-m-d H:i:s');
+			$data['{updated_at}'] = date('Y-m-d H:i:s');
+			// todo. add update data set.
+
+			if($this->{table_name}_model->doInsert($data)->isSuccess() == false) {
+				$this->common->alert($this->{table_name}_model->getErrorMsg());
+			}
+			$id = $this->{table_name}_model->getData();
+			$edit_url = {edit_url}
+			$this->common->locationhref($edit_url);
+			return;
+		} else if($request['mode'] == 'delete') {
+			if($this->{table_name}_model->doDelete($id)->isSuccess() == false) {
+				$this->common->alert($this->{table_name}_model->getErrorMsg());
+			}
+			$this->common->locationhref($edit_url);
+			return;
+		}
+	}
+

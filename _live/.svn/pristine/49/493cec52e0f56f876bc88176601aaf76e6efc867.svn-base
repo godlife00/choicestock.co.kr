@@ -1,0 +1,5 @@
+#!/usr/local/bin/php -q
+<?php
+echo '['.date('Y-m-d H:i:s').'] 전송시작'."\n";
+exec('/usr/local/bin/php -q '.realpath(dirname(__FILE__).'/../..').'/index.php auto mailing');
+?>

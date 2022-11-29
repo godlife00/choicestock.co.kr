@@ -1,0 +1,86 @@
+#!/usr/local/bin/php -q
+<?php
+if(strlen($_SERVER['REMOTE_ADDR']) > 0) {
+	exit;
+}
+
+include './daemon.inc.php';
+
+
+list( , $module, $c) = $_SERVER['argv'];
+if (is_null($c)) {
+		$c = $module;
+		if (!in_array($c, array('start', 'stop', 'restart'))) {
+				die("usage: daemon [{$modules_str}] start|stop|restart[=[,queue_seq...]]\n");
+		}
+		$module = 'ALL';
+}
+list($command, $option) = explode('=', $c);
+if (empty($option)) {
+		$option = '';
+}
+if ($_SERVER['argc'] < 2 || !in_array($command, array('start', 'stop', 'restart'))) {
+		die("usage: daemon [{$modules_str}] start|stop|restart[=[,queue_seq...]]\n");
+}
+
+
+if ($module === 'ALL') {
+		foreach ($_ENV['QUEUE'] as $m => $q) {
+				$m = strtolower($m);
+				passthru("{$_SERVER['PHP_SELF']} {$m} {$command}");
+		}
+} else {
+		if (!in_array($module, $modules)) {
+				die("usage: daemon [{$modules_str}] start|stop|restart[=[,queue_seq...]]\n");
+		}
+		$table_seq = $_ENV['QUEUE'][strtoupper($module)]['TABLES'];
+
+		$title = strtoupper($module) . ' Queue Daemon';
+		$program = 'daemon_process.php';
+		switch (strtoupper($command)) {
+				case 'START' :
+						echo "{$title}을 시작합니다.\n";
+						foreach ($table_seq as $table) {
+								echo "[{$table}] ";
+								if (!in_array($table, $_ENV['QUEUE'][strtoupper($module)]['TABLES'])) {
+										echo "Notice - 존재하지 않는 Queue 입니다.\n";
+										continue;
+								}
+								if (process_exists($program, $module, $table)) {
+										echo "Notice - 구동중인 데몬이 존재합니다.\n";
+								} else {
+										process_start(realpath(dirname(__FILE__))."/{$program}", $module);
+										while (progress() && !process_exists($program, $module)) { /* loading */ }
+										echo " DONE!\n";
+								}
+						}
+						break;
+				case 'STOP' :
+						echo "{$title}을 종료합니다.\n";
+						foreach ($table_seq as $table) {
+								echo "[{$table}] ";
+								if (!in_array($table, $_ENV['QUEUE'][strtoupper($module)]['TABLES'])) {
+										echo "Notice - 존재하지 않는 Queue 입니다.\n";
+										continue;
+								}
+								if (!process_exists($program, $module)) {
+										echo "Notice - 구동중인 데몬이 존재하지 않습니다.\n";
+								} else {
+										process_stop($program, $module);
+										while (progress() && process_exists($program, $module)) { /* loading */ }
+										echo " DONE!\n";
+								}
+						}
+						break;
+				case 'RESTART' :
+						passthru("{$_SERVER['PHP_SELF']} {$module} stop={$option}; {$_SERVER['PHP_SELF']} {$module} start={$option}");
+						break;
+		}
+}
+
+/*
+
+*/
+
+
+?>

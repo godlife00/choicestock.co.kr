@@ -1,0 +1,342 @@
+<?php
+/*
+Database 내 테이블(들) 모델 제작 제너레이터 개발
+
+사용방법 : 
+
+Shell 접속 후 CI의 application/bin 디렉토리에서 아래와 같이 입력한다.
+
+*********************************************
+*       ./generator db명[ 테이블명]         *
+*********************************************
+
+@ db명까지만 입력시 db에 속한 모든 테이블 모델 생성.
+
+@ 테이블명까지 입력시 해당 테이블 모델만 생성.
+
+@ 모델은 기존 작업된 모델을 덮어쓰면 안되므로 "application/model/디비명/tmp" 폴더 아래에 제작함.
+  제작 후 커스텀 할 부분(__filter(), __validate() 등) 작업 후 "application/model/디비명" 폴더로 
+  mv명령을 이용하여 옮겨오면 controller 에서 
+
+  $this->load->model(디비명/테이블명); 
+
+  형태로 로드하여 사용가능.
+
+
+
+2013.01.03. 함승목
+
+*/ 
+
+
+
+if(strlen($_SERVER['REMOTE_ADDR']) > 0) {
+	die('<h1>Bad Request</h1>');
+}
+
+
+define('BASEPATH', '');
+define('DBNAME', $argv[1]);
+include realpath(dirname(__FILE__).'/../config').'/database.php';
+
+
+function getDataType($dataType) {
+
+  	$arrType = array ('enum', 'set', 'decimal', 'numeric');
+  	$tmpColumnType = explode('(', $dataType         );
+  		if (count($tmpColumnType) > 1) {
+  			$tmpColumnSize = explode(')', $tmpColumnType[1] );
+  			$tmpSigned     = explode(' ', $tmpColumnSize[1] );
+  		} else {
+  			$tmpColumnSize[0] = null;
+  		}
+  		foreach($arrType AS $value) {
+  			if ($value == $tmpColumnType[0]) {
+  				$rtn = "array (".$tmpColumnSize[0].")";
+  				$tmpColumnSize[0] = '';
+  			}
+  		}
+
+  		if (!isset($rtn)) {
+  			$rtn = "''";
+  		}
+  		if (isset($tmpSigned[1])) {
+  			$tempSigned = 1;
+  		} else {
+  			$tempSigned = null;
+  		}
+
+  		return $reseult = array(
+  			'type' => $tmpColumnType[0],
+  			'size' => $tmpColumnSize[0],
+  			'value'  => $rtn,
+  			'signed' => $tempSigned                
+  			);
+}
+
+
+
+if (sizeof($argv) == 2 || sizeof($argv) == 3) {
+	$database = $argv[1];
+
+	$db_info = array();
+	foreach($db as $key => $value) {
+		if($db[$key]['database'] == $database) {
+			$db_info = $value;
+			break;
+		}
+	}
+
+	if(sizeof($db_info) <= 0) {
+
+    	echo "\n Error : \n
+{$database} 데이터베이스를 찾지 못했습니다.
+";
+		exit;
+	}
+
+	$conn = mysql_connect($db_info['hostname'], $db_info['username'], $db_info['password']);
+	mysql_select_db($db_info['database']);
+	$result = mysql_query("show tables");
+	$tables = array();
+	while($row = mysql_fetch_array($result)) {
+		$tables[] = $row[0];
+	}
+
+	if(sizeof($argv) == 3) {
+		$table = $argv[2];
+		if((strlen($table) > 0 && in_array($table, $tables)) == false) {
+			echo "\n Error : \n
+			{$table} 테이블을 찾지 못했습니다.
+			";
+			exit;
+		}
+
+		$tables = array($table);
+	}
+
+	$table_info_array = array();
+	foreach($tables as $table) {
+		$result = mysql_query("desc `{$table}`");
+
+		while($desc = mysql_fetch_object($result)) {
+			$dataType = getDataType($desc->Type);
+			$table_info_array[$table][$desc->Field] = array_merge($dataType, array(
+				'null'		=> $desc->Null,
+				'key'		=> $desc->Key,
+				'default'	=> $desc->Default,
+				'extra'		=> $desc->Extra
+				));
+		}
+	}
+
+	mysql_select_db('information_schema');
+	mysql_query("/*!40101 set names utf8 */;");
+
+	// 코멘트 추가
+	$enums = array();
+	$musts = array();
+	$primary = array();
+	$table_fields = array();
+	foreach($table_info_array as $table => &$info) {
+		$query = "select column_name, column_comment from columns where table_schema = '{$database}' and table_name = '{$table}'";
+		$result = mysql_query($query);
+		while($row = mysql_fetch_object($result)) {
+
+			$table_fields[$table][] = $row->column_name;
+
+			$comment = $row->column_comment;
+			if(!$comment) {
+				$comment = $row->column_name;
+			}
+
+			$table_info_array[$table][$row->column_name]['comment'] = $comment;
+
+			if(
+				//$table_info_array[$table][$row->column_name]['default'] == false
+				//&& $table_info_array[$table][$row->column_name]['type'] == 'enum'
+				//&& $table_info_array[$table][$row->column_name]['null'] == 'NO'
+				$table_info_array[$table][$row->column_name]['type'] == 'enum'
+			) {
+				$enums[$table][] = array(
+					'field'			=> $row->column_name,
+					'enum_array'	=> $table_info_array[$table][$row->column_name]['value'],
+					'comment'		=> $comment
+					);
+			} 
+			if(
+				$table_info_array[$table][$row->column_name]['default'] == false
+				&& $table_info_array[$table][$row->column_name]['null'] == 'NO'
+				&& $table_info_array[$table][$row->column_name]['key'] != 'PRI'
+			) {
+				$musts[$table][] = array(
+					'field'			=> $row->column_name,
+					'comment'		=> $comment
+					);
+			}
+
+			if($table_info_array[$table][$row->column_name]['key'] == 'PRI') {
+				$primary[$table][] = $row->column_name;
+			}
+
+		}
+	}
+
+	$model_path = realpath(dirname(__FILE__).'/../models').'/'.$database;
+	if(is_dir($model_path) == false) {
+		@mkdir($model_path, 0755);
+	}
+
+	$model_path .= '/tmp';
+	if(is_dir($model_path) == false) {
+		@mkdir($model_path, 0755);
+	}
+
+
+
+
+	include dirname(__FILE__).'/TemplateHam.php';
+
+	$tpl = new TemplateHam();
+	$template = "model_template";
+	foreach($table_info_array as $table => $fields) {
+		$tpl->tp_read($template);
+
+		if(isset($primary[$table]) == false || is_array($primary[$table]) == false || sizeof($primary[$table]) < 1) {
+			$primary[$table][] = $table_fields[$table][0]; // PK 없는 테이블은 첫번째 필드명으로 설정
+		}
+
+		$table_pk = $primary[$table];
+		if(sizeof($table_pk) > 1) {
+			$table_pk = "array('".implode("','", $table_pk)."')";
+		} else {
+			$table_pk = "'".$table_pk[0]."'";
+		}
+
+		$tpl->tp_set(array(
+			"table" => ucfirst($table),
+			"pk" => $table_pk,
+			));
+
+
+		$tpl->tp_dynamic('emptycheck');
+
+		$data_emptycheck = $musts[$table]; 
+		if(is_array($data_emptycheck) == false) {
+			$data_emptycheck = array();
+		}
+
+		$rows_emptycheck = sizeof($data_emptycheck);
+		for($i_emptycheck = 0 ; $i_emptycheck < $rows_emptycheck ; $i_emptycheck++)
+		{
+			$row_emptycheck = $data_emptycheck[$i_emptycheck];
+
+			$field = $row_emptycheck['field'];
+			$comment = $row_emptycheck['comment'];
+			$comma = ',';
+			if($i_emptycheck+1 < $rows_emptycheck == false) {
+				$comma = '';
+			}
+
+			$tpl->tp_set("emptycheck", array(
+				"field" => $field,
+				"comment" => $comment,
+				"comma" => $comma,
+				));
+
+
+			$tpl->tp_parse('emptycheck');
+		}
+
+
+		$tpl->tp_dynamic('enumcheck');
+
+		$data_enumcheck = $enums[$table];
+		if(is_array($data_enumcheck) == false) {
+			$data_enumcheck = array();
+		}
+
+		$rows_enumcheck = sizeof($data_enumcheck);
+		for($i_enumcheck = 0 ; $i_enumcheck < $rows_enumcheck ; $i_enumcheck++)
+		{
+			$row_enumcheck = $data_enumcheck[$i_enumcheck];
+
+			$field = $row_enumcheck['field'];
+			$enum_array = $row_enumcheck['enum_array'];
+			$comment = $row_enumcheck['comment'];
+			$comma = ',';
+			if($i_enumcheck+1 < $rows_enumcheck == false) {
+				$comma = '';
+			}
+
+			$tpl->tp_set("enumcheck", array(
+				"field" => $field,
+				"enum_array" => $enum_array,
+				"comment" => $comment,
+				"comma" => $comma,
+				));
+
+
+			$tpl->tp_parse('enumcheck');
+		}
+
+		$content = $tpl->tp_fetch();
+
+		file_put_contents($model_path.'/'.$table.'_model.php', $content);
+		echo $table.' 모델 '.$model_path.'/'.$table.'_model.php 에 생성 완료!!'."\n";
+	}
+
+	echo <<<MSG
+
+
+
+모델 생성이 완료되었습니다.
+
+모델 파일(들)을 열어
+
+\$emptycheck_keys [doInsert() 시 빠지면 안되는 값들 정의]
+\$enumcheck_keys [doInsert() 시 정의된 값 여부 체크]
+
+들의 누락 및 관리되지 않는 값 메시지를 수정하세요.
+
+
+@ 수정 후 tmp 폴더 상위폴더로 올려서 load 하여 사용할것.
+
+
+
+\$emptycheck_keys 작성기준 : 
+  * NOT NULL이고, Default값이 없는 필드들이 정의됩니다.
+
+\$enumcheck_keys 작성기준 : 
+  * NOT NULL이고, Default값이 없는 ENUM 필드들이 정의됩니다.
+
+
+Tip. 테이블 설계시 COMMENT로 필드별 용도를 작성하면 누락 / 관리 메시지에 반영되어 수정할 필요가 없습니다.
+
+
+@@ 스마트 개발팀 제작 (2014.01.02) @@
+
+
+MSG;
+
+
+} else {
+			echo <<<MSG
+
+
+Shell 접속 후 CI의 application/bin 디렉토리에서 아래와 같이 입력한다.
+
+*********************************************
+*     ./generator db명[ 테이블명]           *
+*********************************************
+
+@ db명까지만 입력시 db에 속한 모든 테이블 모델 생성.
+@ 테이블명까지 입력시 해당 테이블 모델만 생성.
+@ 모델은 기존 작업된 모델을 덮어쓰면 안되므로 "application/model/디비명/tmp" 폴더 아래에 제작함.
+  제작 후 커스텀 할 부분(__filter(), __validate() 등) 작업 후 "application/model/디비명" 폴더로 
+  mv명령을 이용하여 옮겨오면 된다.
+
+  2013.01.03. 함승목
+MSG;
+}
+?>

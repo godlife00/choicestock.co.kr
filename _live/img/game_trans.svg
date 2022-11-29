@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="114" height="24" viewBox="0 0 114 24">
+  <g id="그룹_2284" data-name="그룹 2284" transform="translate(-30 -63)">
+    <g id="그룹_1977" data-name="그룹 1977" transform="translate(120 63.375)">
+      <circle id="타원_316" data-name="타원 316" cx="12" cy="12" r="12" transform="translate(0 -0.375)" fill="#0094ff"/>
+      <g id="그룹_1504" data-name="그룹 1504" transform="translate(16.168 16.485) rotate(180)">
+        <path id="패스_3599" data-name="패스 3599" d="M8.168,4.084,4.084,0,0,4.084" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <path id="패스_3600" data-name="패스 3600" d="M0,8.168V0" transform="translate(4.084)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+    </g>
+    <g id="그룹_1979" data-name="그룹 1979" transform="translate(30 63.018)">
+      <circle id="타원_315" data-name="타원 315" cx="12" cy="12" r="12" transform="translate(0 -0.018)" fill="#ff2929"/>
+      <g id="그룹_1506" data-name="그룹 1506" transform="translate(8 8.317)">
+        <path id="패스_3599-2" data-name="패스 3599" d="M20.168,16.084,16.084,12,12,16.084" transform="translate(-12 -12)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <path id="패스_3600-2" data-name="패스 3600" d="M18,20.168V12" transform="translate(-13.916 -12)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+    </g>
+    <g id="그룹_1978" data-name="그룹 1978" transform="translate(75 63.375)">
+      <circle id="타원_317" data-name="타원 317" cx="12" cy="12" r="12" transform="translate(0 -0.375)" fill="#41b765"/>
+      <g id="그룹_1523" data-name="그룹 1523" transform="translate(16.168 8.317) rotate(90)">
+        <path id="패스_3599-3" data-name="패스 3599" d="M8.168,4.084,4.084,0,0,4.084" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <path id="패스_3600-3" data-name="패스 3600" d="M0,8.168V0" transform="translate(4.084)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+    </g>
+  </g>
+</svg>

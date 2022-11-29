@@ -1,0 +1,41 @@
+			<!-- 주요 콘텐츠 -->
+            <div class="sub_top">
+                <div class="hm">
+                    <!-- 확인안한 알림이 있는 경우 class = alarm 보여짐 -->
+                    <a href="/<?=KW?>_stock/alarm" class="alarm"><img src="/img/icon_alarm.png" alt="알림"><?=($check_alarm===true) ? '':'<i>확인안함</i>'?></a>
+                    <a href="javascript:history.back(-1);" class="clse"><img src="/img/clse_b.png" alt="닫기"></a>
+                </div>
+                <!-- //hm -->
+                <h1 class="title"><a href="/<?=KW?>_main">초이스스탁US</a></h1>                
+                <p class="sum">미국주식 쉽고 편리하게</p>
+            </div>
+
+            <div class="sub_mid">                
+                <dl class="menu_link">
+                    <dt class="sum">추천</dt>
+                    <dd class="txt"><a href="/<?=KW?>_stock/recommend">종목추천</a></dd>
+                    <dd class="txt"><a href="/<?=KW?>_stock/recommend/portfolio">포트폴리오</a></dd>
+                    <dd class="txt"><a href="/<?=KW?>_stock/winner">승부주</a></dd>                    
+                </dl>
+                <dl class="menu_link">
+                    <dt class="sum">진단</dt>                    
+                    <dd class="txt"><a href="/<?=KW?>_main/onestop">종목 원스탑 진단</a></dd>
+                    <dd class="txt"><a href="/<?=KW?>_main/search">관심종목</a></dd>
+                </dl>
+                <dl class="menu_link">
+                    <dt class="sum">발굴</dt>
+                    <dd class="txt"><a href="/<?=KW?>_attractiveness/attractive?sort=total&netincome=all&marketcap=over100billion">투자매력도순위</a></dd>
+                    <dd class="txt"><a href="/<?=KW?>_stock/recipe_intro">투자레시피</a></dd>
+                    <dd class="txt"><a href="/<?=KW?>_stock/catch_info">종목캐치</a></dd>                    
+                    <dd class="txt"><a href="/<?=KW?>_stock/research">미국주식 탐구생활</a></dd>                    
+                </dl>
+                <dl class="menu_link">       
+                    <dt class="sum">기타</dt>             
+                    <dd class="txt"><a href="/<?=KW?>_main/service">서비스소개</a></dd>
+                    <dd class="txt"><a href="/<?=KW?>_stock/morning">모닝브리핑</a></dd>
+                </dl>
+            </div>
+
+            <div class="f_datahero">
+                <a href=""><img src="/img/f_datahero.png" alt="DATAHERO"></a>
+            </div>

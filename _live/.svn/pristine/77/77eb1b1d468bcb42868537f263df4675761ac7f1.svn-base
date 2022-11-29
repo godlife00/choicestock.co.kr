@@ -1,0 +1,53 @@
+                <!-- 미국주식에 미치다 TV -->
+                <div class="main_mid youtube_mijumi">
+                    <h3 class="title">미국주식에 미치다 TV</h3>
+                    <!--<a href="#" class="more"><img src="/img/more_Black.png" alt="더보기"></a>-->
+
+                    <div class="swiper-container mijumiSwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="video_box">
+                                    <a href="https://youtu.be/a3H1uvno8fs" target="_blank">
+                                        <img class="video_thumbnail"
+                                            src="https://i.ytimg.com/vi/a3H1uvno8fs/mqdefault.jpg"
+                                            alt="테슬라 S&amp;P 500 편입, 코스트코 특별배당, 버크셔해서웨이 최고가">
+                                        <p class="video_title">테슬라 S&amp;P 500 편입, 코스트코 특별배당, 버크셔해서웨이 최고가</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="video_box">
+                                    <a href="https://youtu.be/3mMmfjvg9IQ" target="_blank">
+                                        <img class="video_thumbnail"
+                                            src="https://i.ytimg.com/vi/3mMmfjvg9IQ/mqdefault.jpg"
+                                            alt="[미국주식]  백신 기대감  3대지수 사상최고가 직행, 관련주 5개? 이제는 3900?? #미주미 #이항영 #장우석">
+                                        <p class="video_title">[미국주식] 백신 기대감 3대지수 사상최고가 직행, 관련주 5개? 이제는 3900??</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="video_box">
+                                    <a href="https://youtu.be/3yz63o8YWAM" target="_blank">
+                                        <img class="video_thumbnail"
+                                            src="https://i.ytimg.com/vi/3yz63o8YWAM/mqdefault.jpg"
+                                            alt="[미주미 특집]  바이든, 해리스 시대 관심주 5선,  ETF 9선 #미주미 #이항영 #장우석">
+                                        <p class="video_title">[미주미 특집] 바이든, 해리스 시대 관심주 5선, ETF 9선</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="video_box">
+                                    <a href="https://youtu.be/qJ4EmwgIx44" target="_blank">
+                                        <img class="video_thumbnail"
+                                            src="https://i.ytimg.com/vi/qJ4EmwgIx44/mqdefault.jpg"
+                                            alt="[미국주식 라이브] 포스트 선거 랠리 언제까지 이어질 수국주식 라이브] 포스트 선거 랠리 언제까지 이어질 수 있을까? 비트코인?">
+                                        <p class="video_title">[미국주식 라이브] 포스트 선거 랠리 언제까지 이어질 수국주식 라이브] 포스트 선거 랠리 언제까지
+                                            이어질 수 있을까? 비트코인?</p>
+                                    </a>
+                                </div>
+                            </div>                            
+                        </div>
+                    </div>
+                    <!-- mijumiSwiper -->
+                </div>
+                <!-- //youtube_mijumi -->

@@ -1,0 +1,262 @@
+<?php
+//initilize the page
+require_once realpath(dirname(__FILE__).'/../').'/inc/init.php';
+
+//require UI configuration (nav, ribbon, etc.)
+require_once realpath(dirname(__FILE__).'/../').'/inc/config.ui.php';
+
+/*---------------- PHP Custom Scripts ---------
+
+YOU CAN SET CONFIGURATION VARIABLES HERE BEFORE IT GOES TO NAV, RIBBON, ETC.
+E.G. $page_title = "Custom Title" */
+
+$page_title = "{controller_name_str} {method_name_str} - ".ucfirst($mode);
+
+/* ---------------- END PHP Custom Scripts ------------- */
+
+//include header
+//you can add your custom css in $page_css array.
+//Note: all css files are inside css/ folder
+
+//$page_css[] = "products_detail.css";
+
+include realpath(dirname(__FILE__).'/../').'/inc/header.php';
+
+//include left panel (navigation)
+//follow the tree in inc/config.ui.php
+$page_nav["{controller_name}"]["sub"]["{method_name}"]["active"] = true;
+include realpath(dirname(__FILE__).'/../').'/inc/nav.php';
+
+?>
+<!-- ==========================CONTENT STARTS HERE ========================== -->
+<!-- MAIN PANEL -->
+<div id="main" role="main">
+<?php
+    //configure ribbon (breadcrumbs) array("name"=>"url"), leave url empty if no url
+    //$breadcrumbs["New Crumb"] => "http://url.com"
+    $breadcrumbs["Tables"] = "";
+    include realpath(dirname(__FILE__).'/../').'/inc/ribbon.php';
+
+if(isset($values[$pk]) == false) {
+	$values[$pk] = '';
+}
+
+?>
+
+    <!-- MAIN CONTENT -->
+    <div id="content">
+
+    
+        <!-- row -->
+        <div class="row">
+            <!-- col -->
+            <div class="col-xs-12 col-sm-7 col-md-7 col-lg-4">
+                <h1 class="page-title txt-color-blueDark">
+                    <!-- PAGE HEADER -->
+                    <i class="fa-fw fa fa-home"></i> 
+                       {controller_name_str}
+                    <span>>  
+                       {method_name_str}
+                    </span>
+                </h1>
+            </div>
+            <!-- end col -->
+        </div>
+        <!-- end row -->
+
+
+        <div class="row">
+            <div class="col-md-12">
+
+                <form name='edit_form' id="edit_form" action="{edit_process_url}" method="POST">
+					<input type='hidden' name='mode' value='<?=$mode?>' />
+					<input type='hidden' name='<?=$pk?>' value='<?=$values[$pk]?>' />
+
+                <div class="well well-md">
+
+                    <div class="jarviswidget product_tit" id="wid-id-5">
+                   
+                    <header>
+                        <h2>
+                            <span class="widget-icon"> <i class="fa fa-pencil-square-o"></i> </span>
+                            {method_name_str} Detail
+                        </h2>
+                    </header>
+
+                    <!-- widget div-->
+                    <div class="form-horizontal">
+
+                        <fieldset>
+							<!-- LOOP START field_list -->
+
+
+									<!-- LOOP START text -->
+							<?php if($values[$pk] > 0 ) : ?>
+                            <div class="form-group">
+								<label for="{field}" class="col-md-3 control-label">{field_title} <span class="required-atr">*</span></label>
+								<div class="col-md-8">
+									<?=$values['{field}']?>
+								</div>
+							</div>
+							<?php endif; ?>
+									<!-- LOOP END text -->
+
+
+
+									<!-- LOOP START input_text -->
+                            <div class="form-group">
+								<label for="{field}" class="col-md-3 control-label">{field_title} <span class="required-atr">*</span></label>
+								<div class="col-md-8">
+									<input class="form-control input-xs" type="text" name="{field}" id="{field}" value="<?=strlen($values['{field}']) ? $values['{field}']:''?>" required>
+								</div>
+							</div>
+									<!-- LOOP END input_text -->
+
+
+									<!-- LOOP START textarea -->
+                            <div class="form-group">
+								<label for="{field}" class="col-md-3 control-label">{field_title} <span class="required-atr">*</span></label>
+								<div class="col-md-8">
+									<textarea class="form-controls" name="{field}" id="{field}" required><?=strlen($values['{field}']) ? $values['{field}']:''?></textarea>
+								</div>
+							</div>
+									<!-- LOOP END textarea -->
+
+
+
+
+
+
+									<!-- LOOP START date_time -->
+									<?php
+										${field}_date = "";
+										${field}_time = "";
+										if(isset($values['{field}']) && $values['{field}'] != 0) :
+											${field}_date = date('Y-m-d', strtotime($values['{field}']));
+											${field}_time = date('H:i:s', strtotime($values['{field}']));
+										endif;
+									?>
+							<div class="form-group">
+								<label for="{field}_date" class="col-md-3 control-label">{field_title}<span class="required-atr">*</span></label>
+								<div class="col-md-2 input-icon-right">
+									<i class="fa fa-calendar"></i>
+									<input class="form-control input-xs" type="input" name="{field}_date" id="{field}_date" value="<?=${field}_date?>" required>
+								</div>
+
+								<div class="col-md-2 input-icon-right">
+									<i class="fa fa-clock-o"></i>
+									<input class="form-control input-xs" type="input" name="{field}_time" id="{field}_time" data-autoclose="true" value="<?=${field}_time?>" required>
+								</div>
+								<script>
+								$(document).ready(function() {
+									addCalendar('{field}_date');
+									addClock('{field}_time');
+								});
+								</script>
+
+							</div>
+									<!-- LOOP END date_time -->
+
+
+
+									<!-- LOOP START date -->
+							<div class="form-group">
+								<label for="{field}" class="col-md-3 control-label">{field_title}<span class="required-atr">*</span></label>
+								<div class="col-md-3 input-icon-right">
+									<i class="fa fa-calendar"></i>
+									<input class="form-control input-xs" type="input" name="{field}" id="{field}" value="<?=date('Y-m-d', strtotime($values['{field}']))?>" required>
+								</div>
+								<script>
+								$(document).ready(function() {
+									addCalendar('{field}');
+								});
+								</script>
+							</div>
+									<!-- LOOP END date -->
+
+
+
+
+
+							<!-- LOOP END field_list -->
+                        </fieldset>
+
+                    </div>
+                    <!-- end widget div -->
+
+                </div>
+                <!-- end .jarviswidget-->
+
+
+
+                <div class="text-right">
+                    <a href="/adminpanel/{controller_name}/{method_name}?keep=yes" class="btn btn-xs btn-primary">
+                        <i class="fa fa-list-alt"></i> 
+                        List
+                    </a>
+                    <a href="javascript:submit_form();" class="btn btn-xs btn-danger">
+                        <i class="fa fa-save"></i> 
+                        Save
+                    </a>
+                </div>
+<script type="text/javascript">
+
+function submit_form() {
+    var formid = $("#edit_form");
+    formid.validate({
+        ignore: [],
+        invalidHandler: function(e,validator) {
+        }
+    });
+    formid.submit();
+}
+
+function addCalendar(obj_id, relation_obj_id, relation_from_or_to) {
+	
+	$('#'+obj_id).datepicker({
+        dateFormat: 'yy-mm-dd',
+        prevText: '<i class="fa fa-chevron-left"></i>',
+        nextText: '<i class="fa fa-chevron-right"></i>',
+		changeMonth: true,
+		changeYear: true,
+        onSelect: function (selectedDate) {
+			if(relation_obj_id != null) {
+				var rel = relation_from_or_to;
+				if(rel == 'from') {
+					rel = 'max';
+				} else {
+					rel = 'min';
+				}
+            	$('#'+relation_obj_id).datepicker('option', rel+'Date', selectedDate);
+			}
+        }
+    });
+}
+function addClock(id) {
+	$('#'+id).clockpicker({
+		placement: 'top',
+	    donetext: 'Done'
+	});
+}
+
+</script>
+
+
+
+                
+                </div><!-- .well End -->
+                </form>
+            </div>
+        </div>
+
+    </div>
+    <!-- END MAIN CONTENT -->
+
+</div>
+<!-- END MAIN PANEL -->
+<!-- ==========================CONTENT ENDS HERE ========================== -->
+
+
+<script src="<?php echo ASSETS_URL; ?>/js/plugin/jquery-form/jquery-form.min.js"></script>
+<script src="<?php echo ASSETS_URL; ?>/js/plugin/jquery-validate/jquery.validate.min.js"></script>
+<script src="<?php echo ASSETS_URL; ?>/js/plugin/clockpicker/clockpicker.min.js"></script>

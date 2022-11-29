@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="65" height="26" viewBox="0 0 65 26">
+  <g id="그룹_1866" data-name="그룹 1866" transform="translate(-84 -310)">
+    <g id="icon-heart-off" transform="translate(84 310)">
+      <rect id="사각형_2335" data-name="사각형 2335" width="26" height="26" fill="none"/>
+      <path id="Icon_feather-heart" data-name="Icon feather-heart" d="M18.935,5.885a4.736,4.736,0,0,0-6.7,0l-.913.913-.913-.913a4.737,4.737,0,1,0-6.7,6.7l.913.913,6.7,6.7,6.7-6.7.913-.913a4.736,4.736,0,0,0,0-6.7Z" transform="translate(1.677 0.503)" fill="#d3d3d3"/>
+    </g>
+    <g id="icon-heart-on" transform="translate(123 310)">
+      <rect id="사각형_2335-2" data-name="사각형 2335" width="26" height="26" fill="none"/>
+      <path id="Icon_feather-heart-2" data-name="Icon feather-heart" d="M18.935,5.885a4.736,4.736,0,0,0-6.7,0l-.913.913-.913-.913a4.737,4.737,0,1,0-6.7,6.7l.913.913,6.7,6.7,6.7-6.7.913-.913a4.736,4.736,0,0,0,0-6.7Z" transform="translate(1.677 0.503)" fill="#ff3178"/>
+    </g>
+  </g>
+</svg>

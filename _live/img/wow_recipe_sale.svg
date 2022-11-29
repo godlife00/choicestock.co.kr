@@ -1,0 +1,13 @@
+<svg id="지금_세일중" data-name="지금 세일중" xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70">
+  <rect id="사각형_3134" data-name="사각형 3134" width="70" height="70" fill="#c7cbe9" opacity="0"/>
+  <path id="교차_1" data-name="교차 1" d="M5988.814,5479.753a11.01,11.01,0,1,0-13.037,0h-3a13.009,13.009,0,1,1,19.037,0Z" transform="translate(-5946.222 -5452.754)" fill="#549ef4"/>
+  <g id="그룹_2906" data-name="그룹 2906" transform="translate(29.021 11.684)">
+    <rect id="사각형_3134-2" data-name="사각형 3134" width="1.62" height="12.96" rx="0.81" transform="matrix(0.966, -0.259, 0.259, 0.966, 1.018, 0.419)" fill="#549ef4"/>
+    <rect id="사각형_3137" data-name="사각형 3137" width="1.62" height="9.673" rx="0.81" transform="matrix(0.966, -0.259, 0.259, 0.966, 6.203, 3.595)" fill="#549ef4"/>
+    <rect id="사각형_3135" data-name="사각형 3135" width="1.62" height="12.96" rx="0.81" transform="matrix(0.966, 0.259, -0.259, 0.966, 11.717, 0)" fill="#549ef4"/>
+    <rect id="사각형_3136" data-name="사각형 3136" width="1.62" height="9.72" rx="0.81" transform="matrix(0.966, 0.259, -0.259, 0.966, 6.559, 3.13)" fill="#549ef4"/>
+    <rect id="사각형_3138" data-name="사각형 3138" width="1.62" height="14.108" rx="0.81" transform="translate(0 7.279) rotate(-90)" fill="#549ef4"/>
+  </g>
+  <path id="Icon_awesome-cart-arrow-down" data-name="Icon awesome-cart-arrow-down" d="M40.227,25.5H16.863l.522,2.55H38.778a1.913,1.913,0,0,1,1.865,2.337l-.44,1.935a4.465,4.465,0,1,1-5.069.829H18.425a4.463,4.463,0,1,1-5.344-.683L7.483,5.1H1.913A1.913,1.913,0,0,1,0,3.188V1.913A1.913,1.913,0,0,1,1.913,0h8.172a1.913,1.913,0,0,1,1.874,1.529L12.689,5.1H43.995A1.913,1.913,0,0,1,45.86,7.438L42.092,24.016A1.913,1.913,0,0,1,40.227,25.5Zm-8.1-10.2H28.693V10.521a.956.956,0,0,0-.956-.956H25.823a.956.956,0,0,0-.956.956V15.3H21.437a.956.956,0,0,0-.676,1.633L26.1,22.278a.957.957,0,0,0,1.353,0L32.8,16.935A.956.956,0,0,0,32.122,15.3Z" transform="translate(9.171 21.79)" fill="#549ef4"/>
+  <rect id="사각형_3136-2" data-name="사각형 3136" width="64" height="2.28" rx="1.14" transform="translate(4.012 62.597)" fill="#549ef4"/>
+</svg>

@@ -1,0 +1,523 @@
+<?php
+/************
+
+프로그램이 하는 질문에 답만 하면 어드민 jqgrid / 추가 / 수정 기능 동작 완료
+
+Made by 함승목. (2014.11.07. in Germany..)
+
+************/
+function get_answer($question, $default='', $condition=array()) {
+		echo $question;
+		if(strlen($default) > 0) {
+			echo ' [Default : '.$default.'] : ';
+		}
+		$fp = fopen('/dev/stdin', 'r');
+		$answer = trim(fgets($fp, 255));
+		
+		if(strlen($default) > 0 && sizeof($condition) > 0) {
+			$condition[] = '';
+		}
+		if(is_array($condition) && sizeof($condition) > 0 && in_array($answer, $condition) == false) {
+			echo "\n 입력값이 올바르지 않습니다. 다시 입력하세요 \n\n";
+			$answer = get_answer($question, $default, $condition);
+		}
+		
+
+		if(strlen($default) > 0 && strlen($answer) <= 0) {
+			$answer = $default;
+		}
+
+		return trim($answer);
+}
+function getDataType($dataType) {
+
+  	$arrType = array ('enum', 'set', 'decimal', 'numeric');
+  	$tmpColumnType = explode('(', $dataType         );
+  		if (count($tmpColumnType) > 1) {
+  			$tmpColumnSize = explode(')', $tmpColumnType[1] );
+  			$tmpSigned     = explode(' ', $tmpColumnSize[1] );
+  		} else {
+  			$tmpColumnSize[0] = null;
+  		}
+  		foreach($arrType AS $value) {
+  			if ($value == $tmpColumnType[0]) {
+  				$rtn = "array (".$tmpColumnSize[0].")";
+  				$tmpColumnSize[0] = '';
+  			}
+  		}
+
+  		if (!isset($rtn)) {
+  			$rtn = "''";
+  		}
+  		if (isset($tmpSigned[1])) {
+  			$tempSigned = 1;
+  		} else {
+  			$tempSigned = null;
+  		}
+
+  		return $reseult = array(
+  			'type' => $tmpColumnType[0],
+  			'size' => $tmpColumnSize[0],
+  			'value'  => $rtn,
+  			'signed' => $tempSigned                
+  			);
+}
+
+
+
+
+if(strlen($_SERVER['REMOTE_ADDR']) > 0) {
+	die('<h1>Bad Request</h1>');
+}
+
+
+define('BASEPATH', '');
+include realpath(dirname(__FILE__).'/../config').'/database.php';
+
+
+
+
+$base_path = realpath(dirname(__FILE__).'/..');
+
+$ctrl_path = $base_path.'/controller/';
+
+echo "[[ Controller 제작 ]]\n";
+$replace = array();
+$replace['controller_name'] = strtolower(get_answer("컨트롤러(Class)명을 입력하세요. (ex. report)  : "));
+$replace['method_name'] = strtolower(get_answer("Method(함수)명을 입력하세요. (ex. member_list)  : "));
+$replace['database'] = $db['default']['database'];
+$replace['table_name'] = get_answer("Table명을 입력하세요. (ex. goods_tb)  : ");
+
+$db_info = array();
+foreach($db as $key => $value) {
+		if($db[$key]['database'] == $replace['database']) {
+				$db_info = $value;
+				break;
+		}
+}
+
+if(sizeof($db_info) <= 0) {
+	echo "\n Error : \n
+{$replace['database']} 데이터베이스를 찾지 못했습니다.
+";
+	exit;
+}
+
+$db_info['database'] = $db_info['username'];
+$conn = mysql_connect($db_info['hostname'], $db_info['username'], $db_info['password']);
+mysql_select_db($db_info['database']);
+$result = mysql_query("show tables");
+$tables = array();
+while($row = mysql_fetch_array($result)) {
+		$tables[] = $row[0];
+}
+
+$table = $replace['table_name'];
+if((strlen($table) > 0 && in_array($table, $tables)) == false) {
+		echo "\n Error : \n
+		{$table} 테이블을 찾지 못했습니다.
+		";
+		exit;
+}
+$result = mysql_query("desc `{$replace['table_name']}`");
+
+$table_info_array = array();
+while($desc = mysql_fetch_object($result)) {
+		$dataType = getDataType($desc->Type);
+		$table_info_array[$desc->Field] = array_merge($dataType, array(
+				'null'		=> $desc->Null,
+				'key'		=> $desc->Key,
+				'default'	=> $desc->Default,
+				'extra'		=> $desc->Extra
+		));
+}
+
+/***********************************
+print_r($table_info_array);
+
+
+Array
+(
+    [a_id] => Array
+        (
+            [type] => int
+            [size] => 10
+            [value] => ''
+            [signed] => 1
+            [null] => NO
+            [key] => PRI
+            [default] =>
+            [extra] => auto_increment
+        )
+
+    [a_firstname] => Array
+        (
+            [type] => varchar
+            [size] => 50
+            [value] => ''
+            [signed] =>
+            [null] => NO
+            [key] =>
+            [default] =>
+            [extra] =>
+        )
+
+    [a_lastname] => Array
+        (
+            [type] => varchar
+            [size] => 50
+            [value] => ''
+            [signed] =>
+            [null] => NO
+            [key] =>
+            [default] =>
+            [extra] =>
+        )
+   ....
+
+***********************************/
+
+$table_fields = array_keys($table_info_array);
+$created_at = '';
+$updated_at = '';
+foreach($table_info_array as $field => $info) {
+	if($info['key'] == 'PRI') {
+		$replace['pk'] = $field;
+	}
+
+	if(strpos($field, 'created_at') !== false) {
+		$created_at = $field;
+	}
+	if(strpos($field, 'updated_at') !== false) {
+		$updated_at = $field;
+	}
+}
+
+print_r($table_fields);
+echo "\n";
+$table_fields_str = implode(', ', $table_fields);
+$replace['fields'] = get_answer("리스팅 할 Field명들을 입력하세요.(ex. {$table_fields[0]}, {$table_fields[1]} ..)  \n ", $table_fields_str);
+
+$replace['view_path'] = $replace['controller_name'].'/'.$replace['method_name'];
+$view_filename = $replace['method_name'].'.php';
+
+echo "\n\n[[ View 파일 제작 ]]\n";
+
+$replace['created_at'] = $created_at;
+if($created_at == '') {
+	$replace['created_at'] = get_answer("저장일시 필드명 입력(선택적 입력) : ", $created_at);
+}
+$replace['updated_at'] = $updated_at;
+if($updated_at == '') {
+	$replace['updated_at'] = get_answer("수정일시 필드명 입력(선택적 입력) : ", $updated_at);
+}
+
+$replace['controller_name_str'] = explode('_', $replace['controller_name']);
+$replace['controller_name_str'] = implode(' ', array_map('ucfirst', $replace['controller_name_str']));
+
+$replace['method_name_str'] = explode('_', $replace['method_name']);
+$replace['method_name_str'] = implode(' ', array_map('ucfirst', $replace['method_name_str']));
+
+$fields = explode(',', $replace['fields']);
+$fields = array_map('trim', $fields);
+
+$title_map = array();
+$col_model = array();
+
+$yn_map = array('y' => true, 'n' => false);
+
+$col_model= array();
+$col_model_for_between = array();
+$fields_for_between = array();
+$between_field_list = array();
+$date_fields = array();
+$edit_fields= array();
+foreach($fields as $field) {
+
+		echo "[Field set]\n";
+
+		$recom_title = implode(' ', array_map('ucfirst', explode('_',array_pop(explode('_',$field,2)))));
+		$field_title = get_answer("{$field} 필드 타이틀 : ", $recom_title);
+		$title_map[] = $field_title;
+		$struct = array(
+						'name' => $field,
+						'index' => $field,
+					   );
+
+		// align
+		$align = get_answer("{$field} 위치 (left | center | right)  : ", 'center', array('left','center','right'));
+		if(strlen($align) <= 0) {
+				$align = 'center';
+		}
+		$struct['align'] = $align;
+
+
+		// sortable
+		$sort = get_answer("{$field} 정렬 기능 사용 (y | n) : ", 'y', array('y','n'));
+		if(strlen($sort) <= 0) {
+				$sort = 'y';
+		}
+		$struct['sortable'] = $yn_map[strtolower($sort)];
+
+		// search
+		$search = get_answer("{$field} 검색 기능 사용 (y | n)  : ", 'y', array('y','n'));
+		if(strlen($search) <= 0) {
+				$search= 'y';
+		}
+		$struct['search'] = $yn_map[strtolower($search)];
+
+
+		if($search == 'y') {
+				// search type
+				$searchtype = get_answer("{$field} 검색 Type  : \n1. %LIKE% (default)\n2. Equals(==)\n3. select\n4. between\n선택>>",'',array(1,2,3,4));
+				if(strlen($searchtype) <= 0) {
+						$searchtype = '1';
+				}
+				switch($searchtype) {
+					case '1' : // like (cn)
+						$struct['searchoptions'] = array('sopt' => array('cn'));
+						break;
+					case '2' : // equals(eq)
+						$struct['searchoptions'] = array('sopt' => array('eq'));
+						break;
+					case '3' : // select (eq )
+						$value = get_answer('select박스 옵션 입력 (:;US:미국;KR:한국) : ');
+						$struct['stype'] = 'select';
+						$struct['searchoptions'] = array('sopt' => array('eq'), 'value' => $value);
+						break; 
+					case '4' : // between
+						$struct['stype'] = 'between';
+
+						// add field list
+						$fields_for_between[] = $field_title.'_from';
+						$fields_for_between[] = $field_title.'_to';
+
+						$between_field_list[] = $field;
+
+						// add colModel for between field. (from, to).
+						$col_model_for_between[] = array(
+							'name' => $field.'_from', 
+							'index' => $field.'_from', 
+							'viewable' => false, 
+							'hidden' => true
+						);
+						$col_model_for_between[] = array(
+							'name' => $field.'_to', 
+							'index' => $field.'_to', 
+							'viewable' => false, 
+							'hidden' => true
+						);
+
+						$is_cal = get_answer("날짜(캘린더) between 검색인가요? (y | n)  : ", 'n', array('y','n'));
+						if(strlen($is_cal) <= 0) {
+							$is_cal = 'n';
+						}
+						if(strtolower($is_cal) == 'y') {
+							$struct['attr'] = 'onchange="jqgrid.triggerToolbar();"';
+							$date_fields[] = $field;
+						}
+						break;
+					default :
+				}
+		}
+
+
+		// editable
+		$editable = get_answer("{$field} 수정 기능 사용 (y | n)   : ",'n',array('y','n'));
+		if(strlen($editable) <= 0) {
+				$editable = 'n';
+		}
+		$struct['editable'] = $yn_map[strtolower($editable)];
+
+		if($struct['editable'] == true) {
+			$edit_fields[] = $field;
+			if($struct['search'] == true && isset($struct['stype']) && $struct['stype'] == 'select') {
+				$struct['edittype'] = 'select';
+				$struct['editoptions'] = $struct['searchoptions'];
+			}
+		}
+
+		$col_model[] = $struct;
+
+		echo "\n\n\n";
+}
+
+$field_title_map = array_combine($fields, $title_map);
+
+$replace['date_fields'] = '';
+if(sizeof($date_fields) > 0) {
+	$replace['date_fields'] = "'".implode("','", $date_fields)."'";
+}
+
+
+$replace['edit_fields'] = '';
+if(sizeof($edit_fields) > 0) {
+	$replace['edit_fields'] = "'".implode("','", $edit_fields)."'";
+}
+
+if(sizeof($fields_for_between) > 0) {
+	$title_map = array_merge($title_map, $fields_for_between);
+	$replace['between_field_list'] = "'".implode("','", $between_field_list)."'";
+}
+$replace['title_list'] = "'".implode("','", $title_map)."'";
+
+if(sizeof($col_model_for_between) > 0) {
+	$col_model = array_merge($col_model, $col_model_for_between);
+}
+$replace['col_model'] = json_encode($col_model);
+
+$replace['edit_method_name'] = '';
+$replace['edit_process_method_name'] = '';
+
+$replace['edit_url'] = "";
+$replace['edit_script_url'] = "'';";
+$replace['edit_process_url'] = "";
+$is_detail = get_answer("등록/수정 디테일 페이지 사용할꺼? (y | n)  : ",'y',array('y','n'));
+if(strlen($is_detail) <= 0) {
+	$is_detail = 'y';
+}
+$is_detail = strtolower($is_detail);
+
+if($is_detail == 'y') {
+	$replace['edit_method_name'] = $replace['method_name'].'_detail';
+	$replace['edit_process_method_name'] = $replace['method_name'].'_process';
+
+	$replace['edit_url'] = "'/adminpanel/{$replace['controller_name']}/{$replace['edit_method_name']}/'.\$id;";
+	$replace['edit_script_url'] = "'/adminpanel/{$replace['controller_name']}/{$replace['edit_method_name']}/'+id;";
+	$replace['edit_process_url'] = "/adminpanel/{$replace['controller_name']}/{$replace['edit_process_method_name']}";
+
+	$replace['edit_view_path'] = $replace['controller_name'].'/'.$replace['edit_method_name'];
+}
+
+
+include dirname(__FILE__).'/TemplateHam.php';
+
+$tpl = new TemplateHam();
+$template = "jqgrid_controller_template";
+$tpl->tp_read($template);
+$tpl->tp_set($replace);
+
+$method = $tpl->tp_fetch();
+
+file_put_contents('./tmp/'.$replace['controller_name'].'.'.$replace['method_name'].'.php', $method);
+
+
+
+
+
+$tpl = new TemplateHam();
+$template = "jqgrid_view_template";
+$tpl->tp_read($template);
+$tpl->tp_set($replace);
+
+$tpl->tp_dynamic('add_button');
+if($is_detail == 'y') {
+	tp_set('add_button', $replace);
+	$tpl->tp_parse('add_button');
+}
+$view = $tpl->tp_fetch();
+
+file_put_contents('./tmp/'.$view_filename, $view);
+
+if($is_detail != 'y') {
+	echo './tmp/'.$replace['controller_name'].'.'.$replace['method_name'].".php 에 컨트롤러 메서드 작성 저장 완료\n\n\n\n";
+	echo "./tmp/{$view_filename} 에 View파일 작성 저장 완료\n\n\n\n";
+	exit;
+}
+
+$tpl = new TemplateHam();
+$template = "jqgrid_edit_controller_template";
+$tpl->tp_read($template);
+$tpl->tp_set($replace);
+
+$method .= "\n\n\n";
+$method .= $tpl->tp_fetch();
+
+file_put_contents('./tmp/'.$replace['controller_name'].'.'.$replace['method_name'].'.php', $method);
+
+
+
+
+
+// Edit View
+$tpl = new TemplateHam();
+$template = "jqgrid_edit_view_template";
+$tpl->tp_read($template);
+$tpl->tp_set($replace);
+
+$type_text_map = array();
+$type_text_map['none'] = '비노출(수정 불가)';
+$type_text_map['text'] = '텍스트로 노출(수정 불가)';
+$type_text_map['input_text'] = 'input[type=text] 형';
+$type_text_map['textarea'] = 'textarea 형';
+$type_text_map['date_time'] = '달력+시계 UI 형';
+$type_text_map['date'] = '달력 UI 형';
+
+
+$tpl->tp_dynamic('field_list');
+echo "\n\n\n[[ Edit 페이지 구성 설정 ]]\n\n";
+foreach($table_info_array as $field => $info) {
+
+	echo "* $field ({$info['type']}({$info['type']}))\n";
+
+
+
+	$select = array();
+	$select[] = 'none';
+	$select[] = 'text';
+	$select[] = 'input_text';
+	if($info['key'] == 'PRI') {
+		// none, text only.
+		array_pop($select);
+	} else if(
+		$info['type'] == 'text'
+		|| $info['type'] == 'mediumtext'
+		|| $info['type'] == 'longtext'
+		|| ($info['type'] == 'varchar' && $info['size'] > 100)
+	){
+		$select[] = 'textarea';
+	} else if($info['type'] == 'date') {
+		$select[] = 'date';
+	} else if($info['type'] == 'datetime') {
+		$select[] = 'date_time';
+	}
+
+	foreach($select as $k => $code) {
+		echo $k.'. '.$type_text_map[$code]."\n";
+	}
+	$loop = get_answer('번호 선택>>','',array_keys($select));
+	$loop_key = $select[$loop];
+	if($loop_key == 'none') {
+		continue;
+	}
+
+	$tpl->tp_dynamic('text', 'field_list');
+	$tpl->tp_dynamic('input_text', 'field_list');
+	$tpl->tp_dynamic('textarea', 'field_list');
+	$tpl->tp_dynamic('date', 'field_list');
+	$tpl->tp_dynamic('date_time', 'field_list');
+
+	$tp_set = array(
+		'field' => $field
+	);
+	if(isset($field_title_map[$field])) {
+		$tp_set['field_title'] = $field_title_map[$field];
+	} else {
+
+		$recom_title = implode(' ', array_map('ucfirst', explode('_',array_pop(explode('_',$field,2)))));
+		$tp_set['field_title'] = get_answer('필드 타이틀 : ',$recom_title);
+	}
+	$tpl->tp_set($loop_key, $tp_set);
+	$tpl->tp_parse($loop_key);
+	$tpl->tp_parse('field_list');
+}
+$edit_view = $tpl->tp_fetch();
+
+file_put_contents('./tmp/'.$replace['edit_method_name'].'.php', $edit_view);
+
+echo "\n";
+echo './tmp/'.$replace['controller_name'].'.'.$replace['method_name'].".php 에 컨트롤러 메서드 작성 저장 완료\n => 소스를 복사하여 {$replace['controller_name']} 컨트롤러에 메서드들을 붙여넣으세요!!\n\n";
+echo "./tmp/{$view_filename} 에 View파일 작성 저장 완료\n => views/adminpanel/{$replace['controller_name']} 로 이동하여 위치시키세요.\n => \n\n";
+echo "./tmp/{$replace['edit_method_name']}.php 에 View파일 작성 저장 완료\n => views/adminpanel/{$replace['controller_name']} 로 이동하여 위치시키세요.\n => \n\n";
+
+?>
