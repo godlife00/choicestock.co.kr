@@ -7074,6 +7074,11 @@ table.tableRanking td {
 	word-wrap: break-word;
 }
 
+.globalStock .sub_recom .sub_mid .tabsArea .tabs_two+.tab_container div a {
+	color: #06c;
+	text-decoration: none;
+}
+
 .globalStock .sub_recom .sub_mid .tabsArea .tabs_two+.tab_container .tab_content p {
 	margin-bottom: 0;
 	padding: 0;
@@ -19394,8 +19399,8 @@ table.tableRanking td {
 }
 
 .globalStock .sub_research .view_con .mid a {
-	color: #608bff;
-	text-decoration: underline;
+	color: #06c;
+	text-decoration: none;
 }
 
 .globalStock .sub_research .view_con .mid+.go_list {
