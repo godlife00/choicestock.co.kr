@@ -17628,13 +17628,13 @@ table.tableRanking td {
 
 .globalStock .first_month_3300.md-modal #setting .pop_con .tableRanking.type_compare th span,
 .globalStock .first_month_3300.md-modal #setting .pop_con .tableRanking.type_compare td span {
-	color: #939393;
-	font-size: 0.75rem;
-	line-height: 26px;
+	color: #444;
+	font-size: 0.875rem;
+	line-height: 29px;
 }
 
 .globalStock .first_month_3300.md-modal #setting .pop_con .tableRanking.type_compare td span b {
-	color: #939393;
+	color: #444;
 }
 
 .globalStock .first_month_3300.md-modal #setting .pop_con .tableRanking.type_compare .top_th {
