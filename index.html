@@ -99,15 +99,19 @@
 <body class="globalStock">
 
     <!-- 정식 오픈 이후 버전 -->
+<<<<<<< HEAD
     <div class="free_2weeks" id="layer_pop" style="display: none;">
+=======
+    <div class="free_2weeks" id="layer_pop" style="display: block;">
+>>>>>>> develop
         <!-- 보여줘야 하는 경우 class open -->
         <div class="bg_gray"></div>
         <div class="box">
             <div class="content">
                 <div class="info_txt">
-                    <p class="txt01"><strong>지금 HOT한 미국주식</strong>이<br>궁금하다면?</p>
+                    <p class="txt01">늦었다고 생각할 때는 진짜 늦습니다~</p>
                     <br>
-                    <p class="txt02">추천종목, 포트폴리오,<br>관심종목을 <span>알림으로 받아보세요</span></p>
+                    <p class="txt02"><span>종목추천과 분석, 알림까지 한번에!</span> <br> 미국주식투자 바로 시작하세요.</p>
                 </div>
                 <div class="btn_area">
                     <a href="#" class="free">프리미엄 무료체험</a>
@@ -483,7 +487,7 @@
                                     <tbody>
                                         <tr>
                                             <td class="title t_short">
-                                                <a href="#" data-modal="modal-3" class="md-trigger">
+                                                <a href="#" data-modal="modal-5" class="md-trigger">
                                                     마<span class="remark">
                                                         <div class="txt_filter size_M"><i></i><i></i><i></i><i></i>
                                                         </div>
@@ -1051,6 +1055,7 @@
                 <!-- //구글 에드센스 -->
 
                 <!-- 초이스스탁US 프로모션 배너 등 -->
+<<<<<<< HEAD
                 <div class="banner_event">                    
                     <a href="https://www.choicestock.co.kr/stock/vod_view/13"  class="link_banner"><img src="img/Choicestock_BN_1.png" alt="초이스스탁US 100% 활용하기"></a> <br><br>
                     <a href="/stock/recipe.html" class="link_banner"><img src="img/Choicestock_BN_2.png" alt="초이스스탁US 익스텐션 추가하기"></a> <br><br>
@@ -1058,6 +1063,20 @@
                     <a href="/stock/research_view/118" class="link_banner"><img src="img/cs_ex-banner.png" alt="초이스스탁US 익스텐션 추가하기"></a> <br><br>
                     <a href="http://naver.me/G9bEnpic" class="link_banner" target="_black"><img src="img/banner_home.png" alt="초이스스탁US 홈 화면에 추가하기"></a> <br><br>
                     <a href="https://www.choicestock.co.kr/stock/vod_view/13" class="link_banner"><img src="img/banner_chouse.svg" alt="초이스스탁US 사용법"></a>            
+=======
+                <div class="banner_event">
+                    <a href="https://www.choicestock.co.kr/stock/vod_view/13" class="link_banner"><img src="img/Choicestock_BN_1.png"
+                            alt="초이스스탁US 100% 활용하기"></a> <br><br>
+                    <a href="/stock/recipe.html" class="link_banner"><img src="img/Choicestock_BN_2.png" alt="초이스스탁US 익스텐션 추가하기"></a>
+                    <br><br>
+                    <!-- <img src="img/banner_prm3000.png" alt="초이스스탁US 프리미엄, 첫 달 3,000원!"> <br><br> -->
+                    <a href="/stock/research_view/118" class="link_banner"><img src="img/cs_ex-banner.png" alt="초이스스탁US 익스텐션 추가하기"></a>
+                    <br><br>
+                    <a href="http://naver.me/G9bEnpic" class="link_banner" target="_black"><img src="img/banner_home.png"
+                            alt="초이스스탁US 홈 화면에 추가하기"></a> <br><br>
+                    <a href="https://www.choicestock.co.kr/stock/vod_view/13" class="link_banner"><img src="img/banner_chouse.svg"
+                            alt="초이스스탁US 사용법"></a>
+>>>>>>> develop
                 </div>
                 <!-- //초이스스탁US 프로모션 배너 등 -->
 
@@ -1405,23 +1424,93 @@
             </div>
             <!-- //main_btm //recipe_area -->
 
+            <!-- 하단 서비스 노출 배너 -->
+            <script>
+                $(document).ready(function () {
+                    var swiper = new Swiper('.bannerSwiper', {
+                        loop: true,
+                        spaceBetween: 30,
+                        centeredSlides: true,
+                        autoplay: {
+                            delay: 3500,
+                        },
+                        pagination: {
+                            el: ".swiper-pagination",
+                        },
+                    });
+                });
+            </script>
+            <style>
+                .family_banner {
+                    padding: 35px 15px 0;
+                }
+
+                .family_banner .bannerSwiper {
+                    padding-bottom: 30px;
+                }
+
+                .family_banner .bannerSwiper img {
+                    display: inline-block;
+                    visibility: hidden;          
+                    width: 100%;
+                    height: 100%;
+                }
+            </style>
+            <script>
+                $(document).ready(function () {
+                    var randomNumber_vl = Math.floor(Math.random() * 2) + 1;
+                    var randomNumber_sst = Math.floor(Math.random() * 3) + 1;
+                    var radamImgVl = $('.radam_Img_vl');
+                    var radamImgSst = $('.radam_Img_sst');
+                    var radamImg_vp = $('.radam_Img_vp');
+                    radamImgVl.on('load', function() {
+                        radamImgVl.css('visibility', 'visible');
+                    });
+                    radamImgSst.on('load', function() {
+                        radamImgSst.css('visibility', 'visible');
+                    });                    
+                    radamImg_vp.on('load', function() {
+                        radamImg_vp.css('visibility', 'visible');
+                    });                    
+                    radamImgVl.attr('src', 'img/banner/family_vl_0' + randomNumber_vl + '.png');
+                    radamImgSst.attr('src', 'img/banner/family_sst_0' + randomNumber_sst + '.png');
+                });
+            </script>
+            <div class="family_banner">
+                <div class="swiper-container bannerSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="https://value.choicestock.co.kr/?utm_source=choicestock&utm_medium=banner&utm_campaign=service" target="_blank"><img src="img/banner/family_vl_01.png" class="radam_Img_vl" alt="밸류라인"></a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://super.choicestock.co.kr/?utm_source=choicestock&utm_medium=banner&utm_campaign=service" target="_blank"><img src="img/banner/family_sst_01.png" class="radam_Img_sst" alt="슈퍼스톡스"></a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://bigfinance.co.kr/home" target="_blank"><img src="img/banner/family_vp.png" class="radam_Img_vp" alt="빅파이낸스"></a>
+                        </div>
+                    </div>
+                    <!-- //swiper-wrapper -->
+                    <div class="swiper-pagination"></div>
+                </div>
+                <!-- //swiper-container -->
+            </div>
+            <!-- //family_banner -->
         </div>
         <!-- //container -->
 
         <div id="footer" class="chous_footer">
+            <!-- 인증 -->
             <div class="certification">
-                <a href="https://www.notion.so/0370b2650fed4a0ea50cb8a4a0b1a8dc#22d99f1236c54b1187bbea8fe24b6f35" target="_blank" style="display: block;">
+                <div onclick="location.href ='https:www.datahero.co.kr/about/'" style="cursor:pointer;">
                     <ul>
-                        <li class="cer_logo_01"><img src="img/logo_kiwoom.svg" alt="키움증권"></li>
-                        <li class="cer_logo_02"><img src="img/logo_eugene.svg" alt="유진투자증권"></li>
-                        <li class="cer_logo_03"><img src="img/logo_truefriend.svg" alt="한국투자증권"></li>
+                        <li class="cer_logo"><img src="img/logo_kiwoom.svg" alt="키움증권"></li>
+                        <li class="cer_logo"><img src="img/logo_eugene.svg" alt="유진투자증권"></li>
+                        <li class="cer_logo"><img src="img/logo_truefriend.svg" alt="한국투자증권"></li>
+                        <li class="cer_logo"><img src="img/logo_sk.png" alt="SK증권"></li>
+                        <li class="cer_logo"><img src="img/logo_hana.svg" alt="하나증권"></li>
+                        <li class="cer_logo"><img src="img/logo_mirae.svg" alt="미래에셋증권"></li>
                     </ul>
-                    <ul>
-                        <!-- <li class="cer_logo_04"><a href=""><img src="img/logo_shinhan.svg" alt="신한금융투자"></li> -->
-                        <li class="cer_logo_05"><img src="img/logo_hana.svg" alt="하나증권"></li>                       
-                        <li class="cer_logo_06"><img src="img/logo_mirae.svg" alt="미래에셋증권"></li>
-                    </ul>
-                </a>
+                </div>            
             </div>
             <!-- //인증 -->
 
@@ -1454,8 +1543,8 @@
                 <!-- //foot_info -->
                 <div class="family_site">
                     <strong>Family</strong>&nbsp;&nbsp;&nbsp;&gt;&nbsp;&nbsp;&nbsp;
-                    <a href="https://super.choicestock.co.kr" target="blank">슈퍼스톡스</a><i></i>
-                    <a href="https://value.choicestock.co.kr" target="blank">밸류라인</a>
+                    <a href="https://super.choicestock.co.kr/?utm_source=choicestock&utm_medium=banner&utm_campaign=service" target="blank">슈퍼스톡스</a><i></i>
+                    <a href="https://value.choicestock.co.kr/?utm_source=choicestock&utm_medium=banner&utm_campaign=service" target="blank">밸류라인</a>
                     <i></i> <a href="https://bigfinance.co.kr/" target="blank">빅파이낸스</a>
                 </div>
                 <!-- //family_site -->
@@ -1594,61 +1683,35 @@
         <div id="setting" class="setting_area">
             <div class="pop_header">
                 <a href="#setting_anchor" title="로그인 레이어 닫기" class="close"><img src="img/clse_w.png" alt="팝업닫기"></a>
-                <div class="sub_top">
-                    <h2 class="h2_title">초이스스탁US 프리미엄<span><strong>첫 달 3,000원</strong></span></h2>
-                    <p class="period">하루 100원으로 투자의 즐거움을 경험하세요.</p>
+                <div class="sub_top">                    
                     <h2 class="h2_title">초이스스탁US 프리미엄<span><strong>로그인만하면 2주 무료!</strong></span></h2>
-                    <p class="period">무료로 미국주식 추천주와 포트폴리오 서비스를 받아보세요.</p>
+                    <p class="period">미국주식 추천과 분석, 알림까지 한번에!</p>
                 </div>
             </div>
             <!-- //pop_header -->
             <div class="pop_con">
                 <table cellspacing="0" border="0" class="tableRanking type_compare">
-                    <tbody>
+                    <tbody>                        
                         <tr>
-                            <th class="top_th"><span>초이스스탁US 프리미엄</span></th>
-                            <th class="top_th"><span>프리미엄</span></th>
-                            <th class="top_th"><span>무료</span></th>
+                            <td class="mid_td"><span>• 5분이면 끝! 매력적인 종목을 한눈에 <b>종목진단</b></span></td>                            
                         </tr>
                         <tr>
-                            <td class="mid_td"><span>한글로 쉽고 편리한 <b>종목검색</b></span></td>
-                            <td class="com_select"><span></span></td>
-                            <td class="com_select"><span></span></td>
+                            <td class="mid_td"><span>• 엄선된 저평가 우량주만 콕! <b>종목추천/포트폴리오</b></span></td>                            
                         </tr>
                         <tr>
-                            <td class="mid_td"><span>투자매력/적정주가 <b>종목진단</b></span></td>
-                            <td class="com_select"><span></span></td>
-                            <td><span>항목제한</span></td>
+                            <td class="mid_td"><span>• 투자매력 + 저평가 + 수급 <b>오늘의 승부주</b></span></td>                            
                         </tr>
                         <tr>
-                            <td class="mid_td"><span>엄선된 <b>종목추천/포트폴리오</b></span></td>
-                            <td class="com_select"><span></span></td>
-                            <td class="not_select"><span></span></td>
+                            <td class="mid_td"><span>• 투자매력주의 매매판단을 빠르게! <b>AI적정주가</b></span></td>                            
                         </tr>
                         <tr>
-                            <td class="mid_td"><span>투자매력+저평가+수급 <b>승부주</b></span></td>
-                            <td class="com_select"><span></span></td>
-                            <td class="not_select"><span></span></td>
+                            <td class="mid_td"><span>• 나만의 취향저격 종목추천 <b>종목캐치</b></span></td>                            
                         </tr>
                         <tr>
-                            <td class="mid_td"><span>취향저격 종목추천 <b>종목캐치</b></span></td>
-                            <td class="com_select"><span></span></td>
-                            <td><span>항목제한</span></td>
+                            <td class="mid_td"><span>• 관심종목/보유종목 모니터링 <b>관심종목/원스톱진단</b></span></td>                            
                         </tr>
                         <tr>
-                            <td class="mid_td"><span>나만의 <b>관심종목/원스톱진단</b></span></td>
-                            <td class="com_select"><span></span></td>
-                            <td class="not_select"><span></span></td>
-                        </tr>
-                        <tr>
-                            <td class="mid_td"><span>종목발굴 <b>투자레시피/종목노트</b></span></td>
-                            <td class="com_select"><span></span></td>
-                            <td><span>항목제한</span></td>
-                        </tr>
-                        <tr>
-                            <td class="mid_td"><span>관심/추천/업데이트 <b>알림</b></span></td>
-                            <td class="com_select"><span></span></td>
-                            <td class="not_select"><span></span></td>
+                            <td class="mid_td"><span>• 종목추천 + 관심종목 업데이트 <b>알림서비스</b></span></td>                            
                         </tr>
                     </tbody>
                 </table>
@@ -1657,12 +1720,8 @@
             <div class="pop_btm">
                 <div class="btnArea payBtn">
                     <!-- <a href="login_complete.html" class="btn btn_save"><b>프리미엄</b> 가입하기<i></i></a> -->
-                    <a href="login_complete.html" class="btn btn_save"><b>프리미엄 2주 무료체험</b><i></i></a>
-                </div>
-                <ul class="link_menu">
-                    <li><a href="stock/service_prm.html">[프리미엄자세히보기]</a></li>
-                    <li><a href="member/login_sns.html">[로그인]</a></li>
-                </ul>
+                    <a href="stock/service_prm.html" class="btn btn_save"><b>프리미엄 2주 무료체험</b><i></i></a>
+                </div>                
             </div>
         </div>
     </div>

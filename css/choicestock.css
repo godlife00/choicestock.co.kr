@@ -143,7 +143,7 @@ video {
 	padding: 0;
 	border: 0;
 	line-height: 100%;
-	font-family: 'Spoqa Han Sans Neo', "Malgun gothic", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: 'SpoqaHanSansNeo', 'Spoqa Han Sans Neo', "Malgun gothic", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	letter-spacing: -0.015rem;
 	color: #444;
 	vertical-align: baseline;
@@ -519,44 +519,28 @@ body {
 	height: 100%;
 }
 
-#footer.chous_footer .certification {
+#footer .certification {
 	padding: 19px 15px;
+	background-color: #fff;
 }
 
-#footer.chous_footer .certification ul {
+#footer .certification ul {
 	display: flex;
-	justify-content: space-between;
+	flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+	gap: 10px 12px;
 }
 
-#footer.chous_footer .certification ul:last-child {
-	margin-top: 15px;
+#footer .certification ul li {
+	flex: 1 1 30%;
+	text-align: center;
 }
 
-#footer.chous_footer .certification ul li {
-	flex: 1;
+#footer .certification ul li img {	
+	display: inline-block;	
 	width: auto;
-}
-
-#footer.chous_footer .certification ul li a {
-	width: auto;
-}
-
-#footer.chous_footer .certification ul li img {
-	display: inline-block;
-	width: auto;
-	max-height: 21px;
-	vertical-align: top;
-}
-
-#footer.chous_footer .certification ul li.cer_logo_02 img {
-	position: relative;
-	top: -3px;
-}
-
-#footer.chous_footer .certification ul li.cer_logo_06 img {
-	max-height: 28px;
-	position: relative;
-	top: -7px;
+	max-height: 22px;
 }
 
 #footer.chous_footer .notice,
@@ -2325,57 +2309,6 @@ table.tableRanking td {
 
 #footer .notice .sns_link .sns_naver img {
 	display: inline-block;
-	height: 100%;
-}
-
-#footer .certification {
-	background: #fff;
-	padding: 10px 10px;
-	text-align: center;
-}
-
-#footer .certification li {
-	display: inline-block;
-	width: calc(100% / 2 - 2px);
-	vertical-align: top;
-	box-sizing: border-box;
-}
-
-#footer .certification li:nth-child(1) {
-	width: calc(100% / 2 + 30px);
-	margin-right: 3px;
-}
-
-#footer .certification li:nth-child(2) {
-	width: calc(100% / 2 - 44px)
-}
-
-#footer .certification li span {
-	color: #949494;
-	font-size: 0.75rem;
-	letter-spacing: -1px;
-	line-height: 32px;
-	margin-right: 5px;
-}
-
-#footer .certification li a {
-	display: inline-block;
-	vertical-align: top;
-	text-align: center;
-	margin-top: 4px;
-}
-
-#footer .certification li:nth-child(1) a {
-	width: 94px;
-}
-
-#footer .certification li:nth-child(2) a {
-	width: 60px;
-}
-
-#footer .certification li a img {
-	display: inline-block;
-	width: 100%;
 	height: 100%;
 }
 
@@ -7137,13 +7070,21 @@ table.tableRanking td {
 	color: #333;
 	font-size: 0.9375rem;
 	line-height: 26px;
+	letter-spacing: normal;
 	word-break: break-all;
 	word-wrap: break-word;
+}
+
+.globalStock .sub_recom .sub_mid .tabsArea .tabs_two+.tab_container div a {
+	color: #06c;
+	text-decoration: none;
+	letter-spacing: normal;
 }
 
 .globalStock .sub_recom .sub_mid .tabsArea .tabs_two+.tab_container .tab_content p {
 	margin-bottom: 0;
 	padding: 0;
+	letter-spacing: normal;
 }
 
 .globalStock .sub_recom .sub_mid .tabsArea .tabs_two+.tab_container .tab_content ul {
@@ -7155,6 +7096,7 @@ table.tableRanking td {
 	font-size: 0.875rem;
 	padding-left: 13px;
 	line-height: 22px;
+	letter-spacing: normal;
 	position: relative;
 }
 
@@ -17690,13 +17632,13 @@ table.tableRanking td {
 
 .globalStock .first_month_3300.md-modal #setting .pop_con .tableRanking.type_compare th span,
 .globalStock .first_month_3300.md-modal #setting .pop_con .tableRanking.type_compare td span {
-	color: #939393;
-	font-size: 0.75rem;
-	line-height: 26px;
+	color: #444;
+	font-size: 0.875rem;
+	line-height: 29px;
 }
 
 .globalStock .first_month_3300.md-modal #setting .pop_con .tableRanking.type_compare td span b {
-	color: #939393;
+	color: #444;
 }
 
 .globalStock .first_month_3300.md-modal #setting .pop_con .tableRanking.type_compare .top_th {
@@ -19416,6 +19358,7 @@ table.tableRanking td {
 	color: #333;
 	font-size: 0.9375rem;
 	line-height: 26px;
+	letter-spacing: normal;
 	margin-bottom: 30px;
 	word-break: break-all;
 	word-wrap: break-word;
@@ -19431,11 +19374,12 @@ table.tableRanking td {
 .globalStock .sub_research .view_con .mid ol {
 	list-style: decimal;
 	padding-left: 15px;
+	letter-spacing: normal;
 }
 
 .globalStock .sub_research .view_con .mid ol li {
 	list-style: list-item;
-	;
+	letter-spacing: normal;
 }
 
 .globalStock .sub_research .view_con .mid blockquote:before,
@@ -19457,12 +19401,14 @@ table.tableRanking td {
 	color: #333;
 	font-size: 1rem;
 	line-height: 26px;
+	letter-spacing: normal;
 	margin-bottom: 30px;
 }
 
 .globalStock .sub_research .view_con .mid a {
-	color: #608bff;
-	text-decoration: underline;
+	color: #06c;
+	letter-spacing: normal;
+	text-decoration: none;
 }
 
 .globalStock .sub_research .view_con .mid+.go_list {
@@ -19471,6 +19417,7 @@ table.tableRanking td {
 	margin-top: 20px;
 	display: block;
 	text-align: right;
+	letter-spacing: normal;
 	margin-right: 15px;
 }
 
@@ -20867,63 +20814,6 @@ table.tableRanking td {
 	color: #82929f;
 	padding-bottom: 15px;
 	margin-top: 15px;
-}
-
-
-
-
-
-
-
-.globalStock #container+.certification {
-	background: #fff;
-	padding: 10px 15px;
-	margin-bottom: -25px;
-	text-align: center;
-}
-
-.globalStock #container+.certification li {
-	display: inline-block;
-	width: calc(100% / 2 - 2px);
-	vertical-align: top;
-	box-sizing: border-box;
-}
-
-.globalStock #container+.certification li:nth-child(1) {
-	width: calc(100% / 2 + 40px);
-}
-
-.globalStock #container+.certification li:nth-child(2) {
-	width: calc(100% / 2 - 52px)
-}
-
-.globalStock #container+.certification li span {
-	color: #949494;
-	font-size: 0.75rem;
-	letter-spacing: -1px;
-	line-height: 32px;
-	margin-right: 5px;
-}
-
-.globalStock #container+.certification li a {
-	display: inline-block;
-	vertical-align: top;
-	text-align: center;
-	margin-top: 4px;
-}
-
-.globalStock #container+.certification li:nth-child(1) a {
-	width: 94px;
-}
-
-.globalStock #container+.certification li:nth-child(2) a {
-	width: 60px;
-}
-
-.globalStock #container+.certification li a img {
-	display: inline-block;
-	width: 100%;
-	height: 100%;
 }
 
 /* 로그인 - 가입완료 */
@@ -28587,15 +28477,6 @@ table.tableRanking td {
 
 	.globalStock #header .headerTop .hm .go_sch {
 		width: 19px;
-	}
-
-	#footer .certification li {
-		display: block;
-	}
-
-	#footer .certification li:nth-child(1),
-	#footer .certification li:nth-child(2) {
-		width: 100%;
 	}
 
 	#footer.type_sub .notice .terms_list {
