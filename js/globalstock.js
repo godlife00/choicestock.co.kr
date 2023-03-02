@@ -1,4 +1,14 @@
 $(document).ready(function () {
+    
+    // 클릭 이벤트 테스트용으로 페이지 이동 막아놈
+    document.querySelectorAll('a').forEach(function (link) {
+        link.addEventListener('click', function (event) {
+            event.preventDefault();
+        });
+    });
+    // 클릭 이벤트 테스트용으로 페이지 이동 막아놈 끝
+    
+
     // 페이지 로드 완료후 이미지 노출
     $('.globalStock .main_mid.youtube_mijumi .video_thumbnail').show();
 

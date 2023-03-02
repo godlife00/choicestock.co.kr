@@ -1167,6 +1167,7 @@ table.tableRanking td {
 }
 
 .selectbox select {
+	cursor: pointer;
 	width: 100%;
 	height: auto;
 	box-sizing: border-box;
@@ -13307,6 +13308,7 @@ table.tableRanking td {
 }
 
 .globalStock .sub_search .sub_mid.tabs_area .evaluation_data .txt_guide img {
+	cursor: pointer;
 	display: inline-block;
 	width: 100%;
 }
@@ -15105,6 +15107,7 @@ table.tableRanking td {
 }
 
 .globalStock .sub_search .sub_mid.tabs_area .chart_area.diagnosis .chartData .charm .txt_guide img {
+	cursor: pointer;
 	display: inline-block;
 	width: 100%;
 }
@@ -16164,6 +16167,7 @@ table.tableRanking td {
 }
 
 .globalStock .sub_search .sub_mid.competitors_table .title_guide {
+	cursor: pointer;
 	display: inline-block;
 	width: 12px;
 	height: 12px;
@@ -19049,6 +19053,7 @@ table.tableRanking td {
 }
 
 .globalStock .sub_research .sub_mid.research_board .set span {
+	cursor: pointer;
 	color: #939393;
 	position: relative;
 	padding: 0 10px 0 10px;
@@ -20204,6 +20209,7 @@ table.tableRanking td {
 }
 
 .globalStock .sub_alarm .alarm_note .list li.txt .mod_btn {
+	cursor: pointer;
 	display: block;
 	border: 1px solid #404fc3;
 	border-radius: 3px;
@@ -20295,6 +20301,7 @@ table.tableRanking td {
 }
 
 .globalStock .sub_alarm .alarm_from .label label {
+	cursor: pointer;
 	display: block;
 	width: 40px;
 	height: 24px;
@@ -21399,6 +21406,7 @@ table.tableRanking td {
 }
 
 .globalStock .sub_login .mapage_area .mapage_form .form_table td .mod_btn {
+	cursor: pointer;
 	display: inline-block;
 	border: 1px solid #404fc3;
 	border-radius: 3px;
@@ -23079,6 +23087,7 @@ table.tableRanking td {
 
 .globalStock .sub_payment .mapage_form .form_table td .certification_area .certifi_btn,
 .globalStock .sub_payment .mapage_form .form_table td .certifi_btn {
+	cursor: pointer;
 	float: left;
 	vertical-align: top;
 	background: #404fc3;
@@ -33241,4 +33250,85 @@ table.tableRanking td {
 	text-align: center;
 	color: #82929f;	
 	margin-top: 15px;
+}
+
+/**** 클릭 이벤트 추가 ****/
+/* 파랑 박스 */
+.globalStock .main_top.recommend_area .recomlist_area .area:active {
+	/* background-color: #d2d4ee !important; */
+	filter: brightness(95%);
+	opacity: 0.95;	
+	position: relative;
+	top: 1px;
+	left: 1px;	
+}
+/* 흰색 박스 */
+.globalStock .main_mid.game_area .list_area .area:active {
+	/* background-color: #ededf5 !important; */
+	filter: brightness(95%);
+	opacity: 0.95;	
+	position: relative;
+	top: 1px;
+	left: 1px;	
+}
+/* 파랑 배너, 버튼 */
+.globalStock .banner_prm:active,
+.globalStock .main_mid.attention_area .one_step .more:active {
+	/* background-color: #303a8b !important; */
+	filter: brightness(85%);
+	opacity: 0.95;	
+	position: relative;
+	top: 1px;
+	left: 1px;	
+}
+
+.globalStock #header .headerTop .hm .btn_login:active{
+	position: relative;
+	top: 4px;
+	left: 1px;		
+}
+/* a 링크 전체적용 */
+.globalStock a:active {	
+	filter: brightness(95%);
+	position: relative;
+	top: 1px;
+	left: 1px;	
+}
+/* 백그라운드 없는 텍스트 링크 */
+.globalStock .type_2Line tr:active, 
+.globalStock .ptfo_table tr:active, 
+.globalStock .tableRanking.sum_table tr:active,
+.globalStock .tabs li:active,
+.globalStock .set span:active,
+.globalStock .sub_search .sub_mid.research_board .lst_type2:active,
+.globalStock .sub_research .popularity .lst_type2:active,
+.globalStock #footer .certification ul li:active,
+.globalStock .main_mid.note_area .lst_type2:active,
+.globalStock .sub_research .sub_mid.research_board .lst_type2:active,
+.globalStock .sub_briefing .popularity .lst_type2:active,
+.globalStock .main_searching .searchArea .searchInput:active,
+.globalStock .main_mid.event_recipe .recipe_tabs li span:active,
+.globalStock .sub_login .mapage_area .mapage_form .form_table td .mod_btn:active,
+.globalStock .sub_login .mapage_area .mapage_form .form_table .phonePin_form .pinInput:active,
+.globalStock .sub_login .mapage_area .mapage_form .form_table .phonePin_form .pinInput_out:active,
+.globalStock .sub_payment .serviceStep .step_box:active,
+.globalStock #header .his_back img:active {	
+	filter: brightness(95%);
+	position: relative;
+	top: 1px;
+	left: 1px;		
+}
+.globalStock .sub_login .agree_area .agree_from .label .terms_btn:active {
+	top: -2px;
+	left: 1px;		
+}
+.globalStock .sub_login .agree_area .agree_from .phonePin_form .pinBtn:active,
+.globalStock .sub_login .agree_area .agree_from .phonePin_form .pin_completion:active {
+	right: 41px;
+    top: 7px;
+}
+.globalStock .sub_login .mapage_area .mapage_form .form_table .phonePin_form .pinBtn:active,
+.globalStock .sub_login .mapage_area .mapage_form .form_table .phonePin_form .pin_completion:active {
+	right: 8px;
+    top: 7px;
 }
