@@ -1,11 +1,11 @@
 $(document).ready(function () {
     
     // 클릭 이벤트 테스트용으로 페이지 이동 막아놈
-    document.querySelectorAll('a').forEach(function (link) {
-        link.addEventListener('click', function (event) {
-            event.preventDefault();
-        });
-    });
+    // document.querySelectorAll('a').forEach(function (link) {
+    //     link.addEventListener('click', function (event) {
+    //         event.preventDefault();
+    //     });
+    // });
     // 클릭 이벤트 테스트용으로 페이지 이동 막아놈 끝
     
 

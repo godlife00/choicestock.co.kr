@@ -15406,6 +15406,7 @@ table.tableRanking td {
 }
 
 .globalStock .sub_search .sub_mid .search_financials_area .tabs_menu span {
+	cursor: pointer;
 	color: #939393;
 	display: inline-block;
 	padding: 1px 7px;
@@ -33281,11 +33282,19 @@ table.tableRanking td {
 	top: 1px;
 	left: 1px;	
 }
-
 .globalStock #header .headerTop .hm .btn_login:active{
 	position: relative;
 	top: 4px;
 	left: 1px;		
+}
+.globalStock #header .headerTop .hm .go_briefing:active{
+	position: relative;
+	left: auto;
+	right: -1px;
+    top: 1px;
+}
+.globalStock #header .headerTop .hm .go_briefing:active img{
+	height: 21px;
 }
 /* a 링크 전체적용 */
 .globalStock a:active {	
@@ -33295,18 +33304,18 @@ table.tableRanking td {
 	left: 1px;	
 }
 /* 백그라운드 없는 텍스트 링크 */
-.globalStock .type_2Line tr:active, 
-.globalStock .ptfo_table tr:active, 
-.globalStock .tableRanking.sum_table tr:active,
 .globalStock .tabs li:active,
 .globalStock .set span:active,
+.globalStock .tabs_menu span:active,
+.globalStock i.attention:active,
+.globalStock .prm_div .box:active,
 .globalStock .sub_search .sub_mid.research_board .lst_type2:active,
 .globalStock .sub_research .popularity .lst_type2:active,
 .globalStock #footer .certification ul li:active,
 .globalStock .main_mid.note_area .lst_type2:active,
 .globalStock .sub_research .sub_mid.research_board .lst_type2:active,
 .globalStock .sub_briefing .popularity .lst_type2:active,
-.globalStock .main_searching .searchArea .searchInput:active,
+.globalStock .searchArea .searchInput:active,
 .globalStock .main_mid.event_recipe .recipe_tabs li span:active,
 .globalStock .sub_login .mapage_area .mapage_form .form_table td .mod_btn:active,
 .globalStock .sub_login .mapage_area .mapage_form .form_table .phonePin_form .pinInput:active,
@@ -33317,6 +33326,11 @@ table.tableRanking td {
 	position: relative;
 	top: 1px;
 	left: 1px;		
+}
+.globalStock .sub_search .latest_results .tabsArea .onestep_sample .box:active {
+	top: auto;
+	left: 15px;
+	bottom: 14px;
 }
 .globalStock .sub_login .agree_area .agree_from .label .terms_btn:active {
 	top: -2px;
@@ -33331,4 +33345,12 @@ table.tableRanking td {
 .globalStock .sub_login .mapage_area .mapage_form .form_table .phonePin_form .pin_completion:active {
 	right: 8px;
     top: 7px;
+}
+.globalStock #setting .pop_header .close:active {
+	left: auto;
+	right: 14px;
+    top: 16px;	
+}
+.globalStock .txt_guide:active {
+	filter: brightness(85%);	
 }
