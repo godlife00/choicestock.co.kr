@@ -1120,10 +1120,32 @@ $(document).ready(function () {
             $(this).attr("src", source + "?v=" + Math.random()).removeAttr("data-src");            
         });        
     }
-    lodSmallSrc();
-    
+    lodSmallSrc();    
     
 });
+
+// 진단점수 그래프바 에니메이션 효과
+(function( $ ) {
+    $(function() {
+        function animated_contents() {
+            $(".zt-skill-bar > div ").each(function (i) {
+                var $this  = $(this),
+                    skills = $this.data('width');
+
+                $this.css({'width' : skills + '%'});
+
+            });
+        }
+        
+        if(jQuery().appear) {
+            $('.zt-skill-bar').appear().on('appear', function() {
+                animated_contents();
+            });
+        } else {
+            animated_contents();
+        }
+    });
+}(jQuery)); 
 
 // img Lazy Loading    
 document.addEventListener("DOMContentLoaded", function() {
