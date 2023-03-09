@@ -1,19 +1,10 @@
 $(document).ready(function () {
-    
-    // 클릭 이벤트 테스트용으로 페이지 이동 막아놈
-    // document.querySelectorAll('a').forEach(function (link) {
-    //     link.addEventListener('click', function (event) {
-    //         event.preventDefault();
-    //     });
-    // });
-    // 클릭 이벤트 테스트용으로 페이지 이동 막아놈 끝
-    
-    var mouse_touch = ".globalStock a, .globalStock .tabs li, .globalStock .set span, .globalStock .tabs_menu span, .globalStock i.attention, .globalStock .prm_div .box, .globalStock .sub_search .sub_mid.research_board .lst_type2, .globalStock .sub_research .popularity .lst_type2, .globalStock #footer .certification ul li, .globalStock .main_mid.note_area .lst_type2, .globalStock .sub_research .sub_mid.research_board .lst_type2, .globalStock .sub_briefing .popularity .lst_type2, .globalStock .searchArea .searchInput, .globalStock .main_mid.event_recipe .recipe_tabs li span, .globalStock .sub_login .mapage_area .mapage_form .form_table td .mod_btn, .globalStock .sub_login .mapage_area .mapage_form .form_table .phonePin_form .pinInput, .globalStock .sub_login .mapage_area .mapage_form .form_table .phonePin_form .pinInput_out, .globalStock .sub_payment .serviceStep .step_box, .globalStock #header .his_back img, .globalStock .main_top.recommend_area .recomlist_area .area, .globalStock .main_mid.game_area .list_area .area, .globalStock .banner_prm, .globalStock .main_mid.attention_area .one_step .more, .globalStock #header .headerTop .hm .btn_login, .globalStock #header .headerTop .hm .go_briefing";
+    var mouse_touch = ".globalStock a, .globalStock .tabs li, .globalStock .set span, .globalStock .tabs_menu span, .globalStock i.attention, .globalStock .prm_div .box, .globalStock .sub_search .sub_mid.research_board .lst_type2, .globalStock .sub_research .popularity .lst_type2, .globalStock #footer .certification ul li, .globalStock .main_mid.note_area .lst_type2, .globalStock .sub_research .sub_mid.research_board .lst_type2, .globalStock .sub_briefing .popularity .lst_type2, .globalStock .searchArea .searchInput, .globalStock .main_mid.event_recipe .recipe_tabs li span, .globalStock .sub_login .mapage_area .mapage_form .form_table td .mod_btn, .globalStock .sub_login .mapage_area .mapage_form .form_table .phonePin_form .pinInput, .globalStock .sub_login .mapage_area .mapage_form .form_table .phonePin_form .pinInput_out, .globalStock .sub_payment .serviceStep .step_box, .globalStock #header .his_back img, .globalStock .main_top.recommend_area .recomlist_area .area, .globalStock .main_mid.game_area .list_area .area, .globalStock .banner_prm, .globalStock .main_mid.attention_area .one_step .more, .globalStock #header .headerTop .hm .btn_login, .globalStock #header .headerTop .hm .go_briefing"
     $(mouse_touch).on("mousedown touchstart", function () {
         $(this).addClass("mouse_touch");
     }).on("mousemove touchmove mouseup touchend", function () {
         $(this).removeClass("mouse_touch");
-    });    
+    });
 
     // 페이지 로드 완료후 이미지 노출
     $('.globalStock .main_mid.youtube_mijumi .video_thumbnail').show();
@@ -378,6 +369,10 @@ $(document).ready(function () {
     });
 
     //종목검색 상단
+    $('.globalStock .sub_search .sub_mid.adequateArea .listWrap .mid .charm_num .txt_guide').on("click", function () {
+        $('.guide_layer').css({ 'z-index': 9997 });
+        $('.globalStock .sub_search .sub_mid.adequateArea .listWrap .mid .charm_num .guide_box').show();
+    });
     $('.globalStock .sub_search .sub_mid.tabs_area .chart_area.diagnosis .chartData .charm .txt_guide').on("click", function () {
         $('.guide_layer').css({ 'z-index': 9997 });
         $('.globalStock .sub_search .sub_mid.tabs_area .chart_area.diagnosis .chartData .charm .guide_box').show();
@@ -1114,88 +1109,30 @@ $(document).ready(function () {
         return $(this).attr('src') + "?v=" + Math.random()
     });
     // 저용량 이미지 로드 후 src 반영    
-    function lodSmallSrc() {        
+    function lodSmallSrc() {
         $('img.s_img').each(function () {
-            var source = $(this).attr("data-src");        
-            $(this).attr("src", source + "?v=" + Math.random()).removeAttr("data-src");            
-        });        
+            var source = $(this).attr("data-src");
+            $(this).attr("src", source + "?v=" + Math.random()).removeAttr("data-src");
+        });
     }
-    lodSmallSrc();    
+    lodSmallSrc();
+
+    // 비로그인, 무료회원 서비스 
+    setTimeout(function () {
+        $('.premiumLock_cunt').addClass('on');
+    }, 400);
+
+    var hideTimer;
+
+    $(window).on('scroll', function() {
+    // 스크롤 동작 중인 경우
+    $('.premiumLock_cunt').removeClass('on');
+
+    // 스크롤 동작이 멈춘 경우
+    clearTimeout(hideTimer);
+    hideTimer = setTimeout(function() {
+        $('.premiumLock_cunt').addClass('on');
+    }, 400); // 250ms 동안 스크롤 동작이 없으면 보여줌
+    });
     
 });
-
-// 진단점수 그래프바 에니메이션 효과
-(function( $ ) {
-    $(function() {
-        function animated_contents() {
-            $(".zt-skill-bar > div ").each(function (i) {
-                var $this  = $(this),
-                    skills = $this.data('width');
-
-                $this.css({'width' : skills + '%'});
-
-            });
-        }
-        
-        if(jQuery().appear) {
-            $('.zt-skill-bar').appear().on('appear', function() {
-                animated_contents();
-            });
-        } else {
-            animated_contents();
-        }
-    });
-}(jQuery)); 
-
-// img Lazy Loading    
-document.addEventListener("DOMContentLoaded", function() {
-    var lazyloadImages;    
-  
-    if ("IntersectionObserver" in window) {
-      lazyloadImages = document.querySelectorAll(".lazy");
-      var imageObserver = new IntersectionObserver(function(entries, observer) {
-        entries.forEach(function(entry) {
-          if (entry.isIntersecting) {
-            var image = entry.target;
-            image.src = image.dataset.src;
-            image.classList.remove("lazy");
-            imageObserver.unobserve(image);
-          }
-        });
-      });
-  
-      lazyloadImages.forEach(function(image) {
-        imageObserver.observe(image);
-      });
-    } else {  
-      var lazyloadThrottleTimeout;
-      lazyloadImages = document.querySelectorAll(".lazy");
-      
-      function lazyload () {
-        if(lazyloadThrottleTimeout) {
-          clearTimeout(lazyloadThrottleTimeout);
-        }    
-  
-        lazyloadThrottleTimeout = setTimeout(function() {
-          var scrollTop = window.pageYOffset;
-          lazyloadImages.forEach(function(img) {
-              if(img.offsetTop < (window.innerHeight + scrollTop)) {
-                img.src = img.dataset.src;
-                img.classList.remove('lazy');
-              }
-          });
-          if(lazyloadImages.length == 0) { 
-            document.removeEventListener("scroll", lazyload);
-            window.removeEventListener("resize", lazyload);
-            window.removeEventListener("orientationChange", lazyload);
-          }
-        }, 20);
-      }
-  
-      document.addEventListener("scroll", lazyload);
-      window.addEventListener("resize", lazyload);
-      window.addEventListener("orientationChange", lazyload);
-    }
-  })
-  
-  

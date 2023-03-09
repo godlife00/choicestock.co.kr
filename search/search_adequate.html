@@ -28,7 +28,7 @@
     <script src="../node_modules/highcharts/modules/data.js"></script>
     <script src="../node_modules/highcharts/modules/hollowcandlestick.js"></script>
     <script src="../node_modules/highcharts/modules/no-data-to-display.js"></script>
-    <script src="../node_modules/highcharts/modules/treemap.js"></script>    
+    <script src="../node_modules/highcharts/modules/treemap.js"></script>
     <script src="../node_modules/highcharts/modules/exporting.js"></script>
     <script src="../node_modules/highcharts/modules/export-data.js"></script>
     <script src="../node_modules/highcharts/modules/accessibility.js"></script>
@@ -298,7 +298,40 @@
                                 <div class="nodata_area">
                                     <div class="no_data">밸류에이션 데이터부족</div>
 
-                                    <div class="line">                                        
+                                    <div class="line">
+                                        <span class="g_action g_buying"></span><!-- 매우저평가 -->
+                                        <span class="g_action" style="left: 50%;"></span><!-- 적정가 -->
+                                        <span class="g_action g_sell"></span><!-- 매우고평가 -->
+                                    </div>
+                                    <div class="adequate">
+                                        <span class="remark">
+                                            <div class="txt_filter size_B"><i></i><i></i><i></i><i></i></div>
+                                        </span>
+                                    </div>
+
+                                </div>
+                                <!-- //nodata_area -->
+                            </div>
+                            <!-- //adequate_price -->
+                        </div>
+                    </div>
+                </div>
+                <!-- //adequate_stock -->
+
+                <!-- 무료회원 -->
+                <div class="adequate_stock premiumLock_AI">
+                    <div class="box">
+                        <p class="title"><a href="">AI적정주가</a></p>
+                        <div class="con">
+                            <div class="adequate_price">
+                                <div class="nodata_area">
+                                    <div class="no_data">
+                                        <a href="#" onclick="event.preventDefault()"; data-modal="modal-5" class="md-trigger">
+                                            프리미엄 가입
+                                        </a> 
+                                    </div>
+
+                                    <div class="line">
                                         <span class="g_action g_buying"></span><!-- 매우저평가 -->
                                         <span class="g_action" style="left: 50%;"></span><!-- 적정가 -->
                                         <span class="g_action g_sell"></span><!-- 매우고평가 -->
@@ -329,6 +362,24 @@
                         <div id="sum_topchart_band" class="chart_layout"></div>
                     </div>
 
+                    <!-- 밴드차트 마스킹 freeChare -->
+                    <div class="freeChare">
+                        <!-- 프리미엄 서비스 사용자가 아닌 경우 -->
+                        <div class="prm_div weeks_free">
+                            <div class="box">
+                                <div class="left">
+                                    <p class="title">적정주가 - 흐름을 알면 매매타이밍이 보입니다.</p>
+                                    <p class="txt">프리미엄 서비스를 제한없이 마음껏 이용하세요.</p>
+                                </div>
+                                <div class="right">
+                                    <p><a href="../payment/step01.html" class="btn_free">프리미엄 가입</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- //프리미엄 서비스 사용자가 아닌 경우 -->                                                
+                    </div>
+                    <!-- //freeChare -->
+
                     <div class="tableData">
                         <table cellspacing="0" border="1" class="tableRanking sum_table">
                             <thead>
@@ -351,9 +402,27 @@
                                 <tr>
                                     <td class="name">20. 02/22</td>
                                     <td><b>134,249</b></td>
-                                    <td>15</td>
-                                    <td>233.25</td>
-                                    <td>333.25</td>
+                                    <td>
+                                        <a href="#" onclick="event.preventDefault()"; data-modal="modal-5" class="md-trigger">
+                                            <span class="remark">
+                                                <div class="txt_filter size_B"><i></i><i></i><i></i><i></i></div>
+                                            </span>
+                                        </a>    
+                                    </td>
+                                    <td>
+                                        <a href="#" onclick="event.preventDefault()"; data-modal="modal-5" class="md-trigger">
+                                            <span class="remark">
+                                                <div class="txt_filter size_B"><i></i><i></i><i></i><i></i></div>
+                                            </span>
+                                        </a>    
+                                    </td>
+                                    <td>
+                                        <a href="#" onclick="event.preventDefault()"; data-modal="modal-5" class="md-trigger">
+                                            <span class="remark">
+                                                <div class="txt_filter size_B"><i></i><i></i><i></i><i></i></div>
+                                            </span>
+                                        </a>    
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td class="name">20. 02/22</td>
@@ -420,13 +489,29 @@
                                 증권사의 목표가 컨센서스(평균)와 달리, 국내에서 유일하게 미국기업의 적정주가를 직접 계산해 제공하고 있습니다.</li>
                         </ul>
                     </div>
-                    <p class="guide">초이스스탁US에서 제공하는 투자매력 점수가 우량 기업이고, 저평가 상태에 있는 종목에 투자하는 것이 좋습니다.</p>                    
-                    <a href="https://www.choicestock.co.kr/stock/vod_view/93" class="youtube_link" target="_blank"><i></i>매매 타이밍을 쉽게 잡을 수 있는 적정주가 매매전략</a>
+                    <p class="guide">초이스스탁US에서 제공하는 투자매력 점수가 우량 기업이고, 저평가 상태에 있는 종목에 투자하는 것이 좋습니다.</p>
+                    <a href="https://www.choicestock.co.kr/stock/vod_view/93" class="youtube_link"
+                        target="_blank"><i></i>매매 타이밍을 쉽게 잡을 수 있는 적정주가 매매전략</a>
                     <!-- <a href="https://youtu.be/rGb3ZmSbcFc" class="youtube_link" target="_blank"><i></i>매매 타이밍을 쉽게 잡을 수 있는 적정주가 매매전략</a> 한경앱에선 유튜브 링크 -->
                 </div>
                 <!-- //bandchart_sume -->
             </div>
             <!-- //sub_mid -->
+
+            <div class="premiumLock_cunt" style="bottom: 140px;"> <!--  bottom 값은 문구 확인용으로 들어간 코드라 실제 반영시는 제거해주세요 -->
+                <!-- 비 로그인 -->
+                <div class="more">                                                
+                    매매신호 /<span class="">종목진단 매일 3건 무료</span>
+                    <a href="../member/login_sns.html" class="go_link">회원가입</a>
+                </div>                    
+            </div>
+            <div class="premiumLock_cunt">
+                <!-- 무료회원 -->
+                <div class="more">                                                
+                    종목진단 / 적정주가 2건 / <span class="">매일 3건 무료</span>
+                    <a href="../payment/step01.html" class="go_link">무제한</a>
+                </div>                    
+            </div>
         </div>
         <!-- //container -->
 
@@ -480,3 +565,58 @@
     <!-- //wrap -->
 
 </body>
+
+
+<!-- [첫달 3,000] 초이스스탁US 프리미엄 첫달 3,000원 -->
+<div class="first_month_3300 md-modal md-effect-3" id="modal-5">
+    <!-- class : md-show 가 없는 경우 팝업 숨김, md-show 있는 경우 팝업 노출  -->
+    <div class="md-content">
+        <div id="setting" class="setting_area">
+            <div class="pop_header">
+                <a href="#setting_anchor" title="로그인 레이어 닫기" class="close"><img src="../img/clse_w.png" alt="팝업닫기"></a>
+                <div class="sub_top">
+                    <h2 class="h2_title">초이스스탁US 프리미엄<span><strong>로그인만하면 2주 무료!</strong></span></h2>
+                    <p class="period">미국주식 추천과 분석, 알림까지 한번에!</p>
+                </div>
+            </div>
+            <!-- //pop_header -->
+            <div class="pop_con">
+                <table cellspacing="0" border="0" class="tableRanking type_compare">
+                    <tbody>
+                        <tr>
+                            <td class="mid_td"><span>• 5분이면 끝! 매력적인 종목을 한눈에 <b>종목진단</b></span></td>
+                        </tr>
+                        <tr>
+                            <td class="mid_td"><span>• 엄선된 저평가 우량주만 콕! <b>종목추천/포트폴리오</b></span></td>
+                        </tr>
+                        <tr>
+                            <td class="mid_td"><span>• 투자매력 + 저평가 + 수급 <b>오늘의 승부주</b></span></td>
+                        </tr>
+                        <tr>
+                            <td class="mid_td"><span>• 투자매력주의 매매판단을 빠르게! <b>AI적정주가</b></span></td>
+                        </tr>
+                        <tr>
+                            <td class="mid_td"><span>• 나만의 취향저격 종목추천 <b>종목캐치</b></span></td>
+                        </tr>
+                        <tr>
+                            <td class="mid_td"><span>• 관심종목/보유종목 모니터링 <b>관심종목/원스톱진단</b></span></td>
+                        </tr>
+                        <tr>
+                            <td class="mid_td"><span>• 종목추천 + 관심종목 업데이트 <b>알림서비스</b></span></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+            <div class="pop_btm">
+                <div class="btnArea payBtn">
+                    <!-- <a href="login_complete.html" class="btn btn_save"><b>프리미엄</b> 가입하기<i></i></a> -->
+                    <a href="stock/service_prm.html" class="btn btn_save"><b>프리미엄 2주 무료체험</b><i></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="md-overlay"></div><!-- the overlay element -->
+
+</html>

@@ -187,24 +187,28 @@
 
                             <!-- 원스톱 진단 샘플화면 -->
                             <div class="onestep_sample">
-                                <a href="#" data-modal="modal-3" class="sample_box md-trigger">
+                                <a href="#" onclick="event.preventDefault()" ;="" data-modal="modal-5" class="sample_box md-trigger">
                                     <strong>원스톱 진단</strong>샘플화면입니다.
                                 </a>
 
-                                <!-- 프리미엄 서비스 사용자가 아닌 경우 -->
-                                <div class="box">
-                                    <div class="left">
-                                        <p class="title"><i></i>초이스스탁US 프리미엄</p>
-                                        <p class="txt">모든 서비스를 제한없이 이용하실 수 있습니다.</p>
-                                    </div>
-                                    <div class="right">
-                                        <p><a href="#" class="btn_free">2주 무료보기<i></i></a></p>
-                                        <p><a href="../stock/service.html" class="go_link">[서비스 안내]</a></p>
+                                <!-- 비회원인 경우 노출, 무료회원은 공개임 -->
+                                <div class="prm_div weeks_free">
+                                    <div class="box">
+                                        <div class="left">
+                                            <p class="title">당신의 종목은 안녕하신가요?</p>
+                                            <p class="txt">지금 회원가입하고, 관심종목-원스톱진단을 무료로 이용하세요!</p>
+                                        </div>
+                                        <div class="right">
+                                            <p><a href="../member/login_sns.html" class="btn_free">회원가입</a></p>
+                                        </div>
                                     </div>
                                 </div>
-                                <!-- //프리미엄 서비스 사용자가 아닌 경우 -->
+                                <!-- //비회원인 경우 노출, 무료회원은 공개임 -->      
+
                             </div>
                             <!-- //onestep_sample -->
+
+                            <br>
 
                             <table cellspacing="0" border="0" class="tableRanking type_2Line">
                                 <colgroup>
@@ -215,12 +219,27 @@
                                 </colgroup>
                                 <tbody>
                                     <tr>
-                                        <td class="title"><a href="search_diagnosis.html">애<span class="remark">* * *
-                                                    *</span><span class="ticker">AAPL</span></a>
+                                        <td class="title">
+                                            <a href="#" onclick="event.preventDefault()" data-modal="modal-5"  data-modal="modal-5" class="md-trigger">
+                                                마<span class="remark">
+                                                    <div class="txt_filter size_M"><i></i><i></i><i></i><i></i>
+                                                    </div>
+                                                </span>
+                                        
+                                                <span class="ticker"><span class="remark">
+                                                        <div class="txt_filter size_S"><i></i><i></i><i></i><i></i>
+                                                        </div>
+                                                    </span>
+                                                </span>
+                                            </a>
                                         </td>
-                                        <td class="num">
-                                            <span>69.<b>00</b></span>
-                                            <span class="increase">+2.9<b>%</b></span><!-- increase 증가, decrease 감소 -->
+                                        <td class="num">                                            
+                                            <a href="#" onclick="event.preventDefault()" data-modal="modal-5"  data-modal="modal-5" class="md-trigger">
+                                                <span class="remark">
+                                                    <div class="txt_filter size_M" style="padding-top: 12px;"><i></i><i></i><i></i><i></i>
+                                                    </div>
+                                                </span>
+                                            </a>
                                         </td>
                                         <td class="score"><span>67<b>점</b></span></td>
                                         <!-- 프리미엄 서비스 부분 -->
@@ -228,20 +247,7 @@
                                             <span><img src="../img/prm_lock.png" alt="잠김"></span>
                                         </td>
                                         <!-- //프리미엄 서비스 부분 -->
-                                    </tr>
-                                    <tr>
-                                        <td class="title"><a href="search_diagnosis.html">넷<span class="remark">* * *
-                                                    *</span><span class="ticker">AAPL</span></a>
-                                        </td>
-                                        <td class="num">
-                                            <span>69.<b>00</b></span>
-                                            <span class="decrease">-2.9<b>%</b></span><!-- increase 증가, decrease 감소 -->
-                                        </td>
-                                        <td class="score"><span>67<b>점</b></span></td>
-                                        <td class="num">
-                                            <span class="na">N/A</span>
-                                        </td>
-                                    </tr>
+                                    </tr>                                    
                                     <tr>
                                         <td class="title"><a href="search_diagnosis.html">애질런트 테크놀러지스<span
                                                     class="ticker">AAPL</span></a>
@@ -500,5 +506,58 @@
     </div>
     <!-- //wrap -->
 </body>
+
+
+<!-- [첫달 3,000] 초이스스탁US 프리미엄 첫달 3,000원 -->
+<div class="first_month_3300 md-modal md-effect-3" id="modal-5">
+    <!-- class : md-show 가 없는 경우 팝업 숨김, md-show 있는 경우 팝업 노출  -->
+    <div class="md-content">
+        <div id="setting" class="setting_area">
+            <div class="pop_header">
+                <a href="#setting_anchor" title="로그인 레이어 닫기" class="close"><img src="../img/clse_w.png" alt="팝업닫기"></a>
+                <div class="sub_top">
+                    <h2 class="h2_title">초이스스탁US 프리미엄<span><strong>로그인만하면 2주 무료!</strong></span></h2>
+                    <p class="period">미국주식 추천과 분석, 알림까지 한번에!</p>
+                </div>
+            </div>
+            <!-- //pop_header -->
+            <div class="pop_con">
+                <table cellspacing="0" border="0" class="tableRanking type_compare">
+                    <tbody>
+                        <tr>
+                            <td class="mid_td"><span>• 5분이면 끝! 매력적인 종목을 한눈에 <b>종목진단</b></span></td>
+                        </tr>
+                        <tr>
+                            <td class="mid_td"><span>• 엄선된 저평가 우량주만 콕! <b>종목추천/포트폴리오</b></span></td>
+                        </tr>
+                        <tr>
+                            <td class="mid_td"><span>• 투자매력 + 저평가 + 수급 <b>오늘의 승부주</b></span></td>
+                        </tr>
+                        <tr>
+                            <td class="mid_td"><span>• 투자매력주의 매매판단을 빠르게! <b>AI적정주가</b></span></td>
+                        </tr>
+                        <tr>
+                            <td class="mid_td"><span>• 나만의 취향저격 종목추천 <b>종목캐치</b></span></td>
+                        </tr>
+                        <tr>
+                            <td class="mid_td"><span>• 관심종목/보유종목 모니터링 <b>관심종목/원스톱진단</b></span></td>
+                        </tr>
+                        <tr>
+                            <td class="mid_td"><span>• 종목추천 + 관심종목 업데이트 <b>알림서비스</b></span></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+            <div class="pop_btm">
+                <div class="btnArea payBtn">
+                    <!-- <a href="login_complete.html" class="btn btn_save"><b>프리미엄</b> 가입하기<i></i></a> -->
+                    <a href="stock/service_prm.html" class="btn btn_save"><b>프리미엄 2주 무료체험</b><i></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="md-overlay"></div><!-- the overlay element -->
 
 </html>
