@@ -273,14 +273,18 @@ input[type=number],
 input[type=tel] {
 	border-radius: 0;
 	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
 	border: none;
 }
 
 input:checked[type=checkbox] {
+	appearance: checkbox;
 	-webkit-appearance: checkbox
 }
 
 input:checked[type=radio] {
+	appearance: checkbox;
 	-webkit-appearance: checkbox
 }
 
@@ -290,6 +294,7 @@ input[type=submit],
 input[type=reset],
 input[type=file] {
 	border-radius: 0;
+	appearance: button;
 	-webkit-appearance: button
 }
 
@@ -319,10 +324,12 @@ optgroup {
 textarea {
 	overflow: auto;
 	border: 1px solid #bcbcbc;
+	appearance: none;
 	-webkit-appearance: none
 }
 
 select {
+	appearance: none;
 	-webkit-appearance: none
 }
 
@@ -30024,7 +30031,7 @@ table.tableRanking td {
 	margin-left: 15px;
 	margin-top: 9px;
 	display: inline-block;
-	float: left;
+	/* float: left; */
 	width: calc(100% - 110px);
 	padding-right: 0;
 	position: relative;
