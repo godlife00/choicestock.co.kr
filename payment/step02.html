@@ -69,43 +69,70 @@
             <div class="serviceStep step01">
                 <div class="step_top">
                     <h2 class="step_title">결제하기</h2>
-                    <a href="http://www.itooza.com/ads/popup/card_event.html" class="btn_cardEvent"
-                        onclick="window.open('https://pg.nicepay.co.kr/shared/info.html', 'location', 'width=420, height=700, scrollbars=yes'); return false;">
+                    <a href="http://www.itooza.com/ads/popup/card_event.html" class="btn_cardEvent" onclick="window.open('https://pg.nicepay.co.kr/shared/info.html', 'location', 'width=420, height=700, scrollbars=yes'); return false;">
                         <img src="../img/btn_cardEvent..png" alt="카드 무이자 할부 안내">
                     </a>
                 </div>
                 <!-- //step_top -->
 
-                <div class="step_box active event_1year">
-                    <!-- 1주년 900원 이벤트 class = event_1year -->
-                    <h3 class="title">월 정기결제 <span class="way">&nbsp;</span></h3>
+                <!-- 연간 정기결제 12개월 -->
+                <div class="step_box routine_pay active">
+                    <h3 class="title">연간플랜(12개월)</h3>
                     <div class="payRight">
-                        <span class="pay01">55,000<b>원</b><span class="pay_sale"><strong>신규결제</strong> 할인!</span></span>
-                        <span class="pay02">3,300<b>원</b></span>
-                        <div class="txt_line">
-                            <p class="txt"><strong>신규 월 정기결제 시 프리미엄 서비스를 한달 간 3,300원에 이용</strong> 할 수 있으며, 둘째 달 부터는 매월 33,000원(정상가에서 40%할인)으로 자동 결제됩니다.</p>                            
-                            <p class="txt"><strong>약정 기간 없이 언제든 해지 가능합니다.</strong></p>
-                        </div>
+                        <span class="pay01">660,000<b>원</b></span>
+                        <span class="pay02">300,000<b>원</b>
+                            <span class="pay_sale">
+                                <strong>(54%할인!),</strong>
+                                <span class="month_dvsion">월 25,000원</span>
+                            </span>
+                        </span>
                     </div>
                     <!-- //payRight -->
                 </div>
                 <!-- //step_box -->
 
-                <div class="step_box active event_1year" style="display: none;">
-                    <!-- 1주년 900원 이벤트 class = event_1year -->
-                    <h3 class="title">월 정기결제 <span class="way">&nbsp;</span></h3>
+                <!-- 월간 정기결제 1개월 -->
+                <div class="step_box routine_pay">
+                    <h3 class="title">월간플랜(1개월)</h3>
                     <div class="payRight">
-                        <span class="pay01">55,000<b>원</b><span class="pay_sale">40% 할인!</span></span>
-                        <span class="pay02">33,000<b>원</b></span>
-                        <div class="txt_line">
-                            <p class="txt"><strong>월 정기결제시 프리미엄 서비스를 40% 할인된 금액에 이용</strong> 할 수 있습니다. (월 33,000원)</p>                            
-                            <p class="txt">월 정기 결제는 신용카드 결제만 가능합니다.</p>
-                            <p class="txt"><strong>약정 기간 없이 언제든 해지 가능합니다.</strong></p>
-                        </div>
+                        <span class="pay01">55,000<b>원</b></span>
+                        <span class="pay02">33,000<b>원</b>
+                            <span class="pay_sale">
+                                <strong>(40%할인!),</strong>
+                                <span class="month_dvsion">월 33,000원</span>
+                            </span>
+                        </span>
                     </div>
                     <!-- //payRight -->
                 </div>
                 <!-- //step_box -->
+
+                <div class="txt_line">
+                    <p class="txt"><strong>정기결제는 <u>해당 기간 만료시, 같은 기간으로 자동 결제가 진행됩니다.</u></strong></p>
+                    <p class="txt">월 정기 결제는 신용카드와 체크카드 결제가 가능합니다.</p>
+                    <p class="txt"><strong>약정 기간 없이 언제든 해지 가능합니다.</strong></p>
+                </div>
+
+                <div class="step_top">
+                    <h2 class="step_title">기간결제</h2>
+                    <span class="way">신용카드, 체크카드, 가상계좌(무통장), 계좌이체</span>
+                </div>
+
+                <!-- 월간 기간결제 1개월  -->
+                <div class="step_box period_pay active">
+                    <h3 class="title">1개월 기간 결제</h3>
+                    <div class="payRight">
+                        <span class="pay02">55,000<b>원</b></span>
+                    </div>
+                    <!-- //payRight -->
+                </div>
+                <!-- //step_box -->
+
+                <div class="txt_line">
+                    <p class="txt">정기결제는 해당 기간 만료시, 같은 기간으로 자동 결제가 진행됩니다.</p>                                                  
+                    <p class="txt"><strong>약정 기간 없이 언제든 해지 가능합니다.</strong></p>
+                </div>
+
             </div>
             <!-- //serviceStep -->
 
@@ -154,29 +181,47 @@
             </div>
 
             <div class="payment_note">
+                <!-- 정기-연간플랜 -->                    
                 <h4 class="h4_title">[ 서비스 결제 유의사항 ]</h4>
-                <strong>월 정기결제</strong>
-                 <ul class="note">
-                    <li><span>정기결제는 1개월 단위로 제공</span>되며 <strong>구매하신 날과 매월 동일 한 날짜에 결제</strong>가 이루어집니다</li>
-                    <li>결제 일자가 특정 월에 포함되지 않은 경우(예: 31일)에는 <span>해당 월의 마지막날에 청구</span>됩니다.</li>
-                    <li>월정기결제는 언제든 해지할 수 있습니다.
-                        월정기결제 해지 시 잔여 일이 있으면, 만료 일자까지 이용 하실 수 있으며, 환불신청이 적용되지 않습니다. <strong>단, 결제 당일 해지 시에는 전액 취소 및 서비스 중지 됩니다.</strong>
-                    </li>
-                    <li>신용카드 승인오류 및 잔액 부족시에는 결제가 해지될 수 있습니다</li>
+                <strong>정기-연간플랜</strong>
+                <ul class="note">
+                    <li>연간플랜은 12개월 단위로 제공되며 결제하신 날과 매년 동일한 날짜에 결제가 이루어집니다.</li>
+                    <li>결제 일자가 특정월에 포함되지 않은 경우 (예: 2월 29일)에는 해당 월의 마지막날에 청구됩니다.</li>
+                    <li>연간플랜은 언제든 해지할 수 있습니다. <strong>서비스 해지 시, 계약 경과일에 따라 환불 금액이 달라집니다.</strong> <span class="refund_guide">[환불정책 자세히보기]</span></li>
+                    <li>신용카드 승인오류 및 잔액 부족시에는 결제가 해지될 수 있습니다.</li>
                     <li>결제일은 실제 신용카드사에서 결제 요청하는 날짜로 실제 출금일은 카드사별로 다를 수 있습니다.</li>
                     <li>상기 내용은 당사의 사정에 따라 사전고지 없이 변경될 수 있습니다.</li>
+                </ul>
+
+                <!-- 정기-월간플랜 -->                    
+                <h4 class="h4_title">[ 서비스 결제 유의사항 ]</h4>
+                <strong>정기-월간플랜</strong>
+                <ul class="note">
+                    <li>월간플랜은 1개월 단위로 제공되며 결제하신 날과 매월 동일한 날짜에 결제가 이루어집니다.</li>
+                    <li>결제 일자가 특정월에 포함되지 않은 경우 (예: 2월 29일)에는 해당 월의 마지막날에 청구됩니다.</li>
+                    <li>월간플랜은 언제든 해지할 수 있습니다. <strong>서비스 해지 시, 계약 경과일에 따라 환불 금액이 달라집니다.</strong> <span class="refund_guide">[환불정책 자세히보기]</span></li>
+                    <li>신용카드 승인오류 및 잔액 부족시에는 결제가 해지될 수 있습니다.</li>
+                    <li>결제일은 실제 신용카드사에서 결제 요청하는 날짜로 실제 출금일은 카드사별로 다를 수 있습니다</li>
+                    <li>상기 내용은 당사의 사정에 따라 사전고지 없이 변경될 수 있습니다</li>
+                </ul>        
+                
+                <!-- 기간결제 -->                    
+                <h4 class="h4_title">[ 서비스 결제 유의사항 ]</h4>
+                <strong>기간결제</strong>
+                <ul class="note">
+                    <li>기간 결제는 일 단위(기본 30일)로 제공됩니다.</li>
+                    <li>서비스 해지 시, <strong>결제금액에서 이용일수와 환불수수료 (서비스 결제금액의 3.5%)를 차감한 금액을 환불</strong>합니다. </li>
+                    <li>상기 내용은 당사의 사정에 따라 사전고지 없이 변경될 수 있습니다</li>
                 </ul>
 
                 <div class="note_chk">
                     <p class="txt"><i></i>결제금액과 결제유의사항을 확인했습니다.</p>                    
                 </div>
-
             </div>
-            <!-- //payment_note -->
 
             <div class="btnArea payBtn fix_btn">
                 <a href="#" class="btn btn_cncl"><i></i>결제취소</a>
-                <a href="step02_1.html" class="btn btn_save">다음<i></i></a>
+                <a href="step02_card.html" class="btn btn_save">다음<i></i></a>
             </div>
 
         </div>
@@ -231,6 +276,35 @@
             <!-- //notice -->
         </div>
         <!-- //footer -->
+
+        <div class="modalBox">
+            <!-- 정기결제 환불정책 자세히보기 팝업 -->
+            <div class="modal refund_pop01 slideUp">
+                <div class="pop_header">
+                    <h1 class="pop_title"><i><img src="../img/txt_guide.svg" alt="가이드보기"></i>환불은 어떻게 진행되나요?</h1>
+                    <span class="clse">
+                        <!--닫기-->
+                    </span>
+                </div>
+                <div class="pop_con">
+                    <ul>
+                        <li><strong>1개월 단위 정기결제 환불</strong> </li>
+                        <li>결제 주기가 종료될 때까지 서비스를 계속 이용할 수 있으며, 결제금액은 환불되지 않습니다.</li>
+                        <li>단, 결제일로부터 3일 이내 서비스 해지 요청 시 결제금액은 전액 환불되며, 유료서비스 이용은 즉시 종료됩니다. </li>                                
+                    </ul>
+                    <ul>
+                        <li><strong>1년 단위 정기결제 환불</strong> </li>
+                        <li>결제일로 부터 3일 이내 해지 요청 시, 결제 금액 전액을 환불합니다</li>
+                        <li>결제일로부터 90일 이내 해지 요청 시, 결제금액에서 이용일 수를 차감한 금액의 70%에 해당하는 금액을 환불합니다</li>
+                        <li>결제일로부터 90일을 초과하여 해지 요청 시, 결제금액에서 이용일 수를 차감한 금액의 30%에 해당하는 금액을 환불합니다.</li>                                
+                    </ul>
+                </div>
+            </div>
+            <div class="blocker"></div>
+        </div>
+
+
+
     </div>
     <!-- //wrap -->
 

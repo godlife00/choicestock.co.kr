@@ -79,18 +79,18 @@ $(document).ready(function () {
         $('html, body').css("overflow", "hidden");
     });
     */
-    $('.age_pop01').click(function () {
-        setterms_01.addClass('open');
-        $('html, body').css("overflow", "hidden");
-    });
-    $('.age_pop02').click(function () {
-        setterms_02.addClass('open');
-        $('html, body').css("overflow", "hidden");
-    });
-    $('.age_pop03').click(function () {
-        setterms_03.addClass('open');
-        $('html, body').css("overflow", "hidden");
-    });
+    // $('.age_pop01').click(function () {
+    //     setterms_01.addClass('open');
+    //     $('html, body').css("overflow", "hidden");
+    // });
+    // $('.age_pop02').click(function () {
+    //     setterms_02.addClass('open');
+    //     $('html, body').css("overflow", "hidden");
+    // });
+    // $('.age_pop03').click(function () {
+    //     setterms_03.addClass('open');
+    //     $('html, body').css("overflow", "hidden");
+    // });
 
     $('#setting .close').click(function () {
         setWindow.removeClass('open');
@@ -369,10 +369,6 @@ $(document).ready(function () {
     });
 
     //종목검색 상단
-    $('.globalStock .sub_search .sub_mid.adequateArea .listWrap .mid .charm_num .txt_guide').on("click", function () {
-        $('.guide_layer').css({ 'z-index': 9997 });
-        $('.globalStock .sub_search .sub_mid.adequateArea .listWrap .mid .charm_num .guide_box').show();
-    });
     $('.globalStock .sub_search .sub_mid.tabs_area .chart_area.diagnosis .chartData .charm .txt_guide').on("click", function () {
         $('.guide_layer').css({ 'z-index': 9997 });
         $('.globalStock .sub_search .sub_mid.tabs_area .chart_area.diagnosis .chartData .charm .guide_box').show();
@@ -1133,6 +1129,33 @@ $(document).ready(function () {
     hideTimer = setTimeout(function() {
         $('.premiumLock_cunt').addClass('on');
     }, 400); // 250ms 동안 스크롤 동작이 없으면 보여줌
+    });    
+
+    // 모달팝업 - 환불정책 자세히보기 팝업
+    $('.refund_guide').on('click', function () {            
+        $('.modal').hide().removeClass('slideUp');
+        $('.blocker').show();
+        $('.refund_pop01').show().addClass('slideUp');
+    });
+    $('.age_pop01').on('click', function () {            
+        $('.modal').hide().removeClass('slideUp');
+        $('.blocker').show();
+        $('.agreePopBox.box_01').show().addClass('slideUp');
+    });
+    $('.age_pop02').on('click', function () {            
+        $('.modal').hide().removeClass('slideUp');
+        $('.blocker').show();
+        $('.agreePopBox.box_02').show().addClass('slideUp');
+    });
+    $('.age_pop03').on('click', function () {            
+        $('.modal').hide().removeClass('slideUp');
+        $('.blocker').show();
+        $('.agreePopBox.box_03').show().addClass('slideUp');
+    });
+    // 모달팝업 - 닫기
+    $('.modal .pop_header .clse, .blocker').on('click', function () {
+        $('.blocker').hide();
+        $('.modal').hide().removeClass('slideUp');
     });
     
 });
