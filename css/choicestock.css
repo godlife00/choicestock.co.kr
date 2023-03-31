@@ -2452,13 +2452,15 @@ table.tableRanking td {
 	font-weight: normal;
 }
 
-.globalStock .sub_terms .txt {
+.globalStock .sub_terms .txt {	
+	white-space: pre-line;
 	color: #333;
 	font-size: 0.84rem;
 	line-height: 1.3rem;
 }
 
 .globalStock .sub_terms .txt_B {
+	white-space: pre-line;
 	margin-top: 15px;
 	color: #333;
 	font-size: 0.84rem;
