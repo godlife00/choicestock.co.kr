@@ -24763,18 +24763,39 @@ table.tableRanking td {
 	transform: rotate(45deg);
 }
 
-.globalStock .sub_service .sub_mid .sub_con .payment_area .step_box:nth-child(5) .payRight .pay01::before,
-.globalStock .sub_service .sub_mid .sub_con .payment_area .step_box:nth-child(5) .payRight .pay01::after {
-	display: none;
-}
 
-.globalStock .sub_service .sub_mid .sub_con .payment_area .step_box:nth-child(5) .payRight {
-	padding-bottom: 0;
-}
 
 .globalStock .sub_service .sub_mid .sub_con .payment_area .step_box .title {
 	text-align: left;
 }
+
+.globalStock .sub_service .sub_mid .sub_con .payment_area .step_box.period_pay {
+	background-color: #fff;
+}
+.globalStock .sub_service .sub_mid .sub_con .payment_area .step_box.period_pay .title,
+.globalStock .sub_service .sub_mid .sub_con .payment_area .step_box.period_pay .title span {
+	color: #444;    
+}
+.globalStock .sub_service .sub_mid .sub_con .payment_area .step_box.period_pay .payRight {
+	border-left: 1px solid #E0E4E9;
+	padding-bottom: 0;
+	padding-top: 6px;
+	min-height: 28px;
+	box-sizing: border-box;
+}
+.globalStock .sub_service .sub_mid .sub_con .payment_area .step_box.period_pay .payRight .pay01 {
+	color: #444;
+}
+.globalStock .sub_service .sub_mid .sub_con .payment_area .step_box.period_pay .payRight .pay01 b {
+	color: #444;
+	opacity: 0.7;
+}
+.globalStock .sub_service .sub_mid .sub_con .payment_area .step_box.period_pay .payRight .pay01::before,
+.globalStock .sub_service .sub_mid .sub_con .payment_area .step_box.period_pay .payRight .pay01::after {
+	display: none;
+}
+
+
 
 .globalStock .sub_service .sub_mid .sub_con .comment {
 	margin: 0 24px 10px;
