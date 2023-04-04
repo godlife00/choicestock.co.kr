@@ -2439,7 +2439,7 @@ table.tableRanking td {
 .globalStock .sub_terms .terms_sum {
 	color: #333;
 	font-size: 0.9375rem;
-	margin-top: 25px;
+	margin-top: 45px;
 	margin-bottom: 15px;
 	font-weight: bold;
 }
@@ -2452,11 +2452,13 @@ table.tableRanking td {
 	font-weight: normal;
 }
 
-.globalStock .sub_terms .txt {	
+.globalStock .sub_terms .txt {
 	white-space: pre-line;
 	color: #333;
 	font-size: 0.84rem;
 	line-height: 1.3rem;
+	word-wrap: break-word;
+	word-break: break-all;
 }
 
 .globalStock .sub_terms .txt_B {
@@ -2465,6 +2467,8 @@ table.tableRanking td {
 	color: #333;
 	font-size: 0.84rem;
 	line-height: 1.3rem;
+	word-wrap: break-word;
+	word-break: break-all;
 }
 
 /*****************/
@@ -15625,7 +15629,7 @@ table.tableRanking td {
 }
 
 .globalStock .sub_search .sub_mid .search_financials_area .scroll_table_wrap .scroll_table table tbody tr.tr_emphasis td:first-child,
-.globalStock .sub_search .sub_mid .search_financials_area .scroll_table_wrap .scroll_table table tbody tr.tr_emphasis td:first-child span {	
+.globalStock .sub_search .sub_mid .search_financials_area .scroll_table_wrap .scroll_table table tbody tr.tr_emphasis td:first-child span {
 	color: #525A95;
 }
 
@@ -15652,26 +15656,27 @@ table.tableRanking td {
 }
 
 .globalStock .sub_search .sub_mid .search_financials_area .scroll_table_wrap .scroll_table th:first-child,
-.globalStock .sub_search .sub_mid .search_financials_area .scroll_table_wrap .scroll_table td:first-child {	
+.globalStock .sub_search .sub_mid .search_financials_area .scroll_table_wrap .scroll_table td:first-child {
 	/* position: absolute;
 	left: 0; */
 	position: sticky;
-    left: 0;    
+	left: 0;
 	padding-top: 11px;
 	display: inline-block;
-    box-sizing: border-box;		
-	width: 82px;	
+	box-sizing: border-box;
+	width: 82px;
 	background-color: #F4F4F5;
 	border-right: 2px solid #c4cad1;
 	border-bottom: 1px solid #E0E4E9;
 }
+
 .globalStock .sub_search .sub_mid .search_financials_area .scroll_table_wrap .scroll_table .table_search_invest th span {
 	display: inline-block;
 	text-align: center;
 	width: 60px;
 }
 
-.globalStock .sub_search .sub_mid .search_financials_area .scroll_table_wrap .scroll_table .table_search_invest td {	
+.globalStock .sub_search .sub_mid .search_financials_area .scroll_table_wrap .scroll_table .table_search_invest td {
 	/* height: 48px; */
 	padding: 5px 2px;
 }
@@ -24531,7 +24536,7 @@ table.tableRanking td {
 }
 
 .globalStock .sub_service .sub_mid .sub_con .box_serviceClass {
-	margin-top: 55px;
+	margin-top: 35px;
 	padding: 24px 24px;
 	background: #404fc3 url('../img/banner/bg_1yearevent03.png') no-repeat right 50px;
 	background-size: 106px 142px;
@@ -24765,10 +24770,12 @@ table.tableRanking td {
 .globalStock .sub_service .sub_mid .sub_con .payment_area .step_box.period_pay {
 	background-color: #fff;
 }
+
 .globalStock .sub_service .sub_mid .sub_con .payment_area .step_box.period_pay .title,
 .globalStock .sub_service .sub_mid .sub_con .payment_area .step_box.period_pay .title span {
-	color: #444;    
+	color: #444;
 }
+
 .globalStock .sub_service .sub_mid .sub_con .payment_area .step_box.period_pay .payRight {
 	border-left: 1px solid #E0E4E9;
 	padding-bottom: 0;
@@ -24776,13 +24783,16 @@ table.tableRanking td {
 	min-height: 28px;
 	box-sizing: border-box;
 }
+
 .globalStock .sub_service .sub_mid .sub_con .payment_area .step_box.period_pay .payRight .pay01 {
 	color: #444;
 }
+
 .globalStock .sub_service .sub_mid .sub_con .payment_area .step_box.period_pay .payRight .pay01 b {
 	color: #444;
 	opacity: 0.7;
 }
+
 .globalStock .sub_service .sub_mid .sub_con .payment_area .step_box.period_pay .payRight .pay01::before,
 .globalStock .sub_service .sub_mid .sub_con .payment_area .step_box.period_pay .payRight .pay01::after {
 	display: none;
@@ -30931,7 +30941,6 @@ table.tableRanking td {
 	z-index: 97;
 	opacity: 0;
 }
-
 .premiumLock_cunt.on {
 	right: 15px;
 	opacity: 1;
@@ -30989,6 +30998,40 @@ table.tableRanking td {
 	border-right: 1px solid #fff;
 	right: 12px;
 	top: 12px;
+}
+
+.premium_applybtn {	
+	border-top: 2px solid #4f5cc7;
+	position: sticky;	
+	bottom: 0;	
+	text-align: center;
+    width: 100%;
+	margin-top: 35px;    
+    padding: 17px 5px;
+	box-sizing: border-box;
+    background-color: #404fc3;
+	box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+    opacity: 1;
+}
+.premium_applybtn a {	
+    font-size: 1rem;
+    color: #fff;    
+}
+.premium_applybtn a strong {	    
+    color: #FFDA0D;    
+	text-decoration: underline;
+}
+.premium_applybtn i {
+    display: inline-block;
+    background: url('../img/Icon_lock.svg') no-repeat;
+    width: 12px;
+    height: 15px;
+    background-size: cover;
+    margin-right: 4px;
+    position: relative;
+    top: 2px;
+	left: -3px;
 }
 
 .freeInfo_box {
@@ -34612,10 +34655,11 @@ table.tableRanking td {
 	display: none;
 	visibility: hidden;
 }
-.modal .pop_header {	
+
+.modal .pop_header {
 	padding: 25px 15px 20px;
 	border-bottom: 1px solid #E0E4E9;
-	background-color: #404fc3;	
+	background-color: #404fc3;
 }
 
 .modal .pop_header .pop_title {
@@ -34624,7 +34668,7 @@ table.tableRanking td {
 	gap: 8px;
 	font-size: 1.125rem;
 	font-weight: normal;
-	letter-spacing: -0.45px;	
+	letter-spacing: -0.45px;
 	color: #fff;
 }
 
@@ -34643,7 +34687,7 @@ table.tableRanking td {
 .modal .pop_con {
 	padding: 20px 15px 45px;
 	font-size: 0.9375rem;
-	letter-spacing: -0.38px;	
+	letter-spacing: -0.38px;
 }
 
 .modal .pop_con ul:first-child {
@@ -34655,12 +34699,12 @@ table.tableRanking td {
 .modal .pop_con dd {
 	text-align: left;
 	color: #333;
-    font-size: 0.875rem;
-    line-height: 1.6;
+	font-size: 0.875rem;
+	line-height: 1.6;
 }
 
 .modal .pop_con ul li strong {
-	color: #404fc3;	
+	color: #404fc3;
 }
 
 /* 정기결제 환불정책 자세히보기 팝업 */
@@ -34670,18 +34714,20 @@ table.tableRanking td {
 
 /* (필수)전자금융거래 약관 동의 */
 .modal.agreePopBox {
-	top: 15%;	
+	top: 15%;
 }
+
 .modal.agreePopBox .pop_con .agree dt {
-    padding: 20px 0 20px;
-    font-weight: 700;
+	padding: 20px 0 20px;
+	font-weight: 700;
 }
+
 .modal.agreePopBox .pop_con .txt {
 	overflow: auto;
-    height: 400px;
-    padding: 0;
-    font-size: 0.9375rem;	
-	color: #939393;    
-    word-break: break-all;	
+	height: 400px;
+	padding: 0;
+	font-size: 0.9375rem;
+	color: #939393;
+	word-break: break-all;
 	line-height: 1.5;
 }

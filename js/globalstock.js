@@ -1120,15 +1120,15 @@ $(document).ready(function () {
 
     var hideTimer;
 
-    $(window).on('scroll', function() {
-    // 스크롤 동작 중인 경우
-    $('.premiumLock_cunt').removeClass('on');
+    $(window).on('scroll', function () {
+        // 스크롤 동작 중인 경우
+        $('.premiumLock_cunt').removeClass('on');
 
-    // 스크롤 동작이 멈춘 경우
-    clearTimeout(hideTimer);
-    hideTimer = setTimeout(function() {
-        $('.premiumLock_cunt').addClass('on');
-    }, 400); // 250ms 동안 스크롤 동작이 없으면 보여줌
+        // 스크롤 동작이 멈춘 경우
+        clearTimeout(hideTimer);
+        hideTimer = setTimeout(function () {
+            $('.premiumLock_cunt').addClass('on');
+        }, 400); // 250ms 동안 스크롤 동작이 없으면 보여줌
     });    
 
     // 모달팝업 - 환불정책 자세히보기 팝업
