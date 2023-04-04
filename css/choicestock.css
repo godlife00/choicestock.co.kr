@@ -15623,7 +15623,7 @@ table.tableRanking td {
 }
 
 .globalStock .sub_search .sub_mid .search_financials_area .scroll_table_wrap .scroll_table table tbody tr.tr_emphasis td:first-child,
-.globalStock .sub_search .sub_mid .search_financials_area .scroll_table_wrap .scroll_table table tbody tr.tr_emphasis td:first-child span {
+.globalStock .sub_search .sub_mid .search_financials_area .scroll_table_wrap .scroll_table table tbody tr.tr_emphasis td:first-child span {	
 	color: #525A95;
 }
 
@@ -15645,34 +15645,32 @@ table.tableRanking td {
 }
 
 .globalStock .sub_search .sub_mid .search_financials_area .scroll_table_wrap .scroll_table td {
-	height: 39px;
+	min-height: 39px;
 	box-sizing: border-box;
 }
 
 .globalStock .sub_search .sub_mid .search_financials_area .scroll_table_wrap .scroll_table th:first-child,
-.globalStock .sub_search .sub_mid .search_financials_area .scroll_table_wrap .scroll_table td:first-child {
-	position: absolute;
-	left: 0;
-	width: 82px;
+.globalStock .sub_search .sub_mid .search_financials_area .scroll_table_wrap .scroll_table td:first-child {	
+	/* position: absolute;
+	left: 0; */
+	position: sticky;
+    left: 0;    
 	padding-top: 11px;
+	display: inline-block;
+    box-sizing: border-box;		
+	width: 82px;	
 	background-color: #F4F4F5;
 	border-right: 2px solid #c4cad1;
 	border-bottom: 1px solid #E0E4E9;
 }
-
-.globalStock .sub_search .sub_mid .search_financials_area .scroll_table_wrap .scroll_table th:nth-child(2),
-.globalStock .sub_search .sub_mid .search_financials_area .scroll_table_wrap .scroll_table td:nth-child(2) {
-	padding-left: 87px;
-}
-
 .globalStock .sub_search .sub_mid .search_financials_area .scroll_table_wrap .scroll_table .table_search_invest th span {
 	display: inline-block;
 	text-align: center;
 	width: 60px;
 }
 
-.globalStock .sub_search .sub_mid .search_financials_area .scroll_table_wrap .scroll_table .table_search_invest td {
-	height: 48px;
+.globalStock .sub_search .sub_mid .search_financials_area .scroll_table_wrap .scroll_table .table_search_invest td {	
+	/* height: 48px; */
 	padding: 5px 2px;
 }
 
@@ -15683,14 +15681,9 @@ table.tableRanking td {
 
 .globalStock .sub_search .sub_mid .search_financials_area .scroll_table_wrap .scroll_table .table_search_invest tr:nth-child(10) td,
 .globalStock .sub_search .sub_mid .search_financials_area .scroll_table_wrap .scroll_table .table_search_invest tr:nth-child(11) td {
-	height: 36px;
+	min-height: 36px;
 	padding-top: 10px;
 	padding-bottom: 10px;
-}
-
-.globalStock .sub_search .sub_mid .search_financials_area .scroll_table_wrap .scroll_table .table_search_invest th:nth-child(2),
-.globalStock .sub_search .sub_mid .search_financials_area .scroll_table_wrap .scroll_table .table_search_invest td:nth-child(2) {
-	padding-left: 105px;
 }
 
 @media (min-width:320px) and (max-width:359px) {
