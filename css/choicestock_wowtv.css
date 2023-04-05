@@ -1406,7 +1406,8 @@
 }
 
 /* 종목검색 결과 */
-.globalStock.wowtv .sub_search .sub_mid.outline_box .box {
+.globalStock.wowtv .sub_search .sub_mid.outline_box .box,
+.globalStock.wowtv .sub_search .sub_mid.adequateArea {
 	background: #f6f7fa;
 }
 .globalStock.wowtv .sub_search .sub_mid.tabs_area {

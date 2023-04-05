@@ -369,6 +369,10 @@ $(document).ready(function () {
     });
 
     //종목검색 상단
+    $('.globalStock .sub_search .sub_mid.adequateArea .listWrap .mid .charm_num .txt_guide').on("click", function () {
+        $('.guide_layer').css({ 'z-index': 9997 });
+        $('.globalStock .sub_search .sub_mid.adequateArea .listWrap .mid .charm_num .guide_box').show();
+    });
     $('.globalStock .sub_search .sub_mid.tabs_area .chart_area.diagnosis .chartData .charm .txt_guide').on("click", function () {
         $('.guide_layer').css({ 'z-index': 9997 });
         $('.globalStock .sub_search .sub_mid.tabs_area .chart_area.diagnosis .chartData .charm .guide_box').show();
