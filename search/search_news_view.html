@@ -46,22 +46,6 @@
 <!-- 제휴사이트 민트 칼라 적용 class = mint  -->
 
 <body class="globalStock">
-    <!-- 오픈그래프 동적 코드 적용 -->
-    <script>
-        $(document).ready(function () {            
-            var newsTitle = document.querySelector('h5.title').textContent;
-            var imageSrc = document.querySelector('.view_con .mid img').src;
-            var newsDescription = document.querySelector('.view_con .mid').textContent.substring(0, 100);
-
-            document.querySelector('meta[property="og:title"]').setAttribute('content', newsTitle);      
-            newsTitle += '| 초이스스탁US';                 
-            document.querySelector('meta[property="og:image"]').setAttribute('content', imageSrc);                        
-            newsDescription += '...';            
-            document.querySelector('meta[property="og:description"]').setAttribute('content', newsDescription);
-            console.log("og:title" + newsTitle);
-            console.log("og:description" + newsDescription);            
-        });
-    </script>
     <div id="wrap">
         <!-- 하단 GNB -->
         <div class="gnb">
