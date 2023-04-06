@@ -2439,7 +2439,7 @@ table.tableRanking td {
 .globalStock .sub_terms .terms_sum {
 	color: #333;
 	font-size: 0.9375rem;
-	margin-top: 45px;
+	margin-top: 25px;
 	margin-bottom: 15px;
 	font-weight: bold;
 }
@@ -2453,22 +2453,16 @@ table.tableRanking td {
 }
 
 .globalStock .sub_terms .txt {
-	white-space: pre-line;
 	color: #333;
 	font-size: 0.84rem;
 	line-height: 1.3rem;
-	word-wrap: break-word;
-	word-break: break-all;
 }
 
 .globalStock .sub_terms .txt_B {
-	white-space: pre-line;
 	margin-top: 15px;
 	color: #333;
 	font-size: 0.84rem;
 	line-height: 1.3rem;
-	word-wrap: break-word;
-	word-break: break-all;
 }
 
 /*****************/
@@ -11747,7 +11741,7 @@ table.tableRanking td {
 
 .globalStock .sub_search .latest_results .tabsArea .onestep_chart .dgtic_results div ul {
 	display: flex;
-	flex-wrap: wrap;
+	flex-wrap: wrap;	
 	gap: 2px 2px;
 	padding: 7px 7px;
 	box-sizing: border-box;
@@ -11993,7 +11987,7 @@ table.tableRanking td {
 	width: 100%;
 	height: 460px;
 	background: url('../img/onestep_sample.jpg') no-repeat 0 0;
-	background-size: 100% auto;
+	background-size: 100% auto;	
 	margin-bottom: -18px;
 }
 
@@ -12040,7 +12034,7 @@ table.tableRanking td {
 	position: absolute;
 	left: 0;
 	right: 0;
-	bottom: 0;
+	bottom: 0;	
 	z-index: 91;
 }
 
@@ -12055,7 +12049,7 @@ table.tableRanking td {
 	padding: 30px 15px;
 	text-align: center;
 	display: grid;
-	grid-template-columns: auto 140px;
+	grid-template-columns: auto 140px;	
 }
 
 @media (min-width:320px) and (max-width:359px) {
@@ -15629,7 +15623,7 @@ table.tableRanking td {
 }
 
 .globalStock .sub_search .sub_mid .search_financials_area .scroll_table_wrap .scroll_table table tbody tr.tr_emphasis td:first-child,
-.globalStock .sub_search .sub_mid .search_financials_area .scroll_table_wrap .scroll_table table tbody tr.tr_emphasis td:first-child span {
+.globalStock .sub_search .sub_mid .search_financials_area .scroll_table_wrap .scroll_table table tbody tr.tr_emphasis td:first-child span {	
 	color: #525A95;
 }
 
@@ -15656,27 +15650,26 @@ table.tableRanking td {
 }
 
 .globalStock .sub_search .sub_mid .search_financials_area .scroll_table_wrap .scroll_table th:first-child,
-.globalStock .sub_search .sub_mid .search_financials_area .scroll_table_wrap .scroll_table td:first-child {
+.globalStock .sub_search .sub_mid .search_financials_area .scroll_table_wrap .scroll_table td:first-child {	
 	/* position: absolute;
 	left: 0; */
 	position: sticky;
-	left: 0;
+    left: 0;    
 	padding-top: 11px;
 	display: inline-block;
-	box-sizing: border-box;
-	width: 82px;
+    box-sizing: border-box;		
+	width: 82px;	
 	background-color: #F4F4F5;
 	border-right: 2px solid #c4cad1;
 	border-bottom: 1px solid #E0E4E9;
 }
-
 .globalStock .sub_search .sub_mid .search_financials_area .scroll_table_wrap .scroll_table .table_search_invest th span {
 	display: inline-block;
 	text-align: center;
 	width: 60px;
 }
 
-.globalStock .sub_search .sub_mid .search_financials_area .scroll_table_wrap .scroll_table .table_search_invest td {
+.globalStock .sub_search .sub_mid .search_financials_area .scroll_table_wrap .scroll_table .table_search_invest td {	
 	/* height: 48px; */
 	padding: 5px 2px;
 }
@@ -16483,13 +16476,13 @@ table.tableRanking td {
 }
 
 .globalStock .sub_search .sub_mid.competitors_table .tableRanking.sum_table td.name .remark {
-	height: 14px;
-	font-size: 1.5em;
-	letter-spacing: -0.18rem;
-	padding-left: 2px;
-	display: inline-block;
-	vertical-align: top;
-	padding-top: 1px;
+    height: 14px;
+    font-size: 1.5em;
+    letter-spacing: -0.18rem;
+    padding-left: 2px;
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 1px;
 }
 
 /********************/
@@ -21743,7 +21736,6 @@ table.tableRanking td {
 .globalStock .sub_login .mapage_service .service_table .system span {
 	border: 1px solid #e0e4e9;
 	border-radius: 13px;
-	font-size: 0.75rem;
 	padding: 5px 12px;
 	display: inline-block;
 }
@@ -22875,11 +22867,6 @@ table.tableRanking td {
 
 /* 가입 - 가입방법 선택 step 01 */
 .globalStock .sub_payment .serviceStep .step_top {
-	display: flex;
-	flex-wrap: wrap;
-	align-items: flex-start;
-	justify-content: space-between;
-	gap: 0 15px;
 	padding: 36px 15px 25px;
 }
 
@@ -22892,15 +22879,7 @@ table.tableRanking td {
 	color: #333;
 	font-size: 1.25rem;
 	line-height: 1.7rem;
-	padding-bottom: 3px;
-}
-
-.globalStock .sub_payment .serviceStep .way {
-	display: block;
-	width: 100%;
-	font-size: 0.8125rem;
-	padding-top: 2px;
-	color: #939393;
+	padding-bottom: 8px;
 }
 
 .globalStock .sub_payment .serviceStep .txt {
@@ -23000,10 +22979,6 @@ table.tableRanking td {
 	font-weight: 500;
 }
 
-.globalStock .sub_payment .serviceStep .step_box.routine_pay .payRight .pay02 {
-	color: #fc2929;
-}
-
 .globalStock .sub_payment .serviceStep .step_box .payRight .pay02 b {
 	color: #333;
 	font-size: 1rem;
@@ -23079,61 +23054,6 @@ table.tableRanking td {
 .globalStock .sub_payment .serviceStep .step_box .payRight .txt_line .txt strong,
 .globalStock .sub_payment .serviceStep .step_box .payRight .txt_line .txt b {
 	color: #939393;
-}
-
-.globalStock .sub_payment .serviceStep .txt_line {
-	position: relative;
-	padding: 0 20px;
-	margin-top: 25px;
-}
-
-.globalStock .sub_payment .serviceStep ::after {
-	content: "";
-	position: absolute;
-	bottom: -8px;
-	left: 0;
-	right: 0;
-	display: block;
-	width: 100%;
-	height: 8px;
-	background-color: var(--col1a1);
-}
-
-.globalStock .sub_payment .serviceStep .txt {
-	position: relative;
-	text-align: left;
-	color: var(--col7f8);
-	font-size: 0.75rem !important;
-	line-height: 1.1rem;
-	padding-left: 10px;
-}
-
-.globalStock .sub_payment .serviceStep .txt u {
-	font-weight: 700;
-}
-
-.globalStock .sub_payment .serviceStep .txt::before {
-	content: "";
-	display: inline-block;
-	position: absolute;
-	left: 0;
-	top: 7px;
-	width: 4px;
-	height: 4px;
-	border-radius: 50%;
-	background-color: #898989;
-}
-
-.globalStock .sub_payment .serviceStep .txt:nth-child(2),
-.globalStock .sub_payment .serviceStep .txt:nth-child(3),
-.globalStock .sub_payment .serviceStep .txt:nth-child(4) {
-	margin-top: 7px;
-}
-
-.globalStock .sub_payment .serviceStep .txt strong,
-.globalStock .sub_payment .serviceStep .txt b,
-.globalStock .sub_payment .serviceStep .txt u {
-	color: #333;
 }
 
 .globalStock .sub_payment .payBtn {
@@ -23756,11 +23676,6 @@ table.tableRanking td {
 	text-decoration: underline;
 }
 
-.globalStock .sub_payment .payment_note .note li span.refund_guide {
-	color: #06c;
-	text-decoration: underline;
-}
-
 .globalStock .sub_payment .payment_note .note li strong {
 	color: #939393;
 	font-size: 0.75rem;
@@ -23839,7 +23754,6 @@ table.tableRanking td {
 	border-bottom: 1px solid #E0E4E9;
 	color: #333;
 	font-size: 0.9375rem;
-	line-height: 1.3;
 }
 
 .globalStock .sub_payment .pay_info .info li:last-child {
@@ -23923,7 +23837,7 @@ table.tableRanking td {
 	border: none;
 	line-height: 25px;
 	padding: 0 5px;
-	width: 58px;
+	width: 70px;
 	border-radius: 5px;
 	margin-right: 4px;
 }
@@ -24535,271 +24449,6 @@ table.tableRanking td {
 	margin-top: 10px;
 }
 
-.globalStock .sub_service .sub_mid .sub_con .box_serviceClass {
-	margin-top: 35px;
-	padding: 24px 24px;
-	background: #404fc3 url('../img/banner/bg_1yearevent03.png') no-repeat right 50px;
-	background-size: 106px 142px;
-}
-
-.globalStock .sub_service .sub_mid .sub_con .box_serviceClass .box.ser_premium {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	align-items: center;
-	gap: 10px;
-	/* padding: 25px 18px; */
-	/* background-color: #4f5cc7;	 */
-	border-radius: 10px;
-}
-
-.globalStock .sub_service .sub_mid .sub_con .box_serviceClass .box.ser_premium .monpay {
-	font-size: 0.9375rem;
-	font-weight: 400;
-	line-height: 1.16;
-	letter-spacing: -0.48px;
-	color: #fff;
-}
-
-.globalStock .sub_service .sub_mid .sub_con .box_serviceClass .box.ser_premium .monpay b {
-	color: #fff;
-}
-
-.globalStock .sub_service .sub_mid .sub_con .box_serviceClass .box.ser_premium .title {
-	color: #ffda0d;
-	font-size: 0.9375rem;
-}
-
-.globalStock .sub_service .sub_mid .sub_con .box_serviceClass .box.ser_premium .title span {
-	color: #fff;
-}
-
-.globalStock .sub_service .sub_mid .sub_con .box_serviceClass .box.ser_premium .list {
-	width: 100%;
-	margin-top: 10px;
-}
-
-.globalStock .sub_service .sub_mid .sub_con .box_serviceClass .box.ser_premium .list li {
-	color: #c3c9ff;
-	font-size: 0.82rem;
-	line-height: 1.54;
-}
-
-.globalStock .sub_service .sub_mid .sub_con .box_serviceClass .box.ser_premium .list li b {
-	font-weight: bold;
-	color: #c3c9ff;
-}
-
-.globalStock .sub_service .sub_mid .sub_con .payment_area {
-	display: flex;
-	flex-wrap: wrap;
-	align-items: baseline;
-	gap: 10px 10px;
-	margin-top: 35px;
-	padding: 0 16px;
-}
-
-.globalStock .sub_service .sub_mid .sub_con .payment_area .p_title {
-	color: #404fc3;
-	font-size: 1.25rem;
-	font-weight: bold;
-}
-
-.globalStock .sub_service .sub_mid .sub_con .payment_area .txt {
-	color: #333;
-	font-size: 11px;
-	line-height: 1.43;
-}
-
-.globalStock .sub_service .sub_mid .sub_con .payment_area .step_box {
-	display: flex;
-	align-items: center;
-	gap: 10px;
-	width: 100%;
-	height: 80px;
-	padding: 13px 13px;
-	border-radius: 10px;
-	background: #404FC3;
-	border: 1px solid #126fbe;
-}
-
-.globalStock .sub_service .sub_mid .sub_con .payment_area .step_box.active {
-	background: #404FC3;
-}
-
-.globalStock .sub_service .sub_mid .sub_con .payment_area .step_box .title {
-	flex: 1;
-	font-size: 0.875rem;
-	font-weight: 700;
-	letter-spacing: -0.63px;
-	color: #fff;
-	border: none;
-}
-
-.globalStock .sub_service .sub_mid .sub_con .payment_area .step_box .title span {
-	padding-left: 7px;
-	font-size: 10px;
-	color: #fff;
-	font-weight: 400;
-}
-
-.globalStock .sub_service .sub_mid .sub_con .payment_area .step_box .payRight {
-	flex: 1.5;
-	position: relative;
-	padding: 0 0 12px 20px;
-	border-left: 1px solid rgba(255, 255, 255, 0.3);
-	text-align: left;
-}
-
-.globalStock .sub_service .sub_mid .sub_con .payment_area .step_box .payRight .pay01 {
-	position: relative;
-	margin-right: 0;
-	padding-right: 20px;
-	padding-left: 0;
-	font-size: 0.875rem;
-	font-weight: 400;
-	color: #c3c9ff;
-}
-
-.globalStock .sub_service .sub_mid .sub_con .payment_area .step_box .payRight .pay01 b {
-	color: #c3c9ff;
-	padding-left: 3px;
-}
-
-.globalStock .sub_service .sub_mid .sub_con .payment_area .step_box .payRight .pay02 {
-	position: relative;
-	font-size: 0.875rem;
-	font-weight: 700;
-	color: #d9dfe7;
-}
-
-@media (min-width:320px) and (max-width:359px) {
-	.globalStock .sub_service .sub_mid .sub_con .payment_area .step_box .payRight {
-		padding: 0 0 12px 10px;
-	}
-
-	.globalStock .sub_service .sub_mid .sub_con .payment_area .step_box .payRight .pay01,
-	.globalStock .sub_service .sub_mid .sub_con .payment_area .step_box .payRight .pay01 b,
-	.globalStock .sub_service .sub_mid .sub_con .payment_area .step_box .payRight .pay02,
-	.globalStock .sub_service .sub_mid .sub_con .payment_area .step_box .payRight .pay02 b {
-		font-size: 12px;
-	}
-}
-
-@media (min-width:360px) and (max-width:374px) {
-
-	.globalStock .sub_service .sub_mid .sub_con .payment_area .step_box .payRight .pay01,
-	.globalStock .sub_service .sub_mid .sub_con .payment_area .step_box .payRight .pay01 b,
-	.globalStock .sub_service .sub_mid .sub_con .payment_area .step_box .payRight .pay02,
-	.globalStock .sub_service .sub_mid .sub_con .payment_area .step_box .payRight .pay02 b {
-		font-size: 14px;
-	}
-}
-
-.globalStock .sub_service .sub_mid .sub_con .payment_area .step_box .payRight .pay02 b {
-	padding-left: 3px;
-	color: #fff;
-}
-
-.globalStock .sub_service .sub_mid .sub_con .payment_area .step_box .payRight .pay_sale {
-	position: absolute;
-	left: -3px;
-	top: -14px;
-	width: 100px;
-	font-size: 10px;
-	letter-spacing: -0.25px;
-	color: #d9dfe7;
-}
-
-.globalStock .sub_service .sub_mid .sub_con .payment_area .step_box .payRight .month_dvsion {
-	position: absolute;
-	right: 0;
-	bottom: -16px;
-	width: 140px;
-	font-size: 12px;
-	text-align: right;
-	letter-spacing: -0.25px;
-	color: #d9dfe7;
-}
-
-.globalStock .sub_service .sub_mid .sub_con .payment_area .step_box .payRight .month_dvsion b {
-	color: #f94b4d;
-	font-size: 12px;
-	opacity: 1;
-}
-
-.globalStock .sub_service .sub_mid .sub_con .payment_area .step_box.active .title {
-	color: #fff;
-	border: none;
-}
-
-.globalStock .sub_service .sub_mid .sub_con .payment_area .step_box.active .title span {
-	color: #fff;
-}
-
-.globalStock .sub_service .sub_mid .sub_con .payment_area .step_box .payRight .pay01::before {
-	content: "";
-	position: absolute;
-	left: -6px;
-	top: 50%;
-	margin-top: 0;
-	width: 90%;
-	height: 2px;
-	background-color: #ff4e4e;
-}
-
-.globalStock .sub_service .sub_mid .sub_con .payment_area .step_box .payRight .pay01::after {
-	content: "";
-	display: inline-block;
-	width: 7px;
-	height: 7px;
-	position: absolute;
-	top: calc(50% - 3.7px);
-	right: 14px;
-	border-top: 2px solid #ff4e4e;
-	border-right: 2px solid #ff4e4e;
-	transform: rotate(45deg);
-}
-
-
-
-.globalStock .sub_service .sub_mid .sub_con .payment_area .step_box .title {
-	text-align: left;
-}
-
-.globalStock .sub_service .sub_mid .sub_con .payment_area .step_box.period_pay {
-	background-color: #fff;
-}
-
-.globalStock .sub_service .sub_mid .sub_con .payment_area .step_box.period_pay .title,
-.globalStock .sub_service .sub_mid .sub_con .payment_area .step_box.period_pay .title span {
-	color: #444;
-}
-
-.globalStock .sub_service .sub_mid .sub_con .payment_area .step_box.period_pay .payRight {
-	border-left: 1px solid #E0E4E9;
-	padding-bottom: 0;
-	padding-top: 6px;
-	min-height: 28px;
-	box-sizing: border-box;
-}
-
-.globalStock .sub_service .sub_mid .sub_con .payment_area .step_box.period_pay .payRight .pay01 {
-	color: #444;
-}
-
-.globalStock .sub_service .sub_mid .sub_con .payment_area .step_box.period_pay .payRight .pay01 b {
-	color: #444;
-	opacity: 0.7;
-}
-
-.globalStock .sub_service .sub_mid .sub_con .payment_area .step_box.period_pay .payRight .pay01::before,
-.globalStock .sub_service .sub_mid .sub_con .payment_area .step_box.period_pay .payRight .pay01::after {
-	display: none;
-}
-
-
-
 .globalStock .sub_service .sub_mid .sub_con .comment {
 	margin: 0 24px 10px;
 	border-radius: 10px;
@@ -24960,7 +24609,7 @@ table.tableRanking td {
 
 .globalStock .sub_service .sub_con .step_box .payRight .pay01 b {
 	color: #333;
-	font-size: 0.875rem;
+	font-size: 1rem;
 	opacity: 0.7;
 	font-weight: normal;
 }
@@ -24984,9 +24633,20 @@ table.tableRanking td {
 
 .globalStock .sub_service .sub_con .step_box .payRight .pay02 b {
 	color: #333;
-	font-size: 0.875rem;
+	font-size: 1rem;
 	opacity: 0.7;
 	font-weight: normal;
+}
+
+.globalStock .sub_service .sub_con .step_box .payRight .pay01::before {
+	content: '';
+	background: url('../img/c_line.png') no-repeat 100% 0;
+	position: absolute;
+	right: 0;
+	top: 50%;
+	margin-top: -7px;
+	width: 69%;
+	height: 14px;
 }
 
 .globalStock .sub_service .sub_con .step_box .payRight .guide_txt {
@@ -30587,21 +30247,17 @@ table.tableRanking td {
 .globalStock .sub_search .sub_mid.adequateArea .listWrap .mid .charm_num .signal.buy {
 	background-color: #FF4500;
 }
-
 .globalStock .sub_search .sub_mid.adequateArea .listWrap .mid .charm_num .signal.sell {
 	background-color: #1E90FF;
 }
-
 .globalStock .sub_search .sub_mid.adequateArea .listWrap .mid .charm_num .signal.hold {
 	background-color: #008000;
 }
-
 .globalStock .sub_search .sub_mid.adequateArea .listWrap .mid .charm_num .signal.waitting {
 	background-color: #4C4C4C;
 }
-
 .globalStock .sub_search .sub_mid.adequateArea .listWrap .mid .charm_num .signal.lock {
-	background-color: #9ea6e0;
+	background-color: #9ea6e0;	
 }
 
 .globalStock .sub_search .sub_mid.adequateArea .listWrap .mid .charm_num .signal_guide {
@@ -30770,30 +30426,26 @@ table.tableRanking td {
 	flex-wrap: wrap;
 	gap: 5px;
 }
-
 .globalStock .sub_search .sub_mid.adequateArea .listWrap .mid .num_bar .line {
 	display: flex;
-	align-items: center;
-	justify-content: space-between;
+    align-items: center;
+    justify-content: space-between;
 	gap: 15px;
 	height: 18px;
 }
-
 .globalStock .sub_search .sub_mid.adequateArea .listWrap .mid .num_bar .line .th {
 	color: #333;
-	font-size: 0.75rem;
-	line-height: normal;
-	text-align: right;
-	min-width: 68px;
+    font-size: 0.75rem;
+    line-height: normal;
+    text-align: right;
+    min-width: 68px;
 }
-
 .globalStock .sub_search .sub_mid.adequateArea .listWrap .mid .num_bar .line .barArea {
 	width: 100%;
 }
-
 .globalStock .sub_search .sub_mid.adequateArea .listWrap .mid .num_bar .line .score-container {
 	position: relative;
-	width: 100%;
+	width: 100%;	
 }
 
 .globalStock .sub_search .sub_mid.adequateArea .listWrap .mid .num_bar .line .score-bar {
@@ -30806,16 +30458,14 @@ table.tableRanking td {
 	border-radius: 20px;
 	background-color: #e6e7f4;
 }
-
 @keyframes move-dot {
 	from {
 		left: 0;
 	}
 }
-
 .globalStock .sub_search .sub_mid.adequateArea .listWrap .mid .num_bar .line .score-dot {
 	position: absolute;
-	left: 0;
+	left: 0;	
 	top: 50%;
 	transform: translate(-50%, -50%);
 	width: 10px;
@@ -30824,32 +30474,27 @@ table.tableRanking td {
 	background-color: #0080FF;
 	will-change: transform;
 	animation-name: move-dot;
-	animation-duration: 0.7s;
-	/* 애니메이션 지속시간 */
-	animation-fill-mode: forwards;
-	/* 애니메이션 종료 후 마지막 상태를 유지 */
+	animation-duration: 0.7s; /* 애니메이션 지속시간 */
+	animation-fill-mode: forwards; /* 애니메이션 종료 후 마지막 상태를 유지 */
 	animation-timing-function: ease;
 }
-
 .globalStock .sub_search .sub_mid.adequateArea .listWrap .mid .num_bar .line .score-dot::after {
-	content: "";
-	position: absolute;
-	left: 2px;
-	top: 2px;
-	display: inline-block;
-	background: #fff;
-	width: 6px;
-	height: 6px;
-	border-radius: 50%;
-	font-size: 0;
+    content: "";
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    display: inline-block;
+    background: #fff;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    font-size: 0;
 }
-
-.globalStock .sub_search .sub_mid.adequateArea .listWrap .mid .num_bar .line:nth-child(2) .score-dot {
-	background-color: #1E90FF;
+.globalStock .sub_search .sub_mid.adequateArea .listWrap .mid .num_bar .line:nth-child(2) .score-dot {	
+	background-color: #1E90FF;	
 }
-
-.globalStock .sub_search .sub_mid.adequateArea .listWrap .mid .num_bar .line:nth-child(3) .score-dot {
-	background-color: #00BFFF;
+.globalStock .sub_search .sub_mid.adequateArea .listWrap .mid .num_bar .line:nth-child(3) .score-dot {	
+	background-color: #00BFFF;	
 }
 
 .globalStock .sub_search .sub_mid.adequateArea .premiumLock_area {
@@ -30939,18 +30584,19 @@ table.tableRanking td {
 	will-change: transform;
 	transition: All 0.5s ease;
 	z-index: 97;
-	opacity: 0;
+	opacity: 0;	
 }
-.premiumLock_cunt.on {
+
+.premiumLock_cunt.on {	
 	right: 15px;
 	opacity: 1;
 }
 
-.premiumLock_cunt .more {
+.premiumLock_cunt .more {	
 	position: relative;
 	display: flex;
 	align-items: center;
-	gap: 10px;
+	gap: 10px;	
 	padding: 12px 15px;
 	box-sizing: border-box;
 	font-size: 0.875rem;
@@ -30960,14 +30606,12 @@ table.tableRanking td {
 	color: #3655d6;
 	cursor: default;
 }
-
 @media (min-width:320px) and (max-width:374px) {
-	.premiumLock_cunt .more {
-		gap: 6px;
+	.premiumLock_cunt .more {			
+		gap: 6px;	
 		padding: 12px 12px;
 	}
 }
-
 .premiumLock_cunt .more span {
 	color: #939393;
 }
@@ -30975,23 +30619,23 @@ table.tableRanking td {
 .premiumLock_cunt .go_link {
 	flex: 1;
 	position: relative;
-	display: inline-block;
-	margin: 0 auto;
+	display: inline-block;		
+	margin: 0 auto;	
 	box-sizing: border-box;
 	border-radius: 5px;
-	background-color: #404fc3;
-	font-weight: normal;
-	letter-spacing: -0.9px;
-	color: #fff;
+	background-color: #404fc3;	
+	font-weight: normal;	
+	letter-spacing: -0.9px;	
+	color: #fff;	
 	padding: 8px 26px 8px 10px;
-	font-size: 0.8125rem;
+	font-size: 0.8125rem;	
 }
 
 .premiumLock_cunt .go_link::before {
-	content: "";
+	content: "";		
 	display: inline-block;
 	transform: rotate(45deg);
-	position: absolute;
+	position: absolute;	
 	width: 6px;
 	height: 6px;
 	border-top: 1px solid #fff;
@@ -30999,67 +30643,30 @@ table.tableRanking td {
 	right: 12px;
 	top: 12px;
 }
-
-.premium_applybtn {	
-	border-top: 2px solid #4f5cc7;
-	position: sticky;	
-	bottom: 0;	
-	text-align: center;
-    width: 100%;
-	margin-top: 15px;    
-    padding: 17px 5px;
-	box-sizing: border-box;
-    background-color: #404fc3;
-	box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.5);
-    z-index: 9999;
-    opacity: 1;
-}
-.premium_applybtn a {	
-    font-size: 1rem;
-    color: #fff;    
-}
-.premium_applybtn a strong {	    
-    color: #FFDA0D;    
-	text-decoration: underline;
-}
-.premium_applybtn i {
-    display: inline-block;
-    background: url('../img/Icon_lock.svg') no-repeat;
-    width: 12px;
-    height: 15px;
-    background-size: cover;
-    margin-right: 4px;
-    position: relative;
-    top: 2px;
-	left: -3px;
-}
-
 .freeInfo_box {
 	border-radius: 5px;
-	background-color: #E6E7F4;
-	padding: 20px 10px;
+    background-color: #E6E7F4;
+    padding: 20px 10px;    
 	width: 100%;
 	box-sizing: border-box;
 	text-align: center;
 }
-
-.freeInfo_box p {
-	font-size: 0.8125rem;
-	font-weight: normal;
-	line-height: 1.18;
-	color: #404fc3;
+.freeInfo_box p {	
+    font-size: 0.8125rem;
+    font-weight: normal;
+    line-height: 1.18;
+    color: #404fc3;
 }
-
-.freeInfo_box a {
-	display: block;
-	margin: 15px auto 0;
+.freeInfo_box a {	
+	display: block;		
+	margin: 15px auto 0;	
 	width: 50%;
 	box-sizing: border-box;
 	border-radius: 5px;
-	background-color: #404fc3;
-	font-weight: normal;
-	letter-spacing: -0.9px;
-	color: #fff;
+	background-color: #404fc3;	
+	font-weight: normal;	
+	letter-spacing: -0.9px;	
+	color: #fff;	
 	padding: 8px 10px;
 	font-size: 0.8125rem;
 }
@@ -32101,17 +31708,14 @@ table.tableRanking td {
 	font-weight: bold;
 	color: #8c90ad;
 }
-
 .globalStock .sub_search .sub_mid .adequate_stock .box .con {
 	padding-top: 11px;
 }
-
 .globalStock .sub_search .sub_mid .adequate_stock.premiumLock_AI .box .adequate_price .nodata_area .no_data {
 	padding: 0;
-	background-color: #404fc3;
+	background-color: #404fc3;	
 }
-
-.globalStock .sub_search .sub_mid .adequate_stock.premiumLock_AI .box .adequate_price .nodata_area .no_data a {
+.globalStock .sub_search .sub_mid .adequate_stock.premiumLock_AI .box .adequate_price .nodata_area .no_data a {	
 	display: block;
 	padding: 9px 0;
 	color: #f9db4c;
@@ -32283,7 +31887,7 @@ table.tableRanking td {
 }
 
 .globalStock .sub_search .sub_mid .adequate_stock .box .con .value_chart .adequate .remark {
-	margin-top: 6px;
+	margin-top: 6px;	
 }
 
 .globalStock .sub_search .sub_mid .adequate_stock .box .con .value_chart .adequate .remark .txt_filter.size_B i {
@@ -32292,7 +31896,6 @@ table.tableRanking td {
 	margin: 0 1px 1px;
 	opacity: 0.67;
 }
-
 .globalStock .sub_search .sub_mid .adequate_stock .box .con .value_chart .adequate .md-trigger {
 	display: inline-block;
 	padding: 0 7px;
@@ -32300,7 +31903,6 @@ table.tableRanking td {
 	background-color: #404fc3;
 	border-radius: 20px;
 }
-
 .globalStock .sub_search .sub_mid .adequate_stock .box .con .value_chart .adequate .md-trigger .remark .txt_filter.size_B i {
 	background-color: #fff;
 	opacity: 1;
@@ -32996,32 +32598,31 @@ table.tableRanking td {
 
 .globalStock .sub_search .sub_mid .eventsum_area .freeChare {
 	position: relative;
-	background: url('../img/bandChart_free.jpg') no-repeat 0 0;
+	background: url('../img/bandChart_free.jpg') no-repeat 0 0;		
 	aspect-ratio: 1.824;
 	background-size: 100% 100%;
 	width: 100%;
 	min-height: 360px;
 }
-
 .globalStock .sub_search .sub_mid .eventsum_area .freeChare::after {
-	content: "";
-	position: absolute;
-	left: 0;
-	right: 0;
-	width: 100%;
-	top: 0;
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;    
+    top: 0;
 	bottom: 0;
-	background: #333;
-	opacity: 0.3;
+    background: #333;
+    opacity: 0.3;
 }
 
 .globalStock .sub_search .sub_mid .eventsum_area .freeChare .weeks_free {
 	position: absolute;
 	left: 0;
 	right: 0;
-	top: 50%;
-	transform: translateY(-50%);
-	z-index: 91;
+	top: 50%;	
+	transform: translateY(-50%);	
+	z-index: 91;	
 }
 
 .globalStock .sub_search .sub_mid .eventsum_area .freeChare .weeks_free .box {
@@ -33031,9 +32632,8 @@ table.tableRanking td {
 	border-radius: 10px;
 	background-color: #404fc3;
 	padding: 30px 15px;
-	text-align: center;
+	text-align: center;	
 }
-
 .globalStock .sub_search .sub_mid .eventsum_area .freeChare .weeks_free .box .title {
 	color: #fff;
 	font-size: 0.9375rem;
@@ -33051,13 +32651,13 @@ table.tableRanking td {
 	margin-right: 3px;
 }
 
-.globalStock .sub_search .sub_mid .eventsum_area .freeChare .weeks_free .box .left {
+.globalStock .sub_search .sub_mid .eventsum_area .freeChare .weeks_free .box .left {	
 	text-align: center;
 	vertical-align: top;
 }
 
 .globalStock .sub_search .sub_mid .eventsum_area .freeChare .weeks_free .box .right {
-	margin-top: 15px;
+	margin-top: 15px;	
 	vertical-align: top;
 }
 
@@ -33130,12 +32730,11 @@ table.tableRanking td {
 	color: #939393;
 	width: 62px;
 }
-
 .globalStock .sub_search .sub_mid .eventsum_area .tableRanking.sum_table td .remark .txt_filter.size_B i {
 	width: 8px;
 	height: 8px;
 	margin: 0 1px 1px;
-	opacity: 0.67;
+    opacity: 0.67;
 }
 
 /* 뉴스 */
@@ -34545,189 +34144,4 @@ table.tableRanking td {
 
 .zt-skill-bar div {
 	width: 0;
-}
-
-.modal {
-	max-width: 700px;
-	margin: 0 auto;
-	position: fixed;
-	top: 30%;
-	z-index: 99;
-	width: 94%;
-	box-sizing: border-box;
-	margin-left: 3%;
-	padding: 0;
-	border-radius: 10px;
-	overflow: hidden;
-	box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.44);
-	background-color: #fff;
-	display: none;
-}
-
-.blocker {
-	position: fixed;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	overflow: auto;
-	z-index: 98;
-	padding: 20px;
-	box-sizing: border-box;
-	background-color: #000;
-	background-color: rgba(0, 0, 0, 0.3);
-	text-align: center;
-	display: none;
-}
-
-.modal.slideUp {
-	animation: fadeIn 0.8s, slideIn 0.4s linear;
-	margin: 0 auto;
-	margin-left: 3%;
-	border-radius: 10px;
-}
-
-@keyframes slideIn {
-	0% {
-		transform: translateY(400px);
-		animation-timing-function: ease-out;
-	}
-
-	60% {
-		transform: translateY(-30px);
-		animation-timing-function: ease-in;
-	}
-
-	80% {
-		transform: translateY(10px);
-		animation-timing-function: ease-out;
-	}
-
-	100% {
-		transform: translateY(0px);
-		animation-timing-function: ease-in;
-	}
-}
-
-@keyframes fadeIn {
-	0% {
-		opacity: 0;
-	}
-
-	100% {
-		opacity: 1;
-	}
-}
-
-.modal .pop_header .clse {
-	cursor: pointer;
-	position: absolute;
-	display: inline-block;
-	padding: 4px;
-	width: 17px;
-	height: 17px;
-	right: 14px;
-	top: 14px;
-}
-
-.modal .pop_header .clse::before,
-.modal .pop_header .clse::after {
-	content: "";
-	position: absolute;
-	right: 15px;
-	top: 0;
-	height: 22px;
-	width: 1px;
-	background-color: #fff;
-}
-
-.modal .pop_header .clse::before {
-	transform: rotate(45deg);
-}
-
-.modal .pop_header .clse::after {
-	transform: rotate(-45deg);
-}
-
-.modal .close-modal {
-	display: none;
-	visibility: hidden;
-}
-
-.modal .pop_header {
-	padding: 25px 15px 20px;
-	border-bottom: 1px solid #E0E4E9;
-	background-color: #404fc3;
-}
-
-.modal .pop_header .pop_title {
-	display: flex;
-	align-items: center;
-	gap: 8px;
-	font-size: 1.125rem;
-	font-weight: normal;
-	letter-spacing: -0.45px;
-	color: #fff;
-}
-
-.modal .pop_header .pop_title i {
-	display: inline-block;
-	width: 18px;
-	height: 18px;
-}
-
-.modal .pop_header .pop_title i img {
-	display: inline-block;
-	width: 100%;
-	height: 100%;
-}
-
-.modal .pop_con {
-	padding: 20px 15px 45px;
-	font-size: 0.9375rem;
-	letter-spacing: -0.38px;
-}
-
-.modal .pop_con ul:first-child {
-	margin-bottom: 15px;
-}
-
-.modal .pop_con li,
-.modal .pop_con dt,
-.modal .pop_con dd {
-	text-align: left;
-	color: #333;
-	font-size: 0.875rem;
-	line-height: 1.6;
-}
-
-.modal .pop_con ul li strong {
-	color: #404fc3;
-}
-
-/* 정기결제 환불정책 자세히보기 팝업 */
-.modal.refund_pop01 {
-	top: 15%;
-}
-
-/* (필수)전자금융거래 약관 동의 */
-.modal.agreePopBox {
-	top: 15%;
-}
-
-.modal.agreePopBox .pop_con .agree dt {
-	padding: 20px 0 20px;
-	font-weight: 700;
-}
-
-.modal.agreePopBox .pop_con .txt {
-	overflow: auto;
-	height: 400px;
-	padding: 0;
-	font-size: 0.9375rem;
-	color: #939393;
-	word-break: break-all;
-	line-height: 1.5;
 }
