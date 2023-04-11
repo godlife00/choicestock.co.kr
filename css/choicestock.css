@@ -880,10 +880,26 @@ body {
 
 .globalStock .middle_banner.event .link_banner,
 .globalStock .middle_banner.event .link_banner img {
-	display: inline-block;
-	width: 100%;
+	display: block;	
+	width: 100%;	
+	background: url('../img/banner/banner_free_2weeks.png') no-repeat left top;
+	background-size: cover;
 }
-
+.globalStock .middle_banner.event .link_banner a {
+	display: flex;
+	flex-wrap: wrap;	
+	align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+	gap: 3px;
+	padding: 16px 0;	
+	color: #fff;
+	font-size: 12px;
+}
+.globalStock .middle_banner.event .link_banner a strong {	
+	color: #1ee8be;
+	font-size: 12px;
+}
 .globalStock .middle_banner.event.main_event {
 	width: calc(100% - 30px);
 	margin: 15px auto 0;
@@ -11809,10 +11825,16 @@ table.tableRanking td {
 	width: 100%;
 }
 
-.globalStock .sub_search .latest_results .tabsArea .one_step {
+.globalStock .sub_search .latest_results .tabsArea .one_step {		
 	margin: 18px auto 0;
 	padding: 15px 10px;
 	background: #e6e7f4;
+	border: 2px solid red;
+	display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .globalStock .sub_search .latest_results .tabsArea .one_step .txt {
@@ -11821,7 +11843,7 @@ table.tableRanking td {
 	text-align: left;
 	line-height: 25px;
 	vertical-align: top;
-	padding: 0 10px;
+	/* padding: 0 10px; */
 	letter-spacing: -0.3px;
 }
 
