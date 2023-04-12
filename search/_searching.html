@@ -28,7 +28,7 @@
     <script src="../node_modules/highcharts/modules/data.js"></script>
     <script src="../node_modules/highcharts/modules/hollowcandlestick.js"></script>
     <script src="../node_modules/highcharts/modules/no-data-to-display.js"></script>
-    <script src="../node_modules/highcharts/modules/treemap.js"></script>    
+    <script src="../node_modules/highcharts/modules/treemap.js"></script>
     <script src="../node_modules/highcharts/modules/exporting.js"></script>
     <script src="../node_modules/highcharts/modules/export-data.js"></script>
     <script src="../node_modules/highcharts/modules/accessibility.js"></script>
@@ -142,12 +142,30 @@
                                 </colgroup>
                                 <tbody>
                                     <tr>
-                                        <td class="title"><a href="search_diagnosis.html">애<span class="remark">* * *
-                                                    *</span><span class="ticker">AAPL</span></a>
+                                        <td class="title">
+                                            <a href="#" onclick="event.preventDefault()" data-modal="modal-5"
+                                                data-modal="modal-5" class="md-trigger">
+                                                마<span class="remark">
+                                                    <div class="txt_filter size_M"><i></i><i></i><i></i><i></i>
+                                                    </div>
+                                                </span>
+
+                                                <span class="ticker"><span class="remark">
+                                                        <div class="txt_filter size_S"><i></i><i></i><i></i><i></i>
+                                                        </div>
+                                                    </span>
+                                                </span>
+                                            </a>
                                         </td>
                                         <td class="num">
-                                            <span>69.<b>00</b></span>
-                                            <span class="increase">+2.9<b>%</b></span><!-- increase 증가, decrease 감소 -->
+                                            <a href="#" onclick="event.preventDefault()" data-modal="modal-5"
+                                                data-modal="modal-5" class="md-trigger">
+                                                <span class="remark">
+                                                    <div class="txt_filter size_M" style="padding-top: 12px;">
+                                                        <i></i><i></i><i></i><i></i>
+                                                    </div>
+                                                </span>
+                                            </a>
                                         </td>
                                         <td class="score"><span>67<b>점</b></span></td>
                                         <!-- 프리미엄 서비스 부분 -->
@@ -157,18 +175,15 @@
                                         <!-- //프리미엄 서비스 부분 -->
                                     </tr>
                                     <tr>
-                                        <td class="title"><a href="search_diagnosis.html">넷<span class="remark">* * *
-                                                    *</span><span class="ticker">AAPL</span></a>
+                                        <td class="title"><a href="search_diagnosis.html">애질런트 테크놀러지스<span
+                                                    class="ticker">AAPL</span></a>
                                         </td>
                                         <td class="num">
                                             <span>69.<b>00</b></span>
-                                            <span class="decrease">-2.9<b>%</b></span><!-- increase 증가, decrease 감소 -->
+                                            <span class="increase">+2.9<b>%</b></span><!-- increase 증가, decrease 감소 -->
                                         </td>
                                         <td class="score"><span>67<b>점</b></span></td>
-                                        <td class="num">
-                                            <span class="na">N/A</span>
-                                            <span class="hit">적정주가</span>
-                                        </td>
+                                        <td class="opinion"><span class="buy">매수</span></td>
                                     </tr>
                                     <tr>
                                         <td class="title"><a href="search_diagnosis.html">애질런트 테크놀러지스<span
@@ -179,10 +194,7 @@
                                             <span class="increase">+2.9<b>%</b></span><!-- increase 증가, decrease 감소 -->
                                         </td>
                                         <td class="score"><span>67<b>점</b></span></td>
-                                        <td class="num">
-                                            <span>8869.<b>00</b></span>
-                                            <span class="hit">적정주가</span>
-                                        </td>
+                                        <td class="opinion"><span class="sell">매도</span></td>
                                     </tr>
                                     <tr>
                                         <td class="title"><a href="search_diagnosis.html">애질런트 테크놀러지스<span
@@ -193,10 +205,7 @@
                                             <span class="increase">+2.9<b>%</b></span><!-- increase 증가, decrease 감소 -->
                                         </td>
                                         <td class="score"><span>67<b>점</b></span></td>
-                                        <td class="num">
-                                            <span>8869.<b>00</b></span>
-                                            <span class="hit">적정주가</span>
-                                        </td>
+                                        <td class="opinion"><span class="hold">보유</span></td>
                                     </tr>
                                     <tr>
                                         <td class="title"><a href="search_diagnosis.html">애질런트 테크놀러지스<span
@@ -207,10 +216,7 @@
                                             <span class="increase">+2.9<b>%</b></span><!-- increase 증가, decrease 감소 -->
                                         </td>
                                         <td class="score"><span>67<b>점</b></span></td>
-                                        <td class="num">
-                                            <span>8869.<b>00</b></span>
-                                            <span class="hit">적정주가</span>
-                                        </td>
+                                        <td class="opinion"><span class="waitting">관망</span></td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -232,22 +238,7 @@
                                 <!-- //guide_txt -->
                             </div>
                             <!-- //att_service -->
-
-                            <!-- 프리미엄 서비스 사용자가 아닌 경우 -->
-                            <div class="prm_div weeks_free">
-                                <div class="box">
-                                    <div class="left">
-                                        <p class="title"><i></i>초이스스탁US 프리미엄</p>
-                                        <p class="txt">모든 서비스를 제한없이 이용하실 수 있습니다.</p>
-                                    </div>
-                                    <div class="right">
-                                        <p><a href="#" class="btn_free">2주 무료보기<i></i></a></p>
-                                        <p><a href="../stock/service.html" class="go_link">[서비스 안내]</a></p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- //프리미엄 서비스 사용자가 아닌 경우 -->
-
+                           
                         </div>
                         <!-- 인기종목 -->
                         <div id="tab2" class="tab_content">
@@ -407,48 +398,42 @@
         </div>
         <!-- //container -->
 
-        <div id="footer" class="type_sub">
-            <!-- 인증 -->
-            <div class="certification">
-                <ul>
-                    <li><span>과학기술정보통신부</span><a
-                            href="http://www.datahero.co.kr/%eb%8d%b0%ec%9d%b4%ed%84%b0%ed%9e%88%ec%96%b4%eb%a1%9c-%ea%b3%bc%ea%b8%b0%ec%a0%95%ed%86%b5%eb%b6%80-2020-%eb%8d%b0%ec%9d%b4%ed%84%b0%ec%8a%a4%ed%83%80%ec%a6%88-%ec%84%a0%ec%a0%95/"
-                            title="데이터스타즈" target="_black"><img src="../img/datastars.png" alt="데이터스타즈"></a></li>
-                    <li><span>벤처기업인증</span><a
-                            href="http://www.datahero.co.kr/%eb%8d%b0%ec%9d%b4%ed%84%b0%ed%9e%88%ec%96%b4%eb%a1%9c-%ea%b8%b0%ec%88%a0%eb%b3%b4%ec%a6%9d%ea%b8%b0%ea%b8%88-%eb%b2%a4%ec%b2%98%ea%b8%b0%ec%97%85-%ec%9d%b8%ec%a6%9d-%ed%9a%8d%eb%93%9d/"
-                            title="벤처인증" target="_black"><img src="../img/kobo_logo.png" alt="벤처인증"></a></li>
-                </ul>
-            </div>
-            <!-- //인증 -->
-
+        <div id="footer" class="chous_footer typeSub_f"> 
+			
             <div class="notice">
+                <div class="service_info">
+                    <p>본 서비스는 투자판단에 참고용으로만 사용하실 수 있으며, 모든 투자판단은 투자자 본인의 책임으로 당사는 그 결과에 대해 법적인 일체의 책임을 지지 않습니다.</p>
+                    <p class="dataLink">data from <a href="https://www.quandl.com/" target="_blank">Quandl and Sharadar</a>
+                    </p>
+                </div>
+
                 <ul class="terms_list">
                     <li><a href="/member/terms">이용약관</a></li>
-                    <li><a href="/member/policy">개인정보처리방침</a></li>
-                    <li><a href="https://www.datahero.co.kr" target="_blank">회사소개</a></li>
+                    <li><a href="https://www.datahero.co.kr/choicestockus-faq/" target="_blank">서비스 FAQ</a></li>
+                    <li><a href="/member/policy"><strong>개인정보처리방침</strong></a></li>
+                    <li><a href="https://www.datahero.co.kr/choicestockus-update/" target="_black">업데이트 소식</a>
+                    </li><li><a href="https://www.datahero.co.kr" target="_blank">회사소개</a></li>
                 </ul>
 
                 <div class="foot_info">
                     <div class="info_tel_box">
-                        <p>
-                            <span class="tel_num"><i></i>02-6225-2300</span>
-                            <span class="sns_kakao"><a href="http://pf.kakao.com/_QDLHxb/chat" target="_blank"><img
-                                        src="../img/sns_kakao_l.png" alt="카카오톡 문의하기"></a></span>
-                        </p>
+						<span class="cs"><a href="https://kq64o.channel.io/" target="blank">온라인 1:1 문의하기</a> (평일 9:00~17:00, 점심 11:20~12:20/ 주말 및 공휴일 휴무) </span>
+                        <!--<p><span class="sns_kakao"><a href="http://pf.kakao.com/_QDLHxb/chat" target="_blank"><img src="/img/sns_kakao.svg" alt="카카오톡 문의하기"></a></span></p>
+                        <span class="cs">평일 9:00 ~ 17:00 (주말/공휴일 제외)<br>점심시간 11:20 ~ 12:20</span>-->
                     </div>
                     <!-- //info_tel_box -->
-                    <p class="copyright"><a href="https://www.datahero.co.kr" target="_blank">ⓒ (주)데이터히어로</a><i></i>
-                        <strong>대표자</strong> 김인중 <i></i> <strong>사업자등록번호 291-88-01393</strong> <i></i> 서울특별시 서초구 강남대로
-                        311, 1021호
-                    </p>
-                    <div class="service_info">
-                        <p>본 서비스는 투자판단에 참고용으로만 사용하실 수 있으며, 모든 투자판단은 투자자 본인의 책임으로 당사는 그 결과에 대해 법적인 일체의 책임을 지지 않습니다.</p>
-                        <p class="dataLink">data from <a href="https://www.quandl.com/" target="_blank">Quandl and
-                                Sharadar</a>
-                        </p>
-                    </div>
+                    					<p class="copyright"><a href="https://www.datahero.co.kr" target="_blank">ⓒ (주)데이터히어로</a><i></i>
+                        <strong>대표자</strong> 김인중 <br>서울특별시 서초구 강남대로 311 <i></i> 사업자등록번호 291-88-01393 <i></i>
+                    </p>                    
                 </div>
                 <!-- //foot_info -->
+                <div class="family_site">
+                    <strong>Family</strong>&nbsp;&nbsp;&nbsp;&gt;&nbsp;&nbsp;&nbsp;<a href="https://super.choicestock.co.kr/?utm_source=choicestock&amp;utm_medium=banner&amp;utm_campaign=service" target="blank">슈퍼스톡스</a> <i></i> <a href="https://www.valueline.co.kr/?utm_source=choicestock&amp;utm_medium=banner&amp;utm_campaign=service" target="blank">밸류라인</a> <i></i>
+
+                    <a href="https://bigfinance.co.kr/" target="blank">빅파이낸스</a>
+                </div>
+                <!-- //family_site -->
+
             </div>
             <!-- //notice -->
         </div>
@@ -456,5 +441,57 @@
     </div>
     <!-- //wrap -->
 </body>
+
+<!-- [첫달 3,000] 초이스스탁US 프리미엄 첫달 3,000원 -->
+<div class="first_month_3300 md-modal md-effect-3" id="modal-5">
+    <!-- class : md-show 가 없는 경우 팝업 숨김, md-show 있는 경우 팝업 노출  -->
+    <div class="md-content">
+        <div id="setting" class="setting_area">
+            <div class="pop_header">
+                <a href="#setting_anchor" title="로그인 레이어 닫기" class="close"><img src="../img/clse_w.png" alt="팝업닫기"></a>
+                <div class="sub_top">
+                    <h2 class="h2_title">초이스스탁US 프리미엄<span><strong>로그인만하면 2주 무료!</strong></span></h2>
+                    <p class="period">미국주식 추천과 분석, 알림까지 한번에!</p>
+                </div>
+            </div>
+            <!-- //pop_header -->
+            <div class="pop_con">
+                <table cellspacing="0" border="0" class="tableRanking type_compare">
+                    <tbody>
+                        <tr>
+                            <td class="mid_td"><span>• 5분이면 끝! 매력적인 종목을 한눈에 <b>종목진단</b></span></td>
+                        </tr>
+                        <tr>
+                            <td class="mid_td"><span>• 엄선된 저평가 우량주만 콕! <b>종목추천/포트폴리오</b></span></td>
+                        </tr>
+                        <tr>
+                            <td class="mid_td"><span>• 투자매력 + 저평가 + 수급 <b>오늘의 승부주</b></span></td>
+                        </tr>
+                        <tr>
+                            <td class="mid_td"><span>• 투자매력주의 매매판단을 빠르게! <b>AI적정주가</b></span></td>
+                        </tr>
+                        <tr>
+                            <td class="mid_td"><span>• 나만의 취향저격 종목추천 <b>종목캐치</b></span></td>
+                        </tr>
+                        <tr>
+                            <td class="mid_td"><span>• 관심종목/보유종목 모니터링 <b>관심종목/원스톱진단</b></span></td>
+                        </tr>
+                        <tr>
+                            <td class="mid_td"><span>• 종목추천 + 관심종목 업데이트 <b>알림서비스</b></span></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+            <div class="pop_btm">
+                <div class="btnArea payBtn">
+                    <!-- <a href="login_complete.html" class="btn btn_save"><b>프리미엄</b> 가입하기<i></i></a> -->
+                    <a href="stock/service_prm.html" class="btn btn_save"><b>프리미엄 2주 무료체험</b><i></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="md-overlay"></div><!-- the overlay element -->
 
 </html>

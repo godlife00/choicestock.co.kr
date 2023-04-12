@@ -880,10 +880,26 @@ body {
 
 .globalStock .middle_banner.event .link_banner,
 .globalStock .middle_banner.event .link_banner img {
-	display: inline-block;
-	width: 100%;
+	display: block;	
+	width: 100%;	
+	background: url('../img/banner/banner_free_2weeks.png') no-repeat left top;
+	background-size: cover;
 }
-
+.globalStock .middle_banner.event .link_banner a {
+	display: flex;
+	flex-wrap: wrap;	
+	align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+	gap: 3px;
+	padding: 16px 0;	
+	color: #fff;
+	font-size: 12px;
+}
+.globalStock .middle_banner.event .link_banner a strong {	
+	color: #1ee8be;
+	font-size: 12px;
+}
 .globalStock .middle_banner.event.main_event {
 	width: calc(100% - 30px);
 	margin: 15px auto 0;
@@ -1489,7 +1505,7 @@ table.tableRanking td {
 	opacity: 1;
 	height: 48px;
 	box-sizing: border-box;
-	z-index: 999;
+	z-index: 998;
 }
 
 .globalStock .purchase_area .btn_purchase {
@@ -11466,7 +11482,31 @@ table.tableRanking td {
 	text-align: center;
 	vertical-align: top;
 }
-
+.globalStock .sub_search .latest_results .tabsArea table.tableRanking.type_2Line td.opinion {
+	
+}
+.globalStock .sub_search .latest_results .tabsArea table.tableRanking.type_2Line td.opinion span {
+	display: inline-block;
+	margin-top: 4px;
+	padding: 4px 16px;
+	border-radius: 3px;
+	font-size: 0.8125rem;
+	letter-spacing: -0.33px;
+	text-align: center;
+	color: #fff;
+}
+.globalStock .sub_search .latest_results .tabsArea table.tableRanking.type_2Line td.opinion span.buy {
+	background-color: #FF4500;
+}
+.globalStock .sub_search .latest_results .tabsArea table.tableRanking.type_2Line td.opinion span.sell {
+	background-color: #1E90FF;
+}
+.globalStock .sub_search .latest_results .tabsArea table.tableRanking.type_2Line td.opinion span.hold {
+	background-color: #008000;
+}
+.globalStock .sub_search .latest_results .tabsArea table.tableRanking.type_2Line td.opinion span.waitting {
+	background-color: #a1a1a1;
+}
 .globalStock .sub_search .latest_results .tabsArea table.tableRanking td span.na {
 	color: #939393;
 	font-size: 0.8rem;
@@ -11803,10 +11843,15 @@ table.tableRanking td {
 	width: 100%;
 }
 
-.globalStock .sub_search .latest_results .tabsArea .one_step {
+.globalStock .sub_search .latest_results .tabsArea .one_step {		
 	margin: 18px auto 0;
 	padding: 15px 10px;
-	background: #e6e7f4;
+	background: #e6e7f4;	
+	display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .globalStock .sub_search .latest_results .tabsArea .one_step .txt {
@@ -11815,7 +11860,7 @@ table.tableRanking td {
 	text-align: left;
 	line-height: 25px;
 	vertical-align: top;
-	padding: 0 10px;
+	/* padding: 0 10px; */
 	letter-spacing: -0.3px;
 }
 
@@ -30253,8 +30298,9 @@ table.tableRanking td {
 .globalStock .sub_search .sub_mid.adequateArea .listWrap .mid .charm_num .signal.hold {
 	background-color: #008000;
 }
-.globalStock .sub_search .sub_mid.adequateArea .listWrap .mid .charm_num .signal.waitting {
-	background-color: #4C4C4C;
+
+.globalStock .sub_search .sub_mid.adequateArea .listWrap .mid .charm_num .signal.waitting {	
+	background-color: #a1a1a1;
 }
 .globalStock .sub_search .sub_mid.adequateArea .listWrap .mid .charm_num .signal.lock {
 	background-color: #9ea6e0;	
@@ -33314,7 +33360,7 @@ table.tableRanking td {
 	width: 60%;
 	font-size: 17px;
 	font-weight: bold;
-	line-height: 1.6;
+	line-height: 1.4;
 	text-align: left;
 	color: #00aece;
 }
@@ -33339,6 +33385,30 @@ table.tableRanking td {
 	text-decoration: underline;
 }
 
+.free_2weeks .content .info_txt .txt03 {
+	display: inline-block;
+	width: 60%;
+	margin-top: 14px;
+	font-size: 14px;
+	line-height: 1.5;
+	color: #939393;
+}
+.free_2weeks.signalpop .content .info_txt .txt01 {
+	width: 100%;
+}
+.free_2weeks.signalpop .content .info_txt .txt02 {
+	margin-top: 7px;	
+	color: #444;
+}
+
+.free_2weeks.signalpop .content .info_txt {
+	background-image: url('../img/signalpop_bg.jpg');		
+	background-size: 120px auto;
+	background-position: right 55%;
+}
+.free_2weeks.signalpop .ftr {
+	margin-top: 0;
+}
 .free_2weeks .content .info_tip .tip {
 	font-size: 13px;
 	line-height: 1.24;

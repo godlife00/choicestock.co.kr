@@ -1534,6 +1534,11 @@
 	background-color: #DEF0FF;	
 	color: #014B8D;
 }
+.globalStock.wowtv .sub_search .sub_mid .adequate_stock.premiumLock_AI .box .adequate_price .nodata_area .no_data a {
+	color: #014b8d;
+	font-weight: bold;
+}
+
 .globalStock.wowtv .sub_search .sub_mid .search_financials_area {
 	margin-top: 20px;
 }
