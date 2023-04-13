@@ -32637,10 +32637,37 @@ table.tableRanking td {
 	display: none;
 }
 
+.globalStock .sub_search .sub_mid .eventsum_area .chart_layout {
+	height: 100%;
+    width: 100%;	
+}
 .globalStock .sub_search .sub_mid .eventsum_area .chart_layout .highcharts-series-label text {
 	opacity: 0;
 	display: none;
 }
+.globalStock .sub_search .sub_mid .eventsum_area .chart_layout .highcharts-navigator-xaxis {
+	font-size: 0;
+	opacity: 0;
+}
+
+.globalStock .sub_search .sub_mid .eventsum_area .chart_layout .highcharts-input-group,
+.globalStock .sub_search .sub_mid .eventsum_area .chart_layout .highcharts-range-selector-group,
+.globalStock .sub_search .sub_mid .eventsum_area .chart_layout .highcharts-navigator {
+	display: none;
+}
+
+.globalStock .sub_search .sub_mid .eventsum_area .chart_layout .highcharts-point-up {
+	fill: rgb(211, 0, 0);
+	stroke: rgb(211, 0, 0);
+}
+
+.globalStock .sub_search .sub_mid .eventsum_area .chart_layout .highcharts-point-down,
+.globalStock .sub_search .sub_mid .eventsum_area .chart_layout .highcharts-point-down-bearish-up {
+	fill: rgb(0, 98, 255);
+	stroke: rgb(0, 98, 255);
+}
+
+
 
 .globalStock .sub_search .sub_mid .eventsum_area .freeChare {
 	position: relative;
