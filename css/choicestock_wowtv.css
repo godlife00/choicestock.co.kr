@@ -3025,10 +3025,14 @@
 	width:100%;
 	font-size:1.125rem;
 	color:#fff;
-	padding:17px 5px;
+	padding:17px 5px 17px 21px;
 	background-color:#C92020;	
 	z-index:9999;
 	opacity:1;
+}
+.globalStock.wowtv .wowtv_applybtn .btn.btn_apply strong {	
+	color:#fff;	
+	font-weight: normal;
 }
 .globalStock.wowtv .wowtv_applybtn .btn.btn_apply::before {
 	content:"";
@@ -3043,8 +3047,8 @@
 }
 .globalStock.wowtv .wowtv_applybtn .btn.btn_apply i {
 	position:absolute;
-	right:calc(50% - 97px);
-	top:22px;
+	right:calc(50% - 120px);
+	top:20px;
 	display:inline-block;
 	width:5px;
 	height:10px;
@@ -3053,8 +3057,8 @@
 }
 @media (min-width:320px) and (max-width:374px) {
 	.globalStock.wowtv .wowtv_applybtn .btn.btn_apply i {
-		right:calc(50% - 88px);
-		top:21px;
+		right:calc(50% - 110px);
+		top:19px;
 	}
 	.globalStock.wowtv .wowtv_applybtn .btn.btn_apply::before {
 		width:74px;
