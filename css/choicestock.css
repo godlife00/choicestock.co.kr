@@ -7099,8 +7099,8 @@ table.tableRanking td {
 
 .globalStock .sub_recom .sub_mid .tabsArea .tabs_two+.tab_container div {
 	color: #333;
-	font-size: 0.9375rem;
-	line-height: 26px;
+	font-size: 1.063rem;
+	line-height: 27px;
 	letter-spacing: normal;
 	word-break: break-all;
 	word-wrap: break-word;
@@ -7124,9 +7124,9 @@ table.tableRanking td {
 
 .globalStock .sub_recom .sub_mid .tabsArea .tabs_two+.tab_container .tab_content li {
 	padding: 0;
-	font-size: 0.875rem;
+	font-size: 1rem;
 	padding-left: 13px;
-	line-height: 22px;
+	line-height: 26px;
 	letter-spacing: normal;
 	position: relative;
 }
