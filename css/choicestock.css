@@ -18163,7 +18163,7 @@ table.tableRanking td {
 	background-size: 80px 53px;
 }
 
-.globalStock .sub_recipe .sub_mid.recipe_tabs .box_tabs li:nth-child(3) a {
+.globalStock .sub_recipe .sub_mid.recipe_tabs .box_tabs li:nth-child(4) a {
 	/* 실적발표 */
 	background: #fff url('../img/recipe_05.png') no-repeat center 25px;
 	background-size: 50px 49px;
@@ -18175,24 +18175,29 @@ table.tableRanking td {
 	background-size: auto 62px;
 }
 
-.globalStock .sub_recipe .sub_mid.recipe_tabs .box_tabs li:nth-child(5) a {
+.globalStock .sub_recipe .sub_mid.recipe_tabs .box_tabs li:nth-child(6) a {
 	/* 배당매력주 */
 	background: #fff url('../img/recipe_01.png') no-repeat center 18px;
 }
 
-.globalStock .sub_recipe .sub_mid.recipe_tabs .box_tabs li:nth-child(6) a {
+.globalStock .sub_recipe .sub_mid.recipe_tabs .box_tabs li:nth-child(7) a {
 	/* 이익성장주 */
 	background: #fff url('../img/recipe_02.png') no-repeat center 21px;
 }
 
-.globalStock .sub_recipe .sub_mid.recipe_tabs .box_tabs li:nth-child(7) a {
+.globalStock .sub_recipe .sub_mid.recipe_tabs .box_tabs li:nth-child(8) a {
 	/* 소비자독점 */
 	background: #fff url('../img/recipe_03.png') no-repeat center 21px;
 }
 
-.globalStock .sub_recipe .sub_mid.recipe_tabs .box_tabs li:nth-child(8) a {
+.globalStock .sub_recipe .sub_mid.recipe_tabs .box_tabs li:nth-child(9) a {
 	/* 슈퍼스톡 */
 	background: #fff url('../img/recipe_04.png') no-repeat center 29px;
+}
+.globalStock .sub_recipe .sub_mid.recipe_tabs .box_tabs li.today_signal a {
+	/* 오늘의 매매신호 */
+	background: #fff url('../img/recipe_today.png') no-repeat center 21px;
+	background-size: 56px auto;
 }
 
 /* 발굴 - 투자레시피 view */
@@ -18242,6 +18247,10 @@ table.tableRanking td {
 
 .globalStock .sub_recipe .sub_top.view.recipesale .box_tabs {
 	background-image: url('../img/recipe_sale.svg');
+	background-size: auto 64px;
+}
+.globalStock .sub_recipe .sub_top.view.recipeToday .box_tabs {
+	background-image: url('../img/recipe_today.png');
 	background-size: auto 64px;
 }
 
@@ -18310,6 +18319,30 @@ table.tableRanking td {
 	content: "";
 	display: block;
 	clear: both;
+}
+.globalStock .sub_recipe .sub_mid.recipe_view .recipe_area .news_no_data {
+	margin: 20px 0 55px;
+	border-radius: 20px;
+	background: #fff url('../img/bg_nodata.png') no-repeat center 70px;
+	box-sizing: border-box;
+	padding-top: 240px;
+	padding-bottom: 15px;
+	text-align: center;
+}
+
+.globalStock .sub_recipe .sub_mid.recipe_view .recipe_area .news_no_data .txt {
+	display: block;
+	padding: 15px 15px;
+	background: #E6E7F4;
+	margin: 20px auto 0;
+	width: calc(100% - 20px);
+	box-sizing: border-box;
+	border-radius: 12px;
+	color: #404fc3;
+	font-size: 0.9375rem;
+	border-bottom: none;
+	text-align: center;
+	line-height: 1.43;
 }
 
 .globalStock .sub_recipe .sub_mid.recipe_view .recipe_area .area ul.list {
@@ -30829,7 +30862,7 @@ table.tableRanking td {
 	font-size: 0.75rem;
 	line-height: normal;
 	text-align: right;
-	min-width: 68px;
+	min-width: 74px;
 }
 
 .globalStock .sub_search .sub_mid.adequateArea .listWrap .mid .num_bar .line .barArea {
@@ -30899,15 +30932,16 @@ table.tableRanking td {
 
 .globalStock .sub_search .sub_mid.adequateArea .listWrap .latest_signal {
 	margin-top: 15px;
-	display: flex;
-	justify-content: space-between;
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: baseline;
 }
 .globalStock .sub_search .sub_mid.adequateArea .listWrap .latest_signal .date ,
 .globalStock .sub_search .sub_mid.adequateArea .listWrap .latest_signal .date b {
 	font-size: 0.875rem;    	
-    line-height: 1.18;
-	text-align: left;
-    color: #8c90ad;	
+    line-height: 1.18;	
+    color: #404fc3;	
 	padding-bottom: 5px;
 }
 .globalStock .sub_search .sub_mid.adequateArea .listWrap .latest_signal .date::before {
@@ -30920,10 +30954,9 @@ table.tableRanking td {
 }
 .globalStock .sub_search .sub_mid.adequateArea .listWrap .latest_signal .num,
 .globalStock .sub_search .sub_mid.adequateArea .listWrap .latest_signal .num b {
-	font-size: 0.875rem;    	
-    line-height: 1.18;
-	text-align: left;
-    color: #8c90ad;	
+	font-size: 0.75rem;    	
+    line-height: 1.18;	
+    color: #939393;	
 }
 .globalStock .sub_search .sub_mid.adequateArea .premiumLock_area {
 	margin-top: 10px;
