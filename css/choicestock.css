@@ -30897,6 +30897,34 @@ table.tableRanking td {
 	background-color: #00BFFF;
 }
 
+.globalStock .sub_search .sub_mid.adequateArea .listWrap .latest_signal {
+	margin-top: 15px;
+	display: flex;
+	justify-content: space-between;
+}
+.globalStock .sub_search .sub_mid.adequateArea .listWrap .latest_signal .date ,
+.globalStock .sub_search .sub_mid.adequateArea .listWrap .latest_signal .date b {
+	font-size: 0.875rem;    	
+    line-height: 1.18;
+	text-align: left;
+    color: #8c90ad;	
+	padding-bottom: 5px;
+}
+.globalStock .sub_search .sub_mid.adequateArea .listWrap .latest_signal .date::before {
+	content: '';
+    display: inline-block;    
+	padding-right: 10px;
+    width: 12px;
+    height: 12px;
+    background: url('../img/icon_awesome.svg') no-repeat center center;
+}
+.globalStock .sub_search .sub_mid.adequateArea .listWrap .latest_signal .num,
+.globalStock .sub_search .sub_mid.adequateArea .listWrap .latest_signal .num b {
+	font-size: 0.875rem;    	
+    line-height: 1.18;
+	text-align: left;
+    color: #8c90ad;	
+}
 .globalStock .sub_search .sub_mid.adequateArea .premiumLock_area {
 	margin-top: 10px;
 	background: var(--colbar) url("/img/premiumLock_area.png") no-repeat 0 0;
