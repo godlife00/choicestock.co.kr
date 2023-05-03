@@ -30941,7 +30941,7 @@ table.tableRanking td {
 .globalStock .sub_search .sub_mid.adequateArea .listWrap .latest_signal .date b {
 	font-size: 0.875rem;    	
     line-height: 1.18;	
-    color: #404fc3;	
+    color: #444;	
 	padding-bottom: 5px;
 }
 .globalStock .sub_search .sub_mid.adequateArea .listWrap .latest_signal .date::before {
@@ -30956,7 +30956,7 @@ table.tableRanking td {
 .globalStock .sub_search .sub_mid.adequateArea .listWrap .latest_signal .num b {
 	font-size: 0.75rem;    	
     line-height: 1.18;	
-    color: #939393;	
+    color: #444;	
 }
 .globalStock .sub_search .sub_mid.adequateArea .premiumLock_area {
 	margin-top: 10px;
