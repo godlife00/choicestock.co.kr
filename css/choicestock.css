@@ -30939,9 +30939,9 @@ table.tableRanking td {
 }
 .globalStock .sub_search .sub_mid.adequateArea .listWrap .latest_signal .date ,
 .globalStock .sub_search .sub_mid.adequateArea .listWrap .latest_signal .date b {
-	font-size: 0.875rem;    	
+	font-size: 0.75rem;    	
     line-height: 1.18;	
-    color: #444;	
+    color: #939393;	
 	padding-bottom: 5px;
 }
 .globalStock .sub_search .sub_mid.adequateArea .listWrap .latest_signal .date::before {
@@ -30956,7 +30956,36 @@ table.tableRanking td {
 .globalStock .sub_search .sub_mid.adequateArea .listWrap .latest_signal .num b {
 	font-size: 0.75rem;    	
     line-height: 1.18;	
-    color: #444;	
+    color: #939393;	
+}
+.globalStock .sub_search .sub_mid.adequateArea + .table_btmarea {	
+	width: calc(100% - 30px);
+    margin: 5px auto 20px;
+    border-top: 1px solid #f4f4f5;
+	display: flex;
+    gap: 7px;
+    justify-content: flex-end;
+    align-items: center;
+}
+.globalStock .sub_search .sub_mid.adequateArea + .table_btmarea a.more {
+    position: relative;
+    display: block;
+    color: #333;
+	font-weight: bold;
+    font-size: 0.875rem;
+    padding: 8px 2px 3px;
+	display: flex;
+    gap: 7px;
+	justify-content: center;
+    align-items: center;	
+    background: url('../img/bg_bbline.png') repeat-x 0 calc(100% + 8px);
+}
+.globalStock .sub_search .sub_mid.adequateArea + .table_btmarea a.more i {	    
+    display: inline-block;
+    width: 5px;
+    height: 10px;		
+    background: url('../img/icon_moreR.png') no-repeat center center;
+    background-size: cover;	
 }
 .globalStock .sub_search .sub_mid.adequateArea .premiumLock_area {
 	margin-top: 10px;
@@ -33813,7 +33842,9 @@ table.tableRanking td {
 .free_2weeks .content .info_txt {
 	padding-top: 35px;
 	padding-bottom: 25px;
-	background: url('../img/bg_free_2weeks.svg') no-repeat right 17px;
+	/* background: url('../img/bg_free_2weeks.svg') no-repeat right 17px; 프리미엄 무료체험 */ 
+	background: url('../img/recipe_today.png') no-repeat calc(100% - 10%) 50%; /* 오늘의 매매신호 */
+	background-size: auto 91px;
 }
 
 .free_2weeks .content .info_txt .txt01 {
