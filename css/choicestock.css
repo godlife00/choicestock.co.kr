@@ -20642,8 +20642,8 @@ table.tableRanking td {
 	background-color: #20b703;
 }
 
-.globalStock .sub_login .loign .sns li:first-child a::before,
-.globalStock .sub_login .loign .sns li:last-child a::before {
+.globalStock .sub_login .loign .sns li:first-child a i,
+.globalStock .sub_login .loign .sns li:last-child a i {
 	content: '';
 	position: absolute;
 	left: calc(50% - 60px);
@@ -20657,11 +20657,11 @@ table.tableRanking td {
 	color: #333;
 }
 
-.globalStock .sub_login .loign .sns li:first-child a::before {
+.globalStock .sub_login .loign .sns li:first-child a i {
 	background: url('../img/icon_sns_n.svg') no-repeat left top;
 }
 
-.globalStock .sub_login .loign .sns li:last-child a::before {
+.globalStock .sub_login .loign .sns li:last-child a i {
 	background: url('../img/icon_sns_k.svg') no-repeat left top;
 }
 
