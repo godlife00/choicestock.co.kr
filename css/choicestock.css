@@ -20671,28 +20671,28 @@ table.tableRanking td {
 	width: 100%;
 }
 
-.globalStock .sub_login .loign .att_service:nth-child(3) {
+.globalStock .sub_login .loign .att_service:nth-of-type(2) {		
 	padding: 0;
 	text-align: left;
 	margin-top: 0;
 }
 
-.globalStock .sub_login .loign .att_service:nth-child(3) .service_title {
+.globalStock .sub_login .loign .att_service:nth-of-type(2) .service_title {
 	font-size: 0.9375rem;
 	border-bottom: none;
 }
 
-.globalStock .sub_login .loign .att_service:nth-child(3) .service_title strong {
+.globalStock .sub_login .loign .att_service:nth-of-type(2) .service_title strong {
 	color: #404fc3;
 }
 
-.globalStock .sub_login .loign .att_service:nth-child(3) .guide_txt.bg_blue {
+.globalStock .sub_login .loign .att_service:nth-of-type(2) .guide_txt.bg_blue {
 	padding: 22px 15px;
 	background: #e6e7f4;
 	margin-top: 0;
 }
 
-.globalStock .sub_login .loign .att_service:nth-child(3) .guide_txt li.title {
+.globalStock .sub_login .loign .att_service:nth-of-type(2) .guide_txt li.title {
 	color: #939393;
 }
 
