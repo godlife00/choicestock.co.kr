@@ -3060,7 +3060,7 @@ table.tableRanking td {
 	color: #404fc3;
 	font-size: 0.875rem;
 	padding-right: 12px;
-	line-height: 18px;
+	line-height: 18px;	
 }
 
 .globalStock .ptfo_recom .ptfo_title::after {
@@ -3073,6 +3073,9 @@ table.tableRanking td {
 	position: absolute;
 	right: 3px;
 	top: 1px;
+}
+.globalStock .ptfo_recom .ptfo_title a {
+	color: #404fc3;
 }
 
 .globalStock .ptfo_recom dl.revenue {

@@ -3643,7 +3643,7 @@ $(document).ready(function () {
                 name: '매출채권 회전일수',
             }, {
                 type: 'line',
-                data: [14.1, 9.6, 5.4, 9.9, 1.5, 06],
+                data: [14.1, 9.6, 5.4, 9.9, 1.5, 106],
                 name: '재고자산 회전일수',
             }, {
                 type: 'line',
