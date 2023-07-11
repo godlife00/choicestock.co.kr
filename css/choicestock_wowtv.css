@@ -1747,7 +1747,7 @@
 	background:#f6f7fa url('../img/wow_recipe_top50.svg') no-repeat center 25px;
 	background-size: auto 64px;
 }
-.globalStock.wowtv .sub_recipe .sub_mid.recipe_tabs .box_tabs li:nth-child(4) a {
+.globalStock.wowtv .sub_recipe .sub_mid.recipe_tabs .box_tabs li.performance a {
 	/* 실적발표 */
 	background:#f6f7fa url('../img/wow_recipe_02.svg') no-repeat center 24px;
 }
@@ -1756,21 +1756,21 @@
 	background:#f6f7fa url('../img/wow_recipe_sale.svg') no-repeat center 15px;
 	background-size: auto 62px;
 }
-.globalStock.wowtv .sub_recipe .sub_mid.recipe_tabs .box_tabs li:nth-child(6) a {
+.globalStock.wowtv .sub_recipe .sub_mid.recipe_tabs .box_tabs li.allocation a {
 	/* 배당매력주 */
 	background:#f6f7fa url('../img/wow_recipe_03.svg') no-repeat center 21px;
 }
-.globalStock.wowtv .sub_recipe .sub_mid.recipe_tabs .box_tabs li:nth-child(7) a {
+.globalStock.wowtv .sub_recipe .sub_mid.recipe_tabs .box_tabs li.growth a {
 	/* 이익성장주 */
 	background:#f6f7fa url('../img/wow_recipe_04.svg') no-repeat center 29px;
 	background-size: auto 58px;
 }
-.globalStock.wowtv .sub_recipe .sub_mid.recipe_tabs .box_tabs li:nth-child(8) a {
+.globalStock.wowtv .sub_recipe .sub_mid.recipe_tabs .box_tabs li.monopoly a {
 	/* 소비자독점 */
 	background:#f6f7fa url('../img/wow_recipe_05.svg') no-repeat center 25px;
 	background-size: auto 62px;
 }
-.globalStock.wowtv .sub_recipe .sub_mid.recipe_tabs .box_tabs li:nth-child(9) a {
+.globalStock.wowtv .sub_recipe .sub_mid.recipe_tabs .box_tabs li.superStock a {
 	/* 슈퍼스톡 */
 	background:#f6f7fa url('../img/wow_recipe_01.svg') no-repeat center 18px;
 }
@@ -2540,6 +2540,8 @@
 	display: grid;	
 	gap: 4px;
 	grid-template-columns: 1fr 1fr 1fr;	
+	max-width: 70px;
+	margin: 0 auto;
 }
 .globalStock.wowtv .gnb li.menu.active {
 	margin: 0;
