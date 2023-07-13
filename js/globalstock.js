@@ -549,23 +549,28 @@ $(document).ready(function () {
         });
     });
 
-    //swiper
     //메인 상단
-    var swiper = new Swiper('.attentionSwiper', {
-        // autoHeight: true, //enable auto height
-        spaceBetween: 20,
+    var attentionSwiper = new Swiper('.attentionSwiper', {
+        autoplay: {
+            delay: 3500,
+            disableOnInteraction: false,
+        },        
+        spaceBetween: 15,
+        loop: true,
         pagination: {
             el: '.swiper-pagination',
         },
     });
+
     //메인 주식에 미치다
-    var swiper = new Swiper('.mijumiSwiper', {
+    var mijumiSwiper = new Swiper('.mijumiSwiper', {
         slidesPerView: 2,
         slidesPerGroup: 2,
         loopAdditionalSlides: 1,
         spaceBetween: 10,
     });
-    var swiper = new Swiper('.event_anaySwiper', {
+
+    var event_anaySwiper = new Swiper('.event_anaySwiper', {
         slidesPerView: 1.4,
         slidesPerGroup: 1,
         loopAdditionalSlides: 1,
@@ -574,32 +579,47 @@ $(document).ready(function () {
         loop: true,
         loopFillGroupWithBlank: true,
     });
+
     //메인 승부주
-    var swiper = new Swiper('.maingameSwiper', {
+    var maingameSwiper = new Swiper('.maingameSwiper', {
         slidesPerView: "auto",
         spaceBetween: 8,
     });
-    var swiper = new Swiper('.catchSwiper, .catchSwiper2', {
+
+    var catchSwiper = new Swiper('.catchSwiper, .catchSwiper2', {
         slidesPerView: 2.2,
         spaceBetween: 0,
         freeMode: true,
     });
-    //메인 상단 모닝브리핑
-    var swiper = new Swiper('.mainbriefingSwiper', {
+
+    //메인 상단 나스닥코스닥
+    var mainnasdaqSwiper = new Swiper('.mainnasdaqSwiper', {
         autoplay: {
             delay: 3500,
+            disableOnInteraction: false,
+        },
+        spaceBetween: 10,
+        loop: true,
+    });
+
+    //메인 상단 모닝브리핑
+    var mainbriefingSwiper = new Swiper('.mainbriefingSwiper', {
+        autoplay: {
+            delay: 3000,
             disableOnInteraction: false,
         },
         direction: 'vertical',
         loop: true,
     });
+
     //메인 하단 레시피
-    var swiper = new Swiper('.mainrecipeSwiper', {
+    var mainrecipeSwiper = new Swiper('.mainrecipeSwiper', {
         slidesPerView: "auto",
         spaceBetween: 10,
     });
+
     //미국주식창 메인 이벤트 배너 3개 롤링
-    var swiper = new Swiper('.event_bannerSwiper', {
+    var event_bannerSwiper = new Swiper('.event_bannerSwiper', {
         autoplay: {
             delay: 3500,
             disableOnInteraction: false,
@@ -609,15 +629,16 @@ $(document).ready(function () {
     });
 
     //서브 종목 추천
-    var swiper = new Swiper('.recomSwiper', {
+    var recomSwiper = new Swiper('.recomSwiper', {
         autoHeight: true, //enable auto height
         spaceBetween: 20,
         pagination: {
             el: '.swiper-pagination',
         },
     });
+
     //서브 검색 - 종목진단 - 투자매력
-    var swiper = new Swiper('.swiper_competChar', {
+    var swiper_competChar = new Swiper('.swiper_competChar', {
         slidesPerView: 2,
         slidesPerGroup: 1,
         loopAdditionalSlides: 1,
@@ -626,16 +647,18 @@ $(document).ready(function () {
         loop: false,
         loopFillGroupWithBlank: false,
     });
+
     //서브 발굴 - 미국주식 탐구생활 
-    var swiper = new Swiper('.swiper-research', {
+    var swiper_research = new Swiper('.swiper-research', {
         autoHeight: true, //enable auto height
         spaceBetween: 20,
         pagination: {
             el: '.swiper-pagination',
         },
     });
+
     //서브 발굴 - 뉴스
-    var swiper = new Swiper('.newsSwiper', {
+    var newsSwiper = new Swiper('.newsSwiper', {
         autoplay: {
             delay: 3500,
             disableOnInteraction: false,
@@ -643,16 +666,18 @@ $(document).ready(function () {
         loop: true,
         spaceBetween: 10,
     });
+
     //서비스소개
-    var swiper = new Swiper('.swiper_service', {
+    var swiper_service = new Swiper('.swiper_service', {
         autoHeight: true, //enable auto height
         spaceBetween: 20,
         pagination: {
             el: '.swiper-pagination',
         },
     });
+
     //서브 발굴 - 승부주 
-    var swiper = new Swiper('.gameSwiper', {
+    var gameSwiper = new Swiper('.gameSwiper', {
         setWrapperSize: true,
         pagination: {
             el: '.swiper-pagination',
@@ -662,19 +687,17 @@ $(document).ready(function () {
             prevEl: '.swiper-button-prev',
         },
     });
+
     // 최근 배당락일
-    var swiper = new Swiper('.lately_swiper', {
+    var lately_swiper = new Swiper('.lately_swiper', {
         autoplay: {
             delay: 3500,
             disableOnInteraction: false,
         },
         direction: 'vertical',
         loop: true,
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
     });
+
 
     /************************/
     /****  add active  *****/
@@ -1133,25 +1156,25 @@ $(document).ready(function () {
         hideTimer = setTimeout(function () {
             $('.premiumLock_cunt').addClass('on');
         }, 400); // 250ms 동안 스크롤 동작이 없으면 보여줌
-    });    
+    });
 
     // 모달팝업 - 환불정책 자세히보기 팝업
-    $('.refund_guide').on('click', function () {            
+    $('.refund_guide').on('click', function () {
         $('.modal').hide().removeClass('slideUp');
         $('.blocker').show();
         $('.refund_pop01').show().addClass('slideUp');
     });
-    $('.age_pop01').on('click', function () {            
+    $('.age_pop01').on('click', function () {
         $('.modal').hide().removeClass('slideUp');
         $('.blocker').show();
         $('.agreePopBox.box_01').show().addClass('slideUp');
     });
-    $('.age_pop02').on('click', function () {            
+    $('.age_pop02').on('click', function () {
         $('.modal').hide().removeClass('slideUp');
         $('.blocker').show();
         $('.agreePopBox.box_02').show().addClass('slideUp');
     });
-    $('.age_pop03').on('click', function () {            
+    $('.age_pop03').on('click', function () {
         $('.modal').hide().removeClass('slideUp');
         $('.blocker').show();
         $('.agreePopBox.box_03').show().addClass('slideUp');
@@ -1161,5 +1184,5 @@ $(document).ready(function () {
         $('.blocker').hide();
         $('.modal').hide().removeClass('slideUp');
     });
-    
+
 });
