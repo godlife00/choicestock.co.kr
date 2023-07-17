@@ -763,50 +763,17 @@
 }
 
 /* 메인 - 급등주, 인기종목, 관심종목 탭 */
-.globalStock.wowtv .main_mid.attention_area {
-	
-}
 .globalStock.wowtv .main_mid.attention_area .attention_all {
-	flex-wrap: wrap;
-	align-content: center;
-	gap: 12px;
 	background-color: #f6f7fa;
 }
-.globalStock.wowtv .main_mid.attention_area .attention_all .txt_a {
-	width: 100%;
-	color: #333;
-    font-size: 0.875rem;
-} 
 .globalStock.wowtv .main_mid.attention_area .attentionSwiper .swiper-slide {
 	width: 100%;
 	background-color: #f6f7fa;
-
 }
 .globalStock.wowtv .main_mid.attention_area table.tableRanking.type_2Line {	
 	background-color: #f6f7fa;
 }
-.globalStock.wowtv .main_mid.attention_area table.tableRanking.type_2Line td.num {
-	text-align: right;
-	font-weight: bold;
-}
-.globalStock.wowtv .main_mid.attention_area table.tableRanking.type_2Line td.num span b {
-	font-weight: normal;
-}
-.globalStock.wowtv .main_mid.attention_area table.tableRanking.type_2Line .num.dod {
-	text-align: left;
-}
-.globalStock.wowtv .main_mid.attention_area table.tableRanking.type_2Line .num.dod span,
-.globalStock.wowtv .main_mid.attention_area table.tableRanking.type_2Line .num.dod span b {
-	background: none;	
-	text-align: left;	
-	font-weight: normal;	
-}
-.globalStock.wowtv .main_mid.attention_area table.tableRanking.type_2Line .num.dod span.increase,
-.globalStock.wowtv .main_mid.attention_area table.tableRanking.type_2Line .num.dod span.decrease {
-	background: none !important;
-	padding-top: 3px;
-	
-}
+
 .globalStock.wowtv .main_mid.attention_area table.tableRanking.type_2Line .num.dod span.increase,
 .globalStock.wowtv .main_mid.attention_area table.tableRanking.type_2Line .num.dod span.increase b {
 	color: #f2333a;
@@ -821,18 +788,16 @@
     line-height: normal;
 	font-weight: normal !important;
 }
-.globalStock.wowtv .main_mid.attention_area table.tableRanking.type_2Line tr {	
-	/* display: flex;    
-    justify-content: space-between;
-    align-items: flex-start;
-	gap: 7px; */
+.globalStock.wowtv .main_mid.attention_area table.tableRanking.type_2Line td.num {
+	 font-weight: bold;
 }
+
 .globalStock.wowtv .main_mid.attention_area table.tableRanking.type_2Line .signal {	
 	display: inline-block;    
     border-radius: 3px;
     text-align: center;    
 	margin-top: 15px;
-	margin-right: 15px;
+	margin-right: 5px;
     padding: 5px 5px;
     width: 61px;
     box-sizing: border-box;
@@ -990,9 +955,6 @@
 }
 .globalStock.wowtv .main_mid.miju_nasdaq .list .detail .num b {
 	font-weight: normal;	
-}
-.globalStock.wowtv .main_mid.miju_nasdaq .list .detail .per {
-	/* line-height: normal; */
 }
 .globalStock.wowtv .main_mid.miju_nasdaq .list .detail .per .increase,
 .globalStock.wowtv .main_mid.miju_nasdaq .list .detail .per .decrease {
@@ -3377,9 +3339,17 @@
     padding-top: 8px;
 }
 .globalStock.wowtv .main_searching .event_banner,
+.globalStock.wowtv .sub_recom .event_banner,
+.globalStock.wowtv .sub_game .event_banner,
+.globalStock.wowtv .sub_attract .event_banner,
 .globalStock.wowtv .search_top .event_banner {
 	width: 100%;
-	margin: 15px 0 0;
+	margin: 15px 0 0;	
+}
+.globalStock.wowtv .sub_recom .event_banner,
+.globalStock.wowtv .sub_game .event_banner,
+.globalStock.wowtv .sub_attract .event_banner {
+	margin: 0;
 }
 .globalStock.wowtv .sub_search .event_banner {
 	width: 100%;
@@ -3389,6 +3359,12 @@
 .globalStock.wowtv .main_searching .event_banner a img,
 .globalStock.wowtv .search_top .event_banner a,
 .globalStock.wowtv .search_top .event_banner a img,
+.globalStock.wowtv .sub_game .event_banner a,
+.globalStock.wowtv .sub_game .event_banner a img,
+.globalStock.wowtv .sub_recom .event_banner a,
+.globalStock.wowtv .sub_recom .event_banner a img,
+.globalStock.wowtv .sub_attract .event_banner a,
+.globalStock.wowtv .sub_attract .event_banner a img,
 .globalStock.wowtv .sub_search .event_banner a,
 .globalStock.wowtv .sub_search .event_banner a img {
 	display: inline-block;

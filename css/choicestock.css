@@ -3188,6 +3188,90 @@ table.tableRanking td {
 	text-align: right;
 }
 
+.globalStock .main_mid.attention_area .attention_all {
+	flex-wrap: wrap;
+	align-content: center;
+	gap: 12px;
+	background-color: #f6f7fa;
+}
+.globalStock .main_mid.attention_area .attention_all .txt_a {
+	width: 100%;
+	color: #333;
+    font-size: 0.875rem;
+} 
+.globalStock .main_mid.attention_area table.tableRanking.type_2Line td.num {
+	text-align: right;
+	/* font-weight: bold; */
+}
+.globalStock .main_mid.attention_area table.tableRanking.type_2Line td.num span b {
+	font-weight: normal;
+}
+.globalStock .main_mid.attention_area table.tableRanking.type_2Line .num.dod {
+	text-align: left;
+}
+.globalStock .main_mid.attention_area table.tableRanking.type_2Line .num.dod span,
+.globalStock .main_mid.attention_area table.tableRanking.type_2Line .num.dod span b {
+	background: none;	
+	text-align: left;	
+	font-weight: normal;	
+}
+.globalStock .main_mid.attention_area table.tableRanking.type_2Line .num.dod span.increase,
+.globalStock .main_mid.attention_area table.tableRanking.type_2Line .num.dod span.decrease {
+	background: none !important;
+	padding-top: 3px;
+	
+}
+.globalStock .main_mid.attention_area table.tableRanking.type_2Line .num.dod span.increase,
+.globalStock .main_mid.attention_area table.tableRanking.type_2Line .num.dod span.increase b {
+	color: #ff2929;	
+    font-size: 0.75rem;
+    line-height: normal;
+	font-weight: normal !important;
+}
+.globalStock .main_mid.attention_area table.tableRanking.type_2Line .num.dod span.decrease,
+.globalStock .main_mid.attention_area table.tableRanking.type_2Line .num.dod span.decrease b {	
+	color: #26ABFF;
+    font-size: 0.75rem;
+    line-height: normal;
+	font-weight: normal !important;
+}
+
+.globalStock .main_mid.attention_area table.tableRanking.type_2Line .signal {	
+	display: inline-block;    
+    border-radius: 3px;
+    text-align: center;    
+	margin-top: 15px;
+	margin-right: 5px;
+    padding: 5px 5px;
+    width: 61px;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+	color: #fff;
+	font-size: 12px;
+}
+.globalStock .main_mid.attention_area table.tableRanking.type_2Line .signal span {	
+	display: inline-block;
+	color: #fff;
+	font-size: 12px;
+}
+.globalStock .main_mid.attention_area table.tableRanking.type_2Line .signal.buy {
+	background-color: #FF4500;
+}
+
+.globalStock .main_mid.attention_area table.tableRanking.type_2Line .signal.sell {
+	background-color: #1E90FF;
+}
+
+.globalStock .main_mid.attention_area table.tableRanking.type_2Line .signal.hold {
+	background-color: #008000;
+}
+
+.globalStock .main_mid.attention_area table.tableRanking.type_2Line .signal.waitting {	
+	background-color: #a1a1a1;
+}
+
 .globalStock .main_mid.attention_area table.tableRanking.type_2Line td.prm_lock {
 	position: relative;
 	top: -3px;
@@ -3295,7 +3379,7 @@ table.tableRanking td {
 	display: inline-block;
 	background-color: rgba(255, 75, 75, 0.08) !important;
 	border-radius: 3px;
-	text-align: center;
+	/* text-align: center; */
 	font-weight: bold;
 	padding: 5px 5px;
 	box-sizing: border-box;
@@ -3319,7 +3403,7 @@ table.tableRanking td {
 }
 
 .globalStock .main_mid.attention_area table.tableRanking.type_2Line .num.dod span.decrease {
-	background-color: rgba(0, 98, 255, 0.08) !important;
+	/* background-color: rgba(0, 98, 255, 0.08) !important; */
 }
 
 .globalStock .main_mid.attention_area table.tableRanking.type_2Line .num .increase b {
