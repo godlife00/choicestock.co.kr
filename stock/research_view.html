@@ -119,20 +119,13 @@
                 }
 
                 .family_banner .bannerSwiper img {
-                    display: inline-block;
-                    visibility: hidden;          
+                    display: inline-block;                        
                     width: 100%;
                     height: 100%;
                 }
             </style>
             <script>
-                $(document).ready(function () {
-                    var randomNumber_vl = Math.floor(Math.random() * 2) + 1;
-                    var randomNumber_sst = Math.floor(Math.random() * 3) + 1;
-                    var radamImgVl = $('.radam_Img_vl');
-                    var radamImgSst = $('.radam_Img_sst');
-                    var radamImg_vp = $('.radam_Img_vp');
-
+                $(document).ready(function () {                        
                     var randomIndex = Math.floor(Math.random() * 2); // 0 또는 1 랜덤 선택
                     var bannerSwiper = $('.bannerSwiper');
 
@@ -141,24 +134,7 @@
 
                     // 랜덤하게 선택된 a 태그만 보이도록 설정
                     bannerSwiper.find('a').eq(randomIndex).show();
-
-                    // 선택된 a 태그에 맞게 이미지 경로 설정
-                    if (randomIndex === 0) {
-                        radamImgVl.attr('src', '../img/banner/family_vl_0' + randomNumber_vl + '.png');
-                    } else {
-                        radamImgSst.attr('src', '../img/banner/family_sst_0' + randomNumber_sst + '.png');
-                    }
-
-                    // 이미지가 로드되면 이미지를 보이도록 설정
-                    radamImgVl.on('load', function() {
-                        radamImgVl.css('visibility', 'visible');
-                    });
-                    radamImgSst.on('load', function() {
-                        radamImgSst.css('visibility', 'visible');
-                    });                    
-                    radamImg_vp.on('load', function() {
-                        radamImg_vp.css('visibility', 'visible');
-                    }); 
+                    
                 });
             </script>
             <div class="family_banner">     

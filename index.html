@@ -1371,39 +1371,19 @@
 
                 .family_banner .bannerSwiper img {
                     display: inline-block;
-                    visibility: hidden;          
                     width: 100%;
                     height: 100%;
                 }
             </style>
-            <script>
-                $(document).ready(function () {
-                    var randomNumber_vl = Math.floor(Math.random() * 2) + 1;
-                    var randomNumber_sst = Math.floor(Math.random() * 3) + 1;
-                    var radamImgVl = $('.radam_Img_vl');
-                    var radamImgSst = $('.radam_Img_sst');
-                    var radamImg_vp = $('.radam_Img_vp');
-                    radamImgVl.on('load', function() {
-                        radamImgVl.css('visibility', 'visible');
-                    });
-                    radamImgSst.on('load', function() {
-                        radamImgSst.css('visibility', 'visible');
-                    });                    
-                    radamImg_vp.on('load', function() {
-                        radamImg_vp.css('visibility', 'visible');
-                    });                    
-                    radamImgVl.attr('src', 'img/banner/family_vl_0' + randomNumber_vl + '.png');
-                    radamImgSst.attr('src', 'img/banner/family_sst_0' + randomNumber_sst + '.png');
-                });
-            </script>
+            
             <div class="family_banner">
                 <div class="swiper-container bannerSwiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <a href="https://value.choicestock.co.kr/?utm_source=choicestock&utm_medium=banner&utm_campaign=service" target="_blank"><img src="img/banner/family_vl_01.png" class="radam_Img_vl" alt="밸류라인"></a>
+                            <a href="#" target="_blank"><img src="img/banner/family_vl_01.png" class="radam_Img_vl" alt="밸류라인"></a>
                         </div>
                         <div class="swiper-slide">
-                            <a href="https://super.choicestock.co.kr/?utm_source=choicestock&utm_medium=banner&utm_campaign=service" target="_blank"><img src="img/banner/family_sst_01.png" class="radam_Img_sst" alt="슈퍼스톡스"></a>
+                            <a href="#" target="_blank"><img src="img/banner/family_sst_01.png" class="radam_Img_sst" alt="슈퍼스톡스"></a>
                         </div>
                         <div class="swiper-slide">
                             <a href="https://bigfinance.co.kr/home" target="_blank"><img src="img/banner/family_vp.png" class="radam_Img_vp" alt="빅파이낸스"></a>
