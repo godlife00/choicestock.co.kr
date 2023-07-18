@@ -3251,6 +3251,12 @@ table.tableRanking td {
 	color: #fff;
 	font-size: 12px;
 }
+@media (max-width:360px) {
+	.globalStock .main_mid.attention_area table.tableRanking.type_2Line .signal {			
+		padding: 5px 5px;
+		width: 46px;		
+	}	
+}
 .globalStock .main_mid.attention_area table.tableRanking.type_2Line .signal span {	
 	display: inline-block;
 	color: #fff;
@@ -3336,10 +3342,21 @@ table.tableRanking td {
 	font-weight: normal;
 	box-sizing: border-box;
 	display: inline-block;
-	width: 100px;
+	width: 100px;	
 	overflow: hidden;
 	text-overflow: ellipsis;
 	white-space: nowrap;
+	background-color: red;
+}
+@media (min-width:361px) and (max-width:700px) {
+	.globalStock .main_mid.attention_area table.tableRanking .title a {		
+		width: 130px;					
+	}	
+}
+@media (min-width:721px) {
+	.globalStock .main_mid.attention_area table.tableRanking .title a {		
+		width: 340px;
+	}	
 }
 
 .globalStock .main_mid.attention_area table.tableRanking .title a .ticker {
@@ -3353,7 +3370,6 @@ table.tableRanking td {
 	text-overflow: ellipsis;
 	white-space: nowrap;
 }
-
 .globalStock .main_mid.attention_area table.tableRanking .num {
 	text-align: right;
 }
