@@ -3345,8 +3345,7 @@ table.tableRanking td {
 	width: 100px;	
 	overflow: hidden;
 	text-overflow: ellipsis;
-	white-space: nowrap;
-	background-color: red;
+	white-space: nowrap;	
 }
 @media (min-width:361px) and (max-width:700px) {
 	.globalStock .main_mid.attention_area table.tableRanking .title a {		
@@ -33957,7 +33956,7 @@ table.tableRanking td {
 	font-weight: bold;
 	line-height: 1.4;
 	text-align: left;
-	color: #00aece;
+	color: #404fc3;
 }
 
 .free_2weeks .content .info_txt .txt01 strong {
@@ -34016,7 +34015,7 @@ table.tableRanking td {
 	display: block;
 	padding: 13px 10px;
 	border-radius: 5px;
-	background-color: #00aece;
+	background-color: #404FC3;
 	font-size: 15px;
 	text-align: center;
 	color: #fff;
