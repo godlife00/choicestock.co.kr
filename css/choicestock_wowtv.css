@@ -262,6 +262,245 @@
 	-webkit-transform: rotate(45deg);
 	transform: rotate(45deg);	
 }
+
+.globalStock.wowtv .wow_secession.md-modal #setting,
+.globalStock.wowtv .wow_secession2.md-modal #setting {
+	padding: 0;
+    border: none;
+}
+.globalStock.wowtv .wow_secession.md-modal #setting .pop_header,
+.globalStock.wowtv .wow_secession2.md-modal #setting .pop_header {	
+	background-color: #18355f;	
+	padding: 10px 10px 15px;    
+    background-size: 105px 100px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.globalStock.wowtv .wow_secession.md-modal #setting .pop_header .sub_top .h2_title,
+.globalStock.wowtv .wow_secession2.md-modal #setting .pop_header .sub_top .h2_title {
+	color: #fff;
+    font-size: 1.125rem;
+    font-weight: bold;
+	text-align: center;
+    line-height: 1.5;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+.globalStock.wowtv .wow_secession.md-modal #setting .pop_con,
+.globalStock.wowtv .wow_secession2.md-modal #setting .pop_con {
+    padding: 14px 18px 15px;
+	background-color: #fff;
+}
+.globalStock.wowtv .wow_secession.md-modal #setting .pop_con .use_list_scr,
+.globalStock.wowtv .wow_secession2.md-modal #setting .pop_con .use_list_scr {
+	overflow: auto;
+	overflow-x: hidden;
+	max-height: 300px;
+}
+.globalStock.wowtv .wow_secession.md-modal #setting .pop_con .sum_title,
+.globalStock.wowtv .wow_secession2.md-modal #setting .pop_con .sum_title {
+	padding: 9px 2px 14px;
+	color: #014b8d;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 1.4;
+	text-align: left;
+	border-bottom: 1px solid #E0E4E9;
+}
+.globalStock.wowtv .wow_secession.md-modal #setting .pop_con .sum_txt,
+.globalStock.wowtv .wow_secession2.md-modal #setting .pop_con .sum_txt {
+	padding: 24px 2px 0;
+	color: #014b8d;
+	font-size: 16px;
+	font-weight: bold;	
+}
+.globalStock.wowtv .wow_secession.md-modal #setting .pop_con .use_list,
+.globalStock.wowtv .wow_secession2.md-modal #setting .pop_con .use_list {
+	margin-top: 15px;
+}
+.globalStock.wowtv .wow_secession.md-modal #setting .pop_con .use_list li,
+.globalStock.wowtv .wow_secession2.md-modal #setting .pop_con .use_list li {
+	position: relative;
+	padding-left: 20px;
+	font-size: 0.9rem;
+    line-height: 29px;
+	color: #82929f;	
+	font-weight: bold;
+
+}
+.globalStock.wowtv .wow_secession.md-modal #setting .pop_con .use_list li::before,
+.globalStock.wowtv .wow_secession2.md-modal #setting .pop_con .use_list li::before {
+	content: '';
+	position: absolute;	
+	left: 7px;
+	top: 12px;
+	display: inline-block;
+	width: 4px;
+	height: 1px;
+	border-bottom: 1px solid #82929f;
+	
+}
+.globalStock.wowtv .wow_secession.md-modal #setting .pop_btm,
+.globalStock.wowtv .wow_secession2.md-modal #setting .pop_btm {	
+    padding: 9px 20px 18px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: #E3F3FF;
+}
+.globalStock.wowtv .wow_secession.md-modal #setting .pop_btm .payBtn,
+.globalStock.wowtv .wow_secession2.md-modal #setting .pop_btm .payBtn {
+    text-align: center;
+    margin-top: 10px;
+    padding: 0 15px;
+}
+.globalStock.wowtv .wow_secession.md-modal #setting .pop_btm .btn,
+.globalStock.wowtv .wow_secession2.md-modal #setting .pop_btm .btn {
+    color: #fff;
+    font-size: 0.9375rem;
+    border-radius: 5px;
+    position: relative;
+    width: calc(100% / 2 + 120px);
+}
+.globalStock.wowtv .wow_secession.md-modal #setting .pop_btm .btn_save,
+.globalStock.wowtv .wow_secession2.md-modal #setting .pop_btm .btn_save {
+    background: #18355f;
+    border: none;
+}
+.globalStock.wowtv .wow_secession.md-modal #setting .pop_btm .btn_save b,
+.globalStock.wowtv .wow_secession2.md-modal #setting .pop_btm .btn_save b {
+	color: #ffe200;	
+}
+
+.globalStock.wowtv .member_clear:before {
+    display: block;
+    content: "";
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .15);
+    z-index: 998;
+}
+.globalStock.wowtv .member_clear .layerBox {
+	position: relative;
+	position: fixed;
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%, -10%);
+    background: #fff;
+    z-index: 999;
+    width: 95%;
+    box-sizing: border-box;
+    max-width: 400px;
+}
+.globalStock.wowtv .member_clear .phone_Input {
+	position: absolute;
+	left: 23%;
+    bottom: 11.4%;
+    width: 39%;
+    height: 5.5%;
+    text-align: right;
+    font-size: 13px;
+    padding: 5px 7px;
+    box-sizing: border-box;
+    color: #333;    	
+	font-weight: bold;		
+	border: 1px solid #E0E4E9;
+}
+.globalStock.wowtv .member_clear .phone_box #timer {
+	position: absolute;
+	left: 49%;
+    bottom: 12.4%;
+	font-size: 13px;
+    padding: 5px 7px;
+    box-sizing: border-box;
+    color: #FF3178;    	
+	font-weight: bold;
+}
+.globalStock.wowtv .member_clear .layerBox .btn_area a {
+	display: inline-block;	
+	position: absolute;	
+	box-sizing: border-box;
+	font-size: 0;	
+
+}
+.globalStock.wowtv .member_clear .layerBox .btn_area a.btn_letter {
+	top: auto !important;
+	left: auto !important;
+	right: 6%;
+    bottom: 19.5%;
+    width: 29%;
+    height: 5%;
+}
+.globalStock.wowtv .member_clear .layerBox .btn_area a.btn_re_letter {
+	top: auto !important;
+	left: auto !important;
+	right: 6%;
+    bottom: 11.5%;
+    width: 29%;
+    height: 5%;
+}
+.globalStock.wowtv .member_clear .layerBox .btn_area a.btn_again {
+	top: auto !important;
+	left: auto !important;	
+}
+.globalStock.wowtv .member_clear .layerBox .img img {
+	display: inline-block;
+	width: 100%;
+}
+.globalStock.wowtv .member_again:before {
+    display: block;
+    content: "";
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .15);
+    z-index: 998;
+}
+.globalStock.wowtv .member_again .layerBox {
+	position: relative;
+	position: fixed;
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%, -10%);
+    background: #fff;
+    z-index: 999;
+    width: 95%;
+    box-sizing: border-box;
+    max-width: 400px;
+}
+.globalStock.wowtv .member_again .layerBox .stop_day {
+	position: absolute;
+    left: 48%;
+    bottom: 22.4%;
+	font-weight: bold;
+	font-size: 0.9375rem;
+}
+
+.globalStock.wowtv .member_again .layerBox .btn_area {
+	display: flex;
+
+}
+.globalStock.wowtv .member_again .layerBox .btn_area a {
+	display: inline-block;		
+	box-sizing: border-box;
+	font-size: 0;	
+
+}
+.globalStock.wowtv .member_again .layerBox .btn_area a.btn_again {
+	top: auto !important;
+	left: auto !important;	
+}
+.globalStock.wowtv .member_again .layerBox .img img {
+	display: inline-block;
+	width: 100%;
+}
+
+
 .globalStock.wowtv .sub_research .sub_mid.research_board .lst_type li {
 	clear:both;
 	background: none;
@@ -2897,21 +3136,61 @@
 	background-color: #014b8d;
 	border: 12px solid #82929f;
 }
+
+.globalStock.wowtv .sub_alarm .mapage_form .alarm_from .advertisement {
+	padding: 14px 0;
+}
+.globalStock.wowtv .sub_alarm .mapage_form .alarm_from .advertisement .label_chk {
+	padding-left: 50px;
+}
+.globalStock.wowtv .sub_alarm .mapage_form .alarm_from .advertisement .toggleWrap > div {
+	right: auto;
+	left: 0;
+}
+.globalStock.wowtv .sub_alarm .mapage_form .alarm_from .advertisement div.toggleWrap {
+	left: 0;	
+}
+.globalStock.wowtv .sub_alarm .alarm_from .advertisement label {
+	background-color: #014b8d;
+	border: 12px solid #82929f;
+}
+
 .globalStock.wowtv .sub_alarm .alarm_from .txt_guide {
 	color: #82929f;	
 	font-size: 0.75rem;
 	line-height: 1.58;
 }
-.globalStock.wowtv .sub_alarm .withdrawal {
-	text-align: right;
+.globalStock.wowtv .sub_alarm .withdrawal {	
 	padding-right: 8px;
-	box-sizing: border-box;
+	box-sizing: border-box;	
+}
+.globalStock.wowtv .sub_alarm .withdrawal .name_title {
+	font-size: 0.875rem;
+    font-weight: normal;
+    letter-spacing: -0.7px;
+    color: #82929f;
+    display: block;
+}
+.globalStock.wowtv .sub_alarm .withdrawal .list {
+	display: flex;	
+	flex-direction: column;
+	gap: 12px;
+	margin-top: 20px;
+}
+.globalStock.wowtv .sub_alarm .withdrawal .list li {
+	padding-bottom: 12px;
 }
 .globalStock.wowtv .sub_alarm .withdrawal .btn_withdrawal {
-	color: #82929f;
+	position: relative;
+	display: block;
+	width: 100%;
+	color: #333;
     font-size: 0.875rem;
 }
 .globalStock.wowtv .sub_alarm .withdrawal .btn_withdrawal i {
+	position: absolute;
+	right: 0;
+	top: 2px;
     display: inline-block;
     width: 6px;
     height: 10px;
@@ -2974,6 +3253,7 @@
   	letter-spacing: -0.75px;	
 	margin-top: 27px;
 }
+
 .globalStock.wowtv .sub_login .agree_area {
 	padding: 24px 16px 90px;	
 	box-sizing: border-box;
@@ -2982,8 +3262,37 @@
 }
 .globalStock.wowtv .sub_login .agree_area .txt {
 	color: #014b8d;
+	line-height: 1.4;
+}
+.globalStock.wowtv .sub_login .agree_area .all_chk_label {
+	margin-top: 25px;
+	padding-bottom: 12px;
+	border-bottom: 1px solid #e1e5ef;
+}
+.globalStock.wowtv .sub_login .agree_area .all_chk_label .label .label_chk {
+	color: #014b8d;
+	font-weight: bold;
+    font-size: 1rem;
+    letter-spacing: -0.7px;
+    line-height: 1.3;	
+}
+.globalStock.wowtv .sub_login .agree_area .all_chk_label .label .label_chk  i {
+	display: inline-block;
+    vertical-align: top;
+    position: relative;    
+    width: 16px;
+    height: 16px;    
+    margin-right: 7px;
+	top: 2px;
+    background: url('../img/icon_agreecheck_wow.svg') no-repeat 0 100%;
+}
+.globalStock.wowtv .sub_login .agree_area .all_chk_label .label.active .label_chk i {
+	background-position: 0 0;
 }
 .globalStock.wowtv .sub_login .agree_area .agree_from {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
 	margin-top: 20px;
 }
 .globalStock.wowtv .sub_login .agree_area .agree_from .box {
@@ -3025,6 +3334,7 @@
 	font-size: 0.875rem;
 	letter-spacing: -0.7px;
 	line-height: 1.3;
+	width: 100%;
 }
 .globalStock.wowtv .sub_login .agree_area .agree_from .label .label_chk i {
 	top: 0;
@@ -3384,17 +3694,27 @@
 
 
 /* IOS 로그인 아이디 체크 css */
+
 .globalStock.wowtv .sub_login .agree_area .agree_from .box {
-	position: relative;	
+	position: relative;		
+	display: flex;
+	flex-wrap: wrap;
+    gap: 15px 3px;
+    justify-content: space-between;
+    align-items: center
 }
 .globalStock.wowtv .sub_login .agree_area .agree_from .label {	
 	padding: 7px 0;		
 	background: none;
 }
+.globalStock.wowtv .sub_login .agree_area .agree_from .label.sub_label {
+	width: 100%;
+}
 .globalStock.wowtv .sub_login .agree_area .agree_from .box .terms_btn {
-	position: absolute;	
+	position:relative;
+	left: auto !important;
 	right: 0;
-	top: 4px;    
+	top: 0;    
     display: inline-block;
     width: 70px;    
     border-radius: 3px;
@@ -3416,7 +3736,7 @@
 }
 .globalStock.wowtv .sub_login .agree_area .agree_from .label:first-child,
 .globalStock.wowtv .sub_login .agree_area .agree_from .label:nth-child(2) {
-	margin-bottom: 15px;
+	margin-bottom: 0;
 }
 .globalStock.wowtv .sub_login .agree_area .agree_from .label .label_chk {
 	color: #82929f;
@@ -3437,7 +3757,7 @@
 	line-height: 1.31;
   	letter-spacing: -0.8px;
 	padding: 9px 13px;
-	margin-top: 8px;
+	margin-top: 0;
 	margin-left: 23px;
 	width: 80%;
   	border-radius: 5px;
@@ -3445,10 +3765,13 @@
 }
 /* 회원가입시 휴대폰 번호 수집 */
 .globalStock.wowtv .sub_login .agree_area .agree_from .payBtn {
+	margin-top: 15px;
 	padding: 0;
 }
 .globalStock.wowtv .sub_login .agree_area .agree_from .txt_reject {
-	margin-top: 15px;
+	margin-top: 12px;
+	margin-left: 20px;
+	padding-bottom: 0;
 	text-align: center;
 	font-size: 0.75rem;
 	letter-spacing: -0.6px;
@@ -3468,58 +3791,21 @@
 	width: calc(100% - 20px);	
 	margin-left: 20px;
 }
-/*
-.globalStock.wowtv .sub_login .agree_area .agree_from .phonePin_form .pinInput {
-	color: #333;
-}
-.globalStock.wowtv .sub_login .agree_area .agree_from .phonePin_form .pinInput:focus {
-	border: none;
-	outline: none;
-}
-.globalStock.wowtv .sub_login .agree_area .agree_from .phonePin_form .pinInput:focus::-webkit-input-placeholder {
-	color: transparent;
-}
-*/
+
 .globalStock.wowtv .sub_login .agree_area .agree_from .phonePin_form .dsc_error {
+	margin-top: 0;
 	text-align: right;
 }
 .globalStock.wowtv .sub_login .agree_area .agree_from .phonePin_form .pinBtn {	
 	right: 6px;	
 	color: #014b8d;	
 	border: solid 1px #004b8c;	
+	width: 82px;
 }
-/*
-.globalStock.wowtv .sub_login .agree_area .agree_from .phonePin_form .pinInput_out {		
-	font-size: 1rem;
-	font-weight: bold;	
-	letter-spacing: 1.6px;	
-	color: #333;	
-}
-.globalStock.wowtv .sub_login .agree_area .agree_from .phonePin_form .pinInput_out:focus {
-	border: none;
-	outline: none;
-}
-.globalStock.wowtv .sub_login .agree_area .agree_from .phonePin_form .pinInput::placeholder,
-.globalStock.wowtv .sub_login .agree_area .agree_from .phonePin_form .pinInput_out::placeholder {	
-	font-size: 16px;
-	font-weight: normal;
-	color: #82929f;
-	letter-spacing: -0.8px;
-}
-.globalStock.wowtv .sub_login .agree_area .agree_from .phonePin_form .pinInput_out:focus::-webkit-input-placeholder {
-	color: transparent;
-}
-*/
 .globalStock.wowtv .sub_login .agree_area .agree_from .phonePin_form .pin_countDown {		
 	text-align: right;	
 }
-/*
-.globalStock.wowtv .sub_login .agree_area .agree_from .phonePin_form .pin_countDown span {	
-	font-size: 0.75rem;
-	letter-spacing: -0.8px;	
-	color: #549ef4;
-}
-*/
+
 .globalStock.wowtv .sub_login .agree_area .agree_from .phonePin_form .pin_completion {	
 	right: 6px;
 	background-color: #014b8d;

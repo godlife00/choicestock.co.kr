@@ -1047,17 +1047,41 @@ $(document).ready(function () {
         $('.globalStock.kiwoom #footer').css('padding-bottom', '50px');
         $('.globalStock.kiwoom .sub_service .alliance_wrap .f_nightalarm').css('margin-bottom', '67px')
     }
-    // 알람 수신-미수신
-    $(".globalStock.wowtv .sub_alarm .alarm_from .label label").on("click", function () {
-        var labelTxT = $('.globalStock.wowtv .sub_alarm .mapage_form .alarm_from .label .label_chk');
+    // 알림(종목추천, 포트폴리오) 수신​ 여부
+    $(".globalStock.wowtv .sub_alarm .alarm_from .label.alarm_chk label").on("click", function () {        
+        var labelTxT = $('.globalStock.wowtv .sub_alarm .mapage_form .alarm_from .label.alarm_chk .label_chk');
         setTimeout(function () {
             if (labelTxT.hasClass("rcpt")) {
-                labelTxT.removeClass("rcpt").text("미수신")
+                labelTxT.removeClass("rcpt").text("알림(종목추천, 포트폴리오) 수신")
             } else {
-                labelTxT.addClass("rcpt").text("수신")
+                labelTxT.addClass("rcpt").text("알림(종목추천, 포트폴리오) 미수신")
             }
         }, 150);
     });
+    // 광고성 알림(푸시,문자) 수신 여부​
+    $(".globalStock.wowtv .sub_alarm .alarm_from .label.advertisement_chk label").on("click", function () {        
+        var labelTxT_adv = $('.globalStock.wowtv .sub_alarm .mapage_form .alarm_from .label.advertisement_chk .label_chk');
+        setTimeout(function () {
+            if (labelTxT_adv.hasClass("rcpt")) {
+                labelTxT_adv.removeClass("rcpt").text("광고성 알림(푸시,문자) 수신")
+            } else {
+                labelTxT_adv.addClass("rcpt").text("광고성 알림(푸시,문자) 미수신")
+            }
+        }, 150);
+    });
+
+    // 이용약관 전체 동의하기
+    $(".globalStock.wowtv .sub_login .agree_area .all_chk_label .label").on("click", function () {
+        console.log("전체 동의하기");
+        var test = $('.globalStock.wowtv .sub_login .agree_area .agree_from .label');
+        if ($(this).hasClass("active")) {            
+            $(this).removeClass('active');
+            test.removeClass('active');
+        } else {
+            $(this).addClass('active');
+            test.addClass('active');            
+        }        
+    });    
 
     // 주문하기 버튼            
     // Hide Header on on scroll down
@@ -1178,6 +1202,18 @@ $(document).ready(function () {
         $('.modal').hide().removeClass('slideUp');
         $('.blocker').show();
         $('.agreePopBox.box_03').show().addClass('slideUp');
+    });
+    // 미국주식창 사용안함 팝업
+    $('.pop_secession').on('click', function () {        
+        $('.modal').hide().removeClass('slideUp');
+        $('.blocker').show();
+        $('.wow_secession').show().addClass('md-show slideUp');
+    });
+    // 미국주식창 서비스 회원탈퇴 팝업
+    $('.btn_ssin').on('click', function () {        
+        $('.modal').hide().removeClass('slideUp');
+        $('.blocker').show();
+        $('.wow_secession2').show().addClass('md-show slideUp');
     });
     // 모달팝업 - 닫기
     $('.modal .pop_header .clse, .blocker').on('click', function () {

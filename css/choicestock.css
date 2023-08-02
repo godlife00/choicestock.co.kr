@@ -18160,8 +18160,10 @@ table.tableRanking td {
 
 .globalStock #setting .pop_header .close {
 	position: absolute;
-	right: 15px;
-	top: 15px;
+	left: auto !important;
+	top: 0 !important;
+	right: 0 !important;	
+	padding: 15px;	
 	width: 15px;
 }
 
