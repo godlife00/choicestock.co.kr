@@ -20994,6 +20994,8 @@ table.tableRanking td {
 
 .globalStock .sub_login .agree_area .agree_from .phonePin_form {
 	margin-bottom: 9px;
+	width: 100%;
+	box-sizing: border-box;	
 }
 
 .globalStock .sub_login .agree_area .agree_from .phonePin_form .box {

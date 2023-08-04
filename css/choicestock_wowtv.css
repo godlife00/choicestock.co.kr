@@ -3807,6 +3807,7 @@
 }
 
 .globalStock.wowtv .sub_login .agree_area .agree_from .phonePin_form .pin_completion {	
+	width: 82px;
 	right: 6px;
 	background-color: #014b8d;
 }
