@@ -48,6 +48,18 @@
 <body class="globalStock">
     <div id="wrap">
 
+        <div id="header" class="header">
+            <div class="headerTop">
+                <h1 class="headerLogo">
+                    <span>월정기 카드변경
+                    </span>
+                </h1>
+                <div class="hm">
+                </div>
+                <!-- //hm -->
+            </div>
+        </div>
+
         <!-- 가입 class = sub_payment-->
         <div id="container" class="sub_payment">
             <!-- 주요 콘텐츠 -->
@@ -60,11 +72,7 @@
                 <div class="info">
                     <ul>
                         <li><strong>상품명</strong>초이스스탁US 프리미엄 - 월정기</li>
-                        <li>
-                            <strong>월결제금액</strong>3,300원 <span>(부가세포함)</span>
-                            <span class="event_pay">* 둘째 달 부터 정상가(33,000원)로 결제됩니다</span>
-                            <span class="event_pay"><b>* 약정 기간 없이 언제든 해지 가능합니다.</b></span>
-                        </li>
+                        <!--<li><strong>월결제금액</strong> 0원 <span>(부가세포함)</span></li>-->
                     </ul>
                 </div>
             </div>
@@ -101,7 +109,7 @@
                                                         onkeyup="javascript:numberCheck(this, '카드번호는');"
                                                         class="coupon_mod" maxlength="4" pattern="[0-9]*"
                                                         inputmode="numeric" min="0">
-                                                    <p class="i_dsc">결제카드 : 신한</p>
+                                                        <p class="i_dsc">신용카드 : 롯데, 삼성, 신한, 현대, NH</p>
 
                                                     <!--<p class="i_dsc coupon">입력하신 신용카드정보가 일치하지 않습니다. 정확하게 다시 입력해
 														주세요.</p>-->
@@ -212,8 +220,9 @@
             <!-- //payment_note -->
 
             <div class="payment_chk">
-                <p class="txt"><i></i>상기 결제 내용을 확인하였습니다.<br>
-                    납부해야 할 금액에 대해 신청한 신용카드 정보에서 지정된 출금일에 인출(결제)되는 것에 동의합니다.</p>
+                <p class="txt" id="confirmed"><i></i>상기 결제 내용을 확인하였습니다.</p>
+                <!-- <p class="txt"><i></i>상기 결제 내용을 확인하였습니다.<br>
+                    납부해야 할 금액에 대해 신청한 신용카드 정보에서 지정된 출금일에 인출(결제)되는 것에 동의합니다.</p> -->
             </div>
 
             <a href="http://help.nicepay.co.kr" class="help_nicepay" target="_blank">결제창 오류 문의
