@@ -660,11 +660,14 @@ $(document).ready(function () {
     //서브 발굴 - 뉴스
     var newsSwiper = new Swiper('.newsSwiper', {
         autoplay: {
-            delay: 3500,
+            delay: 2000,
             disableOnInteraction: false,
         },
         loop: true,
         spaceBetween: 10,
+        pagination: {
+            el: ".swiper-pagination",
+        },
     });
 
     //서비스소개

@@ -1651,6 +1651,10 @@
 	color: #82929f;
 	margin-top: 6px;
 }
+.globalStock.wowtv .main_mid.note_area .news_bannner {
+	margin-top: 50px;
+}
+
 
 /* 메인 - 2주 무료체험 배너 */
 .globalStock.wowtv .main_btm.banner_area {
@@ -3845,4 +3849,9 @@
 .globalStock.wowtv .sub_recom .sub_top.view .chart_area .chartData .info li.port {
 	border: solid 1px #E1E5EF;			
 	color: #82929F;
+}
+
+.globalStock.wowtv .news_bannner {	
+	padding-bottom: 32px;
+	background-color: #f6f7fa;
 }
