@@ -659,6 +659,7 @@ $(document).ready(function () {
 
     //서브 발굴 - 뉴스
     var newsSwiper = new Swiper('.newsSwiper', {
+        autoHeight: true,
         autoplay: {
             delay: 2000,
             disableOnInteraction: false,
