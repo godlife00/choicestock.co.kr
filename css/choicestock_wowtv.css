@@ -519,6 +519,7 @@
 	background: url('../img/wowtv/noimg_wowtv.svg') no-repeat center center;
 }
 .globalStock.wowtv .sub_research .sub_mid.research_board.news_mid {	
+	clear: both;
 	margin: 0;	
 	overflow: hidden;
 }
@@ -3647,10 +3648,14 @@
 	text-align: left;	
 	padding: 5px 3px;
 }
-.globalStock.wowtv .sub_research .sub_top.news_top {
+.globalStock.wowtv .sub_research .sub_top.news_top {	
 	margin-top: 12px;
     background: #f6f7fa;
     padding-top: 8px;
+}
+.globalStock.wowtv .sub_research .sub_top.news_top::after {
+	content: '';
+	clear: both;
 }
 .globalStock.wowtv .main_searching .event_banner,
 .globalStock.wowtv .sub_recom .event_banner,
