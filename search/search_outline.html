@@ -25,13 +25,13 @@
     <!-- jquery-1.12 -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
-    <!-- highstock -->    
+    <!-- highstock -->
     <script src="../node_modules/highcharts/highstock.js"></script>
     <script src="../node_modules/highcharts/highcharts-more.js"></script>
     <script src="../node_modules/highcharts/modules/data.js"></script>
     <script src="../node_modules/highcharts/modules/hollowcandlestick.js"></script>
     <script src="../node_modules/highcharts/modules/no-data-to-display.js"></script>
-    <script src="../node_modules/highcharts/modules/treemap.js"></script>    
+    <script src="../node_modules/highcharts/modules/treemap.js"></script>
     <script src="../node_modules/highcharts/modules/exporting.js"></script>
     <script src="../node_modules/highcharts/modules/export-data.js"></script>
     <script src="../node_modules/highcharts/modules/accessibility.js"></script>
@@ -59,10 +59,11 @@
                 <div class="info_txt">
                     <p class="txt01">지금살까? ‘매매신호’ 확인하세요!</p>
                     <p class="txt02">투자AI로 종목 매매타이밍을 <br> 빠르게 제시합니다.</p>
-                    <p class="txt03">TIP.                        
+                    <p class="txt03">TIP.
                         <br>
-                        관심종목으로 지정하면 매매신호를 보다 빠르게 확인할 수 있습니다</p>
-                </div>                
+                        관심종목으로 지정하면 매매신호를 보다 빠르게 확인할 수 있습니다
+                    </p>
+                </div>
             </div>
             <div class="ftr">
                 <label for="pop_today" class="btn_day">
@@ -78,18 +79,18 @@
             document.getElementById('layer_pop').style.display = "inline";
         } else {
             document.getElementById('layer_pop').style.display = "none";
-        }    
+        }
         function setCookie(name, value, expirehours) {
             var todayDate = new Date();
             todayDate.setHours(todayDate.getHours() + expirehours);
             document.cookie = name + "=" + escape(value) + "; path=/; expires=" + todayDate.toGMTString() + ";"
         }
-        $('#pop_today').on('click', function() {            
-            setCookie("signalpop", "done", 24);            
+        $('#pop_today').on('click', function () {
+            setCookie("signalpop", "done", 24);
             document.getElementById('layer_pop').style.display = "none";
         });
-    </script>    
-    
+    </script>
+
     <div id="wrap">
         <!-- 하단 GNB -->
         <div class="gnb">
@@ -105,88 +106,48 @@
 
         <div id="header" class="header">
             <div class="headerTop">
-                <h1 class="headerLogo"><span>종목검색</span></h1>
-                <a href="#" class="his_back"><img src="../img/icon_back.svg" alt="뒤로가기"></a>
-                <div class="hm">
-                    <a href="../search/searching.html" class="go_sch"><img src="../img/icon_search.svg" alt="검색하기"></a>
-                </div>
-                <!-- //hm -->
+                <h1 class="headerLogo"><span>종목검색</span></h1>                
+                <a href="javascript:history.back();" class="go_back"></a>                
+                <!-- <span class="att"><i class="attention on" style="left:-50px"></i></span> -->
+                <span class="att"><i class="attention attention_pop"></i></span>
+                <!-- 관심종목 최초 지정 시 관심종목 안내 팝업 노출 : class = attention_pop 있는 경우-->
             </div>
             <!-- //headerTop -->
         </div>
 
         <!-- 종목검색 class = sub_search-->
         <div id="container" class="sub_search gnb_hide">
-            <!-- 주요 콘텐츠 -->
-            <div class="search_top">
 
-                <div class="data_area">
-                    <h2 class="title"><a href="#">마이크로소프트</a></h2>
-                    <!-- 기본 <i class="attention">,  관심종목 등록된 경우 <i class="attention on"> -->
-                    <ul class="info">
-                        <li class="sum"><span class="eng">MSFT</span> </li>
-                    </ul>
-                    <ul class="info_icon">
-                        <li>NASDAQ</li>
-                        <li>소비자독점주</li>
-                    </ul>
-                    <!-- //info_icon -->
-                    <ul class="detail">
-                        <li class="num">
-                            <span class="">190.<b>00</b></span> <!-- increase 증가, decrease 감소 -->
-                        </li>
-                        <li class="per">
-                            <span class="increase">+2.26 <span>(+1.20<b>%</b>)</span></span>
-                            <!-- increase 증가, decrease 감소 -->
-                        </li>
-                        <li class="day">19.05/15, USD</li>
-                    </ul>
-
-                    <!-- 하트, 추천이 있는 경우 -->
-                    <div class="go_page">
-                        <i class="attention on"></i>
-                        <span class="quarter recom">추천</span>
-                        <!-- 추천 class = recom, 분석 class = analysis -->
-                        <a href="#" class="more"><img src="../img/more_Black.png" alt="더보기"></a>
-                    </div>
-
-                    <!-- 하트만 있는 경우 -->
-                    <div class="go_page only" style="display: none;">
-                        <i class="attention on"></i>
-                    </div>
-
-                </div>
-                <!-- //data_area -->
-
-                <div class="attention_box">
-                    <ul>
-                        <li class="attention"><i></i><strong>8,888</strong>명의 관심</li>
-                    </ul>
-                    <div class="lately_update">
-                        <div class="swiper-container lately_swiper">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <p class="game_allo">최근 배당락일 <span>2021. 5/23</span></p>
-                                </div>
-                                <div class="swiper-slide">
-                                    <p class="game_allo">최근 실적발표 <span>2021. 3/18</span></p>
-                                </div>
-                            </div>
+            <!-- 검색 종목 -->
+            <div class="recom_company">
+                <ul class="list">
+                    <li class="ticker">AAPL</li>
+                    <li class="company_nm">마이크로소프트</li>                    
+                    <li class="detail">
+                        <div class="num">
+                            <span><b>1,898.</b>00</span>
                         </div>
-                    </div>
-                    <!-- //lately_update -->
-                </div>
+                        <div class="per">
+                            <span class="increase"><b>+89.</b>89</span>
+                            <span class="increase">(<b>+89.</b>89%)</span>
+                            <!-- increase 증가, decrease 감소, 보합은 same -->
+                            <span class="day">23. 07/03 88:88 USD</span>
+                        </div>
+                    </li>
+                </ul>
             </div>
-            <!-- //sub_top -->
+            <!-- //recom_company -->
 
             <div class="sub_mid nondata" style="display: none;">
-                <p class="nodata_guide"><strong>GOOG</strong>의 상세 기업정보는 <strong><a href="/search/invest_charm/GOOGL?pn=&amp;pg=">GOOGL</a></strong> 종목에서 확인할 수 있습니다.</p>
+                <p class="nodata_guide"><strong>GOOG</strong>의 상세 기업정보는 <strong><a
+                            href="/search/invest_charm/GOOGL?pn=&amp;pg=">GOOGL</a></strong> 종목에서 확인할 수 있습니다.</p>
             </div>
 
             <div class="sub_mid tabs_area">
                 <ul class="tabs_5">
                     <li class="active"><a href="search_outline.html">개요</a></li>
-                    <li><a href="search_diagnosis.html">종목진단</a></li>
+                    <li><a href="search_diagnosis.html">진단</a></li>
+                    <li><a href="">밸류</a></li>
                     <li><a href="search_finance.html">재무</a></li>
                     <li><a href="search_news.html">뉴스</a></li>
                     <li><a href="search_alloca.html">배당</a></li>
@@ -195,601 +156,206 @@
                 <!-- //tabs_5 -->
             </div>
 
-            <div class="sub_mid adequateArea">
-                <h2 class="title">지금 살까?</h2>
-                <div class="listWrap">
-                    <div class="list">
-                        <!-- 벨류 점수 -->
-                        <div class="mid">
-                            <div class="charm_num">
-                                <span class="signal buy">매수</span>
-                                <!-- <span class="signal sell">매도</span>
-                                <span class="signal hold">보유</span>
-                                <span class="signal waitting">관망</span> -->
-                                <!-- 매수 : signal buy,  매도 : signal sell, 보유 hold, 관망 waitting  -->
-                                <span class="txt_guide"><img src="../img/txt_guide.svg" alt="가이드보기"></span>
-                                <div class="guide_box">
-                                    <span class="clse">닫기</span>                          
-                                    <p class="txt"><strong>지금 살까?</strong></p>
-                                    <p class="txt">10년 이상의 금융 빅데이터와 알고리즘 기술을 통해 종목의 매매신호를 신속하게 제시합니다.</p>
-                                    <p class="txt">매매신호는 종목진단 / 밸류에이션 / 수급분석 을 종합적으로 고려해 결정합니다.</p>
-                                    <p class="txt">매매신호는 매수-보유-매도-관망 신호를 제공하며, 3개 조건을 모두 만족 할 때 매수 및 보유신호가 발생합니다.</p>
+            <!--퀀트분석 점수 -->
+            <div class="mainBox attr">
+                <div class="adequateArea">
+                    <h2 class="title">퀀트분석 점수</h2>
+                    <div class="listWrap">
+                        <div class="list">
+                            <!-- 벨류 점수 -->
+                            <div class="mid">
+                                <div class="charm_num">
+                                    <span class="signal">89</span>
+                                    <span class="signal_guide"><img src="../img/txt_guide.svg" alt="가이드보기"></span>
                                 </div>
+                                <!-- //charm_num -->
+                                <div class="num_bar">
+                                    매매신호는 총 7회 발생했습니다.
+                                </div>
+                                <!-- //num_bar -->
                             </div>
-                            <!-- //charm_num -->
-                            <div class="num_bar">
-                                <div class="line">
-                                    <div class="th">스마트 스코어</div>
-                                    <div class="barArea">
-                                        <div class="score-container">
-                                            <div class="score-bar">
-                                                <div class="score-dot" style="left:80%"></div>
-                                            </div>                                    
-                                        </div>
-                                    </div>
-                                    <!-- //barArea -->                                    
-                                </div>
-                                <div class="line">
-                                    <div class="th">밸류에이션</div>
-                                    <div class="barArea">
-                                        <div class="score-container">
-                                            <div class="score-bar">
-                                                <div class="score-dot" style="left:40%"></div>
-                                            </div>                                    
-                                        </div>
-                                    </div>
-                                    <!-- //barArea -->
-                                </div>
-                                <div class="line">
-                                    <div class="th">수급분석</div>
-                                    <div class="barArea">
-                                        <div class="score-container">
-                                            <div class="score-bar">
-                                                <div class="score-dot" style="left:20%"></div>
-                                            </div>                                    
-                                        </div>
-                                    </div>
-                                    <!-- //barArea -->                                    
-                                </div>
-                                <!-- //line -->
-                            </div>
-                            <!-- //num_bar -->
+                            <!-- //mid -->
                         </div>
-                        <!-- //mid -->
+                        <!-- //list -->
                     </div>
-                    <!-- //list -->
-                    <div class="latest_signal">
-                        <p class="date">최근 매수신호 : <b>254</b>.24</p>
-                        <p class="num">(23. 3/26)</p>
-                    </div>                    
+                    <!-- //listWrap -->
                 </div>
-                <!-- //listWrap -->                
+                <!-- //adequateArea -->
             </div>
-            <div class="table_btmarea">
-                <a href="/stock/recipeToday_view.html" class="more">오늘의 매매신호 종목만 쏙쏙!<i></i></a>
-            </div>                
-            
-            <div class="sub_mid adequateArea">
-                <h2 class="title">지금 살까?</h2>
-                <div class="listWrap">
-                    <div class="list">
-                        <!-- 벨류 점수 -->
-                        <div class="mid">
-                            <div class="charm_num">
-                                <span class="signal lock">?</span>                                
-                                <!-- 숨김 signal lock -->                                
-                            </div>
-                            <!-- //charm_num -->
-                            <div class="num_bar">
-                                <!-- 비 로그인 -->
-                                <div class="freeInfo_box">
-                                    <p>지금 회원가입하면 매일 매매신호 3건 무료! <a href="../member/login_sns.html">회원가입</a></p>                    
-                                </div> 
-                                <!-- 무료회원 > 3건 초과 시 -->
-                                <div class="freeInfo_box" style="display: none;">
-                                    <p>투자는 타이밍! 매매신호가 무제한~ <a href="../payment/step01.html">프리미엄</a></p>                    
-                                </div> 
-                            </div>
-                            <!-- //num_bar -->
-                        </div>
-                        <!-- //mid -->
-                    </div>
-                    <!-- //list -->
-                    <div class="latest_signal">
-                        <p class="date">최근 매수신호 : <b>254</b>.24</p>
-                        <p class="num">(23. 3/26)</p>
-                    </div>                    
-                </div>
-                <!-- //listWrap -->
-            </div>
+            <!-- //bg_box -->
 
-            <div class="sub_mid adequateArea">
-                <h2 class="title">지금 살까?</h2>
-                <div class="listWrap">
-                    <div class="list">
-                        <!-- 벨류 점수 -->
-                        <div class="mid">
-                            <div class="charm_num">
-                                <span class="signal lock">?</span>                                
-                                <!-- 숨김 signal lock -->                                
-                            </div>
-                            <!-- //charm_num -->
-                            <div class="num_bar">                                
-                                <!-- 무료회원 > 3건 초과 시 -->
-                                <div class="freeInfo_box">
-                                    <p>투자는 타이밍! 매매신호가 무제한~ <a href="../payment/step01.html">프리미엄</a></p>                    
-                                </div> 
-                            </div>
-                            <!-- //num_bar -->
-                        </div>
-                        <!-- //mid -->
-                    </div>
-                    <!-- //list -->
-                    <div class="latest_signal">
-                        <p class="date">최근 매수신호 : <b>254</b>.24</p>
-                        <p class="num">(23. 3/26)</p>
-                    </div>                    
-                </div>
-                <!-- //listWrap -->
-            </div>
+            <!-- 투자노트 -->
+            <div class="mainBox financials">
+                <div class="area_note">
+                    <h3 class="title">투자노트</h3>
 
-            <div class="sub_mid outline_box">
-                <a href="search_diagnosis.html" class="box">
-                    <p class="title"><span>스마트 스코어</span></p>
-                    <div class="con">
-                        <div class="charmNum_box">
-                            <strong class="charm_num">88</strong>
-                            <p class="charm_average">업종평균 <b>54</b></p>
-                        </div>
-                        <!-- //charmNum_box -->
-                        <p class="charm_ranking">전체상위 <span>0.45%</span></p>
-                    </div>
-                </a>
-
-                <a href="/search/fairvalue/CHPT" class="box">
-                    <p class="title"><span>밸류에이션</span></p>
-                    <div class="con">
-                        <div class="value_chart">
-                            <div class="no_data">밸류에이션 데이터부족</div>
-                            <div class="line">
-                                <span class="g_action" style="left: 50%;"></span>
-                            </div>
-                            <div class="adequate">
-                                <span>적정가</span>
-                                <span class="remark">
-                                    <div class="txt_filter size_B"><i></i><i></i><i></i><i></i></div>
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-                <a href="#" data-modal="modal-3" class="btn_free md-trigger box">
-                    <p class="title"><span>밸류에이션</span></p>
-                    <div class="con">
-                        <div class="value_chart">
-                            <div class="prm_lock"><span><i></i>2주 무료보기</span></div>
-                            <div class="line">
-                                <span class="g_action" style="left: 50%;"></span>
-                            </div>
-                            <div class="adequate">
-                                <span>적정가</span>
-                                <span class="remark">
-                                    <div class="txt_filter size_B"><i></i><i></i><i></i><i></i></div>
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </a>                
-                <a href="" class="box">
-                    <p class="title"><span>밸류에이션</span></p>
-                    <div class="con">
-                        <div class="value_chart">
-                            <div class="line">   
-                                <!-- 0 미만인 경우 클래스 under 추가 -->                                
-                                <div class="situation under" style="left: -10px;">
-                                    <span>현재가</span>                                    
-                                </div>
-                                <!-- <div class="situation" style="left: 0;">
-                                    <span>현재가</span>                                    
-                                </div> -->
-                                <div class="situation" style="left: 50%;">
-                                    <span>현재가</span>                                    
-                                </div>
-                                <!-- <div class="situation" style="left: 100%;">
-                                    <span>현재가</span>                                    
-                                </div> -->
-                                <!-- 100% 벗어난 경우 클래스 over 추가 -->
-                                <div class="situation over" style="right: -10px">
-                                    <span>현재가</span>
-                                </div>
-                                <span class="g_action" style="left: 50%;"></span>
-                            </div>
-                            <div class="adequate">
-                                <span>적정가</span>
-                                <strong>108.<b>88</b></strong>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-                
-                <a href="" class="box">
-                    <p class="title"><span>투자지표</span></p>
-                    <div class="con">
-                        <div class="data_attainment">
-                            <ul>
-                                <li>PER(배)
-                                    <span>8,887<b>.80</b></span>
-                                </li>
-                                <li>PSR(배)
-                                    <span>27<b>.80</b></span>
-                                </li>
-                                <li>ROE(%)
-                                    <span>27<b>.20</b></span>
-                                </li>
-                                <li>DY(%)
-                                    <span>27<b>.50</b></span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                </a>
-
-                <a href="" class="box">
-                    <div class="attention_box">
-                        <p class="title">주가추세</p>
-                        <div class="con">
-                            <div class="game_tip">
-                                <!-- trans up : 강세, trans down : 약세, trans : 중립, 없는 경우 N/A -->
-                                <ul>
-                                    <li><i class="trans_icn up"></i><span>단기</span></li>
-                                    <li><i class="trans_icn down"></i><span>중기</span></li>
-                                    <li><i class="trans_icn trans"></i><span>장기</span></li>
-                                </ul>
-                            </div>
-                            <!-- //game_tip -->
-
-                            <p class="charm_ranking">최근 1개월 <span class="increase"> +23.5%</span></p>
-                            <!-- <p class="charm_ranking">최근 1개월 <span class="decrease"> +23.5%</span></p> -->
-                        </div>
-                    </div>
-                </a>
-
-                <div class="box">
-                    <p class="title"><a href="../stock/recipe.html">투자레시피</a></p>
-                    <div class="con">
-                        <div class="event_attractiveness">
-                            <ul>
-                                <li class="att">레시피 항목 없음 😕</li>                                
-                                <li class="att_on"><a href="">이익성장주</a></li>
-                                <li class="att_on"><a href="">소비자독점주</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <a href="" class="box">
-                    <p class="title"><span>경쟁사</span></p>
-                    <div class="con">
-                        <div class="competitors">
-                            <span class="list">EntertainmentEntertainment</span>
-                            <ul>
-                                <li><span>컴캐스트</span></li>
-                                <li><span>차터커뮤니케이션차터커뮤니케이션차터커뮤니케이션</span></li>
-                                <li><span>비아컴</span></li>
-                            </ul>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <!-- //outline_box -->
-
-            <div class="sub_mid outline_investCharm">
-                <div id="containersummary1" class="containersummary1"></div>
-
-                <div class="summary small">
-                    <!-- div 사이즈는 big, small  -->
-                    <div class="view_box">
-                        <p>글로벌 웨이퍼 제조 장비 제조사로, 집적회로(IC) 제작에 쓰이는 반도체 가공 시스템을 개발합니다. <br>
-                            본 회사의 제품은 실리콘 웨이퍼에 특수 필름을 넣고 다양한 필름을 에칭하여 회로 디자인을 만드는데 사용 됩니다. <br>
-                            미국, 유럽, 중국, 일본, 한국, 대만 등의 휴대폰, 태블릿, 컴퓨터, 저장 장치, 네트워킹 장비 제조업체에게 제품을 판매합니다.</p>
-                        <ul class="etc">
-                            <li class="industry"> <span>산업</span>Semiconductor Equipment &amp; Materials</li>
-                            <li class="home"><span>홈</span><a href="http://www.lamresearch.com"
-                                    target="_blank">www.lamresearch.com</a></li>
-                            <li class="link"><span>sec전자공시</span> <a
-                                    href="https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&amp;CIK=0000707549"
-                                    target="_blank">바로가기</a></li>
+                    <div class="note_list">
+                        <ul OnClick="location.href ='../stock/note_view.html'" style="cursor:pointer;">
+                            <li class="note_nm">
+                                <a href="../stock/note_view.html">
+                                    애플, 위성통신 접속 기능 탑재한 아이폰14 시리즈 공개애플
+                                </a>
+                                <p class="day">2022. 8/12</p>
+                            </li>
+                            <!-- 이미지 없는 경우 아래 li 제거 -->
+                            <li class="sume_img">
+                                <a href="../stock/note_view.html"><img src="../img/premiumLock_area_ch.jpg" alt="노트 썸네일"
+                                        class="img"></a>
+                            </li>
                         </ul>
-                    </div>
-                    <!-- //view_box -->
-                </div>
+                        <ul OnClick="location.href ='../stock/note_view.html'" style="cursor:pointer;">
+                            <li class="note_nm">
+                                <a href="../stock/note_view.html"> 애플, 위성통신 접속 기능 탑재한 아이폰14 시리즈 공개애플애플, 위성통신 접속 기능
+                                    탑재한 아이폰14 시리즈 공개애플
+                                </a>
+                                <p class="day">2022. 8/12</p>
+                            </li>
+                        </ul>
+                        <ul OnClick="location.href ='../stock/note_view.html'" style="cursor:pointer;">
+                            <li class="note_nm">
+                                <a href="../stock/note_view.html">
+                                    애플, 위성통신 접속 기능 탑재한 아이폰14 시리즈 공개애플
+                                </a>
+                                <p class="day">2022. 8/12</p>
+                            </li>
+                        </ul>
 
-                <div class="table_box">
-                    <strong class="unit">* 기준 : 20.04/09</strong>
-                    <div>
-                        <table cellspacing="0" border="1" class="tableRanking left guide_table">
-                            <tbody>
-                                <tr>
-                                    <th scope="col" class="th_guide txt01"><span>시가총액</span></th>
-                                    <td>1,191,564<span class="unit">백만달러</span></td>
-                                </tr>
-                                <tr>
-                                    <th scope="col" class="th_guide txt01"><span>기업가치 EV</span></th>
-                                    <td>1,218,677<span class="unit">백만달러</span></td>
-                                </tr>
-                                <tr>
-                                    <th scope="col" class="th_guide txt01"><span>주식수</span></th>
-                                    <td>5572<span class="unit">주</span></td>
-                                </tr>
-                                <tr>
-                                    <th scope="col" class="th_guide txt01"><span>주당배당금</span></th>
-                                    <td>1287<span class="unit">달러</span></td>
-                                </tr>
-                                <tr>
-                                    <th scope="col" class="th_guide txt01"><span>배당수익률</span></th>
-                                    <td>88.888<span class="unit">%</span></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <!-- 테이블 안내 툴팁 -->
-                        <div class="th_guide_hide txt01 sum">
-                            <div class="guide_box">
-                                <ul>
-                                    <li>기본주식수x전일 종가</li>
-                                </ul>
-                            </div><!-- 시가총액 -->
-                            <div class="guide_box">
-                                <ul>
-                                    <li>전일 시가총액+차입금-현금및현금성자산</li>
-                                </ul>
-                            </div><!-- 기업가치 EV -->
-                            <div class="guide_box">
-                                <ul>
-                                    <li>가중평균희석주식수(미발표 기업은 가중평균주식수)</li>
-                                </ul>
-                            </div><!-- 주식수 -->
-                            <div class="guide_box">
-                                <ul>
-                                    <li>최근년도 주당배당금</li>
-                                </ul>
-                            </div><!-- 주당배당금 -->
-                            <div class="guide_box">
-                                <ul>
-                                    <li>최근년도 주당배당금/기말 주가</li>
-                                </ul>
-                            </div><!-- 배당수익률 -->
+                        <div class="btn_more">
+                            <a href="../stock/note_searchList.html" class="">더보기</a>
                         </div>
-                        <!-- //th_guide_hide -->
-                        <table cellspacing="0" border="1" class="tableRanking right guide_table">
-                            <tbody>
-                                <tr>
-                                    <th scope="col" class="th_guide txt02"><span>주가수익배수 PER</span></th>
-                                    <td>8,888<span class="unit">배</span></td>
-                                </tr>
-                                <tr>
-                                    <th scope="col" class="th_guide txt02"><span>주가순자산배수 PBR</span></th>
-                                    <td>888</td>
-                                </tr>
-                                <tr>
-                                    <th scope="col" class="th_guide txt02"><span>자기자본이익률 ROE</span></th>
-                                    <td>19.24<span class="unit">%</span></td>
-                                </tr>
-                                <tr>
-                                    <th scope="col" class="th_guide txt02"><span>주당순이익 EPS</span></th>
-                                    <td>888<span class="unit">달러</span></td>
-                                </tr>
-                                <tr>
-                                    <th scope="col" class="th_guide txt02"><span>주당순자산 BPS</span></th>
-                                    <td>8.888<span class="unit">달러</span></td>
-                                </tr>
-                            </tbody>
-                        </table>
-
-                        <!-- 테이블 안내 툴팁 -->
-                        <div class="th_guide_hide txt02 sum">
-                            <div class="guide_box">
-                                <ul>
-                                    <li>전일 시가총액/최근 4분기 합산 보통주순이익</li>
-                                </ul>
-                            </div><!-- 주가수익배수 PER -->
-                            <div class="guide_box">
-                                <ul>
-                                    <li>전일 시가총액/최근 분기 자본총계</li>
-                                </ul>
-                            </div><!-- 주가순자산배수 PBR -->
-                            <div class="guide_box">
-                                <ul>
-                                    <li>최근 4분기 합산 보통주순이익/최근 4분기 평균자본</li>
-                                </ul>
-                            </div><!-- 자기자본이익률 ROE -->
-                            <div class="guide_box">
-                                <ul>
-                                    <li>보통주순이익/가중평균희석주식수</li>
-                                </ul>
-                            </div><!-- 주당순이익 EPS -->
-                            <div class="guide_box">
-                                <ul>
-                                    <li>자본총계/가중평균주식수</li>
-                                </ul>
-                            </div><!-- 주당순자산 BPS -->
-                        </div>
-                        <!-- //th_guide_hide -->
-
                     </div>
+                    <!-- //note_list -->
+
+                    <!-- 투자노트 콘텐츠가 없는 경우 -->
+                    <div class="no_data">
+                        <p>
+                            종목의 투자노트 콘텐츠가 없습니다.<br>
+                            <a href="../stock/quant_basic.html" class="link_basic">발빠른 미국시장 콘텐츠 살펴보기</a>
+                        </p>
+                    </div>
+                    <!-- //투자노트 콘텐츠가 없는 경우 -->
 
                 </div>
-                <!-- //table_box -->
+                <!-- //area_note  -->
             </div>
-            <!-- //investCharm_area -->
 
-            <!-- 구글 에드센스 추천포트폴리오 하단 -->
-            <!-- 사각형(new) -->
-            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6864430327621783" data-ad-slot="3945317009"
-                data-ad-format="auto" data-full-width-responsive="true"></ins>
-            <script>
-                (adsbygoogle = window.adsbygoogle || []).push({});
-            </script>
-            <!-- //구글 에드센스 -->
+            <!-- 매출액, 영업이익, 주당순이익(EPS) 막대 차트 -->
+            <div class="mainBox financials">
 
-            <div class="sub_mid financials_chart">
-                <div class="bdr_title">
-                    <h4 class="title">재무제표</h4>
-                    <div class="tabs_menu">
-                        <span class="active">연간</span>
-                        <span>분기</span>
-                        <strong class="unit">* 기준 : 백만달러(USD)</strong>
-                    </div>
-                    <!-- //tabs_menu -->
-                </div>
-
-                <div class="tableetabs_wrap">
-
-                    <!-- 재무제표 > 연간 -->
-                    <div class="tabletabs_content tabs_01">
-                        <div class="chart_box">
-                            <div id="containerfinancials1_1" class="containerfinancials1"></div>
-                            <ul class="chart_legend">
-                                <li><span><i></i>매출액</span></li>
-                                <li><span><i></i>영업이익</span></li>
-                                <li><span><i></i>순이익</span></li>
-                            </ul>
-                        </div>
-                        <div class="chart_box">
-                            <div id="containerfinancials1_2" class="containerfinancials1"></div>
-                            <ul class="chart_legend">
-                                <li><span><i></i>매출액</span></li>
-                                <li><span><i></i>영업이익</span></li>
-                                <li><span><i></i>순이익</span></li>
-                            </ul>
-                        </div>
-                        <div class="chart_box">
-                            <div id="containerfinancials1_3" class="containerfinancials1"></div>
-                            <ul class="chart_legend">
-                                <li><span><i></i>매출액</span></li>
-                                <li><span><i></i>영업이익</span></li>
-                                <li><span><i></i>순이익</span></li>
-                            </ul>
+                <div class="dataBox">
+                    <span class="reg_day">*기준 : 22 01/22</span>
+                    <div class="bg_box">
+                        <div class="data_opinion">
+                            <div class="line">
+                                <div class="th">PER</div>
+                                <div class="td">
+                                    <b>31.50</b>배
+                                </div>
+                            </div>
+                            <div class="line">
+                                <div class="th">PBR</div>
+                                <div class="td">
+                                    <b>31.50</b>배
+                                </div>
+                            </div>
+                            <div class="line">
+                                <div class="th">PSR</div>
+                                <div class="td">
+                                    <b>31.50</b>배
+                                </div>
+                            </div>
+                            <div class="line">
+                                <div class="th">ROE</div>
+                                <div class="td">
+                                    <b>831.50</b>%
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <!-- //tabletabs_content -->
-
-                    <!-- 재무제표 > 분기 -->
-                    <div class="tabletabs_content tabs_02">
-                        <div class="chart_box">
-                            <div id="containerfinancials2_1" class="containerfinancials1"></div>
-                            <ul class="chart_legend">
-                                <li><span><i></i>매출액</span></li>
-                                <li><span><i></i>영업이익</span></li>
-                                <li><span><i></i>순이익</span></li>
-                            </ul>
-                        </div>
-                        <div class="chart_box">
-                            <div id="containerfinancials2_2" class="containerfinancials1"></div>
-                            <ul class="chart_legend">
-                                <li><span><i></i>매출액</span></li>
-                                <li><span><i></i>영업이익</span></li>
-                                <li><span><i></i>순이익</span></li>
-                            </ul>
-                        </div>
-                        <div class="chart_box">
-                            <div id="containerfinancials2_3" class="containerfinancials1"></div>
-                            <ul class="chart_legend">
-                                <li><span><i></i>매출액</span></li>
-                                <li><span><i></i>영업이익</span></li>
-                                <li><span><i></i>순이익</span></li>
-                            </ul>
-                        </div>
-                    </div>
-
                 </div>
-                <!-- //tabletabs_wrap -->
+                <!-- //dataBox -->
 
-                <!-- 하단 서비스 노출 배너 -->
-                <style>
-                    .family_banner {
-                        padding: 35px 0 0;
-                    }
-
-                    .family_banner .bannerSwiper {
-                        padding-bottom: 30px;
-                    }
-
-                    .family_banner .bannerSwiper img {
-                        display: inline-block;                        
-                        width: 100%;
-                        height: 100%;
-                    }
-                </style>
-                <script>
-                    $(document).ready(function () {                        
-                        var randomIndex = Math.floor(Math.random() * 2); // 0 또는 1 랜덤 선택
-                        var bannerSwiper = $('.bannerSwiper');
-
-                        // 모든 a 태그를 숨김
-                        bannerSwiper.find('a').hide();
-
-                        // 랜덤하게 선택된 a 태그만 보이도록 설정
-                        bannerSwiper.find('a').eq(randomIndex).show();
-                        
-                    });
-                </script>
-                <div class="family_banner">     
-                    <div class="bannerSwiper">
-                        <a href="https://value.choicestock.co.kr/?utm_source=choicestock&utm_medium=banner&utm_campaign=service" target="_blank"><img src="../img/banner/family_vl_01.png" class="radam_Img_vl" alt="밸류라인"></a>                
-                        <a href="https://super.choicestock.co.kr/?utm_source=choicestock&utm_medium=banner&utm_campaign=service" target="_blank"><img src="../img/banner/family_sst_01.png" class="radam_Img_sst" alt="슈퍼스톡스"></a>                    
-                    </div>                                   
-                    <!-- //bannerSwiper -->
+                <div class="chart_box">
+                    <h3 class="c_title">매출액</h3>
+                    <span class="unit">* 단위 : 백만 달러</span>
+                    <div id="containerfinancials1_1" class="financials_style"></div>
                 </div>
-                <!-- //family_banner -->
-                
+                <div class="chart_box">
+                    <h3 class="c_title">EPS 주당순이익 </h3>
+                    <span class="unit">* 단위 : 백만 달러</span>
+                    <div id="containerfinancials1_2" class="financials_style"></div>
+                </div>
+                <div class="chart_box">
+                    <h3 class="c_title">ROE 자기자본이익률</h3>
+                    <span class="unit">* 단위 : 백만 달러</span>
+                    <div id="containerfinancials1_3" class="financials_style"></div>
+                </div>
+                <div class="chart_box">
+                    <h3 class="c_title">주가&EPS</h3>
+                    <div id="containerfinancials2_1" class="financialsLine_style"></div>
+                </div>
+                <div class="chart_box">
+                    <h3 class="c_title">주당배당금</h3>
+                    <span class="unit">* 단위 : 달러</span>
+                    <div id="containerfinancials1_4" class="financials_style"></div>
+                </div>
+                <div class="chart_box">
+                    <h3 class="c_title">시가배당률</h3>
+                    <span class="unit">* 단위 : %</span>
+                    <div id="containerfinancials1_5" class="financials_style"></div>
+                </div>
             </div>
-            <!-- //sub_mid -->
+
 
             <div class="premiumLock_cunt" style="bottom: 140px;"> <!--  bottom 값은 문구 확인용으로 들어간 코드라 실제 반영시는 제거해주세요 -->
                 <!-- 비 로그인 -->
-                <div class="more">                                                
+                <div class="more">
                     매매신호 /<span class="">종목진단 매일 3건 무료</span>
                     <a href="../member/login_sns.html" class="go_link">회원가입</a>
-                </div>                    
+                </div>
             </div>
             <div class="premiumLock_cunt">
                 <!-- 무료회원 -->
-                <div class="more">                                                
+                <div class="more">
                     종목진단 / 적정주가 2건 / <span class="">매일 3건 무료</span>
                     <a href="../payment/step01.html" class="go_link">무제한</a>
-                </div>                    
+                </div>
             </div>
 
         </div>
         <!-- //container -->
 
-        <div id="footer" class="chous_footer typeSub_f">            
+        <div id="footer" class="chous_footer typeSub_f">
 
             <div class="notice">
 
                 <div class="service_info">
                     <p>본 서비스는 투자판단에 참고용으로만 사용하실 수 있으며, 모든 투자판단은 투자자 본인의 책임으로 당사는 그 결과에 대해 법적인 일체의 책임을 지지 않습니다.</p>
-                    <p class="dataLink">data from <a href="https://www.quandl.com/" target="_blank">Quandl and Sharadar</a>
+                    <p class="dataLink">data from <a href="https://www.quandl.com/" target="_blank">Quandl and
+                            Sharadar</a>
                     </p>
                 </div>
 
                 <ul class="terms_list">
                     <li><a href="terms.html" target="_black">이용약관</a></li>
-                    <li><a href="https://www.notion.so/US-FAQ-274298fadcbe4651aa06d58e9c9b9e7f" target="_blank">서비스 FAQ</a></li>
+                    <li><a href="https://www.notion.so/US-FAQ-274298fadcbe4651aa06d58e9c9b9e7f" target="_blank">서비스
+                            FAQ</a></li>
                     <li><a href="policy.html" target="_black"><strong>개인정보처리방침</strong></a></li>
-                    <li><a href="https://www.notion.so/f160286b2fa848fb92ea6bf20af9f502" target="_black">업데이트 소식</a></li>
+                    <li><a href="https://www.notion.so/f160286b2fa848fb92ea6bf20af9f502" target="_black">업데이트 소식</a>
+                    </li>
                     <li><a href="https://www.datahero.co.kr" target="_blank">회사소개</a></li>
                 </ul>
 
                 <div class="foot_info">
                     <div class="info_tel_box">
-                        <p><span class="sns_kakao"><a href="http://pf.kakao.com/_QDLHxb/chat" target="_blank"><img src="../img/sns_kakao.svg" alt="카카오톡 문의하기"></a></span></p>
+                        <p><span class="sns_kakao"><a href="http://pf.kakao.com/_QDLHxb/chat" target="_blank"><img
+                                        src="../img/sns_kakao.svg" alt="카카오톡 문의하기"></a></span></p>
                         <span class="cs">평일 9:00 ~ 17:00 (주말/공휴일 제외)<br>점심시간 11:20 ~ 12:20</span>
                     </div>
                     <!-- //info_tel_box -->
                     <p class="copyright"><a href="https://www.datahero.co.kr" target="_blank">ⓒ (주)데이터히어로</a>
                     </p>
-                    
+
                 </div>
                 <!-- //foot_info -->
 

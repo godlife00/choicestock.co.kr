@@ -1,6 +1,7 @@
 @charset "utf-8";
 @import url('https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css');
 @import url('https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-jp.css');
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css");
 
 /*** 1.0 Mobile Reset** -----------------------------------------------------------------------------*/
 html {
@@ -143,7 +144,8 @@ video {
 	padding: 0;
 	border: 0;
 	line-height: 100%;
-	font-family: 'Spoqa Han Sans Neo', "Malgun gothic", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: "Pretendard Variable", Pretendard, 'Spoqa Han Sans Neo', -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+	/* font-family: 'Spoqa Han Sans Neo', "Malgun gothic", "Helvetica Neue", Helvetica, Arial, sans-serif; */
 	letter-spacing: -0.015rem;
 	color: #444;
 	vertical-align: baseline;
@@ -880,26 +882,29 @@ body {
 
 .globalStock .middle_banner.event .link_banner,
 .globalStock .middle_banner.event .link_banner img {
-	display: block;	
-	width: 100%;	
+	display: block;
+	width: 100%;
 	background: url('../img/banner/banner_free_2weeks.png') no-repeat left top;
 	background-size: cover;
 }
+
 .globalStock .middle_banner.event .link_banner a {
 	display: flex;
-	flex-wrap: wrap;	
+	flex-wrap: wrap;
 	align-items: center;
-    justify-content: flex-start;
-    flex-direction: column;
+	justify-content: flex-start;
+	flex-direction: column;
 	gap: 3px;
-	padding: 16px 0;	
+	padding: 16px 0;
 	color: #fff;
 	font-size: 12px;
 }
-.globalStock .middle_banner.event .link_banner a strong {	
+
+.globalStock .middle_banner.event .link_banner a strong {
 	color: #1ee8be;
 	font-size: 12px;
 }
+
 .globalStock .middle_banner.event.main_event {
 	width: calc(100% - 30px);
 	margin: 15px auto 0;
@@ -3060,7 +3065,7 @@ table.tableRanking td {
 	color: #404fc3;
 	font-size: 0.875rem;
 	padding-right: 12px;
-	line-height: 18px;	
+	line-height: 18px;
 }
 
 .globalStock .ptfo_recom .ptfo_title::after {
@@ -3074,6 +3079,7 @@ table.tableRanking td {
 	right: 3px;
 	top: 1px;
 }
+
 .globalStock .ptfo_recom .ptfo_title a {
 	color: #404fc3;
 }
@@ -3194,74 +3200,85 @@ table.tableRanking td {
 	gap: 12px;
 	background-color: #f6f7fa;
 }
+
 .globalStock .main_mid.attention_area .attention_all .txt_a {
 	width: 100%;
 	color: #333;
-    font-size: 0.875rem;
-} 
+	font-size: 0.875rem;
+}
+
 .globalStock .main_mid.attention_area table.tableRanking.type_2Line td.num {
 	text-align: right;
 	/* font-weight: bold; */
 }
+
 .globalStock .main_mid.attention_area table.tableRanking.type_2Line td.num span b {
 	font-weight: normal;
 }
+
 .globalStock .main_mid.attention_area table.tableRanking.type_2Line .num.dod {
 	text-align: left;
 }
+
 .globalStock .main_mid.attention_area table.tableRanking.type_2Line .num.dod span,
 .globalStock .main_mid.attention_area table.tableRanking.type_2Line .num.dod span b {
-	background: none;	
-	text-align: left;	
-	font-weight: normal;	
+	background: none;
+	text-align: left;
+	font-weight: normal;
 }
+
 .globalStock .main_mid.attention_area table.tableRanking.type_2Line .num.dod span.increase,
 .globalStock .main_mid.attention_area table.tableRanking.type_2Line .num.dod span.decrease {
 	background: none !important;
 	padding-top: 3px;
-	
+
 }
+
 .globalStock .main_mid.attention_area table.tableRanking.type_2Line .num.dod span.increase,
 .globalStock .main_mid.attention_area table.tableRanking.type_2Line .num.dod span.increase b {
-	color: #ff2929;	
-    font-size: 0.75rem;
-    line-height: normal;
-	font-weight: normal !important;
-}
-.globalStock .main_mid.attention_area table.tableRanking.type_2Line .num.dod span.decrease,
-.globalStock .main_mid.attention_area table.tableRanking.type_2Line .num.dod span.decrease b {	
-	color: #26ABFF;
-    font-size: 0.75rem;
-    line-height: normal;
+	color: #ff2929;
+	font-size: 0.75rem;
+	line-height: normal;
 	font-weight: normal !important;
 }
 
-.globalStock .main_mid.attention_area table.tableRanking.type_2Line .signal {	
-	display: inline-block;    
-    border-radius: 3px;
-    text-align: center;    
+.globalStock .main_mid.attention_area table.tableRanking.type_2Line .num.dod span.decrease,
+.globalStock .main_mid.attention_area table.tableRanking.type_2Line .num.dod span.decrease b {
+	color: #26ABFF;
+	font-size: 0.75rem;
+	line-height: normal;
+	font-weight: normal !important;
+}
+
+.globalStock .main_mid.attention_area table.tableRanking.type_2Line .signal {
+	display: inline-block;
+	border-radius: 3px;
+	text-align: center;
 	margin-top: 15px;
 	margin-right: 5px;
-    padding: 5px 5px;
-    width: 61px;
-    box-sizing: border-box;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+	padding: 5px 5px;
+	width: 61px;
+	box-sizing: border-box;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
 	color: #fff;
 	font-size: 12px;
 }
+
 @media (max-width:360px) {
-	.globalStock .main_mid.attention_area table.tableRanking.type_2Line .signal {			
+	.globalStock .main_mid.attention_area table.tableRanking.type_2Line .signal {
 		padding: 5px 5px;
-		width: 46px;		
-	}	
+		width: 46px;
+	}
 }
-.globalStock .main_mid.attention_area table.tableRanking.type_2Line .signal span {	
+
+.globalStock .main_mid.attention_area table.tableRanking.type_2Line .signal span {
 	display: inline-block;
 	color: #fff;
 	font-size: 12px;
 }
+
 .globalStock .main_mid.attention_area table.tableRanking.type_2Line .signal.buy {
 	background-color: #FF4500;
 }
@@ -3274,7 +3291,7 @@ table.tableRanking td {
 	background-color: #008000;
 }
 
-.globalStock .main_mid.attention_area table.tableRanking.type_2Line .signal.waitting {	
+.globalStock .main_mid.attention_area table.tableRanking.type_2Line .signal.waitting {
 	background-color: #a1a1a1;
 }
 
@@ -3342,20 +3359,22 @@ table.tableRanking td {
 	font-weight: normal;
 	box-sizing: border-box;
 	display: inline-block;
-	width: 100px;	
+	width: 100px;
 	overflow: hidden;
 	text-overflow: ellipsis;
-	white-space: nowrap;	
+	white-space: nowrap;
 }
+
 @media (min-width:361px) and (max-width:700px) {
-	.globalStock .main_mid.attention_area table.tableRanking .title a {		
-		width: 130px;					
-	}	
+	.globalStock .main_mid.attention_area table.tableRanking .title a {
+		width: 130px;
+	}
 }
+
 @media (min-width:721px) {
-	.globalStock .main_mid.attention_area table.tableRanking .title a {		
+	.globalStock .main_mid.attention_area table.tableRanking .title a {
 		width: 340px;
-	}	
+	}
 }
 
 .globalStock .main_mid.attention_area table.tableRanking .title a .ticker {
@@ -3369,6 +3388,7 @@ table.tableRanking td {
 	text-overflow: ellipsis;
 	white-space: nowrap;
 }
+
 .globalStock .main_mid.attention_area table.tableRanking .num {
 	text-align: right;
 }
@@ -11590,9 +11610,9 @@ table.tableRanking td {
 	text-align: center;
 	vertical-align: top;
 }
-.globalStock .sub_search .latest_results .tabsArea table.tableRanking.type_2Line td.opinion {
-	
-}
+
+.globalStock .sub_search .latest_results .tabsArea table.tableRanking.type_2Line td.opinion {}
+
 .globalStock .sub_search .latest_results .tabsArea table.tableRanking.type_2Line td.opinion span {
 	display: inline-block;
 	margin-top: 4px;
@@ -11603,18 +11623,23 @@ table.tableRanking td {
 	text-align: center;
 	color: #fff;
 }
+
 .globalStock .sub_search .latest_results .tabsArea table.tableRanking.type_2Line td.opinion span.buy {
 	background-color: #FF4500;
 }
+
 .globalStock .sub_search .latest_results .tabsArea table.tableRanking.type_2Line td.opinion span.sell {
 	background-color: #1E90FF;
 }
+
 .globalStock .sub_search .latest_results .tabsArea table.tableRanking.type_2Line td.opinion span.hold {
 	background-color: #008000;
 }
+
 .globalStock .sub_search .latest_results .tabsArea table.tableRanking.type_2Line td.opinion span.waitting {
 	background-color: #a1a1a1;
 }
+
 .globalStock .sub_search .latest_results .tabsArea table.tableRanking td span.na {
 	color: #939393;
 	font-size: 0.8rem;
@@ -11951,15 +11976,15 @@ table.tableRanking td {
 	width: 100%;
 }
 
-.globalStock .sub_search .latest_results .tabsArea .one_step {		
+.globalStock .sub_search .latest_results .tabsArea .one_step {
 	margin: 18px auto 0;
 	padding: 15px 10px;
-	background: #e6e7f4;	
+	background: #e6e7f4;
 	display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: space-between;
-    align-items: center;
+	flex-wrap: wrap;
+	gap: 10px;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .globalStock .sub_search .latest_results .tabsArea .one_step .txt {
@@ -18162,8 +18187,8 @@ table.tableRanking td {
 	position: absolute;
 	left: auto !important;
 	top: 0 !important;
-	right: 0 !important;	
-	padding: 15px;	
+	right: 0 !important;
+	padding: 15px;
 	width: 15px;
 }
 
@@ -18298,6 +18323,7 @@ table.tableRanking td {
 	/* 슈퍼스톡 */
 	background: #fff url('../img/recipe_04.png') no-repeat center 29px;
 }
+
 .globalStock .sub_recipe .sub_mid.recipe_tabs .box_tabs li.today_signal a {
 	/* 오늘의 매매신호 */
 	background: #fff url('../img/recipe_today.png') no-repeat center 21px;
@@ -18353,6 +18379,7 @@ table.tableRanking td {
 	background-image: url('../img/recipe_sale.svg');
 	background-size: auto 64px;
 }
+
 .globalStock .sub_recipe .sub_top.view.recipeToday .box_tabs {
 	background-image: url('../img/recipe_today.png');
 	background-size: auto 64px;
@@ -18424,6 +18451,7 @@ table.tableRanking td {
 	display: block;
 	clear: both;
 }
+
 .globalStock .sub_recipe .sub_mid.recipe_view .recipe_area .news_no_data {
 	margin: 20px 0 55px;
 	border-radius: 20px;
@@ -20775,7 +20803,7 @@ table.tableRanking td {
 	width: 100%;
 }
 
-.globalStock .sub_login .loign .att_service:nth-of-type(2) {		
+.globalStock .sub_login .loign .att_service:nth-of-type(2) {
 	padding: 0;
 	text-align: left;
 	margin-top: 0;
@@ -20995,7 +21023,7 @@ table.tableRanking td {
 .globalStock .sub_login .agree_area .agree_from .phonePin_form {
 	margin-bottom: 9px;
 	width: 100%;
-	box-sizing: border-box;	
+	box-sizing: border-box;
 }
 
 .globalStock .sub_login .agree_area .agree_from .phonePin_form .box {
@@ -30780,7 +30808,7 @@ table.tableRanking td {
 	background-color: #008000;
 }
 
-.globalStock .sub_search .sub_mid.adequateArea .listWrap .mid .charm_num .signal.waitting {	
+.globalStock .sub_search .sub_mid.adequateArea .listWrap .mid .charm_num .signal.waitting {
 	background-color: #a1a1a1;
 }
 
@@ -31038,61 +31066,68 @@ table.tableRanking td {
 
 .globalStock .sub_search .sub_mid.adequateArea .listWrap .latest_signal {
 	margin-top: 15px;
-    display: flex;
-    gap: 5px;
-    justify-content: center;
-    align-items: baseline;
+	display: flex;
+	gap: 5px;
+	justify-content: center;
+	align-items: baseline;
 }
-.globalStock .sub_search .sub_mid.adequateArea .listWrap .latest_signal .date ,
+
+.globalStock .sub_search .sub_mid.adequateArea .listWrap .latest_signal .date,
 .globalStock .sub_search .sub_mid.adequateArea .listWrap .latest_signal .date b {
-	font-size: 0.75rem;    	
-    line-height: 1.18;	
-    color: #939393;	
+	font-size: 0.75rem;
+	line-height: 1.18;
+	color: #939393;
 	padding-bottom: 5px;
 }
+
 .globalStock .sub_search .sub_mid.adequateArea .listWrap .latest_signal .date::before {
 	content: '';
-    display: inline-block;    
+	display: inline-block;
 	padding-right: 10px;
-    width: 12px;
-    height: 12px;
-    background: url('../img/icon_awesome.svg') no-repeat center center;
+	width: 12px;
+	height: 12px;
+	background: url('../img/icon_awesome.svg') no-repeat center center;
 }
+
 .globalStock .sub_search .sub_mid.adequateArea .listWrap .latest_signal .num,
 .globalStock .sub_search .sub_mid.adequateArea .listWrap .latest_signal .num b {
-	font-size: 0.75rem;    	
-    line-height: 1.18;	
-    color: #939393;	
+	font-size: 0.75rem;
+	line-height: 1.18;
+	color: #939393;
 }
-.globalStock .sub_search .sub_mid.adequateArea + .table_btmarea {	
+
+.globalStock .sub_search .sub_mid.adequateArea+.table_btmarea {
 	width: calc(100% - 30px);
-    margin: 5px auto 20px;
-    border-top: 1px solid #f4f4f5;
+	margin: 5px auto 20px;
+	border-top: 1px solid #f4f4f5;
 	display: flex;
-    gap: 7px;
-    justify-content: flex-end;
-    align-items: center;
+	gap: 7px;
+	justify-content: flex-end;
+	align-items: center;
 }
-.globalStock .sub_search .sub_mid.adequateArea + .table_btmarea a.more {
-    position: relative;
-    display: block;
-    color: #333;
+
+.globalStock .sub_search .sub_mid.adequateArea+.table_btmarea a.more {
+	position: relative;
+	display: block;
+	color: #333;
 	font-weight: bold;
-    font-size: 0.875rem;
-    padding: 8px 2px 3px;
+	font-size: 0.875rem;
+	padding: 8px 2px 3px;
 	display: flex;
-    gap: 7px;
+	gap: 7px;
 	justify-content: center;
-    align-items: center;	
-    background: url('../img/bg_bbline.png') repeat-x 0 calc(100% + 8px);
+	align-items: center;
+	background: url('../img/bg_bbline.png') repeat-x 0 calc(100% + 8px);
 }
-.globalStock .sub_search .sub_mid.adequateArea + .table_btmarea a.more i {	    
-    display: inline-block;
-    width: 5px;
-    height: 10px;		
-    background: url('../img/icon_moreR.png') no-repeat center center;
-    background-size: cover;	
+
+.globalStock .sub_search .sub_mid.adequateArea+.table_btmarea a.more i {
+	display: inline-block;
+	width: 5px;
+	height: 10px;
+	background: url('../img/icon_moreR.png') no-repeat center center;
+	background-size: cover;
 }
+
 .globalStock .sub_search .sub_mid.adequateArea .premiumLock_area {
 	margin-top: 10px;
 	background: var(--colbar) url("/img/premiumLock_area.png") no-repeat 0 0;
@@ -31182,6 +31217,7 @@ table.tableRanking td {
 	z-index: 97;
 	opacity: 0;
 }
+
 .premiumLock_cunt.on {
 	right: 15px;
 	opacity: 1;
@@ -31241,37 +31277,40 @@ table.tableRanking td {
 	top: 12px;
 }
 
-.premium_applybtn {	
+.premium_applybtn {
 	border-top: 2px solid #4f5cc7;
-	position: sticky;	
-	bottom: 0;	
+	position: sticky;
+	bottom: 0;
 	text-align: center;
-    width: 100%;
-	margin-top: 15px;    
-    padding: 17px 5px;
+	width: 100%;
+	margin-top: 15px;
+	padding: 17px 5px;
 	box-sizing: border-box;
-    background-color: #404fc3;
+	background-color: #404fc3;
 	box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.5);
-    z-index: 9999;
-    opacity: 1;
+	z-index: 9999;
+	opacity: 1;
 }
-.premium_applybtn a {	
-    font-size: 1rem;
-    color: #fff;    
+
+.premium_applybtn a {
+	font-size: 1rem;
+	color: #fff;
 }
-.premium_applybtn a strong {	    
-    color: #FFDA0D;    
+
+.premium_applybtn a strong {
+	color: #FFDA0D;
 	text-decoration: underline;
 }
+
 .premium_applybtn i {
-    display: inline-block;
-    background: url('../img/Icon_lock.svg') no-repeat;
-    width: 12px;
-    height: 15px;
-    background-size: cover;
-    margin-right: 4px;
-    position: relative;
-    top: 2px;
+	display: inline-block;
+	background: url('../img/Icon_lock.svg') no-repeat;
+	width: 12px;
+	height: 15px;
+	background-size: cover;
+	margin-right: 4px;
+	position: relative;
+	top: 2px;
 	left: -3px;
 }
 
@@ -33948,8 +33987,9 @@ table.tableRanking td {
 .free_2weeks .content .info_txt {
 	padding-top: 35px;
 	padding-bottom: 25px;
-	/* background: url('../img/bg_free_2weeks.svg') no-repeat right 17px; 프리미엄 무료체험 */ 
-	background: url('../img/recipe_today.png') no-repeat calc(100% - 10%) 50%; /* 오늘의 매매신호 */
+	/* background: url('../img/bg_free_2weeks.svg') no-repeat right 17px; 프리미엄 무료체험 */
+	background: url('../img/recipe_today.png') no-repeat calc(100% - 10%) 50%;
+	/* 오늘의 매매신호 */
 	background-size: auto 91px;
 }
 
@@ -33991,22 +34031,26 @@ table.tableRanking td {
 	line-height: 1.5;
 	color: #939393;
 }
+
 .free_2weeks.signalpop .content .info_txt .txt01 {
 	width: 100%;
 }
+
 .free_2weeks.signalpop .content .info_txt .txt02 {
-	margin-top: 7px;	
+	margin-top: 7px;
 	color: #444;
 }
 
 .free_2weeks.signalpop .content .info_txt {
-	background-image: url('../img/signalpop_bg.jpg');		
+	background-image: url('../img/signalpop_bg.jpg');
 	background-size: 120px auto;
 	background-position: right 55%;
 }
+
 .free_2weeks.signalpop .ftr {
 	margin-top: 0;
 }
+
 .free_2weeks .content .info_tip .tip {
 	font-size: 13px;
 	line-height: 1.24;
@@ -34997,4 +35041,421 @@ table.tableRanking td {
 	color: #939393;
 	word-break: break-all;
 	line-height: 1.5;
+}
+
+/* 230829 초스 리뉴얼 개요탭, 추천 */
+.globalStock #header {
+	background-color: #fff;
+	padding: 0 16px;
+	height: 54px;
+	box-sizing: border-box;
+}
+.globalStock #header .headerTop {
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+	height: 54px;
+	box-sizing: border-box;
+	border-bottom: none;
+}
+.globalStock #header .headerTop::before {
+	content: "";
+	display: inline-block;
+	width: 8px;
+	height: 8px;
+	border-top: 2px solid #333333;
+	border-right: 2px solid #333333;
+	transform: rotate(-135deg);
+	border-color: #161b23;
+} 
+.globalStock #header .headerLogo a,
+.globalStock #header .headerLogo span {
+	font-size: 17px;
+	font-weight: bold;	
+	letter-spacing: -0.43px;
+	color: #161b23;
+	padding-right: 8px;
+}
+.globalStock #wrap #container .recom_company {
+	position: relative;
+	padding: 16px 16px;
+	background-color: #fff;
+	box-sizing: border-box;
+}
+
+.globalStock #wrap #container .recom_company::after {
+	content: "";
+	position: absolute;
+	bottom: -8px;
+	left: 0;
+	right: 0;
+	display: block;
+	width: 100%;
+	height: 8px;
+	background-color: var(--background-base);
+	z-index: 1;
+}
+
+.globalStock #wrap #container .recom_company .ticker {
+	display: block;
+	font-size: 0.75rem;
+	line-height: 1.75;
+	color: #969EA7;
+}
+
+.globalStock #header .att {
+	position: absolute;
+	right: 36px;
+	top: 22px;
+}
+
+.globalStock #header .att .attention {
+	cursor: pointer;
+	background-color: #ccd1d5;
+	position: absolute;
+	margin: auto;
+	top: 4px;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 12px;
+	height: 12px;
+	transform: rotate(-45deg);
+	animation-name: beat;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+}
+
+.globalStock #header .att .attention:after {
+	background-color: #ccd1d5;
+	content: "";
+	border-radius: 50%;
+	position: absolute;
+	width: 12px;
+	height: 12px;
+	top: 0px;
+	left: 6px;
+}
+
+.globalStock #header .att .attention:before {
+	background-color: #ccd1d5;
+	content: "";
+	border-radius: 50%;
+	position: absolute;
+	top: -6px;
+	left: 0px;
+	width: 12px;
+	height: 12px;	
+}
+
+.globalStock #header .att .attention.on {
+	background-color: #dd5257;
+}
+
+.globalStock #header .att .attention.on:after,
+.globalStock #header .att .attention.on:before {
+	background-color: #dd5257;
+}
+
+.globalStock #wrap #container .recom_company .company_nm {
+	margin-top: 2px;
+	max-width: 90%;
+}
+
+.globalStock #wrap #container .recom_company .company_nm,
+.globalStock #wrap #container .recom_company .company_nm a {
+	display: block;
+	font-size: 22px;
+	font-weight: 700;
+	line-height: 1.23;
+	color: #181f29;
+}
+
+.globalStock #wrap #container .recom_company .detail {
+	margin-top: 3px;
+}
+
+.globalStock #wrap #container .recom_company .detail .num {
+	font-size: 34px;
+}
+
+.globalStock #wrap #container .recom_company .detail .num span {
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 0.77;
+	color: #181f29;
+}
+
+.globalStock #wrap #container .recom_company .detail .per {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	gap: 4px;
+	margin-top: 4px;
+}
+
+.globalStock #wrap #container .recom_company .detail .per .increase,
+.globalStock #wrap #container .recom_company .detail .per .decrease,
+.globalStock #wrap #container .recom_company .detail .per .same {
+	font-size: 0.9375rem;
+	color: #dd5257;
+	font-weight: 300;
+}
+
+.globalStock #wrap #container .recom_company .detail .per .increase b,
+.globalStock #wrap #container .recom_company .detail .per .decrease b,
+.globalStock #wrap #container .recom_company .detail .per .same b {
+	color: #dd5257;
+	font-weight: 300;
+}
+
+.globalStock #wrap #container .recom_company .detail .per .decrease {
+	color: #404fc3;
+}
+
+.globalStock #wrap #container .recom_company .detail .per .decrease b {
+	color: #404fc3;
+}
+
+.globalStock #wrap #container .recom_company .detail .per .same {
+	color: #363F4B;
+}
+
+.globalStock #wrap #container .recom_company .detail .per .same b {
+	color: #363F4B;
+}
+
+.globalStock #wrap #container .recom_company .detail .per .day {
+	flex: 4;
+	text-align: right;
+	font-size: 0.75rem;
+	line-height: 1.42;
+	color: #969EA7;
+}
+
+
+.globalStock #wrap #container .mainBox.attr .adequateArea {
+	padding-top: 32px;
+}
+
+.globalStock #wrap #container .mainBox.attr .adequateArea .title {
+	font-size: 1.25rem;
+	font-weight: 700;
+	line-height: 1.2;
+	color: #181f29;
+}
+
+.globalStock #wrap #container .mainBox.attr .adequateArea .listWrap .mid {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	gap: 10px;
+	margin-top: 16px;
+	padding: 20px 20px;
+	box-sizing: border-box;
+	border-radius: 16px;
+	background-color: #F5F5F9;
+}
+
+.globalStock #wrap #container .mainBox.attr .adequateArea .listWrap .mid .charm_num {
+	flex: 1;
+	position: relative;
+}
+
+@media (min-width: 426px) {
+	.globalStock #wrap #container .mainBox.attr .adequateArea .listWrap .mid .charm_num {
+		flex: 2;
+	}
+}
+
+.globalStock #wrap #container .mainBox.attr .adequateArea .listWrap .mid .charm_num .signal {
+	flex: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	margin: 0 auto;
+	flex-basis: 65px;
+	width: 65px;
+	height: 65px;
+	box-sizing: border-box;
+	font-size: 1.25rem;
+	font-weight: 700;
+	line-height: 1.25;
+	color: #181f29;
+	background-color: #fff;
+}
+
+.globalStock #wrap #container .mainBox.attr .adequateArea .listWrap .mid .charm_num .signal_guide {
+	cursor: pointer;
+	position: absolute;
+	right: -5px;
+	top: -5px;
+	padding: 5px;
+	display: inline-block;
+	border-radius: 50%;
+}
+
+.globalStock #wrap #container .mainBox.attr .adequateArea .listWrap .mid .charm_num .signal_guide img {
+	display: block;
+}
+
+.globalStock #wrap #container .mainBox.attr .adequateArea .listWrap .mid .num_bar {
+	flex: 2;
+	flex-basis: calc(100% - 85px);
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: 7px;
+}
+
+@media (min-width: 426px) {
+	.globalStock #wrap #container .mainBox.attr .adequateArea .listWrap .mid .num_bar {
+		flex: 2;
+		flex-basis: calc(100% - 185px);
+	}
+}
+
+.globalStock #wrap #container .mainBox.attr .adequateArea .listWrap .mid .num_bar .line {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 10px;
+}
+
+.globalStock #wrap #container .mainBox.attr .adequateArea .listWrap .mid .num_bar .line .th {
+	flex: 1.5;
+	display: inline-block;
+	font-size: 11px;
+	line-height: 1.42;
+	letter-spacing: -0.05rem !important;
+	text-align: right;
+	color: #6A727B;
+}
+
+.globalStock #wrap #container .mainBox.attr .adequateArea .listWrap .mid .num_bar .line .barArea {
+	flex: 2;
+	width: 100%;
+}
+
+.globalStock #wrap #container .mainBox.attr .adequateArea .listWrap .mid .num_bar .line .barArea .barline {
+	position: relative;
+	width: 100%;
+	height: 10px;
+	border-radius: 10px;
+	background-color: #fff;
+}
+
+.globalStock #wrap #container .mainBox.attr .adequateArea .listWrap .mid .num_bar .line .barArea .barline .position {
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: inline-block;
+	background-color: #ffc05c;
+	border-radius: 10px;
+	height: 100%;
+	width: 0;
+	max-width: 100%;
+}
+
+.globalStock #wrap #container .mainBox.attr .adequateArea .listWrap .mid .num_bar .line .td {
+	font-size: 0.8125rem;
+	font-weight: normal;
+	letter-spacing: -0.3px;
+	color: rgba(51, 51, 51, 0.6);
+}
+
+.globalStock #wrap #container .mainBox.attr .adequateArea .listWrap .mid .num_bar .line .td b {
+	font-weight: bold;
+}
+
+.globalStock #wrap #container .mainBox.attr .adequateArea .listWrap .mid .num_bar .line:nth-child(1) .barArea .barline .position {
+	background-color: #4D6EE4;
+}
+
+.globalStock #wrap #container .mainBox.attr .adequateArea .listWrap .mid .num_bar .line:nth-child(2) .barArea .barline .position {
+	background-color: #909DDB;
+}
+
+.globalStock #wrap #container .mainBox.attr .adequateArea .listWrap .mid .num_bar .line:nth-child(3) .barArea .barline .position {
+	background-color: #A1B8D8;
+}
+
+.globalStock #wrap #container .mainBox.attr .adequateArea .premiumLock_area {
+	margin-top: 10px;
+	background: var(--colbar) url("../img/premiumLock_area.png") no-repeat 0 0;
+	background-size: cover;
+}
+
+.globalStock #wrap #container .mainBox.attr .adequateArea .premiumLock_area .transbox {
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 31px;
+	min-height: 104px;
+	width: 100%;
+	height: 100%;
+	border-radius: 16px;
+	padding: 25px 7%;
+	box-sizing: border-box;
+	background-color: rgba(64, 79, 195, 0.8);
+	-webkit-backdrop-filter: blur(5px);
+	backdrop-filter: blur(5px);
+}
+
+@-moz-document url-prefix() {
+	.globalStock #wrap #container .mainBox.attr .adequateArea .premiumLock_area .transbox {
+		background-color: rgba(64, 79, 195, 0.8);
+	}
+}
+
+.globalStock #wrap #container .mainBox.attr .adequateArea .premiumLock_area .transbox .free_title {
+	text-shadow: 0 2px 0 rgba(59, 31, 31, 0.36);
+	font-size: 1.125rem;
+	font-weight: 700;
+	letter-spacing: normal;
+	color: #fff;
+}
+
+.globalStock #wrap #container .mainBox.attr .adequateArea .premiumLock_area .transbox .sum {
+	font-size: 11px;
+	display: block;
+	margin-top: 7px;
+	font-weight: normal;
+	letter-spacing: normal;
+	color: #fff;
+}
+
+.globalStock #wrap #container .mainBox.attr .adequateArea .premiumLock_area .transbox .more {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 8px;
+	padding: 5px 9px;
+	border-radius: 10px;
+	box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+	background-color: var(--colpry);
+	font-size: 10px;
+	font-weight: normal;
+	line-height: 1.3;
+	letter-spacing: -0.5px;
+	text-align: center;
+	color: var(--colfff);
+}
+
+.globalStock #wrap #container .mainBox.attr .adequateArea .premiumLock_area .transbox .more::after {
+	content: "";
+	display: inline-block;
+	width: 8px;
+	height: 8px;
+	border-top: 2px solid #C7CCD1;
+	border-right: 2px solid #C7CCD1;
+	transform: rotate(-135deg);
+	width: 4px;
+	height: 4px;
+	transform: rotate(45deg);
+	border-color: var(--coldae);
 }
