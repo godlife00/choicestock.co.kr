@@ -108,7 +108,7 @@
             <div class="headerTop">
                 <h1 class="headerLogo"><span>종목검색</span></h1>                
                 <a href="javascript:history.back();" class="go_back"></a>                
-                <!-- <span class="att"><i class="attention on" style="left:-50px"></i></span> -->
+                <span class="att"><i class="attention on" style="left:-50px"></i></span>
                 <span class="att"><i class="attention attention_pop"></i></span>
                 <!-- 관심종목 최초 지정 시 관심종목 안내 팝업 노출 : class = attention_pop 있는 경우-->
             </div>
@@ -121,7 +121,8 @@
             <!-- 검색 종목 -->
             <div class="recom_company">
                 <ul class="list">
-                    <li class="ticker">AAPL</li>
+                    <li class="ticker">AAPL</li>                    
+                    <li class="stock_index"><span>NASDAQ</span><span>S&P500</span></li>                    
                     <li class="company_nm">마이크로소프트</li>                    
                     <li class="detail">
                         <div class="num">
@@ -135,12 +136,21 @@
                         </div>
                     </li>
                 </ul>
+                <div class="attention_box">
+                    <ul>
+                        <li class="attention" id="catch_icon_one_sub"><i></i><strong id="catch_count_one">76</strong>명의 관심</li>
+                    </ul>                    
+                    <div class="stock_tag">
+                        <span>#배당매력주</span>
+                        <span>#관심TOP50</span>
+                        <span>#이익성장주</span>
+                    </div>
+                </div>
             </div>
             <!-- //recom_company -->
 
             <div class="sub_mid nondata" style="display: none;">
-                <p class="nodata_guide"><strong>GOOG</strong>의 상세 기업정보는 <strong><a
-                            href="/search/invest_charm/GOOGL?pn=&amp;pg=">GOOGL</a></strong> 종목에서 확인할 수 있습니다.</p>
+                <p class="nodata_guide"><strong>GOOG</strong>의 상세 기업정보는 <strong><a href="/search/invest_charm/GOOGL?pn=&amp;pg=">GOOGL</a></strong> 종목에서 확인할 수 있습니다.</p>
             </div>
 
             <div class="sub_mid tabs_area">
@@ -156,25 +166,37 @@
                 <!-- //tabs_5 -->
             </div>
 
-            <!--퀀트분석 점수 -->
+            <!--지금 살까? -->
             <div class="mainBox attr">
                 <div class="adequateArea">
-                    <h2 class="title">퀀트분석 점수</h2>
+                    <h2 class="title">지금 살까?</h2>
                     <div class="listWrap">
                         <div class="list">
                             <!-- 벨류 점수 -->
                             <div class="mid">
                                 <div class="charm_num">
-                                    <span class="signal">89</span>
-                                    <span class="signal_guide"><img src="../img/txt_guide.svg" alt="가이드보기"></span>
+                                    <span class="signal hold">보유</span>
+                                    <span class="signal_guide txt_guide"><img src="../img/txt_guide_us.svg" alt="가이드보기"></span>   
+                                    <div class="tooltip">
+                                        <strong class="t_title">지금 살까?</strong>
+                                        <span class="clse_tooltip">닫기</span>
+                                        <br>
+                                        <p class="txt">10년 이상의 금융 빅데이터와 알고리즘 기술을 통해 종목의 매매신호를 신속하게 제시합니다.</p>
+                                        <p class="txt">매매신호는 스마트 스코어 / 밸류에이션 / 수급분석 을 종합적으로 고려해 결정합니다.</p>
+                                        <p class="txt">매매신호는 매수-보유-매도-관망 신호를 제공하며, 3개 조건을 모두 만족 할 때 매수 및 보유신호가 발생합니다.
+										</p>
+                                    </div>                                 
                                 </div>
                                 <!-- //charm_num -->
                                 <div class="num_bar">
-                                    매매신호는 총 7회 발생했습니다.
+                                    <p><b>매매신호는 총 7</b>회 발생했습니다.</p>                                    
+                                    <p>매매신호 <b>최고 수익률 <span class="increase">132.95%</span></b></p>                                    
+                                    <p>매매신호 <b>누적 수익률 <span class="decrease">-84.56%</span></b></p>                                    
                                 </div>
                                 <!-- //num_bar -->
+                                <p class="latest_signal">최근 보유 신호는 <b>272.34</b>입니다.<span class="day">(23.07/23)</span></p>
                             </div>
-                            <!-- //mid -->
+                            <!-- //mid -->                            
                         </div>
                         <!-- //list -->
                     </div>
@@ -184,59 +206,81 @@
             </div>
             <!-- //bg_box -->
 
-            <!-- 투자노트 -->
-            <div class="mainBox financials">
-                <div class="area_note">
-                    <h3 class="title">투자노트</h3>
+            
 
-                    <div class="note_list">
-                        <ul OnClick="location.href ='../stock/note_view.html'" style="cursor:pointer;">
-                            <li class="note_nm">
-                                <a href="../stock/note_view.html">
-                                    애플, 위성통신 접속 기능 탑재한 아이폰14 시리즈 공개애플
-                                </a>
-                                <p class="day">2022. 8/12</p>
-                            </li>
-                            <!-- 이미지 없는 경우 아래 li 제거 -->
-                            <li class="sume_img">
-                                <a href="../stock/note_view.html"><img src="../img/premiumLock_area_ch.jpg" alt="노트 썸네일"
-                                        class="img"></a>
-                            </li>
-                        </ul>
-                        <ul OnClick="location.href ='../stock/note_view.html'" style="cursor:pointer;">
-                            <li class="note_nm">
-                                <a href="../stock/note_view.html"> 애플, 위성통신 접속 기능 탑재한 아이폰14 시리즈 공개애플애플, 위성통신 접속 기능
-                                    탑재한 아이폰14 시리즈 공개애플
-                                </a>
-                                <p class="day">2022. 8/12</p>
-                            </li>
-                        </ul>
-                        <ul OnClick="location.href ='../stock/note_view.html'" style="cursor:pointer;">
-                            <li class="note_nm">
-                                <a href="../stock/note_view.html">
-                                    애플, 위성통신 접속 기능 탑재한 아이폰14 시리즈 공개애플
-                                </a>
-                                <p class="day">2022. 8/12</p>
-                            </li>
-                        </ul>
+            <div class="mainBox score">
+                <div class="box" onclick="location.href ='/search/search_diagnosis.html'" style="cursor:pointer;">
+                    <p class="title"><span>스마트 스코어</span></p>
+                    <div class="con">
+                        <div class="charmNum_box">
+                            <strong class="charm_num">85</strong>                            
+                        </div>
+                        <!-- //charmNum_box -->
+                        <p class="charm_ranking">전체상위 <span>1%</span></p>
+                    </div>
+                </div>
+                <div class="box" onclick="location.href ='/search/search_adequate.html'" style="cursor:pointer;">
+                    <p class="title"><span>밸류에이션</span></p>
+                    <div class="con">
+                        <div class="charmNum_box">
+                            <strong class="charm_num">고평가</strong>                            
+                        </div>
+                        <!-- //charmNum_box -->
+                        <p class="charm_ranking">적정가 <span>277.00</span></p>
+                    </div>
+                </div>                
+            </div>
 
-                        <div class="btn_more">
-                            <a href="../stock/note_searchList.html" class="">더보기</a>
+            <!-- outline -->
+            <div class="mainBox outline">
+                <div class="bg_box">
+                    <div class="data_opinion">
+                        <div class="line">
+                            <div class="th">시가총액</div>
+                            <div class="td">
+                                <b>1,898.</b>00
+                                <span class="unit">백만달러</span>
+                            </div>
+                        </div>
+                        <div class="line">
+                            <div class="th">7일 주가</div>
+                            <div class="td">
+                                <span class="increase"><b>+89.</b>89%</span>
+                            </div>
+                        </div>
+                        <div class="line">
+                            <div class="th">6개월 주가</div>
+                            <div class="td">
+                                <span class="decrease"><b>-89.</b>89%</span>
+                            </div>
+                        </div>
+                        <div class="line">
+                            <div class="th">3개월 추세</div>
+                            <div class="td">
+                                <span class="ibox str">강세</span>
+                                <!-- <span class="ibox bas">횡보</span> -->
+                                <!-- <span class="ibox weak">약세</span> -->
+                            </div>
                         </div>
                     </div>
-                    <!-- //note_list -->
+                </div>
 
-                    <!-- 투자노트 콘텐츠가 없는 경우 -->
-                    <div class="no_data">
-                        <p>
-                            종목의 투자노트 콘텐츠가 없습니다.<br>
-                            <a href="../stock/quant_basic.html" class="link_basic">발빠른 미국시장 콘텐츠 살펴보기</a>
+                <div id="containeroutline1_1" class="outline_style"></div>
+
+                <div class="summary">
+                    <div class="view_box">
+                        <p class="txt">
+                            <strong>애플</strong>은 스마트폰(아이폰), PC(맥), 태블릿(아이패드), 웨어러블, 기타 악세사리와 디지털 컨텐츠 스토어, 스트리밍 서비스,
+                            애플케어 등 다양한 제품과 컨텐츠를 동시에 제공하는 회사
                         </p>
                     </div>
-                    <!-- //투자노트 콘텐츠가 없는 경우 -->
-
+                    <!-- //view_box -->
                 </div>
-                <!-- //area_note  -->
+            </div>
+            <!-- //outline -->
+
+            <div class="banner_signal">
+                <a href="../stock/recipeToday_view.html"><img src="../img/banner/today_trading_230901.jpg" alt="오늘의매매신호 지금살까? 매매신호 종목만 쏙쏙!"></a>
             </div>
 
             <!-- 매출액, 영업이익, 주당순이익(EPS) 막대 차트 -->
@@ -364,7 +408,94 @@
         </div>
         <!-- //footer -->
 
+        <div class="modalBox">
+            <div class="modal signal_pop01">
+                <div class="pop_header">
+                    <h1 class="pop_title">매매신호</h1>
+                    <span class="clse">
+                        <!--닫기-->
+                    </span>
+                </div>
+                <div class="pop_con">
+                    <p class="txt">- 최근 보유(매수/매도)신호는 <b>272.34</b>입니다. (23.7/23)</p>
+                    <p class="txt">- 최근 매매신호의 예상수익률은 <b>23.24</b>%입니다.</p>                    
+                    <p class="txt">- 최근 매매신호</p>                    
+                    <div class="trading_signal">
+                        <ul class="list">
+                            <li class="day">23.07.23</li>
+                            <li class="trends">                                
+                                <span class="ibox str">강세</span>
+                                <!-- <span class="ibox bas">횡보</span> -->
+                                <!-- <span class="ibox weak">약세</span> -->
+                            </li>
+                            <li class="signal">272.34</li>
+                            <li class="exp_signal increase">23.34% <span>(예상)</span></li>
+                        </ul>
+                        <ul class="list">
+                            <li class="day">23.07.23</li>
+                            <li class="trends">                                                                
+                                <span class="ibox bas">횡보</span>
+                            </li>
+                            <li class="signal">272.34</li>
+                            <li class="exp_signal decrease">-23.34% <span>(예상)</span></li>
+                        </ul>
+                        <ul class="list">
+                            <li class="day">23.07.23</li>
+                            <li class="trends">                                                                
+                                <span class="ibox weak">약세</span>
+                            </li>
+                            <li class="signal">272.34</li>
+                            <li class="exp_signal increase">123.34% <span>(예상)</span></li>
+                        </ul>
+                        <ul class="list">
+                            <li class="day">23.07.23</li>
+                            <li class="trends">                                                                
+                                <span class="ibox bas">횡보</span>
+                            </li>
+                            <li class="signal">72.34</li>
+                            <li class="exp_signal decrease">-3.34% <span>(예상)</span></li>
+                        </ul>
+                        <ul class="list">
+                            <li class="day">23.07.23</li>
+                            <li class="trends">                                                                
+                                <span class="ibox weak">약세</span>
+                            </li>
+                            <li class="signal">1,272.34</li>
+                            <li class="exp_signal increase">23.34% <span>(예상)</span></li>
+                        </ul>
+                    </div>
+                    <!-- //trading_signal -->
+                </div>
+            </div>
+            <div class="blocker"></div>
+        </div>
+
     </div>
     <!-- //wrap -->
 
 </body>
+
+<!-- 개요 리뉴얼에서만 쓰는 스크립트 230905 -->
+<script>
+    $(document).ready(function () {
+        // 툴팁
+        $(".txt_guide").click(function (e) {
+            e.stopPropagation();
+            $(this).siblings(".tooltip").toggle();
+        });
+        $(".clse_tooltip").click(function () {
+            $(".tooltip").hide();
+        });
+        $(document).click(function (e) {
+            if (!$(e.target).closest('.tooltip').length) {
+                $(".tooltip").hide();
+            }
+        });
+        // 매수신호 모달 팝업        
+        $('.mainBox.attr .adequateArea .listWrap .mid .latest_signal').on('click', function () {
+            $('.modal').hide().removeClass('slideUp');
+            $('.blocker').show();
+            $('.signal_pop01').show().addClass('slideUp');
+        });        
+    })            
+</script>

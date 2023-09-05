@@ -5057,7 +5057,998 @@ $(document).ready(function () {
             },
         });
     }
-    
+
+    //검색결과 상세 매매신호 일봉 차트    
+    if ($('#containeroutline1_1').length) {
+        var value = [[1644796800000,219.31,221,214.78,217.7],[1644883200000,220.47,221.15,215.06,221],[1644969600000,212.41,217.46,212.36,216.54],[1645056000000,214.02,217.5,207.16,207.71],[1645142400000,209.39,210.75,205.18,206.16],[1645488000000,202.34,207.48,200.06,202.08],[1645574400000,204.16,206.94,198.05,198.45],[1645660800000,191.06,208.35,190.22,207.6],[1645747200000,204.94,211.32,203.18,210.48],[1646006400000,207.675,213.151,206.83,211.03],[1646092800000,209.87,211.752,202.22,203.49],[1646179200000,204.775,209.15,202.02,208.11],[1646265600000,209.015,209.08,201.42,202.97],[1646352000000,202.37,205.89,198.79,200.06],[1646611200000,200.79,200.89,187.28,187.47],[1646697600000,187.85,196.7,186.11,190.29],[1646784000000,195.74,199.1,193.92,198.5],[1646870400000,194.84,196.28,191.068,195.21],[1646956800000,192.635,193.56,186.67,187.61],[1647216000000,187.03,192.29,185.82,186.63],[1647302400000,190.8,192.28,185.911,192.03],[1647388800000,194.7,203.73,194.52,203.63],[1647475200000,201.7,208.04,201.11,207.84],[1647561600000,206.7,216.8,206,216.49],[1647820800000,214.5,214.71,207.63,211.49],[1647907200000,211.37,219.46,210.18,216.65],[1647993600000,213.33,216.799,212.16,213.46],[1648080000000,215,220.67,214.79,219.57],[1648166400000,220.51,225.5,218.89,221.82],[1648425600000,222.13,224.04,219.54,223.59]];
+        Highcharts.chart('containeroutline1_1', {
+            chart: {
+                events: {
+                    load: function () {                        
+                        this.setSize(undefined, 240);
+                    }
+                },
+                backgroundColor: {
+                    // linearGradient: { x1: 0, y1: 1, x2: 1, y2: 0 },
+                },
+                margin: [0, 16, 0, 0],                
+            },
+            
+            legend: {
+                enabled: false,
+            },
+
+            credits: {
+                enabled: false
+            },
+
+            lang: {
+                noData: "해당 데이터가 없습니다",
+            },
+
+            exporting: {
+                enabled: false
+            },
+
+            rangeSelector: {
+                selected: 1
+            },
+
+            lang: {
+                noData: "해당 데이터가 없습니다",
+            },
+
+            title: {
+                style: {
+                    'font-weight': "bold",
+                    color: '#E0E0E3',
+                    textTransform: 'uppercase',
+                    fontSize: '0',
+                },
+                text: ''
+            },
+
+            lang: {
+                noData: "해당 데이터가 없습니다",
+            },
+
+
+            tooltip: {     
+                positioner: function () {
+                    return { x: 15, y: 20 };
+                },           
+                // followTouchMove: false,
+                useHTML: true,
+                backgroundColor: '#F4F4F5',
+                borderWidth: 0,
+                borderRadius: 10,
+                style: {
+                    fontWeight: 'bold',
+                    fontSize: '13px',
+                    color: '#363F4B',
+                    
+                },
+                shadow: false,
+                split: false,
+                shared: true,
+                rosshairs: true,
+                xDateFormat: '%Y.%m.%d',
+
+                formatter: function () {
+                    var s = '<b>' + Highcharts.dateFormat('%Y/%m/%d', this.x) + '</b>' // 일자 포맷
+                    $.each(this.points, function (i, point) {
+                        for (i = 0; i < value.length; i++) {
+                            if (value[i][0] == point.x) {
+                                s += (
+                                    '<br/><strong style="color: #363F4B;">시가 </strong><span>' + value[i][1] + '</span>'
+                                    + '<strong style="color:#363F4B; padding-left:7px">고가 </strong><span>' + value[i][2] + '</span>'
+                                    + '<strong style="color:#363F4B; padding-left:7px">저가 </strong><span>' + value[i][3] + '</span>'
+                                    + '<strong style="color:#363F4B; padding-left:7px">종가 </strong><span>' + value[i][4] + '</span>'
+                                );
+                                break;
+                            };
+                        }
+                    });
+                    return s;
+                }
+            },
+
+            xAxis: [{
+                title: {
+                    text: null
+                },
+                type: 'datetime',
+                gridLineWidth: 0,
+                lineWidth: 0,
+                tickWidth: 0,                
+                labels: {
+                    enabled: false
+                },
+                crosshair: {
+                    width: 1,
+                    color: '#107070',
+                    dashStyle: 'Dot'
+                },
+                ordinal: true,     
+                maxPadding: 0.1,
+            }],
+
+            yAxis: {
+                visible: false,                
+            },
+
+            series: [
+                {
+                    type: 'candlestick',
+                    name: '주가',
+                    data: value,
+                    id: 'dataseries',
+                    crisp: false,
+                }, {
+                    type: 'flags',
+                    y: 40,
+                    name: '매수',
+                    data: [{
+                        x: 1648166400000,
+                        y: 220.51,
+                        title: '매수',
+                        
+                    },
+
+                    // 매수 박스 여러개 들어가는 경우 추가.
+                    {
+                        x: 1646784000000,
+                        y: 195.74,
+                        title: '매수',
+
+                    },
+                    // // 매수 박스 여러개 들어가는 경우 추가.
+                    // {
+                    //     x: 1656374400000,
+                    //     y: 50.41,
+                    //     title: '매수',
+                    // },
+                    ],                    
+                    // 원하는 스타일 및 모양을 여기에 정의합니다.
+                    // fillColor: 'green',  // 채우기 색상
+                    // lineColor: 'blue',   // 테두리 색상
+                    lineWidth: 0,        // 테두리 두께   
+                    onSeries: 'dataseries',                    
+                    shape: 'url(../img/buy.svg)',                    
+                    style: {                        
+                        fontSize: '0',    // 텍스트 크기
+                        color: '#e1305a'
+                    },
+                    
+                }, {
+                    type: 'flags',
+                    y: -40,
+                    name: '매도',
+                    data: [                        
+                        {                            
+                            x: 1647820800000,
+                            y: 214.5,
+                            title: '매도',
+                        },
+                        // 매도 박스 여러개 들어가는 경우 추가.
+                        {                            
+                            x: 1646611200000,
+                            y: 200.79,
+                            title: '매도',
+                        },
+                    ],
+                    lineWidth: 0,        // 테두리 두께                    
+                    shape: 'url(../img/sell.svg)',                    
+                    style: {                        
+                        fontSize: '0',    // 텍스트 크기
+                        color: '#e1305a'
+                    },
+                },
+            ],
+
+            plotOptions: {
+                series: {
+                    groupPadding: 0.2
+                }
+            },
+        });
+    }
+
+
+    // 상세 매매신호 막대 차트
+    if ($('#containerfinancials1_1').length) {
+        Highcharts.chart('containerfinancials1_1', {
+
+            chart: {
+                chart: {
+                    type: 'column'
+                },
+                backgroundColor: {
+                    // linearGradient: { x1: 0, y1: 1, x2: 1, y2: 0 },
+                },                
+            },
+            // 하단 네비게이션 제거
+            navigator: {
+                enabled: false
+            },
+
+            // 스크롤바 제거
+            scrollbar: {
+                enabled: false
+            },
+
+            // 기간범위선택 
+            rangeSelector: {
+                enabled: false,
+                // allButtonsEnabled: true,                
+                // selected: 0,                
+            },
+
+            legend: {
+                enabled: false,
+            },
+
+            credits: {
+                enabled: false
+            },
+
+            lang: {
+                noData: "해당 데이터가 없습니다",
+            },
+
+            exporting: {
+                enabled: false
+            },
+
+            tooltip: {
+                enabled: false
+            },
+
+            rangeSelector: {
+                selected: 1
+            },
+
+            lang: {
+                noData: "해당 데이터가 없습니다",
+            },
+
+            title: {
+                style: {
+                    'font-weight': "bold",
+                    color: '#E0E0E3',
+                    textTransform: 'uppercase',
+                    fontSize: '0',
+                },
+                text: ''
+            },
+
+            lang: {
+                noData: "해당 데이터가 없습니다",
+            },
+
+            xAxis: [{
+                categories: ['2018', '2019', '2020', '2021', '2022 <br> <span style="font-size:10px">(추정)</span>'],
+                crosshair: true,
+                labels: {
+                    style: {
+                        color: '#939393',
+                        fontSize: '0.85rem'
+                    }
+                }
+            }],
+
+            yAxis: {
+                title: {
+                    text: null
+                },
+                gridLineWidth: 0,
+                labels: {
+                    enabled: false
+                },
+                plotLines: [{
+                    color: '#edeeef',
+                    width: 1,
+                    value: 0
+                }],
+            },
+
+            series: [{
+                type: 'column',
+                name: '매출액',
+                data: [{
+                    y: 97.988,
+                },
+                {
+                    y: 45.988,
+                },
+                {
+                    y: 75.988,
+                },
+                {
+                    y: 85.988,
+                },
+                {
+                    y: 95.988,
+                    className: 'point_color'
+                }]
+            }],
+            
+            plotOptions: {
+                series: {
+                    marker: {
+                        enabled: false,
+                    },                                        
+                    // borderRadius: 3,                    
+                    // pointWidth: 28
+                },
+                
+                column: {
+                    minPointLength: 5,
+                    dataLabels: {
+                        enabled: true,
+                        crop: false,
+                        color: '#939393',
+                        overflow: 'none',
+                        format: '{point.y:,.2f}',
+                    },
+                    
+                }
+            },
+
+        });
+    }
+    if ($('#containerfinancials1_2').length) {
+        Highcharts.chart('containerfinancials1_2', {
+
+            chart: {
+                chart: {
+                    type: 'column'
+                },
+                backgroundColor: {
+                    // linearGradient: { x1: 0, y1: 1, x2: 1, y2: 0 },
+                },                
+            },
+            // 하단 네비게이션 제거
+            navigator: {
+                enabled: false
+            },
+
+            // 스크롤바 제거
+            scrollbar: {
+                enabled: false
+            },
+
+            // 기간범위선택 
+            rangeSelector: {
+                enabled: false,
+                // allButtonsEnabled: true,                
+                // selected: 0,                
+            },
+
+            legend: {
+                enabled: false,
+            },
+
+            credits: {
+                enabled: false
+            },
+
+            lang: {
+                noData: "해당 데이터가 없습니다",
+            },
+
+            exporting: {
+                enabled: false
+            },
+
+            tooltip: {
+                enabled: false
+            },
+
+            rangeSelector: {
+                selected: 1
+            },
+
+            lang: {
+                noData: "해당 데이터가 없습니다",
+            },
+
+            title: {
+                style: {
+                    'font-weight': "bold",
+                    color: '#E0E0E3',
+                    textTransform: 'uppercase',
+                    fontSize: '0',
+                },
+                text: ''
+            },
+
+            lang: {
+                noData: "해당 데이터가 없습니다",
+            },
+
+            xAxis: [{
+                categories: ['2018', '2019', '2020', '2021', '2022 <br> <span style="font-size:10px">(추정)</span>'],
+                crosshair: true,
+                labels: {
+                    style: {
+                        color: '#939393',
+                        fontSize: '0.85rem'
+                    }
+                }
+            }],
+
+            yAxis: {
+                title: {
+                    text: null
+                },
+                gridLineWidth: 0,
+                labels: {
+                    enabled: false
+                },
+                plotLines: [{
+                    color: '#edeeef',
+                    width: 1,
+                    value: 0
+                }],
+            },
+
+            series: [{
+                type: 'column',
+                name: '매출액',
+                data: [{
+                    y: 97.988,
+                },
+                {
+                    y: 45.988,
+                },
+                {
+                    y: -75.988,
+                    className: 'decrease_color'
+                },
+                {
+                    y: -85.988,
+                    className: 'decrease_color'
+                },
+                {
+                    y: -95.988,
+                    className: 'point_color'
+                }]
+            }],
+            
+            plotOptions: {
+                series: {
+                    marker: {
+                        enabled: false,
+                    },                                        
+                    // borderRadius: 3,                    
+                    // pointWidth: 28
+                },
+                
+                column: {
+                    minPointLength: 5,
+                    dataLabels: {
+                        enabled: true,
+                        crop: false,
+                        color: '#939393',
+                        overflow: 'none',
+                        format: '{point.y:,.2f}',
+                    },
+                    
+                }
+            },
+
+        });
+    }
+    if ($('#containerfinancials1_3').length) {
+        Highcharts.chart('containerfinancials1_3', {
+
+            chart: {
+                backgroundColor: {
+                    // linearGradient: { x1: 0, y1: 1, x2: 1, y2: 0 },
+                },
+            },
+            // 하단 네비게이션 제거
+            navigator: {
+                enabled: false
+            },
+
+            // 스크롤바 제거
+            scrollbar: {
+                enabled: false
+            },
+
+            // 기간범위선택 
+            rangeSelector: {
+                enabled: false,
+                // allButtonsEnabled: true,                
+                // selected: 0,                
+            },
+
+            legend: {
+                enabled: false,
+            },
+
+            credits: {
+                enabled: false
+            },
+
+            lang: {
+                noData: "해당 데이터가 없습니다",
+            },
+
+            exporting: {
+                enabled: false
+            },
+
+            tooltip: {
+                enabled: false
+            },
+
+            rangeSelector: {
+                selected: 1
+            },
+
+            title: {
+                style: {
+                    'font-weight': "bold",
+                    color: '#E0E0E3',
+                    textTransform: 'uppercase',
+                    fontSize: '0',
+                },
+                text: ''
+            },
+
+            credits: {
+                enabled: false
+            },
+
+            lang: {
+                noData: "해당 데이터가 없습니다",
+            },
+
+            xAxis: [{
+                categories: ['2018', '2019', '2020', '2021', '2022 <br> <span style="font-size:10px">(추정)</span>'],
+                crosshair: true,
+                labels: {
+                    style: {
+                        color: '#939393',
+                        fontSize: '0.85rem'
+                    }
+                }
+            }],
+
+            yAxis: {
+                title: {
+                    text: null
+                },
+                gridLineWidth: 0,
+                labels: {
+                    enabled: false
+                }
+            },
+
+            series: [{
+                type: 'column',
+                name: 'ROE 자기자본이익률',
+                data: [{
+                    y: 97.988,
+                },
+                {
+                    y: 45.988,
+                },
+                {
+                    y: 75.988,
+                },
+                {
+                    y: 85.988,
+                },
+                {
+                    y: 95.988,
+                    className: 'point_color'
+                }]
+            }],
+
+            plotOptions: {
+                series: {
+                    marker: {
+                        enabled: false,
+                    },
+                    // borderRadius: 3,                    
+                    // pointWidth: 28                    
+                },
+                column: {
+                    minPointLength: 5,
+                    dataLabels: {
+                        enabled: true,
+                        crop: false,
+                        color: '#939393',
+                        overflow: 'none',
+                        format: '{point.y:,.2f}',
+                    }
+                }
+            },
+
+        });
+    }
+    if ($('#containerfinancials1_4').length) {
+        Highcharts.chart('containerfinancials1_4', {
+
+            chart: {
+                backgroundColor: {
+                    // linearGradient: { x1: 0, y1: 1, x2: 1, y2: 0 },
+                },
+            },
+            // 하단 네비게이션 제거
+            navigator: {
+                enabled: false
+            },
+
+            // 스크롤바 제거
+            scrollbar: {
+                enabled: false
+            },
+
+            // 기간범위선택 
+            rangeSelector: {
+                enabled: false,
+                // allButtonsEnabled: true,                
+                // selected: 0,                
+            },
+
+            legend: {
+                enabled: false,
+            },
+
+            credits: {
+                enabled: false
+            },
+
+            lang: {
+                noData: "해당 데이터가 없습니다",
+            },
+
+            exporting: {
+                enabled: false
+            },
+
+            tooltip: {
+                enabled: false
+            },
+
+            rangeSelector: {
+                selected: 1
+            },
+
+            title: {
+                style: {
+                    'font-weight': "bold",
+                    color: '#E0E0E3',
+                    textTransform: 'uppercase',
+                    fontSize: '0',
+                },
+                text: ''
+            },
+
+            credits: {
+                enabled: false
+            },
+
+            lang: {
+                noData: "해당 데이터가 없습니다",
+            },
+
+            xAxis: [{
+                categories: ['2018', '2019', '2020', '2021', '2022'],
+                crosshair: true,
+                labels: {
+                    style: {
+                        color: '#939393',
+                        fontSize: '0.85rem'
+                    }
+                }
+            }],
+
+            yAxis: {
+                title: {
+                    text: null
+                },
+                gridLineWidth: 0,
+                labels: {
+                    enabled: false
+                }
+            },
+
+            series: [{
+                type: 'column',
+                name: 'ROE 자기자본이익률',
+                data: [97.988, 45.988, 75.988, 85.988, 95.988]
+            }],
+
+            plotOptions: {
+                series: {
+                    marker: {
+                        enabled: false,
+                    },
+                    // borderRadius: 3,                    
+                    // pointWidth: 28                    
+                },
+                column: {
+                    minPointLength: 5,
+                    dataLabels: {
+                        enabled: true,
+                        crop: false,
+                        color: '#939393',
+                        overflow: 'none',
+                        format: '{point.y:,.2f}',
+                    }
+                }
+            },
+
+        });
+    }
+    if ($('#containerfinancials1_5').length) {
+        Highcharts.chart('containerfinancials1_5', {
+
+            chart: {
+                backgroundColor: {
+                    // linearGradient: { x1: 0, y1: 1, x2: 1, y2: 0 },
+                },
+            },
+            // 하단 네비게이션 제거
+            navigator: {
+                enabled: false
+            },
+
+            // 스크롤바 제거
+            scrollbar: {
+                enabled: false
+            },
+
+            // 기간범위선택 
+            rangeSelector: {
+                enabled: false,
+                // allButtonsEnabled: true,                
+                // selected: 0,                
+            },
+
+            legend: {
+                enabled: false,
+            },
+
+            credits: {
+                enabled: false
+            },
+
+            lang: {
+                noData: "해당 데이터가 없습니다",
+            },
+
+            exporting: {
+                enabled: false
+            },
+
+            tooltip: {
+                enabled: false
+            },
+
+            rangeSelector: {
+                selected: 1
+            },
+
+            title: {
+                style: {
+                    'font-weight': "bold",
+                    color: '#E0E0E3',
+                    textTransform: 'uppercase',
+                    fontSize: '0',
+                },
+                text: ''
+            },
+
+            credits: {
+                enabled: false
+            },
+
+            lang: {
+                noData: "해당 데이터가 없습니다",
+            },
+
+            xAxis: [{
+                categories: ['2018', '2019', '2020', '2021', '2022'],
+                crosshair: true,
+                labels: {
+                    style: {
+                        color: '#939393',
+                        fontSize: '0.85rem'
+                    }
+                }
+            }],
+
+            yAxis: {
+                title: {
+                    text: null
+                },
+                gridLineWidth: 0,
+                labels: {
+                    enabled: false
+                }
+            },
+
+            series: [{
+                type: 'column',
+                name: 'ROE 자기자본이익률',
+                data: [97.988, 45.988, 75.988, 85.988, 95.988]
+            }],
+
+            plotOptions: {
+                series: {
+                    marker: {
+                        enabled: false,
+                    },
+                    // borderRadius: 3,                    
+                    // pointWidth: 28                    
+                },
+                column: {
+                    minPointLength: 5,
+                    dataLabels: {
+                        enabled: true,
+                        crop: false,
+                        color: '#939393',
+                        overflow: 'none',
+                        format: '{point.y:,.2f}',
+                    }
+                }
+            },
+
+        });
+    }
+    if ($('#containerfinancials2_1').length) {
+
+        Highcharts.chart('containerfinancials2_1', {
+
+            chart: {
+                backgroundColor: {
+                    // linearGradient: { x1: 0, y1: 1, x2: 1, y2: 0 },
+                },                
+                marginRight: 16,
+            },
+
+            credits: {
+                enabled: false
+            },
+
+            lang: {
+                noData: "해당 데이터가 없습니다",
+            },
+
+            exporting: {
+                enabled: false
+            },
+
+            tooltip: {
+                useHTML: true,
+                backgroundColor: '#F4F4F5',
+                borderWidth: 0,
+                borderRadius: 10,
+                style: {
+                    fontWeight: 'bold',
+                    fontSize: '13px',
+                    color: '#363F4B',
+                    
+                },
+                shadow: false,
+                split: false,
+                shared: true,
+                rosshairs: true,
+                xDateFormat: '%Y.%m.%d',
+                formatter: function () {
+                    return ['<b style="color:#363F4B">' + this.x + '</b>'].concat(
+                        this.points ?
+                            this.points.map(function (point) {
+                                return '<br>' + point.series.name + ' : ' + point.y + '달러';
+                            }) : []
+                    );
+                },
+                // split: true                
+            },
+
+            title: {
+                style: {
+                    'font-weight': "bold",
+                    color: '#E0E0E3',
+                    textTransform: 'uppercase',
+                    fontSize: '0',
+                },
+                text: ''
+            },
+
+            credits: {
+                enabled: false,
+            },
+
+            lang: {
+                noData: "해당 데이터가 없습니다",
+            },
+
+            colors: ["#4d6ee4", "#F0CC09"],
+
+            xAxis: [{
+                categories: ['2018', '2018', '2018', '2018', '2018', '2018', '2019', '2019', '2019', '2019', '2019', '2019', '2019', '2019', '2019', '2019', '2020', '2020', '2020', '2020', '2020', '2020', '2021', '2021', '2021', '2021', '2021', '2021', '2021', '2021', '2021', '2021', '2021', '2021', '2021', '2021', '2021', '2021', '2021', '2021', '2022', '2022', '2022', '2022', '2022', '2022', '2022', '2022', '2022', '2022', '2022', '2022', '2022', '2022', '2022', '2022', '2022', '2022'],
+                crosshair: true,
+                tickInterval: 1,
+                labels: {                    
+                    // rotation: 360,
+                    step : 7,
+                    style: {
+                        color: '#7f8ca3',
+                        fontSize: '12px'
+                    },
+                }
+            }],
+
+            yAxis: [{// 1
+                title: {
+                    text: null
+                },
+                gridLineWidth: 1,
+                gridLineColor: '#dedceb',                
+                labels: {
+                    format: '{value}달러',
+                    style: {
+                        color: '#4d6ee4',
+                        fontSize: '12px'
+                    }
+                },
+            }, {// 2
+                title: {
+                    text: null
+                },
+                gridLineWidth: 0,
+                labels: {
+                    format: '{value}달러',
+                    style: {
+                        color: '#E6C200',
+                        fontSize: '11px'
+                    }
+                },
+                opposite: true
+            }],
+
+            series: [{
+                type: 'line',
+                name: '주당순이익',
+                data: [
+                    3.7, 3.3, 3.9, 5.1, 3.5, 3.8, 4.0, 5.0, 6.1, 3.7, 3.3, 6.4,
+                    6.9, 6.0, 6.8, 4.4, 4.0, 3.8, 5.0, 4.9, 9.2, 9.6, 9.5, 6.3,
+                    9.5, 10.8, 14.0, 11.5, 10.0, 10.2, 10.3, 9.4, 8.9, 10.6, 10.5, 11.1,
+                    10.4, 10.7, 11.3, 10.2, 9.6, 10.2, 11.1, 20.8, 23.0, 22.5, 22.5, 21.3,
+                    20.1
+                ]
+            }, {
+                type: 'line',
+                name: '주가',
+                yAxis: 1,
+                data: [
+                    13.7, 13.3, 13.9, 15.1, 13.5, 13.8, 14.0, 15.0, 16.1, 13.7, 13.3, 16.4,
+                    16.9, 16.0, 16.8, 14.4, 14.0, 13.8, 15.0, 14.9, 19.2, 19.6, 19.5, 16.3,
+                    19.5, 20.8, 24.0, 21.5, 20.0, 20.2, 20.3, 19.4, 18.9, 20.6, 20.5, 21.1,
+                    20.4, 20.7, 21.3, 20.2, 19.6, 20.2, 21.1, 30.8, 40.0, 33.5, 33.5, 33.3,
+                    33.1
+                ]
+            }],
+
+            plotOptions: {
+                series: {
+                    marker: {
+                        enabled: false,
+                    }
+                },
+            },
+
+        });
+
+    }
     
     
 
