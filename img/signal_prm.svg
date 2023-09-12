@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="47" height="35.695" viewBox="0 0 47 35.695">
+  <g id="그룹_10327" data-name="그룹 10327" transform="translate(-46 -230.305)">
+    <g id="diamond_186300" transform="translate(55 190.581)">
+      <path id="패스_18552" data-name="패스 18552" d="M261.45,172.138,256,187.848l13.4-15.71Z" transform="translate(-242.6 -125.483)" fill="#ffe182"/>
+      <g id="그룹_10326" data-name="그룹 10326" transform="translate(0 39.724)">
+        <path id="패스_18553" data-name="패스 18553" d="M5.545,39.724,0,46.655H7.949Z" transform="translate(0 -39.724)" fill="#ffcd73"/>
+        <path id="패스_18554" data-name="패스 18554" d="M360.129,46.655h7.949l-5.545-6.931Z" transform="translate(-341.279 -39.724)" fill="#ffcd73"/>
+        <path id="패스_18555" data-name="패스 18555" d="M162.772,46.655l-5.451-6.931-5.451,6.931Z" transform="translate(-143.922 -39.724)" fill="#ffcd73"/>
+      </g>
+      <path id="패스_18556" data-name="패스 18556" d="M113.786,39.724h-7.855l2.4,6.931Z" transform="translate(-100.386 0)" fill="#ffaa64"/>
+      <path id="패스_18557" data-name="패스 18557" d="M263.855,39.724H256l5.45,6.931Z" transform="translate(-242.6 0)" fill="#ffe182"/>
+      <path id="패스_18558" data-name="패스 18558" d="M151.871,172.138l5.451,15.71,5.451-15.71Z" transform="translate(-143.922 -125.483)" fill="#ffaa64"/>
+      <path id="패스_18559" data-name="패스 18559" d="M0,172.138l13.4,15.71-5.45-15.71Z" transform="translate(0 -125.483)" fill="#ff8c5a"/>
+    </g>
+    <text id="premium" transform="translate(46 264)" fill="#ffaa65" font-size="10" font-family="Pretendard-ExtraBold, Pretendard" font-weight="800"><tspan x="0" y="0">PREMIUM</tspan></text>
+  </g>
+</svg>
