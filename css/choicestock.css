@@ -1374,7 +1374,7 @@ table.tableRanking td {
 }
 
 /* GNB */
-.globalStock .gnb {
+/* .globalStock .gnb {
 	position: fixed;
 	bottom: 0;
 	width: 100%;
@@ -1399,8 +1399,7 @@ table.tableRanking td {
 .globalStock .gnb li {
 	flex: 2 1 0;
 	text-align: center;
-	box-sizing: border-box;
-	/* height: 35px;		 */
+	box-sizing: border-box;	
 }
 
 .globalStock .gnb li a {
@@ -1427,19 +1426,6 @@ table.tableRanking td {
 	flex: 1.5 1 0;
 
 }
-
-/* .globalStock .gnb li.menu::after {	
-	content: 'menu';
-	display: inline-block;
-	position: absolute;
-	left: 0;
-	right: 0;
-	width: 100%;
-	text-align: center;
-	bottom: -5px;
-	color:#82929f;	
-	font-size:0.75rem;	
-} */
 .globalStock .gnb li.menu.active::after {
 	display: none;
 }
@@ -1495,7 +1481,7 @@ table.tableRanking td {
 
 .globalStock .gnb li.home.active a {
 	font-size: 1rem;
-}
+} */
 
 .globalStock .purchase_area {
 	overflow: hidden;
@@ -36647,4 +36633,62 @@ body {
 }
 .blocker {
 	background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* GNB */
+.globalStock .gnb {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	max-width: 767px;
+	height: 55px;
+	box-sizing: border-box;	
+	background: #fff;
+	z-index: 92;
+	box-shadow: 0 -5px 10px 0 rgba(0, 0, 0, 0.08);
+}
+.globalStock .gnb .list {
+	display: flex;
+	align-items: center;
+    justify-content: space-around;
+	gap: 0 3px;
+	height: 100%;
+}
+.globalStock .gnb .list li {
+	flex: 1 1 auto;	
+	text-align: center;
+} 
+.globalStock .gnb .list li a {
+	font-size: 0.75rem;
+	font-weight: 500;		
+	color: #404fc3;
+	opacity: 0.5;
+	filter: grayscale(100%)
+}
+.globalStock .gnb .list li.active a {
+	color: #404fc3;
+	opacity: 1;
+	filter: grayscale(0%)
+}
+.globalStock .gnb .list li a::before {
+	content: '';
+	display: block;
+	width: 20px;
+	height: 20px;	
+	margin: 0 auto 2px;
+}
+.globalStock .gnb .list li.home a::before {	
+	background: url('../img/home_on.svg') no-repeat center center;
+}
+.globalStock .gnb .list li.sch a::before {	
+	background: url('../img/sch_on.svg') no-repeat center center;
+}
+.globalStock .gnb .list li.stock a::before {	
+	background: url('../img/stock_on.svg') no-repeat center center;
+}
+.globalStock .gnb .list li.excavation a::before {	
+	background: url('../img/excavation_on.svg') no-repeat center center;
+}
+.globalStock .gnb .list li.attention a::before {	
+	background: url('../img/attention_on.svg') no-repeat center center;
 }
