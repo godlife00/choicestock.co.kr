@@ -7207,8 +7207,8 @@ table.tableRanking td {
 
 .globalStock .sub_recom .sub_mid .tabsArea .tabs_two+.tab_container div {
 	color: #333;
-	font-size: 1.063rem;
-	line-height: 27px;
+	font-size: 1.0625rem;
+	line-height: 30px;
 	letter-spacing: normal;
 	word-break: break-all;
 	word-wrap: break-word;
@@ -19709,8 +19709,8 @@ table.tableRanking td {
 	border-top: 1px solid #F4F4F5;
 	border-bottom: 1px solid #F4F4F5;
 	color: #333;
-	font-size: 0.9375rem;
-	line-height: 26px;
+	font-size: 1.0625rem;
+	line-height: 30px;
 	letter-spacing: normal;
 	margin-bottom: 30px;
 	word-break: break-all;
@@ -19743,10 +19743,17 @@ table.tableRanking td {
 }
 
 .globalStock .sub_research .view_con .mid img {
-	width: 100% !important;
-	height: auto !important;
-	display: inline-block;
-	margin-bottom: 15px;
+	width: calc(100% + 30px) !important;
+    height: auto !important;
+    display: inline-block;
+    margin-bottom: 15px;
+    margin-left: -15px;
+}
+@media (min-width: 320px) and (max-width: 359px) {
+	.globalStock .sub_research .view_con .mid img {
+		width: calc(100% + 20px) !important;		
+		margin-left: -10px;
+	}
 }
 
 .globalStock .sub_research .view_con .mid p,
