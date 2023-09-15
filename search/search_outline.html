@@ -196,7 +196,8 @@
                                 <!-- //num_bar -->
                                 <p class="latest_signal">최근 보유 신호는 <b>272.34</b>입니다.<span class="day">(23.07/23)</span></p>
                             </div>
-                            <!-- //mid -->                            
+                            <!-- //mid -->
+                            
                             <!-- 벨류 점수 -->
                             <div class="mid">
                                 <div class="charm_num">
@@ -219,7 +220,62 @@
                                     <p>매매신호 <b>누적 수익률 <span class="decrease">-84.56%</span></b></p>                                    
                                 </div>
                                 <!-- //num_bar -->
-                                <p class="latest_signal">최근 보유 신호는 <b>***.**</b>입니다.<span class="day">(23.07/23)</span></p>
+                                <p class="latest_signal_lp">최근 보유 신호는 <b>***.**</b>입니다.<span class="day">(23.07/23)</span></p>
+
+                                <div class="updata_allList">
+                                    <div class="pop_con">
+                                        <p class="txt">- 최근 보유(매수/매도)신호는 <b>272.34</b>입니다. (23.7/23)</p>
+                                        <p class="txt">- 최근 매매신호의 예상수익률은 <b>23.24</b>%입니다.</p>                    
+                                        <p class="txt">- 최근 매매신호</p>                    
+                                        <div class="trading_signal">
+                                            <ul class="list">
+                                                <li class="day">23.07.23</li>
+                                                <li class="trends">                                
+                                                    <span class="ibox str">강세</span>                                                    
+                                                </li>
+                                                <li class="signal">272.34</li>
+                                                <li class="exp_signal increase">23.34% <span>(예상)</span></li>
+                                            </ul>
+                                            <ul class="list">
+                                                <li class="day">23.07.23</li>
+                                                <li class="trends">                                                                
+                                                    <span class="ibox bas">횡보</span>
+                                                </li>
+                                                <li class="signal">272.34</li>
+                                                <li class="exp_signal decrease">-23.34% <span>(예상)</span></li>
+                                            </ul>
+                                            <ul class="list">
+                                                <li class="day">23.07.23</li>
+                                                <li class="trends">                                                                
+                                                    <span class="ibox weak">약세</span>
+                                                </li>
+                                                <li class="signal">272.34</li>
+                                                <li class="exp_signal increase">123.34% <span>(예상)</span></li>
+                                            </ul>
+                                            <ul class="list">
+                                                <li class="day">23.07.23</li>
+                                                <li class="trends">                                                                
+                                                    <span class="ibox bas">횡보</span>
+                                                </li>
+                                                <li class="signal">72.34</li>
+                                                <li class="exp_signal decrease">-3.34% <span>(예상)</span></li>
+                                            </ul>
+                                            <ul class="list">
+                                                <li class="day">23.07.23</li>
+                                                <li class="trends">                                                                
+                                                    <span class="ibox weak">약세</span>
+                                                </li>
+                                                <li class="signal">1,272.34</li>
+                                                <li class="exp_signal increase">23.34% <span>(예상)</span></li>
+                                            </ul>
+                                        </div>
+                                        <!-- //trading_signal -->
+                                    </div>
+                                    <span class="clse">닫기</span>
+                                </div>
+                                <!-- //updata_allList -->
+
+                                
                             </div>
                             <!-- //mid -->                            
                         </div>
@@ -548,5 +604,14 @@
             $('.blocker').show();
             $('.signal_pop01').show().addClass('slideUp');
         });        
+
+        // 최근 보유 신호 레이어 팝업
+        $('.globalStock .mid .latest_signal_lp').on('click', function () {
+            $('.globalStock .updata_allList').show();
+        });
+        $('.globalStock .updata_allList').on('click', function () {
+            console.log("힝구");
+            $(this).hide();
+        });
     })            
 </script>

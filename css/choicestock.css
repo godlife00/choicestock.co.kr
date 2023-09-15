@@ -35340,6 +35340,7 @@ body {
 }
 
 .globalStock #wrap #container .mainBox.attr .adequateArea .listWrap .mid {
+	position: relative;
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
@@ -35496,7 +35497,8 @@ body {
 	color: #303FAF;
 }
 
-.globalStock #wrap #container .mainBox.attr .adequateArea .listWrap .mid .latest_signal {
+.globalStock #wrap #container .mainBox.attr .adequateArea .listWrap .mid .latest_signal,
+.globalStock #wrap #container .mainBox.attr .adequateArea .listWrap .mid .latest_signal_lp {
 	position: relative;
 	display: flex;
 	align-items: center;
@@ -35509,7 +35511,8 @@ body {
 	border-top: 1px solid #fff;
 }
 
-.globalStock #wrap #container .mainBox.attr .adequateArea .listWrap .mid .latest_signal::before {
+.globalStock #wrap #container .mainBox.attr .adequateArea .listWrap .mid .latest_signal::before,
+.globalStock #wrap #container .mainBox.attr .adequateArea .listWrap .mid .latest_signal_lp::before {
 	content: '';
 	display: inline-block;
 	width: 16px;
@@ -35519,7 +35522,8 @@ body {
 	top: -2px;
 }
 
-.globalStock #wrap #container .mainBox.attr .adequateArea .listWrap .mid .latest_signal::after {
+.globalStock #wrap #container .mainBox.attr .adequateArea .listWrap .mid .latest_signal::after,
+.globalStock #wrap #container .mainBox.attr .adequateArea .listWrap .mid .latest_signal_lp::after {
 	content: "";
 	display: inline-block;
 	transform: rotate(45deg);
@@ -35532,7 +35536,8 @@ body {
 	top: 24px;
 }
 
-.globalStock #wrap #container .mainBox.attr .adequateArea .listWrap .mid .latest_signal .day {
+.globalStock #wrap #container .mainBox.attr .adequateArea .listWrap .mid .latest_signal .day,
+.globalStock #wrap #container .mainBox.attr .adequateArea .listWrap .mid .latest_signal_lp .day {
 	display: inline-block;
 	padding: 0 2px;
 	color: #d3d3d3;
@@ -36691,4 +36696,102 @@ body {
 }
 .globalStock .gnb .list li.attention a::before {	
 	background: url('../img/attention_on.svg') no-repeat center center;
+}
+.globalStock .updata_allList {
+	display: none;
+	/* position: absolute;
+    left: 0;
+	right: 0;
+	top: 1px; */
+	position: relative;
+	top: -60px;
+    width: 100%;
+	/* margin-left: -20px;	 */
+	padding: 15px 0;
+	box-sizing: border-box;
+	background-color: #f7f8f9;
+	/* box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.3); */
+	/* border-radius: 16px;		 */
+	z-index: 99;
+}
+.globalStock .updata_allList .txt {	    
+    padding: 2px 0;
+    font-size: 0.875rem;
+    line-height: 1.43;
+    letter-spacing: normal;
+    color: #333;
+}
+.globalStock .updata_allList .txt b {
+    font-weight: bold;
+    color: #333;
+}
+
+.globalStock .updata_allList .trading_signal {
+	display: flex;
+	flex-direction: column;
+	gap: 12px 0;
+	padding: 17px 10px;
+	margin-top: 8px;  	
+	border-radius: 16px;	
+	background-color: #fff;
+}
+.globalStock .updata_allList .trading_signal .list {
+	display: flex;
+    justify-content: space-around;	
+	margin: 0;
+	width: 100%;	
+}
+.globalStock .updata_allList .trading_signal .list li {
+	/* flex: 1 1 auto;	 */
+	text-align: center;
+}
+.globalStock .updata_allList .trading_signal .list .day {
+	font-size: 0.8125rem;	
+	color: #6a727b;
+	box-sizing: border-box;
+}
+.globalStock .updata_allList .trading_signal .list .trends span {
+	display: inline-block;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8125rem;
+    font-weight: 300;
+    letter-spacing: -0.33px !important;
+    color: #fff;
+    padding: 4px 9px;
+    border-radius: 16px;
+}
+.globalStock .updata_allList .trading_signal .list .trends span.ibox.str {
+	background-color: #dd5257;
+}
+.globalStock .updata_allList .trading_signal .list .trends span.ibox.bas {
+	background: #C7CCD1;
+}
+.globalStock .updata_allList .trading_signal .list .trends span.ibox.weak {
+	background-color: #404fc3;
+}
+.globalStock .updata_allList .trading_signal .list .signal {
+	font-size: 0.8125rem;	
+	color: #333;
+	width: 50px;
+	text-align: right;
+}
+.globalStock .updata_allList .trading_signal .list .exp_signal {
+	font-size: 0.8125rem;	
+	font-weight: bold;	
+	color: #333;
+	width: 88px;
+	text-align: right;
+}
+.globalStock .updata_allList .trading_signal .list .exp_signal.increase {
+	color: #e1305a;
+}
+.globalStock .updata_allList .trading_signal .list .exp_signal.decrease {	
+	color: #404fc3;
+}
+
+.globalStock .updata_allList .trading_signal .list .exp_signal span {
+	font-size: 0.75rem;
+	font-weight: 500;	
+	color: #d3d3d3;
 }
