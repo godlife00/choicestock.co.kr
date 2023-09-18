@@ -48,7 +48,7 @@
 
 <!-- 제휴사이트 민트 칼라 적용 class = mint  -->
 
-<body class="globalStock">
+<body class="v_signalStreng globalStock">
 
     <!-- 신규 서비스/기능 개선 시 안내 팝업 -->
     <div class="free_2weeks signalpop open" id="layer_pop" style="display: block;">
@@ -586,11 +586,11 @@
 <script>
     $(document).ready(function () {
         // 툴팁
-        $(".txt_guide").click(function (e) {
+        $(".v_signalStreng .txt_guide").click(function (e) {
             e.stopPropagation();
             $(this).siblings(".tooltip").toggle();
         });
-        $(".clse_tooltip").click(function () {
+        $(".v_signalStreng .clse_tooltip").click(function () {
             $(".tooltip").hide();
         });
         $(document).click(function (e) {
@@ -599,17 +599,17 @@
             }
         });
         // 매수신호 모달 팝업        
-        $('.mainBox.attr .adequateArea .listWrap .mid .latest_signal').on('click', function () {
+        $('.v_signalStreng .mainBox.attr .adequateArea .listWrap .mid .latest_signal').on('click', function () {
             $('.modal').hide().removeClass('slideUp');
             $('.blocker').show();
             $('.signal_pop01').show().addClass('slideUp');
         });        
 
         // 최근 보유 신호 레이어 팝업
-        $('.globalStock .mid .latest_signal_lp').on('click', function () {
-            $('.globalStock .updata_allList').show();
+        $('.v_signalStreng .mid .latest_signal_lp').on('click', function () {
+            $('.v_signalStreng .updata_allList').show();
         });
-        $('.globalStock .updata_allList').on('click', function () {
+        $('.v_signalStreng .updata_allList').on('click', function () {
             console.log("힝구");
             $(this).hide();
         });

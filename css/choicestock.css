@@ -35037,18 +35037,18 @@ table.tableRanking td {
 }
 
 /* 230829 초스 리뉴얼 개요탭, 추천 */
-body {
+body.v_signalStreng  {
 	background-color: #fff;
 }
 
-.globalStock #header {
+.v_signalStreng.globalStock #header {
 	background-color: #fff;
 	padding: 0 16px;
 	height: 54px;
 	box-sizing: border-box;
 }
 
-.globalStock #header .headerTop {
+.v_signalStreng.globalStock #header .headerTop {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -35058,7 +35058,7 @@ body {
 	border-bottom: none;
 }
 
-.globalStock #header .headerTop::before {
+.v_signalStreng.globalStock #header .headerTop::before {
 	content: "";
 	display: inline-block;
 	width: 8px;
@@ -35069,8 +35069,8 @@ body {
 	border-color: #161b23;
 }
 
-.globalStock #header .headerLogo a,
-.globalStock #header .headerLogo span {
+.v_signalStreng.globalStock #header .headerLogo a,
+.v_signalStreng.globalStock #header .headerLogo span {
 	font-size: 17px;
 	font-weight: bold;
 	letter-spacing: -0.43px;
@@ -35078,14 +35078,14 @@ body {
 	padding-right: 8px;
 }
 
-.globalStock #wrap #container .recom_company {
+.v_signalStreng.globalStock #wrap #container .recom_company {
 	position: relative;
 	padding: 16px 16px 22px;
 	background-color: #fff;
 	box-sizing: border-box;
 }
 
-.globalStock #wrap #container .recom_company::after {
+.v_signalStreng.globalStock #wrap #container .recom_company::after {
 	content: "";
 	position: absolute;
 	bottom: -8px;
@@ -35098,7 +35098,7 @@ body {
 	z-index: 1;
 }
 
-.globalStock #wrap #container .recom_company .ticker {
+.v_signalStreng.globalStock #wrap #container .recom_company .ticker {
 	display: inline-block;
 	font-size: 0.75rem;
 	line-height: 1.75;
@@ -35106,11 +35106,11 @@ body {
 	color: #939393;
 }
 
-.globalStock #wrap #container .recom_company .stock_index {
+.v_signalStreng.globalStock #wrap #container .recom_company .stock_index {
 	display: inline-block;
 }
 
-.globalStock #wrap #container .recom_company .stock_index span {
+.v_signalStreng.globalStock #wrap #container .recom_company .stock_index span {
 	display: inline-block;
 	padding: 0 3px;
 	font-size: 0.75rem;
@@ -35118,13 +35118,13 @@ body {
 	color: #d3d3d3;
 }
 
-.globalStock #header .att {
+.v_signalStreng.globalStock #header .att {
 	position: absolute;
 	right: 36px;
 	top: 22px;
 }
 
-.globalStock #header .att .attention {
+.v_signalStreng.globalStock #header .att .attention {
 	cursor: pointer;
 	background-color: #ccd1d5;
 	position: absolute;
@@ -35141,7 +35141,7 @@ body {
 	animation-iteration-count: infinite;
 }
 
-.globalStock #header .att .attention:after {
+.v_signalStreng.globalStock #header .att .attention:after {
 	background-color: #ccd1d5;
 	content: "";
 	border-radius: 50%;
@@ -35152,7 +35152,7 @@ body {
 	left: 6px;
 }
 
-.globalStock #header .att .attention:before {
+.v_signalStreng.globalStock #header .att .attention:before {
 	background-color: #ccd1d5;
 	content: "";
 	border-radius: 50%;
@@ -35163,22 +35163,22 @@ body {
 	height: 12px;
 }
 
-.globalStock #header .att .attention.on {
+.v_signalStreng.globalStock #header .att .attention.on {
 	background-color: #dd5257;
 }
 
-.globalStock #header .att .attention.on:after,
-.globalStock #header .att .attention.on:before {
+.v_signalStreng.globalStock #header .att .attention.on:after,
+.v_signalStreng.globalStock #header .att .attention.on:before {
 	background-color: #dd5257;
 }
 
-.globalStock #wrap #container .recom_company .company_nm {
+.v_signalStreng.globalStock #wrap #container .recom_company .company_nm {
 	margin-top: 2px;
 	max-width: 90%;
 }
 
-.globalStock #wrap #container .recom_company .company_nm,
-.globalStock #wrap #container .recom_company .company_nm a {
+.v_signalStreng.globalStock #wrap #container .recom_company .company_nm,
+.v_signalStreng.globalStock #wrap #container .recom_company .company_nm a {
 	display: block;
 	font-size: 22px;
 	font-weight: 700;
@@ -35186,22 +35186,22 @@ body {
 	color: #181f29;
 }
 
-.globalStock #wrap #container .recom_company .detail {
+.v_signalStreng.globalStock #wrap #container .recom_company .detail {
 	margin-top: 3px;
 }
 
-.globalStock #wrap #container .recom_company .detail .num {
+.v_signalStreng.globalStock #wrap #container .recom_company .detail .num {
 	font-size: 34px;
 }
 
-.globalStock #wrap #container .recom_company .detail .num span {
+.v_signalStreng.globalStock #wrap #container .recom_company .detail .num span {
 	font-size: 30px;
 	font-weight: 700;
 	line-height: 0.77;
 	color: #181f29;
 }
 
-.globalStock #wrap #container .recom_company .detail .per {
+.v_signalStreng.globalStock #wrap #container .recom_company .detail .per {
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-end;
@@ -35209,38 +35209,38 @@ body {
 	margin-top: 6px;
 }
 
-.globalStock #wrap #container .recom_company .detail .per .increase,
-.globalStock #wrap #container .recom_company .detail .per .decrease,
-.globalStock #wrap #container .recom_company .detail .per .same {
+.v_signalStreng.globalStock #wrap #container .recom_company .detail .per .increase,
+.v_signalStreng.globalStock #wrap #container .recom_company .detail .per .decrease,
+.v_signalStreng.globalStock #wrap #container .recom_company .detail .per .same {
 	font-size: 0.9375rem;
 	color: #E1305A;
 	font-weight: 500;
 }
 
-.globalStock #wrap #container .recom_company .detail .per .increase b,
-.globalStock #wrap #container .recom_company .detail .per .decrease b,
-.globalStock #wrap #container .recom_company .detail .per .same b {
+.v_signalStreng.globalStock #wrap #container .recom_company .detail .per .increase b,
+.v_signalStreng.globalStock #wrap #container .recom_company .detail .per .decrease b,
+.v_signalStreng.globalStock #wrap #container .recom_company .detail .per .same b {
 	color: #E1305A;
 	font-weight: 500;
 }
 
-.globalStock #wrap #container .recom_company .detail .per .decrease {
+.v_signalStreng.globalStock #wrap #container .recom_company .detail .per .decrease {
 	color: #303FAF;
 }
 
-.globalStock #wrap #container .recom_company .detail .per .decrease b {
+.v_signalStreng.globalStock #wrap #container .recom_company .detail .per .decrease b {
 	color: #303FAF;
 }
 
-.globalStock #wrap #container .recom_company .detail .per .same {
+.v_signalStreng.globalStock #wrap #container .recom_company .detail .per .same {
 	color: #363F4B;
 }
 
-.globalStock #wrap #container .recom_company .detail .per .same b {
+.v_signalStreng.globalStock #wrap #container .recom_company .detail .per .same b {
 	color: #363F4B;
 }
 
-.globalStock #wrap #container .recom_company .detail .per .day {
+.v_signalStreng.globalStock #wrap #container .recom_company .detail .per .day {
 	flex: 4;
 	text-align: right;
 	font-size: 0.75rem;
@@ -35249,7 +35249,7 @@ body {
 	color: #939393;
 }
 
-.globalStock #wrap #container .attention_box {
+.v_signalStreng.globalStock #wrap #container .attention_box {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -35261,11 +35261,11 @@ body {
 	border-top: 1px solid #f4f4f5;
 }
 
-.globalStock #wrap #container .attention_box ul {
+.v_signalStreng.globalStock #wrap #container .attention_box ul {
 	display: inline-block;
 }
 
-.globalStock #wrap #container .attention_box li.attention {
+.v_signalStreng.globalStock #wrap #container .attention_box li.attention {
 	display: inline-block;
 	font-size: 0.8175rem;
 	font-weight: bold;
@@ -35278,12 +35278,12 @@ body {
 
 }
 
-.globalStock #wrap #container .attention_box li.attention strong {
+.v_signalStreng.globalStock #wrap #container .attention_box li.attention strong {
 	font-size: 0.8175rem;
 	font-weight: bold;
 }
 
-.globalStock #wrap #container .attention_box li.attention i {
+.v_signalStreng.globalStock #wrap #container .attention_box li.attention i {
 	display: inline-block;
 	position: relative;
 	top: 2px;
@@ -35294,28 +35294,28 @@ body {
 	background-size: 16px 32px;
 }
 
-.globalStock #wrap #container .attention_box .stock_tag {
+.v_signalStreng.globalStock #wrap #container .attention_box .stock_tag {
 	display: inline-flex;
 	gap: 0 10px;
 }
 
-.globalStock #wrap #container .attention_box .stock_tag span {
+.v_signalStreng.globalStock #wrap #container .attention_box .stock_tag span {
 	font-size: 0.75rem;
 	font-weight: 500;
 	color: #6a727b;
 }
 
-.globalStock .sub_search .tabs_5 {
+.v_signalStreng.globalStock .sub_search .tabs_5 {
 	margin-top: 27px;
 	margin-bottom: 0;
 }
 
-.globalStock .sub_search .tabs_5 li {
+.v_signalStreng.globalStock .sub_search .tabs_5 li {
 	padding: 0 0 11px;
 	border-bottom: 1px solid #edeeef;
 }
 
-.globalStock .sub_search .tabs_5 li a {
+.v_signalStreng.globalStock .sub_search .tabs_5 li a {
 	display: inline;
 	padding: 15px 1px 11px;
 	font-size: 0.9375rem;
@@ -35324,29 +35324,29 @@ body {
 	border: none;
 }
 
-.globalStock .sub_search .tabs_5 li.active a {
+.v_signalStreng.globalStock .sub_search .tabs_5 li.active a {
 	color: #404fc3;
 	padding: 15px 1px 9px;
 	border-bottom: 2px solid #404fc3;
 }
 
-.globalStock #wrap #container .mainBox.attr {
+.v_signalStreng.globalStock #wrap #container .mainBox.attr {
 	position: relative;
 	padding: 0 16px;
 }
 
-.globalStock #wrap #container .mainBox.attr .adequateArea {
+.v_signalStreng.globalStock #wrap #container .mainBox.attr .adequateArea {
 	padding-top: 32px;
 }
 
-.globalStock #wrap #container .mainBox.attr .adequateArea .title {
+.v_signalStreng.globalStock #wrap #container .mainBox.attr .adequateArea .title {
 	font-size: 1.25rem;
 	font-weight: 700;
 	line-height: 1.2;
 	color: #181f29;
 }
 
-.globalStock #wrap #container .mainBox.attr .adequateArea .listWrap .mid {
+.v_signalStreng.globalStock #wrap #container .mainBox.attr .adequateArea .listWrap .mid {
 	position: relative;
 	display: flex;
 	flex-wrap: wrap;
@@ -35360,18 +35360,18 @@ body {
 	background-color: #f7f8f9;
 }
 
-.globalStock #wrap #container .mainBox.attr .adequateArea .listWrap .mid .charm_num {
+.v_signalStreng.globalStock #wrap #container .mainBox.attr .adequateArea .listWrap .mid .charm_num {
 	flex: 1;
 	position: relative;
 }
 
 @media (min-width: 426px) {
-	.globalStock #wrap #container .mainBox.attr .adequateArea .listWrap .mid .charm_num {
+	.v_signalStreng.globalStock #wrap #container .mainBox.attr .adequateArea .listWrap .mid .charm_num {
 		flex: 2;
 	}
 }
 
-.globalStock #wrap #container .mainBox.attr .adequateArea .listWrap .mid .charm_num .signal {
+.v_signalStreng.globalStock #wrap #container .mainBox.attr .adequateArea .listWrap .mid .charm_num .signal {
 	flex: 1;
 	display: flex;
 	align-items: center;
@@ -35389,24 +35389,24 @@ body {
 	color: #333;
 	background-color: #fff;
 }
-.globalStock #wrap #container .mainBox.attr .adequateArea .listWrap .mid .charm_num .signal.hold {
+.v_signalStreng.globalStock #wrap #container .mainBox.attr .adequateArea .listWrap .mid .charm_num .signal.hold {
 	/* 보유 */
 	color: #333;	
 }
-.globalStock #wrap #container .mainBox.attr .adequateArea .listWrap .mid .charm_num .signal.buy {
+.v_signalStreng.globalStock #wrap #container .mainBox.attr .adequateArea .listWrap .mid .charm_num .signal.buy {
 	/* 매수 */
 	color: #E1305A;
 }
-.globalStock #wrap #container .mainBox.attr .adequateArea .listWrap .mid .charm_num .signal.sell {
+.v_signalStreng.globalStock #wrap #container .mainBox.attr .adequateArea .listWrap .mid .charm_num .signal.sell {
 	/* 매도 */
 	color: #404FC3;
 }
-.globalStock #wrap #container .mainBox.attr .adequateArea .listWrap .mid .charm_num .signal.waitting {
+.v_signalStreng.globalStock #wrap #container .mainBox.attr .adequateArea .listWrap .mid .charm_num .signal.waitting {
 	/* 관망 */
 	color: #6A727B;
 }
 
-.globalStock #wrap #container .mainBox.attr .adequateArea .listWrap .mid .charm_num .signal_guide {
+.v_signalStreng.globalStock #wrap #container .mainBox.attr .adequateArea .listWrap .mid .charm_num .signal_guide {
 	cursor: pointer;
 	position: absolute;
 	right: -5px;
@@ -35416,10 +35416,10 @@ body {
 	border-radius: 50%;
 }
 
-.globalStock #wrap #container .mainBox.attr .adequateArea .listWrap .mid .charm_num .signal_guide img {
+.v_signalStreng.globalStock #wrap #container .mainBox.attr .adequateArea .listWrap .mid .charm_num .signal_guide img {
 	display: block;
 }
-.globalStock #wrap #container .mainBox.attr .adequateArea .listWrap .mid .charm_num .tooltip {
+.v_signalStreng.globalStock #wrap #container .mainBox.attr .adequateArea .listWrap .mid .charm_num .tooltip {
 	display: none;
     position: absolute;	
 	left: 10px;    
@@ -35433,19 +35433,19 @@ body {
     background-color: #fff;
     z-index: 1;
 }
-.globalStock #wrap #container .mainBox.attr .adequateArea .listWrap .mid .charm_num .tooltip .t_title {
+.v_signalStreng.globalStock #wrap #container .mainBox.attr .adequateArea .listWrap .mid .charm_num .tooltip .t_title {
 	font-size: 15px;
     font-weight: 700;
     color: #333;	
 }
-.globalStock #wrap #container .mainBox.attr .adequateArea .listWrap .mid .charm_num .tooltip .txt {
+.v_signalStreng.globalStock #wrap #container .mainBox.attr .adequateArea .listWrap .mid .charm_num .tooltip .txt {
 	display: block;
 	margin-top: 15px;
     font-size: 13px;
     line-height: 1.62;
     color: #656d7e;
 }
-.globalStock #wrap #container .mainBox.attr .adequateArea .listWrap .mid .charm_num .tooltip .clse_tooltip {
+.v_signalStreng.globalStock #wrap #container .mainBox.attr .adequateArea .listWrap .mid .charm_num .tooltip .clse_tooltip {
 	position: absolute;
     right: 15px;
     top: 15px;
@@ -35455,7 +35455,7 @@ body {
     width: 24px;
     height: 24px;
 }
-.globalStock #wrap #container .mainBox.attr .adequateArea .listWrap .mid .charm_num .tooltip .clse_tooltip::before {
+.v_signalStreng.globalStock #wrap #container .mainBox.attr .adequateArea .listWrap .mid .charm_num .tooltip .clse_tooltip::before {
 	content: "";
     height: 18px;
     border-left: 2px solid #bfc6d9;
@@ -35464,7 +35464,7 @@ body {
     top: 5px;
     left: 12px;
 }
-.globalStock #wrap #container .mainBox.attr .adequateArea .listWrap .mid .charm_num .tooltip .clse_tooltip::after {
+.v_signalStreng.globalStock #wrap #container .mainBox.attr .adequateArea .listWrap .mid .charm_num .tooltip .clse_tooltip::after {
     content: "";
     height: 18px;
     border-left: 2px solid #bfc6d9;
@@ -35473,7 +35473,7 @@ body {
     top: 5px;
     left: 12px;
 }
-.globalStock #wrap #container .mainBox.attr .adequateArea .listWrap .mid .num_bar {
+.v_signalStreng.globalStock #wrap #container .mainBox.attr .adequateArea .listWrap .mid .num_bar {
 	flex: 2;
 	flex-basis: calc(100% - 85px);
 	display: flex;
@@ -35482,7 +35482,7 @@ body {
 	gap: 7px;
 }
 
-.globalStock #wrap #container .mainBox.attr .adequateArea .listWrap .mid .num_bar p {
+.v_signalStreng.globalStock #wrap #container .mainBox.attr .adequateArea .listWrap .mid .num_bar p {
 	/* display: block;
 	width: 100%; */
 	padding-left: 12px;
@@ -35491,21 +35491,21 @@ body {
 	color: #333;
 }
 
-.globalStock #wrap #container .mainBox.attr .adequateArea .listWrap .mid .num_bar p b {
+.v_signalStreng.globalStock #wrap #container .mainBox.attr .adequateArea .listWrap .mid .num_bar p b {
 	font-weight: bold;
 	color: #333;
 }
 
-.globalStock #wrap #container .mainBox.attr .adequateArea .listWrap .mid .num_bar p span.increase {
+.v_signalStreng.globalStock #wrap #container .mainBox.attr .adequateArea .listWrap .mid .num_bar p span.increase {
 	color: #E1305A;
 }
 
-.globalStock #wrap #container .mainBox.attr .adequateArea .listWrap .mid .num_bar p span.decrease {
+.v_signalStreng.globalStock #wrap #container .mainBox.attr .adequateArea .listWrap .mid .num_bar p span.decrease {
 	color: #303FAF;
 }
 
-.globalStock #wrap #container .mainBox.attr .adequateArea .listWrap .mid .latest_signal,
-.globalStock #wrap #container .mainBox.attr .adequateArea .listWrap .mid .latest_signal_lp {
+.v_signalStreng.globalStock #wrap #container .mainBox.attr .adequateArea .listWrap .mid .latest_signal,
+.v_signalStreng.globalStock #wrap #container .mainBox.attr .adequateArea .listWrap .mid .latest_signal_lp {
 	position: relative;
 	display: flex;
 	align-items: center;
@@ -35518,8 +35518,8 @@ body {
 	border-top: 1px solid #fff;
 }
 
-.globalStock #wrap #container .mainBox.attr .adequateArea .listWrap .mid .latest_signal::before,
-.globalStock #wrap #container .mainBox.attr .adequateArea .listWrap .mid .latest_signal_lp::before {
+.v_signalStreng.globalStock #wrap #container .mainBox.attr .adequateArea .listWrap .mid .latest_signal::before,
+.v_signalStreng.globalStock #wrap #container .mainBox.attr .adequateArea .listWrap .mid .latest_signal_lp::before {
 	content: '';
 	display: inline-block;
 	width: 16px;
@@ -35529,8 +35529,8 @@ body {
 	top: -2px;
 }
 
-.globalStock #wrap #container .mainBox.attr .adequateArea .listWrap .mid .latest_signal::after,
-.globalStock #wrap #container .mainBox.attr .adequateArea .listWrap .mid .latest_signal_lp::after {
+.v_signalStreng.globalStock #wrap #container .mainBox.attr .adequateArea .listWrap .mid .latest_signal::after,
+.v_signalStreng.globalStock #wrap #container .mainBox.attr .adequateArea .listWrap .mid .latest_signal_lp::after {
 	content: "";
 	display: inline-block;
 	transform: rotate(45deg);
@@ -35543,8 +35543,8 @@ body {
 	top: 24px;
 }
 
-.globalStock #wrap #container .mainBox.attr .adequateArea .listWrap .mid .latest_signal .day,
-.globalStock #wrap #container .mainBox.attr .adequateArea .listWrap .mid .latest_signal_lp .day {
+.v_signalStreng.globalStock #wrap #container .mainBox.attr .adequateArea .listWrap .mid .latest_signal .day,
+.v_signalStreng.globalStock #wrap #container .mainBox.attr .adequateArea .listWrap .mid .latest_signal_lp .day {
 	display: inline-block;
 	padding: 0 2px;
 	color: #d3d3d3;
@@ -36129,12 +36129,12 @@ body {
 }
 
 /* 하단 막대 차트 */
-.globalStock #wrap #container .mainBox.financials {
+.v_signalStreng.globalStock #wrap #container .mainBox.financials {
 	background-color: #fff;
 	padding: 32px 16px;
 }
 
-.globalStock #wrap #container .mainBox.financials::after {
+.v_signalStreng.globalStock #wrap #container .mainBox.financials::after {
 	content: "";
 	position: absolute;
 	bottom: -8px;
@@ -36146,22 +36146,22 @@ body {
 	z-index: 1;
 }
 
-.globalStock #wrap #container .mainBox.financials:last-of-type::after {
+.v_signalStreng.globalStock #wrap #container .mainBox.financials:last-of-type::after {
 	display: none;
 }
 
-.globalStock #wrap #container .mainBox.financials .title {
+.v_signalStreng.globalStock #wrap #container .mainBox.financials .title {
 	font-size: 1.25rem;
 	font-weight: 700;
 	line-height: 1.2;
 	color: #181f29;
 }
 
-.globalStock #wrap #container .mainBox.financials .no_data {
+.v_signalStreng.globalStock #wrap #container .mainBox.financials .no_data {
 	width: 100%;
 }
 
-.globalStock #wrap #container .mainBox.financials .no_data p {
+.v_signalStreng.globalStock #wrap #container .mainBox.financials .no_data p {
 	padding: 4em 0 5em;
 	font-size: 1rem;
 	font-weight: 700;
@@ -36171,7 +36171,7 @@ body {
 	text-align: center;
 }
 
-.globalStock #wrap #container .mainBox.financials .no_data p .link_basic {
+.v_signalStreng.globalStock #wrap #container .mainBox.financials .no_data p .link_basic {
 	position: relative;
 	display: inline-block;
 	padding: 15px 16px 15px 0;
@@ -36183,7 +36183,7 @@ body {
 	text-align: center;
 }
 
-.globalStock #wrap #container .mainBox.financials .no_data p .link_basic::after {
+.v_signalStreng.globalStock #wrap #container .mainBox.financials .no_data p .link_basic::after {
 	content: "";
 	position: absolute;
 	top: 21px;
@@ -36196,7 +36196,7 @@ body {
 	transform: rotate(45deg);
 }
 
-.globalStock #wrap #container .mainBox.financials .area_note .note_list {
+.v_signalStreng.globalStock #wrap #container .mainBox.financials .area_note .note_list {
 	display: flex;
 	gap: 7px;
 	flex-wrap: wrap;
@@ -36206,7 +36206,7 @@ body {
 	box-sizing: border-box;
 }
 
-.globalStock #wrap #container .mainBox.financials .area_note .note_list ul {
+.v_signalStreng.globalStock #wrap #container .mainBox.financials .area_note .note_list ul {
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
@@ -36218,7 +36218,7 @@ body {
 	border-bottom: 1px solid #F5F5F5;
 }
 
-.globalStock #wrap #container .mainBox.financials .area_note .note_list .note_nm {
+.v_signalStreng.globalStock #wrap #container .mainBox.financials .area_note .note_list .note_nm {
 	flex: 2;
 	display: flex;
 	flex-wrap: wrap;
@@ -36226,7 +36226,7 @@ body {
 	align-content: space-between;
 }
 
-.globalStock #wrap #container .mainBox.financials .area_note .note_list .note_nm a {
+.v_signalStreng.globalStock #wrap #container .mainBox.financials .area_note .note_list .note_nm a {
 	font-size: 1rem;
 	font-weight: 700;
 	line-height: 1.19;
@@ -36242,7 +36242,7 @@ body {
 	word-break: break-all;
 }
 
-.globalStock #wrap #container .mainBox.financials .area_note .note_list .sume_img {
+.v_signalStreng.globalStock #wrap #container .mainBox.financials .area_note .note_list .sume_img {
 	height: 60px;
 	flex-basis: 79px;
 	border: 1px solid #E0E4E9;
@@ -36251,31 +36251,31 @@ body {
 	overflow: hidden;
 }
 
-.globalStock #wrap #container .mainBox.financials .area_note .note_list .sume_img .img {
+.v_signalStreng.globalStock #wrap #container .mainBox.financials .area_note .note_list .sume_img .img {
 	display: inline-block;
 	width: 100%;
 	height: 100%;
 }
 
-.globalStock #wrap #container .mainBox.financials .area_note .note_list .day {
+.v_signalStreng.globalStock #wrap #container .mainBox.financials .area_note .note_list .day {
 	margin-top: 3px;
 	font-size: 0.8125rem;
 	line-height: 1.46;
 	color: #6A727B;
 }
 
-.globalStock #wrap #container .mainBox.financials .area_note .note_list #btn_free_list .note_nm,
-.globalStock #wrap #container .mainBox.financials .area_note .note_list .freeView_list .note_nm {
+.v_signalStreng.globalStock #wrap #container .mainBox.financials .area_note .note_list #btn_free_list .note_nm,
+.v_signalStreng.globalStock #wrap #container .mainBox.financials .area_note .note_list .freeView_list .note_nm {
 	background: url("../img/lokimg.svg") no-repeat 0 2px;
 	background-size: 12px;
 }
 
-.globalStock #wrap #container .mainBox.financials .area_note .note_list #btn_free_list .note_nm a,
-.globalStock #wrap #container .mainBox.financials .area_note .note_list .freeView_list .note_nm a {
+.v_signalStreng.globalStock #wrap #container .mainBox.financials .area_note .note_list #btn_free_list .note_nm a,
+.v_signalStreng.globalStock #wrap #container .mainBox.financials .area_note .note_list .freeView_list .note_nm a {
 	text-indent: 20px;
 }
 
-.globalStock #wrap #container .mainBox.financials .area_note .btn_more {
+.v_signalStreng.globalStock #wrap #container .mainBox.financials .area_note .btn_more {
 	position: relative;
 	display: block;
 	width: 100%;
@@ -36288,12 +36288,12 @@ body {
 	background-color: var(--col1a1);
 }
 
-.globalStock #wrap #container .mainBox.financials .area_note .btn_more b {
+.v_signalStreng.globalStock #wrap #container .mainBox.financials .area_note .btn_more b {
 	font-size: 0.9375rem;
 	color: #7f8ca3;
 }
 
-.globalStock #wrap #container .mainBox.financials .area_note .btn_more a {
+.v_signalStreng.globalStock #wrap #container .mainBox.financials .area_note .btn_more a {
 	display: block;
 	padding: 11px 0;
 	font-size: 0.9375rem;
@@ -36301,26 +36301,26 @@ body {
 	color: #6A727B;
 }
 
-.globalStock #wrap #container .mainBox.financials .area_note .btn_more:active {
+.v_signalStreng.globalStock #wrap #container .mainBox.financials .area_note .btn_more:active {
 	opacity: 0.95;
 	background-color: var(--col040);
 }
 
-.globalStock #wrap #container .mainBox.financials .area_note .btn_more a:active {
+.v_signalStreng.globalStock #wrap #container .mainBox.financials .area_note .btn_more a:active {
 	top: 0;
 	left: 0;
 	opacity: 1;
 }
 
-.globalStock #wrap #container .mainBox.financials .area_note .btn_more {
+.v_signalStreng.globalStock #wrap #container .mainBox.financials .area_note .btn_more {
 	margin-top: 10px;
 }
 
-.globalStock #wrap #container .mainBox.financials .dataBox {
+.v_signalStreng.globalStock #wrap #container .mainBox.financials .dataBox {
 	margin-bottom: 38px;
 }
 
-.globalStock #wrap #container .mainBox.financials .dataBox .reg_day {
+.v_signalStreng.globalStock #wrap #container .mainBox.financials .dataBox .reg_day {
 	display: block;
 	font-size: 0.75rem;
 	font-weight: 500;
@@ -36329,14 +36329,14 @@ body {
 	text-align: right;
 }
 
-.globalStock #wrap #container .mainBox.financials .dataBox .bg_box {
+.v_signalStreng.globalStock #wrap #container .mainBox.financials .dataBox .bg_box {
 	margin-top: 5px;
 	box-sizing: border-box;
 	border-radius: 16px;
 	background-color: #F5F5F9;
 }
 
-.globalStock #wrap #container .mainBox.financials .dataBox .bg_box .data_opinion {
+.v_signalStreng.globalStock #wrap #container .mainBox.financials .dataBox .bg_box .data_opinion {
 	display: flex;
 	align-items: flex-start;
 	justify-content: space-between;
@@ -36344,25 +36344,25 @@ body {
 	gap: 5px;
 }
 
-.globalStock #wrap #container .mainBox.financials .dataBox .bg_box .data_opinion .line .th {
+.v_signalStreng.globalStock #wrap #container .mainBox.financials .dataBox .bg_box .data_opinion .line .th {
 	font-size: 0.8125rem;
 	line-height: 1.46;
 	color: #6a727b;
 }
 
-.globalStock #wrap #container .mainBox.financials .dataBox .bg_box .data_opinion .line .td {
+.v_signalStreng.globalStock #wrap #container .mainBox.financials .dataBox .bg_box .data_opinion .line .td {
 	margin-top: 5px;
 	font-size: 1rem;
 	line-height: 1.19;
 	color: #333;
 }
 
-.globalStock #wrap #container .mainBox.financials .dataBox .bg_box .data_opinion .line .td b {
+.v_signalStreng.globalStock #wrap #container .mainBox.financials .dataBox .bg_box .data_opinion .line .td b {
 	font-weight: 700;
 	color: #333;
 }
 
-.globalStock #wrap #container .mainBox.financials .chart_box {
+.v_signalStreng.globalStock #wrap #container .mainBox.financials .chart_box {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
@@ -36372,67 +36372,67 @@ body {
 	margin-bottom: 30px;
 }
 
-.globalStock #wrap #container .mainBox.financials .chart_box:last-of-type {
+.v_signalStreng.globalStock #wrap #container .mainBox.financials .chart_box:last-of-type {
 	border-bottom: none;
 	padding-bottom: 0;
 	margin-bottom: 0;
 }
 
-.globalStock #wrap #container .mainBox.financials .chart_box .c_title {
+.v_signalStreng.globalStock #wrap #container .mainBox.financials .chart_box .c_title {
 	font-size: 1.25rem;
 	font-weight: 700;
 	line-height: 1.2;
 	color: #181f29;
 }
 
-.globalStock #wrap #container .mainBox.financials .chart_box .unit {
+.v_signalStreng.globalStock #wrap #container .mainBox.financials .chart_box .unit {
 	font-size: 0.75rem;
 	line-height: 1.75;
 	font-weight: 400;
 	color: #969ea7;
 }
 
-.globalStock #wrap #container .mainBox.financials .chart_box .financials_style {
+.v_signalStreng.globalStock #wrap #container .mainBox.financials .chart_box .financials_style {
 	width: 100%;
 	height: 180px;
 	margin-top: 15px;
 }
 
 @media (min-width: 376px) and (max-width: 425px) {
-	.globalStock #wrap #container .mainBox.financials .chart_box .financials_style {
+	.v_signalStreng.globalStock #wrap #container .mainBox.financials .chart_box .financials_style {
 		height: 220px;
 	}
 }
 
 @media (min-width: 426px) {
-	.globalStock #wrap #container .mainBox.financials .chart_box .financials_style {
+	.v_signalStreng.globalStock #wrap #container .mainBox.financials .chart_box .financials_style {
 		height: 260px;
 	}
 }
 
-.globalStock #wrap #container .mainBox.financials .chart_box .financials_style rect.highcharts-point {
+.v_signalStreng.globalStock #wrap #container .mainBox.financials .chart_box .financials_style rect.highcharts-point {
 	fill: #4D6EE4 !important;
 	background: #4D6EE4 !important;
 	stroke-width: 0;
 }
 
-.globalStock #wrap #container .mainBox.financials .chart_box .financials_style rect.highcharts-point.point_color {
+.v_signalStreng.globalStock #wrap #container .mainBox.financials .chart_box .financials_style rect.highcharts-point.point_color {
 	fill: #EDEEEF !important;
 	background: #EDEEEF !important;
 }
 
-.globalStock #wrap #container .mainBox.financials .chart_box .financials_style rect.highcharts-point.decrease_color {
+.v_signalStreng.globalStock #wrap #container .mainBox.financials .chart_box .financials_style rect.highcharts-point.decrease_color {
 	fill: #D2DCFF !important;
 	background: #D2DCFF !important;
 }
 
-.globalStock #wrap #container .mainBox.financials .chart_box .financials_style .highcharts-point.highcharts-negative.highcharts-color-0 {
+.v_signalStreng.globalStock #wrap #container .mainBox.financials .chart_box .financials_style .highcharts-point.highcharts-negative.highcharts-color-0 {
 	fill: #26ABFF;
 	background: #26ABFF;
 }
 
-.globalStock #wrap #container .mainBox.financials .chart_box .financials_style .highcharts-label text,
-.globalStock #wrap #container .mainBox.financials .chart_box .financials_style .highcharts-label tspan {
+.v_signalStreng.globalStock #wrap #container .mainBox.financials .chart_box .financials_style .highcharts-label text,
+.v_signalStreng.globalStock #wrap #container .mainBox.financials .chart_box .financials_style .highcharts-label tspan {
 	font-size: 12px !important;
 	color: #6A727B !important;
 	fill: #6A727B !important;
@@ -36441,39 +36441,39 @@ body {
 	font-weight: 400 !important;
 }
 
-.globalStock #wrap #container .mainBox.financials .chart_box .financials_style .highcharts-axis-labels text {
+.v_signalStreng.globalStock #wrap #container .mainBox.financials .chart_box .financials_style .highcharts-axis-labels text {
 	font-size: 12px !important;
 	color: #969EA7 !important;
 	fill: #969EA7 !important;
 	font-weight: 400 !important;
 }
 
-.globalStock #wrap #container .mainBox.financials .chart_box .financials_style .highcharts-xaxis .highcharts-axis-line {
+.v_signalStreng.globalStock #wrap #container .mainBox.financials .chart_box .financials_style .highcharts-xaxis .highcharts-axis-line {
 	stroke: var(--colbar);
 }
 
-.globalStock #wrap #container .mainBox.financials .chart_box .financials_style .highcharts-crosshair-category {
+.v_signalStreng.globalStock #wrap #container .mainBox.financials .chart_box .financials_style .highcharts-crosshair-category {
 	stroke: rgba(255, 255, 255, 0);
 }
 
-.globalStock #wrap #container .mainBox.financials .chart_box .financialsLine_style {
+.v_signalStreng.globalStock #wrap #container .mainBox.financials .chart_box .financialsLine_style {
 	margin-top: 10px;
 	width: 100%;
 	height: 220px;
 }
 
 @media (min-width: 426px) {
-	.globalStock #wrap #container .mainBox.financials .chart_box .financialsLine_style {
+	.v_signalStreng.globalStock #wrap #container .mainBox.financials .chart_box .financialsLine_style {
 		height: 260px;
 	}
 }
 
-.globalStock #wrap #container .mainBox.financials .chart_box .financialsLine_style .highcharts-xaxis .highcharts-axis-line {
+.v_signalStreng.globalStock #wrap #container .mainBox.financials .chart_box .financialsLine_style .highcharts-xaxis .highcharts-axis-line {
 	stroke: var(--col2f3) !important;
 }
 
-.globalStock #wrap #container .mainBox.financials .chart_box .financialsLine_style .highcharts-legend-item text,
-.globalStock #wrap #container .mainBox.financials .chart_box .financialsLine_style .highcharts-legend-item tspan {
+.v_signalStreng.globalStock #wrap #container .mainBox.financials .chart_box .financialsLine_style .highcharts-legend-item text,
+.v_signalStreng.globalStock #wrap #container .mainBox.financials .chart_box .financialsLine_style .highcharts-legend-item tspan {
 	font-size: 12px !important;
 	color: #969ea7 !important;
 	fill: #969ea7 !important;
@@ -36482,7 +36482,7 @@ body {
 	stroke-width: 0;
 }
 
-.globalStock #wrap #container .mainBox.financials .chart_box .premiumLock_area {
+.v_signalStreng.globalStock #wrap #container .mainBox.financials .chart_box .premiumLock_area {
 	width: 100%;
 	border-radius: 8px;
 	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.96);
@@ -36491,7 +36491,7 @@ body {
 	position: sticky;
 }
 
-.globalStock #wrap #container .mainBox.financials .chart_box .premiumLock_area .transbox {
+.v_signalStreng.globalStock #wrap #container .mainBox.financials .chart_box .premiumLock_area .transbox {
 	cursor: pointer;
 	display: flex;
 	align-items: center;
@@ -36500,18 +36500,18 @@ body {
 	padding: 10px 10px;
 }
 
-.globalStock #wrap #container .mainBox.financials .chart_box .premiumLock_area .transbox .free_title {
+.v_signalStreng.globalStock #wrap #container .mainBox.financials .chart_box .premiumLock_area .transbox .free_title {
 	font-size: 0.9375rem;
 	font-weight: normal;
 	letter-spacing: -0.38px;
 	color: var(--cold9e);
 }
 
-.globalStock #wrap #container .mainBox.financials .chart_box .premiumLock_area .transbox .free_title b {
+.v_signalStreng.globalStock #wrap #container .mainBox.financials .chart_box .premiumLock_area .transbox .free_title b {
 	font-weight: 700;
 }
 
-.globalStock #wrap #container .mainBox.financials .chart_box .premiumLock_area .transbox .more {
+.v_signalStreng.globalStock #wrap #container .mainBox.financials .chart_box .premiumLock_area .transbox .more {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -36527,7 +36527,7 @@ body {
 	color: var(--colfff);
 }
 
-.globalStock #wrap #container .mainBox.financials .chart_box .premiumLock_area .transbox .more::after {
+.v_signalStreng.globalStock #wrap #container .mainBox.financials .chart_box .premiumLock_area .transbox .more::after {
 	content: "";
 	display: inline-block;
 	width: 8px;
@@ -36648,7 +36648,7 @@ body {
 }
 
 /* GNB */
-.globalStock .gnb {
+.v_signalStreng.globalStock .gnb {
 	position: fixed;
 	bottom: 0;
 	width: 100%;
@@ -36659,52 +36659,52 @@ body {
 	z-index: 92;
 	box-shadow: 0 -5px 10px 0 rgba(0, 0, 0, 0.08);
 }
-.globalStock .gnb .list {
+.v_signalStreng.globalStock .gnb .list {
 	display: flex;
 	align-items: center;
     justify-content: space-around;
 	gap: 0 3px;
 	height: 100%;
 }
-.globalStock .gnb .list li {
+.v_signalStreng.globalStock .gnb .list li {
 	flex: 1 1 auto;	
 	text-align: center;
 } 
-.globalStock .gnb .list li a {
+.v_signalStreng.globalStock .gnb .list li a {
 	font-size: 0.75rem;
 	font-weight: 500;		
 	color: #404fc3;
 	opacity: 0.5;
 	filter: grayscale(100%)
 }
-.globalStock .gnb .list li.active a {
+.v_signalStreng.globalStock .gnb .list li.active a {
 	color: #404fc3;
 	opacity: 1;
 	filter: grayscale(0%)
 }
-.globalStock .gnb .list li a::before {
+.v_signalStreng.globalStock .gnb .list li a::before {
 	content: '';
 	display: block;
 	width: 20px;
 	height: 20px;	
 	margin: 0 auto 2px;
 }
-.globalStock .gnb .list li.home a::before {	
+.v_signalStreng.globalStock .gnb .list li.home a::before {	
 	background: url('../img/home_on.svg') no-repeat center center;
 }
-.globalStock .gnb .list li.sch a::before {	
+.v_signalStreng.globalStock .gnb .list li.sch a::before {	
 	background: url('../img/sch_on.svg') no-repeat center center;
 }
-.globalStock .gnb .list li.stock a::before {	
+.v_signalStreng.globalStock .gnb .list li.stock a::before {	
 	background: url('../img/stock_on.svg') no-repeat center center;
 }
-.globalStock .gnb .list li.excavation a::before {	
+.v_signalStreng.globalStock .gnb .list li.excavation a::before {	
 	background: url('../img/excavation_on.svg') no-repeat center center;
 }
-.globalStock .gnb .list li.attention a::before {	
+.v_signalStreng.globalStock .gnb .list li.attention a::before {	
 	background: url('../img/attention_on.svg') no-repeat center center;
 }
-.globalStock .updata_allList {
+.v_signalStreng.globalStock .updata_allList {
 	display: none;
 	/* position: absolute;
     left: 0;
@@ -36721,19 +36721,19 @@ body {
 	/* border-radius: 16px;		 */
 	z-index: 99;
 }
-.globalStock .updata_allList .txt {	    
+.v_signalStreng.globalStock .updata_allList .txt {	    
     padding: 2px 0;
     font-size: 0.875rem;
     line-height: 1.43;
     letter-spacing: normal;
     color: #333;
 }
-.globalStock .updata_allList .txt b {
+.v_signalStreng.globalStock .updata_allList .txt b {
     font-weight: bold;
     color: #333;
 }
 
-.globalStock .updata_allList .trading_signal {
+.v_signalStreng.globalStock .updata_allList .trading_signal {
 	display: flex;
 	flex-direction: column;
 	gap: 12px 0;
@@ -36742,22 +36742,22 @@ body {
 	border-radius: 16px;	
 	background-color: #fff;
 }
-.globalStock .updata_allList .trading_signal .list {
+.v_signalStreng.globalStock .updata_allList .trading_signal .list {
 	display: flex;
     justify-content: space-around;	
 	margin: 0;
 	width: 100%;	
 }
-.globalStock .updata_allList .trading_signal .list li {
+.v_signalStreng.globalStock .updata_allList .trading_signal .list li {
 	/* flex: 1 1 auto;	 */
 	text-align: center;
 }
-.globalStock .updata_allList .trading_signal .list .day {
+.v_signalStreng.globalStock .updata_allList .trading_signal .list .day {
 	font-size: 0.8125rem;	
 	color: #6a727b;
 	box-sizing: border-box;
 }
-.globalStock .updata_allList .trading_signal .list .trends span {
+.v_signalStreng.globalStock .updata_allList .trading_signal .list .trends span {
 	display: inline-block;
     justify-content: center;
     align-items: center;
@@ -36768,36 +36768,36 @@ body {
     padding: 4px 9px;
     border-radius: 16px;
 }
-.globalStock .updata_allList .trading_signal .list .trends span.ibox.str {
+.v_signalStreng.globalStock .updata_allList .trading_signal .list .trends span.ibox.str {
 	background-color: #dd5257;
 }
-.globalStock .updata_allList .trading_signal .list .trends span.ibox.bas {
+.v_signalStreng.globalStock .updata_allList .trading_signal .list .trends span.ibox.bas {
 	background: #C7CCD1;
 }
-.globalStock .updata_allList .trading_signal .list .trends span.ibox.weak {
+.v_signalStreng.globalStock .updata_allList .trading_signal .list .trends span.ibox.weak {
 	background-color: #404fc3;
 }
-.globalStock .updata_allList .trading_signal .list .signal {
+.v_signalStreng.globalStock .updata_allList .trading_signal .list .signal {
 	font-size: 0.8125rem;	
 	color: #333;
 	width: 50px;
 	text-align: right;
 }
-.globalStock .updata_allList .trading_signal .list .exp_signal {
+.v_signalStreng.globalStock .updata_allList .trading_signal .list .exp_signal {
 	font-size: 0.8125rem;	
 	font-weight: bold;	
 	color: #333;
 	width: 88px;
 	text-align: right;
 }
-.globalStock .updata_allList .trading_signal .list .exp_signal.increase {
+.v_signalStreng.globalStock .updata_allList .trading_signal .list .exp_signal.increase {
 	color: #e1305a;
 }
-.globalStock .updata_allList .trading_signal .list .exp_signal.decrease {	
+.v_signalStreng.globalStock .updata_allList .trading_signal .list .exp_signal.decrease {	
 	color: #404fc3;
 }
 
-.globalStock .updata_allList .trading_signal .list .exp_signal span {
+.v_signalStreng.globalStock .updata_allList .trading_signal .list .exp_signal span {
 	font-size: 0.75rem;
 	font-weight: 500;	
 	color: #d3d3d3;
