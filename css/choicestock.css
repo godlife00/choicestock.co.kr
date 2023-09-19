@@ -8177,7 +8177,7 @@ table.tableRanking td {
 
 .globalStock .sub_game .gamePicks_area .game_list .guide {
 	text-align: right;
-	margin-bottom: 10px;
+	/* margin-bottom: 10px; */
 }
 
 .globalStock .sub_game .gamePicks_area .game_list .guide li {
@@ -8207,7 +8207,15 @@ table.tableRanking td {
 .globalStock .sub_game .gamePicks_area .game_list .guide li.long i {
 	background: #fa663a;
 }
-
+.globalStock .sub_game .gamePicks_area .game_list .update_sort {
+	display: block;	
+	padding: 5px 3px 0 0;
+	margin-bottom: 10px;
+	color: #939393;
+    font-size: 10px;
+	font-weight: 500;
+	text-align: right;	
+}
 .globalStock .sub_game .gamePicks_area .game_list .list {
 	background: #fff;
 	border-radius: 10px;
