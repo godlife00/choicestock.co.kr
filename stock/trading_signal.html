@@ -50,9 +50,9 @@
             <ul class="list">
                 <li class="home"><a href="../index.html">홈</a></li>
                 <li class="sch"><a href="../search/search_outline.html">검색</a></li>
-                <li class="stock active"><a href="../stock/recom.html">추천</a></li>                
-                <li class="excavation"><a href="../attractiveness/attractiveness.html">발굴</a></li>                
-                <li class="attention"><a href="../search/_searching.html">관심</a></li>                
+                <li class="stock active"><a href="../stock/recom.html">추천</a></li>
+                <li class="excavation"><a href="../attractiveness/attractiveness.html">발굴</a></li>
+                <li class="attention"><a href="../search/_searching.html">관심</a></li>
             </ul>
         </div>
         <!-- //gnb -->
@@ -83,6 +83,18 @@
             </div>
             <!-- //tab_area -->
 
+            <div class="sub_top">
+                <div class="">
+                    <div class="txt_box">
+                        <p class="txt">
+                            지금살까? 오늘의 매수/매도신호 종목만 쏙쏙!<br>여러분의 시간은 소중하니깐요!
+                        </p>
+                    </div>
+                    <!-- //txt_box -->
+                </div>
+            </div>
+            <!-- //sub_top -->
+
             <!-- 구글 에드센스 리스트 상단 -->
             <!-- //구글 에드센스 -->
 
@@ -91,47 +103,49 @@
 
                     <div class="tab-container">
                         <div class="tab_btn">
-                            <button onclick="openTab('tab1')" class="tab_span">매수종목 <span class="cunt">(23건)</span></button>
-                            <button onclick="openTab('tab2')" class="tab_span">매도종목 <span class="cunt">(12건)</span></button>                        
-                        </div>                        
-                
+                            <button onclick="openTab('tab1')" class="tab_span">매수종목 <span
+                                    class="cunt">(23건)</span></button>
+                            <button onclick="openTab('tab2')" class="tab_span">매도종목 <span
+                                    class="cunt">(12건)</span></button>
+                        </div>
+
                         <div id="tab1" class="tab">
                             <p class="update_info">기준 23.07/19</p>
                             <div class="recipe_area">
 
                                 <!-- 실적발표 -->
                                 <div class="area">
-                                    <ul class="list">
-                                        <li class="title">
-                                            <a href="../search/search_diagnosis.html">실적발표</a>
-                                            <span class="sum">MSFT</span>
+
+                                    <ul class="logo_list" onclick="location.href ='/search/search_outline.html'" style="cursor:pointer;">
+                                        <li class="title_logo">
+                                            <span class="logo"><img src="https://uslogo.datahero.co.kr/img/logo/us/mvl/AAPL.svg" alt=""></span>
                                         </li>
-                                        <li class="num">
-                                            <span>869<span class="hit">백만달러</span></span>
+                                        <li class="detail">
+                                            <div class="title">
+                                                <a href="/search/search_outline.html" class="">마이크로소프트</a>
+                                            </div>
+                                            <div class="num">
+                                                <span><b>0.</b>47</span>
+                                            </div>
+                                            <div class="per">
+                                                <span class="same">0 (0.00%)</span>
+                                                <!-- increase 증가, decrease 감소, 보합은 same -->
+                                            </div>
                                         </li>
-                                        <li class="upAnddown">
-                                            <span>103.99<b>%</b></span><!-- increase 증가, decrease 감소 -->
-                                        </li>
+                                        
                                     </ul>
-                                    <ul class="analysis_score">
-                                        <li class="num">
-                                            <span>898,869</span>
-                                            <span
-                                                class="increase">+72.99<b>%</b></span><!-- increase 증가, decrease 감소 -->
-                                        </li>
-                                    </ul>
-                                    <!-- //analysis_score -->
                                 </div>
                                 <!-- //area -->
-
                             </div>
+                            <!-- //recipe_area -->
                         </div>
-                
+                        <!-- //tab -->
+
                         <div id="tab2" class="tab">
                             <h2>탭 2 내용</h2>
                             <p>이것은 탭 2의 내용입니다.</p>
                         </div>
-                    </div>                    
+                    </div>
                 </div>
                 <!-- //recipe_area -->
 

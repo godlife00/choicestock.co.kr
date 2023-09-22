@@ -36597,6 +36597,9 @@ body.v_signalStreng  {
 	padding: 0;
 } 
 .v_signalStreng.globalStock .gnb .list li a {
+	display: inline-block;
+	width: 100%;
+	box-sizing: border-box;
 	font-size: 0.75rem;
 	font-weight: 500;		
 	color: #404fc3;
@@ -36965,6 +36968,7 @@ body.v_signalStreng  {
 	margin-top: 15px;	
 }
 .globalStock .sub_recom .tab-container {
+	position: relative;
 	margin-top: 16px;		
 }
 .globalStock .sub_recom .tab-container .tab_btn {	
@@ -37016,9 +37020,17 @@ body.v_signalStreng  {
 	font-weight: 500;
 	color: #404fc3;			
 }
+/* 추천 - 매매신호탭 */
 .globalStock .sub_recipe .sub_mid.recipe_view .recipe_area .area {
 	background-color: #f7f8f9;	
 }
+.globalStock .sub_recipe .sub_mid.recipe_view .recipe_area .area .logo_list {
+	
+}
+
+
+
+
 .globalStock .sub_recom .sub_mid.eventPicks_area .ptfo_area .day {
 	font-size: 0.8125rem;	
 	top: 4px !important;
@@ -37030,8 +37042,18 @@ body.v_signalStreng  {
 .globalStock .sub_game .gamePicks_area .game_list .update_sort {
 	font-size: 0.75rem;
 }
-.globalStock .sub_recipe .sub_mid.recipe_view .update_info {	
-	font-size: 0.8125rem;
+.globalStock .sub_recipe .sub_mid.recipe_view .update_info {		
+    display: inline-block;
+    width: 90px;
+	padding: 0;
+    position: absolute;
+    right: 0;
+	top: 4px;
+	color: #939393;    
+	font-size: 0.8125rem;    
+}
+.globalStock .sub_recipe .sub_top .txt_box {
+	background-color: #F5F5F9;
 }
 
 /* 검색 - 개요 월정기결제 33,000원 플로팅 팝업 */
@@ -37149,4 +37171,184 @@ body.v_signalStreng  {
 
 .globalStock .signalpop.monthly_payment .ftr .btn_close::after {
 	transform: rotate(-45deg);
+}
+
+.globalStock .modal.bandchart_sume {
+	background: #fff;
+	padding: 0 16px 32px;
+	top: 15%;
+}
+
+.globalStock .modal.bandchart_sume .pop_header {	
+	background-color: #fff;
+    padding: 24px 15px;
+    border: none;
+}
+.globalStock .modal.bandchart_sume .pop_header .clse::before,
+.globalStock .modal.bandchart_sume .pop_header .clse::after {
+    width: 2px;
+    background-color: #333;
+}
+.globalStock .modal.bandchart_sume .pop_header .pop_title {
+	letter-spacing: -0.05rem;
+	justify-content: center;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #333;
+}
+@media (min-width:320px) and (max-width:359px) {
+	.globalStock .modal.bandchart_sume {		
+		padding: 0 10px 25px;		
+	}
+	.globalStock .modal.bandchart_sume .pop_header .pop_title {		
+		font-size: 1rem;
+	}	
+}
+.globalStock .modal.bandchart_sume .box.info {
+	margin: 0 auto;
+	padding-bottom: 13px;
+	overflow: hidden;
+	border-bottom: 1px solid #e1e1e2;
+}
+
+.globalStock .modal.bandchart_sume .box.info p {
+	font-size: 13px;
+	line-height: 1.54;
+	color: #404fc3;
+	word-break: break-all;
+	word-wrap: break-word;
+	position: relative;
+	padding-left: 18px;
+}
+
+.globalStock .modal.bandchart_sume .box.info p i {
+	display: inline-block;
+	position: absolute;
+	left: 1px;
+	top: 3px;
+	width: 12px;
+	height: 12px;
+	background: url('../img/icon_awesome.svg') no-repeat center center;
+}
+
+.globalStock .modal.bandchart_sume .box.info p a.more {
+	font-size: 10px;
+	color: #404fc3;
+	position: relative;
+	top: -2px;
+	margin-left: 5px;
+	padding-left: 3px;
+	padding-right: 16px;
+	border-bottom: 1px solid #404fc3;
+	width: auto;
+	text-align: left;
+	line-height: normal;
+}
+
+.globalStock .modal.bandchart_sume .box.info p a.more::after {
+	content: '';
+	width: 5px;
+	height: 5px;
+	position: absolute;
+	top: 2px;
+	right: 0;
+	margin: auto;
+	display: inline-block;
+	border-top: 1px solid #424fbc;
+	border-right: 1px solid #424fbc;
+	transform: rotate(135deg);
+}
+
+.globalStock .modal.bandchart_sume .box.sum .title {
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 1.43;
+	color: #404fc3;
+	width: 100%;
+	padding-left: 0;
+}
+
+.globalStock .modal.bandchart_sume .box.sum .txt {
+	font-size: 13px;
+	line-height: 1.54;
+	color: #333;
+}
+
+.globalStock .modal.bandchart_sume .box.sum ul {
+	margin-top: 12px;
+}
+
+.globalStock .modal.bandchart_sume .box.sum ul li {
+	position: relative;
+	font-size: 13px;
+	line-height: 1.54;
+	color: #333;
+	padding-left: 12px;
+	margin-bottom: 5px;
+}
+
+.globalStock .modal.bandchart_sume .box.sum ul li:last-child {
+	margin-bottom: 0;
+}
+
+.globalStock .modal.bandchart_sume .box.sum ul li::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 8px;
+	display: inline-block;
+	width: 4px;
+	height: 4px;
+	border-radius: 50%;
+	background: #c7cbe9;
+}
+
+.globalStock .modal.bandchart_sume .box.rule {
+	margin-top: 23px;
+	background-color: #f8f8f8;
+	border-radius: 8px;
+	padding: 14px 15px;
+	box-sizing: border-box;
+}
+
+.globalStock .modal.bandchart_sume .box.rule .title {
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 1.43;
+	color: #404fc3;
+	width: 100%;
+	padding-left: 0;
+}
+
+.globalStock .modal.bandchart_sume .box.rule .title {
+	color: #014B8D;
+}
+
+.globalStock .modal.bandchart_sume .box.rule ul {
+	margin-top: 12px;
+}
+
+.globalStock .modal.bandchart_sume .box.rule ul li {
+	position: relative;
+	font-size: 13px;
+	line-height: 1.54;
+	color: #333;
+	padding-left: 12px;
+	margin-bottom: 5px;
+}
+
+.globalStock .modal.bandchart_sume .box.rule ul li:last-child {
+	margin-bottom: 0;
+}
+
+.globalStock .modal.bandchart_sume .box.rule ul li::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 8px;
+	display: inline-block;
+	width: 4px;
+	height: 4px;
+	border-radius: 50%;
+	background: #c7cbe9;
 }
