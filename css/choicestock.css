@@ -20149,9 +20149,9 @@ table.tableRanking td {
 }
 
 .globalStock .view_con .mid li {
-	font-size: 0.875rem;
-	padding-left: 13px;
-	line-height: 22px;
+	font-size: 1.0625rem;
+    line-height: 30px;
+	padding-left: 13px;	
 	position: relative;
 }
 
@@ -20159,7 +20159,7 @@ table.tableRanking td {
 	content: "";
 	position: absolute;
 	left: 4px;
-	top: 9px;
+	top: 12px;
 	display: inline-block;
 	width: 3px;
 	height: 3px;
