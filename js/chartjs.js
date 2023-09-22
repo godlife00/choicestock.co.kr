@@ -5177,74 +5177,13 @@ $(document).ready(function () {
                 visible: false,                
             },
 
-            series: [
-                {
-                    type: 'candlestick',
-                    name: '주가',
-                    data: value,
-                    id: 'dataseries',
-                    crisp: false,
-                }, {
-                    type: 'flags',
-                    y: 40,
-                    name: '매수',
-                    data: [{
-                        x: 1648166400000,
-                        y: 220.51,
-                        title: '매수',
-                        
-                    },
-
-                    // 매수 박스 여러개 들어가는 경우 추가.
-                    {
-                        x: 1646784000000,
-                        y: 195.74,
-                        title: '매수',
-
-                    },
-                    // // 매수 박스 여러개 들어가는 경우 추가.
-                    // {
-                    //     x: 1656374400000,
-                    //     y: 50.41,
-                    //     title: '매수',
-                    // },
-                    ],                    
-                    // 원하는 스타일 및 모양을 여기에 정의합니다.
-                    // fillColor: 'green',  // 채우기 색상
-                    // lineColor: 'blue',   // 테두리 색상
-                    lineWidth: 0,        // 테두리 두께   
-                    onSeries: 'dataseries',                    
-                    shape: 'url(../img/buy.svg)',                    
-                    style: {                        
-                        fontSize: '0',    // 텍스트 크기
-                        color: '#e1305a'
-                    },
-                    
-                }, {
-                    type: 'flags',
-                    y: -40,
-                    name: '매도',
-                    data: [                        
-                        {                            
-                            x: 1647820800000,
-                            y: 214.5,
-                            title: '매도',
-                        },
-                        // 매도 박스 여러개 들어가는 경우 추가.
-                        {                            
-                            x: 1646611200000,
-                            y: 200.79,
-                            title: '매도',
-                        },
-                    ],
-                    lineWidth: 0,        // 테두리 두께                    
-                    shape: 'url(../img/sell.svg)',                    
-                    style: {                        
-                        fontSize: '0',    // 텍스트 크기
-                        color: '#e1305a'
-                    },
-                },
-            ],
+            series: [{
+                type: 'candlestick',
+                name: '주가',
+                data: value,
+                id: 'dataseries',
+                crisp: false,
+            }],
 
             plotOptions: {
                 series: {

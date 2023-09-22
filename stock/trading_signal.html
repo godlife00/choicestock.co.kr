@@ -48,11 +48,11 @@
         <!-- 하단 GNB -->
         <div class="gnb">
             <ul class="list">
-                <li class="home"><a href="../index.html"><i></i> 홈</a></li>
-                <li class="stock active"><a href="stock/recom.html">추천</a></li>
-                <li class="analysis"><a href="#">진단</a></li>
-                <li class="excavation"><a href="../attractiveness/attractiveness.html">발굴</a></li>
-                <li class="menu"><a href="stock/menu.html">메뉴</a></li>
+                <li class="home"><a href="../index.html">홈</a></li>
+                <li class="sch"><a href="../search/search_outline.html">검색</a></li>
+                <li class="stock active"><a href="../stock/recom.html">추천</a></li>                
+                <li class="excavation"><a href="../attractiveness/attractiveness.html">발굴</a></li>                
+                <li class="attention"><a href="../search/_searching.html">관심</a></li>                
             </ul>
         </div>
         <!-- //gnb -->
@@ -72,7 +72,7 @@
         </div>
 
         <!-- 매매신호 class = sub_recipe-->
-        <div id="container" class="sub_recipe">
+        <div id="container" class="sub_recom sub_recipe">
             <!-- 주요 콘텐츠 -->
             <div class="tab_area">
                 <ul class="tbas_lb tabs_3">
@@ -91,48 +91,47 @@
 
                     <div class="tab-container">
                         <div class="tab_btn">
-                            <button onclick="openTab('tab1')" class="tab_span active">매수종목 (23건)</button>
-                            <button onclick="openTab('tab2')" class="tab_span">매도종목 (12건)</button>                        
+                            <button onclick="openTab('tab1')" class="tab_span">매수종목 <span class="cunt">(23건)</span></button>
+                            <button onclick="openTab('tab2')" class="tab_span">매도종목 <span class="cunt">(12건)</span></button>                        
                         </div>                        
                 
                         <div id="tab1" class="tab">
                             <p class="update_info">기준 23.07/19</p>
-                                <div class="recipe_area">
+                            <div class="recipe_area">
 
-                                    <!-- 실적발표 -->
-                                    <div class="area">
-                                        <ul class="list">
-                                            <li class="title">
-                                                <a href="../search/search_diagnosis.html">실적발표</a>
-                                                <span class="sum">MSFT</span>
-                                            </li>
-                                            <li class="num">
-                                                <span>869<span class="hit">백만달러</span></span>
-                                            </li>
-                                            <li class="upAnddown">
-                                                <span>103.99<b>%</b></span><!-- increase 증가, decrease 감소 -->
-                                            </li>
-                                        </ul>
-                                        <ul class="analysis_score">
-                                            <li class="num">
-                                                <span>898,869</span>
-                                                <span
-                                                    class="increase">+72.99<b>%</b></span><!-- increase 증가, decrease 감소 -->
-                                            </li>
-                                        </ul>
-                                        <!-- //analysis_score -->
-                                    </div>
-                                    <!-- //area -->
-
+                                <!-- 실적발표 -->
+                                <div class="area">
+                                    <ul class="list">
+                                        <li class="title">
+                                            <a href="../search/search_diagnosis.html">실적발표</a>
+                                            <span class="sum">MSFT</span>
+                                        </li>
+                                        <li class="num">
+                                            <span>869<span class="hit">백만달러</span></span>
+                                        </li>
+                                        <li class="upAnddown">
+                                            <span>103.99<b>%</b></span><!-- increase 증가, decrease 감소 -->
+                                        </li>
+                                    </ul>
+                                    <ul class="analysis_score">
+                                        <li class="num">
+                                            <span>898,869</span>
+                                            <span
+                                                class="increase">+72.99<b>%</b></span><!-- increase 증가, decrease 감소 -->
+                                        </li>
+                                    </ul>
+                                    <!-- //analysis_score -->
                                 </div>
+                                <!-- //area -->
+
+                            </div>
                         </div>
                 
                         <div id="tab2" class="tab">
                             <h2>탭 2 내용</h2>
                             <p>이것은 탭 2의 내용입니다.</p>
                         </div>
-                    </div>
-                    
+                    </div>                    
                 </div>
                 <!-- //recipe_area -->
 

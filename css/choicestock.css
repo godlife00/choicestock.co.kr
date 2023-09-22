@@ -6427,6 +6427,7 @@ table.tableRanking td {
 }
 
 .globalStock .sub_recom .sub_mid.eventPicks_area .recom_chartList .chartGoal .target .att {
+	display: inline-block;
 	font-size: 0.9375rem;
 	font-weight: bold;
 	color: #333;
@@ -6575,20 +6576,20 @@ table.tableRanking td {
 	font-weight: 300;
 }
 
-.globalStock .sub_recom .sub_mid.eventPicks_area .bandchart_sume {
+.globalStock .sub_recom .bandchart_sume {
 	background: #fff;
 	padding: 16px 14px;
 	margin-top: 16px;
 }
 
-.globalStock .sub_recom .sub_mid.eventPicks_area .bandchart_sume .box.info {
+.globalStock .sub_recom .bandchart_sume .box.info {
 	margin: 0 auto;
 	padding-bottom: 13px;
 	overflow: hidden;
 	border-bottom: 1px solid #e1e1e2;
 }
 
-.globalStock .sub_recom .sub_mid.eventPicks_area .bandchart_sume .box.info p {
+.globalStock .sub_recom .bandchart_sume .box.info p {
 	font-size: 13px;
 	line-height: 1.54;
 	color: #404fc3;
@@ -6598,7 +6599,7 @@ table.tableRanking td {
 	padding-left: 18px;
 }
 
-.globalStock .sub_recom .sub_mid.eventPicks_area .bandchart_sume .box.info p i {
+.globalStock .sub_recom .bandchart_sume .box.info p i {
 	display: inline-block;
 	position: absolute;
 	left: 1px;
@@ -6608,7 +6609,7 @@ table.tableRanking td {
 	background: url('../img/icon_awesome.svg') no-repeat center center;
 }
 
-.globalStock .sub_recom .sub_mid.eventPicks_area .bandchart_sume .box.info p a.more {
+.globalStock .sub_recom .bandchart_sume .box.info p a.more {
 	font-size: 10px;
 	color: #404fc3;
 	position: relative;
@@ -6622,7 +6623,7 @@ table.tableRanking td {
 	line-height: normal;
 }
 
-.globalStock .sub_recom .sub_mid.eventPicks_area .bandchart_sume .box.info p a.more::after {
+.globalStock .sub_recom .bandchart_sume .box.info p a.more::after {
 	content: '';
 	width: 5px;
 	height: 5px;
@@ -6636,11 +6637,11 @@ table.tableRanking td {
 	transform: rotate(135deg);
 }
 
-.globalStock .sub_recom .sub_mid.eventPicks_area .bandchart_sume .box.sum {
+.globalStock .sub_recom .bandchart_sume .box.sum {
 	padding: 22px 0 0;
 }
 
-.globalStock .sub_recom .sub_mid.eventPicks_area .bandchart_sume .box.sum .title {
+.globalStock .sub_recom .bandchart_sume .box.sum .title {
 	font-size: 14px;
 	font-weight: bold;
 	line-height: 1.43;
@@ -6649,18 +6650,18 @@ table.tableRanking td {
 	padding-left: 0;
 }
 
-.globalStock .sub_recom .sub_mid.eventPicks_area .bandchart_sume .box.sum .txt {
+.globalStock .sub_recom .bandchart_sume .box.sum .txt {
 	font-size: 13px;
 	line-height: 1.54;
 	color: #333;
 	margin-top: 13px;
 }
 
-.globalStock .sub_recom .sub_mid.eventPicks_area .bandchart_sume .box.sum ul {
+.globalStock .sub_recom .bandchart_sume .box.sum ul {
 	margin-top: 12px;
 }
 
-.globalStock .sub_recom .sub_mid.eventPicks_area .bandchart_sume .box.sum ul li {
+.globalStock .sub_recom .bandchart_sume .box.sum ul li {
 	position: relative;
 	font-size: 13px;
 	line-height: 1.54;
@@ -6669,11 +6670,11 @@ table.tableRanking td {
 	margin-bottom: 5px;
 }
 
-.globalStock .sub_recom .sub_mid.eventPicks_area .bandchart_sume .box.sum ul li:last-child {
+.globalStock .sub_recom .bandchart_sume .box.sum ul li:last-child {
 	margin-bottom: 0;
 }
 
-.globalStock .sub_recom .sub_mid.eventPicks_area .bandchart_sume .box.sum ul li::before {
+.globalStock .sub_recom .bandchart_sume .box.sum ul li::before {
 	content: "";
 	position: absolute;
 	left: 0;
@@ -6685,7 +6686,7 @@ table.tableRanking td {
 	background: #c7cbe9;
 }
 
-.globalStock .sub_recom .sub_mid.eventPicks_area .bandchart_sume .box.rule {
+.globalStock .sub_recom .bandchart_sume .box.rule {
 	margin-top: 23px;
 	background-color: #f8f8f8;
 	border-radius: 8px;
@@ -6693,7 +6694,7 @@ table.tableRanking td {
 	box-sizing: border-box;
 }
 
-.globalStock .sub_recom .sub_mid.eventPicks_area .bandchart_sume .box.rule .title {
+.globalStock .sub_recom .bandchart_sume .box.rule .title {
 	font-size: 14px;
 	font-weight: bold;
 	line-height: 1.43;
@@ -6702,15 +6703,15 @@ table.tableRanking td {
 	padding-left: 0;
 }
 
-.globalStock .sub_recom .sub_mid.eventPicks_area .bandchart_sume .box.rule .title {
+.globalStock .sub_recom .bandchart_sume .box.rule .title {
 	color: #014B8D;
 }
 
-.globalStock .sub_recom .sub_mid.eventPicks_area .bandchart_sume .box.rule ul {
+.globalStock .sub_recom .bandchart_sume .box.rule ul {
 	margin-top: 12px;
 }
 
-.globalStock .sub_recom .sub_mid.eventPicks_area .bandchart_sume .box.rule ul li {
+.globalStock .sub_recom .bandchart_sume .box.rule ul li {
 	position: relative;
 	font-size: 13px;
 	line-height: 1.54;
@@ -6719,11 +6720,11 @@ table.tableRanking td {
 	margin-bottom: 5px;
 }
 
-.globalStock .sub_recom .sub_mid.eventPicks_area .bandchart_sume .box.rule ul li:last-child {
+.globalStock .sub_recom .bandchart_sume .box.rule ul li:last-child {
 	margin-bottom: 0;
 }
 
-.globalStock .sub_recom .sub_mid.eventPicks_area .bandchart_sume .box.rule ul li::before {
+.globalStock .sub_recom .bandchart_sume .box.rule ul li::before {
 	content: "";
 	position: absolute;
 	left: 0;
@@ -35955,6 +35956,100 @@ body.v_signalStreng  {
 	width: 100%;
 }
 
+/* 개요 - 뉴스 */
+.v_signalStreng.globalStock #wrap #container .main_mid.new_area {		
+    padding: 0 16px;
+	margin-bottom: 15px;
+}
+.v_signalStreng.globalStock #wrap #container .main_mid.new_area .c_title {
+	font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #181f29;	
+}
+.v_signalStreng.globalStock #wrap #container .main_mid.new_area .lst_type {
+	width: 100%;    
+	margin-top: 15px;
+}
+.v_signalStreng.globalStock #wrap #container .main_mid.new_area .lst_type2 {
+	width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 15px 15px;
+    padding: 12px 0;
+    box-sizing: border-box;
+}
+.v_signalStreng.globalStock #wrap #container .main_mid.new_area .lst_type2 .tit {	
+	width: 100%;
+	flex: 2;
+	order: 2;	
+	display: flex;
+    flex-wrap: wrap;    
+	align-content: space-around;
+}
+.v_signalStreng.globalStock #wrap #container .main_mid.new_area .lst_type2 .tit a {
+	display: inline-block;
+	color: #333;    
+    font-size: 1rem;
+	display: -webkit-box;
+	overflow: hidden;
+	max-height: 2.8em;
+	line-height: 1.4em;
+	box-sizing: border-box;
+	text-overflow: ellipsis;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	word-wrap: break-word;
+	word-break: break-all;
+}
+.v_signalStreng.globalStock #wrap #container .main_mid.new_area .lst_type2 dd.photo {		
+	order: 1;	
+    border: 1px solid #E0E4E9;
+    border-radius: 10px;		
+	overflow: hidden;
+	box-sizing: border-box;
+	flex-basis: 80px;
+    height: 71px;
+}
+.v_signalStreng.globalStock #wrap #container .main_mid.new_area .lst_type dd.photo a {
+	display: inline-block;	
+	width: 100%;
+	height: 100%;
+}
+.v_signalStreng.globalStock #wrap #container .main_mid.new_area .lst_type dd.photo a img {
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+}
+.v_signalStreng.globalStock #wrap #container .main_mid.new_area .lst_type .day {	
+	display: block;
+	width: 100%;
+	margin-top: 7px;    	
+	color: #939393;
+    font-size: 0.8125rem;
+    padding-right: 10px;	
+	letter-spacing: normal;
+}
+.v_signalStreng.globalStock #wrap #container .main_mid.new_area .lst_type .day .writer {
+    font-weight: normal;
+    padding-left: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+.v_signalStreng.globalStock #wrap #container .main_mid.new_area .btn_more a {
+	display: block;
+    border: 1px solid #BEBCCB;
+    color: #404fc3;
+    font-size: 0.75rem;    
+    border-radius: 8px;    
+	margin-top: 5px;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 42px;
+}
+
 /* 하단 막대 차트 */
 .v_signalStreng.globalStock #wrap #container .mainBox.financials {
 	background-color: #fff;
@@ -36642,6 +36737,201 @@ body.v_signalStreng  {
 .globalStock .sub_top .txt_box {
 	background-color: #F5F5F9;	
 }
+.globalStock .return_sum {
+	display: flex;
+	margin: 15px 16px 35px;
+	padding: 20px 20px;
+	border-radius: 15px;
+	background-color: #f7f8f9;	
+}
+.globalStock .return_sum .line {
+	flex: 1 1 50%;
+	text-align: center;
+}
+.globalStock .return_sum .line .th {
+	font-size: 0.8125rem;
+	font-weight: 500;	
+	color: #6a727b;
+	padding-bottom: 5px;
+}
+.globalStock .return_sum .line .td .increase {
+	font-size: 1.25rem;
+    font-weight: 500;    
+    color: #FF2929;
+}
+.globalStock .return_sum .line .td .decrease {	
+	font-size: 1rem;
+    font-weight: 500;
+	color: #26ABFF;
+}
+.globalStock .return_sum .line .td .cunt {
+	font-size: 1.25rem;
+    font-weight: bold;    
+    color: #333;
+}
+
+.globalStock .sub_recom .bandchart_sume {
+	background: #fff;
+	padding: 16px 14px;
+	margin-top: 16px;
+}
+
+.globalStock .sub_recom .bandchart_sume .box.info {
+	margin: 0 auto;
+	padding-bottom: 13px;
+	overflow: hidden;
+	border-bottom: 1px solid #e1e1e2;
+}
+
+.globalStock .sub_recom .bandchart_sume .box.info p {
+	font-size: 13px;
+	line-height: 1.54;
+	color: #404fc3;
+	word-break: break-all;
+	word-wrap: break-word;
+	position: relative;
+	padding-left: 18px;
+}
+
+.globalStock .sub_recom .bandchart_sume .box.info p i {
+	display: inline-block;
+	position: absolute;
+	left: 1px;
+	top: 3px;
+	width: 12px;
+	height: 12px;
+	background: url('../img/icon_awesome.svg') no-repeat center center;
+}
+
+.globalStock .sub_recom .bandchart_sume .box.info p a.more {
+	font-size: 10px;
+	color: #404fc3;
+	position: relative;
+	top: -2px;
+	margin-left: 5px;
+	padding-left: 3px;
+	padding-right: 16px;
+	border-bottom: 1px solid #404fc3;
+	width: auto;
+	text-align: left;
+	line-height: normal;
+}
+
+.globalStock .sub_recom .bandchart_sume .box.info p a.more::after {
+	content: '';
+	width: 5px;
+	height: 5px;
+	position: absolute;
+	top: 2px;
+	right: 0;
+	margin: auto;
+	display: inline-block;
+	border-top: 1px solid #424fbc;
+	border-right: 1px solid #424fbc;
+	transform: rotate(135deg);
+}
+
+.globalStock .sub_recom .bandchart_sume .box.sum {
+	padding: 22px 0 0;
+}
+
+.globalStock .sub_recom .bandchart_sume .box.sum .title {
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 1.43;
+	color: #404fc3;
+	width: 100%;
+	padding-left: 0;
+}
+
+.globalStock .sub_recom .bandchart_sume .box.sum .txt {
+	font-size: 13px;
+	line-height: 1.54;
+	color: #333;
+	margin-top: 13px;
+}
+
+.globalStock .sub_recom .bandchart_sume .box.sum ul {
+	margin-top: 12px;
+}
+
+.globalStock .sub_recom .bandchart_sume .box.sum ul li {
+	position: relative;
+	font-size: 13px;
+	line-height: 1.54;
+	color: #333;
+	padding-left: 12px;
+	margin-bottom: 5px;
+}
+
+.globalStock .sub_recom .bandchart_sume .box.sum ul li:last-child {
+	margin-bottom: 0;
+}
+
+.globalStock .sub_recom .bandchart_sume .box.sum ul li::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 8px;
+	display: inline-block;
+	width: 4px;
+	height: 4px;
+	border-radius: 50%;
+	background: #c7cbe9;
+}
+
+.globalStock .sub_recom .bandchart_sume .box.rule {
+	margin-top: 23px;
+	background-color: #f8f8f8;
+	border-radius: 8px;
+	padding: 14px 15px;
+	box-sizing: border-box;
+}
+
+.globalStock .sub_recom .bandchart_sume .box.rule .title {
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 1.43;
+	color: #404fc3;
+	width: 100%;
+	padding-left: 0;
+}
+
+.globalStock .sub_recom .bandchart_sume .box.rule .title {
+	color: #014B8D;
+}
+
+.globalStock .sub_recom .bandchart_sume .box.rule ul {
+	margin-top: 12px;
+}
+
+.globalStock .sub_recom .bandchart_sume .box.rule ul li {
+	position: relative;
+	font-size: 13px;
+	line-height: 1.54;
+	color: #333;
+	padding-left: 12px;
+	margin-bottom: 5px;
+}
+
+.globalStock .sub_recom .bandchart_sume .box.rule ul li:last-child {
+	margin-bottom: 0;
+}
+
+.globalStock .sub_recom .bandchart_sume .box.rule ul li::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 8px;
+	display: inline-block;
+	width: 4px;
+	height: 4px;
+	border-radius: 50%;
+	background: #c7cbe9;
+}
+
+
+
 .globalStock .sub_recom .sub_mid.eventPicks_area .recom_chartList {
 	background-color: #f7f8f9;	
 }
@@ -36657,9 +36947,6 @@ body.v_signalStreng  {
 .globalStock .sub_game .gamePicks_area .game_list .list,
 .globalStock .sub_game .gamePicks_area .game_list .list .game_event {
 	background-color: #f7f8f9;	
-}
-.globalStock .sub_game .gamePicks_area .game_list .list .game_event {
-	
 }
 .globalStock .sub_game .gamePicks_area .game_list .list .game_data {	
 	width: calc(100% - 180px);
@@ -36677,31 +36964,189 @@ body.v_signalStreng  {
 .globalStock .sub_recipe {
 	margin-top: 15px;	
 }
-.globalStock .sub_recipe .sub_mid.recipe_view .recipe_area .tab-container {
+.globalStock .sub_recom .tab-container {
 	margin-top: 16px;		
 }
-.globalStock .sub_recipe .sub_mid.recipe_view .recipe_area .tab-container .tab_btn {
-	/* display: block;     */
+.globalStock .sub_recom .tab-container .tab_btn {	
+	display: flex;
+	align-items: center;
+	gap: 0 8px;
+	padding: 0 15px;	
 }
-.globalStock .sub_recipe .sub_mid.recipe_view .recipe_area .tab-container .tab_span {
+.globalStock .sub_recom .tab-container .tab_span {
+	position: relative;
 	border: none;
 	background-color: transparent;
-	cursor: pointer;
-	padding: 0;	
-	padding: 0 8px;
+	cursor: pointer;	
+	padding: 0 3px 4px;
+	box-sizing: border-box;
     margin: 0;
     border: none;
     display: inline-block;
     width: auto;
     color: #939393;
-    font-size: 0.75rem;
-    line-height: normal;
-	color: #404fc3;
+    font-size: 0.875rem;
+    line-height: normal;		
+}
+.globalStock .sub_recom .recipe_view .tab-container .tab_btn {
+	gap: 0 8px;
+	padding: 0;	
+}
+.globalStock .sub_recom .recipe_view .tab-container .tab_span {
+	display: inline-block;
+	/* padding: 0 8px; */
+}
+.globalStock .sub_recom .tab-container .tab_span .cunt {
+	font-size: 0.75rem;
+	color: #939393;
 }
 
-
+.globalStock .sub_recom .tab-container .tab_span.active::after {
+	content: '';
+	position: absolute;
+	left: 0;	
+	bottom: 0;
+	display: inline-block;
+	width: 100%;
+	height: 2px;	
+	background-color: #404fc3;	
+}
+.globalStock .sub_recom .tab-container .tab_span.active,
+.globalStock .sub_recom .tab-container .tab_span.active .cunt {
+	font-weight: 500;
+	color: #404fc3;			
+}
 .globalStock .sub_recipe .sub_mid.recipe_view .recipe_area .area {
 	background-color: #f7f8f9;	
 }
+.globalStock .sub_recom .sub_mid.eventPicks_area .ptfo_area .day {
+	font-size: 0.8125rem;	
+	top: 4px !important;
+}
+.globalStock .sub_game .gamePicks_area .game_list .guide li {
+	color: #939393;
+	font-size: 0.8125rem;
+}
+.globalStock .sub_game .gamePicks_area .game_list .update_sort {
+	font-size: 0.75rem;
+}
+.globalStock .sub_recipe .sub_mid.recipe_view .update_info {	
+	font-size: 0.8125rem;
+}
 
+/* 검색 - 개요 월정기결제 33,000원 플로팅 팝업 */
+.globalStock .signalpop .bg_gray {	
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0);
+	visibility: hidden;
+	opacity: 0;
+	transition: all 0.25s ease-in-out;
+	z-index: 998;
+}
 
+.globalStock .signalpop.open .bg_gray {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0);
+	transition: all 0.25s ease-in-out;
+	z-index: 999;
+	opacity: 1;
+	visibility: visible;
+}
+
+.globalStock .signalpop .box {
+	box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.1);
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	width: 100%;
+	margin: 0 auto;
+	box-sizing: border-box;
+	display: block;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: #fff;
+	opacity: 0;
+	transition: all 0s ease-in-out;
+	z-index: 999;
+}
+
+.globalStock .signalpop.open .box {
+	display: none;
+	opacity: 1;
+}
+.globalStock .signalpop.monthly_payment .content {	
+	padding: 20px 0 0;
+  	background-image: linear-gradient(to bottom, rgba(77, 110, 228, 0), rgba(77, 110, 228, 0.3) 180%, rgba(77, 110, 228, 0.2));
+}
+.globalStock .signalpop.monthly_payment .content .info_txt {
+	text-align: center;
+	padding: 0;
+	height: 270px;
+	background: none;
+	background: url('../img/monthly_payment.svg') no-repeat center 30px;	
+}
+.globalStock .signalpop.monthly_payment .content .info_txt p {
+	text-align: center;
+}
+.globalStock .signalpop.monthly_payment .content .info_txt p.txt01 {
+	font-size: 18px;
+	font-weight: bold;	
+	color: #c7cbe9;
+}
+
+.globalStock .signalpop.monthly_payment .content .info_txt p.txt02 {
+	margin-top: 20px;
+	font-size: 24px;
+	font-weight: bold;	
+	color: #404fc3;
+}
+.globalStock .signalpop.monthly_payment .ftr {
+	display: flex;
+	justify-content: space-between;	
+	height: 47px;
+}
+
+.globalStock .signalpop.monthly_payment .ftr .btn_close {
+	font-size: 13px;
+	text-align: right;
+	color: #939393;
+}
+.globalStock .signalpop.monthly_payment .ftr .btn_close {
+	cursor: pointer;
+	position: absolute;
+	display: inline-block;
+	padding: 4px;
+	width: 17px;
+	height: 17px;
+	right: 14px;
+	top: 14px;
+	font-size: 0;
+}
+
+.globalStock .signalpop.monthly_payment .ftr .btn_close::before,
+.globalStock .signalpop.monthly_payment .ftr .btn_close::after {
+	content: "";
+	position: absolute;
+	right: 15px;
+	top: 0;
+	height: 22px;
+	width: 2px;
+	background-color: #333;
+}
+
+.globalStock .signalpop.monthly_payment .ftr .btn_close::before {
+	transform: rotate(45deg);
+}
+
+.globalStock .signalpop.monthly_payment .ftr .btn_close::after {
+	transform: rotate(-45deg);
+}
