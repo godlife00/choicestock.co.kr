@@ -1399,7 +1399,7 @@ table.tableRanking td {
 .globalStock .gnb li {
 	flex: 2 1 0;
 	text-align: center;
-	box-sizing: border-box;	
+	box-sizing: border-box;
 }
 
 .globalStock .gnb li a {
@@ -1426,6 +1426,7 @@ table.tableRanking td {
 	flex: 1.5 1 0;
 
 }
+
 .globalStock .gnb li.menu.active::after {
 	display: none;
 }
@@ -8214,15 +8215,17 @@ table.tableRanking td {
 .globalStock .sub_game .gamePicks_area .game_list .guide li.long i {
 	background: #fa663a;
 }
+
 .globalStock .sub_game .gamePicks_area .game_list .update_sort {
-	display: block;	
+	display: block;
 	padding: 5px 3px 0 0;
 	margin-bottom: 10px;
 	color: #939393;
-    font-size: 10px;
+	font-size: 10px;
 	font-weight: 500;
-	text-align: right;	
+	text-align: right;
 }
+
 .globalStock .sub_game .gamePicks_area .game_list .list {
 	background: #fff;
 	border-radius: 10px;
@@ -19072,11 +19075,12 @@ table.tableRanking td {
 	font-size: 0.75rem;
 	line-height: normal;
 }
+
 .globalStock .sub_recipe .sub_mid .update_sort {
-	display: block;	
+	display: block;
 	padding: 5px 3px 0 0;
 	color: #939393;
-    font-size: 10px;
+	font-size: 10px;
 	font-weight: 500;
 	text-align: right;
 }
@@ -19761,14 +19765,15 @@ table.tableRanking td {
 
 .globalStock .sub_research .view_con .mid img {
 	width: calc(100% + 30px) !important;
-    height: auto !important;
-    display: inline-block;
-    margin-bottom: 15px;
-    margin-left: -15px;
+	height: auto !important;
+	display: inline-block;
+	margin-bottom: 15px;
+	margin-left: -15px;
 }
+
 @media (min-width: 320px) and (max-width: 359px) {
 	.globalStock .sub_research .view_con .mid img {
-		width: calc(100% + 20px) !important;		
+		width: calc(100% + 20px) !important;
 		margin-left: -10px;
 	}
 }
@@ -20150,8 +20155,8 @@ table.tableRanking td {
 
 .globalStock .view_con .mid li {
 	font-size: 1.0625rem;
-    line-height: 30px;
-	padding-left: 13px;	
+	line-height: 30px;
+	padding-left: 13px;
 	position: relative;
 }
 
@@ -35054,7 +35059,7 @@ table.tableRanking td {
 }
 
 /* 230829 초스 리뉴얼 개요탭, 추천 */
-body.v_signalStreng  {
+body.v_signalStreng {
 	background-color: #fff;
 }
 
@@ -35067,18 +35072,20 @@ body.v_signalStreng  {
 
 .v_signalStreng.globalStock #header .headerTop {
 	display: flex;
-    justify-content: flex-start;
-    align-items: center;
+	justify-content: flex-start;
+	align-items: center;
 	gap: 10px;
 	height: 54px;
 	box-sizing: border-box;
 	border-bottom: none;
 }
+
 .v_signalStreng.globalStock #header .headerTop .headerLogo {
 	width: 100%;
 	padding-right: 20px;
 	box-sizing: border-box;
 }
+
 .v_signalStreng.globalStock #header .headerTop .go_back {
 	display: inline-block;
 	width: 12px;
@@ -35087,8 +35094,9 @@ body.v_signalStreng  {
 	border-right: 2px solid #333333;
 	transform: rotate(-135deg);
 	border-color: #161b23;
-	font-size: 0;	
+	font-size: 0;
 }
+
 .v_signalStreng.globalStock #header .headerLogo a,
 .v_signalStreng.globalStock #header .headerLogo span {
 	font-size: 17px;
@@ -35098,41 +35106,44 @@ body.v_signalStreng  {
 	padding-right: 8px;
 }
 
-.v_signalStreng.globalStock #header .h_menu {
-	
-}
+.v_signalStreng.globalStock #header .h_menu {}
+
 .v_signalStreng.globalStock #header .h_menu .menu-icon {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-    width: 20px;
-    height: 18px;
-    position: relative;
-    cursor: pointer;
+	width: 20px;
+	height: 18px;
+	position: relative;
+	cursor: pointer;
 }
+
 .v_signalStreng.globalStock #header .h_menu .bar {
-    width: 20px;
-    height: 2px;
-    background-color: #333;    
-    transition: 0.4s;
+	width: 20px;
+	height: 2px;
+	background-color: #333;
+	transition: 0.4s;
 }
+
 .v_signalStreng.globalStock #header .h_menu .menu-icon:hover .bar {
-    background-color: #666;
+	background-color: #666;
 }
 
 .v_signalStreng.globalStock #header.h_sub .headerTop {
 	justify-content: space-between;
 }
+
 .v_signalStreng.globalStock #header.h_sub .headerLogo a,
 .v_signalStreng.globalStock #header.h_sub .headerLogo span {
 	display: inline-block;
 	font-size: 1.25rem;
-	font-weight: bold;	
-	letter-spacing: -0.5px;	
+	font-weight: bold;
+	letter-spacing: -0.5px;
 	color: #161b23;
 
 }
-.v_signalStreng.globalStock #header.h_sub .headerTop .headerLogo {	
+
+.v_signalStreng.globalStock #header.h_sub .headerTop .headerLogo {
 	width: auto;
 	padding: 0;
 	box-sizing: border-box;
@@ -35449,18 +35460,22 @@ body.v_signalStreng  {
 	color: #333;
 	background-color: #fff;
 }
+
 .v_signalStreng.globalStock #wrap #container .mainBox.attr .adequateArea .listWrap .mid .charm_num .signal.hold {
 	/* 보유 */
-	color: #333;	
+	color: #333;
 }
+
 .v_signalStreng.globalStock #wrap #container .mainBox.attr .adequateArea .listWrap .mid .charm_num .signal.buy {
 	/* 매수 */
 	color: #E1305A;
 }
+
 .v_signalStreng.globalStock #wrap #container .mainBox.attr .adequateArea .listWrap .mid .charm_num .signal.sell {
 	/* 매도 */
 	color: #404FC3;
 }
+
 .v_signalStreng.globalStock #wrap #container .mainBox.attr .adequateArea .listWrap .mid .charm_num .signal.waitting {
 	/* 관망 */
 	color: #6A727B;
@@ -35479,60 +35494,67 @@ body.v_signalStreng  {
 .v_signalStreng.globalStock #wrap #container .mainBox.attr .adequateArea .listWrap .mid .charm_num .signal_guide img {
 	display: block;
 }
+
 .v_signalStreng.globalStock #wrap #container .mainBox.attr .adequateArea .listWrap .mid .charm_num .tooltip {
 	display: none;
-    position: absolute;	
-	left: 10px;    
-    top: 20px;
-    padding: 20px;
-    width: 280px;
-    box-sizing: border-box;
-    border-radius: 10px;
-    box-shadow: 0 10px 20px 0 rgba(101, 109, 126, 0.08);
-    border: solid 1px #222;
-    background-color: #fff;
-    z-index: 1;
+	position: absolute;
+	left: 10px;
+	top: 20px;
+	padding: 20px;
+	width: 280px;
+	box-sizing: border-box;
+	border-radius: 10px;
+	box-shadow: 0 10px 20px 0 rgba(101, 109, 126, 0.08);
+	border: solid 1px #222;
+	background-color: #fff;
+	z-index: 1;
 }
+
 .v_signalStreng.globalStock #wrap #container .mainBox.attr .adequateArea .listWrap .mid .charm_num .tooltip .t_title {
 	font-size: 15px;
-    font-weight: 700;
-    color: #333;	
+	font-weight: 700;
+	color: #333;
 }
+
 .v_signalStreng.globalStock #wrap #container .mainBox.attr .adequateArea .listWrap .mid .charm_num .tooltip .txt {
 	display: block;
 	margin-top: 15px;
-    font-size: 13px;
-    line-height: 1.62;
-    color: #656d7e;
+	font-size: 13px;
+	line-height: 1.62;
+	color: #656d7e;
 }
+
 .v_signalStreng.globalStock #wrap #container .mainBox.attr .adequateArea .listWrap .mid .charm_num .tooltip .clse_tooltip {
 	position: absolute;
-    right: 15px;
-    top: 15px;
-    display: inline-block;
-    cursor: pointer;
-    font-size: 0;
-    width: 24px;
-    height: 24px;
+	right: 15px;
+	top: 15px;
+	display: inline-block;
+	cursor: pointer;
+	font-size: 0;
+	width: 24px;
+	height: 24px;
 }
+
 .v_signalStreng.globalStock #wrap #container .mainBox.attr .adequateArea .listWrap .mid .charm_num .tooltip .clse_tooltip::before {
 	content: "";
-    height: 18px;
-    border-left: 2px solid #bfc6d9;
-    position: absolute;
-    transform: rotate(-45deg);
-    top: 5px;
-    left: 12px;
+	height: 18px;
+	border-left: 2px solid #bfc6d9;
+	position: absolute;
+	transform: rotate(-45deg);
+	top: 5px;
+	left: 12px;
 }
+
 .v_signalStreng.globalStock #wrap #container .mainBox.attr .adequateArea .listWrap .mid .charm_num .tooltip .clse_tooltip::after {
-    content: "";
-    height: 18px;
-    border-left: 2px solid #bfc6d9;
-    position: absolute;
-    transform: rotate(45deg);
-    top: 5px;
-    left: 12px;
+	content: "";
+	height: 18px;
+	border-left: 2px solid #bfc6d9;
+	position: absolute;
+	transform: rotate(45deg);
+	top: 5px;
+	left: 12px;
 }
+
 .v_signalStreng.globalStock #wrap #container .mainBox.attr .adequateArea .listWrap .mid .num_bar {
 	flex: 2;
 	flex-basis: calc(100% - 85px);
@@ -35610,7 +35632,7 @@ body.v_signalStreng  {
 	color: #d3d3d3;
 }
 
-#wrap #container.sub_search .mainBox.score {
+.v_signalStreng.globalStock #wrap #container.sub_search .mainBox.score {
 	display: flex;
 	justify-content: space-between;
 	gap: 0 8px;
@@ -35619,7 +35641,7 @@ body.v_signalStreng  {
 	background-color: #fff;
 }
 
-#wrap #container.sub_search .mainBox.score .box {
+.v_signalStreng.globalStock #wrap #container.sub_search .mainBox.score .box {
 	flex: 1 1 50%;
 	padding: 20px 16px 24px;
 	border-radius: 16px;
@@ -35627,13 +35649,13 @@ body.v_signalStreng  {
 	text-align: center;
 }
 
-#wrap #container.sub_search .mainBox.score .box:hover {
+.v_signalStreng.globalStock #wrap #container.sub_search .mainBox.score .box:hover {
 	position: relative;
 	top: 2px;
 	left: 2px;
 }
 
-#wrap #container.sub_search .mainBox.score .box .title {
+.v_signalStreng.globalStock #wrap #container.sub_search .mainBox.score .box .title {
 	position: relative;
 	display: inline-block;
 	padding-right: 10px;
@@ -35642,7 +35664,7 @@ body.v_signalStreng  {
 	color: #6a727b;
 }
 
-#wrap #container.sub_search .mainBox.score .box .title::after {
+.v_signalStreng.globalStock #wrap #container.sub_search .mainBox.score .box .title::after {
 	content: "";
 	display: inline-block;
 	transform: rotate(45deg);
@@ -35655,7 +35677,7 @@ body.v_signalStreng  {
 	top: 3px;
 }
 
-#wrap #container.sub_search .mainBox.score .box .charm_num {
+.v_signalStreng.globalStock #wrap #container.sub_search .mainBox.score .box .charm_num {
 	display: block;
 	padding: 7px 0;
 	font-size: 1.25rem;
@@ -35664,7 +35686,7 @@ body.v_signalStreng  {
 	color: #333;
 }
 
-#wrap #container.sub_search .mainBox.score .box .charm_ranking {
+.v_signalStreng.globalStock #wrap #container.sub_search .mainBox.score .box .charm_ranking {
 	font-size: 13px;
 	font-weight: normal;
 	font-stretch: normal;
@@ -35675,17 +35697,17 @@ body.v_signalStreng  {
 	color: #6a727b;
 }
 
-#wrap #container.sub_search .mainBox.score .box .charm_ranking span {
+.v_signalStreng.globalStock #wrap #container.sub_search .mainBox.score .box .charm_ranking span {
 	font-weight: bold;
 }
 
-#wrap #container.sub_search .mainBox.outline {
+.v_signalStreng.globalStock #wrap #container.sub_search .mainBox.outline {
 	margin-top: 32px;
 	padding: 0 16px;
 	background-color: #fff;
 }
 
-#wrap #container.sub_search .mainBox.outline .title {
+.v_signalStreng.globalStock #wrap #container.sub_search .mainBox.outline .title {
 	margin-top: 40px;
 	padding: 0 16px;
 	font-size: 1.25rem;
@@ -35694,48 +35716,48 @@ body.v_signalStreng  {
 	color: var(--cold9e);
 }
 
-#wrap #container.sub_search .mainBox.outline .title span {
+.v_signalStreng.globalStock #wrap #container.sub_search .mainBox.outline .title span {
 	font-size: 1rem;
 	font-weight: normal;
 	letter-spacing: -0.4px;
 	color: var(--col7f8);
 }
 
-#wrap #container.sub_search .mainBox.outline .outline_style {
+.v_signalStreng.globalStock #wrap #container.sub_search .mainBox.outline .outline_style {
 	margin-top: 20px;
 	height: 100%;
 	width: 100%;
 }
 
-#wrap #container.sub_search .mainBox.outline .outline_style .highcharts-navigator-xaxis {
+.v_signalStreng.globalStock #wrap #container.sub_search .mainBox.outline .outline_style .highcharts-navigator-xaxis {
 	font-size: 0;
 	opacity: 0;
 }
 
-#wrap #container.sub_search .mainBox.outline .outline_style .highcharts-input-group,
-#wrap #container.sub_search .mainBox.outline .outline_style .highcharts-range-selector-group,
-#wrap #container.sub_search .mainBox.outline .outline_style .highcharts-navigator {
+.v_signalStreng.globalStock #wrap #container.sub_search .mainBox.outline .outline_style .highcharts-input-group,
+.v_signalStreng.globalStock #wrap #container.sub_search .mainBox.outline .outline_style .highcharts-range-selector-group,
+.v_signalStreng.globalStock #wrap #container.sub_search .mainBox.outline .outline_style .highcharts-navigator {
 	display: none;
 }
 
-#wrap #container.sub_search .mainBox.outline .outline_style .highcharts-point-up {
+.v_signalStreng.globalStock #wrap #container.sub_search .mainBox.outline .outline_style .highcharts-point-up {
 	fill: #dd5257;
 	stroke: #dd5257;
 }
 
-#wrap #container.sub_search .mainBox.outline .outline_style .highcharts-point-down,
-#wrap #container.sub_search .mainBox.outline .outline_style .highcharts-point-down-bearish-up {
+.v_signalStreng.globalStock #wrap #container.sub_search .mainBox.outline .outline_style .highcharts-point-down,
+.v_signalStreng.globalStock #wrap #container.sub_search .mainBox.outline .outline_style .highcharts-point-down-bearish-up {
 	fill: #4d6ee4;
 	stroke: #4d6ee4;
 }
 
-#wrap #container.sub_search .mainBox.outline .bg_box {
+.v_signalStreng.globalStock #wrap #container.sub_search .mainBox.outline .bg_box {
 	box-sizing: border-box;
 	border-radius: 16px;
 	background-color: #F5F5F9;
 }
 
-#wrap #container.sub_search .mainBox.outline .bg_box .data_opinion {
+.v_signalStreng.globalStock #wrap #container.sub_search .mainBox.outline .bg_box .data_opinion {
 	display: flex;
 	align-items: flex-start;
 	justify-content: space-between;
@@ -35743,19 +35765,19 @@ body.v_signalStreng  {
 	gap: 10px;
 }
 
-#wrap #container.sub_search .mainBox.outline .bg_box .data_opinion .line .th {
+.v_signalStreng.globalStock #wrap #container.sub_search .mainBox.outline .bg_box .data_opinion .line .th {
 	font-size: 0.8125rem;
 	line-height: 1.42;
 	color: #6A727B;
 }
 
-#wrap #container.sub_search .mainBox.outline .bg_box .data_opinion .line .th .regday {
+.v_signalStreng.globalStock #wrap #container.sub_search .mainBox.outline .bg_box .data_opinion .line .th .regday {
 	font-size: 10px;
 	line-height: 1.42;
 	color: #6A727B;
 }
 
-#wrap #container.sub_search .mainBox.outline .bg_box .data_opinion .line .td {
+.v_signalStreng.globalStock #wrap #container.sub_search .mainBox.outline .bg_box .data_opinion .line .td {
 	margin-top: 5px;
 	position: relative;
 	font-size: 1rem;
@@ -35765,12 +35787,12 @@ body.v_signalStreng  {
 	color: #363F4B;
 }
 
-#wrap #container.sub_search .mainBox.outline .bg_box .data_opinion .line .td b {
+.v_signalStreng.globalStock #wrap #container.sub_search .mainBox.outline .bg_box .data_opinion .line .td b {
 	font-weight: 700;
 	color: #363F4B;
 }
 
-#wrap #container.sub_search .mainBox.outline .bg_box .data_opinion .line .td .unit {
+.v_signalStreng.globalStock #wrap #container.sub_search .mainBox.outline .bg_box .data_opinion .line .td .unit {
 	display: block;
 	font-weight: 300;
 	font-size: 10px;
@@ -35778,7 +35800,7 @@ body.v_signalStreng  {
 	color: #969EA7;
 }
 
-#wrap #container.sub_search .mainBox.outline .bg_box .data_opinion .line .td .ibox {
+.v_signalStreng.globalStock #wrap #container.sub_search .mainBox.outline .bg_box .data_opinion .line .td .ibox {
 	display: inline-flex;
 	justify-content: center;
 	align-items: center;
@@ -35790,66 +35812,66 @@ body.v_signalStreng  {
 	border-radius: 16px;
 }
 
-#wrap #container.sub_search .mainBox.outline .bg_box .data_opinion .line .td .ibox.str {
+.v_signalStreng.globalStock #wrap #container.sub_search .mainBox.outline .bg_box .data_opinion .line .td .ibox.str {
 	background-color: #dd5257;
 }
 
-#wrap #container.sub_search .mainBox.outline .bg_box .data_opinion .line .td .ibox.bas {
+.v_signalStreng.globalStock #wrap #container.sub_search .mainBox.outline .bg_box .data_opinion .line .td .ibox.bas {
 	background: #C7CCD1;
 }
 
-#wrap #container.sub_search .mainBox.outline .bg_box .data_opinion .line .td .ibox.weak {
+.v_signalStreng.globalStock #wrap #container.sub_search .mainBox.outline .bg_box .data_opinion .line .td .ibox.weak {
 	background-color: #404fc3;
 }
 
-#wrap #container.sub_search .mainBox.outline .bg_box .data_opinion .line .td .increase {
+.v_signalStreng.globalStock #wrap #container.sub_search .mainBox.outline .bg_box .data_opinion .line .td .increase {
 	font-weight: 500;
 	color: #E1305A;
 }
 
-#wrap #container.sub_search .mainBox.outline .bg_box .data_opinion .line .td .increase b {
+.v_signalStreng.globalStock #wrap #container.sub_search .mainBox.outline .bg_box .data_opinion .line .td .increase b {
 	font-weight: 500;
 	color: #E1305A;
 }
 
-#wrap #container.sub_search .mainBox.outline .bg_box .data_opinion .line .td .decrease {
+.v_signalStreng.globalStock #wrap #container.sub_search .mainBox.outline .bg_box .data_opinion .line .td .decrease {
 	font-weight: 500;
 	color: #303FAF;
 }
 
-#wrap #container.sub_search .mainBox.outline .bg_box .data_opinion .line .td .decrease b {
+.v_signalStreng.globalStock #wrap #container.sub_search .mainBox.outline .bg_box .data_opinion .line .td .decrease b {
 	font-weight: 500;
 	color: #303FAF;
 }
 
-#wrap #container.sub_search .mainBox.outline .bg_box .data_opinion .line .td .same {
+.v_signalStreng.globalStock #wrap #container.sub_search .mainBox.outline .bg_box .data_opinion .line .td .same {
 	font-weight: 500;
 	color: #363F4B;
 }
 
-#wrap #container.sub_search .mainBox.outline .bg_box .data_opinion .line .td .same b {
+.v_signalStreng.globalStock #wrap #container.sub_search .mainBox.outline .bg_box .data_opinion .line .td .same b {
 	font-weight: 500;
 	color: #363F4B;
 }
 
-#wrap #container.sub_search .mainBox.outline .bg_box .data_opinion.signal {
+.v_signalStreng.globalStock #wrap #container.sub_search .mainBox.outline .bg_box .data_opinion.signal {
 	position: relative;
 	text-align: center;
 	justify-content: space-around;
 }
 
-#wrap #container.sub_search .mainBox.outline .bg_box .data_opinion.signal .line .th {
+.v_signalStreng.globalStock #wrap #container.sub_search .mainBox.outline .bg_box .data_opinion.signal .line .th {
 	font-size: 0.8125rem;
 	letter-spacing: -0.33px;
 	color: var(--cold9e);
 }
 
-#wrap #container.sub_search .mainBox.outline .bg_box .data_opinion.signal .line .td .increase,
-#wrap #container.sub_search .mainBox.outline .bg_box .data_opinion.signal .line .td .decrease {
+.v_signalStreng.globalStock #wrap #container.sub_search .mainBox.outline .bg_box .data_opinion.signal .line .td .increase,
+.v_signalStreng.globalStock #wrap #container.sub_search .mainBox.outline .bg_box .data_opinion.signal .line .td .decrease {
 	font-size: 1.25rem;
 }
 
-#wrap #container.sub_search .mainBox.outline .bg_box .data_opinion.signal::after {
+.v_signalStreng.globalStock #wrap #container.sub_search .mainBox.outline .bg_box .data_opinion.signal::after {
 	content: "";
 	position: absolute;
 	width: 1px;
@@ -35859,52 +35881,52 @@ body.v_signalStreng  {
 	background-color: var(--colbar);
 }
 
-#wrap #container.sub_search .mainBox.outline .summary {
+.v_signalStreng.globalStock #wrap #container.sub_search .mainBox.outline .summary {
 	position: relative;
 	margin-top: 20px;
 	padding: 0 8px;
 }
 
-#wrap #container.sub_search .mainBox.outline .summary .view_box {
+.v_signalStreng.globalStock #wrap #container.sub_search .mainBox.outline .summary .view_box {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: flex-end;
 }
 
-#wrap #container.sub_search .mainBox.outline .summary p {
+.v_signalStreng.globalStock #wrap #container.sub_search .mainBox.outline .summary p {
 	word-break: break-all;
 	font-size: 0.875rem;
 	line-height: 1.43;
 	color: #333;
 }
 
-#wrap #container.sub_search .mainBox.outline .summary.active p {
+.v_signalStreng.globalStock #wrap #container.sub_search .mainBox.outline .summary.active p {
 	-webkit-line-clamp: initial;
 }
 
-#wrap #container.sub_search .mainBox.outline .summary.active p.txt_line01 {
+.v_signalStreng.globalStock #wrap #container.sub_search .mainBox.outline .summary.active p.txt_line01 {
 	height: 0;
 	visibility: hidden;
 	opacity: 0;
 	transition: visibility 0s, opacity 0.5s linear;
 }
 
-#wrap #container.sub_search .mainBox.outline .summary.active p.txt_line02 {
+.v_signalStreng.globalStock #wrap #container.sub_search .mainBox.outline .summary.active p.txt_line02 {
 	visibility: visible;
 	opacity: 1;
 	height: 100%;
 }
 
-#wrap #container.sub_search .mainBox.outline .summary.active .link_btn span::after {
+.v_signalStreng.globalStock #wrap #container.sub_search .mainBox.outline .summary.active .link_btn span::after {
 	transform: rotate(-45deg);
 }
 
-#wrap #container.sub_search .mainBox.outline .summary .link_btn {
+.v_signalStreng.globalStock #wrap #container.sub_search .mainBox.outline .summary .link_btn {
 	display: inline-block;
 	margin-top: 15px;
 }
 
-#wrap #container.sub_search .mainBox.outline .summary .link_btn span {
+.v_signalStreng.globalStock #wrap #container.sub_search .mainBox.outline .summary .link_btn span {
 	display: flex;
 	align-items: center;
 	gap: 8px;
@@ -35918,7 +35940,7 @@ body.v_signalStreng  {
 	background-color: var(--col1f3);
 }
 
-#wrap #container.sub_search .mainBox.outline .summary .link_btn span::after {
+.v_signalStreng.globalStock #wrap #container.sub_search .mainBox.outline .summary .link_btn span::after {
 	content: "";
 	display: inline-block;
 	width: 8px;
@@ -35932,12 +35954,12 @@ body.v_signalStreng  {
 	border-color: var(--coldae);
 }
 
-#wrap #container.sub_search .banner_signal {
+.v_signalStreng.globalStock #wrap #container.sub_search .banner_signal {
 	position: relative;
 	padding: 30px 16px 40px;
 }
 
-#wrap #container.sub_search .banner_signal::after {
+.v_signalStreng.globalStock #wrap #container.sub_search .banner_signal::after {
 	content: "";
 	position: absolute;
 	bottom: 0;
@@ -35950,49 +35972,54 @@ body.v_signalStreng  {
 	z-index: 1;
 }
 
-#wrap #container.sub_search .banner_signal a,
-#wrap #container.sub_search .banner_signal a img {
+.v_signalStreng.globalStock #wrap #container.sub_search .banner_signal a,
+.v_signalStreng.globalStock #wrap #container.sub_search .banner_signal a img {
 	display: inline-block;
 	width: 100%;
 }
 
 /* 개요 - 뉴스 */
-.v_signalStreng.globalStock #wrap #container .main_mid.new_area {		
-    padding: 0 16px;
+.v_signalStreng.globalStock #wrap #container .main_mid.new_area {
+	padding: 0 16px;
 	margin-bottom: 15px;
 }
+
 .v_signalStreng.globalStock #wrap #container .main_mid.new_area .c_title {
 	font-size: 1.25rem;
-    font-weight: 700;
-    line-height: 1.2;
-    color: #181f29;	
+	font-weight: 700;
+	line-height: 1.2;
+	color: #181f29;
 }
+
 .v_signalStreng.globalStock #wrap #container .main_mid.new_area .lst_type {
-	width: 100%;    
+	width: 100%;
 	margin-top: 15px;
 }
+
 .v_signalStreng.globalStock #wrap #container .main_mid.new_area .lst_type2 {
 	width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: stretch;
-    gap: 15px 15px;
-    padding: 12px 0;
-    box-sizing: border-box;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: stretch;
+	gap: 15px 15px;
+	padding: 12px 0;
+	box-sizing: border-box;
 }
-.v_signalStreng.globalStock #wrap #container .main_mid.new_area .lst_type2 .tit {	
+
+.v_signalStreng.globalStock #wrap #container .main_mid.new_area .lst_type2 .tit {
 	width: 100%;
 	flex: 2;
-	order: 2;	
+	order: 2;
 	display: flex;
-    flex-wrap: wrap;    
+	flex-wrap: wrap;
 	align-content: space-around;
 }
+
 .v_signalStreng.globalStock #wrap #container .main_mid.new_area .lst_type2 .tit a {
 	display: inline-block;
-	color: #333;    
-    font-size: 1rem;
+	color: #333;
+	font-size: 1rem;
 	display: -webkit-box;
 	overflow: hidden;
 	max-height: 2.8em;
@@ -36004,50 +36031,56 @@ body.v_signalStreng  {
 	word-wrap: break-word;
 	word-break: break-all;
 }
-.v_signalStreng.globalStock #wrap #container .main_mid.new_area .lst_type2 dd.photo {		
-	order: 1;	
-    border: 1px solid #E0E4E9;
-    border-radius: 10px;		
+
+.v_signalStreng.globalStock #wrap #container .main_mid.new_area .lst_type2 dd.photo {
+	order: 1;
+	border: 1px solid #E0E4E9;
+	border-radius: 10px;
 	overflow: hidden;
 	box-sizing: border-box;
 	flex-basis: 80px;
-    height: 71px;
+	height: 71px;
 }
+
 .v_signalStreng.globalStock #wrap #container .main_mid.new_area .lst_type dd.photo a {
-	display: inline-block;	
+	display: inline-block;
 	width: 100%;
 	height: 100%;
 }
+
 .v_signalStreng.globalStock #wrap #container .main_mid.new_area .lst_type dd.photo a img {
 	display: inline-block;
 	width: 100%;
 	height: 100%;
 }
-.v_signalStreng.globalStock #wrap #container .main_mid.new_area .lst_type .day {	
+
+.v_signalStreng.globalStock #wrap #container .main_mid.new_area .lst_type .day {
 	display: block;
 	width: 100%;
-	margin-top: 7px;    	
+	margin-top: 7px;
 	color: #939393;
-    font-size: 0.8125rem;
-    padding-right: 10px;	
+	font-size: 0.8125rem;
+	padding-right: 10px;
 	letter-spacing: normal;
 }
+
 .v_signalStreng.globalStock #wrap #container .main_mid.new_area .lst_type .day .writer {
-    font-weight: normal;
-    padding-left: 10px;
-    word-wrap: break-word;
-    word-break: break-all;
+	font-weight: normal;
+	padding-left: 10px;
+	word-wrap: break-word;
+	word-break: break-all;
 }
+
 .v_signalStreng.globalStock #wrap #container .main_mid.new_area .btn_more a {
 	display: block;
-    border: 1px solid #BEBCCB;
-    color: #404fc3;
-    font-size: 0.75rem;    
-    border-radius: 8px;    
+	border: 1px solid #BEBCCB;
+	color: #404fc3;
+	font-size: 0.75rem;
+	border-radius: 8px;
 	margin-top: 5px;
-    box-sizing: border-box;
-    text-align: center;
-    line-height: 42px;
+	box-sizing: border-box;
+	text-align: center;
+	line-height: 42px;
 }
 
 /* 하단 막대 차트 */
@@ -36064,7 +36097,7 @@ body.v_signalStreng  {
 	right: 0;
 	display: block;
 	width: 100%;
-	height: 8px;	
+	height: 8px;
 	z-index: 1;
 }
 
@@ -36463,109 +36496,128 @@ body.v_signalStreng  {
 	border-color: var(--coldae);
 }
 
-.modal.signal_pop01 {
+.v_signalStreng.globalStock #wrap .modal.signal_pop01 {
 	top: 15%;
 }
-.modal.signal_pop01 .pop_header {
-	background-color: #fff;	
+
+.v_signalStreng.globalStock #wrap .modal.signal_pop01 .pop_header {
+	background-color: #fff;
 	padding: 24px 15px;
 	border: none;
 }
-.modal.signal_pop01 .pop_header .pop_title {
+
+.v_signalStreng.globalStock #wrap .modal.signal_pop01 .pop_header .pop_title {
 	justify-content: center;
 	font-size: 1.25rem;
-	font-weight: bold;		
+	font-weight: bold;
 	color: #333;
 }
-.modal.signal_pop01 .pop_header .clse::before,
-.modal.signal_pop01 .pop_header .clse::after {
+
+.v_signalStreng.globalStock #wrap .modal.signal_pop01 .pop_header .clse::before,
+.v_signalStreng.globalStock #wrap .modal.signal_pop01 .pop_header .clse::after {
 	width: 2px;
 	background-color: #333;
 }
-.modal.signal_pop01 .pop_con {
+
+.v_signalStreng.globalStock #wrap .modal.signal_pop01 .pop_con {
 	padding: 0 16px 32px;
 }
-.modal.signal_pop01 .pop_con .txt {
+
+.v_signalStreng.globalStock #wrap .modal.signal_pop01 .pop_con .txt {
 	padding: 2px 0;
-	font-size: 0.875rem;	
+	font-size: 0.875rem;
 	line-height: 1.43;
 	letter-spacing: normal;
-	color: #333;	
+	color: #333;
 }
-.modal.signal_pop01 .pop_con .txt b {
-	font-weight: bold;	
-	color: #333;	
+
+.v_signalStreng.globalStock #wrap .modal.signal_pop01 .pop_con .txt b {
+	font-weight: bold;
+	color: #333;
 }
-.modal.signal_pop01 .pop_con .trading_signal {
+
+.v_signalStreng.globalStock #wrap .modal.signal_pop01 .pop_con .trading_signal {
 	display: flex;
 	flex-direction: column;
 	gap: 12px 0;
 	padding: 17px 10px;
-	margin-top: 8px;  	
+	margin-top: 8px;
 	border-radius: 16px;
 	background-color: #f7f8f9;
 }
-.modal.signal_pop01 .pop_con .trading_signal .list {
+
+.v_signalStreng.globalStock #wrap .modal.signal_pop01 .pop_con .trading_signal .list {
 	display: flex;
-    justify-content: space-around;	
+	justify-content: space-around;
 	margin: 0;
-	width: 100%;	
+	width: 100%;
 }
-.modal.signal_pop01 .pop_con .trading_signal .list li {
+
+.v_signalStreng.globalStock #wrap .modal.signal_pop01 .pop_con .trading_signal .list li {
 	/* flex: 1 1 auto;	 */
 	text-align: center;
 }
-.modal.signal_pop01 .pop_con .trading_signal .list .day {
-	font-size: 0.8125rem;	
+
+.v_signalStreng.globalStock #wrap .modal.signal_pop01 .pop_con .trading_signal .list .day {
+	font-size: 0.8125rem;
 	color: #6a727b;
 	box-sizing: border-box;
 }
-.modal.signal_pop01 .pop_con .trading_signal .list .trends span {
+
+.v_signalStreng.globalStock #wrap .modal.signal_pop01 .pop_con .trading_signal .list .trends span {
 	display: inline-block;
-    justify-content: center;
-    align-items: center;
-    font-size: 0.8125rem;
-    font-weight: 300;
-    letter-spacing: -0.33px !important;
-    color: #fff;
-    padding: 4px 9px;
-    border-radius: 16px;
+	justify-content: center;
+	align-items: center;
+	font-size: 0.8125rem;
+	font-weight: 300;
+	letter-spacing: -0.33px !important;
+	color: #fff;
+	padding: 4px 9px;
+	border-radius: 16px;
 }
-.modal.signal_pop01 .pop_con .trading_signal .list .trends span.ibox.str {
+
+.v_signalStreng.globalStock #wrap .modal.signal_pop01 .pop_con .trading_signal .list .trends span.ibox.str {
 	background-color: #dd5257;
 }
-.modal.signal_pop01 .pop_con .trading_signal .list .trends span.ibox.bas {
+
+.v_signalStreng.globalStock #wrap .modal.signal_pop01 .pop_con .trading_signal .list .trends span.ibox.bas {
 	background: #C7CCD1;
 }
-.modal.signal_pop01 .pop_con .trading_signal .list .trends span.ibox.weak {
+
+.v_signalStreng.globalStock #wrap .modal.signal_pop01 .pop_con .trading_signal .list .trends span.ibox.weak {
 	background-color: #404fc3;
 }
-.modal.signal_pop01 .pop_con .trading_signal .list .signal {
-	font-size: 0.8125rem;	
+
+.v_signalStreng.globalStock #wrap .modal.signal_pop01 .pop_con .trading_signal .list .signal {
+	font-size: 0.8125rem;
 	color: #333;
 	width: 50px;
 	text-align: right;
 }
-.modal.signal_pop01 .pop_con .trading_signal .list .exp_signal {
-	font-size: 0.8125rem;	
-	font-weight: bold;	
+
+.v_signalStreng.globalStock #wrap .modal.signal_pop01 .pop_con .trading_signal .list .exp_signal {
+	font-size: 0.8125rem;
+	font-weight: bold;
 	color: #333;
 	width: 88px;
 	text-align: right;
 }
-.modal.signal_pop01 .pop_con .trading_signal .list .exp_signal.increase {
+
+.v_signalStreng.globalStock #wrap .modal.signal_pop01 .pop_con .trading_signal .list .exp_signal.increase {
 	color: #e1305a;
 }
-.modal.signal_pop01 .pop_con .trading_signal .list .exp_signal.decrease {	
+
+.v_signalStreng.globalStock #wrap .modal.signal_pop01 .pop_con .trading_signal .list .exp_signal.decrease {
 	color: #404fc3;
 }
 
-.modal.signal_pop01 .pop_con .trading_signal .list .exp_signal span {
+.v_signalStreng.globalStock #wrap .modal.signal_pop01 .pop_con .trading_signal .list .exp_signal span {
 	font-size: 0.75rem;
-	font-weight: 500;	
+	font-weight: 500;
 	color: #d3d3d3;
 }
-.blocker {
+
+.v_signalStreng.globalStock .blocker {
 	background-color: rgba(0, 0, 0, 0.4);
 }
 
@@ -36578,63 +36630,74 @@ body.v_signalStreng  {
 	width: 100%;
 	max-width: 767px;
 	height: 55px;
-	box-sizing: border-box;	
+	box-sizing: border-box;
 	background: #fff;
 	z-index: 92;
 	box-shadow: 0 -5px 10px 0 rgba(0, 0, 0, 0.08);
 }
+
 .v_signalStreng.globalStock .gnb .list {
 	display: flex;
 	align-items: center;
-    justify-content: space-around;
+	justify-content: space-around;
 	gap: 0 3px;
 	height: 100%;
 }
+
 .v_signalStreng.globalStock .gnb .list li {
-	flex: 1 1 auto;	
+	flex: 1 1 auto;
 	text-align: center;
 	background: none;
 	padding: 0;
-} 
+}
+
 .v_signalStreng.globalStock .gnb .list li a {
 	display: inline-block;
 	width: 100%;
 	box-sizing: border-box;
 	font-size: 0.75rem;
-	font-weight: 500;		
+	font-weight: 500;
 	color: #404fc3;
 	opacity: 0.5;
 	filter: grayscale(100%);
-    height: auto;
-    line-height: 1;
+	height: auto;
+	line-height: 1;
 }
+
 .v_signalStreng.globalStock .gnb .list li.active a {
 	color: #404fc3;
 	opacity: 1;
 	filter: grayscale(0%)
 }
+
 .v_signalStreng.globalStock .gnb .list li a::before {
 	content: '';
 	display: block;
 	width: 20px;
-	height: 20px;	
+	height: 20px;
 	margin: 0 auto 2px;
 }
-.v_signalStreng.globalStock .gnb .list li.home a::before {	
+
+.v_signalStreng.globalStock .gnb .list li.home a::before {
 	background: url('../img/home_on.svg') no-repeat center center;
 }
-.v_signalStreng.globalStock .gnb .list li.sch a::before {	
+
+.v_signalStreng.globalStock .gnb .list li.sch a::before {
 	background: url('../img/sch_on.svg') no-repeat center center;
 }
-.v_signalStreng.globalStock .gnb .list li.stock a::before {	
+
+.v_signalStreng.globalStock .gnb .list li.stock a::before {
 	background: url('../img/stock_on.svg') no-repeat center center;
 }
-.v_signalStreng.globalStock .gnb .list li.excavation a::before {	
+
+.v_signalStreng.globalStock .gnb .list li.excavation a::before {
 	background: url('../img/excavation_on.svg') no-repeat center center;
 }
-.v_signalStreng.globalStock .gnb .list li.attention a::before {	
+
+.v_signalStreng.globalStock .gnb .list li.attention a::before {
 	background: url('../img/attention_on.svg') no-repeat center center;
 }
+
 .v_signalStreng.globalStock .updata_allList {
 	display: none;
 	/* position: absolute;
@@ -36643,7 +36706,7 @@ body.v_signalStreng  {
 	top: 1px; */
 	position: relative;
 	top: -60px;
-    width: 100%;
+	width: 100%;
 	/* margin-left: -20px;	 */
 	padding: 15px 0;
 	box-sizing: border-box;
@@ -36652,16 +36715,18 @@ body.v_signalStreng  {
 	/* border-radius: 16px;		 */
 	z-index: 99;
 }
-.v_signalStreng.globalStock .updata_allList .txt {	    
-    padding: 2px 0;
-    font-size: 0.875rem;
-    line-height: 1.43;
-    letter-spacing: normal;
-    color: #333;
+
+.v_signalStreng.globalStock .updata_allList .txt {
+	padding: 2px 0;
+	font-size: 0.875rem;
+	line-height: 1.43;
+	letter-spacing: normal;
+	color: #333;
 }
+
 .v_signalStreng.globalStock .updata_allList .txt b {
-    font-weight: bold;
-    color: #333;
+	font-weight: bold;
+	color: #333;
 }
 
 .v_signalStreng.globalStock .updata_allList .trading_signal {
@@ -36669,124 +36734,142 @@ body.v_signalStreng  {
 	flex-direction: column;
 	gap: 12px 0;
 	padding: 17px 10px;
-	margin-top: 8px;  	
-	border-radius: 16px;	
+	margin-top: 8px;
+	border-radius: 16px;
 	background-color: #fff;
 }
+
 .v_signalStreng.globalStock .updata_allList .trading_signal .list {
 	display: flex;
-    justify-content: space-around;	
+	justify-content: space-around;
 	margin: 0;
-	width: 100%;	
+	width: 100%;
 }
+
 .v_signalStreng.globalStock .updata_allList .trading_signal .list li {
 	/* flex: 1 1 auto;	 */
 	text-align: center;
 }
+
 .v_signalStreng.globalStock .updata_allList .trading_signal .list .day {
-	font-size: 0.8125rem;	
+	font-size: 0.8125rem;
 	color: #6a727b;
 	box-sizing: border-box;
 }
+
 .v_signalStreng.globalStock .updata_allList .trading_signal .list .trends span {
 	display: inline-block;
-    justify-content: center;
-    align-items: center;
-    font-size: 0.8125rem;
-    font-weight: 300;
-    letter-spacing: -0.33px !important;
-    color: #fff;
-    padding: 4px 9px;
-    border-radius: 16px;
+	justify-content: center;
+	align-items: center;
+	font-size: 0.8125rem;
+	font-weight: 300;
+	letter-spacing: -0.33px !important;
+	color: #fff;
+	padding: 4px 9px;
+	border-radius: 16px;
 }
+
 .v_signalStreng.globalStock .updata_allList .trading_signal .list .trends span.ibox.str {
 	background-color: #dd5257;
 }
+
 .v_signalStreng.globalStock .updata_allList .trading_signal .list .trends span.ibox.bas {
 	background: #C7CCD1;
 }
+
 .v_signalStreng.globalStock .updata_allList .trading_signal .list .trends span.ibox.weak {
 	background-color: #404fc3;
 }
+
 .v_signalStreng.globalStock .updata_allList .trading_signal .list .signal {
-	font-size: 0.8125rem;	
+	font-size: 0.8125rem;
 	color: #333;
 	width: 50px;
 	text-align: right;
 }
+
 .v_signalStreng.globalStock .updata_allList .trading_signal .list .exp_signal {
-	font-size: 0.8125rem;	
-	font-weight: bold;	
+	font-size: 0.8125rem;
+	font-weight: bold;
 	color: #333;
 	width: 88px;
 	text-align: right;
 }
+
 .v_signalStreng.globalStock .updata_allList .trading_signal .list .exp_signal.increase {
 	color: #e1305a;
 }
-.v_signalStreng.globalStock .updata_allList .trading_signal .list .exp_signal.decrease {	
+
+.v_signalStreng.globalStock .updata_allList .trading_signal .list .exp_signal.decrease {
 	color: #404fc3;
 }
 
 .v_signalStreng.globalStock .updata_allList .trading_signal .list .exp_signal span {
 	font-size: 0.75rem;
-	font-weight: 500;	
+	font-weight: 500;
 	color: #d3d3d3;
 }
 
 .v_signalStreng.globalStock .sub_recom {
 	margin-top: 15px;
 }
-.globalStock .sub_top .txt_box {
-	background-color: #F5F5F9;	
+
+.v_signalStreng.globalStock .sub_top .txt_box {
+	background-color: #F5F5F9;
 }
-.globalStock .return_sum {
+
+.v_signalStreng.globalStock .return_sum {
 	display: flex;
 	margin: 15px 16px 35px;
 	padding: 20px 20px;
 	border-radius: 15px;
-	background-color: #f7f8f9;	
+	background-color: #f7f8f9;
 }
-.globalStock .return_sum .line {
+
+.v_signalStreng.globalStock .return_sum .line {
 	flex: 1 1 50%;
 	text-align: center;
 }
-.globalStock .return_sum .line .th {
+
+.v_signalStreng.globalStock .return_sum .line .th {
 	font-size: 0.8125rem;
-	font-weight: 500;	
+	font-weight: 500;
 	color: #6a727b;
 	padding-bottom: 5px;
 }
-.globalStock .return_sum .line .td .increase {
+
+.v_signalStreng.globalStock .return_sum .line .td .increase {
 	font-size: 1.25rem;
-    font-weight: 500;    
-    color: #FF2929;
-}
-.globalStock .return_sum .line .td .decrease {	
-	font-size: 1rem;
-    font-weight: 500;
-	color: #26ABFF;
-}
-.globalStock .return_sum .line .td .cunt {
-	font-size: 1.25rem;
-    font-weight: bold;    
-    color: #333;
+	font-weight: 500;
+	color: #FF2929;
 }
 
-.globalStock .sub_recom .bandchart_sume {
+.v_signalStreng.globalStock .return_sum .line .td .decrease {
+	font-size: 1rem;
+	font-weight: 500;
+	color: #26ABFF;
+}
+
+.v_signalStreng.globalStock .return_sum .line .td .cunt {
+	font-size: 1.25rem;
+	font-weight: bold;
+	color: #333;
+}
+
+.v_signalStreng.globalStock .sub_recom .bandchart_sume {
 	background: #fff;
 	padding: 16px 14px;
 	margin-top: 16px;
 }
 
-.globalStock .sub_recom .bandchart_sume .box.info {
+.v_signalStreng.globalStock .sub_recom .bandchart_sume .box.info {
 	margin: 0 auto;
 	padding-bottom: 13px;
 	overflow: hidden;
 	border-bottom: 1px solid #e1e1e2;
 }
 
-.globalStock .sub_recom .bandchart_sume .box.info p {
+.v_signalStreng.globalStock .sub_recom .bandchart_sume .box.info p {
 	font-size: 13px;
 	line-height: 1.54;
 	color: #404fc3;
@@ -36796,7 +36879,7 @@ body.v_signalStreng  {
 	padding-left: 18px;
 }
 
-.globalStock .sub_recom .bandchart_sume .box.info p i {
+.v_signalStreng.globalStock .sub_recom .bandchart_sume .box.info p i {
 	display: inline-block;
 	position: absolute;
 	left: 1px;
@@ -36806,7 +36889,7 @@ body.v_signalStreng  {
 	background: url('../img/icon_awesome.svg') no-repeat center center;
 }
 
-.globalStock .sub_recom .bandchart_sume .box.info p a.more {
+.v_signalStreng.globalStock .sub_recom .bandchart_sume .box.info p a.more {
 	font-size: 10px;
 	color: #404fc3;
 	position: relative;
@@ -36820,7 +36903,7 @@ body.v_signalStreng  {
 	line-height: normal;
 }
 
-.globalStock .sub_recom .bandchart_sume .box.info p a.more::after {
+.v_signalStreng.globalStock .sub_recom .bandchart_sume .box.info p a.more::after {
 	content: '';
 	width: 5px;
 	height: 5px;
@@ -36834,11 +36917,11 @@ body.v_signalStreng  {
 	transform: rotate(135deg);
 }
 
-.globalStock .sub_recom .bandchart_sume .box.sum {
+.v_signalStreng.globalStock .sub_recom .bandchart_sume .box.sum {
 	padding: 22px 0 0;
 }
 
-.globalStock .sub_recom .bandchart_sume .box.sum .title {
+.v_signalStreng.globalStock .sub_recom .bandchart_sume .box.sum .title {
 	font-size: 14px;
 	font-weight: bold;
 	line-height: 1.43;
@@ -36847,18 +36930,18 @@ body.v_signalStreng  {
 	padding-left: 0;
 }
 
-.globalStock .sub_recom .bandchart_sume .box.sum .txt {
+.v_signalStreng.globalStock .sub_recom .bandchart_sume .box.sum .txt {
 	font-size: 13px;
 	line-height: 1.54;
 	color: #333;
 	margin-top: 13px;
 }
 
-.globalStock .sub_recom .bandchart_sume .box.sum ul {
+.v_signalStreng.globalStock .sub_recom .bandchart_sume .box.sum ul {
 	margin-top: 12px;
 }
 
-.globalStock .sub_recom .bandchart_sume .box.sum ul li {
+.v_signalStreng.globalStock .sub_recom .bandchart_sume .box.sum ul li {
 	position: relative;
 	font-size: 13px;
 	line-height: 1.54;
@@ -36867,11 +36950,11 @@ body.v_signalStreng  {
 	margin-bottom: 5px;
 }
 
-.globalStock .sub_recom .bandchart_sume .box.sum ul li:last-child {
+.v_signalStreng.globalStock .sub_recom .bandchart_sume .box.sum ul li:last-child {
 	margin-bottom: 0;
 }
 
-.globalStock .sub_recom .bandchart_sume .box.sum ul li::before {
+.v_signalStreng.globalStock .sub_recom .bandchart_sume .box.sum ul li::before {
 	content: "";
 	position: absolute;
 	left: 0;
@@ -36883,7 +36966,7 @@ body.v_signalStreng  {
 	background: #c7cbe9;
 }
 
-.globalStock .sub_recom .bandchart_sume .box.rule {
+.v_signalStreng.globalStock .sub_recom .bandchart_sume .box.rule {
 	margin-top: 23px;
 	background-color: #f8f8f8;
 	border-radius: 8px;
@@ -36891,7 +36974,7 @@ body.v_signalStreng  {
 	box-sizing: border-box;
 }
 
-.globalStock .sub_recom .bandchart_sume .box.rule .title {
+.v_signalStreng.globalStock .sub_recom .bandchart_sume .box.rule .title {
 	font-size: 14px;
 	font-weight: bold;
 	line-height: 1.43;
@@ -36900,15 +36983,15 @@ body.v_signalStreng  {
 	padding-left: 0;
 }
 
-.globalStock .sub_recom .bandchart_sume .box.rule .title {
+.v_signalStreng.globalStock .sub_recom .bandchart_sume .box.rule .title {
 	color: #014B8D;
 }
 
-.globalStock .sub_recom .bandchart_sume .box.rule ul {
+.v_signalStreng.globalStock .sub_recom .bandchart_sume .box.rule ul {
 	margin-top: 12px;
 }
 
-.globalStock .sub_recom .bandchart_sume .box.rule ul li {
+.v_signalStreng.globalStock .sub_recom .bandchart_sume .box.rule ul li {
 	position: relative;
 	font-size: 13px;
 	line-height: 1.54;
@@ -36917,11 +37000,11 @@ body.v_signalStreng  {
 	margin-bottom: 5px;
 }
 
-.globalStock .sub_recom .bandchart_sume .box.rule ul li:last-child {
+.v_signalStreng.globalStock .sub_recom .bandchart_sume .box.rule ul li:last-child {
 	margin-bottom: 0;
 }
 
-.globalStock .sub_recom .bandchart_sume .box.rule ul li::before {
+.v_signalStreng.globalStock .sub_recom .bandchart_sume .box.rule ul li::before {
 	content: "";
 	position: absolute;
 	left: 0;
@@ -36935,129 +37018,278 @@ body.v_signalStreng  {
 
 
 
-.globalStock .sub_recom .sub_mid.eventPicks_area .recom_chartList {
-	background-color: #f7f8f9;	
+.v_signalStreng.globalStock .sub_recom .sub_mid.eventPicks_area .recom_chartList {
+	background-color: #f7f8f9;
 }
+
 .v_signalStreng.globalStock .sub_game {
 	margin-top: 15px;
 }
-.globalStock .sub_game .sub_top .txt_box {
+
+.v_signalStreng.globalStock .sub_game .sub_top .txt_box {
 	background-color: #F5F5F9;
 }
-.globalStock .sub_game .gamePicks_area {
+
+.v_signalStreng.globalStock .sub_game .gamePicks_area {
 	background: none;
 }
-.globalStock .sub_game .gamePicks_area .game_list .list,
-.globalStock .sub_game .gamePicks_area .game_list .list .game_event {
-	background-color: #f7f8f9;	
+
+.v_signalStreng.globalStock .sub_game .gamePicks_area .game_list .list,
+.v_signalStreng.globalStock .sub_game .gamePicks_area .game_list .list .game_event {
+	background-color: #f7f8f9;
 }
-.globalStock .sub_game .gamePicks_area .game_list .list .game_data {	
+
+.v_signalStreng.globalStock .sub_game .gamePicks_area .game_list .list .game_data {
 	width: calc(100% - 180px);
 }
+
 @media (min-width: 320px) and (max-width: 359px) {
-	.globalStock .sub_game .gamePicks_area .game_list .list .game_data {	
+	.v_signalStreng.globalStock .sub_game .gamePicks_area .game_list .list .game_data {
 		width: calc(100% - 130px);
 	}
 }
+
 @media (min-width: 360px) and (max-width: 374px) {
-	.globalStock .sub_game .gamePicks_area .game_list .list .game_data {	
+	.v_signalStreng.globalStock .sub_game .gamePicks_area .game_list .list .game_data {
 		width: calc(100% - 155px);
 	}
 }
-.globalStock .sub_recipe {
-	margin-top: 15px;	
+
+.v_signalStreng.globalStock .sub_recipe {
+	margin-top: 15px;
 }
-.globalStock .sub_recom .tab-container {
+
+.v_signalStreng.globalStock .sub_recom .tab-container {
 	position: relative;
-	margin-top: 16px;		
+	margin-top: 16px;
 }
-.globalStock .sub_recom .tab-container .tab_btn {	
+
+.v_signalStreng.globalStock .sub_recom .tab-container .tab_btn {
 	display: flex;
 	align-items: center;
 	gap: 0 8px;
-	padding: 0 15px;	
+	padding: 0 15px;
 }
-.globalStock .sub_recom .tab-container .tab_span {
+
+.v_signalStreng.globalStock .sub_recom .tab-container .tab_span {
 	position: relative;
 	border: none;
 	background-color: transparent;
-	cursor: pointer;	
+	cursor: pointer;
 	padding: 0 3px 4px;
 	box-sizing: border-box;
-    margin: 0;
-    border: none;
-    display: inline-block;
-    width: auto;
-    color: #939393;
-    font-size: 0.875rem;
-    line-height: normal;		
+	margin: 0;
+	border: none;
+	display: inline-block;
+	width: auto;
+	color: #939393;
+	font-size: 0.875rem;
+	line-height: normal;
 }
-.globalStock .sub_recom .recipe_view .tab-container .tab_btn {
+
+.v_signalStreng.globalStock .sub_recom .recipe_view .tab-container .tab_btn {
 	gap: 0 8px;
-	padding: 0;	
+	padding: 0;
 }
-.globalStock .sub_recom .recipe_view .tab-container .tab_span {
+
+.v_signalStreng.globalStock .sub_recom .recipe_view .tab-container .tab_span {
 	display: inline-block;
 	/* padding: 0 8px; */
 }
-.globalStock .sub_recom .tab-container .tab_span .cunt {
+.v_signalStreng.globalStock .sub_recom .recipe_view .tab-container .tab {
+	
+}
+.v_signalStreng.globalStock .sub_recom .tab-container .tab_span .cunt {
 	font-size: 0.75rem;
 	color: #939393;
 }
 
-.globalStock .sub_recom .tab-container .tab_span.active::after {
+.v_signalStreng.globalStock .sub_recom .tab-container .tab_span.active::after {
 	content: '';
 	position: absolute;
-	left: 0;	
+	left: 0;
 	bottom: 0;
 	display: inline-block;
 	width: 100%;
-	height: 2px;	
-	background-color: #404fc3;	
+	height: 2px;
+	background-color: #404fc3;
 }
-.globalStock .sub_recom .tab-container .tab_span.active,
-.globalStock .sub_recom .tab-container .tab_span.active .cunt {
+
+.v_signalStreng.globalStock .sub_recom .tab-container .tab_span.active,
+.v_signalStreng.globalStock .sub_recom .tab-container .tab_span.active .cunt {
 	font-weight: 500;
-	color: #404fc3;			
+	color: #404fc3;
 }
+
 /* 추천 - 매매신호탭 */
-.globalStock .sub_recipe .sub_mid.recipe_view .recipe_area .area {
-	background-color: #f7f8f9;	
+.v_signalStreng.globalStock .sub_recipe .sub_mid.recipe_view .recipe_area .area {
+	display: flex;
+    flex-direction: column;
+	gap: 12px 0;	
 }
-.globalStock .sub_recipe .sub_mid.recipe_view .recipe_area .area .logo_list {
-	
+
+.v_signalStreng.globalStock .sub_recipe .sub_mid.recipe_view .recipe_area .area .logo_list {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	gap: 12px 5px;
+	width: 100%;
+	background-color: #f7f8f9;
+	box-sizing: border-box;
+	padding: 17px 20px;
+	border-radius: 16px;
+}
+
+.v_signalStreng.globalStock .sub_recipe .sub_mid.recipe_view .recipe_area .area .logo_list .title_logo {
+	display: flex;
+	align-items: center;
+	gap: 0 30px;
+}
+
+.v_signalStreng.globalStock .sub_recipe .sub_mid.recipe_view .recipe_area .area .logo_list .title_logo .logo {
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: #fff;
+	background-size: 28px 28px;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.v_signalStreng.globalStock .sub_recipe .sub_mid.recipe_view .recipe_area .area .logo_list .title_logo .logo img {
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+}
+.v_signalStreng.globalStock .sub_recipe .sub_mid.recipe_view .recipe_area .area .logo_list .detail {
+	display: inline-flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+	gap: 4px 5px;
+    max-width: calc(100% - 150px);
+    box-sizing: border-box;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.19;
+    color: #363F4B;		
+}
+.v_signalStreng.globalStock .sub_recipe .sub_mid.recipe_view .recipe_area .area .logo_list .detail .title {
+	width: 100%;	
+}
+.v_signalStreng.globalStock .sub_recipe .sub_mid.recipe_view .recipe_area .area .logo_list .detail .num {
+
+}
+.v_signalStreng.globalStock .sub_recipe .sub_mid.recipe_view .recipe_area .area .logo_list .detail .per {
+	padding: 0;
+}
+.v_signalStreng.globalStock .sub_recipe .sub_mid.recipe_view .recipe_area .area .logo_list .detail .per span {
+	font-size: 0.9375rem;    
+}
+
+.v_signalStreng.globalStock .sub_recipe .sub_mid.recipe_view .recipe_area .area .logo_list .revenue {
+	display: flex;
+    flex-direction: column;
+	gap: 11px 0;
+}
+.v_signalStreng.globalStock .sub_recipe .sub_mid.recipe_view .recipe_area .area .logo_list .revenue .th {
+	font-size: 11px !important;
+    font-weight: 300;
+    letter-spacing: normal;
+    color: #939393;
+}
+
+.v_signalStreng.globalStock .sub_recipe .sub_mid.recipe_view .recipe_area .area .logo_list .revenue .increase.dod {	
+	font-size: 0.875rem;
+	letter-spacing: normal;
+	color: #f00;
+	display: inline-block;
+	background-color: rgba(255, 75, 75, 0.08);
+	border-radius: 3px;
+	text-align: center;
+	font-weight: bold;
+	padding: 5px 4px;
+	width: 70px;
+	box-sizing: border-box;
+}
+
+.v_signalStreng.globalStock .sub_recipe .sub_mid.recipe_view .recipe_area .area .logo_list .revenue .increase.dod b {
+	color: #f00;
+	font-weight: 300;
+}
+
+.v_signalStreng.globalStock .sub_recipe .sub_mid.recipe_view .recipe_area .area .logo_list .revenue .decrease.dod {
+	margin-top: 11px;
+	font-size: 0.875rem;
+	letter-spacing: normal;
+	color: #0062ff;
+	display: inline-block;
+	background-color: rgba(0, 98, 255, 0.08);
+	border-radius: 3px;
+	text-align: center;
+	font-weight: bold;
+	padding: 5px 4px;
+	width: 70px;
+	box-sizing: border-box;
+}
+
+.v_signalStreng.globalStock .sub_recom .sub_mid.eventPicks_area .recom_chartList .chartGoal .revenue .decrease.dod b {
+	color: #0062ff;
+	font-weight: 300;
 }
 
 
+.v_signalStreng.globalStock .sub_recipe .sub_mid.recipe_view .recipe_area .area .logo_list .revenue .dod b {
+	color: #f00;
+	font-weight: 300;
+
+}
+.v_signalStreng.globalStock .sub_recipe .sub_mid.recipe_view .recipe_area .area .logo_list .revenue .increase {
+	color: #FF2929;
+	font-size: 1.125rem;	
+}
+.v_signalStreng.globalStock .sub_recipe .sub_mid.recipe_view .recipe_area .area .logo_list .revenue .decrease {
+	color: #26ABFF;
+	font-size: 1.125rem;
+}
+
+/* 추천 - 승부주 탭 */
 
 
-.globalStock .sub_recom .sub_mid.eventPicks_area .ptfo_area .day {
-	font-size: 0.8125rem;	
+
+
+.v_signalStreng.globalStock .sub_recom .sub_mid.eventPicks_area .ptfo_area .day {
+	font-size: 0.8125rem;
 	top: 4px !important;
 }
-.globalStock .sub_game .gamePicks_area .game_list .guide li {
+
+.v_signalStreng.globalStock .sub_game .gamePicks_area .game_list .guide li {
 	color: #939393;
 	font-size: 0.8125rem;
 }
-.globalStock .sub_game .gamePicks_area .game_list .update_sort {
+
+.v_signalStreng.globalStock .sub_game .gamePicks_area .game_list .update_sort {
 	font-size: 0.75rem;
 }
-.globalStock .sub_recipe .sub_mid.recipe_view .update_info {		
-    display: inline-block;
-    width: 90px;
+
+.v_signalStreng.globalStock .sub_recipe .sub_mid.recipe_view .update_info {
+	display: inline-block;
+	width: 90px;
 	padding: 0;
-    position: absolute;
-    right: 0;
+	position: absolute;
+	right: 0;
 	top: 4px;
-	color: #939393;    
-	font-size: 0.8125rem;    
+	color: #939393;
+	font-size: 0.8125rem;
 }
-.globalStock .sub_recipe .sub_top .txt_box {
+
+.v_signalStreng.globalStock .sub_recipe .sub_top .txt_box {
 	background-color: #F5F5F9;
 }
 
 /* 검색 - 개요 월정기결제 33,000원 플로팅 팝업 */
-.globalStock .signalpop .bg_gray {	
+.v_signalStreng.globalStock .signalpop .bg_gray {
 	width: 100%;
 	height: 100%;
 	position: fixed;
@@ -37070,20 +37302,7 @@ body.v_signalStreng  {
 	z-index: 998;
 }
 
-.globalStock .signalpop.open .bg_gray {
-	width: 100%;
-	height: 100%;
-	position: fixed;
-	top: 0;
-	left: 0;
-	background: rgba(0, 0, 0, 0);
-	transition: all 0.25s ease-in-out;
-	z-index: 999;
-	opacity: 1;
-	visibility: visible;
-}
-
-.globalStock .signalpop .box {
+.v_signalStreng.globalStock .signalpop .box {
 	box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.1);
 	border-top-left-radius: 20px;
 	border-top-right-radius: 20px;
@@ -37101,48 +37320,54 @@ body.v_signalStreng  {
 	z-index: 999;
 }
 
-.globalStock .signalpop.open .box {
+.v_signalStreng.globalStock .signalpop .box {
 	display: none;
 	opacity: 1;
 }
-.globalStock .signalpop.monthly_payment .content {	
+
+.v_signalStreng.globalStock .signalpop.monthly_payment .content {
 	padding: 20px 0 0;
-  	background-image: linear-gradient(to bottom, rgba(77, 110, 228, 0), rgba(77, 110, 228, 0.3) 180%, rgba(77, 110, 228, 0.2));
+	background-image: linear-gradient(to bottom, rgba(77, 110, 228, 0), rgba(77, 110, 228, 0.3) 180%, rgba(77, 110, 228, 0.2));
 }
-.globalStock .signalpop.monthly_payment .content .info_txt {
+
+.v_signalStreng.globalStock .signalpop.monthly_payment .content .info_txt {
 	text-align: center;
 	padding: 0;
 	height: 270px;
 	background: none;
-	background: url('../img/monthly_payment.svg') no-repeat center 30px;	
+	background: url('../img/monthly_payment.svg') no-repeat center 30px;
 }
-.globalStock .signalpop.monthly_payment .content .info_txt p {
+
+.v_signalStreng.globalStock .signalpop.monthly_payment .content .info_txt p {
 	text-align: center;
 }
-.globalStock .signalpop.monthly_payment .content .info_txt p.txt01 {
+
+.v_signalStreng.globalStock .signalpop.monthly_payment .content .info_txt p.txt01 {
 	font-size: 18px;
-	font-weight: bold;	
+	font-weight: bold;
 	color: #c7cbe9;
 }
 
-.globalStock .signalpop.monthly_payment .content .info_txt p.txt02 {
+.v_signalStreng.globalStock .signalpop.monthly_payment .content .info_txt p.txt02 {
 	margin-top: 20px;
 	font-size: 24px;
-	font-weight: bold;	
+	font-weight: bold;
 	color: #404fc3;
 }
-.globalStock .signalpop.monthly_payment .ftr {
+
+.v_signalStreng.globalStock .signalpop.monthly_payment .ftr {
 	display: flex;
-	justify-content: space-between;	
+	justify-content: space-between;
 	height: 47px;
 }
 
-.globalStock .signalpop.monthly_payment .ftr .btn_close {
+.v_signalStreng.globalStock .signalpop.monthly_payment .ftr .btn_close {
 	font-size: 13px;
 	text-align: right;
 	color: #939393;
 }
-.globalStock .signalpop.monthly_payment .ftr .btn_close {
+
+.v_signalStreng.globalStock .signalpop.monthly_payment .ftr .btn_close {
 	cursor: pointer;
 	position: absolute;
 	display: inline-block;
@@ -37154,8 +37379,8 @@ body.v_signalStreng  {
 	font-size: 0;
 }
 
-.globalStock .signalpop.monthly_payment .ftr .btn_close::before,
-.globalStock .signalpop.monthly_payment .ftr .btn_close::after {
+.v_signalStreng.globalStock .signalpop.monthly_payment .ftr .btn_close::before,
+.v_signalStreng.globalStock .signalpop.monthly_payment .ftr .btn_close::after {
 	content: "";
 	position: absolute;
 	right: 15px;
@@ -37165,53 +37390,58 @@ body.v_signalStreng  {
 	background-color: #333;
 }
 
-.globalStock .signalpop.monthly_payment .ftr .btn_close::before {
+.v_signalStreng.globalStock .signalpop.monthly_payment .ftr .btn_close::before {
 	transform: rotate(45deg);
 }
 
-.globalStock .signalpop.monthly_payment .ftr .btn_close::after {
+.v_signalStreng.globalStock .signalpop.monthly_payment .ftr .btn_close::after {
 	transform: rotate(-45deg);
 }
 
-.globalStock .modal.bandchart_sume {
+.v_signalStreng.globalStock .modal.bandchart_sume {
 	background: #fff;
 	padding: 0 16px 32px;
 	top: 15%;
 }
 
-.globalStock .modal.bandchart_sume .pop_header {	
+.v_signalStreng.globalStock .modal.bandchart_sume .pop_header {
 	background-color: #fff;
-    padding: 24px 15px;
-    border: none;
+	padding: 24px 15px;
+	border: none;
 }
-.globalStock .modal.bandchart_sume .pop_header .clse::before,
-.globalStock .modal.bandchart_sume .pop_header .clse::after {
-    width: 2px;
-    background-color: #333;
+
+.v_signalStreng.globalStock .modal.bandchart_sume .pop_header .clse::before,
+.v_signalStreng.globalStock .modal.bandchart_sume .pop_header .clse::after {
+	width: 2px;
+	background-color: #333;
 }
-.globalStock .modal.bandchart_sume .pop_header .pop_title {
+
+.v_signalStreng.globalStock .modal.bandchart_sume .pop_header .pop_title {
 	letter-spacing: -0.05rem;
 	justify-content: center;
-    font-size: 1.25rem;
-    font-weight: bold;
-    color: #333;
+	font-size: 1.25rem;
+	font-weight: bold;
+	color: #333;
 }
+
 @media (min-width:320px) and (max-width:359px) {
-	.globalStock .modal.bandchart_sume {		
-		padding: 0 10px 25px;		
+	.v_signalStreng.globalStock .modal.bandchart_sume {
+		padding: 0 10px 25px;
 	}
-	.globalStock .modal.bandchart_sume .pop_header .pop_title {		
+
+	.v_signalStreng.globalStock .modal.bandchart_sume .pop_header .pop_title {
 		font-size: 1rem;
-	}	
+	}
 }
-.globalStock .modal.bandchart_sume .box.info {
+
+.v_signalStreng.globalStock .modal.bandchart_sume .box.info {
 	margin: 0 auto;
 	padding-bottom: 13px;
 	overflow: hidden;
 	border-bottom: 1px solid #e1e1e2;
 }
 
-.globalStock .modal.bandchart_sume .box.info p {
+.v_signalStreng.globalStock .modal.bandchart_sume .box.info p {
 	font-size: 13px;
 	line-height: 1.54;
 	color: #404fc3;
@@ -37221,7 +37451,7 @@ body.v_signalStreng  {
 	padding-left: 18px;
 }
 
-.globalStock .modal.bandchart_sume .box.info p i {
+.v_signalStreng.globalStock .modal.bandchart_sume .box.info p i {
 	display: inline-block;
 	position: absolute;
 	left: 1px;
@@ -37231,7 +37461,7 @@ body.v_signalStreng  {
 	background: url('../img/icon_awesome.svg') no-repeat center center;
 }
 
-.globalStock .modal.bandchart_sume .box.info p a.more {
+.v_signalStreng.globalStock .modal.bandchart_sume .box.info p a.more {
 	font-size: 10px;
 	color: #404fc3;
 	position: relative;
@@ -37245,7 +37475,7 @@ body.v_signalStreng  {
 	line-height: normal;
 }
 
-.globalStock .modal.bandchart_sume .box.info p a.more::after {
+.v_signalStreng.globalStock .modal.bandchart_sume .box.info p a.more::after {
 	content: '';
 	width: 5px;
 	height: 5px;
@@ -37259,7 +37489,7 @@ body.v_signalStreng  {
 	transform: rotate(135deg);
 }
 
-.globalStock .modal.bandchart_sume .box.sum .title {
+.v_signalStreng.globalStock .modal.bandchart_sume .box.sum .title {
 	font-size: 14px;
 	font-weight: bold;
 	line-height: 1.43;
@@ -37268,17 +37498,17 @@ body.v_signalStreng  {
 	padding-left: 0;
 }
 
-.globalStock .modal.bandchart_sume .box.sum .txt {
+.v_signalStreng.globalStock .modal.bandchart_sume .box.sum .txt {
 	font-size: 13px;
 	line-height: 1.54;
 	color: #333;
 }
 
-.globalStock .modal.bandchart_sume .box.sum ul {
+.v_signalStreng.globalStock .modal.bandchart_sume .box.sum ul {
 	margin-top: 12px;
 }
 
-.globalStock .modal.bandchart_sume .box.sum ul li {
+.v_signalStreng.globalStock .modal.bandchart_sume .box.sum ul li {
 	position: relative;
 	font-size: 13px;
 	line-height: 1.54;
@@ -37287,11 +37517,11 @@ body.v_signalStreng  {
 	margin-bottom: 5px;
 }
 
-.globalStock .modal.bandchart_sume .box.sum ul li:last-child {
+.v_signalStreng.globalStock .modal.bandchart_sume .box.sum ul li:last-child {
 	margin-bottom: 0;
 }
 
-.globalStock .modal.bandchart_sume .box.sum ul li::before {
+.v_signalStreng.globalStock .modal.bandchart_sume .box.sum ul li::before {
 	content: "";
 	position: absolute;
 	left: 0;
@@ -37303,7 +37533,7 @@ body.v_signalStreng  {
 	background: #c7cbe9;
 }
 
-.globalStock .modal.bandchart_sume .box.rule {
+.v_signalStreng.globalStock .modal.bandchart_sume .box.rule {
 	margin-top: 23px;
 	background-color: #f8f8f8;
 	border-radius: 8px;
@@ -37311,7 +37541,7 @@ body.v_signalStreng  {
 	box-sizing: border-box;
 }
 
-.globalStock .modal.bandchart_sume .box.rule .title {
+.v_signalStreng.globalStock .modal.bandchart_sume .box.rule .title {
 	font-size: 14px;
 	font-weight: bold;
 	line-height: 1.43;
@@ -37320,15 +37550,15 @@ body.v_signalStreng  {
 	padding-left: 0;
 }
 
-.globalStock .modal.bandchart_sume .box.rule .title {
+.v_signalStreng.globalStock .modal.bandchart_sume .box.rule .title {
 	color: #014B8D;
 }
 
-.globalStock .modal.bandchart_sume .box.rule ul {
+.v_signalStreng.globalStock .modal.bandchart_sume .box.rule ul {
 	margin-top: 12px;
 }
 
-.globalStock .modal.bandchart_sume .box.rule ul li {
+.v_signalStreng.globalStock .modal.bandchart_sume .box.rule ul li {
 	position: relative;
 	font-size: 13px;
 	line-height: 1.54;
@@ -37337,11 +37567,11 @@ body.v_signalStreng  {
 	margin-bottom: 5px;
 }
 
-.globalStock .modal.bandchart_sume .box.rule ul li:last-child {
+.v_signalStreng.globalStock .modal.bandchart_sume .box.rule ul li:last-child {
 	margin-bottom: 0;
 }
 
-.globalStock .modal.bandchart_sume .box.rule ul li::before {
+.v_signalStreng.globalStock .modal.bandchart_sume .box.rule ul li::before {
 	content: "";
 	position: absolute;
 	left: 0;

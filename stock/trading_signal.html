@@ -103,10 +103,8 @@
 
                     <div class="tab-container">
                         <div class="tab_btn">
-                            <button onclick="openTab('tab1')" class="tab_span">매수종목 <span
-                                    class="cunt">(23건)</span></button>
-                            <button onclick="openTab('tab2')" class="tab_span">매도종목 <span
-                                    class="cunt">(12건)</span></button>
+                            <button data-tab="tab1" class="tab_span active">매수종목 <span class="cunt">(23건)</span></button>
+                            <button data-tab="tab2" class="tab_span">매도종목 <span class="cunt">(12건)</span></button>
                         </div>
 
                         <div id="tab1" class="tab">
@@ -122,15 +120,204 @@
                                         </li>
                                         <li class="detail">
                                             <div class="title">
+                                                <a href="/search/search_outline.html" class="">애플</a>
+                                            </div>
+                                            <div class="num">
+                                                <span>338.25</span>
+                                            </div>
+                                            <div class="per">
+                                                <span class="increase">+3.24% (+2.23%)</span>
+                                                <!-- increase 증가, decrease 감소, 보합은 same -->
+                                            </div>
+                                        </li>
+                                        <li class="revenue">
+                                            <span class="th">최고수익률</span>
+                                            <span class="increase dod">23.99%</span>
+                                            <!-- increase 증가, decrease 감소 -->
+                                        </li>
+                                        
+                                    </ul>
+                                    <ul class="logo_list" onclick="location.href ='/search/search_outline.html'" style="cursor:pointer;">
+                                        <li class="title_logo">
+                                            <span class="logo"><img src="https://uslogo.datahero.co.kr/img/logo/us/mvl/MSFT.svg" alt=""></span>
+                                        </li>
+                                        <li class="detail">
+                                            <div class="title">
                                                 <a href="/search/search_outline.html" class="">마이크로소프트</a>
                                             </div>
                                             <div class="num">
-                                                <span><b>0.</b>47</span>
+                                                <span>338.25</span>
                                             </div>
                                             <div class="per">
-                                                <span class="same">0 (0.00%)</span>
+                                                <span class="decrease">-3.24% (-2.23%)</span>
                                                 <!-- increase 증가, decrease 감소, 보합은 same -->
                                             </div>
+                                        </li>
+                                        <li class="revenue">
+                                            <span class="th">최고수익률</span>
+                                            <span class="decrease dod">-23.99%</span>
+                                            <!-- increase 증가, decrease 감소 -->
+                                        </li>
+                                        
+                                    </ul>
+                                    <ul class="logo_list" onclick="location.href ='/search/search_outline.html'" style="cursor:pointer;">
+                                        <li class="title_logo">
+                                            <span class="logo"><img src="" onerror="this.style.display='none'" alt=""></span>
+                                        </li>
+                                        <li class="detail">
+                                            <div class="title">
+                                                <a href="/search/search_outline.html" class="">마이크로소프트마이크로소프트마이크로소프트마이크로소프트</a>
+                                            </div>
+                                            <div class="num">
+                                                <span>338.25</span>
+                                            </div>
+                                            <div class="per">
+                                                <span class="decrease">-3.24% (-2.23%)</span>
+                                                <!-- increase 증가, decrease 감소, 보합은 same -->
+                                            </div>
+                                        </li>
+                                        <li class="revenue">
+                                            <span class="th">최고수익률</span>
+                                            <span class="decrease dod">-23.99%</span>
+                                            <!-- increase 증가, decrease 감소 -->
+                                        </li>
+                                        
+                                    </ul>
+                                    <ul class="logo_list" onclick="location.href ='/search/search_outline.html'" style="cursor:pointer;">
+                                        <li class="title_logo">
+                                            <span class="logo"><img src="https://uslogo.datahero.co.kr/img/logo/us/mvl/AAPL.svg" alt=""></span>
+                                        </li>
+                                        <li class="detail">
+                                            <div class="title">
+                                                <a href="/search/search_outline.html" class="">마이크로소프트</a>
+                                            </div>
+                                            <div class="num">
+                                                <span>338.25</span>
+                                            </div>
+                                            <div class="per">
+                                                <span class="increase">+3.24% (+2.23%)</span>
+                                                <!-- increase 증가, decrease 감소, 보합은 same -->
+                                            </div>
+                                        </li>
+                                        <li class="revenue">
+                                            <span class="th">최고수익률</span>
+                                            <span class="increase dod">23.99%</span>
+                                            <!-- increase 증가, decrease 감소 -->
+                                        </li>
+                                        
+                                    </ul>
+                                    <ul class="logo_list" onclick="location.href ='/search/search_outline.html'" style="cursor:pointer;">
+                                        <li class="title_logo">
+                                            <span class="logo"><img src="https://uslogo.datahero.co.kr/img/logo/us/mvl/AAPL.svg" alt=""></span>
+                                        </li>
+                                        <li class="detail">
+                                            <div class="title">
+                                                <a href="/search/search_outline.html" class="">마이크로소프트</a>
+                                            </div>
+                                            <div class="num">
+                                                <span>338.25</span>
+                                            </div>
+                                            <div class="per">
+                                                <span class="decrease">-3.24% (-2.23%)</span>
+                                                <!-- increase 증가, decrease 감소, 보합은 same -->
+                                            </div>
+                                        </li>
+                                        <li class="revenue">
+                                            <span class="th">최고수익률</span>
+                                            <span class="decrease dod">-23.99%</span>
+                                            <!-- increase 증가, decrease 감소 -->
+                                        </li>
+                                        
+                                    </ul>
+                                    <ul class="logo_list" onclick="location.href ='/search/search_outline.html'" style="cursor:pointer;">
+                                        <li class="title_logo">
+                                            <span class="logo"><img src="" onerror="this.style.display='none'" alt=""></span>
+                                        </li>
+                                        <li class="detail">
+                                            <div class="title">
+                                                <a href="/search/search_outline.html" class="">마이크로소프트</a>
+                                            </div>
+                                            <div class="num">
+                                                <span>338.25</span>
+                                            </div>
+                                            <div class="per">
+                                                <span class="decrease">-3.24% (-2.23%)</span>
+                                                <!-- increase 증가, decrease 감소, 보합은 same -->
+                                            </div>
+                                        </li>
+                                        <li class="revenue">
+                                            <span class="th">최고수익률</span>
+                                            <span class="decrease dod">-23.99%</span>
+                                            <!-- increase 증가, decrease 감소 -->
+                                        </li>
+                                        
+                                    </ul>
+                                    <ul class="logo_list" onclick="location.href ='/search/search_outline.html'" style="cursor:pointer;">
+                                        <li class="title_logo">
+                                            <span class="logo"><img src="https://uslogo.datahero.co.kr/img/logo/us/mvl/AAPL.svg" alt=""></span>
+                                        </li>
+                                        <li class="detail">
+                                            <div class="title">
+                                                <a href="/search/search_outline.html" class="">마이크로소프트</a>
+                                            </div>
+                                            <div class="num">
+                                                <span>338.25</span>
+                                            </div>
+                                            <div class="per">
+                                                <span class="increase">+3.24% (+2.23%)</span>
+                                                <!-- increase 증가, decrease 감소, 보합은 same -->
+                                            </div>
+                                        </li>
+                                        <li class="revenue">
+                                            <span class="th">최고수익률</span>
+                                            <span class="increase dod">23.99%</span>
+                                            <!-- increase 증가, decrease 감소 -->
+                                        </li>
+                                        
+                                    </ul>
+                                    <ul class="logo_list" onclick="location.href ='/search/search_outline.html'" style="cursor:pointer;">
+                                        <li class="title_logo">
+                                            <span class="logo"><img src="https://uslogo.datahero.co.kr/img/logo/us/mvl/AAPL.svg" alt=""></span>
+                                        </li>
+                                        <li class="detail">
+                                            <div class="title">
+                                                <a href="/search/search_outline.html" class="">마이크로소프트</a>
+                                            </div>
+                                            <div class="num">
+                                                <span>338.25</span>
+                                            </div>
+                                            <div class="per">
+                                                <span class="decrease">-3.24% (-2.23%)</span>
+                                                <!-- increase 증가, decrease 감소, 보합은 same -->
+                                            </div>
+                                        </li>
+                                        <li class="revenue">
+                                            <span class="th">최고수익률</span>
+                                            <span class="decrease dod">-23.99%</span>
+                                            <!-- increase 증가, decrease 감소 -->
+                                        </li>
+                                        
+                                    </ul>
+                                    <ul class="logo_list" onclick="location.href ='/search/search_outline.html'" style="cursor:pointer;">
+                                        <li class="title_logo">
+                                            <span class="logo"><img src="" onerror="this.style.display='none'" alt=""></span>
+                                        </li>
+                                        <li class="detail">
+                                            <div class="title">
+                                                <a href="/search/search_outline.html" class="">마이크로소프트</a>
+                                            </div>
+                                            <div class="num">
+                                                <span>338.25</span>
+                                            </div>
+                                            <div class="per">
+                                                <span class="decrease">-3.24% (-2.23%)</span>
+                                                <!-- increase 증가, decrease 감소, 보합은 same -->
+                                            </div>
+                                        </li>
+                                        <li class="revenue">
+                                            <span class="th">최고수익률</span>
+                                            <span class="decrease dod">-23.99%</span>
+                                            <!-- increase 증가, decrease 감소 -->
                                         </li>
                                         
                                     </ul>
@@ -142,8 +329,108 @@
                         <!-- //tab -->
 
                         <div id="tab2" class="tab">
-                            <h2>탭 2 내용</h2>
-                            <p>이것은 탭 2의 내용입니다.</p>
+                            <p class="update_info">기준 23.07/19</p>
+                            <div class="recipe_area">
+
+                                <!-- 실적발표 -->
+                                <div class="area">
+
+                                    <ul class="logo_list" onclick="location.href ='/search/search_outline.html'" style="cursor:pointer;">
+                                        <li class="title_logo">
+                                            <span class="logo"><img src="https://uslogo.datahero.co.kr/img/logo/us/mvl/AAPL.svg" alt=""></span>
+                                        </li>
+                                        <li class="detail">
+                                            <div class="title">
+                                                <a href="/search/search_outline.html" class="">애플</a>
+                                            </div>
+                                            <div class="num">
+                                                <span>338.25</span>
+                                            </div>
+                                            <div class="per">
+                                                <span class="increase">+3.24% (+2.23%)</span>
+                                                <!-- increase 증가, decrease 감소, 보합은 same -->
+                                            </div>
+                                        </li>
+                                        <li class="revenue">
+                                            <span class="th">최고수익률</span>
+                                            <span class="increase dod">23.99%</span>
+                                            <!-- increase 증가, decrease 감소 -->
+                                        </li>
+                                        
+                                    </ul>
+                                    <ul class="logo_list" onclick="location.href ='/search/search_outline.html'" style="cursor:pointer;">
+                                        <li class="title_logo">
+                                            <span class="logo"><img src="https://uslogo.datahero.co.kr/img/logo/us/mvl/MSFT.svg" alt=""></span>
+                                        </li>
+                                        <li class="detail">
+                                            <div class="title">
+                                                <a href="/search/search_outline.html" class="">마이크로소프트</a>
+                                            </div>
+                                            <div class="num">
+                                                <span>338.25</span>
+                                            </div>
+                                            <div class="per">
+                                                <span class="decrease">-3.24% (-2.23%)</span>
+                                                <!-- increase 증가, decrease 감소, 보합은 same -->
+                                            </div>
+                                        </li>
+                                        <li class="revenue">
+                                            <span class="th">최고수익률</span>
+                                            <span class="decrease dod">-23.99%</span>
+                                            <!-- increase 증가, decrease 감소 -->
+                                        </li>
+                                        
+                                    </ul>
+                                    <ul class="logo_list" onclick="location.href ='/search/search_outline.html'" style="cursor:pointer;">
+                                        <li class="title_logo">
+                                            <span class="logo"><img src="" onerror="this.style.display='none'" alt=""></span>
+                                        </li>
+                                        <li class="detail">
+                                            <div class="title">
+                                                <a href="/search/search_outline.html" class="">마이크로소프트마이크로소프트마이크로소프트마이크로소프트</a>
+                                            </div>
+                                            <div class="num">
+                                                <span>338.25</span>
+                                            </div>
+                                            <div class="per">
+                                                <span class="decrease">-3.24% (-2.23%)</span>
+                                                <!-- increase 증가, decrease 감소, 보합은 same -->
+                                            </div>
+                                        </li>
+                                        <li class="revenue">
+                                            <span class="th">최고수익률</span>
+                                            <span class="decrease dod">-23.99%</span>
+                                            <!-- increase 증가, decrease 감소 -->
+                                        </li>
+                                        
+                                    </ul>
+                                    <ul class="logo_list" onclick="location.href ='/search/search_outline.html'" style="cursor:pointer;">
+                                        <li class="title_logo">
+                                            <span class="logo"><img src="https://uslogo.datahero.co.kr/img/logo/us/mvl/AAPL.svg" alt=""></span>
+                                        </li>
+                                        <li class="detail">
+                                            <div class="title">
+                                                <a href="/search/search_outline.html" class="">마이크로소프트</a>
+                                            </div>
+                                            <div class="num">
+                                                <span>338.25</span>
+                                            </div>
+                                            <div class="per">
+                                                <span class="increase">+3.24% (+2.23%)</span>
+                                                <!-- increase 증가, decrease 감소, 보합은 same -->
+                                            </div>
+                                        </li>
+                                        <li class="revenue">
+                                            <span class="th">최고수익률</span>
+                                            <span class="increase dod">23.99%</span>
+                                            <!-- increase 증가, decrease 감소 -->
+                                        </li>
+                                        
+                                    </ul>
+                                </div>
+                                <!-- //area -->
+                            </div>
+                            <!-- //recipe_area -->
                         </div>
                     </div>
                 </div>
@@ -194,32 +481,23 @@
     </div>
     <!-- //wrap -->
 </body>
-
 <script>
-    function openTab(tabId) {
-        // 모든 탭 숨기기
-        var tabs = document.getElementsByClassName('tab');
-        for (var i = 0; i < tabs.length; i++) {
-            tabs[i].style.display = 'none';
-        }
-
-        // 선택한 탭 보이기
-        document.getElementById(tabId).style.display = 'block';
-
-        // 모든 탭 버튼에서 'active' 클래스 제거
-        var tabButtons = document.getElementsByClassName('tab_span');
-        for (var i = 0; i < tabButtons.length; i++) {
-            tabButtons[i].classList.remove('active');
-        }
-        // 선택한 탭 버튼에 'active' 클래스 추가
-        var activeButton = document.querySelector('[onclick="openTab(\'' + tabId + '\')"]');
-        if (activeButton) {
-            activeButton.classList.add('active');
-        }
-    }
-
-    // 초기에 첫 번째 탭을 열도록 설정
-    openTab('tab1');
+    $(document).ready(function () {
+        // 탭 버튼 클릭 이벤트 핸들러
+        $('.tab_span').click(function () {
+            // 선택한 탭 버튼에 'active' 클래스 추가
+            $(this).addClass('active');
+            
+            // 다른 탭 버튼에서 'active' 클래스 제거
+            $('.tab_span').not(this).removeClass('active');
+            
+            // 탭 내용 숨기기
+            $('.tab').hide();
+            
+            // 선택한 탭 내용 보이기
+            var tabId = $(this).attr('data-tab');
+            $('#' + tabId).fadeIn();
+        });
+    });
 </script>
-
 </html>
