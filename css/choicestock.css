@@ -36559,6 +36559,7 @@ body.v_signalStreng {
 }
 
 .v_signalStreng.globalStock #wrap .modal.signal_pop01 .pop_con .trading_signal .list .day {
+	min-width: 50px;
 	font-size: 0.8125rem;
 	color: #6a727b;
 	box-sizing: border-box;
@@ -36591,7 +36592,7 @@ body.v_signalStreng {
 .v_signalStreng.globalStock #wrap .modal.signal_pop01 .pop_con .trading_signal .list .signal {
 	font-size: 0.8125rem;
 	color: #333;
-	width: 50px;
+	min-width: 50px;
 	text-align: right;
 }
 
