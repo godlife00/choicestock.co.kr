@@ -338,10 +338,18 @@ select {
 body {
 	background: #F4F4F5;
 	max-width: 767px;
-	margin: 0 auto;
+	margin: 0 auto;	
+}
+
+body, #wrap {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	margin: 0; /* body에 대해서는 마진을 0으로 설정 */
 }
 
 #container {
+	flex: 1;
 	padding-bottom: 15px;
 }
 
@@ -22656,11 +22664,24 @@ table.tableRanking td {
 /********************/
 /**** 가입/결제 *****/
 /********************/
+/* 해더 */
+.v_signalStreng.globalStock #header.pay_header {
+	background-color: #404fc3;	
+}
+.v_signalStreng.globalStock #header.pay_header .headerLogo a,
+.v_signalStreng.globalStock #header.pay_header .headerLogo span {
+	color: #fff;
+}
+.v_signalStreng.globalStock #header.pay_header .headerTop .go_back {
+	border-color: #fff;	
+}
+.v_signalStreng.globalStock .sub_payment {
+	background-color: #404fc3;
+}
 /* 2주 무료 이용 신청 인트로 */
-.globalStock .sub_payment.sub_freeguide .sub_top {
+.v_signalStreng.globalStock .sub_payment.sub_freeguide .sub_top {
 	padding: 25px 15px 55px;
 }
-
 .globalStock .sub_payment.sub_freeguide .sub_top.service_t01 {
 	background: #fff url('../img/bg_sub_freeguide.png') no-repeat right bottom;
 	background-size: 100% auto;
