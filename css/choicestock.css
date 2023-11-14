@@ -1124,7 +1124,7 @@ table.tableRanking td {
 	display: inline-block;
 	border: 1px solid #5e5ead;
 	color: #000;
-	font-size: 13px;
+	/* font-size: 13px; */
 	text-align: center;
 	box-sizing: border-box;
 	padding: 11px 5px;
@@ -22682,7 +22682,7 @@ table.tableRanking td {
 	border-color: #fff;	
 }
 /* 서비스 결제 스탭 1 */
-.v_signalStreng.globalStock .sub_payment {
+.v_signalStreng.globalStock .sub_payment.bg_blue {
 	background-color: #404fc3;
 }
 .v_signalStreng.globalStock .sub_payment .serviceStep.step01 .page_sumtop {
@@ -22825,8 +22825,10 @@ table.tableRanking td {
 }
 /* 서비스 결제 정기결제 카드 결제 정보 입력 스탭 2 */
 .v_signalStreng.globalStock .sub_payment .select_payTop {
-	margin-top: 16px;
+	/* margin-top: 16px; */
+	padding-top: 16px;
 	padding-bottom: 24px;
+	background-color: #404fc3;
 }
 .v_signalStreng.globalStock .sub_payment .select_payTop .step_box {	
 	width: calc(100% - 30px);
@@ -22895,7 +22897,7 @@ table.tableRanking td {
 	color: #7983d5;	
 }
 .v_signalStreng.globalStock .sub_payment .payment_guide {
-	padding: 15px 24px;
+	padding: 15px 24px 32px;
 	box-sizing: border-box;
 	background-color: #fff;
 }
@@ -22912,6 +22914,7 @@ table.tableRanking td {
 }
 .v_signalStreng.globalStock .sub_payment .payment_guide .mapage_form {	
 	margin-top: 45px;	
+	padding-left: 0;
 }
 .v_signalStreng.globalStock .sub_payment .payment_guide .mapage_form .form_title {
 	font-size: 1.25rem;
@@ -22923,6 +22926,12 @@ table.tableRanking td {
 	flex-direction: column;
 	gap: 24px 0;
 	margin-top: 24px;
+}
+.v_signalStreng.globalStock .sub_payment .payment_guide .mapage_form .form_wrap .teh_guideTxt {
+	margin-top: 10px;
+	font-size: 0.75rem;
+	line-height: 1.72;	
+	color: #939393;
 }
 .v_signalStreng.globalStock .sub_payment .payment_guide .mapage_form .t_label {
 	display: block;
@@ -22941,7 +22950,9 @@ table.tableRanking td {
 	border: solid 1px #e0e4e9;
 	background-color: #fff;	
 	font-size: 0.875rem;
+	font-weight: bold;
 	color: #333;
+	
 }
 .v_signalStreng.globalStock .sub_payment .payment_guide .mapage_form input[type=number]::placeholder,
 .v_signalStreng.globalStock .sub_payment .payment_guide .mapage_form input[type=text]::placeholder,
@@ -22950,10 +22961,264 @@ table.tableRanking td {
 }
 .v_signalStreng.globalStock .sub_payment .payment_guide .mapage_form .security_info {
 	display: flex;
-
 	gap: 8px 8px;
 }
+.v_signalStreng.globalStock .sub_payment .payment_note {
+	display: flex;
+	flex-direction: column;
+	gap: 24px 10px;	
+	padding: 20px 16px 24px;
+	border-radius: 12px;
+	background-color: #f7f8f9;
+}
+.v_signalStreng.globalStock .sub_payment .payment_note .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.v_signalStreng.globalStock .sub_payment .payment_note .top .show {
+	cursor: pointer;
+    position: relative;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    font-size: 0;
+    width: 7px;
+    height: 12px;    
+}
+.v_signalStreng.globalStock .sub_payment .payment_note .top .show::after {
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    top: 7px;
+    right: 5px;
+    border-top: 1px solid #6a727b;
+    border-right: 1px solid #6a727b;
+}
+.v_signalStreng.globalStock .sub_payment .payment_note .top .show.rotated::after {
+    transform: rotate(135deg);
+}
+.v_signalStreng.globalStock .sub_payment .payment_note .top .show:not(.rotated)::after {
+    transform: rotate(-40deg);
+}
+.v_signalStreng.globalStock .sub_payment .payment_note .top .agree .txt {
+	font-size: 14px;
+	font-weight: bold;	
+	line-height: 1.43;	
+	color: #333;
+}
+.v_signalStreng.globalStock .sub_payment .payment_note .agree .txt {
+	font-size: 14px;
+	color: #6a727b;
+}
+.v_signalStreng.globalStock .sub_payment .payment_note .agree_chk {
+	/* display: flex; */
+    justify-content: space-between;    
+	align-items: center;
+    gap: 10px;
+	padding-left: 4px;
+	box-sizing: border-box;
+	display: none;
+}
+.v_signalStreng.globalStock .sub_payment .payment_note .age_link {
+	cursor: pointer;
+    position: relative;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    font-size: 0;
+    width: 7px;
+    height: 12px;
+}
+.v_signalStreng.globalStock .sub_payment .payment_note .age_link::after {
+	content: "";
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    top: 7px;
+    right: 5px;
+    border-top: 1px solid #aeb4b9;
+    border-right: 1px solid #aeb4b9;
+    transform: rotate(45deg);
+}
+.v_signalStreng.globalStock .sub_payment input.chk_label {
+	display: none;
+	/*checked된 input 바로 다음의 label:before 에 체크 후 CSS 설정*/
+}
 
+.v_signalStreng.globalStock .sub_payment input.chk_label + label {	
+	display: flex;
+	align-items: center;
+    justify-content: flex-start;	
+	gap: 0 8px;
+	position: relative;	
+	cursor: pointer;
+}
+
+.v_signalStreng.globalStock .sub_payment input.chk_label + label:before {
+	content: "";	
+	display: block;	
+	width: 24px;	
+	height: 24px;
+	line-height: 24px;	
+	border-radius: 50%;
+	background: url('../img/checked.svg') no-repeat center top;		
+}
+
+.v_signalStreng.globalStock .sub_payment input.chk_label:checked + label:before {
+	content: "";	
+	border-color: #c4c8cb;	
+	background: url('../img/checked_ch.svg') no-repeat center top;	
+}
+.v_signalStreng.globalStock .sub_payment .payment_note .agree_chk .txt {	
+
+}
+.v_signalStreng.globalStock .sub_payment .payment_note .top .s_txt {
+	width: calc(100% - 34px);
+	font-size: 14px;
+	font-weight: bold;	
+	color: #333;	
+}
+.v_signalStreng.globalStock .sub_payment .payment_note .top input.chk_label + label:before {	
+	border: 1px solid #c4c8cb;
+}
+.v_signalStreng.globalStock .sub_payment .payment_note .top input + label:before {	
+	background-position: center center;
+}
+.v_signalStreng.globalStock .sub_payment .payment_note .top .s_txt,
+.v_signalStreng.globalStock .sub_payment .payment_note .agree_chk .s_txt {
+	display: inline-block;	
+	line-height: 1.42;
+	font-size: 14px;
+	color: #6a727b;
+}
+.v_signalStreng.globalStock .sub_payment .payment_note .agree_chk .txt .agree_txt {
+	display: block;
+	margin-top: 5px;
+	padding-left: 40px;
+	font-size: 12px;	
+	line-height: 1.42;
+	color: #6a727b;
+}
+
+.v_signalStreng.globalStock .sub_payment .btnArea.btn_fix {
+	/* position: fixed;
+	left: 24px;
+	right: 24px;
+    bottom: 65px;     */
+	margin: 0 auto;
+    max-width: 767px;
+    box-sizing: border-box;
+    z-index: 85;
+}
+.v_signalStreng.globalStock .sub_payment .btnArea.payBtn .btn_save {
+	display: block;
+	margin: 24px auto 0;
+  	padding: 19px 0;
+	border-radius: 8px;
+	background-color: #404fc3;
+	font-size: 1rem;
+	font-weight: bold;		
+	color: #fff;
+}
+.v_signalStreng.globalStock .modalBox {
+
+}
+.v_signalStreng.globalStock #wrap .modal.cardBox {
+	top: 15%;
+}
+.v_signalStreng.globalStock #wrap .modal.cardBox .pop_header {
+	padding: 20px 15px !important;
+	border-bottom: 1px solid rgba(77, 110, 228, 0.1) !important;
+}
+.v_signalStreng.globalStock #wrap .modal.cardBox .pop_header .pop_title {
+	justify-content: flex-start !important;
+	font-size: 0.9375rem !important;
+}
+.v_signalStreng.globalStock #wrap .modal.cardBox .pop_header .pop_title::before {
+	content: "";
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background: url('../img/txt_guide_blue.svg') no-repeat center center;
+
+}
+.v_signalStreng.globalStock #wrap .modal.cardBox .pop_con {
+	padding-top: 15px !important;	
+}
+.v_signalStreng.globalStock #wrap .modal.cardBox .pop_con .paypal_title,
+.v_signalStreng.globalStock #wrap .modal.cardBox .pop_con .paypal_title b {
+	font-size: 14px;	
+	line-height: 1.43;	
+	color: #404fc3;
+}
+.v_signalStreng.globalStock #wrap .modal.cardBox .pop_con .paypal_link {
+	margin-top: 12px;
+	margin-bottom: 12px;
+	padding: 16px 16px;
+	border-radius: 8px;
+	background-color: #f7f8f9;	
+	font-size: 13px;	
+	line-height: 1.54;	
+	color: #6a727b;	
+}
+.v_signalStreng.globalStock #wrap .modal.cardBox .pop_con .paypal_link a {	
+	text-decoration: underline;
+	color: #404fc3;	
+}
+.v_signalStreng.globalStock #wrap .modal.cardBox .pop_con .paypal_txt,
+.v_signalStreng.globalStock #wrap .modal.cardBox .pop_con .paypal_step li {	
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 1.46;	
+	color: #6a727b;	
+}
+.v_signalStreng.globalStock #wrap .modal.cardBox .pop_con .paypal_txt b,
+.v_signalStreng.globalStock #wrap .modal.cardBox .pop_con .paypal_step li b {		
+	color: #6a727b;	
+}
+.v_signalStreng.globalStock #wrap .modal.cardBox .pop_con .progress_txt {
+	margin-top: 16px;
+	font-size: 12px;
+	font-weight: 400;	
+	line-height: 1.42;	
+	color: #939393;	
+}
+.v_signalStreng.globalStock #wrap .modal.cardBox .pop_con .paypal_step {
+	display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+	gap: 2px 5px;
+}
+
+.v_signalStreng.globalStock .modalBox .modal.agreePopBox .pop_con {	
+	padding-bottom: 25px;
+}
+.v_signalStreng.globalStock .modalBox .modal.agreePopBox .pop_con .txt {	
+	height: 340px;
+}
+.v_signalStreng.globalStock .modalBox .modal.agreePopBox.box_04 .pop_con .txt {	
+	height: 280px;
+}
+.v_signalStreng.globalStock .modalBox .help_nicepay {
+	display: block;	
+	margin-top: 15px;
+	padding: 16px 16px;
+	border-radius: 8px;
+	background-color: #f7f8f9;
+	font-size: 0.8125rem;	
+	line-height: 1.54;	
+	text-align: center;
+	color: #6a727b;
+}
+.v_signalStreng.globalStock .modalBox .help_nicepay span {	
+	display: inline-block;
+	padding-left: 5px;
+	text-decoration: underline;
+	color: #404fc3;
+}
 
 
 @media (min-width:320px) and (max-width:375px) {
@@ -34973,25 +35238,39 @@ body.v_signalStreng {
 	top: 15%;
 }
 
+.v_signalStreng.globalStock #wrap .modal.cardBox .pop_header,
+.v_signalStreng.globalStock #wrap .modal.agreePopBox .pop_header,
 .v_signalStreng.globalStock #wrap .modal.signal_pop01 .pop_header {
 	background-color: #fff;
 	padding: 24px 15px;
 	border: none;
 }
-
+.v_signalStreng.globalStock #wrap .modal.cardBox .pop_header .pop_title,
+.v_signalStreng.globalStock #wrap .modal.agreePopBox .pop_header .pop_title,
 .v_signalStreng.globalStock #wrap .modal.signal_pop01 .pop_header .pop_title {
 	justify-content: center;
 	font-size: 1.25rem;
+	line-height: 1.14;
 	font-weight: bold;
-	color: #333;
+	color: #333;	
+	padding-right: 40px;
+	box-sizing: border-box;
 }
-
+.v_signalStreng.globalStock #wrap .modal.cardBox .pop_header .pop_title {
+	text-align: left;
+}
+.v_signalStreng.globalStock #wrap .modal.cardBox .pop_header .clse::before,
+.v_signalStreng.globalStock #wrap .modal.cardBox .pop_header .clse::after,
+.v_signalStreng.globalStock #wrap .modal.agreePopBox .pop_header .clse::before,
+.v_signalStreng.globalStock #wrap .modal.agreePopBox .pop_header .clse::after,
 .v_signalStreng.globalStock #wrap .modal.signal_pop01 .pop_header .clse::before,
 .v_signalStreng.globalStock #wrap .modal.signal_pop01 .pop_header .clse::after {
 	width: 2px;
 	background-color: #333;
 }
 
+.v_signalStreng.globalStock #wrap .modal.cardBox .pop_con,
+.v_signalStreng.globalStock #wrap .modal.agreePopBox .pop_con,
 .v_signalStreng.globalStock #wrap .modal.signal_pop01 .pop_con {
 	padding: 0 16px 32px;
 }

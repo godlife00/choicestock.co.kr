@@ -1207,6 +1207,16 @@ $(document).ready(function () {
         $('.blocker').show();
         $('.agreePopBox.box_03').show().addClass('slideUp');
     });
+    $('.age_pop04').on('click', function () {
+        $('.modal').hide().removeClass('slideUp');
+        $('.blocker').show();
+        $('.agreePopBox.box_04').show().addClass('slideUp');
+    });
+    $('.v_signalStreng.globalStock .sub_payment .payment_guide .pay_guideTxt').on('click', function () {        
+        $('.modal').hide().removeClass('slideUp');
+        $('.blocker').show();
+        $('.cardBox.card_overseas_01').show().addClass('slideUp');
+    });
     // 미국주식창 사용안함 팝업
     $('.pop_secession').on('click', function () {        
         $('.modal').hide().removeClass('slideUp');
@@ -1219,10 +1229,16 @@ $(document).ready(function () {
         $('.blocker').show();
         $('.wow_secession2').show().addClass('md-show slideUp');
     });
+    // 모달 팝업 누르면 바디스크롤 막기
+    $('.v_signalStreng.globalStock .sub_payment .payment_note .age_link, .v_signalStreng.globalStock .sub_payment .payment_guide .pay_guideTxt').on('click', function () {
+        $('body').css('overflow', 'hidden');
+    });
     // 모달팝업 - 닫기
     $('.modal .pop_header .clse, .blocker').on('click', function () {
+        $('body').css('overflow', '');
         $('.blocker').hide();
         $('.modal').hide().removeClass('slideUp');
     });
+    
 
 });
