@@ -1230,7 +1230,7 @@ $(document).ready(function () {
         $('.wow_secession2').show().addClass('md-show slideUp');
     });
     // 모달 팝업 누르면 바디스크롤 막기
-    $('.v_signalStreng.globalStock .sub_payment .payment_note .age_link, .v_signalStreng.globalStock .sub_payment .payment_guide .pay_guideTxt').on('click', function () {
+    $('.v_signalStreng.globalStock .sub_payment .serviceStep .subscribe, .v_signalStreng.globalStock .sub_payment .payment_note .age_link, .v_signalStreng.globalStock .sub_payment .payment_guide .pay_guideTxt').on('click', function () {
         $('body').css('overflow', 'hidden');
     });
     // 모달팝업 - 닫기

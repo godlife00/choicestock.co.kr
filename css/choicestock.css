@@ -8,7 +8,7 @@ html {
 	font-size: 16px
 }
 
-@media (min-width:320px) and (max-width:359px) {
+@media (min-width:320px) and (max-width: 358px) {
 	html {
 		font-size: 14px
 	}
@@ -342,16 +342,16 @@ body {
 }
 
 html {
-	display: flex;
+	/* display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    align-content: center;
+    align-content: center; */
 }
 body, #wrap {
-	display: flex;
+	/* display: flex;
 	flex-direction: column;
 	min-height: 100vh;
-	margin: 0; /* body에 대해서는 마진을 0으로 설정 */
+	margin: 0; */
 }
 
 #container {
@@ -2162,7 +2162,7 @@ table.tableRanking td {
 	display: inline-block;
 }
 
-@media (min-width:320px) and (max-width:359px) {
+@media (min-width:320px) and (max-width: 358px) {
 	#footer .notice .foot_info .info_tel_box .sns_kakao img {
 		height: 23px;
 	}
@@ -2433,7 +2433,7 @@ table.tableRanking td {
 	background-size: cover;
 }
 
-@media (min-width:320px) and (max-width:359px) {
+@media (min-width:320px) and (max-width: 358px) {
 	.globalStock .cho_applybtn .btn.btn_apply i {
 		right: calc(50% - 88px);
 		top: 21px;
@@ -2861,7 +2861,7 @@ table.tableRanking td {
 	font-weight: normal;
 }
 
-@media (min-width:320px) and (max-width:359px) {
+@media (min-width:320px) and (max-width: 358px) {
 	.globalStock .main_top.recommend_area .chart_area .chartData .event_name {
 		max-width: 123px;
 	}
@@ -3666,7 +3666,7 @@ table.tableRanking td {
 	display: inline-block;
 }
 
-@media (min-width:320px) and (max-width:359px) {
+@media (min-width:320px) and (max-width: 358px) {
 	.globalStock .main_mid.event_recipe .recipe_tabs li span {
 		font-size: 16px;
 	}
@@ -3981,7 +3981,7 @@ table.tableRanking td {
 	width: 100px;
 }
 
-@media (min-width:320px) and (max-width:359px) {
+@media (min-width:320px) and (max-width: 358px) {
 	.globalStock .main_mid.event_recipe .tab_content .tableth_box table.tableRanking .title.t_short a {
 		width: 100px;
 		font-size: 15px;
@@ -4215,7 +4215,7 @@ table.tableRanking td {
 	box-sizing: border-box;
 }
 
-@media (min-width:320px) and (max-width:359px) {
+@media (min-width:320px) and (max-width: 358px) {
 	.globalStock .main_mid.game_area .list_area {
 		margin: 15px 0;
 	}
@@ -4249,7 +4249,7 @@ table.tableRanking td {
 	white-space: nowrap;
 }
 
-@media (min-width:320px) and (max-width:359px) {
+@media (min-width:320px) and (max-width: 358px) {
 	.globalStock .main_mid.game_area .list_area .area .list .title a {
 		font-size: 15px;
 	}
@@ -4408,7 +4408,7 @@ table.tableRanking td {
 	box-sizing: border-box;
 }
 
-@media (min-width:320px) and (max-width:359px) {
+@media (min-width:320px) and (max-width: 358px) {
 	.globalStock .main_top.recommend_area .recomlist_area {
 		margin: 15px 0;
 	}
@@ -4446,7 +4446,7 @@ table.tableRanking td {
 	vertical-align: text-bottom;
 }
 
-@media (min-width:320px) and (max-width:359px) {
+@media (min-width:320px) and (max-width: 358px) {
 	.globalStock .main_top.recommend_area .recomlist_area .area .list .title a {
 		font-size: 15px;
 	}
@@ -4615,7 +4615,7 @@ table.tableRanking td {
 	margin: 0 auto;
 }
 
-@media (min-width:320px) and (max-width:359px) {
+@media (min-width:320px) and (max-width: 358px) {
 	.globalStock .main_mid.note_area.note_tabs .lst_type {
 		width: 100%;
 	}
@@ -4655,7 +4655,7 @@ table.tableRanking td {
 	display: inline-block;
 }
 
-@media (min-width:320px) and (max-width:359px) {
+@media (min-width:320px) and (max-width: 358px) {
 	.globalStock .main_mid.note_area.note_tabs .tabsArea_note .note_tabs li span {
 		font-size: 16px;
 	}
@@ -4676,7 +4676,7 @@ table.tableRanking td {
 	margin: 13px auto 0;
 }
 
-@media (min-width:320px) and (max-width:359px) {
+@media (min-width:320px) and (max-width: 358px) {
 	.globalStock .main_mid.note_area .lst_type {
 		width: calc(100% - 20px);
 	}
@@ -4884,7 +4884,7 @@ table.tableRanking td {
 	grid-template-columns: auto 80px;
 }
 
-@media (min-width:320px) and (max-width:359px) {
+@media (min-width:320px) and (max-width: 358px) {
 	.globalStock .main_mid.event_anay .area ul.list {
 		grid-template-columns: auto 60px;
 	}
@@ -5265,7 +5265,7 @@ table.tableRanking td {
 	text-align: center;
 }
 
-@media (min-width:320px) and (max-width:359px) {
+@media (min-width:320px) and (max-width: 358px) {
 	.globalStock .main_mid.catch_area .weeks_free .box {
 		grid-template-columns: auto 127px;
 	}
@@ -5694,7 +5694,7 @@ table.tableRanking td {
 	max-width: 170px;
 }
 
-@media (min-width:320px) and (max-width:359px) {
+@media (min-width:320px) and (max-width: 358px) {
 	.globalStock .sub_recom .sub_top .left_area .title {
 		max-width: 140px;
 	}
@@ -6391,7 +6391,7 @@ table.tableRanking td {
 	padding: 17px 10px 10px;
 }
 
-@media (min-width:320px) and (max-width:359px) {
+@media (min-width:320px) and (max-width: 358px) {
 	.globalStock .sub_recom .sub_mid.eventPicks_area .recom_chartList .chartGoal {
 		flex-basis: 154px;
 		max-width: 154px;
@@ -6435,7 +6435,7 @@ table.tableRanking td {
 	vertical-align: top;
 }
 
-@media (min-width:320px) and (max-width:359px) {
+@media (min-width:320px) and (max-width: 358px) {
 	.globalStock .sub_recom .sub_mid.eventPicks_area .recom_chartList .chartGoal .target {
 		width: calc(100% / 2 - 13px);
 	}
@@ -6458,7 +6458,7 @@ table.tableRanking td {
 	height: 22px;
 }
 
-@media (min-width:320px) and (max-width:359px) {
+@media (min-width:320px) and (max-width: 358px) {
 	.globalStock .sub_recom .sub_mid.eventPicks_area .recom_chartList .chartGoal .target .att.prm_lock img {
 		width: 50px;
 	}
@@ -8261,7 +8261,7 @@ table.tableRanking td {
 	vertical-align: top;
 }
 
-@media (min-width:320px) and (max-width:359px) {
+@media (min-width:320px) and (max-width: 358px) {
 	.globalStock .sub_game .gamePicks_area .game_list .list .game_event {
 		width: 107px;
 	}
@@ -8281,7 +8281,7 @@ table.tableRanking td {
 	vertical-align: top;
 }
 
-@media (min-width:320px) and (max-width:359px) {
+@media (min-width:320px) and (max-width: 358px) {
 	.globalStock .sub_game .gamePicks_area .game_list .list .game_data {
 		width: calc(100% - 102px);
 	}
@@ -10709,7 +10709,7 @@ table.tableRanking td {
 	grid-template-columns: auto 140px;
 }
 
-@media (min-width:320px) and (max-width:359px) {
+@media (min-width:320px) and (max-width: 358px) {
 	.globalStock .catch_wrap .weeks_free .box {
 		grid-template-columns: auto 110px;
 	}
@@ -11180,7 +11180,7 @@ table.tableRanking td {
 	word-break: break-all;
 }
 
-@media (min-width:320px) and (max-width:359px) {
+@media (min-width:320px) and (max-width: 358px) {
 	.globalStock .sub_menu .sub_top .login .user_name {
 		max-width: 145px;
 		line-height: 21px;
@@ -11257,7 +11257,7 @@ table.tableRanking td {
 	background-size: auto 26px;
 }
 
-@media (min-width:320px) and (max-width:359px) {
+@media (min-width:320px) and (max-width: 358px) {
 	.globalStock .sub_menu .sub_top .menu_list li:nth-child(1) a {
 		background-position-x: 7px;
 	}
@@ -12027,7 +12027,7 @@ table.tableRanking td {
 	font-size: 0.9rem;
 }
 
-@media (min-width:320px) and (max-width:359px) {
+@media (min-width:320px) and (max-width: 358px) {
 	.globalStock .sub_search .latest_results .tabsArea .one_step.no_bg .txt {
 		font-size: 0.9rem;
 		padding: 0;
@@ -12242,7 +12242,7 @@ table.tableRanking td {
 	grid-template-columns: auto 140px;
 }
 
-@media (min-width:320px) and (max-width:359px) {
+@media (min-width:320px) and (max-width: 358px) {
 	.globalStock .sub_search .latest_results .tabsArea .onestep_sample .weeks_free .box {
 		grid-template-columns: auto 110px;
 	}
@@ -12320,7 +12320,7 @@ table.tableRanking td {
 	margin-bottom: 30px;
 }
 
-@media (min-width:320px) and (max-width:359px) {
+@media (min-width:320px) and (max-width: 358px) {
 	.globalStock .sub_search .latest_results .tabsArea .att_service {
 		padding: 20px 10px;
 	}
@@ -12383,7 +12383,7 @@ table.tableRanking td {
 	grid-template-columns: auto 133px;
 }
 
-@media (min-width:320px) and (max-width:359px) {
+@media (min-width:320px) and (max-width: 358px) {
 	.globalStock .sub_search .latest_results .tabsArea .weeks_free .box {
 		grid-template-columns: auto 119px;
 	}
@@ -12492,7 +12492,7 @@ table.tableRanking td {
 	margin-bottom: 2px;
 }
 
-@media (min-width:320px) and (max-width:359px) {
+@media (min-width:320px) and (max-width: 358px) {
 
 	.globalStock .sub_search .search_top .data_area .title a i.attention,
 	.globalStock .sub_search .search_top .data_area .title .attention {
@@ -12626,7 +12626,7 @@ table.tableRanking td {
 	background: #E6E7F4;
 }
 
-@media (min-width:320px) and (max-width:359px) {
+@media (min-width:320px) and (max-width: 358px) {
 	.globalStock .sub_search .search_top .attention_box::before {
 		left: 10px;
 		width: calc(100% - 20px);
@@ -12641,7 +12641,7 @@ table.tableRanking td {
 	text-align: right;
 }
 
-@media (min-width:320px) and (max-width:359px) {
+@media (min-width:320px) and (max-width: 358px) {
 	.globalStock .sub_search .search_top .attention_box .lately_update {
 		width: 130px;
 	}
@@ -12740,7 +12740,7 @@ table.tableRanking td {
 	background: #E0E4E9;
 }
 
-@media (min-width:320px) and (max-width:359px) {
+@media (min-width:320px) and (max-width: 358px) {
 	.globalStock .sub_search .search_top .attention_box .game_tip::after {
 		left: 38px;
 		height: 16px;
@@ -12898,7 +12898,7 @@ table.tableRanking td {
 	margin-top: 2px;
 }
 
-@media (min-width:320px) and (max-width:359px) {
+@media (min-width:320px) and (max-width: 358px) {
 
 	.globalStock .sub_search .search_top .go_page i.attention,
 	.globalStock .sub_search .search_top .go_page i.attention {
@@ -13118,7 +13118,7 @@ table.tableRanking td {
 	background-size: 8px auto;
 }
 
-@media (min-width:320px) and (max-width:359px) {
+@media (min-width:320px) and (max-width: 358px) {
 	.globalStock .sub_search .tabs_5.prm_tabs li:nth-child(5) {
 		background: url('../img/prm_tabsLock.svg') no-repeat calc(100% - 0px) center;
 		background-size: 8px auto;
@@ -14038,7 +14038,7 @@ table.tableRanking td {
 	grid-template-columns: auto 140px;
 }
 
-@media (min-width:320px) and (max-width:359px) {
+@media (min-width:320px) and (max-width: 358px) {
 	.globalStock .sub_search .sub_mid .tab_diagnosis_area .weeks_free .box {
 		grid-template-columns: auto 110px;
 	}
@@ -14163,7 +14163,7 @@ table.tableRanking td {
 	padding: 0;
 }
 
-@media (min-width:320px) and (max-width:359px) {
+@media (min-width:320px) and (max-width: 358px) {
 	.globalStock .sub_search .sub_mid .tab_diagnosis_area .hiding_box .alloca_star .txt {
 		padding: 0 5px 10px;
 	}
@@ -15140,7 +15140,7 @@ table.tableRanking td {
 	grid-row: 2 / 1;
 }
 
-@media (min-width:320px) and (max-width:359px) {
+@media (min-width:320px) and (max-width: 358px) {
 	.globalStock .sub_search .sub_mid.tabs_area .chart_area.diagnosis {
 		grid-template-columns: 88px auto;
 	}
@@ -15877,7 +15877,7 @@ table.tableRanking td {
 	padding-bottom: 10px;
 }
 
-@media (min-width:320px) and (max-width:359px) {
+@media (min-width:320px) and (max-width: 358px) {
 
 	.globalStock .sub_search .sub_mid .search_financials_area .scroll_table_wrap .scroll_table th:first-child,
 	.globalStock .sub_search .sub_mid .search_financials_area .scroll_table_wrap .scroll_table td:first-child {
@@ -16317,7 +16317,7 @@ table.tableRanking td {
 	grid-template-columns: auto 140px;
 }
 
-@media (min-width:320px) and (max-width:359px) {
+@media (min-width:320px) and (max-width: 358px) {
 	.globalStock .sub_search .sub_mid.tabs_area .alloca_info .info .weeks_free .box {
 		grid-template-columns: auto 110px;
 	}
@@ -18286,7 +18286,7 @@ table.tableRanking td {
 	padding: 94px 6px 17px;
 }
 
-@media (min-width:320px) and (max-width:359px) {
+@media (min-width:320px) and (max-width: 358px) {
 	.globalStock .sub_recipe .sub_mid.recipe_tabs .box_tabs li>a {
 		padding-top: 88px;
 	}
@@ -18513,7 +18513,7 @@ table.tableRanking td {
 	float: right;
 }
 
-@media (min-width:320px) and (max-width:359px) {
+@media (min-width:320px) and (max-width: 358px) {
 	.globalStock .sub_recipe .sub_mid.recipe_view .recipe_area .area ul.list li.trans {
 		display: block;
 		float: none;
@@ -18576,7 +18576,7 @@ table.tableRanking td {
 	vertical-align: middle;
 }
 
-@media (min-width:320px) and (max-width:359px) {
+@media (min-width:320px) and (max-width: 358px) {
 	.globalStock .sub_recipe .sub_mid.recipe_view .recipe_area .area .title a {
 		font-size: 15px;
 	}
@@ -18666,7 +18666,7 @@ table.tableRanking td {
 	display: inline-block;
 }
 
-@media (min-width:320px) and (max-width:359px) {
+@media (min-width:320px) and (max-width: 358px) {
 	.globalStock .sub_recipe .sub_mid.recipe_view .recipe_area .area .num span {
 		font-size: 15px;
 	}
@@ -18730,7 +18730,7 @@ table.tableRanking td {
 	font-weight: normal;
 }
 
-@media (min-width:320px) and (max-width:359px) {
+@media (min-width:320px) and (max-width: 358px) {
 	.globalStock .sub_recipe .sub_mid.recipe_view .recipe_area .area .num .increase:nth-child(2) {
 		padding-top: 3px;
 	}
@@ -18765,7 +18765,7 @@ table.tableRanking td {
 	margin-top: 4px;
 }
 
-@media (min-width:320px) and (max-width:359px) {
+@media (min-width:320px) and (max-width: 358px) {
 	.globalStock .sub_recipe .sub_mid.recipe_view .recipe_area .area .num .update {
 		display: block;
 		float: none;
@@ -18833,7 +18833,7 @@ table.tableRanking td {
 	vertical-align: top;
 }
 
-@media (min-width: 320px) and (max-width: 359px) {
+@media (min-width: 320px) and (max-width: 358px) {
 	.globalStock .sub_recipe .sub_mid.recipe_view .recipe_area .area .analysis_score {
 		width: 150px;
 		padding-right: 5px;
@@ -18919,7 +18919,7 @@ table.tableRanking td {
 	overflow: hidden;
 }
 
-@media (min-width: 320px) and (max-width: 359px) {
+@media (min-width: 320px) and (max-width: 358px) {
 	.globalStock .sub_recipe .sub_mid.recipe_view .recipe_area .area .trans_list {
 		width: calc(100% - 160px);
 		padding-top: 4px;
@@ -18934,7 +18934,7 @@ table.tableRanking td {
 	float: right;
 }
 
-@media (min-width:320px) and (max-width:359px) {
+@media (min-width:320px) and (max-width: 358px) {
 	.globalStock .sub_recipe .sub_mid.recipe_view .recipe_area .area .trans_list li.trans {
 		display: block;
 		float: none;
@@ -19042,7 +19042,7 @@ table.tableRanking td {
 	color: #333;
 }
 
-@media (min-width:320px) and (max-width:359px) {
+@media (min-width:320px) and (max-width: 358px) {
 	.globalStock .sub_recipe .sub_mid.recipe_view .recipe_area .area .analysis_score .attention {
 		font-size: 12px;
 	}
@@ -19103,7 +19103,7 @@ table.tableRanking td {
 	color: #939393;
 }
 
-@media (min-width:320px) and (max-width:359px) {
+@media (min-width:320px) and (max-width: 358px) {
 	.globalStock .sub_recipe .sub_top.recipejump+.sub_mid.recipe_view .recipe_tabs li span {
 		font-size: 12px;
 	}
@@ -19174,7 +19174,7 @@ table.tableRanking td {
 	margin-top: 0;
 }
 
-@media (min-width:320px) and (max-width:359px) {
+@media (min-width:320px) and (max-width: 358px) {
 	.globalStock .sub_recipe .sub_mid.recipe_view .recipe_area .area .analysis_score .game_tip::after {
 		left: 38px;
 		height: 16px;
@@ -19785,7 +19785,7 @@ table.tableRanking td {
 	margin-left: -15px;
 }
 
-@media (min-width: 320px) and (max-width: 359px) {
+@media (min-width: 320px) and (max-width: 358px) {
 	.globalStock .sub_research .view_con .mid img {
 		width: calc(100% + 20px) !important;
 		margin-left: -10px;
@@ -21654,7 +21654,7 @@ table.tableRanking td {
 	max-width: 250px;
 }
 
-@media (min-width:320px) and (max-width:359px) {
+@media (min-width:320px) and (max-width: 358px) {
 	.form_table .item .txt_info {
 		max-width: 200px;
 	}
@@ -22685,6 +22685,9 @@ table.tableRanking td {
 .v_signalStreng.globalStock .sub_payment.bg_blue {
 	background-color: #404fc3;
 }
+.v_signalStreng.globalStock .sub_payment .serviceStep.step01 {
+	padding-top: 16px;
+}
 .v_signalStreng.globalStock .sub_payment .serviceStep.step01 .page_sumtop {
 	background: #3442ab url('../img/page_sumtop_bg.png') no-repeat calc(100% - 15px) center;
 	background-size: auto 68px;
@@ -22692,7 +22695,7 @@ table.tableRanking td {
 	border-top-right-radius: 16px;
 	width: calc(100% - 30px);
 	box-sizing: border-box;
-    margin: 16px auto 0;
+    margin: 0 auto;
 	padding: 25px 25px;
 }
 .v_signalStreng.globalStock .sub_payment .serviceStep.step01 .page_sumtop .txt {	
@@ -22758,7 +22761,7 @@ table.tableRanking td {
 .v_signalStreng.globalStock .sub_payment .serviceStep .step_box .subscribe {			
 	max-width: 160px;		
 }
-.v_signalStreng.globalStock .sub_payment .serviceStep .step_box .subscribe a {
+.v_signalStreng.globalStock .sub_payment .serviceStep .step_box .subscribe span {
 	cursor: pointer;
 	display: inline-flex;	
 	align-items: center;
@@ -22823,6 +22826,71 @@ table.tableRanking td {
 	font-weight: 500;		
 	color: #939393;
 }
+.v_signalStreng.globalStock .sub_payment .mapage_form .payment_note .agree_txt {
+	display: none;
+	font-size: 0.75rem;	
+	line-height: 1.42;	
+	color: #939393;		
+}
+.v_signalStreng.globalStock #wrap .modal.method .pop_con {
+	padding: 0 25px 32px;
+}
+.v_signalStreng.globalStock #wrap .modal.method .method_cho {
+	display: flex;
+	flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+	gap: 17px 8px;
+}
+.v_signalStreng.globalStock #wrap .modal.method .method_cho a {
+	display: flex;
+	flex-direction: column;
+    align-items: center;
+	gap: 10px 0;
+	flex: 1 1 40%;
+	padding: 32px 15px;
+	box-sizing: border-box;
+	border-radius: 16px;
+	border: solid 1px #f4f4f5;
+	background-color: #fff;	
+	font-size: 14px;
+	letter-spacing: 1px;
+	line-height: 1.14;	
+	text-align: center;
+	color: #333;
+}
+.v_signalStreng.globalStock #wrap .modal.method .method_cho a:active {
+	border: 1px solid #404fc3;	
+	color: #404fc3;
+	background-color: #fff;	
+}
+.v_signalStreng.globalStock #wrap .modal.method .method_cho a.method_card::before {
+	content: '';	
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	background: url('../img/method_card.svg') no-repeat center center;
+}
+.v_signalStreng.globalStock #wrap .modal.method .method_cho a.method_card:active:before {	
+	background: url('../img/method_card_on.svg') no-repeat center center;
+}
+.v_signalStreng.globalStock #wrap .modal.method .method_cho a.method_phone::before {
+	content: '';	
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	background: url('../img/method_card.svg') no-repeat center center;
+}
+.v_signalStreng.globalStock #wrap .modal.method .method_cho a.method_phone:active:before {	
+	background: url('../img/method_card_on.svg') no-repeat center center;
+}
+.v_signalStreng.globalStock #wrap .modal.method .method_cho .guide_txt {
+	width: 100%;
+	font-size: 12px;
+	font-weight: 400;	
+	color: #939393;
+}
+
 /* 서비스 결제 정기결제 카드 결제 정보 입력 스탭 2 */
 .v_signalStreng.globalStock .sub_payment .select_payTop {
 	/* margin-top: 16px; */
@@ -22904,7 +22972,10 @@ table.tableRanking td {
 .v_signalStreng.globalStock .sub_payment .payment_guide .pay_guideTxt {
 	font-size: 0.75rem;
 	line-height: 1.72;	
-	color: #939393;
+	color: #939393;	
+}
+.v_signalStreng.globalStock .sub_payment .payment_guide .pay_guideTxt:last-of-type {
+	margin-bottom: 45px;
 }
 .v_signalStreng.globalStock .sub_payment .payment_guide .pay_guideTxt .card_overseas {
 	font-size: 0.75rem;
@@ -22913,7 +22984,7 @@ table.tableRanking td {
 	text-decoration: underline;
 }
 .v_signalStreng.globalStock .sub_payment .payment_guide .mapage_form {	
-	margin-top: 45px;	
+	/* margin-top: 45px;	 */
 	padding-left: 0;
 }
 .v_signalStreng.globalStock .sub_payment .payment_guide .mapage_form .form_title {
@@ -22933,12 +23004,123 @@ table.tableRanking td {
 	line-height: 1.72;	
 	color: #939393;
 }
+.v_signalStreng.globalStock .sub_payment .payment_guide .mapage_form .card_title {
+	display: block;
+    padding-bottom: 8px;
+    font-size: 0.8125rem;
+    font-weight: bold;
+    color: #333;
+}
+.v_signalStreng.globalStock .sub_payment .payment_guide .mapage_form .selectbox {	
+	width: 100%;	
+	height: auto
+}
+.v_signalStreng.globalStock .sub_payment .payment_guide .mapage_form .selectbox:before {
+	background: none;
+	content: "";
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+	top: 37px;
+    right: 15px;
+    border-top: 1px solid #6a727b;
+    border-right: 1px solid #6a727b;
+	transform: rotate(135deg);
+}
+.v_signalStreng.globalStock .sub_payment .payment_guide .mapage_form .selectbox label {
+	top: 21px;
+    left: 0;	
+	width: 100%;
+	height: 42px;	
+	padding: 12px 16px;	
+	box-sizing: border-box;
+	border-radius: 8px;
+	border: solid 1px #e0e4e9;
+	background-color: #fff;	
+	font-size: 0.875rem;
+	font-weight: bold;
+	color: #333;
+}
+.v_signalStreng.globalStock .sub_payment .payment_guide .mapage_form .selectbox .t_label {
+	font-size: 0.875rem;
+	font-weight: normal;
+	line-height: 1.14;	
+	color: #333;
+}
+.v_signalStreng.globalStock .sub_payment .payment_guide .mapage_form .selectbox select {	
+	padding: 0 15px;
+	height: 42px;
+	box-sizing: border-box;
+}
+.v_signalStreng.globalStock .sub_payment .payment_guide .mapage_form .selectbox select option {	
+	display: block;
+	width: 100%;	
+	padding: 12px 16px;	
+	box-sizing: border-box;
+}
+.v_signalStreng.globalStock .sub_payment .payment_guide .mapage_form .check_box {
+	/* display: flex; */
+	position: relative;
+}
+.v_signalStreng.globalStock .sub_payment .payment_guide .mapage_form .check_box input {		
+    /* flex-grow: 1; */
+}
+.v_signalStreng.globalStock .sub_payment .payment_guide .mapage_form .input_check {	
+	position: absolute;
+	right: 1px;
+	top: 1px;
+	cursor: pointer;
+	height: 40px;
+	box-sizing: border-box;
+	padding: 12px 16px;
+  	background-color: #f7f8f9;
+	font-size: 0.875rem;	
+	text-align: center;	
+	color: #6a727b;
+	border-top-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+	border: none;
+}
+.v_signalStreng.globalStock .sub_payment .payment_guide .mapage_form .input_check:focus,
+.v_signalStreng.globalStock .sub_payment .payment_guide .mapage_form .input_check:active {	
+	font-weight: bold;		
+}
+.v_signalStreng.globalStock .sub_payment .payment_guide .mapage_form .couponNumber .check_box {
+	display: none;
+}
+.v_signalStreng.globalStock .sub_payment .payment_guide .mapage_form .couponNumber .t_label {
+	display: inline-block;
+	padding-right: 24px;
+	position: relative;
+}
+.v_signalStreng.globalStock .sub_payment .payment_guide .mapage_form .couponNumber .t_label::after {
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    border-top: 1px solid #6a727b;
+    border-right: 1px solid #6a727b;
+	transform: rotate(-40deg);
+}
+.v_signalStreng.globalStock .sub_payment .payment_guide .mapage_form .couponNumber .t_label.rotated::after {
+	transform: rotate(135deg);	
+	top: 1px;
+}
+
 .v_signalStreng.globalStock .sub_payment .payment_guide .mapage_form .t_label {
 	display: block;
 	padding-bottom: 8px;
 	font-size: 0.8125rem;
 	font-weight: bold;	
 	color: #333;
+}
+.mapage_form input:focus {
+    outline: none; /* 기본 포커스 아웃라인 제거 */
+    border: 1px solid #404fc3 !important; /* 포커스 시 보더 색 변경 */
 }
 .v_signalStreng.globalStock .sub_payment .payment_guide .mapage_form input[type=number],
 .v_signalStreng.globalStock .sub_payment .payment_guide .mapage_form input[type=text],
@@ -22952,12 +23134,30 @@ table.tableRanking td {
 	font-size: 0.875rem;
 	font-weight: bold;
 	color: #333;
+	outline: none;
 	
 }
 .v_signalStreng.globalStock .sub_payment .payment_guide .mapage_form input[type=number]::placeholder,
 .v_signalStreng.globalStock .sub_payment .payment_guide .mapage_form input[type=text]::placeholder,
 .v_signalStreng.globalStock .sub_payment .payment_guide .mapage_form input[type=password]::placeholder {	 	
 	color: #d3d3d3;
+}
+.v_signalStreng.globalStock .sub_payment .payment_guide .mapage_form .error-message {	
+	display: inline-block;
+    margin-top: 10px;
+    font-size: 0.75rem;
+    line-height: 1.72;
+    color: #E1305A;
+}
+.v_signalStreng.globalStock .sub_payment .payment_guide .mapage_form .error-message::before {
+	content: '';
+	vertical-align: middle;
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	background: url('../img/error_msg.svg') no-repeat center center;
+	border-radius: 50%;
+	margin-right: 4px;
 }
 .v_signalStreng.globalStock .sub_payment .payment_guide .mapage_form .security_info {
 	display: flex;
@@ -22998,6 +23198,7 @@ table.tableRanking td {
     border-right: 1px solid #6a727b;
 }
 .v_signalStreng.globalStock .sub_payment .payment_note .top .show.rotated::after {
+	top: 3px;
     transform: rotate(135deg);
 }
 .v_signalStreng.globalStock .sub_payment .payment_note .top .show:not(.rotated)::after {
@@ -23082,10 +23283,14 @@ table.tableRanking td {
 	color: #333;	
 }
 .v_signalStreng.globalStock .sub_payment .payment_note .top input.chk_label + label:before {	
-	border: 1px solid #c4c8cb;
+	border: 1px solid #c4c8cb;	
+}
+.v_signalStreng.globalStock .sub_payment .payment_note .top input.chk_label:checked + label:before {	
+	background-color: #404fc3;
+	background-image: url('../img/checked.svg');	
 }
 .v_signalStreng.globalStock .sub_payment .payment_note .top input + label:before {	
-	background-position: center center;
+	background-position: center center;	
 }
 .v_signalStreng.globalStock .sub_payment .payment_note .top .s_txt,
 .v_signalStreng.globalStock .sub_payment .payment_note .agree_chk .s_txt {
@@ -23219,17 +23424,97 @@ table.tableRanking td {
 	text-decoration: underline;
 	color: #404fc3;
 }
-
-
+/* 결제 완료 */
+.v_signalStreng.globalStock #wrap .sub_payment .pay_complete {
+	padding: 0 18px 65px;
+}
+.v_signalStreng.globalStock #wrap .sub_payment .pay_complete .com_title {	
+	padding: 40px 8px 0;
+	font-size: 1.5rem;
+	font-weight: bold;	
+	line-height: 1.42;		
+	color: #fff;
+}
+.v_signalStreng.globalStock #wrap .sub_payment .pay_complete .payment_guide {
+	display: flex;
+	flex-direction: column;
+	gap: 16px 0;
+	margin-top: 24px;
+	padding: 24px 16px;
+	box-sizing: border-box;
+	border-radius: 16px;
+  	background-color: #fff;	
+}
+.v_signalStreng.globalStock #wrap .sub_payment .pay_complete .payment_guide .guide {
+	display: flex;
+	gap: 0 24px;
+	width: 100%;
+}
+.v_signalStreng.globalStock #wrap .sub_payment .pay_complete .payment_guide .guide .th {
+	flex: 1;	
+	font-size: 0.8125rem;	
+	line-height: 1.15;	
+	color: #6a727b;
+}
+.v_signalStreng.globalStock #wrap .sub_payment .pay_complete .payment_guide .guide .td_txt {
+	flex: 5;	
+	font-size: 0.8125rem;	
+	font-weight: bold;	
+	line-height: 1.2;	
+	text-align: left;
+	color: #333;
+}
+.v_signalStreng.globalStock #wrap .sub_payment .pay_complete .payment_guide .deposit_box {
+	display: flex;
+	flex-direction: column;
+	gap: 5px 0;
+	padding-top: 16px;	
+	border-top: solid 1px #e0e4e9;
+}
+.v_signalStreng.globalStock #wrap .sub_payment .pay_complete .payment_guide .deposit_info {
+	font-size: 0.75rem;
+	font-weight: 400;	
+	line-height: 1.42;	
+	color: #939393;
+}
+.v_signalStreng.globalStock #wrap .sub_payment .pay_complete .payment_guide .guide .event_info {
+	display: block;
+	margin-top: 3px;
+	font-size: 0.75rem;
+	font-weight: 400;	
+	line-height: 1.24;	
+	color: #939393;
+}
+.v_signalStreng.globalStock #wrap .sub_payment .pay_complete .go_myhome {
+	padding-left: 8px;
+	margin-top: 16px;
+	font-size: 0.875rem;	
+	line-height: 1.43;	
+	color: #fff;
+}
+.v_signalStreng.globalStock #wrap .sub_payment .pay_complete .go_myhome a {
+	font-size: 0.875rem;	
+	line-height: 1.43;	
+	color: #fff;
+	text-decoration: underline;
+}
+.v_signalStreng.globalStock #wrap .sub_payment .pay_complete .btn_home {
+	margin-top: 64px;
+	border-radius: 8px;
+  	border: solid 1px #ffffff60;	
+	font-size: 0.9375rem;		
+	font-weight: normal;
+	line-height: 1.2;	
+	color: #fff;
+}
 @media (min-width:320px) and (max-width:375px) {
 	.v_signalStreng.globalStock .sub_payment .serviceStep .step_box {
 		padding: 15px 15px;
 	}
-	.v_signalStreng.globalStock .sub_payment .serviceStep .step_box .subscribe a {
+	.v_signalStreng.globalStock .sub_payment .serviceStep .step_box .subscribe span {
 		padding: 7px 12px 6px;
 		max-width: 50px;
 	}
-
 }
 
 
@@ -23670,7 +23955,7 @@ table.tableRanking td {
 	color: #d9dfe7;
 }
 
-@media (min-width:320px) and (max-width:359px) {
+@media (min-width:320px) and (max-width: 358px) {
 	.globalStock .sub_service .sub_mid .sub_con .payment_area .step_box .payRight {
 		padding: 0 0 12px 10px;
 	}
@@ -24320,7 +24605,7 @@ table.tableRanking td {
 	background-color: #fff;
 }
 
-@media (min-width:320px) and (max-width:359px) {
+@media (min-width:320px) and (max-width: 358px) {
 	.globalStock .sub_service .sub_mid .sub_guide .guide_join {
 		padding: 0 15px;
 	}
@@ -26855,7 +27140,7 @@ table.tableRanking td {
 	font-size: 0.75rem;
 }
 
-@media (min-width:320px) and (max-width:359px) {
+@media (min-width:320px) and (max-width: 358px) {
 	.globalStock .sub_service .alliance_wrap .sub_top.service_t01+.service_guide {
 		letter-spacing: -0.035rem
 	}
@@ -26916,7 +27201,7 @@ table.tableRanking td {
 	padding: 19px 23px;
 }
 
-@media (min-width:320px) and (max-width:359px) {
+@media (min-width:320px) and (max-width: 358px) {
 	.globalStock .sub_service .alliance_wrap .sub_con .sum {
 		padding: 15px 15px;
 	}
@@ -26997,7 +27282,7 @@ table.tableRanking td {
 	padding: 30px 23px;
 }
 
-@media (min-width:320px) and (max-width:359px) {
+@media (min-width:320px) and (max-width: 358px) {
 	.globalStock .sub_service .alliance_wrap .sub_con .tips {
 		padding: 25px 15px;
 	}
@@ -27112,7 +27397,7 @@ table.tableRanking td {
 	}
 }
 
-@media (min-width:320px) and (max-width:359px) {
+@media (min-width:320px) and (max-width: 358px) {
 	.globalStock .sub_service .alliance_wrap .sub_con .banner_mijumicho {
 		height: auto;
 	}
@@ -27661,7 +27946,7 @@ table.tableRanking td {
 }
 
 /* 320 지원 */
-@media (min-width:320px) and (max-width:359px) {
+@media (min-width:320px) and (max-width: 358px) {
 
 	/* 공통 레이아웃 */
 	.globalStock .log_chk {
@@ -27889,7 +28174,7 @@ table.tableRanking td {
 		width: 130px
 	}
 
-	.globalStock .gnb li.menu {
+	/* .globalStock .gnb li.menu {
 		width: 21px;
 	}
 
@@ -27899,7 +28184,7 @@ table.tableRanking td {
 
 	.globalStock .gnb li.menu.active {
 		margin-left: 0px;
-	}
+	} */
 
 	.globalStock .main_searching .searchArea .searchInput,
 	.globalStock .main_searching .sch_autocomplete li a .schCode {
@@ -28218,7 +28503,7 @@ table.tableRanking td {
 	top: 9px;
 }
 
-@media (min-width:320px) and (max-width:359px) {
+@media (min-width:320px) and (max-width: 358px) {
 	.globalStock.kiwoom #header .go_briefing {
 		right: 15px;
 		top: 9px;
@@ -28403,7 +28688,7 @@ table.tableRanking td {
 	background-size: 8px auto;
 }
 
-@media (min-width:320px) and (max-width:359px) {
+@media (min-width:320px) and (max-width: 358px) {
 	.globalStock.kiwoom .sub_search .tabs_5.prm_tabs li:nth-child(4) {
 		background: url('../img/prm_tabsLock.svg') no-repeat calc(100% - 0px) center;
 		background-size: 8px auto;
@@ -28767,7 +29052,7 @@ table.tableRanking td {
 	width: calc(100% / 3 + 9px);
 }
 
-@media (min-width:320px) and (max-width:359px) {
+@media (min-width:320px) and (max-width: 358px) {
 	.globalStock.kiwoom .sub_portfolio .sub_mid.eventPicks_area .ptfo_area .day {
 		width: 90px;
 		right: 0px;
@@ -28810,7 +29095,7 @@ table.tableRanking td {
 	line-height: 100%;
 }
 
-@media (min-width:320px) and (max-width:359px) {
+@media (min-width:320px) and (max-width: 358px) {
 	.globalStock .schfix_inc .searching .searchArea .sch_title {
 		margin-top: 8px;
 	}
@@ -29051,7 +29336,7 @@ table.tableRanking td {
 	text-align: left;
 }
 
-@media (min-width:320px) and (max-width:359px) {
+@media (min-width:320px) and (max-width: 358px) {
 	.globalStock .ptfo_datatable .tableRanking.ptfo_table td.name {
 		font-size: 14px;
 	}
@@ -29613,7 +29898,7 @@ table.tableRanking td {
 	display: none;
 }
 
-@media (min-width: 320px) and (max-width: 359px) {
+@media (min-width: 320px) and (max-width: 358px) {
 	.globalStock .sub_search .sub_mid.adequateArea .listWrap .mid .charm_num .guide_box {
 		width: 290px;
 	}
@@ -30128,7 +30413,7 @@ table.tableRanking td {
 	gap: 8px;
 }
 
-@media (min-width:320px) and (max-width:359px) {
+@media (min-width:320px) and (max-width: 358px) {
 	.globalStock .sub_search .sub_mid.adequateArea {
 		width: calc(100% - 20px);
 	}
@@ -30149,7 +30434,7 @@ table.tableRanking td {
 	/* overflow: hidden;	 */
 }
 
-@media (min-width:320px) and (max-width:359px) {
+@media (min-width:320px) and (max-width: 358px) {
 	.globalStock .sub_search .sub_mid.outline_box .box {
 		padding: 14px 10px 7px 10px;
 	}
@@ -30413,7 +30698,7 @@ table.tableRanking td {
 	display: none;
 }
 
-@media (min-width:320px) and (max-width:359px) {
+@media (min-width:320px) and (max-width: 358px) {
 	.globalStock .sub_search .sub_mid.outline_box .box .attention_box .guide_box {
 		width: 300px;
 	}
@@ -30713,7 +30998,7 @@ table.tableRanking td {
 	margin-left: calc(-54px / 2);
 }
 
-@media (min-width:320px) and (max-width:359px) {
+@media (min-width:320px) and (max-width: 358px) {
 	.globalStock .sub_search .sub_mid.outline_box .box .value_chart .line .situation {
 		padding-bottom: 12px;
 		width: 42px;
@@ -31118,7 +31403,7 @@ table.tableRanking td {
 	background-color: #ffffff;
 }
 
-@media (min-width:320px) and (max-width:359px) {
+@media (min-width:320px) and (max-width: 358px) {
 	.globalStock .sub_search .sub_mid .adequate_stock {
 		width: calc(100% - 20px);
 	}
@@ -31353,7 +31638,7 @@ table.tableRanking td {
 	z-index: 10;
 }
 
-@media (min-width:320px) and (max-width:359px) {}
+@media (min-width:320px) and (max-width: 358px) {}
 
 .globalStock .sub_search .sub_mid .adequate_stock .box .con .value_chart .line .situation::after {
 	content: "";
@@ -31388,7 +31673,7 @@ table.tableRanking td {
 	z-index: 90;
 }
 
-@media (min-width:320px) and (max-width:359px) {
+@media (min-width:320px) and (max-width: 358px) {
 	.globalStock .sub_search .sub_mid .adequate_stock .box .con .value_chart .line .situation::before {
 		top: 36px;
 	}
@@ -32932,7 +33217,7 @@ table.tableRanking td {
 	border-right: 1px solid #E0E5F0;
 }
 
-@media (min-width:320px) and (max-width:359px) {
+@media (min-width:320px) and (max-width: 358px) {
 	.globalStock .sub_search .sub_mid .adequate_stock .box .con .value_chart .line .situation {
 		padding-bottom: 5px;
 		/* margin-left: -27px; */
@@ -35238,6 +35523,7 @@ body.v_signalStreng {
 	top: 15%;
 }
 
+.v_signalStreng.globalStock #wrap .modal.method .pop_header,
 .v_signalStreng.globalStock #wrap .modal.cardBox .pop_header,
 .v_signalStreng.globalStock #wrap .modal.agreePopBox .pop_header,
 .v_signalStreng.globalStock #wrap .modal.signal_pop01 .pop_header {
@@ -35245,6 +35531,7 @@ body.v_signalStreng {
 	padding: 24px 15px;
 	border: none;
 }
+.v_signalStreng.globalStock #wrap .modal.method .pop_header .pop_title,
 .v_signalStreng.globalStock #wrap .modal.cardBox .pop_header .pop_title,
 .v_signalStreng.globalStock #wrap .modal.agreePopBox .pop_header .pop_title,
 .v_signalStreng.globalStock #wrap .modal.signal_pop01 .pop_header .pop_title {
@@ -35259,6 +35546,8 @@ body.v_signalStreng {
 .v_signalStreng.globalStock #wrap .modal.cardBox .pop_header .pop_title {
 	text-align: left;
 }
+.v_signalStreng.globalStock #wrap .modal.method .pop_header .clse::before,
+.v_signalStreng.globalStock #wrap .modal.method .pop_header .clse::after,
 .v_signalStreng.globalStock #wrap .modal.cardBox .pop_header .clse::before,
 .v_signalStreng.globalStock #wrap .modal.cardBox .pop_header .clse::after,
 .v_signalStreng.globalStock #wrap .modal.agreePopBox .pop_header .clse::before,
@@ -35796,7 +36085,7 @@ body.v_signalStreng {
 	width: calc(100% - 180px);
 }
 
-@media (min-width: 320px) and (max-width: 359px) {
+@media (min-width: 320px) and (max-width: 358px) {
 	.v_signalStreng.globalStock .sub_game .gamePicks_area .game_list .list .game_data {
 		width: calc(100% - 130px);
 	}
@@ -36177,7 +36466,7 @@ body.v_signalStreng {
 	color: #333;
 }
 
-@media (min-width:320px) and (max-width:359px) {
+@media (min-width:320px) and (max-width: 358px) {
 	.v_signalStreng.globalStock .modal.bandchart_sume {
 		padding: 0 10px 25px;
 	}

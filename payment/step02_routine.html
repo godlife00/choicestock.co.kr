@@ -92,122 +92,34 @@
             <div class="payment_guide">
                 <p class="pay_guideTxt">*본인 소유의 신용카드(롯데, 삼성, 신한, 현대, NH) 또는 체크카드</p>
                 <p class="pay_guideTxt"><span class="card_overseas">*혹시 해외카드로 결제하시나요?</span></p>
-                <div class="mapage_form">
-                    <script>
-                        $(document).ready(function () {
-                            // 페이지 로드시 카드번호 입력란에 포커스 보내기
-                            // window.onload = function() {
-                            //     document.getElementById('cardNumber').focus();
-                            // };
-
-                            // 카드정보 입력서 포커스, 화면 이동
-                            var inputs = document.querySelectorAll('input');
-                            inputs.forEach(function(input) {
-                                // 입력란에 포커스가 가면 실행됩니다.
-                                input.addEventListener('focus', function() {
-                                    // 포커스된 입력란을 화면의 중앙으로 빠르게 이동시킵니다.
-                                    input.scrollIntoView({ behavior: 'auto', block: 'center' });
-                                });
-
-                                input.addEventListener('input', function(e) {
-                                    if (e.target.value.length === e.target.maxLength) {
-                                        // 다음 입력란으로 포커스를 이동합니다.
-                                        var nextInputIndex = Array.from(inputs).indexOf(e.target) + 1;
-                                        if (nextInputIndex < inputs.length) {
-                                            inputs[nextInputIndex].focus();
-                                        }
-                                    }
-                                });
-                            });
-                            // 카드정보 입력서 포커스, 화면 이동 end
-
-                            // 카드번호 입력시 4자리마다 하이픈(-) 추가
-                            document.getElementById('cardNumber').addEventListener('input', function (e) {
-                                var input = e.target.value;
-                                
-                                // 숫자가 아닌 문자를 제거
-                                var numbersOnly = input.replace(/\D/g, '');
-
-                                // 숫자를 4자리마다 하이픈으로 구분
-                                var formattedInput = '';
-                                for (var i = 0; i < numbersOnly.length; i++) {
-                                    formattedInput += numbersOnly[i];
-                                    // 4의 배수인 위치에서 하이픈 추가 (단, 마지막 숫자가 아닐 때)
-                                    if ((i + 1) % 4 === 0 && i < numbersOnly.length - 1) {
-                                        formattedInput += '-';
-                                    }
-                                }
-                                e.target.value = formattedInput.substring(0, 19); // 최대 길이를 19로 제한
-                            });
-
-                            // 유효기간 입력시 2자리마다 슬래쉬(/) 추가
-                            document.getElementById('select_mon').addEventListener('input', function (e) {
-                                var input = e.target.value;
-                                
-                                // 숫자가 아닌 문자를 제거
-                                var numbersOnly = input.replace(/\D/g, '');
-
-                                // 숫자를 4자리마다 하이픈으로 구분
-                                var formattedInput = '';
-                                for (var i = 0; i < numbersOnly.length; i++) {
-                                    if (i > 0 && i % 2 === 0) {
-                                        formattedInput += '/';
-                                    }
-                                    formattedInput += numbersOnly[i];
-                                }
-
-                                e.target.value = formattedInput.substring(0, 19); // 최대 길이를 19로 제한
-                            });
-
-                            // 약관 닫기 기능
-                            $('.v_signalStreng.globalStock .sub_payment .payment_note .top .show').on("click", function () {                                                                
-
-                                $('.v_signalStreng.globalStock .sub_payment .payment_note .agree_chk').each(function() {
-                                    if ($(this).css('display') === 'none') {
-                                        $(this).css('display', 'flex');
-                                        $('.v_signalStreng.globalStock .sub_payment .payment_note .top .show').addClass('rotated');
-                                    } else {
-                                        $(this).css('display', 'none');
-                                        $('.v_signalStreng.globalStock .sub_payment .payment_note .top .show').removeClass('rotated');
-                                    }
-                                });
-                            });
-
-
-                            // 전체 체크박스 체크 기능
-                            $('#agree_all').on('change', function() {
-                                // 'agree_all' 체크박스의 체크 상태를 가져옵니다.
-                                var isChecked = $(this).is(':checked');
-
-                                // 모든 'allCheck' 이름을 가진 체크박스의 체크 상태를 설정합니다.
-                                $('input[name="allCheck"]').prop('checked', isChecked);
-                            });
-
-                            // 결제하기 버튼 하단 고정
-
-                        });
-                    </script>
+                <div class="mapage_form">                    
                     <div class="subscription-form">
                         <h1 class="form_title">신용카드 카드인증</h1>
                         <form action="" method="" class="form_wrap">
                             <div class="cardNumber">
-                                <label for="cardNumber" class="t_label">카드번호(text)</label>
+                                <label for="cardNumber" class="t_label">카드번호</label>
                                 <input maxlength="19" type="text" id="cardNumber" name="cardNumber" placeholder="1111-1111-1111-1111" autocomplete='off'>
                             </div>                                                        
                             <div class="security_info">
                                 <div>
                                     <label for="select_mon" class="t_label">유효기간</label>
                                     <input maxlength="5" type="text" id="select_mon" name="select_mon" placeholder="월/년도" autocomplete='off'>
+                                    <!-- 오류 메시지를 표시 error-message  -->
+                                    <span class="error-message">입력한 정보를 확인해주세요.</span>
                                 </div>
                                 <div>
                                     <label for="cardpw" class="t_label">비밀번호</label>
                                     <input maxlength="2" type="password" id="cardpw" name="cardpw" placeholder="앞 2자리 입력" autocomplete='off'>                                
+                                    <!-- 오류 메시지를 표시 error-message  -->
+                                    <span class="error-message">입력한 정보를 확인해주세요.</span>
                                 </div>                                
                             </div>
                             <div class="auth_no">
                                 <label for="auth_no" class="t_label">생년월일</label>
                                 <input maxlength="6" type="text" id="auth_no" name="auth_no" placeholder="6자리 입력" autocomplete='off'>
                                 <p class="teh_guideTxt">* 법인카드의 경우 사업자등록번호 13자리 입력</p>
+                                <!-- 오류 메시지를 표시 error-message  -->
+                                <span class="error-message">입력한 정보를 확인해주세요.</span>
                             </div>                                                   
                             
                             <div class="payment_note">
@@ -252,7 +164,7 @@
                             <!-- //payment_note -->                                                        
                         </form>
                         <div class="btnArea payBtn btn_fix">                                
-                            <a href="javascript:autoPayStart();" class="btn btn_save">결제하기<i></i></a>                                
+                            <a href="step_complete.html" class="btn btn_save">결제하기</a>                                
                         </div>
                     </div>                    
                 </div>
@@ -848,5 +760,100 @@
     <!-- //wrap -->
 
 </body>
+
+<script>
+    $(document).ready(function () {
+        // 페이지 로드시 카드번호 입력란에 포커스 보내기
+        // window.onload = function() {
+        //     document.getElementById('cardNumber').focus();
+        // };
+
+        // 카드정보 입력서 포커스, 화면 이동
+        var inputs = document.querySelectorAll('input');
+        inputs.forEach(function(input) {
+            // 입력란에 포커스가 가면 실행됩니다.
+            input.addEventListener('focus', function() {
+                // 포커스된 입력란을 화면의 중앙으로 빠르게 이동시킵니다.
+                input.scrollIntoView({ behavior: 'auto', block: 'center' });
+            });
+
+            input.addEventListener('input', function(e) {
+                if (e.target.value.length === e.target.maxLength) {
+                    // 다음 입력란으로 포커스를 이동합니다.
+                    var nextInputIndex = Array.from(inputs).indexOf(e.target) + 1;
+                    if (nextInputIndex < inputs.length) {
+                        inputs[nextInputIndex].focus();
+                    }
+                }
+            });
+        });
+        // 카드정보 입력서 포커스, 화면 이동 end
+
+        // 카드번호 입력시 4자리마다 하이픈(-) 추가
+        document.getElementById('cardNumber').addEventListener('input', function (e) {
+            var input = e.target.value;
+            
+            // 숫자가 아닌 문자를 제거
+            var numbersOnly = input.replace(/\D/g, '');
+
+            // 숫자를 4자리마다 하이픈으로 구분
+            var formattedInput = '';
+            for (var i = 0; i < numbersOnly.length; i++) {
+                formattedInput += numbersOnly[i];
+                // 4의 배수인 위치에서 하이픈 추가 (단, 마지막 숫자가 아닐 때)
+                if ((i + 1) % 4 === 0 && i < numbersOnly.length - 1) {
+                    formattedInput += '-';
+                }
+            }
+            e.target.value = formattedInput.substring(0, 19); // 최대 길이를 19로 제한
+        });
+
+        // 유효기간 입력시 2자리마다 슬래쉬(/) 추가
+        document.getElementById('select_mon').addEventListener('input', function (e) {
+            var input = e.target.value;
+            
+            // 숫자가 아닌 문자를 제거
+            var numbersOnly = input.replace(/\D/g, '');
+
+            // 숫자를 4자리마다 하이픈으로 구분
+            var formattedInput = '';
+            for (var i = 0; i < numbersOnly.length; i++) {
+                if (i > 0 && i % 2 === 0) {
+                    formattedInput += '/';
+                }
+                formattedInput += numbersOnly[i];
+            }
+
+            e.target.value = formattedInput.substring(0, 19); // 최대 길이를 19로 제한
+        });
+
+        // 약관 닫기 기능
+        $('.v_signalStreng.globalStock .sub_payment .payment_note .top .show').on("click", function () {                                                                
+
+            $('.v_signalStreng.globalStock .sub_payment .payment_note .agree_chk').each(function() {
+                if ($(this).css('display') === 'none') {
+                    $(this).css('display', 'flex');
+                    $('.v_signalStreng.globalStock .sub_payment .payment_note .top .show').addClass('rotated');
+                } else {
+                    $(this).css('display', 'none');
+                    $('.v_signalStreng.globalStock .sub_payment .payment_note .top .show').removeClass('rotated');
+                }
+            });
+        });
+
+
+        // 전체 체크박스 체크 기능
+        $('#agree_all').on('change', function() {
+            // 'agree_all' 체크박스의 체크 상태를 가져옵니다.
+            var isChecked = $(this).is(':checked');
+
+            // 모든 'allCheck' 이름을 가진 체크박스의 체크 상태를 설정합니다.
+            $('input[name="allCheck"]').prop('checked', isChecked);
+        });
+
+        // 결제하기 버튼 하단 고정
+
+    });
+</script>
 
 </html>
