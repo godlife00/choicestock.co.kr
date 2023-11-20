@@ -96,9 +96,24 @@
                     <div class="subscription-form">
                         <h1 class="form_title">신용카드 카드인증</h1>
                         <form action="" method="" class="form_wrap">
+                            <div class="selectbox">                                
+                                <h1 class="card_title">결제수단</h1>
+                                <label for="card" class="t_label">신용카드(체크카드)</label>
+                                <select name="card" id="select">                                    
+                                    <option value="롯데">롯데카드</option>
+                                    <option value="삼성">삼성카드</option>
+                                    <option value="신한">신한카드</option>
+                                    <option value="현대">현대카드</option>
+                                    <option value="NH">NH카드</option>
+                                </select>
+                                <p class="teh_guideTxt">*신용카드(롯데, 삼성, 신한, 현대, NH) 또는 체크카드</p>
+                            </div>   
+
                             <div class="cardNumber">
                                 <label for="cardNumber" class="t_label">카드번호</label>
                                 <input maxlength="19" type="text" id="cardNumber" name="cardNumber" placeholder="1111-1111-1111-1111" autocomplete='off'>
+                                <!-- 오류 메시지를 표시 error-message  -->
+                                <span class="error-message">입력한 정보를 확인해주세요.</span>
                             </div>                                                        
                             <div class="security_info">
                                 <div>
@@ -116,7 +131,7 @@
                             </div>
                             <div class="auth_no">
                                 <label for="auth_no" class="t_label">생년월일</label>
-                                <input maxlength="6" type="text" id="auth_no" name="auth_no" placeholder="6자리 입력" autocomplete='off'>
+                                <input type="text" id="auth_no" name="auth_no" placeholder="6자리 입력" autocomplete='off'>
                                 <p class="teh_guideTxt">* 법인카드의 경우 사업자등록번호 13자리 입력</p>
                                 <!-- 오류 메시지를 표시 error-message  -->
                                 <span class="error-message">입력한 정보를 확인해주세요.</span>

@@ -23104,16 +23104,18 @@ table.tableRanking td {
     display: inline-block;
     width: 6px;
     height: 6px;
-    position: absolute;
-    top: 5px;
+    position: absolute;    
+	top: 1px;
     right: 5px;
     border-top: 1px solid #6a727b;
-    border-right: 1px solid #6a727b;
-	transform: rotate(-40deg);
+    border-right: 1px solid #6a727b;	
+	transform: rotate(135deg);		
+
+
 }
 .v_signalStreng.globalStock .sub_payment .payment_guide .mapage_form .couponNumber .t_label.rotated::after {
-	transform: rotate(135deg);	
-	top: 1px;
+	transform: rotate(-40deg);    
+	top: 4px;
 }
 
 .v_signalStreng.globalStock .sub_payment .payment_guide .mapage_form .t_label {
@@ -23202,12 +23204,12 @@ table.tableRanking td {
     border-top: 1px solid #6a727b;
     border-right: 1px solid #6a727b;
 }
-.v_signalStreng.globalStock .sub_payment .payment_note .top .show.rotated::after {
-	top: 3px;
-    transform: rotate(135deg);
+.v_signalStreng.globalStock .sub_payment .payment_note .top .show.rotated::after {	
+	top: 10px;
+	transform: rotate(-40deg);    
 }
-.v_signalStreng.globalStock .sub_payment .payment_note .top .show:not(.rotated)::after {
-    transform: rotate(-40deg);
+.v_signalStreng.globalStock .sub_payment .payment_note .top .show:not(.rotated)::after {	
+	transform: rotate(135deg);
 }
 .v_signalStreng.globalStock .sub_payment .payment_note .top .agree .txt {
 	font-size: 14px;
