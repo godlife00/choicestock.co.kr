@@ -28,7 +28,7 @@
     <script src="../node_modules/highcharts/modules/data.js"></script>
     <script src="../node_modules/highcharts/modules/hollowcandlestick.js"></script>
     <script src="../node_modules/highcharts/modules/no-data-to-display.js"></script>
-    <script src="../node_modules/highcharts/modules/treemap.js"></script>    
+    <script src="../node_modules/highcharts/modules/treemap.js"></script>
     <script src="../node_modules/highcharts/modules/exporting.js"></script>
     <script src="../node_modules/highcharts/modules/export-data.js"></script>
     <script src="../node_modules/highcharts/modules/accessibility.js"></script>
@@ -43,91 +43,70 @@
     <script src="../js/globalstock.js"></script>
 </head>
 
-<!-- 제휴사이트 민트 칼라 적용 class = mint  -->
+<body class="v_signalStreng globalStock">
 
-<body class="globalStock">
     <div id="wrap">
         <!-- 하단 GNB -->
         <div class="gnb">
             <ul class="list">
-                <li class="home"><a href="../index.html"><i></i> 홈</a></li>
-                <li class="stock"><a href="stock/recom.html">추천</a></li>
-                <li class="analysis active"><a href="search/search_diagnosis.html">진단</a></li>
+                <li class="home"><a href="../index.html">홈</a></li>
+                <li class="sch"><a href="../search/search_outline.html">검색</a></li>
+                <li class="stock active"><a href="../stock/recom.html">추천</a></li>
                 <li class="excavation"><a href="../attractiveness/attractiveness.html">발굴</a></li>
-                <li class="menu"><a href="stock/menu.html">메뉴</a></li>
+                <li class="attention"><a href="../search/_searching.html">관심</a></li>
             </ul>
         </div>
         <!-- //gnb -->
 
         <div id="header" class="header">
             <div class="headerTop">
+                <a href="javascript:history.back();" class="go_back">히스토리백</a>
                 <h1 class="headerLogo"><span>종목검색</span></h1>
-                <a href="#" class="his_back"><img src="../img/icon_back.svg" alt="뒤로가기"></a>
-                <div class="hm">
-                    <a href="../search/searching.html" class="go_sch"><img src="../img/icon_search.svg" alt="검색하기"></a>
-                </div>
-                <!-- //hm -->
+                <span class="att"><i class="attention on" style="left:-50px"></i></span>
+                <span class="att"><i class="attention attention_pop"></i></span>
+                <!-- 관심종목 최초 지정 시 관심종목 안내 팝업 노출 : class = attention_pop 있는 경우-->
             </div>
             <!-- //headerTop -->
         </div>
 
         <!-- 종목검색 class = sub_search-->
         <div id="container" class="sub_search">
-            <!-- 주요 콘텐츠 -->
-            <div class="search_top">
 
-                <div class="data_area">
-                    <h2 class="title"><a href="#">월트디즈니</a></h2>
-                    <!-- 기본 <i class="attention">,  관심종목 등록된 경우 <i class="attention on"> -->
-                    <ul class="info">
-                        <li class="sum"><span class="eng">MSFT</span> </li>
-                    </ul>
-                    <ul class="info_icon">                        
-                        <li>NASDAQ</li>
-                        <li>소비자독점주</li>
-                    </ul>
-                    <!-- //info_icon -->
-                    <ul class="detail">
-                        <li class="num">
-                            <span class="">190.<b>00</b></span> <!-- increase 증가, decrease 감소 -->
-                        </li>
-                        <li class="per">
-                            <span class="increase">+2.26 <span>(+1.20<b>%</b>)</span></span>
-                            <!-- increase 증가, decrease 감소 -->
-                        </li>
-                        <li class="day">19.05/15, USD</li>
-                    </ul>
-
-                    <!-- 하트, 추천이 있는 경우 -->
-                    <div class="go_page">
-                        <i class="attention"></i>
-                        <span class="quarter recom">추천</span>
-                        <!-- 추천 class = recom, 분석 class = analysis -->
-                        <a href="#" class="more"><img src="../img/more_Black.png" alt="더보기"></a>
-                    </div>
-
-                    <!-- 하트만 있는 경우 -->
-                    <div class="go_page only" style="display: none;">
-                        <i class="attention on"></i>
-                    </div>
-
-                </div>
-                <!-- //data_area -->                
-
+            <!-- 검색 종목 -->
+            <div class="recom_company">
+                <ul class="list">
+                    <li class="ticker">AAPL</li>
+                    <li class="stock_index"><span>NASDAQ</span><span>S&P500</span></li>
+                    <li class="company_nm">마이크로소프트</li>
+                    <li class="detail">
+                        <div class="num">
+                            <span><b>1,898.</b>00</span>
+                        </div>
+                        <div class="per">
+                            <span class="increase"><b>+89.</b>89</span>
+                            <span class="increase">(<b>+89.</b>89%)</span>
+                            <!-- increase 증가, decrease 감소, 보합은 same -->
+                            <span class="day">23. 07/03 88:88 USD</span>
+                        </div>
+                    </li>
+                </ul>
                 <div class="attention_box">
                     <ul>
-                        <li class="attention"><i></i><strong>8,888</strong>명의 관심</li>
-                        <!-- 관심종목인 경우 on -->
-                        <!-- <li class="m_chart"><i></i>투자의견 <strong>매수</strong>(124명)</li> -->
+                        <li class="attention" id="catch_icon_one_sub"><i></i><strong id="catch_count_one">76</strong>명의
+                            관심</li>
                     </ul>
-                    <p class="game_allo">최근 배당락일 <span>2021. 5/23</span></p>
+                    <div class="stock_tag">
+                        <span>#배당매력주</span>
+                        <span>#관심TOP50</span>
+                        <span>#이익성장주</span>
+                    </div>
                 </div>
-
             </div>
-            <!-- //sub_top -->
+            <!-- //recom_company -->
 
             <div class="sub_mid nondata" style="display: none;">
-                <p class="nodata_guide"><strong>GOOG</strong>의 상세 기업정보는 <strong><a href="/search/invest_charm/GOOGL?pn=&amp;pg=">GOOGL</a></strong> 종목에서 확인할 수 있습니다.</p>
+                <p class="nodata_guide"><strong>GOOG</strong>의 상세 기업정보는 <strong><a
+                            href="/search/invest_charm/GOOGL?pn=&amp;pg=">GOOGL</a></strong> 종목에서 확인할 수 있습니다.</p>
             </div>
 
             <div class="sub_mid tabs_area">
@@ -145,7 +124,7 @@
 
                 <ul class="tabs_3 tabs_depth2">
                     <li><a href="search_finance.html">재무제표</a></li>
-                    <li><a href="search_diagnosis_finance.html">재무차트</a></li>                    
+                    <li><a href="search_diagnosis_finance.html">재무차트</a></li>
                     <li class="active"><a href="search_invest.html">투자지표</a></li>
                 </ul>
 
@@ -358,7 +337,7 @@
                             </table>
                         </div>
                         <!-- //scroll_table -->
-                        
+
                         <p class="table_guide">* 재무데이터는 달러(USD)로 일괄조정</p>
 
                         <!-- 테이블 안내 툴팁 -->
@@ -422,30 +401,51 @@
         </div>
         <!-- //container -->
 
-        <div id="footer">
-            <div class="foot_area">
-                <p class="notice">본 서비스는 투자판단에 참고용으로만 사용하실 수 있으며, 모든 투자판단은 투자자 본인의 책임으로 당사는 그 결과에 대해 법적인 일체의 책임을 지지
-                    않습니다.</p>
-                <p class="dataLink">data from <a href="https://www.quandl.com/" target="_blank">Quandl and
-                        Sharadar</a>
-                </p>
-            </div>
-            <!-- //main_btm //recipe_area -->
-
+        <div id="footer" class="chous_footer">
             <div class="notice">
+                <div class="service_info">
+                    <p>본 서비스는 투자판단에 참고용으로만 사용하실 수 있으며, 모든 투자판단은 투자자 본인의 책임으로 당사는 그 결과에 대해 법적인 일체의 책임을 지지 않습니다.</p>
+                    <p class="dataLink">data from <a href="https://www.quandl.com/" target="_blank">Quandl and
+                            Sharadar</a>
+                    </p>
+                </div>
+
                 <ul class="terms_list">
-                    <li><a href="">이용약관</a></li>
-                    <li><a href="">개인정보처리방침</a></li>
-                    <li><a href="">데이터히어로</a></li>
+                    <li><a href="terms.html">이용약관</a></li>
+                    <li><a href="https://www.datahero.co.kr/choicestockus-faq/" target="_blank">서비스 FAQ</a></li>
+                    <li><a href="policy.html"><strong>개인정보처리방침</strong></a></li>
+                    <li><a href="https://www.datahero.co.kr/choicestockus-update/" target="_black">업데이트 소식</a>
+                    </li>
+                    <li><a href="https://www.datahero.co.kr" target="_blank">회사소개</a></li>
                 </ul>
-                <p class="copyright">사업자번호 291-88-01393 <span>ⓒ (주)데이터히어로</span></p>
-                <a href="http://www.datahero.co.kr" target="_blink" class="home_page">hero@datahero.co.kr</a>
+
+                <div class="foot_info">
+                    <div class="info_tel_box">
+                        <span class="cs"><a href="https://kq64o.channel.io/" target="blank">온라인 1:1 문의하기</a> (평일
+                            9:00~17:00, 점심 11:20~12:20/ 주말 및 공휴일 휴무) </span>
+                    </div>
+                    <!-- //info_tel_box -->
+                    <p class="copyright"><a href="https://www.datahero.co.kr" target="_blank">ⓒ (주)데이터히어로</a><i></i>
+                        <strong>대표자</strong> 김인중 <br>서울특별시 서초구 강남대로 311 <i></i> 사업자등록번호 291-88-01393 <i></i>
+                        <strong>대표번호 <a href="tel:02-6225-2300"><strong>02-6225-2300</strong></a></strong>
+                    </p>
+                </div>
+                <!-- //foot_info -->
+                <div class="family_site">
+                    <strong>Family</strong>&nbsp;&nbsp;&nbsp;&gt;&nbsp;&nbsp;&nbsp;
+                    <a href="https://super.choicestock.co.kr/?utm_source=choicestock&amp;utm_medium=banner&amp;utm_campaign=service"
+                        target="blank">슈퍼스톡스</a><i></i>
+                    <a href="https://value.choicestock.co.kr/?utm_source=choicestock&amp;utm_medium=banner&amp;utm_campaign=service"
+                        target="blank">밸류라인</a>
+                    <i></i> <a href="https://bigfinance.co.kr/" target="blank">빅파이낸스</a>
+                </div>
+                <!-- //family_site -->
+
             </div>
             <!-- //notice -->
         </div>
         <!-- //footer -->
     </div>
     <!-- //wrap -->
-    <div class="guide_layer"></div>
 
 </body>

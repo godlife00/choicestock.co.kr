@@ -13113,6 +13113,10 @@ table.tableRanking td {
 	border-bottom: none;
 }
 
+.globalStock .sub_search .tabs_5.prm_tabs li:nth-child(4) {
+	background: url('../img/prm_tabsLock.svg') no-repeat calc(100% - 1px) center;
+	background-size: 8px auto;
+}
 .globalStock .sub_search .tabs_5.prm_tabs li:nth-child(5) {
 	background: url('../img/prm_tabsLock.svg') no-repeat calc(100% - 1px) center;
 	background-size: 8px auto;
@@ -13129,7 +13133,11 @@ table.tableRanking td {
 	background: url('../img/prm_tabsLock.svg') no-repeat calc(100% - 2px) center;
 	background-size: 8px auto;
 }
-
+.v_signalStreng.globalStock .sub_search .tabs_5.prm_tabs li:nth-child(4),
+.v_signalStreng.globalStock .sub_search .tabs_5.prm_tabs li:nth-child(5),
+.v_signalStreng.globalStock .sub_search .tabs_5.prm_tabs li:nth-child(6) {
+	background-position: calc(100% - 1px) 1px;
+}
 .globalStock .sub_search .tabs_3.tabs_depth2 {
 	padding: 3px 15px;
 	font-size: 0;
@@ -34407,6 +34415,7 @@ body.v_signalStreng {
 }
 
 .v_signalStreng.globalStock .sub_search .tabs_5 {
+	background-color: #fff;
 	margin-top: 27px;
 	margin-bottom: 0;
 }
@@ -35524,6 +35533,38 @@ body.v_signalStreng {
 	height: 4px;
 	transform: rotate(45deg);
 	border-color: var(--coldae);
+}
+/* 종목검새 - 종목진단 탭 */
+.v_signalStreng.globalStock #wrap #container .sub_mid.tabs_area,
+.v_signalStreng.globalStock #wrap #container .competitors_table,
+.v_signalStreng.globalStock #wrap #container .sub_mid.research_board {
+	background-color: #F4F4F5;
+}
+.v_signalStreng.globalStock #wrap #container .sub_mid.research_board {
+	margin-bottom: 0;
+	padding-top: 20px;
+	padding-bottom: 32px;
+}
+.v_signalStreng.globalStock #wrap #container .sub_mid.research_board .news_no_data {
+	margin-top: 0;	
+}
+.v_signalStreng.globalStock #wrap #container .competitors_table {
+	padding-top: 32px;	
+}
+.v_signalStreng.globalStock .sub_search .sub_mid.competitors_table .title_guide {
+	top: 37px;
+}
+.v_signalStreng.globalStock #wrap .sub_search .tabs_3.tabs_depth2 {
+	margin-top: 19px;	
+}
+.v_signalStreng.globalStock #wrap .sub_search .sub_mid.tabs_area .investCharm_area,
+.v_signalStreng.globalStock #wrap .sub_search .sub_mid.tabs_area .alloca_wrap.alloca_wrap.na_box,
+.v_signalStreng.globalStock #wrap .sub_search .sub_mid.tabs_area .alloca_info .allocachart_area {	
+	padding-bottom: 20px;
+}
+.v_signalStreng.globalStock #wrap .sub_search .sub_mid.tabs_area .alloca_wrap.alloca_wrap,
+.v_signalStreng.globalStock #wrap .sub_search .sub_mid.tabs_area .alloca_wrap.alloca_wrap.na_box {
+	margin-bottom: 0;
 }
 
 .v_signalStreng.globalStock #wrap .modal.signal_pop01 {
