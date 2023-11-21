@@ -47,7 +47,6 @@
 </head>
 
 <body class="v_signalStreng globalStock">
-
     <!-- 신규 서비스/기능 개선 시 안내 팝업 -->
     <div class="signalpop monthly_payment">
         <!-- 보여줘야 하는 경우 class open -->
@@ -67,18 +66,6 @@
     </div>
     
     <div id="wrap">
-        <!-- 하단 GNB -->
-        <div class="gnb">
-            <ul class="list">
-                <li class="home"><a href="../index.html">홈</a></li>
-                <li class="sch active"><a href="../search/search_outline.html">검색</a></li>
-                <li class="stock"><a href="../stock/recom.html">추천</a></li>
-                <li class="excavation"><a href="../attractiveness/attractiveness.html">발굴</a></li>
-                <li class="attention"><a href="../search/_searching.html">관심</a></li>
-            </ul>
-        </div>
-        <!-- //gnb -->
-
         <div id="header" class="header">
             <div class="headerTop">
                 <a href="javascript:history.back();" class="go_back">히스토리백</a>
@@ -92,6 +79,17 @@
 
         <!-- 종목검색 class = sub_search-->
         <div id="container" class="sub_search">
+            <!-- 하단 GNB -->
+            <div class="gnb">
+                <ul class="list">
+                    <li class="home"><a href="../index.html">홈</a></li>
+                    <li class="sch active"><a href="../search/searching.html">검색</a></li>                    
+                    <li class="stock"><a href="../stock/recom.html">추천</a></li>
+                    <li class="excavation"><a href="../stock/note.html">발굴</a></li>                                        
+                    <li class="attention"><a href="../search/searching_attention.html">관심</a></li>
+                </ul>
+            </div>
+            <!-- //gnb -->
 
             <!-- 검색 종목 -->
             <div class="recom_company">
@@ -127,27 +125,14 @@
 
             <div class="sub_mid nondata" style="display: none;">
                 <p class="nodata_guide"><strong>GOOG</strong>의 상세 기업정보는 <strong><a href="/search/invest_charm/GOOGL?pn=&amp;pg=">GOOGL</a></strong> 종목에서 확인할 수 있습니다.</p>
-            </div>
-
-            <div class="sub_mid tabs_area">
-                <ul class="tabs_5">
-                    <li class="active"><a href="search_outline.html">개요</a></li>
-                    <li><a href="search_diagnosis.html">종목진단</a></li>
-                    <!-- <li><a href="search_value.html">밸류</a></li> -->
-                    <li><a href="search_finance.html">재무</a></li>
-                    <li><a href="search_news.html">뉴스</a></li>
-                    <li><a href="search_alloca.html">배당</a></li>
-                    <li><a href="search_compete.html">경쟁사</a></li>
-                </ul>
-                <!-- //tabs_5 -->
-            </div>
+            </div>            
 
             <div class="sub_mid tabs_area">
                 <!-- 프리미엄 서비스 부분 -->
                 <ul class="tabs_5 prm_tabs">
                     <li class="active"><a href="search_outline.html">개요</a></li>
-                    <li><a href="search_diagnosis.html">종목진단</a></li>
-                    <!-- <li><a href="search_value.html">밸류</a></li> -->
+                    <li><a href="search_diagnosis.html">진단</a></li>
+                    <li><a href="search_value.html">밸류</a></li>
                     <li><a href="search_finance.html">재무</a></li>
                     <li><a href="search_news.html">뉴스</a></li>
                     <li><a href="search_alloca.html">배당</a></li>
@@ -558,52 +543,3 @@
     <!-- //wrap -->
 
 </body>
-
-<!-- 개요 리뉴얼에서만 쓰는 스크립트 230905 -->
-<script>
-    $(document).ready(function () {
-        // 툴팁
-        $(".v_signalStreng.globalStock .txt_guide").click(function (e) {
-            e.stopPropagation();
-            $(this).siblings(".tooltip").toggle();
-        });
-        $(".v_signalStreng.globalStock .clse_tooltip").click(function () {
-            $(".tooltip").hide();
-        });
-        $(document).click(function (e) {
-            if (!$(e.target).closest('.tooltip').length) {
-                $(".tooltip").hide();
-            }
-        });
-        // 매수신호 모달 팝업        
-        $('.v_signalStreng.globalStock .mainBox.attr .adequateArea .listWrap .mid .latest_signal').on('click', function () {
-            $('.modal').hide().removeClass('slideUp');
-            $('.blocker').show();
-            $('.signal_pop01').show().addClass('slideUp');
-        });
-
-        // 매매신호 플로팅 배너 열기, 닫기 스크립트
-        // 스크롤 이벤트를 감지하여 처리
-        function scrollsignalpop () {
-            var mainBoxOffset = $('.mainBox.outline').offset().top;
-            var windowHeight = $(window).height();
-            var scroll = $(window).scrollTop();
-
-            if (scroll + windowHeight > mainBoxOffset) {
-                $('.v_signalStreng.globalStock .signalpop .box').slideDown(1200);
-            }
-        }
-        $(window).scroll(function() {
-            scrollsignalpop();            
-        });
-        
-        $('.v_signalStreng.globalStock .signalpop.monthly_payment .ftr, .signalpop .bg_gray').on('click', function () {
-            $('.signalpop').removeClass('open');
-            $('.signalpop .box').animate({
-                'opacity': 0,
-                'height': 0
-            });
-            // return false;
-        });
-    })            
-</script>

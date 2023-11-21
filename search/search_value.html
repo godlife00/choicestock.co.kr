@@ -28,10 +28,11 @@
     <script src="../node_modules/highcharts/modules/data.js"></script>
     <script src="../node_modules/highcharts/modules/hollowcandlestick.js"></script>
     <script src="../node_modules/highcharts/modules/no-data-to-display.js"></script>
-    <script src="../node_modules/highcharts/modules/treemap.js"></script>    
+    <script src="../node_modules/highcharts/modules/treemap.js"></script>
     <script src="../node_modules/highcharts/modules/exporting.js"></script>
     <script src="../node_modules/highcharts/modules/export-data.js"></script>
     <script src="../node_modules/highcharts/modules/accessibility.js"></script>
+    <script src="https://code.highcharts.com/modules/debugger.js"></script>
     <script src="../js/chartjs.js"></script>
     <!-- Swiper -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
@@ -44,16 +45,33 @@
 </head>
 
 <body class="v_signalStreng globalStock">
+    <!-- 신규 서비스/기능 개선 시 안내 팝업 -->
+    <div class="signalpop monthly_payment">
+        <!-- 보여줘야 하는 경우 class open -->
+        <div class="bg_gray"></div>
+        <div class="box">
+            <div class="ftr">
+                <span href="javascript:closeWin();" class="btn_close">닫기</span>                
+            </div>
+
+            <div class="content" onclick="location.href ='../stock/service.html'" style="cursor:pointer;">
+                <div class="info_txt">
+                    <p class="txt01">AI가 알려주는 투자타이밍!</p>
+                    <p class="txt02">전종목 매매신호가 무제한</p>
+                </div>
+            </div>            
+        </div>
+    </div>
 
     <div id="wrap">
         <!-- 하단 GNB -->
         <div class="gnb">
             <ul class="list">
                 <li class="home"><a href="../index.html">홈</a></li>
-                <li class="sch"><a href="../search/search_outline.html">검색</a></li>
+                <li class="sch"><a href="../search/searching.html">검색</a></li>
                 <li class="stock active"><a href="../stock/recom.html">추천</a></li>                
-                <li class="excavation"><a href="../attractiveness/attractiveness.html">발굴</a></li>                
-                <li class="attention"><a href="../search/_searching.html">관심</a></li>                
+                <li class="excavation"><a href="../stock/note.html">발굴</a></li>                
+                <li class="attention"><a href="../search/searching_attention.html">관심</a></li>                
             </ul>
         </div>
         <!-- //gnb -->
@@ -104,620 +122,342 @@
             </div>
             <!-- //recom_company -->
 
-            <div class="sub_mid nondata">
+            <div class="sub_mid nondata" style="display: none;">
                 <p class="nodata_guide"><strong>GOOG</strong>의 상세 기업정보는 <strong><a href="/search/invest_charm/GOOGL?pn=&amp;pg=">GOOGL</a></strong> 종목에서 확인할 수 있습니다.</p>
             </div>
 
             <div class="sub_mid tabs_area">
-                <div class="sub_mid tabs_area">
-                    <ul class="tabs_5 prm_tabs">
-                        <li><a href="search_outline.html">개요</a></li>
-                        <li><a href="search_diagnosis.html">진단</a></li>
-                        <li class="active"><a href="search_value.html">밸류</a></li>
-                        <li><a href="search_finance.html">재무</a></li>
-                        <li><a href="search_news.html">뉴스</a></li>
-                        <li><a href="search_alloca.html">배당</a></li>
-                        <li><a href="search_compete.html">경쟁사</a></li>
-                    </ul>
-                    <!-- //tabs_5 -->
-                </div>
+                <!-- 프리미엄 서비스 부분 -->
+                <ul class="tabs_5 prm_tabs">
+                    <li><a href="search_outline.html">개요</a></li>
+                    <li><a href="search_diagnosis.html">진단</a></li>
+                    <li class="active"><a href="search_value.html">밸류</a></li>
+                    <li><a href="search_finance.html">재무</a></li>
+                    <li><a href="search_news.html">뉴스</a></li>
+                    <li><a href="search_alloca.html">배당</a></li>
+                    <li><a href="search_compete.html">경쟁사</a></li>
+                </ul>
+                <!-- //tabs_5 -->
+                <!-- //프리미엄 서비스 부분 -->
+                
+                <div class="adequate_stock">
+                    <div class="box">
+                        <p class="title"><a href="">AI적정주가</a></p>
+                        <div class="con">
 
-                <div class="chart_area diagnosis">
-                    <div class="chartData">
-                        <dl>
-                            <dt class="charm">진단점수
-                                <span class="txt_guide"><img src="../img/txt_guide.svg" alt="가이드보기"></span>
-                                <div class="guide_box">
-                                    <span class="clse">닫기</span>                          
-                                    <p class="txt"><strong>종목진단 점수</strong>는 해당 종목의 우량주 여부를 판단하는데 도움을 드립니다.</p>
-                                    <p class="txt">10년 이상의 금융 빅데이터에서 우량주 발굴을 위해 22개 요인(Factor)을 종목별로 분석하고, 동종업종내 경쟁사와 비교합니다.</p>
-                                    <ul>
-                                        <li class="list_txt">종목진단 점수는 높을수록 매력적인 기업이며, 65점(상위 20%) 이상이면 우량 기업으로 판단합니다.</li>
-                                        <li class="list_txt">투자매력 세부 항목인 독점력, 수익성, 안전성, 현금창출력으로 별점(★) 5점 만점에 3점 이상이면 각 항목을 통과한 것으로 판단합니다.</li>
-                                        <li class="list_txt">세부 항목 평가에서 별점 0~1점을 받았다면 위험 요인으로, 투자 판단시 유의해서 봐야 합니다.</li>                                        
-                                        <li class="list_txt">우량주 여부를 판단한 후에는 적정주가로 저평가 여부를 확인하세요.</li>
-                                    </ul>
+                            <div class="value_chart">
+                                <div class="line">
+                                    <!-- 0 미만인 경우 클래스 under 추가 -->
+                                    <div class="situation under" style="left: -10px;">
+                                        <span>현재가</span>
+                                        <span class="sync_price">-823.<b>00</b></span>
+                                    </div>
+                                    <!-- <div class="situation" style="left: 0%;">
+                                        <span>현재가</span>
+                                        <span class="sync_price">23.<b>00</b></span>
+                                    </div> -->
+                                    <div class="situation" style="left: 50%;">
+                                        <span>현재가</span>
+                                        <span class="sync_price">823,823.<b>00</b></span>
+                                    </div>
+                                    <!-- <div class="situation" style="left: 100%;">
+                                        <span>현재가</span>
+                                        <span class="sync_price">23.<b>00</b></span>
+                                    </div> -->
+                                    <!-- 100% 벗어난 경우 클래스 over 추가 -->
+                                    <div class="situation over" style="right: -10px">
+                                        <span>현재가</span>
+                                        <span class="sync_price">23.<b>00</b></span>
+                                    </div>
+
+                                    <span class="g_action g_buying"></span><!-- 매우저평가 -->
+                                    <span class="g_action" style="left: 50%;"></span><!-- 적정가 -->
+                                    <span class="g_action g_sell"></span><!-- 매우고평가 -->
                                 </div>
-                            </dt>
-                            <dd class="charm_num">80</dd>
-                            <dd class="charm">전주대비 <strong>+5</strong></dd>
-                        </dl>
-                    </div>
-                    <!-- //chartData -->
-                    <div class="difference">
-                        <p class="dt">전체 <strong>1</strong>위, 상위 <strong>1</strong>%</p>
-                        <span class="dd">(5,000개 평가기업 중)</span>
-                        <p class="dt">동일업종 1위, 상위 1%</p>
-                        <span class="dd">(업종 Consumer Electronics)</span>
-                    </div>
-                    <!-- //difference -->
-                    <div class="data_attainment">
-                        <ul>
-                            <li>PER<span>27.80</span><b>배</b></li>
-                            <li>PBR<span>27.80</span><b>배</b></li>
-                            <li>ROE<span>27.80</span><b>%</b></li>
-                            <li>DY<span>27.80</span><b>%</b></li>
-                        </ul>
+                                <div class="adequate">
+                                    <strong>
+                                        <span>적정가</span>
+                                        108.<b>88</b>
+                                    </strong>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="evaluation_data">
+                            <span class="txt_guide"><img src="../img/txt_guide.svg" alt="가이드보기"></span>
+                            <div class="guide_box">
+                                <span class="clse">닫기</span>
+                                <ul>
+                                    <li>적정주가는 기업의 과거 실적과 이익 성장 유지 가능성 및 향후 전망을 반영해 계산합니다. 투자매력 점수가 우량 기업 이상이고, 현재가가 저평가
+                                        상태에 있는 기업에 투자하는 것이 좋습니다.<br>
+                                        <br>
+                                        적극매수 : 현재가 &lt; 저평가<br>
+                                        매수 : 저평가 &lt;= 현재가 &lt; 적정가<br>
+                                        보유 : 적정가 &lt;= 현재가 &lt; 고평가<br>
+                                        매도 : 고평가 &lt;= 현재가 &lt; 매우고평가<br>
+                                        적극매도 : 매우고평가 &lt;= 현재가
+                                    </li>
+                                </ul>
+                            </div>
+                            <table cellspacing="0" border="1" class="tableRanking evaluation_table">
+                                <colgroup>
+                                    <col width="">
+                                    <col width="">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th class="title">
+                                            <span>저평가</span>
+                                        </th>
+                                        <td>
+                                            <span>&lt; 345.<b>28</b></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th class="title">
+                                            <span>매우저평가</span>
+                                        </th>
+                                        <td>
+                                            <span>&lt; 265.<b>36</b></span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <table cellspacing="0" border="1" class="tableRanking evaluation_table">
+                                <colgroup>
+                                    <col width="">
+                                    <col width="">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th class="title">
+                                            <span>고평가</span>
+                                        </th>
+                                        <td>
+                                            <span>&gt; 583.<b>70</b></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th class="title">
+                                            <span>매우고평가</span>
+                                        </th>
+                                        <td>
+                                            <span>&gt; 758.<b>81</b></span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
+                <!-- //adequate_stock -->
 
-                <!-- 밸류에이션 값이 없는 종목 -->
-                <!-- <div class="no_value">
-                    <img src="../img/prm_value_chart2.png" alt="밸류에이션에 필요한 데이터가 충분하지 않아 적정주가를 제시하지 않습니다.">
-                </div> -->
-                <!-- //밸류에이션 값이 없는 종목 -->
-                <!-- 밸류에이션 값이 없는 종목인 경우 <div class="value_chart">, <div class="prm_value_chart">, <div class="evaluation_data"> 숨김  -->
+                <!-- 벨류라인 데이터가 없는 경우 -->
+                <div class="adequate_stock">
+                    <div class="box">
+                        <p class="title"><a href="">AI적정주가</a></p>
+                        <div class="con">
+                            <div class="adequate_price">
+                                <div class="nodata_area">
+                                    <div class="no_data">밸류에이션 데이터부족</div>
 
-                <!-- 구글 에드센스 적정가 하단 -->
-                <!-- //구글 에드센스 -->
+                                    <div class="line">
+                                        <span class="g_action g_buying"></span><!-- 매우저평가 -->
+                                        <span class="g_action" style="left: 50%;"></span><!-- 적정가 -->
+                                        <span class="g_action g_sell"></span><!-- 매우고평가 -->
+                                    </div>
+                                    <div class="adequate">
+                                        <span class="remark">
+                                            <div class="txt_filter size_B"><i></i><i></i><i></i><i></i></div>
+                                        </span>
+                                    </div>
 
-                <div class="investCharm_area">
-                    <div class="tab_diagnosis_area">
-                        <div id="containercharm1_1" class="containercharm1"></div>
-                        <!-- <div id="containercharm_test" class="containercharm1"></div> -->
-                        <table cellspacing="0" border="1" class="tableRanking table_alloca">
-                            <colgroup>
-                                <col width="100px">
-                                <col width="">
-                                <col width="">
-                            </colgroup>
+                                </div>
+                                <!-- //nodata_area -->
+                            </div>
+                            <!-- //adequate_price -->
+                        </div>
+                    </div>
+                </div>
+                <!-- //adequate_stock -->
+
+                <!-- 무료회원 -->
+                <div class="adequate_stock premiumLock_AI">
+                    <div class="box">
+                        <p class="title"><a href="">AI적정주가</a></p>
+                        <div class="con">
+                            <div class="adequate_price">
+                                <div class="nodata_area">
+                                    <div class="no_data">
+                                        <a href="#" onclick="event.preventDefault()"; data-modal="modal-5" class="md-trigger">
+                                            프리미엄 가입
+                                        </a> 
+                                    </div>
+
+                                    <div class="line">
+                                        <span class="g_action g_buying"></span><!-- 매우저평가 -->
+                                        <span class="g_action" style="left: 50%;"></span><!-- 적정가 -->
+                                        <span class="g_action g_sell"></span><!-- 매우고평가 -->
+                                    </div>
+                                    <div class="adequate">
+                                        <span class="remark">
+                                            <div class="txt_filter size_B"><i></i><i></i><i></i><i></i></div>
+                                        </span>
+                                    </div>
+
+                                </div>
+                                <!-- //nodata_area -->
+                            </div>
+                            <!-- //adequate_price -->
+                        </div>
+                    </div>
+                </div>
+                <!-- //adequate_stock -->
+
+                <div class="bandchart_more">
+                    <p><i></i>‘AI적정주가 밴드차트’는 적정주가 추세를 시계열로 제공하여, 매매전략을 세우는데 도움을 드리는 서비스입니다.</p>
+                    <a href="#more" class="more">자세히</a>
+                </div>
+                <!-- //bandchart_more -->
+
+                <div class="eventsum_area">
+                    <div class="chart_bg">
+                        <div id="sum_topchart_band" class="chart_layout"></div>
+                    </div>
+
+                    <!-- 밴드차트 마스킹 freeChare -->
+                    <div class="freeChare">
+                        <!-- 프리미엄 서비스 사용자가 아닌 경우 -->
+                        <div class="prm_div weeks_free">
+                            <div class="box">
+                                <div class="left">
+                                    <p class="title">적정주가 - 흐름을 알면 매매타이밍이 보입니다.</p>
+                                    <p class="txt">프리미엄 서비스를 제한없이 마음껏 이용하세요.</p>
+                                </div>
+                                <div class="right">
+                                    <p><a href="../payment/step01.html" class="btn_free">프리미엄 가입</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- //프리미엄 서비스 사용자가 아닌 경우 -->                                                
+                    </div>
+                    <!-- //freeChare -->
+
+                    <div class="tableData">
+                        <table cellspacing="0" border="1" class="tableRanking sum_table">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>주가</th>
+                                    <th>적정가</th>
+                                    <th>저평가</th>
+                                    <th>고평가</th>
+                                </tr>
+                            </thead>
                             <tbody>
                                 <tr>
-                                    <td class="title">
-                                        <span>미래성장성</span>
+                                    <td class="name">20. 02/22</td>
+                                    <td><b>134,249</b></td>
+                                    <td>N/A</td>
+                                    <td>N/A</td>
+                                    <td>N/A</td>
+                                </tr>
+                                <tr>
+                                    <td class="name">20. 02/22</td>
+                                    <td><b>134,249</b></td>
+                                    <td>
+                                        <a href="#" onclick="event.preventDefault()"; data-modal="modal-5" class="md-trigger">
+                                            <span class="remark">
+                                                <div class="txt_filter size_B"><i></i><i></i><i></i><i></i></div>
+                                            </span>
+                                        </a>    
                                     </td>
                                     <td>
-                                        <div class="star_area">
-                                            <div class="starRev">
-                                                <span class="starR on">별1</span>
-                                                <!-- class = starR on 인 경우 별표시-->
-                                                <span class="starR on">별2</span>
-                                                <span class="starR half">별3</span>
-                                                <span class="starR">별4</span>
-                                                <span class="starR">별5</span>
-                                            </div>
-                                        </div>
-                                        <!-- //star_area -->
+                                        <a href="#" onclick="event.preventDefault()"; data-modal="modal-5" class="md-trigger">
+                                            <span class="remark">
+                                                <div class="txt_filter size_B"><i></i><i></i><i></i><i></i></div>
+                                            </span>
+                                        </a>    
                                     </td>
-                                    <td class="num">
-                                        <span>상위 1.2%</span>
+                                    <td>
+                                        <a href="#" onclick="event.preventDefault()"; data-modal="modal-5" class="md-trigger">
+                                            <span class="remark">
+                                                <div class="txt_filter size_B"><i></i><i></i><i></i><i></i></div>
+                                            </span>
+                                        </a>    
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td class="title">
-                                        <span>사업독점력</span>
-                                    </td>
-                                    <td>
-                                        <div class="star_area">
-                                            <div class="starRev">
-                                                <span class="starR on">별1</span>
-                                                <!-- class = starR on 인 경우 별표시-->
-                                                <span class="starR">별2</span>
-                                                <span class="starR">별3</span>
-                                                <span class="starR">별4</span>
-                                                <span class="starR">별5</span>
-                                            </div>
-                                        </div>
-                                        <!-- //star_area -->
-                                    </td>
-                                    <td class="num">
-                                        <span>상위 1.2%</span>
-                                    </td>
+                                    <td class="name">20. 02/22</td>
+                                    <td><b>134,249</b></td>
+                                    <td>13.00</td>
+                                    <td>233.25</td>
+                                    <td>333.25</td>
                                 </tr>
                                 <tr>
-                                    <td class="title">
-                                        <span>재무안전성</span>
-                                    </td>
-                                    <td>
-                                        <div class="star_area">
-                                            <div class="starRev">
-                                                <span class="starR on">별1</span>
-                                                <!-- class = starR on 인 경우 별표시-->
-                                                <span class="starR">별2</span>
-                                                <span class="starR">별3</span>
-                                                <span class="starR">별4</span>
-                                                <span class="starR">별5</span>
-                                            </div>
-                                        </div>
-                                        <!-- //star_area -->
-                                    </td>
-                                    <td class="num">
-                                        <span>상위 1.2%</span>
-                                    </td>
+                                    <td class="name">20. 02/22</td>
+                                    <td><b>134,249</b></td>
+                                    <td>13.00</td>
+                                    <td>233.25</td>
+                                    <td>333.25</td>
                                 </tr>
                                 <tr>
-                                    <td class="title">
-                                        <span>수익성</span>
-                                    </td>
-                                    <td>
-                                        <div class="star_area">
-                                            <div class="starRev">
-                                                <span class="starR on">별1</span>
-                                                <!-- class = starR on 인 경우 별표시-->
-                                                <span class="starR">별2</span>
-                                                <span class="starR">별3</span>
-                                                <span class="starR">별4</span>
-                                                <span class="starR">별5</span>
-                                            </div>
-                                        </div>
-                                        <!-- //star_area -->
-                                    </td>
-                                    <td class="num">
-                                        <span>상위 1.2%</span>
-                                    </td>
+                                    <td class="name">20. 02/22</td>
+                                    <td><b>134,249</b></td>
+                                    <td>13.00</td>
+                                    <td>233.25</td>
+                                    <td>333.25</td>
                                 </tr>
                                 <tr>
-                                    <td class="title">
-                                        <span>현금창출력</span>
-                                    </td>
-                                    <td>
-                                        <div class="star_area">
-                                            <div class="starRev">
-                                                <span class="starR on">별1</span>
-                                                <!-- class = starR on 인 경우 별표시-->
-                                                <span class="starR">별2</span>
-                                                <span class="starR">별3</span>
-                                                <span class="starR">별4</span>
-                                                <span class="starR">별5</span>
-                                            </div>
-                                        </div>
-                                        <!-- //star_area -->
-                                    </td>
-                                    <td class="num">
-                                        <span>상위 1.2%</span>
-                                    </td>
+                                    <td class="name">20. 02/22</td>
+                                    <td><b>134,249</b></td>
+                                    <td>13.00</td>
+                                    <td>233.25</td>
+                                    <td>333.25</td>
+                                </tr>
+                                <tr>
+                                    <td class="name">20. 02/22</td>
+                                    <td><b>134,249</b></td>
+                                    <td>13.00</td>
+                                    <td>233.25</td>
+                                    <td>333.25</td>
+                                </tr>
+                                <tr>
+                                    <td class="name">20. 02/22</td>
+                                    <td><b>134,249</b></td>
+                                    <td>5.00</td>
+                                    <td>233.25</td>
+                                    <td>333.25</td>
                                 </tr>
                             </tbody>
                         </table>
 
-                        <div class="hiding_box">
-                            <div class="alloca_star">
-                                <div class="alloca_box">
-                                    <div class="small_star">
-                                        <h2 class="title">미래성장성</h2>
-                                        <div class="star_area">
-                                            <div class="starRev">
-                                                <span class="starR on">별1</span>
-                                                <!-- class = starR on 인 경우 별표시-->
-                                                <span class="starR on">별2</span>
-                                                <span class="starR">별3</span>
-                                                <span class="starR">별4</span>
-                                                <span class="starR">별5</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- //alloca_box -->
-
-                                <div class="alloca_box">
-                                    <div class="small_star">
-                                        <span class="title">업종</span>
-                                        <div class="star_area">
-                                            <div class="starRev">
-                                                <span class="starR on">별1</span>
-                                                <!-- class = starR on 인 경우 별표시-->
-                                                <span class="starR on">별2</span>
-                                                <span class="starR on">별3</span>
-                                                <span class="starR">별4</span>
-                                                <span class="starR">별5</span>
-                                            </div>
-                                        </div>
-                                        <!-- //star_area -->
-                                    </div>
-                                    <!-- //small_star -->
-                                </div>
-                                <!-- //alloca_box -->
-
-                                <div class="alloca_box">
-                                    <div class="small_star">
-                                        <span class="title">전체</span>
-                                        <span>
-                                            <div class="star_area">
-                                                <div class="starRev">
-                                                    <span class="starR on">별1</span>
-                                                    <!-- class = starR on 인 경우 별표시-->
-                                                    <span class="starR on">별2</span>
-                                                    <span class="starR on">별3</span>
-                                                    <span class="starR">별4</span>
-                                                    <span class="starR">별5</span>
-                                                </div>
-                                            </div>
-                                            <!-- //star_area -->
-                                        </span>
-                                    </div> <!-- //small_star -->
-                                </div>
-                                <!-- //alloca_box -->
-
-                                <p class="txt">미래성장성이 높은 고성장주입니다. 향후 매출액과 영업이익 성장률이 모두 최소 25% 이상 기대되는 기업입니다. 성장주 투자 대상으로 좋습니다. 미래성장성은 과거 실적과 향후 예상 실적을 추정해 종합적으로 평가합니다.</p>
-
-                                <div class="chart_box">
-                                    <div id="containeralloca_star1_1" class="containeralloca_star1"></div>
-                                    <!-- 종목검사 종목진단 class = containeralloca_star1  -->
-                                    <div id="containeralloca_star1_1_2" class="containeralloca_star1"></div>
-
-
-                                    <ul class="chart_legend">
-                                        <li><span><i></i>종목</span></li>
-                                        <li><span><i></i>업종평균</span></li>
-                                        <li><span><i></i>전체평균</span></li>
-                                    </ul>
-                                </div>
-
-                            </div>
-                            <!-- //alloca_star -->
-
-                            <!-- 프리미엄 서비스 사용자가 아닌 경우 -->
-                            <div class="prm_div weeks_free">
-                                <div class="box">
-                                    <div class="left">
-                                        <p class="title">종목진단 - 투자매력 오각형 종목은?</p>
-                                        <p class="txt">프리미엄 서비스를 제한없이 마음껏 이용하세요.</p>
-                                    </div>
-                                    <div class="right">
-                                        <p><a href="../payment/step01.html" class="btn_free">프리미엄 가입</a></p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- //프리미엄 서비스 사용자가 아닌 경우 -->
-
-                            <div class="alloca_star">
-                                <div class="alloca_box">
-                                    <div class="small_star">
-                                        <h2 class="title">현금창출력</h2>
-                                        <div class="star_area">
-                                            <div class="starRev">
-                                                <span class="starR on">별1</span>
-                                                <!-- class = starR on 인 경우 별표시-->
-                                                <span class="starR on">별2</span>
-                                                <span class="starR">별3</span>
-                                                <span class="starR">별4</span>
-                                                <span class="starR">별5</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- //alloca_box -->
-
-                                <div class="alloca_box">
-                                    <div class="small_star">
-                                        <span class="title">업종</span>
-                                        <div class="star_area">
-                                            <div class="starRev">
-                                                <span class="starR on">별1</span>
-                                                <!-- class = starR on 인 경우 별표시-->
-                                                <span class="starR on">별2</span>
-                                                <span class="starR on">별3</span>
-                                                <span class="starR">별4</span>
-                                                <span class="starR">별5</span>
-                                            </div>
-                                        </div>
-                                        <!-- //star_area -->
-                                    </div>
-                                    <!-- //small_star -->
-                                </div>
-                                <!-- //alloca_box -->
-
-                                <div class="alloca_box">
-                                    <div class="small_star">
-                                        <span class="title">전체</span>
-                                        <span>
-                                            <div class="star_area">
-                                                <div class="starRev">
-                                                    <span class="starR on">별1</span>
-                                                    <!-- class = starR on 인 경우 별표시-->
-                                                    <span class="starR on">별2</span>
-                                                    <span class="starR on">별3</span>
-                                                    <span class="starR">별4</span>
-                                                    <span class="starR">별5</span>
-                                                </div>
-                                            </div>
-                                            <!-- //star_area -->
-                                        </span>
-                                    </div> <!-- //small_star -->
-                                </div>
-                                <!-- //alloca_box -->
-
-                                <div class="chart_box">
-                                    <div id="containeralloca_star1_2" class="containeralloca_star1 wd3"></div>
-                                    <!-- 종목검사 종목진단 class = containeralloca_star1  -->
-                                    <div id="containeralloca_star1_2_1" class="containeralloca_star1 wd3"></div>
-                                    <!-- <div id="containeralloca_star1_2_2" class="containeralloca_star1 wd3"></div> -->
-                                </div>
-
-                                <span class="charm_num lately_allocation">
-                                    <strong class="pls"><b>+</b></strong>
-                                    <span class="total">영업활동현금<br>(백만달러) / 정수</span>
-                                </span>
-
-                                <ul class="chart_legend">
-                                    <li><span><i></i>종목</span></li>
-                                    <li><span><i></i>업종평균</span></li>
-                                    <li><span><i></i>전체평균</span></li>
-                                </ul>
-
-                                <p class="txt">워렌 버핏이 강조하는 경제적해자가 가장 넓은 기업입니다. 넓은 경제적
-                                    해자를 가진 기업은 현재의 고수익을 오랫동안 지킬 수 있는 사업독점력을
-                                    갖춘 회사를 말합니다. 향후에도 장기간 이익을 훼손하지 않고 고수익을
-                                    유지할 수 있어 꾸준한 주가 상승의 원동력이 됩니다.
-                                    <br>
-                                    별점 5점은 미국 주식 5,000여개 중 상위 2.6%인 131개 기업만이 받았
-                                    습니다. 사업독점력은 장기간 ROE, 낮은 원가율, 영업활동 현금흐름,
-                                    연평균 매출 성장률 등을 종합해 평가합니다.
-                                </p>
-                            </div>
-                            <!-- //alloca_star -->
-                        </div>
-                        <!-- //hiding_box -->
-
-                        <div class="compet_chart">
-                            <h3 class="title">경쟁사 투자매력도</h3>
-                            <div class="swiper-container swiper_competChar">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <div class="chart_area">
-                                            <div class="chartData">
-                                                <div id="chart_spider_mini_01" class="containercompet1"></div>
-                                                <span class="chart_name">애플 (Apple Inc.)</span>
-
-                                                <div class="chart_star">
-                                                    <div class="star_area">
-                                                        <span class="title">11배당</span>
-                                                        <div class="starRev">
-                                                            <span class="starR on">별1</span>
-                                                            <!-- class = starR on 인 경우 별표시-->
-                                                            <span class="starR on">별2</span>
-                                                            <span class="starR on">별3</span>
-                                                            <span class="starR">별4</span>
-                                                            <span class="starR">별5</span>
-                                                        </div>
-                                                    </div>
-                                                    <!-- //star_area -->
-                                                    <div class="star_area">
-                                                        <span class="title">사업</span>
-                                                        <div class="starRev">
-                                                            <span class="starR on">별1</span>
-                                                            <!-- class = starR on 인 경우 별표시-->
-                                                            <span class="starR on">별2</span>
-                                                            <span class="starR on">별3</span>
-                                                            <span class="starR">별4</span>
-                                                            <span class="starR">별5</span>
-                                                        </div>
-                                                    </div>
-                                                    <!-- //star_area -->
-                                                    <div class="star_area">
-                                                        <span class="title">재무</span>
-                                                        <div class="starRev">
-                                                            <span class="starR on">별1</span>
-                                                            <!-- class = starR on 인 경우 별표시-->
-                                                            <span class="starR">별2</span>
-                                                            <span class="starR">별3</span>
-                                                            <span class="starR">별4</span>
-                                                            <span class="starR">별5</span>
-                                                        </div>
-                                                    </div>
-                                                    <!-- //star_area -->
-                                                    <div class="star_area">
-                                                        <span class="title">수익</span>
-                                                        <div class="starRev">
-                                                            <span class="starR on">별1</span>
-                                                            <!-- class = starR on 인 경우 별표시-->
-                                                            <span class="starR on">별2</span>
-                                                            <span class="starR on">별3</span>
-                                                            <span class="starR">별4</span>
-                                                            <span class="starR">별5</span>
-                                                        </div>
-                                                    </div>
-                                                    <!-- //star_area -->
-                                                    <div class="star_area">
-                                                        <span class="title">현금</span>
-                                                        <div class="starRev">
-                                                            <span class="starR on">별1</span>
-                                                            <!-- class = starR on 인 경우 별표시-->
-                                                            <span class="starR on">별2</span>
-                                                            <span class="starR">별3</span>
-                                                            <span class="starR">별4</span>
-                                                            <span class="starR">별5</span>
-                                                        </div>
-                                                    </div>
-                                                    <!-- //star_area -->
-                                                    <a href="" class="more">자세히 <i>>></i> </a>
-                                                </div>
-                                                <!-- //chart_star -->
-                                            </div>
-                                        </div>
-                                        <!-- //chart_area -->
-                                    </div>
-                                    <!-- //swiper-slide -->
-                                    <div class="swiper-slide">
-                                        <div class="chart_area">
-                                            <div class="chartData">
-                                                <div id="chart_spider_mini_02" class="containercompet1"></div>
-                                                <span class="chart_name"><strong>애플</strong>(Apple Inc.)</span>
-                                                <div class="chart_star">
-                                                    <div class="star_area">
-                                                        <span class="title">22배당</span>
-                                                        <div class="starRev">
-                                                            <span class="starR on">별1</span>
-                                                            <!-- class = starR on 인 경우 별표시-->
-                                                            <span class="starR on">별2</span>
-                                                            <span class="starR on">별3</span>
-                                                            <span class="starR">별4</span>
-                                                            <span class="starR">별5</span>
-                                                        </div>
-                                                    </div>
-                                                    <!-- //star_area -->
-                                                    <div class="star_area">
-                                                        <span class="title">사업</span>
-                                                        <div class="starRev">
-                                                            <span class="starR on">별1</span>
-                                                            <!-- class = starR on 인 경우 별표시-->
-                                                            <span class="starR on">별2</span>
-                                                            <span class="starR on">별3</span>
-                                                            <span class="starR">별4</span>
-                                                            <span class="starR">별5</span>
-                                                        </div>
-                                                    </div>
-                                                    <!-- //star_area -->
-                                                    <div class="star_area">
-                                                        <span class="title">재무</span>
-                                                        <div class="starRev">
-                                                            <span class="starR on">별1</span>
-                                                            <!-- class = starR on 인 경우 별표시-->
-                                                            <span class="starR">별2</span>
-                                                            <span class="starR">별3</span>
-                                                            <span class="starR">별4</span>
-                                                            <span class="starR">별5</span>
-                                                        </div>
-                                                    </div>
-                                                    <!-- //star_area -->
-                                                    <div class="star_area">
-                                                        <span class="title">수익</span>
-                                                        <div class="starRev">
-                                                            <span class="starR on">별1</span>
-                                                            <!-- class = starR on 인 경우 별표시-->
-                                                            <span class="starR on">별2</span>
-                                                            <span class="starR on">별3</span>
-                                                            <span class="starR">별4</span>
-                                                            <span class="starR">별5</span>
-                                                        </div>
-                                                    </div>
-                                                    <!-- //star_area -->
-                                                    <div class="star_area">
-                                                        <span class="title">현금</span>
-                                                        <div class="starRev">
-                                                            <span class="starR on">별1</span>
-                                                            <!-- class = starR on 인 경우 별표시-->
-                                                            <span class="starR on">별2</span>
-                                                            <span class="starR">별3</span>
-                                                            <span class="starR">별4</span>
-                                                            <span class="starR">별5</span>
-                                                        </div>
-                                                    </div>
-                                                    <!-- //star_area -->
-                                                    <a href="" class="more">자세히 <i>>></i> </a>
-                                                </div>
-                                                <!-- //chart_star -->
-                                            </div>
-                                        </div>
-                                        <!-- //chart_area -->
-                                    </div>
-                                    <!-- //swiper-slide -->
-                                    <div class="swiper-slide">
-                                        <div class="chart_area">
-                                            <div class="chartData">
-                                                <div id="chart_spider_mini_03" class="containercompet1"></div>
-                                                <span class="chart_name"><strong>애플</strong>(Apple Inc.)</span>
-                                                <div class="chart_star">
-                                                    <div class="star_area">
-                                                        <span class="title">11배당</span>
-                                                        <div class="starRev">
-                                                            <span class="starR on">별1</span>
-                                                            <!-- class = starR on 인 경우 별표시-->
-                                                            <span class="starR on">별2</span>
-                                                            <span class="starR on">별3</span>
-                                                            <span class="starR">별4</span>
-                                                            <span class="starR">별5</span>
-                                                        </div>
-                                                    </div>
-                                                    <!-- //star_area -->
-                                                    <div class="star_area">
-                                                        <span class="title">사업</span>
-                                                        <div class="starRev">
-                                                            <span class="starR on">별1</span>
-                                                            <!-- class = starR on 인 경우 별표시-->
-                                                            <span class="starR on">별2</span>
-                                                            <span class="starR on">별3</span>
-                                                            <span class="starR">별4</span>
-                                                            <span class="starR">별5</span>
-                                                        </div>
-                                                    </div>
-                                                    <!-- //star_area -->
-                                                    <div class="star_area">
-                                                        <span class="title">재무</span>
-                                                        <div class="starRev">
-                                                            <span class="starR on">별1</span>
-                                                            <!-- class = starR on 인 경우 별표시-->
-                                                            <span class="starR">별2</span>
-                                                            <span class="starR">별3</span>
-                                                            <span class="starR">별4</span>
-                                                            <span class="starR">별5</span>
-                                                        </div>
-                                                    </div>
-                                                    <!-- //star_area -->
-                                                    <div class="star_area">
-                                                        <span class="title">수익</span>
-                                                        <div class="starRev">
-                                                            <span class="starR on">별1</span>
-                                                            <!-- class = starR on 인 경우 별표시-->
-                                                            <span class="starR on">별2</span>
-                                                            <span class="starR on">별3</span>
-                                                            <span class="starR">별4</span>
-                                                            <span class="starR">별5</span>
-                                                        </div>
-                                                    </div>
-                                                    <!-- //star_area -->
-                                                    <div class="star_area">
-                                                        <span class="title">현금</span>
-                                                        <div class="starRev">
-                                                            <span class="starR on">별1</span>
-                                                            <!-- class = starR on 인 경우 별표시-->
-                                                            <span class="starR on">별2</span>
-                                                            <span class="starR">별3</span>
-                                                            <span class="starR">별4</span>
-                                                            <span class="starR">별5</span>
-                                                        </div>
-                                                    </div>
-                                                    <!-- //star_area -->
-                                                    <a href="" class="more">자세히 <i>>></i> </a>
-                                                </div>
-                                                <!-- //chart_star -->
-                                            </div>
-                                        </div>
-                                        <!-- //chart_area -->
-                                    </div>
-                                    <!-- //swiper-slide -->
-
-                                </div>
-                                <!-- //swiper-wrapper -->
-                            </div>
-                        </div>
-                        <!-- //compet_chart -->
-
-                        <a href="#" class="compet_chart_uses">
-                            <h3 class="title">투자매력 <strong>스파이더차트</strong> 활용 가이드</h3>
-                            <img src="../img/more_Black.png" alt="더보기" class="more">
-                        </a>
-                        <!-- //compet_chart_uses -->
-
                     </div>
-                    <!-- //tab_diagnosis_area -->
+                    <!-- //tableData -->
                 </div>
-                <!-- //investCharm_area -->
+                <!-- //eventsum_area -->
+
+                <div class="bandchart_sume" id="more">
+                    <p class="txt"><i></i>‘AI적정주가 밴드차트’는 적정주가 추세를 시계열로 제공하여, 매매전략을 세우는데 도움을 드리는 서비스입니다. </p>
+                    <p class="txt">‘적정주가(intrinsic value)’란 기업의 미래 창출 이익 또는 현금 흐름을 현재 기준으로 평가한 가격입니다.</p>
+
+                    <div class="box">
+                        <p class="title">초이스스탁US의 AI적정주가 밴드차트는</p>
+                        <ul>
+                            <li><i>1.</i>초보자도 쉽게 이해할 수 있도록 적정주가를 차트에 보여 드립니다.</li>
+                            <li><i>2.</i>주가가 저평가, 고평가 되었을 때를 간단하게 확인 할 수 있도록 도와 드립니다.</li>
+                            <li><i>3.</i>증권사가 제시하는 평균 목표가와는 달리, 특허 받은 알고리즘을 사용해 직접 목표가를 계산해 드립니다.</li>
+                        </ul>
+                    </div>
+                    <p class="guide">초이스스탁US에서 제공하는 투자매력 점수가 우량 기업이고, 저평가 상태에 있는 종목에 투자하는 것이 좋습니다.</p>
+                    <a href="https://www.choicestock.co.kr/stock/vod_view/93" class="youtube_link"
+                        target="_blank"><i></i>매매 타이밍을 쉽게 잡을 수 있는 적정주가 매매전략</a>
+                    <!-- <a href="https://youtu.be/rGb3ZmSbcFc" class="youtube_link" target="_blank"><i></i>매매 타이밍을 쉽게 잡을 수 있는 적정주가 매매전략</a> 한경앱에선 유튜브 링크 -->
+                </div>
+                <!-- //bandchart_sume -->
             </div>
             <!-- //sub_mid -->
-
-            <!-- 구글 에드센스 본문 하단 -->
-            <!-- //구글 에드센스 -->
 
             <div class="premiumLock_cunt" style="bottom: 140px;"> <!--  bottom 값은 문구 확인용으로 들어간 코드라 실제 반영시는 제거해주세요 -->
                 <!-- 비 로그인 -->
@@ -733,7 +473,6 @@
                     <a href="../payment/step01.html" class="go_link">무제한</a>
                 </div>                    
             </div>
-
         </div>
         <!-- //container -->
 
@@ -780,7 +519,63 @@
             </div>
             <!-- //notice -->
         </div>
+        <!-- //footer -->
     </div>
     <!-- //wrap -->
 
 </body>
+
+
+<!-- [첫달 3,000] 초이스스탁US 프리미엄 첫달 3,000원 -->
+<div class="first_month_3300 md-modal md-effect-3" id="modal-5">
+    <!-- class : md-show 가 없는 경우 팝업 숨김, md-show 있는 경우 팝업 노출  -->
+    <div class="md-content">
+        <div id="setting" class="setting_area">
+            <div class="pop_header">
+                <a href="#setting_anchor" title="로그인 레이어 닫기" class="close"><img src="../img/clse_w.png" alt="팝업닫기"></a>
+                <div class="sub_top">
+                    <h2 class="h2_title">초이스스탁US 프리미엄<span><strong>로그인만하면 2주 무료!</strong></span></h2>
+                    <p class="period">미국주식 추천과 분석, 알림까지 한번에!</p>
+                </div>
+            </div>
+            <!-- //pop_header -->
+            <div class="pop_con">
+                <table cellspacing="0" border="0" class="tableRanking type_compare">
+                    <tbody>
+                        <tr>
+                            <td class="mid_td"><span>• 5분이면 끝! 매력적인 종목을 한눈에 <b>종목진단</b></span></td>
+                        </tr>
+                        <tr>
+                            <td class="mid_td"><span>• 엄선된 저평가 우량주만 콕! <b>종목추천/포트폴리오</b></span></td>
+                        </tr>
+                        <tr>
+                            <td class="mid_td"><span>• 투자매력 + 저평가 + 수급 <b>오늘의 승부주</b></span></td>
+                        </tr>
+                        <tr>
+                            <td class="mid_td"><span>• 투자매력주의 매매판단을 빠르게! <b>AI적정주가</b></span></td>
+                        </tr>
+                        <tr>
+                            <td class="mid_td"><span>• 나만의 취향저격 종목추천 <b>종목캐치</b></span></td>
+                        </tr>
+                        <tr>
+                            <td class="mid_td"><span>• 관심종목/보유종목 모니터링 <b>관심종목/원스톱진단</b></span></td>
+                        </tr>
+                        <tr>
+                            <td class="mid_td"><span>• 종목추천 + 관심종목 업데이트 <b>알림서비스</b></span></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+            <div class="pop_btm">
+                <div class="btnArea payBtn">
+                    <!-- <a href="login_complete.html" class="btn btn_save"><b>프리미엄</b> 가입하기<i></i></a> -->
+                    <a href="stock/service_prm.html" class="btn btn_save"><b>프리미엄 2주 무료체험</b><i></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="md-overlay"></div><!-- the overlay element -->
+
+</html>

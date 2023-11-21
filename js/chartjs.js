@@ -4598,7 +4598,7 @@ $(document).ready(function () {
                 zoomType: 'x',
                 backgroundColor: '#f2faff',
                 borderColor: '#877edf',
-                height: 280,
+                // height: 280,
                 plotBorderColor: '#1d4a88',
                 plotShadow: false,
                 marginLeft: 0,

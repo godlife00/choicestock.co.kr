@@ -14,18 +14,6 @@ $(document).ready(function () {
     /************************/
     //로그인 팝업
     var setWindow = $('.setting_pop');
-
-    /* 개발처리
-    var setpay_edt01 = $('.pay_edt_01');
-    var setpay_edt02 = $('.pay_edt_02');
-    var setpay_edt02_1 = $('.pay_edt_02_1');
-    var setpay_edt02_2 = $('.pay_edt_02_2');
-    var setcatch_edt01 = $('.catch_edt_01');
-    var setcatch_edt02 = $('.catch_edt_02');
-    var setcatch_edt03 = $('.catch_edt_03');
-    var setcatch_edt03_2 = $('.catch_edt_03_2');
-    var setcatch_edt03_3 = $('.catch_edt_03_3');
-    */
     var setterms_01 = $('.pay_terms_01');
     var setterms_02 = $('.pay_terms_02');
     var setterms_03 = $('.pay_terms_03');
@@ -35,62 +23,6 @@ $(document).ready(function () {
         setWindow.addClass('open');
         $('html, body').css("overflow", "hidden");
     });
-
-    /* 개발처리
-    $('.show_pop01').click(function () {
-        setpay_edt01.addClass('open');
-        $('html, body').css("overflow", "hidden");
-    });
-    $('.show_pop02').click(function () {
-        setpay_edt02.addClass('open');
-        $('html, body').css("overflow", "hidden");
-    });
-    $('.show_pop02_1').click(function () {
-        setpay_edt02_1.addClass('open');
-        $('html, body').css("overflow", "hidden");
-    });
-    $('.show_pop02_2').click(function () {
-        setpay_edt02_2.addClass('open');
-        $('html, body').css("overflow", "hidden");
-    });
-    $('.show_pop03').click(function () {
-        setWindow.removeClass('open');
-        setcatch_edt01.addClass('open');
-        $('html, body').css("overflow", "hidden");
-    });
-    $('.show_pop04').click(function () {
-        setWindow.removeClass('open');
-        setcatch_edt02.addClass('open');
-        $('html, body').css("overflow", "hidden");
-    });
-    $('.show_pop05').click(function () {
-        setWindow.removeClass('open');
-        setcatch_edt03.addClass('open');
-        $('html, body').css("overflow", "hidden");
-    });
-    $('.show_pop05_2').click(function () {
-        setWindow.removeClass('open');
-        setcatch_edt03_2.addClass('open');
-        $('html, body').css("overflow", "hidden");
-    });
-    $('.show_pop05_3').click(function () {
-        setWindow.removeClass('open');
-        setcatch_edt03_3.addClass('open');
-        $('html, body').css("overflow", "hidden");
-    });
-    */
-    // $('.age_pop01').click(function () {
-    //     setterms_01.addClass('open');
-    //     $('html, body').css("overflow", "hidden");
-    // });
-    // $('.age_pop02').click(function () {
-    //     setterms_02.addClass('open');
-    //     $('html, body').css("overflow", "hidden");
-    // });
-    // $('.age_pop03').click(function () {
-    //     setterms_03.addClass('open');
-    //     $('html, body').css("overflow", "hidden");
-    // });
 
     $('#setting .close').click(function () {
         setWindow.removeClass('open');
@@ -554,7 +486,7 @@ $(document).ready(function () {
         autoplay: {
             delay: 3500,
             disableOnInteraction: false,
-        },        
+        },
         spaceBetween: 15,
         loop: true,
         pagination: {
@@ -802,16 +734,6 @@ $(document).ready(function () {
         $(this).addClass("active");
     });
 
-    /* 개발처리
-        //관심종목 찾아보기
-        $('.globalStock .catch_edt #catch_cncl .catch_from .label').on("click", function () {
-            if ($(this).hasClass("active")) {                        
-                $(this).removeClass('active');                  
-            } else {                                    
-                $(this).addClass('active');              
-            }        
-        });
-    */
     //faq
     var article = $('.faq01 .faq .article');
     article.addClass('hide');
@@ -1052,7 +974,7 @@ $(document).ready(function () {
         $('.globalStock.kiwoom .sub_service .alliance_wrap .f_nightalarm').css('margin-bottom', '67px')
     }
     // 알림(종목추천, 포트폴리오) 수신​ 여부
-    $(".globalStock.wowtv .sub_alarm .alarm_from .label.alarm_chk label").on("click", function () {        
+    $(".globalStock.wowtv .sub_alarm .alarm_from .label.alarm_chk label").on("click", function () {
         var labelTxT = $('.globalStock.wowtv .sub_alarm .mapage_form .alarm_from .label.alarm_chk .label_chk');
         setTimeout(function () {
             if (labelTxT.hasClass("rcpt")) {
@@ -1063,7 +985,7 @@ $(document).ready(function () {
         }, 150);
     });
     // 광고성 알림(푸시,문자) 수신 여부​
-    $(".globalStock.wowtv .sub_alarm .alarm_from .label.advertisement_chk label").on("click", function () {        
+    $(".globalStock.wowtv .sub_alarm .alarm_from .label.advertisement_chk label").on("click", function () {
         var labelTxT_adv = $('.globalStock.wowtv .sub_alarm .mapage_form .alarm_from .label.advertisement_chk .label_chk');
         setTimeout(function () {
             if (labelTxT_adv.hasClass("rcpt")) {
@@ -1078,14 +1000,14 @@ $(document).ready(function () {
     $(".globalStock.wowtv .sub_login .agree_area .all_chk_label .label").on("click", function () {
         console.log("전체 동의하기");
         var test = $('.globalStock.wowtv .sub_login .agree_area .agree_from .label');
-        if ($(this).hasClass("active")) {            
+        if ($(this).hasClass("active")) {
             $(this).removeClass('active');
             test.removeClass('active');
         } else {
             $(this).addClass('active');
-            test.addClass('active');            
-        }        
-    });    
+            test.addClass('active');
+        }
+    });
 
     // 주문하기 버튼            
     // Hide Header on on scroll down
@@ -1212,19 +1134,19 @@ $(document).ready(function () {
         $('.blocker').show();
         $('.agreePopBox.box_04').show().addClass('slideUp');
     });
-    $('.v_signalStreng.globalStock .sub_payment .payment_guide .pay_guideTxt').on('click', function () {        
+    $('.v_signalStreng.globalStock .sub_payment .payment_guide .pay_guideTxt').on('click', function () {
         $('.modal').hide().removeClass('slideUp');
         $('.blocker').show();
         $('.cardBox.card_overseas_01').show().addClass('slideUp');
     });
     // 미국주식창 사용안함 팝업
-    $('.pop_secession').on('click', function () {        
+    $('.pop_secession').on('click', function () {
         $('.modal').hide().removeClass('slideUp');
         $('.blocker').show();
         $('.wow_secession').show().addClass('md-show slideUp');
     });
     // 미국주식창 서비스 회원탈퇴 팝업
-    $('.btn_ssin').on('click', function () {        
+    $('.btn_ssin').on('click', function () {
         $('.modal').hide().removeClass('slideUp');
         $('.blocker').show();
         $('.wow_secession2').show().addClass('md-show slideUp');
@@ -1239,6 +1161,62 @@ $(document).ready(function () {
         $('.blocker').hide();
         $('.modal').hide().removeClass('slideUp');
     });
+
+
+    // 개요 리뉴얼에서만 쓰는 스크립트 230905
+    // 툴팁
+    $(".v_signalStreng.globalStock .txt_guide").click(function (e) {
+        e.stopPropagation();
+        $(this).siblings(".tooltip").toggle();
+    });
+    $(".v_signalStreng.globalStock .clse_tooltip").click(function () {
+        $(".tooltip").hide();
+    });
+    $(document).click(function (e) {
+        if (!$(e.target).closest('.tooltip').length) {
+            $(".tooltip").hide();
+        }
+    });
+    // 매수신호 모달 팝업        
+    $('.v_signalStreng.globalStock .mainBox.attr .adequateArea .listWrap .mid .latest_signal').on('click', function () {
+        $('.modal').hide().removeClass('slideUp');
+        $('.blocker').show();
+        $('.signal_pop01').show().addClass('slideUp');
+    });
+
+    // 매매신호 플로팅 배너 열기, 닫기 스크립트
+    // 스크롤 이벤트를 감지하여 처리
+    function scrollsignalpop() {
+        var mainBox = $('.mainBox.outline');
+        var mainBoxOffset = mainBox.offset() ? mainBox.offset().top : 0;
+        var windowHeight = $(window).height();
+        var scroll = $(window).scrollTop();
     
+        // mainBox가 페이지에 존재하는 경우
+        if (mainBox.length) {
+            if (scroll + windowHeight > mainBoxOffset) {
+                $('.v_signalStreng.globalStock .signalpop .box').slideDown(1200);
+            }
+        } else { // mainBox가 페이지에 존재하지 않는 경우
+            $('.v_signalStreng.globalStock .signalpop .box').slideDown(1200);
+        }
+    }
+    
+    $(document).ready(function () {
+        scrollsignalpop(); // 페이지 로드 시 함수 호출
+        $(window).scroll(function () {
+            scrollsignalpop();
+        });
+    });
+    
+
+    $('.v_signalStreng.globalStock .signalpop.monthly_payment .ftr, .signalpop .bg_gray').on('click', function () {
+        $('.signalpop').removeClass('open');
+        $('.signalpop .box').animate({
+            'opacity': 0,
+            'height': 0
+        });
+        // return false;
+    });
 
 });

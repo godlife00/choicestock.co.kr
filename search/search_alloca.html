@@ -44,16 +44,33 @@
 </head>
 
 <body class="v_signalStreng globalStock">
+    <!-- 신규 서비스/기능 개선 시 안내 팝업 -->
+    <div class="signalpop monthly_payment">
+        <!-- 보여줘야 하는 경우 class open -->
+        <div class="bg_gray"></div>
+        <div class="box">
+            <div class="ftr">
+                <span href="javascript:closeWin();" class="btn_close">닫기</span>                
+            </div>
+
+            <div class="content" onclick="location.href ='../stock/service.html'" style="cursor:pointer;">
+                <div class="info_txt">
+                    <p class="txt01">AI가 알려주는 투자타이밍!</p>
+                    <p class="txt02">전종목 매매신호가 무제한</p>
+                </div>
+            </div>            
+        </div>
+    </div>
 
     <div id="wrap">
         <!-- 하단 GNB -->
         <div class="gnb">
             <ul class="list">
                 <li class="home"><a href="../index.html">홈</a></li>
-                <li class="sch"><a href="../search/search_outline.html">검색</a></li>
+                <li class="sch"><a href="../search/searching.html">검색</a></li>
                 <li class="stock active"><a href="../stock/recom.html">추천</a></li>                
-                <li class="excavation"><a href="../attractiveness/attractiveness.html">발굴</a></li>                
-                <li class="attention"><a href="../search/_searching.html">관심</a></li>                
+                <li class="excavation"><a href="../stock/note.html">발굴</a></li>                
+                <li class="attention"><a href="../search/searching_attention.html">관심</a></li>                
             </ul>
         </div>
         <!-- //gnb -->
@@ -112,7 +129,8 @@
                 <!-- 프리미엄 서비스 부분 -->
                 <ul class="tabs_5 prm_tabs">
                     <li><a href="search_outline.html">개요</a></li>
-                    <li><a href="search_diagnosis.html">종목진단</a></li>
+                    <li><a href="search_diagnosis.html">진단</a></li>
+                    <li><a href="search_value.html">밸류</a></li>
                     <li><a href="search_finance.html">재무</a></li>
                     <li><a href="search_news.html">뉴스</a></li>
                     <li class="active"><a href="search_alloca.html">배당</a></li>
@@ -244,22 +262,6 @@
                 <!-- //배당주 투자매력도 없는 경우 -->
             </div>
             <!-- //sub_mid -->
-
-            <div class="premiumLock_cunt" style="bottom: 140px;"> <!--  bottom 값은 문구 확인용으로 들어간 코드라 실제 반영시는 제거해주세요 -->
-                <!-- 비 로그인 -->
-                <div class="more">                                                
-                    매매신호 /<span class="">종목진단 매일 3건 무료</span>
-                    <a href="../member/login_sns.html" class="go_link">회원가입</a>
-                </div>                    
-            </div>
-            <div class="premiumLock_cunt">
-                <!-- 무료회원 -->
-                <div class="more">                                                
-                    종목진단 / 적정주가 2건 / <span class="">매일 3건 무료</span>
-                    <a href="../payment/step01.html" class="go_link">무제한</a>
-                </div>                    
-            </div>
-
         </div>
         <!-- //container -->
 
