@@ -1244,9 +1244,13 @@ $(document).ready(function () {
     });
     // 매수신호 모달 팝업        
     $('.v_signalStreng.globalStock .mainBox.attr .adequateArea .listWrap .mid .latest_signal').on('click', function () {
-        $('.modal').hide().removeClass('slideUp');
-        $('.blocker').show();
-        $('.signal_pop01').show().addClass('slideUp');
+        if ($(this).hasClass('no_signal')) {            
+            return;
+        } else {
+            $('.modal').hide().removeClass('slideUp');
+            $('.blocker').show();
+            $('.signal_pop01').show().addClass('slideUp');
+        }        
     });
 
     // 매매신호 플로팅 배너 열기, 닫기 스크립트
