@@ -28,7 +28,7 @@
     <script src="../node_modules/highcharts/modules/data.js"></script>
     <script src="../node_modules/highcharts/modules/hollowcandlestick.js"></script>
     <script src="../node_modules/highcharts/modules/no-data-to-display.js"></script>
-    <script src="../node_modules/highcharts/modules/treemap.js"></script>    
+    <script src="../node_modules/highcharts/modules/treemap.js"></script>
     <script src="../node_modules/highcharts/modules/exporting.js"></script>
     <script src="../node_modules/highcharts/modules/export-data.js"></script>
     <script src="../node_modules/highcharts/modules/accessibility.js"></script>
@@ -43,57 +43,51 @@
     <script src="../js/globalstock.js"></script>
 </head>
 
-<!-- 제휴사이트 민트 칼라 적용 class = mint  -->
-<body class="globalStock">
+<body class="v_signalStreng globalStock">
     <div id="wrap">
-        <!-- 하단 GNB -->
-        <div class="gnb">
-            <ul class="list">
-                <li class="home"><a href="../index.html"><i></i> 홈</a></li>
-                <li class="stock"><a href="../stock/recom.html">추천</a></li>
-                <li class="analysis"><a href="../search/search_diagnosis.html">진단</a></li>
-                <li class="excavation active"><a href="../stock/note.html">발굴</a></li>
-                </li>
-                <li class="menu"><a href="../stock/menu.html">메뉴</a></li>
-            </ul>
-        </div>
-        <!-- //gnb -->
-
         <div id="header" class="header h_sub">
             <div class="headerTop">
-                <h1 class="headerLogo"><span>초이스스탁</span>
-                </h1>
-                <div class="hm">
-                    <a href="../search/searching.html" class="go_sch"><img src="../img/icon_search.svg" alt="검색하기"></a>
-                </div>
-                <!-- //hm -->
+                <h1 class="headerLogo"><span>발굴</span></h1>
+                <a href="menu.html" class="h_menu">
+                    <div class="menu-icon">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+                </a>
             </div>
             <!-- //headerTop -->
         </div>
 
         <!-- 전종목 투자매력도 class = sub_attract-->
         <div id="container" class="sub_attract">
+            <!-- 하단 GNB -->
+            <div class="gnb">
+                <ul class="list">
+                    <li class="home"><a href="../index.html">홈</a></li>
+                    <li class="sch"><a href="../search/searching.html">검색</a></li>
+                    <li class="stock"><a href="../stock/recom.html">추천</a></li>
+                    <li class="excavation active"><a href="../stock/note.html">발굴</a></li>
+                    <li class="attention"><a href="../search/searching_attention.html">관심</a></li>
+                </ul>
+            </div>
+            <!-- //gnb -->
+
             <!-- 주요 콘텐츠 -->
-            <h2 class="h2_title">발굴</h2>
             <div class="tab_area">
-                <ul class="tbas_lb tabs_4">                    
+                <ul class="tbas_lb tabs_4">
                     <li><a href="../stock/recipe.html">레시피</a></li>
                     <li><a href="../attractiveness/attractiveness.html" class="active">투자매력도</a></li>
-                    <li><a href="../stock/catch.html">캐치</a></li>                    
                     <li><a href="../stock/note.html">종목노트</a></li>
                 </ul>
             </div>
-            <!-- //tab_area -->            
+            <!-- //tab_area -->
 
             <div class="sub_top">
                 <div class="">
                     <div class="txt_box">
                         <p class="txt">
-                            미국 주식 5,000개 기업의 투자매력도 순위를 매일 제공합니다.<br>
-                            <br>
-                            투자매력 종합점수가 높을수록 우량주입니다. 점수가 높고 주가가 적정주가 보다 낮은 기업에 투자하면 장기적으로 좋은 수익률을 낼 수 있습니다.<br>
-                            <br>
-                            투자매력 종합점수는 빅 데이터 전문 기업인 (주)데이터히어로가  22개 요인(Factor) 분석에 따라 기업의 배당, 독점력, 안전성, 성장성, 현금창출력을 종합 평가해 점수와 순위를 제공합니다.
+                            미국주식 6,000여개 기업에 대한 투자매력도 순위를 제공합니다. 스마트 스코어가 높을 수록 우량 기업입니다.
                         </p>
                     </div>
                     <!-- //txt_box -->
@@ -106,8 +100,8 @@
                     <ul>
                         <li class=""><strong>시가총액</strong>20억달러~100억달러 미만</li>
                         <li class="">흑자기업</li>
-                    </ul>                                        
-                    <a href="#setting" data-modal="modal-3" class="md-trigger btn_schSet button" ><i></i>정렬</a>
+                    </ul>
+                    <a href="#setting" data-modal="modal-3" class="md-trigger btn_schSet button"><i></i>정렬</a>
                 </div>
 
                 <p class="table_guide">*항목 점수/시가총액 순 정렬</p>
@@ -127,13 +121,16 @@
                                 <span class="txt_guide"><img src="../img/txt_guide.svg" alt="가이드보기"></span>
                                 <!-- 투자의견, 투자매력 가이드 레이어 -->
                                 <div class="guide_box">
-                                    <span class="clse">닫기</span>                          
+                                    <span class="clse">닫기</span>
                                     <p class="txt"><strong>투자매력 점수</strong>는 해당 종목의 우량주 여부를 판단하는데 도움을 드립니다.</p>
-                                    <p class="txt">10년 이상의 금융 빅데이터에서 우량주 발굴을 위해 22개 요인(Factor)을 종목별로 분석하고, 동종업종내 경쟁사와 비교합니다.</p>
+                                    <p class="txt">10년 이상의 금융 빅데이터에서 우량주 발굴을 위해 22개 요인(Factor)을 종목별로 분석하고, 동종업종내 경쟁사와
+                                        비교합니다.</p>
                                     <ul>
-                                        <li class="list_txt">투자매력 점수는 높을수록 매력적인 기업이며, 65점(상위 20%) 이상이면 우량 기업으로 판단합니다.</li>
-                                        <li class="list_txt">투자매력 세부 항목인 독점력, 수익성, 안전성, 현금창출력으로 별점(★) 5점 만점에 3점 이상이면 각 항목을 통과한 것으로 판단합니다.</li>
-                                        <li class="list_txt">세부 항목 평가에서 별점 0~1점을 받았다면 위험 요인으로, 투자 판단시 유의해서 봐야 합니다.</li>                                        
+                                        <li class="list_txt">투자매력 점수는 높을수록 매력적인 기업이며, 65점(상위 20%) 이상이면 우량 기업으로 판단합니다.
+                                        </li>
+                                        <li class="list_txt">투자매력 세부 항목인 독점력, 수익성, 안전성, 현금창출력으로 별점(★) 5점 만점에 3점 이상이면 각
+                                            항목을 통과한 것으로 판단합니다.</li>
+                                        <li class="list_txt">세부 항목 평가에서 별점 0~1점을 받았다면 위험 요인으로, 투자 판단시 유의해서 봐야 합니다.</li>
                                         <li class="list_txt">우량주 여부를 판단한 후에는 적정주가로 저평가 여부를 확인하세요.</li>
                                     </ul>
                                 </div>
@@ -307,7 +304,7 @@
                                 <span>88</span>
                             </td>
                         </tr>
-                        
+
                     </tbody>
                 </table>
 
@@ -319,9 +316,9 @@
                             <p class="txt">모든 서비스를 제한없이 이용하실 수 있습니다.</p>
                         </div>
                         <div class="right">
-                            <p><a href="#" class="btn_free">첫 달 3,000원<i></i></a></p>      
-                            <p><a href="../stock/service.html" class="go_link">[서비스 안내]</a></p>                        
-                        </div>                       
+                            <p><a href="#" class="btn_free">첫 달 3,000원<i></i></a></p>
+                            <p><a href="../stock/service.html" class="go_link">[서비스 안내]</a></p>
+                        </div>
                     </div>
                     <div class="box">
                         <div class="left">
@@ -329,9 +326,9 @@
                             <p class="txt">모든 서비스를 제한없이 이용하실 수 있습니다.</p>
                         </div>
                         <div class="right">
-                            <p><a href="#" class="btn_free">2주 무료보기<i></i></a></p>      
-                            <p><a href="../stock/service.html" class="go_link">[서비스 안내]</a></p>                        
-                        </div>                       
+                            <p><a href="#" class="btn_free">2주 무료보기<i></i></a></p>
+                            <p><a href="../stock/service.html" class="go_link">[서비스 안내]</a></p>
+                        </div>
                     </div>
                 </div>
                 <!-- //프리미엄 서비스 사용자가 아닌 경우 -->
@@ -340,71 +337,69 @@
                     <a href=""><i></i>더보기</a>
                 </div>
 
-            </div> <!-- //sub_mid -->            
+            </div> <!-- //sub_mid -->
 
-            <!-- 구글 에드센스 표 하단 -->            
+            <!-- 구글 에드센스 표 하단 -->
             <!-- //구글 에드센스 -->
 
         </div>
         <!-- //container -->
 
-        <div id="footer" class="type_sub">
-            <!-- 인증 -->
-            <div class="certification">
-                <ul>
-                    <li><span>과학기술정보통신부</span><a
-                            href="http://www.datahero.co.kr/%eb%8d%b0%ec%9d%b4%ed%84%b0%ed%9e%88%ec%96%b4%eb%a1%9c-%ea%b3%bc%ea%b8%b0%ec%a0%95%ed%86%b5%eb%b6%80-2020-%eb%8d%b0%ec%9d%b4%ed%84%b0%ec%8a%a4%ed%83%80%ec%a6%88-%ec%84%a0%ec%a0%95/"
-                            title="데이터스타즈" target="_black"><img src="../img/datastars.png" alt="데이터스타즈"></a></li>
-                    <li><span>벤처기업인증</span><a
-                            href="http://www.datahero.co.kr/%eb%8d%b0%ec%9d%b4%ed%84%b0%ed%9e%88%ec%96%b4%eb%a1%9c-%ea%b8%b0%ec%88%a0%eb%b3%b4%ec%a6%9d%ea%b8%b0%ea%b8%88-%eb%b2%a4%ec%b2%98%ea%b8%b0%ec%97%85-%ec%9d%b8%ec%a6%9d-%ed%9a%8d%eb%93%9d/"
-                            title="벤처인증" target="_black"><img src="../img/kobo_logo.png" alt="벤처인증"></a></li>
-                </ul>
-            </div>
-            <!-- //인증 -->
-
+        <div id="footer" class="chous_footer">
             <div class="notice">
+                <div class="service_info">
+                    <p>본 서비스는 투자판단에 참고용으로만 사용하실 수 있으며, 모든 투자판단은 투자자 본인의 책임으로 당사는 그 결과에 대해 법적인 일체의 책임을 지지 않습니다.</p>
+                    <p class="dataLink">data from <a href="https://www.quandl.com/" target="_blank">Quandl and
+                            Sharadar</a>
+                    </p>
+                </div>
+
                 <ul class="terms_list">
-                    <li><a href="/member/terms">이용약관</a></li>
-                    <li><a href="/member/policy">개인정보처리방침</a></li>
+                    <li><a href="terms.html">이용약관</a></li>
+                    <li><a href="https://www.datahero.co.kr/choicestockus-faq/" target="_blank">서비스 FAQ</a></li>
+                    <li><a href="policy.html"><strong>개인정보처리방침</strong></a></li>
+                    <li><a href="https://www.datahero.co.kr/choicestockus-update/" target="_black">업데이트 소식</a>
+                    </li>
                     <li><a href="https://www.datahero.co.kr" target="_blank">회사소개</a></li>
                 </ul>
 
                 <div class="foot_info">
                     <div class="info_tel_box">
-                        <p>
-                            <span class="tel_num"><i></i>02-6225-2300</span>
-                            <span class="sns_kakao"><a href="http://pf.kakao.com/_QDLHxb/chat" target="_blank"><img
-                                        src="../img/sns_kakao_l.png" alt="카카오톡 문의하기"></a></span>
-                        </p>
+                        <span class="cs"><a href="https://kq64o.channel.io/" target="blank">온라인 1:1 문의하기</a> (평일
+                            9:00~17:00, 점심 11:20~12:20/ 주말 및 공휴일 휴무) </span>
                     </div>
                     <!-- //info_tel_box -->
                     <p class="copyright"><a href="https://www.datahero.co.kr" target="_blank">ⓒ (주)데이터히어로</a><i></i>
-                        <strong>대표자</strong> 김인중 <i></i> <strong>사업자등록번호 291-88-01393</strong> <i></i> 서울특별시 서초구 강남대로
-                        311, 1021호
+                        <strong>대표자</strong> 김인중 <br>서울특별시 서초구 강남대로 311 <i></i> 사업자등록번호 291-88-01393 <i></i>
+                        <strong>대표번호 <a href="tel:02-6225-2300"><strong>02-6225-2300</strong></a></strong>
                     </p>
-                    <div class="service_info">
-                        <p>본 서비스는 투자판단에 참고용으로만 사용하실 수 있으며, 모든 투자판단은 투자자 본인의 책임으로 당사는 그 결과에 대해 법적인 일체의 책임을 지지 않습니다.</p>
-                        <p class="dataLink">data from <a href="https://www.quandl.com/" target="_blank">Quandl and
-                                Sharadar</a>
-                        </p>
-                    </div>
                 </div>
                 <!-- //foot_info -->
+                <div class="family_site">
+                    <strong>Family</strong>&nbsp;&nbsp;&nbsp;&gt;&nbsp;&nbsp;&nbsp;
+                    <a href="https://super.choicestock.co.kr/?utm_source=choicestock&amp;utm_medium=banner&amp;utm_campaign=service"
+                        target="blank">슈퍼스톡스</a><i></i>
+                    <a href="https://value.choicestock.co.kr/?utm_source=choicestock&amp;utm_medium=banner&amp;utm_campaign=service"
+                        target="blank">밸류라인</a>
+                    <i></i> <a href="https://bigfinance.co.kr/" target="blank">빅파이낸스</a>
+                </div>
+                <!-- //family_site -->
+
             </div>
             <!-- //notice -->
         </div>
         <!-- //footer -->
-
     </div>
     <!-- //wrap -->
 
     <!-- Modal popup -->
-    <!-- 전종목 투자매력도 -->        
+    <!-- 전종목 투자매력도 -->
     <div class="md-modal md-effect-3" id="modal-3">
         <div class="md-content">
             <div id="setting" class="setting_area">
                 <div class="pop_header">
-                    <a href="#setting_anchor" title="로그인 레이어 닫기" class="close"><img src="../img/clse.png" alt="팝업닫기"></a>
+                    <a href="#setting_anchor" title="로그인 레이어 닫기" class="close"><img src="../img/clse.png"
+                            alt="팝업닫기"></a>
                     <h1 class="pop_title">정렬</h1>
                 </div>
                 <!-- //pop_header -->
@@ -466,7 +461,7 @@
                                 </tr>
                             </tbody>
                         </table>
-    
+
                         <div class="pop_footer">
                             <span class="title">정렬</span>
                             <ul class="sort">

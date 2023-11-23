@@ -43,42 +43,41 @@
     <script src="../js/globalstock.js"></script>
 </head>
 
-<body class="globalStock">
+<body class="v_signalStreng globalStock">        
     <div id="wrap">
-        <!-- 하단 GNB -->
-        <div class="gnb">
-            <ul class="list">
-                <li class="home"><a href="../index.html"><i></i> 홈</a></li>
-                <li class="stock"><a href="../stock/recom.html">추천</a></li>
-                <li class="analysis"><a href="../search/search_diagnosis.html">진단</a></li>
-                <li class="excavation active"><a href="../stock/note.html">발굴</a></li>
-                </li>
-                <li class="menu"><a href="../stock/menu.html">메뉴</a></li>
-            </ul>
-        </div>
-        <!-- //gnb -->
-
         <div id="header" class="header h_sub">
             <div class="headerTop">
-                <h1 class="headerLogo"><span>초이스스탁</span>
-                </h1>
-                <div class="hm">
-                    <a href="../search/searching.html" class="go_sch"><img src="../img/icon_search.svg" alt="검색하기"></a>
-                </div>
-                <!-- //hm -->
+                <h1 class="headerLogo"><span>발굴</span></h1>                                
+                <a href="menu.html" class="h_menu">
+                    <div class="menu-icon">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+                </a>
             </div>
             <!-- //headerTop -->
         </div>
 
         <!-- 투자레시피 class = sub_recipe-->
         <div id="container" class="sub_recipe">
-            <!-- 주요 콘텐츠 -->
-            <h2 class="h2_title">발굴</h2>
+            <!-- 하단 GNB -->
+            <div class="gnb">
+                <ul class="list">
+                    <li class="home"><a href="../index.html">홈</a></li>
+                    <li class="sch"><a href="../search/searching.html">검색</a></li>
+                    <li class="stock"><a href="../stock/recom.html">추천</a></li>                
+                    <li class="excavation active"><a href="../stock/note.html">발굴</a></li>                
+                    <li class="attention"><a href="../search/searching_attention.html">관심</a></li>                
+                </ul>
+            </div>
+            <!-- //gnb -->
+
+            <!-- 주요 콘텐츠 -->            
             <div class="tab_area">
                 <ul class="tbas_lb tabs_4">
                     <li><a href="../stock/recipe.html" class="active">레시피</a></li>
                     <li><a href="../attractiveness/attractiveness.html">투자매력도</a></li>                    
-                    <li><a href="../stock/catch.html">캐치</a></li>
                     <li><a href="../stock/note.html">종목노트</a></li>
                 </ul>
             </div>
@@ -102,27 +101,24 @@
                 <div class="box_tabs">
                     <ul class="">
                         <li class="jump active">
-                            <a href="recipejump_view.html">
+                            <a href="recipe_view.html">
                                 <strong>급등주</strong>
                                 상승주는 떡잎부터 알아본다?<br>꾸준히 상승하는 종목을 발굴해보세요.
                             </a>
                         </li>
                         <li class="top50 active">
-                            <a href="recipetop_view.html">
+                            <a href="recipe_view.html">
                                 <strong>관심 TOP50</strong>
                                 초이스스탁US에서 가장<br>인기있는 종목들을 살펴보세요.
                             </a>
-                        </li>     
-                        <div class="one_step">
-                            <span class="txt">지금살까? 매매신호 종목만 쏙쏙!</span>
-                            <a href="trading_signal.html" class="more"><span>오늘의 매매신호</span><img src="/img/more_yel.png" alt="더보기"></a>
-                        </div>             
+                        </li>
+
                         <li class="today_signal">
-                            <a href="recipeToday_view.html">
+                            <a href="recipe_view.html">
                                 <strong>오늘의 매매신호</strong>
                                 지금살까?<br>오늘의 매수/매도신호 종목만 쏙쏙! 여러분의 시간은 소중하니깐요!
                             </a>
-                        </li>      
+                        </li>  
                         <li class="active">
                             <a href="recipe_view.html">
                                 <strong>실적발표</strong>
@@ -130,7 +126,7 @@
                             </a>
                         </li>
                         <li class="sale active">
-                            <a href="recipesale_view.html">
+                            <a href="recipe_view.html">
                                 <strong>지금 세일중!</strong>
                                 저평가 우량종목이 세일 중?<br>알고리즘으로 찾아낸 매수타이밍 종목!
                             </a>
@@ -159,9 +155,6 @@
                                 뛰는 주 위에 나는 주<br>‘슈퍼 종목을 찾아라'
                             </a>
                         </li>
-                        
-                        
-
                     </ul>
                 </div>
                 <!-- //box_tabs -->
@@ -170,51 +163,48 @@
         </div>
         <!-- //container -->
 
-        <div id="footer" class="chous_footer typeSub_f">
-        
+        <div id="footer" class="chous_footer">
             <div class="notice">
                 <div class="service_info">
                     <p>본 서비스는 투자판단에 참고용으로만 사용하실 수 있으며, 모든 투자판단은 투자자 본인의 책임으로 당사는 그 결과에 대해 법적인 일체의 책임을 지지 않습니다.</p>
-                    <p class="dataLink">data from <a href="https://www.quandl.com/" target="_blank">Quandl and Sharadar</a>
-                    </p>
+                    <p class="dataLink">data from <a href="https://www.quandl.com/" target="_blank">Quandl and Sharadar</a></p>
                 </div>
-        
+
                 <ul class="terms_list">
-                    <li><a href="/member/terms">이용약관</a></li>
+                    <li><a href="terms.html">이용약관</a></li>
                     <li><a href="https://www.datahero.co.kr/choicestockus-faq/" target="_blank">서비스 FAQ</a></li>
-                    <li><a href="/member/policy"><strong>개인정보처리방침</strong></a></li>
+                    <li><a href="policy.html"><strong>개인정보처리방침</strong></a></li>
                     <li><a href="https://www.datahero.co.kr/choicestockus-update/" target="_black">업데이트 소식</a>
                     </li>
                     <li><a href="https://www.datahero.co.kr" target="_blank">회사소개</a></li>
                 </ul>
-        
+
                 <div class="foot_info">
                     <div class="info_tel_box">
-                        <span class="cs"><a href="https://kq64o.channel.io/" target="blank">온라인 1:1 문의하기</a> (평일 9:00~17:00, 점심
-                            11:20~12:20/ 주말 및 공휴일 휴무) </span>
-                        <!--<p><span class="sns_kakao"><a href="http://pf.kakao.com/_QDLHxb/chat" target="_blank"><img src="/img/sns_kakao.svg" alt="카카오톡 문의하기"></a></span></p>
-                                <span class="cs">평일 9:00 ~ 17:00 (주말/공휴일 제외)<br>점심시간 11:20 ~ 12:20</span>-->
+                        <span class="cs"><a href="https://kq64o.channel.io/" target="blank">온라인 1:1 문의하기</a> (평일
+                            9:00~17:00, 점심 11:20~12:20/ 주말 및 공휴일 휴무) </span>
                     </div>
                     <!-- //info_tel_box -->
                     <p class="copyright"><a href="https://www.datahero.co.kr" target="_blank">ⓒ (주)데이터히어로</a><i></i>
                         <strong>대표자</strong> 김인중 <br>서울특별시 서초구 강남대로 311 <i></i> 사업자등록번호 291-88-01393 <i></i>
+                        <strong>대표번호 <a href="tel:02-6225-2300"><strong>02-6225-2300</strong></a></strong>
                     </p>
                 </div>
                 <!-- //foot_info -->
                 <div class="family_site">
                     <strong>Family</strong>&nbsp;&nbsp;&nbsp;&gt;&nbsp;&nbsp;&nbsp;
                     <a href="https://super.choicestock.co.kr/?utm_source=choicestock&amp;utm_medium=banner&amp;utm_campaign=service"
-                        target="blank">슈퍼스톡스</a> <i></i>
-                        <a href="https://www.valueline.co.kr/?utm_source=choicestock&amp;utm_medium=banner&amp;utm_campaign=service"
-                        target="blank">밸류라인</a> <i></i>
-        
-                    <a href="https://bigfinance.co.kr/" target="blank">빅파이낸스</a>
+                        target="blank">슈퍼스톡스</a><i></i>
+                    <a href="https://value.choicestock.co.kr/?utm_source=choicestock&amp;utm_medium=banner&amp;utm_campaign=service"
+                        target="blank">밸류라인</a>
+                    <i></i> <a href="https://bigfinance.co.kr/" target="blank">빅파이낸스</a>
                 </div>
                 <!-- //family_site -->
-        
+
             </div>
             <!-- //notice -->
         </div>
+        <!-- //footer -->
 
     </div>
     <!-- //wrap -->

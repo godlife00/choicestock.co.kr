@@ -80,130 +80,369 @@
             <div class="sub_mid latest_results">
                 <div class="tabsArea">
                     <ul class="tabs tabs_two">
-                        <li class="active"><a href="searching_attention.html">관심종목</a></li>
+                        <li><a href="searching_attention.html">관심종목</a></li>
                         <li><a href="searching_onestop.html">원스톱진단</a></li>
-                        <li><a href="searching_catch.html">종목캐치</a></li>
+                        <li class="active"><a href="searching_catch.html">종목캐치</a></li>
                     </ul>
 
-                    <div class="tab_container">
-                        <!-- 관심종목 -->
+                    <div class="tab_container">                        
+                        <!-- 종목캐치 -->
                         <div class="">
-                            <div class="one_step no_bg">
-                                <span class="txt">나의 관심종목은 얼마나 매력적일까?</span>
-                            </div>
-
-                            <div class="no_data">
-                                <p>관심종목의 투자매력 점수와<br>밸류에이션을 쉽게 확인할 수 있습니다.<br><br>
-                                    종목을 검색하여 종목명 옆의 하트(♥)를<br>
-                                    누르면 관심종목으로 등록됩니다..</p>
-                            </div>
-                            <table cellspacing="0" border="0" class="tableRanking type_2Line">
-                                <colgroup>
-                                    <col width="100px">
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                </colgroup>
-                                <tbody>
-                                    <tr>
-                                        <td class="title">
-                                            <a href="#" onclick="event.preventDefault()" data-modal="modal-5"
-                                                data-modal="modal-5" class="md-trigger">
-                                                마<span class="remark">
-                                                    <div class="txt_filter size_M"><i></i><i></i><i></i><i></i>
-                                                    </div>
-                                                </span>
-
-                                                <span class="ticker"><span class="remark">
-                                                        <div class="txt_filter size_S"><i></i><i></i><i></i><i></i>
+                            <div class="catch_wrap">
+                                <p class="catch_guide">나의 취향에 맞는 종목을 추천합니다. <a href="#catch_cncl"
+                                        class="terms_btn btn_payCan show_pop03">추천종목</a></p>
+                
+                                <!--비로그인, 비유료회원인 경우 -->
+                                <div class="prm_div no_data">
+                                    <ul class="guide_txt bg_blue">
+                                        <h3 class="service_title"><strong>취향저격의 투자매력이 높은 종목을 ‘캐치’하세요! </strong></h3>
+                                        <li class="title">- 종목캐치는 내가 선호하는 종목을 파악하여 유사한 종목을 추천합니다.</li>
+                                        <li class="title">- 종목캐치의 낯선 종목을 그냥 지나처 버리지 마세요. 나도 몰랐던 취향저격의 종목일 수도 있습니다.</li>
+                                    </ul>
+                
+                                    <div class="btnArea">
+                                        <a href="#catch_cncl" class="btn btn_save show_pop03">취향저격 추천종목<i></i></a>
+                                    </div>
+                                </div>
+                                <!--//비로그인, 비유료회원인 경우 -->
+                
+                                <!-- 프리미엄 회원인 경우 -->
+                                <div class="chart_catch_wrap">
+                                    <div class="chart_catch">
+                                        <div class="data_area">
+                                            <h2 class="title"><a href="#">월트디즈니</a></h2>
+                                            <!-- 기본 <i class="attention">,  관심종목 등록된 경우 <i class="attention on"> -->
+                                            <ul class="info">
+                                                <li class="sum"><span class="eng">MSFT</span> </li>
+                                            </ul>
+                                            <ul class="detail">
+                                                <li class="num">
+                                                    <span class="">8888.<b>00</b></span> <!-- increase 증가, decrease 감소 -->
+                                                </li>
+                                                <li class="per">
+                                                    <span class="decrease">-2.26 <span>(-1.20<b>%</b>)</span></span>
+                                                    <!-- increase 증가, decrease 감소 -->
+                                                </li>
+                                                <li class="day">19.05/15, USD</li>
+                                            </ul>
+                                            <div class="go_page">
+                                                <span class="quarter recom">추천</span>
+                                                <!-- 추천 class = recom, 분석 class = analysis -->
+                                                <a href="#" class="more"><img src="../img/more_white.png" alt="더보기"></a>
+                                            </div>
+                
+                                            <div class="area">
+                                                <div id="containerArea1_1" class="containerS1"></div>
+                                                <div class="analysis_score">
+                                                    <span class="score"><strong>0</strong> 점</span>
+                                                    <div class="chart_analysis">
+                                                        <div class="line">
+                                                            <span class="i_graph graph_prm">
+                                                                <!-- 프리미엄 서비스 이용자가 아닌 경우 class : graph_prm 추가하여 차트 숨김-->
+                                                                <span class="g_bar"><span class="g_action"
+                                                                        style="left: 50%;"></span></span>
+                                                            </span>
+                                                            <ul class="evaluation">
+                                                                <li>저</li>
+                                                                <li>적정가</li>
+                                                                <li>고</li>
+                                                            </ul>
                                                         </div>
-                                                    </span>
-                                                </span>
-                                            </a>
-                                        </td>
-                                        <td class="num">
-                                            <a href="#" onclick="event.preventDefault()" data-modal="modal-5"
-                                                data-modal="modal-5" class="md-trigger">
-                                                <span class="remark">
-                                                    <div class="txt_filter size_M" style="padding-top: 12px;">
-                                                        <i></i><i></i><i></i><i></i>
                                                     </div>
-                                                </span>
-                                            </a>
-                                        </td>
-                                        <td class="score"><span>67<b>점</b></span></td>
-                                        <!-- 프리미엄 서비스 부분 -->
-                                        <td class="prm_lock">
-                                            <span><img src="../img/prm_lock.png" alt="잠김"></span>
-                                        </td>
-                                        <!-- //프리미엄 서비스 부분 -->
-                                    </tr>
-                                    <tr>
-                                        <td class="title"><a href="search_outline.html">애질런트 테크놀러지스<span
-                                                    class="ticker">AAPL</span></a>
-                                        </td>
-                                        <td class="num">
-                                            <span>69.<b>00</b></span>
-                                            <span class="increase">+2.9<b>%</b></span><!-- increase 증가, decrease 감소 -->
-                                        </td>
-                                        <td class="score"><span>67<b>점</b></span></td>
-                                        <td class="opinion"><span class="buy">매수</span></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="title"><a href="search_outline.html">애질런트 테크놀러지스<span
-                                                    class="ticker">AAPL</span></a>
-                                        </td>
-                                        <td class="num">
-                                            <span>69.<b>00</b></span>
-                                            <span class="increase">+2.9<b>%</b></span><!-- increase 증가, decrease 감소 -->
-                                        </td>
-                                        <td class="score"><span>67<b>점</b></span></td>
-                                        <td class="opinion"><span class="sell">매도</span></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="title"><a href="search_outline.html">애질런트 테크놀러지스<span
-                                                    class="ticker">AAPL</span></a>
-                                        </td>
-                                        <td class="num">
-                                            <span>69.<b>00</b></span>
-                                            <span class="increase">+2.9<b>%</b></span><!-- increase 증가, decrease 감소 -->
-                                        </td>
-                                        <td class="score"><span>67<b>점</b></span></td>
-                                        <td class="opinion"><span class="hold">보유</span></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="title"><a href="search_outline.html">애질런트 테크놀러지스<span
-                                                    class="ticker">AAPL</span></a>
-                                        </td>
-                                        <td class="num">
-                                            <span>69.<b>00</b></span>
-                                            <span class="increase">+2.9<b>%</b></span><!-- increase 증가, decrease 감소 -->
-                                        </td>
-                                        <td class="score"><span>67<b>점</b></span></td>
-                                        <td class="opinion"><span class="waitting">관망</span></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-
-                            <div class="btn_list">
-                                <a href="searching_mod.html">관심종목 관리</a>
+                                                </div>
+                                                <!-- //analysis_score -->
+                                            </div>
+                
+                                            <ul class="info_icon">
+                                                <li><a href="">배당주</a></li>
+                                                <li>NASDAQ</li>
+                                                <li>소비자독점주</li>
+                                                <li>성장주</li>
+                                                <li>가치주</li>
+                                                <li>대형주</li>
+                                                <li>중형주</li>
+                                                <li>소형주</li>
+                                            </ul>
+                                        </div>
+                                        <!-- //data_area -->
+                                        <p class="attention on"><i></i>관심 <span>(888)</span></p>
+                                        <span class="same_selt"><a href="#">마이크로소프트마이크로소프트마이크로소프트</a>와 같은 업종입니다</span>
+                                        <!-- 기본 <i class="attention">, 관심종목 등록된 경우 <i class="attention on"> -->
+                                    </div>
+                                    <!-- //chart_catch -->
+                
+                                    <div class="chart_catch">
+                                        <div class="data_area">
+                                            <h2 class="title"><a href="#">월트디즈니</a></h2>
+                                            <!-- 기본 <i class="attention">,  관심종목 등록된 경우 <i class="attention on"> -->
+                                            <ul class="info">
+                                                <li class="sum"><span class="eng">MSFT</span> </li>
+                                            </ul>
+                                            <ul class="detail">
+                                                <li class="num">
+                                                    <span class="">8888.<b>00</b></span> <!-- increase 증가, decrease 감소 -->
+                                                </li>
+                                                <li class="per">
+                                                    <span class="decrease">-2.26 <span>(-1.20<b>%</b>)</span></span>
+                                                    <!-- increase 증가, decrease 감소 -->
+                                                </li>
+                                                <li class="day">19.05/15, USD</li>
+                                            </ul>
+                                            <div class="go_page">
+                                                <span class="quarter recom">추천</span>
+                                                <!-- 추천 class = recom, 분석 class = analysis -->
+                                                <a href="#" class="more"><img src="../img/more_white.png" alt="더보기"></a>
+                                            </div>
+                
+                                            <div class="area">
+                                                <div id="containerArea1_2" class="containerS1"></div>
+                                                <div class="analysis_score">
+                                                    <span class="score"><strong>0</strong> 점</span>
+                                                    <div class="chart_analysis">
+                                                        <div class="line">
+                                                            <span class="i_graph no_value">
+                                                                <!-- 벨류데이터 부족한 경우 class : no_value 추가하여 텍스트 노출 숨김-->
+                                                                <span class="g_bar"><span class="g_action"
+                                                                        style="left: 50%;"></span></span>
+                                                            </span>
+                                                            <ul class="evaluation">
+                                                                <li>저</li>
+                                                                <li>적정가</li>
+                                                                <li>고</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- //analysis_score -->
+                                            </div>
+                
+                                            <ul class="info_icon">
+                                                <li><a href="">배당주</a></li>
+                                                <li>NASDAQ</li>
+                                                <li>소비자독점주</li>
+                                                <li>성장주</li>
+                                                <li>가치주</li>
+                                                <li>대형주</li>
+                                                <li>중형주</li>
+                                                <li>소형주</li>
+                                            </ul>
+                                        </div>
+                                        <!-- //data_area -->
+                                        <p class="attention on"><i></i>관심 <span>(888)</span></p>
+                                        <span class="same_selt"><a href="#">마이크로소프트마이크로소프트마이크로소프트</a>와 같은 업종입니다</span>
+                                        <!-- 기본 <i class="attention">, 관심종목 등록된 경우 <i class="attention on"> -->
+                                    </div>
+                                    <!-- //chart_catch -->
+                                    
+                                    <div class="chart_catch" style="display: none;">
+                                        <div class="data_area">
+                                            <h2 class="title"><a href="#">월트디즈니</a></h2>
+                                            <!-- 기본 <i class="attention">,  관심종목 등록된 경우 <i class="attention on"> -->
+                                            <ul class="info">
+                                                <li class="sum"><span class="eng">MSFT</span> </li>
+                                            </ul>
+                                            <ul class="detail">
+                                                <li class="num">
+                                                    <span class="">8888.<b>00</b></span> <!-- increase 증가, decrease 감소 -->
+                                                </li>
+                                                <li class="per">
+                                                    <span class="increase">+2.26 <span>(+1.20<b>%</b>)</span></span>
+                                                    <!-- increase 증가, decrease 감소 -->
+                                                </li>
+                                                <li class="day">19.05/15, USD</li>
+                                            </ul>
+                                            <div class="go_page">
+                                                <span class="quarter recom">추천</span>
+                                                <!-- 추천 class = recom, 분석 class = analysis -->
+                                                <a href="#" class="more"><img src="../img/more_white.png" alt="더보기"></a>
+                                            </div>
+                
+                                            <div class="area">
+                                                <div id="containerArea1_3" class="containerS1"></div>
+                                                <div class="analysis_score">
+                                                    <span class="score"><strong>50</strong> 점</span>
+                                                    <div class="chart_analysis">
+                                                        <div class="line">
+                                                            <span class="i_graph">
+                                                                <span class="g_bar"><span class="g_action"
+                                                                        style="left: 50%;"></span></span>
+                                                                <!-- score 점수가 style="left: 0%" 으로 들어가면 됩니다. -->
+                                                            </span>
+                                                            <ul class="evaluation">
+                                                                <li>저</li>
+                                                                <li>적정가</li>
+                                                                <li>고</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- //analysis_score -->
+                
+                                            </div>
+                
+                                            <ul class="info_icon">
+                                                <li><a href="">배당주</a></li>
+                                                <li>NASDAQ</li>
+                                                <li>소비자독점주</li>
+                                                <li>성장주</li>
+                                                <li>가치주</li>
+                                                <li>대형주</li>
+                                                <li>중형주</li>
+                                                <li>소형주</li>
+                                            </ul>
+                                        </div>
+                                        <!-- //data_area -->
+                                        <p class="attention on"><i></i>관심 <span>(888)</span></p>
+                                        <span class="same_selt"><a href="#">마이크로소프트마이크로소프트마이크로소프트</a>와 같은 업종입니다</span>
+                                        <!-- 기본 <i class="attention">, 관심종목 등록된 경우 <i class="attention on"> -->
+                                    </div>
+                                    <!-- //chart_catch -->
+                                    <div class="chart_catch" style="display: none;">
+                                        <div class="data_area">
+                                            <h2 class="title"><a href="#">월트디즈니</a></h2>
+                                            <!-- 기본 <i class="attention">,  관심종목 등록된 경우 <i class="attention on"> -->
+                                            <ul class="info">
+                                                <li class="sum"><span class="eng">MSFT</span> </li>
+                                            </ul>
+                                            <ul class="detail">
+                                                <li class="num">
+                                                    <span class="">8888.<b>00</b></span> <!-- increase 증가, decrease 감소 -->
+                                                </li>
+                                                <li class="per">
+                                                    <span class="increase">+2.26 <span>(+1.20<b>%</b>)</span></span>
+                                                    <!-- increase 증가, decrease 감소 -->
+                                                </li>
+                                                <li class="day">19.05/15, USD</li>
+                                            </ul>
+                                            <div class="go_page">
+                                                <span class="quarter recom">추천</span>
+                                                <!-- 추천 class = recom, 분석 class = analysis -->
+                                                <a href="#" class="more"><img src="../img/more_white.png" alt="더보기"></a>
+                                            </div>
+                
+                                            <div class="area">
+                                                <div id="containerArea1_4" class="containerS1"></div>
+                                                <div class="analysis_score">
+                                                    <span class="score"><strong>50</strong> 점</span>
+                                                    <div class="chart_analysis">
+                                                        <div class="line">
+                                                            <span class="i_graph">
+                                                                <span class="g_bar"><span class="g_action"
+                                                                        style="left: 50%;"></span></span>
+                                                                <!-- score 점수가 style="left: 0%" 으로 들어가면 됩니다. -->
+                                                            </span>
+                                                            <ul class="evaluation">
+                                                                <li>저</li>
+                                                                <li>적정가</li>
+                                                                <li>고</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- //analysis_score -->
+                
+                                            </div>
+                
+                                            <ul class="info_icon">
+                                                <li><a href="">배당주</a></li>
+                                                <li>NASDAQ</li>
+                                                <li>소비자독점주</li>
+                                                <li>성장주</li>
+                                                <li>가치주</li>
+                                                <li>대형주</li>
+                                                <li>중형주</li>
+                                                <li>소형주</li>
+                                            </ul>
+                                        </div>
+                                        <!-- //data_area -->
+                                        <p class="attention on"><i></i>관심 <span>(888)</span></p>
+                                        <span class="same_selt"><a href="#">마이크로소프트마이크로소프트마이크로소프트</a>와 같은 업종입니다</span>
+                                        <!-- 기본 <i class="attention">, 관심종목 등록된 경우 <i class="attention on"> -->
+                                    </div>
+                                    <!-- //chart_catch -->
+                                    <div class="chart_catch" style="display: none;">
+                                        <div class="data_area">
+                                            <h2 class="title"><a href="#">월트디즈니</a></h2>
+                                            <!-- 기본 <i class="attention">,  관심종목 등록된 경우 <i class="attention on"> -->
+                                            <ul class="info">
+                                                <li class="sum"><span class="eng">MSFT</span> </li>
+                                            </ul>
+                                            <ul class="detail">
+                                                <li class="num">
+                                                    <span class="">8888.<b>00</b></span> <!-- increase 증가, decrease 감소 -->
+                                                </li>
+                                                <li class="per">
+                                                    <span class="increase">+2.26 <span>(+1.20<b>%</b>)</span></span>
+                                                    <!-- increase 증가, decrease 감소 -->
+                                                </li>
+                                                <li class="day">19.05/15, USD</li>
+                                            </ul>
+                                            <div class="go_page">
+                                                <span class="quarter recom">추천</span>
+                                                <!-- 추천 class = recom, 분석 class = analysis -->
+                                                <a href="#" class="more"><img src="../img/more_white.png" alt="더보기"></a>
+                                            </div>
+                
+                                            <div class="area">
+                                                <div id="containerArea1_4" class="containerS1"></div>
+                                                <div class="analysis_score">
+                                                    <span class="score"><strong>50</strong> 점</span>
+                                                    <div class="chart_analysis">
+                                                        <div class="line">
+                                                            <span class="i_graph">
+                                                                <span class="g_bar"><span class="g_action"
+                                                                        style="left: 50%;"></span></span>
+                                                                <!-- score 점수가 style="left: 0%" 으로 들어가면 됩니다. -->
+                                                            </span>
+                                                            <ul class="evaluation">
+                                                                <li>저</li>
+                                                                <li>적정가</li>
+                                                                <li>고</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- //analysis_score -->
+                
+                                            </div>
+                
+                                            <ul class="info_icon">
+                                                <li><a href="">배당주</a></li>
+                                                <li>NASDAQ</li>
+                                                <li>소비자독점주</li>
+                                                <li>성장주</li>
+                                                <li>가치주</li>
+                                                <li>대형주</li>
+                                                <li>중형주</li>
+                                                <li>소형주</li>
+                                            </ul>
+                                        </div>
+                                        <!-- //data_area -->
+                                        <p class="attention on"><i></i>관심 <span>(888)</span></p>
+                                        <span class="same_selt"><a href="#">마이크로소프트마이크로소프트마이크로소프트</a>와 같은 업종입니다</span>
+                                        <!-- 기본 <i class="attention">, 관심종목 등록된 경우 <i class="attention on"> -->
+                                    </div>
+                                    <!-- //chart_catch -->
+                
+                                    <div class="prm_div weeks_free">
+                                        <div class="box">
+                                            <div class="left">
+                                                <p class="title">나만의 취향저격 종목발굴!</p>
+                                                <p class="txt">지금 회원가입하고, 종목발굴-종목캐치를 무료로 이용하세요!</p>
+                                            </div>
+                                            <div class="right">
+                                                <p><a href="../member/login_sns.html" class="btn_free">회원가입</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                
+                                    
+                                </div>
+                                <!-- //chart_catch_wrap -->
+                                <!-- //프리미엄 회원인 경우 -->
                             </div>
-
-                            <div class="att_service">
-                                <h3 class="service_title"><strong>관심종목</strong> 알림 서비스를 받아보세요</h3>
-                                <ul class="guide_txt">
-                                    <li class="title">ㆍ매일 오전, 관심종목의 새로운 소식이 배달됩니다.</li>
-                                    <li class="txt">- 제공서비스 : 관심종목 주가/실적발표/배당, 종목추천/분석 알림 등<br><span
-                                            style="padding: 0 3px;"></span> (*관심종목 알림은 최대 10개 종목으로 제한됩니다.)</li>
-                                    <li class="title">ㆍ초이스스탁US 프리미엄 회원 서비스 입니다. <a href="/member/login"
-                                            class="go_mam">[가입하기]</a></li>
-                                    <li class="title">ㆍ 알림은 '카카오 알림톡'으로 제공되며, '카카오톡'앱이 필요합니다.</li>
-                                </ul>
-                                <!-- //guide_txt -->
-                            </div>
-                            <!-- //att_service -->
-
-                        </div>                       
+                            <!-- //catch_wrap -->
+                        </div>
                     </div>
                     <!-- //tab_container -->
                 </div>

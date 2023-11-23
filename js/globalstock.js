@@ -1,10 +1,10 @@
 $(document).ready(function () {
-    var mouse_touch = ".globalStock a, .globalStock .tabs li, .globalStock .set span, .globalStock .tabs_menu span, .globalStock i.attention, .globalStock .prm_div .box, .globalStock .sub_search .sub_mid.research_board .lst_type2, .globalStock .sub_research .popularity .lst_type2, .globalStock #footer .certification ul li, .globalStock .main_mid.note_area .lst_type2, .globalStock .sub_research .sub_mid.research_board .lst_type2, .globalStock .sub_briefing .popularity .lst_type2, .globalStock .searchArea .searchInput, .globalStock .main_mid.event_recipe .recipe_tabs li span, .globalStock .sub_login .mapage_area .mapage_form .form_table td .mod_btn, .globalStock .sub_login .mapage_area .mapage_form .form_table .phonePin_form .pinInput, .globalStock .sub_login .mapage_area .mapage_form .form_table .phonePin_form .pinInput_out, .globalStock .sub_payment .serviceStep .step_box, .globalStock #header .his_back img, .globalStock .main_top.recommend_area .recomlist_area .area, .globalStock .main_mid.game_area .list_area .area, .globalStock .banner_prm, .globalStock .main_mid.attention_area .one_step .more, .globalStock #header .headerTop .hm .btn_login, .globalStock #header .headerTop .hm .go_briefing"
-    $(mouse_touch).on("mousedown touchstart", function () {
-        $(this).addClass("mouse_touch");
-    }).on("mousemove touchmove mouseup touchend", function () {
-        $(this).removeClass("mouse_touch");
-    });
+    // var mouse_touch = ".globalStock a, .globalStock .tabs li, .globalStock .set span, .globalStock .tabs_menu span, .globalStock i.attention, .globalStock .prm_div .box, .globalStock .sub_search .sub_mid.research_board .lst_type2, .globalStock .sub_research .popularity .lst_type2, .globalStock #footer .certification ul li, .globalStock .main_mid.note_area .lst_type2, .globalStock .sub_research .sub_mid.research_board .lst_type2, .globalStock .sub_briefing .popularity .lst_type2, .globalStock .searchArea .searchInput, .globalStock .main_mid.event_recipe .recipe_tabs li span, .globalStock .sub_login .mapage_area .mapage_form .form_table td .mod_btn, .globalStock .sub_login .mapage_area .mapage_form .form_table .phonePin_form .pinInput, .globalStock .sub_login .mapage_area .mapage_form .form_table .phonePin_form .pinInput_out, .globalStock .sub_payment .serviceStep .step_box, .globalStock #header .his_back img, .globalStock .main_top.recommend_area .recomlist_area .area, .globalStock .main_mid.game_area .list_area .area, .globalStock .banner_prm, .globalStock .main_mid.attention_area .one_step .more, .globalStock #header .headerTop .hm .btn_login, .globalStock #header .headerTop .hm .go_briefing"
+    // $(mouse_touch).on("mousedown touchstart", function () {
+    //     $(this).addClass("mouse_touch");
+    // }).on("mousemove touchmove mouseup touchend", function () {
+    //     $(this).removeClass("mouse_touch");
+    // });
 
     // 페이지 로드 완료후 이미지 노출
     $('.globalStock .main_mid.youtube_mijumi .video_thumbnail').show();
@@ -14,6 +14,18 @@ $(document).ready(function () {
     /************************/
     //로그인 팝업
     var setWindow = $('.setting_pop');
+
+    /* 개발처리
+    var setpay_edt01 = $('.pay_edt_01');
+    var setpay_edt02 = $('.pay_edt_02');
+    var setpay_edt02_1 = $('.pay_edt_02_1');
+    var setpay_edt02_2 = $('.pay_edt_02_2');
+    var setcatch_edt01 = $('.catch_edt_01');
+    var setcatch_edt02 = $('.catch_edt_02');
+    var setcatch_edt03 = $('.catch_edt_03');
+    var setcatch_edt03_2 = $('.catch_edt_03_2');
+    var setcatch_edt03_3 = $('.catch_edt_03_3');
+    */
     var setterms_01 = $('.pay_terms_01');
     var setterms_02 = $('.pay_terms_02');
     var setterms_03 = $('.pay_terms_03');
@@ -23,6 +35,62 @@ $(document).ready(function () {
         setWindow.addClass('open');
         $('html, body').css("overflow", "hidden");
     });
+
+    /* 개발처리
+    $('.show_pop01').click(function () {
+        setpay_edt01.addClass('open');
+        $('html, body').css("overflow", "hidden");
+    });
+    $('.show_pop02').click(function () {
+        setpay_edt02.addClass('open');
+        $('html, body').css("overflow", "hidden");
+    });
+    $('.show_pop02_1').click(function () {
+        setpay_edt02_1.addClass('open');
+        $('html, body').css("overflow", "hidden");
+    });
+    $('.show_pop02_2').click(function () {
+        setpay_edt02_2.addClass('open');
+        $('html, body').css("overflow", "hidden");
+    });
+    $('.show_pop03').click(function () {
+        setWindow.removeClass('open');
+        setcatch_edt01.addClass('open');
+        $('html, body').css("overflow", "hidden");
+    });
+    $('.show_pop04').click(function () {
+        setWindow.removeClass('open');
+        setcatch_edt02.addClass('open');
+        $('html, body').css("overflow", "hidden");
+    });
+    $('.show_pop05').click(function () {
+        setWindow.removeClass('open');
+        setcatch_edt03.addClass('open');
+        $('html, body').css("overflow", "hidden");
+    });
+    $('.show_pop05_2').click(function () {
+        setWindow.removeClass('open');
+        setcatch_edt03_2.addClass('open');
+        $('html, body').css("overflow", "hidden");
+    });
+    $('.show_pop05_3').click(function () {
+        setWindow.removeClass('open');
+        setcatch_edt03_3.addClass('open');
+        $('html, body').css("overflow", "hidden");
+    });
+    */
+    // $('.age_pop01').click(function () {
+    //     setterms_01.addClass('open');
+    //     $('html, body').css("overflow", "hidden");
+    // });
+    // $('.age_pop02').click(function () {
+    //     setterms_02.addClass('open');
+    //     $('html, body').css("overflow", "hidden");
+    // });
+    // $('.age_pop03').click(function () {
+    //     setterms_03.addClass('open');
+    //     $('html, body').css("overflow", "hidden");
+    // });
 
     $('#setting .close').click(function () {
         setWindow.removeClass('open');
@@ -176,7 +244,7 @@ $(document).ready(function () {
     $('.globalStock .sub_search .searching .searchArea .searchInput').on("focusout", function () {
         $('.globalStock .sub_search .searching .searchArea .sch_title').removeClass('keydown');
         $(this).removeClass('keydown');
-        $('.globalStock .sub_search .searching .searchArea .searchBtn').css('top', '6px');
+        $('.globalStock .sub_search .searching .searchArea .searchBtn').css('top', '11px');
         $('.globalStock .sub_search .searching .sch_autocomplete').hide();
         $('.globalStock.wowtv .header_wowtv + .search_top.searching .searchArea .searchBtn').css('top', '11px');
     });
@@ -591,16 +659,12 @@ $(document).ready(function () {
 
     //서브 발굴 - 뉴스
     var newsSwiper = new Swiper('.newsSwiper', {
-        autoHeight: true,
         autoplay: {
-            delay: 2000,
+            delay: 3500,
             disableOnInteraction: false,
         },
         loop: true,
         spaceBetween: 10,
-        pagination: {
-            el: ".swiper-pagination",
-        },
     });
 
     //서비스소개
@@ -633,6 +697,21 @@ $(document).ready(function () {
         direction: 'vertical',
         loop: true,
     });
+
+    // 종목검색 - 개요 보유 신호
+    if ($('.upData_Swiper').length) {        
+        var slideCount = document.querySelectorAll('.upData_Swiper .swiper-slide').length;
+        var swiper = new Swiper(".upData_Swiper", {
+            slidesPerView: 1, // 한 번에 보이는 슬라이드 수를 1로 설정
+            // 슬라이드가 두 개 이상일 때만 자동재생
+            autoplay: slideCount > 1 ? {
+                delay: 4000,
+                disableOnInteraction: false,
+            } : false,
+            direction: 'vertical',
+            loop: true,
+        });
+    }   
 
 
     /************************/
@@ -734,6 +813,16 @@ $(document).ready(function () {
         $(this).addClass("active");
     });
 
+    /* 개발처리
+        //관심종목 찾아보기
+        $('.globalStock .catch_edt #catch_cncl .catch_from .label').on("click", function () {
+            if ($(this).hasClass("active")) {                        
+                $(this).removeClass('active');                  
+            } else {                                    
+                $(this).addClass('active');              
+            }        
+        });
+    */
     //faq
     var article = $('.faq01 .faq .article');
     article.addClass('hide');
@@ -959,7 +1048,7 @@ $(document).ready(function () {
     $('.globalStock .schfix_inc .searching .searchArea .searchInput').on("focusout", function () {
         $('.globalStock .schfix_inc .searching .searchArea .sch_title').removeClass('keydown');
         $(this).removeClass('keydown');
-        $('.globalStock .schfix_inc .searching .searchArea .searchBtn').css('top', '6px');
+        $('.globalStock .schfix_inc .searching .searchArea .searchBtn').css('top', '11px');
         $('.globalStock .schfix_inc .searching .sch_autocomplete').hide();
         $('.globalStock.kiwoom .schfix_inc .top_btn').show();
         $('.globalStock.kiwoom .schfix_inc .searching .searchArea').css('width', '100%');
@@ -973,40 +1062,16 @@ $(document).ready(function () {
         $('.globalStock.kiwoom #footer').css('padding-bottom', '50px');
         $('.globalStock.kiwoom .sub_service .alliance_wrap .f_nightalarm').css('margin-bottom', '67px')
     }
-    // 알림(종목추천, 포트폴리오) 수신​ 여부
-    $(".globalStock.wowtv .sub_alarm .alarm_from .label.alarm_chk label").on("click", function () {
-        var labelTxT = $('.globalStock.wowtv .sub_alarm .mapage_form .alarm_from .label.alarm_chk .label_chk');
+    // 알람 수신-미수신
+    $(".globalStock.wowtv .sub_alarm .alarm_from .label label").on("click", function () {
+        var labelTxT = $('.globalStock.wowtv .sub_alarm .mapage_form .alarm_from .label .label_chk');
         setTimeout(function () {
             if (labelTxT.hasClass("rcpt")) {
-                labelTxT.removeClass("rcpt").text("알림(종목추천, 포트폴리오) 수신")
+                labelTxT.removeClass("rcpt").text("미수신")
             } else {
-                labelTxT.addClass("rcpt").text("알림(종목추천, 포트폴리오) 미수신")
+                labelTxT.addClass("rcpt").text("수신")
             }
         }, 150);
-    });
-    // 광고성 알림(푸시,문자) 수신 여부​
-    $(".globalStock.wowtv .sub_alarm .alarm_from .label.advertisement_chk label").on("click", function () {
-        var labelTxT_adv = $('.globalStock.wowtv .sub_alarm .mapage_form .alarm_from .label.advertisement_chk .label_chk');
-        setTimeout(function () {
-            if (labelTxT_adv.hasClass("rcpt")) {
-                labelTxT_adv.removeClass("rcpt").text("광고성 알림(푸시,문자) 수신")
-            } else {
-                labelTxT_adv.addClass("rcpt").text("광고성 알림(푸시,문자) 미수신")
-            }
-        }, 150);
-    });
-
-    // 이용약관 전체 동의하기
-    $(".globalStock.wowtv .sub_login .agree_area .all_chk_label .label").on("click", function () {
-        console.log("전체 동의하기");
-        var test = $('.globalStock.wowtv .sub_login .agree_area .agree_from .label');
-        if ($(this).hasClass("active")) {
-            $(this).removeClass('active');
-            test.removeClass('active');
-        } else {
-            $(this).addClass('active');
-            test.addClass('active');
-        }
     });
 
     // 주문하기 버튼            

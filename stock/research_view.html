@@ -28,7 +28,7 @@
     <script src="../node_modules/highcharts/modules/data.js"></script>
     <script src="../node_modules/highcharts/modules/hollowcandlestick.js"></script>
     <script src="../node_modules/highcharts/modules/no-data-to-display.js"></script>
-    <script src="../node_modules/highcharts/modules/treemap.js"></script>    
+    <script src="../node_modules/highcharts/modules/treemap.js"></script>
     <script src="../node_modules/highcharts/modules/exporting.js"></script>
     <script src="../node_modules/highcharts/modules/export-data.js"></script>
     <script src="../node_modules/highcharts/modules/accessibility.js"></script>
@@ -43,33 +43,29 @@
     <script src="../js/globalstock.js"></script>
 </head>
 
-<!-- 제휴사이트 민트 칼라 적용 class = mint  -->
-
-<body class="globalStock">
+<body class="v_signalStreng globalStock">
     <div id="wrap">
-        <!-- 하단 GNB -->
-        <div class="gnb">
-            <ul class="list">
-                <li class="home"><a href="../index.html"><i></i> 홈</a></li>
-                <li class="stock"><a href="stock/recom.html">추천</a></li>
-                <li class="analysis"><a href="#">진단</a></li>
-                <li class="excavation active"><a href="../stock/note.html">발굴</a></li>
-                <li class="menu"><a href="stock/menu.html">메뉴</a></li>
-            </ul>
-        </div>
-        <!-- //gnb -->
-
         <div id="header" class="header">
             <div class="headerTop">
-                <h1 class="headerLogo"><span>종목노트</span></h1>
-                <a href="#" class="his_back"><img src="../img/icon_back.svg" alt="뒤로가기"></a>
+                <a href="javascript:history.back();" class="go_back">히스토리백</a>
+                <h1 class="headerLogo"><span>미국주식 종목노트</span></h1>
             </div>
             <!-- //headerTop -->
         </div>
 
         <!-- 미국주식 탐구생활 class = sub_research-->
-        <!-- gnb 메뉴 하단 숨김 class = gnb_hide-->
-        <div id="container" class="sub_research gnb_hide">
+        <div id="container" class="sub_research">
+            <!-- 하단 GNB -->
+            <div class="gnb">
+                <ul class="list">
+                    <li class="home"><a href="../index.html">홈</a></li>
+                    <li class="sch"><a href="../search/searching.html">검색</a></li>
+                    <li class="stock"><a href="../stock/recom.html">추천</a></li>
+                    <li class="excavation active"><a href="../stock/note.html">발굴</a></li>
+                    <li class="attention"><a href="../search/searching_attention.html">관심</a></li>
+                </ul>
+            </div>
+            <!-- //gnb -->
             <!-- 주요 콘텐츠 -->
             <div class="view_con">
                 <div class="top">
@@ -89,7 +85,7 @@
                     <br><br>
 
                     <!-- 구글 에드센스 목록 중간 -->
-                    
+
                     <!-- //구글 에드센스 -->
 
                     봄이 마리아 하나 차 애기 별 토끼, 했던 위에도 까닭입니다. 잠, 파란 어머님, 우는 봅니다. 별에도 아이들의 이름과 별 별빛이 그리워 것은 까닭입니다. 그리고
@@ -105,7 +101,7 @@
                     이름과, 비둘기, 나는 벌레는 봄이 가슴속에 계십니다. 어머님, 덮어 이웃 어머니, 봅니다. 지나고 벌레는 어머니, 이런 내린 버리었습니다.
                 </div>
                 <a href="research.html" class="go_list">목록보기</a>
-                
+
             </div>
 
             <!-- 하단 서비스 노출 배너 -->
@@ -119,13 +115,13 @@
                 }
 
                 .family_banner .bannerSwiper img {
-                    display: inline-block;                        
+                    display: inline-block;
                     width: 100%;
                     height: 100%;
                 }
             </style>
             <script>
-                $(document).ready(function () {                        
+                $(document).ready(function () {
                     var randomIndex = Math.floor(Math.random() * 2); // 0 또는 1 랜덤 선택
                     var bannerSwiper = $('.bannerSwiper');
 
@@ -134,14 +130,17 @@
 
                     // 랜덤하게 선택된 a 태그만 보이도록 설정
                     bannerSwiper.find('a').eq(randomIndex).show();
-                    
+
                 });
             </script>
-            <div class="family_banner">     
+            <div class="family_banner">
                 <div class="bannerSwiper">
-                    <a href="https://value.choicestock.co.kr/?utm_source=choicestock&utm_medium=banner&utm_campaign=service" target="_blank"><img src="../img/banner/family_vl_01.png" class="radam_Img_vl" alt="밸류라인"></a>                
-                    <a href="https://super.choicestock.co.kr/?utm_source=choicestock&utm_medium=banner&utm_campaign=service" target="_blank"><img src="../img/banner/family_sst_01.png" class="radam_Img_sst" alt="슈퍼스톡스"></a>                    
-                </div>                                   
+                    <a href="https://value.choicestock.co.kr/?utm_source=choicestock&utm_medium=banner&utm_campaign=service"
+                        target="_blank"><img src="../img/banner/family_vl_01.png" class="radam_Img_vl" alt="밸류라인"></a>
+                    <a href="https://super.choicestock.co.kr/?utm_source=choicestock&utm_medium=banner&utm_campaign=service"
+                        target="_blank"><img src="../img/banner/family_sst_01.png" class="radam_Img_sst"
+                            alt="슈퍼스톡스"></a>
+                </div>
                 <!-- //bannerSwiper -->
             </div>
             <!-- //family_banner -->
@@ -165,17 +164,14 @@
                         </dl>
                     </li>
 
-                    <!-- 구글 에드센스 본문 하단 > 인기글 -->                                                                                
-                    <ins class="adsbygoogle"
-                        style="display:block"
-                        data-ad-format="fluid"
-                        data-ad-layout-key="-gy+4-8-1l+3n"
-                        data-ad-client="ca-pub-6864430327621783"
+                    <!-- 구글 에드센스 본문 하단 > 인기글 -->
+                    <ins class="adsbygoogle" style="display:block" data-ad-format="fluid"
+                        data-ad-layout-key="-gy+4-8-1l+3n" data-ad-client="ca-pub-6864430327621783"
                         data-ad-slot="4860094807"></ins>
                     <script>
                         (adsbygoogle = window.adsbygoogle || []).push({});
                     </script>
-                    
+
                     <!-- //구글 에드센스 -->
 
                     <li>
@@ -191,49 +187,46 @@
         </div>
         <!-- //container -->
 
-        <div id="footer" class="type_sub">
-
-            <!-- 인증 -->
-            <div class="certification">
-                <ul>
-                    <li><span>과학기술정보통신부</span><a
-                            href="http://www.datahero.co.kr/%eb%8d%b0%ec%9d%b4%ed%84%b0%ed%9e%88%ec%96%b4%eb%a1%9c-%ea%b3%bc%ea%b8%b0%ec%a0%95%ed%86%b5%eb%b6%80-2020-%eb%8d%b0%ec%9d%b4%ed%84%b0%ec%8a%a4%ed%83%80%ec%a6%88-%ec%84%a0%ec%a0%95/"
-                            title="데이터스타즈" target="_black"><img src="../img/datastars.png" alt="데이터스타즈"></a></li>
-                    <li><span>벤처기업인증</span><a
-                            href="http://www.datahero.co.kr/%eb%8d%b0%ec%9d%b4%ed%84%b0%ed%9e%88%ec%96%b4%eb%a1%9c-%ea%b8%b0%ec%88%a0%eb%b3%b4%ec%a6%9d%ea%b8%b0%ea%b8%88-%eb%b2%a4%ec%b2%98%ea%b8%b0%ec%97%85-%ec%9d%b8%ec%a6%9d-%ed%9a%8d%eb%93%9d/"
-                            title="벤처인증" target="_black"><img src="../img/kobo_logo.png" alt="벤처인증"></a></li>
-                </ul>
-            </div>
-            <!-- //인증 -->
-
+        <div id="footer" class="chous_footer">
             <div class="notice">
+                <div class="service_info">
+                    <p>본 서비스는 투자판단에 참고용으로만 사용하실 수 있으며, 모든 투자판단은 투자자 본인의 책임으로 당사는 그 결과에 대해 법적인 일체의 책임을 지지 않습니다.</p>
+                    <p class="dataLink">data from <a href="https://www.quandl.com/" target="_blank">Quandl and
+                            Sharadar</a>
+                    </p>
+                </div>
+
                 <ul class="terms_list">
-                    <li><a href="/member/terms">이용약관</a></li>
-                    <li><a href="/member/policy">개인정보처리방침</a></li>
+                    <li><a href="terms.html">이용약관</a></li>
+                    <li><a href="https://www.datahero.co.kr/choicestockus-faq/" target="_blank">서비스 FAQ</a></li>
+                    <li><a href="policy.html"><strong>개인정보처리방침</strong></a></li>
+                    <li><a href="https://www.datahero.co.kr/choicestockus-update/" target="_black">업데이트 소식</a>
+                    </li>
                     <li><a href="https://www.datahero.co.kr" target="_blank">회사소개</a></li>
                 </ul>
 
                 <div class="foot_info">
                     <div class="info_tel_box">
-                        <p>
-                            <span class="tel_num"><i></i>02-6225-2300</span>
-                            <span class="sns_kakao"><a href="http://pf.kakao.com/_QDLHxb/chat" target="_blank"><img
-                                        src="../img/sns_kakao_l.png" alt="카카오톡 문의하기"></a></span>
-                        </p>
+                        <span class="cs"><a href="https://kq64o.channel.io/" target="blank">온라인 1:1 문의하기</a> (평일
+                            9:00~17:00, 점심 11:20~12:20/ 주말 및 공휴일 휴무) </span>
                     </div>
                     <!-- //info_tel_box -->
                     <p class="copyright"><a href="https://www.datahero.co.kr" target="_blank">ⓒ (주)데이터히어로</a><i></i>
-                        <strong>대표자</strong> 김인중 <i></i> <strong>사업자등록번호 291-88-01393</strong> <i></i> 서울특별시 서초구 강남대로
-                        311, 1021호
+                        <strong>대표자</strong> 김인중 <br>서울특별시 서초구 강남대로 311 <i></i> 사업자등록번호 291-88-01393 <i></i>
+                        <strong>대표번호 <a href="tel:02-6225-2300"><strong>02-6225-2300</strong></a></strong>
                     </p>
-                    <div class="service_info">
-                        <p>본 서비스는 투자판단에 참고용으로만 사용하실 수 있으며, 모든 투자판단은 투자자 본인의 책임으로 당사는 그 결과에 대해 법적인 일체의 책임을 지지 않습니다.</p>
-                        <p class="dataLink">data from <a href="https://www.quandl.com/" target="_blank">Quandl and
-                                Sharadar</a>
-                        </p>
-                    </div>
                 </div>
                 <!-- //foot_info -->
+                <div class="family_site">
+                    <strong>Family</strong>&nbsp;&nbsp;&nbsp;&gt;&nbsp;&nbsp;&nbsp;
+                    <a href="https://super.choicestock.co.kr/?utm_source=choicestock&amp;utm_medium=banner&amp;utm_campaign=service"
+                        target="blank">슈퍼스톡스</a><i></i>
+                    <a href="https://value.choicestock.co.kr/?utm_source=choicestock&amp;utm_medium=banner&amp;utm_campaign=service"
+                        target="blank">밸류라인</a>
+                    <i></i> <a href="https://bigfinance.co.kr/" target="blank">빅파이낸스</a>
+                </div>
+                <!-- //family_site -->
+
             </div>
             <!-- //notice -->
         </div>
@@ -241,3 +234,5 @@
     </div>
     <!-- //wrap -->
 </body>
+
+</html>
