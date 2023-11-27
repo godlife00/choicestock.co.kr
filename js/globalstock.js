@@ -313,6 +313,21 @@ $(document).ready(function () {
             $('.globalStock .main_btm').css('margin-top', '20px')
         }
     });
+    // 발굴 종목노트, 레시피, 투자노트 탭 버튼 클릭 이벤트 핸들러
+    $('.tab_span').click(function () {
+        // 선택한 탭 버튼에 'active' 클래스 추가
+        $(this).addClass('active');
+        
+        // 다른 탭 버튼에서 'active' 클래스 제거
+        $('.tab_span').not(this).removeClass('active');
+        
+        // 탭 내용 숨기기
+        $('.tab').hide();
+        
+        // 선택한 탭 내용 보이기
+        var tabId = $(this).attr('data-tab');
+        $('#' + tabId).fadeIn();
+    });
     //포트폴리오 제외종목 마이나스 보여주기    
     $('.globalStock .sub_mid .btn_more.show_table').on('click', function () {
         if ($(this).hasClass("show")) {

@@ -116,7 +116,7 @@
 
                                     <ul class="logo_list" onclick="" id="btn_free" style="cursor:pointer;">
                                         <li class="title_logo">
-                                            <span class="logo"><img src="https://uslogo.datahero.co.kr/img/logo/us/mvl/AAPL.svg" alt=""></span>
+                                            <span class="logo"><img src="" onerror="this.style.display='none'" alt=""></span>
                                         </li>
                                         <li class="detail">
                                             <div class="title">
@@ -165,7 +165,7 @@
                                     </ul>
                                     <ul class="logo_list" onclick="location.href ='/search/search_outline.html'" style="cursor:pointer;">
                                         <li class="title_logo">
-                                            <span class="logo"><img src="" onerror="this.style.display='none'" alt=""></span>
+                                            <span class="logo"><img src="https://uslogo.datahero.co.kr/img/logo/us/mvl/MSFT.svg" alt=""></span>
                                         </li>
                                         <li class="detail">
                                             <div class="title">
@@ -234,7 +234,7 @@
                                     </ul>
                                     <ul class="logo_list" onclick="location.href ='/search/search_outline.html'" style="cursor:pointer;">
                                         <li class="title_logo">
-                                            <span class="logo"><img src="" onerror="this.style.display='none'" alt=""></span>
+                                            <span class="logo"><img src="https://uslogo.datahero.co.kr/img/logo/us/mvl/MSFT.svg" alt=""></span>
                                         </li>
                                         <li class="detail">
                                             <div class="title">
@@ -303,7 +303,7 @@
                                     </ul>
                                     <ul class="logo_list" onclick="location.href ='/search/search_outline.html'" style="cursor:pointer;">
                                         <li class="title_logo">
-                                            <span class="logo"><img src="" onerror="this.style.display='none'" alt=""></span>
+                                            <span class="logo"><img src="https://uslogo.datahero.co.kr/img/logo/us/mvl/MSFT.svg" alt=""></span>
                                         </li>
                                         <li class="detail">
                                             <div class="title">
@@ -338,9 +338,9 @@
                                 <!-- 실적발표 -->
                                 <div class="area">
 
-                                    <ul class="logo_list" onclick="location.href ='/search/search_outline.html'" style="cursor:pointer;">
+                                    <ul class="logo_list" onclick="" id="btn_free" style="cursor:pointer;">
                                         <li class="title_logo">
-                                            <span class="logo"><img src="https://uslogo.datahero.co.kr/img/logo/us/mvl/AAPL.svg" alt=""></span>
+                                            <span class="logo"><img src="" onerror="this.style.display='none'" alt=""></span>
                                         </li>
                                         <li class="detail">
                                             <div class="title">
@@ -389,7 +389,7 @@
                                     </ul>
                                     <ul class="logo_list" onclick="location.href ='/search/search_outline.html'" style="cursor:pointer;">
                                         <li class="title_logo">
-                                            <span class="logo"><img src="" onerror="this.style.display='none'" alt=""></span>
+                                            <span class="logo"><img src="https://uslogo.datahero.co.kr/img/logo/us/mvl/MSFT.svg" alt=""></span>
                                         </li>
                                         <li class="detail">
                                             <div class="title">
@@ -542,23 +542,4 @@
 </div>
 <div class="md-overlay"></div><!-- the overlay element -->
 
-<script>
-    $(document).ready(function () {
-        // 탭 버튼 클릭 이벤트 핸들러
-        $('.tab_span').click(function () {
-            // 선택한 탭 버튼에 'active' 클래스 추가
-            $(this).addClass('active');
-            
-            // 다른 탭 버튼에서 'active' 클래스 제거
-            $('.tab_span').not(this).removeClass('active');
-            
-            // 탭 내용 숨기기
-            $('.tab').hide();
-            
-            // 선택한 탭 내용 보이기
-            var tabId = $(this).attr('data-tab');
-            $('#' + tabId).fadeIn();
-        });
-    });
-</script>
 </html>
