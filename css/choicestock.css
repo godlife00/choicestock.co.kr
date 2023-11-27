@@ -13101,7 +13101,7 @@ table.tableRanking td {
 
 .globalStock .sub_search .tabs_3.tabs_depth2 li.active {
 	font-weight: bold;
-	background: #fff;
+	background: #f7f8f9;
 }
 
 .globalStock .sub_search .tabs_3.tabs_depth2 li.active a {
@@ -13884,7 +13884,7 @@ table.tableRanking td {
 .globalStock .sub_search .sub_mid .tab_diagnosis_area .charm_num {
 	color: #939393;
 	font-size: 1.125rem;
-	background: #fff;
+	background: #f7f8f9;
 	border-radius: 28px;
 	padding: 9px 5px 19px;
 	text-align: center;
@@ -14023,7 +14023,7 @@ table.tableRanking td {
 }
 
 .globalStock .sub_search .sub_mid .tab_diagnosis_area .hiding_box {
-	background: #fff;
+	background: #f7f8f9;
 	margin: 40px auto 0;
 	box-sizing: border-box;
 	padding: 23px 15px 20px;
@@ -14210,7 +14210,7 @@ table.tableRanking td {
 	margin: 10px auto 20px;
 	box-sizing: border-box;
 	width: calc(100% - 30px);
-	background: #fff;
+	background: #f7f8f9;
 	padding: 15px 15px;
 	border-radius: 20px;
 }
@@ -15041,7 +15041,7 @@ table.tableRanking td {
 }
 
 .globalStock .sub_search .sub_mid.tabs_area .chart_area.diagnosis {
-	background: #fff;
+	background: #f7f8f9;
 	width: calc(100% - 30px);
 	margin: 20px auto 15px;
 	border-radius: 20px;
@@ -15444,7 +15444,7 @@ table.tableRanking td {
 
 .globalStock .sub_search .sub_mid .investCharm_area .summary_guide {
 	position: relative;
-	background: #ececef;
+	background: #F5F5F9;
 	padding: 10px;
 	border-radius: 12px;
 }
@@ -15465,7 +15465,7 @@ table.tableRanking td {
 .globalStock .sub_search .sub_mid .investCharm_area .summary_guide.big::before {
 	content: "";
 	display: block;
-	background: #ececef;
+	background: #F5F5F9;
 	border-radius: 50%;
 	width: 40px;
 	height: 40px;
@@ -15491,7 +15491,7 @@ table.tableRanking td {
 .globalStock .sub_search .sub_mid .investCharm_area .summary_guide.small::before {
 	content: "";
 	display: block;
-	background: #ececef;
+	background: #F5F5F9;
 	border-radius: 50%;
 	width: 40px;
 	height: 40px;
@@ -15515,7 +15515,7 @@ table.tableRanking td {
 }
 
 .globalStock .sub_search .sub_mid .financecachart_area .chart_area .guide {
-	background: #EAEAEF;
+	background: #F5F5F9;
 	border-radius: 12px;
 	text-align: left;
 	color: #939393;
@@ -16317,7 +16317,7 @@ table.tableRanking td {
 }
 
 .globalStock .sub_search .sub_mid.tabs_area .alloca_info .table_area {
-	background: #fff;
+	background: #f7f8f9;
 	border-radius: 9px;
 	box-sizing: border-box;
 	padding: 5px 10px;
@@ -22704,10 +22704,12 @@ table.tableRanking td {
 .globalStock .sub_service .sub_mid .sub_con .bg_box {
 	padding: 38px 0 40px;
 	position: relative;
+	background-color: #F4F4F5;
 }
 
 .globalStock .sub_service .sub_mid .sub_con .bg_box:first-child {
-	padding-top: 20px;
+	padding-top: 0;
+	padding-bottom: 0;
 }
 
 .globalStock .sub_service .sub_mid .sub_con .bg_box:nth-child(2) {
@@ -22740,7 +22742,8 @@ table.tableRanking td {
 	color: #939393;
 	font-size: 0.9rem;
 	line-height: 1.43;
-	padding: 0 15px;
+	padding: 15px 15px 30px;
+	background-color: #F4F4F5;
 }
 
 .globalStock .sub_service .sub_mid .sub_con .service_txt strong {
@@ -23188,7 +23191,7 @@ table.tableRanking td {
 
 /* 서비스소개 제휴사이트 */
 /* 서비스소개 프리미엄 */
-.globalStock .sub_service .sub_top.service_t02 {
+.globalStock .sub_service .sub_top.service_t02 {	
 	background: #404fc3 url('/img/bg_service_2.png') no-repeat calc(100% + 16px) calc(100% + 4px);
 	background-size: 172px 196px;
 }
@@ -23209,10 +23212,11 @@ table.tableRanking td {
 .globalStock .sub_service .sub_con .prm_title {
 	color: #333;
 	font-size: 1.9rem;
-	text-align: center;
-	margin-top: 25px;
+	text-align: center;	
 	line-height: 1.3;
-	margin-bottom: 15px;
+	padding-top: 25px;	
+	padding-bottom: 15px;
+	background-color: #F4F4F5;
 }
 
 .globalStock .sub_service .sub_con .prm_title strong {
@@ -30471,7 +30475,7 @@ table.tableRanking td {
 .globalStock .sub_search .sub_mid .adequate_stock .box {
 	padding: 16px 15px 20px;
 	border-radius: 16px;
-	background-color: #ffffff;
+	background-color: #f7f8f9;
 }
 
 @media (min-width:320px) and (max-width: 358px) {
@@ -31358,6 +31362,7 @@ table.tableRanking td {
 
 .globalStock .sub_search .sub_mid .eventsum_area {
 	margin-top: 40px;
+	background-color: #f7f8f9;
 }
 
 .globalStock .sub_search .sub_mid .eventsum_area .chart_bg {
@@ -31377,7 +31382,9 @@ table.tableRanking td {
 	background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.2) 100%);
 	display: none;
 }
-
+.globalStock .sub_search .sub_mid .eventsum_area .chart_layout {
+	background-color: #f7f8f9;
+}
 .globalStock .sub_search .sub_mid .eventsum_area .chart_layout .highcharts-series-label text {
 	opacity: 0;
 	display: none;
@@ -31401,7 +31408,7 @@ table.tableRanking td {
 	top: 0;
 	bottom: 0;
 	background: #333;
-	opacity: 0.3;
+	opacity: 0.2;
 }
 
 .globalStock .sub_search .sub_mid .eventsum_area .freeChare .weeks_free {
@@ -31535,7 +31542,7 @@ table.tableRanking td {
 .globalStock .sub_search .sub_mid.research_board .news_no_data {
 	margin: 20px 15px 0;
 	border-radius: 20px;
-	background: #fff url('/img/bg_nodata.png') no-repeat center 70px;
+	background: #f7f8f9 url('/img/bg_nodata.png') no-repeat center 70px;
 	box-sizing: border-box;
 	padding-top: 240px;
 	padding-bottom: 15px;
@@ -35083,6 +35090,7 @@ body.v_signalStreng {
 
 .v_signalStreng.globalStock #wrap #container .main_mid.new_area .btn_more a {
 	display: block;
+	width: 100%;
 	border: 1px solid #BEBCCB;
 	color: #404fc3;
 	font-size: 0.75rem;
@@ -35506,12 +35514,17 @@ body.v_signalStreng {
 	border-color: var(--coldae);
 }
 /* 종목검색 - 종목진단 탭 */
-.v_signalStreng.globalStock #wrap .sub_mid.tabs_area,
-.v_signalStreng.globalStock #wrap .competitors_table,
-.v_signalStreng.globalStock #wrap .sub_mid.research_board,
+/* .v_signalStreng.globalStock #wrap .sub_mid.tabs_area, */
+/* .v_signalStreng.globalStock #wrap .competitors_table, */
+/* .v_signalStreng.globalStock #wrap .sub_mid.research_board, */
 /* .v_signalStreng.globalStock #wrap .sub_recipe .sub_mid.recipe_view, */
 .v_signalStreng.globalStock #wrap .sub_recom .sub_mid .tabsArea .tabs_two+.tab_container > div {
 	background-color: #F4F4F5;
+}
+.v_signalStreng.globalStock #wrap .sub_mid.tabs_area,
+.v_signalStreng.globalStock #wrap .competitors_table,
+.v_signalStreng.globalStock #wrap .sub_mid.research_board {
+	background-color: #fff;
 }
 .v_signalStreng.globalStock #wrap .sub_recom .sub_mid .tabsArea .tabs_two+.tab_container > div {
 	padding-bottom: 35px;
@@ -36005,7 +36018,8 @@ body.v_signalStreng {
 .v_signalStreng.globalStock .sub_search .latest_results,
 .v_signalStreng.globalStock .sub_alarm,
 .v_signalStreng.globalStock .sub_briefing,
-.v_signalStreng.globalStock .sub_login {
+.v_signalStreng.globalStock .sub_login,
+.v_signalStreng.globalStock .sub_service {
 	margin-top: 15px;
 }
 
