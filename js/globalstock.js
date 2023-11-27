@@ -203,20 +203,20 @@ $(document).ready(function () {
     });
 
     //푸터 하단 고정 search_top searching
-    var winHeight = $(window).height();
-    var footerHeight = $('#footer').height() - 66;
-    var bodyHeight = $('html, body').height() - footerHeight;
+    // var winHeight = $(window).height();
+    // var footerHeight = $('#footer').height() - 66;
+    // var bodyHeight = $('html, body').height() - footerHeight;
     // if (winHeight >= bodyHeight) {
     //     $('#footer').addClass('fix_footer');
     //     console.log("add fix");
     // }
 
     // 마이페이지 footer 고정
-    if ($('.globalStock .sub_login .mapage_service').length) {
-        if (winHeight >= bodyHeight) {
-            $('#footer').addClass('fix_footer');
-        }
-    }
+    // if ($('.globalStock .sub_login .mapage_service').length) {
+    //     if (winHeight >= bodyHeight) {
+    //         $('#footer').addClass('fix_footer');
+    //     }
+    // }
 
     // #footer padding-bottom 계산
     if (!$('.globalStock .gnb').length) {
@@ -225,7 +225,10 @@ $(document).ready(function () {
     if ($('.sub_payment .fix_btn').length) {
         $('#footer').css('padding-bottom', '68px');
     }
-
+    if ($('.gnb').length === 0) {
+        $('#footer.chous_footer .notice').css('padding-bottom', '35px');
+    }
+    
     //검색
     if ($('.sub_search').length) {
         // $('#footer').removeClass('fix_footer');

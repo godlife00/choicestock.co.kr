@@ -20659,7 +20659,7 @@ table.tableRanking td {
 }
 
 .globalStock .sub_login .loign .att_service {
-	padding: 10px 0;
+	/* padding: 10px 0; */
 	text-align: center;
 }
 
@@ -20704,7 +20704,7 @@ table.tableRanking td {
 }
 
 .globalStock .sub_login .loign .sns {
-	margin-top: 15px;
+	margin-top: 25px;
 	text-align: center;
 }
 
@@ -20786,7 +20786,7 @@ table.tableRanking td {
 
 /* 로그인 - 아이디체크 */
 .globalStock .sub_login .loign_chk {
-	padding: 34px 15px;
+	padding: 15px 15px;
 }
 
 .globalStock .sub_login .loign_chk .login_title {
@@ -20847,7 +20847,7 @@ table.tableRanking td {
 }
 
 .globalStock .sub_login .agree_area .agree_from .label {
-	background: #fff;
+	background: #f7f8f9;
 	border-radius: 9px;
 	padding: 14px 20px 14px 12px;
 }
@@ -20984,7 +20984,7 @@ table.tableRanking td {
 
 .globalStock .sub_login .agree_area .agree_from .phonePin_form .box {
 	padding: 0 35px 10px;
-	background: #fff;
+	background: #f7f8f9;
 	position: relative;
 }
 
@@ -21147,8 +21147,8 @@ table.tableRanking td {
 
 /* 로그인 - 가입완료 */
 .globalStock .sub_login .loign_com {
-	background: url('../img/bg_loign_com.png') no-repeat 110% 33px;
-	padding: 265px 15px 30px;
+	background: url('../img/bg_loign_com.png') no-repeat 98% 17px;
+	padding: 245px 15px 30px;
 }
 
 .globalStock .sub_login .loign_com .login_title {
@@ -21551,7 +21551,7 @@ table.tableRanking td {
 /* 내정보 - 회원정보 */
 .globalStock .sub_login .mapage_area .tab_area .tbas_lb.tabs_2 li a {
 	width: 100%;
-	padding: 16px 0;
+	padding: 12px 0;
 	box-sizing: border-box;
 	color: #333;
 	font-size: 1rem;
@@ -21560,7 +21560,7 @@ table.tableRanking td {
 
 .globalStock .sub_login .mapage_area .tab_area .tbas_lb.tabs_2 li a.active {
 	border-bottom: 2px solid #404FC3;
-	padding-bottom: 15px;
+	padding-bottom: 13px;
 	color: #404fc3;
 	font-weight: bold;
 	position: relative;
@@ -21638,7 +21638,7 @@ table.tableRanking td {
 }
 
 .globalStock .sub_login .mapage_area .mapage_form {
-	padding: 30px 15px 0;
+	padding: 5px 15px 0;
 }
 
 .globalStock .sub_login .mapage_area .mapage_form .form_table tr {
@@ -21819,6 +21819,7 @@ table.tableRanking td {
 
 .globalStock .sub_login .mapage_area .mapage_form .agree_area .agree_from .label {
 	padding: 10px 20px 10px 12px;
+	background-color: #f7f8f9;
 }
 
 .globalStock .sub_login .mapage_area .mapage_form .agree_area .agree_from .label .label_chk {
@@ -21865,11 +21866,11 @@ table.tableRanking td {
 
 /* 내정보 - 서비스/결제내역 */
 .globalStock .sub_login .mapage_service {
-	background: #fff;
+	background: #f7f8f9;
 	border-radius: 9px;
 	margin: 26px auto 0;
 	width: calc(100% - 30px);
-	padding: 14px 10px;
+	padding: 14px 10px 20px;
 	box-sizing: border-box;
 }
 
@@ -21909,6 +21910,7 @@ table.tableRanking td {
 }
 
 .globalStock .sub_login .mapage_service .service_table .system span {
+	background-color: #fff;
 	border: 1px solid #e0e4e9;
 	border-radius: 13px;
 	font-size: 0.75rem;
@@ -22486,11 +22488,12 @@ table.tableRanking td {
 
 /* 내정보 - 회원탈퇴 */
 .globalStock .sub_login .withdrawal_com {
-	padding: 40px 24px 0;
+	padding: 5px 24px 25px;
 }
 
 .globalStock .sub_login .withdrawal_com .h2_title {
 	padding-left: 0;
+	margin-top: 0;
 	margin-bottom: 28px;
 }
 
@@ -22581,13 +22584,14 @@ table.tableRanking td {
 
 .globalStock .sub_login .withdrawal_com .wtwalBtn {
 	text-align: right;
-	margin-top: 15px;
+	margin-top: 30px;
 }
 
 .globalStock .sub_login .withdrawal_com .wtwalBtn .btn_ssin {
 	min-width: auto;
-	padding: 8px 15px;
+	padding: 11px 15px;
 	border-radius: 5px;
+	font-size: 0.9375rem;
 	color: #fff;
 	background: #404fc3;
 	display: inline-block;
@@ -32694,6 +32698,7 @@ table.tableRanking td {
 	box-sizing: border-box;
 	border-radius: 5px;
 	background-color: #fff;
+	border: solid 1px #e0e4e9;
 }
 
 .globalStock .sub_login .mapage_area .mapage_form .form_table .phonePin_form .pinInput {
@@ -32701,7 +32706,7 @@ table.tableRanking td {
 }
 
 .globalStock .sub_login .mapage_area .mapage_form .form_table .phonePin_form .pinInput:focus {
-	border: none;
+	border: 1px solid #404fc3 !important;
 	outline: none;
 }
 
@@ -35667,7 +35672,7 @@ body.v_signalStreng {
 	font-weight: bold;
 	color: #333;
 	width: 88px;
-	text-align: right;
+	text-align: center;
 }
 
 .v_signalStreng.globalStock #wrap .modal.signal_pop01 .pop_con .trading_signal .list .exp_signal.increase {
@@ -35999,7 +36004,8 @@ body.v_signalStreng {
 .v_signalStreng.globalStock .sub_research,
 .v_signalStreng.globalStock .sub_search .latest_results,
 .v_signalStreng.globalStock .sub_alarm,
-.v_signalStreng.globalStock .sub_briefing {
+.v_signalStreng.globalStock .sub_briefing,
+.v_signalStreng.globalStock .sub_login {
 	margin-top: 15px;
 }
 
@@ -36007,7 +36013,6 @@ body.v_signalStreng {
 .v_signalStreng.globalStock .sub_search .latest_results .tabsArea .tab_container .txt_box {
 	background-color: #F5F5F9;
 }
-
 .v_signalStreng.globalStock .return_sum {
 	display: flex;
 	margin: 15px 16px 35px;
