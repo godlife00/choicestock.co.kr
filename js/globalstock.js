@@ -144,6 +144,17 @@ $(document).ready(function () {
             });
         }
     });
+
+    // 스크롤시 헤더 상단 고정 스크립트
+    window.addEventListener('scroll', function () {
+        var header = document.getElementById('header');
+        if (window.scrollY >= 54) {
+            header.classList.add('fix_header');
+        } else {
+            header.classList.remove('fix_header');
+        }
+    });
+
     // 미국주식창 검색바 하단 이벤트 배너 있는 경우 처리
     if ($('.search_top .event_banner').length) {
         $(window).scroll(function () {
@@ -697,6 +708,7 @@ $(document).ready(function () {
 
     //서브 발굴 - 승부주 
     var gameSwiper = new Swiper('.gameSwiper', {
+        autoHeight: true, // 높이 자동 조정 활성화
         setWrapperSize: true,
         pagination: {
             el: '.swiper-pagination',
@@ -1306,5 +1318,16 @@ $(document).ready(function () {
         });
         // return false;
     });
+
+    // 페이지에 class="sub_payment"가 있는지 체크해서 결제 화면 헤더에 파란색 추가
+    if (document.querySelector('.sub_payment')) {
+        // header 요소를 가져옴
+        var header = document.getElementById('header');
+
+        // header가 존재하면 bg_blue 클래스 추가
+        if (header) {
+            header.classList.add('bg_blue');
+        }
+    }
 
 });

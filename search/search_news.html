@@ -62,33 +62,36 @@
         </div>
     </div>
 
-    <div id="wrap">
-        <!-- 하단 GNB -->
-        <div class="gnb">
-            <ul class="list">
-                <li class="home"><a href="../index.html">홈</a></li>
-                <li class="sch"><a href="../search/searching.html">검색</a></li>
-                <li class="stock active"><a href="../stock/recom.html">추천</a></li>                
-                <li class="excavation"><a href="../stock/note.html">발굴</a></li>                
-                <li class="attention"><a href="../search/searching_attention.html">관심</a></li>                
-            </ul>
-        </div>
-        <!-- //gnb -->
-
+    <div id="wrap">        
         <div id="header" class="header">
             <div class="headerTop">
-                <a href="javascript:history.back();" class="go_back">히스토리백</a>
-                <h1 class="headerLogo"><span>종목검색</span></h1>
-                <span class="att"><i class="attention on" style="left:-50px"></i></span>
-                <span class="att"><i class="attention attention_pop"></i></span>
-                <!-- 관심종목 최초 지정 시 관심종목 안내 팝업 노출 : class = attention_pop 있는 경우-->
+                <div class="left">
+                    <a href="javascript:history.back();" class="go_back">히스토리백</a>
+                </div>
+                <div class="cen">
+                    <h1 class="headerLogo"><span>종목검색</span></h1>
+                </div>
+                <div class="right">
+                    <span class="att"><i class="attention on" style="left:-50px"></i></span>
+                    <span class="att"><i class="attention attention_pop"></i></span>
+                </div>
             </div>
             <!-- //headerTop -->
-        </div> 
+        </div>
 
         <!-- 종목검색 class = sub_search-->
         <div id="container" class="sub_search">
-            
+            <!-- 하단 GNB -->
+            <div class="gnb">
+                <ul class="list">
+                    <li class="home"><a href="../index.html">홈</a></li>
+                    <li class="sch"><a href="../search/searching.html">검색</a></li>
+                    <li class="stock active"><a href="../stock/recom.html">추천</a></li>                
+                    <li class="excavation"><a href="../stock/note.html">발굴</a></li>                
+                    <li class="attention"><a href="../search/searching_attention.html">관심</a></li>                
+                </ul>
+            </div>
+            <!-- //gnb -->
             <!-- 검색 종목 -->
             <div class="recom_company">
                 <ul class="list">
@@ -151,10 +154,10 @@
                     <li>
                         <dl class="lst_type2">
                             <dt class="tit">
-                                <a href="search_news_view.html"><strong>캠벨 수프 예상 EPS 0.83 (21년 3월 2째주 주요 실적발표 기업)</strong></a>
+                                <a href="../stock/research_view.html"><strong>캠벨 수프 예상 EPS 0.83 (21년 3월 2째주 주요 실적발표 기업)</strong></a>
                             </dt>
                             <dd class="photo">
-                                <a href="search_news_view.html"><img src="../img/temp_note.png" alt=""></a>
+                                <a href="../stock/research_view.html"><img src="../img/temp_note.png" alt=""></a>
                             </dd>
                         </dl>
                     </li>
@@ -170,10 +173,10 @@
                     <li>
                         <dl class="lst_type2">
                             <dt class="tit">
-                                <a href="/stock/research_view/215"><strong>메디패스트, 너로 정했다 (feat. 미국기업소개)</strong></a>
+                                <a href="../stock/research_view.html"><strong>메디패스트, 너로 정했다 (feat. 미국기업소개)</strong></a>
                             </dt>
                             <dd class="photo">
-                                <a href="/stock/research_view/215"><img
+                                <a href="../stock/research_view.html"><img
                                         src="https://hero.datahero.co.kr/webdata/attach_data/explore/202103/f7ba16406da1dda6ea40a8131513cc57.png"
                                         alt=""></a>
                             </dd>
@@ -182,22 +185,31 @@
                     <li>
                         <dl class="lst_type2">
                             <dt class="tit">
-                                <a href="/stock/research_view/216"><strong>10배 성장하는 생각법 - 월드클래스 창업자의 특징</strong></a>
+                                <a href="../stock/research_view.html"><strong>10배 성장하는 생각법 - 월드클래스 창업자의 특징</strong></a>
                             </dt>
                             <dd class="photo">
-                                <a href="/stock/research_view/216"><img
+                                <a href="../stock/research_view.html"><img
                                         src="https://img.stibee.com/30864_1612495409.jpg" alt=""></a>
                             </dd>
                         </dl>
+                    </li>                    
+                    <li>
+                        <dl class="lst_type2 lst_lock">
+                            <dt class="tit">
+                                <a href="#" data-modal="modal-3" class="btn_free md-trigger"><strong>[필독] 추천 포트폴리오 점검 및
+                                        투자전략 추천 포트폴리오 점검 및 투자전략</strong></a>
+                            </dt>
+                            <dd class="photo"></dd>
+                        </dl>
                     </li>
                     <li>
                         <dl class="lst_type2">
                             <dt class="tit">
-                                <a href="/stock/research_view/214"><strong>재무제표, 어렵다 어려워! (feat. 3대 제무제표)</strong></a>
+                                <a href="../stock/research_view.html"><strong>메디패스트, 너로 정했다 (feat. 미국기업소개)</strong></a>
                             </dt>
                             <dd class="photo">
-                                <a href="/stock/research_view/214"><img
-                                        src="https://hero.datahero.co.kr/webdata/attach_data/explore/202103/c98e24602f5573dc60790333662a18fe.png"
+                                <a href="../stock/research_view.html"><img
+                                        src="https://hero.datahero.co.kr/webdata/attach_data/explore/202103/f7ba16406da1dda6ea40a8131513cc57.png"
                                         alt=""></a>
                             </dd>
                         </dl>
@@ -205,12 +217,31 @@
                     <li>
                         <dl class="lst_type2">
                             <dt class="tit">
-                                <a href="/stock/research_view/213"><strong>코스트코 홀세일 예상 EPS 2.44 (21년 3월 1째주 주요 실적발표
-                                        기업)</strong></a>
+                                <a href="../stock/research_view.html"><strong>10배 성장하는 생각법 - 월드클래스 창업자의 특징</strong></a>
                             </dt>
                             <dd class="photo">
-                                <a href="/stock/research_view/213"><img
-                                        src="https://hero.datahero.co.kr/webdata/attach_data/explore/202102/9cc3c59b40a03172785f2cdeaf4f3c6d.png"
+                                <a href="../stock/research_view.html"><img
+                                        src="https://img.stibee.com/30864_1612495409.jpg" alt=""></a>
+                            </dd>
+                        </dl>
+                    </li>                    
+                    <li>
+                        <dl class="lst_type2 lst_lock">
+                            <dt class="tit">
+                                <a href="#" data-modal="modal-3" class="btn_free md-trigger"><strong>[필독] 추천 포트폴리오 점검 및
+                                        투자전략 추천 포트폴리오 점검 및 투자전략</strong></a>
+                            </dt>
+                            <dd class="photo"></dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl class="lst_type2">
+                            <dt class="tit">
+                                <a href="../stock/research_view.html"><strong>메디패스트, 너로 정했다 (feat. 미국기업소개)</strong></a>
+                            </dt>
+                            <dd class="photo">
+                                <a href="../stock/research_view.html"><img
+                                        src="https://hero.datahero.co.kr/webdata/attach_data/explore/202103/f7ba16406da1dda6ea40a8131513cc57.png"
                                         alt=""></a>
                             </dd>
                         </dl>
@@ -218,132 +249,14 @@
                     <li>
                         <dl class="lst_type2">
                             <dt class="tit">
-                                <a href="/stock/research_view/211"><strong>이달의 배당 - 21년 3월 (미국 배당주로 월세 만들기)</strong></a>
+                                <a href="../stock/research_view.html"><strong>10배 성장하는 생각법 - 월드클래스 창업자의 특징</strong></a>
                             </dt>
                             <dd class="photo">
-                                <a href="/stock/research_view/211"><img
-                                        src="https://hero.datahero.co.kr/webdata/attach_data/explore/202102/7e7c054b74a90b841b0fffa22b888bfc.png"
-                                        alt=""></a>
+                                <a href="../stock/research_view.html"><img
+                                        src="https://img.stibee.com/30864_1612495409.jpg" alt=""></a>
                             </dd>
                         </dl>
-                    </li>
-                    <li>
-                        <dl class="lst_type2">
-                            <dt class="tit">
-                                <a href="/stock/research_view/209"><strong>[분석] 바오준, 중국의 쇼피파이 기업</strong></a>
-                            </dt>
-                            <dd class="photo">
-                                <a href="/stock/research_view/209">
-
-                                    <img src="https://hero.datahero.co.kr/webdata/attach_data/explore/202102/5ab71af46b198a159088b133395c25a9.png"
-                                        alt=""></a>
-                            </dd>
-                        </dl>
-                    </li>
-                    <li>
-                        <dl class="lst_type2">
-                            <dt class="tit">
-                                <a href="/stock/research_view/210">
-
-                                    <strong>쿠팡(CPNG), 미국주식에 상륙하다 (feat. 뉴욕증시)</strong></a>
-                            </dt>
-                            <dd class="photo">
-                                <a href="/stock/research_view/210">
-
-                                    <img src="https://hero.datahero.co.kr/webdata/attach_data/explore/202102/95937a3a38fd14bf109b7cd1c1b5b539.png"
-                                        alt=""></a>
-                            </dd>
-                        </dl>
-                    </li>
-                    <li>
-                        <dl class="lst_type2">
-                            <dt class="tit">
-                                <a href="/stock/research_view/208">
-
-                                    <strong>엔비디아 예상 EPS 2.8 (21년 2월 4째주 주요 실적발표 기업)</strong></a>
-                            </dt>
-                            <dd class="photo">
-                                <a href="/stock/research_view/208">
-
-                                    <img src="https://hero.datahero.co.kr/webdata/attach_data/explore/202102/107730f3e14afff808a3add7a5ad2617.png"
-                                        alt=""></a>
-                            </dd>
-                        </dl>
-                    </li>
-                    <li>
-                        <dl class="lst_type2">
-                            <dt class="tit">
-                                <a href="/stock/research_view/207">
-
-                                    <strong>[분석] 오픈도어, 중개인 없는 부동산 중개업 선두주자</strong></a>
-                            </dt>
-                            <dd class="photo">
-                                <a href="/stock/research_view/207">
-
-                                    <img src="https://img.stibee.com/30864_1613519390.PNG" alt=""></a>
-                            </dd>
-                        </dl>
-                    </li>
-                    <li>
-                        <dl class="lst_type2">
-                            <dt class="tit">
-                                <a href="/stock/research_view/206">
-
-                                    <strong>로지텍, 너로 정했다 (feat. 미국기업소개)</strong></a>
-                            </dt>
-                            <dd class="photo">
-                                <a href="/stock/research_view/206">
-
-                                    <img src="https://hero.datahero.co.kr/webdata/attach_data/explore/202102/ff2ab1c4e9ecdee1c792b50d6318cd46.png"
-                                        alt=""></a>
-                            </dd>
-                        </dl>
-                    </li>
-                    <li>
-                        <dl class="lst_type2">
-                            <dt class="tit">
-                                <a href="/stock/research_view/204">
-
-                                    <strong>월마트 예상 EPS 1.51 (21년 2월 3째주 주요 실적발표 기업)</strong></a>
-                            </dt>
-                            <dd class="photo">
-                                <a href="/stock/research_view/204">
-
-                                    <img src="https://hero.datahero.co.kr/webdata/attach_data/explore/202102/95e920a914dc322a4b7e18947358f0cb.png"
-                                        alt=""></a>
-                            </dd>
-                        </dl>
-                    </li>
-                    <li>
-                        <dl class="lst_type2">
-                            <dt class="tit">
-                                <a href="/stock/research_view/205">
-
-                                    <strong>새해 관심 가질만한 미국주식 20선</strong></a>
-                            </dt>
-                            <dd class="photo">
-                                <a href="/stock/research_view/205">
-
-                                    <img src="https://hero.datahero.co.kr/webdata/attach_data/explore/202102/175c0396c0e3049c51a752456abb27b1.png"
-                                        alt=""></a>
-                            </dd>
-                        </dl>
-                    </li>
-                    <li>
-                        <dl class="lst_type2">
-                            <dt class="tit">
-                                <a href="/stock/research_view/203">
-
-                                    <strong>코카콜라 예상 EPS 0.42 (21년 2월 2째주 주요 실적발표 기업)</strong></a>
-                            </dt>
-                            <dd class="photo">
-                                <a href="/stock/research_view/203">
-
-                                    <img src="https://hero.datahero.co.kr/webdata/attach_data/explore/202102/8efefe7e81cd7fc2b73fa837d87f9cb4.png"
-                                        alt=""></a>
-                            </dd>
-                        </dl>
-                    </li>
+                    </li>                    
                 </ul>
                 <div class="btn_more">
                     <a href="">더보기</a>
