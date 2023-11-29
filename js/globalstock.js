@@ -213,22 +213,6 @@ $(document).ready(function () {
         $("#sortable").disableSelection();
     });
 
-    //푸터 하단 고정 search_top searching
-    // var winHeight = $(window).height();
-    // var footerHeight = $('#footer').height() - 66;
-    // var bodyHeight = $('html, body').height() - footerHeight;
-    // if (winHeight >= bodyHeight) {
-    //     $('#footer').addClass('fix_footer');
-    //     console.log("add fix");
-    // }
-
-    // 마이페이지 footer 고정
-    // if ($('.globalStock .sub_login .mapage_service').length) {
-    //     if (winHeight >= bodyHeight) {
-    //         $('#footer').addClass('fix_footer');
-    //     }
-    // }
-
     // #footer padding-bottom 계산
     if (!$('.globalStock .gnb').length) {
         $('#footer').css('padding-bottom', '0');
@@ -358,6 +342,23 @@ $(document).ready(function () {
         }
     });
 
+    // 수익률, 최근편입, 편입제외 탭 스크립트
+    if ($('.ptfo_area, .recipe_area').length) {        
+        function openTab(tabId) {
+            // 모든 탭 숨기기
+            var tabs = document.getElementsByClassName('tab');
+            for (var i = 0; i < tabs.length; i++) {
+                tabs[i].style.display = 'none';
+            }
+
+            // 선택한 탭 보이기
+            document.getElementById(tabId).style.display = 'block';
+        }
+
+        // 초기에 첫 번째 탭을 열도록 설정
+        openTab('tab1');
+
+    }
 
 
     // 종목추천 - 포트폴리오 탭 노출

@@ -26033,6 +26033,18 @@ table.tableRanking td {
   padding-top: 0;
 }
 
+.globalStock .sub_search .latest_results .tabsArea .tabs li {
+  padding: 0;
+}
+
+.globalStock .sub_search .latest_results .tabsArea .tabs li > a {
+  display: inline-block;
+  width: 100%;
+  padding: 12px 0 10px;
+  box-sizing: border-box;
+  border-bottom: none;
+}
+
 .globalStock .sub_search .latest_results .tabsArea .tab_container .txt_box {
   background: #fff;
   padding: 12px 15px;
