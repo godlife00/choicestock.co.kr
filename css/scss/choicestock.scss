@@ -1,6 +1,7 @@
 // @import "helpers/reset"; // 리셋
 @import "helpers/functions"; // functions
 
-@import "layout/styles"; // 전반적인 스타일 요소를 담당하는 파일
 @import "layout/header";
 @import "layout/footer";
+@import "layout/styles"; // 전반적인 스타일 요소를 담당하는 파일
+@import "layout/modal"; // 팝업, 툴팁
