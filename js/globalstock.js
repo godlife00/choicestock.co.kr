@@ -343,7 +343,7 @@ $(document).ready(function () {
     //포트폴리오 제외종목 마이나스 보여주기    
     $('.globalStock .sub_mid .btn_more.show_table').on('click', function () {
         if ($(this).hasClass("show")) {
-            $('.globalStock .sub_recom .sub_mid.eventPicks_area .ptfo_area .tabsArea .tab_container .tab_content .tableRanking.sum_table tr.hide_line').show();
+            $('.globalStock .sub_recom .sub_mid.eventPicks_area .recom_chartList.hide_line').removeClass('hide_line').addClass('show_line');
             $(this).removeClass('show').addClass('hide');
             $('.globalStock .sub_mid .btn_more.show_table span').text("숨기기");
 
@@ -352,7 +352,7 @@ $(document).ready(function () {
                 scrollTop: 300
             }, 300);
 
-            $('.globalStock .sub_recom .sub_mid.eventPicks_area .ptfo_area .tabsArea .tab_container .tab_content .tableRanking.sum_table tr.hide_line').slideUp();
+            $('.globalStock .sub_recom .sub_mid.eventPicks_area .recom_chartList.show_line').addClass('hide_line');
             $(this).removeClass('hide').addClass('show');
             $('.globalStock .sub_mid .btn_more.show_table span').text("더보기");
 
