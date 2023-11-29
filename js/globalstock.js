@@ -1,11 +1,10 @@
 $(document).ready(function () {
-    // var mouse_touch = ".globalStock a, .globalStock .tabs li, .globalStock .set span, .globalStock .tabs_menu span, .globalStock i.attention, .globalStock .prm_div .box, .globalStock .sub_search .sub_mid.research_board .lst_type2, .globalStock .sub_research .popularity .lst_type2, .globalStock #footer .certification ul li, .globalStock .main_mid.note_area .lst_type2, .globalStock .sub_research .sub_mid.research_board .lst_type2, .globalStock .sub_briefing .popularity .lst_type2, .globalStock .searchArea .searchInput, .globalStock .main_mid.event_recipe .recipe_tabs li span, .globalStock .sub_login .mapage_area .mapage_form .form_table td .mod_btn, .globalStock .sub_login .mapage_area .mapage_form .form_table .phonePin_form .pinInput, .globalStock .sub_login .mapage_area .mapage_form .form_table .phonePin_form .pinInput_out, .globalStock .sub_payment .serviceStep .step_box, .globalStock #header .his_back img, .globalStock .main_top.recommend_area .recomlist_area .area, .globalStock .main_mid.game_area .list_area .area, .globalStock .banner_prm, .globalStock .main_mid.attention_area .one_step .more, .globalStock #header .headerTop .hm .btn_login, .globalStock #header .headerTop .hm .go_briefing"
-    var mouse_touch = "#btn_free";
-    $(mouse_touch).on("mousedown touchstart", function () {
-        $(this).addClass("mouse_touch");
-    }).on("mousemove touchmove mouseup touchend", function () {
-        $(this).removeClass("mouse_touch");
-    });
+    // var mouse_touch = ".globalStock a, .globalStock .tabs li, .globalStock .set span, .globalStock .tabs_menu span, .globalStock i.attention, .globalStock .prm_div .box, .globalStock .sub_search .sub_mid.research_board .lst_type2, .globalStock .sub_research .popularity .lst_type2, .globalStock #footer .certification ul li, .globalStock .main_mid.note_area .lst_type2, .globalStock .sub_research .sub_mid.research_board .lst_type2, .globalStock .sub_briefing .popularity .lst_type2, .globalStock .searchArea .searchInput, .globalStock .main_mid.event_recipe .recipe_tabs li span, .globalStock .sub_login .mapage_area .mapage_form .form_table td .mod_btn, .globalStock .sub_login .mapage_area .mapage_form .form_table .phonePin_form .pinInput, .globalStock .sub_login .mapage_area .mapage_form .form_table .phonePin_form .pinInput_out, .globalStock .sub_payment .serviceStep .step_box, .globalStock #header .his_back img, .globalStock .main_top.recommend_area .recomlist_area .area, .globalStock .main_mid.game_area .list_area .area, .globalStock .banner_prm, .globalStock .main_mid.attention_area .one_step .more, .globalStock #header .headerTop .hm .btn_login, .globalStock #header .headerTop .hm .go_briefing"    
+    // $(mouse_touch).on("mousedown touchstart", function () {
+    //     $(this).addClass("mouse_touch");
+    // }).on("mousemove touchmove mouseup touchend", function () {
+    //     $(this).removeClass("mouse_touch");
+    // });
 
     // 페이지 로드 완료후 이미지 노출
     $('.globalStock .main_mid.youtube_mijumi .video_thumbnail').show();
