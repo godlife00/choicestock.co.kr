@@ -1320,14 +1320,14 @@ $(document).ready(function () {
     });
 
     // 페이지에 class="sub_payment"가 있는지 체크해서 결제 화면 헤더에 파란색 추가
-    if (document.querySelector('.sub_payment')) {
-        // header 요소를 가져옴
-        var header = document.getElementById('header');
+    // if (document.querySelector('.sub_payment')) {
+    //     // header 요소를 가져옴
+    //     var header = document.getElementById('header');
 
-        // header가 존재하면 bg_blue 클래스 추가
-        if (header) {
-            header.classList.add('bg_blue');
-        }
-    }
+    //     // header가 존재하면 bg_blue 클래스 추가
+    //     if (header) {
+    //         header.classList.add('bg_blue');
+    //     }
+    // }
 
 });
