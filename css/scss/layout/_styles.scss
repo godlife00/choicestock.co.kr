@@ -9875,9 +9875,10 @@ table.tableRanking td {
 }
 
 .globalStock .sub_menu .settings_more {
-	float: right;
+	// float: right;
 	background: #f4f4f5;
 	border-radius: 3px;
+	margin-left: 15px;
 	padding: 0 10px;
 	text-align: center;
 	box-sizing: border-box;
@@ -26309,8 +26310,38 @@ table.tableRanking td {
 }
 
 .globalStock .sub_menu .sub_top {
-	padding-top: 15px;
+	padding-top: 55px;
 	padding-bottom: 10px;
+}
+.globalStock .sub_menu .sub_top .go_back {
+	cursor: pointer;
+	position: absolute;
+	display: inline-block;
+	padding: 4px;
+	width: 17px;
+	height: 17px;
+	right: 14px;
+	top: 20px;
+	font-size: 0;
+
+	&::before,
+	&::after {
+		content: "";
+		position: absolute;
+		right: 15px;
+		top: 0;
+		height: 22px;
+		width: 2px;
+		background-color: #333;	
+	}
+
+	&::before {
+		transform: rotate(45deg);
+	}
+
+	&::after {
+		transform: rotate(-45deg);
+	}
 }
 
 .globalStock .sub_menu .sub_top .title {
