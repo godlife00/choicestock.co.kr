@@ -19221,7 +19221,7 @@ table.tableRanking td {
 }
 
 .globalStock .sub_login .agree_area .agree_from .txt_reject {
-  /* background-color: #fff; */
+  background-color: #fff;
   text-align: center;
   font-size: 0.75rem;
   letter-spacing: -0.6px;
