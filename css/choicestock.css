@@ -1719,6 +1719,10 @@ table.tableRanking td {
   padding: 25px 15px 30px !important;
 }
 
+.globalStock .sub_terms .header {
+  padding: 0 !important;
+}
+
 .globalStock .sub_terms .terms_title {
   text-align: center;
   color: #333;
@@ -30972,7 +30976,7 @@ body.v_signalStreng {
   color: #939393;
 }
 
-.v_signalStreng.globalStock #wrap #container .attention_box {
+.v_signalStreng.globalStock #wrap #container .recom_company .attention_box {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -30984,11 +30988,11 @@ body.v_signalStreng {
   border-top: 1px solid #f4f4f5;
 }
 
-.v_signalStreng.globalStock #wrap #container .attention_box ul {
+.v_signalStreng.globalStock #wrap #container .recom_company .attention_box ul {
   display: inline-block;
 }
 
-.v_signalStreng.globalStock #wrap #container .attention_box li.attention {
+.v_signalStreng.globalStock #wrap #container .recom_company .attention_box li.attention {
   display: inline-block;
   font-size: 0.8175rem;
   font-weight: bold;
@@ -31000,12 +31004,12 @@ body.v_signalStreng {
   color: #333;
 }
 
-.v_signalStreng.globalStock #wrap #container .attention_box li.attention strong {
+.v_signalStreng.globalStock #wrap #container .recom_company .attention_box li.attention strong {
   font-size: 0.8175rem;
   font-weight: bold;
 }
 
-.v_signalStreng.globalStock #wrap #container .attention_box li.attention i {
+.v_signalStreng.globalStock #wrap #container .recom_company .attention_box li.attention i {
   display: inline-block;
   position: relative;
   top: 2px;
@@ -31016,13 +31020,13 @@ body.v_signalStreng {
   background-size: 16px 32px;
 }
 
-.v_signalStreng.globalStock #wrap #container .attention_box .stock_tag {
+.v_signalStreng.globalStock #wrap #container .recom_company .attention_box .stock_tag {
   display: inline-flex;
   gap: 0 10px;
 }
 
-.v_signalStreng.globalStock #wrap #container .attention_box .stock_tag span,
-.v_signalStreng.globalStock #wrap #container .attention_box .stock_tag a {
+.v_signalStreng.globalStock #wrap #container .recom_company .attention_box .stock_tag span,
+.v_signalStreng.globalStock #wrap #container .recom_company .attention_box .stock_tag a {
   font-size: 0.75rem;
   font-weight: 500;
   color: #6a727b;
