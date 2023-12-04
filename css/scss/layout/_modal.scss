@@ -306,6 +306,13 @@
 .v_signalStreng.globalStock #wrap .modal.signal_pop01 .pop_con .txt b {
 	font-weight: bold;
 	color: #333;
+	line-height: 1.43;
+	&.increase {
+		color: #E1305A;
+	}
+	&.decrease {
+		color: #303FAF;
+	}
 }
 
 .v_signalStreng.globalStock #wrap .modal.signal_pop01 .pop_con .trading_signal {
@@ -331,6 +338,7 @@
 }
 
 .v_signalStreng.globalStock #wrap .modal.signal_pop01 .pop_con .trading_signal .list .day {
+	width: 64px;
 	min-width: 50px;
 	font-size: 0.8125rem;
 	color: #6a727b;

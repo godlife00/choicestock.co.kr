@@ -131,26 +131,60 @@ $(document).ready(function () {
 
         if ($(this).scrollTop() > 210) {
             $('.globalStock .sub_recom .sub_top.view .chart_area .chartData').addClass('fix_data');
-            $('.globalStock .sub_recom .search_top').css('height', recom_height);
-            $('.globalStock .sub_recom .sub_top.view .chart_area .chartData').css({
-                'padding-top': '58px'
-            });
+            $('.globalStock .sub_recom .search_top').css('height', recom_height);            
         } else {
             $('.globalStock .sub_recom .sub_top.view .chart_area .chartData').removeClass('fix_data');
             $('.globalStock .sub_recom .search_top').css('height', 'auto');
-            $('.globalStock .sub_recom .sub_top.view .chart_area .chartData').css({
-                'padding-top': '30px'
-            });
         }
     });
 
+    // 종목검색 상단 고정 종목명,
+    if ($('.company_nm').length) {
+        function makeSticky() {        
+            var sticky = $('.company_nm'), // 고정시키고 싶은 요소의 클래스 이름
+                stickyOffset = sticky.offset().top; // 요소의 초기 상단 위치
+
+            $(window).scroll(function () {            
+                var scroll = $(window).scrollTop();
+
+                // 스크롤 위치가 요소의 상단 위치보다 크면 고정 클래스 추가
+                if (scroll >= stickyOffset) {                
+                    sticky.addClass('fix_data');
+                } else {                
+                    sticky.removeClass('fix_data');
+                }
+            });
+        }    
+        makeSticky(); // 종목검색 상단 고정 종목명 함수 실행
+    }    
+
+    // 종목검색 개요탭 등 상단 고정 함수
+    function customizeAndAppendList() {        
+        var copy_recom = $('.globalStock #wrap #container .recom_company .list').clone();        
+        copy_recom.addClass('recom');            
+        copy_recom.find('.ticker').remove(); // 'ticker' 클래스를 가진 요소 제거
+        copy_recom.find('.stock_index').remove(); // 'stock_index' 클래스를 가진 요소 제거
+        copy_recom.find('.per span').first().remove(); // 첫 번째 'increase' 클래스를 가진 요소 제거
+        copy_recom.find('.per .day').remove(); // 'day' 클래스를 가진 요소 제거
+        $('body').append(copy_recom);
+    }
+    customizeAndAppendList();  // 종목검색 개요탭 등 상단 고정 종목명 함수 실행
+    window.addEventListener('scroll', function () {
+        var header = document.getElementById('header');
+        if (window.scrollY >= 160) {            
+            $('.list.recom').addClass('fix_data'); 
+        } else {            
+            $('.list.recom').removeClass('fix_data'); 
+        }
+    });
+       
     // 스크롤시 헤더 상단 고정 스크립트
     window.addEventListener('scroll', function () {
         var header = document.getElementById('header');
         if (window.scrollY >= 54) {
-            header.classList.add('fix_header');
+            header.classList.add('fix_header');            
         } else {
-            header.classList.remove('fix_header');
+            header.classList.remove('fix_header');            
         }
     });
 
@@ -213,16 +247,48 @@ $(document).ready(function () {
         $("#sortable").disableSelection();
     });
 
-    // #footer padding-bottom 계산
-    if (!$('.globalStock .gnb').length) {
-        $('#footer').css('padding-bottom', '0');
-    }
-    if ($('.sub_payment .fix_btn').length) {
-        $('#footer').css('padding-bottom', '68px');
-    }
+    // #footer padding-bottom 계산    
     if ($('.gnb').length === 0) {
         $('#footer.chous_footer .notice').css('padding-bottom', '35px');
     }
+
+    // 화면 스크롤 할때 gnb 숨기기 함수
+    function handleScrollForGNB() {
+        var lastScrollTop = 0;
+        var threshold = 90;
+        var scrollTimeout = null; // 스크롤 타이머
+    
+        $(window).scroll(function() {
+            var currentScrollTop = $(this).scrollTop();
+            var windowHeight = $(window).height();
+            var documentHeight = $(document).height();
+    
+            // 스크롤 타이머 초기화
+            clearTimeout(scrollTimeout);
+    
+            // 스크롤이 페이지 하단 근처에 도달하면 GNB 보이기
+            if (currentScrollTop + windowHeight >= documentHeight - threshold) {
+                $('.globalStock .gnb').slideDown(150);
+            } else {
+                if (currentScrollTop > lastScrollTop) {
+                    // 스크롤 내릴 때: GNB 숨기기
+                    $('.globalStock .gnb').slideUp(150);
+                } else {
+                    // 스크롤 올릴 때: GNB 보이기
+                    $('.globalStock .gnb').slideDown(150);
+                }
+    
+                // 일정 시간(예: 2000ms) 동안 스크롤 이벤트가 없으면 GNB 보이기
+                scrollTimeout = setTimeout(function() {
+                    $('.globalStock .gnb').slideDown(150);
+                }, 100);
+            }
+    
+            lastScrollTop = currentScrollTop;
+        });
+    }
+    
+    handleScrollForGNB(); //화면 스크롤 할때 gnb 숨기기 함수 실행    
     
     //검색
     if ($('.sub_search').length) {
@@ -640,6 +706,7 @@ $(document).ready(function () {
         },
         direction: 'vertical',
         loop: true,
+        allowTouchMove: false, // 이 줄을 추가하여 터치 이동을 방지
     });
 
     //메인 하단 레시피
