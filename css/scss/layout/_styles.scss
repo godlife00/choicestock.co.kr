@@ -145,7 +145,6 @@ video {
 	border: 0;
 	line-height: 100%;
 	font-family: "Pretendard Variable", Pretendard, 'Spoqa Han Sans Neo', -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-	/* font-family: 'Spoqa Han Sans Neo', "Malgun gothic", "Helvetica Neue", Helvetica, Arial, sans-serif; */
 	letter-spacing: -0.015rem;
 	color: #444;
 	vertical-align: baseline;
@@ -981,50 +980,53 @@ table.tableRanking td {
 }
 
 /* 텍스트 필터 */
-.globalStock .remark .txt_filter {
-	display: inline-block;
-	padding: 0 3px
-}
+.globalStock .remark {
+	display: inline-flex !important;
+	gap: 0 4px;	
+	font-size: 0.9375rem;		
+	position: relative;
+	top: -2px;
 
-.globalStock .remark .txt_filter.size_M {
-	padding-left: 0;
-	padding-top: 3px;
-}
+	.txt_filter {
+		display: inline-flex;		
+		align-items: center;
+		gap: 0 4px;
+		padding-left: 4px;	
+		&.size_M {		
+		
+		}		
+		&.size_S {
+			padding-left: 0;
+			
+		}
+	}
 
-.globalStock .remark .txt_filter.size_S {
-	padding-left: 0;
-	padding-top: 3px;
+	
+	
+	.txt_filter i {		
+		border-radius: 50%;
+		background-color: #999;		
+	}
+	
+	.txt_filter.size_B i {
+		width: 11px;
+		height: 11px;
+	}
+	
+	.txt_filter.size_M i {
+		width: 7px;
+		height: 7px;
+		opacity: 0.67;		
+	}
+	.txt_filter.size_S i {
+		width: 5.4px;
+		height: 5.4px;
+		opacity: 0.23;
+	}	
 }
-
-.globalStock .remark .txt_filter i {
-	display: inline-block;
-	border-radius: 50%;
-	background-color: #999;
-	margin: 0 2px 2px;
-}
-
-.globalStock .remark .txt_filter.size_B i {
-	width: 11px;
-	height: 11px;
-}
-
-.globalStock .remark .txt_filter.size_M i {
-	width: 7px;
-	height: 7px;
-	opacity: 0.67;
-	vertical-align: top;
-}
-
 .globalStock .main_top .remark .txt_filter.size_M i,
 .globalStock .main_mid .remark .txt_filter.size_M i {
 	opacity: 0.4;
-}
-
-.globalStock .remark .txt_filter.size_S i {
-	width: 5.4px;
-	height: 5.4px;
-	opacity: 0.23;
-	vertical-align: top;
 }
 
 .globalStock .sub_alarm .remark .txt_filter i {
@@ -2941,11 +2943,7 @@ table.tableRanking td {
 .globalStock .main_mid.event_recipe .tab_content .tableth_box table.tableRanking .title .remark {
 	height: 14px;
 	font-size: 1.5em;
-	letter-spacing: -0.18rem;
-	padding-left: 2px;
-	display: inline-block;
-	vertical-align: top;
-	padding-top: 1px;
+	letter-spacing: -0.18rem;	
 }
 
 .globalStock .main_mid.event_recipe .tab_content .tableth_box table.tableRanking .title a .ticker {
@@ -3386,9 +3384,9 @@ table.tableRanking td {
 	white-space: nowrap;
 }
 
-.globalStock .main_top.recommend_area .recomlist_area .area .list .title .remark .txt_filter.size_M {
-	vertical-align: text-bottom;
-}
+// .globalStock .main_top.recommend_area .recomlist_area .area .list .title .remark .txt_filter.size_M {
+// 	vertical-align: text-bottom;
+// }
 
 @media (min-width:320px) and (max-width: 358px) {
 	.globalStock .main_top.recommend_area .recomlist_area .area .list .title a {
@@ -5267,7 +5265,6 @@ table.tableRanking td {
 	letter-spacing: -0.18rem;
 	padding-left: 2px;
 	display: inline-block;
-	vertical-align: top;
 }
 
 .globalStock .sub_recom .sub_mid.eventPicks_area .recom_chartList .chartData .left .event_name a {
@@ -5817,6 +5814,14 @@ table.tableRanking td {
 	padding-top: 5px;
 	height: 15px;
 	text-align: right;
+	img {
+		display: inline-block;				
+	}	
+}
+.globalStock .sub_recom .sub_top.view .chart_area .chartData.fix_data .more {	
+	img {
+		display: none;
+	}	
 }
 
 .globalStock .sub_recom .sub_top.view .chart_area .chartData .info {
@@ -5886,7 +5891,7 @@ table.tableRanking td {
 .globalStock .sub_recom .sub_top.view .chart_area .chartData .detail .num b,
 .globalStock .sub_recom .sub_top.view .chart_area .chartData .detail .per b {
 	font-weight: normal;
-	opacity: 0.7;
+	// opacity: 0.7;
 }
 
 .globalStock .sub_recom .sub_top.view .chart_area .chartData .detail .num.increase {
@@ -6021,7 +6026,7 @@ table.tableRanking td {
 	padding: 10px 17px;
 	margin: 0;
 	width: 100%;
-	height: 40px;
+	height: 54px;
 	position: fixed;
 	left: 0;
 	right: 0;
@@ -6041,7 +6046,7 @@ table.tableRanking td {
 	position: fixed;
 	left: 0;
 	right: 0;
-	top: 8px;
+	top: 17px;
 	z-index: 999;
 }
 
@@ -6064,7 +6069,7 @@ table.tableRanking td {
 	top: 0;
 	z-index: 999;
 	text-align: right;
-	margin-top: 12px;
+	margin-top: 19px;
 }
 
 .globalStock .sub_recom .sub_top.view .chart_area .chartData.fix_data .detail .day {
@@ -6085,7 +6090,7 @@ table.tableRanking td {
 
 .globalStock .sub_recom .sub_top.view .chart_area .chartData.fix_data .detail .num b,
 .globalStock .sub_recom .sub_top.view .chart_area .chartData.fix_data .detail .per b {
-	font-weight: 100;
+	// font-weight: 100;
 	opacity: 1;
 }
 
@@ -9876,21 +9881,23 @@ table.tableRanking td {
 
 .globalStock .sub_menu .settings_more {
 	// float: right;
+	display: inline-flex;
+	align-items: center;
 	background: #f4f4f5;
 	border-radius: 3px;
 	margin-left: 15px;
-	padding: 0 10px;
+	padding: 7px 10px;
+	@media (min-width:320px) and (max-width: 358px) {
+		padding: 5px 8px;
+	}
 	text-align: center;
 	box-sizing: border-box;
 }
 
 .globalStock .sub_menu .settings_more span {
-	display: inline-block;
 	color: #333;
 	font-size: 0.75rem;
-	vertical-align: top;
-	height: 25px;
-	line-height: 23px;
+	vertical-align: top;	
 	box-sizing: border-box;
 }
 
@@ -13891,6 +13898,7 @@ table.tableRanking td {
 .globalStock .sub_search .sub_mid .search_financials_area .scroll_table_wrap .scroll_table table {
 	margin-bottom: 0;
 	margin-top: 0;
+	background-color: #F4F4F5;
 }
 
 .globalStock .sub_search .sub_mid .search_financials_area .scroll_table_wrap .scroll_table table thead tr {
@@ -13984,7 +13992,7 @@ table.tableRanking td {
 
 	.globalStock .sub_search .sub_mid .search_financials_area .scroll_table_wrap .scroll_table th:nth-child(2),
 	.globalStock .sub_search .sub_mid .search_financials_area .scroll_table_wrap .scroll_table td:nth-child(2) {
-		padding-left: 75px;
+		// padding-left: 75px;
 	}
 
 	.globalStock .sub_search .sub_mid .search_financials_area .scroll_table_wrap .scroll_table .table_search_invest th span {
@@ -13998,7 +14006,7 @@ table.tableRanking td {
 
 	.globalStock .sub_search .sub_mid .search_financials_area .scroll_table_wrap .scroll_table .table_search_invest th:nth-child(2),
 	.globalStock .sub_search .sub_mid .search_financials_area .scroll_table_wrap .scroll_table .table_search_invest td:nth-child(2) {
-		padding-left: 86px;
+		// padding-left: 86px;
 	}
 
 	.globalStock .sub_search .sub_mid .search_financials_area .scroll_table_wrap .scroll_table th span {
@@ -16180,6 +16188,12 @@ table.tableRanking td {
 }
 .globalStock .sub_recom.sub_recipe .sub_mid.recipe_view {
 	background-color: #fff;	
+	.title {
+		// margin-top: 25px;
+		font-size: pxTorem(16px);
+		color: #333;		
+		font-weight: bold;
+	}	
 }
 
 .globalStock .sub_recipe .sub_mid.recipe_view .update_info {
@@ -25207,8 +25221,7 @@ table.tableRanking td {
 	padding: 10px 1%;
 	margin: 0px;
 	color: #333;
-	text-decoration: none;
-	font-family: sans-serif;
+	text-decoration: none;	
 	transition: all 0.1s ease;
 }
 
@@ -25968,14 +25981,12 @@ table.tableRanking td {
 	font-size: 1.75em !important;
 	letter-spacing: -0.18rem;
 	padding-left: 2px;
-	height: 15px;
-	display: inline-block;
-	vertical-align: top;
+	height: 15px;	
 }
 
 .globalStock .ptfo_datatable .tableRanking.ptfo_table td.name a .remark .txt_filter.size_M {
-	padding-top: 7px;
-	height: 15px;
+	// padding-top: 7px;
+	// height: 15px;
 }
 
 .globalStock .ptfo_datatable .tableRanking.ptfo_table td.name .ticker {
@@ -27859,7 +27870,8 @@ table.tableRanking td {
 	line-height: 1.08;
 	letter-spacing: normal;
 	text-align: left;
-	color: #c3c3c3;
+	color: #333;
+	background-color: transparent;	
 }
 
 /* 매우고평가 */
@@ -27888,7 +27900,8 @@ table.tableRanking td {
 	line-height: 1.08;
 	letter-spacing: normal;
 	text-align: left;
-	color: #c3c3c3;
+	color: #333;
+	background-color: transparent;	
 }
 
 .globalStock .sub_search .sub_mid .adequate_stock .box .con .value_chart .adequate {
@@ -27901,11 +27914,12 @@ table.tableRanking td {
 	margin-top: 20px;
 	padding: 4px 14px;
 	border-radius: 3px;
-	background-color: #f5f6ff;
+	background-color: #fff;
 	font-size: 1rem;
 	font-weight: normal;
 	line-height: 0.87;
 	color: #333;
+	border: 1px solid #e0e4e9;
 }
 
 .globalStock .sub_search .sub_mid .adequate_stock .box .con .value_chart .adequate strong::before {
@@ -28276,7 +28290,7 @@ table.tableRanking td {
 	line-height: 1.08;
 	letter-spacing: normal;
 	text-align: left;
-	color: #c3c3c3;
+	color: #333;
 }
 
 /* 매우고평가 */
@@ -28304,7 +28318,7 @@ table.tableRanking td {
 	line-height: 1.08;
 	letter-spacing: normal;
 	text-align: left;
-	color: #c3c3c3;
+	color: #333;
 }
 
 .globalStock .sub_search .sub_mid .adequate_stock .box .adequate_price .nodata_area .line .domain .price_line::before {
@@ -28618,7 +28632,7 @@ table.tableRanking td {
 
 .globalStock .sub_search .sub_mid .eventsum_area {
 	margin-top: 40px;
-	background-color: #f7f8f9;
+	background-color: #fff;
 }
 
 .globalStock .sub_search .sub_mid .eventsum_area .chart_bg {
@@ -28639,7 +28653,8 @@ table.tableRanking td {
 	display: none;
 }
 .globalStock .sub_search .sub_mid .eventsum_area .chart_layout {
-	background-color: #f7f8f9;
+	border-top: 4px solid #f4f4f5;
+	background-color: #fff;
 }
 .globalStock .sub_search .sub_mid .eventsum_area .chart_layout .highcharts-series-label text {
 	opacity: 0;
@@ -28743,8 +28758,7 @@ table.tableRanking td {
 
 
 
-.highcharts-axis-labels text {
-	font-family: 'Spoqa Han Sans Neo', "Malgun gothic", "Helvetica Neue", Helvetica, Arial, sans-serif;
+.highcharts-axis-labels text {	
 	font-weight: 300;
 }
 
@@ -30441,174 +30455,236 @@ body.v_signalStreng {
 	padding: 16px 16px 22px;
 	background-color: #fff;
 	box-sizing: border-box;
+
+	&::after {
+		content: "";
+		position: absolute;
+		bottom: -8px;
+		left: 0;
+		right: 0;
+		display: block;
+		width: 100%;
+		height: 8px;
+		background-color: #f4f4f5;
+		z-index: 1;
+	}
+	
+	 .ticker {
+		display: inline-block;
+		font-size: 0.75rem;
+		line-height: 1.75;
+		font-weight: 500;
+		color: #939393;
+	}
+	
+	 .stock_index {
+		display: inline-block;
+	}
+	
+	 .stock_index span {
+		display: inline-block;
+		padding: 0 3px;
+		font-size: 0.75rem;
+		font-weight: 500;
+		color: #d3d3d3;
+	}
+	
+	 .company_nm {
+		margin-top: 2px;
+		max-width: 90%;
+	}
+	
+	 .company_nm,
+	 .company_nm a {
+		display: block;
+		font-size: 22px;
+		font-weight: 700;
+		line-height: 1.23;
+		color: #181f29;
+	}
+	
+	 .detail {
+		margin-top: 3px;
+	}
+	
+	 .detail .num {
+		font-size: 34px;
+	}
+	
+	 .detail .num span {
+		font-size: 30px;
+		font-weight: 700;
+		line-height: 0.77;
+		color: #181f29;
+	}
+	
+	 .detail .per {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+		gap: 4px;
+		margin-top: 6px;
+	}
+	
+	 .detail .per .increase,
+	 .detail .per .decrease,
+	 .detail .per .same {
+		font-size: 0.9375rem;
+		color: #E1305A;
+		font-weight: 500;
+	}
+	
+	 .detail .per .increase b,
+	 .detail .per .decrease b,
+	 .detail .per .same b {
+		color: #E1305A;
+		font-weight: 500;
+	}
+	
+	 .detail .per .decrease {
+		color: #303FAF;
+	}
+	
+	 .detail .per .decrease b {
+		color: #303FAF;
+	}
+	
+	 .detail .per .same {
+		color: #363F4B;
+	}
+	
+	 .detail .per .same b {
+		color: #363F4B;
+	}
+	
+	 .detail .per .day {
+		flex: 4;
+		text-align: right;
+		font-size: 0.75rem;
+		font-weight: 500;
+		line-height: 1.42;
+		color: #939393;
+	}
+	
+	 .attention_box {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 0 7px;
+		position: relative;
+		background: #fff;
+		margin: 32px auto 0;
+		padding-top: 22px;
+		border-top: 1px solid #f4f4f5;	
+	}
+	
+	 .attention_box ul {
+		display: inline-block;
+	}
+	
+	 .attention_box li.attention {
+		display: inline-block;
+		font-size: 0.8175rem;
+		font-weight: bold;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: 2.08;
+		letter-spacing: normal;
+		text-align: left;
+		color: #333;
+	
+	}
+	
+	 .attention_box li.attention strong {
+		font-size: 0.8175rem;
+		font-weight: bold;
+	}
+	
+	 .attention_box li.attention i {
+		display: inline-block;
+		position: relative;
+		top: 2px;
+		width: 16px;
+		height: 16px;
+		background: url('/img/heart_attention.svg') no-repeat 0 4px;
+		margin-right: 5px;
+		background-size: 16px 32px;
+	}
+	
+	 .attention_box .stock_tag {
+		display: inline-flex;
+		gap: 0 10px;
+	}
+	
+	 .attention_box .stock_tag span,
+	 .attention_box .stock_tag a {
+		font-size: 0.75rem;
+		font-weight: 500;
+		color: #6a727b;
+	}
 }
 
-.v_signalStreng.globalStock #wrap #container .recom_company::after {
-	content: "";
-	position: absolute;
-	bottom: -8px;
-	left: 0;
-	right: 0;
-	display: block;
-	width: 100%;
-	height: 8px;
-	background-color: #f4f4f5;
-	z-index: 1;
-}
-
-.v_signalStreng.globalStock #wrap #container .recom_company .ticker {
-	display: inline-block;
-	font-size: 0.75rem;
-	line-height: 1.75;
-	font-weight: 500;
-	color: #939393;
-}
-
-.v_signalStreng.globalStock #wrap #container .recom_company .stock_index {
-	display: inline-block;
-}
-
-.v_signalStreng.globalStock #wrap #container .recom_company .stock_index span {
-	display: inline-block;
-	padding: 0 3px;
-	font-size: 0.75rem;
-	font-weight: 500;
-	color: #d3d3d3;
-}
-
-.v_signalStreng.globalStock #wrap #container .recom_company .company_nm {
-	margin-top: 2px;
-	max-width: 90%;
-}
-
-.v_signalStreng.globalStock #wrap #container .recom_company .company_nm,
-.v_signalStreng.globalStock #wrap #container .recom_company .company_nm a {
-	display: block;
-	font-size: 22px;
-	font-weight: 700;
-	line-height: 1.23;
-	color: #181f29;
-}
-
-.v_signalStreng.globalStock #wrap #container .recom_company .detail {
-	margin-top: 3px;
-}
-
-.v_signalStreng.globalStock #wrap #container .recom_company .detail .num {
-	font-size: 34px;
-}
-
-.v_signalStreng.globalStock #wrap #container .recom_company .detail .num span {
-	font-size: 30px;
-	font-weight: 700;
-	line-height: 0.77;
-	color: #181f29;
-}
-
-.v_signalStreng.globalStock #wrap #container .recom_company .detail .per {
-	display: flex;
-	justify-content: space-between;
-	align-items: flex-end;
-	gap: 4px;
-	margin-top: 6px;
-}
-
-.v_signalStreng.globalStock #wrap #container .recom_company .detail .per .increase,
-.v_signalStreng.globalStock #wrap #container .recom_company .detail .per .decrease,
-.v_signalStreng.globalStock #wrap #container .recom_company .detail .per .same {
-	font-size: 0.9375rem;
-	color: #E1305A;
-	font-weight: 500;
-}
-
-.v_signalStreng.globalStock #wrap #container .recom_company .detail .per .increase b,
-.v_signalStreng.globalStock #wrap #container .recom_company .detail .per .decrease b,
-.v_signalStreng.globalStock #wrap #container .recom_company .detail .per .same b {
-	color: #E1305A;
-	font-weight: 500;
-}
-
-.v_signalStreng.globalStock #wrap #container .recom_company .detail .per .decrease {
-	color: #303FAF;
-}
-
-.v_signalStreng.globalStock #wrap #container .recom_company .detail .per .decrease b {
-	color: #303FAF;
-}
-
-.v_signalStreng.globalStock #wrap #container .recom_company .detail .per .same {
-	color: #363F4B;
-}
-
-.v_signalStreng.globalStock #wrap #container .recom_company .detail .per .same b {
-	color: #363F4B;
-}
-
-.v_signalStreng.globalStock #wrap #container .recom_company .detail .per .day {
-	flex: 4;
-	text-align: right;
-	font-size: 0.75rem;
-	font-weight: 500;
-	line-height: 1.42;
-	color: #939393;
-}
-
-.v_signalStreng.globalStock #wrap #container .recom_company .attention_box {
-	display: flex;
+.list.recom {		
+	display: none;
 	align-items: center;
-	justify-content: space-between;
-	gap: 0 7px;
-	position: relative;
-	background: #fff;
-	margin: 32px auto 0;
-	padding-top: 22px;
-	border-top: 1px solid #f4f4f5;	
+    justify-content: space-between;
+	gap: 12px 12px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 9999;		
+	background-color: #404fc3;
+	margin: 0;
+	padding: 19px 17px;
+	box-sizing: border-box;
+	&.fix_data {
+		display: flex;
+	}
+	* {
+		margin: 0;
+		padding: 0;
+		font-size: pxTorem(16px) !important;
+		color: #fff !important;
+		font-weight: normal !important;		
+		div, span, b, li {
+			font-size: pxTorem(16px) !important;
+			color: #fff !important;
+			font-weight: normal !important;			
+		}			
+	}
+
+	
+	&::after {
+		display: none;
+	}
+	.list {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: 10px 10px;
+	}
+	.company_nm {
+		overflow: hidden;
+		max-width: calc(100% - 34px);
+		width: calc(100% - 170px);
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		font-weight: normal !important;
+	}	
+	.num, .per {
+		display: inline-block;		
+	}
+	.per {
+		padding-left: 6px;
+		span, b {
+			font-weight: normal !important;
+			font-size: pxTorem(13px) !important;
+		}
+	}
+	
 }
 
-.v_signalStreng.globalStock #wrap #container .recom_company .attention_box ul {
-	display: inline-block;
-}
-
-.v_signalStreng.globalStock #wrap #container .recom_company .attention_box li.attention {
-	display: inline-block;
-	font-size: 0.8175rem;
-	font-weight: bold;
-	font-stretch: normal;
-	font-style: normal;
-	line-height: 2.08;
-	letter-spacing: normal;
-	text-align: left;
-	color: #333;
-
-}
-
-.v_signalStreng.globalStock #wrap #container .recom_company .attention_box li.attention strong {
-	font-size: 0.8175rem;
-	font-weight: bold;
-}
-
-.v_signalStreng.globalStock #wrap #container .recom_company .attention_box li.attention i {
-	display: inline-block;
-	position: relative;
-	top: 2px;
-	width: 16px;
-	height: 16px;
-	background: url('/img/heart_attention.svg') no-repeat 0 4px;
-	margin-right: 5px;
-	background-size: 16px 32px;
-}
-
-.v_signalStreng.globalStock #wrap #container .recom_company .attention_box .stock_tag {
-	display: inline-flex;
-	gap: 0 10px;
-}
-
-.v_signalStreng.globalStock #wrap #container .recom_company .attention_box .stock_tag span,
-.v_signalStreng.globalStock #wrap #container .recom_company .attention_box .stock_tag a {
-	font-size: 0.75rem;
-	font-weight: 500;
-	color: #6a727b;
-}
 
 .v_signalStreng.globalStock .sub_search .tabs_5 {
 	background-color: #fff;
@@ -30731,6 +30807,10 @@ body.v_signalStreng {
 }
 
 .v_signalStreng.globalStock #wrap #container .mainBox.attr .adequateArea .listWrap .mid .num_bar {
+	flex-direction: column;
+	align-items: flex-start;
+    align-content: center;
+    justify-content: center;
 	flex: 2;
 	flex-basis: calc(100% - 85px);
 	display: flex;
@@ -30775,6 +30855,19 @@ body.v_signalStreng {
 	line-height: 1.46;
 	color: #333;
 	border-top: 1px solid #fff;
+	b {
+		line-height: 1.46;
+		&.increase {
+			color: #E1305A;
+		}
+		&.decrease {
+			color: #303FAF;
+		}		
+		&.same {
+			// 
+		}		
+	}
+	
 }
 
 .v_signalStreng.globalStock #wrap #container .mainBox.attr .adequateArea .listWrap .mid .latest_signal::before,
@@ -31062,15 +31155,19 @@ body.v_signalStreng {
 	position: relative;
 	margin-top: 20px;
 	padding: 0 8px;
+	.sum_title {
+		color: #333;
+		font-size: 1rem;
+	}
 }
 
 .v_signalStreng.globalStock #wrap #container.sub_search .mainBox.outline .summary .view_box {
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: flex-end;
+	flex-wrap: wrap;	
 }
 
 .v_signalStreng.globalStock #wrap #container.sub_search .mainBox.outline .summary p {
+	margin-top: 10px;
 	word-break: break-all;
 	font-size: 0.875rem;
 	line-height: 1.43;
@@ -32300,7 +32397,7 @@ body.v_signalStreng {
 
 .v_signalStreng.globalStock .sub_recom .tab-container {
 	position: relative;
-	margin-top: 16px;
+	margin-top: 24px;
 }
 
 .v_signalStreng.globalStock .sub_recom .tab-container .tab_btn {
@@ -32376,7 +32473,7 @@ body.v_signalStreng {
 	width: 100%;
 	background-color: #f7f8f9;
 	box-sizing: border-box;
-	padding: 17px 20px;
+	padding: 17px 16px;
 	border-radius: 16px;
 }
 
@@ -32471,6 +32568,20 @@ body.v_signalStreng {
 	color: #0062ff;
 	display: inline-block;
 	background-color: rgba(0, 98, 255, 0.08);
+	border-radius: 3px;
+	text-align: center;
+	font-weight: bold;
+	padding: 5px 4px;
+	width: 70px;
+	box-sizing: border-box;
+}
+.v_signalStreng.globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .recipe_area .area .logo_list .revenue .same.dod {
+	margin-top: 11px;
+	font-size: 0.875rem;
+	letter-spacing: normal;
+	color: #333;
+	display: inline-block;
+	background-color: #c7ccd163;
 	border-radius: 3px;
 	text-align: center;
 	font-weight: bold;

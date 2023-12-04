@@ -1,5 +1,14 @@
 $(document).ready(function () {
 
+    Highcharts.setOptions({
+        chart: {
+            style: {
+                fontFamily: 'Pretendard Variable, Pretendard'
+            }
+        }
+    });
+
+
     // ***************************** //
     // **********  종목추천 ********* //
     // ***************************** //
@@ -13,7 +22,7 @@ $(document).ready(function () {
                     // linearGradient: { x1: 0, y1: 1, x2: 1, y2: 0 },
                 },
                 style: {
-                    fontFamily: "'Lato', 'Noto Sans KR'"
+                    
                 },
                 height: 88,
                 plotBorderColor: null,
@@ -105,7 +114,7 @@ $(document).ready(function () {
                     // linearGradient: { x1: 0, y1: 1, x2: 1, y2: 0 },
                 },
                 style: {
-                    fontFamily: "'Lato', 'Noto Sans KR'"
+                    
                 },
                 height: 88,
                 plotBorderColor: null,
@@ -195,7 +204,7 @@ $(document).ready(function () {
                     // linearGradient: { x1: 0, y1: 1, x2: 1, y2: 0 },
                 },
                 style: {
-                    fontFamily: "'Lato', 'Noto Sans KR'"
+                    
                 },
                 height: 88,
                 plotBorderColor: null,
@@ -287,7 +296,7 @@ $(document).ready(function () {
                     // linearGradient: { x1: 0, y1: 1, x2: 1, y2: 0 },
                 },
                 style: {
-                    fontFamily: "'Lato', 'Noto Sans KR'"
+                    
                 },
                 plotBorderColor: null,
                 plotBorderWidth: null,
@@ -379,7 +388,7 @@ $(document).ready(function () {
                     ]
                 },
                 style: {
-                    fontFamily: "'Lato', 'Noto Sans KR'"
+                    
                 },
                 plotBorderColor: null,
                 plotBorderWidth: null,
@@ -513,7 +522,7 @@ $(document).ready(function () {
                     // linearGradient: { x1: 0, y1: 1, x2: 1, y2: 0 },
                 },
                 style: {
-                    fontFamily: "'Lato', 'Noto Sans KR'"
+                    
                 },
                 // height: 88,          
                 plotBorderColor: null,
@@ -605,7 +614,7 @@ $(document).ready(function () {
                     // linearGradient: { x1: 0, y1: 1, x2: 1, y2: 0 },
                 },
                 style: {
-                    fontFamily: "'Lato', 'Noto Sans KR'"
+                    
                 },
                 // height: 88,          
                 plotBorderColor: null,
@@ -697,7 +706,7 @@ $(document).ready(function () {
                     // linearGradient: { x1: 0, y1: 1, x2: 1, y2: 0 },
                 },
                 style: {
-                    fontFamily: "'Lato', 'Noto Sans KR'"
+                    
                 },
                 height: 88,
                 plotBorderColor: null,
@@ -789,7 +798,7 @@ $(document).ready(function () {
                     // linearGradient: { x1: 0, y1: 1, x2: 1, y2: 0 },
                 },
                 style: {
-                    fontFamily: "'Lato', 'Noto Sans KR'"
+                    
                 },
                 height: 88,
                 plotBorderColor: null,
@@ -881,7 +890,7 @@ $(document).ready(function () {
                     // linearGradient: { x1: 0, y1: 1, x2: 1, y2: 0 },
                 },
                 style: {
-                    fontFamily: "'Lato', 'Noto Sans KR'"
+                    
                 },
                 height: 88,
                 plotBorderColor: null,
@@ -975,7 +984,7 @@ $(document).ready(function () {
                     // linearGradient: { x1: 0, y1: 1, x2: 1, y2: 0 },
                 },
                 style: {
-                    fontFamily: "'Lato', 'Noto Sans KR'"
+                    
                 },
                 plotBorderColor: null,
                 plotBorderWidth: null,
@@ -1071,7 +1080,7 @@ $(document).ready(function () {
                     ]
                 },
                 style: {
-                    fontFamily: "'Lato', 'Noto Sans KR'"
+                    
                 },
                 plotBorderColor: null,
                 plotBorderWidth: null,
@@ -1206,7 +1215,7 @@ $(document).ready(function () {
                     ]
                 },
                 style: {
-                    fontFamily: "'Lato', 'Noto Sans KR'"
+                    
                 },
                 marginBottom: 100,
                 plotBorderColor: null,
@@ -1323,7 +1332,7 @@ $(document).ready(function () {
                     ]
                 },
                 style: {
-                    fontFamily: "'Lato', 'Noto Sans KR'"
+                    
                 },
                 plotBorderColor: null,
                 plotBorderWidth: null,
@@ -1438,7 +1447,7 @@ $(document).ready(function () {
                     ]
                 },
                 style: {
-                    fontFamily: "'Lato', 'Noto Sans KR'"
+                    
                 },
                 plotBorderColor: null,
                 plotBorderWidth: null,
@@ -1553,7 +1562,7 @@ $(document).ready(function () {
                     ]
                 },
                 style: {
-                    fontFamily: "'Lato', 'Noto Sans KR'"
+                    
                 },
                 plotBorderColor: null,
                 plotBorderWidth: null,
@@ -1668,7 +1677,7 @@ $(document).ready(function () {
                     ]
                 },
                 style: {
-                    fontFamily: "'Lato', 'Noto Sans KR'"
+                    
                 },
                 plotBorderColor: null,
                 plotBorderWidth: null,
@@ -1783,7 +1792,7 @@ $(document).ready(function () {
                     ]
                 },
                 style: {
-                    fontFamily: "'Lato', 'Noto Sans KR'"
+                    
                 },
                 plotBorderColor: null,
                 plotBorderWidth: null,
@@ -1898,7 +1907,7 @@ $(document).ready(function () {
                     ]
                 },
                 style: {
-                    fontFamily: "'Lato', 'Noto Sans KR'"
+                    
                 },
                 plotBorderColor: null,
                 plotBorderWidth: null,
@@ -2017,7 +2026,7 @@ $(document).ready(function () {
                     ]
                 },
                 style: {
-                    fontFamily: "'Lato', 'Noto Sans KR'"
+                    
                 },
                 plotBorderColor: null,
                 plotBorderWidth: null,
@@ -2108,7 +2117,7 @@ $(document).ready(function () {
                     ]
                 },
                 style: {
-                    fontFamily: "'Lato', 'Noto Sans KR'"
+                    
                 },
                 plotBorderColor: null,
                 plotBorderWidth: null,
@@ -2199,7 +2208,7 @@ $(document).ready(function () {
                     ]
                 },
                 style: {
-                    fontFamily: "'Lato', 'Noto Sans KR'"
+                    
                 },
                 plotBorderColor: null,
                 plotBorderWidth: null,
@@ -2286,7 +2295,7 @@ $(document).ready(function () {
                     // linearGradient: { x1: 0, y1: 1, x2: 1, y2: 0 },
                 },
                 style: {
-                    fontFamily: "'Lato', 'Noto Sans KR'"
+                    
                 },
                 plotBorderColor: null,
                 plotBorderWidth: null,
@@ -2377,7 +2386,7 @@ $(document).ready(function () {
                     ]
                 },
                 style: {
-                    fontFamily: "'Lato', 'Noto Sans KR'"
+                    
                 },
                 plotBorderColor: null,
                 plotBorderWidth: null,
@@ -2492,7 +2501,7 @@ $(document).ready(function () {
                     ]
                 },
                 style: {
-                    fontFamily: "'Lato', 'Noto Sans KR'"
+                    
                 },
                 plotBorderColor: null,
                 plotBorderWidth: null,
@@ -2607,7 +2616,7 @@ $(document).ready(function () {
                     ]
                 },
                 style: {
-                    fontFamily: "'Lato', 'Noto Sans KR'"
+                    
                 },
                 plotBorderColor: null,
                 plotBorderWidth: null,
@@ -2722,7 +2731,7 @@ $(document).ready(function () {
                     ]
                 },
                 style: {
-                    fontFamily: "'Lato', 'Noto Sans KR'"
+                    
                 },
                 plotBorderColor: null,
                 plotBorderWidth: null,
@@ -2837,7 +2846,7 @@ $(document).ready(function () {
                     ]
                 },
                 style: {
-                    fontFamily: "'Lato', 'Noto Sans KR'"
+                    
                 },
                 plotBorderColor: null,
                 plotBorderWidth: null,
@@ -2952,7 +2961,7 @@ $(document).ready(function () {
                     ]
                 },
                 style: {
-                    fontFamily: "'Lato', 'Noto Sans KR'"
+                    
                 },
                 plotBorderColor: null,
                 plotBorderWidth: null,
@@ -3071,7 +3080,7 @@ $(document).ready(function () {
                     ]
                 },
                 style: {
-                    fontFamily: "'Lato', 'Noto Sans KR'"
+                    
                 },
                 marginTop: 30,
                 marginBottom: 90,
@@ -3199,7 +3208,7 @@ $(document).ready(function () {
                     ]
                 },
                 style: {
-                    fontFamily: "'Lato', 'Noto Sans KR'"
+                    
                 },
                 marginTop: 20,
                 marginBottom: 70,
@@ -3279,7 +3288,7 @@ $(document).ready(function () {
                     ]
                 },
                 style: {
-                    fontFamily: "'Lato', 'Noto Sans KR'"
+                    
                 },
                 marginTop: 20,
                 marginBottom: 70,
@@ -3371,7 +3380,7 @@ $(document).ready(function () {
                     ]
                 },
                 style: {
-                    fontFamily: "'Lato', 'Noto Sans KR'"
+                    
                 },
                 marginTop: 30,
                 marginBottom: 90,
@@ -3481,7 +3490,7 @@ $(document).ready(function () {
                     ]
                 },
                 style: {
-                    fontFamily: "'Lato', 'Noto Sans KR'"
+                    
                 },
                 marginTop: 20,
                 marginBottom: 90,
@@ -3578,7 +3587,7 @@ $(document).ready(function () {
                     ]
                 },
                 style: {
-                    fontFamily: "'Lato', 'Noto Sans KR'"
+                    
                 },
                 marginTop: 20,
                 marginBottom: 100,
@@ -3675,7 +3684,7 @@ $(document).ready(function () {
                     ]
                 },
                 style: {
-                    fontFamily: "'Lato', 'Noto Sans KR'"
+                    
                 },
                 marginTop: 30,
                 marginBottom: 100,
@@ -3761,7 +3770,7 @@ $(document).ready(function () {
                     ]
                 },
                 style: {
-                    fontFamily: "'Lato', 'Noto Sans KR'"
+                    
                 },
                 marginTop: 20,
                 marginBottom: 70,
@@ -3838,7 +3847,7 @@ $(document).ready(function () {
                     ]
                 },
                 style: {
-                    fontFamily: "'Lato', 'Noto Sans KR'"
+                    
                 },
                 marginTop: 20,
                 marginBottom: 70,
@@ -3919,7 +3928,7 @@ $(document).ready(function () {
                     ]
                 },
                 style: {
-                    fontFamily: "'Lato', 'Noto Sans KR'"
+                    
                 },
                 marginTop: 20,
                 marginBottom: 70,
@@ -4006,7 +4015,7 @@ $(document).ready(function () {
                     ]
                 },
                 style: {
-                    fontFamily: "'Lato', 'Noto Sans KR'"
+                    
                 },
                 marginTop: 20,
                 marginBottom: 80,
@@ -4099,7 +4108,7 @@ $(document).ready(function () {
                     ]
                 },
                 style: {
-                    fontFamily: "'Lato', 'Noto Sans KR'"
+                    
                 },
                 marginTop: 20,
                 marginBottom: 70,
@@ -4186,7 +4195,7 @@ $(document).ready(function () {
                     ]
                 },
                 style: {
-                    fontFamily: "'Lato', 'Noto Sans KR'"
+                    
                 },
                 marginTop: 20,
                 marginBottom: 70,
@@ -4273,7 +4282,7 @@ $(document).ready(function () {
                     ]
                 },
                 style: {
-                    fontFamily: "'Lato', 'Noto Sans KR'"
+                    
                 },
                 plotBorderColor: null,
                 plotBorderWidth: null,
@@ -4382,7 +4391,7 @@ $(document).ready(function () {
                     ]
                 },
                 style: {
-                    fontFamily: "'Lato', 'Noto Sans KR'"
+                    
                 },
                 plotBorderColor: null,
                 plotBorderWidth: null,
@@ -4491,7 +4500,7 @@ $(document).ready(function () {
                     ]
                 },
                 style: {
-                    fontFamily: "'Lato', 'Noto Sans KR'"
+                    
                 },
                 plotBorderColor: null,
                 plotBorderWidth: null,
@@ -4782,8 +4791,7 @@ $(document).ready(function () {
                 crosshairs: true,
                 shared: true,                                
                 valueDecimals: 2,    
-                style: {
-                    fontfamily: 'Spoqa Han Sans Neo',
+                style: {                    
                     fontWeight: 'nomal',
                     fontSize: '11px',
                     color: '#8380A0',                    
@@ -4934,7 +4942,7 @@ $(document).ready(function () {
                     ]
                 },
                 style: {
-                    fontFamily: "'Lato', 'Noto Sans KR'"
+                    
                 },
                 plotBorderColor: null,
                 plotBorderWidth: null,
