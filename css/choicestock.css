@@ -15986,266 +15986,6 @@ table.tableRanking td {
   width: calc(50% - 40px);
 }
 
-/* 미주미초이스 프리미엄 첫달 3,000원 */
-.globalStock .first_month_3300.md-modal #setting {
-  padding: 0;
-  border: none;
-}
-
-.globalStock .first_month_3300.md-modal #setting .pop_header {
-  padding: 10px 10px 15px;
-  background: #404fc3 url("/img/bg_pop_first_month.png") no-repeat right bottom;
-  background-size: 105px 100px;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-}
-
-.globalStock .first_month_3300.md-modal #setting .pop_header .sub_top {
-  padding-bottom: 3px;
-}
-
-.globalStock .first_month_3300.md-modal #setting .pop_header .sub_top .h2_title {
-  color: #fff;
-  font-size: 1.125rem;
-  font-weight: bold;
-  line-height: 1.5;
-  padding-left: 11px;
-  margin-bottom: 0;
-}
-
-.globalStock .first_month_3300.md-modal #setting .pop_header .sub_top .h2_title span {
-  font-size: 1.125rem;
-  color: #ffda0d;
-  display: block;
-}
-
-.globalStock .first_month_3300.md-modal #setting .pop_header .sub_top .h2_title span strong {
-  color: #ffda0d;
-  padding: 0 2px;
-}
-
-.globalStock .first_month_3300.md-modal #setting .pop_header .sub_top .period {
-  line-height: 1.2;
-  letter-spacing: -0.5px;
-  color: #fff;
-  font-size: 0.7rem;
-  opacity: 0.55;
-  margin-top: 11px;
-  padding-left: 11px;
-}
-
-.globalStock .first_month_3300.md-modal #setting .pop_header .sub_top .sum {
-  color: #fff;
-  font-size: 0.9rem;
-  opacity: 0.5;
-  line-height: 1.43;
-  padding-left: 15px;
-}
-
-.globalStock .first_month_3300.md-modal #setting .pop_con {
-  padding: 14px 18px 15px;
-}
-
-.globalStock .first_month_3300.md-modal #setting .pop_con .service_title {
-  margin-bottom: 7px;
-}
-
-.globalStock .first_month_3300.md-modal #setting .pop_con .service_title,
-.globalStock .first_month_3300.md-modal #setting .pop_con .service_title strong {
-  color: #404fc3;
-  font-size: 0.95rem;
-}
-
-.globalStock .first_month_3300.md-modal #setting .pop_con li.txt {
-  color: #939393;
-  font-size: 0.8rem;
-  line-height: 1.4;
-}
-
-.globalStock .first_month_3300.md-modal #setting .pop_con .tableRanking.type_compare tr:nth-child(2) td {
-  padding-top: 4px;
-}
-
-.globalStock .first_month_3300.md-modal #setting .pop_con .tableRanking.type_compare th,
-.globalStock .first_month_3300.md-modal #setting .pop_con .tableRanking.type_compare td {
-  vertical-align: top;
-  text-align: center;
-  padding: 0 2px;
-}
-
-.globalStock .first_month_3300.md-modal #setting .pop_con .tableRanking.type_compare th span,
-.globalStock .first_month_3300.md-modal #setting .pop_con .tableRanking.type_compare td span {
-  color: #444;
-  font-size: 0.875rem;
-  line-height: 29px;
-}
-
-.globalStock .first_month_3300.md-modal #setting .pop_con .tableRanking.type_compare td span b {
-  color: #444;
-}
-
-.globalStock .first_month_3300.md-modal #setting .pop_con .tableRanking.type_compare .top_th {
-  padding: 9px 2px;
-  text-align: center;
-  border-bottom: 1px solid #E0E4E9;
-}
-
-.globalStock .first_month_3300.md-modal #setting .pop_con .tableRanking.type_compare .top_th span {
-  color: #404fc3;
-  line-height: 0.71;
-  letter-spacing: -0.7px;
-}
-
-.globalStock .first_month_3300.md-modal #setting .pop_con .tableRanking.type_compare .top_th:first-child {
-  text-align: left;
-}
-
-.globalStock .first_month_3300.md-modal #setting .pop_con .tableRanking.type_compare .top_th:first-child span {
-  font-weight: bold;
-  font-size: 0.9rem;
-}
-
-.globalStock .first_month_3300.md-modal #setting .pop_con .tableRanking.type_compare .top_th:nth-child(3) span {
-  color: #939393;
-  font-weight: normal;
-}
-
-.globalStock .first_month_3300.md-modal #setting .pop_con .tableRanking.type_compare .line_th {
-  text-align: left;
-}
-
-.globalStock .first_month_3300.md-modal #setting .pop_con .tableRanking.type_compare .line_th span {
-  color: #333;
-  font-weight: bold;
-}
-
-.globalStock .first_month_3300.md-modal #setting .pop_con .tableRanking.type_compare .pdiT_th {
-  padding-top: 25px;
-}
-
-.globalStock .first_month_3300.md-modal #setting .pop_con .tableRanking.type_compare .mid_td {
-  text-align: left;
-}
-
-.globalStock .first_month_3300.md-modal #setting .pop_con .tableRanking.type_compare .mid_td.line_2 {
-  padding: 6px 5px;
-}
-
-.globalStock .first_month_3300.md-modal #setting .pop_con .tableRanking.type_compare .mid_td.line_2 span {
-  display: block;
-  line-height: 1.23;
-}
-
-.globalStock .first_month_3300.md-modal #setting .pop_con .tableRanking.type_compare .mid_td.line_2 span:last-child {
-  padding-left: 5px;
-}
-
-.globalStock .first_month_3300.md-modal #setting .pop_con .tableRanking.type_compare .com_select {
-  vertical-align: middle;
-}
-
-.globalStock .first_month_3300.md-modal #setting .pop_con .tableRanking.type_compare .com_select span {
-  display: inline-block;
-  background: url("/img/com_select.png") no-repeat 50% 50%;
-  background-size: 14px 11px;
-  width: 14px;
-  height: 11px;
-}
-
-.globalStock .first_month_3300.md-modal #setting .pop_con .tableRanking.type_compare .not_select span {
-  position: relative;
-  display: inline-block;
-  width: 14px;
-  height: 11px;
-}
-
-.globalStock .first_month_3300.md-modal #setting .pop_con .tableRanking.type_compare .not_select span::before,
-.globalStock .first_month_3300.md-modal #setting .pop_con .tableRanking.type_compare .not_select span::after {
-  content: "";
-  width: 14px;
-  height: 2px;
-  position: absolute;
-  left: 50%;
-  top: 10px;
-  border-radius: 1px;
-  background: #939393;
-}
-
-.globalStock .first_month_3300.md-modal #setting .pop_con .tableRanking.type_compare .not_select span::before {
-  transform: translate(-50%, -50%) rotate(-45deg);
-}
-
-.globalStock .first_month_3300.md-modal #setting .pop_con .tableRanking.type_compare .not_select span::after {
-  transform: translate(-50%, -50%) rotate(45deg);
-}
-
-.globalStock .first_month_3300.md-modal #setting .pop_btm {
-  background: #e6e7f4;
-  padding: 9px 20px 18px;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-}
-
-.globalStock .first_month_3300.md-modal #setting .pop_btm .payBtn {
-  text-align: center;
-  margin-top: 10px;
-  padding: 0 15px;
-}
-
-.globalStock .first_month_3300.md-modal #setting .pop_btm .btn {
-  color: #404fc3;
-  font-size: 0.9375rem;
-  border-radius: 5px;
-  position: relative;
-  width: calc(50% + 120px);
-}
-
-.globalStock .first_month_3300.md-modal #setting .pop_btm .btn_save {
-  color: #fff;
-  background: #404fc3;
-}
-
-.globalStock .first_month_3300.md-modal #setting .pop_btm .btn_save b {
-  color: #ffdd00;
-  font-weight: normal;
-}
-
-.globalStock .first_month_3300.md-modal #setting .pop_btm .btn_save i {
-  position: absolute;
-  right: 18px;
-  top: 15px;
-  display: inline-block;
-  width: 5px;
-  height: 10px;
-  background: url("/img/icon_moreRR.png") no-repeat 0 0;
-  background-size: cover;
-}
-
-.globalStock .first_month_3300.md-modal #setting .pop_btm .link_menu {
-  font-size: 0;
-  margin: 9px auto 0;
-  padding: 0 25px 0 40px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.globalStock .first_month_3300.md-modal #setting .pop_btm .link_menu li {
-  flex: 1;
-  display: inline-block;
-  font-size: 0.9rem;
-  text-align: center;
-}
-
-.globalStock .first_month_3300.md-modal #setting .pop_btm .link_menu li a {
-  font-size: 0.9rem;
-  text-align: center;
-}
-
-.globalStock .first_month_3300.md-modal #setting .pop_btm .link_menu li:nth-child(1) a {
-  color: #404fc3;
-  font-weight: bold;
-}
-
 /* 발굴 - 투자레시피 */
 .globalStock .sub_recipe .sub_top .title {
   color: #fff;
@@ -34553,4 +34293,96 @@ body.v_signalStreng {
 .globalStock #pay_cncl_tr .btnArea.edtBtn {
   width: calc(100% - 30px);
   margin: 25px auto;
+}
+
+/* 미주미초이스 프리미엄 첫달 3,000원 */
+.globalStock .first_month_3300.md-modal #setting {
+  padding: 0;
+  border: none;
+}
+.globalStock .first_month_3300.md-modal #setting .pop_header {
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  border-bottom: none;
+  background-color: #161c40;
+}
+.globalStock .first_month_3300.md-modal #setting .pop_header .close {
+  top: 15px !important;
+  right: 5px !important;
+}
+.globalStock .first_month_3300.md-modal #setting .pop_header .sub_top .h2_title {
+  padding-top: 50px;
+  font-size: 1.125rem;
+  font-weight: bold;
+  line-height: 1.17;
+  text-align: center;
+  color: #c7cbe9;
+}
+.globalStock .first_month_3300.md-modal #setting .pop_header .sub_top .period {
+  font-size: 1.75rem;
+  font-weight: bold;
+  text-align: center;
+  color: #404fc3;
+}
+.globalStock .first_month_3300.md-modal #setting .pop_con {
+  background: #161c40 url("/img/first_month_3300.svg") no-repeat center top;
+}
+.globalStock .first_month_3300.md-modal #setting .pop_con ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 6px 6px;
+  margin-top: 210px;
+}
+.globalStock .first_month_3300.md-modal #setting .pop_con ul li {
+  display: flex;
+  align-items: center;
+  gap: 0 7px;
+  font-size: 0.875rem;
+  line-height: 1.14;
+  color: #c7cbe9;
+}
+.globalStock .first_month_3300.md-modal #setting .pop_con ul li b {
+  font-weight: bold;
+  color: #404fc3;
+}
+.globalStock .first_month_3300.md-modal #setting .pop_con ul li .num {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  background-color: #404fc3;
+  font-size: 0.6875rem;
+  text-align: center;
+  color: #161c40;
+}
+.globalStock .first_month_3300.md-modal #setting .pop_btm {
+  padding-bottom: 50px;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  background-color: #161c40;
+}
+.globalStock .first_month_3300.md-modal #setting .pop_btm .btnArea .btn {
+  flex: none;
+  display: inline-block;
+  margin: 25px auto 0;
+  width: calc(100% - 50px);
+  padding: 20px 15px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 8px;
+  background-color: #404fc3;
+  font-size: 1rem;
+  line-height: 1.19;
+  text-align: center;
+  color: #fff;
+}
+.globalStock .first_month_3300.md-modal #setting .pop_btm .btnArea .btn b {
+  color: #f0cc09;
 }/*# sourceMappingURL=choicestock.css.map */

@@ -1213,3 +1213,101 @@
 	width: calc(100% - 30px);
 	margin: 25px auto;
 }
+
+/* 미주미초이스 프리미엄 첫달 3,000원 */
+.globalStock .first_month_3300.md-modal {		
+	#setting {
+		padding: 0;
+		border: none;
+		.pop_header {
+			border-top-left-radius: 16px;
+			border-top-right-radius: 16px;
+			border-bottom: none;
+			background-color: #161c40;
+			.close {
+				top: 15px !important;
+				right: 5px !important;
+			}
+			.sub_top {
+				.h2_title {
+					padding-top: 50px;
+					font-size: pxTorem(18px);
+					font-weight: bold;					
+					line-height: 1.17;					
+					text-align: center;
+					color: #c7cbe9;
+				}
+				.period {
+					font-size: pxTorem(28px);
+					font-weight: bold;									
+					text-align: center;
+					color: #404fc3;					
+
+				}
+			}
+		}
+		.pop_con {			
+			background: #161c40 url('/img/first_month_3300.svg') no-repeat center top;
+			ul {				
+				display: flex;
+				flex-direction: column;
+				align-items: flex-start;
+				align-content: center;
+				justify-content: center;
+				flex-wrap: wrap;
+				gap: 6px 6px;
+				margin-top: 210px;
+				li {					
+					display: flex;
+					align-items: center;
+					gap: 0 7px;
+					font-size: pxTorem(14px);					
+					line-height: 1.14;					
+					color: #c7cbe9;
+					b {
+						font-weight: bold;
+						color: #404fc3;
+					}
+					.num {
+						display: inline-flex;
+						justify-content: center;
+						align-items: center;					
+						width: 20px;
+						height: 20px;
+						box-sizing: border-box;
+						border-radius: 50%;
+						background-color: #404fc3;
+						font-size: pxTorem(11px);					
+						text-align: center;						
+						color: #161c40;
+					}
+				}
+			}
+		}
+		.pop_btm {			
+			padding-bottom: 50px;
+			border-bottom-left-radius: 16px;
+			border-bottom-right-radius: 16px;
+			background-color: #161c40;
+			.btnArea .btn {
+				flex: none;
+				display: inline-block;
+				margin: 25px auto 0;
+				width: calc(100% - 50px);
+				padding: 20px 15px;
+				box-sizing: border-box;
+				border: none;
+				border-radius: 8px;
+  				background-color: #404fc3;
+				font-size: pxTorem(16px);
+				line-height: 1.19;
+				text-align: center;				
+				color: #fff;
+				b {
+					color: #f0cc09;
+				}
+			}
+		}
+		
+	}	
+}
