@@ -13261,6 +13261,30 @@ table.tableRanking td {
   padding: 0 15px;
   position: relative;
 }
+.globalStock .sub_search .sub_mid .tab_diagnosis_area .스파이더차트_스몰 {
+  display: flex;
+  padding-bottom: 15px;
+}
+.globalStock .sub_search .sub_mid .tab_diagnosis_area .스파이더차트_스몰 .MRIchart_small_style {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.globalStock .sub_search .sub_mid .tab_diagnosis_area .스파이더차트_스몰 .MRIchart_small_style .highcharts-title {
+  font-weight: bold !important;
+  font-size: 12px !important;
+  color: rgb(147, 147, 147) !important;
+  fill: rgb(147, 147, 147) !important;
+}
+.globalStock .sub_search .sub_mid .tab_diagnosis_area .스파이더차트_스몰 .MRIchart_small_style .highcharts-axis-labels text {
+  font-size: 12px !important;
+  color: rgb(147, 147, 147) !important;
+  fill: rgb(147, 147, 147) !important;
+}
+.globalStock .sub_search .sub_mid .tab_diagnosis_area .스파이더차트_스몰 .MRIchart_small_style .highcharts-markers path {
+  display: none;
+}
 
 .globalStock .sub_search .sub_mid .tab_diagnosis_area .containersummary1 {
   height: 200px;

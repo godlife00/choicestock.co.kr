@@ -1073,22 +1073,11 @@ $(document).ready(function () {
                 type: 'area',
                 renderTo: 'containercharm1_1',
                 backgroundColor: {
-                    // linearGradient: { x1: 0, y1: 1, x2: 1, y2: 0 },
                     stops: [
                         [0, '#ffffff'],
                         [1, '#ffffff']
                     ]
-                },
-                style: {
-                    
-                },
-                plotBorderColor: null,
-                plotBorderWidth: null,
-                plotShadow: false,
-                marginTop: 30,
-                marginBottom: 30,
-                marginLeft: 30,
-                marginRight: 30,
+                },               
             },
 
             title: {
@@ -1197,6 +1186,228 @@ $(document).ready(function () {
                     lineWidth: 1,
                     fillOpacity: 0.3,
                 }
+            },
+        });
+    }
+    if ($('#MRIchart_analy01_small').length) {
+
+        Highcharts.chart('MRIchart_analy01_small', {
+            chart: {
+                polar: true,
+                backgroundColor: {
+                    stops: [
+                        [0, '#ffffff'],
+                        [1, '#ffffff']
+                    ]
+                },
+                margin: [0, 0, 30, 0],
+            },
+            colors: ["#877edf"],
+            title: {
+                text: "카카오톡게임즈",
+                align: 'center', // 가로 위치를 가운데로 설정
+                verticalAlign: 'bottom' // 세로 위치를 하단으로 설정
+            },
+            tooltip: {
+                enabled: false                
+            },
+            pane: {
+                startAngle: 0,
+                endAngle: 360
+            },
+            xAxis: {
+                categories: ['밸류에이션', '미래<br>성장성', '사업<br>독점력', '재무<br>안전성', '현금<br>창출력' ],
+                tickmarkPlacement: 'on',
+                lineWidth: 0,
+                max: 5,
+                labels: {
+                    enabled: false
+                }
+            },
+            yAxis: {
+                gridLineInterpolation: 'polygon',
+                minorGridLineColor: '#E0E0E0',
+                tickInterval: 0,
+                min: 0,
+                max: 5,
+                labels: {
+                    enabled: false
+                }
+            },
+            exporting: {
+                enabled: false
+            },
+            credits: {
+                enabled: false
+            },
+            legend: {
+                enabled: false,
+            },
+            series: [{
+                type: 'area',
+                name: '데이터1',
+                data: [5, 4, 5, 3.5, 5],
+                pointPlacement: 'on',
+                marker: {
+                    enabled: true,
+                }
+            }],
+            plotOptions: {
+                series: {
+                    lineWidth: 1,
+                    fillOpacity: 0.3,
+                    marker: {
+                        enabled: false,
+                    }
+                },
+            },
+        });
+    }
+    if ($('#MRIchart_analy02_small').length) {
+
+        Highcharts.chart('MRIchart_analy02_small', {
+            chart: {
+                polar: true,
+                backgroundColor: {
+                    stops: [
+                        [0, '#ffffff'],
+                        [1, '#ffffff']
+                    ]
+                },
+                margin: [0, 0, 30, 0],
+            },
+            colors: ["#877edf"],
+            title: {
+                text: "삼성전자",
+                align: 'center', // 가로 위치를 가운데로 설정
+                verticalAlign: 'bottom' // 세로 위치를 하단으로 설정
+            },
+            tooltip: {
+                enabled: false                
+            },
+            pane: {
+                startAngle: 0,
+                endAngle: 360
+            },
+            xAxis: {
+                categories: ['밸류에이션', '미래<br>성장성', '사업<br>독점력', '재무<br>안전성', '현금<br>창출력' ],
+                tickmarkPlacement: 'on',
+                lineWidth: 0,
+                max: 5,
+                labels: {
+                    enabled: false
+                }
+            },
+            yAxis: {
+                gridLineInterpolation: 'polygon',
+                minorGridLineColor: '#E0E0E0',
+                tickInterval: 1.07,
+                min: 0,
+                max: 5,
+                labels: {
+                    enabled: false
+                }
+            },
+            exporting: {
+                enabled: false
+            },
+            credits: {
+                enabled: false
+            },
+            legend: {
+                enabled: false,
+            },
+            series: [{
+                type: 'area',
+                name: '데이터1',
+                data: [3, 2, 3, 1, 4],
+                pointPlacement: 'on',
+                marker: {
+                    enabled: true,
+                }
+            }],
+            plotOptions: {
+                series: {
+                    lineWidth: 1,
+                    fillOpacity: 0.3,
+                    marker: {
+                        enabled: false,
+                    }
+                },
+            },
+        });
+    }
+    if ($('#MRIchart_analy03_small').length) {
+
+        Highcharts.chart('MRIchart_analy03_small', {
+            chart: {
+                polar: true,
+                backgroundColor: {
+                    stops: [
+                        [0, '#ffffff'],
+                        [1, '#ffffff']
+                    ]
+                },
+                margin: [0, 0, 30, 0],
+            },
+            colors: ["#877edf"],
+            title: {
+                text: "네이버",
+                align: 'center', // 가로 위치를 가운데로 설정
+                verticalAlign: 'bottom' // 세로 위치를 하단으로 설정
+            },
+            tooltip: {
+                enabled: false                
+            },
+            pane: {
+                startAngle: 0,
+                endAngle: 360
+            },
+            xAxis: {
+                categories: ['밸류에이션', '미래<br>성장성', '사업<br>독점력', '재무<br>안전성', '현금<br>창출력' ],
+                tickmarkPlacement: 'on',
+                lineWidth: 0,
+                max: 5,
+                labels: {
+                    enabled: false
+                }
+            },
+            yAxis: {
+                gridLineInterpolation: 'polygon',
+                minorGridLineColor: '#E0E0E0',
+                tickInterval: 1.07,
+                min: 0,
+                max: 5,
+                labels: {
+                    enabled: false
+                }
+            },
+            exporting: {
+                enabled: false
+            },
+            credits: {
+                enabled: false
+            },
+            legend: {
+                enabled: false,
+            },
+            series: [{
+                type: 'area',
+                name: '데이터1',
+                data: [5, 5, 0, 5, 4],
+                pointPlacement: 'on',
+                marker: {
+                    enabled: true,
+                }
+            }],
+            plotOptions: {
+                series: {
+                    lineWidth: 1,
+                    fillOpacity: 0.3,
+                    marker: {
+                        enabled: false,
+                    }
+                },
             },
         });
     }

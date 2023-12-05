@@ -1352,21 +1352,9 @@ $(document).ready(function () {
     });
 
     // 매매신호 플로팅 배너 열기, 닫기 스크립트
-    // 스크롤 이벤트를 감지하여 처리
-    function scrollsignalpop() {
-        var mainBox = $('.mainBox.outline');
-        var mainBoxOffset = mainBox.offset() ? mainBox.offset().top : 0;
-        var windowHeight = $(window).height();
-        var scroll = $(window).scrollTop();
-    
-        // mainBox가 페이지에 존재하는 경우
-        if (mainBox.length) {
-            if (scroll + windowHeight > mainBoxOffset) {
-                $('.v_signalStreng.globalStock .signalpop .box').slideDown(1200);
-            }
-        } else { // mainBox가 페이지에 존재하지 않는 경우
-            $('.v_signalStreng.globalStock .signalpop .box').slideDown(1200);
-        }
+    // 스크롤 이벤트를 감지하여 처리    
+    function scrollsignalpop() {        
+        $('.v_signalStreng.globalStock .signalpop .box').slideDown(1200);
     }
     // 종목검색 탭 상태 체크 및 함수 실행
     function checkTabsAndApplyFunction() {
@@ -1403,44 +1391,92 @@ $(document).ready(function () {
                         break;                    
                 }
             }
-        });
-        
+        });        
     }
     checkTabsAndApplyFunction(); //탭 상태 체크 및 함수 실행
 
     // 함수 정의: 탭이 활성화될 때 실행할 함수들
-    function onOverviewActive() {
-        console.log("개요 탭 활성화");
+    function onOverviewActive() {        
         // 개요 탭이 활성화될 때 실행할 코드
+        $(window).scroll(function () {            
+            function scrollsignalpop() {
+                var mainBox = $('.mainBox.outline');
+                var mainBoxOffset = mainBox.offset() ? mainBox.offset().top : 0;
+                var windowHeight = $(window).height();
+                var scroll = $(window).scrollTop();            
+                if (scroll + windowHeight > mainBoxOffset) {
+                    $('.v_signalStreng.globalStock .signalpop .box').slideDown(1200);
+                }        
+            }
+            scrollsignalpop(); // 종목검색 개요 탭 플로팅 배너
+        });
     }
     function onDiagnosisActive() {
-        console.log("진단 탭 활성화");        
+        // 진단 탭이 활성화될 때 실행할 코드
+        $(window).scroll(function () {
+            function scrollsignalpop() {
+                var mainBox = $('.sub_mid .tab_diagnosis_area .hiding_box');
+                var mainBoxOffset = mainBox.offset() ? mainBox.offset().top : 0;
+                var windowHeight = $(window).height();
+                var scroll = $(window).scrollTop();            
+                if (scroll + windowHeight > mainBoxOffset) {
+                    $('.v_signalStreng.globalStock .signalpop .box').slideDown(1200);
+                }        
+            }
+            scrollsignalpop(); // 종목검색 진단 탭 플로팅 배너
+        });
     }   
     function onValueisActive() {
-        console.log("밸류 탭 활성화");        
+        // 밸류 탭이 활성화될 때 실행할 코드        
+        $(window).scroll(function () {
+            function scrollsignalpop() {
+                var mainBox = $('.sub_mid .eventsum_area .tableData');
+                var mainBoxOffset = mainBox.offset() ? mainBox.offset().top : 0;
+                var windowHeight = $(window).height();
+                var scroll = $(window).scrollTop();            
+                if (scroll + windowHeight > mainBoxOffset) {
+                    $('.v_signalStreng.globalStock .signalpop .box').slideDown(1200);
+                }        
+            }
+            scrollsignalpop(); // 종목검색 진단 탭 플로팅 배너
+        });
     }   
     function onFinanceisActive() {
-        console.log("재무 탭 활성화");        
+        // 재무 탭이 활성화될 때 실행할 코드        
+        $(window).scroll(function () {
+            function scrollsignalpop() {
+                // var mainBox = 300;
+                // var mainBoxOffset = mainBox.offset() ? mainBox.offset().top : 0;
+                var windowHeight = $(window).height();
+                var scroll = $(window).scrollTop();            
+                if (scroll + windowHeight > 1000) {
+                    $('.v_signalStreng.globalStock .signalpop .box').slideDown(1200);
+                }        
+            }
+            scrollsignalpop(); // 종목검색 진단 탭 플로팅 배너
+        });
     }   
     function onNewsisActive() {
-        console.log("뉴스 탭 활성화");        
+        // 뉴스 탭이 활성화될 때 실행할 코드
         scrollsignalpop();
-    }   
-    function onAllocaisActive() {
-        console.log("배당 탭 활성화");        
-        scrollsignalpop();
-    }   
-    function onCompeteisActive() {
-        console.log("경쟁사 탭 활성화");        
-        scrollsignalpop();
-    }   
-    
-    $(document).ready(function () {                        
         $(window).scroll(function () {
             scrollsignalpop();
         });
-    });
-    
+    }   
+    function onAllocaisActive() {
+        // 배당 탭이 활성화될 때 실행할 코드        
+        scrollsignalpop();
+        $(window).scroll(function () {
+            scrollsignalpop();
+        });
+    }   
+    function onCompeteisActive() {
+        // 경쟁사 탭이 활성화될 때 실행할 코드        
+        scrollsignalpop();
+        $(window).scroll(function () {
+            scrollsignalpop();
+        });
+    }       
 
     $('.v_signalStreng.globalStock .signalpop.monthly_payment .ftr, .signalpop .bg_gray').on('click', function () {
         $('.signalpop').removeClass('open');
