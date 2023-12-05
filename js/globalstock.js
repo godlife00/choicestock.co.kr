@@ -409,7 +409,7 @@ $(document).ready(function () {
     });
 
     // 수익률, 최근편입, 편입제외 탭 스크립트
-    if ($('.ptfo_area, .recipe_area').length) {        
+    if ($('.ptfo_area, .sub_recom.sub_recipe .recipe_area').length) {              
         function openTab(tabId) {
             // 모든 탭 숨기기
             var tabs = document.getElementsByClassName('tab');
@@ -1368,9 +1368,74 @@ $(document).ready(function () {
             $('.v_signalStreng.globalStock .signalpop .box').slideDown(1200);
         }
     }
+    // 종목검색 탭 상태 체크 및 함수 실행
+    function checkTabsAndApplyFunction() {
+        // 모든 탭 요소들을 가져옴
+        const tabs = document.querySelectorAll('.tabs_5 li');
+
+        // 각 탭에 대해 반복
+        tabs.forEach(tab => {
+            if (tab.classList.contains('active')) {
+                // data-* 속성을 기반으로 탭 식별
+                const tabId = tab.querySelector('a').dataset.tab;
+        
+                switch (tabId) {
+                    case 'overview':
+                        onOverviewActive();
+                        break;
+                    case 'diagnosis':
+                        onDiagnosisActive();
+                        break;                    
+                    case 'value':
+                        onValueisActive();
+                        break;                    
+                    case 'finance':
+                        onFinanceisActive();
+                        break;                    
+                    case 'news':
+                        onNewsisActive();
+                        break;                    
+                    case 'alloca':
+                        onAllocaisActive();
+                        break;                    
+                    case 'compete':
+                        onCompeteisActive();
+                        break;                    
+                }
+            }
+        });
+        
+    }
+    checkTabsAndApplyFunction(); //탭 상태 체크 및 함수 실행
+
+    // 함수 정의: 탭이 활성화될 때 실행할 함수들
+    function onOverviewActive() {
+        console.log("개요 탭 활성화");
+        // 개요 탭이 활성화될 때 실행할 코드
+    }
+    function onDiagnosisActive() {
+        console.log("진단 탭 활성화");        
+    }   
+    function onValueisActive() {
+        console.log("밸류 탭 활성화");        
+    }   
+    function onFinanceisActive() {
+        console.log("재무 탭 활성화");        
+    }   
+    function onNewsisActive() {
+        console.log("뉴스 탭 활성화");        
+        scrollsignalpop();
+    }   
+    function onAllocaisActive() {
+        console.log("배당 탭 활성화");        
+        scrollsignalpop();
+    }   
+    function onCompeteisActive() {
+        console.log("경쟁사 탭 활성화");        
+        scrollsignalpop();
+    }   
     
-    $(document).ready(function () {
-        scrollsignalpop(); // 페이지 로드 시 함수 호출
+    $(document).ready(function () {                        
         $(window).scroll(function () {
             scrollsignalpop();
         });
