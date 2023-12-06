@@ -736,13 +736,7 @@ $(document).ready(function () {
 
     //서브 검색 - 종목진단 - 투자매력
     var swiper_competChar = new Swiper('.swiper_competChar', {
-        slidesPerView: 2,
-        slidesPerGroup: 1,
-        loopAdditionalSlides: 1,
-        spaceBetween: 0,
-        centeredSlides: true,
-        loop: false,
-        loopFillGroupWithBlank: false,
+        slidesPerView: 2.5,        
     });
 
     //서브 발굴 - 미국주식 탐구생활 

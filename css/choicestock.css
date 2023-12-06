@@ -17038,6 +17038,7 @@ table.tableRanking td {
 
 .globalStock .sub_recipe .sub_mid.recipe_view .recipe_area .area ul.list .attention_box {
   flex-basis: 67px;
+  width: 100%;
 }
 
 .globalStock .sub_recipe .sub_mid.recipe_view .recipe_area .area ul.list .attention_box .attention {
@@ -17048,7 +17049,7 @@ table.tableRanking td {
   color: #333;
   padding: 0 18px;
   position: relative;
-  min-width: 60px;
+  min-width: 80px;
   text-align: center;
 }
 

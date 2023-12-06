@@ -1411,6 +1411,80 @@ $(document).ready(function () {
             },
         });
     }
+    if ($('#MRIchart_analy04_small').length) {
+
+        Highcharts.chart('MRIchart_analy04_small', {
+            chart: {
+                polar: true,
+                backgroundColor: {
+                    stops: [
+                        [0, '#ffffff'],
+                        [1, '#ffffff']
+                    ]
+                },
+                margin: [0, 0, 30, 0],
+            },
+            colors: ["#877edf"],
+            title: {
+                text: "현대",
+                align: 'center', // 가로 위치를 가운데로 설정
+                verticalAlign: 'bottom' // 세로 위치를 하단으로 설정
+            },
+            tooltip: {
+                enabled: false                
+            },
+            pane: {
+                startAngle: 0,
+                endAngle: 360
+            },
+            xAxis: {
+                categories: ['밸류에이션', '미래<br>성장성', '사업<br>독점력', '재무<br>안전성', '현금<br>창출력' ],
+                tickmarkPlacement: 'on',
+                lineWidth: 0,
+                max: 5,
+                labels: {
+                    enabled: false
+                }
+            },
+            yAxis: {
+                gridLineInterpolation: 'polygon',
+                minorGridLineColor: '#E0E0E0',
+                tickInterval: 1.07,
+                min: 0,
+                max: 5,
+                labels: {
+                    enabled: false
+                }
+            },
+            exporting: {
+                enabled: false
+            },
+            credits: {
+                enabled: false
+            },
+            legend: {
+                enabled: false,
+            },
+            series: [{
+                type: 'area',
+                name: '데이터1',
+                data: [3, 4, 3, 5, 4],
+                pointPlacement: 'on',
+                marker: {
+                    enabled: true,
+                }
+            }],
+            plotOptions: {
+                series: {
+                    lineWidth: 1,
+                    fillOpacity: 0.3,
+                    marker: {
+                        enabled: false,
+                    }
+                },
+            },
+        });
+    }
     
     // 검색 - 종목진단 - 투자매력탭 column 차트
     if ($('#containeralloca_star1_1').length) {

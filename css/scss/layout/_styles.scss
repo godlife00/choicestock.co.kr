@@ -16811,10 +16811,11 @@ table.tableRanking td {
 }
 
 .globalStock .sub_recipe .sub_mid.recipe_view .recipe_area .area ul.list .attention_box {
-	flex-basis: 67px;
+	flex-basis: 67px;	
+	width: 100%;
 }
 
-.globalStock .sub_recipe .sub_mid.recipe_view .recipe_area .area ul.list .attention_box .attention {
+.globalStock .sub_recipe .sub_mid.recipe_view .recipe_area .area ul.list .attention_box .attention {	
 	font-size: 0.9375rem;
 	font-weight: bold;
 	letter-spacing: normal;
@@ -16822,8 +16823,9 @@ table.tableRanking td {
 	color: #333;
 	padding: 0 18px;
 	position: relative;
-	min-width: 60px;
-	text-align: center;
+	min-width: 80px;
+	// width: 100%;
+	text-align: center;	
 }
 
 .globalStock .sub_recipe .sub_mid.recipe_view .recipe_area .area ul.list .attention_box .attention::before {
