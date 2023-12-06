@@ -13000,14 +13000,21 @@ table.tableRanking td {
 		padding-bottom: 15px;
 
 		.MRIchart_small_style {
-			width: 100px;
-			height: 100px;                
+			width: 140px;
+			height: 140px;     			
 			margin: 0 auto;
 			box-sizing: border-box;
 	
-			.highcharts-title {                    			
-				font-weight: bold !important;
-				font-size: 12px !important;
+			.highcharts-title, a {           																				
+				width: 150px !important;
+				padding-top: 5px;
+				line-height: 1.2;				
+				margin: 0 auto;
+				white-space: nowrap;
+				word-wrap: break-word;
+				word-break: break-all;
+				text-align: center;
+				font-size: pxTorem(11px) !important;
 				color: rgb(147, 147, 147) !important;
 				fill: rgb(147, 147, 147) !important;                    
 			}

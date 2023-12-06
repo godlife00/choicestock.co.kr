@@ -1204,9 +1204,10 @@ $(document).ready(function () {
             },
             colors: ["#877edf"],
             title: {
-                text: "카카오톡게임즈",
+                useHTML: true, // HTML 태그 사용 활성화
+                text: '<a href="">피프스 써드 뱅코프</a>', // 종목명에 링크
                 align: 'center', // 가로 위치를 가운데로 설정
-                verticalAlign: 'bottom' // 세로 위치를 하단으로 설정
+                verticalAlign: 'bottom', // 세로 위치를 하단으로 설정                                 
             },
             tooltip: {
                 enabled: false                
@@ -1278,9 +1279,10 @@ $(document).ready(function () {
             },
             colors: ["#877edf"],
             title: {
-                text: "삼성전자",
+                useHTML: true, // HTML 태그 사용 활성화
+                text: '<a href="">Ccc인텔리전트솔루션즈홀딩스</a>', // 종목명에 링크
                 align: 'center', // 가로 위치를 가운데로 설정
-                verticalAlign: 'bottom' // 세로 위치를 하단으로 설정
+                verticalAlign: 'bottom', // 세로 위치를 하단으로                                       
             },
             tooltip: {
                 enabled: false                
@@ -1352,7 +1354,8 @@ $(document).ready(function () {
             },
             colors: ["#877edf"],
             title: {
-                text: "네이버",
+                useHTML: true, // HTML 태그 사용 활성화
+                text: '<a href="">네이버</a>', // 종목명에 링크
                 align: 'center', // 가로 위치를 가운데로 설정
                 verticalAlign: 'bottom' // 세로 위치를 하단으로 설정
             },
@@ -1426,6 +1429,7 @@ $(document).ready(function () {
             },
             colors: ["#877edf"],
             title: {
+                useHTML: true, // HTML 태그 사용 활성화
                 text: "현대",
                 align: 'center', // 가로 위치를 가운데로 설정
                 verticalAlign: 'bottom' // 세로 위치를 하단으로 설정
