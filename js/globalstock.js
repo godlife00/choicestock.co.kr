@@ -1520,11 +1520,4 @@ $(document).ready(function () {
     checkVisibility(); // 페이지 로드 시에도 실행
     applyScrollEffect();
 
-    
-    
-    
-    
-    
-    
-
 });

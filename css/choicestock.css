@@ -30029,6 +30029,27 @@ body.v_signalStreng {
   color: #333;
 }
 
+.v_signalStreng.globalStock #wrap #container.sub_search .mainBox.outline .summary .etc {
+  margin: 15px 0;
+}
+.v_signalStreng.globalStock #wrap #container.sub_search .mainBox.outline .summary .etc li {
+  padding: 3px 0;
+  font-size: 0.875rem;
+  line-height: 1;
+  color: #333;
+}
+.v_signalStreng.globalStock #wrap #container.sub_search .mainBox.outline .summary .etc li span {
+  font-size: 0.875rem;
+  line-height: 1;
+  color: #333;
+  padding-right: 5px;
+}
+.v_signalStreng.globalStock #wrap #container.sub_search .mainBox.outline .summary .etc li a {
+  color: #06c;
+  font-size: 0.8rem;
+  text-decoration: underline;
+}
+
 .v_signalStreng.globalStock #wrap #container.sub_search .mainBox.outline .summary.active p {
   -webkit-line-clamp: initial;
 }
