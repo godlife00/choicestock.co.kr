@@ -30324,22 +30324,25 @@ body.v_signalStreng {
 	margin: 15px 0;
 	li {
 		padding: 3px 0;
-		font-size: 0.875rem;
+		font-size: 0.75rem;
 		line-height: 1;
 		color: #333;
+		opacity: 0.9;
 	}
 	
 	li span {
-		font-size: 0.875rem;
+		font-size: 0.75rem;
 		line-height: 1;
 		color: #333;
 		padding-right: 5px;
+		opacity: 0.9;
 	}
 	
 	li a {
 		color: #06c;
 		font-size: 0.8rem;
 		text-decoration: underline;
+		opacity: 0.9;
 	}
 }
 

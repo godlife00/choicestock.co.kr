@@ -30034,20 +30034,23 @@ body.v_signalStreng {
 }
 .v_signalStreng.globalStock #wrap #container.sub_search .mainBox.outline .summary .etc li {
   padding: 3px 0;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   line-height: 1;
   color: #333;
+  opacity: 0.9;
 }
 .v_signalStreng.globalStock #wrap #container.sub_search .mainBox.outline .summary .etc li span {
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   line-height: 1;
   color: #333;
   padding-right: 5px;
+  opacity: 0.9;
 }
 .v_signalStreng.globalStock #wrap #container.sub_search .mainBox.outline .summary .etc li a {
   color: #06c;
   font-size: 0.8rem;
   text-decoration: underline;
+  opacity: 0.9;
 }
 
 .v_signalStreng.globalStock #wrap #container.sub_search .mainBox.outline .summary.active p {
