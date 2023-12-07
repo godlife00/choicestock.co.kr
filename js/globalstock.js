@@ -736,7 +736,8 @@ $(document).ready(function () {
 
     //서브 검색 - 종목진단 - 투자매력
     var swiper_competChar = new Swiper('.swiper_competChar', {
-        slidesPerView: 2.5,        
+        slidesPerView: "auto",
+        spaceBetween: 8,
     });
 
     //서브 발굴 - 미국주식 탐구생활 
@@ -1491,5 +1492,39 @@ $(document).ready(function () {
             header.classList.add('bg_blue');
         }
     }
+
+    // 서비스소개 페이드인 효과    
+    function applyScrollEffect() {
+        $('.box').each(function() {
+            $(this).addClass('scrolled');
+        });
+    }
+    function checkVisibility() {
+        const windowHeight = $(window).height();
+        const windowScrollTop = $(window).scrollTop();
+
+        $('.box').each(function() {
+            const boxTop = $(this).offset().top;
+
+            // 화면 뷰포트에 .box 요소가 보이기 시작하는 지점 확인
+            if (boxTop < windowScrollTop + windowHeight) {
+                $(this).addClass('visible');
+            } else {
+                $(this).removeClass('visible');
+            }
+        });
+    }
+
+    $(window).on('scroll', checkVisibility);
+    $(window).on('scroll', applyScrollEffect);
+    checkVisibility(); // 페이지 로드 시에도 실행
+    applyScrollEffect();
+
+    
+    
+    
+    
+    
+    
 
 });
