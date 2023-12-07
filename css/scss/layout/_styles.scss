@@ -30310,6 +30310,7 @@ body.v_signalStreng {
 .v_signalStreng.globalStock #wrap #container.sub_search .mainBox.outline .summary .view_box {
 	display: flex;
 	flex-wrap: wrap;	
+	flex-direction: column;
 }
 
 .v_signalStreng.globalStock #wrap #container.sub_search .mainBox.outline .summary p {
