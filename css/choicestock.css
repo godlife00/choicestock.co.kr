@@ -25080,12 +25080,13 @@ table.tableRanking td {
 
 .premium_applybtn a {
   font-size: 1rem;
+  font-weight: bold;
+  line-height: 1.19;
   color: #fff;
 }
 
 .premium_applybtn a strong {
   color: #FFDA0D;
-  text-decoration: underline;
 }
 
 .premium_applybtn i {
@@ -33120,12 +33121,21 @@ body.v_signalStreng {
 .globalStock .service_wrap .header .headerTop .go_back {
   border-color: #fff !important;
 }
+.globalStock .service_wrap .premium_applybtn {
+  margin-top: 0;
+}
 .globalStock .service_wrap .box {
   background-color: #fff;
-  padding: 35px 0;
+  padding: 120px 0;
   opacity: 0;
   transform: translateY(0);
   transition: transform 0.6s ease-out;
+}
+.globalStock .service_wrap .box.bg {
+  background-color: #F4F4F5;
+}
+.globalStock .service_wrap .box.bg_blue {
+  background-image: linear-gradient(to bottom, rgba(77, 110, 228, 0), rgba(77, 110, 228, 0.2) 100%, #4d6ee4);
 }
 .globalStock .service_wrap .box.scrolled {
   transform: translateY(200px);
@@ -33135,10 +33145,37 @@ body.v_signalStreng {
   transform: translateY(0);
 }
 .globalStock .service_wrap .box.fade_wrap {
+  background-color: transparent;
   padding: 8px 0;
 }
+.globalStock .service_wrap .box.fade_wrap .repre {
+  display: flex;
+  flex-direction: column;
+  gap: 6px 0;
+  width: 90%;
+  padding: 18px 32px;
+  box-sizing: border-box;
+  max-width: 420px;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 1px solid rgba(77, 110, 228, 0.1);
+  border-radius: 16px;
+}
+.globalStock .service_wrap .box.fade_wrap .repre .title {
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 1.4;
+  color: #6a727b;
+}
+.globalStock .service_wrap .box.fade_wrap .repre .txt {
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 1.15;
+  color: #333;
+}
 .globalStock .service_wrap .box.premium_box {
-  background-color: #141931;
+  padding: 32px 0;
+  background-image: linear-gradient(to bottom, #141931, #161c40 54%, #161c40);
 }
 .globalStock .service_wrap .box.premium_box .title_box {
   display: flex;
@@ -33158,9 +33195,147 @@ body.v_signalStreng {
 .globalStock .service_wrap .box.premium_box .title_box h1 b {
   color: #404fc3;
 }
+.globalStock .service_wrap .box.premium_box .bg_img {
+  position: relative;
+  width: 100%;
+  max-width: 420px;
+  height: 330px;
+  margin: 0 auto;
+  background: url("/img/first_month_3300.svg") no-repeat center 60%;
+}
+.globalStock .service_wrap .box.premium_box .bg_img .bell {
+  position: absolute;
+  right: calc(50% - 86px);
+  top: 14px;
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background: url("/img/service/bell.svg") no-repeat center center;
+  background-size: cover;
+  animation: shake 0.5s ease infinite; /* 떨리는 애니메이션 적용 */
+}
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(3px);
+  }
+  75% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(3px);
+  }
+}
+.globalStock .service_wrap .box.premium_box .benefits_guide {
+  display: flex;
+  gap: 0 15px;
+  width: 90%;
+  box-sizing: border-box;
+  max-width: 420px;
+  padding: 20px 16px 20px 15%;
+  border-radius: 16px;
+  margin: 8px auto;
+  background-color: #13182e;
+  opacity: 0;
+  transform: translateY(150px);
+  transition: transform 0.6s ease-out;
+}
+.globalStock .service_wrap .box.premium_box .benefits_guide.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.globalStock .service_wrap .box.premium_box .benefits_guide .benefits_img {
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+}
+.globalStock .service_wrap .box.premium_box .benefits_guide .benefits_img.img01 {
+  background: url("/img/service/benefits_img01.svg") no-repeat center center;
+}
+.globalStock .service_wrap .box.premium_box .benefits_guide .benefits_img.img02 {
+  background: url("/img/service/benefits_img02.svg") no-repeat center center;
+}
+.globalStock .service_wrap .box.premium_box .benefits_guide .benefits_img.img03 {
+  background: url("/img/service/benefits_img03.svg") no-repeat center center;
+}
+.globalStock .service_wrap .box.premium_box .benefits_guide .title_box h2 {
+  line-height: 1.4;
+  color: #c7cbe9;
+  font-weight: normal;
+  font-size: 0.96875rem;
+}
+.globalStock .service_wrap .box.premium_box .benefits_guide .title_box h2 b {
+  color: #7983d5;
+}
+.globalStock .service_wrap .box .con_img {
+  position: relative;
+  width: 90%;
+  box-sizing: border-box;
+  max-width: 420px;
+  margin: 0 auto;
+}
+.globalStock .service_wrap .box .con_img img {
+  display: block;
+  width: 100%;
+}
+.globalStock .service_wrap .box .con_img .gradient {
+  position: absolute;
+  height: 20%;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  background: linear-gradient(to bottom, transparent, #fff);
+}
+.globalStock .service_wrap .box .tabsArea {
+  margin: 64px auto 0;
+  width: 90%;
+  box-sizing: border-box;
+  max-width: 420px;
+  overflow: hidden;
+}
+.globalStock .service_wrap .box .tabsArea .tabs {
+  margin-bottom: 5px;
+  justify-content: flex-start;
+  gap: 0 30px;
+}
+.globalStock .service_wrap .box .tabsArea .tab_content {
+  position: relative;
+  padding: 10px;
+  background-color: #F4F4F5;
+}
+.globalStock .service_wrap .box .tabsArea .tab_content .gradient {
+  position: absolute;
+  height: 20%;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  background: linear-gradient(to bottom, transparent, #fff);
+}
+.globalStock .service_wrap .box .tabsArea li {
+  width: auto;
+  border: none;
+  font-size: 1.0625rem;
+  font-weight: bold;
+  line-height: 1.35;
+  color: #d3d3d3;
+}
+.globalStock .service_wrap .box .tabsArea li.active {
+  border: none;
+  color: #333;
+}
 .globalStock .service_wrap .box img {
   display: block;
   width: 100%;
+}
+.globalStock .service_wrap .box .prm_btn {
+  width: 85%;
+  max-width: 420px;
+  margin: 15px auto 0;
 }
 .globalStock .service_wrap .box .title_box {
   display: flex;
@@ -33192,6 +33367,7 @@ body.v_signalStreng {
   font-weight: 500;
   line-height: 1.5;
   color: #333;
+  justify-content: flex-start;
 }
 .globalStock .service_wrap .box .sum_txt {
   display: flex;
@@ -33200,7 +33376,7 @@ body.v_signalStreng {
   justify-content: center;
 }
 .globalStock .service_wrap .box .sum_txt p {
-  width: 90%;
+  width: 80%;
   max-width: 420px;
   font-size: 1rem;
   font-weight: 500;
@@ -33334,7 +33510,7 @@ body.v_signalStreng {
   width: 45px;
   height: 45px;
   box-sizing: border-box;
-  font-size: 15px;
+  font-size: 0.875rem;
   font-weight: bold;
   line-height: 1.25;
   text-align: center;

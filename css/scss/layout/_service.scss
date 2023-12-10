@@ -10,13 +10,23 @@
             border-color: #fff !important;
         }
     }
+    .premium_applybtn {
+        margin-top: 0;
+    }
 
     .box {
         background-color: #fff;
-        padding: 35px 0;
+        padding: 120px 0;
         opacity: 0;
         transform: translateY(0);
         transition: transform 0.6s ease-out;
+
+        &.bg {
+            background-color: #F4F4F5;            
+        }
+        &.bg_blue {
+            background-image: linear-gradient(to bottom, rgba(77, 110, 228, 0), rgba(77, 110, 228, 0.2) 100%, #4d6ee4);
+        }
 
         &.scrolled {
             transform: translateY(200px);
@@ -27,11 +37,42 @@
             transform: translateY(0);
         }
         &.fade_wrap {
+            background-color: transparent;
             padding: 8px 0;
+            .repre {
+                display: flex;
+                flex-direction: column;
+                gap: 6px 0;
+                width: 90%;
+                padding: 18px 32px;
+                box-sizing: border-box;
+                max-width: 420px;
+                margin: 0 auto;
+                background-color: #fff;
+                border: 1px solid rgba(77, 110, 228, 0.1);
+                border-radius: 16px;
+                .title {
+                    font-size: 15px;
+                    font-weight: normal;                    
+                    line-height: 1.4;                    
+                    color: #6a727b;
+                }
+                .txt {
+                    font-size: 13px;
+                    font-weight: normal;                    
+                    line-height: 1.15;                    
+                    color: #333;
+                    b {
+                        
+                    }
+                }
+
+            }
         }
 
         &.premium_box {
-            background-color: #141931;           
+            padding: 32px 0;            
+            background-image: linear-gradient(to bottom, #141931, #161c40 54%, #161c40);   
             .title_box {
                 display: flex;
                 flex-wrap: wrap;
@@ -51,12 +92,159 @@
                     }                    
                 }
             } 
+            .bg_img {
+                position: relative;
+                width: 100%;
+                max-width: 420px;
+                height: 330px;
+                margin: 0 auto;
+                background: url('/img/first_month_3300.svg') no-repeat center 60%;
+                .bell {
+                    position: absolute;
+                    right: calc(50% - 86px);
+                    top: 14px;
+                    display: inline-block;                    
+                    width: 100px;
+                    height: 100px;
+                    background: url('/img/service/bell.svg') no-repeat center center;
+                    background-size: cover;
+                    animation: shake 0.5s ease infinite; /* 떨리는 애니메이션 적용 */
+                }
+                @keyframes shake {
+                    0% {
+                        transform: translateX(0);
+                    }
+                    25% {
+                        transform: translateX(0px);
+                    }
+                    50% {
+                        transform: translateX(3px);
+                    }
+                    75% {
+                        transform: translateX(0px);
+                    }
+                    100% {
+                        transform: translateX(3px);
+                    }
+                }
+            }
+            .benefits_guide {
+                display: flex;             
+                gap: 0 15px;    
+                width: 90%;
+                box-sizing: border-box;
+                max-width: 420px;
+                padding: 20px 16px 20px 15%;
+                border-radius: 16px;
+                margin: 8px auto;
+                background-color: #13182e;               
+
+                opacity: 0;
+                transform: translateY(150px);
+                transition: transform 0.6s ease-out;
+
+                &.visible {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+
+                .benefits_img {
+                    display: inline-block;
+                    width: 45px;
+                    height: 45px;                    
+                    &.img01 {
+                        background: url('/img/service/benefits_img01.svg') no-repeat center center;
+                    }
+                    &.img02 {
+                        background: url('/img/service/benefits_img02.svg') no-repeat center center;
+                    }
+                    &.img03 {
+                        background: url('/img/service/benefits_img03.svg') no-repeat center center;
+                    }
+                }            
+                .title_box {               
+                    h2 {                        
+                        line-height: 1.4;
+                        color: #c7cbe9;                        
+                        font-weight: normal;
+                        font-size: pxTorem(15.5px);                        
+                        b {
+                            color: #7983d5;
+                        }                                           
+                    }
+                } 
+            }
+        }
+
+        .con_img {
+            position: relative;
+            width: 90%;
+            box-sizing: border-box;
+            max-width: 420px;            
+            margin: 0 auto;
+            img {
+                display: block;
+                width: 100%;                
+            }
+            .gradient {
+                position: absolute;
+                height: 20%;
+                left: 10px;
+                right: 10px;
+                bottom: 10px;
+                background: linear-gradient(to bottom, transparent, #fff);
+            } 
+        }
+
+        .tabsArea {            
+            margin: 64px auto 0;
+            width: 90%;
+            box-sizing: border-box;
+            max-width: 420px;                                    
+            overflow: hidden;
+            .tabs {
+                margin-bottom: 5px;                
+                justify-content: flex-start;
+                gap: 0 30px;
+            }
+            .tab_content {
+                position: relative;
+                padding: 10px;
+                background-color: #F4F4F5;           
+                .gradient {
+                    position: absolute;
+                    height: 20%;
+                    left: 10px;
+                    right: 10px;
+                    bottom: 10px;
+                    background: linear-gradient(to bottom, transparent, #fff);
+                }                     
+            }
+            li {
+                width: auto;
+                border: none;
+                font-size: pxTorem( 17px);
+                font-weight: bold;                
+                line-height: 1.35;                
+                color: #d3d3d3;
+
+                &.active {
+                    border: none;                    
+                    color: #333;
+                }
+            }
         }
 
         img {
             display: block;
             width: 100%;
             // height: 100%;
+        }
+
+        .prm_btn {
+            width: 85%;
+            max-width: 420px;
+            margin: 15px auto 0;
         }
 
         .title_box {
@@ -89,6 +277,7 @@
                 font-weight: 500;
                 line-height: 1.5;                
                 color: #333;
+                justify-content: flex-start;
             }
         }
 
@@ -96,9 +285,9 @@
             display: flex;
             flex-wrap: wrap;
             align-content: center;
-            justify-content: center;
+            justify-content: center;            
             p {
-                width: 90%;
+                width: 80%;
                 max-width: 420px;
                 font-size: pxTorem(16px);
                 font-weight: 500;
@@ -253,7 +442,7 @@
                 width: 45px;
                 height: 45px;
                 box-sizing: border-box;
-                font-size: 15px;
+                font-size: pxTorem(14px);
                 font-weight: bold;
                 line-height: 1.25;
                 text-align: center;

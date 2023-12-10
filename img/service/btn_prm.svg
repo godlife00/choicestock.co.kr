@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="311" height="98" viewBox="0 0 311 98">
+  <g id="그룹_12886" data-name="그룹 12886" transform="translate(44 -6714)">
+    <rect id="이미지" width="311" height="98" rx="16" transform="translate(-44 6714)" fill="#f5f6fc"/>
+    <g id="그룹_10198" data-name="그룹 10198" transform="translate(-66.5 5447)">
+      <text id="초이스스탁US_서비스_100_활용팁_" data-name="초이스스탁US 서비스 100% 활용팁!" transform="translate(47 1304)" fill="#333" font-size="16" font-family="Pretendard-Bold, Pretendard" font-weight="700"><tspan x="0" y="0">초이스스탁US 서비스 </tspan><tspan y="0" fill="#404fc3">100% 활용팁!</tspan></text>
+      <g id="btn" transform="translate(65.5 1315.69)">
+        <g id="사각형_6985" data-name="사각형 6985" transform="translate(-18 0.309)" fill="#fff" stroke="#c7cbe9" stroke-width="1">
+          <rect width="100" height="28" rx="14" stroke="none"/>
+          <rect x="0.5" y="0.5" width="99" height="27" rx="13.5" fill="none"/>
+        </g>
+        <text id="서비스_FAQ" data-name="서비스 FAQ" transform="translate(27 19.309)" fill="#404fc3" font-size="13" font-family="Pretendard-Medium, Pretendard" font-weight="500" letter-spacing="-0.025em"><tspan x="-29.439" y="0">서비스 FAQ</tspan></text>
+        <g id="그룹_10287" data-name="그룹 10287" transform="translate(-120.924 -498.939)">
+          <rect id="사각형_5705" data-name="사각형 5705" width="8" height="12" transform="translate(178.924 508.248)" fill="red" opacity="0"/>
+          <path id="패스_17512" data-name="패스 17512" d="M334.742,326.562l4,4-4,4" transform="translate(-153.319 183.187)" fill="none" stroke="#7983d5" stroke-width="1.2"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

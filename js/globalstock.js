@@ -321,17 +321,22 @@ $(document).ready(function () {
     });
 
     //탭메뉴
-    $(".tabsArea .tab_content").hide();
-    $(".tabsArea .tab_content:first").show();
-
-    $("ul.tabs li").click(function () {
-        $("ul.tabs li").removeClass("active");
-        $(this).addClass("active");
-        $(".tabsArea .tab_content").hide();
-        var activeTab = $(this).attr("rel");
-        $("#" + activeTab).fadeIn();
+    $(".tabsArea").each(function() {
+        var $thisTabsArea = $(this);
+        $thisTabsArea.find(".tab_content").hide();
+        $thisTabsArea.find(".tab_content:first").show();
+    
+        $thisTabsArea.find("ul.tabs li").click(function() {
+            var $thisTab = $(this);
+            $thisTab.siblings().removeClass("active");
+            $thisTab.addClass("active");
+            $thisTabsArea.find(".tab_content").hide();
+    
+            var activeTab = $thisTab.attr("rel");
+            $thisTabsArea.find("#" + activeTab).fadeIn();
+        });
     });
-
+    
     //메인 탭메뉴 종목노트, 탐구생활, 주요뉴스
     $(".tabsArea_note .tab_content").hide();
     $(".tabsArea_note .tab_content:first").show();
@@ -1514,10 +1519,20 @@ $(document).ready(function () {
             }
         });
     }
-
+    // 서비스소개 상단 3개 박스 순차 슬라이드
+    const benefitElements = document.querySelectorAll('.benefits_guide');    
+    function applyClassSequentially(index) {
+        if (index < benefitElements.length) {
+            benefitElements[index].classList.add('visible');
+            setTimeout(() => {
+                applyClassSequentially(index + 1);
+            }, 300);
+        }
+    }
     $(window).on('scroll', checkVisibility);
     $(window).on('scroll', applyScrollEffect);
     checkVisibility(); // 페이지 로드 시에도 실행
-    applyScrollEffect();
+    applyScrollEffect(); //서비스소개 페이드인 효과 함수 실행
+    applyClassSequentially(0); // 서비스소개 상단 3개 박스 순차 슬라이드 함수 실행
 
 });

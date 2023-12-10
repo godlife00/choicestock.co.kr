@@ -25335,13 +25335,14 @@ table.tableRanking td {
 }
 
 .premium_applybtn a {
-	font-size: 1rem;
+	font-size: pxTorem(16px);
+	font-weight: bold;	
+	line-height: 1.19;	
 	color: #fff;
 }
 
 .premium_applybtn a strong {
-	color: #FFDA0D;
-	text-decoration: underline;
+	color: #FFDA0D;	
 }
 
 .premium_applybtn i {
