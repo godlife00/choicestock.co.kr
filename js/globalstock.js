@@ -260,10 +260,11 @@ $(document).ready(function () {
     function handleScrollForGNB() {
         var lastScrollTop = 0;
         var threshold = 90;
+        var scrollTimeout = null; // 스크롤 타이머
         var debounceTimeout = null; // 데바운싱 타이머
         var debounceDelay = 50; // 데바운싱 지연 시간 (밀리초)
     
-        $(window).scroll(function() {
+        $(window).scroll(function() {            
             if (debounceTimeout) {
                 clearTimeout(debounceTimeout); // 이전 타이머 초기화
             }
@@ -283,6 +284,10 @@ $(document).ready(function () {
                         // 스크롤 올릴 때: GNB 보이기
                         $('.globalStock .gnb').show();
                     }
+                    // 일정 시간(예: 2000ms) 동안 스크롤 이벤트가 없으면 GNB 보이기
+                    scrollTimeout = setTimeout(function() {
+                        $('.globalStock .gnb').slideDown(150);
+                    }, 300);
                 }
     
                 lastScrollTop = currentScrollTop;
