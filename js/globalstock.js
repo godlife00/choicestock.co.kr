@@ -251,45 +251,46 @@ $(document).ready(function () {
     if ($('.gnb').length === 0) {
         $('#footer.chous_footer .notice').css('padding-bottom', '35px');
     }
+    if ($('.service_wrap').length === 1) {
+        console.log("섭수");
+        $('#container').css('padding-top','0');
+    }
 
     // 화면 스크롤 할때 gnb 숨기기 함수
     function handleScrollForGNB() {
         var lastScrollTop = 0;
         var threshold = 90;
-        var scrollTimeout = null; // 스크롤 타이머
+        var debounceTimeout = null; // 데바운싱 타이머
+        var debounceDelay = 50; // 데바운싱 지연 시간 (밀리초)
     
         $(window).scroll(function() {
-            var currentScrollTop = $(this).scrollTop();
-            var windowHeight = $(window).height();
-            var documentHeight = $(document).height();
-    
-            // 스크롤 타이머 초기화
-            clearTimeout(scrollTimeout);
-    
-            // 스크롤이 페이지 하단 근처에 도달하면 GNB 보이기
-            if (currentScrollTop + windowHeight >= documentHeight - threshold) {
-                $('.globalStock .gnb').slideDown(150);
-            } else {
-                if (currentScrollTop > lastScrollTop) {
-                    // 스크롤 내릴 때: GNB 숨기기
-                    $('.globalStock .gnb').slideUp(150);
-                } else {
-                    // 스크롤 올릴 때: GNB 보이기
-                    // $('.globalStock .gnb').slideDown(150);
-                    $('.globalStock .gnb').show();
-                }
-    
-                // 일정 시간(예: 2000ms) 동안 스크롤 이벤트가 없으면 GNB 보이기
-                // scrollTimeout = setTimeout(function() {
-                //     $('.globalStock .gnb').slideDown(150);
-                // }, 450);
+            if (debounceTimeout) {
+                clearTimeout(debounceTimeout); // 이전 타이머 초기화
             }
     
-            lastScrollTop = currentScrollTop;
+            debounceTimeout = setTimeout(function() {
+                var currentScrollTop = $(window).scrollTop();
+                var windowHeight = $(window).height();
+                var documentHeight = $(document).height();
+    
+                if (currentScrollTop + windowHeight >= documentHeight - threshold) {
+                    $('.globalStock .gnb').slideDown(150);
+                } else {
+                    if (currentScrollTop > lastScrollTop) {
+                        // 스크롤 내릴 때: GNB 숨기기
+                        $('.globalStock .gnb').slideUp(150);
+                    } else {
+                        // 스크롤 올릴 때: GNB 보이기
+                        $('.globalStock .gnb').show();
+                    }
+                }
+    
+                lastScrollTop = currentScrollTop;
+            }, debounceDelay);
         });
     }
     
-    handleScrollForGNB(); //화면 스크롤 할때 gnb 숨기기 함수 실행    
+    handleScrollForGNB(); // 화면 스크롤 시 GNB 숨기기/보이기 함수 실행    
     
     //검색
     if ($('.sub_search').length) {
