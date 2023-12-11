@@ -7272,10 +7272,12 @@ table.tableRanking td {
 }
 
 .globalStock .sub_recom .sub_mid.eventPicks_area .recom_chartList .chartGoal .target span.pp {
+  display: block;
   color: #939393;
   font-weight: normal;
   font-size: 0.75rem;
   margin-top: 3px;
+  background-color: red;
 }
 
 .globalStock .sub_recom .sub_mid.eventPicks_area .ptfo_area .tabsArea .tab_container .tab_content .tableRanking.sum_table td.num .increase {
@@ -9989,7 +9991,6 @@ table.tableRanking td {
 }
 
 .globalStock .sub_menu .sub_top .logout {
-  margin-left: 84px;
   display: inline-block;
 }
 
@@ -10004,8 +10005,6 @@ table.tableRanking td {
 
 .globalStock .sub_menu .sub_top .logout p {
   font-size: 1.25rem;
-  width: 260px;
-  margin-left: -80px;
   display: inline-block;
   text-align: left;
   color: #333;
