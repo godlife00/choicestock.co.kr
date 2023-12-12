@@ -29436,9 +29436,11 @@ body.v_signalStreng {
 }
 .v_signalStreng.globalStock #wrap #container .recom_company .attention_box {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  gap: 0 7px;
+  gap: 7px 7px;
+  width: 100%;
   position: relative;
   background: #fff;
   margin: 32px auto 0;
@@ -29476,6 +29478,7 @@ body.v_signalStreng {
 .v_signalStreng.globalStock #wrap #container .recom_company .attention_box .stock_tag {
   display: inline-flex;
   gap: 0 10px;
+  margin-left: auto;
 }
 .v_signalStreng.globalStock #wrap #container .recom_company .attention_box .stock_tag span,
 .v_signalStreng.globalStock #wrap #container .recom_company .attention_box .stock_tag a {
