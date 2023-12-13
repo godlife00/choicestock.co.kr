@@ -285,9 +285,9 @@ $(document).ready(function () {
                         $('.globalStock .gnb').show();
                     }
                     // 일정 시간(예: 2000ms) 동안 스크롤 이벤트가 없으면 GNB 보이기
-                    scrollTimeout = setTimeout(function() {
-                        $('.globalStock .gnb').slideDown(150);
-                    }, 300);
+                    // scrollTimeout = setTimeout(function() {
+                    //     $('.globalStock .gnb').slideDown(150);
+                    // }, 300);
                 }
     
                 lastScrollTop = currentScrollTop;

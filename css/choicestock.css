@@ -25543,7 +25543,7 @@ table.tableRanking td {
   pointer-events: none;
   width: 10px;
   height: 10px;
-  /* background: url('/img/situation_arow.svg') no-repeat center center; */
+  /* background: url('../img/situation_arow.svg') no-repeat center center; */
   border-radius: 50%;
   background-color: #404fc3;
   z-index: 90;
@@ -27495,7 +27495,7 @@ table.tableRanking td {
 .free_2weeks .content .info_txt {
   padding-top: 35px;
   padding-bottom: 25px;
-  /* background: url('/img/bg_free_2weeks.svg') no-repeat right 17px; 프리미엄 무료체험 */
+  /* background: url('../img/bg_free_2weeks.svg') no-repeat right 17px; 프리미엄 무료체험 */
   background: url("/img/recipe_today.png") no-repeat 90% 50%;
   /* 오늘의 매매신호 */
   background-size: auto 91px;
@@ -30379,7 +30379,7 @@ body.v_signalStreng {
 
 .v_signalStreng.globalStock #wrap #container .mainBox.financials .area_note .note_list #btn_free_list .note_nm,
 .v_signalStreng.globalStock #wrap #container .mainBox.financials .area_note .note_list .freeView_list .note_nm {
-  background: url("../img/lokimg.svg") no-repeat 0 2px;
+  background: url("/img/lokimg.svg") no-repeat 0 2px;
   background-size: 12px;
 }
 
@@ -30769,11 +30769,11 @@ body.v_signalStreng {
 }
 
 /* .globalStock .gnb li.menu a {		
-	background: url('/img/icon_menu.svg') no-repeat 0 6px;	
+	background: url('../img/icon_menu.svg') no-repeat 0 6px;	
 }
 
 .globalStock .gnb li.menu.active a {
-	background-image: url('/img/icon_menu_on.svg');
+	background-image: url('../img/icon_menu_on.svg');
 	background-position: 0 6px;
 } */
 /* 
@@ -30784,7 +30784,7 @@ body.v_signalStreng {
 .globalStock .gnb li.myinfo a {
 	font-size: 0;
 	width: 24px;
-	background: url('/img/icon_menu_list_on.png') no-repeat 0 6px;
+	background: url('../img/icon_menu_list_on.png') no-repeat 0 6px;
 	background-size: auto 26px;
 	opacity: 0.35;
 }
@@ -30797,7 +30797,7 @@ body.v_signalStreng {
 	display: inline-block;
 	width: 24px;
 	height: 24px;
-	background: url('/img/icon_home.svg') no-repeat center -2px;
+	background: url('../img/icon_home.svg') no-repeat center -2px;
 	background-size: 24px 24px;
 	vertical-align: middle;
 	position: relative;
@@ -30805,7 +30805,7 @@ body.v_signalStreng {
 }
 
 .globalStock .gnb li.home.active i {
-	background: url('/img/icon_home_on.svg') no-repeat center -2px;
+	background: url('../img/icon_home_on.svg') no-repeat center -2px;
 	top: 0;
 	margin-right: 2px;
 } */
