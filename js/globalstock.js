@@ -1159,8 +1159,20 @@ $(document).ready(function () {
         $('.globalStock.kiwoom .schfix_inc .searching .searchArea').css('width', '100%');
         $('.globalStock.kiwoom .schfix_inc .searching .top_btn + .searchArea').css('width', 'calc(100% - 70px)');
         $('.globalStock.wowtv .header_wowtv + .search_top.searching .searchArea .searchBtn').css('top', '11px');
-
     });
+    $(window).on('load', function() {
+        console.log("검색창 초기화");
+        // 검색창과 관련된 클래스와 스타일 초기화
+        $('.globalStock .schfix_inc .searching .searchArea .sch_title').removeClass('keydown');
+        $('.globalStock .schfix_inc .searching .searchArea .searchInput').removeClass('keydown');
+        $('.globalStock .schfix_inc .searching .searchArea .searchBtn').css('top', '11px');
+        $('.globalStock .schfix_inc .searching .sch_autocomplete').hide();
+        $('.globalStock.kiwoom .schfix_inc .top_btn').show();
+        $('.globalStock.kiwoom .schfix_inc .searching .searchArea').css('width', '100%');
+        $('.globalStock.kiwoom .schfix_inc .searching .top_btn + .searchArea').css('width', 'calc(100% - 70px)');
+        // 기타 필요한 초기화 작업
+    });
+    
     // 키움 따라다니는 서비스신청 버튼
     // #footer padding-bottom 계산
     if ($('.globalStock.kiwoom .cho_applybtn').length) {

@@ -1596,7 +1596,7 @@ table.tableRanking td {
 	overflow: auto;
 	height: 100%;
 	margin: 0 auto;
-	width: calc(100% - 28px);
+	width: calc(100% - 30px);
 }
 
 .globalStock .main_searching .sch_autocomplete.focus_on {
@@ -1605,7 +1605,7 @@ table.tableRanking td {
 
 .globalStock .main_searching .sch_autocomplete ul {
 	background: #fff;
-	border: 1px solid #F4F4F5;
+	// border: 1px solid #F4F4F5;
 	border-top: 0;
 	border-bottom-right-radius: 25px;
 	border-bottom-left-radius: 25px;
