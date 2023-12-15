@@ -328,7 +328,7 @@ $(document).ready(function () {
     });
     $(window).on('pageshow', function (event) {
         if (event.originalEvent.persisted) {            
-            $('.globalStock .main_searching .searchArea .searchInput').removeClass('keydown');
+            $('.globalStock .main_searching .searchArea .searchInput').val('').removeClass('keydown');
             $('.globalStock .main_searching .sch_autocomplete').removeClass('focus_on _show');            
         }
     });
