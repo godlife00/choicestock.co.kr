@@ -11896,23 +11896,23 @@ table.tableRanking td {
   border-bottom: none;
 }
 
-.globalStock .sub_search .tabs_5.prm_tabs li:nth-child(4) {
-  background: url("/img/prm_tabsLock.svg") no-repeat calc(100% - 1px) center;
-  background-size: 8px auto;
-}
-
 .globalStock .sub_search .tabs_5.prm_tabs li:nth-child(5) {
   background: url("/img/prm_tabsLock.svg") no-repeat calc(100% - 1px) center;
   background-size: 8px auto;
 }
 
+.globalStock .sub_search .tabs_5.prm_tabs li:nth-child(6) {
+  background: url("/img/prm_tabsLock.svg") no-repeat calc(100% - 1px) center;
+  background-size: 8px auto;
+}
+
 @media (min-width: 320px) and (max-width: 358px) {
-  .globalStock .sub_search .tabs_5.prm_tabs li:nth-child(5) {
+  .globalStock .sub_search .tabs_5.prm_tabs li:nth-child(6) {
     background: url("/img/prm_tabsLock.svg") no-repeat calc(100% - 0px) center;
     background-size: 8px auto;
   }
 }
-.globalStock .sub_search .tabs_5.prm_tabs li:nth-child(6) {
+.globalStock .sub_search .tabs_5.prm_tabs li:nth-child(7) {
   background: url("/img/prm_tabsLock.svg") no-repeat calc(100% - 2px) center;
   background-size: 8px auto;
 }
@@ -28372,9 +28372,9 @@ table.tableRanking td {
 }
 
 /* 230829 초스 리뉴얼 개요탭, 추천 */
-.v_signalStreng.globalStock .sub_search .tabs_5.prm_tabs li:nth-child(4),
 .v_signalStreng.globalStock .sub_search .tabs_5.prm_tabs li:nth-child(5),
-.v_signalStreng.globalStock .sub_search .tabs_5.prm_tabs li:nth-child(6) {
+.v_signalStreng.globalStock .sub_search .tabs_5.prm_tabs li:nth-child(6),
+.v_signalStreng.globalStock .sub_search .tabs_5.prm_tabs li:nth-child(7) {
   background-position: calc(100% - 1px) 1px;
 }
 
