@@ -1948,6 +1948,7 @@ table.tableRanking td {
   border-bottom: none;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+  border-bottom: 1px solid #E0E4E9;
 }
 
 .globalStock .main_searching .sch_autocomplete li a {
@@ -17256,7 +17257,7 @@ table.tableRanking td {
   clear: both;
   _height: 0;
   _font-size: 0;
-  padding: 20px 0;
+  padding: 15px 0;
   border-bottom: 1px solid #E0E4E9;
 }
 
@@ -17289,13 +17290,15 @@ table.tableRanking td {
 .globalStock .sub_research .sub_mid.research_board .lst_type2.lst_lock dt.tit strong {
   padding-left: 20px;
   position: relative;
+  word-break: break-all;
+  word-wrap: break-word;
 }
 
 .globalStock .sub_research .sub_mid.research_board .lst_type2.lst_lock dt.tit strong::before {
   content: "";
   position: absolute;
   left: 2px;
-  top: 4px;
+  top: 2px;
   width: 10px;
   height: 13px;
   background: #F6F7FA url("/img/prm_tabsLock.svg") no-repeat center center;
@@ -17314,12 +17317,13 @@ table.tableRanking td {
   text-overflow: ellipsis;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
+  word-break: break-all;
   word-wrap: break-word;
 }
 
 .globalStock .sub_research .sub_mid.research_board .lst_type2 dd.photo {
   float: left;
-  margin: -62px 10px 0 0;
+  margin: -65px 10px 0 0;
   color: #fff;
   text-align: center;
   border: none;
@@ -29426,7 +29430,7 @@ body.v_signalStreng {
   color: #363F4B;
 }
 .v_signalStreng.globalStock #wrap #container .recom_company .detail .per .day {
-  flex: 4;
+  margin-left: auto;
   text-align: right;
   font-size: 0.75rem;
   font-weight: 500;
@@ -29494,6 +29498,7 @@ body.v_signalStreng {
   position: fixed;
   top: 0;
   left: 0;
+  right: 0;
   width: 100%;
   z-index: 9999;
   background-color: #404fc3;
@@ -29503,6 +29508,8 @@ body.v_signalStreng {
 }
 .list.recom.fix_data {
   display: flex;
+  max-width: 767px;
+  margin: 0 auto;
 }
 .list.recom * {
   margin: 0;
