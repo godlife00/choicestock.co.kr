@@ -247,56 +247,48 @@ $(document).ready(function () {
         $("#sortable").disableSelection();
     });
 
+    /* GNB 기능 */
+    //add active
+    $('.globalStock .gnb li').on("click", function () {
+        $('.globalStock .gnb li').removeClass("active");
+        $(this).addClass("active");
+    });
     // #footer padding-bottom 계산    
     if ($('.gnb').length === 0) {
         $('#footer.chous_footer .notice').css('padding-bottom', '35px');
     }
-    if ($('.service_wrap').length === 1) {
-        console.log("섭수");
+    // 스크롤시 gnb 보이기, 숨기기
+    var lastScrollTop = 0;
+    var $gnb = $(".globalStock .gnb");
+
+    $(window).scroll(function(event){
+        var st = $(this).scrollTop();
+        
+        // 스크롤 내릴 때 gnb 숨기기
+        if (st <= 100){
+            console.log("최상단");
+            $gnb.show();            
+        } else if (st > lastScrollTop) {
+            $gnb.hide();
+        } else {
+            // 스크롤 올릴 때 gnb 보이기
+            $gnb.show();
+        }
+
+        // 스크롤이 페이지 최하단에 도착하면 gnb 보이기
+        if($(window).scrollTop() + $(window).height() > $(document).height() - 100) {
+            $gnb.show();
+        }
+
+        lastScrollTop = st;
+    });
+
+
+    
+    if ($('.service_wrap').length === 1) {        
         $('#container').css('padding-top','0');
     }
-
-    // 화면 스크롤 할때 gnb 숨기기 함수
-    function handleScrollForGNB() {
-        var lastScrollTop = 0;
-        var threshold = 90;
-        var scrollTimeout = null; // 스크롤 타이머
-        var debounceTimeout = null; // 데바운싱 타이머
-        var debounceDelay = 50; // 데바운싱 지연 시간 (밀리초)
-    
-        $(window).scroll(function() {            
-            if (debounceTimeout) {
-                clearTimeout(debounceTimeout); // 이전 타이머 초기화
-            }
-    
-            debounceTimeout = setTimeout(function() {
-                var currentScrollTop = $(window).scrollTop();
-                var windowHeight = $(window).height();
-                var documentHeight = $(document).height();
-    
-                if (currentScrollTop + windowHeight >= documentHeight - threshold) {
-                    $('.globalStock .gnb').slideDown(150);
-                } else {
-                    if (currentScrollTop > lastScrollTop) {
-                        // 스크롤 내릴 때: GNB 숨기기
-                        $('.globalStock .gnb').slideUp(150);
-                    } else {
-                        // 스크롤 올릴 때: GNB 보이기
-                        $('.globalStock .gnb').show();
-                    }
-                    // 일정 시간(예: 2000ms) 동안 스크롤 이벤트가 없으면 GNB 보이기
-                    // scrollTimeout = setTimeout(function() {
-                    //     $('.globalStock .gnb').slideDown(150);
-                    // }, 300);
-                }
-    
-                lastScrollTop = currentScrollTop;
-            }, debounceDelay);
-        });
-    }
-    
-    handleScrollForGNB(); // 화면 스크롤 시 GNB 숨기기/보이기 함수 실행    
-    
+   
     //검색
     if ($('.sub_search').length) {
         // $('#footer').removeClass('fix_footer');
@@ -827,12 +819,7 @@ $(document).ready(function () {
 
     /************************/
     /****  add active  *****/
-    /************************/
-    //gnb    
-    $('.globalStock .gnb li').on("click", function () {
-        $('.globalStock .gnb li').removeClass("active");
-        $(this).addClass("active");
-    });
+    /************************/    
     //메인 투자레시피
     $('.globalStock .main_mid.event_recipe .recipe_list li').on("click", function () {
         $('.globalStock .main_mid.event_recipe .recipe_list li').removeClass("active");
@@ -1186,47 +1173,47 @@ $(document).ready(function () {
         }, 150);
     });
 
-    // 주문하기 버튼            
-    // Hide Header on on scroll down
-    var didScroll;
-    var lastScrollTop = 0;
-    var delta = 5;
-    var navbarHeight = $('header').outerHeight();
+    // // 주문하기 버튼            
+    // // Hide Header on on scroll down
+    // var didScroll;
+    // var lastScrollTop = 0;
+    // var delta = 5;
+    // var navbarHeight = $('header').outerHeight();
 
-    $(window).scroll(function (event) {
-        didScroll = true;
-    });
-    setInterval(function () { if (didScroll) { hasScrolled(); didScroll = false; } }, 0);
-    function hasScrolled() {
-        clearTimeout($.data(this, 'scrollTimer'));
-        var st = $(this).scrollTop();
-        if (Math.abs(lastScrollTop - st) <= delta) return; if (st > lastScrollTop && st > navbarHeight) {
-            //스크롤  내릴때 
-            $('.globalStock .purchase_area').css({
-                'padding': '0 10px',
-                'bottom': '30px'
-            }, 300);
-            $('.globalStock.wowtv .purchase_area').css({
-                'bottom': '80px'
-            }, 300);
-            $('.globalStock .purchase_area .btn_purchase span, .globalStock .purchase_area .btn_purchase i').hide(150);
+    // $(window).scroll(function (event) {
+    //     didScroll = true;
+    // });
+    // setInterval(function () { if (didScroll) { hasScrolled(); didScroll = false; } }, 0);
+    // function hasScrolled() {
+    //     clearTimeout($.data(this, 'scrollTimer'));
+    //     var st = $(this).scrollTop();
+    //     if (Math.abs(lastScrollTop - st) <= delta) return; if (st > lastScrollTop && st > navbarHeight) {
+    //         //스크롤  내릴때 
+    //         $('.globalStock .purchase_area').css({
+    //             'padding': '0 10px',
+    //             'bottom': '30px'
+    //         }, 300);
+    //         $('.globalStock.wowtv .purchase_area').css({
+    //             'bottom': '80px'
+    //         }, 300);
+    //         $('.globalStock .purchase_area .btn_purchase span, .globalStock .purchase_area .btn_purchase i').hide(150);
 
-            if ($('.gnb_hide').length) {
-                // 본문에서 GNB 메뉴 숨김
-                $('.globalStock .gnb').slideUp(150);
-                $('#footer .notice .foot_info').css('padding-bottom', '0');
-            }
-        } else {
-            //스크롤 올릴때                         
-            $('.globalStock .purchase_area').css({
-                'padding': '0 17px',
-                'bottom': '80px'
-            }, 300);
-            $('.globalStock .purchase_area .btn_purchase span, .globalStock .purchase_area .btn_purchase i').show(150);
+    //         if ($('.gnb_hide').length) {
+    //             // 본문에서 GNB 메뉴 숨김
+    //             $('.globalStock .gnb').slideUp(150);
+    //             $('#footer .notice .foot_info').css('padding-bottom', '0');
+    //         }
+    //     } else {
+    //         //스크롤 올릴때                         
+    //         $('.globalStock .purchase_area').css({
+    //             'padding': '0 17px',
+    //             'bottom': '80px'
+    //         }, 300);
+    //         $('.globalStock .purchase_area .btn_purchase span, .globalStock .purchase_area .btn_purchase i').show(150);
 
-            $('.globalStock .gnb').show();
-        } lastScrollTop = st;
-    }
+    //         $('.globalStock .gnb').show();
+    //     } lastScrollTop = st;
+    // }
 
 
     $('.btn_purchase').on('click', function () {
