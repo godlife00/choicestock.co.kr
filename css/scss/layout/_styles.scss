@@ -3341,6 +3341,50 @@ table.tableRanking td {
 	width: auto;
 }
 
+.globalStock .main_mid.game_area .one_step {
+	width: calc(100% - 30px);
+	padding: 0 5px;
+	box-sizing: border-box;
+	margin: 25px auto 0;
+	display: flex;
+	justify-content: space-between;
+
+	.txt {
+		color: #333;
+		font-size: 0.875rem;
+		text-align: center;
+		line-height: normal;
+		vertical-align: top;
+	}
+	
+	.more {
+		display: inline-block;
+		border-radius: 3px;
+		background-color: #404fc3;
+		text-align: center;
+		height: 25px;
+		padding: 0 7px;
+		padding-right: 20px;
+		position: relative;
+	}
+	
+	.more span {
+		color: #fff;
+		font-size: 0.75rem;
+		line-height: 25px;
+		vertical-align: top;
+	}
+	
+	.more img {
+		position: absolute;
+		right: 6px;
+		top: 8px;
+		width: 6px;
+		height: 10px;
+		display: inline-block;
+	}
+}
+
 /* 메인 - 종목추천 */
 .globalStock .main_top.recommend_area .recomlist_area {
 	margin-top: 15px;
@@ -15972,7 +16016,7 @@ table.tableRanking td {
 
 .globalStock .sub_recipe .sub_mid.recipe_view {
 	background-color: #F4F4F5;
-	padding: 0 15px;
+	padding: 0 15px 25px;
 }
 .globalStock .sub_recom.sub_recipe .sub_mid.recipe_view {
 	background-color: #fff;	
