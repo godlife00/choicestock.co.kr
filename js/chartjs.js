@@ -2674,6 +2674,7 @@ $(document).ready(function () {
                         [1, '#ffffff']
                     ]
                 },
+                margin: [15, 10, 50, 10],
                 style: {
                     
                 },
