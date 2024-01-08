@@ -1477,7 +1477,7 @@ $(document).ready(function () {
         $(window).scroll(function () {
             scrollsignalpop();
         });
-    }       
+    }           
 
     $('.v_signalStreng.globalStock .signalpop.monthly_payment .ftr, .signalpop .bg_gray').on('click', function () {
         $('.signalpop').removeClass('open');
@@ -1487,6 +1487,21 @@ $(document).ready(function () {
         });
         // return false;
     });
+
+    // 메인페이지 2024 신년이벤트 배너
+    if ($('#header.m_hdr').length) {
+        console.log("힝구");
+        scrollsignalpop();
+    }   
+    $('.v_signalStreng.globalStock .signalpop.event2024_payment .ftr, .signalpop .bg_gray').on('click', function () {
+        $('.signalpop').removeClass('open');
+        $('.signalpop .box').animate({
+            'opacity': 0,
+            'height': 0
+        });
+        // return false;
+    }); 
+    // 메인페이지 2024 신년이벤트 배너
 
     // 페이지에 class="sub_payment"가 있는지 체크해서 결제 화면 헤더에 파란색 추가
     if (document.querySelector('.sub_payment')) {

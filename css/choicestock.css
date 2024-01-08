@@ -31618,7 +31618,6 @@ body.v_signalStreng {
   padding: 20px 0 0;
   background-image: linear-gradient(to bottom, rgba(77, 110, 228, 0), rgba(77, 110, 228, 0.3) 180%, rgba(77, 110, 228, 0.2));
 }
-
 .v_signalStreng.globalStock .signalpop.monthly_payment .content .info_txt {
   text-align: center;
   padding: 0;
@@ -31626,36 +31625,30 @@ body.v_signalStreng {
   background: none;
   background: url("/img/monthly_payment.svg") no-repeat center 30px;
 }
-
 .v_signalStreng.globalStock .signalpop.monthly_payment .content .info_txt p {
   text-align: center;
 }
-
 .v_signalStreng.globalStock .signalpop.monthly_payment .content .info_txt p.txt01 {
   font-size: 18px;
   font-weight: bold;
   color: #c7cbe9;
 }
-
 .v_signalStreng.globalStock .signalpop.monthly_payment .content .info_txt p.txt02 {
   margin-top: 20px;
   font-size: 24px;
   font-weight: bold;
   color: #404fc3;
 }
-
 .v_signalStreng.globalStock .signalpop.monthly_payment .ftr {
   display: flex;
   justify-content: space-between;
   height: 47px;
 }
-
 .v_signalStreng.globalStock .signalpop.monthly_payment .ftr .btn_close {
   font-size: 13px;
   text-align: right;
   color: #939393;
 }
-
 .v_signalStreng.globalStock .signalpop.monthly_payment .ftr .btn_close {
   cursor: pointer;
   position: absolute;
@@ -31667,7 +31660,6 @@ body.v_signalStreng {
   top: 14px;
   font-size: 0;
 }
-
 .v_signalStreng.globalStock .signalpop.monthly_payment .ftr .btn_close::before,
 .v_signalStreng.globalStock .signalpop.monthly_payment .ftr .btn_close::after {
   content: "";
@@ -31678,12 +31670,88 @@ body.v_signalStreng {
   width: 2px;
   background-color: #333;
 }
-
 .v_signalStreng.globalStock .signalpop.monthly_payment .ftr .btn_close::before {
   transform: rotate(45deg);
 }
-
 .v_signalStreng.globalStock .signalpop.monthly_payment .ftr .btn_close::after {
+  transform: rotate(-45deg);
+}
+
+.v_signalStreng.globalStock .signalpop.event2024_payment .content {
+  padding: 20px 0 0;
+  background-image: linear-gradient(to bottom, rgba(77, 110, 228, 0), rgba(77, 110, 228, 0.3) 180%, rgba(77, 110, 228, 0.2));
+}
+.v_signalStreng.globalStock .signalpop.event2024_payment .content .info_txt {
+  text-align: center;
+  padding: 0;
+  height: 270px;
+  background: none;
+  background: url("/img/monthly_payment.svg") no-repeat center 30px;
+}
+.v_signalStreng.globalStock .signalpop.event2024_payment .content .info_txt p {
+  text-align: center;
+}
+.v_signalStreng.globalStock .signalpop.event2024_payment .content .info_txt p.txt01 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #c7cbe9;
+}
+.v_signalStreng.globalStock .signalpop.event2024_payment .content .info_txt p.txt02 {
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #404fc3;
+}
+.v_signalStreng.globalStock .signalpop.event2024_payment .content .btn_area {
+  padding-bottom: 35px;
+}
+.v_signalStreng.globalStock .signalpop.event2024_payment .content .btn_area .btn {
+  position: relative;
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+  padding: 13px 10px;
+  border-radius: 5px;
+  background-color: #404FC3;
+  font-size: 15px;
+  text-align: center;
+  color: #fff;
+}
+.v_signalStreng.globalStock .signalpop.event2024_payment .ftr {
+  display: flex;
+  justify-content: space-between;
+  height: 47px;
+}
+.v_signalStreng.globalStock .signalpop.event2024_payment .ftr .btn_close {
+  font-size: 13px;
+  text-align: right;
+  color: #939393;
+}
+.v_signalStreng.globalStock .signalpop.event2024_payment .ftr .btn_close {
+  cursor: pointer;
+  position: absolute;
+  display: inline-block;
+  padding: 4px;
+  width: 17px;
+  height: 17px;
+  right: 14px;
+  top: 14px;
+  font-size: 0;
+}
+.v_signalStreng.globalStock .signalpop.event2024_payment .ftr .btn_close::before,
+.v_signalStreng.globalStock .signalpop.event2024_payment .ftr .btn_close::after {
+  content: "";
+  position: absolute;
+  right: 15px;
+  top: 0;
+  height: 22px;
+  width: 2px;
+  background-color: #333;
+}
+.v_signalStreng.globalStock .signalpop.event2024_payment .ftr .btn_close::before {
+  transform: rotate(45deg);
+}
+.v_signalStreng.globalStock .signalpop.event2024_payment .ftr .btn_close::after {
   transform: rotate(-45deg);
 }
 
