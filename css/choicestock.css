@@ -31708,7 +31708,7 @@ body.v_signalStreng {
 .v_signalStreng.globalStock .signalpop.event2024_payment .content .btn_area .btn {
   position: relative;
   display: block;
-  width: 90%;
+  width: 50%;
   margin: 0 auto;
   padding: 13px 10px;
   border-radius: 5px;
