@@ -169,6 +169,10 @@ $(document).ready(function () {
         $('body').append(copy_recom);
     }
     customizeAndAppendList();  // 종목검색 개요탭 등 상단 고정 종목명 함수 실행
+
+    // 스크롤시 헤더 상단 고정 스크립트    
+    var headerHeight = $('#header').innerHeight();
+    var headerOffset = $('#header .headerTop').offset().top;    
     window.addEventListener('scroll', function () {
         var header = document.getElementById('header');
         if (window.scrollY >= 160) {            
@@ -176,15 +180,15 @@ $(document).ready(function () {
         } else {            
             $('.list.recom').removeClass('fix_data'); 
         }
-    });
-       
-    // 스크롤시 헤더 상단 고정 스크립트
+    });       
     window.addEventListener('scroll', function () {
-        var header = document.getElementById('header');
-        if (window.scrollY >= 54) {
-            header.classList.add('fix_header');            
+        var header = $('#header');        
+        if (window.scrollY > headerOffset) {            
+            header.addClass('fix_header');            
+            $('#container').css('padding-top', headerHeight);
         } else {
-            header.classList.remove('fix_header');            
+            header.removeClass('fix_header');          
+            $('#container').css('padding-top','0');  
         }
     });
 
