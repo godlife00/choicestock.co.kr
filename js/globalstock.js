@@ -1494,9 +1494,10 @@ $(document).ready(function () {
 
     // 메인페이지 2024 신년이벤트 배너
     if ($('#header.m_hdr').length) {
-        console.log("힝구");
-        scrollsignalpop();
-    }   
+        setTimeout(function() {
+            scrollsignalpop();
+        }, 300); // 1000 밀리초 후에 scrollsignalpop() 함수 실행
+    }     
     $('.v_signalStreng.globalStock .signalpop.event2024_payment .ftr, .signalpop .bg_gray').on('click', function () {
         $('.signalpop').removeClass('open');
         $('.signalpop .box').animate({
