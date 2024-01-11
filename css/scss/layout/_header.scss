@@ -227,21 +227,17 @@
 	
 	// 2024년 신년이벤트
 	.event2024_payment_sub {
-		background-color: #161b23;
-		padding: 15px 15px;
 		margin-left: -16px;
 		margin-right: -16px;
-		p.txt01 {
-			font-size: 18px;
-			font-weight: bold;
-			color: #c7cbe9;
-		}
-		
-		p.txt02 {			
-			margin-top: 10px;
-			font-size: 24px;
-			font-weight: bold;
-			color: #404fc3;
+		a {
+			display: inline-block;
+			width: 100%;
+			height: 100%;
+			img {
+				display: inline-block;
+				width: 100%;
+				height: 100%;
+			}
 		}
 		
 	}

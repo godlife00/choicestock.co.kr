@@ -200,21 +200,18 @@
   top: 2px;
 }
 .v_signalStreng.globalStock #header .event2024_payment_sub {
-  background-color: #161b23;
-  padding: 15px 15px;
   margin-left: -16px;
   margin-right: -16px;
 }
-.v_signalStreng.globalStock #header .event2024_payment_sub p.txt01 {
-  font-size: 18px;
-  font-weight: bold;
-  color: #c7cbe9;
+.v_signalStreng.globalStock #header .event2024_payment_sub a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
 }
-.v_signalStreng.globalStock #header .event2024_payment_sub p.txt02 {
-  margin-top: 10px;
-  font-size: 24px;
-  font-weight: bold;
-  color: #404fc3;
+.v_signalStreng.globalStock #header .event2024_payment_sub a img {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
 }
 
 #footer {
@@ -31697,17 +31694,17 @@ body.v_signalStreng {
 }
 
 .v_signalStreng.globalStock .signalpop.event2024_payment .content {
-  padding: 20px 0 0;
-  background-image: linear-gradient(to bottom, rgba(77, 110, 228, 0), rgba(77, 110, 228, 0.3) 180%, rgba(77, 110, 228, 0.2));
+  background-color: #141933;
 }
 .v_signalStreng.globalStock .signalpop.event2024_payment .content .info_txt {
   text-align: center;
   padding: 0;
   height: 270px;
-  background: none;
-  background: url("/img/monthly_payment.svg") no-repeat center 30px;
+  background: url("/img/banner/event_mainBtm_240115.png") no-repeat center 0;
+  background-size: contain;
 }
 .v_signalStreng.globalStock .signalpop.event2024_payment .content .info_txt p {
+  display: none;
   text-align: center;
 }
 .v_signalStreng.globalStock .signalpop.event2024_payment .content .info_txt p.txt01 {
@@ -31723,23 +31720,32 @@ body.v_signalStreng {
 }
 .v_signalStreng.globalStock .signalpop.event2024_payment .content .btn_area {
   padding-bottom: 35px;
+  text-align: center;
 }
 .v_signalStreng.globalStock .signalpop.event2024_payment .content .btn_area .btn {
-  position: relative;
-  display: block;
-  width: 50%;
-  margin: 0 auto;
-  padding: 13px 10px;
-  border-radius: 5px;
-  background-color: #404FC3;
-  font-size: 15px;
+  display: inline-block;
+  margin: 25px auto 0;
+  width: calc(100% - 50px);
+  padding: 20px 15px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 8px;
+  background-color: #404fc3;
+  font-size: 1rem;
+  line-height: 1.19;
   text-align: center;
   color: #fff;
+}
+.v_signalStreng.globalStock .signalpop.event2024_payment .content .btn_area .btn b {
+  color: #f0cc09;
 }
 .v_signalStreng.globalStock .signalpop.event2024_payment .ftr {
   display: flex;
   justify-content: space-between;
   height: 47px;
+  background-color: #141933;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 .v_signalStreng.globalStock .signalpop.event2024_payment .ftr .btn_close {
   font-size: 13px;
@@ -31765,7 +31771,7 @@ body.v_signalStreng {
   top: 0;
   height: 22px;
   width: 2px;
-  background-color: #333;
+  background-color: #fff;
 }
 .v_signalStreng.globalStock .signalpop.event2024_payment .ftr .btn_close::before {
   transform: rotate(45deg);

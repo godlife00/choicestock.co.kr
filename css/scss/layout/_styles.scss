@@ -31983,16 +31983,16 @@ body.v_signalStreng {
 
 .v_signalStreng.globalStock .signalpop.event2024_payment {	
 	.content {
-		padding: 20px 0 0;
-		background-image: linear-gradient(to bottom, rgba(77, 110, 228, 0), rgba(77, 110, 228, 0.3) 180%, rgba(77, 110, 228, 0.2));
+		background-color: #141933;		
 
 		.info_txt {
 			text-align: center;
 			padding: 0;
-			height: 270px;
-			background: none;
-			background: url('/img/monthly_payment.svg') no-repeat center 30px;
+			height: 270px;			
+			background: url('/img/banner/event_mainBtm_240115.png') no-repeat center 0;
+			background-size: contain;
 			p {
+				display: none;
 				text-align: center;
 			}
 			
@@ -32012,27 +32012,33 @@ body.v_signalStreng {
 
 		.btn_area {
 			padding-bottom: 35px;
-			.btn {
-				position: relative;
-				display: block;
-				width: 50%;
-				margin: 0 auto;
-				padding: 13px 10px;
-				border-radius: 5px;
-				background-color: #404FC3;
-				font-size: 15px;
+			text-align: center;
+			.btn {				
+				display: inline-block;
+				margin: 25px auto 0;
+				width: calc(100% - 50px);
+				padding: 20px 15px;
+				box-sizing: border-box;
+				border: none;
+				border-radius: 8px;
+				background-color: #404fc3;
+				font-size: 1rem;
+				line-height: 1.19;
 				text-align: center;
 				color: #fff;
+				b {
+					color: #f0cc09;
+				}
 			}
 		}
 	}
-	
-	
-	
 	.ftr {
 		display: flex;
 		justify-content: space-between;
 		height: 47px;
+		background-color: #141933;
+		border-top-left-radius: 20px;
+		border-top-right-radius: 20px;
 
 
 		.btn_close {
@@ -32061,7 +32067,7 @@ body.v_signalStreng {
 			top: 0;
 			height: 22px;
 			width: 2px;
-			background-color: #333;
+			background-color: #fff;
 		}
 		
 		.btn_close::before {
