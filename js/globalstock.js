@@ -170,27 +170,30 @@ $(document).ready(function () {
     }
     customizeAndAppendList();  // 종목검색 개요탭 등 상단 고정 종목명 함수 실행
 
-    // 스크롤시 헤더 상단 고정 스크립트    
-    var headerHeight = $('#header').innerHeight();
-    var headerOffset = $('#header .headerTop').offset().top;    
-    window.addEventListener('scroll', function () {
-        var header = document.getElementById('header');
-        if (window.scrollY >= 160) {            
-            $('.list.recom').addClass('fix_data'); 
-        } else {            
-            $('.list.recom').removeClass('fix_data'); 
-        }
-    });       
-    window.addEventListener('scroll', function () {
-        var header = $('#header');        
-        if (window.scrollY > headerOffset) {            
-            header.addClass('fix_header');            
-            $('#container').css('padding-top', headerHeight);
-        } else {
-            header.removeClass('fix_header');          
-            $('#container').css('padding-top','0');  
-        }
-    });
+    if ($('#header').length) {
+        // 스크롤시 헤더 상단 고정 스크립트    
+        var headerHeight = $('#header').innerHeight();
+        var headerOffset = $('#header .headerTop').offset().top;    
+        window.addEventListener('scroll', function () {
+            var header = document.getElementById('header');
+            if (window.scrollY >= 160) {            
+                $('.list.recom').addClass('fix_data'); 
+            } else {            
+                $('.list.recom').removeClass('fix_data'); 
+            }
+        });
+
+        window.addEventListener('scroll', function () {
+            var header = $('#header');        
+            if (window.scrollY > headerOffset) {            
+                header.addClass('fix_header');            
+                $('#container').css('padding-top', headerHeight);
+            } else {
+                header.removeClass('fix_header');          
+                $('#container').css('padding-top','0');  
+            }
+        });
+    };
 
     // 미국주식창 검색바 하단 이벤트 배너 있는 경우 처리
     if ($('.search_top .event_banner').length) {
