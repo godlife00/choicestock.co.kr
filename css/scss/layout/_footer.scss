@@ -1,0 +1,163 @@
+// 푸터
+#footer {
+	background: #e0e4e9;	
+	margin-top: 20px;
+
+	&.fix_footer {
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		box-sizing: border-box;
+		z-index: 91;
+		width: 100%;
+	}
+
+	.notice {
+		padding: 24px 30px 80px;		
+		.service_info {
+			p {
+				line-height: 1.6;
+				letter-spacing: -0.5px;
+				color: #808993;
+				font-size: pxTorem(10px);	
+			}			
+		}
+		.dataLink {
+			text-align: left;
+			margin-top: 5px;
+			color: #848c96;
+			a {
+				font-size: pxTorem(10px);	
+				color: #848c96;
+				text-decoration: underline;
+			}
+		}
+	}
+
+	.terms_list {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		gap: 7px 5px;
+		width: 100%;
+		margin-top: 25px;
+
+		li {
+			flex: 1 1 40%;
+			display: block;
+			width: 100%;
+			box-sizing: border-box;
+
+			&:nth-child(2),
+			&:nth-child(4) {
+				padding-left: 50px;
+			}
+		}
+
+		li, li a {
+			font-size: pxTorem(13px);
+			line-height: 1.31;
+			text-align: left;
+			color: #49525c;
+		}
+	}
+
+	.foot_info {		
+		margin-top: 24px;
+
+		.info_tel_box {
+			display: flex;
+			flex-wrap: wrap;
+			align-content: center;
+		}	
+		.info_tel_box .cs {
+			display: block;
+			word-break: break-all;
+			word-wrap: break-word;			
+			font-size: pxTorem(12px);
+			line-height: 1.4;
+			color: #808993;
+			a {
+				color: #808993;
+				text-decoration: underline;
+				margin-right: 3px;
+				font-size: pxTorem(13px);
+			}
+		}		
+	}
+
+	.copyright {
+		margin-top: 20px;
+		color: #808993;
+		font-size: pxTorem(11px);
+		line-height: 1.55;
+		letter-spacing: -0.55px;		
+		word-break: break-all;
+    	word-wrap: break-word;
+		a {
+			color: #808993;
+			font-size: pxTorem(11px);
+		}
+		strong {
+			font-weight: normal;
+		}
+		i {
+			vertical-align: top;
+			position: relative;
+			top: 3px;
+			margin: 0 3px;
+			display: inline-block;
+			width: 1px;
+			height: 10px;
+			border-right: 1px solid #c2c8ce;
+		}
+	}
+
+	.family_site {
+		display: flex;
+		align-items: center;
+		gap: 0 8px;
+		margin-top: 15px;
+		font-size: pxTorem( 11px);
+		color: #808993;
+		a {			
+			position: relative;
+			font-size: pxTorem( 11px);
+			line-height: 1.55;
+			letter-spacing: -0.55px;
+			color: #808993;
+			text-decoration: underline;					
+			+ i {
+				display: inline-block;
+				width: 1px;
+				height: 10px;
+				background-color: #c2c8ce;
+			}
+		}		
+	}	
+}
+
+.certification {
+	position: relative;
+	top: 36px; 
+	padding: 19px 15px;
+	background-color: #F5F5F9;
+
+	ul {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: space-evenly;
+		gap: 10px 12px;
+	}	
+	ul li {
+		flex: 1 1 30%;
+		text-align: center;
+	}	
+	ul li img {
+		display: inline-block;
+		width: auto;
+		max-height: 22px;
+	}
+}

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <g id="chart_on" transform="translate(-3113 -38)">
+    <rect id="사각형_4397" data-name="사각형 4397" width="20" height="20" transform="translate(3113 38)" fill="#aaa" opacity="0"/>
+    <g id="candlestick-chart" transform="translate(3109 38)">
+      <path id="패스_18543" data-name="패스 18543" d="M9,5V9" transform="translate(0 -1)" fill="none" stroke="#404fc3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <rect id="사각형_7752" data-name="사각형 7752" width="6" height="6" rx="1" transform="translate(6 9)" fill="none" stroke="#404fc3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="패스_18544" data-name="패스 18544" d="M9,15v2" transform="translate(0 1)" fill="none" stroke="#404fc3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="패스_18545" data-name="패스 18545" d="M17,3V5" transform="translate(2 -1)" fill="none" stroke="#404fc3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <rect id="사각형_7753" data-name="사각형 7753" width="6" height="8" rx="1" transform="translate(16 5)" fill="none" stroke="#404fc3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="패스_18546" data-name="패스 18546" d="M17,13v3" transform="translate(2 1)" fill="none" stroke="#404fc3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    </g>
+  </g>
+</svg>

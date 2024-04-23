@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="109" height="26" viewBox="0 0 109 26">
+  <g id="그룹_2458" data-name="그룹 2458" transform="translate(-286.694 -1508)">
+    <path id="패스_4379" data-name="패스 4379" d="M13,0H96a13,13,0,0,1,0,26H13A13,13,0,0,1,13,0Z" transform="translate(286.694 1508)" fill="#bec6d0"/>
+    <text id="카카오톡_문의" data-name="카카오톡 문의" transform="translate(320.694 1524)" fill="#fff" font-size="10" font-family="SpoqaHanSansNeo-Regular, Spoqa Han Sans Neo"><tspan x="0" y="0">카카오톡 문의</tspan></text>
+    <g id="그룹_2453" data-name="그룹 2453">
+      <g id="그룹_455" data-name="그룹 455" transform="translate(304.049 1514.533)">
+        <g id="그룹_436" data-name="그룹 436" transform="translate(0 0)">
+          <g id="그룹_435" data-name="그룹 435" transform="translate(0 0)">
+            <path id="패스_649" data-name="패스 649" d="M450.363,444.552s.728.076,1.105.076c3.5,0,6.337-2.238,6.337-5s-2.837-5-6.337-5-6.337,2.239-6.337,5a4.809,4.809,0,0,0,2.752,4.124s-.133.97-.405,2.425c0,0-.054.373.3.187S449.341,445.33,450.363,444.552Z" transform="translate(-445.131 -434.628)" fill="#808993"/>
+          </g>
+        </g>
+      </g>
+      <rect id="사각형_2649" data-name="사각형 2649" width="4" height="12" transform="translate(316.695 1514)" fill="none" opacity="0.5"/>
+    </g>
+  </g>
+</svg>

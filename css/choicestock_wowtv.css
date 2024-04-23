@@ -1,0 +1,3862 @@
+@charset "utf-8";
+
+.globalStock.wowtv .sub_briefing .sub_mid.research_board {
+	margin:0 auto;
+}
+.globalStock.wowtv .sub_briefing .sub_mid.research_board .set {
+	text-align:right;
+	padding:0 15px;
+}
+.globalStock.wowtv .sub_briefing .sub_mid.research_board .set span {
+	color:#939393;
+	position:relative;
+	padding:0 10px 0 10px;
+	font-size:0.75rem;
+}
+.globalStock.wowtv .sub_briefing .sub_mid.research_board .set span.active {
+	color:#404fc3;
+	font-weight:bold;
+}
+.globalStock.wowtv .sub_briefing .sub_mid.research_board .set span:last-child {
+	padding-right:0;
+}
+.globalStock.wowtv .sub_briefing .sub_mid.research_board .set span:first-child::before {
+	content:"";
+	position:absolute;
+	right:-3px;
+	top:2px;
+	display:inline-block;
+	width:1px;
+	height:12px;
+	border-right:1px solid #BEBCCB;
+}
+.globalStock.wowtv .sub_briefing .sub_mid.research_board .lst_type {
+	width:calc(100% - 30px);
+	margin:0 auto 30px;
+}
+.globalStock.wowtv .sub_briefing .sub_mid.research_board .lst_type li {
+	clear:both;
+	_height:0;
+	_font-size:0;
+	padding:15px 0;
+	border-bottom:1px solid #E0E4E9;
+}
+.globalStock.wowtv .sub_briefing .sub_mid.research_board .lst_type li:first-child {	
+	padding-top: 15px;
+}
+.globalStock.wowtv .sub_briefing .sub_mid.research_board .lst_type2 {
+	overflow:hidden;
+}
+.globalStock.wowtv .sub_briefing .sub_mid.research_board .lst_type2 dt {
+	padding:5px 0;
+	font-size:14px
+}
+.globalStock.wowtv .sub_briefing .sub_mid.research_board .lst_type2 dt.tit {
+	margin-top:5px;
+	margin-left:95px;
+	margin-bottom:7px;
+	color:#939393;
+	font-size:1rem;
+}
+.globalStock.wowtv .sub_briefing .sub_mid.research_board .lst_type2.none_img dt.tit {
+	margin-left:0;
+}
+.globalStock.wowtv .sub_briefing .sub_mid.research_board .lst_type2 dt.tit a,
+.globalStock.wowtv .sub_briefing .sub_mid.research_board .lst_type2 dt.tit strong {
+	color:#333;
+	font-weight:300;
+	font-size:1rem;
+	line-height: normal;
+}
+.globalStock.wowtv .sub_briefing .sub_mid.research_board .lst_type2.lst_lock dt.tit strong {		
+	background:url('../img/prm_tabsLock.svg') no-repeat 0 3px;
+}
+.globalStock.wowtv .sub_briefing .sub_mid.research_board .lst_type2 dt.tit a {
+	display:inline-block;
+	width:100%;
+	margin-bottom:7px;
+	display:inline-block;
+	display:-webkit-box;
+	overflow:hidden;
+	height:2.8em;
+	line-height:1.4em;
+	box-sizing:border-box;
+	text-overflow:ellipsis;
+	-webkit-line-clamp:2;
+	-webkit-box-orient:vertical;
+	word-wrap:break-word;
+}
+.globalStock.wowtv .sub_briefing .sub_mid.research_board .lst_type2 dt.tit .day {
+	color:#939393;
+	font-size:0.75rem;
+}
+.globalStock.wowtv .sub_briefing .sub_mid.research_board .lst_type2 dd.photo {
+	float:left;
+	margin:-80px 10px 0 0;
+	color:#fff;
+	text-align:center;
+}
+.globalStock.wowtv .sub_briefing .sub_mid.research_board .lst_type2 dd {
+	line-height:16px
+}
+.globalStock.wowtv .sub_briefing .sub_mid.research_board .lst_type2 dd img,
+.globalStock.wowtv .sub_briefing .sub_mid.research_board .lst_type2 dd.photo {
+	border:none;
+	display:inline-block;
+	width:80px;
+	height:71px;
+	background:#fff url('../img/face_noimg.png') no-repeat 0 0;
+	background-size:cover;
+	border:1px solid #E0E4E9;
+	border-radius:10px;
+}
+.globalStock.wowtv .sub_briefing .sub_mid.research_board .lst_type2 a {
+	color:#333;
+	display:inline-block;
+}
+.globalStock.wowtv .sub_briefing .sub_mid.research_board .lst_type2 a:hover {
+	text-decoration: underline
+}
+.globalStock.wowtv .alarmArea .alarmList li a {
+	display:block;
+	border-bottom:1px solid #E0E4E9;
+	padding:18px 15px;
+}
+.globalStock.wowtv .alarmArea .alarmList li a:first-child {
+	padding-top: 18px;
+}
+.globalStock.wowtv .alarmArea .alarmList li span.title {
+	display:inline-block;
+	width:calc(100% - 100px);
+	color:#333;
+	font-size:1rem;
+	font-weight: normal;
+}
+.globalStock.wowtv .alarmArea .alarmList li span.day {
+	color:#939393;
+	display:inline-block;
+	width:95px;
+	text-align:right;
+	font-size:0.75rem;
+}
+.globalStock.wowtv .alarmArea .alarmList li span.sum {
+	color:#939393;
+	display:block;
+	margin-top:20px;
+	line-height:normal;
+	font-size:0.9rem;
+	font-weight: 300;
+	padding: 0;
+}
+.globalStock.wowtv .alarmArea .alarmList li span.sum span {
+	color: #939393;
+}
+
+/* 한국경제(한경), 주식창 css */
+.globalStock.wowtv .purchase_area {	
+	background: rgba(255, 53, 36, 0.8);
+	-webkit-backdrop-filter: blur(2px) brightness(68%);
+	backdrop-filter: blur(2px) brightness(68%);	
+}
+.globalStock.wowtv .main_mid.note_area .lst_type2 dd.photo {	
+	margin:-77px 10px 0 0;	
+}
+.globalStock.wowtv .sub_recom .sub_mid.bandchart_more p i {
+	background: url('../img/wowtv/icon_awesomewowtv.svg') no-repeat center center;		
+}
+.globalStock.wowtv .sub_recom .sub_mid.eventPicks_area .bandchart_sume .box.info p i {
+	background: url('../img/wowtv/icon_awesomewowtv.svg') no-repeat center center;		
+}
+.globalStock.wowtv .sub_recom .sub_top.view .chart_area .chartData.fix_data::before {
+	background-color:#014B8D;
+}
+.globalStock.wowtv .sub_recom .sub_mid .tabsArea .tab_container .tab_content .catalyst .bandchart_more p a {
+	font-weight: normal !important;
+	color: #014B8D;
+}
+.globalStock.wowtv .sub_recom .sub_mid .tabsArea .tab_container .tab_content .catalyst .bandchart_more p a i {
+	background: url('../img/wowtv/icon_awesomewowtv.svg') no-repeat center center;	
+}
+.globalStock.wowtv .sub_recom .sub_mid .tabsArea .tab_container .tab_content .more {
+	background-color:#014B8D;
+}
+.globalStock.wowtv .sub_recom .sub_mid .tabsArea .tab_container .tab_content .charm_num {
+	background:#F6F7FA;
+}
+.globalStock.wowtv .sub_search .tabs_5.prm_tabs li:nth-child(4){	
+	background: url('../img/prm_tabsLock.svg') no-repeat calc(100% - 8px) center;
+	background-size:8px auto;
+}
+.globalStock.wowtv .sub_search .tabs_5.prm_tabs li:nth-child(5){	
+	background: url('../img/prm_tabsLock.svg') no-repeat calc(100% - 8px) center;
+	background-size: 8px auto;
+}
+@media (min-width:320px) and (max-width:374px) {
+	.globalStock.wowtv .sub_search .tabs_5.prm_tabs li:nth-child(4) {		
+		background: url('../img/prm_tabsLock.svg') no-repeat calc(100% - 4px) center;
+		background-size:8px auto;
+	}	
+	.globalStock.wowtv .sub_search .tabs_5.prm_tabs li:nth-child(5){		
+		background: url('../img/prm_tabsLock.svg') no-repeat calc(100% - 4px) center;
+		background-size: 8px auto;
+	}
+}
+.globalStock.wowtv .sub_search .sub_mid .tab_diagnosis_area .tableRanking.table_alloca {
+	width:calc(100% - 120px);
+}
+.globalStock.wowtv .first_month_3300.md-modal #setting .pop_header {	
+	background:#014b8d url('../img/bg_pop_first_month.svg') no-repeat right bottom;
+}
+.globalStock.wowtv .first_month_3300.md-modal #setting .pop_header .sub_top .h2_title span strong {
+	color:#ffe200;	
+}
+.globalStock.wowtv .first_month_3300.md-modal #setting .pop_con {
+	background-color: #fff;
+}
+.globalStock.wowtv .first_month_3300.md-modal #setting .pop_con .tableRanking.type_compare th span,
+.globalStock.wowtv .first_month_3300.md-modal #setting .pop_con .tableRanking.type_compare td span {
+	color:#82929f;	
+}
+.globalStock.wowtv .first_month_3300.md-modal #setting .pop_con .tableRanking.type_compare td span b {
+	color:#82929f;	
+}
+.globalStock.wowtv .first_month_3300.md-modal #setting .pop_con .tableRanking.type_compare .top_th span {
+	color: #014b8d;
+}
+.globalStock.wowtv .first_month_3300.md-modal #setting .pop_con .tableRanking.type_compare .top_th:nth-child(2) span {
+	color:#82929f;	
+}
+.globalStock.wowtv .first_month_3300.md-modal #setting .pop_btm {
+	background-color:#E3F3FF;
+}
+.globalStock.wowtv .first_month_3300.md-modal #setting .pop_btm .btn_save {	
+	background:#014b8d;
+	border: none;
+}
+.globalStock.wowtv .first_month_3300.md-modal #setting .pop_btm .btn_save b {
+	color:#ffe200;	
+}
+.globalStock.wowtv .first_month_3300.md-modal #setting .pop_btm .link_menu li:nth-child(1) a {
+	font-size: 12px;
+	font-weight: normal;
+	text-decoration: underline;
+	color: #82929F;
+	margin-right: 15px;
+	padding-right: 10px;
+	position: relative;
+}
+.globalStock.wowtv .first_month_3300.md-modal #setting .pop_btm .link_menu li:nth-child(1) a::before {	
+	content: '';
+	width: 5px;
+	height: 5px;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: auto;
+	right: 0;
+	margin: auto;	
+	right: 0;
+	display: inline-block;
+	border-top: 1px solid #82929F;
+	border-right: 1px solid #82929F;
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);	
+}
+
+.globalStock.wowtv .wow_secession.md-modal #setting,
+.globalStock.wowtv .wow_secession2.md-modal #setting {
+	padding: 0;
+    border: none;
+}
+.globalStock.wowtv .wow_secession.md-modal #setting .pop_header,
+.globalStock.wowtv .wow_secession2.md-modal #setting .pop_header {	
+	background-color: #18355f;	
+	padding: 10px 10px 15px;    
+    background-size: 105px 100px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.globalStock.wowtv .wow_secession.md-modal #setting .pop_header .sub_top .h2_title,
+.globalStock.wowtv .wow_secession2.md-modal #setting .pop_header .sub_top .h2_title {
+	color: #fff;
+    font-size: 1.125rem;
+    font-weight: bold;
+	text-align: center;
+    line-height: 1.5;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+.globalStock.wowtv .wow_secession.md-modal #setting .pop_con,
+.globalStock.wowtv .wow_secession2.md-modal #setting .pop_con {
+    padding: 14px 18px 15px;
+	background-color: #fff;
+}
+.globalStock.wowtv .wow_secession.md-modal #setting .pop_con .use_list_scr,
+.globalStock.wowtv .wow_secession2.md-modal #setting .pop_con .use_list_scr {
+	overflow: auto;
+	overflow-x: hidden;
+	max-height: 300px;
+}
+.globalStock.wowtv .wow_secession.md-modal #setting .pop_con .sum_title,
+.globalStock.wowtv .wow_secession2.md-modal #setting .pop_con .sum_title {
+	padding: 9px 2px 14px;
+	color: #014b8d;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 1.4;
+	text-align: left;
+	border-bottom: 1px solid #E0E4E9;
+}
+.globalStock.wowtv .wow_secession.md-modal #setting .pop_con .sum_txt,
+.globalStock.wowtv .wow_secession2.md-modal #setting .pop_con .sum_txt {
+	padding: 24px 2px 0;
+	color: #014b8d;
+	font-size: 16px;
+	font-weight: bold;	
+}
+.globalStock.wowtv .wow_secession.md-modal #setting .pop_con .use_list,
+.globalStock.wowtv .wow_secession2.md-modal #setting .pop_con .use_list {
+	margin-top: 15px;
+}
+.globalStock.wowtv .wow_secession.md-modal #setting .pop_con .use_list li,
+.globalStock.wowtv .wow_secession2.md-modal #setting .pop_con .use_list li {
+	position: relative;
+	padding-left: 20px;
+	font-size: 0.9rem;
+    line-height: 29px;
+	color: #82929f;	
+	font-weight: bold;
+
+}
+.globalStock.wowtv .wow_secession.md-modal #setting .pop_con .use_list li::before,
+.globalStock.wowtv .wow_secession2.md-modal #setting .pop_con .use_list li::before {
+	content: '';
+	position: absolute;	
+	left: 7px;
+	top: 12px;
+	display: inline-block;
+	width: 4px;
+	height: 1px;
+	border-bottom: 1px solid #82929f;
+	
+}
+.globalStock.wowtv .wow_secession.md-modal #setting .pop_btm,
+.globalStock.wowtv .wow_secession2.md-modal #setting .pop_btm {	
+    padding: 9px 20px 18px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: #E3F3FF;
+}
+.globalStock.wowtv .wow_secession.md-modal #setting .pop_btm .payBtn,
+.globalStock.wowtv .wow_secession2.md-modal #setting .pop_btm .payBtn {
+    text-align: center;
+    margin-top: 10px;
+    padding: 0 15px;
+}
+.globalStock.wowtv .wow_secession.md-modal #setting .pop_btm .btn,
+.globalStock.wowtv .wow_secession2.md-modal #setting .pop_btm .btn {
+    color: #fff;
+    font-size: 0.9375rem;
+    border-radius: 5px;
+    position: relative;
+    width: calc(100% / 2 + 120px);
+}
+.globalStock.wowtv .wow_secession.md-modal #setting .pop_btm .btn_save,
+.globalStock.wowtv .wow_secession2.md-modal #setting .pop_btm .btn_save {
+    background: #18355f;
+    border: none;
+}
+.globalStock.wowtv .wow_secession.md-modal #setting .pop_btm .btn_save b,
+.globalStock.wowtv .wow_secession2.md-modal #setting .pop_btm .btn_save b {
+	color: #ffe200;	
+}
+
+.globalStock.wowtv .member_clear:before {
+    display: block;
+    content: "";
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .15);
+    z-index: 998;
+}
+.globalStock.wowtv .member_clear .layerBox {
+	position: relative;
+	position: fixed;
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%, -10%);
+    background: #fff;
+    z-index: 999;
+    width: 95%;
+    box-sizing: border-box;
+    max-width: 400px;
+}
+.globalStock.wowtv .member_clear .phone_Input {
+	position: absolute;
+	left: 23%;
+    bottom: 11.4%;
+    width: 39%;
+    height: 5.5%;
+    text-align: right;
+    font-size: 13px;
+    padding: 5px 7px;
+    box-sizing: border-box;
+    color: #333;    	
+	font-weight: bold;		
+	border: 1px solid #E0E4E9;
+}
+.globalStock.wowtv .member_clear .phone_box #timer {
+	position: absolute;
+	left: 49%;
+    bottom: 12.4%;
+	font-size: 13px;
+    padding: 5px 7px;
+    box-sizing: border-box;
+    color: #FF3178;    	
+	font-weight: bold;
+}
+.globalStock.wowtv .member_clear .layerBox .btn_area a {
+	display: inline-block;	
+	position: absolute;	
+	box-sizing: border-box;
+	font-size: 0;	
+
+}
+.globalStock.wowtv .member_clear .layerBox .btn_area a.btn_letter {
+	top: auto !important;
+	left: auto !important;
+	right: 6%;
+    bottom: 19.5%;
+    width: 29%;
+    height: 5%;
+}
+.globalStock.wowtv .member_clear .layerBox .btn_area a.btn_re_letter {
+	top: auto !important;
+	left: auto !important;
+	right: 6%;
+    bottom: 11.5%;
+    width: 29%;
+    height: 5%;
+}
+.globalStock.wowtv .member_clear .layerBox .btn_area a.btn_again {
+	top: auto !important;
+	left: auto !important;	
+}
+.globalStock.wowtv .member_clear .layerBox .img img {
+	display: inline-block;
+	width: 100%;
+}
+.globalStock.wowtv .member_again:before {
+    display: block;
+    content: "";
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .15);
+    z-index: 998;
+}
+.globalStock.wowtv .member_again .layerBox {
+	position: relative;
+	position: fixed;
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%, -10%);
+    background: #fff;
+    z-index: 999;
+    width: 95%;
+    box-sizing: border-box;
+    max-width: 400px;
+}
+.globalStock.wowtv .member_again .layerBox .stop_day {
+	position: absolute;
+    left: 48%;
+    bottom: 22.4%;
+	font-weight: bold;
+	font-size: 0.9375rem;
+}
+
+.globalStock.wowtv .member_again .layerBox .btn_area {
+	display: flex;
+
+}
+.globalStock.wowtv .member_again .layerBox .btn_area a {
+	display: inline-block;		
+	box-sizing: border-box;
+	font-size: 0;	
+
+}
+.globalStock.wowtv .member_again .layerBox .btn_area a.btn_again {
+	top: auto !important;
+	left: auto !important;	
+}
+.globalStock.wowtv .member_again .layerBox .img img {
+	display: inline-block;
+	width: 100%;
+}
+
+
+.globalStock.wowtv .sub_research .sub_mid.research_board .lst_type li {
+	clear:both;
+	background: none;
+	_height:0;
+	_font-size:0;
+	padding:8px 0;
+	border-bottom:1px solid #E0E4E9;
+}
+.globalStock.wowtv .sub_research .sub_mid.research_board .lst_type2 dt.tit {	
+	margin-top: 0;
+	padding-top: 20px;	
+}
+.globalStock.wowtv .sub_research .sub_mid.research_board .lst_type2 dd.photo {	
+	margin:-77px 10px 0 0;
+	background-color: #fff;
+	background: url('../img/wowtv/noimg_wowtv.svg') no-repeat center center;
+}
+.globalStock.wowtv .sub_research .sub_mid.research_board.news_mid {	
+	clear: both;
+	margin: 0;	
+	overflow: hidden;
+}
+.globalStock.wowtv .sub_research .sub_mid.research_board.news_mid .tab_content {
+	padding: 0;
+}
+.globalStock.wowtv .sub_research .sub_mid.research_board.news_mid .tab_content .lst_type {
+	border: none;
+	margin: 0 auto 30px;
+}
+.globalStock.wowtv .sub_research .sub_mid.research_board.news_mid .tab_content .lst_type.news_list li {
+	box-sizing: border-box;
+	padding: 13px 0 7px;
+}
+.globalStock.wowtv .sub_research .sub_mid.research_board.news_mid .tab_content .lst_type.news_list .lst_type2 dt.tit {
+	padding: 5px 0 0 0;	
+	margin: 0 0 0 96px;
+}
+.globalStock.wowtv .sub_research .sub_mid.research_board.news_mid .tab_content .lst_type2 dt.tit {
+	padding-top: 20px;
+}
+.globalStock.wowtv .sub_research .sub_mid.research_board.news_mid .tab_content .lst_type2 span.wtr_rep,
+.globalStock.wowtv .sub_research .sub_mid.research_board.news_mid .tab_content .lst_type2 span.writer {
+	display: inline-block;	
+	font-size: 0.75rem;
+	color: #82929f;	
+	margin-left: 3px;
+	margin-top: 6px;
+	padding-right: 12px;
+	position: relative;
+}
+.globalStock.wowtv .sub_research .sub_mid.research_board.news_mid .tab_content .lst_type2 span.wtr_rep::before,
+.globalStock.wowtv .sub_research .sub_mid.research_board.news_mid .tab_content .lst_type2 span.writer::before {
+	content: "";
+    position: absolute;
+    right: 3px;
+    top: 0;
+    display: inline-block;
+    width: 1px;
+    height: 12px;    
+    background-color: #E1E5EF;
+}
+.globalStock.wowtv .sub_research .sub_mid.research_board.news_mid .tab_content .lst_type2 span.reg_day {	
+	display: inline-block;	
+	font-size: 0.75rem;		
+	color: #82929F;
+	margin-top: 6px;
+}
+
+.globalStock.wowtv .sub_research .sub_mid.research_board .lst_type.video_list .video_box > a .video_title {		
+	padding-top: 0;
+	height: auto;
+	max-height: 34px;
+}
+.globalStock.wowtv .sub_research .sub_mid.research_board .lst_type.video_list .video_box > a .video_title span {
+	height: auto;
+	max-height: 2.8em
+}
+.globalStock.wowtv .sub_research .sub_mid.research_board .lst_type.video_list .video_box .reg_day {		
+	font-style: normal;
+	display: inline-block;	
+    font-size: 0.75rem;
+    color: #82929F;
+    margin-top: 3px;
+}
+
+.globalStock.wowtv .sub_research .popularity .lst_type2 dd img,
+.globalStock.wowtv .sub_research .popularity .lst_type2 dd.photo {	
+	background-color: #fff;
+	background:url('../img/wowtv/noimg_wowtv.svg') no-repeat 0 0;	
+}
+.globalStock.wowtv .sub_research .view_con .mid .iframe_video {
+	margin: 0;
+	background: url('../img/wowtv/bg_wow_video.jpg') no-repeat center center;
+    background-size: cover;		
+	color: #333;
+    font-size: 0.9375rem;
+    line-height: 26px;
+    margin-bottom: 30px;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+.globalStock.wowtv .sub_briefing .sub_top {
+	border-top: 1px solid #E1E5EF;
+}
+.globalStock.wowtv .sub_search .sub_mid .bandchart_more {	
+	border-bottom: 1px solid #e1e5ef;	
+	padding-bottom: 15px;
+}
+.globalStock.wowtv .sub_search .sub_mid .bandchart_more p {		
+	color: #014b8d;	
+}
+.globalStock.wowtv .sub_search .sub_mid .bandchart_more .more {	
+	color: #014b8d;		
+}
+.globalStock.wowtv .sub_search .sub_mid .bandchart_sume {
+	margin-top: 0;
+}
+.globalStock.wowtv .sub_search .sub_mid .bandchart_sume .box {	
+	border: none;
+	background-color: #f2faff;
+}
+.globalStock.wowtv .sub_search .sub_mid .bandchart_sume .box .title {
+	color: #014b8d;
+}
+.globalStock.wowtv .sub_search .sub_mid .bandchart_sume .youtube_link {	
+	color: #014b8d;		
+}
+.globalStock.wowtv .sub_search .sub_mid .eventsum_area {
+	margin-top: 15px;
+}
+.globalStock.wowtv .sub_search .sub_mid .eventsum_area .tableData {
+	margin-top: 40px;
+	padding-top: 10px;
+	padding-bottom: 64px;
+	background: #F6F7FA;
+}
+.globalStock.wowtv .sub_search .sub_mid .eventsum_area .tableRanking.sum_table {	
+	margin-bottom: 0;
+}
+.globalStock.wowtv {
+	background: #fff;
+}
+.globalStock.wowtv .remark .txt_filter i {
+	background-color: #82929F;		
+}
+.globalStock.wowtv .sub_search .search_top .data_area.fix_data {
+	background-color: #014b8d;
+}
+.globalStock.wowtv #header,
+.globalStock.wowtv .main_searching .searchArea .searchInput,
+.globalStock.wowtv .main_mid.event_recipe .tab_content .tableth_box,
+.globalStock.wowtv .main_mid.event_recipe table.tableRanking,
+.globalStock.wowtv .main_mid.game_area .list_area .area,
+.globalStock.wowtv .ptfo_datatable,
+.globalStock.wowtv .sub_search .sub_mid.tabs_area .alloca_info .table_area,
+.globalStock.wowtv .sub_attract .sub_top .txt_box,
+.globalStock.wowtv .sub_recipe .sub_top .txt_box,
+.globalStock.wowtv .sub_recipe .sub_mid.recipe_tabs .box_tabs li,
+.globalStock.wowtv .sub_recipe .sub_mid.recipe_view .recipe_area .area,
+.globalStock.wowtv .sub_research .txt_box,
+.globalStock.wowtv .sub_recom .sub_mid .tabsArea .tab_container .tab_content .catalyst,
+.globalStock.wowtv .sub_top .txt_box,
+.globalStock.wowtv .sub_recom .sub_mid.eventPicks_area .chart_area,
+.globalStock.wowtv .sub_portfolio .detail_data,
+.globalStock.wowtv .sub_search .latest_results .tabsArea table.tableRanking,
+.globalStock.wowtv .sub_search .latest_results .tabsArea .tab_container .txt_box,
+.globalStock.wowtv .sub_search .latest_results .tabsArea .onestep_guide,
+.globalStock.wowtv .sub_search .sub_mid.tabs_area .compet_chart_uses
+{
+	background: #f6f7fa;
+}
+
+/* 한경 주식창 color */
+.globalStock.wowtv .sub_search .sub_mid.outline_box .box .charmNum_box .charm_average,
+.globalStock.wowtv .sub_search .sub_mid.outline_box .box .attention_box .game_tip ul li span,
+.globalStock.wowtv .sub_search .sub_mid.outline_box .box .data_attainment ul li,
+.globalStock.wowtv .sub_search .sub_mid.outline_box .box .charm_ranking,
+.globalStock.wowtv .sub_search .sub_mid.outline_box .box .value_chart .adequate span,
+.globalStock.wowtv .sub_search .search_top .data_area .info .sum,
+.globalStock.wowtv .sub_search .search_top .data_area .info .sum span,
+.globalStock.wowtv .sub_search .search_top .info_icon li,
+.globalStock.wowtv .sub_search .search_top .data_area .detail li.day,
+.globalStock.wowtv .sub_search .sub_mid.tabs_area .chart_area.diagnosis .chartData .charm,
+.globalStock.wowtv .sub_search .sub_mid.tabs_area .chart_area.diagnosis .difference .dd,
+.globalStock.wowtv .sub_search .sub_mid.tabs_area .chart_area.diagnosis .difference .dt:nth-child(3),
+.globalStock.wowtv .sub_search .sub_mid.tabs_area .chart_area.diagnosis .data_attainment li,
+.globalStock.wowtv .sub_search .sub_mid.tabs_area .chart_area.diagnosis .data_attainment li b,
+.globalStock.wowtv .sub_search .sub_mid .search_financials_area .scroll_table_wrap .scroll_table th span,
+.globalStock.wowtv .sub_search .sub_mid .search_financials_area .tableRanking td:first-child,
+.globalStock.wowtv .sub_search .sub_mid .search_financials_area .tabs_menu span,
+.globalStock.wowtv .sub_search .sub_mid .financecachart_area .tabs_menu span,
+.globalStock.wowtv .sub_search .sub_mid .financecachart_area .chart_area .box .title span,
+.globalStock.wowtv .sub_search .sub_mid .financecachart_area .chart_area .guide,
+.globalStock.wowtv .sub_search .sub_mid .search_financials_area .table_guide,
+.globalStock.wowtv .sub_research .view_con .mid + .go_list,
+.globalStock.wowtv .sub_research .view_con .top .writer,
+.globalStock.wowtv .sub_research .view_con .top .day,
+.globalStock.wowtv .sub_research .view_con .top .go_list,
+.globalStock.wowtv .sub_search .sub_mid.tabs_area .alloca_info .info p,
+.globalStock.wowtv .sub_search .sub_mid.tabs_area .alloca_info .term,
+.globalStock.wowtv .sub_search .sub_mid.tabs_area .alloca_info .allocachart_area .title .unit,
+.globalStock.wowtv .sub_search .sub_mid.tabs_area .alloca_info .tableRanking.table_alloca th,
+.globalStock.wowtv .sub_search .sub_mid.competitors_table .sum,
+.globalStock.wowtv .sub_search .sub_mid.competitors_table .table_guide,
+.globalStock.wowtv .sub_search .sub_mid.competitors_table .tableRanking.sum_table th,
+.globalStock.wowtv .sub_search .sub_mid.competitors_table .tableRanking.sum_table th span,
+.globalStock.wowtv .sub_search .sub_mid.competitors_table .tableRanking.sum_table td,
+.globalStock.wowtv .sub_attract .sub_top .txt_box .txt,
+.globalStock.wowtv .sub_attract .sub_mid.attract_sub .set li:first-child,
+.globalStock.wowtv .sub_attract .sub_mid.attract_sub .set li:first-child strong,
+.globalStock.wowtv .sub_attract .sub_mid.attract_sub .set li,
+.globalStock.wowtv .sub_attract .sub_mid.attract_sub .table_guide,
+.globalStock.wowtv .sub_attract .sub_mid.attract_sub .attract_table th,
+.globalStock.wowtv .sub_attract .sub_mid.attract_sub .attract_table td span,
+.globalStock.wowtv .sub_attract .sub_mid.attract_sub .weeks_free .box .txt,
+.globalStock.wowtv .md-modal .attract_table th span,
+.globalStock.wowtv .md-modal .attract_table td label,
+.globalStock.wowtv .md-modal .pop_footer .title,
+.globalStock.wowtv .md-modal .sort li a,
+.globalStock.wowtv .sub_recipe .sub_top .txt_box .txt,
+.globalStock.wowtv .sub_recipe .sub_mid.recipe_tabs .box_tabs li > a,
+.globalStock.wowtv .catch_wrap .chart_catch .attention + .same_selt,
+.globalStock.wowtv .catch_wrap .no_data .guide_txt li.title,
+.globalStock.wowtv .sub_recipe .sub_mid.recipe_view .recipe_area .area .analysis_score .result_score .num,
+.globalStock.wowtv .sub_recipe .sub_mid.recipe_view .recipe_area .area .analysis_score .result_score .hit,
+.globalStock.wowtv .sub_research .sub_mid.research_board .video_tabs a,
+.globalStock.wowtv .sub_recom .sub_top.view .chart_area .chartData .info .eng,
+.globalStock.wowtv .sub_recom .sub_mid .tabsArea .tab_container .tab_content .catalyst li a,
+.globalStock.wowtv .sub_recom .sub_mid .tabsArea .tab_container .tab_content .catalyst > div a,
+.globalStock.wowtv .sub_recom .sub_mid.eventPicks_area .ptfo_area .chart_area .chartData .info .sum .eng,
+.globalStock.wowtv .sub_recom .sub_mid.eventPicks_area .ptfo_area .chart_area .chartData .info .sum .eng a,
+.globalStock.wowtv .sub_recom .sub_mid.eventPicks_area .chart_area .chartGoal dt,
+.globalStock.wowtv .sub_recom .sub_mid.eventPicks_area .ptfo_area .day,
+.globalStock.wowtv .sub_recom .sub_mid.eventPicks_area .ptfo_area .tabsArea .tab_container .tab_content .tableRanking.sum_table th,
+.globalStock.wowtv .sub_game .sub_top .txt_box .txt + .dh_patent
+.globalStock.wowtv .sub_game .sub_top .txt_box .txt,
+.globalStock.wowtv .sub_game .gamePicks_area .game_list .list .game_data .trans .td span,
+.globalStock.wowtv .sub_game .gamePicks_area .game_list .list .game_event .num .recom,
+.globalStock.wowtv .sub_search .latest_results .tabsArea .tab_container .no_data p,
+.globalStock.wowtv .sub_search .latest_results .tabsArea table.tableRanking .score span,
+.globalStock.wowtv .sub_search .latest_results .tabsArea table.tableRanking .score span b,
+.globalStock.wowtv .sub_search .latest_results .tabsArea table.tableRanking .num .hit,
+.globalStock.wowtv .sub_search .latest_results .tabsArea table.tableRanking td span.na,
+.globalStock.wowtv .sub_search .latest_results .tabsArea table.tableRanking .recom span,
+.globalStock.wowtv .sub_search .latest_results .tabsArea .tab_container .txt_box .txt,
+.globalStock.wowtv .sub_search .latest_results .tabsArea .onestep_guide .txt,
+.globalStock.wowtv .sub_search .search_top .attention_box li.attention,
+.globalStock.wowtv .sub_search .search_top .attention_box .game_allo,
+.globalStock.wowtv .sub_search .sub_mid.financials_chart .tabs_menu .unit,
+.globalStock.wowtv .sub_game .gamePicks_area .game_list .list .game_data li.th,
+.globalStock.wowtv .sub_research .view_con .top .wtr_rep,
+.globalStock.wowtv .sub_research .view_con .top .wtr_name {
+	color: #82929f;	
+}
+.globalStock.wowtv .tab_area .tbas_lb li a.active {
+	border-color: #014B8D;
+	color: #014b8d;	
+}
+.globalStock.wowtv .tab_area .tbas_lb li a,
+.globalStock.wowtv .sub_search .tabs_5 li a {
+	color: #49525c;	
+}
+.globalStock.wowtv .sub_search .tabs_5 li.active a {
+	color: #014b8d;
+    border-bottom: 3px solid #014b8d
+}
+.globalStock.wowtv .sub_search .search_top .data_area .detail li.per .increase {
+	color: #f2333a;
+}
+.globalStock.wowtv .sub_search .search_top .data_area .detail li.per .decrease {
+	color: #006BFC;
+}
+.globalStock.wowtv .sub_search .search_top .info_icon li,
+.globalStock.wowtv .sub_search .sub_mid.outline_investCharm .summary,
+.globalStock.wowtv .sub_search .sub_mid.outline_investCharm .summary.big::before,
+.globalStock.wowtv .sub_search .sub_mid.tabs_area .chart_area.diagnosis {
+	background-color: #f6f7fa;
+}
+.globalStock.wowtv #header .headerTop {
+	border-bottom: none;
+}
+
+/* 한경 모달 팝업 */
+.globalStock.wowtv .wowtv_55000.md-modal #setting {
+	background: #fff;
+}
+.globalStock.wowtv .wowtv_55000.md-modal #setting .pop_header {
+	border-bottom: none;
+}
+.globalStock.wowtv .wowtv_55000.md-modal #setting .pop_header .sub_top .h2_title {
+	color: #333;
+	font-size: 1.125rem;
+	padding-left: 0;
+	margin-bottom: 10px;
+}
+.globalStock.wowtv .wowtv_55000.md-modal #setting .pop_header .sub_top .h2_title b {
+	color: #014b8d;	
+}
+.globalStock.wowtv .wowtv_55000.md-modal #setting .pop_header .sub_top .pay_pop span,
+.globalStock.wowtv .wowtv_55000.md-modal #setting .pop_header .sub_top .pay_pop span b {
+	color: #333;
+}
+.globalStock.wowtv .wowtv_55000.md-modal #setting .pop_header .sub_top .pay_pop span strong {	
+	color: #f2333a;
+	font-size: 12px;
+	font-weight: bold;
+}
+.globalStock.wowtv .wowtv_55000.md-modal #setting .pop_header .sub_top .pay_pop span.pay01 {
+	color: #82929f;
+	position: relative;
+	display: inline-block;	
+	font-size: 0.875rem;	
+	padding-right: 5px;
+}
+.globalStock.wowtv .wowtv_55000.md-modal #setting .pop_header .sub_top .pay_pop span.pay01::before {
+    content: '';
+    background: url('../img/c_line.png') no-repeat right center;
+    position: absolute;
+    right: -3px;
+    top: 50%;
+    margin-top: -7px;
+    width: 85px;
+    height: 14px;
+}
+.globalStock.wowtv .wowtv_55000.md-modal #setting .pop_header .sub_top .pay_pop span.pay02 {
+	display: inline-block;	
+	padding-left: 7px;
+	font-size: 1rem;
+	padding-top: 5px;
+	color: #333;
+}
+.globalStock.wowtv .wowtv_55000.md-modal #setting .pop_header .sub_top .pay_pop span.pay01 strong,
+.globalStock.wowtv .wowtv_55000.md-modal #setting .pop_header .sub_top .pay_pop span.pay02 span {
+	font-size: 0.875rem;
+}
+.globalStock.wowtv .wowtv_55000.md-modal #setting .pop_header .sub_top .pay_pop span.pay02 span {
+	color: #82929f;
+	font-size: 11px;
+	padding-left: 3px;
+}
+.globalStock.wowtv .wowtv_55000.md-modal #setting .pop_con {
+	background-color: #f2faff;
+	padding: 15px 20px 18px;
+}
+.globalStock.wowtv .wowtv_55000.md-modal #setting .pop_con .service_title {
+	font-size: 0.875rem;
+	margin-bottom: 12px;
+}
+.globalStock.wowtv .wowtv_55000.md-modal #setting .pop_con li.txt {
+	font-size: 12px;
+	color: #82929f;
+	line-height: normal;
+	padding: 2px 0;
+}
+.globalStock.wowtv .wowtv_55000.md-modal #setting .pop_btm {
+	padding-bottom: 17px;
+	background-color: #F2FAFF;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+}
+.globalStock.wowtv .wowtv_55000.md-modal #setting .pop_btm .btn_save {
+	position: relative;
+	background: #014B8D;	
+	border: none;
+	color: #fff;
+	font-weight: 300;
+	font-size: 0.9375rem;
+}
+.globalStock.wowtv .wowtv_55000.md-modal #setting .pop_btm .btn_save b {
+	color: #fff;
+	font-weight: 300;
+	font-size: 0.9375rem;
+}
+.globalStock.wowtv .wowtv_55000.md-modal #setting .pop_btm .btn_save i {
+	position: absolute;
+    right: 18px;
+    top: 15px;
+    display: inline-block;
+    width: 5px;
+    height: 10px;
+    background: url('../img/icon_moreRR.png') no-repeat 0 0;
+    background-size: cover;
+}
+.globalStock.wowtv .wowtv_55000.md-modal #setting .pop_btm .btnArea.payBtn {
+	width: calc(100% - 40px);	
+	margin: 0 auto;
+	border-radius: 5px;
+}
+.globalStock.wowtv .wowtv_55000.md-modal #setting .pop_btm .pay_ars {
+	text-align: center;	
+	padding-top: 9px;
+}
+.globalStock.wowtv .wowtv_55000.md-modal #setting .pop_btm .pay_ars a {
+	color: #82929f;	
+	font-size: 12px;	
+	font-weight: 300;
+}
+
+/* 메인 - 한경미국주식 상단 헤더 */
+.globalStock.wowtv .header_wowtv {
+	background: #014b8d;
+	padding: 6px 14px;
+	box-sizing: border-box;
+	display: grid;	
+	grid-template-columns: 70px 1fr 80px;
+}
+.globalStock.wowtv .schfix_inc.fix_sch .header_wowtv {
+	display: none;
+}
+.globalStock.wowtv .header_wowtv .h1_logo {
+	order: 2;
+	font-size: 1.125rem;
+	font-weight: 500;		
+	letter-spacing: -0.9px;	
+	text-align: center;
+	color: #fff;
+}
+.globalStock.wowtv .header_wowtv .h1_logo a {	
+	display: inline-block;	
+	font-size: 1.125rem;
+	font-weight: 500;	
+	line-height: 27px;
+	letter-spacing: -0.9px;	
+	color: #fff;
+}
+.globalStock.wowtv .header_wowtv .alarm {
+	order: 1;
+	position: relative;
+	display: inline-block;		
+	font-size: 0.75rem;
+	color: #fff;
+	padding-top: 5px;
+	box-sizing: border-box;
+}
+.globalStock.wowtv .header_wowtv .alarm img {
+	display: inline-block;	
+	height: 16px;
+	width: auto;
+}
+.globalStock.wowtv .header_wowtv .alarm i {
+	display: inline-block;	
+	position: absolute;	
+	left: 5px;
+	top: 0;		
+	padding: 0 1px;
+	width: 16px;	
+	height: 16px;
+	line-height: 16px;
+	box-sizing: border-box;
+	border-radius: 50%;
+	background: #f2333a;
+	text-align: center;
+	font-style: normal;
+	color: #fff;
+	font-size: 10px;	
+	letter-spacing: -0.02rem;
+}
+.globalStock.wowtv .header_wowtv .wowtv {
+	order: 3;
+	justify-self: end; 
+	display: inline-block;		
+	border-radius: 13px;
+  	border: solid 1px rgba(255, 255, 255, .24);	
+	text-align: center;
+	font-size: 0.75rem;	
+	color: #fff;
+	padding: 3px 9px 5px;
+	width: 80px;
+	box-sizing: border-box;
+}
+@media (min-width:320px) and (max-width:374px) {
+	.globalStock.wowtv .header_wowtv .wowtv {	
+		padding: 0 7px;	
+	}
+}
+.globalStock.wowtv .header_wowtv .wowtv i {
+	display: inline-block;		
+	background: url('../img/wowtv_cht.svg') no-repeat 0 0;		
+	background-size: cover;
+	width: 13px;
+	height: 15px;	
+	margin-left: 2px;
+}
+.globalStock.wowtv .main_searching .searchArea .searchInput,
+.globalStock.wowtv .main_searching .searchArea .searchInput::placeholder {
+	color:#82929f;
+}
+.globalStock.wowtv .main_searching .sch_autocomplete,
+.globalStock.wowtv  .main_searching .sch_autocomplete ul {
+	background: #f6f7fa;
+}
+.globalStock.wowtv .main_top > .title + .more img,
+.globalStock.wowtv .main_mid > .title + .more img,
+.globalStock.wowtv .main_btm > .title + .more img {
+	width: 5px;
+	height: 10px;	
+}
+.globalStock.wowtv .main_searching {
+	margin-top: 20px;
+}
+
+/* 메인 - 급등주, 인기종목, 관심종목 탭 */
+.globalStock.wowtv .main_mid.attention_area .attention_all {
+	background-color: #f6f7fa;
+}
+.globalStock.wowtv .main_mid.attention_area .attentionSwiper .swiper-slide {
+	width: 100%;
+	background-color: #f6f7fa;
+}
+.globalStock.wowtv .main_mid.attention_area table.tableRanking.type_2Line {	
+	background-color: #f6f7fa;
+}
+
+.globalStock.wowtv .main_mid.attention_area table.tableRanking.type_2Line .num.dod span.increase,
+.globalStock.wowtv .main_mid.attention_area table.tableRanking.type_2Line .num.dod span.increase b {
+	color: #f2333a;
+    font-size: 0.75rem;
+    line-height: normal;
+	font-weight: normal !important;
+}
+.globalStock.wowtv .main_mid.attention_area table.tableRanking.type_2Line .num.dod span.decrease,
+.globalStock.wowtv .main_mid.attention_area table.tableRanking.type_2Line .num.dod span.decrease b {	
+	color: #26ABFF;
+    font-size: 0.75rem;
+    line-height: normal;
+	font-weight: normal !important;
+}
+.globalStock.wowtv .main_mid.attention_area table.tableRanking.type_2Line td.num {
+	 font-weight: bold;
+}
+
+.globalStock.wowtv .main_mid.attention_area table.tableRanking.type_2Line .signal {	
+	display: inline-block;    
+    border-radius: 3px;
+    text-align: center;    
+	margin-top: 15px;
+	margin-right: 5px;
+    padding: 5px 5px;
+    width: 61px;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+	color: #fff;
+	font-size: 12px;
+}
+.globalStock.wowtv .main_mid.attention_area table.tableRanking.type_2Line .signal span {	
+	display: inline-block;
+	color: #fff;
+	font-size: 12px;
+}
+.globalStock.wowtv .main_mid.attention_area table.tableRanking.type_2Line .signal.buy {
+	background-color: #FF4500;
+}
+
+.globalStock.wowtv .main_mid.attention_area table.tableRanking.type_2Line .signal.sell {
+	background-color: #1E90FF;
+}
+
+.globalStock.wowtv .main_mid.attention_area table.tableRanking.type_2Line .signal.hold {
+	background-color: #008000;
+}
+
+.globalStock.wowtv .main_mid.attention_area table.tableRanking.type_2Line .signal.waitting {	
+	background-color: #a1a1a1;
+}
+
+
+
+
+.globalStock.wowtv .main_mid.event_recipe {
+	margin-top: 50px;
+
+}
+.globalStock.wowtv .main_mid.event_recipe .list_area {
+	margin:  15px 0;
+}
+.globalStock.wowtv .main_mid.event_recipe > .title + .more {
+	font-size: 0.75rem;
+    color: #82929f;
+    font-weight: normal;
+}
+/* .globalStock.wowtv .main_mid.event_recipe .tableth_box table.tableRanking td.title {
+	padding: 17px 8px 0 15px;
+} */
+.globalStock.wowtv .main_mid.event_recipe .tableth_box table.tableRanking tr:last-child td.title {
+	padding-bottom: 8px;
+}
+.globalStock.wowtv .main_mid.event_recipe .recipe_tabs {
+	justify-content: flex-start;
+}
+.globalStock.wowtv .main_mid.event_recipe .recipe_tabs li {
+	flex: none;	
+	padding: 15px 8px;	
+	border-bottom: none;
+}
+.globalStock.wowtv .main_mid.event_recipe table.tableRanking .num span b,
+.globalStock.wowtv .sub_recom .sub_mid.eventPicks_area .chart_area .chartData .detail .num b,
+.globalStock.wowtv .sub_recom .sub_mid.eventPicks_area .chart_area .chartData .detail .per b,
+.globalStock.wowtv .sub_recom .sub_mid.eventPicks_area .chart_area .chartGoal dd b,
+.globalStock.wowtv .sub_recom .sub_mid.eventPicks_area .chart_area .chartGoal dl:nth-child(2n) dd b,
+.globalStock.wowtv .sub_recom .sub_top.view .chart_area .chartData .detail .num b,
+.globalStock.wowtv .sub_recom .sub_top.view .chart_area .chartData .detail .per b,
+.globalStock.wowtv .sub_recom .sub_top.view .chart_area .chartData .detail_data table td span b,
+.globalStock.wowtv .sub_recom .sub_top.view .chart_area .chartData .detail_data table td.goal_num span b,
+.globalStock.wowtv .sub_portfolio .detail_data .line .td.increase,
+.globalStock.wowtv .sub_portfolio .detail_data .line .td.increase b,
+.globalStock.wowtv .sub_recom .sub_mid.eventPicks_area .ptfo_area .tabsArea .tab_container .tab_content .tableRanking.sum_table td.num span b,
+.globalStock.wowtv .sub_recom .sub_mid.eventPicks_area .ptfo_area .tabsArea .tab_container .tab_content .tableRanking.sum_table td.goal b,
+.globalStock.wowtv .sub_game .gamePicks_area .game_list .list .game_event .num span b,
+.globalStock.wowtv .sub_game .gamePicks_area .game_list .list .game_data li.td b,
+.globalStock.wowtv .sub_search .latest_results .tabsArea table.tableRanking .num span b {
+	opacity: 1;	
+	font-weight: 300;
+}
+.globalStock.wowtv .sub_recom .sub_top.view .chart_area .chartData .detail .per .increase b {
+	opacity: 1;
+	font-weight: normal;
+}
+.globalStock.wowtv .main_mid.event_recipe .tab_content .tableth_box table.tableRanking td.num.dod {
+	padding-right: 15px;	
+}
+.globalStock.wowtv .main_mid.event_recipe .tab_content .tableth_box table.tableRanking .title.t_short a,
+.globalStock.wowtv .main_mid.event_recipe .tab_content#tab2 .tableth_box table.tableRanking .title.t_short a,
+.globalStock.wowtv .main_mid.event_recipe .tab_content#tab3 .tableth_box table.tableRanking .title.t_short a {
+	width: 142px;
+}
+.globalStock.wowtv .main_mid.event_recipe .tab_content#tab2 .tableth_box table.tableRanking td.num {
+	padding-left: 15px;	
+}
+.globalStock.wowtv .main_mid.event_recipe .tab_content .tableth_box table.tableRanking td.num.dod span.increase {
+	background: #f2333a;	
+}
+.globalStock.wowtv .main_mid.event_recipe .tab_content .tableth_box table.tableRanking td.num.dod span.decrease {
+	background-color: rgba(0, 107, 252, 1) !important;
+}
+.globalStock.wowtv .main_mid.event_recipe .tab_content .tableth_box table.tableRanking td.num.dod span.increase,
+.globalStock.wowtv .main_mid.event_recipe table.tableRanking .num .increase b,
+.globalStock.wowtv .main_mid.event_recipe .tab_content .tableth_box table.tableRanking td.num.dod span.decrease,
+.globalStock.wowtv .main_mid.event_recipe table.tableRanking .num .decrease b {
+	color: #fff;	
+}
+.globalStock.wowtv .main_mid.event_recipe .tab_content .tableth_box table.tableRanking td.num.dod span {
+	padding: 6px 5px;
+}
+.globalStock.wowtv .main_mid.event_recipe .recipe_tabs li span {
+	color: #82929f;	
+}
+.globalStock.wowtv .main_mid.event_recipe .recipe_tabs li.active span {
+	color: #014b8d;
+	border-bottom: 2px solid #014b8d;
+}
+.globalStock.wowtv .main_mid.event_recipe .tab_content .tableth_box table.tableRanking .title a .ticker,
+.globalStock.wowtv .sub_attract .sub_mid.attract_sub .attract_table td a .ticker {
+	color: #ccd1d5;
+}
+.globalStock.wowtv .main_mid.event_recipe .tab_content .tableth_box .table_btmarea {
+	border-top: 1px solid #e0e5f0;	
+	margin-top: 5px;
+}
+.globalStock.wowtv .main_mid.event_recipe .tab_content .tableth_box .table_btmarea a.more {
+	color: #82929f;	
+}
+
+/* 메인 - 미국시장 */
+.globalStock.wowtv .main_mid.miju_nasdaq {	
+	padding: 15px 14px 5px;	
+    margin: 20px auto 0;    
+	background: #f2faff;
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 20px 25px;	
+}
+.globalStock.wowtv .main_mid.miju_nasdaq .list {	
+	width: 100%;
+}
+.globalStock.wowtv .main_mid.miju_nasdaq .list .title {
+	color: #82929f;
+	font-size: 0.75rem;	
+}
+.globalStock.wowtv .main_mid.miju_nasdaq .list .detail {
+	margin-top: 7px;		
+	display: flex;
+	align-items: flex-end;
+	gap: 7px;
+}
+.globalStock.wowtv .main_mid.miju_nasdaq .list .detail .num {
+	line-height: normal;
+	color: #333;
+	font-size: 0.9375rem;
+    font-weight: bold;
+}
+.globalStock.wowtv .main_mid.miju_nasdaq .list .detail .num b {
+	font-weight: normal;	
+}
+.globalStock.wowtv .main_mid.miju_nasdaq .list .detail .per .increase,
+.globalStock.wowtv .main_mid.miju_nasdaq .list .detail .per .decrease {
+	font-size: 0.75rem;
+	font-weight: normal;	
+	vertical-align: top;
+	padding-top: 1px;
+	display: inline-block;
+}
+.globalStock.wowtv .main_mid.miju_nasdaq .list .detail .per .increase span,
+.globalStock.wowtv .main_mid.miju_nasdaq .list .detail .per .decrease span {
+	display: inline-block;
+	padding-left: 5px;
+}
+.globalStock.wowtv .main_mid.miju_nasdaq .list .detail .per .increase b,
+.globalStock.wowtv .main_mid.miju_nasdaq .list .detail .per .decrease b {	
+	font-weight: normal;	
+}
+.globalStock.wowtv .main_mid.miju_nasdaq .list .detail .per .increase,
+.globalStock.wowtv .main_mid.miju_nasdaq .list .detail .per .increase b,
+.globalStock.wowtv .main_mid.miju_nasdaq .list .detail .per .increase span {
+	color: #f2333a;
+}
+.globalStock.wowtv .main_mid.miju_nasdaq .list .detail .per .decrease,
+.globalStock.wowtv .main_mid.miju_nasdaq .list .detail .per .decrease b,
+.globalStock.wowtv .main_mid.miju_nasdaq .list .detail .per .decrease span {
+	color: #006bfc;
+}
+.globalStock.wowtv .main_mid.miju_nasdaq .list:nth-child(3) .detail .num,
+.globalStock.wowtv .main_mid.miju_nasdaq .list:nth-child(3) .detail .per,
+.globalStock.wowtv .main_mid.miju_nasdaq .list:nth-child(4) .detail .num,
+.globalStock.wowtv .main_mid.miju_nasdaq .list:nth-child(4) .detail .per  {
+	display: inline-block;	
+}
+.globalStock.wowtv .main_mid.miju_nasdaq .list:nth-child(3) .detail .num,
+.globalStock.wowtv .main_mid.miju_nasdaq .list:nth-child(3) .detail .per,
+.globalStock.wowtv .main_mid.miju_nasdaq .list:nth-child(4) .detail .num,
+.globalStock.wowtv .main_mid.miju_nasdaq .list:nth-child(4) .detail .per  {
+	color: #333;
+    font-size: 0.9375rem;
+    font-weight: normal;
+	padding-right: 3px;		
+}
+.globalStock.wowtv .main_mid.miju_nasdaq .list:nth-child(3) .detail .per .increase, 
+.globalStock.wowtv .main_mid.miju_nasdaq .list:nth-child(3) .detail .per .decrease,
+.globalStock.wowtv .main_mid.miju_nasdaq .list:nth-child(4) .detail .per .increase, 
+.globalStock.wowtv .main_mid.miju_nasdaq .list:nth-child(4) .detail .per .decrease {		
+	vertical-align: middle;
+	padding-top: 0;
+}
+
+/* 메인 - 모닝브리핑, 종목노트 */
+.globalStock.wowtv .main_mid.briefing_note {
+	margin-top: 0;
+	padding: 0 14px;	    
+	height: 60px;
+	box-sizing: border-box;
+	background: #f2faff;	
+}
+.globalStock.wowtv .main_mid.briefing_note .mainbriefingSwiper ul {
+	padding: 16px 14px 0;
+	border-top: 1px solid #e0edff;
+	box-sizing: border-box;
+	width: 100%;
+}
+.globalStock.wowtv .main_mid.briefing_note .mainbriefingSwiper .txt {
+	color: #49525c;
+	font-size: 0.8125rem;
+	line-height: normal;    
+    box-sizing: border-box;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+	width: 100%;		
+	padding: 0;
+}
+
+/* 메인 - 승부주 */
+.globalStock.wowtv .main_mid.game_scr {
+	background: #1f3a5f;
+	margin-top: 50px;
+	padding: 10px 14px;
+	height: 44px;	
+	box-sizing: border-box;	
+	display: grid;
+	gap: 0 7px;
+	grid-template-columns: 40px 1fr;	
+}
+@media (min-width:760px) {
+	.globalStock.wowtv .main_mid.game_scr {		
+		text-align: center;
+		grid-template-columns: 140px 1fr;	
+	}
+}
+.globalStock.wowtv .main_mid.game_scr .game_title {	
+	position: relative;
+	color: #64c7fe;
+	font-size: 0.75rem;
+	font-weight: bold;
+	line-height: 23px;
+    vertical-align: middle;	
+}
+.globalStock.wowtv .main_mid.game_scr .game_title a {		
+	color: #64c7fe;
+	font-size: 0.75rem;
+	font-weight: bold;
+	line-height: 23px;
+}
+.globalStock.wowtv .main_mid.game_scr .game_title::before {	
+	content:"";
+	position:absolute;
+	right:0;
+	top:6px;
+	display:inline-block;
+	width:1px;
+	height:13px;
+	border-radius: 20px;
+  	background-color: #2b65a8;
+}
+.globalStock.wowtv .main_mid.game_scr .list {
+	display: grid;
+	gap: 0 3px;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+.globalStock.wowtv .main_mid.game_scr .list .title {
+	color: #fff;
+	font-size: 0.875rem;
+	line-height: 23px;
+	width: 100%;
+	display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.globalStock.wowtv .main_mid.game_scr .list .title a {
+	color: #fff;
+	font-size: 0.875rem;
+	line-height: 23px;	
+}
+.globalStock.wowtv .main_mid.game_scr .list .title .remark .txt_filter.size_M {
+	position: relative;	
+	top: 3px;
+}
+.globalStock.wowtv .main_mid.game_scr .list .detail {
+	display: grid;
+	gap: 0 2px;
+	grid-template-columns: 1fr 1fr;
+}
+.globalStock.wowtv .main_mid.game_scr .list .detail .th,
+.globalStock.wowtv .main_mid.game_scr .list .num .th {
+	color: #85a7ce;
+	font-size: 0.7rem;	
+	line-height: 23px;
+    vertical-align: middle;
+	padding: 0 3px;
+	text-align: right;
+}
+.globalStock.wowtv .main_mid.game_scr .list .detail .stock {
+	color: #fff;
+	font-size: 0.875rem;	
+	font-weight: bold;
+	line-height: 23px;
+    vertical-align: middle;
+	text-align: left;
+}
+.globalStock.wowtv .main_mid.game_scr .list .detail .stock b {
+	color: #fff;
+	font-weight: 300;	
+}
+.globalStock.wowtv .main_mid.game_scr .list .detail .stock.prm_lock {
+	display: inline-block;		
+	height: 16px;	
+	padding-top: 4px;
+}
+.globalStock.wowtv .main_mid.game_scr .list .detail .stock.prm_lock img {
+	display: inline-block;		
+	width: auto;
+	height: 100%;	
+}
+.globalStock.wowtv .main_mid.game_scr .list .num {
+	display: grid;
+	gap: 0 3px;
+	grid-template-columns: 1fr 1fr;	
+}
+.globalStock.wowtv .main_mid.game_scr .list .num .dod {
+	display: inline-block;
+    background: #f2333a;
+    border-radius: 3px;
+    text-align: center;
+    padding: 0 5px;
+    width: 64px;
+    box-sizing: border-box;        
+	line-height: 23px;
+    color: #fff;
+    font-size: 0.75rem;
+    border-radius: 3px;    
+}
+.globalStock.wowtv .main_mid.game_scr .list .num .dod b {
+	color: #fff;
+    font-size: 0.75rem;	
+	font-weight: 300;
+} 
+
+/* 메인 - 종목추천 */
+.globalStock.wowtv .main_mid.game_area {
+	margin-top: 50px;
+	margin-bottom: 0;	
+}
+.globalStock.wowtv .main_mid.game_area > .title + .more,
+.globalStock.wowtv .main_mid.attention_area > .title + .more,
+.globalStock.wowtv .main_mid.youtube_mijumi > .title + .more,
+.globalStock.wowtv .main_mid.note_area > .title + .more {
+	font-size: 0.75rem;
+	color: #82929f;
+	font-weight: normal;
+}
+.globalStock.wowtv .main_mid.game_area .list_area .area {
+	padding-bottom: 7px;
+}
+.globalStock.wowtv .main_mid.game_area .list_area .area .list .num .dod {
+	background: #f2333a;		
+	width: 67px;
+	padding: 5px 5px 4px;
+}
+.globalStock.wowtv .main_mid.game_area .list_area .area .list .num .dod.decrease {
+	background-color: rgba(0, 107, 252, 1) !important;	
+}
+.globalStock.wowtv .main_mid.game_area .list_area .area .list .num .dod,
+.globalStock.wowtv .main_mid.game_area .list_area .area .list .num .dod b,
+.globalStock.wowtv .main_mid.game_area .list_area .area .list .num .dod.decrease,
+.globalStock.wowtv .main_mid.game_area .list_area .area .list .num .dod.decrease b {
+	color: #fff;
+	opacity: 1;
+}
+.globalStock.wowtv .main_mid.game_area .list_area .area .list .detail {
+	display: flex;
+	margin: 13px 0px 3px;
+}
+.globalStock.wowtv .main_mid.game_area .list_area .area .list .detail .per {
+	padding-left: 10px;
+}
+.globalStock.wowtv .main_mid.game_area .list_area .area .list .detail .num span {
+	color: #333;
+	font-size: 1.0625rem;
+	font-weight: bold;	
+}
+.globalStock.wowtv .main_mid.game_area .list_area .area .list .detail .num span b {	
+	font-weight: normal;
+}
+.globalStock.wowtv .main_mid.game_area .list_area .area .list .detail .per span.increase,
+.globalStock.wowtv .main_mid.game_area .list_area .area .list .detail .per span.increase b {
+	color: #f2333a;
+	font-size: 0.75rem;	
+	line-height: normal;
+}
+.globalStock.wowtv .main_mid.game_area .list_area .area .list .detail .per span.decrease,
+.globalStock.wowtv .main_mid.game_area .list_area .area .list .detail .per span.decrease b {
+	color:#26ABFF;
+	font-size: 0.75rem;	
+	line-height: normal;
+}
+.globalStock.wowtv .main_mid.game_area .list_area .area {
+	width: 215px;
+}
+@media (min-width:760px) {
+	.globalStock.wowtv .main_mid.game_area .list_area .area {
+		width: 364px
+	}
+}
+.globalStock.wowtv .main_mid.game_area .list_area .area .list .sum {
+	color: #ccd1d5;
+}
+.globalStock.wowtv .main_mid.game_area .list_area .area .list .num .th {
+	color: #82929f;
+}
+
+/* 메인 - 추천포트폴리오 */
+.globalStock.wowtv #container {
+	padding: 0;
+}
+.globalStock.wowtv .schfix_inc.fix_sch {
+	padding-top: 168px !important;	
+}
+.globalStock.wowtv .ptfo_recom {
+	margin-top: 15px;
+	background: #e3f3ff;		
+	padding: 9px 14px;
+	border-radius: 16px;
+	margin-bottom: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.globalStock.wowtv .ptfo_recom .ptfo_title {
+	color: #014b8d;
+	line-height: normal;	
+}
+.globalStock.wowtv .ptfo_recom .ptfo_title::after {
+	display: none;
+}
+.globalStock.wowtv .ptfo_recom .more {
+	padding: 0;
+	line-height: 22px;
+	vertical-align: middle;	
+}
+.globalStock.wowtv .ptfo_recom .more span {
+	background: none;	
+	color: #49525c;
+	font-size: 0.75rem;
+	font-weight: bold;
+	line-height: 22px;
+	vertical-align: middle;
+	padding: 0;
+	padding-right: 7px;	
+}
+.globalStock.wowtv .ptfo_recom dl.revenue dt {	
+	font-size: 0.75rem;
+	color: #82929f;
+	line-height: 22px;	
+	vertical-align: middle;
+}
+.globalStock.wowtv .ptfo_recom dl.revenue dd.increase {
+	display: inline-block;
+    background: #f2333a;		
+    border-radius: 3px;
+    text-align: center;
+    padding: 0 5px;
+	margin-left: 3px;
+    width: 67px;
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 0.75rem;
+	line-height: 22px;
+}
+.globalStock.wowtv .ptfo_recom dl.revenue dd.increase b {	
+    color: #fff;
+    font-size: 0.75rem;
+	opacity: 1;
+	padding-left: 1px;
+}
+
+/* 메인 - 추천 포트폴리오 */
+.globalStock.wowtv .ptfo_datatable {
+	position: relative;
+	margin: 0 15px;    
+	padding: 11px 0 15px;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    background-color: #f6f7fa;
+	display: flex;
+	box-sizing: border-box;
+}
+.globalStock.wowtv .ptfo_datatable::before {
+	content:"";
+	position:absolute;
+	right:50%;
+	top:11px;
+	display:inline-block;
+	width:1px;
+	height:43px;
+	background: #dfe5f1;
+}
+@media (min-width:320px) and (max-width:374px) {
+	.globalStock.wowtv .ptfo_datatable::before {
+		height:38px;
+	}	
+}
+.globalStock.wowtv .ptfo_datatable ul {
+	flex: 1;
+	padding: 0 15px;
+}
+.globalStock.wowtv .ptfo_datatable ul li.name a {
+    color: #333;
+    font-size: 0.875rem;
+	line-height: normal;
+    display: inline-block;    
+	max-width: 142px;	
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: normal;
+    text-align: left;
+}
+@media (min-width:320px) and (max-width:374px) {	
+	.globalStock.wowtv .ptfo_datatable ul li.name a {
+		max-width: 120px;	
+	}
+}
+.globalStock.wowtv .ptfo_datatable ul li.name a .remark .txt_filter i {
+	vertical-align: middle;	
+}
+.globalStock.wowtv .ptfo_datatable ul li.num {
+	margin-top: 3px;
+}
+.globalStock.wowtv .ptfo_datatable ul li.num span.yield {
+	font-size: 0.75rem;	
+	line-height: normal;	
+	color: #82929f;    
+}
+.globalStock.wowtv .ptfo_datatable ul li.num span.pp,
+.globalStock.wowtv .ptfo_datatable ul li.num span.pp b {
+	font-size: 0.75rem;	
+	font-weight: bold;			
+}
+.globalStock.wowtv .ptfo_datatable ul li.num span.pp.increase,
+.globalStock.wowtv .ptfo_datatable ul li.num span.pp.increase b {
+	color: #f2333a;
+}
+.globalStock.wowtv .ptfo_datatable ul li.num span.pp.decrease,
+.globalStock.wowtv .ptfo_datatable ul li.num span.pp.decrease b {
+	color: #26ABFF;   
+}
+.globalStock.wowtv .ptfo_recom .ptfo_title {
+	vertical-align: bottom;
+	line-height: 22px;
+}
+
+/* 메인 - 동영상 */
+.globalStock.wowtv .main_mid.youtube_mijumi iframe,
+.globalStock.wowtv .main_mid.youtube_mijumi .video_thumbnail {
+	margin-bottom: 10px;
+}
+.globalStock.wowtv .main_mid.youtube_mijumi {
+	margin-top: 50px;
+	/* margin-bottom: 32px; */
+}
+.globalStock.wowtv .main_mid.youtube_mijumi .video_box .video_title {
+	font-size: 0.75rem;
+	line-height: 17px;
+	height: 34px;
+}
+
+/* 메인 - 종목노트 */
+.globalStock.wowtv .main_mid.note_area {
+	margin-top: 50px;
+	margin-bottom: 0;
+}
+.globalStock.wowtv .main_mid.note_area .lst_type2 dd img,
+.globalStock.wowtv .main_mid.note_area .lst_type2 dd.photo {
+	background-color: #fff;	
+	background: url('../img/wowtv/noimg_wowtv.svg') no-repeat center center;
+	background-size: cover;
+}
+.globalStock.wowtv .main_mid.note_area .lst_type li {
+	border: none;
+}
+.globalStock.wowtv .main_mid.note_area.new_list {
+	margin-top: 45px;
+}
+.globalStock.wowtv .main_mid.note_area.new_list .writer,
+.globalStock.wowtv .main_mid.note_area.new_list .wtr_rep,
+.globalStock.wowtv .main_mid.note_area.new_list .reg_day {
+	display: inline-block;
+	font-size: 12px;		
+	color: #82929f;
+	margin-top: 6px;
+}
+.globalStock.wowtv .main_mid.note_area .news_bannner {
+	margin-top: 50px;
+}
+
+
+/* 메인 - 2주 무료체험 배너 */
+.globalStock.wowtv .main_btm.banner_area {
+	padding: 0;
+	margin-top: 50px;
+}
+
+/* 메인 - 하단 레시피리스트 */
+.globalStock.wowtv .main_mid.recipe_list {
+	margin-top: 50px;
+}
+.globalStock.wowtv .main_mid.recipe_list .list_area {
+	padding: 0;
+}
+.globalStock.wowtv .main_mid.recipe_list .list_area .mainrecipeSwiper {
+	padding: 0 14px;
+	box-sizing: border-box;
+}
+.globalStock.wowtv .main_mid.recipe_list .list_area .mainrecipeSwiper .swiper-slide {
+	display: block;
+	width: auto;	
+}
+.globalStock.wowtv .main_mid.recipe_list .list_area .mainrecipeSwiper .swiper-slide a {
+	position: relative;
+	display: block;
+	text-align: center;		
+}
+.globalStock.wowtv .main_mid.recipe_list .list_area .mainrecipeSwiper .swiper-slide a strong {	
+	display: block;
+	color: #49525c;
+	font-size: 0.75rem;
+	margin-top: 7px;
+}
+.globalStock.wowtv .main_mid.recipe_list .list_area .mainrecipeSwiper .swiper-slide a::before {
+	content:"";
+	display: block;
+	width: 96px;	
+	height: 96px;
+	background: #f2faff;
+	border-radius: 50%;	
+}
+.globalStock.wowtv .main_mid.recipe_list .list_area .mainrecipeSwiper .swiper-slide:nth-child(1) a::before {
+	background: #f2faff url('../img/wow_recipe_jump.svg') no-repeat center center;
+	background-size: auto 60px;
+}
+.globalStock.wowtv .main_mid.recipe_list .list_area .mainrecipeSwiper .swiper-slide:nth-child(2) a::before {
+	background: #f6f7fa url('../img/wow_recipe_top50.svg') no-repeat center center;
+	background-size: auto 60px;
+}
+.globalStock.wowtv .main_mid.recipe_list .list_area .mainrecipeSwiper .swiper-slide:nth-child(3) a::before {
+	background: #f2faff url('../img/wow_recipe_02.svg') no-repeat center center;
+	background-size: auto 60px;
+}
+.globalStock.wowtv .main_mid.recipe_list .list_area .mainrecipeSwiper .swiper-slide:nth-child(4) a::before {
+	background: #f6f7fa url('../img/wow_recipe_03.svg') no-repeat center center;
+	background-size: auto 60px;
+}
+.globalStock.wowtv .main_mid.recipe_list .list_area .mainrecipeSwiper .swiper-slide:nth-child(5) a::before {
+	background: #f2faff url('../img/wow_recipe_04.svg') no-repeat center center;
+	background-size: auto 60px;
+}
+.globalStock.wowtv .main_mid.recipe_list .list_area .mainrecipeSwiper .swiper-slide:nth-child(6) a::before {
+	background: #f6f7fa url('../img/wow_recipe_05.svg') no-repeat center center;
+	background-size: auto 60px;
+}
+.globalStock.wowtv .main_mid.recipe_list .list_area .mainrecipeSwiper .swiper-slide:nth-child(7) a::before {
+	background: #f2faff url('../img/wow_recipe_01.svg') no-repeat center center;
+	background-size: auto 60px;
+}
+
+/* 종목검색 결과 */
+.globalStock.wowtv .sub_search .sub_mid.outline_box .box,
+.globalStock.wowtv .sub_search .sub_mid.adequateArea {
+	background: #f6f7fa;
+}
+.globalStock.wowtv .sub_search .sub_mid.tabs_area {
+	padding-top: 19px;
+	background: #f6f7fa;
+}
+.globalStock.wowtv .sub_search .sub_mid.tabs_area:last-child,
+.globalStock.wowtv .sub_search .sub_mid.tabs_area.bg_fff {	
+	padding-top: 0;
+	background: #fff;	
+}
+.globalStock.wowtv .sub_search .sub_mid.outline_box .box .value_chart .line,
+.globalStock.wowtv .sub_search .sub_mid .adequate_stock .box .con .value_chart .line,
+.globalStock.wowtv .sub_search .sub_mid .adequate_stock .box .adequate_price .nodata_area .line {
+	background: #c0d0de;
+}
+.globalStock.wowtv .sub_search .sub_mid.outline_box .box .value_chart .line .g_action,
+.globalStock.wowtv .sub_search .sub_mid .adequate_stock .box .con .value_chart .line .g_action,
+.globalStock.wowtv .sub_search .sub_mid .adequate_stock .box .adequate_price .nodata_area .line .g_action {
+	background: #1d4a88;
+}
+.globalStock.wowtv .sub_search .sub_mid .adequate_stock .box .con .value_chart .line .g_action.g_buying,
+.globalStock.wowtv .sub_search .sub_mid .adequate_stock .box .con .value_chart .line .g_action.g_sell,
+.globalStock.wowtv .sub_search .sub_mid .adequate_stock .box .adequate_price .nodata_area .line .g_action.g_buying,
+.globalStock.wowtv .sub_search .sub_mid .adequate_stock .box .adequate_price .nodata_area .line .g_action.g_sell {
+	background-color: #549EF4;	
+}
+.globalStock.wowtv .sub_search .sub_mid .adequate_stock .box .con .value_chart .line .g_action.g_buying::after,
+.globalStock.wowtv .sub_search .sub_mid .adequate_stock .box .con .value_chart .line .g_action.g_sell::after,
+.globalStock.wowtv .sub_search .sub_mid .adequate_stock .box .adequate_price .nodata_area .line .g_action.g_buying::after,
+.globalStock.wowtv .sub_search .sub_mid .adequate_stock .box .adequate_price .nodata_area .line .g_action.g_sell::after {
+	color: #82929F;
+	background: none;
+}
+
+.globalStock.wowtv .sub_search .tabs_5 {
+	margin-top: 0;
+}
+.globalStock.wowtv .sub_search .sub_mid.outline_box .box .value_chart .no_data {
+	background: #DEF0FF;	
+	color: #014B8D;
+}
+.globalStock.wowtv .sub_search .sub_mid.outline_box .box .value_chart .prm_lock span {
+	background-color: #014B8D;
+	color: #f9db4c;
+}
+.globalStock.wowtv .sub_search .sub_mid.outline_box .box .competitors span.list {
+	background: #DEF0FF;	
+}
+.globalStock.wowtv .sub_search .sub_mid.outline_box .box .title a {
+	color: #82929F;	
+	font-weight: 500;
+}
+.globalStock.wowtv .sub_search .sub_mid.outline_box .box .event_attractiveness li.att_on a {
+	color: #014B8D;
+}
+.globalStock.wowtv .sub_search .sub_mid.outline_box .box .event_attractiveness li.att_on {
+    background: url('../img/bg_bbline_wow.png') repeat-x 0 bottom;
+}
+.globalStock.wowtv .sub_search .sub_mid.outline_box .box .event_attractiveness {
+	background: url('../img/wow_recipe_03.svg') no-repeat -10px center;
+	background-size: 50px auto;	
+}
+.globalStock.wowtv .sub_search .sub_mid.financials_chart .tabs_menu span {
+	color: #82929F;
+}
+.globalStock.wowtv .sub_search .sub_mid.outline_box .box .value_chart .line .situation span,
+.globalStock.wowtv .sub_search .sub_mid.financials_chart .tabs_menu span.active {
+	color: #014b8d;
+}
+.globalStock.wowtv .sub_search .search_top .attention_box li.attention strong {
+	color: #333;
+}
+.globalStock.wowtv .sub_search .sub_mid.outline_box .box .value_chart .line .situation::after {	
+	background-color: #549EF4;
+} 
+
+.globalStock.wowtv .sub_search .sub_mid.outline_investCharm .summary .etc li a {
+	color: #1d4a88;	
+}
+.globalStock.wowtv .sub_search .sub_mid.outline_investCharm .tableRanking.guide_table th span,
+.globalStock.wowtv .sub_search .sub_mid.financials_chart .chart_box .chart_legend li span,
+.globalStock.wowtv .sub_search .tabs_3.tabs_depth2 li a,
+.globalStock.wowtv .sub_search .sub_mid .adequate_stock .box .adequate_price .line .domain .price_line span,
+.globalStock.wowtv .sub_search .sub_mid .adequate_stock .box .title a {
+	color: #82929f;	
+}
+.globalStock.wowtv .sub_search .tabs_3.tabs_depth2 li,
+.globalStock.wowtv .sub_search .tabs_3.tabs_depth2.prm_tabs li:nth-child(2),
+.globalStock.wowtv .sub_search .sub_mid .adequate_stock .box {
+	background-color: #f6f7fa;	
+}
+.globalStock.wowtv .sub_search .tabs_3.tabs_depth2 li.active {
+	background-color: #f2faff;
+}
+.globalStock.wowtv .sub_search .tabs_3.tabs_depth2 li.active a {
+	color: #014b8d;
+}
+.globalStock.wowtv .sub_search .tabs_3.tabs_depth2.prm_tabs li.active:nth-child(2) {
+	background-color: #f2faff;	
+}
+.globalStock.wowtv .sub_search .sub_mid .search_financials_area .scroll_table_wrap .scroll_table table tbody tr.tr_emphasis td:nth-child(2n) {
+	background-color: #e9f2fa;
+}
+.globalStock.wowtv .sub_search .sub_mid .adequate_stock .box .adequate_price .line .domain .price_line::before {
+	background-color: #badaff;
+}
+.globalStock.wowtv .sub_search .sub_mid .adequate_stock .box .adequate_price .line .domain .price,
+.globalStock.wowtv .sub_search .sub_mid .adequate_stock .box .adequate_price .line .domain.active .price_line::before {
+	background-color: #014b8d;	
+}
+.globalStock.wowtv .sub_search .sub_mid .adequate_stock .box .adequate_price .line .domain.active .price_line span,
+.globalStock.wowtv .sub_search .sub_mid .search_financials_area .tabs_menu span.active,
+.globalStock.wowtv .sub_search .sub_mid .financecachart_area .tabs_menu span.active {
+	color: #014b8d;
+}
+.globalStock.wowtv .sub_search .sub_mid .adequate_stock .evaluation_data {
+	border-top: 1px solid #e1e5ef;
+}
+.globalStock.wowtv .sub_search .sub_mid .adequate_stock .box .adequate_price .adequate strong {
+	background-color: #fff;	
+}
+.globalStock.wowtv .sub_search .sub_mid .adequate_stock .box .adequate_price .nodata_area .no_data {
+	background-color: #DEF0FF;	
+	color: #014B8D;
+}
+.globalStock.wowtv .sub_search .sub_mid .adequate_stock.premiumLock_AI .box .adequate_price .nodata_area .no_data a {
+	color: #014b8d;
+	font-weight: bold;
+}
+
+.globalStock.wowtv .sub_search .sub_mid .search_financials_area {
+	margin-top: 20px;
+}
+.globalStock.wowtv .sub_search .sub_mid .search_financials_area .scroll_table_wrap .scroll_table th:first-child,
+.globalStock.wowtv .sub_search .sub_mid .search_financials_area .scroll_table_wrap .scroll_table td:first-child {
+	background-color: #fff;
+	color: #5f5f5f;
+}
+.globalStock.wowtv .sub_search .sub_mid .search_financials_area .tableRanking td.th_guide span {
+	color: #5f5f5f;	
+}
+.globalStock.wowtv .sub_search .sub_mid .search_financials_area .scroll_table_wrap .scroll_table table tbody tr.tr_emphasis td:first-child,
+.globalStock.wowtv .sub_search .sub_mid .search_financials_area .scroll_table_wrap .scroll_table table tbody tr.tr_emphasis td:first-child span {
+	color: #014b8d;
+}
+.globalStock.wowtv .sub_search .sub_mid .search_financials_area .scroll_table_wrap .scroll_table table tbody tr.tr_emphasis,
+.globalStock.wowtv .sub_search .sub_mid .search_financials_area .scroll_table_wrap .scroll_table table tbody tr.tr_emphasis td {
+	background-color: #f2faff;
+}
+.globalStock.wowtv .sub_search .sub_mid .search_financials_area .scroll_table_wrap .scroll_table table tbody tr td:nth-child(2n) {
+	background-color: #f6f7fa;
+}
+.globalStock.wowtv .sub_search .sub_mid .investCharm_area,
+.globalStock.wowtv .sub_search .sub_mid .tab_diagnosis_area {
+	margin-top: 20px;	
+}
+.globalStock.wowtv .sub_search .sub_mid .investCharm_area .summary_guide,
+.globalStock.wowtv .sub_search .sub_mid .financecachart_area .chart_area .guide,
+.globalStock.wowtv .sub_search .sub_mid .investCharm_area .summary_guide.small::before {
+	background: #f6f7fa;
+}
+.globalStock.wowtv .sub_search .sub_mid.research_board .lst_type li {
+	border-bottom: 1px solid #e1e5ef;
+}
+.globalStock.wowtv .sub_mid .btn_more a {
+	color: #014b8d;	
+	border: 1px solid #e1e5ef;
+}
+.globalStock.wowtv .sub_research .view_con .top,
+.globalStock.wowtv .sub_briefing .view_con .top {
+	padding: 24px 24px 11px;
+}
+.globalStock.wowtv .sub_research .view_con .mid,
+.globalStock.wowtv .sub_briefing .view_con .mid {	
+	width: 100%;
+    margin: 0;
+    padding: 24px 24px;
+    box-sizing: border-box;
+}
+.globalStock.wowtv .sub_research .view_con {
+	padding-bottom: 0;
+}
+.globalStock.wowtv .sub_research .view_con.news_video .mid,
+.globalStock.wowtv .sub_research .view_con.news_video .mid {
+	width: 100%;
+	margin: 0;
+	padding: 24px 24px;
+	box-sizing: border-box;
+}
+.globalStock.wowtv .sub_research .view_con.news_video .mid .iframe_video {
+	margin: 0;
+}
+.globalStock.wowtv .sub_search .sub_mid.tabs_area > .weeks_free .box,
+.globalStock.wowtv .sub_recipe .sub_mid.recipe_view .banner_prm {
+	background-color: #014B8D;
+}
+.globalStock.wowtv .sub_search .sub_mid.tabs_area .alloca_info .term strong {
+	color: #014b8d;
+}
+.globalStock.wowtv .sub_search .sub_mid.competitors_table {
+	padding-bottom: 0;
+}
+.globalStock.wowtv .sub_search .sub_mid.competitors_table .tableRanking.sum_table td.increase {
+	color: #f2333a;
+}
+.globalStock.wowtv .sub_search .sub_mid.competitors_table .tableRanking.sum_table td.decrease {
+	color: #006bfc;
+}
+.globalStock.wowtv .sub_search .sub_mid.competitors_table .tableRanking.sum_table td {
+	font-size: 0.8125rem;
+}
+
+/* 종목 발굴 */
+.globalStock.wowtv .header_wowtv ~ .search_top {	
+	padding-top: 20px;
+	padding-bottom: 20px;			
+}
+.globalStock.wowtv .schfix_inc.fix_sch .searching {
+	background: #fff;	
+}
+.globalStock.wowtv .schfix_inc .searching .sch_autocomplete {
+	background: #f6f7fa;
+}
+.globalStock.wowtv .schfix_inc.fix_sch .header_wowtv ~ .search_top  {
+	padding-top: 10px;
+	padding-bottom: 10px
+}
+.globalStock.wowtv .header_wowtv ~ .search_top.searching .searchArea fieldset {
+	display: flex; 
+	justify-content: space-between;
+}
+.globalStock.wowtv .header_wowtv ~ .search_top.searching .searchArea .sch_title {
+	width: auto;
+	margin-top: 9px;
+	flex-basis: 90px;
+}
+.globalStock.wowtv .header_wowtv ~ .search_top.searching .searchArea .searchInput {
+	width:100%;
+	padding: 0 34px 0 16px;
+    border: 1px solid #F4F4F5;
+	background-color: #f6f7fa;    
+    border-radius: 10px;
+	font-size: 14px;
+    line-height: 36px;
+	vertical-align: top;
+    color: #939393;
+}
+.globalStock.wowtv .header_wowtv ~ .search_top.searching .searchArea .searchBtn {
+	top: 11px;	
+}
+
+/* 검색결과 검색중인 경우 */
+.globalStock.wowtv .header_wowtv ~ .search_top.searching .searchArea .searchInput.keydown {
+	border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+	border: 1px solid #E0E4E9;
+}
+.globalStock.wowtv .header_wowtv ~ .search_top.searching .sch_autocomplete ul {
+	background-color: #f6f7fa;
+}
+.globalStock.wowtv .header_wowtv ~ .search_top.searching .sch_autocomplete._show {
+	background: #f6f7fa;
+}
+.globalStock.wowtv .sub_attract .sub_mid.attract_sub {
+	padding-top: 9px;
+}
+.globalStock.wowtv .sub_attract .sub_top .txt_box .txt,
+.globalStock.wowtv .sub_recipe .sub_top .txt_box .txt,
+.globalStock.wowtv .sub_research .sub_top .txt_box .txt,
+.globalStock.wowtv .sub_top .txt_box .txt {
+	color: #333;
+	font-size: 0.875rem;
+}
+.globalStock.wowtv .sub_top .txt_box .txt strong {
+	color: #333;
+	font-weight: normal;	
+}
+.globalStock.wowtv .sub_portfolio .sub_top .txt_box .txt .port_time,
+.globalStock.wowtv .sub_game .sub_top .txt_box .txt .guide {
+	color: #333;
+}
+.globalStock.wowtv .sub_top .txt_box .txt .guide_cho {
+	display: block;
+	padding-top: 5px;
+	font-size: 0.75rem;	
+	color: #333;
+	line-height: 16px;
+}
+.globalStock.wowtv .sub_attract .sub_mid.attract_sub .table_guide {
+	font-size: 10px;
+	margin-top: 3px;
+}
+.globalStock.wowtv .sub_recipe .sub_mid.recipe_tabs .box_tabs li strong {
+	margin-bottom: 8px;
+}
+.globalStock.wowtv .sub_recipe .sub_top.view .box_tabs {
+	background:#F6F7FA url('../img/wow_recipe_02.svg') no-repeat center 33px;
+	background-size:auto 59px;	
+}
+.globalStock.wowtv .sub_recipe .sub_top.view.bgimg01 .box_tabs {
+	background-image:url('../img/wow_recipe_01.svg');
+}
+.globalStock.wowtv .sub_recipe .sub_top.view.bgimg02 .box_tabs {
+	background-image:url('../img/wow_recipe_02.svg');
+}
+.globalStock.wowtv .sub_recipe .sub_top.view.bgimg03 .box_tabs {
+	background-image:url('../img/wow_recipe_03.svg');
+}
+.globalStock.wowtv .sub_recipe .sub_top.view.bgimg04 .box_tabs {
+	background-image:url('../img/wow_recipe_04.svg');
+}
+.globalStock.wowtv .sub_recipe .sub_top.view.bgimg05 .box_tabs {
+	background-image:url('../img/wow_recipe_05.svg');
+}
+.globalStock.wowtv .sub_recipe .sub_top.view.recipejump .box_tabs {
+	background-image:url('../img/wow_recipe_jump.svg');
+}
+.globalStock.wowtv .sub_recipe .sub_top.view.recipetop .box_tabs {
+	background-image:url('../img/wow_recipe_top50.svg');
+}
+.globalStock.wowtv .sub_recipe .sub_top.view.recipesale .box_tabs {
+	background-image:url('../img/wow_recipe_sale.svg');
+	background-size:auto 64px;
+}
+.globalStock.wowtv .sub_recipe .sub_top.view.recipeToday .box_tabs {
+	background-image: url('../img/wow_recipe_today.png');
+	background-size: auto 64px;
+}
+.globalStock.wowtv .sub_recipe .sub_mid.recipe_tabs .box_tabs li.jump a {
+	/* 급등주 */
+	background:#f6f7fa url('../img/wow_recipe_jump.svg') no-repeat center 25px;
+	background-size: auto 64px;
+}
+.globalStock.wowtv .sub_recipe .sub_mid.recipe_tabs .box_tabs li.top50 a {
+	/* TOP50 */
+	background:#f6f7fa url('../img/wow_recipe_top50.svg') no-repeat center 25px;
+	background-size: auto 64px;
+}
+.globalStock.wowtv .sub_recipe .sub_mid.recipe_tabs .box_tabs li.performance a {
+	/* 실적발표 */
+	background:#f6f7fa url('../img/wow_recipe_02.svg') no-repeat center 24px;
+}
+.globalStock.wowtv .sub_recipe .sub_mid.recipe_tabs .box_tabs li.sale a {
+	/* 세일 */
+	background:#f6f7fa url('../img/wow_recipe_sale.svg') no-repeat center 15px;
+	background-size: auto 62px;
+}
+.globalStock.wowtv .sub_recipe .sub_mid.recipe_tabs .box_tabs li.allocation a {
+	/* 배당매력주 */
+	background:#f6f7fa url('../img/wow_recipe_03.svg') no-repeat center 21px;
+}
+.globalStock.wowtv .sub_recipe .sub_mid.recipe_tabs .box_tabs li.growth a {
+	/* 이익성장주 */
+	background:#f6f7fa url('../img/wow_recipe_04.svg') no-repeat center 29px;
+	background-size: auto 58px;
+}
+.globalStock.wowtv .sub_recipe .sub_mid.recipe_tabs .box_tabs li.monopoly a {
+	/* 소비자독점 */
+	background:#f6f7fa url('../img/wow_recipe_05.svg') no-repeat center 25px;
+	background-size: auto 62px;
+}
+.globalStock.wowtv .sub_recipe .sub_mid.recipe_tabs .box_tabs li.superStock a {
+	/* 슈퍼스톡 */
+	background:#f6f7fa url('../img/wow_recipe_01.svg') no-repeat center 18px;
+}
+.globalStock.wowtv  .sub_recipe .sub_mid.recipe_tabs .box_tabs li.today_signal a {
+	/* 오늘의 매매신호 */
+	background: #f6f7fa url('../img/wow_recipe_today.png') no-repeat center 21px;
+	background-size: 56px auto;
+}
+.globalStock.wowtv .catch_wrap .chart_catch .data_area {
+	background-color: #e3f3ff;
+	box-shadow: none;
+}
+.globalStock.wowtv .catch_wrap .chart_catch .data_area .title a,
+.globalStock.wowtv .catch_wrap .chart_catch .data_area .detail li.num span {
+	color: #333;
+}
+.globalStock.wowtv .catch_wrap .chart_catch .data_area .detail li.num span {
+	font-size: 1.125rem;
+}
+.globalStock.wowtv .catch_wrap .chart_catch .data_area .detail li.num span b {
+	color: #333;
+	font-weight: 300;	
+	opacity: 1;
+}
+.globalStock.wowtv .catch_wrap .chart_catch .data_area .info .sum,
+.globalStock.wowtv .catch_wrap .chart_catch .data_area .info .sum span {
+	color: #82929f;
+}
+.globalStock.wowtv .catch_wrap .chart_catch .data_area .detail li.num .increase,
+.globalStock.wowtv .catch_wrap .chart_catch .data_area .detail li.num .increase span,
+.globalStock.wowtv .catch_wrap .chart_catch .data_area .detail li.per .increase,
+.globalStock.wowtv .catch_wrap .chart_catch .data_area .detail li.per .increase span {
+	font-size: 0.8125rem;	
+}
+.globalStock.wowtv .catch_wrap .chart_catch .data_area .detail li.num .decrease,
+.globalStock.wowtv .catch_wrap .chart_catch .data_area .detail li.num .decrease span,
+.globalStock.wowtv .catch_wrap .chart_catch .data_area .detail li.per .decrease,
+.globalStock.wowtv .catch_wrap .chart_catch .data_area .detail li.per .decrease span {
+	font-size: 0.8125rem;	
+}
+.globalStock.wowtv .catch_wrap .chart_catch .data_area .go_page .more {
+	box-sizing: border-box;
+	padding-top: 7px;
+}
+.globalStock.wowtv .catch_wrap .chart_catch .data_area .go_page .more img {
+	display: inline-block;
+	width: 6px;	
+	height: auto;
+}
+.globalStock.wowtv .catch_wrap .chart_catch .data_area .area {
+	border-left: 1px solid #e1e5ef;
+	border-right: 1px solid #e1e5ef;
+}
+.globalStock.wowtv .catch_wrap .chart_catch .data_area .area .containerS1 {
+	border-right: 1px solid #e1e5ef;
+}
+.globalStock.wowtv .catch_wrap .chart_catch .data_area .detail li.num .increase,
+.globalStock.wowtv .catch_wrap .chart_catch .data_area .detail li.num .increase span,
+.globalStock.wowtv .catch_wrap .chart_catch .data_area .detail li.per .increase,
+.globalStock.wowtv .catch_wrap .chart_catch .data_area .detail li.per .increase span {
+	color: #f2333a;
+}
+.globalStock.wowtv .catch_wrap .chart_catch .data_area .detail li.num .decrease,
+.globalStock.wowtv .catch_wrap .chart_catch .data_area .detail li.num .decrease span,
+.globalStock.wowtv .catch_wrap .chart_catch .data_area .detail li.per .decrease,
+.globalStock.wowtv .catch_wrap .chart_catch .data_area .detail li.per .decrease span {
+	color: #006BFC;
+}
+.globalStock.wowtv .catch_wrap .chart_catch {
+	margin-top: 27px;
+}
+.globalStock.wowtv .catch_wrap .chart_catch .attention {
+	margin-bottom: 0;
+}
+.globalStock.wowtv .catch_wrap .chart_catch .attention + .same_selt a {
+	color: #549ef4;	
+}
+.globalStock.wowtv .catch_wrap .chart_catch .data_area .detail li.day {
+	font-size: 10px;
+	color: #82929f;
+	margin-top: 7px;
+}
+.globalStock.wowtv .catch_wrap .chart_catch .data_area .info_icon {
+	background: #f6f7fa;
+}
+.globalStock.wowtv .catch_wrap .chart_catch .data_area .info_icon li {
+	border: 1px solid #e1e5ef;
+}
+.globalStock.wowtv .catch_wrap .chart_catch .data_area .info_icon li,
+.globalStock.wowtv .catch_wrap .chart_catch .data_area .info_icon li a {
+	font-size: 10px;	
+	color: #014b8d;
+}
+.globalStock.wowtv #catch_cncl {
+	background: #f6f7fa;
+}
+.globalStock.wowtv .catch_edt #catch_cncl .catch_from .label.active {
+	border: 1px solid #1d4a88;
+}
+.globalStock.wowtv .catch_edt #catch_cncl .catch_from.event_sct .label {
+	opacity: 0.9;
+}
+.globalStock.wowtv .sub_recipe .sub_top.view .box_tabs {
+	 border-bottom: 1px solid #e0e5f0;
+	 border-top: 1px solid #E1E5EF;
+}
+.globalStock.wowtv .sub_research .sub_top .best_research {
+	border-radius: 10px;
+	min-height: 150px;
+}
+.globalStock.wowtv .sub_research .sub_top .best_research .title {
+	line-height: 1.45;
+}
+
+.globalStock.wowtv .sub_research .sub_mid.research_board {
+	margin-top: 35px;
+}
+.globalStock.wowtv .sub_research .sub_mid.research_board .expert_corner {	
+	box-sizing:border-box;
+	padding:0 15px 24px;
+	margin-top: 35px;	
+	overflow: hidden;	
+}
+.globalStock.wowtv .sub_research .sub_mid.research_board .expert_corner .title {
+	font-size: 0.875rem;
+	font-weight: bold;	
+	letter-spacing: -0.7px;	
+	color: #333;	
+}
+.globalStock.wowtv .sub_research .sub_mid.research_board .expert_corner .list {
+	margin-top: 8px;
+	font-size: 0;	
+	display: flex;	
+	justify-content: flex-start;
+	gap: 8px;
+	flex-wrap: wrap;
+}
+.globalStock.wowtv .sub_research .sub_mid.research_board .expert_corner .list li {
+	flex: 1 1 30%;
+	/* display: inline-block;	
+	width: calc(100% / 3 - 6px);
+	margin-left: 8px; */
+}
+.globalStock.wowtv .sub_research .sub_mid.research_board .expert_corner .list li:first-child {
+	margin-left: 0;
+}
+.globalStock.wowtv .sub_research .sub_mid.research_board .expert_corner .list li a,
+.globalStock.wowtv .sub_research .sub_mid.research_board .expert_corner .list li img {
+	display: inline-block;	
+	width: 100%;
+}
+
+.globalStock.wowtv .sub_research .sub_mid.research_board .video_tabs a {
+	position: relative;
+	border-bottom: none;
+	margin-right: 12px;
+}
+.globalStock.wowtv .sub_research .sub_mid.research_board .video_tabs a::before {
+	content:"";
+	position:absolute;
+	right: -8px;
+	top: 1px;
+	display:inline-block;
+	width:1px;
+	height:14px;
+	background: #e0e5f0;	
+}
+.globalStock.wowtv .sub_research .sub_mid.research_board .video_tabs a:last-child::before {
+	display: none;
+}
+.globalStock.wowtv .sub_research .sub_mid.research_board .video_tabs a.active {
+	border-bottom: none;
+	color: #014b8d;
+	font-weight: bold;
+	font-size: 0.875rem;
+	padding-bottom: 0;
+}
+.globalStock.wowtv .sub_research .sub_mid.research_board .lst_type {
+	border-top: 1px solid #e1e5ef;
+}
+.globalStock.wowtv .sub_research .sub_mid.research_board .lst_type li {
+	border-bottom: 1px solid #e1e5ef;
+	box-sizing: border-box;
+}
+.globalStock.wowtv .sub_research .sub_mid.research_board .lst_type2 dd img,
+.globalStock.wowtv .sub_research .sub_mid.research_board .lst_type2 dd.photo {
+	width: 80px;
+    height: 71px;
+}
+.globalStock.wowtv .sub_research .sub_mid.research_board .lst_type2 dt.tit {
+	margin-left: 96px;
+	min-height: 77px;
+	box-sizing: border-box;
+}
+.globalStock.wowtv .sub_research .sub_mid.research_board .lst_type2 dt.tit .reg_day {
+	display: inline-block;	
+	font-size: 0.75rem;		
+	color: #82929F;
+	margin-top: 6px;
+}
+.globalStock.wowtv .sub_research .popularity,
+.globalStock.wowtv .sub_briefing .popularity {
+	background-color: #f6f7fa;
+	padding: 30px 14px;
+}
+.globalStock.wowtv .sub_research .popularity .lst_type2 dt.tit a strong,
+.globalStock.wowtv .sub_briefing .popularity .lst_type2 dt.tit a strong {
+	color: #49525c;
+	font-size: 0.875rem;
+	word-break: break-all;
+    word-wrap: break-word;
+}
+.globalStock.wowtv .sub_recom .sub_top.view .chart_area .chartData .info .eng {
+	font-size: 0.875rem;
+	font-weight: 300;
+}
+.globalStock.wowtv .sub_recom .sub_top.view .chart_area .chartData .detail .num,
+.globalStock.wowtv .sub_recom .sub_top.view .chart_area .chartData .detail .per {
+	font-size: 1.25rem;
+	font-weight: bold;
+}
+.globalStock.wowtv .sub_recom .sub_top.view .chart_area .chartData.fix_data .detail .num,
+.globalStock.wowtv .sub_recom .sub_top.view .chart_area .chartData.fix_data .detail .per,
+.globalStock.wowtv .sub_recom .sub_top.view .chart_area .chartData.fix_data .detail .num span,
+.globalStock.wowtv .sub_recom .sub_top.view .chart_area .chartData.fix_data .detail .per span,
+.globalStock.wowtv .sub_recom .sub_top.view .chart_area .chartData.fix_data .detail .num b,
+.globalStock.wowtv .sub_recom .sub_top.view .chart_area .chartData.fix_data .detail .per b {
+	font-size: 1rem;
+	color: #fff !important;
+}
+.globalStock.wowtv .sub_recom .sub_top.view .chart_area .chartData.fix_data > .title {
+	width: calc(100% - 160px);
+}
+.globalStock.wowtv .sub_recom .sub_top.view .chart_area .chartData.fix_data .detail .per .decrease,
+.globalStock.wowtv .sub_recom .sub_top.view .chart_area .chartData.fix_data .detail .per .increase,
+.globalStock.wowtv .sub_recom .sub_top.view .chart_area .chartData.fix_data .detail .per .decrease b,
+.globalStock.wowtv .sub_recom .sub_top.view .chart_area .chartData.fix_data .detail .per .increase b {
+	font-size: 0.8125rem;
+}
+.globalStock.wowtv .sub_recom .sub_top.view .chart_area .chartData .detail .per .increase,
+.globalStock.wowtv .sub_recom .sub_top.view .chart_area .chartData .detail .per .increase span {
+	font-size: 0.8125rem;
+	color: #f2333a;
+}
+.globalStock.wowtv .sub_recom .sub_top.view .chart_area .chartData .detail .per .decrease,
+.globalStock.wowtv .sub_recom .sub_top.view .chart_area .chartData .detail .per .decrease span {
+	font-size: 0.8125rem;
+	color: #006BFC;
+}
+.globalStock.wowtv .sub_recom .sub_top.view .chart_area .chartData .detail .day {
+	color: #82929f;
+	font-size: 10px;
+	top: 9px;
+}
+.globalStock.wowtv .sub_recom .sub_top.view .chart_area .chartData .detail_data {
+	background-color: #014b8d;
+}
+.globalStock.wowtv .sub_recom .sub_top.view .revenue_box,
+.globalStock.wowtv .sub_recom .sub_top.view .attainment_box {
+	background-color: #e1e5ef;
+}
+.globalStock.wowtv .sub_recom .sub_top .revenue_box .title,
+.globalStock.wowtv .sub_recom .sub_top .attainment_box .title,
+.globalStock.wowtv .sub_recom .sub_top .revenue_box .percent,
+.globalStock.wowtv .sub_recom .sub_top .attainment_box .percent,
+.globalStock.wowtv .sub_recom .sub_top .revenue_box .percent b,
+.globalStock.wowtv .sub_recom .sub_top .attainment_box .percent b {
+	color: #014b8d;	
+}
+.globalStock.wowtv .sub_recom .sub_top .revenue_box .percent b,
+.globalStock.wowtv .sub_recom .sub_top .attainment_box .percent b {
+	font-weight: 300;
+}
+.globalStock.wowtv .tabs li.active {
+	color: #014b8d;			
+	border-bottom: 3px solid #014B8D;
+}
+.globalStock.wowtv .tabs li.active a {
+	color: #014b8d;				
+}
+.globalStock.wowtv .news_video_tabs {		
+	display: flex;
+    justify-content: space-between;
+}
+.globalStock.wowtv .news_video_tabs li {    
+    position: relative;
+	width: 100%;
+    text-align: center;
+    font-size: 1rem;        
+}
+.globalStock.wowtv .news_video_tabs li a {        
+	display: inline-block;
+	width: 100%;
+    padding: 15px 0;
+    color: #333;
+    border-bottom: 1px solid #c6c6c6;
+}
+.globalStock.wowtv .news_video_tabs li.active a {	
+	display: inline-block;
+	width: 100%;
+	font-weight: bold;    
+    padding-bottom: 13px;	
+    border-bottom: 3px solid #014B8D;
+	color: #014b8d;
+}
+.globalStock.wowtv .sub_research .sub_mid.research_board.news_mid .tab_content .new_fsitelink {
+	margin-top: 35px;
+	padding: 0 15px;
+	box-sizing: border-box;
+	display: flex;		
+	gap: 10px;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+.globalStock.wowtv .sub_research .sub_mid.research_board.news_mid .tab_content .new_fsitelink a {
+	flex: 1;		
+	text-align: center;
+}
+.globalStock.wowtv .sub_research .sub_mid.research_board.news_mid .tab_content .new_fsitelink a:first-child {
+	display: inline-block;
+	height: 54px;
+}
+.globalStock.wowtv .sub_research .sub_mid.research_board.news_mid .tab_content .new_fsitelink a:nth-child(2) {	
+	display: inline-block;
+	height: 56px;	
+}
+.globalStock.wowtv .sub_research .sub_mid.research_board.news_mid .tab_content .new_fsitelink a:last-child {	
+	display: inline-block;
+	height: 56px;
+	/* margin-top: 24px; */
+}
+.globalStock.wowtv .sub_research .sub_mid.research_board.news_mid .tab_content .new_fsitelink a img {
+	display: inline-block;
+	height: 100%;	
+}
+.globalStock.wowtv .sub_research .sub_mid.research_board.news_mid .tab_content .wowtv_sitelink {
+	padding: 40px 30px 0;
+}
+.globalStock.wowtv .sub_research .sub_mid.research_board.news_mid .tab_content .wowtv_sitelink h2 {
+	height: 23px;	
+}
+.globalStock.wowtv .sub_research .sub_mid.research_board.news_mid .tab_content .wowtv_sitelink h2 img {
+	display: inline-block;
+	height: 100%;	
+}
+.globalStock.wowtv .sub_research .sub_mid.research_board.news_mid .tab_content .wowtv_sitelink ul {	
+	font-size: 0;	
+	margin-top: 23px;
+	position: relative;
+	overflow: hidden;
+}
+.globalStock.wowtv .sub_research .sub_mid.research_board.news_mid .tab_content .wowtv_sitelink ul::before {
+	content:"";
+	display:inline-block;
+	position:absolute;
+	left:50%;
+	top: 0;	
+	width:1px;
+	height:100px;
+	background-color: #E1E5EF;	
+}
+.globalStock.wowtv .sub_research .sub_mid.research_board.news_mid .tab_content .wowtv_sitelink li {
+	display: inline-block;
+	width: calc(100% / 2);
+	padding: 0;
+	line-height: 26px;	
+	box-sizing: border-box;
+}
+.globalStock.wowtv .sub_research .sub_mid.research_board.news_mid .tab_content .wowtv_sitelink li:nth-child(2n) {
+	padding-left: 15px;
+}
+.globalStock.wowtv .sub_research .sub_mid.research_board.news_mid .tab_content .wowtv_sitelink li a {
+	color: #49525C;	
+	font-size: 14px;
+	font-weight: 300;
+}
+
+.globalStock.wowtv .sub_recom .sub_mid .tabsArea .tab_container .tab_content .catalyst li a,
+.globalStock.wowtv .sub_recom .sub_mid .tabsArea .tab_container .tab_content .catalyst > div a {
+	font-weight: 300;
+}
+.globalStock.wowtv .sub_recom .sub_mid .tabsArea .tab_container .tab_content,
+.globalStock.wowtv .sub_recom .sub_mid .tabsArea .tab_container .tab_content p {
+	margin-bottom: 0;
+}
+.globalStock.wowtv .sub_recom .sub_mid.eventPicks_area .ptfo_area .day {
+	font-size: 10px;
+	text-align: right;
+	padding-right: 10px;
+}
+.globalStock.wowtv .sub_recom .sub_mid.eventPicks_area .chart_area .chartData {
+	border-right: 1px solid #e1e5ef;
+}
+.globalStock.wowtv .sub_recom .sub_mid.eventPicks_area .ptfo_area .chart_area .chartGoal .attainment_com i.increase,
+.globalStock.wowtv .sub_recom .sub_mid.eventPicks_area .ptfo_area .chart_area .chartGoal .attainment_com i.increase b,
+.globalStock.wowtv .sub_recom .sub_mid.eventPicks_area .ptfo_area .chart_area .chartGoal .attainment_com i.decrease,
+.globalStock.wowtv .sub_recom .sub_mid.eventPicks_area .ptfo_area .chart_area .chartGoal .attainment_com i.decrease b {
+	color: #014b8d;
+}
+.globalStock.wowtv .sub_recom .sub_mid.eventPicks_area .ptfo_area .chart_area .chartGoal .attainment_com span {
+	color: #014b8d;
+	font-weight: 300;
+	font-size: 11px;
+}
+.globalStock.wowtv .sub_recom .sub_mid.eventPicks_area .chart_area .chartData .detail .per .increase,
+.globalStock.wowtv .sub_recom .sub_mid.eventPicks_area .chart_area .chartData .detail .per .increase b {
+	color: #f2333a;
+	font-size: 0.78rem;
+}
+.globalStock.wowtv .sub_recom .sub_mid.eventPicks_area .chart_area .chartData .detail .per .decrease,
+.globalStock.wowtv .sub_recom .sub_mid.eventPicks_area .chart_area .chartData .detail .per .decrease b {
+	color: #006BFC;
+	font-size: 0.78rem;
+}
+.globalStock.wowtv .sub_recom .sub_mid.eventPicks_area .chart_area .chartGoal dd {
+	font-weight: bold;
+}
+.globalStock.wowtv .sub_recom .sub_mid.eventPicks_area .chart_area .chartGoal dd.prm_lock {
+	background-color: #fff;
+}
+.globalStock.wowtv .sub_recom .sub_mid.eventPicks_area .ptfo_area .chart_area .chartGoal .attainment_com {
+	background: #ffe200;
+}
+.globalStock.wowtv .sub_recom .sub_mid.eventPicks_area .ptfo_area .chart_area .chartGoal .attainment_com.loss_cut {
+	background: #a3a3a3;	
+}
+.globalStock.wowtv .sub_recom .sub_mid.eventPicks_area .ptfo_area .chart_area .chartGoal .attainment_com.loss_cut span {
+	color: #fff;	
+	opacity: 0.7;
+}
+.globalStock.wowtv .sub_recom .sub_mid.eventPicks_area .ptfo_area .chart_area .chartGoal .attainment_com.loss_cut i.decrease,
+.globalStock.wowtv .sub_recom .sub_mid.eventPicks_area .ptfo_area .chart_area .chartGoal .attainment_com.loss_cut i.decrease b {
+	color: #fff;		
+}
+.globalStock.wowtv .sub_recom .sub_mid.eventPicks_area .ptfo_area .chart_area .chartGoal .attainment_com.sub_cut {
+	color:#656565;
+	background:#bdd6e8;
+}
+.globalStock.wowtv .sub_recom .sub_mid.eventPicks_area .ptfo_area .chart_area .chartGoal .attainment_com.sub_cut span {
+	color:#014b8d !important;
+}
+.globalStock.wowtv .sub_recom .sub_mid.eventPicks_area .ptfo_area .chart_area .chartGoal .attainment_com i,
+.globalStock.wowtv .sub_recom .sub_mid.eventPicks_area .ptfo_area .chart_area .chartGoal .attainment_com.sub_cut i {
+	font-style:normal;
+}
+.globalStock.wowtv .sub_portfolio .detail_data .line {
+	border-right: 1px solid #e1e5ef;
+}
+.globalStock.wowtv .sub_portfolio .detail_data .line:last-child {
+	border-right: none;
+}
+.globalStock.wowtv .sub_portfolio .detail_data .line .th {
+	color: #82929f;
+	font-weight: 300;
+	font-size: 10px;
+}
+.globalStock.wowtv .sub_portfolio .detail_data .line .td {
+	color: #333;	
+}
+.globalStock.wowtv .sub_portfolio .detail_data .line .td i {
+	color: #82929f;	
+	font-weight: normal;
+}
+.globalStock.wowtv .sub_portfolio .detail_data .line .td.increase,
+.globalStock.wowtv .sub_portfolio .detail_data .line .td.increase b {
+	color: #f2333a;
+	font-weight: bold;
+}
+.globalStock.wowtv .sub_portfolio .detail_data .line .td.increase b {
+	font-weight: 300;
+}
+.globalStock.wowtv .sub_portfolio .detail_data .line .td.decrease,
+.globalStock.wowtv .sub_portfolio .detail_data .line .td.decrease b {
+	color: #006BFC;
+	font-weight: bold;
+}
+.globalStock.wowtv .sub_portfolio .detail_data .line .td.decrease b {
+	font-weight: 300;
+}
+.globalStock.wowtv .sub_portfolio .detail_data {
+	margin-top: 16px;
+}
+.globalStock.wowtv .sub_portfolio .sub_mid.eventPicks_area .ptfo_area .recom_tabs {
+	margin-top: 0;
+}
+.globalStock.wowtv .sub_portfolio .sub_mid.eventPicks_area .ptfo_area .day {
+	margin-top: 24px;
+}
+.globalStock.wowtv .sub_recom .sub_mid.eventPicks_area .ptfo_area .recom_tabs li,
+.globalStock.wowtv .sub_recom .sub_mid.eventPicks_area .ptfo_area .recom_tabs li span {
+	padding-bottom: 5px;
+}
+.globalStock.wowtv .sub_portfolio .sub_mid.eventPicks_area .ptfo_area .recom_tabs li.active span {
+	color: #014b8d;
+	padding-bottom: 3px;	
+	border-bottom: 2px solid #014b8d;
+}
+.globalStock.wowtv .sub_recom .sub_mid.eventPicks_area .ptfo_area .recom_tabs li span {
+	border-bottom: none;
+}
+.globalStock.wowtv .sub_recom .sub_mid.eventPicks_area .ptfo_area .tabsArea .tab_container .tab_content .tableRanking.sum_table {
+	border-top: 1px solid #85929e;
+	margin-top: 10px;
+}
+.globalStock.wowtv .sub_recom .sub_mid.eventPicks_area .ptfo_area .tabsArea .tab_container .tab_content .tableRanking.sum_table td.num .increase,
+.globalStock.wowtv .sub_recom .sub_mid.eventPicks_area .ptfo_area .tabsArea .tab_container .tab_content .tableRanking.sum_table td.num .increase b {
+	color: #f2333a;
+	font-weight: bold;
+}
+.globalStock.wowtv .sub_recom .sub_mid.eventPicks_area .ptfo_area .tabsArea .tab_container .tab_content .tableRanking.sum_table td.num .decrease,
+.globalStock.wowtv .sub_recom .sub_mid.eventPicks_area .ptfo_area .tabsArea .tab_container .tab_content .tableRanking.sum_table td.num .decrease b {
+	color: #006BFC;
+	font-weight: bold;
+}
+.globalStock.wowtv .sub_recom .sub_mid.eventPicks_area .ptfo_area .tabsArea .tab_container .tab_content .tableRanking.sum_table td.num .increase b,
+.globalStock.wowtv .sub_recom .sub_mid.eventPicks_area .ptfo_area .tabsArea .tab_container .tab_content .tableRanking.sum_table td.num .decrease b {
+	font-weight: 300;
+	opacity: 1;
+}
+.globalStock.wowtv .sub_recom .sub_mid.eventPicks_area .ptfo_area .tabsArea .tab_container .tab_content .tableRanking.sum_table td.num span.pp {
+	font-weight: normal;
+}
+.globalStock.wowtv .sub_recom .sub_mid.eventPicks_area .banner_prm {
+	background-color: #014B8D;
+}
+.globalStock.wowtv .sub_recom .sub_mid.eventPicks_area .ptfo_area .tabsArea .tab_container .tab_content .tableRanking.sum_table td.goal {
+	font-weight: bold;
+}
+.globalStock.wowtv .sub_recom .sub_mid.eventPicks_area .ptfo_area .tabsArea .tab_container .tab_content#tab2 .tableRanking.sum_table td.goal {
+	font-weight: normal;
+}
+.globalStock.wowtv .sub_recom .sub_mid.eventPicks_area .ptfo_area .tabsArea .tab_container .tab_content#tab2 .tableRanking.sum_table td.num span {
+	font-weight: bold;
+}
+.globalStock.wowtv .sub_recom .sub_mid.eventPicks_area .ptfo_area .tabsArea .tab_container .tab_content#tab2 .tableRanking.sum_table td.num span.pp {
+	font-weight: normal;
+}
+.globalStock.wowtv .sub_game .gamePicks_area {
+	background: #fff;
+}
+.globalStock.wowtv .sub_game .gamePicks_area .game_list .list .game_event {	
+	background: #f6f7fa;
+	width: 140px;
+}
+.globalStock.wowtv .sub_game .gamePicks_area .game_list .list .game_data {	
+	width: calc(100% - 142px);
+	background: #fff;
+	border: 1px solid #e1e5ef;
+	border-left: none;
+	margin: 0;
+}
+.globalStock.wowtv .sub_game .gamePicks_area .game_list .list .game_data .score li.td {
+	font-weight: bold;
+}
+.globalStock.wowtv .sub_search .latest_results .tabsArea .tab_container .no_data {
+	background-color: #f6f7fa;
+	border-radius: 16px;
+}
+.globalStock.wowtv .sub_search .latest_results .tabsArea table.tableRanking {
+	border-radius: 16px;
+}
+.globalStock.wowtv .sub_search .latest_results .tabsArea table.tableRanking.type_2Line td {
+	padding: 19px 3px 0 15px;	
+}
+.globalStock.wowtv .sub_search .latest_results .tabsArea table.tableRanking.type_2Line td:last-child {	
+	box-sizing: border-box;
+	width: 100px;			
+}
+.globalStock.wowtv .sub_search .latest_results .tabsArea table.tableRanking.type_2Line tr:last-child td {
+	padding-bottom: 21px;
+}
+.globalStock.wowtv .sub_search .latest_results .tabsArea table.tableRanking tr {
+	border-bottom: none;
+}
+.globalStock.wowtv .sub_search .latest_results .tabsArea table.tableRanking td span.na {
+	margin-top: 3px;
+}
+.globalStock.wowtv .sub_search .latest_results .tabsArea table.tableRanking .score {
+	position: relative;
+	line-height: 100%;
+}
+.globalStock.wowtv .sub_search .latest_results .tabsArea table.tableRanking td.prm_lock img {
+	margin-top: 0;
+}
+.globalStock.wowtv .sub_search .latest_results .tabsArea table.tableRanking .title a .ticker {
+	color: #ccd1d5;
+}
+.globalStock.wowtv .sub_search .latest_results .tabsArea .one_step .more,
+.globalStock.wowtv .sub_search .latest_results .tabsArea .btn_list a,
+.globalStock.wowtv .sub_search .latest_results .tabsArea .onestep_guide .more {
+	background: #014b8d;
+}
+.globalStock.wowtv .sub_search .latest_results .tabsArea .tab_container .tab_title {
+	color: #333;
+}
+.globalStock.wowtv .sub_search .latest_results .tabsArea table.tableRanking .recom {
+	line-height: 100%;
+}
+.globalStock.wowtv .sub_search .latest_results .tabsArea table.tableRanking .num .increase,
+.globalStock.wowtv .sub_search .latest_results .tabsArea table.tableRanking .num .increase b {
+	color: #f2333a;
+}
+.globalStock.wowtv .sub_search .latest_results .tabsArea table.tableRanking .num .decrease,
+.globalStock.wowtv .sub_search .latest_results .tabsArea table.tableRanking .num .decrease b {
+	color: #006BFC;
+}
+.globalStock.wowtv .sub_search .latest_results .tabsArea .onestep_chart #onestep_chart1_1 text {
+	fill: #014b8d !important;
+    color: #014b8d !important;    
+}
+.globalStock.wowtv .sub_search .latest_results .tabsArea .onestep_chart .average {
+	background-color: rgba(84, 158, 244, 0.7);
+	border: 1px solid #669CED;
+	font-size: 10px;
+}
+.globalStock.wowtv .sub_search .latest_results .tabsArea .onestep_chart .dgtic_results .hope .h3_title {
+	color: #014B8D;
+}
+.globalStock.wowtv .sub_search .latest_results .tabsArea .onestep_chart .dgtic_results .hope {
+	background: #f2faff;
+}
+.globalStock.wowtv .sub_search .latest_results .tabsArea .onestep_chart .dgtic_results .caution {
+	background: #f6f7fa;
+}
+.globalStock.wowtv .sub_search .latest_results .tabsArea .onestep_chart .dgtic_results .hope li a {
+	background: #549ef4;
+}
+.globalStock.wowtv .sub_search .latest_results .tabsArea .onestep_chart .dgtic_results .caution li a {
+	background: #ccd1d5;
+}
+.globalStock.wowtv .sub_search .latest_results .tabsArea .onestep_sample .sample_box {
+	background-color: #014b8d;
+}
+.globalStock.wowtv .sub_search .latest_results .tabsArea .onestep_sample .box .btn_free {
+	background: #014b8d;
+}
+.globalStock.wowtv .sub_search .no_attdata,
+.globalStock.wowtv .sub_search .att_wrap,
+.globalStock.wowtv .sub_search .att_wrap .att_list,
+.globalStock.wowtv .sub_search .att_wrap .att_list li {
+	background-color: #f6f7fa;
+}
+.globalStock.wowtv .sub_attract .sub_mid.attract_sub .weeks_free .box .btn_free,
+.globalStock.wowtv .sub_search .latest_results .tabsArea .weeks_free .box .btn_free,
+.globalStock.wowtv .sub_search .sub_mid .tab_diagnosis_area .weeks_free .box,
+.globalStock.wowtv .catch_wrap .weeks_free .box .btn_free,
+.globalStock.wowtv .sub_search .att_wrap .btn_list a,
+.globalStock.wowtv .catch_wrap .catch_guide .terms_btn,
+.globalStock.wowtv .catch_wrap .no_data .btnArea .btn_save,
+.globalStock.wowtv .sub_attract .sub_mid.attract_sub .btn_schSet,
+.globalStock.wowtv .btnArea.edtBtn .btn_save,
+.globalStock.wowtv .md-modal .sort li.active {
+	background-color: #014B8D;
+}
+.globalStock.wowtv .sub_search .sub_mid.outline_investCharm .summary p {
+	font-size: 0.75rem;
+}
+.globalStock.wowtv .sub_search .sub_mid.financials_chart .bdr_title .title {
+	font-weight: bold;
+}
+.globalStock.wowtv .md-modal .sort li.active a {
+	color: #fff;
+}
+.globalStock.wowtv .sub_search .sub_mid .tab_diagnosis_area .hiding_box {
+	border: 1px solid #e0e5f0;
+}
+
+/* 한경 차트 스타일 변경 */
+.globalStock.wowtv .sub_search .sub_mid.outline_investCharm .containersummary1 .highcharts-series path:nth-child(1),
+.globalStock.wowtv .catch_wrap .chart_catch .data_area .area .containerS1 .highcharts-series path:nth-child(1),
+.globalStock.wowtv .sub_recom .sub_top.view .containerArea_1 .highcharts-series path:nth-child(1) {
+	stroke: #014b8d;
+}
+.globalStock.wowtv .sub_search .sub_mid.financials_chart .chart_box .containerfinancials1 rect.highcharts-color-0,
+.globalStock.wowtv .sub_search .sub_mid.financials_chart .chart_box .chart_legend li:nth-child(1) span i,
+.globalStock.wowtv .sub_search .sub_mid .tab_diagnosis_area .hiding_box .alloca_star .chart_box .containeralloca_star1 rect.highcharts-color-0,
+.globalStock.wowtv .sub_search .sub_mid .tab_diagnosis_area .hiding_box .alloca_star .chart_legend li:nth-child(1) span i {
+	fill: rgb(1, 75, 141);
+	background: #014b8d;
+}
+.globalStock.wowtv .sub_search .sub_mid.financials_chart .chart_box .containerfinancials1 rect.highcharts-color-1,
+.globalStock.wowtv .sub_search .sub_mid.financials_chart .chart_box .chart_legend li:nth-child(2) span i,
+.globalStock.wowtv .sub_search .sub_mid .tab_diagnosis_area .hiding_box .alloca_star .chart_box .containeralloca_star1 rect.highcharts-color-1,
+.globalStock.wowtv .sub_search .sub_mid .tab_diagnosis_area .hiding_box .alloca_star .chart_legend li:nth-child(2) span i {
+	fill: rgb(84, 158, 244);
+	background: #549ef4;
+}
+.globalStock.wowtv .sub_search .sub_mid.financials_chart .chart_box .containerfinancials1 rect.highcharts-color-2,
+.globalStock.wowtv .sub_search .sub_mid.financials_chart .chart_box .chart_legend li:nth-child(3) span i,
+.globalStock.wowtv .sub_search .sub_mid .tab_diagnosis_area .hiding_box .alloca_star .chart_box .containeralloca_star1 rect.highcharts-color-2,
+.globalStock.wowtv .sub_search .sub_mid .tab_diagnosis_area .hiding_box .alloca_star .chart_legend li:nth-child(3) span i {
+	fill: rgb(204, 209, 213);
+	background: #ccd1d5;
+}
+.globalStock.wowtv .sub_search .sub_mid .tab_diagnosis_area .containercharm1 path.highcharts-area,
+.globalStock.wowtv .sub_search .sub_mid.tabs_area .compet_chart .containercompet1 path.highcharts-area,
+.globalStock.wowtv .sub_recom .sub_mid .containerSpider_1 path.highcharts-area {
+	fill: rgba(84, 158, 244, 0.5);
+}
+.globalStock.wowtv .sub_search .sub_mid .tab_diagnosis_area .containercharm1 path.highcharts-graph,
+.globalStock.wowtv .sub_search .sub_mid.tabs_area .compet_chart .containercompet1 path.highcharts-graph,
+.globalStock.wowtv .sub_recom .sub_mid .containerSpider_1 path.highcharts-graph {
+	stroke-width: 2;
+	stroke: #1d4a88;
+}
+.globalStock.wowtv .sub_search .sub_mid .tab_diagnosis_area .containercharm1 .highcharts-markers path,
+.globalStock.wowtv .sub_recom .sub_mid .containerSpider_1 .highcharts-markers path {
+	fill: #014b8d;
+}
+.globalStock.wowtv .sub_search .sub_mid .eventsum_area .chart_layout .highcharts-tracker {
+	display: none;
+}
+.globalStock.wowtv .sub_search .sub_mid .eventsum_area .chart_layout .highcharts-point {
+	rx: 0;
+    ry: 0;
+}
+
+/* GNB */
+.globalStock.wowtv .gnb {
+	padding: 0;
+	height: auto;	
+	padding-left: 5px;
+}
+.globalStock.wowtv .gnb ul {
+	display: grid;
+    gap: 0 3px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 15%;
+}
+.globalStock.wowtv .gnb ul li {
+	padding: 0;
+	font-size: 0.875rem;
+	text-align: center;	
+	width: auto;
+}
+.globalStock.wowtv .gnb li a {	
+	font-size: 0.875rem;	
+	width: 100%;
+	height: auto;
+	line-height: 46px;	
+}
+.globalStock.wowtv .gnb li.active {
+	background: none;
+	color: #014b8d;
+	font-weight: bold;
+	margin: 0;
+	padding: 0;
+	border-radius: 0;
+	width: 100%;	
+}
+.globalStock.wowtv .gnb li.active a {	
+	color: #014b8d;
+}
+.globalStock.wowtv .gnb li.home a {
+	font-size: 0.875rem;
+}
+.globalStock.wowtv .gnb li.home.active a {
+	top: 0;
+}
+.globalStock.wowtv .gnb li.menu {
+	background: #014b8d;	
+}
+.globalStock.wowtv .gnb li.menu a {
+	background: none;
+	font-size: 0;
+	padding: 13px;
+	box-sizing: border-box;
+	text-align: center;
+	display: grid;	
+	gap: 4px;
+	grid-template-columns: 1fr 1fr 1fr;	
+	max-width: 70px;
+	margin: 0 auto;
+}
+.globalStock.wowtv .gnb li.menu.active {
+	margin: 0;
+	padding: 0;
+	border-radius: 0;
+}
+.globalStock.wowtv .gnb li.menu a i {
+	display: inline-block;	
+	margin: 0 auto;
+	background: #fff;
+	width: 4px;
+	height: 4px;
+}
+
+/* 푸터 */
+.globalStock.wowtv .f_main {
+	padding: 25px 27px;
+	margin-top: 50px !important;
+	margin-bottom: 47px;
+	background: #f6f7fa !important;
+}
+.globalStock.wowtv .sub_menu + .f_main {	
+	margin-top: 0 !important;
+}
+.globalStock.wowtv .f_main .f_title {	
+	color: #49525c;
+	font-weight: bold;
+	font-size: 0.9375rem;
+}
+.globalStock.wowtv .f_main .f_terms {
+	color: #82929f;
+	font-size: 10px;
+	line-height: 16px;
+	margin-top: 25px;	
+}
+.globalStock.wowtv .f_main .dataLink {
+	color: #82929f;
+	font-size: 10px;
+	margin-top: 10px;
+}
+.globalStock.wowtv .f_main .dataLink a {
+	display: inline-block;
+	margin-left: 3px;
+	color: #014b8d;
+	text-decoration: underline;
+}
+.globalStock.wowtv .f_main .terms_list {
+	margin-top: 22px;	
+}
+.globalStock.wowtv .f_main .terms_list li {
+	display: inline-block;
+	position: relative;
+}
+.globalStock.wowtv .f_main .terms_list li::after {
+	content:"";
+	display:inline-block;
+	width: 1px;
+	height: 12px;
+	position: absolute;
+	right: -9px;
+	top: 5px;
+	background: #49525c;
+}
+.globalStock.wowtv .f_main .terms_list li:last-child {
+	padding-left: 12px;
+}
+.globalStock.wowtv .f_main .terms_list li:last-child::after {
+	display: none;	
+}
+.globalStock.wowtv .f_main .terms_list li a {
+	color: #49525c;
+	font-size: 13px;
+	line-height: 17px;
+}
+.globalStock.wowtv .f_main .terms_list li:last-child a {
+	font-weight: bold;	
+}
+.globalStock.wowtv .f_main .copyright {
+	margin-top: 22px;
+	color: #82929f;
+	font-size: 11px;
+	line-height: 17px;
+	word-break: break-all;
+    word-wrap: break-word;
+}
+.globalStock.wowtv .f_main .copyright strong {
+	color: #82929f;	
+	font-weight: bold;
+}
+.globalStock.wowtv .f_main .copyright i {
+	display:inline-block;
+	width: 1px;
+	height: 12px;	
+	background: #82929f;
+	position: relative;
+	top: 2px;
+	margin: 0 4px;
+}
+.globalStock.wowtv .sub_recom .sub_mid.eventPicks_area .ptfo_area .tabsArea .tab_container .tab_content .tableRanking.sum_table td.name .ticker {
+	color: #ced0d8;
+}
+.globalStock.wowtv #container.sub_menu {
+	background-color: #f6f7fa;
+	padding-bottom: 80px;
+}
+.globalStock.wowtv .sub_menu .settings_more span {
+	color: #82929f;	
+}
+.globalStock.wowtv .sub_menu .sub_top .btn_save {	
+	border: 1px solid #e3f3ff;
+	color: #014b8d;
+	font-size: 0.875rem;
+	background: #e3f3ff url('../img/more_blue.svg') no-repeat calc(100% - 15px) 50%;
+	background-size: 5px 10px;
+}
+.globalStock.wowtv .sub_menu .sub_top .menu_list li:nth-child(1) a {
+	background: url('../img/icon_menulist_wow_on.svg') no-repeat 13px 0;
+    background-size: auto 27px;
+}
+.globalStock.wowtv .sub_menu .sub_top .menu_list li:nth-child(2) a {
+	background: url('../img/icon_menulist_wow_on.svg') no-repeat -85px 2px;
+    background-size: auto 27px;
+}
+.globalStock.wowtv .sub_menu .sub_top .menu_list li:nth-child(3) a {
+	background: url('../img/icon_menulist_wow_on.svg') no-repeat -195px 0;
+    background-size: auto 27px;
+}
+.globalStock.wowtv .sub_menu .sub_top .menu_list li:nth-child(4) a {
+	background: url('../img/icon_menulist_wow_on.svg') no-repeat calc(100% - 21px) 0;
+    background-size: auto 27px;
+}
+.globalStock.wowtv .sub_alarm .mapage_form {
+	padding: 30px 24px 80px;
+}
+.globalStock.wowtv .sub_alarm .mapage_form .form_table th,
+.globalStock.wowtv .sub_alarm .mapage_form .form_table td {
+	text-align: left;
+}
+.globalStock.wowtv .sub_alarm .mapage_form .form_table .name_title {
+	font-size: 0.875rem;
+	font-weight: normal;		
+	letter-spacing: -0.7px;
+	color: #82929f;
+	display: block;
+}
+.globalStock.wowtv .sub_alarm .mapage_form .form_table .td_mod {
+	padding-bottom: 27px;
+	margin-bottom: 30px;
+	border-bottom: 1px solid #e1e5ef;
+}
+.globalStock.wowtv .sub_alarm .mapage_form .form_table .td_mod .d_mod {
+	margin-top: 20px;	
+	overflow: hidden;
+}
+.globalStock.wowtv .sub_alarm .mapage_form .form_table .td_mod .d_mod .contxt_tit {		
+	float: left;
+	width: calc(100% - 100px);
+	box-sizing: border-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+	font-size: 1rem;
+	line-height: 24px;
+	color: #333;
+}
+.globalStock.wowtv .sub_alarm .mapage_form .form_table .td_mod .d_mod .btn {		
+	float: right;
+	width: 64px;
+	padding: 4px 8px 5px;
+	box-sizing: border-box;
+	border-radius: 3px;
+	background-color: #f6f7fa;
+	font-size: 0.75rem;
+	line-height: 1.33;	
+	text-align: center;
+	color: #82929f;
+	margin-right: 6px;
+}
+.globalStock.wowtv .sub_alarm .mapage_form .form_table .td_mod .d_modNo {		
+	margin-top: 30px;
+}
+.globalStock.wowtv .sub_alarm .mapage_form .form_table .td_mod .iput_box {
+	margin-top: 9px;
+}
+.globalStock.wowtv .sub_alarm .mapage_form .form_table .td_mod .bg_box {
+	overflow: hidden;	
+	padding: 7px 6px 7px 13px;	
+	border-radius: 5px;
+	background-color: #f6f7fa;
+}
+.globalStock.wowtv .sub_alarm .mapage_form .form_table .td_mod .d_modNo .input_tit {
+	float: left;
+	width: calc(100% - 80px);
+	border: none;
+	background-color: #f6f7fa;
+}
+.globalStock.wowtv .sub_alarm .mapage_form .form_table .td_mod .d_modNo .input_tit::placeholder {
+	color: #82929f;
+	font-size: 1rem;
+	font-weight: normal;
+}
+.globalStock.wowtv .sub_alarm .mapage_form .form_table .td_mod .bg_box .btn {
+	float: right;
+	width: 64px;
+	padding: 4px 8px 5px;
+	box-sizing: border-box;
+	background-color: #fff;
+	font-size: 0.75rem;
+	line-height: 1.33;	
+	text-align: center;
+	color: #82929f;
+	margin-right: 0;
+}
+.globalStock.wowtv .sub_alarm .mapage_form .form_table .td_mod .d_modNo .txt_guide {
+	color: #333;
+	font-size: 0.75rem;
+}
+.globalStock.wowtv .sub_alarm .mapage_form .form_table .td_mod .d_modNo .txt_guide span {
+	display: block;
+	margin-top: 3px;
+	color: #82929f;
+	font-size: 10px;
+}
+.globalStock.wowtv .sub_alarm .mapage_form .form_table .td_mod .d_modNo .i_dsc {
+	color: #006bfc;
+	font-size: 0.75rem;
+	margin-top: 17px;
+}
+.globalStock.wowtv .sub_alarm .mapage_form .form_table .td_mod .d_modNo .i_dsc.contxt_com {
+	color: #006bfc;
+}
+.globalStock.wowtv .sub_alarm .mapage_form .form_table .td_mod .d_modNo .i_dsc.contxt_alert {
+	color: #f2333a;
+}
+.globalStock.wowtv .sub_alarm .mapage_form .form_table .td_mod .d_modNo .i_dsc i {	
+	position: relative;
+	top: 2px;
+    margin-right: 5px;
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background: url('../img/icon_dsc.svg') no-repeat 0 0;
+}
+.globalStock.wowtv .sub_alarm .mapage_form .form_table .td_mod .d_modNo .i_dsc.contxt_alert i {	    
+    background: url('../img/icon_dsc.svg') no-repeat 0 100%;
+}
+.globalStock.wowtv .sub_alarm .mapage_form .alarm_from {
+	padding: 0;
+	padding-bottom: 19px;
+	margin-top: 0;
+	margin-bottom: 17px;
+    border-bottom: 1px solid #e1e5ef;
+}
+.globalStock.wowtv .sub_alarm .mapage_form .alarm_from .name_title {
+	font-size: 0.875rem;
+    font-weight: normal;
+    letter-spacing: -0.7px;
+    color: #82929f;
+    display: block;
+}
+.globalStock.wowtv .sub_alarm .mapage_form .alarm_from .label {
+	padding: 14px 0;
+}
+.globalStock.wowtv .sub_alarm .mapage_form .alarm_from .label .label_chk {
+	padding-left: 50px;
+}
+.globalStock.wowtv .sub_alarm .mapage_form .alarm_from .label .toggleWrap > div {
+	right: auto;
+	left: 0;
+}
+.globalStock.wowtv .sub_alarm .mapage_form .alarm_from .label div.toggleWrap {
+	left: 0;	
+}
+.globalStock.wowtv .sub_alarm .alarm_from .label label {
+	background-color: #014b8d;
+	border: 12px solid #82929f;
+}
+
+.globalStock.wowtv .sub_alarm .mapage_form .alarm_from .advertisement {
+	padding: 14px 0;
+}
+.globalStock.wowtv .sub_alarm .mapage_form .alarm_from .advertisement .label_chk {
+	padding-left: 50px;
+}
+.globalStock.wowtv .sub_alarm .mapage_form .alarm_from .advertisement .toggleWrap > div {
+	right: auto;
+	left: 0;
+}
+.globalStock.wowtv .sub_alarm .mapage_form .alarm_from .advertisement div.toggleWrap {
+	left: 0;	
+}
+.globalStock.wowtv .sub_alarm .alarm_from .advertisement label {
+	background-color: #014b8d;
+	border: 12px solid #82929f;
+}
+
+.globalStock.wowtv .sub_alarm .alarm_from .txt_guide {
+	color: #82929f;	
+	font-size: 0.75rem;
+	line-height: 1.58;
+}
+.globalStock.wowtv .sub_alarm .withdrawal {	
+	padding-right: 8px;
+	box-sizing: border-box;	
+}
+.globalStock.wowtv .sub_alarm .withdrawal .name_title {
+	font-size: 0.875rem;
+    font-weight: normal;
+    letter-spacing: -0.7px;
+    color: #82929f;
+    display: block;
+}
+.globalStock.wowtv .sub_alarm .withdrawal .list {
+	display: flex;	
+	flex-direction: column;
+	gap: 12px;
+	margin-top: 20px;
+}
+.globalStock.wowtv .sub_alarm .withdrawal .list li {
+	padding-bottom: 12px;
+}
+.globalStock.wowtv .sub_alarm .withdrawal .btn_withdrawal {
+	position: relative;
+	display: block;
+	width: 100%;
+	color: #333;
+    font-size: 0.875rem;
+}
+.globalStock.wowtv .sub_alarm .withdrawal .btn_withdrawal i {
+	position: absolute;
+	right: 0;
+	top: 2px;
+    display: inline-block;
+    width: 6px;
+    height: 10px;
+    background: url('../img/more_Black.png') no-repeat 0 0;
+    background-size: 6px 10px;
+    margin-left: 10px;
+}
+.globalStock.wowtv .sub_login .withdrawal_com .att_service {
+	overflow: hidden;
+	background-color: #f2faff;		
+}
+.globalStock.wowtv .sub_login .withdrawal_com .att_service .guide_txt .h3_title {
+	letter-spacing: -0.75px;
+	color: #014b8d;
+}
+.globalStock.wowtv .sub_login .withdrawal_com .att_service .guide_txt .h3_title strong {
+	color: #014b8d;	
+}
+.globalStock.wowtv .sub_login .withdrawal_com .att_service .guide_txt .term {
+	color: #82929f;
+}
+.globalStock.wowtv .sub_login .withdrawal_com .att_service .guide_txt .payment_bd {
+	float: right;
+	border: 1px solid #1d4a88;
+	color: #014b8d;
+}
+.globalStock.wowtv .sub_login .withdrawal_com .wtwalBtn {	
+	display: block;
+	margin-top: 30px;
+}
+.globalStock.wowtv .sub_login .withdrawal_com .wtwalBtn .btn_ssin {
+	background-color: #014b8d;
+	box-sizing: border-box;
+	border: 1px solid #014b8d;
+}
+.globalStock.wowtv .sub_login .withdrawal_com {
+	padding-top: 28px;
+}
+.globalStock.wowtv .sub_login .loign_chk {
+	text-align: center;
+}
+.globalStock.wowtv .sub_login .loign_chk .login_title {
+	font-size: 37px;
+	font-weight: bold;			
+	letter-spacing: -1.85px;	
+	color: #014b8d;	
+}
+.globalStock.wowtv .sub_login .loign_chk .login_title b {
+	display: block;
+	line-height: 1.31;
+	letter-spacing: -1.45px;	
+	font-weight: normal;
+	font-size: 29px;
+	color: #549ef4;
+}
+.globalStock.wowtv .sub_login .loign_chk .txt {
+	font-size: 0.9375rem;	
+	color: #333;	
+	line-height: 1.6;
+  	letter-spacing: -0.75px;	
+	margin-top: 27px;
+}
+
+.globalStock.wowtv .sub_login .agree_area {
+	padding: 24px 16px 90px;	
+	box-sizing: border-box;
+	width: 100%;
+	background-color: #f6f7fa;
+}
+.globalStock.wowtv .sub_login .agree_area .txt {
+	color: #014b8d;
+	line-height: 1.4;
+}
+.globalStock.wowtv .sub_login .agree_area .all_chk_label {
+	margin-top: 25px;
+	padding-bottom: 12px;
+	border-bottom: 1px solid #e1e5ef;
+}
+.globalStock.wowtv .sub_login .agree_area .all_chk_label .label .label_chk {
+	color: #014b8d;
+	font-weight: bold;
+    font-size: 1rem;
+    letter-spacing: -0.7px;
+    line-height: 1.3;	
+}
+.globalStock.wowtv .sub_login .agree_area .all_chk_label .label .label_chk  i {
+	display: inline-block;
+    vertical-align: top;
+    position: relative;    
+    width: 16px;
+    height: 16px;    
+    margin-right: 7px;
+	top: 2px;
+    background: url('../img/icon_agreecheck_wow.svg') no-repeat 0 100%;
+}
+.globalStock.wowtv .sub_login .agree_area .all_chk_label .label.active .label_chk i {
+	background-position: 0 0;
+}
+.globalStock.wowtv .sub_login .agree_area .agree_from {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	margin-top: 20px;
+}
+.globalStock.wowtv .sub_login .agree_area .agree_from .box {
+	position: relative;	
+}
+.globalStock.wowtv .sub_login .agree_area .agree_from .label {	
+	padding: 7px 0;		
+	background: none;
+}
+.globalStock.wowtv .sub_login .agree_area .agree_from .box .terms_btn {
+	position: absolute;	
+	right: 0;
+	top: 4px;    
+    display: inline-block;
+    width: 70px;    
+    border-radius: 3px;
+    color: #fff;
+    font-size: 0.75rem;
+    text-align: center;
+    padding: 7px 5px;	
+    box-sizing: border-box;	
+	background-color: #014b8d;
+}
+.globalStock.wowtv .sub_login .agree_area .agree_from .box:nth-child(2) .terms_btn {
+	top: -2px;
+    padding: 4px 5px;
+	line-height: 16px;
+}
+.globalStock.wowtv .sub_login .agree_area .agree_from .btn_save {
+	background-color: #014b8d;	
+	border: 1px solid #014b8d;
+}
+.globalStock.wowtv .sub_login .agree_area .agree_from .label:first-child,
+.globalStock.wowtv .sub_login .agree_area .agree_from .label:nth-child(2) {
+	margin-bottom: 15px;
+}
+.globalStock.wowtv .sub_login .agree_area .agree_from .label .label_chk {
+	color: #82929f;
+	font-size: 0.875rem;
+	letter-spacing: -0.7px;
+	line-height: 1.3;
+	width: 100%;
+}
+.globalStock.wowtv .sub_login .agree_area .agree_from .label .label_chk i {
+	top: 0;
+	background: url('../img/icon_agreecheck_wow.svg') no-repeat 0 100%;
+}
+.globalStock.wowtv .sub_login .agree_area .agree_from .label.active .label_chk i {
+	background-position:0 0;
+}
+.globalStock.wowtv .sub_login .agree_area .agree_from .conpho_tit {
+	color: #333;	
+	font-size: 1rem;
+	line-height: 1.31;
+  	letter-spacing: -0.8px;
+	padding: 9px 13px;
+	margin-top: 8px;
+	margin-left: 23px;
+	width: 80%;
+  	border-radius: 5px;
+	background-color: #fff;
+}
+.globalStock.wowtv .sub_login .agree_area .agree_from .payBtn {
+	padding: 0;
+}
+.globalStock.wowtv .sub_login .agree_area .agree_from .txt_reject {
+	margin-top: 15px;
+	text-decoration: underline;
+	text-align: center;
+	font-size: 0.875rem;
+	color: #82929f;
+}
+.globalStock.wowtv .main_mid.event_recipe .attention_all {
+	width:calc(100% - 30px);
+	height:228px;
+	margin: 0 auto;
+	background: #f6f7fa;
+	border-radius:16px;
+	text-align:center;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+.globalStock.wowtv .main_mid.event_recipe .attention_all p {
+	display:inline-block;
+	padding:8px 18px;
+	border-radius:15px;
+	background:#fff;
+	color:#014b8d;
+	font-size:0.9rem;
+	text-align:center;
+	position:relative;
+}
+.globalStock.wowtv .sub_service {
+	border-top: 7px solid #014B8D;
+}
+.globalStock.wowtv .sub_service .box_01 {
+	background: url('../img/wowtv/wowbox_01_bg.svg') no-repeat bottom right;
+	padding: 18% 35px 300px;	
+}
+.globalStock.wowtv .sub_service .box_01 img,
+.globalStock.wowtv .sub_service .box_02 img,
+.globalStock.wowtv .sub_service .box_03 img,
+.globalStock.wowtv .sub_service .box_04 img {
+	display: block;	
+	width: 100%;
+}
+.globalStock.wowtv .sub_service .box_02 {
+	padding-bottom: 20px;
+}
+.globalStock.wowtv .sub_service .box_03 {
+	padding-bottom: 40px;
+}
+.globalStock.wowtv .wowtv_applybtn {
+	position:fixed;
+	bottom:0;
+	left:0;
+	right:0;
+	width:100%;
+	max-width:767px;
+	margin:0 auto;
+	z-index:9999;
+}
+.globalStock.wowtv .wowtv_applybtn .btn.btn_apply {
+	display:block;
+	box-sizing:border-box;
+	position:relative;
+	text-align:center;
+	width:100%;
+	font-size:1.125rem;
+	color:#fff;
+	padding:17px 5px 17px 21px;
+	background-color:#C92020;	
+	z-index:9999;
+	opacity:1;
+}
+.globalStock.wowtv .wowtv_applybtn .btn.btn_apply strong {	
+	color:#fff;	
+	font-weight: normal;
+}
+.globalStock.wowtv .wowtv_applybtn .btn.btn_apply::before {
+	content:"";
+	display:inline-block;
+	position:absolute;
+	left:0;
+	bottom:0;
+	background:url('../img/wowtv/bg_btn_wowapply.svg') no-repeat 0 0;
+	width:95px;
+	height:82px;
+	background-size:100%;
+}
+.globalStock.wowtv .wowtv_applybtn .btn.btn_apply i {
+	position:absolute;
+	right:calc(50% - 120px);
+	top:20px;
+	display:inline-block;
+	width:5px;
+	height:10px;
+	background:url('../img/more_white.svg') no-repeat 0 0;
+	background-size:cover;
+}
+@media (min-width:320px) and (max-width:374px) {
+	.globalStock.wowtv .wowtv_applybtn .btn.btn_apply i {
+		right:calc(50% - 110px);
+		top:19px;
+	}
+	.globalStock.wowtv .wowtv_applybtn .btn.btn_apply::before {
+		width:74px;
+		height: 59px;
+	}
+}
+.globalStock.wowtv .sub_recom .sub_mid.bandchart_more p {	
+	color: #014B8D;	
+}
+.globalStock.wowtv .sub_recom .sub_mid.bandchart_more p a.more {			
+	color: #014B8D;			
+	border-bottom: 1px solid #014B8D;	
+}
+.globalStock.wowtv .sub_recom .sub_mid.eventPicks_area .bandchart_sume .box.info p,
+.globalStock.wowtv .sub_recom .sub_mid.eventPicks_area .bandchart_sume .box.sum .title {
+	color: #014B8D;	
+}
+.globalStock.wowtv .sub_search .latest_results .tabsArea .tab_container .txt_box .txt .guide_cho {
+	display: block;	
+    padding-top: 5px;
+    font-size: 0.75rem;    
+    line-height: 16px;
+}
+.globalStock.wowtv .sub_research .txt_box .txt {
+	color: #82929f;	
+}
+.globalStock.wowtv .sub_search .latest_results .tabsArea table.tableRanking .score span {
+	position: relative;
+}
+.globalStock.wowtv .sub_search .latest_results .tabsArea table.tableRanking .score .txt_guide {
+	display: inline-block;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    left: calc(50% + 20px);
+    top: 6px;
+}
+.globalStock.wowtv .sub_search .latest_results .tabsArea table.tableRanking .score .txt_guide img {
+	display: inline-block;
+	width: 100%;
+}
+.globalStock.wowtv .sub_search .latest_results .tabsArea table.tableRanking .score .guide_box {
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-62%,0%);
+	box-shadow:0px 0px 7px 2px #dfdfdf;
+	border-radius:8px;
+	padding:35px 15px 15px;
+	background:#fff;
+	width:340px;
+	box-sizing:border-box;
+	z-index:9998;
+	display:none;
+}
+.globalStock.wowtv .sub_search .latest_results .tabsArea table.tableRanking .score .guide_box .clse {
+	display:inline-block;
+	font-size:0;
+	width:24px;
+	height:24px;
+	box-sizing: border-box;
+	position:absolute;
+	right:-7px;
+	top:-8px;	
+	background-color: #d3d3d3;
+	padding:2px;	
+	border-radius: 50%;
+}
+.globalStock.wowtv .sub_search .latest_results .tabsArea table.tableRanking .score .guide_box .clse::after {
+    content: '';
+    height: 14px;
+    border-left: 1px solid #fff;
+    position: absolute;
+    transform: rotate(45deg);
+	top: 5px;
+    left: 12px;
+}
+.globalStock.wowtv .sub_search .latest_results .tabsArea table.tableRanking .score .guide_box .clse::before {
+    content: '';
+    height: 14px;
+    border-left: 1px solid #fff;
+    position: absolute;
+    transform: rotate(-45deg);
+    top: 5px;
+    left: 12px;
+}
+.globalStock.wowtv .sub_search .latest_results .tabsArea table.tableRanking .score .guide_box.show {
+	display:block;
+}
+.globalStock.wowtv .sub_search .latest_results .tabsArea table.tableRanking .score .guide_box.hide {
+	display:none;
+}
+.globalStock.wowtv .sub_search .latest_results .tabsArea table.tableRanking .score .guide_box .title {
+	font-weight:normal;
+	color:#8380A0;
+	line-height:22px;
+	font-size:0.8rem;
+	display:block;
+	text-align:left;
+}
+.globalStock.wowtv .sub_search .latest_results .tabsArea table.tableRanking .score .guide_box ul {
+	margin-top:15px;
+	margin-bottom:20px;
+}
+.globalStock.wowtv .sub_search .latest_results .tabsArea table.tableRanking .score .guide_box ul li {
+	color:#8380A0;
+	margin-bottom:5px;
+	text-align:left;
+	line-height:22px;
+	font-size:0.8rem;
+	vertical-align:top;
+	font-weight:normal;
+}
+.globalStock.wowtv .sub_search .latest_results .tabsArea table.tableRanking .score .guide_box ul li strong {
+	color:#8380A0;
+	font-size:0.8rem;
+	font-weight: normal;
+}
+.globalStock.wowtv .sub_search .latest_results .tabsArea table.tableRanking .score .guide_box .txt {
+	font-size: 12px;	
+	line-height: 1.42;	
+	color: #6a6a6a;	
+	text-align: left;
+	margin-bottom: 13px;
+}
+.globalStock.wowtv .sub_search .latest_results .tabsArea table.tableRanking .score .guide_box .txt strong {
+	font-size: 12px;	
+	line-height: 1.42;	
+	color: #6a6a6a;	
+}
+.globalStock.wowtv .sub_search .latest_results .tabsArea table.tableRanking .score .guide_box li.list_txt {
+	font-size: 12px;	
+	line-height: 1.42;	
+	text-align: left;
+	color: #6a6a6a;	
+	padding-left: 10px;
+	position: relative;
+	word-break: break-all;
+    word-wrap: break-word;
+}
+.globalStock.wowtv .sub_search .latest_results .tabsArea table.tableRanking .score .guide_box li.list_txt::before {
+	content: '';
+	width: 5px;
+	height: 1px;
+	position: absolute;	
+	left: 0;
+	top: 12px;
+	background-color: #6a6a6a;
+}
+.globalStock.wowtv .sub_briefing .view_con .mid .guide_cho {
+	display: block;
+    color: #82929F;
+    padding-top: 5px;
+    margin-top: 10px;
+    font-size: 13px;
+    line-height: 21px;
+}
+.globalStock.wowtv .sub_briefing .view_con .mid .guide_alarm {
+	display: block;
+    color: #014b8d;
+    padding-top: 5px;
+    margin-top: 20px;
+    font-size: 13px;
+    line-height: 21px;
+	margin-bottom: 0;
+}
+.globalStock.wowtv .sub_briefing .view_con .mid .guide_alarm a {	
+    font-size: 13px;
+}
+.globalStock.wowtv .sub_recom .sub_mid.eventPicks_area .ptfo_area .chart_area .chartData .info .sum .eng,
+.globalStock.wowtv .sub_recom .sub_mid.eventPicks_area .ptfo_area .chart_area .chartData .info .sum .eng a,
+.globalStock.wowtv .sub_search .latest_results .tabsArea .tab_container .txt_box .txt {
+	color: #333;
+}
+.globalStock.wowtv .sub_attract .sub_mid.attract_sub .attract_table .txt_guide {	
+    right: calc(100% / 2 - 8px);
+    top: 23px;
+}
+.globalStock.wowtv .sub_attract .sub_mid.attract_sub .guide_box {
+	transform: translate(-32%,0%);
+}
+.globalStock.wowtv .sub_attract .sub_mid.attract_sub .attract_table th.title {
+	text-align: left;	
+	padding: 5px 3px;
+}
+.globalStock.wowtv .sub_research .sub_top.news_top {	
+	margin-top: 12px;
+    background: #f6f7fa;
+    padding-top: 8px;
+}
+.globalStock.wowtv .sub_research .sub_top.news_top::after {
+	content: '';
+	clear: both;
+}
+.globalStock.wowtv .main_searching .event_banner,
+.globalStock.wowtv .sub_recom .event_banner,
+.globalStock.wowtv .sub_game .event_banner,
+.globalStock.wowtv .sub_attract .event_banner,
+.globalStock.wowtv .search_top .event_banner {
+	width: 100%;
+	margin: 15px 0 0;	
+}
+.globalStock.wowtv .sub_recom .event_banner,
+.globalStock.wowtv .sub_game .event_banner,
+.globalStock.wowtv .sub_attract .event_banner {
+	margin: 0;
+}
+.globalStock.wowtv .sub_search .event_banner {
+	width: 100%;
+	margin: 20px 0 0;
+}
+.globalStock.wowtv .main_searching .event_banner a,
+.globalStock.wowtv .main_searching .event_banner a img,
+.globalStock.wowtv .search_top .event_banner a,
+.globalStock.wowtv .search_top .event_banner a img,
+.globalStock.wowtv .sub_game .event_banner a,
+.globalStock.wowtv .sub_game .event_banner a img,
+.globalStock.wowtv .sub_recom .event_banner a,
+.globalStock.wowtv .sub_recom .event_banner a img,
+.globalStock.wowtv .sub_attract .event_banner a,
+.globalStock.wowtv .sub_attract .event_banner a img,
+.globalStock.wowtv .sub_search .event_banner a,
+.globalStock.wowtv .sub_search .event_banner a img {
+	display: inline-block;
+	width: 100%;
+}
+/* .globalStock.wowtv .schfix_inc.fix_sch .search_top .event_banner {
+	display: none;	
+} */
+.globalStock.wowtv .sub_research .sub_top.news_top .tabsArea_live .tabs_live li {
+	font-size:0.9375rem;
+}
+
+/* 메인 최상단 짧은 배너 서비스장애 */
+.globalStock.wowtv .limit_banner {	
+	margin-bottom: 0;
+}
+
+
+/* IOS 로그인 아이디 체크 css */
+
+.globalStock.wowtv .sub_login .agree_area .agree_from .box {
+	position: relative;		
+	display: flex;
+	flex-wrap: wrap;
+    gap: 15px 3px;
+    justify-content: space-between;
+    align-items: center
+}
+.globalStock.wowtv .sub_login .agree_area .agree_from .label {	
+	padding: 7px 0;		
+	background: none;
+}
+.globalStock.wowtv .sub_login .agree_area .agree_from .label.sub_label {
+	width: 100%;
+}
+.globalStock.wowtv .sub_login .agree_area .agree_from .box .terms_btn {
+	position:relative;
+	left: auto !important;
+	right: 0;
+	top: 0;    
+    display: inline-block;
+    width: 70px;    
+    border-radius: 3px;
+    color: #fff;
+    font-size: 0.75rem;
+    text-align: center;
+    padding: 7px 5px;	
+    box-sizing: border-box;	
+	background-color: #014b8d;
+}
+.globalStock.wowtv .sub_login .agree_area .agree_from .box:nth-child(2) .terms_btn {
+	top: -2px;
+    padding: 4px 5px;
+	line-height: 16px;
+}
+.globalStock.wowtv .sub_login .agree_area .agree_from .btn_save {
+	background-color: #014b8d;	
+	border: 1px solid #014b8d;
+}
+.globalStock.wowtv .sub_login .agree_area .agree_from .label:first-child,
+.globalStock.wowtv .sub_login .agree_area .agree_from .label:nth-child(2) {
+	margin-bottom: 0;
+}
+.globalStock.wowtv .sub_login .agree_area .agree_from .label .label_chk {
+	color: #82929f;
+	font-size: 0.875rem;
+	letter-spacing: -0.7px;
+	line-height: 1.3;
+}
+.globalStock.wowtv .sub_login .agree_area .agree_from .label .label_chk i {
+	top: 0;
+	background: url('../img/icon_agreecheck_wow.svg') no-repeat 0 100%;
+}
+.globalStock.wowtv .sub_login .agree_area .agree_from .label.active .label_chk i {
+	background-position:0 0;
+}
+.globalStock.wowtv .sub_login .agree_area .agree_from .conpho_tit {
+	color: #333;	
+	font-size: 1rem;
+	line-height: 1.31;
+  	letter-spacing: -0.8px;
+	padding: 9px 13px;
+	margin-top: 0;
+	margin-left: 23px;
+	width: 80%;
+  	border-radius: 5px;
+	background-color: #fff;
+}
+/* 회원가입시 휴대폰 번호 수집 */
+.globalStock.wowtv .sub_login .agree_area .agree_from .payBtn {
+	margin-top: 15px;
+	padding: 0;
+}
+.globalStock.wowtv .sub_login .agree_area .agree_from .txt_reject {
+	margin-top: 12px;
+	margin-left: 20px;
+	padding-bottom: 0;
+	text-align: center;
+	font-size: 0.75rem;
+	letter-spacing: -0.6px;
+	text-align: center;
+	color: #82929f;
+	background-color: transparent;
+}
+.globalStock.wowtv .sub_login .agree_area .agree_from .phonePin_form .box {
+	background-color: transparent;
+	margin-top: 8px;
+	padding: 0;
+}
+
+.globalStock.wowtv .sub_login .agree_area .agree_from .phonePin_form .pinInput,
+.globalStock.wowtv .sub_login .agree_area .agree_from .phonePin_form .pinInput_out {	
+	background-color: #fff;
+	width: calc(100% - 20px);	
+	margin-left: 20px;
+}
+
+.globalStock.wowtv .sub_login .agree_area .agree_from .phonePin_form .dsc_error {
+	margin-top: 0;
+	text-align: right;
+}
+.globalStock.wowtv .sub_login .agree_area .agree_from .phonePin_form .pinBtn {	
+	right: 6px;	
+	color: #014b8d;	
+	border: solid 1px #004b8c;	
+	width: 82px;
+}
+.globalStock.wowtv .sub_login .agree_area .agree_from .phonePin_form .pin_countDown {		
+	text-align: right;	
+}
+
+.globalStock.wowtv .sub_login .agree_area .agree_from .phonePin_form .pin_completion {	
+	width: 82px;
+	right: 6px;
+	background-color: #014b8d;
+}
+.globalStock.wowtv .sub_search .sub_mid .adequate_stock .box .con .value_chart .adequate strong {
+	background-color: #fff;	
+}
+.globalStock.wowtv .sub_search .sub_mid .adequate_stock .box .con .value_chart .line .situation.buying,
+.globalStock.wowtv .sub_search .sub_mid .adequate_stock .box .con .value_chart .line .situation::before,
+.globalStock.wowtv .sub_search .sub_mid .adequate_stock .box .con .value_chart .line .situation.buying::after {
+	background-color: #014b8d;	
+}
+.globalStock.wowtv .sub_recom .sub_mid.eventPicks_area .chart_area .chartData .event_name {
+	display: flex;	
+}
+.globalStock.wowtv .sub_recom .sub_mid.eventPicks_area .chart_area .chartData .event_name a {
+	width: auto;
+}
+.globalStock.wowtv .sub_recom .sub_mid.eventPicks_area .chart_area .chartData .event_name .port {		
+	display: inline-block;		
+	vertical-align: top;
+	margin-left: 5px;
+	border-radius: 3px;
+	border: solid 1px #E1E5EF;		
+	font-size: 9px;
+	font-weight: normal;
+	text-align: center;
+	color: #82929F;
+	box-sizing: border-box;
+	padding: 0 2px;
+	position: relative;
+	top: -1px;
+	height: 14px;
+	line-height: 14px;
+}
+.globalStock.wowtv .sub_recom .sub_top.view .chart_area .chartData .info li.port {
+	border: solid 1px #E1E5EF;			
+	color: #82929F;
+}
+
+.globalStock.wowtv .news_bannner {	
+	padding-bottom: 32px;
+	background-color: #f6f7fa;
+}

@@ -1,0 +1,11 @@
+<svg id="icon-alarm" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26">
+  <rect id="사각형_2330" data-name="사각형 2330" width="26" height="26" fill="none"/>
+  <g id="그룹_967" data-name="그룹 967" transform="translate(5 -2)">
+    <g id="그룹_4" data-name="그룹 4" transform="translate(0 5.909)">
+      <path id="패스_13" data-name="패스 13" d="M10.469,22.112H3.853c-1.5,0-1.5-1.477-1.221-2.272.937-2.7,2.584-2.215,2.584-4.373v-5c0-4.2,4.231-4.77,5.282-4.77s5.253.54,5.253,4.742v5c0,2.186,1.647,1.7,2.584,4.373.284.8.312,2.272-1.221,2.272H10.469Z" transform="translate(-2.486 -5.7)" fill="none" stroke="#333" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.6"/>
+    </g>
+    <path id="패스_14" data-name="패스 14" d="M30.7,63.5" transform="translate(-22.689 -41.179)" fill="none" stroke="#333" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.6"/>
+    <path id="패스_15" data-name="패스 15" d="M27.17,65.4a2.385,2.385,0,0,1-4.77,0" transform="translate(-16.745 -42.539)" fill="none" stroke="#333" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.6"/>
+    <path id="패스_16" data-name="패스 16" d="M25.7,3.522A1.646,1.646,0,0,1,27.148,2.5a1.454,1.454,0,0,1,1.363.965" transform="translate(-19.108 2.5)" fill="none" stroke="#333" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.6"/>
+  </g>
+</svg>

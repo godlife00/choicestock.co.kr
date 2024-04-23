@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no" />
+    <title>초이스스탁US</title>
+    <meta name="robots" content="초이스스탁US - 미국주식 쉽고 편리하게'">
+    <meta name="description" content="투자를 쉽고 편리하게, 미국주식가이드, 종목분석, 종목토론, 데이터히어로">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="theme-color" content="#2C295D">
+    <!-- 오픈 그래프 -->
+    <meta property="og:title" content="초이스스탁US - 미국주식 쉽고 편리하게'" />
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="투자를 쉽고 편리하게, 미국주식가이드, 종목분석, 종목토론, 데이터히어로">
+    <meta property="og:image" content="http://godlife.ivyro.net/test/img/choicestockus_thumb.png">
+    <meta property="og:image:width" content="410" />
+    <meta property="og:image:height" content="210" />
+    <meta property="og:url" content="www.choicestock.co.kr">
+    <!-- 파비콘 favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="img/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <!-- jquery-1.12 -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <!-- 이미지 순차적 로딩 lazysizes -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js"></script>
+    <!-- highcharts -->
+    <script src="node_modules/highcharts/highstock.js"></script>
+    <script src="node_modules/highcharts/highcharts-more.js"></script>
+    <script src="node_modules/highcharts/modules/data.js"></script>
+    <script src="node_modules/highcharts/modules/hollowcandlestick.js"></script>
+    <script src="node_modules/highcharts/modules/no-data-to-display.js"></script>
+    <script src="node_modules/highcharts/modules/treemap.js"></script>    
+    <script src="node_modules/highcharts/modules/exporting.js"></script>
+    <script src="node_modules/highcharts/modules/export-data.js"></script>
+    <script src="node_modules/highcharts/modules/accessibility.js"></script>
+    <script src="js/chartjs.js"></script>
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="css/choicestock.css?ver=2.02" />
+    <!-- js -->
+    <script src="js/globalstock.js"></script>    
+</head>
+
+<body class="v_signalStreng globalStock" style="background: silver;">
+    <div id="wrap">        
+        <h3>메인</h3>
+        <div id="header" class="header m_hdr" style="position: relative;">
+            <div class="headerTop">                
+                <div class="hm">
+                    <!-- 확인안한 알림이 있는 경우 class = alarm 보여짐 -->
+                    <a href="member/login_sns.html" class="btn_login">로그인</a>
+                    <a href="stock/alarm_list.html" class="alarm"><img src="img/icon_alarm.png" alt="알림">
+                        <i>확인안함</i></a>
+                    <a href="../stock/menu.html" class="h_menu">
+                        <div class="menu-icon">
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                        </div>
+                    </a>
+                </div>
+                <!-- //hm -->
+            </div>
+            <!-- //headerTop -->
+        </div>
+
+        <br><br>
+
+        <h3>페이지명 + 메뉴</h3>
+        <div id="header" class="header" style="position: relative;">
+            <div class="headerTop">
+                <div class="left">
+                    <h1 class="headerLogo"><span>추천</span></h1>
+                </div>
+                <div class="cen">                    
+                </div>
+                <div class="right">
+                    <a href="menu.html" class="h_menu">
+                        <div class="menu-icon">
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                        </div>
+                    </a>
+                </div>                
+            </div>
+            <!-- //headerTop -->
+        </div>
+
+        <br><br>
+
+        <h3>페이지명 + 뒤로가기 + 관심종목</h3>
+        <div id="header" class="header" style="position: relative;">
+            <div class="headerTop">
+                <div class="left">
+                    <a href="javascript:history.back();" class="go_back">히스토리백</a>
+                </div>
+                <div class="cen">
+                    <h1 class="headerLogo"><span>종목검색</span></h1>
+                </div>
+                <div class="right">
+                    <span class="att"><i class="attention on" style="left:-50px"></i></span>
+                    <span class="att"><i class="attention attention_pop"></i></span>
+                </div>
+            </div>
+            <!-- //headerTop -->
+        </div>
+
+        <br><br>
+
+        <h3>뒤로가기 + 페이지명</h3>
+        <div id="header" class="header" style="position: relative;">
+            <div class="headerTop">
+                <div class="left">
+                    <a href="javascript:history.back();" class="go_back">히스토리백</a>
+                </div>
+                <div class="cen">
+                    <h1 class="headerLogo"><span>미국주식 종목노트</span></h1>
+                </div>
+                <div class="right">                    
+                </div>
+            </div>
+            <!-- //headerTop -->
+        </div>
+
+        <br><br>
+
+        <h3>히스토리백, 알림, 모닝브리핑</h3>
+        <div id="header" class="header" style="position: relative;">
+            <div class="headerTop">
+                <div class="left">
+                    <a href="javascript:history.back();" class="go_back">히스토리백</a>
+                </div>
+                <div class="cen">
+                    <h1 class="headerLogo"><span>알림</span></h1>
+                </div>       
+                <div class="right">                    
+                    <a href="briefing.html" class="go_briefing"><img src="img/btn_briefing.png" alt="모닝브리핑 바로가기"> </a>
+                </div>                         
+            </div>
+            <!-- //headerTop -->
+        </div>
+        <br>
+        <div id="header" class="header" style="position: relative;">
+            <div class="headerTop">
+                <div class="left">
+                    <a href="javascript:history.back();" class="go_back">히스토리백</a>
+                </div>
+                <div class="cen">
+                    <h1 class="headerLogo"><span>모닝브리핑</span></h1>
+                </div>       
+                <div class="right">                    
+                    <a href="alarm_list.html" class="alarm"><img src="img/icon_alarm.png" alt="알림"> <i>확인안함</i></a>
+                </div>                         
+            </div>
+        </div>
+
+        <br><br>
+
+        <br><br><br>
+        <br><br><br>
+
+        <h3>푸터</h3>        
+        <div id="footer" class="chous_footer">
+            <div class="notice">
+                <div class="service_info">
+                    <p>본 서비스는 투자판단에 참고용으로만 사용하실 수 있으며, 모든 투자판단은 투자자 본인의 책임으로 당사는 그 결과에 대해 법적인 일체의 책임을 지지 않습니다.</p>
+                    <p class="dataLink">data from <a href="https://www.quandl.com/" target="_blank">Quandl and Sharadar</a>
+                    </p>
+                </div>
+
+                <ul class="terms_list">
+                    <li><a href="terms.html">이용약관</a></li>
+                    <li><a href="https://www.datahero.co.kr/choicestockus-faq/" target="_blank">서비스 FAQ</a></li>
+                    <li><a href="policy.html"><strong>개인정보처리방침</strong></a></li>
+                    <li><a href="https://www.datahero.co.kr/choicestockus-update/" target="_black">업데이트 소식</a>
+                    </li>
+                    <li><a href="https://www.datahero.co.kr" target="_blank">회사소개</a></li>
+                </ul>
+
+                <div class="foot_info">
+                    <div class="info_tel_box">
+                        <span class="cs"><a href="https://kq64o.channel.io/" target="blank">온라인 1:1 문의하기</a> (평일 9:00~17:00, 점심 11:20~12:20/ 주말 및 공휴일 휴무) </span>                        
+                    </div>
+                    <!-- //info_tel_box -->
+                    <p class="copyright"><a href="https://www.datahero.co.kr" target="_blank">ⓒ (주)데이터히어로</a><i></i>
+                        <strong>대표자</strong> 김인중 <br>서울특별시 서초구 강남대로 311 <i></i> 사업자등록번호 291-88-01393 <i></i>
+                        <!-- <strong>대표번호 <a href="tel:02-6225-2300"><strong>02-6225-2300</strong></a></strong> -->
+                    </p>
+                </div>
+                <!-- //foot_info -->
+                <div class="family_site">
+                    <strong>Family</strong>&nbsp;&nbsp;&nbsp;&gt;&nbsp;&nbsp;&nbsp;
+                    <a href="https://super.choicestock.co.kr/?utm_source=choicestock&utm_medium=banner&utm_campaign=service" target="blank">슈퍼스톡스</a><i></i>
+                    <a href="https://value.choicestock.co.kr/?utm_source=choicestock&utm_medium=banner&utm_campaign=service" target="blank">밸류라인</a>
+                    <i></i> <a href="https://bigfinance.co.kr/" target="blank">빅파이낸스</a>
+                </div>
+                <!-- //family_site -->
+
+            </div>
+            <!-- //notice -->
+        </div>
+        <!-- //footer -->
+
+        <br><br>
+        <br><br>
+        
+
+        <h3>GNB</h3>        
+        <div class="gnb">
+            <ul class="list">
+                <li class="home active"><a href="../index.html">홈</a></li>
+                <li class="sch active"><a href="../search/searching.html">검색</a></li>
+                <li class="stock active"><a href="../stock/recom.html">추천</a></li>
+                <li class="excavation active"><a href="../stock/note.html">발굴</a></li>
+                <li class="attention active"><a href="../search/searching_attention.html">관심</a></li>
+            </ul>
+        </div>
+        <!-- //gnb -->
+        <div class="gnb" style="bottom: 54px;">
+            <ul class="list">
+                <li class="home"><a href="../index.html">홈</a></li>
+                <li class="sch"><a href="../search/searching.html">검색</a></li>
+                <li class="stock"><a href="../stock/recom.html">추천</a></li>
+                <li class="excavation"><a href="../stock/note.html">발굴</a></li>
+                <li class="attention"><a href="../search/searching_attention.html">관심</a></li>
+            </ul>
+        </div>
+        
+    </div>
+    <!-- //wrap -->
+</body>
+
+</html>

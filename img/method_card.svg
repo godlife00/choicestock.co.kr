@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">
+  <g id="card" transform="translate(0 0.967)">
+    <rect id="사각형_7760" data-name="사각형 7760" width="28" height="28" transform="translate(0 -0.967)" fill="red" opacity="0"/>
+    <rect id="사각형_7757" data-name="사각형 7757" width="24" height="17" rx="2" transform="translate(2 5.033)" fill="none" stroke="#333" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    <line id="선_566" data-name="선 566" x2="24" transform="translate(2 11.033)" fill="none" stroke="#333" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    <path id="패스_18548" data-name="패스 18548" d="M12,18h.012" transform="translate(6.631 -9.899)" fill="none" stroke="#333" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    <path id="패스_18549" data-name="패스 18549" d="M12,18h.012" transform="translate(10.631 -9.899)" fill="none" stroke="#333" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+  </g>
+</svg>

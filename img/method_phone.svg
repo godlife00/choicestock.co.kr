@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">
+  <g id="smartphone" transform="translate(0 -0.625)">
+    <rect id="사각형_7759" data-name="사각형 7759" width="28" height="28" transform="translate(0 0.625)" fill="red" opacity="0"/>
+    <rect id="사각형_7758" data-name="사각형 7758" width="18" height="24" rx="2" transform="translate(5 2.625)" fill="none" stroke="#333" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    <path id="패스_18547" data-name="패스 18547" d="M12,18h.012" transform="translate(1.631 3.693)" fill="none" stroke="#333" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+  </g>
+</svg>
