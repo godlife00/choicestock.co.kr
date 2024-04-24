@@ -68,10 +68,10 @@
                         <h3 class="title">초이스스탁US - 월 정기결제 <span class="suggestion">추천</span></h3>                        
                     </div>                    
                     <div class="payRight">
-                        <span class="pay01">55,000원</span>
-                        <span class="pay02">3,300원
+                        <span class="pay01">33,000원</span>
+                        <span class="pay02">1,000원
                             <span class="pay_sale">
-                                <strong>신규가입 할인가</strong>
+                                <strong>신규가입 할인</strong>
                             </span>
                         </span>
                     </div>
@@ -82,22 +82,24 @@
             <!-- //select_payTop -->            
 
             <!-- 결제 정보 입력 -->
-            <div class="payment_guide">
+            <div class="payment_guide">                
+                <p class="pay_guideTxt">*신규 월 정기결제 시, 첫째 달에 1,000원이 결제되며, 둘째 달 부터는 매월 33,000원으로 자동결제됩니다.</p>
                 <p class="pay_guideTxt">*본인 소유의 신용카드(롯데, 삼성, 신한, 현대, NH) 또는 체크카드</p>
-                <p class="pay_guideTxt"><span class="card_overseas">*혹시 해외카드로 결제하시나요?</span></p>
+                <p class="pay_guideTxt"><span class="card_overseas">*혹시 해외카드로 결제하시나요? <img src="../img/txt_guide_us.svg" alt="가이드보기"></span></p>
                 <div class="mapage_form">                    
                     <div class="subscription-form">
                         <h1 class="form_title">신용카드 카드인증</h1>
                         <form action="" method="" class="form_wrap">
                             <div class="selectbox">                                
                                 <h1 class="card_title">결제수단</h1>
-                                <label for="card" class="t_label">신용카드(체크카드)</label>
+                                <label for="card" class="t_label">결제할 카드사 선택</label>
                                 <select name="card" id="select">                                    
+                                    <option value="선택">결제할 카드사 선택</option>
                                     <option value="롯데">롯데카드</option>
                                     <option value="삼성">삼성카드</option>
                                     <option value="신한">신한카드</option>
                                     <option value="현대">현대카드</option>
-                                    <option value="NH">NH카드</option>
+                                    <option value="NH">NH카드</option>                                    
                                 </select>
                                 <p class="teh_guideTxt">*신용카드(롯데, 삼성, 신한, 현대, NH) 또는 체크카드</p>
                             </div>   
@@ -134,7 +136,7 @@
                                 <div class="top">                            
                                     <span class="agree">
                                         <input type="checkbox" id="agree_all" class="chk_label" />
-                                        <label for="agree_all"><span class="s_txt">결제정보 및 유의사항과 대행 서비스 이용약관에 모두 동의합니다.</span></label>
+                                        <label for="agree_all"><span class="s_txt">결제정보 및 유의사항과<br> 대행 서비스 이용약관에 모두 동의합니다.</span></label>
                                         <!-- 전체약관동의(id="agree_all") 체크인 경우, name='allCheck' 전체 선택됩니다. 반대는 전체 해제 -->
                                     </span>
                                     <span class="show">더보기</span>
@@ -142,10 +144,10 @@
                                 <div class="agree_chk">
                                     <p class="txt">
                                         <input type="checkbox" name='allCheck' id="agree_01" class="chk_label" checked />
-                                        <label for="agree_01"><span class="s_txt">[필수]전자금융거래 약관 동의</span></label>
+                                        <label for="agree_01"><span class="s_txt">[필수]전자금융거래 약관 동의</span></label>                                                                                
                                     </p>
                                     <span class="age_link age_pop01">더보기</span>
-                                </div>
+                                </div>                                
                                 <div class="agree_chk">
                                     <p class="txt">
                                         <input type="checkbox" name='allCheck' id="agree_02" class="chk_label" />
@@ -160,14 +162,21 @@
                                     </p>
                                     <span class="age_link age_pop03">더보기</span>
                                 </div>
-                                <div class="agree_chk">
+                                <div class="agree_chk caution">
                                     <p class="txt">
                                         <input type="checkbox" name='allCheck' id="agree_04" class="chk_label" />
                                         <label for="agree_04"><span class="s_txt">[필수]결제정보 및 유의사항 동의</span></label>
                                         <span class="agree_txt">납부해야 할 금액에 대해 신청한 신용카드 정보에서 지정된 출금일에 인출(결제)되는 것에 동의합니다.</span>
+                                        <!-- 월 정기결제 -->
+                                        <span class="agree_txt agree_title"><strong>1개월 정기결제</strong></span>
+                                        <span class="agree_txt agree_caution">월정기결제는 언제든 해지할 수 있습니다. 월정기결제의 경우 주기가 종료될 때까지는 서비스를 계속 이용할 수 있으며, 결제 금액은 환불되지 않습니다. <b>단, 결제 당일에 한하여 해지 시 전액 환불되며, 서비스 이용은 즉시 종료됩니다.</b><span class="refund_terms">(환불정책 보기)</span></span>
+                                        <!-- 연간 정기결제 -->
+                                        <span class="agree_txt agree_title"><strong>연간 정기결제</strong></span>
+                                        <span class="agree_txt agree_caution">연간정기결제는 언제든 해지할 수 있습니다. 연간정기결제 해지의 경우 <b> 계약 경과일에 따라 환불 금액이 달라집니다.</b> <span class="refund_terms">(환불정책 보기)</span></span>                                        
                                     </p>
                                     <span class="age_link age_pop04">더보기</span>
-                                </div>
+                                </div>                                
+                                
                             </div>
                             <!-- //payment_note -->                                                        
                         </form>
@@ -236,13 +245,15 @@
                 </div>
                 <div class="pop_con">
                     <p class="paypal_title">해외카드는 <b>페이팔</b>로 간편하게 결제할 수 있습니다.</p>
-                    <p class="paypal_link">페이팔로 결제하기 : <a href="">https://URL</a></p>
-                    <p class="paypal_txt">- 1개월 정기결제 29달러 → 첫달 3달러 결제, 이후 29달러 결제</p>                        
+                    <p class="paypal_link">페이팔로 결제하기 : <a href="https://bit.ly/pp_choice" target="_blank" >https://bit.ly/pp_choice</a></p>
+                    <p class="paypal_txt">- 1개월 정기결제 $29 → 첫달 $0.99 결제, 이후 -> $29 결제</p>                        
                     <p class="paypal_txt">- 페이팔로 결제후 아래정보를 <b>고객센터로 꼭 알려주세요!</b></p>
                     <ul class="paypal_step">
                         <li><b>1&#41; 결제일</b></li>
-                        <li><b>2&#41; 페이팔 결제 시 입력 이메일</b></li>
-                        <li><b>3&#41; 서비스 가입 이메일</b></li>
+                        <li><b>2&#41; 페이팔 결제 시 입력 이메일</b></li>                    
+                    </ul>
+                    <ul class="paypal_step">                        
+                        <li><b>3&#41; 서비스 가입 이메일</b></li>                        
                         <li><b>4&#41; 회원이름</b></li>
                     </ul>
                     <p class="progress_txt">*페이팔 결제 확인은 영업일 기준 1~2일 소요되는점 양해바랍니다.</p>
@@ -759,6 +770,30 @@
                 </div>
             </div>
             <!-- //(필수) 결제정보 및 유의사항 동의 -->
+
+            <!-- 환불 정책 -->            
+            <div class="modal refundTerms_pop01">
+                <div class="pop_header">
+                    <h1 class="pop_title">환불정책</h1>
+                    <span class="clse">
+                        <!--닫기-->
+                    </span>
+                </div>
+                <div class="pop_con">
+                    <p class="txt">                        
+                        1. <strong>[기간결제]</strong>유료서비스가 1개월(결제 기준)을 초과하여 지속되는 기간결제의 경우 결제금액에서 이용일수와 환불수수료(서비스 결제금액의 3.5%)를 차감한 금액을 환불합니다.                        
+                        
+                        2. <strong>[정기결제]</strong>1개월 단위의 정기결제(월간플랜)의 경우 결제 주기가 종료될 때까지는 서비스를 계속 이용할 수 있으며, 관련 법률이 허용하는 범위에서 결제 금액은 환불되지 않습니다.
+                        단, 결제신청 당일에 한하여 서비스 해지 요청 시 결제금액은 전액 환불 되며, 유료서비스 이용은 즉시 종료됩니다.                        
+                        
+                        3. <strong>[연간정기결제]</strong> 1년 단위의 정기결제(연간플랜)의 경우 계약 경과일에 따라 환불 금액이 달라집니다.
+                        ∙ 결제일로부터 3일 이내 해지 요청 시, 결제금액 전액을 환불합니다.
+                        ∙ 결제일로부터 90일 이내 해지 요청 시, 결제금액에서 이용일수를 차감한 금액의 70%에 해당하는 금액을 환불합니다.
+                        ∙ 결제일로부터 90일을 초과하여 해지 요청 시, 결제금액에서 이용일수를 차감한 금액의 30%에 해당하는 금액을 환불합니다.
+                    </p>              
+                </div>
+                <a href="../terms.html" class="terms_link" target="_blank">이용약관 전체보기</a>
+            </div>
 
             <div class="blocker"></div>
         </div>

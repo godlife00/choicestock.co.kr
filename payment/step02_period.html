@@ -65,14 +65,14 @@
             <div class="select_payTop">                
                 <div class="step_box">
                     <div class="top">
-                        <h3 class="title">초이스스탁US - 기간결제(3개월) <span class="suggestion">10%</span>
+                        <h3 class="title">초이스스탁US - 기간결제(6개월) <span class="suggestion">16%</span>
                         </h3>
                     </div>                                        
                     <div class="payRight">
-                        <span class="pay01">165,000원</span>
-                        <span class="pay02">148,500원
+                        <span class="pay01">198,000원</span>
+                        <span class="pay02">165,000원
                             <span class="pay_sale">
-                                <strong>(월 49,500원)</strong>
+                                <strong>(월 27,500원)</strong>
                             </span>
                         </span>
                     </div>
@@ -89,16 +89,27 @@
                         <form action="" method="" class="form_wrap">                            
                             <div class="selectbox">                                
                                 <h1 class="card_title">결제수단</h1>
-                                <label for="card" class="t_label">신용카드(체크카드)</label>
-                                <select name="card" id="select">                                    
-                                    <option value="롯데">롯데카드</option>
-                                    <option value="삼성">삼성카드</option>
-                                    <option value="신한">신한카드</option>
-                                    <option value="현대">현대카드</option>
-                                    <option value="NH">NH카드</option>
-                                </select>
-                                <p class="teh_guideTxt">*신용카드(롯데, 삼성, 신한, 현대, NH) 또는 체크카드</p>
-                            </div>    
+                                <label for="card" class="t_label">결제 수단을 선택해주세요</label>
+                                <select name="card" id="select">              
+                                    <option value="선택">결제 수단을 선택해주세요</option>                       
+                                    <option value="가상계좌">가상계좌(무통장)</option>                                                          
+                                    <option value="계좌이체">계좌이체</option>                                    
+                                    <option value="신용카드">신용카드(체크카드)</option>                                    
+                                </select>  
+                                <!-- 신용카드 선택시 아래 카드 선택 노출 -->
+                                <div class="selectbox card_sect">                                         
+                                    <label for="card2" class="t_label">결제할 카드사 선택</label>                                
+                                    <select name="card2" id="select_card">             
+                                        <option value="선택">결제할 카드사 선택</option>                       
+                                        <option value="롯데">롯데카드</option>
+                                        <option value="삼성">삼성카드</option>
+                                        <option value="신한">신한카드</option>
+                                        <option value="현대">현대카드</option>
+                                        <option value="NH">NH카드</option>
+                                    </select>
+                                    <p class="teh_guideTxt">*신용카드(롯데, 삼성, 신한, 현대, NH) 또는 체크카드</p>
+                                </div> 
+                            </div>                              
                             
                             <div class="couponNumber">
                                 <label for="couponNumber" class="t_label">쿠폰이 있으세요?</label>
@@ -119,13 +130,9 @@
                                     </span>
                                     <span class="show">더보기</span>
                                 </div>                                
-                                <p class="agree_txt">
-                                    기간 결제는 일 단위(기본 31일)로 제공됩니다.
-                                    <br>
-                                    결제 당일을 제외한 이용 기간 중 해지를 원하는 경우, 
-                                    이용 일수를 제외하고 부분 환불 가능합니다.
-                                    <br><br>                                        
-                                    상기 내용은 당사의 사정에 따라 사전고지 없이 변경될 수 있습니다.                                         
+                                <p class="agree_txt">                                    
+                                    기간결제는 언제든지 해지할 수 있습니다. 기간결제 해지의 경우 결제금액 - (이용일수 + 환불수수료(3.5%))를 차감한 금액을 환불합니다.
+                                    <span class="refund_terms">(환불정책 보기)</span>
                                 </p>
                             </div>
                             <!-- //payment_note -->                                                        
@@ -185,6 +192,32 @@
         <!-- modal 팝업 뭉치. 전페이지 공통으로 들어갑니다. -->
         <div class="modalBox">
 
+            <!-- 환불 정책 -->
+            <div class="modalBox">
+                <div class="modal refundTerms_pop01">
+                    <div class="pop_header">
+                        <h1 class="pop_title">환불정책</h1>
+                        <span class="clse">
+                            <!--닫기-->
+                        </span>
+                    </div>
+                    <div class="pop_con">
+                        <p class="txt">                        
+                            1. <strong>[기간결제]</strong>유료서비스가 1개월(결제 기준)을 초과하여 지속되는 기간결제의 경우 결제금액에서 이용일수와 환불수수료(서비스 결제금액의 3.5%)를 차감한 금액을 환불합니다.                        
+                            
+                            2. <strong>[정기결제]</strong>1개월 단위의 정기결제(월간플랜)의 경우 결제 주기가 종료될 때까지는 서비스를 계속 이용할 수 있으며, 관련 법률이 허용하는 범위에서 결제 금액은 환불되지 않습니다.
+                            단, 결제신청 당일에 한하여 서비스 해지 요청 시 결제금액은 전액 환불 되며, 유료서비스 이용은 즉시 종료됩니다.                        
+                            
+                            3. <strong>[연간정기결제]</strong> 1년 단위의 정기결제(연간플랜)의 경우 계약 경과일에 따라 환불 금액이 달라집니다.
+                            ∙ 결제일로부터 3일 이내 해지 요청 시, 결제금액 전액을 환불합니다.
+                            ∙ 결제일로부터 90일 이내 해지 요청 시, 결제금액에서 이용일수를 차감한 금액의 70%에 해당하는 금액을 환불합니다.
+                            ∙ 결제일로부터 90일을 초과하여 해지 요청 시, 결제금액에서 이용일수를 차감한 금액의 30%에 해당하는 금액을 환불합니다.
+                        </p>              
+                    </div>
+                    <a href="../terms.html" class="terms_link" target="_blank">이용약관 전체보기</a>
+                </div>
+            </div>
+
 
             <div class="blocker"></div>
         </div>
@@ -213,15 +246,27 @@
         $('.v_signalStreng.globalStock .sub_payment .payment_note .top .show').on("click", function () {                                                                
             $('.v_signalStreng.globalStock .sub_payment .mapage_form .payment_note .agree_txt').each(function() {
                 if ($(this).css('display') === 'none') {
-                    $(this).css('display', 'flex');
+                    $(this).css('display', 'block');
                     $('.v_signalStreng.globalStock .sub_payment .payment_note .top .show').addClass('rotated');
                 } else {
                     $(this).css('display', 'none');
                     $('.v_signalStreng.globalStock .sub_payment .payment_note .top .show').removeClass('rotated');
                 }
             });
+        }); 
+        
+        // 신용카드 선택시 카드 선택 셀렉트 보이게 하는 스크립트
+        document.getElementById("select").addEventListener("change", function () {
+            var cardSect = document.querySelector(".card_sect"); // card_sect 요소 선택
+            if (this.value === "신용카드") {
+                cardSect.style.display = "block"; // 신용카드 섹션 보이기
+            } else {
+                cardSect.style.display = "none"; // 다른 결제수단 선택 시 숨기기
+            }
         });
-    });
+
+    });    
+        
 </script>
 
 </html>

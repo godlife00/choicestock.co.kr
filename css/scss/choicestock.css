@@ -13,7 +13,6 @@
 .v_signalStreng.globalStock #header.fix_header {
   position: fixed;
   top: 0;
-  border-bottom: 1px solid #e0e4e9;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.08);
 }
 .v_signalStreng.globalStock #header.fix_header .event2024_payment_sub {
@@ -198,6 +197,20 @@
 .v_signalStreng.globalStock #header.m_hdr .headerTop .hm .h_menu {
   position: relative;
   top: 2px;
+}
+.v_signalStreng.globalStock #header .event2024_payment_sub {
+  margin-left: -16px;
+  margin-right: -16px;
+}
+.v_signalStreng.globalStock #header .event2024_payment_sub a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+.v_signalStreng.globalStock #header .event2024_payment_sub a img {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
 }
 
 #footer {
@@ -883,7 +896,7 @@ body, #wrap {
 .globalStock .middle_banner.event .link_banner img {
   display: block;
   width: 100%;
-  background: url("/img/banner/banner_free_2weeks.png") no-repeat left top;
+  background: url("../../img/banner/banner_free_2weeks.png") no-repeat left top;
   background-size: cover;
 }
 
@@ -1182,7 +1195,7 @@ table.tableRanking td {
   right: 0;
   width: 26px;
   height: 26px;
-  background: url("/img/select.png") no-repeat 0 0;
+  background: url("../../img/select.png") no-repeat 0 0;
 }
 
 .selectbox label {
@@ -1279,7 +1292,7 @@ table.tableRanking td {
   margin-right: 10px;
   line-height: 42px;
   padding-bottom: 3px;
-  background: url("/img/more_btm.svg") no-repeat center center;
+  background: url("../../img/more_btm.svg") no-repeat center center;
   position: relative;
   top: 4px;
 }
@@ -1317,7 +1330,7 @@ table.tableRanking td {
   display: inline-block;
   width: 22px;
   height: 22px;
-  background: url("/img/icon_purchase.svg") no-repeat center center;
+  background: url("../../img/icon_purchase.svg") no-repeat center center;
   margin-right: 11px;
   vertical-align: sub;
 }
@@ -1369,7 +1382,7 @@ table.tableRanking td {
 
 /* 별점 */
 .starR {
-  background: url("/img/ico_review.png") no-repeat -24px 0;
+  background: url("../../img/ico_review.png") no-repeat -24px 0;
   background-size: auto 100%;
   width: 14px;
   height: 14px;
@@ -1396,7 +1409,7 @@ table.tableRanking td {
 .globalStock .sub_search .no_attdata {
   margin: 20px auto 50px;
   border-radius: 20px;
-  background: #f7f8f9 url("/img/bg_nodata.png") no-repeat center 50px;
+  background: #f7f8f9 url("../../img/bg_nodata.png") no-repeat center 50px;
   width: calc(100% - 30px);
   height: 400px;
   text-align: center;
@@ -1443,7 +1456,7 @@ table.tableRanking td {
   width: 30px;
   height: 40px;
   font-size: 0;
-  background: url("/img/bg_del.png") no-repeat 50% 16px;
+  background: url("../../img/bg_del.png") no-repeat 50% 16px;
   vertical-align: top;
   z-index: 999;
 }
@@ -1468,7 +1481,7 @@ table.tableRanking td {
   float: right;
   width: 38px;
   height: 38px;
-  background: url("/img/btn_handle.png") no-repeat center center;
+  background: url("../../img/btn_handle.png") no-repeat center center;
   font-size: 0;
   background-size: 20px 12px;
 }
@@ -1691,7 +1704,7 @@ table.tableRanking td {
   position: absolute;
   left: 0;
   bottom: 0;
-  background: url("/img/bg_btn_apply.png") no-repeat 0 0;
+  background: url("../../img/bg_btn_apply.png") no-repeat 0 0;
   width: 76px;
   height: 62px;
   background-size: 100%;
@@ -1704,7 +1717,7 @@ table.tableRanking td {
   display: inline-block;
   width: 5px;
   height: 10px;
-  background: url("/img/more_yel.png") no-repeat 0 0;
+  background: url("../../img/more_yel.png") no-repeat 0 0;
   background-size: cover;
 }
 
@@ -2618,7 +2631,7 @@ table.tableRanking td {
   display: inline-block;
   width: 5px;
   height: 8px;
-  background: url("/img/more_blue.png") no-repeat 0 0;
+  background: url("../../img/more_blue.png") no-repeat 0 0;
   background-size: cover;
 }
 
@@ -3363,7 +3376,7 @@ table.tableRanking td {
   width: 18px;
   height: 18px;
   margin-bottom: 0;
-  background: url("/img/game_trans_b.svg") no-repeat 0 0;
+  background: url("../../img/game_trans_b.svg") no-repeat 0 0;
   background-size: 60px 18px;
 }
 
@@ -3433,7 +3446,7 @@ table.tableRanking td {
   display: inline-block;
   width: 5px;
   height: 10px;
-  background: url("/img/icon_moreR.png") no-repeat center center;
+  background: url("../../img/icon_moreR.png") no-repeat center center;
   background-size: cover;
 }
 
@@ -3450,7 +3463,7 @@ table.tableRanking td {
   top: 2px;
   width: 13px;
   height: 12px;
-  background: url("/img/heart_attention.svg") no-repeat 0 1px;
+  background: url("../../img/heart_attention.svg") no-repeat 0 1px;
   margin-right: 3px;
   background-size: 12px 24px;
 }
@@ -3640,7 +3653,7 @@ table.tableRanking td {
   height: 18px;
   margin-bottom: 0;
   margin-top: 2px;
-  background: url("/img/game_trans_b.svg") no-repeat 0 0;
+  background: url("../../img/game_trans_b.svg") no-repeat 0 0;
   background-size: auto 18px;
 }
 
@@ -4014,7 +4027,7 @@ table.tableRanking td {
 
 .globalStock .main_mid.note_area .lst_type2.lst_lock dt.tit strong {
   padding-left: 20px;
-  background: url("/img/prm_tabsLock.svg") no-repeat 0 center;
+  background: url("../../img/prm_tabsLock.svg") no-repeat 0 center;
   word-break: break-all;
 }
 
@@ -4039,7 +4052,7 @@ table.tableRanking td {
   position: relative;
   float: left;
   margin: -80px 10px 0 0;
-  background: #fff url("/img/noimg.png") no-repeat center center;
+  background: #fff url("../../img/noimg.png") no-repeat center center;
   background-size: cover;
   border: 1px solid #E0E4E9;
   border-radius: 5px;
@@ -4387,7 +4400,7 @@ table.tableRanking td {
   margin-left: -41px;
   z-index: 2;
   display: inline-block;
-  background: #E6E7F4 url("/img/graph_prmB.png") no-repeat 0 0;
+  background: #E6E7F4 url("../../img/graph_prmB.png") no-repeat 0 0;
   background-size: 100% auto;
   width: 81px;
   height: 19px;
@@ -4602,7 +4615,7 @@ table.tableRanking td {
   display: inline-block;
   width: 6px;
   height: 10px;
-  background: url("/img/more_yel.png") no-repeat 0 0;
+  background: url("../../img/more_yel.png") no-repeat 0 0;
   background-size: 6px 10px;
   margin-left: 10px;
 }
@@ -4842,7 +4855,7 @@ table.tableRanking td {
 
 .globalStock .main_btm.banner_area .banner_prm .cho_prm i {
   display: inline-block;
-  background: url("/img/Icon_lock.svg") no-repeat;
+  background: url("../../img/Icon_lock.svg") no-repeat;
   width: 10px;
   height: 13px;
   background-size: 10px 13px;
@@ -4889,7 +4902,7 @@ table.tableRanking td {
   margin: 0 8px;
   position: relative;
   top: 1px;
-  background: url("/img/Icon_phone.png") no-repeat 0 0;
+  background: url("../../img/Icon_phone.png") no-repeat 0 0;
   background-size: 100% 100%;
 }
 
@@ -5253,7 +5266,7 @@ table.tableRanking td {
   top: 3px;
   width: 12px;
   height: 12px;
-  background: url("/img/icon_awesome.svg") no-repeat center center;
+  background: url("../../img/icon_awesome.svg") no-repeat center center;
 }
 
 .globalStock .sub_recom .sub_mid.bandchart_more p a.more {
@@ -5907,7 +5920,7 @@ table.tableRanking td {
   top: 3px;
   width: 12px;
   height: 12px;
-  background: url("/img/icon_awesome.svg") no-repeat center center;
+  background: url("../../img/icon_awesome.svg") no-repeat center center;
 }
 
 .globalStock .sub_recom .bandchart_sume .box.info p a.more {
@@ -6089,7 +6102,7 @@ table.tableRanking td {
 
 .globalStock .sub_recom .sub_mid.eventPicks_area .banner_prm .cho_prm i {
   display: inline-block;
-  background: url("/img/Icon_lock.svg") no-repeat;
+  background: url("../../img/Icon_lock.svg") no-repeat;
   width: 10px;
   height: 13px;
   background-size: 10px 13px;
@@ -6521,7 +6534,7 @@ table.tableRanking td {
   width: 100%;
   min-height: 177px;
   box-sizing: border-box;
-  background: url("/img/bg_wow_video.jpg") no-repeat center center;
+  background: url("../../img/bg_wow_video.jpg") no-repeat center center;
   background-size: cover;
   position: relative;
   padding-bottom: 48%;
@@ -6682,7 +6695,7 @@ table.tableRanking td {
   top: 3px;
   width: 12px;
   height: 12px;
-  background: url("/img/icon_awesome.svg") no-repeat center center;
+  background: url("../../img/icon_awesome.svg") no-repeat center center;
 }
 
 .globalStock .sub_recom .sub_mid .tabsArea .tab_container .tab_content .one_step {
@@ -7454,7 +7467,7 @@ table.tableRanking td {
   top: 23px;
   width: 14px;
   height: 14px;
-  background: url("/img/swiper_btn.png") no-repeat 0 0;
+  background: url("../../img/swiper_btn.png") no-repeat 0 0;
   background-size: 32px 14px;
   border: 0;
   outline: none;
@@ -7780,7 +7793,7 @@ table.tableRanking td {
   width: 18px;
   height: 18px;
   margin-bottom: 4px;
-  background: url("/img/game_trans_b.svg") no-repeat 0 -25px;
+  background: url("../../img/game_trans_b.svg") no-repeat 0 -25px;
   background-size: auto 18px;
 }
 
@@ -8017,7 +8030,7 @@ table.tableRanking td {
   margin-left: -30px;
   z-index: 2;
   display: inline-block;
-  background: #E6E7F4 url("/img/graph_prm.png") no-repeat 0 0;
+  background: #E6E7F4 url("../../img/graph_prm.png") no-repeat 0 0;
   background-size: 100% auto;
   width: 60px;
   height: 19px;
@@ -8484,7 +8497,7 @@ table.tableRanking td {
   margin-left: -30px;
   z-index: 2;
   display: inline-block;
-  background: #E6E7F4 url("/img/graph_prm.png") no-repeat 0 0;
+  background: #E6E7F4 url("../../img/graph_prm.png") no-repeat 0 0;
   background-size: 100% auto;
   width: 60px;
   height: 19px;
@@ -8595,7 +8608,7 @@ table.tableRanking td {
 
 .globalStock .sub_analysis .sub_mid.eventPicks_area .banner_prm .cho_prm i {
   display: inline-block;
-  background: url("/img/Icon_lock.svg") no-repeat;
+  background: url("../../img/Icon_lock.svg") no-repeat;
   width: 10px;
   height: 13px;
   background-size: 10px 13px;
@@ -8915,7 +8928,7 @@ table.tableRanking td {
   margin-left: -30px;
   z-index: 2;
   display: inline-block;
-  background: #E6E7F4 url("/img/graph_prm.png") no-repeat 0 0;
+  background: #E6E7F4 url("../../img/graph_prm.png") no-repeat 0 0;
   background-size: 100% auto;
   width: 60px;
   height: 19px;
@@ -9361,7 +9374,7 @@ table.tableRanking td {
   display: inline-block;
   width: 18px;
   height: 16px;
-  background: url("/img/heart_attention.svg") no-repeat 0 1px;
+  background: url("../../img/heart_attention.svg") no-repeat 0 1px;
   margin-right: 5px;
 }
 
@@ -9609,7 +9622,7 @@ table.tableRanking td {
   margin-left: -32px;
   z-index: 2;
   display: inline-block;
-  background: #E6E7F4 url("/img/graph_prm.png") no-repeat 0 0;
+  background: #E6E7F4 url("../../img/graph_prm.png") no-repeat 0 0;
   background-size: 100% auto;
   width: 60px;
   height: 19px;
@@ -9711,7 +9724,7 @@ table.tableRanking td {
   top: 3px;
   width: 18px;
   height: 16px;
-  background: url("/img/heart_attention.svg") no-repeat 0 1px;
+  background: url("../../img/heart_attention.svg") no-repeat 0 1px;
   background-size: auto 34px;
   margin-right: 5px;
 }
@@ -9747,7 +9760,7 @@ table.tableRanking td {
 .globalStock .catch_wrap .no_data {
   margin-top: 20px;
   border-radius: 20px;
-  background: #fff url("/img/bg_nodata.png") no-repeat center 70px;
+  background: #fff url("../../img/bg_nodata.png") no-repeat center 70px;
   box-sizing: border-box;
   padding-top: 220px;
   padding-bottom: 20px;
@@ -9774,7 +9787,7 @@ table.tableRanking td {
   display: inline-block;
   width: 10px;
   height: 13px;
-  background: url("/img/Icon_lockB.png") no-repeat 0 0;
+  background: url("../../img/Icon_lockB.png") no-repeat 0 0;
   background-size: 10px 13px;
   margin-right: 3px;
 }
@@ -9800,7 +9813,7 @@ table.tableRanking td {
   display: inline-block;
   width: 6px;
   height: 10px;
-  background: url("/img/more_yel.png") no-repeat 0 0;
+  background: url("../../img/more_yel.png") no-repeat 0 0;
   background-size: 6px 10px;
   margin-left: 10px;
 }
@@ -9874,7 +9887,7 @@ table.tableRanking td {
   display: inline-block;
   width: 5px;
   height: 10px;
-  background: url("/img/icon_moreRR.png") no-repeat 0 0;
+  background: url("../../img/icon_moreRR.png") no-repeat 0 0;
   background-size: cover;
 }
 
@@ -9920,7 +9933,7 @@ table.tableRanking td {
   display: inline-block;
   width: 10px;
   height: 13px;
-  background: url("/img/Icon_lockF.png") no-repeat 0 0;
+  background: url("../../img/Icon_lockF.png") no-repeat 0 0;
   background-size: 10px 13px;
   margin-right: 3px;
 }
@@ -9958,7 +9971,7 @@ table.tableRanking td {
   display: inline-block;
   width: 6px;
   height: 10px;
-  background: url("/img/more_blue.png") no-repeat 0 0;
+  background: url("../../img/more_blue.png") no-repeat 0 0;
   background-size: 6px 10px;
   margin-left: 10px;
 }
@@ -10106,12 +10119,12 @@ table.tableRanking td {
 }
 
 .globalStock .sub_menu .sub_top .menu_list li:nth-child(1) a {
-  background: url("/img/icon_menu_list_on.png") no-repeat 13px 0;
+  background: url("../../img/icon_menu_list_on.png") no-repeat 13px 0;
   background-size: auto 26px;
 }
 
 .globalStock .sub_menu .sub_top .menu_list li:nth-child(2) a {
-  background: url("/img/icon_menu_list_on.png") no-repeat -79px 2px;
+  background: url("../../img/icon_menu_list_on.png") no-repeat -79px 2px;
   background-size: auto 26px;
 }
 
@@ -10124,12 +10137,12 @@ table.tableRanking td {
   }
 }
 .globalStock .sub_menu .sub_top .menu_list li:nth-child(3) a {
-  background: url("/img/icon_menu_list_on.png") no-repeat -190px 0;
+  background: url("../../img/icon_menu_list_on.png") no-repeat -190px 0;
   background-size: auto 26px;
 }
 
 .globalStock .sub_menu .sub_top .menu_list li:nth-child(4) a {
-  background: url("/img/icon_menu_list_on.png") no-repeat calc(100% - 2px) 0;
+  background: url("../../img/icon_menu_list_on.png") no-repeat calc(100% - 2px) 0;
   background-size: auto 26px;
 }
 
@@ -10152,7 +10165,7 @@ table.tableRanking td {
 
 .globalStock .sub_menu .sub_top .btn_save {
   color: #404fc3;
-  background: #d8dbff url("/img/more_white.png") no-repeat calc(100% - 15px) 50%;
+  background: #d8dbff url("../../img/more_white.png") no-repeat calc(100% - 15px) 50%;
   border: 1px solid #d8dbff;
 }
 
@@ -10192,12 +10205,12 @@ table.tableRanking td {
   color: #333;
   font-size: 0.9375rem;
   display: block;
-  background: url("/img/more_gray.svg") no-repeat calc(100% - 5px) 50%;
+  background: url("../../img/more_gray.svg") no-repeat calc(100% - 5px) 50%;
   line-height: 2.33;
 }
 
 .globalStock .sub_menu .sub_mid .menu_link .txt.dub_a {
-  background: url("/img/more_Black.png") no-repeat calc(100% - 5px) 50%;
+  background: url("../../img/more_Black.png") no-repeat calc(100% - 5px) 50%;
 }
 
 .globalStock .sub_menu .sub_mid .menu_link .txt.dub_a a {
@@ -10438,7 +10451,7 @@ table.tableRanking td {
 .globalStock .sub_search .latest_results .tabsArea .tab_container .no_data {
   margin: 20px auto 0;
   border-radius: 20px;
-  background: #fff url("/img/bg_nodata.png") no-repeat center 50px;
+  background: #fff url("../../img/bg_nodata.png") no-repeat center 50px;
   width: calc(100% - 30px);
   height: 400px;
   text-align: center;
@@ -11042,7 +11055,7 @@ table.tableRanking td {
   box-sizing: border-box;
   width: 100%;
   height: 460px;
-  background: url("/img/onestep_sample.jpg") no-repeat 0 0;
+  background: url("../../img/onestep_sample.jpg") no-repeat 0 0;
   background-size: 100% auto;
   margin-bottom: -18px;
 }
@@ -11179,7 +11192,7 @@ table.tableRanking td {
   display: inline-block;
   width: 10px;
   height: 13px;
-  background: url("/img/Icon_lockB.png") no-repeat 0 0;
+  background: url("../../img/Icon_lockB.png") no-repeat 0 0;
   background-size: 10px 13px;
   margin-right: 3px;
 }
@@ -11218,7 +11231,7 @@ table.tableRanking td {
   display: inline-block;
   width: 6px;
   height: 10px;
-  background: url("/img/more_yel.png") no-repeat 0 0;
+  background: url("../../img/more_yel.png") no-repeat 0 0;
   background-size: 6px 10px;
   margin-left: 10px;
 }
@@ -11267,7 +11280,7 @@ table.tableRanking td {
   display: inline-block;
   width: 18px;
   height: 16px;
-  background: url("/img/heart_attention.svg") no-repeat 0 1px;
+  background: url("../../img/heart_attention.svg") no-repeat 0 1px;
   margin-right: 5px;
   margin-bottom: 2px;
 }
@@ -11448,7 +11461,7 @@ table.tableRanking td {
   top: 2px;
   width: 13px;
   height: 12px;
-  background: url("/img/heart_attention.svg") no-repeat 0 1px;
+  background: url("../../img/heart_attention.svg") no-repeat 0 1px;
   margin-right: 5px;
   background-size: 12px 24px;
 }
@@ -11478,7 +11491,7 @@ table.tableRanking td {
   top: 2px;
   width: 15px;
   height: 16px;
-  background: url("/img/Icon_m_chart.png") no-repeat 0 0;
+  background: url("../../img/Icon_m_chart.png") no-repeat 0 0;
   margin-right: 5px;
   background-size: 15px 16px;
 }
@@ -11541,7 +11554,7 @@ table.tableRanking td {
   vertical-align: top;
   width: 18px;
   height: 20px;
-  background: url("/img/game_trans.png") no-repeat 0 -25px;
+  background: url("../../img/game_trans.png") no-repeat 0 -25px;
   background-size: 18px 68px;
 }
 
@@ -11667,7 +11680,7 @@ table.tableRanking td {
   display: inline-block;
   width: 20px;
   height: 17.4px;
-  background: url("/img/heart_attention.svg") no-repeat 0 0;
+  background: url("../../img/heart_attention.svg") no-repeat 0 0;
   margin-right: 5px;
   margin-bottom: 2px;
   margin-top: 2px;
@@ -11873,7 +11886,7 @@ table.tableRanking td {
 .globalStock .sub_search .tabs_5 li a strong i {
   display: inline-block;
   font-size: 0;
-  background: url("/img/star_icon.png") no-repeat 0 0;
+  background: url("../../img/star_icon.png") no-repeat 0 0;
   background-size: 100% 100%;
   width: 9px;
   height: 9px;
@@ -11951,12 +11964,12 @@ table.tableRanking td {
 }
 
 .globalStock .sub_search .tabs_3.tabs_depth2.prm_tabs li:nth-child(2) {
-  background: #ececef url("/img/prm_tabsLock.svg") no-repeat calc(50% + 36px) center;
+  background: #ececef url("../../img/prm_tabsLock.svg") no-repeat calc(50% + 36px) center;
   background-size: 8px auto;
 }
 
 .globalStock .sub_search .tabs_3.tabs_depth2.prm_tabs li.active:nth-child(2) {
-  background: #fff url("/img/prm_tabsLock.svg") no-repeat calc(50% + 36px) center;
+  background: #fff url("../../img/prm_tabsLock.svg") no-repeat calc(50% + 36px) center;
   background-size: 8px auto;
 }
 
@@ -12351,7 +12364,27 @@ table.tableRanking td {
 }
 
 .globalStock .sub_search .sub_mid .investCharm_area {
-  margin-top: 30px;
+  margin-top: 40px;
+  padding: 0 16px;
+  background-color: #fff;
+}
+.globalStock .sub_search .sub_mid .investCharm_area .title a {
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #181f29;
+}
+.globalStock .sub_search .sub_mid .investCharm_area .title a::after {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background: url("../../img/more_gray.svg") no-repeat center center;
+  padding-left: 5px;
+}
+.globalStock .sub_search .sub_mid .investCharm_area .tab_diagnosis_area {
+  margin-top: 16px;
+  padding: 0;
 }
 
 .globalStock .sub_search .sub_mid .investCharm_area:after {
@@ -12663,7 +12696,7 @@ table.tableRanking td {
   display: inline-block;
   width: 10px;
   height: 13px;
-  background: url("/img/Icon_lockF.png") no-repeat 0 0;
+  background: url("../../img/Icon_lockF.png") no-repeat 0 0;
   background-size: 10px 13px;
   margin-right: 3px;
 }
@@ -12701,7 +12734,7 @@ table.tableRanking td {
   display: inline-block;
   width: 6px;
   height: 10px;
-  background: url("/img/more_blue.png") no-repeat 0 0;
+  background: url("../../img/more_blue.png") no-repeat 0 0;
   background-size: 6px 10px;
   margin-left: 10px;
 }
@@ -12883,7 +12916,7 @@ table.tableRanking td {
 }
 
 .globalStock .sub_search .sub_mid .hiding_box .small_star .star_area .starR {
-  background: url("/img/ico_review.png") no-repeat -24px 0;
+  background: url("../../img/ico_review.png") no-repeat -24px 0;
   background-size: auto 100%;
   width: 14px;
   height: 14px;
@@ -13568,7 +13601,7 @@ table.tableRanking td {
   display: inline-block;
   width: 6px;
   height: 8px;
-  background: url("/img/more_white.svg") no-repeat 0 0;
+  background: url("../../img/more_white.svg") no-repeat 0 0;
   background-size: 6px 8px;
 }
 
@@ -14344,7 +14377,7 @@ table.tableRanking td {
   display: inline-block;
   width: 10px;
   height: 13px;
-  background: url("/img/Icon_lockF.png") no-repeat 0 0;
+  background: url("../../img/Icon_lockF.png") no-repeat 0 0;
   background-size: 10px 13px;
   margin-right: 3px;
 }
@@ -14384,7 +14417,7 @@ table.tableRanking td {
   display: inline-block;
   width: 6px;
   height: 10px;
-  background: url("/img/more_blue.png") no-repeat 0 0;
+  background: url("../../img/more_blue.png") no-repeat 0 0;
   background-size: 6px 10px;
   margin-left: 10px;
 }
@@ -14464,7 +14497,7 @@ table.tableRanking td {
 }
 
 .globalStock .sub_search .alloca_wrap .alloca_star .star_area .starR {
-  background: url("/img/ico_reviewB.png") no-repeat -55px 0;
+  background: url("../../img/ico_reviewB.png") no-repeat -55px 0;
   width: 32px;
   height: 32px;
 }
@@ -14634,7 +14667,7 @@ table.tableRanking td {
   display: inline-block;
   width: 10px;
   height: 13px;
-  background: url("/img/Icon_lockF.png") no-repeat 0 0;
+  background: url("../../img/Icon_lockF.png") no-repeat 0 0;
   background-size: 10px 13px;
   margin-right: 3px;
 }
@@ -14672,7 +14705,7 @@ table.tableRanking td {
   display: inline-block;
   width: 6px;
   height: 10px;
-  background: url("/img/more_blue.png") no-repeat 0 0;
+  background: url("../../img/more_blue.png") no-repeat 0 0;
   background-size: 6px 10px;
   margin-left: 10px;
 }
@@ -14986,7 +15019,7 @@ table.tableRanking td {
   display: inline-block;
   width: 20px;
   height: 16px;
-  background: url("/img/btn_schSet.svg") no-repeat 50% 50%;
+  background: url("../../img/btn_schSet.svg") no-repeat 50% 50%;
   background-size: auto 100%;
   margin-right: 5px;
 }
@@ -15114,7 +15147,7 @@ table.tableRanking td {
   display: inline-block;
   width: 10px;
   height: 13px;
-  background: url("/img/Icon_lockB.png") no-repeat 0 0;
+  background: url("../../img/Icon_lockB.png") no-repeat 0 0;
   background-size: 10px 13px;
   margin-right: 3px;
 }
@@ -15152,7 +15185,7 @@ table.tableRanking td {
   display: inline-block;
   width: 6px;
   height: 10px;
-  background: url("/img/more_yel.png") no-repeat 0 0;
+  background: url("../../img/more_yel.png") no-repeat 0 0;
   background-size: 6px 10px;
   margin-left: 10px;
 }
@@ -15470,7 +15503,7 @@ table.tableRanking td {
 
 .globalStock .free_pop.md-modal #setting .pop_header .sub_top {
   padding-bottom: 3px;
-  background: url("/img/bg_free_pop.png") no-repeat right bottom;
+  background: url("../../img/bg_free_pop.png") no-repeat right bottom;
   background-size: 60px 60px;
 }
 
@@ -15557,7 +15590,7 @@ table.tableRanking td {
   display: inline-block;
   width: 5px;
   height: 10px;
-  background: url("/img/icon_moreRR.png") no-repeat 0 0;
+  background: url("../../img/icon_moreRR.png") no-repeat 0 0;
   background-size: cover;
 }
 
@@ -15601,7 +15634,7 @@ table.tableRanking td {
 
 .globalStock .premium_pop.md-modal #setting .pop_header {
   padding: 17px 10px 0;
-  background: url("/img/bg_premium_pop.png") no-repeat right top;
+  background: url("../../img/bg_premium_pop.png") no-repeat right top;
   background-size: cover;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
@@ -15699,7 +15732,7 @@ table.tableRanking td {
   display: inline-block;
   width: 5px;
   height: 10px;
-  background: url("/img/icon_moreRR.png") no-repeat 0 0;
+  background: url("../../img/icon_moreRR.png") no-repeat 0 0;
   background-size: cover;
 }
 
@@ -15743,7 +15776,7 @@ table.tableRanking td {
 
 .globalStock .event_1year.md-modal #setting .pop_header {
   padding: 10px 10px 15px;
-  background: #1a918d url("/img/banner/pop_event1year.png") no-repeat right bottom;
+  background: #1a918d url("../../img/banner/pop_event1year.png") no-repeat right bottom;
   background-size: 114px 81px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
@@ -15772,7 +15805,7 @@ table.tableRanking td {
   color: #fff;
   font-weight: bold;
   padding: 0 2px;
-  background: url("/img/banner/bg_gbline.png") repeat-x 0 calc(100% + 8px);
+  background: url("../../img/banner/bg_gbline.png") repeat-x 0 calc(100% + 8px);
   font-weight: 500;
 }
 
@@ -15898,7 +15931,7 @@ table.tableRanking td {
 
 .globalStock .event_1year.md-modal #setting .pop_con .tableRanking.type_compare .com_select span {
   display: inline-block;
-  background: url("/img/com_select.png") no-repeat 50% 50%;
+  background: url("../../img/com_select.png") no-repeat 50% 50%;
   background-size: 14px 11px;
   width: 14px;
   height: 11px;
@@ -15942,7 +15975,7 @@ table.tableRanking td {
   display: inline-block;
   width: 5px;
   height: 10px;
-  background: url("/img/icon_moreRR.png") no-repeat 0 0;
+  background: url("../../img/icon_moreRR.png") no-repeat 0 0;
   background-size: cover;
 }
 
@@ -16059,57 +16092,57 @@ table.tableRanking td {
 }
 .globalStock .sub_recipe .sub_mid.recipe_tabs .box_tabs li.jump a {
   /* 급등주 */
-  background: #fff url("/img/recipe_jump.svg") no-repeat center 25px;
+  background: #fff url("../../img/recipe_jump.svg") no-repeat center 25px;
   background-size: 54px 54px;
 }
 
 .globalStock .sub_recipe .sub_mid.recipe_tabs .box_tabs li.top50 a {
   /* TOP50 */
-  background: #fff url("/img/recipe_top50.svg") no-repeat center 25px;
+  background: #fff url("../../img/recipe_top50.svg") no-repeat center 25px;
   background-size: 80px 53px;
 }
 
 .globalStock .sub_recipe .sub_mid.recipe_tabs .box_tabs li:nth-child(4) a {
   /* 실적발표 */
-  background: #fff url("/img/recipe_05.png") no-repeat center 25px;
+  background: #fff url("../../img/recipe_05.png") no-repeat center 25px;
   background-size: 50px 49px;
 }
 
 .globalStock .sub_recipe .sub_mid.recipe_tabs .box_tabs li.sale a {
   /* 세일 */
-  background: #fff url("/img/recipe_sale.svg") no-repeat center 15px;
+  background: #fff url("../../img/recipe_sale.svg") no-repeat center 15px;
   background-size: auto 62px;
 }
 
 .globalStock .sub_recipe .sub_mid.recipe_tabs .box_tabs li:nth-child(6) a {
   /* 배당매력주 */
-  background: #fff url("/img/recipe_01.png") no-repeat center 18px;
+  background: #fff url("../../img/recipe_01.png") no-repeat center 18px;
 }
 
 .globalStock .sub_recipe .sub_mid.recipe_tabs .box_tabs li:nth-child(7) a {
   /* 이익성장주 */
-  background: #fff url("/img/recipe_02.png") no-repeat center 21px;
+  background: #fff url("../../img/recipe_02.png") no-repeat center 21px;
 }
 
 .globalStock .sub_recipe .sub_mid.recipe_tabs .box_tabs li:nth-child(8) a {
   /* 소비자독점 */
-  background: #fff url("/img/recipe_03.png") no-repeat center 21px;
+  background: #fff url("../../img/recipe_03.png") no-repeat center 21px;
 }
 
 .globalStock .sub_recipe .sub_mid.recipe_tabs .box_tabs li:nth-child(9) a {
   /* 슈퍼스톡 */
-  background: #fff url("/img/recipe_04.png") no-repeat center 29px;
+  background: #fff url("../../img/recipe_04.png") no-repeat center 29px;
 }
 
 .globalStock .sub_recipe .sub_mid.recipe_tabs .box_tabs li.today_signal a {
   /* 오늘의 매매신호 */
-  background: #fff url("/img/recipe_today.png") no-repeat center 21px;
+  background: #fff url("../../img/recipe_today.png") no-repeat center 21px;
   background-size: 56px auto;
 }
 
 /* 발굴 - 투자레시피 view */
 .globalStock .sub_recipe .sub_top.view .box_tabs {
-  background: #fff url("/img/recipe_01.png") no-repeat center 13px;
+  background: #fff url("../../img/recipe_01.png") no-repeat center 13px;
   background-size: auto 59px;
   padding: 90px 15px 33px;
   color: #939393;
@@ -16121,44 +16154,44 @@ table.tableRanking td {
 
 .globalStock .sub_recipe .sub_top.view.bgimg02 .box_tabs {
   /* 실적발표 */
-  background-image: url("/img/recipe_05.png");
+  background-image: url("../../img/recipe_05.png");
 }
 
 .globalStock .sub_recipe .sub_top.view.bgimg03 .box_tabs {
   /* 배당매력주 */
-  background-image: url("/img/recipe_01.png");
+  background-image: url("../../img/recipe_01.png");
 }
 
 .globalStock .sub_recipe .sub_top.view.bgimg04 .box_tabs {
   /* 이익성장주 */
-  background-image: url("/img/recipe_02.png");
+  background-image: url("../../img/recipe_02.png");
 }
 
 .globalStock .sub_recipe .sub_top.view.bgimg05 .box_tabs {
   /* 소비자독점 */
-  background-image: url("/img/recipe_03.png");
+  background-image: url("../../img/recipe_03.png");
 }
 
 .globalStock .sub_recipe .sub_top.view.bgimg01 .box_tabs {
   /* 슈퍼스톡 */
-  background-image: url("/img/recipe_04.png");
+  background-image: url("../../img/recipe_04.png");
 }
 
 .globalStock .sub_recipe .sub_top.view.recipejump .box_tabs {
-  background-image: url("/img/recipe_jump.svg");
+  background-image: url("../../img/recipe_jump.svg");
 }
 
 .globalStock .sub_recipe .sub_top.view.recipetop .box_tabs {
-  background-image: url("/img/recipe_top50.svg");
+  background-image: url("../../img/recipe_top50.svg");
 }
 
 .globalStock .sub_recipe .sub_top.view.recipesale .box_tabs {
-  background-image: url("/img/recipe_sale.svg");
+  background-image: url("../../img/recipe_sale.svg");
   background-size: auto 64px;
 }
 
 .globalStock .sub_recipe .sub_top.view.recipeToday .box_tabs {
-  background-image: url("/img/recipe_today.png");
+  background-image: url("../../img/recipe_today.png");
   background-size: auto 64px;
 }
 
@@ -16168,7 +16201,7 @@ table.tableRanking td {
   width: 22px;
   height: 22px;
   border-radius: 50%;
-  background: url("/img/icon_sale.svg") no-repeat center center;
+  background: url("../../img/icon_sale.svg") no-repeat center center;
   vertical-align: top;
   margin-right: 3px;
   position: relative;
@@ -16242,7 +16275,7 @@ table.tableRanking td {
 .globalStock .sub_recipe .sub_mid.recipe_view .recipe_area .news_no_data {
   margin: 20px 0 55px;
   border-radius: 20px;
-  background: #fff url("/img/bg_nodata.png") no-repeat center 70px;
+  background: #fff url("../../img/bg_nodata.png") no-repeat center 70px;
   box-sizing: border-box;
   padding-top: 240px;
   padding-bottom: 15px;
@@ -16758,7 +16791,7 @@ table.tableRanking td {
 
 .globalStock .sub_recipe .sub_mid.recipe_view .banner_prm .cho_prm i {
   display: inline-block;
-  background: url("/img/Icon_lock.svg") no-repeat;
+  background: url("../../img/Icon_lock.svg") no-repeat;
   width: 10px;
   height: 13px;
   background-size: 10px 13px;
@@ -16792,7 +16825,7 @@ table.tableRanking td {
   display: inline-block;
   width: 9px;
   height: 11px;
-  background: url("/img/heart_attention_gray.svg") no-repeat 0 1px;
+  background: url("../../img/heart_attention_gray.svg") no-repeat 0 1px;
   margin: 0 3px;
   background-size: 14px 25px;
 }
@@ -16817,7 +16850,7 @@ table.tableRanking td {
   display: inline-block;
   width: 15px;
   height: 11px;
-  background: url("/img/heart_attention_gray.svg") no-repeat 0 1px;
+  background: url("../../img/heart_attention_gray.svg") no-repeat 0 1px;
   margin-right: 3px;
   background-size: 14px 25px;
   vertical-align: middle;
@@ -16925,7 +16958,7 @@ table.tableRanking td {
   width: 14px;
   height: 14px;
   padding: 1px 0;
-  background: url("/img/icon_transition.svg") no-repeat 0 1px;
+  background: url("../../img/icon_transition.svg") no-repeat 0 1px;
   background-size: 14px 14px;
   margin-left: 2px;
   position: relative;
@@ -16964,7 +16997,7 @@ table.tableRanking td {
   vertical-align: top;
   width: 14px;
   height: 14px;
-  background: url("/img/game_trans_b.svg") no-repeat 0 0;
+  background: url("../../img/game_trans_b.svg") no-repeat 0 0;
   background-size: 60px 14px;
   margin-top: 3px;
 }
@@ -17008,7 +17041,7 @@ table.tableRanking td {
   vertical-align: top;
   width: 14px;
   height: 14px;
-  background: url("/img/game_trans_b.svg") no-repeat 0 0;
+  background: url("../../img/game_trans_b.svg") no-repeat 0 0;
   background-size: 60px 14px;
 }
 
@@ -17071,7 +17104,7 @@ table.tableRanking td {
   display: inline-block;
   width: 15px;
   height: 11px;
-  background: url("/img/heart_attention_gray.svg") no-repeat 0 1px;
+  background: url("../../img/heart_attention_gray.svg") no-repeat 0 1px;
   margin-right: 3px;
   background-size: 14px 25px;
   vertical-align: middle;
@@ -17133,7 +17166,7 @@ table.tableRanking td {
   display: inline-block;
   width: 13px;
   height: 13px;
-  background: url("/img/icon_saledeal.svg") no-repeat center center;
+  background: url("../../img/icon_saledeal.svg") no-repeat center center;
   margin-right: 3px;
 }
 
@@ -17163,7 +17196,7 @@ table.tableRanking td {
 .globalStock .sub_research .sub_top .best_research {
   display: flex;
   align-items: center;
-  background: url("/img/research_bg.png") no-repeat center center;
+  background: url("../../img/research_bg.png") no-repeat center center;
   margin: 25px 15px;
   box-sizing: border-box;
   padding: 22px 20px;
@@ -17281,7 +17314,7 @@ table.tableRanking td {
   top: 2px;
   width: 10px;
   height: 13px;
-  background: #F6F7FA url("/img/prm_tabsLock.svg") no-repeat center center;
+  background: #F6F7FA url("../../img/prm_tabsLock.svg") no-repeat center center;
 }
 
 .globalStock .sub_research .sub_mid.research_board .lst_type2 dt.tit a {
@@ -17309,7 +17342,7 @@ table.tableRanking td {
   border: none;
   width: 67px;
   height: 60px;
-  background: #fff url("/img/noimg.png") no-repeat center center;
+  background: #fff url("../../img/noimg.png") no-repeat center center;
   background-size: cover;
   border: 1px solid #E0E4E9;
   border-radius: 5px;
@@ -17373,7 +17406,7 @@ table.tableRanking td {
   width: calc(100% - 60px);
   min-height: 177px;
   box-sizing: border-box;
-  background: url("/img/bg_wow_video.jpg") no-repeat center center;
+  background: url("../../img/bg_wow_video.jpg") no-repeat center center;
   background-size: cover;
   position: relative;
   padding-bottom: 48%;
@@ -17673,7 +17706,7 @@ table.tableRanking td {
   display: inline-block;
   width: 67px;
   height: 60px;
-  background: #fff url("/img/noimg.png") no-repeat 0 0;
+  background: #fff url("../../img/noimg.png") no-repeat 0 0;
   background-size: cover;
   border: 1px solid #E0E4E9;
   border-radius: 5px;
@@ -17741,7 +17774,7 @@ table.tableRanking td {
   display: inline-block;
   width: 112px;
   height: 63px;
-  background: #fff url("/img/noimg_wowtv.svg") no-repeat center center;
+  background: #fff url("../../img/noimg_wowtv.svg") no-repeat center center;
 }
 
 .globalStock .sub_research .sub_mid.research_board .lst_type.video_list .video_box > a .video_title {
@@ -17773,7 +17806,7 @@ table.tableRanking td {
 
 .globalStock .sub_research .sub_mid.research_board .lst_type.video_list .video_box.lst_lock > a .video_title span {
   text-indent: 20px;
-  background: url("/img/prm_tabsLock.svg") no-repeat 0 2px;
+  background: url("../../img/prm_tabsLock.svg") no-repeat 0 2px;
 }
 
 .globalStock .sub_research .view_con .mid .iframe_video {
@@ -17845,7 +17878,7 @@ table.tableRanking td {
   display: inline-block;
   width: 5px;
   height: 10px;
-  background: url("/img/icon_moreRR.png") no-repeat 0 0;
+  background: url("../../img/icon_moreRR.png") no-repeat 0 0;
   background-size: cover;
 }
 
@@ -18048,7 +18081,7 @@ table.tableRanking td {
   display: inline-block;
   width: 67px;
   height: 60px;
-  background: #fff url("/img/face_noimg.png") no-repeat 0 0;
+  background: #fff url("../../img/face_noimg.png") no-repeat 0 0;
   background-size: cover;
   border: 1px solid #E0E4E9;
   border-radius: 10px;
@@ -18075,7 +18108,7 @@ table.tableRanking td {
 }
 
 .globalStock .sub_briefing .sub_top .best_research {
-  background: url("/img/research_bg.png") no-repeat center center;
+  background: url("../../img/research_bg.png") no-repeat center center;
   margin: 25px 15px;
   box-sizing: border-box;
   padding: 22px 20px;
@@ -18183,7 +18216,7 @@ table.tableRanking td {
 .globalStock .sub_briefing .sub_mid.research_board .lst_type2.lst_lock dt.tit strong {
   display: inline-block;
   text-indent: 20px;
-  background: url("/img/icon_list_lock.svg") no-repeat 0 4px;
+  background: url("../../img/icon_list_lock.svg") no-repeat 0 4px;
 }
 
 .globalStock .sub_briefing .sub_mid.research_board .lst_type2 dt.tit a {
@@ -18225,7 +18258,7 @@ table.tableRanking td {
   display: inline-block;
   width: 80px;
   height: 71px;
-  background: #fff url("/img/face_noimg.png") no-repeat 0 0;
+  background: #fff url("../../img/face_noimg.png") no-repeat 0 0;
   background-size: cover;
   border: 1px solid #E0E4E9;
   border-radius: 10px;
@@ -18279,19 +18312,19 @@ table.tableRanking td {
 }
 
 .globalStock .alarmArea .alarmList li span.title i.note {
-  background-image: url("/img/icon_list_note.svg");
+  background-image: url("../../img/icon_list_note.svg");
 }
 
 .globalStock .alarmArea .alarmList li span.title i.recom {
-  background-image: url("/img/icon_list_recom.svg");
+  background-image: url("../../img/icon_list_recom.svg");
 }
 
 .globalStock .alarmArea .alarmList li span.title i.interest {
-  background-image: url("/img/icon_list_interest.svg");
+  background-image: url("../../img/icon_list_interest.svg");
 }
 
 .globalStock .alarmArea .alarmList li span.title i.event {
-  background-image: url("/img/icon_list_event.svg");
+  background-image: url("../../img/icon_list_event.svg");
 }
 
 .globalStock .alarmArea .alarmList li span.day {
@@ -18349,7 +18382,7 @@ table.tableRanking td {
 .globalStock .sub_alarm .alarm_note .list li.sum {
   font-size: 0.82rem;
   color: #333;
-  background: url("/img/dot_blue.png") no-repeat 0 7px;
+  background: url("../../img/dot_blue.png") no-repeat 0 7px;
   padding-left: 9px;
 }
 
@@ -18585,13 +18618,13 @@ table.tableRanking td {
 }
 
 .globalStock .sub_login .loign .sns li.sns_n a i {
-  background: url("/img/icon_sns_n.svg") no-repeat left top;
+  background: url("../../img/icon_sns_n.svg") no-repeat left top;
 }
 
 .globalStock .sub_login .loign .sns li.sns_K a i {
   top: 22px;
   left: calc(50% - 68px);
-  background: url("/img/icon_sns_k.svg") no-repeat left top;
+  background: url("../../img/icon_sns_k.svg") no-repeat left top;
 }
 
 .globalStock .sub_login .loign .sns li a,
@@ -18796,7 +18829,7 @@ table.tableRanking td {
   width: 16px;
   height: 16px;
   margin-right: 9px;
-  background: url("/img/icon_agreecheck.svg") no-repeat 0 100%;
+  background: url("../../img/icon_agreecheck.svg") no-repeat 0 100%;
   filter: grayscale(100%) opacity(30%);
 }
 .globalStock .sub_login .agree_area .agree_from .label.active .label_chk i {
@@ -18849,7 +18882,7 @@ table.tableRanking td {
   display: inline-block;
   width: 5px;
   height: 10px;
-  background: url("/img/icon_moreRR.png") no-repeat 0 0;
+  background: url("../../img/icon_moreRR.png") no-repeat 0 0;
   background-size: cover;
 }
 
@@ -19053,7 +19086,7 @@ table.tableRanking td {
 
 /* 로그인 - 가입완료 */
 .globalStock .sub_login .loign_com {
-  background: url("/img/bg_loign_com.png") no-repeat 98% 17px;
+  background: url("../../img/bg_loign_com.png") no-repeat 98% 17px;
   padding: 245px 15px 30px;
 }
 
@@ -19167,7 +19200,7 @@ table.tableRanking td {
 }
 
 .globalStock .sub_login .phone_regbox .txt {
-  background: url("/img/dot_line.png") no-repeat 0 11px;
+  background: url("../../img/dot_line.png") no-repeat 0 11px;
   padding-left: 10px;
   margin-top: 0;
   font-size: 0.9375rem;
@@ -19185,7 +19218,7 @@ table.tableRanking td {
   width: 12.5px;
   height: 15.5px;
   margin-right: 5px;
-  background: url("/img/banner/icon_alarm2.png") no-repeat 0 0;
+  background: url("../../img/banner/icon_alarm2.png") no-repeat 0 0;
   background-size: 12.5px 15.5px;
   position: relative;
   top: 2px;
@@ -19228,7 +19261,7 @@ table.tableRanking td {
   height: 6px;
   padding: 0 1px;
   margin-right: 3px;
-  background: url("/img/more_Black.png") no-repeat 0 0;
+  background: url("../../img/more_Black.png") no-repeat 0 0;
   background-size: 3px 6px;
   position: relative;
   top: -2px;
@@ -19241,7 +19274,7 @@ table.tableRanking td {
   display: inline-block;
   width: 5px;
   height: 10px;
-  background: url("/img/icon_moreRR.png") no-repeat 0 0;
+  background: url("../../img/icon_moreRR.png") no-repeat 0 0;
   background-size: cover;
 }
 
@@ -19318,7 +19351,7 @@ table.tableRanking td {
   display: inline-block;
   width: 14px;
   height: 14px;
-  background: url("/img/bg_x.png") no-repeat 0 0;
+  background: url("../../img/bg_x.png") no-repeat 0 0;
 }
 
 .globalStock .sub_login .loign_com .att_service.free_service .mapage_form .form_table td .i_dsc.phone {
@@ -19449,7 +19482,7 @@ table.tableRanking td {
   margin-right: 3px;
   position: relative;
   top: 2px;
-  background: url("/img/icon_home_on.png") no-repeat center center;
+  background: url("../../img/icon_home_on.png") no-repeat center center;
   background-size: 15px 14px;
 }
 
@@ -19592,11 +19625,11 @@ table.tableRanking td {
   display: inline-block;
   width: 14px;
   height: 14px;
-  background: url("/img/bg_x.png") no-repeat 0 0;
+  background: url("../../img/bg_x.png") no-repeat 0 0;
 }
 
 .globalStock .sub_login .mapage_area .mapage_form .form_table td .i_dsc.email i {
-  background: url("/img/banner/Icon_preinfo.png") no-repeat 0 0;
+  background: url("../../img/banner/Icon_preinfo.png") no-repeat 0 0;
   background-size: 14px 14px;
 }
 
@@ -19619,7 +19652,7 @@ table.tableRanking td {
 }
 
 .globalStock .sub_login .mapage_area .mapage_form .form_table td .i_dsc.phone_premium i {
-  background: url("/img/banner/Icon_preinfo.png") no-repeat 0 0;
+  background: url("../../img/banner/Icon_preinfo.png") no-repeat 0 0;
   background-size: 14px 14px;
 }
 
@@ -19766,7 +19799,7 @@ table.tableRanking td {
   display: inline-block;
   width: 6px;
   height: 10px;
-  background: url("/img/more_Black.png") no-repeat 0 0;
+  background: url("../../img/more_Black.png") no-repeat 0 0;
   background-size: 6px 10px;
   margin-left: 10px;
 }
@@ -19941,7 +19974,7 @@ table.tableRanking td {
 }
 
 .globalStock .sub_login .mapage_service_free .mid ul:last-child li {
-  background: url("/img/dot_line.png") no-repeat 0 8px;
+  background: url("../../img/dot_line.png") no-repeat 0 8px;
   padding-left: 8px;
   color: #333;
 }
@@ -20102,7 +20135,7 @@ table.tableRanking td {
 }
 
 .globalStock .pay_edt .form_table td .certification_area .txt {
-  background: url("/img/dot_line.png") no-repeat 0 8px;
+  background: url("../../img/dot_line.png") no-repeat 0 8px;
   padding-left: 8px;
   color: #939393;
   font-size: 0.84rem;
@@ -20133,7 +20166,7 @@ table.tableRanking td {
   display: inline-block;
   width: 14px;
   height: 14px;
-  background: url("/img/icon_moreR.png") no-repeat 0 100%;
+  background: url("../../img/icon_moreR.png") no-repeat 0 100%;
   background-size: auto;
   padding: 4px 3px;
   box-sizing: border-box;
@@ -20154,7 +20187,7 @@ table.tableRanking td {
   top: -2px;
   width: 16px;
   height: 16px;
-  background: url("/img/icon_agreecheck.png") no-repeat 0 100%;
+  background: url("../../img/icon_agreecheck.png") no-repeat 0 100%;
   margin-right: 7px;
 }
 
@@ -20208,7 +20241,7 @@ table.tableRanking td {
 }
 
 .globalStock .sub_login .notice_freetxt .title {
-  background: url("/img/dot_line.png") no-repeat 0 8px;
+  background: url("../../img/dot_line.png") no-repeat 0 8px;
   padding-left: 8px;
   color: #939393;
   font-size: 0.84rem;
@@ -20271,7 +20304,7 @@ table.tableRanking td {
 
 .globalStock .sub_login .mapage_area .btn_save {
   color: #404fc3;
-  background: #d8dbff url("/img/more_white.png") no-repeat calc(100% - 15px) 50%;
+  background: #d8dbff url("../../img/more_white.png") no-repeat calc(100% - 15px) 50%;
   border: 1px solid #d8dbff;
 }
 
@@ -20357,7 +20390,7 @@ table.tableRanking td {
 }
 
 .globalStock .sub_login .withdrawal_com .withdrawal_freetxt .title {
-  background: url("/img/dot_line.png") no-repeat 0 8px;
+  background: url("../../img/dot_line.png") no-repeat 0 8px;
   padding-left: 8px;
   color: #939393;
   font-size: 0.84rem;
@@ -20738,7 +20771,7 @@ table.tableRanking td {
   display: inline-block;
   width: 12px;
   height: 12px;
-  background: url("/img/event_clse.png") no-repeat right 2px;
+  background: url("../../img/event_clse.png") no-repeat right 2px;
   background-size: 10px 10px;
   vertical-align: top;
   padding-left: 5px;
@@ -20833,7 +20866,7 @@ table.tableRanking td {
   display: inline-block;
   width: 14px;
   height: 14px;
-  background: url("/img/banner/Icon_info.png") no-repeat 0 0;
+  background: url("../../img/banner/Icon_info.png") no-repeat 0 0;
   margin-bottom: 2px;
   margin-right: 3px;
   background-size: 14px 14px;
@@ -20936,7 +20969,7 @@ table.tableRanking td {
 }
 
 .globalStock.mint .main_mid.event_anay .area .analysis_score .chart_analysis .line .i_graph.graph_prm .g_action {
-  background-image: url("/img/graph_prmB_mint.gif");
+  background-image: url("../../img/graph_prmB_mint.gif");
 }
 
 .globalStock.mint .tab_area .tbas_lb.tabs_3 li a.active {
@@ -21069,7 +21102,7 @@ table.tableRanking td {
 }
 
 .globalStock.mint .sub_attract .sub_mid.attract_sub .weeks_free .box .title i {
-  background-image: url("/img/Icon_lockB_mint.png");
+  background-image: url("../../img/Icon_lockB_mint.png");
 }
 
 .globalStock.mint .sub_research .sub_mid.research_board .set span.active {
@@ -21107,7 +21140,7 @@ table.tableRanking td {
 }
 
 .globalStock.mint .sub_search .latest_results .tabsArea .weeks_free .box .title i {
-  background-image: url("/img/Icon_lockB_mint.png");
+  background-image: url("../../img/Icon_lockB_mint.png");
 }
 
 .globalStock.mint .sub_search .latest_results .tabsArea .weeks_free .box .title {
@@ -21127,7 +21160,7 @@ table.tableRanking td {
 }
 
 .globalStock.mint .sub_search .latest_results .tabsArea .onestep_sample .box .title i {
-  background-image: url("/img/Icon_lockB_mint.png");
+  background-image: url("../../img/Icon_lockB_mint.png");
 }
 
 .globalStock.mint .sub_search .latest_results .tabsArea .onestep_sample .box .title {
@@ -21157,7 +21190,7 @@ table.tableRanking td {
 }
 
 .globalStock.mint .gnb li.home.active i {
-  background-image: url("/img/icon_home_on_mint.png");
+  background-image: url("../../img/icon_home_on_mint.png");
 }
 
 .globalStock.mint .free_pop.md-modal #setting .pop_btm .btn_save {
@@ -21259,7 +21292,7 @@ table.tableRanking td {
 }
 
 .globalStock.mint .sub_search .sub_mid .tab_diagnosis_area .weeks_free .box .btn_free i {
-  background-image: url("/img/more_Black.png");
+  background-image: url("../../img/more_Black.png");
 }
 
 .globalStock.mint .sub_search .sub_mid.tabs_area .compet_chart_uses .title strong {
@@ -21279,7 +21312,7 @@ table.tableRanking td {
 }
 
 .globalStock.mint .sub_search .sub_mid.tabs_area > .weeks_free .box .btn_free i {
-  background-image: url("/img/more_Black.png");
+  background-image: url("../../img/more_Black.png");
 }
 
 .globalStock.mint .sub_search .sub_mid.tabs_area .alloca_info .term strong {
@@ -21394,7 +21427,7 @@ table.tableRanking td {
 }
 
 .globalStock.mint .sub_service .sub_top.service_t01 {
-  background: #404FC3 url("/img/bg_service_alliance.png") no-repeat center bottom;
+  background: #404FC3 url("../../img/bg_service_alliance.png") no-repeat center bottom;
   background-size: 342px auto;
 }
 
@@ -21510,7 +21543,7 @@ table.tableRanking td {
   font-size: 0.9rem;
   color: #404fc3;
   margin-right: 4px;
-  background: url("/img/bg_bbline.png") repeat-x 0 calc(100% + 7px);
+  background: url("../../img/bg_bbline.png") repeat-x 0 calc(100% + 7px);
 }
 
 .globalStock.mint .sub_service .sub_con .tips .txt {
@@ -21530,7 +21563,7 @@ table.tableRanking td {
 }
 
 .globalStock.mint .sub_service .sub_con .banner_cho {
-  background: #404fc3 url("/img/bg_banner_cho.png") no-repeat left bottom;
+  background: #404fc3 url("../../img/bg_banner_cho.png") no-repeat left bottom;
   background-size: auto 167px;
   padding: 30px 30px;
   text-align: right;
@@ -21545,7 +21578,7 @@ table.tableRanking td {
 .globalStock.mint .sub_service .sub_con .banner_cho .b_title strong {
   display: inline-block;
   color: #1ee8be;
-  background: url("/img/bg_bline.png") repeat-x 0 calc(100% + 6px);
+  background: url("../../img/bg_bline.png") repeat-x 0 calc(100% + 6px);
 }
 
 .globalStock.mint .sub_service .sub_con .banner_cho .link_cho {
@@ -21568,7 +21601,7 @@ table.tableRanking td {
   display: inline-block;
   width: 6px;
   height: 10px;
-  background: url("/img/more_white.png") no-repeat 0 0;
+  background: url("../../img/more_white.png") no-repeat 0 0;
   background-size: 6px 10px;
   margin-left: 10px;
 }
@@ -21939,7 +21972,7 @@ table.tableRanking td {
 
 .globalStock.red .sub_game .gameSwiper .swiper-button-next,
 .globalStock.red .sub_game .gameSwiper .swiper-button-prev {
-  background-image: url("/img/swiper_btn_b.png");
+  background-image: url("../../img/swiper_btn_b.png");
 }
 
 .globalStock.red .sub_attract .sub_mid.attract_sub .btn_schSet {
@@ -22077,7 +22110,7 @@ table.tableRanking td {
 
 .globalStock.red .sub_search .sub_mid.tabs_area > .weeks_free .box .btn_free i,
 .globalStock.red .sub_search .sub_mid .tab_diagnosis_area .weeks_free .box .btn_free i {
-  background: url("/img/more_yel.png") no-repeat right 0;
+  background: url("../../img/more_yel.png") no-repeat right 0;
   background-size: 6px 10px;
 }
 
@@ -22100,7 +22133,7 @@ table.tableRanking td {
 }
 
 .globalStock.red .sub_research .sub_mid.research_board .lst_type2.lst_lock dt.tit strong {
-  background: url("/img/prm_tabsLock_red.png") no-repeat 0 2px;
+  background: url("../../img/prm_tabsLock_red.png") no-repeat 0 2px;
   background-size: 12px 16px;
 }
 
@@ -22130,14 +22163,14 @@ table.tableRanking td {
 }
 
 .globalStock.red .sub_service .alliance_wrap .sub_con .banner_cho {
-  background: #E56468 url("/img/px_bg_banner_cho.png") no-repeat left bottom;
+  background: #E56468 url("../../img/px_bg_banner_cho.png") no-repeat left bottom;
   background-size: auto 167px;
 }
 
 .globalStock.red .sub_service .alliance_wrap .sub_con .banner_cho .b_title strong {
   display: inline-block;
   color: #FFFF00;
-  background: url("/img/bg_rline.png") repeat-x 0 calc(100% + 6px);
+  background: url("../../img/bg_rline.png") repeat-x 0 calc(100% + 6px);
 }
 
 .globalStock.red .sub_service .alliance_wrap .sub_con .banner_cho .link_cho {
@@ -22153,7 +22186,7 @@ table.tableRanking td {
   display: inline-block;
   width: 6px;
   height: 10px;
-  background: url("/img/more_white.png") no-repeat 0 0;
+  background: url("../../img/more_white.png") no-repeat 0 0;
   background-size: 6px 10px;
   margin-left: 10px;
 }
@@ -22207,7 +22240,7 @@ table.tableRanking td {
 }
 
 .globalStock .sub_service .alliance_wrap .sub_top.service_t01 {
-  background: #404FC3 url("/img/bg_service_alliance.png") no-repeat center bottom;
+  background: #404FC3 url("../../img/bg_service_alliance.png") no-repeat center bottom;
   background-size: 342px auto;
   position: relative;
 }
@@ -22251,7 +22284,7 @@ table.tableRanking td {
 }
 
 .globalStock.red .sub_service .alliance_wrap .sub_top.service_t01 {
-  background: #E56468 url("/img/px_bg_service_alliance.png") no-repeat center bottom;
+  background: #E56468 url("../../img/px_bg_service_alliance.png") no-repeat center bottom;
   background-size: 342px auto;
 }
 
@@ -22420,7 +22453,7 @@ table.tableRanking td {
   font-size: 0.9rem;
   color: #404fc3;
   margin-right: 4px;
-  background: url("/img/bg_bbline.png") repeat-x 0 calc(100% + 7px);
+  background: url("../../img/bg_bbline.png") repeat-x 0 calc(100% + 7px);
 }
 
 .globalStock .sub_service .alliance_wrap .sub_con .tips .txt {
@@ -22440,7 +22473,7 @@ table.tableRanking td {
 }
 
 .globalStock .sub_service .alliance_wrap .sub_con .banner_cho {
-  background: #404fc3 url("/img/bg_banner_cho.png") no-repeat left bottom;
+  background: #404fc3 url("../../img/bg_banner_cho.png") no-repeat left bottom;
   background-size: auto 167px;
   padding: 30px 30px;
   text-align: right;
@@ -22457,7 +22490,7 @@ table.tableRanking td {
   display: inline-block;
   font-weight: 500;
   color: #1ee8be;
-  background: url("/img/bg_bline.png") repeat-x 0 calc(100% + 6px);
+  background: url("../../img/bg_bline.png") repeat-x 0 calc(100% + 6px);
 }
 
 .globalStock .sub_service .alliance_wrap .sub_con .banner_cho .link_cho {
@@ -22483,7 +22516,7 @@ table.tableRanking td {
   display: inline-block;
   width: 6px;
   height: 10px;
-  background: url("/img/more_white.png") no-repeat 0 0;
+  background: url("../../img/more_white.png") no-repeat 0 0;
   background-size: 6px 10px;
   margin-left: 10px;
 }
@@ -22517,7 +22550,7 @@ table.tableRanking td {
   display: inline-block;
   width: 14px;
   height: 14px;
-  background: url("/img/icon_nightalarm.png") no-repeat 0 0;
+  background: url("../../img/icon_nightalarm.png") no-repeat 0 0;
   background-size: 14px 14px;
 }
 
@@ -22526,7 +22559,7 @@ table.tableRanking td {
 /******** (팍스넷) **********/
 /****************************/
 .globalStock .main_btm.banner_area .banner_1yearevent {
-  background: #404FC3 url("/img/banner/bg_1yearevent.png") no-repeat calc(100% + 10px) bottom;
+  background: #404FC3 url("../../img/banner/bg_1yearevent.png") no-repeat calc(100% + 10px) bottom;
   background-size: 59px 29px;
   border-radius: 5px;
   margin-top: 25px;
@@ -22541,7 +22574,7 @@ table.tableRanking td {
 
 .globalStock .main_btm.banner_area .banner_1yearevent .cho_prm i {
   display: inline-block;
-  background: url("/img/Icon_lock.svg") no-repeat;
+  background: url("../../img/Icon_lock.svg") no-repeat;
   width: 10px;
   height: 13px;
   background-size: 10px 13px;
@@ -22589,7 +22622,7 @@ table.tableRanking td {
 
 .globalStock .sub_recom .sub_mid.eventPicks_area .banner_1yearevent .cho_prm i {
   display: inline-block;
-  background: url("/img/Icon_lock.svg") no-repeat;
+  background: url("../../img/Icon_lock.svg") no-repeat;
   width: 10px;
   height: 13px;
   background-size: 10px 13px;
@@ -22635,7 +22668,7 @@ table.tableRanking td {
 
 .globalStock .sub_service .sub_mid .sub_con .banner_1yearevent .cho_prm i {
   display: inline-block;
-  background: url("/img/Icon_lock.svg") no-repeat;
+  background: url("../../img/Icon_lock.svg") no-repeat;
   width: 10px;
   height: 13px;
   background-size: 10px 13px;
@@ -22677,7 +22710,7 @@ table.tableRanking td {
 }
 
 .globalStock .sub_search .sub_mid .tab_diagnosis_area .weeks_free.event_900 .box {
-  background: #404fc3 url("/img/banner/bg_1yearevent02.png") no-repeat right bottom;
+  background: #404fc3 url("../../img/banner/bg_1yearevent02.png") no-repeat right bottom;
   background-size: 128px 70px;
 }
 
@@ -22697,7 +22730,7 @@ table.tableRanking td {
   display: inline-block;
   width: 6px;
   height: 10px;
-  background: url("/img/more_white.png") no-repeat 0 0;
+  background: url("../../img/more_white.png") no-repeat 0 0;
   background-size: 6px 10px;
   margin-left: 10px;
 }
@@ -22710,12 +22743,12 @@ table.tableRanking td {
   display: inline-block;
   width: 33px;
   height: 13px;
-  background: url("/img/banner/img_y_box.png") no-repeat 0 0;
+  background: url("../../img/banner/img_y_box.png") no-repeat 0 0;
   background-size: 33px 13px;
 }
 
 .globalStock .sub_attract .sub_mid.attract_sub .weeks_free.event_900 .box {
-  background: #404fc3 url("/img/banner/bg_1yearevent02.png") no-repeat right bottom;
+  background: #404fc3 url("../../img/banner/bg_1yearevent02.png") no-repeat right bottom;
   background-size: 128px 70px;
 }
 
@@ -22729,7 +22762,7 @@ table.tableRanking td {
   display: inline-block;
   width: 10px;
   height: 13px;
-  background: url("/img/Icon_lockF.png") no-repeat 0 0;
+  background: url("../../img/Icon_lockF.png") no-repeat 0 0;
   background-size: 10px 13px;
   margin-right: 3px;
 }
@@ -22759,7 +22792,7 @@ table.tableRanking td {
   display: inline-block;
   width: 6px;
   height: 10px;
-  background: url("/img/more_white.png") no-repeat 0 0;
+  background: url("../../img/more_white.png") no-repeat 0 0;
   background-size: 6px 10px;
   margin-left: 10px;
 }
@@ -22772,12 +22805,12 @@ table.tableRanking td {
   display: inline-block;
   width: 33px;
   height: 13px;
-  background: url("/img/banner/img_y_box.png") no-repeat 0 0;
+  background: url("../../img/banner/img_y_box.png") no-repeat 0 0;
   background-size: 33px 13px;
 }
 
 .globalStock .sub_service .sub_mid .sub_con .weeks_free.event_900 .box {
-  background: #404fc3 url("/img/banner/bg_1yearevent03.png") no-repeat right bottom;
+  background: #404fc3 url("../../img/banner/bg_1yearevent03.png") no-repeat right bottom;
   background-size: 106px 142px;
   padding: 25px 22px;
 }
@@ -22820,7 +22853,7 @@ table.tableRanking td {
   display: inline-block;
   width: 6px;
   height: 10px;
-  background: url("/img/more_white.png") no-repeat 0 0;
+  background: url("../../img/more_white.png") no-repeat 0 0;
   background-size: 6px 10px;
   margin-left: 10px;
 }
@@ -22833,12 +22866,12 @@ table.tableRanking td {
   display: inline-block;
   width: 33px;
   height: 13px;
-  background: url("/img/banner/img_y_box.png") no-repeat 0 0;
+  background: url("../../img/banner/img_y_box.png") no-repeat 0 0;
   background-size: 33px 13px;
 }
 
 .globalStock .sub_search .sub_mid.tabs_area > .weeks_free.event_900 .box {
-  background: #404fc3 url("/img/banner/bg_1yearevent02.png") no-repeat right bottom;
+  background: #404fc3 url("../../img/banner/bg_1yearevent02.png") no-repeat right bottom;
   background-size: 128px 70px;
 }
 
@@ -22858,7 +22891,7 @@ table.tableRanking td {
   display: inline-block;
   width: 6px;
   height: 10px;
-  background: url("/img/more_white.png") no-repeat 0 0;
+  background: url("../../img/more_white.png") no-repeat 0 0;
   background-size: 6px 10px;
   margin-left: 10px;
 }
@@ -22871,12 +22904,12 @@ table.tableRanking td {
   display: inline-block;
   width: 33px;
   height: 13px;
-  background: url("/img/banner/img_y_box.png") no-repeat 0 0;
+  background: url("../../img/banner/img_y_box.png") no-repeat 0 0;
   background-size: 33px 13px;
 }
 
 .globalStock .sub_search .latest_results .tabsArea .weeks_free.event_900 .box {
-  background: #404fc3 url("/img/banner/bg_1yearevent02.png") no-repeat right bottom;
+  background: #404fc3 url("../../img/banner/bg_1yearevent02.png") no-repeat right bottom;
   background-size: 128px 70px;
 }
 
@@ -22890,7 +22923,7 @@ table.tableRanking td {
   display: inline-block;
   width: 10px;
   height: 13px;
-  background: url("/img/Icon_lockF.png") no-repeat 0 0;
+  background: url("../../img/Icon_lockF.png") no-repeat 0 0;
   background-size: 10px 13px;
   margin-right: 3px;
 }
@@ -22920,7 +22953,7 @@ table.tableRanking td {
   display: inline-block;
   width: 6px;
   height: 10px;
-  background: url("/img/more_white.png") no-repeat 0 0;
+  background: url("../../img/more_white.png") no-repeat 0 0;
   background-size: 6px 10px;
   margin-left: 10px;
 }
@@ -22933,12 +22966,12 @@ table.tableRanking td {
   display: inline-block;
   width: 33px;
   height: 13px;
-  background: url("/img/banner/img_y_box.png") no-repeat 0 0;
+  background: url("../../img/banner/img_y_box.png") no-repeat 0 0;
   background-size: 33px 13px;
 }
 
 .globalStock .catch_wrap .weeks_free.event_900 .box {
-  background: #e6e7f4 url("/img/banner/bg_1yearevent03.png") no-repeat right bottom;
+  background: #e6e7f4 url("../../img/banner/bg_1yearevent03.png") no-repeat right bottom;
   background-size: 106px 142px;
 }
 
@@ -22959,7 +22992,7 @@ table.tableRanking td {
   display: inline-block;
   width: 6px;
   height: 10px;
-  background: url("/img/more_white.png") no-repeat 0 0;
+  background: url("../../img/more_white.png") no-repeat 0 0;
   background-size: 6px 10px;
   margin-left: 10px;
 }
@@ -22972,7 +23005,7 @@ table.tableRanking td {
   display: inline-block;
   width: 33px;
   height: 13px;
-  background: url("/img/banner/img_y_box.png") no-repeat 0 0;
+  background: url("../../img/banner/img_y_box.png") no-repeat 0 0;
   background-size: 33px 13px;
 }
 
@@ -23554,19 +23587,19 @@ table.tableRanking td {
 
 .globalStock.kiwoom .sub_search .tabs_5.prm_tabs li:nth-child(4) {
   padding: 0 2px;
-  background: url("/img/prm_tabsLock.svg") no-repeat calc(100% - 3px) center;
+  background: url("../../img/prm_tabsLock.svg") no-repeat calc(100% - 3px) center;
   background-size: 8px auto;
 }
 
 @media (min-width: 320px) and (max-width: 358px) {
   .globalStock.kiwoom .sub_search .tabs_5.prm_tabs li:nth-child(4) {
-    background: url("/img/prm_tabsLock.svg") no-repeat calc(100% - 0px) center;
+    background: url("../../img/prm_tabsLock.svg") no-repeat calc(100% - 0px) center;
     background-size: 8px auto;
   }
 }
 .globalStock.kiwoom .sub_search .tabs_5.prm_tabs li:nth-child(5) {
   padding: 0 6px;
-  background: url("/img/prm_tabsLock.svg") no-repeat calc(100% - 6px) center;
+  background: url("../../img/prm_tabsLock.svg") no-repeat calc(100% - 6px) center;
   background-size: 8px auto;
 }
 
@@ -23830,7 +23863,7 @@ table.tableRanking td {
   display: inline-block;
   width: 5px;
   height: 10px;
-  background: url("/img/icon_moreRR.png") no-repeat 0 0;
+  background: url("../../img/icon_moreRR.png") no-repeat 0 0;
   background-size: cover;
 }
 
@@ -24866,7 +24899,7 @@ table.tableRanking td {
   padding-right: 10px;
   width: 12px;
   height: 12px;
-  background: url("/img/icon_awesome.svg") no-repeat center center;
+  background: url("../../img/icon_awesome.svg") no-repeat center center;
 }
 
 .globalStock .sub_search .sub_mid.adequateArea .listWrap .latest_signal .num,
@@ -24897,20 +24930,20 @@ table.tableRanking td {
   gap: 7px;
   justify-content: center;
   align-items: center;
-  background: url("/img/bg_bbline.png") repeat-x 0 calc(100% + 8px);
+  background: url("../../img/bg_bbline.png") repeat-x 0 calc(100% + 8px);
 }
 
 .globalStock .sub_search .sub_mid.adequateArea + .table_btmarea a.more i {
   display: inline-block;
   width: 5px;
   height: 10px;
-  background: url("/img/icon_moreR.png") no-repeat center center;
+  background: url("../../img/icon_moreR.png") no-repeat center center;
   background-size: cover;
 }
 
 .globalStock .sub_search .sub_mid.adequateArea .premiumLock_area {
   margin-top: 10px;
-  background: var(--colbar) url("/img/premiumLock_area.png") no-repeat 0 0;
+  background: var(--colbar) url("../../img/premiumLock_area.png") no-repeat 0 0;
   background-size: cover;
 }
 
@@ -25083,7 +25116,7 @@ table.tableRanking td {
 
 .premium_applybtn i {
   display: inline-block;
-  background: url("/img/Icon_lock.svg") no-repeat;
+  background: url("../../img/Icon_lock.svg") no-repeat;
   width: 12px;
   height: 15px;
   background-size: cover;
@@ -25178,7 +25211,7 @@ table.tableRanking td {
   font-size: 0.75rem;
   font-weight: bold;
   color: #8c90ad;
-  background: url("/img/more_blue.svg") no-repeat right center;
+  background: url("../../img/more_blue.svg") no-repeat right center;
 }
 
 .globalStock .sub_search .sub_mid.outline_box .box .title .txt_guide {
@@ -25295,7 +25328,7 @@ table.tableRanking td {
   vertical-align: top;
   width: 24px;
   height: 25px;
-  background: url("/img/game_trans.svg") no-repeat 0 0;
+  background: url("../../img/game_trans.svg") no-repeat 0 0;
   background-size: 114px 24px;
 }
 
@@ -25390,7 +25423,7 @@ table.tableRanking td {
   line-height: 1.18;
   color: #f9db4c;
   text-align: center;
-  background: #404fc3 url("/img/more_yel.svg") no-repeat calc(100% - 10px) center;
+  background: #404fc3 url("../../img/more_yel.svg") no-repeat calc(100% - 10px) center;
   background-size: 5px 8px;
 }
 
@@ -25403,7 +25436,7 @@ table.tableRanking td {
   width: 10px;
   height: 13px;
   margin-right: 4px;
-  background: url("/img/Icon_lock.svg") no-repeat 0 0;
+  background: url("../../img/Icon_lock.svg") no-repeat 0 0;
   background-size: 10px 13px;
 }
 
@@ -25626,7 +25659,7 @@ table.tableRanking td {
 
 .globalStock .sub_search .sub_mid.outline_box .box .event_attractiveness {
   width: 100%;
-  background: url("/img/bg_event_attractiveness.svg") no-repeat 9px center;
+  background: url("../../img/bg_event_attractiveness.svg") no-repeat 9px center;
 }
 
 .globalStock .sub_search .sub_mid.outline_box .box .event_attractiveness ul {
@@ -25649,7 +25682,7 @@ table.tableRanking td {
 .globalStock .sub_search .sub_mid.outline_box .box .event_attractiveness li.att_on {
   padding: 0 2px;
   color: #404fc3;
-  background: url("/img/bg_bbline.png") repeat-x 0 calc(100% + 8px);
+  background: url("../../img/bg_bbline.png") repeat-x 0 calc(100% + 8px);
 }
 
 .globalStock .sub_search .sub_mid.outline_box .box .event_attractiveness li.att_on a {
@@ -26518,7 +26551,7 @@ table.tableRanking td {
 
 .globalStock .sub_search .sub_mid .adequate_stock .box .adequate_price .nodata_area .banner_prm .cho_prm i {
   display: inline-block;
-  background: url("/img/Icon_lock.svg") no-repeat;
+  background: url("../../img/Icon_lock.svg") no-repeat;
   width: 10px;
   height: 13px;
   background-size: 10px 13px;
@@ -26669,7 +26702,7 @@ table.tableRanking td {
   top: 3px;
   width: 12px;
   height: 12px;
-  background: url("/img/icon_awesome.svg") no-repeat center center;
+  background: url("../../img/icon_awesome.svg") no-repeat center center;
 }
 
 .globalStock .sub_search .sub_mid .bandchart_more .more {
@@ -26723,7 +26756,7 @@ table.tableRanking td {
   top: 3px;
   width: 12px;
   height: 12px;
-  background: url("/img/icon_awesome.svg") no-repeat center center;
+  background: url("../../img/icon_awesome.svg") no-repeat center center;
 }
 
 .globalStock .sub_search .sub_mid .bandchart_sume .box {
@@ -26788,7 +26821,7 @@ table.tableRanking td {
   display: inline-block;
   width: 15px;
   height: 12px;
-  background: url("/img/icon_youtube.svg") no-repeat center center;
+  background: url("../../img/icon_youtube.svg") no-repeat center center;
   margin-right: 8px;
 }
 
@@ -26827,7 +26860,7 @@ table.tableRanking td {
 
 .globalStock .sub_search .sub_mid .eventsum_area .freeChare {
   position: relative;
-  background: url("/img/bandChart_free.jpg") no-repeat 0 0;
+  background: url("../../img/bandChart_free.jpg") no-repeat 0 0;
   aspect-ratio: 1.824;
   background-size: 100% 100%;
   width: 100%;
@@ -26877,7 +26910,7 @@ table.tableRanking td {
   display: inline-block;
   width: 10px;
   height: 13px;
-  background: url("/img/Icon_lockF.png") no-repeat 0 0;
+  background: url("../../img/Icon_lockF.png") no-repeat 0 0;
   background-size: 10px 13px;
   margin-right: 3px;
 }
@@ -26915,7 +26948,7 @@ table.tableRanking td {
   display: inline-block;
   width: 6px;
   height: 10px;
-  background: url("/img/more_blue.png") no-repeat 0 0;
+  background: url("../../img/more_blue.png") no-repeat 0 0;
   background-size: 6px 10px;
   margin-left: 10px;
 }
@@ -26974,7 +27007,7 @@ table.tableRanking td {
 .globalStock .sub_search .sub_mid.research_board .news_no_data {
   margin: 20px 15px 0;
   border-radius: 20px;
-  background: #f7f8f9 url("/img/bg_nodata.png") no-repeat center 70px;
+  background: #f7f8f9 url("../../img/bg_nodata.png") no-repeat center 70px;
   box-sizing: border-box;
   padding-top: 240px;
   padding-bottom: 15px;
@@ -27067,7 +27100,7 @@ table.tableRanking td {
 
 .globalStock .sub_search .sub_mid.research_board .lst_type2.lst_lock dt.tit strong {
   padding-left: 20px;
-  background: url("/img/prm_tabsLock.svg") no-repeat 0 center;
+  background: url("../../img/prm_tabsLock.svg") no-repeat 0 center;
   background-size: 11px auto;
   word-break: break-all;
 }
@@ -27126,7 +27159,7 @@ table.tableRanking td {
   display: inline-block;
   width: 80px;
   height: 71px;
-  background: #fff url("/img/noimg.png") no-repeat center center;
+  background: #fff url("../../img/noimg.png") no-repeat center center;
   background-size: cover;
   border: 1px solid #E0E4E9;
   border-radius: 10px;
@@ -27227,15 +27260,15 @@ table.tableRanking td {
     background-position: 1 100%;
   }
   .globalStock .sub_service .sub_top.service_t01 {
-    background: #fff url("/img/bg_service.png") no-repeat right bottom;
+    background: #fff url("../../img/bg_service.png") no-repeat right bottom;
     background-size: 202px 148px;
   }
   .globalStock .sub_service .sub_top.service_t03 {
-    background: #fff url("/img/bg_service_3.png") no-repeat right bottom;
+    background: #fff url("../../img/bg_service_3.png") no-repeat right bottom;
     background-size: 235px 175px;
   }
   .globalStock .sub_service .sub_top.service_t02 {
-    background: #404fc3 url("/img/bg_service_2.png") no-repeat right bottom;
+    background: #404fc3 url("../../img/bg_service_2.png") no-repeat right bottom;
     background-size: 172px 196px;
   }
   .globalStock .sub_recipe .sub_mid.recipe_tabs .box_tabs ul {
@@ -27280,7 +27313,7 @@ table.tableRanking td {
     display: inline-block;
   }
   .globalStock .sub_search .sub_mid .adequate_stock .box .con .value_chart .prm_lock span {
-    background: #404fc3 url("/img/more_yel.svg") no-repeat 95% center;
+    background: #404fc3 url("../../img/more_yel.svg") no-repeat 95% center;
     background-size: 5px 8px;
   }
 }
@@ -27489,7 +27522,7 @@ table.tableRanking td {
   padding-top: 35px;
   padding-bottom: 25px;
   /* background: url('/img/bg_free_2weeks.svg') no-repeat right 17px; 프리미엄 무료체험 */
-  background: url("/img/recipe_today.png") no-repeat 90% 50%;
+  background: url("../../img/recipe_today.png") no-repeat 90% 50%;
   /* 오늘의 매매신호 */
   background-size: auto 91px;
 }
@@ -27507,7 +27540,7 @@ table.tableRanking td {
 .free_2weeks .content .info_txt .txt01 strong {
   display: inline;
   color: #404fc3;
-  background: url("/img/bg_blue_line.gif") repeat-x right bottom;
+  background: url("../../img/bg_blue_line.gif") repeat-x right bottom;
 }
 
 .free_2weeks .content .info_txt .txt02 {
@@ -27543,7 +27576,7 @@ table.tableRanking td {
 }
 
 .free_2weeks.signalpop .content .info_txt {
-  background-image: url("/img/signalpop_bg.jpg");
+  background-image: url("../../img/signalpop_bg.jpg");
   background-size: 120px auto;
   background-position: right 55%;
 }
@@ -27621,7 +27654,7 @@ table.tableRanking td {
 }
 
 .free_2weeks.valueChart .content .info_txt {
-  background: url("/img/banner/bg_2w_valueChart.png") no-repeat right 36px;
+  background: url("../../img/banner/bg_2w_valueChart.png") no-repeat right 36px;
   background-size: 109px auto;
 }
 
@@ -28384,9 +28417,203 @@ table.tableRanking td {
   background-position: calc(50% + 26px) 1px;
 }
 
-/********************/
+/********************/ /********************/
 /**** 가입/결제 *****/
 /********************/
+/* 서비스 결제 스탭 1 */
+.v_signalStreng.globalStock .sub_payment.bg_blue {
+  background-color: #404fc3;
+}
+
+.v_signalStreng.globalStock .sub_payment .step_top {
+  box-sizing: border-box;
+  padding: 16px 15px;
+}
+.v_signalStreng.globalStock .sub_payment .step_top .event2024_payment_sub img {
+  display: block;
+  border-radius: 16px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.v_signalStreng.globalStock .sub_payment .serviceStep.step01 {
+  padding-top: 16px;
+}
+
+.v_signalStreng.globalStock .sub_payment .serviceStep.step01 .page_sumtop {
+  background: #3442ab url("../../img/page_sumtop_bg.png") no-repeat calc(100% - 22px) center;
+  background-size: auto 68px;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  width: calc(100% - 30px);
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 25px 25px;
+}
+
+.v_signalStreng.globalStock .sub_payment .serviceStep.step01 .page_sumtop .txt {
+  display: inline-block;
+  font-size: 0.875rem;
+  line-height: 1.43;
+  color: #e6e7f4;
+}
+
+.v_signalStreng.globalStock .sub_payment .serviceStep .step_wrap {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 12px 0;
+  background-color: #fff;
+  width: calc(100% - 30px);
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 23px 0 16px;
+  margin-bottom: 60px;
+}
+
+.v_signalStreng.globalStock .sub_payment .serviceStep .step_wrap::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -16px;
+  height: 16px;
+  width: 100%;
+  background: url("../../img/step_wrap_bg.png") repeat-x center top;
+  background-size: auto 8px;
+}
+
+.v_signalStreng.globalStock .sub_payment .serviceStep .step_box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 4px 8px;
+  width: calc(100% - 30px);
+  box-sizing: border-box;
+  margin: 0 auto;
+  border-radius: 9px;
+  border: solid 1px #e0e4e9;
+  padding: 24px 20px;
+  box-sizing: border-box;
+}
+
+.v_signalStreng.globalStock .sub_payment .serviceStep .step_box.routine_pay {
+  border: 1px solid #e9ebf7;
+  background-color: #f5f6fc;
+}
+
+.v_signalStreng.globalStock .sub_payment .serviceStep .step_box.period_pay.active {
+  border-color: #404fc3;
+}
+
+.v_signalStreng.globalStock .sub_payment .serviceStep .step_box .title {
+  width: 100%;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  font-weight: bold;
+  color: #333;
+}
+
+.v_signalStreng.globalStock .sub_payment .serviceStep .step_box .payRight {
+  /* width: calc(100% - 120px); */
+}
+
+.v_signalStreng.globalStock .sub_payment .serviceStep .step_box .subscribe {
+  max-width: 160px;
+  position: relative;
+  top: -4px;
+}
+
+.v_signalStreng.globalStock .sub_payment .serviceStep .step_box .subscribe span {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 7px 16px 6px;
+  max-width: 60px;
+  box-sizing: border-box;
+  border-radius: 100px;
+  border: solid 1px #c7cbe9;
+  background-color: #fff;
+  font-size: 0.8125rem;
+  text-align: center;
+  color: #404fc3;
+}
+
+.v_signalStreng.globalStock .sub_payment .serviceStep .step_box .payRight .pay01 {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #d3d3d3;
+  text-decoration: line-through;
+  padding-left: 1px;
+}
+
+.v_signalStreng.globalStock .sub_payment .serviceStep .step_box .payRight .pay02 {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin-top: 1px;
+  font-size: 1.25rem;
+  font-weight: bold;
+  letter-spacing: normal;
+  color: #404fc3;
+}
+
+.v_signalStreng.globalStock .sub_payment .serviceStep .step_box .payRight .pay02 .pay_sale {
+  padding-bottom: 4px;
+}
+
+.v_signalStreng.globalStock .sub_payment .serviceStep .step_box .payRight .pay02 .pay_sale strong {
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: #7983d5;
+}
+
+.v_signalStreng.globalStock .sub_payment .serviceStep .step_box .payRight .pay02 .pay_sale .month_dvsion {
+  background-color: #fff;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #7983d5;
+}
+
+.v_signalStreng.globalStock .sub_payment .serviceStep .pay_guideTxt {
+  position: relative;
+  width: calc(100% - 30px);
+  box-sizing: border-box;
+  margin: 0 auto 32px;
+  padding-left: 8px;
+  font-size: 0.75rem;
+  line-height: 1.42;
+  font-weight: 400;
+  color: #939393;
+}
+
+.v_signalStreng.globalStock .sub_payment .serviceStep .pay_guideTxt::before {
+  content: "*";
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #939393;
+}
+
+.v_signalStreng.globalStock .sub_payment .mapage_form .payment_note .agree_txt {
+  display: none;
+  font-size: 0.75rem;
+  line-height: 1.42;
+  color: #939393;
+}
+.v_signalStreng.globalStock .sub_payment .mapage_form .payment_note .agree_txt .refund_terms {
+  flex: none;
+  font-size: 0.75rem;
+  line-height: 1.42;
+  color: #404fc3;
+  text-decoration: underline;
+}
+
 .v_signalStreng.globalStock #wrap .modal.method .pop_con {
   padding: 0 25px 32px;
 }
@@ -28428,11 +28655,11 @@ table.tableRanking td {
   display: inline-block;
   width: 30px;
   height: 30px;
-  background: url("/img/method_card.svg") no-repeat center center;
+  background: url("../../img/method_card.svg") no-repeat center center;
 }
 
 .v_signalStreng.globalStock #wrap .modal.method .method_cho a.method_card:active:before {
-  background: url("/img/method_card_on.svg") no-repeat center center;
+  background: url("../../img/method_card_on.svg") no-repeat center center;
 }
 
 .v_signalStreng.globalStock #wrap .modal.method .method_cho a.method_phone::before {
@@ -28440,11 +28667,11 @@ table.tableRanking td {
   display: inline-block;
   width: 30px;
   height: 30px;
-  background: url("/img/method_card.svg") no-repeat center center;
+  background: url("../../img/method_card.svg") no-repeat center center;
 }
 
 .v_signalStreng.globalStock #wrap .modal.method .method_cho a.method_phone:active:before {
-  background: url("/img/method_card_on.svg") no-repeat center center;
+  background: url("../../img/method_card_on.svg") no-repeat center center;
 }
 
 .v_signalStreng.globalStock #wrap .modal.method .method_cho .guide_txt {
@@ -28454,9 +28681,578 @@ table.tableRanking td {
   color: #939393;
 }
 
+/* 서비스 결제 정기결제 카드 결제 정보 입력 스탭 2 */
+.v_signalStreng.globalStock .sub_payment .select_payTop {
+  /* margin-top: 16px; */
+  padding-top: 16px;
+  padding-bottom: 24px;
+  background-color: #404fc3;
+}
+
+.v_signalStreng.globalStock .sub_payment .select_payTop .step_box {
+  width: calc(100% - 30px);
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 19px 20px;
+  border-radius: 16px;
+  border: 1px solid #e9ebf7;
+  background-color: #fff;
+}
+
+.v_signalStreng.globalStock .sub_payment .select_payTop .step_box .title {
+  position: relative;
+  display: inline-block;
+  font-size: 1rem;
+  color: #333;
+}
+
+.v_signalStreng.globalStock .sub_payment .select_payTop .step_box .title .suggestion {
+  position: absolute;
+  right: -43px;
+  top: -2px;
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 100px;
+  background-color: #f5f6fc;
+  font-size: 11px;
+  font-weight: bold;
+  color: #404fc3;
+}
+
+.v_signalStreng.globalStock .sub_payment .select_payTop .step_box .payRight {
+  border-top: 1px solid #e0e4e9;
+  padding-top: 17px;
+  margin-top: 17px;
+}
+
+.v_signalStreng.globalStock .sub_payment .select_payTop .step_box .payRight .pay01 {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #d3d3d3;
+  text-decoration: line-through;
+}
+
+.v_signalStreng.globalStock .sub_payment .select_payTop .step_box .payRight .pay02 {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin-top: 2px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #404fc3;
+}
+
+.v_signalStreng.globalStock .sub_payment .select_payTop .step_box .payRight .pay02 .pay_sale {
+  padding-bottom: 4px;
+}
+
+.v_signalStreng.globalStock .sub_payment .select_payTop .step_box .payRight .pay02 .pay_sale strong {
+  font-size: 0.8175rem;
+  font-weight: 400;
+  color: #7983d5;
+}
+
+.v_signalStreng.globalStock .sub_payment .select_payTop .step_box .payRight .pay02 .pay_sale .month_dvsion {
+  background-color: #fff;
+  font-size: 0.8175rem;
+  font-weight: 500;
+  color: #7983d5;
+}
+
+.v_signalStreng.globalStock .sub_payment .payment_guide {
+  padding: 15px 24px 32px;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+.v_signalStreng.globalStock .sub_payment .payment_guide .pay_guideTxt {
+  font-size: 0.75rem;
+  line-height: 1.72;
+  color: #939393;
+}
+
+.v_signalStreng.globalStock .sub_payment .payment_guide .pay_guideTxt:last-of-type {
+  margin-bottom: 28px;
+  padding-bottom: 20px;
+  border-bottom: solid 1px #f4f4f5;
+}
+
+.v_signalStreng.globalStock .sub_payment .payment_guide .pay_guideTxt .card_overseas {
+  cursor: pointer;
+  display: flex;
+  gap: 0 9px;
+  font-size: 0.75rem;
+  line-height: 1.42;
+  color: #404fc3;
+  text-decoration: underline;
+}
+.v_signalStreng.globalStock .sub_payment .payment_guide .pay_guideTxt .card_overseas img {
+  display: inline-block;
+  position: relative;
+  top: -2px;
+}
+
+.v_signalStreng.globalStock .sub_payment .payment_guide .mapage_form {
+  padding-left: 0;
+}
+
+.v_signalStreng.globalStock .sub_payment .payment_guide .mapage_form .form_title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 24px;
+}
+
+.v_signalStreng.globalStock .sub_payment .payment_guide .mapage_form .form_wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 24px 0;
+}
+
+.v_signalStreng.globalStock .sub_payment .payment_guide .mapage_form .form_wrap .teh_guideTxt {
+  margin-top: 9px;
+  font-size: 0.75rem;
+  line-height: 1.72;
+  color: #939393;
+}
+
+.v_signalStreng.globalStock .sub_payment .payment_guide .mapage_form .subscription-form {
+  margin-top: 10px;
+}
+
+.v_signalStreng.globalStock .sub_payment .payment_guide .mapage_form .card_title {
+  display: block;
+  padding-bottom: 8px;
+  font-size: 0.8125rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.v_signalStreng.globalStock .sub_payment .payment_guide .mapage_form .selectbox {
+  width: 100%;
+  height: auto;
+}
+.v_signalStreng.globalStock .sub_payment .payment_guide .mapage_form .selectbox.card_sect {
+  display: none;
+  margin-top: 8px;
+}
+.v_signalStreng.globalStock .sub_payment .payment_guide .mapage_form .selectbox.card_sect:before {
+  top: 17px;
+}
+.v_signalStreng.globalStock .sub_payment .payment_guide .mapage_form .selectbox.card_sect label {
+  top: 0;
+}
+
+.v_signalStreng.globalStock .sub_payment .payment_guide .mapage_form .selectbox:before {
+  background: none;
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  position: absolute;
+  top: 37px;
+  right: 15px;
+  border-top: 1px solid #6a727b;
+  border-right: 1px solid #6a727b;
+  transform: rotate(135deg);
+}
+
+.v_signalStreng.globalStock .sub_payment .payment_guide .mapage_form .selectbox label {
+  top: 21px;
+  left: 0;
+  width: 100%;
+  height: 42px;
+  padding: 12px 16px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  border: solid 1px #e0e4e9;
+  background-color: #fff;
+  font-size: 0.875rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.v_signalStreng.globalStock .sub_payment .payment_guide .mapage_form .selectbox .t_label {
+  font-size: 0.875rem;
+  font-weight: normal;
+  line-height: 1.14;
+  color: #333;
+}
+
+.v_signalStreng.globalStock .sub_payment .payment_guide .mapage_form .selectbox select {
+  padding: 0 15px;
+  height: 42px;
+  box-sizing: border-box;
+}
+
+.v_signalStreng.globalStock .sub_payment .payment_guide .mapage_form .selectbox select option {
+  display: block;
+  width: 100%;
+  padding: 12px 16px;
+  box-sizing: border-box;
+}
+
+.v_signalStreng.globalStock .sub_payment .payment_guide .mapage_form .check_box {
+  /* display: flex; */
+  position: relative;
+}
+
+.v_signalStreng.globalStock .sub_payment .payment_guide .mapage_form .check_box input {
+  /* flex-grow: 1; */
+}
+
+.v_signalStreng.globalStock .sub_payment .payment_guide .mapage_form .input_check {
+  position: absolute;
+  right: 1px;
+  top: 1px;
+  cursor: pointer;
+  height: 40px;
+  box-sizing: border-box;
+  padding: 12px 16px;
+  background-color: #f7f8f9;
+  font-size: 0.875rem;
+  text-align: center;
+  color: #6a727b;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border: none;
+}
+
+@media (min-width: 320px) and (max-width: 358px) {
+  .v_signalStreng.globalStock .sub_payment .payment_guide .mapage_form .input_check {
+    height: 38px;
+  }
+}
+.v_signalStreng.globalStock .sub_payment .payment_guide .mapage_form .input_check:focus,
+.v_signalStreng.globalStock .sub_payment .payment_guide .mapage_form .input_check:active {
+  font-weight: bold;
+}
+
+.v_signalStreng.globalStock .sub_payment .payment_guide .mapage_form .couponNumber .check_box {
+  display: none;
+}
+
+.v_signalStreng.globalStock .sub_payment .payment_guide .mapage_form .couponNumber .t_label {
+  display: inline-block;
+  padding-right: 24px;
+  position: relative;
+}
+
+.v_signalStreng.globalStock .sub_payment .payment_guide .mapage_form .couponNumber .t_label::after {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  position: absolute;
+  top: 1px;
+  right: 5px;
+  border-top: 1px solid #6a727b;
+  border-right: 1px solid #6a727b;
+  transform: rotate(135deg);
+}
+
+.v_signalStreng.globalStock .sub_payment .payment_guide .mapage_form .couponNumber .t_label.rotated::after {
+  transform: rotate(-40deg);
+  top: 4px;
+}
+
+.v_signalStreng.globalStock .sub_payment .payment_guide .mapage_form .t_label {
+  display: block;
+  padding-bottom: 8px;
+  font-size: 0.8125rem;
+  font-weight: bold;
+  color: #333;
+}
+
 .mapage_form input:focus {
   outline: none; /* 기본 포커스 아웃라인 제거 */
   border: 1px solid #404fc3 !important; /* 포커스 시 보더 색 변경 */
+}
+
+.v_signalStreng.globalStock .sub_payment .payment_guide .mapage_form input[type=number],
+.v_signalStreng.globalStock .sub_payment .payment_guide .mapage_form input[type=text],
+.v_signalStreng.globalStock .sub_payment .payment_guide .mapage_form input[type=password] {
+  width: 100%;
+  padding: 12px 16px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  border: solid 1px #e0e4e9;
+  background-color: #fff;
+  font-size: 0.875rem;
+  font-weight: bold;
+  color: #333;
+  outline: none;
+}
+
+.v_signalStreng.globalStock .sub_payment .payment_guide .mapage_form input[type=number]::-moz-placeholder, .v_signalStreng.globalStock .sub_payment .payment_guide .mapage_form input[type=text]::-moz-placeholder, .v_signalStreng.globalStock .sub_payment .payment_guide .mapage_form input[type=password]::-moz-placeholder {
+  color: #d3d3d3;
+}
+
+.v_signalStreng.globalStock .sub_payment .payment_guide .mapage_form input[type=number]::placeholder,
+.v_signalStreng.globalStock .sub_payment .payment_guide .mapage_form input[type=text]::placeholder,
+.v_signalStreng.globalStock .sub_payment .payment_guide .mapage_form input[type=password]::placeholder {
+  color: #d3d3d3;
+}
+
+.v_signalStreng.globalStock .sub_payment .payment_guide .mapage_form .error-message {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 0.75rem;
+  line-height: 1.72;
+  color: #E1305A;
+}
+
+.v_signalStreng.globalStock .sub_payment .payment_guide .mapage_form .error-message::before {
+  content: "";
+  vertical-align: middle;
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background: url("../../img/error_msg.svg") no-repeat center center;
+  border-radius: 50%;
+  margin-right: 4px;
+}
+
+.v_signalStreng.globalStock .sub_payment .payment_guide .mapage_form .security_info {
+  display: flex;
+  gap: 8px 8px;
+}
+
+.v_signalStreng.globalStock .sub_payment .payment_note {
+  display: flex;
+  flex-direction: column;
+  gap: 18px 10px;
+  padding: 24px 16px;
+  border-radius: 12px;
+  background-color: #f7f8f9;
+}
+
+.v_signalStreng.globalStock .sub_payment .payment_note .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.v_signalStreng.globalStock .sub_payment .payment_note .top .show {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 12px;
+  box-sizing: border-box;
+  font-size: 0;
+  width: 7px;
+  height: 12px;
+}
+
+.v_signalStreng.globalStock .sub_payment .payment_note .top .show::after {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  position: absolute;
+  top: 7px;
+  right: 5px;
+  border-top: 1px solid #6a727b;
+  border-right: 1px solid #6a727b;
+}
+
+.v_signalStreng.globalStock .sub_payment .payment_note .top .show.rotated::after {
+  top: 10px;
+  transform: rotate(-40deg);
+}
+
+.v_signalStreng.globalStock .sub_payment .payment_note .top .show:not(.rotated)::after {
+  transform: rotate(135deg);
+}
+
+.v_signalStreng.globalStock .sub_payment .payment_note .top .agree .txt {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.43;
+  color: #333;
+}
+
+.v_signalStreng.globalStock .sub_payment .payment_note .agree .txt {
+  font-size: 14px;
+  color: #6a727b;
+}
+
+.v_signalStreng.globalStock .sub_payment .payment_note .agree_chk {
+  /* display: flex; */
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding-left: 4px;
+  box-sizing: border-box;
+  display: none;
+}
+.v_signalStreng.globalStock .sub_payment .payment_note .agree_chk.caution .age_link {
+  align-self: flex-start;
+  top: 20px;
+}
+
+.v_signalStreng.globalStock .sub_payment .payment_note .age_link {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  font-size: 0;
+  width: 7px;
+  height: 12px;
+}
+
+.v_signalStreng.globalStock .sub_payment .payment_note .age_link::after {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  position: absolute;
+  top: 7px;
+  right: 5px;
+  border-top: 1px solid #aeb4b9;
+  border-right: 1px solid #aeb4b9;
+  transform: rotate(45deg);
+}
+
+.v_signalStreng.globalStock .sub_payment input.chk_label {
+  display: none;
+  /*checked된 input 바로 다음의 label:before 에 체크 후 CSS 설정*/
+}
+
+.v_signalStreng.globalStock .sub_payment input.chk_label + label {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0 8px;
+  position: relative;
+  cursor: pointer;
+}
+
+.v_signalStreng.globalStock .sub_payment input.chk_label + label:before {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  border-radius: 50%;
+  background: url("../../img/checked.svg") no-repeat center 5px;
+}
+
+.v_signalStreng.globalStock .sub_payment input.chk_label:checked + label:before {
+  content: "";
+  border-color: #c4c8cb;
+  background: url("../../img/checked_ch.svg") no-repeat center 5px;
+}
+
+.v_signalStreng.globalStock .sub_payment .payment_note .top .s_txt {
+  width: calc(100% - 34px);
+  font-size: 14px;
+  font-weight: bold;
+  color: #333 !important;
+}
+
+.v_signalStreng.globalStock .sub_payment .payment_note .top input.chk_label + label:before {
+  border: 1px solid #c4c8cb;
+}
+
+.v_signalStreng.globalStock .sub_payment .payment_note .top input.chk_label:checked + label:before {
+  background-color: #404fc3;
+  background-image: url("../../img/checked.svg");
+}
+
+.v_signalStreng.globalStock .sub_payment .payment_note .top input + label:before {
+  background-position: center center;
+}
+
+.v_signalStreng.globalStock .sub_payment .payment_note .top .s_txt,
+.v_signalStreng.globalStock .sub_payment .payment_note .agree_chk .s_txt {
+  display: inline-block;
+  line-height: 1.42;
+  font-size: 14px;
+  color: #6a727b;
+}
+@media (min-width: 320px) and (max-width: 375px) {
+  .v_signalStreng.globalStock .sub_payment .payment_note .top .s_txt,
+  .v_signalStreng.globalStock .sub_payment .payment_note .agree_chk .s_txt {
+    letter-spacing: -0.05rem;
+  }
+}
+
+.v_signalStreng.globalStock .sub_payment .payment_note .agree_chk .txt .agree_txt {
+  width: 100%;
+  display: block;
+  padding-left: 30px;
+  font-size: 0.75rem;
+  line-height: 1.42;
+  color: #6a727b;
+  word-break: normal;
+  word-wrap: break-word;
+}
+.v_signalStreng.globalStock .sub_payment .payment_note .agree_chk .txt .agree_txt.agree_title {
+  padding-top: 15px;
+  font-size: 0.8125rem;
+  font-weight: bold;
+  color: #333;
+}
+.v_signalStreng.globalStock .sub_payment .payment_note .agree_chk .txt .agree_txt.agree_caution {
+  padding-top: 5px;
+  line-height: 1.42;
+  color: #939393;
+}
+.v_signalStreng.globalStock .sub_payment .payment_note .agree_chk .txt .agree_txt.agree_caution b {
+  color: #939393;
+}
+.v_signalStreng.globalStock .sub_payment .payment_note .agree_chk .txt .agree_txt.agree_caution .refund_terms {
+  cursor: pointer;
+  display: inline-block;
+  padding-left: 5px;
+  color: #06c;
+  text-decoration: none;
+}
+
+.v_signalStreng.globalStock .sub_payment .payment_note .agree_caution strong {
+  display: block;
+  font-size: 0.8125rem;
+  font-weight: bold;
+  color: #333;
+  padding-bottom: 12px;
+}
+.v_signalStreng.globalStock .sub_payment .payment_note .agree_caution .txt {
+  font-size: 0.75rem;
+  line-height: 1.42;
+  color: #939393;
+}
+.v_signalStreng.globalStock .sub_payment .payment_note .agree_caution .txt b {
+  color: #939393;
+}
+.v_signalStreng.globalStock .sub_payment .payment_note .agree_caution .refund_terms {
+  cursor: pointer;
+  display: inline-block;
+  padding-left: 5px;
+  color: #06c;
+  font-size: 0.75rem;
+  text-decoration: none;
+}
+
+.v_signalStreng.globalStock .sub_payment .btnArea.btn_fix {
+  position: sticky;
+  bottom: 15px;
+  margin: 0 auto;
+  max-width: 767px;
+  box-sizing: border-box;
+  z-index: 85;
+}
+
+.v_signalStreng.globalStock .sub_payment .btnArea.payBtn .btn_save {
+  display: block;
+  margin: 19px auto 0;
+  padding: 19px 0;
+  border-radius: 8px;
+  background-color: #404fc3;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
 }
 
 .v_signalStreng.globalStock #wrap .modal.cardBox {
@@ -28471,6 +29267,10 @@ table.tableRanking td {
 .v_signalStreng.globalStock #wrap .modal.cardBox .pop_header .pop_title {
   justify-content: flex-start !important;
   font-size: 0.9375rem !important;
+  font-weight: bold;
+  line-height: 1.53;
+  letter-spacing: normal;
+  color: #333;
 }
 
 .v_signalStreng.globalStock #wrap .modal.cardBox .pop_header .pop_title::before {
@@ -28478,24 +29278,27 @@ table.tableRanking td {
   display: inline-block;
   width: 16px;
   height: 16px;
-  background: url("/img/txt_guide_blue.svg") no-repeat center center;
+  background: url("../../img/txt_guide_blue.svg") no-repeat center center;
 }
 
 .v_signalStreng.globalStock #wrap .modal.cardBox .pop_con {
   padding-top: 15px !important;
 }
 
-.v_signalStreng.globalStock #wrap .modal.cardBox .pop_con .paypal_title,
-.v_signalStreng.globalStock #wrap .modal.cardBox .pop_con .paypal_title b {
+.v_signalStreng.globalStock #wrap .modal.cardBox .pop_con .paypal_title {
   font-size: 14px;
   line-height: 1.43;
   color: #404fc3;
+}
+.v_signalStreng.globalStock #wrap .modal.cardBox .pop_con .paypal_title b {
+  color: #404fc3;
+  font-weight: bold;
 }
 
 .v_signalStreng.globalStock #wrap .modal.cardBox .pop_con .paypal_link {
   margin-top: 12px;
   margin-bottom: 12px;
-  padding: 16px 16px;
+  padding: 14px 16px;
   border-radius: 8px;
   background-color: #f7f8f9;
   font-size: 13px;
@@ -28533,7 +29336,8 @@ table.tableRanking td {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 2px 5px;
+  gap: 2px 8px;
+  padding-left: 8px;
 }
 
 .v_signalStreng.globalStock .modalBox .modal.agreePopBox .pop_con {
@@ -28567,6 +29371,110 @@ table.tableRanking td {
   color: #404fc3;
 }
 
+/* 결제 완료 */
+.v_signalStreng.globalStock #wrap .sub_payment .pay_complete {
+  padding: 0 18px 65px;
+}
+
+.v_signalStreng.globalStock #wrap .sub_payment .pay_complete .com_title {
+  padding: 40px 8px 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1.42;
+  color: #fff;
+}
+
+.v_signalStreng.globalStock #wrap .sub_payment .pay_complete .payment_guide {
+  display: flex;
+  flex-direction: column;
+  gap: 16px 0;
+  margin-top: 22px;
+  padding: 24px 16px;
+  box-sizing: border-box;
+  border-radius: 16px;
+  background-color: #fff;
+}
+
+.v_signalStreng.globalStock #wrap .sub_payment .pay_complete .payment_guide .guide {
+  display: flex;
+  gap: 0 24px;
+  width: 100%;
+}
+
+.v_signalStreng.globalStock #wrap .sub_payment .pay_complete .payment_guide .guide .th {
+  flex: 1;
+  font-size: 0.8125rem;
+  line-height: 1.15;
+  color: #6a727b;
+}
+
+.v_signalStreng.globalStock #wrap .sub_payment .pay_complete .payment_guide .guide .td_txt {
+  flex: 5;
+  font-size: 0.8125rem;
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: left;
+  color: #333;
+}
+
+.v_signalStreng.globalStock #wrap .sub_payment .pay_complete .payment_guide .deposit_box {
+  display: flex;
+  flex-direction: column;
+  gap: 5px 0;
+  padding-top: 16px;
+  border-top: solid 1px #e0e4e9;
+}
+
+.v_signalStreng.globalStock #wrap .sub_payment .pay_complete .payment_guide .deposit_info {
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 1.42;
+  color: #939393;
+}
+
+.v_signalStreng.globalStock #wrap .sub_payment .pay_complete .payment_guide .guide .event_info {
+  display: block;
+  margin-top: 3px;
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 1.24;
+  color: #939393;
+}
+
+.v_signalStreng.globalStock #wrap .sub_payment .pay_complete .go_myhome {
+  padding-left: 8px;
+  margin-top: 16px;
+  font-size: 0.875rem;
+  line-height: 1.43;
+  color: #fff;
+}
+
+.v_signalStreng.globalStock #wrap .sub_payment .pay_complete .go_myhome a {
+  font-size: 0.875rem;
+  line-height: 1.43;
+  color: #fff;
+  text-decoration: underline;
+}
+
+.v_signalStreng.globalStock #wrap .sub_payment .pay_complete .btn_home {
+  margin-top: 61px;
+  border-radius: 8px;
+  border: solid 1px rgba(255, 255, 255, 0.3764705882);
+  font-size: 0.9375rem;
+  font-weight: normal;
+  line-height: 1.2;
+  color: #fff;
+}
+
+@media (min-width: 320px) and (max-width: 375px) {
+  .v_signalStreng.globalStock .sub_payment .serviceStep .step_box {
+    padding: 25px 19px;
+  }
+  .v_signalStreng.globalStock .sub_payment .serviceStep .step_box .subscribe span {
+    padding: 7px 18px 6px;
+    max-width: 54px;
+  }
+}
 body.v_signalStreng {
   background-color: #fff;
 }
@@ -28707,7 +29615,7 @@ body.v_signalStreng {
   top: 2px;
   width: 16px;
   height: 16px;
-  background: url("/img/heart_attention.svg") no-repeat 0 4px;
+  background: url("../../img/heart_attention.svg") no-repeat 0 4px;
   margin-right: 5px;
   background-size: 16px 32px;
 }
@@ -28973,7 +29881,7 @@ body.v_signalStreng {
   display: inline-block;
   width: 16px;
   height: 16px;
-  background: url("/img/icon_awesome_us.svg") no-repeat center center;
+  background: url("../../img/icon_awesome_us.svg") no-repeat center center;
   position: relative;
   top: -2px;
 }
@@ -29350,30 +30258,6 @@ body.v_signalStreng {
   border-color: var(--coldae);
 }
 
-.v_signalStreng.globalStock #wrap #container.sub_search .mainBox.investCharm_area {
-  margin-top: 40px;
-  padding: 0 16px;
-  background-color: #fff;
-}
-.v_signalStreng.globalStock #wrap #container.sub_search .mainBox.investCharm_area .title a {
-  font-size: 1.25rem;
-  font-weight: 700;
-  line-height: 1.2;
-  color: #181f29;
-}
-.v_signalStreng.globalStock #wrap #container.sub_search .mainBox.investCharm_area .title a::after {
-  content: "";
-  display: inline-block;
-  width: 12px;
-  height: 12px;
-  background: url("/img/more_gray.svg") no-repeat center center;
-  padding-left: 5px;
-}
-.v_signalStreng.globalStock #wrap #container.sub_search .mainBox.investCharm_area .tab_diagnosis_area {
-  margin-top: 16px;
-  padding: 0;
-}
-
 .v_signalStreng.globalStock #wrap #container.sub_search .banner_signal {
   position: relative;
   padding: 30px 16px 40px;
@@ -29507,7 +30391,7 @@ body.v_signalStreng {
 /* 하단 막대 차트 */
 .v_signalStreng.globalStock #wrap #container .mainBox.financials {
   background-color: #fff;
-  padding: 32px 0;
+  padding: 32px 16px;
 }
 
 .v_signalStreng.globalStock #wrap #container .mainBox.financials::after {
@@ -29642,7 +30526,7 @@ body.v_signalStreng {
 
 .v_signalStreng.globalStock #wrap #container .mainBox.financials .area_note .note_list #btn_free_list .note_nm,
 .v_signalStreng.globalStock #wrap #container .mainBox.financials .area_note .note_list .freeView_list .note_nm {
-  background: url("/img/lokimg.svg") no-repeat 0 2px;
+  background: url("../../img/lokimg.svg") no-repeat 0 2px;
   background-size: 12px;
 }
 
@@ -29694,7 +30578,6 @@ body.v_signalStreng {
 
 .v_signalStreng.globalStock #wrap #container .mainBox.financials .dataBox {
   margin-bottom: 38px;
-  padding: 0 16px;
 }
 
 .v_signalStreng.globalStock #wrap #container .mainBox.financials .dataBox .reg_day {
@@ -29778,16 +30661,6 @@ body.v_signalStreng {
   line-height: 1.2;
   color: #181f29;
 }
-.v_signalStreng.globalStock #wrap #container .mainBox.financials .chart_box .c_title + .signal_guide {
-  cursor: pointer;
-  display: inline-block;
-  border-radius: 50%;
-  position: relative;
-  top: 2px;
-}
-.v_signalStreng.globalStock #wrap #container .mainBox.financials .chart_box .c_title .signal_guide img {
-  display: inline-block;
-}
 
 .v_signalStreng.globalStock #wrap #container .mainBox.financials .chart_box .unit {
   font-size: 0.75rem;
@@ -29862,12 +30735,12 @@ body.v_signalStreng {
 .v_signalStreng.globalStock #wrap #container .mainBox.financials .chart_box .financialsLine_style {
   margin-top: 10px;
   width: 100%;
-  height: 260px;
+  height: 220px;
 }
 
 @media (min-width: 426px) {
   .v_signalStreng.globalStock #wrap #container .mainBox.financials .chart_box .financialsLine_style {
-    height: 290px;
+    height: 260px;
   }
 }
 .v_signalStreng.globalStock #wrap #container .mainBox.financials .chart_box .financialsLine_style .highcharts-xaxis .highcharts-axis-line {
@@ -29948,6 +30821,10 @@ body.v_signalStreng {
 /* .v_signalStreng.globalStock #wrap .competitors_table, */
 /* .v_signalStreng.globalStock #wrap .sub_mid.research_board, */
 /* .v_signalStreng.globalStock #wrap .sub_recipe .sub_mid.recipe_view, */
+.v_signalStreng.globalStock #wrap .sub_recom .sub_mid .tabsArea .tabs_two + .tab_container > div {
+  background-color: #F4F4F5;
+}
+
 .v_signalStreng.globalStock #wrap .sub_mid.tabs_area,
 .v_signalStreng.globalStock #wrap .competitors_table,
 .v_signalStreng.globalStock #wrap .sub_mid.research_board {
@@ -30162,31 +31039,31 @@ body.v_signalStreng {
 }
 
 .globalStock .gnb .list li.home a::before {
-  background: url("/img/home_on.svg") no-repeat center center;
+  background: url("../../img/home_on.svg") no-repeat center center;
 }
 
 .globalStock .gnb .list li.sch a::before {
-  background: url("/img/sch_on.svg") no-repeat center center;
+  background: url("../../img/sch_on.svg") no-repeat center center;
 }
 
 .globalStock .gnb .list li.stock a::before {
-  background: url("/img/stock_on.svg") no-repeat center center;
+  background: url("../../img/stock_on.svg") no-repeat center center;
 }
 
 .globalStock .gnb .list li.excavation a::before {
-  background: url("/img/excavation_on.svg") no-repeat center center;
+  background: url("../../img/excavation_on.svg") no-repeat center center;
 }
 
 .globalStock .gnb .list li.attention a::before {
-  background: url("/img/attention_on.svg") no-repeat center center;
+  background: url("../../img/attention_on.svg") no-repeat center center;
 }
 
 .globalStock .gnb .list li.menu a::before {
-  background: url("/img/icon_menu.svg") no-repeat center center;
+  background: url("../../img/icon_menu.svg") no-repeat center center;
 }
 
 .globalStock .gnb .list li.menu a::before {
-  background: url("/img/icon_menu_on.svg") no-repeat center center;
+  background: url("../../img/icon_menu_on.svg") no-repeat center center;
 }
 
 .v_signalStreng.globalStock .updata_allList {
@@ -30393,7 +31270,7 @@ body.v_signalStreng {
   top: 3px;
   width: 12px;
   height: 12px;
-  background: url("/img/icon_awesome.svg") no-repeat center center;
+  background: url("../../img/icon_awesome.svg") no-repeat center center;
 }
 
 .v_signalStreng.globalStock .sub_recom .bandchart_sume .box.info p a.more {
@@ -30539,7 +31416,7 @@ body.v_signalStreng {
   padding-bottom: 20px;
   width: 100%;
   height: auto;
-  background: #f7f8f9 url("/img/bg_nodata.png") no-repeat center 50px;
+  background: #f7f8f9 url("../../img/bg_nodata.png") no-repeat center 50px;
 }
 
 .v_signalStreng.globalStock .sub_game {
@@ -30681,7 +31558,7 @@ body.v_signalStreng {
 }
 
 .v_signalStreng.globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .recipe_area .area .logo_list#btn_free .title_logo .logo {
-  background: #fff url("/img/signal_prm.svg") no-repeat center center;
+  background: #fff url("../../img/signal_prm.svg") no-repeat center center;
   background-size: 70%;
 }
 
@@ -30869,7 +31746,7 @@ body.v_signalStreng {
   padding: 0;
   height: 270px;
   background: none;
-  background: url("/img/monthly_payment.svg") no-repeat center 30px;
+  background: url("../../img/monthly_payment.svg") no-repeat center 30px;
 }
 .v_signalStreng.globalStock .signalpop.monthly_payment .content .info_txt p {
   text-align: center;
@@ -30930,7 +31807,7 @@ body.v_signalStreng {
   text-align: center;
   padding: 0;
   height: 270px;
-  background: url("/img/banner/event_mainBtm_240115.png") no-repeat center 0;
+  background: url("../../img/banner/event_mainBtm_240115.png") no-repeat center 0;
   background-size: contain;
 }
 .v_signalStreng.globalStock .signalpop.event2024_payment .content .info_txt p {
@@ -30977,7 +31854,7 @@ body.v_signalStreng {
   text-align: center;
   padding: 0;
   height: 270px;
-  background: url("/img/banner/event_mainBtm_240123.png") no-repeat center 0;
+  background: url("../../img/banner/event_mainBtm_240123.png") no-repeat center 0;
   background-size: contain !important;
 }
 .v_signalStreng.globalStock .signalpop.event2024_payment .content .info_txt p {
@@ -31166,7 +32043,7 @@ body.v_signalStreng {
   top: 3px;
   width: 12px;
   height: 12px;
-  background: url("/img/icon_awesome.svg") no-repeat center center;
+  background: url("../../img/icon_awesome.svg") no-repeat center center;
 }
 
 .v_signalStreng.globalStock .modal.bandchart_sume .box.info p a.more {
@@ -31289,1494 +32166,6 @@ body.v_signalStreng {
   height: 4px;
   border-radius: 50%;
   background: #c7cbe9;
-}
-
-/* 가입 - 가입방법 선택 */
-.globalStock .sub_payment {
-  background-color: #F4F4F5;
-}
-
-.globalStock .sub_payment .step_area ul {
-  font-size: 0;
-  display: flex;
-}
-
-.globalStock .sub_payment .step_area li {
-  flex: 1;
-  color: #939393;
-  font-size: 0.82rem;
-  display: inline-block;
-  text-align: center;
-  border-bottom: 2px solid #404FC3;
-  padding: 20px 5px 11px;
-  box-sizing: border-box;
-  position: relative;
-}
-
-.globalStock .sub_payment .step_area li.active {
-  color: #404fc3;
-  font-weight: bold;
-}
-
-.globalStock .sub_payment .step_area li::after {
-  content: "";
-  position: absolute;
-  right: -5px;
-  bottom: 12px;
-  width: 5px;
-  height: 10px;
-  background: url("../img/icon_moreR.png") no-repeat 0 0;
-  background-size: cover;
-}
-
-.globalStock .sub_payment .step_area li:last-child::after {
-  background: none;
-  display: none;
-}
-
-/* 가입 - 가입방법 선택 step 01 */
-.globalStock .sub_payment .serviceStep .step_top {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 0 15px;
-  padding: 36px 15px 25px;
-}
-.globalStock .sub_payment .serviceStep .step_top::after {
-  content: "";
-  clear: both;
-}
-.globalStock .sub_payment .serviceStep .step_top .event2024_payment_sub {
-  width: 100%;
-  margin-top: 15px;
-}
-.globalStock .sub_payment .serviceStep .step_top .event2024_payment_sub a {
-  display: inline-block;
-  width: 100%;
-  height: 100%;
-}
-.globalStock .sub_payment .serviceStep .step_top .event2024_payment_sub img {
-  display: inline-block;
-  width: 100%;
-  height: 100%;
-}
-
-.globalStock .sub_payment .serviceStep .step_top .globalStock .sub_payment .serviceStep .step_title {
-  color: #333;
-  font-size: 1.25rem;
-  line-height: 1.7rem;
-  padding-bottom: 3px;
-}
-
-.globalStock .sub_payment .serviceStep .way {
-  display: block;
-  width: 100%;
-  font-size: 0.8125rem;
-  padding-top: 2px;
-  color: #939393;
-}
-
-.globalStock .sub_payment .serviceStep .txt {
-  color: #939393;
-  font-size: 0.9375rem;
-  line-height: 1.2rem;
-}
-
-.globalStock .sub_payment .serviceStep .step_box {
-  padding: 15px 15px;
-  border-radius: 9px;
-  border: 1px solid #fff;
-  background: #fff;
-  box-sizing: border-box;
-  width: calc(100% - 30px);
-  margin: 0 auto 10px;
-  position: relative;
-}
-
-.globalStock .sub_payment .serviceStep .step_box.active {
-  border: 1px solid #404fc3;
-}
-
-.globalStock .sub_payment .serviceStep .step_box.active::before {
-  content: "";
-  width: 16px;
-  height: 16px;
-  background: url("../img/icon_checkmark.png") no-repeat 100% 0;
-  position: absolute;
-  right: 12px;
-  top: 13px;
-}
-
-.globalStock .sub_payment .serviceStep .step_box .title {
-  color: #404fc3;
-  font-size: 1.125rem;
-  font-weight: bold;
-}
-
-.globalStock .sub_payment .serviceStep .step_box .title .way {
-  display: block;
-  color: #939393;
-  font-size: 0.8rem;
-  font-weight: normal;
-  line-height: 20px;
-  padding-top: 2px;
-}
-
-.globalStock .sub_payment .serviceStep .step_box .payRight {
-  padding-top: 10px;
-  text-align: right;
-  padding-bottom: 13px;
-}
-
-.globalStock .sub_payment .serviceStep .step_box .payRight .pay01 {
-  color: #333;
-  font-size: 1.25rem;
-  font-weight: 500;
-  margin-right: 20px;
-  padding: 0 15px;
-  position: relative;
-}
-.globalStock .sub_payment .serviceStep .step_box .payRight .pay01::before {
-  content: "";
-  background: url("../img/c_line.png") no-repeat 100% 0;
-  position: absolute;
-  left: 0;
-  top: 50%;
-  margin-top: -7px;
-  width: 100%;
-  height: 14px;
-}
-
-.globalStock .sub_payment .serviceStep .step_box .payRight .pay01 b {
-  color: #333;
-  font-size: 1rem;
-  opacity: 0.7;
-  font-weight: normal;
-}
-
-.globalStock .sub_payment .serviceStep .step_box .payRight .pay01 .pay_sale {
-  position: absolute;
-  right: -46px;
-  top: -15px;
-  color: #404FC3;
-  font-weight: normal;
-  font-size: 0.84rem;
-  display: inline-block;
-  width: 90px;
-}
-
-.globalStock .sub_payment .serviceStep .step_box .payRight .pay01 .pay_sale strong {
-  color: #404FC3;
-  font-weight: bold;
-  font-size: 0.84rem;
-}
-
-.globalStock .sub_payment .serviceStep .step_box .payRight .pay0 .pay_sale strong {
-  color: #404FC3;
-  font-weight: bold;
-  font-size: 0.84rem;
-}
-
-.globalStock .sub_payment .serviceStep .step_box .payRight .pay02 {
-  color: #333;
-  font-size: 1.25rem;
-  font-weight: 500;
-  letter-spacing: normal;
-}
-
-.globalStock .sub_payment .serviceStep .step_box.routine_pay .payRight .pay02 {
-  color: #fc2929;
-}
-
-.globalStock .sub_payment .serviceStep .step_box .payRight .pay02 b {
-  color: #333;
-  font-size: 1rem;
-  opacity: 0.7;
-  font-weight: normal;
-}
-
-.globalStock .sub_payment .serviceStep .step_box .payRight .pay02 .pay_sale {
-  display: block;
-  color: #939393;
-  font-size: 0.8rem;
-  font-weight: normal;
-  margin-top: 5px;
-  position: relative;
-}
-
-.globalStock .sub_payment .serviceStep .step_box .payRight .pay02 .pay_sale02 {
-  display: inline-block;
-  color: #fc2929;
-  font-size: 1rem;
-  font-weight: normal;
-  position: relative;
-}
-
-.globalStock .sub_payment .serviceStep .step_box .payRight .pay03 {
-  color: #939393;
-  font-size: 1rem;
-  font-weight: normal;
-  margin-right: 0;
-  padding: 0;
-  position: relative;
-}
-
-.globalStock .sub_payment .serviceStep .step_box .payRight .pay03 b {
-  color: #333;
-  font-size: 1rem;
-  opacity: 0.7;
-  font-weight: normal;
-}
-
-.globalStock .sub_payment .serviceStep .step_box .payRight .txt_line {
-  border-top: 1px solid #E0E4E9;
-  padding-top: 10px;
-  margin-top: 25px;
-}
-
-.globalStock .sub_payment .serviceStep .step_box .payRight .txt_line .txt {
-  text-align: left;
-  color: #939393;
-  font-size: 0.75rem !important;
-  line-height: 1.1rem;
-}
-
-.globalStock .sub_payment .serviceStep .step_box .payRight .txt_line .txt:nth-child(2),
-.globalStock .sub_payment .serviceStep .step_box .payRight .txt_line .txt:nth-child(3),
-.globalStock .sub_payment .serviceStep .step_box .payRight .txt_line .txt:nth-child(4) {
-  margin-top: 7px;
-}
-
-.globalStock .sub_payment .serviceStep .step_box .payRight .txt_line .txt strong,
-.globalStock .sub_payment .serviceStep .step_box .payRight .txt_line .txt b {
-  color: #939393;
-}
-
-.globalStock .sub_payment .serviceStep .txt_line {
-  position: relative;
-  padding: 0 20px;
-  margin-top: 25px;
-}
-
-.globalStock .sub_payment .serviceStep ::after {
-  content: "";
-  position: absolute;
-  bottom: -8px;
-  left: 0;
-  right: 0;
-  display: block;
-  width: 100%;
-  height: 8px;
-  background-color: var(--col1a1);
-}
-
-.globalStock .sub_payment .serviceStep .txt {
-  position: relative;
-  text-align: left;
-  color: var(--col7f8);
-  font-size: 0.75rem !important;
-  line-height: 1.1rem;
-  padding-left: 10px;
-}
-
-.globalStock .sub_payment .serviceStep .txt u {
-  font-weight: 700;
-}
-
-.globalStock .sub_payment .serviceStep .txt::before {
-  content: "";
-  display: inline-block;
-  position: absolute;
-  left: 0;
-  top: 7px;
-  width: 4px;
-  height: 4px;
-  border-radius: 50%;
-  background-color: #898989;
-}
-
-.globalStock .sub_payment .serviceStep .txt:nth-child(2),
-.globalStock .sub_payment .serviceStep .txt:nth-child(3),
-.globalStock .sub_payment .serviceStep .txt:nth-child(4) {
-  margin-top: 7px;
-}
-
-.globalStock .sub_payment .serviceStep .txt strong,
-.globalStock .sub_payment .serviceStep .txt b,
-.globalStock .sub_payment .serviceStep .txt u {
-  color: #333;
-}
-
-.globalStock .sub_payment .payBtn {
-  text-align: center;
-  margin-top: 40px;
-  padding: 0 15px;
-}
-
-.globalStock .sub_payment .payBtn .btn {
-  color: #404fc3;
-  font-size: 0.9375rem;
-  border-radius: 5px;
-  position: relative;
-}
-
-.globalStock .sub_payment .payBtn .btn_cncl {
-  margin-right: 5px;
-}
-
-.globalStock .sub_payment .payBtn .btn_save {
-  color: #fff;
-  background: #404fc3;
-}
-
-.globalStock .sub_payment .payBtn .btn_cncl i {
-  position: absolute;
-  left: 18px;
-  top: 14px;
-  display: inline-block;
-  width: 5px;
-  height: 10px;
-  background: url("../img/icon_moreL.png") no-repeat 0 0;
-  background-size: cover;
-}
-
-.globalStock .sub_payment .payBtn .btn_save i {
-  position: absolute;
-  right: 18px;
-  top: 14px;
-  display: inline-block;
-  width: 5px;
-  height: 10px;
-  background: url("../img/icon_moreRR.png") no-repeat 0 0;
-  background-size: cover;
-}
-
-.globalStock .sub_payment .step_box .pay_line {
-  color: #939393;
-  text-align: right;
-  font-size: 0.82rem;
-  margin-top: 10px;
-}
-
-.globalStock .sub_payment .account_box {
-  border-top: 1px solid #E0E4E9;
-  margin-top: 30px;
-  padding: 30px 15px 0;
-}
-
-.globalStock .sub_payment .account_box .title {
-  color: #333;
-  font-size: 1.125rem;
-  margin-bottom: 8px;
-}
-
-.globalStock .sub_payment .account_box .txt_t {
-  color: #333;
-  font-size: 0.9375rem;
-  margin-bottom: 5px;
-}
-
-.globalStock .sub_payment .account_box .txt {
-  color: #939393;
-  font-size: 0.82rem;
-  line-height: 1.2rem;
-}
-
-.globalStock .sub_payment .mapage_form {
-  padding: 20px 15px 0;
-}
-
-.globalStock .sub_payment .mapage_form .form_table {
-  border-top: 1px solid #E0E4E9;
-}
-
-.globalStock .sub_payment .mapage_form .form_table tr {
-  border-bottom: 1px solid #E0E4E9;
-}
-
-.globalStock .sub_payment .mapage_form .form_table tr:last-child {
-  border-bottom: none;
-}
-
-.globalStock .sub_payment .mapage_form .form_table th,
-.globalStock .sub_payment .mapage_form .form_table td {
-  text-align: left;
-  padding: 20px 0 14px;
-  line-height: 1.2rem;
-  font-weight: normal;
-  vertical-align: top;
-}
-
-.globalStock .sub_payment .mapage_form .form_table th {
-  color: #939393;
-  font-size: 0.82rem;
-  width: 90px;
-}
-
-.globalStock .sub_payment .mapage_form .form_table td {
-  color: #333;
-  font-size: 0.9375rem;
-}
-
-.globalStock .sub_payment .mapage_form .form_table td .i_dsc {
-  clear: both;
-  float: none;
-  color: #404fc3;
-  font-size: 0.75rem;
-  line-height: 14px;
-  margin-top: 6px;
-}
-
-.globalStock .sub_payment .mapage_form .form_table td .i_dsc i {
-  position: relative;
-  top: 2px;
-  margin-right: 5px;
-  display: inline-block;
-  width: 14px;
-  height: 14px;
-  background: url("../img/bg_x.png") no-repeat 0 0;
-}
-
-.globalStock .sub_payment .mapage_form .form_table td .i_dsc.phone {
-  color: #ff2929;
-  margin-top: 0;
-  padding-top: 6px;
-}
-
-.globalStock .sub_payment .mapage_form .form_table td .i_dsc.phone i {
-  background-position: 0 100%;
-}
-
-.globalStock .sub_payment .mapage_form .form_table td .i_guide {
-  clear: both;
-  float: none;
-  color: #939393;
-  margin-top: 0;
-  padding-top: 6px;
-  font-size: 0.75rem;
-  display: block;
-  line-height: 1.4;
-}
-
-.globalStock .sub_payment .mapage_form .form_table td .mod_btn {
-  display: inline-block;
-  border: 1px solid #404fc3;
-  border-radius: 3px;
-  width: 100px;
-  color: #404fc3;
-  font-size: 0.75rem;
-  text-align: center;
-  padding: 5px 3px;
-  box-sizing: border-box;
-}
-
-.globalStock .sub_payment .mapage_form .form_table td .mod_phone .txt_info {
-  display: inline-block;
-  padding-right: 5px;
-}
-
-.globalStock .sub_payment .mapage_form .form_table td .certification_area {
-  background: #e6e7f4;
-  padding: 15px 15px;
-  padding-left: 90px;
-  margin-top: 15px;
-  box-sizing: border-box;
-}
-
-.globalStock .sub_payment .mapage_form .form_table td .certification_area .certifi_btn,
-.globalStock .sub_payment .mapage_form .form_table td .certifi_btn {
-  cursor: pointer;
-  float: left;
-  vertical-align: top;
-  background: #404fc3;
-  color: #fff;
-  font-size: 0.75rem;
-  padding: 0 10px;
-  box-sizing: border-box;
-  text-align: center;
-  line-height: 25px;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
-}
-
-.globalStock .sub_payment .mapage_form .form_table td .certification_area .phone_mod,
-.globalStock .sub_payment .mapage_form .form_table td .phone_mod {
-  float: left;
-  vertical-align: top;
-  border: none;
-  height: 25px;
-  line-height: 25px;
-  width: 155px;
-  padding: 0 5px;
-  box-sizing: border-box;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
-}
-
-.globalStock .sub_payment .mapage_form .form_table td .phone_mod.chk_ok {
-  width: 100%;
-}
-
-.globalStock .sub_payment.sub_freeguide .agree_area {
-  width: calc(100% - 30px);
-  margin: 25px auto;
-}
-
-.globalStock .sub_payment.sub_freeguide .agree_area .txt {
-  color: #333;
-  font-size: 0.9375rem;
-}
-
-.globalStock .sub_payment.sub_freeguide .agree_area .agree_from {
-  margin-top: 20px;
-}
-
-.globalStock .sub_payment.sub_freeguide .agree_area .agree_from .label {
-  background: #fff;
-  border-radius: 9px;
-  padding: 14px 20px 14px 12px;
-}
-
-.globalStock .sub_payment.sub_freeguide .agree_area .agree_from .label:first-child,
-.globalStock .sub_payment.sub_freeguide .agree_area .agree_from .label:nth-child(2) {
-  margin-bottom: 9px;
-}
-
-.globalStock .sub_payment.sub_freeguide .agree_area .agree_from .label .label_chk {
-  color: #333;
-  font-size: 0.82rem;
-  display: inline-block;
-}
-
-.globalStock .sub_payment.sub_freeguide .agree_area .agree_from .label .label_chk i {
-  display: inline-block;
-  vertical-align: top;
-  position: relative;
-  top: -2px;
-  width: 16px;
-  height: 16px;
-  background: url("../img/icon_agreecheck.png") no-repeat 0 100%;
-  margin-right: 7px;
-}
-
-.globalStock .sub_payment.sub_freeguide .agree_area .agree_from .label .label_chk strong {
-  text-decoration: underline;
-}
-
-.globalStock .sub_payment.sub_freeguide .agree_area .agree_from .label.active .label_chk i {
-  background-position: 0 0;
-}
-
-.globalStock .sub_payment.sub_freeguide .agree_area .agree_from .label .label_chk.sub_label {
-  padding-left: 15px;
-  padding-top: 10px;
-  opacity: 0.5;
-}
-
-.globalStock .sub_payment.sub_freeguide .agree_area .agree_from .label.active .label_chk.sub_label {
-  opacity: 1;
-}
-
-.globalStock .sub_payment.sub_freeguide .agree_area .agree_from .label .terms_btn {
-  float: right;
-  vertical-align: top;
-  position: relative;
-  top: -3px;
-  width: 70px;
-  background: #404fc3;
-  border-radius: 3px;
-  color: #fff;
-  font-size: 0.75rem;
-  text-align: center;
-  padding: 7px 5px;
-  box-sizing: border-box;
-}
-
-.globalStock .sub_payment.sub_freeguide .agree_area .agree_from .label.free_label {
-  margin: 0;
-}
-
-.globalStock .sub_payment.sub_freeguide .agree_area .agree_from .label.free_label:first-child {
-  padding-bottom: 0;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
-}
-
-.globalStock .sub_payment.sub_freeguide .agree_area .agree_from .label.free_label:nth-child(2) {
-  padding-top: 5px;
-  border-top-right-radius: 0;
-  border-top-left-radius: 0;
-}
-
-.globalStock .sub_payment.sub_freeguide .agree_area .agree_from .payBtn {
-  text-align: center;
-  margin-top: 30px;
-  padding: 0 15px;
-}
-
-.globalStock .sub_payment.sub_freeguide .agree_area .agree_from .btn {
-  color: #404fc3;
-  font-size: 0.9375rem;
-  border-radius: 5px;
-  position: relative;
-  width: calc(50% + 60px);
-}
-
-.globalStock .sub_payment.sub_freeguide .agree_area .agree_from .btn_save {
-  color: #fff;
-  background: #404fc3;
-}
-
-.globalStock .sub_payment.sub_freeguide .agree_area .agree_from .btn_save i {
-  position: absolute;
-  right: 18px;
-  top: 15px;
-  display: inline-block;
-  width: 5px;
-  height: 10px;
-  background: url("../img/icon_moreRR.png") no-repeat 0 0;
-  background-size: cover;
-}
-
-/* 가입 - 결제하기 step 02 */
-.globalStock .sub_payment .step_top .step_title {
-  display: inline-block;
-}
-
-.globalStock .sub_payment .step_top .btn_cardEvent {
-  vertical-align: top;
-  float: right;
-}
-
-.globalStock .sub_payment .payment_guide {
-  border-top: 1px solid #E0E4E9;
-  border-bottom: 1px solid #E0E4E9;
-  margin-top: 30px;
-  padding: 0 15px 0;
-}
-
-.globalStock .sub_payment .payment_guide .guide {
-  padding: 20px 0 15px;
-  border-bottom: 1px solid #E0E4E9;
-}
-
-.globalStock .sub_payment .payment_guide .guide:last-child {
-  border-bottom: none;
-}
-
-.globalStock .sub_payment .payment_guide .guide li {
-  display: inline-block;
-  vertical-align: top;
-}
-
-.globalStock .sub_payment .payment_guide .guide .th {
-  width: 90px;
-  color: #939393;
-  font-size: 0.82rem;
-}
-
-.globalStock .sub_payment .payment_guide .guide .td_txt {
-  color: #333;
-  font-size: 0.9375rem;
-}
-.globalStock .sub_payment .payment_guide .guide .td_txt .event_info {
-  display: block;
-  color: #939393;
-  font-size: 0.75rem;
-  line-height: 1.36;
-  margin-top: 5px;
-}
-
-.globalStock .sub_payment .payment_guide .guide .td_txt.card_list,
-.globalStock .sub_payment .payment_guide .guide .td_txt.card_list span {
-  color: #404fc3;
-}
-
-.globalStock .sub_payment .payment_guide .guide .td_txt.c_blue,
-.globalStock .sub_payment .payment_guide .guide .td_txt.c_blue strong {
-  color: #404fc3;
-}
-
-.globalStock .sub_payment .payment_guide .guide .td_txt span {
-  color: #939393;
-  font-size: 0.82rem;
-}
-
-.globalStock .sub_payment .payment_guide .guide .td_txt strong {
-  color: #333;
-  font-size: 1.25rem;
-  vertical-align: top;
-  position: relative;
-  top: -4px;
-  font-weight: 500;
-}
-
-.globalStock .sub_payment .payment_guide .guide .td_sum {
-  color: #939393;
-  font-size: 0.82rem;
-  display: block;
-  padding-left: 90px;
-  margin-top: 5px;
-  line-height: 1.2rem;
-}
-
-.globalStock .sub_payment .payment_guide .guide .td_sale {
-  width: 100%;
-  padding: 10px 15px 0;
-  padding-left: 100px;
-  margin-top: 0;
-  box-sizing: border-box;
-}
-
-.globalStock .sub_payment .payment_guide .guide .td_sale p {
-  color: #939393;
-  font-size: 0.82rem;
-  line-height: 1.5rem;
-}
-
-.globalStock .sub_payment .payment_guide .guide .td_sale p span {
-  display: inline-block;
-  color: #939393;
-  width: 80px;
-}
-
-.globalStock .sub_payment .payment_guide .guide .td_sale p strong {
-  color: #333;
-  font-size: 0.9375rem;
-  padding-left: 12px;
-  font-weight: 500;
-}
-
-.globalStock .sub_payment .payment_guide .guide .td_sale p strong i {
-  display: inline-block;
-  width: 13px;
-  height: 13px;
-  background: url("../img/icon_sale.png") no-repeat 0 0;
-  margin-right: 5px;
-}
-
-.globalStock .sub_payment .payment_guide .mapage_form {
-  padding: 0;
-  border-bottom: 1px solid #E0E4E9;
-}
-
-.globalStock .sub_payment .payment_guide .mapage_form .form_table {
-  border-top: none;
-}
-
-.globalStock .sub_payment .payment_guide .mapage_form .form_table tr {
-  border-bottom: 1px solid #E0E4E9;
-}
-
-.globalStock .sub_payment .payment_guide .mapage_form .form_table tr:last-child {
-  border-bottom: none;
-}
-
-.globalStock .sub_payment .payment_guide .mapage_form .form_table th,
-.globalStock .sub_payment .payment_guide .mapage_form .form_table td {
-  text-align: left;
-  padding: 20px 0 14px;
-  line-height: 1.2rem;
-  font-weight: normal;
-  vertical-align: top;
-}
-
-.globalStock .sub_payment .payment_guide .mapage_form .form_table th {
-  color: #939393;
-  font-size: 0.82rem;
-  width: 90px;
-}
-
-.globalStock .sub_payment .payment_guide .mapage_form .form_table td {
-  color: #333;
-  font-size: 0.9375rem;
-}
-
-.globalStock .sub_payment .payment_guide .mapage_form .form_table td .i_dsc {
-  clear: both;
-  float: none;
-  color: #404fc3;
-  font-size: 0.75rem;
-  line-height: 14px;
-  margin-top: 6px;
-}
-
-.globalStock .sub_payment .payment_guide .mapage_form .form_table td .i_dsc i {
-  position: relative;
-  top: 2px;
-  margin-right: 5px;
-  display: inline-block;
-  width: 14px;
-  height: 14px;
-  background: url("../img/bg_x.png") no-repeat 0 0;
-}
-
-.globalStock .sub_payment .payment_guide .mapage_form .form_table td .i_dsc.coupon {
-  color: #ff2929;
-  margin-top: 0;
-  padding-top: 6px;
-}
-
-.globalStock .sub_payment .payment_guide .mapage_form .form_table td .i_dsc.coupon i {
-  background-position: 0 100%;
-}
-
-.globalStock .sub_payment .payment_guide .mapage_form .form_table td .mod_btn {
-  display: inline-block;
-  border: 1px solid #404fc3;
-  border-radius: 3px;
-  width: 100px;
-  color: #404fc3;
-  font-size: 0.75rem;
-  text-align: center;
-  padding: 5px 3px;
-  box-sizing: border-box;
-}
-
-.globalStock .sub_payment .payment_guide .mapage_form .form_table td .mod_coupon .txt_info {
-  display: inline-block;
-  padding-right: 5px;
-}
-
-.globalStock .sub_payment .payment_guide .mapage_form .form_table td .certification_area {
-  background: #e6e7f4;
-  padding: 15px 15px;
-  padding-left: 90px;
-  margin-top: 15px;
-  box-sizing: border-box;
-}
-
-.globalStock .sub_payment .payment_guide .mapage_form .form_table td .certification_area .certifi_btn,
-.globalStock .sub_payment .payment_guide .mapage_form .form_table td .certifi_btn {
-  float: left;
-  vertical-align: top;
-  background: #404fc3;
-  color: #fff;
-  font-size: 0.75rem;
-  padding: 0 10px;
-  box-sizing: border-box;
-  text-align: center;
-  line-height: 25px;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
-}
-
-.globalStock .sub_payment .payment_guide .mapage_form .form_table td .certification_area .coupon_mod,
-.globalStock .sub_payment .payment_guide .mapage_form .form_table td .coupon_mod {
-  vertical-align: top;
-  border: none;
-  display: inline-block;
-  height: 25px !important;
-  line-height: 25px;
-  width: 200px;
-  padding: 0 5px;
-  box-sizing: border-box;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
-}
-
-.globalStock .sub_payment .payment_guide .mapage_form .form_table td .coupon_mod#coupon_nm {
-  float: left;
-}
-
-.globalStock .sub_payment .payment_guide .guide + .mapage_form .coupon_mod {
-  float: left;
-}
-
-.globalStock .sub_payment .payment_guide .mapage_form .form_table td .coupon_mod.chk_ok {
-  width: 100%;
-}
-
-.globalStock .sub_payment .payment_guide .i_dsc {
-  float: none;
-  color: #404fc3;
-  font-size: 0.75rem;
-  line-height: 14px;
-  margin-top: 6px;
-}
-
-.globalStock .sub_payment .payment_note {
-  margin-top: 20px;
-  padding: 0 15px;
-}
-
-.globalStock .sub_payment .payment_note .h4_title {
-  color: #333;
-  font-size: 0.82rem;
-  font-weight: 500;
-}
-
-.globalStock .sub_payment .payment_note .h4_title + strong {
-  display: block;
-  margin-top: 10px;
-  color: #404fc3;
-  font-size: 0.82rem;
-  background: url("../img/dot_blue.png") no-repeat 0 4px;
-  padding-left: 7px;
-}
-
-.globalStock .sub_payment .payment_note .note {
-  margin-top: 23px;
-}
-
-.globalStock .sub_payment .payment_note .note li {
-  background: url("../img/dot_line.png") no-repeat 0 8px;
-  padding-left: 8px;
-  color: #939393;
-  font-size: 0.75rem;
-  line-height: 1.2rem;
-  margin-bottom: 4px;
-}
-.globalStock .sub_payment .payment_note .note li .refund_terms {
-  cursor: pointer;
-  color: #06c;
-  font-size: 0.75rem;
-  text-decoration: none;
-}
-
-.globalStock .sub_payment .payment_note .note li span {
-  color: #939393;
-  font-size: 0.75rem;
-  text-decoration: underline;
-}
-
-.globalStock .sub_payment .payment_note .note li span.refund_guide {
-  color: #06c;
-  text-decoration: underline;
-}
-
-.globalStock .sub_payment .payment_note .note li strong {
-  color: #939393;
-  font-size: 0.75rem;
-}
-
-.globalStock .sub_payment .payment_note .note_chk {
-  margin-top: 30px;
-  background: #e6e7f4;
-  border-radius: 9px;
-  padding: 12px 10px;
-}
-
-.globalStock .sub_payment .payment_note .note_chk .txt {
-  color: #333;
-  font-size: 0.82rem;
-  line-height: 1.2rem;
-  padding-left: 30px;
-  position: relative;
-}
-
-.globalStock .sub_payment .payment_note .note_chk .txt i {
-  position: absolute;
-  left: 5px;
-  top: 2px;
-  display: inline-block;
-  vertical-align: top;
-  width: 16px;
-  height: 16px;
-  background: url("../img/icon_agreecheck.png") no-repeat 0 100%;
-  margin-right: 7px;
-}
-
-.globalStock .sub_payment .payment_note .note_chk .txt.active i {
-  background-position: 0 0;
-}
-
-/* 가입 - 카드정보 입력 step 02 */
-.globalStock .sub_payment .pay_info {
-  padding: 15px 0;
-}
-
-.globalStock .sub_payment .pay_info .top {
-  padding: 0 15px 15px;
-  border-bottom: 1px solid #E0E4E9;
-}
-
-.globalStock .sub_payment .pay_info .top .logo {
-  width: 90px;
-  display: inline-block;
-}
-
-.globalStock .sub_payment .pay_info .top .logo img {
-  display: inline-block;
-  width: 100%;
-  height: auto;
-}
-
-.globalStock .sub_payment .pay_info .top .card {
-  color: #333;
-  font-size: 0.9375rem;
-  float: right;
-  font-weight: bold;
-  vertical-align: top;
-  margin-top: 4px;
-}
-
-.globalStock .sub_payment .pay_info .info {
-  background: #fff;
-  border-radius: 3px;
-  padding: 2px 10px;
-  margin: 15px 15px;
-}
-
-.globalStock .sub_payment .pay_info .info li {
-  padding: 12px 0;
-  border-bottom: 1px solid #E0E4E9;
-  color: #333;
-  font-size: 0.9375rem;
-  line-height: 1.3;
-}
-
-.globalStock .sub_payment .pay_info .info li:last-child {
-  border-bottom: none;
-}
-
-.globalStock .sub_payment .pay_info .info li strong {
-  color: #939393;
-  font-size: 0.83rem;
-  display: inline-block;
-  width: 70px;
-  font-weight: normal;
-}
-
-.globalStock .sub_payment .pay_info .info li span {
-  font-size: 0.75rem;
-  color: #939393;
-}
-
-.globalStock .sub_payment .pay_info .info li span.event_pay {
-  display: block;
-  line-height: 1.43;
-  padding-left: 67px;
-  margin-top: 4px;
-}
-
-.globalStock .sub_payment .pay_info .info li span.event_pay b {
-  color: #939393;
-}
-
-.globalStock .sub_payment .card_info {
-  margin-top: 10px;
-  padding: 0 15px;
-}
-
-.globalStock .sub_payment .card_info .title {
-  color: #333;
-  font-size: 0.9375rem;
-  font-weight: bold;
-}
-
-.globalStock .sub_payment .card_info p.guide {
-  color: #939393;
-  font-size: 0.75rem;
-  margin-top: 10px;
-}
-
-.globalStock .sub_payment .card_info .coupon_mod {
-  color: #939393;
-  font-size: 0.84rem;
-  text-align: center;
-  border: none;
-  line-height: 25px;
-  padding: 0 5px;
-  width: calc(25% - 7.5px) !important;
-  border-radius: 5px;
-  margin-right: 4px;
-}
-
-.globalStock .sub_payment .card_info .coupon_mod:last-child {
-  margin-right: 0;
-}
-
-.globalStock .sub_payment .card_info .term_mod {
-  border: none;
-  line-height: 25px;
-  padding: 0 5px;
-  width: calc(50% - 4px) !important;
-  border-radius: 5px;
-  margin-right: 4px;
-}
-
-.globalStock .sub_payment .card_info .term_mod:last-child {
-  margin-right: 0;
-}
-
-.globalStock .sub_payment .card_info .by_mod {
-  color: #939393;
-  font-size: 0.84rem;
-  text-align: center;
-  border: none;
-  line-height: 25px;
-  padding: 0 5px;
-  width: 58px;
-  border-radius: 5px;
-  margin-right: 4px;
-}
-
-.globalStock .sub_payment .card_info .payment_guide {
-  margin-top: 15px;
-  padding: 0;
-  padding-top: 10px;
-}
-
-.globalStock .sub_payment .card_info .selectbox {
-  display: inline-block;
-}
-
-.globalStock .sub_payment .card_info span.pw {
-  color: #939393;
-  font-size: 0.84rem;
-  display: inline-block;
-  line-height: 25px;
-  margin-left: 3px;
-}
-
-.globalStock .sub_payment .card_info span.bns_num {
-  color: #939393;
-  font-size: 0.84rem;
-  display: inline-block;
-  line-height: 25px;
-  margin-left: 3px;
-  position: relative;
-  padding-left: 24px;
-}
-
-.globalStock .sub_payment .card_info span.bns_num i {
-  position: absolute;
-  left: 5px;
-  top: 5px;
-  display: inline-block;
-  vertical-align: top;
-  width: 16px;
-  height: 16px;
-  background: url("../img/icon_agreecheck.png") no-repeat 0 100%;
-  margin-right: 7px;
-}
-
-.globalStock .sub_payment .card_info span.bns_num.active i {
-  background-position: 0 0;
-}
-
-.globalStock .sub_payment .card_info .mapage_form {
-  border-bottom: none;
-}
-
-.globalStock .sub_payment .card_info .mapage_form .form_table tr {
-  border-bottom: none;
-}
-
-.globalStock .sub_payment .card_info .mapage_form .form_table th,
-.globalStock .sub_payment .card_info .mapage_form .form_table td {
-  padding: 10px 0;
-}
-
-.globalStock .sub_payment .card_info .payment_guide {
-  border-bottom: none;
-}
-
-.globalStock .sub_payment .payment_note {
-  border-radius: 3px;
-  padding: 15px 10px;
-  margin: 0 15px;
-}
-
-.globalStock .sub_payment .payment_note .top {
-  border-bottom: 1px solid #E0E4E9;
-  overflow: hidden;
-  padding-bottom: 9px;
-  margin-bottom: 9px;
-}
-
-.globalStock .sub_payment .payment_note .top .h4_title {
-  color: #333;
-  font-size: 0.9375rem;
-  display: inline-block;
-  width: calc(100% - 120px);
-}
-
-.globalStock .sub_payment .payment_note .top .agree {
-  color: #939393;
-  font-size: 0.84rem;
-  position: relative;
-  float: right;
-  width: 110px;
-  line-height: 20px;
-}
-
-.globalStock .sub_payment .payment_note .top .agree i {
-  display: inline-block;
-  vertical-align: top;
-  width: 20px;
-  height: 20px;
-  background: url("../img/select_on.png") no-repeat 0 100%;
-  background-size: 20px 20px;
-  margin-right: 7px;
-}
-
-.globalStock .sub_payment .payment_note .top .agree.active i {
-  background: url("../img/select.png") no-repeat 0 100%;
-  background-size: 20px 20px;
-}
-
-.globalStock .sub_payment .agree_chk .txt {
-  color: #939393;
-  font-size: 0.84rem;
-  line-height: 20px;
-  padding: 7px 0;
-  display: inline-block;
-  width: calc(100% - 47px);
-}
-
-.globalStock .sub_payment .agree_chk .txt i {
-  display: inline-block;
-  vertical-align: top;
-  width: 20px;
-  height: 20px;
-  background: url("../img/select_on.png") no-repeat 0 100%;
-  background-size: 20px 20px;
-  margin-right: 7px;
-}
-
-.globalStock .sub_payment .agree_chk .txt.active i {
-  background: url("../img/select.png") no-repeat 0 100%;
-  background-size: 20px 20px;
-}
-
-.globalStock .sub_payment .agree_chk .age_link {
-  float: right;
-  padding: 11px 5px;
-  background: url("../img/more_Black.png") no-repeat center center;
-  font-size: 0;
-  width: 7px;
-  height: 12px;
-  background-size: 7px 12px;
-}
-
-.globalStock .sub_payment .payment_chk {
-  background: #e6e7f4;
-  border-radius: 9px;
-  padding: 12px 10px;
-  margin: 30px 15px 0;
-}
-
-.globalStock .sub_payment .payment_chk .txt {
-  color: #333;
-  font-size: 0.82rem;
-  line-height: 1.2rem;
-  padding-left: 34px;
-  position: relative;
-}
-
-.globalStock .sub_payment .payment_chk .txt i {
-  position: absolute;
-  left: 5px;
-  top: -1px;
-  display: inline-block;
-  vertical-align: top;
-  width: 20px;
-  height: 20px;
-  background: url("../img/select_on.png") no-repeat 0 100%;
-  background-size: 20px 20px;
-  margin-right: 7px;
-}
-
-.globalStock .sub_payment .payment_chk .txt.active i {
-  background: url("../img/select.png") no-repeat 0 100%;
-  background-size: 20px 20px;
-}
-
-.globalStock .sub_payment .help_nicepay {
-  display: block;
-  color: #939393;
-  font-size: 0.75rem;
-  text-align: center;
-  line-height: 1.2rem;
-  margin-top: 13px;
-}
-
-.globalStock .sub_payment .fix_btn {
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
-  background-color: #f4f4f5;
-  padding: 15px 10px;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  max-width: 767px;
-  box-sizing: border-box;
-  z-index: 85;
-}
-
-.globalStock .setting_pop.card_edt #pay_cncl.setting_area {
-  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
-  border: solid 3px #404fc3;
-  transform: translate(-50%, -70%);
-}
-
-.globalStock .setting_pop.card_edt .txt {
-  text-align: center;
-  color: #333;
-  font-size: 0.9375rem;
-  line-height: 1.3rem;
-}
-
-.globalStock .setting_pop.card_edt .btnArea {
-  text-align: center;
-  padding-bottom: 20px;
-  padding-top: 20px;
-  border-top: 1px solid #E0E4E9;
-}
-
-.globalStock .setting_pop.card_edt .btnArea .btn {
-  width: 90px;
-  margin: 0 4px;
-}
-
-.globalStock .setting_pop.card_edt.pay_terms #pay_cncl.setting_area {
-  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
-  border: solid 3px #404fc3;
-  transform: translate(-50%, -50%);
-}
-
-.globalStock .setting_pop.card_edt.pay_terms .pop_con {
-  overflow: scroll;
-  height: 300px;
-  padding-bottom: 30px !important;
-}
-
-.globalStock .setting_pop.card_edt.pay_terms .pop_con .txt dt {
-  margin: 10px 0 5px;
-  text-align: left;
-  line-height: 1.43;
-  color: #333;
-  font-weight: bold;
-  font-size: 0.9rem;
-  vertical-align: top;
-}
-
-.globalStock .setting_pop.card_edt.pay_terms .pop_con .txt,
-.globalStock .setting_pop.card_edt.pay_terms .pop_con .txt dd,
-.globalStock .setting_pop.card_edt.pay_terms .pop_con .txt li {
-  text-align: left;
-  line-height: 1.43;
-  color: #939393;
-  font-size: 0.84rem;
-  vertical-align: top;
-}
-
-.globalStock .sub_payment .phone_regbox {
-  background: #fff;
-  border-radius: 10px;
-  padding: 15px 20px 21px;
-  margin: 0 15px;
-}
-
-.globalStock .sub_payment .phone_regbox .txt {
-  line-height: 1.54;
-  color: #333;
-  font-size: 0.9rem;
-}
-
-.globalStock .sub_payment .phone_regbox .txt i {
-  display: inline-block;
-  width: 12.5px;
-  height: 15.5px;
-  margin-right: 3px;
-  background: url("../img/banner/icon_alarm2.png") no-repeat 0 0;
-  background-size: 12.5px 15.5px;
-  position: relative;
-  top: 2px;
-}
-
-.globalStock .sub_payment .phone_regbox .txt span {
-  text-decoration: underline;
-}
-
-.globalStock .sub_payment .phone_regbox .payBtn {
-  margin-top: 20px;
-}
-
-.globalStock .sub_payment .phone_regbox .payBtn .btn {
-  width: calc(100% - 40px);
-}
-
-.globalStock .sub_payment .link_home {
-  text-align: center;
-  margin: 15px auto 0;
-}
-
-.globalStock .sub_payment .link_home a {
-  display: inline-block;
-  padding-bottom: 2px;
-  border-bottom: 1px dotted #939393;
-  line-height: 0.91;
-  letter-spacing: -0.55px;
-  color: #939393;
-  font-size: 0.7rem;
-}
-
-.globalStock .sub_payment .link_home i {
-  display: inline-block;
-  width: 3px;
-  height: 6px;
-  padding: 0 1px;
-  margin-right: 3px;
-  background: url("../img/more_Black.png") no-repeat 0 0;
-  background-size: 3px 6px;
-  position: relative;
-  top: -2px;
-}
-
-/* 가입 - 결제완료 step 03 */
-.globalStock .sub_payment.step03 .step_top {
-  background: #fff url("../img/bg_payment_com.png") no-repeat 105% 22px;
-  min-height: 200px;
-  box-sizing: border-box;
-}
-
-.globalStock .sub_payment .step_top .payment_com {
-  padding-top: 12px;
-  padding-left: 10px;
-}
-
-.globalStock .sub_payment .step_top .payment_com .login_title {
-  font-weight: bold;
-  font-size: 1.8rem;
-  line-height: 2.2rem;
-}
-
-.globalStock .sub_payment .step_top .payment_com .login_title strong {
-  display: block;
-  color: #404fc3;
-  line-height: 2.2rem;
-}
-
-.globalStock .sub_payment .step_top .payment_com .txt {
-  color: #939393;
-  font-size: 0.82rem;
-  line-height: 1.2rem;
-  margin-top: 15px;
-}
-
-.globalStock .sub_payment.step03 .payment_guide {
-  border-top: none;
-  margin-top: 0;
-}
-
-.globalStock .sub_payment.step03 .payment_guide .guide {
-  padding: 20px 0;
-}
-
-.globalStock .sub_payment.step03 .payment_note .note .mod_btn {
-  display: inline-block;
-  border: 1px solid #404fc3;
-  border-radius: 3px;
-  width: 80px;
-  color: #404fc3;
-  font-size: 0.75rem;
-  margin-top: 7px;
-  text-align: center;
-  padding: 5px 3px;
-  box-sizing: border-box;
 }
 
 .globalStock .onestep_sample .prm_div.weeks_free.w_70 {
@@ -33478,7 +32867,7 @@ body.v_signalStreng {
   content: "";
   width: 16px;
   height: 16px;
-  background: url("/img/icon_checkmark.png") no-repeat 100% 0;
+  background: url("../../img/icon_checkmark.png") no-repeat 100% 0;
   position: absolute;
   right: 6px;
   top: 6px;
@@ -33518,7 +32907,7 @@ body.v_signalStreng {
   display: inline-block;
   width: 5px;
   height: 10px;
-  background: url("/img/icon_moreL.png") no-repeat 0 0;
+  background: url("../../img/icon_moreL.png") no-repeat 0 0;
   background-size: cover;
 }
 
@@ -33529,7 +32918,7 @@ body.v_signalStreng {
   display: inline-block;
   width: 5px;
   height: 10px;
-  background: url("/img/icon_moreRR.png") no-repeat 0 0;
+  background: url("../../img/icon_moreRR.png") no-repeat 0 0;
   background-size: cover;
 }
 
@@ -34162,7 +33551,7 @@ body.v_signalStreng {
   color: #404fc3;
 }
 .globalStock .first_month_3300.md-modal #setting .pop_con {
-  background: #161c40 url("/img/first_month_3300.svg") no-repeat center top;
+  background: #161c40 url("../../img/first_month_3300.svg") no-repeat center top;
 }
 .globalStock .first_month_3300.md-modal #setting .pop_con ul {
   display: flex;
@@ -34350,7 +33739,7 @@ body.v_signalStreng {
   max-width: 420px;
   height: 330px;
   margin: 0 auto;
-  background: url("/img/first_month_3300.svg") no-repeat center 60%;
+  background: url("../../img/first_month_3300.svg") no-repeat center 60%;
 }
 .globalStock .service_wrap .box.premium_box .bg_img .bell {
   position: absolute;
@@ -34359,7 +33748,7 @@ body.v_signalStreng {
   display: inline-block;
   width: 100px;
   height: 100px;
-  background: url("/img/service/bell.svg") no-repeat center center;
+  background: url("../../img/service/bell.svg") no-repeat center center;
   background-size: cover;
   animation: shake 0.5s ease infinite; /* 떨리는 애니메이션 적용 */
 }
@@ -34404,13 +33793,13 @@ body.v_signalStreng {
   height: 45px;
 }
 .globalStock .service_wrap .box.premium_box .benefits_guide .benefits_img.img01 {
-  background: url("/img/service/benefits_img01.svg") no-repeat center center;
+  background: url("../../img/service/benefits_img01.svg") no-repeat center center;
 }
 .globalStock .service_wrap .box.premium_box .benefits_guide .benefits_img.img02 {
-  background: url("/img/service/benefits_img02.svg") no-repeat center center;
+  background: url("../../img/service/benefits_img02.svg") no-repeat center center;
 }
 .globalStock .service_wrap .box.premium_box .benefits_guide .benefits_img.img03 {
-  background: url("/img/service/benefits_img03.svg") no-repeat center center;
+  background: url("../../img/service/benefits_img03.svg") no-repeat center center;
 }
 .globalStock .service_wrap .box.premium_box .benefits_guide .title_box h2 {
   line-height: 1.4;
@@ -34613,7 +34002,7 @@ body.v_signalStreng {
   height: 100%;
 }
 .globalStock .service_wrap .fade_list .logo_list#btn_free .title_logo .logo {
-  background: #fff url("/img/signal_prm.svg") no-repeat center center;
+  background: #fff url("../../img/signal_prm.svg") no-repeat center center;
   background-size: 70%;
 }
 .globalStock .service_wrap .fade_list .logo_list .detail {
@@ -34688,7 +34077,7 @@ body.v_signalStreng {
 }
 
 .globalStock .sub_service .sub_top.service_t01 {
-  background: #f7f8f9 url("/img/bg_service.png") no-repeat calc(100% + 70px) calc(100% - 8px);
+  background: #f7f8f9 url("../../img/bg_service.png") no-repeat calc(100% + 70px) calc(100% - 8px);
   background-size: 202px 148px;
 }
 
@@ -34912,7 +34301,7 @@ body.v_signalStreng {
   display: inline-block;
   width: 6px;
   height: 10px;
-  background: url("/img/more_white.png") no-repeat 0 0;
+  background: url("../../img/more_white.png") no-repeat 0 0;
   background-size: 6px 10px;
   margin-left: 10px;
 }
@@ -34929,7 +34318,7 @@ body.v_signalStreng {
 .globalStock .sub_service .sub_mid .sub_con .box_serviceClass {
   margin-top: 35px;
   padding: 24px 24px;
-  background: #404fc3 url("/img/banner/bg_1yearevent03.png") no-repeat right 50px;
+  background: #404fc3 url("../../img/banner/bg_1yearevent03.png") no-repeat right 50px;
   background-size: 106px 142px;
 }
 
@@ -35212,7 +34601,7 @@ body.v_signalStreng {
 /* 서비스소개 제휴사이트 */
 /* 서비스소개 프리미엄 */
 .globalStock .sub_service .sub_top.service_t02 {
-  background: #404fc3 url("/img/bg_service_2.png") no-repeat calc(100% + 16px) calc(100% + 4px);
+  background: #404fc3 url("../../img/bg_service_2.png") no-repeat calc(100% + 16px) calc(100% + 4px);
   background-size: 172px 196px;
 }
 
@@ -35253,7 +34642,7 @@ body.v_signalStreng {
 .globalStock .sub_service .sub_con .w_box .box_title {
   color: #333;
   font-size: 1rem;
-  background: url("/img/bg_line.png") repeat-x 0 calc(100% + 10px);
+  background: url("../../img/bg_line.png") repeat-x 0 calc(100% + 10px);
   padding: 0 2px 5px 2px;
   display: inline-block;
   letter-spacing: -0.075rem;
@@ -35468,7 +34857,7 @@ body.v_signalStreng {
 
 .globalStock .sub_service .sub_con .compare_box .tableRanking.type_compare .com_select span {
   display: inline-block;
-  background: url("/img/com_select.png") no-repeat 50% 50%;
+  background: url("../../img/com_select.png") no-repeat 50% 50%;
   background-size: 14px 11px;
   width: 14px;
   height: 11px;
@@ -35543,7 +34932,7 @@ body.v_signalStreng {
   display: inline-block;
   width: 70px;
   height: 70px;
-  background: url("/img/bg_service_prm.png") no-repeat 0 0;
+  background: url("../../img/bg_service_prm.png") no-repeat 0 0;
   background-size: 100% 100%;
 }
 
@@ -35604,7 +34993,7 @@ body.v_signalStreng {
 
 .globalStock .sub_service .sub_mid .sub_con .banner_prm .cho_prm i {
   display: inline-block;
-  background: url("/img/Icon_lock.svg") no-repeat;
+  background: url("../../img/Icon_lock.svg") no-repeat;
   width: 10px;
   height: 13px;
   background-size: 10px 13px;
@@ -35680,7 +35069,7 @@ body.v_signalStreng {
 
 /* 서비스소개 가이드 */
 .globalStock .sub_service .sub_top.service_t03 {
-  background: #fff url("/img/bg_service_3.png") no-repeat calc(100% + 70px) calc(100% + 40px);
+  background: #fff url("../../img/bg_service_3.png") no-repeat calc(100% + 70px) calc(100% + 40px);
   background-size: 235px 175px;
 }
 
@@ -35961,7 +35350,7 @@ body.v_signalStreng {
   margin-bottom: 19px;
   margin-left: 10px;
   display: inline-block;
-  background: url("/img/icon_faq.png") no-repeat center top;
+  background: url("../../img/icon_faq.png") no-repeat center top;
   width: 10px;
   height: 5px;
   background-size: 100% auto;

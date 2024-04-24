@@ -12183,7 +12183,28 @@ table.tableRanking td {
 }
 
 .globalStock .sub_search .sub_mid .investCharm_area {
-	margin-top: 30px;
+	margin-top: 40px;
+    padding: 0 16px;
+    background-color: #fff;
+
+	.title a {
+		font-size: 1.25rem;
+		font-weight: 700;
+		line-height: 1.2;
+		color: #181f29;
+		&::after {
+			content: '';
+			display: inline-block;
+			width: 12px;
+			height: 12px;			
+			background: url('/img/more_gray.svg') no-repeat center center;			
+			padding-left: 5px;
+		}
+	}		
+	.tab_diagnosis_area {		
+		margin-top: 16px;
+		padding: 0;
+	}
 }
 
 .globalStock .sub_search .sub_mid .investCharm_area:after {
@@ -28879,9 +28900,186 @@ table.tableRanking td {
 	background-position: calc(50% + 26px) 1px;
 }
 
-/********************/
+/********************//********************/
 /**** 가입/결제 *****/
 /********************/
+
+/* 서비스 결제 스탭 1 */
+.v_signalStreng.globalStock .sub_payment.bg_blue {
+	background-color: #404fc3;
+}
+.v_signalStreng.globalStock .sub_payment .step_top {	
+	box-sizing: border-box;	
+	padding: 16px 15px;	
+	
+	.event2024_payment_sub {
+		img {
+			display: block;
+			border-radius: 16px;
+			overflow: hidden;
+			width: 100%;
+		}
+	}
+}
+.v_signalStreng.globalStock .sub_payment .serviceStep.step01 {
+	padding-top: 16px;
+}
+.v_signalStreng.globalStock .sub_payment .serviceStep.step01 .page_sumtop {
+	background: #3442ab url('/img/page_sumtop_bg.png') no-repeat calc(100% - 22px) center;
+	background-size: auto 68px;
+	border-top-left-radius: 16px;
+	border-top-right-radius: 16px;
+	width: calc(100% - 30px);
+	box-sizing: border-box;
+    margin: 0 auto;
+	padding: 25px 25px;
+}
+.v_signalStreng.globalStock .sub_payment .serviceStep.step01 .page_sumtop .txt {	
+	display: inline-block;
+	font-size: 0.875rem;	
+	line-height: 1.43;	
+	color: #e6e7f4;
+}
+.v_signalStreng.globalStock .sub_payment .serviceStep .step_wrap {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	gap: 12px 0;
+	background-color: #fff;	
+	width: calc(100% - 30px);
+	box-sizing: border-box;
+    margin: 0 auto;
+	padding: 23px 0 16px;
+	margin-bottom: 60px;
+}
+.v_signalStreng.globalStock .sub_payment .serviceStep .step_wrap::after {
+	content: '';
+	display: block;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: -16px;
+	height: 16px;
+	width: 100%;
+	background: url('/img/step_wrap_bg.png') repeat-x center top;
+	background-size: auto 8px;
+}
+.v_signalStreng.globalStock .sub_payment .serviceStep .step_box {
+	display: flex;
+	flex-wrap: wrap;	
+	justify-content: space-between;
+	gap: 4px 8px;
+	width: calc(100% - 30px);
+	box-sizing: border-box;
+    margin: 0 auto;
+	border-radius: 9px;
+  	border: solid 1px #e0e4e9;	
+	padding: 24px 20px;
+	box-sizing: border-box;
+}
+.v_signalStreng.globalStock .sub_payment .serviceStep .step_box.routine_pay {
+	border: 1px solid #e9ebf7;
+	background-color: #f5f6fc;
+}
+.v_signalStreng.globalStock .sub_payment .serviceStep .step_box.period_pay.active {
+	border-color: #404fc3;		
+}
+.v_signalStreng.globalStock .sub_payment .serviceStep .step_box .title {	
+	width: 100%;
+	font-size: 0.8125rem;	
+	font-weight: 700;	
+	font-weight: bold;
+	color: #333;
+}
+.v_signalStreng.globalStock .sub_payment .serviceStep .step_box .payRight {
+	/* width: calc(100% - 120px); */
+
+}
+.v_signalStreng.globalStock .sub_payment .serviceStep .step_box .subscribe {			
+	max-width: 160px;		
+	position: relative;
+	top: -4px;
+}
+.v_signalStreng.globalStock .sub_payment .serviceStep .step_box .subscribe span {
+	cursor: pointer;
+	display: inline-flex;	
+	align-items: center;
+    justify-content: center;	
+	padding: 7px 16px 6px;
+	max-width: 60px;	
+	box-sizing: border-box;
+	border-radius: 100px;
+	border: solid 1px #c7cbe9;	
+	background-color: #fff;
+	font-size: 0.8125rem;	
+	text-align: center;
+	color: #404fc3;
+}
+.v_signalStreng.globalStock .sub_payment .serviceStep .step_box .payRight .pay01 {
+	display: inline-block;
+	font-size: 0.75rem;	
+	font-weight: 500;	
+	color: #d3d3d3;	
+	text-decoration: line-through;
+	padding-left: 1px;
+}
+.v_signalStreng.globalStock .sub_payment .serviceStep .step_box .payRight .pay02 {
+	display: flex;
+	align-items: center;
+	gap: 7px;
+	margin-top: 1px;
+	font-size: 1.25rem;	
+	font-weight: bold;	
+	letter-spacing: normal;
+	color: #404fc3;
+}
+.v_signalStreng.globalStock .sub_payment .serviceStep .step_box .payRight .pay02 .pay_sale {
+	padding-bottom: 4px;	
+}
+.v_signalStreng.globalStock .sub_payment .serviceStep .step_box .payRight .pay02 .pay_sale strong {	
+	font-size: 0.75rem;
+	font-weight: 400;
+	color: #7983d5;	
+}
+.v_signalStreng.globalStock .sub_payment .serviceStep .step_box .payRight .pay02 .pay_sale .month_dvsion {	
+	background-color: #fff;
+	font-size: 0.75rem;
+	font-weight: 500;
+	color: #7983d5;	
+}
+.v_signalStreng.globalStock .sub_payment .serviceStep .pay_guideTxt {
+	position: relative;
+	width: calc(100% - 30px);
+	box-sizing: border-box;
+    margin: 0 auto 32px;
+	padding-left: 8px;
+	font-size: 0.75rem;
+	line-height: 1.42;
+	font-weight: 400;		
+	color: #939393;
+}
+.v_signalStreng.globalStock .sub_payment .serviceStep .pay_guideTxt::before {
+	content: "*";
+	position: absolute;
+	left: 0;
+	top: 0;
+	font-size: 0.75rem;
+	font-weight: 500;		
+	color: #939393;
+}
+.v_signalStreng.globalStock .sub_payment .mapage_form .payment_note .agree_txt {
+	display: none;
+	font-size: 0.75rem;	
+	line-height: 1.42;	
+	color: #939393;		
+	.refund_terms {
+		flex: none;
+		font-size: 0.75rem;
+		line-height: 1.42;
+		color: #404fc3;
+		text-decoration: underline;	
+	}
+}
 .v_signalStreng.globalStock #wrap .modal.method .pop_con {
 	padding: 0 25px 32px;
 }
@@ -28941,11 +29139,529 @@ table.tableRanking td {
 	color: #939393;
 }
 
+/* 서비스 결제 정기결제 카드 결제 정보 입력 스탭 2 */
+.v_signalStreng.globalStock .sub_payment .select_payTop {
+	/* margin-top: 16px; */
+	padding-top: 16px;
+	padding-bottom: 24px;
+	background-color: #404fc3;
+}
+.v_signalStreng.globalStock .sub_payment .select_payTop .step_box {	
+	width: calc(100% - 30px);
+	box-sizing: border-box;
+    margin: 0 auto;	
+	padding: 19px 20px;
+	border-radius: 16px;
+	border: 1px solid #e9ebf7;
+	background-color: #fff;
+}
+.v_signalStreng.globalStock .sub_payment .select_payTop .step_box .top {	
+	// padding-bottom: 17px;	
+}
+.v_signalStreng.globalStock .sub_payment .select_payTop .step_box .title {
+	position: relative;
+	display: inline-block;
+	font-size: 1rem;	
+	color: #333;
+}
+.v_signalStreng.globalStock .sub_payment .select_payTop .step_box .title .suggestion {
+	position: absolute;
+	right: -43px;
+	top: -2px;
+	display: inline-block;
+	padding: 4px 8px;
+	border-radius: 100px;
+	background-color: #f5f6fc;
+	font-size: 11px;
+	font-weight: bold;	
+	color: #404fc3;
+}
+.v_signalStreng.globalStock .sub_payment .select_payTop .step_box .payRight {
+	border-top: 1px solid #e0e4e9;
+	padding-top: 17px;
+	margin-top: 17px;
+}
+
+
+.v_signalStreng.globalStock .sub_payment .select_payTop .step_box .payRight .pay01 {
+	display: inline-block;
+	font-size: 0.75rem;	
+	font-weight: 500;	
+	color: #d3d3d3;	
+	text-decoration: line-through;
+}
+.v_signalStreng.globalStock .sub_payment .select_payTop .step_box .payRight .pay02 {
+	display: flex;
+	align-items: center;
+	gap: 7px;
+	margin-top: 2px;
+	font-size: 24px;	
+	font-weight: bold;	
+	color: #404fc3;
+}
+.v_signalStreng.globalStock .sub_payment .select_payTop .step_box .payRight .pay02 .pay_sale {
+	padding-bottom: 4px;	
+}
+.v_signalStreng.globalStock .sub_payment .select_payTop .step_box .payRight .pay02 .pay_sale strong {	
+	font-size: 0.8175rem;
+	font-weight: 400;
+	color: #7983d5;	
+}
+.v_signalStreng.globalStock .sub_payment .select_payTop .step_box .payRight .pay02 .pay_sale .month_dvsion {	
+	background-color: #fff;
+	font-size: 0.8175rem;
+	font-weight: 500;
+	color: #7983d5;	
+}
+.v_signalStreng.globalStock .sub_payment .payment_guide {
+	padding: 15px 24px 32px;
+	box-sizing: border-box;
+	background-color: #fff;
+}
+.v_signalStreng.globalStock .sub_payment .payment_guide .pay_guideTxt {
+	font-size: 0.75rem;
+	line-height: 1.72;	
+	color: #939393;	
+}
+.v_signalStreng.globalStock .sub_payment .payment_guide .pay_guideTxt:last-of-type {
+	margin-bottom: 28px;
+	padding-bottom: 20px;
+	border-bottom: solid 1px #f4f4f5;
+}
+.v_signalStreng.globalStock .sub_payment .payment_guide .pay_guideTxt .card_overseas {
+	cursor: pointer;
+	display: flex;
+	gap: 0 9px;
+	font-size: 0.75rem;
+	line-height: 1.42;		
+	color: #404fc3;
+	text-decoration: underline;
+	img {
+		display: inline-block;
+		position: relative;
+		top: -2px;
+	}
+}
+.v_signalStreng.globalStock .sub_payment .payment_guide .mapage_form {		
+	padding-left: 0;
+}
+.v_signalStreng.globalStock .sub_payment .payment_guide .mapage_form .form_title {
+	font-size: 1.25rem;
+	font-weight: bold;	
+	color: #333;	
+	margin-bottom: 24px;
+}
+.v_signalStreng.globalStock .sub_payment .payment_guide .mapage_form .form_wrap {	
+	display: flex;
+	flex-direction: column;
+	gap: 24px 0;
+	// margin-top: 24px;
+}
+.v_signalStreng.globalStock .sub_payment .payment_guide .mapage_form .form_wrap .teh_guideTxt {
+	margin-top: 9px;
+	font-size: 0.75rem;
+	line-height: 1.72;	
+	color: #939393;
+}
+.v_signalStreng.globalStock .sub_payment .payment_guide .mapage_form .subscription-form {
+	margin-top: 10px;	
+}
+.v_signalStreng.globalStock .sub_payment .payment_guide .mapage_form .card_title {
+	display: block;
+    padding-bottom: 8px;
+    font-size: 0.8125rem;
+    font-weight: bold;
+    color: #333;
+}
+.v_signalStreng.globalStock .sub_payment .payment_guide .mapage_form .selectbox {	
+	width: 100%;	
+	height: auto;
+	&.card_sect {
+		display: none;
+		margin-top: 8px;
+		&:before {
+			top: 17px;
+		}
+		label {
+			top: 0;
+		}
+	}
+}
+.v_signalStreng.globalStock .sub_payment .payment_guide .mapage_form .selectbox:before {
+	background: none;
+	content: "";
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+	top: 37px;
+    right: 15px;
+    border-top: 1px solid #6a727b;
+    border-right: 1px solid #6a727b;
+	transform: rotate(135deg);
+}
+.v_signalStreng.globalStock .sub_payment .payment_guide .mapage_form .selectbox label {
+	top: 21px;
+    left: 0;	
+	width: 100%;
+	height: 42px;	
+	padding: 12px 16px;	
+	box-sizing: border-box;
+	border-radius: 8px;
+	border: solid 1px #e0e4e9;
+	background-color: #fff;	
+	font-size: 0.875rem;
+	font-weight: bold;
+	color: #333;
+}
+.v_signalStreng.globalStock .sub_payment .payment_guide .mapage_form .selectbox .t_label {
+	font-size: 0.875rem;
+	font-weight: normal;
+	line-height: 1.14;	
+	color: #333;
+}
+.v_signalStreng.globalStock .sub_payment .payment_guide .mapage_form .selectbox select {	
+	padding: 0 15px;
+	height: 42px;
+	box-sizing: border-box;
+}
+.v_signalStreng.globalStock .sub_payment .payment_guide .mapage_form .selectbox select option {	
+	display: block;
+	width: 100%;	
+	padding: 12px 16px;	
+	box-sizing: border-box;
+}
+.v_signalStreng.globalStock .sub_payment .payment_guide .mapage_form .check_box {
+	/* display: flex; */
+	position: relative;
+}
+.v_signalStreng.globalStock .sub_payment .payment_guide .mapage_form .check_box input {		
+    /* flex-grow: 1; */
+}
+.v_signalStreng.globalStock .sub_payment .payment_guide .mapage_form .input_check {	
+	position: absolute;
+	right: 1px;
+	top: 1px;
+	cursor: pointer;
+	height: 40px;
+	box-sizing: border-box;
+	padding: 12px 16px;
+  	background-color: #f7f8f9;
+	font-size: 0.875rem;	
+	text-align: center;	
+	color: #6a727b;
+	border-top-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+	border: none;
+}
+@media (min-width: 320px) and (max-width: 358px) {
+	.v_signalStreng.globalStock .sub_payment .payment_guide .mapage_form .input_check {
+		height: 38px;
+	}
+}
+.v_signalStreng.globalStock .sub_payment .payment_guide .mapage_form .input_check:focus,
+.v_signalStreng.globalStock .sub_payment .payment_guide .mapage_form .input_check:active {	
+	font-weight: bold;		
+}
+.v_signalStreng.globalStock .sub_payment .payment_guide .mapage_form .couponNumber .check_box {
+	display: none;
+}
+.v_signalStreng.globalStock .sub_payment .payment_guide .mapage_form .couponNumber .t_label {
+	display: inline-block;
+	padding-right: 24px;
+	position: relative;
+}
+.v_signalStreng.globalStock .sub_payment .payment_guide .mapage_form .couponNumber .t_label::after {
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    position: absolute;    
+	top: 1px;
+    right: 5px;
+    border-top: 1px solid #6a727b;
+    border-right: 1px solid #6a727b;	
+	transform: rotate(135deg);		
+
+
+}
+.v_signalStreng.globalStock .sub_payment .payment_guide .mapage_form .couponNumber .t_label.rotated::after {
+	transform: rotate(-40deg);    
+	top: 4px;
+}
+
+.v_signalStreng.globalStock .sub_payment .payment_guide .mapage_form .t_label {
+	display: block;
+	padding-bottom: 8px;
+	font-size: 0.8125rem;
+	font-weight: bold;	
+	color: #333;
+}
 .mapage_form input:focus {
     outline: none; /* 기본 포커스 아웃라인 제거 */
     border: 1px solid #404fc3 !important; /* 포커스 시 보더 색 변경 */
 }
+.v_signalStreng.globalStock .sub_payment .payment_guide .mapage_form input[type=number],
+.v_signalStreng.globalStock .sub_payment .payment_guide .mapage_form input[type=text],
+.v_signalStreng.globalStock .sub_payment .payment_guide .mapage_form input[type=password] {	 
+	width: 100%;
+	padding: 12px 16px;	
+	box-sizing: border-box;
+	border-radius: 8px;
+	border: solid 1px #e0e4e9;
+	background-color: #fff;	
+	font-size: 0.875rem;
+	font-weight: bold;
+	color: #333;
+	outline: none;
+	
+}
+.v_signalStreng.globalStock .sub_payment .payment_guide .mapage_form input[type=number]::placeholder,
+.v_signalStreng.globalStock .sub_payment .payment_guide .mapage_form input[type=text]::placeholder,
+.v_signalStreng.globalStock .sub_payment .payment_guide .mapage_form input[type=password]::placeholder {	 	
+	color: #d3d3d3;
+}
+.v_signalStreng.globalStock .sub_payment .payment_guide .mapage_form .error-message {	
+	display: inline-block;
+    margin-top: 10px;
+    font-size: 0.75rem;
+    line-height: 1.72;
+    color: #E1305A;
+}
+.v_signalStreng.globalStock .sub_payment .payment_guide .mapage_form .error-message::before {
+	content: '';
+	vertical-align: middle;
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	background: url('/img/error_msg.svg') no-repeat center center;
+	border-radius: 50%;
+	margin-right: 4px;
+}
+.v_signalStreng.globalStock .sub_payment .payment_guide .mapage_form .security_info {
+	display: flex;
+	gap: 8px 8px;
+}
+.v_signalStreng.globalStock .sub_payment .payment_note {
+	display: flex;
+	flex-direction: column;
+	gap: 18px 10px;	
+	padding: 24px 16px;
+	border-radius: 12px;
+	background-color: #f7f8f9;
+}
+.v_signalStreng.globalStock .sub_payment .payment_note .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.v_signalStreng.globalStock .sub_payment .payment_note .top .show {
+	cursor: pointer;
+    position: relative;
+    padding: 12px 12px;
+    box-sizing: border-box;
+    font-size: 0;
+    width: 7px;
+    height: 12px;    
+}
+.v_signalStreng.globalStock .sub_payment .payment_note .top .show::after {
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    top: 7px;
+    right: 5px;
+    border-top: 1px solid #6a727b;
+    border-right: 1px solid #6a727b;
+}
+.v_signalStreng.globalStock .sub_payment .payment_note .top .show.rotated::after {	
+	top: 10px;
+	transform: rotate(-40deg);    
+}
+.v_signalStreng.globalStock .sub_payment .payment_note .top .show:not(.rotated)::after {	
+	transform: rotate(135deg);
+}
+.v_signalStreng.globalStock .sub_payment .payment_note .top .agree .txt {
+	font-size: 14px;
+	font-weight: bold;	
+	line-height: 1.43;	
+	color: #333;
+}
+.v_signalStreng.globalStock .sub_payment .payment_note .agree .txt {
+	font-size: 14px;
+	color: #6a727b;
+}
+.v_signalStreng.globalStock .sub_payment .payment_note .agree_chk {
+	/* display: flex; */
+    justify-content: space-between;    
+	align-items: center;
+    gap: 10px;
+	padding-left: 4px;
+	box-sizing: border-box;
+	display: none;
+	&.caution {
+		.age_link {
+			align-self: flex-start;
+			top: 20px;
+		}
+	}
+}
+.v_signalStreng.globalStock .sub_payment .payment_note .age_link {
+	cursor: pointer;
+    position: relative;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    font-size: 0;
+    width: 7px;
+    height: 12px;
+}
+.v_signalStreng.globalStock .sub_payment .payment_note .age_link::after {
+	content: "";
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    top: 7px;
+    right: 5px;
+    border-top: 1px solid #aeb4b9;
+    border-right: 1px solid #aeb4b9;
+    transform: rotate(45deg);
+}
+.v_signalStreng.globalStock .sub_payment input.chk_label {
+	display: none;
+	/*checked된 input 바로 다음의 label:before 에 체크 후 CSS 설정*/
+}
 
+.v_signalStreng.globalStock .sub_payment input.chk_label + label {	
+	display: flex;
+	align-items: center;
+    justify-content: flex-start;	
+	gap: 0 8px;
+	position: relative;	
+	cursor: pointer;
+}
+
+.v_signalStreng.globalStock .sub_payment input.chk_label + label:before {
+	content: "";	
+	display: block;	
+	width: 24px;	
+	height: 24px;
+	line-height: 24px;	
+	border-radius: 50%;
+	background: url('/img/checked.svg') no-repeat center 5px;		
+}
+
+.v_signalStreng.globalStock .sub_payment input.chk_label:checked + label:before {
+	content: "";	
+	border-color: #c4c8cb;	
+	background: url('/img/checked_ch.svg') no-repeat center 5px;	
+}
+.v_signalStreng.globalStock .sub_payment .payment_note .agree_chk .txt {	
+
+}
+.v_signalStreng.globalStock .sub_payment .payment_note .top .s_txt {
+	width: calc(100% - 34px);
+	font-size: 14px;
+	font-weight: bold;	
+	color: #333 !important;	
+}
+.v_signalStreng.globalStock .sub_payment .payment_note .top input.chk_label + label:before {	
+	border: 1px solid #c4c8cb;	
+}
+.v_signalStreng.globalStock .sub_payment .payment_note .top input.chk_label:checked + label:before {	
+	background-color: #404fc3;
+	background-image: url('/img/checked.svg');	
+}
+.v_signalStreng.globalStock .sub_payment .payment_note .top input + label:before {	
+	background-position: center center;	
+}
+.v_signalStreng.globalStock .sub_payment .payment_note .top .s_txt,
+.v_signalStreng.globalStock .sub_payment .payment_note .agree_chk .s_txt {
+	display: inline-block;	
+	line-height: 1.42;
+	font-size: 14px;
+	color: #6a727b;
+	@media (min-width:320px) and (max-width:375px) {
+		letter-spacing: -0.05rem;		
+	}	
+}
+.v_signalStreng.globalStock .sub_payment .payment_note .agree_chk .txt .agree_txt {
+	width: 100%;
+	display: block;
+	padding-left: 30px;
+	font-size: 0.75rem;
+	line-height: 1.42;
+	color: #6a727b;
+	word-break: normal;
+    word-wrap: break-word;
+	&.agree_title {
+		padding-top: 15px;				
+		font-size: 0.8125rem;
+		font-weight: bold;
+		color: #333;
+	}
+	&.agree_caution {		
+		padding-top: 5px;				
+		line-height: 1.42;
+		color: #939393;	
+		b {
+			color: #939393;	
+		}
+		.refund_terms {
+			cursor: pointer;
+			display: inline-block;
+			padding-left: 5px;    		
+			color: #06c;			
+			text-decoration: none;
+		}
+	}
+}
+.v_signalStreng.globalStock .sub_payment .payment_note .agree_caution {		
+	strong {
+		display: block;
+		font-size: 0.8125rem;
+		font-weight: bold;
+		color: #333;
+		padding-bottom: 12px;
+	}
+	.txt {
+		font-size: 0.75rem;
+		line-height: 1.42;
+		color: #939393;	
+		b {
+			color: #939393;	
+		}
+	}
+	.refund_terms {
+		cursor: pointer;
+		display: inline-block;
+		padding-left: 5px;    		
+		color: #06c;
+		font-size: 0.75rem;
+		text-decoration: none;
+	}
+	
+}
+.v_signalStreng.globalStock .sub_payment .btnArea.btn_fix {	
+	position: sticky;
+    bottom: 15px;
+	margin: 0 auto;
+    max-width: 767px;
+    box-sizing: border-box;
+    z-index: 85;
+}
+.v_signalStreng.globalStock .sub_payment .btnArea.payBtn .btn_save {
+	display: block;
+	margin: 19px auto 0;
+  	padding: 19px 0;
+	border-radius: 8px;
+	background-color: #404fc3;
+	font-size: 1rem;
+	font-weight: bold;		
+	color: #fff;
+}
 .v_signalStreng.globalStock .modalBox {
 
 }
@@ -28958,7 +29674,11 @@ table.tableRanking td {
 }
 .v_signalStreng.globalStock #wrap .modal.cardBox .pop_header .pop_title {
 	justify-content: flex-start !important;
-	font-size: 0.9375rem !important;
+	font-size: 0.9375rem !important;		
+	font-weight: bold;	
+	line-height: 1.53;
+	letter-spacing: normal;	
+	color: #333;
 }
 .v_signalStreng.globalStock #wrap .modal.cardBox .pop_header .pop_title::before {
 	content: "";
@@ -28971,16 +29691,19 @@ table.tableRanking td {
 .v_signalStreng.globalStock #wrap .modal.cardBox .pop_con {
 	padding-top: 15px !important;	
 }
-.v_signalStreng.globalStock #wrap .modal.cardBox .pop_con .paypal_title,
-.v_signalStreng.globalStock #wrap .modal.cardBox .pop_con .paypal_title b {
+.v_signalStreng.globalStock #wrap .modal.cardBox .pop_con .paypal_title {
 	font-size: 14px;	
-	line-height: 1.43;	
+	line-height: 1.43;		
 	color: #404fc3;
+	b {
+		color: #404fc3;
+		font-weight: bold;
+	}
 }
 .v_signalStreng.globalStock #wrap .modal.cardBox .pop_con .paypal_link {
 	margin-top: 12px;
 	margin-bottom: 12px;
-	padding: 16px 16px;
+	padding: 14px 16px;
 	border-radius: 8px;
 	background-color: #f7f8f9;	
 	font-size: 13px;	
@@ -29000,7 +29723,7 @@ table.tableRanking td {
 }
 .v_signalStreng.globalStock #wrap .modal.cardBox .pop_con .paypal_txt b,
 .v_signalStreng.globalStock #wrap .modal.cardBox .pop_con .paypal_step li b {		
-	color: #6a727b;	
+	color: #6a727b;		
 }
 .v_signalStreng.globalStock #wrap .modal.cardBox .pop_con .progress_txt {
 	margin-top: 16px;
@@ -29013,7 +29736,8 @@ table.tableRanking td {
 	display: flex;
     flex-wrap: wrap;
     align-items: center;
-	gap: 2px 5px;
+	gap: 2px 8px;
+	padding-left: 8px;
 }
 
 .v_signalStreng.globalStock .modalBox .modal.agreePopBox .pop_con {	
@@ -29042,6 +29766,99 @@ table.tableRanking td {
 	text-decoration: underline;
 	color: #404fc3;
 }
+/* 결제 완료 */
+.v_signalStreng.globalStock #wrap .sub_payment .pay_complete {
+	padding: 0 18px 65px;
+}
+.v_signalStreng.globalStock #wrap .sub_payment .pay_complete .com_title {	
+	padding: 40px 8px 0;
+	font-size: 1.5rem;
+	font-weight: bold;	
+	line-height: 1.42;		
+	color: #fff;
+}
+.v_signalStreng.globalStock #wrap .sub_payment .pay_complete .payment_guide {
+	display: flex;
+	flex-direction: column;
+	gap: 16px 0;
+	margin-top: 22px;
+	padding: 24px 16px;
+	box-sizing: border-box;
+	border-radius: 16px;
+  	background-color: #fff;	
+}
+.v_signalStreng.globalStock #wrap .sub_payment .pay_complete .payment_guide .guide {
+	display: flex;
+	gap: 0 24px;
+	width: 100%;
+}
+.v_signalStreng.globalStock #wrap .sub_payment .pay_complete .payment_guide .guide .th {
+	flex: 1;	
+	font-size: 0.8125rem;	
+	line-height: 1.15;	
+	color: #6a727b;
+}
+.v_signalStreng.globalStock #wrap .sub_payment .pay_complete .payment_guide .guide .td_txt {
+	flex: 5;	
+	font-size: 0.8125rem;	
+	font-weight: bold;	
+	line-height: 1.2;	
+	text-align: left;
+	color: #333;
+}
+.v_signalStreng.globalStock #wrap .sub_payment .pay_complete .payment_guide .deposit_box {
+	display: flex;
+	flex-direction: column;
+	gap: 5px 0;
+	padding-top: 16px;	
+	border-top: solid 1px #e0e4e9;
+}
+.v_signalStreng.globalStock #wrap .sub_payment .pay_complete .payment_guide .deposit_info {
+	font-size: 0.75rem;
+	font-weight: 400;	
+	line-height: 1.42;	
+	color: #939393;
+}
+.v_signalStreng.globalStock #wrap .sub_payment .pay_complete .payment_guide .guide .event_info {
+	display: block;
+	margin-top: 3px;
+	font-size: 0.75rem;
+	font-weight: 400;	
+	line-height: 1.24;	
+	color: #939393;
+}
+.v_signalStreng.globalStock #wrap .sub_payment .pay_complete .go_myhome {
+	padding-left: 8px;
+	margin-top: 16px;
+	font-size: 0.875rem;	
+	line-height: 1.43;	
+	color: #fff;
+}
+.v_signalStreng.globalStock #wrap .sub_payment .pay_complete .go_myhome a {
+	font-size: 0.875rem;	
+	line-height: 1.43;	
+	color: #fff;
+	text-decoration: underline;
+}
+.v_signalStreng.globalStock #wrap .sub_payment .pay_complete .btn_home {
+	margin-top: 61px;
+	border-radius: 8px;
+  	border: solid 1px #ffffff60;	
+	font-size: 0.9375rem;		
+	font-weight: normal;
+	line-height: 1.2;	
+	color: #fff;
+}
+@media (min-width:320px) and (max-width:375px) {
+	.v_signalStreng.globalStock .sub_payment .serviceStep .step_box {
+		padding: 25px 19px;
+	}
+	.v_signalStreng.globalStock .sub_payment .serviceStep .step_box .subscribe span {
+		padding: 7px 18px 6px;
+		max-width: 54px;
+	}
+}
+
 body.v_signalStreng {
 	background-color: #fff;
 }
@@ -29286,6 +30103,7 @@ body.v_signalStreng {
 	}
 	
 }
+
 
 .v_signalStreng.globalStock .sub_search .tabs_5 {
 	background-color: #fff;
@@ -29856,30 +30674,6 @@ body.v_signalStreng {
 	border-color: var(--coldae);
 }
 
-.v_signalStreng.globalStock #wrap #container.sub_search .mainBox.investCharm_area {	
-	margin-top: 40px;
-    padding: 0 16px;
-    background-color: #fff;
-	.title a {
-		font-size: 1.25rem;
-		font-weight: 700;
-		line-height: 1.2;
-		color: #181f29;
-		&::after {
-			content: '';
-			display: inline-block;
-			width: 12px;
-			height: 12px;			
-			background: url('/img/more_gray.svg') no-repeat center center;			
-			padding-left: 5px;
-		}
-	}		
-	.tab_diagnosis_area {		
-		margin-top: 16px;
-		padding: 0;
-	}
-}
-
 .v_signalStreng.globalStock #wrap #container.sub_search .banner_signal {
 	position: relative;
 	padding: 30px 16px 40px;
@@ -30013,7 +30807,7 @@ body.v_signalStreng {
 /* 하단 막대 차트 */
 .v_signalStreng.globalStock #wrap #container .mainBox.financials {
 	background-color: #fff;
-	padding: 32px 0;
+	padding: 32px 16px;
 }
 
 .v_signalStreng.globalStock #wrap #container .mainBox.financials::after {
@@ -30200,7 +30994,6 @@ body.v_signalStreng {
 
 .v_signalStreng.globalStock #wrap #container .mainBox.financials .dataBox {
 	margin-bottom: 38px;
-	padding: 0 16px;
 }
 
 .v_signalStreng.globalStock #wrap #container .mainBox.financials .dataBox .reg_day {
@@ -30284,25 +31077,15 @@ body.v_signalStreng {
 	font-weight: 700;
 	line-height: 1.2;
 	color: #181f29;
-	+ .signal_guide {
-		cursor: pointer;				
-		display: inline-block;
-		border-radius: 50%;
-		position: relative;
-		top: 2px;
-	}	
-	.signal_guide img {
-		display: inline-block;
-	}
 }
 
 .v_signalStreng.globalStock #wrap #container .mainBox.financials .chart_box .unit {
 	font-size: 0.75rem;
-	line-height: 1.75;
-	font-weight: 400;
-	color: #969ea7;
-	flex: none;
-	margin-left: auto;
+    line-height: 1.75;
+    font-weight: 400;
+    color: #969ea7;
+    flex: none;
+    margin-left: auto;
 }
 
 .v_signalStreng.globalStock #wrap #container .mainBox.financials .chart_box .financials_style {
@@ -30372,12 +31155,12 @@ body.v_signalStreng {
 .v_signalStreng.globalStock #wrap #container .mainBox.financials .chart_box .financialsLine_style {
 	margin-top: 10px;
 	width: 100%;
-	height: 260px;
+	height: 220px;
 }
 
 @media (min-width: 426px) {
 	.v_signalStreng.globalStock #wrap #container .mainBox.financials .chart_box .financialsLine_style {
-		height: 290px;
+		height: 260px;
 	}
 }
 
@@ -30458,9 +31241,9 @@ body.v_signalStreng {
 /* .v_signalStreng.globalStock #wrap .competitors_table, */
 /* .v_signalStreng.globalStock #wrap .sub_mid.research_board, */
 /* .v_signalStreng.globalStock #wrap .sub_recipe .sub_mid.recipe_view, */
-// .v_signalStreng.globalStock #wrap .sub_recom .sub_mid .tabsArea .tabs_two+.tab_container > div {
-// 	background-color: #F4F4F5;
-// }
+.v_signalStreng.globalStock #wrap .sub_recom .sub_mid .tabsArea .tabs_two+.tab_container > div {
+	background-color: #F4F4F5;
+}
 .v_signalStreng.globalStock #wrap .sub_mid.tabs_area,
 .v_signalStreng.globalStock #wrap .competitors_table,
 .v_signalStreng.globalStock #wrap .sub_mid.research_board {
@@ -31436,6 +32219,7 @@ body.v_signalStreng {
 		}
 	}
 }
+
 .v_signalStreng.globalStock .signalpop.event2024_payment {	
 	.content {
 		background-color: #141933;		
@@ -31652,7 +32436,7 @@ body.v_signalStreng {
 	
 }
 	
- 
+
 .v_signalStreng.globalStock .modal.bandchart_sume {
 	background: #fff;
 	padding: 0 16px 32px;
@@ -31836,1497 +32620,6 @@ body.v_signalStreng {
 	height: 4px;
 	border-radius: 50%;
 	background: #c7cbe9;
-}
-
-/* 가입 - 가입방법 선택 */
-
-.globalStock .sub_payment {
-	background-color: #F4F4F5;
-}
-.globalStock .sub_payment .step_area ul {
-	font-size: 0;
-	display: flex;
-}
-
-.globalStock .sub_payment .step_area li {
-	flex: 1;
-	color: #939393;
-	font-size: 0.82rem;
-	display: inline-block;
-	text-align: center;
-	border-bottom: 2px solid #404FC3;
-	padding: 20px 5px 11px;
-	box-sizing: border-box;
-	position: relative;
-}
-
-.globalStock .sub_payment .step_area li.active {
-	color: #404fc3;
-	font-weight: bold;
-}
-
-.globalStock .sub_payment .step_area li::after {
-	content: "";
-	position: absolute;
-	right: -5px;
-	bottom: 12px;
-	width: 5px;
-	height: 10px;
-	background: url('../img/icon_moreR.png') no-repeat 0 0;
-	background-size: cover;
-}
-
-.globalStock .sub_payment .step_area li:last-child::after {
-	background: none;
-	display: none;
-}
-
-/* 가입 - 가입방법 선택 step 01 */
-.globalStock .sub_payment .serviceStep .step_top {
-	display: flex;
-	flex-wrap: wrap;
-	align-items: flex-start;
-	justify-content: space-between;
-	gap: 0 15px;
-	padding: 36px 15px 25px;
-	&::after {
-		content: "";
-		clear: both;
-	}
-	// 2024년 신년이벤트
-	.event2024_payment_sub {
-		width: 100%;
-		margin-top: 15px;
-		a {
-			display: inline-block;
-			width: 100%;
-			height: 100%;			
-		}		
-		img {
-			display: inline-block;
-			width: 100%;
-			height: 100%;
-		}
-	}
-}
-
-.globalStock .sub_payment .serviceStep .step_top
-
-.globalStock .sub_payment .serviceStep .step_title {
-	color: #333;
-	font-size: 1.25rem;
-	line-height: 1.7rem;
-	padding-bottom: 3px;
-}
-
-.globalStock .sub_payment .serviceStep .way {
-	display: block;
-	width: 100%;
-	font-size: 0.8125rem;
-	padding-top: 2px;
-	color: #939393;
-}
-
-.globalStock .sub_payment .serviceStep .txt {
-	color: #939393;
-	font-size: 0.9375rem;
-	line-height: 1.2rem;
-}
-
-.globalStock .sub_payment .serviceStep .step_box {
-	padding: 15px 15px;
-	border-radius: 9px;
-	border: 1px solid #fff;
-	background: #fff;
-	box-sizing: border-box;
-	width: calc(100% - 30px);
-	margin: 0 auto 10px;
-	position: relative;
-}
-
-.globalStock .sub_payment .serviceStep .step_box.active {
-	border: 1px solid #404fc3;
-}
-
-.globalStock .sub_payment .serviceStep .step_box.active::before {
-	content: '';
-	width: 16px;
-	height: 16px;
-	background: url('../img/icon_checkmark.png') no-repeat 100% 0;
-	position: absolute;
-	right: 12px;
-	top: 13px;
-}
-
-.globalStock .sub_payment .serviceStep .step_box .title {
-	color: #404fc3;
-	font-size: 1.125rem;
-	font-weight: bold;
-}
-
-.globalStock .sub_payment .serviceStep .step_box .title .way {
-	display: block;
-	color: #939393;
-	font-size: 0.8rem;
-	font-weight: normal;
-	line-height: 20px;
-	padding-top: 2px;
-}
-
-.globalStock .sub_payment .serviceStep .step_box .payRight {
-	padding-top: 10px;
-	text-align: right;
-	padding-bottom: 13px;
-}
-
-.globalStock .sub_payment .serviceStep .step_box .payRight .pay01 {
-	color: #333;
-	font-size: 1.25rem;
-	font-weight: 500;
-	margin-right: 20px;
-	padding: 0 15px;
-	position: relative;	
-	&::before {
-		content: '';
-		background: url('../img/c_line.png') no-repeat 100% 0;
-		position: absolute;
-		left: 0;
-		top: 50%;
-		margin-top: -7px;
-		width: 100%;
-		height: 14px;
-	}
-}
-
-.globalStock .sub_payment .serviceStep .step_box .payRight .pay01 b {
-	color: #333;
-	font-size: 1rem;
-	opacity: 0.7;
-	font-weight: normal;
-}
-
-.globalStock .sub_payment .serviceStep .step_box .payRight .pay01 .pay_sale {
-	position: absolute;	
-	right: -46px;	
-	top: -15px;
-	color: #404FC3;
-	font-weight: normal;
-	font-size: 0.84rem;
-	display: inline-block;
-	width: 90px;
-}
-
-.globalStock .sub_payment .serviceStep .step_box .payRight .pay01 .pay_sale strong {
-	color: #404FC3;
-	font-weight: bold;
-	font-size: 0.84rem;
-}
-
-.globalStock .sub_payment .serviceStep .step_box .payRight .pay0 .pay_sale strong {
-	color: #404FC3;
-	font-weight: bold;
-	font-size: 0.84rem;
-}
-
-.globalStock .sub_payment .serviceStep .step_box .payRight .pay02 {
-	color: #333;
-	font-size: 1.25rem;
-	font-weight: 500;
-	letter-spacing: normal;
-}
-
-.globalStock .sub_payment .serviceStep .step_box.routine_pay .payRight .pay02 {
-	color: #fc2929;
-}
-
-.globalStock .sub_payment .serviceStep .step_box .payRight .pay02 b {
-	color: #333;
-	font-size: 1rem;
-	opacity: 0.7;
-	font-weight: normal;
-}
-
-.globalStock .sub_payment .serviceStep .step_box .payRight .pay02 .pay_sale {
-	display: block;
-	color: #939393;
-	font-size: 0.8rem;
-	font-weight: normal;
-	margin-top: 5px;
-	position: relative;
-}
-
-.globalStock .sub_payment .serviceStep .step_box .payRight .pay02 .pay_sale02 {
-	display: inline-block;
-	color: #fc2929;
-	font-size: 1rem;
-	font-weight: normal;
-	position: relative;
-}
-
-
-.globalStock .sub_payment .serviceStep .step_box .payRight .pay03 {
-	color: #939393;
-	font-size: 1rem;
-	font-weight: normal;
-	margin-right: 0;
-	padding: 0;
-	position: relative;
-}
-
-.globalStock .sub_payment .serviceStep .step_box .payRight .pay03 b {
-	color: #333;
-	font-size: 1rem;
-	opacity: 0.7;
-	font-weight: normal;
-}
-
-.globalStock .sub_payment .serviceStep .step_box .payRight .txt_line {
-	border-top: 1px solid #E0E4E9;
-	padding-top: 10px;	
-	margin-top: 25px;
-}
-
-.globalStock .sub_payment .serviceStep .step_box .payRight .txt_line .txt {
-	text-align: left;
-	color: #939393;
-	font-size: 0.75rem !important;
-	line-height: 1.1rem;	
-}
-
-.globalStock .sub_payment .serviceStep .step_box .payRight .txt_line .txt:nth-child(2),
-.globalStock .sub_payment .serviceStep .step_box .payRight .txt_line .txt:nth-child(3),
-.globalStock .sub_payment .serviceStep .step_box .payRight .txt_line .txt:nth-child(4) {
-	margin-top: 7px;
-}
-
-.globalStock .sub_payment .serviceStep .step_box .payRight .txt_line .txt strong,
-.globalStock .sub_payment .serviceStep .step_box .payRight .txt_line .txt b {
-	color: #939393;
-}
-
-.globalStock .sub_payment .serviceStep .txt_line {
-	position: relative;
-	padding: 0 20px;
-	margin-top: 25px;
-}
-
-.globalStock .sub_payment .serviceStep ::after {
-	content: "";
-	position: absolute;
-	bottom: -8px;
-	left: 0;
-	right: 0;
-	display: block;
-	width: 100%;
-	height: 8px;
-	background-color: var(--col1a1);
-}
-
-.globalStock .sub_payment .serviceStep .txt {
-	position: relative;
-	text-align: left;
-	color: var(--col7f8);
-	font-size: 0.75rem !important;
-	line-height: 1.1rem;
-	padding-left: 10px;
-}
-
-.globalStock .sub_payment .serviceStep .txt u {
-	font-weight: 700;
-}
-
-.globalStock .sub_payment .serviceStep .txt::before {
-	content: "";
-	display: inline-block;
-	position: absolute;
-	left: 0;
-	top: 7px;
-	width: 4px;
-	height: 4px;
-	border-radius: 50%;
-	background-color: #898989;
-}
-
-.globalStock .sub_payment .serviceStep .txt:nth-child(2),
-.globalStock .sub_payment .serviceStep .txt:nth-child(3),
-.globalStock .sub_payment .serviceStep .txt:nth-child(4) {
-	margin-top: 7px;
-}
-
-.globalStock .sub_payment .serviceStep .txt strong,
-.globalStock .sub_payment .serviceStep .txt b,
-.globalStock .sub_payment .serviceStep .txt u {
-	color: #333;
-}
-
-.globalStock .sub_payment .payBtn {
-	text-align: center;
-	margin-top: 40px;
-	padding: 0 15px;
-}
-
-.globalStock .sub_payment .payBtn .btn {
-	color: #404fc3;
-	font-size: 0.9375rem;
-	border-radius: 5px;
-	position: relative;
-}
-
-.globalStock .sub_payment .payBtn .btn_cncl {
-	margin-right: 5px;
-}
-
-.globalStock .sub_payment .payBtn .btn_save {
-	color: #fff;
-	background: #404fc3;
-}
-
-.globalStock .sub_payment .payBtn .btn_cncl i {
-	position: absolute;
-	left: 18px;
-	top: 14px;
-	display: inline-block;
-	width: 5px;
-	height: 10px;
-	background: url('../img/icon_moreL.png') no-repeat 0 0;
-	background-size: cover;
-}
-
-.globalStock .sub_payment .payBtn .btn_save i {
-	position: absolute;
-	right: 18px;
-	top: 14px;
-	display: inline-block;
-	width: 5px;
-	height: 10px;
-	background: url('../img/icon_moreRR.png') no-repeat 0 0;
-	background-size: cover;
-}
-
-.globalStock .sub_payment .step_box .pay_line {
-	color: #939393;
-	text-align: right;
-	font-size: 0.82rem;
-	margin-top: 10px;
-}
-
-.globalStock .sub_payment .account_box {
-	border-top: 1px solid #E0E4E9;
-	margin-top: 30px;
-	padding: 30px 15px 0;
-}
-
-.globalStock .sub_payment .account_box .title {
-	color: #333;
-	font-size: 1.125rem;
-	margin-bottom: 8px;
-}
-
-.globalStock .sub_payment .account_box .txt_t {
-	color: #333;
-	font-size: 0.9375rem;
-	margin-bottom: 5px;
-}
-
-.globalStock .sub_payment .account_box .txt {
-	color: #939393;
-	font-size: 0.82rem;
-	line-height: 1.2rem;
-}
-
-.globalStock .sub_payment .mapage_form {
-	padding: 20px 15px 0;
-}
-
-.globalStock .sub_payment .mapage_form .form_table {
-	border-top: 1px solid #E0E4E9;
-}
-
-.globalStock .sub_payment .mapage_form .form_table tr {
-	border-bottom: 1px solid #E0E4E9;
-}
-
-.globalStock .sub_payment .mapage_form .form_table tr:last-child {
-	border-bottom: none;
-}
-
-.globalStock .sub_payment .mapage_form .form_table th,
-.globalStock .sub_payment .mapage_form .form_table td {
-	text-align: left;
-	padding: 20px 0 14px;
-	line-height: 1.2rem;
-	font-weight: normal;
-	vertical-align: top;
-}
-
-.globalStock .sub_payment .mapage_form .form_table th {
-	color: #939393;
-	font-size: 0.82rem;
-	width: 90px;
-}
-
-.globalStock .sub_payment .mapage_form .form_table td {
-	color: #333;
-	font-size: 0.9375rem;
-}
-
-.globalStock .sub_payment .mapage_form .form_table td .i_dsc {
-	clear: both;
-	float: none;
-	color: #404fc3;
-	font-size: 0.75rem;
-	line-height: 14px;
-	margin-top: 6px;
-}
-
-.globalStock .sub_payment .mapage_form .form_table td .i_dsc i {
-	position: relative;
-	top: 2px;
-	margin-right: 5px;
-	display: inline-block;
-	width: 14px;
-	height: 14px;
-	background: url('../img/bg_x.png') no-repeat 0 0;
-}
-
-.globalStock .sub_payment .mapage_form .form_table td .i_dsc.phone {
-	color: #ff2929;
-	margin-top: 0;
-	padding-top: 6px;
-}
-
-.globalStock .sub_payment .mapage_form .form_table td .i_dsc.phone i {
-	background-position: 0 100%;
-}
-
-.globalStock .sub_payment .mapage_form .form_table td .i_guide {
-	clear: both;
-	float: none;
-	color: #939393;
-	margin-top: 0;
-	padding-top: 6px;
-	font-size: 0.75rem;
-	display: block;
-	line-height: 1.4;
-}
-
-.globalStock .sub_payment .mapage_form .form_table td .mod_btn {
-	display: inline-block;
-	border: 1px solid #404fc3;
-	border-radius: 3px;
-	width: 100px;
-	color: #404fc3;
-	font-size: 0.75rem;
-	text-align: center;
-	padding: 5px 3px;
-	box-sizing: border-box;
-}
-
-.globalStock .sub_payment .mapage_form .form_table td .mod_phone .txt_info {
-	display: inline-block;
-	padding-right: 5px;
-}
-
-.globalStock .sub_payment .mapage_form .form_table td .certification_area {
-	background: #e6e7f4;
-	padding: 15px 15px;
-	padding-left: 90px;
-	margin-top: 15px;
-	box-sizing: border-box;
-}
-
-.globalStock .sub_payment .mapage_form .form_table td .certification_area .certifi_btn,
-.globalStock .sub_payment .mapage_form .form_table td .certifi_btn {
-	cursor: pointer;
-	float: left;
-	vertical-align: top;
-	background: #404fc3;
-	color: #fff;
-	font-size: 0.75rem;
-	padding: 0 10px;
-	box-sizing: border-box;
-	text-align: center;
-	line-height: 25px;
-	border-top-right-radius: 5px;
-	border-bottom-right-radius: 5px;
-}
-
-.globalStock .sub_payment .mapage_form .form_table td .certification_area .phone_mod,
-.globalStock .sub_payment .mapage_form .form_table td .phone_mod {
-	float: left;
-	vertical-align: top;
-	border: none;
-	height: 25px;
-	line-height: 25px;
-	width: 155px;
-	padding: 0 5px;
-	box-sizing: border-box;
-	border-top-left-radius: 5px;
-	border-bottom-left-radius: 5px;
-}
-
-.globalStock .sub_payment .mapage_form .form_table td .phone_mod.chk_ok {
-	width: 100%;
-}
-
-.globalStock .sub_payment.sub_freeguide .agree_area {
-	width: calc(100% - 30px);
-	margin: 25px auto;
-}
-
-.globalStock .sub_payment.sub_freeguide .agree_area .txt {
-	color: #333;
-	font-size: 0.9375rem;
-}
-
-.globalStock .sub_payment.sub_freeguide .agree_area .agree_from {
-	margin-top: 20px;
-}
-
-.globalStock .sub_payment.sub_freeguide .agree_area .agree_from .label {
-	background: #fff;
-	border-radius: 9px;
-	padding: 14px 20px 14px 12px;
-}
-
-.globalStock .sub_payment.sub_freeguide .agree_area .agree_from .label:first-child,
-.globalStock .sub_payment.sub_freeguide .agree_area .agree_from .label:nth-child(2) {
-	margin-bottom: 9px;
-}
-
-.globalStock .sub_payment.sub_freeguide .agree_area .agree_from .label .label_chk {
-	color: #333;
-	font-size: 0.82rem;
-	display: inline-block;
-}
-
-.globalStock .sub_payment.sub_freeguide .agree_area .agree_from .label .label_chk i {
-	display: inline-block;
-	vertical-align: top;
-	position: relative;
-	top: -2px;
-	width: 16px;
-	height: 16px;
-	background: url('../img/icon_agreecheck.png') no-repeat 0 100%;
-	margin-right: 7px;
-}
-
-.globalStock .sub_payment.sub_freeguide .agree_area .agree_from .label .label_chk strong {
-	text-decoration: underline;
-}
-
-.globalStock .sub_payment.sub_freeguide .agree_area .agree_from .label.active .label_chk i {
-	background-position: 0 0;
-}
-
-.globalStock .sub_payment.sub_freeguide .agree_area .agree_from .label .label_chk.sub_label {
-	padding-left: 15px;
-	padding-top: 10px;
-	opacity: 0.5;
-}
-
-.globalStock .sub_payment.sub_freeguide .agree_area .agree_from .label.active .label_chk.sub_label {
-	opacity: 1;
-}
-
-.globalStock .sub_payment.sub_freeguide .agree_area .agree_from .label .terms_btn {
-	float: right;
-	vertical-align: top;
-	position: relative;
-	top: -3px;
-	width: 70px;
-	background: #404fc3;
-	border-radius: 3px;
-	color: #fff;
-	font-size: 0.75rem;
-	text-align: center;
-	padding: 7px 5px;
-	box-sizing: border-box;
-}
-
-.globalStock .sub_payment.sub_freeguide .agree_area .agree_from .label.free_label {
-	margin: 0;
-}
-
-.globalStock .sub_payment.sub_freeguide .agree_area .agree_from .label.free_label:first-child {
-	padding-bottom: 0;
-	border-bottom-right-radius: 0;
-	border-bottom-left-radius: 0;
-}
-
-.globalStock .sub_payment.sub_freeguide .agree_area .agree_from .label.free_label:nth-child(2) {
-	padding-top: 5px;
-	border-top-right-radius: 0;
-	border-top-left-radius: 0;
-}
-
-.globalStock .sub_payment.sub_freeguide .agree_area .agree_from .payBtn {
-	text-align: center;
-	margin-top: 30px;
-	padding: 0 15px;
-}
-
-.globalStock .sub_payment.sub_freeguide .agree_area .agree_from .btn {
-	color: #404fc3;
-	font-size: 0.9375rem;
-	border-radius: 5px;
-	position: relative;
-	width: calc(100% / 2 + 60px);
-}
-
-.globalStock .sub_payment.sub_freeguide .agree_area .agree_from .btn_save {
-	color: #fff;
-	background: #404fc3;
-}
-
-.globalStock .sub_payment.sub_freeguide .agree_area .agree_from .btn_save i {
-	position: absolute;
-	right: 18px;
-	top: 15px;
-	display: inline-block;
-	width: 5px;
-	height: 10px;
-	background: url('../img/icon_moreRR.png') no-repeat 0 0;
-	background-size: cover;
-}
-
-/* 가입 - 결제하기 step 02 */
-.globalStock .sub_payment .step_top .step_title {
-	display: inline-block;
-}
-
-.globalStock .sub_payment .step_top .btn_cardEvent {
-	vertical-align: top;
-	float: right;
-}
-
-.globalStock .sub_payment .payment_guide {
-	border-top: 1px solid #E0E4E9;
-	border-bottom: 1px solid #E0E4E9;
-	margin-top: 30px;
-	padding: 0 15px 0;
-}
-
-.globalStock .sub_payment .payment_guide .guide {
-	padding: 20px 0 15px;
-	border-bottom: 1px solid #E0E4E9;
-}
-
-.globalStock .sub_payment .payment_guide .guide:last-child {
-	border-bottom: none;
-}
-
-.globalStock .sub_payment .payment_guide .guide li {
-	display: inline-block;
-	vertical-align: top;
-}
-
-.globalStock .sub_payment .payment_guide .guide .th {
-	width: 90px;
-	color: #939393;
-	font-size: 0.82rem;
-}
-
-.globalStock .sub_payment .payment_guide .guide .td_txt {
-	color: #333;
-	font-size: 0.9375rem;
-	.event_info {
-		display: block;
-		color: #939393;
-		font-size: 0.75rem;
-		line-height: 1.36;
-		margin-top: 5px;
-	}
-}
-.globalStock .sub_payment .payment_guide .guide .td_txt.card_list,
-.globalStock .sub_payment .payment_guide .guide .td_txt.card_list span {
-	color: #404fc3;
-}
-
-.globalStock .sub_payment .payment_guide .guide .td_txt.c_blue,
-.globalStock .sub_payment .payment_guide .guide .td_txt.c_blue strong {
-	color: #404fc3;
-}
-
-.globalStock .sub_payment .payment_guide .guide .td_txt span {
-	color: #939393;
-	font-size: 0.82rem;
-}
-
-.globalStock .sub_payment .payment_guide .guide .td_txt strong {
-	color: #333;
-	font-size: 1.25rem;
-	vertical-align: top;
-	position: relative;
-	top: -4px;
-	font-weight: 500;
-}
-
-.globalStock .sub_payment .payment_guide .guide .td_sum {
-	color: #939393;
-	font-size: 0.82rem;
-	display: block;
-	padding-left: 90px;
-	margin-top: 5px;
-	line-height: 1.2rem;
-}
-
-.globalStock .sub_payment .payment_guide .guide .td_sale {
-	width: 100%;
-	padding: 10px 15px 0;
-	padding-left: 100px;
-	margin-top: 0;
-	box-sizing: border-box;
-}
-
-.globalStock .sub_payment .payment_guide .guide .td_sale p {
-	color: #939393;
-	font-size: 0.82rem;
-	line-height: 1.5rem;
-}
-
-.globalStock .sub_payment .payment_guide .guide .td_sale p span {
-	display: inline-block;
-	color: #939393;
-	width: 80px;
-}
-
-.globalStock .sub_payment .payment_guide .guide .td_sale p strong {
-	color: #333;
-	font-size: 0.9375rem;
-	padding-left: 12px;
-	font-weight: 500;
-}
-
-.globalStock .sub_payment .payment_guide .guide .td_sale p strong i {
-	display: inline-block;
-	width: 13px;
-	height: 13px;
-	background: url('../img/icon_sale.png') no-repeat 0 0;
-	margin-right: 5px;
-}
-
-.globalStock .sub_payment .payment_guide .mapage_form {
-	padding: 0;
-	border-bottom: 1px solid #E0E4E9;
-}
-
-.globalStock .sub_payment .payment_guide .mapage_form .form_table {
-	border-top: none;
-}
-
-.globalStock .sub_payment .payment_guide .mapage_form .form_table tr {
-	border-bottom: 1px solid #E0E4E9;
-}
-
-.globalStock .sub_payment .payment_guide .mapage_form .form_table tr:last-child {
-	border-bottom: none;
-}
-
-.globalStock .sub_payment .payment_guide .mapage_form .form_table th,
-.globalStock .sub_payment .payment_guide .mapage_form .form_table td {
-	text-align: left;
-	padding: 20px 0 14px;
-	line-height: 1.2rem;
-	font-weight: normal;
-	vertical-align: top;
-}
-
-.globalStock .sub_payment .payment_guide .mapage_form .form_table th {
-	color: #939393;
-	font-size: 0.82rem;
-	width: 90px;
-}
-
-.globalStock .sub_payment .payment_guide .mapage_form .form_table td {
-	color: #333;
-	font-size: 0.9375rem;
-}
-
-.globalStock .sub_payment .payment_guide .mapage_form .form_table td .i_dsc {
-	clear: both;
-	float: none;
-	color: #404fc3;
-	font-size: 0.75rem;
-	line-height: 14px;
-	margin-top: 6px;
-}
-
-.globalStock .sub_payment .payment_guide .mapage_form .form_table td .i_dsc i {
-	position: relative;
-	top: 2px;
-	margin-right: 5px;
-	display: inline-block;
-	width: 14px;
-	height: 14px;
-	background: url('../img/bg_x.png') no-repeat 0 0;
-}
-
-.globalStock .sub_payment .payment_guide .mapage_form .form_table td .i_dsc.coupon {
-	color: #ff2929;
-	margin-top: 0;
-	padding-top: 6px;
-}
-
-.globalStock .sub_payment .payment_guide .mapage_form .form_table td .i_dsc.coupon i {
-	background-position: 0 100%;
-}
-
-.globalStock .sub_payment .payment_guide .mapage_form .form_table td .mod_btn {
-	display: inline-block;
-	border: 1px solid #404fc3;
-	border-radius: 3px;
-	width: 100px;
-	color: #404fc3;
-	font-size: 0.75rem;
-	text-align: center;
-	padding: 5px 3px;
-	box-sizing: border-box;
-}
-
-.globalStock .sub_payment .payment_guide .mapage_form .form_table td .mod_coupon .txt_info {
-	display: inline-block;
-	padding-right: 5px;
-}
-
-.globalStock .sub_payment .payment_guide .mapage_form .form_table td .certification_area {
-	background: #e6e7f4;
-	padding: 15px 15px;
-	padding-left: 90px;
-	margin-top: 15px;
-	box-sizing: border-box;
-}
-
-.globalStock .sub_payment .payment_guide .mapage_form .form_table td .certification_area .certifi_btn,
-.globalStock .sub_payment .payment_guide .mapage_form .form_table td .certifi_btn {
-	float: left;
-	vertical-align: top;
-	background: #404fc3;
-	color: #fff;
-	font-size: 0.75rem;
-	padding: 0 10px;
-	box-sizing: border-box;
-	text-align: center;
-	line-height: 25px;
-	border-top-right-radius: 5px;
-	border-bottom-right-radius: 5px;
-}
-
-.globalStock .sub_payment .payment_guide .mapage_form .form_table td .certification_area .coupon_mod,
-.globalStock .sub_payment .payment_guide .mapage_form .form_table td .coupon_mod {
-	vertical-align: top;
-	border: none;
-	display: inline-block;
-	height: 25px !important;
-	line-height: 25px;
-	width: 200px;
-	padding: 0 5px;
-	box-sizing: border-box;
-	border-top-left-radius: 5px;
-	border-bottom-left-radius: 5px;
-}
-
-.globalStock .sub_payment .payment_guide .mapage_form .form_table td .coupon_mod#coupon_nm {
-	float: left;
-}
-
-.globalStock .sub_payment .payment_guide .guide+.mapage_form .coupon_mod {
-	float: left;
-}
-
-.globalStock .sub_payment .payment_guide .mapage_form .form_table td .coupon_mod.chk_ok {
-	width: 100%;
-}
-
-.globalStock .sub_payment .payment_guide .i_dsc {
-	float: none;
-	color: #404fc3;
-	font-size: 0.75rem;
-	line-height: 14px;
-	margin-top: 6px;
-}
-
-.globalStock .sub_payment .payment_note {
-	margin-top: 20px;
-	padding: 0 15px;
-}
-
-.globalStock .sub_payment .payment_note .h4_title {
-	color: #333;
-	font-size: 0.82rem;
-	font-weight: 500;
-}
-
-.globalStock .sub_payment .payment_note .h4_title+strong {
-	display: block;
-	margin-top: 10px;
-	color: #404fc3;
-	font-size: 0.82rem;
-	background: url('../img/dot_blue.png') no-repeat 0 4px;
-	padding-left: 7px;
-}
-
-.globalStock .sub_payment .payment_note .note {
-	margin-top: 23px;
-}
-
-.globalStock .sub_payment .payment_note .note li {
-	background: url('../img/dot_line.png') no-repeat 0 8px;
-	padding-left: 8px;
-	color: #939393;
-	font-size: 0.75rem;
-	line-height: 1.2rem;
-	margin-bottom: 4px;
-	.refund_terms {
-		cursor: pointer;
-		color: #06c;
-		font-size: 0.75rem;				
-		text-decoration: none;
-	}
-}
-
-.globalStock .sub_payment .payment_note .note li span {
-	color: #939393;
-	font-size: 0.75rem;
-	text-decoration: underline;
-}
-
-.globalStock .sub_payment .payment_note .note li span.refund_guide {
-	color: #06c;
-	text-decoration: underline;
-}
-
-.globalStock .sub_payment .payment_note .note li strong {
-	color: #939393;
-	font-size: 0.75rem;
-}
-
-.globalStock .sub_payment .payment_note .note_chk {
-	margin-top: 30px;
-	background: #e6e7f4;
-	border-radius: 9px;
-	padding: 12px 10px;
-}
-
-.globalStock .sub_payment .payment_note .note_chk .txt {
-	color: #333;
-	font-size: 0.82rem;
-	line-height: 1.2rem;
-	padding-left: 30px;
-	position: relative;
-}
-
-.globalStock .sub_payment .payment_note .note_chk .txt i {
-	position: absolute;
-	left: 5px;
-	top: 2px;
-	display: inline-block;
-	vertical-align: top;
-	width: 16px;
-	height: 16px;
-	background: url('../img/icon_agreecheck.png') no-repeat 0 100%;
-	margin-right: 7px;
-}
-
-.globalStock .sub_payment .payment_note .note_chk .txt.active i {
-	background-position: 0 0;
-}
-
-/* 가입 - 카드정보 입력 step 02 */
-.globalStock .sub_payment .pay_info {
-	padding: 15px 0;
-}
-
-.globalStock .sub_payment .pay_info .top {
-	padding: 0 15px 15px;
-	border-bottom: 1px solid #E0E4E9;
-}
-
-.globalStock .sub_payment .pay_info .top .logo {
-	width: 90px;
-	display: inline-block;
-}
-
-.globalStock .sub_payment .pay_info .top .logo img {
-	display: inline-block;
-	width: 100%;
-	height: auto;
-}
-
-.globalStock .sub_payment .pay_info .top .card {
-	color: #333;
-	font-size: 0.9375rem;
-	float: right;
-	font-weight: bold;
-	vertical-align: top;
-	margin-top: 4px;
-}
-
-.globalStock .sub_payment .pay_info .info {
-	background: #fff;
-	border-radius: 3px;
-	padding: 2px 10px;
-	margin: 15px 15px;
-}
-
-.globalStock .sub_payment .pay_info .info li {
-	padding: 12px 0;
-	border-bottom: 1px solid #E0E4E9;
-	color: #333;
-	font-size: 0.9375rem;
-	line-height: 1.3;
-}
-
-.globalStock .sub_payment .pay_info .info li:last-child {
-	border-bottom: none;
-}
-
-.globalStock .sub_payment .pay_info .info li strong {
-	color: #939393;
-	font-size: 0.83rem;
-	display: inline-block;
-	width: 70px;
-	font-weight: normal;
-}
-
-.globalStock .sub_payment .pay_info .info li span {
-	font-size: 0.75rem;
-	color: #939393;
-}
-
-.globalStock .sub_payment .pay_info .info li span.event_pay {
-	display: block;
-	line-height: 1.43;
-	padding-left: 67px;
-	margin-top: 4px;
-}
-
-.globalStock .sub_payment .pay_info .info li span.event_pay b {
-	color: #939393;
-}
-
-.globalStock .sub_payment .card_info {
-	margin-top: 10px;
-	padding: 0 15px;
-}
-
-.globalStock .sub_payment .card_info .title {
-	color: #333;
-	font-size: 0.9375rem;
-	font-weight: bold;
-}
-
-.globalStock .sub_payment .card_info p.guide {
-	color: #939393;
-	font-size: 0.75rem;
-	margin-top: 10px;
-}
-
-.globalStock .sub_payment .card_info .coupon_mod {
-	color: #939393;
-	font-size: 0.84rem;
-	text-align: center;
-	border: none;
-	line-height: 25px;
-	padding: 0 5px;
-	width: calc(100% / 4 - 7.5px) !important;
-	border-radius: 5px;
-	margin-right: 4px;
-}
-
-.globalStock .sub_payment .card_info .coupon_mod:last-child {
-	margin-right: 0;
-}
-
-.globalStock .sub_payment .card_info .term_mod {
-	border: none;
-	line-height: 25px;
-	padding: 0 5px;
-	width: calc(100% / 2 - 4px) !important;
-	border-radius: 5px;
-	margin-right: 4px;
-}
-
-.globalStock .sub_payment .card_info .term_mod:last-child {
-	margin-right: 0;
-}
-
-.globalStock .sub_payment .card_info .by_mod {
-	color: #939393;
-	font-size: 0.84rem;
-	text-align: center;
-	border: none;
-	line-height: 25px;
-	padding: 0 5px;
-	width: 58px;
-	border-radius: 5px;
-	margin-right: 4px;
-}
-
-.globalStock .sub_payment .card_info .payment_guide {
-	margin-top: 15px;
-	padding: 0;
-	padding-top: 10px;
-}
-
-.globalStock .sub_payment .card_info .selectbox {
-	display: inline-block;
-}
-
-.globalStock .sub_payment .card_info span.pw {
-	color: #939393;
-	font-size: 0.84rem;
-	display: inline-block;
-	line-height: 25px;
-	margin-left: 3px;
-}
-
-.globalStock .sub_payment .card_info span.bns_num {
-	color: #939393;
-	font-size: 0.84rem;
-	display: inline-block;
-	line-height: 25px;
-	margin-left: 3px;
-	position: relative;
-	padding-left: 24px;
-}
-
-.globalStock .sub_payment .card_info span.bns_num i {
-	position: absolute;
-	left: 5px;
-	top: 5px;
-	display: inline-block;
-	vertical-align: top;
-	width: 16px;
-	height: 16px;
-	background: url('../img/icon_agreecheck.png') no-repeat 0 100%;
-	margin-right: 7px;
-}
-
-.globalStock .sub_payment .card_info span.bns_num.active i {
-	background-position: 0 0;
-}
-
-.globalStock .sub_payment .card_info .mapage_form {
-	border-bottom: none;
-}
-
-.globalStock .sub_payment .card_info .mapage_form .form_table tr {
-	border-bottom: none;
-}
-
-.globalStock .sub_payment .card_info .mapage_form .form_table th,
-.globalStock .sub_payment .card_info .mapage_form .form_table td {
-	padding: 10px 0;
-}
-
-.globalStock .sub_payment .card_info .payment_guide {
-	border-bottom: none;
-}
-
-.globalStock .sub_payment .payment_note {
-	border-radius: 3px;
-	padding: 15px 10px;
-	margin: 0 15px;
-}
-
-.globalStock .sub_payment .payment_note .top {
-	border-bottom: 1px solid #E0E4E9;
-	overflow: hidden;
-	padding-bottom: 9px;
-	margin-bottom: 9px;
-}
-
-.globalStock .sub_payment .payment_note .top .h4_title {
-	color: #333;
-	font-size: 0.9375rem;
-	display: inline-block;
-	width: calc(100% - 120px);
-}
-
-.globalStock .sub_payment .payment_note .top .agree {
-	color: #939393;
-	font-size: 0.84rem;
-	position: relative;
-	float: right;
-	width: 110px;
-	line-height: 20px;
-}
-
-.globalStock .sub_payment .payment_note .top .agree i {
-	display: inline-block;
-	vertical-align: top;
-	width: 20px;
-	height: 20px;
-	background: url('../img/select_on.png') no-repeat 0 100%;
-	background-size: 20px 20px;
-	margin-right: 7px;
-}
-
-.globalStock .sub_payment .payment_note .top .agree.active i {
-	background: url('../img/select.png') no-repeat 0 100%;
-	background-size: 20px 20px;
-}
-
-.globalStock .sub_payment .agree_chk .txt {
-	color: #939393;
-	font-size: 0.84rem;
-	line-height: 20px;
-	padding: 7px 0;
-	display: inline-block;
-	width: calc(100% - 47px);
-}
-
-.globalStock .sub_payment .agree_chk .txt i {
-	display: inline-block;
-	vertical-align: top;
-	width: 20px;
-	height: 20px;
-	background: url('../img/select_on.png') no-repeat 0 100%;
-	background-size: 20px 20px;
-	margin-right: 7px;
-}
-
-.globalStock .sub_payment .agree_chk .txt.active i {
-	background: url('../img/select.png') no-repeat 0 100%;
-	background-size: 20px 20px;
-}
-
-.globalStock .sub_payment .agree_chk .age_link {
-	float: right;
-	padding: 11px 5px;
-	background: url('../img/more_Black.png') no-repeat center center;
-	font-size: 0;
-	width: 7px;
-	height: 12px;
-	background-size: 7px 12px;
-}
-
-.globalStock .sub_payment .payment_chk {
-	background: #e6e7f4;
-	border-radius: 9px;
-	padding: 12px 10px;
-	margin: 30px 15px 0;
-}
-
-.globalStock .sub_payment .payment_chk .txt {
-	color: #333;
-	font-size: 0.82rem;
-	line-height: 1.2rem;
-	padding-left: 34px;
-	position: relative;
-}
-
-.globalStock .sub_payment .payment_chk .txt i {
-	position: absolute;
-	left: 5px;
-	top: -1px;
-	display: inline-block;
-	vertical-align: top;
-	width: 20px;
-	height: 20px;
-	background: url('../img/select_on.png') no-repeat 0 100%;
-	background-size: 20px 20px;
-	margin-right: 7px;
-}
-
-.globalStock .sub_payment .payment_chk .txt.active i {
-	background: url('../img/select.png') no-repeat 0 100%;
-	background-size: 20px 20px;
-}
-
-.globalStock .sub_payment .help_nicepay {
-	display: block;
-	color: #939393;
-	font-size: 0.75rem;
-	text-align: center;
-	line-height: 1.2rem;
-	margin-top: 13px;
-}
-
-.globalStock .sub_payment .fix_btn {
-	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
-	background-color: #f4f4f5;
-	padding: 15px 10px;
-	position: fixed;
-	bottom: 0;
-	width: 100%;
-	max-width: 767px;
-	box-sizing: border-box;
-	z-index: 85;
-}
-
-.globalStock .setting_pop.card_edt #pay_cncl.setting_area {
-	box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
-	border: solid 3px #404fc3;
-	transform: translate(-50%, -70%);
-}
-
-.globalStock .setting_pop.card_edt .txt {
-	text-align: center;
-	color: #333;
-	font-size: 0.9375rem;
-	line-height: 1.3rem;
-}
-
-.globalStock .setting_pop.card_edt .btnArea {
-	text-align: center;
-	padding-bottom: 20px;
-	padding-top: 20px;
-	border-top: 1px solid #E0E4E9;
-}
-
-.globalStock .setting_pop.card_edt .btnArea .btn {
-	width: 90px;
-	margin: 0 4px;
-}
-
-.globalStock .setting_pop.card_edt.pay_terms #pay_cncl.setting_area {
-	box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
-	border: solid 3px #404fc3;
-	transform: translate(-50%, -50%);
-}
-
-.globalStock .setting_pop.card_edt.pay_terms .pop_con {
-	overflow: scroll;
-	height: 300px;
-	padding-bottom: 30px !important;
-}
-
-.globalStock .setting_pop.card_edt.pay_terms .pop_con .txt dt {
-	margin: 10px 0 5px;
-	text-align: left;
-	line-height: 1.43;
-	color: #333;
-	font-weight: bold;
-	font-size: 0.9rem;
-	vertical-align: top;
-}
-
-.globalStock .setting_pop.card_edt.pay_terms .pop_con .txt,
-.globalStock .setting_pop.card_edt.pay_terms .pop_con .txt dd,
-.globalStock .setting_pop.card_edt.pay_terms .pop_con .txt li {
-	text-align: left;
-	line-height: 1.43;
-	color: #939393;
-	font-size: 0.84rem;
-	vertical-align: top;
-}
-
-.globalStock .sub_payment .phone_regbox {
-	background: #fff;
-	border-radius: 10px;
-	padding: 15px 20px 21px;
-	margin: 0 15px;
-}
-
-.globalStock .sub_payment .phone_regbox .txt {
-	line-height: 1.54;
-	color: #333;
-	font-size: 0.9rem;
-}
-
-.globalStock .sub_payment .phone_regbox .txt i {
-	display: inline-block;
-	width: 12.5px;
-	height: 15.5px;
-	margin-right: 3px;
-	background: url('../img/banner/icon_alarm2.png') no-repeat 0 0;
-	background-size: 12.5px 15.5px;
-	position: relative;
-	top: 2px;
-}
-
-.globalStock .sub_payment .phone_regbox .txt span {
-	text-decoration: underline;
-}
-
-.globalStock .sub_payment .phone_regbox .payBtn {
-	margin-top: 20px;
-}
-
-.globalStock .sub_payment .phone_regbox .payBtn .btn {
-	width: calc(100% - 40px);
-}
-
-.globalStock .sub_payment .link_home {
-	text-align: center;
-	margin: 15px auto 0;
-}
-
-.globalStock .sub_payment .link_home a {
-	display: inline-block;
-	padding-bottom: 2px;
-	border-bottom: 1px dotted #939393;
-	line-height: 0.91;
-	letter-spacing: -0.55px;
-	color: #939393;
-	font-size: 0.7rem;
-}
-
-.globalStock .sub_payment .link_home i {
-	display: inline-block;
-	width: 3px;
-	height: 6px;
-	padding: 0 1px;
-	margin-right: 3px;
-	background: url('../img/more_Black.png') no-repeat 0 0;
-	background-size: 3px 6px;
-	position: relative;
-	top: -2px;
-}
-
-/* 가입 - 결제완료 step 03 */
-.globalStock .sub_payment.step03 .step_top {
-	background: #fff url('../img/bg_payment_com.png') no-repeat 105% 22px;
-	min-height: 200px;
-	box-sizing: border-box;
-}
-
-.globalStock .sub_payment .step_top .payment_com {
-	padding-top: 12px;
-	padding-left: 10px;
-}
-
-.globalStock .sub_payment .step_top .payment_com .login_title {
-	font-weight: bold;
-	font-size: 1.8rem;
-	line-height: 2.2rem;
-}
-
-.globalStock .sub_payment .step_top .payment_com .login_title strong {
-	display: block;
-	color: #404fc3;
-	line-height: 2.2rem;
-}
-
-.globalStock .sub_payment .step_top .payment_com .txt {
-	color: #939393;
-	font-size: 0.82rem;
-	line-height: 1.2rem;
-	margin-top: 15px;
-}
-
-.globalStock .sub_payment.step03 .payment_guide {
-	border-top: none;
-	margin-top: 0;
-}
-
-.globalStock .sub_payment.step03 .payment_guide .guide {
-	padding: 20px 0;
-}
-
-.globalStock .sub_payment.step03 .payment_note .note .mod_btn {
-	display: inline-block;
-	border: 1px solid #404fc3;
-	border-radius: 3px;
-	width: 80px;
-	color: #404fc3;
-	font-size: 0.75rem;
-	margin-top: 7px;
-	text-align: center;
-	padding: 5px 3px;
-	box-sizing: border-box;
 }
 
 // 프리미엄 안내 배너 통일

@@ -1348,7 +1348,7 @@ $(document).ready(function () {
         $('.wow_secession2').show().addClass('md-show slideUp');
     });
     // 모달 팝업 누르면 바디스크롤 막기
-    $('.v_signalStreng.globalStock .sub_payment .serviceStep .subscribe, .v_signalStreng.globalStock .sub_payment .payment_note .age_link, .v_signalStreng.globalStock .sub_payment .payment_guide .pay_guideTxt').on('click', function () {
+    $('.v_signalStreng.globalStock .sub_payment .payment_note .age_link, .v_signalStreng.globalStock .sub_payment .payment_guide .pay_guideTxt').on('click', function () {
         $('body').css('overflow', 'hidden');
     });
     // 모달팝업 - 닫기
@@ -1562,12 +1562,12 @@ $(document).ready(function () {
     if (document.querySelector('.sub_payment')) {
         console.log("결제화면");
 
-        // // 결제 화면 헤더에 파란색 추가        
-        // var header = document.getElementById('header');
-        // // header가 존재하면 bg_blue 클래스 추가
-        // if (header) {
-        //     header.classList.add('bg_blue');
-        // }
+        // 결제 화면 헤더에 파란색 추가        
+        var header = document.getElementById('header');
+        // header가 존재하면 bg_blue 클래스 추가
+        if (header) {
+            header.classList.add('bg_blue');
+        }
         // 결제 화면 푸터에 패딩 변경
         $('#footer').css('margin-top','0');
         $('#footer .notice').css('padding-bottom','85px');
