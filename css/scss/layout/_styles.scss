@@ -28574,7 +28574,7 @@ table.tableRanking td {
 	color: #333;
 	font-size: 0.875rem;
 	letter-spacing: -0.8px;
-	padding: 11px 13px;
+	padding: 11.5px 13px;
 	width: 100%;
 	box-sizing: border-box;
 	border-radius: 5px;
@@ -28587,7 +28587,7 @@ table.tableRanking td {
 }
 
 .globalStock .sub_login .mapage_area .mapage_form .form_table .phonePin_form .pinInput:focus {
-	border: 1px solid #404fc3 !important;
+	border: solid 1px #e0e4e9 !important;
 	outline: none;
 }
 
@@ -28607,55 +28607,51 @@ table.tableRanking td {
 
 .globalStock .sub_login .mapage_area .mapage_form .form_table .phonePin_form .pinBtn {
 	cursor: pointer;
-	position: absolute;
-	right: 9px;
-	top: 6px;
-	width: 70px;
-	height: 25px;
-	font-size: 0.75rem;
-	font-weight: normal;
-	letter-spacing: -0.6px;
-	text-align: center;
-	color: #fff;
-	outline: none;
-	padding: 4px 8px;
-	border-radius: 3px;
-	border: solid 1px #424fbc;
-	background-color: #404FC3;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    outline: none;
+    border: none;
+    font-size: 0.75rem;
+    font-weight: 500;
+    line-height: 1.58;
+    color: #404fc3;
+    text-decoration: underline;
+    background-color: transparent;
 }
 
 .globalStock .sub_login .mapage_area .mapage_form .form_table .phonePin_form .pinBtn.pin_req {
-	display: block;
-	color: #fff;
-	border: solid 1px #404fc3;
-	background-color: #404fc3;
+	// display: block;
+	// color: #fff;
+	// border: solid 1px #404fc3;
+	// background-color: #404fc3;
 }
 
 .globalStock .sub_login .mapage_area .mapage_form .form_table .phonePin_form .pinBtn.pin_reqAgain {
 	display: none;
-	color: #404fc3;
-	border: solid 1px #424fbc;
-	background-color: #fff;
+	font-size: 0.75rem;
+    font-weight: 500;
+    line-height: 1.58;
+    color: #939393;
 }
 
 .globalStock .sub_login .mapage_area .mapage_form .form_table .phonePin_form .pinInput_out {
 	font-size: 0.875rem;
-	font-weight: bold;
+	// font-weight: bold;
 	letter-spacing: 1.6px;
 	color: #333;
 }
 
 .globalStock .sub_login .mapage_area .mapage_form .form_table .phonePin_form .pinInput_out:focus {
-	border: none;
+	border: solid 1px #e0e4e9 !important;
 	outline: none;
 }
 
 .globalStock .sub_login .mapage_area .mapage_form .form_table .phonePin_form .pinInput::placeholder,
 .globalStock .sub_login .mapage_area .mapage_form .form_table .phonePin_form .pinInput_out::placeholder {
-	font-size: 0.875rem;
-	font-weight: normal;
-	color: #82929f;
-	letter-spacing: -0.8px;
+	font-size: 0.8125rem;
+	line-height: 1.46;	
+	color: #d3d3d3;
 }
 
 .globalStock .sub_login .mapage_area .mapage_form .form_table .phonePin_form .pinInput_out:focus::-webkit-input-placeholder {
@@ -28699,22 +28695,24 @@ table.tableRanking td {
 
 .globalStock .sub_login .mapage_area .mapage_form .form_table .phonePin_form .pin_completion {
 	cursor: pointer;
-	position: absolute;
-	right: 9px;
-	top: 6px;
-	width: 70px;
-	height: 25px;
-	box-sizing: border-box;
-	font-size: 0.75rem;
-	font-weight: normal;
-	letter-spacing: -0.6px;
-	text-align: center;
-	color: #fff;
-	outline: none;
-	padding: 4px 8px;
-	border-radius: 3px;
-	border: solid 1px #404fc3;
-	background-color: #404fc3;
+    position: absolute;
+    right: 0;
+    top: 1px;
+    height: 38px;
+    width: 80px;
+    font-size: 0.8125rem;
+    font-weight: 500;
+    line-height: 1.46;
+    color: #d3d3d3;
+    border: none !important;
+    border-left: 1px solid #e0e4e9;
+    outline: none;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    transition: transform 100ms ease-in-out;
+	&:active {
+		transform: scale(0.95); /* 버튼을 약간 축소 */
+	}
 }
 
 .globalStock .sub_login .mapage_area .mapage_form .form_table td .txt_reject {
@@ -29503,9 +29501,23 @@ table.tableRanking td {
 	display: none;
 	&.caution {
 		.age_link {
-			align-self: flex-start;
-			top: 20px;
+			visibility: hidden;
 		}
+	}
+	.help_nicepay {
+		display: block;	
+		margin-top: 15px;				
+		font-size: 0.8125rem;	
+		line-height: 1.54;	
+		text-align: left;
+		padding-left: 30px;
+		color: #6a727b;
+	}
+	.help_nicepay span {	
+		display: inline-block;
+		padding-left: 2px;
+		text-decoration: underline;
+		color: #404fc3;
 	}
 }
 .v_signalStreng.globalStock .sub_payment .payment_note .age_link {
@@ -29593,7 +29605,7 @@ table.tableRanking td {
 	padding-left: 30px;
 	font-size: 0.75rem;
 	line-height: 1.42;
-	color: #6a727b;
+	color: #939393;	
 	word-break: normal;
     word-wrap: break-word;
 	&.agree_title {
@@ -29602,11 +29614,11 @@ table.tableRanking td {
 		font-weight: bold;
 		color: #333;
 	}
-	&.agree_caution {		
-		padding-top: 5px;				
-		line-height: 1.42;
+	&.agree_caution {				
+		padding-top: 10px;
 		color: #939393;	
 		b {
+			font-weight: 600;
 			color: #939393;	
 		}
 		.refund_terms {

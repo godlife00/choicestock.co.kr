@@ -40,7 +40,7 @@
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" type="text/css" href="../css/scss/choicestock.css" />
     <!-- js -->
-    <script src="../js/globalstock.js"></script>
+    <script src="../js/choicestock.js"></script>
 </head>
 
 <body class="v_signalStreng globalStock">
@@ -139,42 +139,66 @@
                                                 <form action="">
                                                     <fieldset>
                                                         <div class="box">
-                                                            <input type="tel" placeholder="010-1234-4567" class="pinInput">
+                                                            <input type="tel" placeholder="휴대폰번호 입력" class="pinInput">
                                                             <!-- 최초 인증 요청 -->
-                                                            <input type="button" src="../img/icon_search.svg" value="인증 요청" class="pinBtn pin_req">
+                                                            <input type="button" src="../img/icon_search.svg" value="인증 요청"
+                                                                class="pinBtn pin_req">
                                                             <!-- 다시 인증 요청 -->
-                                                            <input type="button" src="../img/icon_search.svg" value="다시 요청" class="pinBtn pin_reqAgain">                                                                        
-                                                            <p class="dsc_error">사용중인 휴대폰번호 입니다.</p>
+                                                            <input type="button" src="../img/icon_search.svg" value="재요청"
+                                                                class="pinBtn pin_reqAgain">
+                                                            <!-- <p class="dsc_error">사용중인 휴대폰번호 입니다.</p> -->
                                                         </div>
-                                                        <div class="box">
-                                                            <p class="" id="auth_result"></p>
-                                                            <input type="number" class="pinInput_out" name="auth-token" inputmode="numeric" pattern="[0-9]*"
-                                                                autocomplete="one-time-code" placeholder="인증번호 입력 (2:37)">                                    
-                                                            <input type="button" src="../img/icon_search.svg" value="번호 확인" class="pin_completion">                                    
-                                                            <p class="dsc_error" id="auth_result">인증번호가 일치하지 않습니다. 다시 입력해주세요.</p>                                                                                                            
-                                                            <p class="txt_reject">휴대폰으로 전송된 인증번호 입력 후 '확인' 버튼을 눌러주세요.</p>
+                                                        <div class="box">                                    
+                                                            <input type="number" class="pinInput_out" name="auth-token" inputmode="numeric"
+                                                                pattern="[0-9]*" autocomplete="one-time-code" placeholder="인증번호 입력 (02:46)">
+                                                            <input type="button" src="../img/icon_search.svg" value="번호 확인"
+                                                                class="pin_completion">
+                                                            <p class="dsc_error" id="auth_result">인증번호가 일치하지 않습니다. 다시 입력해주세요.</p>                                    
                                                         </div>
                                                     </fieldset>
                                                     <!-- 인증번호 요청 성공하면 실행되는 추가되는 스크립트 -->
                                                     <script>
                                                         $(document).ready(function () {
-                                                            $('.phonePin_form .pinBtn.pin_req').on("click", function () {
-                                                                console.log("인증번호 요청 성공");                                                                                
+                                                            const animationDuration = 300;
+                                                    
+                                                            // 입력 필드 비활성화하지만, 값은 계속 보이도록 설정
+                                                            function togglePhoneInputDisable(disable) {
+                                                                $('.phonePin_form .pinInput').attr('disabled', disable).css('cursor', disable ? 'not-allowed' : 'auto');
+                                                            }
+                                                    
+                                                            $('.phonePin_form .pinInput_out').on('input', function() {
+                                                                // 숫자만 입력되도록 현재 값에 숫자가 아닌 문자가 포함되어 있으면 제거
+                                                                $(this).val($(this).val().replace(/[^0-9]/g, ''));
+                        
+                                                                // 4자리를 초과하는 입력을 제거
+                                                                if ($(this).val().length > 4) {
+                                                                    $(this).val($(this).val().substr(0, 4));
+                                                                }
+                        
+                                                                // 입력된 값이 정확히 4자리 숫자인 경우
+                                                                if ($(this).val().length === 4) {
+                                                                    $('.pin_completion').css('color', '#404fc3'); // 버튼 색상 변경
+                                                                } else {
+                                                                    $('.pin_completion').css('color', '#d3d3d3'); // 기본 색상으로 재설정
+                                                                }
+                                                            });
+                                                    
+                                                            $('.phonePin_form').on("click", ".pinBtn.pin_req", function () {
                                                                 $(this).fadeOut();
                                                                 $('.phonePin_form .pinBtn.pin_reqAgain').fadeIn();
-                                                                $('.phonePin_form .pinInput').attr('disabled', true).css('cursor', 'not-allowed'); //휴대폰입력 비활성화
-                                                                $('.phonePin_form .box:last-child').slideDown(300);      
-
+                                                                togglePhoneInputDisable(true); // 입력 필드 비활성화
+                                                                $('.phonePin_form .box:last-child').slideDown(animationDuration);
                                                             });
-                                                            $('.phonePin_form .pinBtn.pin_reqAgain').on("click", function () {
-                                                                console.log("다시 요청한 경우");                  
+                                                    
+                                                            $('.phonePin_form').on("click", ".pinBtn.pin_reqAgain", function () {
                                                                 $(this).fadeOut();
                                                                 $('.phonePin_form .pinBtn.pin_req').fadeIn();
-                                                                $('.phonePin_form .pinInput').val('').attr('disabled', false).css('cursor', 'auto'); //휴대폰입력 활성화
-                                                                $('.phonePin_form .box:last-child').slideUp(300);                                        
+                                                                togglePhoneInputDisable(false); // 입력 필드 다시 활성화
+                                                                $('.phonePin_form .box:last-child').slideUp(animationDuration);
                                                             });
                                                         });
                                                     </script>
+                                                    
                                                     <!-- //인증번호 요청 성공하면 실행되는 추가되는 스크립트 -->
                                                 </form>
                                             </td>
