@@ -40,7 +40,7 @@
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" type="text/css" href="../css/scss/choicestock.css" />
     <!-- js -->
-    <script src="../js/globalstock.js"></script>
+    <script src="../js/choicestock.js"></script>
 </head>
 
 <body class="v_signalStreng globalStock">
@@ -65,13 +65,40 @@
             <div class="select_payTop">                
                 <div class="step_box">
                     <div class="top">
-                        <h3 class="title">초이스스탁US - 월 정기결제 <span class="suggestion">추천</span></h3>                        
+                        <h3 class="title">초이스스탁US - 월 정기결제</h3>                        
+                    </div>                    
+                    <div class="payRight">                        
+                        <span class="pay02">33,000원</span>
+                    </div>
+                    <!-- //payRight -->                        
+                </div>
+                <!-- //step_box -->
+                <br>
+                <div class="step_box">
+                    <div class="top">
+                        <h3 class="title">초이스스탁US - 월 정기결제</h3>                        
                     </div>                    
                     <div class="payRight">
                         <span class="pay01">33,000원</span>
                         <span class="pay02">1,000원
                             <span class="pay_sale">
                                 <strong>신규가입 할인</strong>
+                            </span>
+                        </span>
+                    </div>
+                    <!-- //payRight -->                        
+                </div>
+                <!-- //step_box -->
+                <br>
+                <div class="step_box">
+                    <div class="top">
+                        <h3 class="title">초이스스탁US - 연간 정기결제</h3>                        
+                    </div>                    
+                    <div class="payRight">
+                        <span class="pay01">396,000원</span>
+                        <span class="pay02">240,000원
+                            <span class="pay_sale">
+                                <strong>(39% 할인, 월 20,000원)</strong>
                             </span>
                         </span>
                     </div>
@@ -102,6 +129,8 @@
                                     <option value="NH">NH카드</option>                                    
                                 </select>
                                 <p class="teh_guideTxt">*신용카드(롯데, 삼성, 신한, 현대, NH) 또는 체크카드</p>
+                                <!-- 오류 메시지를 표시 error-message  -->
+                                <span class="error-message">결제수단을 선택해주세요.</span>
                             </div>   
 
                             <div class="cardNumber">
@@ -253,8 +282,8 @@
                 <div class="pop_con">
                     <p class="paypal_title">해외카드는 <b>페이팔</b>로 간편하게 결제할 수 있습니다.</p>
                     <p class="paypal_link">페이팔로 결제하기 : <a href="https://bit.ly/pp_choice" target="_blank" >https://bit.ly/pp_choice</a></p>
-                    <p class="paypal_txt">- 1개월 정기결제 $29 → 첫달 $0.99 결제, 이후 -> $29 결제</p>                        
-                    <p class="paypal_txt">- 페이팔로 결제후 아래정보를 <b>고객센터로 꼭 알려주세요!</b></p>
+                    <p class="paypal_txt">- 1개월 정기결제 $29 → 첫달 $0.99 결제, 이후 -> $29 결제</p>                                            
+                    <p class="paypal_txt">- 페이팔로 결제후 아래정보를 <b>고객센터로 꼭 알려주세요!</b> <a href="https://kq64o.channel.io" target="_blank">[바로가기]</a></p>
                     <ul class="paypal_step">
                         <li><b>1&#41; 결제일</b></li>
                         <li><b>2&#41; 페이팔 결제 시 입력 이메일</b></li>                    
@@ -263,7 +292,7 @@
                         <li><b>3&#41; 서비스 가입 이메일</b></li>                        
                         <li><b>4&#41; 회원이름</b></li>
                     </ul>
-                    <p class="progress_txt">*페이팔 결제 확인은 영업일 기준 1~2일 소요되는점 양해바랍니다.</p>
+                    <p class="progress_txt">*페이팔 결제 확인은 <b>영업일 기준 1~3일</b> 소요되는점 양해바랍니다.</p>
                 </div>
             </div>
             <!-- //(필수)전자금융거래 약관 동의 -->
@@ -840,23 +869,23 @@
         // 카드정보 입력서 포커스, 화면 이동 end
 
         // 카드번호 입력시 4자리마다 하이픈(-) 추가
-        document.getElementById('cardNumber').addEventListener('input', function (e) {
-            var input = e.target.value;
+        // document.getElementById('cardNumber').addEventListener('input', function (e) {
+        //     var input = e.target.value;
             
-            // 숫자가 아닌 문자를 제거
-            var numbersOnly = input.replace(/\D/g, '');
+        //     // 숫자가 아닌 문자를 제거
+        //     var numbersOnly = input.replace(/\D/g, '');
 
-            // 숫자를 4자리마다 하이픈으로 구분
-            var formattedInput = '';
-            for (var i = 0; i < numbersOnly.length; i++) {
-                formattedInput += numbersOnly[i];
-                // 4의 배수인 위치에서 하이픈 추가 (단, 마지막 숫자가 아닐 때)
-                if ((i + 1) % 4 === 0 && i < numbersOnly.length - 1) {
-                    formattedInput += '-';
-                }
-            }
-            e.target.value = formattedInput.substring(0, 19); // 최대 길이를 19로 제한
-        });
+        //     // 숫자를 4자리마다 하이픈으로 구분
+        //     var formattedInput = '';
+        //     for (var i = 0; i < numbersOnly.length; i++) {
+        //         formattedInput += numbersOnly[i];
+        //         // 4의 배수인 위치에서 하이픈 추가 (단, 마지막 숫자가 아닐 때)
+        //         if ((i + 1) % 4 === 0 && i < numbersOnly.length - 1) {
+        //             formattedInput += '-';
+        //         }
+        //     }
+        //     e.target.value = formattedInput.substring(0, 19); // 최대 길이를 19로 제한
+        // });
 
         // 유효기간 입력시 2자리마다 슬래쉬(/) 추가
         document.getElementById('select_mon').addEventListener('input', function (e) {

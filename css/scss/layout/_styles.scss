@@ -29365,6 +29365,7 @@ table.tableRanking td {
 	display: none;
 }
 .v_signalStreng.globalStock .sub_payment .payment_guide .mapage_form .couponNumber .t_label {
+	cursor: pointer;
 	display: inline-block;
 	padding-right: 24px;
 	position: relative;
@@ -29420,7 +29421,8 @@ table.tableRanking td {
 	color: #d3d3d3;
 }
 .v_signalStreng.globalStock .sub_payment .payment_guide .mapage_form .error-message {	
-	display: inline-block;
+	// display: inline-block;
+	display: none;
     margin-top: 10px;
     font-size: 0.75rem;
     line-height: 1.72;
@@ -29732,6 +29734,12 @@ table.tableRanking td {
 	font-weight: 400;
 	line-height: 1.46;	
 	color: #6a727b;	
+	a {
+		display: inline-block;
+		padding-left: 7px;
+		text-decoration: underline;
+		color: #404fc3;
+	}
 }
 .v_signalStreng.globalStock #wrap .modal.cardBox .pop_con .paypal_txt b,
 .v_signalStreng.globalStock #wrap .modal.cardBox .pop_con .paypal_step li b {		
@@ -29743,6 +29751,9 @@ table.tableRanking td {
 	font-weight: 400;	
 	line-height: 1.42;	
 	color: #939393;	
+	b {
+		color: #6a727b;	
+	}
 }
 .v_signalStreng.globalStock #wrap .modal.cardBox .pop_con .paypal_step {
 	display: flex;
@@ -29863,7 +29874,7 @@ table.tableRanking td {
 }
 @media (min-width:320px) and (max-width:375px) {
 	.v_signalStreng.globalStock .sub_payment .serviceStep .step_box {
-		padding: 25px 19px;
+		padding: 25px 14px;
 	}
 	.v_signalStreng.globalStock .sub_payment .serviceStep .step_box .subscribe span {
 		padding: 7px 18px 6px;
