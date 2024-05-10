@@ -41,6 +41,9 @@
     <link rel="stylesheet" type="text/css" href="../css/scss/choicestock.css" />
     <!-- js -->
     <script src="../js/choicestock.js"></script>
+    <!-- 이 아래는 로컬에서만 사용되는 파일 -->
+    <script src="../js/local.js"></script>
+    <!-- 로컬에서만 사용되는 파일 종료  -->
 </head>
 
 <body class="v_signalStreng globalStock">
@@ -87,14 +90,15 @@
                         <tbody>
                             <tr>
                                 <th class="service">프리미엄 서비스:</th>
-                                <td class="day">2020.09/18 ~ 2030.10/18 (월 정기결제)                                    </td>
+                                <td class="day">2020.09/18 ~ 2030.10/18 (월 정기결제) </td>
                             </tr>
                             <tr>
                                 <th rowspan="2" class="system"><span>월 정기결제</span>
-                                    <a href="#pay_cncl" class="btn_payCan show_pop02 auto_cncl">정기결제취소</a>
+                                    <a href="#pay_cncl" class="btn_payCan auto_cncl show_pop02">정기결제취소</a>
                                 </th>
                                 <td class="num">
-                                    <span>ㆍ카드번호</span> <strong>****3423</strong><a href="../payment/step02_card.html" class="card_ch">변경</a>
+                                    <span>ㆍ카드번호</span> <strong>****3423</strong><a href="../payment/step02_card.html"
+                                        class="card_ch">변경</a>
                                 </td>
                             </tr>
                             <tr>
@@ -117,7 +121,53 @@
                                     <a href="#pay_cncl" class="btn_payCan auto_cncl latest_signal">정기결제취소</a>
                                 </th>
                                 <td class="num">
-                                    <span>ㆍ카드번호</span> <strong>****3423</strong><a href="../payment/step02_card.html" class="card_ch">변경</a>
+                                    <span>ㆍ카드번호</span> <strong>****3423</strong><a href="../payment/step02_card.html"
+                                        class="card_ch">변경</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="num"><span>ㆍ결제일</span> <strong>일</strong></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- 기간결제 취소 -->
+                <div class="mapage_service">
+                    <table border="1" class="service_table">
+                        <tbody>
+                            <tr>
+                                <th class="service">프리미엄 서비스:</th>
+                                <td class="day">2020.09/18 ~ 2030.10/18 (기간 결제)</td>
+                            </tr>
+                            <tr>
+                                <th rowspan="2" class="system"><span>기간 결제</span>
+                                    <a href="#pay_cncl" class="btn_payCan auto_cncl show_pop02_1">결제취소</a>
+                                </th>
+                                <td class="num">
+                                    <span>ㆍ카드번호</span> <strong>****3423</strong>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="num"><span>ㆍ결제일</span> <strong>일</strong></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- 기간결제 취소 -->
+                <div class="mapage_service">
+                    <table border="1" class="service_table">
+                        <tbody>
+                            <tr>
+                                <th class="service">프리미엄 서비스:</th>
+                                <td class="day">2020.09/18 ~ 2030.10/18 (기간 결제)</td>
+                            </tr>
+                            <tr>
+                                <th rowspan="2" class="system"><span>가상 계좌</span>
+                                    <a href="#pay_cncl" class="btn_payCan auto_cncl show_pop02_2">결제취소</a>
+                                </th>
+                                <td class="num">
+                                    <span>ㆍ카드번호</span> <strong>****3423</strong>
                                 </td>
                             </tr>
                             <tr>
@@ -136,7 +186,7 @@
                                 <td class="day">
                                     2020.09/18 ~ 2030.10/18 (월 정기결제) <p class="pay_cacl">결제취소 완료 (2024.03.23 88:88)</p>
                                 </td>
-                            </tr>                            
+                            </tr>
                         </tbody>
                     </table>
                 </div>
@@ -183,7 +233,7 @@
             <!-- //mapage_area -->
 
         </div>
-        <!-- //container sub_login -->        
+        <!-- //container sub_login -->
 
         <div id="footer" class="chous_footer">
             <div class="notice">
@@ -232,7 +282,7 @@
 
         <div class="modalBox">
             <div class="modal payment_cacl">
-                <div class="pop_header">                    
+                <div class="pop_header">
                     <h1 class="pop_title"><img src="../img/caution-icon.png" alt="" style="width: 80px;"></h1>
                     <span class="clse">
                         <!--닫기-->
@@ -240,13 +290,13 @@
                 </div>
                 <div class="pop_con">
                     <p class="txt">
-                        결제 당일 취소 시, <strong>프리미엄 서비스 이용은 즉시 종료</strong>되며,<br>                        
+                        결제 당일 취소 시, <strong>프리미엄 서비스 이용은 즉시 종료</strong>되며,<br>
                         <b>첫 결제 1,000원 혜택도 종료</b>됩니다.<br>
                         이후 재-결제시 정상가로 결제됩니다.
                         <br><br>
                         결제취소를 진행하시겠습니까?
                     </p>
-                    
+
                     <div class="btnArea edtBtn">
                         <a href="#" class="btn btn_cncl show_pop02">예, 결제취소합니다</a>
                         <a href="#" class="btn btn_save">아니요</a>
@@ -259,37 +309,37 @@
                         <br><br>
                         결제취소를 진행하시겠습니까?
                     </p>
-                    
+
                     <div class="btnArea edtBtn">
                         <a href="#" class="btn btn_cncl show_pop02">예, 결제취소합니다</a>
                         <a href="#" class="btn btn_save">아니요</a>
                     </div>
                 </div>
-            </div>          
+            </div>
             <div class="blocker"></div>
         </div>
 
         <script>
             // 1000원 이벤트 가입자 결제 취소 안내 팝업 스크립트
-            $('.latest_signal').click(function () {                
+            $('.latest_signal').click(function () {
                 $('.modal').hide().removeClass('slideUp');
                 $('.blocker').show();
-                $('.payment_cacl').show().addClass('slideUp');        
+                $('.payment_cacl').show().addClass('slideUp');
             });
             // 아니요 선택 한 경우
-            $('.modal.payment_cacl .btn.btn_save').on('click', function () {                
+            $('.modal.payment_cacl .btn.btn_save').on('click', function () {
                 $('body').css('overflow', '');
-                $('.blocker').hide();                
-                $('.modal').hide().removeClass('slideUp');                    
+                $('.blocker').hide();
+                $('.modal').hide().removeClass('slideUp');
             });
             // 결제 취소를 선택한 경우
-            $('.modal.payment_cacl .btn.btn_cncl').on('click', function () {                                
+            $('.modal.payment_cacl .btn.btn_cncl').on('click', function () {
                 $('body').css('overflow', '');
-                $('.blocker').hide();                
-                $('.modal').hide().removeClass('slideUp');                    
+                $('.blocker').hide();
+                $('.modal').hide().removeClass('slideUp');
             });
         </script>
-        
+
     </div>
     <!-- //wrap -->
     <!-- Modal popup -->
@@ -334,10 +384,14 @@
                                                 </div>
                                                 <div class="certification_area">
                                                     <p class="txt">
-                                                        <b>정기결제</b> : 
-                                                        결제 주기가 종료될 때까지 서비스를 이용할 수 있으며, 결제 금액은 환불되지 않습니다. (단, 결제 당일 취소 시 환불되며, 서비스 이용은 즉시 중단됩니다.)<br><br>                                                        
-														결제취소는 신청 즉시(또는 영업일 기준 D+2 이내) 처리되며, 가상계좌/계좌이체 결제금액은 D+7 이내 등록하신 환불계좌로 입금처리됩니다.</p>
-                                                        <a href="../terms.html#refund_policy" class="go_link" target="_blank"><i></i>환불정책 바로가기</a>
+                                                        <b>정기결제</b> :
+                                                        결제 주기가 종료될 때까지 서비스를 이용할 수 있으며, 결제 금액은 환불되지 않습니다. (단, 결제 당일 취소 시
+                                                        환불되며, 서비스 이용은 즉시 중단됩니다.)<br><br>
+                                                        결제취소는 신청 즉시(또는 영업일 기준 D+2 이내) 처리되며, 가상계좌/계좌이체 결제금액은 D+7 이내 등록하신
+                                                        환불계좌로 입금처리됩니다.
+                                                    </p>
+                                                    <a href="../terms.html#refund_policy" class="go_link"
+                                                        target="_blank"><i></i>환불정책 바로가기</a>
                                                 </div>
                                                 <!-- //certification_area -->
                                             </td>
@@ -417,10 +471,14 @@
                                                 </div>
                                                 <div class="certification_area">
                                                     <p class="txt">
-                                                        <b>기간결제</b> : 해지일로부터 이용일 수에 해당하는 금액과 수수료 및 제반비용(3.5%)차감후 환불됩니다.<br><br>
-														결제취소는 신청 즉시(또는 영업일 기준 D+2 이내) 처리되며, 가상계좌/계좌이체 결제금액은
-                                                        D+7 이내 등록하신 환불계좌로 입금처리됩니다.</p></p>
-                                                        <a href="../terms.html#refund_policy" class="go_link" target="_blank"><i></i>환불정책 바로가기</a>
+                                                        <b>정기결제</b> : 결제 주기가 종료될 때까지 서비스를 이용할 수 있으며, 결제 금액은 환불되지 않습니다.
+                                                        (단, 결제 당일 취소 시 환불되며, 서비스 이용은 즉시 중단됩니다.)<br><br>
+                                                        결제취소는 신청 즉시(또는 영업일 기준 D+2 이내) 처리되며, 가상계좌/계좌이체 결제금액은
+                                                        D+7 이내 등록하신 환불계좌로 입금처리됩니다.
+                                                    </p>
+                                                    </p>
+                                                    <a href="../terms.html#refund_policy" class="go_link"
+                                                        target="_blank"><i></i>환불정책 바로가기</a>
                                                 </div>
                                                 <!-- //certification_area -->
                                             </td>
@@ -441,19 +499,20 @@
     </div>
     <!-- //setting_pop pay_edt -->
 
-    <!-- 서비스 해지/환불 (기간결제) -->
+    <!-- 결제취소(카드계좌) -->
     <div class="setting_pop pay_edt pay_edt_02_1">
         <div class="bg"></div>
-        <div id="pay_cncl" class="setting_area">
+        <div id="pay_cncl_tr" class="setting_area">
             <div class="pop_header">
                 <a href="#setting_anchor" title="로그인 레이어 닫기" class="close"><img src="../img/clse.png" alt="팝업닫기"></a>
-                <h1 class="pop_title">결제취소 <span>2019.12/23 12:24</span> </h1>
+                <h1 class="pop_title">결제취소 <span>2024.05/10 12:27</span> </h1>
             </div>
             <!-- //pop_header -->
             <div class="pop_con">
-                <p class="pop_sum">이용중인 <strong>‘초이스스탁US’</strong> 서비스 해지를 신청합니다.</p>
                 <div class="mapage_form">
-                    <form action="" method="post">
+                    <form name="payForm" method="post" action="/payment/pay_cancel" onsubmit="return false;">
+                        <input type="hidden" name="cs_ano" value="721">
+                        <input type="hidden" name="srv_name" value="초이스스탁">
                         <fieldset>
                             <div class="form_table">
                                 <table border="1" class="">
@@ -462,7 +521,7 @@
                                             <th scope="row">서비스</th>
                                             <td>
                                                 <div class="item">
-                                                    <p class="txt_info">초이스스탁 (월정기)</p>
+                                                    <p class="txt_info" id="pay_srv_name">초이스스탁 (기간결제)</p>
                                                 </div>
                                             </td>
                                         </tr>
@@ -470,53 +529,53 @@
                                             <th scope="row">결제금액</th>
                                             <td>
                                                 <div class="item">
-                                                    <p class="txt_info">35,000원</p>
+                                                    <p class="txt_info" id="pay_srv_price">990원</p>
                                                 </div>
                                             </td>
                                         </tr>
-                                        <!-- <tr>
+                                        <tr>
                                             <th scope="row">사용일수</th>
                                             <td>
                                                 <div class="item">
-                                                    <p class="txt_info">20일</p>
+                                                    <p class="txt_info" id="pay_use_day">462일</p>
                                                 </div>
                                             </td>
-                                        </tr> -->
-                                        <!-- <tr>
+                                        </tr>
+                                        <tr>
                                             <th scope="row">환불금액</th>
                                             <td>
                                                 <div class="item">
-                                                    <p class="txt_info">0원</p>
-                                                    <p class="i_dsc phone">8월 88일 '결제 예정' 중으로,<br>환불금이 0원으로 표시됩니다.</p>
+                                                    <p class="txt_info" id="pay_refund_price">0원</p>
+                                                    <p class="i_dsc phone" id="pay_free_price"></p>
                                                 </div>
                                             </td>
-                                        </tr> -->
+                                        </tr>
                                         <tr>
-                                            <th scope="row">결제수단</th>
+                                            <th scope="row"></th>
                                             <td>
                                                 <div class="item">
-                                                    <p class="txt_info">신용카드(**8787)</p>
+                                                    <p class="txt_info" id="pay_card_no">신용카드(****23)</p>
                                                 </div>
                                                 <div class="certification_area">
-                                                    <h3 class="service_title"><strong>[환불 안내]</strong></h3>
-                                                    <p class="txt">월 정기결제는 이용 기간에 언제든지 서비스해지할 수 있습니다.</p>
-                                                    <p class="txt">서비스해지 시 잔여일이 있으면 서비스 만료 일까지 이용하실
-                                                        수 있으며, 월자동결제는 환불신청이 적용되지 않습니다.
-                                                        단, 결제신청 당일에 한하여 서비스 해지 요청 시 결제금액이
-                                                        환불되며, 유료서비스 이용은 즉시 종료됩니다.</p>
-                                                    <p class="txt">서비스해지 시 상거래보호법에 따른 거래내역 보존 필요에
-                                                        따라 5년 ~10년간 아이디와 함께 정보가 보관됩니다.</p>
+                                                    <p class="txt">
+                                                        <b>기간결제</b> : 해지일로부터 이용일 수에 해당하는 금액과 수수료 및 제반비용(3.5%)차감후
+                                                        환불됩니다.<br><br>
+                                                        결제취소는 신청 즉시(또는 영업일 기준 D+2 이내) 처리되며, 가상계좌/계좌이체 결제금액은
+                                                        D+7 이내 등록하신 환불계좌로 입금처리됩니다.
+                                                    </p>
+                                                    <a href="../terms.html#refund_policy" class="go_link"
+                                                        target="_blank"><i></i>환불정책 바로가기</a>
                                                 </div>
                                                 <!-- //certification_area -->
                                             </td>
                                         </tr>
                                     </tbody>
                                 </table>
-                                <p class="label_chk"><i></i>서비스 해지 및 환불에 관한 내용을 모두 확인했습니다.</p>
+                                <p class="label_chk" id="requestCancel"><i></i>위 내용을 확인했으며, 결제취소를 신청합니다.</p>
                             </div>
                             <!-- //form_table -->
                             <div class="btnArea edtBtn">
-                                <a href="#" class="btn btn_save">서비스 해지 신청</a>
+                                <a href="javascript:fnPayCanCel()" class="btn btn_save">결제취소</a>
                             </div>
                         </fieldset>
                     </form>
@@ -526,19 +585,20 @@
     </div>
     <!-- //setting_pop pay_edt -->
 
-    <!-- 서비스 해지/환불 (월자동) -->
+    <!-- 결제취소(가상계좌) -->
     <div class="setting_pop pay_edt pay_edt_02_2">
         <div class="bg"></div>
         <div id="pay_cncl_tr" class="setting_area">
             <div class="pop_header">
                 <a href="#setting_anchor" title="로그인 레이어 닫기" class="close"><img src="../img/clse.png" alt="팝업닫기"></a>
-                <h1 class="pop_title">서비스 해지/환불 <span>2019.12/23 12:24</span> </h1>
+                <h1 class="pop_title">결제취소 <span>2024.05/10 12:27</span> </h1>
             </div>
             <!-- //pop_header -->
             <div class="pop_con">
-                <p class="pop_sum">이용중인 <strong>‘초이스스탁US’</strong> 서비스 해지와 환불을 신청합니다.</p>
+                <!-- <p class="pop_sum">이용중인 <strong>‘초이스스탁US’</strong> 서비스 해지와 환불을 신청합니다.</p> -->
                 <div class="mapage_form">
-                    <form action="" method="post">
+                    <form name="rfForm" method="post" action="/payment/pay_refund" onsubmit="return false;">
+                        <input type="hidden" name="cs_rfno" value="">
                         <fieldset>
                             <div class="form_table">
                                 <table border="1" class="">
@@ -560,7 +620,7 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <th scope="row">이용일수</th>
+                                            <th scope="row">사용일수</th>
                                             <td>
                                                 <div class="item">
                                                     <p class="txt_info"><strong>20</strong>일 <span>/ 31일</span></p>
@@ -579,120 +639,120 @@
                                             <th scope="row">환불계좌</th>
                                             <td>
                                                 <div class="selectbox">
-                                                    <label for="select">은행 선택</label>
-                                                    <select id="select">
-                                                        <option selected>신한은행</option>
-                                                        <option>농협은행</option>
-                                                        <option>국민은행</option>
-                                                        <option>우리은행</option>
-                                                        <option>신한은행</option>
+                                                    <label for="select" id="rf_bank_name">한국은행</label>
+                                                    <select name="select_bank" id="select">bank_list
+                                                        <option value="001">한국은행</option>
+                                                        <option value="002">산업은행</option>
+                                                        <option value="003">기업은행</option>
+                                                        <option value="004">국민은행</option>
+                                                        <option value="007">수협은행</option>
+                                                        <option value="008">수출입은행</option>
+                                                        <option value="011">농협은행</option>
+                                                        <option value="012">지역농-축협</option>
+                                                        <option value="020">우리은행</option>
+                                                        <option value="023">SC제일은행</option>
+                                                        <option value="027">한국씨티은행</option>
+                                                        <option value="031">대구은행</option>
+                                                        <option value="032">부산은행</option>
+                                                        <option value="034">광주은행</option>
+                                                        <option value="035">제주은행</option>
+                                                        <option value="037">전북은행</option>
+                                                        <option value="039">경남은행</option>
+                                                        <option value="045">새마을금고연합회</option>
+                                                        <option value="048">신협</option>
+                                                        <option value="050">저축은행</option>
+                                                        <option value="052">모건스탠리은행</option>
+                                                        <option value="054">HSBC은행</option>
+                                                        <option value="055">도이치은행</option>
+                                                        <option value="057">제이피모간체이스은행</option>
+                                                        <option value="058">미즈호은행</option>
+                                                        <option value="059">엠유에프지은행</option>
+                                                        <option value="060">BOA</option>
+                                                        <option value="061">비엔피파리바은행</option>
+                                                        <option value="062">중국공상은행</option>
+                                                        <option value="063">중국은행</option>
+                                                        <option value="064">산림조합중앙회</option>
+                                                        <option value="065">대화은행</option>
+                                                        <option value="066">교통은행</option>
+                                                        <option value="067">중국건설은행</option>
+                                                        <option value="071">우체국</option>
+                                                        <option value="076">신용보증기금</option>
+                                                        <option value="077">기술보증기금</option>
+                                                        <option value="081">KEB하나은행</option>
+                                                        <option value="088">신한은행</option>
+                                                        <option value="089">케이뱅크</option>
+                                                        <option value="090">카카오뱅크</option>
+                                                        <option value="101">한국신용정보원</option>
+                                                        <option value="102">대신저축은행</option>
+                                                        <option value="103">에스비아이저축은행</option>
+                                                        <option value="104">에이치케이저축은행</option>
+                                                        <option value="105">웰컴저축은행</option>
+                                                        <option value="106">신한저축은행</option>
+                                                        <option value="209">유안타증권</option>
+                                                        <option value="218">KB증권</option>
+                                                        <option value="221">상상인증권</option>
+                                                        <option value="222">한양증권</option>
+                                                        <option value="223">리딩투자증권</option>
+                                                        <option value="224">BNK투자증권</option>
+                                                        <option value="225">IBK투자증권</option>
+                                                        <option value="227">KTB투자증권</option>
+                                                        <option value="238">미래에셋대우</option>
+                                                        <option value="240">삼성증권</option>
+                                                        <option value="243">한국투자증권</option>
+                                                        <option value="247">NH투자증권</option>
+                                                        <option value="261">교보증권</option>
+                                                        <option value="262">하이투자증권</option>
+                                                        <option value="263">현대차증권</option>
+                                                        <option value="264">키움증권</option>
+                                                        <option value="265">이베스트투자증권</option>
+                                                        <option value="266">SK증권</option>
+                                                        <option value="267">대신증권</option>
+                                                        <option value="269">한화증권</option>
+                                                        <option value="270">하나금융투자</option>
+                                                        <option value="278">신한금융투자</option>
+                                                        <option value="279">DB금융투자</option>
+                                                        <option value="280">유진투자증권</option>
+                                                        <option value="287">메리츠종합금융증권</option>
+                                                        <option value="288">바로투자증권</option>
+                                                        <option value="290">부국증권</option>
+                                                        <option value="291">신영증권</option>
+                                                        <option value="292">케이프투자증권</option>
+                                                        <option value="293">한국증권금융</option>
+                                                        <option value="294">한국포스증권</option>
                                                     </select>
                                                 </div>
-                                                <input type="number" placeholder="계좌번호 입력" name="" id="" class="tr_num">
+                                                <input type="tel" name="account_number" placeholder="계좌번호 입력" id=""
+                                                    class="tr_num">
 
                                                 <div class="certification_area">
-                                                    <h3 class="service_title"><strong>[환불 안내]</strong></h3>
-                                                    <p class="txt">해지일로부터 이용일수에 해당하는 금액과 환불처리에 발생하는 수수료 및
-                                                        기타 제반 비용(환불대상 서비스 결제금액의 3.5%)을 결제금액에서 차감 후 환불합니다.
-                                                        단, 유료 서비스 이용 개시일로부터 3일 이내에 해지를 요구하는 경우
-                                                        이용일수에 해당하는 금액만을 차감하여 환불합니다</p>
-                                                    <p class="txt">환불 요청 시 상거래보호법에 따른 거래내역 보존 필요에 따라 5년~10년간
-                                                        아이디와 함께 정보가 보관됩니다. </p>
+                                                    <p class="txt">
+                                                        <b>기간결제</b> : 해지일로부터 이용일 수에 해당하는 금액과 수수료 및 제반비용(3.5%)차감후
+                                                        환불됩니다.<br><br>
+                                                        결제취소는 신청 즉시(또는 영업일 기준 D+2 이내) 처리되며, 가상계좌/계좌이체 결제금액은
+                                                        D+7 이내 등록하신 환불계좌로 입금처리됩니다.
+                                                    </p>
+                                                    <a href="../terms.html#refund_policy" class="go_link"
+                                                        target="_blank"><i></i>환불정책
+                                                        바로가기</a>
                                                 </div>
                                                 <!-- //certification_area -->
                                             </td>
                                         </tr>
                                     </tbody>
                                 </table>
-                                <p class="label_chk"><i></i>서비스 해지 및 환불에 관한 내용을 모두 확인했습니다.</p>
+                                <p class="label_chk" id="requestRefund"><i></i>위 내용을 확인했으며, 결제취소를 신청합니다.</p>
                             </div>
                             <!-- //form_table -->
+                            <div class="btnArea edtBtn">
+                                <a href="javascript:fnRefund()" class="btn btn_save">결제취소</a>
+                            </div>
                         </fieldset>
                     </form>
                 </div>
-            </div>
-            <div class="btnArea edtBtn">
-                <a href="#" class="btn btn_save">서비스 해지 및 환불요청</a>
             </div>
         </div>
     </div>
     <!-- //setting_pop pay_edt -->
 </body>
-
-<script>
-    $(document).ready(function () {
-        var setpay_edt01 = $('.pay_edt_01');
-        var setpay_edt02 = $('.pay_edt_02');
-        var setpay_edt02_1 = $('.pay_edt_02_1');
-        var setpay_edt02_2 = $('.pay_edt_02_2');
-        var setcatch_edt01 = $('.catch_edt_01');
-        var setcatch_edt02 = $('.catch_edt_02');
-        var setcatch_edt03 = $('.catch_edt_03');
-        var setcatch_edt03_2 = $('.catch_edt_03_2');
-        var setcatch_edt03_3 = $('.catch_edt_03_3');
-        var setterms_01 = $('.pay_terms_01');
-        var setterms_02 = $('.pay_terms_02');
-        var setterms_03 = $('.pay_terms_03');
-
-        // Show Hide
-        $('.clse_trigger').click(function () {
-            setWindow.addClass('open');
-            $('html, body').css("overflow", "hidden");
-        });
-        $('.show_pop01').click(function () {
-            setpay_edt01.addClass('open');
-            $('html, body').css("overflow", "hidden");
-        });
-        $('.show_pop02').click(function () {
-            setpay_edt02.addClass('open');
-            $('html, body').css("overflow", "hidden");
-        });
-        $('.show_pop02_1').click(function () {
-            setpay_edt02_1.addClass('open');
-            $('html, body').css("overflow", "hidden");
-        });
-        $('.show_pop02_2').click(function () {
-            setpay_edt02_2.addClass('open');
-            $('html, body').css("overflow", "hidden");
-        });
-        $('.show_pop03').click(function () {
-            setWindow.removeClass('open');
-            setcatch_edt01.addClass('open');
-            $('html, body').css("overflow", "hidden");
-        });
-        $('.show_pop04').click(function () {
-            setWindow.removeClass('open');
-            setcatch_edt02.addClass('open');
-            $('html, body').css("overflow", "hidden");
-        });
-        $('.show_pop05').click(function () {
-            setWindow.removeClass('open');
-            setcatch_edt03.addClass('open');
-            $('html, body').css("overflow", "hidden");
-        });
-        $('.show_pop05_2').click(function () {
-            setWindow.removeClass('open');
-            setcatch_edt03_2.addClass('open');
-            $('html, body').css("overflow", "hidden");
-        });
-        $('.show_pop05_3').click(function () {
-            setWindow.removeClass('open');
-            setcatch_edt03_3.addClass('open');
-            $('html, body').css("overflow", "hidden");
-        });
-        $('.age_pop01').click(function () {
-            setterms_01.addClass('open');
-            $('html, body').css("overflow", "hidden");
-        });
-        $('.age_pop02').click(function () {
-            setterms_02.addClass('open');
-            $('html, body').css("overflow", "hidden");
-        });
-        $('.age_pop03').click(function () {
-            setterms_03.addClass('open');
-            $('html, body').css("overflow", "hidden");
-        });
-    })
-</script>
 
 </html>

@@ -19744,7 +19744,7 @@ table.tableRanking td {
 	// padding-bottom: 10px;
 	line-height: 1.4;
 	.pay_cacl {
-		cursor: pointer;		
+		// cursor: pointer;		
 		display: inline-block;
 		color: #f2333a;
 		position: relative;
@@ -20071,24 +20071,26 @@ table.tableRanking td {
 }
 
 .globalStock .pay_edt .form_table .label_chk {
+	cursor: pointer;	
 	color: #333;
 	font-size: 0.82rem;
 	margin-top: 15px;
 }
 
-.globalStock .pay_edt .form_table .label_chk i {
+.globalStock .pay_edt .form_table .label_chk i {	
 	display: inline-block;
 	vertical-align: top;
 	position: relative;
 	top: -2px;
 	width: 16px;
-	height: 16px;
-	background: url('/img/icon_agreecheck.png') no-repeat 0 100%;
+	height: 16px;	
 	margin-right: 7px;
+	background: url('/img/icon_agreecheck.svg') no-repeat 0 100%;
+    filter: grayscale(100%) opacity(30%);	
 }
 
 .globalStock .pay_edt .form_table .label_chk.active i {
-	background-position: 0 0;
+	filter: grayscale(0%) opacity(100%);
 }
 
 .globalStock .pay_edt .btnArea.edtBtn {
