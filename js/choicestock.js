@@ -1390,7 +1390,7 @@ $(document).ready(function () {
             return;
         } else {
             $('.modal').hide().removeClass('slideUp');
-            $('.signal_pop01').next('.blocker').show();
+            $('.blocker').show();
             $('.signal_pop01').show().addClass('slideUp');
         }        
     });
