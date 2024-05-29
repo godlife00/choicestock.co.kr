@@ -1197,11 +1197,9 @@
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <div class="video_box">
-                                    <a href="stock/research_video_view.html">
-                                        <img class="video_thumbnail"
-                                            src="https://hero.datahero.co.kr/webdata/attach_data/vod_mjm/2022/02/0e924189cf8fdd0c0bc6d0fbd4e531ff.png"
-                                            style="display: inline;">
-                                        <p class="video_title">테슬라 S&amp;P 500 편입, 코스트코 특별배당, 버크셔해서웨이 최고가</p>
+                                    <a href="/stock/vod_view/818">
+                                        <img class="video_thumbnail" src="https://hero.datahero.co.kr/webdata/attach_data/vod_mjm/2024/05/27fa3c66764fc97d796981287d5d7400.png" style="display: block;">
+                                        <p class="video_title"><span>[루키스탁] 요즘&nbsp;핫플&nbsp;맛집에서는&nbsp;어떤&nbsp;포스기&nbsp;쓸까?&nbsp;사장님들이&nbsp;좋아하는&nbsp;포스기는?&nbsp;-&nbsp;토스트(TOST)</span></p>
                                     </a>
                                 </div>
                             </div>
@@ -1239,8 +1237,23 @@
                         </div>
                     </div>
                     <!-- mijumiSwiper -->
+                    <!-- <script>
+                        // 페이지 로드시 실행 동영상 제목에 html 태그가 포함되어있다면 제거
+                        $(document).ready(function() {
+                            function removeHTMLTags(htmlString) {
+                                return $('<div>').html(htmlString).text();
+                            }
+                            // 
+                            $('.video_box .video_title').each(function() {
+                                let htmlString = $(this).html();
+                                let cleanString = removeHTMLTags(htmlString);
+                                $(this).text(cleanString);
+                            });
+                        });
+                    </script> -->
                 </div>
                 <!-- //youtube_mijumi -->
+                
 
                 <!-- 종목노트, 탐구생활, 주요뉴스 -->
                 <div class="main_mid note_area">
