@@ -408,6 +408,13 @@ $(document).ready(function () {
         var tabId = $(this).attr('data-tab');
         $('#' + tabId).fadeIn();
     });
+    $('.modal .pop_con .signal_filter span').click(function () {
+        // 선택한 탭 버튼에 'active' 클래스 추가
+        $(this).addClass('active');
+        
+        // 다른 탭 버튼에서 'active' 클래스 제거
+        $('.modal .pop_con .signal_filter span').not(this).removeClass('active');
+    });
     //포트폴리오 제외종목 마이나스 보여주기    
     $('.globalStock .sub_mid .btn_more.show_table').on('click', function () {
         if ($(this).hasClass("show")) {
@@ -664,20 +671,68 @@ $(document).ready(function () {
         });
     });
 
-    //메인 상단
-    var attentionSwiper = new Swiper('.attentionSwiper', {
-        autoplay: {
-            delay: 3500,
-            disableOnInteraction: false,
-        },        
-        spaceBetween: 15,
-        loop: true,        
-    });
+    //메인 상단 관심종목
+    if ($('.maingdowSwiper').length) {
+        var attentionSwiper = new Swiper('.attentionSwiper', {
+            // autoplay: {
+            //     delay: 3000,
+            //     disableOnInteraction: false,
+            // },        
+            speed: 300,
+            spaceBetween: 15,
+            loop: true,      
+            pagination: {
+                el: '.swiper-pagination',
+            },  
+        });
+    }   
+
+    //메인 다우선물,다우지수
+    if ($('.maingdowSwiper').length) {
+        var swiper = new Swiper('.maingdowSwiper', {                    
+            loop: true,              
+            spaceBetween: 15,
+            slidesPerView: 4.5,
+            slidesPerGroup: 1,
+            loopAdditionalSlides: 1, // 슬라이드 복제를 위한 추가 슬라이드 수
+            autoplay: {            
+                delay: 0,
+                disableOnInteraction: false,
+            },            
+            speed: 3000,
+            grabCursor: true,
+            mousewheelControl: true,
+            keyboardControl: true,   
+            // allowTouchMove: false,        
+            
+            breakpoints: {                
+                359: {
+                    slidesPerView: 1.5,
+                },                
+                360: {
+                    slidesPerView: 2.3,                    
+                },                
+                425: {
+                    slidesPerView: 2.3,                    
+                },                
+                680: {
+                    slidesPerView: 2.3,                    
+                },                
+                1024: {
+                    slidesPerView: 3.3,                    
+                },                
+                1440: {
+                    slidesPerView: 4.3,                    
+                }
+            },            
+        });
+        
+    }
 
     //메인 상단
     // 0 또는 1 중에서 랜덤하게 선택
     var randomStartSlide = Math.floor(Math.random() * 2);
-    var attentionSwiper = new Swiper('.banner_event_swiper', {
+    var banner_event_swiper = new Swiper('.banner_event_swiper', {
         autoplay: {
             delay: 3000,
             disableOnInteraction: false,
@@ -687,28 +742,35 @@ $(document).ready(function () {
     });
 
     //메인 주식에 미치다
-    var mijumiSwiper = new Swiper('.mijumiSwiper', {
-        slidesPerView: 2,
-        slidesPerGroup: 2,
-        loopAdditionalSlides: 1,
-        spaceBetween: 10,
-    });
-
-    var event_anaySwiper = new Swiper('.event_anaySwiper', {
-        slidesPerView: 1.4,
-        slidesPerGroup: 1,
-        loopAdditionalSlides: 1,
-        spaceBetween: 10,
-        centeredSlides: true,
-        loop: true,
-        loopFillGroupWithBlank: true,
-    });
+    if ($('.mijumiSwiper').length) {
+        var mijumiSwiper = new Swiper('.mijumiSwiper', {
+            slidesPerView: 2,
+            slidesPerGroup: 2,
+            loopAdditionalSlides: 1,
+            spaceBetween: 10,
+        });        
+    }
+    if ($('.event_anaySwiper').length) {
+        var event_anaySwiper = new Swiper('.event_anaySwiper', {
+            slidesPerView: 1.4,
+            slidesPerGroup: 1,
+            loopAdditionalSlides: 1,
+            spaceBetween: 10,
+            centeredSlides: true,
+            loop: true,
+            loopFillGroupWithBlank: true,
+        });
+    }
+    
 
     //메인 승부주
-    var maingameSwiper = new Swiper('.maingameSwiper', {
-        slidesPerView: "auto",
-        spaceBetween: 8,
-    });
+    if ($('.maingameSwiper').length) {
+        var maingameSwiper = new Swiper('.maingameSwiper', {
+            slidesPerView: "auto",
+            spaceBetween: 8,
+        });
+    }
+    
 
     var catchSwiper = new Swiper('.catchSwiper, .catchSwiper2', {
         slidesPerView: 2.2,
@@ -725,17 +787,20 @@ $(document).ready(function () {
         spaceBetween: 10,
         loop: true,
     });
-
-    //메인 상단 모닝브리핑
-    var mainbriefingSwiper = new Swiper('.mainbriefingSwiper', {
-        autoplay: {
-            delay: 3000,
-            disableOnInteraction: false,
-        },
-        direction: 'vertical',
-        loop: true,
-        allowTouchMove: false, // 이 줄을 추가하여 터치 이동을 방지
-    });
+    
+    // 메인 상단 모닝브리핑
+    if (document.querySelector('.mainbriefingSwiper')) {
+        var mainbriefingSwiper = new Swiper('.swiper-container.mainbriefingSwiper', {
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            direction: 'vertical',
+            loop: true,
+            allowTouchMove: false, // 이 줄을 추가하여 터치 이동을 방지
+        });
+    }
+    
 
     //메인 하단 레시피
     var mainrecipeSwiper = new Swiper('.mainrecipeSwiper', {
@@ -1540,6 +1605,37 @@ $(document).ready(function () {
             'height': 0
         });
         // return false;
+    });
+
+    // 개요 캔들차트 3개월 6개월 1년 3년 10년 탭 선택 스크립트
+    var tabList = document.querySelectorAll('.period_tabs > li');
+    var chartList = document.querySelectorAll('.BICchart_style');
+    for (let i = 0; i < tabList.length; i++) {
+        var tab = tabList[i];
+        var chart = chartList[i];
+
+        tab.addEventListener('click', function () {
+            // 모든 차트 숨기기
+            for (var c of chartList) {
+                c.style.display = 'none';
+            }
+
+            // 클릭한 탭과 연관된 차트 보이기
+            var target = this.getAttribute('data-target');
+            var targetChart = document.querySelector(target);
+            targetChart.style.display = 'block';
+
+            // 차트 다시 그리기
+            var chartObj = Highcharts.charts.find(chart => chart.renderTo.id === targetChart.id);
+            chartObj.reflow();
+        });
+    }
+    $('.mainBox.outline .chart_box .period_tabs li').click(function () {
+        // 선택한 탭 버튼에 'active' 클래스 추가
+        $(this).addClass('active');
+        
+        // 다른 탭 버튼에서 'active' 클래스 제거
+        $('.mainBox.outline .chart_box .period_tabs li').not(this).removeClass('active');
     });
 
     // 메인페이지 2024 신년이벤트 배너

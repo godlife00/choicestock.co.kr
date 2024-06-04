@@ -329,6 +329,39 @@
 		color: #303FAF;
 	}
 }
+.v_signalStreng.globalStock #wrap .modal.signal_pop01 .pop_con .signal_filter {	
+	display: flex;
+	justify-content: flex-end;
+	gap: 0 6px;
+	span {
+		cursor: pointer;
+		position: relative;
+		padding: 1px 3px;
+		font-size: 0.8125rem;
+		line-height: 1.43;
+		letter-spacing: normal;
+		color: #939393;
+		&.active {
+			font-weight: bold;
+			color: #404fc3;
+		}
+		&::after {
+			content: '';
+			position: absolute;			
+			top: 5px;
+			display: inline-block;			
+			margin-left: 6px;
+			width: 1px;
+			height: 12px;
+			background-color: #BEBCCB;
+		}
+		&:last-child {
+			&::after {
+				display: none;				
+			}
+		}
+	}	
+}
 
 .v_signalStreng.globalStock #wrap .modal.signal_pop01 .pop_con .trading_signal {
 	display: flex;
