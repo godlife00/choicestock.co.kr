@@ -124,23 +124,7 @@
                     <tbody>
                         <tr>
                             <th class="">
-                                <span class="txt_guide"><img src="../img/txt_guide_us.svg" alt="가이드보기"></span>
-                                <!-- 투자의견, 투자매력 가이드 레이어 -->
-                                <div class="guide_box">
-                                    <span class="clse">닫기</span>
-                                    <p class="txt"><strong>투자매력 점수</strong>는 해당 종목의 우량주 여부를 판단하는데 도움을 드립니다.</p>
-                                    <p class="txt">10년 이상의 금융 빅데이터에서 우량주 발굴을 위해 22개 요인(Factor)을 종목별로 분석하고, 동종업종내 경쟁사와
-                                        비교합니다.</p>
-                                    <ul>
-                                        <li class="list_txt">투자매력 점수는 높을수록 매력적인 기업이며, 65점(상위 20%) 이상이면 우량 기업으로 판단합니다.
-                                        </li>
-                                        <li class="list_txt">투자매력 세부 항목인 독점력, 수익성, 안전성, 현금창출력으로 별점(★) 5점 만점에 3점 이상이면 각
-                                            항목을 통과한 것으로 판단합니다.</li>
-                                        <li class="list_txt">세부 항목 평가에서 별점 0~1점을 받았다면 위험 요인으로, 투자 판단시 유의해서 봐야 합니다.</li>
-                                        <li class="list_txt">우량주 여부를 판단한 후에는 적정주가로 저평가 여부를 확인하세요.</li>
-                                    </ul>
-                                </div>
-                                <!-- //guide_box -->
+                                <span class="txt_guide"><img src="../img/txt_guide_us.svg" alt="가이드보기"></span>                                
                             </th>
                             <th class="">종합</th>
                             <th class="">미래<br>성장성</th>
@@ -383,102 +367,64 @@
             <!-- //notice -->
         </div>
         <!-- //footer -->
+
+        <div class="modalBox">
+            <!-- 툴팁 - 투자매력 점수 -->
+            <div class="modal tooltip_pop tooltip_pop03">
+                <div class="pop_header">
+                    <h1 class="pop_title">투자매력 점수</h1>
+                    <span class="clse">
+                        <!--닫기-->
+                    </span>
+                </div>
+                <div class="pop_con">
+                    <p class="sum_txt"><strong>스마트 스코어</strong>는 해당 종목의 우량주 여부를 판단하는데 도움을 드립니다.</p>
+                    <p class="sum_txt">20년 이상의 금융 빅데이터에서 우량주 발굴을 위해 22개 요인(Factor)을 종목별로 분석하고, 동종업종내 경쟁사와 비교합니다.</p>
+                    <p class="txt">스마트 스코어는 높을수록 매력적인 기업이며, 65점(상위 20%) 이상이면 우량 기업으로 판단합니다.</p>
+                    <p class="txt">스마트 스코어 세부 항목인 독점력, 수익성, 안전성, 현금창출력, 미래성장성은 60점(별점(★) 3점) 이상이면 각 항목을 통과한 것으로 판단합니다.</p>
+                    <p class="txt">세부 항목 평가에서 0~20점(별점 0~1점)을 받았다면 위험 요인으로, 투자 판단시 유의해서 봐야 합니다.</p>
+                    <p class="txt">우량주 여부를 판단한 후에는 밸류에이션으로 저평가 여부를 확인하세요.</p>
+
+                </div>
+            </div>
+
+            <div class="blocker"></div>
+        </div>
+
     </div>
     <!-- //wrap -->
 
-    <!-- Modal popup -->
-    <!-- 전종목 투자매력도 -->
-    <div class="md-modal md-effect-3" id="modal-3">
-        <div class="md-content">
-            <div id="setting" class="setting_area">
-                <div class="pop_header">
-                    <a href="#setting_anchor" title="로그인 레이어 닫기" class="close"><img src="../img/clse.png"
-                            alt="팝업닫기"></a>
-                    <h1 class="pop_title">정렬</h1>
-                </div>
-                <!-- //pop_header -->
-                <div class="pop_con">
-                    <form action="" method="post">
-                        <table cellspacing="0" border="1" class="tableRanking attract_table">
-                            <colgroup>
-                                <col width="65%">
-                                <col width="">
-                            </colgroup>
-                            <tbody>
-                                <tr>
-                                    <th><span>시가총액</span></th>
-                                    <th><span>순이익(연환산)</span></th>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <input name="amount" type="radio" id="amount1" value="" checked="checked"
-                                            class="input_radio">
-                                        <label for="amount1">전체</label>
-                                    </td>
-                                    <td>
-                                        <input name="profit" type="radio" id="profit1" value="" checked="checked"
-                                            class="input_radio">
-                                        <label for="profit1">전체</label>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <input name="amount" type="radio" id="amount2" value="" class="input_radio">
-                                        <label for="amount2">3억달러 미만</label>
-                                    </td>
-                                    <td>
-                                        <input name="profit" type="radio" id="profit2" value="" class="input_radio">
-                                        <label for="profit2">흑자기업</label>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <input name="amount" type="radio" id="amount3" value="" class="input_radio">
-                                        <label for="amount3">3억달러 ~ 20억달러 미만</label>
-                                    </td>
-                                    <td>
-                                        <input name="profit" type="radio" id="profit3" value="" class="input_radio">
-                                        <label for="profit3">적자기업</label>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td colspan="2">
-                                        <input name="amount" type="radio" id="amount4" value="" class="input_radio">
-                                        <label for="amount4">20억달러~100억달러 미만</label>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td colspan="2">
-                                        <input name="amount" type="radio" id="amount5" value="" class="input_radio">
-                                        <label for="amount5">100억달러 이상</label>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
+</body>
 
-                        <div class="pop_footer">
-                            <span class="title">정렬</span>
-                            <ul class="sort">
-                                <li><a href="#">종합</a></li>
-                                <li><a href="#">미래<br>성장성</a></li>
-                                <li class="active"><a href="#">사업<br>독점력</a></li>
-                                <li><a href="#">재무<br>안전성</a></li>
-                                <li><a href="#">수익성</a></li>
-                                <li><a href="#">현금<br>창출력</a></li>
-                            </ul>
-                            <div class="btnArea edtBtn">
-                                <a href="#" class="btn btn_save">확인</a>
-                            </div>
-                        </div>
-                    </form>
+<!-- Modal popup -->
+<!-- 프리미엄 첫 달 1,000원! -->
+<div class="first_month_3300 md-modal md-effect-3" id="modal-3">
+    <!-- class : md-show 가 없는 경우 팝업 숨김, md-show 있는 경우 팝업 노출  -->
+    <div class="md-content">
+        <div id="setting" class="setting_area">
+            <div class="pop_header">
+                <a href="#setting_anchor" title="로그인 레이어 닫기" class="close"><img src="../img/clse_w.png" alt="팝업닫기"></a>
+                <div class="sub_top">
+                    <h2 class="h2_title">AI가 알려주는 투자타이밍!</h2>
+                    <p class="period">초이스스탁US 프리미엄</p>
+                </div>
+            </div>
+            <!-- //pop_header -->
+            <div class="pop_con">
+                <ul>
+                    <li><span class="num">1</span>지금살까? 특허받은 전종목 <b>매매신호</b></li>
+                    <li><span class="num">2</span>매수부터 매도까지! <b>종목추천</b></li>
+                    <li><span class="num">3</span>투자매력과 적정주가를 한눈에 <b>종목진단</b></li>
+                </ul>
+            </div>
+            <div class="pop_btm">
+                <div class="btnArea payBtn">
+                    <!-- <a href="login_complete.html" class="btn btn_save"><b>프리미엄</b> 가입하기<i></i></a> -->
+                    <a href="stock/service_prm.html" class="btn btn_save">프리미엄 <b>첫 달 1,000원!</b></a>
                 </div>
             </div>
         </div>
     </div>
-    <div class="md-overlay"></div><!-- the overlay element -->
-
-
-
-</body>
-
+</div>
+<div class="md-overlay"></div><!-- the overlay element -->
 </html>

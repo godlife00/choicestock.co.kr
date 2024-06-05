@@ -1471,6 +1471,37 @@ $(document).ready(function () {
         }        
     });
 
+    // 툴팁 - 지금살까?
+    $('#container .mainBox.attr .adequateArea .listWrap .mid .charm_num .signal_guide').on('click', function () {
+        if ($(this).hasClass('no_signal')) {            
+            return;
+        } else {
+            $('.modal').hide().removeClass('slideUp');
+            $('.blocker').show();
+            $('.tooltip_pop01').show().addClass('slideUp');
+        }        
+    });
+    // 툴팁 - 종목검색 경쟁사
+    $('.globalStock .sub_search .sub_mid.competitors_table .title_guide').on('click', function () {
+        if ($(this).hasClass('no_signal')) {            
+            return;
+        } else {
+            $('.modal').hide().removeClass('slideUp');
+            $('.blocker').show();
+            $('.tooltip_pop02').show().addClass('slideUp');
+        }        
+    });
+    // 툴팁 - 종목검색 경쟁사
+    $('.globalStock .sub_attract .sub_mid.attract_sub .attract_table .txt_guide').on('click', function () {
+        if ($(this).hasClass('no_signal')) {            
+            return;
+        } else {
+            $('.modal').hide().removeClass('slideUp');
+            $('.blocker').show();
+            $('.tooltip_pop03').show().addClass('slideUp');
+        }        
+    });
+
     // 매매신호 플로팅 배너 열기, 닫기 스크립트
     // 스크롤 이벤트를 감지하여 처리    
     function scrollsignalpop() {        

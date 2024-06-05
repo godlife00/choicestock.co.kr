@@ -33816,6 +33816,86 @@ body.v_signalStreng {
   height: 2px;
 }
 
+.modalBox .modal.tooltip_pop .pop_header {
+  background-color: #fff;
+  padding: 24px 15px;
+  border: none;
+}
+.modalBox .modal.tooltip_pop .pop_header .pop_title {
+  justify-content: center;
+  font-size: 1.25rem;
+  line-height: 1.14;
+  font-weight: bold;
+  color: #333;
+  box-sizing: border-box;
+}
+.modalBox .modal.tooltip_pop .pop_header .clse::before,
+.modalBox .modal.tooltip_pop .pop_header .clse::after {
+  width: 2px;
+  background-color: #333;
+}
+.modalBox .modal.tooltip_pop .pop_con {
+  padding: 0 16px 25px;
+}
+.modalBox .modal.tooltip_pop .pop_con .txt {
+  display: block;
+  padding-bottom: 7px;
+  font-size: 15px;
+  line-height: 1.62;
+  color: #656d7e;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+.modalBox .modal.tooltip_pop.btm {
+  margin: 0 auto;
+  width: 100%;
+  top: auto;
+  bottom: 0;
+  border-radius: 0;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: auto;
+}
+.modalBox .modal.tooltip_pop.btm .pop_header {
+  border-bottom: none;
+}
+.modalBox .modal.tooltip_pop03 {
+  top: 15%;
+}
+.modalBox .modal.tooltip_pop03 .pop_con .sum_txt {
+  font-size: 0.9375rem;
+  line-height: 1.43;
+  color: #6A727B;
+  letter-spacing: normal;
+  padding-bottom: 7px;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+.modalBox .modal.tooltip_pop03 .pop_con .txt {
+  position: relative;
+  font-size: 0.9375rem;
+  line-height: 1.43;
+  color: #656d7e;
+  letter-spacing: normal;
+  padding-left: 9px;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+.modalBox .modal.tooltip_pop03 .pop_con .txt::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 9px;
+  background-color: #898989;
+  width: 2px;
+  height: 2px;
+}
+
 /* 미주미초이스 프리미엄 첫달 3,000원 */
 .globalStock .first_month_3300.md-modal #setting {
   padding: 0;
