@@ -1759,5 +1759,27 @@ $(document).ready(function () {
         window.onresize = adjustHeight;
         // EPS 툴팁 팝업 높이 조절 스크립트 종료
     }
+    
+    // 매매신호 수익,전체 탭 보여주는 스크립트
+    if ($('.signal_filter').length) {        
+        const profitTab = document.getElementById("profit-tab");
+        const allTab = document.getElementById("all-tab");
+        const profitSignal = document.getElementById("profit-signal");
+        const allSignal = document.getElementById("all-signal");
+
+        profitTab.addEventListener("click", function() {
+            profitTab.classList.add("active");
+            allTab.classList.remove("active");
+            profitSignal.style.display = "flex";
+            allSignal.style.display = "none";
+        });
+
+        allTab.addEventListener("click", function() {
+            allTab.classList.add("active");
+            profitTab.classList.remove("active");
+            allSignal.style.display = "flex";
+            profitSignal.style.display = "none";
+        });
+    }    
 
 });

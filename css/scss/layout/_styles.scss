@@ -2614,49 +2614,49 @@ table.tableRanking td {
 	background: #f7f8f9;
 }
 
-.globalStock .main_mid.attention_area .one_step {
+.globalStock .main_mid.attention_area .one_step,
+.globalStock .main_mid.event_recipe .one_step {	
 	width: calc(100% - 30px);
 	padding: 0 5px;
 	box-sizing: border-box;
 	margin: 17px auto 0;
 	display: flex;
 	justify-content: space-between;
+	.txt {
+		color: #333;
+		font-size: 0.875rem;
+		text-align: center;
+		line-height: normal;
+		vertical-align: top;
+		padding: 0 10px;
+	}
+	.more {
+		display: inline-block;
+		border-radius: 3px;
+		background-color: #404fc3;
+		text-align: center;
+		height: 25px;
+		padding: 0 7px;
+		padding-right: 20px;
+		position: relative;
+	}
+	.more span {
+		color: #fff;
+		font-size: 0.75rem;
+		line-height: 25px;
+		vertical-align: top;
+	}
+	.more img {
+		position: absolute;
+		right: 6px;
+		top: 8px;
+		width: 6px;
+		height: 10px;
+		display: inline-block;
+	}
 }
-
-.globalStock .main_mid.attention_area .one_step .txt {
-	color: #333;
-	font-size: 0.875rem;
-	text-align: center;
-	line-height: normal;
-	vertical-align: top;
-	padding: 0 10px;
-}
-
-.globalStock .main_mid.attention_area .one_step .more {
-	display: inline-block;
-	border-radius: 3px;
-	background-color: #404fc3;
-	text-align: center;
-	height: 25px;
-	padding: 0 7px;
-	padding-right: 20px;
-	position: relative;
-}
-
-.globalStock .main_mid.attention_area .one_step .more span {
-	color: #fff;
-	font-size: 0.75rem;
-	line-height: 25px;
-	vertical-align: top;
-}
-
-.globalStock .main_mid.attention_area .one_step .more img {
-	position: absolute;
-	right: 6px;
-	top: 8px;
-	width: 6px;
-	height: 10px;
-	display: inline-block;
+.globalStock .main_mid.event_recipe .one_step {
+	margin-top: 25px;
 }
 
 .globalStock .ptfo_datatable+.one_step {
@@ -2711,6 +2711,7 @@ table.tableRanking td {
 }
 
 .globalStock .main_mid.event_recipe .tabsArea {
+	overflow: hidden;
 	position: relative;
 }
 
@@ -3080,7 +3081,12 @@ table.tableRanking td {
 		width: 82px;
 	}
 }
-.globalStock .main_mid.event_recipe .tab_content#tab1 {			
+.globalStock .main_mid.event_recipe .tab_content#tab1 {				
+	.tableth_box table.tableRanking tr:last-child {
+		.title.t_short {
+			padding-bottom: 17px;
+		}		
+	}
 	.tableth_box table.tableRanking .title.t_short a {
 		width: 140px;		
 	}

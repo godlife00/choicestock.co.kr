@@ -616,11 +616,48 @@
                     <!-- <p class="txt">- 최근 매매신호의 예상수익률은 <b class="decrease">-84.56%</b>입니다.</p> -->
                     <p class="txt">- 최근 매매신호</p>
                     <div class="signal_filter">
-                        <span class="active">수익</span>
-                        <span>전체</span>
+                        <span class="active" id="profit-tab">수익</span>
+                        <span id="all-tab">전체</span>
                     </div>
                     <!-- //signal_filter -->
-                    <div class="trading_signal">
+
+                    <div class="trading_signal" id="profit-signal">
+                        <ul class="list">
+                            <li class="day">***.**</li>
+                            <li class="trends">
+                                <span class="ibox str">매수</span>
+                            </li>
+                            <li class="signal">***.**</li>
+                            <li class="exp_signal increase">23.34% <span>(예상)</span></li>
+                        </ul>                        
+                        <ul class="list">
+                            <li class="day">23.07.23</li>
+                            <li class="trends">
+                                <span class="ibox str">매수</span>
+                            </li>
+                            <li class="signal">272.34</li>
+                            <li class="exp_signal">-</li>
+                        </ul>
+                        <ul class="list">
+                            <li class="day">23.07.23</li>
+                            <li class="trends">
+                                <span class="ibox str">매수</span>
+                            </li>
+                            <li class="signal">272.34</li>
+                            <li class="exp_signal">-</li>
+                        </ul>
+                        <ul class="list">
+                            <li class="day">23.07.23</li>
+                            <li class="trends">
+                                <span class="ibox str">매수</span>
+                            </li>
+                            <li class="signal">272.34</li>
+                            <li class="exp_signal">-</li>
+                        </ul>
+                    </div>
+                    <!-- //trading_signal -->
+                        
+                    <div class="trading_signal" id="all-signal" style="display:none;">
                         <ul class="list">
                             <li class="day">***.**</li>
                             <li class="trends">
@@ -687,6 +724,7 @@
                         </ul>
                     </div>
                     <!-- //trading_signal -->
+                    
                 </div>
             </div>
 
