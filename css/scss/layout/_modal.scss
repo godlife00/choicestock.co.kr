@@ -371,6 +371,22 @@
 	margin-top: 8px;
 	border-radius: 16px;
 	background-color: #f7f8f9;
+	.no_data {
+		display: block;
+		padding: 15px 15px;
+		width: calc(100% - 20px);
+		box-sizing: border-box;
+		border-radius: 12px;
+		font-size: 0.875rem;	
+		font-weight: bold;	
+		letter-spacing: normal;
+		color: #333;
+		border-bottom: none;
+		text-align: center;		
+	}
+	&#all-signal {
+		display: none;
+	}
 }
 
 .v_signalStreng.globalStock #wrap .modal.signal_pop01 .pop_con .trading_signal .list {

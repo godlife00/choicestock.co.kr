@@ -1445,7 +1445,7 @@ $(document).ready(function () {
         } else {
             $('body').css('overflow', 'hidden');
             $('.modal').hide().removeClass('slideUp');
-            $('.eps_pop01').next('.blocker').show();
+            $('.blocker').show();
             $('.eps_pop01').show().addClass('slideUp');
         }        
     });

@@ -18519,6 +18519,60 @@ table.tableRanking td {
   word-wrap: break-word;
 }
 
+.globalStock .alarmArea .alarmList li .group {
+  width: calc(100% - 30px);
+  margin: 10px auto 0;
+  padding: 0 15px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  background-color: #f7f8f9;
+}
+.globalStock .alarmArea .alarmList li .group li {
+  display: flex;
+  align-items: baseline;
+  gap: 5px;
+  padding: 11px 0;
+  padding-left: 22px;
+  box-sizing: border-box;
+  font-size: 0.875rem;
+  font-weight: normal;
+  letter-spacing: -0.35px;
+  line-height: 1.42;
+  color: #333;
+  word-break: break-all;
+  border-bottom: 1px solid #E0E4E9;
+}
+.globalStock .alarmArea .alarmList li .group li:last-of-type {
+  border-bottom: none;
+}
+.globalStock .alarmArea .alarmList li .group li.buy {
+  background: url("/img/group_buy.svg") no-repeat 2px 16px;
+}
+.globalStock .alarmArea .alarmList li .group li.sell {
+  background: url("/img/group_sell.svg") no-repeat 2px 16px;
+}
+.globalStock .alarmArea .alarmList li .group li b {
+  position: relative;
+  font-weight: bold;
+  font-size: 0.9375rem;
+  color: #333;
+  padding-right: 12px;
+}
+.globalStock .alarmArea .alarmList li .group li b::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  top: 7px;
+  width: 7px;
+  height: 1px;
+  background-color: #333;
+}
+.globalStock .alarmArea .alarmList li .group li a {
+  display: contents;
+  cursor: pointer;
+}
+
 .globalStock .alarmArea .alarmList li span.sum span {
   color: #939393;
 }
@@ -30901,7 +30955,7 @@ body.v_signalStreng {
   align-items: center;
   gap: 0 12px;
   border-bottom: 1px solid #F5F5F5;
-  padding: 5px 16px 10px;
+  padding: 5px 0 10px;
   margin-bottom: 30px;
 }
 .v_signalStreng.globalStock #wrap #container .mainBox.financials .chart_box .chart_capture {
@@ -32861,6 +32915,22 @@ body.v_signalStreng {
   margin-top: 8px;
   border-radius: 16px;
   background-color: #f7f8f9;
+}
+.v_signalStreng.globalStock #wrap .modal.signal_pop01 .pop_con .trading_signal .no_data {
+  display: block;
+  padding: 15px 15px;
+  width: calc(100% - 20px);
+  box-sizing: border-box;
+  border-radius: 12px;
+  font-size: 0.875rem;
+  font-weight: bold;
+  letter-spacing: normal;
+  color: #333;
+  border-bottom: none;
+  text-align: center;
+}
+.v_signalStreng.globalStock #wrap .modal.signal_pop01 .pop_con .trading_signal#all-signal {
+  display: none;
 }
 
 .v_signalStreng.globalStock #wrap .modal.signal_pop01 .pop_con .trading_signal .list {
