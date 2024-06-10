@@ -16072,7 +16072,7 @@ table.tableRanking td {
 
 .globalStock .sub_recipe .sub_top .txt_box .txt {
 	color: #939393;
-	font-size: 0.9375rem;
+	// font-size: 0.9375rem;
 	line-height: 20px;
 }
 
@@ -18340,74 +18340,81 @@ table.tableRanking td {
 	display: block;
 	border-bottom: 1px solid #e2e2e2;
 }
+.globalStock .alarmArea .alarmList li {	
+	padding: 13px 15px;		
+	> a {
+		display: block;		
+	}
+	span.title {
+		display: inline-block;
+		width: calc(100% - 100px);
+		font-size: 0.75rem;
+		font-weight: 300;
+		line-height: 14px;
+		color: #939393;
+	}
+	
+	span.title i {
+		display: inline-block;
+		width: 14px;
+		height: 14px;
+		margin-right: 6px;
+		vertical-align: top;
+	}
+	
+	span.title i.note {
+		background-image: url('/img/icon_list_note.svg');
+	}
+	
+	span.title i.recom {
+		background-image: url('/img/icon_list_recom.svg');
+	}
+	
+	span.title i.interest {
+		background-image: url('/img/icon_list_interest.svg');
+	}
+	
+	span.title i.event {
+		background-image: url('/img/icon_list_event.svg');
+	}
+	
+	span.day {
+		color: #939393;
+		display: inline-block;
+		width: 95px;
+		text-align: right;
+		font-size: 0.75rem;
+		font-weight: 300;
+	}
+	
+	span.sum {
+		display: block;		
+		padding-left: 21px;
+		color: #333;
+		display: block;
+		margin-top: 10px;		
+		box-sizing: border-box;
+		line-height: 1.67;
+		font-size: 0.9375rem;
+		font-weight: 400;
+		word-break: break-all;
+		word-wrap: break-word;
+		visibility: hidden;
 
-.globalStock .alarmArea .alarmList li a {
-	display: block;
-	padding: 13px 15px;
-}
-
-.globalStock .alarmArea .alarmList li:first-child a {
-	/* padding-top: 26px; */
-}
-
-.globalStock .alarmArea .alarmList li span.title {
-	display: inline-block;
-	width: calc(100% - 100px);
-	font-size: 0.75rem;
-	font-weight: 300;
-	line-height: 14px;
-	color: #939393;
-}
-
-.globalStock .alarmArea .alarmList li span.title i {
-	display: inline-block;
-	width: 14px;
-	height: 14px;
-	margin-right: 6px;
-	vertical-align: top;
-}
-
-.globalStock .alarmArea .alarmList li span.title i.note {
-	background-image: url('/img/icon_list_note.svg');
-}
-
-.globalStock .alarmArea .alarmList li span.title i.recom {
-	background-image: url('/img/icon_list_recom.svg');
-}
-
-.globalStock .alarmArea .alarmList li span.title i.interest {
-	background-image: url('/img/icon_list_interest.svg');
-}
-
-.globalStock .alarmArea .alarmList li span.title i.event {
-	background-image: url('/img/icon_list_event.svg');
-}
-
-.globalStock .alarmArea .alarmList li span.day {
-	color: #939393;
-	display: inline-block;
-	width: 95px;
-	text-align: right;
-	font-size: 0.75rem;
-	font-weight: 300;
-}
-
-.globalStock .alarmArea .alarmList li span.sum {
-	color: #333;
-	display: block;
-	margin-top: 10px;
-	padding-left: 21px;
-	box-sizing: border-box;
-	line-height: 1.67;
-	font-size: 0.9375rem;
-	font-weight: 400;
-	word-break: break-all;
-	word-wrap: break-word;
-}
-.globalStock .alarmArea .alarmList li {
+		a {			
+			color: #333;						
+			font-size: 0.9375rem;
+			word-break: break-all;
+			word-wrap: break-word;		
+			&.int_link {
+				color: #333;
+				text-decoration: underline;				
+			}
+		}
+	}
 	.group {
-		width: calc(100% - 30px);
-		margin: 10px auto 0;
+		width: calc(100% - 15px);
+		margin: 5px auto 0;
 		padding: 0 15px;
 		box-sizing: border-box;		
 		border-radius: 8px;
@@ -18458,16 +18465,22 @@ table.tableRanking td {
 				}
 			}
 
-			a {
+			a {				
 				display: contents;
 				cursor: pointer;
 			}
 		}
 	}
-}
 
-.globalStock .alarmArea .alarmList li span.sum span {
-	color: #939393;
+	// 읽은 알림 목록 스타일
+	&.read {
+		span.sum {
+			color: #d3d3d3;
+			a {
+				color: #d3d3d3;
+			}
+		}		
+	}
 }
 
 /* 설정 */
@@ -24977,6 +24990,10 @@ table.tableRanking td {
 	color: #939393;
 	font-size: 0.9rem;
 	line-height: 1.43;
+	.port_time {
+		color: #939393;
+		font-size: 0.8125rem;		
+	}
 }
 
 .globalStock .sub_top .txt_box .txt strong {
@@ -31978,6 +31995,7 @@ body.v_signalStreng {
 }
 .v_signalStreng.globalStock .return_sum {
 	display: flex;
+	flex-wrap: wrap;
 	margin: 15px 16px 35px;
 	padding: 20px 20px;
 	border-radius: 15px;
@@ -32013,7 +32031,27 @@ body.v_signalStreng {
 	font-weight: bold;
 	color: #333;
 }
-
+.v_signalStreng.globalStock .return_sum .year_sum {
+	flex: none;
+	display: block;
+	width: 100%;
+	// border-top: 1px solid #D3D3D3;
+    padding: 18px 5px 0;
+	text-align: center;
+	font-size: 0.8125rem;
+    font-weight: 500;
+    color: #939393;   
+	.increase {
+		font-size: 0.8125rem;
+		padding-left: 3px;
+		color: #FF2929;
+	}
+	.decrease {
+		padding-left: 3px;
+		color: #0062ff;
+	}
+	
+}
 .v_signalStreng.globalStock .sub_recom .bandchart_sume {
 	background: #fff;
 	padding: 16px 14px;
@@ -32130,6 +32168,26 @@ body.v_signalStreng {
 	border-radius: 8px;
 	padding: 14px 15px;
 	box-sizing: border-box;
+	.guide {
+		position: relative;
+		margin-top: 15px;
+		display: block;
+		color: #939393;
+		padding-left: 20px;
+		// text-align: right;
+		font-size: 0.75rem;
+		line-height: 1.43;        
+		word-break: break-all;
+		word-wrap: break-word;
+		&::before {
+			content: "*";
+			position: absolute;
+			left: 10px;
+			top: 2px;
+			display: inline-block;		
+			color: #939393;
+		}
+	}
 }
 
 .v_signalStreng.globalStock .sub_recom .bandchart_sume .box.rule .title {
@@ -32143,10 +32201,22 @@ body.v_signalStreng {
 
 .v_signalStreng.globalStock .sub_recom .bandchart_sume .box.rule .title {
 	color: #014B8D;
+	padding-bottom: 12px;
 }
 
 .v_signalStreng.globalStock .sub_recom .bandchart_sume .box.rule ul {
-	margin-top: 12px;
+	margin-top: 0;
+	b {
+		color: #333;
+	}
+	b.increase {
+		color:#FF2929;
+		font-weight: bold;
+	}
+	b.decrease {
+		color: #0062ff;
+		font-weight: bold;
+	}
 }
 
 .v_signalStreng.globalStock .sub_recom .bandchart_sume .box.rule ul li {

@@ -1501,6 +1501,16 @@ $(document).ready(function () {
             $('.tooltip_pop03').show().addClass('slideUp');
         }        
     });
+    // 종목검색 - 진단
+    $('.globalStock .sub_search .sub_mid.tabs_area .chart_area.diagnosis .chartData .charm .txt_guide').on('click', function () {
+        if ($(this).hasClass('no_signal')) {            
+            return;
+        } else {
+            $('.modal').hide().removeClass('slideUp');
+            $('.blocker').show();
+            $('.tooltip_pop04').show().addClass('slideUp');
+        }        
+    });
 
     // 매매신호 플로팅 배너 열기, 닫기 스크립트
     // 스크롤 이벤트를 감지하여 처리    
@@ -1781,5 +1791,35 @@ $(document).ready(function () {
             profitSignal.style.display = "none";
         });
     }    
+    
+    // 알림 리스트 읽은 글 회색 표시 스크립트
+    if ($('.alarmList').length) {        
+        let readItems = JSON.parse(localStorage.getItem('readItems')) || [];
+
+        // 읽은 글에 read 클래스를 추가 (조건: .interest 클래스가 없는 경우)
+        readItems.forEach(id => {
+            const li = document.querySelector(`li[data-id="${id}"]`);
+            if (li && !li.querySelector('.interest')) {
+                console.log(`Adding 'read' class to li with data-id: ${id}`); // Debugging line
+                li.classList.add('read');
+            } else {
+                // console.log(`No element found with data-id: ${id}`); // Debugging line
+            }
+        });
+    
+        // 글을 클릭했을 때 read 클래스를 추가하고 로컬 스토리지에 저장
+        document.querySelectorAll('.alarmList a').forEach(link => {
+            link.addEventListener('click', function() {
+                const li = this.parentElement;
+                const id = li.getAttribute('data-id');                
+                if (!readItems.includes(id)) {
+                    readItems.push(id);
+                    localStorage.setItem('readItems', JSON.stringify(readItems));
+                    li.classList.add('read');
+                }
+            });
+        });
+        $('.alarmArea .alarmList li  span.sum').css('visibility','visible');        
+    }
 
 });

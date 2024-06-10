@@ -16203,7 +16203,6 @@ table.tableRanking td {
 
 .globalStock .sub_recipe .sub_top .txt_box .txt {
   color: #939393;
-  font-size: 0.9375rem;
   line-height: 20px;
 }
 
@@ -18455,15 +18454,12 @@ table.tableRanking td {
   border-bottom: 1px solid #e2e2e2;
 }
 
-.globalStock .alarmArea .alarmList li a {
-  display: block;
+.globalStock .alarmArea .alarmList li {
   padding: 13px 15px;
 }
-
-.globalStock .alarmArea .alarmList li:first-child a {
-  /* padding-top: 26px; */
+.globalStock .alarmArea .alarmList li > a {
+  display: block;
 }
-
 .globalStock .alarmArea .alarmList li span.title {
   display: inline-block;
   width: calc(100% - 100px);
@@ -18472,7 +18468,6 @@ table.tableRanking td {
   line-height: 14px;
   color: #939393;
 }
-
 .globalStock .alarmArea .alarmList li span.title i {
   display: inline-block;
   width: 14px;
@@ -18480,23 +18475,18 @@ table.tableRanking td {
   margin-right: 6px;
   vertical-align: top;
 }
-
 .globalStock .alarmArea .alarmList li span.title i.note {
   background-image: url("/img/icon_list_note.svg");
 }
-
 .globalStock .alarmArea .alarmList li span.title i.recom {
   background-image: url("/img/icon_list_recom.svg");
 }
-
 .globalStock .alarmArea .alarmList li span.title i.interest {
   background-image: url("/img/icon_list_interest.svg");
 }
-
 .globalStock .alarmArea .alarmList li span.title i.event {
   background-image: url("/img/icon_list_event.svg");
 }
-
 .globalStock .alarmArea .alarmList li span.day {
   color: #939393;
   display: inline-block;
@@ -18505,23 +18495,33 @@ table.tableRanking td {
   font-size: 0.75rem;
   font-weight: 300;
 }
-
 .globalStock .alarmArea .alarmList li span.sum {
+  display: block;
+  padding-left: 21px;
   color: #333;
   display: block;
   margin-top: 10px;
-  padding-left: 21px;
   box-sizing: border-box;
   line-height: 1.67;
   font-size: 0.9375rem;
   font-weight: 400;
   word-break: break-all;
   word-wrap: break-word;
+  visibility: hidden;
 }
-
+.globalStock .alarmArea .alarmList li span.sum a {
+  color: #333;
+  font-size: 0.9375rem;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+.globalStock .alarmArea .alarmList li span.sum a.int_link {
+  color: #333;
+  text-decoration: underline;
+}
 .globalStock .alarmArea .alarmList li .group {
-  width: calc(100% - 30px);
-  margin: 10px auto 0;
+  width: calc(100% - 15px);
+  margin: 5px auto 0;
   padding: 0 15px;
   box-sizing: border-box;
   border-radius: 8px;
@@ -18572,9 +18572,11 @@ table.tableRanking td {
   display: contents;
   cursor: pointer;
 }
-
-.globalStock .alarmArea .alarmList li span.sum span {
-  color: #939393;
+.globalStock .alarmArea .alarmList li.read span.sum {
+  color: #d3d3d3;
+}
+.globalStock .alarmArea .alarmList li.read span.sum a {
+  color: #d3d3d3;
 }
 
 /* 설정 */
@@ -24597,6 +24599,10 @@ table.tableRanking td {
   color: #939393;
   font-size: 0.9rem;
   line-height: 1.43;
+}
+.globalStock .sub_top .txt_box .txt .port_time {
+  color: #939393;
+  font-size: 0.8125rem;
 }
 
 .globalStock .sub_top .txt_box .txt strong {
@@ -31530,6 +31536,7 @@ body.v_signalStreng {
 
 .v_signalStreng.globalStock .return_sum {
   display: flex;
+  flex-wrap: wrap;
   margin: 15px 16px 35px;
   padding: 20px 20px;
   border-radius: 15px;
@@ -31564,6 +31571,26 @@ body.v_signalStreng {
   font-size: 1.25rem;
   font-weight: bold;
   color: #333;
+}
+
+.v_signalStreng.globalStock .return_sum .year_sum {
+  flex: none;
+  display: block;
+  width: 100%;
+  padding: 18px 5px 0;
+  text-align: center;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: #939393;
+}
+.v_signalStreng.globalStock .return_sum .year_sum .increase {
+  font-size: 0.8125rem;
+  padding-left: 3px;
+  color: #FF2929;
+}
+.v_signalStreng.globalStock .return_sum .year_sum .decrease {
+  padding-left: 3px;
+  color: #0062ff;
 }
 
 .v_signalStreng.globalStock .sub_recom .bandchart_sume {
@@ -31683,6 +31710,25 @@ body.v_signalStreng {
   padding: 14px 15px;
   box-sizing: border-box;
 }
+.v_signalStreng.globalStock .sub_recom .bandchart_sume .box.rule .guide {
+  position: relative;
+  margin-top: 15px;
+  display: block;
+  color: #939393;
+  padding-left: 20px;
+  font-size: 0.75rem;
+  line-height: 1.43;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+.v_signalStreng.globalStock .sub_recom .bandchart_sume .box.rule .guide::before {
+  content: "*";
+  position: absolute;
+  left: 10px;
+  top: 2px;
+  display: inline-block;
+  color: #939393;
+}
 
 .v_signalStreng.globalStock .sub_recom .bandchart_sume .box.rule .title {
   font-size: 14px;
@@ -31695,10 +31741,22 @@ body.v_signalStreng {
 
 .v_signalStreng.globalStock .sub_recom .bandchart_sume .box.rule .title {
   color: #014B8D;
+  padding-bottom: 12px;
 }
 
 .v_signalStreng.globalStock .sub_recom .bandchart_sume .box.rule ul {
-  margin-top: 12px;
+  margin-top: 0;
+}
+.v_signalStreng.globalStock .sub_recom .bandchart_sume .box.rule ul b {
+  color: #333;
+}
+.v_signalStreng.globalStock .sub_recom .bandchart_sume .box.rule ul b.increase {
+  color: #FF2929;
+  font-weight: bold;
+}
+.v_signalStreng.globalStock .sub_recom .bandchart_sume .box.rule ul b.decrease {
+  color: #0062ff;
+  font-weight: bold;
 }
 
 .v_signalStreng.globalStock .sub_recom .bandchart_sume .box.rule ul li {
@@ -33942,10 +34000,10 @@ body.v_signalStreng {
 .modalBox .modal.tooltip_pop.btm .pop_header {
   border-bottom: none;
 }
-.modalBox .modal.tooltip_pop03 {
+.modalBox .modal.tooltip_pop03, .modalBox .modal.tooltip_pop04 {
   top: 15%;
 }
-.modalBox .modal.tooltip_pop03 .pop_con .sum_txt {
+.modalBox .modal.tooltip_pop03 .pop_con .sum_txt, .modalBox .modal.tooltip_pop04 .pop_con .sum_txt {
   font-size: 0.9375rem;
   line-height: 1.43;
   color: #6A727B;
@@ -33954,7 +34012,7 @@ body.v_signalStreng {
   word-wrap: break-word;
   word-break: break-all;
 }
-.modalBox .modal.tooltip_pop03 .pop_con .txt {
+.modalBox .modal.tooltip_pop03 .pop_con .txt, .modalBox .modal.tooltip_pop04 .pop_con .txt {
   position: relative;
   font-size: 0.9375rem;
   line-height: 1.43;
@@ -33964,7 +34022,7 @@ body.v_signalStreng {
   word-wrap: break-word;
   word-break: break-all;
 }
-.modalBox .modal.tooltip_pop03 .pop_con .txt::before {
+.modalBox .modal.tooltip_pop03 .pop_con .txt::before, .modalBox .modal.tooltip_pop04 .pop_con .txt::before {
   content: "";
   display: inline-block;
   position: absolute;

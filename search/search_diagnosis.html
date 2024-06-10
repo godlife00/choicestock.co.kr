@@ -19,26 +19,31 @@
     <meta property="og:image:width" content="410" />
     <meta property="og:image:height" content="210" />
     <meta property="og:url" content="http://us.itooza.com">
+    <!-- 검색엔진 SEO 최적화 -->
+    <!-- https://www.choicestock.co.kr/search/summary 검색결과 대표 표준 페이지로 지정 -->
+    <link rel="canonical" href="https://www.choicestock.co.kr/search/summary" />
     <!-- jquery-1.12 -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
-    <!-- highcharts -->
-    <script src="../node_modules/highcharts/highstock.js"></script>
-    <script src="../node_modules/highcharts/highcharts-more.js"></script>
-    <script src="../node_modules/highcharts/modules/data.js"></script>
-    <script src="../node_modules/highcharts/modules/hollowcandlestick.js"></script>
-    <script src="../node_modules/highcharts/modules/no-data-to-display.js"></script>
-    <script src="../node_modules/highcharts/modules/treemap.js"></script>    
-    <script src="../node_modules/highcharts/modules/exporting.js"></script>
-    <script src="../node_modules/highcharts/modules/export-data.js"></script>
-    <script src="../node_modules/highcharts/modules/accessibility.js"></script>
+    <!-- highstock -->
+    <script src="http://godlife.ivyro.net/highcharts/stock/highstock.js"></script>
+    <script src="http://godlife.ivyro.net/highcharts/stock/modules/data.js"></script>
+    <script src="http://godlife.ivyro.net/highcharts/stock/modules/hollowcandlestick.js"></script>
+    <script src="http://godlife.ivyro.net/highcharts/stock/modules/no-data-to-display.js"></script>
+    <script src="http://godlife.ivyro.net/highcharts/stock/modules/treemap.js"></script>
+    <script src="http://godlife.ivyro.net/highcharts/stock/highcharts-more.js"></script>
+    <script src="http://godlife.ivyro.net/highcharts/stock/modules/exporting.js"></script>
+    <script src="http://godlife.ivyro.net/highcharts/stock/modules/export-data.js"></script>
+    <script src="http://godlife.ivyro.net/highcharts/stock/modules/accessibility.js"></script>
     <script src="../js/chartjs.js"></script>
+    <!-- html2canvas js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.3.2/html2canvas.min.js"></script>
     <!-- Swiper -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
     <!-- css -->
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <link rel="stylesheet" type="text/css" href="../css/scss/choicestock.css" />    
+    <link rel="stylesheet" type="text/css" href="../css/scss/choicestock.css?v3" />
     <!-- js -->
     <script src="../js/choicestock.js"></script>
 </head>
@@ -168,18 +173,7 @@
                     <div class="chartData">
                         <dl>
                             <dt class="charm">스마트 스코어
-                                <span class="txt_guide"><img src="../img/../img/txt_guide_us.svg" alt="가이드보기"></span>
-                                <div class="guide_box">
-                                    <span class="clse">닫기</span>                          
-                                    <p class="txt"><strong>종목진단 점수</strong>는 해당 종목의 우량주 여부를 판단하는데 도움을 드립니다.</p>
-                                    <p class="txt">10년 이상의 금융 빅데이터에서 우량주 발굴을 위해 22개 요인(Factor)을 종목별로 분석하고, 동종업종내 경쟁사와 비교합니다.</p>
-                                    <ul>
-                                        <li class="list_txt">종목진단 점수는 높을수록 매력적인 기업이며, 65점(상위 20%) 이상이면 우량 기업으로 판단합니다.</li>
-                                        <li class="list_txt">투자매력 세부 항목인 독점력, 수익성, 안전성, 현금창출력으로 별점(★) 5점 만점에 3점 이상이면 각 항목을 통과한 것으로 판단합니다.</li>
-                                        <li class="list_txt">세부 항목 평가에서 별점 0~1점을 받았다면 위험 요인으로, 투자 판단시 유의해서 봐야 합니다.</li>                                        
-                                        <li class="list_txt">우량주 여부를 판단한 후에는 적정주가로 저평가 여부를 확인하세요.</li>
-                                    </ul>
-                                </div>
+                                <span class="txt_guide"><img src="../img/../img/txt_guide_us.svg" alt="가이드보기"></span>                                
                             </dt>
                             <dd class="charm_num">80</dd>
                             <dd class="charm">전주대비 <strong>+5</strong></dd>
@@ -587,6 +581,30 @@
             <!-- //notice -->
         </div>
         <!-- //footer -->
+
+        <div class="modalBox">
+            <!-- 개요 - 진단 -->
+            <div class="modal tooltip_pop tooltip_pop04">
+                <div class="pop_header">
+                    <h1 class="pop_title">스마트 스코어</h1>
+                    <span class="clse">
+                        <!--닫기-->
+                    </span>
+                </div>
+                <div class="pop_con">
+                    <p class="sum_txt"><strong>스마트 스코어</strong>는 해당 종목의 우량주 여부를 판단하는데 도움을 드립니다.</p>
+                    <p class="sum_txt">20년 이상의 금융 빅데이터에서 우량주 발굴을 위해 22개 요인(Factor)을 종목별로 분석하고, 동종업종내 경쟁사와 비교합니다.</p>
+                    <p class="txt">스마트 스코어는 높을수록 매력적인 기업이며, 65점(상위 20%) 이상이면 우량 기업으로 판단합니다.</p>
+                    <p class="txt">스마트 스코어 세부 항목인 독점력, 수익성, 안전성, 현금창출력, 미래성장성은 60점(별점(★) 3점) 이상이면 각 항목을 통과한 것으로 판단합니다.</p>
+                    <p class="txt">세부 항목 평가에서 0~20점(별점 0~1점)을 받았다면 위험 요인으로, 투자 판단시 유의해서 봐야 합니다.</p>
+                    <p class="txt">우량주 여부를 판단한 후에는 밸류에이션으로 저평가 여부를 확인하세요.</p>
+
+                </div>
+            </div>
+
+            <div class="blocker"></div>
+        </div>
+
     </div>
     <!-- //wrap -->
 
