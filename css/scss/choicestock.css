@@ -3415,7 +3415,7 @@ table.tableRanking td {
   flex-wrap: nowrap;
   justify-content: center;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: flex-end;
   gap: 0 6px;
   padding-top: 12px;
 }
