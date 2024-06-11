@@ -3315,12 +3315,33 @@ table.tableRanking td {
 }
 
 .globalStock .main_mid.event_recipe .tab_content .tableth_box .game_th {
-  display: block;
-  width: calc(100% - 30px);
+  display: flex;
+  justify-content: flex-end;
+  gap: 0 15px;
+  width: 100%;
   margin: 0 auto;
-  padding-right: 0;
+  padding: 0 15px;
   box-sizing: border-box;
   border-bottom: 1px solid #f4f4f5;
+}
+
+.globalStock .main_mid.event_recipe .tab_content#tab1 .tableth_box .game_th {
+  padding: 0 27px;
+}
+
+.globalStock .main_mid.event_recipe .tab_content#tab2 .tableth_box .game_th {
+  padding: 0 20px;
+  gap: 0 25px;
+}
+
+.globalStock .main_mid.event_recipe .tab_content#tab3 .tableth_box .game_th {
+  padding: 0 37px;
+  gap: 0 40px;
+}
+
+.globalStock .main_mid.event_recipe .tab_content#tab4 .tableth_box .game_th {
+  padding: 0 15px;
+  gap: 0 33px;
 }
 
 .globalStock .main_mid.event_recipe .tab_content .tableth_box .game_th li {
@@ -3329,26 +3350,9 @@ table.tableRanking td {
   font-size: 0.6rem;
   letter-spacing: -0.5px;
   text-align: right;
-  padding: 11px 5px;
+  padding: 11px 0;
   box-sizing: border-box;
   padding-right: 0;
-}
-
-.globalStock .main_mid.event_recipe .tab_content .tableth_box .game_th li:last-child {
-  width: 46px;
-  padding-right: 0;
-}
-
-.globalStock .main_mid.event_recipe .tab_content#tab3 .tableth_box .game_th li:last-child {
-  text-align: center;
-}
-
-.globalStock .main_mid.event_recipe .tab_content .tableth_box .game_th li.ths_2 {
-  width: 67px;
-}
-
-.globalStock .main_mid.event_recipe .tab_content#tab4 .tableth_box .game_th li.ths_2 {
-  width: 55px;
 }
 
 .globalStock .main_mid.event_recipe .tab_content .tableth_box table.tableRanking {
@@ -3375,22 +3379,26 @@ table.tableRanking td {
 }
 
 .globalStock .main_mid.event_recipe .tab_content .tableth_box table.tableRanking .title.t_short a {
-  width: 122px;
+  width: 100%;
+}
+@media (min-width: 401px) and (max-width: 640px) {
+  .globalStock .main_mid.event_recipe .tab_content .tableth_box table.tableRanking .title.t_short a {
+    width: 140px;
+  }
+}
+@media (min-width: 375px) and (max-width: 400px) {
+  .globalStock .main_mid.event_recipe .tab_content .tableth_box table.tableRanking .title.t_short a {
+    width: 110px;
+  }
+}
+@media (min-width: 320px) and (max-width: 374px) {
+  .globalStock .main_mid.event_recipe .tab_content .tableth_box table.tableRanking .title.t_short a {
+    width: 90px;
+  }
 }
 
 .globalStock .main_mid.event_recipe .tab_content#tab4 .tableth_box table.tableRanking .title.t_short a {
   width: 100px;
-}
-
-.globalStock .main_mid.event_recipe .tab_content#tab2 .tableth_box table.tableRanking .title.t_short a,
-.globalStock .main_mid.event_recipe .tab_content#tab3 .tableth_box table.tableRanking .title.t_short a {
-  width: 100px;
-}
-@media (min-width: 320px) and (max-width: 374px) {
-  .globalStock .main_mid.event_recipe .tab_content#tab2 .tableth_box table.tableRanking .title.t_short a,
-  .globalStock .main_mid.event_recipe .tab_content#tab3 .tableth_box table.tableRanking .title.t_short a {
-    width: 90px;
-  }
 }
 
 @media (min-width: 320px) and (max-width: 358px) {
@@ -3407,9 +3415,6 @@ table.tableRanking td {
 .globalStock .main_mid.event_recipe .tab_content#tab1 .tableth_box table.tableRanking tr:last-child .title.t_short {
   padding-bottom: 17px;
 }
-.globalStock .main_mid.event_recipe .tab_content#tab1 .tableth_box table.tableRanking .title.t_short a {
-  width: 140px;
-}
 .globalStock .main_mid.event_recipe .tab_content#tab1 .tableth_box table.tableRanking .title.t_short + td.num {
   display: flex;
   flex-wrap: nowrap;
@@ -3417,7 +3422,6 @@ table.tableRanking td {
   flex-direction: column;
   align-items: flex-end;
   gap: 0 6px;
-  padding-top: 12px;
 }
 .globalStock .main_mid.event_recipe .tab_content#tab1 .tableth_box table.tableRanking .title.t_short + td.num .per {
   padding-top: 1px;
@@ -3434,10 +3438,6 @@ table.tableRanking td {
 .globalStock .main_mid.event_recipe .tab_content#tab1 .tableth_box table.tableRanking .num.dod {
   padding-right: 15px !important;
 }
-.globalStock .main_mid.event_recipe .tab_content#tab1 .tableth_box .game_th {
-  width: calc(100% - 40px);
-}
-
 .globalStock .main_mid.event_recipe .tab_content .tableth_box table.tableRanking .title .remark {
   height: 14px;
   font-size: 1.5em;
@@ -3455,7 +3455,7 @@ table.tableRanking td {
 }
 
 .globalStock .main_mid.event_recipe .tab_content .tableth_box table.tableRanking td.title {
-  padding: 12px 0 5px 15px;
+  padding: 15px 0 5px 12px;
 }
 
 .globalStock .main_mid.event_recipe .tab_content .tableth_box table.tableRanking td.num {
@@ -3517,7 +3517,6 @@ table.tableRanking td {
 .globalStock .main_mid.event_recipe .tab_content .tableth_box table.tableRanking .trans {
   color: #939393;
   padding-right: 15px !important;
-  padding-top: 10px;
   padding-left: 7px;
   width: 68px;
   box-sizing: border-box;
@@ -3572,12 +3571,9 @@ table.tableRanking td {
   border-radius: 3px;
   text-align: center;
   font-weight: bold;
-  padding: 5px 5px;
-  width: 61px;
+  padding: 5px 3px;
+  width: 64px;
   box-sizing: border-box;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
 }
 
 .globalStock .main_mid.event_recipe .tab_content .tableth_box table.tableRanking td.num.dod .decrease {
