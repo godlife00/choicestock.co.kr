@@ -6731,6 +6731,25 @@ table.tableRanking td {
   padding: 0;
   letter-spacing: normal;
 }
+.globalStock .sub_recom .sub_mid .tabsArea .tabs_two + .tab_container .tab_content p.guide {
+  position: relative;
+  margin-top: 10px;
+  display: block;
+  color: #939393;
+  padding-left: 15px;
+  font-size: 0.75rem;
+  line-height: 1.43;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+.globalStock .sub_recom .sub_mid .tabsArea .tabs_two + .tab_container .tab_content p.guide::before {
+  content: "*";
+  position: absolute;
+  left: 5px;
+  top: 2px;
+  display: inline-block;
+  color: #939393;
+}
 
 .globalStock .sub_recom .sub_mid .tabsArea .tabs_two + .tab_container .tab_content ul {
   padding: 7px 0;
@@ -30432,7 +30451,6 @@ body.v_signalStreng {
   width: 100%;
   height: 380px;
   box-sizing: border-box;
-  padding: 0 19px;
   background-color: transparent;
 }
 .v_signalStreng.globalStock #wrap #container.sub_search .mainBox.outline .BICchart_style .highcharts-yaxis .highcharts-axis-line {
