@@ -1468,6 +1468,10 @@
 
 /* 미주미초이스 프리미엄 첫달 3,000원 */
 .globalStock .first_month_3300.md-modal {		
+	@media (max-height: 800px) {
+		top: 5%;
+	}
+	
 	#setting {
 		padding: 0;
 		border: none;

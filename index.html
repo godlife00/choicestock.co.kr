@@ -46,7 +46,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
     <!-- css -->
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <link rel="stylesheet" type="text/css" href="css/scss/choicestock.css?ver=2.03" />
+    <link rel="stylesheet" type="text/css" href="css/scss/choicestock.css?ver=2.08" />
     <!-- js -->
     <script src="js/choicestock.js"></script>
     <!-- 이 아래는 로컬에서만 사용되는 파일 -->
@@ -852,10 +852,14 @@
                                     <tbody>
                                         <tr>
                                             <td class="title t_short">
-                                                <a href="/search/summary/META">메타플랫폼스</a>
+                                                <a href="#" data-modal="modal-3" class="md-trigger"> 애<span class="remark">
+                                                        <div class="txt_filter size_M"><i></i><i></i><i></i><i></i></div>
+                                                    </span>                                                    
+                                                </a>
                                             </td>
                                             <td class="num">
                                                 <span>502.<b>60</b></span>
+                                                <span class="per increase">198.09<b>%</b></span>
                                             </td>
                                             <td class="num dod">
                                                 <span class="increase">302.92<b>%</b></span>
@@ -868,6 +872,7 @@
                                             </td>
                                             <td class="num">
                                                 <span>88.<b>22</b></span>
+                                                <span class="per decrease">-98.09<b>%</b></span>
                                             </td>
                                             <td class="num dod">
                                                 <span class="increase">191.06<b>%</b></span>
@@ -880,6 +885,7 @@
                                             </td>
                                             <td class="num">
                                                 <span>209.<b>35</b></span>
+                                                <span class="per increase">198.09<b>%</b></span>
                                             </td>
                                             <td class="num dod">
                                                 <span class="increase">88.79<b>%</b></span>
@@ -892,6 +898,7 @@
                                             </td>
                                             <td class="num">
                                                 <span>1,054.<b>95</b></span>
+                                                <span class="per increase">198.09<b>%</b></span>
                                             </td>
                                             <td class="num dod">
                                                 <span class="increase">76.68<b>%</b></span>
@@ -904,6 +911,7 @@
                                             </td>
                                             <td class="num">
                                                 <span>3,129.<b>88</b></span>
+                                                <span class="per increase">198.09<b>%</b></span>
                                             </td>
                                             <td class="num dod">
                                                 <span class="increase">65.81<b>%</b></span>
@@ -916,6 +924,7 @@
                                             </td>
                                             <td class="num">
                                                 <span>228.<b>16</b></span>
+                                                <span class="per increase">8.09<b>%</b></span>
                                             </td>
                                             <td class="num dod">
                                                 <span class="increase">63.26<b>%</b></span>
@@ -927,7 +936,8 @@
                                                 <a href="/search/summary/APH">암페놀</a>
                                             </td>
                                             <td class="num">
-                                                <span>133.<b>84</b></span>
+                                                <span>133.<b>84</b></span>                                                
+                                                <span class="per increase">18.09<b>%</b></span>
                                             </td>
                                             <td class="num dod">
                                                 <span class="increase">57.89<b>%</b></span>
@@ -936,37 +946,40 @@
                                         </tr>
                                         <tr>
                                             <td class="title t_short">
-                                                <a href="/search/summary/NFLX">넷플릭스</a>
+                                                <a href="/search/summary/META">메타플랫폼스</a>
                                             </td>
                                             <td class="num">
-                                                <span>644.<b>50</b></span>
+                                                <span>502.<b>60</b></span>
+                                                <span class="per increase">198.09<b>%</b></span>
                                             </td>
                                             <td class="num dod">
-                                                <span class="increase">53.38<b>%</b></span>
+                                                <span class="increase">302.92<b>%</b></span>
                                                 <!-- increase 증가, decrease 감소 -->
                                             </td>
                                         </tr>
                                         <tr>
                                             <td class="title t_short">
-                                                <a href="/search/summary/AXP">아메리칸익스프레스</a>
+                                                <a href="/search/summary/VST">비스트라에너지</a>
                                             </td>
                                             <td class="num">
-                                                <span>232.<b>44</b></span>
+                                                <span>88.<b>22</b></span>
+                                                <span class="per decrease">-98.09<b>%</b></span>
                                             </td>
                                             <td class="num dod">
-                                                <span class="increase">50.56<b>%</b></span>
+                                                <span class="increase">191.06<b>%</b></span>
                                                 <!-- increase 증가, decrease 감소 -->
                                             </td>
                                         </tr>
                                         <tr>
                                             <td class="title t_short">
-                                                <a href="/search/summary/TDG">트랜스다임</a>
+                                                <a href="/search/summary/QCOM">퀄컴</a>
                                             </td>
                                             <td class="num">
-                                                <span>1,305.<b>99</b></span>
+                                                <span>209.<b>35</b></span>
+                                                <span class="per increase">198.09<b>%</b></span>
                                             </td>
                                             <td class="num dod">
-                                                <span class="increase">50.16<b>%</b></span>
+                                                <span class="increase">88.79<b>%</b></span>
                                                 <!-- increase 증가, decrease 감소 -->
                                             </td>
                                         </tr>
@@ -1132,26 +1145,18 @@
                         <div id="tab3" class="tab_content">
                             <div class="tableth_box">
                                 <ul class="game_th">
-                                    <li class="ths_2">전일상승률</li>
+                                    <!-- <li class="ths_2">전일상승률</li> -->
                                     <li class="ths_2">관심수</li>
                                 </ul>
-                                <table cellspacing="0" border="0" class="tableRanking type_2Line">
-                                    <colgroup>
-                                        <col width="100px">
-                                        <col width="">
-                                        <col width="">
-                                    </colgroup>
+                                <table cellspacing="0" border="0" class="tableRanking type_2Line">                                    
                                     <tbody>
                                         <tr>
                                             <td class="title t_short">
-                                                <a href="stock/recipetop_view.html">넷플릭스</a>
+                                                <a href="stock/recipetop_view.html">어플라이드머티리얼스어플라이드머티리얼스</a>
                                             </td>
                                             <td class="num">
                                                 <span>180.<b>00</b></span>
-                                            </td>
-                                            <td class="num dod">
-                                                <span class="increase">198.9<b>%</b></span>
-                                                <!-- increase 증가, decrease 감소 -->
+                                                <span class="per increase">198.09<b>%</b></span>
                                             </td>
                                             <td class="num profit td_attention">
                                                 <p class="attention on"><i></i>828K</p>
@@ -1163,42 +1168,22 @@
                                             </td>
                                             <td class="num">
                                                 <span>8.<b>00</b></span>
-                                            </td>
-                                            <td class="num dod">
-                                                <span class="decrease">-98.9<b>%</b></span>
-                                                <!-- increase 증가, decrease 감소 -->
-                                            </td>
+                                                <span class="per increase">198.09<b>%</b></span>
+                                            </td>                                            
                                             <td class="num profit td_attention">
                                                 <p class="attention on"><i></i>888</p>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td class="title t_short">
-                                                <a href="#">넷플릭스</a>
+                                                <a href="stock/recipetop_view.html">애플</a>
                                             </td>
                                             <td class="num">
-                                                <span>1180.<b>00</b></span>
-                                            </td>
-                                            <td class="num dod">
-                                                <span class="increase">198.9<b>%</b></span>
-                                                <!-- increase 증가, decrease 감소 -->
-                                            </td>
+                                                <span>8.<b>00</b></span>
+                                                <span class="per decrease">-198.09<b>%</b></span>
+                                            </td>                                            
                                             <td class="num profit td_attention">
-                                                <p class="attention on"><i></i>8</p>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="title t_short">
-                                                <a href="#">넷플릭스넷플릭스넷플릭스</a></td>
-                                            <td class="num">
-                                                <span>80.<b>00</b></span>
-                                            </td>
-                                            <td class="num dod">
-                                                <span class="increase">198.9<b>%</b></span>
-                                                <!-- increase 증가, decrease 감소 -->
-                                            </td>
-                                            <td class="num profit td_attention">
-                                                <p class="attention on"><i></i>828K</p>
+                                                <p class="attention on"><i></i>89</p>
                                             </td>
                                         </tr>
                                         <tr>
@@ -1207,42 +1192,22 @@
                                             </td>
                                             <td class="num">
                                                 <span>8.<b>00</b></span>
-                                            </td>
-                                            <td class="num dod">
-                                                <span class="decrease">-98.9<b>%</b></span>
-                                                <!-- increase 증가, decrease 감소 -->
-                                            </td>
+                                                <span class="per increase">198.09<b>%</b></span>
+                                            </td>                                            
                                             <td class="num profit td_attention">
                                                 <p class="attention on"><i></i>888</p>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td class="title t_short">
-                                                <a href="#">넷플릭스</a>
+                                                <a href="stock/recipetop_view.html">애플</a>
                                             </td>
                                             <td class="num">
-                                                <span>1180.<b>00</b></span>
-                                            </td>
-                                            <td class="num dod">
-                                                <span class="increase">198.9<b>%</b></span>
-                                                <!-- increase 증가, decrease 감소 -->
-                                            </td>
+                                                <span>8.<b>00</b></span>
+                                                <span class="per decrease">-198.09<b>%</b></span>
+                                            </td>                                            
                                             <td class="num profit td_attention">
-                                                <p class="attention on"><i></i>8</p>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="title t_short">
-                                                <a href="#">넷플릭스넷플릭스넷플릭스</a></td>
-                                            <td class="num">
-                                                <span>80.<b>00</b></span>
-                                            </td>
-                                            <td class="num dod">
-                                                <span class="increase">198.9<b>%</b></span>
-                                                <!-- increase 증가, decrease 감소 -->
-                                            </td>
-                                            <td class="num profit td_attention">
-                                                <p class="attention on"><i></i>828K</p>
+                                                <p class="attention on"><i></i>89</p>
                                             </td>
                                         </tr>
                                         <tr>
@@ -1251,44 +1216,61 @@
                                             </td>
                                             <td class="num">
                                                 <span>8.<b>00</b></span>
-                                            </td>
-                                            <td class="num dod">
-                                                <span class="decrease">-98.9<b>%</b></span>
-                                                <!-- increase 증가, decrease 감소 -->
-                                            </td>
+                                                <span class="per increase">198.09<b>%</b></span>
+                                            </td>                                            
                                             <td class="num profit td_attention">
                                                 <p class="attention on"><i></i>888</p>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td class="title t_short">
-                                                <a href="#">넷플릭스</a>
+                                                <a href="stock/recipetop_view.html">애플</a>
                                             </td>
                                             <td class="num">
-                                                <span>1180.<b>00</b></span>
-                                            </td>
-                                            <td class="num dod">
-                                                <span class="increase">198.9<b>%</b></span>
-                                                <!-- increase 증가, decrease 감소 -->
-                                            </td>
+                                                <span>8.<b>00</b></span>
+                                                <span class="per decrease">-198.09<b>%</b></span>
+                                            </td>                                            
                                             <td class="num profit td_attention">
-                                                <p class="attention on"><i></i>8</p>
+                                                <p class="attention on"><i></i>89</p>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td class="title t_short">
-                                                <a href="#">넷플릭스넷플릭스넷플릭스</a></td>
+                                                <a href="stock/recipetop_view.html">넷플릭스</a>
+                                            </td>
                                             <td class="num">
-                                                <span>80.<b>00</b></span>
-                                            </td>
-                                            <td class="num dod">
-                                                <span class="increase">198.9<b>%</b></span>
-                                                <!-- increase 증가, decrease 감소 -->
-                                            </td>
+                                                <span>8.<b>00</b></span>
+                                                <span class="per increase">198.09<b>%</b></span>
+                                            </td>                                            
                                             <td class="num profit td_attention">
-                                                <p class="attention on"><i></i>828K</p>
+                                                <p class="attention on"><i></i>888</p>
                                             </td>
                                         </tr>
+                                        <tr>
+                                            <td class="title t_short">
+                                                <a href="stock/recipetop_view.html">애플</a>
+                                            </td>
+                                            <td class="num">
+                                                <span>8.<b>00</b></span>
+                                                <span class="per decrease">-198.09<b>%</b></span>
+                                            </td>                                            
+                                            <td class="num profit td_attention">
+                                                <p class="attention on"><i></i>89</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="title t_short">
+                                                <a href="stock/recipetop_view.html">넷플릭스</a>
+                                            </td>
+                                            <td class="num">
+                                                <span>8.<b>00</b></span>
+                                                <span class="per increase">198.09<b>%</b></span>
+                                            </td>                                            
+                                            <td class="num profit td_attention">
+                                                <p class="attention on"><i></i>888</p>
+                                            </td>
+                                        </tr>
+                                        
                                     </tbody>
                                 </table>
                                 <div class="table_btmarea">
@@ -1322,12 +1304,12 @@
                                                 <!-- increase 증가, decrease 감소 -->
                                             </td>
                                             <td class="num profit">
-                                                <span>8.<b>24</b></span>
+                                                <span>28.<b>24</b></span>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td class="title t_short">
-                                                <a href="stock/recipe_view.html">넷플릭스</a>
+                                                <a href="stock/recipe_view.html">넷플릭스넷플릭스넷플릭스넷플릭스넷플릭스</a>
                                             </td>
                                             <td class="num">
                                                 <span>180.<b>00</b></span>
