@@ -2257,7 +2257,7 @@ table.tableRanking td {
 }
 
 .globalStock .main_mid.attention_area table.tableRanking.type_2Line tr {
-	height: 58px;
+	height: 48px;	
 }
 
 .globalStock .main_mid.attention_area table.tableRanking.type_2Line tr:last-child {
@@ -2337,7 +2337,7 @@ table.tableRanking td {
 	display: inline-block;
 	border-radius: 3px;
 	text-align: center;
-	margin-top: 15px;
+	margin-top: 11px;
 	margin-right: 5px;
 	padding: 5px 5px;
 	width: 61px;
@@ -2398,7 +2398,7 @@ table.tableRanking td {
 
 .globalStock .main_mid.attention_area .attention_all {
 	width: 100%;
-	height: 232px;
+	height: 194px;
 	background: #f7f8f9;
 	border-radius: 16px;
 	text-align: center;
@@ -2608,8 +2608,8 @@ table.tableRanking td {
 	padding-bottom: 30px;
 }
 
-.globalStock .main_mid.attention_area .attentionSwiper .swiper-slide {
-	height: 232px;
+.globalStock .main_mid.attention_area .attentionSwiper .swiper-slide {	
+	height: 194px;
 	border-radius: 16px;
 	background: #f7f8f9;
 }
@@ -10492,7 +10492,7 @@ table.tableRanking td {
 .globalStock .sub_search .latest_results .tabsArea table.tableRanking.type_2Line td {
 	padding: 12px 3px 12px 15px;
 	text-align: center;
-	vertical-align: top;
+	// vertical-align: top;	
 }
 
 .globalStock .sub_search .latest_results .tabsArea table.tableRanking.type_2Line td.opinion {}
@@ -10544,7 +10544,10 @@ table.tableRanking td {
 }
 
 .globalStock .sub_search .latest_results .tabsArea table.tableRanking .title {
-	text-align: left !important;
+	text-align: left !important;		
+	.md-trigger {
+		padding-top: 16px;
+	}
 }
 
 .globalStock .sub_search .latest_results .tabsArea table.tableRanking .title a {
@@ -15022,6 +15025,7 @@ table.tableRanking td {
 	color: #333;
 	text-align: left;
 	display: inline-block;
+	padding: 15px 3px;
 	width: 110px;
 	overflow: hidden;
 	text-overflow: ellipsis;
@@ -15204,7 +15208,7 @@ table.tableRanking td {
 }
 
 .globalStock .sub_attract .sub_mid.attract_sub .attract_table td {
-	padding: 10px 3px;
+	padding: 15px 3px;
 	text-align: center
 }
 
@@ -32351,8 +32355,7 @@ body.v_signalStreng {
 	background-color: #f7f8f9;
 }
 
-.v_signalStreng.globalStock .sub_search .latest_results .tabsArea .tab_container .no_data {
-	margin-top: 0;
+.v_signalStreng.globalStock .sub_search .latest_results .tabsArea .tab_container .no_data {	
 	background-color: #f7f8f9;
 }
 .v_signalStreng.globalStock .sub_search .latest_results .tabsArea .tab_container .catch_wrap .no_data {
