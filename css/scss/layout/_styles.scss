@@ -32818,7 +32818,8 @@ body.v_signalStreng {
 
 .v_signalStreng.globalStock .signalpop.event2024_payment {	
 	.content {
-		background-color: #141933;				
+		background: #fff url('/img/signalpop_sdwbg.png') repeat-x left bottom;
+		background-size: contain;
 
 		.info_txt {
 			text-align: center;
@@ -32852,16 +32853,17 @@ body.v_signalStreng {
 				display: inline-block;
 				margin: 25px auto 0;
 				width: calc(100% - 50px);
-				padding: 20px 15px;
+				padding: 15px 15px;
 				box-sizing: border-box;
 				border: none;
 				border-radius: 8px;
 				background-color: #404fc3;
-				font-size: 1rem;
+				font-size: 1.125rem;
 				line-height: 1.19;
 				text-align: center;
 				color: #fff;
-				b {
+				font-weight: bold;
+				b {					
 					color: #f0cc09;
 				}
 			}
@@ -32871,7 +32873,7 @@ body.v_signalStreng {
 		display: flex;
 		justify-content: space-between;
 		height: 47px;
-		background-color: #141933;
+		background-color: #fff;
 		border-top-left-radius: 20px;
 		border-top-right-radius: 20px;
 
@@ -32902,7 +32904,7 @@ body.v_signalStreng {
 			top: 0;
 			height: 22px;
 			width: 2px;
-			background-color: #fff;
+			background-color: #333;
 		}
 		
 		.btn_close::before {
@@ -32917,14 +32919,15 @@ body.v_signalStreng {
 
 .v_signalStreng.globalStock .free_2weeks .signalpop.event2024_payment {
 	.content {
-		background-color: #141933;		
+		background: #fff url('/img/signalpop_sdwbg.png') repeat-x left bottom;
+		background-size: contain;
 		border-top-left-radius: 20px;
 		border-top-right-radius: 20px;
 		padding-top: 30px;
 	}
 	.ftr {		
 		height: auto;
-		background-color: #141933;		
+		background-color: #fff;		
 		margin-top: 0;
 		border-radius: 0;
 
@@ -32949,7 +32952,7 @@ body.v_signalStreng {
 			top: 0;
 			height: 22px;
 			width: 2px;
-			background-color: #fff;
+			background-color: #333;
 		}
 		
 		.btn_close::before {
