@@ -252,6 +252,7 @@
 
 .v_signalStreng.globalStock #wrap .modal.signal_pop01 {
 	top: 15%;
+	max-height: 80vh;
 }
 
 .v_signalStreng.globalStock #wrap .modal.method .pop_header,
@@ -362,7 +363,9 @@
 		}
 	}	
 }
-
+.v_signalStreng.globalStock #wrap .modal.signal_pop01 .pop_con {
+	height: 100%;	
+}
 .v_signalStreng.globalStock #wrap .modal.signal_pop01 .pop_con .trading_signal {
 	display: flex;
 	flex-direction: column;
@@ -370,7 +373,25 @@
 	padding: 17px 10px;
 	margin-top: 8px;
 	border-radius: 16px;
+	box-sizing: border-box;
 	background-color: #f7f8f9;
+	overflow: scroll;
+	overflow-x: hidden;    
+	@media (max-height: 570px) {		
+		max-height: 210px;		
+	}
+	@media (min-height: 571px) and (max-height: 813px) {		
+		max-height: 300px;	
+	}
+	@media (min-height: 814px) and (max-height: 897px) {		
+		max-height: 330px;		
+	}
+	@media (min-height: 898px) and (max-height: 1025px) {		
+		max-height: 378px;	
+	}
+	@media (min-height: 1026px) {		
+		max-height: 504px;		
+	}
 	.no_data {
 		display: block;
 		padding: 15px 15px;

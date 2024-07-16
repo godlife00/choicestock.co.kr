@@ -27513,6 +27513,25 @@ table.tableRanking td {
 	position: relative;
 	padding-left: 18px;
 	margin-top: 15px;
+	.more {
+		display: inline-flex;
+		align-items: center;
+		gap: 0 6px;    
+		padding-left: 6px;        
+		font-size: 0.75rem;
+		line-height: 1.54;
+		color: #608bff;
+		text-decoration: underline;
+		&::after {
+			content: '';	
+			width: 4px;
+			height: 4px;	
+			margin: auto;	
+			border-top: 1px solid #608bff;
+			border-right: 1px solid #608bff;
+			transform: rotate(45deg);	
+		}
+	}
 }
 
 .globalStock .sub_search .sub_mid .bandchart_sume .txt:first-child {

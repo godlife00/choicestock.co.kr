@@ -732,11 +732,14 @@ $(document).ready(function () {
     //메인 상단
     // 0 또는 1 중에서 랜덤하게 선택
     var randomStartSlide = Math.floor(Math.random() * 2);
+    var slideCountbaner = document.querySelectorAll('.banner_event_swiper .swiper-slide').length;
     var banner_event_swiper = new Swiper('.banner_event_swiper', {
-        autoplay: {
+        slidesPerView: 1, // 한 번에 보이는 슬라이드 수를 1로 설정
+        // 슬라이드가 두 개 이상일 때만 자동재생
+        autoplay: slideCountbaner > 1 ? {
             delay: 3000,
             disableOnInteraction: false,
-        },        
+        } : false,
         loop: true,
         initialSlide: randomStartSlide // 랜덤하게 시작 슬라이드 설정
     });
@@ -1454,6 +1457,7 @@ $(document).ready(function () {
         if ($(this).hasClass('no_signal')) {            
             return;
         } else {
+            $('body').css('overflow', 'hidden');
             $('.modal').hide().removeClass('slideUp');
             $('.blocker').show();
             $('.signal_pop01').show().addClass('slideUp');

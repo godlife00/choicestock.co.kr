@@ -27022,6 +27022,25 @@ table.tableRanking td {
   padding-left: 18px;
   margin-top: 15px;
 }
+.globalStock .sub_search .sub_mid .bandchart_sume .txt .more {
+  display: inline-flex;
+  align-items: center;
+  gap: 0 6px;
+  padding-left: 6px;
+  font-size: 0.75rem;
+  line-height: 1.54;
+  color: #608bff;
+  text-decoration: underline;
+}
+.globalStock .sub_search .sub_mid .bandchart_sume .txt .more::after {
+  content: "";
+  width: 4px;
+  height: 4px;
+  margin: auto;
+  border-top: 1px solid #608bff;
+  border-right: 1px solid #608bff;
+  transform: rotate(45deg);
+}
 
 .globalStock .sub_search .sub_mid .bandchart_sume .txt:first-child {
   margin-top: 0;
@@ -32901,6 +32920,7 @@ body.v_signalStreng {
 
 .v_signalStreng.globalStock #wrap .modal.signal_pop01 {
   top: 15%;
+  max-height: 80vh;
 }
 
 .v_signalStreng.globalStock #wrap .modal.method .pop_header,
@@ -33013,6 +33033,10 @@ body.v_signalStreng {
   display: none;
 }
 
+.v_signalStreng.globalStock #wrap .modal.signal_pop01 .pop_con {
+  height: 100%;
+}
+
 .v_signalStreng.globalStock #wrap .modal.signal_pop01 .pop_con .trading_signal {
   display: flex;
   flex-direction: column;
@@ -33020,7 +33044,35 @@ body.v_signalStreng {
   padding: 17px 10px;
   margin-top: 8px;
   border-radius: 16px;
+  box-sizing: border-box;
   background-color: #f7f8f9;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+@media (max-height: 570px) {
+  .v_signalStreng.globalStock #wrap .modal.signal_pop01 .pop_con .trading_signal {
+    max-height: 210px;
+  }
+}
+@media (min-height: 571px) and (max-height: 813px) {
+  .v_signalStreng.globalStock #wrap .modal.signal_pop01 .pop_con .trading_signal {
+    max-height: 300px;
+  }
+}
+@media (min-height: 814px) and (max-height: 897px) {
+  .v_signalStreng.globalStock #wrap .modal.signal_pop01 .pop_con .trading_signal {
+    max-height: 330px;
+  }
+}
+@media (min-height: 898px) and (max-height: 1025px) {
+  .v_signalStreng.globalStock #wrap .modal.signal_pop01 .pop_con .trading_signal {
+    max-height: 378px;
+  }
+}
+@media (min-height: 1026px) {
+  .v_signalStreng.globalStock #wrap .modal.signal_pop01 .pop_con .trading_signal {
+    max-height: 504px;
+  }
 }
 .v_signalStreng.globalStock #wrap .modal.signal_pop01 .pop_con .trading_signal .no_data {
   display: block;
