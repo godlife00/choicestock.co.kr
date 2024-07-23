@@ -438,9 +438,9 @@
                         <li>
                             <dl class="lst_type2">
                                 <dt class="tit">
-                                    <a href="search_news.html"><strong>테마주-소셜미디어 : 당신도 인플루언서블 한가요? (feat. MZ세대의
-                                            일상템)당신도
-                                            인플루언서블 한가요? (feat. MZ세대의 일상템)</strong></a>
+                                    <a href="/search/news_view/CELH/30999">
+                                        <strong>[성장주탐험대] 운동 전에 마시면&nbsp;살이&nbsp;빠진다고요?&nbsp;아마존&nbsp;에너지&nbsp;드링크&nbsp;판매&nbsp;1위 -
+                                            셀시우스&nbsp;(CELH)</strong></a>
                                     <span class="day">23.09/21</span>
                                 </dt>
                                 <dd class="photo">
@@ -468,6 +468,21 @@
                     <div class="btn_more">
                         <a href="search_news.html">더보기</a>
                     </div>
+
+                    <script>
+                        // 페이지 로드시 실행 동영상 제목에 html 태그가 포함되어있다면 제거
+                        $(document).ready(function() {
+                            function removeHTMLTags(htmlString) {
+                                return $('<div>').html(htmlString).text();
+                            }
+                            // 
+                            $('.main_mid.new_area .lst_type2 .tit a').each(function() {
+                                let htmlString = $(this).html();
+                                let cleanString = removeHTMLTags(htmlString);
+                                $(this).text(cleanString);
+                            });
+                        });
+                    </script>
                 </div>
                 <!-- //event_recipe -->
 
