@@ -171,7 +171,7 @@ $(document).ready(function () {
     customizeAndAppendList();  // 종목검색 개요탭 등 상단 고정 종목명 함수 실행
 
     
-    if ($('#header').length) {
+    if ($('.headerTop').length) {
         // 스크롤시 헤더 상단 고정 스크립트    
         var headerHeight = $('#header').innerHeight();
         var headerOffset = $('#header .headerTop').offset().top;    

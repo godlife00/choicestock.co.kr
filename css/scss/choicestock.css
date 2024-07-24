@@ -36003,4 +36003,8 @@ body.v_signalStreng {
   font-size: 0.9rem;
   line-height: 1.4rem;
   padding: 15px 15px;
+}
+
+.globalStock .service_wrap .box.visible {
+  background-color: red;
 }/*# sourceMappingURL=choicestock.css.map */
