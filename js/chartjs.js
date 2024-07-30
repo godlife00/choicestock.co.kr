@@ -1118,7 +1118,7 @@ $(document).ready(function () {
                     },                    
                     formatter: function () {
                         // Y 좌표와 X 좌표의 보정값을 미리 정의된 배열로 설정
-                        var labelYPositions = [-18, -7, 23, 23, -7]; // 각 인덱스별 Y 좌표 보정값
+                        var labelYPositions = [-12, -7, 23, 23, -7]; // 각 인덱스별 Y 좌표 보정값
                         var labelXPositions = [0, 0, -12, 12, 0]; // 각 인덱스별 X 좌표 보정값, 예시값
                         
                         // 현재 카테고리 인덱스에 해당하는 보정값을 가져옴

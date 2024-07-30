@@ -36005,4 +36005,337 @@ body.v_signalStreng {
   font-size: 0.9rem;
   line-height: 1.4rem;
   padding: 15px 15px;
-}/*# sourceMappingURL=choicestock.css.map */
+}
+
+#container {
+  padding-bottom: 0;
+}
+
+.globalStock .service_wrap .box.premium_box .title_box h1 {
+  color: #C7CBE9;
+  font-size: 24px;
+  font-weight: 700;
+}
+.globalStock .service_wrap .box.premium_box .title_box h1 b {
+  margin-top: 3px;
+  display: block;
+  color: #FFF;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.txt_ai {
+  margin-top: 20px;
+}
+.txt_ai p {
+  color: #FFF;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 25px; /* 125% */
+}
+.txt_ai p b {
+  display: block;
+  color: #FFF;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 25px; /* 125% */
+}
+
+.할인혜택 {
+  padding: 48px 24px;
+  box-sizing: border-box;
+  background: var(--mian_color1, #404FC3);
+}
+.할인혜택 .txt p {
+  color: #FFF;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 29px;
+}
+.할인혜택 .txt p b {
+  color: #F8D54E;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 27px; /* 122.727% */
+}
+.할인혜택 .group {
+  display: flex;
+  flex-direction: column;
+  gap: 21px 0;
+  margin-top: 16px;
+}
+.할인혜택 .group .step_box {
+  border-radius: 16px;
+  border: 1px solid #DFE0EF;
+  background: #FFF url("/img/bg_wallet.png") no-repeat calc(100% - 15px) center;
+  background-size: 64px 68px;
+  padding: 25px 24px 29px;
+  box-sizing: border-box;
+}
+.할인혜택 .group .step_box .top .title {
+  color: #333;
+  font-size: 14px;
+  font-weight: 800;
+}
+.할인혜택 .group .step_box .payRight .pay01 {
+  position: relative;
+  display: block;
+  margin-top: 14px;
+  color: #999;
+  font-size: 16px;
+  font-weight: normal;
+}
+.할인혜택 .group .step_box .payRight .del_img {
+  display: inline-block;
+  position: absolute;
+  left: -5px;
+  right: 0;
+  top: 2px;
+  width: 100%;
+}
+.할인혜택 .group .step_box .payRight .pay02 {
+  display: block;
+  margin-top: 2px;
+  color: var(--mian_color1, #404FC3);
+  font-size: 22px;
+  font-weight: bold;
+}
+.할인혜택 .group .step_box .payRight .pay_sale strong {
+  color: #7983D5;
+  font-size: 14px;
+  font-weight: 700;
+}
+.할인혜택 .year_sale {
+  margin-top: 21px;
+  border-radius: 10px;
+  background: #fff;
+  padding: 20px 20px 20px 15px;
+  box-sizing: border-box;
+  text-align: center;
+}
+.할인혜택 .year_sale a {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1rem !important;
+  padding-right: 8px;
+}
+.할인혜택 .year_sale a::after {
+  content: "";
+  display: inline-block;
+  transform: rotate(45deg);
+  position: absolute;
+  right: -2px;
+  top: 5px;
+  width: 6px;
+  height: 6px;
+  border-top: 2px solid rgba(199, 203, 233, 0.7019607843);
+  border-right: 2px solid rgba(199, 203, 233, 0.7019607843);
+}
+.할인혜택 .year_sale.domestic {
+  margin-top: 21px;
+}
+.할인혜택 .year_sale.domestic a {
+  color: var(--mian_color1, #404FC3);
+}
+.할인혜택 .year_sale.domestic a::after {
+  border-color: #404FC3;
+}
+.할인혜택 .year_sale.overseas {
+  background: #161C40;
+  margin-top: 10px;
+}
+.할인혜택 .year_sale.overseas a {
+  color: #C7CBE9;
+}
+
+.v_signalStreng.globalStock .sub_payment .step_wrap {
+  margin-top: 3px;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+.v_signalStreng.globalStock .sub_payment .step_wrap > .title {
+  width: calc(100% - 30px);
+  box-sizing: border-box;
+  margin: 18px auto 0;
+  color: #333;
+  font-size: 1rem;
+  font-weight: 700;
+}
+.v_signalStreng.globalStock .sub_payment .step_wrap .payment_guide {
+  padding: 0 24px 48px;
+}
+.v_signalStreng.globalStock .sub_payment .step_wrap .serviceStep .step_box .subscribe span {
+  color: var(--mian_color1, #404FC3);
+}
+.v_signalStreng.globalStock .sub_payment .step_wrap .serviceStep .step_box .payRight .pay02 {
+  gap: 5px 5px;
+}
+.v_signalStreng.globalStock .sub_payment .step_wrap .serviceStep .step_box .payRight .pay02 .pay_sale strong {
+  color: #7983D5;
+  font-size: 0.75rem;
+}
+.v_signalStreng.globalStock .sub_payment .step_wrap .serviceStep .pay_guideTxt::before {
+  color: var(--mian_color1, #404FC3);
+}
+.v_signalStreng.globalStock .sub_payment .step_wrap .payment_guide .pay_guideTxt {
+  display: block;
+  width: auto;
+  margin: 0;
+  box-sizing: border-box;
+}
+.v_signalStreng.globalStock .sub_payment .step_wrap .payment_guide .pay_guideTxt:nth-child(2) {
+  margin-top: 24px;
+}
+.v_signalStreng.globalStock .sub_payment .step_wrap .payment_guide .more {
+  cursor: pointer;
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-decoration: underline;
+  color: var(--mian_color1, #404FC3);
+  font-weight: 500;
+}
+.v_signalStreng.globalStock .sub_payment .step_wrap .payment_guide .pay_guideTxt:last-of-type {
+  margin: 0;
+  padding-bottom: 0;
+  border: none;
+}
+.v_signalStreng.globalStock .sub_payment .payment_guide .pay_guideTxt .card_overseas {
+  color: var(--mian_color1, #404FC3);
+  font-weight: 500;
+}
+.v_signalStreng.globalStock .sub_payment .payment_note .agree_chk .txt .agree_txt.agree_caution .refund_terms {
+  color: var(--mian_color1, #404FC3);
+  font-weight: 500;
+}
+
+.v_signalStreng.globalStock #wrap .modal.cardBox .pop_con .paypal_link {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  padding: 14px 16px;
+  border-radius: 8px;
+  background-color: #f7f8f9;
+}
+.v_signalStreng.globalStock #wrap .modal.cardBox .pop_con .paypal_link .payment {
+  color: #6A727B;
+  font-size: 0.8125rem;
+  font-weight: 400;
+}
+.v_signalStreng.globalStock #wrap .modal.cardBox .pop_con .paypal_link .payment .del_num {
+  display: inline-block;
+  padding: 0 8px;
+  position: relative;
+}
+.v_signalStreng.globalStock #wrap .modal.cardBox .pop_con .paypal_link .payment .del_img {
+  position: absolute;
+  left: 2px;
+  top: -3px;
+}
+.v_signalStreng.globalStock #wrap .modal.cardBox .pop_con .paypal_link .payment .sale_num {
+  color: var(--mian_color1, #404FC3);
+  font-weight: 700;
+}
+.v_signalStreng.globalStock #wrap .modal.cardBox .pop_con .paypal_link .txt {
+  color: #6A727B;
+  font-size: 0.8125rem;
+  font-weight: 400;
+}
+.v_signalStreng.globalStock #wrap .modal.cardBox .pop_con .paypal_link .txt a {
+  color: #404FC3;
+}
+
+.v_signalStreng.globalStock #wrap .modal.cardBox.card_overseas_02 .pop_con .txt {
+  margin-top: 16px;
+  color: #333;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+}
+.v_signalStreng.globalStock #wrap .modal.cardBox.card_overseas_02 .pop_con .txt b {
+  color: var(--mian_color1, #404FC3);
+  font-weight: 700;
+  text-decoration-line: underline;
+}
+.v_signalStreng.globalStock #wrap .modal.cardBox.card_overseas_02 .pop_con .txt:first-child {
+  margin-top: 0;
+}
+
+.v_signalStreng.globalStock #wrap .modal.payment_cacl02 .pop_header {
+  background-color: #fff;
+  padding: 24px 15px;
+  border: none;
+}
+.v_signalStreng.globalStock #wrap .modal.payment_cacl02 .pop_header .pop_title {
+  justify-content: center;
+  font-size: 1.25rem;
+  line-height: 1.14;
+  font-weight: bold;
+  color: #333;
+  box-sizing: border-box;
+}
+.v_signalStreng.globalStock #wrap .modal.payment_cacl02 .pop_header .clse::before,
+.v_signalStreng.globalStock #wrap .modal.payment_cacl02 .pop_header .clse::after {
+  width: 2px;
+  background-color: #333;
+}
+.v_signalStreng.globalStock #wrap .modal.payment_cacl02 .pop_con {
+  padding: 0 16px 25px;
+}
+.v_signalStreng.globalStock #wrap .modal.payment_cacl02 .pop_con .txt {
+  margin-top: 9px;
+  color: #000;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
+}
+.v_signalStreng.globalStock #wrap .modal.payment_cacl02 .pop_con .txt b {
+  color: var(--mian_color1, #404FC3);
+  font-weight: 700;
+  text-decoration-line: underline;
+}
+.v_signalStreng.globalStock #wrap .modal.payment_cacl02 .pop_con .txt:first-child {
+  margin-top: 0;
+}
+.v_signalStreng.globalStock #wrap .modal.payment_cacl02 .pop_con .btnArea.payBtn {
+  margin-top: 24px;
+}
+.v_signalStreng.globalStock #wrap .modal.payment_cacl02 .pop_con .btnArea.payBtn .btn {
+  border: none;
+  border-radius: 6px;
+  background-color: #C7CCD1;
+  color: #FFF;
+  font-size: 14px;
+  font-weight: 700;
+}
+.v_signalStreng.globalStock #wrap .modal.payment_cacl02 .pop_con .btnArea.payBtn .btn.btn_save {
+  background-color: var(--mian_color1, #404FC3);
+}
+
+.premium_applybtn {
+  padding: 0;
+}
+.premium_applybtn a {
+  display: block;
+  padding: 17px 5px;
+}
+
+.v_signalStreng.globalStock .sub_payment .payment_guide .pay_guideTxt .card_overseas img {
+  top: 0;
+}
+
+.globalStock .service_wrap .box.premium_box {
+  background-image: none;
+  background-color: #141931;
+}
+
+.globalStock .service_wrap .box.premium_box .bg_img {
+  background: url("/img/first_month_3300.png") no-repeat center 60%;
+  background-size: auto 264px;
+}/*# sourceMappingURL=choicestock_mijooeun.css.map */

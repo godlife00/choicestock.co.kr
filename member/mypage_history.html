@@ -38,7 +38,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
     <!-- css -->
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <link rel="stylesheet" type="text/css" href="../css/scss/choicestock.css" />
+    <link rel="stylesheet" type="text/css" href="../css/scss/choicestock_mijooeun.css" />
     <!-- js -->
     <script src="../js/choicestock.js"></script>
     <!-- 이 아래는 로컬에서만 사용되는 파일 -->
@@ -97,7 +97,7 @@
                                     <a href="#pay_cncl" class="btn_payCan auto_cncl show_pop02">정기결제취소</a>
                                 </th>
                                 <td class="num">
-                                    <span>ㆍ카드번호</span> <strong>****3423</strong><a href="../payment/step02_card.html"
+                                    <span>ㆍ카드번호</span> <strong>****3423</strong><a href="../payment/step02_routine.html"
                                         class="card_ch">변경</a>
                                 </td>
                             </tr>
@@ -121,7 +121,7 @@
                                     <a href="#pay_cncl" class="btn_payCan auto_cncl latest_signal">정기결제취소</a>
                                 </th>
                                 <td class="num">
-                                    <span>ㆍ카드번호</span> <strong>****3423</strong><a href="../payment/step02_card.html"
+                                    <span>ㆍ카드번호</span> <strong>****3423</strong><a href="../payment/step02_routine.html"
                                         class="card_ch">변경</a>
                                 </td>
                             </tr>
@@ -176,6 +176,29 @@
                         </tbody>
                     </table>
                 </div>
+                <!-- 스폐셜 연간결제  -->
+                <div class="mapage_service">
+                    <table border="1" class="service_table">
+                        <tbody>
+                            <tr>
+                                <th class="service">프리미엄 서비스:</th>
+                                <td class="day">2023.09/18 ~ 2024.10/18 (연간 정기결제-스페셜할인) </td>
+                            </tr>
+                            <tr>
+                                <th rowspan="2" class="system"><span>연간 정기결제</span>
+                                    <a href="#pay_cncl" class="btn_payCan auto_cncl latest_signal02">정기결제취소</a>
+                                </th>
+                                <td class="num">
+                                    <span>ㆍ카드번호</span> <strong>****3423</strong><a href="../payment/special_step02.html"
+                                        class="card_ch">변경</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="num"><span>ㆍ결제일</span> 2023.09/18<strong>일</strong></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
 
                 <!-- 정기결제 취소 -->
                 <div class="mapage_service">
@@ -202,6 +225,12 @@
                             </tr>
                         </thead>
                         <tbody>
+                            <tr>
+                                <td>23.09/18 <br> ~ 24.10/18 </td>
+                                <td>240,000원 <span class="in">연간 정기결제<br>- 스페셜할인</span></td>
+                                <td>카드 <span class="in">(**3423)</span></td>
+                                <td><span class="in"></span></td>
+                            </tr>
                             <tr>
                                 <td>20.07/06</td>
                                 <td>33,000원 <span class="in">월자동</span></td>
@@ -316,6 +345,27 @@
                     </div>
                 </div>
             </div>
+
+            <!-- 미주은-스폐셜 할인 이벤트 결제 취소 -->
+            <div class="modal payment_cacl02">
+                <div class="pop_header">
+                    <h1 class="pop_title">결제 취소</h1>
+                    <span class="clse">
+                        <!--닫기-->
+                    </span>
+                </div>
+                <div class="pop_con">
+                    <p class="txt">초이스스탁US 스폐셜 할인혜택 회원입니다.<br>결제 취소 시, 연간정기결제  <b>20% 스폐셜 할인 혜택은 종료</b>됩니다. 이후 재-결제시 정상가로 결제됩니다.</p>
+                    <p class="txt">결제취소를 진행하시겠습니까?</p>
+                    <div class="btnArea payBtn">
+                        <a href="#" class="btn btn_cncl"><i></i>예, 결제취소합니다,</a>
+                        <a href="#" class="btn btn_save">아니요</a>
+                    </div>                    
+                    
+                </div>
+            </div>
+            <!-- //미주은-스폐셜 할인 이벤트 결제 취소 -->            
+             
             <div class="blocker"></div>
         </div>
 
@@ -333,10 +383,16 @@
                 $('.modal').hide().removeClass('slideUp');
             });
             // 결제 취소를 선택한 경우
-            $('.modal.payment_cacl .btn.btn_cncl').on('click', function () {
+            $('.modal.payment_cacl .btn.btn_cncl, .btnArea.payBtn .btn.btn_save').on('click', function () {
                 $('body').css('overflow', '');
                 $('.blocker').hide();
                 $('.modal').hide().removeClass('slideUp');
+            });
+            // 미주은-스폐셜 할인 이벤트 결제 취소
+            $('.latest_signal02').click(function () {
+                $('.modal').hide().removeClass('slideUp');
+                $('.blocker').show();
+                $('.payment_cacl02').show().addClass('slideUp');
             });
         </script>
 
