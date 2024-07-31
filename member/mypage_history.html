@@ -383,16 +383,10 @@
                 $('.modal').hide().removeClass('slideUp');
             });
             // 결제 취소를 선택한 경우
-            $('.modal.payment_cacl .btn.btn_cncl, .btnArea.payBtn .btn.btn_save').on('click', function () {
+            $('.modal.payment_cacl .btn.btn_cncl').on('click', function () {
                 $('body').css('overflow', '');
                 $('.blocker').hide();
                 $('.modal').hide().removeClass('slideUp');
-            });
-            // 미주은-스폐셜 할인 이벤트 결제 취소
-            $('.latest_signal02').click(function () {
-                $('.modal').hide().removeClass('slideUp');
-                $('.blocker').show();
-                $('.payment_cacl02').show().addClass('slideUp');
             });
         </script>
 
