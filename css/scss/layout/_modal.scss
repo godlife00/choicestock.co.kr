@@ -1482,10 +1482,61 @@
 			}
 		}		
 	} 	
-
+	&.payment_cacl02 {
+		.pop_header {
+			background-color: #fff;
+			padding: 24px 15px;
+			border: none;            
+			.pop_title {
+				justify-content: center;
+				font-size: 1.25rem;
+				line-height: 1.14;
+				font-weight: bold;
+				color: #333;	
+				// padding-right: 40px;
+				box-sizing: border-box;
+			}
+			.clse::before,
+			.clse::after {
+				width: 2px;
+				background-color: #333;
+			}
+		}
+		.pop_con {
+			padding: 0 16px 25px;
+			.txt {
+				margin-top: 9px;
+				color: #000;			
+				font-size: 14px;			
+				font-weight: 400;
+				line-height: 20px; /* 142.857% */
+				b {
+					color: var(--mian_color1, #404FC3);						
+					font-weight: 700;			
+					text-decoration-line: underline;
+				}
+				&:first-child {
+					margin-top: 0;
+				}
+			}
+			.btnArea.payBtn {
+				margin-top: 24px;
+				.btn {
+					border: none;
+					border-radius: 6px;
+					background-color: #C7CCD1;
+					color: #FFF;				
+					font-size: 14px;				
+					font-weight: 700;		
+					&.btn_save {
+						background-color: var(--mian_color1, #404FC3);
+					}		
+				}
+			}
+		}
+		
+	}
 } 
-
-
 
 /* 미주미초이스 프리미엄 첫달 3,000원 */
 .globalStock .first_month_3300.md-modal {		

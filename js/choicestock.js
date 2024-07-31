@@ -1420,7 +1420,7 @@ $(document).ready(function () {
         $('body').css('overflow', 'hidden');
     });
     // 모달팝업 - 닫기
-    $('.modal .pop_header .clse, .blocker').on('click', function () {
+    $('.modal .pop_header .clse, .blocker, .payment_cacl02 .btn.btn_save').on('click', function () {
         $('body').css('overflow', '');
         $('.blocker').hide();
         $('.modal').hide().removeClass('slideUp');
@@ -1463,7 +1463,14 @@ $(document).ready(function () {
             $('.signal_pop01').show().addClass('slideUp');
         }        
     });
-    // 결제 이용약관 모달 팝업        
+    // 미주은-스폐셜 할인 이벤트 결제 취소
+    $('.v_signalStreng.globalStock .sub_login .mapage_service .service_table .system .latest_signal02').on('click', function () {        
+        $('body').css('overflow', 'hidden');
+        $('.modal').hide().removeClass('slideUp');
+        $('.blocker').show();
+        $('.payment_cacl02').show().addClass('slideUp');
+        
+    });    // 결제 이용약관 모달 팝업        
     $('.v_signalStreng.globalStock .refund_terms').on('click', function () {
         if ($(this).hasClass('no_signal')) {            
             return;
