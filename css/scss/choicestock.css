@@ -19515,6 +19515,11 @@ table.tableRanking td {
 }
 
 .globalStock .sub_login .link_home a {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px 7px;
   display: block;
   width: 100%;
   padding: 13px 5px;
@@ -19526,6 +19531,18 @@ table.tableRanking td {
   line-height: 1.19;
   border-radius: 5px;
   position: relative;
+}
+.globalStock .sub_login .link_home a b {
+  color: #f0cc09;
+}
+.globalStock .sub_login .link_home a::after {
+  content: "";
+  display: inline-block;
+  transform: rotate(45deg);
+  width: 6px;
+  height: 6px;
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
 }
 
 .globalStock .sub_login .link_home i {
