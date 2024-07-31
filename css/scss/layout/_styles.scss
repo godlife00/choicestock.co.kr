@@ -19492,11 +19492,7 @@ table.tableRanking td {
 }
 
 .globalStock .sub_login .link_home a {
-	position: relative;
-	display: flex;
-	align-items: center;
-    justify-content: center;
-	gap: 7px 7px;
+	display: block;
 	width: 100%;
 	padding: 13px 5px;
 	box-sizing: border-box;
