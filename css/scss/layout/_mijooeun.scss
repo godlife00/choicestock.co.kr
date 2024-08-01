@@ -58,7 +58,7 @@
 		.step_box {
 			border-radius: 16px;
 			border: 1px solid #DFE0EF;
-			background: #FFF url('/img/bg_wallet.png') no-repeat calc(100% - 15px) center;
+			background: #FFF url('/img/service/bg_wallet.png') no-repeat calc(100% - 15px) center;
 			background-size: 64px 68px;
 			padding: 25px 24px 29px;
 			box-sizing: border-box;
@@ -272,6 +272,11 @@
 		&:first-child {
 			margin-top: 0;
 		}
+		.guide_txt {
+			font-size: 0.75rem;
+			line-height: 1.72;
+			color: #939393;
+		}
 	}
 }
 .premium_applybtn {
@@ -284,11 +289,7 @@
 .v_signalStreng.globalStock .sub_payment .payment_guide .pay_guideTxt .card_overseas img {
 	top: 0;
 }
-.globalStock .service_wrap .box.premium_box {
-	background-image:none;
-	background-color: #141931;
-}
 .globalStock .service_wrap .box.premium_box .bg_img {
-	background: url('/img/first_month_3300.png') no-repeat center 60%;
+	background: url('/img/service/first_month_3300.png') no-repeat center 60%;
 	background-size: auto 264px;
 }

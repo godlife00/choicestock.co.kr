@@ -20413,6 +20413,8 @@ table.tableRanking td {
 	font-size: 0.84rem;
 	line-height: 1.4;
 	margin-top: 7px;
+	word-break: normal;
+    word-wrap: break-word;
 }
 .globalStock .pay_edt .form_table td .certification_area .refund_terms {
 	cursor: pointer;

@@ -382,7 +382,7 @@
                 $('.modal').hide().removeClass('slideUp');
             });
             // 결제 취소를 선택한 경우
-            $('.modal.payment_cacl .btn.btn_cncl').on('click', function () {
+            $('.modal .btn.btn_cncl').on('click', function () {
                 $('body').css('overflow', '');
                 $('.blocker').hide();
                 $('.modal').hide().removeClass('slideUp');
@@ -432,7 +432,7 @@
                                                     <p class="txt_info">신용카드(**8787)</p>
                                                 </div>
                                                 <div class="certification_area">
-                                                    <p class="txt">
+                                                    <!-- <p class="txt">
                                                         <b>정기결제</b> :
                                                         결제 주기가 종료될 때까지 서비스를 이용할 수 있으며, 결제 금액은 환불되지 않습니다. (단, 결제 당일 취소 시
                                                         환불되며, 서비스 이용은 즉시 중단됩니다.)<br><br>
@@ -440,7 +440,14 @@
                                                         환불계좌로 입금처리됩니다.
                                                     </p>
                                                     <a href="../terms.html#refund_policy" class="go_link"
-                                                        target="_blank"><i></i>환불정책 바로가기</a>
+                                                        target="_blank"><i></i>환불정책 바로가기</a> -->
+                                                    <p class="txt">
+                                                        <b>연간 정기결제</b> :
+                                                        스페셜 할인혜택이 제공되는 연간 정기결제의 경우 주기가 종료될 때까지는 서비스를 계속 이용할 수 있으며, 결제 금액은 환불되지 않습니다.<br> 
+                                                        <br>
+                                                        단, 결제일로 부터 14일 이내 해지 시, 사용일을 차감하여 환불되며 서비스 이용은 즉시 종료됩니다.<br>
+                                                        *환불금액 : 결제금액에서 이용일수와 환불수수료(서비스 결제금액의 3.5%)를 차감한 금액
+                                                    </p>   
                                                 </div>
                                                 <!-- //certification_area -->
                                             </td>

@@ -1398,7 +1398,7 @@ $(document).ready(function () {
         $('.blocker').show();
         $('.agreePopBox.box_04').show().addClass('slideUp');
     });
-    $('.v_signalStreng.globalStock .sub_payment .payment_guide .pay_guideTxt').on('click', function () {                
+    $('.v_signalStreng.globalStock .sub_payment .payment_guide .pay_guideTxt .card_overseas').on('click', function () {                
         $('.modal').hide().removeClass('slideUp');
         $('.blocker').show();
         $('.cardBox.card_overseas_01').show().addClass('slideUp');

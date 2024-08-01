@@ -20433,6 +20433,8 @@ table.tableRanking td {
   font-size: 0.84rem;
   line-height: 1.4;
   margin-top: 7px;
+  word-break: normal;
+  word-wrap: break-word;
 }
 
 .globalStock .pay_edt .form_table td .certification_area .refund_terms {
@@ -36137,7 +36139,7 @@ body.v_signalStreng {
 .할인혜택 .group .step_box {
   border-radius: 16px;
   border: 1px solid #DFE0EF;
-  background: #FFF url("/img/bg_wallet.png") no-repeat calc(100% - 15px) center;
+  background: #FFF url("/img/service/bg_wallet.png") no-repeat calc(100% - 15px) center;
   background-size: 64px 68px;
   padding: 25px 24px 29px;
   box-sizing: border-box;
@@ -36334,6 +36336,11 @@ body.v_signalStreng {
 .v_signalStreng.globalStock #wrap .modal.cardBox.card_overseas_02 .pop_con .txt:first-child {
   margin-top: 0;
 }
+.v_signalStreng.globalStock #wrap .modal.cardBox.card_overseas_02 .pop_con .txt .guide_txt {
+  font-size: 0.75rem;
+  line-height: 1.72;
+  color: #939393;
+}
 
 .premium_applybtn {
   padding: 0;
@@ -36347,12 +36354,7 @@ body.v_signalStreng {
   top: 0;
 }
 
-.globalStock .service_wrap .box.premium_box {
-  background-image: none;
-  background-color: #141931;
-}
-
 .globalStock .service_wrap .box.premium_box .bg_img {
-  background: url("/img/first_month_3300.png") no-repeat center 60%;
+  background: url("/img/service/first_month_3300.png") no-repeat center 60%;
   background-size: auto 264px;
 }/*# sourceMappingURL=choicestock_mijooeun.css.map */
