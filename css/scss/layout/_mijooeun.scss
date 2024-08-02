@@ -1,0 +1,348 @@
+// 미주은 미국주식으로 은퇴하기
+#container {
+	padding-bottom: 0;
+}
+.globalStock .service_wrap .box.premium_box .title_box h1 {
+	color: #C7CBE9;
+	font-size: 24px;	
+	font-weight: 700;	
+	b {
+		margin-top: 3px;
+		display: block;
+		color: #FFF;		
+		font-size: 36px;
+		font-weight: 700;		
+	}
+}
+.txt_ai {
+	margin-top: 20px;
+	p {
+		color: #FFF;
+		text-align: center;		
+		font-size: 20px;		
+		font-weight: 700;
+		line-height: 25px; /* 125% */
+		b {
+			display: block;
+			color: #FFF;
+			text-align: center;		
+			font-size: 20px;		
+			font-weight: 700;
+			line-height: 25px; /* 125% */
+		}
+	}
+}
+.할인혜택 {
+	padding: 48px 24px;
+	box-sizing: border-box;
+	background: var(--mian_color1, #404FC3);
+	.txt {
+		p {
+			color: #FFF;		
+			font-size: 22px;
+			font-weight: 700;
+			line-height: 29px;
+			b {
+				color: #F8D54E;
+				font-size: 22px;
+				font-weight: 700;
+				line-height: 27px; /* 122.727% */
+			}
+		}		
+	}
+	.group {
+		display: flex;
+		flex-direction: column;
+		gap: 21px 0;				
+		margin-top: 16px;
+		.step_box {
+			border-radius: 16px;
+			border: 1px solid #DFE0EF;
+			background: #FFF url('/img/bg_wallet.png') no-repeat calc(100% - 15px) center;
+			background-size: 64px 68px;
+			padding: 25px 24px 29px;
+			box-sizing: border-box;
+			.top {
+				.title {
+					color: #333;					
+					font-size: 14px;					
+					font-weight: 800;					
+				}
+			}
+			.payRight {
+				.pay01 {
+					position: relative;
+					display: block;
+					margin-top: 14px;
+					color: #999;
+					font-size: 16px;					
+					font-weight: normal;		
+				}				
+				.del_img {
+					display: inline-block;
+					position: absolute;
+					left: -5px;
+					right: 0;
+					top: 2px;
+					width: 100%;
+				}
+
+				.pay02 {					
+					display: block;
+					margin-top: 2px;
+					color: var(--mian_color1, #404FC3);					
+					font-size: 22px;					
+					font-weight: bold;					
+				}				
+				.pay_sale {
+					strong {
+						color: #7983D5;
+						font-size: 14px;					
+						font-weight: 700;					
+					}
+
+				}
+			}
+		}
+	}
+	.year_sale {
+		margin-top: 21px;
+		border-radius: 10px;
+		background: #fff;
+		padding: 20px 20px 20px 15px;
+		box-sizing: border-box;
+		text-align: center;
+		a {
+			position: relative;
+			display: inline-block;
+			text-align: center;						
+			font-weight: bold;			
+			font-size: 1rem !important;			
+			padding-right: 8px;
+			&::after {
+				content: "";
+				display: inline-block;
+				transform: rotate(45deg);
+				position: absolute;
+				right: -2px;
+				top: 5px;
+				width: 6px;
+				height: 6px;
+				border-top: 2px solid #c7cbe9b3;
+				border-right: 2px solid #c7cbe9b3;
+			}
+		}
+		&.domestic {
+			margin-top: 21px;
+			a {
+				color: var(--mian_color1, #404FC3);
+				&::after {
+					border-color: #404FC3;
+				}
+			}
+		}
+		&.overseas {
+			background: #161C40;
+			margin-top: 10px;
+			a {
+				color: #C7CBE9;
+			}
+		}
+	}
+}
+
+// 서비스 결제
+.v_signalStreng.globalStock .sub_payment {
+	.step_wrap {
+		margin-top: 3px;
+		border-top-left-radius: 16px;
+		border-top-right-radius: 16px;
+		> .title {
+			width: calc(100% - 30px);
+			box-sizing: border-box;
+			margin: 18px auto 0;
+			color: #333;			
+			font-size: 1rem;			
+			font-weight: 700;			
+		}
+		.payment_guide {					
+			padding: 0 24px 48px;
+		}
+		.serviceStep .step_box .subscribe span {
+			color: var(--mian_color1, #404FC3);		
+		}
+		.serviceStep .step_box .payRight .pay02 {
+			gap: 5px 5px;
+		}
+		.serviceStep .step_box .payRight .pay02 .pay_sale strong {
+			color: #7983D5;		
+			font-size: 0.75rem;
+		}
+		
+		.serviceStep .pay_guideTxt::before {
+			color: var(--mian_color1, #404FC3);		
+		}
+		.payment_guide .pay_guideTxt {
+			display: block;
+			width: auto;
+			margin: 0;				
+			// width: 100%;
+			box-sizing: border-box;		
+			&:nth-child(2) {
+				margin-top: 24px;
+			}		
+		}
+		.payment_guide .more {
+			cursor: pointer;		
+			font-size: 0.75rem;
+			font-weight: 500;		
+			text-decoration: underline;
+			color: var(--mian_color1, #404FC3);			
+			font-weight: 500;
+		}
+		.payment_guide .pay_guideTxt:last-of-type {
+			margin: 0;
+			padding-bottom: 0;
+			border: none;
+		}	
+	}	
+	.payment_guide .pay_guideTxt .card_overseas {
+		color: var(--mian_color1, #404FC3);		
+		font-weight: 500;
+	}
+	.payment_note .agree_chk .txt .agree_txt.agree_caution .refund_terms {
+		color: var(--mian_color1, #404FC3);		
+		font-weight: 500;
+	}
+	
+}
+.v_signalStreng.globalStock #wrap .modal.cardBox .pop_con .paypal_link {
+	display: flex;
+	flex-direction: column;
+    flex-wrap: wrap;
+	gap: 7px;
+	margin-top: 12px;
+    margin-bottom: 12px;
+    padding: 14px 16px;
+    border-radius: 8px;
+    background-color: #f7f8f9;    
+	.payment {		
+		color: #6A727B;		
+		font-size: 0.8125rem;
+		font-weight: 400;		
+		b {
+
+		}	
+		.del_num {
+			display: inline-block;
+			padding: 0 8px;
+			position: relative;
+		}	
+		.del_img {
+			position: absolute;
+			left: 2px;
+			top: -3px;
+		}
+		.sale_num {
+			color: var(--mian_color1, #404FC3);						
+			font-weight: 700;			
+		}
+	}
+	.txt {
+		color: #6A727B;		
+		font-size: 0.8125rem;
+		font-weight: 400;		
+		a {
+			color: #404FC3;
+		}
+	}
+}
+.v_signalStreng.globalStock #wrap .modal.cardBox.card_overseas_02 {
+	.pop_con .txt {
+		margin-top: 16px;
+		color: #333;
+		font-size: 14px;		
+		line-height: 20px;
+		font-weight: 400;		
+		b {
+			color: var(--mian_color1, #404FC3);						
+			font-weight: 700;			
+			text-decoration-line: underline;
+		}
+		&:first-child {
+			margin-top: 0;
+		}
+	}
+}
+.v_signalStreng.globalStock #wrap .modal.payment_cacl02 {
+	.pop_header {
+		background-color: #fff;
+		padding: 24px 15px;
+		border: none;            
+		.pop_title {
+			justify-content: center;
+			font-size: 1.25rem;
+			line-height: 1.14;
+			font-weight: bold;
+			color: #333;	
+			// padding-right: 40px;
+			box-sizing: border-box;
+		}
+		.clse::before,
+		.clse::after {
+			width: 2px;
+			background-color: #333;
+		}
+	}
+	.pop_con {
+		padding: 0 16px 25px;
+		.txt {
+			margin-top: 9px;
+			color: #000;			
+			font-size: 14px;			
+			font-weight: 400;
+			line-height: 20px; /* 142.857% */
+			b {
+				color: var(--mian_color1, #404FC3);						
+				font-weight: 700;			
+				text-decoration-line: underline;
+			}
+			&:first-child {
+				margin-top: 0;
+			}
+		}
+		.btnArea.payBtn {
+			margin-top: 24px;
+			.btn {
+				border: none;
+				border-radius: 6px;
+				background-color: #C7CCD1;
+				color: #FFF;				
+				font-size: 14px;				
+				font-weight: 700;		
+				&.btn_save {
+					background-color: var(--mian_color1, #404FC3);
+				}		
+			}
+		}
+	}
+	
+}
+.premium_applybtn {
+	padding: 0;
+	a {
+		display: block;		
+		padding: 17px 5px;
+	}
+}
+.v_signalStreng.globalStock .sub_payment .payment_guide .pay_guideTxt .card_overseas img {
+	top: 0;
+}
+.globalStock .service_wrap .box.premium_box {
+	background-image:none;
+	background-color: #141931;
+}
+.globalStock .service_wrap .box.premium_box .bg_img {
+	background: url('/img/first_month_3300.png') no-repeat center 60%;
+	background-size: auto 264px;
+}
