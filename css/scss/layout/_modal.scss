@@ -317,6 +317,9 @@
 	line-height: 1.43;
 	letter-spacing: normal;
 	color: #333;
+	@media (max-width: 374px) {
+		letter-spacing: -1px;
+	}	
 }
 
 .v_signalStreng.globalStock #wrap .modal.signal_pop01 .pop_con .txt b {

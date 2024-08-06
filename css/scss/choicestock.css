@@ -30204,6 +30204,13 @@ body.v_signalStreng {
 .v_signalStreng.globalStock #wrap #container .mainBox.attr .adequateArea .listWrap .mid .latest_signal_lp b.decrease {
   color: #303FAF;
 }
+@media (max-width: 374px) {
+  .v_signalStreng.globalStock #wrap #container .mainBox.attr .adequateArea .listWrap .mid .latest_signal,
+  .v_signalStreng.globalStock #wrap #container .mainBox.attr .adequateArea .listWrap .mid .latest_signal_lp {
+    letter-spacing: -1.5px;
+  }
+}
+
 .v_signalStreng.globalStock #wrap #container .mainBox.attr .adequateArea .listWrap .mid .latest_signal::before,
 .v_signalStreng.globalStock #wrap #container .mainBox.attr .adequateArea .listWrap .mid .latest_signal_lp::before {
   content: "";
@@ -33005,6 +33012,11 @@ body.v_signalStreng {
   line-height: 1.43;
   letter-spacing: normal;
   color: #333;
+}
+@media (max-width: 374px) {
+  .v_signalStreng.globalStock #wrap .modal.signal_pop01 .pop_con .txt {
+    letter-spacing: -1px;
+  }
 }
 
 .v_signalStreng.globalStock #wrap .modal.signal_pop01 .pop_con .txt b {

@@ -30706,7 +30706,9 @@ body.v_signalStreng {
 			// 
 		}		
 	}
-	
+	@media (max-width: 374px) {
+		letter-spacing: -1.5px;
+	}	
 }
 
 .v_signalStreng.globalStock #wrap #container .mainBox.attr .adequateArea .listWrap .mid .latest_signal::before,
