@@ -1,0 +1,32 @@
+# node_modules 폴더를 Git에서 제외
+node_modules/
+
+# 빌드 결과물 폴더 제외
+dist/
+build/
+
+# SASS 컴파일 결과물 제외
+*.css
+*.css.map
+
+# OS별 메타데이터 제외
+.DS_Store
+Thumbs.db
+
+# 환경 변수 파일 제외
+.env
+
+# 개인 설정 파일 제외
+.vscode/
+.idea/
+
+# 로그 파일 및 디버그 파일 제외
+*.log
+
+# 기타 불필요한 파일들 제외
+*.bak
+*.tmp
+*.swp
+
+# 특정 HTML 파일 제외
+
