@@ -3190,6 +3190,11 @@ table.tableRanking td {
   opacity: 1;
 }
 
+.globalStock .main_mid.event_recipe table.tableRanking .num .same {
+  display: block;
+  font-size: 0.75rem;
+}
+
 .globalStock .main_mid.event_recipe table.tableRanking .num.last_year {
   vertical-align: top;
   width: 90px;
