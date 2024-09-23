@@ -171,7 +171,7 @@ $(document).ready(function () {
     customizeAndAppendList();  // 종목검색 개요탭 등 상단 고정 종목명 함수 실행
 
     
-    if ($('.headerTop').length) {
+    if ($('#header').length) {
         // 스크롤시 헤더 상단 고정 스크립트    
         var headerHeight = $('#header').innerHeight();
         var headerOffset = $('#header .headerTop').offset().top;    
@@ -935,6 +935,30 @@ $(document).ready(function () {
         });
     }   
 
+    // 메인 하단 - 패밀리 사이트 링크 배너
+    if ($('.bannerSwiper').length) {        
+        var slideCount = document.querySelectorAll('.bannerSwiper .swiper-slide').length;
+        var swiper = new Swiper(".bannerSwiper", {
+            slidesPerView: 1, // 한 번에 보이는 슬라이드 수를 1로 설정
+            loop: slideCount > 1, // 슬라이드가 2개 이상일 때만 loop 설정
+            spaceBetween: 30,
+            centeredSlides: true,
+            // 슬라이드가 두 개 이상일 때만 자동재생
+            autoplay: slideCount > 1 ? {
+                delay: 3500,
+                disableOnInteraction: false,
+            } : false,
+            pagination: slideCount > 1 ? { // 슬라이드가 두 개 이상일 때만 pagination 활성화
+                el: ".swiper-pagination",
+            } : false,
+        });
+
+        // 슬라이드가 1개일 때 pagination 요소를 숨김
+        if (slideCount <= 1) {
+            document.querySelector('.swiper-pagination').style.display = 'none';
+        }
+    }
+
 
     /************************/
     /****  add active  *****/
@@ -1417,7 +1441,7 @@ $(document).ready(function () {
         $('.blocker').show();
         $('.agreePopBox.box_04').show().addClass('slideUp');
     });
-    $('.v_signalStreng.globalStock .sub_payment .payment_guide .pay_guideTxt .card_overseas').on('click', function () {                
+    $('.v_signalStreng.globalStock .sub_payment .payment_guide .pay_guideTxt').on('click', function () {
         $('.modal').hide().removeClass('slideUp');
         $('.blocker').show();
         $('.cardBox.card_overseas_01').show().addClass('slideUp');

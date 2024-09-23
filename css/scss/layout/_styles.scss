@@ -32870,9 +32870,22 @@ body.v_signalStreng {
 		.info_txt {
 			text-align: center;
 			padding: 0;
+			margin: 0 auto;
+			max-width: 443px;
 			height: 270px;			
+			@media (min-width:320px) and (max-width: 358px) {
+				height: 240px;			
+			}
+			
+			@media (min-width:375px) and (max-width:700px) {
+				height: 240px;			
+			}
+			
+			@media (min-width:701px) and (max-width:759px) {
+				height: 270px;			
+			}
 			background: url('/img/banner/event_mainBtm_240123.png') no-repeat center 0;
-			background-size: contain !important;
+			background-size: cover !important;			
 			p {
 				display: none;
 				text-align: center;
@@ -33290,4 +33303,18 @@ body.v_signalStreng {
 			}			
 		}
 	}
+}
+
+.family_banner {
+	padding: 35px 15px 0;
+}
+
+.family_banner .bannerSwiper {
+	padding-bottom: 30px;
+}
+
+.family_banner .bannerSwiper img {
+	display: inline-block;
+	width: 100%;
+	height: 100%;
 }

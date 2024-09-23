@@ -3190,6 +3190,11 @@ table.tableRanking td {
   opacity: 1;
 }
 
+.globalStock .main_mid.event_recipe table.tableRanking .num .same {
+  display: block;
+  font-size: 0.75rem;
+}
+
 .globalStock .main_mid.event_recipe table.tableRanking .num.last_year {
   vertical-align: top;
   width: 90px;
@@ -30208,6 +30213,13 @@ body.v_signalStreng {
 .v_signalStreng.globalStock #wrap #container .mainBox.attr .adequateArea .listWrap .mid .latest_signal_lp b.decrease {
   color: #303FAF;
 }
+@media (max-width: 374px) {
+  .v_signalStreng.globalStock #wrap #container .mainBox.attr .adequateArea .listWrap .mid .latest_signal,
+  .v_signalStreng.globalStock #wrap #container .mainBox.attr .adequateArea .listWrap .mid .latest_signal_lp {
+    letter-spacing: -1.5px;
+  }
+}
+
 .v_signalStreng.globalStock #wrap #container .mainBox.attr .adequateArea .listWrap .mid .latest_signal::before,
 .v_signalStreng.globalStock #wrap #container .mainBox.attr .adequateArea .listWrap .mid .latest_signal_lp::before {
   content: "";
@@ -32324,9 +32336,26 @@ body.v_signalStreng {
 .v_signalStreng.globalStock .signalpop.event2024_payment .content .info_txt {
   text-align: center;
   padding: 0;
+  margin: 0 auto;
+  max-width: 443px;
   height: 270px;
   background: url("/img/banner/event_mainBtm_240123.png") no-repeat center 0;
-  background-size: contain !important;
+  background-size: cover !important;
+}
+@media (min-width: 320px) and (max-width: 358px) {
+  .v_signalStreng.globalStock .signalpop.event2024_payment .content .info_txt {
+    height: 240px;
+  }
+}
+@media (min-width: 375px) and (max-width: 700px) {
+  .v_signalStreng.globalStock .signalpop.event2024_payment .content .info_txt {
+    height: 240px;
+  }
+}
+@media (min-width: 701px) and (max-width: 759px) {
+  .v_signalStreng.globalStock .signalpop.event2024_payment .content .info_txt {
+    height: 270px;
+  }
 }
 .v_signalStreng.globalStock .signalpop.event2024_payment .content .info_txt p {
   display: none;
@@ -32706,6 +32735,20 @@ body.v_signalStreng {
   border-right: 1px solid #404fc3;
 }
 
+.family_banner {
+  padding: 35px 15px 0;
+}
+
+.family_banner .bannerSwiper {
+  padding-bottom: 30px;
+}
+
+.family_banner .bannerSwiper img {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
 .v_signalStreng.globalStock #wrap #container .tooltip {
   display: none;
   position: absolute;
@@ -33009,6 +33052,11 @@ body.v_signalStreng {
   line-height: 1.43;
   letter-spacing: normal;
   color: #333;
+}
+@media (max-width: 374px) {
+  .v_signalStreng.globalStock #wrap .modal.signal_pop01 .pop_con .txt {
+    letter-spacing: -1px;
+  }
 }
 
 .v_signalStreng.globalStock #wrap .modal.signal_pop01 .pop_con .txt b {
