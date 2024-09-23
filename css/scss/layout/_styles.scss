@@ -2870,6 +2870,10 @@ table.tableRanking td {
 	font-weight: bold;
 	opacity: 1;
 }
+.globalStock .main_mid.event_recipe table.tableRanking .num .same {
+	display: block;	
+	font-size: 0.75rem;
+}
 
 .globalStock .main_mid.event_recipe table.tableRanking .num.last_year {
 	vertical-align: top;
@@ -30710,7 +30714,9 @@ body.v_signalStreng {
 			// 
 		}		
 	}
-	
+	@media (max-width: 374px) {
+		letter-spacing: -1.5px;
+	}	
 }
 
 .v_signalStreng.globalStock #wrap #container .mainBox.attr .adequateArea .listWrap .mid .latest_signal::before,

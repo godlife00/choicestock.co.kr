@@ -298,39 +298,58 @@ $(document).ready(function () {
         $('#container').css('padding-top','0');
     }
    
-    //검색
+    //검색    
+    function initSearchInput(inputSelector, btnSelector, titleSelector, autocompleteSelector) {
+        $(inputSelector).on("click", function() {
+            // 현재 클릭 이벤트는 아무런 동작을 하지 않음
+        });
+
+        $(inputSelector).on("keydown", function() {
+            $(this).addClass('keydown');
+            // $(btnSelector).css('top', '15px');
+            $(titleSelector).addClass('keydown');
+            $(autocompleteSelector).addClass('focus_on').show();
+        });
+
+        $(inputSelector).on("input", function() {
+            const inputValue = $(this).val().trim();
+            if (inputValue === '') {
+                $('.globalStock .main_searching .searchArea .searchInput').val('').removeClass('keydown');
+                $('.globalStock .main_searching .sch_autocomplete').removeClass('focus_on _show');
+                $(autocompleteSelector).removeClass('focus_on').hide();
+            }
+        });
+
+        $(inputSelector).on("focusout", function() {
+            $(titleSelector).removeClass('keydown');
+            $(this).removeClass('keydown');
+            $(btnSelector).css('top', '11px');
+            $(autocompleteSelector).hide();
+        });
+    }
+
     if ($('.sub_search').length) {
-        // $('#footer').removeClass('fix_footer');
         $('.searchInput').focus().click();
     }
-    $('.globalStock .sub_search .searching .searchArea .searchInput').on("click", function () {
-        // $('#footer').removeClass('fix_footer');        
-    });
-    $('.globalStock .sub_search .searching .searchArea .searchInput').on("keydown", function () {
-        // $('#footer').removeClass('fix_footer');
-        $(this).addClass('keydown');
-        $('.globalStock .sub_search .searching .searchArea .searchBtn').css('top', '15px');
-        $('.globalStock .sub_search .searching .searchArea .sch_title').addClass('keydown');
-        $('.globalStock .sub_search .searching .sch_autocomplete').addClass('focus_on').show();
-    });
-    $('.globalStock .sub_search .searching .searchArea .searchInput').on("focusout", function () {
-        $('.globalStock .sub_search .searching .searchArea .sch_title').removeClass('keydown');
-        $(this).removeClass('keydown');
-        $('.globalStock .sub_search .searching .searchArea .searchBtn').css('top', '11px');
-        $('.globalStock .sub_search .searching .sch_autocomplete').hide();
-        $('.globalStock.wowtv .header_wowtv + .search_top.searching .searchArea .searchBtn').css('top', '11px');
-    });
-    $('.globalStock .main_searching .searchArea .searchInput').on("keydown", function () {
-        // $('#footer').removeClass('fix_footer');
-        $(this).addClass('keydown');
-        // $('.globalStock .main_searching .searchArea .searchBtn').css('top', '15px');
-        $('.globalStock .main_searching .searchArea .sch_title').addClass('keydown');
-        $('.globalStock .main_searching .sch_autocomplete').addClass('focus_on').show();
-    });
-    $(window).on('pageshow', function (event) {
+
+    initSearchInput(
+        '.globalStock .sub_search .searching .searchArea .searchInput',
+        '.globalStock .sub_search .searching .searchArea .searchBtn',
+        '.globalStock .sub_search .searching .searchArea .sch_title',
+        '.globalStock .sub_search .searching .sch_autocomplete'
+    );
+
+    initSearchInput(
+        '.globalStock .main_searching .searchArea .searchInput',
+        '.globalStock .main_searching .searchArea .searchBtn',
+        '.globalStock .main_searching .searchArea .sch_title',
+        '.globalStock .main_searching .sch_autocomplete'
+    );
+
+    $(window).on('pageshow', function(event) {
         if (event.originalEvent.persisted) {            
             $('.globalStock .main_searching .searchArea .searchInput').val('').removeClass('keydown');
-            $('.globalStock .main_searching .sch_autocomplete').removeClass('focus_on _show');            
+            $('.globalStock .main_searching .sch_autocomplete').removeClass('focus_on _show');
         }
     });
 
