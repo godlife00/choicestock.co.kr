@@ -19239,17 +19239,17 @@ table.tableRanking td {
 		margin-top: 12px;
 		cursor: pointer;		
 		font-size: 0.75rem;
-		line-height: 1.42;
+		font-weight: 500;	
+		line-height: 1.58;	
 		color: #404fc3;
-		font-weight: bold;
-		text-decoration: underline;		
+		// text-decoration: underline;		
 		a {
 			padding-left: 5px;
 			font-size: 0.75rem;
 			line-height: 1.42;
+			font-weight: 500;	
 			color: #404fc3;
-			font-weight: bold;
-			text-decoration-line: underline;
+			text-decoration: underline;		
 		}
 	}	
 	
