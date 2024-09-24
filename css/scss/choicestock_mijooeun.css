@@ -19259,18 +19259,20 @@ table.tableRanking td {
 .globalStock .sub_login .agree_area .agree_from .phonePin_form .dsc_overseas {
   display: flex;
   flex-wrap: wrap;
-  gap: 5px;
   margin-top: 12px;
-  font-size: 0.875rem;
-  line-height: 1.14;
-  color: #6a727b;
-  text-align: left;
+  cursor: pointer;
+  font-size: 0.75rem;
+  line-height: 1.42;
+  color: #404fc3;
+  font-weight: bold;
+  text-decoration: underline;
 }
 .globalStock .sub_login .agree_area .agree_from .phonePin_form .dsc_overseas a {
-  color: #404FC3;
-  font-size: 0.875rem;
-  line-height: 1.14;
-  font-weight: 500;
+  padding-left: 5px;
+  font-size: 0.75rem;
+  line-height: 1.42;
+  color: #404fc3;
+  font-weight: bold;
   text-decoration-line: underline;
 }
 
