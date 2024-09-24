@@ -1441,7 +1441,7 @@ $(document).ready(function () {
         $('.blocker').show();
         $('.agreePopBox.box_04').show().addClass('slideUp');
     });
-    $('.v_signalStreng.globalStock .sub_payment .payment_guide .pay_guideTxt').on('click', function () {
+    $('.v_signalStreng.globalStock .sub_payment span.card_overseas').on('click', function () {
         $('.modal').hide().removeClass('slideUp');
         $('.blocker').show();
         $('.cardBox.card_overseas_01').show().addClass('slideUp');
@@ -1459,7 +1459,7 @@ $(document).ready(function () {
         $('.wow_secession2').show().addClass('md-show slideUp');
     });
     // 모달 팝업 누르면 바디스크롤 막기
-    $('.v_signalStreng.globalStock .sub_payment .payment_note .age_link, .v_signalStreng.globalStock .sub_payment .payment_guide .pay_guideTxt').on('click', function () {
+    $('.v_signalStreng.globalStock .sub_payment span.card_overseas, .v_signalStreng.globalStock .sub_payment .payment_note .age_link, .v_signalStreng.globalStock .sub_payment .payment_guide .pay_guideTxt').on('click', function () {
         $('body').css('overflow', 'hidden');
     });
     // 모달팝업 - 닫기
@@ -1511,9 +1511,24 @@ $(document).ready(function () {
         $('body').css('overflow', 'hidden');
         $('.modal').hide().removeClass('slideUp');
         $('.blocker').show();
-        $('.payment_cacl02').show().addClass('slideUp');
-        
-    });    // 결제 이용약관 모달 팝업        
+        $('.payment_cacl02').show().addClass('slideUp');        
+    });
+    // 기존결제가 있는 경우 : 월 정기결제(첫달 1,000원) 구독에 가입되어 있습니다.
+    $('.v_signalStreng.globalStock .sub_payment .serviceStep .step_box .subscribe .dup_pay').on('click', function () {        
+        $('body').css('overflow', 'hidden');
+        $('.modal').hide().removeClass('slideUp');
+        $('.blocker').show();
+        $('.payment_cacl03').show().addClass('slideUp');        
+    });
+    // 기존결제가 있는 경우 : 기간결제(6개월) 구독에 가입되어 있습니다.
+    $('.v_signalStreng.globalStock .sub_payment .serviceStep .step_box .subscribe .dup_pay2').on('click', function () {        
+        $('body').css('overflow', 'hidden');
+        $('.modal').hide().removeClass('slideUp');
+        $('.blocker').show();
+        $('.payment_cacl04').show().addClass('slideUp');        
+    });
+
+    // 결제 이용약관 모달 팝업        
     $('.v_signalStreng.globalStock .refund_terms').on('click', function () {
         if ($(this).hasClass('no_signal')) {            
             return;

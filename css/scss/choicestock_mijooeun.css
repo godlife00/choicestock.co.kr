@@ -19060,6 +19060,14 @@ table.tableRanking td {
   border-radius: 12px;
   background-color: #f7f8f9;
 }
+.globalStock .sub_login .agree_area .agree_from .overseas_guide {
+  margin-top: 5px;
+  padding-left: 25px;
+  font-size: 0.875rem;
+  line-height: 1.14;
+  color: #6a727b;
+  text-align: left;
+}
 .globalStock .sub_login .agree_area .agree_from .free_sum,
 .globalStock .sub_login .agree_area .agree_from .free_sum strong {
   color: #333;
@@ -19247,6 +19255,23 @@ table.tableRanking td {
   font-size: 0.75rem;
   line-height: 1.3;
   color: #f2333a;
+}
+.globalStock .sub_login .agree_area .agree_from .phonePin_form .dsc_overseas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: 12px;
+  font-size: 0.875rem;
+  line-height: 1.14;
+  color: #6a727b;
+  text-align: left;
+}
+.globalStock .sub_login .agree_area .agree_from .phonePin_form .dsc_overseas a {
+  color: #404FC3;
+  font-size: 0.875rem;
+  line-height: 1.14;
+  font-weight: 500;
+  text-decoration-line: underline;
 }
 
 .globalStock .sub_login .agree_area .agree_from .phonePin_form .pinBtn {
@@ -28832,6 +28857,18 @@ table.tableRanking td {
   /* width: calc(100% - 120px); */
 }
 
+.v_signalStreng.globalStock .sub_payment .serviceStep .step_box.overseas_pay {
+  align-items: center;
+}
+.v_signalStreng.globalStock .sub_payment .serviceStep .step_box.overseas_pay p {
+  font-size: 1rem;
+  color: #333;
+  font-weight: bold;
+}
+.v_signalStreng.globalStock .sub_payment .serviceStep .step_box.overseas_pay .subscribe {
+  top: 0;
+}
+
 .v_signalStreng.globalStock .sub_payment .serviceStep .step_box .subscribe {
   max-width: 160px;
   position: relative;
@@ -29455,6 +29492,14 @@ table.tableRanking td {
   gap: 0 8px;
   position: relative;
   cursor: pointer;
+}
+
+.v_signalStreng.globalStock .sub_payment .payment_note .top .agree_guide {
+  display: inline-block;
+  padding: 10px 0 0 34px;
+  line-height: 1.42;
+  font-size: 14px;
+  color: #6a727b;
 }
 
 .v_signalStreng.globalStock .sub_payment input.chk_label + label:before {
@@ -34202,12 +34247,12 @@ body.v_signalStreng {
   width: 2px;
   height: 2px;
 }
-.modalBox .modal.payment_cacl02 .pop_header {
+.modalBox .modal.payment_cacl02 .pop_header, .modalBox .modal.payment_cacl03 .pop_header, .modalBox .modal.payment_cacl04 .pop_header {
   background-color: #fff;
-  padding: 24px 15px;
+  padding: 24px 35px 24px 15px;
   border: none;
 }
-.modalBox .modal.payment_cacl02 .pop_header .pop_title {
+.modalBox .modal.payment_cacl02 .pop_header .pop_title, .modalBox .modal.payment_cacl03 .pop_header .pop_title, .modalBox .modal.payment_cacl04 .pop_header .pop_title {
   justify-content: center;
   font-size: 1.25rem;
   line-height: 1.14;
@@ -34216,32 +34261,34 @@ body.v_signalStreng {
   box-sizing: border-box;
 }
 .modalBox .modal.payment_cacl02 .pop_header .clse::before,
-.modalBox .modal.payment_cacl02 .pop_header .clse::after {
+.modalBox .modal.payment_cacl02 .pop_header .clse::after, .modalBox .modal.payment_cacl03 .pop_header .clse::before,
+.modalBox .modal.payment_cacl03 .pop_header .clse::after, .modalBox .modal.payment_cacl04 .pop_header .clse::before,
+.modalBox .modal.payment_cacl04 .pop_header .clse::after {
   width: 2px;
   background-color: #333;
 }
-.modalBox .modal.payment_cacl02 .pop_con {
+.modalBox .modal.payment_cacl02 .pop_con, .modalBox .modal.payment_cacl03 .pop_con, .modalBox .modal.payment_cacl04 .pop_con {
   padding: 0 16px 25px;
 }
-.modalBox .modal.payment_cacl02 .pop_con .txt {
+.modalBox .modal.payment_cacl02 .pop_con .txt, .modalBox .modal.payment_cacl03 .pop_con .txt, .modalBox .modal.payment_cacl04 .pop_con .txt {
   margin-top: 9px;
   color: #000;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px; /* 142.857% */
 }
-.modalBox .modal.payment_cacl02 .pop_con .txt b {
+.modalBox .modal.payment_cacl02 .pop_con .txt b, .modalBox .modal.payment_cacl03 .pop_con .txt b, .modalBox .modal.payment_cacl04 .pop_con .txt b {
   color: var(--mian_color1, #404FC3);
   font-weight: 700;
   text-decoration-line: underline;
 }
-.modalBox .modal.payment_cacl02 .pop_con .txt:first-child {
+.modalBox .modal.payment_cacl02 .pop_con .txt:first-child, .modalBox .modal.payment_cacl03 .pop_con .txt:first-child, .modalBox .modal.payment_cacl04 .pop_con .txt:first-child {
   margin-top: 0;
 }
-.modalBox .modal.payment_cacl02 .pop_con .btnArea.payBtn {
+.modalBox .modal.payment_cacl02 .pop_con .btnArea.payBtn, .modalBox .modal.payment_cacl03 .pop_con .btnArea.payBtn, .modalBox .modal.payment_cacl04 .pop_con .btnArea.payBtn {
   margin-top: 24px;
 }
-.modalBox .modal.payment_cacl02 .pop_con .btnArea.payBtn .btn {
+.modalBox .modal.payment_cacl02 .pop_con .btnArea.payBtn .btn, .modalBox .modal.payment_cacl03 .pop_con .btnArea.payBtn .btn, .modalBox .modal.payment_cacl04 .pop_con .btnArea.payBtn .btn {
   border: none;
   border-radius: 6px;
   background-color: #C7CCD1;
@@ -34249,7 +34296,7 @@ body.v_signalStreng {
   font-size: 14px;
   font-weight: 700;
 }
-.modalBox .modal.payment_cacl02 .pop_con .btnArea.payBtn .btn.btn_save {
+.modalBox .modal.payment_cacl02 .pop_con .btnArea.payBtn .btn.btn_save, .modalBox .modal.payment_cacl03 .pop_con .btnArea.payBtn .btn.btn_save, .modalBox .modal.payment_cacl04 .pop_con .btnArea.payBtn .btn.btn_save {
   background-color: var(--mian_color1, #404FC3);
 }
 

@@ -87,7 +87,7 @@
             <!-- //loign_chk -->
 
             <div class="agree_area">
-                <p class="txt">서비스 이용을 위해<br>약관을 확인하시고 동의해주세요.</p>
+                <p class="txt">서비스 이용을 위해<br>약관을 확인하시고 동의해주세요. <a href="">(해외거주 가입)</a></p>
                 <div class="agree_from">
                     <div class="bg_gray">
 
@@ -98,88 +98,11 @@
                         <div class="label">
                             <p class="label_chk"><i></i>[필수] 개인정보 수집 이용 동의</p>
                             <span class="terms_btn">보기</span>
-                        </div>
-                        <!-- 휴대폰 등록 -->
-                        <div class="label phone_label">
-                            <p class="label_chk"><i></i>[필수] 프리미엄 서비스를 위한 휴대폰번호 수집 동의</p>
-                            <p class="guide_txt">서비스 편의를 위해 휴대폰 문자 또는 알림 메세지(Push) 등으로 종목추천/관심종목 등 알림서비스가 제공됩니다.</p>
-                        </div>
-                        <div class="label phone_label">
-                            <p class="label_chk"><i></i>[선택] 프리미엄 서비스를 위한 휴대폰번호 수집 동의</p>
-                            <p class="guide_txt">서비스 편의를 위해 휴대폰 문자 또는 알림 메세지(Push)등으로 알림서비스가 제공됩니다.</p>
-                        </div>
-                        <div class="phonePin_form">
-                            <form action="">
-                                <fieldset>
-                                    <div class="box">                                        
-                                        <input type="tel" placeholder="휴대폰번호 입력" class="pinInput">
-                                        <p class="dsc_overseas">! 해외거주자로 인증이 어려우신가요? <a href="login_idchk_global.html">[해외거주 가입]</a></p>
-                                        <!-- 최초 인증 요청 -->
-                                        <input type="button" src="../img/icon_search.svg" value="인증 요청" class="pinBtn pin_req">
-                                        <!-- 다시 인증 요청 -->
-                                        <input type="button" src="../img/icon_search.svg" value="재요청" class="pinBtn pin_reqAgain">
-                                        <!-- <p class="dsc_error">사용중인 휴대폰번호 입니다.</p> -->
-                                    </div>
-                                    <div class="box">
-                                        <input type="number" class="pinInput_out" name="auth-token" inputmode="numeric" pattern="[0-9]*"
-                                            autocomplete="one-time-code" placeholder="인증번호 입력 (02:46)">
-                                        <input type="button" src="../img/icon_search.svg" value="번호 확인" class="pin_completion">
-                                        <p class="dsc_error" id="auth_result">인증번호가 일치하지 않습니다. 다시 입력해주세요.</p>                                        
-                                    </div>
-                                    
-                                </fieldset>
-                                <!-- 인증번호 요청 성공하면 실행되는 추가되는 스크립트 -->
-                                <script>
-                                    $(document).ready(function () {
-                                        const animationDuration = 300;
-                                
-                                        // 입력 필드 비활성화하지만, 값은 계속 보이도록 설정
-                                        function togglePhoneInputDisable(disable) {
-                                            $('.phonePin_form .pinInput').attr('disabled', disable).css('cursor', disable ? 'not-allowed' : 'auto');
-                                        }
-                                
-                                        $('.phonePin_form .pinInput_out').on('input', function() {
-                                            // 숫자만 입력되도록 현재 값에 숫자가 아닌 문자가 포함되어 있으면 제거
-                                            $(this).val($(this).val().replace(/[^0-9]/g, ''));
-    
-                                            // 4자리를 초과하는 입력을 제거
-                                            if ($(this).val().length > 4) {
-                                                $(this).val($(this).val().substr(0, 4));
-                                            }
-    
-                                            // 입력된 값이 정확히 4자리 숫자인 경우
-                                            if ($(this).val().length === 4) {
-                                                $('.pin_completion').css('color', '#404fc3'); // 버튼 색상 변경
-                                            } else {
-                                                $('.pin_completion').css('color', '#d3d3d3'); // 기본 색상으로 재설정
-                                            }
-                                        });
-                                
-                                        $('.phonePin_form').on("click", ".pinBtn.pin_req", function () {
-                                            $(this).fadeOut();
-                                            $('.phonePin_form .pinBtn.pin_reqAgain').fadeIn();
-                                            togglePhoneInputDisable(true); // 입력 필드 비활성화
-                                            $('.phonePin_form .box:last-child').slideDown(animationDuration);
-                                        });
-                                
-                                        $('.phonePin_form').on("click", ".pinBtn.pin_reqAgain", function () {
-                                            $(this).fadeOut();
-                                            $('.phonePin_form .pinBtn.pin_req').fadeIn();
-                                            togglePhoneInputDisable(false); // 입력 필드 다시 활성화
-                                            $('.phonePin_form .box:last-child').slideUp(animationDuration);
-                                        });
-                                    });
-                                </script>                                
-                                <!-- //인증번호 요청 성공하면 실행되는 추가되는 스크립트 -->
-
-                            </form>
-                        </div>
-                        <!-- //phonePin_form -->
-                        <!-- //휴대폰 등록 -->
-    
+                        </div>                        
                         <div class="label sub_label">
                             <p class="label_chk"><i></i>[선택] 뉴스레터, 프로모션 정보 수신 동의</p>
                         </div>
+                        <p class="overseas_guide">* 해외거주 가입은, 프리미엄 서비스를 위한 휴대폰 문자 알림 서비스 제공이 불가합니다. 이점 양해해주세요.</p>
 
                     </div>
                     <!-- //bg_gray -->                    

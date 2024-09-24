@@ -19033,6 +19033,14 @@ table.tableRanking td {
 			border-radius: 12px;
 			background-color: #f7f8f9;
 		}
+		.overseas_guide {
+			margin-top: 5px;
+			padding-left: 25px;
+			font-size: 0.875rem;
+			line-height: 1.14;
+			color: #6a727b;			
+			text-align: left;	
+		}
 	}
 	.agree_area .agree_from .free_sum,
 	.agree_area .agree_from .free_sum strong {
@@ -19217,14 +19225,33 @@ table.tableRanking td {
 	color: transparent;
 }
 
-.globalStock .sub_login .agree_area .agree_from .phonePin_form .dsc_error {
-	text-align: center;
-	margin-top: 6px;
-	font-size: 0.75rem;
-	line-height: 1.3;
-	color: #f2333a;
-	// width: calc(100% - 20px);
-	// margin-left: 20px;
+.globalStock .sub_login .agree_area .agree_from .phonePin_form {
+	.dsc_error {
+		text-align: center;
+		margin-top: 6px;
+		font-size: 0.75rem;
+		line-height: 1.3;
+		color: #f2333a;
+	}
+	.dsc_overseas {		
+		display: flex;
+		flex-wrap: wrap;
+		gap: 5px;
+		margin-top: 12px;
+		font-size: 0.875rem;
+		line-height: 1.14;
+		color: #6a727b;
+		// font-weight: 500;
+		text-align: left;		
+		a {
+			color: #404FC3;			
+			font-size: 0.875rem;
+			line-height: 1.14;
+			font-weight: 500;
+			text-decoration-line: underline;
+		}
+	}	
+	
 }
 
 .globalStock .sub_login .agree_area .agree_from .phonePin_form .pinBtn {
@@ -29398,6 +29425,19 @@ table.tableRanking td {
 	/* width: calc(100% - 120px); */
 
 }
+.v_signalStreng.globalStock .sub_payment .serviceStep .step_box.overseas_pay {
+	align-items: center;
+	p {
+		font-size: 1rem;
+		color: #333;
+		font-weight: bold;
+	}
+	.subscribe {		
+		top: 0;
+	}
+	
+}
+
 .v_signalStreng.globalStock .sub_payment .serviceStep .step_box .subscribe {			
 	max-width: 160px;		
 	position: relative;
@@ -29961,7 +30001,13 @@ table.tableRanking td {
 	position: relative;	
 	cursor: pointer;
 }
-
+.v_signalStreng.globalStock .sub_payment .payment_note .top .agree_guide {
+	display: inline-block;
+	padding: 10px 0 0 34px;
+    line-height: 1.42;
+    font-size: 14px;
+    color: #6a727b;	
+}
 .v_signalStreng.globalStock .sub_payment input.chk_label + label:before {
 	content: "";	
 	display: block;	

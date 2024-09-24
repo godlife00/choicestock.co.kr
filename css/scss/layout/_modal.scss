@@ -1485,10 +1485,10 @@
 			}
 		}		
 	} 	
-	&.payment_cacl02 {
+	&.payment_cacl02, &.payment_cacl03, &.payment_cacl04 {
 		.pop_header {
 			background-color: #fff;
-			padding: 24px 15px;
+			padding: 24px 35px 24px 15px;
 			border: none;            
 			.pop_title {
 				justify-content: center;
