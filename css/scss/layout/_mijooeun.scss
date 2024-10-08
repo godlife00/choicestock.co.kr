@@ -109,23 +109,24 @@
 		margin-top: 21px;
 		border-radius: 10px;
 		background: #fff;
-		padding: 20px 20px 20px 15px;
+		// padding: 20px 20px 20px 15px;
 		box-sizing: border-box;
 		text-align: center;
 		a {
 			position: relative;
-			display: inline-block;
+			display: block;			
 			text-align: center;						
 			font-weight: bold;			
-			font-size: 1rem !important;			
+			font-size: 1rem !important;						
+			padding: 20px 20px 20px 0;
 			padding-right: 8px;
 			&::after {
 				content: "";
 				display: inline-block;
 				transform: rotate(45deg);
 				position: absolute;
-				right: -2px;
-				top: 5px;
+				right: calc(50% - 136px);
+				top: calc(50% - 3px);
 				width: 6px;
 				height: 6px;
 				border-top: 2px solid #c7cbe9b3;
@@ -134,7 +135,7 @@
 		}
 		&.domestic {
 			margin-top: 21px;
-			a {
+			a {				
 				color: var(--mian_color1, #404FC3);
 				&::after {
 					border-color: #404FC3;

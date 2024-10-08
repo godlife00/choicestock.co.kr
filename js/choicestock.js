@@ -1513,20 +1513,7 @@ $(document).ready(function () {
         $('.blocker').show();
         $('.payment_cacl02').show().addClass('slideUp');        
     });
-    // 기존결제가 있는 경우 : 월 정기결제(첫달 1,000원) 구독에 가입되어 있습니다.
-    $('.v_signalStreng.globalStock .sub_payment .serviceStep .step_box .subscribe .dup_pay').on('click', function () {        
-        $('body').css('overflow', 'hidden');
-        $('.modal').hide().removeClass('slideUp');
-        $('.blocker').show();
-        $('.payment_cacl03').show().addClass('slideUp');        
-    });
-    // 기존결제가 있는 경우 : 기간결제(6개월) 구독에 가입되어 있습니다.
-    $('.v_signalStreng.globalStock .sub_payment .serviceStep .step_box .subscribe .dup_pay2').on('click', function () {        
-        $('body').css('overflow', 'hidden');
-        $('.modal').hide().removeClass('slideUp');
-        $('.blocker').show();
-        $('.payment_cacl04').show().addClass('slideUp');        
-    });
+    
 
     // 결제 이용약관 모달 팝업        
     $('.v_signalStreng.globalStock .refund_terms').on('click', function () {

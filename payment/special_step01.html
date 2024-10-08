@@ -41,6 +41,9 @@
     <link rel="stylesheet" type="text/css" href="../css/scss/choicestock_mijooeun.css" />
     <!-- js -->
     <script src="../js/choicestock.js"></script>
+    <!-- 이 아래는 로컬에서만 사용되는 파일 -->
+    <script src="../js/local.js"></script>
+    <!-- 로컬에서만 사용되는 파일 종료  -->
 </head>
 
 
@@ -183,10 +186,11 @@
                 <div class="pop_con">
                     <p class="txt">스페셜 할인 결제를 진행하시려면 기존 구독 결제를 취소해야 합니다.
                         <br><br>                        
-                        기존 결제를 취소하고 스페셜 할인 결제를 진행하시겠습니까?</p>
-                    <p class="txt">결제취소를 진행하시겠습니까?</p>
+                        기존 결제를 취소하고, 스페셜 할인 결제를 진행하시겠습니까?<br>
+                        (서비스 사용일은 '스페셜 할인'결제일로 새로 시작됩니다.)</p>
+                    <!-- <p class="txt">결제취소를 진행하시겠습니까?</p> -->
                     <div class="btnArea payBtn">
-                        <a href="special_step02.html" class="btn btn_save">예. 기존 결제를 취소합니다.</a>
+                        <a href="special_step02_cardPass.html" class="btn btn_save">예, 기존 결제 취소 후, 스페셜 할인 결제 진행</a>
                     </div>                    
                     
                 </div>
@@ -201,10 +205,10 @@
                     </span>
                 </div>
                 <div class="pop_con">
-                    <p class="txt">스페셜 할인 결제를 진행하시려면기존 구독 결제를 취소해야 합니다.
+                    <p class="txt">스페셜 할인 결제를 진행하시려면 기존 구독 결제를 취소해야 합니다.
                         <br><br>                        
                         마이페이지 > 결제내역에서 기존 결제를 취소하고 스페셜 할인 결제를 진행해주세요.</p>
-                    <p class="txt">결제취소를 진행하시겠습니까?</p>
+                    <!-- <p class="txt">결제취소를 진행하시겠습니까?</p> -->
                     <div class="btnArea payBtn">                        
                         <a href="/member/mypage_history.html" class="btn btn_save">기존 결제내역 바로가기</a>
                     </div>                    

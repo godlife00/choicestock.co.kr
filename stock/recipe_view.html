@@ -38,7 +38,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
     <!-- css -->
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <link rel="stylesheet" type="text/css" href="../css/scss/choicestock.css" />
+    <link rel="stylesheet" type="text/css" href="../css/scss/choicestock.css?v09300" />
     <!-- js -->
     <script src="../js/choicestock.js"></script>
 </head>
@@ -83,10 +83,37 @@
             <!-- //sub_top -->
 
             <div class="sub_mid recipe_view">
+                <div class="class_filter">
+
+                    <div class="selectBoxList">
+                        <select class="step1">
+                            <option disabled selected>전체</option>
+                            <option>옵션1</option>
+                            <option>옵션2</option>
+                            <option>옵션3</option>
+                        </select>
+                    </div>
+                    <div class="selectBoxList">
+                        <select class="step2">
+                            <option disabled selected>전체</option>
+                            <option>옵션1</option>
+                            <option>옵션2</option>
+                            <option>옵션3</option>
+                        </select>
+                    </div>
+                </div>
+                <!-- //class_filter -->
+
+                <!-- 검색 결과가 없는 경우 -->
+                <div class="filter_nodata">
+                    <p class="txt">조건에 맞는 종목을 찾을 수 없습니다.</p>
+                </div>
+                <!-- 검색 결과가 없는 경우 -->
+
                 <p class="update_info">업데이트 20/10/06, 발표순이익, 전년대비 %</p>
                 <p class="update_sort">* 정렬 : 시가총액 순</p>
-                <div class="recipe_area">
-                    
+
+                <div class="recipe_area">                    
                     <!-- 급등,상승주 -->
                     <div class="area">
                         <ul class="list">
@@ -372,9 +399,7 @@
                             <span class="update">10/12</span>
                         </div>
                     </div>
-                    <!-- //area -->
-                    
-                    
+                    <!-- //area -->                    
                 </div>
 
                 <div class="btn_more">

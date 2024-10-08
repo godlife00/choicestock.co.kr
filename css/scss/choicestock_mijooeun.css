@@ -699,7 +699,8 @@ body {
   margin: 0 auto;
 }
 
-body, #wrap {
+body,
+#wrap {
   display: flex;
   flex-direction: column;
   min-height: -webkit-fill-available;
@@ -887,7 +888,8 @@ body, #wrap {
   display: block;
   margin-top: 40px;
 }
-.globalStock .banner_event_swiper a, .globalStock .banner_event_swiper img {
+.globalStock .banner_event_swiper a,
+.globalStock .banner_event_swiper img {
   display: inline-block;
   width: 100%;
 }
@@ -13511,7 +13513,8 @@ table.tableRanking td {
   margin: 0 auto;
   box-sizing: border-box;
 }
-.globalStock .sub_search .sub_mid .tab_diagnosis_area .스파이더차트_스몰 .MRIchart_small_style .highcharts-title, .globalStock .sub_search .sub_mid .tab_diagnosis_area .스파이더차트_스몰 .MRIchart_small_style a {
+.globalStock .sub_search .sub_mid .tab_diagnosis_area .스파이더차트_스몰 .MRIchart_small_style .highcharts-title,
+.globalStock .sub_search .sub_mid .tab_diagnosis_area .스파이더차트_스몰 .MRIchart_small_style a {
   width: 100px !important;
   padding-top: 5px;
   line-height: 1.2;
@@ -15284,7 +15287,7 @@ table.tableRanking td {
 }
 
 .globalStock .sub_attract .sub_mid.attract_sub .attract_table td {
-  padding: 15px 3px;
+  padding: 15px 3px 10px;
   text-align: center;
 }
 
@@ -15317,6 +15320,7 @@ table.tableRanking td {
   line-height: 1.2rem;
   color: #999;
   font-size: 0.8rem;
+  margin-top: 1px;
   margin-right: 10px;
   max-width: 80px;
   overflow: hidden;
@@ -16438,6 +16442,7 @@ table.tableRanking td {
 }
 
 .globalStock .sub_recipe .sub_mid.recipe_view {
+  overflow: hidden;
   background-color: #F4F4F5;
   padding: 0 15px 25px;
 }
@@ -16451,6 +16456,61 @@ table.tableRanking td {
   font-weight: bold;
 }
 
+.globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .tradeSignal_status {
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 35px;
+}
+.globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .tradeSignal_status .day {
+  display: flex;
+  align-items: baseline;
+  gap: 0 5px;
+}
+.globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .tradeSignal_status .date {
+  color: #939393;
+  font-size: 0.875rem;
+  letter-spacing: normal !important;
+  font-weight: bold;
+}
+.globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .tradeSignal_status .total {
+  color: #939393;
+  font-size: 0.8125rem;
+  letter-spacing: normal !important;
+}
+.globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .tradeSignal_status .status-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 12px 12px;
+  margin-top: 12px;
+  padding: 10px 16px;
+  border-radius: 16px;
+  background-color: #f7f8f9;
+}
+.globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .tradeSignal_status .status {
+  padding: 5px 10px;
+  border-radius: 8px;
+  text-align: center;
+}
+.globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .tradeSignal_status .status .label {
+  display: block;
+  margin-bottom: 7px;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: #6a727b;
+}
+.globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .tradeSignal_status .buy-hold .increase, .globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .tradeSignal_status .sell-wait .increase {
+  color: #f00;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .tradeSignal_status .buy-hold .decrease, .globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .tradeSignal_status .sell-wait .decrease {
+  color: #0062ff;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
 .globalStock .sub_recipe .sub_mid.recipe_view .update_info {
   padding: 20px 3px 3px;
   color: #939393;
@@ -16459,6 +16519,7 @@ table.tableRanking td {
 }
 
 .globalStock .sub_recipe .sub_mid.recipe_view .btn_more {
+  display: block;
   margin: 18px auto;
 }
 
@@ -16473,7 +16534,6 @@ table.tableRanking td {
 }
 
 .globalStock .sub_recipe .sub_mid.recipe_view .recipe_area .area {
-  float: left;
   padding: 15px 0 0;
   margin-top: 8px;
   width: 100%;
@@ -16481,10 +16541,6 @@ table.tableRanking td {
   border-radius: 10px;
   box-sizing: border-box;
   vertical-align: top;
-}
-
-.globalStock .sub_recipe .sub_mid.recipe_view .recipe_area .area:nth-child(2n) {
-  float: right;
 }
 
 .globalStock .sub_recipe .sub_mid.recipe_view .recipe_area .area:after {
@@ -19026,7 +19082,8 @@ table.tableRanking td {
   line-height: 1.33;
   color: #333;
 }
-.globalStock .sub_login .loign_chk.dup .sns_img, .globalStock .sub_login .loign_chk.dup .sns_info {
+.globalStock .sub_login .loign_chk.dup .sns_img,
+.globalStock .sub_login .loign_chk.dup .sns_info {
   margin-top: 0;
 }
 .globalStock .sub_login .loign_chk.dup .id_chk {
@@ -19037,7 +19094,8 @@ table.tableRanking td {
   line-height: 1.15;
   color: #6a727b;
 }
-.globalStock .sub_login .loign_chk.dup .sns_chk, .globalStock .sub_login .loign_chk.dup .sns_phon {
+.globalStock .sub_login .loign_chk.dup .sns_chk,
+.globalStock .sub_login .loign_chk.dup .sns_phon {
   font-size: 0.9375rem;
   line-height: 1.33;
   color: #333;
@@ -19159,7 +19217,8 @@ table.tableRanking td {
   transition: transform 100ms ease-in-out;
 }
 .globalStock .sub_login .agree_area .agree_from .btn_save:active {
-  transform: scale(0.95); /* 버튼을 약간 축소 */
+  transform: scale(0.95);
+  /* 버튼을 약간 축소 */
 }
 .globalStock .sub_login .agree_area .agree_from .btn_save i {
   position: absolute;
@@ -19368,7 +19427,8 @@ table.tableRanking td {
   transition: transform 100ms ease-in-out;
 }
 .globalStock .sub_login .agree_area .agree_from .phonePin_form .pin_completion:active {
-  transform: scale(0.95); /* 버튼을 약간 축소 */
+  transform: scale(0.95);
+  /* 버튼을 약간 축소 */
 }
 
 .globalStock .sub_login .agree_area .agree_from .payBtn {
@@ -28573,7 +28633,8 @@ table.tableRanking td {
   transition: transform 100ms ease-in-out;
 }
 .globalStock .sub_login .mapage_area .mapage_form .form_table .phonePin_form .pin_completion:active {
-  transform: scale(0.95); /* 버튼을 약간 축소 */
+  transform: scale(0.95);
+  /* 버튼을 약간 축소 */
 }
 
 .globalStock .sub_login .mapage_area .mapage_form .form_table td .txt_reject {
@@ -28756,7 +28817,8 @@ table.tableRanking td {
   background-position: calc(50% + 26px) 1px;
 }
 
-/********************/ /********************/
+/********************/
+/********************/
 /**** 가입/결제 *****/
 /********************/
 /* 서비스 결제 스탭 1 */
@@ -29039,6 +29101,59 @@ table.tableRanking td {
   padding-bottom: 24px;
   background-color: #404fc3;
 }
+.v_signalStreng.globalStock .sub_payment .select_payTop .cardPass-form {
+  margin-top: 24px;
+}
+.v_signalStreng.globalStock .sub_payment .select_payTop .cardPass-form .box {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 19px 12px;
+  border-radius: 12px;
+  background-color: #f7f8f9;
+}
+.v_signalStreng.globalStock .sub_payment .select_payTop .cardPass-form .box .title {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.14;
+  color: #333;
+  word-break: normal;
+  word-wrap: break-word;
+}
+.v_signalStreng.globalStock .sub_payment .select_payTop .cardPass-form .box .cad_info {
+  margin-top: 15px;
+}
+.v_signalStreng.globalStock .sub_payment .select_payTop .cardPass-form .box .cad_info li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  gap: 0 6px;
+  font-size: 0.875rem;
+  font-weight: bold;
+  line-height: 1.4;
+  letter-spacing: normal !important;
+  color: #333;
+  word-break: normal;
+  word-wrap: break-word;
+}
+.v_signalStreng.globalStock .sub_payment .select_payTop .cardPass-form .box .cad_info li::before {
+  content: "•";
+  position: relative;
+  top: -2px;
+  display: inline-block;
+  color: #333;
+}
+.v_signalStreng.globalStock .sub_payment .select_payTop .cardPass-form .cad_step {
+  margin-top: 15px;
+  width: 100%;
+  display: block;
+  text-align: right;
+  font-size: 0.875rem;
+  line-height: 1.42;
+  font-weight: 500;
+  color: #404fc3;
+  text-decoration: underline;
+}
 
 .v_signalStreng.globalStock .sub_payment .select_payTop .step_box {
   width: calc(100% - 30px);
@@ -29318,8 +29433,10 @@ table.tableRanking td {
 }
 
 .mapage_form input:focus {
-  outline: none; /* 기본 포커스 아웃라인 제거 */
-  border: 1px solid #404fc3 !important; /* 포커스 시 보더 색 변경 */
+  outline: none;
+  /* 기본 포커스 아웃라인 제거 */
+  border: 1px solid #404fc3 !important;
+  /* 포커스 시 보더 색 변경 */
 }
 
 .v_signalStreng.globalStock .sub_payment .payment_guide .mapage_form input[type=number],
@@ -30043,7 +30160,10 @@ body.v_signalStreng {
   color: #fff !important;
   font-weight: normal !important;
 }
-.list.recom * div, .list.recom * span, .list.recom * b, .list.recom * li {
+.list.recom * div,
+.list.recom * span,
+.list.recom * b,
+.list.recom * li {
   font-size: 1rem !important;
   color: #fff !important;
   font-weight: normal !important;
@@ -30065,13 +30185,15 @@ body.v_signalStreng {
   white-space: nowrap;
   font-weight: normal !important;
 }
-.list.recom .num, .list.recom .per {
+.list.recom .num,
+.list.recom .per {
   display: inline-block;
 }
 .list.recom .per {
   padding-left: 6px;
 }
-.list.recom .per span, .list.recom .per b {
+.list.recom .per span,
+.list.recom .per b {
   font-weight: normal !important;
   font-size: 0.8125rem !important;
 }
@@ -32779,6 +32901,87 @@ body.v_signalStreng {
   height: 6px;
   border-top: 1px solid #404fc3;
   border-right: 1px solid #404fc3;
+}
+
+.class_filter {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 3px;
+  margin: 15px auto 0;
+  box-sizing: border-box;
+}
+.class_filter label {
+  width: 100%;
+  font-size: 0.75rem;
+  color: #333;
+}
+.class_filter .selectBoxList {
+  position: relative;
+  width: 100%;
+}
+.class_filter .selectBoxList:first-child {
+  flex: 1;
+  max-width: 140px;
+}
+.class_filter .selectBoxList:last-child {
+  flex: 3;
+  max-width: calc(100% - 140px);
+}
+.class_filter .selectBoxList::after {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-top: 1px solid #3555d5;
+  border-right: 1px solid #3555d5;
+  transform: rotate(135deg);
+  display: inline-block;
+  right: 9px;
+  top: 11px;
+  z-index: 99;
+}
+.class_filter select {
+  cursor: pointer;
+  padding: 6px 6px;
+  padding-right: 20px;
+  box-sizing: border-box;
+  font-size: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #333;
+  opacity: 1;
+  width: 100%;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+.class_filter select:disabled {
+  background-color: #f9f9f9;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+.class_filter select:focus {
+  outline: none;
+}
+
+.filter_nodata {
+  margin: 20px 0 0;
+  border-radius: 20px;
+  background: #f7f8f9 url("/img/bg_nodata.png") no-repeat center 50px;
+  box-sizing: border-box;
+  padding-top: 240px;
+  padding-bottom: 15px;
+  text-align: center;
+}
+.filter_nodata .txt {
+  color: #939393;
+  font-size: 0.9375rem;
+  font-weight: normal;
+}
+
+.sub_mid.recipe_view .filter_nodata {
+  background-color: #fff !important;
 }
 
 .family_banner {
@@ -36277,16 +36480,16 @@ body.v_signalStreng {
   margin-top: 21px;
   border-radius: 10px;
   background: #fff;
-  padding: 20px 20px 20px 15px;
   box-sizing: border-box;
   text-align: center;
 }
 .할인혜택 .year_sale a {
   position: relative;
-  display: inline-block;
+  display: block;
   text-align: center;
   font-weight: bold;
   font-size: 1rem !important;
+  padding: 20px 20px 20px 0;
   padding-right: 8px;
 }
 .할인혜택 .year_sale a::after {
@@ -36294,8 +36497,8 @@ body.v_signalStreng {
   display: inline-block;
   transform: rotate(45deg);
   position: absolute;
-  right: -2px;
-  top: 5px;
+  right: calc(50% - 136px);
+  top: calc(50% - 3px);
   width: 6px;
   height: 6px;
   border-top: 2px solid rgba(199, 203, 233, 0.7019607843);
