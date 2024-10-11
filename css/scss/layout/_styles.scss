@@ -3916,6 +3916,12 @@ table.tableRanking td {
 	font-size: 0.75rem;
 	line-height: normal;
 }
+.globalStock .main_top.recommend_area .recomlist_area .area .list .per span.same,
+.globalStock .main_top.recommend_area .recomlist_area .area .list .per span.same b {
+	color: #363F4B;
+	font-size: 0.75rem;
+	line-height: normal;
+}
 
 .globalStock .main_top.recommend_area .maingameSwiper .swiper-slide {
 	display: block;
@@ -32171,8 +32177,8 @@ body.v_signalStreng {
 	background: #26ABFF;
 }
 
-.v_signalStreng.globalStock #wrap #container .mainBox.financials .chart_box .financials_style .highcharts-label text,
-.v_signalStreng.globalStock #wrap #container .mainBox.financials .chart_box .financials_style .highcharts-label tspan {
+.v_signalStreng.globalStock #wrap #container .mainBox.financials .chart_box .financials_style .highcharts-data-labels .highcharts-label text,
+.v_signalStreng.globalStock #wrap #container .mainBox.financials .chart_box .financials_style .highcharts-data-labels .highcharts-label tspan {
 	font-size: 12px !important;
 	color: #6A727B !important;
 	fill: #6A727B !important;
@@ -32181,11 +32187,21 @@ body.v_signalStreng {
 	font-weight: 400 !important;
 }
 
-.v_signalStreng.globalStock #wrap #container .mainBox.financials .chart_box .financials_style .highcharts-axis-labels text {
+.v_signalStreng.globalStock #wrap #container .mainBox.financials .chart_box .financials_style .highcharts-data-labels .highcharts-axis-labels text {
 	font-size: 12px !important;
 	color: #969EA7 !important;
 	fill: #969EA7 !important;
 	font-weight: 400 !important;
+}
+.v_signalStreng.globalStock #wrap #container .mainBox.financials .chart_box .financials_style .highcharts-label.highcharts-tooltip text {
+	// font-size: 12px !important;
+	// color: #969EA7 !important;
+	// fill: #969EA7 !important;	
+	// .highcharts-br {
+	// 	color: #444 !important;
+	// 	fill: #444 !important;	
+	// 	font-weight: bold !important;
+	// }
 }
 
 .v_signalStreng.globalStock #wrap #container .mainBox.financials .chart_box .financials_style .highcharts-xaxis .highcharts-axis-line {

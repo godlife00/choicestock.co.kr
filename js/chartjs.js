@@ -5276,8 +5276,32 @@ $(document).ready(function () {
             },
 
             tooltip: {
-                enabled: false
+                shared: true,
+                useHTML: true,
+                formatter: function () {
+                    const point = this.points[0].point;
+                    const changeValue = point.change;
+                    let changeText;
+        
+                    if (changeValue !== 'N/A') {
+                        const changeNum = parseFloat(changeValue);
+                        let changeColor = '#969EA7'; // 기본은 회색 (0인 경우)
+        
+                        if (changeNum > 0) {
+                            changeColor = '#E1305A'; // 전년대비 상승
+                        } else if (changeNum < 0) {
+                            changeColor = '#303FAF'; // 전년대비 하락
+                        }
+        
+                        changeText = `전년대비 <b style="color:${changeColor}">${changeValue}</b>`;
+                    } else {
+                        changeText = "전년대비 데이터 없음";
+                    }
+        
+                    return `${point.date}<br/>${this.points[0].series.name}: <b>${point.y}</b> 백만달러<br/>${changeText}`;
+                }
             },
+        
 
             rangeSelector: {
                 selected: 1
@@ -5332,18 +5356,27 @@ $(document).ready(function () {
                 name: '매출액',
                 data: [{
                     y: 97.988,
+                    date: '2018.10', // 툴팁에 년.월 표시
+                    change: '0.00%' // 상승률 표시
                 },
                 {
                     y: 45.988,
+                    date: '2019.10',
+                    change: '-53.07%'
                 },
                 {
                     y: 75.988,
+                    date: '2020.10',
+                    change: '+65.20%'
                 },
                 {
                     y: 85.988,
+                    change: '+65.20%'
                 },
                 {
                     y: 95.988,
+                    date: '2022.10',
+                    change: '+65.20%',
                     className: 'point_color'
                 }]
             }],
@@ -5417,7 +5450,30 @@ $(document).ready(function () {
             },
 
             tooltip: {
-                enabled: false
+                shared: true,
+                useHTML: true,
+                formatter: function () {
+                    const point = this.points[0].point;
+                    const changeValue = point.change;
+                    let changeText;
+        
+                    if (changeValue !== 'N/A') {
+                        const changeNum = parseFloat(changeValue);
+                        let changeColor = '#969EA7'; // 기본은 회색 (0인 경우)
+        
+                        if (changeNum > 0) {
+                            changeColor = '#E1305A'; // 전년대비 상승
+                        } else if (changeNum < 0) {
+                            changeColor = '#303FAF'; // 전년대비 하락
+                        }
+        
+                        changeText = `전년대비 <b style="color:${changeColor}">${changeValue}</b>`;
+                    } else {
+                        changeText = "전년대비 데이터 없음";
+                    }
+        
+                    return `${point.date}<br/>${this.points[0].series.name}: <b>${point.y}</b> 달러<br/>${changeText}`;
+                }
             },
 
             rangeSelector: {
@@ -5470,23 +5526,33 @@ $(document).ready(function () {
 
             series: [{
                 type: 'column',
-                name: '매출액',
+                name: 'EPS',
                 data: [{
                     y: 97.988,
+                    date: '2018.10', // 툴팁에 년.월 표시
+                    change: '+10.00%' // 상승률 표시
                 },
                 {
                     y: 45.988,
+                    date: '2019.10', // 툴팁에 년.월 표시
+                    change: '-20.00%' // 상승률 표시
                 },
                 {
                     y: -75.988,
+                    date: '2020.10', // 툴팁에 년.월 표시
+                    change: '-30.00%', // 상승률 표시
                     className: 'decrease_color'
                 },
                 {
                     y: -85.988,
+                    date: '2021.10', // 툴팁에 년.월 표시
+                    change: '-40.00%', // 상승률 표시
                     className: 'decrease_color'
                 },
                 {
                     y: -95.988,
+                    date: '2022.10', // 툴팁에 년.월 표시
+                    change: '-50.00%', // 상승률 표시
                     className: 'point_color'
                 }]
             }],
@@ -5557,7 +5623,30 @@ $(document).ready(function () {
             },
 
             tooltip: {
-                enabled: false
+                shared: true,
+                useHTML: true,
+                formatter: function () {
+                    const point = this.points[0].point;
+                    const changeValue = point.change;
+                    let changeText;
+        
+                    if (changeValue !== 'N/A') {
+                        const changeNum = parseFloat(changeValue);
+                        let changeColor = '#969EA7'; // 기본은 회색 (0인 경우)
+        
+                        if (changeNum > 0) {
+                            changeColor = '#E1305A'; // 전년대비 상승
+                        } else if (changeNum < 0) {
+                            changeColor = '#303FAF'; // 전년대비 하락
+                        }
+        
+                        changeText = `전년대비 <b style="color:${changeColor}">${changeValue}</b>`;
+                    } else {
+                        changeText = "전년대비 데이터 없음";
+                    }
+        
+                    return `${point.date}<br/>${this.points[0].series.name}: <b>${point.y}</b> %<br/>${changeText}`;
+                }
             },
 
             rangeSelector: {
@@ -5605,21 +5694,31 @@ $(document).ready(function () {
 
             series: [{
                 type: 'column',
-                name: 'ROE 자기자본이익률',
+                name: 'ROE',
                 data: [{
                     y: 97.988,
+                    date: '2018.10', // 툴팁에 년.월 표시
+                    change: '-30.00%' // 상승률 표시
                 },
                 {
                     y: 45.988,
+                    date: '2019.10', // 툴팁에 년.월 표시
+                    change: '-30.00%' // 상승률 표시
                 },
                 {
                     y: 75.988,
+                    date: '2020.10', // 툴팁에 년.월 표시
+                    change: '+30.00%' // 상승률 표시
                 },
                 {
                     y: 85.988,
+                    date: '2021.10', // 툴팁에 년.월 표시
+                    change: '+30.00%' // 상승률 표시
                 },
                 {
                     y: 95.988,
+                    date: '2022.10', // 툴팁에 년.월 표시
+                    change: '+30.00%', // 상승률 표시
                     className: 'point_color'
                 }]
             }],
