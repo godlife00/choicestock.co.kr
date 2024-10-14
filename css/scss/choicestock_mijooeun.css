@@ -36592,7 +36592,7 @@ body.v_signalStreng {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  gap: 7px;
+  gap: 12px;
   margin-top: 12px;
   margin-bottom: 12px;
   padding: 14px 16px;
@@ -36606,7 +36606,7 @@ body.v_signalStreng {
 }
 .v_signalStreng.globalStock #wrap .modal.cardBox .pop_con .paypal_link .payment .del_num {
   display: inline-block;
-  padding: 0 8px;
+  padding: 0 4px 0 8px;
   position: relative;
 }
 .v_signalStreng.globalStock #wrap .modal.cardBox .pop_con .paypal_link .payment .del_img {
@@ -36615,16 +36615,29 @@ body.v_signalStreng {
   top: -3px;
 }
 .v_signalStreng.globalStock #wrap .modal.cardBox .pop_con .paypal_link .payment .sale_num {
+  padding-left: 4px;
   color: var(--mian_color1, #404FC3);
   font-weight: 700;
 }
 .v_signalStreng.globalStock #wrap .modal.cardBox .pop_con .paypal_link .txt {
-  color: #6A727B;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 0 8px;
+  color: #444;
   font-size: 0.8125rem;
   font-weight: 400;
 }
-.v_signalStreng.globalStock #wrap .modal.cardBox .pop_con .paypal_link .txt a {
-  color: #404FC3;
+.v_signalStreng.globalStock #wrap .modal.cardBox .pop_con .paypal_link .txt a.paypal_linkBtn {
+  display: inline-block;
+  width: auto;
+  height: 33px;
+  border-radius: 6px;
+}
+.v_signalStreng.globalStock #wrap .modal.cardBox .pop_con .paypal_link .txt a.paypal_linkBtn img {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
 }
 
 .v_signalStreng.globalStock #wrap .modal.cardBox.card_overseas_02 .pop_con .txt {

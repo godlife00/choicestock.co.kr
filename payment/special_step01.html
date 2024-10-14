@@ -216,8 +216,9 @@
                 </div>
             </div>
 
+
             <!-- 혹시 해외카드로 결제하시나요? -->
-            <div class="modal cardBox card_overseas_01">
+            <div class="modal cardBox card_overseas_01" style="display: block;">
                 <div class="pop_header">
                     <h1 class="pop_title">혹시 해외카드로 결제하시나요?</h1>
                     <span class="clse">
@@ -226,24 +227,33 @@
                 </div>
                 <div class="pop_con">
                     <p class="paypal_title">해외카드는 <b>페이팔</b>로 간편하게 결제할 수 있습니다.</p>
+                    <!-- 월 정기 첫 달 할인 적용시 -->
                     <div class="paypal_link">
-                        <p class="payment"><b>연간 정기결제</b> <span class="del_num">296달러 <span class="del_img"><svg xmlns="http://www.w3.org/2000/svg" width="57" height="7" viewBox="0 0 57 7" fill="none">
-                                        <path d="M0 6.5H55.2L49.05 0.350006" stroke="#999999"></path>
-                                    </svg></span> </span> <span class="sale_num">175달러(40%할인)</span></p>
-                        <p class="txt">페이팔로 결제하기 : <a href="https://bit.ly/choicespecial_20" target="_blank">https://bit.ly/choicespecial_20</a></p>
+                        <p class="payment"><b>월 정기결제</b>
+                            <span class="del_num">첫달 0.99달러</span>→<span class="sale_num">이후 $29결제</span>
+                        </p>
+                        <p class="txt">페이팔로 결제하기 : <a href="https://www.paypal.com/webapps/billing/plans/subscribe?plan_id=P-5JV87518YG8198434MWS5RYI" class="paypal_linkBtn"><img src="../img/paypal.png" alt="페이팔에서 결제하기"></a> </p>                    
                     </div>
-                    <p class="paypal_txt">- 페이팔로 결제후 아래정보를 <b>고객센터로 꼭 알려주세요!</b> <br>
-					&nbsp;&nbsp;고객센터 : 초이스스탁 사이트 오른쪽 하단 채널톡 또는 <a href="mailto:team@datahero.co.kr">team@datahero.co.kr</a>
-                    <br> <!--<a href="https://kq64o.channel.io" target="_blank">[바로가기]</a>--></p>
-                    <ul class="paypal_step">
-                        <li><b>1&#41; 결제일</b></li>
-                        <li><b>2&#41; 페이팔 결제 시 입력 이메일</b></li>
-                    </ul>
-                    <ul class="paypal_step">
-                        <li><b>3&#41; 서비스 가입 이메일</b></li>
-                        <li><b>4&#41; 회원이름</b></li>
-                    </ul>
-                    <p class="progress_txt">*페이팔 결제 확인은 <b>영업일 기준 1~3일</b> 소요되는점 양해바랍니다.</p>
+                    <!-- 월 정기 정상가 결제시 -->
+                    <div class="paypal_link">
+                        <p class="payment"><b>월 정기결제</b>
+                            <span class="sale_num">매달 $29달러 결제</span>
+                        </p>
+                        <p class="txt">페이팔로 결제하기 : <a href="https://www.paypal.com/webapps/billing/plans/subscribe?plan_id=P-2GW21523BR631043VMDMXV4Q" class="paypal_linkBtn"><img src="../img/paypal.png" alt="페이팔에서 결제하기"></a> </p>                    
+                    </div>
+                    <!-- 월 정기 미주은 스폐셜 할인 결제시 -->
+                    <div class="paypal_link">
+                        <p class="payment"><b>연간 정기결제</b>
+                            <span class="del_num">296달러 <span class="del_img"><svg xmlns="http://www.w3.org/2000/svg" width="57" height="7" viewBox="0 0 57 7" fill="none"> <path d="M0 6.5H55.2L49.05 0.350006" stroke="#999999"></path></svg></span> </span> <span class="sale_num">175달러(40%할인)</span>
+                        </p>
+                        <p class="txt">페이팔로 결제하기 : <a href="https://www.paypal.com/webapps/billing/plans/subscribe?plan_id=P-83M636678H6782059M2VRYJY" class="paypal_linkBtn"><img src="../img/paypal.png" alt="페이팔에서 결제하기"></a> </p>                    
+                    </div>
+
+                    <p class="progress_txt">
+                        페이팔 결제 완료 3분 후에 유료회원으로 자동으로 권한이 부여됩니다.<br>
+                        <b>3분 후 초이스스탁 사이트에 접속해 페이지를 새로고침 (키보드 F5 누름) 하면 서비스 이용이 가능합니다.</b><br>
+                        시간이 지나도 유료회원 권한이 부여되지 않으면 채널톡 또는 team@datahero.co.kr 메일로 문의해 주시기 바랍니다.<br>
+                    </p>
                 </div>                
             </div>
             <!-- //혹시 해외카드로 결제하시나요? -->
@@ -265,7 +275,7 @@
             </div>
             <!-- //연간 정기결제 서비스 이용 및 환불 안내 -->            
 
-            <div class="blocker"></div>
+            <div class="blocker" style="display: block;"></div>
         </div>
         <!-- //modalBox -->
     </div>
