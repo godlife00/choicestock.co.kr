@@ -44,23 +44,64 @@
 </head>
 
 <body class="v_signalStreng globalStock">
-    <!-- 신규 서비스/기능 개선 시 안내 팝업 -->
-    <div class="signalpop monthly_payment">
-        <!-- 보여줘야 하는 경우 class open -->
-        <div class="bg_gray"></div>
-        <div class="box">
-            <div class="ftr">
-                <span href="javascript:closeWin();" class="btn_close">닫기</span>                
-            </div>
-
-            <div class="content" onclick="location.href ='../stock/service.html'" style="cursor:pointer;">
-                <div class="info_txt">
-                    <p class="txt01">AI가 알려주는 투자타이밍!</p>
-                    <p class="txt02">전종목 매매신호가 무제한</p>
+    <!-- 오늘 하루 열지 않기 -->
+    <div class="free_2weeks open" id="layer_pop">
+        <div class="signalpop event2024_payment">        
+            <div class="bg_gray"></div>
+            <div class="box">                
+                <div class="content" onclick="location.href ='../payment/step01.html'" style="cursor:pointer;">
+                    <div class="info_txt">
+                        <!-- <p class="txt01">AI가 알려주는 투자타이밍!</p>
+                        <p class="txt02">전종목 매매신호가 무제한</p> -->
+                    </div>
+                    <script>
+                        document.addEventListener('DOMContentLoaded', function () {
+                            var images = [
+                                '../img/banner/event_mainBtm_240123.png',
+                                '../img/banner/event_mainBtm_240123_v.png' // 두 번째 이미지 경로
+                            ];
+    
+                            var randomIndex = Math.floor(Math.random() * images.length);
+                            var imageUrl = images[randomIndex];
+    
+                            var divElement = document.querySelector('.info_txt');
+                            divElement.style.background = "url('" + imageUrl + "') no-repeat center 0";
+                        });
+    
+                    </script>
+                    <div class="btn_area">
+                        <a href="../payment/step01.html" class="btn payment_1000">프리미엄 첫달 <b>1,000원!</b></a>
+                    </div>
                 </div>
-            </div>            
+    
+                <div class="ftr">
+                    <label for="pop_today" class="btn_day">
+                        <input type="checkbox" name="pop_today" id="pop_today" /> 오늘 하루 열지 않기</label>
+                    <a href="javascript:closeWin();" class="btn_close">닫기</a>
+                </div>
+    
+            </div>
         </div>
     </div>
+    <!-- //free_2weeks //오늘 하루 열지 않기 --> 
+     <!-- 오늘 하루 열지 않기 -->
+    <script language="Javascript" type="text/javascript">
+        cookiedata = document.cookie;
+        if (cookiedata.indexOf("mainpop=done") < 0) {
+            document.getElementById('layer_pop').style.display = "inline";
+        } else {
+            document.getElementById('layer_pop').style.display = "none";
+        }
+        function setCookie(name, value, expirehours) {
+            var todayDate = new Date();
+            todayDate.setHours(todayDate.getHours() + expirehours);
+            document.cookie = name + "=" + escape(value) + "; path=/; expires=" + todayDate.toGMTString() + ";"
+        }
+        $('#pop_today').on('click', function () {
+            setCookie("mainpop", "done", 24);
+            document.getElementById('layer_pop').style.display = "none";
+        });
+    </script>   
 
     <div id="wrap">
         <div id="header" class="header">
@@ -181,11 +222,11 @@
                             <table cellspacing="0" border="1" class="tableRanking table_alloca">
                                 <tbody>
                                     <tr>
-                                        <th class="title">배당수익률</th>
+                                        <th class="title">시가배당률(예상)</th>
                                         <td class="num">10.23<b>%</b></td>
                                     </tr>
                                     <tr>
-                                        <th class="title">주당배당금</th>
+                                        <th class="title">주당배당금(예상)</th>
                                         <td class="num">10.23<b>달러</b></td>
                                     </tr>
                                     <tr>
@@ -209,7 +250,7 @@
                         </div>
 
                         <div class="allocachart_area">
-                            <h3 class="title">배당수익률 <span class="unit">* 단위 : %</span></h3>
+                            <h3 class="title">시가배당률 <span class="unit">* 단위 : %</span></h3>
                             <div id="containeralloca1_1" class="containeralloca1"></div>
                             <!-- 종목검색 - 배당 id = containeralloca1 -->
 

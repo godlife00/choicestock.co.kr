@@ -14832,6 +14832,10 @@ table.tableRanking td {
   margin: 10px 0;
   height: 200px;
 }
+.globalStock .sub_search .sub_mid.tabs_area .alloca_info .allocachart_area .containeralloca1 rect.highcharts-point.point_color {
+  fill: #EDEEEF !important;
+  background: #EDEEEF !important;
+}
 
 .globalStock .sub_search .sub_mid.tabs_area .alloca_info .allocachart_area .containeralloca1 .highcharts-data-label:nth-child(8),
 .globalStock .sub_search .sub_mid.tabs_area .alloca_info .allocachart_area .containeralloca1 .highcharts-data-label:nth-child(9),
@@ -15001,7 +15005,7 @@ table.tableRanking td {
 
 .globalStock .sub_search .sub_mid.tabs_area .alloca_info .tableRanking.table_alloca th {
   text-align: left;
-  width: 80px;
+  width: 86px;
 }
 
 .globalStock .sub_search .alloca_wrap.na_box .alloca_star {

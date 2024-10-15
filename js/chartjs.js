@@ -4321,12 +4321,18 @@ $(document).ready(function () {
 
             tooltip: {
                 shared: true,
-                crosshairs: true,
-                pointFormat: '<span style="color:{series.color}">{series.name}: <b>{point.y:,.0f}</b><br/>'
+                useHTML: true,
+                formatter: function () {
+                    const point = this.points[0].point;
+                    const changeValue = point.change;                            
+        
+                    return `${point.date}<br/>${this.points[0].series.name}: <b>${point.y}</b>`;
+                }
             },
+        
 
             xAxis: [{
-                categories: ['2015', '2016', '2017', '2018', '2019', '2019', '2019', '2019', '2020', '2021'],
+                categories: ['2015','2016','2017','2018','2019','2020','2021','2022','2023','2024'],
                 crosshair: true,
                 labels: {
                     style: {
@@ -4351,10 +4357,10 @@ $(document).ready(function () {
                 }],
                 alternateGridColor: null,
                 showFirstLabel: false,
-                breaks: [{
-                    from: 0,
-                    to: 100
-                }],
+                // breaks: [{
+                //     from: 0,
+                //     to: 100
+                // }],
                 labels: {
                     enabled: false
                 }
@@ -4383,8 +4389,46 @@ $(document).ready(function () {
             },
 
             series: [{
-                name: '배당수익률',
-                data: [22.88, 31.23, 35.23, 97.23, 35.23, 9.23, 7.23, 35.23, 34.23, 23.23]
+                name: '시가배당률',
+                data: [{
+                    y: 2.70,
+                    date: '2024',
+                }, {
+                    y: 2.70,
+                    date: '2024',
+                }, {
+                    y: 2.20,
+                    date: '2024',
+                },
+                {
+                    y: 1.70,
+                    date: '2024',
+                },
+                {
+                    y: 1.30,
+                    date: '2024',
+                },
+                {
+                    y: 1.00,
+                    date: '2024',
+                },
+                {
+                    y: 0.80,
+                    date: '2024',
+                },
+                {
+                    y: 0.90,
+                    date: '2024',
+                },
+                {
+                    y: 0.80,
+                    date: '2024',
+                },
+                {
+                    y: 0.70,
+                    date: '2024',
+                    className: 'point_color'
+                }]
             }],
 
             plotOptions: {
@@ -4430,12 +4474,17 @@ $(document).ready(function () {
 
             tooltip: {
                 shared: true,
-                crosshairs: true,
-                pointFormat: '<span style="color:{series.color}">{series.name}: <b>{point.y:,.0f}</b><br/>'
+                useHTML: true,
+                formatter: function () {
+                    const point = this.points[0].point;
+                    const changeValue = point.change;                            
+        
+                    return `${point.date}<br/>${this.points[0].series.name}: <b>${point.y}</b>`;
+                }
             },
 
             xAxis: [{
-                categories: ['2015', '2016', '2017', '2018', '2019', '2019', '2019', '2019', '2020', '2021'],
+                categories: ['2015','2016','2017','2018','2019','2020','2021','2022','2023','2024'],
                 crosshair: true,
                 labels: {
                     style: {
@@ -4460,10 +4509,10 @@ $(document).ready(function () {
                 }],
                 alternateGridColor: null,
                 showFirstLabel: false,
-                breaks: [{
-                    from: 0,
-                    to: 100
-                }],
+                // breaks: [{
+                //     from: 0,
+                //     to: 100
+                // }],
                 labels: {
                     enabled: false
                 }
@@ -4493,7 +4542,45 @@ $(document).ready(function () {
 
             series: [{
                 name: '주당배당금',
-                data: [22.88, 31.23, 35.23, 97.23, 35.23, 9.23, 7.23, 35.23, 34.23, 23.23]
+                data: [{
+                    y: 2.70,
+                    date: '2024',
+                }, {
+                    y: 2.70,
+                    date: '2024',
+                }, {
+                    y: 2.20,
+                    date: '2024',
+                },
+                {
+                    y: 1.70,
+                    date: '2024',
+                },
+                {
+                    y: 1.30,
+                    date: '2024',
+                },
+                {
+                    y: 1.00,
+                    date: '2024',
+                },
+                {
+                    y: 0.80,
+                    date: '2024',
+                },
+                {
+                    y: 0.90,
+                    date: '2024',
+                },
+                {
+                    y: 0.80,
+                    date: '2024',
+                },
+                {
+                    y: 0.70,
+                    date: '2024',
+                    className: 'point_color'
+                }]
             }],
 
             plotOptions: {
@@ -4539,12 +4626,17 @@ $(document).ready(function () {
 
             tooltip: {
                 shared: true,
-                crosshairs: true,
-                pointFormat: '<span style="color:{series.color}">{series.name}: <b>{point.y:,.0f}</b><br/>'
+                useHTML: true,
+                formatter: function () {
+                    const point = this.points[0].point;
+                    const changeValue = point.change;                            
+        
+                    return `${point.date}<br/>${this.points[0].series.name}: <b>${point.y}</b>`;
+                }
             },
 
             xAxis: [{
-                categories: ['2015', '2016', '2017', '2018', '2019', '2019', '2019', '2019', '2020', '2021'],
+                categories: ['2015','2016','2017','2018','2019','2020','2021','2022','2023','2024'],
                 crosshair: true,
                 labels: {
                     style: {
@@ -4569,10 +4661,10 @@ $(document).ready(function () {
                 }],
                 alternateGridColor: null,
                 showFirstLabel: false,
-                breaks: [{
-                    from: 0,
-                    to: 100
-                }],
+                // breaks: [{
+                //     from: 0,
+                //     to: 100
+                // }],
                 labels: {
                     enabled: false
                 }
@@ -4602,7 +4694,44 @@ $(document).ready(function () {
 
             series: [{
                 name: '배당성향',
-                data: [22.88, 31.23, 35.23, 97.23, 35.23, 9.23, 7.23, 35.23, 34.23, 23.23]
+                data: [{
+                    y: 2.70,
+                    date: '2024',
+                }, {
+                    y: 2.70,
+                    date: '2024',
+                }, {
+                    y: 2.20,
+                    date: '2024',
+                },
+                {
+                    y: 1.70,
+                    date: '2024',
+                },
+                {
+                    y: 1.30,
+                    date: '2024',
+                },
+                {
+                    y: 1.00,
+                    date: '2024',
+                },
+                {
+                    y: 0.80,
+                    date: '2024',
+                },
+                {
+                    y: 0.90,
+                    date: '2024',
+                },
+                {
+                    y: 0.80,
+                    date: '2024',
+                },
+                {
+                    y: 0.70,
+                    date: '2024',                    
+                }]
             }],
 
             plotOptions: {
@@ -5326,7 +5455,7 @@ $(document).ready(function () {
             },
 
             xAxis: [{
-                categories: ['2018', '2019', '2020', '2021', '2022 <br> <span style="font-size:10px">(추정)</span>'],
+                categories: ['2018', '2019', '2020', '2021', '2022 <br> <span style="font-size:10px">(예상)</span>'],
                 crosshair: true,
                 labels: {
                     style: {
@@ -5375,7 +5504,7 @@ $(document).ready(function () {
                 },
                 {
                     y: 95.988,
-                    date: '2022.10',
+                    date: '2022.10(예상)',
                     change: '+65.20%',
                     className: 'point_color'
                 }]
@@ -5499,7 +5628,7 @@ $(document).ready(function () {
             },
 
             xAxis: [{
-                categories: ['2018', '2019', '2020', '2021', '2022 <br> <span style="font-size:10px">(추정)</span>'],
+                categories: ['2018', '2019', '2020', '2021', '2022 <br> <span style="font-size:10px">(예상)</span>'],
                 crosshair: true,
                 labels: {
                     style: {
@@ -5672,7 +5801,7 @@ $(document).ready(function () {
             },
 
             xAxis: [{
-                categories: ['2018', '2019', '2020', '2021', '2022 <br> <span style="font-size:10px">(추정)</span>'],
+                categories: ['2018', '2019', '2020', '2021', '2022 <br> <span style="font-size:10px">(예상)</span>'],
                 crosshair: true,
                 labels: {
                     style: {
@@ -5813,7 +5942,7 @@ $(document).ready(function () {
             },
 
             xAxis: [{
-                categories: ['2018', '2019', '2020', '2021', '2022'],
+                categories: ['2018.12', '2019.12', '2020.12', '2021.12', '2022.12 <br> <span style="font-size:10px">(예상)</span>'],
                 crosshair: true,
                 labels: {
                     style: {
@@ -5835,8 +5964,23 @@ $(document).ready(function () {
 
             series: [{
                 type: 'column',
-                name: 'ROE 자기자본이익률',
-                data: [97.988, 45.988, 75.988, 85.988, 95.988]
+                name: '주당배당금',
+                data: [{
+                    y: 97.988,
+                },
+                {
+                    y: 45.988,                    
+                },
+                {
+                    y: 75.988,                    
+                },
+                {
+                    y: 85.988,
+                },
+                {
+                    y: 95.988,                    
+                    className: 'point_color'
+                }]
             }],
 
             plotOptions: {
@@ -5929,7 +6073,7 @@ $(document).ready(function () {
             },
 
             xAxis: [{
-                categories: ['2018', '2019', '2020', '2021', '2022'],
+                categories: ['2018.12', '2019.12', '2020.12', '2021.12', '2022.12 <br> <span style="font-size:10px">(예상)</span>'],
                 crosshair: true,
                 labels: {
                     style: {
@@ -5951,8 +6095,23 @@ $(document).ready(function () {
 
             series: [{
                 type: 'column',
-                name: 'ROE 자기자본이익률',
-                data: [97.988, 45.988, 75.988, 85.988, 95.988]
+                name: '시가배당률',
+                data: [{
+                    y: 97.988,
+                },
+                {
+                    y: 45.988,                    
+                },
+                {
+                    y: 75.988,                    
+                },
+                {
+                    y: 85.988,
+                },
+                {
+                    y: 95.988,                    
+                    className: 'point_color'
+                }]
             }],
 
             plotOptions: {
@@ -5984,7 +6143,7 @@ $(document).ready(function () {
         var eps1 = [2024,2025,];
         var eps2 = [[1633219200000, 3.54],[1664668800000, 2.83],[1696118400000, 3.58],];
         var eps3 = [[1696118400000, 3.58],[1727740800000, 4.07],[1759276800000, 4.75],];
-        var categories = { 2021: '2021.09', 2022: '2022.09', 2023: '2023.09', 2024: '2024.09<br> <span style="font-size:10px">(추정)</span>', 2025: '2025.09<br> <span style="font-size:10px">(추정)</span>', };
+        var categories = { 2021: '2021.09', 2022: '2022.09', 2023: '2023.09', 2024: '2024.09<br> <span style="font-size:10px">(예상)</span>', 2025: '2025.09<br> <span style="font-size:10px">(예상)</span>', };
 
         // 주가 데이터 포인트의 날짜에 가장 가까운 주당순이익 데이터를 찾는 함수
         const findClosestEpsData = (epsData, targetDate) => {
@@ -6044,8 +6203,8 @@ $(document).ready(function () {
                         }
                         // 주당순이익 데이터를 포함하는 조건
                         else if (point.series.name.includes('주당순이익') && !epsIncluded) {
-                            // '주당순이익(추정)'의 경우 날짜 포맷을 변경
-                            if (point.series.name === '주당순이익(추정)') {
+                            // '주당순이익(예상)'의 경우 날짜 포맷을 변경
+                            if (point.series.name === '주당순이익(예상)') {
                                 tooltipHtml = Highcharts.dateFormat('%Y', this.x);
                             }
                             epsIncluded = true;
@@ -6069,7 +6228,7 @@ $(document).ready(function () {
                         tooltipHtml += `<br/><strong style="color: #5CAC00;">주당순이익</strong>: ${closestEpsData[1]}`;
                     }
                     if (closestEpsEstimate && (!closestEpsData || closestEpsEstimate[0] < closestEpsData[0])) {
-                        tooltipHtml += `<br/><strong style="color: #c6c6c6;">주당순이익(추정)</strong>: ${closestEpsEstimate[1]}`;
+                        tooltipHtml += `<br/><strong style="color: #c6c6c6;">주당순이익(예상)</strong>: ${closestEpsEstimate[1]}`;
                     }
                     return tooltipHtml;
                 }
@@ -6101,7 +6260,7 @@ $(document).ready(function () {
                     },
                     formatter: function () {
                         const year = new Date(this.value).getFullYear();
-                        const categories = {2021: '2021.12' ,2022: '2022.12' ,2023: '2023.12' ,2024: '2024.12<br> <span style="font-size:10px">(추정)</span>' ,2025: '2025.12<br> <span style="font-size:10px">(추정)</span>' ,};
+                        const categories = {2021: '2021.12' ,2022: '2022.12' ,2023: '2023.12' ,2024: '2024.12<br> <span style="font-size:10px">(예상)</span>' ,2025: '2025.12<br> <span style="font-size:10px">(예상)</span>' ,};
                         return categories[year];
                     }
                 }
@@ -6151,13 +6310,13 @@ $(document).ready(function () {
                     events: {
                         legendItemClick: function () {
                             var visibility = !this.visible;
-                            // 'EPS(추정)' 시리즈 찾기
+                            // 'EPS(예상)' 시리즈 찾기
                             var chart = this.chart;
                             var predictedSeries = chart.series.find(function (s) {
-                                return s.name === '주당순이익(추정)';
+                                return s.name === '주당순이익(예상)';
                             });
                             if (predictedSeries) {
-                                // 'EPS(추정)' 시리즈의 가시성 변경
+                                // 'EPS(예상)' 시리즈의 가시성 변경
                                 predictedSeries.setVisible(visibility, false);
                             }
                             return true; // 기본 동작 실행 (시리즈 가시성 토글)
@@ -6166,7 +6325,7 @@ $(document).ready(function () {
                 },
                 {
                     type: 'line',
-                    name: '주당순이익(추정)',
+                    name: '주당순이익(예상)',
                     data: eps3,
                     step: 'right', // 계단식 선을 오른쪽으로 그리도록 설정
                     dashStyle: 'dash',
