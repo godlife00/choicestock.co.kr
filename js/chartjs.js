@@ -2515,352 +2515,352 @@ $(document).ready(function () {
     }
 
     // 검색 - 종목진단 - 기업개요탭 재무제표 column 차트
-    if ($('#containerfinancials1_1').length) {
-        Highcharts.chart('containerfinancials1_1', {
-            chart: {
-                type: 'column',
-                renderTo: 'containerfinancials1_1',
-                backgroundColor: {
-                    // linearGradient: { x1: 0, y1: 1, x2: 1, y2: 0 },
-                    stops: [
-                        [0, '#ffffff'],
-                        [1, '#ffffff']
-                    ]
-                },
-                margin: [15, 10, 50, 10],
-                style: {
+    // if ($('#containerfinancials1_1').length) {
+    //     Highcharts.chart('containerfinancials1_1', {
+    //         chart: {
+    //             type: 'column',
+    //             renderTo: 'containerfinancials1_1',
+    //             backgroundColor: {
+    //                 // linearGradient: { x1: 0, y1: 1, x2: 1, y2: 0 },
+    //                 stops: [
+    //                     [0, '#ffffff'],
+    //                     [1, '#ffffff']
+    //                 ]
+    //             },
+    //             margin: [15, 10, 50, 10],
+    //             style: {
 
-                },
-                plotBorderColor: null,
-                plotBorderWidth: null,
-                plotShadow: false
-            },
+    //             },
+    //             plotBorderColor: null,
+    //             plotBorderWidth: null,
+    //             plotShadow: false
+    //         },
 
-            colors: ["#404fc3", "#545872", "#d3d3d3"],
+    //         colors: ["#404fc3", "#545872", "#d3d3d3"],
 
-            tooltip: {
-                shared: true,
-                crosshairs: true,
-                pointFormat: '<span style="color:{series.color}">{series.name}: <b>{point.y:,.0f}</b><br/>'
-            },
+    //         tooltip: {
+    //             shared: true,
+    //             crosshairs: true,
+    //             pointFormat: '<span style="color:{series.color}">{series.name}: <b>{point.y:,.0f}</b><br/>'
+    //         },
 
-            xAxis: [{
-                categories: ['2017', '2018', '2019'],
-                crosshair: true,
-                labels: {
-                    style: {
-                        color: '#939393',
-                        fontSize: '0.85rem'
-                    }
-                }
-            }],
+    //         xAxis: [{
+    //             categories: ['2017', '2018', '2019'],
+    //             crosshair: true,
+    //             labels: {
+    //                 style: {
+    //                     color: '#939393',
+    //                     fontSize: '0.85rem'
+    //                 }
+    //             }
+    //         }],
 
-            yAxis: {
-                title: {
-                    text: null
-                },
-                lineColor: null,
-                minorGridLineWidth: 1,
-                gridLineWidth: 0,
-                lineWidth: 1,
-                plotLines: [{
-                    color: '#c8c8c8',
-                    width: 1,
-                    value: 0
-                }],
-                alternateGridColor: null,
-                showFirstLabel: false,
-                breaks: [{
-                    from: 0,
-                    to: 100
-                }],
-                labels: {
-                    enabled: false
-                }
-            },
+    //         yAxis: {
+    //             title: {
+    //                 text: null
+    //             },
+    //             lineColor: null,
+    //             minorGridLineWidth: 1,
+    //             gridLineWidth: 0,
+    //             lineWidth: 1,
+    //             plotLines: [{
+    //                 color: '#c8c8c8',
+    //                 width: 1,
+    //                 value: 0
+    //             }],
+    //             alternateGridColor: null,
+    //             showFirstLabel: false,
+    //             breaks: [{
+    //                 from: 0,
+    //                 to: 100
+    //             }],
+    //             labels: {
+    //                 enabled: false
+    //             }
+    //         },
 
-            title: {
-                style: {
-                    'font-weight': "bold",
-                    color: '#E0E0E3',
-                    textTransform: 'uppercase',
-                    fontSize: '0',
-                },
-                text: ''
-            },
+    //         title: {
+    //             style: {
+    //                 'font-weight': "bold",
+    //                 color: '#E0E0E3',
+    //                 textTransform: 'uppercase',
+    //                 fontSize: '0',
+    //             },
+    //             text: ''
+    //         },
 
-            credits: {
-                enabled: false
-            },
+    //         credits: {
+    //             enabled: false
+    //         },
 
-            exporting: {
-                enabled: false
-            },
+    //         exporting: {
+    //             enabled: false
+    //         },
 
-            legend: {
-                enabled: false,
-            },
+    //         legend: {
+    //             enabled: false,
+    //         },
 
-            series: [{
-                name: '매출액',
-                data: [97, 45, 75]
-            }, {
-                name: '영업이익',
-                data: [85, 24, 42]
-            }, {
-                name: '순이익',
-                data: [64, 34, 24]
-            }],
+    //         series: [{
+    //             name: '매출액',
+    //             data: [97, 45, 75]
+    //         }, {
+    //             name: '영업이익',
+    //             data: [85, 24, 42]
+    //         }, {
+    //             name: '순이익',
+    //             data: [64, 34, 24]
+    //         }],
 
-            plotOptions: {
-                series: {
-                    marker: {
-                        enabled: false,
-                    }
-                },
-                column: {
-                    minPointLength: 5,
-                    dataLabels: {
-                        enabled: true,
-                        crop: false,
-                        color: '#939393',
-                        overflow: 'none',
-                        format: '{point.y:,.2f}',
-                    }
-                }
-            },
-        });
-    }
-    if ($('#containerfinancials1_2').length) {
-        Highcharts.chart('containerfinancials1_2', {
-            chart: {
-                type: 'column',
-                renderTo: 'containerfinancials1_2',
-                backgroundColor: {
-                    // linearGradient: { x1: 0, y1: 1, x2: 1, y2: 0 },
-                    stops: [
-                        [0, '#ffffff'],
-                        [1, '#ffffff']
-                    ]
-                },
-                style: {
+    //         plotOptions: {
+    //             series: {
+    //                 marker: {
+    //                     enabled: false,
+    //                 }
+    //             },
+    //             column: {
+    //                 minPointLength: 5,
+    //                 dataLabels: {
+    //                     enabled: true,
+    //                     crop: false,
+    //                     color: '#939393',
+    //                     overflow: 'none',
+    //                     format: '{point.y:,.2f}',
+    //                 }
+    //             }
+    //         },
+    //     });
+    // }
+    // if ($('#containerfinancials1_2').length) {
+    //     Highcharts.chart('containerfinancials1_2', {
+    //         chart: {
+    //             type: 'column',
+    //             renderTo: 'containerfinancials1_2',
+    //             backgroundColor: {
+    //                 // linearGradient: { x1: 0, y1: 1, x2: 1, y2: 0 },
+    //                 stops: [
+    //                     [0, '#ffffff'],
+    //                     [1, '#ffffff']
+    //                 ]
+    //             },
+    //             style: {
 
-                },
-                plotBorderColor: null,
-                plotBorderWidth: null,
-                plotShadow: false
-            },
+    //             },
+    //             plotBorderColor: null,
+    //             plotBorderWidth: null,
+    //             plotShadow: false
+    //         },
 
-            colors: ["#404fc3", "#545872", "#d3d3d3"],
+    //         colors: ["#404fc3", "#545872", "#d3d3d3"],
 
-            tooltip: {
-                shared: true,
-                crosshairs: true,
-                pointFormat: '<span style="color:{series.color}">{series.name}: <b>{point.y:,.0f}</b><br/>'
-            },
+    //         tooltip: {
+    //             shared: true,
+    //             crosshairs: true,
+    //             pointFormat: '<span style="color:{series.color}">{series.name}: <b>{point.y:,.0f}</b><br/>'
+    //         },
 
-            xAxis: [{
-                categories: ['2017', '2018', '2019'],
-                crosshair: true,
-                labels: {
-                    style: {
-                        color: '#939393',
-                        fontSize: '0.85rem'
-                    }
-                }
-            }],
+    //         xAxis: [{
+    //             categories: ['2017', '2018', '2019'],
+    //             crosshair: true,
+    //             labels: {
+    //                 style: {
+    //                     color: '#939393',
+    //                     fontSize: '0.85rem'
+    //                 }
+    //             }
+    //         }],
 
-            yAxis: {
-                title: {
-                    text: null
-                },
-                lineColor: null,
-                minorGridLineWidth: 1,
-                gridLineWidth: 0,
-                lineWidth: 1,
-                plotLines: [{
-                    color: '#c8c8c8',
-                    width: 1,
-                    value: 0
-                }],
-                alternateGridColor: null,
-                showFirstLabel: false,
-                breaks: [{
-                    from: 0,
-                    to: 100
-                }],
-                labels: {
-                    enabled: false
-                }
-            },
+    //         yAxis: {
+    //             title: {
+    //                 text: null
+    //             },
+    //             lineColor: null,
+    //             minorGridLineWidth: 1,
+    //             gridLineWidth: 0,
+    //             lineWidth: 1,
+    //             plotLines: [{
+    //                 color: '#c8c8c8',
+    //                 width: 1,
+    //                 value: 0
+    //             }],
+    //             alternateGridColor: null,
+    //             showFirstLabel: false,
+    //             breaks: [{
+    //                 from: 0,
+    //                 to: 100
+    //             }],
+    //             labels: {
+    //                 enabled: false
+    //             }
+    //         },
 
-            title: {
-                style: {
-                    'font-weight': "bold",
-                    color: '#E0E0E3',
-                    textTransform: 'uppercase',
-                    fontSize: '0',
-                },
-                text: ''
-            },
+    //         title: {
+    //             style: {
+    //                 'font-weight': "bold",
+    //                 color: '#E0E0E3',
+    //                 textTransform: 'uppercase',
+    //                 fontSize: '0',
+    //             },
+    //             text: ''
+    //         },
 
-            credits: {
-                enabled: false
-            },
+    //         credits: {
+    //             enabled: false
+    //         },
 
-            exporting: {
-                enabled: false
-            },
+    //         exporting: {
+    //             enabled: false
+    //         },
 
-            legend: {
-                enabled: false,
-            },
+    //         legend: {
+    //             enabled: false,
+    //         },
 
-            series: [{
-                name: '매출액',
-                data: [97, 45, 75]
-            }, {
-                name: '영업이익',
-                data: [85, 24, 42]
-            }, {
-                name: '순이익',
-                data: [64, 34, 24]
-            }],
+    //         series: [{
+    //             name: '매출액',
+    //             data: [97, 45, 75]
+    //         }, {
+    //             name: '영업이익',
+    //             data: [85, 24, 42]
+    //         }, {
+    //             name: '순이익',
+    //             data: [64, 34, 24]
+    //         }],
 
-            plotOptions: {
-                series: {
-                    marker: {
-                        enabled: false,
-                    }
-                },
-                column: {
-                    minPointLength: 5,
-                    dataLabels: {
-                        enabled: true,
-                        crop: false,
-                        color: '#939393',
-                        overflow: 'none',
-                        format: '{point.y:,.2f}',
-                    }
-                }
-            },
-        });
-    }
-    if ($('#containerfinancials1_3').length) {
-        Highcharts.chart('containerfinancials1_3', {
-            chart: {
-                type: 'column',
-                renderTo: 'containerfinancials1_3',
-                backgroundColor: {
-                    // linearGradient: { x1: 0, y1: 1, x2: 1, y2: 0 },
-                    stops: [
-                        [0, '#ffffff'],
-                        [1, '#ffffff']
-                    ]
-                },
-                style: {
+    //         plotOptions: {
+    //             series: {
+    //                 marker: {
+    //                     enabled: false,
+    //                 }
+    //             },
+    //             column: {
+    //                 minPointLength: 5,
+    //                 dataLabels: {
+    //                     enabled: true,
+    //                     crop: false,
+    //                     color: '#939393',
+    //                     overflow: 'none',
+    //                     format: '{point.y:,.2f}',
+    //                 }
+    //             }
+    //         },
+    //     });
+    // }
+    // if ($('#containerfinancials1_3').length) {
+    //     Highcharts.chart('containerfinancials1_3', {
+    //         chart: {
+    //             type: 'column',
+    //             renderTo: 'containerfinancials1_3',
+    //             backgroundColor: {
+    //                 // linearGradient: { x1: 0, y1: 1, x2: 1, y2: 0 },
+    //                 stops: [
+    //                     [0, '#ffffff'],
+    //                     [1, '#ffffff']
+    //                 ]
+    //             },
+    //             style: {
 
-                },
-                plotBorderColor: null,
-                plotBorderWidth: null,
-                plotShadow: false
-            },
+    //             },
+    //             plotBorderColor: null,
+    //             plotBorderWidth: null,
+    //             plotShadow: false
+    //         },
 
-            colors: ["#404fc3", "#545872", "#d3d3d3"],
+    //         colors: ["#404fc3", "#545872", "#d3d3d3"],
 
-            tooltip: {
-                shared: true,
-                crosshairs: true,
-                pointFormat: '<span style="color:{series.color}">{series.name}: <b>{point.y:,.0f}</b><br/>'
-            },
+    //         tooltip: {
+    //             shared: true,
+    //             crosshairs: true,
+    //             pointFormat: '<span style="color:{series.color}">{series.name}: <b>{point.y:,.0f}</b><br/>'
+    //         },
 
-            xAxis: [{
-                categories: ['2017', '2018', '2019'],
-                crosshair: true,
-                labels: {
-                    style: {
-                        color: '#939393',
-                        fontSize: '0.85rem'
-                    }
-                }
-            }],
+    //         xAxis: [{
+    //             categories: ['2017', '2018', '2019'],
+    //             crosshair: true,
+    //             labels: {
+    //                 style: {
+    //                     color: '#939393',
+    //                     fontSize: '0.85rem'
+    //                 }
+    //             }
+    //         }],
 
-            yAxis: {
-                title: {
-                    text: null
-                },
-                lineColor: null,
-                minorGridLineWidth: 1,
-                gridLineWidth: 0,
-                lineWidth: 1,
-                plotLines: [{
-                    color: '#c8c8c8',
-                    width: 1,
-                    value: 0
-                }],
-                alternateGridColor: null,
-                showFirstLabel: false,
-                breaks: [{
-                    from: 0,
-                    to: 100
-                }],
-                labels: {
-                    enabled: false
-                }
-            },
+    //         yAxis: {
+    //             title: {
+    //                 text: null
+    //             },
+    //             lineColor: null,
+    //             minorGridLineWidth: 1,
+    //             gridLineWidth: 0,
+    //             lineWidth: 1,
+    //             plotLines: [{
+    //                 color: '#c8c8c8',
+    //                 width: 1,
+    //                 value: 0
+    //             }],
+    //             alternateGridColor: null,
+    //             showFirstLabel: false,
+    //             breaks: [{
+    //                 from: 0,
+    //                 to: 100
+    //             }],
+    //             labels: {
+    //                 enabled: false
+    //             }
+    //         },
 
-            title: {
-                style: {
-                    'font-weight': "bold",
-                    color: '#E0E0E3',
-                    textTransform: 'uppercase',
-                    fontSize: '0',
-                },
-                text: ''
-            },
+    //         title: {
+    //             style: {
+    //                 'font-weight': "bold",
+    //                 color: '#E0E0E3',
+    //                 textTransform: 'uppercase',
+    //                 fontSize: '0',
+    //             },
+    //             text: ''
+    //         },
 
-            credits: {
-                enabled: false
-            },
+    //         credits: {
+    //             enabled: false
+    //         },
 
-            exporting: {
-                enabled: false
-            },
+    //         exporting: {
+    //             enabled: false
+    //         },
 
-            legend: {
-                enabled: false,
-            },
+    //         legend: {
+    //             enabled: false,
+    //         },
 
-            series: [{
-                name: '매출액',
-                data: [97, 45, 75]
-            }, {
-                name: '영업이익',
-                data: [85, 24, 42]
-            }, {
-                name: '순이익',
-                data: [64, 34, 24]
-            }],
+    //         series: [{
+    //             name: '매출액',
+    //             data: [97, 45, 75]
+    //         }, {
+    //             name: '영업이익',
+    //             data: [85, 24, 42]
+    //         }, {
+    //             name: '순이익',
+    //             data: [64, 34, 24]
+    //         }],
 
-            plotOptions: {
-                series: {
-                    marker: {
-                        enabled: false,
-                    }
-                },
-                column: {
-                    minPointLength: 5,
-                    dataLabels: {
-                        enabled: true,
-                        crop: false,
-                        color: '#939393',
-                        overflow: 'none',
-                        format: '{point.y:,.2f}',
-                    }
-                }
-            },
-        });
-    }
+    //         plotOptions: {
+    //             series: {
+    //                 marker: {
+    //                     enabled: false,
+    //                 }
+    //             },
+    //             column: {
+    //                 minPointLength: 5,
+    //                 dataLabels: {
+    //                     enabled: true,
+    //                     crop: false,
+    //                     color: '#939393',
+    //                     overflow: 'none',
+    //                     format: '{point.y:,.2f}',
+    //                 }
+    //             }
+    //         },
+    //     });
+    // }
     if ($('#containerfinancials2_2').length) {
         Highcharts.chart('containerfinancials2_2', {
             chart: {
@@ -5411,25 +5411,41 @@ $(document).ready(function () {
                     const point = this.points[0].point;
                     const changeValue = point.change;
                     let changeText;
-        
+            
                     if (changeValue !== 'N/A') {
                         const changeNum = parseFloat(changeValue);
                         let changeColor = '#969EA7'; // 기본은 회색 (0인 경우)
-        
+            
                         if (changeNum > 0) {
-                            changeColor = '#E1305A'; // 전년대비 상승
+                            changeColor = '#f94040'; // 전년대비 상승
                         } else if (changeNum < 0) {
-                            changeColor = '#303FAF'; // 전년대비 하락
+                            changeColor = '#1093f3'; // 전년대비 하락
                         }
-        
+            
                         changeText = `전년대비 <b style="color:${changeColor}">${changeValue}</b>`;
                     } else {
                         changeText = "전년대비 데이터 없음";
                     }
-        
-                    return `${point.date}<br/>${this.points[0].series.name}: <b>${point.y}</b> 백만달러<br/>${changeText}`;
-                }
+            
+                    // 소수점 여부에 따라 포맷 다르게 처리
+                    let formattedValue;
+                    if (point.y % 1 === 0) {
+                        // 소수점 없는 경우
+                        formattedValue = new Intl.NumberFormat('en-US', {
+                            maximumFractionDigits: 0
+                        }).format(point.y);
+                    } else {
+                        // 소수점 있는 경우
+                        formattedValue = new Intl.NumberFormat('en-US', {
+                            minimumFractionDigits: 2,
+                            maximumFractionDigits: 2
+                        }).format(point.y);
+                    }
+            
+                    return `${point.date}<br/>${this.points[0].series.name}: <b>${formattedValue}</b> 백만달러<br/>${changeText}`;
+                },
             },
+            
         
 
             rangeSelector: {
@@ -5484,22 +5500,22 @@ $(document).ready(function () {
                 type: 'column',
                 name: '매출액',
                 data: [{
-                    y: 97.988,
+                    y: 2397,
                     date: '2018.10', // 툴팁에 년.월 표시
                     change: '0.00%' // 상승률 표시
                 },
                 {
-                    y: 45.988,
+                    y: 45,
                     date: '2019.10',
                     change: '-53.07%'
                 },
                 {
-                    y: 75.988,
+                    y: 75,
                     date: '2020.10',
                     change: '+65.20%'
                 },
                 {
-                    y: 85.988,
+                    y: 85,
                     change: '+65.20%'
                 },
                 {
