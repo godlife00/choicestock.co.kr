@@ -5471,7 +5471,7 @@ $(document).ready(function () {
             },
 
             xAxis: [{
-                categories: ['2018', '2019', '2020', '2021', '2022 <br> <span style="font-size:10px">(예상)</span>'],
+                categories: ['2022.12', '2023.12', '2024.12 <br> <span style="font-size:10px">(예상)</span>', '2025.12 <br> <span style="font-size:10px">(예상)</span>', '2026.12 <br> <span style="font-size:10px">(예상)</span>'],
                 crosshair: true,
                 labels: {
                     style: {
@@ -5500,27 +5500,217 @@ $(document).ready(function () {
                 type: 'column',
                 name: '매출액',
                 data: [{
-                    y: 2397,
-                    date: '2018.10', // 툴팁에 년.월 표시
+                    y: 97,
+                    date: '2022.10', // 툴팁에 년.월 표시
                     change: '0.00%' // 상승률 표시
                 },
                 {
                     y: 45,
-                    date: '2019.10',
+                    date: '2023.10',
                     change: '-53.07%'
                 },
                 {
                     y: 75,
-                    date: '2020.10',
-                    change: '+65.20%'
+                    date: '2024.12(예상)',
+                    change: '+65.20%',
+                    className: 'point_color'
                 },
                 {
                     y: 85,
-                    change: '+65.20%'
+                    date: '2025.12(예상)',
+                    change: '+65.20%',
+                    className: 'point_color'
                 },
                 {
                     y: 95.988,
-                    date: '2022.10(예상)',
+                    date: '2026.12(예상)',
+                    change: '+65.20%',
+                    className: 'point_color'
+                }]
+            }],
+
+            plotOptions: {
+                series: {
+                    marker: {
+                        enabled: false,
+                    },
+                    // borderRadius: 3,                    
+                    // pointWidth: 28
+                },
+
+                column: {
+                    minPointLength: 5,
+                    dataLabels: {
+                        enabled: true,
+                        crop: false,
+                        color: '#939393',
+                        overflow: 'none',
+                        format: '{point.y:,.2f}',
+                    },
+
+                }
+            },
+
+        });
+    }
+    if ($('#containerfinancials1_1_temp').length) {
+        Highcharts.chart('containerfinancials1_1_temp', {
+
+            chart: {
+                chart: {
+                    type: 'column'
+                },
+                backgroundColor: {
+                    // linearGradient: { x1: 0, y1: 1, x2: 1, y2: 0 },
+                },
+            },
+            // 하단 네비게이션 제거
+            navigator: {
+                enabled: false
+            },
+
+            // 스크롤바 제거
+            scrollbar: {
+                enabled: false
+            },
+
+            // 기간범위선택 
+            rangeSelector: {
+                enabled: false,
+                // allButtonsEnabled: true,                
+                // selected: 0,                
+            },
+
+            legend: {
+                enabled: false,
+            },
+
+            credits: {
+                enabled: false
+            },
+
+            lang: {
+                noData: "해당 데이터가 없습니다",
+            },
+
+            exporting: {
+                enabled: false
+            },
+
+            tooltip: {
+                shared: true,
+                useHTML: true,
+                formatter: function () {
+                    const point = this.points[0].point;
+                    const changeValue = point.change;
+                    let changeText;
+            
+                    if (changeValue !== 'N/A') {
+                        const changeNum = parseFloat(changeValue);
+                        let changeColor = '#969EA7'; // 기본은 회색 (0인 경우)
+            
+                        if (changeNum > 0) {
+                            changeColor = '#f94040'; // 전년대비 상승
+                        } else if (changeNum < 0) {
+                            changeColor = '#1093f3'; // 전년대비 하락
+                        }
+            
+                        changeText = `전년대비 <b style="color:${changeColor}">${changeValue}</b>`;
+                    } else {
+                        changeText = "전년대비 데이터 없음";
+                    }
+            
+                    // 소수점 여부에 따라 포맷 다르게 처리
+                    let formattedValue;
+                    if (point.y % 1 === 0) {
+                        // 소수점 없는 경우
+                        formattedValue = new Intl.NumberFormat('en-US', {
+                            maximumFractionDigits: 0
+                        }).format(point.y);
+                    } else {
+                        // 소수점 있는 경우
+                        formattedValue = new Intl.NumberFormat('en-US', {
+                            minimumFractionDigits: 2,
+                            maximumFractionDigits: 2
+                        }).format(point.y);
+                    }
+            
+                    return `${point.date}<br/>${this.points[0].series.name}: <b>${formattedValue}</b> 백만달러<br/>${changeText}`;
+                },
+            },
+            
+        
+
+            rangeSelector: {
+                selected: 1
+            },
+
+            lang: {
+                noData: "해당 데이터가 없습니다",
+            },
+
+            title: {
+                style: {
+                    'font-weight': "bold",
+                    color: '#E0E0E3',
+                    textTransform: 'uppercase',
+                    fontSize: '0',
+                },
+                text: ''
+            },
+
+            lang: {
+                noData: "해당 데이터가 없습니다",
+            },
+
+            xAxis: [{
+                categories: ['2022.12', '2023.12', '2024.12 <br> <span style="font-size:10px">(예상)</span>', '2025.12 <br> <span style="font-size:10px">(예상)</span>', '2026.12 <br> <span style="font-size:10px">(예상)</span>'],
+                crosshair: true,
+                labels: {
+                    style: {
+                        color: '#939393',
+                        fontSize: '0.85rem'
+                    }
+                }
+            }],
+
+            yAxis: {
+                title: {
+                    text: null
+                },
+                gridLineWidth: 0,
+                labels: {
+                    enabled: false
+                },
+                plotLines: [{
+                    color: '#edeeef',
+                    width: 1,
+                    value: 0
+                }],
+            },
+
+            series: [{
+                type: 'column',
+                name: '매출액',
+                data: [{
+                    y: 97,
+                    date: '2022.10', // 툴팁에 년.월 표시
+                    change: '0.00%' // 상승률 표시
+                },
+                {
+                    y: 45,
+                    date: '2023.10',
+                    change: '-53.07%'
+                },
+                {
+                    y: 75,
+                    date: '2024.12(예상)',
+                    change: '+65.20%',
+                    className: 'point_color'
+                },
+                {
+                    y: 85,
+                    date: '2025.12(예상)',
                     change: '+65.20%',
                     className: 'point_color'
                 }]
@@ -5644,7 +5834,7 @@ $(document).ready(function () {
             },
 
             xAxis: [{
-                categories: ['2018', '2019', '2020', '2021', '2022 <br> <span style="font-size:10px">(예상)</span>'],
+                categories: ['2022.12', '2023.12', '2024.12 <br> <span style="font-size:10px">(예상)</span>', '2025.12 <br> <span style="font-size:10px">(예상)</span>', '2026.12 <br> <span style="font-size:10px">(예상)</span>'],
                 crosshair: true,
                 labels: {
                     style: {
@@ -5671,33 +5861,33 @@ $(document).ready(function () {
 
             series: [{
                 type: 'column',
-                name: 'EPS',
+                name: '매출액',
                 data: [{
-                    y: 97.988,
-                    date: '2018.10', // 툴팁에 년.월 표시
-                    change: '+10.00%' // 상승률 표시
-                },
-                {
-                    y: 45.988,
-                    date: '2019.10', // 툴팁에 년.월 표시
-                    change: '-20.00%' // 상승률 표시
-                },
-                {
-                    y: -75.988,
-                    date: '2020.10', // 툴팁에 년.월 표시
-                    change: '-30.00%', // 상승률 표시
-                    className: 'decrease_color'
-                },
-                {
-                    y: -85.988,
-                    date: '2021.10', // 툴팁에 년.월 표시
-                    change: '-40.00%', // 상승률 표시
-                    className: 'decrease_color'
-                },
-                {
-                    y: -95.988,
+                    y: 97,
                     date: '2022.10', // 툴팁에 년.월 표시
-                    change: '-50.00%', // 상승률 표시
+                    change: '0.00%' // 상승률 표시
+                },
+                {
+                    y: 45,
+                    date: '2023.10',
+                    change: '-53.07%'
+                },
+                {
+                    y: 75,
+                    date: '2024.12(예상)',
+                    change: '+65.20%',
+                    className: 'point_color'
+                },
+                {
+                    y: 85,
+                    date: '2025.12(예상)',
+                    change: '+65.20%',
+                    className: 'point_color'
+                },
+                {
+                    y: 95.988,
+                    date: '2026.12(예상)',
+                    change: '+65.20%',
                     className: 'point_color'
                 }]
             }],
@@ -5817,7 +6007,7 @@ $(document).ready(function () {
             },
 
             xAxis: [{
-                categories: ['2018', '2019', '2020', '2021', '2022 <br> <span style="font-size:10px">(예상)</span>'],
+                categories: ['2022.12', '2023.12', '2024.12 <br> <span style="font-size:10px">(예상)</span>', '2025.12 <br> <span style="font-size:10px">(예상)</span>', '2026.12 <br> <span style="font-size:10px">(예상)</span>'],
                 crosshair: true,
                 labels: {
                     style: {
@@ -5834,36 +6024,43 @@ $(document).ready(function () {
                 gridLineWidth: 0,
                 labels: {
                     enabled: false
-                }
+                },
+                plotLines: [{
+                    color: '#edeeef',
+                    width: 1,
+                    value: 0
+                }],
             },
 
             series: [{
                 type: 'column',
-                name: 'ROE',
+                name: '매출액',
                 data: [{
-                    y: 97.988,
-                    date: '2018.10', // 툴팁에 년.월 표시
-                    change: '-30.00%' // 상승률 표시
+                    y: 97,
+                    date: '2022.10', // 툴팁에 년.월 표시
+                    change: '0.00%' // 상승률 표시
                 },
                 {
-                    y: 45.988,
-                    date: '2019.10', // 툴팁에 년.월 표시
-                    change: '-30.00%' // 상승률 표시
+                    y: 45,
+                    date: '2023.10',
+                    change: '-53.07%'
                 },
                 {
-                    y: 75.988,
-                    date: '2020.10', // 툴팁에 년.월 표시
-                    change: '+30.00%' // 상승률 표시
+                    y: 75,
+                    date: '2024.12(예상)',
+                    change: '+65.20%',
+                    className: 'point_color'
                 },
                 {
-                    y: 85.988,
-                    date: '2021.10', // 툴팁에 년.월 표시
-                    change: '+30.00%' // 상승률 표시
+                    y: 85,
+                    date: '2025.12(예상)',
+                    change: '+65.20%',
+                    className: 'point_color'
                 },
                 {
                     y: 95.988,
-                    date: '2022.10', // 툴팁에 년.월 표시
-                    change: '+30.00%', // 상승률 표시
+                    date: '2026.12(예상)',
+                    change: '+65.20%',
                     className: 'point_color'
                 }]
             }],

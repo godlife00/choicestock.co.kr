@@ -103,25 +103,13 @@
             <div class="sub_mid recipe_view">
                 <div class="recipe_area">
                     <div class="tab-container">
-
                         <div class="tradeSignal_status">
-                            <p class="day">
-                                <span class="date">2024.10월 07일</span>                                
-                                <span class="total">전체 5,406건</span>
-                            </p>
-                            
-                            <div class="status-container">
-                                <div class="status buy-hold">
-                                    <span class="label">매수 / 보유</span>
-                                    <span class="increase">1,106</span> <span class="increase">(20%)</span>
-                                </div>
-                                <div class="status sell-wait">
-                                    <span class="label">매도 / 관망</span>
-                                    <span class="decrease">4,300</span> <span class="decrease">(80%)</span>
-                                </div>
-                            </div>
+                            <h2 class="title">마켓스코어 <span class="signal_guide txt_guide"><img src="../img/txt_guide_us.svg" alt="가이드보기"></span></h2>                            
+
                         </div>
                         <!-- //tradeSignal_status -->
+
+                        
                         <div class="tab_btn">
                             <button data-tab="tab1" class="tab_span active">매수종목 <span class="cunt">(23건)</span></button>
                             <button data-tab="tab2" class="tab_span">매도종목 <span class="cunt">(12건)</span></button>
@@ -516,61 +504,26 @@
         <!-- //footer -->
     </div>
     <!-- //wrap -->
-</body>
 
-<!-- 로그인만하면 2주 무료 -->
-<div class="first_month_3300 md-modal md-effect-3" id="modal-3">
-    <!-- class : md-show 가 없는 경우 팝업 숨김, md-show 있는 경우 팝업 노출  -->
-    <div class="md-content">
-        <div id="setting" class="setting_area">
+    <div class="modalBox">
+        <!-- 마켓스코어 공포 지수 툴팁 -->
+        <div class="modal tooltip_pop score_pop01" style="display: block;">
             <div class="pop_header">
-                <a href="#setting_anchor" title="로그인 레이어 닫기" class="close"><img src="../img/clse_w.png" alt="팝업닫기"></a>
-                <div class="sub_top">                    
-                    <h2 class="h2_title">초이스스탁US 프리미엄<span><strong>로그인만하면 2주 무료!</strong></span></h2>
-                    <p class="period">미국주식 추천과 분석, 알림까지 한번에!</p>
-                </div>
+                <h1 class="pop_title">초이스스탁의 공포-탐욕 지수</h1>
+                <span class="clse">
+                    <!--닫기-->
+                </span>
             </div>
-            <!-- //pop_header -->
             <div class="pop_con">
-                <table cellspacing="0" border="0" class="tableRanking type_compare">
-                    <tbody>                        
-                        <tr>
-                            <td class="mid_td"><span>• 5분이면 끝! 매력적인 종목을 한눈에 <b>종목진단</b></span></td>                            
-                        </tr>
-                        <tr>
-                            <td class="mid_td"><span>• 엄선된 저평가 우량주만 콕! <b>종목추천/포트폴리오</b></span></td>                            
-                        </tr>
-                        <tr>
-                            <td class="mid_td"><span>• 투자매력 + 저평가 + 수급 <b>오늘의 승부주</b></span></td>                            
-                        </tr>
-                        <tr>
-                            <td class="mid_td"><span>• 투자매력주의 매매판단을 빠르게! <b>AI적정주가</b></span></td>                            
-                        </tr>
-                        <tr>
-                            <td class="mid_td"><span>• 나만의 취향저격 종목추천 <b>종목캐치</b></span></td>                            
-                        </tr>
-                        <tr>
-                            <td class="mid_td"><span>• 관심종목/보유종목 모니터링 <b>관심종목/원스톱진단</b></span></td>                            
-                        </tr>
-                        <tr>
-                            <td class="mid_td"><span>• 종목추천 + 관심종목 업데이트 <b>알림서비스</b></span></td>                            
-                        </tr>
-                        <tr>
-                            <td class="mid_td"><span>• <b>광고 없는</b> 서비스 제공</span></td>                    
-                        </tr>
-                    </tbody>
-                </table>
-
-            </div>
-            <div class="pop_btm">
-                <div class="btnArea payBtn">
-                    <!-- <a href="login_complete.html" class="btn btn_save"><b>프리미엄</b> 가입하기<i></i></a> -->
-                    <a href="stock/service_prm.html" class="btn btn_save"><b>프리미엄 2주 무료체험</b><i></i></a>
-                </div>                
+                <p class="txt">20년 이상의 금융 빅데이터와 알고리즘 기술을 통해 종목의 매매신호를 신속하게 제시합니다.</p>
+                <p class="txt">매매신호는 스마트 스코어 / 밸류에이션 / 수급분석 을 종합적으로 고려해 결정합니다.</p>
+                <p class="txt">매매신호는 매수-보유-매도-관망 신호를 제공하며, 3개 조건을 모두 만족 할 때 매수 및 보유신호가 발생합니다.</p>
             </div>
         </div>
+
+        <div class="blocker"></div>
     </div>
-</div>
-<div class="md-overlay"></div><!-- the overlay element -->
+
+</body>
 
 </html>

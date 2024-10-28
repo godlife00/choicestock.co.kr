@@ -16470,56 +16470,19 @@ table.tableRanking td {
 .globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .tradeSignal_status {
   width: 100%;
   box-sizing: border-box;
+  margin-top: 35px;
   margin-bottom: 35px;
 }
-.globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .tradeSignal_status .day {
+.globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .tradeSignal_status .title {
   display: flex;
-  align-items: baseline;
-  gap: 0 5px;
+  gap: 5px 5px;
+  color: #333;
+  font-size: 1.25rem;
+  font-weight: 700;
 }
-.globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .tradeSignal_status .date {
-  color: #939393;
-  font-size: 0.875rem;
-  letter-spacing: normal !important;
-  font-weight: bold;
-}
-.globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .tradeSignal_status .total {
-  color: #939393;
-  font-size: 0.8125rem;
-  letter-spacing: normal !important;
-}
-.globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .tradeSignal_status .status-container {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-evenly;
-  gap: 12px 12px;
-  margin-top: 12px;
-  padding: 10px 16px;
-  border-radius: 16px;
-  background-color: #f7f8f9;
-}
-.globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .tradeSignal_status .status {
-  padding: 5px 10px;
-  border-radius: 8px;
-  text-align: center;
-}
-.globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .tradeSignal_status .status .label {
-  display: block;
-  margin-bottom: 7px;
-  font-size: 0.8125rem;
-  font-weight: 500;
-  color: #6a727b;
-}
-.globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .tradeSignal_status .buy-hold .increase, .globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .tradeSignal_status .sell-wait .increase {
-  color: #f00;
-  font-size: 1rem;
-  font-weight: 500;
-}
-.globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .tradeSignal_status .buy-hold .decrease, .globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .tradeSignal_status .sell-wait .decrease {
-  color: #0062ff;
-  font-size: 1rem;
-  font-weight: 500;
+.globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .tradeSignal_status .title .signal_guide img {
+  display: inline-block;
+  vertical-align: inherit;
 }
 
 .globalStock .sub_recipe .sub_mid.recipe_view .update_info {
@@ -33126,7 +33089,8 @@ body.v_signalStreng {
     width: 280px;
   }
 }
-.v_signalStreng.globalStock #wrap #container .guide_box ul li, .v_signalStreng.globalStock #wrap #container .guide_box .txt {
+.v_signalStreng.globalStock #wrap #container .guide_box ul li,
+.v_signalStreng.globalStock #wrap #container .guide_box .txt {
   display: block;
   font-size: 13px;
   line-height: 1.62;
@@ -34471,10 +34435,10 @@ body.v_signalStreng {
 .modalBox .modal.tooltip_pop.btm .pop_header {
   border-bottom: none;
 }
-.modalBox .modal.tooltip_pop03, .modalBox .modal.tooltip_pop04 {
+.modalBox .modal.tooltip_pop03, .modalBox .modal.tooltip_pop04, .modalBox .modal.score_pop01 {
   top: 15%;
 }
-.modalBox .modal.tooltip_pop03 .pop_con .sum_txt, .modalBox .modal.tooltip_pop04 .pop_con .sum_txt {
+.modalBox .modal.tooltip_pop03 .pop_con .sum_txt, .modalBox .modal.tooltip_pop04 .pop_con .sum_txt, .modalBox .modal.score_pop01 .pop_con .sum_txt {
   font-size: 0.9375rem;
   line-height: 1.43;
   color: #6A727B;
@@ -34483,7 +34447,7 @@ body.v_signalStreng {
   word-wrap: break-word;
   word-break: break-all;
 }
-.modalBox .modal.tooltip_pop03 .pop_con .txt, .modalBox .modal.tooltip_pop04 .pop_con .txt {
+.modalBox .modal.tooltip_pop03 .pop_con .txt, .modalBox .modal.tooltip_pop04 .pop_con .txt, .modalBox .modal.score_pop01 .pop_con .txt {
   position: relative;
   font-size: 0.9375rem;
   line-height: 1.43;
@@ -34493,7 +34457,7 @@ body.v_signalStreng {
   word-wrap: break-word;
   word-break: break-all;
 }
-.modalBox .modal.tooltip_pop03 .pop_con .txt::before, .modalBox .modal.tooltip_pop04 .pop_con .txt::before {
+.modalBox .modal.tooltip_pop03 .pop_con .txt::before, .modalBox .modal.tooltip_pop04 .pop_con .txt::before, .modalBox .modal.score_pop01 .pop_con .txt::before {
   content: "";
   display: inline-block;
   position: absolute;
@@ -34531,7 +34495,8 @@ body.v_signalStreng {
   color: #000;
   font-size: 14px;
   font-weight: 400;
-  line-height: 20px; /* 142.857% */
+  line-height: 20px;
+  /* 142.857% */
 }
 .modalBox .modal.payment_cacl02 .pop_con .txt b, .modalBox .modal.payment_cacl03 .pop_con .txt b, .modalBox .modal.payment_cacl04 .pop_con .txt b {
   color: var(--mian_color1, #404FC3);
@@ -34686,6 +34651,60 @@ body.v_signalStreng {
   color: #06c;
   font-size: 0.8215rem;
   text-decoration: none;
+}
+
+.loading-modal {
+  display: none;
+  /* 초기에는 숨김 */
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  align-items: center;
+  justify-content: center;
+  /* 로딩 아이콘 */
+}
+.loading-modal .loading-spinner {
+  max-width: 700px;
+  margin: 0 auto;
+  position: fixed;
+  top: 15%;
+  z-index: 99;
+  width: 94%;
+  box-sizing: border-box;
+  padding: 0;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.44);
+  background-color: #fff;
+}
+.loading-modal .pop_con {
+  padding: 0 16px 25px;
+}
+.loading-modal .txt {
+  display: block;
+  padding-bottom: 7px;
+  font-size: 15px;
+  line-height: 1.62;
+  color: #656d7e;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+.loading-modal .txt b {
+  font-size: 16px;
+}
+.loading-modal .loading-icon {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+.loading-modal .lottie-container {
+  width: 120px;
+  /* 적절한 크기로 조절 */
+  height: 120px;
 }
 
 .globalStock .service_wrap {

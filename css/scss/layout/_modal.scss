@@ -20,6 +20,7 @@
 		font-weight: 700;
 		color: #333;
 	}
+
 	.txt {
 		display: block;
 		margin-top: 15px;
@@ -27,8 +28,9 @@
 		line-height: 1.62;
 		color: #656d7e;
 		word-break: break-all;
-    	word-wrap: break-word;
+		word-wrap: break-word;
 	}
+
 	.clse_tooltip {
 		position: absolute;
 		right: 15px;
@@ -38,6 +40,7 @@
 		font-size: 0;
 		width: 24px;
 		height: 24px;
+
 		&::before {
 			content: "";
 			height: 18px;
@@ -47,6 +50,7 @@
 			top: 5px;
 			left: 12px;
 		}
+
 		&::after {
 			content: "";
 			height: 18px;
@@ -57,7 +61,7 @@
 			left: 12px;
 		}
 	}
-	
+
 }
 
 .v_signalStreng.globalStock #wrap #container .guide_box {
@@ -65,11 +69,13 @@
 	position: absolute;
 	left: 10px;
 	top: 20px;
-	padding: 26px 30px 20px 15px;	
+	padding: 26px 30px 20px 15px;
 	width: 320px;
+
 	@media (min-width: 320px) and (max-width: 358px) {
 		width: 280px;
 	}
+
 	box-sizing: border-box;
 	border-radius: 10px;
 	box-shadow: 0 10px 20px 0 rgba(101, 109, 126, 0.08);
@@ -77,18 +83,21 @@
 	background-color: #fff;
 	z-index: 9;
 
-	ul li, .txt {
-		display: block;		
+	ul li,
+	.txt {
+		display: block;
 		font-size: 13px;
 		line-height: 1.62;
 		color: #656d7e;
 		text-align: left;
 		word-break: break-all;
-    	word-wrap: break-word;
-	}		
+		word-wrap: break-word;
+	}
+
 	.txt {
 		margin-bottom: 13px;
 	}
+
 	.list_txt {
 		position: relative;
 		padding-left: 10px;
@@ -107,12 +116,13 @@
 	.clse {
 		position: absolute;
 		right: 6px;
-    	top: 5px;
+		top: 5px;
 		display: inline-block;
 		cursor: pointer;
 		font-size: 0;
 		width: 24px;
 		height: 24px;
+
 		&::before {
 			content: "";
 			height: 18px;
@@ -122,6 +132,7 @@
 			top: 5px;
 			left: 12px;
 		}
+
 		&::after {
 			content: "";
 			height: 18px;
@@ -216,10 +227,10 @@
 	top: 15%;
 	// left: 50%;
 	width: 94%;
-    max-width: 700px;	
+	max-width: 700px;
 	height: auto;
 	z-index: 9999;
-	visibility: hidden;	
+	visibility: hidden;
 }
 
 .md-show {
@@ -266,6 +277,7 @@
 	padding: 24px 15px;
 	border: none;
 }
+
 .v_signalStreng.globalStock #wrap .modal.method .pop_header .pop_title,
 .v_signalStreng.globalStock #wrap .modal.cardBox .pop_header .pop_title,
 .v_signalStreng.globalStock #wrap .modal.agreePopBox .pop_header .pop_title,
@@ -277,13 +289,15 @@
 	font-size: 1.25rem;
 	line-height: 1.14;
 	font-weight: bold;
-	color: #333;	
+	color: #333;
 	// padding-right: 40px;
 	box-sizing: border-box;
 }
+
 .v_signalStreng.globalStock #wrap .modal.cardBox .pop_header .pop_title {
 	text-align: left;
 }
+
 .v_signalStreng.globalStock #wrap .modal.method .pop_header .clse::before,
 .v_signalStreng.globalStock #wrap .modal.method .pop_header .clse::after,
 .v_signalStreng.globalStock #wrap .modal.cardBox .pop_header .clse::before,
@@ -317,26 +331,31 @@
 	line-height: 1.43;
 	letter-spacing: normal;
 	color: #333;
+
 	@media (max-width: 374px) {
 		letter-spacing: -1px;
-	}	
+	}
 }
 
 .v_signalStreng.globalStock #wrap .modal.signal_pop01 .pop_con .txt b {
 	font-weight: bold;
 	color: #333;
 	line-height: 1.43;
+
 	&.increase {
 		color: #E1305A;
 	}
+
 	&.decrease {
 		color: #303FAF;
 	}
 }
-.v_signalStreng.globalStock #wrap .modal.signal_pop01 .pop_con .signal_filter {	
+
+.v_signalStreng.globalStock #wrap .modal.signal_pop01 .pop_con .signal_filter {
 	display: flex;
 	justify-content: flex-end;
 	gap: 0 6px;
+
 	span {
 		cursor: pointer;
 		position: relative;
@@ -345,30 +364,35 @@
 		line-height: 1.43;
 		letter-spacing: normal;
 		color: #939393;
+
 		&.active {
 			font-weight: bold;
 			color: #404fc3;
 		}
+
 		&::after {
 			content: '';
-			position: absolute;			
+			position: absolute;
 			top: 5px;
-			display: inline-block;			
+			display: inline-block;
 			margin-left: 6px;
 			width: 1px;
 			height: 12px;
 			background-color: #BEBCCB;
 		}
+
 		&:last-child {
 			&::after {
-				display: none;				
+				display: none;
 			}
 		}
-	}	
+	}
 }
+
 .v_signalStreng.globalStock #wrap .modal.signal_pop01 .pop_con {
-	height: 100%;	
+	height: 100%;
 }
+
 .v_signalStreng.globalStock #wrap .modal.signal_pop01 .pop_con .trading_signal {
 	display: flex;
 	flex-direction: column;
@@ -379,35 +403,42 @@
 	box-sizing: border-box;
 	background-color: #f7f8f9;
 	overflow: scroll;
-	overflow-x: hidden;    
-	@media (max-height: 570px) {		
-		max-height: 210px;		
+	overflow-x: hidden;
+
+	@media (max-height: 570px) {
+		max-height: 210px;
 	}
-	@media (min-height: 571px) and (max-height: 813px) {		
-		max-height: 300px;	
+
+	@media (min-height: 571px) and (max-height: 813px) {
+		max-height: 300px;
 	}
-	@media (min-height: 814px) and (max-height: 897px) {		
-		max-height: 330px;		
+
+	@media (min-height: 814px) and (max-height: 897px) {
+		max-height: 330px;
 	}
-	@media (min-height: 898px) and (max-height: 1025px) {		
-		max-height: 378px;	
+
+	@media (min-height: 898px) and (max-height: 1025px) {
+		max-height: 378px;
 	}
-	@media (min-height: 1026px) {		
-		max-height: 504px;		
+
+	@media (min-height: 1026px) {
+		max-height: 504px;
 	}
+
 	.no_data {
 		display: block;
 		padding: 15px 15px;
 		width: calc(100% - 20px);
 		box-sizing: border-box;
 		border-radius: 12px;
-		font-size: 0.875rem;	
-		font-weight: bold;	
+		font-size: 0.875rem;
+		font-weight: bold;
 		letter-spacing: normal;
 		color: #333;
 		border-bottom: none;
-		text-align: center;		
+		text-align: center;
 	}
+
 	&#all-signal {
 		display: none;
 	}
@@ -485,33 +516,37 @@
 	font-weight: 500;
 	color: #d3d3d3;
 }
+
 .v_signalStreng.globalStock #wrap .modal.payment_cacl {
 	// top: 50%;
 }
+
 .v_signalStreng.globalStock #wrap .modal.payment_cacl .pop_con {
 	padding: 0 20px 32px;
 }
+
 .v_signalStreng.globalStock #wrap .modal.payment_cacl .pop_con .txt {
 	padding: 2px 0;
 	font-size: 0.875rem;
 	line-height: 1.43;
 	letter-spacing: normal;
-	color: #333;	
+	color: #333;
+
 	b {
 		font-weight: normal;
 		color: #ff2929;
 		text-decoration: underline;
 	}
 }
+
 .v_signalStreng.globalStock #wrap .modal.payment_cacl .pop_con {
 	.btnArea {
 		.btn_cncl {
 			background-color: transparent;
 			border-radius: 7px;
 		}
-		.btn_save {
 
-		}
+		.btn_save {}
 	}
 }
 
@@ -980,7 +1015,7 @@
 
 .globalStock .setting_pop.open {
 	display: block;
-	
+
 }
 
 .globalStock .setting_pop .bg {
@@ -1331,54 +1366,59 @@
 	margin: 25px auto;
 }
 
-.modal.slideUp.eps_pop01 {			
+.modal.slideUp.eps_pop01 {
 	// max-width: 480px;
 	margin: 0 auto;
 	box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.1);
 	border-radius: 0;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    width: 100%;
-    margin: 0 auto;
-    box-sizing: border-box;
-    display: block;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	width: 100%;
+	margin: 0 auto;
+	box-sizing: border-box;
+	display: block;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
 	top: auto;
-    background: #fff;    
-    transition: all 0s ease-in-out;
+	background: #fff;
+	transition: all 0s ease-in-out;
+
 	.pop_header .pop_title {
 		font-size: 1.125rem;
 		justify-content: flex-start !important;
 	}
-	.pop_con {		
-		display: flex;		
+
+	.pop_con {
+		display: flex;
 		flex-direction: column;
 		flex-wrap: nowrap;
 		gap: 3px 0;
 		padding-bottom: 0 !important;
 		margin-bottom: 30px;
-		overflow-y: auto;				
+		overflow-y: auto;
+
 		.sum_txt {
 			font-size: 0.9375rem;
 			line-height: 1.43;
 			color: #6A727B;
-			letter-spacing: normal;			
+			letter-spacing: normal;
 			margin: 10px 0;
 			word-wrap: break-word;
-			word-break: break-all;			
+			word-break: break-all;
 		}
-		.txt {			
+
+		.txt {
 			position: relative;
 			font-size: 0.9375rem;
 			line-height: 1.43;
 			color: #656d7e;
-			letter-spacing: normal;						
+			letter-spacing: normal;
 			padding-left: 9px;
 			word-wrap: break-word;
-			word-break: break-all;			
+			word-break: break-all;
+
 			&::before {
 				content: '';
 				display: inline-block;
@@ -1387,7 +1427,7 @@
 				top: 9px;
 				background-color: #898989;
 				width: 2px;
-				height: 2px;				
+				height: 2px;
 			}
 		}
 	}
@@ -1395,40 +1435,43 @@
 
 
 // 모달 팝업 툴팁 스타일 정의
-.modalBox .modal {		
-	&.tooltip_pop {						
+.modalBox .modal {
+	&.tooltip_pop {
 		.pop_header {
 			background-color: #fff;
 			padding: 24px 15px;
-			border: none;            
+			border: none;
+
 			.pop_title {
 				justify-content: center;
 				font-size: 1.25rem;
 				line-height: 1.14;
 				font-weight: bold;
-				color: #333;	
+				color: #333;
 				// padding-right: 40px;
 				box-sizing: border-box;
 			}
+
 			.clse::before,
 			.clse::after {
 				width: 2px;
 				background-color: #333;
 			}
-        }
-    
-        .pop_con {            
+		}
+
+		.pop_con {
 			padding: 0 16px 25px;
+
 			.txt {
-				display: block;	
-				padding-bottom: 7px;			
+				display: block;
+				padding-bottom: 7px;
 				font-size: 15px;
 				line-height: 1.62;
 				color: #656d7e;
 				word-break: break-all;
 				word-wrap: break-word;
-			}    
-        }
+			}
+		}
 
 		&.btm {
 			margin: 0 auto;
@@ -1437,12 +1480,12 @@
 			bottom: 0;
 			border-radius: 0;
 			border-top-left-radius: 20px;
-			border-top-right-radius: 20px;                        
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            top: auto;
+			border-top-right-radius: 20px;
+			position: fixed;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			top: auto;
 
 
 			.pop_header {
@@ -1450,9 +1493,13 @@
 			}
 		}
 	}
-    // 툴팁 - 지금살까, 종목검색 스마트 스코어
-	&.tooltip_pop03, &.tooltip_pop04 {		
+
+	// 툴팁 - 지금살까, 종목검색 스마트 스코어, 마켓스코어 공포 지수 툴팁
+	&.tooltip_pop03,
+	&.tooltip_pop04,
+	&.score_pop01 {
 		top: 15%;
+
 		.pop_con {
 			.sum_txt {
 				font-size: 0.9375rem;
@@ -1463,6 +1510,7 @@
 				word-wrap: break-word;
 				word-break: break-all;
 			}
+
 			.txt {
 				position: relative;
 				font-size: 0.9375rem;
@@ -1472,6 +1520,7 @@
 				padding-left: 9px;
 				word-wrap: break-word;
 				word-break: break-all;
+
 				&::before {
 					content: "";
 					display: inline-block;
@@ -1483,103 +1532,122 @@
 					height: 2px;
 				}
 			}
-		}		
-	} 	
-	&.payment_cacl02, &.payment_cacl03, &.payment_cacl04 {
+		}
+	}
+
+	&.payment_cacl02,
+	&.payment_cacl03,
+	&.payment_cacl04 {
 		.pop_header {
 			background-color: #fff;
 			padding: 24px 35px 24px 15px;
-			border: none;            
+			border: none;
+
 			.pop_title {
 				justify-content: center;
 				font-size: 1.25rem;
 				line-height: 1.14;
 				font-weight: bold;
-				color: #333;	
+				color: #333;
 				// padding-right: 40px;
 				box-sizing: border-box;
 			}
+
 			.clse::before,
 			.clse::after {
 				width: 2px;
 				background-color: #333;
 			}
 		}
+
 		.pop_con {
 			padding: 0 16px 25px;
+
 			.txt {
 				margin-top: 9px;
-				color: #000;			
-				font-size: 14px;			
+				color: #000;
+				font-size: 14px;
 				font-weight: 400;
-				line-height: 20px; /* 142.857% */
+				line-height: 20px;
+
+				/* 142.857% */
 				b {
-					color: var(--mian_color1, #404FC3);						
-					font-weight: 700;			
+					color: var(--mian_color1, #404FC3);
+					font-weight: 700;
 					text-decoration-line: underline;
 				}
+
 				&:first-child {
 					margin-top: 0;
 				}
 			}
+
 			.btnArea.payBtn {
 				margin-top: 24px;
+
 				.btn {
 					border: none;
 					border-radius: 6px;
 					background-color: #C7CCD1;
-					color: #FFF;				
-					font-size: 14px;				
-					font-weight: 700;		
+					color: #FFF;
+					font-size: 14px;
+					font-weight: 700;
+
 					&.btn_save {
 						background-color: var(--mian_color1, #404FC3);
-					}		
+					}
 				}
 			}
 		}
-		
+
 	}
-} 
+}
 
 /* 미주미초이스 프리미엄 첫달 3,000원 */
-.globalStock .first_month_3300.md-modal {		
+.globalStock .first_month_3300.md-modal {
 	@media (max-height: 800px) {
 		top: 5%;
 	}
-	
+
 	#setting {
 		padding: 0;
 		border: none;
+
 		.pop_header {
 			border-top-left-radius: 16px;
 			border-top-right-radius: 16px;
 			border-bottom: none;
 			background-color: #161c40;
+
 			.close {
 				top: 15px !important;
 				right: 5px !important;
 			}
+
 			.sub_top {
 				.h2_title {
 					padding-top: 50px;
 					font-size: pxTorem(18px);
-					font-weight: bold;					
-					line-height: 1.17;					
+					font-weight: bold;
+					line-height: 1.17;
 					text-align: center;
 					color: #c7cbe9;
 				}
+
 				.period {
 					font-size: pxTorem(28px);
-					font-weight: bold;									
+					font-weight: bold;
 					text-align: center;
-					color: #404fc3;					
+					color: #404fc3;
 
 				}
 			}
 		}
-		.pop_con {			
+
+		.pop_con {
 			background: #161c40 url('/img/first_month_3300.svg') no-repeat center top;
-			ul {				
+
+			ul {
 				display: flex;
 				flex-direction: column;
 				align-items: flex-start;
@@ -1588,38 +1656,43 @@
 				flex-wrap: wrap;
 				gap: 6px 6px;
 				margin-top: 210px;
-				li {					
+
+				li {
 					display: flex;
 					align-items: center;
 					gap: 0 7px;
-					font-size: pxTorem(14px);					
-					line-height: 1.14;					
+					font-size: pxTorem(14px);
+					line-height: 1.14;
 					color: #c7cbe9;
+
 					b {
 						font-weight: bold;
 						color: #404fc3;
 					}
+
 					.num {
 						display: inline-flex;
 						justify-content: center;
-						align-items: center;					
+						align-items: center;
 						width: 20px;
 						height: 20px;
 						box-sizing: border-box;
 						border-radius: 50%;
 						background-color: #404fc3;
-						font-size: pxTorem(11px);					
-						text-align: center;						
+						font-size: pxTorem(11px);
+						text-align: center;
 						color: #161c40;
 					}
 				}
 			}
 		}
-		.pop_btm {			
+
+		.pop_btm {
 			padding-bottom: 50px;
 			border-bottom-left-radius: 16px;
 			border-bottom-right-radius: 16px;
 			background-color: #161c40;
+
 			.btnArea .btn {
 				flex: none;
 				display: inline-block;
@@ -1629,45 +1702,50 @@
 				box-sizing: border-box;
 				border: none;
 				border-radius: 8px;
-  				background-color: #404fc3;
+				background-color: #404fc3;
 				font-size: pxTorem(16px);
 				line-height: 1.19;
-				text-align: center;				
+				text-align: center;
 				color: #fff;
+
 				b {
 					color: #f0cc09;
 				}
 			}
 		}
-		
-	}	
+
+	}
 }
 
 .v_signalStreng.globalStock #wrap .modal.refundTerms_pop01 {
-	top: 10%;	
-	padding-bottom: 15px;	
+	top: 10%;
+	padding-bottom: 15px;
+
 	.pop_header {
 		padding-bottom: 0;
+
 		.pop_title {
 			text-align: center;
 			line-height: 24px;
 		}
 	}
+
 	.pop_con {
-		margin: 0 16px;		
+		margin: 0 16px;
 		padding-bottom: 10px;
 		overflow: auto;
 		max-height: 380px;
-				
+
 		.txt {
 			white-space: pre-line;
 			color: #333;
 			font-size: 0.84rem;
 			line-height: 22px;
 			word-wrap: break-word;
-			word-break: break-all;			
+			word-break: break-all;
 		}
 	}
+
 	.terms_link {
 		display: block;
 		padding: 15px 25px;
@@ -1678,3 +1756,64 @@
 		text-decoration: none;
 	}
 }
+
+// 나이스페이 결제 중 보이는 로딩 팝업
+.loading-modal {
+	display: none;
+	/* 초기에는 숨김 */
+	position: fixed;
+	z-index: 9999;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	// display: flex;
+	align-items: center;
+	justify-content: center;
+	.loading-spinner {
+		max-width: 700px;
+		margin: 0 auto;
+		position: fixed;
+		top: 15%;
+		z-index: 99;
+		width: 94%;
+		box-sizing: border-box;
+		padding: 0;
+		border-radius: 10px;
+		overflow: hidden;
+		box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.44);
+		background-color: #fff;
+	}
+	
+	.pop_con {
+		padding: 0 16px 25px;
+	}
+	
+	.txt {
+		display: block;
+		padding-bottom: 7px;
+		font-size: 15px;
+		line-height: 1.62;
+		color: #656d7e;
+		word-break: break-all;
+		word-wrap: break-word;
+		b {
+			font-size: 16px;
+		}
+	}
+	
+	/* 로딩 아이콘 */
+	.loading-icon {
+		display: flex;
+		justify-content: center;
+		margin: 20px 0;
+	}
+	
+	.lottie-container {
+		width: 120px;
+		/* 적절한 크기로 조절 */
+		height: 120px;
+	}
+}
+

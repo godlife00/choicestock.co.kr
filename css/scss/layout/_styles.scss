@@ -16483,64 +16483,22 @@ table.tableRanking td {
 	.tradeSignal_status {
 		width: 100%;
 		box-sizing: border-box;
-		margin-bottom: 35px;
-	
-		.day {
-			display: flex;	
-			align-items: baseline;		
-			gap: 0 5px;			
-		}
-		.date {
-			color: #939393;
-			font-size: 0.875rem;
-			letter-spacing: normal !important;
-			font-weight: bold;
-		}
-	
-		.total {
-			color: #939393;
-			font-size: 0.8125rem;
-			letter-spacing: normal !important;
-		}
-	
-		.status-container {
-			display: flex;
-			flex-wrap: wrap;
-			align-items: center;
-			justify-content: space-evenly;			
-			gap: 12px 12px;
-			margin-top: 12px;
-			padding: 10px 16px;
-			border-radius: 16px;
-			background-color: #f7f8f9;				
-		}
-	
-		.status {
-			padding: 5px 10px;
-			border-radius: 8px;			
-			text-align: center;
-	
-			.label {
-				display: block;
-				margin-bottom: 7px;
-				font-size: 0.8125rem;
-				font-weight: 500;
-				color: #6a727b;
-			}	
-		}
-	
-		.buy-hold, .sell-wait {
-			.increase {				
-				color: #f00;
-				font-size: 1rem;
-				font-weight: 500;
-			}
-			.decrease {				
-				color: #0062ff;
-				font-size: 1rem;
-				font-weight: 500;
+		margin-top: 35px;
+		margin-bottom: 35px;		
+		.title {
+			display: flex;			
+			gap: 5px 5px;
+			color: #333;		
+			font-size: 1.25rem;				
+			font-weight: 700;			
+			.signal_guide {				
+				img {
+					display:inline-block;					
+					vertical-align: inherit;							
+				}
 			}
 		}
+
 	}
 	
 }
