@@ -393,7 +393,7 @@
     <!-- //wrap -->
     <!-- Modal popup -->
     <!-- 결제취소(당일 취소) -->
-    <div class="setting_pop pay_edt pay_edt_01" style="display: block;">
+    <div class="setting_pop pay_edt pay_edt_01">
         <div class="bg"></div>
         <div id="pay_cncl" class="setting_area">
             <div class="pop_header">
@@ -848,10 +848,13 @@
         }
 
         // 예시로 모달을 3초 뒤에 숨기기 (실제 환경에 맞게 조정)
-        setTimeout(hideLoadingModal, 3000);
+        setTimeout(hideLoadingModal, 5000);
 
         // 로딩 모달이 필요할 때 showLoadingModal()을 호출하세요.
-        showLoadingModal();
+        setTimeout(function () {
+            showLoadingModal();
+        }, 2000);
+        
     </script>
 </body>
 
