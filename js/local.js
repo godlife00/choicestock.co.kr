@@ -88,6 +88,4 @@ $(document).ready(function () {
         $('.blocker').show();
         $('.payment_cacl04').show().addClass('slideUp');        
     });
-    
- 
 });

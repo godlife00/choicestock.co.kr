@@ -38,9 +38,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
     <!-- css -->
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <link rel="stylesheet" type="text/css" href="../css/scss/choicestock.css" />
+    <link rel="stylesheet" type="text/css" href="../css/scss/choicestock.css?v=241011221" />
     <!-- js -->
-    <script src="../js/choicestock.js"></script>
+    <script src="../js/choicestock.js?v=24101222"></script>
 </head>
 
 <body class="v_signalStreng globalStock">
@@ -50,7 +50,7 @@
                 <div class="left">
                     <h1 class="headerLogo"><span>추천</span></h1>
                 </div>
-                <div class="cen">                    
+                <div class="cen">
                 </div>
                 <div class="right">
                     <a href="menu.html" class="h_menu">
@@ -60,7 +60,7 @@
                             <div class="bar"></div>
                         </div>
                     </a>
-                </div>                
+                </div>
             </div>
             <!-- //headerTop -->
         </div>
@@ -68,16 +68,16 @@
         <!-- 매매신호 class = sub_recipe-->
         <div id="container" class="sub_recom sub_recipe">
             <!-- 하단 GNB -->
-        <div class="gnb">
-            <ul class="list">
-                <li class="home"><a href="../index.html">홈</a></li>
-                <li class="sch"><a href="../search/searching.html">검색</a></li>
-                <li class="stock active"><a href="../stock/recom.html">추천</a></li>
-                <li class="excavation"><a href="../stock/note.html">발굴</a></li>
-                <li class="attention"><a href="../search/searching_attention.html">관심</a></li>
-            </ul>
-        </div>
-        <!-- //gnb -->
+            <div class="gnb">
+                <ul class="list">
+                    <li class="home"><a href="../index.html">홈</a></li>
+                    <li class="sch"><a href="../search/searching.html">검색</a></li>
+                    <li class="stock active"><a href="../stock/recom.html">추천</a></li>
+                    <li class="excavation"><a href="../stock/note.html">발굴</a></li>
+                    <li class="attention"><a href="../search/searching_attention.html">관심</a></li>
+                </ul>
+            </div>
+            <!-- //gnb -->
             <!-- 주요 콘텐츠 -->
             <div class="tab_area">
                 <ul class="tbas_lb tabs_3">
@@ -104,19 +104,35 @@
                 <div class="recipe_area">
                     <div class="tab-container">
                         <div class="tradeSignal_status">
-                            <h2 class="title">마켓스코어 <span class="signal_guide txt_guide"><img src="../img/txt_guide_us.svg" alt="가이드보기"></span></h2>                            
-
+                            <h2 class="title">마켓스코어 <span class="signal_guide txt_guide"><img src="../img/txt_guide_us.svg" alt="가이드보기"></span></h2>
+                            
+                            <div class="score_chart">
+                                <figure class="highcharts-figure">
+                                    <div id="CustomChart_score1_1" class="contaanalysis1"></div>
+                                    <!-- <span class="proper">33</span> -->
+                                    <div class="group-4">
+                                        <div class="element">25</div>
+                                        <div class="element-2">75</div>
+                                        <div class="element-3">50</div>
+                                        <div class="element-4">0</div>
+                                        <div class="element-5">100</div>
+                                    </div>
+                                    <!-- <p class="txt">*업데이트 2024.09/31</p> -->
+                                </figure>
+                            </div>
+                            <!-- //score_chart -->
                         </div>
                         <!-- //tradeSignal_status -->
 
-                        
+
                         <div class="tab_btn">
-                            <button data-tab="tab1" class="tab_span active">매수종목 <span class="cunt">(23건)</span></button>
+                            <button data-tab="tab1" class="tab_span active">매수종목 <span
+                                    class="cunt">(23건)</span></button>
                             <button data-tab="tab2" class="tab_span">매도종목 <span class="cunt">(12건)</span></button>
                         </div>
 
                         <div id="tab1" class="tab">
-                            <!-- <p class="update_info">기준 23.07/19</p> -->
+                            <p class="update_info">기준 23.07/19</p>
                             <div class="recipe_area">
 
                                 <!-- 실적발표 -->
@@ -124,12 +140,15 @@
 
                                     <ul class="logo_list" onclick="" id="btn_free" style="cursor:pointer;">
                                         <li class="title_logo">
-                                            <span class="logo"><img src="" onerror="this.style.display='none'" alt=""></span>
+                                            <span class="logo"><img src="" onerror="this.style.display='none'"
+                                                    alt=""></span>
                                         </li>
                                         <li class="detail">
                                             <div class="title">
-                                                <a href="#" data-modal="modal-3" class="md-trigger"> 마<span class="remark">
-                                                    <div class="txt_filter size_M"><i></i><i></i><i></i><i></i></div>
+                                                <a href="#" data-modal="modal-3" class="md-trigger"> 마<span
+                                                        class="remark">
+                                                        <div class="txt_filter size_M"><i></i><i></i><i></i><i></i>
+                                                        </div>
                                                     </span>
                                                 </a>
                                             </div>
@@ -146,11 +165,14 @@
                                             <span class="increase dod">23.99%</span>
                                             <!-- increase 증가, decrease 감소 -->
                                         </li>
-                                        
+
                                     </ul>
-                                    <ul class="logo_list" onclick="location.href ='/search/search_outline.html'" style="cursor:pointer;">
+                                    <ul class="logo_list" onclick="location.href ='/search/search_outline.html'"
+                                        style="cursor:pointer;">
                                         <li class="title_logo">
-                                            <span class="logo"><img src="https://uslogo.datahero.co.kr/img/logo/us/mvl/MSFT.svg" alt=""></span>
+                                            <span class="logo"><img
+                                                    src="https://uslogo.datahero.co.kr/img/logo/us/mvl/MSFT.svg"
+                                                    alt=""></span>
                                         </li>
                                         <li class="detail">
                                             <div class="title">
@@ -168,15 +190,19 @@
                                             <span class="th">최고수익률</span>
                                             <span class="same dod">0.00%</span>
                                         </li>
-                                        
+
                                     </ul>
-                                    <ul class="logo_list" onclick="location.href ='/search/search_outline.html'" style="cursor:pointer;">
+                                    <ul class="logo_list" onclick="location.href ='/search/search_outline.html'"
+                                        style="cursor:pointer;">
                                         <li class="title_logo">
-                                            <span class="logo"><img src="https://uslogo.datahero.co.kr/img/logo/us/mvl/MSFT.svg" alt=""></span>
+                                            <span class="logo"><img
+                                                    src="https://uslogo.datahero.co.kr/img/logo/us/mvl/MSFT.svg"
+                                                    alt=""></span>
                                         </li>
                                         <li class="detail">
                                             <div class="title">
-                                                <a href="/search/search_outline.html" class="">마이크로소프트마이크로소프트마이크로소프트마이크로소프트</a>
+                                                <a href="/search/search_outline.html"
+                                                    class="">마이크로소프트마이크로소프트마이크로소프트마이크로소프트</a>
                                             </div>
                                             <div class="num">
                                                 <span>338.25</span>
@@ -191,11 +217,14 @@
                                             <span class="decrease dod">-23.99%</span>
                                             <!-- increase 증가, decrease 감소 -->
                                         </li>
-                                        
+
                                     </ul>
-                                    <ul class="logo_list" onclick="location.href ='/search/search_outline.html'" style="cursor:pointer;">
+                                    <ul class="logo_list" onclick="location.href ='/search/search_outline.html'"
+                                        style="cursor:pointer;">
                                         <li class="title_logo">
-                                            <span class="logo"><img src="https://uslogo.datahero.co.kr/img/logo/us/mvl/AAPL.svg" alt=""></span>
+                                            <span class="logo"><img
+                                                    src="https://uslogo.datahero.co.kr/img/logo/us/mvl/AAPL.svg"
+                                                    alt=""></span>
                                         </li>
                                         <li class="detail">
                                             <div class="title">
@@ -214,11 +243,14 @@
                                             <span class="increase dod">23.99%</span>
                                             <!-- increase 증가, decrease 감소 -->
                                         </li>
-                                        
+
                                     </ul>
-                                    <ul class="logo_list" onclick="location.href ='/search/search_outline.html'" style="cursor:pointer;">
+                                    <ul class="logo_list" onclick="location.href ='/search/search_outline.html'"
+                                        style="cursor:pointer;">
                                         <li class="title_logo">
-                                            <span class="logo"><img src="https://uslogo.datahero.co.kr/img/logo/us/mvl/AAPL.svg" alt=""></span>
+                                            <span class="logo"><img
+                                                    src="https://uslogo.datahero.co.kr/img/logo/us/mvl/AAPL.svg"
+                                                    alt=""></span>
                                         </li>
                                         <li class="detail">
                                             <div class="title">
@@ -237,11 +269,14 @@
                                             <span class="decrease dod">-23.99%</span>
                                             <!-- increase 증가, decrease 감소 -->
                                         </li>
-                                        
+
                                     </ul>
-                                    <ul class="logo_list" onclick="location.href ='/search/search_outline.html'" style="cursor:pointer;">
+                                    <ul class="logo_list" onclick="location.href ='/search/search_outline.html'"
+                                        style="cursor:pointer;">
                                         <li class="title_logo">
-                                            <span class="logo"><img src="https://uslogo.datahero.co.kr/img/logo/us/mvl/MSFT.svg" alt=""></span>
+                                            <span class="logo"><img
+                                                    src="https://uslogo.datahero.co.kr/img/logo/us/mvl/MSFT.svg"
+                                                    alt=""></span>
                                         </li>
                                         <li class="detail">
                                             <div class="title">
@@ -260,11 +295,14 @@
                                             <span class="decrease dod">-23.99%</span>
                                             <!-- increase 증가, decrease 감소 -->
                                         </li>
-                                        
+
                                     </ul>
-                                    <ul class="logo_list" onclick="location.href ='/search/search_outline.html'" style="cursor:pointer;">
+                                    <ul class="logo_list" onclick="location.href ='/search/search_outline.html'"
+                                        style="cursor:pointer;">
                                         <li class="title_logo">
-                                            <span class="logo"><img src="https://uslogo.datahero.co.kr/img/logo/us/mvl/AAPL.svg" alt=""></span>
+                                            <span class="logo"><img
+                                                    src="https://uslogo.datahero.co.kr/img/logo/us/mvl/AAPL.svg"
+                                                    alt=""></span>
                                         </li>
                                         <li class="detail">
                                             <div class="title">
@@ -283,11 +321,14 @@
                                             <span class="increase dod">23.99%</span>
                                             <!-- increase 증가, decrease 감소 -->
                                         </li>
-                                        
+
                                     </ul>
-                                    <ul class="logo_list" onclick="location.href ='/search/search_outline.html'" style="cursor:pointer;">
+                                    <ul class="logo_list" onclick="location.href ='/search/search_outline.html'"
+                                        style="cursor:pointer;">
                                         <li class="title_logo">
-                                            <span class="logo"><img src="https://uslogo.datahero.co.kr/img/logo/us/mvl/AAPL.svg" alt=""></span>
+                                            <span class="logo"><img
+                                                    src="https://uslogo.datahero.co.kr/img/logo/us/mvl/AAPL.svg"
+                                                    alt=""></span>
                                         </li>
                                         <li class="detail">
                                             <div class="title">
@@ -306,11 +347,14 @@
                                             <span class="decrease dod">-23.99%</span>
                                             <!-- increase 증가, decrease 감소 -->
                                         </li>
-                                        
+
                                     </ul>
-                                    <ul class="logo_list" onclick="location.href ='/search/search_outline.html'" style="cursor:pointer;">
+                                    <ul class="logo_list" onclick="location.href ='/search/search_outline.html'"
+                                        style="cursor:pointer;">
                                         <li class="title_logo">
-                                            <span class="logo"><img src="https://uslogo.datahero.co.kr/img/logo/us/mvl/MSFT.svg" alt=""></span>
+                                            <span class="logo"><img
+                                                    src="https://uslogo.datahero.co.kr/img/logo/us/mvl/MSFT.svg"
+                                                    alt=""></span>
                                         </li>
                                         <li class="detail">
                                             <div class="title">
@@ -329,7 +373,7 @@
                                             <span class="decrease dod">-23.99%</span>
                                             <!-- increase 증가, decrease 감소 -->
                                         </li>
-                                        
+
                                     </ul>
                                 </div>
                                 <!-- //area -->
@@ -347,12 +391,15 @@
 
                                     <ul class="logo_list" onclick="" id="btn_free" style="cursor:pointer;">
                                         <li class="title_logo">
-                                            <span class="logo"><img src="" onerror="this.style.display='none'" alt=""></span>
+                                            <span class="logo"><img src="" onerror="this.style.display='none'"
+                                                    alt=""></span>
                                         </li>
                                         <li class="detail">
                                             <div class="title">
-                                                <a href="#" data-modal="modal-3" class="md-trigger"> 마<span class="remark">
-                                                    <div class="txt_filter size_M"><i></i><i></i><i></i><i></i></div>
+                                                <a href="#" data-modal="modal-3" class="md-trigger"> 마<span
+                                                        class="remark">
+                                                        <div class="txt_filter size_M"><i></i><i></i><i></i><i></i>
+                                                        </div>
                                                     </span>
                                                 </a>
                                             </div>
@@ -369,11 +416,14 @@
                                             <span class="increase dod">23.99%</span>
                                             <!-- increase 증가, decrease 감소 -->
                                         </li>
-                                        
+
                                     </ul>
-                                    <ul class="logo_list" onclick="location.href ='/search/search_outline.html'" style="cursor:pointer;">
+                                    <ul class="logo_list" onclick="location.href ='/search/search_outline.html'"
+                                        style="cursor:pointer;">
                                         <li class="title_logo">
-                                            <span class="logo"><img src="https://uslogo.datahero.co.kr/img/logo/us/mvl/MSFT.svg" alt=""></span>
+                                            <span class="logo"><img
+                                                    src="https://uslogo.datahero.co.kr/img/logo/us/mvl/MSFT.svg"
+                                                    alt=""></span>
                                         </li>
                                         <li class="detail">
                                             <div class="title">
@@ -392,15 +442,19 @@
                                             <span class="decrease dod">-23.99%</span>
                                             <!-- increase 증가, decrease 감소 -->
                                         </li>
-                                        
+
                                     </ul>
-                                    <ul class="logo_list" onclick="location.href ='/search/search_outline.html'" style="cursor:pointer;">
+                                    <ul class="logo_list" onclick="location.href ='/search/search_outline.html'"
+                                        style="cursor:pointer;">
                                         <li class="title_logo">
-                                            <span class="logo"><img src="https://uslogo.datahero.co.kr/img/logo/us/mvl/MSFT.svg" alt=""></span>
+                                            <span class="logo"><img
+                                                    src="https://uslogo.datahero.co.kr/img/logo/us/mvl/MSFT.svg"
+                                                    alt=""></span>
                                         </li>
                                         <li class="detail">
                                             <div class="title">
-                                                <a href="/search/search_outline.html" class="">마이크로소프트마이크로소프트마이크로소프트마이크로소프트</a>
+                                                <a href="/search/search_outline.html"
+                                                    class="">마이크로소프트마이크로소프트마이크로소프트마이크로소프트</a>
                                             </div>
                                             <div class="num">
                                                 <span>338.25</span>
@@ -415,11 +469,14 @@
                                             <span class="decrease dod">-23.99%</span>
                                             <!-- increase 증가, decrease 감소 -->
                                         </li>
-                                        
+
                                     </ul>
-                                    <ul class="logo_list" onclick="location.href ='/search/search_outline.html'" style="cursor:pointer;">
+                                    <ul class="logo_list" onclick="location.href ='/search/search_outline.html'"
+                                        style="cursor:pointer;">
                                         <li class="title_logo">
-                                            <span class="logo"><img src="https://uslogo.datahero.co.kr/img/logo/us/mvl/AAPL.svg" alt=""></span>
+                                            <span class="logo"><img
+                                                    src="https://uslogo.datahero.co.kr/img/logo/us/mvl/AAPL.svg"
+                                                    alt=""></span>
                                         </li>
                                         <li class="detail">
                                             <div class="title">
@@ -438,7 +495,7 @@
                                             <span class="increase dod">23.99%</span>
                                             <!-- increase 증가, decrease 감소 -->
                                         </li>
-                                        
+
                                     </ul>
                                 </div>
                                 <!-- //area -->
@@ -507,17 +564,23 @@
 
     <div class="modalBox">
         <!-- 마켓스코어 공포 지수 툴팁 -->
-        <div class="modal tooltip_pop score_pop01" style="display: block;">
+        <div class="modal tooltip_pop score_pop01">
             <div class="pop_header">
-                <h1 class="pop_title">초이스스탁의 공포-탐욕 지수</h1>
+                <h1 class="pop_title">초이스스탁 공포-탐욕 지수</h1>
                 <span class="clse">
                     <!--닫기-->
                 </span>
             </div>
             <div class="pop_con">
-                <p class="txt">20년 이상의 금융 빅데이터와 알고리즘 기술을 통해 종목의 매매신호를 신속하게 제시합니다.</p>
-                <p class="txt">매매신호는 스마트 스코어 / 밸류에이션 / 수급분석 을 종합적으로 고려해 결정합니다.</p>
-                <p class="txt">매매신호는 매수-보유-매도-관망 신호를 제공하며, 3개 조건을 모두 만족 할 때 매수 및 보유신호가 발생합니다.</p>
+                <p class="sum_txt">초이스스탁이 개발한 공포-탐욕지수는 전체 종목 중 AI 매매신호의 '매수+보유' 단계의 종목 비율에 따라 점수화했습니다. 75점을 초과하면 탐욕 단계로,
+                    25점 이하면 공포 단계로 표시합니다.</p>
+                <ul>
+                    <li class="txt"><strong>탐욕 (75점 초과) :</strong> 위험을 전혀 생각하지 않는 단계로 향후 주가 하락 가능성이 높은 구간</li>
+                    <li class="txt"><strong>과욕 (56점 초과) :</strong> 위험을 인지하면서도 추가 수익을 추구하는 단계로 주의가 필요한 구간</li>
+                    <li class="txt"><strong>보통 (44점 초과) :</strong> 주가의 상승 또는 하락 추세를 강화하는 구간</li>
+                    <li class="txt"><strong>불안 (25점 초과) :</strong> 주가 하락에 대한 불안이 있지만 단기 바닥을 확인하는 구간</li>
+                    <li class="txt"><strong>공포 (25점 이하) :</strong> 무조건 매도를 외치는 구간으로, 장기적으로 가장 좋은 매수 구간</li>
+                </ul>
             </div>
         </div>
 

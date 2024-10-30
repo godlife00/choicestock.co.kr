@@ -1514,7 +1514,7 @@ $(document).ready(function () {
         $('.payment_cacl02').show().addClass('slideUp');        
     });
     // 마켓스코어 공포 지수 툴팁
-    $('.globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .tradeSignal_status .title .signal_guide').on('click', function () {
+    $('.globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .tradeSignal_status .title, .globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .tradeSignal_status .title .signal_guide').on('click', function () {
         if ($(this).hasClass('no_signal')) {            
             return;
         } else {

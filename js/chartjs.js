@@ -7074,5 +7074,190 @@ $(document).ready(function () {
             }, 1000); // 1초 후에 하이차트를 랜더링합니다.
         });
     }
+
+    // 매매신호 목록 - 공포 탐욕 지수 (마켓스코어)
+    function CustomChart_Score(renderTo, data) {        
+        Highcharts.chart(renderTo, {
+            chart: {
+                type: 'gauge',
+                plotBackgroundColor: null,
+                plotBackgroundImage: null,
+                plotBorderWidth: 0,
+                plotShadow: false, 
+                backgroundColor: 'transparent',
+                margin: [-200, 20, 0, 20],
+                width: 340,
+                height: 280,
+                events: {
+                    load: function () {
+                        var chart = this;
+                        var value = chart.series[0].points[0].y;
+                        chart.yAxis[0].update({
+                            plotBands: [{
+                                from: 0,
+                                to: 24,
+                                color: value <= 24 ? '#D43F5D' : '#EEF2F5',
+                                thickness: '40%',
+                            }, {
+                                from: 25,
+                                to: 43,
+                                color: value > 24 && value <= 43 ? '#E9835B' : '#EEF2F5',
+                                thickness: '40%',
+                            }, {
+                                from: 44,
+                                to: 55,
+                                color: value > 43 && value <= 55 ? '#F4A931' : '#EEF2F5',
+                                thickness: '40%',
+                            }, {
+                                from: 56,
+                                to: 74,
+                                color: value > 55 && value <= 74 ? '#F8D54E' : '#EEF2F5',
+                                thickness: '40%',
+                            }, {
+                                from: 75,
+                                to: 100,
+                                color: value > 74 ? '#5AA86B' : '#EEF2F5',
+                                thickness: '40%',
+                            }]
+                        });
+        
+                        // 활성 라벨 설정
+                        chart.yAxis[0].tickPositions.forEach(function (pos) {
+                            var label = chart.yAxis[0].ticks[pos] && chart.yAxis[0].ticks[pos].label;
+                            if (label) {
+                                if (value <= 24 && pos === 12) {
+                                    label.addClass('active-label');
+                                } else if (value > 24 && value <= 43 && pos === 34) {
+                                    label.addClass('active-label');
+                                } else if (value > 43 && value <= 55 && pos === 49) {
+                                    label.addClass('active-label');
+                                } else if (value > 55 && value <= 74 && pos === 65) {
+                                    label.addClass('active-label');
+                                } else if (value > 74 && pos === 87) {
+                                    label.addClass('active-label');
+                                } else {
+                                    label.removeClass('active-label');
+                                }
+                            }
+                        });
+                    }
+                }
+            },
+        
+            title: {
+                text: ''
+            },
+        
+            pane: {
+                startAngle: -90,
+                endAngle: 90,
+                background: null,
+                center: ['50%', '75%'],
+                size: '100%'
+            },
+        
+            exporting: {
+                enabled: false
+            },
+        
+            credits: {
+                enabled: false,
+            },
+        
+            tooltip: {
+                enabled: false
+            },
+        
+            yAxis: {
+                lineColor: null,
+                minorGridLineWidth: 0,
+                gridLineWidth: 0,
+                min: 0,
+                max: 100,
+                tickPositions: [12, 34, 49, 65, 87],
+                tickLength: 0,
+                minorTickLength: 0,
+                labels: {
+                    formatter: function () {
+                        var labels = ['공포', '불안', '보통', '과욕', '탐욕'];
+                        var positions = [12, 34, 49, 65, 87];
+                        return labels[positions.indexOf(this.value)];
+                    },                    
+                    style: {
+                        fontSize: '14px',
+                        color: '#fff',
+                        'font-weight': "bold",
+                    }
+                },
+                plotBands: []
+            },
+        
+            plotOptions: {
+                gauge: {
+                    dataLabels: {
+                        className: 'gauge-value',
+                        format: '{y}',
+                        useHTML: true,
+                        y: -18
+                    },
+                    dial: {
+                        radius: '80%',
+                        backgroundColor: '#6A727B',
+                        baseWidth: 12,
+                        baseLength: '0%',
+                        rearLength: '0%',
+                        zIndex: 999,
+                    },
+                    pivot: {                        
+                        backgroundColor: 'transparent',
+                        radius: 40,               
+                    },
+                    animation: false
+                }
+            },
+        
+            series: data,
+        });
+    }    
+    
+    const CustomScoreData1_1 = [{
+        name: '탐욕 (75점 초과) :',
+        data: [85],                
+        color: Highcharts.getOptions().colors[0]
+    }];    
+    const CustomScoreData1_2 = [{
+        name: '과욕 (56점 초과) :',
+        data: [61]                
+    }];
+    const CustomScoreData1_3 = [{
+        name: '보통 (44점 초과) :',
+        data: [49]                
+    }];    
+    const CustomScoreData1_4 = [{
+        name: '불안 (25점 초과) :',
+        data: [42]                
+    }];    
+    const CustomScoreData1_5 = [{
+        name: '공포 (25점 이하) :',
+        data: [20]                
+    }];   
+    if ($('#CustomChart_score1_0').length) {        
+        CustomChart_Score('CustomChart_score1_0', CustomScoreData1_0);
+    }
+    if ($('#CustomChart_score1_1').length) {        
+        CustomChart_Score('CustomChart_score1_1', CustomScoreData1_1);
+    }
+    if ($('#CustomChart_score1_2').length) {
+        CustomChart_Score('CustomChart_score1_2', CustomScoreData1_2);
+    }
+    if ($('#CustomChart_score1_3').length) {
+        CustomChart_Score('CustomChart_score1_3', CustomScoreData1_3);
+    }
+    if ($('#CustomChart_score1_4').length) {
+        CustomChart_Score('CustomChart_score1_4', CustomScoreData1_4);
+    }
+    if ($('#CustomChart_score1_5').length) {
+        CustomChart_Score('CustomChart_score1_5', CustomScoreData1_5);
+    }
     
 });

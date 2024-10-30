@@ -16477,12 +16477,119 @@ table.tableRanking td {
   display: flex;
   gap: 5px 5px;
   color: #333;
-  font-size: 1.25rem;
-  font-weight: 700;
+  font-size: 0.9375rem;
 }
 .globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .tradeSignal_status .title .signal_guide img {
   display: inline-block;
   vertical-align: inherit;
+}
+.globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .tradeSignal_status .score_chart {
+  position: relative;
+  padding: 16px 0;
+}
+.globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .tradeSignal_status .score_chart .highcharts-figure {
+  position: relative;
+  margin: 0 auto;
+  width: 340px;
+  height: 156px;
+}
+.globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .tradeSignal_status .score_chart .contaanalysis1 {
+  margin: 0 auto;
+  width: 340px;
+  height: 180px;
+  background: url("/img/contaanalysis1_num.svg") no-repeat center 77px;
+  background-size: 170px 85px;
+}
+.globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .tradeSignal_status .score_chart .contaanalysis1 .gauge-value {
+  background-color: red;
+}
+.globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .tradeSignal_status .score_chart .contaanalysis1 .gauge-value .highcharts-label-box {
+  stroke-width: 0;
+}
+.globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .tradeSignal_status .score_chart .contaanalysis1 .gauge-value span {
+  font-size: 30px !important;
+  color: #333 !important;
+  font-weight: bold !important;
+}
+.globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .tradeSignal_status .score_chart .contaanalysis1 .highcharts-pivot {
+  fill: #FFF;
+  filter: drop-shadow(0px -5px 6px rgba(199, 204, 209, 0.3));
+  box-shadow: 0px -5px 6px rgba(199, 204, 209, 0.3);
+}
+.globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .tradeSignal_status .score_chart .contaanalysis1 .highcharts-axis-labels.highcharts-radial-axis-labels text:nth-child(1) {
+  fill: #D43F5D !important;
+  color: #D43F5D !important;
+}
+.globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .tradeSignal_status .score_chart .contaanalysis1 .highcharts-axis-labels.highcharts-radial-axis-labels text:nth-child(2) {
+  fill: #E9835B !important;
+  color: #E9835B !important;
+}
+.globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .tradeSignal_status .score_chart .contaanalysis1 .highcharts-axis-labels.highcharts-radial-axis-labels text:nth-child(3) {
+  fill: #F4A031 !important;
+  color: #F4A031 !important;
+}
+.globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .tradeSignal_status .score_chart .contaanalysis1 .highcharts-axis-labels.highcharts-radial-axis-labels text:nth-child(4) {
+  fill: #F8D54E !important;
+  color: #F8D54E !important;
+}
+.globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .tradeSignal_status .score_chart .contaanalysis1 .highcharts-axis-labels.highcharts-radial-axis-labels text:nth-child(5) {
+  fill: #5AA86B !important;
+  color: #5AA86B !important;
+}
+.globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .tradeSignal_status .score_chart .contaanalysis1 .highcharts-axis-labels.highcharts-radial-axis-labels text.active-label {
+  fill: #fff !important;
+  color: #fff !important;
+}
+.globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .tradeSignal_status .score_chart .group-4 {
+  display: none;
+  position: absolute;
+  width: 170px;
+  height: 85px;
+  top: 77px;
+  left: 85px;
+}
+.globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .tradeSignal_status .score_chart .group-4 .element,
+.globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .tradeSignal_status .score_chart .group-4 .element-2,
+.globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .tradeSignal_status .score_chart .group-4 .element-3,
+.globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .tradeSignal_status .score_chart .group-4 .element-4,
+.globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .tradeSignal_status .score_chart .group-4 .element-5 {
+  font-weight: 600;
+  font-size: 10px;
+  color: #939393;
+  position: absolute;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+  opacity: 0.7;
+}
+.globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .tradeSignal_status .score_chart .group-4 .element {
+  top: 20px;
+  left: 29px;
+}
+.globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .tradeSignal_status .score_chart .group-4 .element-2 {
+  top: 20px;
+  right: 29px;
+}
+.globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .tradeSignal_status .score_chart .group-4 .element-3 {
+  top: 0;
+  left: 77px;
+}
+.globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .tradeSignal_status .score_chart .group-4 .element-4 {
+  bottom: 0;
+  left: 0;
+}
+.globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .tradeSignal_status .score_chart .group-4 .element-5 {
+  bottom: 0;
+  right: 0;
+}
+.globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .tradeSignal_status .score_chart .txt {
+  font-weight: 500;
+  font-size: 12px;
+  color: #939393;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+  opacity: 0.7;
 }
 
 .globalStock .sub_recipe .sub_mid.recipe_view .update_info {
@@ -34467,6 +34574,68 @@ body.v_signalStreng {
   width: 2px;
   height: 2px;
 }
+.modalBox .modal.score_pop01 .pop_header .pop_title {
+  justify-content: flex-start;
+}
+.modalBox .modal.score_pop01 .pop_con .sum_txt {
+  color: #000;
+  font-size: 0.875rem;
+  line-height: 20px; /* 142.857% */
+  padding-bottom: 12px;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+.modalBox .modal.score_pop01 .pop_con .txt {
+  color: #6A727B;
+  font-size: 0.8125rem;
+  font-style: normal;
+  font-weight: 400;
+  padding-left: 9px;
+}
+.modalBox .modal.score_pop01 .pop_con .txt::before {
+  top: 7px;
+}
+.modalBox .modal.score_pop01 .pop_con .txt strong {
+  color: #6A727B;
+  font-size: 0.8125rem;
+  font-style: normal;
+  font-weight: 700;
+}
+.modalBox .modal.score_pop01 .pop_con .txt:nth-child(1) strong {
+  color: #5AA86B;
+}
+.modalBox .modal.score_pop01 .pop_con .txt:nth-child(1)::before {
+  top: 7px;
+  background-color: #5AA86B;
+}
+.modalBox .modal.score_pop01 .pop_con .txt:nth-child(2) strong {
+  color: #F6D246;
+}
+.modalBox .modal.score_pop01 .pop_con .txt:nth-child(2)::before {
+  top: 7px;
+  background-color: #F6D246;
+}
+.modalBox .modal.score_pop01 .pop_con .txt:nth-child(3) strong {
+  color: #F4A031;
+}
+.modalBox .modal.score_pop01 .pop_con .txt:nth-child(3)::before {
+  top: 7px;
+  background-color: #F4A031;
+}
+.modalBox .modal.score_pop01 .pop_con .txt:nth-child(4) strong {
+  color: #E9835B;
+}
+.modalBox .modal.score_pop01 .pop_con .txt:nth-child(4)::before {
+  top: 7px;
+  background-color: #E9835B;
+}
+.modalBox .modal.score_pop01 .pop_con .txt:nth-child(5) strong {
+  color: #D43F5D;
+}
+.modalBox .modal.score_pop01 .pop_con .txt:nth-child(5)::before {
+  top: 7px;
+  background-color: #D43F5D;
+}
 .modalBox .modal.payment_cacl02 .pop_header, .modalBox .modal.payment_cacl03 .pop_header, .modalBox .modal.payment_cacl04 .pop_header {
   background-color: #fff;
   padding: 24px 35px 24px 15px;
@@ -34657,7 +34826,7 @@ body.v_signalStreng {
   display: none;
   /* 초기에는 숨김 */
   position: fixed;
-  z-index: 9999;
+  z-index: 10001;
   top: 0;
   left: 0;
   width: 100%;
@@ -34668,21 +34837,24 @@ body.v_signalStreng {
   /* 로딩 아이콘 */
 }
 .loading-modal .loading-spinner {
-  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   margin: 0 auto;
-  position: fixed;
-  top: 15%;
   z-index: 99;
-  width: 94%;
+  width: calc(100% - 32px);
+  height: calc(100% - 48px);
   box-sizing: border-box;
   padding: 0;
-  border-radius: 10px;
+  border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.44);
   background-color: #fff;
 }
 .loading-modal .pop_con {
-  padding: 0 16px 25px;
+  padding: 0 24px 200px;
+  max-width: 700px;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 .loading-modal .txt {
   display: block;

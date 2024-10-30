@@ -393,7 +393,7 @@
     <!-- //wrap -->
     <!-- Modal popup -->
     <!-- 결제취소(당일 취소) -->
-    <div class="setting_pop pay_edt pay_edt_01">
+    <div class="setting_pop pay_edt pay_edt_01" style="display: block;">
         <div class="bg"></div>
         <div id="pay_cncl" class="setting_area">
             <div class="pop_header">
@@ -809,6 +809,50 @@
         </div>
     </div>
     <!-- //setting_pop pay_edt -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.9/lottie.min.js"></script>
+    <div id="loadingModal" class="loading-modal">
+        <div class="loading-spinner">
+            <div class="loading-icon">
+                <div id="lottie-container" class="lottie-container"></div>
+            </div>            
+            <div class="pop_con">
+                <p id="loadingText" class="txt"><b>결제 처리중 입니다...</b></p>
+                <p class="txt">중복결제가 될 수 있으니 페이지를 새로고침 하거나 이동하지 마시고 잠시 기다려주세요.</p>
+            </div>
+            <div class="pop_con">
+                <p id="loadingTextCancel" class="txt"><b>구독취소 처리중 입니다...</b></p>
+                <p class="txt">취소 에러가 날 수 있으니 페이지를 새로 고침하거나 이동하지 마시고 잠시 기다려주세요.</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        // 로딩 모달이 나타날 때 스크롤 막기
+        function disableScroll() {
+            document.body.style.overflow = 'hidden';
+        }
+        // 로딩 모달이 사라질 때 스크롤 허용
+        function enableScroll() {
+            document.body.style.overflow = 'auto';
+        }
+        // 로딩 모달을 보이게 하는 함수
+        function showLoadingModal() {
+            document.getElementById('loadingModal').style.display = 'flex';
+            disableScroll();
+        }
+
+        // 로딩 모달을 숨기는 함수
+        function hideLoadingModal() {
+            document.getElementById('loadingModal').style.display = 'none';
+            enableScroll();
+        }
+
+        // 예시로 모달을 3초 뒤에 숨기기 (실제 환경에 맞게 조정)
+        setTimeout(hideLoadingModal, 3000);
+
+        // 로딩 모달이 필요할 때 showLoadingModal()을 호출하세요.
+        showLoadingModal();
+    </script>
 </body>
 
 </html>

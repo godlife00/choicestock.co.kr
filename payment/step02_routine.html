@@ -38,9 +38,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
     <!-- css -->
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <link rel="stylesheet" type="text/css" href="../css/scss/choicestock.css" />
+    <link rel="stylesheet" type="text/css" href="../css/scss/choicestock.css?v=2410292" />
     <!-- js -->
-    <script src="../js/choicestock.js"></script>
+    <script src="../js/choicestock.js?v=2410292"></script>
 </head>
 
 <body class="v_signalStreng globalStock">
@@ -892,10 +892,10 @@
                 <p id="loadingText" class="txt"><b>결제 처리중 입니다...</b></p>
                 <p class="txt">중복결제가 될 수 있으니 페이지를 새로고침 하거나 이동하지 마시고 잠시 기다려주세요.</p>
             </div>
-            <div class="pop_con">
+            <!-- <div class="pop_con">
                 <p id="loadingTextCancel" class="txt"><b>구독취소 처리중 입니다...</b></p>
                 <p class="txt">취소 에러가 날 수 있으니 페이지를 새로 고침하거나 이동하지 마시고 잠시 기다려주세요.</p>
-            </div>
+            </div> -->
         </div>
     </div>
     <script>
@@ -920,10 +920,13 @@
         }
 
         // 예시로 모달을 3초 뒤에 숨기기 (실제 환경에 맞게 조정)
-        setTimeout(hideLoadingModal, 3000);
+        setTimeout(hideLoadingModal, 5000);
 
         // 로딩 모달이 필요할 때 showLoadingModal()을 호출하세요.
-        showLoadingModal();
+        setTimeout(function () {
+            showLoadingModal();
+        }, 2000);
+        
     </script>
 
 </body>

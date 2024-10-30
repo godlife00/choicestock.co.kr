@@ -16489,8 +16489,7 @@ table.tableRanking td {
 			display: flex;			
 			gap: 5px 5px;
 			color: #333;		
-			font-size: 1.25rem;				
-			font-weight: 700;			
+			font-size: 0.9375rem;
 			.signal_guide {				
 				img {
 					display:inline-block;					
@@ -16498,7 +16497,129 @@ table.tableRanking td {
 				}
 			}
 		}
+		
+		.score_chart {
+			position: relative;
+			padding: 16px 0;
+			.highcharts-figure {
+				position: relative;
+				margin: 0 auto;
+				width: 340px;
+				height: 156px;							
+			}
+			.contaanalysis1 {
+				margin: 0 auto;
+				width: 340px;
+				height: 180px;			
+				background: url('/img/contaanalysis1_num.svg') no-repeat center 77px;					
+				background-size: 170px 85px;
+				
+				.gauge-value {										
+					background-color: red;
+					.highcharts-label-box {						
+						stroke-width: 0;
+					}
+					span {
+						font-size: 30px !important;
+						color: #333 !important;
+						font-weight: bold !important;
+					}
+				}
+				.highcharts-pivot {
+					fill: #FFF;    				
+					filter: drop-shadow(0px -5px 6px rgba(199, 204, 209, 0.30));
+					box-shadow: 0px -5px 6px rgba(199, 204, 209, 0.3);					
+				}
+				
+				.highcharts-axis-labels.highcharts-radial-axis-labels {
+					text {						
+						&:nth-child(1) {							
+							fill: #D43F5D !important;
+							color: #D43F5D !important;
+							
+						}
+						&:nth-child(2) {
+							fill: #E9835B !important;
+							color: #E9835B !important;
+						}
+						&:nth-child(3) {
+							fill: #F4A031 !important;
+							color: #F4A031 !important;
+						}
+						&:nth-child(4) {
+							fill: #F8D54E !important;
+							color: #F8D54E !important;
+						}
+						&:nth-child(5) {
+							fill: #5AA86B !important;
+							color: #5AA86B !important;
+						}
+						&.active-label {
+							fill: #fff !important;
+							color: #fff !important;							
+						}						
+					}
+				}
+			}
+			.group-4 {		
+				display: none;		
+				position: absolute;
+				width: 170px;
+				height: 85px;
+				top: 77px;
+				left: 85px;								
 
+				.element,
+				.element-2,
+				.element-3,
+				.element-4,
+				.element-5 {					
+					font-weight: 600;
+					font-size: 10px;
+					color: #939393;
+					position: absolute;					
+					letter-spacing: 0;
+					line-height: normal;
+					white-space: nowrap;
+					opacity: 0.7;
+				}
+	
+				.element {
+					top: 20px;
+					left: 29px;
+				}
+	
+				.element-2 {
+					top: 20px;
+					right: 29px;
+				}
+	
+				.element-3 {
+					top: 0;
+					left: 77px;
+				}
+	
+				.element-4 {
+					bottom: 0;
+					left: 0;
+				}
+	
+				.element-5 {
+					bottom: 0;					
+					right: 0;
+				}
+			}
+			.txt {
+				font-weight: 500;
+				font-size: 12px;				
+				color: #939393;
+				letter-spacing: 0;
+				line-height: normal;
+				white-space: nowrap;
+				opacity: 0.7;
+			}
+		}
+		
 	}
 	
 }
