@@ -1514,7 +1514,7 @@ $(document).ready(function () {
         $('.payment_cacl02').show().addClass('slideUp');        
     });
     // 마켓스코어 공포 지수 툴팁
-    $('.globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .tradeSignal_status .title, .globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .tradeSignal_status .title .signal_guide').on('click', function () {
+    $('.main_mid.tradeSignal_status .title .signal_guide, .globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .tradeSignal_status .title, .globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .tradeSignal_status .title .signal_guide').on('click', function () {
         if ($(this).hasClass('no_signal')) {            
             return;
         } else {
@@ -1888,26 +1888,33 @@ $(document).ready(function () {
     }
 
     // 결제 취소, Lottie 애니메이션 로드 및 재생
-    lottie.loadAnimation({
-        container: document.getElementById('lottie-container'), // 애니메이션을 넣을 컨테이너
-        renderer: 'svg',
-        loop: true,
-        autoplay: true,
-        path: '../payment_loading.json' // 사용하고자 하는 Lottie JSON 파일 경로
-    });
+    if ($('.lottie-container').length) {        
+        lottie.loadAnimation({
+            container: document.getElementById('lottie-container'), // 애니메이션을 넣을 컨테이너
+            renderer: 'svg',
+            loop: true,
+            autoplay: true,
+            path: '../payment_loading.json' // 사용하고자 하는 Lottie JSON 파일 경로
+        });
+        const loadingText = document.getElementById('loadingText');
+        const loadingTextCancel = document.getElementById('loadingTextCancel');
+        const loadingTextCardChange = document.getElementById('loadingTextCardChange');
 
-    const loadingText = document.getElementById('loadingText');
-    const loadingTextCancel = document.getElementById('loadingTextCancel');
-    let dotCount = 0;
-    setInterval(function() {
-    dotCount = (dotCount + 1) % 6;
-    const dots = '.'.repeat(dotCount);
-    
-    // 결제 처리중 텍스트 업데이트
-    loadingText.innerHTML = `<b>결제 처리중 입니다${dots}</b>`;
-    
-    // 구독취소 처리중 텍스트 업데이트
-    loadingTextCancel.innerHTML = `<b>구독취소 처리중 입니다${dots}</b>`;
-    }, 500); // 500ms마다 업데이트 (0.5초)
+        let dotCount = 0;
+        setInterval(function() {
+            dotCount = (dotCount + 1) % 6;
+            const dots = '.'.repeat(dotCount);
+            
+            // 결제 처리중 텍스트 업데이트
+            loadingText.innerHTML = `<b>결제 처리중 입니다${dots}</b>`;
+            
+            // 구독취소 처리중 텍스트 업데이트
+            loadingTextCancel.innerHTML = `<b>구독취소 처리중 입니다${dots}</b>`;
+
+            // 카드변경 처리중 텍스트 업데이트
+            loadingTextCardChange.innerHTML = `<b>카드변경 처리중 입니다${dots}</b>`;
+        }, 500); // 500ms마다 업데이트 (0.5초)
+
+    }
 
 });

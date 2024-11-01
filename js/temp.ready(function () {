@@ -1513,7 +1513,16 @@ $(document).ready(function () {
         $('.blocker').show();
         $('.payment_cacl02').show().addClass('slideUp');        
     });
-    
+    // 마켓스코어 공포 지수 툴팁
+    $('.main_mid.tradeSignal_status .title .signal_guide, .globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .tradeSignal_status .title, .globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .tradeSignal_status .title .signal_guide').on('click', function () {
+        if ($(this).hasClass('no_signal')) {            
+            return;
+        } else {
+            $('.modal').hide().removeClass('slideUp');
+            $('.blocker').show();
+            $('.score_pop01').show().addClass('slideUp');
+        }        
+    });
 
     // 결제 이용약관 모달 팝업        
     $('.v_signalStreng.globalStock .refund_terms').on('click', function () {
@@ -1876,6 +1885,36 @@ $(document).ready(function () {
             });
         });
         $('.alarmArea .alarmList li  span.sum').css('visibility','visible');        
+    }
+
+    // 결제 취소, Lottie 애니메이션 로드 및 재생
+    if ($('.lottie-container').length) {        
+        lottie.loadAnimation({
+            container: document.getElementById('lottie-container'), // 애니메이션을 넣을 컨테이너
+            renderer: 'svg',
+            loop: true,
+            autoplay: true,
+            path: '../payment_loading.json' // 사용하고자 하는 Lottie JSON 파일 경로
+        });
+        const loadingText = document.getElementById('loadingText');
+        const loadingTextCancel = document.getElementById('loadingTextCancel');
+        const loadingTextCardChange = document.getElementById('loadingTextCardChange');
+
+        let dotCount = 0;
+        setInterval(function() {
+            dotCount = (dotCount + 1) % 6;
+            const dots = '.'.repeat(dotCount);
+            
+            // 결제 처리중 텍스트 업데이트
+            loadingText.innerHTML = `<b>결제 처리중 입니다${dots}</b>`;
+            
+            // 구독취소 처리중 텍스트 업데이트
+            loadingTextCancel.innerHTML = `<b>구독취소 처리중 입니다${dots}</b>`;
+
+            // 카드변경 처리중 텍스트 업데이트
+            loadingTextCardChange.innerHTML = `<b>카드변경 처리중 입니다${dots}</b>`;
+        }, 500); // 500ms마다 업데이트 (0.5초)
+
     }
 
 });

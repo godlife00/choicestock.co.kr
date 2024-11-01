@@ -14852,7 +14852,30 @@ table.tableRanking td {
 	position: relative;
 	top: -10px;
 }
-
+.globalStock .sub_search .sub_mid.tabs_area .alloca_info .allocachart_area {	
+	.chart_guide {
+		position: relative;
+		top: -12px;
+		font-size: 0.75rem;
+		line-height: 1.3;
+		font-weight: 400;
+		color: #969ea7;
+		padding: 0 16px 10px 24px;		
+		word-break: break-all;
+		word-wrap: break-word;
+		&::before {
+			content: "";
+			position: absolute;
+			left: 12px;
+			top: 5px;
+			display: inline-block;
+			width: 4px;
+			height: 4px;
+			border-radius: 50%;
+			background: #c7cbe9;
+		}
+	}
+} 
 .globalStock .sub_search .sub_mid.tabs_area .alloca_info .info {
 	position: relative;
 	padding: 0 15px;
@@ -16479,6 +16502,162 @@ table.tableRanking td {
 	}
 }
 
+/* 메인 - 마켓스코어 공포지수 */
+.globalStock .main_mid.tradeSignal_status {
+	width: 100%;
+	box-sizing: border-box;
+	margin-top: 55px;
+	.title {
+		display: flex;			
+		align-items: center;
+		gap: 5px 5px;
+		padding: 0 16px;
+		width: 100%;
+		box-sizing: border-box;
+		color: #333;
+		font-size: 1.25rem;
+		font-weight: bold;
+		.signal_guide {				
+			img {
+				display:inline-block;					
+				vertical-align: inherit;							
+			}
+		}
+		.more {
+			margin-left: auto;
+		}
+	}
+	
+	.score_chart {
+		position: relative;
+		padding: 16px 0 0;
+		.update_info {
+			position: absolute;
+			right: 38px;
+			top: -19px;
+			color: #939393;
+			font-size: 0.8125rem;
+		}
+		.highcharts-figure {
+			position: relative;
+			margin: 0 auto;
+			width: 340px;
+			height: 176px;							
+		}
+		.contaanalysis1 {
+			margin: 0 auto;
+			width: 340px;
+			height: 180px;			
+			background: url('/img/contaanalysis1_num.svg') no-repeat center 77px;					
+			background-size: auto 114px;
+			
+			.gauge-value {										
+				background-color: red;
+				.highcharts-label-box {						
+					stroke-width: 0;
+				}
+				span {
+					font-size: 30px !important;
+					color: #333 !important;
+					font-weight: bold !important;
+				}
+			}
+			.highcharts-pivot {
+				fill: #FFF;    				
+				filter: drop-shadow(0px -5px 6px rgba(199, 204, 209, 0.30));
+				box-shadow: 0px -5px 6px rgba(199, 204, 209, 0.3);					
+			}
+			
+			.highcharts-axis-labels.highcharts-radial-axis-labels {
+				text {						
+					&:nth-child(1) {							
+						fill: #D43F5D !important;
+						color: #D43F5D !important;
+						
+					}
+					&:nth-child(2) {
+						fill: #E9835B !important;
+						color: #E9835B !important;
+					}
+					&:nth-child(3) {
+						fill: #F4A031 !important;
+						color: #F4A031 !important;
+					}
+					&:nth-child(4) {
+						fill: #F8D54E !important;
+						color: #F8D54E !important;
+					}
+					&:nth-child(5) {
+						fill: #5AA86B !important;
+						color: #5AA86B !important;
+					}
+					&.active-label {
+						fill: #fff !important;
+						color: #fff !important;							
+					}						
+				}
+			}
+		}
+		.group-4 {		
+			display: none;		
+			position: absolute;
+			width: 170px;
+			height: 85px;
+			top: 77px;
+			left: 85px;								
+
+			.element,
+			.element-2,
+			.element-3,
+			.element-4,
+			.element-5 {					
+				font-weight: 600;
+				font-size: 10px;
+				color: #939393;
+				position: absolute;					
+				letter-spacing: 0;
+				line-height: normal;
+				white-space: nowrap;
+				opacity: 0.7;
+			}
+
+			.element {
+				top: 20px;
+				left: 29px;
+			}
+
+			.element-2 {
+				top: 20px;
+				right: 29px;
+			}
+
+			.element-3 {
+				top: 0;
+				left: 77px;
+			}
+
+			.element-4 {
+				bottom: 0;
+				left: 0;
+			}
+
+			.element-5 {
+				bottom: 0;					
+				right: 0;
+			}
+		}
+		.txt {
+			font-weight: 500;
+			font-size: 12px;				
+			color: #939393;
+			letter-spacing: 0;
+			line-height: normal;
+			white-space: nowrap;
+			opacity: 0.7;
+		}
+	}
+}
+
 .globalStock .sub_recom.sub_recipe .sub_mid.recipe_view {
 	.tradeSignal_status {
 		width: 100%;
@@ -16507,12 +16686,13 @@ table.tableRanking td {
 				width: 340px;
 				height: 156px;							
 			}
+
 			.contaanalysis1 {
 				margin: 0 auto;
 				width: 340px;
 				height: 180px;			
 				background: url('/img/contaanalysis1_num.svg') no-repeat center 77px;					
-				background-size: 170px 85px;
+				background-size: auto 114px;
 				
 				.gauge-value {										
 					background-color: red;
@@ -16620,8 +16800,7 @@ table.tableRanking td {
 			}
 		}
 		
-	}
-	
+	}	
 }
 
 .globalStock .sub_recipe .sub_mid.recipe_view .update_info {
@@ -21699,29 +21878,34 @@ table.tableRanking td {
 	padding: 10px 15px;
 	position: relative;
 	text-align: center;
+	p {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		a {
+			vertical-align: middle;
+			color: #3f775e;
+			font-size: 0.84rem;
+			letter-spacing: -0.03rem;
+			font-weight: bold;
+			text-decoration: underline;				
+			&.btn_close {
+				position: absolute;
+				right: 15px;
+				top: 12px;
+				font-size: 12px;
+				color: #3f775e;
+				text-decoration: none;
+				img {
+					display: inline-block;					
+					height: 13px;
+				}
+			}
+		}	
+		
+	}
 }
 
-.globalStock .weeks_free3 p,
-.globalStock .weeks_free3 p a {
-	color: #3f775e;
-	font-size: 0.84rem;
-	font-weight: normal;
-	letter-spacing: -0.03rem;
-}
-
-.globalStock .weeks_free3 p a {
-	font-weight: bold;
-	text-decoration: underline;
-}
-
-.globalStock .weeks_free3 p .btn_close {
-	position: absolute;
-	right: 15px;
-	top: 12px;
-	font-size: 12px;
-	color: #3f775e;
-	text-decoration: none;
-}
 
 /* 메인 최상단 짧은 배너 서비스장애 */
 .globalStock .limit_banner {
@@ -32238,6 +32422,29 @@ body.v_signalStreng {
 			display: inline-block;
 			width: 100%;
 			height: 100%;
+		}
+	}
+
+	.chart_guide {
+		width: 100%;		
+		position: relative;
+		font-size: 0.75rem;
+		line-height: 1.3;
+		font-weight: 400;
+		color: #969ea7;
+		padding: 0 24px;
+		word-break: break-all;
+		word-wrap: break-word;
+		&::before {
+			content: "";
+			position: absolute;
+			left: 13px;
+			top: 8px;
+			display: inline-block;
+			width: 4px;
+			height: 4px;
+			border-radius: 50%;
+			background: #c7cbe9;
 		}
 	}
 }

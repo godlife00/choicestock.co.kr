@@ -7075,8 +7075,22 @@ $(document).ready(function () {
         });
     }
 
-    // 매매신호 목록 - 공포 탐욕 지수 (마켓스코어)
+    // 매매신호 목록 - 공포 탐욕 지수 (마켓스코어)    
     function CustomChart_Score(renderTo, data) {        
+        const easeOutBounce = function (pos) {
+            if ((pos) < (1 / 2.75)) {
+                return (7.5625 * pos * pos);
+            }
+            if (pos < (2 / 2.75)) {
+                return (7.5625 * (pos -= (1.5 / 2.75)) * pos + 0.75);
+            }
+            if (pos < (2.5 / 2.75)) {
+                return (7.5625 * (pos -= (2.25 / 2.75)) * pos + 0.9375);
+            }
+            return (7.5625 * (pos -= (2.625 / 2.75)) * pos + 0.984375);
+        };        
+        Math.easeOutBounce = easeOutBounce;
+        
         Highcharts.chart(renderTo, {
             chart: {
                 type: 'gauge',
@@ -7210,9 +7224,12 @@ $(document).ready(function () {
                     },
                     pivot: {                        
                         backgroundColor: 'transparent',
-                        radius: 40,               
+                        radius: 33,               
                     },
-                    animation: false
+                    animation: {
+                        duration: 2000,
+                        easing: 'easeOutBounce',
+                    }
                 }
             },
         
