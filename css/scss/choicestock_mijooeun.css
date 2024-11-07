@@ -1753,8 +1753,8 @@ table.tableRanking td {
 .globalStock .sub_terms .terms_sum {
   color: #333;
   font-size: 0.9375rem;
-  margin-top: 45px;
-  margin-bottom: 15px;
+  margin-top: 35px;
+  margin-bottom: 3px;
   font-weight: bold;
 }
 
@@ -1767,6 +1767,33 @@ table.tableRanking td {
 }
 
 .globalStock .sub_terms .txt {
+  white-space: pre-line;
+  color: #333;
+  font-size: 0.84rem;
+  line-height: 1.3rem;
+  word-wrap: break-word;
+  word-break: break-all;
+  display: flex;
+  flex-direction: column;
+  gap: 8px 8px;
+}
+.globalStock .sub_terms .txt span {
+  white-space: pre-line;
+  color: #333;
+  font-size: 0.84rem;
+  line-height: 1.3rem;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.globalStock .sub_terms ul.list {
+  display: flex;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 2px;
+}
+.globalStock .sub_terms ul.list li {
   white-space: pre-line;
   color: #333;
   font-size: 0.84rem;
@@ -16507,12 +16534,25 @@ table.tableRanking td {
   font-size: 1.25rem;
   font-weight: bold;
 }
+.globalStock .main_mid.tradeSignal_status .title .signal_guide {
+  cursor: pointer;
+  display: inline-block;
+}
 .globalStock .main_mid.tradeSignal_status .title .signal_guide img {
   display: inline-block;
   vertical-align: inherit;
 }
 .globalStock .main_mid.tradeSignal_status .title .more {
   margin-left: auto;
+  display: inline-block;
+  text-align: right;
+  padding: 10px 7px 6px;
+  width: 96px;
+  box-sizing: border-box;
+  color: #333;
+  font-size: 0.9rem;
+  vertical-align: top;
+  line-height: 12px;
 }
 .globalStock .main_mid.tradeSignal_status .score_chart {
   position: relative;
@@ -16641,6 +16681,10 @@ table.tableRanking td {
   gap: 5px 5px;
   color: #333;
   font-size: 0.9375rem;
+}
+.globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .tradeSignal_status .title .signal_guide {
+  cursor: pointer;
+  display: inline-block;
 }
 .globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .tradeSignal_status .title .signal_guide img {
   display: inline-block;
@@ -18460,7 +18504,8 @@ table.tableRanking td {
   margin-bottom: 30px;
 }
 
-.globalStock .view_con .mid * {
+.globalStock .view_con .mid html, .globalStock .view_con .mid body, .globalStock .view_con .mid div, .globalStock .view_con .mid span, .globalStock .view_con .mid applet, .globalStock .view_con .mid object, .globalStock .view_con .mid iframe, .globalStock .view_con .mid p, .globalStock .view_con .mid blockquote, .globalStock .view_con .mid pre, .globalStock .view_con .mid a, .globalStock .view_con .mid abbr, .globalStock .view_con .mid acronym, .globalStock .view_con .mid address, .globalStock .view_con .mid big, .globalStock .view_con .mid cite, .globalStock .view_con .mid code, .globalStock .view_con .mid del, .globalStock .view_con .mid dfn, .globalStock .view_con .mid em, .globalStock .view_con .mid img, .globalStock .view_con .mid ins, .globalStock .view_con .mid kbd, .globalStock .view_con .mid q, .globalStock .view_con .mid s, .globalStock .view_con .mid samp, .globalStock .view_con .mid small, .globalStock .view_con .mid strike, .globalStock .view_con .mid sub, .globalStock .view_con .mid sup, .globalStock .view_con .mid tt, .globalStock .view_con .mid var, .globalStock .view_con .mid b, .globalStock .view_con .mid u, .globalStock .view_con .mid i, .globalStock .view_con .mid center, .globalStock .view_con .mid dl, .globalStock .view_con .mid dt, .globalStock .view_con .mid dd, .globalStock .view_con .mid ol, .globalStock .view_con .mid ul, .globalStock .view_con .mid li, .globalStock .view_con .mid fieldset, .globalStock .view_con .mid form, .globalStock .view_con .mid label, .globalStock .view_con .mid legend, .globalStock .view_con .mid table, .globalStock .view_con .mid caption, .globalStock .view_con .mid tbody, .globalStock .view_con .mid tfoot, .globalStock .view_con .mid thead, .globalStock .view_con .mid tr, .globalStock .view_con .mid th, .globalStock .view_con .mid td, .globalStock .view_con .mid article, .globalStock .view_con .mid aside, .globalStock .view_con .mid canvas, .globalStock .view_con .mid details, .globalStock .view_con .mid embed, .globalStock .view_con .mid figure, .globalStock .view_con .mid figcaption, .globalStock .view_con .mid footer, .globalStock .view_con .mid header, .globalStock .view_con .mid hgroup, .globalStock .view_con .mid menu, .globalStock .view_con .mid nav, .globalStock .view_con .mid output, .globalStock .view_con .mid ruby, .globalStock .view_con .mid section, .globalStock .view_con .mid summary, .globalStock .view_con .mid time, .globalStock .view_con .mid mark, .globalStock .view_con .mid audio, .globalStock .view_con .mid video,
+.globalStock .view_con .mid .ui-body-a, .globalStock .view_con .mid .ui-page-theme-a .ui-body-inherit, .globalStock .view_con .mid html .ui-bar-a .ui-body-inherit, .globalStock .view_con .mid html .ui-body-a .ui-body-inherit, .globalStock .view_con .mid html body .ui-group-theme-a .ui-body-inherit, .globalStock .view_con .mid html .ui-panel-page-container-a {
   color: #333;
   font-size: 1rem;
   line-height: 26px;
@@ -31518,6 +31563,14 @@ body.v_signalStreng {
   border-bottom: 1px solid #F5F5F5;
   padding: 5px 0 10px;
   margin-bottom: 30px;
+}
+.v_signalStreng.globalStock #wrap #container .mainBox.financials .chart_box .sum_title {
+  flex: none;
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  color: #333;
+  font-size: 1rem;
 }
 .v_signalStreng.globalStock #wrap #container .mainBox.financials .chart_box .chart_capture {
   position: relative;

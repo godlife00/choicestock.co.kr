@@ -1426,9 +1426,9 @@ table.tableRanking td {
 .globalStock .sub_terms .terms_sum {
 	color: #333;
 	font-size: 0.9375rem;
-	margin-top: 45px;
-	margin-bottom: 15px;
-	font-weight: bold;
+	margin-top: 35px;
+	margin-bottom: 3px;
+	font-weight: bold;	
 }
 
 .globalStock .sub_terms .terms_sum_n {
@@ -1446,6 +1446,35 @@ table.tableRanking td {
 	line-height: 1.3rem;
 	word-wrap: break-word;
 	word-break: break-all;
+	display: flex;    
+    flex-direction: column;
+	gap: 8px 8px;
+	span {		
+		white-space: pre-line;
+		color: #333;
+		font-size: 0.84rem;
+		line-height: 1.3rem;
+		word-wrap: break-word;
+		word-break: break-all;
+	}
+	
+}
+
+.globalStock .sub_terms ul.list {	
+	display: flex;
+	display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+	gap: 2px;
+
+	li {
+		white-space: pre-line;
+		color: #333;
+		font-size: 0.84rem;
+		line-height: 1.3rem;		
+		word-wrap: break-word;
+		word-break: break-all;
+	}
 }
 
 .globalStock .sub_terms .txt_B {
@@ -16517,7 +16546,9 @@ table.tableRanking td {
 		color: #333;
 		font-size: 1.25rem;
 		font-weight: bold;
-		.signal_guide {				
+		.signal_guide {			
+			cursor: pointer;	
+			display: inline-block;
 			img {
 				display:inline-block;					
 				vertical-align: inherit;							
@@ -16525,6 +16556,15 @@ table.tableRanking td {
 		}
 		.more {
 			margin-left: auto;
+			display: inline-block;
+			text-align: right;
+			padding: 10px 7px 6px;
+			width: 96px;
+			box-sizing: border-box;
+			color: #333;
+			font-size: 0.9rem;
+			vertical-align: top;
+			line-height: 12px;
 		}
 	}
 	
@@ -16669,7 +16709,9 @@ table.tableRanking td {
 			gap: 5px 5px;
 			color: #333;		
 			font-size: 0.9375rem;
-			.signal_guide {				
+			.signal_guide {			
+				cursor: pointer;	
+				display: inline-block;
 				img {
 					display:inline-block;					
 					vertical-align: inherit;							
@@ -18526,11 +18568,20 @@ table.tableRanking td {
 	margin-bottom: 30px;
 }
 
-.globalStock .view_con .mid * {
-	color: #333;
-	font-size: 1rem;
-	line-height: 26px;
+.globalStock .view_con .mid {
+	html,body,div,span,applet,object,iframe,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video,
+	.ui-body-a, .ui-page-theme-a .ui-body-inherit, html .ui-bar-a .ui-body-inherit, html .ui-body-a .ui-body-inherit, html body .ui-group-theme-a .ui-body-inherit, html .ui-panel-page-container-a {
+		color: #333;
+		font-size: 1rem;
+		line-height: 26px;		
+	}	
 }
+// .globalStock .view_con .mid h1 {	
+// 	font-size: 2.4rem;	
+// 	strong {
+// 		font-size: 2.4rem;		
+// 	}
+// }
 
 .globalStock .sub_briefing .view_con .mid p,
 .globalStock .sub_briefing .view_con .mid a {
@@ -32406,6 +32457,15 @@ body.v_signalStreng {
 	// padding-bottom: 15px;
 	padding: 5px 0 10px;
 	margin-bottom: 30px;
+
+	.sum_title {
+		flex: none;
+		display: block;
+		width: 100%;
+		margin-top: 10px;
+		color: #333;
+		font-size: 1rem;
+	}
 
 	.chart_capture {
 		position: relative;

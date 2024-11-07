@@ -430,6 +430,40 @@
                     <a href="https://www.valueline.co.kr/member/service" target="_blank"><img src="../img/banner/event_discount_fly55.png" alt="20년 빅데이터 종목분석 밸류라인 프리미엄 평상할인 55% (선착순 100명)"></a>
                 </div>
 
+                <!-- 매출액, 영업이익, 주당순이익(EPS) 막대 차트 -->
+                <div class="mainBox financials">
+                    <div class="chart_box">
+                        <h3 class="c_title">주가 흐름은?</h3>                        
+                        <span class="signal_guide txt_guide"><img src="../img/txt_guide_us.svg" alt="가이드보기"></span>
+                        <span class="unit">* 단위 : 달러</span>
+                        <h4 class="sum_title">지수이동평균선(EMA)</h4>
+                        <div id="ma_chart_container" class="financialsLine_style"></div>
+                        <div class="ma_period_wrap" style="text-align:center; margin:15px 0;">
+                            <button type="button" class="ma_period_btn active" data-period="1Y" style="padding:8px 20px; margin:0 5px; border:1px solid #ddd; border-radius:20px; background:#fff; font-size:13px;">1년</button>
+                            <button type="button" class="ma_period_btn" data-period="3Y" style="padding:8px 20px; margin:0 5px; border:1px solid #ddd; border-radius:20px; background:#fff; font-size:13px;">3년</button>
+                        </div>
+                        <span class="chart_capture" onclick="capture(event)"><img src="../img/chart_down.png" alt="차트 다운로드"></span>
+                    </div>
+                    <style>
+                        .ma_period_btn.active {
+                            background-color: #3655d6 !important;
+                            color: #fff;
+                            border-color: #3655d6 !important;
+                        }
+                        .highcharts-credits {
+                            display: none;
+                        }
+                        </style>
+                    <div class="chart_box">
+                        <h3 class="c_title">주가&EPS</h3>
+                        <span class="signal_guide txt_guide"><img src="../img/txt_guide_us.svg" alt="가이드보기"></span>
+                        <span class="unit">* 단위 : 달러</span>
+                        <div id="containerfinancials2_1" class="financialsLine_style"></div>
+                        <span class="chart_capture" onclick="capture(event)"><img src="../img/chart_down.png"
+                                alt="차트 다운로드"></span>
+                    </div>
+                </div>
+                
                 <!-- 종목노트, 탐구생활, 주요뉴스 -->
                 <div class="main_mid new_area">
                     <h3 class="c_title"><a href="/stock/note">뉴스</a></h3>
@@ -553,15 +587,7 @@
                         <div id="containerfinancials1_3" class="financials_style"></div>
                         <span class="chart_capture" onclick="capture(event)"><img src="../img/chart_down.png"
                                 alt="차트 다운로드"></span>
-                    </div>
-                    <div class="chart_box">
-                        <h3 class="c_title">주가&EPS</h3>
-                        <span class="signal_guide txt_guide"><img src="../img/txt_guide_us.svg" alt="가이드보기"></span>
-                        <span class="unit">* 단위 : 달러</span>
-                        <div id="containerfinancials2_1" class="financialsLine_style"></div>
-                        <span class="chart_capture" onclick="capture(event)"><img src="../img/chart_down.png"
-                                alt="차트 다운로드"></span>
-                    </div>
+                    </div>                    
                     <div class="chart_box">
                         <h3 class="c_title">주당배당금</h3>
                         <span class="unit">* 단위 : 달러</span>
