@@ -30165,6 +30165,14 @@ table.tableRanking td {
 .v_signalStreng.globalStock #wrap .modal.cardBox .pop_con .progress_txt b {
   color: #6a727b;
 }
+.v_signalStreng.globalStock #wrap .modal.cardBox .pop_con .progress_txt .pay_guideTxt {
+  cursor: pointer;
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-decoration: underline;
+  color: var(--mian_color1, #404FC3);
+  font-weight: 500;
+}
 
 .v_signalStreng.globalStock #wrap .modal.cardBox .pop_con .paypal_step {
   display: flex;
@@ -30359,6 +30367,7 @@ body.v_signalStreng {
   font-weight: 700;
   line-height: 1.23;
   color: #181f29;
+  background-color: red;
 }
 .v_signalStreng.globalStock #wrap #container .recom_company .detail {
   margin-top: 3px;
@@ -31013,31 +31022,40 @@ body.v_signalStreng {
 }
 .v_signalStreng.globalStock #wrap #container.sub_search .mainBox.outline .chart_box .period_tabs {
   display: flex;
-  justify-content: space-around;
-  align-items: baseline;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  margin: 0 auto 15px;
+  width: 100%;
 }
 .v_signalStreng.globalStock #wrap #container.sub_search .mainBox.outline .chart_box .period_tabs li {
-  font-size: 0.9375rem;
-  width: 100%;
-  text-align: center;
-  padding: 10px 0;
   cursor: pointer;
-  border-bottom: 1px solid #c6c6c6;
-  color: #6a727b;
+  display: block;
+  box-sizing: border-box;
+  padding: 8px 20px;
+  border-radius: 20px;
+  border: 1px solid transparent;
+  text-align: center;
+  background-color: #ececef;
+  color: #939393;
+  font-size: 0.8125rem;
 }
 .v_signalStreng.globalStock #wrap #container.sub_search .mainBox.outline .chart_box .period_tabs li.active {
-  font-size: 0.9375rem;
+  background: #f7f8f9;
   color: #404fc3;
-  padding-bottom: 9px;
   font-weight: bold;
-  border-bottom: 2px solid #404fc3;
 }
 .v_signalStreng.globalStock #wrap #container.sub_search .mainBox.outline .BICchart_style {
   margin-top: 30px;
   width: 100%;
-  height: 380px;
+  height: 280px;
   box-sizing: border-box;
   background-color: transparent;
+}
+@media (min-width: 426px) {
+  .v_signalStreng.globalStock #wrap #container.sub_search .mainBox.outline .BICchart_style {
+    height: 340px;
+  }
 }
 .v_signalStreng.globalStock #wrap #container.sub_search .mainBox.outline .BICchart_style .highcharts-yaxis .highcharts-axis-line {
   opacity: 0 !important;
@@ -31218,6 +31236,7 @@ body.v_signalStreng {
 .v_signalStreng.globalStock #wrap #container .main_mid.new_area {
   padding: 0 16px;
   margin-bottom: 15px;
+  margin-top: 15px;
 }
 
 .v_signalStreng.globalStock #wrap #container .main_mid.new_area .c_title {
@@ -31324,6 +31343,17 @@ body.v_signalStreng {
 .v_signalStreng.globalStock #wrap #container .mainBox.financials {
   background-color: #fff;
   padding: 32px 16px;
+}
+.v_signalStreng.globalStock #wrap #container .mainBox.financials.chart_financials {
+  padding-bottom: 15px;
+}
+.v_signalStreng.globalStock #wrap #container .mainBox.financials.chart_financials .chart_box {
+  border-bottom: none;
+  margin-bottom: 15px;
+}
+.v_signalStreng.globalStock #wrap #container .mainBox.financials.chart_financials .sum_title {
+  cursor: pointer;
+  font-size: 1rem !important;
 }
 
 .v_signalStreng.globalStock #wrap #container .mainBox.financials::after {
@@ -31565,8 +31595,13 @@ body.v_signalStreng {
   margin-bottom: 30px;
 }
 .v_signalStreng.globalStock #wrap #container .mainBox.financials .chart_box .sum_title {
+  cursor: pointer;
   flex: none;
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0 12px;
   width: 100%;
   margin-top: 10px;
   color: #333;
@@ -31697,12 +31732,12 @@ body.v_signalStreng {
 .v_signalStreng.globalStock #wrap #container .mainBox.financials .chart_box .financialsLine_style {
   margin-top: 10px;
   width: 100%;
-  height: 220px;
+  height: 260px;
 }
 
 @media (min-width: 426px) {
   .v_signalStreng.globalStock #wrap #container .mainBox.financials .chart_box .financialsLine_style {
-    height: 260px;
+    height: 320px;
   }
 }
 .v_signalStreng.globalStock #wrap #container .mainBox.financials .chart_box .financialsLine_style .highcharts-xaxis .highcharts-axis-line {
@@ -31717,6 +31752,31 @@ body.v_signalStreng {
   font-weight: 400 !important;
   text-shadow: none;
   stroke-width: 0;
+}
+
+.v_signalStreng.globalStock #wrap #container .mainBox.financials .chart_box .ma_period_wrap {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  margin: 0 auto;
+  width: 100%;
+}
+.v_signalStreng.globalStock #wrap #container .mainBox.financials .chart_box .ma_period_wrap .ma_period_btn {
+  cursor: pointer;
+  display: block;
+  box-sizing: border-box;
+  padding: 8px 20px;
+  border-radius: 20px;
+  border: 1px solid transparent;
+  background-color: #ececef;
+  color: #939393;
+  font-size: 0.8125rem;
+}
+.v_signalStreng.globalStock #wrap #container .mainBox.financials .chart_box .ma_period_wrap .ma_period_btn.active {
+  background: #f7f8f9;
+  color: #404fc3;
+  font-weight: bold;
 }
 
 .v_signalStreng.globalStock #wrap #container .mainBox.financials .chart_box .premiumLock_area {
@@ -33607,7 +33667,8 @@ body.v_signalStreng {
 .v_signalStreng.globalStock #wrap .modal.signal_pop01 .pop_header,
 .v_signalStreng.globalStock #wrap .modal.payment_cacl .pop_header,
 .v_signalStreng.globalStock #wrap .modal.refundTerms_pop01 .pop_header,
-.v_signalStreng.globalStock #wrap .modal.eps_pop01 .pop_header {
+.v_signalStreng.globalStock #wrap .modal.eps_pop01 .pop_header,
+.v_signalStreng.globalStock #wrap .modal.ema_pop01 .pop_header {
   background-color: #fff;
   padding: 24px 15px;
   border: none;
@@ -33619,7 +33680,8 @@ body.v_signalStreng {
 .v_signalStreng.globalStock #wrap .modal.signal_pop01 .pop_header .pop_title,
 .v_signalStreng.globalStock #wrap .modal.payment_cacl .pop_header .pop_title,
 .v_signalStreng.globalStock #wrap .modal.refundTerms_pop01 .pop_header .pop_title,
-.v_signalStreng.globalStock #wrap .modal.eps_pop01 .pop_header .pop_title {
+.v_signalStreng.globalStock #wrap .modal.eps_pop01 .pop_header .pop_title,
+.v_signalStreng.globalStock #wrap .modal.ema_pop01 .pop_header .pop_title {
   justify-content: center;
   font-size: 1.25rem;
   line-height: 1.14;
@@ -33645,7 +33707,9 @@ body.v_signalStreng {
 .v_signalStreng.globalStock #wrap .modal.refundTerms_pop01 .pop_header .clse::before,
 .v_signalStreng.globalStock #wrap .modal.refundTerms_pop01 .pop_header .clse::after,
 .v_signalStreng.globalStock #wrap .modal.eps_pop01 .pop_header .clse::before,
-.v_signalStreng.globalStock #wrap .modal.eps_pop01 .pop_header .clse::after {
+.v_signalStreng.globalStock #wrap .modal.eps_pop01 .pop_header .clse::after,
+.v_signalStreng.globalStock #wrap .modal.ema_pop01 .pop_header .clse::before,
+.v_signalStreng.globalStock #wrap .modal.ema_pop01 .pop_header .clse::after {
   width: 2px;
   background-color: #333;
 }
@@ -33655,7 +33719,8 @@ body.v_signalStreng {
 .v_signalStreng.globalStock #wrap .modal.signal_pop01 .pop_con,
 .v_signalStreng.globalStock #wrap .modal.payment_cacl .pop_con,
 .v_signalStreng.globalStock #wrap .modal.refundTerms_pop01 .pop_con,
-.v_signalStreng.globalStock #wrap .modal.eps_pop01 .pop_con {
+.v_signalStreng.globalStock #wrap .modal.eps_pop01 .pop_con,
+.v_signalStreng.globalStock #wrap .modal.ema_pop01 .pop_con {
   padding: 0 16px 32px;
 }
 
@@ -34675,7 +34740,7 @@ body.v_signalStreng {
   margin: 25px auto;
 }
 
-.modal.slideUp.eps_pop01 {
+.modal.slideUp.eps_pop01, .modal.slideUp.ema_pop01 {
   margin: 0 auto;
   box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.1);
   border-radius: 0;
@@ -34693,11 +34758,11 @@ body.v_signalStreng {
   background: #fff;
   transition: all 0s ease-in-out;
 }
-.modal.slideUp.eps_pop01 .pop_header .pop_title {
+.modal.slideUp.eps_pop01 .pop_header .pop_title, .modal.slideUp.ema_pop01 .pop_header .pop_title {
   font-size: 1.125rem;
   justify-content: flex-start !important;
 }
-.modal.slideUp.eps_pop01 .pop_con {
+.modal.slideUp.eps_pop01 .pop_con, .modal.slideUp.ema_pop01 .pop_con {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -34706,7 +34771,7 @@ body.v_signalStreng {
   margin-bottom: 30px;
   overflow-y: auto;
 }
-.modal.slideUp.eps_pop01 .pop_con .sum_txt {
+.modal.slideUp.eps_pop01 .pop_con .sum_txt, .modal.slideUp.ema_pop01 .pop_con .sum_txt {
   font-size: 0.9375rem;
   line-height: 1.43;
   color: #6A727B;
@@ -34715,7 +34780,7 @@ body.v_signalStreng {
   word-wrap: break-word;
   word-break: break-all;
 }
-.modal.slideUp.eps_pop01 .pop_con .txt {
+.modal.slideUp.eps_pop01 .pop_con .txt, .modal.slideUp.ema_pop01 .pop_con .txt {
   position: relative;
   font-size: 0.9375rem;
   line-height: 1.43;
@@ -34725,7 +34790,7 @@ body.v_signalStreng {
   word-wrap: break-word;
   word-break: break-all;
 }
-.modal.slideUp.eps_pop01 .pop_con .txt::before {
+.modal.slideUp.eps_pop01 .pop_con .txt::before, .modal.slideUp.ema_pop01 .pop_con .txt::before {
   content: "";
   display: inline-block;
   position: absolute;

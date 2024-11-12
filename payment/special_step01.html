@@ -250,9 +250,13 @@
                     </div>
 
                     <p class="progress_txt">
-                        페이팔 결제 완료 3분 후에 유료회원으로 자동으로 권한이 부여됩니다.<br>
-                        <b>3분 후 초이스스탁 사이트에 접속해 페이지를 새로고침 (키보드 F5 누름) 하면 서비스 이용이 가능합니다.</b><br>
-                        시간이 지나도 유료회원 권한이 부여되지 않으면 채널톡 또는 team@datahero.co.kr 메일로 문의해 주시기 바랍니다.<br>
+                        스페셜 할인혜택이 제공되는 연간 정기결제는 결제일로부터 14일 이내 해지 시에만, 환불 가능함을 안내드립니다.
+                        <span class="pay_guideTxt">자세히</span>
+                        <br>
+                        페이팔 결제 정보 연동으로 유료회원 권한 부여에 시차가  발생할 수 있습니다.<br>
+                        <b>결제 완료 약 3분 후 초이스스탁 사이트에 접속해 페이지를 새로고침하면 서비스 이용이 가능합니다.</b><br>
+                        시간이 지나도 유료회원 권한이 부여되지 않으면 채널톡 또는 <a href="mailto:team@datahero.co.kr" style="color:#939393">team@datahero.co.kr</a>
+                        메일로 문의해 주시기 바랍니다.
                     </p>
                 </div>                
             </div>
@@ -285,7 +289,7 @@
 
 <script>
     $(document).ready(function () {
-        $('.v_signalStreng.globalStock .sub_payment .payment_guide .pay_guideTxt .more').on('click', function (event) {
+        $('.v_signalStreng.globalStock .sub_payment .payment_guide .pay_guideTxt .more, .v_signalStreng.globalStock #wrap .modal.cardBox .pop_con .progress_txt .pay_guideTxt').on('click', function (event) {
             event.stopPropagation(); // 이벤트 버블링 방지
             $('.modal').hide().removeClass('slideUp');
             $('.blocker').show();

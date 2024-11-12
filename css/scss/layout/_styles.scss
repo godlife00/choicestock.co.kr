@@ -30982,6 +30982,14 @@ table.tableRanking td {
 	b {
 		color: #6a727b;
 	}
+	.pay_guideTxt {
+		cursor: pointer;
+		font-size: 0.75rem;
+		font-weight: 500;
+		text-decoration: underline;
+		color: var(--mian_color1, #404FC3);
+		font-weight: 500;		
+	}
 }
 
 .v_signalStreng.globalStock #wrap .modal.cardBox .pop_con .paypal_step {
@@ -31184,6 +31192,7 @@ body.v_signalStreng {
 		font-weight: 700;
 		line-height: 1.23;
 		color: #181f29;
+		background-color: red;
 	}
 
 	.detail {
@@ -31876,25 +31885,28 @@ body.v_signalStreng {
 
 		.period_tabs {
 			display: flex;
-			justify-content: space-around;
-			align-items: baseline;
+			justify-content: flex-start;
+			align-items: center;	
+			gap: 10px;
+			margin: 0 auto 15px;
+			width: 100%;	
 
 			li {
-				font-size: 0.9375rem;
-				width: 100%;
+				cursor: pointer;	
+				display: block;				
+				box-sizing: border-box;
+				padding: 8px 20px;
+				border-radius: 20px;		
+				border: 1px solid transparent;
 				text-align: center;
-				padding: 10px 0;
-				cursor: pointer;
-				border-bottom: 1px solid #c6c6c6;
-				color: #6a727b;
-
+				background-color: #ececef;
+				color: #939393;
+				font-size: 0.8125rem;
 				&.active {
-					font-size: 0.9375rem;
+					background: #f7f8f9;			
 					color: #404fc3;
-					padding-bottom: 9px;
 					font-weight: bold;
-					border-bottom: 2px solid #404fc3;
-				}
+				}	
 			}
 		}
 
@@ -31903,7 +31915,10 @@ body.v_signalStreng {
 	.BICchart_style {
 		margin-top: 30px;
 		width: 100%;
-		height: 380px;
+		height: 280px;
+		@media (min-width: 426px) {
+			height: 340px;
+		}
 		box-sizing: border-box;
 		// padding: 0 19px;
 		background-color: transparent;
@@ -32111,6 +32126,7 @@ body.v_signalStreng {
 .v_signalStreng.globalStock #wrap #container .main_mid.new_area {
 	padding: 0 16px;
 	margin-bottom: 15px;
+	margin-top: 15px;
 }
 
 .v_signalStreng.globalStock #wrap #container .main_mid.new_area .c_title {
@@ -32217,6 +32233,17 @@ body.v_signalStreng {
 .v_signalStreng.globalStock #wrap #container .mainBox.financials {
 	background-color: #fff;
 	padding: 32px 16px;
+	&.chart_financials {
+		padding-bottom: 15px;
+		.chart_box {
+			border-bottom: none;
+			margin-bottom: 15px;			
+		}
+		.sum_title {
+			cursor: pointer;						
+			font-size: 1rem !important;
+		}
+	}
 }
 
 .v_signalStreng.globalStock #wrap #container .mainBox.financials::after {
@@ -32458,9 +32485,14 @@ body.v_signalStreng {
 	padding: 5px 0 10px;
 	margin-bottom: 30px;
 
-	.sum_title {
+	.sum_title {		
+		cursor: pointer;
 		flex: none;
-		display: block;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		align-items: center;
+		gap: 0 12px;
 		width: 100%;
 		margin-top: 10px;
 		color: #333;
@@ -32608,12 +32640,12 @@ body.v_signalStreng {
 .v_signalStreng.globalStock #wrap #container .mainBox.financials .chart_box .financialsLine_style {
 	margin-top: 10px;
 	width: 100%;
-	height: 220px;
+	height: 260px;
 }
 
 @media (min-width: 426px) {
 	.v_signalStreng.globalStock #wrap #container .mainBox.financials .chart_box .financialsLine_style {
-		height: 260px;
+		height: 320px;
 	}
 }
 
@@ -32629,6 +32661,33 @@ body.v_signalStreng {
 	font-weight: 400 !important;
 	text-shadow: none;
 	stroke-width: 0;
+}
+.v_signalStreng.globalStock #wrap #container .mainBox.financials .chart_box .ma_period_wrap {	
+	display: flex;
+    justify-content: flex-start;
+	align-items: center;	
+	gap: 10px;
+	margin: 0 auto;
+	width: 100%;	
+
+	.ma_period_btn {			
+		cursor: pointer;	
+		display: block;				
+		box-sizing: border-box;
+		padding: 8px 20px;
+		border-radius: 20px;		
+		border: 1px solid transparent;
+		background-color: #ececef;
+		color: #939393;
+		font-size: 0.8125rem;
+		&.active {
+			background: #f7f8f9;			
+			color: #404fc3;
+			font-weight: bold;
+		}	
+		
+	}
+	
 }
 
 .v_signalStreng.globalStock #wrap #container .mainBox.financials .chart_box .premiumLock_area {

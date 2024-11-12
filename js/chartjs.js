@@ -6397,17 +6397,18 @@ $(document).ready(function () {
                 title: {
                     text: ''
                 },
-                opposite: true,
-                gridLineWidth: 0,
-                lineColor: '#98ACD0',
-                lineWidth: 0,
+                opposite: true, // 두 번째 Y축을 차트의 반대편에 배치
+                gridLineWidth: 1,
+                showFirstLabel: false,
+                showFirstLabel: false,
+                showLastLabel: true,
                 labels: window.innerWidth <= 768 ? {
                     formatter: function () {
                         return this.value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
                     },
                     align: 'left',
                     style: {
-                        fontSize: 0
+                        fontSize: 10
                     }
                 } : {
                     formatter: function () {
@@ -6417,9 +6418,7 @@ $(document).ready(function () {
                     style: {
                         fontSize: 10
                     }
-                },
-                showFirstLabel: false,
-                showLastLabel: true
+                },                
             },
 
             xAxis: {

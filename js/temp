@@ -1485,7 +1485,7 @@ $(document).ready(function () {
         }
     });
     // 지수이동평균선(EMA) 모달 팝업
-    $('.v_signalStreng.globalStock #wrap #container .mainBox.financials .chart_box .sum_title.ema_guide, .v_signalStreng.globalStock #wrap #container .mainBox.financials .chart_box .sum_title.ema_guide .signal_guide').on('click', function () {    
+    $('.v_signalStreng.globalStock #wrap #container .mainBox.financials .chart_box .c_title + .ema_guide').on('click', function () {
         if ($(this).hasClass('no_signal')) {            
             return;
         } else {
@@ -1496,14 +1496,14 @@ $(document).ready(function () {
         }        
     });
     // 주가&EPS 모달 팝업
-    $('.v_signalStreng.globalStock #wrap #container .mainBox.financials .chart_box .sum_title.EPS_guide, .v_signalStreng.globalStock #wrap #container .mainBox.financials .chart_box .sum_title.EPS_guide + .signal_guide').on('click', function () {
+    $('.v_signalStreng.globalStock #wrap #container .mainBox.financials .chart_box .sum_title, .v_signalStreng.globalStock #wrap #container .mainBox.financials .chart_box .sum_title .signal_guide').on('click', function () {
         if ($(this).hasClass('no_signal')) {            
             return;
         } else {
             $('body').css('overflow', 'hidden');
             $('.modal').hide().removeClass('slideUp');
             $('.blocker').show();
-            $('.eps_pop01').show().addClass('slideUp');
+            $('.eps_pop02').show().addClass('slideUp');
         }        
     });
     // 매수신호 모달 팝업        

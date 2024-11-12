@@ -356,16 +356,17 @@
                         </div>
                     </div>
 
-                    <div class="chart_box">
+                    <div class="chart_box">                      
+
+                        <div id="containeroutline1_2_M3" class="BICchart_style"></div>
+                        <div id="containeroutline1_2_M6" class="BICchart_style" style="display:none"></div>
+                        <div id="containeroutline1_2_Y1" class="BICchart_style" style="display:none"></div>                        
+
                         <ul class="period_tabs">
                             <li class="active" data-target="#containeroutline1_2_M3">3개월</li>
                             <li data-target="#containeroutline1_2_M6">6개월</li>
                             <li data-target="#containeroutline1_2_Y1">1년</li>                            
                         </ul>
-
-                        <div id="containeroutline1_2_M3" class="BICchart_style"></div>
-                        <div id="containeroutline1_2_M6" class="BICchart_style" style="display:none"></div>
-                        <div id="containeroutline1_2_Y1" class="BICchart_style" style="display:none"></div>                        
                     </div>
                     <!-- //chart_box -->
 
@@ -431,33 +432,20 @@
                 </div>
 
                 <!-- 매출액, 영업이익, 주당순이익(EPS) 막대 차트 -->
-                <div class="mainBox financials">
+                <div class="mainBox financials chart_financials">
                     <div class="chart_box">
-                        <h3 class="c_title">주가 흐름은?</h3>                        
-                        <span class="signal_guide txt_guide"><img src="../img/txt_guide_us.svg" alt="가이드보기"></span>
-                        <span class="unit">* 단위 : 달러</span>
-                        <h4 class="sum_title">지수이동평균선(EMA)</h4>
+                        <h3 class="c_title">주가 흐름은?</h3>                                                
+                        <h4 class="sum_title ema_guide">지수이동평균선(EMA) <span class="signal_guide txt_guide"><img src="../img/txt_guide_us.svg" alt="가이드보기"></span> <span class="unit">* 단위 : 달러</span></h4>                        
                         <div id="ma_chart_container" class="financialsLine_style"></div>
-                        <div class="ma_period_wrap" style="text-align:center; margin:15px 0;">
-                            <button type="button" class="ma_period_btn active" data-period="1Y" style="padding:8px 20px; margin:0 5px; border:1px solid #ddd; border-radius:20px; background:#fff; font-size:13px;">1년</button>
-                            <button type="button" class="ma_period_btn" data-period="3Y" style="padding:8px 20px; margin:0 5px; border:1px solid #ddd; border-radius:20px; background:#fff; font-size:13px;">3년</button>
+                        <div class="ma_period_wrap">
+                            <button type="button" class="ma_period_btn active" data-period="1Y">1년</button>
+                            <button type="button" class="ma_period_btn" data-period="3Y">3년</button>
                         </div>
                         <span class="chart_capture" onclick="capture(event)"><img src="../img/chart_down.png" alt="차트 다운로드"></span>
                     </div>
-                    <style>
-                        .ma_period_btn.active {
-                            background-color: #3655d6 !important;
-                            color: #fff;
-                            border-color: #3655d6 !important;
-                        }
-                        .highcharts-credits {
-                            display: none;
-                        }
-                        </style>
+                    
                     <div class="chart_box">
-                        <h3 class="c_title">주가&EPS</h3>
-                        <span class="signal_guide txt_guide"><img src="../img/txt_guide_us.svg" alt="가이드보기"></span>
-                        <span class="unit">* 단위 : 달러</span>
+                        <h3 class="sum_title EPS_guide">주가&EPS <span class="signal_guid txt_guide"><img src="../img/txt_guide_us.svg" alt="가이드보기"></span> <span class="unit">* 단위 : 달러</span></h3>                                                
                         <div id="containerfinancials2_1" class="financialsLine_style"></div>
                         <span class="chart_capture" onclick="capture(event)"><img src="../img/chart_down.png"
                                 alt="차트 다운로드"></span>
@@ -852,6 +840,22 @@
                         EPS(Earnings Per Share): EPS는 기업의 순이익을 발행된 주식 수로 나눈 값으로, 주당순이익을 의미합니다. EPS는 기업의 수익성을 나타내는 지표로 활용됩니다. EPS가 높을수록
                         기업이 순이익을 주주들과 나눠갖는 비율이 높다는 것을 의미하며, 투자자들은 높은 EPS를 선호합니다.
                     </p>
+                </div>
+            </div>
+
+            <!-- 지수이동평균선(EMA) 차트 -->
+            <div class="modal ema_pop01">
+                <div class="pop_header">
+                    <h1 class="pop_title">지수이동평균선(EMA) 차트</h1>
+                    <span class="clse">
+                        <!--닫기-->
+                    </span>
+                </div>
+                <div class="pop_con">                    
+                    <p class="txt">이동평균선은 주가의 지지선과 저항선의 역할을 합니다µ</p>
+                    <p class="txt">단기 이동평균선이 장기 이동평균선을 상향 돌파 (골든크로스)하면 매수 시점, 하향 돌파(데드크로스)하면 매도 시점으로 판단합니다.<br>
+                    예를 들어 20일 이평선이 60일선을 상향 돌파하면 매수,하향 돌파하면 매도를 검토합니다.</p>   
+                    <p class="txt">초이스스탁의 이동평균선은 최근 주가 변동에 가중치를 두는 지수이동평균(EMA)을 적용해 현재 시장 동향을 더 잘 반영하며, 단순이동평균에 비해 추세 전환을 신속하게 포착할 수 있습니다.</p>                 
                 </div>
             </div>
 
