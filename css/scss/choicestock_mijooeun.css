@@ -233,7 +233,7 @@
   line-height: 1.6;
   letter-spacing: -0.5px;
   color: #808993;
-  font-size: 0.625rem;
+  font-size: 10px;
 }
 #footer .notice .dataLink {
   text-align: left;
@@ -241,7 +241,7 @@
   color: #848c96;
 }
 #footer .notice .dataLink a {
-  font-size: 0.625rem;
+  font-size: 10px;
   color: #848c96;
   text-decoration: underline;
 }
@@ -293,7 +293,7 @@
 #footer .copyright {
   margin-top: 20px;
   color: #808993;
-  font-size: 0.6875rem;
+  font-size: 11px;
   line-height: 1.55;
   letter-spacing: -0.55px;
   word-break: break-all;
@@ -301,7 +301,7 @@
 }
 #footer .copyright a {
   color: #808993;
-  font-size: 0.6875rem;
+  font-size: 11px;
 }
 #footer .copyright strong {
   font-weight: normal;
@@ -321,12 +321,12 @@
   align-items: center;
   gap: 0 8px;
   margin-top: 15px;
-  font-size: 0.6875rem;
+  font-size: 11px;
   color: #808993;
 }
 #footer .family_site a {
   position: relative;
-  font-size: 0.6875rem;
+  font-size: 11px;
   line-height: 1.55;
   letter-spacing: -0.55px;
   color: #808993;
@@ -29780,7 +29780,7 @@ table.tableRanking td {
   gap: 8px 8px;
 }
 
-.v_signalStreng.globalStock .sub_payment .payment_note {
+.v_signalStreng.globalStock .sub_payment .subscription-form .payment_note {
   display: flex;
   flex-direction: column;
   gap: 18px 10px;
@@ -30038,8 +30038,210 @@ table.tableRanking td {
   color: #fff;
 }
 
-.v_signalStreng.globalStock #wrap .modal.cardBox {
-  top: 15%;
+.v_signalStreng.globalStock #wrap .modal.cardBox.card_overseas_01 {
+  position: fixed; /* absolute로 설정하여 전체 페이지를 덮도록 설정 */
+  top: 25px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  max-width: calc(100% - 32px);
+  max-height: calc(100% - 48px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  background-color: #fff;
+  margin: 0 auto;
+  max-width: none;
+  border-radius: 16px;
+  display: none;
+}
+.v_signalStreng.globalStock #wrap .modal.cardBox.card_overseas_01 .caution_terms {
+  padding: 1px 0 0;
+  margin-bottom: 25px;
+  overflow: scroll;
+  max-height: 40vh;
+  /* 아이폰 SE (320x568) */
+  /* 아이폰 6/7/8 및 SE 2세대 (375x667) */
+  /* 아이폰 XR/11 (414x896) */
+}
+@media (min-width: 320px) and (max-width: 360px) {
+  .v_signalStreng.globalStock #wrap .modal.cardBox.card_overseas_01 .caution_terms {
+    max-height: 24vh;
+  }
+}
+@media (max-width: 320px) {
+  .v_signalStreng.globalStock #wrap .modal.cardBox.card_overseas_01 .caution_terms {
+    max-height: 22vh;
+  }
+}
+@media (min-width: 361px) and (max-width: 375px) {
+  .v_signalStreng.globalStock #wrap .modal.cardBox.card_overseas_01 .caution_terms {
+    max-height: 24vh;
+  }
+}
+@media (min-width: 376px) and (max-width: 414px) {
+  .v_signalStreng.globalStock #wrap .modal.cardBox.card_overseas_01 .caution_terms {
+    max-height: 28vh;
+  }
+}
+.v_signalStreng.globalStock #wrap .modal.cardBox.card_overseas_01 .form_wrap .payment_note {
+  display: flex;
+  flex-direction: column;
+  gap: 18px 10px;
+  margin-top: 8px;
+}
+.v_signalStreng.globalStock #wrap .modal.cardBox.card_overseas_01 .form_wrap .payment_note .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.v_signalStreng.globalStock #wrap .modal.cardBox.card_overseas_01 .form_wrap .payment_note .top .s_txt {
+  width: calc(100% - 34px);
+  font-weight: bold;
+  color: #333;
+  display: inline-block;
+  line-height: 1.42;
+  font-size: 14px;
+}
+.v_signalStreng.globalStock #wrap .modal.cardBox.card_overseas_01 .form_wrap .payment_note .top .agree_guide {
+  display: inline-block;
+  padding: 5px 0 0 34px;
+  line-height: 1.42;
+  font-size: 14px;
+  color: #6a727b;
+}
+.v_signalStreng.globalStock #wrap .modal.cardBox.card_overseas_01 .form_wrap .payment_note .top .show {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 12px;
+  box-sizing: border-box;
+  font-size: 0;
+  width: 7px;
+  height: 12px;
+}
+.v_signalStreng.globalStock #wrap .modal.cardBox.card_overseas_01 .form_wrap .payment_note .top .show::after {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  position: absolute;
+  top: 7px;
+  right: 5px;
+  border-top: 1px solid #6a727b;
+  border-right: 1px solid #6a727b;
+  transform: rotate(135deg);
+}
+.v_signalStreng.globalStock #wrap .modal.cardBox.card_overseas_01 .form_wrap .payment_note .top .show.rotated::after {
+  top: 10px;
+  transform: rotate(-40deg);
+}
+.v_signalStreng.globalStock #wrap .modal.cardBox.card_overseas_01 input.chk_label {
+  display: none;
+}
+.v_signalStreng.globalStock #wrap .modal.cardBox.card_overseas_01 input.chk_label + label {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0 8px;
+  position: relative;
+  cursor: pointer;
+}
+.v_signalStreng.globalStock #wrap .modal.cardBox.card_overseas_01 input.chk_label + label:before {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  border-radius: 50%;
+  border: 1px solid #c4c8cb;
+  background: url("/img/checked.svg") no-repeat center center;
+}
+.v_signalStreng.globalStock #wrap .modal.cardBox.card_overseas_01 input.chk_label:checked + label:before {
+  background-color: #404fc3;
+  background-image: url("/img/checked.svg");
+}
+.v_signalStreng.globalStock #wrap .modal.cardBox.card_overseas_01 .agree_chk {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding-left: 4px;
+  box-sizing: border-box;
+  display: none;
+}
+.v_signalStreng.globalStock #wrap .modal.cardBox.card_overseas_01 .agree_chk input.chk_label + label:before {
+  border-color: transparent;
+}
+.v_signalStreng.globalStock #wrap .modal.cardBox.card_overseas_01 .agree_chk input:checked + label:before {
+  content: "";
+  border-color: transparent;
+  background: url("/img/checked_ch.svg") no-repeat center 5px;
+}
+.v_signalStreng.globalStock #wrap .modal.cardBox.card_overseas_01 .agree_chk .s_txt {
+  display: inline-block;
+  line-height: 1.42;
+  font-size: 14px;
+  color: #6a727b;
+}
+.v_signalStreng.globalStock #wrap .modal.cardBox.card_overseas_01 .agree_chk .agree_txt {
+  width: 100%;
+  display: block;
+  padding-left: 30px;
+  padding-right: 16px;
+  box-sizing: border-box;
+  font-size: 0.75rem;
+  line-height: 1.42;
+  color: #939393;
+  word-break: normal;
+  word-wrap: break-word;
+}
+.v_signalStreng.globalStock #wrap .modal.cardBox.card_overseas_01 .agree_chk .agree_txt.agree_caution {
+  padding-top: 0;
+  color: #939393;
+}
+.v_signalStreng.globalStock #wrap .modal.cardBox.card_overseas_01 .agree_chk .agree_txt.agree_caution b {
+  font-weight: 600;
+  color: #939393;
+}
+.v_signalStreng.globalStock #wrap .modal.cardBox.card_overseas_01 .agree_chk.caution .age_link {
+  visibility: hidden;
+}
+.v_signalStreng.globalStock #wrap .modal.cardBox.card_overseas_01 .agree_chk .help_nicepay {
+  display: block;
+  margin-top: 0;
+  font-size: 0.8125rem;
+  line-height: 1.54;
+  text-align: left;
+  padding-top: 10px;
+  padding-left: 30px;
+  padding-bottom: 0;
+  color: #6a727b;
+}
+.v_signalStreng.globalStock #wrap .modal.cardBox.card_overseas_01 .agree_chk .help_nicepay span {
+  display: inline-block;
+  padding-left: 2px;
+  text-decoration: underline;
+  color: #404fc3;
+}
+.v_signalStreng.globalStock #wrap .modal.cardBox.card_overseas_01 .paypal_linkBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0 12px;
+  background-color: #F6C557;
+  border-radius: 9px;
+}
+.v_signalStreng.globalStock #wrap .modal.cardBox.card_overseas_01 .paypal_linkBtn span {
+  font-size: 0.8125rem;
+  font-weight: bold;
+  color: #333;
+}
+.v_signalStreng.globalStock #wrap .modal.cardBox.card_overseas_01 .paypal_linkBtn img {
+  display: inline-block;
+  width: auto;
+  height: 38px;
 }
 
 .v_signalStreng.globalStock #wrap .modal.cardBox .pop_header {
@@ -30085,19 +30287,20 @@ table.tableRanking td {
   gap: 12px;
   margin-top: 12px;
   margin-bottom: 12px;
-  padding: 14px 16px;
+  padding: 20px 16px;
   border-radius: 8px;
   background-color: #f7f8f9;
 }
 .v_signalStreng.globalStock #wrap .modal.cardBox .pop_con .paypal_link .payment {
   color: #6A727B;
-  font-size: 0.8125rem;
+  font-size: 1rem;
   font-weight: 400;
 }
 .v_signalStreng.globalStock #wrap .modal.cardBox .pop_con .paypal_link .payment .del_num {
   display: inline-block;
   padding: 0 4px 0 8px;
   position: relative;
+  font-size: 0.875rem;
 }
 .v_signalStreng.globalStock #wrap .modal.cardBox .pop_con .paypal_link .payment .del_img {
   position: absolute;
@@ -30108,6 +30311,7 @@ table.tableRanking td {
   padding-left: 4px;
   color: var(--mian_color1, #404FC3);
   font-weight: 700;
+  font-size: 0.875rem;
 }
 .v_signalStreng.globalStock #wrap .modal.cardBox .pop_con .paypal_link .txt {
   display: flex;
@@ -30497,7 +30701,7 @@ body.v_signalStreng {
 .list.recom * {
   margin: 0;
   padding: 0;
-  font-size: 1rem !important;
+  font-size: 16px !important;
   color: #fff !important;
   font-weight: normal !important;
 }
@@ -30505,7 +30709,7 @@ body.v_signalStreng {
 .list.recom * span,
 .list.recom * b,
 .list.recom * li {
-  font-size: 1rem !important;
+  font-size: 16px !important;
   color: #fff !important;
   font-weight: normal !important;
 }
@@ -30536,7 +30740,7 @@ body.v_signalStreng {
 .list.recom .per span,
 .list.recom .per b {
   font-weight: normal !important;
-  font-size: 0.8125rem !important;
+  font-size: 13px !important;
 }
 
 .v_signalStreng.globalStock .sub_search .tabs_5 {
@@ -35024,7 +35228,7 @@ body.v_signalStreng {
   color: #c7cbe9;
 }
 .globalStock .first_month_3300.md-modal #setting .pop_header .sub_top .period {
-  font-size: 1.75rem;
+  font-size: 28px;
   font-weight: bold;
   text-align: center;
   color: #404fc3;
@@ -35063,7 +35267,7 @@ body.v_signalStreng {
   box-sizing: border-box;
   border-radius: 50%;
   background-color: #404fc3;
-  font-size: 0.6875rem;
+  font-size: 11px;
   text-align: center;
   color: #161c40;
 }
@@ -35260,7 +35464,7 @@ body.v_signalStreng {
 .globalStock .service_wrap .box.premium_box .title_box h1 {
   width: 90%;
   max-width: 420px;
-  font-size: 1.875rem;
+  font-size: 30px;
   font-weight: bold;
   line-height: 1.4;
   color: #c7cbe9;
@@ -35341,7 +35545,7 @@ body.v_signalStreng {
   line-height: 1.4;
   color: #c7cbe9;
   font-weight: normal;
-  font-size: 0.96875rem;
+  font-size: 0.9375rem;
 }
 .globalStock .service_wrap .box.premium_box .benefits_guide .title_box h2 b {
   color: #7983d5;
@@ -35393,7 +35597,7 @@ body.v_signalStreng {
 .globalStock .service_wrap .box .tabsArea li {
   width: auto;
   border: none;
-  font-size: 1.0625rem;
+  font-size: 1rem;
   font-weight: bold;
   line-height: 1.35;
   color: #d3d3d3;
@@ -35420,7 +35624,7 @@ body.v_signalStreng {
 .globalStock .service_wrap .box .title_box h1 {
   width: 90%;
   max-width: 420px;
-  font-size: 1.875rem;
+  font-size: 30px;
   font-weight: bold;
   line-height: 1.4;
   color: #333;
@@ -35584,7 +35788,7 @@ body.v_signalStreng {
   width: 45px;
   height: 45px;
   box-sizing: border-box;
-  font-size: 0.875rem;
+  font-size: 14px;
   font-weight: bold;
   line-height: 1.25;
   text-align: center;
@@ -37136,13 +37340,11 @@ body.v_signalStreng {
   gap: 12px;
   margin-top: 12px;
   margin-bottom: 12px;
-  padding: 14px 16px;
   border-radius: 8px;
   background-color: #f7f8f9;
 }
 .v_signalStreng.globalStock #wrap .modal.cardBox .pop_con .paypal_link .payment {
   color: #6A727B;
-  font-size: 0.8125rem;
   font-weight: 400;
 }
 .v_signalStreng.globalStock #wrap .modal.cardBox .pop_con .paypal_link .payment .del_num {

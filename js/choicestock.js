@@ -1441,10 +1441,10 @@ $(document).ready(function () {
         $('.blocker').show();
         $('.agreePopBox.box_04').show().addClass('slideUp');
     });
-    $('.v_signalStreng.globalStock .sub_payment span.card_overseas').on('click', function () {
+    $('.v_signalStreng.globalStock .sub_payment span.card_overseas').on('click', function () {        
         $('.modal').hide().removeClass('slideUp');
         $('.blocker').show();
-        $('.cardBox.card_overseas_01').show().addClass('slideUp');
+        $('.cardBox.card_overseas_01').css('display', 'flex');
     });
     // 미국주식창 사용안함 팝업
     $('.pop_secession').on('click', function () {
@@ -1496,7 +1496,7 @@ $(document).ready(function () {
         }        
     });
     // 주가&EPS 모달 팝업
-    $('.v_signalStreng.globalStock #wrap #container .mainBox.financials .chart_box .sum_title.EPS_guide, .v_signalStreng.globalStock #wrap #container .mainBox.financials .chart_box .sum_title.EPS_guide + .signal_guide').on('click', function () {
+    $('.v_signalStreng.globalStock #wrap #container .mainBox.financials .chart_box .sum_title.EPS_guide, .v_signalStreng.globalStock #wrap #container .mainBox.financials .chart_box .sum_title.EPS_guide .signal_guid').on('click', function () {
         if ($(this).hasClass('no_signal')) {            
             return;
         } else {
@@ -1536,16 +1536,28 @@ $(document).ready(function () {
     });
 
     // 결제 이용약관 모달 팝업        
-    $('.v_signalStreng.globalStock .refund_terms').on('click', function () {
+    $('.v_signalStreng.globalStock .refund_terms').on('click', function () {        
         if ($(this).hasClass('no_signal')) {            
             return;
         } else {
-            $('body').css('overflow', 'hidden');
             $('.modal').hide().removeClass('slideUp');
             $('.blocker').show();
             $('.refundTerms_pop01').show().addClass('slideUp');
         }        
     });
+    $('.v_signalStreng.globalStock .modal.cardBox .refund_terms').on('click', function () {        
+        if ($(this).hasClass('no_signal')) {            
+            return;
+        } else {
+            $('.blocker').show().addClass('clse_secondPop');
+            $('.cardBox.card_overseas_01').hide();
+            $('.refundTerms_pop01').show().addClass('slideUp secondPop');
+        }        
+    });
+    $(document).on('click', '.secondPop.refundTerms_pop01 .pop_header .clse, .blocker.clse_secondPop', function () {                        
+        $('.blocker').show().removeClass('clse_secondPop');
+        $('.cardBox.card_overseas_01').show();        
+    });    
 
     // 툴팁 - 지금살까?
     $('#container .mainBox.attr .adequateArea .listWrap .mid .charm_num .signal_guide').on('click', function () {

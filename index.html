@@ -135,14 +135,21 @@
                                 'img/banner/event_mainBtm_240123.png?v=240920',
                                 'img/banner/event_mainBtm_240123_v.png?v=240920' // 두 번째 이미지 경로
                             ];
-
+        
                             var randomIndex = Math.floor(Math.random() * images.length);
                             var imageUrl = images[randomIndex];
-
+        
                             var divElement = document.querySelector('.info_txt');
                             divElement.style.background = "url('" + imageUrl + "') no-repeat center 0";
+        
+                            // 버튼 텍스트 변경
+                            var buttonElement = document.querySelector('.btn_area a');
+                            if (randomIndex === 0) {
+                                buttonElement.innerHTML = '프리미엄 첫달 <b>1,000원!</b>';
+                            } else if (randomIndex === 1) {
+                                buttonElement.innerHTML = '첫 달 <b>천원</b>에 알림받기';
+                            }
                         });
-
                     </script>
                     <div class="btn_area">
                         <a href="../payment/step01.html" class="btn payment_1000">프리미엄 첫달 <b>1,000원!</b></a>

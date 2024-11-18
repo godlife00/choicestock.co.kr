@@ -1678,7 +1678,7 @@
 			.sub_top {
 				.h2_title {
 					padding-top: 50px;
-					font-size: pxTorem(18px);
+					font-size: 1.125rem;
 					font-weight: bold;
 					line-height: 1.17;
 					text-align: center;
@@ -1686,7 +1686,7 @@
 				}
 
 				.period {
-					font-size: pxTorem(28px);
+					font-size: 28px;
 					font-weight: bold;
 					text-align: center;
 					color: #404fc3;
@@ -1712,7 +1712,7 @@
 					display: flex;
 					align-items: center;
 					gap: 0 7px;
-					font-size: pxTorem(14px);
+					font-size: 0.875rem;
 					line-height: 1.14;
 					color: #c7cbe9;
 
@@ -1730,7 +1730,7 @@
 						box-sizing: border-box;
 						border-radius: 50%;
 						background-color: #404fc3;
-						font-size: pxTorem(11px);
+						font-size: 11px;
 						text-align: center;
 						color: #161c40;
 					}
@@ -1754,7 +1754,7 @@
 				border: none;
 				border-radius: 8px;
 				background-color: #404fc3;
-				font-size: pxTorem(16px);
+				font-size: 1rem;
 				line-height: 1.19;
 				text-align: center;
 				color: #fff;

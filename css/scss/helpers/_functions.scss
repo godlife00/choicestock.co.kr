@@ -1,6 +1,8 @@
 // 함수들
 
 // px 값을 rem 단위로 변환하는 함수
-@function pxTorem($px-value, $base-font-size: 16px) {
-    @return ($px-value / $base-font-size) * 1rem;
-}
+// @use 'sass:math';
+
+// @function pxTorem($px-value, $base-font-size: 16px) {
+//     @return math.div($px-value, $base-font-size) * 1rem;
+// }

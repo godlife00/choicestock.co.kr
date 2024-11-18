@@ -13535,7 +13535,7 @@ table.tableRanking td {
 				text-overflow: ellipsis;
 				white-space: nowrap;
 				text-align: center;
-				font-size: pxTorem(12px) !important;
+				font-size: 0.75rem !important;
 				color: rgb(147, 147, 147) !important;
 				fill: rgb(147, 147, 147) !important;
 			}
@@ -16525,7 +16525,7 @@ table.tableRanking td {
 
 	.title {
 		// margin-top: 25px;
-		font-size: pxTorem(16px);
+		font-size: 1rem;
 		color: #333;
 		font-weight: bold;
 	}
@@ -26427,7 +26427,7 @@ table.tableRanking td {
 }
 
 .premium_applybtn a {
-	font-size: pxTorem(16px);
+	font-size: 1rem;
 	font-weight: bold;
 	line-height: 1.19;
 	color: #fff;
@@ -30576,7 +30576,7 @@ table.tableRanking td {
 	gap: 8px 8px;
 }
 
-.v_signalStreng.globalStock .sub_payment .payment_note {
+.v_signalStreng.globalStock .sub_payment .subscription-form .payment_note {
 	display: flex;
 	flex-direction: column;
 	gap: 18px 10px;
@@ -30849,10 +30849,227 @@ table.tableRanking td {
 	color: #fff;
 }
 
-.v_signalStreng.globalStock .modalBox {}
+.v_signalStreng.globalStock .modalBox {
 
-.v_signalStreng.globalStock #wrap .modal.cardBox {
-	top: 15%;
+}
+
+.v_signalStreng.globalStock #wrap .modal.cardBox {	
+	&.card_overseas_01 {
+		position: fixed; /* absolute로 설정하여 전체 페이지를 덮도록 설정 */
+		top: 25px;
+		left: 50%;
+		transform: translate(-50%, 0%);
+		max-width: calc(100% - 32px);
+		max-height: calc(100% - 48px);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;		
+		box-sizing: border-box;	
+		background-color: #fff;
+		margin: 0 auto; 
+		max-width: none;		
+		border-radius: 16px;
+		display: none;
+		
+		.caution_terms {			
+			padding: 1px 0 0;
+			margin-bottom: 25px;
+			// border-radius: 12px;
+			// background-color: #f7f8f9;
+			overflow: scroll;
+			max-height: 40vh;
+
+			@media (min-width: 320px) and (max-width: 360px) {
+				max-height: 24vh;				
+			}
+			/* 아이폰 SE (320x568) */
+			@media (max-width: 320px) {
+				max-height: 22vh;				
+			}
+			/* 아이폰 6/7/8 및 SE 2세대 (375x667) */
+			@media (min-width: 361px) and (max-width: 375px) {
+				max-height: 24vh;
+			}
+			/* 아이폰 XR/11 (414x896) */
+			@media (min-width: 376px) and (max-width: 414px) {
+				max-height: 28vh;
+			}
+		}
+		.form_wrap .payment_note {
+			display: flex;
+			flex-direction: column;
+			gap: 18px 10px;
+			margin-top: 8px;
+			.top {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				gap: 10px;
+				.s_txt {
+					width: calc(100% - 34px);				
+					font-weight: bold;
+					color: #333;
+					display: inline-block;
+					line-height: 1.42;
+					font-size: 14px;
+					
+				}
+				.agree_guide {
+					display: inline-block;
+					padding: 5px 0 0 34px;
+					line-height: 1.42;
+					font-size: 14px;
+					color: #6a727b;
+				}
+				.show {
+					cursor: pointer;
+					position: relative;
+					padding: 12px 12px;
+					box-sizing: border-box;
+					font-size: 0;
+					width: 7px;
+					height: 12px;					
+					&::after {
+						content: "";
+						display: inline-block;
+						width: 6px;
+						height: 6px;
+						position: absolute;
+						top: 7px;
+						right: 5px;
+						border-top: 1px solid #6a727b;
+						border-right: 1px solid #6a727b;
+						transform: rotate(135deg);
+					}
+					&.rotated::after {
+						top: 10px;
+						transform: rotate(-40deg);
+					}
+				}				
+			} 
+		}
+		input.chk_label {
+			display: none;
+			+ label {
+				display: flex;
+				align-items: center;
+				justify-content: flex-start;
+				gap: 0 8px;
+				position: relative;
+				cursor: pointer;
+				
+				&:before {
+					content: "";
+					display: block;
+					width: 24px;
+					height: 24px;
+					line-height: 24px;
+					border-radius: 50%;
+					border: 1px solid #c4c8cb;
+					background: url('/img/checked.svg') no-repeat center center;
+				}
+			}
+			&:checked + label:before {
+				background-color: #404fc3;
+				background-image: url('/img/checked.svg');
+			}
+		}		
+		.agree_chk  {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			gap: 10px;
+			padding-left: 4px;
+			box-sizing: border-box;
+			display: none;
+
+			input.chk_label {				
+				+ label:before {
+					border-color: transparent;
+				}			
+			}
+			input:checked + label:before {
+				content: "";
+				border-color: transparent;
+				background: url('/img/checked_ch.svg') no-repeat center 5px;
+			}
+
+			
+			.s_txt {
+				display: inline-block;
+				line-height: 1.42;
+				font-size: 14px;
+				color: #6a727b;
+			}
+
+			.agree_txt {
+				width: 100%;
+				display: block;
+				padding-left: 30px;
+				padding-right: 16px;
+				box-sizing: border-box;
+				font-size: 0.75rem;
+				line-height: 1.42;
+				color: #939393;
+				word-break: normal;
+				word-wrap: break-word;				
+				&.agree_caution {					
+					padding-top: 0;
+					color: #939393;
+					b {
+						font-weight: 600;
+						color: #939393;
+					}
+				}
+			}
+
+			&.caution {
+				.age_link {
+					visibility: hidden;
+				}
+			}
+
+			.help_nicepay {
+				display: block;
+				margin-top: 0;
+				font-size: 0.8125rem;
+				line-height: 1.54;
+				text-align: left;
+				padding-top: 10px;
+				padding-left: 30px;
+				padding-bottom: 0;
+				color: #6a727b;
+			}
+
+			.help_nicepay span {
+				display: inline-block;
+				padding-left: 2px;
+				text-decoration: underline;
+				color: #404fc3;
+			}
+
+		}
+		.paypal_linkBtn {			
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			gap: 0 12px;
+			background-color: #F6C557;						
+			border-radius: 9px;			
+			span {				
+				font-size: 0.8125rem;
+				font-weight: bold;
+				color: #333;				
+			}
+			img {				
+				display: inline-block;
+				width: auto;
+				height: 38px;
+			}
+
+		}
+	}
 }
 
 .v_signalStreng.globalStock #wrap .modal.cardBox .pop_header {
@@ -30900,18 +31117,19 @@ table.tableRanking td {
 	gap: 12px;
 	margin-top: 12px;
     margin-bottom: 12px;
-    padding: 14px 16px;
+    padding: 20px 16px;
     border-radius: 8px;
     background-color: #f7f8f9;    
 	.payment {		
 		color: #6A727B;		
-		font-size: 0.8125rem;
+		font-size: 1rem;
 		font-weight: 400;		
 		
 		.del_num {
 			display: inline-block;
 			padding: 0 4px 0 8px;
 			position: relative;
+			font-size: 0.875rem;
 		}	
 		.del_img {
 			position: absolute;
@@ -30922,6 +31140,7 @@ table.tableRanking td {
 			padding-left: 4px;
 			color: var(--mian_color1, #404FC3);						
 			font-weight: 700;			
+			font-size: 0.875rem;
 		}
 	}
 	.txt {
@@ -31343,7 +31562,7 @@ body.v_signalStreng {
 	* {
 		margin: 0;
 		padding: 0;
-		font-size: pxTorem(16px) !important;
+		font-size: 16px !important;
 		color: #fff !important;
 		font-weight: normal !important;
 
@@ -31351,7 +31570,7 @@ body.v_signalStreng {
 		span,
 		b,
 		li {
-			font-size: pxTorem(16px) !important;
+			font-size: 16px !important;
 			color: #fff !important;
 			font-weight: normal !important;
 		}
@@ -31389,7 +31608,7 @@ body.v_signalStreng {
 		span,
 		b {
 			font-weight: normal !important;
-			font-size: pxTorem(13px) !important;
+			font-size: 13px !important;
 		}
 	}
 
