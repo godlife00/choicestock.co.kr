@@ -33529,11 +33529,36 @@ body.v_signalStreng {
   border-right: 1px solid #404fc3;
 }
 
+.btn_schRecipeSet {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0 3px;
+  position: relative;
+  margin-top: 23px;
+  padding: 3px 10px;
+  border-radius: 8px;
+  border: solid 1px #9c99a3;
+  background-color: #fff;
+  font-size: 0.8125rem;
+  line-height: 1.46;
+  letter-spacing: -0.65px !important;
+  color: #7b7881;
+}
+.btn_schRecipeSet::before {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background: url("/img/icon_schSet.svg") no-repeat center center;
+  background-size: contain;
+}
+
 .class_filter {
   display: flex;
   flex-wrap: nowrap;
   gap: 3px;
-  margin: 15px auto 0;
+  margin: 8px auto 0;
   box-sizing: border-box;
 }
 .class_filter label {
@@ -33568,10 +33593,10 @@ body.v_signalStreng {
 }
 .class_filter select {
   cursor: pointer;
-  padding: 6px 6px;
+  padding: 8px 6px;
   padding-right: 20px;
   box-sizing: border-box;
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   border: 1px solid #ddd;
   border-radius: 4px;
   background-color: #fff;
@@ -33871,7 +33896,8 @@ body.v_signalStreng {
 .v_signalStreng.globalStock #wrap .modal.payment_cacl .pop_header,
 .v_signalStreng.globalStock #wrap .modal.refundTerms_pop01 .pop_header,
 .v_signalStreng.globalStock #wrap .modal.eps_pop01 .pop_header,
-.v_signalStreng.globalStock #wrap .modal.ema_pop01 .pop_header {
+.v_signalStreng.globalStock #wrap .modal.ema_pop01 .pop_header,
+.v_signalStreng.globalStock #wrap .modal.setting_pop02 .pop_header {
   background-color: #fff;
   padding: 24px 15px;
   border: none;
@@ -33884,7 +33910,8 @@ body.v_signalStreng {
 .v_signalStreng.globalStock #wrap .modal.payment_cacl .pop_header .pop_title,
 .v_signalStreng.globalStock #wrap .modal.refundTerms_pop01 .pop_header .pop_title,
 .v_signalStreng.globalStock #wrap .modal.eps_pop01 .pop_header .pop_title,
-.v_signalStreng.globalStock #wrap .modal.ema_pop01 .pop_header .pop_title {
+.v_signalStreng.globalStock #wrap .modal.ema_pop01 .pop_header .pop_title,
+.v_signalStreng.globalStock #wrap .modal.setting_pop02 .pop_header .pop_title {
   justify-content: center;
   font-size: 1.25rem;
   line-height: 1.14;
@@ -33912,7 +33939,9 @@ body.v_signalStreng {
 .v_signalStreng.globalStock #wrap .modal.eps_pop01 .pop_header .clse::before,
 .v_signalStreng.globalStock #wrap .modal.eps_pop01 .pop_header .clse::after,
 .v_signalStreng.globalStock #wrap .modal.ema_pop01 .pop_header .clse::before,
-.v_signalStreng.globalStock #wrap .modal.ema_pop01 .pop_header .clse::after {
+.v_signalStreng.globalStock #wrap .modal.ema_pop01 .pop_header .clse::after,
+.v_signalStreng.globalStock #wrap .modal.setting_pop02 .pop_header .clse::before,
+.v_signalStreng.globalStock #wrap .modal.setting_pop02 .pop_header .clse::after {
   width: 2px;
   background-color: #333;
 }
@@ -34943,7 +34972,7 @@ body.v_signalStreng {
   margin: 25px auto;
 }
 
-.modal.slideUp.eps_pop01, .modal.slideUp.ema_pop01 {
+.modal.slideUp.eps_pop01, .modal.slideUp.ema_pop01, .modal.slideUp.setting_pop02 {
   margin: 0 auto;
   box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.1);
   border-radius: 0;
@@ -34961,11 +34990,11 @@ body.v_signalStreng {
   background: #fff;
   transition: all 0s ease-in-out;
 }
-.modal.slideUp.eps_pop01 .pop_header .pop_title, .modal.slideUp.ema_pop01 .pop_header .pop_title {
+.modal.slideUp.eps_pop01 .pop_header .pop_title, .modal.slideUp.ema_pop01 .pop_header .pop_title, .modal.slideUp.setting_pop02 .pop_header .pop_title {
   font-size: 1.125rem;
   justify-content: flex-start !important;
 }
-.modal.slideUp.eps_pop01 .pop_con, .modal.slideUp.ema_pop01 .pop_con {
+.modal.slideUp.eps_pop01 .pop_con, .modal.slideUp.ema_pop01 .pop_con, .modal.slideUp.setting_pop02 .pop_con {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -34974,7 +35003,7 @@ body.v_signalStreng {
   margin-bottom: 30px;
   overflow-y: auto;
 }
-.modal.slideUp.eps_pop01 .pop_con .sum_txt, .modal.slideUp.ema_pop01 .pop_con .sum_txt {
+.modal.slideUp.eps_pop01 .pop_con .sum_txt, .modal.slideUp.ema_pop01 .pop_con .sum_txt, .modal.slideUp.setting_pop02 .pop_con .sum_txt {
   font-size: 0.9375rem;
   line-height: 1.43;
   color: #6A727B;
@@ -34983,7 +35012,7 @@ body.v_signalStreng {
   word-wrap: break-word;
   word-break: break-all;
 }
-.modal.slideUp.eps_pop01 .pop_con .txt, .modal.slideUp.ema_pop01 .pop_con .txt {
+.modal.slideUp.eps_pop01 .pop_con .txt, .modal.slideUp.ema_pop01 .pop_con .txt, .modal.slideUp.setting_pop02 .pop_con .txt {
   position: relative;
   font-size: 0.9375rem;
   line-height: 1.43;
@@ -34993,7 +35022,7 @@ body.v_signalStreng {
   word-wrap: break-word;
   word-break: break-all;
 }
-.modal.slideUp.eps_pop01 .pop_con .txt::before, .modal.slideUp.ema_pop01 .pop_con .txt::before {
+.modal.slideUp.eps_pop01 .pop_con .txt::before, .modal.slideUp.ema_pop01 .pop_con .txt::before, .modal.slideUp.setting_pop02 .pop_con .txt::before {
   content: "";
   display: inline-block;
   position: absolute;
@@ -35329,6 +35358,135 @@ body.v_signalStreng {
   color: #06c;
   font-size: 0.8215rem;
   text-decoration: none;
+}
+
+.modal.setting_pop02 .pop_con {
+  padding-top: 0;
+}
+.modal.setting_pop02 .pop_con span.title {
+  margin-top: 15px;
+  display: block;
+  font-size: 0.8125rem;
+  font-weight: bold;
+  line-height: 1.31;
+  color: #333;
+}
+.modal.setting_pop02 .pop_con span.title:first-of-type {
+  margin-top: 0;
+}
+.modal.setting_pop02 .pop_con .filter_box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px 24px;
+  margin-bottom: 8px;
+}
+.modal.setting_pop02 .pop_con .filter_box span.title {
+  width: 100%;
+}
+.modal.setting_pop02 .pop_con .filter_box .class_filter {
+  flex: 3;
+  flex-wrap: wrap;
+  gap: 8px 3px;
+}
+.modal.setting_pop02 .pop_con .filter_box .class_filter .selectBoxList {
+  max-width: none;
+  width: 100%;
+}
+.modal.setting_pop02 .pop_con .filter_box .class_filter:nth-child(2) {
+  flex: 2;
+}
+.modal.setting_pop02 .pop_con .attract_table {
+  width: 100%;
+  margin-top: 5px;
+}
+.modal.setting_pop02 .pop_con .attract_table:first-child {
+  margin-top: 0;
+}
+.modal.setting_pop02 .pop_con .attract_table td {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0 8px;
+  padding: 8px 0;
+  padding-right: 20px;
+}
+.modal.setting_pop02 .pop_con .attract_table td:last-child {
+  padding-right: 0;
+}
+.modal.setting_pop02 .pop_con .attract_table td label {
+  position: relative;
+  cursor: pointer;
+  padding-left: 30px;
+  font-size: 0.875rem;
+  color: #333;
+}
+.modal.setting_pop02 .pop_con .attract_table td input {
+  visibility: hidden;
+  position: absolute;
+}
+.modal.setting_pop02 .pop_con .attract_table td input:checked + label {
+  font-size: 0.875rem;
+  font-weight: bold;
+  color: #333;
+}
+.modal.setting_pop02 .pop_con .attract_table td input[type=radio] + label:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -1px;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #ccc; /* 원의 테두리 */
+  border-radius: 50%;
+  background-color: #fff; /* 원의 배경 색상 */
+  box-sizing: border-box;
+}
+.modal.setting_pop02 .pop_con .attract_table td input[type=radio]:checked + label:before {
+  border-color: #5145a8; /* 선택된 상태의 테두리 색상 */
+  background-color: #5145a8; /* 선택된 상태의 배경 색상 */
+}
+.modal.setting_pop02 .pop_footer {
+  padding: 15px 0 0;
+}
+.modal.setting_pop02 .pop_footer p {
+  margin-top: 8px;
+  font-size: clamp(13px, 1.8vw, 15px);
+  line-height: 1.4;
+  color: #7B7881;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+.modal.setting_pop02 .pop_footer .sort {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 8px 6px;
+  margin-top: 8px;
+}
+.modal.setting_pop02 .pop_footer .sort li {
+  display: flex;
+  align-items: center;
+  padding: 10px 8px;
+  border-radius: 8px;
+  border: solid 1px #e0e4e9;
+  line-height: normal;
+}
+.modal.setting_pop02 .pop_footer .sort li a {
+  font-size: 13px;
+  text-align: center;
+  color: #333;
+}
+.modal.setting_pop02 .pop_footer .sort li.active {
+  border-color: #5145a8;
+  color: #5145a8;
+}
+.modal.setting_pop02 .pop_footer .btnArea.edtBtn a {
+  font-size: 0.9375rem;
 }
 
 .loading-modal {

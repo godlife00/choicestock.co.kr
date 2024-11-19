@@ -34558,12 +34558,39 @@ body.v_signalStreng {
 	}
 }
 
+// 필터 정렬 버튼
+.btn_schRecipeSet {
+	cursor: pointer;
+	display: inline-flex;
+	align-items: center;
+	gap: 0 3px;
+	position: relative;
+	margin-top: 23px;
+	padding: 3px 10px;
+	border-radius: 8px;
+	border: solid 1px #9c99a3;
+	background-color: #fff;
+	font-size: 0.8125rem;
+	line-height: 1.46;
+	letter-spacing: -0.65px !important;
+	color: #7b7881;
+
+	&::before {
+		content: '';
+		display: inline-block;
+		width: 12px;
+		height: 12px;
+		background: url('/img/icon_schSet.svg') no-repeat center center;
+		background-size: contain;
+	}
+}
+
 // 산업 분류 2단계 셀렉트 박스
 .class_filter {
 	display: flex;	
 	flex-wrap: nowrap;
 	gap: 3px;
-	margin: 15px auto 0;					
+	margin: 8px auto 0;					
 	box-sizing: border-box;
 	label {
 		width: 100%;
@@ -34598,10 +34625,10 @@ body.v_signalStreng {
 
 	select {				
 		cursor: pointer;
-		padding: 6px 6px;
+		padding: 8px 6px;
 		padding-right: 20px;
 		box-sizing: border-box;
-		font-size: 0.75rem;		
+		font-size: 	0.875rem;
 		border: 1px solid #ddd;
 		border-radius: 4px;		
 		background-color: #fff;

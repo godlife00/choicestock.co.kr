@@ -273,7 +273,8 @@
 .v_signalStreng.globalStock #wrap .modal.payment_cacl .pop_header,
 .v_signalStreng.globalStock #wrap .modal.refundTerms_pop01 .pop_header,
 .v_signalStreng.globalStock #wrap .modal.eps_pop01 .pop_header,
-.v_signalStreng.globalStock #wrap .modal.ema_pop01 .pop_header {
+.v_signalStreng.globalStock #wrap .modal.ema_pop01 .pop_header,
+.v_signalStreng.globalStock #wrap .modal.setting_pop02 .pop_header {
 	background-color: #fff;
 	padding: 24px 15px;
 	border: none;
@@ -286,7 +287,8 @@
 .v_signalStreng.globalStock #wrap .modal.payment_cacl .pop_header .pop_title,
 .v_signalStreng.globalStock #wrap .modal.refundTerms_pop01 .pop_header .pop_title,
 .v_signalStreng.globalStock #wrap .modal.eps_pop01 .pop_header .pop_title,
-.v_signalStreng.globalStock #wrap .modal.ema_pop01 .pop_header .pop_title {
+.v_signalStreng.globalStock #wrap .modal.ema_pop01 .pop_header .pop_title,
+.v_signalStreng.globalStock #wrap .modal.setting_pop02 .pop_header .pop_title {
 	justify-content: center;
 	font-size: 1.25rem;
 	line-height: 1.14;
@@ -315,7 +317,9 @@
 .v_signalStreng.globalStock #wrap .modal.eps_pop01 .pop_header .clse::before,
 .v_signalStreng.globalStock #wrap .modal.eps_pop01 .pop_header .clse::after,
 .v_signalStreng.globalStock #wrap .modal.ema_pop01 .pop_header .clse::before,
-.v_signalStreng.globalStock #wrap .modal.ema_pop01 .pop_header .clse::after {
+.v_signalStreng.globalStock #wrap .modal.ema_pop01 .pop_header .clse::after,
+.v_signalStreng.globalStock #wrap .modal.setting_pop02 .pop_header .clse::before,
+.v_signalStreng.globalStock #wrap .modal.setting_pop02 .pop_header .clse::after {
 	width: 2px;
 	background-color: #333;
 }
@@ -1371,7 +1375,7 @@
 	margin: 25px auto;
 }
 
-.modal.slideUp.eps_pop01,.modal.slideUp.ema_pop01 {
+.modal.slideUp.eps_pop01,.modal.slideUp.ema_pop01,.modal.slideUp.setting_pop02 {
 	// max-width: 480px;
 	margin: 0 auto;
 	box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.1);
@@ -1808,6 +1812,142 @@
 	}
 }
 
+.modal.setting_pop02 {            
+    .pop_con {
+		padding-top: 0;		
+        span.title {
+            margin-top: 15px;
+            display: block;
+            font-size: 0.8125rem;
+            font-weight: bold;
+            line-height: 1.31;            
+            color: #333;
+            &:first-of-type {
+                margin-top: 0;
+            }
+        }
+		.filter_box {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: flex-start;
+			align-items: center;
+			gap: 8px 24px;
+			margin-bottom: 8px;
+			span.title {
+				width: 100%;
+			}
+			.class_filter {				
+				flex: 3;					
+				flex-wrap: wrap;
+				gap: 8px 3px;
+				.selectBoxList {
+					max-width: none;					
+					width: 100%;
+				}
+				&:nth-child(2) {
+					flex: 2;
+				}
+			}
+		}
+        .attract_table {
+            width: 100%;
+            margin-top: 5px;
+            &:first-child {
+                margin-top: 0;
+            }
+            td {
+                display: inline-flex;
+                align-items: center;
+                justify-content: flex-start;
+                gap: 0 8px;
+                padding: 8px 0;             
+                padding-right: 20px;   
+                &:last-child {
+                    padding-right: 0;                    
+                }
+                label {
+                    position: relative;
+                    cursor: pointer;
+                    padding-left: 30px;
+                    font-size: 0.875rem;
+                    color: #333;                
+                }
+                input {
+                    visibility: hidden;
+                    position: absolute;
+                }
+                input:checked + label {                    
+                    font-size: 0.875rem;
+                    font-weight: bold;
+                    color: #333;
+                }                
+                input[type="radio"] + label:before {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    top: -1px;
+                    width: 20px;
+                    height: 20px;
+                    border: 1px solid #ccc; /* 원의 테두리 */
+                    border-radius: 50%;
+                    background-color: #fff; /* 원의 배경 색상 */
+                    box-sizing: border-box;
+                }                
+                input[type="radio"]:checked + label:before {
+                    border-color: #5145a8; /* 선택된 상태의 테두리 색상 */
+                    background-color: #5145a8; /* 선택된 상태의 배경 색상 */
+                }
+
+            }
+        }
+    }
+    .pop_footer {        
+        padding: 15px 0 0;
+		p {
+			margin-top: 8px;
+			font-size: clamp(13px, 1.8vw, 15px);
+			line-height: 1.4;
+			color: #7B7881;
+			word-break: break-all;
+			word-wrap: break-word;
+		}
+        .sort {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-items: stretch;
+            gap: 8px 6px;
+            margin-top: 8px;			
+            li {
+                display: flex;
+                align-items: center;
+                padding: 10px 8px;
+                border-radius: 8px;
+                border: solid 1px #e0e4e9;
+				line-height: normal;
+                a {
+                    font-size: 13px;                    
+                    text-align: center;
+                    color: #333;
+                }
+                &.active {
+                    border-color: #5145a8;
+                    color: #5145a8;
+                }
+            }			
+        }       
+		.btnArea.edtBtn {
+			a {
+				font-size: 0.9375rem;
+			}
+		} 
+    }
+
+    
+}
+
 // 나이스페이 결제 중 보이는 로딩 팝업
 .loading-modal {
 	display: none;
@@ -1870,4 +2010,5 @@
 		height: 120px;
 	}
 }
+
 
