@@ -343,7 +343,13 @@
 
 	@media (max-width: 374px) {
 		letter-spacing: -1px;
-	}
+	}	
+}
+.v_signalStreng.globalStock #wrap .modal.signal_pop01 .pop_con .h2_txt {	
+	font-size: 0.875rem;
+    font-weight: bold;
+    letter-spacing: normal;
+    color: #333;
 }
 
 .v_signalStreng.globalStock #wrap .modal.signal_pop01 .pop_con .txt b {
@@ -400,6 +406,37 @@
 
 .v_signalStreng.globalStock #wrap .modal.signal_pop01 .pop_con {
 	height: 100%;
+	.signal_header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;	
+		margin-top: 16px;
+	}
+	.chart_guide {
+		position: relative;
+		font-size: 0.75rem;
+		line-height: 1.3;
+		font-weight: 400;
+		color: #969ea7;
+		width: 100%;
+		padding-left: 24px;
+		padding-right: 2px;
+		margin-top: 16px;
+		box-sizing: border-box;
+		word-break: break-all;
+		word-wrap: break-word;
+		&::before {
+			content: "";
+			position: absolute;
+			left: 13px;
+			top: 6px;
+			display: inline-block;
+			width: 4px;
+			height: 4px;
+			border-radius: 50%;
+			background: #c7cbe9;
+		}
+	}
 }
 
 .v_signalStreng.globalStock #wrap .modal.signal_pop01 .pop_con .trading_signal {
