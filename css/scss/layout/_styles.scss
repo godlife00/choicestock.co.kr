@@ -33838,7 +33838,6 @@ body.v_signalStreng {
 	width: 70px;
 	box-sizing: border-box;
 }
-
 .v_signalStreng.globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .recipe_area .area .logo_list .revenue .increase.dod b {
 	color: #f00;
 	font-weight: 300;
@@ -33894,6 +33893,11 @@ body.v_signalStreng {
 .v_signalStreng.globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .recipe_area .area .logo_list .revenue .decrease {
 	color: #26ABFF;
 	font-size: 1.125rem;
+}
+.v_signalStreng.globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .recipe_area .area .logo_list .revenue .increase.dod,
+.v_signalStreng.globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .recipe_area .area .logo_list .revenue .same.dod,
+.v_signalStreng.globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .recipe_area .area .logo_list .revenue .decrease.dod{
+	margin-top: 0;	
 }
 
 .v_signalStreng.globalStock .sub_recom .sub_mid.eventPicks_area .ptfo_area .day {

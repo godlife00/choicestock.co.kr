@@ -104,8 +104,9 @@
                 <div class="recipe_area">
                     <div class="tab-container">
                         <div class="tradeSignal_status">
-                            <h2 class="title">마켓스코어 <span class="signal_guide txt_guide"><img src="../img/txt_guide_us.svg" alt="가이드보기"></span></h2>
-                            
+                            <h2 class="title">마켓스코어 <span class="signal_guide txt_guide"><img
+                                        src="../img/txt_guide_us.svg" alt="가이드보기"></span></h2>
+
                             <div class="score_chart">
                                 <figure class="highcharts-figure">
                                     <div id="CustomChart_score1_1" class="contaanalysis1"></div>
@@ -123,15 +124,99 @@
                             <!-- //score_chart -->
                         </div>
                         <!-- //tradeSignal_status -->
-                         
+
                         <div class="tab_btn">
-                            <button data-tab="tab1" class="tab_span active">매수종목 <span
-                                    class="cunt">(23건)</span></button>
-                            <button data-tab="tab2" class="tab_span">매도종목 <span class="cunt">(12건)</span></button>
+                            <button data-tab="tab1" class="tab_span active">보유종목 <span class="cunt">(33건)</span></button>
+                            <button data-tab="tab2" class="tab_span">매수종목 <span class="cunt">(23건)</span></button>
+                            <button data-tab="tab3" class="tab_span">매도종목 <span class="cunt">(12건)</span></button>
                         </div>
 
                         <div id="tab1" class="tab">
-                            <p class="update_info">기준 23.07/19</p>
+                            <p class="update_info">기준 23.07/19 1</p>
+                            <div class="recipe_area">
+                                <!-- 보유종목 -->
+                                <div class="area">                                    
+                                    <ul class="logo_list" onclick="location.href ='/search/search_outline.html'"
+                                        style="cursor:pointer;">
+                                        <li class="title_logo">
+                                            <span class="logo"><img
+                                                    src="https://uslogo.datahero.co.kr/img/logo/us/mvl/MSFT.svg"
+                                                    alt=""></span>
+                                        </li>
+                                        <li class="detail">
+                                            <div class="title">
+                                                <a href="/search/search_outline.html" class="">마이크로소프트</a>
+                                            </div>
+                                            <div class="num">
+                                                <span>338.25</span>
+                                            </div>
+                                            <div class="per">
+                                                <span class="increase">+3.24% (+2.23%)</span>
+                                                <!-- increase 증가, decrease 감소, 보합은 same -->
+                                            </div>
+                                        </li>
+                                        <li class="revenue">
+                                            <span class="th">추천 상승률</span>
+                                            <span class="same dod">0.00%</span>
+                                            <!-- increase 증가, decrease 감소, 보합은 same -->                                            
+                                        </li>                                        
+                                    </ul>                                    
+                                    <ul class="logo_list" onclick="location.href ='/search/search_outline.html'"
+                                        style="cursor:pointer;">
+                                        <li class="title_logo">
+                                            <span class="logo"><img src="https://uslogo.datahero.co.kr/img/logo/us/mvl/AAPL.svg" alt=""></span>
+                                        </li>
+                                        <li class="detail">
+                                            <div class="title">
+                                                <a href="/search/search_outline.html" class="">마이크로소프트</a>
+                                            </div>
+                                            <div class="num">
+                                                <span>338.25</span>
+                                            </div>
+                                            <div class="per">
+                                                <span class="decrease">-3.24% (-2.23%)</span>
+                                                <!-- increase 증가, decrease 감소, 보합은 same -->
+                                            </div>
+                                        </li>
+                                        <li class="revenue">
+                                            <span class="th">추천 상승률</span>
+                                            <span class="increase dod">26.38<b>%</b></span>                                            
+                                        </li>                                        
+                                    </ul>                                    
+                                    <ul class="logo_list" onclick="location.href ='/search/search_outline.html'"
+                                        style="cursor:pointer;">
+                                        <li class="title_logo">
+                                            <span class="logo"><img
+                                                    src="https://uslogo.datahero.co.kr/img/logo/us/mvl/MSFT.svg"
+                                                    alt=""></span>
+                                        </li>
+                                        <li class="detail">
+                                            <div class="title">
+                                                <a href="/search/search_outline.html" class="">마이크로소프트</a>
+                                            </div>
+                                            <div class="num">
+                                                <span>338.25</span>
+                                            </div>
+                                            <div class="per">
+                                                <span class="decrease">-3.24% (-2.23%)</span>
+                                                <!-- increase 증가, decrease 감소, 보합은 same -->
+                                            </div>
+                                        </li>
+                                        <li class="revenue">
+                                            <span class="th">추천 상승률</span>
+                                            <span class="decrease dod">-2.30%</span>
+                                            <!--  -->
+                                        </li>                                        
+                                    </ul>                                    
+                                </div>
+                                <!-- //area -->
+                            </div>
+                            <!-- //recipe_area -->
+                        </div>
+                        <!-- //tab -->
+
+                        <div id="tab2" class="tab">
+                            <p class="update_info">기준 23.07/19 2</p>
                             <div class="recipe_area">
 
                                 <!-- 실적발표 -->
@@ -381,8 +466,8 @@
                         </div>
                         <!-- //tab -->
 
-                        <div id="tab2" class="tab">
-                            <p class="update_info">기준 23.07/19</p>
+                        <div id="tab3" class="tab">
+                            <p class="update_info">기준 23.07/19 3</p>
                             <div class="recipe_area">
 
                                 <!-- 실적발표 -->

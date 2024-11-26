@@ -32947,6 +32947,12 @@ body.v_signalStreng {
   font-size: 1.125rem;
 }
 
+.v_signalStreng.globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .recipe_area .area .logo_list .revenue .increase.dod,
+.v_signalStreng.globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .recipe_area .area .logo_list .revenue .same.dod,
+.v_signalStreng.globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .recipe_area .area .logo_list .revenue .decrease.dod {
+  margin-top: 0;
+}
+
 .v_signalStreng.globalStock .sub_recom .sub_mid.eventPicks_area .ptfo_area .day {
   font-size: 0.8125rem;
   top: 4px !important;
