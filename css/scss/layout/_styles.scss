@@ -353,7 +353,9 @@ body,
 	// padding-top: 54px;
 	padding-bottom: 15px;
 }
-
+.hide {
+	display: none !important;
+}
 .header.m_hdr+#container {
 	padding-top: 0 !important;
 }
