@@ -35605,6 +35605,9 @@ body.v_signalStreng {
 .globalStock .service_wrap .header .headerTop .go_back {
   border-color: #fff !important;
 }
+.globalStock .service_wrap .header .headerTop .headerLogo span {
+  color: #fff !important;
+}
 .globalStock .service_wrap .premium_applybtn {
   margin-top: 0;
 }
