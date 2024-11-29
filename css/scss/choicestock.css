@@ -35669,6 +35669,8 @@ body.v_signalStreng {
   flex-wrap: wrap;
   align-content: center;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 .globalStock .service_wrap .box.premium_box .title_box h1 {
   width: 90%;
@@ -35681,6 +35683,28 @@ body.v_signalStreng {
 }
 .globalStock .service_wrap .box.premium_box .title_box h1 b {
   color: #404fc3;
+}
+.globalStock .service_wrap .box.premium_box .title_box .event_txt {
+  position: relative;
+  border-radius: 16px;
+  margin: 18px auto 8px;
+  padding: 12px 24px 12px 50px;
+  display: inline-block;
+  width: -moz-max-content;
+  width: max-content;
+  background-color: #404fc3;
+  color: #c7cbe9;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+}
+.globalStock .service_wrap .box.premium_box .title_box .event_txt::before {
+  content: "⏰";
+  position: absolute;
+  left: 16px;
+  top: calc(50% - 1px);
+  transform: translateY(-50%);
+  font-size: 20px;
 }
 .globalStock .service_wrap .box.premium_box .bg_img {
   position: relative;
