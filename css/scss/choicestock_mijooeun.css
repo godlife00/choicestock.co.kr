@@ -35713,6 +35713,8 @@ body.v_signalStreng {
   height: 330px;
   margin: 0 auto;
   background: url("/img/first_month_3300.svg") no-repeat center 60%;
+  background-size: auto 308px;
+  background-position: center -11px;
 }
 .globalStock .service_wrap .box.premium_box .bg_img .bell {
   position: absolute;
@@ -37650,6 +37652,6 @@ body.v_signalStreng {
 }
 
 .globalStock .service_wrap .box.premium_box .bg_img {
-  background: url("/img/service/first_month_3300.png") no-repeat center 60%; 
+  background: url("/img/service/first_month_3300.png") no-repeat center 60%;
   background-size: auto 264px;
 }/*# sourceMappingURL=choicestock_mijooeun.css.map */

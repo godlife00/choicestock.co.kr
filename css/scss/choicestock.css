@@ -35713,6 +35713,8 @@ body.v_signalStreng {
   height: 330px;
   margin: 0 auto;
   background: url("/img/first_month_3300.svg") no-repeat center 60%;
+  background-size: auto 308px;
+  background-position: center -11px;
 }
 .globalStock .service_wrap .box.premium_box .bg_img .bell {
   position: absolute;
