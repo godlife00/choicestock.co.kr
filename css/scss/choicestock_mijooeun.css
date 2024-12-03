@@ -35712,14 +35712,13 @@ body.v_signalStreng {
   max-width: 420px;
   height: 330px;
   margin: 0 auto;
-  background: url("/img/first_month_3300.svg") no-repeat center 60%;
-  background-size: auto 308px;
-  background-position: center -11px;
+  background: url("/img/first_month_3300.png") no-repeat center 60%;
+  background-size: auto 336px;
 }
 .globalStock .service_wrap .box.premium_box .bg_img .bell {
   position: absolute;
-  right: calc(50% - 86px);
-  top: 14px;
+  right: calc(50% - 102px);
+  top: 11px;
   display: inline-block;
   width: 100px;
   height: 100px;
@@ -37653,5 +37652,5 @@ body.v_signalStreng {
 
 .globalStock .service_wrap .box.premium_box .bg_img {
   background: url("/img/service/first_month_3300.png") no-repeat center 60%;
-  background-size: auto 264px;
+  background-size: auto 336px;
 }/*# sourceMappingURL=choicestock_mijooeun.css.map */
