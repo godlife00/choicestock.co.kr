@@ -14521,6 +14521,10 @@ table.tableRanking td {
   min-height: 39px;
   box-sizing: border-box;
 }
+.globalStock .sub_search .sub_mid .search_financials_area .scroll_table_wrap .scroll_table td.th_2line {
+  padding: 5px 2px 4px 8px !important;
+  line-height: 1.2 !important;
+}
 
 .globalStock .sub_search .sub_mid .search_financials_area .scroll_table_wrap .scroll_table th:first-child,
 .globalStock .sub_search .sub_mid .search_financials_area .scroll_table_wrap .scroll_table td:first-child {
@@ -37617,6 +37621,9 @@ body.v_signalStreng {
   height: 100%;
 }
 
+.v_signalStreng.globalStock #wrap .modal.cardBox.card_overseas_02 {
+  top: 15%;
+}
 .v_signalStreng.globalStock #wrap .modal.cardBox.card_overseas_02 .pop_con .txt {
   margin-top: 16px;
   color: #333;

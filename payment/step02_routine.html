@@ -111,8 +111,8 @@
             <!-- 결제 정보 입력 -->
             <div class="payment_guide">
                 <p class="pay_guideTxt">*신규 월 정기결제 시, 첫째 달에 1,000원이 결제되며, 둘째 달 부터는 매월 33,000원으로 자동결제됩니다.</p>
-                <p class="pay_guideTxt">*본인 소유의 신용카드(롯데, 삼성, 신한, 현대, NH) 또는 체크카드</p>
-                <!-- <p class="pay_guideTxt"><span class="card_overseas">*혹시 해외카드로 결제하시나요? <img src="../img/txt_guide_us.svg" alt="가이드보기"></span></p> -->
+                <p class="pay_guideTxt">*국내에서 발급된 모든 카드사 또는 체크카드</p>
+                <p class="pay_guideTxt"><span class="card_overseas">*혹시 해외카드로 결제하시나요? <img src="../img/txt_guide_us.svg" alt="가이드보기"></span></p>
                 <div class="mapage_form">
                     <div class="subscription-form">
                         <h1 class="form_title">신용카드 카드인증</h1>
@@ -204,14 +204,18 @@
                                             동의합니다.</span>
                                         <span class="agree_txt agree_caution">
                                             <!-- 월 정기결제 -->
-                                            월정기결제는 언제든 해지할 수 있습니다. 월정기결제의 경우 주기가 종료될 때까지는 서비스를 계속 이용할 수 있으며, 결제 금액은 환불되지
-                                            않습니다.
-                                            <b>단, 결제 당일에 한하여 해지 시 전액 환불되며, 서비스 이용은 즉시 종료됩니다.</b><span
-                                                class="refund_terms">(환불정책 보기)</span>
+                                            1개월 단위의 정기결제(월간플랜)의 경우 계약 경과일에 따라 환불 금액이 달라집니다.<br>
+                                            ∙ 결제일로부터 7일 이내 해지 요청 시, 결제금액에서 이용일수를 차감한 금액을 환불합니다.<br>
+                                            ∙ 결제일로부터 7일 초과 해지 요청 시, 결제금액에서 이용일수와 환불수수료(서비스 결제금액의 10%)를 차감한 금액을 환불합니다.
+                                            <span class="refund_terms">(환불정책 보기)</span>
                                             <br><br>
                                             <!-- 연간 정기결제 -->
-                                            연간정기결제는 언제든 해지할 수 있습니다. 연간정기결제 해지의 경우 <b> 계약 경과일에 따라 환불 금액이 달라집니다.</b> <span
-                                                class="refund_terms">(환불정책 보기)</span>
+                                            연간 정기결제는 언제든 해지할 수 있습니다.                                            
+                                            1년 단위의 정기결제(연간플랜)의 경우 계약 경과일에 따라 환불 금액이 달라집니다.<br>
+                                            ∙ 결제일로부터 3일 이내 해지 요청 시, 결제금액 전액을 환불합니다.<br>
+                                            ∙ 결제일로부터 90일 이내 해지 요청 시, 결제금액에서 이용일수를 차감한 금액의 70%에 해당하는 금액을 환불합니다.<br>
+                                            ∙ 결제일로부터 90일을 초과하여 해지 요청 시, 결제금액에서 이용일수를 차감한 금액의 30%에 해당하는 금액을 환불합니다.
+                                            <span class="refund_terms">(환불정책 보기)</span>
                                             <br><br>
                                             신용카드 승인오류 및 잔액 부족시에는 결제가 해지될 수 있습니다 결제일은 실제 신용카드사에서 결제 요청하는 날짜로 실제 출금일은
                                             카드사별로 다를 수 있습니다.
@@ -296,20 +300,72 @@
                 </div>
                 <div class="pop_con">
                     <p class="paypal_title">해외카드는 <b>페이팔</b>로 간편하게 결제할 수 있습니다.</p>
-                    <p class="paypal_link">페이팔로 결제하기 : <a href="https://bit.ly/pp_choice"
-                            target="_blank">https://bit.ly/pp_choice</a></p>
-                    <p class="paypal_txt">- 1개월 정기결제 $29 → 첫달 $0.99 결제, 이후 -> $29 결제</p>
-                    <p class="paypal_txt">- 페이팔로 결제후 아래정보를 <b>고객센터로 꼭 알려주세요!</b> <a href="https://kq64o.channel.io"
-                            target="_blank">[바로가기]</a></p>
-                    <ul class="paypal_step">
-                        <li><b>1&#41; 결제일</b></li>
-                        <li><b>2&#41; 페이팔 결제 시 입력 이메일</b></li>
-                    </ul>
-                    <ul class="paypal_step">
-                        <li><b>3&#41; 서비스 가입 이메일</b></li>
-                        <li><b>4&#41; 회원이름</b></li>
-                    </ul>
-                    <p class="progress_txt">*페이팔 결제 확인은 <b>영업일 기준 1~3일</b> 소요되는점 양해바랍니다.</p>
+                    <!-- 월 정기 첫 달 할인 적용시 -->
+                    <div class="paypal_link">
+                        <p class="payment"><b>월 정기결제</b>
+                            <span class="del_num">첫달 0.99달러</span>→<span class="sale_num">이후 $29결제</span>
+                        </p>                        
+                    </div>
+                    <!-- 월 정기 정상가 결제시 -->
+                    <div class="paypal_link">
+                        <p class="payment"><b>월 정기결제</b>
+                            <span class="sale_num">매달 $29달러 결제</span>
+                        </p>                        
+                    </div>
+                    <!-- 월 정기 미주은 스폐셜 할인 결제시 -->
+                    <div class="paypal_link">
+                        <p class="payment"><b>연간 정기결제</b>
+                            <span class="del_num">296달러 <span class="del_img"><svg xmlns="http://www.w3.org/2000/svg"
+                                        width="57" height="7" viewBox="0 0 57 7" fill="none">
+                                        <path d="M0 6.5H55.2L49.05 0.350006" stroke="#999999"></path>
+                                    </svg></span> </span> <span class="sale_num">175달러(40%할인)</span>
+                        </p>                        
+                    </div>
+
+                    <!-- 페이팔 결제 > 유의사항 동의 항목 추가 -->
+                    <div class="caution_terms">
+                        <form action="" method="" class="form_wrap">
+                            <div class="payment_note">
+                                <div class="top">
+                                    <span class="agree">
+                                        <input type="checkbox" id="caution_agreeAll" class="chk_label">
+                                        <label for="caution_agreeAll"><span class="s_txt">결제정보 및 유의사항에 동의합니다.</span></label>
+                                        <p class="agree_guide">월 정기결제의 경우 주기가 종료될 때까지는 서비스를  계속 이용하실 수 있으며, 결제 금액은 환불되지 않습니다.</p>
+                                        <!-- 전체약관동의(id="caution_agreeAll") 체크인 경우, name='caution_allCheck' 전체 선택됩니다. 반대는 전체 해제 -->
+                                    </span>
+                                    <span class="show rotated">더보기</span>
+                                </div>
+                                <div class="agree_chk caution">
+                                    <p class="txt">
+                                        <!--<input type="checkbox" name="caution_allCheck" id="caution_agree_04" class="chk_label">
+                                        <label for="caution_agree_04"><span class="s_txt">[필수]결제정보 및 유의사항 동의</span></label>-->
+                                        <span class="agree_txt">납부해야 할 금액에 대해 신청한 신용카드 정보에서 지정된 출금일에 인출(결제)되는 것에 동의합니다.</span>
+                                        <span class="agree_txt agree_caution">
+                                                                                        <!-- 월 정기결제 -->
+                                            월정기결제는 언제든 해지할 수 있습니다. 월정기결제의 경우 주기가 종료될 때까지는 서비스를 계속 이용할 수 있으며, 결제 금액은 환불되지 않습니다.
+                                            <b>단, 결제 당일에 한하여 해지 시 전액 환불되며, 서비스 이용은 즉시 종료됩니다.</b><span class="refund_terms">(환불정책 보기)</span>
+                                                                                        <br><br>
+                                            신용카드 승인오류 및 잔액 부족시에는 결제가 해지될 수 있습니다 결제일은 실제 신용카드사에서 결제 요청하는 날짜로 실제 출금일은 카드사별로 다를 수 있습니다.
+                                            <br><br>
+                                            상기 내용은 당사의 사정에 따라 사전고지 없이 변경될 수 있습니다.
+                                        </span>
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- //payment_note -->
+                        </form>
+                    </div>
+                    <!-- //caution_terms -->
+                        
+                    <a href="https://www.paypal.com/webapps/billing/plans/subscribe?plan_id=P-83M636678H6782059M2VRYJY" class="paypal_linkBtn">
+                        <span>페이팔로 결제하기</span>
+                        <img src="../img/paypal.png" alt="페이팔에서 결제하기">
+                    </a>                    
+                    
+                    <p class="progress_txt">
+                        페이팔 결제 정보 연동으로 유료회원 권한 부여에 시차가 발생할 수 있습니다.<br>
+                        결제 완료 약 3분 후 초이스스탁 사이트에 접속해 페이지를 새로고침하면 서비스 이용이 가능합니다. 시간이 지나도 유료회원 권한이 부여되지 않으면 채널톡 또는  <a href="mailto:team@datahero.co.kr" style="color:#939393">team@datahero.co.kr</a> 메일로 문의해 주시기 바랍니다.
+                    </p>
                 </div>
             </div>
             <!-- //(필수)전자금융거래 약관 동의 -->
@@ -859,12 +915,13 @@
                 </div>
                 <div class="pop_con">
                     <p class="txt">
-                        1. <strong>[기간결제]</strong>유료서비스가 1개월(결제 기준)을 초과하여 지속되는 기간결제의 경우 결제금액에서 이용일수와 환불수수료(서비스 결제금액의
-                        3.5%)를 차감한 금액을 환불합니다.
+                        1. <strong>[기간결제]</strong>유료서비스가 1개월(결제 기준)을 초과하여 지속되는 기간결제의 경우 계약 경과일에 따라 환불 금액이 달라집니다.
+                        ∙ 결제일로부터 7일 이내 해지 요청 시, 결제금액에서 이용일수를 차감한 금액을 환불합니다.
+                        ∙ 결제일로부터 7일 초과 해지 요청 시, 결제금액에서 이용일수와 환불수수료(서비스 결제금액의 10%)를 차감한 금액을 환불합니다.                        
 
-                        2. <strong>[정기결제]</strong>1개월 단위의 정기결제(월간플랜)의 경우 결제 주기가 종료될 때까지는 서비스를 계속 이용할 수 있으며, 관련 법률이 허용하는
-                        범위에서 결제 금액은 환불되지 않습니다.
-                        단, 결제신청 당일에 한하여 서비스 해지 요청 시 결제금액은 전액 환불 되며, 유료서비스 이용은 즉시 종료됩니다.
+                        2. <strong>[정기결제]</strong>1개월 단위의 정기결제(월간플랜)의 경우 계약 경과일에 따라 환불 금액이 달라집니다.
+                        ∙ 결제일로부터 7일 이내 해지 요청 시, 결제금액에서 이용일수를 차감한 금액을 환불합니다.
+                        ∙ 결제일로부터 7일 초과 해지 요청 시, 결제금액에서 이용일수와 환불수수료(서비스 결제금액의 10%)를 차감한 금액을 환불합니다.                        
 
                         3. <strong>[연간정기결제]</strong> 1년 단위의 정기결제(연간플랜)의 경우 계약 경과일에 따라 환불 금액이 달라집니다.
                         ∙ 결제일로부터 3일 이내 해지 요청 시, 결제금액 전액을 환불합니다.
