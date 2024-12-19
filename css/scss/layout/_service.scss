@@ -25,6 +25,13 @@
         transform: translateY(0);
         transition: transform 0.6s ease-out;
 
+		.miju_50 {
+			margin: 0 auto;
+			margin-bottom: 60px;
+			max-width: 420px;
+		}
+
+
         &.bg {
             background-color: #F4F4F5;            
         }
@@ -204,6 +211,76 @@
                 } 
             }
         }
+
+		
+		&.user_review {
+			display: flex;
+			flex-direction: column;
+			gap: 24px 15px;
+			padding-top: 192px;
+			padding-bottom: 0;
+			background: #fff url('/img/service/bg_user_review.svg') no-repeat center 80px;
+			background-size: 375px auto;
+			.bell {
+				position: absolute;
+				right: calc(50% - 157px);
+				top: 141px;
+				display: inline-block;
+				width: 100px;
+				height: 100px;
+				background: url('/img/service/bell_big.svg') no-repeat center center;
+				background-size: cover;
+				animation: shake 0.5s ease infinite;
+				z-index: 90;
+			}		
+			.benefits_guide {
+				position: relative;
+				display: flex;
+				gap: 24px 15px;
+				width: 90%;
+				box-sizing: border-box;
+				max-width: 420px;
+				padding: 16px 24px;
+				border-radius: 16px;
+				margin: 0 auto;								
+				background: #21295C;
+				box-shadow: 0px 0px 10px 0px rgba(77, 110, 228, 0.25);								
+				opacity: 0;
+				transform: translateY(250px);
+				transition: transform 0.6s ease-out;
+				&.visible {										
+					opacity: 1;
+					transform: translateY(0);
+				}
+				&::before {
+					content: "";
+					display: inline-block;
+					position: absolute;
+					left: 43px;
+					top: 16px;
+					width: 20px;
+					height: 16px;
+					background: url('/img/quotation.svg') no-repeat left top;
+				}
+								
+				.title_box {
+					padding: 16px 20px;
+					h2 {
+						color: #FFF;
+						text-align: center;					
+						font-size: 18px;					
+						font-weight: 500;
+						line-height: 26px; /* 144.444% */						
+						b {
+							color: #7983D5;						
+							font-size: 18px;						
+							font-weight: 500;
+							line-height: 26px;
+						}
+					}					
+				}
+			}
+		}
 
         .con_img {
             position: relative;

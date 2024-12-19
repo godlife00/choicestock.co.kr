@@ -35622,6 +35622,11 @@ body.v_signalStreng {
   transform: translateY(0);
   transition: transform 0.6s ease-out;
 }
+.globalStock .service_wrap .box .miju_50 {
+  margin: 0 auto;
+  margin-bottom: 60px;
+  max-width: 420px;
+}
 .globalStock .service_wrap .box.bg {
   background-color: #F4F4F5;
 }
@@ -35787,6 +35792,73 @@ body.v_signalStreng {
 }
 .globalStock .service_wrap .box.premium_box .benefits_guide .title_box h2 b {
   color: #7983d5;
+}
+.globalStock .service_wrap .box.user_review {
+  display: flex;
+  flex-direction: column;
+  gap: 24px 15px;
+  padding-top: 192px;
+  padding-bottom: 0;
+  background: #fff url("/img/service/bg_user_review.svg") no-repeat center 80px;
+  background-size: 375px auto;
+}
+.globalStock .service_wrap .box.user_review .bell {
+  position: absolute;
+  right: calc(50% - 157px);
+  top: 141px;
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background: url("/img/service/bell_big.svg") no-repeat center center;
+  background-size: cover;
+  animation: shake 0.5s ease infinite;
+  z-index: 90;
+}
+.globalStock .service_wrap .box.user_review .benefits_guide {
+  position: relative;
+  display: flex;
+  gap: 24px 15px;
+  width: 90%;
+  box-sizing: border-box;
+  max-width: 420px;
+  padding: 16px 24px;
+  border-radius: 16px;
+  margin: 0 auto;
+  background: #21295C;
+  box-shadow: 0px 0px 10px 0px rgba(77, 110, 228, 0.25);
+  opacity: 0;
+  transform: translateY(250px);
+  transition: transform 0.6s ease-out;
+}
+.globalStock .service_wrap .box.user_review .benefits_guide.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.globalStock .service_wrap .box.user_review .benefits_guide::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: 43px;
+  top: 16px;
+  width: 20px;
+  height: 16px;
+  background: url("/img/quotation.svg") no-repeat left top;
+}
+.globalStock .service_wrap .box.user_review .benefits_guide .title_box {
+  padding: 16px 20px;
+}
+.globalStock .service_wrap .box.user_review .benefits_guide .title_box h2 {
+  color: #FFF;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px; /* 144.444% */
+}
+.globalStock .service_wrap .box.user_review .benefits_guide .title_box h2 b {
+  color: #7983D5;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px;
 }
 .globalStock .service_wrap .box .con_img {
   position: relative;
@@ -37372,15 +37444,37 @@ body.v_signalStreng {
 
 .globalStock .service_wrap .box.premium_box .title_box h1 {
   color: #C7CBE9;
+  font-size: 20px;
+  font-weight: 700;
+}
+.globalStock .service_wrap .box.premium_box .title_box h1 svg {
+  position: relative;
+  top: 2px;
+}
+.globalStock .service_wrap .box.premium_box .title_box h1 b {
+  display: inline-block;
+  margin-top: 20px;
+  color: #fff;
   font-size: 24px;
   font-weight: 700;
 }
-.globalStock .service_wrap .box.premium_box .title_box h1 b {
-  margin-top: 3px;
-  display: block;
-  color: #FFF;
-  font-size: 36px;
+.globalStock .service_wrap .box.premium_box .title_box .h2_title {
+  color: #C7CBE9;
+  text-align: center;
+  font-size: 24px;
   font-weight: 700;
+}
+.globalStock .service_wrap .box.premium_box .title_box .h2_title b {
+  color: #FFF;
+  font-size: 24px;
+  font-weight: 700;
+}
+.globalStock .service_wrap .box.premium_box .title_box .h3_title {
+  color: #EB642B;
+  text-align: center;
+  font-size: 60px;
+  font-weight: 800;
+  line-height: 70px; /* 116.667% */
 }
 
 .txt_ai {
@@ -37647,10 +37741,21 @@ body.v_signalStreng {
 
 .premium_applybtn {
   padding: 0;
+  border-color: #EB642B;
+  background: #EB642B;
+  box-shadow: 0px -10px 10px 0px rgba(0, 0, 0, 0.1);
 }
 .premium_applybtn a {
   display: block;
   padding: 17px 5px;
+  color: #161616;
+  font-size: 16px;
+  font-weight: 700;
+}
+.premium_applybtn a strong {
+  color: #FFD120;
+  font-size: 16px;
+  font-weight: 700;
 }
 
 .v_signalStreng.globalStock .sub_payment .payment_guide .pay_guideTxt .card_overseas img {

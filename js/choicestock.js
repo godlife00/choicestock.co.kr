@@ -1831,21 +1831,39 @@ $(document).ready(function () {
             }
         });
     }
-    // 서비스소개 상단 3개 박스 순차 슬라이드
-    const benefitElements = document.querySelectorAll('.benefits_guide');    
-    function applyClassSequentially(index) {
-        if (index < benefitElements.length) {
-            benefitElements[index].classList.add('visible');
+    // 서비스소개 상단 박스 순차 슬라이드
+    const premiumBenefits = document.querySelectorAll('.premium_box .benefits_guide');
+    const userReviewBenefits = document.querySelectorAll('.user_review .benefits_guide');
+    
+    function applyClassInSequence(elements, index, delay = 300) {
+        if (index < elements.length) {
+            elements[index].classList.add('visible');
             setTimeout(() => {
-                applyClassSequentially(index + 1);
-            }, 300);
+                applyClassInSequence(elements, index + 1, delay);
+            }, delay);
         }
     }
+
+    function checkUserReviewVisibility() {
+        const windowHeight = $(window).height();
+        const windowScrollTop = $(window).scrollTop();
+
+        $('.user_review').each(function() {
+            const boxTop = $(this).offset().top;
+
+            if (boxTop < windowScrollTop + windowHeight) {
+                applyClassInSequence(userReviewBenefits, 0, 150);
+                $(window).off('scroll', checkUserReviewVisibility); // Once executed, remove the scroll event
+            }
+        });
+    }
+
     $(window).on('scroll', checkVisibility);
     $(window).on('scroll', applyScrollEffect);
+    $(window).on('scroll', checkUserReviewVisibility);
     checkVisibility(); // 페이지 로드 시에도 실행
-    applyScrollEffect(); //서비스소개 페이드인 효과 함수 실행
-    applyClassSequentially(0); // 서비스소개 상단 3개 박스 순차 슬라이드 함수 실행
+    applyScrollEffect(); // 서비스소개 페이드인 효과 함수 실행
+    applyClassInSequence(premiumBenefits, 0); // 서비스소개 상단 3개 박스 순차 슬라이드 함수 실행
 
 
     // EPS 툴팁 팝업 높이 조절 스크립트 시작           

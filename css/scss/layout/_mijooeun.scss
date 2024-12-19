@@ -2,18 +2,43 @@
 #container {
 	padding-bottom: 0;
 }
-.globalStock .service_wrap .box.premium_box .title_box h1 {
-	color: #C7CBE9;
-	font-size: 24px;	
-	font-weight: 700;	
-	b {
-		margin-top: 3px;
-		display: block;
-		color: #FFF;		
-		font-size: 36px;
-		font-weight: 700;		
+.globalStock .service_wrap .box.premium_box .title_box {
+	h1 {
+		color: #C7CBE9;
+		font-size: 20px;	
+		font-weight: 700;	
+		svg {
+			position: relative;
+			top: 2px;
+		}
+		b {		
+			display: inline-block;
+			margin-top: 20px;
+			color: #fff;		
+			font-size: 24px;
+			font-weight: 700;		
+		}
 	}
-}
+	.h2_title {
+		color: #C7CBE9;
+		text-align: center;		
+		font-size: 24px;		
+		font-weight: 700;		
+		b {
+			color: #FFF;			
+			font-size: 24px;			
+			font-weight: 700;			
+		}
+	}
+	.h3_title {
+		color: #EB642B;
+		text-align: center;		
+		font-size: 60px;		
+		font-weight: 800;
+		line-height: 70px; /* 116.667% */
+	}
+} 
+
 .txt_ai {
 	margin-top: 20px;
 	p {
@@ -293,9 +318,21 @@
 }
 .premium_applybtn {
 	padding: 0;
+	border-color: #EB642B;
+	background: #EB642B;
+	box-shadow: 0px -10px 10px 0px rgba(0, 0, 0, 0.10);
+	
 	a {
 		display: block;		
 		padding: 17px 5px;
+		color: #161616;		
+		font-size: 16px;		
+		font-weight: 700;		
+		strong {
+			color: #FFD120;			
+			font-size: 16px;			
+			font-weight: 700;			
+		}
 	}
 }
 .v_signalStreng.globalStock .sub_payment .payment_guide .pay_guideTxt .card_overseas img {
