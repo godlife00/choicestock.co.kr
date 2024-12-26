@@ -16315,6 +16315,315 @@ table.tableRanking td {
 }
 
 /* 발굴 - 투자레시피 */
+.v_signalStreng.globalStock .sub_recipe {
+	// 레시피 디자인 변경_241224 class="sub_recipe new_recipe"
+	&.new_recipe {		
+		$jump : #646FCD; //급등주
+		$top50 : #F8D95F; //관심 TOP50
+		$sale : #76BCE7; //지금 세일중
+		$earnings : #2E3848; //실적발표		
+		$dividend : #87CD64; //배당매력주
+		$growth : #79D5A9; //이익성장주
+		$superStocks : #E7B676; //슈퍼스톡스
+		$consumerMonopoly : #D6E0EA; //소비자독점
+		$profitTurnaround : #7694E7; //흑자전환
+		$goldenCross : #E36B6D; //골든크로스
+		$growthDiscovery : #E79366; //발굴성장주		
+		$wh : 164px;	
+		margin-top: 0;
+			
+		.sub_mid.recipe_tabs .box_tabs .list {			
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+			justify-content: center;
+			justify-items: start; /* Align items to the start */
+			gap: 48px 1rem;
+		}
+		.sub_mid.recipe_tabs .box_tabs .list > div {
+			display: flex;			
+			flex-direction: column;
+			flex-wrap: wrap;
+			gap: 12px 12px;
+			border-radius: 16px;
+			background-color: transparent;
+			width: 100%;						
+			height: auto;
+			&::before {
+				content: '';
+				display: block;					
+				width: 100%;
+				height: $wh;		
+				margin: 0 auto;
+				border-radius: 16px;				
+			}			
+			&.jump a, &.top50 a, &.sale a, &.earnings a, &.dividend a, &.growth a, &.superStocks a, &.consumerMonopoly a, &.profitTurnaround a, &.goldenCross a, &.growthDiscovery a {
+				display: block;					
+				background: none;			
+				padding: 0 8px;		
+				text-align: left;
+				color: #6A727B;				
+				font-size: 13px;				
+				font-weight: 400;	
+				line-height: 1.3;			
+				word-break: break-all;
+				word-wrap: break-word;
+				strong {
+					display: block;
+					color: #333;					
+					font-size: 18px;					
+					font-weight: 700;					
+					padding-bottom: 8px;
+				}
+			}			
+			&.jump {						
+				// 급등주					
+				&::before {										
+					background: $jump url('/img/jump.svg') no-repeat center 14px;				
+					background-size: auto 132px;
+				}				
+			}			
+			&.top50 {
+				// 관심 TOP50
+				&::before {								
+					background: $top50 url('/img/top50.svg') no-repeat center 14px;				
+					background-size: auto 132px;
+				}
+			}
+			&.sale {
+				// 지금 세일중
+				&::before {									
+					background: $sale url('/img/sale.svg') no-repeat center 14px;				
+					background-size: auto 132px;
+				}
+			}
+			&.earnings {
+				// 실적발표
+				&::before {									
+					background: $earnings url('/img/earnings.svg') no-repeat center 14px;				
+					background-size: auto 132px;
+				}
+			}
+			&.dividend {
+				// 배당매력주
+				&::before {									
+					background: $dividend url('/img/dividend.svg') no-repeat center 14px;				
+					background-size: auto 132px;
+				}
+			}
+			&.growth {
+				// 이익성장주
+				&::before {										
+					background: $growth url('/img/growth.svg') no-repeat center 14px;				
+					background-size: auto 132px;
+				}
+			}
+			&.superStocks {
+				// 슈퍼스톡스
+				&::before {									
+					background: $superStocks url('/img/superStocks.svg') no-repeat center 14px;				
+					background-size: auto 132px;
+				}
+			}
+			&.consumerMonopoly {
+				// 소비자독점
+				&::before {									
+					background: $consumerMonopoly url('/img/consumerMonopoly.svg') no-repeat center 14px;				
+					background-size: auto 132px;
+				}
+			}
+			&.profitTurnaround {
+				// 흑자전환
+				&::before {									
+					background: $profitTurnaround url('/img/profitTurnaround.svg') no-repeat center 14px;				
+					background-size: auto 132px;
+				}
+			}
+			&.goldenCross {
+				// 골든크로스
+				&::before {									
+					background: $goldenCross url('/img/goldenCross.svg') no-repeat center 14px;				
+					background-size: auto 132px;
+				}
+			}
+			&.growthDiscovery {
+				// 발굴성장주
+				&::before {										
+					background: $growthDiscovery url('/img/growthDiscovery.svg') no-repeat center 14px;				
+					background-size: auto 132px;
+				}
+			}			
+		}
+		// 오늘의 매매신호
+		.sub_mid.recipe_tabs .one_step {
+			flex-direction: row !important;		
+			background: #FFF !important;
+			border-radius: 16px;			
+			padding: 24px 16px;
+			margin: 0 auto;
+			box-sizing: border-box;
+			&::before {
+				display: none !important;
+			}
+			.txt {
+				color: #333;				
+				font-size: 15px;				
+				font-weight: 700;				
+				padding: 0;
+			}
+			a.more {				
+				border-radius: 4px;
+				background: #404FC3;
+				padding: 4px 12px;
+				height: auto;
+				span {
+					color: #FFF;
+					font-size: 13px;				
+					font-weight: 500;				
+				}
+			}
+		}
+		// 레시피 뷰
+		.sub_top.view {
+			.box_tabs {
+				background: none;				
+				padding: 32px 24px;
+				margin: 0;
+				color: rgba(255, 255, 255, 0.70);				
+				font-size: 14px;				
+				font-weight: 400;
+				line-height: 20px; /* 142.857% */
+				text-align: left;
+				strong {
+					display: block;
+					color: #FFF;					
+					font-size: 20px;					
+					font-weight: 700;
+					margin-bottom: 8px;
+				}
+				&::before {
+					content: '';
+					display: block;					
+					width: 100%;
+					height: 230px;		
+					margin: 0 auto 10px;																	
+					background-size: auto 230px;
+				}
+			}
+			&.jump {						
+				// 급등주					
+				.box_tabs {		
+					background-color: $jump;			
+					&::before {
+						background: $jump url('/img/jump.svg') no-repeat center center;										
+					}
+				}						
+			}	
+			&.top50 {						
+				// 관심 TOP50								
+				.box_tabs {		
+					strong {
+						color: #333;
+					}				
+					color: rgba(51, 51, 51, 0.70);
+					background-color: $top50;			
+					&::before {						
+						background: $top50 url('/img/top50.svg') no-repeat center center;										
+					}
+				}						
+			}
+			&.sale {
+				// 지금 세일중
+				.box_tabs {
+					background-color: $sale;
+					&::before {
+						background: $sale url('/img/sale.svg') no-repeat center center;
+					}
+				}
+			}
+			&.earnings {
+				// 실적발표
+				.box_tabs {
+					background-color: $earnings;
+					&::before {
+						background: $earnings url('/img/earnings.svg') no-repeat center center;
+					}
+				}
+			}
+			&.dividend {
+				// 배당매력주
+				.box_tabs {
+					background-color: $dividend;
+					&::before {
+						background: $dividend url('/img/dividend.svg') no-repeat center center;
+					}
+				}
+			}
+			&.growth {
+				// 이익성장주
+				.box_tabs {
+					background-color: $growth;
+					&::before {
+						background: $growth url('/img/growth.svg') no-repeat center center;
+					}
+				}
+			}
+			&.superStocks {
+				// 슈퍼스톡스
+				.box_tabs {
+					strong {
+						color: #333;
+					}				
+					color: rgba(51, 51, 51, 0.70);
+					background-color: $superStocks;
+					&::before {
+						background: $superStocks url('/img/superStocks.svg') no-repeat center center;
+					}
+				}
+			}
+			&.consumerMonopoly {
+				// 소비자독점
+				.box_tabs {
+					strong {
+						color: #333;
+					}				
+					color: rgba(51, 51, 51, 0.70);
+					background-color: $consumerMonopoly;
+					&::before {
+						background: $consumerMonopoly url('/img/consumerMonopoly.svg') no-repeat center center;
+					}
+				}
+			}
+			&.profitTurnaround {
+				// 흑자전환
+				.box_tabs {
+					background-color: $profitTurnaround;
+					&::before {
+						background: $profitTurnaround url('/img/profitTurnaround.svg') no-repeat center center;
+					}
+				}
+			}
+			&.goldenCross {
+				// 골든크로스
+				.box_tabs {
+					background-color: $goldenCross;
+					&::before {
+						background: $goldenCross url('/img/goldenCross.svg') no-repeat center center;
+					}
+				}
+			}
+			&.growthDiscovery {
+				// 발굴성장주
+				.box_tabs {
+					background-color: $growthDiscovery;
+					&::before {
+						background: $growthDiscovery url('/img/growthDiscovery.svg') no-repeat center center;
+					}
+				}
+			}
+			
+		}
+	}	
+}
 .globalStock .sub_recipe .sub_top .title {
 	color: #fff;
 	font-size: 1.2rem;
