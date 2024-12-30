@@ -2152,6 +2152,151 @@ $(document).ready(function () {
         });
     }
 
+
+    
+
+
+    // 레시피 - 스파이더 차트
+    function createGrowthChart(containerId, seriesData, centerScore) {
+        Highcharts.chart(containerId, {
+            chart: {
+                polar: true,
+                type: 'area',
+                backgroundColor: {
+                    stops: [
+                        [0, '#ffffff'],
+                        [1, '#ffffff']
+                    ]
+                },
+                width : 126,
+                height: 122,
+                margin: [10, 0, 0, 0],
+                events: {
+                    load: function () {
+                        alignCenterElements(this, centerScore);
+                    },
+                    redraw: function () {
+                        alignCenterElements(this, centerScore);
+                    }
+                }
+            },
+            title: {
+                text: ''
+            },
+            colors: ["rgba(131, 145, 246, 1)"],
+            tooltip: {
+                enabled: false,
+            },
+            pane: {
+                size: '96%',
+                center: ['50%', '50%'],
+            },
+            xAxis: {
+                categories: ['미래 성장성<br><strong>100</strong> ', '사업 독점력<br><strong>50</strong>', '현금창출력<br><strong>100</strong>', '수익성<br><strong>45</strong>', '재무 안전성<br><strong>75</strong>'],
+                tickmarkPlacement: 'on',
+                lineWidth: 0,
+                gridLineColor: 'transparent',
+                labels: {
+                    enabled: false
+                }
+            },
+            yAxis: {
+                gridLineInterpolation: 'polygon',
+                gridLineColor: 'transparent',
+                min: 0,
+                max: 100,
+                labels: {
+                    enabled: false
+                }
+            },
+            exporting: {
+                enabled: false
+            },
+            credits: {
+                enabled: false
+            },
+            legend: {
+                enabled: false,
+            },
+            series: [{
+                name: '투자매력도',
+                data: seriesData,
+                pointPlacement: 'on',
+                color: '#7983d5',
+                lineWidth: 1,
+                marker: {
+                    enabled: true,
+                    fillColor: '#404fc3',
+                    lineColor: '#f7f8f9',
+                    lineWidth: 1,
+                    radius: 2.7
+                }
+            }],
+            plotOptions: {
+                series: {
+                    lineWidth: 1,
+                    fillColor: '#e3e7f8',
+                    states: {
+                        hover: {
+                            enabled: false
+                        },
+                    }
+                }
+            },
+        });
+    }
+    function alignCenterElements(chart, centerScore) {
+        var paneSize = chart.pane[0].options.size,
+            paneCenter = chart.pane[0].center,
+            centerX = paneCenter[0],
+            centerY = paneCenter[1] - 12,
+            size = Math.min(chart.plotWidth, chart.plotHeight) * (parseInt(paneSize) / 100),
+            radius = size / 2;
+
+        if (chart.bgImage) {
+            chart.bgImage.destroy();
+        }
+        if (chart.centerText) {
+            chart.centerText.destroy();
+        }
+
+        chart.bgImage = chart.renderer.image('../img/bg_spider.svg', centerX - radius, centerY - radius, size, size)
+            .attr({
+                zIndex: -1
+            })
+            .add()
+            .translate(0, 14);
+
+        chart.centerText = chart.renderer.text(centerScore, centerX, centerY)
+            .css({
+                color: '#404fc3',
+                fontSize: '30px',
+                textAlign: 'center',
+                fontWeight: 'bold',
+                fontFamily: "Pretendard Variable, Pretendard",
+            })
+            .attr({
+                zIndex: 5,
+                align: 'center'
+            })
+            .add()
+            .translate(0, 25);
+    }
+
+    if ($('#growth_chart1_1').length) {
+        createGrowthChart('growth_chart1_1', [10, 100, 90, 90, 90], '23');
+    }
+    if ($('#growth_chart1_2').length) {
+        createGrowthChart('growth_chart1_2', [100, 100, 100, 100, 100], '100');
+    }
+    if ($('#growth_chart1_3').length) {
+        createGrowthChart('growth_chart1_3', [100, 40, 100, 100, 40], '75');
+    }
+    if ($('#growth_chart1_4').length) {
+        createGrowthChart('growth_chart1_4', [50, 50, 50, 50, 50], '50');
+    }
+
+
     // 검색 - 종목진단 - 투자매력탭 경쟁사 투자매력도 spider 차트
     if ($('#chart_spider_mini_01').length) {
 

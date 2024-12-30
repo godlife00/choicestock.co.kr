@@ -1967,6 +1967,6 @@ $(document).ready(function () {
             loadingTextCardChange.innerHTML = `<b>카드변경 처리중 입니다${dots}</b>`;
         }, 500); // 500ms마다 업데이트 (0.5초)
 
-    }
+    }    
 
 });
