@@ -16757,7 +16757,7 @@ table.tableRanking td {
 							.num {
 								color: #333;								
 								font-size: 13px;								
-								font-weight: 600;								
+								font-weight: 500;								
 								letter-spacing: -1px;
 								span {									
 									letter-spacing: -0.8px;
@@ -16766,7 +16766,7 @@ table.tableRanking td {
 							.per {
 								color: #E1305A;								
 								font-size: 13px;								
-								font-weight: 600;								
+								font-weight: 500;								
 								letter-spacing: -1px;
 								span {
 									letter-spacing: -0.8px;
@@ -16786,7 +16786,7 @@ table.tableRanking td {
 					display: flex;
 					align-items: center;
 					justify-content: center;
-					margin-top: 16px;
+					margin-top: 8px;
 					width: 100%;
 				}
 				.fit_margin {
@@ -16798,7 +16798,7 @@ table.tableRanking td {
 					color: #6A727B;
 					text-align: center;
 					font-size: 13px;					
-					font-weight: 600;				
+					font-weight: 500;				
 					line-height: 1.2;	
 					.num {
 						&.increase {

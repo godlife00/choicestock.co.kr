@@ -2153,8 +2153,125 @@ $(document).ready(function () {
     }
 
 
-    
+    // 레시피 - 골든크로스 이평선 차트
+    function createCrossChart(containerId, data20Days, data60Days, data120Days) {
+        Highcharts.chart(containerId, {
+            chart: {
+                type: 'spline',
+                panning: {
+                    enabled: true,
+                    type: 'x'
+                },
+                followTouchMove: true,
+                // width: 126,
+                height: 122,
+                margin: [0, 0, 0, 0],
+            },
 
+            title: {
+                text: '',
+                align: 'left'
+            },
+
+            subtitle: {
+                text: '',
+                align: 'left'
+            },
+
+            navigator: {
+                enabled: false,
+            },
+
+            scrollbar: {
+                enabled: false,
+            },
+
+            rangeSelector: {
+                enabled: false,
+            },
+
+            credits: {
+                enabled: false
+            },
+
+            exporting: {
+                enabled: false,
+            },
+
+            legend: {
+                enabled: false,
+            },
+
+            yAxis: {
+                title: {
+                    text: ''
+                },
+                visible: false,
+                labels: {
+                    enabled: false
+                }
+            },
+
+            xAxis: {
+                type: 'datetime',
+                showFirstLabel: true,
+                showLastLabel: true,
+                endOnTick: false,
+                dateTimeLabelFormats: {
+                    month: '%Y.%m'
+                },
+                labels: {
+                    enabled: false
+                }
+            },
+
+            plotOptions: {
+                series: {
+                    label: {
+                        connectorAllowed: false
+                    },
+                    marker: {
+                        enabled: false,
+                        symbol: "circle",
+                    },
+                    groupPadding: 0.3
+                }
+            },
+
+            tooltip: {
+                enabled: false,
+            },
+
+            colors: ['#E1305A', '#C7CBE9', '#F1CC0C'],
+
+            series: [{
+                name: '20일',
+                type: 'spline',
+                data: data20Days
+            }, {
+                name: '60일',
+                type: 'spline',
+                data: data60Days
+            }, {
+                name: '120일',
+                type: 'spline',
+                data: data120Days
+            }],
+
+        });
+    }
+    if ($('#cross_chart1_1').length) {
+        createCrossChart('cross_chart1_1', [10, 18, 22, 28, 32, 36, 40], [12, 28, 32, 38, 22, 26, 50],  [15, 20, 30, 40, 45, 50, 55]);
+    }
+    if ($('#cross_chart1_2').length) {
+        createCrossChart('cross_chart1_2', [12, 28, 32, 38, 22, 26, 30], [10, 18, 22, 28, 32, 36, 40], [15, 20, 35, 43, 42, 51, 35]);
+    }
+    if ($('#cross_chart1_3').length) {
+        createCrossChart('cross_chart1_3', [12, 28, 32, 38, 22, 26, 30], [10, 18, 22, 28, 32, 36, 40], [15, 20, 35, 43, 42, 51, 35]);
+    }
+    if ($('#cross_chart1_4').length) {
+        createCrossChart('cross_chart1_4', [12, 28, 32, 38, 22, 26, 30], [10, 18, 22, 28, 32, 36, 40], [15, 20, 35, 43, 42, 51, 35]);
+    }
 
     // 레시피 - 스파이더 차트
     function createGrowthChart(containerId, seriesData, centerScore) {
