@@ -123,37 +123,11 @@
 
         <!-- 2024 신년이벤트 -->
         <div class="signalpop event2024_payment">
-            <div class="box">
-                <div class="content" onclick="location.href ='../payment/step01.html'" style="cursor:pointer;">
-                    <div class="info_txt">
-                        <!-- <p class="txt01">메타플랫폼스(META)</p>
-                        <p class="txt02">매매신호 수익률 227.44%</p> -->
-                    </div>
-                    <script>
-                        document.addEventListener('DOMContentLoaded', function () {
-                            var images = [
-                                'img/banner/event_mainBtm_240123.png?v=240920',
-                                'img/banner/event_mainBtm_240123_v.png?v=240920' // 두 번째 이미지 경로
-                            ];
-        
-                            var randomIndex = Math.floor(Math.random() * images.length);
-                            var imageUrl = images[randomIndex];
-        
-                            var divElement = document.querySelector('.info_txt');
-                            divElement.style.background = "url('" + imageUrl + "') no-repeat center 0";
-        
-                            // 버튼 텍스트 변경
-                            var buttonElement = document.querySelector('.btn_area a');
-                            if (randomIndex === 0) {
-                                buttonElement.innerHTML = '프리미엄 첫 달 <b>1,000원!</b>'; // 첫번째 이미지 버튼 문구
-                            } else if (randomIndex === 1) {
-                                buttonElement.innerHTML = '프리미엄 첫 달 <b>1,000원!</b>'; // 두번째 이미지 버튼 문구
-                            }
-                        });
-                    </script>
-                    <div class="btn_area">
-                        <a href="../payment/step01.html" class="btn payment_1000">프리미엄 첫달 <b>1,000원!</b></a>
-                    </div>
+            <div class="box" style="background-color: #213E4E;"> 
+                <div class="content" onclick="window.open('https://www.yes24.com/campaign/01_Book/yesFunding/yesFundingBook.aspx?EventNo=254939', '_blank')" style="cursor:pointer; padding: 0; background: #213E4E;">                    
+                    <div style="max-width: 410px; margin: 0 auto;">
+                        <img src="img/banner/mijooeun_bookevent.png?v=240920" alt="" style="display: inline-block; width: 100%; height: 100%;">
+                    </div>                    
                 </div>
 
                 <div class="ftr">
@@ -161,6 +135,13 @@
                         <input type="checkbox" name="pop_today" id="pop_today" /> 오늘 하루 열지 않기</label>
                     <a href="javascript:closeWin();" class="btn_close">닫기</a>
                 </div>
+                <style>
+                    .v_signalStreng.globalStock .free_2weeks .signalpop.event2024_payment .ftr .btn_close {
+                        &::after, &::before {
+                            background-color: #F8FDDE;
+                        }
+                    } 
+                </style>
 
             </div>
         </div>
