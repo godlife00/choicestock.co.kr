@@ -1967,6 +1967,17 @@ $(document).ready(function () {
             loadingTextCardChange.innerHTML = `<b>카드변경 처리중 입니다${dots}</b>`;
         }, 500); // 500ms마다 업데이트 (0.5초)
 
-    }    
-
+    }          
 });
+// 레시피 리스트 벽돌쌓기 레이아웃, Masonry js 
+window.onload = () => {
+    document.querySelectorAll(".box_tabs .list_masonry").forEach((wrap) => {
+        wrap.querySelectorAll(".figure").forEach((item) => {
+            item.style.gridRowEnd = `span ${item.clientHeight + 48}`;
+        });
+
+        wrap.style.display = "grid";
+        wrap.style.gridTemplateColumns = "repeat(auto-fill, 164px)";
+        wrap.style.gridAutoRows = "1px";
+    });
+}
