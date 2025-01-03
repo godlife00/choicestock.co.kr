@@ -16337,28 +16337,27 @@ table.tableRanking td {
 			padding-bottom: 0;						
 		}
 		.sub_mid.recipe_tabs .box_tabs .list_masonry {															
-			box-sizing: border-box;						
-			justify-content: space-around;
-			gap: 0 12px;
-			@media (min-width:320px) and (max-width: 374px) {
-				grid-template-columns: repeat(auto-fill, 150px) !important;
-			}			
-			
+			display: flex;            
+            flex-wrap: wrap;						
 		}		
 
-		.sub_mid.recipe_tabs .box_tabs .list_masonry > .figure {			
-			// display: inline-flex;
-			// flex-direction: column;
-			// flex-wrap: wrap;
-			// gap: 12px 12px;			
-			width: 100%;
-			max-width: 164px;
-			@media (min-width:320px) and (max-width: 374px) {
-				max-width: 150px;
-			}			
-			border-radius: 16px;
-			background-color: transparent;
-			background-color: greenyellow;
+		.sub_mid.recipe_tabs .box_tabs .list_masonry > .figure {						
+			margin: 24px 0;
+            width: calc(50% - 7px);    
+			min-width: 150px;        
+            @media (min-width: 576px) {				
+                width: calc(33% - 14px);
+            }
+
+            @media (min-width: 768px) {
+                width: calc(25% - 14px);
+            }
+
+            @media (min-width: 992px) {
+                width: calc(25% - 14px);
+            }
+            box-sizing: border-box;
+
 			a {
 				margin-top: 12px;
 			}

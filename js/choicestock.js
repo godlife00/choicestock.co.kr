@@ -1970,14 +1970,28 @@ $(document).ready(function () {
     }          
 });
 // 레시피 리스트 벽돌쌓기 레이아웃, Masonry js 
-window.onload = () => {
-    document.querySelectorAll(".box_tabs .list_masonry").forEach((wrap) => {
-        wrap.querySelectorAll(".figure").forEach((item) => {
-            item.style.gridRowEnd = `span ${item.clientHeight + 48}`;
+
+function debounce(func, wait) {
+    let timeout;
+    return function () {
+        clearTimeout(timeout);
+        timeout = setTimeout(func, wait);
+    };
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+    const masonryContainers = document.querySelectorAll('.list_masonry');
+
+    masonryContainers.forEach(function (container) {
+        const masonryInstance = new Masonry(container, {
+            itemSelector: '.figure', // 각 항목의 셀렉터
+            columnWidth: '.figure', // 컬럼 너비            
+            percentPosition: true, // 반응형 비율 계산
+            gutter: 14, // 항목 간격 (픽셀 단위)
+            horizontalOrder: true, // 좌우 간격 추가            
+            fitWidth: true // 상하 간격 추가
         });
 
-        wrap.style.display = "grid";
-        wrap.style.gridTemplateColumns = "repeat(auto-fill, 164px)";
-        wrap.style.gridAutoRows = "1px";
+        window.addEventListener('resize', debounce(() => masonryInstance.layout(), 100));
     });
-}
+});
