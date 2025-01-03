@@ -2242,35 +2242,33 @@ $(document).ready(function () {
                 enabled: false,
             },
 
-            colors: ['#E1305A', '#C7CBE9', '#F1CC0C'],
+            colors: ['rgb(92, 172, 0) ', 'rgb(196, 196, 196)'],
 
             series: [{
                 name: '20일',
                 type: 'spline',
-                data: data20Days
+                zIndex : 2,
+                data: data20Days,
             }, {
                 name: '60일',
                 type: 'spline',
+                zIndex : 1,
                 data: data60Days
-            }, {
-                name: '120일',
-                type: 'spline',
-                data: data120Days
             }],
 
         });
     }
     if ($('#cross_chart1_1').length) {
-        createCrossChart('cross_chart1_1', [10, 18, 22, 28, 32, 36, 40], [12, 28, 32, 38, 22, 26, 50],  [15, 20, 30, 40, 45, 50, 55]);
+        createCrossChart('cross_chart1_1', [10, 18, 22, 28, 32, 36, 40], [12, 28, 32, 38, 22, 26, 50],);
     }
     if ($('#cross_chart1_2').length) {
-        createCrossChart('cross_chart1_2', [12, 28, 32, 38, 22, 26, 30], [10, 18, 22, 28, 32, 36, 40], [15, 20, 35, 43, 42, 51, 35]);
+        createCrossChart('cross_chart1_2', [12, 28, 32, 38, 22, 26, 30], [10, 18, 22, 28, 32, 36, 40],);
     }
     if ($('#cross_chart1_3').length) {
-        createCrossChart('cross_chart1_3', [12, 28, 32, 38, 22, 26, 30], [10, 18, 22, 28, 32, 36, 40], [15, 20, 35, 43, 42, 51, 35]);
+        createCrossChart('cross_chart1_3', [12, 28, 32, 38, 22, 26, 30], [10, 18, 22, 28, 32, 36, 40],);
     }
     if ($('#cross_chart1_4').length) {
-        createCrossChart('cross_chart1_4', [12, 28, 32, 38, 22, 26, 30], [10, 18, 22, 28, 32, 36, 40], [15, 20, 35, 43, 42, 51, 35]);
+        createCrossChart('cross_chart1_4', [12, 28, 32, 38, 22, 26, 30], [10, 18, 22, 28, 32, 36, 40],);
     }
 
     // 레시피 - 스파이더 차트
