@@ -6531,8 +6531,8 @@ $(document).ready(function () {
             chart: {
                 backgroundColor: null,
                 scrollablePlotArea: {
-                    minWidth: 700,
-                    scrollPositionX: 1
+                    minWidth: 480,
+                    scrollPositionX: 0
                 }
             },
             credits: {
@@ -6642,6 +6642,7 @@ $(document).ready(function () {
                     formatter: function () {
                         const year = new Date(this.value).getFullYear();
                         const categories = {2023: '2023.03' ,2024: '2024.03' ,2025: '2025.03<br> <span style="font-size:10px">(예상)</span>' ,2026: '2026.03<br> <span style="font-size:10px">(예상)</span>' ,2027: '2027.03<br> <span style="font-size:10px">(예상)</span>' ,};                            
+                        // {'2023.03': '2023.03' ,'2024.03': '2024.03' ,'2025.03': '2025.03<br> <span style="font-size:10px">(예상)</span>' ,'2026.03': '2026.03<br> <span style="font-size:10px">(예상)</span>' ,'2027.03': '2027.03<br> <span style="font-size:10px">(예상)</span>' ,};
                         return categories[year];
                     }
                 },
