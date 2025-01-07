@@ -37438,6 +37438,112 @@ body.v_signalStreng {
   padding: 15px 15px;
 }
 
+.service_wrap.mijooeun_toppick .box.premium_box .title_box h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px 5px;
+  color: #C7CBE9;
+  font-size: 20px;
+  font-weight: 700;
+}
+.service_wrap.mijooeun_toppick .box.premium_box .title_box h1 + .year {
+  display: inline-block;
+  width: auto;
+  height: 36px;
+  margin-top: 20px;
+  margin-bottom: 8px;
+}
+.service_wrap.mijooeun_toppick .box.premium_box .title_box .h2_title {
+  padding: 0;
+  margin: 0;
+  color: #70EFFA;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+.service_wrap.mijooeun_toppick .box.premium_box .bg_img {
+  background: url("/img/2025_snake.svg") no-repeat center 30px;
+}
+.service_wrap.mijooeun_toppick .txt_ai {
+  margin-top: 100px;
+}
+.service_wrap.mijooeun_toppick .txt_ai p {
+  color: #FFF;
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 27px;
+}
+.service_wrap.mijooeun_toppick .txt_ai p b {
+  display: block;
+  color: #FFF;
+  text-align: center;
+  font-size: 20px;
+  line-height: 27px;
+}
+.service_wrap.mijooeun_toppick .box {
+  padding: 100px 0;
+}
+.service_wrap.mijooeun_toppick .box .iframe_video {
+  position: relative;
+  margin: 15px auto 32px;
+  width: 90%;
+  border-radius: 16px;
+  background: #F6F6F6;
+  overflow: hidden;
+  min-height: 177px;
+  box-sizing: border-box;
+  padding-bottom: 48%;
+}
+.service_wrap.mijooeun_toppick .box .iframe_video iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.service_wrap.mijooeun_toppick .box a.go_youtube {
+  display: block;
+  margin: 15px auto 32px;
+  width: 90%;
+  border-radius: 16px;
+  background: #F6F6F6;
+  overflow: hidden;
+  box-sizing: border-box;
+  padding-bottom: 56.25%; /* 16:9 비율에 맞춘 패딩 */
+  background: #F5F6FC url("/img/free_video.svg") no-repeat 0 0;
+  background-size: cover;
+}
+.service_wrap.mijooeun_toppick .box.user_review {
+  padding: 0;
+  background: none;
+  background-color: #26ABFF;
+  gap: 8px 8px;
+}
+.service_wrap.mijooeun_toppick .box.user_review .benefits_guide {
+  border-radius: 16px;
+  background: #F7F8F9;
+  opacity: 0;
+  transform: translateY(250px);
+  transition: transform 0.6s ease-out;
+}
+.service_wrap.mijooeun_toppick .box.user_review .benefits_guide.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.service_wrap.mijooeun_toppick .box.user_review .benefits_guide::before {
+  display: none;
+}
+.service_wrap.mijooeun_toppick .box.user_review .benefits_guide .title_box h2 {
+  color: #333;
+  font-family: Pretendard;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
 #container {
   padding-bottom: 0;
 }
