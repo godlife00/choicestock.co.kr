@@ -6514,7 +6514,7 @@ $(document).ready(function () {
         var eps2 = [[1680220800000, 3.23],[1711843200000, 4.86],];
         var eps3 = [[1711843200000, 4.86],[1743379200000, 5.52],[1774915200000, 6.28],[1806451200000, 7.38],];
         // var categories = {'2020.06': '2020.06' ,'2020.12': '2020.12' ,'2021.12': '2021.12' ,'2022.12': '2022.12' ,'2023.12': '2023.12' ,'2024.06': '2024.06<br> <span style="font-size:10px">(예상)</span>' ,};
-        // var positions = [Date.UTC(2023, 8),Date.UTC(2024, 8),Date.UTC(2025, 8),Date.UTC(2026, 8),Date.UTC(2027, 8),];
+        var positions = [Date.UTC(2023, 8),Date.UTC(2024, 8),Date.UTC(2025, 8),Date.UTC(2026, 8),Date.UTC(2027, 8),];        
 
         // 주가 데이터 포인트의 날짜에 가장 가까운 주당순이익 데이터를 찾는 함수
         const findClosestEpsData = (epsData, targetDate) => {
@@ -6623,14 +6623,16 @@ $(document).ready(function () {
                 type: 'datetime',
                 tickPositioner: function () {				                  
                     // 특정 날짜(년도)만을 위한 timestamp 배열 생성
-                    var positions = [
-                            // Date.UTC(표시할 연도, 표시할 월 (ex. 1월이면 0, 9월이라면 8)),                                                                        
-                            Date.UTC(2023, 2),Date.UTC(2024, 2),Date.UTC(2025, 2),Date.UTC(2026, 2),Date.UTC(2027, 2)
-                        ];
+                    // var positions = [
+                    //     // Date.UTC(표시할 연도, 표시할 월 (ex. 1월이면 0, 9월이라면 8)),                                                                        
+                    //     Date.UTC(2023, 2),Date.UTC(2024, 2),Date.UTC(2025, 2),Date.UTC(2026, 2),Date.UTC(2027, 2)
+                    // ];                    
+                    let initialPositions = positions.slice(); // positions 배열 복사
+                    
                     // 툴팁 표시를 위해 마지막 날짜의 월을 +1 시킴
-                    const lastDate = new Date(positions[positions.length - 1]);
+                    const lastDate = new Date(initialPositions[initialPositions.length - 1]);
                     lastDate.setMonth(lastDate.getMonth() + 1);
-                    positions[positions.length - 1] = Date.UTC(lastDate.getFullYear(), lastDate.getMonth());
+                    initialPositions[initialPositions.length - 1] = Date.UTC(lastDate.getFullYear(), lastDate.getMonth());
                     return positions;                    
                 },
 
