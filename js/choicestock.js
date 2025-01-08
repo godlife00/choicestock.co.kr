@@ -1611,6 +1611,17 @@ $(document).ready(function () {
         }        
     });
 
+    // 툴팁 - 탑픽 프리미엄 팝업
+    $('.service_wrap.mijooeun_toppick .box.toppick_list .tooltip_premium01').on('click', function () {
+        if ($(this).hasClass('no_signal')) {            
+            return;
+        } else {
+            $('.modal').hide().removeClass('slideUp');
+            $('.blocker').show();
+            $('.premium_login_guide').show().addClass('slideUp');
+        }        
+    });
+
     // 매매신호 플로팅 배너 열기, 닫기 스크립트
     // 스크롤 이벤트를 감지하여 처리    
     function scrollsignalpop() {        

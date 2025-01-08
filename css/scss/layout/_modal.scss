@@ -1980,9 +1980,91 @@
 				font-size: 0.9375rem;
 			}
 		} 
-    }
+    }    
+}
+// 탑픽 프리미엄 가입 안내 팝업
+.modal.premium_login_guide {
+	top: 15%;
+	border-radius: 16px;
+	background-color: #161c40;
+	* {
+		background-color: #161c40;
+	}
+	.pop_header {
+		border: none;
+		border-top-left-radius: 16px;
+		border-top-right-radius: 16px;
+		border-bottom: none;
+		background-color: #161c40;
+		padding: 0 20px 15px;
 
-    
+		.sub_top {
+			.h2_title {
+				margin: 0;
+				margin-bottom: 24px;
+				padding: 0;
+				padding-top: 50px;
+				font-size: 1.125rem;
+				font-weight: bold;
+				line-height: 1.17;
+				text-align: center;
+				color: #c7cbe9;
+			}
+
+			.period {
+				font-size: 28px;
+				font-weight: bold;
+				text-align: center;
+				color: #404fc3;
+
+			}
+		}
+	}
+	.pop_con {
+		background: #161c40 url('/img/first_month_3300.svg') no-repeat center top;
+		padding-bottom: 20px;
+
+		ul {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			align-content: center;
+			justify-content: center;
+			flex-wrap: wrap;
+			gap: 6px 6px;
+			margin-top: 210px;
+
+			li {
+				display: flex;
+				align-items: center;
+				gap: 0 7px;
+				font-size: 0.875rem;
+				line-height: 1.14;
+				color: #c7cbe9;
+
+				b {
+					font-weight: bold;
+					color: #404fc3;
+				}
+
+				.num {
+					display: inline-flex;
+					justify-content: center;
+					align-items: center;
+					width: 20px;
+					height: 20px;
+					box-sizing: border-box;
+					border-radius: 50%;
+					background-color: #404fc3;
+					font-size: 11px;
+					text-align: center;
+					color: #161c40;
+				}
+			}
+		}
+	}
+	
+	
 }
 
 // 나이스페이 결제 중 보이는 로딩 팝업

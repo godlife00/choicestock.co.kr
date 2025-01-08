@@ -38,7 +38,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
     <!-- css -->
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <link rel="stylesheet" type="text/css" href="../css/scss/choicestock.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="../css/scss/choicestock.css" /> -->
+    <link rel="stylesheet" type="text/css" href="../css/scss/choicestock_mijooeun.css" />
     <!-- js -->
     <script src="../js/choicestock.js"></script>
 </head>
@@ -53,7 +54,7 @@
                             <a href="javascript:history.back();" class="go_back">히스토리백</a>
                         </div>
                         <div class="cen">
-                            <h1 class="headerLogo"><span>서비스소개</span></h1>
+                            <!-- <h1 class="headerLogo"><span>서비스소개</span></h1> -->
                         </div>
                         <div class="right">                        
                         </div>
@@ -103,7 +104,7 @@
                 </div>
 
                 <!-- 초이스스탁US 탑 픽 -->
-                <div class="box">                                 
+                <div class="box video_eyes">                                 
                     <div class="title_box">
                         <h1>2025년<br><b>초이스스탁US 탑 픽!</b></h1>
                     </div>                    
@@ -117,27 +118,124 @@
                 </div> 
 
                 <!-- 탑픽 종목 리스트 -->
-                <div class="box user_review visible">                    
-                    <div class="benefits_guide">                        
-                        <div class="title_box">
-                            <h2>뱅크오브아메리카</h2>
-                        </div>
-                    </div>
-                    <div class="benefits_guide">                        
-                        <div class="title_box">
-                            <h2>뱅크오브아메리카</h2>
-                        </div>
-                    </div>
-                    <div class="benefits_guide">                        
-                        <div class="title_box">
-                            <h2>뱅크오브아메리카</h2>
-                        </div>
-                    </div>
+                <div class="box toppick_list visible">                    
+                    <ul class="logo_list" onclick="location.href ='../search/search_outline.html'" style="cursor:pointer;">
+                        <li class="title_logo">
+                            <span class="logo"><img src="https://uslogo.datahero.co.kr/img/logo/us/mvl/TTD.svg" alt=""></span>
+                        </li>
+                        <li class="detail">
+                            <div class="title">
+                                <a href="../search/search_outline.html" class="">더트레이드데스크</a>
+                            </div>
+                            <div class="num">
+                                <span>338.25</span>
+                            </div>
+                            <div class="per">
+                                <span class="increase">+3.24% (+2.23%)</span>
+                                <!-- increase 증가, decrease 감소, 보합은 same -->
+                            </div>
+                        </li>                        
+                    </ul>                                    
+                    <ul class="logo_list" onclick="location.href ='../search/search_outline.html'" style="cursor:pointer;">
+                        <li class="title_logo">
+                            <span class="logo"><img src="https://uslogo.datahero.co.kr/img/logo/us/mvl/SHOP.svg" alt=""></span>
+                        </li>
+                        <li class="detail">
+                            <div class="title">
+                                <a href="../search/search_outline.html" class="">쇼피파이</a>
+                            </div>
+                            <div class="num">
+                                <span>338.25</span>
+                            </div>
+                            <div class="num">
+                                <span class="decrease">-3.24% (-2.23%)</span>
+                                <!-- increase 증가, decrease 감소, 보합은 same -->
+                            </div>
+                        </li>
+                    </ul>                                    
+                    <ul class="logo_list" onclick="location.href ='../search/search_outline.html'" style="cursor:pointer;">
+                        <li class="title_logo">
+                            <span class="logo"><img src="https://uslogo.datahero.co.kr/img/logo/us/mvl/CYBR.svg" alt=""></span>
+                        </li>
+                        <li class="detail">
+                            <div class="title">
+                                <a href="../search/search_outline.html" class="">사이버아크소프트웨어</a>
+                            </div>
+                            <div class="num">
+                                <span>338.25</span>
+                            </div>
+                            <div class="num">
+                                <span class="decrease">-3.24% (-2.23%)</span>
+                                <!-- increase 증가, decrease 감소, 보합은 same -->
+                            </div>
+                        </li>
+                    </ul>                                    
+                    <ul class="logo_list tooltip_premium01" onclick="" id="btn_free" style="cursor:pointer;">
+                        <li class="title_logo">
+                            <span class="logo"><img src="" onerror="this.style.display='none'" alt="" style="display: none;"></span>
+                        </li>
+                        <li class="detail">
+                            <div class="title">
+                                <span class="md-trigger"> 마<span class="remark">
+                                        <div class="txt_filter size_M"><i></i><i></i><i></i><i></i>
+                                        </div>
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="num">
+                                <span>338.25</span>
+                            </div>
+                            <div class="per">
+                                <span class="same">0.00% (+2.23%)</span>
+                                <!-- increase 증가, decrease 감소, 보합은 same -->
+                            </div>
+                        </li>
+                    </ul> 
                 </div>
 
-
+                <!-- 스폐셜 할인혜택 -->
+                <div class="할인혜택">
+                    <div class="txt">
+                        <p>초이스스탁US 프리미엄 서비스를 <br> <b>50% 특별 할인가</b>로 이용하세요.</p>
+                    </div>
+                    <div class="group">
+                        <div class="step_box">
+                            <div class="top">
+                                <h3 class="title">연간 정기결제</h3>
+                            </div>
+                            <div class="payRight">
+                                <span class="pay01">396,000원
+                                    <span class="del_img">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="88" height="9" viewBox="0 0 88 9"
+                                            fill="none">
+                                            <path d="M0 1H85L76.3068 8" stroke="#404FC3" stroke-opacity="0.9"
+                                                stroke-width="2" />
+                                        </svg>
+                                    </span>
+                                </span>
+                                <span class="pay02">200,000원
+                                    <span class="pay_sale">
+                                        <strong>(50%할인)</strong>
+                                    </span>
+                                </span>
+                            </div>
+                            <!-- //payRight -->
+                        </div>
+                        <!-- //step_box -->
+                    </div>
+                    <!-- //group -->
+                    <div class="year_sale domestic">
+                        <!-- 국내고객/ 해외고객 > 개별 회원가입/로그인 페이지 링크 -> 이후 결제 페이지로 자동이동 -->
+                        <a href="../payment/special_step01.html">프리미엄 연간구독 신청 (국내 고객 전용)</a>
+                    </div>
+                    <div class="year_sale overseas">
+                        <!-- 국내고객/ 해외고객 > 개별 회원가입/로그인 페이지 링크 -> 이후 결제 페이지로 자동이동 -->
+                        <a href="../payment/special_step01.html">프리미엄 연간구독 신청 (해외 고객 전용)</a>
+                    </div>
+                </div>
+                
                 <div class="premium_applybtn">
-                    <a href="../payment/step01.html" class="btn btn_apply"><i></i>초이스스탁US <strong>50% 특별 할인!</strong></a>
+                    <a href="https://www.choicestock.co.kr/main/special_welcome" class="btn btn_apply"><i></i>초이스스탁US <strong>50% 특별 할인!</strong></a>
                 </div>
     
             </div>
@@ -188,8 +286,63 @@
             <!-- //notice -->
         </div>
 
+        <div class="modalBox">
+            <div class="modal premium_login_guide">                
+                <div class="pop_header">
+                    <div class="sub_top">
+                        <h2 class="h2_title">AI가 알려주는 투자타이밍!</h2>
+                        <p class="period">초이스스탁US 프리미엄</p>
+                    </div>                    
+                    <span class="clse">
+                        <!--닫기-->
+                    </span>
+                </div>
+                <!-- //pop_header -->
+                <div class="pop_con">
+                    <ul>
+                        <li><span class="num">1</span>지금살까? 특허받은 전종목 <b>매매신호</b></li>
+                        <li><span class="num">2</span>매수부터 매도까지! <b>종목추천</b></li>
+                        <li><span class="num">3</span>투자매력과 적정주가를 한눈에 <b>종목진단</b></li>
+                    </ul>
+                </div>
+            </div> 
+            <!-- //premium_login_guide -->
+            <div class="blocker"></div>
+        </div>
+
     </div>
     <!-- //wrap -->
 </body>
+
+<script>
+    $(document).ready(function () {
+        // 초이스스탁US 프리미엄 버튼 숨기기
+        var $premiumApplyBtn = $('.premium_applybtn');
+        var $discountSection = $('.할인혜택');
+
+        function checkIntersection() {
+            var windowBottom = $(window).scrollTop() + $(window).height();
+            var discountTop = $discountSection.offset().top;
+
+            if (windowBottom >= discountTop) {
+                $premiumApplyBtn.hide();
+            } else {
+                $premiumApplyBtn.show();
+            }
+        }
+
+        $(window).on('scroll resize', checkIntersection);
+        checkIntersection(); // 초기 상태 확인을 위해 호출
+
+        // 페이지 하단으로 이동
+        $('.btn_apply').on('click', function (event) {
+            event.preventDefault();
+            $('html, body').animate({
+                scrollTop: $(document).height() - $(window).height() - 390
+            }, 800); // 800ms 동안 애니메이션 효과로 스크롤
+        });
+
+    })
+</script>
 
 </html>
