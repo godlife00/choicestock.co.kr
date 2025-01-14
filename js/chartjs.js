@@ -6787,229 +6787,239 @@ $(document).ready(function () {
             }, null);
         };
 
-        Highcharts.chart('containerfinancials2_1', {
-            chart: {
-                backgroundColor: null,
-                scrollablePlotArea: {
-                    minWidth: 480,
-                    scrollPositionX: 0
-                }
-            },
-            credits: {
-                enabled: false,
-            },
-            lang: {
-                noData: "해당 데이터가 없습니다",
-            },
-            exporting: {
-                enabled: false,
-            },
-
-            title: {
-                text: null,
-            },
-            colors: ["#4d6ee4", "#F0CC09"],
-
-            tooltip: {
-                useHTML: true,
-                shadow: false,
-                split: false,
-                shared: true,
-                formatter: function () {
-                    let tooltipHtml = Highcharts.dateFormat('%Y.%m/%d', this.x) + '<br/>'; // 기본 날짜 포맷            
-                    // 주가 데이터와 주당순이익 데이터를 모두 포함하기 위한 플래그 초기화
-                    let priceIncluded = false;
-                    let epsIncluded = false;
-                    const targetDate = this.x; // 현재 주가 데이터 포인트의 날짜
-
-                    // 주가 데이터의 날짜를 기준으로 사용
-                    const priceDate = this.x;
-
-                    // EPS 데이터 탐색 및 업데이트 로직
-                    const findEpsData = (epsData, checkDate) => {
-                        return epsData.slice().reverse().find(eps => eps[0] <= checkDate);
-                    };
-
-                    this.points.forEach(point => {
-                        // 주가 데이터를 포함하는 조건
-                        if (point.series.name === '주가' && !priceIncluded) {
-                            tooltipHtml += `<strong style="color: ${point.series.color};">${point.series.name}</strong>: ${point.y}`;
-                            priceIncluded = true;
-                        }
-                        // 주당순이익 데이터를 포함하는 조건
-                        else if (point.series.name.includes('주당순이익') && !epsIncluded) {
-                            // '주당순이익(예상)'의 경우 날짜 포맷을 변경
-                            if (point.series.name === '주당순이익(예상)') {
-                                tooltipHtml = Highcharts.dateFormat('%Y', this.x);
-                            }
-                            epsIncluded = true;
-                        }
-                    });
-
-                    // 주가 데이터 포인트에 대한 툴팁 내용 추가 및 중복 표시 방지 로직
-                    this.points.forEach(point => {
-                        if (point.series.name === '주가' && !epsIncluded) {
-                            epsIncluded = true; // 주가 정보 추가 후 플래그 변경
-                        }
-                    });
-
-                    // eps2와 eps3 배열에서 주가 데이터 포인트의 날짜보다 이후이면서 가장 가까운 데이터를 찾음
-                    const closestEpsData = findClosestEpsData(eps2, targetDate);
-                    const closestEpsEstimate = findClosestEpsData(eps3, targetDate);
-
-                    // 찾은 데이터를 툴팁에 추가
-                    if (closestEpsData) {
-                        tooltipHtml += `<br/><strong style="color: #5CAC00;">주당순이익</strong>: ${closestEpsData[1]}`;
+        const renderChart = () => {
+            Highcharts.chart('containerfinancials2_1', {            
+                chart: {
+                    backgroundColor: null,
+                    scrollablePlotArea: {
+                        minWidth: 480,
+                        scrollPositionX: 0
                     }
-                    if (closestEpsEstimate && (!closestEpsData || closestEpsEstimate[0] < closestEpsData[0])) {
-                        tooltipHtml += `<br/><strong style="color: #c6c6c6;">주당순이익(예상)</strong>: ${closestEpsEstimate[1]}`;
-                    }
-                    return tooltipHtml;
-                }
-            },            
-
-            xAxis: [{                
-                lineColor: null,
-                minorGridLineWidth: 0,
-                gridLineWidth: 0,
-                alternateGridColor: null,
-                startOnTick: true, // 시작 지점에 틱 표시
-                endOnTick: true,   // 끝 지점에 틱 표시
-                showFirstLabel: true, // 처음 레이블 표시
-                showLastLabel: true,   // 마지막 레이블 표시      
-                tickColor: null,
-                minPadding: 1, // 왼쪽 패딩 (0 = 없음, 1 = 최대)
-                maxPadding: 1,  // 오른쪽 패딩 (0 = 없음, 1 = 최대)
-                type: 'datetime',
-                tickPositioner: function () {				                  
-                    // 특정 날짜(년도)만을 위한 timestamp 배열 생성
-                    // var positions = [
-                    //     // Date.UTC(표시할 연도, 표시할 월 (ex. 1월이면 0, 9월이라면 8)),                                                                        
-                    //     Date.UTC(2023, 2),Date.UTC(2024, 2),Date.UTC(2025, 2),Date.UTC(2026, 2),Date.UTC(2027, 2)
-                    // ];                    
-                    let initialPositions = positions.slice(); // positions 배열 복사                    
-                    
-                    // 툴팁 표시를 위해 마지막 날짜의 월을 +1 시킴
-                    const lastDate = new Date(initialPositions[initialPositions.length - 1]);
-                    lastDate.setMonth(lastDate.getMonth() + 1);
-                    initialPositions[initialPositions.length - 1] = Date.UTC(lastDate.getFullYear(), lastDate.getMonth());
-                    console.table(initialPositions);
-                    return initialPositions;                    
+                },
+                credits: {
+                    enabled: false,
+                },
+                lang: {
+                    noData: "해당 데이터가 없습니다",
+                },
+                exporting: {
+                    enabled: false,
                 },
 
-                labels: {
-                    style: {
-                        color: '#939393',
-                        fontSize: '12px'
-                    },
-                    formatter: function () {                            
-                        const categoriesCopy = { ...categories }; // categories 배열을 복사해서 가져오는 변수 추가
+                title: {
+                    text: null,
+                },
+                colors: ["#4d6ee4", "#F0CC09"],
 
-                        // 마지막 값의 날짜를 변경하는 스크립트 추가
-                        const lastKey = Object.keys(categoriesCopy).pop();
-                        if (lastKey) {
-                            const newKey = lastKey.replace(/(\d{4})\.(\d{2})/, (match, year, month) => {
-                                if (month === '12') {
-                                    return `${String(Number(year) + 1)}.01`;
+                tooltip: {
+                    useHTML: true,
+                    shadow: false,
+                    split: false,
+                    shared: true,
+                    formatter: function () {
+                        let tooltipHtml = Highcharts.dateFormat('%Y.%m/%d', this.x) + '<br/>'; // 기본 날짜 포맷            
+                        // 주가 데이터와 주당순이익 데이터를 모두 포함하기 위한 플래그 초기화
+                        let priceIncluded = false;
+                        let epsIncluded = false;
+                        const targetDate = this.x; // 현재 주가 데이터 포인트의 날짜
+
+                        // 주가 데이터의 날짜를 기준으로 사용
+                        const priceDate = this.x;
+
+                        // EPS 데이터 탐색 및 업데이트 로직
+                        const findEpsData = (epsData, checkDate) => {
+                            return epsData.slice().reverse().find(eps => eps[0] <= checkDate);
+                        };
+
+                        this.points.forEach(point => {
+                            // 주가 데이터를 포함하는 조건
+                            if (point.series.name === '주가' && !priceIncluded) {
+                                tooltipHtml += `<strong style="color: ${point.series.color};">${point.series.name}</strong>: ${point.y}`;
+                                priceIncluded = true;
+                            }
+                            // 주당순이익 데이터를 포함하는 조건
+                            else if (point.series.name.includes('주당순이익') && !epsIncluded) {
+                                // '주당순이익(예상)'의 경우 날짜 포맷을 변경
+                                if (point.series.name === '주당순이익(예상)') {
+                                    tooltipHtml = Highcharts.dateFormat('%Y', this.x);
                                 }
-                                return `${year}.${String(Number(month) + 1).padStart(2, '0')}`;
-                            });
-                            categoriesCopy[newKey] = categoriesCopy[lastKey];
-                            delete categoriesCopy[lastKey];
-                        }
-                        const formattedDate = Highcharts.dateFormat('%Y.%m', this.value);
-                        const label = categoriesCopy[formattedDate] || formattedDate;                        
-                        return `<div style="text-align: center; line-height: 1.2; color:#666;">${label}</div>`;
-                    },
-                    useHTML: true, // HTML 태그를 포함하여 출력                    
-                },
-            }],
-
-            yAxis: [{ // 첫 번째 Y축
-                title: {
-                    text: null
-                },
-                showFirstLabel: false,
-                labels: {
-                    style: {
-                        color: '#404fc3',
-                        fontSize: '12px'
-                    }
-                },
-            }, { // 두 번째 Y축
-                opposite: true, // 두 번째 Y축을 차트의 반대편에 배치
-                title: {
-                    text: null
-                },
-                gridLineWidth: 0,
-                showFirstLabel: false,
-                labels: {
-                    style: {
-                        color: '#5CAC00',
-                        fontSize: '12px'
-                    }
-                },
-            }],
-            series: [
-                {
-                    name: '주가',
-                    data: priceData,
-                    color: '#404fc3',
-                    yAxis: 0, // 두 번째 Y축에 연결
-                    zIndex: 1, // 다른 차트보다 위에 표시                
-                },
-                {
-                    type: 'line',
-                    name: '주당순이익',
-                    data: eps2,
-                    step: 'right', // 계단식 선을 오른쪽으로 그리도록 설정
-                    color: '#5CAC00',
-                    yAxis: 1, // 첫 번째 Y축에 연결
-                    zIndex: 2, // 다른 차트보다 위에 표시                
-                    events: {
-                        legendItemClick: function () {
-                            var visibility = !this.visible;
-                            // 'EPS(예상)' 시리즈 찾기
-                            var chart = this.chart;
-                            var predictedSeries = chart.series.find(function (s) {
-                                return s.name === '주당순이익(예상)';
-                            });
-                            if (predictedSeries) {
-                                // 'EPS(예상)' 시리즈의 가시성 변경
-                                predictedSeries.setVisible(visibility, false);
+                                epsIncluded = true;
                             }
-                            return true; // 기본 동작 실행 (시리즈 가시성 토글)
+                        });
+
+                        // 주가 데이터 포인트에 대한 툴팁 내용 추가 및 중복 표시 방지 로직
+                        this.points.forEach(point => {
+                            if (point.series.name === '주가' && !epsIncluded) {
+                                epsIncluded = true; // 주가 정보 추가 후 플래그 변경
+                            }
+                        });
+
+                        // eps2와 eps3 배열에서 주가 데이터 포인트의 날짜보다 이후이면서 가장 가까운 데이터를 찾음
+                        const closestEpsData = findClosestEpsData(eps2, targetDate);
+                        const closestEpsEstimate = findClosestEpsData(eps3, targetDate);
+
+                        // 찾은 데이터를 툴팁에 추가
+                        if (closestEpsData) {
+                            tooltipHtml += `<br/><strong style="color: #5CAC00;">주당순이익</strong>: ${closestEpsData[1]}`;
                         }
-                    },
-                },
-                {
-                    type: 'line',
-                    name: '주당순이익(예상)',
-                    data: eps3,
-                    step: 'right', // 계단식 선을 오른쪽으로 그리도록 설정
-                    dashStyle: 'dash',
-                    color: '#c6c6c6',
-                    yAxis: 1, // 첫 번째 Y축에 연결
-                    zIndex: 2, // 다른 차트보다 위에 표시
-                    showInLegend: false, // 범례 숨기기    
-                }
-            ],
-            plotOptions: {
-                series: {
-                    marker: {
-                        enabled: false,
-                    },
-                    states: {
-                        hover: {
-                            enabled: false // 시리즈 hover 상태 비활성화
-                        },
-                        inactive: {
-                            opacity: 1 // 비활성화된 시리즈의 투명도를 1로 설정하여 흐려지지 않도록 함
+                        if (closestEpsEstimate && (!closestEpsData || closestEpsEstimate[0] < closestEpsData[0])) {
+                            tooltipHtml += `<br/><strong style="color: #c6c6c6;">주당순이익(예상)</strong>: ${closestEpsEstimate[1]}`;
                         }
+                        return tooltipHtml;
                     }
+                },            
+
+                xAxis: [{                
+                    lineColor: null,
+                    minorGridLineWidth: 0,
+                    gridLineWidth: 0,
+                    alternateGridColor: null,
+                    startOnTick: true, // 시작 지점에 틱 표시
+                    endOnTick: true,   // 끝 지점에 틱 표시
+                    showFirstLabel: true, // 처음 레이블 표시
+                    showLastLabel: true,   // 마지막 레이블 표시      
+                    tickColor: null,
+                    minPadding: 1, // 왼쪽 패딩 (0 = 없음, 1 = 최대)
+                    maxPadding: 1,  // 오른쪽 패딩 (0 = 없음, 1 = 최대)
+                    type: 'datetime',
+                    tickPositioner: function () {				                  
+                        // 특정 날짜(년도)만을 위한 timestamp 배열 생성
+                        // var positions = [
+                        //     // Date.UTC(표시할 연도, 표시할 월 (ex. 1월이면 0, 9월이라면 8)),                                                                        
+                        //     Date.UTC(2023, 2),Date.UTC(2024, 2),Date.UTC(2025, 2),Date.UTC(2026, 2),Date.UTC(2027, 2)
+                        // ];                    
+                        let initialPositions = positions.slice(); // positions 배열 복사                    
+                        
+                        // 툴팁 표시를 위해 마지막 날짜의 월을 +1 시킴
+                        const lastDate = new Date(initialPositions[initialPositions.length - 1]);
+                        lastDate.setMonth(lastDate.getMonth() + 1);
+                        initialPositions[initialPositions.length - 1] = Date.UTC(lastDate.getFullYear(), lastDate.getMonth());
+                        console.table(initialPositions);
+                        return initialPositions;                    
+                    },
+
+                    labels: {
+                        style: {
+                            color: '#939393',
+                            fontSize: '12px'
+                        },
+                        formatter: function () {                            
+                            const categoriesCopy = { ...categories }; // categories 배열을 복사해서 가져오는 변수 추가
+
+                            // 마지막 값의 날짜를 변경하는 스크립트 추가
+                            const lastKey = Object.keys(categoriesCopy).pop();
+                            if (lastKey) {
+                                const newKey = lastKey.replace(/(\d{4})\.(\d{2})/, (match, year, month) => {
+                                    if (month === '12') {
+                                        return `${String(Number(year) + 1)}.01`;
+                                    }
+                                    return `${year}.${String(Number(month) + 1).padStart(2, '0')}`;
+                                });
+                                categoriesCopy[newKey] = categoriesCopy[lastKey];
+                                delete categoriesCopy[lastKey];
+                            }
+                            const formattedDate = Highcharts.dateFormat('%Y.%m', this.value);
+                            const label = categoriesCopy[formattedDate] || formattedDate;                        
+                            return `<div style="text-align: center; line-height: 1.2; color:#666;">${label}</div>`;
+                        },
+                        useHTML: true, // HTML 태그를 포함하여 출력                    
+                    },
+                }],
+
+                yAxis: [{ // 첫 번째 Y축
+                    title: {
+                        text: null
+                    },
+                    showFirstLabel: false,
+                    labels: {
+                        style: {
+                            color: '#404fc3',
+                            fontSize: '12px'
+                        }
+                    },
+                }, { // 두 번째 Y축
+                    opposite: true, // 두 번째 Y축을 차트의 반대편에 배치
+                    title: {
+                        text: null
+                    },
+                    gridLineWidth: 0,
+                    showFirstLabel: false,
+                    labels: {
+                        style: {
+                            color: '#5CAC00',
+                            fontSize: '12px'
+                        }
+                    },
+                }],
+                series: [
+                    {
+                        name: '주가',
+                        data: priceData,
+                        color: '#404fc3',
+                        yAxis: 0, // 두 번째 Y축에 연결
+                        zIndex: 1, // 다른 차트보다 위에 표시                
+                    },
+                    {
+                        type: 'line',
+                        name: '주당순이익',
+                        data: eps2,
+                        step: 'right', // 계단식 선을 오른쪽으로 그리도록 설정
+                        color: '#5CAC00',
+                        yAxis: 1, // 첫 번째 Y축에 연결
+                        zIndex: 2, // 다른 차트보다 위에 표시                
+                        events: {
+                            legendItemClick: function () {
+                                var visibility = !this.visible;
+                                // 'EPS(예상)' 시리즈 찾기
+                                var chart = this.chart;
+                                var predictedSeries = chart.series.find(function (s) {
+                                    return s.name === '주당순이익(예상)';
+                                });
+                                if (predictedSeries) {
+                                    // 'EPS(예상)' 시리즈의 가시성 변경
+                                    predictedSeries.setVisible(visibility, false);
+                                }
+                                return true; // 기본 동작 실행 (시리즈 가시성 토글)
+                            }
+                        },
+                    },
+                    {
+                        type: 'line',
+                        name: '주당순이익(예상)',
+                        data: eps3,
+                        step: 'right', // 계단식 선을 오른쪽으로 그리도록 설정
+                        dashStyle: 'dash',
+                        color: '#c6c6c6',
+                        yAxis: 1, // 첫 번째 Y축에 연결
+                        zIndex: 2, // 다른 차트보다 위에 표시
+                        showInLegend: false, // 범례 숨기기    
+                    }
+                ],
+                plotOptions: {
+                    series: {
+                        marker: {
+                            enabled: false,
+                        },
+                        states: {
+                            hover: {
+                                enabled: false // 시리즈 hover 상태 비활성화
+                            },
+                            inactive: {
+                                opacity: 1 // 비활성화된 시리즈의 투명도를 1로 설정하여 흐려지지 않도록 함
+                            }
+                        }
+                    },
                 },
-            },
+            });
+        };
+
+        let resizeTimeout;
+        $(window).on('resize', function() {
+            clearTimeout(resizeTimeout);
+            resizeTimeout = setTimeout(renderChart, 200); // 200ms 딜레이 후 차트 다시 그리기
         });
+
+        renderChart(); // 초기 차트 렌더링
     }
 
 
