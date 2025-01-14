@@ -14403,8 +14403,13 @@ table.tableRanking td {
 
 .globalStock .sub_search .sub_mid .search_financials_area .tableRanking td.th_guide span {
 	color: #939393;
-	font-size: 0.82rem;
+	font-size: 0.75rem;
 	padding-bottom: 1px;
+	vertical-align: super;
+
+
+	display: inline-block;
+	background-color: red;
 }
 
 .globalStock .sub_search .sub_mid .search_financials_area .tableRanking tr:nth-child(10) td.th_guide span,
@@ -14545,12 +14550,15 @@ table.tableRanking td {
 	width: 100px;
 }
 
-.globalStock .sub_search .sub_mid .search_financials_area .scroll_table_wrap .scroll_table .table_search_invest tr:nth-child(10) td,
-.globalStock .sub_search .sub_mid .search_financials_area .scroll_table_wrap .scroll_table .table_search_invest tr:nth-child(11) td {
-	min-height: 36px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-}
+// .globalStock .sub_search .sub_mid .search_financials_area .scroll_table_wrap .scroll_table .table_search_invest tr:nth-child(10) td,
+// .globalStock .sub_search .sub_mid .search_financials_area .scroll_table_wrap .scroll_table .table_search_invest tr:nth-child(11) td {
+// 	min-height: 36px;
+// 	padding-top: 10px;
+// 	padding-bottom: 10px;
+
+// 	background-color: gray;
+// 	padding: 0;
+// }
 
 @media (min-width:320px) and (max-width: 358px) {
 
@@ -14607,6 +14615,9 @@ table.tableRanking td {
 	text-align: left;
 	padding-left: 7px;
 	padding-right: 5px;
+
+
+	background-color: yellow;	
 }
 
 .guide_layer {
