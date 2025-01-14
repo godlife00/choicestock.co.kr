@@ -1910,3 +1910,309 @@
 	line-height: 1.4rem;
 	padding: 15px 15px;
 }
+// 미주은 x 초이스스탁 탑픽 250107
+.service_wrap.mijooeun_toppick {
+	.box.premium_box .title_box h1 {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 5px 5px;
+		color: #C7CBE9;		
+		font-size: 20px;		
+		font-weight: 700;				
+	}
+	.box.premium_box .title_box h1 + .year {
+		display: inline-block;
+		width: auto;
+		height: 36px;
+		margin-top: 20px;
+		margin-bottom: 8px;
+	}
+	.box.premium_box .title_box .h2_title {
+		padding: 0;
+		margin: 0;
+		color: #70EFFA;
+		text-align: center;		
+		font-size: 50px;		
+		font-weight: 700;		
+		line-height: 1.1;		
+	}
+	.box.premium_box .bg_img {
+		background: url('/img/2025_snake.png') no-repeat center 30px;
+		background-size: contain;
+	}
+	.txt_ai {
+		margin-top: 100px;
+		p {
+			color: #FFF;
+			text-align: center;		
+			font-size: 20px;
+			font-style: normal;
+			font-weight: 700;
+			line-height: 27px;
+			b {
+				display: block;
+				color: #FFF;
+				text-align: center;
+				font-size: 20px;
+				line-height: 27px;
+			}
+		}
+	} 
+	.box {
+		padding: 100px 0;
+		&.video_eyes {
+			padding-bottom: 0;			
+		}
+		.iframe_video {			
+			position: relative;
+			margin: 15px auto 32px;
+			width: 90%;
+			border-radius: 16px;
+			background: #F6F6F6;
+			overflow: hidden;
+			min-height: 177px;
+			box-sizing: border-box;			
+			padding-bottom: 48%;
+			iframe {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+			}			
+		}
+		a.go_youtube {	
+			display: block;				
+			margin: 15px auto 32px;
+			width: 90%;			
+			border-radius: 16px;
+			background: #F6F6F6;
+			overflow: hidden;
+			box-sizing: border-box;		
+			padding-bottom: 56.25%; /* 16:9 비율에 맞춘 패딩 */
+			background: #F5F6FC url('/img/free_video.svg') no-repeat 0 0;
+			background-size: cover;
+		}
+		
+		&.toppick_list {		
+			padding: 0 0 100px 0;			
+			background: none;				
+			display: flex;
+			flex-direction: column;
+			gap: 8px 8px;
+			overflow: hidden;
+
+			.logo_list {
+				display: flex;
+				flex-wrap: wrap;
+				align-items: center;
+				justify-content: flex-start;
+				gap: 12px 12px;
+				width: 90%;
+				box-sizing: border-box;
+				max-width: 420px;				
+				margin: 0 auto;
+				padding: 17px 16px;
+				border-radius: 16px;				
+				background: #F7F8F9;												
+				&.visible {										
+					opacity: 1;
+					transform: translateY(0);
+				}
+				&::before {
+					display: none;
+				}	
+
+				.title_logo {
+					display: flex;
+					align-items: center;
+					gap: 0 30px;
+				}
+				
+				.title_logo .logo {
+					display: inline-block;
+					width: 48px;
+					height: 48px;
+					border-radius: 50%;
+					background-color: #fff;
+					background-size: 28px 28px;
+					background-repeat: no-repeat;
+					background-position: center center;
+				}
+				&#btn_free .title_logo .logo {
+					background: #fff url('/img/signal_prm.svg') no-repeat center center;
+					background-size: 70%;
+				}
+				
+				.title_logo .logo img {
+					display: inline-block;
+					width: 100%;
+					height: 100%;
+				}
+				.detail {
+					display: inline-flex;
+					flex-wrap: wrap;
+					align-items: baseline;
+					gap: 9.5px 6px;
+					width: 100%;
+					max-width: calc(100% - 64px);
+					box-sizing: border-box;
+					color: #333;					
+					font-size: 16px;					
+					font-weight: 600;					
+
+					.title {
+						display: block;
+						width: 100%;
+						overflow: hidden;
+						text-overflow: ellipsis;
+						white-space: nowrap;
+					}
+					.txt_filter i {
+						width: 8px;
+						height: 8px;
+						background-color: #D9D9D9;
+					}
+				}
+				.num, .per {
+					color: #333;					
+					font-size: 14px;					
+					font-weight: 700;										
+					.increase {
+						color: #D43F5D;
+						font-weight: 500;					
+					}
+					.decrease {
+						color: #404FC3;                
+						font-weight: 500;					
+					}
+					.same {
+						color: #363F4B;
+						font-weight: 500;					
+					}
+				}				
+			}
+			
+		}
+	}
+	
+	.할인혜택 {
+		padding: 48px 24px;
+		box-sizing: border-box;
+		background: var(--mian_color1, #404FC3);
+		.txt {
+			p {
+				color: #FFF;		
+				font-size: 22px;
+				font-weight: 700;
+				line-height: 29px;
+				b {
+					color: #F8D54E;
+					font-size: 22px;
+					font-weight: 700;
+					line-height: 27px; /* 122.727% */
+				}
+			}		
+		}
+		.group {
+			display: flex;
+			flex-direction: column;
+			gap: 21px 0;				
+			margin-top: 16px;
+			.step_box {
+				border-radius: 16px;
+				border: 1px solid #DFE0EF;
+				background: #FFF url('/img/service/bg_wallet.png') no-repeat calc(100% - 15px) center;
+				background-size: 64px 68px;
+				padding: 25px 24px 29px;
+				box-sizing: border-box;
+				.top {
+					.title {
+						color: #333;					
+						font-size: 14px;					
+						font-weight: 800;					
+					}
+				}
+				.payRight {
+					.pay01 {
+						position: relative;
+						display: block;
+						margin-top: 14px;
+						color: #999;
+						font-size: 16px;					
+						font-weight: normal;		
+					}				
+					.del_img {
+						display: inline-block;
+						position: absolute;
+						left: -5px;
+						right: 0;
+						top: 2px;
+						width: 100%;
+					}				
+					.pay02 {					
+						display: block;
+						margin-top: 2px;
+						color: var(--mian_color1, #404FC3);					
+						font-size: 22px;					
+						font-weight: bold;					
+					}				
+					.pay_sale {
+						strong {
+							color: #7983D5;
+							font-size: 14px;					
+							font-weight: 700;					
+						}
+	
+					}
+				}
+			}
+		}
+		.year_sale {
+			margin-top: 21px;
+			border-radius: 10px;
+			background: #fff;
+			// padding: 20px 20px 20px 15px;
+			box-sizing: border-box;
+			text-align: center;
+			a {
+				position: relative;
+				display: block;			
+				text-align: center;						
+				font-weight: bold;			
+				font-size: 1rem !important;						
+				padding: 20px 20px 20px 0;
+				padding-right: 8px;
+				&::after {
+					content: "";
+					display: inline-block;
+					transform: rotate(45deg);
+					position: absolute;
+					right: calc(50% - 136px);
+					top: calc(50% - 3px);
+					width: 6px;
+					height: 6px;
+					border-top: 2px solid #c7cbe9b3;
+					border-right: 2px solid #c7cbe9b3;
+				}
+			}
+			&.domestic {
+				margin-top: 21px;
+				a {				
+					color: var(--mian_color1, #404FC3);
+					&::after {
+						border-color: #404FC3;
+					}
+				}
+			}
+			&.overseas {
+				background: #161C40;
+				margin-top: 10px;
+				a {
+					color: #C7CBE9;
+				}
+			}
+		}
+	}
+	
+	
+}
