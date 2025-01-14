@@ -14404,12 +14404,10 @@ table.tableRanking td {
 .globalStock .sub_search .sub_mid .search_financials_area .tableRanking td.th_guide span {
 	color: #939393;
 	font-size: 0.75rem;
-	padding-bottom: 1px;
-	vertical-align: super;
-
-
+	padding-bottom: 1px;	
+	line-height: 1.4;
+	vertical-align: sub;
 	display: inline-block;
-	background-color: red;
 }
 
 .globalStock .sub_search .sub_mid .search_financials_area .tableRanking tr:nth-child(10) td.th_guide span,
@@ -14617,7 +14615,7 @@ table.tableRanking td {
 	padding-right: 5px;
 
 
-	background-color: yellow;	
+	// background-color: yellow;	
 }
 
 .guide_layer {
