@@ -17854,14 +17854,13 @@ table.tableRanking td {
 }
 
 /* 발굴 - 투자레시피 (급등주) view */
-.globalStock .sub_recipe .sub_top.recipejump + .sub_mid.recipe_view .recipe_tabs {
+.globalStock .sub_recipe .sub_top.recipejump + .sub_mid.recipe_view .recipe_tabs, .globalStock .sub_recipe .sub_top.jump + .sub_mid.recipe_view .recipe_tabs {
   position: relative;
   display: block;
   padding: 15px 0 10px;
   border-bottom: solid 1px #e0e4e9;
 }
-
-.globalStock .sub_recipe .sub_top.recipejump + .sub_mid.recipe_view .recipe_tabs li {
+.globalStock .sub_recipe .sub_top.recipejump + .sub_mid.recipe_view .recipe_tabs li, .globalStock .sub_recipe .sub_top.jump + .sub_mid.recipe_view .recipe_tabs li {
   position: relative;
   padding: 0 8px;
   margin: 0;
@@ -17882,20 +17881,13 @@ table.tableRanking td {
   text-align: right;
 }
 
-.globalStock .sub_recipe .sub_top.recipejump + .sub_mid.recipe_view .recipe_tabs li span {
+.globalStock .sub_recipe .sub_top.recipejump + .sub_mid.recipe_view .recipe_tabs li span, .globalStock .sub_recipe .sub_top.jump + .sub_mid.recipe_view .recipe_tabs li span {
   color: #939393;
 }
-
-@media (min-width: 320px) and (max-width: 358px) {
-  .globalStock .sub_recipe .sub_top.recipejump + .sub_mid.recipe_view .recipe_tabs li span {
-    font-size: 12px;
-  }
-}
-.globalStock .sub_recipe .sub_top.recipejump + .sub_mid.recipe_view .recipe_tabs li.active span {
+.globalStock .sub_recipe .sub_top.recipejump + .sub_mid.recipe_view .recipe_tabs li.active span, .globalStock .sub_recipe .sub_top.jump + .sub_mid.recipe_view .recipe_tabs li.active span {
   color: #404fc3;
 }
-
-.globalStock .sub_recipe .sub_top.recipejump + .sub_mid.recipe_view .recipe_tabs li::before {
+.globalStock .sub_recipe .sub_top.recipejump + .sub_mid.recipe_view .recipe_tabs li::before, .globalStock .sub_recipe .sub_top.jump + .sub_mid.recipe_view .recipe_tabs li::before {
   content: "";
   position: absolute;
   right: 0;
@@ -17905,40 +17897,31 @@ table.tableRanking td {
   height: 12px;
   background: #e0e4e9;
 }
-
-.globalStock .sub_recipe .sub_top.recipejump + .sub_mid.recipe_view .recipe_tabs li:first-child {
+.globalStock .sub_recipe .sub_top.recipejump + .sub_mid.recipe_view .recipe_tabs li:first-child, .globalStock .sub_recipe .sub_top.jump + .sub_mid.recipe_view .recipe_tabs li:first-child {
   padding-left: 0;
 }
-
-.globalStock .sub_recipe .sub_top.recipejump + .sub_mid.recipe_view .recipe_tabs li:last-child {
+.globalStock .sub_recipe .sub_top.recipejump + .sub_mid.recipe_view .recipe_tabs li:last-child, .globalStock .sub_recipe .sub_top.jump + .sub_mid.recipe_view .recipe_tabs li:last-child {
   padding-right: 0;
 }
-
-.globalStock .sub_recipe .sub_top.recipejump + .sub_mid.recipe_view .recipe_tabs li:last-child::before {
+.globalStock .sub_recipe .sub_top.recipejump + .sub_mid.recipe_view .recipe_tabs li:last-child::before, .globalStock .sub_recipe .sub_top.jump + .sub_mid.recipe_view .recipe_tabs li:last-child::before {
   display: none;
 }
-
-.globalStock .sub_recipe .sub_top.recipejump + .sub_mid.recipe_view .recipejump_tabs .tab_content {
+.globalStock .sub_recipe .sub_top.recipejump + .sub_mid.recipe_view .recipejump_tabs .tab_content, .globalStock .sub_recipe .sub_top.jump + .sub_mid.recipe_view .recipejump_tabs .tab_content {
   padding: 0;
 }
-
-.globalStock .sub_recipe .sub_top.recipejump + .sub_mid.recipe_view .update_info {
-  padding-top: 10px;
-}
-
-.globalStock .sub_recipe .sub_top.recipejump + .sub_mid.recipe_view .recipejump_tabs ul {
+.globalStock .sub_recipe .sub_top.recipejump + .sub_mid.recipe_view .recipejump_tabs ul, .globalStock .sub_recipe .sub_top.jump + .sub_mid.recipe_view .recipejump_tabs ul {
   width: auto;
 }
-
-.globalStock .sub_recipe .sub_top.recipejump + .sub_mid.recipe_view .recipejump_tabs ul li {
+.globalStock .sub_recipe .sub_top.recipejump + .sub_mid.recipe_view .recipejump_tabs ul li, .globalStock .sub_recipe .sub_top.jump + .sub_mid.recipe_view .recipejump_tabs ul li {
   padding: 0;
 }
-
-.globalStock .sub_recipe .sub_top.recipejump + .sub_mid.recipe_view .recipejump_tabs ul li.title {
+.globalStock .sub_recipe .sub_top.recipejump + .sub_mid.recipe_view .recipejump_tabs ul li.title, .globalStock .sub_recipe .sub_top.jump + .sub_mid.recipe_view .recipejump_tabs ul li.title {
   padding-right: 12px;
 }
-
-.globalStock .sub_recipe .sub_top.recipejump + .sub_mid.recipe_view .atten i.trans {
+.globalStock .sub_recipe .sub_top.recipejump + .sub_mid.recipe_view .update_info, .globalStock .sub_recipe .sub_top.jump + .sub_mid.recipe_view .update_info {
+  padding-top: 10px;
+}
+.globalStock .sub_recipe .sub_top.recipejump + .sub_mid.recipe_view .atten i.trans, .globalStock .sub_recipe .sub_top.jump + .sub_mid.recipe_view .atten i.trans {
   display: inline-block;
   width: 14px;
   height: 14px;
@@ -17948,6 +17931,11 @@ table.tableRanking td {
   margin-left: 2px;
   position: relative;
   top: 4px;
+}
+@media (min-width: 320px) and (max-width: 358px) {
+  .globalStock .sub_recipe .sub_top.recipejump .recipe_view .recipe_tabs li span, .globalStock .sub_recipe .sub_top.jump .recipe_view .recipe_tabs li span {
+    font-size: 12px;
+  }
 }
 
 .globalStock .sub_recipe .sub_mid.recipe_view .recipe_area .area .analysis_score .game_tip {

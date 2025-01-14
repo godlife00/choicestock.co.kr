@@ -18001,24 +18001,26 @@ table.tableRanking td {
 }
 
 /* 발굴 - 투자레시피 (급등주) view */
-.globalStock .sub_recipe .sub_top.recipejump+.sub_mid.recipe_view .recipe_tabs {
-	position: relative;
-	display: block;
-	padding: 15px 0 10px;
-	border-bottom: solid 1px #e0e4e9;
-}
+.globalStock .sub_recipe .sub_top.recipejump, .globalStock .sub_recipe .sub_top.jump {
+	&+.sub_mid.recipe_view .recipe_tabs {
+		position: relative;
+		display: block;
+		padding: 15px 0 10px;
+		border-bottom: solid 1px #e0e4e9;
+	}
+	&+.sub_mid.recipe_view .recipe_tabs li {
+		position: relative;
+		padding: 0 8px;
+		margin: 0;
+		border: none;
+		display: inline-block;
+		width: auto;
+		color: #939393;
+		font-size: 0.75rem;
+		line-height: normal;
+	}
+} 
 
-.globalStock .sub_recipe .sub_top.recipejump+.sub_mid.recipe_view .recipe_tabs li {
-	position: relative;
-	padding: 0 8px;
-	margin: 0;
-	border: none;
-	display: inline-block;
-	width: auto;
-	color: #939393;
-	font-size: 0.75rem;
-	line-height: normal;
-}
 
 .globalStock .sub_recipe .sub_mid .update_sort {
 	display: block;
@@ -18028,76 +18030,86 @@ table.tableRanking td {
 	font-weight: 500;
 	text-align: right;
 }
-
-.globalStock .sub_recipe .sub_top.recipejump+.sub_mid.recipe_view .recipe_tabs li span {
-	color: #939393;
-}
-
-@media (min-width:320px) and (max-width: 358px) {
-	.globalStock .sub_recipe .sub_top.recipejump+.sub_mid.recipe_view .recipe_tabs li span {
-		font-size: 12px;
+.globalStock .sub_recipe .sub_top.recipejump, .globalStock .sub_recipe .sub_top.jump {
+	&+.sub_mid.recipe_view {
+	  .recipe_tabs {
+		li {
+		  span {
+			color: #939393;
+		  }
+		  &.active span {
+			color: #404fc3;
+		  }
+		  &::before {
+			content: "";
+			position: absolute;
+			right: 0;
+			top: 2px;
+			display: inline-block;
+			width: 1px;
+			height: 12px;
+			background: #e0e4e9;
+		  }
+		  &:first-child {
+			padding-left: 0;
+		  }
+		  &:last-child {
+			padding-right: 0;
+			&::before {
+			  display: none;
+			}
+		  }
+		}
+	  }
+  
+	  .recipejump_tabs {
+		.tab_content {
+		  padding: 0;
+		}
+		ul {
+		  width: auto;
+		  li {
+			padding: 0;
+			&.title {
+			  padding-right: 12px;
+			}
+		  }
+		}
+	  }
+  
+	  .update_info {
+		padding-top: 10px;
+	  }
+  
+	  .atten {
+		i.trans {
+		  display: inline-block;
+		  width: 14px;
+		  height: 14px;
+		  padding: 1px 0;
+		  background: url('/img/icon_transition.svg') no-repeat 0 1px;
+		  background-size: 14px 14px;
+		  margin-left: 2px;
+		  position: relative;
+		  top: 4px;
+		}
+	  }
 	}
-}
+  
+	@media (min-width: 320px) and (max-width: 358px) {
+	  .recipe_view {
+		.recipe_tabs {
+		  li {
+			span {
+			  font-size: 12px;
+			}
+		  }
+		}
+	  }
+	}
+  }
 
-.globalStock .sub_recipe .sub_top.recipejump+.sub_mid.recipe_view .recipe_tabs li.active span {
-	color: #404fc3;
-}
-
-.globalStock .sub_recipe .sub_top.recipejump+.sub_mid.recipe_view .recipe_tabs li::before {
-	content: "";
-	position: absolute;
-	right: 0;
-	top: 2px;
-	display: inline-block;
-	width: 1px;
-	height: 12px;
-	background: #e0e4e9;
-}
-
-.globalStock .sub_recipe .sub_top.recipejump+.sub_mid.recipe_view .recipe_tabs li:first-child {
-	padding-left: 0;
-}
-
-.globalStock .sub_recipe .sub_top.recipejump+.sub_mid.recipe_view .recipe_tabs li:last-child {
-	padding-right: 0;
-}
-
-.globalStock .sub_recipe .sub_top.recipejump+.sub_mid.recipe_view .recipe_tabs li:last-child::before {
-	display: none;
-}
-
-.globalStock .sub_recipe .sub_top.recipejump+.sub_mid.recipe_view .recipejump_tabs .tab_content {
-	padding: 0;
-}
-
-.globalStock .sub_recipe .sub_top.recipejump+.sub_mid.recipe_view .update_info {
-	padding-top: 10px;
-}
-
-.globalStock .sub_recipe .sub_top.recipejump+.sub_mid.recipe_view .recipejump_tabs ul {
-	width: auto;
-}
-
-.globalStock .sub_recipe .sub_top.recipejump+.sub_mid.recipe_view .recipejump_tabs ul li {
-	padding: 0;
-}
-
-.globalStock .sub_recipe .sub_top.recipejump+.sub_mid.recipe_view .recipejump_tabs ul li.title {
-	padding-right: 12px;
-}
-
-.globalStock .sub_recipe .sub_top.recipejump+.sub_mid.recipe_view .atten i.trans {
-	display: inline-block;
-	width: 14px;
-	height: 14px;
-	padding: 1px 0;
-	background: url('/img/icon_transition.svg') no-repeat 0 1px;
-	background-size: 14px 14px;
-	margin-left: 2px;
-	position: relative;
-	top: 4px;
-}
-
+  
 .globalStock .sub_recipe .sub_mid.recipe_view .recipe_area .area .analysis_score .game_tip {
 	position: relative;
 	float: right;
