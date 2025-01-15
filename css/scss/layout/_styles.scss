@@ -16653,9 +16653,10 @@ table.tableRanking td {
 			margin: 24px auto;
 			.filter_set {
 				display: flex;
+				justify-content: space-between;
 				align-items: center;
 				gap: 8px 9px;
-				width: 100%;
+				width: 100% !important;
 				li {
 					padding: 0;
 					color: #939393;					
@@ -16755,6 +16756,7 @@ table.tableRanking td {
 								font-size: 15px;								
 								font-weight: 700;																
 								display: inline-block;
+								text-align: left;
 								width: 100%;
 								overflow: hidden;
 								text-overflow: ellipsis;
@@ -16776,6 +16778,9 @@ table.tableRanking td {
 								letter-spacing: -1px;
 								span {									
 									letter-spacing: -0.8px;
+									b {
+										font-weight: 500;								
+									}
 								}
 							}
 							.per {
@@ -16784,13 +16789,19 @@ table.tableRanking td {
 								font-weight: 500;								
 								letter-spacing: -1px;
 								span {
-									letter-spacing: -0.8px;
+									letter-spacing: -0.8px;									
 								}
 								.increase {
 									color: #E1305A;
+									b {
+										color: #E1305A;
+									}
 								}
 								.decrease {
 									color: #303FAF;									
+									b {
+										color: #303FAF;									
+									}
 								}
 							}
 						}
@@ -16802,7 +16813,7 @@ table.tableRanking td {
 					align-items: center;
 					justify-content: center;
 					margin-top: 8px;
-					width: 100%;
+					width: 100%;					
 				}
 				.fit_margin {
 					display: flex;
@@ -16827,7 +16838,157 @@ table.tableRanking td {
 				
 			}
 		}
+		.recipe_area .area.turnaround {			
+			.stock_info {				
+				display: flex;
+				flex-wrap: wrap;
+				align-items: center;
+				justify-content: flex-start;
+				gap: 4px 8px;
+				width: 100%;
+				box-sizing: border-box;
+				padding: 0 16px 14px 8px;
+				.title_logo {											
+					width: 45px;
+					display: flex;
+					align-items: center;
+					gap: 0 30px;
+					.logo {
+						display: inline-flex;
+						justify-content: center;
+						align-items: center;
+						width: 40px;
+						height: 40px;
+						border-radius: 50%;
+						background-color: #F5F5F9;
+						background-size: 28px 28px;
+						background-repeat: no-repeat;
+						background-position: center center;	
+						img {
+							display: inline-block;
+							width: 80%;
+							height: 80%;
+						}
+					}
+				}
+				.detail {			
+					flex: 10;							
+					display: flex;					
+					flex-wrap: wrap;
+					justify-content: space-between;
+					align-items: flex-start;			
+					gap: 5px 5px;				
+					width: calc(100% - 54px);					
+					.title {				
+						padding-right: 6px;				
+						color: #333;								
+						font-size: 15px;								
+						font-weight: 700;																
+						display: inline-block;
+						text-align: left;
+						width: calc(100% - 150px);
+						overflow: hidden;
+						text-overflow: ellipsis;
+						white-space: nowrap;						
+					}
+					> .num {					
+						margin-left: auto;
+						font-size: 0.9375rem;
+						color: #333;
+						vertical-align: top;
+						display: inline-block;					
+						font-weight: bold;						
+					}
+
+				}
+				.detail_num {
+					width: 100%;	
+					display: flex;
+					align-items: baseline;							
+					justify-content: flex-start;
+					gap: 4px 4px;					
+					.num {
+						margin-left: 0;
+						font-size: 0.9375rem;
+						color: #333;
+						vertical-align: top;
+						font-weight: normal;
+						display: inline-block;												
+					}
+					.per {
+						padding: 0;
+						font-size: 0.8125rem;
+						padding-top: 1px;
+						padding-right: 10px;
+						font-weight: normal;						
+						span {
+							font-size: 0.8125rem;
+						}
+						.decrease b {
+							color: #26ABFF;
+						}
+						.increase b {
+							color: #ff2929;							
+						}
+						.decrease b {
+							color: #26ABFF;
+						}
+					}
+					
+				}
+				
+				.trans_list {
+					width: 100%;					
+					ul {
+						vertical-align: bottom;
+					}
+				}
+			}
+			
+			
+			.list {
+				justify-content: flex-end;
+				align-items: center;
+				gap: 0 4px;
+				li {
+					&.title_logo {
+						flex-basis: 45px;
+						width: 45px;
+						display: flex;
+						align-items: center;
+						gap: 0 30px;
+						.logo {
+							display: inline-flex;
+							justify-content: center;
+							align-items: center;
+							width: 40px;
+							height: 40px;
+							border-radius: 50%;
+							background-color: #F5F5F9;
+							background-size: 28px 28px;
+							background-repeat: no-repeat;
+							background-position: center center;
+							img {
+								display: inline-block;
+								width: 80%;
+								height: 80%;
+							}
+						}
+					}
+					&.title {						
+						text-align: left;
+					}
+					span {
+						padding-right: 0 !important;
+					}
+					span:first-child::after {
+						display: none !important;
+					}					
+				}
+			}
+		}
 	}	
+	
 }
 .globalStock .sub_recipe .sub_top .title {
 	color: #fff;
@@ -18040,7 +18201,7 @@ table.tableRanking td {
 	text-align: right;
 }
 .globalStock .sub_recipe .sub_top.recipejump, .globalStock .sub_recipe .sub_top.jump {
-	&+.sub_mid.recipe_view {
+	& + .sub_mid.recipe_view {						
 	  .recipe_tabs {
 		li {
 		  span {
@@ -18090,7 +18251,7 @@ table.tableRanking td {
 		padding-top: 10px;
 	  }
   
-	  .atten {
+	  .atten {		
 		i.trans {
 		  display: inline-block;
 		  width: 14px;
@@ -18117,6 +18278,23 @@ table.tableRanking td {
 	  }
 	}
   }
+
+.globalStock .sub_recipe .sub_top.jump + .sub_mid.recipe_view {		
+	.l_box .filter_set {		
+		.update_info {
+			padding-top: 0;
+		}
+		.atten {
+			display: inline-flex;
+			align-items: center;
+			gap: 0 2px;
+		}
+		.atten i.trans {			
+			position: static;
+			top: 0;			
+		}
+	}
+}
 
   
 .globalStock .sub_recipe .sub_mid.recipe_view .recipe_area .area .analysis_score .game_tip {

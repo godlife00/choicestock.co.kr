@@ -2165,7 +2165,7 @@ $(document).ready(function () {
                 followTouchMove: true,
                 // width: 126,
                 height: 122,
-                margin: [0, 0, 0, 0],
+                margin: [0, 10, 0, 10],
             },
 
             title: {

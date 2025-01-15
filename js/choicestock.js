@@ -1980,8 +1980,8 @@ $(document).ready(function () {
 
     }          
 });
-// 레시피 리스트 벽돌쌓기 레이아웃, Masonry js 
 
+// 레시피 리스트 벽돌쌓기 레이아웃, Masonry js 
 function debounce(func, wait) {
     let timeout;
     return function () {
@@ -2000,9 +2000,17 @@ document.addEventListener("DOMContentLoaded", function () {
             percentPosition: true, // 반응형 비율 계산
             gutter: 14, // 항목 간격 (픽셀 단위)
             horizontalOrder: true, // 좌우 간격 추가            
-            fitWidth: true // 상하 간격 추가
+            fitWidth: true, // 상하 간격 추가
+            transitionDuration: '0.4s' // 부드러운 전환을 위한 애니메이션 지속 시간
         });
 
-        window.addEventListener('resize', debounce(() => masonryInstance.layout(), 100));
+        // 초기 설정 시 list_masonry의 너비를 100%로 설정
+        container.style.width = '100%';
+
+        window.addEventListener('resize', debounce(() => {
+            // 리사이즈 시 list_masonry의 너비를 100%로 유지
+            container.style.width = '100%';
+            masonryInstance.layout();
+        }, 100));
     });
 });
