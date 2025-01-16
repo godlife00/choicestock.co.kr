@@ -16708,16 +16708,19 @@ table.tableRanking td {
   width: 100%;
 }
 .v_signalStreng.globalStock .sub_recipe.new_recipe .recipe_area .chart_list .fit_margin {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 4px 4px;
   margin-top: 8px;
   color: #6A727B;
   text-align: center;
   font-size: 13px;
   font-weight: 500;
   line-height: 1.2;
+}
+.v_signalStreng.globalStock .sub_recipe.new_recipe .recipe_area .chart_list .fit_margin span {
+  font-size: 12px;
+  font-weight: 500;
+  opacity: 0.6;
+  position: relative;
+  top: -1px;
 }
 .v_signalStreng.globalStock .sub_recipe.new_recipe .recipe_area .chart_list .fit_margin .num.increase {
   color: #E1305A;
