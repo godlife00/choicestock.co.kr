@@ -16366,47 +16366,47 @@ table.tableRanking td {
   padding-bottom: 8px;
 }
 .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .box_tabs .list_masonry > .figure.jump::before {
-  background: #646FCD url("/img/jump.svg") no-repeat center 14px;
+  background: #646FCD url("/img/jump.png") no-repeat center 14px;
   background-size: auto 132px;
 }
 .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .box_tabs .list_masonry > .figure.top50::before {
-  background: #F8D95F url("/img/top50.svg") no-repeat center 14px;
+  background: #F8D95F url("/img/top50.png") no-repeat center 14px;
   background-size: auto 132px;
 }
 .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .box_tabs .list_masonry > .figure.sale::before {
-  background: #76BCE7 url("/img/sale.svg") no-repeat center 14px;
+  background: #76BCE7 url("/img/sale.png") no-repeat center 14px;
   background-size: auto 132px;
 }
 .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .box_tabs .list_masonry > .figure.earnings::before {
-  background: #2E3848 url("/img/earnings.svg") no-repeat center 14px;
+  background: #2E3848 url("/img/earnings.png") no-repeat center 14px;
   background-size: auto 132px;
 }
 .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .box_tabs .list_masonry > .figure.dividend::before {
-  background: #87CD64 url("/img/dividend.svg") no-repeat center 14px;
+  background: #87CD64 url("/img/dividend.png") no-repeat center 14px;
   background-size: auto 132px;
 }
 .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .box_tabs .list_masonry > .figure.growth::before {
-  background: #79D5A9 url("/img/growth.svg") no-repeat center 14px;
+  background: #79D5A9 url("/img/growth.png") no-repeat center 14px;
   background-size: auto 132px;
 }
 .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .box_tabs .list_masonry > .figure.superStocks::before {
-  background: #E7B676 url("/img/superStocks.svg") no-repeat center 14px;
+  background: #E7B676 url("/img/superStocks.png") no-repeat center 14px;
   background-size: auto 132px;
 }
 .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .box_tabs .list_masonry > .figure.consumerMonopoly::before {
-  background: #D6E0EA url("/img/consumerMonopoly.svg") no-repeat center 14px;
+  background: #D6E0EA url("/img/consumerMonopoly.png") no-repeat center 14px;
   background-size: auto 132px;
 }
 .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .box_tabs .list_masonry > .figure.profitTurnaround::before {
-  background: #7694E7 url("/img/profitTurnaround.svg") no-repeat center 14px;
+  background: #7694E7 url("/img/profitTurnaround.png") no-repeat center 14px;
   background-size: auto 132px;
 }
 .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .box_tabs .list_masonry > .figure.goldenCross::before {
-  background: #E36B6D url("/img/goldenCross.svg") no-repeat center 14px;
+  background: #E36B6D url("/img/goldenCross.png") no-repeat center 14px;
   background-size: auto 132px;
 }
 .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .box_tabs .list_masonry > .figure.growthDiscovery::before {
-  background: #E79366 url("/img/growthDiscovery.svg") no-repeat center 14px;
+  background: #E79366 url("/img/growthDiscovery.png") no-repeat center 14px;
   background-size: auto 132px;
 }
 .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .one_step {
@@ -16460,13 +16460,13 @@ table.tableRanking td {
   width: 100%;
   height: 230px;
   margin: 0 auto 10px;
-  background-size: auto 230px;
+  background-size: auto 230px !important;
 }
 .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_top.view.jump .box_tabs {
   background-color: #646FCD;
 }
 .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_top.view.jump .box_tabs::before {
-  background: #646FCD url("/img/jump.svg") no-repeat center center;
+  background: #646FCD url("/img/jump.png") no-repeat center center;
 }
 .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_top.view.top50 .box_tabs {
   color: rgba(51, 51, 51, 0.7);
@@ -16476,31 +16476,31 @@ table.tableRanking td {
   color: #333;
 }
 .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_top.view.top50 .box_tabs::before {
-  background: #F8D95F url("/img/top50.svg") no-repeat center center;
+  background: #F8D95F url("/img/top50.png") no-repeat center center;
 }
 .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_top.view.sale .box_tabs {
   background-color: #76BCE7;
 }
 .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_top.view.sale .box_tabs::before {
-  background: #76BCE7 url("/img/sale.svg") no-repeat center center;
+  background: #76BCE7 url("/img/sale.png") no-repeat center center;
 }
 .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_top.view.earnings .box_tabs {
   background-color: #2E3848;
 }
 .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_top.view.earnings .box_tabs::before {
-  background: #2E3848 url("/img/earnings.svg") no-repeat center center;
+  background: #2E3848 url("/img/earnings.png") no-repeat center center;
 }
 .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_top.view.dividend .box_tabs {
   background-color: #87CD64;
 }
 .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_top.view.dividend .box_tabs::before {
-  background: #87CD64 url("/img/dividend.svg") no-repeat center center;
+  background: #87CD64 url("/img/dividend.png") no-repeat center center;
 }
 .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_top.view.growth .box_tabs {
   background-color: #79D5A9;
 }
 .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_top.view.growth .box_tabs::before {
-  background: #79D5A9 url("/img/growth.svg") no-repeat center center;
+  background: #79D5A9 url("/img/growth.png") no-repeat center center;
 }
 .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_top.view.superStocks .box_tabs {
   color: rgba(51, 51, 51, 0.7);
@@ -16510,7 +16510,7 @@ table.tableRanking td {
   color: #333;
 }
 .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_top.view.superStocks .box_tabs::before {
-  background: #E7B676 url("/img/superStocks.svg") no-repeat center center;
+  background: #E7B676 url("/img/superStocks.png") no-repeat center center;
 }
 .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_top.view.consumerMonopoly .box_tabs {
   color: rgba(51, 51, 51, 0.7);
@@ -16520,25 +16520,25 @@ table.tableRanking td {
   color: #333;
 }
 .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_top.view.consumerMonopoly .box_tabs::before {
-  background: #D6E0EA url("/img/consumerMonopoly.svg") no-repeat center center;
+  background: #D6E0EA url("/img/consumerMonopoly.png") no-repeat center center;
 }
 .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_top.view.profitTurnaround .box_tabs {
   background-color: #7694E7;
 }
 .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_top.view.profitTurnaround .box_tabs::before {
-  background: #7694E7 url("/img/profitTurnaround.svg") no-repeat center center;
+  background: #7694E7 url("/img/profitTurnaround.png") no-repeat center center;
 }
 .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_top.view.goldenCross .box_tabs {
   background-color: #E36B6D;
 }
 .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_top.view.goldenCross .box_tabs::before {
-  background: #E36B6D url("/img/goldenCross.svg") no-repeat center center;
+  background: #E36B6D url("/img/goldenCross.png") no-repeat center center;
 }
 .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_top.view.growthDiscovery .box_tabs {
   background-color: #E79366;
 }
 .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_top.view.growthDiscovery .box_tabs::before {
-  background: #E79366 url("/img/growthDiscovery.svg") no-repeat center center;
+  background: #E79366 url("/img/growthDiscovery.png") no-repeat center center;
 }
 .v_signalStreng.globalStock .sub_recipe.new_recipe .l_box {
   display: flex;
@@ -16730,13 +16730,12 @@ table.tableRanking td {
   flex-wrap: wrap;
   align-items: center;
   justify-content: flex-start;
-  gap: 4px 8px;
+  gap: 12px 12px;
   width: 100%;
   box-sizing: border-box;
   padding: 0 16px 14px 8px;
 }
 .v_signalStreng.globalStock .sub_recipe.new_recipe .recipe_area .area.turnaround .stock_info .title_logo {
-  width: 45px;
   display: flex;
   align-items: center;
   gap: 0 30px;
@@ -16755,8 +16754,8 @@ table.tableRanking td {
 }
 .v_signalStreng.globalStock .sub_recipe.new_recipe .recipe_area .area.turnaround .stock_info .title_logo .logo img {
   display: inline-block;
-  width: 80%;
-  height: 80%;
+  width: 100%;
+  height: 100%;
 }
 .v_signalStreng.globalStock .sub_recipe.new_recipe .recipe_area .area.turnaround .stock_info .detail {
   flex: 10;
@@ -16764,7 +16763,7 @@ table.tableRanking td {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
-  gap: 5px 5px;
+  gap: 4px 5px;
   width: calc(100% - 54px);
 }
 .v_signalStreng.globalStock .sub_recipe.new_recipe .recipe_area .area.turnaround .stock_info .detail .title {
@@ -16787,6 +16786,9 @@ table.tableRanking td {
   display: inline-block;
   font-weight: bold;
 }
+.v_signalStreng.globalStock .sub_recipe.new_recipe .recipe_area .area.turnaround .stock_info .detail > .num span b {
+  font-weight: 500;
+}
 .v_signalStreng.globalStock .sub_recipe.new_recipe .recipe_area .area.turnaround .stock_info .detail_num {
   width: 100%;
   display: flex;
@@ -16804,13 +16806,9 @@ table.tableRanking td {
 }
 .v_signalStreng.globalStock .sub_recipe.new_recipe .recipe_area .area.turnaround .stock_info .detail_num .per {
   padding: 0;
-  font-size: 0.8125rem;
   padding-top: 1px;
   padding-right: 10px;
   font-weight: normal;
-}
-.v_signalStreng.globalStock .sub_recipe.new_recipe .recipe_area .area.turnaround .stock_info .detail_num .per span {
-  font-size: 0.8125rem;
 }
 .v_signalStreng.globalStock .sub_recipe.new_recipe .recipe_area .area.turnaround .stock_info .detail_num .per .decrease b {
   color: #26ABFF;
@@ -17601,6 +17599,10 @@ table.tableRanking td {
   color: #333;
   vertical-align: top;
   display: inline-block;
+  font-weight: 700;
+}
+.globalStock .sub_recipe .sub_mid.recipe_view .recipe_area .area .num span b {
+  font-weight: 700;
 }
 
 @media (min-width: 320px) and (max-width: 358px) {
@@ -17609,7 +17611,6 @@ table.tableRanking td {
   }
 }
 .globalStock .sub_recipe .sub_mid.recipe_view .recipe_area .area .num span b {
-  font-weight: normal;
   color: #333;
 }
 
@@ -17660,7 +17661,7 @@ table.tableRanking td {
 }
 
 .globalStock .sub_recipe .sub_mid.recipe_view .recipe_area .area .num .increase:nth-child(2) {
-  font-size: 0.8125rem;
+  font-size: 0.9375rem;
   padding-top: 1px;
   padding-right: 10px;
   font-weight: normal;
@@ -17677,7 +17678,7 @@ table.tableRanking td {
 }
 
 .globalStock .sub_recipe .sub_mid.recipe_view .recipe_area .area .num .decrease:nth-child(2) {
-  font-size: 0.8125rem;
+  font-size: 0.9375rem;
   padding-top: 1px;
   padding-right: 10px;
   font-weight: normal;
@@ -17729,6 +17730,12 @@ table.tableRanking td {
 .globalStock .sub_recipe .sub_mid.recipe_view .recipe_area .area .per .decrease {
   display: block;
   color: #26ABFF;
+  font-size: 0.9375rem;
+}
+
+.globalStock .sub_recipe .sub_mid.recipe_view .recipe_area .area .per .same {
+  display: block;
+  color: #363F4B;
   font-size: 0.9375rem;
 }
 

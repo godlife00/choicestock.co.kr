@@ -16401,77 +16401,77 @@ table.tableRanking td {
 			&.jump {						
 				// 급등주					
 				&::before {										
-					background: $jump url('/img/jump.svg') no-repeat center 14px;				
+					background: $jump url('/img/jump.png') no-repeat center 14px;				
 					background-size: auto 132px;
 				}				
 			}			
 			&.top50 {
 				// 관심 TOP50
 				&::before {								
-					background: $top50 url('/img/top50.svg') no-repeat center 14px;				
+					background: $top50 url('/img/top50.png') no-repeat center 14px;				
 					background-size: auto 132px;
 				}
 			}
 			&.sale {
 				// 지금 세일중
 				&::before {									
-					background: $sale url('/img/sale.svg') no-repeat center 14px;				
+					background: $sale url('/img/sale.png') no-repeat center 14px;				
 					background-size: auto 132px;
 				}
 			}
 			&.earnings {
 				// 실적발표
 				&::before {									
-					background: $earnings url('/img/earnings.svg') no-repeat center 14px;				
+					background: $earnings url('/img/earnings.png') no-repeat center 14px;				
 					background-size: auto 132px;
 				}
 			}
 			&.dividend {
 				// 배당매력주
 				&::before {									
-					background: $dividend url('/img/dividend.svg') no-repeat center 14px;				
+					background: $dividend url('/img/dividend.png') no-repeat center 14px;				
 					background-size: auto 132px;
 				}
 			}
 			&.growth {
 				// 이익성장주
 				&::before {										
-					background: $growth url('/img/growth.svg') no-repeat center 14px;				
+					background: $growth url('/img/growth.png') no-repeat center 14px;				
 					background-size: auto 132px;
 				}
 			}
 			&.superStocks {
 				// 슈퍼스톡스
 				&::before {									
-					background: $superStocks url('/img/superStocks.svg') no-repeat center 14px;				
+					background: $superStocks url('/img/superStocks.png') no-repeat center 14px;				
 					background-size: auto 132px;
 				}
 			}
 			&.consumerMonopoly {
 				// 소비자독점
 				&::before {									
-					background: $consumerMonopoly url('/img/consumerMonopoly.svg') no-repeat center 14px;				
+					background: $consumerMonopoly url('/img/consumerMonopoly.png') no-repeat center 14px;				
 					background-size: auto 132px;
 				}
 			}
 			&.profitTurnaround {
 				// 흑자전환
 				&::before {									
-					background: $profitTurnaround url('/img/profitTurnaround.svg') no-repeat center 14px;				
+					background: $profitTurnaround url('/img/profitTurnaround.png') no-repeat center 14px;				
 					background-size: auto 132px;
 				}
 			}
 			&.goldenCross {
 				// 골든크로스
 				&::before {									
-					background: $goldenCross url('/img/goldenCross.svg') no-repeat center 14px;				
+					background: $goldenCross url('/img/goldenCross.png') no-repeat center 14px;				
 					background-size: auto 132px;
 				}
 			}
 			&.growthDiscovery {
 				// 발굴성장주
 				&::before {										
-					background: $growthDiscovery url('/img/growthDiscovery.svg') no-repeat center 14px;				
+					background: $growthDiscovery url('/img/growthDiscovery.png') no-repeat center 14px;				
 					background-size: auto 132px;
 				}
 			}			
@@ -16529,7 +16529,8 @@ table.tableRanking td {
 					width: 100%;
 					height: 230px;		
 					margin: 0 auto 10px;																	
-					background-size: auto 230px;
+					background-size: auto 230px !important;
+
 				}
 			}
 			&.jump {						
@@ -16537,7 +16538,7 @@ table.tableRanking td {
 				.box_tabs {		
 					background-color: $jump;			
 					&::before {
-						background: $jump url('/img/jump.svg') no-repeat center center;										
+						background: $jump url('/img/jump.png') no-repeat center center;										
 					}
 				}						
 			}	
@@ -16550,7 +16551,7 @@ table.tableRanking td {
 					color: rgba(51, 51, 51, 0.70);
 					background-color: $top50;			
 					&::before {						
-						background: $top50 url('/img/top50.svg') no-repeat center center;										
+						background: $top50 url('/img/top50.png') no-repeat center center;										
 					}
 				}						
 			}
@@ -16559,7 +16560,7 @@ table.tableRanking td {
 				.box_tabs {
 					background-color: $sale;
 					&::before {
-						background: $sale url('/img/sale.svg') no-repeat center center;
+						background: $sale url('/img/sale.png') no-repeat center center;
 					}
 				}
 			}
@@ -16568,7 +16569,7 @@ table.tableRanking td {
 				.box_tabs {
 					background-color: $earnings;
 					&::before {
-						background: $earnings url('/img/earnings.svg') no-repeat center center;
+						background: $earnings url('/img/earnings.png') no-repeat center center;
 					}
 				}
 			}
@@ -16577,7 +16578,7 @@ table.tableRanking td {
 				.box_tabs {
 					background-color: $dividend;
 					&::before {
-						background: $dividend url('/img/dividend.svg') no-repeat center center;
+						background: $dividend url('/img/dividend.png') no-repeat center center;
 					}
 				}
 			}
@@ -16586,7 +16587,7 @@ table.tableRanking td {
 				.box_tabs {
 					background-color: $growth;
 					&::before {
-						background: $growth url('/img/growth.svg') no-repeat center center;
+						background: $growth url('/img/growth.png') no-repeat center center;
 					}
 				}
 			}
@@ -16599,7 +16600,7 @@ table.tableRanking td {
 					color: rgba(51, 51, 51, 0.70);
 					background-color: $superStocks;
 					&::before {
-						background: $superStocks url('/img/superStocks.svg') no-repeat center center;
+						background: $superStocks url('/img/superStocks.png') no-repeat center center;
 					}
 				}
 			}
@@ -16612,7 +16613,7 @@ table.tableRanking td {
 					color: rgba(51, 51, 51, 0.70);
 					background-color: $consumerMonopoly;
 					&::before {
-						background: $consumerMonopoly url('/img/consumerMonopoly.svg') no-repeat center center;
+						background: $consumerMonopoly url('/img/consumerMonopoly.png') no-repeat center center;
 					}
 				}
 			}
@@ -16621,7 +16622,7 @@ table.tableRanking td {
 				.box_tabs {
 					background-color: $profitTurnaround;
 					&::before {
-						background: $profitTurnaround url('/img/profitTurnaround.svg') no-repeat center center;
+						background: $profitTurnaround url('/img/profitTurnaround.png') no-repeat center center;
 					}
 				}
 			}
@@ -16630,7 +16631,7 @@ table.tableRanking td {
 				.box_tabs {
 					background-color: $goldenCross;
 					&::before {
-						background: $goldenCross url('/img/goldenCross.svg') no-repeat center center;
+						background: $goldenCross url('/img/goldenCross.png') no-repeat center center;
 					}
 				}
 			}
@@ -16639,7 +16640,7 @@ table.tableRanking td {
 				.box_tabs {
 					background-color: $growthDiscovery;
 					&::before {
-						background: $growthDiscovery url('/img/growthDiscovery.svg') no-repeat center center;
+						background: $growthDiscovery url('/img/growthDiscovery.png') no-repeat center center;
 					}
 				}
 			}
@@ -16844,12 +16845,11 @@ table.tableRanking td {
 				flex-wrap: wrap;
 				align-items: center;
 				justify-content: flex-start;
-				gap: 4px 8px;
+				gap: 12px 12px;
 				width: 100%;
 				box-sizing: border-box;
 				padding: 0 16px 14px 8px;
-				.title_logo {											
-					width: 45px;
+				.title_logo {																
 					display: flex;
 					align-items: center;
 					gap: 0 30px;
@@ -16866,8 +16866,8 @@ table.tableRanking td {
 						background-position: center center;	
 						img {
 							display: inline-block;
-							width: 80%;
-							height: 80%;
+							width: 100%;
+							height: 100%;
 						}
 					}
 				}
@@ -16877,7 +16877,7 @@ table.tableRanking td {
 					flex-wrap: wrap;
 					justify-content: space-between;
 					align-items: flex-start;			
-					gap: 5px 5px;				
+					gap: 4px 5px;				
 					width: calc(100% - 54px);					
 					.title {				
 						padding-right: 6px;				
@@ -16897,7 +16897,10 @@ table.tableRanking td {
 						color: #333;
 						vertical-align: top;
 						display: inline-block;					
-						font-weight: bold;						
+						font-weight: bold;		
+						span b {
+							font-weight: 500;
+						}				
 					}
 
 				}
@@ -16916,14 +16919,10 @@ table.tableRanking td {
 						display: inline-block;												
 					}
 					.per {
-						padding: 0;
-						font-size: 0.8125rem;
+						padding: 0;						
 						padding-top: 1px;
 						padding-right: 10px;
-						font-weight: normal;						
-						span {
-							font-size: 0.8125rem;
-						}
+						font-weight: normal;												
 						.decrease b {
 							color: #26ABFF;
 						}
@@ -17649,7 +17648,7 @@ table.tableRanking td {
 	flex-grow: 2;
 	overflow: hidden;
 	margin-bottom: 1px;
-	padding-right: 12px;
+	padding-right: 12px;	
 }
 
 .globalStock .sub_recipe .sub_mid.recipe_view .recipe_area .area .title a {
@@ -17761,9 +17760,13 @@ table.tableRanking td {
 
 .globalStock .sub_recipe .sub_mid.recipe_view .recipe_area .area .num span {
 	font-size: 0.9375rem;
-	color: #333;
-	vertical-align: top;
-	display: inline-block;
+    color: #333;
+    vertical-align: top;
+    display: inline-block;
+	font-weight: 700;
+	b {
+		font-weight: 700;
+	}
 }
 
 @media (min-width:320px) and (max-width: 358px) {
@@ -17772,9 +17775,8 @@ table.tableRanking td {
 	}
 }
 
-.globalStock .sub_recipe .sub_mid.recipe_view .recipe_area .area .num span b {
-	font-weight: normal;
-	color: #333;
+.globalStock .sub_recipe .sub_mid.recipe_view .recipe_area .area .num span b {	
+	color: #333;	
 }
 
 .globalStock .sub_recipe .sub_mid.recipe_view .recipe_area .area .num .increase {
@@ -17824,7 +17826,7 @@ table.tableRanking td {
 }
 
 .globalStock .sub_recipe .sub_mid.recipe_view .recipe_area .area .num .increase:nth-child(2) {
-	font-size: 0.8125rem;
+	font-size: 0.9375rem;
 	padding-top: 1px;
 	padding-right: 10px;
 	font-weight: normal;
@@ -17842,7 +17844,7 @@ table.tableRanking td {
 }
 
 .globalStock .sub_recipe .sub_mid.recipe_view .recipe_area .area .num .decrease:nth-child(2) {
-	font-size: 0.8125rem;
+	font-size: 0.9375rem;
 	padding-top: 1px;
 	padding-right: 10px;
 	font-weight: normal;
@@ -17895,6 +17897,11 @@ table.tableRanking td {
 .globalStock .sub_recipe .sub_mid.recipe_view .recipe_area .area .per .decrease {
 	display: block;
 	color: #26ABFF;
+	font-size: 0.9375rem;
+}
+.globalStock .sub_recipe .sub_mid.recipe_view .recipe_area .area .per .same {
+	display: block;
+	color: #363F4B;
 	font-size: 0.9375rem;
 }
 
