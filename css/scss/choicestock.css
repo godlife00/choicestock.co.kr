@@ -38161,7 +38161,7 @@ body.v_signalStreng {
   padding: 15px 15px;
 }
 
-.service_wrap.mijooeun_toppick .box.premium_box .title_box h1 {
+.service_wrap.mijooeun_toppick .box.premium_box .title_box h1, .service_wrap.event2025 .box.premium_box .title_box h1 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -38170,14 +38170,14 @@ body.v_signalStreng {
   font-size: 20px;
   font-weight: 700;
 }
-.service_wrap.mijooeun_toppick .box.premium_box .title_box h1 + .year {
+.service_wrap.mijooeun_toppick .box.premium_box .title_box h1 + .year, .service_wrap.event2025 .box.premium_box .title_box h1 + .year {
   display: inline-block;
   width: auto;
   height: 36px;
   margin-top: 20px;
   margin-bottom: 8px;
 }
-.service_wrap.mijooeun_toppick .box.premium_box .title_box .h2_title {
+.service_wrap.mijooeun_toppick .box.premium_box .title_box .h2_title, .service_wrap.event2025 .box.premium_box .title_box .h2_title {
   padding: 0;
   margin: 0;
   color: #70EFFA;
@@ -38186,14 +38186,14 @@ body.v_signalStreng {
   font-weight: 700;
   line-height: 1.1;
 }
-.service_wrap.mijooeun_toppick .box.premium_box .bg_img {
+.service_wrap.mijooeun_toppick .box.premium_box .bg_img, .service_wrap.event2025 .box.premium_box .bg_img {
   background: url("/img/2025_snake.png") no-repeat center 30px;
   background-size: contain;
 }
-.service_wrap.mijooeun_toppick .txt_ai {
+.service_wrap.mijooeun_toppick .txt_ai, .service_wrap.event2025 .txt_ai {
   margin-top: 100px;
 }
-.service_wrap.mijooeun_toppick .txt_ai p {
+.service_wrap.mijooeun_toppick .txt_ai p, .service_wrap.event2025 .txt_ai p {
   color: #FFF;
   text-align: center;
   font-size: 20px;
@@ -38201,20 +38201,20 @@ body.v_signalStreng {
   font-weight: 700;
   line-height: 27px;
 }
-.service_wrap.mijooeun_toppick .txt_ai p b {
+.service_wrap.mijooeun_toppick .txt_ai p b, .service_wrap.event2025 .txt_ai p b {
   display: block;
   color: #FFF;
   text-align: center;
   font-size: 20px;
   line-height: 27px;
 }
-.service_wrap.mijooeun_toppick .box {
+.service_wrap.mijooeun_toppick .box, .service_wrap.event2025 .box {
   padding: 100px 0;
 }
-.service_wrap.mijooeun_toppick .box.video_eyes {
+.service_wrap.mijooeun_toppick .box.video_eyes, .service_wrap.event2025 .box.video_eyes {
   padding-bottom: 0;
 }
-.service_wrap.mijooeun_toppick .box .iframe_video {
+.service_wrap.mijooeun_toppick .box .iframe_video, .service_wrap.event2025 .box .iframe_video {
   position: relative;
   margin: 15px auto 32px;
   width: 90%;
@@ -38225,12 +38225,12 @@ body.v_signalStreng {
   box-sizing: border-box;
   padding-bottom: 48%;
 }
-.service_wrap.mijooeun_toppick .box .iframe_video iframe {
+.service_wrap.mijooeun_toppick .box .iframe_video iframe, .service_wrap.event2025 .box .iframe_video iframe {
   position: absolute;
   width: 100%;
   height: 100%;
 }
-.service_wrap.mijooeun_toppick .box a.go_youtube {
+.service_wrap.mijooeun_toppick .box .go_youtube, .service_wrap.event2025 .box .go_youtube {
   display: block;
   margin: 15px auto 32px;
   width: 90%;
@@ -38242,7 +38242,7 @@ body.v_signalStreng {
   background: #F5F6FC url("/img/free_video.svg") no-repeat 0 0;
   background-size: cover;
 }
-.service_wrap.mijooeun_toppick .box.toppick_list {
+.service_wrap.mijooeun_toppick .box.toppick_list, .service_wrap.event2025 .box.toppick_list {
   padding: 0 0 100px 0;
   background: none;
   display: flex;
@@ -38250,7 +38250,7 @@ body.v_signalStreng {
   gap: 8px 8px;
   overflow: hidden;
 }
-.service_wrap.mijooeun_toppick .box.toppick_list .logo_list {
+.service_wrap.mijooeun_toppick .box.toppick_list .logo_list, .service_wrap.event2025 .box.toppick_list .logo_list {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -38264,19 +38264,19 @@ body.v_signalStreng {
   border-radius: 16px;
   background: #F7F8F9;
 }
-.service_wrap.mijooeun_toppick .box.toppick_list .logo_list.visible {
+.service_wrap.mijooeun_toppick .box.toppick_list .logo_list.visible, .service_wrap.event2025 .box.toppick_list .logo_list.visible {
   opacity: 1;
   transform: translateY(0);
 }
-.service_wrap.mijooeun_toppick .box.toppick_list .logo_list::before {
+.service_wrap.mijooeun_toppick .box.toppick_list .logo_list::before, .service_wrap.event2025 .box.toppick_list .logo_list::before {
   display: none;
 }
-.service_wrap.mijooeun_toppick .box.toppick_list .logo_list .title_logo {
+.service_wrap.mijooeun_toppick .box.toppick_list .logo_list .title_logo, .service_wrap.event2025 .box.toppick_list .logo_list .title_logo {
   display: flex;
   align-items: center;
   gap: 0 30px;
 }
-.service_wrap.mijooeun_toppick .box.toppick_list .logo_list .title_logo .logo {
+.service_wrap.mijooeun_toppick .box.toppick_list .logo_list .title_logo .logo, .service_wrap.event2025 .box.toppick_list .logo_list .title_logo .logo {
   display: inline-block;
   width: 48px;
   height: 48px;
@@ -38286,16 +38286,16 @@ body.v_signalStreng {
   background-repeat: no-repeat;
   background-position: center center;
 }
-.service_wrap.mijooeun_toppick .box.toppick_list .logo_list#btn_free .title_logo .logo {
+.service_wrap.mijooeun_toppick .box.toppick_list .logo_list#btn_free .title_logo .logo, .service_wrap.event2025 .box.toppick_list .logo_list#btn_free .title_logo .logo {
   background: #fff url("/img/signal_prm.svg") no-repeat center center;
   background-size: 70%;
 }
-.service_wrap.mijooeun_toppick .box.toppick_list .logo_list .title_logo .logo img {
+.service_wrap.mijooeun_toppick .box.toppick_list .logo_list .title_logo .logo img, .service_wrap.event2025 .box.toppick_list .logo_list .title_logo .logo img {
   display: inline-block;
   width: 100%;
   height: 100%;
 }
-.service_wrap.mijooeun_toppick .box.toppick_list .logo_list .detail {
+.service_wrap.mijooeun_toppick .box.toppick_list .logo_list .detail, .service_wrap.event2025 .box.toppick_list .logo_list .detail {
   display: inline-flex;
   flex-wrap: wrap;
   align-items: baseline;
@@ -38307,59 +38307,59 @@ body.v_signalStreng {
   font-size: 16px;
   font-weight: 600;
 }
-.service_wrap.mijooeun_toppick .box.toppick_list .logo_list .detail .title {
+.service_wrap.mijooeun_toppick .box.toppick_list .logo_list .detail .title, .service_wrap.event2025 .box.toppick_list .logo_list .detail .title {
   display: block;
   width: 100%;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.service_wrap.mijooeun_toppick .box.toppick_list .logo_list .detail .txt_filter i {
+.service_wrap.mijooeun_toppick .box.toppick_list .logo_list .detail .txt_filter i, .service_wrap.event2025 .box.toppick_list .logo_list .detail .txt_filter i {
   width: 8px;
   height: 8px;
   background-color: #D9D9D9;
 }
-.service_wrap.mijooeun_toppick .box.toppick_list .logo_list .num, .service_wrap.mijooeun_toppick .box.toppick_list .logo_list .per {
+.service_wrap.mijooeun_toppick .box.toppick_list .logo_list .num, .service_wrap.event2025 .box.toppick_list .logo_list .num, .service_wrap.mijooeun_toppick .box.toppick_list .logo_list .per, .service_wrap.event2025 .box.toppick_list .logo_list .per {
   color: #333;
   font-size: 14px;
   font-weight: 700;
 }
-.service_wrap.mijooeun_toppick .box.toppick_list .logo_list .num .increase, .service_wrap.mijooeun_toppick .box.toppick_list .logo_list .per .increase {
+.service_wrap.mijooeun_toppick .box.toppick_list .logo_list .num .increase, .service_wrap.event2025 .box.toppick_list .logo_list .num .increase, .service_wrap.mijooeun_toppick .box.toppick_list .logo_list .per .increase, .service_wrap.event2025 .box.toppick_list .logo_list .per .increase {
   color: #D43F5D;
   font-weight: 500;
 }
-.service_wrap.mijooeun_toppick .box.toppick_list .logo_list .num .decrease, .service_wrap.mijooeun_toppick .box.toppick_list .logo_list .per .decrease {
+.service_wrap.mijooeun_toppick .box.toppick_list .logo_list .num .decrease, .service_wrap.event2025 .box.toppick_list .logo_list .num .decrease, .service_wrap.mijooeun_toppick .box.toppick_list .logo_list .per .decrease, .service_wrap.event2025 .box.toppick_list .logo_list .per .decrease {
   color: #404FC3;
   font-weight: 500;
 }
-.service_wrap.mijooeun_toppick .box.toppick_list .logo_list .num .same, .service_wrap.mijooeun_toppick .box.toppick_list .logo_list .per .same {
+.service_wrap.mijooeun_toppick .box.toppick_list .logo_list .num .same, .service_wrap.event2025 .box.toppick_list .logo_list .num .same, .service_wrap.mijooeun_toppick .box.toppick_list .logo_list .per .same, .service_wrap.event2025 .box.toppick_list .logo_list .per .same {
   color: #363F4B;
   font-weight: 500;
 }
-.service_wrap.mijooeun_toppick .할인혜택 {
+.service_wrap.mijooeun_toppick .할인혜택, .service_wrap.event2025 .할인혜택 {
   padding: 48px 24px;
   box-sizing: border-box;
   background: var(--mian_color1, #404FC3);
 }
-.service_wrap.mijooeun_toppick .할인혜택 .txt p {
+.service_wrap.mijooeun_toppick .할인혜택 .txt p, .service_wrap.event2025 .할인혜택 .txt p {
   color: #FFF;
   font-size: 22px;
   font-weight: 700;
   line-height: 29px;
 }
-.service_wrap.mijooeun_toppick .할인혜택 .txt p b {
+.service_wrap.mijooeun_toppick .할인혜택 .txt p b, .service_wrap.event2025 .할인혜택 .txt p b {
   color: #F8D54E;
   font-size: 22px;
   font-weight: 700;
   line-height: 27px; /* 122.727% */
 }
-.service_wrap.mijooeun_toppick .할인혜택 .group {
+.service_wrap.mijooeun_toppick .할인혜택 .group, .service_wrap.event2025 .할인혜택 .group {
   display: flex;
   flex-direction: column;
   gap: 21px 0;
   margin-top: 16px;
 }
-.service_wrap.mijooeun_toppick .할인혜택 .group .step_box {
+.service_wrap.mijooeun_toppick .할인혜택 .group .step_box, .service_wrap.event2025 .할인혜택 .group .step_box {
   border-radius: 16px;
   border: 1px solid #DFE0EF;
   background: #FFF url("/img/service/bg_wallet.png") no-repeat calc(100% - 15px) center;
@@ -38367,12 +38367,12 @@ body.v_signalStreng {
   padding: 25px 24px 29px;
   box-sizing: border-box;
 }
-.service_wrap.mijooeun_toppick .할인혜택 .group .step_box .top .title {
+.service_wrap.mijooeun_toppick .할인혜택 .group .step_box .top .title, .service_wrap.event2025 .할인혜택 .group .step_box .top .title {
   color: #333;
   font-size: 14px;
   font-weight: 800;
 }
-.service_wrap.mijooeun_toppick .할인혜택 .group .step_box .payRight .pay01 {
+.service_wrap.mijooeun_toppick .할인혜택 .group .step_box .payRight .pay01, .service_wrap.event2025 .할인혜택 .group .step_box .payRight .pay01 {
   position: relative;
   display: block;
   margin-top: 14px;
@@ -38380,7 +38380,7 @@ body.v_signalStreng {
   font-size: 16px;
   font-weight: normal;
 }
-.service_wrap.mijooeun_toppick .할인혜택 .group .step_box .payRight .del_img {
+.service_wrap.mijooeun_toppick .할인혜택 .group .step_box .payRight .del_img, .service_wrap.event2025 .할인혜택 .group .step_box .payRight .del_img {
   display: inline-block;
   position: absolute;
   left: -5px;
@@ -38388,26 +38388,26 @@ body.v_signalStreng {
   top: 2px;
   width: 100%;
 }
-.service_wrap.mijooeun_toppick .할인혜택 .group .step_box .payRight .pay02 {
+.service_wrap.mijooeun_toppick .할인혜택 .group .step_box .payRight .pay02, .service_wrap.event2025 .할인혜택 .group .step_box .payRight .pay02 {
   display: block;
   margin-top: 2px;
   color: var(--mian_color1, #404FC3);
   font-size: 22px;
   font-weight: bold;
 }
-.service_wrap.mijooeun_toppick .할인혜택 .group .step_box .payRight .pay_sale strong {
+.service_wrap.mijooeun_toppick .할인혜택 .group .step_box .payRight .pay_sale strong, .service_wrap.event2025 .할인혜택 .group .step_box .payRight .pay_sale strong {
   color: #7983D5;
   font-size: 14px;
   font-weight: 700;
 }
-.service_wrap.mijooeun_toppick .할인혜택 .year_sale {
+.service_wrap.mijooeun_toppick .할인혜택 .year_sale, .service_wrap.event2025 .할인혜택 .year_sale {
   margin-top: 21px;
   border-radius: 10px;
   background: #fff;
   box-sizing: border-box;
   text-align: center;
 }
-.service_wrap.mijooeun_toppick .할인혜택 .year_sale a {
+.service_wrap.mijooeun_toppick .할인혜택 .year_sale a, .service_wrap.event2025 .할인혜택 .year_sale a {
   position: relative;
   display: block;
   text-align: center;
@@ -38416,7 +38416,7 @@ body.v_signalStreng {
   padding: 20px 20px 20px 0;
   padding-right: 8px;
 }
-.service_wrap.mijooeun_toppick .할인혜택 .year_sale a::after {
+.service_wrap.mijooeun_toppick .할인혜택 .year_sale a::after, .service_wrap.event2025 .할인혜택 .year_sale a::after {
   content: "";
   display: inline-block;
   transform: rotate(45deg);
@@ -38428,19 +38428,101 @@ body.v_signalStreng {
   border-top: 2px solid rgba(199, 203, 233, 0.7019607843);
   border-right: 2px solid rgba(199, 203, 233, 0.7019607843);
 }
-.service_wrap.mijooeun_toppick .할인혜택 .year_sale.domestic {
+.service_wrap.mijooeun_toppick .할인혜택 .year_sale.domestic, .service_wrap.event2025 .할인혜택 .year_sale.domestic {
   margin-top: 21px;
 }
-.service_wrap.mijooeun_toppick .할인혜택 .year_sale.domestic a {
+.service_wrap.mijooeun_toppick .할인혜택 .year_sale.domestic a, .service_wrap.event2025 .할인혜택 .year_sale.domestic a {
   color: var(--mian_color1, #404FC3);
 }
-.service_wrap.mijooeun_toppick .할인혜택 .year_sale.domestic a::after {
+.service_wrap.mijooeun_toppick .할인혜택 .year_sale.domestic a::after, .service_wrap.event2025 .할인혜택 .year_sale.domestic a::after {
   border-color: #404FC3;
 }
-.service_wrap.mijooeun_toppick .할인혜택 .year_sale.overseas {
+.service_wrap.mijooeun_toppick .할인혜택 .year_sale.overseas, .service_wrap.event2025 .할인혜택 .year_sale.overseas {
   background: #161C40;
   margin-top: 10px;
 }
-.service_wrap.mijooeun_toppick .할인혜택 .year_sale.overseas a {
+.service_wrap.mijooeun_toppick .할인혜택 .year_sale.overseas a, .service_wrap.event2025 .할인혜택 .year_sale.overseas a {
   color: #C7CBE9;
+}
+
+.service_wrap.event2025 .box.premium_box .title_box .year {
+  height: 48px;
+}
+.service_wrap.event2025 .box.premium_box .title_box .year img {
+  width: 100%;
+  height: 100%;
+}
+.service_wrap.event2025 .box.premium_box .title_box .h2_title {
+  margin-top: 12px;
+  padding: 0 16px;
+  color: #70EFFA;
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: -0.72px;
+}
+.service_wrap.event2025 .box.premium_box .title_box .h2_title b {
+  color: #FFF;
+}
+.service_wrap.event2025 .box.ai_timing {
+  padding-bottom: 0;
+}
+.service_wrap.event2025 .box.ai_timing .title_box h1 {
+  color: #333;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 38px; /* 126.667% */
+}
+.service_wrap.event2025 .box.ai_timing .title_box h1 b {
+  color: #404FC3;
+}
+.service_wrap.event2025 .box.ai_timing .layout_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px 15px;
+  margin-top: 32px;
+}
+.service_wrap.event2025 .box.ai_timing .layout_wrapper .box_tabs {
+  position: relative;
+  margin: 0 auto;
+  width: 90%;
+  padding: 32px 24px 32px;
+  box-sizing: border-box;
+  max-width: 420px;
+  border-radius: 16px;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px; /* 142.857% */
+}
+.service_wrap.event2025 .box.ai_timing .layout_wrapper .box_tabs strong {
+  display: block;
+  margin: 8px 0 8px;
+  color: #FFF;
+  font-size: 20px;
+  font-weight: 700;
+}
+.service_wrap.event2025 .box.ai_timing .layout_wrapper .box_tabs::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 180px;
+  background-size: auto 180px !important;
+}
+.service_wrap.event2025 .box.ai_timing .layout_wrapper .box_tabs.ai {
+  background-color: #769DE7;
+}
+.service_wrap.event2025 .box.ai_timing .layout_wrapper .box_tabs.ai::before {
+  background: #769DE7 url("/img/robot00.png") no-repeat center top;
+}
+.service_wrap.event2025 .box.ai_timing .layout_wrapper .box_tabs.goldenCross {
+  background-color: #E36B6D;
+}
+.service_wrap.event2025 .box.ai_timing .layout_wrapper .box_tabs.goldenCross::before {
+  background: #E36B6D url("/img/cross_arrow.png") no-repeat center top;
+}
+.service_wrap.event2025 .box.ai_timing .layout_wrapper .box_tabs.growthDiscovery {
+  background-color: #E79366;
+}
+.service_wrap.event2025 .box.ai_timing .layout_wrapper .box_tabs.growthDiscovery::before {
+  background: #E79366 url("/img/locket_men.png") no-repeat center top;
 }/*# sourceMappingURL=choicestock.css.map */

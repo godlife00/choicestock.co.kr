@@ -1911,7 +1911,7 @@
 	padding: 15px 15px;
 }
 // 미주은 x 초이스스탁 탑픽 250107
-.service_wrap.mijooeun_toppick {
+.service_wrap.mijooeun_toppick {	
 	.box.premium_box .title_box h1 {
 		display: flex;
 		justify-content: center;
@@ -1980,7 +1980,7 @@
 				height: 100%;
 			}			
 		}
-		a.go_youtube {	
+		.go_youtube {	
 			display: block;				
 			margin: 15px auto 32px;
 			width: 90%;			
@@ -2215,4 +2215,95 @@
 	}
 	
 	
+}
+
+// 초이스스탁 2025 신년 이벤트 250120
+.service_wrap.event2025 {
+    // 기본 스타일은 .mijooeun_toppick과 동일
+    @extend .service_wrap;
+    @extend .mijooeun_toppick;
+
+    // 특정 스타일 변경
+	.box.premium_box .title_box .year {
+		height: 48px;
+		img {
+			width: 100%;
+			height: 100%;
+		}
+	}
+    .box.premium_box .title_box .h2_title {
+		margin-top: 12px;
+		padding: 0 16px;
+		color: #70EFFA;		
+		font-size: 36px;		
+		font-weight: 700;		
+		letter-spacing: -0.72px;
+        b {
+			color: #FFF;
+		}
+
+    }
+	.box.ai_timing {
+		padding-bottom: 0;
+		.title_box h1 {
+			color: #333;
+			font-size: 30px;			
+			font-weight: 700;
+			line-height: 38px; /* 126.667% */
+			b {
+				color: #404FC3;			
+			}
+		}
+		.layout_wrapper {
+				display: flex;
+				flex-direction: column;
+				gap: 24px 15px;
+				margin-top: 32px;
+			.box_tabs {
+				position: relative;
+				margin: 0 auto;
+				width: 90%;
+				padding: 32px 24px 32px;
+				box-sizing: border-box;
+				max-width: 420px;
+				border-radius: 16px;
+				color: rgba(255, 255, 255, 0.70);				
+				font-size: 14px;				
+				font-weight: 500;
+				line-height: 20px; /* 142.857% */
+				strong {
+					display: block;
+					margin: 8px 0 8px;
+					color: #FFF;					
+					font-size: 20px;					
+					font-weight: 700;					
+				}
+				&::before {
+					content: "";
+					display: block;
+					width: 100%;
+					height: 180px;
+					background-size: auto 180px !important;					
+				}
+				&.ai {
+					background-color: #769DE7;
+					&::before {
+						background: #769DE7 url('/img/robot00.png') no-repeat center top;
+					}
+				}
+				&.goldenCross {
+					background-color: #E36B6D;
+					&::before {
+						background: #E36B6D url('/img/cross_arrow.png') no-repeat center top;
+					}
+				}
+				&.growthDiscovery {
+					background-color: #E79366;
+					&::before {
+						background: #E79366 url('/img/locket_men.png') no-repeat center top;
+					}
+				}
+			}
+		}
+	}
 }
