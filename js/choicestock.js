@@ -1811,10 +1811,13 @@ $(document).ready(function () {
 
     // 메인페이지 2024 신년이벤트 배너
     if ($('#header.m_hdr').length) {
-        console.time('메인 슬라이딩');  
-        const debouncedScrollSignalPop = debounce(scrollsignalpop, 0);
-        setTimeout(debouncedScrollSignalPop, 0); // 150 밀리초 후에 debouncedScrollSignalPop 함수 실행
-        console.timeEnd('메인 슬라이딩');
+        function debouncedScroll() {
+            console.time('메인 슬라이딩');  
+            const debouncedScrollSignalPop = debounce(scrollsignalpop, 30);
+            setTimeout(debouncedScrollSignalPop, 30); // 30 밀리초 후에 debouncedScrollSignalPop 함수 실행
+            console.timeEnd('메인 슬라이딩');
+        }
+        requestAnimationFrame(debouncedScroll);
     }
 
     $('.v_signalStreng.globalStock .signalpop.event2024_payment .ftr, .signalpop .bg_gray').on('click', function () {
@@ -1822,7 +1825,7 @@ $(document).ready(function () {
         $('.signalpop .box').animate({
             'opacity': 0,
             'height': 0
-        });
+        }, 100);
         // return false;
     }); 
     // 메인페이지 2024 신년이벤트 배너
