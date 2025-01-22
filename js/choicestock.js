@@ -1,4 +1,14 @@
 $(document).ready(function () {
+    // scrollsignalpop() 함수가 너무 자주 호출되는 것을 방지하기 위한 debouncing 함수 정의
+    function debounce(func, wait) {
+        let timeout;
+        return function(...args) {
+            const context = this;
+            clearTimeout(timeout);
+            timeout = setTimeout(() => func.apply(context, args), wait);
+        };
+    }
+
     // var mouse_touch = ".globalStock a, .globalStock .tabs li, .globalStock .set span, .globalStock .tabs_menu span, .globalStock i.attention, .globalStock .prm_div .box, .globalStock .sub_search .sub_mid.research_board .lst_type2, .globalStock .sub_research .popularity .lst_type2, .globalStock #footer .certification ul li, .globalStock .main_mid.note_area .lst_type2, .globalStock .sub_research .sub_mid.research_board .lst_type2, .globalStock .sub_briefing .popularity .lst_type2, .globalStock .searchArea .searchInput, .globalStock .main_mid.event_recipe .recipe_tabs li span, .globalStock .sub_login .mapage_area .mapage_form .form_table td .mod_btn, .globalStock .sub_login .mapage_area .mapage_form .form_table .phonePin_form .pinInput, .globalStock .sub_login .mapage_area .mapage_form .form_table .phonePin_form .pinInput_out, .globalStock .sub_payment .serviceStep .step_box, .globalStock #header .his_back img, .globalStock .main_top.recommend_area .recomlist_area .area, .globalStock .main_mid.game_area .list_area .area, .globalStock .banner_prm, .globalStock .main_mid.attention_area .one_step .more, .globalStock #header .headerTop .hm .btn_login, .globalStock #header .headerTop .hm .go_briefing"    
     // $(mouse_touch).on("mousedown touchstart", function () {
     //     $(this).addClass("mouse_touch");
@@ -1801,10 +1811,12 @@ $(document).ready(function () {
 
     // 메인페이지 2024 신년이벤트 배너
     if ($('#header.m_hdr').length) {
-        setTimeout(function() {
-            scrollsignalpop();            
-        }, 300); // 1000 밀리초 후에 scrollsignalpop() 함수 실행
-    }     
+        console.time('메인 슬라이딩');  
+        const debouncedScrollSignalPop = debounce(scrollsignalpop, 0);
+        setTimeout(debouncedScrollSignalPop, 0); // 150 밀리초 후에 debouncedScrollSignalPop 함수 실행
+        console.timeEnd('메인 슬라이딩');
+    }
+
     $('.v_signalStreng.globalStock .signalpop.event2024_payment .ftr, .signalpop .bg_gray').on('click', function () {
         $('.signalpop').removeClass('open');
         $('.signalpop .box').animate({
