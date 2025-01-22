@@ -12097,6 +12097,80 @@ table.tableRanking td {
   font-size: 0;
 }
 
+.globalStock .sub_search .search-history-container {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  gap: 8px 8px;
+  padding: 12px 14px;
+  box-sizing: border-box;
+}
+.globalStock .sub_search .search-history-container .search-history-item {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 3px 6px;
+  box-sizing: border-box;
+  padding: 6px 10px;
+  border-radius: 20px;
+  border: 1px solid transparent;
+  text-align: center;
+  background-color: #ececef;
+}
+.globalStock .sub_search .search-history-container .search-history-item a {
+  color: #939393;
+  font-size: 0.75rem;
+}
+.globalStock .sub_search .search-history-container .search-history-item a b {
+  display: inline-block;
+  padding-right: 3px;
+  font-weight: 600;
+}
+.globalStock .sub_search .search-history-container .search-history-item .delete-btn {
+  position: relative;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-size: 0;
+  width: 16px;
+  height: 16px;
+  background-color: transparent;
+}
+.globalStock .sub_search .search-history-container .search-history-item .delete-btn::before, .globalStock .sub_search .search-history-container .search-history-item .delete-btn::after {
+  content: "";
+  position: absolute;
+  height: 12px;
+  width: 1px;
+  background-color: #939393;
+}
+.globalStock .sub_search .search-history-container .search-history-item .delete-btn::after {
+  transform: rotate(-45deg);
+}
+.globalStock .sub_search .search-history-container .search-history-item .delete-btn::before {
+  transform: rotate(45deg);
+  background-color: #939393;
+}
+
+.globalStock .sub_search .delete-all-btn {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  color: #d32f2f;
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+.globalStock .sub_search .delete-all-btn .icon-trash {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url("/img/trash-icon.svg") no-repeat center center;
+  background-size: contain;
+  margin-right: 8px;
+}
+
 .globalStock .sub_search .tabs_5 {
   margin: 19px 0;
   font-size: 0;
