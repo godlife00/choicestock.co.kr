@@ -12133,8 +12133,16 @@ table.tableRanking td {
   align-content: center;
   flex-wrap: wrap;
   gap: 8px 8px;
+  margin: 7px auto;
   padding: 12px 14px;
   box-sizing: border-box;
+  max-height: 120px;
+  overflow: hidden;
+  position: relative;
+}
+.globalStock .sub_search .search-history-container.expanded {
+  max-height: none;
+  overflow: visible;
 }
 .globalStock .sub_search .search-history-container .search-history-item {
   cursor: pointer;
@@ -12182,23 +12190,55 @@ table.tableRanking td {
   background-color: #939393;
 }
 
-.globalStock .sub_search .delete-all-btn {
+.globalStock .sub_search .search-history-actions {
   display: flex;
   align-items: center;
-  padding: 10px 20px;
+  justify-content: flex-end;
+  gap: 0 16px;
+  width: 100%;
+  border-top: 1px solid #E0E4E9;
+  padding: 10px 16px;
+  box-sizing: border-box;
+}
+.globalStock .sub_search .search-history-actions .delete-all-btn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
   color: #d32f2f;
   background-color: transparent;
   border: none;
-  font-size: 16px;
+  font-size: 13px;
+  font-weight: 600;
   cursor: pointer;
 }
-.globalStock .sub_search .delete-all-btn .icon-trash {
+.globalStock .sub_search .search-history-actions .delete-all-btn .icon-trash {
   display: inline-block;
   width: 16px;
   height: 16px;
   background: url("/img/trash-icon.svg") no-repeat center center;
-  background-size: contain;
+  background-size: cover;
   margin-right: 8px;
+}
+.globalStock .sub_search .search-history-actions .show-more-btn {
+  position: relative;
+  padding: 0 12px 0 0;
+  color: #969ea7;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.globalStock .sub_search .search-history-actions .show-more-btn::after {
+  content: "";
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  top: 4px;
+  right: 0;
+  margin: auto;
+  display: inline-block;
+  border-top: 1px solid #424fbc;
+  border-right: 1px solid #424fbc;
+  transform: rotate(-45deg);
 }
 
 .globalStock .sub_search .tabs_5 {

@@ -12086,8 +12086,17 @@ table.tableRanking td {
     align-content: center;
     flex-wrap: wrap;
 	gap: 8px 8px;
+	margin: 7px auto;
 	padding: 12px 14px;
-	box-sizing: border-box;
+	box-sizing: border-box;	
+	max-height: calc(3 * 40px);
+    overflow: hidden;
+    position: relative;	
+
+	&.expanded {
+		max-height: none;
+		overflow: visible;
+	}
 
 	.search-history-item {
 		cursor: pointer;
@@ -12108,8 +12117,7 @@ table.tableRanking td {
 				padding-right: 3px;
 				font-weight: 600;			
 			}
-		} 
-
+		} 		
 		.delete-btn {
 			position: relative;
 			cursor: pointer;			
@@ -12137,32 +12145,57 @@ table.tableRanking td {
 		}	
 	}		
 }
-.globalStock .sub_search .delete-all-btn {
+.globalStock .sub_search .search-history-actions { 
 	display: flex;
 	align-items: center;
-	padding: 10px 20px;
-	color: #d32f2f; // 텍스트 색상
-	background-color: transparent;
-	border: none;	
-	font-size: 16px;
-	cursor: pointer;	
+	justify-content: flex-end;
+	gap: 0 16px;
+	width: 100%;
+	border-top: 1px solid #E0E4E9;
+	padding: 10px 16px;
+	box-sizing: border-box;
+	.delete-all-btn {
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;				
+		color: #d32f2f; // 텍스트 색상
+		background-color: transparent;
+		border: none;	
+		font-size: 13px;
+		font-weight: 600;
+		cursor: pointer;	
+		.icon-trash {
+			display: inline-block;
+			width: 16px;
+			height: 16px;
+			background: url('/img/trash-icon.svg') no-repeat center center;
+			background-size: cover;
+			margin-right: 8px;
+		}
+	}
+	.show-more-btn {
+		position: relative;
+		padding: 0 12px 0 0;
+		color: #969ea7;
+		font-size: 12px;
+		font-weight: 500;
+		cursor: pointer;
+		&::after {
+			content: "";
+			width: 5px;
+			height: 5px;
+			position: absolute;
+			top: 4px;
+			right: 0;
+			margin: auto;
+			display: inline-block;
+			border-top: 1px solid #424fbc;
+			border-right: 1px solid #424fbc;
+			transform: rotate(-45deg);
+		}
 
-	&:hover {
-		
 	}
 
-	&:active {
-
-	}
-
-	.icon-trash {
-		display: inline-block;
-		width: 16px;
-		height: 16px;
-		background: url('/img/trash-icon.svg') no-repeat center center;
-		background-size: contain;
-		margin-right: 8px;
-	}
 }	
 
 

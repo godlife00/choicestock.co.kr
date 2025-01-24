@@ -1846,6 +1846,23 @@ $(document).ready(function () {
 
     }
 
+    // "닫기" 버튼 클릭 시 #ticker-container 열고 닫기
+    $('.show-more-btn').on('click', function () {
+        console.log("닫기");
+        var $tickerContainer = $('#ticker-container');
+        var $arrow = $(this).find('::after');
+
+        $tickerContainer.toggleClass('expanded');
+
+        if ($tickerContainer.hasClass('expanded')) {
+            $(this).text('닫기');
+            $arrow.css('transform', 'rotate(135deg)'); // 화살표 위로
+        } else {
+            $(this).text('더보기');
+            $arrow.css('transform', 'rotate(-45deg)'); // 화살표 아래로
+        }
+    });
+
     // 서비스소개 페이드인 효과    
     function applyScrollEffect() {
         $('.box').each(function() {
@@ -2039,3 +2056,4 @@ document.addEventListener("DOMContentLoaded", function () {
         }, 100));
     });
 });
+
