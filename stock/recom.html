@@ -47,7 +47,30 @@
     <div id="wrap">
         <!-- 2024 신년 이벤트 -->
         <div class="event2024_payment_sub">
-            <a href="../payment/step01.html" class=""><img src="../img/banner/event_subTop_240611.png" alt=""></a>
+            <!-- <a href="../payment/step01.html" class=""><img src="../img/banner/event_subTop_240611.png" alt=""></a> -->
+            <!--  -->
+            <script>
+                document.addEventListener('DOMContentLoaded', function () {
+                    var images = [
+                        '../img/banner/event_subTop_250121.png',
+                        '../img/banner/event_subTop_250121_v2.png'
+                    ];
+
+                    var randomIndex = Math.floor(Math.random() * images.length);
+                    var imageUrl = images[randomIndex];
+
+                    var linkElement = document.createElement('a');
+                    linkElement.href = '../payment/step01.html';
+                    linkElement.className = '';
+
+                    var imgElement = document.createElement('img');
+                    imgElement.src = imageUrl;
+                    imgElement.alt = '기간한정 프리미엄 50%할인!';
+
+                    linkElement.appendChild(imgElement);
+                    document.querySelector('.event2024_payment_sub').appendChild(linkElement);
+                });
+            </script>
         </div>
         <!-- //2024 신년 이벤트 -->
         <div id="header" class="header">            

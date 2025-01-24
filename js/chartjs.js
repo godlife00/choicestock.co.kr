@@ -7532,7 +7532,8 @@ $(document).ready(function () {
     }
 
     // 매매신호 목록 - 공포 탐욕 지수 (마켓스코어)    
-    function CustomChart_Score(renderTo, data) {        
+    function CustomChart_Score(renderTo, data) {      
+        console.time('CustomChart_Score Execution Time');  
         const easeOutBounce = function (pos) {
             if ((pos) < (1 / 2.75)) {
                 return (7.5625 * pos * pos);
@@ -7547,150 +7548,157 @@ $(document).ready(function () {
         };        
         Math.easeOutBounce = easeOutBounce;
         
-        Highcharts.chart(renderTo, {
-            chart: {
-                type: 'gauge',
-                plotBackgroundColor: null,
-                plotBackgroundImage: null,
-                plotBorderWidth: 0,
-                plotShadow: false, 
-                backgroundColor: 'transparent',
-                margin: [-200, 20, 0, 20],
-                width: 340,
-                height: 280,
-                events: {
-                    load: function () {
-                        var chart = this;
-                        var value = chart.series[0].points[0].y;
-                        chart.yAxis[0].update({
-                            plotBands: [{
-                                from: 0,
-                                to: 24,
-                                color: value <= 24 ? '#D43F5D' : '#EEF2F5',
-                                thickness: '40%',
-                            }, {
-                                from: 25,
-                                to: 43,
-                                color: value > 24 && value <= 43 ? '#E9835B' : '#EEF2F5',
-                                thickness: '40%',
-                            }, {
-                                from: 44,
-                                to: 55,
-                                color: value > 43 && value <= 55 ? '#F4A931' : '#EEF2F5',
-                                thickness: '40%',
-                            }, {
-                                from: 56,
-                                to: 74,
-                                color: value > 55 && value <= 74 ? '#F8D54E' : '#EEF2F5',
-                                thickness: '40%',
-                            }, {
-                                from: 75,
-                                to: 100,
-                                color: value > 74 ? '#5AA86B' : '#EEF2F5',
-                                thickness: '40%',
-                            }]
-                        });
-        
-                        // 활성 라벨 설정
-                        chart.yAxis[0].tickPositions.forEach(function (pos) {
-                            var label = chart.yAxis[0].ticks[pos] && chart.yAxis[0].ticks[pos].label;
-                            if (label) {
-                                if (value <= 24 && pos === 12) {
-                                    label.addClass('active-label');
-                                } else if (value > 24 && value <= 43 && pos === 34) {
-                                    label.addClass('active-label');
-                                } else if (value > 43 && value <= 55 && pos === 49) {
-                                    label.addClass('active-label');
-                                } else if (value > 55 && value <= 74 && pos === 65) {
-                                    label.addClass('active-label');
-                                } else if (value > 74 && pos === 87) {
-                                    label.addClass('active-label');
-                                } else {
-                                    label.removeClass('active-label');
+        function renderChart() {
+
+            Highcharts.chart(renderTo, {
+                chart: {
+                    type: 'gauge',
+                    plotBackgroundColor: null,
+                    plotBackgroundImage: null,
+                    plotBorderWidth: 0,
+                    plotShadow: false, 
+                    backgroundColor: 'transparent',
+                    margin: [-200, 20, 0, 20],
+                    width: 340,
+                    height: 280,
+                    events: {
+                        load: function () {
+                            var chart = this;
+                            var value = chart.series[0].points[0].y;
+                            chart.yAxis[0].update({
+                                plotBands: [{
+                                    from: 0,
+                                    to: 24,
+                                    color: value <= 24 ? '#D43F5D' : '#EEF2F5',
+                                    thickness: '40%',
+                                }, {
+                                    from: 25,
+                                    to: 43,
+                                    color: value > 24 && value <= 43 ? '#E9835B' : '#EEF2F5',
+                                    thickness: '40%',
+                                }, {
+                                    from: 44,
+                                    to: 55,
+                                    color: value > 43 && value <= 55 ? '#F4A931' : '#EEF2F5',
+                                    thickness: '40%',
+                                }, {
+                                    from: 56,
+                                    to: 74,
+                                    color: value > 55 && value <= 74 ? '#F8D54E' : '#EEF2F5',
+                                    thickness: '40%',
+                                }, {
+                                    from: 75,
+                                    to: 100,
+                                    color: value > 74 ? '#5AA86B' : '#EEF2F5',
+                                    thickness: '40%',
+                                }]
+                            });
+            
+                            // 활성 라벨 설정
+                            chart.yAxis[0].tickPositions.forEach(function (pos) {
+                                var label = chart.yAxis[0].ticks[pos] && chart.yAxis[0].ticks[pos].label;
+                                if (label) {
+                                    if (value <= 24 && pos === 12) {
+                                        label.addClass('active-label');
+                                    } else if (value > 24 && value <= 43 && pos === 34) {
+                                        label.addClass('active-label');
+                                    } else if (value > 43 && value <= 55 && pos === 49) {
+                                        label.addClass('active-label');
+                                    } else if (value > 55 && value <= 74 && pos === 65) {
+                                        label.addClass('active-label');
+                                    } else if (value > 74 && pos === 87) {
+                                        label.addClass('active-label');
+                                    } else {
+                                        label.removeClass('active-label');
+                                    }
                                 }
-                            }
-                        });
-                    }
-                }
-            },
-        
-            title: {
-                text: ''
-            },
-        
-            pane: {
-                startAngle: -90,
-                endAngle: 90,
-                background: null,
-                center: ['50%', '75%'],
-                size: '100%'
-            },
-        
-            exporting: {
-                enabled: false
-            },
-        
-            credits: {
-                enabled: false,
-            },
-        
-            tooltip: {
-                enabled: false
-            },
-        
-            yAxis: {
-                lineColor: null,
-                minorGridLineWidth: 0,
-                gridLineWidth: 0,
-                min: 0,
-                max: 100,
-                tickPositions: [12, 34, 49, 65, 87],
-                tickLength: 0,
-                minorTickLength: 0,
-                labels: {
-                    formatter: function () {
-                        var labels = ['공포', '불안', '보통', '과욕', '탐욕'];
-                        var positions = [12, 34, 49, 65, 87];
-                        return labels[positions.indexOf(this.value)];
-                    },                    
-                    style: {
-                        fontSize: '14px',
-                        color: '#fff',
-                        'font-weight': "bold",
+                            });
+                        }
                     }
                 },
-                plotBands: []
-            },
-        
-            plotOptions: {
-                gauge: {
-                    dataLabels: {
-                        className: 'gauge-value',
-                        format: '{y}',
-                        useHTML: true,
-                        y: -18
+            
+                title: {
+                    text: ''
+                },
+            
+                pane: {
+                    startAngle: -90,
+                    endAngle: 90,
+                    background: null,
+                    center: ['50%', '75%'],
+                    size: '100%'
+                },
+            
+                exporting: {
+                    enabled: false
+                },
+            
+                credits: {
+                    enabled: false,
+                },
+            
+                tooltip: {
+                    enabled: false
+                },
+            
+                yAxis: {
+                    lineColor: null,
+                    minorGridLineWidth: 0,
+                    gridLineWidth: 0,
+                    min: 0,
+                    max: 100,
+                    tickPositions: [12, 34, 49, 65, 87],
+                    tickLength: 0,
+                    minorTickLength: 0,
+                    labels: {
+                        formatter: function () {
+                            var labels = ['공포', '불안', '보통', '과욕', '탐욕'];
+                            var positions = [12, 34, 49, 65, 87];
+                            return labels[positions.indexOf(this.value)];
+                        },                    
+                        style: {
+                            fontSize: '14px',
+                            color: '#fff',
+                            'font-weight': "bold",
+                        }
                     },
-                    dial: {
-                        radius: '80%',
-                        backgroundColor: '#6A727B',
-                        baseWidth: 12,
-                        baseLength: '0%',
-                        rearLength: '0%',
-                        zIndex: 999,
-                    },
-                    pivot: {                        
-                        backgroundColor: 'transparent',
-                        radius: 33,               
-                    },
-                    animation: {
-                        duration: 2000,
-                        easing: 'easeOutBounce',
+                    plotBands: []
+                },
+            
+                plotOptions: {
+                    gauge: {
+                        dataLabels: {
+                            className: 'gauge-value',
+                            format: '{y}',
+                            useHTML: true,
+                            y: -18
+                        },
+                        dial: {
+                            radius: '80%',
+                            backgroundColor: '#6A727B',
+                            baseWidth: 12,
+                            baseLength: '0%',
+                            rearLength: '0%',
+                            zIndex: 999,
+                        },
+                        pivot: {                        
+                            backgroundColor: 'transparent',
+                            radius: 33,               
+                        },
+                        animation: {
+                            duration: 2000,
+                            easing: 'easeOutBounce',
+                        }
                     }
-                }
-            },
+                },            
+                series: data,
+            });
+            console.timeEnd('CustomChart_Score Execution Time');
+            
+        }
+        // requestAnimationFrame을 사용하여 비동기적으로 차트 렌더링
+        requestAnimationFrame(renderChart);
         
-            series: data,
-        });
     }    
     
     const CustomScoreData1_1 = [{
