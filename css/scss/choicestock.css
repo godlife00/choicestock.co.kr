@@ -36315,15 +36315,21 @@ body.v_signalStreng {
   margin-top: 8px;
 }
 .modal.setting_pop02 .pop_footer .sort li {
+  flex: auto;
   display: flex;
   align-items: center;
-  padding: 10px 8px;
+  justify-content: center;
+  width: auto;
+  padding: 10px 5px;
   border-radius: 8px;
   border: solid 1px #e0e4e9;
   line-height: normal;
+  font-size: 13px;
+  text-align: center;
+  color: #333;
 }
 .modal.setting_pop02 .pop_footer .sort li a {
-  font-size: 13px;
+  font-size: 12px;
   text-align: center;
   color: #333;
 }

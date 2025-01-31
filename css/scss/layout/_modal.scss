@@ -1958,14 +1958,21 @@
             gap: 8px 6px;
             margin-top: 8px;			
             li {
+				flex: auto;
                 display: flex;
-                align-items: center;
-                padding: 10px 8px;
+                align-items: center;				
+				justify-content: center;
+				width: auto;
+                padding: 10px 5px;
                 border-radius: 8px;
                 border: solid 1px #e0e4e9;
 				line-height: normal;
+				font-size: 13px;                    
+				text-align: center;
+				color: #333;
+
                 a {
-                    font-size: 13px;                    
+                    font-size: 12px;                    
                     text-align: center;
                     color: #333;
                 }
