@@ -17892,6 +17892,15 @@ table.tableRanking td {
 	b {
 		font-weight: 700;
 	}
+	&.same {		
+		color: #363F4B;
+		font-size: 0.9375rem;
+		font-weight: normal;
+		padding-left: 5px;		
+		b {
+			font-weight: normal;
+		}		
+	}
 }
 
 @media (min-width:320px) and (max-width: 358px) {
