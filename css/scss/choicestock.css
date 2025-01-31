@@ -17829,6 +17829,15 @@ table.tableRanking td {
 .globalStock .sub_recipe .sub_mid.recipe_view .recipe_area .area .num span b {
   font-weight: 700;
 }
+.globalStock .sub_recipe .sub_mid.recipe_view .recipe_area .area .num span.same {
+  color: #363F4B;
+  font-size: 0.9375rem;
+  font-weight: normal;
+  padding-left: 5px;
+}
+.globalStock .sub_recipe .sub_mid.recipe_view .recipe_area .area .num span.same b {
+  font-weight: normal;
+}
 
 @media (min-width: 320px) and (max-width: 358px) {
   .globalStock .sub_recipe .sub_mid.recipe_view .recipe_area .area .num span {
