@@ -1847,8 +1847,7 @@ $(document).ready(function () {
     }
 
     // "닫기" 버튼 클릭 시 #ticker-container 열고 닫기
-    $('.show-more-btn').on('click', function () {
-        console.log("닫기");
+    $('.show-more-btn').on('click', function () {        
         var $tickerContainer = $('#ticker-container');
         var $arrow = $(this).find('::after');
 
@@ -2060,24 +2059,39 @@ document.addEventListener("DOMContentLoaded", function () {
 // 검색 이력 더보기, 닫기 스크립트
 document.addEventListener("DOMContentLoaded", function() {
     const tickerContainer = document.getElementById('ticker-container');
-    const showMoreBtn = document.querySelector('.show-more-btn');        
+    const showMoreBtn = document.querySelector('.show-more-btn');
+
+    function checkScroll() {
+        const isScrollable = tickerContainer.scrollHeight > tickerContainer.clientHeight;
+        showMoreBtn.style.display = isScrollable ? 'block' : 'none';
+    }
 
     function updateVisibility() {
-        if (!tickerContainer.classList.contains('expanded')) {            
+        if (!tickerContainer.classList.contains('expanded')) {
             tickerContainer.style.overflow = 'hidden';
+            tickerContainer.style.height = null; // 초기 높이로 설정
             showMoreBtn.classList.remove('expanded');
+            showMoreBtn.textContent = '더보기';
         } else {
-            tickerContainer.style.height = 'auto';
+            tickerContainer.style.height = `${tickerContainer.scrollHeight}px`;
             tickerContainer.style.overflow = 'visible';
             showMoreBtn.classList.add('expanded');
+            showMoreBtn.textContent = '닫기';
         }
     }
 
     showMoreBtn.addEventListener('click', function() {
         tickerContainer.classList.toggle('expanded');
         updateVisibility();
-        showMoreBtn.textContent = tickerContainer.classList.contains('expanded') ? '닫기' : '더보기';
     });
 
+    // 스크롤 가능 여부 확인 및 초기 UI 업데이트
+    checkScroll();
     updateVisibility();
+
+    // 창 크기 변경 시 스크롤 가능 여부 재확인
+    window.addEventListener('resize', function() {
+        checkScroll();
+        updateVisibility();
+    });
 });
