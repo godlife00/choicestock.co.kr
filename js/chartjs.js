@@ -2238,8 +2238,8 @@ $(document).ready(function () {
                 }
             },
 
-            tooltip: {
-                enabled: false,
+            tooltip: {                
+                shared: true,
             },
 
             colors: ['rgb(92, 172, 0) ', 'rgb(196, 196, 196)'],

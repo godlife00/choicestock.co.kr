@@ -12196,7 +12196,7 @@ table.tableRanking td {
 			margin-right: 8px;
 		}
 	}
-	.show-more-btn {
+	.show-more-btn {		
 		position: relative;
 		padding: 0 12px 0 0;
 		color: #969ea7;
@@ -17080,7 +17080,10 @@ table.tableRanking td {
 					align-items: center;
 					justify-content: center;
 					margin-top: 8px;
-					width: 100%;					
+					width: 100%;
+					.highcharts-label.highcharts-tooltip {
+						display: none !important;
+					}
 				}
 				.fit_margin {					
 					// display: flex;
