@@ -16954,6 +16954,9 @@ table.tableRanking td {
   margin-top: 8px;
   width: 100%;
 }
+.v_signalStreng.globalStock .sub_recipe.new_recipe .recipe_area .chart_list .chart_style .highcharts-label.highcharts-tooltip {
+  display: none !important;
+}
 .v_signalStreng.globalStock .sub_recipe.new_recipe .recipe_area .chart_list .fit_margin {
   margin-top: 8px;
   color: #6A727B;
