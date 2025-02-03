@@ -12130,7 +12130,7 @@ table.tableRanking td {
 .globalStock .sub_search .search-history-container {
   display: flex;
   align-items: center;
-  align-content: center;
+  align-content: flex-start;
   flex-wrap: wrap;
   gap: 8px 8px;
   margin: 7px auto;
@@ -12144,6 +12144,13 @@ table.tableRanking td {
   max-height: none;
   overflow: visible;
 }
+.globalStock .sub_search .search-history-container .no_recent_search {
+  width: 100%;
+  color: #939393;
+  font-size: 1rem;
+  text-align: center;
+  font-weight: 600;
+}
 .globalStock .sub_search .search-history-container .search-history-item {
   cursor: pointer;
   display: flex;
@@ -12154,7 +12161,7 @@ table.tableRanking td {
   border-radius: 20px;
   border: 1px solid transparent;
   text-align: center;
-  background-color: #ececef;
+  background: #f7f8f9;
 }
 .globalStock .sub_search .search-history-container .search-history-item a {
   color: #939393;
@@ -12163,7 +12170,9 @@ table.tableRanking td {
 .globalStock .sub_search .search-history-container .search-history-item a b {
   display: inline-block;
   padding-right: 3px;
-  font-weight: 600;
+  font-weight: bold;
+  color: #404fc3;
+  font-size: 0.8175rem;
 }
 .globalStock .sub_search .search-history-container .search-history-item .delete-btn {
   position: relative;
@@ -12232,12 +12241,16 @@ table.tableRanking td {
   width: 5px;
   height: 5px;
   position: absolute;
-  top: 4px;
+  top: 1px;
   right: 0;
   margin: auto;
   display: inline-block;
   border-top: 1px solid #424fbc;
   border-right: 1px solid #424fbc;
+  transform: rotate(135deg);
+}
+.globalStock .sub_search .search-history-actions .show-more-btn.expanded::after {
+  top: 4px;
   transform: rotate(-45deg);
 }
 

@@ -12083,7 +12083,7 @@ table.tableRanking td {
 .globalStock .sub_search .search-history-container {
 	display: flex;
 	align-items: center;
-    align-content: center;
+    align-content: flex-start;
     flex-wrap: wrap;
 	gap: 8px 8px;
 	margin: 7px auto;
@@ -12091,11 +12091,18 @@ table.tableRanking td {
 	box-sizing: border-box;	
 	max-height: calc(3 * 40px);
     overflow: hidden;
-    position: relative;	
-
+    position: relative;			
+	
 	&.expanded {
 		max-height: none;
-		overflow: visible;
+		overflow: visible;				
+	}
+	.no_recent_search {
+		width: 100%;
+		color: #939393;
+		font-size: 1rem;
+		text-align: center;
+		font-weight: 600;
 	}
 
 	.search-history-item {
@@ -12107,15 +12114,17 @@ table.tableRanking td {
 		padding: 6px 10px;
 		border-radius: 20px;
 		border: 1px solid transparent;
-		text-align: center;
-		background-color: #ececef;		
+		text-align: center;		
+		background: #f7f8f9;		
 		a {
 			color: #939393;
 			font-size: 0.75rem;
 			b {
 				display: inline-block;
 				padding-right: 3px;
-				font-weight: 600;			
+				font-weight: bold;			
+				color: #404fc3;
+				font-size: 0.8175rem;
 			}
 		} 		
 		.delete-btn {
@@ -12185,17 +12194,23 @@ table.tableRanking td {
 			width: 5px;
 			height: 5px;
 			position: absolute;
-			top: 4px;
+			top: 1px;
 			right: 0;
 			margin: auto;
 			display: inline-block;
 			border-top: 1px solid #424fbc;
 			border-right: 1px solid #424fbc;
-			transform: rotate(-45deg);
+			transform: rotate(135deg);
+					}
+		&.expanded {			
+			&::after {				
+				top: 4px;				
+				transform: rotate(-45deg);				
+			}
 		}
-
 	}
 
+	
 }	
 
 

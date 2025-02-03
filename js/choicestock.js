@@ -2057,3 +2057,27 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+// 검색 이력 더보기, 닫기 스크립트
+document.addEventListener("DOMContentLoaded", function() {
+    const tickerContainer = document.getElementById('ticker-container');
+    const showMoreBtn = document.querySelector('.show-more-btn');        
+
+    function updateVisibility() {
+        if (!tickerContainer.classList.contains('expanded')) {            
+            tickerContainer.style.overflow = 'hidden';
+            showMoreBtn.classList.remove('expanded');
+        } else {
+            tickerContainer.style.height = 'auto';
+            tickerContainer.style.overflow = 'visible';
+            showMoreBtn.classList.add('expanded');
+        }
+    }
+
+    showMoreBtn.addEventListener('click', function() {
+        tickerContainer.classList.toggle('expanded');
+        updateVisibility();
+        showMoreBtn.textContent = tickerContainer.classList.contains('expanded') ? '닫기' : '더보기';
+    });
+
+    updateVisibility();
+});
