@@ -12265,7 +12265,7 @@ table.tableRanking td {
 		display: flex;
 		align-items: center;
 		justify-content: flex-end;				
-		color: #d32f2f; // 텍스트 색상
+		color: #969ea7; 
 		background-color: transparent;
 		border: none;	
 		font-size: 13px;
@@ -12278,6 +12278,7 @@ table.tableRanking td {
 			background: url('/img/trash-icon.svg') no-repeat center center;
 			background-size: cover;
 			margin-right: 8px;
+			filter: grayscale(100%);
 		}
 	}
 	.show-more-btn {
@@ -17164,7 +17165,10 @@ table.tableRanking td {
 					align-items: center;
 					justify-content: center;
 					margin-top: 8px;
-					width: 100%;					
+					width: 100%;
+					.highcharts-label.highcharts-tooltip {
+						display: none !important;
+					}
 				}
 				.fit_margin {					
 					// display: flex;

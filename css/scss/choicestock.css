@@ -12305,7 +12305,7 @@ table.tableRanking td {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  color: #d32f2f;
+  color: #969ea7;
   background-color: transparent;
   border: none;
   font-size: 13px;
@@ -12319,6 +12319,7 @@ table.tableRanking td {
   background: url("/img/trash-icon.svg") no-repeat center center;
   background-size: cover;
   margin-right: 8px;
+  filter: grayscale(100%);
 }
 .globalStock .sub_search .search-history-actions .show-more-btn {
   position: relative;
@@ -17033,6 +17034,9 @@ table.tableRanking td {
   justify-content: center;
   margin-top: 8px;
   width: 100%;
+}
+.v_signalStreng.globalStock .sub_recipe.new_recipe .recipe_area .chart_list .chart_style .highcharts-label.highcharts-tooltip {
+  display: none !important;
 }
 .v_signalStreng.globalStock .sub_recipe.new_recipe .recipe_area .chart_list .fit_margin {
   margin-top: 8px;
