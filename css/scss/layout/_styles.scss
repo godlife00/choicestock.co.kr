@@ -10856,10 +10856,11 @@ table.tableRanking td {
 	// 250204 검색페이지 하단 테이블 수정
 	&.trading_signal {
 		td {
-			padding: 12px 7px 12px;
+			padding: 12px 12px 12px;
 		}
 		.title.t_short {
 			padding-left: 12px;
+			padding-right: 0;
 		}
 		.title a {
 			width: 100%;
@@ -10868,11 +10869,11 @@ table.tableRanking td {
 			}
 
 			@media (min-width:375px) and (max-width: 400px) {
-				width: 97px;
+				width: 100%;
 			}
 
 			@media (min-width:320px) and (max-width: 374px) {
-				width: 82px;
+				width: 100%;
 			}
 		}
 		.num {
