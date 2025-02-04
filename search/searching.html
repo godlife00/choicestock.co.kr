@@ -47,7 +47,7 @@
 </head>
 
 <body class="v_signalStreng globalStock">
-    <div id="wrap">                
+    <div id="wrap">
         <!-- 2024 신년 이벤트 -->
         <div class="event2024_payment_sub">
             <a href="../payment/step01.html" class=""><img src="../img/banner/event_subTop_240611.png" alt=""></a>
@@ -58,7 +58,7 @@
                 <div class="left">
                     <h1 class="headerLogo"><span>검색</span></h1>
                 </div>
-                <div class="cen">                    
+                <div class="cen">
                 </div>
                 <div class="right">
                     <a href="../stock/menu.html" class="h_menu">
@@ -68,18 +68,18 @@
                             <div class="bar"></div>
                         </div>
                     </a>
-                </div>                
+                </div>
             </div>
             <!-- //headerTop -->
         </div>
-        
+
         <!-- 종목검색 class = sub_search-->
         <div id="container" class="sub_search">
             <!-- 하단 GNB -->
             <div class="gnb">
                 <ul class="list">
                     <li class="home"><a href="../index.html">홈</a></li>
-                    <li class="sch active"><a href="../search/searching.html">검색</a></li>                    
+                    <li class="sch active"><a href="../search/searching.html">검색</a></li>
                     <li class="stock"><a href="../stock/recom.html">추천</a></li>
                     <li class="excavation"><a href="../stock/note.html">발굴</a></li>
                     <li class="attention"><a href="../search/searching_attention.html">관심</a></li>
@@ -93,7 +93,7 @@
                 <!-- 종목명 검색창 -->
                 <div class="searchArea">
                     <form action="">
-                        <fieldset>                            
+                        <fieldset>
                             <input type="text" placeholder="종목명 또는 심볼을 입력하세요.." class="searchInput">
                             <input type="image" src="../img/icon_search.svg" alt="검색" class="searchBtn">
                         </fieldset>
@@ -143,8 +143,8 @@
                     </div>
                 </a>
 
-                
-                <div id="ticker-container" class="search-history-container">                    
+
+                <div id="ticker-container" class="search-history-container">
                     <span class="ticker-item search-history-item" data-ticker="NVDA">
                         <a href="/search/summary/NVDA"><b>엔비디아</b> NVDA</a>
                         <button class="delete-btn">X</button>
@@ -183,169 +183,227 @@
                     </span>
                 </div>
 
-                <!-- 검색 종목이 없는 경우 -->
-                <div id="ticker-container" class="search-history-container">
-                    <p class="no_recent_search">최근 검색한 종목이 없네요 ;(</p>
-                </div>
-
                 <div class="search-history-actions">
                     <button id="deleteAll" class="delete-all-btn">
                         <i class="icon-trash"></i> 전체 삭제
                     </button>
                     <div class="show-more-btn">더보기</div>
                 </div>
-                
+
             </div>
             <!-- //sub_top -->
-            
+
             <div class="sub_mid latest_results">
                 <div class="tabsArea">
-                    <div class="tab_container">                        
+                    <div class="tab_container">
                         <div class="tab_content">
-                            <div class="">
-                                <div class="txt_box">
-                                    <p class="txt">투자자가 가장 많이 매매하고 있는 인기종목의 투자매력점수 및 적정주가를 제공합니다.</p>
-                                </div>
-                                <!-- //txt_box -->
-                            </div>
-
-                            <table cellspacing="0" border="0" class="tableRanking type_2Line">
-                                <colgroup>
-                                    <col width="100px">
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                </colgroup>
+                            <h2 class="tab_title mrt_0">인기 종목</h2>
+                            <table cellspacing="0" border="0" class="tableRanking type_2Line trading_signal">
                                 <tbody>
                                     <tr>
-                                        <td class="title"><a href="search_outline.html">애질런트 테크놀러지스<span class="ticker">AAPL</span></a>
+                                        <td class="title t_short"><a href="/search/summary/EXR"
+                                                onclick="wiseSearchEvent('EXR', '엑스트라스페이스스토리지')">엑스트라스페이스스토리지<!--<span class="ticker">EXR</span>--></a>
                                         </td>
-                                        <td class="num">
-                                            <span>69.<b>00</b></span>
-                                            <span class="increase">+2.9<b>%</b></span><!-- increase 증가, decrease 감소 -->
-                                        </td>
-                                        <td class="score"><span>67<b>점</b></span></td>
-                                        <!-- 프리미엄 서비스 부분 -->
-                                        <td class="prm_lock">
-                                            <span><img src="../img/prm_lock.png" alt="잠김"></span>
-                                        </td>
-                                        <!-- //프리미엄 서비스 부분 -->
-                                    </tr>
-                                    <tr>
-                                        <td class="title"><a href="search_outline.html">애질런트 테크놀러지스<span
-                                                    class="ticker">A</span></a>
-                                        </td>
-                                        <td class="num">
-                                            <span>69.<b>00</b></span>
-                                            <span class="decrease">-2.9<b>%</b></span><!-- increase 증가, decrease 감소 -->
-                                        </td>
-                                        <td class="score"><span>67<b>점</b></span></td>
-                                        <td class="recom"><span>고평가</span></td>
 
+                                        <td class="num">
+                                            <span>152.<b>74</b></span>
+                                            <span class="per decrease">-0.82<b>%</b></span>
+                                        </td>
+                                        <td class="recom"><span class="waitting">관망</span></td>
                                     </tr>
                                     <tr>
-                                        <td class="title"><a href="search_outline.html">애질런트 테크놀러지스<span
-                                                    class="ticker">AAPL</span></a>
+                                        <td class="title t_short"><a href="/search/summary/BR"
+                                                onclick="wiseSearchEvent('BR', '브로드리지파이낸셜솔루션즈')">브로드리지파이낸셜솔루션즈<!--<span class="ticker">BR</span>--></a>
                                         </td>
+
                                         <td class="num">
-                                            <span>69.<b>00</b></span>
-                                            <span class="increase">+2.9<b>%</b></span><!-- increase 증가, decrease 감소 -->
+                                            <span>238.<b>65</b></span>
+                                            <span class="per increase">+0.18<b>%</b></span>
                                         </td>
-                                        <td class="score"><span>67<b>점</b></span></td>
-                                        <td class="recom"><span>고평가</span></td>
+                                        <td class="recom"><span class="hold">보유</span></td>
                                     </tr>
                                     <tr>
-                                        <td class="title"><a href="search_outline.html">애질런트 테크놀러지스<span
-                                                    class="ticker">AAPL</span></a>
+                                        <td class="title t_short"><a href="/search/summary/DLB"
+                                                onclick="wiseSearchEvent('DLB', '돌비래버러토리')">돌비래버러토리<!--<span class="ticker">DLB</span>--></a>
                                         </td>
+
                                         <td class="num">
-                                            <span>69.<b>00</b></span>
-                                            <span class="increase">+2.9<b>%</b></span><!-- increase 증가, decrease 감소 -->
+                                            <span>84.<b>14</b></span>
+                                            <span class="per increase">+0.49<b>%</b></span>
                                         </td>
-                                        <td class="score"><span>67<b>점</b></span></td>
-                                        <td class="recom"><span>고평가</span></td>
+                                        <td class="recom"><span class="hold">보유</span></td>
                                     </tr>
                                     <tr>
-                                        <td class="title"><a href="search_outline.html">애질런트 테크놀러지스<span
-                                                    class="ticker">AAPL</span></a>
+                                        <td class="title t_short"><a href="/search/summary/POOL"
+                                                onclick="wiseSearchEvent('POOL', '풀')">풀<!--<span class="ticker">POOL</span>--></a>
                                         </td>
+
                                         <td class="num">
-                                            <span>69.<b>00</b></span>
-                                            <span class="increase">+2.9<b>%</b></span><!-- increase 증가, decrease 감소 -->
+                                            <span>337.<b>50</b></span>
+                                            <span class="per decrease">-1.96<b>%</b></span>
                                         </td>
-                                        <td class="score"><span>67<b>점</b></span></td>
-                                        <td class="recom"><span>고평가</span></td>
+                                        <td class="recom"><span class="waitting">관망</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="title t_short"><a href="/search/summary/ERIE"
+                                                onclick="wiseSearchEvent('ERIE', '이리인뎀니티')">이리인뎀니티<!--<span class="ticker">ERIE</span>--></a>
+                                        </td>
+
+                                        <td class="num">
+                                            <span>403.<b>61</b></span>
+                                            <span class="per increase">+0.16<b>%</b></span>
+                                        </td>
+                                        <td class="recom"><span class="waitting">관망</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="title t_short"><a href="/search/summary/FNV"
+                                                onclick="wiseSearchEvent('FNV', '프랑코네바다')">프랑코네바다<!--<span class="ticker">FNV</span>--></a>
+                                        </td>
+
+                                        <td class="num">
+                                            <span>137.<b>10</b></span>
+                                            <span class="per increase">+0.84<b>%</b></span>
+                                        </td>
+                                        <td class="recom"><span class="hold">보유</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="title t_short"><a href="/search/summary/KLAC"
+                                                onclick="wiseSearchEvent('KLAC', '케이엘에이')">케이엘에이<!--<span class="ticker">KLAC</span>--></a>
+                                        </td>
+
+                                        <td class="num">
+                                            <span>740.<b>21</b></span>
+                                            <span class="per increase">+0.27<b>%</b></span>
+                                        </td>
+                                        <td class="recom"><span class="waitting">관망</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="title t_short"><a href="/search/summary/NDAQ"
+                                                onclick="wiseSearchEvent('NDAQ', '나스닥')">나스닥<!--<span class="ticker">NDAQ</span>--></a>
+                                        </td>
+
+                                        <td class="num">
+                                            <span>81.<b>92</b></span>
+                                            <span class="per decrease">-0.51<b>%</b></span>
+                                        </td>
+                                        <td class="recom"><span class="waitting">관망</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="title t_short"><a href="/search/summary/HD"
+                                                onclick="wiseSearchEvent('HD', '홈디포')">홈디포<!--<span class="ticker">HD</span>--></a>
+                                        </td>
+
+                                        <td class="num">
+                                            <span>408.<b>76</b></span>
+                                            <span class="per decrease">-0.78<b>%</b></span>
+                                        </td>
+                                        <td class="recom"><span class="hold">보유</span></td>
                                     </tr>
                                 </tbody>
                             </table>
 
-                            <h2 class="tab_title">급등주</h2>
-                            <table cellspacing="0" border="0" class="tableRanking type_2Line">
-                                <colgroup>
-                                    <col width="100px">
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                </colgroup>
+                            <h2 class="tab_title">급등 종목</h2>
+                            <table cellspacing="0" border="0" class="tableRanking type_2Line trading_signal">
                                 <tbody>
                                     <tr>
-                                        <td class="title"><a href="search_outline.html">애질런트 테크놀러지스<span
-                                                    class="ticker">AAPL</span></a>
+                                        <td class="title t_short"><a href="/search/summary/IVVD"
+                                                onclick="wiseSearchEvent('IVVD', '인비비드')">인비비드<!--<span class="ticker">IVVD</span>--></a>
                                         </td>
                                         <td class="num">
-                                            <span>69.<b>00</b></span>
-                                            <span class="increase">+2.9<b>%</b></span><!-- increase 증가, decrease 감소 -->
+                                            <span>1.<b>06</b></span>
+                                            <span class="per increase">+196.09<b>%</b></span>
                                         </td>
-                                        <td class="score"><span>67<b>점</b></span></td>
-                                        <!-- 프리미엄 서비스 부분 -->
-                                        <td class="prm_lock">
-                                            <span><img src="../img/prm_lock.png" alt="잠김"></span>
-                                        </td>
-                                        <!-- //프리미엄 서비스 부분 -->
+                                        <td class="recom"><span class="waitting">관망</span></td>
                                     </tr>
                                     <tr>
-                                        <td class="title"><a href="search_outline.html">애질런트 테크놀러지스<span
-                                                    class="ticker">A</span></a>
+                                        <td class="title t_short"><a href="/search/summary/HCWB"
+                                                onclick="wiseSearchEvent('HCWB', 'HCW바이오로직스')">HCW바이오로직스<!--<span class="ticker">HCWB</span>--></a>
                                         </td>
                                         <td class="num">
-                                            <span>69.<b>00</b></span>
-                                            <span class="decrease">-2.9<b>%</b></span><!-- increase 증가, decrease 감소 -->
+                                            <span>0.<b>64</b></span>
+                                            <span class="per increase">+128.78<b>%</b></span>
                                         </td>
-                                        <td class="score"><span>67<b>점</b></span></td>
-                                        <td class="recom"><span>고평가</span></td>
+                                        <td class="recom"><span class="waitting">관망</span></td>
                                     </tr>
                                     <tr>
-                                        <td class="title"><a href="search_outline.html">애질런트 테크놀러지스<span
-                                                    class="ticker">AAPL</span></a>
+                                        <td class="title t_short"><a href="/search/summary/GHRS"
+                                                onclick="wiseSearchEvent('GHRS', 'GH리서치')">GH리서치<!--<span class="ticker">GHRS</span>--></a>
                                         </td>
                                         <td class="num">
-                                            <span>69.<b>00</b></span>
-                                            <span class="increase">+2.9<b>%</b></span><!-- increase 증가, decrease 감소 -->
+                                            <span>17.<b>99</b></span>
+                                            <span class="per increase">+69.72<b>%</b></span>
                                         </td>
-                                        <td class="score"><span>67<b>점</b></span></td>
-                                        <td class="recom"><span>고평가</span></td>
+                                        <td class="recom"><span class="waitting">관망</span></td>
                                     </tr>
                                     <tr>
-                                        <td class="title"><a href="search_outline.html">애질런트 테크놀러지스<span
-                                                    class="ticker">AAPL</span></a>
+                                        <td class="title t_short"><a href="/search/summary/CLDI"
+                                                onclick="wiseSearchEvent('CLDI', '칼리디바이오쎄라퓨틱스')">칼리디바이오쎄라퓨틱스<!--<span class="ticker">CLDI</span>--></a>
                                         </td>
                                         <td class="num">
-                                            <span>69.<b>00</b></span>
-                                            <span class="increase">+2.9<b>%</b></span><!-- increase 증가, decrease 감소 -->
+                                            <span>1.<b>05</b></span>
+                                            <span class="per increase">+38.52<b>%</b></span>
                                         </td>
-                                        <td class="score"><span>67<b>점</b></span></td>
-                                        <td class="recom"><span>고평가</span></td>
+                                        <td class="recom"><span class="waitting">관망</span></td>
                                     </tr>
                                     <tr>
-                                        <td class="title"><a href="search_outline.html">애질런트 테크놀러지스<span
-                                                    class="ticker">AAPL</span></a>
+                                        <td class="title t_short"><a href="/search/summary/CYCN"
+                                                onclick="wiseSearchEvent('CYCN', '사이클러리온쎄라퓨틱스')">사이클러리온쎄라퓨틱스<!--<span class="ticker">CYCN</span>--></a>
                                         </td>
                                         <td class="num">
-                                            <span>69.<b>00</b></span>
-                                            <span class="increase">+2.9<b>%</b></span><!-- increase 증가, decrease 감소 -->
+                                            <span>5.<b>32</b></span>
+                                            <span class="per increase">+35.71<b>%</b></span>
                                         </td>
-                                        <td class="score"><span>67<b>점</b></span></td>
-                                        <td class="recom"><span>고평가</span></td>
+                                        <td class="recom"><span class="waitting">관망</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="title t_short"><a href="/search/summary/EJH"
+                                                onclick="wiseSearchEvent('EJH', 'E-홈하우스홀드서비스홀딩스')">E-홈하우스홀드서비스홀딩스<!--<span class="ticker">EJH</span>--></a>
+                                        </td>
+                                        <td class="num">
+                                            <span>1.<b>02</b></span>
+                                            <span class="per increase">+34.21<b>%</b></span>
+                                        </td>
+                                        <td class="recom"><span class="waitting">관망</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="title t_short"><a href="/search/summary/LDTC"
+                                                onclick="wiseSearchEvent('LDTC', '레더테크홀딩스')">레더테크홀딩스<!--<span class="ticker">LDTC</span>--></a>
+                                        </td>
+                                        <td class="num">
+                                            <span>1.<b>04</b></span>
+                                            <span class="per increase">+34.02<b>%</b></span>
+                                        </td>
+                                        <td class="recom"><span class="waitting">관망</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="title t_short"><a href="/search/summary/BHAT"
+                                                onclick="wiseSearchEvent('BHAT', '블루헷인터랙티브엔터테인먼트테크놀로지')">블루헷인터랙티브엔터테인먼트테크놀로지<!--<span class="ticker">BHAT</span>--></a>
+                                        </td>
+                                        <td class="num">
+                                            <span>0.<b>05</b></span>
+                                            <span class="per increase">+27.78<b>%</b></span>
+                                        </td>
+                                        <td class="recom"><span class="waitting">관망</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="title t_short"><a href="/search/summary/JZ"
+                                                onclick="wiseSearchEvent('JZ', '지엔쯔에듀케이션테크놀러지그룹')">지엔쯔에듀케이션테크놀러지그룹<!--<span class="ticker">JZ</span>--></a>
+                                        </td>
+                                        <td class="num">
+                                            <span>0.<b>93</b></span>
+                                            <span class="per increase">+22.88<b>%</b></span>
+                                        </td>
+                                        <td class="recom"><span class="waitting">관망</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="title t_short"><a href="/search/summary/BACK"
+                                                onclick="wiseSearchEvent('BACK', '아이맥홀딩스')">아이맥홀딩스<!--<span class="ticker">BACK</span>--></a>
+                                        </td>
+                                        <td class="num">
+                                            <span>0.<b>76</b></span>
+                                            <span class="per increase">+22.19<b>%</b></span>
+                                        </td>
+                                        <td class="recom"><span class="waitting">관망</span></td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -408,51 +466,32 @@
 </body>
 
 
-<!-- [첫달 3,000] 초이스스탁US 프리미엄 첫달 3,000원 -->
-<div class="first_month_3300 md-modal md-effect-3" id="modal-5">
+<!-- Modal popup -->
+<!-- Modal popup -->
+<!-- 프리미엄 첫 달 1,000원! -->
+<div class="first_month_3300 md-modal md-effect-3" id="modal-3">
     <!-- class : md-show 가 없는 경우 팝업 숨김, md-show 있는 경우 팝업 노출  -->
     <div class="md-content">
         <div id="setting" class="setting_area">
             <div class="pop_header">
                 <a href="#setting_anchor" title="로그인 레이어 닫기" class="close"><img src="../img/clse_w.png" alt="팝업닫기"></a>
                 <div class="sub_top">
-                    <h2 class="h2_title">초이스스탁US 프리미엄<span><strong>로그인만하면 2주 무료!</strong></span></h2>
-                    <p class="period">미국주식 추천과 분석, 알림까지 한번에!</p>
+                    <h2 class="h2_title">AI가 알려주는 투자타이밍!</h2>
+                    <p class="period">초이스스탁US 프리미엄</p>
                 </div>
             </div>
             <!-- //pop_header -->
             <div class="pop_con">
-                <table cellspacing="0" border="0" class="tableRanking type_compare">
-                    <tbody>
-                        <tr>
-                            <td class="mid_td"><span>• 5분이면 끝! 매력적인 종목을 한눈에 <b>종목진단</b></span></td>
-                        </tr>
-                        <tr>
-                            <td class="mid_td"><span>• 엄선된 저평가 우량주만 콕! <b>종목추천/포트폴리오</b></span></td>
-                        </tr>
-                        <tr>
-                            <td class="mid_td"><span>• 투자매력 + 저평가 + 수급 <b>오늘의 승부주</b></span></td>
-                        </tr>
-                        <tr>
-                            <td class="mid_td"><span>• 투자매력주의 매매판단을 빠르게! <b>AI적정주가</b></span></td>
-                        </tr>
-                        <tr>
-                            <td class="mid_td"><span>• 나만의 취향저격 종목추천 <b>종목캐치</b></span></td>
-                        </tr>
-                        <tr>
-                            <td class="mid_td"><span>• 관심종목/보유종목 모니터링 <b>관심종목/원스톱진단</b></span></td>
-                        </tr>
-                        <tr>
-                            <td class="mid_td"><span>• 종목추천 + 관심종목 업데이트 <b>알림서비스</b></span></td>
-                        </tr>
-                    </tbody>
-                </table>
-
+                <ul>
+                    <li><span class="num">1</span>지금살까? 특허받은 전종목 <b>매매신호</b></li>
+                    <li><span class="num">2</span>매수부터 매도까지! <b>종목추천</b></li>
+                    <li><span class="num">3</span>투자매력과 적정주가를 한눈에 <b>종목진단</b></li>
+                </ul>
             </div>
             <div class="pop_btm">
                 <div class="btnArea payBtn">
                     <!-- <a href="login_complete.html" class="btn btn_save"><b>프리미엄</b> 가입하기<i></i></a> -->
-                    <a href="stock/service_prm.html" class="btn btn_save"><b>프리미엄 2주 무료체험</b><i></i></a>
+                    <a href="stock/service_prm.html" class="btn btn_save">프리미엄 <b>첫 달 1,000원!</b></a>
                 </div>
             </div>
         </div>

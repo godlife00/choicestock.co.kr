@@ -10624,7 +10624,10 @@ table.tableRanking td {
 	padding-left: 25px;
 	margin-top: 23px;
 	position: relative;
-	top: 5px;
+	top: 5px;	
+	&.mrt_0 {
+		margin-top: 0;
+	}
 }
 
 .globalStock .sub_search .latest_results .tabsArea table.tableRanking {
@@ -10632,6 +10635,9 @@ table.tableRanking td {
 	margin: 20px auto 0;
 	background: #fff;
 	border-radius: 20px;
+	&.mrt_0 {
+		margin-top: 0;
+	}	
 }
 
 .globalStock .sub_search .latest_results .tabsArea table.tableRanking tr:last-child {
@@ -10844,6 +10850,122 @@ table.tableRanking td {
 	font-size: 0.9375rem;
 	font-weight: normal;
 	color: #939393;
+}
+
+.globalStock .sub_search .latest_results .tabsArea table.tableRanking {
+	// 250204 검색페이지 하단 테이블 수정
+	&.trading_signal {		
+		tr {
+			display: flex;
+			align-items: center;
+			gap: 0 5px;
+			padding: 18px 0;
+		}
+		td {
+			&.title.t_short {
+				flex: 5;
+			}
+			&.num {
+				flex: 5;				
+			}
+			&.recom {
+				flex: 2;
+				padding-right: 6px;
+			}
+			@media (min-width: 640px) {
+				&.recom {
+					flex: 1;					
+				}
+			}
+		}		
+		td {
+			flex: 1 1 auto;
+			padding: 0;												
+		}
+		.title.t_short {
+			padding-left: 12px;
+			padding-right: 0;
+		}
+		.title a {
+			display: block;
+			width: auto;			
+			@media (min-width:401px) and (max-width: 640px) {
+				width: 140px;				
+			}
+
+			@media (min-width:375px) and (max-width: 400px) {
+				width: 120px;				
+			}
+
+			@media (min-width:320px) and (max-width: 374px) {
+				width: 110px;				
+			}
+		}
+		.num {
+			display: flex;
+			flex-direction: row;
+			align-items: baseline;
+			justify-content: flex-end;
+			flex-wrap: nowrap;
+			gap: 0 7px;
+			max-width: 140px;
+			box-sizing: border-box;			
+			margin-left: auto;
+			span {
+				margin: 0;
+				width: 60px;
+				// margin-left: auto;				
+				&:nth-of-type(1) {
+					min-width: 70px;
+					text-align: right;					
+				}
+				b {
+					opacity: 1;
+					font-weight: normal;
+				}
+				&.per {
+					padding: 0;
+					font-size: 0.75rem;
+					font-weight: normal;
+					opacity: 1;
+					b {
+						opacity: 1;
+						font-weight: normal;
+					}
+					&.increase {
+						display: block;
+						color: #ff0000;
+						font-size: 0.75rem;
+						b {
+							color: #ff0000;
+						}
+					}
+					&.decrease {
+						display: block;
+						color: #0062ff;
+						font-size: 0.75rem;
+						b {
+							color: #0062ff;
+						}
+					}
+					&.same {
+						display: block;
+						color: #363F4B;;
+						font-size: 0.75rem;
+						b {
+							color: #363F4B;
+						}
+					}
+
+				}
+				
+			}
+		}
+		.recom {
+			line-height: normal;
+		}
+	}
+
 }
 
 .globalStock .sub_search .latest_results .tabsArea .attentionSwiper {
@@ -12180,7 +12302,7 @@ table.tableRanking td {
 		display: flex;
 		align-items: center;
 		justify-content: flex-end;				
-		color: #d32f2f; // 텍스트 색상
+		color: #969ea7; 
 		background-color: transparent;
 		border: none;	
 		font-size: 13px;
@@ -12193,9 +12315,10 @@ table.tableRanking td {
 			background: url('/img/trash-icon.svg') no-repeat center center;
 			background-size: cover;
 			margin-right: 8px;
+			filter: grayscale(100%);
 		}
 	}
-	.show-more-btn {		
+	.show-more-btn {
 		position: relative;
 		padding: 0 12px 0 0;
 		color: #969ea7;
