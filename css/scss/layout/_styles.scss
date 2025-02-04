@@ -10624,7 +10624,10 @@ table.tableRanking td {
 	padding-left: 25px;
 	margin-top: 23px;
 	position: relative;
-	top: 5px;
+	top: 5px;	
+	&.mrt_0 {
+		margin-top: 0;
+	}
 }
 
 .globalStock .sub_search .latest_results .tabsArea table.tableRanking {
@@ -10847,6 +10850,85 @@ table.tableRanking td {
 	font-size: 0.9375rem;
 	font-weight: normal;
 	color: #939393;
+}
+
+.globalStock .sub_search .latest_results .tabsArea table.tableRanking {
+	// 250204 검색페이지 하단 테이블 수정
+	&.trading_signal {
+		td {
+			padding: 12px 7px 12px;
+		}
+		.title.t_short {
+			padding-left: 12px;
+		}
+		.title a {
+			width: 100%;
+			@media (min-width:401px) and (max-width: 640px) {
+				width: 140px;
+			}
+
+			@media (min-width:375px) and (max-width: 400px) {
+				width: 97px;
+			}
+
+			@media (min-width:320px) and (max-width: 374px) {
+				width: 82px;
+			}
+		}
+		.num {
+			display: flex;
+			flex-direction: row;
+			align-items: baseline;
+			justify-content: flex-end;
+			flex-wrap: nowrap;
+			gap: 0 7px;
+			max-width: 140px;
+			box-sizing: border-box;
+			padding-top: 7px;
+			margin-left: auto;
+			span {
+				width: 60px;
+				margin-left: auto;				
+				&:nth-of-type(1) {
+					min-width: 70px;
+					text-align: right;					
+				}
+				b {
+					opacity: 1;
+					font-weight: normal;
+				}
+				&.per {
+					font-size: 0.75rem;
+					font-weight: normal;
+					opacity: 1;
+					b {
+						opacity: 1;
+						font-weight: normal;
+					}
+					&.increase {
+						display: block;
+						color: #ff0000;
+						font-size: 0.75rem;
+						b {
+							color: #ff0000;
+						}
+					}
+					&.decrease {
+						display: block;
+						color: #0062ff;
+						font-size: 0.75rem;
+						b {
+							color: #0062ff;
+						}
+					}
+
+				}
+				
+			}
+		}
+		
+	}
+
 }
 
 .globalStock .sub_search .latest_results .tabsArea .attentionSwiper {

@@ -10771,6 +10771,9 @@ table.tableRanking td {
   position: relative;
   top: 5px;
 }
+.globalStock .sub_search .latest_results .tabsArea .tab_container .tab_title.mrt_0 {
+  margin-top: 0;
+}
 
 .globalStock .sub_search .latest_results .tabsArea table.tableRanking {
   width: calc(100% - 30px);
@@ -10988,6 +10991,80 @@ table.tableRanking td {
   font-size: 0.9375rem;
   font-weight: normal;
   color: #939393;
+}
+
+.globalStock .sub_search .latest_results .tabsArea table.tableRanking.trading_signal td {
+  padding: 12px 7px 12px;
+}
+.globalStock .sub_search .latest_results .tabsArea table.tableRanking.trading_signal .title.t_short {
+  padding-left: 12px;
+}
+.globalStock .sub_search .latest_results .tabsArea table.tableRanking.trading_signal .title a {
+  width: 100%;
+}
+@media (min-width: 401px) and (max-width: 640px) {
+  .globalStock .sub_search .latest_results .tabsArea table.tableRanking.trading_signal .title a {
+    width: 140px;
+  }
+}
+@media (min-width: 375px) and (max-width: 400px) {
+  .globalStock .sub_search .latest_results .tabsArea table.tableRanking.trading_signal .title a {
+    width: 97px;
+  }
+}
+@media (min-width: 320px) and (max-width: 374px) {
+  .globalStock .sub_search .latest_results .tabsArea table.tableRanking.trading_signal .title a {
+    width: 82px;
+  }
+}
+.globalStock .sub_search .latest_results .tabsArea table.tableRanking.trading_signal .num {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+  gap: 0 7px;
+  max-width: 140px;
+  box-sizing: border-box;
+  padding-top: 7px;
+  margin-left: auto;
+}
+.globalStock .sub_search .latest_results .tabsArea table.tableRanking.trading_signal .num span {
+  width: 60px;
+  margin-left: auto;
+}
+.globalStock .sub_search .latest_results .tabsArea table.tableRanking.trading_signal .num span:nth-of-type(1) {
+  min-width: 70px;
+  text-align: right;
+}
+.globalStock .sub_search .latest_results .tabsArea table.tableRanking.trading_signal .num span b {
+  opacity: 1;
+  font-weight: normal;
+}
+.globalStock .sub_search .latest_results .tabsArea table.tableRanking.trading_signal .num span.per {
+  font-size: 0.75rem;
+  font-weight: normal;
+  opacity: 1;
+}
+.globalStock .sub_search .latest_results .tabsArea table.tableRanking.trading_signal .num span.per b {
+  opacity: 1;
+  font-weight: normal;
+}
+.globalStock .sub_search .latest_results .tabsArea table.tableRanking.trading_signal .num span.per.increase {
+  display: block;
+  color: #ff0000;
+  font-size: 0.75rem;
+}
+.globalStock .sub_search .latest_results .tabsArea table.tableRanking.trading_signal .num span.per.increase b {
+  color: #ff0000;
+}
+.globalStock .sub_search .latest_results .tabsArea table.tableRanking.trading_signal .num span.per.decrease {
+  display: block;
+  color: #0062ff;
+  font-size: 0.75rem;
+}
+.globalStock .sub_search .latest_results .tabsArea table.tableRanking.trading_signal .num span.per.decrease b {
+  color: #0062ff;
 }
 
 .globalStock .sub_search .latest_results .tabsArea .attentionSwiper {
