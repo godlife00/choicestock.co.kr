@@ -17277,8 +17277,10 @@ table.tableRanking td {
 		}
 
 		//로켓 성장주
-		.recipe_area .area.rocket {
-
+		.recipe_area .area.rocket {			
+			@extend .recipe_area;
+			@extend .turnaround;
+			background-color: red;
 		}
 	}	
 	
