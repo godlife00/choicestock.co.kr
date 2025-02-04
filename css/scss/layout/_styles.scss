@@ -16683,7 +16683,7 @@ table.tableRanking td {
 				margin: 0 auto;
 				border-radius: 16px;				
 			}			
-			&.jump a, &.top50 a, &.sale a, &.earnings a, &.dividend a, &.growth a, &.superStocks a, &.consumerMonopoly a, &.profitTurnaround a, &.goldenCross a, &.growthDiscovery a {
+			&.jump a, &.top50 a, &.sale a, &.earnings a, &.dividend a, &.growth a, &.superStocks a, &.consumerMonopoly a, &.profitTurnaround a, &.goldenCross a, &.growthDiscovery a, &.rocketBooster a {
 				display: block;					
 				background: none;			
 				padding: 0 8px;		
@@ -16776,6 +16776,13 @@ table.tableRanking td {
 				// 발굴성장주
 				&::before {										
 					background: $growthDiscovery url('/img/growthDiscovery.png') no-repeat center 14px;				
+					background-size: auto 132px;
+				}
+			}			
+			&.rocketBooster {
+				// 발굴성장주
+				&::before {										
+					background: $rocketBooster url('/img/rocketBooster.png') no-repeat center 14px;				
 					background-size: auto 132px;
 				}
 			}			
