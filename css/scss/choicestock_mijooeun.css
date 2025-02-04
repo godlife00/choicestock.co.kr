@@ -11010,12 +11010,12 @@ table.tableRanking td {
 }
 @media (min-width: 375px) and (max-width: 400px) {
   .globalStock .sub_search .latest_results .tabsArea table.tableRanking.trading_signal .title a {
-    width: 100%;
+    width: 120px;
   }
 }
 @media (min-width: 320px) and (max-width: 374px) {
   .globalStock .sub_search .latest_results .tabsArea table.tableRanking.trading_signal .title a {
-    width: 100%;
+    width: 110px;
   }
 }
 .globalStock .sub_search .latest_results .tabsArea table.tableRanking.trading_signal .num {
@@ -11066,6 +11066,14 @@ table.tableRanking td {
 }
 .globalStock .sub_search .latest_results .tabsArea table.tableRanking.trading_signal .num span.per.decrease b {
   color: #0062ff;
+}
+.globalStock .sub_search .latest_results .tabsArea table.tableRanking.trading_signal .num span.per.same {
+  display: block;
+  color: #363F4B;
+  font-size: 0.75rem;
+}
+.globalStock .sub_search .latest_results .tabsArea table.tableRanking.trading_signal .num span.per.same b {
+  color: #363F4B;
 }
 
 .globalStock .sub_search .latest_results .tabsArea .attentionSwiper {

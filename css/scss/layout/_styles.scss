@@ -10869,11 +10869,11 @@ table.tableRanking td {
 			}
 
 			@media (min-width:375px) and (max-width: 400px) {
-				width: 100%;
+				width: 120px;
 			}
 
 			@media (min-width:320px) and (max-width: 374px) {
-				width: 100%;
+				width: 110px;
 			}
 		}
 		.num {
@@ -10920,6 +10920,14 @@ table.tableRanking td {
 						font-size: 0.75rem;
 						b {
 							color: #0062ff;
+						}
+					}
+					&.same {
+						display: block;
+						color: #363F4B;;
+						font-size: 0.75rem;
+						b {
+							color: #363F4B;
 						}
 					}
 
