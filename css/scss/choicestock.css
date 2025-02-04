@@ -17125,10 +17125,6 @@ table.tableRanking td {
 .v_signalStreng.globalStock .sub_recipe.new_recipe .recipe_area .area.turnaround .list li span:first-child::after, .v_signalStreng.globalStock .sub_recipe.new_recipe .recipe_area .area.rocket .list li span:first-child::after {
   display: none !important;
 }
-.v_signalStreng.globalStock .sub_recipe.new_recipe .recipe_area .area.rocket {
-  background-color: red;
-}
-
 .globalStock .sub_recipe .sub_top .title {
   color: #fff;
   font-size: 1.2rem;

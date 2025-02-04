@@ -17129,6 +17129,7 @@ table.tableRanking td {
 			}
 		}
 		.recipe_area .area.turnaround {			
+			// 로켓 성장주와 스타일 공유
 			.stock_info {				
 				display: flex;
 				flex-wrap: wrap;
@@ -17278,9 +17279,10 @@ table.tableRanking td {
 
 		//로켓 성장주
 		.recipe_area .area.rocket {			
+			// 턴어라운드 스타일 가져오기
 			@extend .recipe_area;
-			@extend .turnaround;
-			background-color: red;
+			@extend .turnaround;		
+
 		}
 	}	
 	
