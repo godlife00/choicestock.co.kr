@@ -16749,6 +16749,15 @@ table.tableRanking td {
 .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_top.view.growthDiscovery .update_info {
   color: rgba(255, 255, 255, 0.7);
 }
+.v_signalStreng.globalStock .sub_recipe.new_recipe .sub_top.view.rocketBooster .box_tabs {
+  background-color: #646FCD;
+}
+.v_signalStreng.globalStock .sub_recipe.new_recipe .sub_top.view.rocketBooster .box_tabs::before {
+  background: #646FCD url("/img/rocketBooster.png") no-repeat center center;
+}
+.v_signalStreng.globalStock .sub_recipe.new_recipe .sub_top.view.rocketBooster .update_info {
+  color: rgba(255, 255, 255, 0.7);
+}
 .v_signalStreng.globalStock .sub_recipe.new_recipe .l_box {
   display: flex;
   flex-wrap: wrap;
@@ -17116,7 +17125,6 @@ table.tableRanking td {
 .v_signalStreng.globalStock .sub_recipe.new_recipe .recipe_area .area.turnaround .list li span:first-child::after {
   display: none !important;
 }
-
 .globalStock .sub_recipe .sub_top .title {
   color: #fff;
   font-size: 1.2rem;

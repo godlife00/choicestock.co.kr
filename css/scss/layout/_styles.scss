@@ -16508,6 +16508,7 @@ table.tableRanking td {
 	// 레시피 디자인 변경_241224 class="sub_recipe new_recipe"
 	&.new_recipe {		
 		$jump : #646FCD; //급등주
+		$rocketBooster : #646FCD; //로켓 부스트
 		$top50 : #F8D95F; //관심 TOP50
 		$sale : #76BCE7; //지금 세일중
 		$earnings : #2E3848; //실적발표		
@@ -16865,6 +16866,19 @@ table.tableRanking td {
 					background-color: $growthDiscovery;
 					&::before {
 						background: $growthDiscovery url('/img/growthDiscovery.png') no-repeat center center;
+					}
+				}
+				.update_info {
+					color: rgba(255, 255, 255, 0.7);
+					
+				}
+			}
+			&.rocketBooster {
+				// 로켓부스터
+				.box_tabs {
+					background-color: $rocketBooster;
+					&::before {
+						background: $rocketBooster url('/img/rocketBooster.png') no-repeat center center;
 					}
 				}
 				.update_info {
@@ -17260,6 +17274,11 @@ table.tableRanking td {
 					}					
 				}
 			}
+		}
+
+		//로켓 성장주
+		.recipe_area .area.rocket {
+
 		}
 	}	
 	
