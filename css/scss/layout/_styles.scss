@@ -17345,12 +17345,15 @@ table.tableRanking td {
 						font-weight: normal;												
 						.decrease b {
 							color: #26ABFF;
+							font-weight: normal;												
 						}
 						.increase b {
-							color: #ff2929;							
+							color: #ff2929;
+							font-weight: normal;												
 						}
 						.decrease b {
 							color: #26ABFF;
+							font-weight: normal;												
 						}
 					}
 					
@@ -17412,7 +17415,47 @@ table.tableRanking td {
 			// 턴어라운드 스타일 가져오기
 			@extend .recipe_area;
 			@extend .turnaround;		
+		}
 
+		// 지금 세일중
+		.sale_deal {						
+			span {
+				display: flex;
+				gap: 0 3px;
+				font-size: 0.9375rem;
+				font-weight: bold;
+				letter-spacing: normal;
+				text-align: center;
+				color: #333;
+				position: relative;				
+			}
+			
+			span i {
+				display: inline-block;
+				width: 13px;
+				height: 13px;
+				background: url('/img/icon_saledeal.svg') no-repeat center center;								
+			}
+		}
+		// 관심 TOP
+		.attention_box {						
+			display: flex;
+			gap: 0 3px;
+			.attention.on {								
+				font-size: 0.9375rem;
+				color: #333;
+				vertical-align: top;
+				display: inline-block;
+				font-weight: 700;
+				i {
+					display: inline-block;
+					width: 15px;
+					height: 11px;
+					background: url('/img/heart_attention_gray.svg') no-repeat 0 100%;					
+					background-size: 14px 25px;
+
+				}
+			}
 		}
 	}	
 	
@@ -18340,6 +18383,10 @@ table.tableRanking td {
 	display: block;
 	color: #363F4B;
 	font-size: 0.9375rem;
+	b {
+		font-weight: normal;
+		color: #363F4B;
+	}
 }
 
 .globalStock .sub_recipe .sub_mid.recipe_view .recipe_area .area .score {
@@ -18926,49 +18973,6 @@ table.tableRanking td {
 	background-position: right 0 !important;
 }
 
-.globalStock .sub_recipe .sub_mid.recipe_view .recipe_area .area ul.list .sale_deal {
-	flex-basis: auto;
-}
-
-.globalStock .sub_recipe .sub_mid.recipe_view .recipe_area .area ul.list .sale_deal span {
-	font-size: 0.9375rem;
-	font-weight: bold;
-	letter-spacing: normal;
-	text-align: center;
-	color: #333;
-	position: relative;
-	padding: 0 18px;
-}
-
-.globalStock .sub_recipe .sub_mid.recipe_view .recipe_area .area ul.list .sale_deal span i {
-	display: inline-block;
-	width: 13px;
-	height: 13px;
-	background: url('/img/icon_saledeal.svg') no-repeat center center;
-	margin-right: 3px;
-}
-
-.globalStock .sub_recipe .sub_mid.recipe_view .recipe_area .area ul.list .sale_deal span::before {
-	content: "";
-	position: absolute;
-	left: 0;
-	top: 0;
-	display: inline-block;
-	width: 1px;
-	height: 20px;
-	background-color: #E1E4E9;
-}
-
-.globalStock .sub_recipe .sub_mid.recipe_view .recipe_area .area ul.list .sale_deal span::after {
-	content: "";
-	position: absolute;
-	right: 0;
-	top: 0;
-	display: inline-block;
-	width: 1px;
-	height: 20px;
-	background-color: #E1E4E9;
-}
 
 /* 발굴 - 미국주식 탐구생활 */
 .globalStock .sub_research .sub_top .best_research {

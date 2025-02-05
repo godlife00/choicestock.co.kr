@@ -17194,12 +17194,15 @@ table.tableRanking td {
 }
 .v_signalStreng.globalStock .sub_recipe.new_recipe .recipe_area .area.turnaround .stock_info .detail_num .per .decrease b, .v_signalStreng.globalStock .sub_recipe.new_recipe .recipe_area .area.rocket .stock_info .detail_num .per .decrease b {
   color: #26ABFF;
+  font-weight: normal;
 }
 .v_signalStreng.globalStock .sub_recipe.new_recipe .recipe_area .area.turnaround .stock_info .detail_num .per .increase b, .v_signalStreng.globalStock .sub_recipe.new_recipe .recipe_area .area.rocket .stock_info .detail_num .per .increase b {
   color: #ff2929;
+  font-weight: normal;
 }
 .v_signalStreng.globalStock .sub_recipe.new_recipe .recipe_area .area.turnaround .stock_info .detail_num .per .decrease b, .v_signalStreng.globalStock .sub_recipe.new_recipe .recipe_area .area.rocket .stock_info .detail_num .per .decrease b {
   color: #26ABFF;
+  font-weight: normal;
 }
 .v_signalStreng.globalStock .sub_recipe.new_recipe .recipe_area .area.turnaround .stock_info .trans_list, .v_signalStreng.globalStock .sub_recipe.new_recipe .recipe_area .area.rocket .stock_info .trans_list {
   width: 100%;
@@ -17245,6 +17248,41 @@ table.tableRanking td {
 .v_signalStreng.globalStock .sub_recipe.new_recipe .recipe_area .area.turnaround .list li span:first-child::after, .v_signalStreng.globalStock .sub_recipe.new_recipe .recipe_area .area.rocket .list li span:first-child::after {
   display: none !important;
 }
+.v_signalStreng.globalStock .sub_recipe.new_recipe .sale_deal span {
+  display: flex;
+  gap: 0 3px;
+  font-size: 0.9375rem;
+  font-weight: bold;
+  letter-spacing: normal;
+  text-align: center;
+  color: #333;
+  position: relative;
+}
+.v_signalStreng.globalStock .sub_recipe.new_recipe .sale_deal span i {
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  background: url("/img/icon_saledeal.svg") no-repeat center center;
+}
+.v_signalStreng.globalStock .sub_recipe.new_recipe .attention_box {
+  display: flex;
+  gap: 0 3px;
+}
+.v_signalStreng.globalStock .sub_recipe.new_recipe .attention_box .attention.on {
+  font-size: 0.9375rem;
+  color: #333;
+  vertical-align: top;
+  display: inline-block;
+  font-weight: 700;
+}
+.v_signalStreng.globalStock .sub_recipe.new_recipe .attention_box .attention.on i {
+  display: inline-block;
+  width: 15px;
+  height: 11px;
+  background: url("/img/heart_attention_gray.svg") no-repeat 0 100%;
+  background-size: 14px 25px;
+}
+
 .globalStock .sub_recipe .sub_top .title {
   color: #fff;
   font-size: 1.2rem;
@@ -18133,6 +18171,10 @@ table.tableRanking td {
   color: #363F4B;
   font-size: 0.9375rem;
 }
+.globalStock .sub_recipe .sub_mid.recipe_view .recipe_area .area .per .same b, .v_signalStreng.globalStock .sub_recipe.new_recipe .recipe_area .sub_mid.recipe_view .area.rocket .area .per .same b {
+  font-weight: normal;
+  color: #363F4B;
+}
 
 .globalStock .sub_recipe .sub_mid.recipe_view .recipe_area .area .score, .v_signalStreng.globalStock .sub_recipe.new_recipe .recipe_area .sub_mid.recipe_view .area.rocket .area .score {
   text-align: right;
@@ -18683,50 +18725,6 @@ table.tableRanking td {
 
 .globalStock .sub_recipe .sub_mid.recipe_view .recipe_area .area ul.list .star_area .starRev .starR.half, .v_signalStreng.globalStock .sub_recipe.new_recipe .recipe_area .sub_mid.recipe_view .area.rocket .area ul.list .star_area .starRev .starR.half {
   background-position: right 0 !important;
-}
-
-.globalStock .sub_recipe .sub_mid.recipe_view .recipe_area .area ul.list .sale_deal, .v_signalStreng.globalStock .sub_recipe.new_recipe .recipe_area .sub_mid.recipe_view .area.rocket .area ul.list .sale_deal {
-  flex-basis: auto;
-}
-
-.globalStock .sub_recipe .sub_mid.recipe_view .recipe_area .area ul.list .sale_deal span, .v_signalStreng.globalStock .sub_recipe.new_recipe .recipe_area .sub_mid.recipe_view .area.rocket .area ul.list .sale_deal span {
-  font-size: 0.9375rem;
-  font-weight: bold;
-  letter-spacing: normal;
-  text-align: center;
-  color: #333;
-  position: relative;
-  padding: 0 18px;
-}
-
-.globalStock .sub_recipe .sub_mid.recipe_view .recipe_area .area ul.list .sale_deal span i, .v_signalStreng.globalStock .sub_recipe.new_recipe .recipe_area .sub_mid.recipe_view .area.rocket .area ul.list .sale_deal span i {
-  display: inline-block;
-  width: 13px;
-  height: 13px;
-  background: url("/img/icon_saledeal.svg") no-repeat center center;
-  margin-right: 3px;
-}
-
-.globalStock .sub_recipe .sub_mid.recipe_view .recipe_area .area ul.list .sale_deal span::before, .v_signalStreng.globalStock .sub_recipe.new_recipe .recipe_area .sub_mid.recipe_view .area.rocket .area ul.list .sale_deal span::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  display: inline-block;
-  width: 1px;
-  height: 20px;
-  background-color: #E1E4E9;
-}
-
-.globalStock .sub_recipe .sub_mid.recipe_view .recipe_area .area ul.list .sale_deal span::after, .v_signalStreng.globalStock .sub_recipe.new_recipe .recipe_area .sub_mid.recipe_view .area.rocket .area ul.list .sale_deal span::after {
-  content: "";
-  position: absolute;
-  right: 0;
-  top: 0;
-  display: inline-block;
-  width: 1px;
-  height: 20px;
-  background-color: #E1E4E9;
 }
 
 /* 발굴 - 미국주식 탐구생활 */
