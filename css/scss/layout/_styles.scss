@@ -17415,6 +17415,16 @@ table.tableRanking td {
 			// 턴어라운드 스타일 가져오기
 			@extend .recipe_area;
 			@extend .turnaround;		
+			.num span {
+				color: #ff2929;
+				font-size: 0.9375rem;
+				font-weight: normal;
+				b {
+					color: #ff2929;
+					font-size: 0.9375rem;
+					font-weight: normal;
+				}
+			}
 		}
 
 		// 지금 세일중
@@ -17457,6 +17467,41 @@ table.tableRanking td {
 				}
 			}
 		}
+		//급등주
+		.sub_mid.recipe_view .recipe_area .area .per {
+			span {
+				display: inline-block;
+			}
+			.hit {
+				color: #939393;				
+				font-size: 13px;				
+				font-weight: 500;				
+			}
+		}
+		.data_opinion {			
+			.ibox {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				font-size: 12px;
+				font-weight: normal;				
+				color: #fff;				
+				padding: 4px 9px;
+				border-radius: 16px;		
+								
+				&.str {
+					background-color: #dd5257;
+				}				
+				&.bas {
+					background: #C7CCD1;
+				}
+				
+				&.weak {
+					background-color: #404fc3;
+				}
+			}
+		}
+		
 	}	
 	
 }

@@ -17248,6 +17248,16 @@ table.tableRanking td {
 .v_signalStreng.globalStock .sub_recipe.new_recipe .recipe_area .area.turnaround .list li span:first-child::after, .v_signalStreng.globalStock .sub_recipe.new_recipe .recipe_area .area.rocket .list li span:first-child::after {
   display: none !important;
 }
+.v_signalStreng.globalStock .sub_recipe.new_recipe .recipe_area .area.rocket .num span {
+  color: #ff2929;
+  font-size: 0.9375rem;
+  font-weight: normal;
+}
+.v_signalStreng.globalStock .sub_recipe.new_recipe .recipe_area .area.rocket .num span b {
+  color: #ff2929;
+  font-size: 0.9375rem;
+  font-weight: normal;
+}
 .v_signalStreng.globalStock .sub_recipe.new_recipe .sale_deal span {
   display: flex;
   gap: 0 3px;
@@ -17281,6 +17291,33 @@ table.tableRanking td {
   height: 11px;
   background: url("/img/heart_attention_gray.svg") no-repeat 0 100%;
   background-size: 14px 25px;
+}
+.v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_view .recipe_area .area .per span, .v_signalStreng.globalStock .sub_recipe.new_recipe .recipe_area .sub_mid.recipe_view .area.rocket .area .per span {
+  display: inline-block;
+}
+.v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_view .recipe_area .area .per .hit, .v_signalStreng.globalStock .sub_recipe.new_recipe .recipe_area .sub_mid.recipe_view .area.rocket .area .per .hit {
+  color: #939393;
+  font-size: 13px;
+  font-weight: 500;
+}
+.v_signalStreng.globalStock .sub_recipe.new_recipe .data_opinion .ibox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  font-weight: normal;
+  color: #fff;
+  padding: 4px 9px;
+  border-radius: 16px;
+}
+.v_signalStreng.globalStock .sub_recipe.new_recipe .data_opinion .ibox.str {
+  background-color: #dd5257;
+}
+.v_signalStreng.globalStock .sub_recipe.new_recipe .data_opinion .ibox.bas {
+  background: #C7CCD1;
+}
+.v_signalStreng.globalStock .sub_recipe.new_recipe .data_opinion .ibox.weak {
+  background-color: #404fc3;
 }
 
 .globalStock .sub_recipe .sub_top .title {
