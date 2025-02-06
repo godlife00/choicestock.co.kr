@@ -16746,7 +16746,9 @@ table.tableRanking td {
   text-align: left;
 }
 .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_top.view .box_tabs strong {
-  display: block;
+  display: flex;
+  align-items: center;
+  gap: 0 6px;
   color: #FFF;
   font-size: 20px;
   font-weight: 700;
@@ -16986,6 +16988,10 @@ table.tableRanking td {
     padding: 10px 8px 10px;
   }
 }
+.v_signalStreng.globalStock .sub_recipe.new_recipe .recipe_area .chart_list .list#btn_free .title_logo .logo {
+  background: #F5F5F9 url("/img/signal_prm.svg") no-repeat center center;
+  background-size: 64%;
+}
 .v_signalStreng.globalStock .sub_recipe.new_recipe .recipe_area .chart_list .list .stock_info {
   display: flex;
   flex-wrap: nowrap;
@@ -17116,6 +17122,10 @@ table.tableRanking td {
   width: 100%;
   box-sizing: border-box;
   padding: 0 16px 14px 8px;
+}
+.v_signalStreng.globalStock .sub_recipe.new_recipe .recipe_area .area.turnaround .stock_info#btn_free .title_logo .logo, .v_signalStreng.globalStock .sub_recipe.new_recipe .recipe_area .area.rocket .stock_info#btn_free .title_logo .logo {
+  background: #F5F5F9 url("/img/signal_prm.svg") no-repeat center center;
+  background-size: 64%;
 }
 .v_signalStreng.globalStock .sub_recipe.new_recipe .recipe_area .area.turnaround .stock_info .title_logo, .v_signalStreng.globalStock .sub_recipe.new_recipe .recipe_area .area.rocket .stock_info .title_logo {
   display: flex;
@@ -17248,12 +17258,12 @@ table.tableRanking td {
 .v_signalStreng.globalStock .sub_recipe.new_recipe .recipe_area .area.turnaround .list li span:first-child::after, .v_signalStreng.globalStock .sub_recipe.new_recipe .recipe_area .area.rocket .list li span:first-child::after {
   display: none !important;
 }
-.v_signalStreng.globalStock .sub_recipe.new_recipe .recipe_area .area.rocket .num span {
+.v_signalStreng.globalStock .sub_recipe.new_recipe .recipe_area .area.rocket .detail + .num span {
   color: #ff2929;
   font-size: 0.9375rem;
   font-weight: normal;
 }
-.v_signalStreng.globalStock .sub_recipe.new_recipe .recipe_area .area.rocket .num span b {
+.v_signalStreng.globalStock .sub_recipe.new_recipe .recipe_area .area.rocket .detail + .num span b {
   color: #ff2929;
   font-size: 0.9375rem;
   font-weight: normal;
@@ -17510,9 +17520,6 @@ table.tableRanking td {
   border-radius: 50%;
   background: url("/img/icon_sale.svg") no-repeat center center;
   vertical-align: top;
-  margin-right: 3px;
-  position: relative;
-  top: -2px;
 }
 
 .globalStock .sub_recipe .sub_top.view .box_tabs strong {

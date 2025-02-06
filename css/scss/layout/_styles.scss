@@ -16837,7 +16837,9 @@ table.tableRanking td {
 				line-height: 20px; /* 142.857% */
 				text-align: left;
 				strong {
-					display: block;
+					display: flex;
+					align-items: center;
+					gap: 0 6px;
 					color: #FFF;					
 					font-size: 20px;					
 					font-weight: 700;
@@ -17124,6 +17126,12 @@ table.tableRanking td {
 						padding: 10px 8px 10px;	
 					}					
 					box-sizing: border-box;
+					&#btn_free {
+						.title_logo .logo {
+							background: #F5F5F9 url('/img/signal_prm.svg') no-repeat center center;
+							background-size: 64%;
+						}
+					} 
 					.stock_info {
 						display: flex;
 						flex-wrap: nowrap;
@@ -17131,6 +17139,7 @@ table.tableRanking td {
 						justify-content: flex-start;
 						gap: 16px 8px;
 						width: 100%;
+						
 						.title_logo {							
 							width: 45px;
 							display: flex;
@@ -17269,6 +17278,14 @@ table.tableRanking td {
 				width: 100%;
 				box-sizing: border-box;
 				padding: 0 16px 14px 8px;
+
+				&#btn_free {
+					.title_logo .logo {
+						background: #F5F5F9 url('/img/signal_prm.svg') no-repeat center center;
+						background-size: 64%;
+					}
+				} 
+				
 				.title_logo {																
 					display: flex;
 					align-items: center;
@@ -17290,7 +17307,7 @@ table.tableRanking td {
 							height: 100%;
 						}
 					}
-				}
+				}				
 				.detail {			
 					flex: 10;							
 					display: flex;					
@@ -17415,7 +17432,7 @@ table.tableRanking td {
 			// 턴어라운드 스타일 가져오기
 			@extend .recipe_area;
 			@extend .turnaround;		
-			.num span {
+			.detail + .num span {
 				color: #ff2929;
 				font-size: 0.9375rem;
 				font-weight: normal;
@@ -17696,10 +17713,7 @@ table.tableRanking td {
 	height: 22px;
 	border-radius: 50%;
 	background: url('/img/icon_sale.svg') no-repeat center center;
-	vertical-align: top;
-	margin-right: 3px;
-	position: relative;
-	top: -2px;
+	vertical-align: top;	
 }
 
 .globalStock .sub_recipe .sub_top.view .box_tabs strong {

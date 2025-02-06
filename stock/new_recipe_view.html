@@ -38,7 +38,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
     <!-- css -->
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <link rel="stylesheet" type="text/css" href="../css/scss/choicestock.css?v2501163" />
+    <link rel="stylesheet" type="text/css" href="../css/scss/choicestock.css?v2502163" />
     <!-- js -->
     <script src="../js/choicestock.js"></script>
 </head>
@@ -97,7 +97,7 @@
                 <!-- 골든크로스 -->
                 <div class="box_tabs">
                     <p class="update_info">업데이트 24.11/19</p>
-                    <strong>급등주의 조건! 골든크로스</strong>
+                    <strong><i class="sale_icon"></i>급등주의 조건! 골든크로스</strong>
                     최근 20일 내 이평선(EMA)에 골든크로스가 발생한, 주가 상승 추세가 강력한 종목을 AI가 찾아냅니다.
                 </div>
                 <!-- //box_tabs -->
@@ -107,7 +107,7 @@
                 <!-- 발굴성장주 -->
                 <div class="box_tabs">
                     <p class="update_info">업데이트 24.11/19</p>
-                    <strong>발굴! 성장주가 될 종목인가?</strong>
+                    <strong><i class="sale_icon"></i>발굴! 성장주가 될 종목인가?</strong>
                     성장성, 현금창출, 안전성이 삼각형 종목!<br>주가 급등이 기대되는 초기 성장주를 미리 발굴합니다.
                 </div>
                 <!-- //box_tabs -->
@@ -117,7 +117,7 @@
                 <!-- 흑자전환 -->
                 <div class="box_tabs">
                     <p class="update_info">업데이트 24.11/19</p>
-                    <strong>흑자전환</strong>
+                    <strong><i class="sale_icon"></i>흑자전환</strong>
                     적자 &#x2192; 흑자로 전환이 예상되는<br>주가 급등이 기대되는 종목을 찾아냅니다.
                 </div>
                 <!-- //box_tabs -->
@@ -137,7 +137,7 @@
                 <!-- 지금 세일중 -->
                 <div class="box_tabs">
                     <p class="update_info">업데이트 24.11/19</p>
-                    <strong>지금 세일중</strong>
+                    <strong><i class="sale_icon"></i>지금 세일중</strong>
                     저평가 우량종목이 세일 중?<br>알고리즘으로 찾아낸 매수 타이밍 종목
                 </div>
                 <!-- //box_tabs -->
@@ -187,7 +187,7 @@
                 <!-- 로켓 부스터 -->
                 <div class="box_tabs">
                     <p class="update_info">업데이트 24.11/19</p>
-                    <strong>로켓 부스터 성장주</strong>
+                    <strong><i class="sale_icon"></i>로켓 부스터 성장주</strong>                    
                     높은 EPS(주당순이익)로 미래 성장률이 가속화 되는 종목을 찾아냅니다. 로켓에 올라타세요!
                 </div>
                 <!-- //box_tabs -->
@@ -234,15 +234,18 @@
                 <div class="recipe_area">
                     <!-- 골든크로스 -->
                     <div class="chart_list">
-                        <div class="list" onclick="location.href =''">
+                        <div class="list" onclick="" id="btn_free" style="cursor:pointer;">
                             <div class="stock_info">
                                 <div class="title_logo">
-                                    <span class="logo"><img src="https://uslogo.datahero.co.kr/img/logo/us/mvl/AAPL.svg"
-                                            alt=""></span>
+                                    <span class="logo"><img src="" onerror="this.style.display='none'" alt=""></span>
                                 </div>
                                 <div class="detail">
                                     <div class="title">
-                                        <a href="" class="">애플</a>
+                                        <span href="#" data-modal="modal-3" class="md-trigger">
+                                            마<span class="remark">
+                                            <div class="txt_filter size_M"><i></i><i></i><i></i><i></i></div>
+                                            </span>
+                                        </span>
                                     </div>
                                     <div class="detail_num">
                                         <div class="num">
@@ -288,23 +291,25 @@
 
                     <!-- 발굴 성장주 -->
                     <div class="chart_list">
-                        <div class="list" onclick="location.href =''">
+                        <div class="list" onclick="" id="btn_free" style="cursor:pointer;">
                             <div class="stock_info">
                                 <div class="title_logo">
-                                    <span class="logo"><img src="https://uslogo.datahero.co.kr/img/logo/us/mvl/MSFT.svg"
-                                            alt=""></span>
+                                    <span class="logo"><img src="" onerror="this.style.display='none'" alt=""></span>
                                 </div>
                                 <div class="detail">
                                     <div class="title">
-                                        <a href="" class="">마이크로소프트마이크로소프트</a>
+                                        <span href="#" data-modal="modal-3" class="md-trigger">
+                                            마<span class="remark">
+                                            <div class="txt_filter size_M"><i></i><i></i><i></i><i></i></div>
+                                            </span>
+                                        </span>
                                     </div>
                                     <div class="detail_num">
                                         <div class="num">
-                                            <span>1,140.01</span>
+                                            <span>7.<b>55</b></span>
                                         </div>
                                         <div class="per">
-                                            <span class="increase">89.89%</span>
-                                            <!-- increase 증가, decrease 감소, 보합은 same -->
+                                            <span class="increase">+2.30<b>%</b></span>
                                         </div>
                                     </div>
                                 </div>
@@ -340,7 +345,44 @@
                     <!-- //발굴 성장주 -->
                     
                     <div class="area turnaround">
-                        <div class="stock_info" onclick="location.href =''">
+                        <div class="stock_info" onclick="" id="btn_free" style="cursor:pointer;">
+                            <div class="title_logo">
+                                <span class="logo"><img src="" onerror="this.style.display='none'" alt=""></span>
+                            </div>
+                            <div class="detail">
+                                <div class="title">
+                                    <span href="#" data-modal="modal-3" class="md-trigger">
+                                        마<span class="remark">
+                                        <div class="txt_filter size_M"><i></i><i></i><i></i><i></i></div>
+                                        </span>
+                                    </span>
+                                </div>
+                                <div class="num">                                    
+                                    <span>5.17<b>%</b></span>
+                                </div>
+                                <div class="detail_num">
+                                    <div class="num">
+                                        <span>55.<b>36</b></span>
+                                    </div>                                    
+                                    <div class="per">
+                                        <span class="increase">3.84<b>%</b></span>
+                                    </div>
+                                    <div class="trans_list">
+                                        <ul class="">
+                                            <li class="trans">
+                                                <span class="allo">배당주</span>
+                                            </li>
+                                            <!-- //trans -->
+                                        </ul>
+                                    </div>
+                                </div>                                
+                            </div>                            
+                            
+                        </div>
+                        <!-- //stock_info -->                        
+                    </div>
+                    <div class="area turnaround">
+                        <div class="stock_info" onclick="location.href =''" style="cursor:pointer;">
                             <div class="title_logo">
                                 <span class="logo"><img src="https://uslogo.datahero.co.kr/img/logo/us/mvl/MSFT.svg" alt=""></span>
                             </div>
@@ -373,16 +415,16 @@
                         <!-- //stock_info -->                        
                     </div>
                     <div class="area turnaround">
-                        <div class="stock_info" onclick="location.href =''">
+                        <div class="stock_info" onclick="location.href =''" style="cursor:pointer;">
                             <div class="title_logo">
-                                <span class="logo"><img src="https://uslogo.datahero.co.kr/img/logo/us/mvl/AAPLD.svg" alt="" onerror="this.style.display='none'"></span>
+                                <span class="logo"><img src="https://uslogo.datahero.co.kr/img/logo/us/mvl/MSFT.svg" alt=""></span>
                             </div>
                             <div class="detail">
                                 <div class="title">
                                     <a href="" class="">지금 세일중</a>
                                 </div>
                                 <div class="sale_deal">
-                                    <span><i></i>적정주가 매수</span>
+                                    <span><i></i>보유</span>
                                 </div>  
                                 <div class="detail_num">
                                     <div class="num">
@@ -408,7 +450,7 @@
                         <!-- //stock_info -->                        
                     </div>
                     <div class="area turnaround">
-                        <div class="stock_info" onclick="location.href =''">
+                        <div class="stock_info" onclick="location.href =''" style="cursor:pointer;">
                             <div class="title_logo">
                                 <span class="logo"><img src="https://uslogo.datahero.co.kr/img/logo/us/mvl/AAPL.svg" alt=""></span>
                             </div>
@@ -443,7 +485,7 @@
                         <!-- //stock_info -->                        
                     </div>
                     <div class="area turnaround">
-                        <div class="stock_info" onclick="location.href =''">
+                        <div class="stock_info" onclick="location.href =''" style="cursor:pointer;">
                             <div class="title_logo">
                                 <span class="logo"><img src="https://uslogo.datahero.co.kr/img/logo/us/mvl/AAPL.svg" alt=""></span>
                             </div>
@@ -841,7 +883,7 @@
 </body>
 
 <!-- Modal popup -->
-<!-- 로그인만하면 2주 무료 -->
+<!-- 프리미엄 첫 달 1,000원! -->
 <div class="first_month_3300 md-modal md-effect-3" id="modal-3">
     <!-- class : md-show 가 없는 경우 팝업 숨김, md-show 있는 경우 팝업 노출  -->
     <div class="md-content">
@@ -849,51 +891,28 @@
             <div class="pop_header">
                 <a href="#setting_anchor" title="로그인 레이어 닫기" class="close"><img src="../img/clse_w.png" alt="팝업닫기"></a>
                 <div class="sub_top">
-                    <h2 class="h2_title">초이스스탁US 프리미엄<span><strong>로그인만하면 2주 무료!</strong></span></h2>
-                    <p class="period">미국주식 추천과 분석, 알림까지 한번에!</p>
+                    <h2 class="h2_title">AI가 알려주는 투자타이밍!</h2>
+                    <p class="period">초이스스탁US 프리미엄</p>
                 </div>
             </div>
             <!-- //pop_header -->
             <div class="pop_con">
-                <table cellspacing="0" border="0" class="tableRanking type_compare">
-                    <tbody>
-                        <tr>
-                            <td class="mid_td"><span>• 5분이면 끝! 매력적인 종목을 한눈에 <b>종목진단</b></span></td>
-                        </tr>
-                        <tr>
-                            <td class="mid_td"><span>• 엄선된 저평가 우량주만 콕! <b>종목추천/포트폴리오</b></span></td>
-                        </tr>
-                        <tr>
-                            <td class="mid_td"><span>• 투자매력 + 저평가 + 수급 <b>오늘의 승부주</b></span></td>
-                        </tr>
-                        <tr>
-                            <td class="mid_td"><span>• 투자매력주의 매매판단을 빠르게! <b>AI적정주가</b></span></td>
-                        </tr>
-                        <tr>
-                            <td class="mid_td"><span>• 나만의 취향저격 종목추천 <b>종목캐치</b></span></td>
-                        </tr>
-                        <tr>
-                            <td class="mid_td"><span>• 관심종목/보유종목 모니터링 <b>관심종목/원스톱진단</b></span></td>
-                        </tr>
-                        <tr>
-                            <td class="mid_td"><span>• 종목추천 + 관심종목 업데이트 <b>알림서비스</b></span></td>
-                        </tr>
-                        <tr>
-                            <td class="mid_td"><span>• <b>광고 없는</b> 서비스 제공</span></td>
-                        </tr>
-                    </tbody>
-                </table>
-
+                <ul>
+                    <li><span class="num">1</span>지금살까? 특허받은 전종목 <b>매매신호</b></li>
+                    <li><span class="num">2</span>매수부터 매도까지! <b>종목추천</b></li>
+                    <li><span class="num">3</span>투자매력과 적정주가를 한눈에 <b>종목진단</b></li>
+                </ul>
             </div>
             <div class="pop_btm">
                 <div class="btnArea payBtn">
                     <!-- <a href="login_complete.html" class="btn btn_save"><b>프리미엄</b> 가입하기<i></i></a> -->
-                    <a href="stock/service_prm.html" class="btn btn_save"><b>프리미엄 2주 무료체험</b><i></i></a>
+                    <a href="stock/service_prm.html" class="btn btn_save">프리미엄 <b>첫 달 1,000원!</b></a>
                 </div>
             </div>
         </div>
     </div>
 </div>
 <div class="md-overlay"></div><!-- the overlay element -->
+
 
 </html>
