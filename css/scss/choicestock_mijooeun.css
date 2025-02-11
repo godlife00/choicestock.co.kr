@@ -30204,6 +30204,11 @@ table.tableRanking td {
   padding: 24px 20px;
   box-sizing: border-box;
 }
+@media (min-width: 320px) and (max-width: 424px) {
+  .v_signalStreng.globalStock .sub_payment .serviceStep .step_box {
+    gap: 8px 8px;
+  }
+}
 
 .v_signalStreng.globalStock .sub_payment .serviceStep .step_box.routine_pay {
   border: 1px solid #e9ebf7;
@@ -30307,6 +30312,12 @@ table.tableRanking td {
   line-height: 1.42;
   font-weight: 400;
   color: #939393;
+}
+.v_signalStreng.globalStock .sub_payment .serviceStep .pay_guideTxt b, .v_signalStreng.globalStock .sub_payment .serviceStep .pay_guideTxt u {
+  color: #6A727B;
+  font-size: 0.75rem;
+  line-height: 1.42;
+  font-weight: 600;
 }
 
 .v_signalStreng.globalStock .sub_payment .serviceStep .pay_guideTxt::before {
@@ -30925,6 +30936,10 @@ table.tableRanking td {
   font-size: 14px;
   color: #6a727b;
 }
+.v_signalStreng.globalStock .sub_payment .payment_note .top .agree_guide u {
+  font-size: 14px;
+  color: #6a727b;
+}
 
 .v_signalStreng.globalStock .sub_payment input.chk_label + label:before {
   content: "";
@@ -30996,7 +31011,7 @@ table.tableRanking td {
   padding-top: 10px;
   color: #939393;
 }
-.v_signalStreng.globalStock .sub_payment .payment_note .agree_chk .txt .agree_txt.agree_caution b {
+.v_signalStreng.globalStock .sub_payment .payment_note .agree_chk .txt .agree_txt.agree_caution b, .v_signalStreng.globalStock .sub_payment .payment_note .agree_chk .txt .agree_txt.agree_caution u {
   font-weight: 600;
   color: #939393;
 }
