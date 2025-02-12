@@ -627,7 +627,7 @@ body,
 ul.tabs {
 	margin: 0;
 	padding: 0;
-	float: left;
+	// float: left;
 	list-style: none;
 	width: 100%;
 	font-size: 0;
@@ -1539,7 +1539,7 @@ table.tableRanking td {
 .globalStock .main_btm>.title+.more {
 	display: inline-block;
 	text-align: right;
-	padding: 10px 7px 6px;
+	padding: 6px 7px;
 	width: 96px;
 	box-sizing: border-box;
 	color: #333;
@@ -5820,7 +5820,7 @@ table.tableRanking td {
 }
 
 .globalStock .sub_recom .sub_mid.eventPicks_area .recom_chartList .chartGoal .dod b {
-	font-weight: 300;
+	// font-weight: 300;
 	opacity: 1;
 	color: #333;
 }
@@ -6224,6 +6224,7 @@ table.tableRanking td {
 .globalStock .sub_recom .sub_top.view .chart_area {
 	width: 100%;
 	margin: 0;
+	margin-top: 16px;	
 	display: block;
 }
 
@@ -9434,7 +9435,7 @@ table.tableRanking td {
 
 /**** 종목 캐치 *****/
 .globalStock .catch_wrap {
-	padding: 25px 15px 0;
+	padding: 22px 15px 0;	
 }
 
 .globalStock .sub_catch .txt_box {
@@ -11001,6 +11002,7 @@ table.tableRanking td {
 	font-size: 0.9rem;
 	padding-left: 0;
 	display: inline-block;
+	margin-top: 0;
 	margin-bottom: 15px
 }
 
@@ -11141,7 +11143,7 @@ table.tableRanking td {
 }
 
 .globalStock .sub_search .latest_results .tabsArea .one_step {
-	margin: 7px auto 0;
+	margin: 0 auto;
 	padding: 15px 15px;
 	background: #e6e7f4;
 	display: flex;
@@ -16861,6 +16863,12 @@ table.tableRanking td {
 					color: rgba(51, 51, 51, 0.7);
 					letter-spacing: normal !important;					
 				}
+				.reference {
+					margin-top: 8px;
+					color: rgba(255, 255, 255, 0.7);
+					font-size: 12px;				
+					font-weight: 400;
+				}
 			}
 			&.jump {						
 				// 급등주					
@@ -17271,7 +17279,7 @@ table.tableRanking td {
 			// 로켓 성장주와 스타일 공유
 			.stock_info {				
 				display: flex;
-				flex-wrap: wrap;
+				// flex-wrap: wrap;
 				align-items: center;
 				justify-content: flex-start;
 				gap: 12px 12px;
@@ -17315,18 +17323,28 @@ table.tableRanking td {
 					justify-content: space-between;
 					align-items: flex-start;			
 					gap: 4px 5px;				
-					width: calc(100% - 54px);					
+					width: calc(100% - 54px);														
 					.title {				
 						padding-right: 6px;				
 						color: #333;								
 						font-size: 15px;								
 						font-weight: 700;																
 						display: inline-block;
-						text-align: left;
-						width: calc(100% - 150px);
+						text-align: left;	
+						width: 480px;											
+						@media (max-width: 374px) {
+							max-width: 150px;
+						}
+						@media (min-width: 375px) and (max-width: 767px) {
+							max-width: 160px;
+						}
+						@media (min-width: 768px) and (max-width: 1023px) {
+							max-width: 480px;
+						}
+						
 						overflow: hidden;
 						text-overflow: ellipsis;
-						white-space: nowrap;						
+						white-space: nowrap;	
 					}
 					> .num {					
 						margin-left: auto;
@@ -17431,8 +17449,26 @@ table.tableRanking td {
 		.recipe_area .area.rocket {			
 			// 턴어라운드 스타일 가져오기
 			@extend .recipe_area;
-			@extend .turnaround;		
+			@extend .turnaround;					
+			.detail {
+				flex: 5 !important;
+				@media (max-width: 374px) {
+					max-width: 110px;
+				}
+				@media (max-width: 375px) {
+					max-width: 120px;
+				}
+				// @media (min-width: 376px) and (max-width: 767px) {
+				// 	max-width: 160px;
+				// }				
+			}
+			.detail + .num {
+				margin-left: auto;
+				flex: 7 !important;
+				text-align: right;				
+			}
 			.detail + .num span {
+				letter-spacing: -1px;
 				color: #ff2929;
 				font-size: 0.9375rem;
 				font-weight: normal;
@@ -17496,6 +17532,7 @@ table.tableRanking td {
 			}
 		}
 		.data_opinion {			
+			margin-left: auto;			
 			.ibox {
 				display: flex;
 				justify-content: center;
@@ -17505,6 +17542,7 @@ table.tableRanking td {
 				color: #fff;				
 				padding: 4px 9px;
 				border-radius: 16px;		
+				width: 20px;
 								
 				&.str {
 					background-color: #dd5257;
@@ -17801,8 +17839,7 @@ table.tableRanking td {
 			background: url('/img/contaanalysis1_num.svg') no-repeat center 77px;					
 			background-size: auto 114px;
 			
-			.gauge-value {										
-				background-color: red;
+			.gauge-value {														
 				.highcharts-label-box {						
 					stroke-width: 0;
 				}
@@ -19306,7 +19343,7 @@ table.tableRanking td {
 }
 
 .globalStock .sub_research .view_con .top {
-	padding: 5px 15px 11px;
+	padding: 16px 15px 11px;
 }
 
 .globalStock .sub_research .view_con .top .title {
@@ -27039,6 +27076,7 @@ table.tableRanking td {
 /****** 관심종목 / 인기종목 ******/
 .globalStock .sub_search .latest_results {
 	padding-top: 0;
+	// margin-top: 15px;
 }
 
 .globalStock .sub_search .latest_results .tabsArea .tabs li {
@@ -32592,9 +32630,10 @@ body.v_signalStreng {
 
 .v_signalStreng.globalStock #wrap #container .recom_company {
 	position: relative;
-	padding: 16px 16px 22px;
+	padding: 16px 16px 6px;
 	background-color: #fff;
 	box-sizing: border-box;
+	// background-color: yellow;
 
 	&::after {
 		content: "";
@@ -32715,9 +32754,10 @@ body.v_signalStreng {
 		width: 100%;
 		position: relative;
 		background: #fff;
-		margin: 32px auto 0;
-		padding-top: 22px;
+		margin: 20px auto 0;
+		padding-top: 8px;
 		border-top: 1px solid #f4f4f5;
+		// border: 2px solid red;
 	}
 
 	.attention_box ul {
@@ -34566,10 +34606,10 @@ body.v_signalStreng {
 
 /* 추천, 인기검색 */
 .v_signalStreng.globalStock .sub_search .searching {
-	margin-top: 15px;
+	// margin-top: 15px;
 	padding-left: 5px;
 	padding-top: 0;
-	padding-bottom: 0;
+	padding-bottom: 15px;
 }
 
 .v_signalStreng.globalStock .sub_recom,
@@ -34580,7 +34620,8 @@ body.v_signalStreng {
 .v_signalStreng.globalStock .sub_briefing,
 .v_signalStreng.globalStock .sub_login,
 .v_signalStreng.globalStock .sub_service {
-	margin-top: 15px;
+	// border: 2px solid red;
+	// margin-top: 15px;
 }
 
 .v_signalStreng.globalStock .sub_top .txt_box,
@@ -34867,7 +34908,7 @@ body.v_signalStreng {
 }
 
 .v_signalStreng.globalStock .sub_game {
-	margin-top: 15px;
+	// margin-top: 15px;
 }
 
 .v_signalStreng.globalStock .sub_game .sub_top .txt_box {
@@ -34900,7 +34941,7 @@ body.v_signalStreng {
 }
 
 .v_signalStreng.globalStock .sub_recipe {
-	margin-top: 15px;
+	// margin-top: 15px;           
 }
 
 .v_signalStreng.globalStock .sub_recom .tab-container {
@@ -35018,7 +35059,7 @@ body.v_signalStreng {
 	flex-wrap: wrap;
 	align-items: baseline;
 	gap: 4px 5px;
-	max-width: calc(100% - 150px);
+	max-width: calc(100% - 140px);
 	box-sizing: border-box;
 	font-size: 1rem;
 	font-weight: 700;
@@ -35065,7 +35106,7 @@ body.v_signalStreng {
 	text-align: center;
 	font-weight: bold;
 	padding: 5px 4px;
-	width: 70px;
+	width: 72px;
 	box-sizing: border-box;
 }
 .v_signalStreng.globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .recipe_area .area .logo_list .revenue .increase.dod b {

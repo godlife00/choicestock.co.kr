@@ -423,7 +423,7 @@ $(document).ready(function () {
         }
     });
     // 발굴 종목노트, 레시피, 투자노트 탭 버튼 클릭 이벤트 핸들러
-    $('.tab_span').click(function () {
+    $('.tab_span').click(function () {        
         // 선택한 탭 버튼에 'active' 클래스 추가
         $(this).addClass('active');
         
@@ -1251,8 +1251,8 @@ $(document).ready(function () {
         init();
     })();
 
-    if ($('#modal-3').length) {
-        $('.globalStock .sub_research .sub_mid.research_board .lst_type, .globalStock .sub_mid .tab_container .tab_content, .globalStock .sub_briefing .lst_type, .globalStock .sub_research .sub_mid.research_board .lst_type').on('click', '.md-trigger', function () {
+    if ($('#modal-3').length) {        
+        $('.globalStock .sub_research .sub_mid.research_board .lst_type, .globalStock .sub_mid .tab_container .tab_content, .globalStock .sub_briefing .lst_type, .globalStock .sub_research .sub_mid.research_board .lst_type, .recipe_area').on('click', '.md-trigger', function () {
             $('.globalStock .first_month_3300#modal-3').addClass('md-show');
         });
     };
@@ -1263,29 +1263,31 @@ $(document).ready(function () {
     // 키움초이스스탁 스크립트
     if ($('.schfix_inc').length) {
         // 상단 검색 GNB 고정
-        var jbOffset = $('.globalStock .schfix_inc .searching').offset();
-        $(window).scroll(function () {
-            if ($(document).scrollTop() > jbOffset.top) {
-                $('.globalStock.kiwoom .schfix_inc').addClass('fix_sch');
-                $('.globalStock.wowtv .schfix_inc .search_top .event_banner').slideUp();
-            }
-            else {
-                $('.globalStock.kiwoom .schfix_inc').removeClass('fix_sch');
-                $('.globalStock.wowtv .schfix_inc .search_top .event_banner').slideDown();
-            }
-        });
-
-        // 상단 검색 GNB 고정
-        // var jbOffset = $('.globalStock .schfix_inc .searching').offset();
-        $(window).scroll(function () {
-            if ($(document).scrollTop() > jbOffset.top) {
-                $('.globalStock.wowtv .schfix_inc').addClass('fix_sch');
-            }
-            else {
-                $('.globalStock.wowtv .schfix_inc').removeClass('fix_sch');
-            }
-        });
+        var searchingElement = $('.globalStock .schfix_inc .searching');
+        if (searchingElement.length) {
+            var jbOffset = searchingElement.offset();
+            $(window).scroll(function () {
+                if ($(document).scrollTop() > jbOffset.top) {
+                    $('.globalStock.kiwoom .schfix_inc').addClass('fix_sch');
+                    $('.globalStock.wowtv .schfix_inc .search_top .event_banner').slideUp();
+                } else {
+                    $('.globalStock.kiwoom .schfix_inc').removeClass('fix_sch');
+                    $('.globalStock.wowtv .schfix_inc .search_top .event_banner').slideDown();
+                }
+            });
+    
+            $(window).scroll(function () {
+                if ($(document).scrollTop() > jbOffset.top) {
+                    $('.globalStock.wowtv .schfix_inc').addClass('fix_sch');
+                } else {
+                    $('.globalStock.wowtv .schfix_inc').removeClass('fix_sch');
+                }
+            });
+        } else {
+            console.error("'.globalStock .schfix_inc .searching' 요소가 존재하지 않습니다.");
+        }
     }
+    
     //검색    
     $('.globalStock .schfix_inc .searching .searchArea .searchInput').on("keydown", function () {
         $(this).addClass('keydown');
