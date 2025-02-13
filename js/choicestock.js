@@ -834,11 +834,26 @@ $(document).ready(function () {
     }
     
 
-    //메인 하단 레시피
+    //메인 투자레시피 슬라이드
+    function shuffleSlides(containerSelector) {
+        const container = document.querySelector(containerSelector);
+        if(container !== null) {
+            const slides = Array.from(container.children);
+            for (let i = slides.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                container.appendChild(slides[j]);
+            }
+        }
+    }
+
+    // 슬라이드 요소를 섞기
+    shuffleSlides('.mainrecipeSwiper .swiper-wrapper');
+
     var mainrecipeSwiper = new Swiper('.mainrecipeSwiper', {
         slidesPerView: "auto",
         spaceBetween: 10,
     });
+
 
     //미국주식창 메인 이벤트 배너 3개 롤링
     var event_bannerSwiper = new Swiper('.event_bannerSwiper', {
@@ -1813,11 +1828,9 @@ $(document).ready(function () {
 
     // 메인페이지 2024 신년이벤트 배너
     if ($('#header.m_hdr').length) {
-        function debouncedScroll() {
-            console.time('메인 슬라이딩');  
+        function debouncedScroll() {            
             const debouncedScrollSignalPop = debounce(scrollsignalpop, 30);
-            setTimeout(debouncedScrollSignalPop, 30); // 30 밀리초 후에 debouncedScrollSignalPop 함수 실행
-            console.timeEnd('메인 슬라이딩');
+            setTimeout(debouncedScrollSignalPop, 30); // 30 밀리초 후에 debouncedScrollSignalPop 함수 실행            
         }
         requestAnimationFrame(debouncedScroll);
     }
@@ -2063,37 +2076,39 @@ document.addEventListener("DOMContentLoaded", function() {
     const tickerContainer = document.getElementById('ticker-container');
     const showMoreBtn = document.querySelector('.show-more-btn');
 
-    function checkScroll() {
-        const isScrollable = tickerContainer.scrollHeight > tickerContainer.clientHeight;
-        showMoreBtn.style.display = isScrollable ? 'block' : 'none';
-    }
-
-    function updateVisibility() {
-        if (!tickerContainer.classList.contains('expanded')) {
-            tickerContainer.style.overflow = 'hidden';
-            tickerContainer.style.height = null; // 초기 높이로 설정
-            showMoreBtn.classList.remove('expanded');
-            showMoreBtn.textContent = '더보기';
-        } else {
-            tickerContainer.style.height = `${tickerContainer.scrollHeight}px`;
-            tickerContainer.style.overflow = 'visible';
-            showMoreBtn.classList.add('expanded');
-            showMoreBtn.textContent = '닫기';
+    if (tickerContainer && showMoreBtn) {
+        function checkScroll() {
+            const isScrollable = tickerContainer.scrollHeight > tickerContainer.clientHeight;
+            showMoreBtn.style.display = isScrollable ? 'block' : 'none';
         }
-    }
 
-    showMoreBtn.addEventListener('click', function() {
-        tickerContainer.classList.toggle('expanded');
-        updateVisibility();
-    });
+        function updateVisibility() {
+            if (!tickerContainer.classList.contains('expanded')) {
+                tickerContainer.style.overflow = 'hidden';
+                tickerContainer.style.height = null; // 초기 높이로 설정
+                showMoreBtn.classList.remove('expanded');
+                showMoreBtn.textContent = '더보기';
+            } else {
+                tickerContainer.style.height = `${tickerContainer.scrollHeight}px`;
+                tickerContainer.style.overflow = 'visible';
+                showMoreBtn.classList.add('expanded');
+                showMoreBtn.textContent = '닫기';
+            }
+        }
 
-    // 스크롤 가능 여부 확인 및 초기 UI 업데이트
-    checkScroll();
-    updateVisibility();
+        showMoreBtn.addEventListener('click', function() {
+            tickerContainer.classList.toggle('expanded');
+            updateVisibility();
+        });
 
-    // 창 크기 변경 시 스크롤 가능 여부 재확인
-    window.addEventListener('resize', function() {
+        // 스크롤 가능 여부 확인 및 초기 UI 업데이트
         checkScroll();
         updateVisibility();
-    });
+
+        // 창 크기 변경 시 스크롤 가능 여부 재확인
+        window.addEventListener('resize', function() {
+            checkScroll();
+            updateVisibility();
+        });
+    } 
 });

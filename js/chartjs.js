@@ -7692,9 +7692,7 @@ $(document).ready(function () {
                     }
                 },            
                 series: data,
-            });
-            console.timeEnd('CustomChart_Score Execution Time');
-            
+            });            
         }
         // requestAnimationFrame을 사용하여 비동기적으로 차트 렌더링
         requestAnimationFrame(renderChart);

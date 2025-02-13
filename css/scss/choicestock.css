@@ -890,7 +890,7 @@ body,
 /* 이벤트 스와이프 배너 banner_event */
 .globalStock .banner_event_swiper {
   display: block;
-  margin-top: 40px;
+  margin-top: 35px;
 }
 .globalStock .banner_event_swiper a,
 .globalStock .banner_event_swiper img {
@@ -4365,69 +4365,67 @@ table.tableRanking td {
   text-decoration: underline;
 }
 
-/* 메인 - 서비스 바로가기 */
+/* 메인 - 투자레시피 */
+.globalStock .main_mid.quick_link {
+  margin-top: 60px;
+}
+.globalStock .main_mid.quick_link .title .remark {
+  font-size: 0.75rem;
+  color: #939393;
+  font-weight: normal;
+  padding-left: 5px;
+}
 .globalStock .main_mid.quick_link .list_area .mainrecipeSwiper {
-  margin: 48px 0;
-  padding: 0 14px;
+  margin: 15px 0;
+  padding: 0 15px;
   box-sizing: border-box;
 }
-
 .globalStock .main_mid.quick_link .list_area .mainrecipeSwiper .swiper-slide {
   display: block;
   width: auto;
 }
-
-.globalStock .main_mid.quick_link .list_area .mainrecipeSwiper .swiper-slide a {
+.globalStock .main_mid.quick_link .list_area .mainrecipeSwiper .figure {
+  position: relative;
   display: inline-block;
   width: 134px;
   height: 100px;
   box-sizing: border-box;
-  padding: 8px 9px;
-  color: #fff;
+  border-radius: 16px;
+  color: #333;
   font-size: 15px;
-  background-color: #404FC3;
-  border-radius: 8px;
-  line-height: 1.33;
-  font-weight: 300;
+  font-weight: normal;
 }
-
-.globalStock .main_mid.quick_link .list_area .mainrecipeSwiper .swiper-slide a span {
+.globalStock .main_mid.quick_link .list_area .mainrecipeSwiper .figure::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
   display: block;
-  color: #fff;
-  font-size: 13px;
-  margin-top: 10px;
-  font-weight: bold;
-  opacity: 0.6;
+  background-size: auto 76px !important;
+  background-position: center 12px !important;
 }
-
-.globalStock .main_mid.quick_link .list_area .mainrecipeSwiper .swiper-slide:nth-child(1) a {
-  background-color: #404FC3;
+.globalStock .main_mid.quick_link .list_area .mainrecipeSwiper .figure span {
+  font-size: 15px;
+  margin-top: 12px;
+  padding-left: 3px;
+  font-weight: normal;
+  display: block;
+  letter-spacing: normal;
 }
-
-.globalStock .main_mid.quick_link .list_area .mainrecipeSwiper .swiper-slide:nth-child(2) a {
-  background-color: #E4E6FA;
-  color: #333;
+.globalStock .main_mid.quick_link .list_area .mainrecipeSwiper .figure.jump::before {
+  background: #646FCD url("/img/jump.png") no-repeat;
 }
-
-.globalStock .main_mid.quick_link .list_area .mainrecipeSwiper .swiper-slide:nth-child(2) a span {
-  color: #404FC3;
+.globalStock .main_mid.quick_link .list_area .mainrecipeSwiper .figure.top50::before {
+  background: #F8D95F url("/img/top50.png") no-repeat;
 }
-
-.globalStock .main_mid.quick_link .list_area .mainrecipeSwiper .swiper-slide:nth-child(3) a {
-  background-color: #624ECE;
+.globalStock .main_mid.quick_link .list_area .mainrecipeSwiper .figure.goldenCross::before {
+  background: #E36B6D url("/img/goldenCross.png") no-repeat;
 }
-
-.globalStock .main_mid.quick_link .list_area .mainrecipeSwiper .swiper-slide:nth-child(4) a {
-  background-color: #F5F5F9;
-  color: #333;
+.globalStock .main_mid.quick_link .list_area .mainrecipeSwiper .figure.growthDiscovery::before {
+  background: #E79366 url("/img/growthDiscovery.png") no-repeat;
 }
-
-.globalStock .main_mid.quick_link .list_area .mainrecipeSwiper .swiper-slide:nth-child(4) a span {
-  color: #404FC3;
-}
-
-.globalStock .main_mid.quick_link .list_area .mainrecipeSwiper .swiper-slide:nth-child(5) a {
-  background-color: #A540C3;
+.globalStock .main_mid.quick_link .list_area .mainrecipeSwiper .figure.rocketBooster::before {
+  background: #646FCD url("/img/rocketBooster.png") no-repeat;
 }
 
 /* 메인 - 종목분석 */
@@ -32504,11 +32502,15 @@ body.v_signalStreng {
   width: 100%;
 }
 
+.v_signalStreng.globalStock #wrap #container.sub_search .quick_link {
+  margin-top: 40px;
+}
+
 /* 개요 - 뉴스 */
 .v_signalStreng.globalStock #wrap #container .main_mid.new_area {
   padding: 0 16px;
   margin-bottom: 15px;
-  margin-top: 15px;
+  margin-top: 40px;
 }
 
 .v_signalStreng.globalStock #wrap #container .main_mid.new_area .c_title {
@@ -32613,11 +32615,24 @@ body.v_signalStreng {
 
 /* 하단 막대 차트 */
 .v_signalStreng.globalStock #wrap #container .mainBox.financials {
+  position: relative;
   background-color: #fff;
   padding: 32px 16px;
 }
+.v_signalStreng.globalStock #wrap #container .mainBox.financials::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: block;
+  width: 100%;
+  height: 8px;
+  background-color: #f4f4f5;
+  z-index: 1;
+}
 .v_signalStreng.globalStock #wrap #container .mainBox.financials.chart_financials {
-  padding-bottom: 15px;
+  padding-bottom: 25px;
 }
 .v_signalStreng.globalStock #wrap #container .mainBox.financials.chart_financials .chart_box {
   border-bottom: none;

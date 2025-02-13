@@ -46,7 +46,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
     <!-- css -->
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <link rel="stylesheet" type="text/css" href="css/scss/choicestock.css?ver=2.08" />
+    <link rel="stylesheet" type="text/css" href="css/scss/choicestock.css?ver=250213" />
     <!-- js -->
     <script src="js/choicestock.js"></script>
     <!-- 이 아래는 로컬에서만 사용되는 파일 -->
@@ -1487,66 +1487,46 @@
             </div>
             <!-- //event_recipe -->
 
-            <!-- 초이스스탁US 프로모션 스와이프 배너 등, 유료회원이 아닌 경우 -->
-            <div class="swiper-container banner_event_swiper" style="display: none;">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide"><a href="../payment/step01.html" class="link_banner"><img
-                                src="./img/banner/event_subTop_240611.png" alt=""></a></div>
-                    <!-- <div class="swiper-slide"><a href="https://event-us.kr/m/77824/13723" class="link_banner" target="_blank"><img src="./img/banner/Choicestock_BN_3.png" alt="2024년 글로벌 금융시장 전망 신청하기"></a></div>                         -->
-                </div>
-            </div>
-            <!-- //초이스스탁US 프로모션 스와이프 배너 등 -->
+            
 
-            <!-- 초이스스탁US 프로모션 스와이프 배너 등, 유료회원인 경우 -->
-            <div class="swiper-container banner_event_swiper">
-                <div class="swiper-wrapper">
-                    <!-- <div class="swiper-slide">
-                        <a href="https://event-us.kr/m/77824/13723" class="link_banner" target="_blank">
-                            <img src="./img/banner/Choicestock_BN_3.png" alt="2024년 글로벌 금융시장 전망 신청하기">
-                        </a>
-                    </div> -->
-                    <div class="swiper-slide">
-                        <a href="https://www.choicestock.co.kr/stock/research_view/3953" class="link_banner">
-                            <img src="./img/Choicestock_BN_4.png" alt="나처럼 해봐요 이렇게? 초스 사용법">
-                        </a>
+            <!-- 서비스 바로가기 퀵메뉴 -->
+            <div class="main_mid quick_link">
+                <h3 class="title"><a href="stock/new_recipe.html">투자레시피</a> <span class="remark">종목발굴을 위한 만가지 레시피</span></h3>
+                <a href="stock/new_recipe.html" class="more"><img src="img/more_Black.png" alt="더보기"></a>
+                <div class="list_area">
+                    <!-- 급등주, 관심TOP50, 골든크로스, 로켓성장주, 발굴!성장주 -->
+                    <div class="swiper-container mainrecipeSwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">       
+                                <a href="stock/new_recipe_view.html" class="figure jump">
+                                    <span>급등주</span>
+                                </a>                                                         
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="stock/new_recipe_view.html" class="figure top50">
+                                    <span>관심 TOP50</span>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="stock/new_recipe_view.html" class="figure goldenCross">
+                                    <span>골든크로스</span>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="stock/new_recipe_view.html" class="figure rocketBooster">
+                                    <span>로켓 성장주</span>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="stock/new_recipe_view.html" class="figure growthDiscovery">
+                                    <span>발굴! 성장주</span>
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="swiper-slide">
-                        <a href="https://flannel-twist-68c.notion.site/6179ddfd795446bf9d4e7900b16a567e" class="link_banner">
-                            <img src="./img/banner/Choicestock_BN_5.png" alt="자주 묻는 질문">
-                        </a>
-                    </div>                    
-                    <!-- <div class="swiper-slide">
-                        <a href="https://event-us.kr/m/77824/13723" class="link_banner">
-                            <img src="img/banner/event_subTop_240611.png" alt="초이스스탁US 100% 활용하기">
-                        </a>
-                    </div>                     -->
-                                      
                 </div>
             </div>
-            <!-- //초이스스탁US 프로모션 스와이프 배너 등 -->
-
-            <!-- 초이스스탁US 프로모션 배너 등 -->
-            <div class="banner_event" style="display: none;">
-                <a href="../payment/step01.html" class="link_banner"><img
-                        src="../img/banner/event_subTop_240611.png" alt=""></a>
-                <br><br>
-                <a href="https://event-us.kr/m/77824/13723" class="link_banner"><img
-                        src="img/banner/Choicestock_BN_2.png" alt="초이스스탁US 100% 활용하기"></a> <br><br>
-                <a href="https://www.choicestock.co.kr/stock/vod_view/13" class="link_banner"><img
-                        src="img/Choicestock_BN_1.png" alt="초이스스탁US 100% 활용하기"></a> <br><br>
-                <!-- <a href="https://www.choicestock.co.kr/stock/research_view/3953" class="link_banner"><img
-                        src="img/초스배너694128.png" alt="나처럼 해봐요 이렇게? 초스 사용법"></a> <br><br> -->
-                <!-- <a href="/stock/recipe.html" class="link_banner"><img src="img/Choicestock_BN_2.png" alt="초이스스탁US 익스텐션 추가하기"></a>
-                <br><br> -->
-                <!-- <img src="img/banner_prm3000.png" alt="초이스스탁US 프리미엄, 첫 달 3,000원!"> <br><br> -->
-                <!-- <a href="/stock/research_view/118" class="link_banner"><img src="img/cs_ex-banner.png" alt="초이스스탁US 익스텐션 추가하기"></a>
-                <br><br>
-                <a href="http://naver.me/G9bEnpic" class="link_banner" target="_black"><img src="img/banner_home.png"
-                        alt="초이스스탁US 홈 화면에 추가하기"></a> <br><br>
-                <a href="https://www.choicestock.co.kr/stock/vod_view/13" class="link_banner"><img src="img/banner_chouse.svg"
-                        alt="초이스스탁US 사용법"></a> -->
-            </div>
-            <!-- //초이스스탁US 프로모션 배너 등 -->
+            <!-- //note_area -->
             
             <!-- 승부주 -->
             <div class="main_mid game_area">
@@ -1833,65 +1813,80 @@
             </div>
             <!-- //event_recipe -->
 
-            <!-- 서비스 바로가기 퀵메뉴 -->
-            <div class="main_mid quick_link">
-                <div class="list_area">
-                    <div class="swiper-container mainrecipeSwiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <a href="stock/game.html">
-                                    알고리즘<br>투자로봇 추천
-                                    <span>승부주</span>
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="search/search_value.html">
-                                    애플,<br>지금 매매신호는?
-                                    <span>밸류에이션</span>
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="stock/recipe.html">
-                                    급등? 배당주?<br>저평가 세일주?
-                                    <span>투자레시피</span>
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="stock/recom.html">
-                                    매수 월, 수, 금<br>즐거운 투자
-                                    <span>종목추천</span>
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="search/searching_onestop.html">
-                                    관심종목 중<br>투자 유망 종목은?
-                                    <span>원스톱 진단</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- //note_area -->
+            
 
-            <div class="main_btm banner_area">
+            <div class="main_btm banner_area" style="display: none;">
 
                 <!-- 프리미엄 서비스 사용자가 아닌 경우 -->
                 <div class="banner_prm">
                     <span class="cho_prm"><i></i>초이스스탁US 프리미엄</span>
                     <a href="payment/step01.html" class="weeks_free">[ 첫 달 1,000원!]</a>
                 </div>
-
-                <!-- 프리미엄 서비스 사용자인 경우 -->
-                <div class="banner_prm">
-                    <span class="cho_prm">초이스스탁US 프리미엄</span>
-                    <a href="#" class="weeks_free">[주요 서비스 안내]</a>
-                </div>
-
             </div>
-            <!-- //main_btm //recipe_area -->             
+            <!-- //main_btm //recipe_area -->       
+             
+            <!-- 초이스스탁US 프로모션 스와이프 배너 등, 유료회원이 아닌 경우 -->
+            <div class="swiper-container banner_event_swiper" style="display: none;">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><a href="../payment/step01.html" class="link_banner"><img
+                                src="./img/banner/event_subTop_240611.png" alt=""></a></div>
+                    <!-- <div class="swiper-slide"><a href="https://event-us.kr/m/77824/13723" class="link_banner" target="_blank"><img src="./img/banner/Choicestock_BN_3.png" alt="2024년 글로벌 금융시장 전망 신청하기"></a></div>                         -->
+                </div>
+            </div>
+            <!-- //초이스스탁US 프로모션 스와이프 배너 등 -->
 
-            <div class="family_banner">
+            <!-- 초이스스탁US 프로모션 스와이프 배너 등, 유료회원인 경우 -->
+            <div class="swiper-container banner_event_swiper">
+                <div class="swiper-wrapper">
+                    <!-- <div class="swiper-slide">
+                        <a href="https://event-us.kr/m/77824/13723" class="link_banner" target="_blank">
+                            <img src="./img/banner/Choicestock_BN_3.png" alt="2024년 글로벌 금융시장 전망 신청하기">
+                        </a>
+                    </div> -->
+                    <div class="swiper-slide">
+                        <a href="https://www.choicestock.co.kr/stock/research_view/3953" class="link_banner">
+                            <img src="./img/Choicestock_BN_4.png" alt="나처럼 해봐요 이렇게? 초스 사용법">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="https://flannel-twist-68c.notion.site/6179ddfd795446bf9d4e7900b16a567e" class="link_banner">
+                            <img src="./img/banner/Choicestock_BN_5.png" alt="자주 묻는 질문">
+                        </a>
+                    </div>                    
+                    <!-- <div class="swiper-slide">
+                        <a href="https://event-us.kr/m/77824/13723" class="link_banner">
+                            <img src="img/banner/event_subTop_240611.png" alt="초이스스탁US 100% 활용하기">
+                        </a>
+                    </div>                     -->
+                                      
+                </div>
+            </div>
+            <!-- //초이스스탁US 프로모션 스와이프 배너 등 -->
+
+            <!-- 초이스스탁US 프로모션 배너 등 -->
+            <div class="banner_event" style="display: none;">
+                <a href="../payment/step01.html" class="link_banner"><img
+                        src="../img/banner/event_subTop_240611.png" alt=""></a>
+                <br><br>
+                <a href="https://event-us.kr/m/77824/13723" class="link_banner"><img
+                        src="img/banner/Choicestock_BN_2.png" alt="초이스스탁US 100% 활용하기"></a> <br><br>
+                <a href="https://www.choicestock.co.kr/stock/vod_view/13" class="link_banner"><img
+                        src="img/Choicestock_BN_1.png" alt="초이스스탁US 100% 활용하기"></a> <br><br>
+                <!-- <a href="https://www.choicestock.co.kr/stock/research_view/3953" class="link_banner"><img
+                        src="img/초스배너694128.png" alt="나처럼 해봐요 이렇게? 초스 사용법"></a> <br><br> -->
+                <!-- <a href="/stock/recipe.html" class="link_banner"><img src="img/Choicestock_BN_2.png" alt="초이스스탁US 익스텐션 추가하기"></a>
+                <br><br> -->
+                <!-- <img src="img/banner_prm3000.png" alt="초이스스탁US 프리미엄, 첫 달 3,000원!"> <br><br> -->
+                <!-- <a href="/stock/research_view/118" class="link_banner"><img src="img/cs_ex-banner.png" alt="초이스스탁US 익스텐션 추가하기"></a>
+                <br><br>
+                <a href="http://naver.me/G9bEnpic" class="link_banner" target="_black"><img src="img/banner_home.png"
+                        alt="초이스스탁US 홈 화면에 추가하기"></a> <br><br>
+                <a href="https://www.choicestock.co.kr/stock/vod_view/13" class="link_banner"><img src="img/banner_chouse.svg"
+                        alt="초이스스탁US 사용법"></a> -->
+            </div>
+            <!-- //초이스스탁US 프로모션 배너 등 -->
+
+            <div class="family_banner" style="display: none;">
                 <div class="swiper-container bannerSwiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
