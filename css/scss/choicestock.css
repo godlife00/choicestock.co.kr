@@ -16589,16 +16589,12 @@ table.tableRanking td {
 .v_signalStreng.globalStock .sub_recipe.new_recipe {
   margin-top: 0;
 }
-.v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .box_tabs {
-  padding-top: 0;
-  padding-bottom: 0;
-}
 .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .box_tabs .list_masonry {
   display: flex;
   flex-wrap: wrap;
+  gap: 48px 14px;
 }
 .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .box_tabs .list_masonry > .figure {
-  margin: 24px 0;
   width: calc(50% - 7px);
   min-width: 150px;
   box-sizing: border-box;
@@ -16640,6 +16636,10 @@ table.tableRanking td {
   line-height: 1.3;
   word-break: break-all;
   word-wrap: break-word;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
 }
 .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .box_tabs .list_masonry > .figure.jump a strong, .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .box_tabs .list_masonry > .figure.top50 a strong, .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .box_tabs .list_masonry > .figure.sale a strong, .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .box_tabs .list_masonry > .figure.earnings a strong, .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .box_tabs .list_masonry > .figure.dividend a strong, .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .box_tabs .list_masonry > .figure.growth a strong, .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .box_tabs .list_masonry > .figure.superStocks a strong, .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .box_tabs .list_masonry > .figure.consumerMonopoly a strong, .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .box_tabs .list_masonry > .figure.profitTurnaround a strong, .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .box_tabs .list_masonry > .figure.goldenCross a strong, .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .box_tabs .list_masonry > .figure.growthDiscovery a strong, .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .box_tabs .list_masonry > .figure.rocketBooster a strong {
   display: block;
@@ -16700,7 +16700,7 @@ table.tableRanking td {
   background: #FFF !important;
   border-radius: 16px;
   padding: 24px 16px;
-  margin: 20px auto;
+  margin: 48px auto;
   width: 100%;
   box-sizing: border-box;
 }
@@ -17405,7 +17405,7 @@ table.tableRanking td {
   background-color: #F4F4F5;
   margin-top: 15px;
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 32px;
 }
 
 .globalStock .sub_recipe .sub_mid.recipe_tabs .box_tabs ul {

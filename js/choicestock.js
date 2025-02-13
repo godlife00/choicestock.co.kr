@@ -2038,38 +2038,38 @@ $(document).ready(function () {
 });
 
 // 레시피 리스트 벽돌쌓기 레이아웃, Masonry js 
-function debounce(func, wait) {
-    let timeout;
-    return function () {
-        clearTimeout(timeout);
-        timeout = setTimeout(func, wait);
-    };
-}
+// function debounce(func, wait) {
+//     let timeout;
+//     return function () {
+//         clearTimeout(timeout);
+//         timeout = setTimeout(func, wait);
+//     };
+// }
 
-document.addEventListener("DOMContentLoaded", function () {
-    const masonryContainers = document.querySelectorAll('.list_masonry');
+// document.addEventListener("DOMContentLoaded", function () {
+//     const masonryContainers = document.querySelectorAll('.list_masonry');
 
-    masonryContainers.forEach(function (container) {
-        const masonryInstance = new Masonry(container, {
-            itemSelector: '.figure', // 각 항목의 셀렉터
-            columnWidth: '.figure', // 컬럼 너비            
-            percentPosition: true, // 반응형 비율 계산
-            gutter: 14, // 항목 간격 (픽셀 단위)
-            horizontalOrder: true, // 좌우 간격 추가            
-            fitWidth: true, // 상하 간격 추가
-            transitionDuration: '0.4s' // 부드러운 전환을 위한 애니메이션 지속 시간
-        });
+//     masonryContainers.forEach(function (container) {
+//         const masonryInstance = new Masonry(container, {
+//             itemSelector: '.figure', // 각 항목의 셀렉터
+//             columnWidth: '.figure', // 컬럼 너비            
+//             percentPosition: true, // 반응형 비율 계산
+//             gutter: 14, // 항목 간격 (픽셀 단위)
+//             horizontalOrder: true, // 좌우 간격 추가            
+//             fitWidth: true, // 상하 간격 추가
+//             transitionDuration: '0.4s' // 부드러운 전환을 위한 애니메이션 지속 시간
+//         });
 
-        // 초기 설정 시 list_masonry의 너비를 100%로 설정
-        container.style.width = '100%';
+//         // 초기 설정 시 list_masonry의 너비를 100%로 설정
+//         container.style.width = '100%';
 
-        window.addEventListener('resize', debounce(() => {
-            // 리사이즈 시 list_masonry의 너비를 100%로 유지
-            container.style.width = '100%';
-            masonryInstance.layout();
-        }, 100));
-    });
-});
+//         window.addEventListener('resize', debounce(() => {
+//             // 리사이즈 시 list_masonry의 너비를 100%로 유지
+//             container.style.width = '100%';
+//             masonryInstance.layout();
+//         }, 100));
+//     });
+// });
 
 // 검색 이력 더보기, 닫기 스크립트
 document.addEventListener("DOMContentLoaded", function() {

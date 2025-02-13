@@ -16663,16 +16663,16 @@ table.tableRanking td {
 		margin-top: 0;
 		
 		.sub_mid.recipe_tabs .box_tabs {
-			padding-top: 0;
-			padding-bottom: 0;						
+			// padding-top: 0;
+			// padding-bottom: 0;						
 		}
 		.sub_mid.recipe_tabs .box_tabs .list_masonry {															
 			display: flex;            
             flex-wrap: wrap;						
+			gap: 48px 14px;
 		}		
 
-		.sub_mid.recipe_tabs .box_tabs .list_masonry > .figure {						
-			margin: 24px 0;
+		.sub_mid.recipe_tabs .box_tabs .list_masonry > .figure {									
             width: calc(50% - 7px);    
 			min-width: 150px;        
             @media (min-width: 576px) {				
@@ -16711,6 +16711,10 @@ table.tableRanking td {
 				line-height: 1.3;			
 				word-break: break-all;
 				word-wrap: break-word;
+				overflow: hidden;
+				display: -webkit-box;
+				-webkit-line-clamp: 5;
+				-webkit-box-orient: vertical;
 				strong {
 					display: block;
 					color: #333;					
@@ -16809,7 +16813,7 @@ table.tableRanking td {
 			background: #FFF !important;
 			border-radius: 16px;			
 			padding: 24px 16px;
-			margin: 20px auto;
+			margin: 48px auto;
 			width: 100%;			
 			box-sizing: border-box;
 			&::before {
@@ -17610,7 +17614,7 @@ table.tableRanking td {
 	background-color: #F4F4F5;
 	margin-top: 15px;
 	padding-top: 20px;
-	padding-bottom: 20px;
+	padding-bottom: 32px;
 }
 
 .globalStock .sub_recipe .sub_mid.recipe_tabs .box_tabs ul {
