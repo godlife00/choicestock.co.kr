@@ -6015,6 +6015,10 @@ table.tableRanking td {
   color: #333;
 }
 
+.globalStock .sub_recom .sub_mid.eventPicks_area #tab3 .recom_chartList .chartGoal .target .att {
+  margin-top: 12px;
+}
+
 .globalStock .sub_recom .sub_mid.eventPicks_area .recom_chartList .chartGoal .target .att.prm_lock {
   margin-top: 12px;
 }
@@ -33873,6 +33877,11 @@ body.v_signalStreng {
   padding: 17px 16px;
   border-radius: 16px;
 }
+@media (min-width: 320px) and (max-width: 374px) {
+  .v_signalStreng.globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .recipe_area .area .logo_list, .v_signalStreng.globalStock .sub_recipe.new_recipe .recipe_area .sub_recom.sub_recipe .sub_mid.recipe_view .area.rocket .area .logo_list {
+    padding: 15px 12px;
+  }
+}
 
 .v_signalStreng.globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .recipe_area .area .logo_list .title_logo, .v_signalStreng.globalStock .sub_recipe.new_recipe .recipe_area .sub_recom.sub_recipe .sub_mid.recipe_view .area.rocket .area .logo_list .title_logo {
   display: flex;
@@ -33914,6 +33923,11 @@ body.v_signalStreng {
   line-height: 1.19;
   color: #363F4B;
 }
+@media (min-width: 320px) and (max-width: 374px) {
+  .v_signalStreng.globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .recipe_area .area .logo_list .detail, .v_signalStreng.globalStock .sub_recipe.new_recipe .recipe_area .sub_recom.sub_recipe .sub_mid.recipe_view .area.rocket .area .logo_list .detail {
+    max-width: calc(100% - 140px);
+  }
+}
 
 .v_signalStreng.globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .recipe_area .area .logo_list .detail .title, .v_signalStreng.globalStock .sub_recipe.new_recipe .recipe_area .sub_recom.sub_recipe .sub_mid.recipe_view .area.rocket .area .logo_list .detail .title {
   width: 100%;
@@ -33925,6 +33939,7 @@ body.v_signalStreng {
 
 .v_signalStreng.globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .recipe_area .area .logo_list .detail .per span, .v_signalStreng.globalStock .sub_recipe.new_recipe .recipe_area .sub_recom.sub_recipe .sub_mid.recipe_view .area.rocket .area .logo_list .detail .per span {
   font-size: 0.9375rem;
+  letter-spacing: -1px;
 }
 
 .v_signalStreng.globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .recipe_area .area .logo_list .revenue, .v_signalStreng.globalStock .sub_recipe.new_recipe .recipe_area .sub_recom.sub_recipe .sub_mid.recipe_view .area.rocket .area .logo_list .revenue {

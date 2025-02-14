@@ -5858,6 +5858,9 @@ table.tableRanking td {
 	font-weight: bold;
 	color: #333;
 }
+.globalStock .sub_recom .sub_mid.eventPicks_area #tab3 .recom_chartList .chartGoal .target .att {	
+	margin-top: 12px;	
+}
 
 .globalStock .sub_recom .sub_mid.eventPicks_area .recom_chartList .chartGoal .target .att.prm_lock {
 	margin-top: 12px;
@@ -35062,6 +35065,9 @@ body.v_signalStreng {
 	background-color: #f7f8f9;
 	box-sizing: border-box;
 	padding: 17px 16px;
+	@media (min-width:320px) and (max-width: 374px) {
+		padding: 15px 12px;
+	}	
 	border-radius: 16px;
 }
 
@@ -35099,6 +35105,9 @@ body.v_signalStreng {
 	align-items: baseline;
 	gap: 4px 5px;
 	max-width: calc(100% - 140px);
+	@media (min-width:320px) and (max-width: 374px) {
+		max-width: calc(100% - 140px);
+	}
 	box-sizing: border-box;
 	font-size: 1rem;
 	font-weight: 700;
@@ -35118,6 +35127,7 @@ body.v_signalStreng {
 
 .v_signalStreng.globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .recipe_area .area .logo_list .detail .per span {
 	font-size: 0.9375rem;
+	letter-spacing: -1px;
 }
 
 .v_signalStreng.globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .recipe_area .area .logo_list .revenue {
