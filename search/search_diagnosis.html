@@ -67,40 +67,45 @@
     </div> -->
     <!-- 오늘 하루 열지 않기 -->
     <div class="free_2weeks open" id="layer_pop">
-        <div class="signalpop event2024_payment">        
-            <div class="bg_gray"></div>
-            <div class="box">                
-                <div class="content" onclick="location.href ='../payment/step01.html'" style="cursor:pointer;">
+        <!-- 검색 페이지 하단 플로팅 배너 영역 -->
+        <div class="signalpop event2024_payment">
+            <script>
+                document.addEventListener('DOMContentLoaded', function () {
+                    var images = [
+                        { src: '/img/banner/event_mainBtm_250214_v1.png', buttonText: '프리미엄 첫 달 <b>1,000원!</b>' },
+                        { src: '/img/banner/event_mainBtm_250214_v2.png', buttonText: '프리미엄 첫 달 <b>1,000원!</b>' },
+                        { src: '/img/banner/event_mainBtm_250214_v3.png', buttonText: '프리미엄 첫 달 <b>1,000원!</b>' },
+                        { src: '/img/banner/event_mainBtm_250214_v4.png', buttonText: '프리미엄 첫 달 <b>1,000원!</b>' },
+                        // 이미지와 버튼 텍스트를 객체로 추가할 수 있습니다.
+                    ];
+
+                    var randomIndex = Math.floor(Math.random() * images.length);
+                    var selectedImage = images[randomIndex];
+
+                    var divElement = document.querySelector('.info_txt');
+                    divElement.style.background = "url('" + selectedImage.src + "') no-repeat center 0";
+
+                    // 버튼 텍스트 변경
+                    var buttonElement = document.querySelector('.btn_area a');
+                    buttonElement.innerHTML = selectedImage.buttonText;
+                });
+            </script>
+            <div class="box">
+                <div class="content" onclick="wiseClickBanner('home_underpopup', 'main_floating'); location.href ='/main/service'" style="cursor:pointer;">
                     <div class="info_txt">
-                        <!-- <p class="txt01">AI가 알려주는 투자타이밍!</p>
-                        <p class="txt02">전종목 매매신호가 무제한</p> -->
+                        <p class="txt01">메타플랫폼스(META)</p>
+                        <p class="txt02">매매신호 수익률 227.44%</p>
                     </div>
-                    <script>
-                        document.addEventListener('DOMContentLoaded', function () {
-                            var images = [
-                                '../img/banner/event_mainBtm_240123.png',
-                                '../img/banner/event_mainBtm_240123_v.png' // 두 번째 이미지 경로
-                            ];
-    
-                            var randomIndex = Math.floor(Math.random() * images.length);
-                            var imageUrl = images[randomIndex];
-    
-                            var divElement = document.querySelector('.info_txt');
-                            divElement.style.background = "url('" + imageUrl + "') no-repeat center 0";
-                        });
-    
-                    </script>
                     <div class="btn_area">
-                        <a href="../payment/step01.html" class="btn payment_1000">프리미엄 첫달 <b>1,000원!</b></a>
+                        <a href="/main/service" class="btn payment_1000" onclick="wiseClickBanner('home_underpopup', 'main_floating');">프리미엄 첫달 <b>1,000원!</b></a>
                     </div>
                 </div>
-    
+
                 <div class="ftr">
                     <label for="pop_today" class="btn_day">
                         <input type="checkbox" name="pop_today" id="pop_today" /> 오늘 하루 열지 않기</label>
                     <a href="javascript:closeWin();" class="btn_close">닫기</a>
                 </div>
-    
             </div>
         </div>
     </div>
