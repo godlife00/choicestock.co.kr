@@ -31916,7 +31916,7 @@ body.v_signalStreng {
   background: #EFF0FE;
   color: #7983D5;
   font-size: 10px;
-  font-weight: 700;
+  font-weight: 400;
 }
 .v_signalStreng.globalStock #wrap #container .recom_company .detail.market_status .pre_market {
   display: flex;
@@ -31927,7 +31927,7 @@ body.v_signalStreng {
   background: #FFF5E6;
   color: #FFAA64;
   font-size: 10px;
-  font-weight: 700;
+  font-weight: 400;
 }
 .v_signalStreng.globalStock #wrap #container .recom_company .detail.market_status .num {
   font-size: 13px !important;
@@ -31935,14 +31935,14 @@ body.v_signalStreng {
 .v_signalStreng.globalStock #wrap #container .recom_company .detail.market_status .num span, .v_signalStreng.globalStock #wrap #container .recom_company .detail.market_status .num span b {
   color: #333;
   font-size: 13px !important;
-  font-weight: 500 !important;
+  font-weight: 400 !important;
 }
 .v_signalStreng.globalStock #wrap #container .recom_company .detail.market_status .per {
   top: 0;
 }
 .v_signalStreng.globalStock #wrap #container .recom_company .detail.market_status .per span, .v_signalStreng.globalStock #wrap #container .recom_company .detail.market_status .per span b {
   font-size: 13px !important;
-  font-weight: 500 !important;
+  font-weight: 400 !important;
   letter-spacing: -0.26px !important;
 }
 .v_signalStreng.globalStock #wrap #container .recom_company .detail.market_status .per .day {
@@ -31957,13 +31957,16 @@ body.v_signalStreng {
   line-height: 0.77;
   color: #181f29;
 }
+.v_signalStreng.globalStock #wrap #container .recom_company .detail .num span b {
+  color: #181f29;
+}
 .v_signalStreng.globalStock #wrap #container .recom_company .detail .per {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 4px;
   position: relative;
-  top: 3px;
+  top: 1px;
 }
 .v_signalStreng.globalStock #wrap #container .recom_company .detail .per .increase,
 .v_signalStreng.globalStock #wrap #container .recom_company .detail .per .decrease,
@@ -34603,6 +34606,10 @@ body.v_signalStreng {
 }
 .sub_mid.latest_results .interest_list .stock_info .data_opinion .signal.waitting {
   background-color: #a1a1a1;
+}
+.sub_mid.latest_results .interest_list .stock_info .data_opinion .signal.prm_lock {
+  padding: 7px 10px 3px;
+  background-color: #C7CCD1;
 }
 .sub_mid.latest_results .interest_list .select_area {
   display: flex;

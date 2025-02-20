@@ -32761,7 +32761,7 @@ body.v_signalStreng {
 				background: #EFF0FE;
 				color: #7983D5;
 				font-size: 10px;			
-				font-weight: 700;			
+				font-weight: 400;			
 		
 			}
 			.pre_market {
@@ -32773,7 +32773,7 @@ body.v_signalStreng {
 				background: #FFF5E6;
 				color: #FFAA64;
 				font-size: 10px;			
-				font-weight: 700;			
+				font-weight: 400;			
 		
 			}
 			.num {
@@ -32781,14 +32781,14 @@ body.v_signalStreng {
 				span, span b {
 					color: #333;			
 					font-size: 13px !important;			
-					font-weight: 500 !important;
+					font-weight: 400 !important;
 				}				
 			}
 			.per {
 				top: 0;
 				span, span b {					
 					font-size: 13px !important;					
-					font-weight: 500 !important;
+					font-weight: 400 !important;
 					letter-spacing: -0.26px !important;
 				}
 				.day {					
@@ -32809,6 +32809,9 @@ body.v_signalStreng {
 		font-weight: 700;
 		line-height: 0.77;
 		color: #181f29;
+		b {
+			color: #181f29;
+		}
 	}
 
 	.detail .per {
@@ -32817,7 +32820,7 @@ body.v_signalStreng {
 		align-items: center;
 		gap: 4px;
 		position: relative;
-		top: 3px;
+		top: 1px;
 	}
 
 	.detail .per .increase,
@@ -35484,6 +35487,10 @@ body.v_signalStreng {
 					
 					&.waitting {
 						background-color: #a1a1a1;
+					}
+					&.prm_lock {
+						padding: 7px 10px 3px;
+						background-color: #C7CCD1;
 					}
 				}
 			}
