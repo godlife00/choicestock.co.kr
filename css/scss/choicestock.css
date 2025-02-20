@@ -31902,7 +31902,51 @@ body.v_signalStreng {
   color: #181f29;
 }
 .v_signalStreng.globalStock #wrap #container .recom_company .detail {
-  margin-top: 3px;
+  display: flex;
+  gap: 4px 4px;
+  align-items: center;
+  margin-top: 7.5px;
+}
+.v_signalStreng.globalStock #wrap #container .recom_company .detail.market_status .after_market {
+  display: flex;
+  padding: 4px 6px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 6px;
+  background: #EFF0FE;
+  color: #7983D5;
+  font-size: 10px;
+  font-weight: 700;
+}
+.v_signalStreng.globalStock #wrap #container .recom_company .detail.market_status .pre_market {
+  display: flex;
+  padding: 4px 6px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 6px;
+  background: #FFF5E6;
+  color: #FFAA64;
+  font-size: 10px;
+  font-weight: 700;
+}
+.v_signalStreng.globalStock #wrap #container .recom_company .detail.market_status .num {
+  font-size: 13px !important;
+}
+.v_signalStreng.globalStock #wrap #container .recom_company .detail.market_status .num span, .v_signalStreng.globalStock #wrap #container .recom_company .detail.market_status .num span b {
+  color: #333;
+  font-size: 13px !important;
+  font-weight: 500 !important;
+}
+.v_signalStreng.globalStock #wrap #container .recom_company .detail.market_status .per {
+  top: 0;
+}
+.v_signalStreng.globalStock #wrap #container .recom_company .detail.market_status .per span, .v_signalStreng.globalStock #wrap #container .recom_company .detail.market_status .per span b {
+  font-size: 13px !important;
+  font-weight: 500 !important;
+  letter-spacing: -0.26px !important;
+}
+.v_signalStreng.globalStock #wrap #container .recom_company .detail.market_status .per .day {
+  font-size: 12px !important;
 }
 .v_signalStreng.globalStock #wrap #container .recom_company .detail .num {
   font-size: 34px;
@@ -31916,9 +31960,10 @@ body.v_signalStreng {
 .v_signalStreng.globalStock #wrap #container .recom_company .detail .per {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
   gap: 4px;
-  margin-top: 6px;
+  position: relative;
+  top: 3px;
 }
 .v_signalStreng.globalStock #wrap #container .recom_company .detail .per .increase,
 .v_signalStreng.globalStock #wrap #container .recom_company .detail .per .decrease,
@@ -32026,6 +32071,9 @@ body.v_signalStreng {
   display: flex;
   max-width: 767px;
   margin: 0 auto;
+}
+.list.recom.fix_data .detail.market_status {
+  display: none;
 }
 .list.recom * {
   margin: 0;

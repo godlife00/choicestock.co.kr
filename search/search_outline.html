@@ -45,12 +45,12 @@
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" type="text/css" href="../css/scss/choicestock.css?ver=250213" />
     <!-- js -->
-    <!-- js -->    
+    <!-- js -->
     <script>
         // 모바일 장치일 경우에만 모바일 처티 스크립트 로드
         function isMobileDevice() {
             return /Mobi|Android/i.test(navigator.userAgent);
-        }            
+        }
         if (isMobileDevice()) {
             var script = document.createElement('script');
             script.src = "https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js";
@@ -171,15 +171,47 @@
                     <li class="ticker">AAPL</li>
                     <li class="stock_index"><span>NASDAQ</span><span>S&P500</span></li>
                     <li class="company_nm">마이크로소프트마이크로소프트마이크로소프트</li>
+
+                    <!-- 정규장 -->
                     <li class="detail">
                         <div class="num">
-                            <span><b>1,898.</b>00</span>
+                            <span><b>898.</b>00</span>
                         </div>
                         <div class="per">
                             <span class="increase"><b>+89.</b>89</span>
                             <span class="increase">(<b>+89.</b>89%)</span>
                             <!-- increase 증가, decrease 감소, 보합은 same -->
-                            <span class="day">23. 07/03 88:88 USD</span>
+                            <span class="day">1/23, 장마감</span>
+                        </div>
+                    </li>
+                    <!-- 애프터마켓 -->
+                    <li class="detail market_status">
+                        <div class="after_market">
+                            애프터마켓
+                        </div>
+                        <div class="num">
+                            <span><b>898.</b>00</span>
+                        </div>
+                        <div class="per">
+                            <span class="increase"><b>+89.</b>89</span>
+                            <span class="increase">(<b>+89.</b>89%)</span>
+                            <!-- increase 증가, decrease 감소, 보합은 same -->
+                            <span class="day">04:35, USD</span>
+                        </div>
+                    </li>
+                    <!-- 프리마켓 -->
+                    <li class="detail market_status">
+                        <div class="pre_market">
+                            프리마켓
+                        </div>
+                        <div class="num">
+                            <span><b>898.</b>00</span>
+                        </div>
+                        <div class="per">
+                            <span class="decrease"><b>-89.</b>89</span>
+                            <span class="decrease">(<b>-89.</b>89%)</span>
+                            <!-- increase 증가, decrease 감소, 보합은 same -->
+                            <span class="day">11:35, USD</span>
                         </div>
                     </li>
                 </ul>
@@ -190,10 +222,10 @@
                             관심</li>
                     </ul>
                     <div class="stock_tag">
-                        <span><a href="/stock/recipe/dividend">#배당매력주</a></span> <span><a
-                                href="/stock/recipe/growth">#이익성장주</a></span>
-                        <span><a href="/stock/recipe/moat">#소비자독점주</a></span> <span><a
-                                href="/stock/recipe/interest">#관심TOP50</a></span>
+                        <span><a href="/stock/recipe/dividend">#배당매력주</a></span>
+                        <span><a href="/stock/recipe/growth">#이익성장주</a></span>
+                        <span><a href="/stock/recipe/moat">#소비자독점주</a></span>
+                        <!-- <span><a href="/stock/recipe/interest">#관심TOP50</a></span> -->
                     </div>
                 </div>
             </div>
@@ -960,9 +992,9 @@
                         <p class="sum_txt">관심종목 등록으로 종목정보를 빠르게 확인하세요.</p>
                         <ul>
                             <li class="sum_txt">*프리미엄회원은 관심종목 알림서비스가 제공됩니다.</li>
-                        </ul>                    
+                        </ul>
                     </div>
-                    
+
                     <span class="clse">
                         <!--닫기-->
                     </span>
@@ -973,7 +1005,7 @@
                         <label class="group_label">그룹 선택</label>
                         <button class="group_add_btn">+ 그룹추가</button>
                     </div>
-            
+
                     <!-- 관심종목 리스트 -->
                     <ul class="fav_list">
                         <li class="fav_item">
@@ -998,7 +1030,7 @@
                         <!-- <a href="" class="btn btn_save close">삭제</a> -->
                         <button class="btn btn_save">확인</button>
                     </div>
-                </div>                
+                </div>
             </div>
 
             <!-- 관심종목 그룹 등록 툴팁 팝업 -->
@@ -1006,22 +1038,24 @@
                 <!-- fav_reg_popup(관심종목 등록), fav_group_reg_popup(관심종목 그룹 등록), fav_group_move_popup(관심종목 그룹 이동), fav_group_manage_popup(관심종목 그룹 관리), fav_group_edit_popup(관심종목 그룹 수정, 삭제) -->
                 <div class="pop_header">
                     <h1 class="pop_title">관심종목 그룹 등록</h1>
-                    
+
                     <span class="clse">
                         <!--닫기-->
                     </span>
                 </div>
-                <div class="pop_con">                                        
+                <div class="pop_con">
                     <div class="group_name_input">
-                        <input type="text" placeholder="그룹이름을 입력하세요" class="name_input" oninput="this.nextElementSibling.innerText = (this.value.length > 10 ? 10 : this.value.length) + '/10'" maxlength="10">
+                        <input type="text" placeholder="그룹이름을 입력하세요" class="name_input"
+                            oninput="this.nextElementSibling.innerText = (this.value.length > 10 ? 10 : this.value.length) + '/10'"
+                            maxlength="10">
                         <span class="input_cunt">0/10</span>
                     </div>
 
                     <div class="btnArea edtBtn">
-                        <!-- <a href="" class="btn btn_save close">삭제</a> -->                         
+                        <!-- <a href="" class="btn btn_save close">삭제</a> -->
                         <input type="submit" class="btn btn_save" value="등록">
                     </div>
-                </div>                
+                </div>
             </div>
 
             <div class="blocker"></div>

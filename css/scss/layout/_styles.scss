@@ -32744,8 +32744,60 @@ body.v_signalStreng {
 		color: #181f29;		
 	}
 
-	.detail {
-		margin-top: 3px;
+	
+	.detail {		
+		display: flex;
+		gap: 4px 4px;
+		align-items: center;
+		margin-top: 7.5px;
+		// 종목검색 주가 마켓 상태 구분
+		&.market_status {
+			.after_market {
+				display: flex;
+				padding: 4px 6px;
+				align-items: center;
+				gap: 10px;
+				border-radius: 6px;				
+				background: #EFF0FE;
+				color: #7983D5;
+				font-size: 10px;			
+				font-weight: 700;			
+		
+			}
+			.pre_market {
+				display: flex;
+				padding: 4px 6px;
+				align-items: center;
+				gap: 10px;
+				border-radius: 6px;				
+				background: #FFF5E6;
+				color: #FFAA64;
+				font-size: 10px;			
+				font-weight: 700;			
+		
+			}
+			.num {
+				font-size: 13px !important;			
+				span, span b {
+					color: #333;			
+					font-size: 13px !important;			
+					font-weight: 500 !important;
+				}				
+			}
+			.per {
+				top: 0;
+				span, span b {					
+					font-size: 13px !important;					
+					font-weight: 500 !important;
+					letter-spacing: -0.26px !important;
+				}
+				.day {					
+					font-size: 12px !important;										
+				}
+			}
+		}
+		
+		
 	}
 
 	.detail .num {
@@ -32762,9 +32814,10 @@ body.v_signalStreng {
 	.detail .per {
 		display: flex;
 		justify-content: space-between;
-		align-items: flex-end;
+		align-items: center;
 		gap: 4px;
-		margin-top: 6px;
+		position: relative;
+		top: 3px;
 	}
 
 	.detail .per .increase,
@@ -32889,6 +32942,9 @@ body.v_signalStreng {
 		display: flex;
 		max-width: 767px;
 		margin: 0 auto;
+		.detail.market_status {
+			display: none;
+		}
 	}
 
 	* {
