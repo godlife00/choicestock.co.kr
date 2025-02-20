@@ -45,10 +45,22 @@
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" type="text/css" href="../css/scss/choicestock.css?ver=250213" />
     <!-- js -->
+    <!-- js -->    
+    <script>
+        // 모바일 장치일 경우에만 모바일 처티 스크립트 로드
+        function isMobileDevice() {
+            return /Mobi|Android/i.test(navigator.userAgent);
+        }            
+        if (isMobileDevice()) {
+            var script = document.createElement('script');
+            script.src = "https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js";
+            document.head.appendChild(script);
+        }
+    </script>
     <script src="../js/choicestock.js"></script>
 </head>
 
-<body class="v_signalStreng globalStock">   
+<body class="v_signalStreng globalStock">
     <!-- 오늘 하루 열지 않기 -->
     <div class="free_2weeks open" id="layer_pop">
         <!-- 검색 페이지 하단 플로팅 배너 영역 -->
@@ -75,13 +87,16 @@
                 });
             </script>
             <div class="box">
-                <div class="content" onclick="wiseClickBanner('home_underpopup', 'main_floating'); location.href ='/main/service'" style="cursor:pointer;">
+                <div class="content"
+                    onclick="wiseClickBanner('home_underpopup', 'main_floating'); location.href ='/main/service'"
+                    style="cursor:pointer;">
                     <div class="info_txt">
                         <p class="txt01">메타플랫폼스(META)</p>
                         <p class="txt02">매매신호 수익률 227.44%</p>
                     </div>
                     <div class="btn_area">
-                        <a href="/main/service" class="btn payment_1000" onclick="wiseClickBanner('home_underpopup', 'main_floating');">프리미엄 첫달 <b>1,000원!</b></a>
+                        <a href="/main/service" class="btn payment_1000"
+                            onclick="wiseClickBanner('home_underpopup', 'main_floating');">프리미엄 첫달 <b>1,000원!</b></a>
                     </div>
                 </div>
 
@@ -93,8 +108,8 @@
             </div>
         </div>
     </div>
-    <!-- //free_2weeks //오늘 하루 열지 않기 --> 
-     <!-- 오늘 하루 열지 않기 -->
+    <!-- //free_2weeks //오늘 하루 열지 않기 -->
+    <!-- 오늘 하루 열지 않기 -->
     <script language="Javascript" type="text/javascript">
         cookiedata = document.cookie;
         if (cookiedata.indexOf("mainpop=done") < 0) {
@@ -111,7 +126,7 @@
             setCookie("mainpop", "done", 24);
             document.getElementById('layer_pop').style.display = "none";
         });
-    </script>   
+    </script>
 
     <div id="wrap">
         <!-- 2024 신년 이벤트 -->
@@ -212,7 +227,8 @@
                                 <div class="mid">
                                     <div class="charm_num">
                                         <span class="signal hold">보유</span>
-                                        <span class="signal_guide txt_guide"><img src="../img/txt_guide_us.svg" alt="가이드보기"></span>                                        
+                                        <span class="signal_guide txt_guide"><img src="../img/txt_guide_us.svg"
+                                                alt="가이드보기"></span>
                                     </div>
                                     <!-- //charm_num -->
                                     <div class="num_bar">
@@ -252,7 +268,8 @@
                                 <div class="mid">
                                     <div class="charm_num">
                                         <span class="signal"><img src="../img/signal_prm.svg" alt="프리미엄서비스"></span>
-                                        <span class="signal_guide txt_guide"><img src="../img/txt_guide_us.svg" alt="가이드보기"></span>                                        
+                                        <span class="signal_guide txt_guide"><img src="../img/txt_guide_us.svg"
+                                                alt="가이드보기"></span>
                                     </div>
                                     <!-- //charm_num -->
                                     <div class="num_bar">
@@ -323,18 +340,21 @@
                 <!-- 프리미엄 배너 -->
                 <div class="banner_signal" style="display: none;">
                     <!-- <a href="../payment/step01.html"><img src="../img/banner/banner_prm.jpg" alt="전품목 매매신호가 궁금하다면 초이스스탁US 프리미엄 월 3,300원"></a> -->
-                    <a href="../payment/step01.html"><img src="../img/banner/event_pay1000.jpg" alt="전품목 매매신호가 궁금하다면 초이스스탁US 프리미엄 월 3,300원"></a>                    
-                            
+                    <a href="../payment/step01.html"><img src="../img/banner/event_pay1000.jpg"
+                            alt="전품목 매매신호가 궁금하다면 초이스스탁US 프리미엄 월 3,300원"></a>
+
                 </div>
 
-                <!-- 검색 개요 중간 신년 이벤트 배너 -->            
-                <div class="event2025_banner" onclick="location.href ='https://capdev.choicestock.co.kr/main/happy_newyear'" style="cursor: pointer;">              
+                <!-- 검색 개요 중간 신년 이벤트 배너 -->
+                <div class="event2025_banner"
+                    onclick="location.href ='https://capdev.choicestock.co.kr/main/happy_newyear'"
+                    style="cursor: pointer;">
                     <a href="" class="link_banner">
                         <span>미국주식 더이상 미루지 마세요!</span><br>
                         2025년 상반기 오른다! 종목 <b>TOP10</b>
-                    </a>                        
+                    </a>
                 </div>
-                <!-- //검색 개요 중간 신년 이벤트 배너 -->            
+                <!-- //검색 개요 중간 신년 이벤트 배너 -->
 
                 <!-- outline -->
                 <div class="mainBox outline">
@@ -370,16 +390,16 @@
                         </div>
                     </div>
 
-                    <div class="chart_box">                      
+                    <div class="chart_box">
 
                         <div id="containeroutline1_2_M3" class="BICchart_style"></div>
                         <div id="containeroutline1_2_M6" class="BICchart_style" style="display:none"></div>
-                        <div id="containeroutline1_2_Y1" class="BICchart_style" style="display:none"></div>                        
+                        <div id="containeroutline1_2_Y1" class="BICchart_style" style="display:none"></div>
 
                         <ul class="period_tabs">
                             <li class="active" data-target="#containeroutline1_2_M3">3개월</li>
                             <li data-target="#containeroutline1_2_M6">6개월</li>
-                            <li data-target="#containeroutline1_2_Y1">1년</li>                            
+                            <li data-target="#containeroutline1_2_Y1">1년</li>
                         </ul>
                     </div>
                     <!-- //chart_box -->
@@ -407,7 +427,7 @@
                 <!-- 스파이더 차트 -->
                 <div class="mainBox investCharm_area">
                     <h2 class="title"><a href="search_diagnosis.html">종목진단</a></h2>
-                    <div class="tab_diagnosis_area">                        
+                    <div class="tab_diagnosis_area">
                         <div id="containercharm1_1" class="containercharm1"></div>
                         <div class="스파이더차트_스몰">
                             <div class="swiper-container swiper_competChar">
@@ -442,42 +462,50 @@
                 <div class="banner_signal">
                     <a href=""><img src="../img/banner/today_trading_230901.jpg" alt="오늘의매매신호 지금살까? 매매신호 종목만 쏙쏙!"></a>
                     <br><br>
-                    <a href="https://www.valueline.co.kr/member/service" target="_blank"><img src="../img/banner/event_discount_fly55.png" alt="20년 빅데이터 종목분석 밸류라인 프리미엄 평상할인 55% (선착순 100명)"></a>
+                    <a href="https://www.valueline.co.kr/member/service" target="_blank"><img
+                            src="../img/banner/event_discount_fly55.png"
+                            alt="20년 빅데이터 종목분석 밸류라인 프리미엄 평상할인 55% (선착순 100명)"></a>
                 </div>
 
                 <!-- 매출액, 영업이익, 주당순이익(EPS) 막대 차트 -->
                 <div class="mainBox financials chart_financials">
                     <div class="chart_box">
-                        <h3 class="c_title">주가 흐름은?</h3>                                                
-                        <h4 class="sum_title ema_guide">지수이동평균선(EMA) <span class="signal_guide txt_guide"><img src="../img/txt_guide_us.svg" alt="가이드보기"></span> <span class="unit">* 단위 : 달러</span></h4>                        
+                        <h3 class="c_title">주가 흐름은?</h3>
+                        <h4 class="sum_title ema_guide">지수이동평균선(EMA) <span class="signal_guide txt_guide"><img
+                                    src="../img/txt_guide_us.svg" alt="가이드보기"></span> <span class="unit">* 단위 :
+                                달러</span></h4>
                         <div id="ma_chart_container" class="financialsLine_style"></div>
                         <div class="ma_period_wrap">
                             <button type="button" class="ma_period_btn active" data-period="1Y">1년</button>
                             <button type="button" class="ma_period_btn" data-period="3Y">3년</button>
                         </div>
-                        <span class="chart_capture" onclick="capture(event)"><img src="../img/chart_down.png" alt="차트 다운로드"></span>
+                        <span class="chart_capture" onclick="capture(event)"><img src="../img/chart_down.png"
+                                alt="차트 다운로드"></span>
                     </div>
-                    
+
                     <div class="chart_box">
-                        <h3 class="sum_title EPS_guide">주가&EPS <span class="signal_guid txt_guide"><img src="../img/txt_guide_us.svg" alt="가이드보기"></span> <span class="unit">* 단위 : 달러</span></h3>                                                
+                        <h3 class="sum_title EPS_guide">주가&EPS <span class="signal_guid txt_guide"><img
+                                    src="../img/txt_guide_us.svg" alt="가이드보기"></span> <span class="unit">* 단위 :
+                                달러</span></h3>
                         <div id="containerfinancials2_1" class="financialsLine_style"></div>
                         <span class="chart_capture" onclick="capture(event)"><img src="../img/chart_down.png"
                                 alt="차트 다운로드"></span>
                     </div>
                 </div>
-                
+
                 <!-- 서비스 바로가기 퀵메뉴 -->
                 <div class="main_mid quick_link">
-                    <h3 class="title"><a href="/stock/new_recipe.html">투자레시피</a> <span class="remark">종목발굴을 위한 만가지 레시피</span></h3>
+                    <h3 class="title"><a href="/stock/new_recipe.html">투자레시피</a> <span class="remark">종목발굴을 위한 만가지
+                            레시피</span></h3>
                     <a href="/stock/new_recipe.html" class="more"><img src="../img/more_Black.png" alt="더보기"></a>
                     <div class="list_area">
                         <!-- 급등주, 관심TOP50, 골든크로스, 로켓성장주, 발굴!성장주 -->
                         <div class="swiper-container mainrecipeSwiper">
                             <div class="swiper-wrapper">
-                                <div class="swiper-slide">       
+                                <div class="swiper-slide">
                                     <a href="/stock/new_recipe_view.html" class="figure jump">
                                         <span>급등주</span>
-                                    </a>                                                         
+                                    </a>
                                 </div>
                                 <div class="swiper-slide">
                                     <a href="/stock/new_recipe_view.html" class="figure top50">
@@ -523,7 +551,8 @@
                             <dl class="lst_type2">
                                 <dt class="tit">
                                     <a href="/search/news_view/CELH/30999">
-                                        <strong>[성장주탐험대] 운동 전에 마시면&nbsp;살이&nbsp;빠진다고요?&nbsp;아마존&nbsp;에너지&nbsp;드링크&nbsp;판매&nbsp;1위 -
+                                        <strong>[성장주탐험대] 운동 전에
+                                            마시면&nbsp;살이&nbsp;빠진다고요?&nbsp;아마존&nbsp;에너지&nbsp;드링크&nbsp;판매&nbsp;1위 -
                                             셀시우스&nbsp;(CELH)</strong></a>
                                     <span class="day">23.09/21</span>
                                 </dt>
@@ -555,12 +584,12 @@
 
                     <script>
                         // 페이지 로드시 실행 동영상 제목에 html 태그가 포함되어있다면 제거
-                        $(document).ready(function() {
+                        $(document).ready(function () {
                             function removeHTMLTags(htmlString) {
                                 return $('<div>').html(htmlString).text();
                             }
                             // 
-                            $('.main_mid.new_area .lst_type2 .tit a').each(function() {
+                            $('.main_mid.new_area .lst_type2 .tit a').each(function () {
                                 let htmlString = $(this).html();
                                 let cleanString = removeHTMLTags(htmlString);
                                 $(this).text(cleanString);
@@ -610,9 +639,11 @@
                         <h3 class="c_title">매출액</h3>
                         <span class="unit">* 단위 : 백만 달러</span>
                         <div id="containerfinancials1_1" class="financials_style"></div>
-                        <span class="chart_capture" onclick="capture(event)"><img src="../img/chart_down.png" alt="차트 다운로드"></span>
+                        <span class="chart_capture" onclick="capture(event)"><img src="../img/chart_down.png"
+                                alt="차트 다운로드"></span>
                         <div id="containerfinancials1_1_temp" class="financials_style"></div>
-                        <span class="chart_capture" onclick="capture(event)"><img src="../img/chart_down.png" alt="차트 다운로드"></span>
+                        <span class="chart_capture" onclick="capture(event)"><img src="../img/chart_down.png"
+                                alt="차트 다운로드"></span>
                     </div>
                     <div class="chart_box">
                         <h3 class="c_title">EPS 주당순이익 </h3>
@@ -628,7 +659,7 @@
                         <div id="containerfinancials1_3" class="financials_style"></div>
                         <span class="chart_capture" onclick="capture(event)"><img src="../img/chart_down.png"
                                 alt="차트 다운로드"></span>
-                    </div>                    
+                    </div>
                     <div class="chart_box">
                         <h3 class="c_title">주당배당금</h3>
                         <span class="unit">* 단위 : 달러</span>
@@ -706,15 +737,15 @@
                 <div class="pop_con">
                     <p class="txt">- 최근 보유(매수/매도)신호는 <b>272.34</b>입니다. (23.7/23)</p>
                     <p class="txt">- 최근 매매신호의 최근 신호 상승률은 <b class="increase">23.24%</b>입니다.</p>
-                    <!-- <p class="txt">- 최근 매매신호의 최근 신호 상승률은 <b class="decrease">-84.56%</b>입니다.</p> -->                    
+                    <!-- <p class="txt">- 최근 매매신호의 최근 신호 상승률은 <b class="decrease">-84.56%</b>입니다.</p> -->
                     <div class="signal_header">
                         <h2 class="h2_txt">최근 매매신호</h2>
-                        <div class="signal_filter">                        
+                        <div class="signal_filter">
                             <span class="active" id="profit-tab">수익</span>
                             <span id="all-tab">전체</span>
                         </div>
                         <!-- //signal_filter -->
-                    </div>                    
+                    </div>
                     <!-- //signal_header -->
 
                     <div class="trading_signal" id="profit-signal">
@@ -726,7 +757,7 @@
                             </li>
                             <li class="signal">***.**</li>
                             <li class="exp_signal increase">23.34% <span>(예상)</span></li>
-                        </ul>                        
+                        </ul>
                         <ul class="list">
                             <li class="day">23.07.23</li>
                             <li class="trends">
@@ -753,7 +784,7 @@
                         </ul>
                     </div>
                     <!-- //trading_signal -->
-                        
+
                     <div class="trading_signal" id="all-signal">
                         <ul class="list">
                             <li class="day">***.**</li>
@@ -881,19 +912,23 @@
                     </span>
                 </div>
                 <div class="pop_con">
-                    <p class="sum_txt">주가 및 EPS(주당순이익) 차트는 기업의 주가와 주당순이익 사이의 관계를 시각화한 것입니다. 이 차트를 통해 투자자는 주당순이익 변화가 주가에 어떤 영향을 미치는지 살펴보고, 앞으로의 주가 변동을
+                    <p class="sum_txt">주가 및 EPS(주당순이익) 차트는 기업의 주가와 주당순이익 사이의 관계를 시각화한 것입니다. 이 차트를 통해 투자자는 주당순이익 변화가 주가에
+                        어떤 영향을 미치는지 살펴보고, 앞으로의 주가 변동을
                         예측할 수 있게 됩니다.</p>
                     <p class="txt">주가는 예상(추정) 주당순이익의 방향을 따라갑니다.</p>
                     <p class="txt">예상 주당순이익의 증가 폭이 클수록 미래 주가 상승률도 높습니다.</p>
                     <p class="txt">예상 주당순이익 상승률이 전년대비 하락하면 주가도 상승 탄력이 떨어집니다.</p>
-                    <p class="txt">차트 왼쪽(주가)과 오른쪽(주당순이익)값을 연결한 선은 PER(주가/주당순이익)을 의미하며, 주가가 주당순이익 차트보다 아래에 있으면 저평가로 판단합니다. 초이스스탁의 밸류에이션
+                    <p class="txt">차트 왼쪽(주가)과 오른쪽(주당순이익)값을 연결한 선은 PER(주가/주당순이익)을 의미하며, 주가가 주당순이익 차트보다 아래에 있으면 저평가로
+                        판단합니다. 초이스스탁의 밸류에이션
                         차트와 함께 보면 더욱 유용합니다.</p>
                     <p class="sum_txt">
-                        주가(Price): 주가는 주식이 시장에서 거래되는 가격을 나타냅니다. 차트에서 주가는 주식 시장에서의 가격 변동을 보여줍니다. 주가가 상승하면 주식 시장에서의 수요가 높아진 것으로 해석되고, 주가가
+                        주가(Price): 주가는 주식이 시장에서 거래되는 가격을 나타냅니다. 차트에서 주가는 주식 시장에서의 가격 변동을 보여줍니다. 주가가 상승하면 주식 시장에서의 수요가
+                        높아진 것으로 해석되고, 주가가
                         하락하면 수요가 감소했다고 해석합니다.
                     </p>
-                    <p class="sum_txt">                        
-                        EPS(Earnings Per Share): EPS는 기업의 순이익을 발행된 주식 수로 나눈 값으로, 주당순이익을 의미합니다. EPS는 기업의 수익성을 나타내는 지표로 활용됩니다. EPS가 높을수록
+                    <p class="sum_txt">
+                        EPS(Earnings Per Share): EPS는 기업의 순이익을 발행된 주식 수로 나눈 값으로, 주당순이익을 의미합니다. EPS는 기업의 수익성을 나타내는 지표로
+                        활용됩니다. EPS가 높을수록
                         기업이 순이익을 주주들과 나눠갖는 비율이 높다는 것을 의미하며, 투자자들은 높은 EPS를 선호합니다.
                     </p>
                 </div>
@@ -907,12 +942,86 @@
                         <!--닫기-->
                     </span>
                 </div>
-                <div class="pop_con">                    
+                <div class="pop_con">
                     <p class="txt">이동평균선은 주가의 지지선과 저항선의 역할을 합니다µ</p>
                     <p class="txt">단기 이동평균선이 장기 이동평균선을 상향 돌파 (골든크로스)하면 매수 시점, 하향 돌파(데드크로스)하면 매도 시점으로 판단합니다.<br>
-                    예를 들어 20일 이평선이 60일선을 상향 돌파하면 매수,하향 돌파하면 매도를 검토합니다.</p>   
-                    <p class="txt">초이스스탁의 이동평균선은 최근 주가 변동에 가중치를 두는 지수이동평균(EMA)을 적용해 현재 시장 동향을 더 잘 반영하며, 단순이동평균에 비해 추세 전환을 신속하게 포착할 수 있습니다.</p>                 
+                        예를 들어 20일 이평선이 60일선을 상향 돌파하면 매수,하향 돌파하면 매도를 검토합니다.</p>
+                    <p class="txt">초이스스탁의 이동평균선은 최근 주가 변동에 가중치를 두는 지수이동평균(EMA)을 적용해 현재 시장 동향을 더 잘 반영하며, 단순이동평균에 비해 추세
+                        전환을 신속하게 포착할 수 있습니다.</p>
                 </div>
+            </div>
+
+            <!-- 관심종목 등록 툴팁 팝업 -->
+            <div class="modal att_pop fav_reg_popup">
+                <!-- fav_reg_popup(관심종목 등록), fav_group_reg_popup(관심종목 그룹 등록), fav_group_move_popup(관심종목 그룹 이동), fav_group_manage_popup(관심종목 그룹 관리), fav_group_edit_popup(관심종목 그룹 수정, 삭제) -->
+                <div class="pop_header">
+                    <h1 class="pop_title">관심종목 등록</h1>
+                    <div>
+                        <p class="sum_txt">관심종목 등록으로 종목정보를 빠르게 확인하세요.</p>
+                        <ul>
+                            <li class="sum_txt">*프리미엄회원은 관심종목 알림서비스가 제공됩니다.</li>
+                        </ul>                    
+                    </div>
+                    
+                    <span class="clse">
+                        <!--닫기-->
+                    </span>
+                </div>
+                <div class="pop_con">
+                    <!-- 그룹 선택 -->
+                    <div class="group_select">
+                        <label class="group_label">그룹 선택</label>
+                        <button class="group_add_btn">+ 그룹추가</button>
+                    </div>
+            
+                    <!-- 관심종목 리스트 -->
+                    <ul class="fav_list">
+                        <li class="fav_item">
+                            <input type="checkbox" name="reg_fav" id="reg_fav1" class="fav_checkbox" checked>
+                            <label for="reg_fav1">관심종목명은열자까지</label>
+                        </li>
+                        <li class="fav_item">
+                            <input type="checkbox" name="reg_fav" id="reg_fav2" class="fav_checkbox">
+                            <label for="reg_fav2">관심종목 #1</label>
+                        </li>
+                        <li class="fav_item">
+                            <input type="checkbox" name="reg_fav" id="reg_fav3" class="fav_checkbox" checked>
+                            <label for="reg_fav3">관심종목명은열자까지</label>
+                        </li>
+                        <li class="fav_item">
+                            <input type="checkbox" name="reg_fav" id="reg_fav4" class="fav_checkbox">
+                            <label for="reg_fav4">관심종목 #1</label>
+                        </li>
+                    </ul>
+
+                    <div class="btnArea edtBtn">
+                        <!-- <a href="" class="btn btn_save close">삭제</a> -->
+                        <button class="btn btn_save">확인</button>
+                    </div>
+                </div>                
+            </div>
+
+            <!-- 관심종목 그룹 등록 툴팁 팝업 -->
+            <div class="modal att_pop fav_group_reg_popup">
+                <!-- fav_reg_popup(관심종목 등록), fav_group_reg_popup(관심종목 그룹 등록), fav_group_move_popup(관심종목 그룹 이동), fav_group_manage_popup(관심종목 그룹 관리), fav_group_edit_popup(관심종목 그룹 수정, 삭제) -->
+                <div class="pop_header">
+                    <h1 class="pop_title">관심종목 그룹 등록</h1>
+                    
+                    <span class="clse">
+                        <!--닫기-->
+                    </span>
+                </div>
+                <div class="pop_con">                                        
+                    <div class="group_name_input">
+                        <input type="text" placeholder="그룹이름을 입력하세요" class="name_input" oninput="this.nextElementSibling.innerText = (this.value.length > 10 ? 10 : this.value.length) + '/10'" maxlength="10">
+                        <span class="input_cunt">0/10</span>
+                    </div>
+
+                    <div class="btnArea edtBtn">
+                        <!-- <a href="" class="btn btn_save close">삭제</a> -->                         
+                        <input type="submit" class="btn btn_save" value="등록">
+                    </div>
+                </div>                
             </div>
 
             <div class="blocker"></div>
@@ -920,7 +1029,7 @@
 
     </div>
     <!-- //wrap -->
-    
+
     <script>
         // 차트 캡쳐 스크립트
         function capture(event) {

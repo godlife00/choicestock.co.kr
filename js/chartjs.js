@@ -6893,8 +6893,7 @@ $(document).ready(function () {
                         // 툴팁 표시를 위해 마지막 날짜의 월을 +1 시킴
                         const lastDate = new Date(initialPositions[initialPositions.length - 1]);
                         lastDate.setMonth(lastDate.getMonth() + 1);
-                        initialPositions[initialPositions.length - 1] = Date.UTC(lastDate.getFullYear(), lastDate.getMonth());
-                        console.table(initialPositions);
+                        initialPositions[initialPositions.length - 1] = Date.UTC(lastDate.getFullYear(), lastDate.getMonth());                        
                         return initialPositions;                    
                     },
 
