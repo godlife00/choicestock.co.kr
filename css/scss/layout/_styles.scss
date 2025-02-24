@@ -2335,34 +2335,68 @@ table.tableRanking td {
 // 메인 상단 이벤트 배너 
 .globalStock .event2025_banner {		
 	margin: 30px 16px;
-	padding: 20px 0;
+	padding: 24px 0;
 	overflow: hidden;		
 	border-radius: 16px;			
 	box-sizing: border-box;	
 	background-color: #404FC3;
+	
 	text-align: center;
 	.link_banner {		
+		position: relative;
 		text-align: left;
 		display: inline-block;		
 		margin: 0 auto;		
-		padding-right: 57px;
-		box-sizing: border-box;		
-		background: #404FC3 url('/img/banner/trophy.png') no-repeat calc(50% + 120px) -22px;
-		background-size: auto calc(252px / 3);
-		font-size: 16px;
-		color: #fff;
-		line-height: 1.4;
-		b {
-			color: #FFDD00;
+		padding-left: 45px;
+		box-sizing: border-box;				
+		color: #FFF;		
+		font-size: 15px;		
+		font-weight: 700;
+		line-height: normal;
+		&::before {
+			content: '';
+			position: absolute;
+			left: -30px;
+			top: -17px;
+			width: 60px;
+			height: 60px;
+			background: url('/img/banner/new_app.png') no-repeat 0 0;
+			background-size: auto calc(120px / 2);
+		}
+
+		b {			
+			color: #fff;
 		}
 		span {
-			font-weight: normal;
-			font-size: 13px;
-			color: #C7CBE9;
-			
+			display: block;
+			color: rgba(255, 255, 255, 0.70);
+			font-size: 13px;			
+			font-weight: 500;
+			padding-bottom: 4px;
 		}	
-
-	}	
+	}		
+	&.bg_gray {
+		background-color: #ECEFFD;
+		.link_banner {
+			color: #333;
+			font-family: Pretendard;
+			font-size: 15px;
+			font-style: normal;
+			font-weight: 700;
+			line-height: normal;
+			b {
+				color: #404FC3;
+			}
+			span {
+				color: #6A727B;
+				font-family: Pretendard;
+				font-size: 13px;
+				font-style: normal;
+				font-weight: 500;
+				line-height: normal;
+			}
+		}
+	}
 }
 
 /* 메인 - 관심종목 */
