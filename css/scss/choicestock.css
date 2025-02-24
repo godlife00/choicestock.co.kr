@@ -37361,6 +37361,9 @@ body.v_signalStreng {
   background-color: #000;
   border-radius: 16px;
 }
+.modal.att_pop.fav_group_com_popup .pop_con .alt_txt {
+  text-align: center;
+}
 .modal.att_pop .pop_header {
   display: flex;
   flex-wrap: wrap;

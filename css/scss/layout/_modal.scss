@@ -2115,7 +2115,11 @@
 			border-radius: 16px;
 		}
 	}	
-	
+	&.fav_group_com_popup  {
+		.pop_con .alt_txt {
+			text-align: center;
+		}
+	}
 	.pop_header  {
 		display: flex;
 		flex-wrap: wrap;
