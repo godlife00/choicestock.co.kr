@@ -229,6 +229,11 @@
 #footer .notice {
   padding: 24px 30px 80px;
 }
+#footer .notice .service_info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px 5px;
+}
 #footer .notice .service_info p {
   line-height: 1.6;
   letter-spacing: -0.5px;
@@ -237,7 +242,6 @@
 }
 #footer .notice .dataLink {
   text-align: left;
-  margin-top: 5px;
   color: #848c96;
 }
 #footer .notice .dataLink a {

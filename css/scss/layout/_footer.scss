@@ -16,16 +16,18 @@
 	.notice {
 		padding: 24px 30px 80px;		
 		.service_info {
+			display: flex;
+			flex-direction: column;
+			gap: 5px 5px;
 			p {
 				line-height: 1.6;
 				letter-spacing: -0.5px;
 				color: #808993;
-				font-size: 10px;	
+				font-size: 10px;					
 			}			
 		}
 		.dataLink {
-			text-align: left;
-			margin-top: 5px;
+			text-align: left;			
 			color: #848c96;
 			a {
 				font-size: 10px;	
