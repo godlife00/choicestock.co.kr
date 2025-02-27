@@ -2335,34 +2335,68 @@ table.tableRanking td {
 // 메인 상단 이벤트 배너 
 .globalStock .event2025_banner {		
 	margin: 30px 16px;
-	padding: 20px 0;
+	padding: 24px 0;
 	overflow: hidden;		
 	border-radius: 16px;			
 	box-sizing: border-box;	
 	background-color: #404FC3;
+	
 	text-align: center;
 	.link_banner {		
+		position: relative;
 		text-align: left;
 		display: inline-block;		
 		margin: 0 auto;		
-		padding-right: 57px;
-		box-sizing: border-box;		
-		background: #404FC3 url('/img/banner/trophy.png') no-repeat calc(50% + 120px) -22px;
-		background-size: auto calc(252px / 3);
-		font-size: 16px;
-		color: #fff;
-		line-height: 1.4;
-		b {
-			color: #FFDD00;
+		padding-left: 45px;
+		box-sizing: border-box;				
+		color: #FFF;		
+		font-size: 15px;		
+		font-weight: 700;
+		line-height: normal;
+		&::before {
+			content: '';
+			position: absolute;
+			left: -30px;
+			top: -17px;
+			width: 60px;
+			height: 60px;
+			background: url('/img/banner/new_app.png') no-repeat 0 0;
+			background-size: auto calc(120px / 2);
+		}
+
+		b {			
+			color: #fff;
 		}
 		span {
-			font-weight: normal;
-			font-size: 13px;
-			color: #C7CBE9;
-			
+			display: block;
+			color: rgba(255, 255, 255, 0.70);
+			font-size: 13px;			
+			font-weight: 500;
+			padding-bottom: 4px;
 		}	
-
-	}	
+	}		
+	&.bg_gray {
+		background-color: #ECEFFD;
+		.link_banner {
+			color: #333;
+			font-family: Pretendard;
+			font-size: 15px;
+			font-style: normal;
+			font-weight: 700;
+			line-height: normal;
+			b {
+				color: #404FC3;
+			}
+			span {
+				color: #6A727B;
+				font-family: Pretendard;
+				font-size: 13px;
+				font-style: normal;
+				font-weight: 500;
+				line-height: normal;
+			}
+		}
+	}
 }
 
 /* 메인 - 관심종목 */
@@ -10814,7 +10848,7 @@ table.tableRanking td {
 .globalStock .sub_search .latest_results .tabsArea table.tableRanking .num span b {
 	font-weight: normal;
 	color: #333;
-	opacity: 0.7;
+	opacity: 1;
 }
 
 .globalStock .sub_search .latest_results .tabsArea table.tableRanking .num .hit {
@@ -11053,6 +11087,11 @@ table.tableRanking td {
 .globalStock .sub_search .latest_results .tabsArea .onestep_guide {
 	padding: 22px 15px 20px;
 	background: #fff;
+
+	.interest_list {		
+		padding: 0;
+		margin-top: 8px;
+	}
 }
 
 .globalStock .sub_search .latest_results .tabsArea .onestep_guide .h2_title {
@@ -11101,7 +11140,8 @@ table.tableRanking td {
 .globalStock .sub_search .latest_results .tabsArea .onestep_chart {
 	background: #fff;
 	margin: 7px 0 0;
-	padding: 20px 0 20px 5px;
+	// padding: 20px 0 20px 5px;
+	padding: 0 0 20px 5px;
 	overflow: hidden;
 }
 
@@ -11390,7 +11430,7 @@ table.tableRanking td {
 	height: 460px;
 	background: url('/img/onestep_sample.jpg') no-repeat 0 0;
 	background-size: 100% auto;
-	margin-bottom: -18px;
+	// margin-bottom: -18px;
 }
 
 .globalStock .sub_search .latest_results .tabsArea .onestep_sample::after {
@@ -35530,6 +35570,7 @@ body.v_signalStreng {
 					color: #6A727B;					
 					font-size: 14px;
 					font-weight: 500;					
+					left: 0;
 					z-index: -1;
 				}
 				option {
@@ -35581,7 +35622,6 @@ body.v_signalStreng {
 		}
 	}
 }
-
 
 /* 검색 - 개요 월정기결제 33,000원 플로팅 팝업 */
 .v_signalStreng.globalStock .signalpop .bg_gray {

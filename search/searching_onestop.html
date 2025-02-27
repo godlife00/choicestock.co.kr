@@ -41,7 +41,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
     <!-- css -->
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <link rel="stylesheet" type="text/css" href="../css/scss/choicestock.css?v3" />
+    <link rel="stylesheet" type="text/css" href="../css/scss/choicestock.css?v2502272" />
     <!-- js -->
     <script src="../js/choicestock.js"></script>
 </head>
@@ -53,7 +53,7 @@
                 <div class="left">
                     <h1 class="headerLogo"><span>관심</span></h1>
                 </div>
-                <div class="cen">                    
+                <div class="cen">
                 </div>
                 <div class="right">
                     <a href="../stock/menu.html" class="h_menu">
@@ -63,7 +63,7 @@
                             <div class="bar"></div>
                         </div>
                     </a>
-                </div>                
+                </div>
             </div>
             <!-- //headerTop -->
         </div>
@@ -74,9 +74,9 @@
             <div class="gnb">
                 <ul class="list">
                     <li class="home"><a href="../index.html">홈</a></li>
-                    <li class="sch"><a href="../search/searching.html">검색</a></li>                    
+                    <li class="sch"><a href="../search/searching.html">검색</a></li>
                     <li class="stock"><a href="../stock/recom.html">추천</a></li>
-                    <li class="excavation"><a href="../stock/note.html">발굴</a></li>                                        
+                    <li class="excavation"><a href="../stock/note.html">발굴</a></li>
                     <li class="attention active"><a href="../search/searching_attention.html">관심</a></li>
                 </ul>
             </div>
@@ -91,41 +91,38 @@
                         <li><a href="searching_catch.html">종목캐치</a></li>
                     </ul>
 
-                    <div class="tab_container">                        
+                    <div class="tab_container">
                         <!-- 원스톱진단 -->
-                        <div class="">                            
+                        <div class="">
                             <div class="onestep_guide">
                                 <h2 class="h2_title">관심종목 원스톱 진단</h2>
                                 <!-- <a href="#" class="more"><span>관심종목</span><img src="../img/more_white.png" alt="더보기"></a> -->
                                 <p class="txt">관심종목(♥)으로 설정한 투자유망 종목과 투자유의 종목으로 한 눈에 볼 수 있도록 진단합니다.</p>
 
-                                <div class="class_filter">
-
-                                    <div class="selectBoxList">
-                                        <select class="step1">
-                                            <option disabled selected>전체</option>
-                                            <option>옵션1</option>
-                                            <option>옵션2</option>
-                                            <option>옵션3</option>
-                                        </select>
-                                    </div>
-                                    <div class="selectBoxList">
-                                        <select class="step2">
-                                            <option disabled selected>전체</option>
-                                            <option>옵션1</option>
-                                            <option>옵션2</option>
-                                            <option>옵션3</option>
-                                        </select>
+                                <!-- 관심종목 리스트 -->
+                                <div class="interest_list">
+                                    <div class="select_area">
+                                        <form action="" method="" class="form_wrap">
+                                            <div class="selectbox">
+                                                <label for="interestCategory" class="t_label">관심종목관심종목#1</label>
+                                                <select name="interestCategory" id="interestCategory">
+                                                    <option value="default">관심종목을 선택해주세요</option>
+                                                    <option value="category1">관심종목#1</option>
+                                                    <option value="category2">관심종목#2</option>
+                                                    <option value="category3">관심종목#3</option>
+                                                </select>
+                                            </div>
+                                        </form>
                                     </div>
                                 </div>
-                                <!-- //class_filter -->
-                
+                                <!-- //관심종목 리스트 -->
+
                                 <!-- 검색 결과가 없는 경우 -->
-                                <div class="filter_nodata">
+                                <div class="filter_nodata" style="display: none;">
                                     <p class="txt">조건에 맞는 종목을 찾을 수 없습니다.</p>
                                 </div>
                                 <!-- 검색 결과가 없는 경우 -->
-                                 
+
                             </div>
 
                             <div class="onestep_chart">
@@ -166,7 +163,8 @@
                                         </ul>
                                     </div>
                                     <!-- //caution -->
-                                    <p class="nodata_guide tr_left">* 투자 유망/유의 종목은 스마트 스코어, 밸류에이션, 재무 안전성 등을 반영한 포트폴리오 진단 알고리즘으로 평가합니다. </p>
+                                    <p class="nodata_guide tr_left">* 투자 유망/유의 종목은 스마트 스코어, 밸류에이션, 재무 안전성 등을 반영한 포트폴리오
+                                        진단 알고리즘으로 평가합니다. </p>
                                 </div>
                                 <!-- //dgtic_results -->
                             </div>
@@ -174,7 +172,8 @@
 
                             <!-- 원스톱 진단 샘플화면 -->
                             <div class="onestep_sample">
-                                <a href="#" onclick="event.preventDefault()" ;="" data-modal="modal-5" class="sample_box md-trigger">
+                                <a href="#" onclick="event.preventDefault()" ;="" data-modal="modal-5"
+                                    class="sample_box md-trigger">
                                     <strong>원스톱 진단</strong>샘플화면입니다.
                                 </a>
 
@@ -187,91 +186,161 @@
                                         </div>
                                         <div class="right">
                                             <div class="btn_area">
-                                                <a href="../payment/step01.html" class="btn payment_1000">첫 달 <b>1,000원!</b></a>
+                                                <a href="../payment/step01.html" class="btn payment_1000">첫 달
+                                                    <b>1,000원!</b></a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <!-- //비회원인 경우 노출, 무료회원은 공개임 -->      
+                                <!-- //비회원인 경우 노출, 무료회원은 공개임 -->
 
                             </div>
                             <!-- //onestep_sample -->
 
-                            <br>
+                            <!-- 관심종목 리스트 -->
+                            <div class="interest_list">                                
+                                <div class="area">
+                                    <div class="stock_info" onclick="location.href ='search_outline.html'">
+                                        <div class="title_logo">
+                                            <span class="logo"><img
+                                                    src="https://uslogo.datahero.co.kr/img/logo/us/mvl/AAPL.svg"
+                                                    alt=""></span>
+                                        </div>
+                                        <div class="detail">
+                                            <div class="title">
+                                                <a href="" class="">애플</a>
+                                            </div>
+                                            <div class="detail_num">
+                                                <div class="num">
+                                                    <span>55.<b>36</b></span>
+                                                </div>
+                                                <div class="per">
+                                                    <span class="increase">3.84<b>%</b></span>
+                                                    <span class="hit"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- 비회원 숨김 -->
+                                        <div class="data_opinion">
+                                            <span class="signal prm_lock">**</span>
+                                        </div>
 
-                            <table cellspacing="0" border="0" class="tableRanking type_2Line">
-                                <colgroup>
-                                    <col width="100px">
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                </colgroup>
-                                <tbody>
-                                    <tr>
-                                        <td class="title">
-                                            <a href="#" onclick="event.preventDefault()" data-modal="modal-5"  data-modal="modal-5" class="md-trigger">
-                                                마<span class="remark">
-                                                    <div class="txt_filter size_M"><i></i><i></i><i></i><i></i>
-                                                    </div>
-                                                </span>
-                                            </a>
-                                        </td>
-                                        <td class="num">                                            
-                                            <a href="#" onclick="event.preventDefault()" data-modal="modal-5"  data-modal="modal-5" class="md-trigger">
-                                                <span class="remark">
-                                                    <div class="txt_filter size_M" style="padding-top: 12px;"><i></i><i></i><i></i><i></i>
-                                                    </div>
-                                                </span>
-                                            </a>
-                                        </td>
-                                        <td class="score"><span>67<b>점</b></span></td>
-                                        <!-- 프리미엄 서비스 부분 -->
-                                        <td class="prm_lock">
-                                            <span><img src="../img/prm_lock.png" alt="잠김"></span>
-                                        </td>
-                                        <!-- //프리미엄 서비스 부분 -->
-                                    </tr>                                    
-                                    <tr>
-                                        <td class="title"><a href="search_outline.html">애질런트 테크놀러지스</a>
-                                        </td>
-                                        <td class="num">
-                                            <span>69.<b>00</b></span>
-                                            <span class="increase">+2.9<b>%</b></span><!-- increase 증가, decrease 감소 -->
-                                        </td>
-                                        <td class="score"><span>67<b>점</b></span></td>
-                                        <td class="num">
-                                            <span>8869.<b>00</b></span>
-                                            <span class="hit">적정주가</span>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="title"><a href="search_outline.html">애질런트 테크놀러지스</a>
-                                        </td>
-                                        <td class="num">
-                                            <span>69.<b>00</b></span>
-                                            <span class="increase">+2.9<b>%</b></span><!-- increase 증가, decrease 감소 -->
-                                        </td>
-                                        <td class="score"><span>67<b>점</b></span></td>
-                                        <td class="num">
-                                            <span>8869.<b>00</b></span>
-                                            <span class="hit">적정주가</span>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="title"><a href="search_outline.html">애질런트 테크놀러지스</a>
-                                        </td>
-                                        <td class="num">
-                                            <span>69.<b>00</b></span>
-                                            <span class="increase">+2.9<b>%</b></span><!-- increase 증가, decrease 감소 -->
-                                        </td>
-                                        <td class="score"><span>67<b>점</b></span></td>
-                                        <td class="num">
-                                            <span>8869.<b>00</b></span>
-                                            <span class="hit">적정주가</span>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                                    </div>
+                                    <!-- //stock_info -->
+                                </div>
+                                <div class="area">
+                                    <div class="stock_info" onclick="location.href ='search_outline.html'">
+                                        <div class="title_logo">
+                                            <span class="logo"><img
+                                                    src="https://uslogo.datahero.co.kr/img/logo/us/mvl/AAPL.svg"
+                                                    alt=""></span>
+                                        </div>
+                                        <div class="detail">
+                                            <div class="title">
+                                                <a href="" class="">테슬라</a>
+                                            </div>
+                                            <div class="detail_num">
+                                                <div class="num">
+                                                    <span>55.<b>36</b></span>
+                                                </div>
+                                                <div class="per">
+                                                    <span class="increase">3.84<b>%</b></span>
+                                                    <span class="hit"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="data_opinion">
+                                            <span class="signal buy">매수</span>
+                                        </div>
+
+                                    </div>
+                                    <!-- //stock_info -->
+                                </div>
+                                <div class="area">
+                                    <div class="stock_info" onclick="location.href ='search_outline.html'">
+                                        <div class="title_logo">
+                                            <span class="logo"><img
+                                                    src="https://uslogo.datahero.co.kr/img/logo/us/mvl/AAPL.svg"
+                                                    alt=""></span>
+                                        </div>
+                                        <div class="detail">
+                                            <div class="title">
+                                                <a href="" class="">마이크로소프트</a>
+                                            </div>
+                                            <div class="detail_num">
+                                                <div class="num">
+                                                    <span>55.<b>36</b></span>
+                                                </div>
+                                                <div class="per">
+                                                    <span class="same">0.00<b>%</b></span>
+                                                    <span class="hit"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="data_opinion">
+                                            <span class="signal sell">매도</span>
+                                        </div>
+
+                                    </div>
+                                    <!-- //stock_info -->
+                                </div>
+                                <div class="area">
+                                    <div class="stock_info" onclick="location.href ='search_outline.html'">
+                                        <div class="title_logo">
+                                            <span class="logo"><img
+                                                    src="https://uslogo.datahero.co.kr/img/logo/us/mvl/AAPL.svg"
+                                                    alt=""></span>
+                                        </div>
+                                        <div class="detail">
+                                            <div class="title">
+                                                <a href="" class="">마이크로소프트마이크로소프트</a>
+                                            </div>
+                                            <div class="detail_num">
+                                                <div class="num">
+                                                    <span>55.<b>36</b></span>
+                                                </div>
+                                                <div class="per">
+                                                    <span class="decrease">-3.84<b>%</b></span>
+                                                    <span class="hit"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="data_opinion">
+                                            <span class="signal hold">보유</span>
+                                        </div>
+
+                                    </div>
+                                    <!-- //stock_info -->
+                                </div>
+                                <div class="area">
+                                    <div class="stock_info" onclick="location.href ='search_outline.html'">
+                                        <div class="title_logo">
+                                            <span class="logo"><img
+                                                    src="https://uslogo.datahero.co.kr/img/logo/us/mvl/AAPL.svg"
+                                                    alt=""></span>
+                                        </div>
+                                        <div class="detail">
+                                            <div class="title">
+                                                <a href="" class="">마이크로소프트마이크로소프트</a>
+                                            </div>
+                                            <div class="detail_num">
+                                                <div class="num">
+                                                    <span>55.<b>36</b></span>
+                                                </div>
+                                                <div class="per">
+                                                    <span class="increase">3.84<b>%</b></span>
+                                                    <span class="hit"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="data_opinion">
+                                            <span class="signal waitting">관망</span>
+                                        </div>
+
+                                    </div>
+                                    <!-- //stock_info -->
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <!-- //tab_container -->
@@ -330,405 +399,405 @@
     <!-- //wrap -->
 </body>
 <!-- Modal popup -->
-    <!-- 관심종목 찾아보기(유형선택) -->
-    <div class="setting_pop catch_edt catch_edt_01">
-        <div class="bg"></div>
-        <div id="catch_cncl" class="setting_area">
-            <div class="pop_header">
-                <a href="#setting_anchor" title="로그인 레이어 닫기" class="close"><img src="../img/clse.png" alt="팝업닫기"></a>
-                <h1 class="pop_title">취향저격 종목캐치</h1>
-            </div>
-            <!-- //pop_header -->
-            <div class="pop_con">
-                <p class="guide">선호하는 종목의 유형을 선택해주세요.(복수선택가능)</p>
-                <div class="catch_from">
-                    <div class="label active">
-                        <p class="label_chk">월세처럼 안정적인 배당주를 사고 싶어요...배당주</p>
-                    </div>
-                    <div class="label">
-                        <p class="label_chk">이익이 크게 늘고 있는 기업에 관심 있어요...성장주</p>
-                    </div>
-                    <div class="label">
-                        <p class="label_chk">분야 1등 기업에 투자하고 싶어요...가치주</p>
-                    </div>
+<!-- 관심종목 찾아보기(유형선택) -->
+<div class="setting_pop catch_edt catch_edt_01">
+    <div class="bg"></div>
+    <div id="catch_cncl" class="setting_area">
+        <div class="pop_header">
+            <a href="#setting_anchor" title="로그인 레이어 닫기" class="close"><img src="../img/clse.png" alt="팝업닫기"></a>
+            <h1 class="pop_title">취향저격 종목캐치</h1>
+        </div>
+        <!-- //pop_header -->
+        <div class="pop_con">
+            <p class="guide">선호하는 종목의 유형을 선택해주세요.(복수선택가능)</p>
+            <div class="catch_from">
+                <div class="label active">
+                    <p class="label_chk">월세처럼 안정적인 배당주를 사고 싶어요...배당주</p>
                 </div>
-
-                <div class="btnArea payBtn">
-                    <a href="#" class="btn btn_cncl"><i></i>이전</a>
-                    <a href="#" class="btn btn_save terms_btn btn_payCan show_pop04">다음<i></i></a>
+                <div class="label">
+                    <p class="label_chk">이익이 크게 늘고 있는 기업에 관심 있어요...성장주</p>
                 </div>
-
+                <div class="label">
+                    <p class="label_chk">분야 1등 기업에 투자하고 싶어요...가치주</p>
+                </div>
             </div>
+
+            <div class="btnArea payBtn">
+                <a href="#" class="btn btn_cncl"><i></i>이전</a>
+                <a href="#" class="btn btn_save terms_btn btn_payCan show_pop04">다음<i></i></a>
+            </div>
+
         </div>
     </div>
-    <!-- //setting_pop pay_edt -->
+</div>
+<!-- //setting_pop pay_edt -->
 
-    <!-- 관심종목 찾아보기(규모선택) -->
-    <div class="setting_pop catch_edt catch_edt_02">
-        <div class="bg"></div>
-        <div id="catch_cncl" class="setting_area">
-            <div class="pop_header">
-                <a href="#setting_anchor" title="로그인 레이어 닫기" class="close"><img src="../img/clse.png" alt="팝업닫기"></a>
-                <h1 class="pop_title">취향저격 종목캐치</h1>
-            </div>
-            <!-- //pop_header -->
-            <div class="pop_con">
-                <p class="guide">선호하는 종목의 규모를 선택해주세요.(복수선택가능)</p>
-                <div class="catch_from">
-                    <div class="label active">
-                        <p class="label_chk">글로벌 기업 구글, 애플과 같은 대형주</p>
-                    </div>
-                    <div class="label">
-                        <p class="label_chk">제2의 넷플릭스와 같은 잠재력의 중형주</p>
-                    </div>
-                    <div class="label">
-                        <p class="label_chk">10배 성장을 꿈꾸는 우량 스몰캡 소형주</p>
-                    </div>
+<!-- 관심종목 찾아보기(규모선택) -->
+<div class="setting_pop catch_edt catch_edt_02">
+    <div class="bg"></div>
+    <div id="catch_cncl" class="setting_area">
+        <div class="pop_header">
+            <a href="#setting_anchor" title="로그인 레이어 닫기" class="close"><img src="../img/clse.png" alt="팝업닫기"></a>
+            <h1 class="pop_title">취향저격 종목캐치</h1>
+        </div>
+        <!-- //pop_header -->
+        <div class="pop_con">
+            <p class="guide">선호하는 종목의 규모를 선택해주세요.(복수선택가능)</p>
+            <div class="catch_from">
+                <div class="label active">
+                    <p class="label_chk">글로벌 기업 구글, 애플과 같은 대형주</p>
                 </div>
-
-                <div class="btnArea payBtn">
-                    <a href="#" class="btn btn_cncl show_pop03"><i></i>이전</a>
-                    <a href="#" class="btn btn_save terms_btn btn_payCan show_pop05">다음<i></i></a>
+                <div class="label">
+                    <p class="label_chk">제2의 넷플릭스와 같은 잠재력의 중형주</p>
                 </div>
-
+                <div class="label">
+                    <p class="label_chk">10배 성장을 꿈꾸는 우량 스몰캡 소형주</p>
+                </div>
             </div>
+
+            <div class="btnArea payBtn">
+                <a href="#" class="btn btn_cncl show_pop03"><i></i>이전</a>
+                <a href="#" class="btn btn_save terms_btn btn_payCan show_pop05">다음<i></i></a>
+            </div>
+
         </div>
     </div>
-    <!-- //setting_pop pay_edt -->
+</div>
+<!-- //setting_pop pay_edt -->
 
-    <!-- 관심종목 찾아보기(종목선택) -->
-    <div class="setting_pop catch_edt catch_edt_03">
-        <div class="bg"></div>
-        <div id="catch_cncl" class="setting_area">
-            <div class="pop_header">
-                <a href="#setting_anchor" title="로그인 레이어 닫기" class="close"><img src="../img/clse.png" alt="팝업닫기"></a>
-                <h1 class="pop_title">취향저격 종목캐치</h1>
-            </div>
-            <!-- //pop_header -->
-            <div class="pop_con">
-                <p class="guide">관심있는 종목을 선택해주세요(복수선택가능)</p>
-                <!-- 종목선택의 경우 class = event_sct 추가 -->
-                <div class="catch_from event_sct">
-                    <div class="label active">
-                        <p class="label_chk">
-                            <span class="catch_img AMZN"><img src="../img/catch/AMZN.png" alt="아마존"></span>
-                            <span class="name">아마존</span>
-                        </p>
-                    </div>
-                    <div class="label">
-                        <p class="label_chk">
-                            <span class="catch_img BA"><img src="../img/catch/BA.png" alt="보잉"></span>
-                            <span class="name">보잉</span>
-                        </p>
-                    </div>
-                    <div class="label">
-                        <p class="label_chk">
-                            <span class="catch_img NFLX"><img src="../img/catch/NFLX.png" alt="넷플릭스"></span>
-                            <span class="name">넷플릭스</span>
-                        </p>
-                    </div>
-                    <div class="label">
-                        <p class="label_chk">
-                            <span class="catch_img WMT"><img src="../img/catch/WMT.png" alt="월마트"></span>
-                            <span class="name">월마트</span>
-                        </p>
-                    </div>
-                    <div class="label active">
-                        <p class="label_chk">
-                            <span class="catch_img KO"><img src="../img/catch/KO.png" alt="코카콜라"></span>
-                            <span class="name">코카콜라</span>
-                        </p>
-                    </div>
-                    <div class="label active">
-                        <p class="label_chk">
-                            <span class="catch_img JNJ"><img src="../img/catch/JNJ.png" alt="존슨앤존슨"></span>
-                            <span class="name">존슨앤존슨</span>
-                        </p>
-                    </div>
-                    <div class="label">
-                        <p class="label_chk">
-                            <span class="catch_img XOM"><img src="../img/catch/XOM.png" alt="엑슨모빌"></span>
-                            <span class="name">엑슨모빌</span>
-                        </p>
-                    </div>
-                    <div class="label">
-                        <p class="label_chk">
-                            <span class="catch_img AMT"><img src="../img/catch/AMT.png" alt="아메리칸타워"></span>
-                            <span class="name">아메리칸타워</span>
-                        </p>
-                    </div>
-                    <div class="label active">
-                        <p class="label_chk">
-                            <span class="catch_img NEE"><img src="../img/catch/NEE.png" alt="넥스트에라"></span>
-                            <span class="name">넥스트에라</span>
-                        </p>
-                    </div>
-                    <div class="label">
-                        <p class="label_chk">
-                            <span class="catch_img TSLA"><img src="../img/catch/TSLA.png" alt="테슬라"></span>
-                            <span class="name">테슬라</span>
-                        </p>
-                    </div>
+<!-- 관심종목 찾아보기(종목선택) -->
+<div class="setting_pop catch_edt catch_edt_03">
+    <div class="bg"></div>
+    <div id="catch_cncl" class="setting_area">
+        <div class="pop_header">
+            <a href="#setting_anchor" title="로그인 레이어 닫기" class="close"><img src="../img/clse.png" alt="팝업닫기"></a>
+            <h1 class="pop_title">취향저격 종목캐치</h1>
+        </div>
+        <!-- //pop_header -->
+        <div class="pop_con">
+            <p class="guide">관심있는 종목을 선택해주세요(복수선택가능)</p>
+            <!-- 종목선택의 경우 class = event_sct 추가 -->
+            <div class="catch_from event_sct">
+                <div class="label active">
+                    <p class="label_chk">
+                        <span class="catch_img AMZN"><img src="../img/catch/AMZN.png" alt="아마존"></span>
+                        <span class="name">아마존</span>
+                    </p>
                 </div>
-
-                <div class="btnArea payBtn">
-                    <a href="#" class="btn btn_cncl show_pop04"><i></i>이전</a>
-                    <a href="#" class="btn btn_save terms_btn btn_payCan show_pop05_2">다음<i></i></a>
+                <div class="label">
+                    <p class="label_chk">
+                        <span class="catch_img BA"><img src="../img/catch/BA.png" alt="보잉"></span>
+                        <span class="name">보잉</span>
+                    </p>
                 </div>
-
+                <div class="label">
+                    <p class="label_chk">
+                        <span class="catch_img NFLX"><img src="../img/catch/NFLX.png" alt="넷플릭스"></span>
+                        <span class="name">넷플릭스</span>
+                    </p>
+                </div>
+                <div class="label">
+                    <p class="label_chk">
+                        <span class="catch_img WMT"><img src="../img/catch/WMT.png" alt="월마트"></span>
+                        <span class="name">월마트</span>
+                    </p>
+                </div>
+                <div class="label active">
+                    <p class="label_chk">
+                        <span class="catch_img KO"><img src="../img/catch/KO.png" alt="코카콜라"></span>
+                        <span class="name">코카콜라</span>
+                    </p>
+                </div>
+                <div class="label active">
+                    <p class="label_chk">
+                        <span class="catch_img JNJ"><img src="../img/catch/JNJ.png" alt="존슨앤존슨"></span>
+                        <span class="name">존슨앤존슨</span>
+                    </p>
+                </div>
+                <div class="label">
+                    <p class="label_chk">
+                        <span class="catch_img XOM"><img src="../img/catch/XOM.png" alt="엑슨모빌"></span>
+                        <span class="name">엑슨모빌</span>
+                    </p>
+                </div>
+                <div class="label">
+                    <p class="label_chk">
+                        <span class="catch_img AMT"><img src="../img/catch/AMT.png" alt="아메리칸타워"></span>
+                        <span class="name">아메리칸타워</span>
+                    </p>
+                </div>
+                <div class="label active">
+                    <p class="label_chk">
+                        <span class="catch_img NEE"><img src="../img/catch/NEE.png" alt="넥스트에라"></span>
+                        <span class="name">넥스트에라</span>
+                    </p>
+                </div>
+                <div class="label">
+                    <p class="label_chk">
+                        <span class="catch_img TSLA"><img src="../img/catch/TSLA.png" alt="테슬라"></span>
+                        <span class="name">테슬라</span>
+                    </p>
+                </div>
             </div>
+
+            <div class="btnArea payBtn">
+                <a href="#" class="btn btn_cncl show_pop04"><i></i>이전</a>
+                <a href="#" class="btn btn_save terms_btn btn_payCan show_pop05_2">다음<i></i></a>
+            </div>
+
         </div>
     </div>
-    <!-- //setting_pop pay_edt -->
+</div>
+<!-- //setting_pop pay_edt -->
 
-    <!-- 관심종목 찾아보기(종목선택) -->
-    <div class="setting_pop catch_edt catch_edt_03_2">
-        <div class="bg"></div>
-        <div id="catch_cncl" class="setting_area">
-            <div class="pop_header">
-                <a href="#setting_anchor" title="로그인 레이어 닫기" class="close"><img src="../img/clse.png" alt="팝업닫기"></a>
-                <h1 class="pop_title">취향저격 종목캐치</h1>
-            </div>
-            <!-- //pop_header -->
-            <div class="pop_con">
-                <p class="guide">관심있는 종목을 선택해주세요(복수선택가능)</p>
-                <!-- 종목선택의 경우 class = event_sct 추가 -->
-                <div class="catch_from event_sct">
-                    <div class="label active">
-                        <p class="label_chk">
-                            <span class="catch_img MSFT"><img src="../img/catch/MSFT.png" alt="마이크로소프트"></span>
-                            <span class="name">마이크로소프트</span>
-                        </p>
-                    </div>
-                    <div class="label">
-                        <p class="label_chk">
-                            <span class="catch_img PEP"><img src="../img/catch/PEP.png" alt="펩시코"></span>
-                            <span class="name">펩시코</span>
-                        </p>
-                    </div>
-                    <div class="label">
-                        <p class="label_chk">
-                            <span class="catch_img SBUX"><img src="../img/catch/SBUX.png" alt="스타벅스"></span>
-                            <span class="name">스타벅스</span>
-                        </p>
-                    </div>
-                    <div class="label">
-                        <p class="label_chk">
-                            <span class="catch_img T"><img src="../img/catch/T.png" alt="AT&T"></span>
-                            <span class="name">AT&T</span>
-                        </p>
-                    </div>
-                    <div class="label active">
-                        <p class="label_chk">
-                            <span class="catch_img BRK"><img src="../img/catch/BRK.png" alt="버크셔해서웨이"></span>
-                            <span class="name">버크셔해서웨이</span>
-                        </p>
-                    </div>
-                    <div class="label active">
-                        <p class="label_chk">
-                            <span class="catch_img NEM"><img src="../img/catch/NEM.png" alt="뉴몬트"></span>
-                            <span class="name">뉴몬트</span>
-                        </p>
-                    </div>
-                    <div class="label">
-                        <p class="label_chk">
-                            <span class="catch_img V"><img src="../img/catch/V.png" alt="비자"></span>
-                            <span class="name">비자</span>
-                        </p>
-                    </div>
-                    <div class="label">
-                        <p class="label_chk">
-                            <span class="catch_img MMM"><img src="../img/catch/MMM.png" alt="쓰리엠"></span>
-                            <span class="name">쓰리엠</span>
-                        </p>
-                    </div>
-                    <div class="label active">
-                        <p class="label_chk">
-                            <span class="catch_img BAC"><img src="../img/catch/BAC.png" alt="뱅크오브아메리카"></span>
-                            <span class="name">뱅크오브아메리카</span>
-                        </p>
-                    </div>
-                    <div class="label">
-                        <p class="label_chk">
-                            <span class="catch_img CVX"><img src="../img/catch/CVX.png" alt="쉐브론"></span>
-                            <span class="name">쉐브론</span>
-                        </p>
-                    </div>
+<!-- 관심종목 찾아보기(종목선택) -->
+<div class="setting_pop catch_edt catch_edt_03_2">
+    <div class="bg"></div>
+    <div id="catch_cncl" class="setting_area">
+        <div class="pop_header">
+            <a href="#setting_anchor" title="로그인 레이어 닫기" class="close"><img src="../img/clse.png" alt="팝업닫기"></a>
+            <h1 class="pop_title">취향저격 종목캐치</h1>
+        </div>
+        <!-- //pop_header -->
+        <div class="pop_con">
+            <p class="guide">관심있는 종목을 선택해주세요(복수선택가능)</p>
+            <!-- 종목선택의 경우 class = event_sct 추가 -->
+            <div class="catch_from event_sct">
+                <div class="label active">
+                    <p class="label_chk">
+                        <span class="catch_img MSFT"><img src="../img/catch/MSFT.png" alt="마이크로소프트"></span>
+                        <span class="name">마이크로소프트</span>
+                    </p>
                 </div>
-
-                <div class="btnArea payBtn">
-                    <a href="#" class="btn btn_cncl show_pop05"><i></i>이전</a>
-                    <a href="#" class="btn btn_save terms_btn btn_payCan show_pop05_3">다음<i></i></a>
+                <div class="label">
+                    <p class="label_chk">
+                        <span class="catch_img PEP"><img src="../img/catch/PEP.png" alt="펩시코"></span>
+                        <span class="name">펩시코</span>
+                    </p>
                 </div>
-
+                <div class="label">
+                    <p class="label_chk">
+                        <span class="catch_img SBUX"><img src="../img/catch/SBUX.png" alt="스타벅스"></span>
+                        <span class="name">스타벅스</span>
+                    </p>
+                </div>
+                <div class="label">
+                    <p class="label_chk">
+                        <span class="catch_img T"><img src="../img/catch/T.png" alt="AT&T"></span>
+                        <span class="name">AT&T</span>
+                    </p>
+                </div>
+                <div class="label active">
+                    <p class="label_chk">
+                        <span class="catch_img BRK"><img src="../img/catch/BRK.png" alt="버크셔해서웨이"></span>
+                        <span class="name">버크셔해서웨이</span>
+                    </p>
+                </div>
+                <div class="label active">
+                    <p class="label_chk">
+                        <span class="catch_img NEM"><img src="../img/catch/NEM.png" alt="뉴몬트"></span>
+                        <span class="name">뉴몬트</span>
+                    </p>
+                </div>
+                <div class="label">
+                    <p class="label_chk">
+                        <span class="catch_img V"><img src="../img/catch/V.png" alt="비자"></span>
+                        <span class="name">비자</span>
+                    </p>
+                </div>
+                <div class="label">
+                    <p class="label_chk">
+                        <span class="catch_img MMM"><img src="../img/catch/MMM.png" alt="쓰리엠"></span>
+                        <span class="name">쓰리엠</span>
+                    </p>
+                </div>
+                <div class="label active">
+                    <p class="label_chk">
+                        <span class="catch_img BAC"><img src="../img/catch/BAC.png" alt="뱅크오브아메리카"></span>
+                        <span class="name">뱅크오브아메리카</span>
+                    </p>
+                </div>
+                <div class="label">
+                    <p class="label_chk">
+                        <span class="catch_img CVX"><img src="../img/catch/CVX.png" alt="쉐브론"></span>
+                        <span class="name">쉐브론</span>
+                    </p>
+                </div>
             </div>
+
+            <div class="btnArea payBtn">
+                <a href="#" class="btn btn_cncl show_pop05"><i></i>이전</a>
+                <a href="#" class="btn btn_save terms_btn btn_payCan show_pop05_3">다음<i></i></a>
+            </div>
+
         </div>
     </div>
-    <!-- //setting_pop pay_edt -->
+</div>
+<!-- //setting_pop pay_edt -->
 
-    <!-- 관심종목 찾아보기(종목선택) -->
-    <div class="setting_pop catch_edt catch_edt_03_3">
-        <div class="bg"></div>
-        <div id="catch_cncl" class="setting_area">
-            <div class="pop_header">
-                <a href="#setting_anchor" title="로그인 레이어 닫기" class="close"><img src="../img/clse.png" alt="팝업닫기"></a>
-                <h1 class="pop_title">취향저격 종목캐치</h1>
-            </div>
-            <!-- //pop_header -->
-            <div class="pop_con">
-                <p class="guide">관심있는 종목을 선택해주세요(복수선택가능)</p>
-                <!-- 종목선택의 경우 class = event_sct 추가 -->
-                <div class="catch_from event_sct">
-                    <div class="label active">
-                        <p class="label_chk">
-                            <span class="catch_img AAPL"><img src="../img/catch/AAPL.png" alt="애플"></span>
-                            <span class="name">애플</span>
-                        </p>
-                    </div>
-                    <div class="label">
-                        <p class="label_chk">
-                            <span class="catch_img VZ"><img src="../img/catch/VZ.png" alt="버라이즌"></span>
-                            <span class="name">버라이즌</span>
-                        </p>
-                    </div>
-                    <div class="label">
-                        <p class="label_chk">
-                            <span class="catch_img UNH"><img src="../img/catch/UNH.png" alt="유나이티드헬스그룹"></span>
-                            <span class="name">유나이티드헬스그룹</span>
-                        </p>
-                    </div>
-                    <div class="label">
-                        <p class="label_chk">
-                            <span class="catch_img PKX"><img src="../img/catch/PKX.png" alt="포스코"></span>
-                            <span class="name">포스코</span>
-                        </p>
-                    </div>
-                    <div class="label active">
-                        <p class="label_chk">
-                            <span class="catch_img RDS"><img src="../img/catch/RDS.png" alt="로열더치셀"></span>
-                            <span class="name">로열더치셀</span>
-                        </p>
-                    </div>
-                    <div class="label active">
-                        <p class="label_chk">
-                            <span class="catch_img O"><img src="../img/catch/O.png" alt="리얼티인컴"></span>
-                            <span class="name">리얼티인컴</span>
-                        </p>
-                    </div>
-                    <div class="label">
-                        <p class="label_chk">
-                            <span class="catch_img HUM"><img src="../img/catch/HUM.png" alt="휴매나"></span>
-                            <span class="name">휴매나</span>
-                        </p>
-                    </div>
-                    <div class="label">
-                        <p class="label_chk">
-                            <span class="catch_img DUK"><img src="../img/catch/DUK.png" alt="듀크"></span>
-                            <span class="name">듀크</span>
-                        </p>
-                    </div>
-                    <div class="label active">
-                        <p class="label_chk">
-                            <span class="catch_img CSGP"><img src="../img/catch/CSGP.png" alt="코스타"></span>
-                            <span class="name">코스타</span>
-                        </p>
-                    </div>
-                    <div class="label">
-                        <p class="label_chk">
-                            <span class="catch_img BKNG"><img src="../img/catch/BKNG.png" alt="부킹홀딩스"></span>
-                            <span class="name">부킹홀딩스</span>
-                        </p>
-                    </div>
-                </div>                
-
-                <div class="btnArea payBtn">
-                    <a href="#" class="btn btn_cncl show_pop05_2"><i></i>이전</a>
-                    <a href="#" class="btn btn_save terms_btn btn_payCan loader_btn">완료<i></i></a>
+<!-- 관심종목 찾아보기(종목선택) -->
+<div class="setting_pop catch_edt catch_edt_03_3">
+    <div class="bg"></div>
+    <div id="catch_cncl" class="setting_area">
+        <div class="pop_header">
+            <a href="#setting_anchor" title="로그인 레이어 닫기" class="close"><img src="../img/clse.png" alt="팝업닫기"></a>
+            <h1 class="pop_title">취향저격 종목캐치</h1>
+        </div>
+        <!-- //pop_header -->
+        <div class="pop_con">
+            <p class="guide">관심있는 종목을 선택해주세요(복수선택가능)</p>
+            <!-- 종목선택의 경우 class = event_sct 추가 -->
+            <div class="catch_from event_sct">
+                <div class="label active">
+                    <p class="label_chk">
+                        <span class="catch_img AAPL"><img src="../img/catch/AAPL.png" alt="애플"></span>
+                        <span class="name">애플</span>
+                    </p>
                 </div>
-
+                <div class="label">
+                    <p class="label_chk">
+                        <span class="catch_img VZ"><img src="../img/catch/VZ.png" alt="버라이즌"></span>
+                        <span class="name">버라이즌</span>
+                    </p>
+                </div>
+                <div class="label">
+                    <p class="label_chk">
+                        <span class="catch_img UNH"><img src="../img/catch/UNH.png" alt="유나이티드헬스그룹"></span>
+                        <span class="name">유나이티드헬스그룹</span>
+                    </p>
+                </div>
+                <div class="label">
+                    <p class="label_chk">
+                        <span class="catch_img PKX"><img src="../img/catch/PKX.png" alt="포스코"></span>
+                        <span class="name">포스코</span>
+                    </p>
+                </div>
+                <div class="label active">
+                    <p class="label_chk">
+                        <span class="catch_img RDS"><img src="../img/catch/RDS.png" alt="로열더치셀"></span>
+                        <span class="name">로열더치셀</span>
+                    </p>
+                </div>
+                <div class="label active">
+                    <p class="label_chk">
+                        <span class="catch_img O"><img src="../img/catch/O.png" alt="리얼티인컴"></span>
+                        <span class="name">리얼티인컴</span>
+                    </p>
+                </div>
+                <div class="label">
+                    <p class="label_chk">
+                        <span class="catch_img HUM"><img src="../img/catch/HUM.png" alt="휴매나"></span>
+                        <span class="name">휴매나</span>
+                    </p>
+                </div>
+                <div class="label">
+                    <p class="label_chk">
+                        <span class="catch_img DUK"><img src="../img/catch/DUK.png" alt="듀크"></span>
+                        <span class="name">듀크</span>
+                    </p>
+                </div>
+                <div class="label active">
+                    <p class="label_chk">
+                        <span class="catch_img CSGP"><img src="../img/catch/CSGP.png" alt="코스타"></span>
+                        <span class="name">코스타</span>
+                    </p>
+                </div>
+                <div class="label">
+                    <p class="label_chk">
+                        <span class="catch_img BKNG"><img src="../img/catch/BKNG.png" alt="부킹홀딩스"></span>
+                        <span class="name">부킹홀딩스</span>
+                    </p>
+                </div>
             </div>
+
+            <div class="btnArea payBtn">
+                <a href="#" class="btn btn_cncl show_pop05_2"><i></i>이전</a>
+                <a href="#" class="btn btn_save terms_btn btn_payCan loader_btn">완료<i></i></a>
+            </div>
+
         </div>
     </div>
-    <!-- //setting_pop pay_edt -->
+</div>
+<!-- //setting_pop pay_edt -->
 
-    <script>
-        $(document).ready(function () {
-            var setWindow = $('.setting_pop');
-            var setpay_edt01 = $('.pay_edt_01');
-            var setpay_edt02 = $('.pay_edt_02');
-            var setpay_edt02_1 = $('.pay_edt_02_1');
-            var setpay_edt02_2 = $('.pay_edt_02_2');
-            var setcatch_edt01 = $('.catch_edt_01');
-            var setcatch_edt02 = $('.catch_edt_02');
-            var setcatch_edt03 = $('.catch_edt_03');
-            var setcatch_edt03_2 = $('.catch_edt_03_2');
-            var setcatch_edt03_3 = $('.catch_edt_03_3');
-            
-            $('.show_pop01').click(function () {
-                setpay_edt01.addClass('open');
-                $('html, body').css("overflow", "hidden");
-            });
-            $('.show_pop02').click(function () {
-                setpay_edt02.addClass('open');
-                $('html, body').css("overflow", "hidden");
-            });
-            $('.show_pop02_1').click(function () {
-                setpay_edt02_1.addClass('open');
-                $('html, body').css("overflow", "hidden");
-            });
-            $('.show_pop02_2').click(function () {
-                setpay_edt02_2.addClass('open');
-                $('html, body').css("overflow", "hidden");
-            });
-            $('.show_pop03').click(function () {
-                setWindow.removeClass('open');
-                setcatch_edt01.addClass('open');
-                $('html, body').css("overflow", "hidden");
-            });
-            $('.show_pop04').click(function () {
-                setWindow.removeClass('open');
-                setcatch_edt02.addClass('open');
-                $('html, body').css("overflow", "hidden");
-            });
-            $('.show_pop05').click(function () {
-                setWindow.removeClass('open');
-                setcatch_edt03.addClass('open');
-                $('html, body').css("overflow", "hidden");
-            });
-            $('.show_pop05_2').click(function () {
-                setWindow.removeClass('open');
-                setcatch_edt03_2.addClass('open');
-                $('html, body').css("overflow", "hidden");
-            });
-            $('.show_pop05_3').click(function () {
-                setWindow.removeClass('open');
-                setcatch_edt03_3.addClass('open');
-                $('html, body').css("overflow", "hidden");
-            });        
-            $('.age_pop01').click(function () {
-                setterms_01.addClass('open');
-                $('html, body').css("overflow", "hidden");
-            });
-            $('.age_pop02').click(function () {
-                setterms_02.addClass('open');
-                $('html, body').css("overflow", "hidden");
-            });
-            $('.age_pop03').click(function () {
-                setterms_03.addClass('open');
-                $('html, body').css("overflow", "hidden");
-            });
-            $('.close').click(function () {                
-                setWindow.removeClass('open');
-                $('html, body').css("overflow", "scroll");
-            });
-            // Hide Window
-            setWindow.find('>.bg').mousedown(function (event) {
-                setWindow.removeClass('open');
-                $('html, body').css("overflow", "scroll");
-                return false;
-            });
+<script>
+    $(document).ready(function () {
+        var setWindow = $('.setting_pop');
+        var setpay_edt01 = $('.pay_edt_01');
+        var setpay_edt02 = $('.pay_edt_02');
+        var setpay_edt02_1 = $('.pay_edt_02_1');
+        var setpay_edt02_2 = $('.pay_edt_02_2');
+        var setcatch_edt01 = $('.catch_edt_01');
+        var setcatch_edt02 = $('.catch_edt_02');
+        var setcatch_edt03 = $('.catch_edt_03');
+        var setcatch_edt03_2 = $('.catch_edt_03_2');
+        var setcatch_edt03_3 = $('.catch_edt_03_3');
+
+        $('.show_pop01').click(function () {
+            setpay_edt01.addClass('open');
+            $('html, body').css("overflow", "hidden");
         });
+        $('.show_pop02').click(function () {
+            setpay_edt02.addClass('open');
+            $('html, body').css("overflow", "hidden");
+        });
+        $('.show_pop02_1').click(function () {
+            setpay_edt02_1.addClass('open');
+            $('html, body').css("overflow", "hidden");
+        });
+        $('.show_pop02_2').click(function () {
+            setpay_edt02_2.addClass('open');
+            $('html, body').css("overflow", "hidden");
+        });
+        $('.show_pop03').click(function () {
+            setWindow.removeClass('open');
+            setcatch_edt01.addClass('open');
+            $('html, body').css("overflow", "hidden");
+        });
+        $('.show_pop04').click(function () {
+            setWindow.removeClass('open');
+            setcatch_edt02.addClass('open');
+            $('html, body').css("overflow", "hidden");
+        });
+        $('.show_pop05').click(function () {
+            setWindow.removeClass('open');
+            setcatch_edt03.addClass('open');
+            $('html, body').css("overflow", "hidden");
+        });
+        $('.show_pop05_2').click(function () {
+            setWindow.removeClass('open');
+            setcatch_edt03_2.addClass('open');
+            $('html, body').css("overflow", "hidden");
+        });
+        $('.show_pop05_3').click(function () {
+            setWindow.removeClass('open');
+            setcatch_edt03_3.addClass('open');
+            $('html, body').css("overflow", "hidden");
+        });
+        $('.age_pop01').click(function () {
+            setterms_01.addClass('open');
+            $('html, body').css("overflow", "hidden");
+        });
+        $('.age_pop02').click(function () {
+            setterms_02.addClass('open');
+            $('html, body').css("overflow", "hidden");
+        });
+        $('.age_pop03').click(function () {
+            setterms_03.addClass('open');
+            $('html, body').css("overflow", "hidden");
+        });
+        $('.close').click(function () {
+            setWindow.removeClass('open');
+            $('html, body').css("overflow", "scroll");
+        });
+        // Hide Window
+        setWindow.find('>.bg').mousedown(function (event) {
+            setWindow.removeClass('open');
+            $('html, body').css("overflow", "scroll");
+            return false;
+        });
+    });
 
-    </script>
+</script>
 
 </html>
