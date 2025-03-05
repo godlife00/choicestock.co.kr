@@ -2120,6 +2120,19 @@
 			text-align: center;
 		}
 	}
+	&.fav_group_manage_popup {
+		.pop_con .fav_item .label {
+			gap: 3px 2px;
+		}
+	}
+	&.fav_group_move_popup {		
+		.pop_con .fav_item label {
+			gap: 3px 2px;						
+			&:before {
+				margin-right: 6px;
+			}
+		}
+	}
 	.pop_header  {
 		display: flex;
 		flex-wrap: wrap;
@@ -2160,17 +2173,33 @@
 	.pop_con {		
 		padding: 0 16px 24px;		
 		margin-top: 0;
+		.group_edit_wrapper {
+			display: flex;			
+			gap: 8px 8px;
+			.btn_del {
+				cursor: pointer;
+				outline: none;
+				border: none;
+				background: none;
+				padding: 0;
+				margin: 0;				
+			}
+		}
 		.group_name_input {
 			display: flex;		
 			align-items: center;
 			gap: 0 6px;
+			width: 100%;
 			border-radius: 8px;
 			border: 1px solid #E0E4E9;
+			&:focus-within {
+				border-color: #404FC3;
+			}
 			color: #D3D3D3;
 			font-size: 14px;				
 			font-weight: 400;	
 			padding: 0 16px;
-			box-sizing: border-box;
+			box-sizing: border-box;			
 			.name_input {			
 				display: flex;			
 				justify-content: space-between;
@@ -2190,13 +2219,21 @@
 				}
 	
 			}
+			.input_count {				
+				font-size: 13px;				
+				font-weight: 500;				
+				b {
+					font-weight: 500;				
+					color: #404FC3;				
+				}				
+			}
 		}
 		
 		.group_select {
 			display: flex;
 			justify-content: space-between;
-			align-items: flex-end;			
-			padding-bottom: 8px;
+			align-items: flex-end;						
+			padding-bottom: 16px;
 			border-bottom: 1px solid #EDEEEF;
 		}
 		
@@ -2208,18 +2245,17 @@
 		
 		.group_add_btn, .group_reg_btn {
 			cursor: pointer;
-			display: flex;
-			height: 34px;
-			padding: 8px 12px;
+			display: flex;			
 			justify-content: center;
 			align-items: center;
-			gap: 2px;
-			border-radius: 4px;
-			border: 1px solid #D9DCDF;			
-			color: #6A727B;
-			font-size: 14px;			
-			font-weight: 500;			
+			gap: 8px 8px;	
+			padding: 0;		
+			border: none;
+			outline: none;
 			background: none;						
+			color: #404FC3;			
+			font-size: 15px;			
+			font-weight: 700;			
 		}
 		
 		.fav_list {
@@ -2282,7 +2318,7 @@
 				align-items: center;
 				gap: 3px 8px;
 				color: #333;			
-				font-size: 15px;			
+				font-size: 16px;			
 				font-weight: 500;						 
 			}
 		}

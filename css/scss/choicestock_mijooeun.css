@@ -1044,17 +1044,16 @@ ul.tabs li {
 
 .tab_area .tbas_lb li a {
   width: 100%;
-  padding: 12px 0;
+  padding: 15px 0 17px;
   box-sizing: border-box;
-  color: #333;
-  font-size: 1rem;
-  letter-spacing: -0.8px;
+  color: #6A727B;
+  font-size: 15px;
+  font-weight: 700;
 }
 
 .tab_area .tbas_lb li a.active {
   border-bottom: 3px solid #404FC3;
-  padding-bottom: 13px;
-  padding-top: 11px;
+  padding-bottom: 14px;
   color: #404fc3;
   font-weight: bold;
   position: relative;
@@ -1074,19 +1073,26 @@ ul.tabs li {
 .globalStock .tabs_live li {
   width: 100%;
   text-align: center;
-  font-size: 1rem;
-  padding: 12px 0;
-  color: #333;
+  letter-spacing: normal;
+  color: #6A727B;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 15px 0;
   border-bottom: 1px solid #c6c6c6;
 }
 
 .globalStock .tabs li.active,
 .globalStock .tabs_live li.active {
-  font-weight: normal;
-  font-weight: bold;
-  color: #404fc3;
+  color: #404FC3;
+  font-size: 15px;
+  font-weight: 700;
   border-bottom: 3px solid #404FC3;
   padding-bottom: 10px;
+}
+
+.globalStock .tabs li.active > a {
+  color: #404FC3;
+  font-weight: bold;
 }
 
 .globalStock .tab_content {
@@ -1496,10 +1502,11 @@ table.tableRanking td {
   gap: 10px 10px;
 }
 
-.globalStock .sub_search .att_wrap .att_list li, .ui-state-default {
+.globalStock .sub_search .att_wrap .att_list li,
+.ui-state-default {
   display: flex;
   align-items: center;
-  gap: 10px 10px;
+  gap: 10px 4px;
   background: #fff;
   border: none;
   width: 100%;
@@ -1518,8 +1525,9 @@ table.tableRanking td {
 
 .globalStock .sub_search .att_wrap .att_list span.title {
   color: #333;
-  font-size: 15px;
-  font-weight: 700;
+  font-size: 16px;
+  font-weight: 500;
+  padding-left: 4px;
   max-width: 180px;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -6833,10 +6841,6 @@ table.tableRanking td {
 .globalStock .sub_recom .sub_mid .tabsArea {
   background: none;
   margin-top: 10px;
-}
-
-.globalStock .sub_recom .sub_mid .tabsArea .tabs_two li {
-  font-size: 0.95rem;
 }
 
 .globalStock .sub_recom .sub_mid .tabsArea .tab_container .tab_content,
@@ -16802,7 +16806,8 @@ table.tableRanking td {
   color: rgba(255, 255, 255, 0.7);
   font-size: 14px;
   font-weight: 400;
-  line-height: 20px; /* 142.857% */
+  line-height: 20px;
+  /* 142.857% */
   text-align: left;
 }
 .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_top.view .box_tabs strong {
@@ -18732,13 +18737,15 @@ table.tableRanking td {
 }
 
 /* 발굴 - 투자레시피 (급등주) view */
-.globalStock .sub_recipe .sub_top.recipejump + .sub_mid.recipe_view .recipe_tabs, .globalStock .sub_recipe .sub_top.jump + .sub_mid.recipe_view .recipe_tabs {
+.globalStock .sub_recipe .sub_top.recipejump + .sub_mid.recipe_view .recipe_tabs,
+.globalStock .sub_recipe .sub_top.jump + .sub_mid.recipe_view .recipe_tabs {
   position: relative;
   display: block;
   padding: 15px 0 10px;
   border-bottom: solid 1px #e0e4e9;
 }
-.globalStock .sub_recipe .sub_top.recipejump + .sub_mid.recipe_view .recipe_tabs li, .globalStock .sub_recipe .sub_top.jump + .sub_mid.recipe_view .recipe_tabs li {
+.globalStock .sub_recipe .sub_top.recipejump + .sub_mid.recipe_view .recipe_tabs li,
+.globalStock .sub_recipe .sub_top.jump + .sub_mid.recipe_view .recipe_tabs li {
   position: relative;
   padding: 0 8px;
   margin: 0;
@@ -18759,13 +18766,16 @@ table.tableRanking td {
   text-align: right;
 }
 
-.globalStock .sub_recipe .sub_top.recipejump + .sub_mid.recipe_view .recipe_tabs li span, .globalStock .sub_recipe .sub_top.jump + .sub_mid.recipe_view .recipe_tabs li span {
+.globalStock .sub_recipe .sub_top.recipejump + .sub_mid.recipe_view .recipe_tabs li span,
+.globalStock .sub_recipe .sub_top.jump + .sub_mid.recipe_view .recipe_tabs li span {
   color: #939393;
 }
-.globalStock .sub_recipe .sub_top.recipejump + .sub_mid.recipe_view .recipe_tabs li.active span, .globalStock .sub_recipe .sub_top.jump + .sub_mid.recipe_view .recipe_tabs li.active span {
+.globalStock .sub_recipe .sub_top.recipejump + .sub_mid.recipe_view .recipe_tabs li.active span,
+.globalStock .sub_recipe .sub_top.jump + .sub_mid.recipe_view .recipe_tabs li.active span {
   color: #404fc3;
 }
-.globalStock .sub_recipe .sub_top.recipejump + .sub_mid.recipe_view .recipe_tabs li::before, .globalStock .sub_recipe .sub_top.jump + .sub_mid.recipe_view .recipe_tabs li::before {
+.globalStock .sub_recipe .sub_top.recipejump + .sub_mid.recipe_view .recipe_tabs li::before,
+.globalStock .sub_recipe .sub_top.jump + .sub_mid.recipe_view .recipe_tabs li::before {
   content: "";
   position: absolute;
   right: 0;
@@ -18775,31 +18785,40 @@ table.tableRanking td {
   height: 12px;
   background: #e0e4e9;
 }
-.globalStock .sub_recipe .sub_top.recipejump + .sub_mid.recipe_view .recipe_tabs li:first-child, .globalStock .sub_recipe .sub_top.jump + .sub_mid.recipe_view .recipe_tabs li:first-child {
+.globalStock .sub_recipe .sub_top.recipejump + .sub_mid.recipe_view .recipe_tabs li:first-child,
+.globalStock .sub_recipe .sub_top.jump + .sub_mid.recipe_view .recipe_tabs li:first-child {
   padding-left: 0;
 }
-.globalStock .sub_recipe .sub_top.recipejump + .sub_mid.recipe_view .recipe_tabs li:last-child, .globalStock .sub_recipe .sub_top.jump + .sub_mid.recipe_view .recipe_tabs li:last-child {
+.globalStock .sub_recipe .sub_top.recipejump + .sub_mid.recipe_view .recipe_tabs li:last-child,
+.globalStock .sub_recipe .sub_top.jump + .sub_mid.recipe_view .recipe_tabs li:last-child {
   padding-right: 0;
 }
-.globalStock .sub_recipe .sub_top.recipejump + .sub_mid.recipe_view .recipe_tabs li:last-child::before, .globalStock .sub_recipe .sub_top.jump + .sub_mid.recipe_view .recipe_tabs li:last-child::before {
+.globalStock .sub_recipe .sub_top.recipejump + .sub_mid.recipe_view .recipe_tabs li:last-child::before,
+.globalStock .sub_recipe .sub_top.jump + .sub_mid.recipe_view .recipe_tabs li:last-child::before {
   display: none;
 }
-.globalStock .sub_recipe .sub_top.recipejump + .sub_mid.recipe_view .recipejump_tabs .tab_content, .globalStock .sub_recipe .sub_top.jump + .sub_mid.recipe_view .recipejump_tabs .tab_content {
+.globalStock .sub_recipe .sub_top.recipejump + .sub_mid.recipe_view .recipejump_tabs .tab_content,
+.globalStock .sub_recipe .sub_top.jump + .sub_mid.recipe_view .recipejump_tabs .tab_content {
   padding: 0;
 }
-.globalStock .sub_recipe .sub_top.recipejump + .sub_mid.recipe_view .recipejump_tabs ul, .globalStock .sub_recipe .sub_top.jump + .sub_mid.recipe_view .recipejump_tabs ul {
+.globalStock .sub_recipe .sub_top.recipejump + .sub_mid.recipe_view .recipejump_tabs ul,
+.globalStock .sub_recipe .sub_top.jump + .sub_mid.recipe_view .recipejump_tabs ul {
   width: auto;
 }
-.globalStock .sub_recipe .sub_top.recipejump + .sub_mid.recipe_view .recipejump_tabs ul li, .globalStock .sub_recipe .sub_top.jump + .sub_mid.recipe_view .recipejump_tabs ul li {
+.globalStock .sub_recipe .sub_top.recipejump + .sub_mid.recipe_view .recipejump_tabs ul li,
+.globalStock .sub_recipe .sub_top.jump + .sub_mid.recipe_view .recipejump_tabs ul li {
   padding: 0;
 }
-.globalStock .sub_recipe .sub_top.recipejump + .sub_mid.recipe_view .recipejump_tabs ul li.title, .globalStock .sub_recipe .sub_top.jump + .sub_mid.recipe_view .recipejump_tabs ul li.title {
+.globalStock .sub_recipe .sub_top.recipejump + .sub_mid.recipe_view .recipejump_tabs ul li.title,
+.globalStock .sub_recipe .sub_top.jump + .sub_mid.recipe_view .recipejump_tabs ul li.title {
   padding-right: 12px;
 }
-.globalStock .sub_recipe .sub_top.recipejump + .sub_mid.recipe_view .update_info, .globalStock .sub_recipe .sub_top.jump + .sub_mid.recipe_view .update_info {
+.globalStock .sub_recipe .sub_top.recipejump + .sub_mid.recipe_view .update_info,
+.globalStock .sub_recipe .sub_top.jump + .sub_mid.recipe_view .update_info {
   padding-top: 10px;
 }
-.globalStock .sub_recipe .sub_top.recipejump + .sub_mid.recipe_view .atten i.trans, .globalStock .sub_recipe .sub_top.jump + .sub_mid.recipe_view .atten i.trans {
+.globalStock .sub_recipe .sub_top.recipejump + .sub_mid.recipe_view .atten i.trans,
+.globalStock .sub_recipe .sub_top.jump + .sub_mid.recipe_view .atten i.trans {
   display: inline-block;
   width: 14px;
   height: 14px;
@@ -18811,7 +18830,8 @@ table.tableRanking td {
   top: 4px;
 }
 @media (min-width: 320px) and (max-width: 358px) {
-  .globalStock .sub_recipe .sub_top.recipejump .recipe_view .recipe_tabs li span, .globalStock .sub_recipe .sub_top.jump .recipe_view .recipe_tabs li span {
+  .globalStock .sub_recipe .sub_top.recipejump .recipe_view .recipe_tabs li span,
+  .globalStock .sub_recipe .sub_top.jump .recipe_view .recipe_tabs li span {
     font-size: 12px;
   }
 }
@@ -19855,8 +19875,86 @@ table.tableRanking td {
   margin-bottom: 30px;
 }
 
-.globalStock .view_con .mid html, .globalStock .view_con .mid body, .globalStock .view_con .mid div, .globalStock .view_con .mid span, .globalStock .view_con .mid applet, .globalStock .view_con .mid object, .globalStock .view_con .mid iframe, .globalStock .view_con .mid p, .globalStock .view_con .mid blockquote, .globalStock .view_con .mid pre, .globalStock .view_con .mid a, .globalStock .view_con .mid abbr, .globalStock .view_con .mid acronym, .globalStock .view_con .mid address, .globalStock .view_con .mid big, .globalStock .view_con .mid cite, .globalStock .view_con .mid code, .globalStock .view_con .mid del, .globalStock .view_con .mid dfn, .globalStock .view_con .mid em, .globalStock .view_con .mid img, .globalStock .view_con .mid ins, .globalStock .view_con .mid kbd, .globalStock .view_con .mid q, .globalStock .view_con .mid s, .globalStock .view_con .mid samp, .globalStock .view_con .mid small, .globalStock .view_con .mid strike, .globalStock .view_con .mid sub, .globalStock .view_con .mid sup, .globalStock .view_con .mid tt, .globalStock .view_con .mid var, .globalStock .view_con .mid b, .globalStock .view_con .mid u, .globalStock .view_con .mid i, .globalStock .view_con .mid center, .globalStock .view_con .mid dl, .globalStock .view_con .mid dt, .globalStock .view_con .mid dd, .globalStock .view_con .mid ol, .globalStock .view_con .mid ul, .globalStock .view_con .mid li, .globalStock .view_con .mid fieldset, .globalStock .view_con .mid form, .globalStock .view_con .mid label, .globalStock .view_con .mid legend, .globalStock .view_con .mid table, .globalStock .view_con .mid caption, .globalStock .view_con .mid tbody, .globalStock .view_con .mid tfoot, .globalStock .view_con .mid thead, .globalStock .view_con .mid tr, .globalStock .view_con .mid th, .globalStock .view_con .mid td, .globalStock .view_con .mid article, .globalStock .view_con .mid aside, .globalStock .view_con .mid canvas, .globalStock .view_con .mid details, .globalStock .view_con .mid embed, .globalStock .view_con .mid figure, .globalStock .view_con .mid figcaption, .globalStock .view_con .mid footer, .globalStock .view_con .mid header, .globalStock .view_con .mid hgroup, .globalStock .view_con .mid menu, .globalStock .view_con .mid nav, .globalStock .view_con .mid output, .globalStock .view_con .mid ruby, .globalStock .view_con .mid section, .globalStock .view_con .mid summary, .globalStock .view_con .mid time, .globalStock .view_con .mid mark, .globalStock .view_con .mid audio, .globalStock .view_con .mid video,
-.globalStock .view_con .mid .ui-body-a, .globalStock .view_con .mid .ui-page-theme-a .ui-body-inherit, .globalStock .view_con .mid html .ui-bar-a .ui-body-inherit, .globalStock .view_con .mid html .ui-body-a .ui-body-inherit, .globalStock .view_con .mid html body .ui-group-theme-a .ui-body-inherit, .globalStock .view_con .mid html .ui-panel-page-container-a {
+.globalStock .view_con .mid html,
+.globalStock .view_con .mid body,
+.globalStock .view_con .mid div,
+.globalStock .view_con .mid span,
+.globalStock .view_con .mid applet,
+.globalStock .view_con .mid object,
+.globalStock .view_con .mid iframe,
+.globalStock .view_con .mid p,
+.globalStock .view_con .mid blockquote,
+.globalStock .view_con .mid pre,
+.globalStock .view_con .mid a,
+.globalStock .view_con .mid abbr,
+.globalStock .view_con .mid acronym,
+.globalStock .view_con .mid address,
+.globalStock .view_con .mid big,
+.globalStock .view_con .mid cite,
+.globalStock .view_con .mid code,
+.globalStock .view_con .mid del,
+.globalStock .view_con .mid dfn,
+.globalStock .view_con .mid em,
+.globalStock .view_con .mid img,
+.globalStock .view_con .mid ins,
+.globalStock .view_con .mid kbd,
+.globalStock .view_con .mid q,
+.globalStock .view_con .mid s,
+.globalStock .view_con .mid samp,
+.globalStock .view_con .mid small,
+.globalStock .view_con .mid strike,
+.globalStock .view_con .mid sub,
+.globalStock .view_con .mid sup,
+.globalStock .view_con .mid tt,
+.globalStock .view_con .mid var,
+.globalStock .view_con .mid b,
+.globalStock .view_con .mid u,
+.globalStock .view_con .mid i,
+.globalStock .view_con .mid center,
+.globalStock .view_con .mid dl,
+.globalStock .view_con .mid dt,
+.globalStock .view_con .mid dd,
+.globalStock .view_con .mid ol,
+.globalStock .view_con .mid ul,
+.globalStock .view_con .mid li,
+.globalStock .view_con .mid fieldset,
+.globalStock .view_con .mid form,
+.globalStock .view_con .mid label,
+.globalStock .view_con .mid legend,
+.globalStock .view_con .mid table,
+.globalStock .view_con .mid caption,
+.globalStock .view_con .mid tbody,
+.globalStock .view_con .mid tfoot,
+.globalStock .view_con .mid thead,
+.globalStock .view_con .mid tr,
+.globalStock .view_con .mid th,
+.globalStock .view_con .mid td,
+.globalStock .view_con .mid article,
+.globalStock .view_con .mid aside,
+.globalStock .view_con .mid canvas,
+.globalStock .view_con .mid details,
+.globalStock .view_con .mid embed,
+.globalStock .view_con .mid figure,
+.globalStock .view_con .mid figcaption,
+.globalStock .view_con .mid footer,
+.globalStock .view_con .mid header,
+.globalStock .view_con .mid hgroup,
+.globalStock .view_con .mid menu,
+.globalStock .view_con .mid nav,
+.globalStock .view_con .mid output,
+.globalStock .view_con .mid ruby,
+.globalStock .view_con .mid section,
+.globalStock .view_con .mid summary,
+.globalStock .view_con .mid time,
+.globalStock .view_con .mid mark,
+.globalStock .view_con .mid audio,
+.globalStock .view_con .mid video,
+.globalStock .view_con .mid .ui-body-a,
+.globalStock .view_con .mid .ui-page-theme-a .ui-body-inherit,
+.globalStock .view_con .mid html .ui-bar-a .ui-body-inherit,
+.globalStock .view_con .mid html .ui-body-a .ui-body-inherit,
+.globalStock .view_con .mid html body .ui-group-theme-a .ui-body-inherit,
+.globalStock .view_con .mid html .ui-panel-page-container-a {
   color: #333;
   font-size: 1rem;
   line-height: 26px;
@@ -26549,7 +26647,6 @@ table.tableRanking td {
 .globalStock .sub_search .latest_results .tabsArea .tabs li > a {
   display: inline-block;
   width: 100%;
-  padding: 12px 0 10px;
   box-sizing: border-box;
   border-bottom: none;
 }
@@ -30650,7 +30747,8 @@ table.tableRanking td {
   font-weight: 400;
   color: #939393;
 }
-.v_signalStreng.globalStock .sub_payment .serviceStep .pay_guideTxt b, .v_signalStreng.globalStock .sub_payment .serviceStep .pay_guideTxt u {
+.v_signalStreng.globalStock .sub_payment .serviceStep .pay_guideTxt b,
+.v_signalStreng.globalStock .sub_payment .serviceStep .pay_guideTxt u {
   color: #6A727B;
   font-size: 0.75rem;
   line-height: 1.42;
@@ -31348,7 +31446,8 @@ table.tableRanking td {
   padding-top: 10px;
   color: #939393;
 }
-.v_signalStreng.globalStock .sub_payment .payment_note .agree_chk .txt .agree_txt.agree_caution b, .v_signalStreng.globalStock .sub_payment .payment_note .agree_chk .txt .agree_txt.agree_caution u {
+.v_signalStreng.globalStock .sub_payment .payment_note .agree_chk .txt .agree_txt.agree_caution b,
+.v_signalStreng.globalStock .sub_payment .payment_note .agree_chk .txt .agree_txt.agree_caution u {
   font-weight: 600;
   color: #939393;
 }
@@ -31405,7 +31504,8 @@ table.tableRanking td {
 }
 
 .v_signalStreng.globalStock #wrap .modal.cardBox.card_overseas_01 {
-  position: fixed; /* absolute로 설정하여 전체 페이지를 덮도록 설정 */
+  position: fixed;
+  /* absolute로 설정하여 전체 페이지를 덮도록 설정 */
   top: 25px;
   left: 50%;
   transform: translate(-50%, 0%);
@@ -31969,7 +32069,8 @@ body.v_signalStreng {
 .v_signalStreng.globalStock #wrap #container .recom_company .detail.market_status .num {
   font-size: 13px !important;
 }
-.v_signalStreng.globalStock #wrap #container .recom_company .detail.market_status .num span, .v_signalStreng.globalStock #wrap #container .recom_company .detail.market_status .num span b {
+.v_signalStreng.globalStock #wrap #container .recom_company .detail.market_status .num span,
+.v_signalStreng.globalStock #wrap #container .recom_company .detail.market_status .num span b {
   color: #333;
   font-size: 13px !important;
   font-weight: 400 !important;
@@ -31977,7 +32078,8 @@ body.v_signalStreng {
 .v_signalStreng.globalStock #wrap #container .recom_company .detail.market_status .per {
   top: 0;
 }
-.v_signalStreng.globalStock #wrap #container .recom_company .detail.market_status .per span, .v_signalStreng.globalStock #wrap #container .recom_company .detail.market_status .per span b {
+.v_signalStreng.globalStock #wrap #container .recom_company .detail.market_status .per span,
+.v_signalStreng.globalStock #wrap #container .recom_company .detail.market_status .per span b {
   font-size: 13px !important;
   font-weight: 400 !important;
   letter-spacing: -0.26px !important;
@@ -34705,7 +34807,8 @@ body.v_signalStreng {
   gap: 8px 8px;
   margin-left: auto;
 }
-.sub_mid.latest_results .interest_list .select_area .sort_manage a, .sub_mid.latest_results .interest_list .select_area .sort_manage button {
+.sub_mid.latest_results .interest_list .select_area .sort_manage a,
+.sub_mid.latest_results .interest_list .select_area .sort_manage button {
   cursor: pointer;
   color: #6A727B;
   font-size: 14px;
@@ -37402,6 +37505,15 @@ body.v_signalStreng {
 .modal.att_pop.fav_group_com_popup .pop_con .alt_txt {
   text-align: center;
 }
+.modal.att_pop.fav_group_manage_popup .pop_con .fav_item .label {
+  gap: 3px 2px;
+}
+.modal.att_pop.fav_group_move_popup .pop_con .fav_item label {
+  gap: 3px 2px;
+}
+.modal.att_pop.fav_group_move_popup .pop_con .fav_item label:before {
+  margin-right: 6px;
+}
 .modal.att_pop .pop_header {
   display: flex;
   flex-wrap: wrap;
@@ -37438,10 +37550,23 @@ body.v_signalStreng {
   padding: 0 16px 24px;
   margin-top: 0;
 }
+.modal.att_pop .pop_con .group_edit_wrapper {
+  display: flex;
+  gap: 8px 8px;
+}
+.modal.att_pop .pop_con .group_edit_wrapper .btn_del {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+}
 .modal.att_pop .pop_con .group_name_input {
   display: flex;
   align-items: center;
   gap: 0 6px;
+  width: 100%;
   border-radius: 8px;
   border: 1px solid #E0E4E9;
   color: #D3D3D3;
@@ -37449,6 +37574,9 @@ body.v_signalStreng {
   font-weight: 400;
   padding: 0 16px;
   box-sizing: border-box;
+}
+.modal.att_pop .pop_con .group_name_input:focus-within {
+  border-color: #404FC3;
 }
 .modal.att_pop .pop_con .group_name_input .name_input {
   display: flex;
@@ -37472,11 +37600,19 @@ body.v_signalStreng {
   font-size: 14px;
   font-weight: 400;
 }
+.modal.att_pop .pop_con .group_name_input .input_count {
+  font-size: 13px;
+  font-weight: 500;
+}
+.modal.att_pop .pop_con .group_name_input .input_count b {
+  font-weight: 500;
+  color: #404FC3;
+}
 .modal.att_pop .pop_con .group_select {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  padding-bottom: 8px;
+  padding-bottom: 16px;
   border-bottom: 1px solid #EDEEEF;
 }
 .modal.att_pop .pop_con .group_label {
@@ -37487,17 +37623,16 @@ body.v_signalStreng {
 .modal.att_pop .pop_con .group_add_btn, .modal.att_pop .pop_con .group_reg_btn {
   cursor: pointer;
   display: flex;
-  height: 34px;
-  padding: 8px 12px;
   justify-content: center;
   align-items: center;
-  gap: 2px;
-  border-radius: 4px;
-  border: 1px solid #D9DCDF;
-  color: #6A727B;
-  font-size: 14px;
-  font-weight: 500;
+  gap: 8px 8px;
+  padding: 0;
+  border: none;
+  outline: none;
   background: none;
+  color: #404FC3;
+  font-size: 15px;
+  font-weight: 700;
 }
 .modal.att_pop .pop_con .fav_list {
   max-height: 40vh;
@@ -37555,7 +37690,7 @@ body.v_signalStreng {
   align-items: center;
   gap: 3px 8px;
   color: #333;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 500;
 }
 .modal.att_pop .pop_con input[type=checkbox].fav_checkbox {
