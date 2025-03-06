@@ -35,7 +35,7 @@
     <script src="http://godlife.ivyro.net/highcharts/stock/modules/exporting.js"></script>
     <script src="http://godlife.ivyro.net/highcharts/stock/modules/export-data.js"></script>
     <script src="http://godlife.ivyro.net/highcharts/stock/modules/accessibility.js"></script>
-    <script src="../js/chartjs.js"></script>
+    <!-- <script src="../js/chartjs.js"></script> -->
     <!-- html2canvas js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.3.2/html2canvas.min.js"></script>
     <!-- Swiper -->
@@ -165,7 +165,7 @@
             </div>
             <!-- //gnb -->
 
-            <!-- 검색 종목 -->
+            <!-- 검색 종목 -->            
             <div class="recom_company">
                 <ul class="list">
                     <li class="ticker">AAPL</li>
@@ -174,9 +174,25 @@
 
                     <!-- 정규장 -->
                     <li class="detail">
-                        <div class="num">
-                            <span><b>898.</b>00</span>
+                        <script src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/2.0.8/countUp.umd.js"></script>
+                        <div class="num">                            
+                            <span id="counter"><b>898.</b>00</span>
                         </div>
+                        <script>
+                            const counter = new countUp.CountUp('counter', 52147, {
+                                duration: 0.5, // 부드러운 애니메이션 시간
+                                separator: ',', 
+                                decimalPlaces: 0, // 소수점 2자리 유지
+                                prefix: "", // 필요 시 앞에 추가할 문자열
+                                suffix: "", // 필요 시 뒤에 추가할 문자열
+                            });
+                            
+                            if (!counter.error) {
+                                counter.start();
+                            } else {
+                                console.error(counter.error);
+                            }
+                        </script>
                         <div class="per">
                             <span class="increase"><b>+89.</b>89</span>
                             <span class="increase">(<b>+89.</b>89%)</span>
@@ -377,14 +393,12 @@
 
                 </div>
 
-                <!-- 검색 개요 중간 신년 이벤트 배너 -->
-                <div class="event2025_banner"
-                    onclick="location.href ='https://capdev.choicestock.co.kr/main/happy_newyear'"
-                    style="cursor: pointer;">
+                <!-- 검색 개요 중간 신규 앱 출시 이벤트 배너 배너 -->
+                <div class="event2025_banner app_and" onclick="location.href =''" style="cursor: pointer;">              
                     <a href="" class="link_banner">
-                        <span>미국주식 더이상 미루지 마세요!</span><br>
-                        2025년 상반기 오른다! 종목 <b>TOP10</b>
-                    </a>
+                        <span>실시간 투자정보 알람을 받아보세요~!</span>
+                        초이스스탁US <b>안드로이드앱 다운로드</b>
+                    </a>                        
                 </div>
                 <!-- //검색 개요 중간 신년 이벤트 배너 -->
 
