@@ -32001,84 +32001,123 @@ body.v_signalStreng {
   background-color: #f4f4f5;
   z-index: 1;
 }
-.v_signalStreng.globalStock #wrap #container .recom_company .ticker {
-  display: inline-block;
-  font-size: 0.75rem;
-  line-height: 1.75;
-  font-weight: 500;
-  color: #939393;
+.v_signalStreng.globalStock #wrap #container .recom_company .company_info {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  gap: 6px 4px;
 }
-.v_signalStreng.globalStock #wrap #container .recom_company .stock_index {
-  display: inline-block;
+.v_signalStreng.globalStock #wrap #container .recom_company .company_info .company_name {
+  min-width: 0; /* 줄바꿈을 위해 필요 */
 }
-.v_signalStreng.globalStock #wrap #container .recom_company .stock_index span {
-  display: inline-block;
-  padding: 0 3px;
-  font-size: 0.75rem;
-  font-weight: 500;
-  color: #d3d3d3;
+.v_signalStreng.globalStock #wrap #container .recom_company .company_info .company_details {
+  flex: 1 1 auto;
+  min-width: 0; /* 줄바꿈을 위해 필요 */
 }
-.v_signalStreng.globalStock #wrap #container .recom_company .company_nm {
-  margin-top: 2px;
-  max-width: 90%;
+.v_signalStreng.globalStock #wrap #container .recom_company .list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 4px;
 }
 .v_signalStreng.globalStock #wrap #container .recom_company .company_nm,
 .v_signalStreng.globalStock #wrap #container .recom_company .company_nm a {
-  display: block;
-  font-size: 22px;
+  display: inline-block; /* Flexbox 사용 */
+  align-items: center; /* 세로 중앙 정렬 */
+  color: #333;
+  font-size: 1rem;
   font-weight: 700;
-  line-height: 1.23;
-  color: #181f29;
+  letter-spacing: -0.32px;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.v_signalStreng.globalStock #wrap #container .recom_company .ticker {
+  display: inline-flex; /* Flexbox 사용 */
+  align-items: center; /* 세로 중앙 정렬 */
+  color: #6A727B;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: -0.3px;
+}
+.v_signalStreng.globalStock #wrap #container .recom_company .stock_index {
+  display: flex;
+  align-items: center;
+  gap: 4px 4px;
+}
+.v_signalStreng.globalStock #wrap #container .recom_company .stock_index span {
+  color: #8C98A7;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: -0.22px;
+  border-radius: 6px;
+  display: flex;
+  padding: 6px 6px;
+  align-items: center;
+  gap: 10px;
+  background: #F1F4F6;
 }
 .v_signalStreng.globalStock #wrap #container .recom_company .detail {
   display: flex;
+  flex-wrap: wrap;
   gap: 4px 4px;
+  width: 100%;
   align-items: center;
-  margin-top: 7.5px;
+  margin-top: 4px;
 }
-.v_signalStreng.globalStock #wrap #container .recom_company .detail.market_status .after_market {
-  display: flex;
-  padding: 4px 6px;
-  align-items: center;
-  gap: 10px;
-  border-radius: 6px;
-  background: #EFF0FE;
-  color: #7983D5;
-  font-size: 10px;
-  font-weight: 400;
+.v_signalStreng.globalStock #wrap #container .recom_company .detail.market_status {
+  flex-wrap: nowrap;
+  margin-top: 0;
 }
-.v_signalStreng.globalStock #wrap #container .recom_company .detail.market_status .pre_market {
-  display: flex;
-  padding: 4px 6px;
-  align-items: center;
-  gap: 10px;
-  border-radius: 6px;
-  background: #FFF5E6;
-  color: #FFAA64;
-  font-size: 10px;
+.v_signalStreng.globalStock #wrap #container .recom_company .detail.market_status .after_market, .v_signalStreng.globalStock #wrap #container .recom_company .detail.market_status .pre_market {
+  color: #333;
+  font-size: 14px;
   font-weight: 400;
+  line-height: 21px; /* 150% */
+  letter-spacing: -0.28px;
 }
 .v_signalStreng.globalStock #wrap #container .recom_company .detail.market_status .num {
+  width: auto;
   font-size: 13px !important;
+  line-height: normal;
 }
 .v_signalStreng.globalStock #wrap #container .recom_company .detail.market_status .num span, .v_signalStreng.globalStock #wrap #container .recom_company .detail.market_status .num span b {
   color: #333;
-  font-size: 13px !important;
-  font-weight: 400 !important;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 21px; /* 140% */
+  letter-spacing: -0.3px;
 }
 .v_signalStreng.globalStock #wrap #container .recom_company .detail.market_status .per {
   top: 0;
 }
 .v_signalStreng.globalStock #wrap #container .recom_company .detail.market_status .per span, .v_signalStreng.globalStock #wrap #container .recom_company .detail.market_status .per span b {
-  font-size: 13px !important;
-  font-weight: 400 !important;
-  letter-spacing: -0.26px !important;
+  color: #E1305A;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 21px; /* 140% */
+  letter-spacing: -0.3px;
+}
+.v_signalStreng.globalStock #wrap #container .recom_company .detail.market_status .per span.decrease, .v_signalStreng.globalStock #wrap #container .recom_company .detail.market_status .per span.decrease b, .v_signalStreng.globalStock #wrap #container .recom_company .detail.market_status .per span b.decrease, .v_signalStreng.globalStock #wrap #container .recom_company .detail.market_status .per span b.decrease b {
+  color: #303FAF;
+}
+.v_signalStreng.globalStock #wrap #container .recom_company .detail.market_status .per span.same, .v_signalStreng.globalStock #wrap #container .recom_company .detail.market_status .per span.same b, .v_signalStreng.globalStock #wrap #container .recom_company .detail.market_status .per span b.same, .v_signalStreng.globalStock #wrap #container .recom_company .detail.market_status .per span b.same b {
+  color: #333;
 }
 .v_signalStreng.globalStock #wrap #container .recom_company .detail.market_status .per .day {
-  font-size: 12px !important;
+  color: #8C98A7;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.24px;
 }
 .v_signalStreng.globalStock #wrap #container .recom_company .detail .num {
-  font-size: 34px;
+  width: 100%;
+  color: #333;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
 }
 .v_signalStreng.globalStock #wrap #container .recom_company .detail .num span {
   font-size: 30px;
@@ -32100,15 +32139,17 @@ body.v_signalStreng {
 .v_signalStreng.globalStock #wrap #container .recom_company .detail .per .increase,
 .v_signalStreng.globalStock #wrap #container .recom_company .detail .per .decrease,
 .v_signalStreng.globalStock #wrap #container .recom_company .detail .per .same {
-  font-size: 0.9375rem;
   color: #E1305A;
-  font-weight: 500;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: -0.32px;
+  line-height: normal;
 }
 .v_signalStreng.globalStock #wrap #container .recom_company .detail .per .increase b,
 .v_signalStreng.globalStock #wrap #container .recom_company .detail .per .decrease b,
 .v_signalStreng.globalStock #wrap #container .recom_company .detail .per .same b {
   color: #E1305A;
-  font-weight: 500;
+  font-weight: 400;
 }
 .v_signalStreng.globalStock #wrap #container .recom_company .detail .per .decrease {
   color: #303FAF;
@@ -32125,10 +32166,10 @@ body.v_signalStreng {
 .v_signalStreng.globalStock #wrap #container .recom_company .detail .per .day {
   margin-left: auto;
   text-align: right;
-  font-size: 0.75rem;
+  color: #8C98A7;
+  font-size: 12px;
   font-weight: 500;
-  line-height: 1.42;
-  color: #939393;
+  line-height: normal;
 }
 .v_signalStreng.globalStock #wrap #container .recom_company .attention_box {
   display: flex;
@@ -32139,8 +32180,8 @@ body.v_signalStreng {
   width: 100%;
   position: relative;
   background: #fff;
-  margin: 20px auto 0;
-  padding-top: 8px;
+  margin: 32px auto 0;
+  padding: 14px 0 8px;
   border-top: 1px solid #f4f4f5;
 }
 .v_signalStreng.globalStock #wrap #container .recom_company .attention_box ul {
