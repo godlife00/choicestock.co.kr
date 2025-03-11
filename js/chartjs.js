@@ -7601,7 +7601,7 @@ $(document).ready(function () {
                                         label.addClass('active-label');
                                     } else if (value > 25 && value <= 44 && pos === 34) {
                                         label.addClass('active-label');
-                                    } else if (value > 44 && value <= 56 && pos === 49) {
+                                    } else if (value > 44 && value <= 56 && pos === 50.5) {
                                         label.addClass('active-label');
                                     } else if (value > 56 && value <= 75 && pos === 65) {
                                         label.addClass('active-label');
