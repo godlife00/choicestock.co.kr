@@ -7567,28 +7567,28 @@ $(document).ready(function () {
                             chart.yAxis[0].update({
                                 plotBands: [{
                                     from: 0,
-                                    to: 24,
-                                    color: value <= 24 ? '#D43F5D' : '#EEF2F5',
+                                    to: 25,
+                                    color: value <= 25 ? '#D43F5D' : '#EEF2F5',
                                     thickness: '40%',
                                 }, {
-                                    from: 25,
-                                    to: 43,
-                                    color: value > 24 && value <= 43 ? '#E9835B' : '#EEF2F5',
+                                    from: 26,
+                                    to: 44,
+                                    color: value > 25 && value <= 44 ? '#E9835B' : '#EEF2F5',
                                     thickness: '40%',
                                 }, {
-                                    from: 44,
-                                    to: 55,
-                                    color: value > 43 && value <= 55 ? '#F4A931' : '#EEF2F5',
+                                    from: 45,
+                                    to: 56,
+                                    color: value > 44 && value <= 56 ? '#F4A931' : '#EEF2F5',
                                     thickness: '40%',
                                 }, {
-                                    from: 56,
-                                    to: 74,
-                                    color: value > 55 && value <= 74 ? '#F8D54E' : '#EEF2F5',
+                                    from: 57,
+                                    to: 75,
+                                    color: value > 56 && value <= 75 ? '#F8D54E' : '#EEF2F5',
                                     thickness: '40%',
                                 }, {
-                                    from: 75,
+                                    from: 76,
                                     to: 100,
-                                    color: value > 74 ? '#5AA86B' : '#EEF2F5',
+                                    color: value > 75 ? '#5AA86B' : '#EEF2F5',
                                     thickness: '40%',
                                 }]
                             });
@@ -7597,15 +7597,15 @@ $(document).ready(function () {
                             chart.yAxis[0].tickPositions.forEach(function (pos) {
                                 var label = chart.yAxis[0].ticks[pos] && chart.yAxis[0].ticks[pos].label;
                                 if (label) {
-                                    if (value <= 24 && pos === 12) {
+                                    if (value <= 25 && pos === 12) {
                                         label.addClass('active-label');
-                                    } else if (value > 24 && value <= 43 && pos === 34) {
+                                    } else if (value > 25 && value <= 44 && pos === 34) {
                                         label.addClass('active-label');
-                                    } else if (value > 43 && value <= 55 && pos === 49) {
+                                    } else if (value > 44 && value <= 56 && pos === 49) {
                                         label.addClass('active-label');
-                                    } else if (value > 55 && value <= 74 && pos === 65) {
+                                    } else if (value > 56 && value <= 75 && pos === 65) {
                                         label.addClass('active-label');
-                                    } else if (value > 74 && pos === 87) {
+                                    } else if (value > 75 && pos === 87) {
                                         label.addClass('active-label');
                                     } else {
                                         label.removeClass('active-label');
@@ -7646,13 +7646,13 @@ $(document).ready(function () {
                     gridLineWidth: 0,
                     min: 0,
                     max: 100,
-                    tickPositions: [12, 34, 49, 65, 87],
+                    tickPositions: [12, 34, 50.5, 65, 87],
                     tickLength: 0,
                     minorTickLength: 0,
                     labels: {
                         formatter: function () {
                             var labels = ['공포', '불안', '보통', '과욕', '탐욕'];
-                            var positions = [12, 34, 49, 65, 87];
+                            var positions = [12, 34, 50.5, 65, 87];
                             return labels[positions.indexOf(this.value)];
                         },                    
                         style: {
@@ -7690,7 +7690,10 @@ $(document).ready(function () {
                         }
                     }
                 },            
-                series: data,
+                series: [{                    
+                    data: [44],                
+                    // color: Highcharts.getOptions().colors[0]
+                }]
             });            
         }
         // requestAnimationFrame을 사용하여 비동기적으로 차트 렌더링
@@ -7709,7 +7712,7 @@ $(document).ready(function () {
     }];
     const CustomScoreData1_3 = [{
         name: '보통 (44점 초과) :',
-        data: [49]                
+        data: [44]                
     }];    
     const CustomScoreData1_4 = [{
         name: '불안 (25점 초과) :',
