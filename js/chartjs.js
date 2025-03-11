@@ -7691,7 +7691,7 @@ $(document).ready(function () {
                     }
                 },            
                 series: [{                    
-                    data: [44],                
+                    data: [45],                
                     // color: Highcharts.getOptions().colors[0]
                 }]
             });            
