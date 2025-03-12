@@ -33273,7 +33273,10 @@ body.v_signalStreng {
 
 		.company_name {
 			// flex: 1 1 auto;
+			display: inline-flex;
+			align-content: center;
 			min-width: 0;
+			height: 23px;
 			/* 줄바꿈을 위해 필요 */
 		}
 
@@ -33315,6 +33318,7 @@ body.v_signalStreng {
 		font-size: 15px;
 		font-weight: 400;
 		letter-spacing: -0.3px;
+		line-height: normal !important;
 	}
 
 	.stock_index {
@@ -33325,7 +33329,7 @@ body.v_signalStreng {
 		span {
 			color: #8C98A7;
 			font-size: 11px;
-			font-weight: 700;
+			font-weight: 500;
 			letter-spacing: -0.22px;
 			border-radius: 6px;
 			display: flex;
@@ -33341,7 +33345,7 @@ body.v_signalStreng {
 	.detail {
 		display: flex;
 		flex-wrap: wrap;
-		gap: 4px 4px;
+		gap: 0 4px;
 		width: 100%;
 		align-items: center;
 		margin-top: 4px;
@@ -33354,7 +33358,7 @@ body.v_signalStreng {
 			.after_market,
 			.pre_market {
 				color: #333;
-				font-size: 14px;
+				font-size: 15px;
 				font-weight: 400;
 				line-height: 21px;
 				/* 150% */
@@ -33370,7 +33374,7 @@ body.v_signalStreng {
 				span b {
 					color: #333;
 					font-size: 15px;
-					font-weight: 400;
+					font-weight: 500;
 					line-height: 21px;
 					/* 140% */
 					letter-spacing: -0.3px;
@@ -33384,7 +33388,7 @@ body.v_signalStreng {
 				span b {
 					color: #E1305A;
 					font-size: 15px;
-					font-weight: 400;
+					font-weight: 500;
 					line-height: 21px;
 					/* 140% */
 					letter-spacing: -0.3px;
@@ -33446,13 +33450,13 @@ body.v_signalStreng {
 	.detail .per .same {
 		color: #E1305A;
 		font-size: 16px;
-		font-weight: 400;
+		font-weight: 500;
 		letter-spacing: -0.32px;
 		line-height: normal;
 
 		& b {
 			color: #E1305A;
-			font-weight: 400;
+			font-weight: 500;
 		}
 	}
 
