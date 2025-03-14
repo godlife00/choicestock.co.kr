@@ -37691,9 +37691,6 @@ body.v_signalStreng {
   font-size: 16px;
   font-weight: 500;
 }
-.modal.att_pop .pop_con input[type=checkbox].fav_checkbox {
-  display: none;
-}
 .modal.att_pop .pop_con input[type=checkbox].fav_checkbox + label:before {
   content: "";
   display: block;

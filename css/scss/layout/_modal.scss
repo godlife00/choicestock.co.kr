@@ -2324,7 +2324,7 @@
 		}
 		
 		input[type=checkbox].fav_checkbox {
-			display: none;				
+			// display: none;				
 			& + label:before {
 				content: "";
 				display: block;

@@ -2011,7 +2011,6 @@ $(document).ready(function () {
     applyScrollEffect(); // 서비스소개 페이드인 효과 함수 실행
     applyClassInSequence(premiumBenefits, 0); // 서비스소개 상단 3개 박스 순차 슬라이드 함수 실행
 
-
     // EPS 툴팁 팝업 높이 조절 스크립트 시작           
     if ($('.eps_pop01 .pop_con').length) {
         function adjustHeight() {

@@ -213,7 +213,7 @@
                             <!-- increase 증가, decrease 감소, 보합은 same -->
                             <span class="day">11:35, USD</span>
                         </div>
-                    </li>            
+                    </li>
                 </ul>
 
                 <div class="attention_box">
@@ -984,7 +984,7 @@
             </div>
 
             <!-- 관심종목 등록 툴팁 팝업 -->
-            <div class="modal att_pop fav_reg_popup">
+            <div class="modal att_pop fav_reg_popup" style="display: block;">
                 <!-- fav_reg_popup(관심종목 등록), fav_group_reg_popup(관심종목 그룹 등록), fav_group_move_popup(관심종목 그룹 이동), fav_group_manage_popup(관심종목 그룹 관리), fav_group_edit_popup(관심종목 그룹 수정, 삭제) -->
                 <div class="pop_header">
                     <h1 class="pop_title">관심종목 등록</h1>
@@ -1001,12 +1001,19 @@
                 </div>
                 <div class="pop_con">
                     <!-- 그룹 선택 -->
-                    <div class="group_select">                        
+                    <div class="group_select">
                         <button class="group_add_btn">+ 그룹추가</button>
                     </div>
 
-                    <!-- 관심종목 리스트 -->
                     <ul class="fav_list">
+                        <li class="fav_item"><input type="checkbox" name="reg_fav" data-group-id="1" id="reg_fav1"
+                                class="fav_checkbox" checked><label for="reg_fav1">테스트1</label></li>
+                        <li class="fav_item"><input type="checkbox" name="reg_fav" data-group-id="2" id="reg_fav2"
+                                class="fav_checkbox"><label for="reg_fav2">관심종목 2</label></li>
+                    </ul>
+
+                    <!-- 관심종목 리스트 -->
+                    <!-- <ul class="fav_list">
                         <li class="fav_item">
                             <input type="checkbox" name="reg_fav" id="reg_fav1" class="fav_checkbox" checked>
                             <label for="reg_fav1">관심종목명은열자까지</label>
@@ -1023,7 +1030,7 @@
                             <input type="checkbox" name="reg_fav" id="reg_fav4" class="fav_checkbox">
                             <label for="reg_fav4">관심종목 #1</label>
                         </li>
-                    </ul>
+                    </ul> -->
 
                     <div class="btnArea edtBtn">
                         <!-- <a href="" class="btn btn_save close">삭제</a> -->
