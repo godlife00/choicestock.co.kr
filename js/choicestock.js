@@ -309,28 +309,28 @@ $(document).ready(function () {
     }
    
     //검색    
-    function initSearchInput(inputSelector, btnSelector, titleSelector, autocompleteSelector) {
-        $(inputSelector).on("click", function() {
-            // 현재 클릭 이벤트는 아무런 동작을 하지 않음
-        });
-
-        $(inputSelector).on("keydown", function() {
+    function initSearchInput(inputSelector, btnSelector, titleSelector, autocompleteSelector) {        
+    
+        $(inputSelector).on("keydown", function() {            
             $(this).addClass('keydown');
-            // $(btnSelector).css('top', '15px');
             $(titleSelector).addClass('keydown');
             $(autocompleteSelector).addClass('focus_on').show();
         });
-
-        $(inputSelector).on("input", function() {
-            const inputValue = $(this).val().trim();
-            if (inputValue === '') {
-                $('.globalStock .main_searching .searchArea .searchInput').val('').removeClass('keydown');
-                $('.globalStock .main_searching .sch_autocomplete').removeClass('focus_on _show');
+    
+        $(inputSelector).on("change", function() {
+            const inputValue = $(this).val();
+            const trimmedValue = inputValue.trim();            
+            
+            if (!trimmedValue || trimmedValue.length === 0) {                
+                $(this).val('').removeClass('keydown');
                 $(autocompleteSelector).removeClass('focus_on').hide();
+            } else if (trimmedValue.length === 0) {
+                console.log("인풋 값이 비어있음:", inputSelector);
             }
+            
         });
-
-        $(inputSelector).on("focusout", function() {
+    
+        $(inputSelector).on("focusout", function() {            
             $(titleSelector).removeClass('keydown');
             $(this).removeClass('keydown');
             $(btnSelector).css('top', '11px');
