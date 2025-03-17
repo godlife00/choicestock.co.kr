@@ -108,17 +108,16 @@
                         <!-- 관심종목 리스트 -->
                         <div class="interest_list">
                             <div class="select_area">
-                                <form action="" method="" class="form_wrap">
-                                    <div class="selectbox">                                                                        
-                                        <label for="interestCategory" class="t_label">관심종목관심종목#1</label>
-                                        <select name="interestCategory" id="interestCategory">              
-                                            <option value="default">관심종목을 선택해주세요</option>                       
-                                            <option value="category1">관심종목#1</option>                                                          
-                                            <option value="category2">관심종목#2</option>                                    
-                                            <option value="category3">관심종목#3</option>                                    
-                                        </select>                                          
-                                    </div>
-                                </form>
+                                <div class="selectBoxList" style="width: 180px;">
+                                    <select>
+                                        <option disabled selected>관심종목을 선택해주세요</option>
+                                        <option value="category1">관심종목#1</option>                                                          
+                                        <option value="category2">관심종목#2</option>                                    
+                                        <option value="category3">관심종목#3</option>                                    
+                                    </select>
+                                </div>
+                                <!-- //selectBoxList -->
+
                                 <div class="sort_manage">
                                     <a href="searching_mod.html" class="btn_sort">정렬</a>                        
                                     <button class="btn_manage_group">그룹관리</button>
@@ -737,8 +736,12 @@
         <div class="pop_con">
             <!-- 그룹 선택 -->
             <div class="group_select">
-                <label class="group_label">그룹 선택</label>
-                <button class="group_add_btn">+ 그룹추가</button>
+                <!-- <label class="group_label">그룹 선택</label> -->
+                <button class="group_reg_btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <circle cx="10" cy="10" r="10" fill="#404FC3"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.4 9.4V5H10.6V9.4H15V10.6H10.6V15H9.4V10.6H5V9.4H9.4Z" fill="white"/>
+                  </svg>그룹 추가</button>
             </div>
     
             <!-- 관심종목 리스트 -->
@@ -797,19 +800,19 @@
             <!-- 관심종목 리스트 -->
             <ul class="fav_list">
                 <li class="fav_item">
-                    <input type="radio" name="move_fav" id="move_fav1" class="fav_checkbox" checked>
+                    <input type="checkbox" name="move_fav" id="move_fav1" class="fav_checkbox" checked>
                     <label for="move_fav1">관심종목명은열자까지<span class="cunt">(23)</span></label>
                 </li>
                 <li class="fav_item">
-                    <input type="radio" name="move_fav" id="move_fav2" class="fav_checkbox">
+                    <input type="checkbox" name="move_fav" id="move_fav2" class="fav_checkbox">
                     <label for="move_fav2">관심종목 #1<span class="cunt">(8)</span></label>
                 </li>
                 <li class="fav_item">
-                    <input type="radio" name="move_fav" id="move_fav3" class="fav_checkbox" checked>
+                    <input type="checkbox" name="move_fav" id="move_fav3" class="fav_checkbox" checked>
                     <label for="move_fav3">관심종목명은열자까지<span class="cunt">(23)</span></label>
                 </li>
                 <li class="fav_item">
-                    <input type="radio" name="move_fav" id="move_fav4" class="fav_checkbox">
+                    <input type="checkbox" name="move_fav" id="move_fav4" class="fav_checkbox">
                     <label for="move_fav4">관심종목 #1<span class="cunt">(8)</span></label>
                 </li>
             </ul>
@@ -834,8 +837,12 @@
         <div class="pop_con">
             <!-- 그룹 선택 -->
             <div class="group_select">
-                <label class="group_label">그룹 선택</label>
-                <button class="group_reg_btn">+ 그룹추가</button>
+                <!-- <label class="group_label">그룹 선택</label> -->
+                <button class="group_add_btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <circle cx="10" cy="10" r="10" fill="#404FC3"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.4 9.4V5H10.6V9.4H15V10.6H10.6V15H9.4V10.6H5V9.4H9.4Z" fill="white"/>
+                  </svg>그룹 추가</button>
             </div>
 
             <!-- 관심종목 리스트 -->
@@ -904,13 +911,22 @@
             </span>
         </div>
         <div class="pop_con">                                        
-            <div class="group_name_input">
-                <input type="text" placeholder="그룹이름을 입력하세요" class="name_input" oninput="this.nextElementSibling.innerText = (this.value.length > 10 ? 10 : this.value.length) + '/10'" maxlength="10">
-                <span class="input_cunt">0/10</span>
-            </div>
+            <div class="group_edit_wrapper">
+                <button class="btn_del">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <circle cx="10" cy="10" r="10" fill="#E1305A"/>
+                        <path d="M6 10H14" stroke="white" stroke-width="1.2"/>
+                    </svg>
+                </button>
+                <div class="group_name_input">                    
+                    <input type="text" placeholder="그룹이름을 입력하세요" class="name_input"
+                        oninput="this.nextElementSibling.children[0].innerText = (this.value.length > 15 ? 15 : this.value.length)"
+                        maxlength="15">
+                    <span class="input_count"><b>0</b>/15</span>
+                </div>
+            </div>            
 
-            <div class="btnArea edtBtn">
-                <button class="btn btn_save btn_del">삭제</button>
+            <div class="btnArea edtBtn">                
                 <button class="btn btn_save">수정</button>
             </div>
         </div>                

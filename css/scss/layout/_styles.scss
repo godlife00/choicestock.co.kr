@@ -338,7 +338,7 @@ body {
 	background: #F4F4F5;
 	max-width: 767px;
 	margin: 0 auto;
-	overflow: auto;	
+	overflow: auto;
 }
 
 body,
@@ -354,9 +354,11 @@ body,
 	// padding-top: 54px;
 	padding-bottom: 15px;
 }
+
 .hide {
 	display: none !important;
 }
+
 .header.m_hdr+#container {
 	padding-top: 0 !important;
 }
@@ -526,13 +528,14 @@ body,
 .globalStock .banner_event .link_banner,
 .globalStock .banner_event .link_banner img {
 	display: inline-block;
-	width: 100%;	
+	width: 100%;
 }
 
 /* 이벤트 스와이프 배너 banner_event */
 .globalStock .banner_event_swiper {
 	display: block;
 	margin-top: 35px;
+
 	a,
 	img {
 		display: inline-block;
@@ -689,17 +692,16 @@ ul.tabs li {
 
 .tab_area .tbas_lb li a {
 	width: 100%;
-	padding: 12px 0;
+	padding: 15px 0 17px;
 	box-sizing: border-box;
-	color: #333;
-	font-size: 1rem;
-	letter-spacing: -0.8px;
+	color: #6A727B;	
+	font-size: 15px;	
+	font-weight: 700;	
 }
 
 .tab_area .tbas_lb li a.active {
 	border-bottom: 3px solid #404FC3;
-	padding-bottom: 13px;
-	padding-top: 11px;
+	padding-bottom: 14px;	
 	color: #404fc3;
 	font-weight: bold;
 	position: relative;
@@ -719,19 +721,25 @@ ul.tabs li {
 .globalStock .tabs_live li {
 	width: 100%;
 	text-align: center;
-	font-size: 1rem;
-	padding: 12px 0;
-	color: #333;
+	letter-spacing: normal;	
+	color: #6A727B;	
+	font-size: 15px;	
+	font-weight: 700;	
+	padding: 15px 0;	
 	border-bottom: 1px solid #c6c6c6;
 }
 
 .globalStock .tabs li.active,
 .globalStock .tabs_live li.active {
-	font-weight: normal;
-	font-weight: bold;
-	color: #404fc3;
+	color: #404FC3;	
+	font-size: 15px;	
+	font-weight: 700;
 	border-bottom: 3px solid #404FC3;
 	padding-bottom: 10px;
+}
+.globalStock .tabs li.active>a {
+	color: #404FC3;	
+	font-weight: bold;
 }
 
 .globalStock .tab_content {
@@ -1108,37 +1116,41 @@ table.tableRanking td {
 		box-sizing: border-box;
 		border-radius: 8px;
 		background: #F4F4F5;
-		color: #404FC3;		
-		font-size: 16px;		
-		font-weight: 700;		
+		color: #161B23;
+		font-size: 16px;
+		font-weight: 700;
 	}
 }
-.globalStock .sub_search .att_wrap .att_list {	
+
+.globalStock .sub_search .att_wrap .att_list {
 	position: relative;
 	display: flex;
 	flex-direction: column;
-	gap: 24px 8px;	
+	gap: 24px 8px;
 	overflow: auto;
 	overflow-x: hidden;
-	position: relative;	
-	height: calc(100vh - 290px);	
-	&::after {
-		content: '';
-		display: block;
-		position: sticky;
-		left: 0;
-		right: 0;
-		bottom: 0;
-		width: 100%;
-		height: 40px;
-		padding-top: 30px;
-		box-shadow: inset 0 -24px 15px 0px rgba(255, 255, 255, 0.9)
-	}	
-	input[type=checkbox].list_del {		
-		display: none;				
-	}
+	position: relative;
+	min-height: calc(100vh - 305px);
+
+	// &::after {
+	// 	content: '';
+	// 	display: block;
+	// 	position: sticky;
+	// 	left: 0;
+	// 	right: 0;
+	// 	bottom: 0;
+	// 	width: 100%;
+	// 	height: 40px;
+	// 	padding-top: 30px;
+	// 	box-shadow: inset 0 -24px 15px 0px rgba(255, 255, 255, 0.9)
+	// }
+
 	input[type=checkbox].list_del {
-		& + label:before {
+		display: none;
+	}
+
+	input[type=checkbox].list_del {
+		&+label:before {
 			content: "";
 			display: block;
 			width: 20px;
@@ -1146,17 +1158,16 @@ table.tableRanking td {
 			line-height: 20px;
 			border-radius: 4px;
 			background: #D9DCDF url('/img/checked_wh.svg') no-repeat center center;
-		}	
-		&:checked + label:before {						
-			background-color:#404FC3;
-		}	
-	} 	
-	
-	
-	input[type=radio] {
-		
+		}
+
+		&:checked+label:before {
+			background-color: #404FC3;
+		}
 	}
-	
+
+
+	input[type=radio] {}
+
 }
 
 .globalStock .sub_search .att_wrap .att_list::-webkit-scrollbar {
@@ -1175,20 +1186,19 @@ table.tableRanking td {
 }
 
 .globalStock .sub_search .att_wrap .att_list .list i,
-.globalStock .sub_search .att_wrap .att_list .list .btn_del {
-	
-}
+.globalStock .sub_search .att_wrap .att_list .list .btn_del {}
 
-.globalStock .sub_search .att_wrap .att_list li, .ui-state-default {	
+.globalStock .sub_search .att_wrap .att_list li,
+.ui-state-default {
 	display: flex;
 	align-items: center;
-	gap: 10px 10px;
+	gap: 10px 4px;
 	background: #fff;
-	border: none;	
-	width: 100%;	
+	border: none;
+	width: 100%;
 }
 
-.globalStock .sub_search .att_wrap .att_list .handle {	
+.globalStock .sub_search .att_wrap .att_list .handle {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -1196,33 +1206,36 @@ table.tableRanking td {
 	width: 24px;
 	height: 24px;
 	position: relative;
-	cursor: pointer;				
+	cursor: pointer;
 }
 
-.globalStock .sub_search .att_wrap .att_list span.title {	
-	color: #333;
-	font-size: 15px;	
-	font-weight: 700;	
+.globalStock .sub_search .att_wrap .att_list span.title {
+	color: #333;	
+	font-size: 16px;	
+	font-weight: 500;
+	padding-left: 4px;	
 	max-width: 180px;
 	overflow: hidden;
 	text-overflow: ellipsis;
-	white-space: nowrap;	
+	white-space: nowrap;
 	box-sizing: border-box;
 }
 
 .globalStock .sub_search .att_wrap .att_list .ticker {
-	color: #939393;	
-	font-size: 14px;	
-	font-weight: 500;		
+	color: #939393;
+	font-size: 14px;
+	font-weight: 500;
 }
+
 .globalStock .sub_search .att_wrap {
 	.btnArea.edtBtn {
-		position: sticky;
-		bottom: 76px;
-		
+		// position: sticky;
+		// bottom: 76px;
+		// border: 2px solid red;
+
 		.btn {
 			background: #404fc3;
-			border: 1px solid #404fc3;			
+			border: 1px solid #404fc3;
 			width: 100%;
 			border-radius: 7px;
 			cursor: pointer;
@@ -1230,6 +1243,7 @@ table.tableRanking td {
 			color: #FFF;
 			font-size: 16px;
 			font-weight: 700;
+
 			&.btn_del {
 				background: #C7CCD1;
 				border-color: #C7CCD1;
@@ -1237,7 +1251,7 @@ table.tableRanking td {
 		}
 
 	}
-} 
+}
 
 
 .globalStock .sub_search .att_wrap:not(.new) {
@@ -1570,7 +1584,7 @@ table.tableRanking td {
 	font-size: 0.9375rem;
 	margin-top: 35px;
 	margin-bottom: 3px;
-	font-weight: bold;	
+	font-weight: bold;
 }
 
 .globalStock .sub_terms .terms_sum_n {
@@ -1588,10 +1602,11 @@ table.tableRanking td {
 	line-height: 1.3rem;
 	word-wrap: break-word;
 	word-break: break-all;
-	display: flex;    
-    flex-direction: column;
+	display: flex;
+	flex-direction: column;
 	gap: 8px 8px;
-	span {		
+
+	span {
 		white-space: pre-line;
 		color: #333;
 		font-size: 0.84rem;
@@ -1599,21 +1614,21 @@ table.tableRanking td {
 		word-wrap: break-word;
 		word-break: break-all;
 	}
-	
+
 }
 
-.globalStock .sub_terms ul.list {	
+.globalStock .sub_terms ul.list {
 	display: flex;
 	display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+	flex-direction: column;
+	flex-wrap: wrap;
 	gap: 2px;
 
 	li {
 		white-space: pre-line;
 		color: #333;
 		font-size: 0.84rem;
-		line-height: 1.3rem;		
+		line-height: 1.3rem;
 		word-wrap: break-word;
 		word-break: break-all;
 	}
@@ -2434,26 +2449,28 @@ table.tableRanking td {
 }
 
 // 메인 상단 이벤트 배너 
-.globalStock .event2025_banner {		
+.globalStock .event2025_banner {
 	margin: 30px 16px;
 	padding: 24px 0;
-	overflow: hidden;		
-	border-radius: 16px;			
-	box-sizing: border-box;	
+	overflow: hidden;
+	border-radius: 16px;
+	box-sizing: border-box;
 	background-color: #404FC3;
-	
+
 	text-align: center;
-	.link_banner {		
+
+	.link_banner {
 		position: relative;
 		text-align: left;
-		display: inline-block;		
-		margin: 0 auto;		
+		display: inline-block;
+		margin: 0 auto;
 		padding-left: 45px;
-		box-sizing: border-box;				
-		color: #FFF;		
-		font-size: 15px;		
+		box-sizing: border-box;
+		color: #FFF;
+		font-size: 15px;
 		font-weight: 700;
 		line-height: normal;
+
 		&::before {
 			content: '';
 			position: absolute;
@@ -2465,19 +2482,22 @@ table.tableRanking td {
 			background-size: auto calc(120px / 2);
 		}
 
-		b {			
+		b {
 			color: #fff;
 		}
+
 		span {
 			display: block;
 			color: rgba(255, 255, 255, 0.70);
-			font-size: 13px;			
+			font-size: 13px;
 			font-weight: 500;
 			padding-bottom: 4px;
-		}	
-	}		
+		}
+	}
+
 	&.bg_gray {
 		background-color: #ECEFFD;
+
 		.link_banner {
 			color: #333;
 			font-family: Pretendard;
@@ -2485,9 +2505,11 @@ table.tableRanking td {
 			font-style: normal;
 			font-weight: 700;
 			line-height: normal;
+
 			b {
 				color: #404FC3;
 			}
+
 			span {
 				color: #6A727B;
 				font-family: Pretendard;
@@ -4154,6 +4176,7 @@ table.tableRanking td {
 	font-size: 0.75rem;
 	line-height: normal;
 }
+
 .globalStock .main_top.recommend_area .recomlist_area .area .list .per span.same,
 .globalStock .main_top.recommend_area .recomlist_area .area .list .per span.same b {
 	color: #363F4B;
@@ -4360,6 +4383,7 @@ table.tableRanking td {
 /* 메인 - 투자레시피 */
 .globalStock .main_mid.quick_link {
 	margin-top: 60px;
+
 	.title .remark {
 		font-size: 0.75rem;
 		color: #939393;
@@ -4371,11 +4395,12 @@ table.tableRanking td {
 		margin: 15px 0;
 		padding: 0 15px;
 		box-sizing: border-box;
-		
+
 		.swiper-slide {
 			display: block;
 			width: auto;
 		}
+
 		.figure {
 			$jump : #646FCD; //급등주
 			$rocketBooster : #646FCD; //로켓 부스트
@@ -4386,57 +4411,63 @@ table.tableRanking td {
 			display: inline-block;
 			width: 134px;
 			height: 100px;
-			box-sizing: border-box;				
-			border-radius: 16px;				
+			box-sizing: border-box;
+			border-radius: 16px;
 			color: #333;
 			font-size: 15px;
 			font-weight: normal;
-			&::before {				
+
+			&::before {
 				content: '';
 				width: 100%;
 				height: 100%;
-				border-radius: 16px;				
+				border-radius: 16px;
 				display: block;
-				background-size: auto 76px !important;			
+				background-size: auto 76px !important;
 				background-position: center 12px !important;
 			}
+
 			span {
 				font-size: 15px;
 				margin-top: 12px;
 				padding-left: 3px;
 				font-weight: normal;
-				display: block;			
+				display: block;
 				letter-spacing: normal;
 			}
-	
-			&.jump {		
-				&::before {	
-					background: $jump url('/img/jump.png') no-repeat;				
-				}										
-			}			
-			&.top50 {			
+
+			&.jump {
 				&::before {
-					background: $top50 url('/img/top50.png') no-repeat;							
-				}			
+					background: $jump url('/img/jump.png') no-repeat;
+				}
 			}
-			&.goldenCross {		
+
+			&.top50 {
 				&::before {
-					background: $goldenCross url('/img/goldenCross.png') no-repeat;								
-				}				
+					background: $top50 url('/img/top50.png') no-repeat;
+				}
 			}
-			&.growthDiscovery {		
+
+			&.goldenCross {
 				&::before {
-					background: $growthDiscovery url('/img/growthDiscovery.png') no-repeat;				
-				}				
-			}			
-			&.rocketBooster {		
+					background: $goldenCross url('/img/goldenCross.png') no-repeat;
+				}
+			}
+
+			&.growthDiscovery {
 				&::before {
-					background: $rocketBooster url('/img/rocketBooster.png') no-repeat;							
-				}				
-			}	
+					background: $growthDiscovery url('/img/growthDiscovery.png') no-repeat;
+				}
+			}
+
+			&.rocketBooster {
+				&::before {
+					background: $rocketBooster url('/img/rocketBooster.png') no-repeat;
+				}
+			}
 		}
 	}
-} 
+}
 
 /* 메인 - 종목분석 */
 .globalStock .main_mid.event_anay {
@@ -6033,8 +6064,9 @@ table.tableRanking td {
 	font-weight: bold;
 	color: #333;
 }
-.globalStock .sub_recom .sub_mid.eventPicks_area #tab3 .recom_chartList .chartGoal .target .att {	
-	margin-top: 12px;	
+
+.globalStock .sub_recom .sub_mid.eventPicks_area #tab3 .recom_chartList .chartGoal .target .att {
+	margin-top: 12px;
 }
 
 .globalStock .sub_recom .sub_mid.eventPicks_area .recom_chartList .chartGoal .target .att.prm_lock {
@@ -6417,7 +6449,7 @@ table.tableRanking td {
 .globalStock .sub_recom .sub_top.view .chart_area {
 	width: 100%;
 	margin: 0;
-	margin-top: 16px;	
+	margin-top: 16px;
 	display: block;
 }
 
@@ -6807,7 +6839,7 @@ table.tableRanking td {
 }
 
 .globalStock .sub_recom .sub_mid .tabsArea .tabs_two li {
-	font-size: 0.95rem;
+	// font-size: 0.95rem;
 }
 
 .globalStock .sub_recom .sub_mid .tabsArea .tab_container .tab_content,
@@ -9628,7 +9660,7 @@ table.tableRanking td {
 
 /**** 종목 캐치 *****/
 .globalStock .catch_wrap {
-	padding: 22px 15px 0;	
+	padding: 22px 15px 0;
 }
 
 .globalStock .sub_catch .txt_box {
@@ -10818,7 +10850,8 @@ table.tableRanking td {
 	padding-left: 25px;
 	margin-top: 23px;
 	position: relative;
-	top: 5px;	
+	top: 5px;
+
 	&.mrt_0 {
 		margin-top: 0;
 	}
@@ -10829,9 +10862,10 @@ table.tableRanking td {
 	margin: 20px auto 0;
 	background: #fff;
 	border-radius: 20px;
+
 	&.mrt_0 {
 		margin-top: 0;
-	}	
+	}
 }
 
 .globalStock .sub_search .latest_results .tabsArea table.tableRanking tr:last-child {
@@ -11047,54 +11081,64 @@ table.tableRanking td {
 }
 
 .globalStock .sub_search .latest_results .tabsArea table.tableRanking {
+
 	// 250204 검색페이지 하단 테이블 수정
-	&.trading_signal {		
+	&.trading_signal {
 		tr {
 			display: flex;
 			align-items: center;
 			gap: 0 5px;
 			padding: 18px 0;
 		}
+
 		td {
 			&.title.t_short {
 				flex: 5;
 			}
+
 			&.num {
-				flex: 5;				
+				flex: 5;
 			}
+
 			&.recom {
 				flex: 2;
 				padding-right: 6px;
 			}
+
 			@media (min-width: 640px) {
 				&.recom {
-					flex: 1;					
+					flex: 1;
 				}
 			}
-		}		
+		}
+
 		td {
 			flex: 1 1 auto;
-			padding: 0;												
+			padding: 0;
 		}
+
 		.title.t_short {
 			padding-left: 12px;
 			padding-right: 0;
 		}
+
 		.title a {
 			display: block;
-			width: auto;			
+			width: auto;
+
 			@media (min-width:401px) and (max-width: 640px) {
-				width: 140px;				
+				width: 140px;
 			}
 
 			@media (min-width:375px) and (max-width: 400px) {
-				width: 120px;				
+				width: 120px;
 			}
 
 			@media (min-width:320px) and (max-width: 374px) {
-				width: 110px;				
+				width: 110px;
 			}
 		}
+
 		.num {
 			display: flex;
 			flex-direction: row;
@@ -11103,58 +11147,71 @@ table.tableRanking td {
 			flex-wrap: nowrap;
 			gap: 0 7px;
 			max-width: 140px;
-			box-sizing: border-box;			
+			box-sizing: border-box;
 			margin-left: auto;
+
 			span {
 				margin: 0;
 				width: 60px;
+
 				// margin-left: auto;				
 				&:nth-of-type(1) {
 					min-width: 70px;
-					text-align: right;					
+					text-align: right;
 				}
+
 				b {
 					opacity: 1;
 					font-weight: normal;
 				}
+
 				&.per {
 					padding: 0;
 					font-size: 0.75rem;
 					font-weight: normal;
 					opacity: 1;
+
 					b {
 						opacity: 1;
 						font-weight: normal;
 					}
+
 					&.increase {
 						display: block;
 						color: #ff0000;
 						font-size: 0.75rem;
+
 						b {
 							color: #ff0000;
 						}
 					}
+
 					&.decrease {
 						display: block;
 						color: #0062ff;
 						font-size: 0.75rem;
+
 						b {
 							color: #0062ff;
 						}
 					}
+
 					&.same {
 						display: block;
-						color: #363F4B;;
+						color: #363F4B;
+						;
 						font-size: 0.75rem;
+
 						b {
 							color: #363F4B;
 						}
 					}
 
 				}
-				
+
 			}
 		}
+
 		.recom {
 			line-height: normal;
 		}
@@ -11189,7 +11246,7 @@ table.tableRanking td {
 	padding: 22px 15px 20px;
 	background: #fff;
 
-	.interest_list {		
+	.interest_list {
 		padding: 0;
 		margin-top: 8px;
 	}
@@ -12407,15 +12464,16 @@ table.tableRanking td {
 	position: relative;
 	display: flex;
 	align-items: center;
-    align-content: flex-start;
-    flex-wrap: wrap;
+	align-content: flex-start;
+	flex-wrap: wrap;
 	gap: 8px 8px;
 	margin: 7px auto 0;
 	padding: 12px 14px;
-	box-sizing: border-box;	
+	box-sizing: border-box;
 	max-height: calc(3 * 40px + 12px);
-    overflow: hidden;
-    position: relative;			
+	overflow: hidden;
+	position: relative;
+
 	&::after {
 		content: '';
 		position: absolute;
@@ -12428,11 +12486,12 @@ table.tableRanking td {
 		background-color: #fff;
 	}
 
-	
+
 	&.expanded {
 		max-height: none;
-		overflow: visible;				
+		overflow: visible;
 	}
+
 	.no_recent_search {
 		width: 100%;
 		color: #939393;
@@ -12450,47 +12509,54 @@ table.tableRanking td {
 		padding: 6px 10px;
 		border-radius: 20px;
 		border: 1px solid transparent;
-		text-align: center;		
-		background: #f7f8f9;		
+		text-align: center;
+		background: #f7f8f9;
+
 		a {
 			color: #939393;
 			font-size: 0.75rem;
+
 			b {
 				display: inline-block;
 				padding-right: 3px;
-				font-weight: bold;			
+				font-weight: bold;
 				color: #404fc3;
 				font-size: 0.8175rem;
 			}
-		} 		
+		}
+
 		.delete-btn {
 			position: relative;
-			cursor: pointer;			
+			cursor: pointer;
 			border: none;
-			outline: none;		
+			outline: none;
 			font-size: 0;
 			width: 16px;
-			height: 16px;			
-			background-color: transparent;			
+			height: 16px;
+			background-color: transparent;
 
-			&::before, &::after {
+			&::before,
+			&::after {
 				content: "";
-				position: absolute;				
+				position: absolute;
 				height: 12px;
 				width: 1px;
 				background-color: #939393;
 			}
-			&::after {				
-				transform: rotate(-45deg);			
+
+			&::after {
+				transform: rotate(-45deg);
 			}
-			&::before{
-				transform: rotate(45deg);				
+
+			&::before {
+				transform: rotate(45deg);
 				background-color: #939393;
 			}
-		}	
-	}		
+		}
+	}
 }
-.globalStock .sub_search .search-history-actions { 
+
+.globalStock .sub_search .search-history-actions {
 	display: flex;
 	align-items: center;
 	justify-content: flex-end;
@@ -12499,16 +12565,18 @@ table.tableRanking td {
 	border-top: 1px solid #E0E4E9;
 	padding: 10px 16px;
 	box-sizing: border-box;
+
 	.delete-all-btn {
 		display: flex;
 		align-items: center;
-		justify-content: flex-end;				
-		color: #969ea7; 
+		justify-content: flex-end;
+		color: #969ea7;
 		background-color: transparent;
-		border: none;	
+		border: none;
 		font-size: 13px;
 		font-weight: 600;
-		cursor: pointer;	
+		cursor: pointer;
+
 		.icon-trash {
 			display: inline-block;
 			width: 16px;
@@ -12519,6 +12587,7 @@ table.tableRanking td {
 			filter: grayscale(100%);
 		}
 	}
+
 	.show-more-btn {
 		position: relative;
 		padding: 0 12px 0 0;
@@ -12526,6 +12595,7 @@ table.tableRanking td {
 		font-size: 12px;
 		font-weight: 500;
 		cursor: pointer;
+
 		&::after {
 			content: "";
 			width: 5px;
@@ -12538,17 +12608,18 @@ table.tableRanking td {
 			border-top: 1px solid #424fbc;
 			border-right: 1px solid #424fbc;
 			transform: rotate(135deg);
-					}
-		&.expanded {			
-			&::after {				
-				top: 4px;				
-				transform: rotate(-45deg);				
+		}
+
+		&.expanded {
+			&::after {
+				top: 4px;
+				transform: rotate(-45deg);
 			}
 		}
 	}
 
-	
-}	
+
+}
 
 
 .globalStock .sub_search .tabs_5 {
@@ -14908,7 +14979,7 @@ table.tableRanking td {
 .globalStock .sub_search .sub_mid .search_financials_area .tableRanking td.th_guide span {
 	color: #939393;
 	font-size: 0.75rem;
-	padding-bottom: 1px;	
+	padding-bottom: 1px;
 	line-height: 1.4;
 	vertical-align: sub;
 	display: inline-block;
@@ -15015,6 +15086,7 @@ table.tableRanking td {
 .globalStock .sub_search .sub_mid .search_financials_area .scroll_table_wrap .scroll_table td {
 	min-height: 39px;
 	box-sizing: border-box;
+
 	&.th_2line {
 		padding: 5px 2px 4px 8px !important;
 		line-height: 1.2 !important;
@@ -15384,9 +15456,10 @@ table.tableRanking td {
 .globalStock .sub_search .sub_mid.tabs_area .alloca_info .allocachart_area .containeralloca1 {
 	margin: 10px 0;
 	height: 200px;
+
 	rect.highcharts-point.point_color {
 		fill: #EDEEEF !important;
-		background: #EDEEEF !important;		
+		background: #EDEEEF !important;
 	}
 }
 
@@ -15400,7 +15473,8 @@ table.tableRanking td {
 	position: relative;
 	top: -10px;
 }
-.globalStock .sub_search .sub_mid.tabs_area .alloca_info .allocachart_area {	
+
+.globalStock .sub_search .sub_mid.tabs_area .alloca_info .allocachart_area {
 	.chart_guide {
 		position: relative;
 		top: -12px;
@@ -15408,9 +15482,10 @@ table.tableRanking td {
 		line-height: 1.3;
 		font-weight: 400;
 		color: #969ea7;
-		padding: 0 16px 10px 24px;		
+		padding: 0 16px 10px 24px;
 		word-break: break-all;
 		word-wrap: break-word;
+
 		&::before {
 			content: "";
 			position: absolute;
@@ -15423,7 +15498,8 @@ table.tableRanking td {
 			background: #c7cbe9;
 		}
 	}
-} 
+}
+
 .globalStock .sub_search .sub_mid.tabs_area .alloca_info .info {
 	position: relative;
 	padding: 0 15px;
@@ -16829,8 +16905,9 @@ table.tableRanking td {
 
 /* 발굴 - 투자레시피 */
 .v_signalStreng.globalStock .sub_recipe {
+
 	// 레시피 디자인 변경_241224 class="sub_recipe new_recipe"
-	&.new_recipe {		
+	&.new_recipe {
 		$jump : #646FCD; //급등주
 		$rocketBooster : #646FCD; //로켓 부스트
 		$top50 : #F8D95F; //관심 TOP50
@@ -16843,184 +16920,230 @@ table.tableRanking td {
 		$profitTurnaround : #7694E7; //흑자전환
 		$goldenCross : #E36B6D; //골든크로스
 		$growthDiscovery : #E79366; //발굴성장주		
-		$wh : 164px;	
+		$wh : 164px;
 		margin-top: 0;
-		
+
 		.sub_mid.recipe_tabs .box_tabs {
 			// padding-top: 0;
 			// padding-bottom: 0;						
 		}
-		.sub_mid.recipe_tabs .box_tabs .list_masonry {															
-			display: flex;            
-            flex-wrap: wrap;						
+
+		.sub_mid.recipe_tabs .box_tabs .list_masonry {
+			display: flex;
+			flex-wrap: wrap;
 			gap: 48px 14px;
-		}		
+		}
 
-		.sub_mid.recipe_tabs .box_tabs .list_masonry > .figure {									
-            width: calc(50% - 7px);    
-			min-width: 150px;        
-            @media (min-width: 576px) {				
-                width: calc(33% - 14px);
-            }
+		.sub_mid.recipe_tabs .box_tabs .list_masonry>.figure {
+			width: calc(50% - 7px);
+			min-width: 150px;
 
-            @media (min-width: 768px) {
-                width: calc(25% - 14px);
-            }
+			@media (min-width: 576px) {
+				width: calc(33% - 14px);
+			}
 
-            @media (min-width: 992px) {
-                width: calc(25% - 14px);
-            }
-            box-sizing: border-box;
+			@media (min-width: 768px) {
+				width: calc(25% - 14px);
+			}
+
+			@media (min-width: 992px) {
+				width: calc(25% - 14px);
+			}
+
+			box-sizing: border-box;
 
 			a {
 				margin-top: 12px;
 			}
-			
+
 			&::before {
 				content: '';
-				display: block;					
+				display: block;
 				width: 100%;
-				height: $wh;		
+				height: $wh;
 				margin: 0 auto;
-				border-radius: 16px;				
-			}			
-			&.jump a, &.top50 a, &.sale a, &.earnings a, &.dividend a, &.growth a, &.superStocks a, &.consumerMonopoly a, &.profitTurnaround a, &.goldenCross a, &.growthDiscovery a, &.rocketBooster a {
-				display: block;					
-				background: none;			
-				padding: 0 8px;		
+				border-radius: 16px;
+			}
+
+			&.jump a,
+			&.top50 a,
+			&.sale a,
+			&.earnings a,
+			&.dividend a,
+			&.growth a,
+			&.superStocks a,
+			&.consumerMonopoly a,
+			&.profitTurnaround a,
+			&.goldenCross a,
+			&.growthDiscovery a,
+			&.rocketBooster a {
+				display: block;
+				background: none;
+				padding: 0 8px;
 				text-align: left;
-				color: #6A727B;				
-				font-size: 13px;				
-				font-weight: 400;	
-				line-height: 1.3;			
+				color: #6A727B;
+				font-size: 13px;
+				font-weight: 400;
+				line-height: 1.3;
 				word-break: break-all;
 				word-wrap: break-word;
 				overflow: hidden;
 				display: -webkit-box;
 				-webkit-line-clamp: 5;
 				-webkit-box-orient: vertical;
+
 				strong {
 					display: block;
-					color: #333;					
-					font-size: 18px;					
-					font-weight: 700;					
+					color: #333;
+					font-size: 18px;
+					font-weight: 700;
 					padding-bottom: 8px;
 				}
-			}			
-			&.jump {						
+			}
+
+			&.jump {
+
 				// 급등주					
-				&::before {										
-					background: $jump url('/img/jump.png') no-repeat center 14px;				
+				&::before {
+					background: $jump url('/img/jump.png') no-repeat center 14px;
 					background-size: auto 132px;
-				}				
-			}			
+				}
+			}
+
 			&.top50 {
+
 				// 관심 TOP50
-				&::before {								
-					background: $top50 url('/img/top50.png') no-repeat center 14px;				
+				&::before {
+					background: $top50 url('/img/top50.png') no-repeat center 14px;
 					background-size: auto 132px;
 				}
 			}
+
 			&.sale {
+
 				// 지금 세일중
-				&::before {									
-					background: $sale url('/img/sale.png') no-repeat center 14px;				
+				&::before {
+					background: $sale url('/img/sale.png') no-repeat center 14px;
 					background-size: auto 132px;
 				}
 			}
+
 			&.earnings {
+
 				// 실적발표
-				&::before {									
-					background: $earnings url('/img/earnings.png') no-repeat center 14px;				
+				&::before {
+					background: $earnings url('/img/earnings.png') no-repeat center 14px;
 					background-size: auto 132px;
 				}
 			}
+
 			&.dividend {
+
 				// 배당매력주
-				&::before {									
-					background: $dividend url('/img/dividend.png') no-repeat center 14px;				
+				&::before {
+					background: $dividend url('/img/dividend.png') no-repeat center 14px;
 					background-size: auto 132px;
 				}
 			}
+
 			&.growth {
+
 				// 이익성장주
-				&::before {										
-					background: $growth url('/img/growth.png') no-repeat center 14px;				
+				&::before {
+					background: $growth url('/img/growth.png') no-repeat center 14px;
 					background-size: auto 132px;
 				}
 			}
+
 			&.superStocks {
+
 				// 슈퍼스톡스
-				&::before {									
-					background: $superStocks url('/img/superStocks.png') no-repeat center 14px;				
+				&::before {
+					background: $superStocks url('/img/superStocks.png') no-repeat center 14px;
 					background-size: auto 132px;
 				}
 			}
+
 			&.consumerMonopoly {
+
 				// 소비자독점
-				&::before {									
-					background: $consumerMonopoly url('/img/consumerMonopoly.png') no-repeat center 14px;				
+				&::before {
+					background: $consumerMonopoly url('/img/consumerMonopoly.png') no-repeat center 14px;
 					background-size: auto 132px;
 				}
 			}
+
 			&.profitTurnaround {
+
 				// 흑자전환
-				&::before {									
-					background: $profitTurnaround url('/img/profitTurnaround.png') no-repeat center 14px;				
+				&::before {
+					background: $profitTurnaround url('/img/profitTurnaround.png') no-repeat center 14px;
 					background-size: auto 132px;
 				}
 			}
+
 			&.goldenCross {
+
 				// 골든크로스
-				&::before {									
-					background: $goldenCross url('/img/goldenCross.png') no-repeat center 14px;				
+				&::before {
+					background: $goldenCross url('/img/goldenCross.png') no-repeat center 14px;
 					background-size: auto 132px;
 				}
 			}
+
 			&.growthDiscovery {
+
 				// 발굴성장주
-				&::before {										
-					background: $growthDiscovery url('/img/growthDiscovery.png') no-repeat center 14px;				
+				&::before {
+					background: $growthDiscovery url('/img/growthDiscovery.png') no-repeat center 14px;
 					background-size: auto 132px;
 				}
-			}			
+			}
+
 			&.rocketBooster {
+
 				// 발굴성장주
-				&::before {										
-					background: $rocketBooster url('/img/rocketBooster.png') no-repeat center 14px;				
+				&::before {
+					background: $rocketBooster url('/img/rocketBooster.png') no-repeat center 14px;
 					background-size: auto 132px;
 				}
-			}			
+			}
 		}
+
 		// 오늘의 매매신호
-		.sub_mid.recipe_tabs .one_step {						
+		.sub_mid.recipe_tabs .one_step {
 			background: #FFF !important;
-			border-radius: 16px;			
+			border-radius: 16px;
 			padding: 24px 16px;
 			margin: 48px auto;
-			width: 100%;			
+			width: 100%;
 			box-sizing: border-box;
+
 			&::before {
 				display: none !important;
 			}
+
 			.txt {
-				color: #333;				
-				font-size: 15px;				
-				font-weight: 700;				
+				color: #333;
+				font-size: 15px;
+				font-weight: 700;
 				padding: 0;
 			}
-			a.more {				
+
+			a.more {
 				border-radius: 4px;
 				background: #404FC3;
 				padding: 4px 12px;
 				height: auto;
+
 				span {
 					color: #FFF;
-					font-size: 13px;				
-					font-weight: 500;				
+					font-size: 13px;
+					font-weight: 500;
 				}
 			}
 		}
+
 		// 레시피 뷰
 		.sub_top.view {
 			.update_info {
@@ -17031,252 +17154,315 @@ table.tableRanking td {
 				padding-right: 16px;
 				padding-bottom: 16px;
 			}
+
 			.box_tabs {
 				position: relative;
-				background: none;				
+				background: none;
 				padding: 32px 24px;
 				margin: 0;
-				color: rgba(255, 255, 255, 0.70);				
-				font-size: 14px;				
+				color: rgba(255, 255, 255, 0.70);
+				font-size: 14px;
 				font-weight: 400;
-				line-height: 20px; /* 142.857% */
+				line-height: 20px;
+				/* 142.857% */
 				text-align: left;
+
 				strong {
 					display: flex;
 					align-items: center;
 					gap: 0 6px;
-					color: #FFF;					
-					font-size: 20px;					
+					color: #FFF;
+					font-size: 20px;
 					font-weight: 700;
 					margin-bottom: 8px;
 				}
+
 				&::before {
 					content: '';
-					display: block;					
+					display: block;
 					width: 100%;
-					height: 230px;		
-					margin: 0 auto 10px;																	
+					height: 230px;
+					margin: 0 auto 10px;
 					background-size: auto 230px !important;
 
 				}
+
 				.update_info {
 					position: absolute;
 					right: 0;
 					top: 16px;
 					color: rgba(51, 51, 51, 0.7);
-					letter-spacing: normal !important;					
+					letter-spacing: normal !important;
 				}
+
 				.reference {
 					margin-top: 8px;
 					color: rgba(255, 255, 255, 0.7);
-					font-size: 12px;				
+					font-size: 12px;
 					font-weight: 400;
 				}
 			}
-			&.jump {						
+
+			&.jump {
+
 				// 급등주					
-				.box_tabs {		
-					background-color: $jump;			
+				.box_tabs {
+					background-color: $jump;
+
 					&::before {
-						background: $jump url('/img/jump.png') no-repeat center center;										
+						background: $jump url('/img/jump.png') no-repeat center center;
 					}
-				}	
+				}
+
 				.update_info {
 					color: rgba(255, 255, 255, 0.7);
-					
-				}					
-			}	
-			&.top50 {						
+
+				}
+			}
+
+			&.top50 {
+
 				// 관심 TOP50								
-				.box_tabs {		
+				.box_tabs {
 					strong {
 						color: #333;
-					}				
-					color: rgba(51, 51, 51, 0.70);
-					background-color: $top50;			
-					&::before {						
-						background: $top50 url('/img/top50.png') no-repeat center center;										
 					}
-				}										
+
+					color: rgba(51, 51, 51, 0.70);
+					background-color: $top50;
+
+					&::before {
+						background: $top50 url('/img/top50.png') no-repeat center center;
+					}
+				}
 			}
+
 			&.sale {
+
 				// 지금 세일중
 				.box_tabs {
 					background-color: $sale;
+
 					&::before {
 						background: $sale url('/img/sale.png') no-repeat center center;
 					}
 				}
+
 				.update_info {
 					color: rgba(255, 255, 255, 0.7);
-					
+
 				}
 			}
+
 			&.earnings {
+
 				// 실적발표
 				.box_tabs {
 					background-color: $earnings;
+
 					&::before {
 						background: $earnings url('/img/earnings.png') no-repeat center center;
 					}
 				}
+
 				.update_info {
 					color: rgba(255, 255, 255, 0.7);
-					
+
 				}
 			}
+
 			&.dividend {
+
 				// 배당매력주
 				.box_tabs {
 					background-color: $dividend;
+
 					&::before {
 						background: $dividend url('/img/dividend.png') no-repeat center center;
 					}
 				}
+
 				.update_info {
 					color: rgba(255, 255, 255, 0.7);
-					
+
 				}
 			}
+
 			&.growth {
+
 				// 이익성장주
 				.box_tabs {
 					background-color: $growth;
+
 					&::before {
 						background: $growth url('/img/growth.png') no-repeat center center;
 					}
 				}
+
 				.update_info {
 					color: rgba(255, 255, 255, 0.7);
-					
+
 				}
 			}
+
 			&.superStocks {
+
 				// 슈퍼스톡스
 				.box_tabs {
 					strong {
 						color: #333;
-					}				
+					}
+
 					color: rgba(51, 51, 51, 0.70);
 					background-color: $superStocks;
+
 					&::before {
 						background: $superStocks url('/img/superStocks.png') no-repeat center center;
 					}
 				}
 			}
+
 			&.consumerMonopoly {
+
 				// 소비자독점
-				.box_tabs {					
+				.box_tabs {
 					strong {
 						color: #333;
-					}				
+					}
+
 					color: rgba(51, 51, 51, 0.70);
 					background-color: $consumerMonopoly;
+
 					&::before {
 						background: $consumerMonopoly url('/img/consumerMonopoly.png') no-repeat center center;
 					}
-				}				
+				}
 			}
+
 			&.profitTurnaround {
+
 				// 흑자전환
 				.box_tabs {
 					background-color: $profitTurnaround;
+
 					&::before {
 						background: $profitTurnaround url('/img/profitTurnaround.png') no-repeat center center;
 					}
 				}
+
 				.update_info {
 					color: rgba(255, 255, 255, 0.7);
-					
+
 				}
 			}
+
 			&.goldenCross {
+
 				// 골든크로스
 				.box_tabs {
 					background-color: $goldenCross;
+
 					&::before {
 						background: $goldenCross url('/img/goldenCross.png') no-repeat center center;
 					}
 				}
+
 				.update_info {
 					color: rgba(255, 255, 255, 0.7);
-					
+
 				}
 			}
+
 			&.growthDiscovery {
+
 				// 발굴성장주
 				.box_tabs {
 					background-color: $growthDiscovery;
+
 					&::before {
 						background: $growthDiscovery url('/img/growthDiscovery.png') no-repeat center center;
 					}
 				}
+
 				.update_info {
 					color: rgba(255, 255, 255, 0.7);
-					
+
 				}
 			}
+
 			&.rocketBooster {
+
 				// 로켓부스터
 				.box_tabs {
 					background-color: $rocketBooster;
+
 					&::before {
 						background: $rocketBooster url('/img/rocketBooster.png') no-repeat center center;
 					}
 				}
+
 				.update_info {
 					color: rgba(255, 255, 255, 0.7);
-					
+
 				}
 			}
 		}
+
 		.l_box {
 			display: flex;
 			flex-wrap: wrap;
 			align-items: center;
-			justify-content: space-between;			
+			justify-content: space-between;
 			gap: 12px 0;
 			margin: 24px auto;
+
 			.filter_set {
 				display: flex;
 				justify-content: space-between;
-				align-items: center;							
+				align-items: center;
 				gap: 8px 9px;
 				width: 100% !important;
 				flex-wrap: nowrap;
+
 				li {
 					padding: 0;
-					color: #939393;					
-					font-size: 12px;					
-					font-weight: 500;										
+					color: #939393;
+					font-size: 12px;
+					font-weight: 500;
+
 					&.li_btn {
-						flex: 10;											
+						flex: 10;
 					}
-					&.rate_trend {						
-						margin-left: auto;						
+
+					&.rate_trend {
+						margin-left: auto;
 						position: relative;
 						top: -2px;
-						.atten {		
+
+						.atten {
 							color: #939393;
 							font-size: 12px;
 							font-weight: 500;
+
 							i.trans {
-							  display: inline-block;
-							  width: 14px;
-							  height: 14px;
-							  padding: 1px 0;
-							  background: url('/img/icon_transition.svg') no-repeat 0 1px;
-							  background-size: 14px 14px;
-							  margin-left: 2px;
-							  position: relative;
-							  top: 4px;
+								display: inline-block;
+								width: 14px;
+								height: 14px;
+								padding: 1px 0;
+								background: url('/img/icon_transition.svg') no-repeat 0 1px;
+								background-size: 14px 14px;
+								margin-left: 2px;
+								position: relative;
+								top: 4px;
 							}
-						  }
+						}
 					}
-					&.update_info {						
+
+					&.update_info {
 						width: auto;
-						margin-top: 0;						
+						margin-top: 0;
 					}
+
 					.btn_schRecipeSet {
 						display: inline-flex;
 						margin: 0;
@@ -17284,13 +17470,15 @@ table.tableRanking td {
 						border-radius: 4px;
 						border: 1px solid #E0E4E9;
 						background: #FFF;
-						width: auto;						
+						width: auto;
 						max-width: calc(100% - 0px);
+
 						.ellipsis {
-							display: inline-flex;	
+							display: inline-flex;
 							align-items: center;
-							gap: 2px 2px;						
-							padding-left: 1px;							
+							gap: 2px 2px;
+							padding-left: 1px;
+
 							i {
 								display: inline-block;
 								width: 2px;
@@ -17298,51 +17486,59 @@ table.tableRanking td {
 								border-radius: 50%;
 								background-color: #7b7881;
 							}
-						}	
+						}
 					}
 
 				}
 			}
+
 			.update_info {
-				padding: 0;		
-				margin-top: 2px;		
-				text-align: right;				
-				width: 100%;				
+				padding: 0;
+				margin-top: 2px;
+				text-align: right;
+				width: 100%;
 				color: #939393;
 				font-size: 12px;
-				font-weight: 500;				
-				.atten {					
-					
-				}				
+				font-weight: 500;
+
+				.atten {}
 			}
 		}
+
 		.recipe_area {
 			.chart_list {
 				display: flex;
 				flex-wrap: wrap;
-				gap: 16px 15px;				
+				gap: 16px 15px;
+
 				@media (min-width:320px) and (max-width: 374px) {
-					gap: 10px 8px;								
+					gap: 10px 8px;
 				}
-				margin-top: 8px;			
+
+				margin-top: 8px;
 				width: 100%;
+
 				.list {
-					flex: 1 1 45%;										
+					flex: 1 1 45%;
 					border-radius: 16px;
 					padding: 16px 16px 16px;
 					background: #FFF;
 					max-width: calc(50% - 7.5px);
+
 					@media (min-width:320px) and (max-width: 374px) {
 						max-width: calc(50% - 4px);
-						padding: 10px 8px 10px;	
-					}					
+						padding: 10px 8px 10px;
+					}
+
 					box-sizing: border-box;
+
 					&#btn_free {
 						.title_logo .logo {
 							background: #F5F5F9 url('/img/signal_prm.svg') no-repeat center center;
 							background-size: 64%;
 						}
-					} 
+					}
+
 					.stock_info {
 						display: flex;
 						flex-wrap: nowrap;
@@ -17350,12 +17546,13 @@ table.tableRanking td {
 						justify-content: flex-start;
 						gap: 16px 8px;
 						width: 100%;
-						
-						.title_logo {							
+
+						.title_logo {
 							width: 45px;
 							display: flex;
 							align-items: center;
 							gap: 0 30px;
+
 							.logo {
 								display: inline-flex;
 								justify-content: center;
@@ -17366,7 +17563,8 @@ table.tableRanking td {
 								background-color: #F5F5F9;
 								background-size: 28px 28px;
 								background-repeat: no-repeat;
-								background-position: center center;	
+								background-position: center center;
+
 								img {
 									display: inline-block;
 									width: 80%;
@@ -17374,81 +17572,95 @@ table.tableRanking td {
 								}
 							}
 						}
-						.detail {							
+
+						.detail {
 							display: flex;
 							flex-direction: column;
 							justify-content: space-between;
-							align-items: flex-start;			
-							gap: 5px 5px;				
+							align-items: flex-start;
+							gap: 5px 5px;
 							width: calc(100% - 48px);
-							.title {								
-								color: #333;								
-								font-size: 15px;								
-								font-weight: 700;																
+
+							.title {
+								color: #333;
+								font-size: 15px;
+								font-weight: 700;
 								display: inline-block;
 								text-align: left;
 								width: 100%;
 								overflow: hidden;
 								text-overflow: ellipsis;
 								white-space: nowrap;
-								
+
 							}
-	
+
 						}
+
 						.detail_num {
-							width: 100%;	
+							width: 100%;
 							display: flex;
-							align-items: baseline;							
+							align-items: baseline;
 							justify-content: flex-start;
-							gap: 4px 4px;							
+							gap: 4px 4px;
+
 							.num {
-								color: #333;								
-								font-size: 13px;								
-								font-weight: 500;								
+								color: #333;
+								font-size: 13px;
+								font-weight: 500;
 								letter-spacing: -1px;
-								span {									
+
+								span {
 									letter-spacing: -0.8px;
+
 									b {
-										font-weight: 500;								
+										font-weight: 500;
 									}
 								}
 							}
+
 							.per {
-								color: #E1305A;								
-								font-size: 13px;								
-								font-weight: 500;								
+								color: #E1305A;
+								font-size: 13px;
+								font-weight: 500;
 								letter-spacing: -1px;
+
 								span {
-									letter-spacing: -0.8px;									
+									letter-spacing: -0.8px;
 								}
+
 								.increase {
 									color: #E1305A;
+
 									b {
 										color: #E1305A;
 									}
 								}
+
 								.decrease {
-									color: #303FAF;									
+									color: #303FAF;
+
 									b {
-										color: #303FAF;									
+										color: #303FAF;
 									}
 								}
 							}
 						}
-					}					
+					}
 				}
 
-				.chart_style {										
+				.chart_style {
 					display: flex;
 					align-items: center;
 					justify-content: center;
 					margin-top: 8px;
 					width: 100%;
+
 					.highcharts-label.highcharts-tooltip {
 						display: none !important;
 					}
 				}
-				.fit_margin {					
+
+				.fit_margin {
 					// display: flex;
 					// align-items: center;
 					// justify-content: center;
@@ -17456,31 +17668,36 @@ table.tableRanking td {
 					margin-top: 8px;
 					color: #6A727B;
 					text-align: center;
-					font-size: 13px;					
-					font-weight: 500;				
-					line-height: 1.2;	
-					span {						
+					font-size: 13px;
+					font-weight: 500;
+					line-height: 1.2;
+
+					span {
 						font-size: 12px;
 						font-weight: 500;
 						opacity: 0.6;
 						position: relative;
 						top: -1px;
 					}
+
 					.num {
 						&.increase {
 							color: #E1305A;
 						}
+
 						&.decrease {
-							color: #303FAF;									
+							color: #303FAF;
 						}
-					} 
+					}
 				}
-				
+
 			}
 		}
-		.recipe_area .area.turnaround {			
+
+		.recipe_area .area.turnaround {
+
 			// 로켓 성장주와 스타일 공유
-			.stock_info {				
+			.stock_info {
 				display: flex;
 				// flex-wrap: wrap;
 				align-items: center;
@@ -17495,12 +17712,13 @@ table.tableRanking td {
 						background: #F5F5F9 url('/img/signal_prm.svg') no-repeat center center;
 						background-size: 64%;
 					}
-				} 
-				
-				.title_logo {																
+				}
+
+				.title_logo {
 					display: flex;
 					align-items: center;
 					gap: 0 30px;
+
 					.logo {
 						display: inline-flex;
 						justify-content: center;
@@ -17511,105 +17729,121 @@ table.tableRanking td {
 						background-color: #F5F5F9;
 						background-size: 28px 28px;
 						background-repeat: no-repeat;
-						background-position: center center;	
+						background-position: center center;
+
 						img {
 							display: inline-block;
 							width: 100%;
 							height: 100%;
 						}
 					}
-				}				
-				.detail {			
-					flex: 10;							
-					display: flex;					
+				}
+
+				.detail {
+					flex: 10;
+					display: flex;
 					flex-wrap: wrap;
 					justify-content: space-between;
-					align-items: flex-start;			
-					gap: 4px 5px;				
-					width: calc(100% - 54px);														
-					.title {				
-						padding-right: 6px;				
-						color: #333;								
-						font-size: 15px;								
-						font-weight: 700;																
+					align-items: flex-start;
+					gap: 4px 5px;
+					width: calc(100% - 54px);
+
+					.title {
+						padding-right: 6px;
+						color: #333;
+						font-size: 15px;
+						font-weight: 700;
 						display: inline-block;
-						text-align: left;	
-						width: 480px;											
+						text-align: left;
+						width: 480px;
+
 						@media (max-width: 374px) {
 							max-width: 150px;
 						}
+
 						@media (min-width: 375px) and (max-width: 767px) {
 							max-width: 160px;
 						}
+
 						@media (min-width: 768px) and (max-width: 1023px) {
 							max-width: 480px;
 						}
-						
+
 						overflow: hidden;
 						text-overflow: ellipsis;
-						white-space: nowrap;	
+						white-space: nowrap;
 					}
-					> .num {					
+
+					>.num {
 						margin-left: auto;
 						font-size: 0.9375rem;
 						color: #333;
 						vertical-align: top;
-						display: inline-block;					
-						font-weight: bold;		
+						display: inline-block;
+						font-weight: bold;
+
 						span b {
 							font-weight: 500;
-						}				
+						}
 					}
 
 				}
+
 				.detail_num {
-					width: 100%;	
+					width: 100%;
 					display: flex;
-					align-items: baseline;							
+					align-items: baseline;
 					justify-content: flex-start;
-					gap: 4px 4px;					
+					gap: 4px 4px;
+
 					.num {
 						margin-left: 0;
 						font-size: 0.9375rem;
 						color: #333;
 						vertical-align: top;
 						font-weight: normal;
-						display: inline-block;												
+						display: inline-block;
 					}
+
 					.per {
-						padding: 0;						
+						padding: 0;
 						padding-top: 1px;
 						padding-right: 10px;
-						font-weight: normal;												
+						font-weight: normal;
+
 						.decrease b {
 							color: #26ABFF;
-							font-weight: normal;												
+							font-weight: normal;
 						}
+
 						.increase b {
 							color: #ff2929;
-							font-weight: normal;												
+							font-weight: normal;
 						}
+
 						.decrease b {
 							color: #26ABFF;
-							font-weight: normal;												
+							font-weight: normal;
 						}
 					}
-					
+
 				}
-				
+
 				.trans_list {
-					width: 100%;					
+					width: 100%;
+
 					ul {
 						vertical-align: bottom;
 					}
 				}
 			}
-			
-			
+
+
 			.list {
 				justify-content: flex-end;
 				align-items: center;
 				gap: 0 4px;
+
 				li {
 					&.title_logo {
 						flex-basis: 45px;
@@ -17617,6 +17851,7 @@ table.tableRanking td {
 						display: flex;
 						align-items: center;
 						gap: 0 30px;
+
 						.logo {
 							display: inline-flex;
 							justify-content: center;
@@ -17628,6 +17863,7 @@ table.tableRanking td {
 							background-size: 28px 28px;
 							background-repeat: no-repeat;
 							background-position: center center;
+
 							img {
 								display: inline-block;
 								width: 80%;
@@ -17635,46 +17871,56 @@ table.tableRanking td {
 							}
 						}
 					}
-					&.title {						
+
+					&.title {
 						text-align: left;
 					}
+
 					span {
 						padding-right: 0 !important;
 					}
+
 					span:first-child::after {
 						display: none !important;
-					}					
+					}
 				}
 			}
 		}
 
 		//로켓 성장주
-		.recipe_area .area.rocket {			
+		.recipe_area .area.rocket {
 			// 턴어라운드 스타일 가져오기
 			@extend .recipe_area;
-			@extend .turnaround;					
+			@extend .turnaround;
+
 			.detail {
 				flex: 5 !important;
+
 				@media (max-width: 374px) {
 					max-width: 110px;
 				}
+
 				@media (max-width: 375px) {
 					max-width: 120px;
 				}
+
 				// @media (min-width: 376px) and (max-width: 767px) {
 				// 	max-width: 160px;
 				// }				
 			}
-			.detail + .num {
+
+			.detail+.num {
 				margin-left: auto;
 				flex: 7 !important;
-				text-align: right;				
+				text-align: right;
 			}
-			.detail + .num span {
+
+			.detail+.num span {
 				letter-spacing: -1px;
 				color: #ff2929;
 				font-size: 0.9375rem;
 				font-weight: normal;
+
 				b {
 					color: #ff2929;
 					font-size: 0.9375rem;
@@ -17684,7 +17930,7 @@ table.tableRanking td {
 		}
 
 		// 지금 세일중
-		.sale_deal {						
+		.sale_deal {
 			span {
 				display: flex;
 				gap: 0 3px;
@@ -17693,76 +17939,85 @@ table.tableRanking td {
 				letter-spacing: normal;
 				text-align: center;
 				color: #333;
-				position: relative;				
+				position: relative;
 			}
-			
+
 			span i {
 				display: inline-block;
 				width: 13px;
 				height: 13px;
-				background: url('/img/icon_saledeal.svg') no-repeat center center;								
+				background: url('/img/icon_saledeal.svg') no-repeat center center;
 			}
 		}
+
 		// 관심 TOP
-		.attention_box {						
+		.attention_box {
 			display: flex;
 			gap: 0 3px;
-			.attention.on {								
+
+			.attention.on {
 				font-size: 0.9375rem;
 				color: #333;
 				vertical-align: top;
 				display: inline-block;
 				font-weight: 700;
+
 				i {
 					display: inline-block;
 					width: 15px;
 					height: 11px;
-					background: url('/img/heart_attention_gray.svg') no-repeat 0 100%;					
+					background: url('/img/heart_attention_gray.svg') no-repeat 0 100%;
 					background-size: 14px 25px;
 
 				}
 			}
 		}
+
 		//급등주
 		.sub_mid.recipe_view .recipe_area .area .per {
 			span {
 				display: inline-block;
 			}
+
 			.hit {
-				color: #939393;				
-				font-size: 13px;				
-				font-weight: 500;				
+				color: #939393;
+				font-size: 13px;
+				font-weight: 500;
 			}
 		}
-		.data_opinion {			
-			margin-left: auto;			
+
+		.data_opinion {
+			margin-left: auto;
+
 			.ibox {
 				display: flex;
 				justify-content: center;
 				align-items: center;
 				font-size: 12px;
-				font-weight: normal;				
-				color: #fff;				
+				font-weight: normal;
+				color: #fff;
 				padding: 4px 9px;
-				border-radius: 16px;		
+				border-radius: 16px;
 				width: 20px;
-								
+
 				&.str {
 					background-color: #dd5257;
-				}				
+				}
+
 				&.bas {
 					background: #C7CCD1;
 				}
-				
+
 				&.weak {
 					background-color: #404fc3;
 				}
 			}
 		}
-		
-	}	
-	
+
+	}
+
 }
+
 .globalStock .sub_recipe .sub_top .title {
 	color: #fff;
 	font-size: 1.2rem;
@@ -17954,7 +18209,7 @@ table.tableRanking td {
 	height: 22px;
 	border-radius: 50%;
 	background: url('/img/icon_sale.svg') no-repeat center center;
-	vertical-align: top;	
+	vertical-align: top;
 }
 
 .globalStock .sub_recipe .sub_top.view .box_tabs strong {
@@ -17987,8 +18242,9 @@ table.tableRanking td {
 	width: 100%;
 	box-sizing: border-box;
 	margin-top: 55px;
+
 	.title {
-		display: flex;			
+		display: flex;
 		align-items: center;
 		gap: 5px 5px;
 		padding: 0 16px;
@@ -17997,14 +18253,17 @@ table.tableRanking td {
 		color: #333;
 		font-size: 1.25rem;
 		font-weight: bold;
-		.signal_guide {			
-			cursor: pointer;	
+
+		.signal_guide {
+			cursor: pointer;
 			display: inline-block;
+
 			img {
-				display:inline-block;					
-				vertical-align: inherit;							
+				display: inline-block;
+				vertical-align: inherit;
 			}
 		}
+
 		.more {
 			margin-left: auto;
 			display: inline-block;
@@ -18018,10 +18277,11 @@ table.tableRanking td {
 			line-height: 12px;
 		}
 	}
-	
+
 	.score_chart {
 		position: relative;
 		padding: 16px 0 0;
+
 		.update_info {
 			position: absolute;
 			right: 38px;
@@ -18029,81 +18289,96 @@ table.tableRanking td {
 			color: #939393;
 			font-size: 0.8125rem;
 		}
+
 		.highcharts-figure {
 			position: relative;
 			margin: 0 auto;
 			width: 340px;
-			height: 176px;							
+			height: 176px;
 		}
+
 		.contaanalysis1 {
 			margin: 0 auto;
 			width: 340px;
-			height: 180px;			
-			background: url('/img/contaanalysis1_num.svg') no-repeat center 77px;					
+			height: 180px;
+			background: url('/img/contaanalysis1_num.svg') no-repeat center 77px;
 			background-size: auto 114px;
-			
-			.gauge-value {														
-				.highcharts-label-box {						
+
+			.gauge-value {
+				.highcharts-label-box {
 					stroke-width: 0;
 				}
+
 				span {
 					font-size: 30px !important;
 					color: #333 !important;
 					font-weight: bold !important;
 				}
 			}
+
 			.highcharts-pivot {
-				fill: #FFF;    				
+				fill: #FFF;
 				filter: drop-shadow(0px -5px 6px rgba(199, 204, 209, 0.30));
-				box-shadow: 0px -5px 6px rgba(199, 204, 209, 0.3);					
+				box-shadow: 0px -5px 6px rgba(199, 204, 209, 0.3);
 			}
-			
+
 			.highcharts-axis-labels.highcharts-radial-axis-labels {
-				text {						
-					&:nth-child(1) {							
+				text {
+					&:nth-child(1) {
 						fill: #D43F5D !important;
+<<<<<<< HEAD
 						color: #D43F5D !important;						
+=======
+						color: #D43F5D !important;
+
+>>>>>>> 관심종목-기능-개선-디자인-적용
 					}
+
 					&:nth-child(2) {
 						fill: #E9835B !important;
 						color: #E9835B !important;
 					}
+
 					&:nth-child(3) {
 						fill: #F4A031 !important;
 						color: #F4A031 !important;
 					}
+
 					&:nth-child(4) {
 						fill: #F8D54E !important;
 						color: #F8D54E !important;
 					}
+
 					&:nth-child(5) {
 						fill: #5AA86B !important;
 						color: #5AA86B !important;
 					}
+
 					&.active-label {
 						fill: #fff !important;
-						color: #fff !important;							
-					}						
+						color: #fff !important;
+					}
 				}
 			}
 		}
-		.group-4 {		
-			display: none;		
+
+		.group-4 {
+			display: none;
 			position: absolute;
 			width: 170px;
 			height: 85px;
 			top: 77px;
-			left: 85px;								
+			left: 85px;
 
 			.element,
 			.element-2,
 			.element-3,
 			.element-4,
-			.element-5 {					
+			.element-5 {
 				font-weight: 600;
 				font-size: 10px;
 				color: #939393;
-				position: absolute;					
+				position: absolute;
 				letter-spacing: 0;
 				line-height: normal;
 				white-space: nowrap;
@@ -18131,13 +18406,14 @@ table.tableRanking td {
 			}
 
 			.element-5 {
-				bottom: 0;					
+				bottom: 0;
 				right: 0;
 			}
 		}
+
 		.txt {
 			font-weight: 500;
-			font-size: 12px;				
+			font-size: 12px;
 			color: #939393;
 			letter-spacing: 0;
 			line-height: normal;
@@ -18152,137 +18428,151 @@ table.tableRanking td {
 		width: 100%;
 		box-sizing: border-box;
 		margin-top: 35px;
-		margin-bottom: 35px;		
+		margin-bottom: 35px;
+
 		.title {
-			display: flex;			
+			display: flex;
 			gap: 5px 5px;
-			color: #333;		
+			color: #333;
 			font-size: 0.9375rem;
-			.signal_guide {			
-				cursor: pointer;	
+
+			.signal_guide {
+				cursor: pointer;
 				display: inline-block;
+
 				img {
-					display:inline-block;					
-					vertical-align: inherit;							
+					display: inline-block;
+					vertical-align: inherit;
 				}
 			}
 		}
-		
+
 		.score_chart {
 			position: relative;
 			padding: 16px 0;
+
 			.highcharts-figure {
 				position: relative;
 				margin: 0 auto;
 				width: 340px;
-				height: 156px;							
+				height: 156px;
 			}
 
 			.contaanalysis1 {
 				margin: 0 auto;
 				width: 340px;
-				height: 180px;			
-				background: url('/img/contaanalysis1_num.svg') no-repeat center 77px;					
+				height: 180px;
+				background: url('/img/contaanalysis1_num.svg') no-repeat center 77px;
 				background-size: auto 114px;
-				
-				.gauge-value {										
+
+				.gauge-value {
 					background-color: red;
-					.highcharts-label-box {						
+
+					.highcharts-label-box {
 						stroke-width: 0;
 					}
+
 					span {
 						font-size: 30px !important;
 						color: #333 !important;
 						font-weight: bold !important;
 					}
 				}
+
 				.highcharts-pivot {
-					fill: #FFF;    				
+					fill: #FFF;
 					filter: drop-shadow(0px -5px 6px rgba(199, 204, 209, 0.30));
-					box-shadow: 0px -5px 6px rgba(199, 204, 209, 0.3);					
+					box-shadow: 0px -5px 6px rgba(199, 204, 209, 0.3);
 				}
-				
+
 				.highcharts-axis-labels.highcharts-radial-axis-labels {
-					text {						
-						&:nth-child(1) {							
+					text {
+						&:nth-child(1) {
 							fill: #D43F5D !important;
 							color: #D43F5D !important;
-							
+
 						}
+
 						&:nth-child(2) {
 							fill: #E9835B !important;
 							color: #E9835B !important;
 						}
+
 						&:nth-child(3) {
 							fill: #F4A031 !important;
 							color: #F4A031 !important;
 						}
+
 						&:nth-child(4) {
 							fill: #F8D54E !important;
 							color: #F8D54E !important;
 						}
+
 						&:nth-child(5) {
 							fill: #5AA86B !important;
 							color: #5AA86B !important;
 						}
+
 						&.active-label {
 							fill: #fff !important;
-							color: #fff !important;							
-						}						
+							color: #fff !important;
+						}
 					}
 				}
 			}
-			.group-4 {		
-				display: none;		
+
+			.group-4 {
+				display: none;
 				position: absolute;
 				width: 170px;
 				height: 85px;
 				top: 77px;
-				left: 85px;								
+				left: 85px;
 
 				.element,
 				.element-2,
 				.element-3,
 				.element-4,
-				.element-5 {					
+				.element-5 {
 					font-weight: 600;
 					font-size: 10px;
 					color: #939393;
-					position: absolute;					
+					position: absolute;
 					letter-spacing: 0;
 					line-height: normal;
 					white-space: nowrap;
 					opacity: 0.7;
 				}
-	
+
 				.element {
 					top: 20px;
 					left: 29px;
 				}
-	
+
 				.element-2 {
 					top: 20px;
 					right: 29px;
 				}
-	
+
 				.element-3 {
 					top: 0;
 					left: 77px;
 				}
-	
+
 				.element-4 {
 					bottom: 0;
 					left: 0;
 				}
-	
+
 				.element-5 {
-					bottom: 0;					
+					bottom: 0;
 					right: 0;
 				}
 			}
+
 			.txt {
 				font-weight: 500;
-				font-size: 12px;				
+				font-size: 12px;
 				color: #939393;
 				letter-spacing: 0;
 				line-height: normal;
@@ -18290,8 +18580,8 @@ table.tableRanking td {
 				opacity: 0.7;
 			}
 		}
-		
-	}	
+
+	}
 }
 
 .globalStock .sub_recipe .sub_mid.recipe_view .update_info {
@@ -18301,7 +18591,7 @@ table.tableRanking td {
 	text-align: right;
 }
 
-.globalStock .sub_recipe .sub_mid.recipe_view .btn_more {	
+.globalStock .sub_recipe .sub_mid.recipe_view .btn_more {
 	display: block;
 	margin: 18px auto;
 }
@@ -18316,14 +18606,14 @@ table.tableRanking td {
 	clear: both;
 }
 
-.globalStock .sub_recipe .sub_mid.recipe_view .recipe_area .area {	
+.globalStock .sub_recipe .sub_mid.recipe_view .recipe_area .area {
 	padding: 15px 0 0;
 	margin-top: 8px;
 	width: 100%;
 	background-color: #fff;
 	border-radius: 10px;
 	box-sizing: border-box;
-	vertical-align: top;	
+	vertical-align: top;
 }
 
 .globalStock .sub_recipe .sub_mid.recipe_view .recipe_area .area:after {
@@ -18417,7 +18707,7 @@ table.tableRanking td {
 	flex-grow: 2;
 	overflow: hidden;
 	margin-bottom: 1px;
-	padding-right: 12px;	
+	padding-right: 12px;
 }
 
 .globalStock .sub_recipe .sub_mid.recipe_view .recipe_area .area .title a {
@@ -18529,21 +18819,24 @@ table.tableRanking td {
 
 .globalStock .sub_recipe .sub_mid.recipe_view .recipe_area .area .num span {
 	font-size: 0.9375rem;
-    color: #333;
-    vertical-align: top;
-    display: inline-block;
+	color: #333;
+	vertical-align: top;
+	display: inline-block;
 	font-weight: 700;
+
 	b {
 		font-weight: 700;
 	}
-	&.same {		
+
+	&.same {
 		color: #363F4B;
 		font-size: 0.9375rem;
 		font-weight: normal;
-		padding-left: 5px;		
+		padding-left: 5px;
+
 		b {
 			font-weight: normal;
-		}		
+		}
 	}
 }
 
@@ -18553,8 +18846,8 @@ table.tableRanking td {
 	}
 }
 
-.globalStock .sub_recipe .sub_mid.recipe_view .recipe_area .area .num span b {	
-	color: #333;	
+.globalStock .sub_recipe .sub_mid.recipe_view .recipe_area .area .num span b {
+	color: #333;
 }
 
 .globalStock .sub_recipe .sub_mid.recipe_view .recipe_area .area .num .increase {
@@ -18677,10 +18970,12 @@ table.tableRanking td {
 	color: #26ABFF;
 	font-size: 0.9375rem;
 }
+
 .globalStock .sub_recipe .sub_mid.recipe_view .recipe_area .area .per .same {
 	display: block;
 	color: #363F4B;
 	font-size: 0.9375rem;
+
 	b {
 		font-weight: normal;
 		color: #363F4B;
@@ -18960,13 +19255,15 @@ table.tableRanking td {
 }
 
 /* 발굴 - 투자레시피 (급등주) view */
-.globalStock .sub_recipe .sub_top.recipejump, .globalStock .sub_recipe .sub_top.jump {
+.globalStock .sub_recipe .sub_top.recipejump,
+.globalStock .sub_recipe .sub_top.jump {
 	&+.sub_mid.recipe_view .recipe_tabs {
 		position: relative;
 		display: block;
 		padding: 15px 0 10px;
 		border-bottom: solid 1px #e0e4e9;
 	}
+
 	&+.sub_mid.recipe_view .recipe_tabs li {
 		position: relative;
 		padding: 0 8px;
@@ -18978,7 +19275,7 @@ table.tableRanking td {
 		font-size: 0.75rem;
 		line-height: normal;
 	}
-} 
+}
 
 
 .globalStock .sub_recipe .sub_mid .update_sort {
@@ -18989,103 +19286,115 @@ table.tableRanking td {
 	font-weight: 500;
 	text-align: right;
 }
-.globalStock .sub_recipe .sub_top.recipejump, .globalStock .sub_recipe .sub_top.jump {
-	& + .sub_mid.recipe_view {						
-	  .recipe_tabs {
-		li {
-		  span {
-			color: #939393;
-		  }
-		  &.active span {
-			color: #404fc3;
-		  }
-		  &::before {
-			content: "";
-			position: absolute;
-			right: 0;
-			top: 2px;
-			display: inline-block;
-			width: 1px;
-			height: 12px;
-			background: #e0e4e9;
-		  }
-		  &:first-child {
-			padding-left: 0;
-		  }
-		  &:last-child {
-			padding-right: 0;
-			&::before {
-			  display: none;
-			}
-		  }
-		}
-	  }
-  
-	  .recipejump_tabs {
-		.tab_content {
-		  padding: 0;
-		}
-		ul {
-		  width: auto;
-		  li {
-			padding: 0;
-			&.title {
-			  padding-right: 12px;
-			}
-		  }
-		}
-	  }
-  
-	  .update_info {
-		padding-top: 10px;
-	  }
-  
-	  .atten {		
-		i.trans {
-		  display: inline-block;
-		  width: 14px;
-		  height: 14px;
-		  padding: 1px 0;
-		  background: url('/img/icon_transition.svg') no-repeat 0 1px;
-		  background-size: 14px 14px;
-		  margin-left: 2px;
-		  position: relative;
-		  top: 4px;
-		}
-	  }
-	}
-  
-	@media (min-width: 320px) and (max-width: 358px) {
-	  .recipe_view {
-		.recipe_tabs {
-		  li {
-			span {
-			  font-size: 12px;
-			}
-		  }
-		}
-	  }
-	}
-  }
 
-.globalStock .sub_recipe .sub_top.jump + .sub_mid.recipe_view {		
-	.l_box .filter_set {		
+.globalStock .sub_recipe .sub_top.recipejump,
+.globalStock .sub_recipe .sub_top.jump {
+	&+.sub_mid.recipe_view {
+		.recipe_tabs {
+			li {
+				span {
+					color: #939393;
+				}
+
+				&.active span {
+					color: #404fc3;
+				}
+
+				&::before {
+					content: "";
+					position: absolute;
+					right: 0;
+					top: 2px;
+					display: inline-block;
+					width: 1px;
+					height: 12px;
+					background: #e0e4e9;
+				}
+
+				&:first-child {
+					padding-left: 0;
+				}
+
+				&:last-child {
+					padding-right: 0;
+
+					&::before {
+						display: none;
+					}
+				}
+			}
+		}
+
+		.recipejump_tabs {
+			.tab_content {
+				padding: 0;
+			}
+
+			ul {
+				width: auto;
+
+				li {
+					padding: 0;
+
+					&.title {
+						padding-right: 12px;
+					}
+				}
+			}
+		}
+
+		.update_info {
+			padding-top: 10px;
+		}
+
+		.atten {
+			i.trans {
+				display: inline-block;
+				width: 14px;
+				height: 14px;
+				padding: 1px 0;
+				background: url('/img/icon_transition.svg') no-repeat 0 1px;
+				background-size: 14px 14px;
+				margin-left: 2px;
+				position: relative;
+				top: 4px;
+			}
+		}
+	}
+
+	@media (min-width: 320px) and (max-width: 358px) {
+		.recipe_view {
+			.recipe_tabs {
+				li {
+					span {
+						font-size: 12px;
+					}
+				}
+			}
+		}
+	}
+}
+
+.globalStock .sub_recipe .sub_top.jump+.sub_mid.recipe_view {
+	.l_box .filter_set {
 		.update_info {
 			padding-top: 0;
 		}
+
 		.atten {
 			display: inline-flex;
 			align-items: center;
 			gap: 0 2px;
 		}
-		.atten i.trans {			
+
+		.atten i.trans {
 			position: static;
-			top: 0;			
+			top: 0;
 		}
 	}
 }
 
-  
+
 .globalStock .sub_recipe .sub_mid.recipe_view .recipe_area .area .analysis_score .game_tip {
 	position: relative;
 	float: right;
@@ -20025,13 +20334,93 @@ table.tableRanking td {
 }
 
 .globalStock .view_con .mid {
-	html,body,div,span,applet,object,iframe,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video,
-	.ui-body-a, .ui-page-theme-a .ui-body-inherit, html .ui-bar-a .ui-body-inherit, html .ui-body-a .ui-body-inherit, html body .ui-group-theme-a .ui-body-inherit, html .ui-panel-page-container-a {
+
+	html,
+	body,
+	div,
+	span,
+	applet,
+	object,
+	iframe,
+	p,
+	blockquote,
+	pre,
+	a,
+	abbr,
+	acronym,
+	address,
+	big,
+	cite,
+	code,
+	del,
+	dfn,
+	em,
+	img,
+	ins,
+	kbd,
+	q,
+	s,
+	samp,
+	small,
+	strike,
+	sub,
+	sup,
+	tt,
+	var,
+	b,
+	u,
+	i,
+	center,
+	dl,
+	dt,
+	dd,
+	ol,
+	ul,
+	li,
+	fieldset,
+	form,
+	label,
+	legend,
+	table,
+	caption,
+	tbody,
+	tfoot,
+	thead,
+	tr,
+	th,
+	td,
+	article,
+	aside,
+	canvas,
+	details,
+	embed,
+	figure,
+	figcaption,
+	footer,
+	header,
+	hgroup,
+	menu,
+	nav,
+	output,
+	ruby,
+	section,
+	summary,
+	time,
+	mark,
+	audio,
+	video,
+	.ui-body-a,
+	.ui-page-theme-a .ui-body-inherit,
+	html .ui-bar-a .ui-body-inherit,
+	html .ui-body-a .ui-body-inherit,
+	html body .ui-group-theme-a .ui-body-inherit,
+	html .ui-panel-page-container-a {
 		color: #333;
 		font-size: 1rem;
-		line-height: 26px;		
-	}	
+		line-height: 26px;
+	}
 }
+
 // .globalStock .view_con .mid h1 {	
 // 	font-size: 2.4rem;	
 // 	strong {
@@ -23385,17 +23774,20 @@ table.tableRanking td {
 	padding: 10px 15px;
 	position: relative;
 	text-align: center;
+
 	p {
 		display: flex;
 		justify-content: center;
 		align-items: center;
+
 		a {
 			vertical-align: middle;
 			color: #3f775e;
 			font-size: 0.84rem;
 			letter-spacing: -0.03rem;
 			font-weight: bold;
-			text-decoration: underline;				
+			text-decoration: underline;
+
 			&.btn_close {
 				position: absolute;
 				right: 15px;
@@ -23403,13 +23795,14 @@ table.tableRanking td {
 				font-size: 12px;
 				color: #3f775e;
 				text-decoration: none;
+
 				img {
-					display: inline-block;					
+					display: inline-block;
 					height: 13px;
 				}
 			}
-		}	
-		
+		}
+
 	}
 }
 
@@ -27288,9 +27681,9 @@ table.tableRanking td {
 .globalStock .sub_search .latest_results .tabsArea .tabs li>a {
 	display: inline-block;
 	width: 100%;
-	padding: 12px 0 10px;
+	// padding: 12px 0 10px;
 	box-sizing: border-box;
-	border-bottom: none;
+	border-bottom: none;	
 }
 
 .globalStock .sub_search .latest_results .tabsArea .tab_container .txt_box {
@@ -31408,9 +31801,11 @@ table.tableRanking td {
 	flex-wrap: wrap;
 	justify-content: space-between;
 	gap: 4px 8px;
+
 	@media (min-width: 320px) and (max-width: 424px) {
 		gap: 8px 8px;
 	}
+
 	width: calc(100% - 30px);
 	box-sizing: border-box;
 	margin: 0 auto;
@@ -31526,11 +31921,13 @@ table.tableRanking td {
 	line-height: 1.42;
 	font-weight: 400;
 	color: #939393;
-	b, u {
-		color: #6A727B;		
+
+	b,
+	u {
+		color: #6A727B;
 		font-size: 0.75rem;
 		line-height: 1.42;
-		font-weight: 600;		
+		font-weight: 600;
 	}
 }
 
@@ -32177,6 +32574,7 @@ table.tableRanking td {
 	line-height: 1.42;
 	font-size: 14px;
 	color: #6a727b;
+
 	u {
 		font-size: 14px;
 		color: #6a727b;
@@ -32254,7 +32652,8 @@ table.tableRanking td {
 		padding-top: 10px;
 		color: #939393;
 
-		b, u {
+		b,
+		u {
 			font-weight: 600;
 			color: #939393;
 		}
@@ -32319,13 +32718,12 @@ table.tableRanking td {
 	color: #fff;
 }
 
-.v_signalStreng.globalStock .modalBox {
+.v_signalStreng.globalStock .modalBox {}
 
-}
-
-.v_signalStreng.globalStock #wrap .modal.cardBox {	
+.v_signalStreng.globalStock #wrap .modal.cardBox {
 	&.card_overseas_01 {
-		position: fixed; /* absolute로 설정하여 전체 페이지를 덮도록 설정 */
+		position: fixed;
+		/* absolute로 설정하여 전체 페이지를 덮도록 설정 */
 		top: 25px;
 		left: 50%;
 		transform: translate(-50%, 0%);
@@ -32334,15 +32732,15 @@ table.tableRanking td {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		justify-content: center;		
-		box-sizing: border-box;	
+		justify-content: center;
+		box-sizing: border-box;
 		background-color: #fff;
-		margin: 0 auto; 
-		max-width: none;		
+		margin: 0 auto;
+		max-width: none;
 		border-radius: 16px;
 		display: none;
-		
-		.caution_terms {			
+
+		.caution_terms {
 			padding: 1px 0 0;
 			margin-bottom: 25px;
 			// border-radius: 12px;
@@ -32351,40 +32749,47 @@ table.tableRanking td {
 			max-height: 40vh;
 
 			@media (min-width: 320px) and (max-width: 360px) {
-				max-height: 24vh;				
+				max-height: 24vh;
 			}
+
 			/* 아이폰 SE (320x568) */
 			@media (max-width: 320px) {
-				max-height: 22vh;				
+				max-height: 22vh;
 			}
+
 			/* 아이폰 6/7/8 및 SE 2세대 (375x667) */
 			@media (min-width: 361px) and (max-width: 375px) {
 				max-height: 24vh;
 			}
+
 			/* 아이폰 XR/11 (414x896) */
 			@media (min-width: 376px) and (max-width: 414px) {
 				max-height: 28vh;
 			}
 		}
+
 		.form_wrap .payment_note {
 			display: flex;
 			flex-direction: column;
 			gap: 18px 10px;
 			margin-top: 8px;
+
 			.top {
 				display: flex;
 				justify-content: space-between;
 				align-items: center;
 				gap: 10px;
+
 				.s_txt {
-					width: calc(100% - 34px);				
+					width: calc(100% - 34px);
 					font-weight: bold;
 					color: #333;
 					display: inline-block;
 					line-height: 1.42;
 					font-size: 14px;
-					
+
 				}
+
 				.agree_guide {
 					display: inline-block;
 					padding: 5px 0 0 34px;
@@ -32392,6 +32797,7 @@ table.tableRanking td {
 					font-size: 14px;
 					color: #6a727b;
 				}
+
 				.show {
 					cursor: pointer;
 					position: relative;
@@ -32399,7 +32805,8 @@ table.tableRanking td {
 					box-sizing: border-box;
 					font-size: 0;
 					width: 7px;
-					height: 12px;					
+					height: 12px;
+
 					&::after {
 						content: "";
 						display: inline-block;
@@ -32412,23 +32819,26 @@ table.tableRanking td {
 						border-right: 1px solid #6a727b;
 						transform: rotate(135deg);
 					}
+
 					&.rotated::after {
 						top: 10px;
 						transform: rotate(-40deg);
 					}
-				}				
-			} 
+				}
+			}
 		}
+
 		input.chk_label {
 			display: none;
-			+ label {
+
+			+label {
 				display: flex;
 				align-items: center;
 				justify-content: flex-start;
 				gap: 0 8px;
 				position: relative;
 				cursor: pointer;
-				
+
 				&:before {
 					content: "";
 					display: block;
@@ -32440,12 +32850,14 @@ table.tableRanking td {
 					background: url('/img/checked.svg') no-repeat center center;
 				}
 			}
-			&:checked + label:before {
+
+			&:checked+label:before {
 				background-color: #404fc3;
 				background-image: url('/img/checked.svg');
 			}
-		}		
-		.agree_chk  {
+		}
+
+		.agree_chk {
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
@@ -32454,18 +32866,19 @@ table.tableRanking td {
 			box-sizing: border-box;
 			display: none;
 
-			input.chk_label {				
-				+ label:before {
+			input.chk_label {
+				+label:before {
 					border-color: transparent;
-				}			
+				}
 			}
-			input:checked + label:before {
+
+			input:checked+label:before {
 				content: "";
 				border-color: transparent;
 				background: url('/img/checked_ch.svg') no-repeat center 5px;
 			}
 
-			
+
 			.s_txt {
 				display: inline-block;
 				line-height: 1.42;
@@ -32483,10 +32896,12 @@ table.tableRanking td {
 				line-height: 1.42;
 				color: #939393;
 				word-break: normal;
-				word-wrap: break-word;				
-				&.agree_caution {					
+				word-wrap: break-word;
+
+				&.agree_caution {
 					padding-top: 0;
 					color: #939393;
+
 					b {
 						font-weight: 600;
 						color: #939393;
@@ -32520,19 +32935,22 @@ table.tableRanking td {
 			}
 
 		}
-		.paypal_linkBtn {			
+
+		.paypal_linkBtn {
 			display: flex;
 			align-items: center;
 			justify-content: center;
 			gap: 0 12px;
-			background-color: #F6C557;						
-			border-radius: 9px;			
-			span {				
+			background-color: #F6C557;
+			border-radius: 9px;
+
+			span {
 				font-size: 0.8125rem;
 				font-weight: bold;
-				color: #333;				
+				color: #333;
 			}
-			img {				
+
+			img {
 				display: inline-block;
 				width: auto;
 				height: 38px;
@@ -32583,49 +33001,55 @@ table.tableRanking td {
 .v_signalStreng.globalStock #wrap .modal.cardBox .pop_con .paypal_link {
 	display: flex;
 	flex-direction: column;
-    flex-wrap: wrap;
+	flex-wrap: wrap;
 	gap: 12px;
 	margin-top: 12px;
-    margin-bottom: 12px;
-    padding: 20px 16px;
-    border-radius: 8px;
-    background-color: #f7f8f9;    
-	.payment {		
-		color: #6A727B;		
+	margin-bottom: 12px;
+	padding: 20px 16px;
+	border-radius: 8px;
+	background-color: #f7f8f9;
+
+	.payment {
+		color: #6A727B;
 		font-size: 1rem;
-		font-weight: 400;		
-		
+		font-weight: 400;
+
 		.del_num {
 			display: inline-block;
 			padding: 0 4px 0 8px;
 			position: relative;
 			font-size: 0.875rem;
-		}	
+		}
+
 		.del_img {
 			position: absolute;
 			left: 2px;
 			top: -3px;
 		}
+
 		.sale_num {
 			padding-left: 4px;
-			color: var(--mian_color1, #404FC3);						
-			font-weight: 700;			
+			color: var(--mian_color1, #404FC3);
+			font-weight: 700;
 			font-size: 0.875rem;
 		}
 	}
+
 	.txt {
 		display: flex;
 		flex-wrap: nowrap;
 		align-items: center;
 		gap: 0 8px;
-		color: #444;		
+		color: #444;
 		font-size: 0.8125rem;
-		font-weight: 400;		
+		font-weight: 400;
+
 		a.paypal_linkBtn {
 			display: inline-block;
 			width: auto;
-			height: 33px;						
+			height: 33px;
 			border-radius: 6px;
+
 			img {
 				display: inline-block;
 				width: 100%;
@@ -32671,13 +33095,14 @@ table.tableRanking td {
 	b {
 		color: #6a727b;
 	}
+
 	.pay_guideTxt {
 		cursor: pointer;
 		font-size: 0.75rem;
 		font-weight: 500;
 		text-decoration: underline;
 		color: var(--mian_color1, #404FC3);
-		font-weight: 500;		
+		font-weight: 500;
 	}
 }
 
@@ -32881,15 +33306,16 @@ body.v_signalStreng {
 		font-size: 22px;
 		font-weight: 700;
 		line-height: 1.23;
-		color: #181f29;		
+		color: #181f29;
 	}
 
-	
-	.detail {		
+
+	.detail {
 		display: flex;
 		gap: 4px 4px;
 		align-items: center;
 		margin-top: 7.5px;
+
 		// 종목검색 주가 마켓 상태 구분
 		&.market_status {
 			.after_market {
@@ -32897,47 +33323,55 @@ body.v_signalStreng {
 				padding: 4px 6px;
 				align-items: center;
 				gap: 10px;
-				border-radius: 6px;				
+				border-radius: 6px;
 				background: #EFF0FE;
 				color: #7983D5;
-				font-size: 10px;			
-				font-weight: 400;			
-		
+				font-size: 10px;
+				font-weight: 400;
+
 			}
+
 			.pre_market {
 				display: flex;
 				padding: 4px 6px;
 				align-items: center;
 				gap: 10px;
-				border-radius: 6px;				
+				border-radius: 6px;
 				background: #FFF5E6;
 				color: #FFAA64;
-				font-size: 10px;			
-				font-weight: 400;			
-		
+				font-size: 10px;
+				font-weight: 400;
+
 			}
+
 			.num {
-				font-size: 13px !important;			
-				span, span b {
-					color: #333;			
-					font-size: 13px !important;			
+				font-size: 13px !important;
+
+				span,
+				span b {
+					color: #333;
+					font-size: 13px !important;
 					font-weight: 400 !important;
-				}				
+				}
 			}
+
 			.per {
 				top: 0;
-				span, span b {					
-					font-size: 13px !important;					
+
+				span,
+				span b {
+					font-size: 13px !important;
 					font-weight: 400 !important;
 					letter-spacing: -0.26px !important;
 				}
-				.day {					
-					font-size: 12px !important;										
+
+				.day {
+					font-size: 12px !important;
 				}
 			}
 		}
-		
-		
+
+
 	}
 
 	.detail .num {
@@ -32949,6 +33383,7 @@ body.v_signalStreng {
 		font-weight: 700;
 		line-height: 0.77;
 		color: #181f29;
+
 		b {
 			color: #181f29;
 		}
@@ -33085,6 +33520,7 @@ body.v_signalStreng {
 		display: flex;
 		max-width: 767px;
 		margin: 0 auto;
+
 		.detail.market_status {
 			display: none;
 		}
@@ -33635,27 +34071,28 @@ body.v_signalStreng {
 		.period_tabs {
 			display: flex;
 			justify-content: flex-start;
-			align-items: center;	
+			align-items: center;
 			gap: 10px;
 			margin: 0 auto 15px;
-			width: 100%;	
+			width: 100%;
 
 			li {
-				cursor: pointer;	
-				display: block;				
+				cursor: pointer;
+				display: block;
 				box-sizing: border-box;
 				padding: 8px 20px;
-				border-radius: 20px;		
+				border-radius: 20px;
 				border: 1px solid transparent;
 				text-align: center;
 				background-color: #ececef;
 				color: #939393;
 				font-size: 0.8125rem;
+
 				&.active {
-					background: #f7f8f9;			
+					background: #f7f8f9;
 					color: #404fc3;
 					font-weight: bold;
-				}	
+				}
 			}
 		}
 
@@ -33665,9 +34102,11 @@ body.v_signalStreng {
 		margin-top: 30px;
 		width: 100%;
 		height: 280px;
+
 		@media (min-width: 426px) {
 			height: 340px;
 		}
+
 		box-sizing: border-box;
 		// padding: 0 19px;
 		background-color: transparent;
@@ -33990,6 +34429,7 @@ body.v_signalStreng {
 	position: relative;
 	background-color: #fff;
 	padding: 32px 16px;
+
 	&::after {
 		content: "";
 		position: absolute;
@@ -34002,14 +34442,17 @@ body.v_signalStreng {
 		background-color: #f4f4f5;
 		z-index: 1;
 	}
+
 	&.chart_financials {
 		padding-bottom: 25px;
+
 		.chart_box {
 			border-bottom: none;
-			margin-bottom: 15px;			
+			margin-bottom: 15px;
 		}
+
 		.sum_title {
-			cursor: pointer;						
+			cursor: pointer;
 			font-size: 1rem !important;
 		}
 	}
@@ -34254,7 +34697,7 @@ body.v_signalStreng {
 	padding: 5px 0 10px;
 	margin-bottom: 30px;
 
-	.sum_title {		
+	.sum_title {
 		cursor: pointer;
 		flex: none;
 		display: flex;
@@ -34287,7 +34730,7 @@ body.v_signalStreng {
 	}
 
 	.chart_guide {
-		width: 100%;		
+		width: 100%;
 		position: relative;
 		font-size: 0.75rem;
 		line-height: 1.3;
@@ -34296,6 +34739,7 @@ body.v_signalStreng {
 		padding: 0 24px;
 		word-break: break-all;
 		word-wrap: break-word;
+
 		&::before {
 			content: "";
 			position: absolute;
@@ -34387,6 +34831,7 @@ body.v_signalStreng {
 	fill: #969EA7 !important;
 	font-weight: 400 !important;
 }
+
 .v_signalStreng.globalStock #wrap #container .mainBox.financials .chart_box .financials_style .highcharts-label.highcharts-tooltip text {
 	// font-size: 12px !important;
 	// color: #969EA7 !important;
@@ -34431,32 +34876,34 @@ body.v_signalStreng {
 	text-shadow: none;
 	stroke-width: 0;
 }
-.v_signalStreng.globalStock #wrap #container .mainBox.financials .chart_box .ma_period_wrap {	
+
+.v_signalStreng.globalStock #wrap #container .mainBox.financials .chart_box .ma_period_wrap {
 	display: flex;
-    justify-content: flex-start;
-	align-items: center;	
+	justify-content: flex-start;
+	align-items: center;
 	gap: 10px;
 	margin: 0 auto;
-	width: 100%;	
+	width: 100%;
 
-	.ma_period_btn {			
-		cursor: pointer;	
-		display: block;				
+	.ma_period_btn {
+		cursor: pointer;
+		display: block;
 		box-sizing: border-box;
 		padding: 8px 20px;
-		border-radius: 20px;		
+		border-radius: 20px;
 		border: 1px solid transparent;
 		background-color: #ececef;
 		color: #939393;
 		font-size: 0.8125rem;
+
 		&.active {
-			background: #f7f8f9;			
+			background: #f7f8f9;
 			color: #404fc3;
 			font-weight: bold;
-		}	
-		
+		}
+
 	}
-	
+
 }
 
 .v_signalStreng.globalStock #wrap #container .mainBox.financials .chart_box .premiumLock_area {
@@ -35304,9 +35751,11 @@ body.v_signalStreng {
 	background-color: #f7f8f9;
 	box-sizing: border-box;
 	padding: 17px 16px;
+
 	@media (min-width:320px) and (max-width: 374px) {
 		padding: 15px 12px;
-	}	
+	}
+
 	border-radius: 16px;
 }
 
@@ -35344,9 +35793,11 @@ body.v_signalStreng {
 	align-items: baseline;
 	gap: 4px 5px;
 	max-width: calc(100% - 140px);
+
 	@media (min-width:320px) and (max-width: 374px) {
 		max-width: calc(100% - 140px);
 	}
+
 	box-sizing: border-box;
 	font-size: 1rem;
 	font-weight: 700;
@@ -35397,6 +35848,7 @@ body.v_signalStreng {
 	width: 72px;
 	box-sizing: border-box;
 }
+
 .v_signalStreng.globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .recipe_area .area .logo_list .revenue .increase.dod b {
 	color: #f00;
 	font-weight: 300;
@@ -35453,10 +35905,11 @@ body.v_signalStreng {
 	color: #26ABFF;
 	font-size: 1.125rem;
 }
+
 .v_signalStreng.globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .recipe_area .area .logo_list .revenue .increase.dod,
 .v_signalStreng.globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .recipe_area .area .logo_list .revenue .same.dod,
-.v_signalStreng.globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .recipe_area .area .logo_list .revenue .decrease.dod{
-	margin-top: 0;	
+.v_signalStreng.globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .recipe_area .area .logo_list .revenue .decrease.dod {
+	margin-top: 0;
 }
 
 .v_signalStreng.globalStock .sub_recom .sub_mid.eventPicks_area .ptfo_area .day {
@@ -35490,11 +35943,12 @@ body.v_signalStreng {
 
 // 관심종목 리스트 개편 250219
 .sub_mid.latest_results {
-	.interest_list {		
-		display: flex;		
+	.interest_list {
+		display: flex;
 		flex-direction: column;
 		gap: 8px 8px;
 		padding: 24px 16px;
+
 		.stock_info {
 			display: flex;
 			flex-wrap: nowrap;
@@ -35506,12 +35960,13 @@ body.v_signalStreng {
 			box-sizing: border-box;
 			border-radius: 16px;
 			background: #F4F4F5;
-			
-			.title_logo {							
+
+			.title_logo {
 				width: 45px;
 				display: flex;
 				align-items: center;
 				gap: 0 30px;
+
 				.logo {
 					display: inline-flex;
 					justify-content: center;
@@ -35522,7 +35977,8 @@ body.v_signalStreng {
 					background-color: #fff;
 					background-size: 28px 28px;
 					background-repeat: no-repeat;
-					background-position: center center;	
+					background-position: center center;
+
 					img {
 						display: inline-block;
 						width: 80%;
@@ -35530,104 +35986,123 @@ body.v_signalStreng {
 					}
 				}
 			}
-			.detail {							
+
+			.detail {
 				display: flex;
 				flex-direction: column;
 				justify-content: space-between;
-				align-items: flex-start;			
-				gap: 5px 5px;				
+				align-items: flex-start;
+				gap: 5px 5px;
 				width: calc(100% - 48px);
-				.title {								
-					color: #333;					
-					font-size: 15px;					
-					font-weight: 500;					
+
+				.title {
+					color: #333;
+					font-size: 15px;
+					font-weight: 500;
 					display: inline-block;
-					text-align: left;					
-					width: 480px;											
+					text-align: left;
+					width: 480px;
+
 					@media (max-width: 374px) {
 						max-width: 150px;
 					}
+
 					@media (min-width: 375px) and (max-width: 767px) {
 						max-width: 160px;
 					}
+
 					@media (min-width: 768px) and (max-width: 1023px) {
 						max-width: 480px;
 					}
+
 					overflow: hidden;
 					text-overflow: ellipsis;
 					white-space: nowrap;
-					
+
 				}
 
 			}
+
 			.detail_num {
-				width: 100%;	
+				width: 100%;
 				display: flex;
-				align-items: baseline;							
+				align-items: baseline;
 				justify-content: flex-start;
-				gap: 4px 4px;							
+				gap: 4px 4px;
+
 				.num {
-					color: #333;						
-					font-size: 15px;					
-					font-weight: 700;					
-					span {								
-						color: #333;					
-						font-size: 15px;					
-						font-weight: 700;												
+					color: #333;
+					font-size: 15px;
+					font-weight: 700;
+
+					span {
+						color: #333;
+						font-size: 15px;
+						font-weight: 700;
 					}
 				}
+
 				.per {
-					color: #363F4B;					
-					font-size: 15px;					
-					font-weight: 500;										
+					color: #363F4B;
+					font-size: 15px;
+					font-weight: 500;
+
 					.increase {
 						color: #FF2929;
+
 						b {
 							color: #FF2929;
 						}
 					}
+
 					.decrease {
-						color: #26ABFF;									
+						color: #26ABFF;
+
 						b {
-							color: #26ABFF;									
+							color: #26ABFF;
 						}
 					}
+
 					.same {
-						color: #333;									
+						color: #333;
+
 						b {
-							color: #333;									
+							color: #333;
 						}
 					}
 				}
 			}
-			.data_opinion {			
-				margin-left: auto;			
+
+			.data_opinion {
+				margin-left: auto;
+
 				.signal {
 					display: flex;
 					justify-content: center;
-					align-items: center;					
+					align-items: center;
 					padding: 5px 10px;
-					border-radius: 16px;		
+					border-radius: 16px;
 					width: 20px;
-					color: #FFF;					
-					font-size: 13px;					
-					font-weight: 500;					
-									
+					color: #FFF;
+					font-size: 13px;
+					font-weight: 500;
+
 					&.buy {
 						background-color: #FF4500;
 					}
-					
+
 					&.sell {
 						background-color: #1E90FF;
 					}
-					
+
 					&.hold {
 						background-color: #008000;
 					}
-					
+
 					&.waitting {
 						background-color: #a1a1a1;
 					}
+
 					&.prm_lock {
 						padding: 7px 10px 3px;
 						background-color: #C7CCD1;
@@ -35635,77 +36110,82 @@ body.v_signalStreng {
 				}
 			}
 		}
+
 		.select_area {
 			display: flex;
 			flex-wrap: nowrap;
 			align-items: center;
 			gap: 12px 12px;
 
-			.selectbox {
+			.selectBoxList {
+				position: relative;
 				width: 100%;
-				margin: 0;
-				padding: 0;
-				height: auto;
-				&:before {
-					background: none;
-					content: "";
-					display: inline-block;
-					width: 6px;
-					height: 6px;
-					position: absolute;
-					top: 13px;
-					right: 10px;
-					border-top: 1px solid #6a727b;
-					border-right: 1px solid #6a727b;
-					transform: rotate(135deg);
-				}
-				.t_label {					
-					width: 100%;
-					// height: 42px;
-					padding: 8px 16px;
-					box-sizing: border-box;
-					border-radius: 8px;
-					border: solid 1px #e0e4e9;
-					background-color: #fff;					
-					color: #6A727B;					
-					font-size: 14px;
-					font-weight: 500;					
-					left: 0;
-					z-index: -1;
-				}
-				option {
-					display: block;
-					width: 100%;
-					box-sizing: border-box;
-					color: #6A727B;					
-					font-size: 14px;
-					font-weight: 500;					
-				}
 				
+				&::after {
+					content: "";
+					position: absolute;
+					width: 5px;
+					height: 5px;
+					border-top: 1px solid #3555d5;
+					border-right: 1px solid #3555d5;
+					transform: rotate(135deg);
+					display: inline-block;
+					right: 10px;
+					top: 12px;
+					z-index: 99;
+				}
 			}
+		
 			select {
-				height: 32px;
-				padding: 0 24px 0 12px;				
-				box-sizing: border-box;				
+				cursor: pointer;
+				width: 100%;
+				padding: 8px 16px;
+				box-sizing: border-box;
+				border-radius: 8px;
+				border: solid 1px #e0e4e9;
+				background-color: #fff;
+				color: #6A727B;
+				font-size: 14px;
+				font-weight: 500;				
+				height: 34px;
+				padding: 0 24px 0 12px;
+				opacity: 1;				
+				appearance: none; // 기본 셀렉트 스타일 제거				
+		
+				&:disabled {
+					background-color: red;
+					cursor: not-allowed;
+					opacity: 0.7;
+				}
+		
+				&:focus {
+					outline: none;
+				}
 			}
-			.sort_manage {				
+
+			
+			.sort_manage {
 				display: flex;
 				align-items: center;
-				gap: 8px 8px;				
+				gap: 8px 8px;
 				margin-left: auto;
-				a, button {
+
+				a,
+				button {
 					cursor: pointer;
-					color: #6A727B;					
-					font-size: 14px;					
+					color: #6A727B;
+					font-size: 14px;
 					font-weight: 500;
 					padding: 0 4px;
-					border: none;					
+					border: none;
 					background: none;
 					outline: none;
 				}
+
 				.btn_manage_group {
 					position: relative;
 					padding-right: 0;
+
 					&::before {
 						content: "";
 						position: absolute;
@@ -35717,8 +36197,8 @@ body.v_signalStreng {
 						background-color: #E0E4E9;
 					}
 				}
-			}			
-			
+			}
+
 		}
 	}
 }
@@ -35896,8 +36376,8 @@ body.v_signalStreng {
 
 
 
-.v_signalStreng.globalStock .signalpop.event2024_payment {		
-	.content {		
+.v_signalStreng.globalStock .signalpop.event2024_payment {
+	.content {
 		background: #fff url('/img/signalpop_sdwbg.png') repeat-x left bottom;
 		background-size: contain;
 
@@ -36388,27 +36868,32 @@ body.v_signalStreng {
 
 // 산업 분류 2단계 셀렉트 박스
 .class_filter {
-	display: flex;	
+	display: flex;
 	flex-wrap: nowrap;
 	gap: 3px;
-	margin: 8px auto 0;					
+	margin: 8px auto 0;
 	box-sizing: border-box;
+
 	label {
 		width: 100%;
-		font-size: 0.75rem;		
-		color: #333;		
+		font-size: 0.75rem;
+		color: #333;
 	}
+
 	.selectBoxList {
 		position: relative;
 		width: 100%;
+
 		&:first-child {
-			flex: 1;			
+			flex: 1;
 			max-width: 140px;
 		}
-		&:last-child {			
-			flex: 3;		
-			max-width: calc(100% - 140px);			
+
+		&:last-child {
+			flex: 3;
+			max-width: calc(100% - 140px);
 		}
+
 		&::after {
 			content: "";
 			position: absolute;
@@ -36419,22 +36904,22 @@ body.v_signalStreng {
 			transform: rotate(135deg);
 			display: inline-block;
 			right: 9px;
-    		top: 11px;
+			top: 11px;
 			z-index: 99;
 		}
 	}
 
-	select {				
+	select {
 		cursor: pointer;
 		padding: 8px 6px;
 		padding-right: 20px;
 		box-sizing: border-box;
-		font-size: 	0.875rem;
+		font-size: 0.875rem;
 		border: 1px solid #ddd;
-		border-radius: 4px;		
+		border-radius: 4px;
 		background-color: #fff;
-		color: #333;		
-		opacity: 1;		
+		color: #333;
+		opacity: 1;
 		width: 100%;
 		appearance: none; // 기본 셀렉트 스타일 제거				
 
@@ -36443,8 +36928,8 @@ body.v_signalStreng {
 			cursor: not-allowed;
 			opacity: 0.7;
 		}
-	
-		&:focus {		
+
+		&:focus {
 			outline: none;
 		}
 	}
@@ -36452,23 +36937,26 @@ body.v_signalStreng {
 
 .filter_nodata {
 	margin: 20px 0 0;
-    border-radius: 20px;
-    background: #f7f8f9 url('/img/bg_nodata.png') no-repeat center 50px;	
-    box-sizing: border-box;
-    padding-top: 240px;
-    padding-bottom: 15px;
-    text-align: center;
+	border-radius: 20px;
+	background: #f7f8f9 url('/img/bg_nodata.png') no-repeat center 50px;
+	box-sizing: border-box;
+	padding-top: 240px;
+	padding-bottom: 15px;
+	text-align: center;
+
 	.txt {
 		color: #939393;
 		font-size: 0.9375rem;
 		font-weight: normal;
 	}
 }
+
 .sub_mid.recipe_view {
 	.filter_nodata {
 		background-color: #fff !important;
 	}
 }
+
 .family_banner {
 	padding: 35px 15px 0;
 }
