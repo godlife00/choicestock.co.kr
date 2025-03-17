@@ -85,7 +85,7 @@
             <!-- //gnb -->
             <!-- 주요 콘텐츠 -->
 
-            <div class="no_attdata" style="display: none;">
+            <div class="no_attdata">
                 <p>관심종목을 먼저 등록해 주세요.<br><br>
                     종목을 검색하여 종목명 옆의 하트(♥)를 <br>
                     누르면 관심종목으로 등록됩니다.</p>
@@ -428,8 +428,10 @@
         </div>
         <div class="pop_con">                                        
             <div class="group_name_input">
-                <input type="text" placeholder="그룹이름을 입력하세요" class="name_input" oninput="this.nextElementSibling.innerText = (this.value.length > 10 ? 10 : this.value.length) + '/10'" maxlength="10">
-                <span class="input_cunt">0/10</span>
+                <input type="text" placeholder="그룹이름을 입력하세요" class="name_input"
+                    oninput="this.nextElementSibling.children[0].innerText = (this.value.length > 15 ? 15 : this.value.length)"
+                    maxlength="15">
+                <span class="input_count"><b>0</b>/15</span>
             </div>
 
             <div class="btnArea edtBtn">

@@ -919,8 +919,10 @@
                     </svg>
                 </button>
                 <div class="group_name_input">                    
-                    <input type="text" placeholder="그룹이름을 입력하세요" class="name_input" oninput="this.nextElementSibling.innerText = (this.value.length > 10 ? 10 : this.value.length) + '/10'" maxlength="10">
-                    <span class="input_count"><b>0</b>/10</span>
+                    <input type="text" placeholder="그룹이름을 입력하세요" class="name_input"
+                        oninput="this.nextElementSibling.children[0].innerText = (this.value.length > 15 ? 15 : this.value.length)"
+                        maxlength="15">
+                    <span class="input_count"><b>0</b>/15</span>
                 </div>
             </div>            
 

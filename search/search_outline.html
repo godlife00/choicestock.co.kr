@@ -990,9 +990,7 @@
                     <h1 class="pop_title">관심종목 등록</h1>
                     <div>
                         <p class="sum_txt">관심종목 등록으로 종목정보를 빠르게 확인하세요.</p>
-                        <ul>
-                            <li class="sum_txt">*프리미엄회원은 관심종목 알림서비스가 제공됩니다.</li>
-                        </ul>
+                        <p class="sum_txt">프리미엄회원은 관심종목 알림서비스가 제공됩니다.</p>                        
                     </div>
 
                     <span class="clse">
@@ -1002,7 +1000,11 @@
                 <div class="pop_con">
                     <!-- 그룹 선택 -->
                     <div class="group_select">
-                        <button class="group_add_btn">+ 그룹추가</button>
+                        <button class="group_add_btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <circle cx="10" cy="10" r="10" fill="#404FC3"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.4 9.4V5H10.6V9.4H15V10.6H10.6V15H9.4V10.6H5V9.4H9.4Z" fill="white"/>
+                          </svg>그룹 추가</button>
                     </div>
 
                     <ul class="fav_list">
@@ -1013,11 +1015,9 @@
 
                         <li class="fav_item"><input type="checkbox" name="reg_fav" data-group-id="1" id="reg_fav1"
                             class="fav_checkbox">
-                        <label for="reg_fav1">관 1</label>
-                        </li>
+                        <label for="reg_fav1">관 1</label></li>
                         <li class="fav_item">
-                            <input type="checkbox" name="reg_fav" data-group-id="2" id="reg_fav2"
-                                class="fav_checkbox"><label for="reg_fav2">관심 3</label>
+                            <input type="checkbox" name="reg_fav" data-group-id="2" id="reg_fav2"class="fav_checkbox"><label for="reg_fav2">관심 3</label>
                         </li>
                     </ul>
 
@@ -1061,9 +1061,9 @@
                 <div class="pop_con">
                     <div class="group_name_input">
                         <input type="text" placeholder="그룹이름을 입력하세요" class="name_input"
-                            oninput="this.nextElementSibling.innerText = (this.value.length > 10 ? 10 : this.value.length) + '/10'"
-                            maxlength="10">
-                        <span class="input_cunt">0/10</span>
+                            oninput="this.nextElementSibling.children[0].innerText = (this.value.length > 15 ? 15 : this.value.length)"
+                            maxlength="15">
+                        <span class="input_count"><b>0</b>/15</span>
                     </div>
 
                     <div class="btnArea edtBtn">

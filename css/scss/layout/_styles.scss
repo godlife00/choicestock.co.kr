@@ -1116,7 +1116,7 @@ table.tableRanking td {
 		box-sizing: border-box;
 		border-radius: 8px;
 		background: #F4F4F5;
-		color: #404FC3;
+		color: #161B23;
 		font-size: 16px;
 		font-weight: 700;
 	}
@@ -1130,20 +1130,20 @@ table.tableRanking td {
 	overflow: auto;
 	overflow-x: hidden;
 	position: relative;
-	height: calc(100vh - 290px);
+	min-height: calc(100vh - 305px);
 
-	&::after {
-		content: '';
-		display: block;
-		position: sticky;
-		left: 0;
-		right: 0;
-		bottom: 0;
-		width: 100%;
-		height: 40px;
-		padding-top: 30px;
-		box-shadow: inset 0 -24px 15px 0px rgba(255, 255, 255, 0.9)
-	}
+	// &::after {
+	// 	content: '';
+	// 	display: block;
+	// 	position: sticky;
+	// 	left: 0;
+	// 	right: 0;
+	// 	bottom: 0;
+	// 	width: 100%;
+	// 	height: 40px;
+	// 	padding-top: 30px;
+	// 	box-shadow: inset 0 -24px 15px 0px rgba(255, 255, 255, 0.9)
+	// }
 
 	input[type=checkbox].list_del {
 		display: none;
@@ -1229,8 +1229,9 @@ table.tableRanking td {
 
 .globalStock .sub_search .att_wrap {
 	.btnArea.edtBtn {
-		position: sticky;
-		bottom: 76px;
+		// position: sticky;
+		// bottom: 76px;
+		// border: 2px solid red;
 
 		.btn {
 			background: #404fc3;

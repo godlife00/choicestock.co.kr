@@ -1446,7 +1446,7 @@ table.tableRanking td {
   box-sizing: border-box;
   border-radius: 8px;
   background: #F4F4F5;
-  color: #404FC3;
+  color: #161B23;
   font-size: 16px;
   font-weight: 700;
 }
@@ -1459,19 +1459,7 @@ table.tableRanking td {
   overflow: auto;
   overflow-x: hidden;
   position: relative;
-  height: calc(100vh - 290px);
-}
-.globalStock .sub_search .att_wrap .att_list::after {
-  content: "";
-  display: block;
-  position: sticky;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 40px;
-  padding-top: 30px;
-  box-shadow: inset 0 -24px 15px 0px rgba(255, 255, 255, 0.9);
+  min-height: calc(100vh - 305px);
 }
 .globalStock .sub_search .att_wrap .att_list input[type=checkbox].list_del {
   display: none;
@@ -1541,10 +1529,6 @@ table.tableRanking td {
   font-weight: 500;
 }
 
-.globalStock .sub_search .att_wrap .btnArea.edtBtn {
-  position: sticky;
-  bottom: 76px;
-}
 .globalStock .sub_search .att_wrap .btnArea.edtBtn .btn {
   background: #404fc3;
   border: 1px solid #404fc3;
@@ -37463,6 +37447,9 @@ body.v_signalStreng {
   color: #161c40;
 }
 
+.modal.att_pop {
+  border-radius: 16px;
+}
 .modal.att_pop.fav_group_manage_popup, .modal.att_pop.fav_group_move_popup, .modal.att_pop.fav_reg_popup {
   box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.1);
   border-radius: 0;
@@ -37486,7 +37473,7 @@ body.v_signalStreng {
   top: 24px;
 }
 .modal.att_pop.fav_group_manage_popup .pop_con, .modal.att_pop.fav_group_move_popup .pop_con, .modal.att_pop.fav_reg_popup .pop_con {
-  padding: 0px 16px 25px;
+  padding: 0px 16px 44px;
 }
 .modal.att_pop.fav_group_manage_popup::after, .modal.att_pop.fav_group_move_popup::after, .modal.att_pop.fav_reg_popup::after {
   content: "";
@@ -37502,6 +37489,11 @@ body.v_signalStreng {
 }
 .modal.att_pop.fav_group_com_popup .pop_con .alt_txt {
   text-align: center;
+  color: #000;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px; /* 125% */
+  min-height: 44px;
 }
 .modal.att_pop.fav_group_manage_popup .pop_con .fav_item .label {
   gap: 3px 2px;
@@ -37535,10 +37527,29 @@ body.v_signalStreng {
   box-sizing: border-box;
 }
 .modal.att_pop .pop_header .sum_txt {
-  color: #939393;
-  font-size: 12px;
-  font-weight: 500;
-  line-height: 16px; /* 133.333% */
+  position: relative;
+  color: var(--Font-secondary-caption, #6B7684);
+  font-family: var(--Body, Pretendard);
+  font-size: var(--Size-xs-13, 13px);
+  font-weight: var(--Weight-500, 500);
+  line-height: var(--Line-height-xs-13, 16px); /* 123.077% */
+  letter-spacing: var(--Tracking-md, 0.03px);
+  padding-left: 9px;
+  margin-top: 4px;
+}
+.modal.att_pop .pop_header .sum_txt:first-child {
+  margin-top: 0;
+}
+.modal.att_pop .pop_header .sum_txt::before {
+  content: "";
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  position: absolute;
+  left: 0;
+  top: 5px;
+  border-radius: 50%;
+  background: var(--Font-secondary-caption, #6B7684);
 }
 .modal.att_pop .pop_header .clse::before, .modal.att_pop .pop_header .clse::after {
   width: 2px;
@@ -37570,7 +37581,7 @@ body.v_signalStreng {
   color: #D3D3D3;
   font-size: 14px;
   font-weight: 400;
-  padding: 0 16px;
+  padding: 0 16px 0 13px;
   box-sizing: border-box;
 }
 .modal.att_pop .pop_con .group_name_input:focus-within {
@@ -37585,17 +37596,17 @@ body.v_signalStreng {
   width: 100%;
   height: 40px;
   color: #333;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
 }
 .modal.att_pop .pop_con .group_name_input .name_input::-moz-placeholder {
   color: #D3D3D3;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
 }
 .modal.att_pop .pop_con .group_name_input .name_input::placeholder {
   color: #D3D3D3;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
 }
 .modal.att_pop .pop_con .group_name_input .input_count {
@@ -37632,11 +37643,27 @@ body.v_signalStreng {
   font-size: 15px;
   font-weight: 700;
 }
+.modal.att_pop .pop_con .group_add_btn span, .modal.att_pop .pop_con .group_reg_btn span {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
 .modal.att_pop .pop_con .fav_list {
+  position: relative;
   max-height: 40vh;
   overflow-y: auto;
   list-style: none;
   padding: 8px 0 0;
+}
+.modal.att_pop .pop_con .fav_list::after {
+  content: "";
+  display: block;
+  position: sticky;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 20px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0.6%, #FFF 100.6%);
 }
 .modal.att_pop .pop_con .fav_list .cunt {
   color: #939393;
@@ -37668,6 +37695,7 @@ body.v_signalStreng {
   height: 24px;
   position: relative;
   cursor: pointer;
+  padding-left: 8px;
 }
 .modal.att_pop .pop_con .alt_txt {
   color: #000;
