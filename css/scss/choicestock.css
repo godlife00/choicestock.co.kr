@@ -37609,11 +37609,11 @@ body.v_signalStreng {
   font-size: 16px;
   font-weight: 400;
 }
-.modal.att_pop .pop_con .group_name_input .input_count {
+.modal.att_pop .pop_con .group_name_input .input_count, .modal.att_pop .pop_con .group_name_input .input_cunt {
   font-size: 13px;
   font-weight: 500;
 }
-.modal.att_pop .pop_con .group_name_input .input_count b {
+.modal.att_pop .pop_con .group_name_input .input_count b, .modal.att_pop .pop_con .group_name_input .input_cunt b {
   font-weight: 500;
   color: #404FC3;
 }
