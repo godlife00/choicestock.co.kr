@@ -34817,7 +34817,7 @@ body.v_signalStreng {
   background-color: #1E90FF;
 }
 .sub_mid.latest_results .interest_list .stock_info .data_opinion .signal.hold {
-  background-color: #008000;
+  background-color: #4DC589;
 }
 .sub_mid.latest_results .interest_list .stock_info .data_opinion .signal.waitting {
   background-color: #a1a1a1;
@@ -37579,7 +37579,7 @@ body.v_signalStreng {
   background-color: #000;
   border-radius: 16px;
 }
-.modal.att_pop.fav_group_com_popup .pop_con .alt_txt, .modal.att_pop.fav_item_del_popup .pop_con .alt_txt {
+.modal.att_pop.fav_group_com_popup .pop_con .alt_txt, .modal.att_pop.fav_item_del_popup .pop_con .alt_txt, .modal.att_pop.fav_item_del_popup2 .pop_con .alt_txt, .modal.att_pop.fav_item_move_popup .pop_con .alt_txt, .modal.att_pop.fav_group_com_popup2 .pop_con .alt_txt, .modal.att_pop.fav_group_regname_popup .pop_con .alt_txt {
   text-align: center;
   color: #000;
   font-size: 16px;

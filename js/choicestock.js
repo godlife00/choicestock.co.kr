@@ -1692,7 +1692,7 @@ $(document).ready(function () {
         $('.fav_group_del_popup').show().addClass('slideUp'); // 그룹 추가 펍옵 표시
     });
     // 관심그룹 수정,삭제
-    $('.fav_group_del_popup .clse, .fav_group_del_popup .btn_save, .fav_group_com_popup .clse, .fav_group_com_popup .btn_save').on('click', function () {      
+    $('fav_item_del_popup .btn_save').on('click', function () {      
         $('.modal').hide().removeClass('slideUp'); // 다른 모달 숨기기
         $('.blocker').show(); // 배경 블러 처리
         $('html, body').css("overflow", "hidden");        
