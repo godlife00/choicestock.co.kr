@@ -325,7 +325,7 @@ $(document).ready(function () {
                 $(this).val('').removeClass('keydown');
                 $(autocompleteSelector).removeClass('focus_on').hide();
             } else if (trimmedValue.length === 0) {
-                console.log("인풋 값이 비어있음:", inputSelector);
+                // console.log("인풋 값이 비어있음:", inputSelector);
             }
             
         });
@@ -983,6 +983,25 @@ $(document).ready(function () {
             document.querySelector('.swiper-pagination').style.display = 'none';
         }
     }
+
+    // 메인 하단, 관심 종목 상단 스와이프 배너
+    if ($('.swipe_banner').length) {  
+        var slideCount = document.querySelectorAll('.swipe_banner .swiper-slide').length;
+        var swiper = new Swiper(".swipe_banner", {
+            slidesPerView: 1, // 한 번에 보이는 슬라이드 수를 1로 설정
+            spaceBetween: 16,
+            // 슬라이드가 두 개 이상일 때만 자동재생
+            loop: slideCount > 1, // 슬라이드가 2개 이상일 때만 loop 설정
+            autoplay: slideCount > 1 ? {
+                delay: 3000,
+                disableOnInteraction: false,
+            } : false,
+            pagination: slideCount > 1 ? {
+                el: ".swiper-pagination",
+                type: "fraction",
+            } : false,
+        });
+    };
 
 
     /************************/

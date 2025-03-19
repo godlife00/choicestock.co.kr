@@ -1241,6 +1241,14 @@ table.tableRanking td {
   height: 100%;
 }
 
+.swiper-container-initialized {
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  z-index: 1;
+}
+
 .swiper-slide {
   display: flex;
   justify-content: center;
@@ -35580,6 +35588,105 @@ body.v_signalStreng {
   display: inline-block;
   width: 100%;
   height: 100%;
+}
+
+.swipe_banner {
+  position: relative;
+  margin: 24px 16px 0;
+}
+.swipe_banner .swiper-slide {
+  justify-content: flex-start;
+  width: auto;
+  visibility: hidden;
+}
+.swipe_banner .swiper-slide.swiper-slide-active {
+  visibility: visible;
+}
+.swipe_banner .swiper-pagination {
+  visibility: hidden;
+  left: auto;
+  right: 8px;
+  bottom: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: right;
+  justify-content: flex-end;
+  width: auto;
+  padding: 3px 8px;
+  border-radius: var(--Radius-r-07, 100px);
+  background: rgba(0, 0, 0, 0.3);
+  color: #FFF;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.swipe_banner .swiper-pagination.swiper-pagination-fraction {
+  visibility: visible;
+}
+.swipe_banner .swiper-pagination span {
+  letter-spacing: 1px;
+  color: #FFF;
+  font-family: Pretendard;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: normal;
+}
+.swipe_banner .banner {
+  display: flex;
+  align-items: center;
+  gap: 4px 12px;
+  width: 100%;
+  height: 84px;
+  padding: 18px 16px;
+  box-sizing: border-box;
+  border-radius: var(--Spacing-s-06, 16px);
+  background: #ECEFFD;
+}
+.swipe_banner .banner .img {
+  position: relative;
+  display: inline-flex;
+  background-color: #fff;
+  width: 48px;
+  height: 48px;
+}
+.swipe_banner .banner .img .event_belt {
+  position: absolute;
+  left: -11px;
+  top: -5px;
+  display: inline-flex;
+  border-radius: 100px;
+  background: var(--Yellow-yellow500, #FFD120);
+  padding: 3px 6px;
+  color: var(--Gray-gray800, #24282C);
+  font-size: 10px;
+  font-weight: 700;
+  line-height: normal;
+  transform: rotate(-30deg);
+}
+.swipe_banner .banner .txt_flx {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 4px 4px;
+}
+.swipe_banner .banner .banner_text {
+  color: var(--Gray-gray600, #6B7684);
+  font-family: Pretendard;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: normal;
+}
+.swipe_banner .banner .banner_title {
+  color: var(--Gray-gray800, #24282C);
+  font-family: Pretendard;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: normal;
 }
 
 .v_signalStreng.globalStock #wrap #container .tooltip {
