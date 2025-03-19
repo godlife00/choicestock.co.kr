@@ -34831,7 +34831,9 @@ body.v_signalStreng {
   background-color: #a1a1a1;
 }
 .sub_mid.latest_results .interest_list .stock_info .data_opinion .signal.prm_lock {
-  padding: 7px 10px 3px;
+  min-width: 40px;
+  height: 23px;
+  box-sizing: border-box;
   background-color: #C7CCD1;
 }
 .sub_mid.latest_results .interest_list .select_area {

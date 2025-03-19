@@ -36106,8 +36106,10 @@ body.v_signalStreng {
 					}
 
 					&.prm_lock {
-						padding: 7px 10px 3px;
-						background-color: #C7CCD1;
+						min-width: 40px;						
+						height: 23px;
+						box-sizing: border-box;
+						background-color: #C7CCD1;						
 					}
 				}
 			}
