@@ -529,6 +529,7 @@ body,
 .globalStock .banner_event .link_banner img {
 	display: inline-block;
 	width: 100%;
+	width: 100%;
 }
 
 /* 이벤트 스와이프 배너 banner_event */
@@ -1127,7 +1128,7 @@ table.tableRanking td {
 		box-sizing: border-box;
 		border-radius: 8px;
 		background: #F4F4F5;
-		color: #161B23;
+		color: #404FC3;
 		font-size: 16px;
 		font-weight: 700;
 	}
@@ -1141,20 +1142,20 @@ table.tableRanking td {
 	overflow: auto;
 	overflow-x: hidden;
 	position: relative;
-	min-height: calc(100vh - 305px);
+	height: calc(100vh - 290px);
 
-	// &::after {
-	// 	content: '';
-	// 	display: block;
-	// 	position: sticky;
-	// 	left: 0;
-	// 	right: 0;
-	// 	bottom: 0;
-	// 	width: 100%;
-	// 	height: 40px;
-	// 	padding-top: 30px;
-	// 	box-shadow: inset 0 -24px 15px 0px rgba(255, 255, 255, 0.9)
-	// }
+	&::after {
+		content: '';
+		display: block;
+		position: sticky;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		width: 100%;
+		height: 40px;
+		padding-top: 30px;
+		box-shadow: inset 0 -24px 15px 0px rgba(255, 255, 255, 0.9)
+	}
 
 	input[type=checkbox].list_del {
 		display: none;
@@ -1221,10 +1222,9 @@ table.tableRanking td {
 }
 
 .globalStock .sub_search .att_wrap .att_list span.title {
-	color: #333;	
-	font-size: 16px;	
-	font-weight: 500;
-	padding-left: 4px;	
+	color: #333;
+	font-size: 15px;
+	font-weight: 700;
 	max-width: 180px;
 	overflow: hidden;
 	text-overflow: ellipsis;
@@ -1240,9 +1240,8 @@ table.tableRanking td {
 
 .globalStock .sub_search .att_wrap {
 	.btnArea.edtBtn {
-		// position: sticky;
-		// bottom: 76px;
-		// border: 2px solid red;
+		position: sticky;
+		bottom: 76px;
 
 		.btn {
 			background: #404fc3;
@@ -1272,20 +1271,20 @@ table.tableRanking td {
 		min-height: 300px;
 		max-height: 336px;
 		overflow: auto;
-	}  
+	}
 
 	.att_list::-webkit-scrollbar {
 		width: 3px;
 	}
-	
+
 	.att_list::-webkit-scrollbar-thumb {
 		background: #e8e8e8;
 	}
-	
+
 	.att_list .list {
 		position: relative;
 	}
-	
+
 	.att_list .list i,
 	.att_list .list .btn_del {
 		display: inline-block;
@@ -1298,7 +1297,7 @@ table.tableRanking td {
 		vertical-align: top;
 		z-index: 999;
 	}
-	
+
 	.att_list li {
 		background: #fff;
 		border: none;
@@ -1311,7 +1310,7 @@ table.tableRanking td {
 		margin-left: 10px;
 		box-sizing: border-box;
 	}
-	
+
 	.att_list li .handle {
 		position: absolute;
 		right: 5px;
@@ -1323,18 +1322,18 @@ table.tableRanking td {
 		font-size: 0;
 		background-size: 20px 12px
 	}
-	
+
 	.att_list li a {
 		color: #333;
 		font-size: 0.9375rem;
 	}
-	
+
 	.att_list li .ticker {
 		margin-left: 7px;
 		color: #d3d3d3;
 		font-size: 0.78rem;
 	}
-	
+
 	.btn_list.fix_btn {
 		left: 0;
 		right: 0;
@@ -1346,12 +1345,13 @@ table.tableRanking td {
 		box-sizing: border-box;
 		z-index: 81;
 	}
-	
+
 	.btn_list {
 		clear: both;
 		width: 140px;
 		margin: 30px auto 0;
-	}	
+	}
+
 	.btn_list a {
 		display: block;
 		background: #404fc3;
@@ -18337,7 +18337,8 @@ table.tableRanking td {
 				text {
 					&:nth-child(1) {
 						fill: #D43F5D !important;
-						color: #D43F5D !important;						
+						color: #D43F5D !important;
+
 					}
 
 					&:nth-child(2) {
@@ -33266,7 +33267,6 @@ body.v_signalStreng {
 	padding: 16px 16px 6px;
 	background-color: #fff;
 	box-sizing: border-box;
-	// background-color: yellow;
 
 	&::after {
 		content: "";
@@ -33281,83 +33281,120 @@ body.v_signalStreng {
 		z-index: 1;
 	}
 
-	.ticker {
-		display: inline-block;
-		font-size: 0.75rem;
-		line-height: 1.75;
-		font-weight: 500;
-		color: #939393;
+	.company_info {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		width: 100%;
+		gap: 6px 4px;
+
+		.company_name {
+			// flex: 1 1 auto;
+			display: inline-flex;
+			align-content: center;
+			min-width: 0;
+			height: 23px;
+			/* 줄바꿈을 위해 필요 */
+		}
+
+		.company_details {
+			flex: 1 1 auto;
+			min-width: 0;
+			/* 줄바꿈을 위해 필요 */
+		}
 	}
 
-	.stock_index {
-		display: inline-block;
-	}
-
-	.stock_index span {
-		display: inline-block;
-		padding: 0 3px;
-		font-size: 0.75rem;
-		font-weight: 500;
-		color: #d3d3d3;
-	}
-
-	.company_nm {
-		margin-top: 2px;
-		max-width: 90%;
+	.list {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 8px 4px;
 	}
 
 	.company_nm,
 	.company_nm a {
-		display: block;
-		font-size: 22px;
+		display: inline-block;
+		/* Flexbox 사용 */
+		align-items: center;
+		/* 세로 중앙 정렬 */
+		color: #333;
+		font-size: 1rem;
 		font-weight: 700;
-		line-height: 1.23;
-		color: #181f29;
+		letter-spacing: -0.32px;
+		width: 100%;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
 	}
 
+	.ticker {
+		display: inline-flex;
+		/* Flexbox 사용 */
+		align-items: center;
+		/* 세로 중앙 정렬 */
+		color: #6A727B;
+		font-size: 15px;
+		font-weight: 400;
+		letter-spacing: -0.3px;
+		line-height: normal !important;
+	}
+
+	.stock_index {
+		display: flex;
+		align-items: center;
+		gap: 4px 4px;
+
+		span {
+			color: #8C98A7;
+			font-size: 11px;
+			font-weight: 500;
+			letter-spacing: -0.22px;
+			border-radius: 6px;
+			display: flex;
+			padding: 6px 6px;
+			align-items: center;
+			gap: 10px;
+
+			background: #F1F4F6;
+
+		}
+	}
 
 	.detail {
 		display: flex;
-		gap: 4px 4px;
+		flex-wrap: wrap;
+		gap: 0 4px;
+		width: 100%;
 		align-items: center;
-		margin-top: 7.5px;
+		margin-top: 4px;
 
 		// 종목검색 주가 마켓 상태 구분
 		&.market_status {
-			.after_market {
-				display: flex;
-				padding: 4px 6px;
-				align-items: center;
-				gap: 10px;
-				border-radius: 6px;
-				background: #EFF0FE;
-				color: #7983D5;
-				font-size: 10px;
-				font-weight: 400;
+			flex-wrap: nowrap;
+			margin-top: 0;
 
-			}
-
+			.after_market,
 			.pre_market {
-				display: flex;
-				padding: 4px 6px;
-				align-items: center;
-				gap: 10px;
-				border-radius: 6px;
-				background: #FFF5E6;
-				color: #FFAA64;
-				font-size: 10px;
+				color: #333;
+				font-size: 15px;
 				font-weight: 400;
-
+				line-height: 21px;
+				/* 150% */
+				letter-spacing: -0.28px;
 			}
 
 			.num {
+				width: auto;
 				font-size: 13px !important;
+				line-height: normal;
 
 				span,
 				span b {
 					color: #333;
-					font-size: 13px !important;
-					font-weight: 400 !important;
+					font-size: 15px;
+					font-weight: 500;
+					line-height: 21px;
+					/* 140% */
+					letter-spacing: -0.3px;
 				}
 			}
 
@@ -33366,13 +33403,30 @@ body.v_signalStreng {
 
 				span,
 				span b {
-					font-size: 13px !important;
-					font-weight: 400 !important;
-					letter-spacing: -0.26px !important;
+					color: #E1305A;
+					font-size: 15px;
+					font-weight: 500;
+					line-height: 21px;
+					/* 140% */
+					letter-spacing: -0.3px;
+
+					&.decrease,
+					&.decrease b {
+						color: #303FAF;
+					}
+
+					&.same,
+					&.same b {
+						color: #333;
+					}
 				}
 
 				.day {
-					font-size: 12px !important;
+					color: #8C98A7;
+					font-size: 12px;
+					font-weight: 500;
+					line-height: normal;
+					letter-spacing: -0.24px;
 				}
 			}
 		}
@@ -33381,7 +33435,11 @@ body.v_signalStreng {
 	}
 
 	.detail .num {
-		font-size: 34px;
+		width: 100%;
+		color: #333;
+		font-size: 30px;
+		font-weight: 700;
+		line-height: 36px;
 	}
 
 	.detail .num span {
@@ -33407,41 +33465,41 @@ body.v_signalStreng {
 	.detail .per .increase,
 	.detail .per .decrease,
 	.detail .per .same {
-		font-size: 0.9375rem;
 		color: #E1305A;
+		font-size: 16px;
 		font-weight: 500;
-	}
+		letter-spacing: -0.32px;
+		line-height: normal;
 
-	.detail .per .increase b,
-	.detail .per .decrease b,
-	.detail .per .same b {
-		color: #E1305A;
-		font-weight: 500;
+		& b {
+			color: #E1305A;
+			font-weight: 500;
+		}
 	}
 
 	.detail .per .decrease {
 		color: #303FAF;
-	}
 
-	.detail .per .decrease b {
-		color: #303FAF;
+		b {
+			color: #303FAF;
+		}
 	}
 
 	.detail .per .same {
 		color: #363F4B;
-	}
 
-	.detail .per .same b {
-		color: #363F4B;
+		b {
+			color: #363F4B;
+		}
 	}
 
 	.detail .per .day {
 		margin-left: auto;
 		text-align: right;
-		font-size: 0.75rem;
+		color: #8C98A7;
+		font-size: 12px;
 		font-weight: 500;
-		line-height: 1.42;
-		color: #939393;
+		line-height: normal;
 	}
 
 	.attention_box {
@@ -33453,8 +33511,8 @@ body.v_signalStreng {
 		width: 100%;
 		position: relative;
 		background: #fff;
-		margin: 20px auto 0;
-		padding-top: 8px;
+		margin: 32px auto 0;
+		padding: 14px 0 8px;
 		border-top: 1px solid #f4f4f5;
 		// border: 2px solid red;
 	}
@@ -36128,50 +36186,56 @@ body.v_signalStreng {
 			.selectBoxList {
 				position: relative;
 				width: 100%;
-				
-				&::after {
+				margin: 0;
+				padding: 0;
+				height: auto;
+
+				&:before {
+					background: none;
 					content: "";
-					position: absolute;
-					width: 5px;
-					height: 5px;
-					border-top: 1px solid #3555d5;
-					border-right: 1px solid #3555d5;
-					transform: rotate(135deg);
 					display: inline-block;
+					width: 6px;
+					height: 6px;
+					position: absolute;
+					top: 13px;
 					right: 10px;
-					top: 12px;
-					z-index: 99;
+					border-top: 1px solid #6a727b;
+					border-right: 1px solid #6a727b;
+					transform: rotate(135deg);
 				}
-			}
-		
-			select {
-				cursor: pointer;
-				width: 100%;
-				padding: 8px 16px;
-				box-sizing: border-box;
-				border-radius: 8px;
-				border: solid 1px #e0e4e9;
-				background-color: #fff;
-				color: #6A727B;
-				font-size: 14px;
-				font-weight: 500;				
-				height: 34px;
-				padding: 0 24px 0 12px;
-				opacity: 1;				
-				appearance: none; // 기본 셀렉트 스타일 제거				
-		
-				&:disabled {
-					background-color: red;
-					cursor: not-allowed;
-					opacity: 0.7;
+
+				.t_label {
+					width: 100%;
+					// height: 42px;
+					padding: 8px 16px;
+					box-sizing: border-box;
+					border-radius: 8px;
+					border: solid 1px #e0e4e9;
+					background-color: #fff;
+					color: #6A727B;
+					font-size: 14px;
+					font-weight: 500;
+					left: 0;
+					z-index: -1;
 				}
-		
-				&:focus {
-					outline: none;
+
+				option {
+					display: block;
+					width: 100%;
+					box-sizing: border-box;
+					color: #6A727B;
+					font-size: 14px;
+					font-weight: 500;
 				}
+
 			}
 
-			
+			select {
+				height: 32px;
+				padding: 0 24px 0 12px;
+				box-sizing: border-box;
+			}
+
 			.sort_manage {
 				display: flex;
 				align-items: center;
