@@ -36185,56 +36185,50 @@ body.v_signalStreng {
 			.selectBoxList {
 				position: relative;
 				width: 100%;
-				margin: 0;
-				padding: 0;
-				height: auto;
-
-				&:before {
-					background: none;
+				
+				&::after {
 					content: "";
-					display: inline-block;
-					width: 6px;
-					height: 6px;
 					position: absolute;
-					top: 13px;
-					right: 10px;
-					border-top: 1px solid #6a727b;
-					border-right: 1px solid #6a727b;
+					width: 5px;
+					height: 5px;
+					border-top: 1px solid #3555d5;
+					border-right: 1px solid #3555d5;
 					transform: rotate(135deg);
+					display: inline-block;
+					right: 10px;
+					top: 12px;
+					z-index: 99;
 				}
-
-				.t_label {
-					width: 100%;
-					// height: 42px;
-					padding: 8px 16px;
-					box-sizing: border-box;
-					border-radius: 8px;
-					border: solid 1px #e0e4e9;
-					background-color: #fff;
-					color: #6A727B;
-					font-size: 14px;
-					font-weight: 500;
-					left: 0;
-					z-index: -1;
-				}
-
-				option {
-					display: block;
-					width: 100%;
-					box-sizing: border-box;
-					color: #6A727B;
-					font-size: 14px;
-					font-weight: 500;
-				}
-
 			}
-
+		
 			select {
-				height: 32px;
-				padding: 0 24px 0 12px;
+				cursor: pointer;
+				width: 100%;
+				padding: 8px 16px;
 				box-sizing: border-box;
+				border-radius: 8px;
+				border: solid 1px #e0e4e9;
+				background-color: #fff;
+				color: #6A727B;
+				font-size: 14px;
+				font-weight: 500;				
+				height: 34px;
+				padding: 0 24px 0 12px;
+				opacity: 1;				
+				appearance: none; // 기본 셀렉트 스타일 제거				
+		
+				&:disabled {
+					background-color: red;
+					cursor: not-allowed;
+					opacity: 0.7;
+				}
+		
+				&:focus {
+					outline: none;
+				}
 			}
 
+			
 			.sort_manage {
 				display: flex;
 				align-items: center;
