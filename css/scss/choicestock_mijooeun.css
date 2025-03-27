@@ -35750,6 +35750,21 @@ body.v_signalStreng {
   letter-spacing: normal;
 }
 
+.mid {
+  /* 다른 iframe은 다른 비율 적용 가능 */
+}
+.mid iframe[src*="youtube.com"] {
+  aspect-ratio: 16/9;
+  width: 100%;
+  height: auto;
+  margin: 15px auto;
+}
+.mid iframe:not([src*="youtube.com"]) {
+  aspect-ratio: 4/3;
+  width: 100%;
+  height: auto;
+}
+
 .v_signalStreng.globalStock #wrap #container .tooltip {
   display: none;
   position: absolute;

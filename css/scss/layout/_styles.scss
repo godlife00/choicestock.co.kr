@@ -37138,3 +37138,19 @@ body.v_signalStreng {
 		}
 	}
 }
+.mid {
+	// 유튜브 영상 비율 적용
+	iframe[src*="youtube.com"] {
+		aspect-ratio: 16/9;
+		width: 100%;
+		height: auto;
+		margin: 15px auto;
+	}
+	
+	/* 다른 iframe은 다른 비율 적용 가능 */
+	iframe:not([src*="youtube.com"]) {
+		aspect-ratio: 4/3;
+		width: 100%;
+		height: auto;
+	}
+}
