@@ -1588,6 +1588,17 @@ $(document).ready(function () {
             $('.score_pop01').show().addClass('slideUp');
         }        
     });
+    // 마켓스코어 공포 지수 툴팁 + 차트
+    $('.globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .tradeSignal_status .market_alert').on('click', function () {
+        if ($(this).hasClass('no_signal')) {            
+            return;
+        } else {
+            $('body').css('overflow', 'hidden');
+            $('.modal').hide().removeClass('slideUp');
+            $('.blocker').show();
+            $('.score_pop02').show().addClass('slideUp');
+        }        
+    });
     // 주가&EPS 모달 팝업
     $('.v_signalStreng.globalStock #wrap #container .btn_schRecipeSet').on('click', function () {
         if ($(this).hasClass('no_signal')) {            
@@ -1597,7 +1608,7 @@ $(document).ready(function () {
             $('.modal').hide().removeClass('slideUp');
             $('.blocker').show();
             $('.setting_pop02').show().addClass('slideUp');
-        }        
+        }       
     });
 
     // 결제 이용약관 모달 팝업        

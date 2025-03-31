@@ -18589,6 +18589,10 @@ table.tableRanking td {
 				opacity: 0.7;
 			}
 		}
+		.market_alert {
+			@include market_alert
+		}
+		
 
 	}
 }
@@ -37155,3 +37159,4 @@ body.v_signalStreng {
 		height: auto;
 	}
 }
+

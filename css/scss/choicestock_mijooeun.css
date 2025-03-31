@@ -18016,6 +18016,89 @@ table.tableRanking td {
   white-space: nowrap;
   opacity: 0.7;
 }
+.globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .tradeSignal_status .market_alert {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
+  align-items: flex-start;
+  gap: 2px 2px;
+  border-radius: var(--Radius-r-04, 16px);
+  background: var(--Beige-beige50, #FAF3EA);
+  padding: 16px 38px 16px 44px;
+  margin: 20px auto 0;
+  box-sizing: border-box;
+}
+.globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .tradeSignal_status .market_alert:active {
+  transform: translate(2px, 2px);
+}
+.globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .tradeSignal_status .market_alert::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-top: 1px solid #24282C;
+  border-right: 1px solid #24282C;
+  right: 24px;
+  top: 50%;
+  transform: rotate(45deg) translateY(-50%);
+}
+.globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .tradeSignal_status .market_alert .alert_title {
+  position: relative;
+  color: #E9835B;
+  font-family: var(--Body, Pretendard);
+  font-size: var(--Size-md-15, 15px);
+  font-weight: var(--Weight-700, 700);
+  line-height: 20px; /* 133.333% */
+  letter-spacing: var(--Tracking-md, -0.3px);
+  word-break: keep-all;
+}
+.globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .tradeSignal_status .market_alert .emoji {
+  position: absolute;
+  left: -28px;
+  top: 0;
+}
+.globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .tradeSignal_status .market_alert .alert_text {
+  color: var(--Font-primary-body, #24282C);
+  font-family: var(--Body, Pretendard);
+  font-size: var(--Size-md-15, 15px);
+  font-style: normal;
+  font-weight: var(--Weight-400, 400);
+  line-height: 20px; /* 133.333% */
+  letter-spacing: var(--Tracking-md, -0.3px);
+}
+.globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .tradeSignal_status .market_alert.fear {
+  background: var(--Red-red50, #FEF2F3);
+}
+.globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .tradeSignal_status .market_alert.fear .alert_title {
+  color: #F03E4C;
+}
+.globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .tradeSignal_status .market_alert.anxiety {
+  background: var(--Beige-beige50, #FAF3EA);
+}
+.globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .tradeSignal_status .market_alert.anxiety .alert_title {
+  color: #F03E4C;
+}
+.globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .tradeSignal_status .market_alert.normal {
+  background: var(--Beige-beige50, #FAF3EA);
+}
+.globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .tradeSignal_status .market_alert.normal .alert_title {
+  color: #F03E4C;
+}
+.globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .tradeSignal_status .market_alert.greed {
+  background: var(--Yellow-yellow50, #FFFAE9);
+}
+.globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .tradeSignal_status .market_alert.greed .alert_title {
+  color: #F03E4C;
+}
+.globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .tradeSignal_status .market_alert.extreme {
+  background: var(--green50, #E9FBF4);
+}
+.globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .tradeSignal_status .market_alert.extreme .alert_title {
+  color: #F03E4C;
+}
 
 .globalStock .sub_recipe .sub_mid.recipe_view .update_info {
   padding: 20px 3px 3px;
@@ -38291,6 +38374,116 @@ body.v_signalStreng {
 }
 .modal.att_pop .data_opinion .ibox.weak {
   background-color: #404fc3;
+}
+
+.modal.score_pop02 {
+  border-radius: 16px;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 0;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: auto;
+  background: #fff;
+  transition: all 0sease-in-out;
+}
+.modal.score_pop02 .pop_header .pop_title {
+  justify-content: flex-start;
+}
+.modal.score_pop02 .pop_header .clse {
+  top: 24px;
+}
+.modal.score_pop02 .pop_con {
+  padding: 0px 16px 44px;
+}
+.modal.score_pop02 .pop_con .market_alert {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
+  align-items: flex-start;
+  gap: 2px 2px;
+  border-radius: var(--Radius-r-04, 16px);
+  background: var(--Beige-beige50, #FAF3EA);
+  padding: 16px 38px 16px 44px;
+  margin: 20px auto 0;
+  box-sizing: border-box;
+}
+.modal.score_pop02 .pop_con .market_alert:active {
+  transform: translate(2px, 2px);
+}
+.modal.score_pop02 .pop_con .market_alert::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-top: 1px solid #24282C;
+  border-right: 1px solid #24282C;
+  right: 24px;
+  top: 50%;
+  transform: rotate(45deg) translateY(-50%);
+}
+.modal.score_pop02 .pop_con .market_alert .alert_title {
+  position: relative;
+  color: #E9835B;
+  font-family: var(--Body, Pretendard);
+  font-size: var(--Size-md-15, 15px);
+  font-weight: var(--Weight-700, 700);
+  line-height: 20px; /* 133.333% */
+  letter-spacing: var(--Tracking-md, -0.3px);
+  word-break: keep-all;
+}
+.modal.score_pop02 .pop_con .market_alert .emoji {
+  position: absolute;
+  left: -28px;
+  top: 0;
+}
+.modal.score_pop02 .pop_con .market_alert .alert_text {
+  color: var(--Font-primary-body, #24282C);
+  font-family: var(--Body, Pretendard);
+  font-size: var(--Size-md-15, 15px);
+  font-style: normal;
+  font-weight: var(--Weight-400, 400);
+  line-height: 20px; /* 133.333% */
+  letter-spacing: var(--Tracking-md, -0.3px);
+}
+.modal.score_pop02 .pop_con .market_alert.fear {
+  background: var(--Red-red50, #FEF2F3);
+}
+.modal.score_pop02 .pop_con .market_alert.fear .alert_title {
+  color: #F03E4C;
+}
+.modal.score_pop02 .pop_con .market_alert.anxiety {
+  background: var(--Beige-beige50, #FAF3EA);
+}
+.modal.score_pop02 .pop_con .market_alert.anxiety .alert_title {
+  color: #F03E4C;
+}
+.modal.score_pop02 .pop_con .market_alert.normal {
+  background: var(--Beige-beige50, #FAF3EA);
+}
+.modal.score_pop02 .pop_con .market_alert.normal .alert_title {
+  color: #F03E4C;
+}
+.modal.score_pop02 .pop_con .market_alert.greed {
+  background: var(--Yellow-yellow50, #FFFAE9);
+}
+.modal.score_pop02 .pop_con .market_alert.greed .alert_title {
+  color: #F03E4C;
+}
+.modal.score_pop02 .pop_con .market_alert.extreme {
+  background: var(--green50, #E9FBF4);
+}
+.modal.score_pop02 .pop_con .market_alert.extreme .alert_title {
+  color: #F03E4C;
 }
 
 .loading-modal {

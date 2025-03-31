@@ -1482,7 +1482,7 @@
 
 // 모달 팝업 툴팁 스타일 정의
 .modalBox .modal {
-	&.tooltip_pop {
+	&.tooltip_pop {		
 		.pop_header {
 			background-color: #fff;
 			padding: 24px 15px;
@@ -2698,6 +2698,40 @@
 	}
 	
 
+}
+
+.modal.score_pop02 {		
+	border-radius: 16px;	
+	box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.1);
+	border-radius: 0;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	width: 100%;
+	margin: 0 auto;
+	box-sizing: border-box;
+	// display: block;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	top: auto;
+	background: #fff;
+	transition: all 0sease-in-out;
+
+	.pop_header  {				
+		.pop_title {
+			justify-content: flex-start;
+		}	
+		.clse {
+			top: 24px;				
+		}
+	}
+	.pop_con {		
+		padding: 0px 16px 44px;
+		.market_alert {
+			@include market_alert
+		}
+	}
 }
 
 // 나이스페이 결제 중 보이는 로딩 팝업
