@@ -2072,6 +2072,25 @@ $(document).ready(function () {
         }, 500); // 500ms마다 업데이트 (0.5초)
 
     }          
+
+    // 마켓스코어 공포 지수 툴팁 + 차트
+    $('.globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .tradeSignal_status .market_alert').on('click', function () {
+        if ($(this).hasClass('no_signal')) {            
+            return;
+        } else {
+            $('body').css('overflow', 'hidden');
+            $('.modal').hide().removeClass('slideUp');
+            $('.blocker').show();
+            $('.score_pop02').show().addClass('slideUp'); 
+            
+            // CustomChart_score1_2_clone 차트 렌더링
+            const chartContainer = document.getElementById('CustomChart_score1_2_clone');
+            if (chartContainer && !chartContainer.hasChildNodes()) {
+                CustomChart_Score('CustomChart_score1_2_clone', chartData); // chartData는 차트에 필요한 데이터
+            }
+        }        
+    });
+    
 });
 
 // 레시피 리스트 벽돌쌓기 레이아웃, Masonry js 

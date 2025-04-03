@@ -104,8 +104,7 @@
                 <div class="recipe_area">
                     <div class="tab-container">
                         <div class="tradeSignal_status">
-                            <h2 class="title">마켓스코어 <span class="signal_guide txt_guide"><img
-                                        src="../img/txt_guide_us.svg" alt="가이드보기"></span></h2>
+                            <h2 class="title">마켓스코어</h2>
 
                             <div class="score_chart">
                                 <figure class="highcharts-figure">
@@ -605,58 +604,6 @@
                                                 <span>338.25</span>
                                             </div>
                                             <div class="per">
-                                                <span class="increase">+3.24% (+2.23%)</span>
-                                                <!-- increase 증가, decrease 감소, 보합은 same -->
-                                            </div>
-                                        </li>
-                                        <li class="revenue">
-                                            <span class="th">최고수익률</span>
-                                            <span class="increase dod">23.99%</span>
-                                            <!-- increase 증가, decrease 감소 -->
-                                        </li>
-
-                                    </ul>
-                                    <ul class="logo_list" onclick="location.href ='/search/search_outline.html'"
-                                        style="cursor:pointer;">
-                                        <li class="title_logo">
-                                            <span class="logo"><img
-                                                    src="https://uslogo.datahero.co.kr/img/logo/us/mvl/AAPL.svg"
-                                                    alt=""></span>
-                                        </li>
-                                        <li class="detail">
-                                            <div class="title">
-                                                <a href="/search/search_outline.html" class="">마이크로소프트</a>
-                                            </div>
-                                            <div class="num">
-                                                <span>338.25</span>
-                                            </div>
-                                            <div class="per">
-                                                <span class="decrease">-3.24% (-2.23%)</span>
-                                                <!-- increase 증가, decrease 감소, 보합은 same -->
-                                            </div>
-                                        </li>
-                                        <li class="revenue">
-                                            <span class="th">최고수익률</span>
-                                            <span class="decrease dod">-23.99%</span>
-                                            <!-- increase 증가, decrease 감소 -->
-                                        </li>
-
-                                    </ul>
-                                    <ul class="logo_list" onclick="location.href ='/search/search_outline.html'"
-                                        style="cursor:pointer;">
-                                        <li class="title_logo">
-                                            <span class="logo"><img
-                                                    src="https://uslogo.datahero.co.kr/img/logo/us/mvl/MSFT.svg"
-                                                    alt=""></span>
-                                        </li>
-                                        <li class="detail">
-                                            <div class="title">
-                                                <a href="/search/search_outline.html" class="">마이크로소프트</a>
-                                            </div>
-                                            <div class="num">
-                                                <span>338.25</span>
-                                            </div>
-                                            <div class="per">
                                                 <span class="decrease">-3.24% (-2.23%)</span>
                                                 <!-- increase 증가, decrease 감소, 보합은 same -->
                                             </div>
@@ -880,19 +827,32 @@
         <!-- 마켓스코어 공포 지수 툴팁 + 차트 -->
         <div class="modal tooltip_pop score_pop02" style="display: block;">
             <div class="pop_header">
-                <h1 class="pop_title">마켓스코어</h1>
+                <h1 class="pop_title">마켓스코어 <span class="date">기준 25.03/11</span></h1>
                 <span class="clse">
                     <!--닫기-->
                 </span>
             </div>
             <div class="pop_con">
+                <div class="score_chart">
+                    <figure class="highcharts-figure">
+                        <div id="CustomChart_score1_2_clone" class="contaanalysis1"></div>
+                        <div class="group-4">
+                            <div class="element">25</div>
+                            <div class="element-2">75</div>
+                            <div class="element-3">50</div>
+                            <div class="element-4">0</div>
+                            <div class="element-5">100</div>
+                        </div>
+                    </figure>
+                </div>
+
                 <div class="market_alert fear">
                     <!-- 상태별 클래스: 공포(fear), 불안(anxiety), 보통(normal), 과욕(greed), 탐욕(extreme) -->
                     <p class="alert_title">
                         <span class="emoji">
                             <!-- 공포  -->
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                viewBox="0 0 20 20" fill="none">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                                fill="none">
                                 <g clip-path="url(#clip0_3687_3156)">
                                     <path
                                         d="M15.4071 3.52558C15.4223 3.34609 15.5291 3.19123 15.6898 3.11028C17.3287 2.29611 18.4819 0.817926 18.9019 0.219616C19.0251 0.0436418 19.2409 -0.0361318 19.4498 0.0154871C19.6598 0.0682793 19.8111 0.240732 19.8369 0.454247C20.2616 4.04176 19.4591 5.48006 19.0931 5.93172C18.9922 6.05725 18.8432 6.12295 18.6931 6.12295C18.5863 6.12295 18.4784 6.0901 18.3857 6.02206L15.6135 3.98311C15.4681 3.87635 15.3906 3.7039 15.4059 3.52441L15.4071 3.52558Z"
@@ -921,8 +881,7 @@
                                 </g>
                                 <defs>
                                     <clipPath id="clip0_3687_3156">
-                                        <rect width="20" height="20" fill="white"
-                                            transform="matrix(-1 0 0 1 20 0)" />
+                                        <rect width="20" height="20" fill="white" transform="matrix(-1 0 0 1 20 0)" />
                                     </clipPath>
                                 </defs>
                             </svg>
@@ -931,16 +890,24 @@
                     <p class="alert_text">저평가된 우량자산을 적극 매수할 기회 입니다.</p>
                 </div>
 
-                <p>시장이 과도한 공포에 휩싸였습니다.</p>
-                <p class="sum_txt">초이스스탁이 개발한 공포-탐욕지수는 전체 종목 중 AI 매매신호의 '매수+보유' 단계의 종목 비율에 따라 점수화했습니다. 75점을 초과하면 탐욕 단계로,
-                    25점 이하면 공포 단계로 표시합니다.</p>
-                <ul>
-                    <li class="txt"><strong>탐욕 (75점 초과) :</strong> 위험을 전혀 생각하지 않는 단계로 향후 주가 하락 가능성이 높은 구간</li>
-                    <li class="txt"><strong>과욕 (56점 초과) :</strong> 위험을 인지하면서도 추가 수익을 추구하는 단계로 주의가 필요한 구간</li>
-                    <li class="txt"><strong>보통 (44점 초과) :</strong> 주가의 상승 또는 하락 추세를 강화하는 구간</li>
-                    <li class="txt"><strong>불안 (25점 초과) :</strong> 주가 하락에 대한 불안이 있지만 단기 바닥을 확인하는 구간</li>
-                    <li class="txt"><strong>공포 (25점 이하) :</strong> 무조건 매도를 외치는 구간으로, 장기적으로 가장 좋은 매수 구간</li>
-                </ul>
+                <div class="score_chart_info">                    
+                    <p class="sum_txt">초이스스탁이 개발한 공포-탐욕지수는 전체 종목 중 AI 매매신호의 '매수+보유' 단계의 종목 비율에 따라 점수화했습니다. 75점을 초과하면 탐욕
+                        단계로, 25점 이하면 공포 단계로 표시합니다.</p>
+                    <ul>
+                        <li class="txt"><strong>탐욕 (75점 초과) :</strong> 위험을 전혀 생각하지 않는 단계로 향후 주가 하락 가능성이 높은 구간</li>
+                        <li class="txt"><strong>과욕 (56점 초과) :</strong> 위험을 인지하면서도 추가 수익을 추구하는 단계로 주의가 필요한 구간</li>
+                        <li class="txt"><strong>보통 (44점 초과) :</strong> 주가의 상승 또는 하락 추세를 강화하는 구간</li>
+                        <li class="txt"><strong>불안 (25점 초과) :</strong> 주가 하락에 대한 불안이 있지만 단기 바닥을 확인하는 구간</li>
+                        <li class="txt"><strong>공포 (25점 이하) :</strong> 무조건 매도를 외치는 구간으로, 장기적으로 가장 좋은 매수 구간</li>
+                    </ul>
+                </div>
+                <!-- //score_chart_info -->
+
+                <div>
+                <div id="score_chart" class="scoreChart_style"></div>                                
+                </div>
+
+
             </div>
         </div>
 

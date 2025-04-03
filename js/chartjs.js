@@ -7722,6 +7722,10 @@ $(document).ready(function () {
         name: '공포 (25점 이하) :',
         data: [20]                
     }];   
+    const CustomScoreData1_6 = [{
+        name: '공포 (25점 이하) :',
+        data: [20]                
+    }];   
     if ($('#CustomChart_score1_0').length) {        
         CustomChart_Score('CustomChart_score1_0', CustomScoreData1_0);
     }
@@ -7740,5 +7744,34 @@ $(document).ready(function () {
     if ($('#CustomChart_score1_5').length) {
         CustomChart_Score('CustomChart_score1_5', CustomScoreData1_5);
     }
+    if ($('#CustomChart_score1_2_clone').length) {
+        CustomChart_Score('CustomChart_score1_2_clone', CustomScoreData1_6);
+    }
     
+    if ($('#chart-container').length) {        
+        const lineChartData = {
+            chart: {
+                type: 'line'
+            },
+            title: {
+                text: 'Sample Line Chart'
+            },
+            xAxis: {
+                categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+            },
+            yAxis: {
+                title: {
+                    text: 'Value'
+                }
+            },
+            series: [{
+                name: 'Sample Data',
+                data: [29.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4]
+            }]
+        };
+
+        if ($('#lineChartContainer').length) {
+            Highcharts.chart('lineChartContainer', lineChartData);
+        }
+    }
 });
