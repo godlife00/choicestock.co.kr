@@ -6793,7 +6793,7 @@ $(document).ready(function () {
                     backgroundColor: null,
                     scrollablePlotArea: {
                         minWidth: 480,
-                        scrollPositionX: 0
+                        scrollPositionX: 0.5,
                     }
                 },
                 credits: {

@@ -176,6 +176,14 @@ $(document).ready(function () {
         copy_recom.find('.stock_index').remove(); // 'stock_index' 클래스를 가진 요소 제거
         copy_recom.find('.per span').first().remove(); // 첫 번째 'increase' 클래스를 가진 요소 제거
         copy_recom.find('.per .day').remove(); // 'day' 클래스를 가진 요소 제거
+        
+        // originalCompanyName 요소 복사하여 맨 앞에 추가
+        var originalElement = document.getElementById("originalCompanyName");
+        if (originalElement) {
+            var clonedCompanyName = originalElement.cloneNode(true);
+            copy_recom.prepend(clonedCompanyName);
+        }
+        
         $('body').append(copy_recom);
     }
     customizeAndAppendList();  // 종목검색 개요탭 등 상단 고정 종목명 함수 실행
@@ -1509,10 +1517,10 @@ $(document).ready(function () {
         $('body').css('overflow', 'hidden');
     });
     // 모달팝업 - 닫기
-    $('.modal .pop_header .clse, .blocker, .payment_cacl02 .btn.btn_save').on('click', function () {        
-        $('body').css('overflow', '');                        
+    $('.modal .pop_header .clse, .blocker, .payment_cacl02 .btn.btn_save').on('click', function () {
+        $('body').css('overflow', '');
         $('.blocker').hide();
-        $('.modal').hide().removeClass('slideUp');        
+        $('.modal').hide().removeClass('slideUp');
     });
 
 
@@ -1677,7 +1685,6 @@ $(document).ready(function () {
             $('.premium_login_guide').show().addClass('slideUp');
         }        
     });
-    
 
     // 매매신호 플로팅 배너 열기, 닫기 스크립트
     // 스크롤 이벤트를 감지하여 처리    
