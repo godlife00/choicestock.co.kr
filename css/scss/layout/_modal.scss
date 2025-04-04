@@ -1482,7 +1482,7 @@
 
 // 모달 팝업 툴팁 스타일 정의
 .modalBox .modal {
-	&.tooltip_pop {
+	&.tooltip_pop {		
 		.pop_header {
 			background-color: #fff;
 			padding: 24px 15px;
@@ -2698,6 +2698,250 @@
 	}
 	
 
+}
+
+.modal.tooltip_pop.score_pop02 {		
+	border-radius: 16px;	
+	box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.1);
+	border-radius: 0;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	width: 100%;
+	margin: 0 auto;
+	box-sizing: border-box;
+	// display: block;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	top: auto;
+	background: #fff;
+	transition: all 0sease-in-out;
+
+	.pop_header  {				
+		padding: 24px 24px;
+		.pop_title {
+			justify-content: flex-start;
+			.date {
+				color: var(--Font-secondary-caption, #6B7684);
+				font-family: var(--Body, Pretendard);
+				font-size: var(--Size-xs-13, 13px);				
+				font-weight: var(--Weight-500, 500);
+				line-height: var(--Line-height-xs-13, 16px); /* 123.077% */
+				letter-spacing: var(--Tracking-md, -0.3px);
+			}
+		}	
+		.clse {
+			top: 24px;				
+		}
+	}
+	.pop_con {		
+		padding: 0px 0 44px;		
+		overflow-y: auto;
+		max-height: 68vh;
+		max-height: -webkit-fill-available; /* iOS Safari */
+		max-height: calc(68vh - env(safe-area-inset-bottom)); /* iOS 노치 영역 고려 */
+		-webkit-overflow-scrolling: touch; /* iOS 스크롤 부드럽게 */
+		// padding-bottom: calc(44px + env(safe-area-inset-bottom));
+		&::after {
+			content: "";
+			display: block;
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%);
+			bottom: 8px;
+			width: 134px;
+			height: 5px;
+			background-color: #000;
+			border-radius: 16px;
+		}
+		.market_alert {
+			@include market_alert;						
+			margin: 0 24px;
+			&::after {
+				display: none;
+			}
+		}
+		
+		.score_chart {
+			
+			.contaanalysis1 {				
+				margin: 0 auto;
+				width: 340px;
+				height: 180px;
+				background: url('/img/contaanalysis1_num.svg') no-repeat center 77px;
+				background-size: auto 114px;
+	
+				.gauge-value {
+					.highcharts-label-box {
+						stroke-width: 0;
+					}
+	
+					span {
+						font-size: 30px !important;
+						color: #333 !important;
+						font-weight: bold !important;
+					}
+				}
+	
+				.highcharts-pivot {
+					fill: #FFF;
+					filter: drop-shadow(0px -5px 6px rgba(199, 204, 209, 0.30));
+					box-shadow: 0px -5px 6px rgba(199, 204, 209, 0.3);
+				}
+	
+				.highcharts-axis-labels.highcharts-radial-axis-labels {
+					text {
+						&:nth-child(1) {
+							fill: #D43F5D !important;
+							color: #D43F5D !important;
+	
+						}
+	
+						&:nth-child(2) {
+							fill: #E9835B !important;
+							color: #E9835B !important;
+						}
+	
+						&:nth-child(3) {
+							fill: #F4A031 !important;
+							color: #F4A031 !important;
+						}
+	
+						&:nth-child(4) {
+							fill: #F8D54E !important;
+							color: #F8D54E !important;
+						}
+	
+						&:nth-child(5) {
+							fill: #5AA86B !important;
+							color: #5AA86B !important;
+						}
+	
+						&.active-label {
+							fill: #fff !important;
+							color: #fff !important;
+						}
+					}
+				}
+			}
+	
+			.group-4 {
+				display: none;
+				position: absolute;
+				width: 170px;
+				height: 85px;
+				top: 77px;
+				left: 85px;
+	
+				.element,
+				.element-2,
+				.element-3,
+				.element-4,
+				.element-5 {
+					font-weight: 600;
+					font-size: 10px;
+					color: #939393;
+					position: absolute;
+					letter-spacing: 0;
+					line-height: normal;
+					white-space: nowrap;
+					opacity: 0.7;
+				}
+	
+				.element {
+					top: 20px;
+					left: 29px;
+				}
+	
+				.element-2 {
+					top: 20px;
+					right: 29px;
+				}
+	
+				.element-3 {
+					top: 0;
+					left: 77px;
+				}
+	
+				.element-4 {
+					bottom: 0;
+					left: 0;
+				}
+	
+				.element-5 {
+					bottom: 0;
+					right: 0;
+				}
+			}
+	
+			.txt {
+				font-weight: 500;
+				font-size: 12px;
+				color: #939393;
+				letter-spacing: 0;
+				line-height: normal;
+				white-space: nowrap;
+				opacity: 0.7;
+			}
+		}
+		.score_chart_info {
+			display: flex;
+			flex-direction: column;
+			gap: 8px 8px;
+			margin-top: 32px;			
+			padding: 32px 24px 0;
+			border-top: 1px solid var(--Border-primary-border, #E3E5E8);
+			.sum_txt {
+				color: var(--Font-secondary-body, #4E5866);
+				font-family: var(--Body, Pretendard);
+				font-size: var(--Size-md-15, 15px);				
+				font-weight: var(--Weight-400, 400);
+				line-height: var(--Line-height-xl-01, 24px); /* 160% */
+				letter-spacing: var(--Tracking-md, -0.3px);
+			}
+			.txt {
+				position: relative;
+				color: var(--Font-secondary-body, #4E5866);
+				font-family: var(--Body, Pretendard);
+				font-size: var(--Size-sm, 14px);				
+				font-weight: var(--Weight-400, 400);
+				line-height: var(--Line-height-lg, 21px);
+				letter-spacing: var(--Tracking-md, -0.3px);
+				padding-left: 9px;
+				strong {
+					color: var(--Font-secondary-body, #4E5866);
+					font-family: var(--Body, Pretendard);
+					font-size: var(--Size-sm, 14px);					
+					font-weight: var(--Weight-600, 600);
+					line-height: var(--Line-height-md, 22px); /* 157.143% */
+					letter-spacing: var(--Tracking-md, -0.3px);
+				}
+				&::before {
+					content: "";
+					display: inline-block;
+					position: absolute;
+					left: 0;
+					top: 9px;
+					background-color: #4E5866;
+					width: 2px;
+					height: 2px;
+				}
+			}
+			
+
+		}
+		.scoreChart_style {
+			margin-top: 24px;
+			padding: 0 24px;
+			width: 100%;
+			box-sizing: border-box;
+			height: 260px;
+			.highcharts-label.highcharts-series-label {
+				display: none !important;
+			}
+		}
+	}
 }
 
 // 나이스페이 결제 중 보이는 로딩 팝업

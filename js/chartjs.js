@@ -7722,6 +7722,10 @@ $(document).ready(function () {
         name: '공포 (25점 이하) :',
         data: [20]                
     }];   
+    const CustomScoreData1_6 = [{
+        name: '공포 (25점 이하) :',
+        data: [20]                
+    }];   
     if ($('#CustomChart_score1_0').length) {        
         CustomChart_Score('CustomChart_score1_0', CustomScoreData1_0);
     }
@@ -7740,5 +7744,241 @@ $(document).ready(function () {
     if ($('#CustomChart_score1_5').length) {
         CustomChart_Score('CustomChart_score1_5', CustomScoreData1_5);
     }
+    if ($('#CustomChart_score1_2_clone').length) {
+        CustomChart_Score('CustomChart_score1_2_clone', CustomScoreData1_6);
+    }
     
+    if ($('#chart-container').length) {        
+        const lineChartData = {
+            chart: {
+                type: 'line'
+            },
+            title: {
+                text: 'Sample Line Chart'
+            },
+            xAxis: {
+                categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+            },
+            yAxis: {
+                title: {
+                    text: 'Value'
+                }
+            },
+            series: [{
+                name: 'Sample Data',
+                data: [29.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4]
+            }]
+        };
+
+        if ($('#lineChartContainer').length) {
+            Highcharts.chart('lineChartContainer', lineChartData);
+        }
+    }
+
+    // 마켓스코어 6개월 스마트스코어 선차트 스타일 설정
+    const getScoreChartOptions = () => {
+        return {
+            chart: {                
+                backgroundColor: 'transparent',
+                plotBackgroundColor: '#F7F8FA',
+                spacingLeft: 10,
+                spacingRight: 10,                
+                marginRight: 28 // 오른쪽 여백 확보                
+
+            },
+    
+            title: {
+                text: '',                
+            },
+    
+            navigator: {
+                enabled: false,
+            },
+    
+            scrollbar: {
+                enabled: false,
+            },
+    
+            rangeSelector: {
+                enabled: false,
+            },
+    
+            credits: {
+                enabled: false
+            },
+    
+            exporting: {
+                enabled: false,
+            },
+    
+            legend: {
+                enabled: false,
+            },
+    
+            tooltip: {
+                shadow: false,
+                split: false,
+                shared: true,
+                useHTML: true,
+                backgroundColor: '#fff',
+                borderWidth: 1,
+                borderRadius: 32,
+                borderColor: '#608CFA',
+                padding: 14,                
+                xDateFormat: '%Y.%m/%d',
+                formatter: function() {
+                    var date = new Date(this.x);
+                    date.setHours(date.getHours() + 9); // KST로 변환
+                    var formattedDate = Highcharts.dateFormat('%Y.%m/%d', date);
+                    var s = '<span style="display: block;margin-bottom: 4px; font-size:12px; color:#4E5866; font-weight:500;">' + formattedDate + '</span>';
+                    this.points.forEach(function(point) {
+                        s += '<p style="font-size:12px; color:#4E5866; font-weight:500;">' + point.series.name + ': ' + point.y + '</p>';
+                    });
+                    return s;
+                }
+            },
+
+            colors: ['#608CFA'],
+    
+            xAxis: {
+                type: 'datetime',
+                showFirstLabel: true,
+                showLastLabel: true,             
+                startOnTick: true,   // 시작 라벨 강제 표시
+                endOnTick: true,     // 끝 라벨 강제 표시   
+                tickWidth: 0,                
+                gridLineWidth: 0,      
+                minPadding: 0.1,
+                maxPadding: 0.1,                
+                labels: {                    
+                    x: 6,                    
+                    style: {
+                        color: '#8C98A7',
+                        fontSize: '13px'
+                    },
+                    formatter: function () {
+                        return Highcharts.dateFormat('%y.%m/%d', this.value);
+                    }
+                },
+                tickPositioner: function () {
+                    const dataMin = this.dataMin;
+                    const dataMax = this.dataMax;
+                    const tickCount = 4; // 표시할 라벨 수
+                    const step = (dataMax - dataMin) / (tickCount - 1);
+                    const positions = [];
+            
+                    for (let i = 0; i < tickCount; i++) {
+                        positions.push(dataMin + i * step);
+                    }
+            
+                    return positions;
+                }
+            },
+    
+            yAxis: {
+                title: {
+                    text: ''
+                },
+                gridLineWidth: 1,
+                gridLineDashStyle: 'Dash',
+                showFirstLabel: false,
+                showLastLabel: true,                
+                opposite: true,
+                minPadding: 0.1,
+                maxPadding: 0.1,
+                labels: {
+                    useHTML: true,              
+                    x: 10,
+                    y: 20,
+                    formatter: function() {
+                        let icon = '';
+                        let label = '';
+                        let color = '';
+                    
+                        if (this.value > 80) {
+                            icon = '<img src="../img/icon_extreme.svg" width="16" height="16" />';
+                            label = '탐욕';
+                            color = '#00A469';
+                        } else if (this.value > 60) {
+                            icon = '<img src="../img/icon_greed.svg" width="16" height="16" />';
+                            label = '과욕';
+                            color = '#EFC31A';
+                        } else if (this.value > 40) {
+                            icon = '<img src="../img/icon_normal.svg" width="16" height="16" />';
+                            label = '보통';
+                            color = '#F4A031';
+                        } else if (this.value > 20) {
+                            icon = '<img src="../img/icon_anxiety.svg" width="16" height="16" />';
+                            label = '불안';
+                            color = '#E9835B';
+                        } else {
+                            icon = '<img src="../img/icon_fear.svg" width="16" height="16" />';
+                            label = '공포';
+                            color = '#F03E4C';
+                        }
+                    
+                        return `
+                            <div style="display: flex; align-items: center; flex-direction: column; gap: 3px;">
+                                ${icon}
+                                 <span style="font-size: 10px; color: ${color};">${label}</span>
+                            </div>
+                        `;
+                    }                    
+                },
+                tickPositions: [0, 20, 40, 60, 80, 100], 
+                min: 0,
+                max: 100
+            },
+    
+            plotOptions: {
+                series: {
+                    lineWidth: 2, // 선의 굵기
+                    marker: {
+                        enabled: false,      // 기본 비활성화                   
+                        states: {
+                            hover: {
+                                enabled: true // hover 시에만 활성화
+                            }
+                        },
+                        symbol: 'circle',
+                        radius: 4, // 지름이 8px이므로 반지름은 4
+                        lineWidth: 2, // 외곽선 두께
+                        lineColor: '#FFFFFF', // 외곽선 색 (예: 흰색 테두리)
+                        fillColor: '#6C63FF' // 안쪽 색 (예시로 보라색 계열)
+                    }
+                }
+            },
+        };
+    };
+
+    // 마켓스코어 6개월 마켓스코어 선차트 데이터
+    const scoreChartData = [
+        [1644796800000, 45], [1644883200000, 42], [1644969600000, 38], [1645056000000, 25], 
+        [1645142400000, 18], [1645228800000, 15], [1645315200000, 22], [1645401600000, 35],
+        [1645488000000, 48], [1645574400000, 52], [1645660800000, 58], [1645747200000, 65],
+        [1645833600000, 72], [1645920000000, 78], [1646006400000, 85], [1646092800000, 92],
+        [1646179200000, 88], [1646265600000, 82], [1646352000000, 75], [1646438400000, 68],
+        [1646524800000, 62], [1646611200000, 55], [1646697600000, 48], [1646784000000, 42],
+        [1646870400000, 38], [1646956800000, 32], [1647043200000, 28], [1647129600000, 25],
+        [1647216000000, 22], [1647302400000, 18], [1647388800000, 15], [1647475200000, 22],
+        [1647561600000, 28], [1647648000000, 35], [1647734400000, 42], [1647820800000, 48],
+        [1647907200000, 55], [1647993600000, 62], [1648080000000, 68], [1648166400000, 72],
+        [1648252800000, 78], [1648339200000, 82], [1648425600000, 85], [1648512000000, 88],
+        [1648598400000, 92], [1648684800000, 88], [1648771200000, 82], [1648857600000, 75],
+        [1648944000000, 68]
+    ];
+
+    // 마켓스코어 6개월 마켓스코어 선차트 렌더링 함수
+    const renderScoreChart = () => {
+        if ($('#score_chart').length) {
+            const options = getScoreChartOptions();
+            options.series = [{
+                name: '마켓스코어',
+                data: scoreChartData
+            }];
+            Highcharts.chart('score_chart', options);
+        }
+    };
+
+    renderScoreChart();
 });
