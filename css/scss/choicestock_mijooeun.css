@@ -18039,8 +18039,8 @@ table.tableRanking td {
   position: absolute;
   width: 8px;
   height: 8px;
-  border-top: 1px solid #24282C;
-  border-right: 1px solid #24282C;
+  border-top: 1px solid #6B7684;
+  border-right: 1px solid #6B7684;
   right: 24px;
   top: 50%;
   transform: rotate(45deg) translateY(-50%);
@@ -18079,25 +18079,25 @@ table.tableRanking td {
   background: var(--Beige-beige50, #FAF3EA);
 }
 .globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .tradeSignal_status .market_alert.anxiety .alert_title {
-  color: #F03E4C;
+  color: #E9835B;
 }
 .globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .tradeSignal_status .market_alert.normal {
   background: var(--Beige-beige50, #FAF3EA);
 }
 .globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .tradeSignal_status .market_alert.normal .alert_title {
-  color: #F03E4C;
+  color: #F4A031;
 }
 .globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .tradeSignal_status .market_alert.greed {
   background: var(--Yellow-yellow50, #FFFAE9);
 }
 .globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .tradeSignal_status .market_alert.greed .alert_title {
-  color: #F03E4C;
+  color: #EFC31A;
 }
 .globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .tradeSignal_status .market_alert.extreme {
   background: var(--green50, #E9FBF4);
 }
 .globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .tradeSignal_status .market_alert.extreme .alert_title {
-  color: #F03E4C;
+  color: #00A469;
 }
 
 .globalStock .sub_recipe .sub_mid.recipe_view .update_info {
@@ -23312,9 +23312,12 @@ table.tableRanking td {
   top: 24px;
 }
 .modal.tooltip_pop.score_pop02 .pop_con {
-  padding: 0px 24px 44px;
+  padding: 0px 0 44px;
   overflow-y: auto;
-  max-height: 56vh;
+  max-height: 68vh;
+  max-height: -webkit-fill-available; /* iOS Safari */
+  max-height: calc(68vh - env(safe-area-inset-bottom)); /* iOS 노치 영역 고려 */
+  -webkit-overflow-scrolling: touch; /* iOS 스크롤 부드럽게 */
 }
 .modal.tooltip_pop.score_pop02 .pop_con::after {
   content: "";
@@ -23341,6 +23344,7 @@ table.tableRanking td {
   padding: 16px 38px 16px 44px;
   margin: 20px auto 0;
   box-sizing: border-box;
+  margin: 0 24px;
 }
 .modal.tooltip_pop.score_pop02 .pop_con .market_alert:active {
   transform: translate(2px, 2px);
@@ -23351,8 +23355,8 @@ table.tableRanking td {
   position: absolute;
   width: 8px;
   height: 8px;
-  border-top: 1px solid #24282C;
-  border-right: 1px solid #24282C;
+  border-top: 1px solid #6B7684;
+  border-right: 1px solid #6B7684;
   right: 24px;
   top: 50%;
   transform: rotate(45deg) translateY(-50%);
@@ -23391,25 +23395,28 @@ table.tableRanking td {
   background: var(--Beige-beige50, #FAF3EA);
 }
 .modal.tooltip_pop.score_pop02 .pop_con .market_alert.anxiety .alert_title {
-  color: #F03E4C;
+  color: #E9835B;
 }
 .modal.tooltip_pop.score_pop02 .pop_con .market_alert.normal {
   background: var(--Beige-beige50, #FAF3EA);
 }
 .modal.tooltip_pop.score_pop02 .pop_con .market_alert.normal .alert_title {
-  color: #F03E4C;
+  color: #F4A031;
 }
 .modal.tooltip_pop.score_pop02 .pop_con .market_alert.greed {
   background: var(--Yellow-yellow50, #FFFAE9);
 }
 .modal.tooltip_pop.score_pop02 .pop_con .market_alert.greed .alert_title {
-  color: #F03E4C;
+  color: #EFC31A;
 }
 .modal.tooltip_pop.score_pop02 .pop_con .market_alert.extreme {
   background: var(--green50, #E9FBF4);
 }
 .modal.tooltip_pop.score_pop02 .pop_con .market_alert.extreme .alert_title {
-  color: #F03E4C;
+  color: #00A469;
+}
+.modal.tooltip_pop.score_pop02 .pop_con .market_alert::after {
+  display: none;
 }
 .modal.tooltip_pop.score_pop02 .pop_con .score_chart .contaanalysis1 {
   margin: 0 auto;
@@ -23511,7 +23518,7 @@ table.tableRanking td {
   flex-direction: column;
   gap: 8px 8px;
   margin-top: 32px;
-  padding-top: 32px;
+  padding: 32px 24px 0;
   border-top: 1px solid var(--Border-primary-border, #E3E5E8);
 }
 .modal.tooltip_pop.score_pop02 .pop_con .score_chart_info .sum_txt {
@@ -23550,6 +23557,17 @@ table.tableRanking td {
   width: 2px;
   height: 2px;
 }
+.modal.tooltip_pop.score_pop02 .pop_con .scoreChart_style {
+  margin-top: 24px;
+  padding: 0 24px;
+  width: 100%;
+  box-sizing: border-box;
+  height: 260px;
+}
+.modal.tooltip_pop.score_pop02 .pop_con .scoreChart_style .highcharts-label.highcharts-series-label {
+  display: none !important;
+}
+
 .loading-modal {
   display: none;
   /* 초기에는 숨김 */

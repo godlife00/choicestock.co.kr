@@ -243,9 +243,6 @@
 	}
 }
 
-
-
-
 @mixin market_alert {
 	position: relative;
 	display: flex;
@@ -269,8 +266,8 @@
 		position: absolute;
 		width: 8px;
 		height: 8px;
-		border-top: 1px solid #24282C;
-		border-right: 1px solid #24282C;
+		border-top: 1px solid #6B7684;
+		border-right: 1px solid #6B7684;
 		right: 24px;
 		top: 50%;
 		transform: rotate(45deg) translateY(-50%);
@@ -309,25 +306,25 @@
 	&.anxiety {
 		background: var(--Beige-beige50, #FAF3EA);
 		.alert_title {
-			color: #F03E4C;
+			color: #E9835B;
 		}
 	}
 	&.normal {
 		background: var(--Beige-beige50, #FAF3EA);
 		.alert_title {
-			color: #F03E4C;
+			color: #F4A031;
 		}
 	}
 	&.greed {
 		background: var(--Yellow-yellow50, #FFFAE9);
 		.alert_title {
-			color: #F03E4C;
+			color: #EFC31A;
 		}
 	}
 	&.extreme {
 		background: var(--green50, #E9FBF4);
 		.alert_title {
-			color: #F03E4C;
+			color: #00A469;
 		}
 	}
 }
