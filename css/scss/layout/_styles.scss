@@ -1240,10 +1240,12 @@ table.tableRanking td {
 
 .globalStock .sub_search .att_wrap {
 	.btnArea.edtBtn {
-		// position: sticky;
-		// bottom: 76px;
-		// border: 2px solid red;
-
+		position: sticky;
+		bottom: 0;
+		padding-top: 0;				
+		padding-bottom: 76px;
+		background: #fff;
+		box-shadow: 0px -32px 20px 0px rgba(255, 255, 255, 0.9);
 		.btn {
 			background: #404fc3;
 			border: 1px solid #404fc3;

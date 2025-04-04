@@ -1541,6 +1541,14 @@ table.tableRanking td {
   font-weight: 500;
 }
 
+.globalStock .sub_search .att_wrap .btnArea.edtBtn {
+  position: sticky;
+  bottom: 0;
+  padding-top: 0;
+  padding-bottom: 76px;
+  background: #fff;
+  box-shadow: 0px -32px 20px 0px rgba(255, 255, 255, 0.9);
+}
 .globalStock .sub_search .att_wrap .btnArea.edtBtn .btn {
   background: #404fc3;
   border: 1px solid #404fc3;
@@ -22747,7 +22755,7 @@ table.tableRanking td {
   background-color: #000;
   border-radius: 16px;
 }
-.modal.att_pop.fav_group_com_popup .pop_con .alt_txt, .modal.att_pop.fav_item_del_popup .pop_con .alt_txt, .modal.att_pop.fav_item_del_popup2 .pop_con .alt_txt, .modal.att_pop.fav_item_move_popup .pop_con .alt_txt, .modal.att_pop.fav_group_com_popup2 .pop_con .alt_txt, .modal.att_pop.fav_group_regname_popup .pop_con .alt_txt {
+.modal.att_pop.fav_group_com_popup .pop_con .alt_txt, .modal.att_pop.fav_item_del_popup .pop_con .alt_txt, .modal.att_pop.fav_item_del_popup2 .pop_con .alt_txt, .modal.att_pop.fav_item_move_popup .pop_con .alt_txt, .modal.att_pop.fav_group_com_popup2 .pop_con .alt_txt, .modal.att_pop.fav_group_regname_popup .pop_con .alt_txt, .modal.att_pop.fav_item_reg_popup .pop_con .alt_txt, .modal.att_pop.fav_item_reg_popup2 .pop_con .alt_txt {
   text-align: center;
   color: #000;
   font-size: 16px;
