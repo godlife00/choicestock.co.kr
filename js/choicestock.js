@@ -195,7 +195,7 @@ $(document).ready(function () {
         var headerOffset = $('#header .headerTop').offset().top;    
         window.addEventListener('scroll', function () {
             var header = document.getElementById('header');
-            if (window.scrollY >= 160) {            
+            if (window.scrollY >= 160 && !$('.gdn_typeWrap').length && !$('.service_wrap').length) {            
                 $('.list.recom').addClass('fix_data'); 
             } else {            
                 $('.list.recom').removeClass('fix_data'); 
@@ -204,7 +204,7 @@ $(document).ready(function () {
 
         window.addEventListener('scroll', function () {
             var header = $('#header');        
-            if (window.scrollY > headerOffset) {            
+            if (window.scrollY > headerOffset && !$('.gdn_typeWrap').length && !$('.service_wrap').length) {            
                 header.addClass('fix_header');            
                 $('#container').css('padding-top', headerHeight);
             } else {
