@@ -1,5 +1,5 @@
 // GDN_type
-.gdn_typeWrap {
+.gdn_typeWrap {    
     .box {
         padding: 80px 20px 80px;        
         background-color: #fff;
@@ -51,12 +51,27 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                width: 100%;
+                width: 100%;                
+                img {
+                    width: 100%;
+                    height: 100%;
+                    max-height: 320px;
+                    object-fit: contain;
+                }
 
                 .bubble_img {
                     position: absolute;
                     top: 0;
                     left: calc(50% - 136px);
+                    width: 106px;
+                    height: 106px;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        max-height: 320px;
+                        object-fit: contain;
+                    }
+                    
                 }
 
             }
@@ -242,6 +257,9 @@
             }
             
             .title_txt {
+                display: flex;
+                align-content: center;
+                flex-wrap: wrap;
                 margin-top: 12px;
                 color: var(--Font-primary-body, #24282C);
                 font-family: var(--Body, Pretendard);
@@ -263,8 +281,86 @@
                     height: 100%;
                     object-fit: cover;
                 }
-            }
+                &.no_bg {
+                    padding: 0;
+                    background-color: transparent;
 
+                }
+            }
+            .worry_list {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                gap: 24px;
+                align-self: stretch;
+                margin-top: 26px;
+                .list_item {
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;            
+                    gap: 8px 16px;        
+                    color: var(--Font-primary-body, #24282C);
+                    font-family: var(--Title, Pretendard);
+                    font-size: var(--Size-xl-01, 18px);
+                    font-style: normal;
+                    font-weight: var(--Weight-700, 700);
+                    line-height: var(--Line-height-xl-01, 24px); /* 133.333% */
+                    letter-spacing: var(--Tracking-md, -0.3px);
+                    svg {
+                        width: 28px;
+                        height: 28px;
+                    }
+                }
+            }
+        }
+        .new_recipe {
+            $jump : #646FCD; //급등주
+            $rocketBooster : #646FCD; //로켓 부스트
+            $top50 : #F8D95F; //관심 TOP50
+            $sale : #76BCE7; //지금 세일중
+            $earnings : #2E3848; //실적발표		
+            $dividend : #87CD64; //배당매력주
+            $growth : #79D5A9; //이익성장주
+            $superStocks : #E7B676; //슈퍼스톡스
+            $consumerMonopoly : #D6E0EA; //소비자독점
+            $profitTurnaround : #7694E7; //흑자전환
+            $goldenCross : #E36B6D; //골든크로스
+            $growthDiscovery : #E79366; //발굴성장주		
+            $wh : 164px;
+            margin-top: 0;            
+            .list_masonry {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 48px 14px;
+            }
+    
+        }
+        .bg_dot {
+            height: 156px;
+            background: url('/img/bg_dot.png') no-repeat center top;
+            background-size: 100% 100%;
+        }
+    }
+    .btn_banner {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        border-radius: var(--Radius-r-05, 24px) var(--Radius-r-05, 24px) 24px 24px;
+        background: var(--Blue-blue400, #608CFA) url('/img/angel_man.png') no-repeat bottom center;
+        background-size: auto 125px;
+        padding: 60px 32px 150px;
+        margin: 40px 32px 0;        
+        a {
+            color: #FFF;
+            text-align: center;
+            font-family: var(--Title, Pretendard);
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 42px; /* 140% */
+            letter-spacing: var(--Tracking-md, -0.3px);            
         }
     }
 }
@@ -273,7 +369,7 @@
     bottom: 26px;
     text-align: center;
     width: calc(100% - 40px);    
-    margin: 15px auto 0;
+    margin: 45px auto 0;
     padding: 17px 5px;
     box-sizing: border-box;        
     border-radius: var(--Radius-r-03, 12px);
