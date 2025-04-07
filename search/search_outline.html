@@ -34,7 +34,7 @@
     <script src="http://godlife.ivyro.net/highcharts/stock/highcharts-more.js"></script>
     <script src="http://godlife.ivyro.net/highcharts/stock/modules/exporting.js"></script>
     <script src="http://godlife.ivyro.net/highcharts/stock/modules/export-data.js"></script>
-    <script src="http://godlife.ivyro.net/highcharts/stock/modules/accessibility.js"></script>
+    <script src="http://godlife.ivyro.net/highcharts/stock/modules/accessibility.js"></script>    
     <script src="../js/chartjs.js"></script>
     <!-- html2canvas js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.3.2/html2canvas.min.js"></script>
@@ -44,18 +44,7 @@
     <!-- css -->
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" type="text/css" href="../css/scss/choicestock.css?ver=250221" />    
-    <!-- js -->
-    <script>
-        // 모바일 장치일 경우에만 모바일 처치 스크립트 로드
-        function isMobileDevice() {
-            return /Mobi|Android/i.test(navigator.userAgent);
-        }
-        if (isMobileDevice()) {
-            var script = document.createElement('script');
-            script.src = "https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js";
-            document.head.appendChild(script);
-        }
-    </script>
+    <!-- js -->    
     <script src="../js/choicestock.js"></script>
     <!-- 이 아래는 로컬에서만 사용되는 파일 -->
     <script src="../js/local.js"></script>
@@ -146,11 +135,31 @@
                     <h1 class="headerLogo"><span>종목검색</span></h1>
                 </div>
                 <div class="right">
+                    <span class="att"><i class="attention attention_pop no_member" style="left:-120px"></i></span>                     
+                    <!-- 로그인 안한 경우 no_member -->
                     <span class="att"><i class="attention attention_pop on" style="left:-50px"></i></span>
                     <span class="att"><i class="attention attention_pop"></i></span>
                 </div>
             </div>
             <!-- //headerTop -->
+
+            <script>
+                $(document).ready(function () {
+                    // 관심종목 등록 (비회원인 경우)
+                    $('.attention.attention_pop.no_member').on('click', function () {      
+                        $('.modal').hide().removeClass('slideUp'); // 다른 모달 숨기기
+                        $('.blocker').show(); // 배경 블러 처리
+                        $('html, body').css("overflow", "hidden");        
+                        $('.fav_item_reg_popup').show().addClass('slideUp'); // 원하는 모달 표시                                  
+                    });
+                    $('.fav_item_reg_popup .btn_save').on('click', function () {      
+                        $('.modal').hide().removeClass('slideUp'); // 다른 모달 숨기기
+                        $('.blocker').show(); // 배경 블러 처리
+                        $('html, body').css("overflow", "hidden");        
+                        $('.fav_item_reg_popup2').show().addClass('slideUp'); // 원하는 모달 표시                                  
+                    });
+                });
+            </script>
         </div>
 
         <!-- 종목검색 class = sub_search-->
@@ -1070,6 +1079,42 @@
                         <input type="submit" class="btn btn_save" value="등록">
                     </div>
                 </div>
+            </div>
+
+            <!-- 관심종목 등록(비회원인 경우) -->
+            <div class="modal att_pop fav_item_reg_popup slideUp">        
+                <div class="pop_header">
+                    <h1 class="pop_title">관심종목 등록</h1>
+                    
+                    <span class="clse">
+                        <!--닫기-->
+                    </span>
+                </div>
+                <div class="pop_con">                    
+                    <p class="alt_txt">로그인 후 이용해주세요.</p>                                
+
+                    <div class="btnArea edtBtn">                
+                        <button class="btn btn_save">확인</button>
+                    </div>
+                </div>                
+            </div>
+
+            <!-- 관심종목 등록(비회원인 경우) -->
+            <div class="modal att_pop fav_item_reg_popup2 slideUp">        
+                <div class="pop_header">
+                    <h1 class="pop_title">관심종목 등록</h1>
+                    
+                    <span class="clse">
+                        <!--닫기-->
+                    </span>
+                </div>
+                <div class="pop_con">                    
+                    <p class="alt_txt">회원가입 후, 관심종목을 등록할 수 있습니다.</p>                                
+
+                    <div class="btnArea edtBtn">                
+                        <button class="btn btn_save">확인</button>
+                    </div>
+                </div>                
             </div>
 
             <div class="blocker"></div>

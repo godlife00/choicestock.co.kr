@@ -158,6 +158,20 @@ $(document).ready(function () {
         $('html, body').css("overflow", "hidden");
     });
     
+    // 관심종목 등록 (비회원인 경우)
+    $('.attention.attention_pop.no_member').on('click', function () {      
+        $('.modal').hide().removeClass('slideUp'); // 다른 모달 숨기기
+        $('.blocker').show(); // 배경 블러 처리
+        $('html, body').css("overflow", "hidden");        
+        $('.fav_item_reg_popup').show().addClass('slideUp'); // 원하는 모달 표시                                  
+    });
+    $('.fav_item_reg_popup .btn_save').on('click', function () {      
+        $('.modal').hide().removeClass('slideUp'); // 다른 모달 숨기기
+        $('.blocker').show(); // 배경 블러 처리
+        $('html, body').css("overflow", "hidden");        
+        $('.fav_item_reg_popup2').show().addClass('slideUp'); // 원하는 모달 표시                                  
+    });    
+    
     // 모달이 닫힐 때 body에서 'modal-open' 클래스를 제거하는 코드 추가
     $('.modal.att_pop .pop_header .clse, .blocker').on('click', function() {                
         $('html, body').css("overflow", "");
