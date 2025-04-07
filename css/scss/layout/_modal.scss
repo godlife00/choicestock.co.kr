@@ -2757,7 +2757,7 @@
 		}
 		.market_alert {
 			@include market_alert;						
-			margin: 0 24px;
+			margin: 15px 24px 0;
 			&::after {
 				display: none;
 			}
