@@ -709,20 +709,7 @@ $(document).ready(function () {
     });
 
     //메인 상단 관심종목
-    if ($('.maingdowSwiper').length) {
-        var attentionSwiper = new Swiper('.attentionSwiper', {
-            // autoplay: {
-            //     delay: 3000,
-            //     disableOnInteraction: false,
-            // },        
-            speed: 300,
-            spaceBetween: 15,
-            loop: true,      
-            pagination: {
-                el: '.swiper-pagination',
-            },  
-        });
-    }   
+    
 
     //메인 다우선물,다우지수
     if ($('.maingdowSwiper').length) {
@@ -862,8 +849,8 @@ $(document).ready(function () {
         spaceBetween: 10,
     });
 
-    // GDN 페이지 투자레시피 슬라이드
-    var recipeSwiper = new Swiper('.recipeSwiper', {
+    // GDN 페이지 투자레시피 슬라이드    
+    var swiper = new Swiper('.recipeSwiper', {
         loop: true,              
         spaceBetween: 8,
         slidesPerView: 'auto',
@@ -873,7 +860,7 @@ $(document).ready(function () {
             delay: 0,
             disableOnInteraction: false,
         },            
-        speed: 3000,
+        speed: 1300,
         grabCursor: true,
         mousewheelControl: true,
         keyboardControl: true,   
@@ -2029,18 +2016,7 @@ $(document).ready(function () {
             allSignal.style.display = "flex";
             profitSignal.style.display = "none";
         });
-    }    
-    if ($('.bubble_img').length) {        
-    document.addEventListener('DOMContentLoaded', function() {
-        setTimeout(function() {
-            const bubbleImg = document.querySelector('.gdn_typeWrap .box.top .bot_box .bubble_img');
-            if (bubbleImg) {
-                bubbleImg.style.top = '0';
-                bubbleImg.style.opacity = '1';
-            }
-            }, 800);
-        });
-    }
+    }        
     
     // 알림 리스트 읽은 글 회색 표시 스크립트
     if ($('.alarmList').length) {        

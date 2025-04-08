@@ -165,7 +165,7 @@
 }
 
 #footer {
-	&.gdn_footer {		
+	&.event_footer {		
 		border-top: 1px solid var(--Border-secondary-border, #F1F4F6);
 		background-color: #fff;
 		margin: 0;
@@ -277,7 +277,7 @@
 				height: 10px;
 				border-right: 1px solid #E3E5E8;
 				top: 0;
-				margin-right: 6px;
+				margin-right: 8px;
 			}	
 		}
 	}
