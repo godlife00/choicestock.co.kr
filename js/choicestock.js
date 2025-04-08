@@ -864,13 +864,20 @@ $(document).ready(function () {
 
     // GDN 페이지 투자레시피 슬라이드
     var recipeSwiper = new Swiper('.recipeSwiper', {
-        autoplay: {
-            delay: 3500,
-            disableOnInteraction: false,
-        },
-        slidesPerView: "auto",
+        loop: true,              
         spaceBetween: 8,
-        loop: true,
+        slidesPerView: 'auto',
+        slidesPerGroup: 1,
+        loopAdditionalSlides: 1, // 슬라이드 복제를 위한 추가 슬라이드 수
+        autoplay: {            
+            delay: 0,
+            disableOnInteraction: false,
+        },            
+        speed: 3000,
+        grabCursor: true,
+        mousewheelControl: true,
+        keyboardControl: true,   
+        // allowTouchMove: false,       
     });
 
 
@@ -2023,6 +2030,17 @@ $(document).ready(function () {
             profitSignal.style.display = "none";
         });
     }    
+    if ($('.bubble_img').length) {        
+    document.addEventListener('DOMContentLoaded', function() {
+        setTimeout(function() {
+            const bubbleImg = document.querySelector('.gdn_typeWrap .box.top .bot_box .bubble_img');
+            if (bubbleImg) {
+                bubbleImg.style.top = '0';
+                bubbleImg.style.opacity = '1';
+            }
+            }, 800);
+        });
+    }
     
     // 알림 리스트 읽은 글 회색 표시 스크립트
     if ($('.alarmList').length) {        
