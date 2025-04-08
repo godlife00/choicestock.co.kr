@@ -862,6 +862,17 @@ $(document).ready(function () {
         spaceBetween: 10,
     });
 
+    // GDN 페이지 투자레시피 슬라이드
+    var recipeSwiper = new Swiper('.recipeSwiper', {
+        autoplay: {
+            delay: 3500,
+            disableOnInteraction: false,
+        },
+        slidesPerView: "auto",
+        spaceBetween: 8,
+        loop: true,
+    });
+
 
     //미국주식창 메인 이벤트 배너 3개 롤링
     var event_bannerSwiper = new Swiper('.event_bannerSwiper', {

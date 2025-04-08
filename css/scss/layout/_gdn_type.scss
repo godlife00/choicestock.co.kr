@@ -314,7 +314,11 @@
                 }
             }
         }
-        .new_recipe {
+        .recipeSwiper .swiper-slide {
+            display: block;
+            width: auto;
+        }
+        .list_masonry {
             $jump : #646FCD; //급등주
             $rocketBooster : #646FCD; //로켓 부스트
             $top50 : #F8D95F; //관심 TOP50
@@ -327,14 +331,59 @@
             $profitTurnaround : #7694E7; //흑자전환
             $goldenCross : #E36B6D; //골든크로스
             $growthDiscovery : #E79366; //발굴성장주		
-            $wh : 164px;
-            margin-top: 0;            
-            .list_masonry {
+
+            margin-top: 32px;
+
+            .figure {
                 display: flex;
-                flex-wrap: wrap;
-                gap: 48px 14px;
+                align-items: flex-end;
+                justify-content: center;
+                border-radius: 24px;
+                width: 160px;
+                @media (min-width: 320px) and (max-width: 374px) {
+                    width: 154px;                    
+                }
+                height: 226px;
+                box-sizing: border-box;                
+                padding: 24px 12px;     
+                p {                        
+                    color: #FFF;
+                    text-align: center;
+                    font-family: var(--Title, Pretendard);
+                    font-size: var(--Size-md-15, 15px);                        
+                    font-weight: var(--Weight-600, 600);
+                    line-height: 21px; /* 140% */
+                    letter-spacing: var(--Tracking-md, -0.3px);
+                    strong {
+                        color: #FFF;
+                        font-weight: var(--Weight-700, 700);
+                        
+                    }
+                }
+
+                &.jump {
+                                   
+                    background: $jump url('/img/jump.png') no-repeat center 14px;
+                    background-size: auto 132px;
+                }          
+                &.growthDiscovery {
+                    background: $growthDiscovery url('/img/growthDiscovery.png') no-repeat center 14px;
+                    background-size: auto 132px;
+                }
+                &.dividend {
+                    background: $dividend url('/img/dividend.png') no-repeat center 14px;
+                    background-size: auto 132px;
+                }
+                &.growth {
+                    background: $growth url('/img/growth.png') no-repeat center 14px;
+                    background-size: auto 132px;
+                }
+                &.top50 {
+                    background: $top50 url('/img/top50.png') no-repeat center 14px;
+                    background-size: auto 132px;
+                }
             }
-    
+            
         }
         .bg_dot {
             height: 156px;
