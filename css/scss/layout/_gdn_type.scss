@@ -894,15 +894,17 @@
         // padding: 0;
         padding-bottom: 40px;
         background: transparent;  
+        
+        &.is-bottom {                    
+            bottom: 0; 
+            margin-top: 0;                
+            padding: 0;
+            padding-bottom: 40px;
+            background: var(--Blue-blue50, #F6F8FF);          
+        }
     }
 
-    &.is-bottom {                    
-        bottom: 0; 
-        margin-top: 0;                
-        padding: 0;
-        padding-bottom: 40px;
-        background: var(--Blue-blue50, #F6F8FF);          
-    }
+    
 
     .btn.btn_apply {
         display: flex;
