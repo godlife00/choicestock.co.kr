@@ -1705,8 +1705,25 @@ $(document).ready(function () {
     // 매매신호 플로팅 배너 열기, 닫기 스크립트
     // 스크롤 이벤트를 감지하여 처리    
     function scrollsignalpop() {        
-        $('.v_signalStreng.globalStock .signalpop .box').slideDown(1200);
+        const signalPop = document.querySelector('.v_signalStreng.globalStock .signalpop .box');
+        if (signalPop) {
+            signalPop.style.display = 'block';
+            signalPop.style.height = 'auto';
+            signalPop.style.opacity = '1';
+        }
     }
+    // 스크롤 이벤트 리스너 추가
+    window.addEventListener('scroll', function() {
+        const scrollPosition = window.scrollY;
+        const windowHeight = window.innerHeight;
+        const documentHeight = document.documentElement.scrollHeight;
+        
+        // 스크롤이 페이지의 30% 이상 내려갔을 때 실행
+        if (scrollPosition > (documentHeight * 0.3)) {
+            scrollsignalpop();
+        }
+    });
+
     // 종목검색 탭 상태 체크 및 함수 실행
     function checkTabsAndApplyFunction() {
         // 모든 탭 요소들을 가져옴
@@ -1971,8 +1988,32 @@ $(document).ready(function () {
     $(window).on('scroll', checkVisibility);
     $(window).on('scroll', applyScrollEffect);
     $(window).on('scroll', checkUserReviewVisibility);
+    
+    // premium_gdnbtn 버튼 위치에 따른 클래스 추가/제거
+    function checkPremiumBtnPosition() {
+        const $premiumBtn = $('.premium_gdnbtn');
+        if ($premiumBtn.length) {
+            const windowHeight = $(window).height();
+            const windowScrollTop = $(window).scrollTop();
+            const documentHeight = $(document).height();
+            const $footer = $('#footer');
+            const footerHeight = $footer.length ? $footer.outerHeight() : 0;
+            
+            // 스크롤이 페이지 하단(푸터 영역 제외) 근처에 도달했는지 확인
+            if (windowScrollTop + windowHeight > documentHeight - footerHeight - 65) {
+                $premiumBtn.addClass('is-bottom');
+            } else {
+                $premiumBtn.removeClass('is-bottom');
+            }
+        }
+    }
+    
+    $(window).on('scroll', checkPremiumBtnPosition);
+    $(window).on('resize', checkPremiumBtnPosition);
+    
     checkVisibility(); // 페이지 로드 시에도 실행
     applyScrollEffect(); // 서비스소개 페이드인 효과 함수 실행
+    checkPremiumBtnPosition(); // 페이지 로드 시 버튼 위치 확인
     applyClassInSequence(premiumBenefits, 0); // 서비스소개 상단 3개 박스 순차 슬라이드 함수 실행
 
     // EPS 툴팁 팝업 높이 조절 스크립트 시작           
@@ -2095,7 +2136,7 @@ $(document).ready(function () {
             }
         }        
     });
-    
+        
 });
 
 // 레시피 리스트 벽돌쌓기 레이아웃, Masonry js 
@@ -2173,3 +2214,30 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     } 
 });
+
+// recommend_item 클릭 이벤트 처리
+document.addEventListener('DOMContentLoaded', function() {
+    const recommendItems = document.querySelectorAll('.recommend_item');
+    
+    recommendItems.forEach(item => {
+        item.addEventListener('click', function() {
+            const showItemTxt = this.querySelector('.show_item_txt');
+            const isActive = showItemTxt.classList.contains('active');
+            
+            // 모든 show_item_txt를 닫기
+            document.querySelectorAll('.show_item_txt').forEach(el => {
+                el.classList.remove('active');
+                el.parentElement.classList.remove('active');
+            });
+            
+            // 클릭한 항목만 토글
+            if (!isActive) {
+                showItemTxt.classList.add('active');
+                this.classList.add('active');
+            }
+        });
+    });
+});
+
+
+
