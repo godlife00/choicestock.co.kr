@@ -195,7 +195,7 @@ $(document).ready(function () {
         var headerOffset = $('#header .headerTop').offset().top;    
         window.addEventListener('scroll', function () {
             var header = document.getElementById('header');
-            if (window.scrollY >= 160) {            
+            if (window.scrollY >= 160 && !$('.gdn_typeWrap').length && !$('.service_wrap').length) {            
                 $('.list.recom').addClass('fix_data'); 
             } else {            
                 $('.list.recom').removeClass('fix_data'); 
@@ -204,7 +204,7 @@ $(document).ready(function () {
 
         window.addEventListener('scroll', function () {
             var header = $('#header');        
-            if (window.scrollY > headerOffset) {            
+            if (window.scrollY > headerOffset && !$('.gdn_typeWrap').length && !$('.service_wrap').length) {            
                 header.addClass('fix_header');            
                 $('#container').css('padding-top', headerHeight);
             } else {
@@ -709,20 +709,7 @@ $(document).ready(function () {
     });
 
     //메인 상단 관심종목
-    if ($('.maingdowSwiper').length) {
-        var attentionSwiper = new Swiper('.attentionSwiper', {
-            // autoplay: {
-            //     delay: 3000,
-            //     disableOnInteraction: false,
-            // },        
-            speed: 300,
-            spaceBetween: 15,
-            loop: true,      
-            pagination: {
-                el: '.swiper-pagination',
-            },  
-        });
-    }   
+    
 
     //메인 다우선물,다우지수
     if ($('.maingdowSwiper').length) {
@@ -860,6 +847,24 @@ $(document).ready(function () {
     var mainrecipeSwiper = new Swiper('.mainrecipeSwiper', {
         slidesPerView: "auto",
         spaceBetween: 10,
+    });
+
+    // GDN 페이지 투자레시피 슬라이드    
+    var swiper = new Swiper('.recipeSwiper', {
+        loop: true,              
+        spaceBetween: 8,
+        slidesPerView: 'auto',
+        slidesPerGroup: 1,
+        loopAdditionalSlides: 1, // 슬라이드 복제를 위한 추가 슬라이드 수
+        autoplay: {            
+            delay: 0,
+            disableOnInteraction: false,
+        },            
+        speed: 1300,
+        grabCursor: true,
+        mousewheelControl: true,
+        keyboardControl: true,   
+        // allowTouchMove: false,       
     });
 
 
@@ -1588,6 +1593,17 @@ $(document).ready(function () {
             $('.score_pop01').show().addClass('slideUp');
         }        
     });
+    // 마켓스코어 공포 지수 툴팁 + 차트
+    $('.globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .tradeSignal_status .market_alert').on('click', function () {
+        if ($(this).hasClass('no_signal')) {            
+            return;
+        } else {
+            $('body').css('overflow', 'hidden');
+            $('.modal').hide().removeClass('slideUp');
+            $('.blocker').show();
+            $('.score_pop02').show().addClass('slideUp');
+        }        
+    });
     // 주가&EPS 모달 팝업
     $('.v_signalStreng.globalStock #wrap #container .btn_schRecipeSet').on('click', function () {
         if ($(this).hasClass('no_signal')) {            
@@ -1597,7 +1613,7 @@ $(document).ready(function () {
             $('.modal').hide().removeClass('slideUp');
             $('.blocker').show();
             $('.setting_pop02').show().addClass('slideUp');
-        }        
+        }       
     });
 
     // 결제 이용약관 모달 팝업        
@@ -1689,8 +1705,25 @@ $(document).ready(function () {
     // 매매신호 플로팅 배너 열기, 닫기 스크립트
     // 스크롤 이벤트를 감지하여 처리    
     function scrollsignalpop() {        
-        $('.v_signalStreng.globalStock .signalpop .box').slideDown(1200);
+        const signalPop = document.querySelector('.v_signalStreng.globalStock .signalpop .box');
+        if (signalPop) {
+            signalPop.style.display = 'block';
+            signalPop.style.height = 'auto';
+            signalPop.style.opacity = '1';
+        }
     }
+    // 스크롤 이벤트 리스너 추가
+    window.addEventListener('scroll', function() {
+        const scrollPosition = window.scrollY;
+        const windowHeight = window.innerHeight;
+        const documentHeight = document.documentElement.scrollHeight;
+        
+        // 스크롤이 페이지의 30% 이상 내려갔을 때 실행
+        if (scrollPosition > (documentHeight * 0.3)) {
+            scrollsignalpop();
+        }
+    });
+
     // 종목검색 탭 상태 체크 및 함수 실행
     function checkTabsAndApplyFunction() {
         // 모든 탭 요소들을 가져옴
@@ -1955,8 +1988,32 @@ $(document).ready(function () {
     $(window).on('scroll', checkVisibility);
     $(window).on('scroll', applyScrollEffect);
     $(window).on('scroll', checkUserReviewVisibility);
+    
+    // premium_gdnbtn 버튼 위치에 따른 클래스 추가/제거
+    function checkPremiumBtnPosition() {
+        const $premiumBtn = $('.premium_gdnbtn');
+        if ($premiumBtn.length) {
+            const windowHeight = $(window).height();
+            const windowScrollTop = $(window).scrollTop();
+            const documentHeight = $(document).height();
+            const $footer = $('#footer');
+            const footerHeight = $footer.length ? $footer.outerHeight() : 0;
+            
+            // 스크롤이 페이지 하단(푸터 영역 제외) 근처에 도달했는지 확인
+            if (windowScrollTop + windowHeight > documentHeight - footerHeight - 65) {
+                $premiumBtn.addClass('is-bottom');
+            } else {
+                $premiumBtn.removeClass('is-bottom');
+            }
+        }
+    }
+    
+    $(window).on('scroll', checkPremiumBtnPosition);
+    $(window).on('resize', checkPremiumBtnPosition);
+    
     checkVisibility(); // 페이지 로드 시에도 실행
     applyScrollEffect(); // 서비스소개 페이드인 효과 함수 실행
+    checkPremiumBtnPosition(); // 페이지 로드 시 버튼 위치 확인
     applyClassInSequence(premiumBenefits, 0); // 서비스소개 상단 3개 박스 순차 슬라이드 함수 실행
 
     // EPS 툴팁 팝업 높이 조절 스크립트 시작           
@@ -2000,7 +2057,7 @@ $(document).ready(function () {
             allSignal.style.display = "flex";
             profitSignal.style.display = "none";
         });
-    }    
+    }        
     
     // 알림 리스트 읽은 글 회색 표시 스크립트
     if ($('.alarmList').length) {        
@@ -2061,6 +2118,25 @@ $(document).ready(function () {
         }, 500); // 500ms마다 업데이트 (0.5초)
 
     }          
+
+    // 마켓스코어 공포 지수 툴팁 + 차트
+    $('.globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .tradeSignal_status .market_alert').on('click', function () {
+        if ($(this).hasClass('no_signal')) {            
+            return;
+        } else {
+            $('body').css('overflow', 'hidden');
+            $('.modal').hide().removeClass('slideUp');
+            $('.blocker').show();
+            $('.score_pop02').show().addClass('slideUp'); 
+            
+            // CustomChart_score1_2_clone 차트 렌더링
+            const chartContainer = document.getElementById('CustomChart_score1_2_clone');
+            if (chartContainer && !chartContainer.hasChildNodes()) {
+                CustomChart_Score('CustomChart_score1_2_clone', chartData); // chartData는 차트에 필요한 데이터
+            }
+        }        
+    });
+        
 });
 
 // 레시피 리스트 벽돌쌓기 레이아웃, Masonry js 
@@ -2138,3 +2214,30 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     } 
 });
+
+// recommend_item 클릭 이벤트 처리
+document.addEventListener('DOMContentLoaded', function() {
+    const recommendItems = document.querySelectorAll('.recommend_item');
+    
+    recommendItems.forEach(item => {
+        item.addEventListener('click', function() {
+            const showItemTxt = this.querySelector('.show_item_txt');
+            const isActive = showItemTxt.classList.contains('active');
+            
+            // 모든 show_item_txt를 닫기
+            document.querySelectorAll('.show_item_txt').forEach(el => {
+                el.classList.remove('active');
+                el.parentElement.classList.remove('active');
+            });
+            
+            // 클릭한 항목만 토글
+            if (!isActive) {
+                showItemTxt.classList.add('active');
+                this.classList.add('active');
+            }
+        });
+    });
+});
+
+
+

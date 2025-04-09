@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no" />
+    <title>초이스스탁</title>
+    <meta name="robots" content="데이터히어로 미국주식">
+    <meta name="description" content="투자를 쉽고 편리하게, 미국주식가이드, 종목분석, 종목토론, 데이터히어로">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="theme-color" content="#2C295D">
+    <!-- 오픈 그래프 -->
+    <meta property="og:title" content="데이터히어로 미국주식" />
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="투자를 쉽고 편리하게, 미국주식가이드, 종목분석, 종목토론, 데이터히어로">
+    <meta property="og:image" content="http://godlife.ivyro.net/test/img/choicestockus_thumb.png">
+    <meta property="og:image:width" content="410" />
+    <meta property="og:image:height" content="210" />
+    <meta property="og:url" content="http://us.itooza.com">
+    <!-- jquery-1.12 -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <!-- highstock -->
+    <script src="http://godlife.ivyro.net/highcharts/stock/highstock.js"></script>
+    <script src="http://godlife.ivyro.net/highcharts/stock/modules/data.js"></script>
+    <script src="http://godlife.ivyro.net/highcharts/stock/modules/hollowcandlestick.js"></script>
+    <script src="http://godlife.ivyro.net/highcharts/stock/modules/no-data-to-display.js"></script>
+    <script src="http://godlife.ivyro.net/highcharts/stock/modules/treemap.js"></script>
+    <script src="http://godlife.ivyro.net/highcharts/stock/highcharts-more.js"></script>
+    <script src="http://godlife.ivyro.net/highcharts/stock/modules/exporting.js"></script>
+    <script src="http://godlife.ivyro.net/highcharts/stock/modules/export-data.js"></script>
+    <script src="http://godlife.ivyro.net/highcharts/stock/modules/accessibility.js"></script>
+    <script src="../js/chartjs.js"></script>
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="../css/scss/choicestock.css?v=12" />
+    <!-- js -->
+    <script src="../js/choicestock.js?v=12"></script>
+    <!-- 이 아래는 로컬에서만 사용되는 파일 -->
+    <script src="../js/local.js"></script>
+    <!-- 로컬에서만 사용되는 파일 종료  -->
+</head>
+
+<body class="v_signalStreng globalStock">
+    <div id="wrap">
+        <div id="container" class="">
+            <div class="gdn_typeWrap type_c">
+                <!-- 10배 오를 주식! AI가 찾아드립니다 -->
+                <div class="box top visible">
+                    <div class="navigation_buttons">
+                        <div class="left">
+                            <a href="/" class="go_back">메인으로 이동</a>
+                        </div>
+                    </div>
+                    <div class="top_box">
+                        <h1 class="h1_title">미국주식투자, 늦지 않았습니다!</h1>
+                        <h2 class="h2_title">10배 오를 주식!<br>AI가 찾아드립니다</h2>
+                        <div class="bot_box">
+                            <img src="../img/gdn_bot.png" alt="">
+                            <span class="bubble_img"><img src="../img/bubble_up.png" alt=""></span>
+                        </div>
+                    </div>
+
+                    <ul class="list_box">
+                        <li class="list_item">AI 매매신호로 시작하세요.</li>
+                        <li class="list_item">AI로 '투자의 감'을 잡으세요.</li>
+                        <li class="list_item">투자레시피로 종목을 발굴하세요.</li>
+                        <li class="list_item">알람으로 최신정보를 받으세요.</li>
+                    </ul>
+
+                </div>
+                <!-- //box -->
+
+                <!-- 초보부터 고수까지 반복되는 고민 -->
+                <div class="box mid visible">
+                    <div class="txt_box">
+                        <h2 class="h2_title">초보부터 고수까지 반복되는 고민,</h2>
+                        <ul class="worry_list">
+                            <li class="list_item">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28"
+                                    fill="none">
+                                    <circle cx="13.5" cy="14" r="11" fill="#FFD05D" stroke="#F9C138" stroke-width="4" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M13.5 7.83984C14.1025 7.83984 14.5909 8.27528 14.5909 8.81241V8.82564C16.1746 9.18134 17.5 10.2946 17.5 11.8381C17.5 12.3753 17.0116 12.8107 16.4091 12.8107C15.8066 12.8107 15.3182 12.3753 15.3182 11.8381C15.3182 11.3402 14.6988 10.6495 13.5 10.6495C12.3012 10.6495 11.6818 11.3402 11.6818 11.8381C11.6818 12.3362 12.3012 13.0269 13.5 13.0269C15.5144 13.0269 17.5 14.2715 17.5 16.1608C17.5 17.7043 16.1746 18.8176 14.5909 19.1733V19.1865C14.5909 19.7236 14.1025 20.1591 13.5 20.1591C12.8975 20.1591 12.4091 19.7236 12.4091 19.1865V19.1733C10.8254 18.8176 9.5 17.7043 9.5 16.1608C9.5 15.6236 9.98842 15.1882 10.5909 15.1882C11.1934 15.1882 11.6818 15.6236 11.6818 16.1608C11.6818 16.6587 12.3012 17.3494 13.5 17.3494C14.6988 17.3494 15.3182 16.6587 15.3182 16.1608C15.3182 15.6627 14.6988 14.972 13.5 14.972C11.4856 14.972 9.5 13.7275 9.5 11.8381C9.5 10.2946 10.8254 9.18134 12.4091 8.82564V8.81241C12.4091 8.27528 12.8975 7.83984 13.5 7.83984Z"
+                                        fill="white" />
+                                </svg>
+                                처음에 어떤 종목을 사야할지?
+                            </li>
+                            <li class="list_item">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28"
+                                    fill="none">
+                                    <g clip-path="url(#clip0_4237_2382)">
+                                        <mask id="mask0_4237_2382" style="mask-type:luminance"
+                                            maskUnits="userSpaceOnUse" x="3" y="0" width="22" height="28">
+                                            <path d="M24.6837 0.615234H3.51135V27.665H24.6837V0.615234Z" fill="white" />
+                                        </mask>
+                                        <g mask="url(#mask0_4237_2382)">
+                                            <path
+                                                d="M23.2645 11.7846C22.6807 12.7913 21.9358 13.6955 21.0595 14.4612C22.4691 3.06086 10.7301 0.615234 10.7301 0.615234C11.9385 1.63198 12.7102 5.28073 10.0406 7.82261C6.81973 10.8895 8.18473 13.9896 8.73948 15.6224C7.16072 14.6922 5.84877 13.3704 4.9306 11.7846C4.11833 13.191 3.64051 14.7654 3.5341 16.3861C3.42769 18.0067 3.69555 19.6301 4.31696 21.1306C4.93836 22.6311 5.89664 23.9686 7.11767 25.0395C8.3387 26.1104 9.78973 26.8861 11.3585 27.3064C12.9273 27.7268 14.5717 27.7806 16.1646 27.4637C17.7575 27.1469 19.2562 26.4678 20.5446 25.479C21.8331 24.4902 22.8767 23.2183 23.5949 21.7616C24.3131 20.3049 24.6866 18.7025 24.6864 17.0784C24.6883 15.2197 24.1983 13.3936 23.2662 11.7855"
+                                                fill="#F03E4C" />
+                                        </g>
+                                        <mask id="mask1_4237_2382" style="mask-type:luminance"
+                                            maskUnits="userSpaceOnUse" x="10" y="11" width="9" height="14">
+                                            <path d="M18.6987 11.168H10.6233V24.2046H18.6987V11.168Z" fill="white" />
+                                        </mask>
+                                        <g mask="url(#mask1_4237_2382)">
+                                            <path
+                                                d="M10.6636 20.2741C10.6636 20.2741 9.90935 15.543 14.9861 11.168C15.1505 13.2592 16.0768 15.2173 17.5892 16.6708C18.1119 17.3181 18.4697 18.0825 18.6319 18.8985C18.794 19.7145 18.7557 20.5577 18.5202 21.3556C17.8106 24.3516 14.5915 24.2037 14.5915 24.2037C14.0744 24.2078 13.5617 24.109 13.0832 23.913C12.6047 23.717 12.17 23.4277 11.8043 23.0621C11.4387 22.6965 11.1495 22.2617 10.9535 21.7832C10.7575 21.3047 10.6586 20.792 10.6627 20.275"
+                                                fill="#FFD05D" />
+                                        </g>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_4237_2382">
+                                            <rect width="28" height="28" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                내가 가진 종목은 언제 팔아야할지?
+                            </li>
+                            <li class="list_item">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28"
+                                    fill="none">
+                                    <g clip-path="url(#clip0_4237_2397)">
+                                        <path d="M2 26V15.6681L10.2467 7.34908L15.6375 12.4066L26 2V26H2Z"
+                                            fill="#FEE2E4" />
+                                        <path d="M1 17L10.4074 7.66667L15.8519 13.0667L26 3" stroke="#F03E4C"
+                                            stroke-width="3" />
+                                        <path d="M18 3H26V11" stroke="#F03E4C" stroke-width="3" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_4237_2397">
+                                            <rect width="28" height="28" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                앞으로 주가는 얼마나 오를지?
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bg_dot">
+
+                    </div>
+                </div>
+                <!-- //box -->
+
+                <div class="btn_banner">
+                    <a href="">초이스스탁US가<br>시원하게<br>해결해 드립니다!</a>
+                </div>
+
+                <!-- AI매매신호로 시작하세요. -->
+                <div class="box mid visible">
+                    <div class="txt_box">
+                        <h2 class="h2_title"><b>AI매매신호</b>로<br>시작하세요.</h2>
+                        <p class="title_txt">특허받은 AI 알고리즘이 언제 살지, 언제 팔아야 할지 알려드립니다.</p>
+                    </div>
+                    <div class="area">
+                        <div class="stock_info">
+                            <div class="title_logo">
+                                <span class="logo"><img src="https://uslogo.datahero.co.kr/img/logo/us/mvl/MSFT.svg"
+                                        alt=""></span>
+                            </div>
+                            <div class="detail">
+                                <div class="title">
+                                    <span class="">마이크로소프트</span>
+                                </div>
+                                <div class="detail_num">
+                                    <div class="num">
+                                        <span>368.80</span>
+                                    </div>
+                                    <div class="per">
+                                        <span class="decrease">(-1.00%)</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="data_opinion">
+                                <span class="ibox increase">매수</span>
+                            </div>
+
+                        </div>
+                        <!-- //stock_info -->
+                        <div class="stock_info">
+                            <div class="title_logo">
+                                <span class="logo"><img src="https://uslogo.datahero.co.kr/img/logo/us/mvl/AAPL.svg"
+                                        alt=""></span>
+                            </div>
+                            <div class="detail">
+                                <div class="title">
+                                    <span class="">애플</span>
+                                </div>
+                                <div class="detail_num">
+                                    <div class="num">
+                                        <span>192.32</span>
+                                    </div>
+                                    <div class="per">
+                                        <span class="decrease">(-0.57%)</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="data_opinion">
+                                <span class="ibox same">보유</span>
+                            </div>
+
+                        </div>
+                        <!-- //stock_info -->
+                        <div class="stock_info">
+                            <div class="title_logo">
+                                <span class="logo"><img src="https://uslogo.datahero.co.kr/img/logo/us/mvl/TSLA.svg"
+                                        alt=""></span>
+                            </div>
+                            <div class="detail">
+                                <div class="title">
+                                    <span class="">테슬라</span>
+                                </div>
+                                <div class="detail_num">
+                                    <div class="num">
+                                        <span>239.25</span>
+                                    </div>
+                                    <div class="per">
+                                        <span class="increase">(0.27%)</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="data_opinion">
+                                <span class="ibox decrease">매도</span>
+                            </div>
+
+                        </div>
+                        <!-- //stock_info -->
+                    </div>
+                </div>
+                <!-- //box -->
+
+                <!-- AI로 '투자의 감'을 잡으세요 -->
+                <div class="box mid visible">
+                    <div class="txt_box">
+                        <h2 class="h2_title">AI로<br><b>'투자의 감'</b>을 잡으세요</h2>
+                        <p class="title_txt">어떤 종목을 사고 팔아야 할지, 이 종목의 투자매력은 어떨지 확인해보세요.</p>
+                    </div>
+                    <div class="img_box_tr" style="width: 90%;">
+                        <img src="../img/mid_c01.png" alt="">
+                    </div>
+                    <div class="recommend_list">
+                        <div class="recommend_item">
+                            <div class="recommend_item_icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"
+                                    fill="none">
+                                    <circle cx="15.5" cy="24.5" r="6.5" fill="#DFB513" />
+                                    <path
+                                        d="M24.8749 12.9253V13.9031C24.8749 15.0767 25.2083 16.2239 25.836 17.2003L27.3749 19.5933C28.7791 21.7794 27.7069 24.7502 25.2638 25.4405C18.8801 27.2483 12.1199 27.2483 5.73618 25.4405C3.29314 24.7502 2.22093 21.7794 3.62508 19.5933L5.16396 17.2003C5.79342 16.2158 6.12745 15.0715 6.12645 13.9031V12.9253C6.12645 7.55587 10.3236 3.20312 15.5 3.20312C20.6764 3.20312 24.8749 7.55587 24.8749 12.9253Z"
+                                        fill="#FFD05D" />
+                                    <circle cx="24" cy="6" r="4" fill="#F03E4C" />
+                                </svg>
+                            </div>
+                            <div class="recommend_item_txt">
+                                <span class="recommend_title">AI종목추천</span>
+                                <span class="recommend_txt">추천가, 목표가를 알려드립니다.</span>
+                            </div>
+
+                            <div class="show_item_txt">
+                                <p class="txt">종목추천과 함께 매수에서 매도까지 실시간 리딩 서비스를 제공합니다.<br>투자포인트와 추천가, 목표가를 확인하세요.</p>
+                                <div class="img_box_show">
+                                    <img src="../img/show_mid_01.png" alt="">
+                                </div>
+                            </div>
+                            <!-- //show_item_txt -->
+                            <div class="arrow"></div>
+                        </div>
+                        <!-- //recommend_item -->
+
+                        <div class="recommend_item">
+                            <div class="recommend_item_icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"
+                                    fill="none">
+                                    <rect x="4" y="5" width="24" height="27" rx="4" fill="#B0B8C1" />
+                                    <rect x="7" y="7" width="18" height="22" rx="4" fill="white" />
+                                    <rect x="11" y="13" width="10" height="2" rx="1" fill="#6B7684" />
+                                    <rect x="11" y="17" width="10" height="2" rx="1" fill="#6B7684" />
+                                    <rect x="11" y="21" width="5" height="2" rx="1" fill="#6B7684" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M16 0C18.2091 0 20 1.79086 20 4H23C23.5523 4 24 4.44772 24 5V8C24 8.55229 23.5523 9 23 9H9C8.44772 9 8 8.55229 8 8V5C8 4.44772 8.44772 4 9 4H12C12 1.79086 13.7909 0 16 0ZM16 4C16.5523 4 17 3.55228 17 3C17 2.44772 16.5523 2 16 2C15.4477 2 15 2.44772 15 3C15 3.55228 15.4477 4 16 4Z"
+                                        fill="#4E5866" />
+                                </svg>
+                            </div>
+                            <div class="recommend_item_txt">
+                                <span class="recommend_title">AI종목진단</span>
+                                <span class="recommend_txt">투자매력을 확인하세요.</span>
+                            </div>
+
+                            <div class="show_item_txt">
+                                <p class="txt">테슬라? 엔비디아? 빠르게 확인하세요.<br>금융 빅데이터 분석과 알고리즘으로 관심종목의 투자매력과 적정주가를 빠르게 진단합니다.
+                                </p>
+                                <div class="img_box_show">
+                                    <img src="../img/show_mid_02.png" alt="">
+                                    <img src="../img/show_mid_03.png" alt="">
+                                </div>
+                            </div>
+                            <!-- //show_item_txt -->
+                            <div class="arrow"></div>
+                        </div>
+                        <!-- //recommend_item -->
+                    </div>
+                    <!-- //recommend_list -->
+                </div>
+
+                <!-- 투자레시피로 종목을 발굴하세요. -->
+                <div class="box mid visible">
+                    <div class="txt_box">
+                        <h2 class="h2_title">투자레시피로<br><b>종목을 발굴</b>하세요.</h2>
+                        <p class="title_txt">급등주, 로켓성장주, 배당매력주~ AI로 찾아낸 다양한 종목발굴 레시피를 만나보세요.</p>
+                    </div>
+                    <div class="img_box_tr">
+                        <img src="../img/mid_c02.png" alt="">
+                    </div>
+                </div>
+
+                <!-- 알람으로 최신정보를 받으세요. -->
+                <div class="box mid visible">
+                    <div class="txt_box">
+                        <h2 class="h2_title">알람으로<br><b>최신정보</b>를 받으세요.</h2>
+                        <p class="title_txt">종목추천, 관심종목, 시황의 정보가 알람으로 빠르게 배달됩니다.</p>
+                    </div>
+                    <div class="img_box_tr">
+                        <img src="../img/mid05.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <!-- 신규가입 혜택 할인가! -->
+            <div class="new_member_discount">
+                <h3 class="discount_title">신규가입 혜택 할인가!
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                        <path
+                            d="M19.8 5.71002C19.341 5.24601 18.7943 4.87796 18.1917 4.6273C17.5891 4.37665 16.9426 4.2484 16.29 4.25002C15.6373 4.2484 14.9909 4.37665 14.3883 4.6273C13.7857 4.87796 13.239 5.24601 12.78 5.71002L12.5 6.00002L12.22 5.72C11.2917 4.79181 10.0327 4.27037 8.72 4.27037C7.40726 4.27037 6.14829 4.79181 5.22 5.72C4.30386 6.65465 3.79071 7.91125 3.79071 9.22002C3.79071 10.5288 4.30386 11.7854 5.22 12.72L11.99 19.51C12.1306 19.6505 12.3212 19.7294 12.52 19.7294C12.7187 19.7294 12.9094 19.6505 13.05 19.51L19.82 12.72C20.7365 11.7823 21.2479 10.5221 21.2442 9.21092C21.2405 7.89973 20.7218 6.64248 19.8 5.71002Z"
+                            fill="#F03E4C" />
+                        <path d="M18.5 8.49913C18.7747 9.42085 17.9466 11.8523 14.2172 14.2558" stroke="#FEF2F3"
+                            stroke-linecap="round" />
+                    </svg>
+                </h3>
+                <div class="discount_box">
+                    <div class="discount_item">
+                        <div class="discount_item_title">
+                            <h4>월 정기 결제</h4>
+                            <span>첫 달 1,000원</span>
+                        </div>
+                        <div class="discount_item_txt">
+                            <p><span class="through">정가 33,000원</span> → 1,000원으로<br>전종목 AI매매신호 + 알림서비스까지!<br>프리미엄 서비스를
+                                경험하세요.</p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <!-- //new_member_discount -->
+
+            <div class="premium_gdnbtn type_c">
+                <a href="" class="btn btn_apply">
+                    미국주식 <b>AI 매매신호</b> 첫 달 1,000원
+                </a>
+            </div>
+
+        </div>
+        <!-- //service_wrap -->
+
+        <div id="footer" class="event_footer">
+            <div class="foot_info">
+                <h5 class="foot_title">데이터히어로</h5>
+                <div class="foot_txt">
+                    <p class="txt">데이터히어로가 제공하는 모든 콘텐츠는 오직 정보 제공 목적으로만 사용되며, 특정 주식을 판매하거나 추천할 의도로 게시된 것이 아닙니다. 데이터히어로의
+                        콘텐츠는 연구 보고서가 아니며, 투자 결정의 유일한 근거로 사용되어서는 안 됩니다.</p>
+                    <p class="txt">모든 투자에는 위험이 따르며, 과거 금융 상품의 성과가 미래의 결과나 수익을 보장하지 않습니다. 금융 상품에 투자할 때는 항상 재정적 손실의 가능성을
+                        인지하고 있어야 하며, 투자자는 투자하기 전에 자신의 투자 목표와 위험을 신중하게 고려해야 합니다.</p>
+                </div>
+                <p class="dataLink">data from <a href="https://www.quandl.com/" target="_blank">Quandl and Sharadar</a>
+                </p>
+            </div>
+            <div class="terms_list">
+                <a href="/member/terms">이용약관</a>
+                <a href="/member/policy"><i></i><strong>개인정보처리방침</strong></a>
+            </div>
+            <div class="copyright">
+                <p><a href="https://www.datahero.co.kr" target="_blank">ⓒ (주)데이터히어로</a> <i></i> 대표자 김인중</p>
+                <p>서울특별시 서초구 강남대로 311</p>
+                <p>사업자등록번호 291-88-01393</p>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- //wrap -->
+
+</body>
+
+</html>
