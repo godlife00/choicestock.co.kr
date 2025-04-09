@@ -707,10 +707,7 @@ $(document).ready(function () {
             $(this).parent().children().children(".more").show();
         });
     });
-
-    //메인 상단 관심종목
     
-
     //메인 다우선물,다우지수
     if ($('.maingdowSwiper').length) {
         var swiper = new Swiper('.maingdowSwiper', {                    
@@ -849,7 +846,7 @@ $(document).ready(function () {
         spaceBetween: 10,
     });
 
-    // GDN 페이지 투자레시피 슬라이드    
+    // GDN 페이지 투자레시피 슬라이드
     var swiper = new Swiper('.recipeSwiper', {
         loop: true,              
         spaceBetween: 8,
@@ -1701,8 +1698,116 @@ $(document).ready(function () {
             $('.premium_login_guide').show().addClass('slideUp');
         }        
     });
+	
+    // 관심종목 등록 팝업
+    $('.attention_pop').on('click', function () {
+        $('.modal').hide().removeClass('slideUp'); // 다른 모달 숨기기
+        $('.blocker').show(); // 배경 블러 처리
+        $('.fav_reg_popup').show().addClass('slideUp'); // 원하는 모달 표시                        
+        $('html, body').css("overflow", "hidden");
+    });    
+    // 관심종목 그룹 등록 2차 팝업
+    $('.group_add_btn').on('click', function () {                          
+        $('.modal').hide().removeClass('slideUp');                      
+		 // 등록 팝업 초기화
+		$('.fav_group_reg_popup .name_input').val('');
+		//$('.fav_group_reg_popup .input_cunt').text('0/15');
+		$('.fav_group_del_popup .input_count').html('<b>0</b>/15');
+		
+    $('.blocker').show();
+		$('.fav_group_reg_popup').show().addClass('slideUp'); // 그룹 추가 펍옵 표시
+    $('html, body').css("overflow", "hidden");		
+    });
+	
+    $('.group_reg_btn').on('click', function () {                          
+        $('.modal').hide().removeClass('slideUp');                      
+        $('.fav_group_del_popup').show().addClass('slideUp'); 
+    });	
 
-    // 매매신호 플로팅 배너 열기, 닫기 스크립트
+    // fav_group_reg_popup 닫기 버튼 클릭 시
+    $('.fav_group_reg_popup .clse').on('click', function () {      
+        $('.modal').hide().removeClass('slideUp'); // 다른 모달 숨기기
+        $('.blocker').show(); // 배경 블러 처리
+        $('html, body').css("overflow", "hidden");   
+
+	    const currentPage = $("#current_page").val() || $("body").data("current_page");
+		
+		if(currentPage=="interest") {
+			$('.fav_group_manage_popup').show().addClass('slideUp');
+		}
+		else {
+	        $('.fav_reg_popup').show().addClass('slideUp'); // 원하는 모달 표시                                  
+		}
+    });
+	
+    // 관심종목 그룹 관리 툴팁 팝업
+    $('.btn_manage_group').on('click', function () {
+        $('.modal').hide().removeClass('slideUp'); // 다른 모달 숨기기
+        $('.blocker').show(); // 배경 블러 처리
+        $('.fav_group_manage_popup').show().addClass('slideUp'); // 원하는 모달 표시        
+        $('html, body').css("overflow", "hidden");
+    });	
+	
+	// 그룹 관리 팝업의 확인 버튼 클릭 이벤트
+	$(document).on('click', '.fav_group_manage_popup .btn_save', function() {
+		// 모달 창 닫기
+		$('.modal').hide().removeClass('slideUp');
+		$('.blocker').hide();
+		$('html, body').css("overflow", "");
+	});	
+		
+	$(document).on('click', '.fav_group_del_popup .clse', function() {
+		// 현재 팝업 닫기
+		$('.fav_group_del_popup').hide().removeClass('slideUp');
+		
+		// 그룹 관리 팝업 다시 표시
+		$('.fav_group_manage_popup').show().addClass('slideUp');
+		
+	});	
+
+	$(document).on('click', '.blocker', function() {
+		// 열려있는 모달 확인
+		const openedModal = $('.modal.slideUp');
+		
+		// 그룹 이름 수정/삭제 창이 열려있는 경우
+		if (openedModal.hasClass('fav_group_del_popup')) {
+			// 수정/삭제 창 닫기
+			$('.fav_group_del_popup').hide().removeClass('slideUp');
+			
+			// 그룹 관리 창 열기
+			$('.fav_group_manage_popup').show().addClass('slideUp');
+			
+			// 이벤트 전파 방지 (blocker가 완전히 닫히는 것 방지)
+			return false;
+		}
+	});
+
+    // 관심그룹 수정,삭제
+    $('.fav_group_com_popup .clse').on('click', function () {      
+        $('.modal').hide().removeClass('slideUp'); // 다른 모달 숨기기
+        $('.blocker').show(); // 배경 블러 처리
+        $('html, body').css("overflow", "hidden");        
+        $('.fav_group_manage_popup').show().addClass('slideUp'); // 원하는 모달 표시                                  
+    });
+
+    $('.fav_item_del_popup2 .btn_save, .fav_item_del_popup2 .clse').on('click', function() {
+        $('.fav_item_del_popup2').hide().removeClass('slideUp');
+        $('.blocker').hide();
+        $('html, body').css("overflow", "");
+    });
+	
+	// 관심종목 이동 -> 닫기
+	$('.fav_item_move_popup .btn.btn_save').on('click', function () {        
+		$('body').css('overflow', '');                        
+		$('.blocker').hide();
+		$('.modal').hide().removeClass('slideUp');        
+	});
+    // 모달이 닫힐 때 body에서 'modal-open' 클래스를 제거하는 코드 추가
+    $('.modal.att_pop .pop_header .clse, .blocker').on('click', function() {                
+        $('html, body').css("overflow", "");
+    });
+
+    // 매매신호 플로팅 배너 열기, 닫기 스크립트    
     // 스크롤 이벤트를 감지하여 처리    
     function scrollsignalpop() {        
         const signalPop = document.querySelector('.v_signalStreng.globalStock .signalpop .box');
@@ -2010,11 +2115,12 @@ $(document).ready(function () {
     
     $(window).on('scroll', checkPremiumBtnPosition);
     $(window).on('resize', checkPremiumBtnPosition);
-    
+
     checkVisibility(); // 페이지 로드 시에도 실행
     applyScrollEffect(); // 서비스소개 페이드인 효과 함수 실행
     checkPremiumBtnPosition(); // 페이지 로드 시 버튼 위치 확인
     applyClassInSequence(premiumBenefits, 0); // 서비스소개 상단 3개 박스 순차 슬라이드 함수 실행
+
 
     // EPS 툴팁 팝업 높이 조절 스크립트 시작           
     if ($('.eps_pop01 .pop_con').length) {
@@ -2139,40 +2245,6 @@ $(document).ready(function () {
         
 });
 
-// 레시피 리스트 벽돌쌓기 레이아웃, Masonry js 
-// function debounce(func, wait) {
-//     let timeout;
-//     return function () {
-//         clearTimeout(timeout);
-//         timeout = setTimeout(func, wait);
-//     };
-// }
-
-// document.addEventListener("DOMContentLoaded", function () {
-//     const masonryContainers = document.querySelectorAll('.list_masonry');
-
-//     masonryContainers.forEach(function (container) {
-//         const masonryInstance = new Masonry(container, {
-//             itemSelector: '.figure', // 각 항목의 셀렉터
-//             columnWidth: '.figure', // 컬럼 너비            
-//             percentPosition: true, // 반응형 비율 계산
-//             gutter: 14, // 항목 간격 (픽셀 단위)
-//             horizontalOrder: true, // 좌우 간격 추가            
-//             fitWidth: true, // 상하 간격 추가
-//             transitionDuration: '0.4s' // 부드러운 전환을 위한 애니메이션 지속 시간
-//         });
-
-//         // 초기 설정 시 list_masonry의 너비를 100%로 설정
-//         container.style.width = '100%';
-
-//         window.addEventListener('resize', debounce(() => {
-//             // 리사이즈 시 list_masonry의 너비를 100%로 유지
-//             container.style.width = '100%';
-//             masonryInstance.layout();
-//         }, 100));
-//     });
-// });
-
 // 검색 이력 더보기, 닫기 스크립트
 document.addEventListener("DOMContentLoaded", function() {
     const tickerContainer = document.getElementById('ticker-container');
@@ -2215,6 +2287,7 @@ document.addEventListener("DOMContentLoaded", function() {
     } 
 });
 
+
 // recommend_item 클릭 이벤트 처리
 document.addEventListener('DOMContentLoaded', function() {
     const recommendItems = document.querySelectorAll('.recommend_item');
@@ -2240,4 +2313,24 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
+// premium_gdnbtn 스크롤 이벤트 처리
+function handlePremiumButtonScroll() {
+    const premiumBtn = document.querySelector('.premium_gdnbtn');
+    const footer = document.querySelector('#footer');
+    if (!premiumBtn || !footer) return;
 
+    const premiumBtnRect = premiumBtn.getBoundingClientRect();
+    const windowHeight = window.innerHeight;
+    const scrollPosition = window.scrollY;
+    const documentHeight = document.documentElement.scrollHeight;
+    const footerHeight = footer.offsetHeight;
+
+    // 버튼이 화면 하단에 고정되어야 하는 위치 계산 (푸터 영역 제외)
+    const fixedPosition = documentHeight - windowHeight - premiumBtn.offsetHeight - footerHeight;
+
+    if (scrollPosition >= fixedPosition) {
+        premiumBtn.classList.remove('is-bottom');            
+    } else {            
+        premiumBtn.classList.add('is-bottom');
+    }
+}

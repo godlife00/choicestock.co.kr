@@ -20460,14 +20460,14 @@ table.tableRanking td {
 	padding: 7px 0;
 }
 
-.globalStock .view_con .mid li {
+.globalStock .view_con .mid ul li {
 	font-size: 1.0625rem;
 	line-height: 30px;
 	padding-left: 13px;
 	position: relative;
 }
 
-.globalStock .view_con .mid li::before {
+.globalStock .view_con .mid ul li::before {
 	content: "";
 	position: absolute;
 	left: 4px;
