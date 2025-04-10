@@ -15788,13 +15788,17 @@ table.tableRanking td {
 
 .globalStock .sub_attract .sub_top .txt_box {
   background: #fff;
-  padding: 12px 15px;
+  padding: 16px 20px;
 }
 
 .globalStock .sub_attract .sub_top .txt_box .txt {
-  color: #939393;
-  font-size: 0.9375rem;
-  line-height: 20px;
+  color: var(--Font-secondary-body, #4E5866);
+  font-family: var(--Body, Pretendard);
+  font-size: var(--Size-sm, 14px);
+  font-style: normal;
+  font-weight: var(--Weight-400, 400);
+  line-height: var(--Line-height-lg, 21px);
+  letter-spacing: var(--Tracking-md, -0.3px);
 }
 
 .globalStock .sub_attract .sub_mid.attract_sub {
@@ -16863,6 +16867,71 @@ table.tableRanking td {
 .v_signalStreng.globalStock .sub_recipe.new_recipe {
   margin-top: 0;
 }
+.v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .filter_list {
+  display: flex;
+  align-items: center;
+  gap: var(--Spacing-s-04, 8px);
+  margin-top: 32px;
+}
+.v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .filter_list .swiper-slide {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .filter_list .swiper-slide:last-child {
+  margin-right: 32px !important;
+}
+.v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .filter_list .swiper-slide .filter_btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px 4px;
+  border-radius: var(--Radius-r-06, 32px);
+  border: 1px solid var(--Border-primary-border, #E3E5E8);
+  padding: 7px 16px;
+  box-sizing: border-box;
+  color: var(--Font-default, #6B7684);
+  font-family: var(--Body, Pretendard);
+  font-size: var(--Size-md-15, 15px);
+  font-style: normal;
+  font-weight: var(--Weight-500, 500);
+  line-height: var(--Line-height-xl-01, 24px); /* 160% */
+  letter-spacing: var(--Tracking-md, -0.3px);
+}
+.v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .filter_list .swiper-slide .filter_btn.active {
+  border-radius: var(--Radius-r-06, 32px);
+  background: var(--Background-primary-dark-background, #24282C);
+  color: #FFF;
+  font-weight: var(--Weight-600, 600);
+  border-color: transparent;
+}
+.v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .filter-swiper {
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+.v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .filter-swiper.swiper-container-initialized {
+  visibility: visible;
+}
+.v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .filter-swiper .swiper-wrapper {
+  transition-timing-function: linear;
+}
+.v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .filter-swiper .swiper-slide {
+  display: block;
+  width: auto;
+}
+.v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .filter_box_inner .txt_box {
+  width: 100%;
+  padding-bottom: 16px;
+}
+.v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .filter_box_inner .txt_box .title {
+  color: var(--Font-primary-title, #1F242B);
+  font-family: var(--Title, Pretendard);
+  font-size: var(--Size-xl-01, 18px);
+  font-style: normal;
+  font-weight: var(--Weight-600, 600);
+  line-height: var(--Line-height-xl-01, 24px); /* 133.333% */
+  letter-spacing: var(--Tracking-md, -0.3px);
+}
 .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .box_tabs .list_masonry {
   display: flex;
   flex-wrap: wrap;
@@ -16972,31 +17041,54 @@ table.tableRanking td {
 }
 .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .one_step {
   background: #FFF !important;
-  border-radius: 16px;
-  padding: 24px 16px;
-  margin: 48px auto;
-  width: 100%;
+  width: 100% !important;
   box-sizing: border-box;
+}
+.v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .one_step.flx_btn {
+  border-radius: 16px;
+  background: var(--Background-primary-light-background, #F1F4F6) !important;
+  padding: 21px 16px;
+  margin: 24px 20px 50px !important;
+  width: auto !important;
+  transition: all 0.3s ease;
 }
 .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .one_step::before {
   display: none !important;
 }
 .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .one_step .txt {
-  color: #333;
-  font-size: 15px;
-  font-weight: 700;
   padding: 0;
+  color: var(--Font-primary-body, #24282C);
+  font-family: var(--Body, Pretendard);
+  font-size: var(--Size-md-15, 15px);
+  font-style: normal;
+  font-weight: var(--Weight-700, 700);
+  line-height: var(--Line-height-xl-01, 24px); /* 160% */
+  letter-spacing: var(--Tracking-md, -0.3px);
 }
 .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .one_step a.more {
-  border-radius: 4px;
-  background: #404FC3;
-  padding: 4px 12px;
-  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 12px;
+  border-radius: var(--Radius-r-02, 8px);
+  background: var(--Font-primary-blue, #4168F6);
 }
 .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .one_step a.more span {
   color: #FFF;
-  font-size: 13px;
-  font-weight: 500;
+  font-family: var(--Body, Pretendard);
+  font-size: var(--Size-xs-13, 13px);
+  font-style: normal;
+  font-weight: var(--Weight-600, 600);
+  line-height: var(--Line-height-xs-13, 16px); /* 123.077% */
+  letter-spacing: var(--Tracking-md, -0.3px);
+}
+@media (min-width: 320px) and (max-width: 374px) {
+  .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .one_step a.more {
+    padding: 8px 8px;
+  }
+  .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .one_step a.more span {
+    font-size: var(--Size-xs-12, 12px);
+  }
 }
 .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_top.view .update_info {
   color: #939393;
@@ -17662,24 +17754,29 @@ table.tableRanking td {
 
 .globalStock .sub_recipe .sub_top .txt_box {
   background: #fff;
-  padding: 12px 15px;
+  padding: 16px 20px;
 }
 
 .globalStock .sub_recipe .sub_top .txt_box .txt {
-  color: #939393;
-  line-height: 20px;
+  color: var(--Font-secondary-body, #4E5866);
+  font-family: var(--Body, Pretendard);
+  font-size: var(--Size-sm, 14px);
+  font-style: normal;
+  font-weight: var(--Weight-400, 400);
+  line-height: var(--Line-height-lg, 21px); /* 150% */
+  letter-spacing: var(--Tracking-md, -0.3px);
 }
 
 .globalStock .sub_recipe .sub_mid.recipe_tabs .box_tabs {
   margin: 18px auto 0;
-  padding: 0 15px;
+  padding: 0 20px;
   overflow: hidden;
 }
 
 .v_signalStreng.globalStock .sub_recipe .sub_mid.recipe_tabs .box_tabs {
-  background-color: #F4F4F5;
-  margin-top: 15px;
-  padding-top: 20px;
+  background-color: #fff;
+  margin-top: 0;
+  padding-top: 24px;
   padding-bottom: 32px;
 }
 
@@ -26960,13 +27057,17 @@ table.tableRanking td {
 /****** 투자매력도 ******/
 .globalStock .sub_research .txt_box {
   background: #fff;
-  padding: 12px 15px;
+  padding: 16px 20px;
 }
 
 .globalStock .sub_research .txt_box .txt {
-  color: #939393;
-  font-size: 0.9rem;
-  line-height: 1.43;
+  color: var(--Font-secondary-body, #4E5866);
+  font-family: var(--Body, Pretendard);
+  font-size: var(--Size-sm, 14px);
+  font-style: normal;
+  font-weight: var(--Weight-400, 400);
+  line-height: var(--Line-height-lg, 21px);
+  letter-spacing: var(--Tracking-md, -0.3px);
 }
 
 .globalStock .sub_research .txt_box .txt strong {
@@ -34298,7 +34399,7 @@ body.v_signalStreng {
 
 .v_signalStreng.globalStock .sub_top .txt_box,
 .v_signalStreng.globalStock .sub_search .latest_results .tabsArea .tab_container .txt_box {
-  background-color: #F5F5F9;
+  background: var(--Background-secondary-background, #F7F8FA);
 }
 
 .v_signalStreng.globalStock .return_sum {

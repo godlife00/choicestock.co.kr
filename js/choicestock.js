@@ -1013,6 +1013,37 @@ $(document).ready(function () {
         });
     };
 
+    // 필터 스와이퍼 초기화
+    const filterSwiper = new Swiper('.filter-swiper', {
+        slidesPerView: 'auto',
+        spaceBetween: 0,
+        freeMode: true,        
+    });
+
+    // 필터 버튼 클릭 이벤트
+    $('.filter_btn').on('click', function(e) {
+        e.preventDefault();
+        const $this = $(this);
+        const index = $this.parent().index();
+        const speed = 150; // 이동 속도 설정 (밀리초 단위)
+
+        // 이미 활성화된 버튼을 다시 클릭했을 때는 아무 작업도 하지 않음
+        if ($this.hasClass('active')) {
+            return;
+        }
+
+        $('.filter_btn').removeClass('active');
+        $this.addClass('active');
+        
+        // 클릭한 버튼을 화면 좌측으로 이동
+        filterSwiper.slideTo(index, speed);
+
+        // 두번째 필터 버튼을 선택했을때 스크롤을 제일 좌측으로 이동
+        if (index === 1) {
+            filterSwiper.slideTo(0, speed);
+        }
+    });
+
 
     /************************/
     /****  add active  *****/
@@ -2233,16 +2264,61 @@ $(document).ready(function () {
             $('body').css('overflow', 'hidden');
             $('.modal').hide().removeClass('slideUp');
             $('.blocker').show();
-            $('.score_pop02').show().addClass('slideUp'); 
-            
-            // CustomChart_score1_2_clone 차트 렌더링
-            const chartContainer = document.getElementById('CustomChart_score1_2_clone');
-            if (chartContainer && !chartContainer.hasChildNodes()) {
-                CustomChart_Score('CustomChart_score1_2_clone', chartData); // chartData는 차트에 필요한 데이터
-            }
+            $('.score_pop02').show().addClass('slideUp');
         }        
     });
         
+    // 레시피 필터링 기능
+    function initRecipeFilter() {
+        // 필터 버튼 클릭 이벤트
+        $('.filter_btn').on('click', function(e) {
+            e.preventDefault();
+            
+            // active 클래스 토글
+            $('.filter_btn').removeClass('active');
+            $(this).addClass('active');
+            
+            // 선택된 카테고리 가져오기
+            let category = '';
+            const btnText = $(this).text().trim();
+            
+            switch(btnText) {
+                case '추천레시피':
+                    category = 'recommended';
+                    break;
+                case 'HOT! 관심주':
+                    category = 'hot';
+                    break;
+                case '성장주':
+                    category = 'growth';
+                    break;
+                case '가치주':
+                    category = 'value';
+                    break;
+                case '기술적분석':
+                    category = 'technical';
+                    break;
+            }
+            
+            // 모든 레시피 숨기기
+            $('.filter_box_inner').hide();
+            
+            // 선택된 카테고리 보여주기
+            if(category) {
+                $('.filter_box_inner[data-category="' + category + '"]').show();
+            } else {
+                // 카테고리가 없으면 모두 보여주기
+                $('.filter_box_inner').show();
+            }
+        });
+    }
+
+    // DOM 로드 완료 후 실행
+    $(document).ready(function() {
+        // ... existing code ...
+        initRecipeFilter();
+        // ... existing code ...
+    });
 });
 
 // 검색 이력 더보기, 닫기 스크립트
