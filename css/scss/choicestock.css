@@ -370,7 +370,6 @@
   border-top: 1px solid var(--Border-secondary-border, #F1F4F6);
   background-color: #fff;
   margin: 0;
-  margin-top: 70px;
   padding: 48px 32px;
   box-sizing: border-box;
 }
@@ -41059,6 +41058,7 @@ body.v_signalStreng {
   background-color: #fff;
 }
 .gdn_typeWrap .box.top {
+  padding-top: 100px;
   padding-left: 32px;
   padding-right: 32px;
   background: linear-gradient(169deg, var(--Red-red100, #FEE2E4) 9.83%, #F4EDF5 18.07%, var(--Blue-blue200, #BFD1FE) 60.87%);
@@ -41511,7 +41511,7 @@ body.v_signalStreng {
   align-items: center;
   justify-content: center;
   gap: 8px 8px;
-  padding: 15px 0 0;
+  padding: 15px 12px 0;
   margin-top: 8px;
   width: 100%;
   background-color: #fff;
@@ -41647,7 +41647,7 @@ body.v_signalStreng {
   flex-wrap: wrap;
   align-items: center;
   gap: 8px 16px;
-  padding: 20px 24px;
+  padding: 24px 20px;
   border-radius: 16px;
   background: var(--Background-primary-light-background, #F1F4F6);
   cursor: pointer;
@@ -41681,7 +41681,7 @@ body.v_signalStreng {
   opacity: 0;
   display: none;
   width: 100%;
-  padding: 8px 0 48px;
+  padding: 24px 0;
   max-height: 0;
   overflow: hidden;
   transition: all 0.3s ease;
@@ -41718,7 +41718,7 @@ body.v_signalStreng {
 .gdn_typeWrap .recommend_list .recommend_item .arrow {
   position: absolute;
   top: 37px;
-  right: 16px;
+  right: 36px;
   width: 16px;
   height: 16px;
   transition: transform 0.3s ease;
@@ -41727,12 +41727,10 @@ body.v_signalStreng {
   height: 5px;
   margin: auto;
   display: inline-block;
-  border-top: 2px solid #6B7684;
-  border-right: 2px solid #6B7684;
-  transform: rotate(135deg);
 }
-.gdn_typeWrap .recommend_list .recommend_item.active .arrow {
-  transform: rotate(315deg);
+.gdn_typeWrap .recommend_list .recommend_item.active .arrow svg {
+  transform: rotate(175deg);
+  transition: transform 0.2s ease-in-out;
 }
 .gdn_typeWrap.type_c .box.top .list_box .list_item {
   min-height: auto;
@@ -41843,6 +41841,7 @@ body.v_signalStreng {
   text-decoration-line: strikethrough;
 }
 .new_member_discount .discount_box .discount_item_txt p .through {
+  color: var(--Gray-gray600, #6B7684);
   text-decoration: line-through;
 }
 
@@ -41851,20 +41850,21 @@ body.v_signalStreng {
   bottom: 26px;
   z-index: 9999;
   opacity: 1;
-  margin: 45px auto 0;
+  margin: 45px auto 55px;
   transition: all 0.3s ease;
 }
 .premium_gdnbtn.type_c {
   bottom: -15px;
   margin-top: 0;
-  padding-bottom: 40px;
+  margin-bottom: 0;
+  padding-bottom: 32px;
   background: transparent;
 }
 .premium_gdnbtn.type_c.is-bottom {
   bottom: 0;
   margin-top: 0;
   padding: 0;
-  padding-bottom: 40px;
+  padding-bottom: 32px;
   background: var(--Blue-blue50, #F6F8FF);
 }
 .premium_gdnbtn .btn.btn_apply {

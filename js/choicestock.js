@@ -2292,24 +2292,25 @@ document.addEventListener("DOMContentLoaded", function() {
 document.addEventListener('DOMContentLoaded', function() {
     const recommendItems = document.querySelectorAll('.recommend_item');
     
-    recommendItems.forEach(item => {
-        item.addEventListener('click', function() {
-            const showItemTxt = this.querySelector('.show_item_txt');
-            const isActive = showItemTxt.classList.contains('active');
-            
-            // 모든 show_item_txt를 닫기
-            document.querySelectorAll('.show_item_txt').forEach(el => {
-                el.classList.remove('active');
-                el.parentElement.classList.remove('active');
+    if (recommendItems.length > 0) {
+        recommendItems.forEach(item => {
+            item.addEventListener('click', function() {
+                const showItemTxt = this.querySelector('.show_item_txt');
+                if (!showItemTxt) return;
+                
+                const isActive = showItemTxt.classList.contains('active');
+                
+                // 클릭한 항목만 토글
+                if (isActive) {
+                    showItemTxt.classList.remove('active');
+                    this.classList.remove('active');
+                } else {
+                    showItemTxt.classList.add('active'); 
+                    this.classList.add('active');
+                }
             });
-            
-            // 클릭한 항목만 토글
-            if (!isActive) {
-                showItemTxt.classList.add('active');
-                this.classList.add('active');
-            }
         });
-    });
+    }
 });
 
 
@@ -2319,18 +2320,35 @@ function handlePremiumButtonScroll() {
     const footer = document.querySelector('#footer');
     if (!premiumBtn || !footer) return;
 
-    const premiumBtnRect = premiumBtn.getBoundingClientRect();
-    const windowHeight = window.innerHeight;
-    const scrollPosition = window.scrollY;
-    const documentHeight = document.documentElement.scrollHeight;
-    const footerHeight = footer.offsetHeight;
+    try {
+        const windowHeight = window.innerHeight;
+        const scrollPosition = window.scrollY;
+        const documentHeight = document.documentElement.scrollHeight;
+        const footerHeight = footer.offsetHeight;
 
-    // 버튼이 화면 하단에 고정되어야 하는 위치 계산 (푸터 영역 제외)
-    const fixedPosition = documentHeight - windowHeight - premiumBtn.offsetHeight - footerHeight;
+        // 버튼이 화면 하단에 고정되어야 하는 위치 계산 (푸터 영역 제외)
+        const fixedPosition = documentHeight - windowHeight - premiumBtn.offsetHeight - footerHeight;
 
-    if (scrollPosition >= fixedPosition) {
-        premiumBtn.classList.remove('is-bottom');            
-    } else {            
-        premiumBtn.classList.add('is-bottom');
+        if (scrollPosition >= fixedPosition) {
+            premiumBtn.classList.remove('is-bottom');            
+        } else {            
+            premiumBtn.classList.add('is-bottom');
+        }
+    } catch (error) {
+        console.log('premium_gdnbtn 스크롤 이벤트 처리 중 오류 발생:', error);
     }
 }
+
+// GDN_Ctype 페이지의 event_footer 스타일 처리
+document.addEventListener('DOMContentLoaded', function() {
+    const gdnTypeWrap = document.querySelector('.gdn_typeWrap.type_c');
+    const eventFooter = document.querySelector('.event_footer');
+    const eventContainer = document.querySelector('#container');
+
+    if (gdnTypeWrap && eventFooter) {        
+        eventFooter.style.borderTop = 'none';
+    }
+    if (gdnTypeWrap && eventContainer) {
+        eventContainer.style.paddingBottom = '0';
+    }
+});
