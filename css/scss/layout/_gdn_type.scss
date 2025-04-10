@@ -927,11 +927,11 @@
         font-family: var(--Body, Pretendard);
         font-size: var(--Size-lg, 17px);
         font-style: normal;
-        font-weight: var(--Weight-600, 600);
-        line-height: var(--Line-height-lg, 21px);        
+        font-weight: var(--Weight-700, 700);
+        line-height: var(--Line-height-lg, 21px); /* 123.529% */
         letter-spacing: var(--Tracking-md, -0.3px);
         b {
-            color: var(--Yellow-yellow500, #FFD120);            
+            color: var(--Yellow-yellow400, #FFDA4D);            
             font-weight: var(--Weight-700, 700);            
         }
         &::before {
