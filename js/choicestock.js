@@ -2268,57 +2268,6 @@ $(document).ready(function () {
         }        
     });
         
-    // 레시피 필터링 기능
-    function initRecipeFilter() {
-        // 필터 버튼 클릭 이벤트
-        $('.filter_btn').on('click', function(e) {
-            e.preventDefault();
-            
-            // active 클래스 토글
-            $('.filter_btn').removeClass('active');
-            $(this).addClass('active');
-            
-            // 선택된 카테고리 가져오기
-            let category = '';
-            const btnText = $(this).text().trim();
-            
-            switch(btnText) {
-                case '추천레시피':
-                    category = 'recommended';
-                    break;
-                case 'HOT! 관심주':
-                    category = 'hot';
-                    break;
-                case '성장주':
-                    category = 'growth';
-                    break;
-                case '가치주':
-                    category = 'value';
-                    break;
-                case '기술적분석':
-                    category = 'technical';
-                    break;
-            }
-            
-            // 모든 레시피 숨기기
-            $('.filter_box_inner').hide();
-            
-            // 선택된 카테고리 보여주기
-            if(category) {
-                $('.filter_box_inner[data-category="' + category + '"]').show();
-            } else {
-                // 카테고리가 없으면 모두 보여주기
-                $('.filter_box_inner').show();
-            }
-        });
-    }
-
-    // DOM 로드 완료 후 실행
-    $(document).ready(function() {
-        // ... existing code ...
-        initRecipeFilter();
-        // ... existing code ...
-    });
 });
 
 // 검색 이력 더보기, 닫기 스크립트
