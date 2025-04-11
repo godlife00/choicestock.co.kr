@@ -13978,6 +13978,13 @@ body.v_signalStreng {
 	margin-bottom: 0;
 	padding-top: 20px;
 	padding-bottom: 32px;
+	.filter_list {
+		@include filter_list;
+		margin-top: 16px;		
+	}
+	.filter-swiper {				
+		@include filter_swiper;
+	}
 }
 
 .v_signalStreng.globalStock #wrap #container .sub_mid.research_board .news_no_data {

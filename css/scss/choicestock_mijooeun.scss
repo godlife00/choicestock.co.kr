@@ -1,9 +1,12 @@
 // @import "helpers/reset"; // 리셋
 @import "helpers/functions"; // functions
+@import "helpers/mixins"; // mixins
 
 @import "layout/header";
 @import "layout/footer";
 @import "layout/styles"; // 전반적인 스타일 요소를 담당하는 파일
+@import "layout/styles2"; // 전반적인 스타일 요소를 담당하는 파일
 @import "layout/modal"; // 팝업, 툴팁
 @import "layout/service"; // 팝업, 툴팁
+@import "layout/gdn_type"; // GDN_type
 @import "layout/mijooeun"; // 미주은 미국주식으로 은퇴하기에서 사용하는 스타일

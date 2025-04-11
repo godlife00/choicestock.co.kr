@@ -16943,68 +16943,10 @@ table.tableRanking td {
 		margin-top: 0;
 		.sub_mid.recipe_tabs {
 			.filter_list {
-				display: flex;
-				align-items: center;
-				gap: var(--Spacing-s-04, 8px);
-				// padding: 0px 20px;
-				margin-top: 32px;
-								
-				.swiper-slide {
-					display: inline-flex;
-					align-items: center;
-					justify-content: center;
-					// padding: 8px 0;
-					&:last-child {
-						margin-right: 32px !important;						
-					}
-					.filter_btn {
-
-						display: inline-flex;
-						align-items: center;
-						justify-content: center;
-						gap: 4px 4px;						
-						
-						border-radius: var(--Radius-r-06, 32px);
-						border: 1px solid var(--Border-primary-border, #E3E5E8);
-						padding: 7px 16px;						
-						box-sizing: border-box;
-
-						color: var(--Font-default, #6B7684);
-						font-family: var(--Body, Pretendard);
-						font-size: var(--Size-md-15, 15px);
-						font-style: normal;
-						font-weight: var(--Weight-500, 500);
-						line-height: var(--Line-height-xl-01, 24px); /* 160% */
-						letter-spacing: var(--Tracking-md, -0.3px);
-						&.active {
-							border-radius: var(--Radius-r-06, 32px);
-							background: var(--Background-primary-dark-background, #24282C);
-							color: #FFF;							
-							font-weight: var(--Weight-600, 600);	
-							border-color: transparent;						
-						}
-						
-					}
-					
-				}
+				@include filter_list;
 			}
 			.filter-swiper {				
-				padding: 0 20px;				
-				box-sizing: border-box;
-
-				&.swiper-container-initialized {
-					visibility: visible;
-				}
-
-				.swiper-wrapper {
-					transition-timing-function: linear;
-				}
-
-				.swiper-slide {
-					display: block;
-					width: auto;
-				}
-
+				@include filter_swiper;
 			}
 			.filter_box_inner {				
 				.txt_box {
@@ -19777,7 +19719,7 @@ table.tableRanking td {
 .globalStock .sub_research .sub_mid.research_board .lst_type {
 	width: calc(100% - 30px);
 	margin: 15px auto 30px;
-	border-top: 1px solid #E0E4E9;
+	// border-top: 1px solid #E0E4E9;
 }
 
 .globalStock .sub_research .sub_mid.research_board .lst_type li {
