@@ -38,7 +38,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
     <!-- css -->
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <link rel="stylesheet" type="text/css" href="../css/scss/choicestock.css" />
+    <link rel="stylesheet" type="text/css" href="../css/scss/choicestock.css?v=1.0.12" />
     <!-- js -->
     <script src="../js/choicestock.js"></script>
 </head>
@@ -96,28 +96,50 @@
                     </div>
                     <!-- //txt_box -->
                 </div>
+
                 <div class="swiper-container swiper-research">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="best_research">
-                                <h4 class="title">버핏 투자 종목 중 꼭 관심가져야 할 종목 20선</h4>
-                                <!-- <h4 class="txt">그래프로 보는<br>시가총액 TOP 15</h4> -->
+                                <span class="img_box">
+                                    <!-- 기업분석은 research_logo01, 추천주 점검은 research_logo02 -->
+                                    <img src="../img/research_logo01.png" alt="">
+                                </span>
+                                <div class="category_box">
+                                    <span class="category">기업분석</span>
+                                    <h4 class="title">이번 주 크라우드 스트라이크 실적 발표</h4>
+                                </div>
                             </div>
                             <!-- //best_research -->
                         </div>
                         <!-- //swiper-slide -->
+
                         <div class="swiper-slide">
                             <div class="best_research">
-                                <h4 class="title">지난 10년간 시가총액이 가장 높은 기업은 어디일까요?</h4>
-                                <!-- <h4 class="txt">그래프로 보는<br>시가총액 TOP 15</h4> -->
+                                <span class="img_box">
+                                    <!-- 기업분석은 research_logo01, 추천주 점검은 research_logo02 -->
+                                    <img src="../img/research_logo02.png" alt="">
+                                </span>
+                                <div class="category_box">
+                                    <span class="category">추천주 점검</span>
+                                    <h4 class="title">애플워치의 한계를 넘다</h4>
+                                </div>
                             </div>
                             <!-- //best_research -->
                         </div>
                         <!-- //swiper-slide -->
+
                         <div class="swiper-slide">
                             <div class="best_research">
-                                <h4 class="title">버핏이 집중 투자할 만한 종목 23선</h4>
-                                <!-- <h4 class="txt">그래프로 보는<br>시가총액 TOP 15</h4> -->
+                                <span class="img_box">
+                                    <!-- 기업분석은 research_logo01, 추천주 점검은 research_logo02 -->
+                                    <img src="../img/research_logo01.png" alt="">
+                                </span>
+                                <div class="category_box">
+                                    <span class="category">기업분석</span>
+                                    <h4 class="title">애플워치의 한계를 넘다, 아웃도어 & 피트니스 웨어러블 최강자 가민트니스 웨어러블 최강자 가민트니스 웨어러블 최강자
+                                        가민</h4>
+                                </div>
                             </div>
                             <!-- //best_research -->
                         </div>
@@ -139,142 +161,187 @@
                 <div class="swiper-container filter-swiper">
                     <div class="swiper-wrapper filter_list">
                         <div class="swiper-slide">
-                            <a href="#" class="filter_btn active">전체</a>
+                            <a href="#" class="filter_btn active" data-filter="all_note">전체</a>
                         </div>
                         <div class="swiper-slide">
-                            <a href="#" class="filter_btn">실적•시황</a>
+                            <a href="#" class="filter_btn" data-filter="performance_note">실적•시황</a>
                         </div>
                         <div class="swiper-slide">
-                            <a href="#" class="filter_btn">추천주 점검</a>
+                            <a href="#" class="filter_btn" data-filter="recommend_note">추천주 점검</a>
                         </div>
                         <div class="swiper-slide">
-                            <a href="#" class="filter_btn">성장주</a>
+                            <a href="#" class="filter_btn" data-filter="growth_note">성장주</a>
                         </div>
                         <div class="swiper-slide">
-                            <a href="#" class="filter_btn">기업분석</a>
+                            <a href="#" class="filter_btn" data-filter="analysis_note">기업분석</a>
                         </div>
-                        
+
                     </div>
                 </div>
                 <!-- <div class="set">
                     <span class="active">최신글</span>
                     <span class="">인기글</span>
                 </div> -->
-                <ul class="lst_type">
-                    <li>
-                        <dl class="lst_type2 lst_lock">
-                            <dt class="tit"><a href="#" data-modal="modal-3" class="btn_free md-trigger"><strong>미국 주식
-                                        턴어라운드 50선</strong></a></dt>
-                            <dd class="photo">
-                                <a href="../stock/research_view/123">
-                                    <img src="../img/temp_note.png" alt="">
-                                </a>
-                            </dd>
-                        </dl>
-                    </li>
-                    <li>
-                        <dl class="lst_type2 lst_lock">
-                            <dt class="tit"><a href="#" data-modal="modal-3" class="btn_free md-trigger"><strong>10년간
-                                        시가총액이 가장 높은 기업은 어디일까요? 그래프로 보는
-                                        시가총액10년간 시가총액이 가장 높은 기업은 어디일까요? 그래프로 보는 시가총액</strong></a></dt>
-                            <dd class="photo">
-                                <a href="../stock/research_view/123">
-                                    <img src="../img/temp_note.png" alt="">
-                                </a>
-                            </dd>
-                        </dl>
-                    </li>
-                    <li>
-                        <dl class="lst_type2">
-                            <dt class="tit"><a href="research_view.html">11<strong>10년간 시가총액이 가장 높은 기업은 어디일까요? 그래프로 보는
-                                        시가총액10년간 시가총액이 가장 높은 기업은 어디일까요? 그래프로 보는 시가총액</strong></a></dt>
-                            <dd class="photo"></dd>
-                        </dl>
-                    </li>
-                    <li>
-                        <dl class="lst_type2">
-                            <dt class="tit"><a href="research_view.html">22<strong>10년간 시가총액이 가장 높은 기업은 어디일까요? 그래프로 보는
-                                        시가총액10년간 시가총액이 가장 높은 기업은 어디일까요? 그래프로 보는 시가총액</strong></a></dt>
-                            <dd class="photo">
-                                <a href="../stock/research_view/123">
-                                    <img class="lazy"
-                                        data-src="https://ik.imagekit.io/demo/img/image7.jpeg?tr=w-400,h-300"
-                                        src="../img/noimg.png" />
-                                </a>
-                            </dd>
-                        </dl>
-                    </li>
-                    <li>
-                        <dl class="lst_type2">
-                            <dt class="tit"><a href="research_view.html">33<strong>10년간 시가총액이 가장 높은 기업은 어디일까요? 그래프로 보는
-                                        시가총액10년간 시가총액이 가장 높은 기업은 어디일까요? 그래프로 보는 시가총액</strong></a></dt>
-                            <dd class="photo">
-                                <a href="../stock/research_view/123">
-                                    <img class="lazy"
-                                        data-src="https://ik.imagekit.io/demo/img/image6.jpeg?tr=w-400,h-300"
-                                        src="../img/noimg.png" />
-                                </a>
-                            </dd>
-                        </dl>
-                    </li>
-                    <li>
-                        <dl class="lst_type2">
-                            <dt class="tit"><a href="research_view.html"><strong>10년간 시가총액이 가장 높은 기업은 어디일까요? 그래프로 보는
-                                        시가총액10년간 시가총액이 가장 높은 기업은 어디일까요? 그래프로 보는 시가총액</strong></a></dt>
-                            <dd class="photo">
-                                <a href="../stock/research_view/123">
-                                    <img class="lazy"
-                                        data-src="https://ik.imagekit.io/demo/img/image4.jpeg?tr=w-400,h-300"
-                                        src="../img/noimg.png" />
-                                </a>
-                            </dd>
-                        </dl>
-                    </li>
-                    <li>
-                        <dl class="lst_type2">
-                            <dt class="tit"><a href="research_view.html"><strong>10년간 시가총액이 가장 높은 기업은 어디일까요? 그래프로 보는
-                                        시가총액10년간 시가총액이 가장 높은 기업은 어디일까요? 그래프로 보는 시가총액</strong></a></dt>
-                            <dd class="photo">
-                                <a href="../stock/research_view/123">
-                                    <img class="lazy"
-                                        data-src="https://ik.imagekit.io/demo/img/image5.jpeg?tr=w-400,h-300"
-                                        src="../img/noimg.png" />
-                                </a>
-                            </dd>
-                        </dl>
-                    </li>
-                    <li>
-                        <dl class="lst_type2">
-                            <dt class="tit"><a href="research_view.html"><strong>10년간 시가총액이 가장 높은 기업은 어디일까요? 그래프로 보는
-                                        시가총액10년간 시가총액이 가장 높은 기업은 어디일까요? 그래프로 보는 시가총액</strong></a></dt>
-                            <dd class="photo">
-                            </dd>
-                        </dl>
-                    </li>
-                    <li>
-                        <dl class="lst_type2">
-                            <dt class="tit"><a href="research_view.html"><strong>10년간 시가총액이 가장 높은 기업은 어디일까요? 그래프로 보는
-                                        시가총액10년간 시가총액이 가장 높은 기업은 어디일까요? 그래프로 보는 시가총액</strong></a></dt>
-                            <dd class="photo">
-                                <a href="../stock/research_view/123">
-                                    <img class="lazy"
-                                        data-src="https://ik.imagekit.io/demo/img/image5.jpeg?tr=w-400,h-300"
-                                        src="../img/noimg.png" />
-                                </a>
-                            </dd>
-                        </dl>
-                    </li>
-                    <li>
-                        <dl class="lst_type2">
-                            <dt class="tit"><a href="research_view.html"><strong>10년간 시가총액이 가장 높은 기업은 어디일까요? 그래프로 보는
-                                        시가총액10년간 시가총액이 가장 높은 기업은 어디일까요? 그래프로 보는 시가총액</strong></a></dt>
-                            <dd class="photo">
-                            </dd>
-                        </dl>
-                    </li>
-                </ul>
+
+                <!-- 종목노트 전체 -->
+                <div class="filter_box_inner" data-filter="all_note">
+
+                    <ul class="lst_type">
+                        <li>
+                            <dl class="lst_type2 lst_lock">
+                                <dt class="tit"><a href="#" data-modal="modal-3" class="btn_free md-trigger"><strong>미국
+                                            주식
+                                            턴어라운드 50선</strong></a></dt>
+                                <dd class="photo">
+                                    <a href="../stock/research_view/123">
+                                        <img src="../img/temp_note.png" alt="">
+                                    </a>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl class="lst_type2 lst_lock">
+                                <dt class="tit"><a href="#" data-modal="modal-3"
+                                        class="btn_free md-trigger"><strong>10년간
+                                            시가총액이 가장 높은 기업은 어디일까요? 그래프로 보는
+                                            시가총액10년간 시가총액이 가장 높은 기업은 어디일까요? 그래프로 보는 시가총액</strong></a></dt>
+                                <dd class="photo">
+                                    <a href="../stock/research_view/123">
+                                        <img src="../img/temp_note.png" alt="">
+                                    </a>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl class="lst_type2">
+                                <dt class="tit"><a href="research_view.html">11<strong>10년간 시가총액이 가장 높은 기업은 어디일까요? 그래프로
+                                            보는
+                                            시가총액10년간 시가총액이 가장 높은 기업은 어디일까요? 그래프로 보는 시가총액</strong></a></dt>
+                                <dd class="photo"></dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl class="lst_type2">
+                                <dt class="tit"><a href="research_view.html">22<strong>10년간 시가총액이 가장 높은 기업은 어디일까요? 그래프로
+                                            보는
+                                            시가총액10년간 시가총액이 가장 높은 기업은 어디일까요? 그래프로 보는 시가총액</strong></a></dt>
+                                <dd class="photo">
+                                    <a href="../stock/research_view/123">
+                                        <img class="lazy"
+                                            data-src="https://ik.imagekit.io/demo/img/image7.jpeg?tr=w-400,h-300"
+                                            src="../img/noimg.png" />
+                                    </a>
+                                </dd>
+                            </dl>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <!-- 종목노트 실적•시황 -->
+                <div class="filter_box_inner" data-filter="performance_note">
+                    <ul class="lst_type">
+                        <li>
+                            <dl class="lst_type2 lst_lock">
+                                <dt class="tit"><a href="#" data-modal="modal-3"
+                                        class="btn_free md-trigger"><strong>종목노트 실적•시황</strong></a></dt>
+                                <dd class="photo">
+                                    <a href="../stock/research_view/123">
+                                        <img src="../img/temp_note.png" alt="">
+                                    </a>
+                                </dd>
+                            </dl>
+
+                        </li>
+                        <li>
+                            <dl class="lst_type2">
+                                <dt class="tit"><a href="research_view.html">11<strong>10년간 시가총액이 가장 높은 기업은 어디일까요? 그래프로
+                                            보는
+                                            시가총액10년간 시가총액이 가장 높은 기업은 어디일까요? 그래프로 보는 시가총액</strong></a></dt>
+                                <dd class="photo"></dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- 종목노트 추천주 점검 -->
+                <div class="filter_box_inner" data-filter="recommend_note">
+                    <ul class="lst_type">
+                        <li>
+                            <dl class="lst_type2 lst_lock">
+                                <dt class="tit"><a href="#" data-modal="modal-3"
+                                        class="btn_free md-trigger"><strong>종목노트 추천주 점검</strong></a></dt>
+                                <dd class="photo">
+                                    <a href="../stock/research_view/123">
+                                        <img src="../img/temp_note.png" alt="">
+                                    </a>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl class="lst_type2">
+                                <dt class="tit"><a href="research_view.html">11<strong>10년간 시가총액이 가장 높은 기업은 어디일까요? 그래프로
+                                            보는
+                                            시가총액10년간 시가총액이 가장 높은 기업은 어디일까요? 그래프로 보는 시가총액</strong></a></dt>
+                                <dd class="photo"></dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- 종목노트 성장주 -->
+                <div class="filter_box_inner" data-filter="growth_note">
+                    <ul class="lst_type">
+                        <li>
+                            <dl class="lst_type2 lst_lock">
+                                <dt class="tit"><a href="#" data-modal="modal-3"
+                                        class="btn_free md-trigger"><strong>종목노트 성장주</strong></a></dt>
+                                <dd class="photo">
+                                    <a href="../stock/research_view/123">
+                                        <img src="../img/temp_note.png" alt="">
+                                    </a>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl class="lst_type2">
+                                <dt class="tit"><a href="research_view.html">11<strong>10년간 시가총액이 가장 높은 기업은 어디일까요? 그래프로
+                                            보는
+                                            시가총액10년간 시가총액이 가장 높은 기업은 어디일까요? 그래프로 보는 시가총액</strong></a></dt>
+                                <dd class="photo"></dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- 종목노트 기업분석 -->
+                <div class="filter_box_inner" data-filter="analysis_note">
+                    <ul class="lst_type">
+                        <li>
+                            <dl class="lst_type2 lst_lock">
+                                <dt class="tit"><a href="#" data-modal="modal-3"
+                                        class="btn_free md-trigger"><strong>종목노트 기업분석</strong></a></dt>
+                                <dd class="photo">
+                                    <a href="../stock/research_view/123">
+                                        <img src="../img/temp_note.png" alt="">
+                                    </a>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl class="lst_type2">
+                                <dt class="tit"><a href="research_view.html">11<strong>10년간 시가총액이 가장 높은 기업은 어디일까요? 그래프로
+                                            보는
+                                            시가총액10년간 시가총액이 가장 높은 기업은 어디일까요? 그래프로 보는 시가총액</strong></a></dt>
+                                <dd class="photo"></dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </div>
+
+
                 <div class="btn_more">
-                    <a href=""><i></i>더보기</a>
+                    <a href="">더보기</a>
                 </div>
                 <!-- //btn_more -->
             </div>

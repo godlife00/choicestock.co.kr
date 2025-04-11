@@ -904,14 +904,24 @@ $(document).ready(function () {
         }
     });
 
-    //서브 발굴 - 미국주식 탐구생활 
-    var swiper_research = new Swiper('.swiper-research', {
-        autoHeight: true, //enable auto height
-        spaceBetween: 20,
-        pagination: {
-            el: '.swiper-pagination',
-        },
-    });
+    //서브 발굴 - 미국주식 탐구생활     
+    if ($('.swiper-research').length) {  
+        var slideCount = document.querySelectorAll('.swiper-research .swiper-slide').length;
+        var swiper = new Swiper(".swiper-research", {
+            slidesPerView: 1, // 한 번에 보이는 슬라이드 수를 1로 설정
+            spaceBetween: 16,
+            // 슬라이드가 두 개 이상일 때만 자동재생
+            loop: slideCount > 1, // 슬라이드가 2개 이상일 때만 loop 설정
+            autoplay: slideCount > 1 ? {
+                delay: 3000,
+                disableOnInteraction: false,
+            } : false,
+            pagination: slideCount > 1 ? {
+                el: ".swiper-pagination",
+                type: "fraction",
+            } : false,
+        });
+    };
 
     //서브 발굴 - 뉴스
     var newsSwiper = new Swiper('.newsSwiper', {
@@ -2381,8 +2391,15 @@ document.addEventListener('DOMContentLoaded', function() {
 // 레시피 필터링 기능
 $(document).ready(function() {
     // 초기화: 첫번째 탭 컨텐츠만 보이게 설정
-    $('.filter_box_inner').hide();
-    $('[data-filter="recommend"]').show();
+    if($('.sub_recipe').length > 0) {
+        // new_recipe.html 페이지인 경우
+        $('.filter_box_inner').hide();
+        $('[data-filter="recommend"]').show();
+    } else if($('.sub_research').length > 0) {
+        // note.html 페이지인 경우
+        $('.filter_box_inner').hide();
+        $('[data-filter="all_note"]').show();
+    }
     
     // 필터 버튼 클릭 이벤트
     $('.filter_btn').on('click', function(e) {
