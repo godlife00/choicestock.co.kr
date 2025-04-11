@@ -2377,3 +2377,30 @@ document.addEventListener('DOMContentLoaded', function() {
         eventContainer.style.paddingBottom = '0';
     }
 });
+
+// 레시피 필터링 기능
+$(document).ready(function() {
+    // 초기화: 첫번째 탭 컨텐츠만 보이게 설정
+    $('.filter_box_inner').hide();
+    $('[data-filter="recommend"]').show();
+    
+    // 필터 버튼 클릭 이벤트
+    $('.filter_btn').on('click', function(e) {
+        e.preventDefault();
+        
+        // 모든 버튼에서 active 클래스 제거
+        $('.filter_btn').removeClass('active');
+        // 클릭된 버튼에 active 클래스 추가
+        $(this).addClass('active');
+        
+        // 선택된 필터 값 가져오기
+        var filterValue = $(this).data('filter');
+        
+        // 모든 컨텐츠 숨김
+        $('.filter_box_inner').hide();
+        
+        // 해당 필터값을 가진 컨텐츠만 보여주기
+        $('.filter_box_inner[data-filter="' + filterValue + '"]').show();
+        
+    });
+});

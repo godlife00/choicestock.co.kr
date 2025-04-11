@@ -39,7 +39,7 @@
     <!-- css -->
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" type="text/css" href="../css/scss/choicestock.css?v=20250409" />
-    <!-- js -->
+    <!-- js -->    
     <script src="../js/choicestock.js"></script>
 </head>
 
@@ -108,7 +108,7 @@
                 <div class="swiper-container filter-swiper">
                     <div class="swiper-wrapper filter_list">
                         <div class="swiper-slide">
-                            <a href="#" class="filter_btn active">
+                            <a href="#" class="filter_btn active" data-filter="recommend">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
                                     fill="none">
                                     <g clip-path="url(#clip0_4733_736)">
@@ -121,23 +121,23 @@
                             </a>
                         </div>
                         <div class="swiper-slide">
-                            <a href="#" class="filter_btn">HOT! 관심주</a>
+                            <a href="#" class="filter_btn" data-filter="hot">HOT! 관심주</a>
                         </div>
                         <div class="swiper-slide">
-                            <a href="#" class="filter_btn">성장주</a>
+                            <a href="#" class="filter_btn" data-filter="growth">성장주</a>
                         </div>
                         <div class="swiper-slide">
-                            <a href="#" class="filter_btn">가치주</a>
+                            <a href="#" class="filter_btn" data-filter="value">가치주</a>
                         </div>
                         <div class="swiper-slide">
-                            <a href="#" class="filter_btn">기술적분석</a>
+                            <a href="#" class="filter_btn" data-filter="technical">기술적분석</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="box_tabs">
                     <!-- 추천 레시피 -->
-                    <div class="filter_box_inner">
+                    <div class="filter_box_inner" data-filter="recommend">
                         <div class="txt_box">
                             <h3 class="title">투자자라면 체크해야 할 추천레시피!</h3>
                         </div>
@@ -189,11 +189,10 @@
                         <!-- //list_masonry -->
                     </div>
                     <!-- //filter_box_inner -->
+                     
                     
-                    
-                    <br><br>
                     <!-- HOT! 관심주 -->
-                    <div class="filter_box_inner">
+                    <div class="filter_box_inner" data-filter="hot">
                         <div class="txt_box">
                             <h3 class="title">급등주, 관심주! 지금 뜨는 종목은?</h3>
                         </div>
@@ -224,10 +223,8 @@
                     </div>
                     <!-- //filter_box_inner -->
 
-                    
-                    <br><br>
                     <!-- 성장주 -->
-                    <div class="filter_box_inner">
+                    <div class="filter_box_inner" data-filter="growth">
                         <div class="txt_box">
                             <h3 class="title">주가 급등이 기대되는 성장주 레시피</h3>
                         </div>
@@ -252,8 +249,7 @@
                     <!-- //filter_box_inner -->
 
                     <!-- 가치주 -->
-                    <br><br>
-                    <div class="filter_box_inner">
+                    <div class="filter_box_inner" data-filter="value">
                         <div class="txt_box">
                             <h3 class="title">10배 오를 주식! 저평가 가치주 레시피</h3>
                         </div>
@@ -278,8 +274,7 @@
                     <!-- //filter_box_inner -->
 
                     <!-- 기술적분석 -->
-                    <br><br>
-                    <div class="filter_box_inner">
+                    <div class="filter_box_inner" data-filter="technical">
                         <div class="txt_box">
                             <h3 class="title">데이터로 찾는 투자매력주! 기술적 분석 레시피</h3>
                         </div>
