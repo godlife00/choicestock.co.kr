@@ -13204,6 +13204,44 @@ table.tableRanking td {
   margin-top: 16px;
   padding: 0;
 }
+.globalStock .sub_search .sub_mid .investCharm_area .spider_year {
+  text-align: center;
+}
+.globalStock .sub_search .sub_mid .investCharm_area .spider_year .spider_year_item {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px 18px;
+  border-radius: 100px;
+  border: 1px solid var(--Border-primary-border, #E3E5E8);
+  background: #FFF;
+  margin: 16px auto 9px;
+  padding: 12px 24px;
+  box-sizing: border-box;
+}
+.globalStock .sub_search .sub_mid .investCharm_area .spider_year .spider_year_item span {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px 4px;
+  color: var(--Font-secondary-caption, #6B7684);
+  font-family: var(--Body, Pretendard);
+  font-size: var(--Size-xs-13, 13px);
+  font-style: normal;
+  font-weight: var(--Weight-500, 500);
+  line-height: var(--Line-height-xs-13, 16px); /* 123.077% */
+  letter-spacing: var(--Tracking-md, -0.3px);
+}
+.globalStock .sub_search .sub_mid .investCharm_area .spider_year .spider_year_item span::before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--Font-secondary-caption, #6B7684);
+}
+.globalStock .sub_search .sub_mid .investCharm_area .spider_year .spider_year_item span.active::before {
+  background-color: var(--Font-primary-blue, #4168F6);
+}
 
 .globalStock .sub_search .sub_mid .investCharm_area:after {
   content: "";
