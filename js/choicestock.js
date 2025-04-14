@@ -2239,13 +2239,15 @@ $(document).ready(function () {
         
     // spider_year_item 클릭 이벤트
     $('.spider_year_item span').click(function() {
-        $('.past_score_pop').show().addClass('slideUp');        ;        
+        $('.past_score_pop').show().addClass('slideUp');
+        $('.blocker').show();
         $('html, body').css("overflow", "hidden");
     });
 
     // past_score_pop 닫기 이벤트
     $('.past_score_pop .clse').click(function() {
-        $('.past_score_pop').hide().removeClass('slideUp');        
+        $('.past_score_pop').hide().removeClass('slideUp');
+        $('.blocker').hide();
         $('html, body').css("overflow", "");
     });
 
