@@ -23763,6 +23763,15 @@ table.tableRanking td {
   display: none !important;
 }
 
+.modal.past_score_pop::after {
+  content: "";
+  display: block;
+  width: 134px;
+  height: 5px;
+  margin: 0 auto 13px;
+  background-color: #000;
+  border-radius: 16px;
+}
 .modal.past_score_pop .pop_header .clse {
   left: 16px;
   right: auto;
@@ -23964,6 +23973,7 @@ table.tableRanking td {
 }
 .modal.past_score_pop .pop_con .score_box_area.recipe_list .list_box {
   display: flex;
+  align-items: center;
   gap: 16px 16px;
   border-radius: 16px;
   background: var(--Background-primary-light-background, #F1F4F6);
@@ -23979,6 +23989,7 @@ table.tableRanking td {
   background-color: #fff;
   width: 44px;
   height: 44px;
+  flex-shrink: 0;
 }
 .modal.past_score_pop .pop_con .score_box_area.recipe_list .list_box .list_img img {
   display: inline-block;
@@ -23986,6 +23997,12 @@ table.tableRanking td {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+.modal.past_score_pop .pop_con .score_box_area.recipe_list .list_box .list_content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
 }
 .modal.past_score_pop .pop_con .score_box_area.recipe_list .list_box .list_content .title {
   color: var(--Gray-gray600, #6B7684);

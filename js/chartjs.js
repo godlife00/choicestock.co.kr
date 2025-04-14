@@ -8024,15 +8024,16 @@ $(document).ready(function () {
         
         xAxis: {
             type: 'datetime',
-            // showFirstLabel: true,
-            showLastLabel: false,             
-            // startOnTick: true,   // 시작 라벨 강제 표시
-            endOnTick: false,     // 끝 라벨 강제 표시   
+            showFirstLabel: true,
+            showLastLabel: true,             
+            startOnTick: true,   
+            endOnTick: false,     
             tickWidth: 0,                
             gridLineWidth: 0,      
             minPadding: 0,
             maxPadding: 0,     
             lineColor: '#E0E3E7',
+            // tickInterval: 30 * 24 * 3600 * 1000, // 약 한 달 간격
             labels: {                                    
                 style: {
                     color: '#8C98A7',
@@ -8149,15 +8150,16 @@ $(document).ready(function () {
         
         xAxis: {
             type: 'datetime',
-            // showFirstLabel: true,
-            showLastLabel: false,             
-            // startOnTick: true,   // 시작 라벨 강제 표시
-            endOnTick: false,     // 끝 라벨 강제 표시   
+            showFirstLabel: true,
+            showLastLabel: true,             
+            startOnTick: true,   
+            endOnTick: false,     
             tickWidth: 0,                
             gridLineWidth: 0,      
             minPadding: 0,
             maxPadding: 0,     
             lineColor: '#E0E3E7',
+            // tickInterval: 30 * 24 * 3600 * 1000, // 약 한 달 간격
             labels: {                                    
                 style: {
                     color: '#8C98A7',
