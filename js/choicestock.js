@@ -2233,16 +2233,22 @@ $(document).ready(function () {
             $('body').css('overflow', 'hidden');
             $('.modal').hide().removeClass('slideUp');
             $('.blocker').show();
-            $('.score_pop02').show().addClass('slideUp'); 
-            
-            // CustomChart_score1_2_clone 차트 렌더링
-            const chartContainer = document.getElementById('CustomChart_score1_2_clone');
-            if (chartContainer && !chartContainer.hasChildNodes()) {
-                CustomChart_Score('CustomChart_score1_2_clone', chartData); // chartData는 차트에 필요한 데이터
-            }
+            $('.score_pop02').show().addClass('slideUp');
         }        
     });
         
+    // spider_year_item 클릭 이벤트
+    $('.spider_year_item span').click(function() {
+        $('.past_score_pop').show().addClass('slideUp');        ;        
+        $('html, body').css("overflow", "hidden");
+    });
+
+    // past_score_pop 닫기 이벤트
+    $('.past_score_pop .clse').click(function() {
+        $('.past_score_pop').hide().removeClass('slideUp');        
+        $('html, body').css("overflow", "");
+    });
+
 });
 
 // 검색 이력 더보기, 닫기 스크립트

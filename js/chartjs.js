@@ -7981,4 +7981,256 @@ $(document).ready(function () {
     };
 
     renderScoreChart();
+
+
+    // 스코어 박스 차트
+    Highcharts.chart('score_box_chart', {
+        chart: {            
+            type: 'area',
+            margin: [0, 10, 30, 10],
+            backgroundColor: 'transparent'
+        },
+        title: {
+            text: '',                
+        },
+
+        navigator: {
+            enabled: false,
+        },
+
+        scrollbar: {
+            enabled: false,
+        },
+
+        rangeSelector: {
+            enabled: false,
+        },
+
+        credits: {
+            enabled: false
+        },
+
+        exporting: {
+            enabled: false,
+        },
+
+        legend: {
+            enabled: false,
+        },
+
+        tooltip: {            
+            enabled: false,
+        },
+        
+        xAxis: {
+            type: 'datetime',
+            // showFirstLabel: true,
+            showLastLabel: false,             
+            // startOnTick: true,   // 시작 라벨 강제 표시
+            endOnTick: false,     // 끝 라벨 강제 표시   
+            tickWidth: 0,                
+            gridLineWidth: 0,      
+            minPadding: 0,
+            maxPadding: 0,     
+            lineColor: '#E0E3E7',
+            labels: {                                    
+                style: {
+                    color: '#8C98A7',
+                    fontSize: '12px',
+                },
+                formatter: function () {
+                    return Highcharts.dateFormat('%y.%m', this.value);
+                }
+            },
+        },
+        yAxis: {
+            title: {
+                text: ''
+            },
+            gridLineWidth: 1,
+            gridLineDashStyle: 'Dash',
+            showFirstLabel: false,
+            showLastLabel: true,                
+            opposite: true,
+            minPadding: 0.1,
+            maxPadding: 0.1,
+            labels: {
+                enabled: false
+            }
+        },
+        
+        plotOptions: {
+            area: {
+                fillColor: {
+                    linearGradient: {
+                        x1: 0,
+                        y1: 0,
+                        x2: 0,
+                        y2: 1
+                    },
+                    stops: [
+                        [0, Highcharts.color('#4168F6').setOpacity(0.2).get('rgba')],
+                        [1, Highcharts.color('#4168F6').setOpacity(0).get('rgba')]
+                    ]
+                },
+                marker: {
+                    enabled: true,
+                    radius: 4,
+                    fillColor: '#4168F6',
+                    lineWidth: 2,
+                    lineColor: '#FFFFFF'
+                },
+                lineWidth: 2,
+                lineColor: '#4168F6',
+                states: {
+                    hover: {
+                        lineWidth: 2
+                    }
+                },
+                threshold: null,
+                dataLabels: {
+                    enabled: true,
+                    color: '#4168F6',
+                    style: {
+                        fontSize: '13px',
+                        fontWeight: 'bold',
+                        textOutline: 'none'
+                    },
+                    y: -5
+                }
+            }
+        },
+        series: [{
+            data:  [
+                [1644969600000, 38], [1645056000000, 25], 
+                [1645142400000, 18], [1645228800000, 15], [1645315200000, 22], [1645401600000, 35],
+            ],
+        }]
+    });
+
+    // 스코어 박스 차트
+    Highcharts.chart('score_box_chart2', {
+        chart: {            
+            type: 'area',
+            margin: [0, 10, 30, 10],
+            backgroundColor: 'transparent'
+        },
+        title: {
+            text: '',                
+        },
+
+        navigator: {
+            enabled: false,
+        },
+
+        scrollbar: {
+            enabled: false,
+        },
+
+        rangeSelector: {
+            enabled: false,
+        },
+
+        credits: {
+            enabled: false
+        },
+
+        exporting: {
+            enabled: false,
+        },
+
+        legend: {
+            enabled: false,
+        },
+
+        tooltip: {            
+            enabled: false,
+        },
+        
+        xAxis: {
+            type: 'datetime',
+            // showFirstLabel: true,
+            showLastLabel: false,             
+            // startOnTick: true,   // 시작 라벨 강제 표시
+            endOnTick: false,     // 끝 라벨 강제 표시   
+            tickWidth: 0,                
+            gridLineWidth: 0,      
+            minPadding: 0,
+            maxPadding: 0,     
+            lineColor: '#E0E3E7',
+            labels: {                                    
+                style: {
+                    color: '#8C98A7',
+                    fontSize: '12px',
+                },
+                formatter: function () {
+                    return Highcharts.dateFormat('%y.%m', this.value);
+                }
+            },
+        },
+        yAxis: {
+            title: {
+                text: ''
+            },
+            gridLineWidth: 1,
+            gridLineDashStyle: 'Dash',
+            showFirstLabel: false,
+            showLastLabel: true,                
+            opposite: true,
+            minPadding: 0.1,
+            maxPadding: 0.1,
+            labels: {
+                enabled: false
+            }
+        },
+        
+        plotOptions: {
+            area: {
+                fillColor: {
+                    linearGradient: {
+                        x1: 0,
+                        y1: 0,
+                        x2: 0,
+                        y2: 1
+                    },
+                    stops: [
+                        [0, Highcharts.color('#4168F6').setOpacity(0.2).get('rgba')],
+                        [1, Highcharts.color('#4168F6').setOpacity(0).get('rgba')]
+                    ]
+                },
+                marker: {
+                    enabled: true,
+                    radius: 4,
+                    fillColor: '#4168F6',
+                    lineWidth: 2,
+                    lineColor: '#FFFFFF'
+                },
+                lineWidth: 2,
+                lineColor: '#4168F6',
+                states: {
+                    hover: {
+                        lineWidth: 2
+                    }
+                },
+                threshold: null,
+                dataLabels: {
+                    enabled: true,
+                    color: '#4168F6',
+                    style: {
+                        fontSize: '13px',
+                        fontWeight: 'bold',
+                        textOutline: 'none'
+                    },
+                    y: -5
+                }
+            }
+        },
+        series: [{
+            data:  [
+                [1644969600000, 38], [1645056000000, 25], 
+                [1645142400000, 18], [1645228800000, 15], [1645315200000, 22], [1645401600000, 35],
+            ],
+        }]
+    });
 });
+
