@@ -2278,6 +2278,26 @@ $(document).ready(function () {
         }        
     });
         
+    // spider_year_item 클릭 이벤트
+    $('.spider_year_item span').click(function() {
+        $('.past_score_pop').show().addClass('slideUp');
+        $('.blocker').show();
+        $('html, body').css("overflow", "hidden");
+        history.pushState(null, null, location.href); // 히스토리에 현재 상태 추가
+    });
+
+    // past_score_pop 닫기 이벤트
+    $('.past_score_pop .clse').click(function() {
+        history.back(); // 이전 상태로 돌아가기
+    });
+
+    // 히스토리 변경 감지
+    window.addEventListener('popstate', function() {
+        $('.past_score_pop').hide().removeClass('slideUp');
+        $('.blocker').hide();
+        $('html, body').css("overflow", "");
+    });
+
 });
 
 // 검색 이력 더보기, 닫기 스크립트

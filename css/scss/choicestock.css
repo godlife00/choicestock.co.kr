@@ -1022,7 +1022,7 @@ body,
 .globalStock .middle_banner.event .link_banner img {
   display: block;
   width: 100%;
-  background: url("../../img/banner/banner_free_2weeks.png") no-repeat left top;
+  background: url("/img/banner/banner_free_2weeks.png") no-repeat left top;
   background-size: cover;
 }
 
@@ -1326,7 +1326,7 @@ table.tableRanking td {
   right: 0;
   width: 26px;
   height: 26px;
-  background: url("../../img/select.png") no-repeat 0 0;
+  background: url("/img/select.png") no-repeat 0 0;
 }
 
 .selectbox label {
@@ -1431,7 +1431,7 @@ table.tableRanking td {
   margin-right: 10px;
   line-height: 42px;
   padding-bottom: 3px;
-  background: url("../../img/more_btm.svg") no-repeat center center;
+  background: url("/img/more_btm.svg") no-repeat center center;
   position: relative;
   top: 4px;
 }
@@ -1469,7 +1469,7 @@ table.tableRanking td {
   display: inline-block;
   width: 22px;
   height: 22px;
-  background: url("../../img/icon_purchase.svg") no-repeat center center;
+  background: url("/img/icon_purchase.svg") no-repeat center center;
   margin-right: 11px;
   vertical-align: sub;
 }
@@ -1521,7 +1521,7 @@ table.tableRanking td {
 
 /* 별점 */
 .starR {
-  background: url("../../img/ico_review.png") no-repeat -24px 0;
+  background: url("/img/ico_review.png") no-repeat -24px 0;
   background-size: auto 100%;
   width: 14px;
   height: 14px;
@@ -1548,7 +1548,7 @@ table.tableRanking td {
 .globalStock .sub_search .no_attdata {
   margin: 20px auto 50px;
   border-radius: 20px;
-  background: #f7f8f9 url("../../img/bg_nodata.png") no-repeat center 50px;
+  background: #f7f8f9 url("/img/bg_nodata.png") no-repeat center 50px;
   width: calc(100% - 30px);
   height: 400px;
   text-align: center;
@@ -1598,7 +1598,7 @@ table.tableRanking td {
   height: 20px;
   line-height: 20px;
   border-radius: 4px;
-  background: #D9DCDF url("../../img/checked_wh.svg") no-repeat center center;
+  background: #D9DCDF url("/img/checked_wh.svg") no-repeat center center;
 }
 .globalStock .sub_search .att_wrap .att_list input[type=checkbox].list_del:checked + label:before {
   background-color: #404FC3;
@@ -1704,7 +1704,7 @@ table.tableRanking td {
   width: 30px;
   height: 40px;
   font-size: 0;
-  background: url("../../img/bg_del.png") no-repeat 50% 16px;
+  background: url("/img/bg_del.png") no-repeat 50% 16px;
   vertical-align: top;
   z-index: 999;
 }
@@ -1727,7 +1727,7 @@ table.tableRanking td {
   float: right;
   width: 38px;
   height: 38px;
-  background: url("../../img/btn_handle.png") no-repeat center center;
+  background: url("/img/btn_handle.png") no-repeat center center;
   font-size: 0;
   background-size: 20px 12px;
 }
@@ -1945,7 +1945,7 @@ table.tableRanking td {
   position: absolute;
   left: 0;
   bottom: 0;
-  background: url("../../img/bg_btn_apply.png") no-repeat 0 0;
+  background: url("/img/bg_btn_apply.png") no-repeat 0 0;
   width: 76px;
   height: 62px;
   background-size: 100%;
@@ -1958,7 +1958,7 @@ table.tableRanking td {
   display: inline-block;
   width: 5px;
   height: 10px;
-  background: url("../../img/more_yel.png") no-repeat 0 0;
+  background: url("/img/more_yel.png") no-repeat 0 0;
   background-size: cover;
 }
 
@@ -2852,7 +2852,7 @@ table.tableRanking td {
   top: -17px;
   width: 60px;
   height: 60px;
-  background: url("../../img/banner/new_app.png") no-repeat 0 0;
+  background: url("/img/banner/new_app.png") no-repeat 0 0;
   background-size: auto 60px;
 }
 .globalStock .event2025_banner .link_banner b {
@@ -3076,7 +3076,7 @@ table.tableRanking td {
   display: inline-block;
   width: 5px;
   height: 8px;
-  background: url("../../img/more_blue.png") no-repeat 0 0;
+  background: url("/img/more_blue.png") no-repeat 0 0;
   background-size: cover;
 }
 
@@ -3904,7 +3904,7 @@ table.tableRanking td {
   width: 18px;
   height: 18px;
   margin-bottom: 0;
-  background: url("../../img/game_trans_b.svg") no-repeat 0 0;
+  background: url("/img/game_trans_b.svg") no-repeat 0 0;
   background-size: 60px 18px;
 }
 
@@ -3971,7 +3971,7 @@ table.tableRanking td {
   display: inline-block;
   width: 5px;
   height: 10px;
-  background: url("../../img/icon_moreR.png") no-repeat center center;
+  background: url("/img/icon_moreR.png") no-repeat center center;
   background-size: cover;
 }
 
@@ -3988,7 +3988,7 @@ table.tableRanking td {
   top: 2px;
   width: 13px;
   height: 12px;
-  background: url("../../img/heart_attention.svg") no-repeat 0 1px;
+  background: url("/img/heart_attention.svg") no-repeat 0 1px;
   margin-right: 3px;
   background-size: 12px 24px;
 }
@@ -4182,7 +4182,7 @@ table.tableRanking td {
   height: 18px;
   margin-bottom: 0;
   margin-top: 2px;
-  background: url("../../img/game_trans_b.svg") no-repeat 0 0;
+  background: url("/img/game_trans_b.svg") no-repeat 0 0;
   background-size: auto 18px;
 }
 
@@ -4567,7 +4567,7 @@ table.tableRanking td {
 
 .globalStock .main_mid.note_area .lst_type2.lst_lock dt.tit strong {
   padding-left: 20px;
-  background: url("../../img/prm_tabsLock.svg") no-repeat 0 center;
+  background: url("/img/prm_tabsLock.svg") no-repeat 0 center;
   word-break: break-all;
 }
 
@@ -4592,7 +4592,7 @@ table.tableRanking td {
   position: relative;
   float: left;
   margin: -80px 10px 0 0;
-  background: #fff url("../../img/noimg.png") no-repeat center center;
+  background: #fff url("/img/noimg.png") no-repeat center center;
   background-size: cover;
   border: 1px solid #E0E4E9;
   border-radius: 5px;
@@ -4684,19 +4684,19 @@ table.tableRanking td {
   letter-spacing: normal;
 }
 .globalStock .main_mid.quick_link .list_area .mainrecipeSwiper .figure.jump::before {
-  background: #646FCD url("../../img/jump.png") no-repeat;
+  background: #646FCD url("/img/jump.png") no-repeat;
 }
 .globalStock .main_mid.quick_link .list_area .mainrecipeSwiper .figure.top50::before {
-  background: #F8D95F url("../../img/top50.png") no-repeat;
+  background: #F8D95F url("/img/top50.png") no-repeat;
 }
 .globalStock .main_mid.quick_link .list_area .mainrecipeSwiper .figure.goldenCross::before {
-  background: #E36B6D url("../../img/goldenCross.png") no-repeat;
+  background: #E36B6D url("/img/goldenCross.png") no-repeat;
 }
 .globalStock .main_mid.quick_link .list_area .mainrecipeSwiper .figure.growthDiscovery::before {
-  background: #E79366 url("../../img/growthDiscovery.png") no-repeat;
+  background: #E79366 url("/img/growthDiscovery.png") no-repeat;
 }
 .globalStock .main_mid.quick_link .list_area .mainrecipeSwiper .figure.rocketBooster::before {
-  background: #646FCD url("../../img/rocketBooster.png") no-repeat;
+  background: #646FCD url("/img/rocketBooster.png") no-repeat;
 }
 
 /* 메인 - 종목분석 */
@@ -4938,7 +4938,7 @@ table.tableRanking td {
   margin-left: -41px;
   z-index: 2;
   display: inline-block;
-  background: #E6E7F4 url("../../img/graph_prmB.png") no-repeat 0 0;
+  background: #E6E7F4 url("/img/graph_prmB.png") no-repeat 0 0;
   background-size: 100% auto;
   width: 81px;
   height: 19px;
@@ -5153,7 +5153,7 @@ table.tableRanking td {
   display: inline-block;
   width: 6px;
   height: 10px;
-  background: url("../../img/more_yel.png") no-repeat 0 0;
+  background: url("/img/more_yel.png") no-repeat 0 0;
   background-size: 6px 10px;
   margin-left: 10px;
 }
@@ -5393,7 +5393,7 @@ table.tableRanking td {
 
 .globalStock .main_btm.banner_area .banner_prm .cho_prm i {
   display: inline-block;
-  background: url("../../img/Icon_lock.svg") no-repeat;
+  background: url("/img/Icon_lock.svg") no-repeat;
   width: 10px;
   height: 13px;
   background-size: 10px 13px;
@@ -5440,7 +5440,7 @@ table.tableRanking td {
   margin: 0 8px;
   position: relative;
   top: 1px;
-  background: url("../../img/Icon_phone.png") no-repeat 0 0;
+  background: url("/img/Icon_phone.png") no-repeat 0 0;
   background-size: 100% 100%;
 }
 
@@ -5804,7 +5804,7 @@ table.tableRanking td {
   top: 3px;
   width: 12px;
   height: 12px;
-  background: url("../../img/icon_awesome.svg") no-repeat center center;
+  background: url("/img/icon_awesome.svg") no-repeat center center;
 }
 
 .globalStock .sub_recom .sub_mid.bandchart_more p a.more {
@@ -6461,7 +6461,7 @@ table.tableRanking td {
   top: 3px;
   width: 12px;
   height: 12px;
-  background: url("../../img/icon_awesome.svg") no-repeat center center;
+  background: url("/img/icon_awesome.svg") no-repeat center center;
 }
 
 .globalStock .sub_recom .bandchart_sume .box.info p a.more {
@@ -6643,7 +6643,7 @@ table.tableRanking td {
 
 .globalStock .sub_recom .sub_mid.eventPicks_area .banner_prm .cho_prm i {
   display: inline-block;
-  background: url("../../img/Icon_lock.svg") no-repeat;
+  background: url("/img/Icon_lock.svg") no-repeat;
   width: 10px;
   height: 13px;
   background-size: 10px 13px;
@@ -7072,7 +7072,7 @@ table.tableRanking td {
   width: 100%;
   min-height: 177px;
   box-sizing: border-box;
-  background: url("../../img/bg_wow_video.jpg") no-repeat center center;
+  background: url("/img/bg_wow_video.jpg") no-repeat center center;
   background-size: cover;
   position: relative;
   padding-bottom: 48%;
@@ -7252,7 +7252,7 @@ table.tableRanking td {
   top: 3px;
   width: 12px;
   height: 12px;
-  background: url("../../img/icon_awesome.svg") no-repeat center center;
+  background: url("/img/icon_awesome.svg") no-repeat center center;
 }
 
 .globalStock .sub_recom .sub_mid .tabsArea .tab_container .tab_content .one_step {
@@ -8024,7 +8024,7 @@ table.tableRanking td {
   top: 23px;
   width: 14px;
   height: 14px;
-  background: url("../../img/swiper_btn.png") no-repeat 0 0;
+  background: url("/img/swiper_btn.png") no-repeat 0 0;
   background-size: 32px 14px;
   border: 0;
   outline: none;
@@ -8350,7 +8350,7 @@ table.tableRanking td {
   width: 18px;
   height: 18px;
   margin-bottom: 4px;
-  background: url("../../img/game_trans_b.svg") no-repeat 0 -25px;
+  background: url("/img/game_trans_b.svg") no-repeat 0 -25px;
   background-size: auto 18px;
 }
 
@@ -8587,7 +8587,7 @@ table.tableRanking td {
   margin-left: -30px;
   z-index: 2;
   display: inline-block;
-  background: #E6E7F4 url("../../img/graph_prm.png") no-repeat 0 0;
+  background: #E6E7F4 url("/img/graph_prm.png") no-repeat 0 0;
   background-size: 100% auto;
   width: 60px;
   height: 19px;
@@ -9054,7 +9054,7 @@ table.tableRanking td {
   margin-left: -30px;
   z-index: 2;
   display: inline-block;
-  background: #E6E7F4 url("../../img/graph_prm.png") no-repeat 0 0;
+  background: #E6E7F4 url("/img/graph_prm.png") no-repeat 0 0;
   background-size: 100% auto;
   width: 60px;
   height: 19px;
@@ -9165,7 +9165,7 @@ table.tableRanking td {
 
 .globalStock .sub_analysis .sub_mid.eventPicks_area .banner_prm .cho_prm i {
   display: inline-block;
-  background: url("../../img/Icon_lock.svg") no-repeat;
+  background: url("/img/Icon_lock.svg") no-repeat;
   width: 10px;
   height: 13px;
   background-size: 10px 13px;
@@ -9485,7 +9485,7 @@ table.tableRanking td {
   margin-left: -30px;
   z-index: 2;
   display: inline-block;
-  background: #E6E7F4 url("../../img/graph_prm.png") no-repeat 0 0;
+  background: #E6E7F4 url("/img/graph_prm.png") no-repeat 0 0;
   background-size: 100% auto;
   width: 60px;
   height: 19px;
@@ -9931,7 +9931,7 @@ table.tableRanking td {
   display: inline-block;
   width: 18px;
   height: 16px;
-  background: url("../../img/heart_attention.svg") no-repeat 0 1px;
+  background: url("/img/heart_attention.svg") no-repeat 0 1px;
   margin-right: 5px;
 }
 
@@ -10179,7 +10179,7 @@ table.tableRanking td {
   margin-left: -32px;
   z-index: 2;
   display: inline-block;
-  background: #E6E7F4 url("../../img/graph_prm.png") no-repeat 0 0;
+  background: #E6E7F4 url("/img/graph_prm.png") no-repeat 0 0;
   background-size: 100% auto;
   width: 60px;
   height: 19px;
@@ -10281,7 +10281,7 @@ table.tableRanking td {
   top: 3px;
   width: 18px;
   height: 16px;
-  background: url("../../img/heart_attention.svg") no-repeat 0 1px;
+  background: url("/img/heart_attention.svg") no-repeat 0 1px;
   background-size: auto 34px;
   margin-right: 5px;
 }
@@ -10317,7 +10317,7 @@ table.tableRanking td {
 .globalStock .catch_wrap .no_data {
   margin-top: 20px;
   border-radius: 20px;
-  background: #fff url("../../img/bg_nodata.png") no-repeat center 70px;
+  background: #fff url("/img/bg_nodata.png") no-repeat center 70px;
   box-sizing: border-box;
   padding-top: 220px;
   padding-bottom: 20px;
@@ -10344,7 +10344,7 @@ table.tableRanking td {
   display: inline-block;
   width: 10px;
   height: 13px;
-  background: url("../../img/Icon_lockB.png") no-repeat 0 0;
+  background: url("/img/Icon_lockB.png") no-repeat 0 0;
   background-size: 10px 13px;
   margin-right: 3px;
 }
@@ -10370,7 +10370,7 @@ table.tableRanking td {
   display: inline-block;
   width: 6px;
   height: 10px;
-  background: url("../../img/more_yel.png") no-repeat 0 0;
+  background: url("/img/more_yel.png") no-repeat 0 0;
   background-size: 6px 10px;
   margin-left: 10px;
 }
@@ -10444,7 +10444,7 @@ table.tableRanking td {
   display: inline-block;
   width: 5px;
   height: 10px;
-  background: url("../../img/icon_moreRR.png") no-repeat 0 0;
+  background: url("/img/icon_moreRR.png") no-repeat 0 0;
   background-size: cover;
 }
 
@@ -10490,7 +10490,7 @@ table.tableRanking td {
   display: inline-block;
   width: 10px;
   height: 13px;
-  background: url("../../img/Icon_lockF.png") no-repeat 0 0;
+  background: url("/img/Icon_lockF.png") no-repeat 0 0;
   background-size: 10px 13px;
   margin-right: 3px;
 }
@@ -10528,7 +10528,7 @@ table.tableRanking td {
   display: inline-block;
   width: 6px;
   height: 10px;
-  background: url("../../img/more_blue.png") no-repeat 0 0;
+  background: url("/img/more_blue.png") no-repeat 0 0;
   background-size: 6px 10px;
   margin-left: 10px;
 }
@@ -10676,12 +10676,12 @@ table.tableRanking td {
 }
 
 .globalStock .sub_menu .sub_top .menu_list li:nth-child(1) a {
-  background: url("../../img/icon_menu_list_on.png") no-repeat 13px 0;
+  background: url("/img/icon_menu_list_on.png") no-repeat 13px 0;
   background-size: auto 26px;
 }
 
 .globalStock .sub_menu .sub_top .menu_list li:nth-child(2) a {
-  background: url("../../img/icon_menu_list_on.png") no-repeat -79px 2px;
+  background: url("/img/icon_menu_list_on.png") no-repeat -79px 2px;
   background-size: auto 26px;
 }
 
@@ -10694,12 +10694,12 @@ table.tableRanking td {
   }
 }
 .globalStock .sub_menu .sub_top .menu_list li:nth-child(3) a {
-  background: url("../../img/icon_menu_list_on.png") no-repeat -190px 0;
+  background: url("/img/icon_menu_list_on.png") no-repeat -190px 0;
   background-size: auto 26px;
 }
 
 .globalStock .sub_menu .sub_top .menu_list li:nth-child(4) a {
-  background: url("../../img/icon_menu_list_on.png") no-repeat calc(100% - 2px) 0;
+  background: url("/img/icon_menu_list_on.png") no-repeat calc(100% - 2px) 0;
   background-size: auto 26px;
 }
 
@@ -10722,7 +10722,7 @@ table.tableRanking td {
 
 .globalStock .sub_menu .sub_top .btn_save {
   color: #404fc3;
-  background: #d8dbff url("../../img/more_white.png") no-repeat calc(100% - 15px) 50%;
+  background: #d8dbff url("/img/more_white.png") no-repeat calc(100% - 15px) 50%;
   border: 1px solid #d8dbff;
 }
 
@@ -10762,12 +10762,12 @@ table.tableRanking td {
   color: #333;
   font-size: 0.9375rem;
   display: block;
-  background: url("../../img/more_gray.svg") no-repeat calc(100% - 5px) 50%;
+  background: url("/img/more_gray.svg") no-repeat calc(100% - 5px) 50%;
   line-height: 2.33;
 }
 
 .globalStock .sub_menu .sub_mid .menu_link .txt.dub_a {
-  background: url("../../img/more_Black.png") no-repeat calc(100% - 5px) 50%;
+  background: url("/img/more_Black.png") no-repeat calc(100% - 5px) 50%;
 }
 
 .globalStock .sub_menu .sub_mid .menu_link .txt.dub_a a {
@@ -11008,7 +11008,7 @@ table.tableRanking td {
 .globalStock .sub_search .latest_results .tabsArea .tab_container .no_data {
   margin: 20px auto 0;
   border-radius: 20px;
-  background: #fff url("../../img/bg_nodata.png") no-repeat center 50px;
+  background: #fff url("/img/bg_nodata.png") no-repeat center 50px;
   width: calc(100% - 30px);
   height: 400px;
   text-align: center;
@@ -11734,7 +11734,7 @@ table.tableRanking td {
   box-sizing: border-box;
   width: 100%;
   height: 460px;
-  background: url("../../img/onestep_sample.jpg") no-repeat 0 0;
+  background: url("/img/onestep_sample.jpg") no-repeat 0 0;
   background-size: 100% auto;
 }
 
@@ -11870,7 +11870,7 @@ table.tableRanking td {
   display: inline-block;
   width: 10px;
   height: 13px;
-  background: url("../../img/Icon_lockB.png") no-repeat 0 0;
+  background: url("/img/Icon_lockB.png") no-repeat 0 0;
   background-size: 10px 13px;
   margin-right: 3px;
 }
@@ -11909,7 +11909,7 @@ table.tableRanking td {
   display: inline-block;
   width: 6px;
   height: 10px;
-  background: url("../../img/more_yel.png") no-repeat 0 0;
+  background: url("/img/more_yel.png") no-repeat 0 0;
   background-size: 6px 10px;
   margin-left: 10px;
 }
@@ -11958,7 +11958,7 @@ table.tableRanking td {
   display: inline-block;
   width: 18px;
   height: 16px;
-  background: url("../../img/heart_attention.svg") no-repeat 0 1px;
+  background: url("/img/heart_attention.svg") no-repeat 0 1px;
   margin-right: 5px;
   margin-bottom: 2px;
 }
@@ -12139,7 +12139,7 @@ table.tableRanking td {
   top: 2px;
   width: 13px;
   height: 12px;
-  background: url("../../img/heart_attention.svg") no-repeat 0 1px;
+  background: url("/img/heart_attention.svg") no-repeat 0 1px;
   margin-right: 5px;
   background-size: 12px 24px;
 }
@@ -12169,7 +12169,7 @@ table.tableRanking td {
   top: 2px;
   width: 15px;
   height: 16px;
-  background: url("../../img/Icon_m_chart.png") no-repeat 0 0;
+  background: url("/img/Icon_m_chart.png") no-repeat 0 0;
   margin-right: 5px;
   background-size: 15px 16px;
 }
@@ -12232,7 +12232,7 @@ table.tableRanking td {
   vertical-align: top;
   width: 18px;
   height: 20px;
-  background: url("../../img/game_trans.png") no-repeat 0 -25px;
+  background: url("/img/game_trans.png") no-repeat 0 -25px;
   background-size: 18px 68px;
 }
 
@@ -12358,7 +12358,7 @@ table.tableRanking td {
   display: inline-block;
   width: 20px;
   height: 17.4px;
-  background: url("../../img/heart_attention.svg") no-repeat 0 0;
+  background: url("/img/heart_attention.svg") no-repeat 0 0;
   margin-right: 5px;
   margin-bottom: 2px;
   margin-top: 2px;
@@ -12623,7 +12623,7 @@ table.tableRanking td {
   display: inline-block;
   width: 16px;
   height: 16px;
-  background: url("../../img/trash-icon.svg") no-repeat center center;
+  background: url("/img/trash-icon.svg") no-repeat center center;
   background-size: cover;
   margin-right: 8px;
   filter: grayscale(100%);
@@ -12704,7 +12704,7 @@ table.tableRanking td {
 .globalStock .sub_search .tabs_5 li a strong i {
   display: inline-block;
   font-size: 0;
-  background: url("../../img/star_icon.png") no-repeat 0 0;
+  background: url("/img/star_icon.png") no-repeat 0 0;
   background-size: 100% 100%;
   width: 9px;
   height: 9px;
@@ -12782,12 +12782,12 @@ table.tableRanking td {
 }
 
 .globalStock .sub_search .tabs_3.tabs_depth2.prm_tabs li:nth-child(2) {
-  background: #ececef url("../../img/prm_tabsLock.svg") no-repeat calc(50% + 36px) center;
+  background: #ececef url("/img/prm_tabsLock.svg") no-repeat calc(50% + 36px) center;
   background-size: 8px auto;
 }
 
 .globalStock .sub_search .tabs_3.tabs_depth2.prm_tabs li.active:nth-child(2) {
-  background: #fff url("../../img/prm_tabsLock.svg") no-repeat calc(50% + 36px) center;
+  background: #fff url("/img/prm_tabsLock.svg") no-repeat calc(50% + 36px) center;
   background-size: 8px auto;
 }
 
@@ -13197,12 +13197,50 @@ table.tableRanking td {
   display: inline-block;
   width: 12px;
   height: 12px;
-  background: url("../../img/more_gray.svg") no-repeat center center;
+  background: url("/img/more_gray.svg") no-repeat center center;
   padding-left: 5px;
 }
 .globalStock .sub_search .sub_mid .investCharm_area .tab_diagnosis_area {
   margin-top: 16px;
   padding: 0;
+}
+.globalStock .sub_search .sub_mid .investCharm_area .spider_year {
+  text-align: center;
+}
+.globalStock .sub_search .sub_mid .investCharm_area .spider_year .spider_year_item {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px 18px;
+  border-radius: 100px;
+  border: 1px solid var(--Border-primary-border, #E3E5E8);
+  background: #FFF;
+  margin: 16px auto 9px;
+  padding: 12px 14px 12px 24px;
+  box-sizing: border-box;
+}
+.globalStock .sub_search .sub_mid .investCharm_area .spider_year .spider_year_item span {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px 4px;
+  color: var(--Font-secondary-caption, #6B7684);
+  font-family: var(--Body, Pretendard);
+  font-size: var(--Size-xs-13, 13px);
+  font-style: normal;
+  font-weight: var(--Weight-500, 500);
+  line-height: var(--Line-height-xs-13, 16px); /* 123.077% */
+  letter-spacing: var(--Tracking-md, -0.3px);
+}
+.globalStock .sub_search .sub_mid .investCharm_area .spider_year .spider_year_item span::before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--Font-secondary-caption, #6B7684);
+}
+.globalStock .sub_search .sub_mid .investCharm_area .spider_year .spider_year_item span.active::before {
+  background-color: var(--Font-primary-blue, #4168F6);
 }
 
 .globalStock .sub_search .sub_mid .investCharm_area:after {
@@ -13415,15 +13453,21 @@ table.tableRanking td {
   height: 260px;
 }
 .globalStock .sub_search .sub_mid .tab_diagnosis_area .containercharm1 .highcharts-axis-labels.highcharts-radial-axis-labels span {
-  color: #6a727b !important;
+  color: var(--Gray-gray600, #6B7684);
+  font-family: Pretendard;
+  font-size: 13px;
+  font-style: normal;
   font-weight: 400;
+  line-height: normal;
 }
 .globalStock .sub_search .sub_mid .tab_diagnosis_area .containercharm1 .highcharts-axis-labels.highcharts-radial-axis-labels strong {
   display: inline-block;
-  padding-top: 5px;
-  font-weight: 400;
-  color: #6a727b !important;
+  color: var(--Gray-gray600, #6B7684);
+  font-family: Pretendard;
   font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 
 .globalStock .sub_search .sub_mid .tab_diagnosis_area .charm_num {
@@ -13514,7 +13558,7 @@ table.tableRanking td {
   display: inline-block;
   width: 10px;
   height: 13px;
-  background: url("../../img/Icon_lockF.png") no-repeat 0 0;
+  background: url("/img/Icon_lockF.png") no-repeat 0 0;
   background-size: 10px 13px;
   margin-right: 3px;
 }
@@ -13552,7 +13596,7 @@ table.tableRanking td {
   display: inline-block;
   width: 6px;
   height: 10px;
-  background: url("../../img/more_blue.png") no-repeat 0 0;
+  background: url("/img/more_blue.png") no-repeat 0 0;
   background-size: 6px 10px;
   margin-left: 10px;
 }
@@ -13734,7 +13778,7 @@ table.tableRanking td {
 }
 
 .globalStock .sub_search .sub_mid .hiding_box .small_star .star_area .starR {
-  background: url("../../img/ico_review.png") no-repeat -24px 0;
+  background: url("/img/ico_review.png") no-repeat -24px 0;
   background-size: auto 100%;
   width: 14px;
   height: 14px;
@@ -14420,7 +14464,7 @@ table.tableRanking td {
   display: inline-block;
   width: 6px;
   height: 8px;
-  background: url("../../img/more_white.svg") no-repeat 0 0;
+  background: url("/img/more_white.svg") no-repeat 0 0;
   background-size: 6px 8px;
 }
 
@@ -15196,7 +15240,7 @@ table.tableRanking td {
   display: inline-block;
   width: 10px;
   height: 13px;
-  background: url("../../img/Icon_lockF.png") no-repeat 0 0;
+  background: url("/img/Icon_lockF.png") no-repeat 0 0;
   background-size: 10px 13px;
   margin-right: 3px;
 }
@@ -15236,7 +15280,7 @@ table.tableRanking td {
   display: inline-block;
   width: 6px;
   height: 10px;
-  background: url("../../img/more_blue.png") no-repeat 0 0;
+  background: url("/img/more_blue.png") no-repeat 0 0;
   background-size: 6px 10px;
   margin-left: 10px;
 }
@@ -15316,7 +15360,7 @@ table.tableRanking td {
 }
 
 .globalStock .sub_search .alloca_wrap .alloca_star .star_area .starR {
-  background: url("../../img/ico_reviewB.png") no-repeat -55px 0;
+  background: url("/img/ico_reviewB.png") no-repeat -55px 0;
   width: 32px;
   height: 32px;
 }
@@ -15513,7 +15557,7 @@ table.tableRanking td {
   display: inline-block;
   width: 10px;
   height: 13px;
-  background: url("../../img/Icon_lockF.png") no-repeat 0 0;
+  background: url("/img/Icon_lockF.png") no-repeat 0 0;
   background-size: 10px 13px;
   margin-right: 3px;
 }
@@ -15551,7 +15595,7 @@ table.tableRanking td {
   display: inline-block;
   width: 6px;
   height: 10px;
-  background: url("../../img/more_blue.png") no-repeat 0 0;
+  background: url("/img/more_blue.png") no-repeat 0 0;
   background-size: 6px 10px;
   margin-left: 10px;
 }
@@ -15870,7 +15914,7 @@ table.tableRanking td {
   display: inline-block;
   width: 20px;
   height: 16px;
-  background: url("../../img/btn_schSet.svg") no-repeat 50% 50%;
+  background: url("/img/btn_schSet.svg") no-repeat 50% 50%;
   background-size: auto 100%;
   margin-right: 5px;
 }
@@ -15999,7 +16043,7 @@ table.tableRanking td {
   display: inline-block;
   width: 10px;
   height: 13px;
-  background: url("../../img/Icon_lockB.png") no-repeat 0 0;
+  background: url("/img/Icon_lockB.png") no-repeat 0 0;
   background-size: 10px 13px;
   margin-right: 3px;
 }
@@ -16037,7 +16081,7 @@ table.tableRanking td {
   display: inline-block;
   width: 6px;
   height: 10px;
-  background: url("../../img/more_yel.png") no-repeat 0 0;
+  background: url("/img/more_yel.png") no-repeat 0 0;
   background-size: 6px 10px;
   margin-left: 10px;
 }
@@ -16355,7 +16399,7 @@ table.tableRanking td {
 
 .globalStock .free_pop.md-modal #setting .pop_header .sub_top {
   padding-bottom: 3px;
-  background: url("../../img/bg_free_pop.png") no-repeat right bottom;
+  background: url("/img/bg_free_pop.png") no-repeat right bottom;
   background-size: 60px 60px;
 }
 
@@ -16442,7 +16486,7 @@ table.tableRanking td {
   display: inline-block;
   width: 5px;
   height: 10px;
-  background: url("../../img/icon_moreRR.png") no-repeat 0 0;
+  background: url("/img/icon_moreRR.png") no-repeat 0 0;
   background-size: cover;
 }
 
@@ -16486,7 +16530,7 @@ table.tableRanking td {
 
 .globalStock .premium_pop.md-modal #setting .pop_header {
   padding: 17px 10px 0;
-  background: url("../../img/bg_premium_pop.png") no-repeat right top;
+  background: url("/img/bg_premium_pop.png") no-repeat right top;
   background-size: cover;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
@@ -16584,7 +16628,7 @@ table.tableRanking td {
   display: inline-block;
   width: 5px;
   height: 10px;
-  background: url("../../img/icon_moreRR.png") no-repeat 0 0;
+  background: url("/img/icon_moreRR.png") no-repeat 0 0;
   background-size: cover;
 }
 
@@ -16628,7 +16672,7 @@ table.tableRanking td {
 
 .globalStock .event_1year.md-modal #setting .pop_header {
   padding: 10px 10px 15px;
-  background: #1a918d url("../../img/banner/pop_event1year.png") no-repeat right bottom;
+  background: #1a918d url("/img/banner/pop_event1year.png") no-repeat right bottom;
   background-size: 114px 81px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
@@ -16657,7 +16701,7 @@ table.tableRanking td {
   color: #fff;
   font-weight: bold;
   padding: 0 2px;
-  background: url("../../img/banner/bg_gbline.png") repeat-x 0 calc(100% + 8px);
+  background: url("/img/banner/bg_gbline.png") repeat-x 0 calc(100% + 8px);
   font-weight: 500;
 }
 
@@ -16783,7 +16827,7 @@ table.tableRanking td {
 
 .globalStock .event_1year.md-modal #setting .pop_con .tableRanking.type_compare .com_select span {
   display: inline-block;
-  background: url("../../img/com_select.png") no-repeat 50% 50%;
+  background: url("/img/com_select.png") no-repeat 50% 50%;
   background-size: 14px 11px;
   width: 14px;
   height: 11px;
@@ -16827,7 +16871,7 @@ table.tableRanking td {
   display: inline-block;
   width: 5px;
   height: 10px;
-  background: url("../../img/icon_moreRR.png") no-repeat 0 0;
+  background: url("/img/icon_moreRR.png") no-repeat 0 0;
   background-size: cover;
 }
 
@@ -16992,51 +17036,51 @@ table.tableRanking td {
   padding-bottom: 8px;
 }
 .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .box_tabs .list_masonry > .figure.jump::before {
-  background: #646FCD url("../../img/jump.png") no-repeat center 14px;
+  background: #646FCD url("/img/jump.png") no-repeat center 14px;
   background-size: auto 132px;
 }
 .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .box_tabs .list_masonry > .figure.top50::before {
-  background: #F8D95F url("../../img/top50.png") no-repeat center 14px;
+  background: #F8D95F url("/img/top50.png") no-repeat center 14px;
   background-size: auto 132px;
 }
 .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .box_tabs .list_masonry > .figure.sale::before {
-  background: #76BCE7 url("../../img/sale.png") no-repeat center 14px;
+  background: #76BCE7 url("/img/sale.png") no-repeat center 14px;
   background-size: auto 132px;
 }
 .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .box_tabs .list_masonry > .figure.earnings::before {
-  background: #2E3848 url("../../img/earnings.png") no-repeat center 14px;
+  background: #2E3848 url("/img/earnings.png") no-repeat center 14px;
   background-size: auto 132px;
 }
 .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .box_tabs .list_masonry > .figure.dividend::before {
-  background: #87CD64 url("../../img/dividend.png") no-repeat center 14px;
+  background: #87CD64 url("/img/dividend.png") no-repeat center 14px;
   background-size: auto 132px;
 }
 .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .box_tabs .list_masonry > .figure.growth::before {
-  background: #79D5A9 url("../../img/growth.png") no-repeat center 14px;
+  background: #79D5A9 url("/img/growth.png") no-repeat center 14px;
   background-size: auto 132px;
 }
 .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .box_tabs .list_masonry > .figure.superStocks::before {
-  background: #E7B676 url("../../img/superStocks.png") no-repeat center 14px;
+  background: #E7B676 url("/img/superStocks.png") no-repeat center 14px;
   background-size: auto 132px;
 }
 .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .box_tabs .list_masonry > .figure.consumerMonopoly::before {
-  background: #D6E0EA url("../../img/consumerMonopoly.png") no-repeat center 14px;
+  background: #D6E0EA url("/img/consumerMonopoly.png") no-repeat center 14px;
   background-size: auto 132px;
 }
 .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .box_tabs .list_masonry > .figure.profitTurnaround::before {
-  background: #7694E7 url("../../img/profitTurnaround.png") no-repeat center 14px;
+  background: #7694E7 url("/img/profitTurnaround.png") no-repeat center 14px;
   background-size: auto 132px;
 }
 .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .box_tabs .list_masonry > .figure.goldenCross::before {
-  background: #E36B6D url("../../img/goldenCross.png") no-repeat center 14px;
+  background: #E36B6D url("/img/goldenCross.png") no-repeat center 14px;
   background-size: auto 132px;
 }
 .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .box_tabs .list_masonry > .figure.growthDiscovery::before {
-  background: #E79366 url("../../img/growthDiscovery.png") no-repeat center 14px;
+  background: #E79366 url("/img/growthDiscovery.png") no-repeat center 14px;
   background-size: auto 132px;
 }
 .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .box_tabs .list_masonry > .figure.rocketBooster::before {
-  background: #646FCD url("../../img/rocketBooster.png") no-repeat center 14px;
+  background: #646FCD url("/img/rocketBooster.png") no-repeat center 14px;
   background-size: auto 132px;
 }
 .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .one_step {
@@ -17144,7 +17188,7 @@ table.tableRanking td {
   background-color: #646FCD;
 }
 .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_top.view.jump .box_tabs::before {
-  background: #646FCD url("../../img/jump.png") no-repeat center center;
+  background: #646FCD url("/img/jump.png") no-repeat center center;
 }
 .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_top.view.jump .update_info {
   color: rgba(255, 255, 255, 0.7);
@@ -17157,13 +17201,13 @@ table.tableRanking td {
   color: #333;
 }
 .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_top.view.top50 .box_tabs::before {
-  background: #F8D95F url("../../img/top50.png") no-repeat center center;
+  background: #F8D95F url("/img/top50.png") no-repeat center center;
 }
 .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_top.view.sale .box_tabs {
   background-color: #76BCE7;
 }
 .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_top.view.sale .box_tabs::before {
-  background: #76BCE7 url("../../img/sale.png") no-repeat center center;
+  background: #76BCE7 url("/img/sale.png") no-repeat center center;
 }
 .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_top.view.sale .update_info {
   color: rgba(255, 255, 255, 0.7);
@@ -17172,7 +17216,7 @@ table.tableRanking td {
   background-color: #2E3848;
 }
 .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_top.view.earnings .box_tabs::before {
-  background: #2E3848 url("../../img/earnings.png") no-repeat center center;
+  background: #2E3848 url("/img/earnings.png") no-repeat center center;
 }
 .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_top.view.earnings .update_info {
   color: rgba(255, 255, 255, 0.7);
@@ -17181,7 +17225,7 @@ table.tableRanking td {
   background-color: #87CD64;
 }
 .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_top.view.dividend .box_tabs::before {
-  background: #87CD64 url("../../img/dividend.png") no-repeat center center;
+  background: #87CD64 url("/img/dividend.png") no-repeat center center;
 }
 .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_top.view.dividend .update_info {
   color: rgba(255, 255, 255, 0.7);
@@ -17190,7 +17234,7 @@ table.tableRanking td {
   background-color: #79D5A9;
 }
 .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_top.view.growth .box_tabs::before {
-  background: #79D5A9 url("../../img/growth.png") no-repeat center center;
+  background: #79D5A9 url("/img/growth.png") no-repeat center center;
 }
 .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_top.view.growth .update_info {
   color: rgba(255, 255, 255, 0.7);
@@ -17203,7 +17247,7 @@ table.tableRanking td {
   color: #333;
 }
 .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_top.view.superStocks .box_tabs::before {
-  background: #E7B676 url("../../img/superStocks.png") no-repeat center center;
+  background: #E7B676 url("/img/superStocks.png") no-repeat center center;
 }
 .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_top.view.consumerMonopoly .box_tabs {
   color: rgba(51, 51, 51, 0.7);
@@ -17213,13 +17257,13 @@ table.tableRanking td {
   color: #333;
 }
 .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_top.view.consumerMonopoly .box_tabs::before {
-  background: #D6E0EA url("../../img/consumerMonopoly.png") no-repeat center center;
+  background: #D6E0EA url("/img/consumerMonopoly.png") no-repeat center center;
 }
 .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_top.view.profitTurnaround .box_tabs {
   background-color: #7694E7;
 }
 .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_top.view.profitTurnaround .box_tabs::before {
-  background: #7694E7 url("../../img/profitTurnaround.png") no-repeat center center;
+  background: #7694E7 url("/img/profitTurnaround.png") no-repeat center center;
 }
 .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_top.view.profitTurnaround .update_info {
   color: rgba(255, 255, 255, 0.7);
@@ -17228,7 +17272,7 @@ table.tableRanking td {
   background-color: #E36B6D;
 }
 .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_top.view.goldenCross .box_tabs::before {
-  background: #E36B6D url("../../img/goldenCross.png") no-repeat center center;
+  background: #E36B6D url("/img/goldenCross.png") no-repeat center center;
 }
 .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_top.view.goldenCross .update_info {
   color: rgba(255, 255, 255, 0.7);
@@ -17237,7 +17281,7 @@ table.tableRanking td {
   background-color: #E79366;
 }
 .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_top.view.growthDiscovery .box_tabs::before {
-  background: #E79366 url("../../img/growthDiscovery.png") no-repeat center center;
+  background: #E79366 url("/img/growthDiscovery.png") no-repeat center center;
 }
 .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_top.view.growthDiscovery .update_info {
   color: rgba(255, 255, 255, 0.7);
@@ -17246,7 +17290,7 @@ table.tableRanking td {
   background-color: #646FCD;
 }
 .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_top.view.rocketBooster .box_tabs::before {
-  background: #646FCD url("../../img/rocketBooster.png") no-repeat center center;
+  background: #646FCD url("/img/rocketBooster.png") no-repeat center center;
 }
 .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_top.view.rocketBooster .update_info {
   color: rgba(255, 255, 255, 0.7);
@@ -17291,7 +17335,7 @@ table.tableRanking td {
   width: 14px;
   height: 14px;
   padding: 1px 0;
-  background: url("../../img/icon_transition.svg") no-repeat 0 1px;
+  background: url("/img/icon_transition.svg") no-repeat 0 1px;
   background-size: 14px 14px;
   margin-left: 2px;
   position: relative;
@@ -17360,7 +17404,7 @@ table.tableRanking td {
   }
 }
 .v_signalStreng.globalStock .sub_recipe.new_recipe .recipe_area .chart_list .list#btn_free .title_logo .logo, .modal.att_pop .recipe_area .v_signalStreng.globalStock .sub_recipe.new_recipe .area.rocket .chart_list .list#btn_free .title_logo .logo {
-  background: #F5F5F9 url("../../img/signal_prm.svg") no-repeat center center;
+  background: #F5F5F9 url("/img/signal_prm.svg") no-repeat center center;
   background-size: 64%;
 }
 .v_signalStreng.globalStock .sub_recipe.new_recipe .recipe_area .chart_list .list .stock_info, .modal.att_pop .recipe_area .v_signalStreng.globalStock .sub_recipe.new_recipe .area.rocket .chart_list .list .stock_info {
@@ -17494,7 +17538,7 @@ table.tableRanking td {
   padding: 0 16px 14px 8px;
 }
 .v_signalStreng.globalStock .sub_recipe.new_recipe .recipe_area .area.turnaround .stock_info#btn_free .title_logo .logo, .modal.att_pop .recipe_area .v_signalStreng.globalStock .sub_recipe.new_recipe .area.rocket .area.turnaround .stock_info#btn_free .title_logo .logo, .modal.att_pop .recipe_area .v_signalStreng.globalStock .sub_recipe.new_recipe .area.rocket .area.rocket .stock_info#btn_free .title_logo .logo, .v_signalStreng.globalStock .sub_recipe.new_recipe .recipe_area .area.rocket .stock_info#btn_free .title_logo .logo {
-  background: #F5F5F9 url("../../img/signal_prm.svg") no-repeat center center;
+  background: #F5F5F9 url("/img/signal_prm.svg") no-repeat center center;
   background-size: 64%;
 }
 .v_signalStreng.globalStock .sub_recipe.new_recipe .recipe_area .area.turnaround .stock_info .title_logo, .modal.att_pop .recipe_area .v_signalStreng.globalStock .sub_recipe.new_recipe .area.rocket .area.turnaround .stock_info .title_logo, .modal.att_pop .recipe_area .v_signalStreng.globalStock .sub_recipe.new_recipe .area.rocket .area.rocket .stock_info .title_logo, .v_signalStreng.globalStock .sub_recipe.new_recipe .recipe_area .area.rocket .stock_info .title_logo {
@@ -17686,7 +17730,7 @@ table.tableRanking td {
   display: inline-block;
   width: 13px;
   height: 13px;
-  background: url("../../img/icon_saledeal.svg") no-repeat center center;
+  background: url("/img/icon_saledeal.svg") no-repeat center center;
 }
 .v_signalStreng.globalStock .sub_recipe.new_recipe .attention_box {
   display: flex;
@@ -17703,7 +17747,7 @@ table.tableRanking td {
   display: inline-block;
   width: 15px;
   height: 11px;
-  background: url("../../img/heart_attention_gray.svg") no-repeat 0 100%;
+  background: url("/img/heart_attention_gray.svg") no-repeat 0 100%;
   background-size: 14px 25px;
 }
 .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_view .recipe_area .area .per span, .modal.att_pop .recipe_area .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_view .area.rocket .area .per span, .v_signalStreng.globalStock .sub_recipe.new_recipe .recipe_area .sub_mid.recipe_view .area.rocket .area .per span {
@@ -17822,57 +17866,57 @@ table.tableRanking td {
 }
 .globalStock .sub_recipe .sub_mid.recipe_tabs .box_tabs li.jump a {
   /* 급등주 */
-  background: #fff url("../../img/recipe_jump.svg") no-repeat center 25px;
+  background: #fff url("/img/recipe_jump.svg") no-repeat center 25px;
   background-size: 54px 54px;
 }
 
 .globalStock .sub_recipe .sub_mid.recipe_tabs .box_tabs li.top50 a {
   /* TOP50 */
-  background: #fff url("../../img/recipe_top50.svg") no-repeat center 25px;
+  background: #fff url("/img/recipe_top50.svg") no-repeat center 25px;
   background-size: 80px 53px;
 }
 
 .globalStock .sub_recipe .sub_mid.recipe_tabs .box_tabs li:nth-child(4) a {
   /* 실적발표 */
-  background: #fff url("../../img/recipe_05.png") no-repeat center 25px;
+  background: #fff url("/img/recipe_05.png") no-repeat center 25px;
   background-size: 50px 49px;
 }
 
 .globalStock .sub_recipe .sub_mid.recipe_tabs .box_tabs li.sale a {
   /* 세일 */
-  background: #fff url("../../img/recipe_sale.svg") no-repeat center 15px;
+  background: #fff url("/img/recipe_sale.svg") no-repeat center 15px;
   background-size: auto 62px;
 }
 
 .globalStock .sub_recipe .sub_mid.recipe_tabs .box_tabs li:nth-child(6) a {
   /* 배당매력주 */
-  background: #fff url("../../img/recipe_01.png") no-repeat center 18px;
+  background: #fff url("/img/recipe_01.png") no-repeat center 18px;
 }
 
 .globalStock .sub_recipe .sub_mid.recipe_tabs .box_tabs li:nth-child(7) a {
   /* 이익성장주 */
-  background: #fff url("../../img/recipe_02.png") no-repeat center 21px;
+  background: #fff url("/img/recipe_02.png") no-repeat center 21px;
 }
 
 .globalStock .sub_recipe .sub_mid.recipe_tabs .box_tabs li:nth-child(8) a {
   /* 소비자독점 */
-  background: #fff url("../../img/recipe_03.png") no-repeat center 21px;
+  background: #fff url("/img/recipe_03.png") no-repeat center 21px;
 }
 
 .globalStock .sub_recipe .sub_mid.recipe_tabs .box_tabs li:nth-child(9) a {
   /* 슈퍼스톡 */
-  background: #fff url("../../img/recipe_04.png") no-repeat center 29px;
+  background: #fff url("/img/recipe_04.png") no-repeat center 29px;
 }
 
 .globalStock .sub_recipe .sub_mid.recipe_tabs .box_tabs li.today_signal a {
   /* 오늘의 매매신호 */
-  background: #fff url("../../img/recipe_today.png") no-repeat center 21px;
+  background: #fff url("/img/recipe_today.png") no-repeat center 21px;
   background-size: 56px auto;
 }
 
 /* 발굴 - 투자레시피 view */
 .globalStock .sub_recipe .sub_top.view .box_tabs {
-  background: #fff url("../../img/recipe_01.png") no-repeat center 13px;
+  background: #fff url("/img/recipe_01.png") no-repeat center 13px;
   background-size: auto 59px;
   padding: 90px 15px 33px;
   color: #939393;
@@ -17884,44 +17928,44 @@ table.tableRanking td {
 
 .globalStock .sub_recipe .sub_top.view.bgimg02 .box_tabs {
   /* 실적발표 */
-  background-image: url("../../img/recipe_05.png");
+  background-image: url("/img/recipe_05.png");
 }
 
 .globalStock .sub_recipe .sub_top.view.bgimg03 .box_tabs {
   /* 배당매력주 */
-  background-image: url("../../img/recipe_01.png");
+  background-image: url("/img/recipe_01.png");
 }
 
 .globalStock .sub_recipe .sub_top.view.bgimg04 .box_tabs {
   /* 이익성장주 */
-  background-image: url("../../img/recipe_02.png");
+  background-image: url("/img/recipe_02.png");
 }
 
 .globalStock .sub_recipe .sub_top.view.bgimg05 .box_tabs {
   /* 소비자독점 */
-  background-image: url("../../img/recipe_03.png");
+  background-image: url("/img/recipe_03.png");
 }
 
 .globalStock .sub_recipe .sub_top.view.bgimg01 .box_tabs {
   /* 슈퍼스톡 */
-  background-image: url("../../img/recipe_04.png");
+  background-image: url("/img/recipe_04.png");
 }
 
 .globalStock .sub_recipe .sub_top.view.recipejump .box_tabs {
-  background-image: url("../../img/recipe_jump.svg");
+  background-image: url("/img/recipe_jump.svg");
 }
 
 .globalStock .sub_recipe .sub_top.view.recipetop .box_tabs {
-  background-image: url("../../img/recipe_top50.svg");
+  background-image: url("/img/recipe_top50.svg");
 }
 
 .globalStock .sub_recipe .sub_top.view.recipesale .box_tabs {
-  background-image: url("../../img/recipe_sale.svg");
+  background-image: url("/img/recipe_sale.svg");
   background-size: auto 64px;
 }
 
 .globalStock .sub_recipe .sub_top.view.recipeToday .box_tabs {
-  background-image: url("../../img/recipe_today.png");
+  background-image: url("/img/recipe_today.png");
   background-size: auto 64px;
 }
 
@@ -17931,7 +17975,7 @@ table.tableRanking td {
   width: 22px;
   height: 22px;
   border-radius: 50%;
-  background: url("../../img/icon_sale.svg") no-repeat center center;
+  background: url("/img/icon_sale.svg") no-repeat center center;
   vertical-align: top;
 }
 
@@ -18016,7 +18060,7 @@ table.tableRanking td {
   margin: 0 auto;
   width: 340px;
   height: 180px;
-  background: url("../../img/contaanalysis1_num.svg") no-repeat center 77px;
+  background: url("/img/contaanalysis1_num.svg") no-repeat center 77px;
   background-size: auto 114px;
 }
 .globalStock .main_mid.tradeSignal_status .score_chart .contaanalysis1 .gauge-value .highcharts-label-box {
@@ -18142,7 +18186,7 @@ table.tableRanking td {
   margin: 0 auto;
   width: 340px;
   height: 180px;
-  background: url("../../img/contaanalysis1_num.svg") no-repeat center 77px;
+  background: url("/img/contaanalysis1_num.svg") no-repeat center 77px;
   background-size: auto 114px;
 }
 .globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .tradeSignal_status .score_chart .contaanalysis1 .gauge-value {
@@ -18361,7 +18405,7 @@ table.tableRanking td {
 .globalStock .sub_recipe .sub_mid.recipe_view .recipe_area .news_no_data, .modal.att_pop .recipe_area .globalStock .sub_recipe .sub_mid.recipe_view .area.rocket .news_no_data, .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_view .recipe_area .area.rocket .news_no_data, .v_signalStreng.globalStock .sub_recipe.new_recipe .recipe_area .sub_mid.recipe_view .area.rocket .news_no_data {
   margin: 20px 0 55px;
   border-radius: 20px;
-  background: #fff url("../../img/bg_nodata.png") no-repeat center 70px;
+  background: #fff url("/img/bg_nodata.png") no-repeat center 70px;
   box-sizing: border-box;
   padding-top: 240px;
   padding-bottom: 15px;
@@ -19047,7 +19091,7 @@ table.tableRanking td {
 
 .globalStock .sub_recipe .sub_mid.recipe_view .banner_prm .cho_prm i {
   display: inline-block;
-  background: url("../../img/Icon_lock.svg") no-repeat;
+  background: url("/img/Icon_lock.svg") no-repeat;
   width: 10px;
   height: 13px;
   background-size: 10px 13px;
@@ -19081,7 +19125,7 @@ table.tableRanking td {
   display: inline-block;
   width: 9px;
   height: 11px;
-  background: url("../../img/heart_attention_gray.svg") no-repeat 0 1px;
+  background: url("/img/heart_attention_gray.svg") no-repeat 0 1px;
   margin: 0 3px;
   background-size: 14px 25px;
 }
@@ -19106,7 +19150,7 @@ table.tableRanking td {
   display: inline-block;
   width: 15px;
   height: 11px;
-  background: url("../../img/heart_attention_gray.svg") no-repeat 0 1px;
+  background: url("/img/heart_attention_gray.svg") no-repeat 0 1px;
   margin-right: 3px;
   background-size: 14px 25px;
   vertical-align: middle;
@@ -19211,7 +19255,7 @@ table.tableRanking td {
   width: 14px;
   height: 14px;
   padding: 1px 0;
-  background: url("../../img/icon_transition.svg") no-repeat 0 1px;
+  background: url("/img/icon_transition.svg") no-repeat 0 1px;
   background-size: 14px 14px;
   margin-left: 2px;
   position: relative;
@@ -19269,7 +19313,7 @@ table.tableRanking td {
   vertical-align: top;
   width: 14px;
   height: 14px;
-  background: url("../../img/game_trans_b.svg") no-repeat 0 0;
+  background: url("/img/game_trans_b.svg") no-repeat 0 0;
   background-size: 60px 14px;
   margin-top: 3px;
 }
@@ -19409,7 +19453,7 @@ table.tableRanking td {
   vertical-align: top;
   width: 14px;
   height: 14px;
-  background: url("../../img/game_trans_b.svg") no-repeat 0 0;
+  background: url("/img/game_trans_b.svg") no-repeat 0 0;
   background-size: 60px 14px;
 }
 
@@ -19472,7 +19516,7 @@ table.tableRanking td {
   display: inline-block;
   width: 15px;
   height: 11px;
-  background: url("../../img/heart_attention_gray.svg") no-repeat 0 1px;
+  background: url("/img/heart_attention_gray.svg") no-repeat 0 1px;
   margin-right: 3px;
   background-size: 14px 25px;
   vertical-align: middle;
@@ -19734,7 +19778,7 @@ table.tableRanking td {
   top: 2px;
   width: 10px;
   height: 13px;
-  background: #F6F7FA url("../../img/prm_tabsLock.svg") no-repeat center center;
+  background: #F6F7FA url("/img/prm_tabsLock.svg") no-repeat center center;
 }
 
 .globalStock .sub_research .sub_mid.research_board .lst_type2 dt.tit a {
@@ -19762,7 +19806,7 @@ table.tableRanking td {
   border: none;
   width: 67px;
   height: 60px;
-  background: #fff url("../../img/noimg.png") no-repeat center center;
+  background: #fff url("/img/noimg.png") no-repeat center center;
   background-size: cover;
   border: 1px solid #E0E4E9;
   border-radius: 5px;
@@ -19826,7 +19870,7 @@ table.tableRanking td {
   width: calc(100% - 60px);
   min-height: 177px;
   box-sizing: border-box;
-  background: url("../../img/bg_wow_video.jpg") no-repeat center center;
+  background: url("/img/bg_wow_video.jpg") no-repeat center center;
   background-size: cover;
   position: relative;
   padding-bottom: 48%;
@@ -20126,7 +20170,7 @@ table.tableRanking td {
   display: inline-block;
   width: 67px;
   height: 60px;
-  background: #fff url("../../img/noimg.png") no-repeat 0 0;
+  background: #fff url("/img/noimg.png") no-repeat 0 0;
   background-size: cover;
   border: 1px solid #E0E4E9;
   border-radius: 5px;
@@ -20204,7 +20248,7 @@ table.tableRanking td {
   display: inline-block;
   width: 112px;
   height: 63px;
-  background: #fff url("../../img/noimg_wowtv.svg") no-repeat center center;
+  background: #fff url("/img/noimg_wowtv.svg") no-repeat center center;
 }
 
 .globalStock .sub_research .sub_mid.research_board .lst_type.video_list .video_box > a .video_title {
@@ -20236,7 +20280,7 @@ table.tableRanking td {
 
 .globalStock .sub_research .sub_mid.research_board .lst_type.video_list .video_box.lst_lock > a .video_title span {
   text-indent: 20px;
-  background: url("../../img/prm_tabsLock.svg") no-repeat 0 2px;
+  background: url("/img/prm_tabsLock.svg") no-repeat 0 2px;
 }
 
 .globalStock .sub_research .view_con .mid .iframe_video {
@@ -20308,7 +20352,7 @@ table.tableRanking td {
   display: inline-block;
   width: 5px;
   height: 10px;
-  background: url("../../img/icon_moreRR.png") no-repeat 0 0;
+  background: url("/img/icon_moreRR.png") no-repeat 0 0;
   background-size: cover;
 }
 
@@ -20590,7 +20634,7 @@ table.tableRanking td {
   display: inline-block;
   width: 67px;
   height: 60px;
-  background: #fff url("../../img/face_noimg.png") no-repeat 0 0;
+  background: #fff url("/img/face_noimg.png") no-repeat 0 0;
   background-size: cover;
   border: 1px solid #E0E4E9;
   border-radius: 10px;
@@ -20617,7 +20661,7 @@ table.tableRanking td {
 }
 
 .globalStock .sub_briefing .sub_top .best_research {
-  background: url("../../img/research_bg.png") no-repeat center center;
+  background: url("/img/research_bg.png") no-repeat center center;
   margin: 25px 15px;
   box-sizing: border-box;
   padding: 22px 20px;
@@ -20725,7 +20769,7 @@ table.tableRanking td {
 .globalStock .sub_briefing .sub_mid.research_board .lst_type2.lst_lock dt.tit strong {
   display: inline-block;
   text-indent: 20px;
-  background: url("../../img/icon_list_lock.svg") no-repeat 0 4px;
+  background: url("/img/icon_list_lock.svg") no-repeat 0 4px;
 }
 
 .globalStock .sub_briefing .sub_mid.research_board .lst_type2 dt.tit a {
@@ -20767,7 +20811,7 @@ table.tableRanking td {
   display: inline-block;
   width: 80px;
   height: 71px;
-  background: #fff url("../../img/face_noimg.png") no-repeat 0 0;
+  background: #fff url("/img/face_noimg.png") no-repeat 0 0;
   background-size: cover;
   border: 1px solid #E0E4E9;
   border-radius: 10px;
@@ -20816,16 +20860,16 @@ table.tableRanking td {
   vertical-align: top;
 }
 .globalStock .alarmArea .alarmList li span.title i.note {
-  background-image: url("../../img/icon_list_note.svg");
+  background-image: url("/img/icon_list_note.svg");
 }
 .globalStock .alarmArea .alarmList li span.title i.recom {
-  background-image: url("../../img/icon_list_recom.svg");
+  background-image: url("/img/icon_list_recom.svg");
 }
 .globalStock .alarmArea .alarmList li span.title i.interest {
-  background-image: url("../../img/icon_list_interest.svg");
+  background-image: url("/img/icon_list_interest.svg");
 }
 .globalStock .alarmArea .alarmList li span.title i.event {
-  background-image: url("../../img/icon_list_event.svg");
+  background-image: url("/img/icon_list_event.svg");
 }
 .globalStock .alarmArea .alarmList li span.day {
   color: #939393;
@@ -20886,10 +20930,10 @@ table.tableRanking td {
   border-bottom: none;
 }
 .globalStock .alarmArea .alarmList li .group li.buy {
-  background: url("../../img/group_buy.svg") no-repeat 2px 16px;
+  background: url("/img/group_buy.svg") no-repeat 2px 16px;
 }
 .globalStock .alarmArea .alarmList li .group li.sell {
-  background: url("../../img/group_sell.svg") no-repeat 2px 16px;
+  background: url("/img/group_sell.svg") no-repeat 2px 16px;
 }
 .globalStock .alarmArea .alarmList li .group li b {
   position: relative;
@@ -20948,7 +20992,7 @@ table.tableRanking td {
 .globalStock .sub_alarm .alarm_note .list li.sum {
   font-size: 0.82rem;
   color: #333;
-  background: url("../../img/dot_blue.png") no-repeat 0 7px;
+  background: url("/img/dot_blue.png") no-repeat 0 7px;
   padding-left: 9px;
 }
 
@@ -21184,13 +21228,13 @@ table.tableRanking td {
 }
 
 .globalStock .sub_login .loign .sns li.sns_n a i {
-  background: url("../../img/icon_sns_n.svg") no-repeat left top;
+  background: url("/img/icon_sns_n.svg") no-repeat left top;
 }
 
 .globalStock .sub_login .loign .sns li.sns_K a i {
   top: 22px;
   left: calc(50% - 68px);
-  background: url("../../img/icon_sns_k.svg") no-repeat left top;
+  background: url("/img/icon_sns_k.svg") no-repeat left top;
 }
 
 .globalStock .sub_login .loign .sns li a,
@@ -21405,7 +21449,7 @@ table.tableRanking td {
   width: 16px;
   height: 16px;
   margin-right: 9px;
-  background: url("../../img/icon_agreecheck.svg") no-repeat 0 100%;
+  background: url("/img/icon_agreecheck.svg") no-repeat 0 100%;
   filter: grayscale(100%) opacity(30%);
 }
 .globalStock .sub_login .agree_area .agree_from .label.active .label_chk i {
@@ -21459,7 +21503,7 @@ table.tableRanking td {
   display: inline-block;
   width: 5px;
   height: 10px;
-  background: url("../../img/icon_moreRR.png") no-repeat 0 0;
+  background: url("/img/icon_moreRR.png") no-repeat 0 0;
   background-size: cover;
 }
 
@@ -21682,7 +21726,7 @@ table.tableRanking td {
 
 /* 로그인 - 가입완료 */
 .globalStock .sub_login .loign_com {
-  background: url("../../img/bg_loign_com.png") no-repeat 98% 17px;
+  background: url("/img/bg_loign_com.png") no-repeat 98% 17px;
   padding: 245px 15px 30px;
 }
 
@@ -21796,7 +21840,7 @@ table.tableRanking td {
 }
 
 .globalStock .sub_login .phone_regbox .txt {
-  background: url("../../img/dot_line.png") no-repeat 0 11px;
+  background: url("/img/dot_line.png") no-repeat 0 11px;
   padding-left: 10px;
   margin-top: 0;
   font-size: 0.9375rem;
@@ -21814,7 +21858,7 @@ table.tableRanking td {
   width: 12.5px;
   height: 15.5px;
   margin-right: 5px;
-  background: url("../../img/banner/icon_alarm2.png") no-repeat 0 0;
+  background: url("/img/banner/icon_alarm2.png") no-repeat 0 0;
   background-size: 12.5px 15.5px;
   position: relative;
   top: 2px;
@@ -21874,7 +21918,7 @@ table.tableRanking td {
   height: 6px;
   padding: 0 1px;
   margin-right: 3px;
-  background: url("../../img/more_Black.png") no-repeat 0 0;
+  background: url("/img/more_Black.png") no-repeat 0 0;
   background-size: 3px 6px;
   position: relative;
   top: -2px;
@@ -21887,7 +21931,7 @@ table.tableRanking td {
   display: inline-block;
   width: 5px;
   height: 10px;
-  background: url("../../img/icon_moreRR.png") no-repeat 0 0;
+  background: url("/img/icon_moreRR.png") no-repeat 0 0;
   background-size: cover;
 }
 
@@ -21964,7 +22008,7 @@ table.tableRanking td {
   display: inline-block;
   width: 14px;
   height: 14px;
-  background: url("../../img/bg_x.png") no-repeat 0 0;
+  background: url("/img/bg_x.png") no-repeat 0 0;
 }
 
 .globalStock .sub_login .loign_com .att_service.free_service .mapage_form .form_table td .i_dsc.phone {
@@ -22095,7 +22139,7 @@ table.tableRanking td {
   margin-right: 3px;
   position: relative;
   top: 2px;
-  background: url("../../img/icon_home_on.png") no-repeat center center;
+  background: url("/img/icon_home_on.png") no-repeat center center;
   background-size: 15px 14px;
 }
 
@@ -22238,11 +22282,11 @@ table.tableRanking td {
   display: inline-block;
   width: 14px;
   height: 14px;
-  background: url("../../img/bg_x.png") no-repeat 0 0;
+  background: url("/img/bg_x.png") no-repeat 0 0;
 }
 
 .globalStock .sub_login .mapage_area .mapage_form .form_table td .i_dsc.email i {
-  background: url("../../img/banner/Icon_preinfo.png") no-repeat 0 0;
+  background: url("/img/banner/Icon_preinfo.png") no-repeat 0 0;
   background-size: 14px 14px;
 }
 
@@ -22265,7 +22309,7 @@ table.tableRanking td {
 }
 
 .globalStock .sub_login .mapage_area .mapage_form .form_table td .i_dsc.phone_premium i {
-  background: url("../../img/banner/Icon_preinfo.png") no-repeat 0 0;
+  background: url("/img/banner/Icon_preinfo.png") no-repeat 0 0;
   background-size: 14px 14px;
 }
 
@@ -22412,7 +22456,7 @@ table.tableRanking td {
   display: inline-block;
   width: 6px;
   height: 10px;
-  background: url("../../img/more_Black.png") no-repeat 0 0;
+  background: url("/img/more_Black.png") no-repeat 0 0;
   background-size: 6px 10px;
   margin-left: 10px;
 }
@@ -22587,7 +22631,7 @@ table.tableRanking td {
 }
 
 .globalStock .sub_login .mapage_service_free .mid ul:last-child li {
-  background: url("../../img/dot_line.png") no-repeat 0 8px;
+  background: url("/img/dot_line.png") no-repeat 0 8px;
   padding-left: 8px;
   color: #333;
 }
@@ -22750,7 +22794,7 @@ table.tableRanking td {
 }
 
 .globalStock .pay_edt .form_table td .certification_area .txt {
-  background: url("../../img/dot_line.png") no-repeat 0 8px;
+  background: url("/img/dot_line.png") no-repeat 0 8px;
   padding-left: 8px;
   color: #939393;
   font-size: 0.84rem;
@@ -22783,7 +22827,7 @@ table.tableRanking td {
   display: inline-block;
   width: 14px;
   height: 14px;
-  background: url("../../img/icon_moreR.png") no-repeat 0 100%;
+  background: url("/img/icon_moreR.png") no-repeat 0 100%;
   background-size: auto;
   padding: 4px 3px;
   box-sizing: border-box;
@@ -22806,7 +22850,7 @@ table.tableRanking td {
   width: 16px;
   height: 16px;
   margin-right: 7px;
-  background: url("../../img/icon_agreecheck.svg") no-repeat 0 100%;
+  background: url("/img/icon_agreecheck.svg") no-repeat 0 100%;
   filter: grayscale(100%) opacity(30%);
 }
 
@@ -22860,7 +22904,7 @@ table.tableRanking td {
 }
 
 .globalStock .sub_login .notice_freetxt .title {
-  background: url("../../img/dot_line.png") no-repeat 0 8px;
+  background: url("/img/dot_line.png") no-repeat 0 8px;
   padding-left: 8px;
   color: #939393;
   font-size: 0.84rem;
@@ -22923,7 +22967,7 @@ table.tableRanking td {
 
 .globalStock .sub_login .mapage_area .btn_save {
   color: #404fc3;
-  background: #d8dbff url("../../img/more_white.png") no-repeat calc(100% - 15px) 50%;
+  background: #d8dbff url("/img/more_white.png") no-repeat calc(100% - 15px) 50%;
   border: 1px solid #d8dbff;
 }
 
@@ -23009,7 +23053,7 @@ table.tableRanking td {
 }
 
 .globalStock .sub_login .withdrawal_com .withdrawal_freetxt .title {
-  background: url("../../img/dot_line.png") no-repeat 0 8px;
+  background: url("/img/dot_line.png") no-repeat 0 8px;
   padding-left: 8px;
   color: #939393;
   font-size: 0.84rem;
@@ -23390,7 +23434,7 @@ table.tableRanking td {
   display: inline-block;
   width: 12px;
   height: 12px;
-  background: url("../../img/event_clse.png") no-repeat right 2px;
+  background: url("/img/event_clse.png") no-repeat right 2px;
   background-size: 10px 10px;
   vertical-align: top;
   padding-left: 5px;
@@ -23488,7 +23532,7 @@ table.tableRanking td {
   display: inline-block;
   width: 14px;
   height: 14px;
-  background: url("../../img/banner/Icon_info.png") no-repeat 0 0;
+  background: url("/img/banner/Icon_info.png") no-repeat 0 0;
   margin-bottom: 2px;
   margin-right: 3px;
   background-size: 14px 14px;
@@ -23591,7 +23635,7 @@ table.tableRanking td {
 }
 
 .globalStock.mint .main_mid.event_anay .area .analysis_score .chart_analysis .line .i_graph.graph_prm .g_action {
-  background-image: url("../../img/graph_prmB_mint.gif");
+  background-image: url("/img/graph_prmB_mint.gif");
 }
 
 .globalStock.mint .tab_area .tbas_lb.tabs_3 li a.active {
@@ -23724,7 +23768,7 @@ table.tableRanking td {
 }
 
 .globalStock.mint .sub_attract .sub_mid.attract_sub .weeks_free .box .title i {
-  background-image: url("../../img/Icon_lockB_mint.png");
+  background-image: url("/img/Icon_lockB_mint.png");
 }
 
 .globalStock.mint .sub_research .sub_mid.research_board .set span.active {
@@ -23762,7 +23806,7 @@ table.tableRanking td {
 }
 
 .globalStock.mint .sub_search .latest_results .tabsArea .weeks_free .box .title i {
-  background-image: url("../../img/Icon_lockB_mint.png");
+  background-image: url("/img/Icon_lockB_mint.png");
 }
 
 .globalStock.mint .sub_search .latest_results .tabsArea .weeks_free .box .title {
@@ -23782,7 +23826,7 @@ table.tableRanking td {
 }
 
 .globalStock.mint .sub_search .latest_results .tabsArea .onestep_sample .box .title i {
-  background-image: url("../../img/Icon_lockB_mint.png");
+  background-image: url("/img/Icon_lockB_mint.png");
 }
 
 .globalStock.mint .sub_search .latest_results .tabsArea .onestep_sample .box .title {
@@ -23812,7 +23856,7 @@ table.tableRanking td {
 }
 
 .globalStock.mint .gnb li.home.active i {
-  background-image: url("../../img/icon_home_on_mint.png");
+  background-image: url("/img/icon_home_on_mint.png");
 }
 
 .globalStock.mint .free_pop.md-modal #setting .pop_btm .btn_save {
@@ -23914,7 +23958,7 @@ table.tableRanking td {
 }
 
 .globalStock.mint .sub_search .sub_mid .tab_diagnosis_area .weeks_free .box .btn_free i {
-  background-image: url("../../img/more_Black.png");
+  background-image: url("/img/more_Black.png");
 }
 
 .globalStock.mint .sub_search .sub_mid.tabs_area .compet_chart_uses .title strong {
@@ -23934,7 +23978,7 @@ table.tableRanking td {
 }
 
 .globalStock.mint .sub_search .sub_mid.tabs_area > .weeks_free .box .btn_free i {
-  background-image: url("../../img/more_Black.png");
+  background-image: url("/img/more_Black.png");
 }
 
 .globalStock.mint .sub_search .sub_mid.tabs_area .alloca_info .term strong {
@@ -24049,7 +24093,7 @@ table.tableRanking td {
 }
 
 .globalStock.mint .sub_service .sub_top.service_t01 {
-  background: #404FC3 url("../../img/bg_service_alliance.png") no-repeat center bottom;
+  background: #404FC3 url("/img/bg_service_alliance.png") no-repeat center bottom;
   background-size: 342px auto;
 }
 
@@ -24165,7 +24209,7 @@ table.tableRanking td {
   font-size: 0.9rem;
   color: #404fc3;
   margin-right: 4px;
-  background: url("../../img/bg_bbline.png") repeat-x 0 calc(100% + 7px);
+  background: url("/img/bg_bbline.png") repeat-x 0 calc(100% + 7px);
 }
 
 .globalStock.mint .sub_service .sub_con .tips .txt {
@@ -24185,7 +24229,7 @@ table.tableRanking td {
 }
 
 .globalStock.mint .sub_service .sub_con .banner_cho {
-  background: #404fc3 url("../../img/bg_banner_cho.png") no-repeat left bottom;
+  background: #404fc3 url("/img/bg_banner_cho.png") no-repeat left bottom;
   background-size: auto 167px;
   padding: 30px 30px;
   text-align: right;
@@ -24200,7 +24244,7 @@ table.tableRanking td {
 .globalStock.mint .sub_service .sub_con .banner_cho .b_title strong {
   display: inline-block;
   color: #1ee8be;
-  background: url("../../img/bg_bline.png") repeat-x 0 calc(100% + 6px);
+  background: url("/img/bg_bline.png") repeat-x 0 calc(100% + 6px);
 }
 
 .globalStock.mint .sub_service .sub_con .banner_cho .link_cho {
@@ -24223,7 +24267,7 @@ table.tableRanking td {
   display: inline-block;
   width: 6px;
   height: 10px;
-  background: url("../../img/more_white.png") no-repeat 0 0;
+  background: url("/img/more_white.png") no-repeat 0 0;
   background-size: 6px 10px;
   margin-left: 10px;
 }
@@ -24594,7 +24638,7 @@ table.tableRanking td {
 
 .globalStock.red .sub_game .gameSwiper .swiper-button-next,
 .globalStock.red .sub_game .gameSwiper .swiper-button-prev {
-  background-image: url("../../img/swiper_btn_b.png");
+  background-image: url("/img/swiper_btn_b.png");
 }
 
 .globalStock.red .sub_attract .sub_mid.attract_sub .btn_schSet {
@@ -24732,7 +24776,7 @@ table.tableRanking td {
 
 .globalStock.red .sub_search .sub_mid.tabs_area > .weeks_free .box .btn_free i,
 .globalStock.red .sub_search .sub_mid .tab_diagnosis_area .weeks_free .box .btn_free i {
-  background: url("../../img/more_yel.png") no-repeat right 0;
+  background: url("/img/more_yel.png") no-repeat right 0;
   background-size: 6px 10px;
 }
 
@@ -24755,7 +24799,7 @@ table.tableRanking td {
 }
 
 .globalStock.red .sub_research .sub_mid.research_board .lst_type2.lst_lock dt.tit strong {
-  background: url("../../img/prm_tabsLock_red.png") no-repeat 0 2px;
+  background: url("/img/prm_tabsLock_red.png") no-repeat 0 2px;
   background-size: 12px 16px;
 }
 
@@ -24785,14 +24829,14 @@ table.tableRanking td {
 }
 
 .globalStock.red .sub_service .alliance_wrap .sub_con .banner_cho {
-  background: #E56468 url("../../img/px_bg_banner_cho.png") no-repeat left bottom;
+  background: #E56468 url("/img/px_bg_banner_cho.png") no-repeat left bottom;
   background-size: auto 167px;
 }
 
 .globalStock.red .sub_service .alliance_wrap .sub_con .banner_cho .b_title strong {
   display: inline-block;
   color: #FFFF00;
-  background: url("../../img/bg_rline.png") repeat-x 0 calc(100% + 6px);
+  background: url("/img/bg_rline.png") repeat-x 0 calc(100% + 6px);
 }
 
 .globalStock.red .sub_service .alliance_wrap .sub_con .banner_cho .link_cho {
@@ -24808,7 +24852,7 @@ table.tableRanking td {
   display: inline-block;
   width: 6px;
   height: 10px;
-  background: url("../../img/more_white.png") no-repeat 0 0;
+  background: url("/img/more_white.png") no-repeat 0 0;
   background-size: 6px 10px;
   margin-left: 10px;
 }
@@ -24862,7 +24906,7 @@ table.tableRanking td {
 }
 
 .globalStock .sub_service .alliance_wrap .sub_top.service_t01 {
-  background: #404FC3 url("../../img/bg_service_alliance.png") no-repeat center bottom;
+  background: #404FC3 url("/img/bg_service_alliance.png") no-repeat center bottom;
   background-size: 342px auto;
   position: relative;
 }
@@ -24906,7 +24950,7 @@ table.tableRanking td {
 }
 
 .globalStock.red .sub_service .alliance_wrap .sub_top.service_t01 {
-  background: #E56468 url("../../img/px_bg_service_alliance.png") no-repeat center bottom;
+  background: #E56468 url("/img/px_bg_service_alliance.png") no-repeat center bottom;
   background-size: 342px auto;
 }
 
@@ -25075,7 +25119,7 @@ table.tableRanking td {
   font-size: 0.9rem;
   color: #404fc3;
   margin-right: 4px;
-  background: url("../../img/bg_bbline.png") repeat-x 0 calc(100% + 7px);
+  background: url("/img/bg_bbline.png") repeat-x 0 calc(100% + 7px);
 }
 
 .globalStock .sub_service .alliance_wrap .sub_con .tips .txt {
@@ -25095,7 +25139,7 @@ table.tableRanking td {
 }
 
 .globalStock .sub_service .alliance_wrap .sub_con .banner_cho {
-  background: #404fc3 url("../../img/bg_banner_cho.png") no-repeat left bottom;
+  background: #404fc3 url("/img/bg_banner_cho.png") no-repeat left bottom;
   background-size: auto 167px;
   padding: 30px 30px;
   text-align: right;
@@ -25112,7 +25156,7 @@ table.tableRanking td {
   display: inline-block;
   font-weight: 500;
   color: #1ee8be;
-  background: url("../../img/bg_bline.png") repeat-x 0 calc(100% + 6px);
+  background: url("/img/bg_bline.png") repeat-x 0 calc(100% + 6px);
 }
 
 .globalStock .sub_service .alliance_wrap .sub_con .banner_cho .link_cho {
@@ -25138,7 +25182,7 @@ table.tableRanking td {
   display: inline-block;
   width: 6px;
   height: 10px;
-  background: url("../../img/more_white.png") no-repeat 0 0;
+  background: url("/img/more_white.png") no-repeat 0 0;
   background-size: 6px 10px;
   margin-left: 10px;
 }
@@ -25172,7 +25216,7 @@ table.tableRanking td {
   display: inline-block;
   width: 14px;
   height: 14px;
-  background: url("../../img/icon_nightalarm.png") no-repeat 0 0;
+  background: url("/img/icon_nightalarm.png") no-repeat 0 0;
   background-size: 14px 14px;
 }
 
@@ -25181,7 +25225,7 @@ table.tableRanking td {
 /******** (팍스넷) **********/
 /****************************/
 .globalStock .main_btm.banner_area .banner_1yearevent {
-  background: #404FC3 url("../../img/banner/bg_1yearevent.png") no-repeat calc(100% + 10px) bottom;
+  background: #404FC3 url("/img/banner/bg_1yearevent.png") no-repeat calc(100% + 10px) bottom;
   background-size: 59px 29px;
   border-radius: 5px;
   margin-top: 25px;
@@ -25196,7 +25240,7 @@ table.tableRanking td {
 
 .globalStock .main_btm.banner_area .banner_1yearevent .cho_prm i {
   display: inline-block;
-  background: url("../../img/Icon_lock.svg") no-repeat;
+  background: url("/img/Icon_lock.svg") no-repeat;
   width: 10px;
   height: 13px;
   background-size: 10px 13px;
@@ -25244,7 +25288,7 @@ table.tableRanking td {
 
 .globalStock .sub_recom .sub_mid.eventPicks_area .banner_1yearevent .cho_prm i {
   display: inline-block;
-  background: url("../../img/Icon_lock.svg") no-repeat;
+  background: url("/img/Icon_lock.svg") no-repeat;
   width: 10px;
   height: 13px;
   background-size: 10px 13px;
@@ -25290,7 +25334,7 @@ table.tableRanking td {
 
 .globalStock .sub_service .sub_mid .sub_con .banner_1yearevent .cho_prm i {
   display: inline-block;
-  background: url("../../img/Icon_lock.svg") no-repeat;
+  background: url("/img/Icon_lock.svg") no-repeat;
   width: 10px;
   height: 13px;
   background-size: 10px 13px;
@@ -25332,7 +25376,7 @@ table.tableRanking td {
 }
 
 .globalStock .sub_search .sub_mid .tab_diagnosis_area .weeks_free.event_900 .box {
-  background: #404fc3 url("../../img/banner/bg_1yearevent02.png") no-repeat right bottom;
+  background: #404fc3 url("/img/banner/bg_1yearevent02.png") no-repeat right bottom;
   background-size: 128px 70px;
 }
 
@@ -25352,7 +25396,7 @@ table.tableRanking td {
   display: inline-block;
   width: 6px;
   height: 10px;
-  background: url("../../img/more_white.png") no-repeat 0 0;
+  background: url("/img/more_white.png") no-repeat 0 0;
   background-size: 6px 10px;
   margin-left: 10px;
 }
@@ -25365,12 +25409,12 @@ table.tableRanking td {
   display: inline-block;
   width: 33px;
   height: 13px;
-  background: url("../../img/banner/img_y_box.png") no-repeat 0 0;
+  background: url("/img/banner/img_y_box.png") no-repeat 0 0;
   background-size: 33px 13px;
 }
 
 .globalStock .sub_attract .sub_mid.attract_sub .weeks_free.event_900 .box {
-  background: #404fc3 url("../../img/banner/bg_1yearevent02.png") no-repeat right bottom;
+  background: #404fc3 url("/img/banner/bg_1yearevent02.png") no-repeat right bottom;
   background-size: 128px 70px;
 }
 
@@ -25384,7 +25428,7 @@ table.tableRanking td {
   display: inline-block;
   width: 10px;
   height: 13px;
-  background: url("../../img/Icon_lockF.png") no-repeat 0 0;
+  background: url("/img/Icon_lockF.png") no-repeat 0 0;
   background-size: 10px 13px;
   margin-right: 3px;
 }
@@ -25414,7 +25458,7 @@ table.tableRanking td {
   display: inline-block;
   width: 6px;
   height: 10px;
-  background: url("../../img/more_white.png") no-repeat 0 0;
+  background: url("/img/more_white.png") no-repeat 0 0;
   background-size: 6px 10px;
   margin-left: 10px;
 }
@@ -25427,12 +25471,12 @@ table.tableRanking td {
   display: inline-block;
   width: 33px;
   height: 13px;
-  background: url("../../img/banner/img_y_box.png") no-repeat 0 0;
+  background: url("/img/banner/img_y_box.png") no-repeat 0 0;
   background-size: 33px 13px;
 }
 
 .globalStock .sub_service .sub_mid .sub_con .weeks_free.event_900 .box {
-  background: #404fc3 url("../../img/banner/bg_1yearevent03.png") no-repeat right bottom;
+  background: #404fc3 url("/img/banner/bg_1yearevent03.png") no-repeat right bottom;
   background-size: 106px 142px;
   padding: 25px 22px;
 }
@@ -25475,7 +25519,7 @@ table.tableRanking td {
   display: inline-block;
   width: 6px;
   height: 10px;
-  background: url("../../img/more_white.png") no-repeat 0 0;
+  background: url("/img/more_white.png") no-repeat 0 0;
   background-size: 6px 10px;
   margin-left: 10px;
 }
@@ -25488,12 +25532,12 @@ table.tableRanking td {
   display: inline-block;
   width: 33px;
   height: 13px;
-  background: url("../../img/banner/img_y_box.png") no-repeat 0 0;
+  background: url("/img/banner/img_y_box.png") no-repeat 0 0;
   background-size: 33px 13px;
 }
 
 .globalStock .sub_search .sub_mid.tabs_area > .weeks_free.event_900 .box {
-  background: #404fc3 url("../../img/banner/bg_1yearevent02.png") no-repeat right bottom;
+  background: #404fc3 url("/img/banner/bg_1yearevent02.png") no-repeat right bottom;
   background-size: 128px 70px;
 }
 
@@ -25513,7 +25557,7 @@ table.tableRanking td {
   display: inline-block;
   width: 6px;
   height: 10px;
-  background: url("../../img/more_white.png") no-repeat 0 0;
+  background: url("/img/more_white.png") no-repeat 0 0;
   background-size: 6px 10px;
   margin-left: 10px;
 }
@@ -25526,12 +25570,12 @@ table.tableRanking td {
   display: inline-block;
   width: 33px;
   height: 13px;
-  background: url("../../img/banner/img_y_box.png") no-repeat 0 0;
+  background: url("/img/banner/img_y_box.png") no-repeat 0 0;
   background-size: 33px 13px;
 }
 
 .globalStock .sub_search .latest_results .tabsArea .weeks_free.event_900 .box {
-  background: #404fc3 url("../../img/banner/bg_1yearevent02.png") no-repeat right bottom;
+  background: #404fc3 url("/img/banner/bg_1yearevent02.png") no-repeat right bottom;
   background-size: 128px 70px;
 }
 
@@ -25545,7 +25589,7 @@ table.tableRanking td {
   display: inline-block;
   width: 10px;
   height: 13px;
-  background: url("../../img/Icon_lockF.png") no-repeat 0 0;
+  background: url("/img/Icon_lockF.png") no-repeat 0 0;
   background-size: 10px 13px;
   margin-right: 3px;
 }
@@ -25575,7 +25619,7 @@ table.tableRanking td {
   display: inline-block;
   width: 6px;
   height: 10px;
-  background: url("../../img/more_white.png") no-repeat 0 0;
+  background: url("/img/more_white.png") no-repeat 0 0;
   background-size: 6px 10px;
   margin-left: 10px;
 }
@@ -25588,12 +25632,12 @@ table.tableRanking td {
   display: inline-block;
   width: 33px;
   height: 13px;
-  background: url("../../img/banner/img_y_box.png") no-repeat 0 0;
+  background: url("/img/banner/img_y_box.png") no-repeat 0 0;
   background-size: 33px 13px;
 }
 
 .globalStock .catch_wrap .weeks_free.event_900 .box {
-  background: #e6e7f4 url("../../img/banner/bg_1yearevent03.png") no-repeat right bottom;
+  background: #e6e7f4 url("/img/banner/bg_1yearevent03.png") no-repeat right bottom;
   background-size: 106px 142px;
 }
 
@@ -25614,7 +25658,7 @@ table.tableRanking td {
   display: inline-block;
   width: 6px;
   height: 10px;
-  background: url("../../img/more_white.png") no-repeat 0 0;
+  background: url("/img/more_white.png") no-repeat 0 0;
   background-size: 6px 10px;
   margin-left: 10px;
 }
@@ -25627,7 +25671,7 @@ table.tableRanking td {
   display: inline-block;
   width: 33px;
   height: 13px;
-  background: url("../../img/banner/img_y_box.png") no-repeat 0 0;
+  background: url("/img/banner/img_y_box.png") no-repeat 0 0;
   background-size: 33px 13px;
 }
 
@@ -26209,19 +26253,19 @@ table.tableRanking td {
 
 .globalStock.kiwoom .sub_search .tabs_5.prm_tabs li:nth-child(4) {
   padding: 0 2px;
-  background: url("../../img/prm_tabsLock.svg") no-repeat calc(100% - 3px) center;
+  background: url("/img/prm_tabsLock.svg") no-repeat calc(100% - 3px) center;
   background-size: 8px auto;
 }
 
 @media (min-width: 320px) and (max-width: 358px) {
   .globalStock.kiwoom .sub_search .tabs_5.prm_tabs li:nth-child(4) {
-    background: url("../../img/prm_tabsLock.svg") no-repeat calc(100% - 0px) center;
+    background: url("/img/prm_tabsLock.svg") no-repeat calc(100% - 0px) center;
     background-size: 8px auto;
   }
 }
 .globalStock.kiwoom .sub_search .tabs_5.prm_tabs li:nth-child(5) {
   padding: 0 6px;
-  background: url("../../img/prm_tabsLock.svg") no-repeat calc(100% - 6px) center;
+  background: url("/img/prm_tabsLock.svg") no-repeat calc(100% - 6px) center;
   background-size: 8px auto;
 }
 
@@ -26485,7 +26529,7 @@ table.tableRanking td {
   display: inline-block;
   width: 5px;
   height: 10px;
-  background: url("../../img/icon_moreRR.png") no-repeat 0 0;
+  background: url("/img/icon_moreRR.png") no-repeat 0 0;
   background-size: cover;
 }
 
@@ -27528,7 +27572,7 @@ table.tableRanking td {
   padding-right: 10px;
   width: 12px;
   height: 12px;
-  background: url("../../img/icon_awesome.svg") no-repeat center center;
+  background: url("/img/icon_awesome.svg") no-repeat center center;
 }
 
 .globalStock .sub_search .sub_mid.adequateArea .listWrap .latest_signal .num,
@@ -27559,20 +27603,20 @@ table.tableRanking td {
   gap: 7px;
   justify-content: center;
   align-items: center;
-  background: url("../../img/bg_bbline.png") repeat-x 0 calc(100% + 8px);
+  background: url("/img/bg_bbline.png") repeat-x 0 calc(100% + 8px);
 }
 
 .globalStock .sub_search .sub_mid.adequateArea + .table_btmarea a.more i {
   display: inline-block;
   width: 5px;
   height: 10px;
-  background: url("../../img/icon_moreR.png") no-repeat center center;
+  background: url("/img/icon_moreR.png") no-repeat center center;
   background-size: cover;
 }
 
 .globalStock .sub_search .sub_mid.adequateArea .premiumLock_area {
   margin-top: 10px;
-  background: var(--colbar) url("../../img/premiumLock_area.png") no-repeat 0 0;
+  background: var(--colbar) url("/img/premiumLock_area.png") no-repeat 0 0;
   background-size: cover;
 }
 
@@ -27745,7 +27789,7 @@ table.tableRanking td {
 
 .premium_applybtn i {
   display: inline-block;
-  background: url("../../img/Icon_lock.svg") no-repeat;
+  background: url("/img/Icon_lock.svg") no-repeat;
   width: 12px;
   height: 15px;
   background-size: cover;
@@ -27840,7 +27884,7 @@ table.tableRanking td {
   font-size: 0.75rem;
   font-weight: bold;
   color: #8c90ad;
-  background: url("../../img/more_blue.svg") no-repeat right center;
+  background: url("/img/more_blue.svg") no-repeat right center;
 }
 
 .globalStock .sub_search .sub_mid.outline_box .box .title .txt_guide {
@@ -27957,7 +28001,7 @@ table.tableRanking td {
   vertical-align: top;
   width: 24px;
   height: 25px;
-  background: url("../../img/game_trans.svg") no-repeat 0 0;
+  background: url("/img/game_trans.svg") no-repeat 0 0;
   background-size: 114px 24px;
 }
 
@@ -28052,7 +28096,7 @@ table.tableRanking td {
   line-height: 1.18;
   color: #f9db4c;
   text-align: center;
-  background: #404fc3 url("../../img/more_yel.svg") no-repeat calc(100% - 10px) center;
+  background: #404fc3 url("/img/more_yel.svg") no-repeat calc(100% - 10px) center;
   background-size: 5px 8px;
 }
 
@@ -28065,7 +28109,7 @@ table.tableRanking td {
   width: 10px;
   height: 13px;
   margin-right: 4px;
-  background: url("../../img/Icon_lock.svg") no-repeat 0 0;
+  background: url("/img/Icon_lock.svg") no-repeat 0 0;
   background-size: 10px 13px;
 }
 
@@ -28288,7 +28332,7 @@ table.tableRanking td {
 
 .globalStock .sub_search .sub_mid.outline_box .box .event_attractiveness {
   width: 100%;
-  background: url("../../img/bg_event_attractiveness.svg") no-repeat 9px center;
+  background: url("/img/bg_event_attractiveness.svg") no-repeat 9px center;
 }
 
 .globalStock .sub_search .sub_mid.outline_box .box .event_attractiveness ul {
@@ -28311,7 +28355,7 @@ table.tableRanking td {
 .globalStock .sub_search .sub_mid.outline_box .box .event_attractiveness li.att_on {
   padding: 0 2px;
   color: #404fc3;
-  background: url("../../img/bg_bbline.png") repeat-x 0 calc(100% + 8px);
+  background: url("/img/bg_bbline.png") repeat-x 0 calc(100% + 8px);
 }
 
 .globalStock .sub_search .sub_mid.outline_box .box .event_attractiveness li.att_on a {
@@ -29180,7 +29224,7 @@ table.tableRanking td {
 
 .globalStock .sub_search .sub_mid .adequate_stock .box .adequate_price .nodata_area .banner_prm .cho_prm i {
   display: inline-block;
-  background: url("../../img/Icon_lock.svg") no-repeat;
+  background: url("/img/Icon_lock.svg") no-repeat;
   width: 10px;
   height: 13px;
   background-size: 10px 13px;
@@ -29331,7 +29375,7 @@ table.tableRanking td {
   top: 3px;
   width: 12px;
   height: 12px;
-  background: url("../../img/icon_awesome.svg") no-repeat center center;
+  background: url("/img/icon_awesome.svg") no-repeat center center;
 }
 
 .globalStock .sub_search .sub_mid .bandchart_more .more {
@@ -29404,7 +29448,7 @@ table.tableRanking td {
   top: 3px;
   width: 12px;
   height: 12px;
-  background: url("../../img/icon_awesome.svg") no-repeat center center;
+  background: url("/img/icon_awesome.svg") no-repeat center center;
 }
 
 .globalStock .sub_search .sub_mid .bandchart_sume .box {
@@ -29469,7 +29513,7 @@ table.tableRanking td {
   display: inline-block;
   width: 15px;
   height: 12px;
-  background: url("../../img/icon_youtube.svg") no-repeat center center;
+  background: url("/img/icon_youtube.svg") no-repeat center center;
   margin-right: 8px;
 }
 
@@ -29508,7 +29552,7 @@ table.tableRanking td {
 
 .globalStock .sub_search .sub_mid .eventsum_area .freeChare {
   position: relative;
-  background: url("../../img/bandChart_free.jpg") no-repeat 0 0;
+  background: url("/img/bandChart_free.jpg") no-repeat 0 0;
   aspect-ratio: 1.824;
   background-size: 100% 100%;
   width: 100%;
@@ -29558,7 +29602,7 @@ table.tableRanking td {
   display: inline-block;
   width: 10px;
   height: 13px;
-  background: url("../../img/Icon_lockF.png") no-repeat 0 0;
+  background: url("/img/Icon_lockF.png") no-repeat 0 0;
   background-size: 10px 13px;
   margin-right: 3px;
 }
@@ -29596,7 +29640,7 @@ table.tableRanking td {
   display: inline-block;
   width: 6px;
   height: 10px;
-  background: url("../../img/more_blue.png") no-repeat 0 0;
+  background: url("/img/more_blue.png") no-repeat 0 0;
   background-size: 6px 10px;
   margin-left: 10px;
 }
@@ -29655,7 +29699,7 @@ table.tableRanking td {
 .globalStock .sub_search .sub_mid.research_board .news_no_data {
   margin: 20px 15px 0;
   border-radius: 20px;
-  background: #f7f8f9 url("../../img/bg_nodata.png") no-repeat center 70px;
+  background: #f7f8f9 url("/img/bg_nodata.png") no-repeat center 70px;
   box-sizing: border-box;
   padding-top: 240px;
   padding-bottom: 15px;
@@ -29748,7 +29792,7 @@ table.tableRanking td {
 
 .globalStock .sub_search .sub_mid.research_board .lst_type2.lst_lock dt.tit strong {
   padding-left: 20px;
-  background: url("../../img/prm_tabsLock.svg") no-repeat 0 center;
+  background: url("/img/prm_tabsLock.svg") no-repeat 0 center;
   background-size: 11px auto;
   word-break: break-all;
 }
@@ -29807,7 +29851,7 @@ table.tableRanking td {
   display: inline-block;
   width: 80px;
   height: 71px;
-  background: #fff url("../../img/noimg.png") no-repeat center center;
+  background: #fff url("/img/noimg.png") no-repeat center center;
   background-size: cover;
   border: 1px solid #E0E4E9;
   border-radius: 10px;
@@ -29908,15 +29952,15 @@ table.tableRanking td {
     background-position: 1 100%;
   }
   .globalStock .sub_service .sub_top.service_t01 {
-    background: #fff url("../../img/bg_service.png") no-repeat right bottom;
+    background: #fff url("/img/bg_service.png") no-repeat right bottom;
     background-size: 202px 148px;
   }
   .globalStock .sub_service .sub_top.service_t03 {
-    background: #fff url("../../img/bg_service_3.png") no-repeat right bottom;
+    background: #fff url("/img/bg_service_3.png") no-repeat right bottom;
     background-size: 235px 175px;
   }
   .globalStock .sub_service .sub_top.service_t02 {
-    background: #404fc3 url("../../img/bg_service_2.png") no-repeat right bottom;
+    background: #404fc3 url("/img/bg_service_2.png") no-repeat right bottom;
     background-size: 172px 196px;
   }
   .globalStock .sub_recipe .sub_mid.recipe_tabs .box_tabs ul {
@@ -29961,7 +30005,7 @@ table.tableRanking td {
     display: inline-block;
   }
   .globalStock .sub_search .sub_mid .adequate_stock .box .con .value_chart .prm_lock span {
-    background: #404fc3 url("../../img/more_yel.svg") no-repeat 95% center;
+    background: #404fc3 url("/img/more_yel.svg") no-repeat 95% center;
     background-size: 5px 8px;
   }
 }
@@ -30170,7 +30214,7 @@ table.tableRanking td {
   padding-top: 35px;
   padding-bottom: 25px;
   /* background: url('/img/bg_free_2weeks.svg') no-repeat right 17px; 프리미엄 무료체험 */
-  background: url("../../img/recipe_today.png") no-repeat 90% 50%;
+  background: url("/img/recipe_today.png") no-repeat 90% 50%;
   /* 오늘의 매매신호 */
   background-size: auto 91px;
 }
@@ -30188,7 +30232,7 @@ table.tableRanking td {
 .free_2weeks .content .info_txt .txt01 strong {
   display: inline;
   color: #404fc3;
-  background: url("../../img/bg_blue_line.gif") repeat-x right bottom;
+  background: url("/img/bg_blue_line.gif") repeat-x right bottom;
 }
 
 .free_2weeks .content .info_txt .txt02 {
@@ -30224,7 +30268,7 @@ table.tableRanking td {
 }
 
 .free_2weeks.signalpop .content .info_txt {
-  background-image: url("../../img/signalpop_bg.jpg");
+  background-image: url("/img/signalpop_bg.jpg");
   background-size: 120px auto;
   background-position: right 55%;
 }
@@ -30302,7 +30346,7 @@ table.tableRanking td {
 }
 
 .free_2weeks.valueChart .content .info_txt {
-  background: url("../../img/banner/bg_2w_valueChart.png") no-repeat right 36px;
+  background: url("/img/banner/bg_2w_valueChart.png") no-repeat right 36px;
   background-size: 109px auto;
 }
 
@@ -31080,7 +31124,7 @@ table.tableRanking td {
 }
 
 .v_signalStreng.globalStock .sub_payment .serviceStep.step01 .page_sumtop {
-  background: #3442ab url("../../img/bg_wallet.svg") no-repeat calc(100% - 22px) center;
+  background: #3442ab url("/img/bg_wallet.svg") no-repeat calc(100% - 22px) center;
   background-size: auto 68px;
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
@@ -31119,7 +31163,7 @@ table.tableRanking td {
   bottom: -16px;
   height: 16px;
   width: 100%;
-  background: url("../../img/step_wrap_bg.png") repeat-x center top;
+  background: url("/img/step_wrap_bg.png") repeat-x center top;
   background-size: auto 8px;
 }
 
@@ -31318,11 +31362,11 @@ table.tableRanking td {
   display: inline-block;
   width: 30px;
   height: 30px;
-  background: url("../../img/method_card.svg") no-repeat center center;
+  background: url("/img/method_card.svg") no-repeat center center;
 }
 
 .v_signalStreng.globalStock #wrap .modal.method .method_cho a.method_card:active:before {
-  background: url("../../img/method_card_on.svg") no-repeat center center;
+  background: url("/img/method_card_on.svg") no-repeat center center;
 }
 
 .v_signalStreng.globalStock #wrap .modal.method .method_cho a.method_phone::before {
@@ -31330,11 +31374,11 @@ table.tableRanking td {
   display: inline-block;
   width: 30px;
   height: 30px;
-  background: url("../../img/method_card.svg") no-repeat center center;
+  background: url("/img/method_card.svg") no-repeat center center;
 }
 
 .v_signalStreng.globalStock #wrap .modal.method .method_cho a.method_phone:active:before {
-  background: url("../../img/method_card_on.svg") no-repeat center center;
+  background: url("/img/method_card_on.svg") no-repeat center center;
 }
 
 .v_signalStreng.globalStock #wrap .modal.method .method_cho .guide_txt {
@@ -31728,7 +31772,7 @@ table.tableRanking td {
   display: inline-block;
   width: 12px;
   height: 12px;
-  background: url("../../img/error_msg.svg") no-repeat center center;
+  background: url("/img/error_msg.svg") no-repeat center center;
   border-radius: 50%;
   margin-right: 4px;
 }
@@ -31881,13 +31925,13 @@ table.tableRanking td {
   height: 24px;
   line-height: 24px;
   border-radius: 50%;
-  background: url("../../img/checked.svg") no-repeat center 5px;
+  background: url("/img/checked.svg") no-repeat center 5px;
 }
 
 .v_signalStreng.globalStock .sub_payment input.chk_label:checked + label:before {
   content: "";
   border-color: #c4c8cb;
-  background: url("../../img/checked_ch.svg") no-repeat center 5px;
+  background: url("/img/checked_ch.svg") no-repeat center 5px;
 }
 
 .v_signalStreng.globalStock .sub_payment .payment_note .top .s_txt {
@@ -31903,7 +31947,7 @@ table.tableRanking td {
 
 .v_signalStreng.globalStock .sub_payment .payment_note .top input.chk_label:checked + label:before {
   background-color: #404fc3;
-  background-image: url("../../img/checked.svg");
+  background-image: url("/img/checked.svg");
 }
 
 .v_signalStreng.globalStock .sub_payment .payment_note .top input + label:before {
@@ -32120,11 +32164,11 @@ table.tableRanking td {
   line-height: 24px;
   border-radius: 50%;
   border: 1px solid #c4c8cb;
-  background: url("../../img/checked.svg") no-repeat center center;
+  background: url("/img/checked.svg") no-repeat center center;
 }
 .v_signalStreng.globalStock #wrap .modal.cardBox.card_overseas_01 input.chk_label:checked + label:before {
   background-color: #404fc3;
-  background-image: url("../../img/checked.svg");
+  background-image: url("/img/checked.svg");
 }
 .v_signalStreng.globalStock #wrap .modal.cardBox.card_overseas_01 .agree_chk {
   display: flex;
@@ -32141,7 +32185,7 @@ table.tableRanking td {
 .v_signalStreng.globalStock #wrap .modal.cardBox.card_overseas_01 .agree_chk input:checked + label:before {
   content: "";
   border-color: transparent;
-  background: url("../../img/checked_ch.svg") no-repeat center 5px;
+  background: url("/img/checked_ch.svg") no-repeat center 5px;
 }
 .v_signalStreng.globalStock #wrap .modal.cardBox.card_overseas_01 .agree_chk .s_txt {
   display: inline-block;
@@ -32227,7 +32271,7 @@ table.tableRanking td {
   display: inline-block;
   width: 16px;
   height: 16px;
-  background: url("../../img/txt_guide_blue.svg") no-repeat center center;
+  background: url("/img/txt_guide_blue.svg") no-repeat center center;
 }
 
 .v_signalStreng.globalStock #wrap .modal.cardBox .pop_con {
@@ -32734,7 +32778,7 @@ body.v_signalStreng {
   top: 2px;
   width: 16px;
   height: 16px;
-  background: url("../../img/heart_attention.svg") no-repeat 0 4px;
+  background: url("/img/heart_attention.svg") no-repeat 0 4px;
   margin-right: 5px;
   background-size: 16px 32px;
 }
@@ -32760,7 +32804,7 @@ body.v_signalStreng {
   left: 0;
   right: 0;
   width: 100%;
-  z-index: 9999;
+  z-index: 9998;
   background-color: #404fc3;
   margin: 0;
   padding: 19px 17px;
@@ -33015,7 +33059,7 @@ body.v_signalStreng {
   display: inline-block;
   width: 16px;
   height: 16px;
-  background: url("../../img/icon_awesome_us.svg") no-repeat center center;
+  background: url("/img/icon_awesome_us.svg") no-repeat center center;
   position: relative;
   top: -2px;
 }
@@ -33784,7 +33828,7 @@ body.v_signalStreng {
 
 .v_signalStreng.globalStock #wrap #container .mainBox.financials .area_note .note_list #btn_free_list .note_nm,
 .v_signalStreng.globalStock #wrap #container .mainBox.financials .area_note .note_list .freeView_list .note_nm {
-  background: url("../../img/lokimg.svg") no-repeat 0 2px;
+  background: url("/img/lokimg.svg") no-repeat 0 2px;
   background-size: 12px;
 }
 
@@ -34410,31 +34454,31 @@ body.v_signalStreng {
 }
 
 .globalStock .gnb .list li.home a::before {
-  background: url("../../img/home_on.svg") no-repeat center center;
+  background: url("/img/home_on.svg") no-repeat center center;
 }
 
 .globalStock .gnb .list li.sch a::before {
-  background: url("../../img/sch_on.svg") no-repeat center center;
+  background: url("/img/sch_on.svg") no-repeat center center;
 }
 
 .globalStock .gnb .list li.stock a::before {
-  background: url("../../img/stock_on.svg") no-repeat center center;
+  background: url("/img/stock_on.svg") no-repeat center center;
 }
 
 .globalStock .gnb .list li.excavation a::before {
-  background: url("../../img/excavation_on.svg") no-repeat center center;
+  background: url("/img/excavation_on.svg") no-repeat center center;
 }
 
 .globalStock .gnb .list li.attention a::before {
-  background: url("../../img/attention_on.svg") no-repeat center center;
+  background: url("/img/attention_on.svg") no-repeat center center;
 }
 
 .globalStock .gnb .list li.menu a::before {
-  background: url("../../img/icon_menu.svg") no-repeat center center;
+  background: url("/img/icon_menu.svg") no-repeat center center;
 }
 
 .globalStock .gnb .list li.menu a::before {
-  background: url("../../img/icon_menu_on.svg") no-repeat center center;
+  background: url("/img/icon_menu_on.svg") no-repeat center center;
 }
 
 .v_signalStreng.globalStock .updata_allList {
@@ -34650,7 +34694,7 @@ body.v_signalStreng {
   top: 3px;
   width: 12px;
   height: 12px;
-  background: url("../../img/icon_awesome.svg") no-repeat center center;
+  background: url("/img/icon_awesome.svg") no-repeat center center;
 }
 
 .v_signalStreng.globalStock .sub_recom .bandchart_sume .box.info p a.more {
@@ -34826,7 +34870,7 @@ body.v_signalStreng {
   padding-bottom: 20px;
   width: 100%;
   height: auto;
-  background: #f7f8f9 url("../../img/bg_nodata.png") no-repeat center 50px;
+  background: #f7f8f9 url("/img/bg_nodata.png") no-repeat center 50px;
 }
 
 .v_signalStreng.globalStock .sub_game .sub_top .txt_box {
@@ -34965,7 +35009,7 @@ body.v_signalStreng {
 }
 
 .v_signalStreng.globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .recipe_area .area .logo_list#btn_free .title_logo .logo, .modal.att_pop .recipe_area .v_signalStreng.globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .area.rocket .area .logo_list#btn_free .title_logo .logo, .v_signalStreng.globalStock .sub_recipe.new_recipe .recipe_area .sub_recom.sub_recipe .sub_mid.recipe_view .area.rocket .area .logo_list#btn_free .title_logo .logo {
-  background: #fff url("../../img/signal_prm.svg") no-repeat center center;
+  background: #fff url("/img/signal_prm.svg") no-repeat center center;
   background-size: 70%;
 }
 
@@ -35489,7 +35533,7 @@ body.v_signalStreng {
   padding: 0;
   height: 270px;
   background: none;
-  background: url("../../img/monthly_payment.svg") no-repeat center 30px;
+  background: url("/img/monthly_payment.svg") no-repeat center 30px;
 }
 .v_signalStreng.globalStock .signalpop.monthly_payment .content .info_txt p {
   text-align: center;
@@ -35550,7 +35594,7 @@ body.v_signalStreng {
   text-align: center;
   padding: 0;
   height: 270px;
-  background: url("../../img/banner/event_mainBtm_240115.png") no-repeat center 0;
+  background: url("/img/banner/event_mainBtm_240115.png") no-repeat center 0;
   background-size: contain;
 }
 .v_signalStreng.globalStock .signalpop.event2024_payment .content .info_txt p {
@@ -35591,7 +35635,7 @@ body.v_signalStreng {
 }
 
 .v_signalStreng.globalStock .signalpop.event2024_payment .content {
-  background: #fff url("../../img/signalpop_sdwbg.png") repeat-x left bottom;
+  background: #fff url("/img/signalpop_sdwbg.png") repeat-x left bottom;
   background-size: contain;
 }
 .v_signalStreng.globalStock .signalpop.event2024_payment .content .info_txt {
@@ -35600,7 +35644,7 @@ body.v_signalStreng {
   margin: 0 auto;
   max-width: 300px;
   height: 270px;
-  background: url("../../img/banner/event_mainBtm_240123.png") no-repeat center 0;
+  background: url("/img/banner/event_mainBtm_240123.png") no-repeat center 0;
   background-size: cover !important;
 }
 @media (min-width: 320px) and (max-width: 358px) {
@@ -35697,7 +35741,7 @@ body.v_signalStreng {
 }
 
 .v_signalStreng.globalStock .free_2weeks .signalpop.event2024_payment .content {
-  background: #fff url("../../img/signalpop_sdwbg.png") repeat-x left bottom;
+  background: #fff url("/img/signalpop_sdwbg.png") repeat-x left bottom;
   background-size: contain;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
@@ -35806,7 +35850,7 @@ body.v_signalStreng {
   top: 3px;
   width: 12px;
   height: 12px;
-  background: url("../../img/icon_awesome.svg") no-repeat center center;
+  background: url("/img/icon_awesome.svg") no-repeat center center;
 }
 
 .v_signalStreng.globalStock .modal.bandchart_sume .box.info p a.more {
@@ -36017,7 +36061,7 @@ body.v_signalStreng {
   display: inline-block;
   width: 12px;
   height: 12px;
-  background: url("../../img/icon_schSet.svg") no-repeat center center;
+  background: url("/img/icon_schSet.svg") no-repeat center center;
   background-size: contain;
   position: relative;
   top: -1px;
@@ -36088,7 +36132,7 @@ body.v_signalStreng {
 .filter_nodata {
   margin: 20px 0 0;
   border-radius: 20px;
-  background: #f7f8f9 url("../../img/bg_nodata.png") no-repeat center 50px;
+  background: #f7f8f9 url("/img/bg_nodata.png") no-repeat center 50px;
   box-sizing: border-box;
   padding-top: 240px;
   padding-bottom: 15px;
@@ -36378,6 +36422,40 @@ body.v_signalStreng {
   box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.44);
   background-color: #fff;
   display: none;
+}
+.modal.fullpage {
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  width: 100%;
+  height: 100%;
+  max-width: 767px !important;
+  margin: 0 auto !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+  overflow: auto;
+  box-shadow: none;
+  background-color: #fff;
+  box-sizing: border-box;
+  z-index: 9999;
+}
+.modal.fullpage .pop_header {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  background: none;
+  box-shadow: none;
+  display: flex;
+  height: 56px;
+  width: 100%;
+  padding: 16px 20px;
+  box-sizing: border-box;
+}
+.modal.fullpage .pop_con {
+  padding: 0;
 }
 
 .blocker {
@@ -37000,7 +37078,7 @@ body.v_signalStreng {
   content: "";
   width: 16px;
   height: 16px;
-  background: url("../../img/icon_checkmark.png") no-repeat 100% 0;
+  background: url("/img/icon_checkmark.png") no-repeat 100% 0;
   position: absolute;
   right: 6px;
   top: 6px;
@@ -37040,7 +37118,7 @@ body.v_signalStreng {
   display: inline-block;
   width: 5px;
   height: 10px;
-  background: url("../../img/icon_moreL.png") no-repeat 0 0;
+  background: url("/img/icon_moreL.png") no-repeat 0 0;
   background-size: cover;
 }
 
@@ -37051,7 +37129,7 @@ body.v_signalStreng {
   display: inline-block;
   width: 5px;
   height: 10px;
-  background: url("../../img/icon_moreRR.png") no-repeat 0 0;
+  background: url("/img/icon_moreRR.png") no-repeat 0 0;
   background-size: cover;
 }
 
@@ -37884,7 +37962,7 @@ body.v_signalStreng {
   color: #404fc3;
 }
 .globalStock .first_month_3300.md-modal #setting .pop_con {
-  background: #161c40 url("../../img/first_month_3300.svg") no-repeat center top;
+  background: #161c40 url("/img/first_month_3300.svg") no-repeat center top;
 }
 .globalStock .first_month_3300.md-modal #setting .pop_con ul {
   display: flex;
@@ -38150,7 +38228,7 @@ body.v_signalStreng {
   color: #404fc3;
 }
 .modal.premium_login_guide .pop_con {
-  background: #161c40 url("../../img/first_month_3300.svg") no-repeat center top;
+  background: #161c40 url("/img/first_month_3300.svg") no-repeat center top;
   padding-bottom: 20px;
 }
 .modal.premium_login_guide .pop_con ul {
@@ -38471,7 +38549,7 @@ body.v_signalStreng {
   height: 20px;
   line-height: 20px;
   border-radius: 4px;
-  background: #D9DCDF url("../../img/checked_wh.svg") no-repeat center center;
+  background: #D9DCDF url("/img/checked_wh.svg") no-repeat center center;
 }
 .modal.att_pop .pop_con input[type=checkbox].fav_checkbox:checked + label:before {
   background-color: #404FC3;
@@ -38486,7 +38564,7 @@ body.v_signalStreng {
   height: 20px;
   line-height: 20px;
   border-radius: 50%;
-  background: #D9DCDF url("../../img/checked_wh.svg") no-repeat center center;
+  background: #D9DCDF url("/img/checked_wh.svg") no-repeat center center;
 }
 .modal.att_pop .pop_con input[type=radio].fav_checkbox:checked + label:before {
   background-color: #404FC3;
@@ -38515,7 +38593,7 @@ body.v_signalStreng {
   padding: 0 16px 14px 8px;
 }
 .modal.att_pop .recipe_area .area .stock_info#btn_free .title_logo .logo, .v_signalStreng.globalStock .sub_recipe.new_recipe .recipe_area .modal.att_pop .area.rocket .area .stock_info#btn_free .title_logo .logo {
-  background: #F5F5F9 url("../../img/signal_prm.svg") no-repeat center center;
+  background: #F5F5F9 url("/img/signal_prm.svg") no-repeat center center;
   background-size: 64%;
 }
 .modal.att_pop .recipe_area .area .stock_info .title_logo, .v_signalStreng.globalStock .sub_recipe.new_recipe .recipe_area .modal.att_pop .area.rocket .area .stock_info .title_logo {
@@ -38707,7 +38785,7 @@ body.v_signalStreng {
   display: inline-block;
   width: 13px;
   height: 13px;
-  background: url("../../img/icon_saledeal.svg") no-repeat center center;
+  background: url("/img/icon_saledeal.svg") no-repeat center center;
 }
 .modal.att_pop .attention_box {
   display: flex;
@@ -38724,7 +38802,7 @@ body.v_signalStreng {
   display: inline-block;
   width: 15px;
   height: 11px;
-  background: url("../../img/heart_attention_gray.svg") no-repeat 0 100%;
+  background: url("/img/heart_attention_gray.svg") no-repeat 0 100%;
   background-size: 14px 25px;
 }
 .modal.att_pop .sub_mid.recipe_view .recipe_area .area .per span, .v_signalStreng.globalStock .sub_recipe.new_recipe .recipe_area .modal.att_pop .sub_mid.recipe_view .area.rocket .area .per span, .modal.att_pop .recipe_area .sub_mid.recipe_view .area.rocket .area .per span {
@@ -38904,7 +38982,7 @@ body.v_signalStreng {
   margin: 0 auto;
   width: 340px;
   height: 180px;
-  background: url("../../img/contaanalysis1_num.svg") no-repeat center 77px;
+  background: url("/img/contaanalysis1_num.svg") no-repeat center 77px;
   background-size: auto 114px;
 }
 .modal.tooltip_pop.score_pop02 .pop_con .score_chart .contaanalysis1 .gauge-value .highcharts-label-box {
@@ -39048,6 +39126,279 @@ body.v_signalStreng {
 }
 .modal.tooltip_pop.score_pop02 .pop_con .scoreChart_style .highcharts-label.highcharts-series-label {
   display: none !important;
+}
+
+.modal.past_score_pop::after {
+  content: "";
+  display: block;
+  width: 134px;
+  height: 5px;
+  margin: 0 auto 13px;
+  background-color: #000;
+  border-radius: 16px;
+}
+.modal.past_score_pop .pop_header .clse {
+  left: 16px;
+  right: auto;
+}
+.modal.past_score_pop .pop_header .clse::after, .modal.past_score_pop .pop_header .clse::before {
+  display: none;
+}
+.modal.past_score_pop .pop_con {
+  overflow: scroll;
+  overflow-x: hidden;
+  padding: 16px 0;
+}
+.modal.past_score_pop .pop_con .pop_title {
+  padding: 0 20px;
+}
+.modal.past_score_pop .pop_con .pop_title .title {
+  color: var(--Font-primary-title, #1F242B);
+  font-family: var(--Title, Pretendard);
+  font-size: var(--Size-2xl, 20px);
+  font-style: normal;
+  font-weight: var(--Weight-600, 600);
+  line-height: var(--Line-height-2xl, 26px); /* 130% */
+  letter-spacing: var(--Tracking-md, -0.3px);
+}
+.modal.past_score_pop .pop_con .pop_title .date {
+  margin-top: 8px;
+  display: block;
+  color: var(--Font-secondary-caption, #6B7684);
+  font-family: var(--Body, Pretendard);
+  font-size: var(--Size-xs-13, 13px);
+  font-style: normal;
+  font-weight: var(--Weight-500, 500);
+  line-height: var(--Line-height-xs-13, 16px); /* 123.077% */
+  letter-spacing: var(--Tracking-md, -0.3px);
+}
+.modal.past_score_pop .pop_con .score_box_area {
+  margin-top: 40px;
+  padding: 0 20px;
+}
+.modal.past_score_pop .pop_con .score_box_area .score_box {
+  display: flex;
+  align-items: center;
+  gap: 8px 8px;
+  color: var(--Font-primary-blue, #4168F6);
+  font-family: var(--Title, Pretendard);
+  font-size: var(--Size-2xl, 20px);
+  font-style: normal;
+  font-weight: var(--Weight-600, 600);
+  line-height: var(--Line-height-2xl, 26px); /* 130% */
+  letter-spacing: var(--Tracking-md, -0.3px);
+}
+.modal.past_score_pop .pop_con .score_box_area .score_box .score {
+  border-radius: 6px;
+  background: var(--Blue-blue100, #ECF0FF);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 6px;
+  color: var(--Font-primary-blue, #4168F6);
+  font-family: Pretendard;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.36px;
+}
+.modal.past_score_pop .pop_con .score_box_area .scorebox_chart_style {
+  height: 220px;
+  margin: 16px auto 0;
+}
+.modal.past_score_pop .pop_con .score_box_area .score_box_content {
+  margin-top: 25px;
+  border-radius: 16px;
+  background: #F7F8FA;
+  padding: 24px 24px;
+  box-sizing: border-box;
+}
+.modal.past_score_pop .pop_con .score_box_area .score_box_content .score_box_title {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 8px 8px;
+  margin-top: 24px;
+  color: var(--Font-primary-body, #24282C);
+  font-family: var(--Title, Pretendard);
+  font-size: var(--Size-md-16, 16px);
+  font-style: normal;
+  font-weight: var(--Weight-700, 700);
+  line-height: var(--Line-height-md, 22px); /* 137.5% */
+  letter-spacing: var(--Tracking-md, -0.3px);
+}
+.modal.past_score_pop .pop_con .score_box_area .score_box_content .score_box_txt {
+  margin-top: 8px;
+  color: var(--Font-secondary-body, #4E5866);
+  font-family: var(--Body, Pretendard);
+  font-size: var(--Size-md-16, 16px);
+  font-style: normal;
+  font-weight: var(--Weight-400, 400);
+  line-height: var(--Line-height-2xl, 26px); /* 162.5% */
+  letter-spacing: var(--Tracking-md, -0.3px);
+}
+.modal.past_score_pop .pop_con .score_box_area .sort_area {
+  margin: 0;
+  padding: 0;
+}
+.modal.past_score_pop .pop_con .score_box_area .sort_area .sort {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 8px 8px;
+  max-width: 460px;
+}
+.modal.past_score_pop .pop_con .score_box_area .sort_area .sort li {
+  flex: 1 1 auto;
+}
+.modal.past_score_pop .pop_con .score_box_area .sort_area .sort li.active .sort_btn {
+  border-radius: 16px;
+  background: var(--Font-selected-primary, #4168F6);
+  color: #fff;
+  border-color: transparent;
+}
+.modal.past_score_pop .pop_con .score_box_area .sort_area .sort li .sort_btn {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  border: 1px solid var(--Border-primary-border, #E3E5E8);
+  width: 100%;
+  max-width: 100px;
+  min-width: 60px;
+  height: 60px;
+  box-sizing: border-box;
+  color: var(--Gray-gray500, #8C98A7);
+  text-align: center;
+  font-family: var(--Body, Pretendard);
+  font-size: var(--Size-sm, 14px);
+  font-style: normal;
+  font-weight: var(--Weight-500, 500);
+  line-height: var(--Line-height-sm, 18px); /* 128.571% */
+  letter-spacing: var(--Tracking-md, -0.3px);
+}
+.modal.past_score_pop .pop_con .score_box_area .future_growth_list {
+  margin-top: 24px;
+}
+.modal.past_score_pop .pop_con .score_box_area .future_growth_list .list_item {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--Spacing-s-04, 8px);
+  align-self: stretch;
+  border-radius: var(--Spacing-s-06, 16px);
+  border: 1px solid var(--Border-primary-blue-border, #BFD1FE);
+  padding: 16px 24px;
+}
+.modal.past_score_pop .pop_con .score_box_area .future_growth_list .list_item .item {
+  display: flex;
+  align-items: center;
+  gap: 8px 8px;
+  width: 100%;
+  justify-content: space-evenly;
+}
+.modal.past_score_pop .pop_con .score_box_area .future_growth_list .list_item .item .title {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px 4px;
+  width: 100%;
+  color: var(--Font-secondary-body, #4E5866);
+  font-family: var(--Body, Pretendard);
+  font-size: var(--Size-sm, 14px);
+  font-style: normal;
+  font-weight: var(--Weight-400, 400);
+  line-height: var(--Line-height-lg, 21px); /* 150% */
+  letter-spacing: var(--Tracking-md, -0.3px);
+}
+.modal.past_score_pop .pop_con .score_box_area .future_growth_list .list_item .item .title::before {
+  content: "";
+  display: inline-block;
+  width: 3px;
+  height: 3px;
+  background-color: var(--Gray-gray600, #6B7684);
+  border-radius: 100%;
+}
+.modal.past_score_pop .pop_con .score_box_area .future_growth_list .list_item .item .value {
+  width: 100%;
+  color: var(--Font-primary-body, #24282C);
+  text-align: right;
+  font-family: var(--Body, Pretendard);
+  font-size: var(--Size-sm, 14px);
+  font-style: normal;
+  font-weight: var(--Weight-500, 500);
+  line-height: var(--Line-height-lg, 21px); /* 150% */
+  letter-spacing: var(--Tracking-md, -0.3px);
+}
+.modal.past_score_pop .pop_con .score_box_area.future_growth {
+  border-top: 8px solid #F7F8FA;
+  padding: 40px 20px;
+}
+.modal.past_score_pop .pop_con .score_box_area.future_growth .score_box {
+  margin-top: 32px;
+}
+.modal.past_score_pop .pop_con .score_box_area.recipe_list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  align-self: stretch;
+  border-top: 8px solid #F7F8FA;
+  padding: 40px 20px;
+  margin-top: 0;
+}
+.modal.past_score_pop .pop_con .score_box_area.recipe_list .list_box {
+  display: flex;
+  align-items: center;
+  gap: 16px 16px;
+  border-radius: 16px;
+  background: var(--Background-primary-light-background, #F1F4F6);
+  padding: 24px 20px;
+  box-sizing: border-box;
+}
+.modal.past_score_pop .pop_con .score_box_area.recipe_list .list_box .list_img {
+  overflow: hidden;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  background-color: #fff;
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+}
+.modal.past_score_pop .pop_con .score_box_area.recipe_list .list_box .list_img img {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.modal.past_score_pop .pop_con .score_box_area.recipe_list .list_box .list_content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
+.modal.past_score_pop .pop_con .score_box_area.recipe_list .list_box .list_content .title {
+  color: var(--Gray-gray600, #6B7684);
+  font-family: var(--Body, Pretendard);
+  font-size: var(--Size-sm, 14px);
+  font-style: normal;
+  font-weight: var(--Weight-400, 400);
+  line-height: var(--Line-height-sm, 18px); /* 128.571% */
+  letter-spacing: var(--Tracking-md, -0.3px);
+}
+.modal.past_score_pop .pop_con .score_box_area.recipe_list .list_box .list_content .txt {
+  color: var(--Gray-gray800, #24282C);
+  font-family: var(--Title, Pretendard);
+  font-size: var(--Size-md-16, 16px);
+  font-style: normal;
+  font-weight: var(--Weight-600, 600);
+  line-height: var(--Line-height-md, 22px); /* 137.5% */
+  letter-spacing: var(--Tracking-md, -0.3px);
 }
 
 .loading-modal {
@@ -39230,7 +39581,7 @@ body.v_signalStreng {
   max-width: 420px;
   height: 330px;
   margin: 0 auto;
-  background: url("../../img/service/first_month_3300.png") no-repeat center 60%;
+  background: url("/img/service/first_month_3300.png") no-repeat center 60%;
   background-size: auto 336px;
 }
 .globalStock .service_wrap .box.premium_box .bg_img .bell {
@@ -39240,7 +39591,7 @@ body.v_signalStreng {
   display: inline-block;
   width: 100px;
   height: 100px;
-  background: url("../../img/service/bell.svg") no-repeat center center;
+  background: url("/img/service/bell.svg") no-repeat center center;
   background-size: cover;
   animation: shake 0.5s ease infinite; /* 떨리는 애니메이션 적용 */
 }
@@ -39285,13 +39636,13 @@ body.v_signalStreng {
   height: 45px;
 }
 .globalStock .service_wrap .box.premium_box .benefits_guide .benefits_img.img01 {
-  background: url("../../img/service/benefits_img01.svg") no-repeat center center;
+  background: url("/img/service/benefits_img01.svg") no-repeat center center;
 }
 .globalStock .service_wrap .box.premium_box .benefits_guide .benefits_img.img02 {
-  background: url("../../img/service/benefits_img02.svg") no-repeat center center;
+  background: url("/img/service/benefits_img02.svg") no-repeat center center;
 }
 .globalStock .service_wrap .box.premium_box .benefits_guide .benefits_img.img03 {
-  background: url("../../img/service/benefits_img03.svg") no-repeat center center;
+  background: url("/img/service/benefits_img03.svg") no-repeat center center;
 }
 .globalStock .service_wrap .box.premium_box .benefits_guide .title_box h2 {
   line-height: 1.4;
@@ -39308,7 +39659,7 @@ body.v_signalStreng {
   gap: 24px 15px;
   padding-top: 192px;
   padding-bottom: 0;
-  background: #fff url("../../img/service/bg_user_review.svg") no-repeat center 80px;
+  background: #fff url("/img/service/bg_user_review.svg") no-repeat center 80px;
   background-size: 375px auto;
 }
 .globalStock .service_wrap .box.user_review .bell {
@@ -39318,7 +39669,7 @@ body.v_signalStreng {
   display: inline-block;
   width: 100px;
   height: 100px;
-  background: url("../../img/service/bell_big.svg") no-repeat center center;
+  background: url("/img/service/bell_big.svg") no-repeat center center;
   background-size: cover;
   animation: shake 0.5s ease infinite;
   z-index: 90;
@@ -39351,7 +39702,7 @@ body.v_signalStreng {
   top: 16px;
   width: 20px;
   height: 16px;
-  background: url("../../img/quotation.svg") no-repeat left top;
+  background: url("/img/quotation.svg") no-repeat left top;
 }
 .globalStock .service_wrap .box.user_review .benefits_guide .title_box {
   padding: 16px 20px;
@@ -39561,7 +39912,7 @@ body.v_signalStreng {
   height: 100%;
 }
 .globalStock .service_wrap .fade_list .logo_list#btn_free .title_logo .logo {
-  background: #fff url("../../img/signal_prm.svg") no-repeat center center;
+  background: #fff url("/img/signal_prm.svg") no-repeat center center;
   background-size: 70%;
 }
 .globalStock .service_wrap .fade_list .logo_list .detail {
@@ -39636,7 +39987,7 @@ body.v_signalStreng {
 }
 
 .globalStock .sub_service .sub_top.service_t01 {
-  background: #f7f8f9 url("../../img/bg_service.png") no-repeat calc(100% + 70px) calc(100% - 8px);
+  background: #f7f8f9 url("/img/bg_service.png") no-repeat calc(100% + 70px) calc(100% - 8px);
   background-size: 202px 148px;
 }
 
@@ -39860,7 +40211,7 @@ body.v_signalStreng {
   display: inline-block;
   width: 6px;
   height: 10px;
-  background: url("../../img/more_white.png") no-repeat 0 0;
+  background: url("/img/more_white.png") no-repeat 0 0;
   background-size: 6px 10px;
   margin-left: 10px;
 }
@@ -39877,7 +40228,7 @@ body.v_signalStreng {
 .globalStock .sub_service .sub_mid .sub_con .box_serviceClass {
   margin-top: 35px;
   padding: 24px 24px;
-  background: #404fc3 url("../../img/banner/bg_1yearevent03.png") no-repeat right 50px;
+  background: #404fc3 url("/img/banner/bg_1yearevent03.png") no-repeat right 50px;
   background-size: 106px 142px;
 }
 
@@ -40160,7 +40511,7 @@ body.v_signalStreng {
 /* 서비스소개 제휴사이트 */
 /* 서비스소개 프리미엄 */
 .globalStock .sub_service .sub_top.service_t02 {
-  background: #404fc3 url("../../img/bg_service_2.png") no-repeat calc(100% + 16px) calc(100% + 4px);
+  background: #404fc3 url("/img/bg_service_2.png") no-repeat calc(100% + 16px) calc(100% + 4px);
   background-size: 172px 196px;
 }
 
@@ -40201,7 +40552,7 @@ body.v_signalStreng {
 .globalStock .sub_service .sub_con .w_box .box_title {
   color: #333;
   font-size: 1rem;
-  background: url("../../img/bg_line.png") repeat-x 0 calc(100% + 10px);
+  background: url("/img/bg_line.png") repeat-x 0 calc(100% + 10px);
   padding: 0 2px 5px 2px;
   display: inline-block;
   letter-spacing: -0.075rem;
@@ -40416,7 +40767,7 @@ body.v_signalStreng {
 
 .globalStock .sub_service .sub_con .compare_box .tableRanking.type_compare .com_select span {
   display: inline-block;
-  background: url("../../img/com_select.png") no-repeat 50% 50%;
+  background: url("/img/com_select.png") no-repeat 50% 50%;
   background-size: 14px 11px;
   width: 14px;
   height: 11px;
@@ -40491,7 +40842,7 @@ body.v_signalStreng {
   display: inline-block;
   width: 70px;
   height: 70px;
-  background: url("../../img/bg_service_prm.png") no-repeat 0 0;
+  background: url("/img/bg_service_prm.png") no-repeat 0 0;
   background-size: 100% 100%;
 }
 
@@ -40552,7 +40903,7 @@ body.v_signalStreng {
 
 .globalStock .sub_service .sub_mid .sub_con .banner_prm .cho_prm i {
   display: inline-block;
-  background: url("../../img/Icon_lock.svg") no-repeat;
+  background: url("/img/Icon_lock.svg") no-repeat;
   width: 10px;
   height: 13px;
   background-size: 10px 13px;
@@ -40628,7 +40979,7 @@ body.v_signalStreng {
 
 /* 서비스소개 가이드 */
 .globalStock .sub_service .sub_top.service_t03 {
-  background: #fff url("../../img/bg_service_3.png") no-repeat calc(100% + 70px) calc(100% + 40px);
+  background: #fff url("/img/bg_service_3.png") no-repeat calc(100% + 70px) calc(100% + 40px);
   background-size: 235px 175px;
 }
 
@@ -40909,7 +41260,7 @@ body.v_signalStreng {
   margin-bottom: 19px;
   margin-left: 10px;
   display: inline-block;
-  background: url("../../img/icon_faq.png") no-repeat center top;
+  background: url("/img/icon_faq.png") no-repeat center top;
   width: 10px;
   height: 5px;
   background-size: 100% auto;
@@ -40973,7 +41324,7 @@ body.v_signalStreng {
   line-height: 1.1;
 }
 .service_wrap.mijooeun_toppick .box.premium_box .bg_img, .service_wrap.event2025 .box.premium_box .bg_img {
-  background: url("../../img/2025_snake.png") no-repeat center 30px;
+  background: url("/img/2025_snake.png") no-repeat center 30px;
   background-size: contain;
 }
 .service_wrap.mijooeun_toppick .txt_ai, .service_wrap.event2025 .txt_ai {
@@ -41025,7 +41376,7 @@ body.v_signalStreng {
   overflow: hidden;
   box-sizing: border-box;
   padding-bottom: 56.25%; /* 16:9 비율에 맞춘 패딩 */
-  background: #F5F6FC url("../../img/free_video.svg") no-repeat 0 0;
+  background: #F5F6FC url("/img/free_video.svg") no-repeat 0 0;
   background-size: cover;
 }
 .service_wrap.mijooeun_toppick .box.toppick_list, .service_wrap.event2025 .box.toppick_list {
@@ -41073,7 +41424,7 @@ body.v_signalStreng {
   background-position: center center;
 }
 .service_wrap.mijooeun_toppick .box.toppick_list .logo_list#btn_free .title_logo .logo, .service_wrap.event2025 .box.toppick_list .logo_list#btn_free .title_logo .logo {
-  background: #fff url("../../img/signal_prm.svg") no-repeat center center;
+  background: #fff url("/img/signal_prm.svg") no-repeat center center;
   background-size: 70%;
 }
 .service_wrap.mijooeun_toppick .box.toppick_list .logo_list .title_logo .logo img, .service_wrap.event2025 .box.toppick_list .logo_list .title_logo .logo img {
@@ -41148,7 +41499,7 @@ body.v_signalStreng {
 .service_wrap.mijooeun_toppick .할인혜택 .group .step_box, .service_wrap.event2025 .할인혜택 .group .step_box {
   border-radius: 16px;
   border: 1px solid #DFE0EF;
-  background: #FFF url("../../img/service/bg_wallet.png") no-repeat calc(100% - 15px) center;
+  background: #FFF url("/img/service/bg_wallet.png") no-repeat calc(100% - 15px) center;
   background-size: 64px 68px;
   padding: 25px 24px 29px;
   box-sizing: border-box;
@@ -41298,19 +41649,19 @@ body.v_signalStreng {
   background-color: #769DE7;
 }
 .service_wrap.event2025 .box.ai_timing .layout_wrapper .box_tabs.ai::before {
-  background: #769DE7 url("../../img/robot00.png") no-repeat center top;
+  background: #769DE7 url("/img/robot00.png") no-repeat center top;
 }
 .service_wrap.event2025 .box.ai_timing .layout_wrapper .box_tabs.goldenCross {
   background-color: #E36B6D;
 }
 .service_wrap.event2025 .box.ai_timing .layout_wrapper .box_tabs.goldenCross::before {
-  background: #E36B6D url("../../img/cross_arrow.png") no-repeat center top;
+  background: #E36B6D url("/img/cross_arrow.png") no-repeat center top;
 }
 .service_wrap.event2025 .box.ai_timing .layout_wrapper .box_tabs.growthDiscovery {
   background-color: #E79366;
 }
 .service_wrap.event2025 .box.ai_timing .layout_wrapper .box_tabs.growthDiscovery::before {
-  background: #E79366 url("../../img/locket_men.png") no-repeat center top;
+  background: #E79366 url("/img/locket_men.png") no-repeat center top;
 }
 
 .gdn_typeWrap .box {
@@ -41635,7 +41986,7 @@ body.v_signalStreng {
 .gdn_typeWrap .box.mid .img_box.slideshow_img {
   position: relative;
   min-height: 370px;
-  background: var(--Background-primary-light-background, #F1F4F6) url("../../img/mid01.png") no-repeat center bottom;
+  background: var(--Background-primary-light-background, #F1F4F6) url("/img/mid01.png") no-repeat center bottom;
   background-size: 220px 328px;
 }
 .gdn_typeWrap .box.mid .img_box.slideshow_img .slide_img {
@@ -41720,28 +42071,28 @@ body.v_signalStreng {
   font-weight: var(--Weight-700, 700);
 }
 .gdn_typeWrap .box .list_masonry .figure.jump {
-  background: #646FCD url("../../img/jump.png") no-repeat center 14px;
+  background: #646FCD url("/img/jump.png") no-repeat center 14px;
   background-size: auto 132px;
 }
 .gdn_typeWrap .box .list_masonry .figure.growthDiscovery {
-  background: #E79366 url("../../img/growthDiscovery.png") no-repeat center 14px;
+  background: #E79366 url("/img/growthDiscovery.png") no-repeat center 14px;
   background-size: auto 132px;
 }
 .gdn_typeWrap .box .list_masonry .figure.dividend {
-  background: #87CD64 url("../../img/dividend.png") no-repeat center 14px;
+  background: #87CD64 url("/img/dividend.png") no-repeat center 14px;
   background-size: auto 132px;
 }
 .gdn_typeWrap .box .list_masonry .figure.growth {
-  background: #79D5A9 url("../../img/growth.png") no-repeat center 14px;
+  background: #79D5A9 url("/img/growth.png") no-repeat center 14px;
   background-size: auto 132px;
 }
 .gdn_typeWrap .box .list_masonry .figure.top50 {
-  background: #F8D95F url("../../img/top50.png") no-repeat center 14px;
+  background: #F8D95F url("/img/top50.png") no-repeat center 14px;
   background-size: auto 132px;
 }
 .gdn_typeWrap .box .bg_dot {
   height: 156px;
-  background: url("../../img/bg_dot.png") no-repeat center top;
+  background: url("/img/bg_dot.png") no-repeat center top;
   background-size: contain;
 }
 .gdn_typeWrap .btn_banner {
@@ -41750,7 +42101,7 @@ body.v_signalStreng {
   align-content: center;
   align-items: center;
   border-radius: var(--Radius-r-05, 24px) var(--Radius-r-05, 24px) 24px 24px;
-  background: var(--Blue-blue400, #608CFA) url("../../img/angel_man.png") no-repeat bottom center;
+  background: var(--Blue-blue400, #608CFA) url("/img/angel_man.png") no-repeat bottom center;
   background-size: auto 125px;
   padding: 60px 32px 150px;
   margin: 40px 32px 0;
@@ -42155,7 +42506,7 @@ body.v_signalStreng {
   content: "";
   display: inline-flex;
   align-items: center;
-  background: url("../../img/glory.png") no-repeat center center;
+  background: url("/img/glory.png") no-repeat center center;
   width: 16px;
   height: 16px;
   margin-right: 4px;
