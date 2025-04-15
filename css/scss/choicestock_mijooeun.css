@@ -13215,7 +13215,7 @@ table.tableRanking td {
   border: 1px solid var(--Border-primary-border, #E3E5E8);
   background: #FFF;
   margin: 16px auto 9px;
-  padding: 12px 24px;
+  padding: 12px 14px 12px 24px;
   box-sizing: border-box;
 }
 .globalStock .sub_search .sub_mid .investCharm_area .spider_year .spider_year_item span {
@@ -23890,6 +23890,7 @@ table.tableRanking td {
   border-radius: 16px;
   background: var(--Font-selected-primary, #4168F6);
   color: #fff;
+  border-color: transparent;
 }
 .modal.past_score_pop .pop_con .score_box_area .sort_area .sort li .sort_btn {
   cursor: pointer;
@@ -23925,7 +23926,7 @@ table.tableRanking td {
   align-self: stretch;
   border-radius: var(--Spacing-s-06, 16px);
   border: 1px solid var(--Border-primary-blue-border, #BFD1FE);
-  padding: 16px 30px;
+  padding: 16px 24px;
 }
 .modal.past_score_pop .pop_con .score_box_area .future_growth_list .list_item .item {
   display: flex;
@@ -23935,6 +23936,9 @@ table.tableRanking td {
   justify-content: space-evenly;
 }
 .modal.past_score_pop .pop_con .score_box_area .future_growth_list .list_item .item .title {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px 4px;
   width: 100%;
   color: var(--Font-secondary-body, #4E5866);
   font-family: var(--Body, Pretendard);
@@ -23943,6 +23947,14 @@ table.tableRanking td {
   font-weight: var(--Weight-400, 400);
   line-height: var(--Line-height-lg, 21px); /* 150% */
   letter-spacing: var(--Tracking-md, -0.3px);
+}
+.modal.past_score_pop .pop_con .score_box_area .future_growth_list .list_item .item .title::before {
+  content: "";
+  display: inline-block;
+  width: 3px;
+  height: 3px;
+  background-color: var(--Gray-gray600, #6B7684);
+  border-radius: 100%;
 }
 .modal.past_score_pop .pop_con .score_box_area .future_growth_list .list_item .item .value {
   width: 100%;
@@ -23970,6 +23982,7 @@ table.tableRanking td {
   align-self: stretch;
   border-top: 8px solid #F7F8FA;
   padding: 40px 20px;
+  margin-top: 0;
 }
 .modal.past_score_pop .pop_con .score_box_area.recipe_list .list_box {
   display: flex;

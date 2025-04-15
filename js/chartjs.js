@@ -1167,6 +1167,19 @@ $(document).ready(function () {
                     lineWidth: 1, // 마커 테두리 두께
                     radius: 2.7 // 마커의 반지름
                 }              
+            }, {
+                name: '투자매력도',
+                data: [50, 50, 50, 50, 50],
+                pointPlacement: 'on',  
+                color: '#7983d5', // 시리즈 선의 색상을 설정
+                lineWidth: 1, // 시리즈 선의 너비를 설정
+                marker: {
+                    enabled: true,
+                    fillColor: '#404fc3',
+                    lineColor: '#f7f8f9', // 마커 테두리 색상을 설정
+                    lineWidth: 1, // 마커 테두리 두께
+                    radius: 2.7 // 마커의 반지름
+                }              
             }],
             
             plotOptions: {
