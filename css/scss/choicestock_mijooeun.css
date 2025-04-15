@@ -13453,15 +13453,21 @@ table.tableRanking td {
   height: 260px;
 }
 .globalStock .sub_search .sub_mid .tab_diagnosis_area .containercharm1 .highcharts-axis-labels.highcharts-radial-axis-labels span {
-  color: #6a727b !important;
+  color: var(--Gray-gray600, #6B7684);
+  font-family: Pretendard;
+  font-size: 13px;
+  font-style: normal;
   font-weight: 400;
+  line-height: normal;
 }
 .globalStock .sub_search .sub_mid .tab_diagnosis_area .containercharm1 .highcharts-axis-labels.highcharts-radial-axis-labels strong {
   display: inline-block;
-  padding-top: 5px;
-  font-weight: 400;
-  color: #6a727b !important;
+  color: var(--Gray-gray600, #6B7684);
+  font-family: Pretendard;
   font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 
 .globalStock .sub_search .sub_mid .tab_diagnosis_area .charm_num {
@@ -24000,8 +24006,8 @@ table.tableRanking td {
   justify-content: center;
   border-radius: 16px;
   background-color: #fff;
-  width: 44px;
-  height: 44px;
+  width: 48px;
+  height: 48px;
   flex-shrink: 0;
 }
 .modal.past_score_pop .pop_con .score_box_area.recipe_list .list_box .list_img img {

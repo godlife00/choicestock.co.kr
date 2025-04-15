@@ -1111,10 +1111,10 @@ $(document).ready(function () {
                 gridLineColor: 'transparent',                
                 labels: {
                     style: {
-                        color: '#6a727b',
+                        color: '#6B7684',
                         fontSize: '13px',
                         textAlign: 'center',
-                        fontWeight: '400'
+                        fontWeight: '400',
                     },                    
                     formatter: function () {
                         // Y 좌표와 X 좌표의 보정값을 미리 정의된 배열로 설정
@@ -1156,42 +1156,42 @@ $(document).ready(function () {
 
             series: [{
                 name: '투자매력도',
-                data: [10, 100, 90, 90, 90],
+                data: [100, 100, 100, 70, 70],
                 pointPlacement: 'on',  
-                color: '#7983d5', // 시리즈 선의 색상을 설정
+                color: '#4168F6', // 시리즈 선의 색상을 설정
                 lineWidth: 1, // 시리즈 선의 너비를 설정
+                fillColor: 'rgba(191, 209, 254, 0.3)', // 단색 반투명으로 변경
+                zIndex: 2,
                 marker: {
                     enabled: true,
-                    fillColor: '#404fc3',
-                    lineColor: '#f7f8f9', // 마커 테두리 색상을 설정
+                    fillColor: '#4168F6',
+                    lineColor: '#F5F5F9', // 마커 테두리 색상을 설정
+                    width: 6,
                     lineWidth: 1, // 마커 테두리 두께
                     radius: 2.7 // 마커의 반지름
                 }              
             }, {
-                name: '투자매력도',
-                data: [50, 50, 50, 50, 50],
+                name: '전년동기',
+                data: [50, 50, 100, 100, 50],
                 pointPlacement: 'on',  
-                color: '#7983d5', // 시리즈 선의 색상을 설정
-                lineWidth: 1, // 시리즈 선의 너비를 설정
+                color: '#DADCE0', // 시리즈 선의 색상을 설정
+                lineWidth: 1, // 시리즈 선의 너비를 설정                
+                fillColor: 'rgba(140, 152, 167, 0.15)', // 단색 반투명으로 변경
+                zIndex: 1,
                 marker: {
-                    enabled: true,
-                    fillColor: '#404fc3',
-                    lineColor: '#f7f8f9', // 마커 테두리 색상을 설정
-                    lineWidth: 1, // 마커 테두리 두께
-                    radius: 2.7 // 마커의 반지름
+                    enabled: false,                    
                 }              
             }],
             
             plotOptions: {
                 series: {                    
                     lineWidth: 1,
-                    fillColor: '#e3e7f8',
                     states: {
                         hover: {
-                            enabled: false // 시리즈 hover 상태 비활성화
-                        },                        
+                            enabled: false
+                        }                        
                     }
-                }
+                },
             },
         });
         // 차트 리사이즈 계산
@@ -1199,7 +1199,7 @@ $(document).ready(function () {
             var paneSize = chart.pane[0].options.size,
                 paneCenter = chart.pane[0].center,
                 centerX = paneCenter[0],
-                centerY = paneCenter[1] + 34, // centerY 조정
+                centerY = paneCenter[1] + 32, // centerY 조정
                 size = Math.min(chart.plotWidth, chart.plotHeight) * (parseInt(paneSize) / 100),
                 radius = size / 2;
         
@@ -1222,13 +1222,11 @@ $(document).ready(function () {
             // 중앙의 값 텍스트 추가
             chart.centerText = chart.renderer.text('23', centerX, centerY)
                 .css({
-                    color: '#404fc3',
+                    color: '#4168F6',
                     fontSize: '30px',
                     textAlign: 'center',
-                    fontWeight: 'bold',                    
-                    fontFamily: "Pretendard Variable, Pretendard",
-                    // textOutline: '1px contrast',
-                    // textShadow: '0px 0px 4px rgba(255, 255, 255, 1)'
+                    fontWeight: '700',                    
+                    fontFamily: "Pretendard Variable, Pretendard",                    
                 })
                 .attr({
                     zIndex: 5,
@@ -1315,15 +1313,18 @@ $(document).ready(function () {
                 name: '투자매력도',
                 data: seriesData,
                 pointPlacement: 'on',  
-                color: '#7983d5', // 시리즈 선의 색상을 설정
+                color: '#4168F6', // 시리즈 선의 색상을 설정
                 lineWidth: 1, // 시리즈 선의 너비를 설정
+                fillColor: 'rgba(191, 209, 254, 0.3)', // 단색 반투명으로 변경
+                zIndex: 2,
                 marker: {
                     enabled: true,
-                    fillColor: '#404fc3',
-                    lineColor: '#ff0000', // 마커 테두리 색상을 설정
-                    lineWidth: 0, // 마커 테두리 두께
-                    radius: 1.5 // 마커의 반지름
-                }               
+                    fillColor: '#4168F6',
+                    lineColor: '#F5F5F9', // 마커 테두리 색상을 설정
+                    width: 6,
+                    lineWidth: 1, // 마커 테두리 두께
+                    radius: 2.7 // 마커의 반지름
+                }              
             }],
             plotOptions: {
                 series: {
