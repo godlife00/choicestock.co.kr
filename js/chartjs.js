@@ -7740,26 +7740,48 @@ $(document).ready(function () {
         name: '공포 (25점 이하) :',
         data: [20]
     }];
+
+    // 차트 렌더링을 위한 Intersection Observer 생성 함수
+    function CustomChart_ScoreObserver(chartId, data) {
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    // 차트가 화면에 보일 때 렌더링
+                    CustomChart_Score(chartId, data);
+                    // 한 번 렌더링 후 관찰 중단
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.1 // 10% 이상 보일 때 렌더링 시작
+        });
+
+        const chartElement = document.getElementById(chartId);
+        if (chartElement) {
+            observer.observe(chartElement);
+        }
+    }
+    
     if ($('#CustomChart_score1_0').length) {
-        CustomChart_Score('CustomChart_score1_0', CustomScoreData1_0);
+        CustomChart_ScoreObserver('CustomChart_score1_0', CustomScoreData1_0);
     }
     if ($('#CustomChart_score1_1').length) {
-        CustomChart_Score('CustomChart_score1_1', CustomScoreData1_1);
+        CustomChart_ScoreObserver('CustomChart_score1_1', CustomScoreData1_1);
     }
     if ($('#CustomChart_score1_2').length) {
-        CustomChart_Score('CustomChart_score1_2', CustomScoreData1_2);
+        CustomChart_ScoreObserver('CustomChart_score1_2', CustomScoreData1_2);
     }
     if ($('#CustomChart_score1_3').length) {
-        CustomChart_Score('CustomChart_score1_3', CustomScoreData1_3);
+        CustomChart_ScoreObserver('CustomChart_score1_3', CustomScoreData1_3);
     }
     if ($('#CustomChart_score1_4').length) {
-        CustomChart_Score('CustomChart_score1_4', CustomScoreData1_4);
+        CustomChart_ScoreObserver('CustomChart_score1_4', CustomScoreData1_4);
     }
     if ($('#CustomChart_score1_5').length) {
-        CustomChart_Score('CustomChart_score1_5', CustomScoreData1_5);
+        CustomChart_ScoreObserver('CustomChart_score1_5', CustomScoreData1_5);
     }
     if ($('#CustomChart_score1_2_clone').length) {
-        CustomChart_Score('CustomChart_score1_2_clone', CustomScoreData1_6);
+        CustomChart_ScoreObserver('CustomChart_score1_2_clone', CustomScoreData1_6);
     }
 
     if ($('#chart-container').length) {
