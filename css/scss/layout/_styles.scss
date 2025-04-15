@@ -15847,13 +15847,17 @@ table.tableRanking td {
 
 .globalStock .sub_attract .sub_top .txt_box {
 	background: #fff;
-	padding: 12px 15px;
+	padding: 16px 20px;
 }
 
 .globalStock .sub_attract .sub_top .txt_box .txt {
-	color: #939393;
-	font-size: 0.9375rem;
-	line-height: 20px;
+	color: var(--Font-secondary-body, #4E5866);
+    font-family: var(--Body, Pretendard);
+    font-size: var(--Size-sm, 14px);
+    font-style: normal;
+    font-weight: var(--Weight-400, 400);
+    line-height: var(--Line-height-lg, 21px);
+    letter-spacing: var(--Tracking-md, -0.3px);
 }
 
 .globalStock .sub_attract .sub_mid.attract_sub {
@@ -16937,6 +16941,29 @@ table.tableRanking td {
 		$growthDiscovery : #E79366; //발굴성장주		
 		$wh : 164px;
 		margin-top: 0;
+		.sub_mid.recipe_tabs {
+			.filter_list {
+				@include filter_list;
+			}
+			.filter-swiper {				
+				@include filter_swiper;
+			}
+			.filter_box_inner {								
+				.txt_box {
+					width: 100%;
+					padding-bottom: 16px;
+					.title {
+						color: var(--Font-primary-title, #1F242B);
+						font-family: var(--Title, Pretendard);
+						font-size: var(--Size-xl-01, 18px);
+						font-style: normal;
+						font-weight: var(--Weight-600, 600);
+						line-height: var(--Line-height-xl-01, 24px); /* 133.333% */
+						letter-spacing: var(--Tracking-md, -0.3px);
+					}
+				}
+			}
+		}
 
 		.sub_mid.recipe_tabs .box_tabs {
 			// padding-top: 0;
@@ -17127,34 +17154,55 @@ table.tableRanking td {
 
 		// 오늘의 매매신호
 		.sub_mid.recipe_tabs .one_step {
-			background: #FFF !important;
-			border-radius: 16px;
-			padding: 24px 16px;
-			margin: 48px auto;
-			width: 100%;
+			background: #FFF !important;			
+			width: 100% !important;
 			box-sizing: border-box;
+			&.flx_btn {				
+				border-radius: 16px;
+				background: var(--Background-primary-light-background, #F1F4F6) !important;
+				padding: 21px 16px;
+				margin: 24px 20px 50px !important;
+				width: auto !important;
+				transition: all 0.3s ease;
+			}
 
 			&::before {
 				display: none !important;
 			}
 
 			.txt {
-				color: #333;
-				font-size: 15px;
-				font-weight: 700;
 				padding: 0;
+				color: var(--Font-primary-body, #24282C);
+				font-family: var(--Body, Pretendard);
+				font-size: var(--Size-md-15, 15px);
+				font-style: normal;
+				font-weight: var(--Weight-700, 700);
+				line-height: var(--Line-height-xl-01, 24px); /* 160% */
+				letter-spacing: var(--Tracking-md, -0.3px);
 			}
 
 			a.more {
-				border-radius: 4px;
-				background: #404FC3;
-				padding: 4px 12px;
-				height: auto;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				padding: 10px 12px;
+				border-radius: var(--Radius-r-02, 8px);
+				background: var(--Font-primary-blue, #4168F6);
 
 				span {
 					color: #FFF;
-					font-size: 13px;
-					font-weight: 500;
+					font-family: var(--Body, Pretendard);
+					font-size: var(--Size-xs-13, 13px);
+					font-style: normal;
+					font-weight: var(--Weight-600, 600);
+					line-height: var(--Line-height-xs-13, 16px); /* 123.077% */
+					letter-spacing: var(--Tracking-md, -0.3px);
+				}
+				@media (min-width:320px) and (max-width: 374px) {
+					padding: 8px 8px;
+					span {						
+						font-size: var(--Size-xs-12, 12px);						
+					}
 				}
 			}
 		}
@@ -18049,25 +18097,29 @@ table.tableRanking td {
 
 .globalStock .sub_recipe .sub_top .txt_box {
 	background: #fff;
-	padding: 12px 15px;
+	padding: 16px 20px;
 }
 
 .globalStock .sub_recipe .sub_top .txt_box .txt {
-	color: #939393;
-	// font-size: 0.9375rem;
-	line-height: 20px;
+	color: var(--Font-secondary-body, #4E5866);
+	font-family: var(--Body, Pretendard);
+	font-size: var(--Size-sm, 14px);
+	font-style: normal;
+	font-weight: var(--Weight-400, 400);
+	line-height: var(--Line-height-lg, 21px); /* 150% */
+	letter-spacing: var(--Tracking-md, -0.3px);
 }
 
 .globalStock .sub_recipe .sub_mid.recipe_tabs .box_tabs {
 	margin: 18px auto 0;
-	padding: 0 15px;
+	padding: 0 20px;
 	overflow: hidden;
 }
 
 .v_signalStreng.globalStock .sub_recipe .sub_mid.recipe_tabs .box_tabs {
-	background-color: #F4F4F5;
-	margin-top: 15px;
-	padding-top: 20px;
+	background-color: #fff;	
+	margin-top: 0;
+	padding-top: 24px;
 	padding-bottom: 32px;
 }
 
@@ -19599,15 +19651,121 @@ table.tableRanking td {
 /* 발굴 - 미국주식 탐구생활 */
 .globalStock .sub_research .sub_top .best_research {
 	display: flex;
-	align-items: center;
-	background: url('/img/research_bg.png') no-repeat center center;
-	margin: 25px 15px;
+	align-items: flex-start;
+	gap: 0 16px;
+	margin: 32px 20px 0;
 	box-sizing: border-box;
-	padding: 22px 20px;
+	padding: 24px 28px 40px 20px;
+	background: linear-gradient(129deg, var(--Blue-blue100, #ECF0FF) 18.23%, var(--Red-red50, #FEF2F3) 95.73%);
 	background-size: cover;
-	border-radius: 20px;
-	min-height: 113px;
+	border-radius: 16px;
+	min-height: 138px;
 	width: 100%;
+	.img_box {		
+		overflow: hidden;
+		border-radius: 16px;
+		min-width: 48px;
+		width: 48px;
+		height: 48px;
+		background: #fff;
+		flex-shrink: 0;
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+	.category_box {
+		display: flex;
+		flex-direction: column;
+		gap: 4px 0;
+		
+		.category {
+			color: var(--Font-primary-blue, #4168F6);
+			font-family: var(--Body, Pretendard);
+			font-size: var(--Size-sm, 14px);
+			font-style: normal;
+			font-weight: var(--Weight-400, 400);
+			line-height: var(--Line-height-sm, 18px); /* 128.571% */
+			letter-spacing: var(--Tracking-md, -0.3px);
+		}
+		.title {			
+			color: var(--Gray-gray800, #24282C);
+			text-overflow: ellipsis;
+			font-family: var(--Title, Pretendard);
+			font-size: 20px;
+			font-style: normal;
+			font-weight: var(--Weight-600, 600);			
+			letter-spacing: var(--Tracking-md, -0.3px);				
+			width: 100%;
+			display: inline-block;
+			display: -webkit-box;
+			overflow: hidden;
+			line-height: var(--Line-height-2xl, 26px); /* 144.444% */
+			box-sizing: border-box;
+			text-overflow: ellipsis;
+			-webkit-line-clamp: 2;
+			-webkit-box-orient: vertical;
+			word-wrap: break-word;
+		}
+	}
+}
+.globalStock .sub_research .sub_top .swiper-research {
+	.swiper-slide {		
+		&:nth-child(1) {		
+			.best_research {			
+				background: linear-gradient(129deg, var(--Blue-blue100, #ECF0FF) 18.23%, var(--Red-red50, #FEF2F3) 95.73%);
+			}
+		}
+		&:nth-child(2) {		
+			.best_research {
+				background: linear-gradient(129deg, var(--Yellow-yellow100, #FFF6D2) 18.23%, var(--Green-green50, #E9FBF4) 95.73%);
+			}
+		}
+		&:nth-child(3) {		
+			.best_research {
+				background: linear-gradient(129deg, var(--Skyblue-skyblue50, #E2F5FF) 18.23%, var(--Orange-orange50, #FFF2EA) 95.73%);
+			}
+		}
+	}
+	.swiper-slide {		
+		justify-content: flex-start;		
+		width: auto;		
+		visibility: hidden;
+		&.swiper-slide-active {			
+			visibility: visible;
+		}
+	}
+	.swiper-pagination {
+		visibility: hidden;		
+		&.swiper-pagination-fraction {
+			visibility: visible;
+		}
+		left: auto;
+		right: 35px;
+		bottom: 10px;
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		text-align: right;
+		justify-content: flex-end;
+		width: auto;		
+		padding: 3px 8px;
+		border-radius: var(--Radius-r-07, 100px);
+		background: rgba(0, 0, 0, 0.30);
+		color: #FFF;
+		font-size: 11px;			
+		font-weight: 600;
+		letter-spacing: 1px;
+		span {
+			letter-spacing: 1px;
+			color: #FFF;
+			font-family: Pretendard;
+			font-size: 11px;			
+			font-weight: 600;
+			line-height: normal;
+		}
+	}
 }
 
 .globalStock .sub_research .sub_top .best_research .title {
@@ -19667,7 +19825,7 @@ table.tableRanking td {
 .globalStock .sub_research .sub_mid.research_board .lst_type {
 	width: calc(100% - 30px);
 	margin: 15px auto 30px;
-	border-top: 1px solid #E0E4E9;
+	// border-top: 1px solid #E0E4E9;
 }
 
 .globalStock .sub_research .sub_mid.research_board .lst_type li {
@@ -19693,7 +19851,7 @@ table.tableRanking td {
 	margin-bottom: 7px;
 	color: #939393;
 	font-size: 1rem;
-	min-height: 50px;
+	min-height: 53px;
 	box-sizing: border-box;
 }
 
@@ -20139,23 +20297,33 @@ table.tableRanking td {
 }
 
 .globalStock .sub_research .sub_mid.research_board .video_tabs {
-	padding: 0 15px;
+	display: flex;
+	gap: 24px 24px;
+	padding: 0 20px;
 }
 
 .globalStock .sub_research .sub_mid.research_board .video_tabs a {
-	display: inline-block;
-	border-bottom: 3px solid #fff;
-	font-size: 0.9375rem;
-	margin-right: 17px;
-	padding-bottom: 3px;
-	letter-spacing: -0.75px;
-	text-align: left;
-	color: #939393;
+	color: var(--Font-default, #6B7684);
+	font-family: var(--Title, Pretendard);
+	font-size: var(--Size-xl-01, 18px);
+	font-style: normal;
+	font-weight: var(--Weight-600, 600);
+	line-height: var(--Line-height-xl-01, 24px); /* 133.333% */
+	letter-spacing: var(--Tracking-md, -0.3px);
+	padding: 8px 0 2px;
+	box-sizing: border-box;
+	height: 100%;
 }
 
 .globalStock .sub_research .sub_mid.research_board .video_tabs a.active {
-	border-bottom: 2px solid #404fc3;
-	color: #404fc3;
+	color: var(--Font-secondary-title, #24282C);
+	font-family: var(--Title, Pretendard);
+	font-size: var(--Size-xl-01, 18px);
+	font-style: normal;
+	font-weight: var(--Weight-700, 700);
+	line-height: var(--Line-height-xl-01, 24px); /* 133.333% */
+	letter-spacing: var(--Tracking-md, -0.3px);
+	border-bottom: 2px solid var(--Border-dark-border, #24282C);
 }
 
 .globalStock .sub_research .sub_mid.research_board .lst_type.video_list {

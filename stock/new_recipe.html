@@ -28,7 +28,7 @@
     <script src="../node_modules/highcharts/modules/data.js"></script>
     <script src="../node_modules/highcharts/modules/hollowcandlestick.js"></script>
     <script src="../node_modules/highcharts/modules/no-data-to-display.js"></script>
-    <script src="../node_modules/highcharts/modules/treemap.js"></script>    
+    <script src="../node_modules/highcharts/modules/treemap.js"></script>
     <script src="../node_modules/highcharts/modules/exporting.js"></script>
     <script src="../node_modules/highcharts/modules/export-data.js"></script>
     <script src="../node_modules/highcharts/modules/accessibility.js"></script>
@@ -38,19 +38,19 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
     <!-- css -->
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <link rel="stylesheet" type="text/css" href="../css/scss/choicestock.css" />
-    <!-- js -->
+    <link rel="stylesheet" type="text/css" href="../css/scss/choicestock.css?v=20250409" />
+    <!-- js -->    
     <script src="../js/choicestock.js"></script>
 </head>
 
-<body class="v_signalStreng globalStock">        
+<body class="v_signalStreng globalStock">
     <div id="wrap">
         <div id="header" class="header">
             <div class="headerTop">
                 <div class="left">
                     <h1 class="headerLogo"><span>발굴</span></h1>
                 </div>
-                <div class="cen">                    
+                <div class="cen">
                 </div>
                 <div class="right">
                     <a href="menu.html" class="h_menu">
@@ -60,7 +60,7 @@
                             <div class="bar"></div>
                         </div>
                     </a>
-                </div>                
+                </div>
             </div>
             <!-- //headerTop -->
         </div>
@@ -72,19 +72,19 @@
                 <ul class="list">
                     <li class="home"><a href="../index.html">홈</a></li>
                     <li class="sch"><a href="../search/searching.html">검색</a></li>
-                    <li class="stock"><a href="../stock/recom.html">추천</a></li>                
-                    <li class="excavation active"><a href="../stock/note.html">발굴</a></li>                
-                    <li class="attention"><a href="../search/searching_attention.html">관심</a></li>                
+                    <li class="stock"><a href="../stock/recom.html">추천</a></li>
+                    <li class="excavation active"><a href="../stock/note.html">발굴</a></li>
+                    <li class="attention"><a href="../search/searching_attention.html">관심</a></li>
                 </ul>
             </div>
             <!-- //gnb -->
 
-            <!-- 주요 콘텐츠 -->            
+            <!-- 주요 콘텐츠 -->
             <div class="tab_area">
                 <ul class="tbas_lb tabs_4">
-                    <li><a href="../stock/note.html">종목노트</a></li>
                     <li><a href="../stock/new_recipe.html" class="active">투자레시피</a></li>
-                    <li><a href="../attractiveness/attractiveness.html">투자매력도</a></li>                                        
+                    <li><a href="../stock/note.html">종목노트</a></li>                    
+                    <li><a href="../attractiveness/attractiveness.html">투자매력도</a></li>
                 </ul>
             </div>
             <!-- //tab_area -->
@@ -104,96 +104,206 @@
             <!-- //sub_top -->
 
             <div class="sub_mid recipe_tabs">
-                
-                <div class="box_tabs">                    
-                    <!-- Masonry Library -->
-                    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+
+                <div class="swiper-container filter-swiper">
+                    <div class="swiper-wrapper filter_list">
+                        <div class="swiper-slide">
+                            <a href="#" class="filter_btn active" data-filter="recommend">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                    fill="none">
+                                    <g clip-path="url(#clip0_4733_736)">
+                                        <path
+                                            d="M8.9792 0.684229L10.5113 4.86863C10.6166 5.15667 10.8437 5.38371 11.1317 5.48908L15.3161 7.02114C16.2284 7.35529 16.2284 8.64506 15.3161 8.9792L11.1317 10.5113C10.8437 10.6166 10.6166 10.8437 10.5113 11.1317L8.9792 15.3161C8.64506 16.2284 7.35529 16.2284 7.02114 15.3161L5.48908 11.1317C5.38371 10.8437 5.15667 10.6166 4.86863 10.5113L0.684229 8.9792C-0.228076 8.64506 -0.228076 7.35529 0.684229 7.02114L4.86863 5.48908C5.15667 5.38371 5.38371 5.15667 5.48908 4.86863L7.02114 0.684229C7.35529 -0.228076 8.64506 -0.228076 8.9792 0.684229Z"
+                                            fill="#F7D426" />
+                                    </g>
+                                </svg>
+                                추천레시피
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="filter_btn" data-filter="hot">HOT! 관심주</a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="filter_btn" data-filter="growth">성장주</a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="filter_btn" data-filter="value">가치주</a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="filter_btn" data-filter="technical">기술적분석</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box_tabs">
+                    <!-- 추천 레시피 -->
+                    <div class="filter_box_inner" data-filter="recommend">
+                        <div class="txt_box">
+                            <h3 class="title">투자자라면 체크해야 할 추천레시피!</h3>
+                        </div>
+                        <div class="list_masonry">
+                            <div class="figure jump" onclick="location.href ='new_recipe_view.html'"
+                                style="cursor:pointer;">
+                                <a href="new_recipe_view.html">
+                                    <strong>급등주</strong>
+                                    상승주는 떡잎부터 알아본다?<br>꾸준히 상승하는 종목을 발굴해보세요.
+                                </a>
+                            </div>
+                            <div class="figure top50" onclick="location.href ='new_recipe_view.html'"
+                                style="cursor:pointer;">
+                                <a href="new_recipe_view.html">
+                                    <strong>관심 TOP50</strong>
+                                    초이스스탁US에서 가장<br>
+                                    인기 있는 종목들을 살펴보세요.
+                                </a>
+                            </div>
+                            <div class="figure goldenCross" onclick="location.href ='new_recipe_view.html'"
+                                style="cursor:pointer;">
+                                <a href="new_recipe_view.html">
+                                    <strong>골든크로스</strong>
+                                    최근 20일 내 이평선(EMA)에 골든크로스가 발생한, 주가 상승 추세가 강력한 종목을 AI가 찾아냅니다.
+                                </a>
+                            </div>
+                            <div class="figure growthDiscovery" onclick="location.href ='new_recipe_view.html'"
+                                style="cursor:pointer;">
+                                <a href="new_recipe_view.html">
+                                    <strong>발굴! 성장주</strong>
+                                    성장성, 현금창출, 안전성이 삼각형 종목! 주가 급등이 기대되는 초기 성장주를 미리 발굴합니다.
+                                </a>
+                            </div>
+                            <div class="figure profitTurnaround" onclick="location.href ='new_recipe_view.html'"
+                                style="cursor:pointer;">
+                                <a href="new_recipe_view.html">
+                                    <strong>흑자전환</strong>
+                                    적자 &#x2192; 흑자로 전환이 예상되는 주가 급등이 기대되는 종목을 찾아냅니다.
+                                </a>
+                            </div>
+                            <div class="figure earnings" onclick="location.href ='new_recipe_view.html'"
+                                style="cursor:pointer;">
+                                <a href="new_recipe_view.html">
+                                    <strong>실적발표</strong>
+                                    최신 실적발표를 통해 종목의 가치를 평가해보세요.
+                                </a>
+                            </div>
+                        </div>
+                        <!-- //list_masonry -->
+                    </div>
+                    <!-- //filter_box_inner -->
+                     
                     
-                    <div class="list_masonry">                        
-                        <div class="figure jump" onclick="location.href ='new_recipe_view.html'" style="cursor:pointer;">                                   
-                            <a href="new_recipe_view.html">
-                                <strong>급등주</strong>
-                                상승주는 떡잎부터 알아본다?<br>꾸준히 상승하는 종목을 발굴해보세요.
-                            </a>
-                        </div>   
-                        <div class="figure top50" onclick="location.href ='new_recipe_view.html'" style="cursor:pointer;">                             
-                            <a href="new_recipe_view.html">
-                                <strong>관심 TOP50</strong>
-                                초이스스탁US에서 가장<br>
-                                인기 있는 종목들을 살펴보세요.                                
-                            </a>
+                    <!-- HOT! 관심주 -->
+                    <div class="filter_box_inner" data-filter="hot">
+                        <div class="txt_box">
+                            <h3 class="title">급등주, 관심주! 지금 뜨는 종목은?</h3>
                         </div>
-                        <div class="figure goldenCross" onclick="location.href ='new_recipe_view.html'" style="cursor:pointer;">                                  
-                            <a href="new_recipe_view.html">
-                                <strong>골든크로스</strong>
-                                최근 20일 내 이평선(EMA)에 골든크로스가 발생한, 주가 상승 추세가 강력한 종목을 AI가 찾아냅니다.
-                            </a>
-                        </div>                        
-                        <div class="figure growthDiscovery" onclick="location.href ='new_recipe_view.html'" style="cursor:pointer;">                                
-                            <a href="new_recipe_view.html">
-                                <strong>발굴! 성장주</strong>
-                                성장성, 현금창출, 안전성이 삼각형 종목! 주가 급등이 기대되는 초기 성장주를 미리 발굴합니다.
-                            </a>
+                        <div class="list_masonry">
+                            <div class="figure sale" onclick="location.href ='new_recipe_view.html'"
+                                style="cursor:pointer;">
+                                <a href="new_recipe_view.html">
+                                    <strong>지금 세일중!</strong>
+                                    저평가 우량종목이 세일 중? 알고리즘으로 찾아낸 매수 타이밍 종목
+                                </a>
+                            </div>
+                            <div class="figure dividend" onclick="location.href ='new_recipe_view.html'"
+                                style="cursor:pointer;">
+                                <a href="new_recipe_view.html">
+                                    <strong>배당매력주</strong>
+                                    초보도 벌 수 있는 투자의 정석 '고배당주에 투자하라'
+                                </a>
+                            </div>
+                            <div class="figure growth" onclick="location.href ='new_recipe_view.html'"
+                                style="cursor:pointer;">
+                                <a href="new_recipe_view.html">
+                                    <strong>이익 성장주</strong>
+                                    위대한 기업을 찾는 공식 '내일의 넷플릭스를 찾아라'
+                                </a>
+                            </div>
                         </div>
+                        <!-- //list_masonry -->
                     </div>
-                    <!-- //list_masonry -->                    
-                    <div class="figure one_step">
-                        <span class="txt">지금살까? 매매신호 종목만 쏙쏙!</span>
-                        <a href="trading_signal.html" class="more"><span>오늘의 매매신호</span></a>
-                    </div>
-                    <div class="list_masonry">                        
-                        <div class="figure profitTurnaround" onclick="location.href ='new_recipe_view.html'" style="cursor:pointer;">                                 
-                            <a href="new_recipe_view.html">
-                                <strong>흑자전환</strong>
-                                적자 &#x2192; 흑자로 전환이 예상되는 주가 급등이 기대되는 종목을 찾아냅니다.
-                            </a>
+                    <!-- //filter_box_inner -->
+
+                    <!-- 성장주 -->
+                    <div class="filter_box_inner" data-filter="growth">
+                        <div class="txt_box">
+                            <h3 class="title">주가 급등이 기대되는 성장주 레시피</h3>
                         </div>
-                        <div class="figure earnings" onclick="location.href ='new_recipe_view.html'" style="cursor:pointer;">                           
-                            <a href="new_recipe_view.html">
-                                <strong>실적발표</strong>
-                                최신 실적발표를 통해 종목의 가치를 평가해보세요.
-                            </a>
-                        </div> 
-                        <div class="figure sale" onclick="location.href ='new_recipe_view.html'" style="cursor:pointer;">                            
-                            <a href="new_recipe_view.html">
-                                <strong>지금 세일중!</strong>
-                                저평가 우량종목이 세일 중? 알고리즘으로 찾아낸 매수 타이밍 종목
-                            </a>
-                        </div>                         
-                        <div class="figure dividend" onclick="location.href ='new_recipe_view.html'" style="cursor:pointer;">                        
-                            <a href="new_recipe_view.html">
-                                <strong>배당매력주</strong>
-                                초보도 벌 수 있는 투자의 정석 ‘고배당주에 투자하라’
-                            </a>
-                        </div> 
-                        <div class="figure growth" onclick="location.href ='new_recipe_view.html'" style="cursor:pointer;">                                 
-                            <a href="new_recipe_view.html">
-                                <strong>이익 성장주</strong>
-                                위대한 기업을 찾는 공식 ‘내일의 넷플릭스를 찾아라’
-                            </a>
+                        <div class="list_masonry">                            
+                            <div class="figure consumerMonopoly" onclick="location.href ='new_recipe_view.html'"
+                                style="cursor:pointer;">
+                                <a href="new_recipe_view.html">
+                                    <strong>소비자 독점</strong>
+                                    워런 버핏 투자 전략의 핵심 '소비자 독점 기업을 찾아라'
+                                </a>
+                            </div>
+                            <div class="figure rocketBooster" onclick="location.href ='new_recipe_view.html'"
+                                style="cursor:pointer;">
+                                <a href="new_recipe_view.html">
+                                    <strong>로켓 성장주</strong>
+                                    높은 EPS(주당순이익)로 미래 성장률이 가속화 되는 종목을 찾아냅니다. 로켓에 올라타세요!
+                                </a>
+                            </div>
                         </div>
-                        <div class="figure superStocks" onclick="location.href ='new_recipe_view.html'" style="cursor:pointer;">      
-                            <a href="new_recipe_view.html">
-                                <strong>슈퍼 스톡스</strong>
-                                뛰는 주 위에 나는 주 ‘슈퍼 종목을 찾아라’                                
-                            </a>
-                        </div>      
-                        <div class="figure consumerMonopoly" onclick="location.href ='new_recipe_view.html'" style="cursor:pointer;">                                 
-                            <a href="new_recipe_view.html">
-                                <strong>소비자 독점</strong>
-                                워런 버핏 투자 전략의 핵심 ‘소비자 독점 기업을 찾아라’                                
-                            </a>                                                        
-                        </div>    
-                        <div class="figure rocketBooster" onclick="location.href ='new_recipe_view.html'" style="cursor:pointer;">                                 
-                            <a href="new_recipe_view.html">
-                                <strong>로켓 성장주</strong>
-                                높은 EPS(주당순이익)로 미래 성장률이 가속화 되는 종목을 찾아냅니다. 로켓에 올라타세요!                      
-                            </a>                                                        
-                        </div>    
+                        <!-- //list_masonry -->
                     </div>
-                    <!-- //list_masonry -->
+                    <!-- //filter_box_inner -->
+
+                    <!-- 가치주 -->
+                    <div class="filter_box_inner" data-filter="value">
+                        <div class="txt_box">
+                            <h3 class="title">10배 오를 주식! 저평가 가치주 레시피</h3>
+                        </div>
+                        <div class="list_masonry">
+                            <div class="figure sale" onclick="location.href ='new_recipe_view.html'"
+                                style="cursor:pointer;">
+                                <a href="new_recipe_view.html">
+                                    <strong>지금 세일중!</strong>
+                                    저평가 우량종목이 세일 중? 알고리즘으로 찾아낸 매수 타이밍 종목
+                                </a>
+                            </div>
+                            <div class="figure dividend" onclick="location.href ='new_recipe_view.html'"
+                                style="cursor:pointer;">
+                                <a href="new_recipe_view.html">
+                                    <strong>배당매력주</strong>
+                                    초보도 벌 수 있는 투자의 정석 '고배당주에 투자하라'
+                                </a>
+                            </div>
+                        </div>
+                        <!-- //list_masonry -->
+                    </div>
+                    <!-- //filter_box_inner -->
+
+                    <!-- 기술적분석 -->
+                    <div class="filter_box_inner" data-filter="technical">
+                        <div class="txt_box">
+                            <h3 class="title">데이터로 찾는 투자매력주! 기술적 분석 레시피</h3>
+                        </div>
+                        <div class="list_masonry">
+                            <div class="figure sale" onclick="location.href ='new_recipe_view.html'"
+                                style="cursor:pointer;">
+                                <a href="new_recipe_view.html">
+                                    <strong>지금 세일중!</strong>
+                                    저평가 우량종목이 세일 중? 알고리즘으로 찾아낸 매수 타이밍 종목
+                                </a>
+                            </div>
+                            <div class="figure dividend" onclick="location.href ='new_recipe_view.html'"
+                                style="cursor:pointer;">
+                                <a href="new_recipe_view.html">
+                                    <strong>배당매력주</strong>
+                                    초보도 벌 수 있는 투자의 정석 '고배당주에 투자하라'
+                                </a>
+                            </div>
+                        </div>
+                        <!-- //list_masonry -->
+                    </div>
+                    <!-- //filter_box_inner -->                    
                 </div>
                 <!-- //box_tabs -->
+                <div class="figure one_step flx_btn">
+                    <span class="txt">지금살까? 매매신호 종목만 쏙쏙!</span>
+                    <a href="trading_signal.html" class="more"><span>오늘의 매매신호</span></a>
+                </div>
+                <!-- //figure one_step flx_btn -->
             </div>
             <!-- //sub_mid -->
         </div>
@@ -203,7 +313,8 @@
             <div class="notice">
                 <div class="service_info">
                     <p>본 서비스는 투자판단에 참고용으로만 사용하실 수 있으며, 모든 투자판단은 투자자 본인의 책임으로 당사는 그 결과에 대해 법적인 일체의 책임을 지지 않습니다.</p>
-                    <p class="dataLink">data from <a href="https://www.quandl.com/" target="_blank">Quandl and Sharadar</a></p>
+                    <p class="dataLink">data from <a href="https://www.quandl.com/" target="_blank">Quandl and
+                            Sharadar</a></p>
                 </div>
 
                 <ul class="terms_list">
