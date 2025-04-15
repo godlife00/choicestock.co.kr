@@ -39356,6 +39356,7 @@ body.v_signalStreng {
   border-radius: 16px;
   background: var(--Background-primary-light-background, #F1F4F6);
   padding: 24px 20px;
+  width: 100%;
   box-sizing: border-box;
 }
 .modal.past_score_pop .pop_con .score_box_area.recipe_list .list_box .list_img {
