@@ -8120,6 +8120,34 @@ $(document).ready(function () {
         [1645142400000, 25], [1645228800000, 48], [1645315200000, 55], [1645401600000, 62]
     ];
 
+    // 독점력 데이터 
+    const scoreBoxData3 = [
+        [1644969600000, 32], [1645056000000, 28],
+        [1645142400000, 25], [1645228800000, 48], [1645315200000, 55], [1645401600000, 62]
+    ];
+
+    // 안정성 데이터 
+    const scoreBoxData4 = [
+        [1644969600000, 32], [1645056000000, 28],
+        [1645142400000, 25], [1645228800000, 48], [1645315200000, 55], [1645401600000, 62]
+    ];
+
+    // 수익성 데이터 
+    const scoreBoxData5 = [
+        [1644969600000, 32], [1645056000000, 28],
+        [1645142400000, 25], [1645228800000, 48], [1645315200000, 55], [1645401600000, 62]
+    ];
+
+    // 현금창출 데이터 
+    const scoreBoxData6 = [
+        [1644969600000, 32], [1645056000000, 28],
+        [1645142400000, 25], [1645228800000, 48], [1645315200000, 55], [1645401600000, 62]
+    ];
+    
+    
+    
+    
+
     // 차트 렌더링을 위한 Intersection Observer 생성 함수
     function createChartObserver(chartId, data) {
         const observer = new IntersectionObserver((entries, observer) => {
@@ -8149,6 +8177,26 @@ $(document).ready(function () {
     // 미래성장성
     if ($('#score_box_chart2').length) {
         createChartObserver('score_box_chart2', scoreBoxData2);
+    }
+
+    // 독점력
+    if ($('#score_box_chart3').length) {
+        createChartObserver('score_box_chart3', scoreBoxData3);
+    }
+
+    // 안정성
+    if ($('#score_box_chart4').length) {
+        createChartObserver('score_box_chart4', scoreBoxData4);
+    }
+
+    // 수익성   
+    if ($('#score_box_chart5').length) {
+        createChartObserver('score_box_chart5', scoreBoxData5);
+    }
+
+    // 현금창출
+    if ($('#score_box_chart6').length) {    
+        createChartObserver('score_box_chart6', scoreBoxData6);
     }
 
 });
