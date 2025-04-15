@@ -8116,38 +8116,34 @@ $(document).ready(function () {
 
     // 미래성장성 데이터 
     const scoreBoxData2 = [
-        [1644969600000, 32], [1645056000000, 28],
-        [1645142400000, 25], [1645228800000, 48], [1645315200000, 55], [1645401600000, 62]
+        [1644969600000, 33], [1645056000000, 29],
+        [1645142400000, 26], [1645228800000, 49], [1645315200000, 54], [1645401600000, 63]
     ];
 
     // 독점력 데이터 
     const scoreBoxData3 = [
-        [1644969600000, 32], [1645056000000, 28],
-        [1645142400000, 25], [1645228800000, 48], [1645315200000, 55], [1645401600000, 62]
+        [1644969600000, 31], [1645056000000, 27],
+        [1645142400000, 24], [1645228800000, 47], [1645315200000, 56], [1645401600000, 61]
     ];
 
     // 안정성 데이터 
     const scoreBoxData4 = [
-        [1644969600000, 32], [1645056000000, 28],
-        [1645142400000, 25], [1645228800000, 48], [1645315200000, 55], [1645401600000, 62]
+        [1644969600000, 34], [1645056000000, 30],
+        [1645142400000, 26], [1645228800000, 50], [1645315200000, 53], [1645401600000, 60]
     ];
 
     // 수익성 데이터 
     const scoreBoxData5 = [
-        [1644969600000, 32], [1645056000000, 28],
-        [1645142400000, 25], [1645228800000, 48], [1645315200000, 55], [1645401600000, 62]
+        [1644969600000, 31], [1645056000000, 29],
+        [1645142400000, 24], [1645228800000, 47], [1645315200000, 54], [1645401600000, 64]
     ];
 
     // 현금창출 데이터 
     const scoreBoxData6 = [
-        [1644969600000, 32], [1645056000000, 28],
-        [1645142400000, 25], [1645228800000, 48], [1645315200000, 55], [1645401600000, 62]
+        [1644969600000, 33], [1645056000000, 27],
+        [1645142400000, 26], [1645228800000, 49], [1645315200000, 57], [1645401600000, 60]
     ];
     
-    
-    
-    
-
     // 차트 렌더링을 위한 Intersection Observer 생성 함수
     function createChartObserver(chartId, data) {
         const observer = new IntersectionObserver((entries, observer) => {
@@ -8169,35 +8165,20 @@ $(document).ready(function () {
         }
     }
 
-    // 스마트스코어 종합점수
-    if ($('#score_box_chart').length) {
-        createChartObserver('score_box_chart', scoreBoxData1);
-    }
+    const chartDataMap = {
+        'score_box_chart': scoreBoxData1, // 종합점수
+        'score_box_chart2': scoreBoxData2, // 미래성장성
+        'score_box_chart3': scoreBoxData3, // 독점력
+        'score_box_chart4': scoreBoxData4, // 안정성
+        'score_box_chart5': scoreBoxData5, // 수익성
+        'score_box_chart6': scoreBoxData6 // 현금창출
+    };
 
-    // 미래성장성
-    if ($('#score_box_chart2').length) {
-        createChartObserver('score_box_chart2', scoreBoxData2);
-    }
-
-    // 독점력
-    if ($('#score_box_chart3').length) {
-        createChartObserver('score_box_chart3', scoreBoxData3);
-    }
-
-    // 안정성
-    if ($('#score_box_chart4').length) {
-        createChartObserver('score_box_chart4', scoreBoxData4);
-    }
-
-    // 수익성   
-    if ($('#score_box_chart5').length) {
-        createChartObserver('score_box_chart5', scoreBoxData5);
-    }
-
-    // 현금창출
-    if ($('#score_box_chart6').length) {    
-        createChartObserver('score_box_chart6', scoreBoxData6);
-    }
+    Object.entries(chartDataMap).forEach(([chartId, data]) => {
+        if ($(`#${chartId}`).length) {
+            createChartObserver(chartId, data);
+        }
+    });
 
 });
 
