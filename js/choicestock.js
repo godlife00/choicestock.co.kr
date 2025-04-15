@@ -2284,6 +2284,11 @@ $(document).ready(function () {
         $('.blocker').show();
         $('html, body').css("overflow", "hidden");
         history.pushState(null, null, location.href); // 히스토리에 현재 상태 추가
+
+        if ($('#score_box_chart').length) {
+            createScoreBoxChart('score_box_chart', scoreBoxData1);
+        }
+
     });
 
     // past_score_pop 닫기 이벤트
@@ -2408,9 +2413,9 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-// 레시피 필터링 기능
+// 레시피 & 스마트스코어 필터링 기능
 $(document).ready(function() {
-    // 초기화: 첫번째 탭 컨텐츠만 보이게 설정
+    // 초기화: 페이지별 첫번째 탭 컨텐츠 설정
     if($('.sub_recipe').length > 0) {
         // new_recipe.html 페이지인 경우
         $('.filter_box_inner').hide();
@@ -2419,25 +2424,28 @@ $(document).ready(function() {
         // note.html 페이지인 경우
         $('.filter_box_inner').hide();
         $('[data-filter="all_note"]').show();
+    } else {
+        // 스마트스코어 페이지인 경우
+        $('.filter_box_inner').hide();
+        $('[data-filter="growth"]').show();
     }
     
-    // 필터 버튼 클릭 이벤트
-    $('.filter_btn').on('click', function(e) {
-        e.preventDefault();
+    // 필터 버튼 클릭 이벤트 (레시피 & 스마트스코어 공통)
+    $('.filter_btn, .sort_btn').on('click', function(e) {
+        const isRecipe = $(this).hasClass('filter_btn');
         
-        // 모든 버튼에서 active 클래스 제거
-        $('.filter_btn').removeClass('active');
-        // 클릭된 버튼에 active 클래스 추가
-        $(this).addClass('active');
+        // active 클래스 처리
+        if(isRecipe) {
+            $('.filter_btn').removeClass('active');
+            $(this).addClass('active');
+        } else {
+            $('.sort li').removeClass('active');
+            $(this).parent('li').addClass('active');
+        }
         
-        // 선택된 필터 값 가져오기
-        var filterValue = $(this).data('filter');
-        
-        // 모든 컨텐츠 숨김
+        // 선택된 필터 값으로 컨텐츠 표시
+        const filterValue = $(this).data('filter');
         $('.filter_box_inner').hide();
-        
-        // 해당 필터값을 가진 컨텐츠만 보여주기
         $('.filter_box_inner[data-filter="' + filterValue + '"]').show();
-        
     });
 });
