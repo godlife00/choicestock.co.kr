@@ -1111,10 +1111,10 @@ $(document).ready(function () {
                 gridLineColor: 'transparent',                
                 labels: {
                     style: {
-                        color: '#6a727b',
+                        color: '#6B7684',
                         fontSize: '13px',
                         textAlign: 'center',
-                        fontWeight: '400'
+                        fontWeight: '400',
                     },                    
                     formatter: function () {
                         // Y 좌표와 X 좌표의 보정값을 미리 정의된 배열로 설정
@@ -1156,29 +1156,42 @@ $(document).ready(function () {
 
             series: [{
                 name: '투자매력도',
-                data: [10, 100, 90, 90, 90],
+                data: [100, 100, 100, 70, 70],
                 pointPlacement: 'on',  
-                color: '#7983d5', // 시리즈 선의 색상을 설정
+                color: '#4168F6', // 시리즈 선의 색상을 설정
                 lineWidth: 1, // 시리즈 선의 너비를 설정
+                fillColor: 'rgba(191, 209, 254, 0.3)', // 단색 반투명으로 변경
+                zIndex: 2,
                 marker: {
                     enabled: true,
-                    fillColor: '#404fc3',
-                    lineColor: '#f7f8f9', // 마커 테두리 색상을 설정
+                    fillColor: '#4168F6',
+                    lineColor: '#F5F5F9', // 마커 테두리 색상을 설정
+                    width: 6,
                     lineWidth: 1, // 마커 테두리 두께
                     radius: 2.7 // 마커의 반지름
+                }              
+            }, {
+                name: '전년동기',
+                data: [50, 50, 100, 100, 50],
+                pointPlacement: 'on',  
+                color: '#DADCE0', // 시리즈 선의 색상을 설정
+                lineWidth: 1, // 시리즈 선의 너비를 설정                
+                fillColor: 'rgba(140, 152, 167, 0.15)', // 단색 반투명으로 변경
+                zIndex: 1,
+                marker: {
+                    enabled: false,                    
                 }              
             }],
             
             plotOptions: {
                 series: {                    
                     lineWidth: 1,
-                    fillColor: '#e3e7f8',
                     states: {
                         hover: {
-                            enabled: false // 시리즈 hover 상태 비활성화
-                        },                        
+                            enabled: false
+                        }                        
                     }
-                }
+                },
             },
         });
         // 차트 리사이즈 계산
@@ -1186,7 +1199,7 @@ $(document).ready(function () {
             var paneSize = chart.pane[0].options.size,
                 paneCenter = chart.pane[0].center,
                 centerX = paneCenter[0],
-                centerY = paneCenter[1] + 34, // centerY 조정
+                centerY = paneCenter[1] + 32, // centerY 조정
                 size = Math.min(chart.plotWidth, chart.plotHeight) * (parseInt(paneSize) / 100),
                 radius = size / 2;
         
@@ -1209,13 +1222,11 @@ $(document).ready(function () {
             // 중앙의 값 텍스트 추가
             chart.centerText = chart.renderer.text('23', centerX, centerY)
                 .css({
-                    color: '#404fc3',
+                    color: '#4168F6',
                     fontSize: '30px',
                     textAlign: 'center',
-                    fontWeight: 'bold',                    
-                    fontFamily: "Pretendard Variable, Pretendard",
-                    // textOutline: '1px contrast',
-                    // textShadow: '0px 0px 4px rgba(255, 255, 255, 1)'
+                    fontWeight: '700',                    
+                    fontFamily: "Pretendard Variable, Pretendard",                    
                 })
                 .attr({
                     zIndex: 5,
@@ -1302,15 +1313,18 @@ $(document).ready(function () {
                 name: '투자매력도',
                 data: seriesData,
                 pointPlacement: 'on',  
-                color: '#7983d5', // 시리즈 선의 색상을 설정
+                color: '#4168F6', // 시리즈 선의 색상을 설정
                 lineWidth: 1, // 시리즈 선의 너비를 설정
+                fillColor: 'rgba(191, 209, 254, 0.3)', // 단색 반투명으로 변경
+                zIndex: 2,
                 marker: {
                     enabled: true,
-                    fillColor: '#404fc3',
-                    lineColor: '#ff0000', // 마커 테두리 색상을 설정
-                    lineWidth: 0, // 마커 테두리 두께
-                    radius: 1.5 // 마커의 반지름
-                }               
+                    fillColor: '#4168F6',
+                    lineColor: '#F5F5F9', // 마커 테두리 색상을 설정
+                    width: 6,
+                    lineWidth: 1, // 마커 테두리 두께
+                    radius: 2.7 // 마커의 반지름
+                }              
             }],
             plotOptions: {
                 series: {
@@ -7981,4 +7995,258 @@ $(document).ready(function () {
     };
 
     renderScoreChart();
+
+
+    // 스코어 박스 차트
+    Highcharts.chart('score_box_chart', {
+        chart: {            
+            type: 'area',
+            margin: [0, 10, 30, 10],
+            backgroundColor: 'transparent'
+        },
+        title: {
+            text: '',                
+        },
+
+        navigator: {
+            enabled: false,
+        },
+
+        scrollbar: {
+            enabled: false,
+        },
+
+        rangeSelector: {
+            enabled: false,
+        },
+
+        credits: {
+            enabled: false
+        },
+
+        exporting: {
+            enabled: false,
+        },
+
+        legend: {
+            enabled: false,
+        },
+
+        tooltip: {            
+            enabled: false,
+        },
+        
+        xAxis: {
+            type: 'datetime',
+            showFirstLabel: true,
+            showLastLabel: true,             
+            startOnTick: true,   
+            endOnTick: false,     
+            tickWidth: 0,                
+            gridLineWidth: 0,      
+            minPadding: 0,
+            maxPadding: 0,     
+            lineColor: '#E0E3E7',
+            // tickInterval: 30 * 24 * 3600 * 1000, // 약 한 달 간격
+            labels: {                                    
+                style: {
+                    color: '#8C98A7',
+                    fontSize: '12px',
+                },
+                formatter: function () {
+                    return Highcharts.dateFormat('%y.%m', this.value);
+                }
+            },
+        },
+        yAxis: {
+            title: {
+                text: ''
+            },
+            gridLineWidth: 1,
+            gridLineDashStyle: 'Dash',
+            showFirstLabel: false,
+            showLastLabel: true,                
+            opposite: true,
+            minPadding: 0.1,
+            maxPadding: 0.1,
+            labels: {
+                enabled: false
+            }
+        },
+        
+        plotOptions: {
+            area: {
+                fillColor: {
+                    linearGradient: {
+                        x1: 0,
+                        y1: 0,
+                        x2: 0,
+                        y2: 1
+                    },
+                    stops: [
+                        [0, Highcharts.color('#4168F6').setOpacity(0.2).get('rgba')],
+                        [1, Highcharts.color('#4168F6').setOpacity(0).get('rgba')]
+                    ]
+                },
+                marker: {
+                    enabled: true,
+                    radius: 4,
+                    fillColor: '#4168F6',
+                    lineWidth: 2,
+                    lineColor: '#FFFFFF'
+                },
+                lineWidth: 2,
+                lineColor: '#4168F6',
+                states: {
+                    hover: {
+                        lineWidth: 2
+                    }
+                },
+                threshold: null,
+                dataLabels: {
+                    enabled: true,
+                    color: '#4168F6',
+                    style: {
+                        fontSize: '13px',
+                        fontWeight: 'bold',
+                        textOutline: 'none'
+                    },
+                    y: -5
+                }
+            }
+        },
+        series: [{
+            data:  [
+                [1644969600000, 38], [1645056000000, 25], 
+                [1645142400000, 18], [1645228800000, 15], [1645315200000, 22], [1645401600000, 35],
+            ],
+        }]
+    });
+
+    // 스코어 박스 차트
+    Highcharts.chart('score_box_chart2', {
+        chart: {            
+            type: 'area',
+            margin: [0, 10, 30, 10],
+            backgroundColor: 'transparent'
+        },
+        title: {
+            text: '',                
+        },
+
+        navigator: {
+            enabled: false,
+        },
+
+        scrollbar: {
+            enabled: false,
+        },
+
+        rangeSelector: {
+            enabled: false,
+        },
+
+        credits: {
+            enabled: false
+        },
+
+        exporting: {
+            enabled: false,
+        },
+
+        legend: {
+            enabled: false,
+        },
+
+        tooltip: {            
+            enabled: false,
+        },
+        
+        xAxis: {
+            type: 'datetime',
+            showFirstLabel: true,
+            showLastLabel: true,             
+            startOnTick: true,   
+            endOnTick: false,     
+            tickWidth: 0,                
+            gridLineWidth: 0,      
+            minPadding: 0,
+            maxPadding: 0,     
+            lineColor: '#E0E3E7',
+            // tickInterval: 30 * 24 * 3600 * 1000, // 약 한 달 간격
+            labels: {                                    
+                style: {
+                    color: '#8C98A7',
+                    fontSize: '12px',
+                },
+                formatter: function () {
+                    return Highcharts.dateFormat('%y.%m', this.value);
+                }
+            },
+        },
+        yAxis: {
+            title: {
+                text: ''
+            },
+            gridLineWidth: 1,
+            gridLineDashStyle: 'Dash',
+            showFirstLabel: false,
+            showLastLabel: true,                
+            opposite: true,
+            minPadding: 0.1,
+            maxPadding: 0.1,
+            labels: {
+                enabled: false
+            }
+        },
+        
+        plotOptions: {
+            area: {
+                fillColor: {
+                    linearGradient: {
+                        x1: 0,
+                        y1: 0,
+                        x2: 0,
+                        y2: 1
+                    },
+                    stops: [
+                        [0, Highcharts.color('#4168F6').setOpacity(0.2).get('rgba')],
+                        [1, Highcharts.color('#4168F6').setOpacity(0).get('rgba')]
+                    ]
+                },
+                marker: {
+                    enabled: true,
+                    radius: 4,
+                    fillColor: '#4168F6',
+                    lineWidth: 2,
+                    lineColor: '#FFFFFF'
+                },
+                lineWidth: 2,
+                lineColor: '#4168F6',
+                states: {
+                    hover: {
+                        lineWidth: 2
+                    }
+                },
+                threshold: null,
+                dataLabels: {
+                    enabled: true,
+                    color: '#4168F6',
+                    style: {
+                        fontSize: '13px',
+                        fontWeight: 'bold',
+                        textOutline: 'none'
+                    },
+                    y: -5
+                }
+            }
+        },
+        series: [{
+            data:  [
+                [1644969600000, 38], [1645056000000, 25], 
+                [1645142400000, 18], [1645228800000, 15], [1645315200000, 22], [1645401600000, 35],
+            ],
+        }]
+    });
 });
+

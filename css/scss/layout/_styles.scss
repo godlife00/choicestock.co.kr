@@ -13195,6 +13195,49 @@ table.tableRanking td {
 		margin-top: 16px;
 		padding: 0;
 	}
+	.spider_year {
+		text-align: center;
+		.spider_year_item {
+			display: inline-flex;
+			align-items: center;
+			gap: 8px 18px;
+			border-radius: 100px;
+			border: 1px solid var(--Border-primary-border, #E3E5E8);
+			background: #FFF;
+			margin: 16px auto 9px;			
+			padding: 12px 14px 12px 24px;
+			box-sizing: border-box;
+			span {
+				cursor: pointer;
+				display: inline-flex;
+				align-items: center;
+				gap: 4px 4px;
+				color: var(--Font-secondary-caption, #6B7684);			
+				font-family: var(--Body, Pretendard);
+				font-size: var(--Size-xs-13, 13px);
+				font-style: normal;
+				font-weight: var(--Weight-500, 500);
+				line-height: var(--Line-height-xs-13, 16px); /* 123.077% */
+				letter-spacing: var(--Tracking-md, -0.3px);
+				&::before {
+					content: '';
+					display: inline-block;
+					width: 8px;
+					height: 8px;
+					border-radius: 50%;
+					background-color: var(--Font-secondary-caption, #6B7684);					
+				}
+				&.active {
+					&::before {						
+						background-color: var(--Font-primary-blue, #4168F6);						
+					}
+					
+				}
+			}
+
+		}
+		
+	}
 }
 
 .globalStock .sub_search .sub_mid .investCharm_area:after {
@@ -13410,16 +13453,23 @@ table.tableRanking td {
 
 	.highcharts-axis-labels.highcharts-radial-axis-labels {
 		span {
-			color: #6a727b !important;
+			color: var(--Gray-gray600, #6B7684);
+			font-family: Pretendard;
+			font-size: 13px;
+			font-style: normal;
 			font-weight: 400;
+			line-height: normal;
 		}
 
 		strong {
 			display: inline-block;
-			padding-top: 5px;
-			font-weight: 400;
-			color: #6a727b !important;
+			// padding-top: 5px;
+			color: var(--Gray-gray600, #6B7684);			
+			font-family: Pretendard;
 			font-size: 16px;
+			font-style: normal;
+			font-weight: 500;
+			line-height: normal;
 		}
 	}
 }
