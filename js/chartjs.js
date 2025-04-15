@@ -7993,264 +7993,120 @@ $(document).ready(function () {
             Highcharts.chart('score_chart', options);
         }
     };
+    renderScoreChart(); //마켓스코어 6개월 마켓스코어 선차트 실행
 
-    renderScoreChart();
+    // 스마트스코어 팝업 과거점수 표시 - 선차트
+    function createScoreBoxChart(containerId, seriesData) {
+        return Highcharts.chart(containerId, {
+            chart: {            
+                type: 'area',
+                margin: [0, 10, 30, 10],
+                backgroundColor: 'transparent'
+            },
+            title: { text: '' },
+            navigator: { enabled: false },
+            scrollbar: { enabled: false },
+            rangeSelector: { enabled: false },
+            credits: { enabled: false },
+            exporting: { enabled: false },
+            legend: { enabled: false },
+            tooltip: { enabled: false },
+            
+            xAxis: {
+                type: 'datetime',
+                showFirstLabel: true,
+                showLastLabel: true,             
+                startOnTick: true,   
+                endOnTick: false,     
+                tickWidth: 0,                
+                gridLineWidth: 0,      
+                minPadding: 0,
+                maxPadding: 0,     
+                lineColor: '#E0E3E7',
+                labels: {                                    
+                    style: {
+                        color: '#8C98A7',
+                        fontSize: '12px',
+                    },
+                    formatter: function () {
+                        return Highcharts.dateFormat('%y.%m', this.value);
+                    }
+                }
+            },
+            yAxis: {
+                title: { text: '' },
+                gridLineWidth: 1,
+                gridLineDashStyle: 'Dash',
+                showFirstLabel: false,
+                showLastLabel: true,                
+                opposite: true,
+                minPadding: 0.1,
+                maxPadding: 0.1,
+                labels: { enabled: false }
+            },
+            plotOptions: {
+                area: {
+                    fillColor: {
+                        linearGradient: {
+                            x1: 0, y1: 0, x2: 0, y2: 1
+                        },
+                        stops: [
+                            [0, Highcharts.color('#4168F6').setOpacity(0.2).get('rgba')],
+                            [1, Highcharts.color('#4168F6').setOpacity(0).get('rgba')]
+                        ]
+                    },
+                    marker: {
+                        enabled: true,
+                        radius: 4,
+                        fillColor: '#4168F6',
+                        lineWidth: 2,
+                        lineColor: '#FFFFFF'
+                    },
+                    lineWidth: 2,
+                    lineColor: '#4168F6',
+                    states: {
+                        hover: { lineWidth: 2 }
+                    },
+                    threshold: null,
+                    dataLabels: {
+                        enabled: true,
+                        color: '#4168F6',
+                        style: {
+                            fontSize: '13px',
+                            fontWeight: 'bold',
+                            textOutline: 'none'
+                        },
+                        y: -5
+                    }
+                }
+            },
+            series: [{
+                data: seriesData
+            }]
+        });
+    }
 
+    // 스마트스코어 종합점수 데이터
+    const scoreBoxData1 = [
+        [1644969600000, 38], [1645056000000, 25], 
+        [1645142400000, 18], [1645228800000, 15], [1645315200000, 22], [1645401600000, 35]
+    ];
 
+    // 미래성장성 데이터 
+    const scoreBoxData2 = [
+        [1644969600000, 32], [1645056000000, 28],
+        [1645142400000, 25], [1645228800000, 48], [1645315200000, 55], [1645401600000, 62]
+    ];
+
+    // 스마트스코어 종합점수
     if ($('#score_box_chart').length) {
-    // 스코어 박스 차트
-        Highcharts.chart('score_box_chart', {
-            chart: {            
-                type: 'area',
-                margin: [0, 10, 30, 10],
-                backgroundColor: 'transparent'
-            },
-            title: {
-                text: '',                
-            },
-
-            navigator: {
-                enabled: false,
-            },
-
-            scrollbar: {
-                enabled: false,
-            },
-
-            rangeSelector: {
-                enabled: false,
-            },
-
-            credits: {
-                enabled: false
-            },
-
-            exporting: {
-                enabled: false,
-            },
-
-            legend: {
-                enabled: false,
-            },
-
-            tooltip: {            
-                enabled: false,
-            },
-            
-            xAxis: {
-                type: 'datetime',
-                showFirstLabel: true,
-                showLastLabel: true,             
-                startOnTick: true,   
-                endOnTick: false,     
-                tickWidth: 0,                
-                gridLineWidth: 0,      
-                minPadding: 0,
-                maxPadding: 0,     
-                lineColor: '#E0E3E7',
-                // tickInterval: 30 * 24 * 3600 * 1000, // 약 한 달 간격
-                labels: {                                    
-                    style: {
-                        color: '#8C98A7',
-                        fontSize: '12px',
-                    },
-                    formatter: function () {
-                        return Highcharts.dateFormat('%y.%m', this.value);
-                    }
-                },
-            },
-            yAxis: {
-                title: {
-                    text: ''
-                },
-                gridLineWidth: 1,
-                gridLineDashStyle: 'Dash',
-                showFirstLabel: false,
-                showLastLabel: true,                
-                opposite: true,
-                minPadding: 0.1,
-                maxPadding: 0.1,
-                labels: {
-                    enabled: false
-                }
-            },
-            
-            plotOptions: {
-                area: {
-                    fillColor: {
-                        linearGradient: {
-                            x1: 0,
-                            y1: 0,
-                            x2: 0,
-                            y2: 1
-                        },
-                        stops: [
-                            [0, Highcharts.color('#4168F6').setOpacity(0.2).get('rgba')],
-                            [1, Highcharts.color('#4168F6').setOpacity(0).get('rgba')]
-                        ]
-                    },
-                    marker: {
-                        enabled: true,
-                        radius: 4,
-                        fillColor: '#4168F6',
-                        lineWidth: 2,
-                        lineColor: '#FFFFFF'
-                    },
-                    lineWidth: 2,
-                    lineColor: '#4168F6',
-                    states: {
-                        hover: {
-                            lineWidth: 2
-                        }
-                    },
-                    threshold: null,
-                    dataLabels: {
-                        enabled: true,
-                        color: '#4168F6',
-                        style: {
-                            fontSize: '13px',
-                            fontWeight: 'bold',
-                            textOutline: 'none'
-                        },
-                        y: -5
-                    }
-                }
-            },
-            series: [{
-                data:  [
-                    [1644969600000, 38], [1645056000000, 25], 
-                    [1645142400000, 18], [1645228800000, 15], [1645315200000, 22], [1645401600000, 35],
-                ],
-            }]
-        });
+        createScoreBoxChart('score_box_chart', scoreBoxData1);
     }
 
+    // 미래성장성 미래성장성
     if ($('#score_box_chart2').length) {
-        // 스코어 박스 차트
-        Highcharts.chart('score_box_chart2', {
-            chart: {            
-                type: 'area',
-                margin: [0, 10, 30, 10],
-                backgroundColor: 'transparent'
-            },
-            title: {
-                text: '',                
-            },
-
-            navigator: {
-                enabled: false,
-            },
-
-            scrollbar: {
-                enabled: false,
-            },
-
-            rangeSelector: {
-                enabled: false,
-            },
-
-            credits: {
-                enabled: false
-            },
-
-            exporting: {
-                enabled: false,
-            },
-
-            legend: {
-                enabled: false,
-            },
-
-            tooltip: {            
-                enabled: false,
-            },
-            
-            xAxis: {
-                type: 'datetime',
-                showFirstLabel: true,
-                showLastLabel: true,             
-                startOnTick: true,   
-                endOnTick: false,     
-                tickWidth: 0,                
-                gridLineWidth: 0,      
-                minPadding: 0,
-                maxPadding: 0,     
-                lineColor: '#E0E3E7',
-                // tickInterval: 30 * 24 * 3600 * 1000, // 약 한 달 간격
-                labels: {                                    
-                    style: {
-                        color: '#8C98A7',
-                        fontSize: '12px',
-                    },
-                    formatter: function () {
-                        return Highcharts.dateFormat('%y.%m', this.value);
-                    }
-                },
-            },
-            yAxis: {
-                title: {
-                    text: ''
-                },
-                gridLineWidth: 1,
-                gridLineDashStyle: 'Dash',
-                showFirstLabel: false,
-                showLastLabel: true,                
-                opposite: true,
-                minPadding: 0.1,
-                maxPadding: 0.1,
-                labels: {
-                    enabled: false
-                }
-            },
-            
-            plotOptions: {
-                area: {
-                    fillColor: {
-                        linearGradient: {
-                            x1: 0,
-                            y1: 0,
-                            x2: 0,
-                            y2: 1
-                        },
-                        stops: [
-                            [0, Highcharts.color('#4168F6').setOpacity(0.2).get('rgba')],
-                            [1, Highcharts.color('#4168F6').setOpacity(0).get('rgba')]
-                        ]
-                    },
-                    marker: {
-                        enabled: true,
-                        radius: 4,
-                        fillColor: '#4168F6',
-                        lineWidth: 2,
-                        lineColor: '#FFFFFF'
-                    },
-                    lineWidth: 2,
-                    lineColor: '#4168F6',
-                    states: {
-                        hover: {
-                            lineWidth: 2
-                        }
-                    },
-                    threshold: null,
-                    dataLabels: {
-                        enabled: true,
-                        color: '#4168F6',
-                        style: {
-                            fontSize: '13px',
-                            fontWeight: 'bold',
-                            textOutline: 'none'
-                        },
-                        y: -5
-                    }
-                }
-            },
-            series: [{
-                data:  [
-                    [1644969600000, 38], [1645056000000, 25], 
-                    [1645142400000, 18], [1645228800000, 15], [1645315200000, 22], [1645401600000, 35],
-                ],
-            }]
-        });
+        createScoreBoxChart('score_box_chart2', scoreBoxData2);
     }
+
 });
 
