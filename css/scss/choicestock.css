@@ -3263,6 +3263,10 @@ table.tableRanking td {
   background: #f7f8f9;
 }
 
+.globalStock .main_mid.attention_area .attentionSwiper .swiper-pagination {
+  display: block !important;
+}
+
 .globalStock .main_mid.attention_area .one_step,
 .globalStock .main_mid.event_recipe .one_step {
   width: calc(100% - 30px);

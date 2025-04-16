@@ -708,6 +708,22 @@ $(document).ready(function () {
         });
     });
     
+    //메인 상단 관심종목
+    if ($('.attentionSwiper').length) {
+        var attentionSwiper = new Swiper('.attentionSwiper', {
+            // autoplay: {
+            //     delay: 3000,
+            //     disableOnInteraction: false,
+            // },        
+            speed: 300,
+            spaceBetween: 15,
+            loop: true,      
+            pagination: {
+                el: '.swiper-pagination',
+            },  
+        });
+    }  
+    
     //메인 다우선물,다우지수
     if ($('.maingdowSwiper').length) {
         var swiper = new Swiper('.maingdowSwiper', {                    
