@@ -2906,13 +2906,16 @@ table.tableRanking td {
 .globalStock .main_mid.attention_area .attentionSwiper {
 	width: calc(100% - 30px);
 	margin: 15px auto 0;
-	padding-bottom: 30px;
+	padding-bottom: 30px;	
 }
 
 .globalStock .main_mid.attention_area .attentionSwiper .swiper-slide {
 	height: 194px;
 	border-radius: 16px;
 	background: #f7f8f9;
+}
+.globalStock .main_mid.attention_area .attentionSwiper .swiper-pagination {
+	display: block !important;
 }
 
 .globalStock .main_mid.attention_area .one_step,

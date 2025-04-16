@@ -709,7 +709,7 @@ $(document).ready(function () {
     });
     
     //메인 상단 관심종목
-    if ($('.maingdowSwiper').length) {
+    if ($('.attentionSwiper').length) {
         var attentionSwiper = new Swiper('.attentionSwiper', {
             // autoplay: {
             //     delay: 3000,
