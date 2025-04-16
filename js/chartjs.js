@@ -7820,7 +7820,6 @@ $(document).ready(function () {
                 spacingLeft: 10,
                 spacingRight: 10,
                 marginRight: 28 // 오른쪽 여백 확보                
-
             },
 
             title: {
@@ -7862,6 +7861,11 @@ $(document).ready(function () {
                 borderColor: '#608CFA',
                 padding: 14,
                 xDateFormat: '%Y.%m/%d',
+                outside: true, // 툴팁이 차트 밖으로 나가도 표시되도록 설정                
+                style: {
+                    pointerEvents: 'auto',
+                    zIndex: 1000 // z-index를 높게 설정해 y축 위에 올라오도록 함
+                },
                 formatter: function () {
                     var date = new Date(this.x);
                     date.setHours(date.getHours() + 9); // KST로 변환
