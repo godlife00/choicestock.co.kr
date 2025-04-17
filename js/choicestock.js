@@ -1647,17 +1647,7 @@ $(document).ready(function () {
             $('.score_pop01').show().addClass('slideUp');
         }        
     });
-    // 마켓스코어 공포 지수 툴팁 + 차트
-    $('.globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .tradeSignal_status .market_alert').on('click', function () {
-        if ($(this).hasClass('no_signal')) {            
-            return;
-        } else {
-            $('body').css('overflow', 'hidden');
-            $('.modal').hide().removeClass('slideUp');
-            $('.blocker').show();
-            $('.score_pop02').show().addClass('slideUp');
-        }        
-    });
+    
     // 주가&EPS 모달 팝업
     $('.v_signalStreng.globalStock #wrap #container .btn_schRecipeSet').on('click', function () {
         if ($(this).hasClass('no_signal')) {            
@@ -2282,7 +2272,7 @@ $(document).ready(function () {
 
     }          
 
-    // 마켓스코어 공포 지수 툴팁 + 차트
+    // 마켓스코어 공포 지수 툴팁 + 차트    
     $('.globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .tradeSignal_status .market_alert').on('click', function () {
         if ($(this).hasClass('no_signal')) {            
             return;
@@ -2291,7 +2281,19 @@ $(document).ready(function () {
             $('.modal').hide().removeClass('slideUp');
             $('.blocker').show();
             $('.score_pop02').show().addClass('slideUp');
+            history.pushState(null, null, location.href); // 히스토리에 현재 상태 추가
         }        
+    });
+
+    // score_pop02 닫기 이벤트
+    $('.score_pop02 .clse').click(function() {
+        history.back(); // 이전 상태로 돌아가기
+    });
+    // 히스토리 변경 감지
+    window.addEventListener('popstate', function() {
+        $('.score_pop02').hide().removeClass('slideUp');
+        $('.blocker').hide();
+        $('html, body').css("overflow", "");
     });
         
     // spider_year_item 클릭 이벤트
