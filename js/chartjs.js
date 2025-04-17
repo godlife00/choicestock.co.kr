@@ -7864,7 +7864,7 @@ $(document).ready(function () {
                 outside: true, // 툴팁이 차트 밖으로 나가도 표시되도록 설정                
                 style: {
                     pointerEvents: 'auto',
-                    zIndex: 1000 // z-index를 높게 설정해 y축 위에 올라오도록 함
+                    zIndex: 9999 // z-index를 높게 설정해 y축 위에 올라오도록 함
                 },
                 formatter: function () {
                     var date = new Date(this.x);
