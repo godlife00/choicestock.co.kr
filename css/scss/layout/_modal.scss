@@ -3121,11 +3121,12 @@
 		
 		.score_box_area {
 			margin-top: 40px;
-			padding: 0 20px;
+			padding: 0;
 			.score_box {
 				display: flex;
 				align-items: center;
 				gap: 8px 8px;
+				padding: 0 20px;
 				color: var(--Font-primary-blue, #4168F6);				
 				font-family: var(--Title, Pretendard);
 				font-size: var(--Size-2xl, 20px);
@@ -3152,9 +3153,12 @@
 			.scorebox_chart_style {
 				height: 220px;
 				margin: 16px auto 0;
+				.highcharts-label.highcharts-series-label {
+					display: none !important;
+				}
 			}
-			.score_box_content {
-				margin-top: 25px;
+			.score_box_content {				
+				margin: 25px 20px 0;
 				border-radius: 16px;
 				background: #F7F8FA;
 				padding: 24px 24px;

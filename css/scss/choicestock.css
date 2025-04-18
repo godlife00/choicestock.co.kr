@@ -13241,7 +13241,7 @@ table.tableRanking td {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background-color: var(--Font-secondary-caption, #6B7684);
+  background-color: var(--Font-secondary-caption, #B0B8C1);
 }
 .globalStock .sub_search .sub_mid .investCharm_area .spider_year .spider_year_item span.active::before {
   background-color: var(--Font-primary-blue, #4168F6);
@@ -39262,12 +39262,13 @@ body.v_signalStreng {
 }
 .modal.past_score_pop .pop_con .score_box_area {
   margin-top: 40px;
-  padding: 0 20px;
+  padding: 0;
 }
 .modal.past_score_pop .pop_con .score_box_area .score_box {
   display: flex;
   align-items: center;
   gap: 8px 8px;
+  padding: 0 20px;
   color: var(--Font-primary-blue, #4168F6);
   font-family: var(--Title, Pretendard);
   font-size: var(--Size-2xl, 20px);
@@ -39295,8 +39296,11 @@ body.v_signalStreng {
   height: 220px;
   margin: 16px auto 0;
 }
+.modal.past_score_pop .pop_con .score_box_area .scorebox_chart_style .highcharts-label.highcharts-series-label {
+  display: none !important;
+}
 .modal.past_score_pop .pop_con .score_box_area .score_box_content {
-  margin-top: 25px;
+  margin: 25px 20px 0;
   border-radius: 16px;
   background: #F7F8FA;
   padding: 24px 24px;
