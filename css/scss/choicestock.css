@@ -39190,6 +39190,12 @@ body.v_signalStreng {
 .modal.tooltip_pop.score_pop02 .pop_con .chart_wrap .scoreChart_style .highcharts-label.highcharts-series-label {
   display: none !important;
 }
+.modal.tooltip_pop.score_pop02 .pop_con .chart_wrap .chart_txt_wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px 8px;
+}
 .modal.tooltip_pop.score_pop02 .pop_con .chart_wrap .chart_txt {
   display: inline-flex;
   justify-content: center;
@@ -39376,6 +39382,7 @@ body.v_signalStreng {
 }
 .modal.past_score_pop .pop_con .score_box_area .future_growth_list {
   margin-top: 24px;
+  padding: 0 20px;
 }
 .modal.past_score_pop .pop_con .score_box_area .future_growth_list .list_item {
   margin: 0;

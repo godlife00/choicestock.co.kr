@@ -3041,6 +3041,12 @@
 					display: none !important;
 				}
 			}
+			.chart_txt_wrap {
+				display: flex;
+				flex-direction: column;
+				align-items: flex-start;
+				gap: 8px 8px;
+			}
 			.chart_txt {
 				display: inline-flex;
 				justify-content: center;
@@ -3237,6 +3243,7 @@
 
 			.future_growth_list {
 				margin-top: 24px;
+				padding: 0 20px;
 				.list_item {
 					margin: 0;
 					padding: 0;

@@ -2302,11 +2302,6 @@ $(document).ready(function () {
         $('.blocker').show();
         $('html, body').css("overflow", "hidden");
         history.pushState(null, null, location.href); // 히스토리에 현재 상태 추가
-
-        if ($('#score_box_chart').length) {
-            createScoreBoxChart('score_box_chart', scoreBoxData1);
-        }
-
     });
 
     // past_score_pop 닫기 이벤트
@@ -2465,5 +2460,5 @@ $(document).ready(function() {
         const filterValue = $(this).data('filter');
         $('.filter_box_inner').hide();
         $('.filter_box_inner[data-filter="' + filterValue + '"]').show();
-    });
+    });    
 });

@@ -7820,6 +7820,33 @@ $(document).ready(function () {
                 spacingLeft: 10,
                 spacingRight: 10,
                 marginRight: 25, // 반응형 여백을 위해 퍼센트로 설정
+                events: {
+                    load: function() {
+                        // 차트 로드 시 리사이즈 이벤트 리스너 등록
+                        const chart = this;
+                        let resizeTimeout;
+                        
+                        function handleResize() {
+                            clearTimeout(resizeTimeout);
+                            resizeTimeout = setTimeout(() => {
+                                chart.reflow();
+                            }, 100); // 디바운스 처리
+                        }
+
+                        window.addEventListener('resize', handleResize);
+
+                        // 차트 destroy 시 이벤트 리스너 제거
+                        this.unbindResize = function() {
+                            window.removeEventListener('resize', handleResize);
+                        };
+                    },
+                    destroy: function() {
+                        // 차트 destroy 시 등록된 이벤트 리스너 제거
+                        if (this.unbindResize) {
+                            this.unbindResize();
+                        }
+                    }
+                }
             },
 
             responsive: {
@@ -7896,7 +7923,7 @@ $(document).ready(function () {
                 xDateFormat: '%Y.%m/%d',
                 outside: true, // 툴팁이 차트 밖으로 나가도 표시되도록 설정                
                 style: {
-                    // pointerEvents: 'auto',
+                    pointerEvents: 'auto',
                     zIndex: 9999 // z-index를 높게 설정해 y축 위에 올라오도록 함
                 },
                 formatter: function () {
@@ -8060,7 +8087,7 @@ $(document).ready(function () {
             chart: {
                 type: 'area',
                 margin: [10, 10, 30, 20],
-                backgroundColor: 'transparent'
+                backgroundColor: 'transparent',
             },
             title: { text: '' },
             navigator: { enabled: false },
@@ -8133,10 +8160,12 @@ $(document).ready(function () {
                 showFirstLabel: false,
                 showLastLabel: true,
                 opposite: true,
-                ceiling: 100, // 최대값을 100으로 고정
-                floor: 0, // 최소값을 0으로 고정
-                tickInterval: 20, // 눈금 간격을 20으로 설정
-                minRange: 20, // 최소 표시 범위
+                min: 0,
+                max: 100,
+                // ceiling: 100, // 최대값을 100으로 고정
+                // floor: 0, // 최소값을 0으로 고정
+                // tickInterval: 20, // 눈금 간격을 20으로 설정
+                // minRange: 20, // 최소 표시 범위
                 startOnTick: true, // 시작점에서 눈금 표시
                 endOnTick: true, // 끝점에서 눈금 표시
                 minPadding: 0.1,
