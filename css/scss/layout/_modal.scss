@@ -178,7 +178,7 @@
 		box-shadow: none;
 		background-color: #fff;
 		box-sizing: border-box;
-		z-index: 9999;
+		z-index: 9997;
 		
 		.pop_header {
 			position: relative;
@@ -3073,6 +3073,7 @@
 
 // 종목진단 과거 점수 표시 팝업
 .modal.past_score_pop {	
+	padding-top: 54px !important;
 	&::after {
 		content: "";
 		display: block;				
@@ -3151,6 +3152,7 @@
 				}
 			}
 			.scorebox_chart_style {
+				overflow: scroll;
 				height: 220px;
 				margin: 16px auto 0;
 				.highcharts-label.highcharts-series-label {

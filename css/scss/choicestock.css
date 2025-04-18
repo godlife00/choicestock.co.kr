@@ -36442,7 +36442,7 @@ body.v_signalStreng {
   box-shadow: none;
   background-color: #fff;
   box-sizing: border-box;
-  z-index: 9999;
+  z-index: 9997;
 }
 .modal.fullpage .pop_header {
   position: relative;
@@ -39216,6 +39216,9 @@ body.v_signalStreng {
   background-color: var(--Gray-gray600, #6B7684);
 }
 
+.modal.past_score_pop {
+  padding-top: 54px !important;
+}
 .modal.past_score_pop::after {
   content: "";
   display: block;
@@ -39293,6 +39296,7 @@ body.v_signalStreng {
   letter-spacing: -0.36px;
 }
 .modal.past_score_pop .pop_con .score_box_area .scorebox_chart_style {
+  overflow: scroll;
   height: 220px;
   margin: 16px auto 0;
 }

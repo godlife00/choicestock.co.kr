@@ -8096,15 +8096,19 @@ $(document).ready(function () {
             yAxis: {
                 title: { text: '' },
                 gridLineWidth: 1,
-                gridLineDashStyle: 'Dash',
+                gridLineDashStyle: 'Dash', 
                 showFirstLabel: false,
                 showLastLabel: true,
                 opposite: true,
-                min: 0, // 최소값 0으로 설정
-                max: 100, // 최대값 100으로 설정
+                ceiling: 100, // 최대값을 100으로 고정
+                floor: 0, // 최소값을 0으로 고정
+                tickInterval: 20, // 눈금 간격을 20으로 설정
+                minRange: 20, // 최소 표시 범위
+                startOnTick: true, // 시작점에서 눈금 표시
+                endOnTick: true, // 끝점에서 눈금 표시
                 minPadding: 0.1,
-                maxPadding: 0.1,                
-                labels: { enabled: false }                
+                maxPadding: 0.1,
+                labels: { enabled: false }
             },
             plotOptions: {
                 area: {
