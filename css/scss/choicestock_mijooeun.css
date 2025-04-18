@@ -39335,7 +39335,7 @@ body.v_signalStreng {
 }
 .modal.past_score_pop .pop_con .score_box_area .sort_area {
   margin: 0;
-  padding: 0;
+  padding: 0 20px;
 }
 .modal.past_score_pop .pop_con .score_box_area .sort_area .sort {
   display: flex;
@@ -39430,7 +39430,7 @@ body.v_signalStreng {
 }
 .modal.past_score_pop .pop_con .score_box_area.future_growth {
   border-top: 8px solid #F7F8FA;
-  padding: 40px 20px;
+  padding: 40px 0;
 }
 .modal.past_score_pop .pop_con .score_box_area.future_growth .score_box {
   margin-top: 32px;

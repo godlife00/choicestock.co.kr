@@ -3034,7 +3034,7 @@
 			border-top: 8px solid #F7F8FA;
 			.scoreChart_style {
 				margin-top: 16px;				
-				width: 100%;
+				width: 100%;				
 				box-sizing: border-box;
 				height: 260px;
 				.highcharts-label.highcharts-series-label {
@@ -3192,7 +3192,7 @@
 
 			.sort_area {
 				margin: 0;
-				padding: 0;
+				padding: 0 20px;
 				.sort {
 					display: flex;
 					flex-wrap: nowrap;
@@ -3297,7 +3297,7 @@
 			// 미래성장성
 			&.future_growth {
 				border-top: 8px solid #F7F8FA;								
-				padding: 40px 20px;
+				padding: 40px 0;
 				.score_box {
 					margin-top: 32px;
 				}

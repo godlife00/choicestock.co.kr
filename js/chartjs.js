@@ -7819,8 +7819,41 @@ $(document).ready(function () {
                 plotBackgroundColor: '#F7F8FA',
                 spacingLeft: 10,
                 spacingRight: 10,
-                marginRight: 28 // 오른쪽 여백 확보                
+                marginRight: 25, // 반응형 여백을 위해 퍼센트로 설정
             },
+
+            responsive: {
+                rules: [{
+                    condition: {
+                        maxWidth: 480 // iPhone SE, 작은 모바일 기기
+                    },
+                    chartOptions: {
+                        chart: {
+                            marginRight: 30
+                        }
+                    }
+                }, {
+                    condition: {
+                        minWidth: 480,
+                        maxWidth: 640 // 태블릿 이하 중간 크기 모바일
+                    },
+                    chartOptions: {
+                        chart: {
+                            marginRight: 35
+                        }
+                    }
+                }, {
+                    condition: {
+                        minWidth: 640 // 태블릿 이상
+                    },
+                    chartOptions: {
+                        chart: {
+                            marginRight: 55
+                        }
+                    }
+                }]
+            },
+
 
             title: {
                 text: '',
@@ -7863,7 +7896,7 @@ $(document).ready(function () {
                 xDateFormat: '%Y.%m/%d',
                 outside: true, // 툴팁이 차트 밖으로 나가도 표시되도록 설정                
                 style: {
-                    pointerEvents: 'auto',
+                    // pointerEvents: 'auto',
                     zIndex: 9999 // z-index를 높게 설정해 y축 위에 올라오도록 함
                 },
                 formatter: function () {
