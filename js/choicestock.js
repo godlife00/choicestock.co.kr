@@ -2302,6 +2302,7 @@ $(document).ready(function () {
         $('.blocker').show();
         $('html, body').css("overflow", "hidden");
         history.pushState(null, null, location.href); // 히스토리에 현재 상태 추가
+        customizeAndAppendList(); // 종목검색 개요탭 등 상단 고정 종목명 함수 실행
     });
 
     // past_score_pop 닫기 이벤트

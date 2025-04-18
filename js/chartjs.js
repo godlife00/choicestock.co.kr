@@ -8108,9 +8108,9 @@ $(document).ready(function () {
                 borderColor: '#608CFA',
                 padding: 14,
                 xDateFormat: '%Y.%m/%d',
-                outside: true, // 툴팁이 차트 밖으로 나가도 표시되도록 설정                
+                // outside: true, // 툴팁이 차트 밖으로 나가도 표시되도록 설정                
                 style: {
-                    pointerEvents: 'auto',
+                    // pointerEvents: 'auto',
                     zIndex: 9999 // z-index를 높게 설정해 y축 위에 올라오도록 함
                 },
                 formatter: function () {
