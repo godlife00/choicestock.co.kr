@@ -178,7 +178,7 @@
 		box-shadow: none;
 		background-color: #fff;
 		box-sizing: border-box;
-		z-index: 9999;
+		z-index: 9997;
 		
 		.pop_header {
 			position: relative;
@@ -3034,12 +3034,18 @@
 			border-top: 8px solid #F7F8FA;
 			.scoreChart_style {
 				margin-top: 16px;				
-				width: 100%;
+				width: 100%;				
 				box-sizing: border-box;
 				height: 260px;
 				.highcharts-label.highcharts-series-label {
 					display: none !important;
 				}
+			}
+			.chart_txt_wrap {
+				display: flex;
+				flex-direction: column;
+				align-items: flex-start;
+				gap: 8px 8px;
 			}
 			.chart_txt {
 				display: inline-flex;
@@ -3073,6 +3079,7 @@
 
 // 종목진단 과거 점수 표시 팝업
 .modal.past_score_pop {	
+	padding-top: 54px !important;
 	&::after {
 		content: "";
 		display: block;				
@@ -3121,11 +3128,12 @@
 		
 		.score_box_area {
 			margin-top: 40px;
-			padding: 0 20px;
+			padding: 0;
 			.score_box {
 				display: flex;
 				align-items: center;
 				gap: 8px 8px;
+				padding: 0 20px;
 				color: var(--Font-primary-blue, #4168F6);				
 				font-family: var(--Title, Pretendard);
 				font-size: var(--Size-2xl, 20px);
@@ -3150,11 +3158,15 @@
 				}
 			}
 			.scorebox_chart_style {
+				overflow: scroll;
 				height: 220px;
 				margin: 16px auto 0;
+				.highcharts-label.highcharts-series-label {
+					display: none !important;
+				}
 			}
-			.score_box_content {
-				margin-top: 25px;
+			.score_box_content {				
+				margin: 25px 20px 0;
 				border-radius: 16px;
 				background: #F7F8FA;
 				padding: 24px 24px;
@@ -3186,7 +3198,7 @@
 
 			.sort_area {
 				margin: 0;
-				padding: 0;
+				padding: 0 20px;
 				.sort {
 					display: flex;
 					flex-wrap: nowrap;
@@ -3231,6 +3243,7 @@
 
 			.future_growth_list {
 				margin-top: 24px;
+				padding: 0 20px;
 				.list_item {
 					margin: 0;
 					padding: 0;
@@ -3291,7 +3304,7 @@
 			// 미래성장성
 			&.future_growth {
 				border-top: 8px solid #F7F8FA;								
-				padding: 40px 20px;
+				padding: 40px 0;
 				.score_box {
 					margin-top: 32px;
 				}

@@ -7819,8 +7819,68 @@ $(document).ready(function () {
                 plotBackgroundColor: '#F7F8FA',
                 spacingLeft: 10,
                 spacingRight: 10,
-                marginRight: 28 // 오른쪽 여백 확보                
+                marginRight: 25, // 반응형 여백을 위해 퍼센트로 설정
+                events: {
+                    load: function() {
+                        // 차트 로드 시 리사이즈 이벤트 리스너 등록
+                        const chart = this;
+                        let resizeTimeout;
+                        
+                        function handleResize() {
+                            clearTimeout(resizeTimeout);
+                            resizeTimeout = setTimeout(() => {
+                                chart.reflow();
+                            }, 100); // 디바운스 처리
+                        }
+
+                        window.addEventListener('resize', handleResize);
+
+                        // 차트 destroy 시 이벤트 리스너 제거
+                        this.unbindResize = function() {
+                            window.removeEventListener('resize', handleResize);
+                        };
+                    },
+                    destroy: function() {
+                        // 차트 destroy 시 등록된 이벤트 리스너 제거
+                        if (this.unbindResize) {
+                            this.unbindResize();
+                        }
+                    }
+                }
             },
+
+            responsive: {
+                rules: [{
+                    condition: {
+                        maxWidth: 480 // iPhone SE, 작은 모바일 기기
+                    },
+                    chartOptions: {
+                        chart: {
+                            marginRight: 30
+                        }
+                    }
+                }, {
+                    condition: {
+                        minWidth: 480,
+                        maxWidth: 640 // 태블릿 이하 중간 크기 모바일
+                    },
+                    chartOptions: {
+                        chart: {
+                            marginRight: 35
+                        }
+                    }
+                }, {
+                    condition: {
+                        minWidth: 640 // 태블릿 이상
+                    },
+                    chartOptions: {
+                        chart: {
+                            marginRight: 55
+                        }
+                    }
+                }]
+            },
+
 
             title: {
                 text: '',
@@ -8026,8 +8086,8 @@ $(document).ready(function () {
         return Highcharts.chart(containerId, {
             chart: {
                 type: 'area',
-                margin: [0, 10, 30, 10],
-                backgroundColor: 'transparent'
+                margin: [10, 10, 30, 20],
+                backgroundColor: 'transparent',
             },
             title: { text: '' },
             navigator: { enabled: false },
@@ -8036,36 +8096,78 @@ $(document).ready(function () {
             credits: { enabled: false },
             exporting: { enabled: false },
             legend: { enabled: false },
-            tooltip: { enabled: false },
+            
+            tooltip: {
+                shadow: false,
+                split: false,
+                shared: true,
+                useHTML: true,
+                backgroundColor: '#fff',
+                borderWidth: 1,
+                borderRadius: 32,
+                borderColor: '#608CFA',
+                padding: 14,
+                xDateFormat: '%Y.%m/%d',
+                // outside: true, // 툴팁이 차트 밖으로 나가도 표시되도록 설정                
+                style: {
+                    // pointerEvents: 'auto',
+                    zIndex: 9999 // z-index를 높게 설정해 y축 위에 올라오도록 함
+                },
+                formatter: function () {
+                    var date = new Date(this.x);
+                    date.setHours(date.getHours() + 9); // KST로 변환
+                    var formattedDate = Highcharts.dateFormat('%Y.%m/%d', date);
+                    var s = '<span style="display: block;margin-bottom: 4px; font-size:12px; color:#4E5866; font-weight:500;">' + formattedDate + '</span>';
+                    this.points.forEach(function (point) {
+                        s += '<p style="font-size:12px; color:#4E5866; font-weight:500;">' + point.series.name + ': ' + point.y + '</p>';
+                    });
+                    return s;
+                }
+            },
 
             xAxis: {
                 type: 'datetime',
                 showFirstLabel: true,
                 showLastLabel: true,
-                startOnTick: true,
-                endOnTick: false,
+                startOnTick: false,
+                endOnTick: true,
                 tickWidth: 0,
                 gridLineWidth: 0,
                 minPadding: 0,
                 maxPadding: 0,
-                lineColor: '#E0E3E7',
+                lineColor: '#E0E3E7',                
                 labels: {
                     style: {
                         color: '#8C98A7',
                         fontSize: '12px',
                     },
                     formatter: function () {
-                        return Highcharts.dateFormat('%y.%m', this.value);
-                    }
+                        var date = new Date(this.value);
+                        date.setMonth(date.getMonth() - 1);
+                        return Highcharts.dateFormat('%y.%m', date);
+                    },
+                    align: 'center', // 라벨 정렬 방식을 중앙으로 설정
+                    reserveSpace: true, // 라벨을 위한 공간 확보
+                    distance: 25, // 축과 라벨 사이의 거리를 고정값으로 설정
+                    overflow: 'justify', // 라벨이 겹치지 않도록 자동 조정
+                    x: -24,
                 }
             },
             yAxis: {
                 title: { text: '' },
                 gridLineWidth: 1,
-                gridLineDashStyle: 'Dash',
+                gridLineDashStyle: 'Dash', 
                 showFirstLabel: false,
                 showLastLabel: true,
                 opposite: true,
+                min: 0,
+                max: 100,
+                // ceiling: 100, // 최대값을 100으로 고정
+                // floor: 0, // 최소값을 0으로 고정
+                // tickInterval: 20, // 눈금 간격을 20으로 설정
+                // minRange: 20, // 최소 표시 범위
+                startOnTick: true, // 시작점에서 눈금 표시
+                endOnTick: true, // 끝점에서 눈금 표시
                 minPadding: 0.1,
                 maxPadding: 0.1,
                 labels: { enabled: false }
@@ -8102,51 +8204,59 @@ $(document).ready(function () {
                             fontWeight: 'bold',
                             textOutline: 'none'
                         },
-                        y: -5
+                        y: -5,
+                        formatter: function() {
+                            var points = this.series.points;
+                            var lastPoint = points[points.length - 1];
+                            return this.point === lastPoint ? this.y : null;
+                        }
                     }
                 }
             },
-            series: [{
-                data: seriesData
-            }]
+            series: seriesData
         });
     }
 
     // 스마트스코어 종합점수 데이터
-    const scoreBoxData1 = [
-        [1644969600000, 38], [1645056000000, 25],
-        [1645142400000, 18], [1645228800000, 15], [1645315200000, 22], [1645401600000, 35]
-    ];
+    const scoreBoxData1 = [{
+        name: '종합점수',
+        data: [[1713193200000, 83],[1715785200000, 83],[1718290800000, 83],[1721055600000, 81],[1723734000000, 81],[1726412400000, 81],[1729004400000, 83],[1731596400000, 83],[1734274800000, 83],[1736953200000, 83],[1739458800000, 82],[1741878000000, 82],[1744729200000, 79]]
+    }];
 
     // 미래성장성 데이터 
-    const scoreBoxData2 = [
-        [1644969600000, 33], [1645056000000, 29],
-        [1645142400000, 26], [1645228800000, 49], [1645315200000, 54], [1645401600000, 63]
-    ];
+    const scoreBoxData2 = [{
+        name: '미래성장성',
+        data: [[1644969600000, 33], [1645056000000, 29],
+        [1645142400000, 26], [1645228800000, 49], [1645315200000, 54], [1645401600000, 63]]
+    }];
 
     // 독점력 데이터 
-    const scoreBoxData3 = [
-        [1644969600000, 31], [1645056000000, 27],
-        [1645142400000, 24], [1645228800000, 47], [1645315200000, 56], [1645401600000, 61]
-    ];
+    const scoreBoxData3 = [{
+        name: '독점력',
+        data: [[1644969600000, 31], [1645056000000, 27],
+        [1645142400000, 24], [1645228800000, 47], [1645315200000, 56], [1645401600000, 61]]
+    }];
 
     // 안정성 데이터 
-    const scoreBoxData4 = [
-        [1644969600000, 34], [1645056000000, 30],
-        [1645142400000, 26], [1645228800000, 50], [1645315200000, 53], [1645401600000, 60]
-    ];
+    const scoreBoxData4 = [{
+        name: '안정성',
+        data: [[1644969600000, 34], [1645056000000, 30],
+        [1645142400000, 26], [1645228800000, 50], [1645315200000, 53], [1645401600000, 60]]
+    }];
 
     // 수익성 데이터 
-    const scoreBoxData5 = [
-        [1644969600000, 31], [1645056000000, 29],
-        [1645142400000, 24], [1645228800000, 47], [1645315200000, 54], [1645401600000, 64]
-    ];
+    const scoreBoxData5 = [{
+        name: '수익성',
+        data: [[1644969600000, 31], [1645056000000, 29],
+        [1645142400000, 24], [1645228800000, 47], [1645315200000, 54], [1645401600000, 64]]
+    }];
 
     // 현금창출 데이터 
-    const scoreBoxData6 = [
-        [1644969600000, 33], [1645056000000, 27],
-        [1645142400000, 26], [1645228800000, 49], [1645315200000, 57], [1645401600000, 60]
-    ];
+    const scoreBoxData6 = [{
+        name: '현금창출',
+        data: [[1644969600000, 33], [1645056000000, 27],
+        [1645142400000, 26], [1645228800000, 49], [1645315200000, 57], [1645401600000, 60]]
+    }];
     
     // 차트 렌더링을 위한 Intersection Observer 생성 함수
     function createChartObserver(chartId, data) {
