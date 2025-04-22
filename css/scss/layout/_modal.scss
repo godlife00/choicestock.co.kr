@@ -3099,8 +3099,8 @@
 		}
 	}
 	.pop_con {
-		overflow: scroll;
-		overflow-x: hidden;
+		// overflow: auto;
+		// overflow-x: hidden;
 		padding: 16px 0;
 		.pop_title {
 			padding: 0 20px;

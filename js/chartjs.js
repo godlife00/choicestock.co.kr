@@ -7921,10 +7921,27 @@ $(document).ready(function () {
                 borderColor: '#608CFA',
                 padding: 14,
                 xDateFormat: '%Y.%m/%d',
-                outside: true, // 툴팁이 차트 밖으로 나가도 표시되도록 설정                
+                positioner: function(width, height, point) {
+                    // 툴팁이 y축 라벨과 겹치지 않도록 위치 조정
+                    const chart = this.chart;
+                    const plotLeft = chart.plotLeft;
+                    const plotWidth = chart.plotWidth;
+                    
+                    // 툴팁의 x 위치를 point.plotX 기준으로 계산
+                    let x = point.plotX + plotLeft - (width / 2);
+                    
+                    // 툴팁이 차트 영역을 벗어나지 않도록 조정
+                    if (x < plotLeft) x = plotLeft;
+                    if (x + width > plotLeft + plotWidth) x = plotLeft + plotWidth - width;
+                    
+                    return {
+                        x: x,
+                        y: 15 // 차트 상단에 고정
+                    };
+                },
                 style: {
                     pointerEvents: 'auto',
-                    zIndex: 9999 // z-index를 높게 설정해 y축 위에 올라오도록 함
+                    zIndex: 99999 // z-index를 높게 설정해 y축 위에 올라오도록 함
                 },
                 formatter: function () {
                     var date = new Date(this.x);

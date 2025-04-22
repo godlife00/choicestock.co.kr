@@ -39242,8 +39242,6 @@ body.v_signalStreng {
   display: none;
 }
 .modal.past_score_pop .pop_con {
-  overflow: scroll;
-  overflow-x: hidden;
   padding: 16px 0;
 }
 .modal.past_score_pop .pop_con .pop_title {

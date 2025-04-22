@@ -126,27 +126,30 @@ $(document).ready(function () {
     });
 
     //검색 상단 고정 종목명,
-    var search_height = $('.globalStock .sub_search .search_top').height();
-    var recom_height = $('.globalStock .sub_recom .search_top').height();
-    var chartarea_height = $('.globalStock .sub_recom .sub_top.view .chart_area .chartData').height();
-    $(window).scroll(function () {
+    function initScrollFixElements() {
+        var search_height = $('.globalStock .sub_search .search_top').height();
+        var recom_height = $('.globalStock .sub_recom .search_top').height();
+        var chartarea_height = $('.globalStock .sub_recom .sub_top.view .chart_area .chartData').height();
 
-        if ($(this).scrollTop() > 210) {
-            $('.globalStock .sub_search .search_top .data_area').addClass('fix_data');
-            $('.globalStock .sub_search .search_top').css('height', search_height);
-        } else {
-            $('.globalStock .sub_search .search_top .data_area').removeClass('fix_data');
-            $('.globalStock .sub_search .search_top').css('height', 'auto');
-        };
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 210) {
+                $('.globalStock .sub_search .search_top .data_area').addClass('fix_data');
+                $('.globalStock .sub_search .search_top').css('height', search_height);
+            } else {
+                $('.globalStock .sub_search .search_top .data_area').removeClass('fix_data'); 
+                $('.globalStock .sub_search .search_top').css('height', 'auto');
+            };
 
-        if ($(this).scrollTop() > 210) {
-            $('.globalStock .sub_recom .sub_top.view .chart_area .chartData').addClass('fix_data');
-            $('.globalStock .sub_recom .search_top').css('height', recom_height);            
-        } else {
-            $('.globalStock .sub_recom .sub_top.view .chart_area .chartData').removeClass('fix_data');
-            $('.globalStock .sub_recom .search_top').css('height', 'auto');
-        }
-    });
+            if ($(this).scrollTop() > 210) {
+                $('.globalStock .sub_recom .sub_top.view .chart_area .chartData').addClass('fix_data');
+                $('.globalStock .sub_recom .search_top').css('height', recom_height);            
+            } else {
+                $('.globalStock .sub_recom .sub_top.view .chart_area .chartData').removeClass('fix_data');
+                $('.globalStock .sub_recom .search_top').css('height', 'auto');
+            }
+        });        
+    }
+    initScrollFixElements();
 
     // 종목검색 상단 고정 종목명,
     if ($('.company_nm').length) {
@@ -2301,13 +2304,13 @@ $(document).ready(function () {
         $('.past_score_pop').show().addClass('slideUp');
         $('.blocker').show();
         $('html, body').css("overflow", "hidden");
-        history.pushState(null, null, location.href); // 히스토리에 현재 상태 추가
-        customizeAndAppendList(); // 종목검색 개요탭 등 상단 고정 종목명 함수 실행
+        history.pushState(null, null, location.href); // 히스토리에 현재 상태 추가        
+        $('.list.recom').addClass('fix_data');        
     });
 
     // past_score_pop 닫기 이벤트
     $('.past_score_pop .clse').click(function() {
-        history.back(); // 이전 상태로 돌아가기
+        history.back(); // 이전 상태로 돌아가기        
     });
 
     // 히스토리 변경 감지
