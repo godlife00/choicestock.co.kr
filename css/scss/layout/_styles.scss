@@ -13198,9 +13198,10 @@ table.tableRanking td {
 		margin-top: 16px;
 		padding: 0;
 	}
-	.spider_year {
+	.spider_year {		
 		text-align: center;
 		.spider_year_item {
+			position: relative;
 			display: inline-flex;
 			align-items: center;
 			gap: 8px 18px;
@@ -13238,6 +13239,14 @@ table.tableRanking td {
 				}
 			}
 
+		}
+		.tooltip_content {				
+			@include tooltip_content;
+			right: 3px;
+			top: 36px;
+			@media (max-width: 374px) {
+				// top: 68px;
+			}
 		}
 		
 	}
@@ -18697,7 +18706,15 @@ table.tableRanking td {
 			}
 		}
 		.market_alert {
-			@include market_alert
+			@include market_alert;
+			.tooltip_content {				
+				@include tooltip_content;
+				right: 3px;
+				top: 60px;
+				@media (max-width: 374px) {
+					top: 68px;
+				}
+			}
 		}
 		
 
