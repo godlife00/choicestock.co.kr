@@ -13212,6 +13212,7 @@ table.tableRanking td {
   text-align: center;
 }
 .globalStock .sub_search .sub_mid .investCharm_area .spider_year .spider_year_item {
+  position: relative;
   display: inline-flex;
   align-items: center;
   gap: 8px 18px;
@@ -13246,7 +13247,47 @@ table.tableRanking td {
 .globalStock .sub_search .sub_mid .investCharm_area .spider_year .spider_year_item span.active::before {
   background-color: var(--Font-primary-blue, #4168F6);
 }
-
+.globalStock .sub_search .sub_mid .investCharm_area .spider_year .tooltip_content {
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 8px;
+  border-radius: 100px;
+  background: #1AE5D6;
+  max-width: 200px;
+  z-index: 88;
+  right: 3px;
+  top: 36px;
+}
+.globalStock .sub_search .sub_mid .investCharm_area .spider_year .tooltip_content .tooltip_icon {
+  position: absolute;
+  right: 20px;
+  top: -12px;
+}
+.globalStock .sub_search .sub_mid .investCharm_area .spider_year .tooltip_content .tooltip_text {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.globalStock .sub_search .sub_mid .investCharm_area .spider_year .tooltip_content .txt {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  color: var(--Font-primary-body, #24282C);
+  text-align: left;
+  font-family: var(--Body, Pretendard);
+  font-size: var(--Size-xxs, 11px);
+  font-style: normal;
+  font-weight: var(--Weight-600, 600);
+  line-height: var(--Line-height-xxs, 13px); /* 118.182% */
+  letter-spacing: var(--Tracking-md, -0.3px);
+}
 .globalStock .sub_search .sub_mid .investCharm_area:after {
   content: "";
   display: block;
@@ -18366,6 +18407,52 @@ table.tableRanking td {
 }
 .globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .tradeSignal_status .market_alert.extreme .alert_title {
   color: #00A469;
+}
+.globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .tradeSignal_status .market_alert .tooltip_content {
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 8px;
+  border-radius: 100px;
+  background: #1AE5D6;
+  max-width: 200px;
+  z-index: 88;
+  right: 3px;
+  top: 60px;
+}
+.globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .tradeSignal_status .market_alert .tooltip_content .tooltip_icon {
+  position: absolute;
+  right: 20px;
+  top: -12px;
+}
+.globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .tradeSignal_status .market_alert .tooltip_content .tooltip_text {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .tradeSignal_status .market_alert .tooltip_content .txt {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  color: var(--Font-primary-body, #24282C);
+  text-align: left;
+  font-family: var(--Body, Pretendard);
+  font-size: var(--Size-xxs, 11px);
+  font-style: normal;
+  font-weight: var(--Weight-600, 600);
+  line-height: var(--Line-height-xxs, 13px); /* 118.182% */
+  letter-spacing: var(--Tracking-md, -0.3px);
+}
+@media (max-width: 374px) {
+  .globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .tradeSignal_status .market_alert .tooltip_content {
+    top: 68px;
+  }
 }
 
 .globalStock .sub_recipe .sub_mid.recipe_view .update_info {

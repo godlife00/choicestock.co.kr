@@ -63,3 +63,43 @@
     }
 
 }
+
+// 클릭 유도 툴팁
+@mixin tooltip_content {
+    pointer-events: none;
+    user-select: none;
+
+    position: absolute;    
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 8px;
+    border-radius: 100px;
+    background: #1AE5D6;
+    max-width: 200px;
+    z-index: 88;
+    .tooltip_icon {
+        position: absolute;
+        right: 20px;
+        top: -12px;
+    }
+    .tooltip_text {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    .txt {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        color: var(--Font-primary-body, #24282C);
+        text-align: left;
+        font-family: var(--Body, Pretendard);
+        font-size: var(--Size-xxs, 11px);
+        font-style: normal;
+        font-weight: var(--Weight-600, 600);
+        line-height: var(--Line-height-xxs, 13px); /* 118.182% */
+        letter-spacing: var(--Tracking-md, -0.3px);
+    }
+}
