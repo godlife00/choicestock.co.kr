@@ -94,7 +94,6 @@
                     <div class="tab_container">
                         <!-- 원스톱진단 -->
                         <div class="">
-
                             <div class="onestep_guide">
                                 <h2 class="h2_title">관심종목 원스톱 진단</h2>
                                 <!-- <a href="#" class="more"><span>관심종목</span><img src="../img/more_white.png" alt="더보기"></a> -->
@@ -123,7 +122,227 @@
                                 <!-- 검색 결과가 없는 경우 -->
 
                             </div>
-                            
+
+                            <div class="onestep_chart">
+                                <div class="chart_wrap">
+                                    <span></span>
+                                    <div class="labels_y">
+                                        <span>고평가</span>
+                                        <span>밸류에이션</span>
+                                        <span>저평가</span>
+                                    </div>
+                                    <div class="labels_x">
+                                        <span>저</span>
+                                        <span>투자매력</span>
+                                        <span>고</span>
+                                    </div>
+                                    <figure class="highcharts-figure">
+                                        <div id="onestep_chart1_1"></div>
+                                        <div class="average" style="left: 58%; top: 38%;">종목<br>평균</div>
+                                    </figure>
+                                </div>
+                                <!-- //chart_wrap -->
+                                <p class="nodata_guide">* 밸류에이션이 N/A인 종목은 제외됩니다.</p>
+
+                                <div class="dgtic_results">
+                                    <div class="hope" style="height: 144px;">
+                                        <h3 class="h3_title">투자 유망 종목</h3>
+                                        <ul>
+                                            <li><a href="/search/summary/ADBE">어도비</a></li>
+                                            <li><a href="/search/summary/TSLA">테슬라</a></li>
+                                            <li><a href="/search/summary/MSFT">마이크로소프트</a></li>
+                                        </ul>
+                                    </div>
+                                    <!-- //hope -->
+                                    <div class="caution" style="height: 144px;">
+                                        <h3 class="h3_title">투자 유의 종목</h3>
+                                        <ul>
+                                            <li class="no_event">해당하는 종목이 없습니다</li>
+                                        </ul>
+                                    </div>
+                                    <!-- //caution -->
+                                    <p class="nodata_guide tr_left">* 투자 유망/유의 종목은 스마트 스코어, 밸류에이션, 재무 안전성 등을 반영한 포트폴리오
+                                        진단 알고리즘으로 평가합니다. </p>
+                                </div>
+                                <!-- //dgtic_results -->
+                            </div>
+                            <!-- //onestep_chart -->
+
+                            <!-- 원스톱 진단 샘플화면 -->
+                            <div class="onestep_sample">
+                                <a href="#" onclick="event.preventDefault()" ;="" data-modal="modal-5"
+                                    class="sample_box md-trigger">
+                                    <strong>원스톱 진단</strong>샘플화면입니다.
+                                </a>
+
+                                <!-- 비회원인 경우 노출, 무료회원은 공개임 -->
+                                <div class="prm_div weeks_free w_70">
+                                    <div class="box">
+                                        <div class="left">
+                                            <p class="line_1">AI매매신호, 적정주가, 종목추천을 한번에!</p>
+                                            <p class="line_2">AI가 알려주는 <strong>투자타이밍</strong></p>
+                                        </div>
+                                        <div class="right">
+                                            <div class="btn_area">
+                                                <a href="../payment/step01.html" class="btn payment_1000">첫 달
+                                                    <b>1,000원!</b></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- //비회원인 경우 노출, 무료회원은 공개임 -->
+
+                            </div>
+                            <!-- //onestep_sample -->
+
+                            <!-- 관심종목 리스트 -->
+                            <div class="interest_list">                                
+                                <div class="area">
+                                    <div class="stock_info" onclick="location.href ='search_outline.html'">
+                                        <div class="title_logo">
+                                            <span class="logo"><img
+                                                    src="https://uslogo.datahero.co.kr/img/logo/us/mvl/AAPL.svg"
+                                                    alt=""></span>
+                                        </div>
+                                        <div class="detail">
+                                            <div class="title">
+                                                <a href="" class="">애플</a>
+                                            </div>
+                                            <div class="detail_num">
+                                                <div class="num">
+                                                    <span>55.<b>36</b></span>
+                                                </div>
+                                                <div class="per">
+                                                    <span class="increase">3.84<b>%</b></span>
+                                                    <span class="hit"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- 비회원 숨김 -->
+                                        <div class="data_opinion">
+                                            <span class="signal prm_lock">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
+                                                    <path d="M11.9658 5.03423H11.3995V3.89707C11.4064 3.51913 11.3379 3.1436 11.1981 2.79243C11.0582 2.44125 10.8497 2.12147 10.5849 1.85176C10.3201 1.58205 10.0041 1.36781 9.65556 1.22157C9.30699 1.07532 8.93277 1 8.55477 1C8.17676 1 7.80255 1.07532 7.45398 1.22157C7.10541 1.36781 6.78948 1.58205 6.52463 1.85176C6.25979 2.12147 6.05134 2.44125 5.91147 2.79243C5.7716 3.1436 5.7031 3.51913 5.70998 3.89707V5.03423H5.14376C4.99393 5.03386 4.8455 5.063 4.70693 5.11999C4.56837 5.17699 4.44238 5.26072 4.33617 5.3664C4.22996 5.47208 4.14561 5.59765 4.08793 5.73593C4.03025 5.87421 4.00037 6.0225 4 6.17233V11.8619C4.00075 12.1635 4.12089 12.4526 4.33417 12.6658C4.54744 12.8791 4.83649 12.9993 5.1381 13H11.9658C12.2674 12.9993 12.5564 12.8791 12.7697 12.6658C12.983 12.4526 13.1031 12.1635 13.1039 11.8619V6.17233C13.1031 5.87072 12.983 5.58167 12.7697 5.3684C12.5564 5.15512 12.2674 5.03498 11.9658 5.03423ZM8.55146 10.1547C8.32637 10.1547 8.10633 10.088 7.91917 9.96294C7.73201 9.83788 7.58614 9.66014 7.49999 9.45218C7.41385 9.24421 7.39132 9.01538 7.43523 8.79461C7.47914 8.57384 7.58754 8.37105 7.7467 8.21188C7.90587 8.05272 8.10866 7.94432 8.32943 7.90041C8.5502 7.85649 8.77904 7.87903 8.987 7.96517C9.19496 8.05131 9.3727 8.19719 9.49776 8.38435C9.62282 8.57151 9.68957 8.79155 9.68957 9.01664C9.68907 9.31842 9.56903 9.60771 9.35573 9.82119C9.14243 10.0347 8.85324 10.1549 8.55146 10.1557V10.1547ZM10.3152 5.03423H6.78769V3.89707C6.78769 3.42929 6.97351 2.98067 7.30429 2.64989C7.63506 2.31912 8.08368 2.1333 8.55146 2.1333C9.01925 2.1333 9.46787 2.31912 9.79864 2.64989C10.1294 2.98067 10.3152 3.42929 10.3152 3.89707V5.03423Z" fill="white"/>
+                                                </svg>
+                                            </span>
+                                        </div>
+
+                                    </div>
+                                    <!-- //stock_info -->
+                                </div>
+                                <div class="area">
+                                    <div class="stock_info" onclick="location.href ='search_outline.html'">
+                                        <div class="title_logo">
+                                            <span class="logo"><img
+                                                    src="https://uslogo.datahero.co.kr/img/logo/us/mvl/AAPL.svg"
+                                                    alt=""></span>
+                                        </div>
+                                        <div class="detail">
+                                            <div class="title">
+                                                <a href="" class="">테슬라</a>
+                                            </div>
+                                            <div class="detail_num">
+                                                <div class="num">
+                                                    <span>55.<b>36</b></span>
+                                                </div>
+                                                <div class="per">
+                                                    <span class="increase">3.84<b>%</b></span>
+                                                    <span class="hit"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="data_opinion">
+                                            <span class="signal buy">매수</span>
+                                        </div>
+
+                                    </div>
+                                    <!-- //stock_info -->
+                                </div>
+                                <div class="area">
+                                    <div class="stock_info" onclick="location.href ='search_outline.html'">
+                                        <div class="title_logo">
+                                            <span class="logo"><img
+                                                    src="https://uslogo.datahero.co.kr/img/logo/us/mvl/AAPL.svg"
+                                                    alt=""></span>
+                                        </div>
+                                        <div class="detail">
+                                            <div class="title">
+                                                <a href="" class="">마이크로소프트</a>
+                                            </div>
+                                            <div class="detail_num">
+                                                <div class="num">
+                                                    <span>55.<b>36</b></span>
+                                                </div>
+                                                <div class="per">
+                                                    <span class="same">0.00<b>%</b></span>
+                                                    <span class="hit"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="data_opinion">
+                                            <span class="signal sell">매도</span>
+                                        </div>
+
+                                    </div>
+                                    <!-- //stock_info -->
+                                </div>
+                                <div class="area">
+                                    <div class="stock_info" onclick="location.href ='search_outline.html'">
+                                        <div class="title_logo">
+                                            <span class="logo"><img
+                                                    src="https://uslogo.datahero.co.kr/img/logo/us/mvl/AAPL.svg"
+                                                    alt=""></span>
+                                        </div>
+                                        <div class="detail">
+                                            <div class="title">
+                                                <a href="" class="">마이크로소프트마이크로소프트</a>
+                                            </div>
+                                            <div class="detail_num">
+                                                <div class="num">
+                                                    <span>55.<b>36</b></span>
+                                                </div>
+                                                <div class="per">
+                                                    <span class="decrease">-3.84<b>%</b></span>
+                                                    <span class="hit"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="data_opinion">
+                                            <span class="signal hold">보유</span>
+                                        </div>
+
+                                    </div>
+                                    <!-- //stock_info -->
+                                </div>
+                                <div class="area">
+                                    <div class="stock_info" onclick="location.href ='search_outline.html'">
+                                        <div class="title_logo">
+                                            <span class="logo"><img
+                                                    src="https://uslogo.datahero.co.kr/img/logo/us/mvl/AAPL.svg"
+                                                    alt=""></span>
+                                        </div>
+                                        <div class="detail">
+                                            <div class="title">
+                                                <a href="" class="">마이크로소프트마이크로소프트</a>
+                                            </div>
+                                            <div class="detail_num">
+                                                <div class="num">
+                                                    <span>55.<b>36</b></span>
+                                                </div>
+                                                <div class="per">
+                                                    <span class="increase">3.84<b>%</b></span>
+                                                    <span class="hit"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="data_opinion">
+                                            <span class="signal waitting">관망</span>
+                                        </div>
+
+                                    </div>
+                                    <!-- //stock_info -->
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <!-- //tab_container -->
