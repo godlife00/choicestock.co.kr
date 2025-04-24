@@ -5671,21 +5671,23 @@ table.tableRanking td {
 .globalStock .sub_recom .sub_top .attainment_box .title {
   color: #333;
   font-size: 0.73rem;
-  opacity: 0.5;
+  opacity: 1;
 }
 
 .globalStock .sub_recom .sub_top .revenue_box .percent,
 .globalStock .sub_recom .sub_top .attainment_box .percent {
-  color: #333;
-  font-size: 0.8rem;
+  color: var(--Font-primary-body, #24282C);
+  font-size: var(--Size-xxs, 11px);
+  font-weight: var(--Weight-600, 600);
+  letter-spacing: var(--Tracking-md, -0.3px);
 }
 
 .globalStock .sub_recom .sub_top .revenue_box .percent b,
 .globalStock .sub_recom .sub_top .attainment_box .percent b {
-  color: #333;
-  font-size: 0.8rem;
-  font-weight: 300;
-  opacity: 1;
+  color: var(--Font-primary-body, #24282C);
+  font-size: var(--Size-xxs, 11px);
+  font-weight: var(--Weight-600, 600);
+  letter-spacing: var(--Tracking-md, -0.3px);
 }
 
 .globalStock .sub_recom .sub_top table.data_attainment {
@@ -8692,7 +8694,7 @@ table.tableRanking td {
 }
 
 .globalStock .sub_analysis .sub_top .revenue_box {
-  background: #00CCBD;
+  background: #1AE5D6;
 }
 
 .globalStock .sub_analysis .sub_top .attainment_box {
@@ -18424,7 +18426,7 @@ table.tableRanking td {
   max-width: 200px;
   z-index: 88;
   right: 3px;
-  top: 60px;
+  top: 63px;
 }
 .globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .tradeSignal_status .market_alert .tooltip_content .tooltip_icon {
   position: absolute;
