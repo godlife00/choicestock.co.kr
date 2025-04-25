@@ -1,3 +1,9 @@
+:root {
+    --Font-primary-blue: #4168F6;
+    --Red-red500: #F03E4C;
+    --Font-primary-body: #24282C;
+}
+
 @mixin filter_list {
     display: flex;
     align-items: center;

@@ -1402,7 +1402,7 @@ table.tableRanking td {
 .globalStock .log_chk .login p .user_name {
 	font-size: 1.5rem;
 	line-height: 20px;
-	color: #404fc3;
+	color: var(--Font-primary-blue, #4168F6);
 	font-weight: bold;
 	padding-right: 5px;
 	display: block;
@@ -18712,10 +18712,11 @@ table.tableRanking td {
 			.tooltip_content {				
 				@include tooltip_content;
 				right: 3px;
-				top: 63px;
-				@media (max-width: 374px) {
-					top: 68px;
-				}
+				top: calc(50% + 38px);
+				transform: translateY(-50%);
+				// @media (max-width: 374px) {
+				// 	top: 68px;
+				// }
 			}
 		}
 		
