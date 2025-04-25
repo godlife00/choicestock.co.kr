@@ -116,7 +116,10 @@
 }
 .v_signalStreng.globalStock #header .headerTop .btn_login {
   margin-left: auto;
-  display: inline-block;
+  padding: 0 4px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   color: var(--Font-primary-body, #24282C);
   font-family: var(--Body, Pretendard);
   font-size: var(--Size-sm, 14px);
@@ -234,7 +237,7 @@
   margin-left: auto;
   display: flex;
   align-items: center;
-  gap: 0 12px;
+  gap: 0 8px;
 }
 .v_signalStreng.globalStock #header.m_hdr .headerTop .hm .alarm {
   position: relative;
