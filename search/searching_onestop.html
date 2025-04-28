@@ -95,35 +95,248 @@
                         <!-- 원스톱진단 -->
                         <div class="">
 
-                            <div class="onestep_guide">
-                                <h2 class="h2_title">관심종목 원스톱 진단</h2>
-                                <!-- <a href="#" class="more"><span>관심종목</span><img src="../img/more_white.png" alt="더보기"></a> -->
-                                <p class="txt">관심종목(♥)으로 설정한 투자유망 종목과 투자유의 종목으로 한 눈에 볼 수 있도록 진단합니다.</p>
+                            <div class="txt_box">
+                                <p class="txt">
+                                    AI투자로봇이 관심종목(♥)을 원스톱으로 진단합니다.<br>
+                                    나도 몰랐던 투자성향과 투자전략을 확인하세요.
+                                </p>
+                            </div>
 
+                            <div class="onestep_guide">
                                 <!-- 관심종목 리스트 -->
                                 <div class="interest_list">
                                     <div class="select_area">
-                                        <div class="selectBoxList" style="width: 180px;">
+                                        <div class="selectBoxList" style="width: 200px;">
                                             <select>
                                                 <option disabled selected>관심종목을 선택해주세요</option>
-                                                <option value="category1">관심종목#1</option>                                                          
-                                                <option value="category2">관심종목#2</option>                                    
-                                                <option value="category3">관심종목#3</option>                                    
+                                                <option value="category1">관심종목#1</option>
+                                                <option value="category2">관심종목#2</option>
+                                                <option value="category3">관심종목#3</option>
                                             </select>
                                         </div>
                                         <!-- //selectBoxList -->
+                                        <div class="sort_manage">
+                                            <a href="" class="interest_btn active" data-filter="simple">간단히</a>
+                                            <button class="interest_btn" data-filter="detail">자세히</button>
+                                        </div>
                                     </div>
                                 </div>
                                 <!-- //관심종목 리스트 -->
 
-                                <!-- 검색 결과가 없는 경우 -->
-                                <div class="filter_nodata">
-                                    <p class="txt">조건에 맞는 종목을 찾을 수 없습니다.</p>
-                                </div>
-                                <!-- 검색 결과가 없는 경우 -->
+                                <div class="filter_box_inner" data-filter="simple">
+                                    <div class="onestep_chart">
+                                        <div class="chart_wrap">
+                                            <span></span>
+                                            <div class="labels_y">
+                                                <span>고평가</span>
+                                                <span>밸류에이션</span>
+                                                <span>저평가</span>
+                                            </div>
+                                            <div class="labels_x">
+                                                <span>낮음</span>
+                                                <span>스마트스코어</span>
+                                                <span>높음</span>
+                                            </div>
+                                            <figure class="highcharts-figure">
+                                                <div id="onestep_chart1_1"></div>
+                                                <div class="average" style="left: 58%; top: 38%;">종목<br>평균</div>
+                                            </figure>
+                                        </div>
+                                        <!-- //chart_wrap -->
 
+                                    </div>
+                                    <!-- //onestep_chart -->
+
+                                    <div class="onestep_guide_box">
+                                        <h3 class="onestep_title"><b>관심종목 그룹#1</b>에서</h3>
+                                        <div class="onestep_guide_list">
+                                            <div class="list">
+                                                <p class="guide_txt">주가가 급등하고 있어요</p>
+                                                <a href="" class="item">애플</a>
+                                                <a href="" class="item">마이크로소프트</a>
+                                                <a href="" class="item">펩시코</a>
+                                                <a href="" class="item">시티우스파마슈시티우스파마슈시티우스파마슈</a>
+                                                <a href="" class="item">월마트</a>
+                                                <a href="" class="item">코카콜라</a>
+                                            </div>
+                                            <!-- //list -->
+                                            <div class="list">
+                                                <p class="guide_txt">투자매력이 상승하고 있어요</p>
+                                                <a href="" class="item">애플</a>
+                                                <a href="" class="item">마이크로소프트</a>
+                                                <a href="" class="item">펩시코</a>
+                                                <a href="" class="item">월마트</a>
+                                                <a href="" class="item">코카콜라</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- //onestep_guide_box -->
+
+                                    <div class="onestep_matrix">
+                                        <h3 class="onestep_title">
+                                            <img src="../img/icon_bot.png" alt="">
+                                            AI 매트릭스 진단
+                                        </h3>
+                                        <div class="document_box">
+                                            <div class="bg">
+                                                <img src="../img/img_matrix01.png" alt="" class="matrix_img">
+                                                <div class="title">
+                                                    저평가-우량주에 투자하는<br><b>가치투자 전략</b>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- //document_box -->
+                                    </div>
+                                    <!-- //onestep_matrix -->
+
+                                    <div class="matrix_txt">
+                                        <p class="txt">스마트스코어가 높고 저평가된 종목에 집중 투자해 장기 수익을 얻는 전통적인 가치투자 전략입니다. 이 전략은 시장
+                                            하락기에 방어력이
+                                            뛰어나지만, 상승장에서는 주가 상승률이 상대적으로 낮을 수도 있습니다. 보수적 투자로 인한 초과수익 제한이라는 단점을 보완하기 위해
+                                            모멘텀이 강한 성장주나 시장평균 이상의 배당이 기대되는 종목을 일부 추가하여 수익률을 향상시키는 것이 효과적입니다.</p>
+                                        <p class="txt_sub">*원스톱진단 이용자의 58.54%가 가치+성장주 투자자</p>
+                                    </div>
+                                    <!-- //matrix_txt -->
+
+                                    <div class="recommend_list">
+                                        <div class="recommend_item">
+                                            <div class="arrow">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    viewBox="0 0 16 16" fill="none">
+                                                    <path d="M3 6L8.2 11.2L13 6.4" stroke="#6B7684" stroke-width="2"
+                                                        stroke-linecap="round" />
+                                                </svg>
+                                            </div>
+                                            <p class="txt">균형 잡힌 투자 접근법입니다.</p>
+                                            <div class="show_item_txt">
+                                                <p class="txt_sub">기업의 재무상태, 현금 흐름, 시장 위치가 스마트스코어에 반영됩니다. 스마트스코어로 우량 기업을
+                                                    선별할 때는 밸류에이션도 함께 살펴보세요. 경기 변동으로 밸류에이션이 일시적으로 낮아진 우량 기업은 좋은 매수 기회가
+                                                    됩니다.
+                                                    장기 투자를 기본으로 하세요. 그러면서 스마트스코어와 밸류에이션 측면에서 개선이 예상되는 종목도 적절히 추가하세요. 좋은
+                                                    실적 발표와 신제품의 출시, 관련 법규의 변화는 스마트스코어 상승의 기회가 됩니다.</p>
+                                            </div>
+
+                                        </div>
+                                        <!-- //recommend_item -->
+
+                                        <div class="recommend_item">
+                                            <div class="arrow">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    viewBox="0 0 16 16" fill="none">
+                                                    <path d="M3 6L8.2 11.2L13 6.4" stroke="#6B7684" stroke-width="2"
+                                                        stroke-linecap="round" />
+                                                </svg>
+                                            </div>
+                                            <p class="txt">장기투자로 종목을 꾸준히 점검하세요.</p>
+                                            <div class="show_item_txt">
+                                                <p class="txt_sub">기업의 재무상태, 현금 흐름, 시장 위치가 스마트스코어에 반영됩니다. 스마트스코어로 우량 기업을
+                                                    선별할 때는 밸류에이션도 함께 살펴보세요. 경기 변동으로 밸류에이션이 일시적으로 낮아진 우량 기업은 좋은 매수 기회가
+                                                    됩니다.
+                                                    장기 투자를 기본으로 하세요. 그러면서 스마트스코어와 밸류에이션 측면에서 개선이 예상되는 종목도 적절히 추가하세요. 좋은
+                                                    실적 발표와 신제품의 출시, 관련 법규의 변화는 스마트스코어 상승의 기회가 됩니다.</p>
+                                            </div>
+
+                                        </div>
+                                        <!-- //recommend_item -->
+                                    </div>
+                                    <!-- //recommend_list -->
+
+                                    <div class="buy_score_box">
+                                        <h3 class="score_title">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                viewBox="0 0 20 20" fill="none">
+                                                <g clip-path="url(#clip0_4928_3822)">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M9 12.0001V13.0001H15.5C16.3284 13.0001 17 13.6717 17 14.5001C17 15.3285 16.3284 16.0001 15.5 16.0001H9V17.0001H14.8223C15.6507 17.0001 16.3223 17.6717 16.3223 18.5001C16.3223 19.3285 15.6507 20.0001 14.8223 20.0001H9H7H6.82227C6.73359 20.0001 6.646 19.9955 6.55971 19.9865C2.89883 19.7593 0 16.7182 0 13.0001C0 11.9393 0.235951 10.9337 0.658231 10.0327L3.48279 1.75618C3.95191 0.381541 5.45861 -0.339647 6.8235 0.157131C8.14997 0.639927 8.84651 2.09513 8.39058 3.43107L7.85512 5.0001H15.5C16.3284 5.0001 17 5.67168 17 6.5001C17 7.32853 16.3284 8.0001 15.5 8.0001H9V9.0001H15.5513C16.3797 9.0001 17.0513 9.67168 17.0513 10.5001C17.0513 11.3285 16.3797 12.0001 15.5513 12.0001H9Z"
+                                                        fill="#FFDA4D" />
+                                                    <line x1="15" y1="8.5" x2="8" y2="8.5" stroke="#E9C334" />
+                                                    <rect x="9" y="16" width="6" height="1" fill="#E9C334" />
+                                                    <rect x="9" y="12" width="6" height="1" fill="#E9C334" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_4928_3822">
+                                                        <rect width="20" height="20" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg> 지금 사면 좋아요
+                                        </h3>
+                                        <div class="score_guide_list">
+                                            <div class="list">
+                                                <a href="" class="item">애플</a>
+                                                <a href="" class="item">마이크로소프트</a>
+                                                <a href="" class="item">펩시코</a>
+                                                <a href="" class="item">시티우스파마슈시티우스파마슈시티우스파마슈</a>
+                                                <a href="" class="item">월마트</a>
+                                                <a href="" class="item">코카콜라</a>
+                                                <a href="" class="item">펩시코</a>
+                                                <a href="" class="item">시티우스파마슈시티우스파마슈시티우스파마슈</a>
+                                                <a href="" class="item">월마트</a>
+                                                <a href="" class="item">코카콜라</a>
+                                            </div>
+                                        </div>
+                                        <h3 class="score_title">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                viewBox="0 0 20 20" fill="none">
+                                                <path
+                                                    d="M9.99658 20.0425C15.5194 20.0425 19.9966 15.5653 19.9966 10.0425C19.9966 4.51963 15.5194 0.0424805 9.99658 0.0424805C4.47373 0.0424805 -0.00341797 4.51963 -0.00341797 10.0425C-0.00341797 15.5653 4.47373 20.0425 9.99658 20.0425Z"
+                                                    fill="#FFD05D" />
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M11.837 19.874C11.2404 19.985 10.6253 20.043 9.99658 20.043C9.36067 20.043 8.73863 19.9836 8.13569 19.8701C8.7397 19.9556 9.36289 20.0002 10 20.0002C10.6275 20.0002 11.2415 19.9569 11.837 19.874ZM19.9002 11.4367C19.2116 7.79826 15.0415 5.00024 10 5.00024C4.94891 5.00024 0.772498 7.80896 0.0958629 11.4576C0.0304275 10.9954 -0.00341797 10.5232 -0.00341797 10.043C-0.00341797 4.52012 4.47373 0.0429688 9.99658 0.0429688C15.5194 0.0429688 19.9966 4.52012 19.9966 10.043C19.9966 10.5159 19.9637 10.9812 19.9002 11.4367Z"
+                                                    fill="url(#paint0_linear_5916_1452)" />
+                                                <path
+                                                    d="M7.64713 7.64717C7.64713 8.29706 7.12072 8.82364 6.47066 8.82364C5.8206 8.82364 5.29419 8.29706 5.29419 7.64717C5.29419 6.99728 5.8206 6.4707 6.47066 6.4707C7.12072 6.4707 7.64713 6.99728 7.64713 7.64717Z"
+                                                    fill="#24282C" />
+                                                <path
+                                                    d="M14.9413 7.64717C14.9413 8.29706 14.4149 8.82364 13.7648 8.82364C13.1148 8.82364 12.5884 8.29706 12.5884 7.64717C12.5884 6.99728 13.1148 6.4707 13.7648 6.4707C14.4149 6.4707 14.9413 6.99728 14.9413 7.64717Z"
+                                                    fill="#24282C" />
+                                                <path
+                                                    d="M6.89504 16C6.32404 16 5.87841 15.34 6.02985 14.6712C6.50882 12.5549 8.10514 11 10 11C11.8949 11 13.4912 12.5549 13.9701 14.6712C14.1216 15.34 13.676 16 13.105 16H6.89431H6.89504Z"
+                                                    fill="#F03E4C" />
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M13.8926 15.4341C12.8448 14.5399 11.4853 14 9.99979 14C8.51439 14 7.15506 14.5398 6.10725 15.4339C6.00487 15.2096 5.96873 14.9412 6.02985 14.6712C6.50882 12.5549 8.10514 11 10 11C11.8949 11 13.4912 12.5549 13.9701 14.6712C14.0313 14.9413 13.9951 15.2098 13.8926 15.4341Z"
+                                                    fill="#5E4939" />
+                                                <defs>
+                                                    <linearGradient id="paint0_linear_5916_1452" x1="9.99658"
+                                                        y1="0.0429687" x2="9.99658" y2="7.50024"
+                                                        gradientUnits="userSpaceOnUse">
+                                                        <stop stop-color="#4FCCFF" />
+                                                        <stop offset="1" stop-color="#FFD05D" />
+                                                    </linearGradient>
+                                                </defs>
+                                            </svg> 지금은 위험해요
+                                        </h3>
+                                        <div class="score_guide_list">
+                                            <div class="list">
+                                                <a href="" class="item">애플</a>
+                                                <a href="" class="item">마이크로소프트</a>
+                                                <a href="" class="item">펩시코</a>
+                                                <a href="" class="item">시티우스파마슈시티우스파마슈시티우스파마슈</a>
+                                                <a href="" class="item">월마트</a>
+                                                <a href="" class="item">코카콜라</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- //buy_score_box -->
+
+                                    <div class="interest_recommend_list">
+                                        <h3 class="title">이런 종목은 어때요?</h3>
+                                        <ul class="list">
+                                            <li class="item"><a href="">투자자들의 인기종목 <b>TOP50</b></a></li>
+                                            <li class="item"><a href="">미래 성장이 가속화되는 <b>로켓성장주</b> </a></li>
+                                            <li class="item"><a href="">초이스스탁US의 <b>종목추천</b></a></li>
+                                        </ul>
+                                    </div>
+                                    <!-- //interest_recommend_list -->
+
+                                </div>
+                                <!-- //filter_box_inner -->
+
+                                <div class="filter_box_inner" data-filter="detail">
+                                    자세히
+                                </div>
+                                <!-- //filter_box_inner -->
                             </div>
-                            
+
                         </div>
                     </div>
                     <!-- //tab_container -->

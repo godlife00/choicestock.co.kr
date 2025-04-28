@@ -2367,9 +2367,13 @@ document.addEventListener("DOMContentLoaded", function() {
 
 // recommend_item 클릭 이벤트 처리
 document.addEventListener('DOMContentLoaded', function() {
-    const recommendItems = document.querySelectorAll('.recommend_item');
-    
-    if (recommendItems.length > 0) {
+    try {
+        const recommendItems = document.querySelectorAll('.recommend_item');
+        
+        if (!recommendItems || recommendItems.length === 0) {
+            return; // recommend_item이 없는 경우 early return
+        }
+
         recommendItems.forEach(item => {
             item.addEventListener('click', function() {
                 const showItemTxt = this.querySelector('.show_item_txt');
@@ -2387,6 +2391,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             });
         });
+    } catch (error) {
+        console.log('recommend_item 이벤트 처리 중 오류 발생:', error);
     }
 });
 
@@ -2440,7 +2446,11 @@ $(document).ready(function() {
     } else if($('.sub_research').length > 0) {
         // note.html 페이지인 경우
         $('.filter_box_inner').hide();
-        $('[data-filter="all_note"]').show();
+        $('[data-filter="all_note"]').show();    
+    } else if($('.interest_list').length > 0) {
+        // searching_onestop.html 페이지인 경우
+        $('.filter_box_inner').hide();
+        $('[data-filter="simple"]').show();
     } else {
         // 스마트스코어 페이지인 경우
         $('.filter_box_inner').hide();
@@ -2448,13 +2458,17 @@ $(document).ready(function() {
     }
     
     // 필터 버튼 클릭 이벤트 (레시피 & 스마트스코어 공통)
-    $('.filter_btn, .sort_btn').on('click', function(e) {
+    $('.filter_btn, .sort_btn, .interest_btn').on('click', function(e) {
         const isRecipe = $(this).hasClass('filter_btn');
+        console.log(isRecipe);
         
         // active 클래스 처리
         if(isRecipe) {
             $('.filter_btn').removeClass('active');
             $(this).addClass('active');
+        } else if($('.interest_btn').length > 0) {
+            $('.interest_btn').removeClass('active');
+            $(this).addClass('active');        
         } else {
             $('.sort li').removeClass('active');
             $(this).parent('li').addClass('active');

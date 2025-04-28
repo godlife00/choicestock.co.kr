@@ -5036,10 +5036,10 @@ $(document).ready(function () {
                 type: 'bubble',
                 plotBorderWidth: 2,
                 zoomType: 'x',
-                backgroundColor: '#f2faff',
-                borderColor: '#877edf',
+                backgroundColor: '#F6F8FF',
+                borderColor: '#BFD1FE',
                 // height: 280,
-                plotBorderColor: '#1d4a88',
+                plotBorderColor: '#BFD1FE',
                 plotShadow: false,
                 marginLeft: 0,
                 marginTop: -1,
@@ -5083,8 +5083,8 @@ $(document).ready(function () {
                     enabled: false
                 },
                 plotLines: [{
-                    color: '#C7CBE9',
-                    dashStyle: 'ShortDash',
+                    color: '#BFD1FE',
+                    dashStyle: 'dot',
                     width: 1.5,
                     value: 50,
                     label: {
@@ -5113,8 +5113,8 @@ $(document).ready(function () {
                     enabled: false
                 },
                 plotLines: [{
-                    color: '#C7CBE9',
-                    dashStyle: 'ShortDash',
+                    color: '#BFD1FE',
+                    dashStyle: 'dot',
                     width: 1.5,
                     value: 50,
                     label: {

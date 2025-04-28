@@ -6612,13 +6612,17 @@
 
 .globalStock .sub_search .latest_results .tabsArea .tab_container .txt_box {
 	background: #fff;
-	padding: 12px 15px;
+	padding: 16px 20px;
 }
 
 .globalStock .sub_search .latest_results .tabsArea .tab_container .txt_box .txt {
-	color: #939393;
-	font-size: 0.9rem;
-	line-height: 1.43;
+	color: var(--Font-secondary-caption, #6B7684);
+	font-family: var(--Body, Pretendard);
+	font-size: var(--Size-sm, 14px);
+	font-style: normal;
+	font-weight: var(--Weight-400, 400);
+	line-height: var(--Line-height-lg, 21px); /* 150% */
+	letter-spacing: var(--Tracking-md, -0.3px);
 }
 
 .globalStock .sub_search .latest_results .tabsArea .tab_container .txt_box .txt strong {
@@ -14346,7 +14350,7 @@ body.v_signalStreng {
 
 .v_signalStreng.globalStock .sub_top .txt_box,
 .v_signalStreng.globalStock .sub_search .latest_results .tabsArea .tab_container .txt_box {
-	background: var(--Background-secondary-background, #F7F8FA);
+	background: var(--Background-fill-background, #F7F8FA);
 }
 
 .v_signalStreng.globalStock .return_sum {
@@ -15116,15 +15120,11 @@ body.v_signalStreng {
 				width: 100%;
 				
 				&::after {
-					content: "";
+					content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13 6L7.8 11.2L3 6.4" stroke="%238C98A7" stroke-width="1.4" stroke-linecap="round"/></svg>');
 					position: absolute;
-					width: 5px;
-					height: 5px;
-					border-top: 1px solid #3555d5;
-					border-right: 1px solid #3555d5;
-					transform: rotate(135deg);
-					display: inline-block;
-					right: 10px;
+					width: 16px;
+					height: 16px;
+					right: 7px;
 					top: 12px;
 					z-index: 99;
 				}
