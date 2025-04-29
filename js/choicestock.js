@@ -813,6 +813,17 @@ $(document).ready(function () {
             spaceBetween: 8,
         });
     }
+
+    // 원스톱진단 관심종목 매트릭스 분석 리스트
+    if ($('.analyze_Swiper').length) {
+        var analyze_Swiper = new Swiper('.analyze_Swiper', {
+            slidesPerView: "auto",
+            spaceBetween: 16,
+            observer: true, // DOM 변화를 감지하여 Swiper를 업데이트
+            observeParents: true, // 부모 요소의 DOM 변화를 감지
+            autoHeight: true, // 자동 높이 조절 비활성화            
+        });
+    }
     
 
     var catchSwiper = new Swiper('.catchSwiper, .catchSwiper2', {
@@ -1256,11 +1267,11 @@ $(document).ready(function () {
     });
 
     // 원스톱 종목진단 div 높이 조절    
-    var heightArray = $(".globalStock .sub_search .latest_results .tabsArea .onestep_chart .dgtic_results > div").map(function () {
-        return $(this).height();
-    }).get();
-    var maxHeight = Math.max.apply(Math, heightArray);
-    $(".globalStock .sub_search .latest_results .tabsArea .onestep_chart .dgtic_results > div").height(maxHeight);
+    // var heightArray = $(".globalStock .sub_search .latest_results .tabsArea .onestep_chart .dgtic_results > div").map(function () {
+    //     return $(this).height();
+    // }).get();
+    // var maxHeight = Math.max.apply(Math, heightArray);
+    // $(".globalStock .sub_search .latest_results .tabsArea .onestep_chart .dgtic_results > div").height(maxHeight);
 
     // 스크롤시 tab_scr bg 숨김
     var windowWidth = $('html, body').width();
@@ -2451,6 +2462,7 @@ $(document).ready(function() {
         // searching_onestop.html 페이지인 경우
         $('.filter_box_inner').hide();
         $('[data-filter="simple"]').show();
+        // $('[data-filter="detail"]').show();
     } else {
         // 스마트스코어 페이지인 경우
         $('.filter_box_inner').hide();
@@ -2459,8 +2471,7 @@ $(document).ready(function() {
     
     // 필터 버튼 클릭 이벤트 (레시피 & 스마트스코어 공통)
     $('.filter_btn, .sort_btn, .interest_btn').on('click', function(e) {
-        const isRecipe = $(this).hasClass('filter_btn');
-        console.log(isRecipe);
+        const isRecipe = $(this).hasClass('filter_btn');        
         
         // active 클래스 처리
         if(isRecipe) {

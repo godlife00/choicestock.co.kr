@@ -11509,13 +11509,13 @@ table.tableRanking td {
 }
 .globalStock .sub_search .latest_results .tabsArea .onestep_guide .filter_box_inner {
   display: none;
-  padding: 24px 0;
+  padding: 0;
 }
-.globalStock .sub_search .latest_results .tabsArea .onestep_guide .filter_box_inner .onestep_guide_box {
+.globalStock .sub_search .latest_results .tabsArea .onestep_guide .onestep_guide_box {
   margin-top: 80px;
   padding: 0 20px 40px;
 }
-.globalStock .sub_search .latest_results .tabsArea .onestep_guide .filter_box_inner .onestep_guide_box .onestep_title {
+.globalStock .sub_search .latest_results .tabsArea .onestep_guide .onestep_guide_box .onestep_title {
   color: var(--Font-primary-title, #1F242B);
   font-family: var(--Title, Pretendard);
   font-size: var(--Size-2xl, 20px);
@@ -11524,10 +11524,10 @@ table.tableRanking td {
   line-height: var(--Line-height-2xl, 26px);
   letter-spacing: var(--Tracking-md, -0.3px);
 }
-.globalStock .sub_search .latest_results .tabsArea .onestep_guide .filter_box_inner .onestep_guide_box .onestep_title b {
+.globalStock .sub_search .latest_results .tabsArea .onestep_guide .onestep_guide_box .onestep_title b {
   color: var(--Font-primary-blue, #4168F6);
 }
-.globalStock .sub_search .latest_results .tabsArea .onestep_guide .filter_box_inner .onestep_guide_box .onestep_guide_list {
+.globalStock .sub_search .latest_results .tabsArea .onestep_guide .onestep_guide_box .onestep_guide_list {
   display: flex;
   flex-direction: column;
   gap: 40px 16px;
@@ -11536,7 +11536,7 @@ table.tableRanking td {
   margin-top: 16px;
   padding: 32px 24px;
 }
-.globalStock .sub_search .latest_results .tabsArea .onestep_guide .filter_box_inner .onestep_guide_box .onestep_guide_list .guide_txt {
+.globalStock .sub_search .latest_results .tabsArea .onestep_guide .onestep_guide_box .onestep_guide_list .guide_txt {
   width: 100%;
   margin-bottom: 8px;
   color: var(--Font-primary-title, #1F242B);
@@ -11547,12 +11547,12 @@ table.tableRanking td {
   line-height: var(--Line-height-md, 22px); /* 137.5% */
   letter-spacing: var(--Tracking-md, -0.3px);
 }
-.globalStock .sub_search .latest_results .tabsArea .onestep_guide .filter_box_inner .onestep_guide_box .onestep_guide_list .list {
+.globalStock .sub_search .latest_results .tabsArea .onestep_guide .onestep_guide_box .onestep_guide_list .list {
   display: flex;
   flex-wrap: wrap;
   gap: 8px 8px;
 }
-.globalStock .sub_search .latest_results .tabsArea .onestep_guide .filter_box_inner .onestep_guide_box .onestep_guide_list .list .item {
+.globalStock .sub_search .latest_results .tabsArea .onestep_guide .onestep_guide_box .onestep_guide_list .list .item {
   display: inline-block;
   align-items: center;
   justify-content: center;
@@ -11573,31 +11573,144 @@ table.tableRanking td {
   line-height: var(--Line-height-xl-01, 24px); /* 160% */
   letter-spacing: var(--Tracking-md, -0.3px);
 }
-.globalStock .sub_search .latest_results .tabsArea .onestep_guide .filter_box_inner .onestep_matrix {
+.globalStock .sub_search .latest_results .tabsArea .onestep_guide .analyze_box.analyze_Swiper {
+  padding: 24px 15px 16px;
+  box-sizing: border-box;
+  visibility: hidden;
+}
+.globalStock .sub_search .latest_results .tabsArea .onestep_guide .analyze_box.analyze_Swiper.swiper-container-initialized {
+  visibility: visible;
+}
+.globalStock .sub_search .latest_results .tabsArea .onestep_guide .analyze_box.analyze_Swiper .swiper-slide {
+  display: block;
+  width: auto;
+  height: 100%;
+}
+.globalStock .sub_search .latest_results .tabsArea .onestep_guide .analyze_box .analyze_list {
+  display: flex;
+  flex-direction: column;
+  width: 290px;
+  height: 100%;
+  border-radius: 16px;
+  background: #FFF;
+  box-shadow: 0px 0px 15px 0px rgba(134, 138, 147, 0.15);
+  padding: 32px 24px;
+  box-sizing: border-box;
+}
+.globalStock .sub_search .latest_results .tabsArea .onestep_guide .analyze_box .title {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px 8px;
+  color: var(--Font-secondary-title, #24282C);
+  font-family: var(--Title, Pretendard);
+  font-size: var(--Size-3xl, 22px);
+  font-style: normal;
+  font-weight: var(--Weight-600, 600);
+  line-height: var(--Line-height-3xl, 32px); /* 145.455% */
+  letter-spacing: var(--Tracking-md, -0.3px);
+}
+.globalStock .sub_search .latest_results .tabsArea .onestep_guide .analyze_box .title svg {
+  width: 24px;
+  height: 24px;
+}
+.globalStock .sub_search .latest_results .tabsArea .onestep_guide .analyze_box .nodata {
+  margin-top: 16px;
+  color: var(--Font-disabled, #B0B8C1);
+  font-family: var(--Body, Pretendard);
+  font-size: var(--Size-md-15, 15px);
+  font-style: normal;
+  font-weight: var(--Weight-400, 400);
+  line-height: var(--Line-height-xl-01, 24px); /* 160% */
+  letter-spacing: var(--Tracking-md, -0.3px);
+}
+.globalStock .sub_search .latest_results .tabsArea .onestep_guide .analyze_box .nodata b {
+  color: var(--Font-disabled, #B0B8C1);
+  font-weight: var(--Weight-700, 700);
+}
+.globalStock .sub_search .latest_results .tabsArea .onestep_guide .analyze_box .score_txt {
+  margin-top: auto;
+  color: var(--Font-disabled, #B0B8C1);
+  font-family: var(--Body, Pretendard);
+  font-size: var(--Size-xs-12, 12px);
+  font-style: normal;
+  font-weight: var(--Weight-500, 500);
+  line-height: var(--Line-height-xs-12, 14px); /* 116.667% */
+  letter-spacing: var(--Tracking-md, -0.3px);
+}
+.globalStock .sub_search .latest_results .tabsArea .onestep_guide .analyze_box .score_txt b {
+  color: var(--Font-disabled, #B0B8C1);
+  font-weight: var(--Weight-700, 700);
+}
+.globalStock .sub_search .latest_results .tabsArea .onestep_guide .analyze_box .list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 8px;
+  margin-top: 16px;
+  margin-bottom: 32px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  max-height: 234px; /* 자식 요소가 4개를 넘지 않도록 높이 제한 */
+}
+.globalStock .sub_search .latest_results .tabsArea .onestep_guide .analyze_box .list .item {
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--Radius-r-03, 12px);
+  background-color: #FFF;
+  padding: 6px 16px;
+  max-width: 148px;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: var(--Font-secondary-body, #4E5866);
+  font-family: var(--Body, Pretendard);
+  font-size: var(--Size-md-15, 15px);
+  font-style: normal;
+  font-weight: var(--Weight-400, 400);
+  line-height: var(--Line-height-xl-01, 24px); /* 160% */
+  letter-spacing: var(--Tracking-md, -0.3px);
+}
+.globalStock .sub_search .latest_results .tabsArea .onestep_guide .analyze_box .risky .list .item {
+  border-radius: var(--Radius-r-02, 8px);
+  background: var(--Blue-blue100, #ECF0FF);
+  color: var(--Font-primary-blue, #4168F6);
+}
+.globalStock .sub_search .latest_results .tabsArea .onestep_guide .analyze_box .s_risk .list .item {
+  border-radius: var(--Radius-r-02, 8px);
+  background: var(--Beige-beige50, #FAF3EA);
+  color: #E9835B;
+}
+.globalStock .sub_search .latest_results .tabsArea .onestep_guide .analyze_box .interest .list .item {
+  border-radius: var(--Radius-r-02, 8px);
+  background: var(--Background-primary-light-background, #F1F4F6);
+  color: var(--Gray-gray600, #6B7684);
+}
+.globalStock .sub_search .latest_results .tabsArea .onestep_guide .onestep_matrix {
   padding: 40px 20px 0;
   border-top: 8px solid var(--Background-fill-background, #F7F8FA);
 }
-.globalStock .sub_search .latest_results .tabsArea .onestep_guide .filter_box_inner .onestep_matrix .onestep_title {
+.globalStock .sub_search .latest_results .tabsArea .onestep_guide .onestep_matrix .onestep_title {
   display: inline-flex;
   align-items: center;
   gap: 8px 8px;
 }
-.globalStock .sub_search .latest_results .tabsArea .onestep_guide .filter_box_inner .onestep_matrix .onestep_title img {
+.globalStock .sub_search .latest_results .tabsArea .onestep_guide .onestep_matrix .onestep_title img {
   width: 24px;
   height: 24px;
 }
-.globalStock .sub_search .latest_results .tabsArea .onestep_guide .filter_box_inner .onestep_matrix .document_box {
+.globalStock .sub_search .latest_results .tabsArea .onestep_guide .onestep_matrix .document_box {
   max-width: 480px;
   margin: 16px auto 0;
 }
-.globalStock .sub_search .latest_results .tabsArea .onestep_guide .filter_box_inner .onestep_matrix .document_box:before {
+.globalStock .sub_search .latest_results .tabsArea .onestep_guide .onestep_matrix .document_box:before {
   content: "";
   display: block;
   width: 100%;
   background: url("/img/document_bg.svg") no-repeat left bottom;
   height: 27px;
 }
-.globalStock .sub_search .latest_results .tabsArea .onestep_guide .filter_box_inner .onestep_matrix .document_box .bg {
+.globalStock .sub_search .latest_results .tabsArea .onestep_guide .onestep_matrix .document_box .bg {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -11608,13 +11721,13 @@ table.tableRanking td {
   border-radius: 0px var(--Radius-r-05, 24px) var(--Radius-r-05, 24px) var(--Radius-r-05, 24px);
   box-shadow: 0px 15px 20px 0px var(--Blue-blue100, #ECF0FF);
 }
-.globalStock .sub_search .latest_results .tabsArea .onestep_guide .filter_box_inner .onestep_matrix .document_box .matrix_img {
+.globalStock .sub_search .latest_results .tabsArea .onestep_guide .onestep_matrix .document_box .matrix_img {
   width: auto;
   height: 160px;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.globalStock .sub_search .latest_results .tabsArea .onestep_guide .filter_box_inner .onestep_matrix .document_box .title {
+.globalStock .sub_search .latest_results .tabsArea .onestep_guide .onestep_matrix .document_box .title {
   margin-top: 8px;
   color: var(--Font-primary-subtitle, #6B7684);
   font-family: var(--Body, Pretendard);
@@ -11624,7 +11737,7 @@ table.tableRanking td {
   line-height: var(--Line-height-xl-02, 28px); /* 155.556% */
   letter-spacing: var(--Tracking-md, -0.3px);
 }
-.globalStock .sub_search .latest_results .tabsArea .onestep_guide .filter_box_inner .onestep_matrix .document_box .title b {
+.globalStock .sub_search .latest_results .tabsArea .onestep_guide .onestep_matrix .document_box .title b {
   color: var(--Font-primary-body, #24282C);
   font-family: var(--Title, Pretendard);
   font-size: var(--Size-5xl, 30px);
@@ -11633,11 +11746,11 @@ table.tableRanking td {
   line-height: var(--Line-height-4xl, 42px); /* 140% */
   letter-spacing: var(--Tracking-md, -0.3px);
 }
-.globalStock .sub_search .latest_results .tabsArea .onestep_guide .filter_box_inner .matrix_txt {
+.globalStock .sub_search .latest_results .tabsArea .onestep_guide .matrix_txt {
   margin-top: 32px;
   padding: 0 20px;
 }
-.globalStock .sub_search .latest_results .tabsArea .onestep_guide .filter_box_inner .matrix_txt .txt {
+.globalStock .sub_search .latest_results .tabsArea .onestep_guide .matrix_txt .txt {
   color: var(--Font-primary-body, #24282C);
   font-family: var(--Body, Pretendard);
   font-size: 18px;
@@ -11648,7 +11761,7 @@ table.tableRanking td {
   word-break: break-all;
   word-wrap: break-word;
 }
-.globalStock .sub_search .latest_results .tabsArea .onestep_guide .filter_box_inner .matrix_txt .txt_sub {
+.globalStock .sub_search .latest_results .tabsArea .onestep_guide .matrix_txt .txt_sub {
   margin-top: 12px;
   color: var(--Font-secondary-caption, #6B7684);
   font-family: var(--Body, Pretendard);
@@ -11658,18 +11771,18 @@ table.tableRanking td {
   line-height: var(--Line-height-lg, 21px); /* 150% */
   letter-spacing: var(--Tracking-md, -0.3px);
 }
-.globalStock .sub_search .latest_results .tabsArea .onestep_guide .filter_box_inner .matrix_txt .txt_sub b {
+.globalStock .sub_search .latest_results .tabsArea .onestep_guide .matrix_txt .txt_sub b {
   color: var(--Font-secondary-caption, #6B7684);
   font-weight: var(--Weight-600, 600);
 }
-.globalStock .sub_search .latest_results .tabsArea .onestep_guide .filter_box_inner .recommend_list {
+.globalStock .sub_search .latest_results .tabsArea .onestep_guide .recommend_list {
   display: flex;
   flex-direction: column;
   gap: 16px 8px;
   padding: 0 20px;
   margin-top: 32px;
 }
-.globalStock .sub_search .latest_results .tabsArea .onestep_guide .filter_box_inner .recommend_list .recommend_item {
+.globalStock .sub_search .latest_results .tabsArea .onestep_guide .recommend_list .recommend_item {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -11681,7 +11794,7 @@ table.tableRanking td {
   transition: all 0.3s ease;
   position: relative;
 }
-.globalStock .sub_search .latest_results .tabsArea .onestep_guide .filter_box_inner .recommend_list .recommend_item .show_item_txt {
+.globalStock .sub_search .latest_results .tabsArea .onestep_guide .recommend_list .recommend_item .show_item_txt {
   opacity: 0;
   display: none;
   width: 100%;
@@ -11689,12 +11802,12 @@ table.tableRanking td {
   overflow: hidden;
   transition: all 0.3s ease;
 }
-.globalStock .sub_search .latest_results .tabsArea .onestep_guide .filter_box_inner .recommend_list .recommend_item .show_item_txt.active {
+.globalStock .sub_search .latest_results .tabsArea .onestep_guide .recommend_list .recommend_item .show_item_txt.active {
   opacity: 1;
   display: block;
   max-height: 1000px;
 }
-.globalStock .sub_search .latest_results .tabsArea .onestep_guide .filter_box_inner .recommend_list .recommend_item .txt {
+.globalStock .sub_search .latest_results .tabsArea .onestep_guide .recommend_list .recommend_item .txt {
   padding-right: 24px;
   box-sizing: border-box;
   color: var(--Font-secondary-title, #24282C);
@@ -11705,7 +11818,7 @@ table.tableRanking td {
   line-height: var(--Line-height-md, 22px); /* 137.5% */
   letter-spacing: var(--Tracking-md, -0.3px);
 }
-.globalStock .sub_search .latest_results .tabsArea .onestep_guide .filter_box_inner .recommend_list .recommend_item .txt_sub {
+.globalStock .sub_search .latest_results .tabsArea .onestep_guide .recommend_list .recommend_item .txt_sub {
   padding: 24px 0 0;
   color: var(--Font-secondary-body, #4E5866);
   font-family: var(--Body, Pretendard);
@@ -11715,7 +11828,7 @@ table.tableRanking td {
   line-height: var(--Line-height-2xl, 26px); /* 162.5% */
   letter-spacing: var(--Tracking-md, -0.3px);
 }
-.globalStock .sub_search .latest_results .tabsArea .onestep_guide .filter_box_inner .recommend_list .recommend_item .arrow {
+.globalStock .sub_search .latest_results .tabsArea .onestep_guide .recommend_list .recommend_item .arrow {
   position: absolute;
   top: 26px;
   right: 36px;
@@ -11728,15 +11841,15 @@ table.tableRanking td {
   margin: auto;
   display: inline-block;
 }
-.globalStock .sub_search .latest_results .tabsArea .onestep_guide .filter_box_inner .recommend_list .recommend_item.active .arrow svg {
+.globalStock .sub_search .latest_results .tabsArea .onestep_guide .recommend_list .recommend_item.active .arrow svg {
   transform: rotate(175deg);
   transition: transform 0.2s ease-in-out;
 }
-.globalStock .sub_search .latest_results .tabsArea .onestep_guide .filter_box_inner .buy_score_box {
+.globalStock .sub_search .latest_results .tabsArea .onestep_guide .buy_score_box {
   padding: 0 20px 40px;
   margin-top: 80px;
 }
-.globalStock .sub_search .latest_results .tabsArea .onestep_guide .filter_box_inner .buy_score_box .score_title {
+.globalStock .sub_search .latest_results .tabsArea .onestep_guide .buy_score_box .score_title {
   margin-top: 80px;
   display: inline-flex;
   align-items: center;
@@ -11749,18 +11862,18 @@ table.tableRanking td {
   line-height: var(--Line-height-xl-01, 24px); /* 133.333% */
   letter-spacing: var(--Tracking-md, -0.3px);
 }
-.globalStock .sub_search .latest_results .tabsArea .onestep_guide .filter_box_inner .buy_score_box .score_title:first-child {
+.globalStock .sub_search .latest_results .tabsArea .onestep_guide .buy_score_box .score_title:first-child {
   margin-top: 0;
 }
-.globalStock .sub_search .latest_results .tabsArea .onestep_guide .filter_box_inner .buy_score_box .score_guide_list {
+.globalStock .sub_search .latest_results .tabsArea .onestep_guide .buy_score_box .score_guide_list {
   margin-top: 16px;
 }
-.globalStock .sub_search .latest_results .tabsArea .onestep_guide .filter_box_inner .buy_score_box .score_guide_list .list {
+.globalStock .sub_search .latest_results .tabsArea .onestep_guide .buy_score_box .score_guide_list .list {
   display: flex;
   flex-wrap: wrap;
   gap: 8px 8px;
 }
-.globalStock .sub_search .latest_results .tabsArea .onestep_guide .filter_box_inner .buy_score_box .score_guide_list .list .item {
+.globalStock .sub_search .latest_results .tabsArea .onestep_guide .buy_score_box .score_guide_list .list .item {
   display: inline-block;
   align-items: center;
   justify-content: center;
@@ -11781,12 +11894,12 @@ table.tableRanking td {
   line-height: var(--Line-height-xl-01, 24px); /* 160% */
   letter-spacing: var(--Tracking-md, -0.3px);
 }
-.globalStock .sub_search .latest_results .tabsArea .onestep_guide .filter_box_inner .interest_recommend_list {
+.globalStock .sub_search .latest_results .tabsArea .onestep_guide .interest_recommend_list {
   border-top: 8px solid var(--Background-fill-background, #F7F8FA);
   padding: 0 20px;
   padding-top: 40px;
 }
-.globalStock .sub_search .latest_results .tabsArea .onestep_guide .filter_box_inner .interest_recommend_list .title {
+.globalStock .sub_search .latest_results .tabsArea .onestep_guide .interest_recommend_list .title {
   color: var(--Font-primary-title, #1F242B);
   font-family: var(--Title, Pretendard);
   font-size: var(--Size-2xl, 20px);
@@ -11795,7 +11908,16 @@ table.tableRanking td {
   line-height: var(--Line-height-2xl, 26px); /* 130% */
   letter-spacing: var(--Tracking-md, -0.3px);
 }
-.globalStock .sub_search .latest_results .tabsArea .onestep_guide .filter_box_inner .interest_recommend_list .list .item {
+.globalStock .sub_search .latest_results .tabsArea .onestep_guide .interest_recommend_list .list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px 8px;
+  margin-top: 16px;
+}
+.globalStock .sub_search .latest_results .tabsArea .onestep_guide .interest_recommend_list .list .item {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px 8px;
   color: var(--Font-secondary-title, #24282C);
   font-family: var(--Title, Pretendard);
   font-size: var(--Size-md-16, 16px);
@@ -11804,9 +11926,17 @@ table.tableRanking td {
   line-height: var(--Line-height-md, 22px); /* 137.5% */
   letter-spacing: var(--Tracking-md, -0.3px);
 }
-.globalStock .sub_search .latest_results .tabsArea .onestep_guide .filter_box_inner .interest_recommend_list .list .item b {
+.globalStock .sub_search .latest_results .tabsArea .onestep_guide .interest_recommend_list .list .item b {
   color: var(--Font-secondary-title, #24282C);
   font-weight: var(--Weight-600, 600);
+}
+.globalStock .sub_search .latest_results .tabsArea .onestep_guide .interest_recommend_list .list .item::before {
+  content: "";
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  background-color: var(--Gray-gray750, #313B48);
+  border-radius: 100%;
 }
 
 .globalStock .sub_search .latest_results .tabsArea .onestep_guide .h2_title {
@@ -11855,7 +11985,7 @@ table.tableRanking td {
 .globalStock .sub_search .latest_results .tabsArea .onestep_chart {
   background: #fff;
   margin: 7px 0 0;
-  padding: 0 20px;
+  padding: 24px 20px 0;
   overflow: hidden;
 }
 
