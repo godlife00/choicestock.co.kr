@@ -1,11 +1,4 @@
-<svg id="icon-alarm" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26">
-  <rect id="사각형_2330" data-name="사각형 2330" width="26" height="26" fill="none"/>
-  <g id="그룹_967" data-name="그룹 967" transform="translate(5 -2)">
-    <g id="그룹_4" data-name="그룹 4" transform="translate(0 5.909)">
-      <path id="패스_13" data-name="패스 13" d="M10.469,22.112H3.853c-1.5,0-1.5-1.477-1.221-2.272.937-2.7,2.584-2.215,2.584-4.373v-5c0-4.2,4.231-4.77,5.282-4.77s5.253.54,5.253,4.742v5c0,2.186,1.647,1.7,2.584,4.373.284.8.312,2.272-1.221,2.272H10.469Z" transform="translate(-2.486 -5.7)" fill="none" stroke="#333" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.6"/>
-    </g>
-    <path id="패스_14" data-name="패스 14" d="M30.7,63.5" transform="translate(-22.689 -41.179)" fill="none" stroke="#333" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.6"/>
-    <path id="패스_15" data-name="패스 15" d="M27.17,65.4a2.385,2.385,0,0,1-4.77,0" transform="translate(-16.745 -42.539)" fill="none" stroke="#333" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.6"/>
-    <path id="패스_16" data-name="패스 16" d="M25.7,3.522A1.646,1.646,0,0,1,27.148,2.5a1.454,1.454,0,0,1,1.363.965" transform="translate(-19.108 2.5)" fill="none" stroke="#333" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.6"/>
-  </g>
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18.0722 7.67934C17.7284 4.44608 15.1131 2 12 2C8.88687 2 6.27158 4.44608 5.92773 7.67934L5.65234 10.2693C5.64884 10.3023 5.64709 10.3189 5.64534 10.3352C5.50426 11.6193 5.1043 12.8577 4.47161 13.9686C4.46363 13.9827 4.45543 13.9969 4.43913 14.0254L3.80688 15.1264C3.23325 16.1256 2.94638 16.6251 3.00828 17.0353C3.04951 17.3081 3.18393 17.5562 3.38658 17.7335C3.69128 18 4.24883 18 5.36383 18H18.6361C19.7512 18 20.3087 18 20.6134 17.7335C20.8161 17.5562 20.9505 17.3081 20.9917 17.0353C21.0536 16.6251 20.7668 16.1256 20.1931 15.1264L19.5609 14.0254C19.5446 13.9969 19.5364 13.9827 19.5283 13.9686C18.8957 12.8577 18.4957 11.6193 18.3547 10.3352C18.3529 10.3189 18.3511 10.3023 18.3476 10.2693L18.0722 7.67934Z" stroke="#24282C" stroke-width="2"/>
+<path d="M16 18C16 18.5253 15.8965 19.0454 15.6955 19.5307C15.4945 20.016 15.1999 20.457 14.8284 20.8284C14.457 21.1999 14.016 21.4945 13.5307 21.6955C13.0454 21.8965 12.5253 22 12 22C11.4747 22 10.9546 21.8965 10.4693 21.6955C9.984 21.4945 9.543 21.1999 9.1716 20.8284C8.8001 20.457 8.5055 20.016 8.3045 19.5307C8.1035 19.0454 8 18.5253 8 18" stroke="#24282C" stroke-width="2" stroke-linecap="round"/>
 </svg>

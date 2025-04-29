@@ -1402,7 +1402,7 @@ table.tableRanking td {
 .globalStock .log_chk .login p .user_name {
 	font-size: 1.5rem;
 	line-height: 20px;
-	color: #404fc3;
+	color: var(--Font-primary-blue, #4168F6);
 	font-weight: bold;
 	padding-right: 5px;
 	display: block;
@@ -5460,21 +5460,23 @@ table.tableRanking td {
 .globalStock .sub_recom .sub_top .attainment_box .title {
 	color: #333;
 	font-size: 0.73rem;
-	opacity: 0.5;
+	opacity: 1;
 }
 
 .globalStock .sub_recom .sub_top .revenue_box .percent,
 .globalStock .sub_recom .sub_top .attainment_box .percent {
-	color: #333;
-	font-size: 0.8rem;
+	color: var(--Font-primary-body, #24282C);	
+	font-size: var(--Size-xxs, 11px);	
+	font-weight: var(--Weight-600, 600);
+	letter-spacing: var(--Tracking-md, -0.3px);
 }
 
 .globalStock .sub_recom .sub_top .revenue_box .percent b,
 .globalStock .sub_recom .sub_top .attainment_box .percent b {
-	color: #333;
-	font-size: 0.8rem;
-	font-weight: 300;
-	opacity: 1;
+	color: var(--Font-primary-body, #24282C);	
+	font-size: var(--Size-xxs, 11px);	
+	font-weight: var(--Weight-600, 600);
+	letter-spacing: var(--Tracking-md, -0.3px);
 }
 
 .globalStock .sub_recom .sub_top table.data_attainment {
@@ -8516,7 +8518,7 @@ table.tableRanking td {
 }
 
 .globalStock .sub_analysis .sub_top .revenue_box {
-	background: #00CCBD;
+	background: #1AE5D6;
 }
 
 .globalStock .sub_analysis .sub_top .attainment_box {
@@ -13198,9 +13200,10 @@ table.tableRanking td {
 		margin-top: 16px;
 		padding: 0;
 	}
-	.spider_year {
+	.spider_year {		
 		text-align: center;
 		.spider_year_item {
+			position: relative;
 			display: inline-flex;
 			align-items: center;
 			gap: 8px 18px;
@@ -13238,6 +13241,14 @@ table.tableRanking td {
 				}
 			}
 
+		}
+		.tooltip_content {				
+			@include tooltip_content;
+			right: 3px;
+			top: 36px;
+			@media (max-width: 374px) {
+				// top: 68px;
+			}
 		}
 		
 	}
@@ -18697,7 +18708,16 @@ table.tableRanking td {
 			}
 		}
 		.market_alert {
-			@include market_alert
+			@include market_alert;
+			.tooltip_content {				
+				@include tooltip_content;
+				right: 3px;
+				top: calc(50% + 38px);
+				transform: translateY(-50%);
+				// @media (max-width: 374px) {
+				// 	top: 68px;
+				// }
+			}
 		}
 		
 
