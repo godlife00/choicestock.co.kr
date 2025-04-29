@@ -5154,6 +5154,192 @@ $(document).ready(function () {
             }]
         });
     }
+    
+    if ($('#onestep_chart_simple').length) {
+        Highcharts.chart('onestep_chart_simple', {
+            chart: {
+                type: 'scatter',
+                height: '100%',
+                backgroundColor: 'transparent'
+            },
+            title: {
+                text: '',
+            },
+
+            navigator: {
+                enabled: false,
+            },
+
+            scrollbar: {
+                enabled: false,
+            },
+
+            rangeSelector: {
+                enabled: false,
+            },
+
+            credits: {
+                enabled: false
+            },
+
+            exporting: {
+                enabled: false,
+            },
+
+            legend: {
+                enabled: false,
+            },
+
+            tooltip: {
+                enabled: false,
+            },
+
+            xAxis: {
+                min: 0,
+                max: 100,
+                gridLineWidth: 0,
+                lineWidth: 0,
+                tickWidth: 0,
+                labels: {
+                    enabled: false
+                },
+                title: {
+                    text: null
+                },
+                plotLines: [{
+                    color: '#dddddd',
+                    width: 1,
+                    value: 50,
+                    zIndex: 1,
+                    dashStyle: 'Dash'
+                }],
+                plotBands: [{
+                    // 위험 구역 (좌상단)
+                    from: 0,
+                    to: 50,
+                    color: '#F6F8FF'
+                }, {
+                    // 조금 비싸요 구역 (우상단)
+                    from: 50,
+                    to: 100,
+                    color: '#F6F8FF'
+                }]
+            },
+            yAxis: {
+                min: 0,
+                max: 100,
+                gridLineWidth: 0,
+                lineWidth: 0,
+                labels: {
+                    enabled: false
+                },
+                title: {
+                    text: null
+                },
+                plotLines: [{
+                    color: '#dddddd',
+                    width: 1,
+                    value: 50,
+                    zIndex: 1,
+                    dashStyle: 'Dash'
+                }],
+                plotBands: [{
+                    // 관심있어요 구역 (좌하단)
+                    from: 0,
+                    to: 50,
+                    color: '#F6F8FF'
+                }, {
+                    // 매력적이네요 구역 (우하단)
+                    from: 50,
+                    to: 100,
+                    color: '#F6F8FF'
+                }]
+            },
+            
+            series: [{
+                name: 'Stocks',
+                data: [
+                    { x: 95, y: 95, name: 'TSLA' },
+                    { x: 8.5, y: 12.9, name: 'AAPL' },
+                    { x: 12.3, y: 86.1, name: 'DIS' },
+                    { x: 25.4, y: 45.2, name: 'MSFT' },
+                    { x: 35.8, y: 72.3, name: 'GOOGL' },
+                    { x: 42.1, y: 28.7, name: 'META' },
+                    { x: 15.9, y: 65.4, name: 'AMZN' },
+                    { x: 78.2, y: 34.6, name: 'NFLX' },
+                    { x: 55.7, y: 89.3, name: 'NVDA' },
+                    { x: 28.4, y: 52.8, name: 'AMD' },
+                    { x: 62.3, y: 41.5, name: 'INTC' },
+                    { x: 45.6, y: 78.9, name: 'IBM' },
+                    { x: 82.1, y: 25.4, name: 'CSCO' },
+                    { x: 18.7, y: 93.2, name: 'ORCL' },
+                    { x: 71.4, y: 61.8, name: 'CRM' },
+                    { x: 38.9, y: 82.5, name: 'ADBE' },
+                    { x: 92.5, y: 15.7, name: 'PYPL' },
+                    { x: 22.8, y: 68.4, name: 'V' },
+                    { x: 58.6, y: 37.2, name: 'MA' },
+                    { x: 75.3, y: 55.9, name: 'JPM' },
+                    { x: 32.7, y: 84.6, name: 'BAC' },
+                    { x: 88.4, y: 29.3, name: 'WFC' },
+                    { x: 48.2, y: 73.5, name: 'GS' },
+                    { x: 65.9, y: 44.8, name: 'MS' },
+                    { x: 15.3, y: 91.7, name: 'C' },
+                    { x: 85.7, y: 22.6, name: 'BLK' },
+                    { x: 42.8, y: 66.3, name: 'AXP' },
+                    { x: 68.5, y: 33.9, name: 'USB' },
+                    { x: 25.6, y: 88.4, name: 'PNC' },
+                    { x: 78.9, y: 51.2, name: 'TFC' },
+                    { x: 35.4, y: 77.8, name: 'SCHW' },
+                    { x: 92.1, y: 18.5, name: 'GE' },
+                    { x: 52.7, y: 62.9, name: 'BA' },
+                    { x: 72.3, y: 41.6, name: 'CAT' },
+                    { x: 18.9, y: 85.3, name: 'MMM' },
+                    { x: 82.6, y: 27.4, name: 'HON' },
+                    { x: 45.8, y: 71.2, name: 'UNH' },
+                    { x: 65.2, y: 48.7, name: 'JNJ' },
+                    { x: 28.7, y: 93.5, name: 'PFE' },
+                    { x: 88.9, y: 32.1, name: 'MRK' },
+                    { x: 13.3, y: 87.1, name: 'AAPL' },
+                    { x: 53.4, y: 61.8, name: 'QCOM' },
+                    { x: 48.4, y: 63.8, name: 'QCOM' },
+                    { x: 63.4, y: 51.8, name: 'QCOM' },
+                    { x: 63.4, y: 51.8, name: 'QCOM' },
+                ]
+            }],
+
+            plotOptions: {
+                scatter: {
+                    marker: {
+                        enabled: false,  // 점 마커 숨김
+                        states: {
+                            hover: {
+                                enabled: false  // 마우스 올렸을 때도 마커 숨김
+                            }
+                        }
+                    },
+                    dataLabels: {
+                        enabled: true,
+                        format: '{point.name}',
+                        backgroundColor: '#ffffff', // 흰색 배경
+                        borderRadius: 8,          // 둥근 모서리
+                        padding: 5,               // 내부 여백
+                        style: {
+                            color: '#4E5866',     // 텍스트 색상
+                            fontSize: '12px',
+                            fontWeight: 'normal',
+                            textOutline: 'none'   // 텍스트 외곽선 제거
+                        },
+                        borderWidth: 1,           // 테두리 두께
+                        borderColor: '#E3E5E8',   // 테두리 색상
+                        shadow: false,            // 그림자 효과 제거
+                        useHTML: true,            // HTML 사용 활성화
+                        
+                    }
+                }
+            },
+        });
+    }
+    
 
     // 밴드 차트
     if ($('#sum_topchart_band').length) {
