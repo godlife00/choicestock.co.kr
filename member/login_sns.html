@@ -63,9 +63,8 @@
         <div id="container" class="sub_login">
             <!-- 주요 콘텐츠 -->
             <div class="loign">
-
-                <div class="att_service">
-                    <h3 class="service_title"><strong>네이버, 카카오 계정으로<br>간편하게 가입할 수 있습니다.</strong></h3>
+                <div class="att_service">                    
+                    <h3 class="service_title" id="loginTitle"></h3>                    
                 </div>
                 <!-- //att_service -->
 
@@ -94,6 +93,9 @@
                         const selectedSnsClass = localStorage.getItem('selectedSnsClass');                        
                         if (selectedSnsClass) {
                             $('.sns .' + selectedSnsClass + ' a').addClass('selected'); // 선택한 SNS 계정 링크 강조
+                            $('#loginTitle').html('<strong>회원로그인</strong>');
+                        } else {
+                            $('#loginTitle').html('<strong>네이버, 카카오 계정으로<br>간편하게 가입할 수 있습니다.</strong>');
                         }
                     });
                 </script>
