@@ -10689,7 +10689,44 @@ table.tableRanking td {
 }
 
 .globalStock .sub_menu .sub_top .logout {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px 16px;
+}
+.globalStock .sub_menu .sub_top .logout .btn_join {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6px 8px;
+  border-radius: var(--Radius-r-02, 8px);
+  background: var(--Font-primary-blue, #4168F6);
+  color: #FFF;
+  font-family: var(--Body, Pretendard);
+  font-size: var(--Size-sm, 14px);
+  font-style: normal;
+  font-weight: var(--Weight-500, 500);
+  line-height: var(--Line-height-lg, 21px); /* 150% */
+  letter-spacing: var(--Tracking-md, -0.3px);
+}
+.globalStock .sub_menu .sub_top .logout .btn_join:active {
+  transform: translate(2px, 2px);
+}
+.globalStock .sub_menu .sub_top .logout .btn_login {
+  margin-left: auto;
+  padding: 0 4px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--Font-primary-body, #24282C);
+  font-family: var(--Body, Pretendard);
+  font-size: var(--Size-sm, 14px);
+  font-style: normal;
+  font-weight: var(--Weight-500, 500);
+  line-height: var(--Line-height-lg, 21px); /* 150% */
+  letter-spacing: var(--Tracking-md, -0.3px);
+}
+.globalStock .sub_menu .sub_top .logout .btn_login:active {
+  transform: translate(2px, 2px);
 }
 
 .globalStock .sub_menu .sub_top .logout p span {
