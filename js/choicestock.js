@@ -2126,7 +2126,7 @@ $(document).ready(function () {
     }
     // 서비스소개 상단 박스 순차 슬라이드
     const premiumBenefits = document.querySelectorAll('.premium_box .benefits_guide');
-    const userReviewBenefits = document.querySelectorAll('.user_review .benefits_guide');
+    const userReviewBenefits = document.querySelectorAll('.user_review .benefits_guide');    
     
     function applyClassInSequence(elements, index, delay = 300) {
         if (index < elements.length) {
@@ -2154,6 +2154,8 @@ $(document).ready(function () {
     $(window).on('scroll', checkVisibility);
     $(window).on('scroll', applyScrollEffect);
     $(window).on('scroll', checkUserReviewVisibility);
+    
+    
     
     // premium_gdnbtn 버튼 위치에 따른 클래스 추가/제거
     function checkPremiumBtnPosition() {
