@@ -39320,7 +39320,7 @@ body.v_signalStreng {
   margin-top: 16px;
   width: 100%;
   box-sizing: border-box;
-  height: 260px;
+  height: 300px;
 }
 .modal.tooltip_pop.score_pop02 .pop_con .chart_wrap .scoreChart_style .highcharts-label.highcharts-series-label {
   display: none !important;
@@ -39889,6 +39889,61 @@ body.v_signalStreng {
 }
 .globalStock .service_wrap .box.premium_box .benefits_guide .title_box h2 b {
   color: #7983d5;
+}
+.globalStock .service_wrap .box .review_box {
+  background: transparent;
+  padding: 110px 20px 0;
+  width: 90%;
+  max-width: 480px;
+  margin: 0 auto;
+}
+.globalStock .service_wrap .box .review_box .review_title {
+  color: #C7CBE9;
+  font-family: var(--Title, Pretendard);
+  font-size: var(--Size-5xl, 30px);
+  font-style: normal;
+  font-weight: var(--Weight-600, 600);
+  line-height: var(--Line-height-4xl, 42px); /* 140% */
+  letter-spacing: var(--Tracking-md, -0.3px);
+}
+.globalStock .service_wrap .box .review_box .review_title b {
+  color: #FFF;
+  font-weight: var(--Weight-700, 700);
+}
+.globalStock .service_wrap .box .review_box .review_list {
+  display: flex;
+  align-self: stretch;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 16px;
+}
+.globalStock .service_wrap .box .review_box .review_list .review_item {
+  flex: 1 1 45%;
+  border-radius: 24px;
+  border: 1px solid #FFF;
+  background: rgba(255, 255, 255, 0.9);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  padding: 20px 20px;
+  box-sizing: border-box;
+}
+.globalStock .service_wrap .box .review_box .review_list .review_item p {
+  color: var(--Gray-gray700, #4E5866);
+  font-family: var(--Body, Pretendard);
+  font-size: var(--Size-md-15, 15px);
+  font-style: normal;
+  font-weight: var(--Weight-600, 600);
+  line-height: var(--Line-height-xl-01, 24px); /* 160% */
+  letter-spacing: var(--Tracking-md, -0.3px);
+  word-wrap: break-word;
+  word-break: break-word;
+}
+.globalStock .service_wrap .box .review_box .review_list .review_item p b {
+  color: #404FC3;
+  font-weight: var(--Weight-700, 700);
+}
+.globalStock .service_wrap .box .review_box .review_list .review_item p svg {
+  margin-top: 8px;
 }
 .globalStock .service_wrap .box.user_review {
   display: flex;
