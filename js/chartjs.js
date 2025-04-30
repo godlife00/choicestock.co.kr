@@ -5160,7 +5160,8 @@ $(document).ready(function () {
             chart: {
                 type: 'scatter',
                 height: '100%',
-                backgroundColor: 'transparent'
+                backgroundColor: 'transparent',
+                margin: [0, 0, 0, 0],
             },
             title: {
                 text: '',
@@ -5200,12 +5201,6 @@ $(document).ready(function () {
                 gridLineWidth: 0,
                 lineWidth: 0,
                 tickWidth: 0,
-                labels: {
-                    enabled: false
-                },
-                title: {
-                    text: null
-                },
                 plotLines: [{
                     color: '#dddddd',
                     width: 1,
@@ -5213,6 +5208,12 @@ $(document).ready(function () {
                     zIndex: 1,
                     dashStyle: 'Dash'
                 }],
+                labels: {
+                    enabled: false
+                },
+                title: {
+                    text: null
+                },
                 plotBands: [{
                     // 위험 구역 (좌상단)
                     from: 0,
@@ -5237,7 +5238,7 @@ $(document).ready(function () {
                     text: null
                 },
                 plotLines: [{
-                    color: '#dddddd',
+                    color: '#dddddd', 
                     width: 1,
                     value: 50,
                     zIndex: 1,
@@ -5259,51 +5260,51 @@ $(document).ready(function () {
             series: [{
                 name: 'Stocks',
                 data: [
-                    { x: 95, y: 95, name: 'TSLA' },
-                    { x: 8.5, y: 12.9, name: 'AAPL' },
-                    { x: 12.3, y: 86.1, name: 'DIS' },
-                    { x: 25.4, y: 45.2, name: 'MSFT' },
-                    { x: 35.8, y: 72.3, name: 'GOOGL' },
-                    { x: 42.1, y: 28.7, name: 'META' },
-                    { x: 15.9, y: 65.4, name: 'AMZN' },
-                    { x: 78.2, y: 34.6, name: 'NFLX' },
-                    { x: 55.7, y: 89.3, name: 'NVDA' },
+                    { x: 95, y: 95, name: '테슬라' },
+                    { x: 8.5, y: 12.9, name: '애플' },
+                    { x: 12.3, y: 86.1, name: '디즈니' },
+                    { x: 25.4, y: 45.2, name: '마이크로소프트' },
+                    { x: 35.8, y: 72.3, name: '구글' },
+                    { x: 42.1, y: 28.7, name: '메타' },
+                    { x: 15.9, y: 65.4, name: '아마존' },
+                    { x: 78.2, y: 34.6, name: '넷플릭스' },
+                    { x: 55.7, y: 89.3, name: '엔비디아' },
                     { x: 28.4, y: 52.8, name: 'AMD' },
-                    { x: 62.3, y: 41.5, name: 'INTC' },
+                    { x: 62.3, y: 41.5, name: '인텔' },
                     { x: 45.6, y: 78.9, name: 'IBM' },
-                    { x: 82.1, y: 25.4, name: 'CSCO' },
-                    { x: 18.7, y: 93.2, name: 'ORCL' },
-                    { x: 71.4, y: 61.8, name: 'CRM' },
-                    { x: 38.9, y: 82.5, name: 'ADBE' },
-                    { x: 92.5, y: 15.7, name: 'PYPL' },
-                    { x: 22.8, y: 68.4, name: 'V' },
-                    { x: 58.6, y: 37.2, name: 'MA' },
-                    { x: 75.3, y: 55.9, name: 'JPM' },
-                    { x: 32.7, y: 84.6, name: 'BAC' },
-                    { x: 88.4, y: 29.3, name: 'WFC' },
-                    { x: 48.2, y: 73.5, name: 'GS' },
-                    { x: 65.9, y: 44.8, name: 'MS' },
-                    { x: 15.3, y: 91.7, name: 'C' },
-                    { x: 85.7, y: 22.6, name: 'BLK' },
-                    { x: 42.8, y: 66.3, name: 'AXP' },
-                    { x: 68.5, y: 33.9, name: 'USB' },
-                    { x: 25.6, y: 88.4, name: 'PNC' },
-                    { x: 78.9, y: 51.2, name: 'TFC' },
-                    { x: 35.4, y: 77.8, name: 'SCHW' },
-                    { x: 92.1, y: 18.5, name: 'GE' },
-                    { x: 52.7, y: 62.9, name: 'BA' },
-                    { x: 72.3, y: 41.6, name: 'CAT' },
-                    { x: 18.9, y: 85.3, name: 'MMM' },
-                    { x: 82.6, y: 27.4, name: 'HON' },
-                    { x: 45.8, y: 71.2, name: 'UNH' },
-                    { x: 65.2, y: 48.7, name: 'JNJ' },
-                    { x: 28.7, y: 93.5, name: 'PFE' },
-                    { x: 88.9, y: 32.1, name: 'MRK' },
-                    { x: 13.3, y: 87.1, name: 'AAPL' },
-                    { x: 53.4, y: 61.8, name: 'QCOM' },
-                    { x: 48.4, y: 63.8, name: 'QCOM' },
-                    { x: 63.4, y: 51.8, name: 'QCOM' },
-                    { x: 63.4, y: 51.8, name: 'QCOM' },
+                    { x: 82.1, y: 25.4, name: '시스코' },
+                    { x: 18.7, y: 93.2, name: '오라클' },
+                    { x: 71.4, y: 61.8, name: '세일즈포스' },
+                    { x: 38.9, y: 82.5, name: '어도비' },
+                    { x: 92.5, y: 15.7, name: '페이팔' },
+                    { x: 22.8, y: 68.4, name: '비자' },
+                    { x: 58.6, y: 37.2, name: '마스터카드' },
+                    { x: 75.3, y: 55.9, name: 'JP모건' },
+                    { x: 32.7, y: 84.6, name: '뱅크오브아메리카' },
+                    { x: 88.4, y: 29.3, name: '웰스파고' },
+                    { x: 48.2, y: 73.5, name: '골드만삭스' },
+                    { x: 65.9, y: 44.8, name: '모건스탠리' },
+                    { x: 15.3, y: 91.7, name: '씨티그룹' },
+                    { x: 85.7, y: 22.6, name: '블랙록' },
+                    { x: 42.8, y: 66.3, name: '아메리칸익스프레스' },
+                    { x: 68.5, y: 33.9, name: 'US뱅코프' },
+                    { x: 25.6, y: 88.4, name: 'PNC파이낸셜' },
+                    { x: 78.9, y: 51.2, name: '트루이스트' },
+                    { x: 35.4, y: 77.8, name: '찰스슈왑' },
+                    { x: 92.1, y: 18.5, name: '제너럴일렉트릭' },
+                    { x: 52.7, y: 62.9, name: '보잉' },
+                    { x: 72.3, y: 41.6, name: '캐터필러' },
+                    { x: 18.9, y: 85.3, name: '3M' },
+                    { x: 82.6, y: 27.4, name: '허니웰' },
+                    { x: 45.8, y: 71.2, name: '유나이티드헬스' },
+                    { x: 65.2, y: 48.7, name: '존슨앤드존슨' },
+                    { x: 28.7, y: 93.5, name: '화이자' },
+                    { x: 88.9, y: 32.1, name: '머크' },
+                    { x: 13.3, y: 87.1, name: '애플' },
+                    { x: 53.4, y: 61.8, name: '퀄컴' },
+                    { x: 48.4, y: 63.8, name: '퀄컴' },
+                    { x: 63.4, y: 51.8, name: '퀄컴' },
+                    { x: 63.4, y: 51.8, name: '퀄컴' },
                 ]
             }],
 
@@ -5322,7 +5323,7 @@ $(document).ready(function () {
                         format: '{point.name}',
                         backgroundColor: '#ffffff', // 흰색 배경
                         borderRadius: 8,          // 둥근 모서리
-                        padding: 5,               // 내부 여백
+                        padding: 6,               // 내부 여백
                         style: {
                             color: '#4E5866',     // 텍스트 색상
                             fontSize: '12px',

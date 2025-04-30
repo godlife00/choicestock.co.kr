@@ -11984,7 +11984,6 @@ table.tableRanking td {
 
 .globalStock .sub_search .latest_results .tabsArea .onestep_chart {
   background: #fff;
-  margin: 7px 0 0;
   padding: 24px 20px 0;
   overflow: hidden;
 }
@@ -12224,6 +12223,8 @@ table.tableRanking td {
   margin-left: 30px;
   margin-bottom: 30px;
   position: relative;
+  border-left: 1px solid #BFD1FE;
+  border-bottom: 1px solid #BFD1FE;
 }
 
 #onestep_chart1_1 .highcharts-point {
@@ -12243,6 +12244,9 @@ table.tableRanking td {
 
 .globalStock .sub_search .latest_results .tabsArea .onestep_chart .average {
   position: absolute;
+  margin-left: -22px;
+  margin-top: -22px;
+  top: 0;
   text-align: center;
   display: inline-flex;
   align-items: center;
