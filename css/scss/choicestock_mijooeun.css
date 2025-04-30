@@ -39893,6 +39893,9 @@ body.v_signalStreng {
 .globalStock .service_wrap .box .review_box {
   background: transparent;
   padding: 110px 20px 0;
+  width: 90%;
+  max-width: 480px;
+  margin: 0 auto;
 }
 .globalStock .service_wrap .box .review_box .review_title {
   color: #C7CBE9;
