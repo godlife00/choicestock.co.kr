@@ -2459,10 +2459,12 @@ class ContentFilter {
                 'sub_research': 'all_note',    // 리서치 페이지: 전체 노트 필터
                 'sub_briefing': 'all_briefing',// 브리핑 페이지: 전체 브리핑 필터
                 'sub_alarm': 'all_briefing',  // 알람 리스트 페이지: 전체 브리핑 필터
-                'default': 'growth'            // 기본 페이지: 성장주 필터
+                'default': 'growth',            // 기본 페이지: 성장주 필터
+                'sub_search': 'simple'            // 원스톱진단 페이지: 간단히,자세히 필터
             },
             filterButtonClass: '.filter_btn',   // 필터 버튼 클래스
             sortButtonClass: '.sort_btn',       // 정렬 버튼 클래스
+            interestButtonClass: '.interest_btn',  // 관심 버튼 클래스
             contentClass: '.filter_box_inner',  // 컨텐츠 박스 클래스
             ...options
         };
@@ -2496,13 +2498,17 @@ class ContentFilter {
         const self = this;
         
         // 필터 버튼과 정렬 버튼 클릭 이벤트 처리
-        $(`${this.options.filterButtonClass}, ${this.options.sortButtonClass}`).on('click', function(e) {
+        $(`${this.options.filterButtonClass}, ${this.options.sortButtonClass}, ${this.options.interestButtonClass}`).on('click', function(e) {
             const isFilterBtn = $(this).hasClass('filter_btn');
-            
+            const isInterestBtn = $(this).hasClass('interest_btn');
             // 버튼 타입에 따른 active 클래스 처리
             if(isFilterBtn) {
                 // 필터 버튼인 경우
                 $(self.options.filterButtonClass).removeClass('active');
+                $(this).addClass('active');
+            } else if(isInterestBtn) {
+                // 원스톱진단 버튼인 경우
+                $(self.options.interestButtonClass).removeClass('active');
                 $(this).addClass('active');
             } else {
                 // 정렬 버튼인 경우
