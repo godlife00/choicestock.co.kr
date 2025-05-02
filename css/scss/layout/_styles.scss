@@ -20947,6 +20947,19 @@ table.tableRanking td {
 	border-right: 1px solid #BEBCCB;
 }
 
+.globalStock .sub_briefing .sub_mid.research_board {
+	.filter-swiper {
+		padding: 0 15px !important;		
+	}
+	.filter_list {
+		margin: 0 !important;
+		padding: 0 0 20px 0 !important;		
+		.filter_btn {
+			background-color: #fff;
+		}
+	}
+	
+}
 .globalStock .sub_briefing .sub_mid.research_board .lst_type {
 	width: calc(100% - 30px);
 	margin: 0 auto 30px;
@@ -21059,6 +21072,35 @@ table.tableRanking td {
 .globalStock .alarmArea.schFocus {
 	display: block;
 	border-bottom: 1px solid #e2e2e2;
+}
+.globalStock .alarmArea {
+	.filter_list {
+		@include filter_list;		
+		margin: 0 !important;
+		padding: 20px 0 !important;		
+		.filter_btn {
+			background-color: #fff;
+		}
+	}
+	.filter-swiper {				
+		@include filter_swiper;
+		padding: 0 15px !important;		
+	}
+	.filter_box_inner {								
+		.txt_box {
+			width: 100%;
+			padding-bottom: 16px;
+			.title {
+				color: var(--Font-primary-title, #1F242B);
+				font-family: var(--Title, Pretendard);
+				font-size: var(--Size-xl-01, 18px);
+				font-style: normal;
+				font-weight: var(--Weight-600, 600);
+				line-height: var(--Line-height-xl-01, 24px); /* 133.333% */
+				letter-spacing: var(--Tracking-md, -0.3px);
+			}
+		}
+	}
 }
 
 .globalStock .alarmArea .alarmList li {

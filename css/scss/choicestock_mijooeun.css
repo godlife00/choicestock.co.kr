@@ -163,7 +163,7 @@
 }
 .v_signalStreng.globalStock #header .headerTop .go_briefing {
   position: absolute;
-  right: 16px;
+  right: 0;
   top: 17px;
   display: inline-block;
   width: 93px;
@@ -20900,6 +20900,17 @@ table.tableRanking td {
   border-right: 1px solid #BEBCCB;
 }
 
+.globalStock .sub_briefing .sub_mid.research_board .filter-swiper {
+  padding: 0 15px !important;
+}
+.globalStock .sub_briefing .sub_mid.research_board .filter_list {
+  margin: 0 !important;
+  padding: 0 0 20px 0 !important;
+}
+.globalStock .sub_briefing .sub_mid.research_board .filter_list .filter_btn {
+  background-color: #fff;
+}
+
 .globalStock .sub_briefing .sub_mid.research_board .lst_type {
   width: calc(100% - 30px);
   margin: 0 auto 30px;
@@ -21012,6 +21023,78 @@ table.tableRanking td {
 .globalStock .alarmArea.schFocus {
   display: block;
   border-bottom: 1px solid #e2e2e2;
+}
+
+.globalStock .alarmArea .filter_list {
+  display: flex;
+  align-items: center;
+  gap: var(--Spacing-s-04, 8px);
+  margin-top: 32px;
+  margin: 0 !important;
+  padding: 20px 0 !important;
+}
+.globalStock .alarmArea .filter_list .swiper-slide {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.globalStock .alarmArea .filter_list .swiper-slide:last-child {
+  margin-right: 32px !important;
+}
+.globalStock .alarmArea .filter_list .swiper-slide .filter_btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px 4px;
+  border-radius: var(--Radius-r-06, 32px);
+  border: 1px solid var(--Border-primary-border, #E3E5E8);
+  padding: 7px 16px;
+  box-sizing: border-box;
+  color: var(--Font-default, #6B7684);
+  font-family: var(--Body, Pretendard);
+  font-size: var(--Size-md-15, 15px);
+  font-style: normal;
+  font-weight: var(--Weight-500, 500);
+  line-height: var(--Line-height-xl-01, 24px); /* 160% */
+  letter-spacing: var(--Tracking-md, -0.3px);
+}
+.globalStock .alarmArea .filter_list .swiper-slide .filter_btn.active {
+  border-radius: var(--Radius-r-06, 32px);
+  background: var(--Background-primary-dark-background, #24282C);
+  color: #FFF;
+  font-weight: var(--Weight-600, 600);
+  border-color: transparent;
+}
+.globalStock .alarmArea .filter_list .filter_btn {
+  background-color: #fff;
+}
+.globalStock .alarmArea .filter-swiper {
+  padding: 0 20px;
+  box-sizing: border-box;
+  padding: 0 15px !important;
+}
+.globalStock .alarmArea .filter-swiper.swiper-container-initialized {
+  visibility: visible;
+}
+.globalStock .alarmArea .filter-swiper .swiper-wrapper {
+  transition-timing-function: linear;
+}
+.globalStock .alarmArea .filter-swiper .swiper-slide {
+  display: block;
+  width: auto;
+}
+.globalStock .alarmArea .filter_box_inner .txt_box {
+  width: 100%;
+  padding-bottom: 16px;
+}
+.globalStock .alarmArea .filter_box_inner .txt_box .title {
+  color: var(--Font-primary-title, #1F242B);
+  font-family: var(--Title, Pretendard);
+  font-size: var(--Size-xl-01, 18px);
+  font-style: normal;
+  font-weight: var(--Weight-600, 600);
+  line-height: var(--Line-height-xl-01, 24px); /* 133.333% */
+  letter-spacing: var(--Tracking-md, -0.3px);
 }
 
 .globalStock .alarmArea .alarmList li {
