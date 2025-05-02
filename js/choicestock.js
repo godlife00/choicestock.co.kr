@@ -2449,47 +2449,89 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-// 레시피 & 스마트스코어 필터링 기능
-$(document).ready(function() {
-    // 초기화: 페이지별 첫번째 탭 컨텐츠 설정
-    if($('.sub_recipe').length > 0) {
-        // new_recipe.html 페이지인 경우
-        $('.filter_box_inner').hide();
-        $('[data-filter="recommend"]').show();
-    } else if($('.sub_research').length > 0) {
-        // note.html 페이지인 경우
-        $('.filter_box_inner').hide();
-        $('[data-filter="all_note"]').show();    
-    } else if($('.interest_list').length > 0) {
-        // searching_onestop.html 페이지인 경우
-        $('.filter_box_inner').hide();
-        $('[data-filter="simple"]').show();
-        // $('[data-filter="detail"]').show();
-    } else {
-        // 스마트스코어 페이지인 경우
-        $('.filter_box_inner').hide();
-        $('[data-filter="growth"]').show();
+// 컨텐츠 필터링을 위한 클래스 정의
+class ContentFilter {
+    constructor(options = {}) {        
+        this.options = {
+            // 각 페이지 타입별 기본 필터값 정의 (나중에 필터 추가 되면 여기에 추가)
+            pageTypes: {
+                'sub_recipe': 'recommend',     // 레시피 페이지: 추천 필터
+                'sub_research': 'all_note',    // 리서치 페이지: 전체 노트 필터
+                'sub_briefing': 'all_briefing',// 브리핑 페이지: 전체 브리핑 필터
+                'sub_alarm': 'all_briefing',  // 알람 리스트 페이지: 전체 브리핑 필터
+                'default': 'growth'            // 기본 페이지: 성장주 필터
+            },
+            filterButtonClass: '.filter_btn',   // 필터 버튼 클래스
+            sortButtonClass: '.sort_btn',       // 정렬 버튼 클래스
+            contentClass: '.filter_box_inner',  // 컨텐츠 박스 클래스
+            ...options
+        };
+        
+        this.init();
+        this.bindEvents();
     }
-    
-    // 필터 버튼 클릭 이벤트 (레시피 & 스마트스코어 공통)
-    $('.filter_btn, .sort_btn, .interest_btn').on('click', function(e) {
-        const isRecipe = $(this).hasClass('filter_btn');        
+
+    // 필터 초기화 메서드
+    init() {
+        // 현재 페이지 타입에 맞는 기본 필터 적용
+        const pageType = this.getCurrentPageType();
+        const defaultFilter = this.options.pageTypes[pageType];
         
-        // active 클래스 처리
-        if(isRecipe) {
-            $('.filter_btn').removeClass('active');
-            $(this).addClass('active');
-        } else if($('.interest_btn').length > 0) {
-            $('.interest_btn').removeClass('active');
-            $(this).addClass('active');        
-        } else {
-            $('.sort li').removeClass('active');
-            $(this).parent('li').addClass('active');
+        // 모든 컨텐츠를 숨기고 기본 필터에 해당하는 컨텐츠만 표시
+        $(this.options.contentClass).hide();
+        $(`[data-filter="${defaultFilter}"]`).show();
+    }
+
+    // 현재 페이지 타입을 확인하는 메서드
+    getCurrentPageType() {
+        // pageTypes에 정의된 각 타입을 확인하여 현재 페이지 타입 반환
+        for(let type in this.options.pageTypes) {
+            if($(`.${type}`).length > 0) return type;
         }
+        return 'default'; // 일치하는 타입이 없으면 기본값 반환
+    }
+
+    // 이벤트 리스너 설정 메서드
+    bindEvents() {
+        const self = this;
         
-        // 선택된 필터 값으로 컨텐츠 표시
-        const filterValue = $(this).data('filter');
-        $('.filter_box_inner').hide();
-        $('.filter_box_inner[data-filter="' + filterValue + '"]').show();
-    });    
+        // 필터 버튼과 정렬 버튼 클릭 이벤트 처리
+        $(`${this.options.filterButtonClass}, ${this.options.sortButtonClass}`).on('click', function(e) {
+            const isFilterBtn = $(this).hasClass('filter_btn');
+            
+            // 버튼 타입에 따른 active 클래스 처리
+            if(isFilterBtn) {
+                // 필터 버튼인 경우
+                $(self.options.filterButtonClass).removeClass('active');
+                $(this).addClass('active');
+            } else {
+                // 정렬 버튼인 경우
+                $('.sort li').removeClass('active');
+                $(this).parent('li').addClass('active');
+            }
+            
+            // 선택된 필터값에 따라 컨텐츠 표시/숨김 처리
+            const filterValue = $(this).data('filter');
+            $(self.options.contentClass).hide();
+            $(`${self.options.contentClass}[data-filter="${filterValue}"]`).show();
+        });
+    }
+}
+
+// DOM이 로드된 후 필터 초기화
+$(document).ready(function() {
+    // 기본 필터 인스턴스 생성
+    const contentFilter = new ContentFilter();
+    
+    // 커스텀 옵션 사용 예시 (주석 처리)
+    /*
+    const customFilter = new ContentFilter({
+        pageTypes: {
+            'custom_page': 'custom_filter',  // 커스텀 페이지 타입
+            'default': 'all'                 // 커스텀 기본 필터
+        },
+        filterButtonClass: '.custom_filter_btn',  // 커스텀 필터 버튼
+        contentClass: '.custom_content'           // 커스텀 컨텐츠 클래스
+    });
+    */
 });
