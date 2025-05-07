@@ -334,6 +334,7 @@
 		top: 0;				
 	}
 	.alert_text {
+		display: none;
 		color: var(--Font-primary-body, #24282C);
 		font-family: var(--Body, Pretendard);
 		font-size: var(--Size-md-15, 15px);

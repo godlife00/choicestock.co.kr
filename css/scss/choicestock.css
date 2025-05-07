@@ -18459,6 +18459,7 @@ table.tableRanking td {
   top: 0;
 }
 .globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .tradeSignal_status .market_alert .alert_text {
+  display: none;
   color: var(--Font-primary-body, #24282C);
   font-family: var(--Body, Pretendard);
   font-size: var(--Size-md-15, 15px);
@@ -18513,7 +18514,7 @@ table.tableRanking td {
   max-width: 200px;
   z-index: 88;
   right: 3px;
-  top: calc(50% + 38px);
+  top: calc(50% + 33px);
   transform: translateY(-50%);
 }
 .globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .tradeSignal_status .market_alert .tooltip_content .tooltip_icon {
@@ -39202,6 +39203,7 @@ body.v_signalStreng {
   top: 0;
 }
 .modal.tooltip_pop.score_pop02 .pop_con .market_alert .alert_text {
+  display: none;
   color: var(--Font-primary-body, #24282C);
   font-family: var(--Body, Pretendard);
   font-size: var(--Size-md-15, 15px);
@@ -39239,6 +39241,9 @@ body.v_signalStreng {
 }
 .modal.tooltip_pop.score_pop02 .pop_con .market_alert.extreme .alert_title {
   color: #00A469;
+}
+.modal.tooltip_pop.score_pop02 .pop_con .market_alert .alert_text {
+  display: block;
 }
 .modal.tooltip_pop.score_pop02 .pop_con .market_alert::after {
   display: none;
