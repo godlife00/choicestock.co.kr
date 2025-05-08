@@ -11554,6 +11554,11 @@ table.tableRanking td {
 			background: var(--Background-primary-light-background, #F1F4F6);
 			color: var(--Gray-gray600, #6B7684);
 		}
+		.attractive .list .item {
+			border-radius: var(--Radius-r-02, 8px);
+			background: var(--Red-red50, #FEF2F3);
+			color: var(--Red-red500, #F03E4C);
+		}
 	}
 
 	.onestep_matrix {			

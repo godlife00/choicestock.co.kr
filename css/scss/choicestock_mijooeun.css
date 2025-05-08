@@ -11723,6 +11723,11 @@ table.tableRanking td {
   background: var(--Background-primary-light-background, #F1F4F6);
   color: var(--Gray-gray600, #6B7684);
 }
+.globalStock .sub_search .latest_results .tabsArea .onestep_guide .analyze_box .attractive .list .item {
+  border-radius: var(--Radius-r-02, 8px);
+  background: var(--Red-red50, #FEF2F3);
+  color: var(--Red-red500, #F03E4C);
+}
 .globalStock .sub_search .latest_results .tabsArea .onestep_guide .onestep_matrix {
   padding: 40px 20px 0;
   border-top: 8px solid var(--Background-fill-background, #F7F8FA);
@@ -36181,7 +36186,7 @@ body.v_signalStreng {
   height: 16px;
   right: 7px;
   top: 12px;
-  z-index: 99;
+  z-index: 81;
 }
 .sub_mid.latest_results .interest_list .select_area select {
   cursor: pointer;

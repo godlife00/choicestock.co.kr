@@ -821,9 +821,24 @@ $(document).ready(function () {
             spaceBetween: 16,
             observer: true, // DOM 변화를 감지하여 Swiper를 업데이트
             observeParents: true, // 부모 요소의 DOM 변화를 감지
-            autoHeight: true, // 자동 높이 조절 비활성화            
+            on: {
+                init: function () {
+                    let maxHeight = 0;
+                    const slides = this.slides ? Array.from(this.slides) : [];
+                    slides.forEach(slide => {
+                        if (slide.offsetHeight > maxHeight) {
+                            maxHeight = slide.offsetHeight;
+                        }
+                    });
+                    slides.forEach(slide => {
+                        slide.style.height = maxHeight + 'px';
+                    });
+                    this.update(); // 초기화 시 높이 업데이트
+                }
+            }
         });
     }
+    console.log($('.analyze_list').innerHeight());
     
 
     var catchSwiper = new Swiper('.catchSwiper, .catchSwiper2', {
