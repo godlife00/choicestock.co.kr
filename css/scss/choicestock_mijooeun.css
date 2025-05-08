@@ -7209,6 +7209,86 @@ table.tableRanking td {
   display: block;
 }
 
+.globalStock .sub_recom .sub_mid .tabsArea .tab_container .tab_content .spider_year {
+  text-align: center;
+}
+.globalStock .sub_recom .sub_mid .tabsArea .tab_container .tab_content .spider_year .spider_year_item {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px 18px;
+  border-radius: 100px;
+  border: 1px solid var(--Border-primary-border, #E3E5E8);
+  background: #F4F4F5;
+  margin: 0 auto 35px;
+  padding: 12px 14px 12px 24px;
+  box-sizing: border-box;
+}
+.globalStock .sub_recom .sub_mid .tabsArea .tab_container .tab_content .spider_year .spider_year_item span {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px 4px;
+  color: var(--Font-secondary-caption, #6B7684);
+  font-family: var(--Body, Pretendard);
+  font-size: var(--Size-xs-13, 13px);
+  font-style: normal;
+  font-weight: var(--Weight-500, 500);
+  line-height: var(--Line-height-xs-13, 16px); /* 123.077% */
+  letter-spacing: var(--Tracking-md, -0.3px);
+}
+.globalStock .sub_recom .sub_mid .tabsArea .tab_container .tab_content .spider_year .spider_year_item span::before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--Font-secondary-caption, #B0B8C1);
+}
+.globalStock .sub_recom .sub_mid .tabsArea .tab_container .tab_content .spider_year .spider_year_item span.active::before {
+  background-color: var(--Font-primary-blue, #4168F6);
+}
+.globalStock .sub_recom .sub_mid .tabsArea .tab_container .tab_content .spider_year .tooltip_content {
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 8px;
+  border-radius: 100px;
+  background: #1AE5D6;
+  max-width: 200px;
+  z-index: 88;
+  right: 3px;
+  top: 36px;
+}
+.globalStock .sub_recom .sub_mid .tabsArea .tab_container .tab_content .spider_year .tooltip_content .tooltip_icon {
+  position: absolute;
+  right: 20px;
+  top: -12px;
+}
+.globalStock .sub_recom .sub_mid .tabsArea .tab_container .tab_content .spider_year .tooltip_content .tooltip_text {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.globalStock .sub_recom .sub_mid .tabsArea .tab_container .tab_content .spider_year .tooltip_content .txt {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  color: var(--Font-primary-body, #24282C);
+  text-align: left;
+  font-family: var(--Body, Pretendard);
+  font-size: var(--Size-xxs, 11px);
+  font-style: normal;
+  font-weight: var(--Weight-600, 600);
+  line-height: var(--Line-height-xxs, 13px); /* 118.182% */
+  letter-spacing: var(--Tracking-md, -0.3px);
+}
 .globalStock .sub_recom .sub_mid .tabsArea .tab_container #tab1.tab_content img,
 .globalStock .sub_recom .sub_mid .tabsArea .tab_container #tab1.tab_content p img {
   display: inline-block;
@@ -7396,15 +7476,16 @@ table.tableRanking td {
   height: 260px;
 }
 .globalStock .sub_recom .sub_mid .containercharm1 .highcharts-axis-labels.highcharts-radial-axis-labels span {
-  color: #6a727b !important;
-  font-weight: 400;
+  color: var(--Gray-gray600, #6B7684) !important;
+  font-family: Pretendard;
+  font-size: 13px !important;
+  font-weight: 400 !important;
 }
 .globalStock .sub_recom .sub_mid .containercharm1 .highcharts-axis-labels.highcharts-radial-axis-labels strong {
   display: inline-block;
-  padding-top: 5px;
-  font-weight: 400;
-  color: #6a727b !important;
-  font-size: 16px;
+  color: var(--Gray-gray600, #6B7684) !important;
+  font-size: 16px !important;
+  font-weight: 500 !important;
 }
 
 .globalStock .sub_recom .sub_mid .tabsArea .tab_container #tab2.tab_content {
@@ -18959,6 +19040,7 @@ table.tableRanking td {
   top: 0;
 }
 .globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .tradeSignal_status .market_alert .alert_text {
+  display: none;
   color: var(--Font-primary-body, #24282C);
   font-family: var(--Body, Pretendard);
   font-size: var(--Size-md-15, 15px);
@@ -19013,7 +19095,7 @@ table.tableRanking td {
   max-width: 200px;
   z-index: 88;
   right: 3px;
-  top: calc(50% + 38px);
+  top: calc(50% + 33px);
   transform: translateY(-50%);
 }
 .globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .tradeSignal_status .market_alert .tooltip_content .tooltip_icon {
@@ -39702,6 +39784,7 @@ body.v_signalStreng {
   top: 0;
 }
 .modal.tooltip_pop.score_pop02 .pop_con .market_alert .alert_text {
+  display: none;
   color: var(--Font-primary-body, #24282C);
   font-family: var(--Body, Pretendard);
   font-size: var(--Size-md-15, 15px);
@@ -39739,6 +39822,9 @@ body.v_signalStreng {
 }
 .modal.tooltip_pop.score_pop02 .pop_con .market_alert.extreme .alert_title {
   color: #00A469;
+}
+.modal.tooltip_pop.score_pop02 .pop_con .market_alert .alert_text {
+  display: block;
 }
 .modal.tooltip_pop.score_pop02 .pop_con .market_alert::after {
   display: none;

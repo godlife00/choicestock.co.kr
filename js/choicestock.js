@@ -2329,10 +2329,14 @@ $(document).ready(function () {
         
     // spider_year_item 클릭 이벤트
     $('.spider_year_item span').click(function() {
-        $('.past_score_pop').show().addClass('slideUp');
-        $('.blocker').show();
-        $('html, body').css("overflow", "hidden");
-        history.pushState(null, null, location.href); // 히스토리에 현재 상태 추가        
+        if ($(this).hasClass('no_pop')) {            
+            return;
+        } else {
+            $('.past_score_pop').show().addClass('slideUp');
+            $('.blocker').show();
+            $('html, body').css("overflow", "hidden");
+            history.pushState(null, null, location.href); // 히스토리에 현재 상태 추가        
+        }
         $('.list.recom').addClass('fix_data');        
     });
 

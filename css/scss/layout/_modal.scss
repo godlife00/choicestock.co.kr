@@ -2804,6 +2804,9 @@
 		.market_alert {
 			@include market_alert;						
 			margin: 12px 24px 0;
+			.alert_text {
+				display: block;
+			}
 			&::after {
 				display: none;
 			}
