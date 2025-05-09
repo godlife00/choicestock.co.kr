@@ -11422,7 +11422,7 @@ table.tableRanking td {
 		padding: 0;				
 	}
 	.onestep_guide_box {		
-		margin-top: 80px;			
+		margin-top: 56px;			
 		padding: 0 20px 40px;		
 		.onestep_title {					
 			color: var(--Font-primary-title, #1F242B);
@@ -11445,6 +11445,17 @@ table.tableRanking td {
 			margin-top: 16px;
 			padding: 32px 24px;
 			
+			.no_item {
+				width: 100%;
+				height: 40px;
+				color: var(--Font-disabled, #B0B8C1);
+				font-family: var(--Body, Pretendard);
+				font-size: var(--Size-md-16, 16px);
+				font-style: normal;
+				font-weight: var(--Weight-400, 400);
+				line-height: var(--Line-height-xl-01, 24px); /* 160% */
+				letter-spacing: var(--Tracking-md, -0.3px);
+			}
 			.guide_txt {
 				width: 100%;
 				margin-bottom: 8px;
@@ -11489,7 +11500,7 @@ table.tableRanking td {
 
 	.analyze_box {
 		&.analyze_Swiper {
-			padding: 24px 15px 16px;
+			padding: 24px 15px 40px;
 			box-sizing: border-box;
 			visibility: hidden;
 
@@ -11507,9 +11518,9 @@ table.tableRanking td {
 		.analyze_list {
 			display: flex;
 			flex-direction: column;
-
 			width: 290px;
 			height: 100%;
+			min-height: 194px;
 			border-radius: 16px;
 			background: #FFF;
 			box-shadow: 0px 0px 15px 0px rgba(134, 138, 147, 0.15);
@@ -11808,7 +11819,18 @@ table.tableRanking td {
 			.list {
 				display: flex;
 				flex-wrap: wrap;
-				gap: 8px 8px;					
+				gap: 8px 8px;	
+				.no_item {
+					width: 100%;
+					height: 40px;
+					color: var(--Font-disabled, #B0B8C1);
+					font-family: var(--Body, Pretendard);
+					font-size: var(--Size-md-16, 16px);
+					font-style: normal;
+					font-weight: var(--Weight-400, 400);
+					line-height: var(--Line-height-xl-01, 24px); /* 160% */
+					letter-spacing: var(--Tracking-md, -0.3px);
+				}
 				.item {
 					display: inline-block;
 					align-items: center;
@@ -12171,6 +12193,9 @@ table.tableRanking td {
 	position: relative;
 	border-left: 1px solid #BFD1FE;
 	border-bottom: 1px solid #BFD1FE;
+}
+.globalStock .sub_search .latest_results .tabsArea .onestep_chart .onestep_chart_simple {
+	height: 420px;
 }
 
 #onestep_chart1_1 .highcharts-point {

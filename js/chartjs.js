@@ -5209,7 +5209,7 @@ $(document).ready(function () {
         Highcharts.chart('onestep_chart_simple', {
             chart: {
                 type: 'scatter',
-                height: '100%',
+                height: '420px',
                 backgroundColor: 'transparent',
                 margin: [0, 0, 0, 0],
             },
@@ -5336,7 +5336,7 @@ $(document).ready(function () {
                             textOutline: 'none',                            
                         },
                         borderWidth: 1,           // 테두리 두께
-                        borderColor: '#E3E5E8',   // 테두리 색상
+                        borderColor: '#D0DEFF',   // 테두리 색상
                         shadow: false,            // 그림자 효과 제거
                         useHTML: true,            // HTML 사용 활성화
                         
