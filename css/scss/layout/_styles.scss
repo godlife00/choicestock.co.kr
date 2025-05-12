@@ -11420,7 +11420,18 @@ table.tableRanking td {
 	.filter_box_inner {		
 		display: none;		
 		padding: 0;				
+		.guide_txt {
+			margin-top: 20px;
+			text-align: right;
+			color: #939393;
+			font-family: Pretendard;
+			font-size: 12px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: normal;
+		}
 	}
+	
 	.onestep_guide_box {		
 		margin-top: 56px;			
 		padding: 0 20px 40px;		

@@ -11629,6 +11629,16 @@ table.tableRanking td {
   display: none;
   padding: 0;
 }
+.globalStock .sub_search .latest_results .tabsArea .onestep_guide .filter_box_inner .guide_txt {
+  margin-top: 20px;
+  text-align: right;
+  color: #939393;
+  font-family: Pretendard;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
 .globalStock .sub_search .latest_results .tabsArea .onestep_guide .onestep_guide_box {
   margin-top: 56px;
   padding: 0 20px 40px;
