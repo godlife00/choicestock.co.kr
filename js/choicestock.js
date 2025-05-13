@@ -838,8 +838,6 @@ $(document).ready(function () {
             }
         });
     }
-    console.log($('.analyze_list').innerHeight());
-    
 
     var catchSwiper = new Swiper('.catchSwiper, .catchSwiper2', {
         slidesPerView: 2.2,
