@@ -12143,6 +12143,9 @@ table.tableRanking td {
   padding: 24px 20px 0;
   overflow: hidden;
 }
+.globalStock .sub_search .latest_results .tabsArea .onestep_chart .guide_txt {
+  margin-top: 35px !important;
+}
 
 #onestep_chart1_1 {
   height: 400px;

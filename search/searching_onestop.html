@@ -26,15 +26,17 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
     <!-- highstock -->
-    <script src="../node_modules/highcharts/highstock.js"></script>
-    <script src="../node_modules/highcharts/highcharts-more.js"></script>
-    <script src="../node_modules/highcharts/modules/data.js"></script>
-    <script src="../node_modules/highcharts/modules/hollowcandlestick.js"></script>
-    <script src="../node_modules/highcharts/modules/no-data-to-display.js"></script>
-    <script src="../node_modules/highcharts/modules/treemap.js"></script>
-    <script src="../node_modules/highcharts/modules/exporting.js"></script>
-    <script src="../node_modules/highcharts/modules/export-data.js"></script>
-    <script src="../node_modules/highcharts/modules/accessibility.js"></script>
+    <script src="http://godlife.ivyro.net/highcharts/highcharts.js"></script>
+    <script src="http://godlife.ivyro.net/highcharts/stock/highstock.js"></script>
+    <script src="http://godlife.ivyro.net/highcharts/stock/modules/data.js"></script>
+    <script src="http://godlife.ivyro.net/highcharts/stock/modules/hollowcandlestick.js"></script>
+    <script src="http://godlife.ivyro.net/highcharts/stock/modules/no-data-to-display.js"></script>
+    <script src="http://godlife.ivyro.net/highcharts/stock/modules/treemap.js"></script>
+    <script src="http://godlife.ivyro.net/highcharts/stock/highcharts-more.js"></script>
+    <script src="http://godlife.ivyro.net/highcharts/stock/modules/exporting.js"></script>
+    <script src="http://godlife.ivyro.net/highcharts/stock/modules/export-data.js"></script>
+    <script src="http://godlife.ivyro.net/highcharts/stock/modules/accessibility.js"></script>
+    <script src="http://godlife.ivyro.net/highcharts/annotations.js"></script>
     <script src="../js/chartjs.js"></script>
     <!-- Swiper -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
@@ -94,7 +96,6 @@
                     <div class="tab_container">
                         <!-- 원스톱진단 -->
                         <div class="">
-
                             <div class="txt_box">
                                 <p class="txt">
                                     AI투자로봇이 관심종목(♥)을 원스톱으로 진단합니다.<br>
@@ -141,6 +142,19 @@
                                 </div>
                                 <!-- //관심종목 리스트 -->
 
+                                <div class="no_data">                                
+                                    <p>
+                                        관심종목 등록하고 원스톱진단 받으세요.
+                                        <br>
+                                        투자전략은 물론 매력종목/위험종목을<br>
+                                        한눈에 확인할 수 있습니다.
+                                        <br><br>
+                                        종목을 검색하여 종목명 옆의 하트(♥)를<br>
+                                        눌러 관심종목으로 등록해보세요.
+                                    </p>
+                                </div>
+                                <!-- //no_data -->
+
                                 <div class="filter_box_inner" data-filter="simple">
                                     <div class="onestep_chart">
                                         <div class="chart_wrap">
@@ -161,7 +175,7 @@
                                             </figure>
                                         </div>
                                         <!-- //chart_wrap -->
-
+                                        <p class="guide_txt">* 밸류에이션이 N/A인 종목은 제외됩니다.</p>
                                     </div>
                                     <!-- //onestep_chart -->
                                 </div>
