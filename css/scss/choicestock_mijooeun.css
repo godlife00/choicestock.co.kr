@@ -12094,6 +12094,106 @@ table.tableRanking td {
   background-color: var(--Gray-gray750, #313B48);
   border-radius: 100%;
 }
+.globalStock .sub_search .latest_results .tabsArea .onestep_guide .onestop_recommend {
+  margin: 80px auto 0;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+.globalStock .sub_search .latest_results .tabsArea .onestep_guide .onestop_recommend .onestop_recommend_box {
+  position: relative;
+  padding: 40px 24px 24px;
+  border-radius: 24px;
+  background: #ECEFFD;
+}
+.globalStock .sub_search .latest_results .tabsArea .onestep_guide .onestop_recommend .onestop_recommend_box::after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 24px;
+  top: 0px;
+  width: 32px;
+  height: 32px;
+  background: url("/img/icon_star.png") no-repeat center;
+  background-size: contain;
+}
+.globalStock .sub_search .latest_results .tabsArea .onestep_guide .onestop_recommend .txt {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: left;
+  color: var(--Font-teriary-title, #4E5866);
+  font-family: var(--Title, Pretendard);
+  font-size: var(--Size-lg, 17px);
+  font-style: normal;
+  font-weight: var(--Weight-600, 600);
+  line-height: var(--Line-height-md, 22px); /* 129.412% */
+  letter-spacing: var(--Tracking-md, -0.3px);
+}
+.globalStock .sub_search .latest_results .tabsArea .onestep_guide .onestop_recommend .title_txt {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: left;
+  margin-top: 4px;
+  color: var(--Font-primary-blue, #4168F6);
+  font-family: var(--Title, Pretendard);
+  font-size: var(--Size-5xl, 30px);
+  font-style: normal;
+  font-weight: var(--Weight-700, 700);
+  line-height: var(--Line-height-4xl, 42px); /* 140% */
+  letter-spacing: var(--Tracking-md, -0.3px);
+}
+.globalStock .sub_search .latest_results .tabsArea .onestep_guide .onestop_recommend .list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px 8px;
+  align-self: stretch;
+  margin-top: 12px;
+}
+.globalStock .sub_search .latest_results .tabsArea .onestep_guide .onestop_recommend .list .item {
+  display: flex;
+  align-items: center;
+  gap: 8px 8px;
+  position: relative;
+  color: var(--Font-primary-caption, #4E5866);
+  font-family: var(--Body, Pretendard);
+  font-size: var(--Size-md-15, 15px);
+  font-style: normal;
+  font-weight: var(--Weight-400, 400);
+  line-height: var(--Line-height-xl-01, 24px); /* 160% */
+  letter-spacing: var(--Tracking-md, -0.3px);
+  counter-increment: list-counter;
+}
+.globalStock .sub_search .latest_results .tabsArea .onestep_guide .onestop_recommend .list .item b {
+  color: var(--Font-primary-blue, #4168F6);
+  font-weight: var(--Weight-700, 700);
+}
+.globalStock .sub_search .latest_results .tabsArea .onestep_guide .onestop_recommend .list .item:before {
+  content: counter(list-counter);
+  display: inline-flex;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--Font-primary-blue, #4168F6);
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: #FFF;
+  font-family: var(--Body, Pretendard);
+  font-size: var(--Size-xs-13, 13px);
+  font-style: normal;
+  font-weight: var(--Weight-600, 600);
+  line-height: var(--Line-height-xs-13, 16px); /* 123.077% */
+  letter-spacing: var(--Tracking-md, -0.3px);
+}
+.globalStock .sub_search .latest_results .tabsArea .onestep_guide .onestop_recommend .premium_gdnbtn {
+  position: static;
+  bottom: 0;
+  margin: 24px auto 0 !important;
+  padding: 0 !important;
+}
+.globalStock .sub_search .latest_results .tabsArea .onestep_guide .onestop_recommend .premium_gdnbtn .btn.btn_apply {
+  width: 100% !important;
+}
 
 .globalStock .sub_search .latest_results .tabsArea .onestep_guide .h2_title {
   color: #333;
@@ -36336,6 +36436,19 @@ body.v_signalStreng {
 .sub_mid.latest_results .interest_list .select_area select:focus {
   outline: none;
 }
+.sub_mid.latest_results .interest_list .select_area .noData_title {
+  color: var(--Font-primary-title, #1F242B);
+  font-family: var(--Title, Pretendard);
+  font-size: var(--Size-2xl, 20px);
+  font-style: normal;
+  font-weight: var(--Weight-600, 600);
+  line-height: var(--Line-height-2xl, 26px); /* 130% */
+  letter-spacing: var(--Tracking-md, -0.3px);
+}
+.sub_mid.latest_results .interest_list .select_area .noData_title b {
+  color: var(--Font-primary-title, #1F242B);
+  font-weight: var(--Weight-600, 600);
+}
 .sub_mid.latest_results .interest_list .select_area .sort_manage {
   display: flex;
   align-items: center;
@@ -37102,7 +37215,7 @@ body.v_signalStreng {
   justify-content: center;
   border-radius: var(--Radius-r-02, 8px);
   background: var(--Font-primary-blue, #4168F6);
-  width: 70px;
+  width: 93px;
   margin-left: auto;
   padding: 10px 12px;
   box-sizing: border-box;

@@ -5259,7 +5259,7 @@ $(document).ready(function () {
             annotations: [{
                 labels: [{
                     point: { x: 10, y: 107, xAxis: 0, yAxis: 0 },
-                    text: '위험해요',
+                    text: '조심하세요',
                     backgroundColor: 'transparent',
                     borderWidth: 0,
                     shadow: false,

@@ -15157,6 +15157,19 @@ body.v_signalStreng {
 				}
 			}
 
+			.noData_title {
+				color: var(--Font-primary-title, #1F242B);
+				font-family: var(--Title, Pretendard);
+				font-size: var(--Size-2xl, 20px);
+				font-style: normal;
+				font-weight: var(--Weight-600, 600);
+				line-height: var(--Line-height-2xl, 26px); /* 130% */
+				letter-spacing: var(--Tracking-md, -0.3px);
+				b {
+					color: var(--Font-primary-title, #1F242B);
+					font-weight: var(--Weight-600, 600);
+				}
+			}
 			
 			.sort_manage {
 				display: flex;
@@ -16024,7 +16037,7 @@ body.v_signalStreng {
 			justify-content: center;
 			border-radius: var(--Radius-r-02, 8px);
 			background: var(--Font-primary-blue, #4168F6);
-			width: 70px;
+			width: 93px;
 			margin-left: auto;
 			padding: 10px 12px;
 			box-sizing: border-box;
