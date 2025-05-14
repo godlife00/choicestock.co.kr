@@ -59,6 +59,9 @@
             }
 
             .h1_title {
+                display: inline-flex;
+                align-items: center;
+                gap: 6px 6px;
                 margin: 0;
                 padding: 0;
                 color: var(--Font-primary-blue, #4168F6);
@@ -70,6 +73,21 @@
                 line-height: var(--Line-height-2xl, 26px);
                 /* 130% */
                 letter-spacing: var(--Tracking-md, -0.3px);
+            }
+            .event_txt {
+                display: inline-flex;
+                align-items: center;
+                gap: 6px 6px;
+                padding: 8px 8px;
+                margin-bottom: 24px;
+                border-radius: 100px;
+                background: var(--Red-red200, #FBCED2);
+                color: var(--Font-up-red, #F03E4C);
+                font-family: Pretendard;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
             }
 
             .h2_title {
@@ -853,6 +871,127 @@
             }
         }
     }
+
+    .할인혜택 {
+        margin-top: 120px;
+		padding: 64px 20px;
+		box-sizing: border-box;
+		background: #608CFA;
+		.txt {
+			p {
+				color: #FFF;		
+				font-size: 22px;
+				font-weight: 700;
+				line-height: 29px;
+				b {
+					color: #F8D54E;
+					font-size: 22px;
+					font-weight: 700;
+					line-height: 27px; /* 122.727% */
+				}
+			}		
+		}
+		.group {
+			display: flex;
+			flex-direction: column;
+			gap: 21px 0;				
+			margin-top: 16px;
+			.step_box {
+				border-radius: 16px;
+				border: 1px solid #DFE0EF;
+				background: #FFF url('/img/service/bg_wallet_blue.png') no-repeat calc(100% - 15px) center;
+				background-size: 62px 67px;
+				padding: 25px 24px 29px;
+				box-sizing: border-box;
+				.top {
+					.title {
+						color: #333;					
+						font-size: 14px;					
+						font-weight: 800;					
+					}
+				}
+				.payRight {
+					.pay01 {
+						position: relative;
+						display: block;
+						margin-top: 14px;
+						color: #999;
+						font-size: 16px;					
+						font-weight: normal;		
+					}				
+					.del_img {
+						display: inline-block;
+						position: absolute;
+						left: -5px;
+						right: 0;
+						top: 2px;
+						width: 100%;
+					}				
+					.pay02 {					
+						display: block;
+						margin-top: 2px;
+						color: var(--mian_color1, #404FC3);					
+						font-size: 22px;					
+						font-weight: bold;					
+					}				
+					.pay_sale {
+						strong {
+							color: #7983D5;
+							font-size: 14px;					
+							font-weight: 700;					
+						}
+	
+					}
+				}
+			}
+		}
+		.year_sale {
+			margin-top: 21px;
+			border-radius: 10px;
+			background: #fff;
+			// padding: 20px 20px 20px 15px;
+			box-sizing: border-box;
+			text-align: center;
+			a {
+				position: relative;
+				display: block;			
+				text-align: center;						
+				font-weight: bold;			
+				font-size: 1rem !important;						
+				padding: 20px 20px 20px 0;
+				padding-right: 8px;
+				&::after {
+					content: "";
+					display: inline-block;
+					transform: rotate(45deg);
+					position: absolute;
+					right: calc(50% - 136px);
+					top: calc(50% - 3px);
+					width: 6px;
+					height: 6px;
+					border-top: 2px solid #c7cbe9b3;
+					border-right: 2px solid #c7cbe9b3;
+				}
+			}
+			&.domestic {
+				margin-top: 21px;
+				a {				
+					color: var(--mian_color1, #404FC3);
+					&::after {
+						border-color: #404FC3;
+					}
+				}
+			}
+			&.overseas {
+				background: #161C40;
+				margin-top: 10px;
+				a {
+					color: #C7CBE9;
+				}
+			}
+		}
+	}
+    
     // C 타입
     &.type_c { 
         .box.top {
@@ -1095,6 +1234,18 @@
 
     }
 
+    // 머니네버슬립
+    &.type_moneyne {
+        .box.top .h1_title {
+            color: var(--Gray-gray750, #313B48);
+            font-family: Pretendard;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+    }
+
 }
 // 신규가입 혜택 할인가 배너
 .new_member_discount {
@@ -1180,7 +1331,7 @@
             
         }
 
-    }
+    }    
     
 }            
 
