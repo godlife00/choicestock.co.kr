@@ -2939,6 +2939,14 @@ table.tableRanking td {
   line-height: normal;
 }
 
+/* 메인 - 상단 배너 */
+.globalStock .main_mid.mainTop_banner {
+  margin-top: 30px;
+}
+.globalStock .main_mid.mainTop_banner .swipe_banner .banner {
+  background-color: #DBE5FF;
+}
+
 /* 메인 - 관심종목 */
 .globalStock .main_mid.attention_area {
   margin-top: 45px;
@@ -37239,7 +37247,7 @@ body.v_signalStreng {
 }
 .swipe_banner .banner .img .event_belt {
   position: absolute;
-  left: -11px;
+  left: -33px;
   top: -5px;
   display: inline-flex;
   border-radius: 100px;

@@ -2537,6 +2537,14 @@ table.tableRanking td {
 	}
 }
 
+/* 메인 - 상단 배너 */
+.globalStock .main_mid.mainTop_banner {
+	margin-top: 30px;	
+	.swipe_banner .banner {
+		background-color: #DBE5FF;
+	}
+}
+
 /* 메인 - 관심종목 */
 .globalStock .main_mid.attention_area {
 	margin-top: 45px;
