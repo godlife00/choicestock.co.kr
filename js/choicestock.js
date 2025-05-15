@@ -1883,13 +1883,15 @@ $(document).ready(function () {
 
     // 매매신호 플로팅 배너 열기, 닫기 스크립트    
     // 스크롤 이벤트를 감지하여 처리    
-    function scrollsignalpop() {        
-        const signalPop = document.querySelector('.v_signalStreng.globalStock .signalpop .box');
-        if (signalPop) {
-            signalPop.style.display = 'block';
-            signalPop.style.height = 'auto';
-            signalPop.style.opacity = '1';
-        }
+    function scrollsignalpop() {
+        const signalPop = $('.v_signalStreng.globalStock .signalpop .box');
+        signalPop.slideDown(1200, function() {
+            $(this).css({
+                'display': 'block',
+                'height': 'auto',
+                'opacity': '1'
+            });
+        });
     }
     // 스크롤 이벤트 리스너 추가
     window.addEventListener('scroll', function() {
