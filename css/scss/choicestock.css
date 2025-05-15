@@ -11577,11 +11577,11 @@ table.tableRanking td {
 }
 
 .globalStock .sub_search .latest_results .tabsArea .onestep_guide {
-  padding: 32px 0;
+  padding: 24px 0;
   background: #fff;
 }
 .globalStock .sub_search .latest_results .tabsArea .onestep_guide .interest_list {
-  padding: 0 20px;
+  padding: 0 16px;
 }
 .globalStock .sub_search .latest_results .tabsArea .onestep_guide .interest_list .select_area select {
   height: 40px;
@@ -36429,7 +36429,7 @@ body.v_signalStreng {
   color: #6A727B;
   font-size: 14px;
   font-weight: 500;
-  height: 34px;
+  height: 40px;
   padding: 0 24px 0 12px;
   opacity: 1;
   -webkit-appearance: none;
