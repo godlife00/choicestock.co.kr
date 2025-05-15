@@ -16055,6 +16055,9 @@ body.v_signalStreng {
 			background-color: #fff;
 			width: 48px;
 			height: 48px;
+			&.bg_trans {
+				background-color: transparent;
+			}
 			.event_belt {
 				position: absolute;
 				left: -11px;

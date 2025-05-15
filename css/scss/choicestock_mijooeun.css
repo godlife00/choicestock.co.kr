@@ -37234,6 +37234,9 @@ body.v_signalStreng {
   width: 48px;
   height: 48px;
 }
+.swipe_banner .banner .img.bg_trans {
+  background-color: transparent;
+}
 .swipe_banner .banner .img .event_belt {
   position: absolute;
   left: -11px;
