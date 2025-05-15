@@ -5254,62 +5254,87 @@ $(document).ready(function () {
             tooltip: {
                 enabled: false,
             },
-
-            // 구역 라벨을 plotArea 위에 고정 배치
+            
             annotations: [{
-                labels: [{
-                    point: { x: 10, y: 107, xAxis: 0, yAxis: 0 },
-                    text: '조심하세요',
-                    backgroundColor: 'transparent',
-                    borderWidth: 0,
-                    shadow: false,
-                    padding: 0,
-                    distance: 0,
-                    borderRadius: 0,
-                    borderColor: 'transparent',
-                    style: {
-                        color: '#8C98A7', fontSize: '13px', fontWeight: '600'
+                labels: [
+                    {
+                        // 좌상단: "조심하세요"
+                        point: { x: 0, y: 0, xAxis: 0, yAxis: 0 },
+                        text: '조심하세요',
+                        backgroundColor: 'transparent',
+                        borderWidth: 0,
+                        shadow: false,
+                        padding: 0,
+                        distance: 0,
+                        borderRadius: 0,
+                        borderColor: 'transparent',
+                        style: {
+                            color: '#8C98A7', fontSize: '13px', fontWeight: '600'
+                        },
+                        align: 'left',
+                        verticalAlign: 'top',
+                        x: 15,
+                        y: -350,                        
+                    },
+                    {
+                        // 우상단: "조금 비싸요"
+                        point: { x: 50, y: 117, xAxis: 0, yAxis: 0 },
+                        text: '조금 비싸요',
+                        backgroundColor: 'transparent',
+                        borderWidth: 0,
+                        shadow: false,
+                        padding: 0,
+                        distance: 0,
+                        borderRadius: 0,
+                        borderColor: 'transparent',
+                        style: {
+                            color: '#8C98A7', fontSize: '13px', fontWeight: '600'
+                        },
+                        align: 'right',
+                        verticalAlign: 'top',
+                        x: 72,
+                        y: 0,
+                        
+                    },
+                    {
+                        // 좌하단: "관심있어요"
+                        point: { x: 0, y: 0, xAxis: 0, yAxis: 0 },
+                        text: '관심있어요',
+                        backgroundColor: 'transparent',
+                        borderWidth: 0,
+                        shadow: false,
+                        padding: 0,
+                        distance: 0,
+                        borderRadius: 0,
+                        borderColor: 'transparent',
+                        style: {
+                            color: '#8C98A7', fontSize: '13px', fontWeight: '600'
+                        },
+                        align: 'left',
+                        verticalAlign: 'bottom',
+                        x: 15,
+                        y: -127,        
+                    },
+                    {
+                        // 우하단: "매력적이네요"
+                        point: { x: 50, y: 0, xAxis: 0, yAxis: 0 },
+                        text: '매력적이네요',
+                        backgroundColor: 'transparent',
+                        borderWidth: 0,
+                        shadow: false,
+                        padding: 0,
+                        distance: 0,
+                        borderRadius: 0,
+                        borderColor: 'transparent',
+                        style: {
+                            color: '#8C98A7', fontSize: '13px', fontWeight: '600'
+                        },
+                        align: 'right',
+                        verticalAlign: 'bottom',
+                        x: 80,
+                        y: -127,   
                     }
-                }, {
-                    point: { x: 63, y: 107, xAxis: 0, yAxis: 0 },
-                    text: '조금 비싸요',
-                    backgroundColor: 'transparent',
-                    borderWidth: 0,
-                    shadow: false,
-                    padding: 0,
-                    distance: 0,
-                    borderRadius: 0,
-                    borderColor: 'transparent',
-                    style: {
-                        color: '#8C98A7', fontSize: '13px', fontWeight: '600'
-                    }
-                }, {
-                    point: { x: 12, y: 35, xAxis: 0, yAxis: 0 },
-                    text: '관심있어요',
-                    backgroundColor: 'transparent',
-                    borderWidth: 0,
-                    shadow: false,
-                    padding: 0,
-                    distance: 0,
-                    borderRadius: 0,
-                    borderColor: 'transparent',
-                    style: {
-                        color: '#8C98A7', fontSize: '13px', fontWeight: '600'
-                    }
-                }, {
-                    point: { x: 65, y: 35, xAxis: 0, yAxis: 0 },
-                    text: '매력적이네요',                    
-                    backgroundColor: 'transparent',
-                    borderWidth: 0,
-                    shadow: false,
-                    padding: 0,
-                    distance: 0,
-                    borderRadius: 0,
-                    borderColor: 'transparent',
-                    style: {
-                        color: '#8C98A7', fontSize: '13px', fontWeight: '600'
-                    }
-                }]
+                ]
             }],
 
             xAxis: {
@@ -5417,6 +5442,11 @@ $(document).ready(function () {
             },
         });
     }
+    window.addEventListener('resize', function() {
+        if ($('#onestep_chart_simple').length) {            
+            $('#onestep_chart_simple').highcharts().reflow();
+        }
+    });
     
 
     // 밴드 차트

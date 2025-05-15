@@ -2464,12 +2464,13 @@ table.tableRanking td {
 
 // 메인 상단 이벤트 배너 
 .globalStock .event2025_banner {
-	margin: 30px 16px;
+	// margin: 30px 16px;
 	padding: 24px 0;
 	overflow: hidden;
 	border-radius: 16px;
 	box-sizing: border-box;
 	background-color: #404FC3;
+	width: 100%;
 
 	text-align: center;
 
