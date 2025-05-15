@@ -813,7 +813,31 @@ $(document).ready(function () {
             spaceBetween: 8,
         });
     }
-    
+
+    // 원스톱진단 관심종목 매트릭스 분석 리스트
+    if ($('.analyze_Swiper').length) {
+        var analyze_Swiper = new Swiper('.analyze_Swiper', {
+            slidesPerView: "auto",
+            spaceBetween: 16,
+            observer: true, // DOM 변화를 감지하여 Swiper를 업데이트
+            observeParents: true, // 부모 요소의 DOM 변화를 감지
+            on: {
+                init: function () {
+                    let maxHeight = 0;
+                    const slides = this.slides ? Array.from(this.slides) : [];
+                    slides.forEach(slide => {
+                        if (slide.offsetHeight > maxHeight) {
+                            maxHeight = slide.offsetHeight;
+                        }
+                    });
+                    slides.forEach(slide => {
+                        slide.style.height = maxHeight + 'px';
+                    });
+                    this.update(); // 초기화 시 높이 업데이트
+                }
+            }
+        });
+    }
 
     var catchSwiper = new Swiper('.catchSwiper, .catchSwiper2', {
         slidesPerView: 2.2,
@@ -1256,11 +1280,11 @@ $(document).ready(function () {
     });
 
     // 원스톱 종목진단 div 높이 조절    
-    var heightArray = $(".globalStock .sub_search .latest_results .tabsArea .onestep_chart .dgtic_results > div").map(function () {
-        return $(this).height();
-    }).get();
-    var maxHeight = Math.max.apply(Math, heightArray);
-    $(".globalStock .sub_search .latest_results .tabsArea .onestep_chart .dgtic_results > div").height(maxHeight);
+    // var heightArray = $(".globalStock .sub_search .latest_results .tabsArea .onestep_chart .dgtic_results > div").map(function () {
+    //     return $(this).height();
+    // }).get();
+    // var maxHeight = Math.max.apply(Math, heightArray);
+    // $(".globalStock .sub_search .latest_results .tabsArea .onestep_chart .dgtic_results > div").height(maxHeight);
 
     // 스크롤시 tab_scr bg 숨김
     var windowWidth = $('html, body').width();
@@ -2375,9 +2399,13 @@ document.addEventListener("DOMContentLoaded", function() {
 
 // recommend_item 클릭 이벤트 처리
 document.addEventListener('DOMContentLoaded', function() {
-    const recommendItems = document.querySelectorAll('.recommend_item');
-    
-    if (recommendItems.length > 0) {
+    try {
+        const recommendItems = document.querySelectorAll('.recommend_item');
+        
+        if (!recommendItems || recommendItems.length === 0) {
+            return; // recommend_item이 없는 경우 early return
+        }
+
         recommendItems.forEach(item => {
             item.addEventListener('click', function() {
                 const showItemTxt = this.querySelector('.show_item_txt');
@@ -2395,6 +2423,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             });
         });
+    } catch (error) {
+        console.log('recommend_item 이벤트 처리 중 오류 발생:', error);
     }
 });
 
@@ -2438,7 +2468,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-
 // 컨텐츠 필터링을 위한 클래스 정의
 class ContentFilter {
     constructor(options = {}) {        
@@ -2449,10 +2478,12 @@ class ContentFilter {
                 'sub_research': 'all_note',    // 리서치 페이지: 전체 노트 필터
                 'sub_briefing': 'all_briefing',// 브리핑 페이지: 전체 브리핑 필터
                 'sub_alarm': 'all_briefing',  // 알람 리스트 페이지: 전체 브리핑 필터
-                'default': 'growth'            // 기본 페이지: 성장주 필터
+                'default': 'growth',            // 기본 페이지: 성장주 필터
+                'sub_search': 'detail'            // 원스톱진단 페이지: 간단히,자세히 필터
             },
             filterButtonClass: '.filter_btn',   // 필터 버튼 클래스
             sortButtonClass: '.sort_btn',       // 정렬 버튼 클래스
+            interestButtonClass: '.interest_btn',  // 관심 버튼 클래스
             contentClass: '.filter_box_inner',  // 컨텐츠 박스 클래스
             ...options
         };
@@ -2486,13 +2517,17 @@ class ContentFilter {
         const self = this;
         
         // 필터 버튼과 정렬 버튼 클릭 이벤트 처리
-        $(`${this.options.filterButtonClass}, ${this.options.sortButtonClass}`).on('click', function(e) {
+        $(`${this.options.filterButtonClass}, ${this.options.sortButtonClass}, ${this.options.interestButtonClass}`).on('click', function(e) {
             const isFilterBtn = $(this).hasClass('filter_btn');
-            
+            const isInterestBtn = $(this).hasClass('interest_btn');
             // 버튼 타입에 따른 active 클래스 처리
             if(isFilterBtn) {
                 // 필터 버튼인 경우
                 $(self.options.filterButtonClass).removeClass('active');
+                $(this).addClass('active');
+            } else if(isInterestBtn) {
+                // 원스톱진단 버튼인 경우
+                $(self.options.interestButtonClass).removeClass('active');
                 $(this).addClass('active');
             } else {
                 // 정렬 버튼인 경우
