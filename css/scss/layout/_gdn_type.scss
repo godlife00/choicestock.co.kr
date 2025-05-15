@@ -879,15 +879,16 @@
 		background: #608CFA;
 		.txt {
 			p {
-				color: #FFF;		
-				font-size: 22px;
-				font-weight: 700;
-				line-height: 29px;
+				color: #FFF;
+                font-family: var(--Body, Pretendard);
+                font-size: var(--Size-3xl, 22px);
+                font-style: normal;
+                font-weight: var(--Weight-700, 700);
+                line-height: var(--Line-height-3xl, 32px); /* 145.455% */
+                letter-spacing: var(--Tracking-md, -0.3px);
 				b {
-					color: #F8D54E;
-					font-size: 22px;
-					font-weight: 700;
-					line-height: 27px; /* 122.727% */
+					color: var(--Yellow-yellow500, #FFD120);                    
+                    font-weight: var(--Weight-700, 700);                    
 				}
 			}		
 		}
@@ -901,44 +902,65 @@
 				border: 1px solid #DFE0EF;
 				background: #FFF url('/img/service/bg_wallet_blue.png') no-repeat calc(100% - 15px) center;
 				background-size: 62px 67px;
-				padding: 25px 24px 29px;
+				padding: 24px 20px;
 				box-sizing: border-box;
 				.top {
 					.title {
-						color: #333;					
-						font-size: 14px;					
-						font-weight: 800;					
+						color: var(--Gray-gray700, #4E5866);
+                        font-family: var(--Body, Pretendard);
+                        font-size: var(--Size-md-15, 15px);
+                        font-style: normal;
+                        font-weight: var(--Weight-600, 600);
+                        line-height: var(--Line-height-xl-01, 24px); /* 160% */
+                        letter-spacing: var(--Tracking-md, -0.3px);			
 					}
 				}
 				.payRight {
 					.pay01 {
 						position: relative;
 						display: block;
-						margin-top: 14px;
-						color: #999;
-						font-size: 16px;					
-						font-weight: normal;		
+						margin-top: 4px;
+						color: var(--Font-disabled, #B0B8C1);
+                        font-family: var(--Body, Pretendard);
+                        font-size: var(--Size-md-15, 15px);
+                        font-style: normal;
+                        font-weight: var(--Weight-600, 600);
+                        line-height: var(--Line-height-lg, 21px); /* 140% */
+                        letter-spacing: var(--Tracking-md, -0.3px);
 					}				
 					.del_img {
 						display: inline-block;
 						position: absolute;
-						left: -5px;
+						left: 0;
 						right: 0;
-						top: 2px;
+						top: 4px;
 						width: 100%;
 					}				
 					.pay02 {					
-						display: block;
-						margin-top: 2px;
-						color: var(--mian_color1, #404FC3);					
-						font-size: 22px;					
-						font-weight: bold;					
+						display: flex;
+                        align-items: stretch;
+                        gap: 8px 8px;
+						color: var(--Font-primary-blue, #4168F6);
+                        font-family: var(--Title, Pretendard);
+                        font-size: var(--Size-4xl, 24px);
+                        font-style: normal;
+                        font-weight: var(--Weight-700, 700);
+                        line-height: var(--Line-height-3xl, 32px); /* 133.333% */
+                        letter-spacing: var(--Tracking-md, -0.3px);
 					}				
 					.pay_sale {
 						strong {
-							color: #7983D5;
-							font-size: 14px;					
-							font-weight: 700;					
+                            border-radius: 4px;
+                            background: var(--Blue-blue100, #ECF0FF);
+                            padding: 5px 6px;
+
+							color: var(--Font-primary-blue, #4168F6);
+                            font-family: Pretendard;
+                            font-size: 12px;
+                            font-style: normal;
+                            font-weight: 600;
+                            line-height: normal;
+                            letter-spacing: -0.36px;					
 						}
 	
 					}
@@ -954,7 +976,10 @@
 			text-align: center;
 			a {
 				position: relative;
-				display: block;			
+				display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 4px 4px;				
 				text-align: center;						
 				font-weight: bold;			
 				font-size: 1rem !important;						
@@ -976,9 +1001,15 @@
 			&.domestic {
 				margin-top: 21px;
 				a {				
-					color: var(--mian_color1, #404FC3);
+					color: var(--Font-primary-blue, #4168F6);
+                    font-family: var(--Title, Pretendard);
+                    font-size: var(--Size-md-16, 16px);
+                    font-style: normal;
+                    font-weight: var(--Weight-700, 700);
+                    line-height: var(--Line-height-lg, 21px); /* 131.25% */
+                    letter-spacing: var(--Tracking-md, -0.3px);
 					&::after {
-						border-color: #404FC3;
+                        display: none;						
 					}
 				}
 			}
@@ -987,6 +1018,9 @@
 				margin-top: 10px;
 				a {
 					color: #C7CBE9;
+                    &::after {
+                        display: none;						
+					}
 				}
 			}
 		}
