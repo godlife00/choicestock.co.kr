@@ -11364,11 +11364,11 @@ table.tableRanking td {
 }
 
 .globalStock .sub_search .latest_results .tabsArea .onestep_guide {
-	padding: 32px 0;
+	padding: 24px 0;
 	background: #fff;
 
 	.interest_list {
-		padding: 0 20px;		
+		padding: 0 16px;		
 		.select_area select {
 			height: 40px;
 			color: var(--Font-secondary-body, #4E5866);
@@ -14486,24 +14486,19 @@ table.tableRanking td {
 .globalStock .sub_search .highcharts-container .highcharts-text-outline {
 	stroke-width: 0px;
 	stroke-linejoin: round;
-	stroke-linecap: round;	
-
-	border-radius: var(--Radius-r-02, 8px);
-	border: 1px solid var(--Border-primary-border, #E3E5E8);
-	background: #FFF;
-
-	color: var(--Font-primary-caption, #4E5866);
-	font-family: var(--Body, Pretendard);
-	font-size: var(--Size-xs-12, 12px);
-	font-style: normal;
-	font-weight: var(--Weight-500, 500);
-	line-height: var(--Line-height-xs-12, 14px); /* 116.667% */
-	letter-spacing: var(--Tracking-md, -0.3px);
-
-	fill: #4E5866;
-	color: #4E5866;		
-
-
+	// stroke-linecap: round;
+	// border-radius: var(--Radius-r-02, 8px);
+	// border: 1px solid var(--Border-primary-border, #E3E5E8);
+	// background: #FFF;
+	// color: var(--Font-primary-caption, #4E5866);
+	// font-family: var(--Body, Pretendard);
+	// font-size: var(--Size-xs-12, 12px);
+	// font-style: normal;
+	// font-weight: var(--Weight-500, 500);
+	// line-height: var(--Line-height-xs-12, 14px); /* 116.667% */
+	// letter-spacing: var(--Tracking-md, -0.3px);
+	// fill: #4E5866;
+	// color: #4E5866;		
 }
 
 .globalStock .sub_search .sub_mid .tab_diagnosis_area .compet_chart {
