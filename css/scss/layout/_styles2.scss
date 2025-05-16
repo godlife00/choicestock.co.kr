@@ -15141,11 +15141,10 @@ body.v_signalStreng {
 				color: #6A727B;
 				font-size: 14px;
 				font-weight: 500;				
-				height: 34px;
+				height: 40px;
 				padding: 0 24px 0 12px;
 				opacity: 1;				
 				appearance: none; // 기본 셀렉트 스타일 제거				
-		
 				&:disabled {
 					background-color: red;
 					cursor: not-allowed;
