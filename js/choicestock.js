@@ -837,7 +837,7 @@ $(document).ready(function () {
                 }
             }
         });
-    }
+    }    
 
     var catchSwiper = new Swiper('.catchSwiper, .catchSwiper2', {
         slidesPerView: 2.2,
@@ -2479,7 +2479,7 @@ class ContentFilter {
                 'sub_briefing': 'all_briefing',// 브리핑 페이지: 전체 브리핑 필터
                 'sub_alarm': 'all_briefing',  // 알람 리스트 페이지: 전체 브리핑 필터
                 'default': 'growth',            // 기본 페이지: 성장주 필터
-                'sub_search': 'detail'            // 원스톱진단 페이지: 간단히,자세히 필터
+                'latest_results wid': 'detail'            // 원스톱진단 페이지: 간단히,자세히 필터
             },
             filterButtonClass: '.filter_btn',   // 필터 버튼 클래스
             sortButtonClass: '.sort_btn',       // 정렬 버튼 클래스
@@ -2560,3 +2560,4 @@ $(document).ready(function() {
     });
     */
 });
+
