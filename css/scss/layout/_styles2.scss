@@ -9964,7 +9964,7 @@
 }
 
 .globalStock #wrap #container.sub_login .mapage_area .inUse_box .use_service {
-	margin-top: 15px;
+	margin-top: 15px;	
 }
 
 .globalStock #wrap #container.sub_login .mapage_area .inUse_box .use_service ul {
@@ -9977,29 +9977,32 @@
 	-webkit-box-align: center;
 	-ms-flex-align: center;
 	align-items: center;
+	background-color: #e6e7f4;	
 }
 
 .globalStock #wrap #container.sub_login .mapage_area .inUse_box .use_service li {
 	padding: 11px 5px;
 	border-top: 1px solid #e5e5e5;
 	box-sizing: border-box;
-	flex: 1;
+	// flex: 1;
 	font-size: 0.8125rem;
-	letter-spacing: -0.5px;
+	// letter-spacing: -0.5px;
 	color: #222;
 }
 
 @media (min-width: 320px) and (max-width: 400px) {
 	.globalStock #wrap #container.sub_login .mapage_area .inUse_box .use_service li {
-		letter-spacing: -1px;
+		// letter-spacing: -1px;
 	}
 }
 
 /* 내정보 사용중인 유료 서비스 */
 .globalStock #wrap #container.sub_login .mapage_area .inUse_box .use_service li.th {
 	position: relative;
-	background-color: #e6e7f4;
-	padding-left: 15px;
+	// background-color: #e6e7f4;		
+	padding: 11px 5px;
+	padding-left: 15px;		
+	width: 160px;
 }
 
 .globalStock #wrap #container.sub_login .mapage_area .inUse_box .use_service li.th::before {
@@ -10014,13 +10017,18 @@
 	background-color: #404fc3;
 }
 
-.globalStock #wrap #container.sub_login .mapage_area .inUse_box .use_service li.td {
+.globalStock #wrap #container.sub_login .mapage_area .inUse_box .use_service li.td {	
+	display: flex;
+	flex-wrap: wrap;
+	gap: 4px 4px;
 	color: #575757;
 	padding-left: 10px;
+	background-color: #fff;
+	width: calc(100% - 160px);
 }
 
 .globalStock #wrap #container.sub_login .mapage_area .inUse_box .use_service li.td .method {
-	display: inline-block;
+	display: inline-flex;
 	width: 45px;
 	text-align: center;
 	color: #575757;
@@ -11945,6 +11953,7 @@
 		color: #6A727B;
 		font-size: 1rem;
 		font-weight: 400;
+		line-height: 1.42;
 
 		.del_num {
 			display: inline-block;

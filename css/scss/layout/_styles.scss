@@ -11919,6 +11919,15 @@ table.tableRanking td {
 					background-color: var(--Gray-gray750, #313B48);
 					border-radius: 100%;
 				}
+				a {
+					color: var(--Font-secondary-title, #24282C);
+					font-family: var(--Title, Pretendard);
+					font-size: var(--Size-md-16, 16px);
+					font-style: normal;
+					font-weight: var(--Weight-400, 400);
+					line-height: var(--Line-height-md, 22px); /* 137.5% */
+					letter-spacing: var(--Tracking-md, -0.3px);
+				}
 			}
 		}
 	}
