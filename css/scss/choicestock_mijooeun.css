@@ -12102,6 +12102,15 @@ table.tableRanking td {
   background-color: var(--Gray-gray750, #313B48);
   border-radius: 100%;
 }
+.globalStock .sub_search .latest_results .tabsArea .onestep_guide .interest_recommend_list .list .item a {
+  color: var(--Font-secondary-title, #24282C);
+  font-family: var(--Title, Pretendard);
+  font-size: var(--Size-md-16, 16px);
+  font-style: normal;
+  font-weight: var(--Weight-400, 400);
+  line-height: var(--Line-height-md, 22px); /* 137.5% */
+  letter-spacing: var(--Tracking-md, -0.3px);
+}
 .globalStock .sub_search .latest_results .tabsArea .onestep_guide .onestop_recommend {
   margin: 80px auto 0;
   padding: 0 20px;
@@ -31425,28 +31434,23 @@ table.tableRanking td {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  background-color: #e6e7f4;
 }
 
 .globalStock #wrap #container.sub_login .mapage_area .inUse_box .use_service li {
   padding: 11px 5px;
   border-top: 1px solid #e5e5e5;
   box-sizing: border-box;
-  flex: 1;
   font-size: 0.8125rem;
-  letter-spacing: -0.5px;
   color: #222;
 }
 
-@media (min-width: 320px) and (max-width: 400px) {
-  .globalStock #wrap #container.sub_login .mapage_area .inUse_box .use_service li {
-    letter-spacing: -1px;
-  }
-}
 /* 내정보 사용중인 유료 서비스 */
 .globalStock #wrap #container.sub_login .mapage_area .inUse_box .use_service li.th {
   position: relative;
-  background-color: #e6e7f4;
+  padding: 11px 5px;
   padding-left: 15px;
+  width: 160px;
 }
 
 .globalStock #wrap #container.sub_login .mapage_area .inUse_box .use_service li.th::before {
@@ -31462,12 +31466,17 @@ table.tableRanking td {
 }
 
 .globalStock #wrap #container.sub_login .mapage_area .inUse_box .use_service li.td {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 4px;
   color: #575757;
   padding-left: 10px;
+  background-color: #fff;
+  width: calc(100% - 160px);
 }
 
 .globalStock #wrap #container.sub_login .mapage_area .inUse_box .use_service li.td .method {
-  display: inline-block;
+  display: inline-flex;
   width: 45px;
   text-align: center;
   color: #575757;
@@ -33283,6 +33292,7 @@ table.tableRanking td {
   color: #6A727B;
   font-size: 1rem;
   font-weight: 400;
+  line-height: 1.42;
 }
 .v_signalStreng.globalStock #wrap .modal.cardBox .pop_con .paypal_link .payment .del_num {
   display: inline-block;
