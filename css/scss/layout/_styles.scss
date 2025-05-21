@@ -2540,7 +2540,7 @@ table.tableRanking td {
 /* 메인 - 상단 배너 */
 .globalStock .main_mid.mainTop_banner {
 	margin-top: 30px;	
-	.swipe_banner .banner {
+	.swipe_bannertemp .banner {
 		background-color: #DBE5FF;
 	}
 }
@@ -15918,9 +15918,14 @@ table.tableRanking td {
 	overflow: scroll;
 	overflow-y: hidden;
 	border-top: 1px solid #939393;
+	-webkit-overflow-scrolling: touch; /* 추가 */
 }
 
 .globalStock .sub_search .sub_mid .search_financials_area .scroll_table_wrap .scroll_table table {
+
+	table-layout: fixed;
+	width: max-content;
+
 	margin-bottom: 0;
 	margin-top: 0;
 	background-color: #F4F4F5;
@@ -15982,7 +15987,7 @@ table.tableRanking td {
 	position: sticky;
 	left: 0;
 	padding-top: 11px;
-	display: inline-block;
+	// display: inline-block;
 	box-sizing: border-box;
 	width: 82px;
 	background-color: #F4F4F5;
