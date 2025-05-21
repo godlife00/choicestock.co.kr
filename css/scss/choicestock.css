@@ -2943,7 +2943,7 @@ table.tableRanking td {
 .globalStock .main_mid.mainTop_banner {
   margin-top: 30px;
 }
-.globalStock .main_mid.mainTop_banner .swipe_banner .banner {
+.globalStock .main_mid.mainTop_banner .swipe_bannertemp .banner {
   background-color: #DBE5FF;
 }
 
@@ -15933,9 +15933,13 @@ table.tableRanking td {
   overflow: scroll;
   overflow-y: hidden;
   border-top: 1px solid #939393;
+  -webkit-overflow-scrolling: touch; /* 추가 */
 }
 
 .globalStock .sub_search .sub_mid .search_financials_area .scroll_table_wrap .scroll_table table {
+  table-layout: fixed;
+  width: -moz-max-content;
+  width: max-content;
   margin-bottom: 0;
   margin-top: 0;
   background-color: #F4F4F5;
@@ -15996,7 +16000,6 @@ table.tableRanking td {
   position: sticky;
   left: 0;
   padding-top: 11px;
-  display: inline-block;
   box-sizing: border-box;
   width: 82px;
   background-color: #F4F4F5;
@@ -37161,19 +37164,19 @@ body.v_signalStreng {
   height: 100%;
 }
 
-.swipe_banner {
+.swipe_banner, .swipe_bannertemp {
   position: relative;
   margin: 20px 16px 0;
 }
-.swipe_banner .swiper-slide {
+.swipe_banner .swiper-slide, .swipe_bannertemp .swiper-slide {
   justify-content: flex-start;
   width: auto;
   visibility: hidden;
 }
-.swipe_banner .swiper-slide.swiper-slide-active {
+.swipe_banner .swiper-slide.swiper-slide-active, .swipe_bannertemp .swiper-slide.swiper-slide-active {
   visibility: visible;
 }
-.swipe_banner .swiper-pagination {
+.swipe_banner .swiper-pagination, .swipe_bannertemp .swiper-pagination {
   visibility: hidden;
   left: auto;
   right: 8px;
@@ -37192,10 +37195,10 @@ body.v_signalStreng {
   font-weight: 600;
   letter-spacing: 1px;
 }
-.swipe_banner .swiper-pagination.swiper-pagination-fraction {
+.swipe_banner .swiper-pagination.swiper-pagination-fraction, .swipe_bannertemp .swiper-pagination.swiper-pagination-fraction {
   visibility: visible;
 }
-.swipe_banner .swiper-pagination span {
+.swipe_banner .swiper-pagination span, .swipe_bannertemp .swiper-pagination span {
   letter-spacing: 1px;
   color: #FFF;
   font-family: Pretendard;
@@ -37203,7 +37206,7 @@ body.v_signalStreng {
   font-weight: 600;
   line-height: normal;
 }
-.swipe_banner .banner {
+.swipe_banner .banner, .swipe_bannertemp .banner {
   display: flex;
   align-items: center;
   gap: 4px 12px;
@@ -37214,7 +37217,7 @@ body.v_signalStreng {
   border-radius: var(--Spacing-s-06, 16px);
   background: #ECEFFD;
 }
-.swipe_banner .banner .event_belt {
+.swipe_banner .banner .event_belt, .swipe_bannertemp .banner .event_belt {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -37232,17 +37235,17 @@ body.v_signalStreng {
   line-height: var(--Line-height-xs-13, 16px); /* 123.077% */
   letter-spacing: var(--Tracking-md, -0.3px);
 }
-.swipe_banner .banner .img {
+.swipe_banner .banner .img, .swipe_bannertemp .banner .img {
   position: relative;
   display: inline-flex;
   background-color: #fff;
   width: 48px;
   height: 48px;
 }
-.swipe_banner .banner .img.bg_trans {
+.swipe_banner .banner .img.bg_trans, .swipe_bannertemp .banner .img.bg_trans {
   background-color: transparent;
 }
-.swipe_banner .banner .img .event_belt {
+.swipe_banner .banner .img .event_belt, .swipe_bannertemp .banner .img .event_belt {
   position: absolute;
   left: -33px;
   top: -5px;
@@ -37256,13 +37259,13 @@ body.v_signalStreng {
   line-height: normal;
   transform: rotate(-30deg);
 }
-.swipe_banner .banner .txt_flx {
+.swipe_banner .banner .txt_flx, .swipe_bannertemp .banner .txt_flx {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   gap: 4px 4px;
 }
-.swipe_banner .banner .banner_text {
+.swipe_banner .banner .banner_text, .swipe_bannertemp .banner .banner_text {
   color: var(--Gray-gray600, #6B7684);
   font-family: Pretendard;
   font-size: 13px;
@@ -37271,7 +37274,7 @@ body.v_signalStreng {
   line-height: normal;
   letter-spacing: normal;
 }
-.swipe_banner .banner .banner_title {
+.swipe_banner .banner .banner_title, .swipe_bannertemp .banner .banner_title {
   color: var(--Gray-gray800, #24282C);
   font-family: Pretendard;
   font-size: 16px;
