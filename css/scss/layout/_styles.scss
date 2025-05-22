@@ -1778,6 +1778,11 @@ table.tableRanking td {
 	color: #939393;
 	outline: none;
 	border-radius: 10px;
+
+	border-radius: var(--Radius-r-07, 100px);
+	border: 1px solid #4168F6;
+	background: #FFF;
+	box-shadow: 0px 5px 10px 0px rgba(134, 138, 147, 0.10);
 }
 
 .globalStock .main_searching .searchArea .searchInput.keydown {
