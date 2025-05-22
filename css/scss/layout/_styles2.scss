@@ -15147,9 +15147,17 @@ body.v_signalStreng {
 				border-radius: 8px;
 				border: solid 1px #e0e4e9;
 				background-color: #fff;
-				color: #6A727B;
-				font-size: 14px;
-				font-weight: 500;				
+
+				color: var(--Font-secondary-body, #4E5866);
+				font-family: var(--Body, Pretendard);
+				font-size: var(--Size-md-15, 15px);
+				font-style: normal;
+				font-weight: var(--Weight-500, 500);
+				line-height: var(--Line-height-xl-01, 24px);
+				letter-spacing: var(--Tracking-md, -0.3px);
+				
+				
+				
 				height: 40px;
 				padding: 0 24px 0 12px;
 				opacity: 1;				

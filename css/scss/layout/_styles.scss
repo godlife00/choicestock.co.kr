@@ -11401,7 +11401,7 @@ table.tableRanking td {
 				line-height: var(--Line-height-sm, 18px); /* 128.571% */
 				letter-spacing: var(--Tracking-md, -0.3px);
 				// border-left: 1px solid #E0E4E9;
-				padding-left: 8px;
+				padding-left: 8px;				
 				&:before {
 					content: '';
 					position: absolute;
@@ -11417,7 +11417,10 @@ table.tableRanking td {
 					&:before {
 						display: none;
 					}
-				}				
+				}	
+				&:last-child {
+					padding-right: 0;
+				}			
 				&.active {
 					color: var(--Font-selected-secondary, #24282C);					
 					font-weight: var(--Weight-600, 600);					
@@ -12095,11 +12098,11 @@ table.tableRanking td {
 .globalStock .sub_search .latest_results .tabsArea .onestep_chart {
 	background: #fff;
 	// margin: 7px 0 0;
-	padding: 24px 20px 0;			
+	padding: 24px 15px 40px;
 	overflow: hidden;	
 	.guide_txt {
 		margin-top: 35px !important;
-	}
+	}	
 }
 
 #onestep_chart1_1 {
