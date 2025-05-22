@@ -15832,6 +15832,7 @@ table.tableRanking td {
 
 .globalStock .sub_search .sub_mid .search_financials_area .tableRanking thead tr:first-child th {
   height: 30px;
+  text-align: center;
 }
 
 .globalStock .sub_search .sub_mid .search_financials_area .tableRanking th {
@@ -15937,6 +15938,8 @@ table.tableRanking td {
 }
 
 .globalStock .sub_search .sub_mid .search_financials_area .scroll_table_wrap .scroll_table table {
+  opacity: 0;
+  transition: opacity 0.2s;
   table-layout: fixed;
   width: -moz-max-content;
   width: max-content;
@@ -38802,10 +38805,10 @@ body.v_signalStreng {
 .modalBox .modal.tooltip_pop.btm .pop_header {
   border-bottom: none;
 }
-.modalBox .modal.tooltip_pop03, .modalBox .modal.tooltip_pop04, .modalBox .modal.score_pop01 {
+.modalBox .modal.tooltip_pop03, .modalBox .modal.tooltip_pop04, .modalBox .modal.score_pop01, .modalBox .modal.tooltip_pop01 {
   top: 15%;
 }
-.modalBox .modal.tooltip_pop03 .pop_con .sum_txt, .modalBox .modal.tooltip_pop04 .pop_con .sum_txt, .modalBox .modal.score_pop01 .pop_con .sum_txt {
+.modalBox .modal.tooltip_pop03 .pop_con .sum_txt, .modalBox .modal.tooltip_pop04 .pop_con .sum_txt, .modalBox .modal.score_pop01 .pop_con .sum_txt, .modalBox .modal.tooltip_pop01 .pop_con .sum_txt {
   font-size: 0.9375rem;
   line-height: 1.43;
   color: #6A727B;
@@ -38814,7 +38817,7 @@ body.v_signalStreng {
   word-wrap: break-word;
   word-break: break-all;
 }
-.modalBox .modal.tooltip_pop03 .pop_con .txt, .modalBox .modal.tooltip_pop04 .pop_con .txt, .modalBox .modal.score_pop01 .pop_con .txt {
+.modalBox .modal.tooltip_pop03 .pop_con .txt, .modalBox .modal.tooltip_pop04 .pop_con .txt, .modalBox .modal.score_pop01 .pop_con .txt, .modalBox .modal.tooltip_pop01 .pop_con .txt {
   position: relative;
   font-size: 0.9375rem;
   line-height: 1.43;
@@ -38824,7 +38827,7 @@ body.v_signalStreng {
   word-wrap: break-word;
   word-break: break-all;
 }
-.modalBox .modal.tooltip_pop03 .pop_con .txt::before, .modalBox .modal.tooltip_pop04 .pop_con .txt::before, .modalBox .modal.score_pop01 .pop_con .txt::before {
+.modalBox .modal.tooltip_pop03 .pop_con .txt::before, .modalBox .modal.tooltip_pop04 .pop_con .txt::before, .modalBox .modal.score_pop01 .pop_con .txt::before, .modalBox .modal.tooltip_pop01 .pop_con .txt::before {
   content: "";
   display: inline-block;
   position: absolute;
@@ -38834,10 +38837,22 @@ body.v_signalStreng {
   width: 2px;
   height: 2px;
 }
-.modalBox .modal.score_pop01 .pop_header .pop_title {
+.modalBox .modal.tooltip_pop03 .pop_con .guide_txt, .modalBox .modal.tooltip_pop04 .pop_con .guide_txt, .modalBox .modal.score_pop01 .pop_con .guide_txt, .modalBox .modal.tooltip_pop01 .pop_con .guide_txt {
+  font-size: 0.75rem;
+  line-height: 1.3;
+  font-weight: 400;
+  color: #969ea7;
+  width: 100%;
+  margin-top: 16px;
+  line-height: 1.42;
+  box-sizing: border-box;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+.modalBox .modal.score_pop01 .pop_header .pop_title, .modalBox .modal.tooltip_pop01 .pop_header .pop_title {
   justify-content: flex-start;
 }
-.modalBox .modal.score_pop01 .pop_con .sum_txt {
+.modalBox .modal.score_pop01 .pop_con .sum_txt, .modalBox .modal.tooltip_pop01 .pop_con .sum_txt {
   color: #000;
   font-size: 0.875rem;
   line-height: 20px; /* 142.857% */
@@ -38845,54 +38860,59 @@ body.v_signalStreng {
   word-wrap: break-word;
   word-break: break-all;
 }
-.modalBox .modal.score_pop01 .pop_con .txt {
+.modalBox .modal.score_pop01 .pop_con .sum_txt b, .modalBox .modal.tooltip_pop01 .pop_con .sum_txt b {
+  color: #000;
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+.modalBox .modal.score_pop01 .pop_con .txt, .modalBox .modal.tooltip_pop01 .pop_con .txt {
   color: #6A727B;
   font-size: 0.8125rem;
   font-style: normal;
   font-weight: 400;
   padding-left: 9px;
 }
-.modalBox .modal.score_pop01 .pop_con .txt::before {
+.modalBox .modal.score_pop01 .pop_con .txt::before, .modalBox .modal.tooltip_pop01 .pop_con .txt::before {
   top: 7px;
 }
-.modalBox .modal.score_pop01 .pop_con .txt strong {
+.modalBox .modal.score_pop01 .pop_con .txt strong, .modalBox .modal.tooltip_pop01 .pop_con .txt strong {
   color: #6A727B;
   font-size: 0.8125rem;
   font-style: normal;
   font-weight: 700;
 }
-.modalBox .modal.score_pop01 .pop_con .txt:nth-child(1) strong {
+.modalBox .modal.score_pop01 .pop_con .txt:nth-child(1) strong, .modalBox .modal.tooltip_pop01 .pop_con .txt:nth-child(1) strong {
   color: #5AA86B;
 }
-.modalBox .modal.score_pop01 .pop_con .txt:nth-child(1)::before {
+.modalBox .modal.score_pop01 .pop_con .txt:nth-child(1)::before, .modalBox .modal.tooltip_pop01 .pop_con .txt:nth-child(1)::before {
   top: 7px;
   background-color: #5AA86B;
 }
-.modalBox .modal.score_pop01 .pop_con .txt:nth-child(2) strong {
+.modalBox .modal.score_pop01 .pop_con .txt:nth-child(2) strong, .modalBox .modal.tooltip_pop01 .pop_con .txt:nth-child(2) strong {
   color: #F6D246;
 }
-.modalBox .modal.score_pop01 .pop_con .txt:nth-child(2)::before {
+.modalBox .modal.score_pop01 .pop_con .txt:nth-child(2)::before, .modalBox .modal.tooltip_pop01 .pop_con .txt:nth-child(2)::before {
   top: 7px;
   background-color: #F6D246;
 }
-.modalBox .modal.score_pop01 .pop_con .txt:nth-child(3) strong {
+.modalBox .modal.score_pop01 .pop_con .txt:nth-child(3) strong, .modalBox .modal.tooltip_pop01 .pop_con .txt:nth-child(3) strong {
   color: #F4A031;
 }
-.modalBox .modal.score_pop01 .pop_con .txt:nth-child(3)::before {
+.modalBox .modal.score_pop01 .pop_con .txt:nth-child(3)::before, .modalBox .modal.tooltip_pop01 .pop_con .txt:nth-child(3)::before {
   top: 7px;
   background-color: #F4A031;
 }
-.modalBox .modal.score_pop01 .pop_con .txt:nth-child(4) strong {
+.modalBox .modal.score_pop01 .pop_con .txt:nth-child(4) strong, .modalBox .modal.tooltip_pop01 .pop_con .txt:nth-child(4) strong {
   color: #E9835B;
 }
-.modalBox .modal.score_pop01 .pop_con .txt:nth-child(4)::before {
+.modalBox .modal.score_pop01 .pop_con .txt:nth-child(4)::before, .modalBox .modal.tooltip_pop01 .pop_con .txt:nth-child(4)::before {
   top: 7px;
   background-color: #E9835B;
 }
-.modalBox .modal.score_pop01 .pop_con .txt:nth-child(5) strong {
+.modalBox .modal.score_pop01 .pop_con .txt:nth-child(5) strong, .modalBox .modal.tooltip_pop01 .pop_con .txt:nth-child(5) strong {
   color: #D43F5D;
 }
-.modalBox .modal.score_pop01 .pop_con .txt:nth-child(5)::before {
+.modalBox .modal.score_pop01 .pop_con .txt:nth-child(5)::before, .modalBox .modal.tooltip_pop01 .pop_con .txt:nth-child(5)::before {
   top: 7px;
   background-color: #D43F5D;
 }

@@ -172,7 +172,9 @@
     <script language="Javascript" type="text/javascript">
         cookiedata = document.cookie;
         if (cookiedata.indexOf("mainpop=done") < 0) {
-            document.getElementById('layer_pop').style.display = "inline";
+            if(document.getElementById('layer_pop') != null) {
+                document.getElementById('layer_pop').style.display = "inline";
+            }
         } else {
             document.getElementById('layer_pop').style.display = "none";
         }

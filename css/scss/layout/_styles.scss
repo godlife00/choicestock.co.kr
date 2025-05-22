@@ -15817,6 +15817,7 @@ table.tableRanking td {
 
 .globalStock .sub_search .sub_mid .search_financials_area .tableRanking thead tr:first-child th {
 	height: 30px;
+	text-align: center;
 }
 
 .globalStock .sub_search .sub_mid .search_financials_area .tableRanking th {
@@ -15921,11 +15922,12 @@ table.tableRanking td {
 	-webkit-overflow-scrolling: touch; /* 추가 */
 }
 
-.globalStock .sub_search .sub_mid .search_financials_area .scroll_table_wrap .scroll_table table {
-
+.globalStock .sub_search .sub_mid .search_financials_area .scroll_table_wrap .scroll_table table {	
+	opacity: 0;
+  	transition: opacity 0.2s;
 	table-layout: fixed;
+	// width: 100%;
 	width: max-content;
-
 	margin-bottom: 0;
 	margin-top: 0;
 	background-color: #F4F4F5;
