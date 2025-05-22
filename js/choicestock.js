@@ -2207,11 +2207,11 @@ $(document).ready(function () {
             var element = document.querySelector('.eps_pop01 .pop_con');
     
             if (screenWidth >= 425) { // PC 화면으로 가정한 너비입니다.
-                element.style.height = 'auto'; // PC에서는 높이를 auto로 설정합니다.
+                element.style.maxHeight = 'none'; // PC에서는 maxHeight 제한을 없앱니다.
             } else {
                 var viewportHeight = window.innerHeight;
                 var calculatedHeight = viewportHeight * 0.8 - 60; // 모바일에서의 계산 로직
-                element.style.height = calculatedHeight + 'px'; // 모바일에서는 계산된 높이를 적용합니다.
+                element.style.maxHeight = calculatedHeight + 'px'; // 모바일에서는 계산된 maxHeight를 적용합니다.
             }
         }
     
@@ -2351,6 +2351,30 @@ $(document).ready(function () {
         $('.blocker').hide();
         $('html, body').css("overflow", "");
     });
+
+    // ==========================
+    // [테이블 width 동적 조정 스크립트 시작]
+    function adjustTableWidth() {
+        var $tables = $('.scroll_table_wrap .scroll_table > table');
+        if ($tables.length === 0) return; // scroll_table이 없으면 함수 종료
+        $tables.each(function() {
+            var $table = $(this);
+            var $scrollArea = $table.closest('.scroll_table');
+            if ($table.length === 0 || $scrollArea.length === 0) return;
+            var parentWidth = $scrollArea.width();
+            $table.css('width', 'max-content');
+            var tableScrollWidth = $table[0].scrollWidth;
+            if (tableScrollWidth < parentWidth) {
+                $table.css('width', '100%');
+            } else {
+                $table.css('width', 'max-content');
+            }
+            // width 조정 후 opacity를 1로 변경
+            $table.css('opacity', '1'); 
+        });
+    }
+    $(window).on('load resize', adjustTableWidth);
+    // [테이블 width 동적 조정 스크립트 끝]
 
 });
 

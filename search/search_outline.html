@@ -104,7 +104,9 @@
     <script language="Javascript" type="text/javascript">
         cookiedata = document.cookie;
         if (cookiedata.indexOf("mainpop=done") < 0) {
-            document.getElementById('layer_pop').style.display = "inline";
+            if(document.getElementById('layer_pop') != null) {
+                document.getElementById('layer_pop').style.display = "inline";
+            }
         } else {
             document.getElementById('layer_pop').style.display = "none";
         }
@@ -963,9 +965,18 @@
                     </span>
                 </div>
                 <div class="pop_con">
-                    <p class="txt">20년 이상의 금융 빅데이터와 알고리즘 기술을 통해 종목의 매매신호를 신속하게 제시합니다.</p>
-                    <p class="txt">매매신호는 스마트 스코어 / 밸류에이션 / 수급분석 을 종합적으로 고려해 결정합니다.</p>
-                    <p class="txt">매매신호는 매수-보유-매도-관망 신호를 제공하며, 3개 조건을 모두 만족 할 때 매수 및 보유신호가 발생합니다.</p>
+                    
+                    <p class="sum_txt">20년간 축적된 금융 데이터와 AI 기술로 최적의 투자 타이밍을 알려드려요!</p>
+                    <p class="sum_txt"><b>🔍 어떻게 판단하나요?</b></p>
+                    <p class="sum_txt">스마트스코어/ 밸류에이션 / 수급분석을 종합적으로 분석해서 신호를 신속하게 제시합니다.</p>
+                    <p class="sum_txt"><b>📊 매매신호 종류</b></p>
+                    <ul>
+                        <li class="txt"><strong>매수 :</strong> 지금이 사기 좋은 타이밍이에요!</li>
+                        <li class="txt"><strong>보유 :</strong> 이미 매수했다면 계속 가지고 있으세요.</li>
+                        <li class="txt"><strong>매도 :</strong> 이익실현이나 손절을 고려해볼 시점이에요.</li>
+                        <li class="txt"><strong>관망 :</strong> 조금 더 지켜본 후 투자를 결정하세요.</li>
+                    </ul>
+                    <p class="guide_txt"><b>💡참고사항 :</b> 매수 신호가 나온 후 3일이 지나면 자동으로 보유 신호로 바뀝니다. 세 가지 조건(스마트스코어, 밸류에이션, 수급분석)을 모두 만족할 때만 매수나 보유 신호가 나오니까 더 신뢰할 수 있어요!</p>
                 </div>
             </div>
 

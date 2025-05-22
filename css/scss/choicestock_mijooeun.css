@@ -2943,7 +2943,7 @@ table.tableRanking td {
 .globalStock .main_mid.mainTop_banner {
   margin-top: 30px;
 }
-.globalStock .main_mid.mainTop_banner .swipe_banner .banner {
+.globalStock .main_mid.mainTop_banner .swipe_bannertemp .banner {
   background-color: #DBE5FF;
 }
 
@@ -15832,6 +15832,7 @@ table.tableRanking td {
 
 .globalStock .sub_search .sub_mid .search_financials_area .tableRanking thead tr:first-child th {
   height: 30px;
+  text-align: center;
 }
 
 .globalStock .sub_search .sub_mid .search_financials_area .tableRanking th {
@@ -15933,9 +15934,15 @@ table.tableRanking td {
   overflow: scroll;
   overflow-y: hidden;
   border-top: 1px solid #939393;
+  -webkit-overflow-scrolling: touch; /* 추가 */
 }
 
 .globalStock .sub_search .sub_mid .search_financials_area .scroll_table_wrap .scroll_table table {
+  opacity: 0;
+  transition: opacity 0.2s;
+  table-layout: fixed;
+  width: -moz-max-content;
+  width: max-content;
   margin-bottom: 0;
   margin-top: 0;
   background-color: #F4F4F5;
@@ -15996,7 +16003,6 @@ table.tableRanking td {
   position: sticky;
   left: 0;
   padding-top: 11px;
-  display: inline-block;
   box-sizing: border-box;
   width: 82px;
   background-color: #F4F4F5;
@@ -37161,19 +37167,19 @@ body.v_signalStreng {
   height: 100%;
 }
 
-.swipe_banner {
+.swipe_banner, .swipe_bannertemp {
   position: relative;
   margin: 20px 16px 0;
 }
-.swipe_banner .swiper-slide {
+.swipe_banner .swiper-slide, .swipe_bannertemp .swiper-slide {
   justify-content: flex-start;
   width: auto;
   visibility: hidden;
 }
-.swipe_banner .swiper-slide.swiper-slide-active {
+.swipe_banner .swiper-slide.swiper-slide-active, .swipe_bannertemp .swiper-slide.swiper-slide-active {
   visibility: visible;
 }
-.swipe_banner .swiper-pagination {
+.swipe_banner .swiper-pagination, .swipe_bannertemp .swiper-pagination {
   visibility: hidden;
   left: auto;
   right: 8px;
@@ -37192,10 +37198,10 @@ body.v_signalStreng {
   font-weight: 600;
   letter-spacing: 1px;
 }
-.swipe_banner .swiper-pagination.swiper-pagination-fraction {
+.swipe_banner .swiper-pagination.swiper-pagination-fraction, .swipe_bannertemp .swiper-pagination.swiper-pagination-fraction {
   visibility: visible;
 }
-.swipe_banner .swiper-pagination span {
+.swipe_banner .swiper-pagination span, .swipe_bannertemp .swiper-pagination span {
   letter-spacing: 1px;
   color: #FFF;
   font-family: Pretendard;
@@ -37203,7 +37209,7 @@ body.v_signalStreng {
   font-weight: 600;
   line-height: normal;
 }
-.swipe_banner .banner {
+.swipe_banner .banner, .swipe_bannertemp .banner {
   display: flex;
   align-items: center;
   gap: 4px 12px;
@@ -37214,7 +37220,7 @@ body.v_signalStreng {
   border-radius: var(--Spacing-s-06, 16px);
   background: #ECEFFD;
 }
-.swipe_banner .banner .event_belt {
+.swipe_banner .banner .event_belt, .swipe_bannertemp .banner .event_belt {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -37232,17 +37238,17 @@ body.v_signalStreng {
   line-height: var(--Line-height-xs-13, 16px); /* 123.077% */
   letter-spacing: var(--Tracking-md, -0.3px);
 }
-.swipe_banner .banner .img {
+.swipe_banner .banner .img, .swipe_bannertemp .banner .img {
   position: relative;
   display: inline-flex;
   background-color: #fff;
   width: 48px;
   height: 48px;
 }
-.swipe_banner .banner .img.bg_trans {
+.swipe_banner .banner .img.bg_trans, .swipe_bannertemp .banner .img.bg_trans {
   background-color: transparent;
 }
-.swipe_banner .banner .img .event_belt {
+.swipe_banner .banner .img .event_belt, .swipe_bannertemp .banner .img .event_belt {
   position: absolute;
   left: -33px;
   top: -5px;
@@ -37256,13 +37262,13 @@ body.v_signalStreng {
   line-height: normal;
   transform: rotate(-30deg);
 }
-.swipe_banner .banner .txt_flx {
+.swipe_banner .banner .txt_flx, .swipe_bannertemp .banner .txt_flx {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   gap: 4px 4px;
 }
-.swipe_banner .banner .banner_text {
+.swipe_banner .banner .banner_text, .swipe_bannertemp .banner .banner_text {
   color: var(--Gray-gray600, #6B7684);
   font-family: Pretendard;
   font-size: 13px;
@@ -37271,7 +37277,7 @@ body.v_signalStreng {
   line-height: normal;
   letter-spacing: normal;
 }
-.swipe_banner .banner .banner_title {
+.swipe_banner .banner .banner_title, .swipe_bannertemp .banner .banner_title {
   color: var(--Gray-gray800, #24282C);
   font-family: Pretendard;
   font-size: 16px;
@@ -38799,10 +38805,10 @@ body.v_signalStreng {
 .modalBox .modal.tooltip_pop.btm .pop_header {
   border-bottom: none;
 }
-.modalBox .modal.tooltip_pop03, .modalBox .modal.tooltip_pop04, .modalBox .modal.score_pop01 {
+.modalBox .modal.tooltip_pop03, .modalBox .modal.tooltip_pop04, .modalBox .modal.score_pop01, .modalBox .modal.tooltip_pop01 {
   top: 15%;
 }
-.modalBox .modal.tooltip_pop03 .pop_con .sum_txt, .modalBox .modal.tooltip_pop04 .pop_con .sum_txt, .modalBox .modal.score_pop01 .pop_con .sum_txt {
+.modalBox .modal.tooltip_pop03 .pop_con .sum_txt, .modalBox .modal.tooltip_pop04 .pop_con .sum_txt, .modalBox .modal.score_pop01 .pop_con .sum_txt, .modalBox .modal.tooltip_pop01 .pop_con .sum_txt {
   font-size: 0.9375rem;
   line-height: 1.43;
   color: #6A727B;
@@ -38811,7 +38817,7 @@ body.v_signalStreng {
   word-wrap: break-word;
   word-break: break-all;
 }
-.modalBox .modal.tooltip_pop03 .pop_con .txt, .modalBox .modal.tooltip_pop04 .pop_con .txt, .modalBox .modal.score_pop01 .pop_con .txt {
+.modalBox .modal.tooltip_pop03 .pop_con .txt, .modalBox .modal.tooltip_pop04 .pop_con .txt, .modalBox .modal.score_pop01 .pop_con .txt, .modalBox .modal.tooltip_pop01 .pop_con .txt {
   position: relative;
   font-size: 0.9375rem;
   line-height: 1.43;
@@ -38821,7 +38827,7 @@ body.v_signalStreng {
   word-wrap: break-word;
   word-break: break-all;
 }
-.modalBox .modal.tooltip_pop03 .pop_con .txt::before, .modalBox .modal.tooltip_pop04 .pop_con .txt::before, .modalBox .modal.score_pop01 .pop_con .txt::before {
+.modalBox .modal.tooltip_pop03 .pop_con .txt::before, .modalBox .modal.tooltip_pop04 .pop_con .txt::before, .modalBox .modal.score_pop01 .pop_con .txt::before, .modalBox .modal.tooltip_pop01 .pop_con .txt::before {
   content: "";
   display: inline-block;
   position: absolute;
@@ -38831,10 +38837,22 @@ body.v_signalStreng {
   width: 2px;
   height: 2px;
 }
-.modalBox .modal.score_pop01 .pop_header .pop_title {
+.modalBox .modal.tooltip_pop03 .pop_con .guide_txt, .modalBox .modal.tooltip_pop04 .pop_con .guide_txt, .modalBox .modal.score_pop01 .pop_con .guide_txt, .modalBox .modal.tooltip_pop01 .pop_con .guide_txt {
+  font-size: 0.75rem;
+  line-height: 1.3;
+  font-weight: 400;
+  color: #969ea7;
+  width: 100%;
+  margin-top: 16px;
+  line-height: 1.42;
+  box-sizing: border-box;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+.modalBox .modal.score_pop01 .pop_header .pop_title, .modalBox .modal.tooltip_pop01 .pop_header .pop_title {
   justify-content: flex-start;
 }
-.modalBox .modal.score_pop01 .pop_con .sum_txt {
+.modalBox .modal.score_pop01 .pop_con .sum_txt, .modalBox .modal.tooltip_pop01 .pop_con .sum_txt {
   color: #000;
   font-size: 0.875rem;
   line-height: 20px; /* 142.857% */
@@ -38842,54 +38860,59 @@ body.v_signalStreng {
   word-wrap: break-word;
   word-break: break-all;
 }
-.modalBox .modal.score_pop01 .pop_con .txt {
+.modalBox .modal.score_pop01 .pop_con .sum_txt b, .modalBox .modal.tooltip_pop01 .pop_con .sum_txt b {
+  color: #000;
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+.modalBox .modal.score_pop01 .pop_con .txt, .modalBox .modal.tooltip_pop01 .pop_con .txt {
   color: #6A727B;
   font-size: 0.8125rem;
   font-style: normal;
   font-weight: 400;
   padding-left: 9px;
 }
-.modalBox .modal.score_pop01 .pop_con .txt::before {
+.modalBox .modal.score_pop01 .pop_con .txt::before, .modalBox .modal.tooltip_pop01 .pop_con .txt::before {
   top: 7px;
 }
-.modalBox .modal.score_pop01 .pop_con .txt strong {
+.modalBox .modal.score_pop01 .pop_con .txt strong, .modalBox .modal.tooltip_pop01 .pop_con .txt strong {
   color: #6A727B;
   font-size: 0.8125rem;
   font-style: normal;
   font-weight: 700;
 }
-.modalBox .modal.score_pop01 .pop_con .txt:nth-child(1) strong {
+.modalBox .modal.score_pop01 .pop_con .txt:nth-child(1) strong, .modalBox .modal.tooltip_pop01 .pop_con .txt:nth-child(1) strong {
   color: #5AA86B;
 }
-.modalBox .modal.score_pop01 .pop_con .txt:nth-child(1)::before {
+.modalBox .modal.score_pop01 .pop_con .txt:nth-child(1)::before, .modalBox .modal.tooltip_pop01 .pop_con .txt:nth-child(1)::before {
   top: 7px;
   background-color: #5AA86B;
 }
-.modalBox .modal.score_pop01 .pop_con .txt:nth-child(2) strong {
+.modalBox .modal.score_pop01 .pop_con .txt:nth-child(2) strong, .modalBox .modal.tooltip_pop01 .pop_con .txt:nth-child(2) strong {
   color: #F6D246;
 }
-.modalBox .modal.score_pop01 .pop_con .txt:nth-child(2)::before {
+.modalBox .modal.score_pop01 .pop_con .txt:nth-child(2)::before, .modalBox .modal.tooltip_pop01 .pop_con .txt:nth-child(2)::before {
   top: 7px;
   background-color: #F6D246;
 }
-.modalBox .modal.score_pop01 .pop_con .txt:nth-child(3) strong {
+.modalBox .modal.score_pop01 .pop_con .txt:nth-child(3) strong, .modalBox .modal.tooltip_pop01 .pop_con .txt:nth-child(3) strong {
   color: #F4A031;
 }
-.modalBox .modal.score_pop01 .pop_con .txt:nth-child(3)::before {
+.modalBox .modal.score_pop01 .pop_con .txt:nth-child(3)::before, .modalBox .modal.tooltip_pop01 .pop_con .txt:nth-child(3)::before {
   top: 7px;
   background-color: #F4A031;
 }
-.modalBox .modal.score_pop01 .pop_con .txt:nth-child(4) strong {
+.modalBox .modal.score_pop01 .pop_con .txt:nth-child(4) strong, .modalBox .modal.tooltip_pop01 .pop_con .txt:nth-child(4) strong {
   color: #E9835B;
 }
-.modalBox .modal.score_pop01 .pop_con .txt:nth-child(4)::before {
+.modalBox .modal.score_pop01 .pop_con .txt:nth-child(4)::before, .modalBox .modal.tooltip_pop01 .pop_con .txt:nth-child(4)::before {
   top: 7px;
   background-color: #E9835B;
 }
-.modalBox .modal.score_pop01 .pop_con .txt:nth-child(5) strong {
+.modalBox .modal.score_pop01 .pop_con .txt:nth-child(5) strong, .modalBox .modal.tooltip_pop01 .pop_con .txt:nth-child(5) strong {
   color: #D43F5D;
 }
-.modalBox .modal.score_pop01 .pop_con .txt:nth-child(5)::before {
+.modalBox .modal.score_pop01 .pop_con .txt:nth-child(5)::before, .modalBox .modal.tooltip_pop01 .pop_con .txt:nth-child(5)::before {
   top: 7px;
   background-color: #D43F5D;
 }
