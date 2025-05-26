@@ -192,7 +192,7 @@ $(document).ready(function () {
     customizeAndAppendList();  // 종목검색 개요탭 등 상단 고정 종목명 함수 실행
 
     
-    if ($('#header').length) {
+    if ($('#header').length && !$('#header').hasClass('m_hdr')) {
         // 스크롤시 헤더 상단 고정 스크립트    
         var headerHeight = $('#header').innerHeight();
         var headerOffset = $('#header .headerTop').offset().top;    
@@ -344,7 +344,7 @@ $(document).ready(function () {
         $(inputSelector).on("focusout", function() {            
             $(titleSelector).removeClass('keydown');
             $(this).removeClass('keydown');
-            $(btnSelector).css('top', '11px');
+            // $(btnSelector).css('top', '11px');
             $(autocompleteSelector).hide();
         });
     }
@@ -750,10 +750,13 @@ $(document).ready(function () {
                     slidesPerView: 1.5,
                 },                
                 360: {
-                    slidesPerView: 2.3,                    
-                },                
+                    slidesPerView: 1.8,                    
+                },  
+                424: {
+                    slidesPerView: 1.8,                    
+                },               
                 425: {
-                    slidesPerView: 2.3,                    
+                    slidesPerView: 2.1,                    
                 },                
                 680: {
                     slidesPerView: 2.3,                    
@@ -1419,22 +1422,22 @@ $(document).ready(function () {
     //검색    
     $('.globalStock .schfix_inc .searching .searchArea .searchInput').on("keydown", function () {
         $(this).addClass('keydown');
-        $('.globalStock .schfix_inc .searching .searchArea .searchBtn').css('top', '15px');
+        // $('.globalStock .schfix_inc .searching .searchArea .searchBtn').css('top', '15px');
         $('.globalStock .schfix_inc .searching .searchArea .sch_title').addClass('keydown');
         $('.globalStock .schfix_inc .searching .sch_autocomplete').addClass('focus_on').show();
         $('.globalStock.kiwoom .schfix_inc .top_btn').hide();
         $('.globalStock.kiwoom .schfix_inc .searching .top_btn + .searchArea').css('width', 'calc(100% - 40px)');
-        $('.globalStock.wowtv .schfix_inc .searching .searchArea .searchBtn').css('top', '11px');
+        // $('.globalStock.wowtv .schfix_inc .searching .searchArea .searchBtn').css('top', '11px');
     });
     $('.globalStock .schfix_inc .searching .searchArea .searchInput').on("focusout", function () {
         $('.globalStock .schfix_inc .searching .searchArea .sch_title').removeClass('keydown');
         $(this).removeClass('keydown');
-        $('.globalStock .schfix_inc .searching .searchArea .searchBtn').css('top', '11px');
+        // $('.globalStock .schfix_inc .searching .searchArea .searchBtn').css('top', '11px');
         $('.globalStock .schfix_inc .searching .sch_autocomplete').hide();
         $('.globalStock.kiwoom .schfix_inc .top_btn').show();
         $('.globalStock.kiwoom .schfix_inc .searching .searchArea').css('width', '100%');
         $('.globalStock.kiwoom .schfix_inc .searching .top_btn + .searchArea').css('width', 'calc(100% - 70px)');
-        $('.globalStock.wowtv .header_wowtv + .search_top.searching .searchArea .searchBtn').css('top', '11px');
+        // $('.globalStock.wowtv .header_wowtv + .search_top.searching .searchArea .searchBtn').css('top', '11px');
     });
     
     
