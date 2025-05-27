@@ -192,7 +192,7 @@ $(document).ready(function () {
     customizeAndAppendList();  // 종목검색 개요탭 등 상단 고정 종목명 함수 실행
 
     
-    if ($('#header').length) {
+    if ($('#header').length && !$('#header').hasClass('m_hdr')) {
         // 스크롤시 헤더 상단 고정 스크립트    
         var headerHeight = $('#header').innerHeight();
         var headerOffset = $('#header .headerTop').offset().top;    
@@ -1884,7 +1884,7 @@ $(document).ready(function () {
     // 매매신호 플로팅 배너 열기, 닫기 스크립트    
     // 스크롤 이벤트를 감지하여 처리    
     function scrollsignalpop() {
-        const signalPop = $('.v_signalStreng.globalStock .signalpop .box');
+        const signalPop = $('.v_signalStreng.globalStock .signalpop .box');        
         signalPop.slideDown(1200, function() {
             $(this).css({
                 'display': 'block',
@@ -1899,10 +1899,14 @@ $(document).ready(function () {
         const windowHeight = window.innerHeight;
         const documentHeight = document.documentElement.scrollHeight;
         
-        // 스크롤이 페이지의 30% 이상 내려갔을 때 실행
-        if (scrollPosition > (documentHeight * 0.3)) {
-            scrollsignalpop();
-        }
+        // sub_search 또는 signalpop 클래스가 존재하는 경우에만 실행
+        // if ($('.sub_search').length || $('.signalpop').length) {
+        //     // 스크롤이 페이지의 30% 이상 내려갔을 때 실행
+        //     if (scrollPosition > (documentHeight * 0.3)) {
+        //         console.log('scrollsignalpop 실행');
+        //         scrollsignalpop();
+        //     }
+        // }
     });
 
     // 종목검색 탭 상태 체크 및 함수 실행
@@ -2120,7 +2124,7 @@ $(document).ready(function () {
 
     // 서비스소개 페이드인 효과    
     function applyScrollEffect() {
-        $('.box').each(function() {
+        $('.service_wrap .box').each(function() {
             $(this).addClass('scrolled');
         });
     }
@@ -2128,7 +2132,7 @@ $(document).ready(function () {
         const windowHeight = $(window).height();
         const windowScrollTop = $(window).scrollTop();
 
-        $('.box').each(function() {
+        $('.service_wrap .box').each(function() {
             const boxTop = $(this).offset().top;
 
             // 화면 뷰포트에 .box 요소가 보이기 시작하는 지점 확인

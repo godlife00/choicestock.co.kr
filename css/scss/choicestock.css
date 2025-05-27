@@ -1528,6 +1528,7 @@ table.tableRanking td {
 /* 텍스트 필터 */
 .globalStock .remark {
   display: inline-flex !important;
+  align-items: center;
   gap: 0 4px;
   font-size: 0.9375rem;
   position: relative;
@@ -2410,13 +2411,14 @@ table.tableRanking td {
   color: #333;
   font-size: 0.875rem;
   top: 0;
+  padding-left: 4px;
 }
 
 .globalStock .main_mid.briefing_recom .mainbriefingSwiper .txt .remark .txt_filter i {
   background-color: #333;
   width: 6px;
   height: 6px;
-  margin: 0 2px;
+  margin: 0;
 }
 
 /* 메인 - 종목추천 */
