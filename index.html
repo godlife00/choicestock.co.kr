@@ -124,37 +124,17 @@
                 <a href="javascript:closeWin();" class="btn_close">닫기</a>
             </div>
         </div> -->
-
+        
         <!-- 메인 하단 플로팅 배너 영역 -->
-        <div class="signalpop event2024_payment">
-            <script>
-                document.addEventListener('DOMContentLoaded', function () {
-                    var images = [
-                        { src: '/img/banner/event_mainBtm_250519_v1.png', buttonText: '원스톱진단 확인!' },
-                        { src: '/img/banner/event_mainBtm_250519_v2.png', buttonText: '원스톱진단 확인!' },
-                        // { src: '/img/banner/event_mainBtm_250214_v3.png', buttonText: '프리미엄 첫 달 <b>1,000원!</b>' },
-                        // { src: '/img/banner/event_mainBtm_250214_v4.png', buttonText: '프리미엄 첫 달 <b>1,000원!</b>' },
-                        // 이미지와 버튼 텍스트를 객체로 추가할 수 있습니다.
-                    ];
-
-                    var randomIndex = Math.floor(Math.random() * images.length);
-                    var selectedImage = images[randomIndex];
-
-                    var divElement = document.querySelector('.info_txt');
-                    divElement.style.background = "url('" + selectedImage.src + "') no-repeat center 0";
-
-                    // 버튼 텍스트 변경
-                    var buttonElement = document.querySelector('.btn_area a');
-                    buttonElement.innerHTML = selectedImage.buttonText;
-                });
-            </script>
+        <div class="signalpop event2024_payment">            
             <div class="box">
-                <div class="content"
-                    onclick="wiseClickBanner('home_underpopup', 'main_floating'); location.href ='/main/onestop'"
-                    style="cursor:pointer;">
+                <div class="content" onclick="wiseClickBanner('home_underpopup', 'main_floating'); location.href ='/main/onestop'" style="cursor:pointer;">
                     <div class="info_txt">
-                        <p class="txt01">타이틀</p>
-                        <p class="txt02">서브타이틀</p>
+                        <p class="txt01">위험한 종목은 OUT!</p>
+                        <p class="txt02">좋은 종목만 IN!</p>
+                    </div>
+                    <div class="img_area">
+                        <img src="/img/banner/event_mainBtm_temp_v1.png" alt="" class="img_banner">
                     </div>
                     <div class="btn_area">
                         <a href="/main/onestop" class="btn payment_1000"
@@ -172,6 +152,7 @@
 
     </div>
     <!-- 오늘 하루 열지 않기 -->
+
     <script language="Javascript" type="text/javascript">
         cookiedata = document.cookie;
         if (cookiedata.indexOf("mainpop=done") < 0) {
