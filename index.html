@@ -196,6 +196,7 @@
         <!-- //gnb -->
 
         <div id="container">
+            
             <div id="header" class="header m_hdr">
                 <div class="headerTop">
                     <div class="hm">
@@ -218,247 +219,320 @@
                 </div>
                 <!-- //headerTop -->
             </div>
-
-            <!-- 로그인 체크 -->
-            <div class="log_chk">
-                <!-- 회원로그인 -->
-                <div class="login">
-                    <p><span class="user_name">초이스스탁US </span>미국주식 쉽고 편리하게!</p>
-                </div>
-                <!-- 비로그인 -->
-                <!-- <div class="logout">
-                    <p>* 원활한 서비스 이용을 위해 <span>메일 인증이 필요</span>합니다. <a href="">[자세히]</a></p>
-                </div> -->
-            </div>
-            <!-- //log_chk -->
-
-            <div class="main_searching">
-
-                <!-- 종목명 검색창 -->
-                <div class="searchArea">
-                    <form action="">
-                        <fieldset>
-                            <input type="text" placeholder="종목명 또는 심볼을 입력하세요.." class="searchInput">
-                            <input type="image" src="img/icon_search.svg" alt="검색" class="searchBtn">
-                        </fieldset>
-                    </form>
-                </div>
-                <!-- //종목명 검색창 -->
-
-                <!-- 검색어 입력시 자동완성 -->
-                <div class="sch_autocomplete focus_on" style="display: none;">
-                    <!-- //자동완성 결과 노출 class : _show -->
-                    <!-- 검색결과 있을경우 -->
-                    <ul>
-                        <li>
-                            <a href="search_diagnosis.html" class="_on">
-                                <span class="schCode">APPLAPPLAPPLAPPL</span>
-                                <span class="schList"><strong>Ap</strong>ple Inc 애플</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="search_diagnosis.html">
-                                <span class="schCode">AP</span>
-                                <span class="schList">AmpcoPittsburgh Corporation 애플</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="search_diagnosis.html">
-                                <span class="schCode">APLT</span>
-                                <span class="schList"><strong>Ap</strong>plied Ther<strong>ap</strong>eutics, Inc.
-                                    애플</span>
-                            </a>
-                        </li>
-                    </ul>
-
-                    <!-- 검색결과 없을경우 -->
-                    <div class="no_result">
-                        <p><strong>sdyfsd</strong>에 대한 검색결과가 없습니다.</p>
+            
+            <!-- 메인 상단 그라데이션 bg 영역 -->
+            <div class="main_top_bg">
+                <!-- 로그인 체크 -->
+                <div class="log_chk">
+                    <!-- 회원로그인 -->
+                    <div class="login">
+                        <p><span class="user_name">초이스스탁US </span>미국주식 쉽고 편리하게!</p>
                     </div>
-                    <!-- //no_result -->
+                    <!-- 비로그인 -->
+                    <!-- <div class="logout">
+                        <p>* 원활한 서비스 이용을 위해 <span>메일 인증이 필요</span>합니다. <a href="">[자세히]</a></p>
+                    </div> -->
                 </div>
-                <!-- //sch_autocomplete -->
-            </div>
-            <!-- //main_searching -->
+                <!-- //log_chk -->
 
-            <!-- 모닝브리핑, 종목추천 3개 -->
-            <div class="main_mid briefing_recom">
-                <div class="mainbriefingSwiper">
-                    <ul>
-                        <li class="txt">
-                            <a href="https://www.choicestock.co.kr/stock/morning"><span
-                                    class="note_issue">이슈</span>[모닝브리핑] 11국채금리 상승세 나스닥 2.7% 국채금리 상승세나스닥 2.7% 국채금리
-                                상승세</a>
-                        </li>
-                    </ul>
+                <div class="main_searching">
+
+                    <!-- 종목명 검색창 -->
+                    <div class="searchArea">
+                        <form action="">
+                            <fieldset>
+                                <input type="text" placeholder="종목명 또는 심볼을 입력하세요.." class="searchInput">
+                                <input type="image" src="img/icon_search.svg" alt="검색" class="searchBtn">
+                            </fieldset>
+                        </form>
+                    </div>
+                    <!-- //종목명 검색창 -->
+
+                    <!-- 검색어 입력시 자동완성 -->
+                    <div class="sch_autocomplete">
+                        <!-- //자동완성 결과 노출 class : _show -->
+                        <!-- 검색결과 있을경우 -->
+                        <ul>
+                            <li>
+                                <a href="search_diagnosis.html" class="_on">
+                                    <span class="schCode">APPLAPPLAPPLAPPL</span>
+                                    <span class="schList"><strong>Ap</strong>ple Inc 애플</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="search_diagnosis.html">
+                                    <span class="schCode">AP</span>
+                                    <span class="schList">AmpcoPittsburgh Corporation 애플</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="search_diagnosis.html">
+                                    <span class="schCode">APLT</span>
+                                    <span class="schList"><strong>Ap</strong>plied Ther<strong>ap</strong>eutics, Inc.
+                                        애플</span>
+                                </a>
+                            </li>
+                        </ul>
+
+                        <!-- 검색결과 없을경우 -->
+                        <div class="no_result">
+                            <p><strong>sdyfsd</strong>에 대한 검색결과가 없습니다.</p>
+                        </div>
+                        <!-- //no_result -->
+                    </div>
+                    <!-- //sch_autocomplete -->
                 </div>
-            </div>
-            <!-- //모닝브리핑, 종목노트 -->
+                <!-- //main_searching -->
 
-            <!-- 주요지수 스크롤 노출 -->
-            <div class="main_mid leading_area">
-                <div class="swiper-container maingdowSwiper">
-                    <div class="swiper-wrapper">
-                        <!-- 다우 지수 -->
-                        <div class="swiper-slide">
-                            <div class="mainBox leading_exp">
-                                <div class="box">
-                                    <h3 class="title">다우 지수</h3>
-                                    <div class="num">
-                                        <span><b>1,898.</b>00</span>
-                                    </div>
-                                    <div class="per">
-                                        <span class="increase"><i class="up"></i><b>89.</b>89</span>
-                                        <span class="increase">(<b>89.</b>89%)</span>
-                                        <!-- increase 증가, decrease 감소, 보합은 same -->
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- //leading_exp -->
-                        </div>
-                        <!-- 나스닥 지수 -->
-                        <div class="swiper-slide">
-                            <div class="mainBox leading_exp">
-                                <div class="box">
-                                    <h3 class="title">나스닥 지수</h3>
-                                    <div class="num">
-                                        <span><b>1,898.</b>00</span>
-                                    </div>
-                                    <div class="per">
-                                        <span class="decrease"><i class="down"></i><b>89.</b>89</span>
-                                        <span class="decrease">(<b>-89.</b>89%)</span>
-                                        <!-- increase 증가, decrease 감소, 보합은 same -->
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- //leading_exp -->
-                        </div>
-                        <!-- S&P500 -->
-                        <div class="swiper-slide">
-                            <div class="mainBox leading_exp">
-                                <div class="box">
-                                    <h3 class="title">S&P500</h3>
-                                    <div class="num">
-                                        <span><b>898.</b>00</span>
-                                    </div>
-                                    <div class="per">
-                                        <span class="increase"><i class="up"></i><b>34.</b>89</span>
-                                        <span class="increase">(<b>89.</b>89%)</span>
-                                        <!-- increase 증가, decrease 감소, 보합은 same -->
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- //leading_exp -->
-                        </div>
-                        <!-- 환율 -->
-                        <div class="swiper-slide">
-                            <div class="mainBox leading_exp">
-                                <div class="box">
-                                    <h3 class="title">원/달러</h3>
-                                    <div class="num">
-                                        <span><b>1,379.</b>00</span>
-                                    </div>
-                                    <div class="per">
-                                        <span class="increase"><i class="up"></i><b>34.</b>89</span>
-                                        <span class="increase">(<b>19.</b>89%)</span>
-                                        <!-- increase 증가, decrease 감소, 보합은 same -->
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- //leading_exp -->
-                        </div>
-                        <!-- 다우 선물 -->
-                        <div class="swiper-slide">
-                            <div class="mainBox leading_exp">
-                                <div class="box">
-                                    <h3 class="title">다우 선물</h3>
-                                    <div class="num">
-                                        <span><b>1,898.</b>00</span>
-                                    </div>
-                                    <div class="per">
-                                        <span class="increase"><i class="up"></i><b>89.</b>89</span>
-                                        <span class="increase">(<b>89.</b>89%)</span>
-                                        <!-- increase 증가, decrease 감소, 보합은 same -->
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- //leading_exp -->
-                        </div>
-                        <!-- 나스닥 선물 -->
-                        <div class="swiper-slide">
-                            <div class="mainBox leading_exp">
-                                <div class="box">
-                                    <h3 class="title">나스닥 선물</h3>
-                                    <div class="num">
-                                        <span><b>1,898.</b>00</span>
-                                    </div>
-                                    <div class="per">
-                                        <span class="decrease"><i class="down"></i><b>89.</b>89</span>
-                                        <span class="decrease">(<b>-89.</b>89%)</span>
-                                        <!-- increase 증가, decrease 감소, 보합은 same -->
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- //leading_exp -->
-                        </div>
-                        <!-- S&P500 선물 -->
-                        <div class="swiper-slide">
-                            <div class="mainBox leading_exp">
-                                <div class="box">
-                                    <h3 class="title">S&P500 선물</h3>
-                                    <div class="num">
-                                        <span><b>898.</b>00</span>
-                                    </div>
-                                    <div class="per">
-                                        <span class="increase"><i class="up"></i><b>34.</b>89</span>
-                                        <span class="increase">(<b>89.</b>89%)</span>
-                                        <!-- increase 증가, decrease 감소, 보합은 same -->
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- //leading_exp -->
+
+                <div class="index_group">
+
+                    <!-- 모닝브리핑, 종목추천 3개 -->
+                    <div class="main_mid briefing_recom">
+                        <div class="mainbriefingSwiper">
+                            <ul>
+                                <li class="txt">
+                                    <a href="https://www.choicestock.co.kr/stock/morning">
+                                        <span class="note_issue"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+  <path d="M9 18C9 18.5523 8.55228 19 8 19H5C4.44772 19 4 18.5523 4 18V15H9V18ZM15.8359 2C16.5205 2 16.9999 2.48817 17 3.07227V16.9795C17 17.5637 16.5205 18 15.8555 18C15.3763 17.9999 14.985 17.8259 14.5156 17.4336L10.2021 13.7627C10.1337 13.7104 10.046 13.6836 9.94824 13.6836H4.12207C2.74336 13.6835 2.00017 13.0126 2 11.7051V8.32129C2.00009 7.01361 2.74328 6.34189 4.12207 6.3418H9.94824C10.0459 6.3418 10.1337 6.3159 10.2021 6.26367L14.5156 2.62793C15.0339 2.19202 15.3568 2.00006 15.8359 2Z" fill="#4168F6"/>
+</svg></span>[모닝브리핑] 11국채금리 상승세 나스닥 2.7% 국채금리 상승세나스닥 2.7% 국채금리 상승세</a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
-                    <!-- //swiper-wrapper -->
+                    <!-- //모닝브리핑, 종목노트 -->
+
+                    <!-- 주요지수 스크롤 노출 -->
+                    <div class="main_mid leading_area">
+                        <div class="swiper-container maingdowSwiper">
+                            <div class="swiper-wrapper">
+                                <!-- 다우 지수 -->
+                                <div class="swiper-slide">
+                                    <div class="mainBox leading_exp">
+                                        <div class="box">
+                                            <h3 class="title">다우 지수</h3>
+                                            <div class="num">
+                                                <span><b>1,898.</b>00</span>
+                                            </div>
+                                            <div class="per">
+                                                <span class="increase"><i class="up"><svg xmlns="http://www.w3.org/2000/svg" width="9" height="10" viewBox="0 0 9 10" fill="none">
+                                                    <path d="M5.3 2.56667C4.9 2.03333 4.1 2.03333 3.7 2.56667L1.2 5.9C0.705573 6.55924 1.17595 7.5 2 7.5L7 7.5C7.82405 7.5 8.29443 6.55924 7.8 5.9L5.3 2.56667Z" fill="#F03E4C"/>
+                                                  </svg></i><b>89.</b>89</span>
+                                                <span class="increase">(<b>89.</b>89%)</span>
+                                                <!-- increase 증가, decrease 감소, 보합은 same -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- //leading_exp -->
+                                </div>
+                                <!-- 나스닥 지수 -->
+                                <div class="swiper-slide">
+                                    <div class="mainBox leading_exp">
+                                        <div class="box">
+                                            <h3 class="title">나스닥 지수</h3>
+                                            <div class="num">
+                                                <span><b>1,898.</b>00</span>
+                                            </div>
+                                            <div class="per">
+                                                <span class="decrease"><i class="down"><svg xmlns="http://www.w3.org/2000/svg" width="9" height="10" viewBox="0 0 9 10" fill="none">
+                                                    <path d="M5.3 7.43333C4.9 7.96667 4.1 7.96667 3.7 7.43333L1.2 4.1C0.705573 3.44076 1.17595 2.5 2 2.5L7 2.5C7.82405 2.5 8.29443 3.44076 7.8 4.1L5.3 7.43333Z" fill="#097DF3"/>
+                                                  </svg></i><b>89.</b>89</span>
+                                                <span class="decrease">(<b>-89.</b>89%)</span>
+                                                <!-- increase 증가, decrease 감소, 보합은 same -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- //leading_exp -->
+                                </div>
+                                <!-- S&P500 -->
+                                <div class="swiper-slide">
+                                    <div class="mainBox leading_exp">
+                                        <div class="box">
+                                            <h3 class="title">S&P500</h3>
+                                            <div class="num">
+                                                <span><b>898.</b>00</span>
+                                            </div>
+                                            <div class="per">
+                                                <span class="increase"><i class="up"><svg xmlns="http://www.w3.org/2000/svg" width="9" height="10" viewBox="0 0 9 10" fill="none">
+                                                    <path d="M5.3 2.56667C4.9 2.03333 4.1 2.03333 3.7 2.56667L1.2 5.9C0.705573 6.55924 1.17595 7.5 2 7.5L7 7.5C7.82405 7.5 8.29443 6.55924 7.8 5.9L5.3 2.56667Z" fill="#F03E4C"/>
+                                                  </svg></i><b>34.</b>89</span>
+                                                <span class="increase">(<b>89.</b>89%)</span>
+                                                <!-- increase 증가, decrease 감소, 보합은 same -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- //leading_exp -->
+                                </div>
+                                <!-- 환율 -->
+                                <div class="swiper-slide">
+                                    <div class="mainBox leading_exp">
+                                        <div class="box">
+                                            <h3 class="title">원/달러</h3>
+                                            <div class="num">
+                                                <span><b>1,379.</b>00</span>
+                                            </div>
+                                            <div class="per">
+                                                <span class="increase"><i class="up"><svg xmlns="http://www.w3.org/2000/svg" width="9" height="10" viewBox="0 0 9 10" fill="none">
+                                                    <path d="M5.3 2.56667C4.9 2.03333 4.1 2.03333 3.7 2.56667L1.2 5.9C0.705573 6.55924 1.17595 7.5 2 7.5L7 7.5C7.82405 7.5 8.29443 6.55924 7.8 5.9L5.3 2.56667Z" fill="#F03E4C"/>
+                                                  </svg></i><b>34.</b>89</span>
+                                                <span class="increase">(<b>19.</b>89%)</span>
+                                                <!-- increase 증가, decrease 감소, 보합은 same -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- //leading_exp -->
+                                </div>
+                                <!-- 다우 선물 -->
+                                <div class="swiper-slide">
+                                    <div class="mainBox leading_exp">
+                                        <div class="box">
+                                            <h3 class="title">다우 선물</h3>
+                                            <div class="num">
+                                                <span><b>1,898.</b>00</span>
+                                            </div>
+                                            <div class="per">
+                                                <span class="increase"><i class="up"><svg xmlns="http://www.w3.org/2000/svg" width="9" height="10" viewBox="0 0 9 10" fill="none">
+                                                    <path d="M5.3 2.56667C4.9 2.03333 4.1 2.03333 3.7 2.56667L1.2 5.9C0.705573 6.55924 1.17595 7.5 2 7.5L7 7.5C7.82405 7.5 8.29443 6.55924 7.8 5.9L5.3 2.56667Z" fill="#F03E4C"/>
+                                                  </svg></i><b>89.</b>89</span>
+                                                <span class="increase">(<b>89.</b>89%)</span>
+                                                <!-- increase 증가, decrease 감소, 보합은 same -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- //leading_exp -->
+                                </div>
+                                <!-- 나스닥 선물 -->
+                                <div class="swiper-slide">
+                                    <div class="mainBox leading_exp">
+                                        <div class="box">
+                                            <h3 class="title">나스닥 선물</h3>
+                                            <div class="num">
+                                                <span><b>1,898.</b>00</span>
+                                            </div>
+                                            <div class="per">
+                                                <span class="increase"><i class="up"><svg xmlns="http://www.w3.org/2000/svg" width="9" height="10" viewBox="0 0 9 10" fill="none">
+                                                    <path d="M5.3 2.56667C4.9 2.03333 4.1 2.03333 3.7 2.56667L1.2 5.9C0.705573 6.55924 1.17595 7.5 2 7.5L7 7.5C7.82405 7.5 8.29443 6.55924 7.8 5.9L5.3 2.56667Z" fill="#F03E4C"/>
+                                                  </svg></i><b>89.</b>89</span>
+                                                <span class="decrease">(<b>-89.</b>89%)</span>
+                                                <!-- increase 증가, decrease 감소, 보합은 same -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- //leading_exp -->
+                                </div>
+                                <!-- S&P500 선물 -->
+                                <div class="swiper-slide">
+                                    <div class="mainBox leading_exp">
+                                        <div class="box">
+                                            <h3 class="title">S&P500 선물</h3>
+                                            <div class="num">
+                                                <span><b>898.</b>00</span>
+                                            </div>
+                                            <div class="per">
+                                                <span class="increase"><i class="up"><svg xmlns="http://www.w3.org/2000/svg" width="9" height="10" viewBox="0 0 9 10" fill="none">
+                                                    <path d="M5.3 2.56667C4.9 2.03333 4.1 2.03333 3.7 2.56667L1.2 5.9C0.705573 6.55924 1.17595 7.5 2 7.5L7 7.5C7.82405 7.5 8.29443 6.55924 7.8 5.9L5.3 2.56667Z" fill="#F03E4C"/>
+                                                  </svg></i><b>89.</b>89</span>
+                                                <span class="increase">(<b>89.</b>89%)</span>
+                                                <!-- increase 증가, decrease 감소, 보합은 same -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- //leading_exp -->
+                                </div>
+                            </div>
+                            <!-- //swiper-wrapper -->
+                        </div>
+                        <!-- //swiper-container -->
+                    </div>
+                    <!-- //leading_area -->
+                    <!-- //주요지수 스크롤 노출 -->
                 </div>
-                <!-- //swiper-container -->
-                <span class="day">*기준 23. 07/05 15:05 USD</span>
+                <!-- //index_group -->
+                <span class="leading_day">*기준 23. 07/05 15:05 USD</span>
                 <!-- <span class="day">*기준 23. 07/05 장종료</span> -->
 
-            </div>
-            <!-- //leading_area -->
-            <!-- //주요지수 스크롤 노출 -->
+                <div class="main_mid tradeSignal_small" onclick="location.href ='/stock/signal'" style="cursor: pointer;">
+                    <div class="txt_flx">
+                        <p class="title">마켓스코어 <span class="num">16</span>점, <b class="fear">공포</b> 단계입니다</p>
+                        <span class="more">자세히 보기 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none"> <path d="M4.41992 4.5L8.57992 8.66L4.73992 12.5" stroke="#B0B8C1" stroke-linecap="round"/></svg></span>
+                    </div>
+                    <div class="chart_img">
+                        <img src="img/tradeSignal_small_fear.svg" alt="공포">
+                    </div>
+                </div>
+                <!-- //tradeSignal_small -->
+                <div class="main_mid tradeSignal_small" style="display: none;">
+                    <div class="txt_flx">
+                        <p class="title">마켓스코어 <span class="num">26</span>점, <b class="anxiety">불안</b> 단계입니다</p>
+                        <span class="more">자세히 보기 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none"> <path d="M4.41992 4.5L8.57992 8.66L4.73992 12.5" stroke="#B0B8C1" stroke-linecap="round"/></svg></span>
+                    </div>
+                    <div class="chart_img">
+                        <img src="img/tradeSignal_small_anxiety.svg" alt="불안">
+                    </div>
+                </div>
+                <!-- //tradeSignal_small -->
+                <div class="main_mid tradeSignal_small" style="display: none;">
+                    <div class="txt_flx">
+                        <p class="title">마켓스코어 <span class="num">26</span>점, <b class="normal">보통</b> 단계입니다</p>
+                        <span class="more">자세히 보기 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none"> <path d="M4.41992 4.5L8.57992 8.66L4.73992 12.5" stroke="#B0B8C1" stroke-linecap="round"/></svg></span>
+                    </div>
+                    <div class="chart_img">
+                        <img src="img/tradeSignal_small_normal.svg" alt="보통">
+                    </div>
+                </div>
+                <!-- //tradeSignal_small -->
+                <div class="main_mid tradeSignal_small" style="display: none;">
+                    <div class="txt_flx">
+                        <p class="title">마켓스코어 <span class="num">26</span>점, <b class="greed">과욕</b> 단계입니다</p>
+                        <span class="more">자세히 보기 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none"> <path d="M4.41992 4.5L8.57992 8.66L4.73992 12.5" stroke="#B0B8C1" stroke-linecap="round"/></svg></span>
+                    </div>
+                    <div class="chart_img">
+                        <img src="img/tradeSignal_small_greed.svg" alt="과욕">
+                    </div>
+                </div>
+                <!-- //tradeSignal_small -->
+                <div class="main_mid tradeSignal_small" style="display: none;">
+                    <div class="txt_flx">
+                        <p class="title">마켓스코어 <span class="num">26</span>점, <b class="extreme">탐욕</b> 단계입니다</p>
+                        <span class="more">자세히 보기 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none"> <path d="M4.41992 4.5L8.57992 8.66L4.73992 12.5" stroke="#B0B8C1" stroke-linecap="round"/></svg></span>
+                    </div>
+                    <div class="chart_img">
+                        <img src="img/tradeSignal_small_extreme.svg" alt="탐욕">
+                    </div>
+                </div>
+                <!-- //tradeSignal_small -->
 
-            <div class="main_mid mainTop_banner">
-                <div class="swiper swipe_banner">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <!-- 메인 상단 신규 앱 출시 이벤트 배너 -->
-                            <div class="event2025_banner app_and" onclick="location.href =''" style="cursor: pointer;">
-                                <a href="" class="link_banner">
-                                    <span>실시간 투자정보 알람을 받아보세요~!</span>
-                                    초이스스탁US <b>안드로이드앱 다운로드</b>
+                <div class="main_mid mainTop_banner">
+                    <div class="swiper swipe_banner">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <!-- 메인 상단 신규 앱 출시 이벤트 배너 -->
+                                <div class="event2025_banner app_and" onclick="location.href =''"
+                                    style="cursor: pointer;">
+                                    <a href="" class="link_banner">
+                                        <span>실시간 투자정보 알람을 받아보세요~!</span>
+                                        초이스스탁US <b>안드로이드앱 다운로드</b>
+                                    </a>
+                                </div>
+                                <!-- //메인 상단 이벤트 배너 -->
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="https://www.choicestock.co.kr/stock/research_view/5797" class="banner">
+                                    <span class="img"><img src="img/heart.jpg" alt=""></span>
+                                    <div class="txt_flx">
+                                        <p class="banner_text">보유종목? 배당/관심종목?</p>
+                                        <p class="banner_title">나만의 관심종목 그룹을 만드세요</p>
+                                    </div>
                                 </a>
                             </div>
-                            <!-- //메인 상단 이벤트 배너 -->
+                            <!-- //swiper-slide -->
                         </div>
-                        <div class="swiper-slide">
-                            <a href="https://www.choicestock.co.kr/stock/research_view/5797" class="banner">
-                                <span class="img"><img src="../img/heart.jpg" alt=""></span>
-                                <div class="txt_flx">
-                                    <p class="banner_text">보유종목? 배당/관심종목?</p>
-                                    <p class="banner_title">나만의 관심종목 그룹을 만드세요</p>
-                                </div>
-                            </a>
-                        </div>
-                        <!-- //swiper-slide -->
+                        <!-- //swiper-wrapper -->
+                        <div class="swiper-pagination"></div>
                     </div>
-                    <!-- //swiper-wrapper -->
-                    <div class="swiper-pagination"></div>
+                    <!-- //swiper -->
                 </div>
-                <!-- //swiper -->
-            </div>
-            <!-- //main_mid -->
+                <!-- //main_mid -->
 
             <div class="main_mid mainTop_banner">
                 <div class="swipe_bannertemp">
@@ -473,13 +547,8 @@
                 <!-- //swiper -->
             </div>
 
-            <!-- <div class="event2025_banner bg_gray" onclick="location.href =''" style="cursor: pointer;">             
-                <a href="" class="link_banner">
-                    <span>실시간 투자정보 알람을 받아보세요~!</span>
-                    초이스스탁US <b>안드로이드앱 다운로드</b>
-                </a>                        
-            </div> -->
-            <!-- //메인 상단 이벤트 배너 -->
+            </div>
+            <!-- //main_top_bg -->
 
             <!-- 관심종목 -->
             <div class="main_mid attention_area">
