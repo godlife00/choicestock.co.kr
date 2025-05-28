@@ -2388,7 +2388,8 @@ table.tableRanking td {
 .globalStock .main_mid.briefing_recom {
   margin-top: 11px;
   padding: 0 14px;
-  height: 40px;
+  height: 48px;
+  box-sizing: border-box;
   overflow: hidden;
 }
 
@@ -2984,16 +2985,43 @@ table.tableRanking td {
   letter-spacing: var(--Tracking-md, -0.3px);
   height: 16px;
 }
+.mainTop_banner .event2025_banner,
+.event2025_banner.app_and .swipe_bannertemp {
+  max-width: 340px;
+  width: 100%;
+  margin: 0 auto;
+}
+.mainTop_banner .event2025_banner .banner_bg,
+.event2025_banner.app_and .swipe_bannertemp .banner_bg {
+  right: 0;
+}
+
+.mainTop_banner .swipe_banner .swiper-slide,
+.mainTop_banner .swipe_bannertemp,
+.event2025_banner.app_and {
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 16px;
+  background-color: #DBE5FF;
+}
+
 .globalStock .event2025_banner {
+  position: relative;
   display: flex;
   align-items: center;
   gap: 4px 12px;
-  padding: 23px 32px;
+  box-sizing: border-box;
+  padding: 23px 24px;
+  width: 100%;
+  margin: 0 auto;
   overflow: hidden;
   border-radius: 16px;
-  box-sizing: border-box;
   background-color: #DBE5FF;
-  width: 100%;
+}
+@media (max-width: 374px) {
+  .globalStock .event2025_banner {
+    padding: 23px 16px;
+  }
 }
 .globalStock .event2025_banner .img {
   position: relative;
@@ -3014,18 +3042,16 @@ table.tableRanking td {
   transform: translateY(-50%);
 }
 .globalStock .event2025_banner .banner_bg.app_and {
-  top: calc(50% - 6px);
-  width: 60px;
-  height: 60px;
+  width: 80px;
+  height: 80px;
   background: url("/img/banner/new_app.png") no-repeat 0 0;
-  background-size: auto 60px;
+  background-size: 80px 80px;
 }
 .globalStock .event2025_banner .banner_bg.note {
-  top: calc(50% - 6px);
-  width: 83px;
+  width: 80px;
   height: 80px;
   background: url("/img/banner/icon_noteman.png") no-repeat 0 0;
-  background-size: contain;
+  background-size: 80px 80px;
 }
 .globalStock .event2025_banner .link_banner {
   position: relative;
@@ -40577,6 +40603,8 @@ body.v_signalStreng {
 }
 .v_signalStreng.globalStock .signalpop.event2024_payment .content .info_txt {
   background: none;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 .v_signalStreng.globalStock .signalpop.event2024_payment .content .info_txt p.txt01 {
   display: flex;
@@ -40586,7 +40614,7 @@ body.v_signalStreng {
   color: #333;
   text-align: center;
   font-family: Pretendard;
-  font-size: clamp(32px, 5vw, 48px);
+  font-size: 24px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -40600,13 +40628,13 @@ body.v_signalStreng {
   color: #6A727B;
   text-align: center;
   font-family: Pretendard;
-  font-size: 20px;
+  font-size: 17px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
 }
 .v_signalStreng.globalStock .signalpop.event2024_payment .content .img_area {
-  max-width: 400px;
+  max-width: 290px;
   margin: 0 auto;
 }
 .v_signalStreng.globalStock .signalpop.event2024_payment .content .img_area .img_banner {
@@ -40620,7 +40648,7 @@ body.v_signalStreng {
 }
 .v_signalStreng.globalStock .signalpop.event2024_payment .content .btn_area .btn {
   display: inline-block;
-  margin: 25px auto 0;
+  margin: 16px auto 0;
   width: calc(100% - 50px);
   padding: 15px 15px;
   box-sizing: border-box;
