@@ -2,6 +2,7 @@
     --Font-primary-blue: #4168F6;
     --Red-red500: #F03E4C;
     --Font-primary-body: #24282C;
+    --Background-fill-background: #F7F8FA;
 }
 
 @mixin filter_list {
@@ -108,4 +109,176 @@
         line-height: var(--Line-height-xxs, 13px); /* 118.182% */
         letter-spacing: var(--Tracking-md, -0.3px);
     }
+}
+
+// 검색창
+@mixin search_area {
+	margin: 0 auto;
+    width: 100%;
+	position: relative;
+	text-align: right;
+
+	.sch_title {
+		color: #333;
+		font-size: 1.25rem;
+		font-weight: bold;
+		text-align: left;
+		display: inline-block;
+		width: 45px;
+		line-height: 33px;
+	}
+	
+	.sch_title.keydown {
+		display: none;
+	}
+	
+	.searchInput {
+        outline: none;
+		width: 100%;	
+		padding: 12px 50px 12px 24px;
+		box-sizing: border-box;
+		border-radius: 26px;
+		border: 1px solid #4168F6;
+		background: #FFF;
+		box-shadow: 0px 5px 10px 0px rgba(134, 138, 147, 0.10);
+        
+	
+		color: var(--Font-primary-body, #24282C);
+		font-family: var(--Body, Pretendard);
+		font-size: var(--Size-md-16, 16px);
+		font-style: normal;
+		font-weight: 500;
+		line-height: var(--Line-height-2xl, 26px); /* 162.5% */
+		letter-spacing: var(--Tracking-md, -0.3px);
+	
+		&.keydown {						
+			border-bottom-left-radius: 0;
+			border-bottom-right-radius: 0;			
+            box-shadow: none;
+		}
+		
+		&::placeholder {
+			color: var(--Font-disabled, #B0B8C1);
+		}
+	
+	}
+	
+	.searchBtn {
+		display: inline-block;
+		width: 24px;
+		height: auto;
+		position: absolute;
+		right: 16px;
+		top: 14px;
+	}	
+}
+
+@mixin sch_autocomplete {
+    background: #fff;
+    border-bottom-left-radius: 26px;
+    border-bottom-right-radius: 26px;
+    display: none;
+    overflow: auto;
+    height: 100%;
+    margin: 0 auto;
+    width: 100%;	
+    
+    &.focus_on {
+        display: block;
+    }		
+    &._show {
+        display: block;
+    }
+    
+    ul {
+        background: #fff;
+        border-top: 0;
+        border-bottom-right-radius: 26px;
+        border-bottom-left-radius: 26px;
+
+        li {
+            display: inline-flex;
+            align-items: center;				
+            width: 100%;
+            padding: 12px 16px;
+            box-sizing: border-box;
+            border: 1px solid #4168F6;
+            border-top: none;
+        }
+        
+        li:last-child {
+            padding-bottom: 24px;
+            border-bottom-left-radius: 26px;
+            border-bottom-right-radius: 26px;				
+        }
+        
+        li a {
+            display: flex;
+            align-items: center;
+            gap: 5px 10px;
+            width: 100%;
+            color: var(--Font-primary-body, #24282C);
+            font-family: var(--Body, Pretendard);
+            font-size: var(--Size-md-16, 16px);
+            font-style: normal;
+            font-weight: 500;
+            line-height: var(--Line-height-2xl, 26px); /* 162.5% */
+            letter-spacing: var(--Tracking-md, -0.3px);
+        }
+        
+        li a._on {
+            border: none;
+            padding: 0;
+        }
+        
+        li a .schCode {
+            line-height: normal;				
+            color: var(--Font-primary-body, #24282C);
+            font-family: var(--Body, Pretendard);
+            font-size: var(--Size-md-16, 16px);
+            font-style: normal;
+            font-weight: 500;
+            line-height: var(--Line-height-2xl, 26px); /* 162.5% */
+            letter-spacing: var(--Tracking-md, -0.3px);
+            
+            width: 65px;				
+            display: inline-flex;
+            align-items: baseline;
+            gap: 5px 10px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        
+        li a .schList {
+            line-height: normal;
+            box-sizing: border-box;
+            color: #939393;
+            display: inline-flex;
+            align-items: baseline;
+            width: calc(100% - 80px);
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        
+        li a .schList strong {
+            color: #939393;
+            font-weight: bold;
+        }
+    }
+    
+    .no_result {
+        border: 1px solid #4168F6;
+        border-bottom-left-radius: 26px;
+        border-bottom-right-radius: 26px;				
+        border-top: none;
+        padding: 30px 15px;
+        text-align: center;			
+    }
+    
+    .no_result p {
+        color: #939393;
+    }	
+
 }

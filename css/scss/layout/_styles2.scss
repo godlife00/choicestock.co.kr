@@ -6612,13 +6612,17 @@
 
 .globalStock .sub_search .latest_results .tabsArea .tab_container .txt_box {
 	background: #fff;
-	padding: 12px 15px;
+	padding: 16px 20px;
 }
 
 .globalStock .sub_search .latest_results .tabsArea .tab_container .txt_box .txt {
-	color: #939393;
-	font-size: 0.9rem;
-	line-height: 1.43;
+	color: var(--Font-secondary-caption, #6B7684);
+	font-family: var(--Body, Pretendard);
+	font-size: var(--Size-sm, 14px);
+	font-style: normal;
+	font-weight: var(--Weight-400, 400);
+	line-height: var(--Line-height-lg, 21px); /* 150% */
+	letter-spacing: var(--Tracking-md, -0.3px);
 }
 
 .globalStock .sub_search .latest_results .tabsArea .tab_container .txt_box .txt strong {
@@ -9960,7 +9964,7 @@
 }
 
 .globalStock #wrap #container.sub_login .mapage_area .inUse_box .use_service {
-	margin-top: 15px;
+	margin-top: 15px;	
 }
 
 .globalStock #wrap #container.sub_login .mapage_area .inUse_box .use_service ul {
@@ -9973,29 +9977,32 @@
 	-webkit-box-align: center;
 	-ms-flex-align: center;
 	align-items: center;
+	background-color: #e6e7f4;	
 }
 
 .globalStock #wrap #container.sub_login .mapage_area .inUse_box .use_service li {
 	padding: 11px 5px;
 	border-top: 1px solid #e5e5e5;
 	box-sizing: border-box;
-	flex: 1;
+	// flex: 1;
 	font-size: 0.8125rem;
-	letter-spacing: -0.5px;
+	// letter-spacing: -0.5px;
 	color: #222;
 }
 
 @media (min-width: 320px) and (max-width: 400px) {
 	.globalStock #wrap #container.sub_login .mapage_area .inUse_box .use_service li {
-		letter-spacing: -1px;
+		// letter-spacing: -1px;
 	}
 }
 
 /* 내정보 사용중인 유료 서비스 */
 .globalStock #wrap #container.sub_login .mapage_area .inUse_box .use_service li.th {
 	position: relative;
-	background-color: #e6e7f4;
-	padding-left: 15px;
+	// background-color: #e6e7f4;		
+	padding: 11px 5px;
+	padding-left: 15px;		
+	width: 160px;
 }
 
 .globalStock #wrap #container.sub_login .mapage_area .inUse_box .use_service li.th::before {
@@ -10010,13 +10017,18 @@
 	background-color: #404fc3;
 }
 
-.globalStock #wrap #container.sub_login .mapage_area .inUse_box .use_service li.td {
+.globalStock #wrap #container.sub_login .mapage_area .inUse_box .use_service li.td {	
+	display: flex;
+	flex-wrap: wrap;
+	gap: 4px 4px;
 	color: #575757;
 	padding-left: 10px;
+	background-color: #fff;
+	width: calc(100% - 160px);
 }
 
 .globalStock #wrap #container.sub_login .mapage_area .inUse_box .use_service li.td .method {
-	display: inline-block;
+	display: inline-flex;
 	width: 45px;
 	text-align: center;
 	color: #575757;
@@ -11941,6 +11953,7 @@
 		color: #6A727B;
 		font-size: 1rem;
 		font-weight: 400;
+		line-height: 1.42;
 
 		.del_num {
 			display: inline-block;
@@ -14346,7 +14359,7 @@ body.v_signalStreng {
 
 .v_signalStreng.globalStock .sub_top .txt_box,
 .v_signalStreng.globalStock .sub_search .latest_results .tabsArea .tab_container .txt_box {
-	background: var(--Background-secondary-background, #F7F8FA);
+	background: var(--Background-fill-background, #F7F8FA);
 }
 
 .v_signalStreng.globalStock .return_sum {
@@ -15116,17 +15129,13 @@ body.v_signalStreng {
 				width: 100%;
 				
 				&::after {
-					content: "";
+					content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13 6L7.8 11.2L3 6.4" stroke="%238C98A7" stroke-width="1.4" stroke-linecap="round"/></svg>');
 					position: absolute;
-					width: 5px;
-					height: 5px;
-					border-top: 1px solid #3555d5;
-					border-right: 1px solid #3555d5;
-					transform: rotate(135deg);
-					display: inline-block;
-					right: 10px;
+					width: 16px;
+					height: 16px;
+					right: 7px;
 					top: 12px;
-					z-index: 99;
+					z-index: 81;
 				}
 			}
 		
@@ -15138,14 +15147,20 @@ body.v_signalStreng {
 				border-radius: 8px;
 				border: solid 1px #e0e4e9;
 				background-color: #fff;
-				color: #6A727B;
-				font-size: 14px;
-				font-weight: 500;				
-				height: 34px;
+
+				color: var(--Font-secondary-body, #4E5866);
+				font-family: var(--Body, Pretendard);
+				font-size: var(--Size-md-15, 15px);
+				font-style: normal;
+				font-weight: var(--Weight-500, 500);
+				line-height: var(--Line-height-xl-01, 24px);
+				letter-spacing: var(--Tracking-md, -0.3px);			
+				
+				
+				height: 40px;
 				padding: 0 24px 0 12px;
 				opacity: 1;				
 				appearance: none; // 기본 셀렉트 스타일 제거				
-		
 				&:disabled {
 					background-color: red;
 					cursor: not-allowed;
@@ -15157,6 +15172,19 @@ body.v_signalStreng {
 				}
 			}
 
+			.noData_title {
+				color: var(--Font-primary-title, #1F242B);
+				font-family: var(--Title, Pretendard);
+				font-size: var(--Size-2xl, 20px);
+				font-style: normal;
+				font-weight: var(--Weight-600, 600);
+				line-height: var(--Line-height-2xl, 26px); /* 130% */
+				letter-spacing: var(--Tracking-md, -0.3px);
+				b {
+					color: var(--Font-primary-title, #1F242B);
+					font-weight: var(--Weight-600, 600);
+				}
+			}
 			
 			.sort_manage {
 				display: flex;
@@ -15310,250 +15338,6 @@ body.v_signalStreng {
 			transform: rotate(-45deg);
 		}
 	}
-}
-
-.v_signalStreng.globalStock .signalpop.event2024_payment {
-	.content {
-		background-color: #141933;
-
-		.info_txt {
-			text-align: center;
-			padding: 0;
-			height: 270px;
-			background: url('/img/banner/event_mainBtm_240115.png') no-repeat center 0;
-			background-size: contain;
-
-			p {
-				display: none;
-				text-align: center;
-			}
-
-			p.txt01 {
-				font-size: 18px;
-				font-weight: bold;
-				color: #c7cbe9;
-			}
-
-			p.txt02 {
-				margin-top: 20px;
-				font-size: 24px;
-				font-weight: bold;
-				color: #404fc3;
-			}
-		}
-
-		.btn_area {
-			padding-bottom: 35px;
-			text-align: center;
-
-			.btn {
-				display: inline-block;
-				margin: 25px auto 0;
-				width: calc(100% - 50px);
-				padding: 20px 15px;
-				box-sizing: border-box;
-				border: none;
-				border-radius: 8px;
-				background-color: #404fc3;
-				font-size: 1rem;
-				line-height: 1.19;
-				text-align: center;
-				color: #fff;
-
-				b {
-					color: #f0cc09;
-				}
-			}
-		}
-	}
-}
-
-
-
-.v_signalStreng.globalStock .signalpop.event2024_payment {
-	.content {
-		background: #fff url('/img/signalpop_sdwbg.png') repeat-x left bottom;
-		background-size: contain;
-
-		.info_txt {
-			text-align: center;
-			padding: 0;
-			margin: 0 auto;
-			// max-width: 443px;
-			max-width: 300px;
-			height: 270px;
-
-			@media (min-width:320px) and (max-width: 358px) {
-				height: 240px;
-			}
-
-			@media (min-width:375px) and (max-width:700px) {
-				height: 240px;
-			}
-
-			@media (min-width:701px) and (max-width:759px) {
-				height: 270px;
-			}
-
-			background: url('/img/banner/event_mainBtm_240123.png') no-repeat center 0;
-			background-size: cover !important;
-
-			p {
-				display: none;
-				text-align: center;
-			}
-
-			p.txt01 {
-				font-size: 18px;
-				font-weight: bold;
-				color: #c7cbe9;
-			}
-
-			p.txt02 {
-				margin-top: 20px;
-				font-size: 24px;
-				font-weight: bold;
-				color: #404fc3;
-			}
-		}
-
-		.btn_area {
-			padding-bottom: 35px;
-			text-align: center;
-
-			.btn {
-				display: inline-block;
-				margin: 25px auto 0;
-				width: calc(100% - 50px);
-				padding: 15px 15px;
-				box-sizing: border-box;
-				border: none;
-				border-radius: 8px;
-				background-color: #404fc3;
-				font-size: 1.125rem;
-				line-height: 1.19;
-				text-align: center;
-				color: #fff;
-				font-weight: bold;
-
-				b {
-					color: #f0cc09;
-				}
-			}
-		}
-	}
-
-	.ftr {
-		display: flex;
-		justify-content: space-between;
-		height: 47px;
-		background-color: #fff;
-		border-top-left-radius: 20px;
-		border-top-right-radius: 20px;
-
-
-		.btn_close {
-			font-size: 13px;
-			text-align: right;
-			color: #939393;
-		}
-
-		.btn_close {
-			cursor: pointer;
-			position: absolute;
-			display: inline-block;
-			padding: 4px;
-			width: 17px;
-			height: 17px;
-			right: 14px;
-			top: 14px;
-			font-size: 0;
-		}
-
-		.btn_close::before,
-		.btn_close::after {
-			content: "";
-			position: absolute;
-			right: 15px;
-			top: 0;
-			height: 22px;
-			width: 2px;
-			background-color: #333;
-		}
-
-		.btn_close::before {
-			transform: rotate(45deg);
-		}
-
-		.btn_close::after {
-			transform: rotate(-45deg);
-		}
-	}
-}
-
-.v_signalStreng.globalStock .free_2weeks .signalpop.event2024_payment {
-	.content {
-		background: #fff url('/img/signalpop_sdwbg.png') repeat-x left bottom;
-		background-size: contain;
-		border-top-left-radius: 20px;
-		border-top-right-radius: 20px;
-		padding-top: 30px;
-	}
-
-	.ftr {
-		height: auto;
-		background-color: #fff;
-		margin-top: 0;
-		border-radius: 0;
-
-
-		.btn_close {
-			cursor: pointer;
-			position: absolute;
-			display: inline-block;
-			padding: 4px;
-			width: 17px;
-			height: 17px;
-			right: 14px;
-			top: 14px;
-			font-size: 0;
-		}
-
-		.btn_close::before,
-		.btn_close::after {
-			content: "";
-			position: absolute;
-			right: 15px;
-			top: 0;
-			height: 22px;
-			width: 2px;
-			background-color: #333;
-		}
-
-		.btn_close::before {
-			transform: rotate(45deg);
-		}
-
-		.btn_close::after {
-			transform: rotate(-45deg);
-		}
-	}
-}
-
-// 2024년 신년이벤트
-.v_signalStreng.globalStock .event2024_payment_sub {
-	a {
-		display: inline-block;
-		width: 100%;
-		height: 100%;
-
-		img {
-			display: inline-block;
-			width: 100%;
-			height: 100%;
-		}
-	}
-
 }
 
 
@@ -15964,9 +15748,9 @@ body.v_signalStreng {
 	width: 100%;
 	height: 100%;
 }
-.swipe_banner {
+.swipe_banner, .swipe_bannertemp {
 	position: relative;	
-	margin: 24px 16px 0;
+	margin: 20px 16px 0;
 
 	.swiper-slide {
 		justify-content: flex-start;		
@@ -16013,20 +15797,41 @@ body.v_signalStreng {
 		gap: 4px 12px;		
 		width: 100%;
 		height: 84px;		
-		padding: 18px 16px;		
+		padding: 18px 20px;		
 		box-sizing: border-box;
 		border-radius: var(--Spacing-s-06, 16px);
 		background: #ECEFFD;
 
+		.event_belt {
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+			border-radius: var(--Radius-r-02, 8px);
+			background: var(--Font-primary-blue, #4168F6);
+			width: 93px;
+			margin-left: auto;
+			padding: 10px 12px;
+			box-sizing: border-box;
+			color: #FFF;
+			font-family: var(--Body, Pretendard);
+			font-size: var(--Size-xs-13, 13px);
+			font-style: normal;
+			font-weight: var(--Weight-600, 600);
+			line-height: var(--Line-height-xs-13, 16px); /* 123.077% */
+			letter-spacing: var(--Tracking-md, -0.3px);
+		}
 		.img {
 			position: relative;
 			display: inline-flex;
 			background-color: #fff;
 			width: 48px;
 			height: 48px;
+			&.bg_trans {
+				background-color: transparent;
+			}
 			.event_belt {
 				position: absolute;
-				left: -11px;
+				left: -33px;
 				top: -5px;
 				display: inline-flex;				
 				border-radius: 100px;

@@ -192,7 +192,7 @@ $(document).ready(function () {
     customizeAndAppendList();  // 종목검색 개요탭 등 상단 고정 종목명 함수 실행
 
     
-    if ($('#header').length) {
+    if ($('#header').length && !$('#header').hasClass('m_hdr')) {
         // 스크롤시 헤더 상단 고정 스크립트    
         var headerHeight = $('#header').innerHeight();
         var headerOffset = $('#header .headerTop').offset().top;    
@@ -344,7 +344,7 @@ $(document).ready(function () {
         $(inputSelector).on("focusout", function() {            
             $(titleSelector).removeClass('keydown');
             $(this).removeClass('keydown');
-            $(btnSelector).css('top', '11px');
+            // $(btnSelector).css('top', '11px');
             $(autocompleteSelector).hide();
         });
     }
@@ -750,10 +750,13 @@ $(document).ready(function () {
                     slidesPerView: 1.5,
                 },                
                 360: {
-                    slidesPerView: 2.3,                    
-                },                
+                    slidesPerView: 1.8,                    
+                },  
+                424: {
+                    slidesPerView: 1.8,                    
+                },               
                 425: {
-                    slidesPerView: 2.3,                    
+                    slidesPerView: 2.1,                    
                 },                
                 680: {
                     slidesPerView: 2.3,                    
@@ -813,7 +816,31 @@ $(document).ready(function () {
             spaceBetween: 8,
         });
     }
-    
+
+    // 원스톱진단 관심종목 매트릭스 분석 리스트
+    if ($('.analyze_Swiper').length) {
+        var analyze_Swiper = new Swiper('.analyze_Swiper', {
+            slidesPerView: "auto",
+            spaceBetween: 16,
+            observer: true, // DOM 변화를 감지하여 Swiper를 업데이트
+            observeParents: true, // 부모 요소의 DOM 변화를 감지
+            on: {
+                init: function () {
+                    let maxHeight = 0;
+                    const slides = this.slides ? Array.from(this.slides) : [];
+                    slides.forEach(slide => {
+                        if (slide.offsetHeight > maxHeight) {
+                            maxHeight = slide.offsetHeight;
+                        }
+                    });
+                    slides.forEach(slide => {
+                        slide.style.height = maxHeight + 'px';
+                    });
+                    this.update(); // 초기화 시 높이 업데이트
+                }
+            }
+        });
+    }    
 
     var catchSwiper = new Swiper('.catchSwiper, .catchSwiper2', {
         slidesPerView: 2.2,
@@ -1256,11 +1283,11 @@ $(document).ready(function () {
     });
 
     // 원스톱 종목진단 div 높이 조절    
-    var heightArray = $(".globalStock .sub_search .latest_results .tabsArea .onestep_chart .dgtic_results > div").map(function () {
-        return $(this).height();
-    }).get();
-    var maxHeight = Math.max.apply(Math, heightArray);
-    $(".globalStock .sub_search .latest_results .tabsArea .onestep_chart .dgtic_results > div").height(maxHeight);
+    // var heightArray = $(".globalStock .sub_search .latest_results .tabsArea .onestep_chart .dgtic_results > div").map(function () {
+    //     return $(this).height();
+    // }).get();
+    // var maxHeight = Math.max.apply(Math, heightArray);
+    // $(".globalStock .sub_search .latest_results .tabsArea .onestep_chart .dgtic_results > div").height(maxHeight);
 
     // 스크롤시 tab_scr bg 숨김
     var windowWidth = $('html, body').width();
@@ -1395,22 +1422,22 @@ $(document).ready(function () {
     //검색    
     $('.globalStock .schfix_inc .searching .searchArea .searchInput').on("keydown", function () {
         $(this).addClass('keydown');
-        $('.globalStock .schfix_inc .searching .searchArea .searchBtn').css('top', '15px');
+        // $('.globalStock .schfix_inc .searching .searchArea .searchBtn').css('top', '15px');
         $('.globalStock .schfix_inc .searching .searchArea .sch_title').addClass('keydown');
         $('.globalStock .schfix_inc .searching .sch_autocomplete').addClass('focus_on').show();
         $('.globalStock.kiwoom .schfix_inc .top_btn').hide();
         $('.globalStock.kiwoom .schfix_inc .searching .top_btn + .searchArea').css('width', 'calc(100% - 40px)');
-        $('.globalStock.wowtv .schfix_inc .searching .searchArea .searchBtn').css('top', '11px');
+        // $('.globalStock.wowtv .schfix_inc .searching .searchArea .searchBtn').css('top', '11px');
     });
     $('.globalStock .schfix_inc .searching .searchArea .searchInput').on("focusout", function () {
         $('.globalStock .schfix_inc .searching .searchArea .sch_title').removeClass('keydown');
         $(this).removeClass('keydown');
-        $('.globalStock .schfix_inc .searching .searchArea .searchBtn').css('top', '11px');
+        // $('.globalStock .schfix_inc .searching .searchArea .searchBtn').css('top', '11px');
         $('.globalStock .schfix_inc .searching .sch_autocomplete').hide();
         $('.globalStock.kiwoom .schfix_inc .top_btn').show();
         $('.globalStock.kiwoom .schfix_inc .searching .searchArea').css('width', '100%');
         $('.globalStock.kiwoom .schfix_inc .searching .top_btn + .searchArea').css('width', 'calc(100% - 70px)');
-        $('.globalStock.wowtv .header_wowtv + .search_top.searching .searchArea .searchBtn').css('top', '11px');
+        // $('.globalStock.wowtv .header_wowtv + .search_top.searching .searchArea .searchBtn').css('top', '11px');
     });
     
     
@@ -1860,7 +1887,7 @@ $(document).ready(function () {
     // 매매신호 플로팅 배너 열기, 닫기 스크립트    
     // 스크롤 이벤트를 감지하여 처리    
     function scrollsignalpop() {
-        const signalPop = $('.v_signalStreng.globalStock .signalpop .box');
+        const signalPop = $('.v_signalStreng.globalStock .signalpop .box');        
         signalPop.slideDown(1200, function() {
             $(this).css({
                 'display': 'block',
@@ -1875,10 +1902,14 @@ $(document).ready(function () {
         const windowHeight = window.innerHeight;
         const documentHeight = document.documentElement.scrollHeight;
         
-        // 스크롤이 페이지의 30% 이상 내려갔을 때 실행
-        if (scrollPosition > (documentHeight * 0.3)) {
-            scrollsignalpop();
-        }
+        // sub_search 또는 signalpop 클래스가 존재하는 경우에만 실행
+        // if ($('.sub_search').length || $('.signalpop').length) {
+        //     // 스크롤이 페이지의 30% 이상 내려갔을 때 실행
+        //     if (scrollPosition > (documentHeight * 0.3)) {
+        //         console.log('scrollsignalpop 실행');
+        //         scrollsignalpop();
+        //     }
+        // }
     });
 
     // 종목검색 탭 상태 체크 및 함수 실행
@@ -2096,7 +2127,7 @@ $(document).ready(function () {
 
     // 서비스소개 페이드인 효과    
     function applyScrollEffect() {
-        $('.box').each(function() {
+        $('.service_wrap .box').each(function() {
             $(this).addClass('scrolled');
         });
     }
@@ -2104,7 +2135,7 @@ $(document).ready(function () {
         const windowHeight = $(window).height();
         const windowScrollTop = $(window).scrollTop();
 
-        $('.box').each(function() {
+        $('.service_wrap .box').each(function() {
             const boxTop = $(this).offset().top;
 
             // 화면 뷰포트에 .box 요소가 보이기 시작하는 지점 확인
@@ -2183,11 +2214,11 @@ $(document).ready(function () {
             var element = document.querySelector('.eps_pop01 .pop_con');
     
             if (screenWidth >= 425) { // PC 화면으로 가정한 너비입니다.
-                element.style.height = 'auto'; // PC에서는 높이를 auto로 설정합니다.
+                element.style.maxHeight = 'none'; // PC에서는 maxHeight 제한을 없앱니다.
             } else {
                 var viewportHeight = window.innerHeight;
                 var calculatedHeight = viewportHeight * 0.8 - 60; // 모바일에서의 계산 로직
-                element.style.height = calculatedHeight + 'px'; // 모바일에서는 계산된 높이를 적용합니다.
+                element.style.maxHeight = calculatedHeight + 'px'; // 모바일에서는 계산된 maxHeight를 적용합니다.
             }
         }
     
@@ -2328,6 +2359,30 @@ $(document).ready(function () {
         $('html, body').css("overflow", "");
     });
 
+    // ==========================
+    // [테이블 width 동적 조정 스크립트 시작]
+    function adjustTableWidth() {
+        var $tables = $('.scroll_table_wrap .scroll_table > table');
+        if ($tables.length === 0) return; // scroll_table이 없으면 함수 종료
+        $tables.each(function() {
+            var $table = $(this);
+            var $scrollArea = $table.closest('.scroll_table');
+            if ($table.length === 0 || $scrollArea.length === 0) return;
+            var parentWidth = $scrollArea.width();
+            $table.css('width', 'max-content');
+            var tableScrollWidth = $table[0].scrollWidth;
+            if (tableScrollWidth < parentWidth) {
+                $table.css('width', '100%');
+            } else {
+                $table.css('width', 'max-content');
+            }
+            // width 조정 후 opacity를 1로 변경
+            $table.css('opacity', '1'); 
+        });
+    }
+    $(window).on('load resize', adjustTableWidth);
+    // [테이블 width 동적 조정 스크립트 끝]
+
 });
 
 // 검색 이력 더보기, 닫기 스크립트
@@ -2375,9 +2430,13 @@ document.addEventListener("DOMContentLoaded", function() {
 
 // recommend_item 클릭 이벤트 처리
 document.addEventListener('DOMContentLoaded', function() {
-    const recommendItems = document.querySelectorAll('.recommend_item');
-    
-    if (recommendItems.length > 0) {
+    try {
+        const recommendItems = document.querySelectorAll('.recommend_item');
+        
+        if (!recommendItems || recommendItems.length === 0) {
+            return; // recommend_item이 없는 경우 early return
+        }
+
         recommendItems.forEach(item => {
             item.addEventListener('click', function() {
                 const showItemTxt = this.querySelector('.show_item_txt');
@@ -2395,6 +2454,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             });
         });
+    } catch (error) {
+        console.log('recommend_item 이벤트 처리 중 오류 발생:', error);
     }
 });
 
@@ -2438,7 +2499,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-
 // 컨텐츠 필터링을 위한 클래스 정의
 class ContentFilter {
     constructor(options = {}) {        
@@ -2449,10 +2509,12 @@ class ContentFilter {
                 'sub_research': 'all_note',    // 리서치 페이지: 전체 노트 필터
                 'sub_briefing': 'all_briefing',// 브리핑 페이지: 전체 브리핑 필터
                 'sub_alarm': 'all_briefing',  // 알람 리스트 페이지: 전체 브리핑 필터
-                'default': 'growth'            // 기본 페이지: 성장주 필터
+                'default': 'growth',            // 기본 페이지: 성장주 필터
+                'onestop_view': 'detail'            // 원스톱진단 페이지: 간단히,자세히 필터
             },
             filterButtonClass: '.filter_btn',   // 필터 버튼 클래스
             sortButtonClass: '.sort_btn',       // 정렬 버튼 클래스
+            interestButtonClass: '.interest_btn',  // 관심 버튼 클래스
             contentClass: '.filter_box_inner',  // 컨텐츠 박스 클래스
             ...options
         };
@@ -2486,13 +2548,17 @@ class ContentFilter {
         const self = this;
         
         // 필터 버튼과 정렬 버튼 클릭 이벤트 처리
-        $(`${this.options.filterButtonClass}, ${this.options.sortButtonClass}`).on('click', function(e) {
+        $(`${this.options.filterButtonClass}, ${this.options.sortButtonClass}, ${this.options.interestButtonClass}`).on('click', function(e) {
             const isFilterBtn = $(this).hasClass('filter_btn');
-            
+            const isInterestBtn = $(this).hasClass('interest_btn');
             // 버튼 타입에 따른 active 클래스 처리
             if(isFilterBtn) {
                 // 필터 버튼인 경우
                 $(self.options.filterButtonClass).removeClass('active');
+                $(this).addClass('active');
+            } else if(isInterestBtn) {
+                // 원스톱진단 버튼인 경우
+                $(self.options.interestButtonClass).removeClass('active');
                 $(this).addClass('active');
             } else {
                 // 정렬 버튼인 경우
@@ -2525,3 +2591,4 @@ $(document).ready(function() {
     });
     */
 });
+

@@ -1,0 +1,154 @@
+// 하단 플로팅 배너
+.v_signalStreng.globalStock .signalpop.event2024_payment {
+	.box  {
+		background: #fff url('/img/signalpop_sdwbg.png') repeat-x left bottom;
+		background-size: contain;
+	}
+	
+
+	.content {
+		max-width: 540px;		
+		margin: 0 auto;		
+		border-top-left-radius: 20px;
+		border-top-right-radius: 20px;
+		padding-top: 30px;
+
+		.info_txt {
+			background: none;
+			padding-top: 16px;
+			padding-bottom: 16px;
+			p.txt01 {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				width: 100%;
+				color: #333;
+				text-align: center;
+				font-family: Pretendard;
+				font-size: 24px;
+				font-style: normal;
+				font-weight: 700;
+				line-height: normal;
+			}
+
+			p.txt02 {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				width: 100%;
+				margin-top: 8px;
+				color: #6A727B;
+				text-align: center;
+				font-family: Pretendard;
+				font-size: 17px;
+				font-style: normal;
+				font-weight: 600;
+				line-height: normal;
+			}
+		}
+
+		.img_area {			
+			// max-width: 400px;
+			max-width: 290px;
+			margin: 0 auto;
+			.img_banner {
+				display: block;
+				width: 100%;
+				height: 100%;
+			}
+		}
+
+		.btn_area {
+			padding-bottom: 35px;
+			text-align: center;
+
+			.btn {
+				display: inline-block;
+				margin: 16px auto 0;
+				width: calc(100% - 50px);
+				padding: 15px 15px;
+				box-sizing: border-box;
+				border: none;
+				border-radius: 8px;
+				background-color: #4168F6;
+				font-size: 1.125rem;
+				line-height: 1.19;
+				text-align: center;
+				color: #fff;
+				font-weight: bold;
+
+				b {
+					color: #f0cc09;
+				}
+			}
+		}
+	}
+
+	.ftr {
+		height: auto;
+		background-color: #fff;
+		margin-top: 0;
+		border-radius: 0;
+
+
+		.btn_close {
+			cursor: pointer;
+			position: absolute;
+			display: inline-block;
+			padding: 4px;
+			width: 17px;
+			height: 17px;
+			right: 14px;
+			top: 14px;
+			font-size: 0;
+		}
+
+		.btn_close::before,
+		.btn_close::after {
+			content: "";
+			position: absolute;
+			right: 15px;
+			top: 0;
+			height: 22px;
+			width: 2px;
+			background-color: #333;
+		}
+
+		.btn_close::before {
+			transform: rotate(45deg);
+		}
+
+		.btn_close::after {
+			transform: rotate(-45deg);
+		}
+	}
+}
+
+
+.v_signalStreng.globalStock .free_2weeks .signalpop.event2024_payment {
+	// .content {
+	// 	background: #fff url('/img/signalpop_sdwbg.png') repeat-x left bottom;
+	// 	background-size: contain;
+	// 	border-top-left-radius: 20px;
+	// 	border-top-right-radius: 20px;
+	// 	padding-top: 30px;
+	// }
+
+	
+}
+
+// 2024년 신년이벤트
+.v_signalStreng.globalStock .event2024_payment_sub {
+	a {
+		display: inline-block;
+		width: 100%;
+		height: 100%;
+
+		img {
+			display: inline-block;
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+}

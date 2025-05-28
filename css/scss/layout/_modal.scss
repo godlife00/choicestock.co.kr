@@ -1579,10 +1579,11 @@
 		}
 	}
 
-	// 툴팁 - 지금살까, 종목검색 스마트 스코어, 마켓스코어 공포 지수 툴팁
+	// 툴팁 - 지금살까, 종목검색 스마트 스코어, 마켓스코어 공포 지수, 매매신호 지금살까? 툴팁
 	&.tooltip_pop03,
 	&.tooltip_pop04,
-	&.score_pop01 {
+	&.score_pop01,
+	&.tooltip_pop01 {
 		top: 15%;
 
 		.pop_con {
@@ -1617,9 +1618,22 @@
 					height: 2px;
 				}
 			}
+			.guide_txt {				
+				font-size: 0.75rem;
+				line-height: 1.3;
+				font-weight: 400;
+				color: #969ea7;
+				width: 100%;				
+				margin-top: 16px;
+				line-height: 1.42;
+				box-sizing: border-box;
+				word-break: break-all;
+				word-wrap: break-word;
+			}
 		}
 	}
-	&.score_pop01 {		
+	&.score_pop01,
+	&.tooltip_pop01 {		
 		.pop_header .pop_title {
 			justify-content: flex-start;
 		}
@@ -1631,6 +1645,11 @@
 				padding-bottom: 12px;
 				word-wrap: break-word;
 				word-break: break-all;
+				b {
+					color: #000;			
+					font-size: 0.875rem;	
+					font-weight: 700;
+				}
 			}
 
 			.txt {
