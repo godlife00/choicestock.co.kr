@@ -1760,7 +1760,7 @@ table.tableRanking td {
 
 // 메인 상단 모닝브리핑, 종목추천 3개
 .main_top_bg {	
-	padding: 0 20px 40px;
+	padding: 0 20px 37px;
 	box-sizing: border-box;
 	// background: #FFF;
 	background: linear-gradient(180deg, #FFF 9.41%, var(--Background-primary-light-background, #F1F4F6) 40.49%);
@@ -1777,7 +1777,7 @@ table.tableRanking td {
 	.briefing_recom {
 		margin: 0 !important;
 		padding: 0 16px !important;						
-		height: auto !important;
+		// height: auto !important;
 		background: #FFF;		
 		border-bottom: 1px solid var(--Border-secondary-border, #F1F4F6);		
 	}
@@ -1857,6 +1857,20 @@ table.tableRanking td {
 	background-color: #E57828;
 	line-height: 18px;
 	vertical-align: middle;
+}
+
+.globalStock .main_mid.briefing_recom .mainbriefingSwiper .txt span.note_issue,
+.globalStock .main_mid.briefing_recom .mainbriefingSwiper .txt span.note_recom {
+	display: inline-block;			
+	color: var(--Font-teriary-title, #4E5866);		
+	font-family: var(--Body, Pretendard);
+	font-size: var(--Size-md-15, 15px);
+	font-style: normal;
+	font-weight: var(--Weight-400, 400);
+	line-height: var(--Line-height-xl-01, 24px); /* 160% */
+	letter-spacing: var(--Tracking-md, -0.3px);
+	vertical-align: sub;
+	margin-right: 8px;
 }
 
 .globalStock .main_mid.briefing_recom .mainbriefingSwiper .txt span.note_issue,
@@ -2314,15 +2328,19 @@ table.tableRanking td {
 				width: 100%;
 
 				.up,
-				.down {
+				.down,
+				.same {
 					display: inline-block;
 					margin-right: 3px;
 					// width: 0;
 					// height: 0;
 					// border-left: 4px solid transparent;
-					// border-right: 4px solid transparent;					
+					// border-right: 4px solid transparent;			
+					.same {
+						display: none;
+					}		
 				}
-
+				
 				// .up {
 				// 	border-bottom: 6px solid #F2333A;
 				// 	position: relative;
@@ -2393,7 +2411,7 @@ table.tableRanking td {
     justify-content: center;
 	gap: 4px 16px;
 	margin-top: 20px;
-	padding: 25px 6px;
+	padding: 17px 6px 0;
 	width: 100%;	
 	box-sizing: border-box;
 	border-radius: var(--Spacing-s-06, 16px);
@@ -2455,50 +2473,82 @@ table.tableRanking td {
 }
 
 // 메인 상단 이벤트 배너 
-.globalStock .event2025_banner {
-	// margin: 30px 16px;
-	padding: 24px 0;
+.globalStock .event2025_banner {	
+	display: flex;
+	align-items: center;
+	gap: 4px 12px;
+	padding: 23px 32px;
 	overflow: hidden;
 	border-radius: 16px;
 	box-sizing: border-box;
-	background-color: #404FC3;
+	background-color: #DBE5FF;
 	width: 100%;
 
-	text-align: center;
-
-	.link_banner {
+	.img {
 		position: relative;
-		text-align: left;
-		display: inline-block;
-		margin: 0 auto;
-		padding-left: 45px;
-		box-sizing: border-box;
-		color: #FFF;
-		font-size: 15px;
-		font-weight: 700;
-		line-height: normal;
+		display: inline-flex;
+		overflow: hidden;
+		border-radius: 12px;
+		box-shadow: 0px 0px 15px 0px rgba(96, 140, 250, 0.30);
+		background-color: #fff;
+		width: 56px;
+		height: 56px;
+	}
 
-		&::before {
-			content: '';
-			position: absolute;
-			left: -30px;
-			top: -17px;
+	.banner_bg {
+		content: '';
+		display: inline-block;			
+		position: absolute;
+		right: 24px;
+		top: 50%;
+		transform: translateY(-50%);		
+		&.app_and {
+			top: calc(50% - 6px);
 			width: 60px;
 			height: 60px;
 			background: url('/img/banner/new_app.png') no-repeat 0 0;
-			background-size: auto calc(120px / 2);
+			background-size: auto calc(120px / 2);			
 		}
+		&.note {
+			top: calc(50% - 6px);
+			width: 83px;
+			height: 80px;		
+			background: url('/img/banner/icon_noteman.png') no-repeat 0 0;
+			background-size: contain;			
+		}
+	}
 
+
+	.link_banner {
+		position: relative;
+		width: 100%;
+		box-sizing: border-box;
+		text-align: left;
+		display: inline-block;		
+		box-sizing: border-box;
+		color: var(--Font-secondary-title, #24282C);
+		font-family: var(--Title, Pretendard);
+		font-size: var(--Size-md-16, 16px);
+		font-style: normal;
+		font-weight: var(--Weight-600, 600);
+		line-height: var(--Line-height-md, 22px); /* 137.5% */
+		letter-spacing: var(--Tracking-md, -0.3px);
+
+		
 		b {
-			color: #fff;
+			color: var(--Font-secondary-title, #24282C);			
+			font-weight: var(--Weight-600, 600);			
 		}
 
 		span {
 			display: block;
-			color: rgba(255, 255, 255, 0.70);
-			font-size: 13px;
-			font-weight: 500;
 			padding-bottom: 4px;
+			color: var(--Gray-gray600, #6B7684);
+			font-family: Pretendard;
+			font-size: var(--Size-xs-13, 13px);
+			font-style: normal;
+			font-weight: 500;
+			line-height: normal;
 		}
 	}
 
@@ -2531,7 +2581,7 @@ table.tableRanking td {
 
 /* 메인 - 상단 배너 */
 .globalStock .main_mid.mainTop_banner {
-	margin-top: 0;		
+	margin: 20px 20px 0;			
 	.swipe_banner {
 		margin: 0;		
 		.banner {
