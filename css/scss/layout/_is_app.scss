@@ -1,0 +1,7 @@
+// 앱 환경에서 body.is-app 로 적용되는 스타일
+body.is-app {    
+    .chart_capture {
+        display: none;
+        opacity: 0;
+    }
+}

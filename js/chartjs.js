@@ -8394,10 +8394,41 @@ $(document).ready(function () {
 
     // 스마트스코어 팝업 과거점수 표시 - 선차트
     function createScoreBoxChart(containerId, seriesData) {
+
+        // 마지막 데이터의 x값과 tickPositions 배열 구하기
+        let lastX = null;
+        let tickPositions = [];
+        if (seriesData && seriesData.length > 0 && seriesData[0].data && seriesData[0].data.length > 0) {
+            const dataArr = seriesData[0].data;
+            lastX = dataArr[dataArr.length - 1][0];
+            
+            // 화면 너비에 따라 표시할 데이터 포인트 수 조절
+            const screenWidth = window.innerWidth;
+            let pointCount;
+            
+            if (screenWidth <= 768) { // 모바일
+                pointCount = 5;
+            } else if (screenWidth <= 1024) { // 태블릿
+                pointCount = 8;
+            } else { // 데스크톱
+                pointCount = 10;
+            }
+            
+            const interval = Math.ceil(dataArr.length / pointCount);
+            for (let i = 0; i < dataArr.length; i += interval) {
+                tickPositions.push(dataArr[i][0]);
+            }
+            
+            // 마지막 값이 없으면 추가
+            if (tickPositions[tickPositions.length - 1] !== lastX) {
+                tickPositions.push(lastX);
+            }
+        }
+
         return Highcharts.chart(containerId, {
             chart: {
                 type: 'area',
-                margin: [10, 10, 30, 20],
+                margin: [10, 20, 30, 20],
                 backgroundColor: 'transparent',
             },
             title: { text: '' },
@@ -8438,6 +8469,8 @@ $(document).ready(function () {
 
             xAxis: {
                 type: 'datetime',
+                tickPositions: tickPositions, // 데이터의 x값만 tick으로 사용
+                max: lastX,
                 showFirstLabel: true,
                 showLastLabel: true,
                 startOnTick: false,
@@ -8446,24 +8479,26 @@ $(document).ready(function () {
                 gridLineWidth: 0,
                 minPadding: 0,
                 maxPadding: 0,
-                lineColor: '#E0E3E7',                
+                lineColor: '#E0E3E7',
                 labels: {
                     style: {
                         color: '#8C98A7',
                         fontSize: '12px',
                     },
                     formatter: function () {
-                        var date = new Date(this.value);
-                        date.setMonth(date.getMonth() - 1);
-                        return Highcharts.dateFormat('%y.%m', date);
+                        if (lastX && this.value === lastX) {
+                            return Highcharts.dateFormat('%y.%m', this.value);
+                        }
+                        return Highcharts.dateFormat('%y.%m', this.value);
                     },
-                    align: 'center', // 라벨 정렬 방식을 중앙으로 설정
-                    reserveSpace: true, // 라벨을 위한 공간 확보
-                    distance: 25, // 축과 라벨 사이의 거리를 고정값으로 설정
-                    overflow: 'justify', // 라벨이 겹치지 않도록 자동 조정
-                    x: -24,
+                    align: 'center',        // x축 라벨의 수평 정렬 방식 (center: 가운데 정렬)
+                    reserveSpace: true,     // 라벨을 위한 공간을 미리 확보 (true: 공간 확보)
+                    distance: 25,           // x축 라인으로부터 라벨까지의 거리 (픽셀 단위)
+                    overflow: 'allow',      // 라벨이 너무 길 때 처리 방식 (allow: 말줄임 없이 전체 표시)
+                    // x: -24,                 // 라벨의 x축 위치 조정값 (음수: 왼쪽으로 이동)                        
                 }
             },
+            
             yAxis: {
                 title: { text: '' },
                 gridLineWidth: 1,
