@@ -8113,7 +8113,7 @@ $(document).ready(function () {
                 plotBackgroundColor: '#F7F8FA',
                 spacingLeft: 10,
                 spacingRight: 10,
-                marginRight: 25, // 반응형 여백을 위해 퍼센트로 설정
+                marginRight: 25, // 반응형 여백을 위해 퍼센트로 설정                
                 events: {
                     load: function() {
                         // 차트 로드 시 리사이즈 이벤트 리스너 등록
@@ -8214,25 +8214,34 @@ $(document).ready(function () {
                 borderRadius: 32,
                 borderColor: '#608CFA',
                 padding: 14,
-                xDateFormat: '%Y.%m/%d',
-                positioner: function(width, height, point) {
-                    // 툴팁이 y축 라벨과 겹치지 않도록 위치 조정
+                xDateFormat: '%Y.%m/%d',                 
+                
+                positioner: function (labelWidth, labelHeight, point) {
+                    // 차트 영역 정보
                     const chart = this.chart;
-                    const plotLeft = chart.plotLeft;
-                    const plotWidth = chart.plotWidth;
-                    
-                    // 툴팁의 x 위치를 point.plotX 기준으로 계산
-                    let x = point.plotX + plotLeft - (width / 2);
-                    
-                    // 툴팁이 차트 영역을 벗어나지 않도록 조정
-                    if (x < plotLeft) x = plotLeft;
-                    if (x + width > plotLeft + plotWidth) x = plotLeft + plotWidth - width;
-                    
-                    return {
-                        x: x,
-                        y: 15 // 차트 상단에 고정
-                    };
+                    let x = point.plotX + chart.plotLeft;
+                    let y = point.plotY + chart.plotTop - labelHeight - 10;
+            
+                    // 오른쪽 경계 체크 (툴팁이 차트 오른쪽을 넘지 않게)
+                    if (x + labelWidth > chart.plotLeft + chart.plotWidth) {
+                        x = chart.plotLeft + chart.plotWidth - labelWidth - 10;
+                    }
+                    // 왼쪽 경계 체크
+                    if (x < chart.plotLeft) {
+                        x = chart.plotLeft + 10;
+                    }
+                    // 위쪽 경계 체크 (툴팁이 차트 위를 넘지 않게)
+                    if (y < chart.plotTop) {
+                        y = point.plotY + chart.plotTop + 10;
+                    }
+                    // 아래쪽 경계 체크
+                    if (y + labelHeight > chart.plotTop + chart.plotHeight) {
+                        y = chart.plotTop + chart.plotHeight - labelHeight - 10;
+                    }
+            
+                    return { x, y };
                 },
+                
                 style: {
                     pointerEvents: 'auto',
                     zIndex: 99999 // z-index를 높게 설정해 y축 위에 올라오도록 함
@@ -8243,7 +8252,28 @@ $(document).ready(function () {
                     var formattedDate = Highcharts.dateFormat('%Y.%m/%d', date);
                     var s = '<span style="display: block;margin-bottom: 4px; font-size:12px; color:#4E5866; font-weight:500;">' + formattedDate + '</span>';
                     this.points.forEach(function (point) {
-                        s += '<p style="font-size:12px; color:#4E5866; font-weight:500;">' + point.series.name + ': ' + point.y + '</p>';
+                        let label = '';
+                        let color = '';
+                        if (point.y >= 75) {
+                            label = '탐욕';
+                            color = '#00A469';
+                        } else if (point.y >= 56) {
+                            label = '과욕';
+                            color = '#EFC31A';
+                        } else if (point.y >= 44) {
+                            label = '보통';
+                            color = '#F4A031';
+                        } else if (point.y > 25) {
+                            label = '불안';
+                            color = '#E9835B';
+                        } else {
+                            label = '공포';
+                            color = '#F03E4C';
+                        }
+                        s += `<p style="font-size:12px; color:#4E5866; font-weight:500;">
+                                ${point.series.name}: ${point.y} 
+                                <span style="color:${color}; font-weight:700;">(${label})</span>
+                            </p>`;
                     });
                     return s;
                 }
@@ -8290,35 +8320,35 @@ $(document).ready(function () {
                 title: {
                     text: ''
                 },
-                gridLineWidth: 1,
+                gridLineWidth: 0,
                 gridLineDashStyle: 'Dash',
                 showFirstLabel: false,
                 showLastLabel: true,
                 opposite: true,
-                minPadding: 0.1,
-                maxPadding: 0.1,
+                minPadding: 0.3,
+                maxPadding: 0.3,                
                 labels: {
                     useHTML: true,
                     x: 10,
-                    y: 20,
+                    y: 30,
                     formatter: function () {
                         let icon = '';
                         let label = '';
                         let color = '';
 
-                        if (this.value > 80) {
+                        if (this.value > 77) {
                             icon = '<img src="../img/icon_extreme.svg" width="16" height="16" />';
                             label = '탐욕';
                             color = '#00A469';
-                        } else if (this.value > 60) {
+                        } else if (this.value > 61) {
                             icon = '<img src="../img/icon_greed.svg" width="16" height="16" />';
                             label = '과욕';
                             color = '#EFC31A';
-                        } else if (this.value > 40) {
+                        } else if (this.value > 45) {
                             icon = '<img src="../img/icon_normal.svg" width="16" height="16" />';
                             label = '보통';
                             color = '#F4A031';
-                        } else if (this.value > 20) {
+                        } else if (this.value > 23) {
                             icon = '<img src="../img/icon_anxiety.svg" width="16" height="16" />';
                             label = '불안';
                             color = '#E9835B';
@@ -8336,9 +8366,15 @@ $(document).ready(function () {
                         `;
                     }
                 },
-                tickPositions: [0, 20, 40, 60, 80, 100],
+                tickPositions: [0, 23, 45, 61, 77, 100], // 표시할 라벨 위치 조정
                 min: 0,
-                max: 100
+                max: 100,
+                plotLines: [ // 구간 별 표시할 라인 추가
+                    { value: 25, color: '#E9835B', width: 1, dashStyle: 'Dash' },
+                    { value: 44, color: '#F4A031', width: 1, dashStyle: 'Dash' },
+                    { value: 56, color: '#EFC31A', width: 1, dashStyle: 'Dash' },
+                    { value: 75, color: '#00A469', width: 1, dashStyle: 'Dash' }
+                ],
             },
 
             plotOptions: {
@@ -8394,41 +8430,10 @@ $(document).ready(function () {
 
     // 스마트스코어 팝업 과거점수 표시 - 선차트
     function createScoreBoxChart(containerId, seriesData) {
-
-        // 마지막 데이터의 x값과 tickPositions 배열 구하기
-        let lastX = null;
-        let tickPositions = [];
-        if (seriesData && seriesData.length > 0 && seriesData[0].data && seriesData[0].data.length > 0) {
-            const dataArr = seriesData[0].data;
-            lastX = dataArr[dataArr.length - 1][0];
-            
-            // 화면 너비에 따라 표시할 데이터 포인트 수 조절
-            const screenWidth = window.innerWidth;
-            let pointCount;
-            
-            if (screenWidth <= 768) { // 모바일
-                pointCount = 5;
-            } else if (screenWidth <= 1024) { // 태블릿
-                pointCount = 8;
-            } else { // 데스크톱
-                pointCount = 10;
-            }
-            
-            const interval = Math.ceil(dataArr.length / pointCount);
-            for (let i = 0; i < dataArr.length; i += interval) {
-                tickPositions.push(dataArr[i][0]);
-            }
-            
-            // 마지막 값이 없으면 추가
-            if (tickPositions[tickPositions.length - 1] !== lastX) {
-                tickPositions.push(lastX);
-            }
-        }
-
         return Highcharts.chart(containerId, {
             chart: {
                 type: 'area',
-                margin: [10, 20, 30, 20],
+                margin: [10, 10, 30, 20],
                 backgroundColor: 'transparent',
             },
             title: { text: '' },
@@ -8469,36 +8474,32 @@ $(document).ready(function () {
 
             xAxis: {
                 type: 'datetime',
-                tickPositions: tickPositions, // 데이터의 x값만 tick으로 사용
-                max: lastX,
-                showFirstLabel: true,
-                showLastLabel: true,
-                startOnTick: false,
-                endOnTick: true,
-                tickWidth: 0,
-                gridLineWidth: 0,
-                minPadding: 0,
-                maxPadding: 0,
-                lineColor: '#E0E3E7',
+                showFirstLabel: true,    // 첫 번째 라벨 표시 여부
+                showLastLabel: true,     // 마지막 라벨 표시 여부
+                startOnTick: false,      // 시작점에서 눈금 표시 여부
+                endOnTick: false,         // 끝점에서 눈금 표시 여부
+                tickWidth: 0,            // 눈금 선의 너비
+                gridLineWidth: 0,        // 그리드 선의 너비
+                minPadding: 0,           // 최소 여백
+                maxPadding: 0,           // 최대 여백
+                lineColor: '#E0E3E7',                
                 labels: {
                     style: {
                         color: '#8C98A7',
                         fontSize: '12px',
                     },
                     formatter: function () {
-                        if (lastX && this.value === lastX) {
-                            return Highcharts.dateFormat('%y.%m', this.value);
-                        }
-                        return Highcharts.dateFormat('%y.%m', this.value);
+                        var date = new Date(this.value);
+                        date.setMonth(date.getMonth() - 1);
+                        return Highcharts.dateFormat('%y.%m', date);
                     },
-                    align: 'center',        // x축 라벨의 수평 정렬 방식 (center: 가운데 정렬)
-                    reserveSpace: true,     // 라벨을 위한 공간을 미리 확보 (true: 공간 확보)
-                    distance: 25,           // x축 라인으로부터 라벨까지의 거리 (픽셀 단위)
-                    overflow: 'allow',      // 라벨이 너무 길 때 처리 방식 (allow: 말줄임 없이 전체 표시)
-                    // x: -24,                 // 라벨의 x축 위치 조정값 (음수: 왼쪽으로 이동)                        
+                    align: 'center', // 라벨 정렬 방식을 중앙으로 설정
+                    reserveSpace: true, // 라벨을 위한 공간 확보
+                    distance: 25, // 축과 라벨 사이의 거리를 고정값으로 설정
+                    overflow: 'justify', // 라벨이 겹치지 않도록 자동 조정
+                    x: -24,
                 }
             },
-            
             yAxis: {
                 title: { text: '' },
                 gridLineWidth: 1,
