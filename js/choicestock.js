@@ -1069,6 +1069,24 @@ $(document).ready(function () {
         });
     };
 
+    if ($('.swipe_banner_btm').length) {  
+        var slideCount = document.querySelectorAll('.swipe_banner_btm .swiper-slide').length;
+        var swiper = new Swiper(".swipe_banner_btm", {
+            slidesPerView: 1, // 한 번에 보이는 슬라이드 수를 1로 설정
+            spaceBetween: 16,
+            // 슬라이드가 두 개 이상일 때만 자동재생
+            loop: slideCount > 1, // 슬라이드가 2개 이상일 때만 loop 설정
+            autoplay: slideCount > 1 ? {
+                delay: 3000,
+                disableOnInteraction: false,
+            } : false,
+            pagination: slideCount > 1 ? {
+                el: ".swiper-pagination",
+                type: "fraction",
+            } : false,
+        });
+    };
+
     // 필터 스와이퍼 초기화
     const filterSwiper = new Swiper('.filter-swiper', {
         slidesPerView: 'auto',

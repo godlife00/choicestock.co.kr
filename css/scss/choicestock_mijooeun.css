@@ -37154,19 +37154,19 @@ body.v_signalStreng {
   height: 100%;
 }
 
-.swipe_banner, .swipe_bannertemp {
+.swipe_banner, .swipe_bannertemp, .swipe_banner_btm {
   position: relative;
   margin: 20px 16px 0;
 }
-.swipe_banner .swiper-slide, .swipe_bannertemp .swiper-slide {
+.swipe_banner .swiper-slide, .swipe_bannertemp .swiper-slide, .swipe_banner_btm .swiper-slide {
   justify-content: flex-start;
   width: auto;
   visibility: hidden;
 }
-.swipe_banner .swiper-slide.swiper-slide-active, .swipe_bannertemp .swiper-slide.swiper-slide-active {
+.swipe_banner .swiper-slide.swiper-slide-active, .swipe_bannertemp .swiper-slide.swiper-slide-active, .swipe_banner_btm .swiper-slide.swiper-slide-active {
   visibility: visible;
 }
-.swipe_banner .swiper-pagination, .swipe_bannertemp .swiper-pagination {
+.swipe_banner .swiper-pagination, .swipe_bannertemp .swiper-pagination, .swipe_banner_btm .swiper-pagination {
   visibility: hidden;
   left: auto;
   right: 8px;
@@ -37185,10 +37185,10 @@ body.v_signalStreng {
   font-weight: 600;
   letter-spacing: 1px;
 }
-.swipe_banner .swiper-pagination.swiper-pagination-fraction, .swipe_bannertemp .swiper-pagination.swiper-pagination-fraction {
+.swipe_banner .swiper-pagination.swiper-pagination-fraction, .swipe_bannertemp .swiper-pagination.swiper-pagination-fraction, .swipe_banner_btm .swiper-pagination.swiper-pagination-fraction {
   visibility: visible;
 }
-.swipe_banner .swiper-pagination span, .swipe_bannertemp .swiper-pagination span {
+.swipe_banner .swiper-pagination span, .swipe_bannertemp .swiper-pagination span, .swipe_banner_btm .swiper-pagination span {
   letter-spacing: 1px;
   color: #FFF;
   font-family: Pretendard;
@@ -37196,7 +37196,7 @@ body.v_signalStreng {
   font-weight: 600;
   line-height: normal;
 }
-.swipe_banner .banner, .swipe_bannertemp .banner {
+.swipe_banner .banner, .swipe_bannertemp .banner, .swipe_banner_btm .banner {
   display: flex;
   align-items: center;
   gap: 4px 12px;
@@ -37207,7 +37207,7 @@ body.v_signalStreng {
   border-radius: var(--Spacing-s-06, 16px);
   background: #ECEFFD;
 }
-.swipe_banner .banner .event_belt, .swipe_bannertemp .banner .event_belt {
+.swipe_banner .banner .event_belt, .swipe_bannertemp .banner .event_belt, .swipe_banner_btm .banner .event_belt {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -37225,17 +37225,17 @@ body.v_signalStreng {
   line-height: var(--Line-height-xs-13, 16px); /* 123.077% */
   letter-spacing: var(--Tracking-md, -0.3px);
 }
-.swipe_banner .banner .img, .swipe_bannertemp .banner .img {
+.swipe_banner .banner .img, .swipe_bannertemp .banner .img, .swipe_banner_btm .banner .img {
   position: relative;
   display: inline-flex;
   background-color: #fff;
   width: 48px;
   height: 48px;
 }
-.swipe_banner .banner .img.bg_trans, .swipe_bannertemp .banner .img.bg_trans {
+.swipe_banner .banner .img.bg_trans, .swipe_bannertemp .banner .img.bg_trans, .swipe_banner_btm .banner .img.bg_trans {
   background-color: transparent;
 }
-.swipe_banner .banner .img .event_belt, .swipe_bannertemp .banner .img .event_belt {
+.swipe_banner .banner .img .event_belt, .swipe_bannertemp .banner .img .event_belt, .swipe_banner_btm .banner .img .event_belt {
   position: absolute;
   left: -33px;
   top: -5px;
@@ -37249,13 +37249,13 @@ body.v_signalStreng {
   line-height: normal;
   transform: rotate(-30deg);
 }
-.swipe_banner .banner .txt_flx, .swipe_bannertemp .banner .txt_flx {
+.swipe_banner .banner .txt_flx, .swipe_bannertemp .banner .txt_flx, .swipe_banner_btm .banner .txt_flx {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   gap: 4px 4px;
 }
-.swipe_banner .banner .banner_text, .swipe_bannertemp .banner .banner_text {
+.swipe_banner .banner .banner_text, .swipe_bannertemp .banner .banner_text, .swipe_banner_btm .banner .banner_text {
   color: var(--Gray-gray600, #6B7684);
   font-family: Pretendard;
   font-size: 13px;
@@ -37264,7 +37264,7 @@ body.v_signalStreng {
   line-height: normal;
   letter-spacing: normal;
 }
-.swipe_banner .banner .banner_title, .swipe_bannertemp .banner .banner_title {
+.swipe_banner .banner .banner_title, .swipe_bannertemp .banner .banner_title, .swipe_banner_btm .banner .banner_title {
   color: var(--Gray-gray800, #24282C);
   font-family: Pretendard;
   font-size: 16px;
