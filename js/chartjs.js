@@ -8254,13 +8254,13 @@ $(document).ready(function () {
                     this.points.forEach(function (point) {
                         let label = '';
                         let color = '';
-                        if (point.y >= 75) {
+                        if (point.y > 75) {
                             label = '탐욕';
                             color = '#00A469';
-                        } else if (point.y >= 56) {
+                        } else if (point.y > 56) {
                             label = '과욕';
                             color = '#EFC31A';
-                        } else if (point.y >= 44) {
+                        } else if (point.y > 44) {
                             label = '보통';
                             color = '#F4A031';
                         } else if (point.y > 25) {
@@ -8272,7 +8272,7 @@ $(document).ready(function () {
                         }
                         s += `<p style="font-size:12px; color:#4E5866; font-weight:500;">
                                 ${point.series.name}: ${point.y} 
-                                <span style="color:${color}; font-weight:700;">(${label})</span>
+                                <span style="color:${color}; font-weight:700;"> ${label}</span>
                             </p>`;
                     });
                     return s;
@@ -8313,7 +8313,7 @@ $(document).ready(function () {
                     }
 
                     return positions;
-                }
+                },
             },
 
             yAxis: {
