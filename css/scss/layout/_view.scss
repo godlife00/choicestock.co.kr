@@ -1,0 +1,307 @@
+// 뷰 페이지 스타일 정의
+
+/* 관심종목 뷰 */
+#container.sub_interestView {
+
+
+	.view_con {
+		.top {
+			padding: 32px 20px 24px;
+			box-sizing: border-box;
+
+			.title {
+				color: var(--Font-secondary-title, #24282C);
+				font-family: var(--Title, Pretendard);
+				font-size: var(--Size-5xl, 30px);
+				font-style: normal;
+				font-weight: var(--Weight-600, 600);
+				line-height: var(--Line-height-4xl, 42px);
+				/* 140% */
+				letter-spacing: var(--Tracking-md, -0.3px);
+				word-break: break-all;
+				word-wrap: break-word;
+			}
+		}
+
+		.signal_guide {
+			display: flex;
+			justify-content: flex-end;
+			margin-bottom: 8px;
+			padding: 0 20px;
+			color: var(--Font-tertiary-caption, #8C98A7);
+			font-family: var(--Body, Pretendard);
+			font-size: var(--Size-xs-12, 12px);
+			font-style: normal;
+			font-weight: var(--Weight-400, 400);
+			line-height: var(--Line-height-xs-12, 14px);
+			/* 116.667% */
+			letter-spacing: var(--Tracking-md, -0.3px);
+		}
+
+		.gap16_box {
+			display: flex;
+			flex-direction: column;
+			gap: 16px 16px;
+			padding: 0 20px;
+
+			.interest_list {
+				display: flex;
+				flex-direction: column;
+				gap: 16px 16px;
+
+				.area {
+					&:has(.event) {
+						.stock_info {
+							border-radius: 16px 16px 0 0;
+						}
+					}
+
+					&:not(:has(.event)) {
+						.stock_info {
+							border-radius: 16px;
+						}
+					}
+				}
+
+				.stock_info {
+					display: flex;
+					flex-wrap: nowrap;
+					align-items: center;
+					justify-content: flex-start;
+					gap: 16px 8px;
+					width: 100%;
+					padding: 16px 16px;
+					box-sizing: border-box;
+					background: #F4F4F5;
+
+					.title_logo {
+						width: 45px;
+						display: flex;
+						align-items: center;
+						gap: 0 30px;
+
+						.logo {
+							display: inline-flex;
+							justify-content: center;
+							align-items: center;
+							width: 40px;
+							height: 40px;
+							border-radius: 50%;
+							background-color: #fff;
+							background-size: 28px 28px;
+							background-repeat: no-repeat;
+							background-position: center center;
+
+							img {
+								display: inline-block;
+								width: 80%;
+								height: 80%;
+							}
+						}
+					}
+
+					.detail {
+						display: flex;
+						flex-direction: column;
+						justify-content: space-between;
+						align-items: flex-start;
+						gap: 5px 5px;
+						width: calc(100% - 48px);
+
+						.title {
+							color: #333;
+							font-size: 15px;
+							font-weight: 500;
+							display: inline-block;
+							text-align: left;
+							width: 480px;
+
+							@media (max-width: 374px) {
+								max-width: 150px;
+							}
+
+							@media (min-width: 375px) and (max-width: 767px) {
+								max-width: 160px;
+							}
+
+							@media (min-width: 768px) and (max-width: 1023px) {
+								max-width: 480px;
+							}
+
+							overflow: hidden;
+							text-overflow: ellipsis;
+							white-space: nowrap;
+						}
+					}
+
+					.detail_num {
+						width: 100%;
+						display: flex;
+						align-items: baseline;
+						justify-content: flex-start;
+						gap: 4px 4px;
+
+						.num {
+							color: #333;
+							font-size: 15px;
+							font-weight: 700;
+
+							span {
+								color: #333;
+								font-size: 15px;
+								font-weight: 700;
+							}
+						}
+
+						.per {
+							color: #363F4B;
+							font-size: 15px;
+							font-weight: 500;
+
+							.increase {
+								color: #FF2929;
+
+								b {
+									color: #FF2929;
+								}
+							}
+
+							.decrease {
+								color: #26ABFF;
+
+								b {
+									color: #26ABFF;
+								}
+							}
+
+							.same {
+								color: #333;
+
+								b {
+									color: #333;
+								}
+							}
+						}
+					}
+
+					.data_opinion {
+						margin-left: auto;
+
+						.signal {
+							display: flex;
+							justify-content: center;
+							align-items: center;
+							padding: 5px 10px;
+							border-radius: 16px;
+							width: 20px;
+							color: #FFF;
+							font-size: 13px;
+							font-weight: 500;
+
+							&.buy {
+								background-color: #FF4500;
+							}
+
+							&.sell {
+								background-color: #1E90FF;
+							}
+
+							&.hold {
+								background-color: #4DC589;
+							}
+
+							&.waitting {
+								background-color: #a1a1a1;
+							}
+
+							&.prm_lock {
+								min-width: 40px;
+								height: 23px;
+								box-sizing: border-box;
+								background-color: #C7CCD1;
+							}
+						}
+					}
+				}
+
+				.event {					
+					display: flex;
+					gap: 6px 12px;
+					padding: 12px 16px;
+					box-sizing: border-box;
+					border-radius: 0px 0px 16px 16px;
+					border-right: 1px solid var(--Border-primary-border, #E3E5E8);
+					border-bottom: 1px solid var(--Border-primary-border, #E3E5E8);
+					border-left: 1px solid var(--Border-primary-border, #E3E5E8);
+
+					.event_logo {
+						display: inline-flex;
+						align-items: center;
+						justify-content: center;
+						width: 40px;
+						height: 20px;
+						padding: 3.5px 6px;
+						box-sizing: border-box;
+						border-radius: 6px;
+						background: var(--Background-primary-light-background, #F1F4F6);
+						color: #4E5866;
+						font-family: Pretendard;
+						font-size: 11px;
+						font-style: normal;
+						font-weight: 600;
+						line-height: normal;
+						letter-spacing: -0.33px;
+					}
+
+					.event_list {
+						display: flex;						
+						flex-direction: column;
+						gap: 4px 4px;						
+						li {
+							display: flex;
+							align-items: center;	
+							gap: 4px 4px;						
+							color: var(--Font-secondary-body, #4E5866);
+							font-family: var(--Body, Pretendard);
+							font-size: var(--Size-sm, 14px);
+							font-style: normal;
+							font-weight: var(--Weight-400, 400);
+							line-height: var(--Line-height-lg, 21px);
+							letter-spacing: var(--Tracking-md, -0.3px);
+							&::before {
+								content: "";
+								display: inline-block;
+								width: 4px;
+								height: 4px;
+								background-color: var(--Gray-gray600, #6B7684);
+								border-radius: 100%;
+							}
+						}
+					}
+				}
+			}
+
+		}
+
+	}
+
+
+
+	.bdr_line {
+		margin-top: 40px;
+		border-top: 8px solid var(--Background-fill-background, #F7F8FA);
+	}
+
+	.app_download {
+		@include app_download;
+		width: calc(100% - 40px);
+		margin-bottom: 80px;
+	}
+
+	.swipe_banner,
+	.swipe_bannertemp,
+	.swipe_banner_btm {
+		margin: 0 auto;
+		width: 100%;
+	}
+}
