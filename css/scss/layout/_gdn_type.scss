@@ -229,62 +229,7 @@
             }
 
             .app_download {
-                max-width: 480px;
-                margin: 40px auto 0;                
-                padding: 32px 24px 28px;
-                box-sizing: border-box;
-                border-radius: var(--Radius-r-05, 24px);
-                background: var(--Blue-blue400, #608CFA);
-                .appdown_box {
-                    display: flex;
-                    gap: 8px;
-                    width: 100%;
-                    .app_box {
-                        width: 100%;
-                    }
-                }
-                .app_title {
-                    color: var(--Blue-blue100, #ECF0FF);
-                    font-family: var(--Body, Pretendard);
-                    font-size: var(--Size-md-15, 15px);
-                    font-style: normal;
-                    font-weight: var(--Weight-400, 400);
-                    line-height: normal;
-                    letter-spacing: var(--Tracking-md, -0.3px);
-                }
-                .app_sum {
-                    margin-top: 4px;
-                    color: #FFF;
-                    font-family: var(--Title, Pretendard);
-                    font-size: var(--Size-3xl, 22px);
-                    font-style: normal;
-                    font-weight: var(--Weight-600, 600);
-                    line-height: var(--Line-height-xl-02, 28px); /* 127.273% */
-                    letter-spacing: var(--Tracking-md, -0.3px);
-                }
-                .appdown_img {
-                    width: 72px;
-                    height: 72px;
-                    object-fit: contain;
-                }
-                .app_download_btn {
-                    display: flex;
-                    align-items: center;
-                    gap: 7px 7px;
-                    margin-top: 24px;
-                    a {
-                        display: inline-flex;
-                        align-items: center;                        
-                        img {
-                            display: inline-block;
-                            width: 100%;
-                            height: 100%;
-                            object-fit: contain;
-                        }
-                        
-                    }
-                }
-
+                @include app_download;
             }
 
             .review_box {
