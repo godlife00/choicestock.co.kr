@@ -47,17 +47,19 @@
 </head>
 
 <body class="v_signalStreng globalStock">
-    <div id="wrap">
-
+    <div id="wrap">        
+        
         <button class="popup_btn" data-popup="long_term_popup">9개월 이상 정기결제 long_term_popup</button>
+        <br>
         <button class="popup_btn" data-popup="short_term_popup">9개월 미만 정기결제 short_term_popup</button>
+        <br>
         <button class="popup_btn" data-popup="event1000_popup">첫 달 1000원 정기결제 event1000_popup</button>
 
         <!-- 로그인 class = sub_login-->
         <div class="modalBox">
 
             <!-- 정기결제 취소 > 9개월 이상 정기결제 > 해지 안내 팝업 -->
-            <div class="modal modal_popup long_term_popup" style="display: block;">
+            <div class="modal modal_popup long_term_popup">
                 <div class="pop_header">
                     <!-- <h1 class="pop_title">결제 취소</h1> -->
                     <span class="clse">
@@ -215,16 +217,41 @@
                 <!-- //pop_footer  -->
             </div>
             <!-- //정기결제 취소 > 첫 달 1000원 정기결제 > 해지 안내 팝업 -->
-
             
 
-            
-
-            <div class="blocker" style="display: block;"></div>
+            <div class="blocker"></div>
         </div>
 
+        <style>
+            .popup_btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 5px;
+            background-color: #2C295D;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+            width: 320px;
+            margin: 24px auto;
+            }
+
+            .popup_btn:hover {
+                background-color: #3d3a7d;
+            }            
+        </style>
+
         <script>
-            
+            $('.popup_btn').on('click', function() {
+                var popupId = $(this).data('popup');
+                $('.modal').hide().removeClass('slideUp');
+                $('.blocker').show();
+                $('.' + popupId).show().addClass('slideUp');
+            });
+        
         </script>
 
     </div>
