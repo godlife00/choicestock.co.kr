@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no" />
+    <title>초이스스탁</title>
+    <meta name="robots" content="데이터히어로 미국주식">
+    <meta name="description" content="투자를 쉽고 편리하게, 미국주식가이드, 종목분석, 종목토론, 데이터히어로">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="theme-color" content="#2C295D">
+    <!-- 오픈 그래프 -->
+    <meta property="og:title" content="데이터히어로 미국주식" />
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="투자를 쉽고 편리하게, 미국주식가이드, 종목분석, 종목토론, 데이터히어로">
+    <meta property="og:image" content="http://godlife.ivyro.net/test/img/choicestockus_thumb.png">
+    <meta property="og:image:width" content="410" />
+    <meta property="og:image:height" content="210" />
+    <meta property="og:url" content="http://us.itooza.com">
+    <!-- jquery-1.12 -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <!-- highcharts -->
+    <script src="../node_modules/highcharts/highstock.js"></script>
+    <script src="../node_modules/highcharts/highcharts-more.js"></script>
+    <script src="../node_modules/highcharts/modules/data.js"></script>
+    <script src="../node_modules/highcharts/modules/hollowcandlestick.js"></script>
+    <script src="../node_modules/highcharts/modules/no-data-to-display.js"></script>
+    <script src="../node_modules/highcharts/modules/treemap.js"></script>
+    <script src="../node_modules/highcharts/modules/exporting.js"></script>
+    <script src="../node_modules/highcharts/modules/export-data.js"></script>
+    <script src="../node_modules/highcharts/modules/accessibility.js"></script>
+    <script src="../js/chartjs.js"></script>
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="../css/scss/choicestock.css" />
+    <!-- js -->
+    <script src="../js/choicestock.js"></script>
+    <!-- 이 아래는 로컬에서만 사용되는 파일 -->
+    <script src="../js/local.js"></script>
+    <!-- 로컬에서만 사용되는 파일 종료  -->
+</head>
+
+<body class="v_signalStreng globalStock">
+    <div id="wrap">
+
+        <button class="popup_btn" data-popup="long_term_popup">9개월 이상 정기결제 long_term_popup</button>
+        <button class="popup_btn" data-popup="short_term_popup">9개월 미만 정기결제 short_term_popup</button>
+        <button class="popup_btn" data-popup="event1000_popup">첫 달 1000원 정기결제 event1000_popup</button>
+
+        <!-- 로그인 class = sub_login-->
+        <div class="modalBox">
+
+            <!-- 정기결제 취소 > 9개월 이상 정기결제 > 해지 안내 팝업 -->
+            <div class="modal modal_popup long_term_popup" style="display: block;">
+                <div class="pop_header">
+                    <!-- <h1 class="pop_title">결제 취소</h1> -->
+                    <span class="clse">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                            <path
+                                d="M18.7929 4.29314C19.1834 3.90261 19.8164 3.90261 20.207 4.29314C20.5974 4.68367 20.5975 5.31669 20.207 5.7072L13.414 12.5002L20.207 19.2931L20.2753 19.3693C20.5956 19.7621 20.573 20.3411 20.207 20.7072C19.8408 21.0733 19.2618 21.0959 18.8691 20.7756L18.7929 20.7072L11.9999 13.9142L5.20695 20.7072C4.81644 21.0977 4.18342 21.0977 3.79289 20.7072C3.40237 20.3167 3.40237 19.6837 3.79289 19.2931L10.5859 12.5002L3.79289 5.7072L3.72453 5.63103C3.40418 5.23825 3.42677 4.65925 3.79289 4.29314C4.15901 3.92704 4.73801 3.90443 5.13078 4.22478L5.20695 4.29314L11.9999 11.0861L18.7929 4.29314Z"
+                                fill="#24282C" />
+                        </svg>
+                    </span>
+                </div>
+                <div class="pop_con">                    
+                    <p class="title_txt align_c">고객님, <b>{##}일</b> 더 이용하시면<br><b>50% 평생 할인혜택</b>을<br>받으실 수 있어요!</p>
+                    <p class="txt align_c"><b>YYYY년 MM월 DD일</b> 부터 <b>연간 정기결제</b> 이용중</p>
+
+                    <div class="discount_banner">
+                        <div class="discount_info">
+                            <span class="discount_label">평생 할인</span>
+                            <span class="discount_rate">50%</span>
+                            <div class="price_info">
+                                <span class="original_price">396,000원 <span class="strike_line"><svg xmlns="http://www.w3.org/2000/svg" width="91" height="14" viewBox="0 0 91 14" fill="none">
+                                    <path d="M0 7.25H87.5M83 1.25L89 7.25L83 13.25" stroke="#FFD120" stroke-width="2"/>
+                                  </svg></span> </span>
+                                <span class="discounted_price">200,000원</span>
+                                <div class="monthly_price">월 16,700원!</div>
+                            </div>                            
+                            
+                        </div>
+                    </div>
+
+                    <ul class="guide_list">
+                        <li class="guide_txt"><i class="dot"></i> 서비스를 유지하시면, YYYY년 MM월 DD일부터<br>50% 평생 할인혜택이 자동 적용됩니다.</li>                        
+                    </ul>                    
+                </div>
+
+                <div class="pop_footer">
+                    <div class="btnArea payBtn">
+                        <a href="#" class="btn btn_save">서비스 유지하기</a>
+                        <a href="#" class="btn btn_cncl">해지하기</a>
+                    </div>
+                </div>
+                <!-- //pop_footer  -->
+            </div>
+            <!-- //정기결제 취소 > 정기결제 > 해지 안내 팝업 -->
+
+            <!-- 정기결제 취소 > 9개월 미만 정기결제 > 해지 안내 팝업 -->
+            <div class="modal modal_popup short_term_popup">
+                <div class="pop_header">
+                    <!-- <h1 class="pop_title">결제 취소</h1> -->
+                    <span class="clse">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                            <path
+                                d="M18.7929 4.29314C19.1834 3.90261 19.8164 3.90261 20.207 4.29314C20.5974 4.68367 20.5975 5.31669 20.207 5.7072L13.414 12.5002L20.207 19.2931L20.2753 19.3693C20.5956 19.7621 20.573 20.3411 20.207 20.7072C19.8408 21.0733 19.2618 21.0959 18.8691 20.7756L18.7929 20.7072L11.9999 13.9142L5.20695 20.7072C4.81644 21.0977 4.18342 21.0977 3.79289 20.7072C3.40237 20.3167 3.40237 19.6837 3.79289 19.2931L10.5859 12.5002L3.79289 5.7072L3.72453 5.63103C3.40418 5.23825 3.42677 4.65925 3.79289 4.29314C4.15901 3.92704 4.73801 3.90443 5.13078 4.22478L5.20695 4.29314L11.9999 11.0861L18.7929 4.29314Z"
+                                fill="#24282C" />
+                        </svg>
+                    </span>
+                </div>
+                <div class="pop_con">
+                    <div class="txt align_c">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="57" height="57" viewBox="0 0 57 57" fill="none">
+                            <path
+                                d="M28.4902 56.6194C43.9542 56.6194 56.4902 44.0833 56.4902 28.6194C56.4902 13.1554 43.9542 0.619385 28.4902 0.619385C13.0263 0.619385 0.490234 13.1554 0.490234 28.6194C0.490234 44.0833 13.0263 56.6194 28.4902 56.6194Z"
+                                fill="#FFD05D" />
+                            <path
+                                d="M23.3027 56.1372C24.9869 56.3743 26.724 56.5005 28.5 56.5005C30.2488 56.5005 31.9601 56.378 33.6201 56.1479C31.957 56.4559 30.2425 56.6196 28.4902 56.6196C26.7176 56.6196 24.9839 56.4522 23.3027 56.1372ZM28.4902 0.619629C43.9542 0.619629 56.4902 13.1557 56.4902 28.6196C56.4902 29.9437 56.3956 31.2459 56.2178 32.521C54.2886 22.3341 42.6153 14.4995 28.5 14.4995C14.3572 14.4996 2.66523 22.3646 0.770508 32.5806C0.587257 31.2865 0.490235 29.9643 0.490234 28.6196C0.490234 13.1558 13.0264 0.61984 28.4902 0.619629Z"
+                                fill="url(#paint0_linear_7353_4234)" />
+                            <path
+                                d="M21.9115 21.912C21.9115 23.7317 20.4375 25.2062 18.6174 25.2062C16.7972 25.2062 15.3232 23.7317 15.3232 21.912C15.3232 20.0923 16.7972 18.6179 18.6174 18.6179C20.4375 18.6179 21.9115 20.0923 21.9115 21.912Z"
+                                fill="#24282C" />
+                            <path
+                                d="M42.3353 21.912C42.3353 23.7317 40.8613 25.2062 39.0412 25.2062C37.221 25.2062 35.7471 23.7317 35.7471 21.912C35.7471 20.0923 37.221 18.6179 39.0412 18.6179C40.8613 18.6179 42.3353 20.0923 42.3353 21.912Z"
+                                fill="#24282C" />
+                            <path
+                                d="M19.8059 45.3C18.2071 45.3 16.9593 43.4521 17.3834 41.5795C18.7245 35.6538 23.1942 31.3 28.4998 31.3C33.8054 31.3 38.2751 35.6538 39.6162 41.5795C40.0403 43.4521 38.7925 45.3 37.1937 45.3H19.8039H19.8059Z"
+                                fill="#F03E4C" />
+                            <path
+                                d="M28.4995 31.2996C33.8051 31.2996 38.2746 35.6541 39.6157 41.5798C39.7869 42.336 39.685 43.0876 39.3979 43.7156C36.4641 41.2121 32.6586 39.7001 28.4995 39.7C24.3405 39.7 20.5339 41.2112 17.6001 43.7146C17.3135 43.0869 17.2123 42.3354 17.3833 41.5798C18.7244 35.6542 23.1939 31.2996 28.4995 31.2996Z"
+                                fill="#5E4939" />
+                            <defs>
+                                <linearGradient id="paint0_linear_7353_4234" x1="28.4902" y1="0.619629" x2="28.4902"
+                                    y2="21.5" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#4FCCFF" />
+                                    <stop offset="1" stop-color="#FFD05D" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <p class="title_txt align_c">지금 해지하시면<br><b>{##}%할인 혜택</b>이 사라져요!</p>
+                    <p class="txt align_c">고객님은 <b>YYYY년 MM월 DD일</b>부터<br>프리미엄 서비스를 이용하고 계세요.</p>
+                    <p class="txt align_c"><u>서비스를 해지하시면 할인 혜택은 종료</u>되며<br>이후 재결제 시, 정상가로 결제됩니다.</p>
+                </div>
+
+                <div class="pop_footer">
+                    <div class="btnArea payBtn">
+                        <a href="#" class="btn btn_save">서비스 유지하기</a>
+                        <a href="#" class="btn btn_cncl">해지하기</a>
+                    </div>
+                </div>
+                <!-- //pop_footer  -->
+            </div>
+            <!-- //정기결제 취소 > 정기결제 > 해지 안내 팝업 -->
+
+            <!-- 정기결제 취소 > 첫 달 1000원 정기결제 > 해지 안내 팝업 -->
+            <div class="modal modal_popup event1000_popup">
+                <div class="pop_header">
+                    <!-- <h1 class="pop_title">결제 취소</h1> -->
+                    <span class="clse">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                            <path
+                                d="M18.7929 4.29314C19.1834 3.90261 19.8164 3.90261 20.207 4.29314C20.5974 4.68367 20.5975 5.31669 20.207 5.7072L13.414 12.5002L20.207 19.2931L20.2753 19.3693C20.5956 19.7621 20.573 20.3411 20.207 20.7072C19.8408 21.0733 19.2618 21.0959 18.8691 20.7756L18.7929 20.7072L11.9999 13.9142L5.20695 20.7072C4.81644 21.0977 4.18342 21.0977 3.79289 20.7072C3.40237 20.3167 3.40237 19.6837 3.79289 19.2931L10.5859 12.5002L3.79289 5.7072L3.72453 5.63103C3.40418 5.23825 3.42677 4.65925 3.79289 4.29314C4.15901 3.92704 4.73801 3.90443 5.13078 4.22478L5.20695 4.29314L11.9999 11.0861L18.7929 4.29314Z"
+                                fill="#24282C" />
+                        </svg>
+                    </span>
+                </div>
+                <div class="pop_con">
+                    <div class="txt align_c">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="57" height="57" viewBox="0 0 57 57" fill="none">
+                            <path
+                                d="M28.4902 56.6194C43.9542 56.6194 56.4902 44.0833 56.4902 28.6194C56.4902 13.1554 43.9542 0.619385 28.4902 0.619385C13.0263 0.619385 0.490234 13.1554 0.490234 28.6194C0.490234 44.0833 13.0263 56.6194 28.4902 56.6194Z"
+                                fill="#FFD05D" />
+                            <path
+                                d="M23.3027 56.1372C24.9869 56.3743 26.724 56.5005 28.5 56.5005C30.2488 56.5005 31.9601 56.378 33.6201 56.1479C31.957 56.4559 30.2425 56.6196 28.4902 56.6196C26.7176 56.6196 24.9839 56.4522 23.3027 56.1372ZM28.4902 0.619629C43.9542 0.619629 56.4902 13.1557 56.4902 28.6196C56.4902 29.9437 56.3956 31.2459 56.2178 32.521C54.2886 22.3341 42.6153 14.4995 28.5 14.4995C14.3572 14.4996 2.66523 22.3646 0.770508 32.5806C0.587257 31.2865 0.490235 29.9643 0.490234 28.6196C0.490234 13.1558 13.0264 0.61984 28.4902 0.619629Z"
+                                fill="url(#paint0_linear_7353_4234)" />
+                            <path
+                                d="M21.9115 21.912C21.9115 23.7317 20.4375 25.2062 18.6174 25.2062C16.7972 25.2062 15.3232 23.7317 15.3232 21.912C15.3232 20.0923 16.7972 18.6179 18.6174 18.6179C20.4375 18.6179 21.9115 20.0923 21.9115 21.912Z"
+                                fill="#24282C" />
+                            <path
+                                d="M42.3353 21.912C42.3353 23.7317 40.8613 25.2062 39.0412 25.2062C37.221 25.2062 35.7471 23.7317 35.7471 21.912C35.7471 20.0923 37.221 18.6179 39.0412 18.6179C40.8613 18.6179 42.3353 20.0923 42.3353 21.912Z"
+                                fill="#24282C" />
+                            <path
+                                d="M19.8059 45.3C18.2071 45.3 16.9593 43.4521 17.3834 41.5795C18.7245 35.6538 23.1942 31.3 28.4998 31.3C33.8054 31.3 38.2751 35.6538 39.6162 41.5795C40.0403 43.4521 38.7925 45.3 37.1937 45.3H19.8039H19.8059Z"
+                                fill="#F03E4C" />
+                            <path
+                                d="M28.4995 31.2996C33.8051 31.2996 38.2746 35.6541 39.6157 41.5798C39.7869 42.336 39.685 43.0876 39.3979 43.7156C36.4641 41.2121 32.6586 39.7001 28.4995 39.7C24.3405 39.7 20.5339 41.2112 17.6001 43.7146C17.3135 43.0869 17.2123 42.3354 17.3833 41.5798C18.7244 35.6542 23.1939 31.2996 28.4995 31.2996Z"
+                                fill="#5E4939" />
+                            <defs>
+                                <linearGradient id="paint0_linear_7353_4234" x1="28.4902" y1="0.619629" x2="28.4902"
+                                    y2="21.5" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#4FCCFF" />
+                                    <stop offset="1" stop-color="#FFD05D" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <p class="title_txt align_c">지금 해지하시면<br><b>첫 달 1,000원 혜택</b>이 사라져요!</p>                    
+                    <p class="txt align_c">고객님은 <b>YYYY년 MM월 DD일</b>부터<br>프리미엄 서비스를 이용하고 계세요.</p>
+                    <p class="txt align_c"><u>서비스를 해지하시면 첫 달 결제 혜택은 종료</u>되며<br>이후 재결제 시, 33,000원로 결제됩니다.</p>                                            
+                </div>
+
+                <div class="pop_footer">
+                    <div class="btnArea payBtn">
+                        <a href="#" class="btn btn_save">서비스 유지하기</a>
+                        <a href="#" class="btn btn_cncl">해지하기</a>
+                    </div>
+                </div>
+                <!-- //pop_footer  -->
+            </div>
+            <!-- //정기결제 취소 > 첫 달 1000원 정기결제 > 해지 안내 팝업 -->
+
+            
+
+            
+
+            <div class="blocker" style="display: block;"></div>
+        </div>
+
+        <script>
+            
+        </script>
+
+    </div>
+    <!-- //wrap -->
+    <!-- Modal popup -->
+    
+    <script>
+        
+
+    </script>
+</body>
+
+</html>
