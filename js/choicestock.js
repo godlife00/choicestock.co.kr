@@ -9,35 +9,48 @@ $(document).ready(function () {
         };
     }
 
-    // data-popup으로 모달 팝업 여는 스크립트
+    // 모달 팝업 관련 모듈
+    const ModalPopup = {
+        // 모달 열기
+        open: function(popupId) {
+            if (!popupId) {
+                console.warn('data-popup 속성이 없습니다.');
+                return;
+            }
+
+            const $targetPopup = $('.' + popupId);
+            if ($targetPopup.length === 0) {
+                console.warn('팝업을 찾을 수 없습니다: ' + popupId);
+                return;
+            }
+
+            $('html, body').css("overflow", "hidden");
+            $('.modal').hide();
+            $('.blocker').show();
+            $targetPopup.show().addClass('slideUp50');
+        },
+
+        // 모달 닫기
+        close: function() {
+            $('html, body').css("overflow", "");
+            $('.modal').hide();
+            $('.blocker').hide();
+            $('.modal').removeClass('slideUp50');
+            $('.modal').removeClass('slideUp');
+
+        }
+    };
+
+    // 모달 열기 이벤트 바인딩
     $('[data-popup]').on('click', function() {
-        var popupId = $(this).data('popup');
-        
-        // data-popup 속성이 없는 경우 처리
-        if (!popupId) {
-            console.warn('data-popup 속성이 없습니다.');
-            return;
-        }
+        const popupId = $(this).data('popup');
+        ModalPopup.open(popupId);
+    });
 
-        // 해당 팝업이 존재하는지 확인
-        var $targetPopup = $('.' + popupId);
-        if ($targetPopup.length === 0) {
-            console.warn('팝업을 찾을 수 없습니다: ' + popupId);
-            return;
-        }
-
-        // 바디 스크롤 제거
-        $('html, body').css("overflow", "hidden");
-
-        // 모든 모달 숨기기
-        $('.modal').hide();
-        
-        // blocker 표시
-        $('.blocker').show();
-        
-        // 대상 팝업 표시
-        $targetPopup.show().addClass('slideUp50');
-    });       
+    // 모달 닫기 이벤트 바인딩
+    $('[data-popup="pop_clse"]').on('click', function() {
+        ModalPopup.close();
+    });
     
     // var mouse_touch = ".globalStock a, .globalStock .tabs li, .globalStock .set span, .globalStock .tabs_menu span, .globalStock i.attention, .globalStock .prm_div .box, .globalStock .sub_search .sub_mid.research_board .lst_type2, .globalStock .sub_research .popularity .lst_type2, .globalStock #footer .certification ul li, .globalStock .main_mid.note_area .lst_type2, .globalStock .sub_research .sub_mid.research_board .lst_type2, .globalStock .sub_briefing .popularity .lst_type2, .globalStock .searchArea .searchInput, .globalStock .main_mid.event_recipe .recipe_tabs li span, .globalStock .sub_login .mapage_area .mapage_form .form_table td .mod_btn, .globalStock .sub_login .mapage_area .mapage_form .form_table .phonePin_form .pinInput, .globalStock .sub_login .mapage_area .mapage_form .form_table .phonePin_form .pinInput_out, .globalStock .sub_payment .serviceStep .step_box, .globalStock #header .his_back img, .globalStock .main_top.recommend_area .recomlist_area .area, .globalStock .main_mid.game_area .list_area .area, .globalStock .banner_prm, .globalStock .main_mid.attention_area .one_step .more, .globalStock #header .headerTop .hm .btn_login, .globalStock #header .headerTop .hm .go_briefing"    
     // $(mouse_touch).on("mousedown touchstart", function () {
