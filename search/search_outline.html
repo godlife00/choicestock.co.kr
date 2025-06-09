@@ -55,9 +55,11 @@
     <!-- 오늘 하루 열지 않기 -->
     <div class="free_2weeks open" id="layer_pop">
         <!-- 검색 페이지 하단 플로팅 배너 영역 -->
-        <div class="signalpop event2024_payment">            
+        <div class="signalpop event2024_payment">
             <div class="box">
-                <div class="content" onclick="wiseClickBanner('home_underpopup', 'main_floating'); location.href ='/main/onestop'" style="cursor:pointer;">
+                <div class="content"
+                    onclick="wiseClickBanner('home_underpopup', 'main_floating'); location.href ='/main/onestop'"
+                    style="cursor:pointer;">
                     <div class="info_txt">
                         <p class="txt01">위험한 종목은 OUT!</p>
                         <p class="txt02">좋은 종목만 IN!</p>
@@ -66,7 +68,8 @@
                         <img src="/img/banner/event_mainBtm_temp_v1.png" alt="" class="img_banner">
                     </div>
                     <div class="btn_area">
-                        <a href="/main/onestop" class="btn payment_1000" onclick="wiseClickBanner('home_underpopup', 'main_floating');">배너 버튼</a>
+                        <a href="/main/onestop" class="btn payment_1000"
+                            onclick="wiseClickBanner('home_underpopup', 'main_floating');">배너 버튼</a>
                     </div>
                 </div>
 
@@ -83,7 +86,7 @@
     <script language="Javascript" type="text/javascript">
         cookiedata = document.cookie;
         if (cookiedata.indexOf("mainpop=done") < 0) {
-            if(document.getElementById('layer_pop') != null) {
+            if (document.getElementById('layer_pop') != null) {
                 document.getElementById('layer_pop').style.display = "inline";
             }
         } else {
@@ -159,65 +162,73 @@
 
             <!-- 검색 종목 -->
             <div class="recom_company">
-                <ul class="list">
-                    <li class="ticker">AAPL</li>
-                    <li class="stock_index"><span>NASDAQ</span><span>S&P500</span></li>
-                    <li class="company_nm">마이크로소프트마이크로소프트마이크로소프트</li>
+                <div class="list_wrap">
+                    <div class="company_info">
+                        <div class="list company_name">
+                            <div class="company_nm" id="originalCompanyName">테슬라</div>
+                        </div>
+                        <div class="list company_details">
+                            <div class="ticker">TSLA</div>
+                            <div class="stock_index">
+                                <span>NASDAQ</span>
+                                <span>S&amp;P500</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //company_info -->
+                    <ul class="list">
+                        <li class="detail">
+                            <div class="num">
+                                <span id="last_price">295.<b>10</b></span>
+                            </div>
+                            <div class="per">
+                                <span class="increase" id="diff">+10.40</span>
+                                <span class="increase" id="diff_rate">(+3.65<b>%</b>)</span>
+                                <span class="day">06/06, 장마감</span>
+                            </div>
+                        </li>
+                        <!-- 애프터마켓 -->
+                        <li class="detail market_status">
+                            <div class="after_market">
+                                애프터마켓
+                            </div>
+                            <div class="num">
+                                <span id="over_last_price"><b>297</b>.38</span>
+                            </div>
+                            <div class="per">
+                                <span id="over_diff" class="increase"><b>+2</b>.24</span>
+                                <span id="over_diff_rate" class="increase">(<b>+0</b>.76%)</span>
+                                <span id="over_price_date" class="day">장마감, USD</span>
+                            </div>
+                        </li>
+                        <!-- 프리마켓 -->
+                        <li class="detail market_status">
+                            <div class="pre_market">
+                                프리마켓
+                            </div>
+                            <div class="num">
+                                <span><b>898.</b>00</span>
+                            </div>
+                            <div class="per">
+                                <span class="decrease"><b>-89.</b>89</span>
+                                <span class="decrease">(<b>-89.</b>89%)</span>
+                                <!-- increase 증가, decrease 감소, 보합은 same -->
+                                <span class="day">11:35, USD</span>
+                            </div>
+                        </li>
 
-                    <!-- 정규장 -->
-                    <li class="detail">
-                        <div class="num">
-                            <span><b>898.</b>00</span>
-                        </div>
-                        <div class="per">
-                            <span class="increase"><b>+89.</b>89</span>
-                            <span class="increase">(<b>+89.</b>89%)</span>
-                            <!-- increase 증가, decrease 감소, 보합은 same -->
-                            <span class="day">1/23, 장마감</span>
-                        </div>
-                    </li>
-                    <!-- 애프터마켓 -->
-                    <li class="detail market_status">
-                        <div class="after_market">
-                            애프터마켓
-                        </div>
-                        <div class="num">
-                            <span><b>898.</b>00</span>
-                        </div>
-                        <div class="per">
-                            <span class="increase"><b>+89.</b>89</span>
-                            <span class="increase">(<b>+89.</b>89%)</span>
-                            <!-- increase 증가, decrease 감소, 보합은 same -->
-                            <span class="day">04:35, USD</span>
-                        </div>
-                    </li>
-                    <!-- 프리마켓 -->
-                    <li class="detail market_status">
-                        <div class="pre_market">
-                            프리마켓
-                        </div>
-                        <div class="num">
-                            <span><b>898.</b>00</span>
-                        </div>
-                        <div class="per">
-                            <span class="decrease"><b>-89.</b>89</span>
-                            <span class="decrease">(<b>-89.</b>89%)</span>
-                            <!-- increase 증가, decrease 감소, 보합은 same -->
-                            <span class="day">11:35, USD</span>
-                        </div>
-                    </li>
-                </ul>
+                    </ul>
+                </div>
 
                 <div class="attention_box">
                     <ul>
-                        <li class="attention" id="catch_icon_one_sub"><i></i><strong id="catch_count_one">351</strong>명의
+                        <li class="attention" id="catch_icon_one_sub"><i></i><strong
+                                id="catch_count_one">7,817</strong>명의
                             관심</li>
                     </ul>
                     <div class="stock_tag">
-                        <span><a href="/stock/recipe/dividend">#배당매력주</a></span>
-                        <span><a href="/stock/recipe/growth">#이익성장주</a></span>
-                        <span><a href="/stock/recipe/moat">#소비자독점주</a></span>
-                        <!-- <span><a href="/stock/recipe/interest">#관심TOP50</a></span> -->
+                        <span><a href="/stock/recipe/moat">#소비자독점주</a></span> <span><a
+                                href="/stock/recipe/interest">#관심TOP50</a></span>
                     </div>
                 </div>
             </div>
@@ -244,14 +255,15 @@
                 <!--지금 살까? -->
                 <div class="mainBox attr">
                     <!-- 검색 개요 중간 신규 앱 출시 이벤트 배너 배너 -->
-                    <div class="event2025_banner app_and" onclick="location.href =''" style="cursor: pointer; margin: 32px auto 0;">       
+                    <div class="event2025_banner app_and" onclick="location.href =''"
+                        style="cursor: pointer; margin: 32px auto 0;">
                         <div class="swipe_bannertemp">
                             <div class="banner_bg app_and"></div>
                             <a href="" class="link_banner">
                                 <span>실시간 투자정보 알람을 받아보세요~!</span>
                                 초이스스탁US<br><b>앱 다운로드 하러가기</b>
                             </a>
-                        </div>                        
+                        </div>
                     </div>
                     <!-- //검색 개요 중간 신년 이벤트 배너 -->
 
@@ -463,10 +475,11 @@
                                     </svg>
                                 </span>
                                 <!-- 툴팁 -->
-                                <div class="tooltip_content"> 
+                                <div class="tooltip_content">
                                     <i class="tooltip_icon">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
-                                            <path d="M8 0V8H0L8 0Z" fill="#1AE5D6"/>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8"
+                                            fill="none">
+                                            <path d="M8 0V8H0L8 0Z" fill="#1AE5D6" />
                                         </svg>
                                     </i>
                                     <div class="tooltip_text">
@@ -527,7 +540,8 @@
                             <button type="button" class="ma_period_btn active" data-period="1Y">1년</button>
                             <button type="button" class="ma_period_btn" data-period="3Y">3년</button>
                         </div>
-                        <span class="chart_capture" onclick="capture(event)"><img src="../img/chart_down.png" alt="차트 다운로드"></span>
+                        <span class="chart_capture" onclick="capture(event)"><img src="../img/chart_down.png"
+                                alt="차트 다운로드"></span>
                     </div>
 
                     <div class="chart_box">
@@ -535,7 +549,8 @@
                                     src="../img/txt_guide_us.svg" alt="가이드보기"></span> <span class="unit">* 단위 :
                                 달러</span></h3>
                         <div id="containerfinancials2_1" class="financialsLine_style"></div>
-                        <span class="chart_capture" onclick="capture(event)"><img src="../img/chart_down.png" alt="차트 다운로드"></span>
+                        <span class="chart_capture" onclick="capture(event)"><img src="../img/chart_down.png"
+                                alt="차트 다운로드"></span>
                     </div>
                 </div>
 
@@ -943,7 +958,7 @@
                     </span>
                 </div>
                 <div class="pop_con">
-                    
+
                     <p class="sum_txt">20년간 축적된 금융 데이터와 AI 기술로 최적의 투자 타이밍을 알려드려요!</p>
                     <p class="sum_txt"><b>🔍 어떻게 판단하나요?</b></p>
                     <p class="sum_txt">스마트스코어/ 밸류에이션 / 수급분석을 종합적으로 분석해서 신호를 신속하게 제시합니다.</p>
@@ -954,7 +969,8 @@
                         <li class="txt"><strong>매도 :</strong> 이익실현이나 손절을 고려해볼 시점이에요.</li>
                         <li class="txt"><strong>관망 :</strong> 조금 더 지켜본 후 투자를 결정하세요.</li>
                     </ul>
-                    <p class="guide_txt"><b>💡참고사항 :</b> 매수 신호가 나온 후 3일이 지나면 자동으로 보유 신호로 바뀝니다. 세 가지 조건(스마트스코어, 밸류에이션, 수급분석)을 모두 만족할 때만 매수나 보유 신호가 나오니까 더 신뢰할 수 있어요!</p>
+                    <p class="guide_txt"><b>💡참고사항 :</b> 매수 신호가 나온 후 3일이 지나면 자동으로 보유 신호로 바뀝니다. 세 가지 조건(스마트스코어, 밸류에이션,
+                        수급분석)을 모두 만족할 때만 매수나 보유 신호가 나오니까 더 신뢰할 수 있어요!</p>
                 </div>
             </div>
 
@@ -1265,7 +1281,7 @@
                                 </ul>
 
                             </div>
-                            <!-- //future_growth_list -->                           
+                            <!-- //future_growth_list -->
                         </div>
                         <!-- //filter_box_inner -->
 
@@ -1288,7 +1304,7 @@
                                 </ul>
 
                             </div>
-                            <!-- //future_growth_list -->                            
+                            <!-- //future_growth_list -->
                         </div>
 
                         <div class="filter_box_inner" data-filter="profitability">
@@ -1311,7 +1327,7 @@
 
                             </div>
                             <!-- //future_growth_list -->
-                            
+
                         </div>
 
                         <div class="filter_box_inner" data-filter="cash_flow">
@@ -1334,7 +1350,7 @@
 
                             </div>
                             <!-- //future_growth_list -->
-                            
+
                         </div>
                     </div>
 
