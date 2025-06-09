@@ -228,6 +228,12 @@
 	margin-left: 3%;
 	border-radius: 10px;
 }
+.modal.slideUp50 {
+	animation: fadeIn 0.8s, slideIn50 0.4s linear;
+	margin: 0 auto;
+	margin-left: 3%;
+	border-radius: 10px;
+}
 
 @keyframes slideIn {
 	0% {
@@ -247,6 +253,28 @@
 
 	100% {
 		transform: translateY(0px);
+		animation-timing-function: ease-in;
+	}
+}
+
+@keyframes slideIn50 {
+	0% {
+		transform: translate(-50%, calc(-50% + 400px));
+		animation-timing-function: ease-out;
+	}
+
+	60% {
+		transform: translate(-50%, calc(-50% - 30px));
+		animation-timing-function: ease-in;
+	}
+
+	80% {
+		transform: translate(-50%, calc(-50% + 10px));
+		animation-timing-function: ease-out;
+	}
+
+	100% {
+		transform: translate(-50%, -50%);
 		animation-timing-function: ease-in;
 	}
 }
@@ -3466,12 +3494,21 @@
 }
 
 
-
-
 // modal 팝업 리뉴얼 250604
 .modal.modal_popup { // 팝업 기본 스타일 modal_popup
 	border-radius: var(--Radius-r-04, 16px);
 	background: #FFF;
+
+	max-width: 700px;
+    margin: 0 auto;
+    position: fixed;
+    top: 50%;
+	left: 50%;	
+	transform: translate(-50%, -50%);
+    z-index: 99;
+    width: 94%;
+    box-sizing: border-box;    
+
 	.pop_header {
 		background-color: #fff;		
 		padding: 24px 24px 0;
@@ -3716,6 +3753,8 @@
 			.btn {
 
 				margin: 0;
+				width: 100%;
+				
 				padding: 14.5px 25px;
 				box-sizing: border-box;
 

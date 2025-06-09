@@ -8,6 +8,36 @@ $(document).ready(function () {
             timeout = setTimeout(() => func.apply(context, args), wait);
         };
     }
+
+    // data-popup으로 모달 팝업 여는 스크립트
+    $('[data-popup]').on('click', function() {
+        var popupId = $(this).data('popup');
+        
+        // data-popup 속성이 없는 경우 처리
+        if (!popupId) {
+            console.warn('data-popup 속성이 없습니다.');
+            return;
+        }
+
+        // 해당 팝업이 존재하는지 확인
+        var $targetPopup = $('.' + popupId);
+        if ($targetPopup.length === 0) {
+            console.warn('팝업을 찾을 수 없습니다: ' + popupId);
+            return;
+        }
+
+        // 바디 스크롤 제거
+        $('html, body').css("overflow", "hidden");
+
+        // 모든 모달 숨기기
+        $('.modal').hide();
+        
+        // blocker 표시
+        $('.blocker').show();
+        
+        // 대상 팝업 표시
+        $targetPopup.show().addClass('slideUp50');
+    });       
     
     // var mouse_touch = ".globalStock a, .globalStock .tabs li, .globalStock .set span, .globalStock .tabs_menu span, .globalStock i.attention, .globalStock .prm_div .box, .globalStock .sub_search .sub_mid.research_board .lst_type2, .globalStock .sub_research .popularity .lst_type2, .globalStock #footer .certification ul li, .globalStock .main_mid.note_area .lst_type2, .globalStock .sub_research .sub_mid.research_board .lst_type2, .globalStock .sub_briefing .popularity .lst_type2, .globalStock .searchArea .searchInput, .globalStock .main_mid.event_recipe .recipe_tabs li span, .globalStock .sub_login .mapage_area .mapage_form .form_table td .mod_btn, .globalStock .sub_login .mapage_area .mapage_form .form_table .phonePin_form .pinInput, .globalStock .sub_login .mapage_area .mapage_form .form_table .phonePin_form .pinInput_out, .globalStock .sub_payment .serviceStep .step_box, .globalStock #header .his_back img, .globalStock .main_top.recommend_area .recomlist_area .area, .globalStock .main_mid.game_area .list_area .area, .globalStock .banner_prm, .globalStock .main_mid.attention_area .one_step .more, .globalStock #header .headerTop .hm .btn_login, .globalStock #header .headerTop .hm .go_briefing"    
     // $(mouse_touch).on("mousedown touchstart", function () {
@@ -1625,7 +1655,7 @@ $(document).ready(function () {
     });
     // 모달팝업 - 닫기
     $('.modal .pop_header .clse, .blocker, .payment_cacl02 .btn.btn_save').on('click', function () {
-        $('body').css('overflow', '');
+        $('html, body').css('overflow', '');
         $('.blocker').hide();
         $('.modal').hide().removeClass('slideUp');
     });
