@@ -37866,6 +37866,13 @@ body.v_signalStreng {
   border-radius: 10px;
 }
 
+.modal.slideUp50 {
+  animation: fadeIn 0.8s, slideIn50 0.4s linear;
+  margin: 0 auto;
+  margin-left: 3%;
+  border-radius: 10px;
+}
+
 @keyframes slideIn {
   0% {
     transform: translateY(400px);
@@ -37881,6 +37888,24 @@ body.v_signalStreng {
   }
   100% {
     transform: translateY(0px);
+    animation-timing-function: ease-in;
+  }
+}
+@keyframes slideIn50 {
+  0% {
+    transform: translate(-50%, calc(-50% + 400px));
+    animation-timing-function: ease-out;
+  }
+  60% {
+    transform: translate(-50%, calc(-50% - 30px));
+    animation-timing-function: ease-in;
+  }
+  80% {
+    transform: translate(-50%, calc(-50% + 10px));
+    animation-timing-function: ease-out;
+  }
+  100% {
+    transform: translate(-50%, -50%);
     animation-timing-function: ease-in;
   }
 }
@@ -40958,6 +40983,263 @@ body.v_signalStreng {
   width: 120px;
   /* 적절한 크기로 조절 */
   height: 120px;
+}
+
+.modal.modal_popup {
+  border-radius: var(--Radius-r-04, 16px);
+  background: #FFF;
+  max-width: 700px;
+  margin: 0 auto;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 99;
+  width: 94%;
+  box-sizing: border-box;
+}
+.modal.modal_popup .pop_header {
+  background-color: #fff;
+  padding: 24px 24px 0;
+  border: none;
+}
+.modal.modal_popup .pop_header .clse {
+  padding: 6px 6px;
+  width: auto;
+  height: auto;
+  right: 8px;
+  top: 8px;
+  box-sizing: border-box;
+}
+.modal.modal_popup .pop_header .clse::before, .modal.modal_popup .pop_header .clse::after {
+  display: none;
+}
+.modal.modal_popup .pop_header .pop_title {
+  box-sizing: border-box;
+  color: var(--Font-primary-title, #1F242B);
+  font-family: var(--Title, Pretendard);
+  font-size: var(--Size-2xl, 20px);
+  font-style: normal;
+  font-weight: var(--Weight-600, 600);
+  line-height: var(--Line-height-2xl, 26px); /* 130% */
+  letter-spacing: var(--Tracking-md, -0.3px);
+}
+.modal.modal_popup .pop_header .clse::before,
+.modal.modal_popup .pop_header .clse::after {
+  width: 2px;
+  background-color: #333;
+}
+.modal.modal_popup .pop_con {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 12px 12px;
+  padding: 24px 24px;
+}
+.modal.modal_popup .pop_con .title_txt {
+  color: var(--Font-primary-title, #1F242B);
+  font-family: var(--Title, Pretendard);
+  font-size: var(--Size-3xl, 22px);
+  font-style: normal;
+  font-weight: var(--Weight-600, 600);
+  line-height: var(--Line-height-3xl, 32px); /* 145.455% */
+  letter-spacing: var(--Tracking-md, -0.3px);
+}
+.modal.modal_popup .pop_con .title_txt b {
+  color: var(--Font-primary-blue, #4168F6);
+  font-weight: var(--Weight-600, 600);
+}
+.modal.modal_popup .pop_con .title_txt.align_c {
+  text-align: center;
+}
+.modal.modal_popup .pop_con .txt {
+  color: var(--Font-secondary-body, #4E5866);
+  font-family: var(--Body, Pretendard);
+  font-size: var(--Size-md-16, 16px);
+  font-style: normal;
+  font-weight: var(--Weight-400, 400);
+  line-height: var(--Line-height-2xl, 26px); /* 162.5% */
+  letter-spacing: var(--Tracking-md, -0.3px);
+}
+.modal.modal_popup .pop_con .txt.align_c {
+  text-align: center;
+}
+.modal.modal_popup .pop_con .txt b {
+  color: var(--Font-primary-body, #24282C);
+  font-weight: var(--Weight-600, 600);
+}
+.modal.modal_popup .pop_con .txt u {
+  color: var(--Font-primary-blue, #4168F6);
+  font-weight: 600;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+  text-decoration-thickness: auto;
+  text-underline-offset: auto;
+  text-underline-position: from-font;
+}
+.modal.modal_popup .pop_con .guide_list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px 4px;
+}
+.modal.modal_popup .pop_con .guide_list .guide_txt {
+  display: flex;
+  justify-content: center;
+  gap: 4px 4px;
+  text-align: left;
+  color: var(--Font-secondary-caption, #6B7684);
+  font-family: var(--Body, Pretendard);
+  font-size: var(--Size-sm, 14px);
+  font-style: normal;
+  font-weight: var(--Weight-400, 400);
+  line-height: var(--Line-height-lg, 21px); /* 150% */
+  letter-spacing: var(--Tracking-md, -0.3px);
+}
+.modal.modal_popup .pop_con .guide_list .guide_txt.align_c {
+  text-align: center;
+}
+.modal.modal_popup .pop_con .guide_list .guide_txt b {
+  color: var(--Font-secondary-caption, #6B7684);
+  font-weight: var(--Weight-400, 400);
+}
+.modal.modal_popup .pop_con .guide_list .guide_txt .dot {
+  position: relative;
+  top: 7.5px;
+  display: block;
+  width: 4px;
+  height: 4px;
+  background-color: var(--Gray-gray600, #6B7684);
+  border-radius: 100%;
+  color: var(--Font-secondary-caption, #6B7684);
+  font-family: var(--Body, Pretendard);
+  font-size: var(--Size-sm, 14px);
+  font-style: normal;
+  font-weight: var(--Weight-400, 400);
+  line-height: var(--Line-height-lg, 21px); /* 150% */
+  letter-spacing: var(--Tracking-md, -0.3px);
+}
+.modal.modal_popup .pop_con .discount_banner {
+  background: url("/img/discount_banner_bg.svg") no-repeat left top;
+  background-size: cover;
+  width: 260px;
+  height: 150px;
+  margin: 0 auto 20px;
+}
+.modal.modal_popup .pop_con .discount_banner .discount_info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px 0;
+}
+.modal.modal_popup .pop_con .discount_banner .discount_info .discount_label {
+  color: #FFF;
+  font-family: var(--Title, Pretendard);
+  font-size: var(--Size-3xl, 22px);
+  font-style: normal;
+  font-weight: var(--Weight-600, 600);
+  line-height: var(--Line-height-2xl, 26px); /* 118.182% */
+  letter-spacing: var(--Tracking-md, -0.3px);
+}
+.modal.modal_popup .pop_con .discount_banner .discount_info .discount_rate {
+  margin-top: 2px;
+  color: #FFF;
+  font-family: var(--Title, Pretendard);
+  font-size: 48px;
+  font-style: normal;
+  font-weight: var(--Weight-600, 600);
+  line-height: 52px; /* 108.333% */
+  letter-spacing: var(--Tracking-md, -0.3px);
+}
+.modal.modal_popup .pop_con .discount_banner .discount_info .price_info {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 8px 16px;
+  width: 100%;
+  box-sizing: border-box;
+  justify-content: center;
+  width: 100%;
+}
+.modal.modal_popup .pop_con .discount_banner .discount_info .price_info .original_price {
+  position: relative;
+  color: var(--Blue-blue100, #ECF0FF);
+  font-family: var(--Title, Pretendard);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: var(--Weight-500, 500);
+  line-height: normal;
+  letter-spacing: var(--Tracking-md, -0.3px);
+}
+.modal.modal_popup .pop_con .discount_banner .discount_info .price_info .discounted_price {
+  position: relative;
+  color: var(--Yellow-yellow500, #FFD120);
+  font-family: var(--Title, Pretendard);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: var(--Weight-700, 700);
+  line-height: normal;
+  letter-spacing: var(--Tracking-md, -0.3px);
+}
+.modal.modal_popup .pop_con .discount_banner .discount_info .price_info .strike_line {
+  position: absolute;
+  left: -5px;
+  top: 3px;
+}
+.modal.modal_popup .pop_con .discount_banner .discount_info .monthly_price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 117px;
+  height: 66px;
+  position: absolute;
+  bottom: -55px;
+  border-radius: 8px;
+  background: url("/img/discount_popup.svg") no-repeat center calc(50% + 2px);
+  background-size: cover;
+  color: var(--Font-primary-body, #24282C);
+  text-align: center;
+  font-family: var(--Body, Pretendard);
+  font-size: var(--Size-xs-12, 12px);
+  font-style: normal;
+  font-weight: var(--Weight-600, 600);
+  line-height: var(--Line-height-xs-12, 14px); /* 116.667% */
+  letter-spacing: var(--Tracking-md, -0.3px);
+}
+.modal.modal_popup .pop_footer {
+  padding: 0 24px 24px;
+  box-sizing: border-box;
+}
+.modal.modal_popup .pop_footer .btnArea.payBtn {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 12px 12px;
+}
+.modal.modal_popup .pop_footer .btnArea.payBtn .btn {
+  margin: 0;
+  width: 100%;
+  padding: 14.5px 25px;
+  box-sizing: border-box;
+  border-radius: var(--Radius-r-03, 12px);
+  border: 1px solid var(--Border-tertiary-border, #DADCE0);
+  background: #FFF;
+  color: var(--Font-tertiary-caption, #8C98A7);
+  font-family: var(--Body, Pretendard);
+  font-size: var(--Size-lg, 17px);
+  font-style: normal;
+  font-weight: var(--Weight-600, 600);
+  line-height: var(--Line-height-lg, 21px); /* 123.529% */
+  letter-spacing: -0.3px;
+}
+.modal.modal_popup .pop_footer .btnArea.payBtn .btn.btn_save {
+  border-color: transparent;
+  background: var(--Font-primary-blue, #4168F6);
+  color: #FFF;
+  font-weight: var(--Weight-600, 600);
 }
 
 .v_signalStreng.globalStock .signalpop.event2024_payment .box {
