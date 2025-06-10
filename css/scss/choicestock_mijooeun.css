@@ -22256,6 +22256,7 @@ table.tableRanking td {
   margin-right: 7px;
 }
 .globalStock .sub_alarm .alarm_from .toggleWrap > div {
+  position: relative;
   cursor: pointer;
   width: 40px;
   height: 24px;
