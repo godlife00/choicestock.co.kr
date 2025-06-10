@@ -8,6 +8,49 @@ $(document).ready(function () {
             timeout = setTimeout(() => func.apply(context, args), wait);
         };
     }
+
+    // 모달 팝업 관련 모듈
+    const ModalPopup = {
+        // 모달 열기
+        open: function(popupId) {
+            if (!popupId) {
+                console.warn('data-popup 속성이 없습니다.');
+                return;
+            }
+
+            const $targetPopup = $('.' + popupId);
+            if ($targetPopup.length === 0) {
+                console.warn('팝업을 찾을 수 없습니다: ' + popupId);
+                return;
+            }
+
+            $('html, body').css("overflow", "hidden");
+            $('.modal').hide();
+            $('.blocker').show();
+            $targetPopup.show().addClass('slideUp50');
+        },
+
+        // 모달 닫기
+        close: function() {
+            $('html, body').css("overflow", "");
+            $('.modal').hide();
+            $('.blocker').hide();
+            $('.modal').removeClass('slideUp50');
+            $('.modal').removeClass('slideUp');
+
+        }
+    };
+
+    // 모달 열기 이벤트 바인딩
+    $('[data-popup]').on('click', function() {
+        const popupId = $(this).data('popup');
+        ModalPopup.open(popupId);
+    });
+
+    // 모달 닫기 이벤트 바인딩
+    $('[data-popup="pop_clse"]').on('click', function() {
+        ModalPopup.close();
+    });
     
     // var mouse_touch = ".globalStock a, .globalStock .tabs li, .globalStock .set span, .globalStock .tabs_menu span, .globalStock i.attention, .globalStock .prm_div .box, .globalStock .sub_search .sub_mid.research_board .lst_type2, .globalStock .sub_research .popularity .lst_type2, .globalStock #footer .certification ul li, .globalStock .main_mid.note_area .lst_type2, .globalStock .sub_research .sub_mid.research_board .lst_type2, .globalStock .sub_briefing .popularity .lst_type2, .globalStock .searchArea .searchInput, .globalStock .main_mid.event_recipe .recipe_tabs li span, .globalStock .sub_login .mapage_area .mapage_form .form_table td .mod_btn, .globalStock .sub_login .mapage_area .mapage_form .form_table .phonePin_form .pinInput, .globalStock .sub_login .mapage_area .mapage_form .form_table .phonePin_form .pinInput_out, .globalStock .sub_payment .serviceStep .step_box, .globalStock #header .his_back img, .globalStock .main_top.recommend_area .recomlist_area .area, .globalStock .main_mid.game_area .list_area .area, .globalStock .banner_prm, .globalStock .main_mid.attention_area .one_step .more, .globalStock #header .headerTop .hm .btn_login, .globalStock #header .headerTop .hm .go_briefing"    
     // $(mouse_touch).on("mousedown touchstart", function () {
@@ -1625,7 +1668,7 @@ $(document).ready(function () {
     });
     // 모달팝업 - 닫기
     $('.modal .pop_header .clse, .blocker, .payment_cacl02 .btn.btn_save').on('click', function () {
-        $('body').css('overflow', '');
+        $('html, body').css('overflow', '');
         $('.blocker').hide();
         $('.modal').hide().removeClass('slideUp');
     });
