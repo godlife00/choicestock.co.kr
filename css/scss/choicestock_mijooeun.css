@@ -22197,8 +22197,13 @@ table.tableRanking td {
 
 /* 알림 푸쉬 설정 */
 .globalStock .sub_alarm .alarm_from {
-  padding: 0 20px 40px;
+  padding: 40px 20px;
   border-bottom: 8px solid var(--Background-fill-background, #F7F8FA);
+}
+.globalStock .sub_alarm .alarm_from .h2_title {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 18px;
 }
 .globalStock .sub_alarm .alarm_from .label {
   display: flex;
@@ -22234,7 +22239,6 @@ table.tableRanking td {
   font-weight: 600;
   line-height: normal;
   letter-spacing: -0.33px;
-  margin-left: 6px;
 }
 .globalStock .sub_alarm .alarm_from .label .label_chk .premium_item i {
   display: inline-block;
@@ -22334,6 +22338,7 @@ table.tableRanking td {
   display: flex;
   align-items: flex-start;
   gap: 8px;
+  padding-bottom: 80px;
 }
 .push_faq_banner .faq_desc .dot {
   display: inline-block;
@@ -22343,16 +22348,15 @@ table.tableRanking td {
   background: #6b7684;
   margin-top: 6px;
 }
-.push_faq_banner .faq_desc .desc_text {
-  color: #6b7684;
-  font-family: Pretendard, sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 21px;
-  letter-spacing: -0.3px;
-}
 .push_faq_banner .faq_desc .desc_text p {
-  margin: 0;
+  color: var(--Font-secondary-caption, #6B7684);
+  /* Global Styles/Body/Small */
+  font-family: var(--Body, Pretendard);
+  font-size: var(--Size-sm, 14px);
+  font-style: normal;
+  font-weight: var(--Weight-400, 400);
+  line-height: var(--Line-height-lg, 21px); /* 150% */
+  letter-spacing: var(--Tracking-md, -0.3px);
 }
 
 /********************/
