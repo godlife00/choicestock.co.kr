@@ -15228,6 +15228,9 @@ table.tableRanking td {
   padding: 0 15px;
   box-sizing: border-box;
 }
+.globalStock .sub_search .sub_mid .tab_diagnosis_area .swiper_competChar .swiper-wrapper {
+  justify-content: center;
+}
 .globalStock .sub_search .sub_mid .tab_diagnosis_area .swiper_competChar .swiper-slide {
   display: block;
   width: auto;
