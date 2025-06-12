@@ -975,12 +975,12 @@ $(document).ready(function () {
 
     //서브 검색 - 종목진단 - 투자매력
     var swiper_competChar = new Swiper('.swiper_competChar', {
-        slidesPerView: '3',                
+        slidesPerView: '3.5',                
         // 화면 너비에 따른 설정 조정
         breakpoints: {
             // 화면 너비가 640px 이하일 때
             640: {
-            slidesPerView: 3,  // 슬라이드 1개 표시
+            slidesPerView: 3.5,  // 슬라이드 1개 표시
             },
             // 화면 너비가 768px 이하일 때
             768: {
