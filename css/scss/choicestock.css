@@ -22201,15 +22201,31 @@ table.tableRanking td {
   border-bottom: 8px solid var(--Background-fill-background, #F7F8FA);
 }
 .globalStock .sub_alarm .alarm_from .h2_title {
+  display: flex;
+  align-items: center;
   margin: 0;
   padding: 0;
-  padding-bottom: 18px;
+}
+.globalStock .sub_alarm .alarm_from .h2_title .day {
+  margin-left: auto;
+  color: var(--Font-tertiary-caption, #8C98A7);
+  font-family: var(--Body, Pretendard);
+  font-size: var(--Size-xs-12, 12px);
+  font-style: normal;
+  font-weight: var(--Weight-400, 400);
+  line-height: var(--Line-height-xs-12, 14px); /* 116.667% */
+  letter-spacing: var(--Tracking-md, -0.3px);
+}
+.globalStock .sub_alarm .alarm_from .form_box {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 20px 8px;
 }
 .globalStock .sub_alarm .alarm_from .label {
   display: flex;
   align-items: center;
   gap: 8px 8px;
-  margin-bottom: 12px;
 }
 .globalStock .sub_alarm .alarm_from .label.active {
   opacity: 1;
@@ -22261,8 +22277,9 @@ table.tableRanking td {
 }
 .globalStock .sub_alarm .alarm_from .toggleWrap label {
   display: block;
-  width: 40px;
+  width: 48px;
   height: 24px;
+  padding: 2px 0;
   background: #e6e7f4;
   border-radius: 100px;
   position: relative;
@@ -22271,13 +22288,13 @@ table.tableRanking td {
 }
 .globalStock .sub_alarm .alarm_from .toggleWrap label span {
   display: block;
-  width: 18px;
-  height: 18px;
+  width: 20px;
+  height: 20px;
   background: #fff;
   border-radius: 50%;
   position: absolute;
-  top: 3px;
-  left: 3px;
+  top: 4px;
+  left: 4px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
   transition: left 0.2s;
 }
@@ -22285,7 +22302,7 @@ table.tableRanking td {
   background: #4168f6;
 }
 .globalStock .sub_alarm .alarm_from .toggleWrap input[type=checkbox]:checked + div label span {
-  left: 19px;
+  left: 22px;
 }
 
 .globalStock .sub_alarm .alarm_from .toggleWrap.gray label {
@@ -22308,31 +22325,34 @@ table.tableRanking td {
   padding: 24px 20px;
   margin-bottom: 12px;
 }
-.push_faq_banner .banner_box .banner_text {
-  color: #4e5866;
-  font-family: Pretendard, sans-serif;
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 24px;
+.push_faq_banner .banner_box .banner_text p {
+  color: var(--Font-secondary-body, #4E5866);
+  font-family: var(--Title, Pretendard);
+  font-size: var(--Size-md-16, 16px);
+  font-style: normal;
+  font-weight: var(--Weight-600, 600);
+  line-height: var(--Line-height-xl-01, 24px); /* 150% */
   letter-spacing: -0.3px;
 }
-.push_faq_banner .banner_box .banner_text p {
-  margin: 0;
-}
 .push_faq_banner .banner_box .faq_btn {
-  display: inline-block;
-  background: #4168f6;
-  color: #fff;
-  font-family: Pretendard, sans-serif;
-  font-size: 13px;
-  font-weight: 600;
-  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--Radius-r-02, 8px);
+  background: var(--Font-primary-blue, #4168F6);
   padding: 0 16px;
   height: 36px;
   line-height: 36px;
   text-align: center;
   text-decoration: none;
   transition: background 0.2s;
+  color: #FFF;
+  font-family: var(--Body, Pretendard);
+  font-size: var(--Size-xs-13, 13px);
+  font-style: normal;
+  font-weight: var(--Weight-600, 600);
+  line-height: var(--Line-height-xs-13, 16px); /* 123.077% */
+  letter-spacing: var(--Tracking-md, -0.3px);
 }
 .push_faq_banner .faq_desc {
   display: flex;
@@ -22346,7 +22366,7 @@ table.tableRanking td {
   height: 3px;
   border-radius: 50%;
   background: #6b7684;
-  margin-top: 6px;
+  margin-top: 8px;
 }
 .push_faq_banner .faq_desc .desc_text p {
   color: var(--Font-secondary-caption, #6B7684);
