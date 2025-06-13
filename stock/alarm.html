@@ -38,7 +38,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
     <!-- css -->
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <link rel="stylesheet" type="text/css" href="../css/scss/choicestock.css" />
+    <link rel="stylesheet" type="text/css" href="../css/scss/choicestock.css?ver=250212312" />
     <!-- js -->
     <script src="../js/choicestock.js"></script>
 </head>
@@ -75,12 +75,24 @@
             <!-- 주요 콘텐츠 -->
 
             <div class="alarm_from">
+                <div class="top_banner">
+                    <div class="premium_banner" onclick="location.href =''" style="cursor: pointer;">
+                        <div class="banner_bg note"><img src="../img/premium_banner_alarm.svg" alt=""></div>
+                        <a href="" class="link_banner">
+                            <span>다양한 프리미엄 서비스를 받아보세요~!</span>
+                            매일 추천종목이 배달됩니다.</b>
+                        </a>
+                    </div>
+                </div>
+                <!-- //top_banner -->
+
                 <h2 class="h2_title">정보수신</h2>
                 <div class="form_box">
-                    <div class="label active">
+                    <div class="label">
                         <p class="label_chk">
-                            <label for="toggle_alarm3">신규 종목추천 및 업데이트 알림</label>
-                            <span class="premium_item"><i></i>프리미엄</span>
+                            <label for="toggle_alarm3">신규 종목추천 및 업데이트 알림 <span
+                                    class="premium_item"><i></i>프리미엄</span></label>
+                        </p>
                         <div class="toggleWrap">
                             <input type="checkbox" checked id="toggle_alarm3" />
                             <!-- checked 로 구분 -->
@@ -90,7 +102,6 @@
                                 </label>
                             </div>
                         </div>
-                        </p>
                     </div>
                 </div>
                 <!-- //form_box -->
@@ -104,8 +115,8 @@
                 <div class="form_box">
                     <div class="label">
                         <p class="label_chk">
-                            <label for="toggle_note1">모닝프리핑</label>
-                            <span class="premium_item"><i></i>프리미엄</span>
+                            <label for="toggle_note1">모닝프리핑 <span class="premium_item"><i></i>프리미엄</span></label>
+                        </p>
                         <div class="toggleWrap gray">
                             <input type="checkbox" id="toggle_note1" />
                             <div>
@@ -114,11 +125,11 @@
                                 </label>
                             </div>
                         </div>
-                        </p>
                     </div>
                     <div class="label">
                         <p class="label_chk">
                             <label for="toggle_note2">콘텐츠 알림</label>
+                        </p>
                         <div class="toggleWrap gray">
                             <input type="checkbox" id="toggle_note2" />
                             <div>
@@ -127,7 +138,6 @@
                                 </label>
                             </div>
                         </div>
-                        </p>
                     </div>
                 </div>
                 <!-- //form_box -->
@@ -140,8 +150,8 @@
 
                     <div class="label">
                         <p class="label_chk">
-                            <label for="toggle_fav1">매매신호 알림</label>
-                            <span class="premium_item"><i></i>프리미엄</span>
+                            <label for="toggle_fav1">매매신호 알림 <span class="premium_item"><i></i>프리미엄</span></label>
+                        </p>
                         <div class="toggleWrap gray">
                             <input type="checkbox" id="toggle_fav1" />
                             <div>
@@ -150,12 +160,11 @@
                                 </label>
                             </div>
                         </div>
-                        </p>
                     </div>
                     <div class="label">
                         <p class="label_chk">
-                            <label for="toggle_fav2">뉴스・공시 알림</label>
-                            <span class="premium_item"><i></i>프리미엄</span>
+                            <label for="toggle_fav2">뉴스・공시 알림 <span class="premium_item"><i></i>프리미엄</span></label>
+                        </p>
                         <div class="toggleWrap gray">
                             <input type="checkbox" id="toggle_fav2" />
                             <div>
@@ -164,11 +173,11 @@
                                 </label>
                             </div>
                         </div>
-                        </p>
                     </div>
                     <div class="label">
                         <p class="label_chk">
                             <label for="toggle_fav3">상승TOP10 알림</label>
+                        </p>
                         <div class="toggleWrap gray">
                             <input type="checkbox" id="toggle_fav3" />
                             <div>
@@ -177,12 +186,11 @@
                                 </label>
                             </div>
                         </div>
-                        </p>
                     </div>
 
                 </div>
                 <!-- //form_box -->
-                
+
             </div>
 
             <!-- @alarm.html 혜택-마케팅 프레임 -->
@@ -192,6 +200,7 @@
                     <div class="label">
                         <p class="label_chk">
                             <label for="toggle_marketing1">특별 프로모션</label>
+                        </p>
                         <div class="toggleWrap gray">
                             <input type="checkbox" id="toggle_marketing1" />
                             <div>
@@ -200,10 +209,9 @@
                                 </label>
                             </div>
                         </div>
-                        </p>
                     </div>
                 </div>
-                <!-- //form_box -->                
+                <!-- //form_box -->
             </div>
 
             <!-- @alarm.html 푸시 FAQ 안내 프레임 -->
