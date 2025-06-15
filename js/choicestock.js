@@ -36,8 +36,6 @@ $(document).ready(function () {
             $('.modal').hide();
             $('.blocker').hide();
             $('.modal').removeClass('slideUp50');
-            $('.modal').removeClass('slideUp');
-
         }
     };
 
@@ -975,7 +973,7 @@ $(document).ready(function () {
 
     //서브 검색 - 종목진단 - 투자매력
     var swiper_competChar = new Swiper('.swiper_competChar', {
-        slidesPerView: '3.5',                
+        slidesPerView: '3.3',                
         // 화면 너비에 따른 설정 조정
         breakpoints: {
             // 화면 너비가 640px 이하일 때
@@ -2389,11 +2387,11 @@ $(document).ready(function () {
         history.back(); // 이전 상태로 돌아가기
     });
     // 히스토리 변경 감지
-    window.addEventListener('popstate', function() {
-        $('.score_pop02').hide().removeClass('slideUp');
-        $('.blocker').hide();
-        $('html, body').css("overflow", "");
-    });
+    // window.addEventListener('popstate', function() {
+    //     $('.score_pop02').hide().removeClass('slideUp');
+    //     $('.blocker').hide();
+    //     $('html, body').css("overflow", "");
+    // });
         
     // spider_year_item 클릭 이벤트
     $('.spider_year_item span').click(function() {
@@ -2414,11 +2412,11 @@ $(document).ready(function () {
     });
 
     // 히스토리 변경 감지
-    window.addEventListener('popstate', function() {
-        $('.past_score_pop').hide().removeClass('slideUp');
-        $('.blocker').hide();
-        $('html, body').css("overflow", "");
-    });
+    // window.addEventListener('popstate', function() {
+    //     $('.past_score_pop').hide().removeClass('slideUp');
+    //     $('.blocker').hide();
+    //     $('html, body').css("overflow", "");
+    // });
 
     // ==========================
     // [테이블 width 동적 조정 스크립트 시작]
