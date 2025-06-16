@@ -2130,7 +2130,6 @@ $(document).ready(function () {
         $(this).addClass('active');
         
         // 다른 탭 버튼에서 'active' 클래스 제거
-        $('.mainBox.outline .chart_box .period_tabs li').not(this).removeClass('active');
     });
 
     // 메인페이지 2024 신년이벤트 배너

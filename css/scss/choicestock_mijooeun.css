@@ -2379,7 +2379,8 @@ table.tableRanking td {
   font-size: var(--Size-xs-12, 12px);
   font-style: normal;
   font-weight: var(--Weight-400, 400);
-  line-height: var(--Line-height-xs-12, 14px); /* 116.667% */
+  line-height: var(--Line-height-xs-12, 14px);
+  /* 116.667% */
   letter-spacing: var(--Tracking-md, -0.3px);
 }
 
@@ -2408,7 +2409,8 @@ table.tableRanking td {
   font-size: var(--Size-md-15, 15px);
   font-style: normal;
   font-weight: var(--Weight-400, 400);
-  line-height: var(--Line-height-xl-01, 24px); /* 160% */
+  line-height: var(--Line-height-xl-01, 24px);
+  /* 160% */
   letter-spacing: var(--Tracking-md, -0.3px);
 }
 .globalStock .main_mid.briefing_recom .mainbriefingSwiper .txt a {
@@ -2417,7 +2419,8 @@ table.tableRanking td {
   font-size: var(--Size-md-15, 15px);
   font-style: normal;
   font-weight: var(--Weight-400, 400);
-  line-height: var(--Line-height-xl-01, 24px); /* 160% */
+  line-height: var(--Line-height-xl-01, 24px);
+  /* 160% */
   letter-spacing: var(--Tracking-md, -0.3px);
   vertical-align: middle;
 }
@@ -2441,7 +2444,8 @@ table.tableRanking td {
   font-size: var(--Size-md-15, 15px);
   font-style: normal;
   font-weight: var(--Weight-400, 400);
-  line-height: var(--Line-height-xl-01, 24px); /* 160% */
+  line-height: var(--Line-height-xl-01, 24px);
+  /* 160% */
   letter-spacing: var(--Tracking-md, -0.3px);
   vertical-align: sub;
   margin-right: 8px;
@@ -2455,7 +2459,8 @@ table.tableRanking td {
   font-size: var(--Size-md-15, 15px);
   font-style: normal;
   font-weight: var(--Weight-400, 400);
-  line-height: var(--Line-height-xl-01, 24px); /* 160% */
+  line-height: var(--Line-height-xl-01, 24px);
+  /* 160% */
   letter-spacing: var(--Tracking-md, -0.3px);
   vertical-align: sub;
   margin-right: 8px;
@@ -2858,7 +2863,8 @@ table.tableRanking td {
   font-size: var(--Size-sm, 14px);
   font-style: normal;
   font-weight: var(--Weight-400, 400);
-  line-height: var(--Line-height-sm, 18px); /* 128.571% */
+  line-height: var(--Line-height-sm, 18px);
+  /* 128.571% */
   letter-spacing: var(--Tracking-md, -0.3px);
 }
 .globalStock .main_mid.leading_area .leading_exp .box .num {
@@ -2871,7 +2877,8 @@ table.tableRanking td {
   font-size: var(--Size-md-16, 16px);
   font-style: normal;
   font-weight: var(--Weight-600, 600);
-  line-height: var(--Line-height-sm, 18px); /* 112.5% */
+  line-height: var(--Line-height-sm, 18px);
+  /* 112.5% */
   letter-spacing: var(--Tracking-md, -0.3px);
 }
 .globalStock .main_mid.leading_area .leading_exp .box .per {
@@ -2896,7 +2903,8 @@ table.tableRanking td {
   font-size: var(--Size-sm, 14px);
   font-style: normal;
   font-weight: var(--Weight-500, 500);
-  line-height: var(--Line-height-sm, 18px); /* 128.571% */
+  line-height: var(--Line-height-sm, 18px);
+  /* 128.571% */
   letter-spacing: var(--Tracking-md, -0.3px);
 }
 .globalStock .main_mid.leading_area .leading_exp .box .per span b {
@@ -2946,7 +2954,8 @@ table.tableRanking td {
   font-size: var(--Size-md-16, 16px);
   font-style: normal;
   font-weight: var(--Weight-600, 600);
-  line-height: var(--Line-height-md, 22px); /* 137.5% */
+  line-height: var(--Line-height-md, 22px);
+  /* 137.5% */
   letter-spacing: var(--Tracking-md, -0.3px);
 }
 .globalStock .main_mid.tradeSignal_small .title b {
@@ -2980,7 +2989,8 @@ table.tableRanking td {
   font-size: var(--Size-sm, 14px);
   font-style: normal;
   font-weight: var(--Weight-400, 400);
-  line-height: var(--Line-height-lg, 21px); /* 150% */
+  line-height: var(--Line-height-lg, 21px);
+  /* 150% */
   letter-spacing: var(--Tracking-md, -0.3px);
   height: 16px;
 }
@@ -3064,7 +3074,8 @@ table.tableRanking td {
   font-size: var(--Size-md-16, 16px);
   font-style: normal;
   font-weight: var(--Weight-600, 600);
-  line-height: var(--Line-height-md, 22px); /* 137.5% */
+  line-height: var(--Line-height-md, 22px);
+  /* 137.5% */
   letter-spacing: var(--Tracking-md, -0.3px);
 }
 .globalStock .event2025_banner .link_banner b {
@@ -7416,7 +7427,8 @@ table.tableRanking td {
   font-size: var(--Size-xs-13, 13px);
   font-style: normal;
   font-weight: var(--Weight-500, 500);
-  line-height: var(--Line-height-xs-13, 16px); /* 123.077% */
+  line-height: var(--Line-height-xs-13, 16px);
+  /* 123.077% */
   letter-spacing: var(--Tracking-md, -0.3px);
 }
 .globalStock .sub_recom .sub_mid .tabsArea .tab_container .tab_content .spider_year .spider_year_item span::before {
@@ -10968,7 +10980,8 @@ table.tableRanking td {
   font-size: var(--Size-sm, 14px);
   font-style: normal;
   font-weight: var(--Weight-500, 500);
-  line-height: var(--Line-height-lg, 21px); /* 150% */
+  line-height: var(--Line-height-lg, 21px);
+  /* 150% */
   letter-spacing: var(--Tracking-md, -0.3px);
 }
 .globalStock .sub_menu .sub_top .logout .btn_join:active {
@@ -10985,7 +10998,8 @@ table.tableRanking td {
   font-size: var(--Size-sm, 14px);
   font-style: normal;
   font-weight: var(--Weight-500, 500);
-  line-height: var(--Line-height-lg, 21px); /* 150% */
+  line-height: var(--Line-height-lg, 21px);
+  /* 150% */
   letter-spacing: var(--Tracking-md, -0.3px);
 }
 .globalStock .sub_menu .sub_top .logout .btn_login:active {
@@ -11774,7 +11788,8 @@ table.tableRanking td {
   font-size: var(--Size-md-15, 15px);
   font-style: normal;
   font-weight: var(--Weight-500, 500);
-  line-height: var(--Line-height-xl-01, 24px); /* 160% */
+  line-height: var(--Line-height-xl-01, 24px);
+  /* 160% */
   letter-spacing: var(--Tracking-md, -0.3px);
 }
 .globalStock .sub_search .latest_results .tabsArea .onestep_guide .interest_list .select_area select:focus option:checked {
@@ -11783,7 +11798,8 @@ table.tableRanking td {
   font-size: var(--Size-md-15, 15px);
   font-style: normal;
   font-weight: var(--Weight-500, 500);
-  line-height: var(--Line-height-xl-01, 24px); /* 160% */
+  line-height: var(--Line-height-xl-01, 24px);
+  /* 160% */
   letter-spacing: var(--Tracking-md, -0.3px);
 }
 .globalStock .sub_search .latest_results .tabsArea .onestep_guide .interest_list .sort_manage .interest_btn {
@@ -11793,7 +11809,8 @@ table.tableRanking td {
   font-size: var(--Size-sm, 14px);
   font-style: normal;
   font-weight: var(--Weight-400, 400);
-  line-height: var(--Line-height-sm, 18px); /* 128.571% */
+  line-height: var(--Line-height-sm, 18px);
+  /* 128.571% */
   letter-spacing: var(--Tracking-md, -0.3px);
   padding-left: 8px;
 }
@@ -11867,7 +11884,8 @@ table.tableRanking td {
   font-size: var(--Size-md-16, 16px);
   font-style: normal;
   font-weight: var(--Weight-400, 400);
-  line-height: var(--Line-height-xl-01, 24px); /* 160% */
+  line-height: var(--Line-height-xl-01, 24px);
+  /* 160% */
   letter-spacing: var(--Tracking-md, -0.3px);
 }
 .globalStock .sub_search .latest_results .tabsArea .onestep_guide .onestep_guide_box .onestep_guide_list .guide_txt {
@@ -11878,7 +11896,8 @@ table.tableRanking td {
   font-size: var(--Size-md-16, 16px);
   font-style: normal;
   font-weight: var(--Weight-600, 600);
-  line-height: var(--Line-height-md, 22px); /* 137.5% */
+  line-height: var(--Line-height-md, 22px);
+  /* 137.5% */
   letter-spacing: var(--Tracking-md, -0.3px);
 }
 .globalStock .sub_search .latest_results .tabsArea .onestep_guide .onestep_guide_box .onestep_guide_list .list {
@@ -11904,7 +11923,8 @@ table.tableRanking td {
   font-size: var(--Size-md-15, 15px);
   font-style: normal;
   font-weight: var(--Weight-400, 400);
-  line-height: var(--Line-height-xl-01, 24px); /* 160% */
+  line-height: var(--Line-height-xl-01, 24px);
+  /* 160% */
   letter-spacing: var(--Tracking-md, -0.3px);
 }
 .globalStock .sub_search .latest_results .tabsArea .onestep_guide .analyze_box.analyze_Swiper {
@@ -11941,7 +11961,8 @@ table.tableRanking td {
   font-size: var(--Size-3xl, 22px);
   font-style: normal;
   font-weight: var(--Weight-600, 600);
-  line-height: var(--Line-height-3xl, 32px); /* 145.455% */
+  line-height: var(--Line-height-3xl, 32px);
+  /* 145.455% */
   letter-spacing: var(--Tracking-md, -0.3px);
 }
 .globalStock .sub_search .latest_results .tabsArea .onestep_guide .analyze_box .title svg {
@@ -11955,7 +11976,8 @@ table.tableRanking td {
   font-size: var(--Size-md-15, 15px);
   font-style: normal;
   font-weight: var(--Weight-400, 400);
-  line-height: var(--Line-height-xl-01, 24px); /* 160% */
+  line-height: var(--Line-height-xl-01, 24px);
+  /* 160% */
   letter-spacing: var(--Tracking-md, -0.3px);
 }
 .globalStock .sub_search .latest_results .tabsArea .onestep_guide .analyze_box .nodata b {
@@ -11969,7 +11991,8 @@ table.tableRanking td {
   font-size: var(--Size-xs-12, 12px);
   font-style: normal;
   font-weight: var(--Weight-500, 500);
-  line-height: var(--Line-height-xs-12, 14px); /* 116.667% */
+  line-height: var(--Line-height-xs-12, 14px);
+  /* 116.667% */
   letter-spacing: var(--Tracking-md, -0.3px);
 }
 .globalStock .sub_search .latest_results .tabsArea .onestep_guide .analyze_box .score_txt b {
@@ -11984,7 +12007,8 @@ table.tableRanking td {
   margin-bottom: 32px;
   overflow-y: auto;
   overflow-x: hidden;
-  max-height: 234px; /* 자식 요소가 4개를 넘지 않도록 높이 제한 */
+  max-height: 234px;
+  /* 자식 요소가 4개를 넘지 않도록 높이 제한 */
 }
 .globalStock .sub_search .latest_results .tabsArea .onestep_guide .analyze_box .list .item {
   display: inline-block;
@@ -12003,7 +12027,8 @@ table.tableRanking td {
   font-size: var(--Size-md-15, 15px);
   font-style: normal;
   font-weight: var(--Weight-400, 400);
-  line-height: var(--Line-height-xl-01, 24px); /* 160% */
+  line-height: var(--Line-height-xl-01, 24px);
+  /* 160% */
   letter-spacing: var(--Tracking-md, -0.3px);
 }
 .globalStock .sub_search .latest_results .tabsArea .onestep_guide .analyze_box .risky .list .item {
@@ -12074,7 +12099,8 @@ table.tableRanking td {
   font-size: var(--Size-xl-01, 18px);
   font-style: normal;
   font-weight: var(--Weight-600, 600);
-  line-height: var(--Line-height-xl-02, 28px); /* 155.556% */
+  line-height: var(--Line-height-xl-02, 28px);
+  /* 155.556% */
   letter-spacing: var(--Tracking-md, -0.3px);
 }
 .globalStock .sub_search .latest_results .tabsArea .onestep_guide .onestep_matrix .document_box .title b {
@@ -12083,7 +12109,8 @@ table.tableRanking td {
   font-size: var(--Size-5xl, 30px);
   font-style: normal;
   font-weight: var(--Weight-600, 600);
-  line-height: var(--Line-height-4xl, 42px); /* 140% */
+  line-height: var(--Line-height-4xl, 42px);
+  /* 140% */
   letter-spacing: var(--Tracking-md, -0.3px);
 }
 .globalStock .sub_search .latest_results .tabsArea .onestep_guide .matrix_txt {
@@ -12096,7 +12123,8 @@ table.tableRanking td {
   font-size: 18px;
   font-style: normal;
   font-weight: var(--Weight-400, 400);
-  line-height: var(--Line-height-xl-02, 28px); /* 155.556% */
+  line-height: var(--Line-height-xl-02, 28px);
+  /* 155.556% */
   letter-spacing: var(--Tracking-md, -0.3px);
   word-break: break-all;
   word-wrap: break-word;
@@ -12108,7 +12136,8 @@ table.tableRanking td {
   font-size: var(--Size-sm, 14px);
   font-style: normal;
   font-weight: var(--Weight-400, 400);
-  line-height: var(--Line-height-lg, 21px); /* 150% */
+  line-height: var(--Line-height-lg, 21px);
+  /* 150% */
   letter-spacing: var(--Tracking-md, -0.3px);
 }
 .globalStock .sub_search .latest_results .tabsArea .onestep_guide .matrix_txt .txt_sub b {
@@ -12155,7 +12184,8 @@ table.tableRanking td {
   font-size: var(--Size-md-16, 16px);
   font-style: normal;
   font-weight: var(--Weight-600, 600);
-  line-height: var(--Line-height-md, 22px); /* 137.5% */
+  line-height: var(--Line-height-md, 22px);
+  /* 137.5% */
   letter-spacing: var(--Tracking-md, -0.3px);
 }
 .globalStock .sub_search .latest_results .tabsArea .onestep_guide .recommend_list .recommend_item .txt_sub {
@@ -12165,7 +12195,8 @@ table.tableRanking td {
   font-size: var(--Size-md-16, 16px);
   font-style: normal;
   font-weight: var(--Weight-400, 400);
-  line-height: var(--Line-height-2xl, 26px); /* 162.5% */
+  line-height: var(--Line-height-2xl, 26px);
+  /* 162.5% */
   letter-spacing: var(--Tracking-md, -0.3px);
 }
 .globalStock .sub_search .latest_results .tabsArea .onestep_guide .recommend_list .recommend_item .arrow {
@@ -12199,7 +12230,8 @@ table.tableRanking td {
   font-size: var(--Size-xl-01, 18px);
   font-style: normal;
   font-weight: var(--Weight-600, 600);
-  line-height: var(--Line-height-xl-01, 24px); /* 133.333% */
+  line-height: var(--Line-height-xl-01, 24px);
+  /* 133.333% */
   letter-spacing: var(--Tracking-md, -0.3px);
 }
 .globalStock .sub_search .latest_results .tabsArea .onestep_guide .buy_score_box .score_title:first-child {
@@ -12221,7 +12253,8 @@ table.tableRanking td {
   font-size: var(--Size-md-16, 16px);
   font-style: normal;
   font-weight: var(--Weight-400, 400);
-  line-height: var(--Line-height-xl-01, 24px); /* 160% */
+  line-height: var(--Line-height-xl-01, 24px);
+  /* 160% */
   letter-spacing: var(--Tracking-md, -0.3px);
 }
 .globalStock .sub_search .latest_results .tabsArea .onestep_guide .buy_score_box .score_guide_list .list .item {
@@ -12242,7 +12275,8 @@ table.tableRanking td {
   font-size: var(--Size-md-15, 15px);
   font-style: normal;
   font-weight: var(--Weight-400, 400);
-  line-height: var(--Line-height-xl-01, 24px); /* 160% */
+  line-height: var(--Line-height-xl-01, 24px);
+  /* 160% */
   letter-spacing: var(--Tracking-md, -0.3px);
 }
 .globalStock .sub_search .latest_results .tabsArea .onestep_guide .interest_recommend_list {
@@ -12256,7 +12290,8 @@ table.tableRanking td {
   font-size: var(--Size-2xl, 20px);
   font-style: normal;
   font-weight: var(--Weight-600, 600);
-  line-height: var(--Line-height-2xl, 26px); /* 130% */
+  line-height: var(--Line-height-2xl, 26px);
+  /* 130% */
   letter-spacing: var(--Tracking-md, -0.3px);
 }
 .globalStock .sub_search .latest_results .tabsArea .onestep_guide .interest_recommend_list .list {
@@ -12274,7 +12309,8 @@ table.tableRanking td {
   font-size: var(--Size-md-16, 16px);
   font-style: normal;
   font-weight: var(--Weight-400, 400);
-  line-height: var(--Line-height-md, 22px); /* 137.5% */
+  line-height: var(--Line-height-md, 22px);
+  /* 137.5% */
   letter-spacing: var(--Tracking-md, -0.3px);
 }
 .globalStock .sub_search .latest_results .tabsArea .onestep_guide .interest_recommend_list .list .item b {
@@ -12295,7 +12331,8 @@ table.tableRanking td {
   font-size: var(--Size-md-16, 16px);
   font-style: normal;
   font-weight: var(--Weight-400, 400);
-  line-height: var(--Line-height-md, 22px); /* 137.5% */
+  line-height: var(--Line-height-md, 22px);
+  /* 137.5% */
   letter-spacing: var(--Tracking-md, -0.3px);
 }
 .globalStock .sub_search .latest_results .tabsArea .onestep_guide .onestop_recommend {
@@ -12329,7 +12366,8 @@ table.tableRanking td {
   font-size: var(--Size-lg, 17px);
   font-style: normal;
   font-weight: var(--Weight-600, 600);
-  line-height: var(--Line-height-md, 22px); /* 129.412% */
+  line-height: var(--Line-height-md, 22px);
+  /* 129.412% */
   letter-spacing: var(--Tracking-md, -0.3px);
 }
 .globalStock .sub_search .latest_results .tabsArea .onestep_guide .onestop_recommend .title_txt {
@@ -12342,7 +12380,8 @@ table.tableRanking td {
   font-size: var(--Size-5xl, 30px);
   font-style: normal;
   font-weight: var(--Weight-700, 700);
-  line-height: var(--Line-height-4xl, 42px); /* 140% */
+  line-height: var(--Line-height-4xl, 42px);
+  /* 140% */
   letter-spacing: var(--Tracking-md, -0.3px);
 }
 .globalStock .sub_search .latest_results .tabsArea .onestep_guide .onestop_recommend .list {
@@ -12363,7 +12402,8 @@ table.tableRanking td {
   font-size: var(--Size-md-15, 15px);
   font-style: normal;
   font-weight: var(--Weight-400, 400);
-  line-height: var(--Line-height-xl-01, 24px); /* 160% */
+  line-height: var(--Line-height-xl-01, 24px);
+  /* 160% */
   letter-spacing: var(--Tracking-md, -0.3px);
   counter-increment: list-counter;
 }
@@ -12386,7 +12426,8 @@ table.tableRanking td {
   font-size: var(--Size-xs-13, 13px);
   font-style: normal;
   font-weight: var(--Weight-600, 600);
-  line-height: var(--Line-height-xs-13, 16px); /* 123.077% */
+  line-height: var(--Line-height-xs-13, 16px);
+  /* 123.077% */
   letter-spacing: var(--Tracking-md, -0.3px);
 }
 .globalStock .sub_search .latest_results .tabsArea .onestep_guide .onestop_recommend .premium_gdnbtn {
@@ -12643,7 +12684,8 @@ table.tableRanking td {
   font-size: var(--Size-xs-13, 13px);
   font-style: normal;
   font-weight: var(--Weight-600, 600);
-  line-height: var(--Line-height-xs-13, 16px); /* 123.077% */
+  line-height: var(--Line-height-xs-13, 16px);
+  /* 123.077% */
   letter-spacing: var(--Tracking-md, -0.3px);
 }
 
@@ -12730,7 +12772,8 @@ table.tableRanking td {
   font-size: var(--Size-xs-12, 12px);
   font-style: normal;
   font-weight: var(--Weight-700, 700);
-  line-height: var(--Line-height-xs-12, 14px); /* 116.667% */
+  line-height: var(--Line-height-xs-12, 14px);
+  /* 116.667% */
   letter-spacing: var(--Tracking-md, -0.3px);
 }
 
@@ -14234,7 +14277,8 @@ table.tableRanking td {
   font-size: var(--Size-xs-13, 13px);
   font-style: normal;
   font-weight: var(--Weight-500, 500);
-  line-height: var(--Line-height-xs-13, 16px); /* 123.077% */
+  line-height: var(--Line-height-xs-13, 16px);
+  /* 123.077% */
   letter-spacing: var(--Tracking-md, -0.3px);
 }
 .globalStock .sub_search .sub_mid .investCharm_area .spider_year .spider_year_item span::before {
@@ -16121,7 +16165,8 @@ table.tableRanking td {
   overflow: scroll;
   overflow-y: hidden;
   border-top: 1px solid #939393;
-  -webkit-overflow-scrolling: touch; /* 추가 */
+  -webkit-overflow-scrolling: touch;
+  /* 추가 */
 }
 
 .globalStock .sub_search .sub_mid .search_financials_area .scroll_table_wrap .scroll_table table {
@@ -18025,7 +18070,8 @@ table.tableRanking td {
   font-size: var(--Size-xl-01, 18px);
   font-style: normal;
   font-weight: var(--Weight-600, 600);
-  line-height: var(--Line-height-xl-01, 24px); /* 133.333% */
+  line-height: var(--Line-height-xl-01, 24px);
+  /* 133.333% */
   letter-spacing: var(--Tracking-md, -0.3px);
 }
 .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .box_tabs .list_masonry {
@@ -18158,7 +18204,8 @@ table.tableRanking td {
   font-size: var(--Size-md-15, 15px);
   font-style: normal;
   font-weight: var(--Weight-700, 700);
-  line-height: var(--Line-height-xl-01, 24px); /* 160% */
+  line-height: var(--Line-height-xl-01, 24px);
+  /* 160% */
   letter-spacing: var(--Tracking-md, -0.3px);
 }
 .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .one_step a.more {
@@ -18175,7 +18222,8 @@ table.tableRanking td {
   font-size: var(--Size-xs-13, 13px);
   font-style: normal;
   font-weight: var(--Weight-600, 600);
-  line-height: var(--Line-height-xs-13, 16px); /* 123.077% */
+  line-height: var(--Line-height-xs-13, 16px);
+  /* 123.077% */
   letter-spacing: var(--Tracking-md, -0.3px);
 }
 @media (min-width: 320px) and (max-width: 374px) {
@@ -18859,7 +18907,8 @@ table.tableRanking td {
   font-size: var(--Size-sm, 14px);
   font-style: normal;
   font-weight: var(--Weight-400, 400);
-  line-height: var(--Line-height-lg, 21px); /* 150% */
+  line-height: var(--Line-height-lg, 21px);
+  /* 150% */
   letter-spacing: var(--Tracking-md, -0.3px);
 }
 
@@ -20695,7 +20744,8 @@ table.tableRanking td {
   font-size: var(--Size-sm, 14px);
   font-style: normal;
   font-weight: var(--Weight-400, 400);
-  line-height: var(--Line-height-sm, 18px); /* 128.571% */
+  line-height: var(--Line-height-sm, 18px);
+  /* 128.571% */
   letter-spacing: var(--Tracking-md, -0.3px);
 }
 .globalStock .sub_research .sub_top .best_research .category_box .title {
@@ -20710,7 +20760,8 @@ table.tableRanking td {
   display: inline-block;
   display: -webkit-box;
   overflow: hidden;
-  line-height: var(--Line-height-2xl, 26px); /* 144.444% */
+  line-height: var(--Line-height-2xl, 26px);
+  /* 144.444% */
   box-sizing: border-box;
   text-overflow: ellipsis;
   -webkit-line-clamp: 2;
@@ -21303,7 +21354,8 @@ table.tableRanking td {
   font-size: var(--Size-xl-01, 18px);
   font-style: normal;
   font-weight: var(--Weight-600, 600);
-  line-height: var(--Line-height-xl-01, 24px); /* 133.333% */
+  line-height: var(--Line-height-xl-01, 24px);
+  /* 133.333% */
   letter-spacing: var(--Tracking-md, -0.3px);
   padding: 8px 0 2px;
   box-sizing: border-box;
@@ -21316,7 +21368,8 @@ table.tableRanking td {
   font-size: var(--Size-xl-01, 18px);
   font-style: normal;
   font-weight: var(--Weight-700, 700);
-  line-height: var(--Line-height-xl-01, 24px); /* 133.333% */
+  line-height: var(--Line-height-xl-01, 24px);
+  /* 133.333% */
   letter-spacing: var(--Tracking-md, -0.3px);
   border-bottom: 2px solid var(--Border-dark-border, #24282C);
 }
@@ -21932,7 +21985,7 @@ table.tableRanking td {
   text-decoration: underline;
 }
 
-/* 알람 */
+/* 알림 리스트 */
 .globalStock .alarmArea {
   box-sizing: border-box;
   overflow: auto;
@@ -22012,7 +22065,8 @@ table.tableRanking td {
   font-size: var(--Size-xl-01, 18px);
   font-style: normal;
   font-weight: var(--Weight-600, 600);
-  line-height: var(--Line-height-xl-01, 24px); /* 133.333% */
+  line-height: var(--Line-height-xl-01, 24px);
+  /* 133.333% */
   letter-spacing: var(--Tracking-md, -0.3px);
 }
 
@@ -22139,163 +22193,6 @@ table.tableRanking td {
 }
 .globalStock .alarmArea .alarmList li.read span.sum a {
   color: #d3d3d3;
-}
-
-/* 설정 */
-.globalStock .sub_alarm .alarm_note {
-  padding: 0 15px;
-}
-
-.globalStock .sub_alarm .alarm_note .h3_title {
-  color: #333;
-  font-size: 0.9375rem;
-  font-weight: normal;
-  margin-bottom: 30px;
-}
-
-.globalStock .sub_alarm .alarm_note .list {
-  margin-bottom: 17px;
-}
-
-.globalStock .sub_alarm .alarm_note .list:last-child {
-  margin-bottom: 0;
-}
-
-.globalStock .sub_alarm .alarm_note .list li {
-  color: #939393;
-  font-size: 0.75rem;
-  line-height: normal;
-}
-
-.globalStock .sub_alarm .alarm_note .list li.sum {
-  font-size: 0.82rem;
-  color: #333;
-  background: url("/img/dot_blue.png") no-repeat 0 7px;
-  padding-left: 9px;
-}
-
-.globalStock .sub_alarm .alarm_note .list li.txt {
-  margin-top: 5px;
-  line-height: 1.3;
-  padding-left: 7px;
-}
-
-.globalStock .sub_alarm .alarm_note .list li.txt .mod_btn {
-  cursor: pointer;
-  display: block;
-  border: 1px solid #404fc3;
-  border-radius: 3px;
-  width: 80px;
-  color: #404fc3;
-  font-size: 0.75rem;
-  margin-top: 7px;
-  text-align: center;
-  margin-left: 7px;
-  padding: 5px 3px;
-  box-sizing: border-box;
-}
-
-.globalStock .sub_alarm .alarm_from {
-  margin-top: 20px;
-  margin-bottom: 35px;
-  border-bottom: 1px solid #E0E4E9;
-  padding: 0 15px 35px;
-}
-
-.globalStock .sub_alarm .alarm_from:last-child {
-  margin: 0;
-  border: none;
-  padding-bottom: 0;
-}
-
-.globalStock .sub_alarm .alarm_from .label {
-  background: #f7f8f9;
-  border-radius: 9px;
-  padding: 14px 12px;
-  position: relative;
-}
-
-.globalStock .sub_alarm .alarm_from .label:first-child {
-  margin-bottom: 9px;
-}
-
-.globalStock .sub_alarm .alarm_from .label .label_chk {
-  color: #333;
-  font-size: 0.9375rem;
-  width: 100%;
-  box-sizing: border-box;
-  position: relative;
-  line-height: normal;
-}
-
-.globalStock .sub_alarm .alarm_from .label div.toggleWrap {
-  display: inline-block;
-  vertical-align: top;
-  position: absolute;
-  right: 0;
-  top: 7px;
-  width: 40px;
-  height: 24px;
-  margin-right: 7px;
-}
-
-.globalStock .sub_alarm .alarm_from .label div.toggleWrap > span {
-  font-size: 15px;
-  font-weight: 600;
-  line-height: 2;
-  color: #fff;
-}
-
-.globalStock .sub_alarm .alarm_from .label input {
-  display: none;
-}
-
-.globalStock .sub_alarm .alarm_from .label input:active + div label,
-.globalStock .sub_alarm .alarm_from .label input:checked + div label {
-  border: 1px solid #404fc3;
-}
-
-.globalStock .sub_alarm .alarm_from .label input:active + div label > span,
-.globalStock .sub_alarm .alarm_from .label input:checked + div label > span {
-  left: 18px;
-}
-
-.globalStock .sub_alarm .alarm_from .label .toggleWrap > div {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 10px;
-  width: 40px;
-  height: 24px;
-  margin-top: 5px;
-  border: 1px solid #d3d3d3;
-  border-radius: 36px;
-}
-
-.globalStock .sub_alarm .alarm_from .label label {
-  cursor: pointer;
-  display: block;
-  width: 40px;
-  height: 24px;
-  box-sizing: border-box;
-  border-radius: 36px;
-  border: 12px solid #fff;
-  background: #404fc3;
-  transition: all 0.3s ease;
-}
-
-.globalStock .sub_alarm .alarm_from .label label > span {
-  position: absolute;
-  top: 1px;
-  left: 1px;
-  display: block;
-  width: 22px;
-  height: 22px;
-  border-radius: 50%;
-  box-sizing: border-box;
-  transition: all 0.3s cubic-bezier(0.275, -0.45, 0.725, 1.45);
-  background: #fff;
-  border: 1px solid #d3d3d3;
 }
 
 /********************/
@@ -37345,6 +37242,266 @@ body.v_signalStreng {
   aspect-ratio: 4/3;
   width: 100%;
   height: auto;
+}
+
+/* 알림 푸쉬 설정 */
+.globalStock .sub_alarm .alarm_from {
+  padding: 40px 20px;
+  border-bottom: 8px solid var(--Background-fill-background, #F7F8FA);
+}
+.globalStock .sub_alarm .alarm_from:has(.premium_banner) {
+  padding-top: 20px;
+}
+.globalStock .sub_alarm .alarm_from .h2_title {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+.globalStock .sub_alarm .alarm_from .h2_title .day {
+  margin-left: auto;
+  color: var(--Font-tertiary-caption, #8C98A7);
+  font-family: var(--Body, Pretendard);
+  font-size: var(--Size-xs-12, 12px);
+  font-style: normal;
+  font-weight: var(--Weight-400, 400);
+  line-height: var(--Line-height-xs-12, 14px); /* 116.667% */
+  letter-spacing: var(--Tracking-md, -0.3px);
+}
+.globalStock .sub_alarm .alarm_from .form_box {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 16px 8px;
+  margin-top: 18px;
+}
+.globalStock .sub_alarm .alarm_from .label {
+  display: flex;
+  align-items: center;
+  gap: 8px 8px;
+  width: 100%;
+}
+.globalStock .sub_alarm .alarm_from .label .label_chk {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--Font-secondary-body, #4E5866);
+  font-family: var(--Body, Pretendard);
+  font-size: var(--Size-md-15, 15px);
+  font-style: normal;
+  font-weight: var(--Weight-400, 400);
+  line-height: var(--Line-height-xl-01, 24px);
+  letter-spacing: var(--Tracking-md, -0.3px);
+}
+.globalStock .sub_alarm .alarm_from .label .label_chk > label {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 8px;
+  color: var(--Font-secondary-body, #4E5866);
+  font-family: var(--Body, Pretendard);
+  font-size: var(--Size-md-15, 15px);
+  font-style: normal;
+  font-weight: var(--Weight-400, 400);
+  line-height: var(--Line-height-xl-01, 24px);
+  letter-spacing: var(--Tracking-md, -0.3px);
+}
+.globalStock .sub_alarm .alarm_from .label .label_chk .premium_item {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  height: 24px;
+  box-sizing: border-box;
+  padding: 4px 8px;
+  border-radius: 6px;
+  background: var(--Yellow-yellow100, #FFF6D2);
+  color: var(--Yellow-yellow700, #DFB513);
+  font-family: Pretendard;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.33px;
+}
+.globalStock .sub_alarm .alarm_from .label .label_chk .premium_item i {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background: url("/img/premium_item.svg") no-repeat center center;
+  background-size: contain;
+  margin-right: 2px;
+}
+.globalStock .sub_alarm .alarm_from .toggleWrap {
+  margin-left: auto;
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+}
+.globalStock .sub_alarm .alarm_from .toggleWrap input[type=checkbox] {
+  display: none;
+}
+.globalStock .sub_alarm .alarm_from .toggleWrap label {
+  display: block;
+  width: 48px;
+  height: 24px;
+  padding: 2px 0;
+  background: #e6e7f4;
+  border-radius: 100px;
+  position: relative;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.globalStock .sub_alarm .alarm_from .toggleWrap label span {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  transition: left 0.2s;
+}
+.globalStock .sub_alarm .alarm_from .toggleWrap input[type=checkbox]:checked + div label {
+  background: #4168f6;
+}
+.globalStock .sub_alarm .alarm_from .toggleWrap input[type=checkbox]:checked + div label span {
+  left: 24px;
+}
+
+.globalStock .sub_alarm .alarm_from .toggleWrap.gray label {
+  background: #dadce0;
+}
+.globalStock .sub_alarm .alarm_from .toggleWrap.gray input[type=checkbox]:checked + div label {
+  background: #4168f6;
+}
+.globalStock .sub_alarm .top_banner {
+  overflow: hidden;
+  border-radius: var(--Radius-r-04, 16px);
+  background: var(--Background-primary-light-background, #F1F4F6);
+  margin: 0 auto 32px;
+}
+.globalStock .sub_alarm .top_banner .premium_banner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 4px 12px;
+  box-sizing: border-box;
+  padding: 18px 20px;
+  width: 100%;
+  max-width: 340px;
+  margin: 0 auto;
+}
+@media (max-width: 374px) {
+  .globalStock .sub_alarm .top_banner .premium_banner {
+    padding: 23px 16px;
+  }
+}
+.globalStock .sub_alarm .top_banner .premium_banner .img {
+  position: relative;
+  display: inline-flex;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0px 0px 15px 0px rgba(96, 140, 250, 0.3);
+  background-color: #fff;
+  width: 56px;
+  height: 56px;
+}
+.globalStock .sub_alarm .top_banner .premium_banner .link_banner {
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: left;
+  display: inline-block;
+  box-sizing: border-box;
+  color: var(--Gray-gray800, #24282C);
+  font-family: Pretendard;
+  font-size: var(--Size-md-16, 16px);
+  font-style: normal;
+  font-weight: 700;
+  line-height: var(--Line-height-lg, 21px); /* 131.25% */
+}
+.globalStock .sub_alarm .top_banner .premium_banner .link_banner b {
+  color: var(--Font-secondary-title, #24282C);
+  font-weight: var(--Weight-600, 600);
+}
+.globalStock .sub_alarm .top_banner .premium_banner .link_banner span {
+  display: block;
+  padding-bottom: 4px;
+  color: var(--Gray-gray600, #6B7684);
+  font-family: Pretendard;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: var(--Weight-500, 500);
+  line-height: normal;
+}
+
+.push_faq_banner {
+  margin: 32px 20px 0 20px;
+}
+.push_faq_banner .banner_box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 9px 9px;
+  background: #fff;
+  border: 1px solid #e3e5e8;
+  border-radius: 16px;
+  padding: 24px 20px;
+  margin-bottom: 16px;
+}
+.push_faq_banner .banner_box .banner_text p {
+  color: var(--Font-secondary-body, #4E5866);
+  font-family: var(--Title, Pretendard);
+  font-size: var(--Size-md-16, 16px);
+  font-style: normal;
+  font-weight: var(--Weight-600, 600);
+  line-height: var(--Line-height-xl-01, 24px); /* 150% */
+  letter-spacing: -0.3px;
+}
+.push_faq_banner .banner_box .faq_btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--Radius-r-02, 8px);
+  background: var(--Font-primary-blue, #4168F6);
+  padding: 10px 12px;
+  width: 73px;
+  box-sizing: border-box;
+  line-height: 36px;
+  text-align: center;
+  text-decoration: none;
+  transition: background 0.2s;
+  color: #FFF;
+  font-family: var(--Body, Pretendard);
+  font-size: var(--Size-xs-13, 13px);
+  font-style: normal;
+  font-weight: var(--Weight-600, 600);
+  line-height: var(--Line-height-xs-13, 16px); /* 123.077% */
+  letter-spacing: var(--Tracking-md, -0.3px);
+}
+.push_faq_banner .faq_desc {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  padding-bottom: 80px;
+}
+.push_faq_banner .faq_desc .dot {
+  display: inline-block;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: #6b7684;
+  margin-top: 8px;
+}
+.push_faq_banner .faq_desc .desc_text p {
+  color: var(--Font-secondary-caption, #6B7684);
+  /* Global Styles/Body/Small */
+  font-family: var(--Body, Pretendard);
+  font-size: var(--Size-sm, 14px);
+  font-style: normal;
+  font-weight: var(--Weight-400, 400);
+  line-height: var(--Line-height-lg, 21px); /* 150% */
+  letter-spacing: var(--Tracking-md, -0.3px);
 }
 
 .v_signalStreng.globalStock #wrap #container .tooltip {
