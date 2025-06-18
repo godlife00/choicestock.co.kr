@@ -17003,6 +17003,22 @@ table.tableRanking td {
 	width: 100%;
 }
 
+.globalStock .sub_attract .sub_mid.attract_sub {
+	.banner_signal {		
+		// @include banner_base;				
+		@include banner_subTop_btn;				
+		box-shadow: 0px -40px 21px 0px rgba(255, 255, 255, 0.8);
+		position: absolute;
+		left: 20px;
+		right: 20px;
+		bottom: -25px;
+		margin: 24px auto;			
+		.bg_box {
+		
+		}
+	}
+}
+
 .globalStock .sub_attract .sub_mid.attract_sub .weeks_free {
 	box-shadow: 0px -40px 21px 0px rgba(255, 255, 255, 0.8);
 	position: absolute;
@@ -18133,64 +18149,11 @@ table.tableRanking td {
 			}
 		}
 
-		// 오늘의 매매신호
-		.sub_mid.recipe_tabs .one_step {
-			background: #FFF !important;
-			width: 100% !important;
-			box-sizing: border-box;
-
-			&.flx_btn {
-				border-radius: 16px;
-				background: var(--Background-primary-light-background, #F1F4F6) !important;
-				padding: 21px 16px;
-				margin: 24px 20px 50px !important;
-				width: auto !important;
-				transition: all 0.3s ease;
-			}
-
-			&::before {
-				display: none !important;
-			}
-
-			.txt {
-				padding: 0;
-				color: var(--Font-primary-body, #24282C);
-				font-family: var(--Body, Pretendard);
-				font-size: var(--Size-md-15, 15px);
-				font-style: normal;
-				font-weight: var(--Weight-700, 700);
-				line-height: var(--Line-height-xl-01, 24px);
-				/* 160% */
-				letter-spacing: var(--Tracking-md, -0.3px);
-			}
-
-			a.more {
-				display: flex;
-				align-items: center;
-				justify-content: center;
-				padding: 10px 12px;
-				border-radius: var(--Radius-r-02, 8px);
-				background: var(--Font-primary-blue, #4168F6);
-
-				span {
-					color: #FFF;
-					font-family: var(--Body, Pretendard);
-					font-size: var(--Size-xs-13, 13px);
-					font-style: normal;
-					font-weight: var(--Weight-600, 600);
-					line-height: var(--Line-height-xs-13, 16px);
-					/* 123.077% */
-					letter-spacing: var(--Tracking-md, -0.3px);
-				}
-
-				@media (min-width:320px) and (max-width: 374px) {
-					padding: 8px 8px;
-
-					span {
-						font-size: var(--Size-xs-12, 12px);
-					}
-				}
-			}
+		// 매매신호 링크 배너
+		.banner_signal {		
+			// @include banner_base;				
+			@include banner_CTA;	
+			margin: 24px 20px 50px;			
 		}
 
 		// 레시피 뷰

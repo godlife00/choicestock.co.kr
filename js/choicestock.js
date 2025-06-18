@@ -40,7 +40,10 @@ $(document).ready(function () {
     };
 
     // 모달 열기 이벤트 바인딩
-    $('[data-popup]').on('click', function() {
+    $('[data-popup]').on('click', function(e) {
+        if ($(this).is('a')) {
+            e.preventDefault(); // a 태그의 기본 동작 방지
+        }
         const popupId = $(this).data('popup');
         ModalPopup.open(popupId);
     });

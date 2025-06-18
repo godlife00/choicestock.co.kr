@@ -4,6 +4,37 @@
     --Font-primary-body: #24282C;
     --Background-fill-background: #F7F8FA;
 }
+@mixin reset_style {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+    overflow: visible;
+    text-align: left;
+    font-size: inherit;
+    line-height: inherit;
+    color: inherit;
+    text-decoration: none;
+    list-style: none;
+    transform: none;
+    transition: none;
+    animation: none;
+    opacity: 1;
+    visibility: visible;
+    z-index: auto;
+    pointer-events: auto;
+    cursor: default;
+    user-select: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
 
 @mixin filter_list {
     display: flex;
@@ -338,6 +369,395 @@
                 object-fit: contain;
             }
             
+        }
+    }
+
+}
+
+// 배너
+@mixin banner_base {
+    overflow: hidden;			
+    border-radius: var(--Spacing-s-06, 16px);
+    background: #ECEFFD;
+    margin: 0 auto 32px;					
+    .premium_banner {
+        display: flex;
+        align-items: center;
+        gap: 4px 12px;
+        width: 100%;
+        height: 84px;
+        padding: 18px 20px;
+        box-sizing: border-box;
+        border-radius: var(--Spacing-s-06, 16px);
+        background: #ECEFFD;
+        max-width: 340px;
+        margin: 0 auto;        
+
+        @media (max-width:374px) {
+            padding: 23px 16px;
+        }
+
+        .banner_bg {
+            position: relative;
+            display: inline-flex;
+            border-radius: 12px;            
+            background-color: #fff;                 
+            min-width: 48px;
+            width: 48px;
+            height: 48px;            
+            flex-shrink: 0;
+            
+            img {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                width: 48px;
+                height: 48px;                
+            }
+        }
+
+        .link_banner {
+            position: relative;
+            width: 100%;
+            box-sizing: border-box;
+            text-align: left;
+            display: inline-block;
+            box-sizing: border-box;
+
+            color: var(--Gray-gray800, #24282C);
+            font-family: Pretendard;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: normal;
+
+            b {
+                color: var(--Gray-gray800, #24282C);                
+                font-weight: 700;                
+            }
+
+            span {
+                display: block;
+                padding-bottom: 4px;
+                color: var(--Gray-gray600, #6B7684);
+                font-family: Pretendard;
+                font-size: 13px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                letter-spacing: normal;
+            }
+        }
+        .banner_btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 12px;
+            box-sizing: border-box;
+            min-width: 95px;
+            border-radius: var(--Radius-r-02, 8px);
+            background: var(--Font-primary-blue, #4168F6);
+            color: #FFF;
+            font-family: var(--Body, Pretendard);
+            font-size: var(--Size-xs-13, 13px);
+            font-style: normal;
+            font-weight: var(--Weight-600, 600);
+            line-height: var(--Line-height-xs-13, 16px); /* 123.077% */
+            letter-spacing: var(--Tracking-md, -0.3px);
+        }
+    }
+}
+
+@mixin onethousand_banner {    
+    overflow: hidden;			
+    border-radius: 16px;
+    background: var(--Font-primary-blue, #4168F6);    
+    margin: 16px 20px 40px;        
+    padding: 15px 16px 15px 32px;
+    .premium_banner {
+        position: relative;
+        display: flex;
+        align-items: center;
+        gap: 4px 12px;
+        box-sizing: border-box;        
+        width: 100%;
+        max-width: 340px;
+        margin: 0 auto;     
+
+        .banner_bg {
+            position: relative;
+            display: inline-flex;
+            border-radius: 12px;                        
+            min-width: 100px;
+            width: 100px;            
+            flex-shrink: 0;
+            
+            
+            img {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                width: 100px;                
+            }
+
+            @media (max-width:374px) {
+                min-width: 90px;
+                width: 90px;
+                img {                    
+                    width: 90px;                    
+                }
+            }
+        }
+
+
+
+        .link_banner {
+            position: relative;
+            width: 100%;
+            box-sizing: border-box;
+            text-align: left;
+            display: inline-block;
+            box-sizing: border-box;
+            color: #FFF;            
+            font-family: var(--Title, Pretendard);
+            font-size: var(--Size-md-16, 16px);
+            font-style: normal;
+            font-weight: var(--Weight-600, 600);
+            line-height: var(--Line-height-md, 22px); /* 137.5% */
+            letter-spacing: var(--Tracking-md, -0.3px);
+
+            b {
+                color: #FFF;                
+                font-weight: var(--Weight-600, 600);                
+                i {
+                    color: var(--Yellow-yellow400, #FFDA4D);
+                    font-family: var(--Title, Pretendard);
+                    font-size: var(--Size-md-16, 16px);
+                    font-style: normal;
+                    font-weight: var(--Weight-600, 600);
+                    line-height: var(--Line-height-md, 22px);
+                    letter-spacing: var(--Tracking-md, -0.3px);
+                }
+            }
+
+            span {
+                display: block;
+                padding-bottom: 4px;
+                color: var(--Blue-blue200, #BFD1FE);
+                font-family: Pretendard;
+                font-size: var(--Size-xs-13, 13px);
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+            }
+        }
+    }    
+}
+
+// 메인 배너 : 메인 페이지에 사용되는 배너.
+@mixin banner_main {
+
+}
+// Event Banner :  메인, 혹은 상세 페이지에서 이벤트성으로 사용되는 배너.
+@mixin banner_event {
+
+}
+ 
+// 서브 배너 : 메인, 혹은 서브 페이지
+@mixin banner_sub {
+}
+
+// 서브 상단 고정 배너 : 서브 상단 고정 배너, 텍스트 타입, 버튼 타입
+@mixin banner_subTop_txt {
+}
+@mixin banner_subTop_btn {
+    overflow: hidden;			
+    border-radius: var(--Spacing-s-06, 16px);
+    background: #ECEFFD;
+    margin: 0 auto 32px;					
+    .premium_banner {
+        display: flex;
+        align-items: center;
+        gap: 4px 12px;
+        width: 100%;
+        height: 84px;
+        padding: 18px 20px;
+        box-sizing: border-box;
+        border-radius: var(--Spacing-s-06, 16px);
+        background: #ECEFFD;
+        max-width: 340px;
+        margin: 0 auto;        
+
+        @media (max-width:374px) {
+            padding: 23px 16px;
+        }
+
+        .banner_bg {
+            position: relative;
+            display: inline-flex;
+            border-radius: 12px;            
+            background-color: #fff;                 
+            min-width: 48px;
+            width: 48px;
+            height: 48px;            
+            flex-shrink: 0;
+            
+            img {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                width: 48px;
+                height: 48px;                
+            }
+        }
+
+        .link_banner {
+            position: relative;
+            width: 100%;
+            box-sizing: border-box;
+            text-align: left;
+            display: inline-block;
+            box-sizing: border-box;
+
+            color: var(--Gray-gray800, #24282C);
+            font-family: Pretendard;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: normal;
+
+            b {
+                color: var(--Gray-gray800, #24282C);                
+                font-weight: 700;                
+            }
+
+            span {
+                display: block;
+                padding-bottom: 4px;
+                color: var(--Gray-gray600, #6B7684);
+                font-family: Pretendard;
+                font-size: 13px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                letter-spacing: normal;
+            }
+        }
+        .banner_btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: auto;
+            padding: 10px 12px;
+            box-sizing: border-box;
+            min-width: 95px;
+            border-radius: var(--Radius-r-02, 8px);
+            background: var(--Font-primary-blue, #4168F6);
+            color: #FFF;
+            font-family: var(--Body, Pretendard);
+            font-size: var(--Size-xs-13, 13px);
+            font-style: normal;
+            font-weight: var(--Weight-600, 600);
+            line-height: var(--Line-height-xs-13, 16px); /* 123.077% */
+            letter-spacing: var(--Tracking-md, -0.3px);
+        }
+    }
+}
+
+// CTA Banner : 컨텐츠 중간 혹은, 하단에 사용
+@mixin banner_CTA {
+    overflow: hidden;			
+    border-radius: 16px;
+    background: var(--Background-primary-light-background, #F1F4F6);
+    margin: 0 auto 32px;					
+    .premium_banner {
+        display: flex;
+        align-items: center;
+        gap: 8px 16px;
+        width: 100%;        
+        padding: 24px 20px;
+        box-sizing: border-box;        
+        max-width: 340px;
+        margin: 0 auto;        
+
+        @media (max-width:374px) {
+            padding: 23px 16px;
+        }
+
+        .banner_bg {
+            position: relative;
+            display: inline-flex;
+            border-radius: 12px;            
+            background-color: #fff;                 
+            min-width: 48px;
+            width: 48px;
+            height: 48px;            
+            flex-shrink: 0;
+            
+            img {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                width: 48px;
+                height: 48px;                
+            }
+        }
+
+        .link_banner {
+            position: relative;            
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            gap: 4px 4px;
+            width: 100%;
+            box-sizing: border-box;
+            color: var(--Gray-gray800, #24282C);
+            font-family: var(--Title, Pretendard);
+            font-size: var(--Size-md-16, 16px);
+            font-style: normal;
+            font-weight: var(--Weight-600, 600);
+            line-height: var(--Line-height-md, 22px); /* 137.5% */
+            letter-spacing: var(--Tracking-md, -0.3px);
+            word-break: break-all;
+            word-wrap: break-word;
+
+            b {
+                color: var(--Gray-gray800, #24282C);                
+                font-weight: var(--Weight-600, 600);              
+                line-height: var(--Line-height-md, 22px); /* 137.5% */  
+                word-break: break-all;
+                word-wrap: break-word;
+            }
+
+            span {
+                display: block;
+                color: var(--Gray-gray600, #6B7684);
+                font-family: var(--Body, Pretendard);
+                font-size: var(--Size-sm, 14px);
+                font-style: normal;
+                font-weight: var(--Weight-400, 400);
+                line-height: var(--Line-height-sm, 18px); /* 128.571% */
+                letter-spacing: var(--Tracking-md, -0.3px);
+            }
+        }
+        .banner_btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 12px;
+            box-sizing: border-box;
+            min-width: 95px;
+            border-radius: var(--Radius-r-02, 8px);
+            background: var(--Font-primary-blue, #4168F6);
+            color: #FFF;
+            font-family: var(--Body, Pretendard);
+            font-size: var(--Size-xs-13, 13px);
+            font-style: normal;
+            font-weight: var(--Weight-600, 600);
+            line-height: var(--Line-height-xs-13, 16px); /* 123.077% */
+            letter-spacing: var(--Tracking-md, -0.3px);
         }
     }
 

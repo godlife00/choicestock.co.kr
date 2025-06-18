@@ -43,7 +43,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
     <!-- css -->
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <link rel="stylesheet" type="text/css" href="../css/scss/choicestock.css?ver=22" />
+    <link rel="stylesheet" type="text/css" href="../css/scss/choicestock.css?ver=22233" />
     <!-- js -->
     <script src="../js/choicestock.js?ver=250413"></script>
     <!-- 이 아래는 로컬에서만 사용되는 파일 -->
@@ -111,28 +111,28 @@
         <!-- //2024 신년 이벤트 -->
 
         <!-- 유료 회원용 알림 배너: 매매신호 & 관심종목 알림 서비스 변경 안내 -->
-        <div class="alarm_noti_banner" onclick="location.href =''" style="cursor: pointer;">            
-            <div class="width_box">                
+        <div class="alarm_noti_banner" onclick="location.href =''" style="cursor: pointer;">
+            <div class="width_box">
                 <div class="link_banner">
                     <b>매매신호 & 관심종목 알림 개편 안내</b>
                     문자/알림톡 서비스가 중지됩니다.
                 </div>
                 <div class="banner_bg"><img src="../img/bell_mark.png" alt=""></div>
             </div>
-            <!-- //width_box -->            
+            <!-- //width_box -->
         </div>
         <!-- //유료 회원용 알림 배너 -->
         <br>
         <!-- 무료 회원용 프로모션 배너: 첫 달 1,000원 할인 이벤트 -->
-        <div class="alarm_noti_banner" onclick="location.href =''" style="cursor: pointer;">            
-            <div class="width_box">                
+        <div class="alarm_noti_banner" onclick="location.href =''" style="cursor: pointer;">
+            <div class="width_box">
                 <div class="link_banner">
                     <b>초이스스탁US 첫 달 <i>1,000원!</i></b>
                     AI가 알려주는 매매신호! 미국주식 시작하세요.
                 </div>
                 <div class="banner_bg"><img src="../img/visual_flag2.png" alt=""></div>
             </div>
-            <!-- //width_box -->            
+            <!-- //width_box -->
         </div>
         <!-- //무료 회원용 프로모션 배너 -->
 
@@ -288,7 +288,7 @@
                             <div class="banner_bg app_and"></div>
                             <a href="" class="link_banner">
                                 <span>실시간 투자정보 알람을 받아보세요.</span>
-                                초이스스탁US 앱으로<br><b>빠르고 편리하게!</b>                                    
+                                초이스스탁US 앱으로<br><b>빠르고 편리하게!</b>
                             </a>
                         </div>
                     </div>
@@ -412,13 +412,19 @@
                     </div>
                 </div>
 
-                <!-- 프리미엄 배너 -->
-                <div class="banner_signal" style="display: none;">
-                    <!-- <a href="../payment/step01.html"><img src="../img/banner/banner_prm.jpg" alt="전품목 매매신호가 궁금하다면 초이스스탁US 프리미엄 월 3,300원"></a> -->
-                    <a href="../payment/step01.html"><img src="../img/banner/event_pay1000.jpg"
-                            alt="전품목 매매신호가 궁금하다면 초이스스탁US 프리미엄 월 3,300원"></a>
-
+                <!-- 미국주식은 초이스스탁! 첫 달 1,000원 -->
+                <div class="onethousand_banner">
+                    <div class="premium_banner" onclick="location.href ='https://www.choicestock.co.kr/main/service'"
+                        style="cursor: pointer;">
+                        <a href="https://www.choicestock.co.kr/main/service" class="link_banner">
+                            <span>매매신호와 종목추천까지 한번에</span>
+                            <b>미국주식은 초이스스탁!<br>첫 달 <i>1,000원</i></b>
+                        </a>
+                        <div class="banner_bg"><img src="../img/visual_flag2.png" alt=""></div>
+                    </div>
                 </div>
+                <!-- //onethousand_banner -->
+
 
                 <!-- outline -->
                 <div class="mainBox outline">
@@ -547,12 +553,16 @@
                 </div>
                 <!-- //investCharm_area -->
 
+                <!-- 매매신호 링크 배너 -->
                 <div class="banner_signal">
-                    <a href=""><img src="../img/banner/today_trading_230901.jpg" alt="오늘의매매신호 지금살까? 매매신호 종목만 쏙쏙!"></a>
-                    <br><br>
-                    <a href="https://www.valueline.co.kr/member/service" target="_blank"><img
-                            src="../img/banner/event_discount_fly55.png"
-                            alt="20년 빅데이터 종목분석 밸류라인 프리미엄 평상할인 55% (선착순 100명)"></a>
+                    <div class="premium_banner" onclick="location.href ='https://www.choicestock.co.kr/stock/signal'"
+                        style="cursor: pointer;">
+                        <div class="banner_bg"><img src="../img/trading_signal_banner.png" alt=""></div>
+                        <a href="https://www.choicestock.co.kr/stock/signal" class="link_banner">
+                            <span>오늘의 매매신호</span>
+                            <b>지금살까? 매매신호 종목만 쏙쏙!</b>
+                        </a>
+                    </div>
                 </div>
 
                 <!-- 매출액, 영업이익, 주당순이익(EPS) 막대 차트 -->
@@ -772,10 +782,12 @@
         <div id="footer" class="chous_footer">
             <div class="notice">
                 <div class="service_info">
-                    <p>본 서비스는 투자판단에 참고용으로만 사용하실 수 있으며, 모든 투자판단은 투자자 본인의 책임으로 당사는 그 결과에 대해 법적인 일체의 책임을 지지 않습니다.</p>
+                    <p>데이터히어로가 제공하는 모든 콘텐츠는 오직 정보 제공 목적으로만 사용되며, 특정 주식을 판매하거나 추천할 의도로 게시된 것이 아닙니다. 데이터히어로의 콘텐츠는 연구 보고서가
+                        아니며, 투자 결정의 유일한 근거로 사용되어서는 안 됩니다.</p>
+                    <p>모든 투자에는 위험이 따르며, 과거 금융 상품의 성과가 미래의 결과나 수익을 보장하지 않습니다. 금융 상품에 투자할 때는 항상 재정적 손실의 가능성을 인지하고 있어야 하며,
+                        투자자는 투자하기 전에 자신의 투자 목표와 위험을 신중하게 고려해야 합니다.</p>
                     <p class="dataLink">data from <a href="https://www.quandl.com/" target="_blank">Quandl and
-                            Sharadar</a>
-                    </p>
+                            Sharadar</a></p>
                 </div>
 
                 <ul class="terms_list">
@@ -801,11 +813,8 @@
                 <!-- //foot_info -->
                 <div class="family_site">
                     <strong>Family</strong>&nbsp;&nbsp;&nbsp;&gt;&nbsp;&nbsp;&nbsp;
-                    <a href="https://super.choicestock.co.kr/?utm_source=choicestock&amp;utm_medium=banner&amp;utm_campaign=service"
-                        target="blank">슈퍼스톡스</a><i></i>
                     <a href="https://value.choicestock.co.kr/?utm_source=choicestock&amp;utm_medium=banner&amp;utm_campaign=service"
                         target="blank">밸류라인</a>
-                    <i></i> <a href="https://bigfinance.co.kr/" target="blank">빅파이낸스</a>
                 </div>
                 <!-- //family_site -->
 
@@ -1382,6 +1391,7 @@
                     </div>
 
                     <div class="score_box_area recipe_list">
+                        
                         <div class="list_box"
                             onclick="window.open('https://www.choicestock.co.kr/stock/recipe/discovery', '_self')"
                             style="cursor: pointer;">

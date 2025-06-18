@@ -12874,10 +12874,17 @@ body.v_signalStreng {
 	font-weight: bold;
 }
 
+.v_signalStreng.globalStock #wrap #container.sub_search {
+	.onethousand_banner {
+		@include onethousand_banner;
+	}
+}
+
 .v_signalStreng.globalStock #wrap #container.sub_search .mainBox.outline {
-	margin-top: 32px;
-	padding: 0 16px;
+	margin-top: 32px;		
+	padding: 32px 16px 0;
 	background-color: #fff;
+	border-top: 8px solid var(--Background-fill-background, #F7F8FA);
 }
 
 .v_signalStreng.globalStock #wrap #container.sub_search .mainBox.outline .title {
@@ -13284,28 +13291,11 @@ body.v_signalStreng {
 	border-color: var(--coldae);
 }
 
-.v_signalStreng.globalStock #wrap #container.sub_search .banner_signal {
-	position: relative;
-	padding: 30px 16px 40px;
-}
-
-.v_signalStreng.globalStock #wrap #container.sub_search .banner_signal::after {
-	content: "";
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	display: block;
-	width: 100%;
-	height: 8px;
-	background-color: #f4f4f5;
-	z-index: 1;
-}
-
-.v_signalStreng.globalStock #wrap #container.sub_search .banner_signal a,
-.v_signalStreng.globalStock #wrap #container.sub_search .banner_signal a img {
-	display: inline-block;
-	width: 100%;
+.v_signalStreng.globalStock #wrap #container.sub_search .banner_signal {		
+	// @include banner_base;	
+	@include banner_CTA;	
+	margin: 10px 20px 40px;
+		
 }
 
 // 개요 - 투자레시피
@@ -13442,6 +13432,7 @@ body.v_signalStreng {
 	}
 
 	&.chart_financials {
+		border-top: 8px solid var(--Background-fill-background, #F7F8FA);
 		padding-bottom: 25px;
 
 		.chart_box {
@@ -16115,69 +16106,7 @@ body.v_signalStreng {
 	}
 	
 	.top_banner {
-		overflow: hidden;			
-		border-radius: var(--Radius-r-04, 16px);
-		background: var(--Background-primary-light-background, #F1F4F6);
-		margin: 0 auto 32px;					
-		.premium_banner {
-			position: relative;
-			display: flex;
-			align-items: center;
-			gap: 4px 12px;
-			box-sizing: border-box;
-			padding: 18px 20px;
-			width: 100%;
-			max-width: 340px;
-			margin: 0 auto;
-			
-	
-			@media (max-width:374px) {
-				padding: 23px 16px;
-			}
-	
-			.img {
-				position: relative;
-				display: inline-flex;
-				overflow: hidden;
-				border-radius: 12px;
-				box-shadow: 0px 0px 15px 0px rgba(96, 140, 250, 0.30);
-				background-color: #fff;
-				width: 56px;
-				height: 56px;
-			}
-	
-			.link_banner {
-				position: relative;
-				width: 100%;
-				box-sizing: border-box;
-				text-align: left;
-				display: inline-block;
-				box-sizing: border-box;
-	
-				color: var(--Gray-gray800, #24282C);
-				font-family: Pretendard;
-				font-size: var(--Size-md-16, 16px);
-				font-style: normal;
-				font-weight: 700;
-				line-height: var(--Line-height-lg, 21px); /* 131.25% */
-	
-				b {
-					color: var(--Font-secondary-title, #24282C);
-					font-weight: var(--Weight-600, 600);
-				}
-	
-				span {
-					display: block;
-					padding-bottom: 4px;
-					color: var(--Gray-gray600, #6B7684);
-					font-family: Pretendard;
-					font-size: 13px;
-					font-style: normal;
-					font-weight: var(--Weight-500, 500);
-					line-height: normal;
-				}
-			}
-		}
+		@include banner_base;		
 	}
 	
 }
