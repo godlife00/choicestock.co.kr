@@ -19527,6 +19527,7 @@ table.tableRanking td {
   padding: 16px 38px 16px 44px;
   margin: 20px auto 0;
   box-sizing: border-box;
+  cursor: pointer;
 }
 .globalStock .sub_recom.sub_recipe .sub_mid.recipe_view .tradeSignal_status .market_alert:active {
   transform: translate(2px, 2px);

@@ -8106,7 +8106,7 @@ $(document).ready(function () {
     }
 
     // 마켓스코어 6개월 스마트스코어 선차트 스타일 설정
-    const getScoreChartOptions = () => {
+    const getScoreChartOptions = (scoreChartData) => {        
         return {
             chart: {
                 backgroundColor: 'transparent',
@@ -8285,12 +8285,14 @@ $(document).ready(function () {
                 type: 'datetime',
                 showFirstLabel: true,
                 showLastLabel: true,
-                startOnTick: true,   // 시작 라벨 강제 표시
-                endOnTick: true,     // 끝 라벨 강제 표시   
+                startOnTick: false,   // 시작 라벨 강제 표시
+                endOnTick: false,     // 끝 라벨 강제 표시   
                 tickWidth: 0,
                 gridLineWidth: 0,
-                minPadding: 0.1,
-                maxPadding: 0.1,
+                // minPadding: 0.3,
+                // maxPadding: 0.3,                
+                min: scoreChartData[0][0] - 24 * 2 * 60 * 60 * 1000,
+                max: scoreChartData[scoreChartData.length - 1][0] + 24 * 2 * 60 * 60 * 1000,                
                 labels: {
                     x: 6,
                     style: {
@@ -8418,7 +8420,7 @@ $(document).ready(function () {
     // 마켓스코어 6개월 마켓스코어 선차트 렌더링 함수
     const renderScoreChart = () => {
         if ($('#score_chart').length) {
-            const options = getScoreChartOptions();
+            const options = getScoreChartOptions(scoreChartData);
             options.series = [{
                 name: '마켓스코어',
                 data: scoreChartData
