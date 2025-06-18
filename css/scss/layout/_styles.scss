@@ -19469,6 +19469,7 @@ table.tableRanking td {
 		}
 		.market_alert {
 			@include market_alert;
+			cursor: pointer;
 			.tooltip_content {				
 				@include tooltip_content;
 				right: 3px;
