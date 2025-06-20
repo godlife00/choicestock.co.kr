@@ -14709,13 +14709,24 @@ table.tableRanking td {
   position: relative;
 }
 .globalStock .sub_search .sub_mid .tab_diagnosis_area .hiding_box .banner_signal {
+  margin: 0 -15px 0 -15px !important;
+  padding: 0 20px 24px !important;
+  border-radius: 0 !important;
+  background-color: #fff !important;
+  box-shadow: 0 -24px 20px 10px white;
+  position: relative;
+  top: 20px;
+}
+.globalStock .sub_search .sub_mid .tab_diagnosis_area .hiding_box .banner_signal .premium_banner {
   overflow: hidden;
   border-radius: 16px;
   background: var(--Background-primary-light-background, #F1F4F6);
   margin: 0 auto 32px;
-  margin: 0 !important;
+  overflow: hidden;
+  border-radius: 16px;
+  max-width: none !important;
 }
-.globalStock .sub_search .sub_mid .tab_diagnosis_area .hiding_box .banner_signal .premium_banner {
+.globalStock .sub_search .sub_mid .tab_diagnosis_area .hiding_box .banner_signal .premium_banner .premium_banner {
   display: flex;
   align-items: center;
   gap: 8px 16px;
@@ -14726,11 +14737,11 @@ table.tableRanking td {
   margin: 0 auto;
 }
 @media (max-width: 374px) {
-  .globalStock .sub_search .sub_mid .tab_diagnosis_area .hiding_box .banner_signal .premium_banner {
+  .globalStock .sub_search .sub_mid .tab_diagnosis_area .hiding_box .banner_signal .premium_banner .premium_banner {
     padding: 23px 16px;
   }
 }
-.globalStock .sub_search .sub_mid .tab_diagnosis_area .hiding_box .banner_signal .premium_banner .banner_bg {
+.globalStock .sub_search .sub_mid .tab_diagnosis_area .hiding_box .banner_signal .premium_banner .premium_banner .banner_bg {
   position: relative;
   display: inline-flex;
   border-radius: 12px;
@@ -14740,14 +14751,14 @@ table.tableRanking td {
   height: 48px;
   flex-shrink: 0;
 }
-.globalStock .sub_search .sub_mid .tab_diagnosis_area .hiding_box .banner_signal .premium_banner .banner_bg img {
+.globalStock .sub_search .sub_mid .tab_diagnosis_area .hiding_box .banner_signal .premium_banner .premium_banner .banner_bg img {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   width: 48px;
   height: 48px;
 }
-.globalStock .sub_search .sub_mid .tab_diagnosis_area .hiding_box .banner_signal .premium_banner .link_banner {
+.globalStock .sub_search .sub_mid .tab_diagnosis_area .hiding_box .banner_signal .premium_banner .premium_banner .link_banner {
   position: relative;
   display: flex;
   flex-wrap: wrap;
@@ -14765,14 +14776,14 @@ table.tableRanking td {
   word-break: break-all;
   word-wrap: break-word;
 }
-.globalStock .sub_search .sub_mid .tab_diagnosis_area .hiding_box .banner_signal .premium_banner .link_banner b {
+.globalStock .sub_search .sub_mid .tab_diagnosis_area .hiding_box .banner_signal .premium_banner .premium_banner .link_banner b {
   color: var(--Gray-gray800, #24282C);
   font-weight: var(--Weight-600, 600);
   line-height: var(--Line-height-md, 22px); /* 137.5% */
   word-break: break-all;
   word-wrap: break-word;
 }
-.globalStock .sub_search .sub_mid .tab_diagnosis_area .hiding_box .banner_signal .premium_banner .link_banner span {
+.globalStock .sub_search .sub_mid .tab_diagnosis_area .hiding_box .banner_signal .premium_banner .premium_banner .link_banner span {
   display: block;
   color: var(--Gray-gray600, #6B7684);
   font-family: var(--Body, Pretendard);
@@ -14782,7 +14793,7 @@ table.tableRanking td {
   line-height: var(--Line-height-sm, 18px); /* 128.571% */
   letter-spacing: var(--Tracking-md, -0.3px);
 }
-.globalStock .sub_search .sub_mid .tab_diagnosis_area .hiding_box .banner_signal .premium_banner .banner_btn {
+.globalStock .sub_search .sub_mid .tab_diagnosis_area .hiding_box .banner_signal .premium_banner .premium_banner .banner_btn {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -14798,12 +14809,6 @@ table.tableRanking td {
   font-weight: var(--Weight-600, 600);
   line-height: var(--Line-height-xs-13, 16px); /* 123.077% */
   letter-spacing: var(--Tracking-md, -0.3px);
-}
-.globalStock .sub_search .sub_mid .tab_diagnosis_area .hiding_box .banner_signal .premium_banner {
-  overflow: hidden;
-  border-radius: 16px;
-  background-color: #fff;
-  max-width: none !important;
 }
 
 .globalStock .sub_search .sub_mid .tab_diagnosis_area .hiding_box .alloca_star {
@@ -17211,12 +17216,15 @@ table.tableRanking td {
   border-radius: var(--Spacing-s-06, 16px);
   background: #ECEFFD;
   margin: 0 auto 32px;
-  box-shadow: 0px -40px 21px 0px rgba(255, 255, 255, 0.8);
+  background-color: #fff;
+  border-radius: 0;
+  box-shadow: 0 -24px 20px 10px white;
   position: absolute;
-  left: 20px;
-  right: 20px;
+  left: 0px;
+  right: 0px;
   bottom: -25px;
   margin: 24px auto;
+  padding: 0 20px;
 }
 .globalStock .sub_attract .sub_mid.attract_sub .banner_signal .premium_banner {
   display: flex;
@@ -17301,6 +17309,10 @@ table.tableRanking td {
   line-height: var(--Line-height-xs-13, 16px); /* 123.077% */
   letter-spacing: var(--Tracking-md, -0.3px);
 }
+.globalStock .sub_attract .sub_mid.attract_sub .banner_signal .premium_banner {
+  max-width: none;
+}
+
 .globalStock .sub_attract .sub_mid.attract_sub .weeks_free {
   box-shadow: 0px -40px 21px 0px rgba(255, 255, 255, 0.8);
   position: absolute;

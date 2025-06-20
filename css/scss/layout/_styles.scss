@@ -14525,13 +14525,19 @@ table.tableRanking td {
 	border-radius: 10px;
 	position: relative;
 
-	.banner_signal {
-		@include banner_CTA;
-		margin: 0 !important;			
+	.banner_signal {		
+		margin: 0 -15px 0 -15px !important;					
+		padding: 0 20px 24px !important;
+		border-radius: 0 !important;
+		background-color: #fff !important;		
+		box-shadow: 0 -24px 20px 10px white;
+		position: relative;
+		top: 20px;
+		
 		.premium_banner {
+			@include banner_CTA;
 			overflow: hidden;
-			border-radius: 16px;
-			background-color: #fff;
+			border-radius: 16px;			
 			max-width: none !important;
 		}
 		
@@ -17020,14 +17026,17 @@ table.tableRanking td {
 	.banner_signal {		
 		// @include banner_base;				
 		@include banner_subTop_btn;				
-		box-shadow: 0px -40px 21px 0px rgba(255, 255, 255, 0.8);
+		background-color: #fff;
+		border-radius: 0;
+		box-shadow: 0 -24px 20px 10px white;
 		position: absolute;
-		left: 20px;
-		right: 20px;
+		left: 0px;
+		right: 0px;
 		bottom: -25px;
 		margin: 24px auto;			
-		.bg_box {
-		
+		padding: 0 20px;
+		.premium_banner {			
+			max-width: none;
 		}
 	}
 }
