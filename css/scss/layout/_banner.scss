@@ -1,14 +1,14 @@
 // 하단 플로팅 배너
 .v_signalStreng.globalStock .signalpop.event2024_payment {
-	.box  {
+	.box {
 		background: #fff url('/img/signalpop_sdwbg.png') repeat-x left bottom;
 		background-size: contain;
 	}
-	
+
 
 	.content {
-		max-width: 540px;		
-		margin: 0 auto;		
+		max-width: 540px;
+		margin: 0 auto;
 		border-top-left-radius: 20px;
 		border-top-right-radius: 20px;
 		padding-top: 30px;
@@ -17,6 +17,7 @@
 			background: none;
 			padding-top: 16px;
 			padding-bottom: 16px;
+
 			p.txt01 {
 				display: flex;
 				align-items: center;
@@ -47,10 +48,11 @@
 			}
 		}
 
-		.img_area {			
+		.img_area {
 			// max-width: 400px;
 			max-width: 290px;
 			margin: 0 auto;
+
 			.img_banner {
 				display: block;
 				width: 100%;
@@ -134,7 +136,7 @@
 	// 	padding-top: 30px;
 	// }
 
-	
+
 }
 
 // 2024년 신년이벤트
@@ -151,4 +153,69 @@
 		}
 	}
 
+}
+
+// 초스-알림개편-배너
+.v_signalStreng.globalStock .alarm_noti_banner {
+	background: #161C40;
+	padding: 2px 24px;
+	box-sizing: border-box;
+	.width_box {
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 4px 12px;		
+		width: 100%;
+		height: 68px;
+		box-sizing: border-box;		
+		max-width: 340px;
+		margin: 0 auto;
+		.link_banner {
+			display: flex;
+			flex-wrap: wrap;
+			flex-direction: column;
+			gap: 2px 2px;
+			color: var(--Font-tertiary-caption, #8C98A7);
+			font-family: var(--Body, Pretendard);
+			font-size: var(--Size-xs-13, 13px);
+			font-style: normal;
+			font-weight: var(--Weight-400, 400);
+			line-height: var(--Line-height-xs-13, 16px); /* 123.077% */
+			letter-spacing: var(--Tracking-md, -0.3px);
+			b {
+				display: block;
+				color: #FFF;
+				font-family: var(--Body, Pretendard);
+				font-size: var(--Size-md-15, 15px);
+				font-style: normal;
+				font-weight: var(--Weight-600, 600);
+				line-height: var(--Line-height-lg, 21px); /* 140% */
+				letter-spacing: var(--Tracking-md, -0.3px);
+				i {
+					color: var(--Yellow-yellow400, #FFDA4D);
+					font-family: var(--Body, Pretendard);
+					font-size: var(--Size-md-15, 15px);
+					font-style: normal;
+					font-weight: 600;
+					line-height: var(--Line-height-lg, 21px);
+					letter-spacing: var(--Tracking-md, -0.3px);
+				}
+			}			
+		}
+		.banner_bg {
+			display: inline-flex;
+			width: 64px;
+			height: auto;
+			align-items: center;
+			justify-content: center;
+			margin-left: auto;
+
+			img {					
+				width: 100%;
+				height: 100%;
+			}
+		}
+	}
+	
 }

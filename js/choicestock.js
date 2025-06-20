@@ -40,7 +40,10 @@ $(document).ready(function () {
     };
 
     // 모달 열기 이벤트 바인딩
-    $('[data-popup]').on('click', function() {
+    $('[data-popup]').on('click', function(e) {
+        if ($(this).is('a')) {
+            e.preventDefault(); // a 태그의 기본 동작 방지
+        }
         const popupId = $(this).data('popup');
         ModalPopup.open(popupId);
     });
@@ -2130,7 +2133,6 @@ $(document).ready(function () {
         $(this).addClass('active');
         
         // 다른 탭 버튼에서 'active' 클래스 제거
-        $('.mainBox.outline .chart_box .period_tabs li').not(this).removeClass('active');
     });
 
     // 메인페이지 2024 신년이벤트 배너

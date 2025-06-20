@@ -184,7 +184,8 @@
         </p>
     </div>
 
-    <div id="wrap">
+    <div id="wrap">       
+
         <!-- 하단 GNB -->
         <div class="gnb">
             <ul class="list">
@@ -198,6 +199,32 @@
         <!-- //gnb -->
 
         <div id="container">
+
+            <!-- 유료 회원용 알림 배너: 매매신호 & 관심종목 알림 서비스 변경 안내 -->
+            <div class="alarm_noti_banner" onclick="location.href =''" style="cursor: pointer;">            
+                <div class="width_box">                
+                    <div class="link_banner">
+                        <b>매매신호 & 관심종목 알림 개편 안내</b>
+                        문자/알림톡 서비스가 중지됩니다.
+                    </div>
+                    <div class="banner_bg"><img src="img/bell_mark.png" alt=""></div>
+                </div>
+                <!-- //width_box -->            
+            </div>
+            <!-- //유료 회원용 알림 배너 -->
+            <br>
+            <!-- 무료 회원용 프로모션 배너: 첫 달 1,000원 할인 이벤트 -->
+            <div class="alarm_noti_banner" onclick="location.href =''" style="cursor: pointer;">            
+                <div class="width_box">                
+                    <div class="link_banner">
+                        <b>초이스스탁US 첫 달 <i>1,000원!</i></b>
+                        AI가 알려주는 매매신호! 미국주식 시작하세요.
+                    </div>
+                    <div class="banner_bg"><img src="img/visual_flag2.png" alt=""></div>
+                </div>
+                <!-- //width_box -->            
+            </div>
+            <!-- //무료 회원용 프로모션 배너 -->
 
             <div id="header" class="header m_hdr">
                 <div class="headerTop">
@@ -296,7 +323,7 @@
                                 <div class="swiper-slide">
                                     <ul>
                                         <li class="txt">
-                                            <a href="#" data-modal="modal-3" class="btn_free md-trigger">
+                                            <a href="#" class="btn_free md-trigger">
                                                 <span class="note_issue"><svg xmlns="http://www.w3.org/2000/svg"
                                                         width="20" height="20" viewBox="0 0 20 20" fill="none">
                                                         <path
@@ -311,7 +338,7 @@
                                 <div class="swiper-slide">
                                     <ul>
                                         <li class="txt">
-                                            <a href="#" data-modal="modal-3" class="btn_free md-trigger">
+                                            <a href="#" data-popup="first_month_3300" class="btn_free md-trigger">
                                                 <span class="note_issue"><svg xmlns="http://www.w3.org/2000/svg"
                                                         width="20" height="20" viewBox="0 0 20 20" fill="none">
                                                         <path
@@ -694,8 +721,8 @@
                             <div class="event2025_banner app_and" onclick="location.href =''" style="cursor: pointer;">
                                 <div class="banner_bg app_and"></div>
                                 <a href="" class="link_banner">
-                                    <span>실시간 투자정보 알람을 받아보세요~!</span>
-                                    초이스스탁US<br><b>앱 다운로드 하러가기</b>
+                                    <span>실시간 투자정보 알람을 받아보세요.</span>
+                                    초이스스탁US 앱으로<br><b>빠르고 편리하게!</b>                                    
                                 </a>
                             </div>
                             <!-- //메인 상단 이벤트 배너 -->
@@ -771,7 +798,7 @@
                                 <div class="area">
                                     <ul class="list">
                                         <li class="title">
-                                            <a href="#">마<span class="remark">
+                                            <a href="#" data-popup="first_month_3300">마 <span class="remark">
                                                     <div class="txt_filter size_M"><i></i><i></i><i></i><i></i></div>
                                                 </span></a>
                                         </li>
@@ -942,7 +969,7 @@
                                     <tbody>
                                         <tr>
                                             <td class="title t_short">
-                                                <a href="#" data-modal="modal-3" class="md-trigger"> 애<span
+                                                <a href="#" data-popup="first_month_3300" class="md-trigger"> 애<span
                                                         class="remark">
                                                         <div class="txt_filter size_M"><i></i><i></i><i></i><i></i>
                                                         </div>
@@ -2004,6 +2031,42 @@
     <!-- //wrap -->
 
     <div class="modalBox">
+
+        <!-- 첫 달 1000원 유도 팝업 -->
+        <div class="modal first_month_3300">
+            <div class="pop_header">
+                <h2 class="pop_title">AI가 알려주는 투자타이밍!</h2>
+                <p class="period">초이스스탁US 프리미엄</p>
+                <span class="clse">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                        <path
+                            d="M18.7929 4.29314C19.1834 3.90261 19.8164 3.90261 20.207 4.29314C20.5974 4.68367 20.5975 5.31669 20.207 5.7072L13.414 12.5002L20.207 19.2931L20.2753 19.3693C20.5956 19.7621 20.573 20.3411 20.207 20.7072C19.8408 21.0733 19.2618 21.0959 18.8691 20.7756L18.7929 20.7072L11.9999 13.9142L5.20695 20.7072C4.81644 21.0977 4.18342 21.0977 3.79289 20.7072C3.40237 20.3167 3.40237 19.6837 3.79289 19.2931L10.5859 12.5002L3.79289 5.7072L3.72453 5.63103C3.40418 5.23825 3.42677 4.65925 3.79289 4.29314C4.15901 3.92704 4.73801 3.90443 5.13078 4.22478L5.20695 4.29314L11.9999 11.0861L18.7929 4.29314Z"
+                            fill="#24282C" />
+                    </svg>
+                </span>
+            </div>
+            <div class="bot_box">
+                <img src="../img/gdn_bot.png" alt="">
+                <span class="bubble_img"><img src="../img/bubble_up.png" alt=""></span>
+            </div>
+            <div class="pop_con">
+                <ul>
+                    <li>지금살까? 특허받은 전종목 <b>매매신호</b></li>
+                    <li>매수부터 매도까지! <b>종목추천</b></li>
+                    <li>투자매력과 적정주가를 한눈에 <b>종목진단</b></li>
+                </ul>
+            </div>
+
+            <div class="pop_footer">
+                <div class="btnArea payBtn">                    
+                    <a href="https://www.choicestock.co.kr/main/service" class="btn btn_apply">미국주식 <b>첫 달 1,000원</b></a>
+                </div>
+            </div>
+            <!-- //pop_footer  -->
+        </div>
+        <!-- //첫 달 1000원 유도 팝업 -->
+
+
         <!-- 마켓스코어 공포 지수 툴팁 -->
         <div class="modal tooltip_pop score_pop01">
             <div class="pop_header">
@@ -2028,38 +2091,5 @@
         <div class="blocker"></div>
     </div>
 </body>
-
-<!-- Modal popup -->
-<!-- 프리미엄 첫 달 1,000원! -->
-<div class="first_month_3300 md-modal md-effect-3" id="modal-3">
-    <!-- class : md-show 가 없는 경우 팝업 숨김, md-show 있는 경우 팝업 노출  -->
-    <div class="md-content">
-        <div id="setting" class="setting_area">
-            <div class="pop_header">
-                <a href="#setting_anchor" title="로그인 레이어 닫기" class="close"><img src="img/clse_w.png" alt="팝업닫기"></a>
-                <div class="sub_top">
-                    <h2 class="h2_title">AI가 알려주는 투자타이밍!</h2>
-                    <p class="period">초이스스탁US 프리미엄</p>
-                </div>
-            </div>
-            <!-- //pop_header -->
-            <div class="pop_con">
-                <ul>
-                    <li><span class="num">1</span>지금살까? 특허받은 전종목 <b>매매신호</b></li>
-                    <li><span class="num">2</span>매수부터 매도까지! <b>종목추천</b></li>
-                    <li><span class="num">3</span>투자매력과 적정주가를 한눈에 <b>종목진단</b></li>
-                </ul>
-            </div>
-            <div class="pop_btm">
-                <div class="btnArea payBtn">
-                    <!-- <a href="login_complete.html" class="btn btn_save"><b>프리미엄</b> 가입하기<i></i></a> -->
-                    <a href="stock/service_prm.html" class="btn btn_save">프리미엄 <b>첫 달 1,000원!</b></a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="md-overlay"></div><!-- the overlay element -->
-
 
 </html>

@@ -46,7 +46,7 @@
 <body class="v_signalStreng globalStock">
     <div id="wrap">
         <!-- 2024 신년 이벤트 -->
-        <div class="event2024_payment_sub">
+        <div class="event2024_payment_sub" style="display: none;">
             <!-- <a href="../payment/step01.html" class=""><img src="../img/banner/event_subTop_240611.png" alt=""></a> -->
             <!--  -->
             <script>
@@ -73,6 +73,33 @@
             </script>
         </div>
         <!-- //2024 신년 이벤트 -->
+
+        <!-- 유료 회원용 알림 배너: 매매신호 & 관심종목 알림 서비스 변경 안내 -->
+        <div class="alarm_noti_banner" onclick="location.href =''" style="cursor: pointer;">            
+            <div class="width_box">                
+                <div class="link_banner">
+                    <b>매매신호 & 관심종목 알림 개편 안내</b>
+                    문자/알림톡 서비스가 중지됩니다.
+                </div>
+                <div class="banner_bg"><img src="../img/bell_mark.png" alt=""></div>
+            </div>
+            <!-- //width_box -->            
+        </div>
+        <!-- //유료 회원용 알림 배너 -->
+        <br>
+        <!-- 무료 회원용 프로모션 배너: 첫 달 1,000원 할인 이벤트 -->
+        <div class="alarm_noti_banner" onclick="location.href =''" style="cursor: pointer;">            
+            <div class="width_box">                
+                <div class="link_banner">
+                    <b>초이스스탁US 첫 달 <i>1,000원!</i></b>
+                    AI가 알려주는 매매신호! 미국주식 시작하세요.
+                </div>
+                <div class="banner_bg"><img src="../img/visual_flag2.png" alt=""></div>
+            </div>
+            <!-- //width_box -->            
+        </div>
+        <!-- //무료 회원용 프로모션 배너 -->
+
         <div id="header" class="header">            
             <div class="headerTop">
                 <div class="left">
@@ -1090,37 +1117,5 @@
     </div>
     <!-- //wrap -->
 </body>
-
-<!-- Modal popup -->
-<!-- 로그인만하면 2주 무료 -->
-<div class="first_month_3300 md-modal md-effect-3" id="modal-3">
-    <!-- class : md-show 가 없는 경우 팝업 숨김, md-show 있는 경우 팝업 노출  -->
-    <div class="md-content">
-        <div id="setting" class="setting_area">
-            <div class="pop_header">
-                <a href="#setting_anchor" title="로그인 레이어 닫기" class="close"><img src="../img/clse_w.png" alt="팝업닫기"></a>
-                <div class="sub_top">                    
-                    <h2 class="h2_title">AI가 알려주는 투자타이밍!</h2>
-                    <p class="period">초이스스탁US 프리미엄</p>
-                </div>
-            </div>
-            <!-- //pop_header -->
-            <div class="pop_con">
-                <ul>
-                    <li><span class="num">1</span>지금살까? 특허받은 전종목 <b>매매신호</b></li>
-                    <li><span class="num">2</span>매수부터 매도까지! <b>종목추천</b></li>
-                    <li><span class="num">3</span>자매력과 적정주가를 <b>한눈에 종목진단</b></li>
-                </ul>
-            </div>
-            <div class="pop_btm">
-                <div class="btnArea payBtn">
-                    <!-- <a href="login_complete.html" class="btn btn_save"><b>프리미엄</b> 가입하기<i></i></a> -->
-                    <a href="stock/service_prm.html" class="btn btn_save">프리미엄 <b>첫 달 3,300원!</b></a>
-                </div>                
-            </div>
-        </div>
-    </div>
-</div>
-<div class="md-overlay"></div><!-- the overlay element -->
 
 </html>
