@@ -14708,6 +14708,103 @@ table.tableRanking td {
   border-radius: 10px;
   position: relative;
 }
+.globalStock .sub_search .sub_mid .tab_diagnosis_area .hiding_box .banner_signal {
+  overflow: hidden;
+  border-radius: 16px;
+  background: var(--Background-primary-light-background, #F1F4F6);
+  margin: 0 auto 32px;
+  margin: 0 !important;
+}
+.globalStock .sub_search .sub_mid .tab_diagnosis_area .hiding_box .banner_signal .premium_banner {
+  display: flex;
+  align-items: center;
+  gap: 8px 16px;
+  width: 100%;
+  padding: 24px 20px;
+  box-sizing: border-box;
+  max-width: 340px;
+  margin: 0 auto;
+}
+@media (max-width: 374px) {
+  .globalStock .sub_search .sub_mid .tab_diagnosis_area .hiding_box .banner_signal .premium_banner {
+    padding: 23px 16px;
+  }
+}
+.globalStock .sub_search .sub_mid .tab_diagnosis_area .hiding_box .banner_signal .premium_banner .banner_bg {
+  position: relative;
+  display: inline-flex;
+  border-radius: 12px;
+  background-color: #fff;
+  min-width: 48px;
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+}
+.globalStock .sub_search .sub_mid .tab_diagnosis_area .hiding_box .banner_signal .premium_banner .banner_bg img {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+}
+.globalStock .sub_search .sub_mid .tab_diagnosis_area .hiding_box .banner_signal .premium_banner .link_banner {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 4px 4px;
+  width: 100%;
+  box-sizing: border-box;
+  color: var(--Gray-gray800, #24282C);
+  font-family: var(--Title, Pretendard);
+  font-size: var(--Size-md-16, 16px);
+  font-style: normal;
+  font-weight: var(--Weight-600, 600);
+  line-height: var(--Line-height-md, 22px); /* 137.5% */
+  letter-spacing: var(--Tracking-md, -0.3px);
+  word-break: break-all;
+  word-wrap: break-word;
+}
+.globalStock .sub_search .sub_mid .tab_diagnosis_area .hiding_box .banner_signal .premium_banner .link_banner b {
+  color: var(--Gray-gray800, #24282C);
+  font-weight: var(--Weight-600, 600);
+  line-height: var(--Line-height-md, 22px); /* 137.5% */
+  word-break: break-all;
+  word-wrap: break-word;
+}
+.globalStock .sub_search .sub_mid .tab_diagnosis_area .hiding_box .banner_signal .premium_banner .link_banner span {
+  display: block;
+  color: var(--Gray-gray600, #6B7684);
+  font-family: var(--Body, Pretendard);
+  font-size: var(--Size-sm, 14px);
+  font-style: normal;
+  font-weight: var(--Weight-400, 400);
+  line-height: var(--Line-height-sm, 18px); /* 128.571% */
+  letter-spacing: var(--Tracking-md, -0.3px);
+}
+.globalStock .sub_search .sub_mid .tab_diagnosis_area .hiding_box .banner_signal .premium_banner .banner_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 12px;
+  box-sizing: border-box;
+  min-width: 95px;
+  border-radius: var(--Radius-r-02, 8px);
+  background: var(--Font-primary-blue, #4168F6);
+  color: #FFF;
+  font-family: var(--Body, Pretendard);
+  font-size: var(--Size-xs-13, 13px);
+  font-style: normal;
+  font-weight: var(--Weight-600, 600);
+  line-height: var(--Line-height-xs-13, 16px); /* 123.077% */
+  letter-spacing: var(--Tracking-md, -0.3px);
+}
+.globalStock .sub_search .sub_mid .tab_diagnosis_area .hiding_box .banner_signal .premium_banner {
+  overflow: hidden;
+  border-radius: 16px;
+  background-color: #fff;
+  max-width: none !important;
+}
 
 .globalStock .sub_search .sub_mid .tab_diagnosis_area .hiding_box .alloca_star {
   border-bottom: 1px solid #E0E4E9;

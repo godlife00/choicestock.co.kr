@@ -14524,6 +14524,19 @@ table.tableRanking td {
 	padding: 23px 15px 20px;
 	border-radius: 10px;
 	position: relative;
+
+	.banner_signal {
+		@include banner_CTA;
+		margin: 0 !important;			
+		.premium_banner {
+			overflow: hidden;
+			border-radius: 16px;
+			background-color: #fff;
+			max-width: none !important;
+		}
+		
+	}
+	
 }
 
 .globalStock .sub_search .sub_mid .tab_diagnosis_area .hiding_box .alloca_star {
