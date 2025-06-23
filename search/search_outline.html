@@ -43,7 +43,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
     <!-- css -->
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <link rel="stylesheet" type="text/css" href="../css/scss/choicestock.css?ver=22" />
+    <link rel="stylesheet" type="text/css" href="../css/scss/choicestock.css?ver=22233" />
     <!-- js -->
     <script src="../js/choicestock.js?ver=250413"></script>
     <!-- 이 아래는 로컬에서만 사용되는 파일 -->
@@ -56,38 +56,20 @@
     <div class="free_2weeks open" id="layer_pop">
         <!-- 검색 페이지 하단 플로팅 배너 영역 -->
         <div class="signalpop event2024_payment">
-            <script>
-                document.addEventListener('DOMContentLoaded', function () {
-                    var images = [
-                        { src: '/img/banner/event_mainBtm_250409_v1.png', buttonText: '프리미엄 첫 달 <b>1,000원!</b>' },
-                        { src: '/img/banner/event_mainBtm_250409_v2.png', buttonText: '프리미엄 첫 달 <b>1,000원!</b>' },
-                        // { src: '/img/banner/event_mainBtm_250214_v3.png', buttonText: '프리미엄 첫 달 <b>1,000원!</b>' },
-                        // { src: '/img/banner/event_mainBtm_250214_v4.png', buttonText: '프리미엄 첫 달 <b>1,000원!</b>' },
-                        // 이미지와 버튼 텍스트를 객체로 추가할 수 있습니다.
-                    ];
-
-                    var randomIndex = Math.floor(Math.random() * images.length);
-                    var selectedImage = images[randomIndex];
-
-                    var divElement = document.querySelector('.info_txt');
-                    divElement.style.background = "url('" + selectedImage.src + "') no-repeat center 0";
-
-                    // 버튼 텍스트 변경
-                    var buttonElement = document.querySelector('.btn_area a');
-                    buttonElement.innerHTML = selectedImage.buttonText;
-                });
-            </script>
             <div class="box">
                 <div class="content"
-                    onclick="wiseClickBanner('home_underpopup', 'main_floating'); location.href ='/main/service'"
+                    onclick="wiseClickBanner('home_underpopup', 'main_floating'); location.href ='/main/onestop'"
                     style="cursor:pointer;">
                     <div class="info_txt">
-                        <p class="txt01">메타플랫폼스(META)</p>
-                        <p class="txt02">매매신호 수익률 227.44%</p>
+                        <p class="txt01">위험한 종목은 OUT!</p>
+                        <p class="txt02">좋은 종목만 IN!</p>
+                    </div>
+                    <div class="img_area">
+                        <img src="/img/banner/event_mainBtm_temp_v1.png" alt="" class="img_banner">
                     </div>
                     <div class="btn_area">
-                        <a href="/main/service" class="btn payment_1000"
-                            onclick="wiseClickBanner('home_underpopup', 'main_floating');">프리미엄 첫달 <b>1,000원!</b></a>
+                        <a href="/main/onestop" class="btn payment_1000"
+                            onclick="wiseClickBanner('home_underpopup', 'main_floating');">배너 버튼</a>
                     </div>
                 </div>
 
@@ -104,7 +86,9 @@
     <script language="Javascript" type="text/javascript">
         cookiedata = document.cookie;
         if (cookiedata.indexOf("mainpop=done") < 0) {
-            document.getElementById('layer_pop').style.display = "inline";
+            if (document.getElementById('layer_pop') != null) {
+                document.getElementById('layer_pop').style.display = "inline";
+            }
         } else {
             document.getElementById('layer_pop').style.display = "none";
         }
@@ -121,10 +105,37 @@
 
     <div id="wrap">
         <!-- 2024 신년 이벤트 -->
-        <div class="event2024_payment_sub">
+        <div class="event2024_payment_sub" style="display: none;">
             <a href="../payment/step01.html" class=""><img src="../img/banner/event_subTop_240611.png" alt=""></a>
         </div>
         <!-- //2024 신년 이벤트 -->
+
+        <!-- 유료 회원용 알림 배너: 매매신호 & 관심종목 알림 서비스 변경 안내 -->
+        <div class="alarm_noti_banner" onclick="location.href =''" style="cursor: pointer;">
+            <div class="width_box">
+                <div class="link_banner">
+                    <b>매매신호 & 관심종목 알림 개편 안내</b>
+                    문자/알림톡 서비스가 중지됩니다.
+                </div>
+                <div class="banner_bg"><img src="../img/bell_mark.png" alt=""></div>
+            </div>
+            <!-- //width_box -->
+        </div>
+        <!-- //유료 회원용 알림 배너 -->
+        <br>
+        <!-- 무료 회원용 프로모션 배너: 첫 달 1,000원 할인 이벤트 -->
+        <div class="alarm_noti_banner" onclick="location.href =''" style="cursor: pointer;">
+            <div class="width_box">
+                <div class="link_banner">
+                    <b>초이스스탁US 첫 달 <i>1,000원!</i></b>
+                    AI가 알려주는 매매신호! 미국주식 시작하세요.
+                </div>
+                <div class="banner_bg"><img src="../img/visual_flag2.png" alt=""></div>
+            </div>
+            <!-- //width_box -->
+        </div>
+        <!-- //무료 회원용 프로모션 배너 -->
+
         <div id="header" class="header">
 
             <div class="headerTop">
@@ -178,65 +189,73 @@
 
             <!-- 검색 종목 -->
             <div class="recom_company">
-                <ul class="list">
-                    <li class="ticker">AAPL</li>
-                    <li class="stock_index"><span>NASDAQ</span><span>S&P500</span></li>
-                    <li class="company_nm">마이크로소프트마이크로소프트마이크로소프트</li>
+                <div class="list_wrap">
+                    <div class="company_info">
+                        <div class="list company_name">
+                            <div class="company_nm" id="originalCompanyName">테슬라</div>
+                        </div>
+                        <div class="list company_details">
+                            <div class="ticker">TSLA</div>
+                            <div class="stock_index">
+                                <span>NASDAQ</span>
+                                <span>S&amp;P500</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //company_info -->
+                    <ul class="list">
+                        <li class="detail">
+                            <div class="num">
+                                <span id="last_price">295.<b>10</b></span>
+                            </div>
+                            <div class="per">
+                                <span class="increase" id="diff">+10.40</span>
+                                <span class="increase" id="diff_rate">(+3.65<b>%</b>)</span>
+                                <span class="day">06/06, 장마감</span>
+                            </div>
+                        </li>
+                        <!-- 애프터마켓 -->
+                        <li class="detail market_status">
+                            <div class="after_market">
+                                애프터마켓
+                            </div>
+                            <div class="num">
+                                <span id="over_last_price"><b>297</b>.38</span>
+                            </div>
+                            <div class="per">
+                                <span id="over_diff" class="increase"><b>+2</b>.24</span>
+                                <span id="over_diff_rate" class="increase">(<b>+0</b>.76%)</span>
+                                <span id="over_price_date" class="day">장마감, USD</span>
+                            </div>
+                        </li>
+                        <!-- 프리마켓 -->
+                        <li class="detail market_status">
+                            <div class="pre_market">
+                                프리마켓
+                            </div>
+                            <div class="num">
+                                <span><b>898.</b>00</span>
+                            </div>
+                            <div class="per">
+                                <span class="decrease"><b>-89.</b>89</span>
+                                <span class="decrease">(<b>-89.</b>89%)</span>
+                                <!-- increase 증가, decrease 감소, 보합은 same -->
+                                <span class="day">11:35, USD</span>
+                            </div>
+                        </li>
 
-                    <!-- 정규장 -->
-                    <li class="detail">
-                        <div class="num">
-                            <span><b>898.</b>00</span>
-                        </div>
-                        <div class="per">
-                            <span class="increase"><b>+89.</b>89</span>
-                            <span class="increase">(<b>+89.</b>89%)</span>
-                            <!-- increase 증가, decrease 감소, 보합은 same -->
-                            <span class="day">1/23, 장마감</span>
-                        </div>
-                    </li>
-                    <!-- 애프터마켓 -->
-                    <li class="detail market_status">
-                        <div class="after_market">
-                            애프터마켓
-                        </div>
-                        <div class="num">
-                            <span><b>898.</b>00</span>
-                        </div>
-                        <div class="per">
-                            <span class="increase"><b>+89.</b>89</span>
-                            <span class="increase">(<b>+89.</b>89%)</span>
-                            <!-- increase 증가, decrease 감소, 보합은 same -->
-                            <span class="day">04:35, USD</span>
-                        </div>
-                    </li>
-                    <!-- 프리마켓 -->
-                    <li class="detail market_status">
-                        <div class="pre_market">
-                            프리마켓
-                        </div>
-                        <div class="num">
-                            <span><b>898.</b>00</span>
-                        </div>
-                        <div class="per">
-                            <span class="decrease"><b>-89.</b>89</span>
-                            <span class="decrease">(<b>-89.</b>89%)</span>
-                            <!-- increase 증가, decrease 감소, 보합은 same -->
-                            <span class="day">11:35, USD</span>
-                        </div>
-                    </li>
-                </ul>
+                    </ul>
+                </div>
 
                 <div class="attention_box">
                     <ul>
-                        <li class="attention" id="catch_icon_one_sub"><i></i><strong id="catch_count_one">351</strong>명의
+                        <li class="attention" id="catch_icon_one_sub"><i></i><strong
+                                id="catch_count_one">7,817</strong>명의
                             관심</li>
                     </ul>
                     <div class="stock_tag">
-                        <span><a href="/stock/recipe/dividend">#배당매력주</a></span>
-                        <span><a href="/stock/recipe/growth">#이익성장주</a></span>
-                        <span><a href="/stock/recipe/moat">#소비자독점주</a></span>
-                        <!-- <span><a href="/stock/recipe/interest">#관심TOP50</a></span> -->
+                        <span><a href="/stock/recipe/moat">#소비자독점주</a></span> <span><a
+                                href="/stock/recipe/interest">#관심TOP50</a></span>
                     </div>
                 </div>
             </div>
@@ -263,13 +282,15 @@
                 <!--지금 살까? -->
                 <div class="mainBox attr">
                     <!-- 검색 개요 중간 신규 앱 출시 이벤트 배너 배너 -->
-                    <div class="event2025_banner app_and"
-                        onclick="window.open('https://play.google.com/store/apps/details?id=kr.co.datahero.choicestockus', '_blank')"
+                    <div class="event2025_banner app_and" onclick="location.href =''"
                         style="cursor: pointer; margin: 32px auto 0;">
-                        <a href="" class="link_banner">
-                            <span>실시간 투자정보 알람을 받아보세요~!</span>
-                            초이스스탁US <b>안드로이드앱 다운로드</b>
-                        </a>
+                        <div class="swipe_bannertemp">
+                            <div class="banner_bg app_and"></div>
+                            <a href="" class="link_banner">
+                                <span>실시간 투자정보 알람을 받아보세요.</span>
+                                초이스스탁US 앱으로<br><b>빠르고 편리하게!</b>
+                            </a>
+                        </div>
                     </div>
                     <!-- //검색 개요 중간 신년 이벤트 배너 -->
 
@@ -391,13 +412,19 @@
                     </div>
                 </div>
 
-                <!-- 프리미엄 배너 -->
-                <div class="banner_signal" style="display: none;">
-                    <!-- <a href="../payment/step01.html"><img src="../img/banner/banner_prm.jpg" alt="전품목 매매신호가 궁금하다면 초이스스탁US 프리미엄 월 3,300원"></a> -->
-                    <a href="../payment/step01.html"><img src="../img/banner/event_pay1000.jpg"
-                            alt="전품목 매매신호가 궁금하다면 초이스스탁US 프리미엄 월 3,300원"></a>
-
+                <!-- 미국주식은 초이스스탁! 첫 달 1,000원 -->
+                <div class="onethousand_banner">
+                    <div class="premium_banner" onclick="location.href ='https://www.choicestock.co.kr/main/service'"
+                        style="cursor: pointer;">
+                        <a href="https://www.choicestock.co.kr/main/service" class="link_banner">
+                            <span>매매신호와 종목추천까지 한번에</span>
+                            <b>미국주식은 초이스스탁!<br>첫 달 <i>1,000원</i></b>
+                        </a>
+                        <div class="banner_bg"><img src="../img/visual_flag2.png" alt=""></div>
+                    </div>
                 </div>
+                <!-- //onethousand_banner -->
+
 
                 <!-- outline -->
                 <div class="mainBox outline">
@@ -478,7 +505,20 @@
                                 <span class="">전년동기<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                         viewBox="0 0 16 16" fill="none">
                                         <path d="M6 3L11.2 8.2L6.4 13" stroke="#6B7684" stroke-linecap="round" />
-                                    </svg> </span>
+                                    </svg>
+                                </span>
+                                <!-- 툴팁 -->
+                                <div class="tooltip_content">
+                                    <i class="tooltip_icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8"
+                                            fill="none">
+                                            <path d="M8 0V8H0L8 0Z" fill="#1AE5D6" />
+                                        </svg>
+                                    </i>
+                                    <div class="tooltip_text">
+                                        <p class="txt">과거 스코어는?</span>
+                                    </div>
+                                </div>
                             </div>
                             <!-- //spider_year_item -->
                         </div>
@@ -513,12 +553,16 @@
                 </div>
                 <!-- //investCharm_area -->
 
+                <!-- 매매신호 링크 배너 -->
                 <div class="banner_signal">
-                    <a href=""><img src="../img/banner/today_trading_230901.jpg" alt="오늘의매매신호 지금살까? 매매신호 종목만 쏙쏙!"></a>
-                    <br><br>
-                    <a href="https://www.valueline.co.kr/member/service" target="_blank"><img
-                            src="../img/banner/event_discount_fly55.png"
-                            alt="20년 빅데이터 종목분석 밸류라인 프리미엄 평상할인 55% (선착순 100명)"></a>
+                    <div class="premium_banner" onclick="location.href ='https://www.choicestock.co.kr/stock/signal'"
+                        style="cursor: pointer;">
+                        <div class="banner_bg"><img src="../img/trading_signal_banner.png" alt=""></div>
+                        <a href="https://www.choicestock.co.kr/stock/signal" class="link_banner">
+                            <span>오늘의 매매신호</span>
+                            <b>지금살까? 매매신호 종목만 쏙쏙!</b>
+                        </a>
+                    </div>
                 </div>
 
                 <!-- 매출액, 영업이익, 주당순이익(EPS) 막대 차트 -->
@@ -738,10 +782,12 @@
         <div id="footer" class="chous_footer">
             <div class="notice">
                 <div class="service_info">
-                    <p>본 서비스는 투자판단에 참고용으로만 사용하실 수 있으며, 모든 투자판단은 투자자 본인의 책임으로 당사는 그 결과에 대해 법적인 일체의 책임을 지지 않습니다.</p>
+                    <p>데이터히어로가 제공하는 모든 콘텐츠는 오직 정보 제공 목적으로만 사용되며, 특정 주식을 판매하거나 추천할 의도로 게시된 것이 아닙니다. 데이터히어로의 콘텐츠는 연구 보고서가
+                        아니며, 투자 결정의 유일한 근거로 사용되어서는 안 됩니다.</p>
+                    <p>모든 투자에는 위험이 따르며, 과거 금융 상품의 성과가 미래의 결과나 수익을 보장하지 않습니다. 금융 상품에 투자할 때는 항상 재정적 손실의 가능성을 인지하고 있어야 하며,
+                        투자자는 투자하기 전에 자신의 투자 목표와 위험을 신중하게 고려해야 합니다.</p>
                     <p class="dataLink">data from <a href="https://www.quandl.com/" target="_blank">Quandl and
-                            Sharadar</a>
-                    </p>
+                            Sharadar</a></p>
                 </div>
 
                 <ul class="terms_list">
@@ -767,11 +813,8 @@
                 <!-- //foot_info -->
                 <div class="family_site">
                     <strong>Family</strong>&nbsp;&nbsp;&nbsp;&gt;&nbsp;&nbsp;&nbsp;
-                    <a href="https://super.choicestock.co.kr/?utm_source=choicestock&amp;utm_medium=banner&amp;utm_campaign=service"
-                        target="blank">슈퍼스톡스</a><i></i>
                     <a href="https://value.choicestock.co.kr/?utm_source=choicestock&amp;utm_medium=banner&amp;utm_campaign=service"
                         target="blank">밸류라인</a>
-                    <i></i> <a href="https://bigfinance.co.kr/" target="blank">빅파이낸스</a>
                 </div>
                 <!-- //family_site -->
 
@@ -951,9 +994,19 @@
                     </span>
                 </div>
                 <div class="pop_con">
-                    <p class="txt">20년 이상의 금융 빅데이터와 알고리즘 기술을 통해 종목의 매매신호를 신속하게 제시합니다.</p>
-                    <p class="txt">매매신호는 스마트 스코어 / 밸류에이션 / 수급분석 을 종합적으로 고려해 결정합니다.</p>
-                    <p class="txt">매매신호는 매수-보유-매도-관망 신호를 제공하며, 3개 조건을 모두 만족 할 때 매수 및 보유신호가 발생합니다.</p>
+
+                    <p class="sum_txt">20년간 축적된 금융 데이터와 AI 기술로 최적의 투자 타이밍을 알려드려요!</p>
+                    <p class="sum_txt"><b>🔍 어떻게 판단하나요?</b></p>
+                    <p class="sum_txt">스마트스코어/ 밸류에이션 / 수급분석을 종합적으로 분석해서 신호를 신속하게 제시합니다.</p>
+                    <p class="sum_txt"><b>📊 매매신호 종류</b></p>
+                    <ul>
+                        <li class="txt"><strong>매수 :</strong> 지금이 사기 좋은 타이밍이에요!</li>
+                        <li class="txt"><strong>보유 :</strong> 이미 매수했다면 계속 가지고 있으세요.</li>
+                        <li class="txt"><strong>매도 :</strong> 이익실현이나 손절을 고려해볼 시점이에요.</li>
+                        <li class="txt"><strong>관망 :</strong> 조금 더 지켜본 후 투자를 결정하세요.</li>
+                    </ul>
+                    <p class="guide_txt"><b>💡참고사항 :</b> 매수 신호가 나온 후 3일이 지나면 자동으로 보유 신호로 바뀝니다. 세 가지 조건(스마트스코어, 밸류에이션,
+                        수급분석)을 모두 만족할 때만 매수나 보유 신호가 나오니까 더 신뢰할 수 있어요!</p>
                 </div>
             </div>
 
@@ -1264,7 +1317,7 @@
                                 </ul>
 
                             </div>
-                            <!-- //future_growth_list -->                           
+                            <!-- //future_growth_list -->
                         </div>
                         <!-- //filter_box_inner -->
 
@@ -1287,7 +1340,7 @@
                                 </ul>
 
                             </div>
-                            <!-- //future_growth_list -->                            
+                            <!-- //future_growth_list -->
                         </div>
 
                         <div class="filter_box_inner" data-filter="profitability">
@@ -1310,7 +1363,7 @@
 
                             </div>
                             <!-- //future_growth_list -->
-                            
+
                         </div>
 
                         <div class="filter_box_inner" data-filter="cash_flow">
@@ -1333,16 +1386,17 @@
 
                             </div>
                             <!-- //future_growth_list -->
-                            
+
                         </div>
                     </div>
 
                     <div class="score_box_area recipe_list">
+                        
                         <div class="list_box"
                             onclick="window.open('https://www.choicestock.co.kr/stock/recipe/discovery', '_self')"
                             style="cursor: pointer;">
                             <div class="list_img">
-                                <img src="../img/icon_coin.png" alt="">
+                                <img src="../img/icon_candle.png" alt="">
                             </div>
                             <div class="list_content">
                                 <h2 class="title">투자레시피</h2>

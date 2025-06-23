@@ -5036,10 +5036,10 @@ $(document).ready(function () {
                 type: 'bubble',
                 plotBorderWidth: 2,
                 zoomType: 'x',
-                backgroundColor: '#f2faff',
-                borderColor: '#877edf',
+                backgroundColor: '#F6F8FF',
+                borderColor: '#BFD1FE',
                 // height: 280,
-                plotBorderColor: '#1d4a88',
+                plotBorderColor: '#BFD1FE',
                 plotShadow: false,
                 marginLeft: 0,
                 marginTop: -1,
@@ -5083,8 +5083,8 @@ $(document).ready(function () {
                     enabled: false
                 },
                 plotLines: [{
-                    color: '#C7CBE9',
-                    dashStyle: 'ShortDash',
+                    color: '#BFD1FE',
+                    dashStyle: 'dot',
                     width: 1.5,
                     value: 50,
                     label: {
@@ -5113,8 +5113,8 @@ $(document).ready(function () {
                     enabled: false
                 },
                 plotLines: [{
-                    color: '#C7CBE9',
-                    dashStyle: 'ShortDash',
+                    color: '#BFD1FE',
+                    dashStyle: 'dot',
                     width: 1.5,
                     value: 50,
                     label: {
@@ -5154,6 +5154,300 @@ $(document).ready(function () {
             }]
         });
     }
+    
+    if ($('#onestep_chart_simple').length) {
+
+        // 종목 데이터
+        const processedData = [
+            { x: 95, y: 95, name: 'TSLA' },
+            { x: 8.5, y: 12.9, name: 'AAPL' },
+            { x: 12.3, y: 86.1, name: 'DIS' },
+            { x: 25.4, y: 45.2, name: 'MSFT' },
+            { x: 35.8, y: 72.3, name: 'GOOGL' },
+            { x: 42.1, y: 28.7, name: 'META' },
+            { x: 15.9, y: 65.4, name: 'AMZN' },
+            { x: 78.2, y: 34.6, name: 'NFLX' },
+            { x: 55.7, y: 89.3, name: 'NVDA' },
+            { x: 28.4, y: 52.8, name: 'AMD' },
+            { x: 62.3, y: 41.5, name: 'INTC' },
+            { x: 45.6, y: 78.9, name: 'IBM' },
+            { x: 82.1, y: 25.4, name: 'CSCO' },
+            { x: 18.7, y: 93.2, name: 'ORCL' },
+            { x: 71.4, y: 61.8, name: 'CRM' },
+            { x: 38.9, y: 82.5, name: 'ADBE' },
+            { x: 92.5, y: 15.7, name: 'PYPL' },
+            { x: 22.8, y: 68.4, name: 'V' },
+            { x: 58.6, y: 37.2, name: 'MA' },
+            { x: 75.3, y: 55.9, name: 'JPM' },
+            { x: 32.7, y: 84.6, name: 'BAC' },
+            { x: 88.4, y: 29.3, name: 'WFC' },
+            { x: 48.2, y: 73.5, name: 'GS' },
+            { x: 65.9, y: 44.8, name: 'MS' },
+            { x: 15.3, y: 91.7, name: 'C' },
+            { x: 85.7, y: 22.6, name: 'BLK' },
+            { x: 42.8, y: 66.3, name: 'AXP' },
+            { x: 68.5, y: 33.9, name: 'USB' },
+            { x: 25.6, y: 88.4, name: 'PNC' },
+            { x: 78.9, y: 51.2, name: 'TFC' },
+            { x: 35.4, y: 77.8, name: 'SCHW' },
+            { x: 92.1, y: 18.5, name: 'GE' },
+            { x: 52.7, y: 62.9, name: 'BA' },
+            { x: 72.3, y: 41.6, name: 'CAT' },
+            { x: 18.9, y: 85.3, name: 'MMM' },
+            { x: 82.6, y: 27.4, name: 'HON' },
+            { x: 45.8, y: 71.2, name: 'UNH' },
+            { x: 65.2, y: 48.7, name: 'JNJ' },
+            { x: 28.7, y: 93.5, name: 'PFE' },
+            { x: 88.9, y: 32.1, name: 'MRK' },
+            { x: 13.3, y: 87.1, name: 'AAPL' },
+            { x: 53.4, y: 61.8, name: 'QCOM' },
+            { x: 100, y: 100, name: '100'},
+            { x: 98, y: 98, name: '98'},
+            { x: 0, y: 0, name: '00'},
+            { x: 5, y: 5, name: '5'},
+            { x: 60, y: 60, name: '60' },
+            { x: 60, y: 50, name: '50' },
+            { x: 49, y: 49, name: '49' },
+            { x: 40, y: 40, name: '40' },
+        ].map(label => ({
+            x: label.x,
+            y: label.y < 50 ? label.y - 15 : label.y,
+            name: label.name
+        }));
+        
+        Highcharts.chart('onestep_chart_simple', {
+            chart: {
+                type: 'scatter',
+                height: '420px',
+                backgroundColor: 'transparent',
+                margin: [0, 0, 0, 0],
+                
+            },
+            title: {
+                text: '',
+            },
+
+            navigator: {
+                enabled: false,
+            },
+
+            scrollbar: {
+                enabled: false,
+            },
+
+            rangeSelector: {
+                enabled: false,
+            },
+
+            credits: {
+                enabled: false
+            },
+
+            exporting: {
+                enabled: false,
+            },
+
+            legend: {
+                enabled: false,
+            },
+
+            tooltip: {
+                enabled: false,
+            },
+            
+            annotations: [{
+                labels: [
+                    {
+                        // 좌상단: "조심하세요"
+                        point: { x: 0, y: 0, xAxis: 0, yAxis: 0 },
+                        text: '조심하세요',
+                        backgroundColor: 'transparent',
+                        borderWidth: 0,
+                        shadow: false,
+                        padding: 0,
+                        distance: 0,
+                        borderRadius: 0,
+                        borderColor: 'transparent',
+                        style: {
+                            color: '#8C98A7', fontSize: '13px', fontWeight: '600'
+                        },
+                        align: 'left',
+                        verticalAlign: 'top',
+                        x: 15,
+                        y: -350,                        
+                    },
+                    {
+                        // 우상단: "조금 비싸요"
+                        point: { x: 50, y: 117, xAxis: 0, yAxis: 0 },
+                        text: '조금 비싸요',
+                        backgroundColor: 'transparent',
+                        borderWidth: 0,
+                        shadow: false,
+                        padding: 0,
+                        distance: 0,
+                        borderRadius: 0,
+                        borderColor: 'transparent',
+                        style: {
+                            color: '#8C98A7', fontSize: '13px', fontWeight: '600'
+                        },
+                        align: 'right',
+                        verticalAlign: 'top',
+                        x: 72,
+                        y: 0,
+                        
+                    },
+                    {
+                        // 좌하단: "관심있어요"
+                        point: { x: 0, y: 0, xAxis: 0, yAxis: 0 },
+                        text: '관심있어요',
+                        backgroundColor: 'transparent',
+                        borderWidth: 0,
+                        shadow: false,
+                        padding: 0,
+                        distance: 0,
+                        borderRadius: 0,
+                        borderColor: 'transparent',
+                        style: {
+                            color: '#8C98A7', fontSize: '13px', fontWeight: '600'
+                        },
+                        align: 'left',
+                        verticalAlign: 'bottom',
+                        x: 15,
+                        y: -127,        
+                    },
+                    {
+                        // 우하단: "매력적이네요"
+                        point: { x: 50, y: 0, xAxis: 0, yAxis: 0 },
+                        text: '매력적이네요',
+                        backgroundColor: 'transparent',
+                        borderWidth: 0,
+                        shadow: false,
+                        padding: 0,
+                        distance: 0,
+                        borderRadius: 0,
+                        borderColor: 'transparent',
+                        style: {
+                            color: '#8C98A7', fontSize: '13px', fontWeight: '600'
+                        },
+                        align: 'right',
+                        verticalAlign: 'bottom',
+                        x: 80,
+                        y: -127,   
+                    }
+                ]
+            }],
+
+            xAxis: {
+                min: 0,
+                max: 100,
+                gridLineWidth: 0,
+                lineWidth: 0,
+                tickWidth: 0,
+                plotLines: [{
+                    color: '#dddddd',
+                    width: 1,
+                    value: 50,
+                    zIndex: 1,
+                    dashStyle: 'Dash'
+                }],
+                labels: {
+                    enabled: false
+                },
+                title: {
+                    text: null
+                },
+                plotBands: [{
+                    // 위험 구역 (좌상단)
+                    from: 0,
+                    to: 50,
+                    color: '#F6F8FF'
+                }, {
+                    // 조금 비싸요 구역 (우상단)
+                    from: 50,
+                    to: 100,
+                    color: '#F6F8FF'
+                }]
+            },
+            yAxis: {
+                min: -10,
+                max: 110,                
+                gridLineWidth: 0,
+                lineWidth: 0,                
+                labels: {
+                    enabled: false
+                },
+                title: {
+                    text: null
+                },
+                plotLines: [{
+                    color: '#dddddd', 
+                    width: 1,
+                    value: 50,
+                    zIndex: 1,
+                    dashStyle: 'Dash'
+                }],
+                plotBands: [{
+                    // 관심있어요 구역 (좌하단)
+                    from: 0,
+                    to: 50,
+                    color: '#F6F8FF'
+                }, {
+                    // 매력적이네요 구역 (우하단)
+                    from: 50,
+                    to: 100,
+                    color: '#F6F8FF'
+                }]
+            },
+
+            
+            
+            series: [{
+                name: 'Stocks',
+                data: processedData,
+            }],
+
+            plotOptions: {
+                scatter: {
+                    marker: {
+                        enabled: false,  // 점 마커 숨김
+                        states: {
+                            hover: {
+                                enabled: false  // 마우스 올렸을 때도 마커 숨김
+                            }
+                        }
+                    },
+                    dataLabels: {
+                        allowOverlap: true, // 겹치더라도 모두 표시
+                        enabled: true,
+                        format: '{point.name}',
+                        backgroundColor: '#ffffff', // 흰색 배경
+                        borderRadius: 8,          // 둥근 모서리
+                        padding: 6,               // 내부 여백                        
+                        style: {
+                            color: '#4E5866',     // 텍스트 색상
+                            fontSize: '12px',
+                            fontWeight: 'normal',
+                            textOutline: 'none',                            
+                        },
+                        borderWidth: 1,           // 테두리 두께
+                        borderColor: '#D0DEFF',   // 테두리 색상
+                        shadow: false,            // 그림자 효과 제거
+                        useHTML: true,            // HTML 사용 활성화
+
+                        align: 'left',
+                        verticalAlign: 'middle',
+                        
+                    }
+                }
+            },
+        });
+    }
+    window.addEventListener('resize', function() {
+        if ($('#onestep_chart_simple').length) {            
+            $('#onestep_chart_simple').highcharts().reflow();
+        }
+    });
+    
 
     // 밴드 차트
     if ($('#sum_topchart_band').length) {
@@ -7812,16 +8106,75 @@ $(document).ready(function () {
     }
 
     // 마켓스코어 6개월 스마트스코어 선차트 스타일 설정
-    const getScoreChartOptions = () => {
+    const getScoreChartOptions = (scoreChartData) => {        
         return {
             chart: {
                 backgroundColor: 'transparent',
                 plotBackgroundColor: '#F7F8FA',
                 spacingLeft: 10,
                 spacingRight: 10,
-                marginRight: 28 // 오른쪽 여백 확보                
+                marginRight: 25, // 반응형 여백을 위해 퍼센트로 설정                
+                events: {
+                    load: function() {
+                        // 차트 로드 시 리사이즈 이벤트 리스너 등록
+                        const chart = this;
+                        let resizeTimeout;
+                        
+                        function handleResize() {
+                            clearTimeout(resizeTimeout);
+                            resizeTimeout = setTimeout(() => {
+                                chart.reflow();
+                            }, 100); // 디바운스 처리
+                        }
 
+                        window.addEventListener('resize', handleResize);
+
+                        // 차트 destroy 시 이벤트 리스너 제거
+                        this.unbindResize = function() {
+                            window.removeEventListener('resize', handleResize);
+                        };
+                    },
+                    destroy: function() {
+                        // 차트 destroy 시 등록된 이벤트 리스너 제거
+                        if (this.unbindResize) {
+                            this.unbindResize();
+                        }
+                    }
+                }
             },
+
+            responsive: {
+                rules: [{
+                    condition: {
+                        maxWidth: 480 // iPhone SE, 작은 모바일 기기
+                    },
+                    chartOptions: {
+                        chart: {
+                            marginRight: 30
+                        }
+                    }
+                }, {
+                    condition: {
+                        minWidth: 480,
+                        maxWidth: 640 // 태블릿 이하 중간 크기 모바일
+                    },
+                    chartOptions: {
+                        chart: {
+                            marginRight: 35
+                        }
+                    }
+                }, {
+                    condition: {
+                        minWidth: 640 // 태블릿 이상
+                    },
+                    chartOptions: {
+                        chart: {
+                            marginRight: 55
+                        }
+                    }
+                }]
+            },
+
 
             title: {
                 text: '',
@@ -7861,14 +8214,66 @@ $(document).ready(function () {
                 borderRadius: 32,
                 borderColor: '#608CFA',
                 padding: 14,
-                xDateFormat: '%Y.%m/%d',
+                xDateFormat: '%Y.%m/%d',                 
+                
+                positioner: function (labelWidth, labelHeight, point) {
+                    // 차트 영역 정보
+                    const chart = this.chart;
+                    let x = point.plotX + chart.plotLeft;
+                    let y = point.plotY + chart.plotTop - labelHeight - 10;
+            
+                    // 오른쪽 경계 체크 (툴팁이 차트 오른쪽을 넘지 않게)
+                    if (x + labelWidth > chart.plotLeft + chart.plotWidth) {
+                        x = chart.plotLeft + chart.plotWidth - labelWidth - 10;
+                    }
+                    // 왼쪽 경계 체크
+                    if (x < chart.plotLeft) {
+                        x = chart.plotLeft + 10;
+                    }
+                    // 위쪽 경계 체크 (툴팁이 차트 위를 넘지 않게)
+                    if (y < chart.plotTop) {
+                        y = point.plotY + chart.plotTop + 10;
+                    }
+                    // 아래쪽 경계 체크
+                    if (y + labelHeight > chart.plotTop + chart.plotHeight) {
+                        y = chart.plotTop + chart.plotHeight - labelHeight - 10;
+                    }
+            
+                    return { x, y };
+                },
+                
+                style: {
+                    pointerEvents: 'auto',
+                    zIndex: 99999 // z-index를 높게 설정해 y축 위에 올라오도록 함
+                },
                 formatter: function () {
                     var date = new Date(this.x);
                     date.setHours(date.getHours() + 9); // KST로 변환
                     var formattedDate = Highcharts.dateFormat('%Y.%m/%d', date);
                     var s = '<span style="display: block;margin-bottom: 4px; font-size:12px; color:#4E5866; font-weight:500;">' + formattedDate + '</span>';
                     this.points.forEach(function (point) {
-                        s += '<p style="font-size:12px; color:#4E5866; font-weight:500;">' + point.series.name + ': ' + point.y + '</p>';
+                        let label = '';
+                        let color = '';
+                        if (point.y > 75) {
+                            label = '탐욕';
+                            color = '#00A469';
+                        } else if (point.y > 56) {
+                            label = '과욕';
+                            color = '#EFC31A';
+                        } else if (point.y > 44) {
+                            label = '보통';
+                            color = '#F4A031';
+                        } else if (point.y > 25) {
+                            label = '불안';
+                            color = '#E9835B';
+                        } else {
+                            label = '공포';
+                            color = '#F03E4C';
+                        }
+                        s += `<p style="font-size:12px; color:#4E5866; font-weight:500;">
+                                ${point.series.name}: ${point.y} 
+                                <span style="color:${color}; font-weight:700;"> ${label}</span>
+                            </p>`;
                     });
                     return s;
                 }
@@ -7880,12 +8285,14 @@ $(document).ready(function () {
                 type: 'datetime',
                 showFirstLabel: true,
                 showLastLabel: true,
-                startOnTick: true,   // 시작 라벨 강제 표시
-                endOnTick: true,     // 끝 라벨 강제 표시   
+                startOnTick: false,   // 시작 라벨 강제 표시
+                endOnTick: false,     // 끝 라벨 강제 표시   
                 tickWidth: 0,
                 gridLineWidth: 0,
-                minPadding: 0.1,
-                maxPadding: 0.1,
+                // minPadding: 0.3,
+                // maxPadding: 0.3,                
+                min: scoreChartData[0][0] - 24 * 2 * 60 * 60 * 1000,
+                max: scoreChartData[scoreChartData.length - 1][0] + 24 * 2 * 60 * 60 * 1000,                
                 labels: {
                     x: 6,
                     style: {
@@ -7908,42 +8315,42 @@ $(document).ready(function () {
                     }
 
                     return positions;
-                }
+                },
             },
 
             yAxis: {
                 title: {
                     text: ''
                 },
-                gridLineWidth: 1,
+                gridLineWidth: 0,
                 gridLineDashStyle: 'Dash',
                 showFirstLabel: false,
                 showLastLabel: true,
                 opposite: true,
-                minPadding: 0.1,
-                maxPadding: 0.1,
+                minPadding: 0.3,
+                maxPadding: 0.3,                
                 labels: {
                     useHTML: true,
                     x: 10,
-                    y: 20,
+                    y: 30,
                     formatter: function () {
                         let icon = '';
                         let label = '';
                         let color = '';
 
-                        if (this.value > 80) {
+                        if (this.value > 77) {
                             icon = '<img src="../img/icon_extreme.svg" width="16" height="16" />';
                             label = '탐욕';
                             color = '#00A469';
-                        } else if (this.value > 60) {
+                        } else if (this.value > 61) {
                             icon = '<img src="../img/icon_greed.svg" width="16" height="16" />';
                             label = '과욕';
                             color = '#EFC31A';
-                        } else if (this.value > 40) {
+                        } else if (this.value > 45) {
                             icon = '<img src="../img/icon_normal.svg" width="16" height="16" />';
                             label = '보통';
                             color = '#F4A031';
-                        } else if (this.value > 20) {
+                        } else if (this.value > 23) {
                             icon = '<img src="../img/icon_anxiety.svg" width="16" height="16" />';
                             label = '불안';
                             color = '#E9835B';
@@ -7961,9 +8368,15 @@ $(document).ready(function () {
                         `;
                     }
                 },
-                tickPositions: [0, 20, 40, 60, 80, 100],
+                tickPositions: [0, 23, 45, 61, 77, 100], // 표시할 라벨 위치 조정
                 min: 0,
-                max: 100
+                max: 100,
+                plotLines: [ // 구간 별 표시할 라인 추가
+                    { value: 25, color: '#E9835B', width: 1, dashStyle: 'Dash' },
+                    { value: 44, color: '#F4A031', width: 1, dashStyle: 'Dash' },
+                    { value: 56, color: '#EFC31A', width: 1, dashStyle: 'Dash' },
+                    { value: 75, color: '#00A469', width: 1, dashStyle: 'Dash' }
+                ],
             },
 
             plotOptions: {
@@ -8007,7 +8420,7 @@ $(document).ready(function () {
     // 마켓스코어 6개월 마켓스코어 선차트 렌더링 함수
     const renderScoreChart = () => {
         if ($('#score_chart').length) {
-            const options = getScoreChartOptions();
+            const options = getScoreChartOptions(scoreChartData);
             options.series = [{
                 name: '마켓스코어',
                 data: scoreChartData
@@ -8022,8 +8435,8 @@ $(document).ready(function () {
         return Highcharts.chart(containerId, {
             chart: {
                 type: 'area',
-                margin: [0, 10, 30, 10],
-                backgroundColor: 'transparent'
+                margin: [10, 10, 30, 20],
+                backgroundColor: 'transparent',
             },
             title: { text: '' },
             navigator: { enabled: false },
@@ -8032,36 +8445,78 @@ $(document).ready(function () {
             credits: { enabled: false },
             exporting: { enabled: false },
             legend: { enabled: false },
-            tooltip: { enabled: false },
+            
+            tooltip: {
+                shadow: false,
+                split: false,
+                shared: true,
+                useHTML: true,
+                backgroundColor: '#fff',
+                borderWidth: 1,
+                borderRadius: 32,
+                borderColor: '#608CFA',
+                padding: 14,
+                xDateFormat: '%Y.%m/%d',
+                // outside: true, // 툴팁이 차트 밖으로 나가도 표시되도록 설정                
+                style: {
+                    // pointerEvents: 'auto',
+                    zIndex: 9999 // z-index를 높게 설정해 y축 위에 올라오도록 함
+                },
+                formatter: function () {
+                    var date = new Date(this.x);
+                    date.setHours(date.getHours() + 9); // KST로 변환
+                    var formattedDate = Highcharts.dateFormat('%Y.%m/%d', date);
+                    var s = '<span style="display: block;margin-bottom: 4px; font-size:12px; color:#4E5866; font-weight:500;">' + formattedDate + '</span>';
+                    this.points.forEach(function (point) {
+                        s += '<p style="font-size:12px; color:#4E5866; font-weight:500;">' + point.series.name + ': ' + point.y + '</p>';
+                    });
+                    return s;
+                }
+            },
 
             xAxis: {
                 type: 'datetime',
-                showFirstLabel: true,
-                showLastLabel: true,
-                startOnTick: true,
-                endOnTick: false,
-                tickWidth: 0,
-                gridLineWidth: 0,
-                minPadding: 0,
-                maxPadding: 0,
-                lineColor: '#E0E3E7',
+                showFirstLabel: true,    // 첫 번째 라벨 표시 여부
+                showLastLabel: true,     // 마지막 라벨 표시 여부
+                startOnTick: false,      // 시작점에서 눈금 표시 여부
+                endOnTick: false,         // 끝점에서 눈금 표시 여부
+                tickWidth: 0,            // 눈금 선의 너비
+                gridLineWidth: 0,        // 그리드 선의 너비
+                minPadding: 0,           // 최소 여백
+                maxPadding: 0,           // 최대 여백
+                lineColor: '#E0E3E7',                
                 labels: {
                     style: {
                         color: '#8C98A7',
                         fontSize: '12px',
                     },
                     formatter: function () {
-                        return Highcharts.dateFormat('%y.%m', this.value);
-                    }
+                        var date = new Date(this.value);
+                        date.setMonth(date.getMonth() - 1);
+                        return Highcharts.dateFormat('%y.%m', date);
+                    },
+                    align: 'center', // 라벨 정렬 방식을 중앙으로 설정
+                    reserveSpace: true, // 라벨을 위한 공간 확보
+                    distance: 25, // 축과 라벨 사이의 거리를 고정값으로 설정
+                    overflow: 'justify', // 라벨이 겹치지 않도록 자동 조정
+                    x: -24,
                 }
             },
             yAxis: {
                 title: { text: '' },
                 gridLineWidth: 1,
-                gridLineDashStyle: 'Dash',
+                gridLineDashStyle: 'Dash', 
                 showFirstLabel: false,
                 showLastLabel: true,
                 opposite: true,
+                min: 0,
+                max: 100,
+                // ceiling: 100, // 최대값을 100으로 고정
+                // floor: 0, // 최소값을 0으로 고정
+                // tickInterval: 20, // 눈금 간격을 20으로 설정
+                // minRange: 20, // 최소 표시 범위
+                startOnTick: true, // 시작점에서 눈금 표시
+                endOnTick: true, // 끝점에서 눈금 표시
                 minPadding: 0.1,
                 maxPadding: 0.1,
                 labels: { enabled: false }
@@ -8098,56 +8553,60 @@ $(document).ready(function () {
                             fontWeight: 'bold',
                             textOutline: 'none'
                         },
-                        y: -5
+                        y: -5,
+                        formatter: function() {
+                            var points = this.series.points;
+                            var lastPoint = points[points.length - 1];
+                            return this.point === lastPoint ? this.y : null;
+                        }
                     }
                 }
             },
-            series: [{
-                data: seriesData
-            }]
+            series: seriesData
         });
     }
 
     // 스마트스코어 종합점수 데이터
-    const scoreBoxData1 = [
-        [1644969600000, 38], [1645056000000, 25],
-        [1645142400000, 18], [1645228800000, 15], [1645315200000, 22], [1645401600000, 35]
-    ];
+    const scoreBoxData1 = [{
+        name: '종합점수',
+        data: [[1713193200000, 83],[1715785200000, 83],[1718290800000, 83],[1721055600000, 81],[1723734000000, 81],[1726412400000, 81],[1729004400000, 83],[1731596400000, 83],[1734274800000, 83],[1736953200000, 83],[1739458800000, 82],[1741878000000, 82],[1744729200000, 79]]
+    }];
 
     // 미래성장성 데이터 
-    const scoreBoxData2 = [
-        [1644969600000, 32], [1645056000000, 28],
-        [1645142400000, 25], [1645228800000, 48], [1645315200000, 55], [1645401600000, 62]
-    ];
+    const scoreBoxData2 = [{
+        name: '미래성장성',
+        data: [[1644969600000, 33], [1645056000000, 29],
+        [1645142400000, 26], [1645228800000, 49], [1645315200000, 54], [1645401600000, 63]]
+    }];
 
     // 독점력 데이터 
-    const scoreBoxData3 = [
-        [1644969600000, 32], [1645056000000, 28],
-        [1645142400000, 25], [1645228800000, 48], [1645315200000, 55], [1645401600000, 62]
-    ];
+    const scoreBoxData3 = [{
+        name: '독점력',
+        data: [[1644969600000, 31], [1645056000000, 27],
+        [1645142400000, 24], [1645228800000, 47], [1645315200000, 56], [1645401600000, 61]]
+    }];
 
     // 안정성 데이터 
-    const scoreBoxData4 = [
-        [1644969600000, 32], [1645056000000, 28],
-        [1645142400000, 25], [1645228800000, 48], [1645315200000, 55], [1645401600000, 62]
-    ];
+    const scoreBoxData4 = [{
+        name: '안정성',
+        data: [[1644969600000, 34], [1645056000000, 30],
+        [1645142400000, 26], [1645228800000, 50], [1645315200000, 53], [1645401600000, 60]]
+    }];
 
     // 수익성 데이터 
-    const scoreBoxData5 = [
-        [1644969600000, 32], [1645056000000, 28],
-        [1645142400000, 25], [1645228800000, 48], [1645315200000, 55], [1645401600000, 62]
-    ];
+    const scoreBoxData5 = [{
+        name: '수익성',
+        data: [[1644969600000, 31], [1645056000000, 29],
+        [1645142400000, 24], [1645228800000, 47], [1645315200000, 54], [1645401600000, 64]]
+    }];
 
     // 현금창출 데이터 
-    const scoreBoxData6 = [
-        [1644969600000, 32], [1645056000000, 28],
-        [1645142400000, 25], [1645228800000, 48], [1645315200000, 55], [1645401600000, 62]
-    ];
+    const scoreBoxData6 = [{
+        name: '현금창출',
+        data: [[1644969600000, 33], [1645056000000, 27],
+        [1645142400000, 26], [1645228800000, 49], [1645315200000, 57], [1645401600000, 60]]
+    }];
     
-    
-    
-    
-
     // 차트 렌더링을 위한 Intersection Observer 생성 함수
     function createChartObserver(chartId, data) {
         const observer = new IntersectionObserver((entries, observer) => {
@@ -8169,35 +8628,20 @@ $(document).ready(function () {
         }
     }
 
-    // 스마트스코어 종합점수
-    if ($('#score_box_chart').length) {
-        createChartObserver('score_box_chart', scoreBoxData1);
-    }
+    const chartDataMap = {
+        'score_box_chart': scoreBoxData1, // 종합점수
+        'score_box_chart2': scoreBoxData2, // 미래성장성
+        'score_box_chart3': scoreBoxData3, // 독점력
+        'score_box_chart4': scoreBoxData4, // 안정성
+        'score_box_chart5': scoreBoxData5, // 수익성
+        'score_box_chart6': scoreBoxData6 // 현금창출
+    };
 
-    // 미래성장성
-    if ($('#score_box_chart2').length) {
-        createChartObserver('score_box_chart2', scoreBoxData2);
-    }
-
-    // 독점력
-    if ($('#score_box_chart3').length) {
-        createChartObserver('score_box_chart3', scoreBoxData3);
-    }
-
-    // 안정성
-    if ($('#score_box_chart4').length) {
-        createChartObserver('score_box_chart4', scoreBoxData4);
-    }
-
-    // 수익성   
-    if ($('#score_box_chart5').length) {
-        createChartObserver('score_box_chart5', scoreBoxData5);
-    }
-
-    // 현금창출
-    if ($('#score_box_chart6').length) {    
-        createChartObserver('score_box_chart6', scoreBoxData6);
-    }
+    Object.entries(chartDataMap).forEach(([chartId, data]) => {
+        if ($(`#${chartId}`).length) {
+            createChartObserver(chartId, data);
+        }
+    });
 
 });
 

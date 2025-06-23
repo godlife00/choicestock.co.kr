@@ -28,7 +28,7 @@
     <script src="../node_modules/highcharts/modules/data.js"></script>
     <script src="../node_modules/highcharts/modules/hollowcandlestick.js"></script>
     <script src="../node_modules/highcharts/modules/no-data-to-display.js"></script>
-    <script src="../node_modules/highcharts/modules/treemap.js"></script>    
+    <script src="../node_modules/highcharts/modules/treemap.js"></script>
     <script src="../node_modules/highcharts/modules/exporting.js"></script>
     <script src="../node_modules/highcharts/modules/export-data.js"></script>
     <script src="../node_modules/highcharts/modules/accessibility.js"></script>
@@ -53,10 +53,11 @@
                 </div>
                 <div class="cen">
                     <h1 class="headerLogo"><span>알림</span></h1>
-                </div>       
-                <div class="right">                    
-                    <a href="briefing.html" class="go_briefing"><img src="../img/btn_briefing.png" alt="모닝브리핑 바로가기"> </a>
-                </div>                         
+                </div>
+                <div class="right">
+                    <a href="briefing.html" class="go_briefing"><img src="../img/btn_briefing.png" alt="모닝브리핑 바로가기">
+                    </a>
+                </div>
             </div>
             <!-- //headerTop -->
         </div>
@@ -74,60 +75,177 @@
                 </ul>
             </div>
             <!-- //gnb -->
-            <!-- 주요 콘텐츠 -->            
-            <div class="alarmArea">                
+            <!-- 주요 콘텐츠 -->
+            <div class="alarmArea">
+                <div class="swiper-container filter-swiper">
+                    <div class="swiper-wrapper filter_list">
+                        <div class="swiper-slide">
+                            <button class="filter_btn active" data-filter="all_briefing">전체</button>
+                        </div>
+                        <div class="swiper-slide">
+                            <button class="filter_btn" data-filter="recommend_briefing">종목추천</button>
+                        </div>
+                        <div class="swiper-slide">
+                            <button class="filter_btn" data-filter="content_briefing">브리핑&콘텐츠</button>
+                        </div>
+                        <div class="swiper-slide">
+                            <button class="filter_btn" data-filter="attention_briefing">관심종목</button>
+                        </div>
+
+                    </div>
+                </div>
                 <div class="alarmList">
-                    <ul>                              
-                        <li data-id="1">                            
-                            <a href="research_view.html">
-                                <span class="title"><i class="note"></i>종목노트</span>
-                                <span class="day">12/24</span>
-                                <span class="sum">[모닝브리핑] TLA 수익률 35% 돌파, 포트 수익률도 최고치 경신</span>                            
-                            </a>                                 
-                        </li>                        
-                        
-                        <li data-id="2">                 
-                            <a href="research_view.html">
-                                <span class="title"><i class="note"></i>종목노트</span>
-                                <span class="day">12/24</span>
-                                <span class="sum">[모닝브리핑] AMD 수익률 35% 돌파, 포트 수익률도 최고치 경신</span>
-                            </a>                                       
-                        </li>
-                        <li data-id="3">
-                            <a href="research_view.html">
-                                <span class="title"><i class="note"></i>종목노트</span>
+                    <div class="filter_box_inner" data-filter="all_briefing">
+                        <ul>
+                            <li data-id="1">
+                                <a href="research_view.html">
+                                    <span class="title"><i class="note"></i>종목노트</span>
+                                    <span class="day">12/24</span>
+                                    <span class="sum">[모닝브리핑] TLA 수익률 35% 돌파, 포트 수익률도 최고치 경신</span>
+                                </a>
+                            </li>
+
+                            <li data-id="2">
+                                <a href="research_view.html">
+                                    <span class="title"><i class="note"></i>종목노트</span>
+                                    <span class="day">12/24</span>
+                                    <span class="sum">[모닝브리핑] AMD 수익률 35% 돌파, 포트 수익률도 최고치 경신</span>
+                                </a>
+                            </li>
+                            <li data-id="3">
+                                <a href="research_view.html">
+                                    <span class="title"><i class="note"></i>종목노트</span>
+                                    <span class="day">12/23</span>
+                                    <span class="sum">[모닝브리핑] AMD 수익률 35% 돌파, 포트 수익률도 최고치 경신</span>
+                                </a>
+                            </li>
+                            <li data-id="3">
+                                <a href="research_view.html">
+                                    <span class="title"><i class="recom"></i>종목추천 &#38; 포트폴리오</span>
+                                    <span class="day">12/23</span>
+                                    <span class="sum">신규 종목추천이 등록되었습니다. - 줌 비디오 커뮤니케이션(ZM)</span>
+                                </a>
+                            </li>
+                            <li>
+                                <span class="title"><i class="interest"></i>관심종목</span>
                                 <span class="day">12/23</span>
-                                <span class="sum">[모닝브리핑] AMD 수익률 35% 돌파, 포트 수익률도 최고치 경신</span>
-                            </a>
-                        </li>
-                        <li data-id="3">
-                            <a href="research_view.html">
-                                <span class="title"><i class="recom"></i>종목추천 &#38; 포트폴리오</span>
+                                <span class="sum"><a href="" class="int_link">AMD</a> 외 <a href="" class="int_link">5건의
+                                        매매신호</a>가 포착 되었습니다</span>
+                                <div class="group">
+                                    <ul>
+                                        <!-- 매수 : buy,  매도 : sell -->
+                                        <li class="buy"><b>매수신호</b><a href="/stock/recom_view/GRVI/14709">그로브</a>, <a
+                                                href="/stock/recom_view/SII/14689">스프랏</a>, <a
+                                                href="/stock/recom_view/LOB/14656">라이브오크 뱅크셰어스</a>, <a
+                                                href="/stock/recom_view/EXPD/14635">익스피다이터스</a>, <a
+                                                href="/stock/recom_view/ANET/14609">아리스타 네트웍스</a></li>
+                                        <!-- 매수 : buy,  매도 : sell -->
+                                        <li class="sell"><b>매도신호</b><a href="/stock/recom_view/CHTR/13888">차터
+                                                커뮤니케이션즈</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span class="title"><i class="event"></i>이벤트 &#47; 알림</span>
+                                    <span class="day">12/23</span>
+                                    <span class="sum">초이스스탁US - 투자포탈 런칭기념 전 서비스 할인 이벤트</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- //전체 -->
+
+                    <div class="filter_box_inner" data-filter="recommend_briefing">
+                        <ul>                            
+                            <li data-id="3">
+                                <a href="research_view.html">
+                                    <span class="title"><i class="note"></i>종목노트</span>
+                                    <span class="day">12/23</span>
+                                    <span class="sum">[모닝브리핑] AMD 수익률 35% 돌파, 포트 수익률도 최고치 경신</span>
+                                </a>
+                            </li>
+                            <li data-id="3">
+                                <a href="research_view.html">
+                                    <span class="title"><i class="recom"></i>종목추천 &#38; 포트폴리오</span>
+                                    <span class="day">12/23</span>
+                                    <span class="sum">신규 종목추천이 등록되었습니다. - 줌 비디오 커뮤니케이션(ZM)</span>
+                                </a>
+                            </li>
+                            <li>
+                                <span class="title"><i class="interest"></i>관심종목</span>
                                 <span class="day">12/23</span>
-                                <span class="sum">신규 종목추천이 등록되었습니다. - 줌 비디오 커뮤니케이션(ZM)</span>                            
-                            </a>                            
-                        </li>
-                        <li>                            
-                            <span class="title"><i class="interest"></i>관심종목</span>
-                            <span class="day">12/23</span>
-                            <span class="sum"><a href="" class="int_link">AMD</a> 외 <a href="" class="int_link">5건의 매매신호</a>가 포착 되었습니다</span>                        
-                            <div class="group">
-                                <ul>
-                                    <!-- 매수 : buy,  매도 : sell -->
-                                    <li class="buy"><b>매수신호</b><a href="/stock/recom_view/GRVI/14709">그로브</a>, <a href="/stock/recom_view/SII/14689">스프랏</a>, <a href="/stock/recom_view/LOB/14656">라이브오크 뱅크셰어스</a>, <a href="/stock/recom_view/EXPD/14635">익스피다이터스</a>, <a href="/stock/recom_view/ANET/14609">아리스타 네트웍스</a></li>
-                                    <!-- 매수 : buy,  매도 : sell -->
-                                    <li class="sell"><b>매도신호</b><a href="/stock/recom_view/CHTR/13888">차터 커뮤니케이션즈</a></li>
-                                </ul>
-                            </div>    
-                        </li>
-                        <li>
-                            <a href="">
-                                <span class="title"><i class="event"></i>이벤트	&#47; 알림</span>
+                                <span class="sum"><a href="" class="int_link">AMD</a> 외 <a href="" class="int_link">5건의
+                                        매매신호</a>가 포착 되었습니다</span>
+                                <div class="group">
+                                    <ul>
+                                        <!-- 매수 : buy,  매도 : sell -->
+                                        <li class="buy"><b>매수신호</b><a href="/stock/recom_view/GRVI/14709">그로브</a>, <a
+                                                href="/stock/recom_view/SII/14689">스프랏</a>, <a
+                                                href="/stock/recom_view/LOB/14656">라이브오크 뱅크셰어스</a>, <a
+                                                href="/stock/recom_view/EXPD/14635">익스피다이터스</a>, <a
+                                                href="/stock/recom_view/ANET/14609">아리스타 네트웍스</a></li>
+                                        <!-- 매수 : buy,  매도 : sell -->
+                                        <li class="sell"><b>매도신호</b><a href="/stock/recom_view/CHTR/13888">차터
+                                                커뮤니케이션즈</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span class="title"><i class="event"></i>이벤트 &#47; 알림</span>
+                                    <span class="day">12/23</span>
+                                    <span class="sum">초이스스탁US - 투자포탈 런칭기념 전 서비스 할인 이벤트</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- //종목추천 -->
+
+                    <div class="filter_box_inner" data-filter="content_briefing">
+                        <ul>                            
+                            <li>
+                                <span class="title"><i class="interest"></i>관심종목</span>
                                 <span class="day">12/23</span>
-                                <span class="sum">초이스스탁US - 투자포탈 런칭기념 전 서비스 할인 이벤트</span>
-                            </a>                                                        
-                        </li>        
-                    </ul>
+                                <span class="sum"><a href="" class="int_link">AMD</a> 외 <a href="" class="int_link">5건의
+                                        매매신호</a>가 포착 되었습니다</span>
+                                <div class="group">
+                                    <ul>
+                                        <!-- 매수 : buy,  매도 : sell -->
+                                        <li class="buy"><b>매수신호</b><a href="/stock/recom_view/GRVI/14709">그로브</a>, <a
+                                                href="/stock/recom_view/SII/14689">스프랏</a>, <a
+                                                href="/stock/recom_view/LOB/14656">라이브오크 뱅크셰어스</a>, <a
+                                                href="/stock/recom_view/EXPD/14635">익스피다이터스</a>, <a
+                                                href="/stock/recom_view/ANET/14609">아리스타 네트웍스</a></li>
+                                        <!-- 매수 : buy,  매도 : sell -->
+                                        <li class="sell"><b>매도신호</b><a href="/stock/recom_view/CHTR/13888">차터
+                                                커뮤니케이션즈</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span class="title"><i class="event"></i>이벤트 &#47; 알림</span>
+                                    <span class="day">12/23</span>
+                                    <span class="sum">초이스스탁US - 투자포탈 런칭기념 전 서비스 할인 이벤트</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- //브리핑&콘텐츠 -->
+
+                    <div class="filter_box_inner" data-filter="attention_briefing">
+                        <ul>
+                            <li data-id="2025-05-02 10:00:60">
+                                <a href="/main/interest_view">
+                                    <span class="title"><i class="note"></i>관심종목</span>
+                                    <span class="day"><!--04/22--></span>
+                                    <span class="sum" style="visibility: visible;">05월 02일 (금) 관심종목 TOP10</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- //관심종목 -->
                 </div>
                 <!-- //alarmList -->
 
@@ -183,7 +301,7 @@
 
     </div>
     <!-- //wrap -->
-    
+
 </body>
 
 </html>
