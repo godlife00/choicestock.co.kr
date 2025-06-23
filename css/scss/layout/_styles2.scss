@@ -6449,13 +6449,21 @@
 
 .globalStock .sub_top .txt_box {
 	background: #fff;
-	padding: 12px 15px;
+	padding: 16px 20px;
 }
 
 .globalStock .sub_top .txt_box .txt {
-	color: #939393;
-	font-size: 0.9rem;
-	line-height: 1.43;
+	color: var(--Font-secondary-caption, #6B7684);
+	font-family: var(--Body, Pretendard);
+	font-size: var(--Size-sm, 14px);
+	font-style: normal;
+	font-weight: var(--Weight-400, 400);
+	line-height: var(--Line-height-lg, 21px); /* 150% */
+	letter-spacing: var(--Tracking-md, -0.3px);
+	strong {
+		color: var(--Font-secondary-caption, #6B7684);		
+		font-weight: var(--Weight-700, 700);		
+	}
 
 	.port_time {
 		color: #939393;
@@ -6636,13 +6644,13 @@
 }
 
 .globalStock .sub_research .txt_box .txt {
-	color: var(--Font-secondary-body, #4E5866);
-    font-family: var(--Body, Pretendard);
-    font-size: var(--Size-sm, 14px);
-    font-style: normal;
-    font-weight: var(--Weight-400, 400);
-    line-height: var(--Line-height-lg, 21px);
-    letter-spacing: var(--Tracking-md, -0.3px);
+	color: var(--Font-secondary-caption, #6B7684);
+	font-family: var(--Body, Pretendard);
+	font-size: var(--Size-sm, 14px);
+	font-style: normal;
+	font-weight: var(--Weight-400, 400);
+	line-height: var(--Line-height-lg, 21px); /* 150% */
+	letter-spacing: var(--Tracking-md, -0.3px);
 }
 
 .globalStock .sub_research .txt_box .txt strong {
@@ -6764,7 +6772,7 @@
 
 .globalStock .sub_menu .sub_mid .menu_link .txt a {
 	line-height: 1.73;
-	letter-spacing: -0.75px;
+	letter-spacing: normal;
 	font-weight: 300;
 }
 
@@ -14635,9 +14643,9 @@ body.v_signalStreng {
 	// margin-top: 15px;
 }
 
-.v_signalStreng.globalStock .sub_game .sub_top .txt_box {
-	background-color: #F5F5F9;
-}
+// .v_signalStreng.globalStock .sub_game .sub_top .txt_box {
+// 	background-color: #F5F5F9;
+// }
 
 .v_signalStreng.globalStock .sub_game .gamePicks_area {
 	background: none;
@@ -14933,9 +14941,9 @@ body.v_signalStreng {
 	font-size: 0.8125rem;
 }
 
-.v_signalStreng.globalStock .sub_recom.sub_recipe .sub_top .txt_box {
-	background-color: #F5F5F9;
-}
+// .v_signalStreng.globalStock .sub_recom.sub_recipe .sub_top .txt_box {
+// 	background-color: #F5F5F9;
+// }
 
 // 관심종목 리스트 개편 250219
 .sub_mid.latest_results {
