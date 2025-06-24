@@ -10964,6 +10964,7 @@
 	margin: 16px 20px !important;
 	@include banner_CTA;
 	.premium_banner {
+		margin: 0;
 		.link_banner b {
 			color: var(--Red-red500, #F03E4C);
 			font-family: var(--Title, Pretendard);
@@ -11068,10 +11069,9 @@
 					}
 					p {						
 						overflow: hidden;
-						min-height: 44px;
+						// min-height: 44px;
 						color: var(--Font-secondary-title, #24282C);
 						text-overflow: ellipsis;
-
 						font-family: var(--Title, Pretendard);
 						font-size: var(--Size-md-16, 16px);
 						font-style: normal;
@@ -11130,6 +11130,10 @@
 				min-width: 72px;
 				width: 72px;
 				height: 56px;
+				&.briefing {
+					border: 1px solid var(--Border-thumb-border, rgba(140, 152, 167, 0.20));
+					background: var(--Skyblue-skyblue100, #B8EBFF);
+				}
 				span {
 					display: inline-flex;
 					img {					
@@ -11146,6 +11150,7 @@
 							height: 44px;
 						}
 					}
+					
 	
 					
 				}
