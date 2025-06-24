@@ -21250,15 +21250,16 @@ table.tableRanking td {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  max-width: 28ch;
 }
-.globalStock .sub_research .sub_mid.research_board .lst_type.news_list .list .news_content .tag_list .tag:only-child, .globalStock .sub_research .sub_mid.research_board .lst_type.note_list .list .news_content .tag_list .tag:only-child {
-  max-width: 16em;
+.globalStock .sub_research .sub_mid.research_board .lst_type.news_list .list .news_content .tag_list[data-count="2"] .tag, .globalStock .sub_research .sub_mid.research_board .lst_type.note_list .list .news_content .tag_list[data-count="2"] .tag {
+  max-width: 12ch;
 }
-.globalStock .sub_research .sub_mid.research_board .lst_type.news_list .list .news_content .tag_list .tag:first-child:nth-last-child(2), .globalStock .sub_research .sub_mid.research_board .lst_type.news_list .list .news_content .tag_list .tag:first-child:nth-last-child(2) ~ .globalStock .sub_research .sub_mid.research_board .lst_type.news_list .list .news_content .tag_list .tag, .globalStock .sub_research .sub_mid.research_board .lst_type.note_list .list .news_content .tag_list .tag:first-child:nth-last-child(2), .globalStock .sub_research .sub_mid.research_board .lst_type.news_list .list .news_content .tag_list .tag:first-child:nth-last-child(2) ~ .globalStock .sub_research .sub_mid.research_board .lst_type.note_list .list .news_content .tag_list .tag, .globalStock .sub_research .sub_mid.research_board .lst_type.note_list .list .news_content .tag_list .tag:first-child:nth-last-child(2) ~ .globalStock .sub_research .sub_mid.research_board .lst_type.news_list .list .news_content .tag_list .tag, .globalStock .sub_research .sub_mid.research_board .lst_type.note_list .list .news_content .tag_list .tag:first-child:nth-last-child(2) ~ .globalStock .sub_research .sub_mid.research_board .lst_type.note_list .list .news_content .tag_list .tag {
-  max-width: 10em;
+.globalStock .sub_research .sub_mid.research_board .lst_type.news_list .list .news_content .tag_list[data-count="3"] .tag, .globalStock .sub_research .sub_mid.research_board .lst_type.note_list .list .news_content .tag_list[data-count="3"] .tag {
+  max-width: 10ch;
 }
-.globalStock .sub_research .sub_mid.research_board .lst_type.news_list .list .news_content .tag_list .tag:first-child:nth-last-child(3), .globalStock .sub_research .sub_mid.research_board .lst_type.news_list .list .news_content .tag_list .tag:first-child:nth-last-child(3) ~ .globalStock .sub_research .sub_mid.research_board .lst_type.news_list .list .news_content .tag_list .tag, .globalStock .sub_research .sub_mid.research_board .lst_type.note_list .list .news_content .tag_list .tag:first-child:nth-last-child(3), .globalStock .sub_research .sub_mid.research_board .lst_type.news_list .list .news_content .tag_list .tag:first-child:nth-last-child(3) ~ .globalStock .sub_research .sub_mid.research_board .lst_type.note_list .list .news_content .tag_list .tag, .globalStock .sub_research .sub_mid.research_board .lst_type.note_list .list .news_content .tag_list .tag:first-child:nth-last-child(3) ~ .globalStock .sub_research .sub_mid.research_board .lst_type.news_list .list .news_content .tag_list .tag, .globalStock .sub_research .sub_mid.research_board .lst_type.note_list .list .news_content .tag_list .tag:first-child:nth-last-child(3) ~ .globalStock .sub_research .sub_mid.research_board .lst_type.note_list .list .news_content .tag_list .tag {
-  max-width: 7em;
+.globalStock .sub_research .sub_mid.research_board .lst_type.news_list .list .news_content .tag_list[data-count]:not([data-count="1"]):not([data-count="2"]):not([data-count="3"]):not([data-count="4"]):not([data-count="5"]) .tag, .globalStock .sub_research .sub_mid.research_board .lst_type.note_list .list .news_content .tag_list[data-count]:not([data-count="1"]):not([data-count="2"]):not([data-count="3"]):not([data-count="4"]):not([data-count="5"]) .tag {
+  max-width: 6ch;
 }
 .globalStock .sub_research .sub_mid.research_board .lst_type.news_list .list .news_content .txt .lock_icon, .globalStock .sub_research .sub_mid.research_board .lst_type.note_list .list .news_content .txt .lock_icon {
   display: inline-flex;

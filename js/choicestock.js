@@ -2653,3 +2653,68 @@ $(document).ready(function() {
     */
 });
 
+// 뉴스,투자노트 종목티커 갯수에 따라 폰트수 제한하는 함수 (뉴스,투자노트 리스트 페이지에서 사용중)
+function updateTagListWidths() {
+    try {
+        const tagLists = document.querySelectorAll('.tag_list');
+        if (!tagLists || tagLists.length === 0) {
+            console.log('tag_list 요소를 찾을 수 없습니다.');
+            return;
+        }
+        
+        tagLists.forEach(tagList => {
+            const tags = tagList.querySelectorAll('.tag');
+            if (tags && tags.length > 0) {
+                tagList.dataset.count = tags.length;
+            } else {
+                tagList.dataset.count = '0';
+            }
+        });
+    } catch (error) {
+        console.log('updateTagListWidths 함수 실행 중 오류 발생:', error);
+    }
+}
+
+// CSS에서 초기 상태를 숨김으로 설정하고, JavaScript로 표시하는 방식
+function initializeTagListDisplay() {
+    try {
+        // 초기 상태에서 모든 tag_list를 숨김
+        const tagLists = document.querySelectorAll('.tag_list');
+        if (!tagLists || tagLists.length === 0) {
+            //tag_list 가 없는 경우
+            return;
+        }
+        
+        tagLists.forEach(tagList => {
+            if (tagList && tagList.style) {
+                tagList.style.opacity = '0';
+                tagList.style.visibility = 'hidden';
+            }
+        });
+        
+        // DOM이 완전히 로드된 후 실행
+        requestAnimationFrame(() => {
+            updateTagListWidths();
+            
+            // 애니메이션과 함께 표시
+            tagLists.forEach((tagList) => {
+                if (tagList && tagList.style) {
+                    setTimeout(() => {
+                        tagList.style.transition = 'opacity 0.2s ease-in-out, visibility 0.2s ease-in-out';
+                        tagList.style.opacity = '1';
+                        tagList.style.visibility = 'visible';
+                    });
+                }
+            });
+        });
+    } catch (error) {
+        // console.log('initializeTagListDisplay 함수 실행 중 오류 발생:', error);
+    }
+}
+
+// DOMContentLoaded 대신 더 빠른 실행을 위해 즉시 실행
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initializeTagListDisplay);
+} else {
+    initializeTagListDisplay();
+}

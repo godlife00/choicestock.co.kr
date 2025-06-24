@@ -11043,22 +11043,19 @@
 						overflow: hidden;
 						text-overflow: ellipsis;
 						white-space: nowrap;
-
-						// 태그가 1개일 경우, 최대 12자까지 노출됩니다.
-						&:only-child {
-							max-width: 16em;							
-						}
-
-						// 태그가 2~3개일 경우, 최대 7자까지 노출됩니다.
-						&:first-child:nth-last-child(2),
-						&:first-child:nth-last-child(2) ~ & {
-							max-width: 10em;							
-						}
-						&:first-child:nth-last-child(3),
-						&:first-child:nth-last-child(3) ~ & {
-							max-width: 7em;							
-						}
+						max-width: 28ch;
 					}
+				}
+				.tag_list[data-count="2"] .tag {
+					max-width: 12ch;
+				}
+			
+				.tag_list[data-count="3"] .tag {
+					max-width: 10ch;
+				}
+			
+				.tag_list[data-count]:not([data-count="1"]):not([data-count="2"]):not([data-count="3"]):not([data-count="4"]):not([data-count="5"]) .tag {
+					max-width: 6ch;
 				}
 				
 				.txt {
@@ -11106,11 +11103,9 @@
 						display: inline-flex;
 						align-items: center;
 						justify-content: center;
-						padding: 3.5px 6px;
-						
+						padding: 3.5px 6px;						
 						border-radius: 6px;
-						background: #E2EAFF;
-	
+						background: #E2EAFF;	
 						color: var(--Font-primary-blue, #4168F6);
 						font-family: Pretendard;
 						font-size: 11px;
