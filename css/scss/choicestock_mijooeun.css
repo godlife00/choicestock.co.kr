@@ -1447,16 +1447,17 @@ table.tableRanking td {
 }
 
 .globalStock .sub_mid .btn_more a {
-  display: block;
-  border: 1px solid #BEBCCB;
-  color: #404fc3;
-  font-size: 0.75rem;
-  width: calc(100% - 30px);
-  border-radius: 8px;
-  margin: 0 auto;
-  box-sizing: border-box;
-  text-align: center;
-  line-height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px 6px;
+  padding: 16px 16px;
+  color: var(--Font-secondary-body, #4E5866);
+  font-family: var(--Body, Pretendard);
+  font-size: var(--Size-md-15, 15px);
+  font-style: normal;
+  font-weight: var(--Weight-500, 500);
+  line-height: var(--Line-height-sm, 18px); /* 120% */
 }
 
 .globalStock .sub_mid .btn_more.show_table {
@@ -1474,18 +1475,6 @@ table.tableRanking td {
   box-sizing: border-box;
   text-align: center;
   line-height: 42px;
-}
-
-.globalStock .sub_mid .btn_more i {
-  display: inline-block;
-  width: 12px;
-  height: 12px;
-  margin-right: 10px;
-  line-height: 42px;
-  padding-bottom: 3px;
-  background: url("/img/more_btm.svg") no-repeat center center;
-  position: relative;
-  top: 4px;
 }
 
 .globalStock .purchase_area {
