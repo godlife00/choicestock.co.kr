@@ -38,23 +38,296 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
     <!-- css -->
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <link rel="stylesheet" type="text/css" href="../css/scss/choicestock.css" />
+    <link rel="stylesheet" type="text/css" href="../css/scss/choicestock.css?v=1.0.12" />
     <!-- js -->
     <script src="../js/choicestock.js"></script>
-    <!-- 이 아래는 로컬에서만 사용되는 파일 -->
-    <script src="../js/local.js"></script>
-    <!-- 로컬에서만 사용되는 파일 종료  -->
 </head>
 
 <body class="v_signalStreng globalStock">
-    <div id="wrap">        
+    <div id="wrap">
+        <div id="header" class="header">
+            <div class="headerTop">
+                <div class="left">
+                    <h1 class="headerLogo"><span>발굴</span></h1>
+                </div>
+                <div class="cen">
+                </div>
+                <div class="right">
+                    <a href="menu.html" class="h_menu">
+                        <div class="menu-icon">
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!-- //headerTop -->
+        </div>
 
-        <!-- <button data-popup="pop_clse">모달 팝업 닫기</button> -->
-        <button data-popup="first_month_3300">첫 달 1000원 유도 팝업 first_month_3300</button>
-        <button data-popup="long_term_popup">9개월 이상 정기결제 long_term_popup</button>
-        <button data-popup="short_term_popup">9개월 미만 정기결제 short_term_popup</button>
-        <button data-popup="event1000_popup">첫 달 1000원 정기결제 event1000_popup</button>
-        <button data-popup="event33000_popup">월정기 33,000원 회원 + 기간 유료회원 대상 event33000_popup</button>
+        <!-- 미국주식 탐구생활 class = sub_research-->
+        <div id="container" class="sub_research">
+            <!-- 하단 GNB -->
+            <div class="gnb">
+                <ul class="list">
+                    <li class="home"><a href="../index.html">홈</a></li>
+                    <li class="sch"><a href="../search/searching.html">검색</a></li>
+                    <li class="stock"><a href="../stock/recom.html">추천</a></li>
+                    <li class="excavation active"><a href="../stock/note.html">발굴</a></li>
+                    <li class="attention"><a href="../search/searching_attention.html">관심</a></li>
+                </ul>
+            </div>
+            <!-- //gnb -->
+
+            <!-- 주요 콘텐츠 -->
+            <div class="tab_area">
+                <ul class="tbas_lb tabs_4">
+                    <li><a href="../stock/new_recipe.html">투자레시피</a></li>
+                    <li><a href="../stock/news.html" class="active">뉴스·투자노트</a></li>
+                    <li><a href="../attractiveness/attractiveness.html">투자매력도</a></li>
+                </ul>
+            </div>
+            <!-- //tab_area -->
+
+            <div class="sub_top">
+                <div class="">
+                    <div class="txt_box">
+                        <p class="txt">실적 및 배당 발표 기업과 시장에서 관심있는 테마에 대한 종목 리스트를 제공합니다.</p>
+                    </div>
+                    <!-- //txt_box -->
+                </div>
+
+                <div class="swiper-container swiper-research">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="best_research">
+                                <span class="img_box">
+                                    <!-- 기업분석은 research_logo01, 추천주 점검은 research_logo02 -->
+                                    <img src="../img/research_logo01.png" alt="">
+                                </span>
+                                <div class="category_box">
+                                    <span class="category">기업분석</span>
+                                    <h4 class="title">이번 주 크라우드 스트라이크 실적 발표</h4>
+                                </div>
+                            </div>
+                            <!-- //best_research -->
+                        </div>
+                        <!-- //swiper-slide -->
+
+                        <div class="swiper-slide">
+                            <div class="best_research">
+                                <span class="img_box">
+                                    <!-- 기업분석은 research_logo01, 추천주 점검은 research_logo02 -->
+                                    <img src="../img/research_logo02.png" alt="">
+                                </span>
+                                <div class="category_box">
+                                    <span class="category">추천주 점검</span>
+                                    <h4 class="title">애플워치의 한계를 넘다</h4>
+                                </div>
+                            </div>
+                            <!-- //best_research -->
+                        </div>
+                        <!-- //swiper-slide -->
+
+                        <div class="swiper-slide">
+                            <div class="best_research">
+                                <span class="img_box">
+                                    <!-- 기업분석은 research_logo01, 추천주 점검은 research_logo02 -->
+                                    <img src="../img/research_logo01.png" alt="">
+                                </span>
+                                <div class="category_box">
+                                    <span class="category">기업분석</span>
+                                    <h4 class="title">애플워치의 한계를 넘다, 아웃도어 & 피트니스 웨어러블 최강자 가민트니스 웨어러블 최강자 가민트니스 웨어러블 최강자
+                                        가민</h4>
+                                </div>
+                            </div>
+                            <!-- //best_research -->
+                        </div>
+                        <!-- //swiper-slide -->
+                    </div>
+                    <!-- //swiper-wrapper -->
+                    <div class="swiper-pagination"></div>
+                </div>
+                <!-- //swiper-container -->
+            </div>
+            <!-- //sub_top -->
+
+            <div class="sub_mid research_board">
+                <div class="video_tabs">
+                    <a href="news.html" class="active">뉴스</a>
+                    <a href="note.html">투자노트</a>
+                    <!-- <a href="research_video.html" class="">동영상</a> -->
+                </div>
+
+                <!-- 이 종목, 왜 올랐을까? 배너 -->
+                <div class="banner_signal">
+                    <div class="premium_banner" onclick="location.href ='https://www.choicestock.co.kr/stock/signal'"
+                        style="cursor: pointer;">
+                        <div class="banner_bg"><img src="../img/icon_bonfire.png" alt=""></div>
+                        <a href="https://www.choicestock.co.kr/stock/signal" class="link_banner">
+                            <span>주가 급등/급락이 궁금하세요?</span>
+                            <b>이 종목, 왜 올랐을까?</b>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 뉴스 리스트 -->
+                <div class="lst_type news_list">
+                    <!-- 유료회원 아닌 경우 잠김, 잠김의 경우 onclick="location.href =''" 빼주세요  -->
+                    <div class="list" data-popup="first_month_3300" style="cursor: pointer;">
+                        <div class="news_content">
+                            <div class="tag_list">
+                                <span class="tag">마이크로소프트</span>
+                            </div>
+                            <!-- //tag_list -->
+                            <div class="txt">
+                                <p><span class="lock_icon"><img src="../img/prm_tabsLock.svg" alt=""></span> 전자결제 업계
+                                    판타스틱 FOUR, 올인원 결제 혁신 시프트4의 질주</p>
+                            </div>
+                            <div class="info_box">
+                                <div class="day">
+                                    <p>25.06.12</p>
+                                </div>
+                                <span class="noti_tag">공지</span>
+                            </div>
+                            <!-- //info_box -->
+                        </div>
+                        <!-- //news_content -->
+                        <div class="img">
+                            <span class=""><img
+                                    src="https://hero.datahero.co.kr/webdata/attach_data/vod_mjm/2025/06/ebff7818cbc0e75123f3c24d00923fa3.png"
+                                    alt="썸네일 이미지" width="72" height="56"></span>
+                        </div>
+                    </div>
+                    <div class="list" onclick="location.href ='news_view.html'" style="cursor: pointer;">
+                        <div class="news_content">
+                            <div class="tag_list">
+                                <span class="tag">마이크로소프트</span>
+                                <span class="tag">마이크로소프트</span>
+                            </div>
+                            <!-- //tag_list -->                            
+
+                            <div class="txt">
+                                <p>전자결제 업계 판타스틱 FOUR, 올인원 결제 혁신 시프트4의</p>
+                            </div>
+                            <div class="info_box">
+                                <div class="day">
+                                    <p>25.06.12</p>
+                                </div>
+                            </div>
+                            <!-- //info_box -->
+                        </div>
+                        <!-- //news_content -->
+                        <div class="img">
+                            <span class=""><img
+                                    src="https://hero.datahero.co.kr/webdata/attach_data/vod_mjm/2025/06/ebff7818cbc0e75123f3c24d00923fa3.png"
+                                    alt="썸네일 이미지" width="72" height="56"></span>
+                        </div>
+                    </div>
+                    <div class="list" onclick="location.href ='news_view.html'" style="cursor: pointer;">
+                        <div class="news_content">
+                            <div class="tag_list">
+                                <span class="tag">시프트4페이먼츠</span>
+                                <span class="tag">시프트4페이먼츠</span>
+                                <span class="tag">시프트4페이먼츠</span>
+                            </div>
+                            <!-- //tag_list -->
+                            <div class="txt">
+                                <p>전자결제 업계 판타스틱 FOUR, 올인원 결제 혁신 시프트4의 질주</p>
+                            </div>
+                            <div class="info_box">
+                                <div class="day">
+                                    <p>25.06.12</p>
+                                </div>
+                            </div>
+                            <!-- //info_box -->
+                        </div>
+                        <!-- //news_content -->
+                    </div>
+                    <!-- 애드가플래시인 경우  -->
+                    <div class="list" onclick="location.href ='news_view.html'" style="cursor: pointer;">
+                        <div class="news_content">
+                            <div class="tag_list">
+                                <span class="tag">마이크로소프트</span>
+                            </div>
+                            <!-- //tag_list -->
+                            <div class="txt">
+                                <p>전자결제 업계 판타스틱 FOUR, 올인원 결제 혁신 시프트4의</p>
+                            </div>
+                            <div class="info_box">
+                                <div class="day">
+                                    <p>25.06.12</p>
+                                </div>
+                            </div>
+                            <!-- //info_box -->
+                        </div>
+                        <!-- //news_content -->
+                        <!-- 애드가플래시인 경우 종목로고 이미지 노출  -->
+                        <div class="img">
+                            <span class="logo"><img src="https://uslogo.datahero.co.kr/img/logo/us/mvl/AAPL.svg"
+                                    alt=""></span>
+                            <!-- <span class=""><img src="https://picsum.photos/72/56" alt="썸네일 이미지" width="72" height="56"></span> -->
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="btn_more">
+                    <a href="">더보기 <i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                fill="none">
+                                <path d="M13 6L7.8 11.2L3 6.4" stroke="#8C98A7" stroke-width="1.4"
+                                    stroke-linecap="round" />
+                            </svg></i></a>
+                </div>
+                <!-- //btn_more -->
+            </div>
+            <!-- //sub_mid -->
+        </div>
+        <!-- //container -->
+
+        <div id="footer" class="chous_footer">
+            <div class="notice">
+                <div class="service_info">
+                    <p>데이터히어로가 제공하는 모든 콘텐츠는 오직 정보 제공 목적으로만 사용되며, 특정 주식을 판매하거나 추천할 의도로 게시된 것이 아닙니다. 데이터히어로의 콘텐츠는 연구 보고서가
+                        아니며, 투자 결정의 유일한 근거로 사용되어서는 안 됩니다.</p>
+                    <p>모든 투자에는 위험이 따르며, 과거 금융 상품의 성과가 미래의 결과나 수익을 보장하지 않습니다. 금융 상품에 투자할 때는 항상 재정적 손실의 가능성을 인지하고 있어야 하며,
+                        투자자는 투자하기 전에 자신의 투자 목표와 위험을 신중하게 고려해야 합니다.</p>
+                    <p class="dataLink">data from <a href="https://www.quandl.com/" target="_blank">Quandl and
+                            Sharadar</a></p>
+                </div>
+
+                <ul class="terms_list">
+                    <li><a href="terms.html">이용약관</a></li>
+                    <li><a href="https://www.datahero.co.kr/choicestockus-faq/" target="_blank">서비스 FAQ</a></li>
+                    <li><a href="policy.html"><strong>개인정보처리방침</strong></a></li>
+                    <li><a href="https://www.datahero.co.kr/choicestockus-update/" target="_black">업데이트 소식</a>
+                    </li>
+                    <li><a href="https://www.datahero.co.kr" target="_blank">회사소개</a></li>
+                </ul>
+
+                <div class="foot_info">
+                    <div class="info_tel_box">
+                        <span class="cs"><a href="https://kq64o.channel.io/" target="blank">온라인 1:1 문의하기</a> (평일
+                            9:00~17:00, 점심 11:20~12:20/ 주말 및 공휴일 휴무) </span>
+                    </div>
+                    <!-- //info_tel_box -->
+                    <p class="copyright"><a href="https://www.datahero.co.kr" target="_blank">ⓒ (주)데이터히어로</a><i></i>
+                        <strong>대표자</strong> 김인중 <br>서울특별시 서초구 강남대로 311 <i></i> 사업자등록번호 291-88-01393 <i></i>
+                        <!-- <strong>대표번호 <a href="tel:02-6225-2300"><strong>02-6225-2300</strong></a></strong> -->
+                    </p>
+                </div>
+                <!-- //foot_info -->
+                <div class="family_site">
+                    <strong>Family</strong>&nbsp;&nbsp;&nbsp;&gt;&nbsp;&nbsp;&nbsp;
+                    <a href="https://value.choicestock.co.kr/?utm_source=choicestock&amp;utm_medium=banner&amp;utm_campaign=service"
+                        target="blank">밸류라인</a>
+                </div>
+                <!-- //family_site -->
+
+            </div>
+            <!-- //notice -->
+        </div>
+        <!-- //footer -->
 
         <!-- 로그인 class = sub_login-->
         <div class="modalBox">
@@ -85,8 +358,9 @@
                 </div>
 
                 <div class="pop_footer">
-                    <div class="btnArea payBtn">                        
-                        <a href="https://www.choicestock.co.kr/main/service" class="btn btn_apply">미국주식 <b>첫 달 1,000원</b></a>
+                    <div class="btnArea payBtn">
+                        <a href="https://www.choicestock.co.kr/main/service" class="btn btn_apply">미국주식 <b>첫 달
+                                1,000원</b></a>
                     </div>
                 </div>
                 <!-- //pop_footer  -->
@@ -322,32 +596,8 @@
             <div class="blocker"></div>
         </div>
 
-        <style>
-            button {
-                display: inline-block;
-                padding: 10px 20px;
-                margin: 5px;
-                background-color: #2C295D;
-                color: white;
-                border: none;
-                border-radius: 5px;
-                cursor: pointer;
-                font-size: 14px;
-                text-decoration: none;
-                transition: background-color 0.3s ease;
-                width: 320px;
-                margin: 12px auto;
-            }
-        </style>
-
     </div>
     <!-- //wrap -->
-    <!-- Modal popup -->
-
-    <script>
-
-
-    </script>
 </body>
 
 </html>
