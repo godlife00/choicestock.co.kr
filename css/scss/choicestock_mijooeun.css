@@ -4848,6 +4848,9 @@ table.tableRanking td {
   padding: 13px 14px 0;
 }
 
+.globalStock .main_mid.news_area {
+  margin-top: 80px;
+}
 .globalStock .main_mid.news_area .lst_type {
   margin-top: 3px;
 }
