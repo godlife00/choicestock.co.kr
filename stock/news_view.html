@@ -28,7 +28,7 @@
     <script src="../node_modules/highcharts/modules/data.js"></script>
     <script src="../node_modules/highcharts/modules/hollowcandlestick.js"></script>
     <script src="../node_modules/highcharts/modules/no-data-to-display.js"></script>
-    <script src="../node_modules/highcharts/modules/treemap.js"></script>    
+    <script src="../node_modules/highcharts/modules/treemap.js"></script>
     <script src="../node_modules/highcharts/modules/exporting.js"></script>
     <script src="../node_modules/highcharts/modules/export-data.js"></script>
     <script src="../node_modules/highcharts/modules/accessibility.js"></script>
@@ -45,29 +45,96 @@
 
 <body class="v_signalStreng globalStock">
     <div id="wrap">
-        <div id="header" class="header">
-            <div class="headerTop">
-                <div class="left">
-                    <a href="javascript:history.back();" class="go_back">히스토리백</a>
-                </div>
-                <div class="cen">
-                    <h1 class="headerLogo"><span>뉴스</span></h1>
-                </div>
-                <div class="right">                    
-                </div>
-            </div>
-            <!-- //headerTop -->
-        </div>
 
-        <!-- 뉴스 뷰 -->        
+        <!-- 뉴스 뷰는 헤더가 없음 -->
+
+        <!-- 뉴스 뷰 -->
         <div id="container" class="sub_view sub_research">
+
+            <!-- 뷰 헤더 -->
+            <div class="header_view">
+                <div class="headerTop">
+                    <div class="left">
+                        <a href="javascript:history.back();" class="go_back">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path d="M15 4L7 12L15 20" stroke="#24282C" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="cen">
+                        <div class="company_nm" id="originalCompanyName">테슬라</div>
+                        <li class="detail">                            
+                            <div class="per">
+                                <span class="increase"><i class="up"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="9" height="10"
+                                    viewBox="0 0 9 10" fill="none">
+                                    <path
+                                        d="M5.3 2.56667C4.9 2.03333 4.1 2.03333 3.7 2.56667L1.2 5.9C0.705573 6.55924 1.17595 7.5 2 7.5L7 7.5C7.82405 7.5 8.29443 6.55924 7.8 5.9L5.3 2.56667Z"
+                                        fill="#F03E4C" />
+                                </svg></i><span class="num">295.10</span> (3.65%)</span>
+                            </div>
+                        </li>
+                    </div>
+                </div>
+                <!-- //headerTop -->
+                <div class="headerTop">
+                    <div class="left">
+                        <a href="javascript:history.back();" class="go_back">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path d="M15 4L7 12L15 20" stroke="#24282C" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="cen">
+                        <div class="company_nm" id="originalCompanyName">테슬라테슬라테슬라테슬라테슬라테슬라테슬라테슬라</div>
+                        <li class="detail">                            
+                            <div class="per">
+                                <span class="decrease"><i class="down"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="9" height="10"
+                                    viewBox="0 0 9 10" fill="none">
+                                    <path
+                                        d="M5.3 7.43333C4.9 7.96667 4.1 7.96667 3.7 7.43333L1.2 4.1C0.705573 3.44076 1.17595 2.5 2 2.5L7 2.5C7.82405 2.5 8.29443 3.44076 7.8 4.1L5.3 7.43333Z"
+                                        fill="#097DF3" />
+                                </svg></i><span class="num">295.10</span> (-3.65%)</span>
+                            </div>
+                        </li>
+                    </div>
+                </div>
+                <!-- //headerTop -->
+                <div class="headerTop">
+                    <div class="left">
+                        <a href="javascript:history.back();" class="go_back">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path d="M15 4L7 12L15 20" stroke="#24282C" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="cen">
+                        <div class="company_nm" id="originalCompanyName">테슬라테슬라테슬라테슬라테슬라테슬라테슬라테슬라</div>
+                        <li class="detail">                            
+                            <div class="per">
+                                <span class="same"><span class="num">0.00</span> (0.00%)</span>
+                            </div>
+                        </li>
+                    </div>
+                </div>
+                <!-- //headerTop -->
+            </div>
+            <!-- //header_view -->
+
             <!-- 하단 GNB -->
             <div class="gnb">
                 <ul class="list">
                     <li class="home"><a href="../index.html">홈</a></li>
-                    <li class="sch"><a href="../search/searching.html">검색</a></li>                    
+                    <li class="sch"><a href="../search/searching.html">검색</a></li>
                     <li class="stock"><a href="../stock/recom.html">추천</a></li>
-                    <li class="excavation active"><a href="../stock/note.html">발굴</a></li>                                        
+                    <li class="excavation active"><a href="../stock/note.html">발굴</a></li>
                     <li class="attention"><a href="../search/searching_attention.html">관심</a></li>
                 </ul>
             </div>
@@ -76,11 +143,11 @@
             <div class="view_con">
                 <div class="top">
                     <h5 class="title">[미국주식] 백신 기대감 3대지수 사상최고가 직행, 관련주 5개? 이제는 3900??</h5>
-                    <span class="day">2020.12/26</span>
+                    <span class="day">실적발표 • 2020.12/26</span>
                     <a href="" class="go_list">목록보기</a>
                 </div>
-                <div class="mid">               
-                    
+                <div class="mid">
+
                     <!-- 뉴스 티커 종목들 -->
                     <div class="news_ticker_list">
                         <div class="ticker_list">
@@ -99,29 +166,33 @@
                             </p>
                         </div>
                         <div class="analysis_content">
-                            <h2 class="title"><img src="../img/icon_bot.png" alt="" class="title_icon"> AI 분석</h2>                            
+                            <h2 class="title"><img src="../img/icon_bot.png" alt="" class="title_icon"> AI 분석</h2>
                             <p class="ai_txt">
                                 <b class="ai_judgement neutral">중립</b> 주가에 뚜렷한 영향이 없어요.
                             </p>
                         </div>
                         <div class="analysis_content">
-                            <h2 class="title"><img src="../img/icon_bot.png" alt="" class="title_icon"> AI 분석</h2>                            
+                            <h2 class="title"><img src="../img/icon_bot.png" alt="" class="title_icon"> AI 분석</h2>
                             <p class="ai_txt">
                                 <b class="ai_judgement bad">악재</b> 주가 하락 위험이 높아요.
                             </p>
                         </div>
                         <div class="analysis_content">
-                            <h2 class="title"><img src="../img/icon_bot.png" alt="" class="title_icon"> AI 분석</h2>                            
+                            <h2 class="title"><img src="../img/icon_bot.png" alt="" class="title_icon"> AI 분석</h2>
                             <p class="ai_txt">
                                 <b class="ai_judgement etc">기타</b> 주가 영향을 확인할 수 없어요.
                             </p>
                         </div>
-                        
-                        <div class="bdr_box">                            
-                            <p class="ai_title">애플 2분기 실적발표. 매출 954억 달러, 전년 동기 대비 5%증가애플 2분기 실적발표. 매출 954억 달러, 전년 동기 대비 5%증가</p>
-                            <p class="ai_point">애플 2분기 실적발표. 매출 954억 달러, 전년동기 대비 5%증가했어요 애플 2분기 실적발표. 매출 954억 달러, 전년동기 대비 5%증가했어요</p>
-                            <p class="ai_point">애플 2분기 실적발표. 매출 954억 달러, 전년동기 대비 5%증가했어요 애플 2분기 실적발표. 매출 954억 달러, 전년동기 대비 5%증가했어요</p>                            
-                            <p class="ai_point">애플 2분기 실적발표. 매출 954억 달러, 전년동기 대비 5%증가했어요 애플 2분기 실적발표. 매출 954억 달러, 전년동기 대비 5%증가했어요</p>                            
+
+                        <div class="bdr_box">
+                            <p class="ai_title">애플 2분기 실적발표. 매출 954억 달러, 전년 동기 대비 5%증가애플 2분기 실적발표. 매출 954억 달러, 전년 동기 대비
+                                5%증가</p>
+                            <p class="ai_point">애플 2분기 실적발표. 매출 954억 달러, 전년동기 대비 5%증가했어요 애플 2분기 실적발표. 매출 954억 달러, 전년동기
+                                대비 5%증가했어요</p>
+                            <p class="ai_point">애플 2분기 실적발표. 매출 954억 달러, 전년동기 대비 5%증가했어요 애플 2분기 실적발표. 매출 954억 달러, 전년동기
+                                대비 5%증가했어요</p>
+                            <p class="ai_point">애플 2분기 실적발표. 매출 954억 달러, 전년동기 대비 5%증가했어요 애플 2분기 실적발표. 매출 954억 달러, 전년동기
+                                대비 5%증가했어요</p>
                         </div>
                     </div>
                     <!-- //ai_analysis -->
@@ -180,10 +251,11 @@
 
                     <hr><br>
                     <strong>(2) 배당 미드필더 (MED)</strong>
-                    <br><br>                    
-                    <iframe allowfullscreen="" frameborder="0" height="" src="https://www.youtube.com/embed/nOA0ZlusZVM?si=T12NWeGZ141hPZZ6" width=""></iframe>
+                    <br><br>
+                    <iframe allowfullscreen="" frameborder="0" height=""
+                        src="https://www.youtube.com/embed/nOA0ZlusZVM?si=T12NWeGZ141hPZZ6" width=""></iframe>
                     <br>
-                    &nbsp;                    
+                    &nbsp;
                 </div>
                 <a href="research.html" class="go_list">목록보기</a>
             </div>
@@ -193,14 +265,14 @@
                 <h3 class="recent_news_title">{애플} 최근 뉴스</h3>
                 <!-- 뉴스 리스트 -->
                 <div class="lst_type news_list">
-                    
+
                     <div class="list" onclick="location.href ='news_view.html'" style="cursor: pointer;">
                         <div class="news_content">
                             <div class="tag_list">
                                 <span class="tag">마이크로소프트</span>
                                 <span class="tag">마이크로소프트</span>
                             </div>
-                            <!-- //tag_list -->                            
+                            <!-- //tag_list -->
 
                             <div class="txt">
                                 <p>전자결제 업계 판타스틱 FOUR, 올인원 결제 혁신 시프트4의</p>

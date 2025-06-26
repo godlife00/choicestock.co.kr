@@ -104,6 +104,10 @@
 					font-weight: var(--Weight-600, 600);
 					line-height: var(--Line-height-xl-01, 24px); /* 133.333% */
 					letter-spacing: var(--Tracking-md, -0.3px);
+					
+					@media (max-width: 374px) {
+						letter-spacing: var(--Tracking-md, -0.7px);
+					}
 	
 					.ai_judgement {			
 						font-family: var(--Title, Pretendard);

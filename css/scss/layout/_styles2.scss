@@ -4202,10 +4202,13 @@
 	background-color: #fff;
 
 	.title a {
-		font-size: 1.25rem;
-		font-weight: 700;
-		line-height: 1.2;
-		color: #181f29;
+		color: var(--Font-secondary-title, #24282C);
+		font-family: var(--Title, Pretendard);
+		font-size: var(--Size-2xl, 20px);
+		font-style: normal;
+		font-weight: var(--Weight-600, 600);
+		line-height: var(--Line-height-2xl, 26px);
+		letter-spacing: var(--Tracking-md, -0.3px);
 
 		&::after {
 			content: '';
@@ -9788,6 +9791,8 @@
 
 .globalStock .sub_recipe .sub_mid.recipe_view .btn_more a {
 	width: 100%;
+	border: 1px solid #BEBCCB;
+	border-radius: 8px;
 }
 
 .globalStock .sub_recipe .sub_mid.recipe_view .recipe_area:after {
@@ -11362,14 +11367,17 @@
 }
 
 .globalStock .sub_research .view_con .top {
-	padding: 16px 15px 11px;
+	padding: 24px 20px 24px;
 }
 
 .globalStock .sub_research .view_con .top .title {
-	color: #333;
-	font-size: 1.25rem;
-	font-weight: normal;
-	line-height: 1.8rem;
+	color: var(--Font-secondary-title, #24282C);
+	font-family: var(--Title, Pretendard);
+	font-size: var(--Size-4xl, 24px);
+	font-style: normal;
+	font-weight: var(--Weight-600, 600);
+	line-height: var(--Line-height-3xl, 32px); /* 133.333% */
+	letter-spacing: var(--Tracking-md, -0.3px);
 	word-break: break-all;
 	word-wrap: break-word;
 }
@@ -11387,10 +11395,8 @@
 	line-height: 18px;
 }
 
-.globalStock .sub_research .view_con .top .day {
-	color: #939393;
-	font-size: 0.75rem;
-	margin-top: 20px;
+.globalStock .sub_research .view_con .top .day {	
+	margin-top: 8px;
 	display: inline-block;
 	text-overflow: ellipsis;
 	overflow: hidden;
@@ -11398,6 +11404,14 @@
 	line-height: 18px;
 	padding-right: 8px;
 	position: relative;
+	color: var(--Font-secondary-caption, #6B7684);
+	font-family: var(--Body, Pretendard);
+	font-size: var(--Size-sm, 14px);
+	font-style: normal;
+	font-weight: var(--Weight-400, 400);
+	line-height: var(--Line-height-sm, 18px); /* 128.571% */
+	letter-spacing: var(--Tracking-md, -0.3px);
+
 }
 
 .globalStock .sub_research .view_con .top .wtr_rep,
@@ -11427,11 +11441,15 @@
 }
 
 .globalStock .sub_research .view_con .top .go_list {
-	color: #939393;
-	font-size: 0.75rem;
-	text-align: right;
-	margin-top: 23px;
+	margin-top: 8px;
 	float: right;
+	color: var(--Font-secondary-caption, #6B7684);
+	font-family: var(--Body, Pretendard);
+	font-size: var(--Size-sm, 14px);
+	font-style: normal;
+	font-weight: var(--Weight-400, 400);
+	line-height: var(--Line-height-sm, 18px); /* 128.571% */
+	letter-spacing: var(--Tracking-md, -0.3px);	
 }
 
 .globalStock .sub_research .view_con .mid {
