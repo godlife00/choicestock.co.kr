@@ -47,7 +47,9 @@
 </head>
 
 <body class="v_signalStreng globalStock">
-    <div id="wrap">        
+    <div id="wrap">
+
+        <h1 style="padding: 25px 20px; display: flex; align-items: center; justify-content: center; color: var(--Font-secondary-title, #24282C); font-family: var(--Title, Pretendard); font-size: var(--Size-2xl, 20px);">토스트/모달 팝업 가이드</h1>
 
         <!-- <button data-popup="pop_clse">모달 팝업 닫기</button> -->
         <button data-popup="first_month_3300">첫 달 1000원 유도 팝업 first_month_3300</button>
@@ -55,9 +57,18 @@
         <button data-popup="short_term_popup">9개월 미만 정기결제 short_term_popup</button>
         <button data-popup="event1000_popup">첫 달 1000원 정기결제 event1000_popup</button>
         <button data-popup="event33000_popup">월정기 33,000원 회원 + 기간 유료회원 대상 event33000_popup</button>
+        <button data-popup="toast_popup">토스트 팝업 toast_popup</button> <!-- 잠깐 보였다가 사라지는 팝업 -->
 
-        <!-- 로그인 class = sub_login-->
+
         <div class="modalBox">
+
+            <!-- 토스트 팝업 - 잠깐 보였다가 사라지는 팝업 -->
+            <div class="toast_popup">
+                <div class="pop_con">
+                    <p>토스트 팝업</p>
+                </div>
+            </div>
+            <!-- //토스트 팝업 -->
 
             <!-- 첫 달 1000원 유도 팝업 -->
             <div class="modal first_month_3300">
@@ -85,8 +96,9 @@
                 </div>
 
                 <div class="pop_footer">
-                    <div class="btnArea payBtn">                        
-                        <a href="https://www.choicestock.co.kr/main/service" class="btn btn_apply">미국주식 <b>첫 달 1,000원</b></a>
+                    <div class="btnArea payBtn">
+                        <a href="https://www.choicestock.co.kr/main/service" class="btn btn_apply">미국주식 <b>첫 달
+                                1,000원</b></a>
                     </div>
                 </div>
                 <!-- //pop_footer  -->
