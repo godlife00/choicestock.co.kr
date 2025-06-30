@@ -42111,9 +42111,22 @@ body.v_signalStreng {
   text-align: center;
   min-height: 208px;
 }
+@media (max-width: 374px) {
+  .modal.system-maintenance-notice .notice-img {
+    height: 180px;
+    min-height: auto;
+  }
+}
 .modal.system-maintenance-notice .notice-img img {
   width: 100%;
   max-width: 310px;
+}
+@media (max-width: 374px) {
+  .modal.system-maintenance-notice .notice-img img {
+    height: 160px;
+    width: auto;
+    min-height: auto;
+  }
 }
 .modal.system-maintenance-notice .notice-detail {
   display: flex;
@@ -42136,6 +42149,11 @@ body.v_signalStreng {
   font-weight: 600;
   line-height: var(--Line-height-md, 22px); /* 137.5% */
   letter-spacing: var(--Tracking-md, -0.3px);
+}
+@media (max-width: 374px) {
+  .modal.system-maintenance-notice .notice-detail .notice-date {
+    letter-spacing: var(--Tracking-md, -1px);
+  }
 }
 .modal.system-maintenance-notice .notice-detail .notice-date b {
   color: var(--Red-red600, #DD2533);

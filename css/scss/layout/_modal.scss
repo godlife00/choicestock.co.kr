@@ -4063,9 +4063,18 @@
 		margin-top: 6px;
 		text-align: center;
 		min-height: 208px;
+		@media (max-width: 374px) {
+			height: 180px;
+			min-height: auto;
+		}
 		img {
 			width: 100%;
 			max-width: 310px;
+			@media (max-width: 374px) {
+				height: 160px;
+				width: auto;
+				min-height: auto;
+			}
 		}
 
 	}
@@ -4089,6 +4098,9 @@
 			font-weight: 600;
 			line-height: var(--Line-height-md, 22px); /* 137.5% */
 			letter-spacing: var(--Tracking-md, -0.3px);
+			@media (max-width: 374px) {
+				letter-spacing: var(--Tracking-md, -1px);
+			}
 			b {
 				color: var(--Red-red600, #DD2533);
 				font-weight: 600;
