@@ -3497,7 +3497,7 @@
 
 // modal 팝업 리뉴얼 250604
 .modal.modal_popup { // 팝업 기본 스타일 modal_popup
-	border-radius: var(--Radius-r-04, 16px);
+	border-radius: var(--Radius-r-05, 24px);	
 	background: #FFF;
 
 	max-width: 700px;
@@ -3509,6 +3509,85 @@
     z-index: 99;
     width: 94%;
     box-sizing: border-box;    
+
+	// 하단에서 열리는 팝업 .bottom_popup
+	&.bottom_popup {
+		bottom: 0;
+		left: 0;		
+		right: 0;
+		top: auto;
+		transform: translate(0%, 0%);
+		border: none;
+		width: 100%;
+		border-bottom-right-radius: 0;
+		border-bottom-left-radius: 0;
+		.pop_header {
+			padding-top: 32px;
+			.clse {
+				right: 19px;
+				top: 32px;
+			}
+		}
+		.pop_con {
+			gap: 16px 12px;
+			padding: 0 24px 32px;
+
+			.ticker_list {
+				display: flex;
+				flex-wrap: wrap;
+				align-items: center;
+				gap: 6px 8px;			
+				overflow-y: auto;
+				overflow-x: hidden;
+				max-height: calc((38px * 5) + (8px * 3) + 20px);
+				/* 자식 요소가 4개를 넘지 않도록 높이 제한 */
+					
+				.item {
+					display: inline-flex;
+					align-items: center;
+					justify-content: center;
+					gap: 2px 2px;
+					padding: 7px 16px;
+					margin: 0;
+					box-sizing: border-box;									
+					border-radius: var(--Radius-r-03, 12px);
+					background: var(--Background-primary-light-background, #F1F4F6);
+					color: var(--Font-secondary-body, #4E5866);
+					font-family: var(--Body, Pretendard);
+					font-size: var(--Size-md-15, 15px);
+					font-style: normal;
+					font-weight: var(--Weight-400, 400);
+					line-height: var(--Line-height-xl-01, 24px); /* 160% */
+					letter-spacing: var(--Tracking-md, -0.3px);
+					.ticker {						
+						display: inline-block;						
+						overflow: hidden;
+						text-overflow: ellipsis;
+						white-space: nowrap;
+						max-width: 14ch;
+					}
+
+					.increase, .decrease, .same {						
+						font-family: var(--Body, Pretendard);
+						font-size: var(--Size-md-15, 15px);
+						font-style: normal;
+						font-weight: var(--Weight-500, 500);
+						line-height: var(--Line-height-xl-01, 24px); /* 160% */
+						letter-spacing: var(--Tracking-md, -0.3px);
+					}
+					.increase {
+						color: var(--Red-red500, #F03E4C);
+					}
+					.decrease {						
+						color: #26ABFF;
+					}
+					.same {
+						color: var(--Font-secondary-body, #4E5866);
+					}
+				}
+			}
+		}
+	}
 
 	.pop_header {
 		background-color: #fff;		

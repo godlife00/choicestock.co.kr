@@ -149,13 +149,36 @@
                 <div class="mid">
 
                     <!-- 뉴스 티커 종목들 -->
-                    <div class="news_ticker_list">
-                        <div class="ticker_list">
-                            <a href="" class="item">애플 <span class="increase">+4.89%</span></a>
-                            <a href="" class="item">마이크로소프트 <span class="decrease">-4.89%</span></a>
-                            <a href="" class="item">펩시코 <span class="same">0.00%</span></a>
+                    <div class="news_ticker_list">                        
+                        <div class="swiper-container tickerlist-swiper">
+                            <div class="swiper-wrapper ticker_list">
+                                <div class="swiper-slide">
+                                    <a href="" class="item"><span class="ticker">애플</span><span class="increase">+4.89%</span></a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="" class="item"><span class="ticker">마이크로소프트마이크로소프트마이크로소프트</span><span class="decrease">-4.89%</span></a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="" class="item"><span class="ticker">펩시코</span><span class="same">0.00%</span></a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="" class="item"><span class="ticker">애플</span><span class="increase">+4.89%</span></a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="" class="item"><span class="ticker">마이크로소프트마이크로소프트마이크로소프트</span><span class="decrease">-4.89%</span></a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="" class="item"><span class="ticker">펩시코</span><span class="same">0.00%</span></a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <button class="ticker_more" data-popup="bottom_popup">더보기</button>
+                                </div>
+                            </div>
+                            
                         </div>
                     </div>
+                    
+                    
 
                     <!-- AI 분석 -->
                     <div class="ai_analysis">
@@ -167,21 +190,21 @@
                         </div>
                         <div class="analysis_content">
                             <h2 class="title"><img src="../img/icon_bot.png" alt="" class="title_icon"> AI 분석</h2>
-                            <p class="ai_txt">
+                            <!-- <p class="ai_txt">
                                 <b class="ai_judgement neutral">중립</b> 주가에 뚜렷한 영향이 없어요.
-                            </p>
+                            </p> -->
                         </div>
                         <div class="analysis_content">
                             <h2 class="title"><img src="../img/icon_bot.png" alt="" class="title_icon"> AI 분석</h2>
-                            <p class="ai_txt">
+                            <!-- <p class="ai_txt">
                                 <b class="ai_judgement bad">악재</b> 주가 하락 위험이 높아요.
-                            </p>
+                            </p> -->
                         </div>
                         <div class="analysis_content">
                             <h2 class="title"><img src="../img/icon_bot.png" alt="" class="title_icon"> AI 분석</h2>
-                            <p class="ai_txt">
+                            <!-- <p class="ai_txt">
                                 <b class="ai_judgement etc">기타</b> 주가 영향을 확인할 수 없어요.
-                            </p>
+                            </p> -->
                         </div>
 
                         <div class="bdr_box">
@@ -386,6 +409,56 @@
             <!-- //notice -->
         </div>
         <!-- //footer -->
+
+        <div class="modalBox">
+
+            <!-- 하단에서 열리는 팝업 -->
+            <div class="modal modal_popup bottom_popup">
+                <div class="pop_header">
+                    <!-- <h1 class="pop_title">결제 취소</h1> -->
+                    <span class="clse">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path
+                                d="M18.7929 3.79338C19.1834 3.40286 19.8164 3.40286 20.207 3.79338C20.5974 4.18391 20.5975 4.81694 20.207 5.20744L13.414 12.0004L20.207 18.7934L20.2753 18.8696C20.5956 19.2623 20.573 19.8413 20.207 20.2074C19.8408 20.5736 19.2618 20.5961 18.8691 20.2758L18.7929 20.2074L11.9999 13.4145L5.20696 20.2074C4.81645 20.5979 4.18342 20.5979 3.79289 20.2074C3.40237 19.8169 3.40238 19.1839 3.79289 18.7934L10.5859 12.0004L3.79289 5.20744C3.40237 4.81692 3.40237 4.18391 3.79289 3.79338C4.18342 3.40288 4.81644 3.40286 5.20696 3.79338L11.9999 10.5864L18.7929 3.79338Z"
+                                fill="#24282C" />
+                        </svg>
+                    </span>
+                </div>
+                <div class="pop_con">
+                    <p class="title_txt">관련 종목</p>
+                    
+                    <div class="ticker_list">
+                        <a href="" class="item"><span class="ticker">애플</span><span class="increase">+4.89%</span></a>
+                        <a href="" class="item"><span class="ticker">마이크로소프트마이크로소프트마이크로소프트</span><span class="decrease">-4.89%</span></a>
+                        <a href="" class="item"><span class="ticker">펩시코</span><span class="same">0.00%</span></a>
+                        <a href="" class="item"><span class="ticker">애플</span><span class="increase">+4.89%</span></a>
+                        <a href="" class="item"><span class="ticker">마이크로소프트마이크로소프트마이크로소프트</span><span class="decrease">-4.89%</span></a>
+                        <a href="" class="item"><span class="ticker">펩시코</span><span class="same">0.00%</span></a>
+                        <a href="" class="item"><span class="ticker">펩시코</span><span class="same">0.00%</span></a>
+                        <a href="" class="item"><span class="ticker">애플</span><span class="increase">+4.89%</span></a>
+                        <a href="" class="item"><span class="ticker">마이크로소프트마이크로소프트마이크로소프트</span><span class="decrease">-4.89%</span></a>
+                        <a href="" class="item"><span class="ticker">펩시코</span><span class="same">0.00%</span></a>
+                        <a href="" class="item"><span class="ticker">펩시코</span><span class="same">0.00%</span></a>
+                        <a href="" class="item"><span class="ticker">마이크로소프트마이크로소프트마이크로소프트</span><span class="decrease">-4.89%</span></a>
+                        <a href="" class="item"><span class="ticker">펩시코</span><span class="same">0.00%</span></a>
+                        <a href="" class="item"><span class="ticker">펩시코</span><span class="same">0.00%</span></a>
+                    </div>
+                    <!-- //ticker_list -->
+                </div>
+                <!-- //pop_con -->
+
+                <!-- <div class="pop_footer">
+                    <div class="btnArea payBtn">
+                        <a href="#" class="btn btn_save" data-popup="pop_clse">서비스 유지하기</a>
+                        <a href="#" class="btn btn_cncl">해지하기</a>
+                    </div>
+                </div> -->
+                <!-- //pop_footer  -->
+            </div>
+            <!-- //하단에서 열리는 팝업 -->
+
+            <div class="blocker"></div>
+        </div>
 
     </div>
     <!-- //wrap -->

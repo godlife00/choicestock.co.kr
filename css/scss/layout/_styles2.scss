@@ -1769,8 +1769,8 @@
 			margin-bottom: 32px;
 			overflow-y: auto;
 			overflow-x: hidden;
-			max-height: calc((38px * 5) + (8px * 3) + 20px);
-			/* 자식 요소가 4개를 넘지 않도록 높이 제한 */
+			max-height: calc((38px * 6) + (8px * 3) + 20px);
+			/* 자식 요소가 6개를 넘지 않도록 높이 제한 */
 
 			.item {
 				display: inline-block;
