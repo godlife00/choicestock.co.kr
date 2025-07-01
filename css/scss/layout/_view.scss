@@ -178,7 +178,7 @@
 				flex-direction: column;
 				flex-wrap: wrap;
 				align-items: flex-start;
-				gap: 12px 12px;
+				gap: 16px 12px;
 				padding: 0 0 0 12px;
 				margin-top: 12px;
 				box-sizing: border-box;
@@ -189,7 +189,7 @@
 				padding: 0;
 				color: var(--Font-primary-body, #24282C);
 				font-family: var(--Body, Pretendard);
-				font-size: var(--Size-md-15, 15px);
+				font-size: 16px;
 				font-style: normal;
 				font-weight: var(--Weight-600, 600);
 				line-height: var(--Line-height-xl-01, 24px); /* 160% */
@@ -199,7 +199,7 @@
 				margin: 0;
 				color: var(--Font-secondary-body, #4E5866);
 				font-family: var(--Body, Pretendard);
-				font-size: var(--Size-md-15, 15px);
+				font-size: 16px;
 				font-style: normal;
 				font-weight: var(--Weight-500, 500);
 				line-height: var(--Line-height-xl-01, 24px); /* 160% */
