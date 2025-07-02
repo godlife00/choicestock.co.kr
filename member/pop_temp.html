@@ -47,17 +47,72 @@
 </head>
 
 <body class="v_signalStreng globalStock">
-    <div id="wrap">        
+    <div id="wrap">
 
         <!-- <button data-popup="pop_clse">모달 팝업 닫기</button> -->
         <button data-popup="first_month_3300">첫 달 1000원 유도 팝업 first_month_3300</button>
-        <!-- <button data-popup="long_term_popup">9개월 이상 정기결제 long_term_popup</button>
+        <button data-popup="long_term_popup">9개월 이상 정기결제 long_term_popup</button>
         <button data-popup="short_term_popup">9개월 미만 정기결제 short_term_popup</button>
         <button data-popup="event1000_popup">첫 달 1000원 정기결제 event1000_popup</button>
-        <button data-popup="event33000_popup">월정기 33,000원 회원 + 기간 유료회원 대상 event33000_popup</button> -->
+        <button data-popup="event33000_popup">월정기 33,000원 회원 + 기간 유료회원 대상 event33000_popup</button>
+        <button data-popup="bottom_popup">하단에서 열리는 팝업 bottom_popup</button>
 
-        <!-- 로그인 class = sub_login-->
+        <button data-popup="toast_popup">토스트 팝업 toast_popup</button>
+
+
         <div class="modalBox">
+
+
+            <!-- 토스트 팝업 -->
+            <div class="modal toast_popup">
+                <p>토스트 팝업</p>
+            </div>
+            <!-- //토스트 팝업 -->
+
+            <!-- 하단에서 열리는 팝업 -->
+            <div class="modal modal_popup bottom_popup">
+                <div class="pop_header">
+                    <!-- <h1 class="pop_title">결제 취소</h1> -->
+                    <span class="clse">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path
+                                d="M18.7929 3.79338C19.1834 3.40286 19.8164 3.40286 20.207 3.79338C20.5974 4.18391 20.5975 4.81694 20.207 5.20744L13.414 12.0004L20.207 18.7934L20.2753 18.8696C20.5956 19.2623 20.573 19.8413 20.207 20.2074C19.8408 20.5736 19.2618 20.5961 18.8691 20.2758L18.7929 20.2074L11.9999 13.4145L5.20696 20.2074C4.81645 20.5979 4.18342 20.5979 3.79289 20.2074C3.40237 19.8169 3.40238 19.1839 3.79289 18.7934L10.5859 12.0004L3.79289 5.20744C3.40237 4.81692 3.40237 4.18391 3.79289 3.79338C4.18342 3.40288 4.81644 3.40286 5.20696 3.79338L11.9999 10.5864L18.7929 3.79338Z"
+                                fill="#24282C" />
+                        </svg>
+                    </span>
+                </div>
+                <div class="pop_con">
+                    <p class="title_txt">관련 종목</p>
+                    
+                    <div class="ticker_list">
+                        <a href="" class="item"><span class="ticker">애플</span><span class="increase">+4.89%</span></a>
+                        <a href="" class="item"><span class="ticker">마이크로소프트마이크로소프트마이크로소프트</span><span class="decrease">-4.89%</span></a>
+                        <a href="" class="item"><span class="ticker">펩시코</span><span class="same">0.00%</span></a>
+                        <a href="" class="item"><span class="ticker">애플</span><span class="increase">+4.89%</span></a>
+                        <a href="" class="item"><span class="ticker">마이크로소프트마이크로소프트마이크로소프트</span><span class="decrease">-4.89%</span></a>
+                        <a href="" class="item"><span class="ticker">펩시코</span><span class="same">0.00%</span></a>
+                        <a href="" class="item"><span class="ticker">펩시코</span><span class="same">0.00%</span></a>
+                        <a href="" class="item"><span class="ticker">애플</span><span class="increase">+4.89%</span></a>
+                        <a href="" class="item"><span class="ticker">마이크로소프트마이크로소프트마이크로소프트</span><span class="decrease">-4.89%</span></a>
+                        <a href="" class="item"><span class="ticker">펩시코</span><span class="same">0.00%</span></a>
+                        <a href="" class="item"><span class="ticker">펩시코</span><span class="same">0.00%</span></a>
+                        <a href="" class="item"><span class="ticker">마이크로소프트마이크로소프트마이크로소프트</span><span class="decrease">-4.89%</span></a>
+                        <a href="" class="item"><span class="ticker">펩시코</span><span class="same">0.00%</span></a>
+                        <a href="" class="item"><span class="ticker">펩시코</span><span class="same">0.00%</span></a>
+                    </div>
+                    <!-- //ticker_list -->
+                </div>
+                <!-- //pop_con -->
+
+                <!-- <div class="pop_footer">
+                    <div class="btnArea payBtn">
+                        <a href="#" class="btn btn_save" data-popup="pop_clse">서비스 유지하기</a>
+                        <a href="#" class="btn btn_cncl">해지하기</a>
+                    </div>
+                </div> -->
+                <!-- //pop_footer  -->
+            </div>
+            <!-- //하단에서 열리는 팝업 -->
 
             <!-- 첫 달 1000원 유도 팝업 -->
             <div class="modal first_month_3300">
@@ -85,8 +140,9 @@
                 </div>
 
                 <div class="pop_footer">
-                    <div class="btnArea payBtn">                        
-                        <a href="https://www.choicestock.co.kr/main/service" class="btn btn_apply">미국주식 <b>첫 달 1,000원</b></a>
+                    <div class="btnArea payBtn">
+                        <a href="https://www.choicestock.co.kr/main/service" class="btn btn_apply">미국주식 <b>첫 달
+                                1,000원</b></a>
                     </div>
                 </div>
                 <!-- //pop_footer  -->
