@@ -27,7 +27,13 @@ $(document).ready(function () {
             $('html, body').css("overflow", "hidden");
             $('.modal').hide();
             $('.blocker').show();
-            $targetPopup.show().addClass('slideUp50');
+            
+            // bottom_popup 클래스가 있는 경우 slideUp 클래스 적용, 그렇지 않으면 slideUp50 클래스 적용
+            if ($targetPopup.hasClass('bottom_popup')) {
+                $targetPopup.show().addClass('slideUp');
+            } else {
+                $targetPopup.show().addClass('slideUp50');
+            }
         },
 
         // 모달 닫기
