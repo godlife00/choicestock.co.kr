@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no" />
+    <title>초이스스탁US</title>
+    <meta name="robots" content="초이스스탁US - 미국주식 쉽고 편리하게'">
+    <meta name="description" content="투자를 쉽고 편리하게, 미국주식가이드, 종목분석, 종목토론, 데이터히어로">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="theme-color" content="#2C295D">
+    <!-- 오픈 그래프 -->
+    <meta property="og:title" content="초이스스탁US - 미국주식 쉽고 편리하게'" />
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="투자를 쉽고 편리하게, 미국주식가이드, 종목분석, 종목토론, 데이터히어로">
+    <meta property="og:image" content="http://godlife.ivyro.net/test/img/choicestockus_thumb.png?ver=250408">
+    <meta property="og:image:width" content="410" />
+    <meta property="og:image:height" content="210" />
+    <meta property="og:url" content="www.choicestock.co.kr">
+    <!-- 파비콘 favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="img/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <!-- jquery-1.12 -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <!-- 이미지 순차적 로딩 lazysizes -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js"></script>
+    <!-- highstock -->
+    <!-- highstock -->
+    <!-- <script src="http://godlife.ivyro.net/highcharts/highcharts.js"></script> -->
+    <script src="http://godlife.ivyro.net/highcharts/stock/highstock.js"></script>
+    <script src="http://godlife.ivyro.net/highcharts/stock/modules/data.js"></script>
+    <script src="http://godlife.ivyro.net/highcharts/stock/modules/hollowcandlestick.js"></script>
+    <script src="http://godlife.ivyro.net/highcharts/stock/modules/no-data-to-display.js"></script>
+    <script src="http://godlife.ivyro.net/highcharts/stock/modules/treemap.js"></script>
+    <script src="http://godlife.ivyro.net/highcharts/stock/highcharts-more.js"></script>
+    <script src="http://godlife.ivyro.net/highcharts/stock/modules/exporting.js"></script>
+    <script src="http://godlife.ivyro.net/highcharts/stock/modules/export-data.js"></script>
+    <script src="http://godlife.ivyro.net/highcharts/stock/modules/accessibility.js"></script>
+    <script src="http://godlife.ivyro.net/highcharts/annotations.js"></script>
+    <script src="js/chartjs.js"></script>
+    <!-- Swiper -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="css/scss/choicestock.css?ver=250212312" />
+    <!-- js -->
+    <script src="js/choicestock.js"></script>
+    <!-- 이 아래는 로컬에서만 사용되는 파일 -->
+    <script src="js/local.js"></script>
+    <!-- 로컬에서만 사용되는 파일 종료  -->
+</head>
+<!-- 제휴사이트 민트 칼라 적용 class = mint  -->
+
+<body class="v_signalStreng globalStock">
+    <div id="wrap">
+        <!-- 하단 GNB -->
+        <div class="gnb">
+            <ul class="list">
+                <li class="home active"><a href="index.html" class="home">홈</a></li>
+                <li class="sch"><a href="search/searching.html" class="sch">검색</a></li>
+                <li class="stock"><a href="stock/recom.html" class="stock">추천</a></li>
+                <li class="excavation"><a href="stock/note.html" class="excavation">발굴</a></li>
+                <li class="attention"><a href="search/searching_attention.html" class="attention">관심</a></li>
+            </ul>
+        </div>
+        <!-- //gnb -->
+
+        <div id="container">
+            본문
+        </div>
+        <!-- //container -->
+
+        <div id="footer" class="event_footer">
+            <div class="foot_info">
+                <h5 class="foot_title">데이터히어로</h5>
+                <div class="foot_txt">
+                    <p class="txt">데이터히어로가 제공하는 모든 콘텐츠는 오직 정보 제공 목적으로만 사용되며, 특정 주식을 판매하거나 추천할 의도로 게시된 것이 아닙니다. 데이터히어로의
+                        콘텐츠는 연구 보고서가 아니며, 투자 결정의 유일한 근거로 사용되어서는 안 됩니다.</p>
+                    <p class="txt">모든 투자에는 위험이 따르며, 과거 금융 상품의 성과가 미래의 결과나 수익을 보장하지 않습니다. 금융 상품에 투자할 때는 항상 재정적 손실의 가능성을
+                        인지하고 있어야 하며, 투자자는 투자하기 전에 자신의 투자 목표와 위험을 신중하게 고려해야 합니다.</p>
+                </div>
+                <p class="dataLink">data from <a href="https://www.quandl.com/" target="_blank">Quandl and Sharadar</a>
+                </p>
+            </div>
+            <div class="terms_list">
+                <a href="/member/terms">이용약관</a>
+                <a href="/member/policy"><i></i><strong>개인정보처리방침</strong></a>
+            </div>
+            <div class="copyright">
+                <p><a href="https://www.datahero.co.kr" target="_blank">ⓒ (주)데이터히어로</a> <i></i> 대표자 김인중</p>
+                <p>서울특별시 서초구 강남대로 311</p>
+                <p>사업자등록번호 291-88-01393</p>
+            </div>
+
+        </div>
+
+        <!-- 페이지에 대한 설명 문구가 들어가는 영역 -->
+        <div class="page_desc_wrap">
+            <div class="page_desc_inner">
+                <h5 class="f_title">애드가 플래시</h5>
+                <p class="f_txt">
+                    해당 뉴스는 데이터히어로의 실시간 AI 투자분석 시스템 ‘애드가 플래시’가 SEC 전자공시를 실시간으로 자동 분석하여 작성했습니다.
+                </p>
+                <p class="f_txt">애드가플래시는 SEC 전자공시 8-K를 분석합니다.<br>
+                    <a href="https://flannel-twist-68c.notion.site/6179ddfd795446bf9d4e7900b16a567e"
+                        class="faq_link">자주묻는 질문 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            viewBox="0 0 16 16" fill="none">
+                            <path d="M3.91992 4L8.07992 8.16L4.23992 12" stroke="#8C98A7" stroke-linecap="round" />
+                        </svg> </a>
+                </p>
+                <p class="f_txt">출처 : 미국전자공시시스템(EDGAR), NASDAQ, 초이스스탁US</p>
+            </div>
+        </div>
+        <!-- //page_desc_wrap -->
+
+        <div id="footer" class="chous_footer">
+            <div class="f_top">
+                <h5 class="f_title">투자유의</h5>
+                <p class="f_txt">데이터히어로가 제공하는 모든 정보는 투자 참고용으로만 제공되며 특정 주식 매매를 추천하거나 투자 결정의 유일한 근거로 사용되어서는 안 됩니다.</p>
+                <p class="f_txt">모든 투자에는 원금 손실 위험이 따르므로 투자 전 개인의 투자목표와 위험성향을 신중히 고려하여 본인 판단에 따라 투자하시기 바라며, 당사는 제공된 정보로
+                    인한 투자 결과에 대해 법적 책임을 지지 않습니다.</p>
+                <p class="dataLink">Data Powered by NASDAQ, S&P Global, and Benzinga</a>
+                </p>
+            </div>
+
+            <div class="foot_info">
+                <h5 class="f_title">© (주)데이터히어로</h5>
+                <ul class="term_list">
+                    <li><a href="/member/terms">이용약관</a></li>
+                    <li><a href="/member/policy"><strong>개인정보처리방침</strong></a></li>
+                    <li><a href="https://flannel-twist-68c.notion.site/US-cd2eb85ff9694403b6430b83e546398d"
+                            target="_blank">서비스 FAQ</a></li>
+                </ul>
+            </div>
+
+        </div>
+        <!-- //footer -->
+
+        <div id="footer" class="event_footer">
+            <div class="foot_info">
+                <h5 class="foot_title">데이터히어로</h5>
+                <div class="foot_txt">
+                    <p class="txt">데이터히어로가 제공하는 모든 콘텐츠는 오직 정보 제공 목적으로만 사용되며, 특정 주식을 판매하거나 추천할 의도로 게시된 것이 아닙니다. 데이터히어로의
+                        콘텐츠는 연구 보고서가 아니며, 투자 결정의 유일한 근거로 사용되어서는 안 됩니다.</p>
+                    <p class="txt">모든 투자에는 위험이 따르며, 과거 금융 상품의 성과가 미래의 결과나 수익을 보장하지 않습니다. 금융 상품에 투자할 때는 항상 재정적 손실의 가능성을
+                        인지하고 있어야 하며, 투자자는 투자하기 전에 자신의 투자 목표와 위험을 신중하게 고려해야 합니다.</p>
+                </div>
+                <p class="dataLink">data from <a href="https://www.quandl.com/" target="_blank">Quandl and Sharadar</a>
+                </p>
+            </div>
+            <div class="terms_list">
+                <a href="/member/terms">이용약관</a>
+                <a href="/member/policy"><i></i><strong>개인정보처리방침</strong></a>
+            </div>
+            <div class="copyright">
+                <p><a href="https://www.datahero.co.kr" target="_blank">ⓒ (주)데이터히어로</a> <i></i> 대표자 김인중</p>
+                <p>서울특별시 서초구 강남대로 311</p>
+                <p>사업자등록번호 291-88-01393</p>
+            </div>
+
+        </div>
+    </div>
+    <!-- //wrap -->
+
+    <div class="modalBox">
+        modalBox
+    </div>
+</body>
+
+</html>

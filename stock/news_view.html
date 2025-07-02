@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no" />
+    <title>초이스스탁</title>
+    <meta name="robots" content="데이터히어로 미국주식">
+    <meta name="description" content="투자를 쉽고 편리하게, 미국주식가이드, 종목분석, 종목토론, 데이터히어로">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="theme-color" content="#2C295D">
+    <!-- 오픈 그래프 -->
+    <meta property="og:title" content="데이터히어로 미국주식" />
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="투자를 쉽고 편리하게, 미국주식가이드, 종목분석, 종목토론, 데이터히어로">
+    <meta property="og:image" content="http://godlife.ivyro.net/test/img/choicestockus_thumb.png">
+    <meta property="og:image:width" content="410" />
+    <meta property="og:image:height" content="210" />
+    <meta property="og:url" content="http://us.itooza.com">
+    <!-- jquery-1.12 -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <!-- highcharts -->
+    <script src="../node_modules/highcharts/highstock.js"></script>
+    <script src="../node_modules/highcharts/highcharts-more.js"></script>
+    <script src="../node_modules/highcharts/modules/data.js"></script>
+    <script src="../node_modules/highcharts/modules/hollowcandlestick.js"></script>
+    <script src="../node_modules/highcharts/modules/no-data-to-display.js"></script>
+    <script src="../node_modules/highcharts/modules/treemap.js"></script>
+    <script src="../node_modules/highcharts/modules/exporting.js"></script>
+    <script src="../node_modules/highcharts/modules/export-data.js"></script>
+    <script src="../node_modules/highcharts/modules/accessibility.js"></script>
+    <script src="../js/chartjs.js"></script>
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="../css/scss/choicestock.css?ver=3" />
+    <!-- js -->
+    <script src="../js/choicestock.js"></script>
+</head>
+
+<body class="v_signalStreng globalStock">
+    <div id="wrap">
+
+        <!-- 뉴스 뷰는 헤더가 없음 -->
+
+        <!-- 뉴스 뷰 -->
+        <div id="container" class="sub_view sub_research">
+
+            <!-- 뷰 헤더 -->
+            <div class="header_view">
+                <div class="headerTop">
+                    <div class="left">
+                        <a href="javascript:history.back();" class="go_back">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path d="M15 4L7 12L15 20" stroke="#24282C" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="cen">
+                        <div class="company_nm" id="originalCompanyName">테슬라</div>
+                        <li class="detail">
+                            <div class="per">
+                                <span class="increase"><i class="up"><svg xmlns="http://www.w3.org/2000/svg" width="9"
+                                            height="10" viewBox="0 0 9 10" fill="none">
+                                            <path
+                                                d="M5.3 2.56667C4.9 2.03333 4.1 2.03333 3.7 2.56667L1.2 5.9C0.705573 6.55924 1.17595 7.5 2 7.5L7 7.5C7.82405 7.5 8.29443 6.55924 7.8 5.9L5.3 2.56667Z"
+                                                fill="#F03E4C" />
+                                        </svg></i><span class="num">295.10</span> (3.65%)</span>
+                            </div>
+                        </li>
+                    </div>
+                </div>
+                <!-- //headerTop -->
+                <div class="headerTop">
+                    <div class="left">
+                        <a href="javascript:history.back();" class="go_back">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path d="M15 4L7 12L15 20" stroke="#24282C" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="cen">
+                        <div class="company_nm" id="originalCompanyName">테슬라테슬라테슬라테슬라테슬라테슬라테슬라테슬라</div>
+                        <li class="detail">
+                            <div class="per">
+                                <span class="decrease"><i class="down"><svg xmlns="http://www.w3.org/2000/svg" width="9"
+                                            height="10" viewBox="0 0 9 10" fill="none">
+                                            <path
+                                                d="M5.3 7.43333C4.9 7.96667 4.1 7.96667 3.7 7.43333L1.2 4.1C0.705573 3.44076 1.17595 2.5 2 2.5L7 2.5C7.82405 2.5 8.29443 3.44076 7.8 4.1L5.3 7.43333Z"
+                                                fill="#097DF3" />
+                                        </svg></i><span class="num">295.10</span> (-3.65%)</span>
+                            </div>
+                        </li>
+                    </div>
+                </div>
+                <!-- //headerTop -->
+                <div class="headerTop">
+                    <div class="left">
+                        <a href="javascript:history.back();" class="go_back">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path d="M15 4L7 12L15 20" stroke="#24282C" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="cen">
+                        <div class="company_nm" id="originalCompanyName">테슬라테슬라테슬라테슬라테슬라테슬라테슬라테슬라</div>
+                        <li class="detail">
+                            <div class="per">
+                                <span class="same"><span class="num">0.00</span> (0.00%)</span>
+                            </div>
+                        </li>
+                    </div>
+                </div>
+                <!-- //headerTop -->
+            </div>
+            <!-- //header_view -->
+
+            <!-- 하단 GNB -->
+            <div class="gnb">
+                <ul class="list">
+                    <li class="home"><a href="../index.html">홈</a></li>
+                    <li class="sch"><a href="../search/searching.html">검색</a></li>
+                    <li class="stock"><a href="../stock/recom.html">추천</a></li>
+                    <li class="excavation active"><a href="../stock/note.html">발굴</a></li>
+                    <li class="attention"><a href="../search/searching_attention.html">관심</a></li>
+                </ul>
+            </div>
+            <!-- //gnb -->
+            <!-- 주요 콘텐츠 -->
+            <div class="view_con">
+                <div class="top">
+                    <h5 class="title">[미국주식] 백신 기대감 3대지수 사상최고가 직행, 관련주 5개? 이제는 3900??</h5>
+                    <span class="day">실적발표 • 2020.12/26</span>
+                    <a href="" class="go_list">목록보기</a>
+                </div>
+                <div class="mid">
+
+                    <!-- 뉴스 티커 종목들 -->
+                    <div class="news_ticker_list">
+                        <div class="swiper-container tickerlist-swiper">
+                            <div class="swiper-wrapper ticker_list">
+                                <div class="swiper-slide">
+                                    <a href="" class="item"><span class="ticker">애플</span><span
+                                            class="increase">+4.89%</span></a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="" class="item"><span class="ticker">마이크로소프트마이크로소프트마이크로소프트</span><span
+                                            class="decrease">-4.89%</span></a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="" class="item"><span class="ticker">펩시코</span><span
+                                            class="same">0.00%</span></a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="" class="item"><span class="ticker">애플</span><span
+                                            class="increase">+4.89%</span></a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="" class="item"><span class="ticker">마이크로소프트마이크로소프트마이크로소프트</span><span
+                                            class="decrease">-4.89%</span></a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="" class="item"><span class="ticker">펩시코</span><span
+                                            class="same">0.00%</span></a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <button class="ticker_more" data-popup="bottom_popup">더보기</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+                    <!-- AI 분석 -->
+                    <div class="ai_analysis">
+                        <div class="analysis_content">
+                            <h2 class="title"><img src="../img/icon_bot.png" alt="" class="title_icon"> AI 분석</h2>
+                            <p class="ai_txt">
+                                <b class="ai_judgement good">호재</b> 주가 상승 여력이 높아요.
+                            </p>
+                        </div>
+                        <div class="analysis_content">
+                            <h2 class="title"><img src="../img/icon_bot.png" alt="" class="title_icon"> AI 분석</h2>
+                            <!-- <p class="ai_txt">
+                                <b class="ai_judgement neutral">중립</b> 주가에 뚜렷한 영향이 없어요.
+                            </p> -->
+                        </div>
+                        <div class="analysis_content">
+                            <h2 class="title"><img src="../img/icon_bot.png" alt="" class="title_icon"> AI 분석</h2>
+                            <!-- <p class="ai_txt">
+                                <b class="ai_judgement bad">악재</b> 주가 하락 위험이 높아요.
+                            </p> -->
+                        </div>
+                        <div class="analysis_content">
+                            <h2 class="title"><img src="../img/icon_bot.png" alt="" class="title_icon"> AI 분석</h2>
+                            <!-- <p class="ai_txt">
+                                <b class="ai_judgement etc">기타</b> 주가 영향을 확인할 수 없어요.
+                            </p> -->
+                        </div>
+
+                        <div class="bdr_box">
+                            <p class="ai_title">애플 2분기 실적발표. 매출 954억 달러, 전년 동기 대비 5%증가애플 2분기 실적발표. 매출 954억 달러, 전년 동기 대비
+                                5%증가</p>
+                            <p class="ai_point">애플 2분기 실적발표. 매출 954억 달러, 전년동기 대비 5%증가했어요 애플 2분기 실적발표. 매출 954억 달러, 전년동기
+                                대비 5%증가했어요</p>
+                            <p class="ai_point">애플 2분기 실적발표. 매출 954억 달러, 전년동기 대비 5%증가했어요 애플 2분기 실적발표. 매출 954억 달러, 전년동기
+                                대비 5%증가했어요</p>
+                            <p class="ai_point">애플 2분기 실적발표. 매출 954억 달러, 전년동기 대비 5%증가했어요 애플 2분기 실적발표. 매출 954억 달러, 전년동기
+                                대비 5%증가했어요</p>
+                        </div>
+                    </div>
+                    <!-- //ai_analysis -->
+
+
+                    배당공격수, 미드필더, 골키퍼 등 투자 성향에 맞는 배당주를~<br>
+                    매월 어떤 배당주를 사야할지 고민했다면? 지금 영상을 주목하세요!<br>
+                    <br>
+                    <strong>1월 배당매력주</strong><br>
+                    - <a href="https://www.choicestock.co.kr/stock/vod_view/194">배당 공격수 : 아폴로 커머셜 리얼이스테이트 파이낸스
+                        (ARI)</a><br>
+                    <strong>- 배당 미드필더 : 메디패스트 (MED)</strong><br>
+                    - 배당 골키퍼 : 시티즌스 홀딩컴퍼니 (CIZN)<br>
+                    <br>
+                    <br>
+                    <img alt=""
+                        src="http://kapi.choicestock.co.kr/webdata/attach_data/explore/202112/1474d35824cd3801fb10bfccf91d38b3.jpg">
+                    <strong>[배당 미드필더 주식의 특징]</strong>
+                    <ul>
+                        <li>꾸준한 소득이 있는 급여 생활자에게 적합</li>
+                        <li>배당률 1~3%</li>
+                        <li>매월 정액으로 투자해 은퇴 후 노후를 준비하는데 적합</li>
+                        <li>배당 공격수 대비 <strong>낮은 배당률을 초과 할 수 있는 미래 주가 상승률이 높은 종목 편입이 중요</strong></li>
+                    </ul>
+                    <br>
+                    <strong>[메디패스트 (MED) 배당 투자전략 주요 지표]</strong>
+
+                    <ul>
+                        <li>배당주 유형 : 미드필더</li>
+                        <li>5년간 주당배당금 연평균 성장률 : 39.6%</li>
+                        <li>10년간 연평균 주가 상승률 : 28.6% (누적 651%)</li>
+                        <li>내년(2022년) 예상 주당배당금 : 7&nbsp;달러</li>
+                        <li>예상 배당수익률 : 3.4%</li>
+                        <li>배당금 지급 (배당락) : 분기 (3월, 6월, 9월, 12월)</li>
+                    </ul>
+                    &nbsp;
+
+                    [ol test]
+
+                    <ol>
+                        <li>리스트 번호1</li>
+                        <li>리스트 번호2</li>
+                        <li>리스트 번호3</li>
+                    </ol>
+                    <em>이탤릭</em><br>
+                    <strong>볼드</strong><br>
+                    <s>취소선</s>
+
+                    <blockquote>
+                        <p>인용</p>
+                    </blockquote>
+
+                    <div style="background:#eeeeee;border:1px solid #cccccc;padding:5px 10px;">서브타이틀</div>
+                    <br>
+                    <hr><br>
+
+                    <hr><br>
+                    <strong>(2) 배당 미드필더 (MED)</strong>
+                    <br><br>
+                    <iframe allowfullscreen="" frameborder="0" height=""
+                        src="https://www.youtube.com/embed/nOA0ZlusZVM?si=T12NWeGZ141hPZZ6" width=""></iframe>
+                    <br>
+                    &nbsp;
+                </div>
+                <a href="research.html" class="go_list">목록보기</a>
+            </div>
+
+            <!-- 최근 뉴스 -->
+            <div class="recent_news_section">
+                <h3 class="recent_news_title">{애플} 최근 뉴스</h3>
+                <!-- 뉴스 리스트 -->
+                <div class="lst_type news_list">
+
+                    <div class="list" onclick="location.href ='news_view.html'" style="cursor: pointer;">
+                        <div class="news_content">
+                            <div class="tag_list">
+                                <span class="tag">마이크로소프트</span>
+                                <span class="tag">마이크로소프트</span>
+                            </div>
+                            <!-- //tag_list -->
+
+                            <div class="txt">
+                                <p>전자결제 업계 판타스틱 FOUR, 올인원 결제 혁신 시프트4의</p>
+                            </div>
+                            <div class="info_box">
+                                <div class="day">
+                                    <p>25.06.12</p>
+                                </div>
+                            </div>
+                            <!-- //info_box -->
+                        </div>
+                        <!-- //news_content -->
+                        <div class="img">
+                            <span class=""><img
+                                    src="https://hero.datahero.co.kr/webdata/attach_data/vod_mjm/2025/06/ebff7818cbc0e75123f3c24d00923fa3.png"
+                                    alt="썸네일 이미지" width="72" height="56"></span>
+                        </div>
+                    </div>
+                    <div class="list" onclick="location.href ='news_view.html'" style="cursor: pointer;">
+                        <div class="news_content">
+                            <div class="tag_list">
+                                <span class="tag">시프트4페이먼츠</span>
+                                <span class="tag">시프트4페이먼츠</span>
+                                <span class="tag">시프트4페이먼츠</span>
+                            </div>
+                            <!-- //tag_list -->
+                            <div class="txt">
+                                <p>전자결제 업계 판타스틱 FOUR, 올인원 결제 혁신 시프트4의 질주</p>
+                            </div>
+                            <div class="info_box">
+                                <div class="day">
+                                    <p>25.06.12</p>
+                                </div>
+                            </div>
+                            <!-- //info_box -->
+                        </div>
+                        <!-- //news_content -->
+                    </div>
+                    <!-- 애드가플래시인 경우  -->
+                    <div class="list" onclick="location.href ='news_view.html'" style="cursor: pointer;">
+                        <div class="news_content">
+                            <div class="tag_list">
+                                <span class="tag">마이크로소프트</span>
+                            </div>
+                            <!-- //tag_list -->
+                            <div class="txt">
+                                <p>전자결제 업계 판타스틱 FOUR, 올인원 결제 혁신 시프트4의</p>
+                            </div>
+                            <div class="info_box">
+                                <div class="day">
+                                    <p>25.06.12</p>
+                                </div>
+                            </div>
+                            <!-- //info_box -->
+                        </div>
+                        <!-- //news_content -->
+                        <!-- 애드가플래시인 경우 종목로고 이미지 노출  -->
+                        <div class="img">
+                            <span class="logo"><img src="https://uslogo.datahero.co.kr/img/logo/us/mvl/AAPL.svg"
+                                    alt=""></span>
+                            <!-- <span class=""><img src="https://picsum.photos/72/56" alt="썸네일 이미지" width="72" height="56"></span> -->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- //container -->
+
+        <!-- 페이지에 대한 설명 문구가 들어가는 영역 -->
+        <div class="page_desc_wrap">
+            <div class="page_desc_inner">
+                <h5 class="f_title">애드가 플래시</h5>
+                <p class="f_txt">
+                    해당 뉴스는 데이터히어로의 실시간 AI 투자분석 시스템 ‘애드가 플래시’가 SEC 전자공시를 실시간으로 자동 분석하여 작성했습니다.
+                </p>
+                <p class="f_txt">애드가플래시는 SEC 전자공시 8-K를 분석합니다.<br>
+                    <a href="https://flannel-twist-68c.notion.site/6179ddfd795446bf9d4e7900b16a567e" class="faq_link">자주묻는 질문 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M3.91992 4L8.07992 8.16L4.23992 12" stroke="#8C98A7" stroke-linecap="round" />
+                    </svg> </a>                    
+                </p>
+                <p class="f_txt">출처 : 미국전자공시시스템(EDGAR), NASDAQ, 초이스스탁US</p>
+            </div>
+        </div>
+        <!-- //page_desc_wrap -->
+
+        <div id="footer" class="chous_footer">
+            <div class="f_top">
+                <h5 class="f_title">투자유의</h5>
+                <p class="f_txt">데이터히어로가 제공하는 모든 정보는 투자 참고용으로만 제공되며 특정 주식 매매를 추천하거나 투자 결정의 유일한 근거로 사용되어서는 안 됩니다.</p>
+                <p class="f_txt">모든 투자에는 원금 손실 위험이 따르므로 투자 전 개인의 투자목표와 위험성향을 신중히 고려하여 본인 판단에 따라 투자하시기 바라며, 당사는 제공된 정보로 인한 투자 결과에 대해 법적 책임을 지지 않습니다.</p>
+                <p class="dataLink">Data Powered by NASDAQ, S&P Global, and Benzinga</a>
+                </p>
+            </div>
+
+            <div class="foot_info">
+                <h5 class="f_title">© (주)데이터히어로</h5>
+                <ul class="term_list">
+                    <li><a href="/member/terms">이용약관</a></li>
+                    <li><a href="/member/policy"><strong>개인정보처리방침</strong></a></li>
+                    <li><a href="https://flannel-twist-68c.notion.site/US-cd2eb85ff9694403b6430b83e546398d" target="_blank">서비스 FAQ</a></li>
+                </ul>
+            </div>
+
+        </div>
+        <!-- //footer -->
+
+        <div class="modalBox">
+
+            <!-- 하단에서 열리는 팝업 -->
+            <div class="modal modal_popup bottom_popup">
+                <div class="pop_header">
+                    <!-- <h1 class="pop_title">결제 취소</h1> -->
+                    <span class="clse">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path
+                                d="M18.7929 3.79338C19.1834 3.40286 19.8164 3.40286 20.207 3.79338C20.5974 4.18391 20.5975 4.81694 20.207 5.20744L13.414 12.0004L20.207 18.7934L20.2753 18.8696C20.5956 19.2623 20.573 19.8413 20.207 20.2074C19.8408 20.5736 19.2618 20.5961 18.8691 20.2758L18.7929 20.2074L11.9999 13.4145L5.20696 20.2074C4.81645 20.5979 4.18342 20.5979 3.79289 20.2074C3.40237 19.8169 3.40238 19.1839 3.79289 18.7934L10.5859 12.0004L3.79289 5.20744C3.40237 4.81692 3.40237 4.18391 3.79289 3.79338C4.18342 3.40288 4.81644 3.40286 5.20696 3.79338L11.9999 10.5864L18.7929 3.79338Z"
+                                fill="#24282C" />
+                        </svg>
+                    </span>
+                </div>
+                <div class="pop_con">
+                    <p class="title_txt">관련 종목</p>
+
+                    <div class="ticker_list">
+                        <a href="" class="item"><span class="ticker">애플</span><span class="increase">+4.89%</span></a>
+                        <a href="" class="item"><span class="ticker">마이크로소프트마이크로소프트마이크로소프트</span><span
+                                class="decrease">-4.89%</span></a>
+                        <a href="" class="item"><span class="ticker">펩시코</span><span class="same">0.00%</span></a>
+                        <a href="" class="item"><span class="ticker">애플</span><span class="increase">+4.89%</span></a>
+                        <a href="" class="item"><span class="ticker">마이크로소프트마이크로소프트마이크로소프트</span><span
+                                class="decrease">-4.89%</span></a>
+                        <a href="" class="item"><span class="ticker">펩시코</span><span class="same">0.00%</span></a>
+                        <a href="" class="item"><span class="ticker">펩시코</span><span class="same">0.00%</span></a>
+                        <a href="" class="item"><span class="ticker">애플</span><span class="increase">+4.89%</span></a>
+                        <a href="" class="item"><span class="ticker">마이크로소프트마이크로소프트마이크로소프트</span><span
+                                class="decrease">-4.89%</span></a>
+                        <a href="" class="item"><span class="ticker">펩시코</span><span class="same">0.00%</span></a>
+                        <a href="" class="item"><span class="ticker">펩시코</span><span class="same">0.00%</span></a>
+                        <a href="" class="item"><span class="ticker">마이크로소프트마이크로소프트마이크로소프트</span><span
+                                class="decrease">-4.89%</span></a>
+                        <a href="" class="item"><span class="ticker">펩시코</span><span class="same">0.00%</span></a>
+                        <a href="" class="item"><span class="ticker">펩시코</span><span class="same">0.00%</span></a>
+                    </div>
+                    <!-- //ticker_list -->
+                </div>
+                <!-- //pop_con -->
+
+                <!-- <div class="pop_footer">
+                    <div class="btnArea payBtn">
+                        <a href="#" class="btn btn_save" data-popup="pop_clse">서비스 유지하기</a>
+                        <a href="#" class="btn btn_cncl">해지하기</a>
+                    </div>
+                </div> -->
+                <!-- //pop_footer  -->
+            </div>
+            <!-- //하단에서 열리는 팝업 -->
+
+            <div class="blocker"></div>
+        </div>
+
+    </div>
+    <!-- //wrap -->
+</body>

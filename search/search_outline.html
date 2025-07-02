@@ -631,54 +631,76 @@
                 </div>
                 <!-- //note_area -->
 
-                <!-- 종목노트, 탐구생활, 주요뉴스 -->
+                <!-- 주요뉴스 -->
                 <div class="main_mid new_area">
                     <h3 class="c_title"><a href="/stock/note">뉴스</a></h3>
-                    <ul class="lst_type">
-                        <li>
-                            <dl class="lst_type2">
-                                <dt class="tit">
-                                    <a href="search_news.html"><strong>[실적발표] 토요타 모터, 주당순이익 4.95 달러..예상치 4.13 달러
-                                            상회</strong></a>
-                                    <span class="day">23.09/21</span>
-                                </dt>
-                                <!-- 이미지 없을때 <dd class="photo"> 제거 -->
-                            </dl>
-                        </li>
-                        <li>
-                            <dl class="lst_type2">
-                                <dt class="tit">
-                                    <a href="/search/news_view/CELH/30999">
-                                        <strong>[성장주탐험대] 운동 전에
-                                            마시면&nbsp;살이&nbsp;빠진다고요?&nbsp;아마존&nbsp;에너지&nbsp;드링크&nbsp;판매&nbsp;1위 -
-                                            셀시우스&nbsp;(CELH)</strong></a>
-                                    <span class="day">23.09/21</span>
-                                </dt>
-                                <dd class="photo">
-                                    <a href="search_news.html"><img
-                                            src="https://hero.datahero.co.kr/webdata/attach_data/explore/202202/a3f8877e0ef18959d801b49d514c93bd.png"></a>
-                                </dd>
+                    <!-- 뉴스 리스트 -->
+                    <div class="lst_type news_list">
+                        <!-- 유료회원 아닌 경우 잠김, 잠김의 경우 onclick="location.href =''" 빼주세요  -->
+                        <div class="list" data-popup="first_month_3300" style="cursor: pointer;">
+                            <div class="news_content">                                
+                                <div class="txt">
+                                    <p><span class="lock_icon"><img src="../img/prm_tabsLock.svg" alt=""></span> 전자결제 업계
+                                        판타스틱 FOUR, 올인원 결제 혁신 시프트4의 질주</p>
+                                </div>
+                                <div class="info_box">
+                                    <div class="day">
+                                        <p>25.06.12</p>
+                                    </div>
+                                </div>
+                                <!-- //info_box -->
+                            </div>
+                            <!-- //news_content -->
+                            <div class="img">
+                                <span class=""><img
+                                        src="https://hero.datahero.co.kr/webdata/attach_data/vod_mjm/2025/06/ebff7818cbc0e75123f3c24d00923fa3.png"
+                                        alt="썸네일 이미지" width="72" height="56"></span>
+                            </div>
+                        </div>                        
+                        <div class="list" onclick="location.href ='news_view.html'" style="cursor: pointer;">
+                            <div class="news_content">                                
+                                <div class="txt">
+                                    <p>전자결제 업계 판타스틱 FOUR, 올인원 결제 혁신 시프트4의 질주</p>
+                                </div>
+                                <div class="info_box">
+                                    <div class="day">
+                                        <p>25.06.12</p>
+                                    </div>
+                                </div>
+                                <!-- //info_box -->
+                            </div>
+                            <!-- //news_content -->
+                        </div>
+                        <!-- 애드가플래시인 경우  -->
+                        <div class="list" onclick="location.href ='news_view.html'" style="cursor: pointer;">
+                            <div class="news_content">                                
+                                <div class="txt">
+                                    <p>전자결제 업계 판타스틱 FOUR, 올인원 결제 혁신 시프트4의</p>
+                                </div>
+                                <div class="info_box">
+                                    <div class="day">
+                                        <p>25.06.12</p>
+                                    </div>
+                                </div>
+                                <!-- //info_box -->
+                            </div>
+                            <!-- //news_content -->
+                            <!-- 애드가플래시인 경우 종목로고 이미지 노출  -->
+                            <div class="img">
+                                <span class="logo"><img src="https://uslogo.datahero.co.kr/img/logo/us/mvl/AAPL.svg"
+                                        alt=""></span>
+                                <!-- <span class=""><img src="https://picsum.photos/72/56" alt="썸네일 이미지" width="72" height="56"></span> -->
 
-                            </dl>
-                        </li>
-                        <li>
-                            <dl class="lst_type2">
-                                <dt class="tit">
-                                    <a href="search_news.html"><strong>(feat. MZ세대의 일상템)</strong></a>
-                                    <span class="day">23.09/21</span>
-                                </dt>
-                                <dd class="photo">
-                                    <a href="search_news.html"><img
-                                            src="https://hero.datahero.co.kr/webdata/attach_data/explore/202202/a3f8877e0ef18959d801b49d514c93bd.png"></a>
-                                </dd>
-                            </dl>
-                        </li>
-                    </ul>
-                    <!-- //lst_type -->
+                            </div>
+                        </div>
+                    </div>
 
                     <div class="btn_more">
-                        <a href="search_news.html">더보기</a>
+                        <a href="">더보기 <i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M6 3L11.2 8.2L6.4 13" stroke="#8C98A7" stroke-width="1.4" stroke-linecap="round"/>
+                          </svg></i></a>
                     </div>
+                    <!-- //btn_more -->
 
                     <script>
                         // 페이지 로드시 실행 동영상 제목에 html 태그가 포함되어있다면 제거

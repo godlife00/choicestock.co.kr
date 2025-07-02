@@ -83,7 +83,7 @@
             <div class="tab_area">
                 <ul class="tbas_lb tabs_4">
                     <li><a href="../stock/new_recipe.html">투자레시피</a></li>
-                    <li><a href="../stock/note.html" class="active">뉴스·투자노트</a></li>
+                    <li><a href="../stock/news.html" class="active">뉴스·투자노트</a></li>
                     <li><a href="../attractiveness/attractiveness.html">투자매력도</a></li>
                 </ul>
             </div>
@@ -154,38 +154,15 @@
 
             <div class="sub_mid research_board">
                 <div class="video_tabs">
-                    <a href="news.html">뉴스</a>
-                    <a href="note.html" class="active">투자노트</a>
+                    <a href="news.html" class="active">뉴스</a>
+                    <a href="note.html">투자노트</a>
                     <!-- <a href="research_video.html" class="">동영상</a> -->
                 </div>
-                <div class="swiper-container filter-swiper">
-                    <div class="swiper-wrapper filter_list">
-                        <div class="swiper-slide">
-                            <a href="#" class="filter_btn active" data-filter="all_note">전체</a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#" class="filter_btn" data-filter="performance_note">실적•시황</a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#" class="filter_btn" data-filter="recommend_note">추천주 점검</a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#" class="filter_btn" data-filter="growth_note">성장주</a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#" class="filter_btn" data-filter="analysis_note">기업분석</a>
-                        </div>
-
-                    </div>
-                </div>
-                <!-- <div class="set">
-                    <span class="active">최신글</span>
-                    <span class="">인기글</span>
-                </div> -->
 
                 <!-- 이 종목, 왜 올랐을까? 배너 -->
                 <div class="banner_signal">
-                    <div class="premium_banner" onclick="location.href ='https://www.choicestock.co.kr/stock/signal'" style="cursor: pointer;">
+                    <div class="premium_banner" onclick="location.href ='https://www.choicestock.co.kr/stock/signal'"
+                        style="cursor: pointer;">
                         <div class="banner_bg"><img src="../img/icon_bonfire.png" alt=""></div>
                         <a href="https://www.choicestock.co.kr/stock/signal" class="link_banner">
                             <span>주가 급등/급락이 궁금하세요?</span>
@@ -194,514 +171,117 @@
                     </div>
                 </div>
 
-                <!-- 종목노트 전체 -->
-                <div class="filter_box_inner" data-filter="all_note">
-                    <!-- 리스트 -->
-                    <div class="lst_type note_list">
-                        <!-- 유료회원 아닌 경우 잠김, 잠김의 경우 onclick="location.href =''" 빼주세요  -->
-                        <div class="list" data-popup="first_month_3300" style="cursor: pointer;">
-                            <div class="news_content">
-                                <div class="tag_list">
-                                    <span class="tag">마이크로소프트</span>
-                                </div>
-                                <!-- //tag_list -->
-                                <div class="txt">
-                                    <p><span class="lock_icon"><img src="../img/prm_tabsLock.svg" alt=""></span> 전자결제 업계 판타스틱 FOUR, 올인원 결제 혁신 시프트4의 질주</p>
-                                </div>
-                                <div class="info_box">
-                                    <div class="day">
-                                        <p>25.06.12</p>
-                                    </div>
-                                    <span class="noti_tag">공지</span>
-                                </div>
-                                <!-- //info_box -->
+                <!-- 뉴스 리스트 -->
+                <div class="lst_type news_list">
+                    <!-- 유료회원 아닌 경우 잠김, 잠김의 경우 onclick="location.href =''" 빼주세요  -->
+                    <div class="list" data-popup="first_month_3300" style="cursor: pointer;">
+                        <div class="news_content">
+                            <div class="tag_list">
+                                <span class="tag">마이크로소프트</span>
                             </div>
-                            <!-- //news_content -->
-                            <div class="img">
-                                <span class=""><img src="https://hero.datahero.co.kr/webdata/attach_data/vod_mjm/2025/06/ebff7818cbc0e75123f3c24d00923fa3.png" alt="썸네일 이미지" width="72"
-                                        height="56"></span>
+                            <!-- //tag_list -->
+                            <div class="txt">
+                                <p><span class="lock_icon"><img src="../img/prm_tabsLock.svg" alt=""></span> 전자결제 업계
+                                    판타스틱 FOUR, 올인원 결제 혁신 시프트4의 질주</p>
                             </div>
+                            <div class="info_box">
+                                <div class="day">
+                                    <p>25.06.12</p>
+                                </div>
+                                <span class="noti_tag">공지</span>
+                            </div>
+                            <!-- //info_box -->
                         </div>
-                        <div class="list" onclick="location.href ='news_view.html'" style="cursor: pointer;">
-                            <div class="news_content">
-                                <div class="tag_list">
-                                    <span class="tag">마이크로소프트</span>
-                                    <span class="tag">마이크로소프트</span>
-                                </div>
-                                <!-- //tag_list -->
-                                <div class="txt">
-                                    <p>[모닝브리핑] 전자결제 업계 판타스틱 FOUR, 올인원 결제 혁신 시프트4의</p>
-                                </div>
-                                <div class="info_box">
-                                    <div class="day">
-                                        <p>25.06.12</p>
-                                    </div>
-                                </div>
-                                <!-- //info_box -->
-                            </div>
-                            <!-- //news_content -->
-                            <!-- 모닝 브리핑인 경우 briefing 클래스가 추가됩니다. -->
-                            <div class="img briefing">
-                                <span class=""><img src="../img/icon_briefing.png" alt="썸네일 이미지" width="72"
-                                        height="56"></span>
-                            </div>
-                        </div>
-                        <div class="list" onclick="location.href ='news_view.html'" style="cursor: pointer;">
-                            <div class="news_content">
-                                <div class="tag_list">
-                                    <span class="tag">시프트4페이먼츠</span>
-                                    <span class="tag">시프트4페이먼츠</span>
-                                    <span class="tag">시프트4페이먼츠</span>
-                                </div>
-                                <!-- //tag_list -->
-                                <div class="txt">
-                                    <p>전자결제 업계 판타스틱 FOUR, 올인원 결제 혁신 시프트4의 질주</p>
-                                </div>
-                                <div class="info_box">
-                                    <div class="day">
-                                        <p>25.06.12</p>
-                                    </div>
-                                </div>
-                                <!-- //info_box -->
-                            </div>
-                            <!-- //news_content -->
-                        </div>
-                        <!-- 애드가플래시인 경우  -->
-                        <div class="list" onclick="location.href ='news_view.html'" style="cursor: pointer;">
-                            <div class="news_content">
-                                <div class="tag_list">
-                                    <span class="tag">마이크로소프트</span>
-                                </div>
-                                <!-- //tag_list -->
-                                <div class="txt">
-                                    <p>전자결제 업계 판타스틱 FOUR, 올인원 결제 혁신 시프트4의</p>
-                                </div>
-                                <div class="info_box">
-                                    <div class="day">
-                                        <p>25.06.12</p>
-                                    </div>
-                                </div>
-                                <!-- //info_box -->
-                            </div>
-                            <!-- //news_content -->
-                            <!-- 애드가플래시인 경우 종목로고 이미지 노출  -->
-                            <div class="img">
-                                <span class="logo"><img src="https://uslogo.datahero.co.kr/img/logo/us/mvl/AAPL.svg"
-                                        alt=""></span>
-                                <!-- <span class=""><img src="https://picsum.photos/72/56" alt="썸네일 이미지" width="72" height="56"></span> -->
-
-                            </div>
+                        <!-- //news_content -->
+                        <div class="img">
+                            <span class=""><img
+                                    src="https://hero.datahero.co.kr/webdata/attach_data/vod_mjm/2025/06/ebff7818cbc0e75123f3c24d00923fa3.png"
+                                    alt="썸네일 이미지" width="72" height="56"></span>
                         </div>
                     </div>
-                </div>
-                <!-- //filter_box_inner -->
+                    <div class="list" onclick="location.href ='news_view.html'" style="cursor: pointer;">
+                        <div class="news_content">
+                            <div class="tag_list">
+                                <span class="tag">마이크로소프트</span>
+                                <span class="tag">마이크로소프트</span>
+                            </div>
+                            <!-- //tag_list -->                            
 
-                <!-- 종목노트 실적•시황 -->
-                <div class="filter_box_inner" data-filter="performance_note">
-                    <!-- 리스트 -->
-                    <div class="lst_type note_list">
-                        <div class="list" onclick="location.href ='news_view.html'" style="cursor: pointer;">
-                            <div class="news_content">
-                                <div class="tag_list">
-                                    <span class="tag">마이크로소프트</span>
-                                </div>
-                                <!-- //tag_list -->
-                                <div class="txt">
-                                    <p>전자결제 업계 판타스틱 FOUR, 올인원 결제 혁신 시프트4의 질주</p>
-                                </div>
-                                <div class="info_box">
-                                    <div class="day">
-                                        <p>25.06.12</p>
-                                    </div>
-                                    <span class="noti_tag">공지</span>
-                                </div>
-                                <!-- //info_box -->
+                            <div class="txt">
+                                <p>전자결제 업계 판타스틱 FOUR, 올인원 결제 혁신 시프트4의</p>
                             </div>
-                            <!-- //news_content -->
-                            <div class="img">
-                                <span class=""><img src="https://picsum.photos/72/56" alt="썸네일 이미지" width="72"
-                                        height="56"></span>
+                            <div class="info_box">
+                                <div class="day">
+                                    <p>25.06.12</p>
+                                </div>
                             </div>
+                            <!-- //info_box -->
                         </div>
-                        <div class="list" onclick="location.href =''" style="cursor: pointer;">
-                            <div class="news_content">
-                                <div class="tag_list">
-                                    <span class="tag">마이크로소프트</span>
-                                    <span class="tag">마이크로소프트</span>
-                                </div>
-                                <!-- //tag_list -->
-                                <div class="txt">
-                                    <p>전자결제 업계 판타스틱 FOUR, 올인원 결제 혁신 시프트4의</p>
-                                </div>
-                                <div class="info_box">
-                                    <div class="day">
-                                        <p>25.06.12</p>
-                                    </div>
-                                </div>
-                                <!-- //info_box -->
-                            </div>
-                            <!-- //news_content -->
-                            <div class="img">
-                                <span class=""><img src="https://picsum.photos/72/56" alt="썸네일 이미지" width="72"
-                                        height="56"></span>
-                            </div>
-                        </div>
-                        <div class="list" onclick="location.href =''" style="cursor: pointer;">
-                            <div class="news_content">
-                                <div class="tag_list">
-                                    <span class="tag">시프트4페이먼츠</span>
-                                    <span class="tag">시프트4페이먼츠</span>
-                                    <span class="tag">시프트4페이먼츠</span>
-                                </div>
-                                <!-- //tag_list -->
-                                <div class="txt">
-                                    <p>전자결제 업계 판타스틱 FOUR, 올인원 결제 혁신 시프트4의 질주</p>
-                                </div>
-                                <div class="info_box">
-                                    <div class="day">
-                                        <p>25.06.12</p>
-                                    </div>
-                                </div>
-                                <!-- //info_box -->
-                            </div>
-                            <!-- //news_content -->
-                        </div>
-                        <!-- 애드가플래시인 경우  -->
-                        <div class="list" onclick="location.href =''" style="cursor: pointer;">
-                            <div class="news_content">
-                                <div class="tag_list">
-                                    <span class="tag">마이크로소프트</span>
-                                </div>
-                                <!-- //tag_list -->
-                                <div class="txt">
-                                    <p>전자결제 업계 판타스틱 FOUR, 올인원 결제 혁신 시프트4의</p>
-                                </div>
-                                <div class="info_box">
-                                    <div class="day">
-                                        <p>25.06.12</p>
-                                    </div>
-                                </div>
-                                <!-- //info_box -->
-                            </div>
-                            <!-- //news_content -->
-                            <!-- 애드가플래시인 경우 종목로고 이미지 노출  -->
-                            <div class="img">
-                                <span class="logo"><img src="https://uslogo.datahero.co.kr/img/logo/us/mvl/AAPL.svg"
-                                        alt=""></span>
-                                <!-- <span class=""><img src="https://picsum.photos/72/56" alt="썸네일 이미지" width="72" height="56"></span> -->
-
-                            </div>
+                        <!-- //news_content -->
+                        <div class="img">
+                            <span class=""><img
+                                    src="https://hero.datahero.co.kr/webdata/attach_data/vod_mjm/2025/06/ebff7818cbc0e75123f3c24d00923fa3.png"
+                                    alt="썸네일 이미지" width="72" height="56"></span>
                         </div>
                     </div>
-                </div>
-
-                <!-- 종목노트 추천주 점검 -->
-                <div class="filter_box_inner" data-filter="recommend_note">
-                    <!-- 리스트 -->
-                    <div class="lst_type note_list">
-                        <div class="list" onclick="location.href =''" style="cursor: pointer;">
-                            <div class="news_content">
-                                <div class="tag_list">
-                                    <span class="tag">마이크로소프트</span>
-                                </div>
-                                <!-- //tag_list -->
-                                <div class="txt">
-                                    <p>전자결제 업계 판타스틱 FOUR, 올인원 결제 혁신 시프트4의 질주</p>
-                                </div>
-                                <div class="info_box">
-                                    <div class="day">
-                                        <p>25.06.12</p>
-                                    </div>
-                                    <span class="noti_tag">공지</span>
-                                </div>
-                                <!-- //info_box -->
+                    <div class="list" onclick="location.href ='news_view.html'" style="cursor: pointer;">
+                        <div class="news_content">
+                            <div class="tag_list">
+                                <span class="tag">시프트4페이먼츠</span>
+                                <span class="tag">시프트4페이먼츠</span>
+                                <span class="tag">시프트4페이먼츠</span>
                             </div>
-                            <!-- //news_content -->
-                            <div class="img">
-                                <span class=""><img src="https://picsum.photos/72/56" alt="썸네일 이미지" width="72"
-                                        height="56"></span>
+                            <!-- //tag_list -->
+                            <div class="txt">
+                                <p>전자결제 업계 판타스틱 FOUR, 올인원 결제 혁신 시프트4의 질주</p>
                             </div>
+                            <div class="info_box">
+                                <div class="day">
+                                    <p>25.06.12</p>
+                                </div>
+                            </div>
+                            <!-- //info_box -->
                         </div>
-                        <div class="list" onclick="location.href =''" style="cursor: pointer;">
-                            <div class="news_content">
-                                <div class="tag_list">
-                                    <span class="tag">마이크로소프트</span>
-                                    <span class="tag">마이크로소프트</span>
-                                </div>
-                                <!-- //tag_list -->
-                                <div class="txt">
-                                    <p>전자결제 업계 판타스틱 FOUR, 올인원 결제 혁신 시프트4의</p>
-                                </div>
-                                <div class="info_box">
-                                    <div class="day">
-                                        <p>25.06.12</p>
-                                    </div>
-                                </div>
-                                <!-- //info_box -->
-                            </div>
-                            <!-- //news_content -->
-                            <div class="img">
-                                <span class=""><img src="https://picsum.photos/72/56" alt="썸네일 이미지" width="72"
-                                        height="56"></span>
-                            </div>
-                        </div>
-                        <div class="list" onclick="location.href =''" style="cursor: pointer;">
-                            <div class="news_content">
-                                <div class="tag_list">
-                                    <span class="tag">시프트4페이먼츠</span>
-                                    <span class="tag">시프트4페이먼츠</span>
-                                    <span class="tag">시프트4페이먼츠</span>
-                                </div>
-                                <!-- //tag_list -->
-                                <div class="txt">
-                                    <p>전자결제 업계 판타스틱 FOUR, 올인원 결제 혁신 시프트4의 질주</p>
-                                </div>
-                                <div class="info_box">
-                                    <div class="day">
-                                        <p>25.06.12</p>
-                                    </div>
-                                </div>
-                                <!-- //info_box -->
-                            </div>
-                            <!-- //news_content -->
-                        </div>
-                        <!-- 애드가플래시인 경우  -->
-                        <div class="list" onclick="location.href =''" style="cursor: pointer;">
-                            <div class="news_content">
-                                <div class="tag_list">
-                                    <span class="tag">마이크로소프트</span>
-                                </div>
-                                <!-- //tag_list -->
-                                <div class="txt">
-                                    <p>전자결제 업계 판타스틱 FOUR, 올인원 결제 혁신 시프트4의</p>
-                                </div>
-                                <div class="info_box">
-                                    <div class="day">
-                                        <p>25.06.12</p>
-                                    </div>
-                                </div>
-                                <!-- //info_box -->
-                            </div>
-                            <!-- //news_content -->
-                            <!-- 애드가플래시인 경우 종목로고 이미지 노출  -->
-                            <div class="img">
-                                <span class="logo"><img src="https://uslogo.datahero.co.kr/img/logo/us/mvl/AAPL.svg"
-                                        alt=""></span>
-                                <!-- <span class=""><img src="https://picsum.photos/72/56" alt="썸네일 이미지" width="72" height="56"></span> -->
-
-                            </div>
-                        </div>
+                        <!-- //news_content -->
                     </div>
-                </div>
+                    <!-- 애드가플래시인 경우  -->
+                    <div class="list" onclick="location.href ='news_view.html'" style="cursor: pointer;">
+                        <div class="news_content">
+                            <div class="tag_list">
+                                <span class="tag">마이크로소프트</span>
+                            </div>
+                            <!-- //tag_list -->
+                            <div class="txt">
+                                <p>전자결제 업계 판타스틱 FOUR, 올인원 결제 혁신 시프트4의</p>
+                            </div>
+                            <div class="info_box">
+                                <div class="day">
+                                    <p>25.06.12</p>
+                                </div>
+                            </div>
+                            <!-- //info_box -->
+                        </div>
+                        <!-- //news_content -->
+                        <!-- 애드가플래시인 경우 종목로고 이미지 노출  -->
+                        <div class="img">
+                            <span class="logo"><img src="https://uslogo.datahero.co.kr/img/logo/us/mvl/AAPL.svg"
+                                    alt=""></span>
+                            <!-- <span class=""><img src="https://picsum.photos/72/56" alt="썸네일 이미지" width="72" height="56"></span> -->
 
-                <!-- 종목노트 성장주 -->
-                <div class="filter_box_inner" data-filter="growth_note">
-                    <!-- 리스트 -->
-                    <div class="lst_type note_list">
-                        <div class="list" onclick="location.href =''" style="cursor: pointer;">
-                            <div class="news_content">
-                                <div class="tag_list">
-                                    <span class="tag">마이크로소프트</span>
-                                </div>
-                                <!-- //tag_list -->
-                                <div class="txt">
-                                    <p>전자결제 업계 판타스틱 FOUR, 올인원 결제 혁신 시프트4의 질주</p>
-                                </div>
-                                <div class="info_box">
-                                    <div class="day">
-                                        <p>25.06.12</p>
-                                    </div>
-                                    <span class="noti_tag">공지</span>
-                                </div>
-                                <!-- //info_box -->
-                            </div>
-                            <!-- //news_content -->
-                            <div class="img">
-                                <span class=""><img src="https://picsum.photos/72/56" alt="썸네일 이미지" width="72"
-                                        height="56"></span>
-                            </div>
-                        </div>
-                        <div class="list" onclick="location.href =''" style="cursor: pointer;">
-                            <div class="news_content">
-                                <div class="tag_list">
-                                    <span class="tag">마이크로소프트</span>
-                                    <span class="tag">마이크로소프트</span>
-                                </div>
-                                <!-- //tag_list -->
-                                <div class="txt">
-                                    <p>전자결제 업계 판타스틱 FOUR, 올인원 결제 혁신 시프트4의</p>
-                                </div>
-                                <div class="info_box">
-                                    <div class="day">
-                                        <p>25.06.12</p>
-                                    </div>
-                                </div>
-                                <!-- //info_box -->
-                            </div>
-                            <!-- //news_content -->
-                            <div class="img">
-                                <span class=""><img src="https://picsum.photos/72/56" alt="썸네일 이미지" width="72"
-                                        height="56"></span>
-                            </div>
-                        </div>
-                        <div class="list" onclick="location.href =''" style="cursor: pointer;">
-                            <div class="news_content">
-                                <div class="tag_list">
-                                    <span class="tag">시프트4페이먼츠</span>
-                                    <span class="tag">시프트4페이먼츠</span>
-                                    <span class="tag">시프트4페이먼츠</span>
-                                </div>
-                                <!-- //tag_list -->
-                                <div class="txt">
-                                    <p>전자결제 업계 판타스틱 FOUR, 올인원 결제 혁신 시프트4의 질주</p>
-                                </div>
-                                <div class="info_box">
-                                    <div class="day">
-                                        <p>25.06.12</p>
-                                    </div>
-                                </div>
-                                <!-- //info_box -->
-                            </div>
-                            <!-- //news_content -->
-                        </div>
-                        <!-- 애드가플래시인 경우  -->
-                        <div class="list" onclick="location.href =''" style="cursor: pointer;">
-                            <div class="news_content">
-                                <div class="tag_list">
-                                    <span class="tag">마이크로소프트</span>
-                                </div>
-                                <!-- //tag_list -->
-                                <div class="txt">
-                                    <p>전자결제 업계 판타스틱 FOUR, 올인원 결제 혁신 시프트4의</p>
-                                </div>
-                                <div class="info_box">
-                                    <div class="day">
-                                        <p>25.06.12</p>
-                                    </div>
-                                </div>
-                                <!-- //info_box -->
-                            </div>
-                            <!-- //news_content -->
-                            <!-- 애드가플래시인 경우 종목로고 이미지 노출  -->
-                            <div class="img">
-                                <span class="logo"><img src="https://uslogo.datahero.co.kr/img/logo/us/mvl/AAPL.svg"
-                                        alt=""></span>
-                                <!-- <span class=""><img src="https://picsum.photos/72/56" alt="썸네일 이미지" width="72" height="56"></span> -->
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 종목노트 기업분석 -->
-                <div class="filter_box_inner" data-filter="analysis_note">
-                    <!-- 리스트 -->
-                    <div class="lst_type note_list">
-                        <div class="list" onclick="location.href =''" style="cursor: pointer;">
-                            <div class="news_content">
-                                <div class="tag_list">
-                                    <span class="tag">마이크로소프트</span>
-                                </div>
-                                <!-- //tag_list -->
-                                <div class="txt">
-                                    <p>전자결제 업계 판타스틱 FOUR, 올인원 결제 혁신 시프트4의 질주</p>
-                                </div>
-                                <div class="info_box">
-                                    <div class="day">
-                                        <p>25.06.12</p>
-                                    </div>
-                                    <span class="noti_tag">공지</span>
-                                </div>
-                                <!-- //info_box -->
-                            </div>
-                            <!-- //news_content -->
-                            <div class="img">
-                                <span class=""><img src="https://picsum.photos/72/56" alt="썸네일 이미지" width="72"
-                                        height="56"></span>
-                            </div>
-                        </div>
-                        <div class="list" onclick="location.href =''" style="cursor: pointer;">
-                            <div class="news_content">
-                                <div class="tag_list">
-                                    <span class="tag">마이크로소프트</span>
-                                    <span class="tag">마이크로소프트</span>
-                                </div>
-                                <!-- //tag_list -->
-                                <div class="txt">
-                                    <p>전자결제 업계 판타스틱 FOUR, 올인원 결제 혁신 시프트4의</p>
-                                </div>
-                                <div class="info_box">
-                                    <div class="day">
-                                        <p>25.06.12</p>
-                                    </div>
-                                </div>
-                                <!-- //info_box -->
-                            </div>
-                            <!-- //news_content -->
-                            <div class="img">
-                                <span class=""><img src="https://picsum.photos/72/56" alt="썸네일 이미지" width="72"
-                                        height="56"></span>
-                            </div>
-                        </div>
-                        <div class="list" onclick="location.href =''" style="cursor: pointer;">
-                            <div class="news_content">
-                                <div class="tag_list">
-                                    <span class="tag">시프트4페이먼츠</span>
-                                    <span class="tag">시프트4페이먼츠</span>
-                                    <span class="tag">시프트4페이먼츠</span>
-                                </div>
-                                <!-- //tag_list -->
-                                <div class="txt">
-                                    <p>전자결제 업계 판타스틱 FOUR, 올인원 결제 혁신 시프트4의 질주</p>
-                                </div>
-                                <div class="info_box">
-                                    <div class="day">
-                                        <p>25.06.12</p>
-                                    </div>
-                                </div>
-                                <!-- //info_box -->
-                            </div>
-                            <!-- //news_content -->
-                        </div>
-                        <!-- 애드가플래시인 경우  -->
-                        <div class="list" onclick="location.href =''" style="cursor: pointer;">
-                            <div class="news_content">
-                                <div class="tag_list">
-                                    <span class="tag">마이크로소프트</span>
-                                </div>
-                                <!-- //tag_list -->
-                                <div class="txt">
-                                    <p>전자결제 업계 판타스틱 FOUR, 올인원 결제 혁신 시프트4의</p>
-                                </div>
-                                <div class="info_box">
-                                    <div class="day">
-                                        <p>25.06.12</p>
-                                    </div>
-                                </div>
-                                <!-- //info_box -->
-                            </div>
-                            <!-- //news_content -->
-                            <!-- 애드가플래시인 경우 종목로고 이미지 노출  -->
-                            <div class="img">
-                                <span class="logo"><img src="https://uslogo.datahero.co.kr/img/logo/us/mvl/AAPL.svg"
-                                        alt=""></span>
-                                <!-- <span class=""><img src="https://picsum.photos/72/56" alt="썸네일 이미지" width="72" height="56"></span> -->
-
-                            </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="btn_more">
-                    <a href="">더보기 <i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                <path d="M13 6L7.8 11.2L3 6.4" stroke="#8C98A7" stroke-width="1.4" stroke-linecap="round" />
+                    <a href="">더보기 <i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                fill="none">
+                                <path d="M13 6L7.8 11.2L3 6.4" stroke="#8C98A7" stroke-width="1.4"
+                                    stroke-linecap="round" />
                             </svg></i></a>
                 </div>
                 <!-- //btn_more -->
             </div>
             <!-- //sub_mid -->
-
-
         </div>
         <!-- //container -->
 
@@ -712,8 +292,7 @@
                         아니며, 투자 결정의 유일한 근거로 사용되어서는 안 됩니다.</p>
                     <p>모든 투자에는 위험이 따르며, 과거 금융 상품의 성과가 미래의 결과나 수익을 보장하지 않습니다. 금융 상품에 투자할 때는 항상 재정적 손실의 가능성을 인지하고 있어야 하며,
                         투자자는 투자하기 전에 자신의 투자 목표와 위험을 신중하게 고려해야 합니다.</p>
-                    <p class="dataLink">data from <a href="https://www.quandl.com/" target="_blank">Quandl and
-                            Sharadar</a></p>
+                    <p class="dataLink">data from <a href="https://www.quandl.com/" target="_blank">Quandl and Sharadar</a></p>
                 </div>
 
                 <ul class="terms_list">
@@ -778,8 +357,9 @@
                 </div>
 
                 <div class="pop_footer">
-                    <div class="btnArea payBtn">                        
-                        <a href="https://www.choicestock.co.kr/main/service" class="btn btn_apply">미국주식 <b>첫 달 1,000원</b></a>
+                    <div class="btnArea payBtn">
+                        <a href="https://www.choicestock.co.kr/main/service" class="btn btn_apply">미국주식 <b>첫 달
+                                1,000원</b></a>
                     </div>
                 </div>
                 <!-- //pop_footer  -->
