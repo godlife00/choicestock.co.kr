@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no" />
+    <title>초이스스탁US</title>
+    <meta name="robots" content="초이스스탁US - 미국주식 쉽고 편리하게'">
+    <meta name="description" content="투자를 쉽고 편리하게, 미국주식가이드, 종목분석, 종목토론, 데이터히어로">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="theme-color" content="#2C295D">
+    <!-- 오픈 그래프 -->
+    <meta property="og:title" content="초이스스탁US - 미국주식 쉽고 편리하게'" />
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="투자를 쉽고 편리하게, 미국주식가이드, 종목분석, 종목토론, 데이터히어로">
+    <meta property="og:image" content="http://godlife.ivyro.net/test/img/choicestockus_thumb.png?ver=250408">
+    <meta property="og:image:width" content="410" />
+    <meta property="og:image:height" content="210" />
+    <meta property="og:url" content="www.choicestock.co.kr">
+    <!-- 파비콘 favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="img/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <!-- jquery-1.12 -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <!-- 이미지 순차적 로딩 lazysizes -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js"></script>
+    <!-- highstock -->
+    <!-- highstock -->
+    <!-- <script src="http://godlife.ivyro.net/highcharts/highcharts.js"></script> -->
+    <script src="http://godlife.ivyro.net/highcharts/stock/highstock.js"></script>
+    <script src="http://godlife.ivyro.net/highcharts/stock/modules/data.js"></script>
+    <script src="http://godlife.ivyro.net/highcharts/stock/modules/hollowcandlestick.js"></script>
+    <script src="http://godlife.ivyro.net/highcharts/stock/modules/no-data-to-display.js"></script>
+    <script src="http://godlife.ivyro.net/highcharts/stock/modules/treemap.js"></script>
+    <script src="http://godlife.ivyro.net/highcharts/stock/highcharts-more.js"></script>
+    <script src="http://godlife.ivyro.net/highcharts/stock/modules/exporting.js"></script>
+    <script src="http://godlife.ivyro.net/highcharts/stock/modules/export-data.js"></script>
+    <script src="http://godlife.ivyro.net/highcharts/stock/modules/accessibility.js"></script>
+    <script src="http://godlife.ivyro.net/highcharts/annotations.js"></script>
+    <script src="js/chartjs.js"></script>
+    <!-- Swiper -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="css/scss/choicestock.css?ver=250212312" />
+    <!-- js -->
+    <script src="js/choicestock.js"></script>
+    <!-- 이 아래는 로컬에서만 사용되는 파일 -->
+    <script src="js/local.js"></script>
+    <!-- 로컬에서만 사용되는 파일 종료  -->
+</head>
+<!-- 제휴사이트 민트 칼라 적용 class = mint  -->
+
+<body class="v_signalStreng globalStock">
+    <div id="wrap">       
+        <!-- 하단 GNB -->
+        <div class="gnb">
+            <ul class="list">
+                <li class="home active"><a href="index.html" class="home">홈</a></li>
+                <li class="sch"><a href="search/searching.html" class="sch">검색</a></li>
+                <li class="stock"><a href="stock/recom.html" class="stock">추천</a></li>
+                <li class="excavation"><a href="stock/note.html" class="excavation">발굴</a></li>
+                <li class="attention"><a href="search/searching_attention.html" class="attention">관심</a></li>
+            </ul>
+        </div>
+        <!-- //gnb -->
+
+        <div id="container">
+            본문
+        </div>
+        <!-- //container -->
+
+        <div id="footer" class="chous_footer">
+            <div class="notice">
+                <div class="service_info">
+                    <p>데이터히어로가 제공하는 모든 콘텐츠는 오직 정보 제공 목적으로만 사용되며, 특정 주식을 판매하거나 추천할 의도로 게시된 것이 아닙니다. 데이터히어로의 콘텐츠는 연구 보고서가
+                        아니며, 투자 결정의 유일한 근거로 사용되어서는 안 됩니다.</p>
+                    <p>모든 투자에는 위험이 따르며, 과거 금융 상품의 성과가 미래의 결과나 수익을 보장하지 않습니다. 금융 상품에 투자할 때는 항상 재정적 손실의 가능성을 인지하고 있어야 하며,
+                        투자자는 투자하기 전에 자신의 투자 목표와 위험을 신중하게 고려해야 합니다.</p>
+                    <p class="dataLink">data from <a href="https://www.quandl.com/" target="_blank">Quandl and
+                            Sharadar</a></p>
+                </div>
+
+                <ul class="terms_list">
+                    <li><a href="terms.html">이용약관</a></li>
+                    <li><a href="https://www.datahero.co.kr/choicestockus-faq/" target="_blank">서비스 FAQ</a></li>
+                    <li><a href="policy.html"><strong>개인정보처리방침</strong></a></li>
+                    <li><a href="https://www.datahero.co.kr/choicestockus-update/" target="_black">업데이트 소식</a>
+                    </li>
+                    <li><a href="https://www.datahero.co.kr" target="_blank">회사소개</a></li>
+                </ul>
+
+                <div class="foot_info">
+                    <div class="info_tel_box">
+                        <span class="cs"><a href="https://kq64o.channel.io/" target="blank">온라인 1:1 문의하기</a> (평일
+                            9:00~17:00, 점심 11:20~12:20/ 주말 및 공휴일 휴무) </span>
+                    </div>
+                    <!-- //info_tel_box -->
+                    <p class="copyright"><a href="https://www.datahero.co.kr" target="_blank">ⓒ (주)데이터히어로</a><i></i>
+                        <strong>대표자</strong> 김인중 <br>서울특별시 서초구 강남대로 311 <i></i> 사업자등록번호 291-88-01393 <i></i>
+                        <!-- <strong>대표번호 <a href="tel:02-6225-2300"><strong>02-6225-2300</strong></a></strong> -->
+                    </p>
+                </div>
+                <!-- //foot_info -->
+                <div class="family_site">
+                    <strong>Family</strong>&nbsp;&nbsp;&nbsp;&gt;&nbsp;&nbsp;&nbsp;
+                    <a href="https://value.choicestock.co.kr/?utm_source=choicestock&utm_medium=banner&utm_campaign=service"
+                        target="blank">밸류라인</a>
+                </div>
+                <!-- //family_site -->
+
+            </div>
+            <!-- //notice -->
+        </div>
+        <!-- //footer -->
+    </div>
+    <!-- //wrap -->
+
+    <div class="modalBox">
+        <!-- 시스템 점검 및 업그레이드 진행 예정 팝업 -->
+        <div class="modal-background" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.4); z-index: 9998;"></div>        
+        <div class="modal system-maintenance-notice" style="display: none;">         
+            
+            <span class="clse">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                    <path
+                        d="M18.7929 4.29314C19.1834 3.90261 19.8164 3.90261 20.207 4.29314C20.5974 4.68367 20.5975 5.31669 20.207 5.7072L13.414 12.5002L20.207 19.2931L20.2753 19.3693C20.5956 19.7621 20.573 20.3411 20.207 20.7072C19.8408 21.0733 19.2618 21.0959 18.8691 20.7756L18.7929 20.7072L11.9999 13.9142L5.20695 20.7072C4.81644 21.0977 4.18342 21.0977 3.79289 20.7072C3.40237 20.3167 3.40237 19.6837 3.79289 19.2931L10.5859 12.5002L3.79289 5.7072L3.72453 5.63103C3.40418 5.23825 3.42677 4.65925 3.79289 4.29314C4.15901 3.92704 4.73801 3.90443 5.13078 4.22478L5.20695 4.29314L11.9999 11.0861L18.7929 4.29314Z"
+                        fill="#24282C" />
+                </svg>
+            </span>  
+            
+            <div class="notice-title"><img src="img/notice-title.png" alt="서비스 일시 중단 안내"></div>
+            <h1 class="maintenance-headline">시스템 점검 및<br>업그레이드 진행 예정</h1>            
+
+            <div class="notice-img"><img src="img/notice-cat.png" alt=""></div>
+            
+            <div class="notice-detail">
+                <p class="notice-date">• <b>일시</b> : 2025년 7월 4일(금)<br><i style="visibility:hidden" >• </i>오전 9시 30분 ~ 11시 30분 (약 2시간)</p>
+                <p class="notice-desc">• <b>초이스스탁US 서비스 전체 중단</b></p>                    
+            </div>            
+            <div class="ftr">
+                <label for="maintenance_pop_today" class="btn_day">
+                    <input type="checkbox" name="maintenance_pop_today" id="maintenance_pop_today" /> 오늘 하루 열지 않기</label>
+                <a href="javascript:closeMaintenanceWin();" class="ftr_close">닫기</a>
+            </div>
+        </div>
+        <!-- //시스템 점검 및 업그레이드 진행 예정 팝업 -->
+
+        <!-- 시스템 점검 팝업 JavaScript -->
+        <script language="Javascript" type="text/javascript">
+            // 시스템 점검 팝업 관련 쿠키 체크
+            var maintenanceCookiedata = document.cookie;
+            if (maintenanceCookiedata.indexOf("maintenance_pop=done") < 0) {
+                if (document.querySelector('.system-maintenance-notice') != null) {
+                    document.querySelector('.system-maintenance-notice').style.display = "block";
+                }
+                if (document.querySelector('.modal-background') != null) {
+                    document.querySelector('.modal-background').style.display = "block";
+                }
+            } else {
+                if (document.querySelector('.system-maintenance-notice') != null) {
+                    document.querySelector('.system-maintenance-notice').style.display = "none";
+                }
+                if (document.querySelector('.modal-background') != null) {
+                    document.querySelector('.modal-background').style.display = "none";
+                }
+            }
+            
+            // 시스템 점검 팝업 닫기 함수
+            function closeMaintenanceWin() {
+                if (document.querySelector('.system-maintenance-notice') != null) {
+                    document.querySelector('.system-maintenance-notice').style.display = "none";
+                }
+                if (document.querySelector('.modal-background') != null) {
+                    document.querySelector('.modal-background').style.display = "none";
+                }                
+            }
+            
+            // 오늘 하루 열지 않기 체크박스 이벤트
+            $('#maintenance_pop_today').on('click', function () {
+                setCookie("maintenance_pop", "done", 24);
+                closeMaintenanceWin();
+            });
+            
+            // 시스템 점검 팝업 닫기 버튼 이벤트
+            $(document).on('click', '.system-maintenance-notice .clse', function() {
+                closeMaintenanceWin();
+            });
+        </script>
+
+        <!-- 첫 달 1000원 유도 팝업 -->
+        <div class="modal first_month_3300">
+            <div class="pop_header">
+                <h2 class="pop_title">AI가 알려주는 투자타이밍!</h2>
+                <p class="period">초이스스탁US 프리미엄</p>
+                <span class="clse">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                        <path
+                            d="M18.7929 4.29314C19.1834 3.90261 19.8164 3.90261 20.207 4.29314C20.5974 4.68367 20.5975 5.31669 20.207 5.7072L13.414 12.5002L20.207 19.2931L20.2753 19.3693C20.5956 19.7621 20.573 20.3411 20.207 20.7072C19.8408 21.0733 19.2618 21.0959 18.8691 20.7756L18.7929 20.7072L11.9999 13.9142L5.20695 20.7072C4.81644 21.0977 4.18342 21.0977 3.79289 20.7072C3.40237 20.3167 3.40237 19.6837 3.79289 19.2931L10.5859 12.5002L3.79289 5.7072L3.72453 5.63103C3.40418 5.23825 3.42677 4.65925 3.79289 4.29314C4.15901 3.92704 4.73801 3.90443 5.13078 4.22478L5.20695 4.29314L11.9999 11.0861L18.7929 4.29314Z"
+                            fill="#24282C" />
+                    </svg>
+                </span>
+            </div>
+            <div class="bot_box">
+                <img src="../img/gdn_bot.png" alt="">
+                <span class="bubble_img"><img src="../img/bubble_up.png" alt=""></span>
+            </div>
+            <div class="pop_con">
+                <ul>
+                    <li>지금살까? 특허받은 전종목 <b>매매신호</b></li>
+                    <li>매수부터 매도까지! <b>종목추천</b></li>
+                    <li>투자매력과 적정주가를 한눈에 <b>종목진단</b></li>
+                </ul>
+            </div>
+
+            <div class="pop_footer">
+                <div class="btnArea payBtn">                    
+                    <a href="https://www.choicestock.co.kr/main/service" class="btn btn_apply">미국주식 <b>첫 달 1,000원</b></a>
+                </div>
+            </div>
+            <!-- //pop_footer  -->
+        </div>
+        <!-- //첫 달 1000원 유도 팝업 -->
+
+
+        <!-- 마켓스코어 공포 지수 툴팁 -->
+        <div class="modal tooltip_pop score_pop01">
+            <div class="pop_header">
+                <h1 class="pop_title">초이스스탁 공포-탐욕 지수</h1>
+                <span class="clse">
+                    <!--닫기-->
+                </span>
+            </div>
+            <div class="pop_con">
+                <p class="sum_txt">초이스스탁이 개발한 공포-탐욕지수는 전체 종목 중 AI 매매신호의 '매수+보유' 단계의 종목 비율에 따라 점수화했습니다. 75점을 초과하면 탐욕 단계로,
+                    25점 이하면 공포 단계로 표시합니다.</p>
+                <ul>
+                    <li class="txt"><strong>탐욕 (75점 초과) :</strong> 위험을 전혀 생각하지 않는 단계로 향후 주가 하락 가능성이 높은 구간</li>
+                    <li class="txt"><strong>과욕 (56점 초과) :</strong> 위험을 인지하면서도 추가 수익을 추구하는 단계로 주의가 필요한 구간</li>
+                    <li class="txt"><strong>보통 (44점 초과) :</strong> 주가의 상승 또는 하락 추세를 강화하는 구간</li>
+                    <li class="txt"><strong>불안 (25점 초과) :</strong> 주가 하락에 대한 불안이 있지만 단기 바닥을 확인하는 구간</li>
+                    <li class="txt"><strong>공포 (25점 이하) :</strong> 무조건 매도를 외치는 구간으로, 장기적으로 가장 좋은 매수 구간</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="blocker"></div>
+    </div>
+</body>
+
+</html>
