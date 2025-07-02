@@ -674,13 +674,6 @@
   font-weight: var(--Weight-400, 400);
   line-height: var(--Line-height-lg, 21px);
   letter-spacing: var(--Tracking-md, -0.3px);
-  text-decoration-line: underline;
-  text-decoration-style: solid;
-  -webkit-text-decoration-skip: ink;
-          text-decoration-skip-ink: auto;
-  text-decoration-thickness: auto;
-  text-underline-offset: auto;
-  text-underline-position: from-font;
 }
 #footer.chous_footer .f_top .dataLink a {
   color: var(--Font-tertiary-caption, #8C98A7);
