@@ -37759,6 +37759,54 @@ body.v_signalStreng {
 .globalStock .sub_alarm .alarm_from .toggleWrap input[type=checkbox]:checked + div label span {
   left: 24px;
 }
+.globalStock .sub_alarm .alarm_time {
+  display: flex;
+  align-items: center;
+  gap: 8px 8px;
+  width: 100%;
+  padding: 40px 20px;
+  box-sizing: border-box;
+  border-bottom: 8px solid var(--Background-fill-background, #F7F8FA);
+}
+.globalStock .sub_alarm .alarm_time:has(.premium_banner) {
+  padding-top: 20px;
+}
+.globalStock .sub_alarm .alarm_time .h2_title {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+.globalStock .sub_alarm .alarm_time .h2_title .day {
+  margin-left: auto;
+  color: var(--Font-tertiary-caption, #8C98A7);
+  font-family: var(--Body, Pretendard);
+  font-size: var(--Size-xs-12, 12px);
+  font-style: normal;
+  font-weight: var(--Weight-400, 400);
+  line-height: var(--Line-height-xs-12, 14px); /* 116.667% */
+  letter-spacing: var(--Tracking-md, -0.3px);
+}
+.globalStock .sub_alarm .alarm_time .set_time {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1px 1px;
+  margin-left: auto;
+  padding: 10px 12px;
+  box-sizing: border-box;
+  border-radius: var(--Radius-r-02, 8px);
+  background: var(--Blue-blue100, #ECF0FF);
+}
+.globalStock .sub_alarm .alarm_time .set_time p {
+  color: var(--Font-primary-blue, #4168F6);
+  font-family: var(--Body, Pretendard);
+  font-size: var(--Size-xs-13, 13px);
+  font-style: normal;
+  font-weight: var(--Weight-600, 600);
+  line-height: var(--Line-height-xs-13, 16px); /* 123.077% */
+  letter-spacing: var(--Tracking-md, -0.3px);
+}
 
 .globalStock .sub_alarm .alarm_from .toggleWrap.gray label {
   background: #dadce0;
