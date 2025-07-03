@@ -74,7 +74,7 @@
 			display: flex;
 			justify-content: flex-start;
 			flex-wrap: nowrap;
-			gap: 6px 12px;				
+			gap: 8px 12px;				
 			margin: 8px 0 0;
 			padding: 0;
 			li {								
@@ -114,6 +114,37 @@
 						letter-spacing: var(--Tracking-md, -0.3px);
 					}
 				}				
+			}
+		}
+		.info_tel_box {			
+			margin-top: 8px;
+
+			.cs {
+				display: flex;
+				flex-direction: column;
+				gap: 4px 4px;
+				color: var(--Gray-gray400, #B0B8C1);
+				font-family: var(--Body, Pretendard);
+				font-size: var(--Size-xs-13, 13px);
+				font-style: normal;
+				font-weight: var(--Weight-500, 500);
+				line-height: var(--Line-height-xs-13, 16px); /* 123.077% */
+				letter-spacing: var(--Tracking-md, -0.3px);
+				a {
+					color: var(--Gray-gray600, #6B7684);
+					font-family: var(--Body, Pretendard);
+					font-size: var(--Size-xs-13, 13px);
+					font-style: normal;
+					font-weight: var(--Weight-500, 500);
+					line-height: var(--Line-height-xs-13, 16px); /* 123.077% */
+					letter-spacing: var(--Tracking-md, -0.3px);
+					text-decoration-line: underline;
+					text-decoration-style: solid;
+					text-decoration-skip-ink: auto;
+					text-decoration-thickness: auto;
+					text-underline-offset: auto;
+					text-underline-position: from-font;
+				}
 			}
 		}
 
@@ -234,6 +265,93 @@
 		}	
 	}
 
+	&.main_footer {
+		.f_top {
+			.f_title {
+				color: var(--Gray-gray400, #B0B8C1);
+				font-family: var(--Body, Pretendard);
+				font-size: var(--Size-xs-13, 13px);
+				font-style: normal;
+				font-weight: var(--Weight-700, 700);
+				line-height: var(--Line-height-xs-13, 16px); /* 123.077% */
+				letter-spacing: var(--Tracking-md, -0.3px);
+			}
+			.f_txt {
+				&:first-of-type {					
+					margin-top: 0;
+				}
+				margin-top: 12px;
+				color: var(--Gray-gray400, #B0B8C1);
+				font-family: var(--Body, Pretendard);
+				font-size: var(--Size-xs-12, 12px);
+				font-style: normal;
+				font-weight: var(--Weight-500, 500);
+				line-height: var(--Line-height-sm, 18px); /* 150% */
+				letter-spacing: var(--Tracking-md, -0.3px);
+				&::before {
+					display: none;
+				}
+			}
+			.dataLink {
+				padding-left: 0;
+				color: var(--Gray-gray400, #B0B8C1);
+				font-family: var(--Body, Pretendard);
+				font-size: var(--Size-xs-12, 12px);
+				font-style: normal;
+				font-weight: var(--Weight-500, 500);
+				line-height: var(--Line-height-sm, 18px); /* 150% */
+				letter-spacing: var(--Tracking-md, -0.3px);
+			}
+		}
+		.foot_info {
+			display: flex;
+			gap: 8px 8px;
+			flex-direction: column;
+			margin-top: 32px;
+			padding-bottom: 0;
+			.term_list {
+				margin-top: 0;				
+				li a {
+					color: var(--Gray-gray600, #6B7684);
+					font-family: var(--Body, Pretendard);
+					font-size: var(--Size-xs-13, 13px);
+					font-style: normal;
+					font-weight: var(--Weight-500, 500);
+					line-height: var(--Line-height-xs-13, 16px); /* 123.077% */
+					letter-spacing: var(--Tracking-md, -0.3px);
+					strong {
+						color: var(--Gray-gray600, #6B7684);						
+						font-weight: var(--Weight-700, 700);						
+					}
+				}				
+			}
+		}
+		.copyright {
+			margin-top: 16px;
+			p, a {
+				position: relative;
+				display: inline-flex;
+				align-items: center;
+				gap: 4px 4px;
+				color: var(--Gray-gray400, #B0B8C1);
+				font-family: var(--Body, Pretendard);
+				font-size: var(--Size-xs-13, 13px);
+				font-style: normal;
+				font-weight: var(--Weight-500, 500);
+				line-height: var(--Line-height-xs-13, 16px); /* 123.077% */
+				letter-spacing: var(--Tracking-md, -0.3px);
+				i {
+					display: inline-flex;
+					align-items: center;
+					top: 0;
+					background-color: var(--Border-primary-border, #E3E5E8);
+					margin: 0 8px;
+				}
+			}			
+		}
+		
+	}
+
 	&.chous_footer {
 		.f_top {
 			display: flex;
@@ -352,7 +470,7 @@
 		}
 	}
 
-	&.event_footer {				
+	&.event_footer {						
 		
 	}
 }
@@ -447,12 +565,12 @@
 			align-items: center;			
 			gap: 2px 2px;
 			width: 100%;
-			color: var(--Font-tertiary-caption, #8C98A7);
+			color: var(--Font-secondary-caption, #6B7684);
 			font-family: var(--Body, Pretendard);
 			font-size: var(--Size-sm, 14px);
 			font-style: normal;
 			font-weight: var(--Weight-400, 400);
-			line-height: var(--Line-height-lg, 21px);
+			line-height: var(--Line-height-lg, 21px); /* 150% */
 			letter-spacing: var(--Tracking-md, -0.3px);
 			text-decoration-line: underline;
 			text-decoration-style: solid;
