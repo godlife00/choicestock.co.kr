@@ -27,7 +27,13 @@ $(document).ready(function () {
             $('html, body').css("overflow", "hidden");
             $('.modal').hide();
             $('.blocker').show();
-            $targetPopup.show().addClass('slideUp50');
+            
+            // bottom_popup 클래스가 있는 경우 slideUp 클래스 적용, 그렇지 않으면 slideUp50 클래스 적용
+            if ($targetPopup.hasClass('bottom_popup')) {
+                $targetPopup.show().addClass('slideUp');
+            } else {
+                $targetPopup.show().addClass('slideUp50');
+            }
         },
 
         // 모달 닫기
@@ -1130,6 +1136,13 @@ $(document).ready(function () {
             } : false,
         });
     };
+
+    // 뉴스 티커 종목 스와이프
+    var newsSwiper = new Swiper('.tickerlist-swiper', {
+        slidesPerView: 'auto',
+        spaceBetween: 8,
+        freeMode: true,
+    });
 
     // 필터 스와이퍼 초기화
     const filterSwiper = new Swiper('.filter-swiper', {
@@ -2579,7 +2592,8 @@ class ContentFilter {
                 'sub_alarm': 'all_briefing',  // 알람 리스트 페이지: 전체 브리핑 필터
                 'default': 'growth',            // 기본 페이지: 성장주 필터
                 'onestop_view': 'detail',          // 원스톱진단 페이지: 간단히,자세히 필터
-                'research_board': 'news_allnews'   // 검색 뉴스 탭 : 뉴스, 투자노트 필터
+                'research_board': 'news_allnews',   // 검색 뉴스 탭 : 뉴스, 투자노트 필터
+                'latest_results': 'interest_all_news'   // 관심 페이지 : 뉴스, 투자노트, 커뮤니티 필터
             },
             filterButtonClass: '.filter_btn',   // 필터 버튼 클래스
             sortButtonClass: '.sort_btn',       // 정렬 버튼 클래스

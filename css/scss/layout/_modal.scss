@@ -3497,7 +3497,7 @@
 
 // modal 팝업 리뉴얼 250604
 .modal.modal_popup { // 팝업 기본 스타일 modal_popup
-	border-radius: var(--Radius-r-04, 16px);
+	border-radius: var(--Radius-r-05, 24px);	
 	background: #FFF;
 
 	max-width: 700px;
@@ -3509,6 +3509,85 @@
     z-index: 99;
     width: 94%;
     box-sizing: border-box;    
+
+	// 하단에서 열리는 팝업 .bottom_popup
+	&.bottom_popup {
+		bottom: 0;
+		left: 0;		
+		right: 0;
+		top: auto;
+		transform: translate(0%, 0%);
+		border: none;
+		width: 100%;
+		border-bottom-right-radius: 0;
+		border-bottom-left-radius: 0;
+		.pop_header {
+			padding-top: 32px;
+			.clse {
+				right: 19px;
+				top: 32px;
+			}
+		}
+		.pop_con {
+			gap: 16px 12px;
+			padding: 0 24px 32px;
+
+			.ticker_list {
+				display: flex;
+				flex-wrap: wrap;
+				align-items: center;
+				gap: 6px 8px;			
+				overflow-y: auto;
+				overflow-x: hidden;
+				max-height: calc((38px * 5) + (8px * 3) + 20px);
+				/* 자식 요소가 4개를 넘지 않도록 높이 제한 */
+					
+				.item {
+					display: inline-flex;
+					align-items: center;
+					justify-content: center;
+					gap: 2px 2px;
+					padding: 7px 16px;
+					margin: 0;
+					box-sizing: border-box;									
+					border-radius: var(--Radius-r-03, 12px);
+					background: var(--Background-primary-light-background, #F1F4F6);
+					color: var(--Font-secondary-body, #4E5866);
+					font-family: var(--Body, Pretendard);
+					font-size: var(--Size-md-15, 15px);
+					font-style: normal;
+					font-weight: var(--Weight-400, 400);
+					line-height: var(--Line-height-xl-01, 24px); /* 160% */
+					letter-spacing: var(--Tracking-md, -0.3px);
+					.ticker {						
+						display: inline-block;						
+						overflow: hidden;
+						text-overflow: ellipsis;
+						white-space: nowrap;
+						max-width: 14ch;
+					}
+
+					.increase, .decrease, .same {						
+						font-family: var(--Body, Pretendard);
+						font-size: var(--Size-md-15, 15px);
+						font-style: normal;
+						font-weight: var(--Weight-500, 500);
+						line-height: var(--Line-height-xl-01, 24px); /* 160% */
+						letter-spacing: var(--Tracking-md, -0.3px);
+					}
+					.increase {
+						color: var(--Red-red500, #F03E4C);
+					}
+					.decrease {						
+						color: #26ABFF;
+					}
+					.same {
+						color: var(--Font-secondary-body, #4E5866);
+					}
+				}
+			}
+		}
+	}
 
 	.pop_header {
 		background-color: #fff;		
@@ -3777,6 +3856,111 @@
 					background: var(--Font-primary-blue, #4168F6);
 					color: #FFF;					
 					font-weight: var(--Weight-600, 600);					
+				}
+			}
+		}
+
+	}
+
+	.select_area {
+		display: flex;
+		flex-wrap: nowrap;
+		align-items: center;
+		gap: 12px 12px;
+
+		.selectBoxList {
+			position: relative;
+			width: 100%;
+			
+			&::after {
+				content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13 6L7.8 11.2L3 6.4" stroke="%238C98A7" stroke-width="1.4" stroke-linecap="round"/></svg>');
+				position: absolute;
+				width: 16px;
+				height: 16px;
+				right: 10px;
+				top: 17px;
+				z-index: 81;
+			}
+		}
+	
+		select {
+			cursor: pointer;
+			width: 100%;
+			padding: 8px 16px;
+			box-sizing: border-box;
+			border-radius: 8px;
+			border: solid 1px #e0e4e9;
+			background-color: #fff;
+
+			color: var(--Font-secondary-body, #4E5866);
+			font-family: var(--Body, Pretendard);
+			font-size: var(--Size-md-15, 15px);
+			font-style: normal;
+			font-weight: var(--Weight-500, 500);
+			line-height: var(--Line-height-xl-01, 24px);
+			letter-spacing: var(--Tracking-md, -0.3px);			
+			
+			
+			height: 48px;
+			padding: 0 24px 0 12px;
+			opacity: 1;				
+			appearance: none; // 기본 셀렉트 스타일 제거				
+			&:disabled {
+				background-color: red;
+				cursor: not-allowed;
+				opacity: 0.7;
+			}
+	
+			&:focus {
+				outline: none;
+			}
+		}
+
+		.noData_title {
+			color: var(--Font-primary-title, #1F242B);
+			font-family: var(--Title, Pretendard);
+			font-size: var(--Size-2xl, 20px);
+			font-style: normal;
+			font-weight: var(--Weight-600, 600);
+			line-height: var(--Line-height-2xl, 26px); /* 130% */
+			letter-spacing: var(--Tracking-md, -0.3px);
+			b {
+				color: var(--Font-primary-title, #1F242B);
+				font-weight: var(--Weight-600, 600);
+			}
+		}
+		
+		.sort_manage {
+			display: flex;
+			align-items: center;
+			gap: 8px 8px;
+			margin-left: auto;
+
+			a,
+			button {
+				cursor: pointer;
+				color: #6A727B;
+				font-size: 14px;
+				font-weight: 500;
+				padding: 0 4px;
+				border: none;
+				background: none;
+				outline: none;
+			}
+
+			.btn_manage_group {
+				position: relative;
+				padding-right: 0;
+
+				&::before {
+					content: "";
+					position: absolute;
+					left: -4px;
+					top: 2px;
+					display: inline-block;
+					width: 1px;
+					height: 12px;
+					background-color: #E0E4E9;
 				}
 			}
 		}
