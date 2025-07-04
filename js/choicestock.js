@@ -2113,6 +2113,13 @@ $(document).ready(function () {
         var chart = chartList[i];
 
         tab.addEventListener('click', function () {
+            // 모든 탭에서 'active' 클래스 제거
+            tabList.forEach(function(t) {
+                t.classList.remove('active');
+            });
+            // 클릭한 탭에 'active' 클래스 추가
+            this.classList.add('active');
+
             // 모든 차트 숨기기
             for (var c of chartList) {
                 c.style.display = 'none';
@@ -2129,10 +2136,10 @@ $(document).ready(function () {
         });
     }
     $('.mainBox.outline .chart_box .period_tabs li').click(function () {
+        // 모든 탭 버튼에서 'active' 클래스 제거
+        $(this).siblings().removeClass('active');
         // 선택한 탭 버튼에 'active' 클래스 추가
         $(this).addClass('active');
-        
-        // 다른 탭 버튼에서 'active' 클래스 제거
     });
 
     // 메인페이지 2024 신년이벤트 배너
