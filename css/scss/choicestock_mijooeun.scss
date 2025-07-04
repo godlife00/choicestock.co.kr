@@ -6,7 +6,11 @@
 @import "layout/footer";
 @import "layout/styles"; // 전반적인 스타일 요소를 담당하는 파일
 @import "layout/styles2"; // 전반적인 스타일 요소를 담당하는 파일
+@import "layout/styles3"; // 전반적인 스타일 요소를 담당하는 파일
+@import "layout/view"; // 페이지 뷰
 @import "layout/modal"; // 팝업, 툴팁
+@import "layout/banner"; // 베너
 @import "layout/service"; // 팝업, 툴팁
 @import "layout/gdn_type"; // GDN_type
+@import "layout/is_app"; // 앱 환경에서 적용되는 스타일
 @import "layout/mijooeun"; // 미주은 미국주식으로 은퇴하기에서 사용하는 스타일

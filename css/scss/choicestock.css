@@ -355,8 +355,12 @@
 
 #footer {
   margin: 0;
+  margin-top: 80px;
   padding: 48px 20px 55px;
   background: var(--Background-fill-background, #F1F4F6);
+}
+.page_desc_wrap + #footer {
+  margin-top: 0;
 }
 #footer .f_top {
   display: flex;
@@ -616,6 +620,7 @@
   gap: 4px 8px;
   margin-top: 24px;
   padding-top: 24px;
+  padding-bottom: 24px;
   border-top: 1px solid var(--Border-primary-border, #E3E5E8);
 }
 #footer .family_site .f_title {
@@ -869,6 +874,7 @@
 }
 
 .page_desc_wrap {
+  margin-top: 80px;
   padding: 48px 20px 0;
   background: var(--Background-fill-background, #F1F4F6);
 }
@@ -916,6 +922,25 @@
   min-width: 3px;
   background-color: var(--Gray-gray400, #B0B8C1);
   border-radius: 100%;
+}
+.page_desc_wrap .page_desc_inner .f_list {
+  display: flex;
+  gap: 4px 4px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2px 0 2px 12px;
+}
+.page_desc_wrap .page_desc_inner .f_list li {
+  color: var(--Font-tertiary-caption, #8C98A7);
+  font-family: var(--Body, Pretendard);
+  font-size: var(--Size-sm, 14px);
+  font-style: normal;
+  font-weight: var(--Weight-400, 400);
+  line-height: var(--Line-height-lg, 21px); /* 150% */
+  letter-spacing: var(--Tracking-md, -0.3px);
+  word-break: break-all;
+  word-wrap: break-word;
 }
 .page_desc_wrap .page_desc_inner .faq_link {
   display: flex;
