@@ -4363,6 +4363,7 @@
 
 	// .txt가 2개 이상일 때 적용되는 스타일
 	&:has(.txt:nth-child(2)) {
+		gap: 4px 8px;
 		border-radius: var(--Radius-r-04, 16px) !important;		
 	}
 

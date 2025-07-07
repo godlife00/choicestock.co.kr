@@ -44509,6 +44509,7 @@ body.v_signalStreng {
   box-sizing: border-box;
 }
 .toast_popup:has(.txt:nth-child(2)) {
+  gap: 4px 8px;
   border-radius: var(--Radius-r-04, 16px) !important;
 }
 .toast_popup .txt {
