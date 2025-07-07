@@ -4340,3 +4340,65 @@
 		}
 	}
 }
+
+// 토스트 팝업
+.toast_popup {
+	display: flex;	
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 8px 8px;
+	padding: 16px 30px;	
+	border-radius: var(--Radius-r-07, 100px) !important;
+	background: rgba(49, 59, 72, 0.90) !important;
+	margin: 0 auto !important;	
+    position: fixed;
+	top: auto;
+    bottom: 120px;
+	left: 50%;	
+	transform: translate(-50%, 50%);
+    z-index: 99;	
+    max-width: 84%;    		
+    box-sizing: border-box;    
+
+	// .txt가 2개 이상일 때 적용되는 스타일
+	&:has(.txt:nth-child(2)) {
+		border-radius: var(--Radius-r-04, 16px) !important;		
+	}
+
+	.txt {
+		display: flex;					
+		align-items: center;
+		justify-content: flex-start;
+		gap: 8px 8px;
+		width: 100%;
+		color: #FFF;
+		font-family: var(--Body, Pretendard);
+		font-size: var(--Size-md-15, 15px);
+		font-style: normal;
+		font-weight: var(--Weight-400, 400);
+		line-height: var(--Line-height-xl-01, 24px); /* 160% */
+		letter-spacing: var(--Tracking-md, -0.3px);
+		span {
+			flex: 1 1 0;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+			min-width: 0; // flex item에서 말줄임 처리를 위해 필요
+			display: block;
+			color: #FFF;
+			font-family: var(--Body, Pretendard);
+			font-size: var(--Size-md-15, 15px);
+			font-style: normal;
+			font-weight: var(--Weight-400, 400);
+			line-height: var(--Line-height-xl-01, 24px); /* 160% */
+			letter-spacing: var(--Tracking-md, -0.3px);
+		}
+
+		i {
+			display: inline-flex;
+			align-items: center;			
+			flex: 0 0 auto;
+		}
+	}
+}
