@@ -28,7 +28,7 @@ $(document).ready(function () {
             $('.modal').hide();
             $('.blocker').show();
             
-            // bottom_popup 클래스가 있는 경우 slideUp 클래스 적용, 그렇지 않으면 slideUp50 클래스 적용
+            // bottom_popup 또는 toast_popup 클래스가 있는 경우 slideUp 클래스 적용, 그렇지 않으면 slideUp50 클래스 적용
             if ($targetPopup.hasClass('bottom_popup')) {
                 $targetPopup.show().addClass('slideUp');
             } else {
