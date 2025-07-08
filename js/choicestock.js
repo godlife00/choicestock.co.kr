@@ -28,8 +28,8 @@ $(document).ready(function () {
             $('.modal').hide();
             $('.blocker').show();
             
-            // bottom_popup 또는 toast_popup 클래스가 있는 경우 slideUp 클래스 적용, 그렇지 않으면 slideUp50 클래스 적용
-            if ($targetPopup.hasClass('bottom_popup')) {
+            // 모달 팝업의 클래스에 따라 slideUp 또는 slideUp50 클래스를 적용함
+            if ($targetPopup.hasClass('bottom_popup') || $targetPopup.hasClass('fav_group_move_popup')) {                
                 $targetPopup.show().addClass('slideUp');
             } else {
                 $targetPopup.show().addClass('slideUp50');
@@ -1852,29 +1852,29 @@ $(document).ready(function () {
     });
 	
     // 관심종목 등록 팝업
-    $('.attention_pop').on('click', function () {
-        $('.modal').hide().removeClass('slideUp'); // 다른 모달 숨기기
-        $('.blocker').show(); // 배경 블러 처리
-        $('.fav_reg_popup').show().addClass('slideUp'); // 원하는 모달 표시                        
-        $('html, body').css("overflow", "hidden");
-    });    
+    // $('.attention_pop').on('click', function () {
+    //     $('.modal').hide().removeClass('slideUp'); // 다른 모달 숨기기
+    //     $('.blocker').show(); // 배경 블러 처리
+    //     $('.fav_reg_popup').show().addClass('slideUp'); // 원하는 모달 표시                        
+    //     $('html, body').css("overflow", "hidden");
+    // });    
     // 관심종목 그룹 등록 2차 팝업
     $('.group_add_btn').on('click', function () {                          
-        $('.modal').hide().removeClass('slideUp');                      
-		 // 등록 팝업 초기화
+        // 등록 팝업 초기화
 		$('.fav_group_reg_popup .name_input').val('');
+        $('.fav_group_del_popup .input_count').html('<b>0</b>/15');
+        
+        // $('.modal').hide().removeClass('slideUp');                      
 		//$('.fav_group_reg_popup .input_cunt').text('0/15');
-		$('.fav_group_del_popup .input_count').html('<b>0</b>/15');
-		
-    $('.blocker').show();
-		$('.fav_group_reg_popup').show().addClass('slideUp'); // 그룹 추가 펍옵 표시
-    $('html, body').css("overflow", "hidden");		
+        // $('.blocker').show();
+		// $('.fav_group_reg_popup').show().addClass('slideUp'); // 그룹 추가 펍옵 표시
+        // $('html, body').css("overflow", "hidden");		
     });
 	
-    $('.group_reg_btn').on('click', function () {                          
-        $('.modal').hide().removeClass('slideUp');                      
-        $('.fav_group_del_popup').show().addClass('slideUp'); 
-    });	
+    // $('.group_reg_btn').on('click', function () {                          
+    //     $('.modal').hide().removeClass('slideUp');                      
+    //     $('.fav_group_del_popup').show().addClass('slideUp'); 
+    // });	
 
     // fav_group_reg_popup 닫기 버튼 클릭 시
     $('.fav_group_reg_popup .clse').on('click', function () {      
@@ -1893,12 +1893,12 @@ $(document).ready(function () {
     });
 	
     // 관심종목 그룹 관리 툴팁 팝업
-    $('.btn_manage_group').on('click', function () {
-        $('.modal').hide().removeClass('slideUp'); // 다른 모달 숨기기
-        $('.blocker').show(); // 배경 블러 처리
-        $('.fav_group_manage_popup').show().addClass('slideUp'); // 원하는 모달 표시        
-        $('html, body').css("overflow", "hidden");
-    });	
+    // $('.btn_manage_group').on('click', function () {
+    //     $('.modal').hide().removeClass('slideUp'); // 다른 모달 숨기기
+    //     $('.blocker').show(); // 배경 블러 처리
+    //     $('.fav_group_manage_popup').show().addClass('slideUp'); // 원하는 모달 표시        
+    //     $('html, body').css("overflow", "hidden");
+    // });	
 	
 	// 그룹 관리 팝업의 확인 버튼 클릭 이벤트
 	$(document).on('click', '.fav_group_manage_popup .btn_save', function() {

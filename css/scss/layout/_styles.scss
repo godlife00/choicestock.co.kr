@@ -1246,6 +1246,12 @@ table.tableRanking td {
 
 .globalStock .sub_search .att_wrap {
 	.btnArea.edtBtn {
+
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		gap: 8px 8px;
+
 		position: sticky;
 		bottom: 0;
 		padding-top: 0;
@@ -1254,22 +1260,37 @@ table.tableRanking td {
 		box-shadow: 0px -32px 20px 0px rgba(255, 255, 255, 0.9);
 
 		.btn {
-			background: #404fc3;
-			border: 1px solid #404fc3;
-			width: 100%;
-			border-radius: 7px;
-			cursor: pointer;
-			padding: 15px 5px;
-			color: #FFF;
-			font-size: 16px;
-			font-weight: 700;
+			transition: transform 0.08s cubic-bezier(0.4, 0, 0.2, 1);
+			&:active {
+				transform: translate(2px, 2px);
+			}
+			margin: 0;
+			width: 100%;				
+			padding: 14.5px 25px;
+			box-sizing: border-box;
+			border-radius: var(--Radius-r-03, 12px);
+			border: 1px solid var(--Border-tertiary-border, #DADCE0);
+			background: #FFF;
+			color: var(--Font-tertiary-caption, #8C98A7);
+			font-family: var(--Body, Pretendard);
+			font-size: var(--Size-lg, 17px);
+			font-style: normal;
+			font-weight: var(--Weight-600, 600);
+			line-height: var(--Line-height-lg, 21px); /* 123.529% */
+			letter-spacing: -0.3px;
+
+			&.btn_save {
+				border-color: transparent;
+				background: var(--Font-primary-blue, #4168F6);
+				color: #FFF;					
+				font-weight: var(--Weight-600, 600);					
+			}
 
 			&.btn_del {
 				background: #C7CCD1;
 				border-color: #C7CCD1;
 			}
 		}
-
 	}
 }
 

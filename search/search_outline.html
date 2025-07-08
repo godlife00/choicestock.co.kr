@@ -47,7 +47,7 @@
     <!-- js -->
     <script src="../js/choicestock.js?ver=250413"></script>
     <!-- 이 아래는 로컬에서만 사용되는 파일 -->
-    <script src="../js/local.js"></script>
+    <!-- <script src="../js/local.js"></script> -->
     <!-- 로컬에서만 사용되는 파일 종료  -->
 </head>
 
@@ -146,10 +146,10 @@
                     <h1 class="headerLogo"><span>종목검색</span></h1>
                 </div>
                 <div class="right">
-                    <span class="att"><i class="attention attention_pop no_member" style="left:-120px"></i></span>
+                    <span class="att"><i class="attention attention_pop no_member" style="left:-120px" data-popup="fav_item_reg_popup"></i></span>
                     <!-- 로그인 안한 경우 no_member -->
-                    <span class="att"><i class="attention attention_pop on" style="left:-50px"></i></span>
-                    <span class="att"><i class="attention attention_pop"></i></span>
+                    <span class="att"><i class="attention attention_pop on" style="left:-50px" data-popup="fav_reg_popup"></i></span>
+                    <span class="att"><i class="attention attention_pop" data-popup="fav_reg_popup"></i></span>
                 </div>
             </div>
             <!-- //headerTop -->
@@ -157,18 +157,18 @@
             <script>
                 $(document).ready(function () {
                     // 관심종목 등록 (비회원인 경우)
-                    $('.attention.attention_pop.no_member').on('click', function () {
-                        $('.modal').hide().removeClass('slideUp'); // 다른 모달 숨기기
-                        $('.blocker').show(); // 배경 블러 처리
-                        $('html, body').css("overflow", "hidden");
-                        $('.fav_item_reg_popup').show().addClass('slideUp'); // 원하는 모달 표시                                  
-                    });
-                    $('.fav_item_reg_popup .btn_save').on('click', function () {
-                        $('.modal').hide().removeClass('slideUp'); // 다른 모달 숨기기
-                        $('.blocker').show(); // 배경 블러 처리
-                        $('html, body').css("overflow", "hidden");
-                        $('.fav_item_reg_popup2').show().addClass('slideUp'); // 원하는 모달 표시                                  
-                    });
+                    // $('.attention.attention_pop.no_member').on('click', function () {
+                    //     $('.modal').hide().removeClass('slideUp'); // 다른 모달 숨기기
+                    //     $('.blocker').show(); // 배경 블러 처리
+                    //     $('html, body').css("overflow", "hidden");
+                    //     $('.fav_item_reg_popup').show().addClass('slideUp'); // 원하는 모달 표시                                  
+                    // });
+                    // $('.fav_item_reg_popup .btn_save').on('click', function () {
+                    //     $('.modal').hide().removeClass('slideUp'); // 다른 모달 숨기기
+                    //     $('.blocker').show(); // 배경 블러 처리
+                    //     $('html, body').css("overflow", "hidden");
+                    //     $('.fav_item_reg_popup2').show().addClass('slideUp'); // 원하는 모달 표시                                  
+                    // });
                 });
             </script>
         </div>
@@ -1080,7 +1080,7 @@
             </div>
 
             <!-- 관심종목 등록 툴팁 팝업 -->
-            <div class="modal att_pop fav_reg_popup">
+            <div class="modal att_pop fav_reg_popup bottom_popup">
                 <!-- fav_reg_popup(관심종목 등록), fav_group_reg_popup(관심종목 그룹 등록), fav_group_move_popup(관심종목 그룹 이동), fav_group_manage_popup(관심종목 그룹 관리), fav_group_edit_popup(관심종목 그룹 수정, 삭제) -->
                 <div class="pop_header">
                     <h1 class="pop_title">관심종목 등록</h1>
@@ -1096,7 +1096,7 @@
                 <div class="pop_con">
                     <!-- 그룹 선택 -->
                     <div class="group_select">
-                        <button class="group_add_btn">
+                        <button class="group_add_btn" data-popup="fav_group_reg_popup">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
                                 fill="none">
                                 <circle cx="10" cy="10" r="10" fill="#404FC3" />
@@ -1149,14 +1149,10 @@
             </div>
 
             <!-- 관심종목 그룹 등록 툴팁 팝업 -->
-            <div class="modal att_pop fav_group_reg_popup">
+            <div class="modal att_pop fav_group_reg_popup alert_popup">
                 <!-- fav_reg_popup(관심종목 등록), fav_group_reg_popup(관심종목 그룹 등록), fav_group_move_popup(관심종목 그룹 이동), fav_group_manage_popup(관심종목 그룹 관리), fav_group_edit_popup(관심종목 그룹 수정, 삭제) -->
                 <div class="pop_header">
                     <h1 class="pop_title">관심종목 그룹 등록</h1>
-
-                    <span class="clse">
-                        <!--닫기-->
-                    </span>
                 </div>
                 <div class="pop_con">
                     <div class="group_name_input">
@@ -1167,43 +1163,37 @@
                     </div>
 
                     <div class="btnArea edtBtn">
-                        <!-- <a href="" class="btn btn_save close">삭제</a> -->
-                        <input type="submit" class="btn btn_save" value="등록">
+                        <a href="#" class="btn btn_cncl" data-popup="pop_clse">취소</a>
+                        <input type="submit" class="btn btn_save" value="등록" data-popup="fav_reg_popup">
                     </div>
                 </div>
             </div>
 
             <!-- 관심종목 등록(비회원인 경우) -->
-            <div class="modal att_pop fav_item_reg_popup slideUp">
+            <div class="modal att_pop fav_item_reg_popup alert_popup">
                 <div class="pop_header">
                     <h1 class="pop_title">관심종목 등록</h1>
-
-                    <span class="clse">
-                        <!--닫기-->
-                    </span>
                 </div>
                 <div class="pop_con">
                     <p class="alt_txt">로그인 후 이용해주세요.</p>
 
                     <div class="btnArea edtBtn">
+                        <a href="#" class="btn btn_cncl" data-popup="pop_clse">닫기</a>
                         <button class="btn btn_save">확인</button>
                     </div>
                 </div>
             </div>
 
             <!-- 관심종목 등록(비회원인 경우) -->
-            <div class="modal att_pop fav_item_reg_popup2 slideUp">
+            <div class="modal att_pop fav_item_reg_popup2 alert_popup">
                 <div class="pop_header">
                     <h1 class="pop_title">관심종목 등록</h1>
-
-                    <span class="clse">
-                        <!--닫기-->
-                    </span>
                 </div>
                 <div class="pop_con">
                     <p class="alt_txt">회원가입 후, 관심종목을 등록할 수 있습니다.</p>
 
                     <div class="btnArea edtBtn">
+                        <a href="#" class="btn btn_cncl" data-popup="pop_clse">닫기</a>
                         <button class="btn btn_save">확인</button>
                     </div>
                 </div>
