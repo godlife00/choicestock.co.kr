@@ -352,6 +352,16 @@
 .header_view .headerTop .cen .detail .per span.same .num {
   color: var(--Gray-gray500, #8C98A7);
 }
+.header_view .headerTop .cen .headerLogo {
+  font-size: 1.25rem;
+  padding-right: 14px;
+}
+.header_view .headerTop .cen .headerLogo span {
+  font-size: 1.25rem;
+  font-weight: bold;
+  letter-spacing: -0.43px;
+  color: #161b23;
+}
 
 #footer {
   margin: 0;
@@ -42993,9 +43003,8 @@ body.v_signalStreng {
   width: 134px;
   height: 5px;
   margin: 0 auto 13px;
-  background-color: #000;
   border-radius: 16px;
-  margin-top: 60px;
+  margin-top: 32px;
 }
 .modal.tooltip_pop.score_pop02 .pop_con .pop_title {
   padding: 16px 20px 0;
