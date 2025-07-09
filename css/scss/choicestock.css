@@ -22148,7 +22148,7 @@ table.tableRanking td {
 /* 미국주식 탐구생활(상세) */
 .globalStock .sub_research .view_con {
   background: #fff;
-  padding-bottom: 30px;
+  padding-bottom: 40px;
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px;
 }
@@ -22243,12 +22243,10 @@ table.tableRanking td {
   width: calc(100% - 40px);
   margin: 0 auto;
   border-top: 1px solid #F4F4F5;
-  border-bottom: 1px solid #F4F4F5;
   color: #333;
   font-size: 1.0625rem;
   line-height: 30px;
   letter-spacing: normal;
-  margin-bottom: 30px;
   word-break: break-all;
   word-wrap: break-word;
 }
@@ -22308,13 +22306,22 @@ table.tableRanking td {
 }
 
 .globalStock .sub_research .view_con .mid + .go_list {
-  color: #939393;
-  font-size: 0.75rem;
-  margin-top: 20px;
-  display: block;
-  text-align: right;
-  letter-spacing: normal;
-  margin-right: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 103px;
+  padding: 13px 23px;
+  box-sizing: border-box;
+  border-radius: var(--Radius-r-03, 12px);
+  border: 1px solid var(--Background-tertiary-background, #E3E5E8);
+  color: var(--Font-secondary-body, #4E5866);
+  font-family: var(--Body, Pretendard);
+  font-size: var(--Size-md-16, 16px);
+  font-style: normal;
+  font-weight: var(--Weight-600, 600);
+  line-height: var(--Line-height-md, 22px); /* 137.5% */
+  letter-spacing: var(--Tracking-md, -0.3px);
 }
 
 .globalStock .sub_research .popularity {
