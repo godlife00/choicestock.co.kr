@@ -7321,8 +7321,10 @@
 }
 
 .globalStock .setting_pop .sort li.active {
-	background: #404fc3;
-	color: #fff;
+	background: var(--Font-primary-blue, #4168F6);
+    color: #FFF;
+    font-weight: var(--Weight-600, 600);
+    border-color: transparent;
 }
 
 .globalStock .setting_pop .sort li.active a {
@@ -7405,11 +7407,11 @@
 }
 
 .globalStock .md-modal #setting {
-	width: 100%;
+	// width: 100%;
 }
 
 .globalStock .md-modal .attract_table {
-	width: 100%;
+	// width: 100%;
 }
 
 .globalStock .md-modal .attract_table th,
@@ -7468,8 +7470,10 @@
 }
 
 .globalStock .md-modal .sort li.active {
-	background: #404fc3;
-	color: #fff;
+	background: var(--Font-primary-blue, #4168F6);
+    color: #FFF;
+    font-weight: var(--Weight-600, 600);
+    border-color: transparent;
 }
 
 .globalStock .md-modal .sort li.active a {

@@ -821,11 +821,23 @@ table.tableRanking td {
 }
 
 .globalStock .btnArea.edtBtn .btn_save {
-	background: #404fc3;
-	border: 1px solid #404fc3;
-	color: #fff;
-	width: 100%;
-	border-radius: 7px;
+
+	box-sizing: border-box;
+    border-radius: var(--Radius-r-03, 12px);
+    border: 1px solid var(--Border-tertiary-border, #DADCE0);
+    background: #FFF;
+    padding: 12px 25px;
+
+
+	border-color: transparent;
+    background: var(--Font-primary-blue, #4168F6);
+    color: #FFF;
+	font-family: var(--Body, Pretendard);
+    font-size: var(--Size-md-16, 16px);
+    font-style: normal;
+    font-weight: var(--Weight-600, 600);
+    line-height: var(--Line-height-md, 22px);
+    letter-spacing: var(--Tracking-md, -0.3px);
 }
 
 .globalStock .btnArea.edtBtn .btn_save:hover {

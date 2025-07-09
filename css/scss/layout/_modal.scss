@@ -1146,21 +1146,24 @@
 	margin-bottom: 50px;
 }
 
-.globalStock #setting {
-	padding: 15px 0 0 0;
-	border: 1px solid #fff;
-	background: #fff;
-	line-height: normal;
-	white-space: normal;
-	width: 95%;
-	background: #F4F4F5;
-	border-radius: 20px;
-	z-index: 82;
+.globalStock #setting {	
+	border-radius: var(--Radius-r-05, 24px);
+    background: #FFF;
+    max-width: 700px;
+    margin: 0 auto;
+    // position: fixed;
+    // top: 50%;
+    // left: 50%;
+    // transform: translate(-50%, -50%);
+    z-index: 99;
+    width: 94%;
+    box-sizing: border-box;
+
 }
 
-.globalStock #setting .pop_header {
-	border-bottom: 1px solid #E0E4E9;
-	padding: 0 20px 15px;
+.globalStock #setting .pop_header {	
+	position: relative;
+    padding: 24px 15px;
 }
 
 .globalStock #setting .pop_header .close {
@@ -1179,16 +1182,15 @@
 
 .globalStock #setting .pop_header .pop_title {
 	text-align: center;
-	color: #333;
-	font-size: 0.9375rem;
+	font-size: 1.25rem;
+    line-height: 1.14;
+    font-weight: bold;
+    color: #333;
 }
 
 .globalStock #setting .pop_con {
-	padding: 15px 20px 0;
+	padding: 0 24px 9px;
 }
-
-
-
 
 .globalStock #pay_cncl {
 	position: absolute;

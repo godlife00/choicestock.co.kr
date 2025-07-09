@@ -1769,11 +1769,20 @@ table.tableRanking td {
 }
 
 .globalStock .btnArea.edtBtn .btn_save {
-  background: #404fc3;
-  border: 1px solid #404fc3;
-  color: #fff;
-  width: 100%;
-  border-radius: 7px;
+  box-sizing: border-box;
+  border-radius: var(--Radius-r-03, 12px);
+  border: 1px solid var(--Border-tertiary-border, #DADCE0);
+  background: #FFF;
+  padding: 12px 25px;
+  border-color: transparent;
+  background: var(--Font-primary-blue, #4168F6);
+  color: #FFF;
+  font-family: var(--Body, Pretendard);
+  font-size: var(--Size-md-16, 16px);
+  font-style: normal;
+  font-weight: var(--Weight-600, 600);
+  line-height: var(--Line-height-md, 22px);
+  letter-spacing: var(--Tracking-md, -0.3px);
 }
 
 .globalStock .btnArea.edtBtn .btn_save:hover {
@@ -18060,8 +18069,10 @@ table.tableRanking td {
 }
 
 .globalStock .setting_pop .sort li.active {
-  background: #404fc3;
-  color: #fff;
+  background: var(--Font-primary-blue, #4168F6);
+  color: #FFF;
+  font-weight: var(--Weight-600, 600);
+  border-color: transparent;
 }
 
 .globalStock .setting_pop .sort li.active a {
@@ -18143,14 +18154,6 @@ table.tableRanking td {
   margin: 0 1px 0 0;
 }
 
-.globalStock .md-modal #setting {
-  width: 100%;
-}
-
-.globalStock .md-modal .attract_table {
-  width: 100%;
-}
-
 .globalStock .md-modal .attract_table th,
 .globalStock .md-modal .attract_table td {
   padding: 7px 3px;
@@ -18207,8 +18210,10 @@ table.tableRanking td {
 }
 
 .globalStock .md-modal .sort li.active {
-  background: #404fc3;
-  color: #fff;
+  background: var(--Font-primary-blue, #4168F6);
+  color: #FFF;
+  font-weight: var(--Weight-600, 600);
+  border-color: transparent;
 }
 
 .globalStock .md-modal .sort li.active a {
@@ -41468,20 +41473,18 @@ body.v_signalStreng {
 }
 
 .globalStock #setting {
-  padding: 15px 0 0 0;
-  border: 1px solid #fff;
-  background: #fff;
-  line-height: normal;
-  white-space: normal;
-  width: 95%;
-  background: #F4F4F5;
-  border-radius: 20px;
-  z-index: 82;
+  border-radius: var(--Radius-r-05, 24px);
+  background: #FFF;
+  max-width: 700px;
+  margin: 0 auto;
+  z-index: 99;
+  width: 94%;
+  box-sizing: border-box;
 }
 
 .globalStock #setting .pop_header {
-  border-bottom: 1px solid #E0E4E9;
-  padding: 0 20px 15px;
+  position: relative;
+  padding: 24px 15px;
 }
 
 .globalStock #setting .pop_header .close {
@@ -41500,12 +41503,14 @@ body.v_signalStreng {
 
 .globalStock #setting .pop_header .pop_title {
   text-align: center;
+  font-size: 1.25rem;
+  line-height: 1.14;
+  font-weight: bold;
   color: #333;
-  font-size: 0.9375rem;
 }
 
 .globalStock #setting .pop_con {
-  padding: 15px 20px 0;
+  padding: 0 24px 9px;
 }
 
 .globalStock #pay_cncl {
