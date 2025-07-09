@@ -1935,29 +1935,29 @@ $(document).ready(function () {
 	});
 
     // 관심그룹 수정,삭제
-    $('.fav_group_com_popup .clse').on('click', function () {      
-        $('.modal').hide().removeClass('slideUp'); // 다른 모달 숨기기
-        $('.blocker').show(); // 배경 블러 처리
-        $('html, body').css("overflow", "hidden");        
-        $('.fav_group_manage_popup').show().addClass('slideUp'); // 원하는 모달 표시                                  
-    });
+    // $('.fav_group_com_popup .clse').on('click', function () {      
+    //     $('.modal').hide().removeClass('slideUp'); // 다른 모달 숨기기
+    //     $('.blocker').show(); // 배경 블러 처리
+    //     $('html, body').css("overflow", "hidden");        
+    //     $('.fav_group_manage_popup').show().addClass('slideUp'); // 원하는 모달 표시                                  
+    // });
 
-    $('.fav_item_del_popup2 .btn_save, .fav_item_del_popup2 .clse').on('click', function() {
-        $('.fav_item_del_popup2').hide().removeClass('slideUp');
-        $('.blocker').hide();
-        $('html, body').css("overflow", "");
-    });
+    // $('.fav_item_del_popup2 .btn_save, .fav_item_del_popup2 .clse').on('click', function() {
+    //     $('.fav_item_del_popup2').hide().removeClass('slideUp');
+    //     $('.blocker').hide();
+    //     $('html, body').css("overflow", "");
+    // });
 	
 	// 관심종목 이동 -> 닫기
-	$('.fav_item_move_popup .btn.btn_save').on('click', function () {        
-		$('body').css('overflow', '');                        
-		$('.blocker').hide();
-		$('.modal').hide().removeClass('slideUp');        
-	});
+	// $('.fav_item_move_popup .btn.btn_save').on('click', function () {        
+	// 	$('body').css('overflow', '');                        
+	// 	$('.blocker').hide();
+	// 	$('.modal').hide().removeClass('slideUp');        
+	// });
     // 모달이 닫힐 때 body에서 'modal-open' 클래스를 제거하는 코드 추가
-    $('.modal.att_pop .pop_header .clse, .blocker').on('click', function() {                
-        $('html, body').css("overflow", "");
-    });
+    // $('.modal.att_pop .pop_header .clse, .blocker').on('click', function() {                
+    //     $('html, body').css("overflow", "");
+    // });
 
     // 매매신호 플로팅 배너 열기, 닫기 스크립트    
     // 스크롤 이벤트를 감지하여 처리    
