@@ -60,6 +60,7 @@
         <button data-popup="alert_popup">시스템 타입 팝업 alert_popup</button>
         <!-- <button data-popup="toast_popup">토스트 팝업 toast_popup</button> -->
         <button data-popup="fav_group_move_popup">관심종목 팝업 fav_group_move_popup</button>
+        <button data-popup="setting_pop02">투자매력도 정렬렬 팝업 setting_pop02</button>
 
         <div class="modalBox">
 
@@ -546,6 +547,87 @@
                         <button class="btn btn_save">확인</button>
                     </div>
                 </div>
+            </div>
+
+            <!-- 맞춤찾기 - 정렬 -->
+            <div class="modal modal_popup center_popup setting_pop02" style="display: block;">
+                <div class="pop_header">
+                    <h1 class="pop_title">정렬</h1>
+                    <span class="clse">
+                        <!--닫기-->
+                    </span>
+                </div>
+                <div class="pop_con">
+                    <form id="search_form" action="/search/recipe/total_score" method="GET">
+                        <input type="hidden" name="sort" value="total">
+                        <div class="filter_box">
+                            <!-- 시가총액 옵션 -->
+                            <div class="class_filter">
+                                <span class="title">시가총액</span>
+                                <div class="selectBoxList">
+                                    <select name="marketcap">
+                                        <option value="0" selected>전체</option>
+                                        <option value="1">3억달러 미만</option>
+                                        <option value="2">3억달러~20억달러 미만</option>
+                                        <option value="3">20억달러~100억달러 미만</option>
+                                        <option value="4">100억달러 이상</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <!-- 마켓 옵션 -->
+                            <div class="class_filter">
+                                <span class="title">마켓</span>
+                                <div class="selectBoxList">
+                                    <select name="marketType">
+                                        <option value="0" selected>전체</option>
+                                        <option value="1">NYSE</option>
+                                        <option value="2">나스닥</option>
+                                        <option value="3">S&amp;P500</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- //filter_box -->
+
+                        <span class="title">산업</span>
+                        <div class="class_filter">
+                            <div class="selectBoxList">
+                                <select class="step1">
+                                    <option disabled selected>전체</option>
+                                    <option>옵션1</option>
+                                    <option>옵션2</option>
+                                    <option>옵션3</option>
+                                </select>
+                            </div>
+                            <div class="selectBoxList">
+                                <select class="step2">
+                                    <option disabled selected>전체</option>
+                                    <option>옵션1</option>
+                                    <option>옵션2</option>
+                                    <option>옵션3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <!-- //class_filter -->
+
+                        <!-- 하단 옵션 -->
+                        <div class="pop_footer">
+                            <span class="title">보기</span>
+                            <ul class="sort">
+                                <li data-id="total" class="active">기본값</li>
+                                <li data-id="prcup">주가 상승률</li>
+                                <li data-id="prcdw">주가 낮은종목</li>
+                                <li data-id="prcsc">스마트 스코어</li>
+                            </ul>
+                            <p>*기본값 : 레시피별로 설정된 정렬 값</p>
+                            <div class="btnArea edtBtn">
+                                <a href="javascript:;" class="btn btn_save">확인</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <!-- //pop_con -->
             </div>
 
             <div class="blocker"></div>

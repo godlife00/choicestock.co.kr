@@ -39185,7 +39185,7 @@ body.v_signalStreng {
   padding-right: 20px;
   box-sizing: border-box;
   font-size: 0.875rem;
-  border: 1px solid #ddd;
+  border: 1px solid #E3E5E8;
   border-radius: 4px;
   background-color: #fff;
   color: #333;
@@ -42202,7 +42202,8 @@ body.v_signalStreng {
 }
 
 .modal.setting_pop02 .pop_con {
-  padding-top: 0;
+  padding: 0 24px !important;
+  margin: 0 !important;
 }
 .modal.setting_pop02 .pop_con span.title {
   margin-top: 15px;
@@ -42290,7 +42291,9 @@ body.v_signalStreng {
   background-color: #5145a8; /* 선택된 상태의 배경 색상 */
 }
 .modal.setting_pop02 .pop_footer {
-  padding: 15px 0 0;
+  margin-top: 20px;
+  padding: 20px 0 24px 0 !important;
+  border-top: none;
 }
 .modal.setting_pop02 .pop_footer p {
   margin-top: 8px;
@@ -42329,11 +42332,48 @@ body.v_signalStreng {
   color: #333;
 }
 .modal.setting_pop02 .pop_footer .sort li.active {
-  border-color: #5145a8;
-  color: #5145a8;
+  background: var(--Font-primary-blue, #4168F6);
+  color: #FFF;
+  font-weight: var(--Weight-600, 600);
+  border: transparent;
 }
-.modal.setting_pop02 .pop_footer .btnArea.edtBtn a {
-  font-size: 0.9375rem;
+.modal.setting_pop02 .pop_footer .btnArea.edtBtn {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 8px 8px;
+  margin-top: 24px;
+  overflow: inherit;
+}
+.modal.setting_pop02 .pop_footer .btnArea.edtBtn .btn {
+  transition: transform 0.08s cubic-bezier(0.4, 0, 0.2, 1);
+  margin: 0;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: var(--Radius-r-03, 12px);
+  border: 1px solid var(--Border-tertiary-border, #DADCE0);
+  background: #FFF;
+  padding: 12px 25px;
+  color: #FFF;
+  font-family: var(--Body, Pretendard);
+  font-size: var(--Size-md-16, 16px);
+  font-style: normal;
+  font-weight: var(--Weight-600, 600);
+  line-height: var(--Line-height-md, 22px);
+  letter-spacing: var(--Tracking-md, -0.3px);
+  border-color: transparent;
+}
+.modal.setting_pop02 .pop_footer .btnArea.edtBtn .btn:active {
+  transform: translate(2px, 2px);
+}
+.modal.setting_pop02 .pop_footer .btnArea.edtBtn .btn.close, .modal.setting_pop02 .pop_footer .btnArea.edtBtn .btn.btn_cncl {
+  background: var(--Font-disabled, #B0B8C1) !important;
+}
+.modal.setting_pop02 .pop_footer .btnArea.edtBtn .btn.btn_save {
+  border-color: transparent;
+  background: var(--Font-primary-blue, #4168F6);
+  color: #FFF;
+  font-weight: var(--Weight-600, 600);
 }
 
 .modal.premium_login_guide {

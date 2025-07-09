@@ -1937,7 +1937,9 @@
 
 .modal.setting_pop02 {            
     .pop_con {
-		padding-top: 0;		
+		padding: 0 24px !important;
+		margin: 0 !important;
+		
         span.title {
             margin-top: 15px;
             display: block;
@@ -2026,7 +2028,9 @@
         }
     }
     .pop_footer {        
-        padding: 15px 0 0;
+		margin-top: 20px;
+        padding: 20px 0 24px 0 !important;
+		border-top: none;
 		p {
 			margin-top: 8px;
 			font-size: clamp(13px, 1.8vw, 15px);
@@ -2063,16 +2067,55 @@
                     color: #333;
                 }
                 &.active {
-                    border-color: #5145a8;
-                    color: #5145a8;
+					background: var(--Font-primary-blue, #4168F6);
+					color: #FFF;
+					font-weight: var(--Weight-600, 600);
+					border: transparent;
                 }
             }			
         }       
-		.btnArea.edtBtn {
-			a {
-				font-size: 0.9375rem;
-			}
-		} 
+
+		.btnArea.edtBtn {		
+			display: flex;
+			flex-direction: row;
+			flex-wrap: nowrap;
+			gap: 8px 8px;
+			margin-top: 24px;
+			overflow: inherit;
+			.btn {
+				transition: transform 0.08s cubic-bezier(0.4, 0, 0.2, 1);
+				&:active {
+					transform: translate(2px, 2px);
+				}
+				margin: 0;
+				width: 100%;							
+				box-sizing: border-box;
+				border-radius: var(--Radius-r-03, 12px);
+				border: 1px solid var(--Border-tertiary-border, #DADCE0);
+				background: #FFF;
+				
+				padding: 12px 25px;
+				color: #FFF;
+				font-family: var(--Body, Pretendard);
+				font-size: var(--Size-md-16, 16px);
+				font-style: normal;
+				font-weight: var(--Weight-600, 600);
+				line-height: var(--Line-height-md, 22px);
+				letter-spacing: var(--Tracking-md, -0.3px);
+				border-color: transparent;
+	
+				&.close, &.btn_cncl {
+					background: var(--Font-disabled, #B0B8C1) !important;
+				}
+	
+				&.btn_save {
+					border-color: transparent;
+					background: var(--Font-primary-blue, #4168F6);
+					color: #FFF;					
+					font-weight: var(--Weight-600, 600);					
+				}
+			}		
+		}
     }    
 }
 // 탑픽 프리미엄 가입 안내 팝업
