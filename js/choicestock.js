@@ -1077,6 +1077,7 @@ $(document).ready(function () {
     }   
 
     // 메인 하단 - 패밀리 사이트 링크 배너
+    // 콘솔 에러 방지: .swiper-pagination이 없을 때 style 접근하지 않도록 수정
     if ($('.bannerSwiper').length) {        
         var slideCount = document.querySelectorAll('.bannerSwiper .swiper-slide').length;
         var swiper = new Swiper(".bannerSwiper", {
@@ -1094,9 +1095,12 @@ $(document).ready(function () {
             } : false,
         });
 
-        // 슬라이드가 1개일 때 pagination 요소를 숨김
+        // 슬라이드가 1개일 때 pagination 요소를 숨김 (존재할 때만)
         if (slideCount <= 1) {
-            document.querySelector('.swiper-pagination').style.display = 'none';
+            var paginationEl = document.querySelector('.swiper-pagination');
+            if (paginationEl) {
+                paginationEl.style.display = 'none';
+            }
         }
     }
 
