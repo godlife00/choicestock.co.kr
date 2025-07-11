@@ -4689,3 +4689,58 @@
 		}
 	}
 }
+
+// 말풍선 팝업
+.balloon_popup {	
+	display: none;			
+	position: absolute;		
+	border-radius: var(--Radius-r-03, 12px);
+	border: 1px solid var(--Border-tertiary-border, #DADCE0);
+	background: #FFF;
+	padding: 16px 44px 16px 20px;
+	box-sizing: border-box;
+	min-width: 300px;
+	max-width: 302px;
+	z-index: 9998;		
+
+	.clse {			
+		position: absolute;		
+		right: 0;
+		top: 0;
+		transition: transform 0.08s cubic-bezier(0.4, 0, 0.2, 1);
+		&:active {
+			transform: translate(2px, 2px);
+		}			
+		padding: 6px 6px;
+		width: auto;
+		height: auto;
+		right: 0px;
+		top: 0px;
+		box-sizing: border-box;
+		&::before, &::after {
+			display: none;
+		}			
+	}
+
+	.txt {
+		margin: 0 !important;
+		padding: 0 !important;
+		max-width: 290px;			
+		text-align: left !important;
+		color: var(--Font-secondary-body, #4E5866) !important;			
+		font-size: var(--Size-sm, 14px) !important;
+		font-weight: var(--Weight-400, 400) !important;
+		line-height: var(--Line-height-lg, 21px) !important;
+		letter-spacing: var(--Tracking-md, -0.3px) !important;
+
+		strong {
+			color: var(--Font-secondary-body, #4E5866) !important;			
+			font-size: var(--Size-sm, 14px) !important;				
+			line-height: var(--Line-height-lg, 21px) !important;
+			letter-spacing: var(--Tracking-md, -0.3px) !important;
+			font-weight: var(--Weight-600, 600) !important;			
+		}
+	}
+	
+
+}

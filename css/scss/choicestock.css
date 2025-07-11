@@ -44898,6 +44898,55 @@ body.v_signalStreng {
   flex: 0 0 auto;
 }
 
+.balloon_popup {
+  display: none;
+  position: absolute;
+  border-radius: var(--Radius-r-03, 12px);
+  border: 1px solid var(--Border-tertiary-border, #DADCE0);
+  background: #FFF;
+  padding: 16px 44px 16px 20px;
+  box-sizing: border-box;
+  min-width: 300px;
+  max-width: 302px;
+  z-index: 9998;
+}
+.balloon_popup .clse {
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: transform 0.08s cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 6px 6px;
+  width: auto;
+  height: auto;
+  right: 0px;
+  top: 0px;
+  box-sizing: border-box;
+}
+.balloon_popup .clse:active {
+  transform: translate(2px, 2px);
+}
+.balloon_popup .clse::before, .balloon_popup .clse::after {
+  display: none;
+}
+.balloon_popup .txt {
+  margin: 0 !important;
+  padding: 0 !important;
+  max-width: 290px;
+  text-align: left !important;
+  color: var(--Font-secondary-body, #4E5866) !important;
+  font-size: var(--Size-sm, 14px) !important;
+  font-weight: var(--Weight-400, 400) !important;
+  line-height: var(--Line-height-lg, 21px) !important;
+  letter-spacing: var(--Tracking-md, -0.3px) !important;
+}
+.balloon_popup .txt strong {
+  color: var(--Font-secondary-body, #4E5866) !important;
+  font-size: var(--Size-sm, 14px) !important;
+  line-height: var(--Line-height-lg, 21px) !important;
+  letter-spacing: var(--Tracking-md, -0.3px) !important;
+  font-weight: var(--Weight-600, 600) !important;
+}
+
 .v_signalStreng.globalStock .signalpop.event2024_payment .box {
   background: #fff url("/img/signalpop_sdwbg.png") repeat-x left bottom;
   background-size: contain;
