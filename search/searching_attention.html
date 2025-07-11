@@ -57,7 +57,7 @@
     </script>
     <script src="../js/choicestock.js"></script>
     <!-- 이 아래는 로컬에서만 사용되는 파일 -->
-    <script src="../js/local.js"></script>
+    <!-- <script src="../js/local.js"></script> -->
     <!-- 로컬에서만 사용되는 파일 종료  -->
 </head>
 
@@ -148,7 +148,7 @@
 
                                 <div class="sort_manage">
                                     <a href="searching_mod.html" class="btn_sort">정렬</a>
-                                    <button class="btn_manage_group">그룹관리</button>
+                                    <button class="btn_manage_group" data-popup="fav_group_manage_popup">그룹관리</button>
                                 </div>
                             </div>
 
@@ -770,15 +770,13 @@
 <div class="modalBox">
 
     <!-- 관심종목 등록 툴팁 팝업 -->
-    <div class="modal att_pop fav_reg_popup">
+    <div class="modal att_pop fav_reg_popup bottom_popup">
         <!-- fav_reg_popup(관심종목 등록), fav_group_reg_popup(관심종목 그룹 등록), fav_group_move_popup(관심종목 그룹 이동), fav_group_manage_popup(관심종목 그룹 관리), fav_group_edit_popup(관심종목 그룹 수정, 삭제) -->
         <div class="pop_header">
             <h1 class="pop_title">관심종목 등록</h1>
             <div>
                 <p class="sum_txt">관심종목 등록으로 종목정보를 빠르게 확인하세요.</p>
-                <ul>
-                    <li class="sum_txt">*프리미엄회원은 관심종목 알림서비스가 제공됩니다.</li>
-                </ul>
+                <p class="sum_txt">프리미엄회원은 관심종목 알림서비스가 제공됩니다.</p>
             </div>
 
             <span class="clse">
@@ -788,17 +786,33 @@
         <div class="pop_con">
             <!-- 그룹 선택 -->
             <div class="group_select">
-                <!-- <label class="group_label">그룹 선택</label> -->
-                <button class="group_reg_btn">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <button class="group_add_btn" data-popup="fav_group_reg_popup">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                        fill="none">
                         <circle cx="10" cy="10" r="10" fill="#404FC3" />
                         <path fill-rule="evenodd" clip-rule="evenodd"
                             d="M9.4 9.4V5H10.6V9.4H15V10.6H10.6V15H9.4V10.6H5V9.4H9.4Z" fill="white" />
                     </svg>그룹 추가</button>
             </div>
 
-            <!-- 관심종목 리스트 -->
             <ul class="fav_list">
+                <li class="fav_item"><input type="checkbox" name="reg_fav" data-group-id="1" id="reg_fav1"
+                        class="fav_checkbox" checked><label for="reg_fav1">테스트1</label></li>
+                <li class="fav_item"><input type="checkbox" name="reg_fav" data-group-id="2" id="reg_fav2"
+                        class="fav_checkbox"><label for="reg_fav2">관심종목 2</label></li>
+
+                <li class="fav_item"><input type="checkbox" name="reg_fav" data-group-id="1" id="reg_fav1"
+                        class="fav_checkbox">
+                    <label for="reg_fav1">관 1</label>
+                </li>
+                <li class="fav_item">
+                    <input type="checkbox" name="reg_fav" data-group-id="2" id="reg_fav2"
+                        class="fav_checkbox"><label for="reg_fav2">관심 3</label>
+                </li>
+            </ul>
+
+            <!-- 관심종목 리스트 -->
+            <!-- <ul class="fav_list">
                 <li class="fav_item">
                     <input type="checkbox" name="reg_fav" id="reg_fav1" class="fav_checkbox" checked>
                     <label for="reg_fav1">관심종목명은열자까지</label>
@@ -807,7 +821,15 @@
                     <input type="checkbox" name="reg_fav" id="reg_fav2" class="fav_checkbox">
                     <label for="reg_fav2">관심종목 #1</label>
                 </li>
-            </ul>
+                <li class="fav_item">
+                    <input type="checkbox" name="reg_fav" id="reg_fav3" class="fav_checkbox" checked>
+                    <label for="reg_fav3">관심종목명은열자까지</label>
+                </li>
+                <li class="fav_item">
+                    <input type="checkbox" name="reg_fav" id="reg_fav4" class="fav_checkbox">
+                    <label for="reg_fav4">관심종목 #1</label>
+                </li>
+            </ul> -->
 
             <div class="btnArea edtBtn">
                 <!-- <a href="" class="btn btn_save close">삭제</a> -->
@@ -817,32 +839,28 @@
     </div>
 
     <!-- 관심종목 그룹 등록 툴팁 팝업 -->
-    <div class="modal att_pop fav_group_reg_popup slideUp">
+    <div class="modal att_pop fav_group_reg_popup alert_popup">
         <!-- fav_reg_popup(관심종목 등록), fav_group_reg_popup(관심종목 그룹 등록), fav_group_move_popup(관심종목 그룹 이동), fav_group_manage_popup(관심종목 그룹 관리), fav_group_edit_popup(관심종목 그룹 수정, 삭제) -->
         <div class="pop_header">
             <h1 class="pop_title">관심종목 그룹 등록</h1>
-
-            <span class="clse">
-                <!--닫기-->
-            </span>
         </div>
         <div class="pop_con">
             <div class="group_name_input">
                 <input type="text" placeholder="그룹이름을 입력하세요" class="name_input"
-                    oninput="this.nextElementSibling.innerText = (this.value.length > 10 ? 10 : this.value.length) + '/10'"
-                    maxlength="10">
-                <span class="input_cunt">0/10</span>
+                    oninput="this.nextElementSibling.children[0].innerText = (this.value.length > 15 ? 15 : this.value.length)"
+                    maxlength="15">
+                <span class="input_count"><b>0</b>/15</span>
             </div>
 
             <div class="btnArea edtBtn">
-                <!-- <a href="" class="btn btn_save close">삭제</a> -->
-                <input type="submit" class="btn btn_save" value="등록">
+                <a href="#" class="btn btn_cncl" data-popup="pop_clse">취소</a>
+                <input type="submit" class="btn btn_save" value="등록" data-popup="fav_reg_popup">
             </div>
         </div>
     </div>
 
     <!-- 관심종목 그룹 이동 툴팁 팝업 -->
-    <div class="modal att_pop fav_group_move_popup slideUp">
+    <div class="modal att_pop fav_group_move_popup">
         <!-- fav_reg_popup(관심종목 등록), fav_group_reg_popup(관심종목 그룹 등록), fav_group_move_popup(관심종목 그룹 이동), fav_group_manage_popup(관심종목 그룹 관리), fav_group_edit_popup(관심종목 그룹 수정, 삭제) -->
         <div class="pop_header">
             <h1 class="pop_title">이동할 그룹을 선택하세요</h1>
@@ -880,7 +898,7 @@
     </div>
 
     <!-- 관심종목 그룹 관리 툴팁 팝업 -->
-    <div class="modal att_pop fav_group_manage_popup slideUp">
+    <div class="modal att_pop fav_group_manage_popup bottom_popup">
         <!-- fav_reg_popup(관심종목 등록), fav_group_reg_popup(관심종목 그룹 등록), fav_group_move_popup(관심종목 그룹 이동), fav_group_manage_popup(관심종목 그룹 관리), fav_group_edit_popup(관심종목 그룹 수정, 삭제) -->
         <div class="pop_header">
             <h1 class="pop_title">관심종목 그룹 관리</h1>
@@ -893,7 +911,7 @@
             <!-- 그룹 선택 -->
             <div class="group_select">
                 <!-- <label class="group_label">그룹 선택</label> -->
-                <button class="group_add_btn">
+                <button class="group_add_btn" data-popup="fav_group_reg_popup">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                         <circle cx="10" cy="10" r="10" fill="#404FC3" />
                         <path fill-rule="evenodd" clip-rule="evenodd"
@@ -905,7 +923,7 @@
             <ul class="fav_list" id="sortable">
                 <li class="fav_item">
                     <span class="label">관심종목관심종목관심 <span class="cunt">(8)</span></span>
-                    <button class="edit_btn">수정</button>
+                    <button class="edit_btn" data-popup="fav_group_del_popup">수정</button>
                     <span class="handle">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                             <path
@@ -916,7 +934,7 @@
                 </li>
                 <li class="fav_item">
                     <span class="label">관심종목 #1<span class="cunt">(8)</span></span>
-                    <button class="edit_btn">수정</button>
+                    <button class="edit_btn" data-popup="fav_group_del_popup">수정</button>
                     <span class="handle">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                             <path
@@ -927,7 +945,7 @@
                 </li>
                 <li class="fav_item">
                     <span class="label">관심종목관심종목관심 <span class="cunt">(8)</span></span>
-                    <button class="edit_btn">수정</button>
+                    <button class="edit_btn" data-popup="fav_group_del_popup">수정</button>
                     <span class="handle">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                             <path
@@ -938,7 +956,7 @@
                 </li>
                 <li class="fav_item">
                     <span class="label">관심종목 #1<span class="cunt">(8)</span></span>
-                    <button class="edit_btn">수정</button>
+                    <button class="edit_btn" data-popup="fav_group_del_popup">수정</button>
                     <span class="handle">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                             <path
@@ -957,18 +975,14 @@
     </div>
 
     <!-- 관심종목 그룹 이름 수정/삭제 팝업 -->
-    <div class="modal att_pop fav_group_del_popup slideUp">
+    <div class="modal att_pop fav_group_del_popup alert_popup">
         <!-- fav_reg_popup(관심종목 등록), fav_group_reg_popup(관심종목 그룹 등록), fav_group_move_popup(관심종목 그룹 이동), fav_group_manage_popup(관심종목 그룹 관리), fav_group_edit_popup(관심종목 그룹 수정, 삭제) -->
         <div class="pop_header">
             <h1 class="pop_title">그룹 이름 수정 &#47; 삭제</h1>
-
-            <span class="clse">
-                <!--닫기-->
-            </span>
         </div>
         <div class="pop_con">
             <div class="group_edit_wrapper">
-                <button class="btn_del">
+                <button class="btn_del" data-popup="fav_group_com_popup">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                         <circle cx="10" cy="10" r="10" fill="#E1305A" />
                         <path d="M6 10H14" stroke="white" stroke-width="1.2" />
@@ -983,56 +997,46 @@
             </div>
 
             <div class="btnArea edtBtn">
-                <button class="btn btn_save">수정</button>
-            </div>
+                <a href="#" class="btn btn_cncl" data-popup="pop_clse">취소</a>
+                <button class="btn btn_save" data-popup="fav_group_regname_popup">수정</button>
+            </div>            
         </div>
     </div>
 
     <!-- 관심종목 그룹 삭제 팝업 -->
-    <div class="modal att_pop fav_group_com_popup slideUp">
+    <div class="modal att_pop fav_group_com_popup alert_popup">
         <!-- fav_reg_popup(관심종목 등록), fav_group_reg_popup(관심종목 그룹 등록), fav_group_move_popup(관심종목 그룹 이동), fav_group_manage_popup(관심종목 그룹 관리), fav_group_edit_popup(관심종목 그룹 수정, 삭제) -->
         <div class="pop_header">
             <h1 class="pop_title">그룹 삭제</h1>
-
-            <span class="clse">
-                <!--닫기-->
-            </span>
         </div>
         <div class="pop_con">
-            <p class="alt_txt">그룹에 포함된 관심종목은 모두 삭제됩니다.<br>관심그룹을 삭제하시겠습니까?</p>
-            <br>
+            <p class="alt_txt">그룹에 포함된 관심종목은 모두 삭제됩니다.<br>관심그룹을 삭제하시겠습니까?</p>            
 
             <div class="btnArea edtBtn">
-                <button class="btn btn_save">관심그룹 삭제</button>
+                <a href="#" class="btn btn_cncl" data-popup="pop_clse">취소</a>
+                <button class="btn btn_save" data-popup="fav_group_com_popup2">관심그룹 삭제</button>
             </div>
         </div>
     </div>
     <!-- 관심종목 그룹 삭제 팝업  -> 확인-->
-    <div class="modal att_pop fav_group_com_popup2 slideUp">
+    <div class="modal att_pop fav_group_com_popup2 alert_popup">
         <div class="pop_header">
             <h1 class="pop_title">관심그룹 삭제</h1>
-
-            <span class="clse">
-                <!--닫기-->
-            </span>
         </div>
         <div class="pop_con">
             <p class="alt_txt">관심그룹이 삭제되었습니다.</p>
 
-            <div class="btnArea edtBtn">
-                <button class="btn btn_save">확인</button>
+            <div class="btnArea edtBtn">                
+                <a href="#" class="btn btn_cncl" data-popup="pop_clse">닫기</a>
+                <!-- <button class="btn btn_save">확인</button> -->
             </div>
         </div>
     </div>
 
     <!-- 관심종목 삭제 -->
-    <div class="modal att_pop fav_item_del_popup slideUp">
+    <div class="modal att_pop fav_item_del_popup alert_popup">
         <div class="pop_header">
             <h1 class="pop_title">관심종목 삭제</h1>
-
-            <span class="clse">
-                <!--닫기-->
-            </span>
         </div>
         <div class="pop_con">
             <p class="alt_txt">선택한 관심종목이 삭제됩니다.</p>
@@ -1043,31 +1047,24 @@
         </div>
     </div>
 
-    <div class="modal att_pop fav_item_del_popup2 slideUp">
+    <div class="modal att_pop fav_item_del_popup2 alert_popup">
         <div class="pop_header">
             <h1 class="pop_title">관심종목 삭제</h1>
-
-            <span class="clse">
-                <!--닫기-->
-            </span>
         </div>
         <div class="pop_con">
             <p class="alt_txt">관심종목이 삭제되었습니다.</p>
 
             <div class="btnArea edtBtn">
-                <button class="btn btn_save">확인</button>
+                <a href="#" class="btn btn_cncl" data-popup="pop_clse">닫기</a>
+                <!-- <button class="btn btn_save">확인</button> -->
             </div>
         </div>
     </div>
 
     <!-- 관심종목 이동 -->
-    <div class="modal att_pop fav_item_move_popup slideUp">
+    <div class="modal att_pop fav_item_move_popup alert_popup">
         <div class="pop_header">
             <h1 class="pop_title">관심종목 이동</h1>
-
-            <span class="clse">
-                <!--닫기-->
-            </span>
         </div>
         <div class="pop_con">
             <p class="alt_txt">관심종목을 선택한 그룹으로 이동했습니다.</p>
@@ -1079,88 +1076,84 @@
     </div>
 
     <!-- 그룹 이름수정 -->
-    <div class="modal att_pop fav_group_regname_popup slideUp">
+    <div class="modal att_pop fav_group_regname_popup alert_popup">
         <div class="pop_header">
             <h1 class="pop_title">그룹 이름수정</h1>
-
-            <span class="clse">
-                <!--닫기-->
-            </span>
         </div>
         <div class="pop_con">
             <p class="alt_txt">그룹 이름이 수정되었습니다.</p>
 
             <div class="btnArea edtBtn">
-                <button class="btn btn_save">확인</button>
+                <button class="btn btn_save" data-popup="pop_clse">확인</button>
             </div>
         </div>
     </div>
 
     <script>
-        $(document).ready(function () {
-            // 관심종목 정렬 -> 종목 삭제 - 관심종목 삭제
-            $('.btn.btn_save.btn_del').on('click', function () {
-                $('.modal').hide().removeClass('slideUp'); // 다른 모달 숨기기
-                $('.blocker').show(); // 배경 블러 처리
-                $('.fav_item_del_popup').show().addClass('slideUp'); // 원하는 모달 표시        
-                $('html, body').css("overflow", "hidden");
-            });
-            // 관심종목 정렬 -> 종목 삭제 - 관심종목 삭제 -> 삭제 확인
-            $('.fav_item_del_popup .btn_save').on('click', function () {
-                $('.modal').hide().removeClass('slideUp'); // 다른 모달 숨기기
-                $('.blocker').show(); // 배경 블러 처리
-                $('.fav_item_del_popup2').show().addClass('slideUp'); // 원하는 모달 표시        
-                $('html, body').css("overflow", "hidden");
-            });
-            // 관심종목 정렬 -> 종목 삭제 - 관심종목 삭제 -> 삭제 확인 -> 닫기
-            $('.fav_item_del_popup2 .btn.btn_save').on('click', function () {
-                $('body').css('overflow', '');
-                $('.blocker').hide();
-                $('.modal').hide().removeClass('slideUp');
-            });
+        // $(document).ready(function () {
+        //     // 관심종목 정렬 -> 종목 삭제 - 관심종목 삭제
+        //     $('.btn.btn_save.btn_del').on('click', function () {
+        //         $('.modal').hide().removeClass('slideUp'); // 다른 모달 숨기기
+        //         $('.blocker').show(); // 배경 블러 처리
+        //         $('.fav_item_del_popup').show().addClass('slideUp'); // 원하는 모달 표시        
+        //         $('html, body').css("overflow", "hidden");
+        //     });
+        //     // 관심종목 정렬 -> 종목 삭제 - 관심종목 삭제 -> 삭제 확인
+        //     $('.fav_item_del_popup .btn_save').on('click', function () {
+        //         $('.modal').hide().removeClass('slideUp'); // 다른 모달 숨기기
+        //         $('.blocker').show(); // 배경 블러 처리
+        //         $('.fav_item_del_popup2').show().addClass('slideUp'); // 원하는 모달 표시        
+        //         $('html, body').css("overflow", "hidden");
+        //     });
+        //     // 관심종목 정렬 -> 종목 삭제 - 관심종목 삭제 -> 삭제 확인 -> 닫기
+        //     $('.fav_item_del_popup2 .btn.btn_save').on('click', function () {
+        //         $('body').css('overflow', '');
+        //         $('.blocker').hide();
+        //         $('.modal').hide().removeClass('slideUp');
+        //     });
 
-            // 관심종목 이동
-            $('.fav_group_move_popup .btn_save').on('click', function () {
-                $('.modal').hide().removeClass('slideUp'); // 다른 모달 숨기기
-                $('.blocker').show(); // 배경 블러 처리
-                $('.fav_item_move_popup').show().addClass('slideUp'); // 원하는 모달 표시        
-                $('html, body').css("overflow", "hidden");
-            });
-            // 관심종목 이동 -> 닫기
-            $('.fav_item_move_popup .btn.btn_save').on('click', function () {
-                $('body').css('overflow', '');
-                $('.blocker').hide();
-                $('.modal').hide().removeClass('slideUp');
-            });
+        //     // 관심종목 이동
+        //     $('.fav_group_move_popup .btn_save').on('click', function () {
+        //         $('.modal').hide().removeClass('slideUp'); // 다른 모달 숨기기
+        //         $('.blocker').show(); // 배경 블러 처리
+        //         $('.fav_item_move_popup').show().addClass('slideUp'); // 원하는 모달 표시        
+        //         $('html, body').css("overflow", "hidden");
+        //     });
+        //     // 관심종목 이동 -> 닫기
+        //     $('.fav_item_move_popup .btn.btn_save').on('click', function () {
+        //         $('body').css('overflow', '');
+        //         $('.blocker').hide();
+        //         $('.modal').hide().removeClass('slideUp');
+        //     });
 
-            // 관심그룹 삭제
-            $('.fav_group_com_popup .btn_save').on('click', function () {
-                $('.modal').hide().removeClass('slideUp'); // 다른 모달 숨기기
-                $('.blocker').show(); // 배경 블러 처리
-                $('.fav_group_com_popup2').show().addClass('slideUp'); // 원하는 모달 표시        
-                $('html, body').css("overflow", "hidden");
-            });
-            // 관심그룹 -> 닫기
-            $('.fav_group_com_popup2 .btn.btn_save').on('click', function () {
-                $('body').css('overflow', '');
-                $('.blocker').hide();
-                $('.modal').hide().removeClass('slideUp');
-            });
+        //     // 관심그룹 삭제
+        //     $('.fav_group_com_popup .btn_save').on('click', function () {
+        //         $('.modal').hide().removeClass('slideUp'); // 다른 모달 숨기기
+        //         $('.blocker').show(); // 배경 블러 처리
+        //         $('.fav_group_com_popup2').show().addClass('slideUp'); // 원하는 모달 표시        
+        //         $('html, body').css("overflow", "hidden");
+        //     });
+        //     // 관심그룹 -> 닫기
+        //     $('.fav_group_com_popup2 .btn.btn_save').on('click', function () {
+        //         $('body').css('overflow', '');
+        //         $('.blocker').hide();
+        //         $('.modal').hide().removeClass('slideUp');
+        //     });
 
-            // 그룹 이름 수정
-            $('.fav_group_del_popup .btn_save').on('click', function () {
-                $('.modal').hide().removeClass('slideUp'); // 다른 모달 숨기기
-                $('.blocker').show(); // 배경 블러 처리
-                $('.fav_group_regname_popup').show().addClass('slideUp'); // 원하는 모달 표시        
-                $('html, body').css("overflow", "hidden");
-            });
-            // 그룹 이름 수정 -> 닫기
-            $('.fav_group_regname_popup .btn.btn_save').on('click', function () {
-                $('body').css('overflow', '');
-                $('.blocker').hide();
-                $('.modal').hide().removeClass('slideUp');
-            });
-        });
+        //     // 그룹 이름 수정
+        //     $('.fav_group_del_popup .btn_save').on('click', function () {
+        //         $('.modal').hide().removeClass('slideUp'); // 다른 모달 숨기기
+        //         $('.blocker').show(); // 배경 블러 처리
+        //         $('.fav_group_regname_popup').show().addClass('slideUp'); // 원하는 모달 표시        
+        //         $('html, body').css("overflow", "hidden");
+        //     });
+        //     // 그룹 이름 수정 -> 닫기
+        //     $('.fav_group_regname_popup .btn.btn_save').on('click', function () {
+        //         $('body').css('overflow', '');
+        //         $('.blocker').hide();
+        //         $('.modal').hide().removeClass('slideUp');
+        //     });
+        // });
     </script>
 
     <div class="blocker"></div>
