@@ -4095,10 +4095,10 @@
 				display: flex;
 				flex-wrap: wrap;
 				align-items: center;
-				gap: 6px 8px;			
+				gap: 8px 8px;			
 				overflow-y: auto;
 				overflow-x: hidden;
-				max-height: calc((38px * 5) + (8px * 3) + 20px);
+				max-height: calc((38px * 5) + (12px * 3) + 20px);
 				/* 자식 요소가 4개를 넘지 않도록 높이 제한 */
 					
 				.item {
@@ -4138,10 +4138,10 @@
 						color: var(--Red-red500, #F03E4C);
 					}
 					.decrease {						
-						color: #26ABFF;
+						color: #097DF3;
 					}
 					.same {
-						color: var(--Font-secondary-body, #4E5866);
+						color: #6B7684;
 					}
 				}
 			}
@@ -4694,13 +4694,15 @@
 .balloon_popup {	
 	display: none;			
 	position: absolute;		
+	// left: 50%;
+	// transform: translateX(-50%);
 	border-radius: var(--Radius-r-03, 12px);
 	border: 1px solid var(--Border-tertiary-border, #DADCE0);
 	background: #FFF;
-	padding: 16px 44px 16px 20px;
+	padding: 16px 32px 16px 20px;
 	box-sizing: border-box;
-	min-width: 300px;
-	max-width: 302px;
+	min-width: 324px;
+	// max-width: 322px;
 	z-index: 9998;		
 
 	.clse {			
@@ -4722,10 +4724,10 @@
 		}			
 	}
 
-	.txt {
+	.txt {				
 		margin: 0 !important;
 		padding: 0 !important;
-		max-width: 290px;			
+		max-width: 280px;			
 		text-align: left !important;
 		color: var(--Font-secondary-body, #4E5866) !important;			
 		font-size: var(--Size-sm, 14px) !important;
@@ -4734,7 +4736,7 @@
 		letter-spacing: var(--Tracking-md, -0.3px) !important;
 
 		strong {
-			color: var(--Font-secondary-body, #4E5866) !important;			
+			color: var(--Font-primary-body, #24282C) !important;			
 			font-size: var(--Size-sm, 14px) !important;				
 			line-height: var(--Line-height-lg, 21px) !important;
 			letter-spacing: var(--Tracking-md, -0.3px) !important;

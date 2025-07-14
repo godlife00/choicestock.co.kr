@@ -78,26 +78,43 @@ $(document).ready(function () {
         $(this).closest('.balloon_popup').fadeOut();
     });
 
+    // .balloon_popup 바깥을 클릭했을 때 balloon_popup을 닫아줌
+    $(document).on('mousedown touchstart', function(e) {
+        // 열린 balloon_popup이 있는지 확인
+        var $openPopup = $('.balloon_popup:visible');
+        if ($openPopup.length) {
+            // 클릭한 요소가 balloon_popup 내부가 아니면 닫기
+            if ($(e.target).closest('.balloon_popup').length === 0 && 
+                $(e.target).data('popup') !== 'balloon_popup') {
+                $openPopup.fadeOut();
+            }
+        }
+    });
+
     
     // ? 버튼 클릭 시    
     $('[data-popup="balloon_popup"]').on('click', function(e) {        
         var $btn = $(this);
-        var $popup = $btn.siblings('.balloon_popup'); // 혹은 적절한 선택자
-
-        // 버튼 위치 정보
+        var $popup = $btn.siblings('.balloon_popup');
+    
         var rect = $btn[0].getBoundingClientRect();
         var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
         var scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
-
-        // 팝업 위치 계산 (아래쪽, 오른쪽 정렬 예시)
+    
         var top = rect.bottom + scrollTop + 8; // 8px 아래
-        var left = rect.left + scrollLeft;
-        console.log(top, left);
-
+        var margin = 20;
+        var left = rect.left + scrollLeft + (rect.width / 2) - ($popup.outerWidth() / 2);
+    
+        // 화면 벗어남 방지 (좌우 20px 여백)
+        var winWidth = $(window).width();
+        var popupWidth = $popup.outerWidth();
+        if (left < margin) left = margin;
+        if (left + popupWidth > winWidth - margin) left = winWidth - popupWidth - margin;
+    
         $popup.css({
             display: 'block',
             top: top + 'px',
-            // left: left + 'px'
+            left: left + 'px'
         });
     });
     

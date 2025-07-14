@@ -472,17 +472,39 @@
 			}
 
 			.headerLogo {										
+				display: inline-flex;
+				align-items: center;
+				justify-content: center;
+				gap: 4px 4px;
+
 				font-size: 1.25rem;				
 				padding-right: 14px;
 				.ticker {
-					
+					display: inline-block;
+					overflow: hidden;
+					text-overflow: ellipsis;
+					white-space: nowrap;
+					max-width: 18ch;
+					@media (max-width: 374px) {
+						max-width: 16ch;
+					}
+					@media (min-width: 375px) and (max-width: 767px) {
+						max-width: 16ch;
+					}
+					@media (min-width: 640px) {
+						max-width: none;
+					}
 				}
 			}
 			.headerLogo span {
-				font-size: 1.25rem;
-				font-weight: bold;
-				letter-spacing: -0.43px;
-				color: #161b23;			
+				color: var(--Font-primary-title, #1F242B);
+				text-align: center;
+				font-family: var(--Title, Pretendard);
+				font-size: var(--Size-2xl, 20px);
+				font-style: normal;
+				font-weight: var(--Weight-600, 600);
+				line-height: var(--Line-height-2xl, 26px); /* 130% */
+				letter-spacing: var(--Tracking-md, -0.3px);
 			}			
 		}
 	}
