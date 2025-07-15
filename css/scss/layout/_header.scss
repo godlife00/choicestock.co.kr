@@ -375,3 +375,137 @@
 		}
 	}
 }
+
+// 공통 헤더를 사용하지 않을때, 뷰 페이지에서 사용하는 헤더
+.header_view {
+	position: sticky;
+	top: 0;
+	width: 100%;
+    background-color: #fff;
+    padding: 0 20px;
+    box-sizing: border-box;
+    z-index: 89;
+    max-width: 767px;	
+	.headerTop {
+		position: relative;
+		display: flex;		
+		align-items: center;
+		gap: 6px 6px;
+		width: 100%;
+		height: 56px;
+		box-sizing: border-box;
+		.left {
+			.go_back {
+				display: inline-flex;
+				align-items: center;
+				justify-content: flex-start;
+				width: 36px;
+			}
+		}
+		.cen {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-wrap: nowrap;
+			gap: 4px 4px;
+			width: 100%;
+			padding-right: var(--left-width, 36px);
+			box-sizing: border-box;
+			.company_nm {
+
+				overflow: hidden;
+				text-overflow: ellipsis;
+				white-space: nowrap;
+				max-width: 16ch;
+
+				color: var(--Font-primary-title, #1F242B);
+				text-align: center;
+				font-family: var(--Title, Pretendard);
+				font-size: var(--Size-sm, 14px);
+				font-style: normal;
+				font-weight: var(--Weight-500, 500);
+				line-height: var(--Line-height-sm, 18px); /* 128.571% */
+				letter-spacing: var(--Tracking-md, -0.3px);
+			}
+			.detail {								
+				.per {
+					.num {						
+						font-family: var(--Body, Pretendard);
+						font-size: var(--Size-sm, 14px);
+						font-style: normal;
+						font-weight: var(--Weight-500, 500);
+						line-height: var(--Line-height-sm, 18px); /* 128.571% */
+						letter-spacing: var(--Tracking-md, -0.3px);
+					}
+					span {
+						display: inline-flex;
+						align-items: center;
+						gap: 2px 2px;
+
+						color: var(--Font-primary-title, #1F242B);
+						font-family: var(--Body, Pretendard);
+						font-size: var(--Size-sm, 14px);
+						font-style: normal;
+						font-weight: var(--Weight-500, 500);
+						line-height: var(--Line-height-sm, 18px); /* 128.571% */
+						letter-spacing: var(--Tracking-md, -0.3px);
+						&.increase {
+							color: #E1305A;
+							.num {
+								color: #E1305A;
+							}
+						}
+						&.decrease {
+							color: #303FAF;
+							.num {
+								color: #303FAF;
+							}
+						}
+						&.same {
+							color: var(--Gray-gray500, #8C98A7);						
+							.num {
+								color: var(--Gray-gray500, #8C98A7);						
+							}
+						}
+					}
+				}
+			}
+
+			.headerLogo {										
+				display: inline-flex;
+				align-items: center;
+				justify-content: center;
+				gap: 4px 4px;
+
+				font-size: 1.25rem;				
+				padding-right: 14px;
+				.ticker {
+					display: inline-block;
+					overflow: hidden;
+					text-overflow: ellipsis;
+					white-space: nowrap;
+					max-width: 18ch;
+					@media (max-width: 374px) {
+						max-width: 16ch;
+					}
+					@media (min-width: 375px) and (max-width: 767px) {
+						max-width: 16ch;
+					}
+					@media (min-width: 640px) {
+						max-width: none;
+					}
+				}
+			}
+			.headerLogo span {
+				color: var(--Font-primary-title, #1F242B);
+				text-align: center;
+				font-family: var(--Title, Pretendard);
+				font-size: var(--Size-2xl, 20px);
+				font-style: normal;
+				font-weight: var(--Weight-600, 600);
+				line-height: var(--Line-height-2xl, 26px); /* 130% */
+				letter-spacing: var(--Tracking-md, -0.3px);
+			}			
+		}
+	}
+}

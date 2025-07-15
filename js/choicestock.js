@@ -24,10 +24,23 @@ $(document).ready(function () {
                 return;
             }
 
-            $('html, body').css("overflow", "hidden");
-            $('.modal').hide();
-            $('.blocker').show();
-            $targetPopup.show().addClass('slideUp50');
+            // balloon_popup일 때는 blocker를 보여주지 않음
+            if (popupId !== 'balloon_popup') {
+                $('html, body').css("overflow", "hidden");
+                $('.modal').hide();
+                $('.blocker').show();
+            }
+
+            // balloon_popup일 때는 slideUp, slideUp50 클래스를 적용하지 않음
+            if (popupId === 'balloon_popup') {
+                $targetPopup.show();
+            }
+            // bottom_popup, fav_group_move_popup 일때는 slideUp 적용
+            else if ($targetPopup.hasClass('bottom_popup') || $targetPopup.hasClass('fav_group_move_popup')) {                
+                $targetPopup.show().addClass('slideUp');
+            } else {
+                $targetPopup.show().addClass('slideUp50');
+            }
         },
 
         // 모달 닫기
@@ -52,6 +65,59 @@ $(document).ready(function () {
     $('[data-popup="pop_clse"]').on('click', function() {
         ModalPopup.close();
     });
+
+    // data-popup="balloon_popup" 버튼을 눌렀을 때 <div class="balloon_popup">가 보이도록 처리
+    $('[data-popup="balloon_popup"]').on('click', function(e) {
+        e.stopPropagation();
+        // .balloon_popup_box 하위의 .balloon_popup을 찾아서 보여줌
+        $(this).find('.balloon_popup').show();
+    });
+    // .balloon_popup .clse를 클릭했을 때 balloon_popup을 닫아줌
+    $('.balloon_popup .clse').on('click', function(e) {        
+        e.stopPropagation();
+        $(this).closest('.balloon_popup').fadeOut();
+    });
+
+    // .balloon_popup 바깥을 클릭했을 때 balloon_popup을 닫아줌
+    $(document).on('mousedown touchstart', function(e) {
+        // 열린 balloon_popup이 있는지 확인
+        var $openPopup = $('.balloon_popup:visible');
+        if ($openPopup.length) {
+            // 클릭한 요소가 balloon_popup 내부가 아니면 닫기
+            if ($(e.target).closest('.balloon_popup').length === 0 && 
+                $(e.target).data('popup') !== 'balloon_popup') {
+                $openPopup.fadeOut();
+            }
+        }
+    });
+
+    
+    // ? 버튼 클릭 시    
+    $('[data-popup="balloon_popup"]').on('click', function(e) {        
+        var $btn = $(this);
+        var $popup = $btn.siblings('.balloon_popup');
+    
+        var rect = $btn[0].getBoundingClientRect();
+        var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        var scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+    
+        var top = rect.bottom + scrollTop + 8; // 8px 아래
+        var margin = 20;
+        var left = rect.left + scrollLeft + (rect.width / 2) - ($popup.outerWidth() / 2);
+    
+        // 화면 벗어남 방지 (좌우 20px 여백)
+        var winWidth = $(window).width();
+        var popupWidth = $popup.outerWidth();
+        if (left < margin) left = margin;
+        if (left + popupWidth > winWidth - margin) left = winWidth - popupWidth - margin;
+    
+        $popup.css({
+            display: 'block',
+            top: top + 'px',
+            left: left + 'px'
+        });
+    });
+    
     
     // var mouse_touch = ".globalStock a, .globalStock .tabs li, .globalStock .set span, .globalStock .tabs_menu span, .globalStock i.attention, .globalStock .prm_div .box, .globalStock .sub_search .sub_mid.research_board .lst_type2, .globalStock .sub_research .popularity .lst_type2, .globalStock #footer .certification ul li, .globalStock .main_mid.note_area .lst_type2, .globalStock .sub_research .sub_mid.research_board .lst_type2, .globalStock .sub_briefing .popularity .lst_type2, .globalStock .searchArea .searchInput, .globalStock .main_mid.event_recipe .recipe_tabs li span, .globalStock .sub_login .mapage_area .mapage_form .form_table td .mod_btn, .globalStock .sub_login .mapage_area .mapage_form .form_table .phonePin_form .pinInput, .globalStock .sub_login .mapage_area .mapage_form .form_table .phonePin_form .pinInput_out, .globalStock .sub_payment .serviceStep .step_box, .globalStock #header .his_back img, .globalStock .main_top.recommend_area .recomlist_area .area, .globalStock .main_mid.game_area .list_area .area, .globalStock .banner_prm, .globalStock .main_mid.attention_area .one_step .more, .globalStock #header .headerTop .hm .btn_login, .globalStock #header .headerTop .hm .go_briefing"    
     // $(mouse_touch).on("mousedown touchstart", function () {
@@ -1071,6 +1137,7 @@ $(document).ready(function () {
     }   
 
     // 메인 하단 - 패밀리 사이트 링크 배너
+    // 콘솔 에러 방지: .swiper-pagination이 없을 때 style 접근하지 않도록 수정
     if ($('.bannerSwiper').length) {        
         var slideCount = document.querySelectorAll('.bannerSwiper .swiper-slide').length;
         var swiper = new Swiper(".bannerSwiper", {
@@ -1088,9 +1155,12 @@ $(document).ready(function () {
             } : false,
         });
 
-        // 슬라이드가 1개일 때 pagination 요소를 숨김
+        // 슬라이드가 1개일 때 pagination 요소를 숨김 (존재할 때만)
         if (slideCount <= 1) {
-            document.querySelector('.swiper-pagination').style.display = 'none';
+            var paginationEl = document.querySelector('.swiper-pagination');
+            if (paginationEl) {
+                paginationEl.style.display = 'none';
+            }
         }
     }
 
@@ -1130,6 +1200,13 @@ $(document).ready(function () {
             } : false,
         });
     };
+
+    // 뉴스 티커 종목 스와이프
+    var newsSwiper = new Swiper('.tickerlist-swiper', {
+        slidesPerView: 'auto',
+        spaceBetween: 8,
+        freeMode: true,
+    });
 
     // 필터 스와이퍼 초기화
     const filterSwiper = new Swiper('.filter-swiper', {
@@ -1847,15 +1924,15 @@ $(document).ready(function () {
     });    
     // 관심종목 그룹 등록 2차 팝업
     $('.group_add_btn').on('click', function () {                          
-        $('.modal').hide().removeClass('slideUp');                      
-		 // 등록 팝업 초기화
+        // 등록 팝업 초기화
 		$('.fav_group_reg_popup .name_input').val('');
-		//$('.fav_group_reg_popup .input_cunt').text('0/15');
-		$('.fav_group_del_popup .input_count').html('<b>0</b>/15');
-		
-    $('.blocker').show();
+        $('.fav_group_del_popup .input_count').html('<b>0</b>/15');
+        
+        $('.modal').hide().removeClass('slideUp');                      
+		$('.fav_group_reg_popup .input_cunt').text('0/15');
+        $('.blocker').show();
 		$('.fav_group_reg_popup').show().addClass('slideUp'); // 그룹 추가 펍옵 표시
-    $('html, body').css("overflow", "hidden");		
+        $('html, body').css("overflow", "hidden");		
     });
 	
     $('.group_reg_btn').on('click', function () {                          
@@ -2578,7 +2655,9 @@ class ContentFilter {
                 'sub_briefing': 'all_briefing',// 브리핑 페이지: 전체 브리핑 필터
                 'sub_alarm': 'all_briefing',  // 알람 리스트 페이지: 전체 브리핑 필터
                 'default': 'growth',            // 기본 페이지: 성장주 필터
-                'onestop_view': 'detail'            // 원스톱진단 페이지: 간단히,자세히 필터
+                'onestop_view': 'detail',          // 원스톱진단 페이지: 간단히,자세히 필터
+                'research_board': 'news_allnews',   // 검색 뉴스 탭 : 뉴스, 투자노트 필터
+                'latest_results': 'interest_all_news'   // 관심 페이지 : 뉴스, 투자노트, 커뮤니티 필터
             },
             filterButtonClass: '.filter_btn',   // 필터 버튼 클래스
             sortButtonClass: '.sort_btn',       // 정렬 버튼 클래스
@@ -2660,3 +2739,68 @@ $(document).ready(function() {
     */
 });
 
+// 뉴스,투자노트 종목티커 갯수에 따라 폰트수 제한하는 함수 (뉴스,투자노트 리스트 페이지에서 사용중)
+function updateTagListWidths() {
+    try {
+        const tagLists = document.querySelectorAll('.tag_list');
+        if (!tagLists || tagLists.length === 0) {
+            console.log('tag_list 요소를 찾을 수 없습니다.');
+            return;
+        }
+        
+        tagLists.forEach(tagList => {
+            const tags = tagList.querySelectorAll('.tag');
+            if (tags && tags.length > 0) {
+                tagList.dataset.count = tags.length;
+            } else {
+                tagList.dataset.count = '0';
+            }
+        });
+    } catch (error) {
+        console.log('updateTagListWidths 함수 실행 중 오류 발생:', error);
+    }
+}
+
+// CSS에서 초기 상태를 숨김으로 설정하고, JavaScript로 표시하는 방식
+function initializeTagListDisplay() {
+    try {
+        // 초기 상태에서 모든 tag_list를 숨김
+        const tagLists = document.querySelectorAll('.tag_list');
+        if (!tagLists || tagLists.length === 0) {
+            //tag_list 가 없는 경우
+            return;
+        }
+        
+        tagLists.forEach(tagList => {
+            if (tagList && tagList.style) {
+                tagList.style.opacity = '0';
+                tagList.style.visibility = 'hidden';
+            }
+        });
+        
+        // DOM이 완전히 로드된 후 실행
+        requestAnimationFrame(() => {
+            updateTagListWidths();
+            
+            // 애니메이션과 함께 표시
+            tagLists.forEach((tagList) => {
+                if (tagList && tagList.style) {
+                    setTimeout(() => {
+                        tagList.style.transition = 'opacity 0.2s ease-in-out, visibility 0.2s ease-in-out';
+                        tagList.style.opacity = '1';
+                        tagList.style.visibility = 'visible';
+                    });
+                }
+            });
+        });
+    } catch (error) {
+        // console.log('initializeTagListDisplay 함수 실행 중 오류 발생:', error);
+    }
+}
+
+// DOMContentLoaded 대신 더 빠른 실행을 위해 즉시 실행
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initializeTagListDisplay);
+} else {
+    initializeTagListDisplay();
+}
