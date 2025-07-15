@@ -23004,6 +23004,7 @@ table.tableRanking td {
 }
 .globalStock .alarmArea .alarmList li .group li {
   display: flex;
+  flex-wrap: wrap;
   align-items: baseline;
   gap: 5px;
   padding: 11px 0;
@@ -23027,11 +23028,14 @@ table.tableRanking td {
   background: url("/img/group_sell.svg") no-repeat 2px 16px;
 }
 .globalStock .alarmArea .alarmList li .group li b {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px 2px;
   position: relative;
   font-weight: bold;
   font-size: 0.9375rem;
   color: #333;
-  padding-right: 12px;
+  padding-right: 8px;
 }
 .globalStock .alarmArea .alarmList li .group li b::after {
   content: "";
