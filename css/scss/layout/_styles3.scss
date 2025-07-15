@@ -14428,7 +14428,8 @@ body.v_signalStreng {
 }
 
 .globalStock .gnb .list li {
-	flex: 1 1 auto;
+	flex: 1 0 0%;
+	max-width: 20%;
 	text-align: center;
 	background: none;
 	padding: 0;

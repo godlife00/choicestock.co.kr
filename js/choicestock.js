@@ -1916,29 +1916,29 @@ $(document).ready(function () {
     });
 	
     // 관심종목 등록 팝업
-    // $('.attention_pop').on('click', function () {
-    //     $('.modal').hide().removeClass('slideUp'); // 다른 모달 숨기기
-    //     $('.blocker').show(); // 배경 블러 처리
-    //     $('.fav_reg_popup').show().addClass('slideUp'); // 원하는 모달 표시                        
-    //     $('html, body').css("overflow", "hidden");
-    // });    
+    $('.attention_pop').on('click', function () {
+        $('.modal').hide().removeClass('slideUp'); // 다른 모달 숨기기
+        $('.blocker').show(); // 배경 블러 처리
+        $('.fav_reg_popup').show().addClass('slideUp'); // 원하는 모달 표시                        
+        $('html, body').css("overflow", "hidden");
+    });    
     // 관심종목 그룹 등록 2차 팝업
     $('.group_add_btn').on('click', function () {                          
         // 등록 팝업 초기화
 		$('.fav_group_reg_popup .name_input').val('');
         $('.fav_group_del_popup .input_count').html('<b>0</b>/15');
         
-        // $('.modal').hide().removeClass('slideUp');                      
-		//$('.fav_group_reg_popup .input_cunt').text('0/15');
-        // $('.blocker').show();
-		// $('.fav_group_reg_popup').show().addClass('slideUp'); // 그룹 추가 펍옵 표시
-        // $('html, body').css("overflow", "hidden");		
+        $('.modal').hide().removeClass('slideUp');                      
+		$('.fav_group_reg_popup .input_cunt').text('0/15');
+        $('.blocker').show();
+		$('.fav_group_reg_popup').show().addClass('slideUp'); // 그룹 추가 펍옵 표시
+        $('html, body').css("overflow", "hidden");		
     });
 	
-    // $('.group_reg_btn').on('click', function () {                          
-    //     $('.modal').hide().removeClass('slideUp');                      
-    //     $('.fav_group_del_popup').show().addClass('slideUp'); 
-    // });	
+    $('.group_reg_btn').on('click', function () {                          
+        $('.modal').hide().removeClass('slideUp');                      
+        $('.fav_group_del_popup').show().addClass('slideUp'); 
+    });	
 
     // fav_group_reg_popup 닫기 버튼 클릭 시
     $('.fav_group_reg_popup .clse').on('click', function () {      
@@ -1957,12 +1957,12 @@ $(document).ready(function () {
     });
 	
     // 관심종목 그룹 관리 툴팁 팝업
-    // $('.btn_manage_group').on('click', function () {
-    //     $('.modal').hide().removeClass('slideUp'); // 다른 모달 숨기기
-    //     $('.blocker').show(); // 배경 블러 처리
-    //     $('.fav_group_manage_popup').show().addClass('slideUp'); // 원하는 모달 표시        
-    //     $('html, body').css("overflow", "hidden");
-    // });	
+    $('.btn_manage_group').on('click', function () {
+        $('.modal').hide().removeClass('slideUp'); // 다른 모달 숨기기
+        $('.blocker').show(); // 배경 블러 처리
+        $('.fav_group_manage_popup').show().addClass('slideUp'); // 원하는 모달 표시        
+        $('html, body').css("overflow", "hidden");
+    });	
 	
 	// 그룹 관리 팝업의 확인 버튼 클릭 이벤트
 	$(document).on('click', '.fav_group_manage_popup .btn_save', function() {
@@ -1999,29 +1999,29 @@ $(document).ready(function () {
 	});
 
     // 관심그룹 수정,삭제
-    // $('.fav_group_com_popup .clse').on('click', function () {      
-    //     $('.modal').hide().removeClass('slideUp'); // 다른 모달 숨기기
-    //     $('.blocker').show(); // 배경 블러 처리
-    //     $('html, body').css("overflow", "hidden");        
-    //     $('.fav_group_manage_popup').show().addClass('slideUp'); // 원하는 모달 표시                                  
-    // });
+    $('.fav_group_com_popup .clse').on('click', function () {      
+        $('.modal').hide().removeClass('slideUp'); // 다른 모달 숨기기
+        $('.blocker').show(); // 배경 블러 처리
+        $('html, body').css("overflow", "hidden");        
+        $('.fav_group_manage_popup').show().addClass('slideUp'); // 원하는 모달 표시                                  
+    });
 
-    // $('.fav_item_del_popup2 .btn_save, .fav_item_del_popup2 .clse').on('click', function() {
-    //     $('.fav_item_del_popup2').hide().removeClass('slideUp');
-    //     $('.blocker').hide();
-    //     $('html, body').css("overflow", "");
-    // });
+    $('.fav_item_del_popup2 .btn_save, .fav_item_del_popup2 .clse').on('click', function() {
+        $('.fav_item_del_popup2').hide().removeClass('slideUp');
+        $('.blocker').hide();
+        $('html, body').css("overflow", "");
+    });
 	
 	// 관심종목 이동 -> 닫기
-	// $('.fav_item_move_popup .btn.btn_save').on('click', function () {        
-	// 	$('body').css('overflow', '');                        
-	// 	$('.blocker').hide();
-	// 	$('.modal').hide().removeClass('slideUp');        
-	// });
+	$('.fav_item_move_popup .btn.btn_save').on('click', function () {        
+		$('body').css('overflow', '');                        
+		$('.blocker').hide();
+		$('.modal').hide().removeClass('slideUp');        
+	});
     // 모달이 닫힐 때 body에서 'modal-open' 클래스를 제거하는 코드 추가
-    // $('.modal.att_pop .pop_header .clse, .blocker').on('click', function() {                
-    //     $('html, body').css("overflow", "");
-    // });
+    $('.modal.att_pop .pop_header .clse, .blocker').on('click', function() {                
+        $('html, body').css("overflow", "");
+    });
 
     // 매매신호 플로팅 배너 열기, 닫기 스크립트    
     // 스크롤 이벤트를 감지하여 처리    

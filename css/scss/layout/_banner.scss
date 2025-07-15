@@ -1,8 +1,9 @@
 // 하단 플로팅 배너
 .v_signalStreng.globalStock .signalpop.event2024_payment {
 	.box {
-		background: #fff url('/img/signalpop_sdwbg.png') repeat-x left bottom;
-		background-size: contain;
+		// background: #fff url('/img/signalpop_sdwbg.png') repeat-x left bottom;
+		// background-size: contain;
+		background: linear-gradient(180deg, var(--Blue-blue150, #DBE5FF) 0%, #FFF 100%);
 	}
 
 
@@ -61,7 +62,7 @@
 		}
 
 		.btn_area {
-			padding-bottom: 35px;
+			padding-bottom: 24px;
 			text-align: center;
 
 			.btn {
@@ -87,41 +88,56 @@
 	}
 
 	.ftr {
+		justify-content: center;		
+		align-items: center;		
+		overflow: hidden;
+		border-radius: var(--Radius-r-05, 24px) var(--Radius-r-05, 24px) 0px 0px;		
 		height: auto;
 		background-color: #fff;
-		margin-top: 0;
-		border-radius: 0;
+		margin-top: 0;		
+		padding: 0;
+		
 
+		.btn_day {
+			position: relative;
+			padding: 13.5px 0;
+			flex: 1 1 50%;
+			text-align: center;
+			color: var(--Font-teriary-body, #6B7684);
+			font-family: var(--Body, Pretendard);
+			font-size: var(--Size-sm, 14px);
+			font-style: normal;
+			font-weight: var(--Weight-500, 500);
+			line-height: var(--Line-height-lg, 21px); /* 150% */
+			letter-spacing: var(--Tracking-md, -0.3px);			
+			&::after {
+				content: '';
+				position: absolute;
+				right: -1px;
+				top: 16px;
+				display: inline-block;
+				width: 1px;
+				height: 16px;
+				background-color: var(--Border-tertiary-border, #DADCE0);			
+			}
+		}
 
 		.btn_close {
-			cursor: pointer;
-			position: absolute;
-			display: inline-block;
-			padding: 4px;
-			width: 17px;
-			height: 17px;
-			right: 14px;
-			top: 14px;
-			font-size: 0;
+			padding: 13.5px 0;
+			flex: 1 1 50%;
+			text-align: center;
+			color: var(--Font-primary-body, #24282C);			
+			font-family: var(--Body, Pretendard);
+			font-size: var(--Size-sm, 14px);
+			font-style: normal;
+			font-weight: var(--Weight-500, 500);
+			line-height: var(--Line-height-lg, 21px); /* 150% */
+			letter-spacing: var(--Tracking-md, -0.3px);			
 		}
 
 		.btn_close::before,
 		.btn_close::after {
-			content: "";
-			position: absolute;
-			right: 15px;
-			top: 0;
-			height: 22px;
-			width: 2px;
-			background-color: #333;
-		}
-
-		.btn_close::before {
-			transform: rotate(45deg);
-		}
-
-		.btn_close::after {
-			transform: rotate(-45deg);
+			display: none;			
 		}
 	}
 }

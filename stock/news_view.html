@@ -168,10 +168,59 @@
                             </h2>
                             <p class="ai_txt">
                                 <!-- <b class="ai_judgement good">호재</b> -->
-                                애플 2분기 실적발표. 매출 954억 달러, 전년 동기 대비 5%증가애플 2분기 실적발표. 매출 954억 달러, 전년 동기 대비
-                                5%증가
+                                <span id="typing-text">애플 2분기 실적발표. 매출 954억 달러, 전년 동기 대비 5%증가애플 2분기 실적발표. 매출 954억 달러, 전년 동기 대비 5%증가</span>                                
                             </p>
-                            
+
+                            <script>
+                            document.addEventListener("DOMContentLoaded", function() {
+                                const text = "애플 2분기 실적발표. 매출 954억 달러, 전년 동기 대비 5%증가애플 2분기 실적발표. 매출 954억 달러, 전년 동기 대비 5%증가";
+                                const typingTarget = document.getElementById("typing-text");
+
+                                // 1. 가상 엘리먼트로 높이 측정
+                                const temp = document.createElement("span");
+                                temp.style.visibility = "hidden";
+                                temp.style.position = "absolute";
+                                temp.style.whiteSpace = "pre-wrap";
+                                temp.style.fontFamily = getComputedStyle(typingTarget).fontFamily;
+                                temp.style.fontSize = getComputedStyle(typingTarget).fontSize;
+                                temp.style.fontWeight = getComputedStyle(typingTarget).fontWeight;
+                                temp.style.lineHeight = getComputedStyle(typingTarget).lineHeight;
+                                temp.style.padding = getComputedStyle(typingTarget).padding;
+                                temp.style.boxSizing = getComputedStyle(typingTarget).boxSizing;
+                                temp.style.width = typingTarget.offsetWidth + "px";
+                                temp.innerText = text;
+                                document.body.appendChild(temp);
+
+                                // 2. 높이 고정
+                                typingTarget.style.minHeight = temp.offsetHeight + "px";
+                                document.body.removeChild(temp);
+
+                                // 2-1. 타이핑 시작 전 폰트 숨김
+                                typingTarget.style.visibility = "hidden";
+
+                                // 3. 타이핑 효과
+                                let idx = 0;
+                                let isDeleting = false;
+                                function typing() {
+                                    // 타이핑 시작 시 폰트 보이게
+                                    typingTarget.style.visibility = "visible";
+                                    if (!isDeleting) {
+                                        typingTarget.innerHTML = text.slice(0, idx + 1);
+                                        idx++;
+                                        if (idx < text.length) {
+                                            setTimeout(typing, 10);
+                                        } else {
+                                            setTimeout(() => {
+                                                isDeleting = true;
+                                                typing();
+                                            }, 1000);
+                                        }
+                                    }
+                                }
+                                // 1초(1000ms) 후에 타이핑 시작, 이때 폰트 보이게
+                                setTimeout(typing, 1000);
+                            });
+                            </script>                            
                             
                         </div>
                         <!-- <div class="analysis_content">
