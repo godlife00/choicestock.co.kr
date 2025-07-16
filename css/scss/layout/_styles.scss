@@ -352,7 +352,8 @@ body,
 #container {
 	flex: 1;
 	// padding-top: 54px;
-	padding-bottom: 15px;
+	// padding-bottom: 15px;
+	// border: 2px solid pink;
 }
 
 .hide {
@@ -1113,7 +1114,7 @@ table.tableRanking td {
 /* 목록 드래그 드롭 */
 .globalStock .sub_search .att_wrap {
 	background: #fff;
-	padding: 20px 15px 10px;
+	padding: 20px 15px 0px;
 }
 
 .globalStock .sub_search .no_attdata {
@@ -1263,11 +1264,10 @@ table.tableRanking td {
 		flex-direction: row;
 		flex-wrap: nowrap;
 		gap: 8px 8px;
-
 		position: sticky;
 		bottom: 0;
 		padding-top: 0;
-		padding-bottom: 76px;
+		// padding-bottom: 76px;
 		background: #fff;
 		box-shadow: 0px -32px 20px 0px rgba(255, 255, 255, 0.9);
 
@@ -2550,8 +2550,8 @@ table.tableRanking td {
 	}
 }
 
-.mainTop_banner .swipe_banner .swiper-slide,
-.mainTop_banner .swipe_bannertemp,
+.swipe_banner .swiper-slide,
+.swipe_bannertemp,
 .event2025_banner.app_and {
 	box-sizing: border-box;
 	overflow: hidden;
@@ -2567,6 +2567,7 @@ table.tableRanking td {
 	box-sizing: border-box;
 	padding: 23px 24px;
 	width: 100%;
+	max-width: 340px;
 	margin: 0 auto;
 	overflow: hidden;
 	border-radius: 16px;
@@ -2606,6 +2607,13 @@ table.tableRanking td {
 			width: 80px;
 			height: 80px;
 			background: url('/img/banner/icon_noteman.png') no-repeat 0 0;
+			background-size: 80px 80px;
+		}
+
+		&.addagaflash {
+			width: 80px;
+			height: 80px;
+			background: url('/img/banner/icon_addagaflash.png') no-repeat 0 0;
 			background-size: 80px 80px;
 		}
 	}
@@ -3560,15 +3568,19 @@ table.tableRanking td {
 	width: 100%;
 
 	@media (min-width:401px) and (max-width: 640px) {
-		width: 140px;
+		width: 140px;		
 	}
 
 	@media (min-width:375px) and (max-width: 400px) {
-		width: 97px;
+		width: 92px;		
 	}
 
-	@media (min-width:320px) and (max-width: 374px) {
-		width: 82px;
+	@media (min-width:321px) and (max-width: 374px) {
+		width: 77px;		
+	}
+
+	@media (max-width: 320px) {		
+		width: 74px;		
 	}
 }
 
@@ -3681,9 +3693,11 @@ table.tableRanking td {
 	}
 
 	.tableth_box table.tableRanking td.profit {
-		width: 86px;
+		width: 89px;
 		padding-left: 10px;
-		box-sizing: border-box;
+		padding-right: 12px;
+		margin-left: auto;
+		box-sizing: border-box;		
 	}
 
 	.tableth_box table.tableRanking td.title {
@@ -8412,9 +8426,12 @@ table.tableRanking td {
 	background: #fff;
 	border-radius: 10px;
 	font-size: 0;
-	margin-bottom: 10px;
+	margin-top: 10px;
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-between;	
+	&:first-child {
+		margin-top: 0;
+	}
 }
 
 .globalStock .sub_game .gamePicks_area .game_list .list .game_event {

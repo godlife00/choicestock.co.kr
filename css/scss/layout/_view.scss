@@ -1,6 +1,35 @@
 // 뷰 페이지 스타일 정의
 #container.sub_view {
 	.view_con {
+		.video_box {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			overflow: hidden;
+			border-radius: 16px;
+			padding: 20px 0;
+			background-color: #D1F5FF;
+
+			video {
+
+			}
+
+		}
+
+		.top_banner {
+			width: 100%;
+			padding: 0 20px;
+			box-sizing: border-box;
+
+			img {
+				display: inline-block;
+				width: 100%;
+				height: 100%;
+				overflow: hidden;
+				border-radius: 16px;
+			}
+		}
+
 		.top {
 			.title {}
 
@@ -127,14 +156,15 @@
 				.title {
 					display: flex;
 					align-items: center;
-					align-content: center;					
+					align-content: center;
 					gap: var(--Spacing-s-02, 4px);
 					color: var(--Font-secondary-title, #24282C);
 					font-family: var(--Title, Pretendard);
 					font-size: var(--Size-md-16, 16px);
 					font-style: normal;
 					font-weight: var(--Weight-600, 600);
-					line-height: var(--Line-height-md, 22px); /* 137.5% */
+					line-height: var(--Line-height-md, 22px);
+					/* 137.5% */
 					letter-spacing: var(--Tracking-md, -0.3px);
 
 					.title_icon {
@@ -143,7 +173,9 @@
 						width: 24px !important;
 						height: 24px !important;
 					}
-					svg, path {
+
+					svg,
+					path {
 						cursor: pointer;
 					}
 
@@ -165,33 +197,63 @@
 					font-size: var(--Size-xl-01, 18px);
 					font-style: normal;
 					font-weight: var(--Weight-600, 600);
-					line-height: var(--Line-height-xl-02, 28px); /* 155.556% */
+					line-height: var(--Line-height-xl-02, 28px);
+					/* 155.556% */
 					letter-spacing: var(--Tracking-md, -0.3px);
+					word-break: break-all;
+					word-wrap: break-word;
 
-					span {
+					span {												
 						color: var(--Font-primary-body, #24282C);
 						font-family: var(--Body, Pretendard);
 						font-size: var(--Size-xl-01, 18px);
 						font-style: normal;
 						font-weight: var(--Weight-600, 600);
-						line-height: var(--Line-height-xl-02, 28px); /* 155.556% */
+						line-height: var(--Line-height-xl-02, 28px);
+						/* 155.556% */
 						letter-spacing: var(--Tracking-md, -0.3px);
+						word-break: break-all;
+						word-wrap: break-word;
+
 						&::after {
 							content: '';
 							display: inline-block;
-							width: 2px;
+							width: 2px;							
 							height: 18px;
 							animation: blink 0.8s infinite;
-							margin-left: 6px;
+							margin-left: 3px;
 							background-color: #616974;
-							color:var(--Font-primary-body, #616974);						
+							color: var(--Font-primary-body, #616974);
 							transform: translateY(3px);
 						}
+						
 						@keyframes blink {
-							0%, 100% { opacity: 1; }
-							50% { opacity: 0; }
+							0%,
+							100% {
+								opacity: 1;
+							}
+
+							50% {
+								opacity: 0;
+							}
 						}
 					}
+
+					.blinking-cursor {
+						display: inline-block;
+						width: 2px;
+						min-width: 2px;							
+						height: 18px;
+						background-color: #616974;
+						color: var(--Font-primary-body, #616974);                                
+						animation: blink-cursor 0.8s steps(1) infinite;
+						transform: translateY(3px);                                
+					}
+					@keyframes blink-cursor {
+						0%, 49% { opacity: 1; }
+						50%, 100% { opacity: 0; }
+					}
+
 					.ai_judgement {
 						font-family: var(--Title, Pretendard);
 						font-size: var(--Size-md-16, 16px);
@@ -254,8 +316,10 @@
 				font-size: var(--Size-md-16, 16px);
 				font-style: normal;
 				font-weight: var(--Weight-500, 500);
-				line-height: var(--Line-height-xl-01, 24px); /* 150% */
-				letter-spacing: var(--Tracking-md, -0.3px);;
+				line-height: var(--Line-height-xl-01, 24px);
+				/* 150% */
+				letter-spacing: var(--Tracking-md, -0.3px);
+				;
 
 			}
 		}
@@ -770,16 +834,18 @@
 	padding: 24px 0 34px;
 	width: calc(100% - 40px);
 	margin: 0 auto;
-	border-top: 1px solid #F4F4F5;	
+	border-top: 1px solid #F4F4F5;
 	color: var(--Font-primary-body, #24282C);
 	font-family: var(--Body, Pretendard);
 	font-size: var(--Size-xl-01, 18px);
 	font-style: normal;
 	font-weight: var(--Weight-400, 400);
-	line-height: var(--Line-height-xl-02, 28px); /* 155.556% */
+	line-height: var(--Line-height-xl-02, 28px);
+	/* 155.556% */
 	letter-spacing: var(--Tracking-md, -0.3px);
 	word-break: break-all;
 	word-wrap: break-word;
+
 	html,
 	body,
 	div,
@@ -865,38 +931,48 @@
 		font-size: var(--Size-xl-01, 18px);
 		font-style: normal;
 		font-weight: var(--Weight-400, 400);
-		line-height: var(--Line-height-xl-02, 28px); /* 155.556% */
+		line-height: var(--Line-height-xl-02, 28px);
+		/* 155.556% */
 		letter-spacing: var(--Tracking-md, -0.3px);
 	}
+
 	strong {
 		font-size: var(--Size-xl-01, 18px);
 		font-style: normal;
-		color: var(--Font-primary-body, #24282C);		
+		color: var(--Font-primary-body, #24282C);
 		font-weight: var(--Weight-600, 600);
-		line-height: var(--Line-height-xl-02, 28px); /* 155.556% */
+		line-height: var(--Line-height-xl-02, 28px);
+		/* 155.556% */
 		letter-spacing: var(--Tracking-md, -0.3px);
 	}
-	address, caption, em, var, s {
+
+	address,
+	caption,
+	em,
+	var,
+	s {
 		font-style: italic;
 		color: var(--Font-secondary-caption, #6B7684);
 		font-family: var(--Body, Pretendard);
 		font-size: var(--Size-sm, 14px);
 		font-style: normal;
 		font-weight: var(--Weight-400, 400);
-		line-height: var(--Line-height-sm, 18px); /* 128.571% */
+		line-height: var(--Line-height-sm, 18px);
+		/* 128.571% */
 		letter-spacing: var(--Tracking-md, -0.3px);
 	}
 
 	ol {
-		display: flex;		
+		display: flex;
 		flex-direction: column;
 		flex-wrap: wrap;
 		justify-content: center;
-		gap: 8px 8px;		
+		gap: 8px 8px;
 		padding-left: 20px;
 		margin-top: 10px;
-		list-style: decimal;		
+		list-style: decimal;
 		letter-spacing: normal;
+
 		li {
 			list-style: list-item;
 			letter-spacing: normal;
@@ -905,28 +981,32 @@
 			font-size: var(--Size-xl-01, 18px);
 			font-style: normal;
 			font-weight: var(--Weight-400, 400);
-			line-height: var(--Line-height-xl-02, 28px); /* 155.556% */
+			line-height: var(--Line-height-xl-02, 28px);
+			/* 155.556% */
 			letter-spacing: var(--Tracking-md, -0.3px);
+
 			&::marker {
 				color: var(--Font-primary-body, #24282C);
 				font-family: var(--Body, Pretendard);
 				font-size: var(--Size-xl-01, 18px);
 				font-style: normal;
 				font-weight: var(--Weight-400, 400);
-				line-height: var(--Line-height-xl-02, 28px); /* 155.556% */
+				line-height: var(--Line-height-xl-02, 28px);
+				/* 155.556% */
 				letter-spacing: var(--Tracking-md, -0.3px);
 			}
-			
+
 		}
 	}
 
 	ul {
-		display: flex;		
+		display: flex;
 		flex-direction: column;
 		flex-wrap: wrap;
 		justify-content: center;
-		gap: 8px 8px;		
+		gap: 8px 8px;
 		margin-top: 10px;
+
 		li {
 			padding-left: 7px;
 			position: relative;
@@ -935,9 +1015,11 @@
 			font-size: var(--Size-md-16, 16px);
 			font-style: normal;
 			font-weight: var(--Weight-400, 400);
-			line-height: var(--Line-height-xl-01, 24px); /* 150% */
-			letter-spacing: var(--Tracking-md, -0.3px);						
+			line-height: var(--Line-height-xl-01, 24px);
+			/* 150% */
+			letter-spacing: var(--Tracking-md, -0.3px);
 		}
+
 		li::before {
 			content: "";
 			position: absolute;
@@ -961,24 +1043,27 @@
 		font-size: var(--Size-md-16, 16px);
 		font-style: normal;
 		font-weight: var(--Weight-400, 400);
-		line-height: var(--Line-height-2xl, 26px); /* 162.5% */
+		line-height: var(--Line-height-2xl, 26px);
+		/* 162.5% */
 		letter-spacing: var(--Tracking-md, -0.3px);
 		word-break: break-all;
 		word-wrap: break-word;
+
 		p {
 			color: var(--Font-secondary-body, #4E5866);
 			font-family: var(--Body, Pretendard);
 			font-size: var(--Size-md-16, 16px);
 			font-style: normal;
 			font-weight: var(--Weight-400, 400);
-			line-height: var(--Line-height-2xl, 26px); /* 162.5% */
+			line-height: var(--Line-height-2xl, 26px);
+			/* 162.5% */
 			letter-spacing: var(--Tracking-md, -0.3px);
 			word-break: break-all;
 			word-wrap: break-word;
 		}
 	}
-	
-		
+
+
 	blockquote:before,
 	blockquote:after,
 	q:before,
@@ -986,25 +1071,26 @@
 		content: '';
 	}
 
-	img {		
+	img {
 		box-sizing: border-box;
-		width: calc(100% + 40px) !important;		
+		width: calc(100% + 40px) !important;
 		height: auto !important;
 		max-width: none;
 		margin-left: -20px;
 		margin-bottom: 15px;
 	}
+
 	.caption {
 		text-align: center;
-		color: var(--Font-secondary-caption, #6B7684);
+		color: #8C98AC;
 		font-family: var(--Body, Pretendard);
 		font-size: var(--Size-sm, 14px);
 		font-style: normal;
 		font-weight: var(--Weight-400, 400);
-		line-height: var(--Line-height-sm, 18px);
+		line-height: 20px;
 		letter-spacing: var(--Tracking-md, -0.3px);
 	}
-	
+
 	p {
 		color: #333;
 		font-size: 1.0625rem;
@@ -1012,6 +1098,7 @@
 		letter-spacing: normal;
 		// margin-bottom: 30px;
 	}
+
 	a {
 		color: var(--Font-primary-blue, #4168F6);
 		font-family: var(--Body, Pretendard);
@@ -1022,7 +1109,7 @@
 		letter-spacing: var(--Tracking-md, -0.3px);
 	}
 
-	& + .go_list {
+	&+.go_list {
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -1053,19 +1140,19 @@
 			width: 100%;
 			height: 100%;
 		}
-		
-		& + .wowtv_vided .vided_info {
+
+		&+.wowtv_vided .vided_info {
 			background-color: #f6f7fa;
 			margin-top: -15px;
 			padding: 12px 15px;
 		}
-		
-		& + .wowtv_vided .vided_info p {
+
+		&+.wowtv_vided .vided_info p {
 			margin: 0;
 			font-size: 0.9375rem;
 		}
-		
-		& + .wowtv_vided h1 {
+
+		&+.wowtv_vided h1 {
 			color: #49525c;
 			font-size: 0.875rem;
 			font-weight: bold;
@@ -1073,20 +1160,20 @@
 			margin-top: 24px;
 			margin-bottom: 20px;
 		}
-		
-		& + .wowtv_vided p {
+
+		&+.wowtv_vided p {
 			color: #82929f;
 			font-size: 0.8125rem;
 			line-height: 1.54;
 			margin-bottom: 10px;
 		}
-		
-		& + .wowtv_vided .payBtn {
+
+		&+.wowtv_vided .payBtn {
 			width: 100%;
 			margin: 25px auto 0;
 		}
-		
-		& + .wowtv_vided .payBtn .btn_wowtv {
+
+		&+.wowtv_vided .payBtn .btn_wowtv {
 			position: relative;
 			display: inline-block;
 			width: 100%;
@@ -1102,8 +1189,8 @@
 			font-weight: 300;
 			font-size: 0.9375rem;
 		}
-		
-		& + .wowtv_vided .payBtn .btn_wowtv i {
+
+		&+.wowtv_vided .payBtn .btn_wowtv i {
 			position: absolute;
 			right: 18px;
 			top: 15px;
@@ -1133,24 +1220,25 @@
 		width: 100% !important;
 		height: auto !important;
 		display: inline-block;
-		margin-bottom: 15px;		
+		margin-bottom: 15px;
 	}
-	
-	p, a {
+
+	p,
+	a {
 		color: #939393;
 		font-size: 1rem;
 		line-height: 26px;
 		margin-bottom: 30px;
 	}
-	
+
 	a {
-		color: #608bff;		
+		color: #608bff;
 		font-size: 1rem;
 		line-height: 26px;
 		margin-bottom: 30px;
 	}
-	
-	& + .go_list {
+
+	&+.go_list {
 		color: #939393;
 		font-size: 0.75rem;
 		margin-top: 20px;
@@ -1159,4 +1247,3 @@
 		margin-right: 15px;
 	}
 }
-

@@ -400,26 +400,35 @@ $(document).ready(function () {
     // 스크롤시 gnb 보이기, 숨기기
     var lastScrollTop = 0;
     var $gnb = $(".globalStock .gnb");
+    var gnbHeight = $gnb.outerHeight();
+    var windowHeight = $(window).height();
 
-    $(window).scroll(function(event){
-        var st = $(this).scrollTop();
+    $(window).on('resize', function() {
+        gnbHeight = $gnb.outerHeight();
+        windowHeight = $(window).height();
+    });
+
+    $(window).on('scroll', function(){
+        // GNB가 없는 경우 예외 처리 및 #footer에 padding-bottom: 0 추가
+        if ($gnb.length === 0) {
+            $('#footer').css('padding-bottom', '0');
+            return;
+        }
         
-        // 스크롤 내릴 때 gnb 숨기기
-        if (st <= 100){
-            //console.log("최상단");
-            $gnb.show();            
+        var st = $(this).scrollTop();
+        var docHeight = $(document).height();
+        // 상단 10% 이내 또는 GNB 높이 이내
+        var isAtTop = st <= Math.max(windowHeight * 0.1, gnbHeight);
+        // 하단 10% 이내 또는 GNB 높이 이내
+        var isAtBottom = st + windowHeight > docHeight - Math.max(windowHeight * 0.1, gnbHeight);
+
+        if (isAtTop || isAtBottom) {
+            if (!$gnb.is(':visible')) $gnb.show();
         } else if (st > lastScrollTop) {
-            $gnb.hide();
+            if ($gnb.is(':visible')) $gnb.hide();
         } else {
-            // 스크롤 올릴 때 gnb 보이기
-            $gnb.show();
+            if (!$gnb.is(':visible')) $gnb.show();
         }
-
-        // 스크롤이 페이지 최하단에 도착하면 gnb 보이기
-        if($(window).scrollTop() + $(window).height() > $(document).height() - 100) {
-            $gnb.show();
-        }
-
         lastScrollTop = st;
     });
 
