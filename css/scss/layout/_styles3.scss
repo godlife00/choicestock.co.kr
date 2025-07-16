@@ -12783,6 +12783,10 @@ body.v_signalStreng {
 .v_signalStreng.globalStock #wrap #container .mainBox.attr {
 	position: relative;
 	padding: 0 16px;
+	.swipe_banner {
+		margin: 32px auto 0;
+		padding: 0;
+	}
 }
 
 .v_signalStreng.globalStock #wrap #container .mainBox.attr .adequateArea {
@@ -16264,18 +16268,22 @@ body.v_signalStreng {
 }
 
 .family_banner {
-	padding: 35px 15px 0;
+	padding: 0 20px;
+	.swipe_banner_btm {
+		margin: 0;
+		padding: 0;
+		padding-bottom: 30px;
+	}
+	.bannerSwiper {
+		padding-bottom: 30px;
+	}
+	.bannerSwiper img {
+		display: inline-block;
+		width: 100%;
+		height: 100%;
+	}
 }
 
-.family_banner .bannerSwiper {
-	padding-bottom: 30px;
-}
-
-.family_banner .bannerSwiper img {
-	display: inline-block;
-	width: 100%;
-	height: 100%;
-}
 .swipe_banner, .swipe_bannertemp, .swipe_banner_btm {
 	position: relative;	
 	margin: 20px 20px 0;
@@ -16354,6 +16362,8 @@ body.v_signalStreng {
 			background-color: #fff;
 			width: 48px;
 			height: 48px;
+			border-radius: var(--Radius-r-03, 12px);
+			overflow: hidden;			
 			&.bg_trans {
 				background-color: transparent;
 			}

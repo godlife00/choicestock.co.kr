@@ -106,35 +106,6 @@
 
             </div>
 
-            <!-- 하단 서비스 노출 배너 -->
-            <style>
-                .family_banner {
-                    padding: 35px 15px 0;
-                }
-
-                .family_banner .bannerSwiper {
-                    padding-bottom: 30px;
-                }
-
-                .family_banner .bannerSwiper img {
-                    display: inline-block;
-                    width: 100%;
-                    height: 100%;
-                }
-            </style>
-            <script>
-                $(document).ready(function () {
-                    var randomIndex = Math.floor(Math.random() * 2); // 0 또는 1 랜덤 선택
-                    var bannerSwiper = $('.bannerSwiper');
-
-                    // 모든 a 태그를 숨김
-                    bannerSwiper.find('a').hide();
-
-                    // 랜덤하게 선택된 a 태그만 보이도록 설정
-                    bannerSwiper.find('a').eq(randomIndex).show();
-
-                });
-            </script>
             <div class="family_banner">
                 <div class="bannerSwiper">
                     <a href="https://value.choicestock.co.kr/?utm_source=choicestock&utm_medium=banner&utm_campaign=service"

@@ -38,7 +38,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
     <!-- css -->
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <link rel="stylesheet" type="text/css" href="../css/scss/choicestock.css?ver=4" />
+    <link rel="stylesheet" type="text/css" href="../css/scss/choicestock.css?ver=5" />
     <!-- js -->
     <script src="../js/choicestock.js"></script>
 </head>
@@ -51,25 +51,7 @@
         <div id="container" class="sub_view sub_research">
 
             <!-- 뷰 헤더 -->
-            <div class="header_view">                
-
-                <div class="headerTop">
-                    <div class="left">
-                        <a href="javascript:history.back();" class="go_back">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none">
-                                <path d="M15 4L7 12L15 20" stroke="#24282C" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                            </svg>
-                        </a>
-                    </div>
-                    <div class="cen">
-                        <h1 class="headerLogo"><span>뉴스</span></h1>
-                    </div>
-                    <div class="right">
-                    </div>
-                </div>
-
+            <div class="header_view">
                 <div class="headerTop">
                     <div class="left">
                         <a href="javascript:history.back();" class="go_back">
@@ -101,11 +83,23 @@
             <!-- //gnb -->
             <!-- 주요 콘텐츠 -->
             <div class="view_con">
+                <div class="top_banner">
+                    <!-- video를 이미지처럼 보이게, 크기 조절을 위해 video_box에 height 지정 -->
+                    <div class="video_box">
+                        <video src="/img/video/briefing_banner.mp4" poster="/img/banner/briefing_banner.jpg" autoplay
+                            muted playsinline loop
+                            style="width:140px; height:140px; object-fit:cover; background:#D1F5FF; display:block;">
+                            해당 브라우저는 비디오 태그를 지원하지 않습니다.
+                        </video>
+                    </div>
+                </div>
+
                 <div class="top">
                     <h5 class="title">[미국주식] 백신 기대감 3대지수 사상최고가 직행, 관련주 5개? 이제는 3900??</h5>
-                    <span class="day">2020.12/26 <svg xmlns="http://www.w3.org/2000/svg" width="3" height="4" viewBox="0 0 3 4" fill="none">
-                        <circle cx="1.5" cy="2" r="1.5" fill="#B0B8C1"/>
-                      </svg> 실적발표</span>
+                    <span class="day">2020.12/26 <svg xmlns="http://www.w3.org/2000/svg" width="3" height="4"
+                            viewBox="0 0 3 4" fill="none">
+                            <circle cx="1.5" cy="2" r="1.5" fill="#B0B8C1" />
+                        </svg> 실적발표</span>
                 </div>
                 <div class="mid">
 
@@ -149,79 +143,94 @@
                     <div class="ai_analysis">
                         <div class="analysis_content">
                             <h2 class="title">
-                                <img src="../img/icon_aicl.png" alt="" class="title_icon"> AI 분석                                                             
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none"  data-popup="balloon_popup">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.56784 1.03124C10.1591 1.19037 11.6434 1.90524 12.7598 3.05024C13.9762 4.28583 14.6953 5.9258 14.7801 7.65754C14.8649 9.38927 14.3096 11.0917 13.2198 12.4402C12.2176 13.686 10.8111 14.542 9.24409 14.8598C7.67707 15.1776 6.04825 14.9372 4.63984 14.1802C3.22842 13.4069 2.12657 12.1709 1.51984 10.6802C0.910401 9.18194 0.829283 7.52078 1.28984 5.97024C1.74942 4.42573 2.7278 3.08708 4.05984 2.18024C5.38069 1.27915 6.97683 0.872326 8.56784 1.03124ZM9.03984 13.8802C10.3824 13.6071 11.588 12.8752 12.4498 11.8102C13.3825 10.6512 13.8569 9.18999 13.7832 7.70414C13.7095 6.21829 13.0926 4.81126 12.0498 3.75024C11.0947 2.77525 9.82731 2.16696 8.46915 2.03169C7.111 1.89642 5.74851 2.24279 4.61984 3.01024C3.77028 3.59563 3.08424 4.38824 2.62672 5.31296C2.1692 6.23769 1.95534 7.26392 2.00541 8.29442C2.05549 9.32493 2.36783 10.3256 2.91285 11.2016C3.45787 12.0776 4.21753 12.8 5.11984 13.3002C6.3179 13.9478 7.70561 14.1531 9.03984 13.8802ZM7.37485 6.00024H8.62485V5.00024H7.37485V6.00024ZM8.62485 7.00024V11.0002H7.37485V7.00024H8.62485Z" fill="#8C98A7"></path>
+                                <img src="../img/icon_aicl.png" alt="" class="title_icon"> AI 분석
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                    fill="none" data-popup="balloon_popup">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M8.56784 1.03124C10.1591 1.19037 11.6434 1.90524 12.7598 3.05024C13.9762 4.28583 14.6953 5.9258 14.7801 7.65754C14.8649 9.38927 14.3096 11.0917 13.2198 12.4402C12.2176 13.686 10.8111 14.542 9.24409 14.8598C7.67707 15.1776 6.04825 14.9372 4.63984 14.1802C3.22842 13.4069 2.12657 12.1709 1.51984 10.6802C0.910401 9.18194 0.829283 7.52078 1.28984 5.97024C1.74942 4.42573 2.7278 3.08708 4.05984 2.18024C5.38069 1.27915 6.97683 0.872326 8.56784 1.03124ZM9.03984 13.8802C10.3824 13.6071 11.588 12.8752 12.4498 11.8102C13.3825 10.6512 13.8569 9.18999 13.7832 7.70414C13.7095 6.21829 13.0926 4.81126 12.0498 3.75024C11.0947 2.77525 9.82731 2.16696 8.46915 2.03169C7.111 1.89642 5.74851 2.24279 4.61984 3.01024C3.77028 3.59563 3.08424 4.38824 2.62672 5.31296C2.1692 6.23769 1.95534 7.26392 2.00541 8.29442C2.05549 9.32493 2.36783 10.3256 2.91285 11.2016C3.45787 12.0776 4.21753 12.8 5.11984 13.3002C6.3179 13.9478 7.70561 14.1531 9.03984 13.8802ZM7.37485 6.00024H8.62485V5.00024H7.37485V6.00024ZM8.62485 7.00024V11.0002H7.37485V7.00024H8.62485Z"
+                                        fill="#8C98A7"></path>
                                 </svg>
-                                <!-- 말풍선 팝업 -->            
+                                <!-- 말풍선 팝업 -->
                                 <div class="balloon_popup">
                                     <span class="clse">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                            <path d="M16.6464 6.64637C16.8417 6.45124 17.1582 6.45118 17.3535 6.64637C17.5487 6.84159 17.5486 7.15813 17.3535 7.3534L12.707 11.9999L17.3535 16.6464L17.4179 16.7245C17.5461 16.9185 17.5242 17.1825 17.3535 17.3534C17.1826 17.5243 16.9186 17.546 16.7246 17.4179L16.6464 17.3534L11.9999 12.7069L7.35347 17.3534C7.1582 17.5487 6.8417 17.5487 6.64643 17.3534C6.4512 17.1581 6.45118 16.8416 6.64643 16.6464L11.2929 11.9999L6.64643 7.3534C6.4512 7.15814 6.45118 6.84163 6.64643 6.64637C6.8417 6.45124 7.15824 6.45118 7.35347 6.64637L11.9999 11.2929L16.6464 6.64637Z" fill="#6B7684"/>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none">
+                                            <path
+                                                d="M16.6464 6.64637C16.8417 6.45124 17.1582 6.45118 17.3535 6.64637C17.5487 6.84159 17.5486 7.15813 17.3535 7.3534L12.707 11.9999L17.3535 16.6464L17.4179 16.7245C17.5461 16.9185 17.5242 17.1825 17.3535 17.3534C17.1826 17.5243 16.9186 17.546 16.7246 17.4179L16.6464 17.3534L11.9999 12.7069L7.35347 17.3534C7.1582 17.5487 6.8417 17.5487 6.64643 17.3534C6.4512 17.1581 6.45118 16.8416 6.64643 16.6464L11.2929 11.9999L6.64643 7.3534C6.4512 7.15814 6.45118 6.84163 6.64643 6.64637C6.8417 6.45124 7.15824 6.45118 7.35347 6.64637L11.9999 11.2929L16.6464 6.64637Z"
+                                                fill="#6B7684" />
                                         </svg>
                                     </span>
                                     <p class="txt">
-                                        <img src="../img/icon_aicl.png" alt="" class="title_icon" style="width: 20px !important; height: 20px !important; margin-right: 3px !important">                                                          
-                                        <strong>애드가플래시</strong>는 데이터히어로의<br>AI 투자분석 시스템이 SEC 전자공시를 실시간으로<br>분석하여 제공하는 <strong>투자 속보 서비스</strong>입니다.
-                                    </p>                
-                                </div>                                                
+                                        <img src="../img/icon_aicl.png" alt="" class="title_icon"
+                                            style="width: 20px !important; height: 20px !important; margin-right: 3px !important">
+                                        <strong>애드가플래시</strong>는 데이터히어로의<br>AI 투자분석 시스템이 SEC 전자공시를 실시간으로<br>분석하여 제공하는
+                                        <strong>투자 속보 서비스</strong>입니다.
+                                    </p>
+                                </div>
                             </h2>
                             <p class="ai_txt">
                                 <!-- <b class="ai_judgement good">호재</b> -->
-                                <span id="typing-text">애플 2분기 실적발표. 매출 954억 달러, 전년 동기 대비 5%증가애플 2분기 실적발표. 매출 954억 달러, 전년 동기 대비 5%증가</span>                                
+                                <i class="blinking-cursor"></i>
+                                <span id="typing-text">애플 2분기 실적발표. 매출 954억 달러, 전년 동기 대비 5%증가애플 2분기 실적발표. 매출 954억 달러, 전년
+                                    동기 대비 5%증가</span>
                             </p>
 
                             <script>
-                            document.addEventListener("DOMContentLoaded", function() {
-                                const text = "애플 2분기 실적발표. 매출 954억 달러, 전년 동기 대비 5%증가애플 2분기 실적발표. 매출 954억 달러, 전년 동기 대비 5%증가";
-                                const typingTarget = document.getElementById("typing-text");
+                                document.addEventListener("DOMContentLoaded", function () {
+                                    const text = "애플 2분기 실적발표. 매출 954억 달러, 전년 동기 대비 5%증가애플 2분기 실적발표. 매출 954억 달러, 전년 동기 대비 5%증가";
+                                    const typingTarget = document.getElementById("typing-text");
+                                    const cursor = document.querySelector('.blinking-cursor');
 
-                                // 1. 가상 엘리먼트로 높이 측정
-                                const temp = document.createElement("span");
-                                temp.style.visibility = "hidden";
-                                temp.style.position = "absolute";
-                                temp.style.whiteSpace = "pre-wrap";
-                                temp.style.fontFamily = getComputedStyle(typingTarget).fontFamily;
-                                temp.style.fontSize = getComputedStyle(typingTarget).fontSize;
-                                temp.style.fontWeight = getComputedStyle(typingTarget).fontWeight;
-                                temp.style.lineHeight = getComputedStyle(typingTarget).lineHeight;
-                                temp.style.padding = getComputedStyle(typingTarget).padding;
-                                temp.style.boxSizing = getComputedStyle(typingTarget).boxSizing;
-                                temp.style.width = typingTarget.offsetWidth + "px";
-                                temp.innerText = text;
-                                document.body.appendChild(temp);
+                                    // 1. 가상 엘리먼트로 높이 측정
+                                    const temp = document.createElement("span");
+                                    temp.style.visibility = "hidden";
+                                    temp.style.position = "absolute";
+                                    temp.style.whiteSpace = "pre-wrap";
+                                    temp.style.fontFamily = getComputedStyle(typingTarget).fontFamily;
+                                    temp.style.fontSize = getComputedStyle(typingTarget).fontSize;
+                                    temp.style.fontWeight = getComputedStyle(typingTarget).fontWeight;
+                                    temp.style.lineHeight = getComputedStyle(typingTarget).lineHeight;
+                                    temp.style.padding = getComputedStyle(typingTarget).padding;
+                                    temp.style.boxSizing = getComputedStyle(typingTarget).boxSizing;
+                                    temp.style.width = typingTarget.offsetWidth + "px";
+                                    temp.innerText = text;
+                                    document.body.appendChild(temp);
 
-                                // 2. 높이 고정
-                                typingTarget.style.minHeight = temp.offsetHeight + "px";
-                                document.body.removeChild(temp);
+                                    // 2. 높이 고정
+                                    typingTarget.style.minHeight = temp.offsetHeight + "px";
+                                    document.body.removeChild(temp);
 
-                                // 2-1. 타이핑 시작 전 폰트 숨김
-                                typingTarget.style.visibility = "hidden";
+                                    // 2-1. 타이핑 시작 전 폰트 숨김
+                                    typingTarget.style.visibility = "hidden";
 
-                                // 3. 타이핑 효과
-                                let idx = 0;
-                                let isDeleting = false;
-                                function typing() {
-                                    // 타이핑 시작 시 폰트 보이게
-                                    typingTarget.style.visibility = "visible";
-                                    if (!isDeleting) {
-                                        typingTarget.innerHTML = text.slice(0, idx + 1);
-                                        idx++;
-                                        if (idx < text.length) {
-                                            setTimeout(typing, 10);
-                                        } else {
-                                            setTimeout(() => {
-                                                isDeleting = true;
-                                                typing();
-                                            }, 1000);
+                                    // 3. 타이핑 효과
+                                    let idx = 0;
+                                    let isDeleting = false;
+                                    function typing() {
+                                        // 타이핑 시작 시 폰트 보이게
+                                        typingTarget.style.visibility = "visible";
+                                        // 커서 숨김
+                                        if (cursor) cursor.style.display = "none";
+                                        if (!isDeleting) {
+                                            typingTarget.innerHTML = text.slice(0, idx + 1);
+                                            idx++;
+                                            if (idx < text.length) {
+                                                setTimeout(typing, 10);
+                                            } else {
+                                                setTimeout(() => {
+                                                    isDeleting = true;
+                                                    typing();
+                                                }, 300);
+                                            }
                                         }
                                     }
-                                }
-                                // 1초(1000ms) 후에 타이핑 시작, 이때 폰트 보이게
-                                setTimeout(typing, 1000);
-                            });
-                            </script>                            
-                            
+
+                                    // 1초(1000ms) 동안 커서만 깜빡임
+                                    if (cursor) cursor.style.display = "inline-block";
+                                    setTimeout(typing, 300);
+                                });
+                            </script>
+
                         </div>
                         <!-- <div class="analysis_content">
                             <h2 class="title"><img src="../img/icon_bot.png" alt="" class="title_icon"> AI 분석</h2>
@@ -259,12 +268,14 @@
                     배당공격수, 미드필더, 골키퍼 등 투자 성향에 맞는 배당주를~<br>
                     매월 어떤 배당주를 사야할지 고민했다면? 지금 영상을 주목하세요!<br>
                     <br>
-                    <img alt="article box" src="https://nimage.g-enews.com/imagesphp/5/2023121815212805518e250e8e18810625224987.jpg">
-                    <p class="caption">브로드컴 로고. 사진=로이터</p>                    
-                    
+                    <img alt="article box"
+                        src="https://nimage.g-enews.com/imagesphp/5/2023121815212805518e250e8e18810625224987.jpg">
+                    <p class="caption">브로드컴 로고. 사진=로이터</p>
+
                     <div class="box_caption">
                         [저자소개]<br>
-                        이관우님은 캐나다 MBA 출신으로, 외환 브로커지와 사모펀드에서 애널리스트와 포트폴리오 매니저를 역임했습니다. 현재는 캐나다 정부기관의 금융 매니저로 재직 중이며, CFA와 FRM 자격을 보유한 북미 금융 전문가입니다.
+                        이관우님은 캐나다 MBA 출신으로, 외환 브로커지와 사모펀드에서 애널리스트와 포트폴리오 매니저를 역임했습니다. 현재는 캐나다 정부기관의 금융 매니저로 재직 중이며, CFA와
+                        FRM 자격을 보유한 북미 금융 전문가입니다.
                     </div>
 
                     <strong>1월 배당매력주</strong><br>
@@ -325,6 +336,20 @@
                 </div>
                 <a href="research.html" class="go_list">목록보기</a>
             </div>
+
+            <div class="family_banner">
+                <div class="swipe_banner_btm">                                        
+                    <a href="https://dev.valueline.co.kr/member/service?utm_source=choicestock&amp;utm_medium=banner&amp;utm_campaign=service" target="_blank" class="banner" style="background-color: #FAF3EA;">
+                        <span class="img"><img src="../img/family_vl.jpg" alt=""></span>
+                        <div class="txt_flx">
+                            <p class="banner_text">20년 재무제표와 빠른 실적 발표!</p>
+                            <p class="banner_title">투자의 정석 밸류라인</p>
+                        </div>
+                    </a>                    
+                </div>
+                <!-- //swiper -->
+            </div>
+            <!-- //family_banner -->
 
             <!-- 최근 뉴스 -->
             <div class="recent_news_section">
