@@ -918,6 +918,11 @@
   padding: 48px 20px 0;
   background: var(--Background-fill-background, #F1F4F6);
 }
+.sub_recipe + .page_desc_wrap {
+  margin-top: 0px;
+  padding: 128px 20px 0;
+  background: var(--Background-fill-background, #F1F4F6);
+}
 .page_desc_wrap .page_desc_inner {
   display: flex;
   flex-direction: column;
@@ -1350,7 +1355,6 @@ body,
 
 #container {
   flex: 1;
-  padding-bottom: 15px;
 }
 
 .hide {
@@ -2063,7 +2067,7 @@ table.tableRanking td {
 /* 목록 드래그 드롭 */
 .globalStock .sub_search .att_wrap {
   background: #fff;
-  padding: 20px 15px 10px;
+  padding: 20px 15px 0px;
 }
 
 .globalStock .sub_search .no_attdata {
@@ -2185,7 +2189,6 @@ table.tableRanking td {
   position: sticky;
   bottom: 0;
   padding-top: 0;
-  padding-bottom: 76px;
   background: #fff;
   box-shadow: 0px -32px 20px 0px rgba(255, 255, 255, 0.9);
 }
@@ -9152,9 +9155,12 @@ table.tableRanking td {
   background: #fff;
   border-radius: 10px;
   font-size: 0;
-  margin-bottom: 10px;
+  margin-top: 10px;
   display: flex;
   justify-content: space-between;
+}
+.globalStock .sub_game .gamePicks_area .game_list .list:first-child {
+  margin-top: 0;
 }
 
 .globalStock .sub_game .gamePicks_area .game_list .list .game_event {
@@ -16790,7 +16796,7 @@ table.tableRanking td {
 
 /* 종목검색 - 재무제표탭 테이블*/
 .globalStock .sub_search .sub_mid .search_financials_area {
-  margin: 30px 0 10px;
+  margin: 30px 0 0px;
 }
 
 .globalStock .sub_search .sub_mid .search_financials_area .tabs_menu {
@@ -16911,7 +16917,6 @@ table.tableRanking td {
   font-size: 0.8rem;
   text-align: right;
   padding: 0 15px;
-  margin-bottom: 30px;
 }
 
 .globalStock .sub_search .sub_mid .search_financials_area .table_guide strong {
@@ -16952,7 +16957,6 @@ table.tableRanking td {
   overflow-y: hidden;
   border-top: 1px solid #939393;
   -webkit-overflow-scrolling: touch;
-  /* 추가 */
 }
 
 .globalStock .sub_search .sub_mid .search_financials_area .scroll_table_wrap .scroll_table table {
@@ -17493,7 +17497,6 @@ table.tableRanking td {
 }
 
 .globalStock .sub_search .sub_mid.tabs_area .alloca_info .term {
-  margin-bottom: 30px;
   padding: 0 15px;
   color: #939393;
   text-align: center;
@@ -17566,7 +17569,7 @@ table.tableRanking td {
 
 /* 종목검색 - 경쟁사 */
 .globalStock .sub_search .sub_mid.competitors_table {
-  padding: 15px 0;
+  padding: 15px 0 0;
   position: relative;
 }
 
@@ -17719,7 +17722,7 @@ table.tableRanking td {
 }
 
 .globalStock .sub_attract .sub_mid.attract_sub {
-  padding: 25px 5px;
+  padding: 25px 5px 0;
   position: relative;
 }
 
@@ -19060,7 +19063,7 @@ table.tableRanking td {
   border-radius: 16px;
   background: var(--Background-primary-light-background, #F1F4F6);
   margin: 0 auto 32px;
-  margin: 24px 20px 50px;
+  margin: 24px 20px 0;
 }
 .v_signalStreng.globalStock .sub_recipe.new_recipe .banner_signal .premium_banner {
   display: flex;
@@ -19991,8 +19994,8 @@ table.tableRanking td {
 
 .globalStock .sub_recipe .sub_mid.recipe_view {
   overflow: hidden;
-  background-color: #F4F4F5;
-  padding: 0 15px 25px;
+  background: var(--Background-fill-background, #F1F4F6);
+  padding: 0 15px;
 }
 
 .globalStock .sub_recom.sub_recipe .sub_mid.recipe_view {
@@ -20419,7 +20422,7 @@ table.tableRanking td {
 
 .globalStock .sub_recipe .sub_mid.recipe_view .btn_more {
   display: block;
-  margin: 18px auto;
+  margin: 18px auto 0;
 }
 
 .globalStock .sub_recipe .sub_mid.recipe_view .btn_more a {
@@ -22862,7 +22865,6 @@ table.tableRanking td {
 .globalStock .alarmArea {
   box-sizing: border-box;
   overflow: auto;
-  padding-bottom: 15px;
 }
 
 .globalStock .alarmArea.schFocus {
@@ -31789,7 +31791,7 @@ table.tableRanking td {
 .globalStock .sub_search .sub_mid .bandchart_sume {
   margin-top: 64px;
   border-top: 4px solid #e0e4e9;
-  padding: 24px 14px;
+  padding: 24px 14px 0;
   background: #fff;
 }
 
@@ -36426,19 +36428,7 @@ body.v_signalStreng {
 .v_signalStreng.globalStock #wrap #container .mainBox.financials {
   position: relative;
   background-color: #fff;
-  padding: 32px 16px;
-}
-.v_signalStreng.globalStock #wrap #container .mainBox.financials::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  display: block;
-  width: 100%;
-  height: 8px;
-  background-color: var(--Background-fill-background, #F7F8FA);
-  z-index: 1;
+  padding: 32px 16px 0;
 }
 .v_signalStreng.globalStock #wrap #container .mainBox.financials.chart_financials {
   border-top: 8px solid var(--Background-fill-background, #F7F8FA);
@@ -36965,7 +36955,6 @@ body.v_signalStreng {
 .v_signalStreng.globalStock #wrap #container .sub_mid.research_board {
   margin-bottom: 0;
   padding-top: 20px;
-  padding-bottom: 32px;
 }
 .v_signalStreng.globalStock #wrap #container .sub_mid.research_board .filter_list {
   display: flex;
@@ -37035,12 +37024,6 @@ body.v_signalStreng {
 
 .v_signalStreng.globalStock #wrap .sub_search .tabs_3.tabs_depth2 {
   margin-top: 19px;
-}
-
-.v_signalStreng.globalStock #wrap .sub_search .sub_mid.tabs_area .investCharm_area,
-.v_signalStreng.globalStock #wrap .sub_search .sub_mid.tabs_area .alloca_wrap.alloca_wrap.na_box,
-.v_signalStreng.globalStock #wrap .sub_search .sub_mid.tabs_area .alloca_info .allocachart_area {
-  padding-bottom: 20px;
 }
 
 .v_signalStreng.globalStock #wrap .sub_search .sub_mid.tabs_area .alloca_wrap.alloca_wrap,
@@ -37427,7 +37410,7 @@ body.v_signalStreng {
 
 .v_signalStreng.globalStock .sub_recom .bandchart_sume {
   background: #fff;
-  padding: 16px 14px;
+  padding: 16px 14px 0;
   margin-top: 16px;
 }
 
@@ -38016,7 +37999,7 @@ body.v_signalStreng {
   display: flex;
   flex-direction: column;
   gap: 8px 8px;
-  padding: 24px 16px;
+  padding: 24px 16px 0;
 }
 .sub_mid.latest_results .interest_list .area:has(.event) .stock_info {
   border-radius: 16px 16px 0 0;
@@ -39407,7 +39390,6 @@ body.v_signalStreng {
   display: flex;
   align-items: flex-start;
   gap: 8px;
-  padding-bottom: 80px;
 }
 .push_faq_banner .faq_desc .dot {
   display: inline-block;
@@ -39440,7 +39422,6 @@ body.v_signalStreng {
   border: 1px solid #e3e5e8;
   border-radius: 16px;
   padding: 24px 20px;
-  margin-bottom: 16px;
 }
 .news_note_banner .banner_box .banner_text p {
   color: var(--Font-secondary-body, #4E5866);
@@ -40473,12 +40454,12 @@ body.v_signalStreng {
 }
 .globalStock .view_con .mid .caption {
   text-align: center;
-  color: var(--Font-secondary-caption, #6B7684);
+  color: #8C98AC;
   font-family: var(--Body, Pretendard);
   font-size: var(--Size-sm, 14px);
   font-style: normal;
   font-weight: var(--Weight-400, 400);
-  line-height: var(--Line-height-sm, 18px);
+  line-height: 20px;
   letter-spacing: var(--Tracking-md, -0.3px);
 }
 .globalStock .view_con .mid p {

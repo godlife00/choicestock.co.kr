@@ -8879,7 +8879,7 @@
 .globalStock .sub_search .sub_mid .bandchart_sume {
 	margin-top: 64px;
 	border-top: 4px solid #e0e4e9;
-	padding: 24px 14px;
+	padding: 24px 14px 0;
 	background: #fff;
 }
 
@@ -13690,22 +13690,8 @@ body.v_signalStreng {
 .v_signalStreng.globalStock #wrap #container .mainBox.financials {
 	position: relative;
 	background-color: #fff;
-	padding: 32px 16px;
-
-	&::after {
-		content: "";
-		position: absolute;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		display: block;
-		width: 100%;
-		height: 8px;
-		// background-color: #f4f4f5;
-		background-color: var(--Background-fill-background, #F7F8FA);
-		z-index: 1;
-	}
-
+	padding: 32px 16px 0;
+	
 	&.chart_financials {
 		border-top: 8px solid var(--Background-fill-background, #F7F8FA);
 		padding-bottom: 25px;
@@ -14259,7 +14245,7 @@ body.v_signalStreng {
 .v_signalStreng.globalStock #wrap #container .sub_mid.research_board {
 	margin-bottom: 0;
 	padding-top: 20px;
-	padding-bottom: 32px;
+	// padding-bottom: 32px;
 	.filter_list {
 		@include filter_list;
 		margin-top: 16px;		
@@ -14288,7 +14274,7 @@ body.v_signalStreng {
 .v_signalStreng.globalStock #wrap .sub_search .sub_mid.tabs_area .investCharm_area,
 .v_signalStreng.globalStock #wrap .sub_search .sub_mid.tabs_area .alloca_wrap.alloca_wrap.na_box,
 .v_signalStreng.globalStock #wrap .sub_search .sub_mid.tabs_area .alloca_info .allocachart_area {
-	padding-bottom: 20px;
+	// padding-bottom: 20px;
 }
 
 .v_signalStreng.globalStock #wrap .sub_search .sub_mid.tabs_area .alloca_wrap.alloca_wrap,
@@ -14697,7 +14683,7 @@ body.v_signalStreng {
 
 .v_signalStreng.globalStock .sub_recom .bandchart_sume {
 	background: #fff;
-	padding: 16px 14px;
+	padding: 16px 14px 0;
 	margin-top: 16px;
 }
 
@@ -15222,7 +15208,7 @@ body.v_signalStreng {
 		display: flex;
 		flex-direction: column;
 		gap: 8px 8px;
-		padding: 24px 16px;
+		padding: 24px 16px 0;
 
 		.area {
 			&:has(.event) {
@@ -16640,7 +16626,7 @@ body.v_signalStreng {
 	  display: flex;
 	  align-items: flex-start;
 	  gap: 8px;
-	  padding-bottom: 80px;
+	//   padding-bottom: 80px;
 	  .dot {
 		display: inline-block;
 		width: 3px;
@@ -16675,7 +16661,7 @@ body.v_signalStreng {
 	  border: 1px solid #e3e5e8;
 	  border-radius: 16px;
 	  padding: 24px 20px;
-	  margin-bottom: 16px;
+	//   margin-bottom: 16px;
 	  .banner_text {
 		
 		p {

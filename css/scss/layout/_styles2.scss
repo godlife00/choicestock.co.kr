@@ -6022,7 +6022,7 @@
 
 /* 종목검색 - 재무제표탭 테이블*/
 .globalStock .sub_search .sub_mid .search_financials_area {
-	margin: 30px 0 10px;
+	margin: 30px 0 0px;
 }
 
 .globalStock .sub_search .sub_mid .search_financials_area .tabs_menu {
@@ -6143,7 +6143,7 @@
 	font-size: 0.8rem;
 	text-align: right;
 	padding: 0 15px;
-	margin-bottom: 30px;
+	// margin-bottom: 30px;
 }
 
 .globalStock .sub_search .sub_mid .search_financials_area .table_guide strong {
@@ -6183,8 +6183,7 @@
 	overflow: scroll;
 	overflow-y: hidden;
 	border-top: 1px solid #939393;
-	-webkit-overflow-scrolling: touch;
-	/* 추가 */
+	-webkit-overflow-scrolling: touch;	
 }
 
 .globalStock .sub_search .sub_mid .search_financials_area .scroll_table_wrap .scroll_table table {
@@ -6764,7 +6763,7 @@
 
 
 .globalStock .sub_search .sub_mid.tabs_area .alloca_info .term {
-	margin-bottom: 30px;
+	// margin-bottom: 30px;
 	padding: 0 15px;
 	color: #939393;
 	text-align: center;
@@ -6837,7 +6836,7 @@
 
 /* 종목검색 - 경쟁사 */
 .globalStock .sub_search .sub_mid.competitors_table {
-	padding: 15px 0;
+	padding: 15px 0 0;
 	position: relative;
 }
 
@@ -7000,7 +6999,7 @@
 // }
 
 .globalStock .sub_attract .sub_mid.attract_sub {
-	padding: 25px 5px;
+	padding: 25px 5px 0;
 	position: relative;
 }
 
@@ -8323,7 +8322,7 @@
 		.banner_signal {		
 			// @include banner_base;				
 			@include banner_CTA;	
-			margin: 24px 20px 50px;			
+			margin: 24px 20px 0;			
 		}
 
 		// 레시피 뷰
@@ -9408,8 +9407,8 @@
 
 .globalStock .sub_recipe .sub_mid.recipe_view {
 	overflow: hidden;
-	background-color: #F4F4F5;
-	padding: 0 15px 25px;
+	background: var(--Background-fill-background, #F1F4F6);
+	padding: 0 15px;
 }
 
 .globalStock .sub_recom.sub_recipe .sub_mid.recipe_view {
@@ -9790,7 +9789,7 @@
 
 .globalStock .sub_recipe .sub_mid.recipe_view .btn_more {
 	display: block;
-	margin: 18px auto;
+	margin: 18px auto 0;
 }
 
 .globalStock .sub_recipe .sub_mid.recipe_view .btn_more a {
@@ -12009,7 +12008,7 @@
 .globalStock .alarmArea {
 	box-sizing: border-box;
 	overflow: auto;
-	padding-bottom: 15px;
+	// padding-bottom: 15px;
 }
 
 .globalStock .alarmArea.schFocus {
