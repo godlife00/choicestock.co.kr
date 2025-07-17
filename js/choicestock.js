@@ -24,8 +24,8 @@ $(document).ready(function () {
                 return;
             }
 
-            // balloon_popup이나 toast_popup일 때는 blocker를 보여주지 않음
-            if (popupId !== 'balloon_popup' && popupId !== 'toast_popup') {
+            // balloon_popup, toast_popup, toast_popup_btn일 때는 blocker를 보여주지 않음
+            if (popupId !== 'balloon_popup' && popupId !== 'toast_popup' && popupId !== 'toast_popup_btn') {
                 $('html, body').css("overflow", "hidden");
                 $('.modal').hide();
                 $('.blocker').show();
@@ -36,29 +36,34 @@ $(document).ready(function () {
                 $targetPopup.show();
             }
             
-            // toast_popup일 때는 3초 후 자동으로 닫힘
-            else if (popupId === 'toast_popup') {
+            // toast_popup_btn 또는 toast_popup일 때 자동으로 닫힘
+            else if (popupId === 'toast_popup_btn' || popupId === 'toast_popup') {
                 $targetPopup.show().addClass('slideUp50');
-                // 3초 후 자동 닫기
+                // toast_popup_btn은 3초, toast_popup은 2초 후 자동 닫기
+                var closeDelay = (popupId === 'toast_popup_btn') ? 3000 : 2000;
                 setTimeout(function() {
                     $targetPopup.fadeOut(function() {
                         $targetPopup.removeClass('slideUp slideUp50');
                     });
-                }, 3000);
+                }, closeDelay);
 
-                // toast_popup 이외의 영역 클릭 시 닫히도록 처리
+                // toast_popup_btn 또는 toast_popup 이외의 영역 클릭 시 닫히도록 처리
                 // 이미 바인딩된 핸들러가 있으면 중복 방지 위해 먼저 off
-                $(document).off('mousedown.toast_popup touchstart.toast_popup').on('mousedown.toast_popup touchstart.toast_popup', function(e) {
-                    // toast_popup 내부 클릭 시 무시
-                    if ($(e.target).closest('.toast_popup').length === 0) {
+                var eventNamespace = (popupId === 'toast_popup_btn') ? '.toast_popup_btn' : '.toast_popup';
+                $(document).off('mousedown' + eventNamespace + ' touchstart' + eventNamespace)
+                    .on('mousedown' + eventNamespace + ' touchstart' + eventNamespace, function(e) {
+                    // 해당 팝업 내부 클릭 시 무시
+                    var popupClass = (popupId === 'toast_popup_btn') ? '.toast_popup_btn' : '.toast_popup';
+                    if ($(e.target).closest(popupClass).length === 0) {
                         $targetPopup.fadeOut(function() {
                             $targetPopup.removeClass('slideUp slideUp50');
                         });
                         // 이벤트 핸들러 해제
-                        $(document).off('mousedown.toast_popup touchstart.toast_popup');
+                        $(document).off('mousedown' + eventNamespace + ' touchstart' + eventNamespace);
                     }
                 });
             }
+            
             // bottom_popup, fav_group_move_popup 일때는 slideUp 적용
             else if ($targetPopup.hasClass('bottom_popup') || $targetPopup.hasClass('fav_group_move_popup')) {                
                 $targetPopup.show().addClass('slideUp');
@@ -76,18 +81,25 @@ $(document).ready(function () {
         }
     };
 
-    // 모달 열기 이벤트 바인딩
+    // 모달 열기/닫기 이벤트 바인딩 (여러 개의 data-popup 처리)
     $('[data-popup]').on('click', function(e) {
         if ($(this).is('a')) {
             e.preventDefault(); // a 태그의 기본 동작 방지
         }
-        const popupId = $(this).data('popup');
-        ModalPopup.open(popupId);
-    });
+        // data-popup 속성 값이 여러 개일 수 있으므로 공백 기준으로 분리
+        const popupIds = ($(this).data('popup') + '').split(' ');
 
-    // 모달 닫기 이벤트 바인딩
-    $('[data-popup="pop_clse"]').on('click', function() {
-        ModalPopup.close();
+        // pop_clse(모달 닫기)가 포함되어 있으면 먼저 닫기
+        if (popupIds.includes('pop_clse')) {
+            ModalPopup.close();
+        }
+
+        // pop_clse를 제외한 나머지 팝업 오픈
+        popupIds.forEach(function(popupId) {
+            if (popupId && popupId !== 'pop_clse') {
+                ModalPopup.open(popupId);
+            }
+        });
     });
 
     // data-popup="balloon_popup" 버튼을 눌렀을 때 <div class="balloon_popup">가 보이도록 처리

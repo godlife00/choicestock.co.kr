@@ -44999,7 +44999,7 @@ body.v_signalStreng {
   font-size: 0;
 }
 
-.toast_popup {
+.toast_popup, .toast_popup_btn {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -45018,30 +45018,30 @@ body.v_signalStreng {
   box-sizing: border-box;
   display: none;
 }
-.toast_popup.slideUp {
+.toast_popup.slideUp, .toast_popup_btn.slideUp {
   animation: fadeIn 0.8s, slideIn 0.4s linear;
   margin: 0 auto;
   margin-left: 3%;
   border-radius: 10px;
 }
-.toast_popup.slideUp50 {
+.toast_popup.slideUp50, .toast_popup_btn.slideUp50 {
   animation: fadeIn 0.8s, slideIn50 0.4s linear;
   margin: 0 auto;
   margin-left: 3%;
   border-radius: 10px;
 }
-.toast_popup.btn_type {
+.toast_popup.btn_type, .toast_popup_btn.btn_type {
   gap: 8px 16px;
   padding: 10px 24px;
 }
-.toast_popup.btn_type .txt {
+.toast_popup.btn_type .txt, .toast_popup_btn.btn_type .txt {
   gap: 8px 16px;
 }
-.toast_popup:has(.txt:nth-child(2)) {
+.toast_popup:has(.txt:nth-child(2)), .toast_popup_btn:has(.txt:nth-child(2)) {
   gap: 4px 8px;
   border-radius: var(--Radius-r-04, 16px) !important;
 }
-.toast_popup .txt {
+.toast_popup .txt, .toast_popup_btn .txt {
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -45055,7 +45055,7 @@ body.v_signalStreng {
   line-height: var(--Line-height-xl-01, 24px); /* 160% */
   letter-spacing: var(--Tracking-md, -0.3px);
 }
-.toast_popup .txt span {
+.toast_popup .txt span, .toast_popup_btn .txt span {
   flex: 1 1 0;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -45071,7 +45071,7 @@ body.v_signalStreng {
   line-height: var(--Line-height-xl-01, 24px); /* 160% */
   letter-spacing: var(--Tracking-md, -0.3px);
 }
-.toast_popup .txt .group_name {
+.toast_popup .txt .group_name, .toast_popup_btn .txt .group_name {
   display: inline-block;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -45087,31 +45087,31 @@ body.v_signalStreng {
   letter-spacing: var(--Tracking-md, -0.3px);
 }
 @media (max-width: 480px) {
-  .toast_popup .txt .group_name {
+  .toast_popup .txt .group_name, .toast_popup_btn .txt .group_name {
     max-width: 10ch;
   }
 }
 @media (max-width: 375px) {
-  .toast_popup .txt .group_name {
+  .toast_popup .txt .group_name, .toast_popup_btn .txt .group_name {
     max-width: 16ch;
   }
 }
 @media (min-width: 481px) and (max-width: 767px) {
-  .toast_popup .txt .group_name {
+  .toast_popup .txt .group_name, .toast_popup_btn .txt .group_name {
     max-width: 20ch;
   }
 }
 @media (min-width: 768px) {
-  .toast_popup .txt .group_name {
+  .toast_popup .txt .group_name, .toast_popup_btn .txt .group_name {
     max-width: 38ch;
   }
 }
-.toast_popup .txt i {
+.toast_popup .txt i, .toast_popup_btn .txt i {
   display: inline-flex;
   align-items: center;
   flex: 0 0 auto;
 }
-.toast_popup .toast_btn {
+.toast_popup .toast_btn, .toast_popup_btn .toast_btn {
   display: flex;
   align-items: center;
   justify-content: center;

@@ -4628,7 +4628,7 @@
 }
 
 // 토스트 팝업
-.toast_popup {
+.toast_popup, .toast_popup_btn {
 	display: flex;	
 	flex-direction: column;
 	justify-content: center;
