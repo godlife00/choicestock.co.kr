@@ -189,10 +189,12 @@
                                     temp.style.fontFamily = getComputedStyle(typingTarget).fontFamily;
                                     temp.style.fontSize = getComputedStyle(typingTarget).fontSize;
                                     temp.style.fontWeight = getComputedStyle(typingTarget).fontWeight;
-                                    temp.style.lineHeight = getComputedStyle(typingTarget).lineHeight;
+                                    temp.style.lineHeight = getComputedStyle(typingTarget).lineHeight;                                
                                     temp.style.padding = getComputedStyle(typingTarget).padding;
                                     temp.style.boxSizing = getComputedStyle(typingTarget).boxSizing;
                                     temp.style.width = typingTarget.offsetWidth + "px";
+                                    temp.style.wordBreak = getComputedStyle(typingTarget).wordBreak || "break-all";
+                                    temp.style.wordWrap = getComputedStyle(typingTarget).wordWrap || "break-word";
                                     temp.innerText = text;
                                     document.body.appendChild(temp);
 
