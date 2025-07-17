@@ -45010,13 +45010,25 @@ body.v_signalStreng {
   background: rgba(49, 59, 72, 0.9) !important;
   margin: 0 auto !important;
   position: fixed;
-  top: auto;
-  bottom: 120px;
   left: 50%;
-  transform: translate(-50%, 50%);
+  bottom: 55px;
+  transform: translate(-50%, -50%);
   z-index: 99;
   max-width: 84%;
   box-sizing: border-box;
+  display: none;
+}
+.toast_popup.slideUp {
+  animation: fadeIn 0.8s, slideIn 0.4s linear;
+  margin: 0 auto;
+  margin-left: 3%;
+  border-radius: 10px;
+}
+.toast_popup.slideUp50 {
+  animation: fadeIn 0.8s, slideIn50 0.4s linear;
+  margin: 0 auto;
+  margin-left: 3%;
+  border-radius: 10px;
 }
 .toast_popup.btn_type {
   gap: 8px 16px;
@@ -45049,7 +45061,8 @@ body.v_signalStreng {
   text-overflow: ellipsis;
   white-space: nowrap;
   min-width: 0;
-  display: block;
+  display: flex;
+  gap: 4px 4px;
   color: #FFF;
   font-family: var(--Body, Pretendard);
   font-size: var(--Size-md-15, 15px);
@@ -45057,6 +45070,41 @@ body.v_signalStreng {
   font-weight: var(--Weight-400, 400);
   line-height: var(--Line-height-xl-01, 24px); /* 160% */
   letter-spacing: var(--Tracking-md, -0.3px);
+}
+.toast_popup .txt .group_name {
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  vertical-align: middle;
+  max-width: 40ch;
+  color: #FFF;
+  font-family: var(--Body, Pretendard);
+  font-size: var(--Size-md-15, 15px);
+  font-style: normal;
+  font-weight: var(--Weight-600, 600);
+  line-height: var(--Line-height-xl-01, 24px); /* 160% */
+  letter-spacing: var(--Tracking-md, -0.3px);
+}
+@media (max-width: 480px) {
+  .toast_popup .txt .group_name {
+    max-width: 10ch;
+  }
+}
+@media (max-width: 375px) {
+  .toast_popup .txt .group_name {
+    max-width: 16ch;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .toast_popup .txt .group_name {
+    max-width: 20ch;
+  }
+}
+@media (min-width: 768px) {
+  .toast_popup .txt .group_name {
+    max-width: 38ch;
+  }
 }
 .toast_popup .txt i {
   display: inline-flex;

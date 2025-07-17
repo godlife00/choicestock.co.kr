@@ -24,8 +24,8 @@ $(document).ready(function () {
                 return;
             }
 
-            // balloon_popup일 때는 blocker를 보여주지 않음
-            if (popupId !== 'balloon_popup') {
+            // balloon_popup이나 toast_popup일 때는 blocker를 보여주지 않음
+            if (popupId !== 'balloon_popup' && popupId !== 'toast_popup') {
                 $('html, body').css("overflow", "hidden");
                 $('.modal').hide();
                 $('.blocker').show();
@@ -34,6 +34,30 @@ $(document).ready(function () {
             // balloon_popup일 때는 slideUp, slideUp50 클래스를 적용하지 않음
             if (popupId === 'balloon_popup') {
                 $targetPopup.show();
+            }
+            
+            // toast_popup일 때는 3초 후 자동으로 닫힘
+            else if (popupId === 'toast_popup') {
+                $targetPopup.show().addClass('slideUp50');
+                // 3초 후 자동 닫기
+                setTimeout(function() {
+                    $targetPopup.fadeOut(function() {
+                        $targetPopup.removeClass('slideUp slideUp50');
+                    });
+                }, 3000);
+
+                // toast_popup 이외의 영역 클릭 시 닫히도록 처리
+                // 이미 바인딩된 핸들러가 있으면 중복 방지 위해 먼저 off
+                $(document).off('mousedown.toast_popup touchstart.toast_popup').on('mousedown.toast_popup touchstart.toast_popup', function(e) {
+                    // toast_popup 내부 클릭 시 무시
+                    if ($(e.target).closest('.toast_popup').length === 0) {
+                        $targetPopup.fadeOut(function() {
+                            $targetPopup.removeClass('slideUp slideUp50');
+                        });
+                        // 이벤트 핸들러 해제
+                        $(document).off('mousedown.toast_popup touchstart.toast_popup');
+                    }
+                });
             }
             // bottom_popup, fav_group_move_popup 일때는 slideUp 적용
             else if ($targetPopup.hasClass('bottom_popup') || $targetPopup.hasClass('fav_group_move_popup')) {                
@@ -1925,12 +1949,12 @@ $(document).ready(function () {
     });
 	
     // 관심종목 등록 팝업
-    $('.attention_pop').on('click', function () {
-        $('.modal').hide().removeClass('slideUp'); // 다른 모달 숨기기
-        $('.blocker').show(); // 배경 블러 처리
-        $('.fav_reg_popup').show().addClass('slideUp'); // 원하는 모달 표시                        
-        $('html, body').css("overflow", "hidden");
-    });    
+    // $('.attention_pop').on('click', function () {
+    //     $('.modal').hide().removeClass('slideUp'); // 다른 모달 숨기기
+    //     $('.blocker').show(); // 배경 블러 처리
+    //     $('.fav_reg_popup').show().addClass('slideUp'); // 원하는 모달 표시                        
+    //     $('html, body').css("overflow", "hidden");
+    // });    
     // 관심종목 그룹 등록 2차 팝업
     $('.group_add_btn').on('click', function () {                          
         // 등록 팝업 초기화

@@ -58,7 +58,7 @@
         <button class="pop_btn" data-popup="bottom_popup">하단에서 열리는 팝업 bottom_popup</button>
         <button class="pop_btn" data-popup="center_popup">가운데서 열리는 팝업(설명 타입) center_popup</button>
         <button class="pop_btn" data-popup="alert_popup">시스템 타입 팝업 alert_popup</button>
-        <button class="pop_btn" data-popup="toast_popup">토스트 팝업 toast_popup</button>
+        <button class="pop_btn" data-popup="toast_popup">토스트 팝업 toast_popup</button>                
         
         <button class="pop_btn" data-popup="balloon_popup">
             <div class="balloon_popup_box">
@@ -88,8 +88,7 @@
 
             <!-- 토스트 팝업 -->
             <!-- 두줄 이상인 경우 -->
-            <div class="toast_popup" style="bottom: 210px;">
-
+            <div class="toast_popup">
                 <p class="txt">
                     <i><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
                             <path
@@ -138,7 +137,7 @@
 
             <!-- 토스트 팝업 -->
             <!-- 버튼 포함 된 경우 -->
-            <div class="toast_popup btn_type" style="bottom: 300px;">
+            <div class="toast_popup btn_type">
                 <p class="txt">
                     <span>영역 넘어갈경우 텍스트를 줄이는 방법으로영역 넘어갈경우 텍스트를 줄이는 방법으로영역 넘어갈경우 텍스트를 줄이는 방법으로영역 넘어갈경우 텍스트를 줄이는
                         방법으로 <button data-popup="fav_reg_popup">변경</button> </span>
@@ -544,6 +543,55 @@
                 <!-- //pop_footer  -->
             </div>
             <!-- //정기결제 취소 > 월정기 33,000원 회원 + 기간 유료회원 대상 > 해지 안내 팝업 -->
+
+            <!-- 관심종목 등록 툴팁 팝업 -->
+            <div class="modal att_pop fav_reg_popup bottom_popup">
+                <!-- fav_reg_popup(관심종목 등록), fav_group_reg_popup(관심종목 그룹 등록), fav_group_move_popup(관심종목 그룹 이동), fav_group_manage_popup(관심종목 그룹 관리), fav_group_edit_popup(관심종목 그룹 수정, 삭제) -->
+                <div class="pop_header">
+                    <h1 class="pop_title">관심종목 등록</h1>
+                    <div>
+                        <p class="sum_txt">관심종목 등록으로 종목정보를 빠르게 확인하세요.</p>
+                        <p class="sum_txt">프리미엄회원은 관심종목 알림서비스가 제공됩니다.</p>
+                    </div>
+
+                    <span class="clse">
+                        <!--닫기-->
+                    </span>
+                </div>
+                <div class="pop_con">
+                    <!-- 그룹 선택 -->
+                    <div class="group_select">
+                        <button class="group_add_btn" data-popup="fav_group_reg_popup">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                                fill="none">
+                                <circle cx="10" cy="10" r="10" fill="#404FC3" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M9.4 9.4V5H10.6V9.4H15V10.6H10.6V15H9.4V10.6H5V9.4H9.4Z" fill="white" />
+                            </svg>그룹 추가</button>
+                    </div>
+
+                    <ul class="fav_list">
+                        <li class="fav_item"><input type="checkbox" name="reg_fav" data-group-id="1" id="reg_fav1"
+                                class="fav_checkbox" checked><label for="reg_fav1">테스트1</label></li>
+                        <li class="fav_item"><input type="checkbox" name="reg_fav" data-group-id="2" id="reg_fav2"
+                                class="fav_checkbox"><label for="reg_fav2">관심종목 2</label></li>
+
+                        <li class="fav_item"><input type="checkbox" name="reg_fav" data-group-id="1" id="reg_fav1"
+                                class="fav_checkbox">
+                            <label for="reg_fav1">관 1</label>
+                        </li>
+                        <li class="fav_item">
+                            <input type="checkbox" name="reg_fav" data-group-id="2" id="reg_fav2"
+                                class="fav_checkbox"><label for="reg_fav2">관심 3</label>
+                        </li>
+                    </ul>
+
+                    <div class="btnArea edtBtn">
+                        <!-- <a href="" class="btn btn_save close">삭제</a> -->
+                        <button class="btn btn_save">확인</button>
+                    </div>
+                </div>
+            </div>
 
             <!-- 관심종목 그룹 이동 툴팁 팝업 -->
             <div class="modal att_pop fav_group_move_popup">

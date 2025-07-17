@@ -145,35 +145,14 @@
                     <h1 class="headerLogo"><span>종목검색</span></h1>
                 </div>
                 <div class="right">
-                    <span class="att"><i class="attention attention_pop no_member" style="left:-120px" data-popup="fav_item_reg_popup"></i></span>
+                    <span class="att"><i class="attention attention_pop no_member" style="left:-50px" data-popup="fav_item_reg_popup"></i></span>
                     <!-- 로그인 안한 경우 no_member -->
-                    <span class="att"><i class="attention attention_pop on" style="left:-50px" data-popup="fav_reg_popup"></i></span>
-                    <span class="att"><i class="attention attention_pop" data-popup="fav_reg_popup"></i></span>
+                    <!-- <span class="att"><i class="attention attention_pop" style="left:-50px" data-popup="toast_popup"></i></span> -->
+                    <span class="att"><i class="attention attention_pop on" data-popup="toast_popup"></i></span>
                 </div>
             </div>
             <!-- //headerTop -->
-            <div class="headerTop">
-                <div class="left">
-                    <a href="javascript:history.back();" class="go_back">히스토리백</a>
-                </div>
-                <div class="cen">
-                    <h1 class="headerLogo"><span>종목검색</span></h1>
-                </div>
-                <div class="right">                    
-                    <span class="att"><span data-popup="fav_reg_popup">토스트 팝업</span></span>
-                </div>
-            </div>
-            <!-- //headerTop -->
-            
-            <div class="toast_popup btn_type">
-                <p class="txt">
-                    <span>영역 넘어갈경우 텍스트를 줄이는 방법으로영역 넘어갈경우 텍스트를 줄이는 방법으로영역 넘어갈경우 텍스트를 줄이는 방법으로영역 넘어갈경우 텍스트를 줄이는
-                        방법으로 <button data-popup="fav_reg_popup">변경</button> </span>
-                    <button class="toast_btn" data-popup="fav_reg_popup">변경</button>
-                </p>
-            </div>
-            <!-- //토스트 팝업 -->
-
+             
             <script>
                 $(document).ready(function () {
                     // 관심종목 등록 (비회원인 경우)
@@ -194,14 +173,14 @@
         </div>
 
         <!-- 종목검색 class = sub_search-->
-        <div id="container" class="sub_search">
+        <div id="container" class="sub_search">            
             <!-- 하단 GNB -->
             <div class="gnb">
                 <ul class="list">
                     <li class="home"><a href="../index.html">홈</a></li>
                     <li class="sch active"><a href="../search/searching.html">검색</a></li>
-                    <li class="stock"><a href="../stock/recom.html">추천</a></li>
-                    <li class="excavation"><a href="../stock/note.html">발굴</a></li>
+                    <li class="stock"><a href="../stock/recom.html">추천/신호</a></li>
+                    <li class="excavation"><a href="../stock/note.html">뉴스/발굴</a></li>
                     <li class="attention"><a href="../search/searching_attention.html">관심</a></li>
                 </ul>
             </div>
@@ -897,6 +876,18 @@
         <!-- //footer -->
 
         <div class="modalBox">
+
+            <!-- 토스트 팝업 -->
+            <!-- 버튼 포함 된 경우 -->
+            <div class="toast_popup btn_type">
+                <p class="txt">
+                    <span><strong class="group_name">사고싶다사고싶다사고싶다사고싶다사고싶다사고싶다사고싶다사고싶다</strong>에 등록되었습니다.</span>
+                    <button class="toast_btn" data-popup="fav_reg_popup">변경</button>
+                </p>
+            </div>
+            <!-- //토스트 팝업 -->
+
+
             <div class="modal signal_pop01">
                 <div class="pop_header">
                     <h1 class="pop_title">매매신호</h1>

@@ -4638,14 +4638,29 @@
 	border-radius: var(--Radius-r-07, 100px) !important;
 	background: rgba(49, 59, 72, 0.90) !important;
 	margin: 0 auto !important;	
-    position: fixed;
-	top: auto;
-    bottom: 120px;
-	left: 50%;	
-	transform: translate(-50%, 50%);
+    
+	position: fixed;
+    // top: 50%;
+    left: 50%;
+	bottom: 55px;
+    transform: translate(-50%, -50%);
     z-index: 99;	
     max-width: 84%;    		
     box-sizing: border-box;    
+	display: none;
+
+	&.slideUp {
+		animation: fadeIn 0.8s, slideIn 0.4s linear;
+		margin: 0 auto;
+		margin-left: 3%;
+		border-radius: 10px;
+	}
+	&.slideUp50 {
+		animation: fadeIn 0.8s, slideIn50 0.4s linear;
+		margin: 0 auto;
+		margin-left: 3%;
+		border-radius: 10px;
+	}
 
 	// 버튼 타입인 토스트 팝업 스타일
 	&.btn_type {
@@ -4675,13 +4690,14 @@
 		font-weight: var(--Weight-400, 400);
 		line-height: var(--Line-height-xl-01, 24px); /* 160% */
 		letter-spacing: var(--Tracking-md, -0.3px);
-		span {
+		span {			
 			flex: 1 1 0;
 			overflow: hidden;
 			text-overflow: ellipsis;
 			white-space: nowrap;
 			min-width: 0; // flex item에서 말줄임 처리를 위해 필요
-			display: block;
+			display: flex;
+			gap: 4px 4px;
 			color: #FFF;
 			font-family: var(--Body, Pretendard);
 			font-size: var(--Size-md-15, 15px);
@@ -4689,6 +4705,35 @@
 			font-weight: var(--Weight-400, 400);
 			line-height: var(--Line-height-xl-01, 24px); /* 160% */
 			letter-spacing: var(--Tracking-md, -0.3px);
+		}
+		.group_name {
+			display: inline-block;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+			vertical-align: middle;
+			max-width: 40ch;			
+			color: #FFF;
+			font-family: var(--Body, Pretendard);
+			font-size: var(--Size-md-15, 15px);
+			font-style: normal;
+			font-weight: var(--Weight-600, 600);
+			line-height: var(--Line-height-xl-01, 24px); /* 160% */
+			letter-spacing: var(--Tracking-md, -0.3px);
+
+			// 모바일 해상도별로 최대 글자수 조절
+			@media (max-width: 480px) {
+				max-width: 10ch;
+			}
+			@media (max-width: 375px) {
+				max-width: 16ch;
+			}
+			@media (min-width: 481px) and (max-width: 767px) {
+				max-width: 20ch;
+			}
+			@media (min-width: 768px) {
+				max-width: 38ch;
+			}
 		}
 
 		i {
@@ -4720,8 +4765,10 @@
 		font-weight: var(--Weight-600, 600);
 		line-height: var(--Line-height-xs-13, 16px); /* 123.077% */
 		letter-spacing: var(--Tracking-md, -0.3px);
-	}
+	}	
 }
+
+
 
 // 말풍선 팝업
 .balloon_popup {	
