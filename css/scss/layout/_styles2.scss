@@ -12101,10 +12101,9 @@
 	}
 
 	span.sum {
-		display: block;
+		display: block;		
 		padding-left: 21px;
-		color: #333;
-		display: block;
+		color: #333;		
 		margin-top: 10px;
 		box-sizing: border-box;
 		line-height: 1.67;
@@ -12113,6 +12112,15 @@
 		word-break: break-all;
 		word-wrap: break-word;
 		visibility: hidden;
+		.lock_icon {
+			display: inline-flex;
+			width: 9.64px;			
+			height: 12.64px;
+			font-family: var(--Title, Pretendard);
+			font-size: var(--Size-md-16, 16px);
+			line-height: var(--Line-height-md, 22px);
+			margin-right: 3px;
+		}
 
 		a {
 			color: #333;

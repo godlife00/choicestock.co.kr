@@ -50,17 +50,17 @@
     <div id="wrap">
 
         <!-- <button data-popup="pop_clse">모달 팝업 닫기</button> -->
-        <button data-popup="first_month_3300">첫 달 1000원 유도 팝업 first_month_3300</button>
-        <button data-popup="long_term_popup">9개월 이상 정기결제 long_term_popup</button>
-        <button data-popup="short_term_popup">9개월 미만 정기결제 short_term_popup</button>
-        <button data-popup="event1000_popup">첫 달 1000원 정기결제 event1000_popup</button>
-        <button data-popup="event33000_popup">월정기 33,000원 회원 + 기간 유료회원 대상 event33000_popup</button>        
-        <button data-popup="bottom_popup">하단에서 열리는 팝업 bottom_popup</button>
-        <button data-popup="center_popup">가운데서 열리는 팝업(설명 타입) center_popup</button>
-        <button data-popup="alert_popup">시스템 타입 팝업 alert_popup</button>
-        <!-- <button data-popup="toast_popup">토스트 팝업 toast_popup</button> -->
+        <button class="pop_btn" data-popup="first_month_3300">첫 달 1000원 유도 팝업 first_month_3300</button>
+        <button class="pop_btn" data-popup="long_term_popup">9개월 이상 정기결제 long_term_popup</button>
+        <button class="pop_btn" data-popup="short_term_popup">9개월 미만 정기결제 short_term_popup</button>
+        <button class="pop_btn" data-popup="event1000_popup">첫 달 1000원 정기결제 event1000_popup</button>
+        <button class="pop_btn" data-popup="event33000_popup">월정기 33,000원 회원 + 기간 유료회원 대상 event33000_popup</button>        
+        <button class="pop_btn" data-popup="bottom_popup">하단에서 열리는 팝업 bottom_popup</button>
+        <button class="pop_btn" data-popup="center_popup">가운데서 열리는 팝업(설명 타입) center_popup</button>
+        <button class="pop_btn" data-popup="alert_popup">시스템 타입 팝업 alert_popup</button>
+        <button class="pop_btn" data-popup="toast_popup">토스트 팝업 toast_popup</button>
         
-        <button data-popup="balloon_popup">
+        <button class="pop_btn" data-popup="balloon_popup">
             <div class="balloon_popup_box">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M8.56784 1.03124C10.1591 1.19037 11.6434 1.90524 12.7598 3.05024C13.9762 4.28583 14.6953 5.9258 14.7801 7.65754C14.8649 9.38927 14.3096 11.0917 13.2198 12.4402C12.2176 13.686 10.8111 14.542 9.24409 14.8598C7.67707 15.1776 6.04825 14.9372 4.63984 14.1802C3.22842 13.4069 2.12657 12.1709 1.51984 10.6802C0.910401 9.18194 0.829283 7.52078 1.28984 5.97024C1.74942 4.42573 2.7278 3.08708 4.05984 2.18024C5.38069 1.27915 6.97683 0.872326 8.56784 1.03124ZM9.03984 13.8802C10.3824 13.6071 11.588 12.8752 12.4498 11.8102C13.3825 10.6512 13.8569 9.18999 13.7832 7.70414C13.7095 6.21829 13.0926 4.81126 12.0498 3.75024C11.0947 2.77525 9.82731 2.16696 8.46915 2.03169C7.111 1.89642 5.74851 2.24279 4.61984 3.01024C3.77028 3.59563 3.08424 4.38824 2.62672 5.31296C2.1692 6.23769 1.95534 7.26392 2.00541 8.29442C2.05549 9.32493 2.36783 10.3256 2.91285 11.2016C3.45787 12.0776 4.21753 12.8 5.11984 13.3002C6.3179 13.9478 7.70561 14.1531 9.03984 13.8802ZM7.37485 6.00024H8.62485V5.00024H7.37485V6.00024ZM8.62485 7.00024V11.0002H7.37485V7.00024H8.62485Z" fill="#8C98A7"></path>
@@ -81,12 +81,10 @@
             </div>balloon_popup
         </button> 
                 
-        <button data-popup="fav_group_move_popup">관심종목 팝업 fav_group_move_popup</button>
-        <button data-popup="setting_pop02">투자매력도 정렬 팝업 setting_pop02</button>
+        <button class="pop_btn" data-popup="fav_group_move_popup">관심종목 팝업 fav_group_move_popup</button>
+        <button class="pop_btn" data-popup="setting_pop02">투자매력도 정렬 팝업 setting_pop02</button>
 
-        <div class="modalBox">
-
-            
+        <div class="modalBox">            
 
             <!-- 토스트 팝업 -->
             <!-- 두줄 이상인 경우 -->
@@ -134,6 +132,17 @@
                         </svg></i>
                     <span>영역 넘어갈경우 텍스트를 줄이는 방법으로영역 넘어갈경우 텍스트를 줄이는 방법으로영역 넘어갈경우 텍스트를 줄이는 방법으로영역 넘어갈경우 텍스트를 줄이는
                         방법으로</span>
+                </p>
+            </div>
+            <!-- //토스트 팝업 -->
+
+            <!-- 토스트 팝업 -->
+            <!-- 버튼 포함 된 경우 -->
+            <div class="toast_popup btn_type" style="bottom: 300px;">
+                <p class="txt">
+                    <span>영역 넘어갈경우 텍스트를 줄이는 방법으로영역 넘어갈경우 텍스트를 줄이는 방법으로영역 넘어갈경우 텍스트를 줄이는 방법으로영역 넘어갈경우 텍스트를 줄이는
+                        방법으로 <button data-popup="fav_reg_popup">변경</button> </span>
+                    <button class="toast_btn" data-popup="fav_reg_popup">변경</button>
                 </p>
             </div>
             <!-- //토스트 팝업 -->
@@ -661,7 +670,7 @@
         </div>
 
         <style>
-            button {
+            button.pop_btn {
                 position: relative;
                 display: inline-flex;
                 align-items: center;

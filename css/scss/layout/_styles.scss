@@ -3566,22 +3566,25 @@ table.tableRanking td {
 
 .globalStock .main_mid.event_recipe .tab_content .tableth_box table.tableRanking .title.t_short a {
 	width: 100%;
+	max-width: 160px;
+	min-width: 74px;
+	display: inline-block;
 
-	@media (min-width:401px) and (max-width: 640px) {
-		width: 140px;		
+	// 해상도에 따라 width를 유동적으로 조정
+	@media (max-width: 640px) {
+		max-width: 114px;		
+	}
+	@media (max-width: 410px) {
+		max-width: 77px;		
+	}
+	@media (max-width: 320px) {
+		max-width: 74px;		
 	}
 
-	@media (min-width:375px) and (max-width: 400px) {
-		width: 92px;		
-	}
-
-	@media (min-width:321px) and (max-width: 374px) {
-		width: 77px;		
-	}
-
-	@media (max-width: 320px) {		
-		width: 74px;		
-	}
+	// 너무 좁은 화면에서 글자가 잘리지 않도록 최소 너비 보장
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
 }
 
 .globalStock .main_mid.event_recipe .tab_content#tab4 .tableth_box table.tableRanking .title.t_short a {

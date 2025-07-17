@@ -4476,25 +4476,26 @@ table.tableRanking td {
 
 .globalStock .main_mid.event_recipe .tab_content .tableth_box table.tableRanking .title.t_short a {
   width: 100%;
+  max-width: 160px;
+  min-width: 74px;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
-@media (min-width: 401px) and (max-width: 640px) {
+@media (max-width: 640px) {
   .globalStock .main_mid.event_recipe .tab_content .tableth_box table.tableRanking .title.t_short a {
-    width: 140px;
+    max-width: 114px;
   }
 }
-@media (min-width: 375px) and (max-width: 400px) {
+@media (max-width: 410px) {
   .globalStock .main_mid.event_recipe .tab_content .tableth_box table.tableRanking .title.t_short a {
-    width: 92px;
-  }
-}
-@media (min-width: 321px) and (max-width: 374px) {
-  .globalStock .main_mid.event_recipe .tab_content .tableth_box table.tableRanking .title.t_short a {
-    width: 77px;
+    max-width: 77px;
   }
 }
 @media (max-width: 320px) {
   .globalStock .main_mid.event_recipe .tab_content .tableth_box table.tableRanking .title.t_short a {
-    width: 74px;
+    max-width: 74px;
   }
 }
 
@@ -22990,7 +22991,6 @@ table.tableRanking td {
   display: block;
   padding-left: 21px;
   color: #333;
-  display: block;
   margin-top: 10px;
   box-sizing: border-box;
   line-height: 1.67;
@@ -22999,6 +22999,15 @@ table.tableRanking td {
   word-break: break-all;
   word-wrap: break-word;
   visibility: hidden;
+}
+.globalStock .alarmArea .alarmList li span.sum .lock_icon {
+  display: inline-flex;
+  width: 9.64px;
+  height: 12.64px;
+  font-family: var(--Title, Pretendard);
+  font-size: var(--Size-md-16, 16px);
+  line-height: var(--Line-height-md, 22px);
+  margin-right: 3px;
 }
 .globalStock .alarmArea .alarmList li span.sum a {
   color: #333;
@@ -45009,6 +45018,13 @@ body.v_signalStreng {
   max-width: 84%;
   box-sizing: border-box;
 }
+.toast_popup.btn_type {
+  gap: 8px 16px;
+  padding: 10px 24px;
+}
+.toast_popup.btn_type .txt {
+  gap: 8px 16px;
+}
 .toast_popup:has(.txt:nth-child(2)) {
   gap: 4px 8px;
   border-radius: var(--Radius-r-04, 16px) !important;
@@ -45046,6 +45062,32 @@ body.v_signalStreng {
   display: inline-flex;
   align-items: center;
   flex: 0 0 auto;
+}
+.toast_popup .toast_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+  box-shadow: none;
+  outline: none;
+  cursor: pointer;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border-radius: var(--Radius-r-02, 8px);
+  background: var(--Background-primary-dark-background, #24282C);
+  padding: 10px 12px;
+  box-sizing: border-box;
+  color: #FFF;
+  font-family: var(--Body, Pretendard);
+  font-size: var(--Size-xs-13, 13px);
+  font-style: normal;
+  font-weight: var(--Weight-600, 600);
+  line-height: var(--Line-height-xs-13, 16px); /* 123.077% */
+  letter-spacing: var(--Tracking-md, -0.3px);
 }
 
 .balloon_popup {

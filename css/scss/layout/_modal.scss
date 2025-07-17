@@ -4647,6 +4647,15 @@
     max-width: 84%;    		
     box-sizing: border-box;    
 
+	// 버튼 타입인 토스트 팝업 스타일
+	&.btn_type {
+		gap: 8px 16px;
+		padding: 10px 24px;
+		.txt {
+			gap: 8px 16px;
+		}
+	}
+
 	// .txt가 2개 이상일 때 적용되는 스타일
 	&:has(.txt:nth-child(2)) {
 		gap: 4px 8px;
@@ -4687,6 +4696,30 @@
 			align-items: center;			
 			flex: 0 0 auto;
 		}
+	}
+	.toast_btn {				
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border: none;
+		background: none;
+		padding: 0;
+		margin: 0;
+		box-shadow: none;
+		outline: none;
+		cursor: pointer;
+		appearance: none;
+		border-radius: var(--Radius-r-02, 8px);
+		background: var(--Background-primary-dark-background, #24282C);
+		padding: 10px 12px;
+		box-sizing: border-box;
+		color: #FFF;
+		font-family: var(--Body, Pretendard);
+		font-size: var(--Size-xs-13, 13px);
+		font-style: normal;
+		font-weight: var(--Weight-600, 600);
+		line-height: var(--Line-height-xs-13, 16px); /* 123.077% */
+		letter-spacing: var(--Tracking-md, -0.3px);
 	}
 }
 
