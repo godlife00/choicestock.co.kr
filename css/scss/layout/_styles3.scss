@@ -10911,6 +10911,12 @@
 }
 
 .v_signalStreng.globalStock .sub_payment .serviceStep .step_box {
+	&.active {
+		border-color: var(--Font-primary-blue, #4168F6) !important;
+		background: #F5F6FC !important;
+		box-shadow: 0px 10px 10px 0px rgba(65, 104, 246, 0.08) !important;
+	}
+	position: relative;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
@@ -10927,6 +10933,24 @@
 	border: solid 1px #e0e4e9;
 	padding: 24px 20px;
 	box-sizing: border-box;
+
+	.tooltip_content {
+		@include tooltip_content;
+		left: 9px;
+		top: -15px;
+		padding: 8px 12px;
+
+		.tooltip_icon {
+			transform: scale(-1, -1);
+			right: auto;
+			top: auto;
+			left: 20px;
+			bottom: -13px;
+		}
+		@media (max-width: 374px) {
+			// top: 68px;
+		}
+	}
 }
 
 .v_signalStreng.globalStock .sub_payment .serviceStep .step_box.routine_pay {
