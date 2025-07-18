@@ -72,6 +72,9 @@ $(document).ready(function () {
             }
         },
 
+
+        
+
         // 모달 닫기
         close: function() {
             $('html, body').css("overflow", "");
