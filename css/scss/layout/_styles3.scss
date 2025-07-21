@@ -14304,6 +14304,117 @@ body.v_signalStreng {
 .v_signalStreng.globalStock #wrap .sub_search .sub_mid.tabs_area .alloca_wrap.alloca_wrap,
 .v_signalStreng.globalStock #wrap .sub_search .sub_mid.tabs_area .alloca_wrap.alloca_wrap.na_box {
 	margin-bottom: 0;
+	// 종목검색 - 배당탭
+	.alloca_score {		
+		padding: 0 20px;
+		.title {
+
+		}
+		.containercharm1 {
+
+		}
+	}
+	
+	.alloca_info {
+		margin-top: 32px;
+		padding: 0 20px;
+		.alloca_summary {
+			padding: 16px 30px;
+			border-radius: var(--Radius-r-04, 16px);
+			background: #F7F8FA;
+			.alloca_summary_list {
+				display: flex;
+				flex-direction: column;
+				flex-wrap: wrap;
+				justify-content: center;
+				gap: 8px 8px;
+				max-width: 340px;
+				margin: 0 auto;
+				.alloca_item {
+					position: relative;
+					display: flex;
+					align-items: center;
+					gap: 8px 8px;
+					padding-left: 7px;
+					color: var(--Font-primary-caption, #4E5866);
+					font-family: var(--Body, Pretendard);
+					font-size: var(--Size-sm, 14px);
+					font-style: normal;
+					font-weight: var(--Weight-400, 400);
+					line-height: var(--Line-height-lg, 21px); /* 150% */
+					letter-spacing: var(--Tracking-md, -0.3px);
+					&::before {
+						content: "";
+						display: inline-block;
+						position: absolute;
+						left: 0;
+						top: 9px;
+						width: 3px;
+						height: 3px;
+						border-radius: 100%;
+						background-color: var(--Gray-gray600, #6B7684);
+					}
+					strong, b {
+						margin-left: auto;
+						color: var(--Font-primary-body, #24282C);						
+						font-size: var(--Size-sm, 14px);						
+						font-weight: var(--Weight-500, 500);						
+						&.expected {
+							color: var(--Mint-mint600, #08BDAF);
+							text-align: right;
+							font-family: var(--Body, Pretendard);
+							font-size: var(--Size-md-16, 16px);
+							font-style: normal;
+							font-weight: var(--Weight-600, 600);
+							line-height: var(--Line-height-lg, 21px); /* 131.25% */
+							letter-spacing: var(--Tracking-md, -0.3px);							
+						}
+					}
+					
+				}
+			}			
+		}
+		.info {
+			display: flex;			
+			flex-direction: column;
+			flex-wrap: wrap;
+			gap: 12px 12px;
+			margin-top: 32px;
+			.txt {
+				color: var(--Font-secondary-body, #4E5866);
+				font-family: var(--Body, Pretendard);
+				font-size: var(--Size-md-16, 16px);
+				font-style: normal;
+				font-weight: var(--Weight-400, 400);
+				line-height: var(--Line-height-2xl, 26px);
+				letter-spacing: var(--Tracking-md, -0.3px);
+				word-break: break-all;
+				word-wrap: break-word;
+				b, strong {
+					color: var(--Font-primary-body, #24282C);			
+					font-weight: var(--Weight-700, 700);			
+				}
+			}
+		}
+		.term {
+			margin: 30px auto;
+			text-align: center;
+			color: var(--Font-secondary-body, #4E5866);
+			font-family: var(--Body, Pretendard);
+			font-size: var(--Size-md-16, 16px);
+			font-style: normal;
+			font-weight: var(--Weight-600, 600);				
+			line-height: var(--Line-height-2xl, 26px);
+			letter-spacing: var(--Tracking-md, -0.3px);
+			
+			b, strong {
+				color: var(--Font-primary-blue, #4168F6);
+				font-size: var(--Size-md-16, 16px);
+				font-weight: var(--Weight-600, 600);				
+			}
+		}
+	} 
+
 }
 
 .v_signalStreng.globalStock .containerArea_1 .highcharts-tick {

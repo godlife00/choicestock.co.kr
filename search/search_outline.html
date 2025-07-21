@@ -135,27 +135,49 @@
         </div>
         <!-- //무료 회원용 프로모션 배너 -->
         <br>
-        <div class="alarm_noti_banner" onclick="location.href ='/payment/choice'" style="cursor: pointer;">            
+        <!-- 유료 회원용 알림 배너: 매매신호 & 관심종목 알림 서비스 변경 안내 -->
+        <div id="alarm_noti_banner_1" class="alarm_noti_banner" onclick="location.href ='/payment/choice'" style="cursor: pointer; display:none;">            
             <div class="width_box">                
                 <div class="link_banner">                            
                     <b>애드가플래시 오픈 기념 <i>프리미엄 50% 할인</i></b>
                     내 관심종목으로 실시간 속보 받으세요.
                 </div>
-                <div class="banner_bg"><img src="../img/icon_ap_lightning.png" alt=""></div>
+                <div class="banner_bg"><img src="/img/icon_ap_lightning.png" alt=""></div>
             </div>
             <!-- //width_box -->            
         </div>
-        <br>
-        <div class="alarm_noti_banner" onclick="location.href ='/payment/choice'" style="cursor: pointer;">            
+        <div id="alarm_noti_banner_2" class="alarm_noti_banner" onclick="location.href ='/payment/choice'" style="cursor: pointer; display:none;">            
             <div class="width_box">                
                 <div class="link_banner">
                     <b>지금 가입하면 평생 <i>50% 할인</i></b>
                     엔비디아 실적 누구보다 빠르게! ‘애드가플래시’ 오픈
                 </div>
-                <div class="banner_bg"><img src="../img/icon_ap_dollar.png" alt=""></div>
+                <div class="banner_bg"><img src="/img/icon_ap_dollar.png" alt=""></div>
             </div>
             <!-- //width_box -->            
-        </div> 
+        </div>   
+        <script>
+        // 랜덤으로 하나의 배너만 노출 (같은 배너가 연속으로 나오지 않게 처리)
+        (function() {
+            var lastIdx = sessionStorage.getItem('last_alarm_noti_banner_idx');
+            var idx;
+            do {
+                idx = Math.floor(Math.random() * 2) + 1;
+            } while (lastIdx && idx == lastIdx);
+            document.getElementById('alarm_noti_banner_' + idx).style.display = 'block';
+            sessionStorage.setItem('last_alarm_noti_banner_idx', idx);
+        })();
+        </script>
+        <style>
+            @media (max-width: 400px) {
+                .alarm_noti_banner .width_box .link_banner {
+                    letter-spacing: -0.08rem !important
+                }
+                .alarm_noti_banner .width_box .link_banner b {
+                    letter-spacing: -0.1rem !important
+                }
+            }                    
+        </style>
 
         <div id="header" class="header">
 
