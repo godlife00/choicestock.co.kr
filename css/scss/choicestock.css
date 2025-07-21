@@ -2798,7 +2798,7 @@ table.tableRanking td {
   line-height: normal;
   color: var(--Font-primary-body, #24282C);
   font-family: var(--Body, Pretendard);
-  font-size: var(--Size-md-16, 16px);
+  font-size: 16px !important;
   font-style: normal;
   font-weight: 500;
   line-height: var(--Line-height-2xl, 26px); /* 162.5% */
@@ -2815,6 +2815,7 @@ table.tableRanking td {
   line-height: normal;
   box-sizing: border-box;
   color: #939393;
+  font-size: 16px !important;
   display: inline-flex;
   align-items: baseline;
   width: calc(100% - 80px);
@@ -12018,7 +12019,7 @@ table.tableRanking td {
   line-height: normal;
   color: var(--Font-primary-body, #24282C);
   font-family: var(--Body, Pretendard);
-  font-size: var(--Size-md-16, 16px);
+  font-size: 16px !important;
   font-style: normal;
   font-weight: 500;
   line-height: var(--Line-height-2xl, 26px); /* 162.5% */
@@ -12035,6 +12036,7 @@ table.tableRanking td {
   line-height: normal;
   box-sizing: border-box;
   color: #939393;
+  font-size: 16px !important;
   display: inline-flex;
   align-items: baseline;
   width: calc(100% - 80px);

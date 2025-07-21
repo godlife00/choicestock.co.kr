@@ -266,31 +266,32 @@
             line-height: normal;				
             color: var(--Font-primary-body, #24282C);
             font-family: var(--Body, Pretendard);
-            font-size: var(--Size-md-16, 16px);
+            font-size: 16px !important;
             font-style: normal;
             font-weight: 500;
             line-height: var(--Line-height-2xl, 26px); /* 162.5% */
-            letter-spacing: var(--Tracking-md, -0.3px);
-            
+            letter-spacing: var(--Tracking-md, -0.3px);            
             width: 65px;				
             display: inline-flex;
             align-items: baseline;
             gap: 5px 10px;
             overflow: hidden;
             text-overflow: ellipsis;
-            white-space: nowrap;
+            white-space: nowrap;            
+
         }
         
         li a .schList {
             line-height: normal;
             box-sizing: border-box;
-            color: #939393;
+            color: #939393;                    
+            font-size: 16px !important;
             display: inline-flex;
             align-items: baseline;
             width: calc(100% - 80px);
             overflow: hidden;
             text-overflow: ellipsis;
-            white-space: nowrap;
+            white-space: nowrap;           
         }
         
         li a .schList strong {
