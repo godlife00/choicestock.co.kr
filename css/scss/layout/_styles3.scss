@@ -11014,9 +11014,9 @@
 
 .v_signalStreng.globalStock .sub_payment .serviceStep .step_box .payRight .pay01 {
 	display: inline-block;
-	font-size: 0.75rem;
+	font-size: var(--Size-xs-13, 13px);
 	font-weight: 500;
-	color: #d3d3d3;
+	color: #B0B8C1;
 	text-decoration: line-through;
 	padding-left: 1px;
 }
