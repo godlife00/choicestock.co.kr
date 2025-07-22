@@ -555,11 +555,11 @@
 	padding: 48px 20px 0;
 	background: var(--Background-fill-background, #F1F4F6);
 
-	// 만약 같은 페이지에 .sub_recipe 존재할 경우, 푸터의 마진/패딩 조정
-	.sub_recipe + & {
+	// 만약 같은 페이지에 .recipe_footer 존재할 경우, 푸터의 마진/패딩 조정	
+	&.recipe_footer {
 		margin-top: 0px;
 		padding: 128px 20px 0;
-		background: var(--Background-fill-background, #F1F4F6);		
+		background: var(--Background-fill-background, #F1F4F6);				
 	}
 
 	// tmzmfls 
