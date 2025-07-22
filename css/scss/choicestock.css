@@ -2803,25 +2803,42 @@ table.tableRanking td {
   font-weight: 500;
   line-height: var(--Line-height-2xl, 26px); /* 162.5% */
   letter-spacing: var(--Tracking-md, -0.3px);
-  width: 65px;
+  width: 60px;
+  min-width: 48px;
+  max-width: 70px;
   display: inline-flex;
   align-items: baseline;
+  justify-content: flex-start;
   gap: 5px 10px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  flex-shrink: 0;
 }
 .globalStock .main_searching .sch_autocomplete ul li a .schList {
   line-height: normal;
   box-sizing: border-box;
   color: #939393;
   font-size: 16px !important;
-  display: inline-flex;
-  align-items: baseline;
-  width: calc(100% - 80px);
+  display: inline-block;
+  vertical-align: baseline;
+  max-width: calc(100% - 70px);
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  flex: 1 1 0;
+}
+@media (max-width: 480px) {
+  .globalStock .main_searching .sch_autocomplete ul li a .schCode {
+    width: 48px;
+    min-width: 40px;
+    max-width: 54px;
+    font-size: 15px !important;
+  }
+  .globalStock .main_searching .sch_autocomplete ul li a .schList {
+    font-size: 15px !important;
+    max-width: calc(100% - 54px);
+  }
 }
 .globalStock .main_searching .sch_autocomplete ul li a .schList strong {
   color: #939393;
@@ -12024,25 +12041,42 @@ table.tableRanking td {
   font-weight: 500;
   line-height: var(--Line-height-2xl, 26px); /* 162.5% */
   letter-spacing: var(--Tracking-md, -0.3px);
-  width: 65px;
+  width: 60px;
+  min-width: 48px;
+  max-width: 70px;
   display: inline-flex;
   align-items: baseline;
+  justify-content: flex-start;
   gap: 5px 10px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  flex-shrink: 0;
 }
 .globalStock .sub_search .searching .sch_autocomplete ul li a .schList {
   line-height: normal;
   box-sizing: border-box;
   color: #939393;
   font-size: 16px !important;
-  display: inline-flex;
-  align-items: baseline;
-  width: calc(100% - 80px);
+  display: inline-block;
+  vertical-align: baseline;
+  max-width: calc(100% - 70px);
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  flex: 1 1 0;
+}
+@media (max-width: 480px) {
+  .globalStock .sub_search .searching .sch_autocomplete ul li a .schCode {
+    width: 48px;
+    min-width: 40px;
+    max-width: 54px;
+    font-size: 15px !important;
+  }
+  .globalStock .sub_search .searching .sch_autocomplete ul li a .schList {
+    font-size: 15px !important;
+    max-width: calc(100% - 54px);
+  }
 }
 .globalStock .sub_search .searching .sch_autocomplete ul li a .schList strong {
   color: #939393;

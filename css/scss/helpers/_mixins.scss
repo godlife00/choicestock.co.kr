@@ -263,35 +263,52 @@
         }
         
         li a .schCode {
-            line-height: normal;				
+            line-height: normal;
             color: var(--Font-primary-body, #24282C);
             font-family: var(--Body, Pretendard);
             font-size: 16px !important;
             font-style: normal;
             font-weight: 500;
             line-height: var(--Line-height-2xl, 26px); /* 162.5% */
-            letter-spacing: var(--Tracking-md, -0.3px);            
-            width: 65px;				
+            letter-spacing: var(--Tracking-md, -0.3px);
+            width: 60px; // 모바일 대응을 위해 약간 줄임
+            min-width: 48px;
+            max-width: 70px;
             display: inline-flex;
             align-items: baseline;
+            justify-content: flex-start;
             gap: 5px 10px;
             overflow: hidden;
             text-overflow: ellipsis;
-            white-space: nowrap;            
-
+            white-space: nowrap;
+            flex-shrink: 0; // 고정폭 유지
         }
-        
+
         li a .schList {
             line-height: normal;
             box-sizing: border-box;
-            color: #939393;                    
+            color: #939393;
             font-size: 16px !important;
-            display: inline-flex;
-            align-items: baseline;
-            width: calc(100% - 80px);
+            display: inline-block;
+            vertical-align: baseline;
+            max-width: calc(100% - 70px); // schCode 영역 제외
             overflow: hidden;
             text-overflow: ellipsis;
-            white-space: nowrap;           
+            white-space: nowrap;
+            flex: 1 1 0;
+        }
+
+        @media (max-width: 480px) {
+            li a .schCode {
+                width: 48px;
+                min-width: 40px;
+                max-width: 54px;
+                font-size: 15px !important;
+            }
+            li a .schList {
+                font-size: 15px !important;
+                max-width: calc(100% - 54px);
+            }
         }
         
         li a .schList strong {
