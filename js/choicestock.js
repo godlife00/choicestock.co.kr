@@ -2852,3 +2852,11 @@ if (document.readyState === 'loading') {
 } else {
     initializeTagListDisplay();
 }
+
+// 접속한 디바이스 해상도를 알림창으로 띄워주는 코드
+// (function() {
+//     var width = window.screen.width;
+//     var height = window.screen.height;
+//     alert(width + ' x ' + height);
+// })();
+
