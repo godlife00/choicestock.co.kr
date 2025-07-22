@@ -270,23 +270,34 @@
             font-style: normal;
             font-weight: 500;
             line-height: var(--Line-height-2xl, 26px); /* 162.5% */
+<<<<<<< HEAD
             letter-spacing: var(--Tracking-md, -0.3px);
             width: 60px; // 모바일 대응을 위해 약간 줄임
             min-width: 48px;
             max-width: 70px;
+=======
+            letter-spacing: var(--Tracking-md, -0.3px);            
+            width: 65px;				
+>>>>>>> 검색-오류-수정
             display: inline-flex;
             align-items: baseline;
             justify-content: flex-start;
             gap: 5px 10px;
             overflow: hidden;
             text-overflow: ellipsis;
+<<<<<<< HEAD
             white-space: nowrap;
             flex-shrink: 0; // 고정폭 유지
+=======
+            white-space: nowrap;            
+
+>>>>>>> 검색-오류-수정
         }
 
         li a .schList {
             line-height: normal;
             box-sizing: border-box;
+<<<<<<< HEAD
             color: #939393;
             font-size: 16px !important;
             display: inline-block;
@@ -309,6 +320,16 @@
                 font-size: 15px !important;
                 max-width: calc(100% - 54px);
             }
+=======
+            color: #939393;                    
+            font-size: 16px !important;
+            display: inline-flex;
+            align-items: baseline;
+            width: calc(100% - 80px);
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;           
+>>>>>>> 검색-오류-수정
         }
         
         li a .schList strong {

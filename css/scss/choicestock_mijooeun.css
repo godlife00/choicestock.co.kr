@@ -2820,9 +2820,15 @@ table.tableRanking td {
   box-sizing: border-box;
   color: #939393;
   font-size: 16px !important;
+<<<<<<< HEAD
   display: inline-block;
   vertical-align: baseline;
   max-width: calc(100% - 70px);
+=======
+  display: inline-flex;
+  align-items: baseline;
+  width: calc(100% - 80px);
+>>>>>>> 검색-오류-수정
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -12058,9 +12064,15 @@ table.tableRanking td {
   box-sizing: border-box;
   color: #939393;
   font-size: 16px !important;
+<<<<<<< HEAD
   display: inline-block;
   vertical-align: baseline;
   max-width: calc(100% - 70px);
+=======
+  display: inline-flex;
+  align-items: baseline;
+  width: calc(100% - 80px);
+>>>>>>> 검색-오류-수정
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
