@@ -72,9 +72,6 @@ $(document).ready(function () {
             }
         },
 
-
-        
-
         // 모달 닫기
         close: function() {
             $('html, body').css("overflow", "");
@@ -2475,13 +2472,22 @@ $(document).ready(function () {
 
     // 결제 취소, Lottie 애니메이션 로드 및 재생
     if ($('.lottie-container').length) {        
-        lottie.loadAnimation({
+        var animation = lottie.loadAnimation({
             container: document.getElementById('lottie-container'), // 애니메이션을 넣을 컨테이너
             renderer: 'svg',
             loop: true,
             autoplay: true,
             path: '/js/payment_loading.json' // 사용하고자 하는 Lottie JSON 파일 경로
         });
+
+        // 파일을 못 찾거나 로딩 실패 시 예외 처리
+        animation.addEventListener('data_failed', function() {
+            var lottieEl = document.getElementById('lottie-container');
+            if (lottieEl) {
+                lottieEl.innerHTML = '<span style="color:#888;font-size:16px;">로딩 애니메이션을 불러올 수 없습니다.</span>';
+            }
+        });
+
         const loadingText = document.getElementById('loadingText');
         const loadingTextCancel = document.getElementById('loadingTextCancel');
         const loadingTextCardChange = document.getElementById('loadingTextCardChange');
@@ -2491,14 +2497,18 @@ $(document).ready(function () {
             dotCount = (dotCount + 1) % 6;
             const dots = '.'.repeat(dotCount);
             
-            // 결제 처리중 텍스트 업데이트
-            loadingText.innerHTML = `<b>결제 처리중 입니다${dots}</b>`;
-            
-            // 구독취소 처리중 텍스트 업데이트
-            loadingTextCancel.innerHTML = `<b>구독취소 처리중 입니다${dots}</b>`;
-
-            // 카드변경 처리중 텍스트 업데이트
-            loadingTextCardChange.innerHTML = `<b>카드변경 처리중 입니다${dots}</b>`;
+            // 결제 처리중 텍스트 업데이트 (존재할 때만)
+            if (loadingText) {
+                loadingText.innerHTML = `<b>결제 처리중 입니다${dots}</b>`;
+            }
+            // 구독취소 처리중 텍스트 업데이트 (존재할 때만)
+            if (loadingTextCancel) {
+                loadingTextCancel.innerHTML = `<b>구독취소 처리중 입니다${dots}</b>`;
+            }
+            // 카드변경 처리중 텍스트 업데이트 (존재할 때만)
+            if (loadingTextCardChange) {
+                loadingTextCardChange.innerHTML = `<b>카드변경 처리중 입니다${dots}</b>`;
+            }
         }, 500); // 500ms마다 업데이트 (0.5초)
 
     }          
@@ -2851,12 +2861,4 @@ if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', initializeTagListDisplay);
 } else {
     initializeTagListDisplay();
-}
-
-// 접속한 디바이스 해상도를 알림창으로 띄워주는 코드
-// (function() {
-//     var width = window.screen.width;
-//     var height = window.screen.height;
-//     alert(width + ' x ' + height);
-// })();
-
+}   
