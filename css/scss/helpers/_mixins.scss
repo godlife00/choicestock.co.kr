@@ -780,3 +780,14 @@
     }
 
 }
+hr {
+    all: unset;
+    display: block;
+    width: 100%;
+    height: 0;
+    border: 0;
+    border-top: 8px solid var(--Background-fill-background, #F1F4F6);
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}

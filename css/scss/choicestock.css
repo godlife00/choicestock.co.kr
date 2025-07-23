@@ -9,6 +9,18 @@
   --Background-fill-background: #F7F8FA;
 }
 
+hr {
+  all: unset;
+  display: block;
+  width: 100%;
+  height: 0;
+  border: 0;
+  border-top: 8px solid var(--Background-fill-background, #F1F4F6);
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 .v_signalStreng.globalStock #header {
   width: 100%;
   background-color: #fff;
@@ -17362,69 +17374,6 @@ table.tableRanking td {
 
 .globalStock .sub_search .sub_mid.tabs_area .alloca_info .tableRanking.table_alloca td.decrease {
   color: #0094FF;
-}
-
-.globalStock .sub_search .sub_mid.tabs_area .alloca_info .allocachart_area {
-  margin-top: 30px;
-  padding: 0 15px;
-}
-
-.globalStock .sub_search .sub_mid.tabs_area .alloca_info .allocachart_area .title {
-  border-bottom: 1px solid #939393;
-  color: #333;
-  margin-top: 15px;
-  padding-bottom: 15px;
-  font-size: 0.9375rem;
-}
-
-.globalStock .sub_search .sub_mid.tabs_area .alloca_info .allocachart_area .title .unit {
-  float: right;
-  color: #939393;
-  font-size: 0.75rem;
-  font-weight: normal;
-}
-
-.globalStock .sub_search .sub_mid.tabs_area .alloca_info .allocachart_area .containeralloca1 {
-  margin: 10px 0;
-  height: 200px;
-}
-.globalStock .sub_search .sub_mid.tabs_area .alloca_info .allocachart_area .containeralloca1 rect.highcharts-point.point_color {
-  fill: #EDEEEF !important;
-  background: #EDEEEF !important;
-}
-
-.globalStock .sub_search .sub_mid.tabs_area .alloca_info .allocachart_area .containeralloca1 .highcharts-data-label:nth-child(8),
-.globalStock .sub_search .sub_mid.tabs_area .alloca_info .allocachart_area .containeralloca1 .highcharts-data-label:nth-child(9),
-.globalStock .sub_search .sub_mid.tabs_area .alloca_info .allocachart_area .containeralloca1 .highcharts-data-label:nth-child(10) {
-  opacity: 1;
-}
-
-.globalStock .sub_search .sub_mid.tabs_area .alloca_info .allocachart_area .containeralloca1 .highcharts-data-label:nth-child(9) {
-  position: relative;
-  top: -10px;
-}
-
-.globalStock .sub_search .sub_mid.tabs_area .alloca_info .allocachart_area .chart_guide {
-  position: relative;
-  top: -12px;
-  font-size: 0.75rem;
-  line-height: 1.3;
-  font-weight: 400;
-  color: #969ea7;
-  padding: 0 16px 10px 24px;
-  word-break: break-all;
-  word-wrap: break-word;
-}
-.globalStock .sub_search .sub_mid.tabs_area .alloca_info .allocachart_area .chart_guide::before {
-  content: "";
-  position: absolute;
-  left: 12px;
-  top: 5px;
-  display: inline-block;
-  width: 4px;
-  height: 4px;
-  border-radius: 50%;
-  background: #c7cbe9;
 }
 
 .globalStock .sub_search .alloca_wrap.na_box .alloca_star {
@@ -36966,37 +36915,149 @@ body.v_signalStreng {
   margin-top: 19px;
 }
 
-.v_signalStreng.globalStock #wrap .sub_search .sub_mid.tabs_area .alloca_wrap.alloca_wrap,
-.v_signalStreng.globalStock #wrap .sub_search .sub_mid.tabs_area .alloca_wrap.alloca_wrap.na_box {
+.v_signalStreng.globalStock #wrap .sub_search .sub_mid.tabs_area .alloca_wrap.alloca_wrap {
   margin-bottom: 0;
 }
-.v_signalStreng.globalStock #wrap .sub_search .sub_mid.tabs_area .alloca_wrap.alloca_wrap .alloca_score,
-.v_signalStreng.globalStock #wrap .sub_search .sub_mid.tabs_area .alloca_wrap.alloca_wrap.na_box .alloca_score {
+.v_signalStreng.globalStock #wrap .sub_search .sub_mid.tabs_area .alloca_wrap.alloca_wrap .no_data {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 9px 9px;
+  min-height: 160px;
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+.v_signalStreng.globalStock #wrap .sub_search .sub_mid.tabs_area .alloca_wrap.alloca_wrap .no_data .txt {
+  color: var(--Font-secondary-body, #4E5866);
+  font-family: var(--Body, Pretendard);
+  font-size: var(--Size-md-15, 15px);
+  font-style: normal;
+  font-weight: var(--Weight-400, 400);
+  line-height: var(--Line-height-xl-01, 24px); /* 160% */
+  letter-spacing: var(--Tracking-md, -0.3px);
+}
+.v_signalStreng.globalStock #wrap .sub_search .sub_mid.tabs_area .alloca_wrap.alloca_wrap .alloca_score {
   padding: 0 20px;
 }
-.v_signalStreng.globalStock #wrap .sub_search .sub_mid.tabs_area .alloca_wrap.alloca_wrap .alloca_info,
-.v_signalStreng.globalStock #wrap .sub_search .sub_mid.tabs_area .alloca_wrap.alloca_wrap.na_box .alloca_info {
-  margin-top: 32px;
-  padding: 0 20px;
+.v_signalStreng.globalStock #wrap .sub_search .sub_mid.tabs_area .alloca_wrap.alloca_wrap .alloca_score .title {
+  color: var(--Font-primary-title, #1F242B);
+  font-family: var(--Title, Pretendard);
+  font-size: var(--Size-2xl, 20px);
+  font-style: normal;
+  font-weight: var(--Weight-600, 600);
+  line-height: var(--Line-height-2xl, 26px); /* 130% */
+  letter-spacing: var(--Tracking-md, -0.3px);
 }
-.v_signalStreng.globalStock #wrap .sub_search .sub_mid.tabs_area .alloca_wrap.alloca_wrap .alloca_info .alloca_summary,
-.v_signalStreng.globalStock #wrap .sub_search .sub_mid.tabs_area .alloca_wrap.alloca_wrap.na_box .alloca_info .alloca_summary {
-  padding: 16px 30px;
+.v_signalStreng.globalStock #wrap .sub_search .sub_mid.tabs_area .alloca_wrap.alloca_wrap .containercharm1 {
+  width: 100%;
+  margin: 16px auto 0;
+  height: 260px;
+}
+.v_signalStreng.globalStock #wrap .sub_search .sub_mid.tabs_area .alloca_wrap.alloca_wrap .containercharm1 .highcharts-axis-labels.highcharts-radial-axis-labels span {
+  color: var(--Gray-gray600, #6B7684);
+  font-family: Pretendard;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.v_signalStreng.globalStock #wrap .sub_search .sub_mid.tabs_area .alloca_wrap.alloca_wrap .containercharm1 .highcharts-axis-labels.highcharts-radial-axis-labels strong {
+  display: inline-block;
+  color: var(--Gray-gray600, #6B7684);
+  font-family: Pretendard;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.v_signalStreng.globalStock #wrap .sub_search .sub_mid.tabs_area .alloca_wrap.alloca_wrap .alloca_banner_bg {
+  margin: 32px 20px 0;
+  border-radius: 16px;
+  background: var(--Mint-mint50, #EAFAF9);
+}
+.v_signalStreng.globalStock #wrap .sub_search .sub_mid.tabs_area .alloca_wrap.alloca_wrap .alloca_banner_bg .alloca_banner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 4px 12px;
+  box-sizing: border-box;
+  padding: 21px 20px;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+@media (max-width: 374px) {
+  .v_signalStreng.globalStock #wrap .sub_search .sub_mid.tabs_area .alloca_wrap.alloca_wrap .alloca_banner_bg .alloca_banner {
+    padding: 23px 16px;
+  }
+}
+.v_signalStreng.globalStock #wrap .sub_search .sub_mid.tabs_area .alloca_wrap.alloca_wrap .alloca_banner_bg .alloca_banner .link_banner {
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: left;
+  display: inline-block;
+  box-sizing: border-box;
+  color: var(--Font-secondary-caption, #6B7684);
+  font-family: var(--Body, Pretendard);
+  font-size: var(--Size-xs-13, 13px);
+  font-style: normal;
+  font-weight: var(--Weight-400, 400);
+  line-height: var(--Line-height-xs-13, 16px); /* 123.077% */
+  letter-spacing: var(--Tracking-md, -0.3px);
+}
+.v_signalStreng.globalStock #wrap .sub_search .sub_mid.tabs_area .alloca_wrap.alloca_wrap .alloca_banner_bg .alloca_banner .link_banner b {
+  color: var(--Font-secondary-title, #24282C);
+  font-weight: var(--Weight-600, 600);
+}
+.v_signalStreng.globalStock #wrap .sub_search .sub_mid.tabs_area .alloca_wrap.alloca_wrap .alloca_banner_bg .alloca_banner .link_banner span {
+  display: block;
+  padding-bottom: 4px;
+  color: var(--Font-primary-title, #1F242B);
+  font-family: var(--Title, Pretendard);
+  font-size: var(--Size-md-16, 16px);
+  font-style: normal;
+  font-weight: var(--Weight-600, 600);
+  line-height: var(--Line-height-md, 22px); /* 137.5% */
+  letter-spacing: var(--Tracking-md, -0.3px);
+}
+.v_signalStreng.globalStock #wrap .sub_search .sub_mid.tabs_area .alloca_wrap.alloca_wrap .alloca_banner_bg .alloca_banner .link_banner span b {
+  color: var(--Mint-mint600, #08BDAF);
+  font-size: var(--Size-md-16, 16px);
+  font-weight: var(--Weight-600, 600);
+}
+.v_signalStreng.globalStock #wrap .sub_search .sub_mid.tabs_area .alloca_wrap.alloca_wrap .alloca_banner_bg .alloca_banner .banner_bg {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 80px;
+  height: 80px;
+  background-color: greenyellow;
+  background-size: 80px 80px;
+}
+.v_signalStreng.globalStock #wrap .sub_search .sub_mid.tabs_area .alloca_wrap.alloca_wrap .alloca_info {
+  margin-top: 8px;
+}
+.v_signalStreng.globalStock #wrap .sub_search .sub_mid.tabs_area .alloca_wrap.alloca_wrap .alloca_info .alloca_summary {
+  margin: 0 20px;
+  padding: 21px 20px;
   border-radius: var(--Radius-r-04, 16px);
   background: #F7F8FA;
 }
-.v_signalStreng.globalStock #wrap .sub_search .sub_mid.tabs_area .alloca_wrap.alloca_wrap .alloca_info .alloca_summary .alloca_summary_list,
-.v_signalStreng.globalStock #wrap .sub_search .sub_mid.tabs_area .alloca_wrap.alloca_wrap.na_box .alloca_info .alloca_summary .alloca_summary_list {
+.v_signalStreng.globalStock #wrap .sub_search .sub_mid.tabs_area .alloca_wrap.alloca_wrap .alloca_info .alloca_summary .alloca_summary_list {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   gap: 8px 8px;
-  max-width: 340px;
   margin: 0 auto;
 }
-.v_signalStreng.globalStock #wrap .sub_search .sub_mid.tabs_area .alloca_wrap.alloca_wrap .alloca_info .alloca_summary .alloca_summary_list .alloca_item,
-.v_signalStreng.globalStock #wrap .sub_search .sub_mid.tabs_area .alloca_wrap.alloca_wrap.na_box .alloca_info .alloca_summary .alloca_summary_list .alloca_item {
+.v_signalStreng.globalStock #wrap .sub_search .sub_mid.tabs_area .alloca_wrap.alloca_wrap .alloca_info .alloca_summary .alloca_summary_list .alloca_item {
   position: relative;
   display: flex;
   align-items: center;
@@ -37010,8 +37071,7 @@ body.v_signalStreng {
   line-height: var(--Line-height-lg, 21px); /* 150% */
   letter-spacing: var(--Tracking-md, -0.3px);
 }
-.v_signalStreng.globalStock #wrap .sub_search .sub_mid.tabs_area .alloca_wrap.alloca_wrap .alloca_info .alloca_summary .alloca_summary_list .alloca_item::before,
-.v_signalStreng.globalStock #wrap .sub_search .sub_mid.tabs_area .alloca_wrap.alloca_wrap.na_box .alloca_info .alloca_summary .alloca_summary_list .alloca_item::before {
+.v_signalStreng.globalStock #wrap .sub_search .sub_mid.tabs_area .alloca_wrap.alloca_wrap .alloca_info .alloca_summary .alloca_summary_list .alloca_item::before {
   content: "";
   display: inline-block;
   position: absolute;
@@ -37022,17 +37082,13 @@ body.v_signalStreng {
   border-radius: 100%;
   background-color: var(--Gray-gray600, #6B7684);
 }
-.v_signalStreng.globalStock #wrap .sub_search .sub_mid.tabs_area .alloca_wrap.alloca_wrap .alloca_info .alloca_summary .alloca_summary_list .alloca_item strong, .v_signalStreng.globalStock #wrap .sub_search .sub_mid.tabs_area .alloca_wrap.alloca_wrap .alloca_info .alloca_summary .alloca_summary_list .alloca_item b,
-.v_signalStreng.globalStock #wrap .sub_search .sub_mid.tabs_area .alloca_wrap.alloca_wrap.na_box .alloca_info .alloca_summary .alloca_summary_list .alloca_item strong,
-.v_signalStreng.globalStock #wrap .sub_search .sub_mid.tabs_area .alloca_wrap.alloca_wrap.na_box .alloca_info .alloca_summary .alloca_summary_list .alloca_item b {
+.v_signalStreng.globalStock #wrap .sub_search .sub_mid.tabs_area .alloca_wrap.alloca_wrap .alloca_info .alloca_summary .alloca_summary_list .alloca_item strong, .v_signalStreng.globalStock #wrap .sub_search .sub_mid.tabs_area .alloca_wrap.alloca_wrap .alloca_info .alloca_summary .alloca_summary_list .alloca_item b {
   margin-left: auto;
   color: var(--Font-primary-body, #24282C);
   font-size: var(--Size-sm, 14px);
   font-weight: var(--Weight-500, 500);
 }
-.v_signalStreng.globalStock #wrap .sub_search .sub_mid.tabs_area .alloca_wrap.alloca_wrap .alloca_info .alloca_summary .alloca_summary_list .alloca_item strong.expected, .v_signalStreng.globalStock #wrap .sub_search .sub_mid.tabs_area .alloca_wrap.alloca_wrap .alloca_info .alloca_summary .alloca_summary_list .alloca_item b.expected,
-.v_signalStreng.globalStock #wrap .sub_search .sub_mid.tabs_area .alloca_wrap.alloca_wrap.na_box .alloca_info .alloca_summary .alloca_summary_list .alloca_item strong.expected,
-.v_signalStreng.globalStock #wrap .sub_search .sub_mid.tabs_area .alloca_wrap.alloca_wrap.na_box .alloca_info .alloca_summary .alloca_summary_list .alloca_item b.expected {
+.v_signalStreng.globalStock #wrap .sub_search .sub_mid.tabs_area .alloca_wrap.alloca_wrap .alloca_info .alloca_summary .alloca_summary_list .alloca_item strong.expected, .v_signalStreng.globalStock #wrap .sub_search .sub_mid.tabs_area .alloca_wrap.alloca_wrap .alloca_info .alloca_summary .alloca_summary_list .alloca_item b.expected {
   color: var(--Mint-mint600, #08BDAF);
   text-align: right;
   font-family: var(--Body, Pretendard);
@@ -37042,16 +37098,15 @@ body.v_signalStreng {
   line-height: var(--Line-height-lg, 21px); /* 131.25% */
   letter-spacing: var(--Tracking-md, -0.3px);
 }
-.v_signalStreng.globalStock #wrap .sub_search .sub_mid.tabs_area .alloca_wrap.alloca_wrap .alloca_info .info,
-.v_signalStreng.globalStock #wrap .sub_search .sub_mid.tabs_area .alloca_wrap.alloca_wrap.na_box .alloca_info .info {
+.v_signalStreng.globalStock #wrap .sub_search .sub_mid.tabs_area .alloca_wrap.alloca_wrap .alloca_info .info {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   gap: 12px 12px;
   margin-top: 32px;
+  padding: 0 20px;
 }
-.v_signalStreng.globalStock #wrap .sub_search .sub_mid.tabs_area .alloca_wrap.alloca_wrap .alloca_info .info .txt,
-.v_signalStreng.globalStock #wrap .sub_search .sub_mid.tabs_area .alloca_wrap.alloca_wrap.na_box .alloca_info .info .txt {
+.v_signalStreng.globalStock #wrap .sub_search .sub_mid.tabs_area .alloca_wrap.alloca_wrap .alloca_info .info .txt {
   color: var(--Font-secondary-body, #4E5866);
   font-family: var(--Body, Pretendard);
   font-size: var(--Size-md-16, 16px);
@@ -37062,14 +37117,11 @@ body.v_signalStreng {
   word-break: break-all;
   word-wrap: break-word;
 }
-.v_signalStreng.globalStock #wrap .sub_search .sub_mid.tabs_area .alloca_wrap.alloca_wrap .alloca_info .info .txt b, .v_signalStreng.globalStock #wrap .sub_search .sub_mid.tabs_area .alloca_wrap.alloca_wrap .alloca_info .info .txt strong,
-.v_signalStreng.globalStock #wrap .sub_search .sub_mid.tabs_area .alloca_wrap.alloca_wrap.na_box .alloca_info .info .txt b,
-.v_signalStreng.globalStock #wrap .sub_search .sub_mid.tabs_area .alloca_wrap.alloca_wrap.na_box .alloca_info .info .txt strong {
+.v_signalStreng.globalStock #wrap .sub_search .sub_mid.tabs_area .alloca_wrap.alloca_wrap .alloca_info .info .txt b, .v_signalStreng.globalStock #wrap .sub_search .sub_mid.tabs_area .alloca_wrap.alloca_wrap .alloca_info .info .txt strong {
   color: var(--Font-primary-body, #24282C);
   font-weight: var(--Weight-700, 700);
 }
-.v_signalStreng.globalStock #wrap .sub_search .sub_mid.tabs_area .alloca_wrap.alloca_wrap .alloca_info .term,
-.v_signalStreng.globalStock #wrap .sub_search .sub_mid.tabs_area .alloca_wrap.alloca_wrap.na_box .alloca_info .term {
+.v_signalStreng.globalStock #wrap .sub_search .sub_mid.tabs_area .alloca_wrap.alloca_wrap .alloca_info .term {
   margin: 30px auto;
   text-align: center;
   color: var(--Font-secondary-body, #4E5866);
@@ -37080,12 +37132,113 @@ body.v_signalStreng {
   line-height: var(--Line-height-2xl, 26px);
   letter-spacing: var(--Tracking-md, -0.3px);
 }
-.v_signalStreng.globalStock #wrap .sub_search .sub_mid.tabs_area .alloca_wrap.alloca_wrap .alloca_info .term b, .v_signalStreng.globalStock #wrap .sub_search .sub_mid.tabs_area .alloca_wrap.alloca_wrap .alloca_info .term strong,
-.v_signalStreng.globalStock #wrap .sub_search .sub_mid.tabs_area .alloca_wrap.alloca_wrap.na_box .alloca_info .term b,
-.v_signalStreng.globalStock #wrap .sub_search .sub_mid.tabs_area .alloca_wrap.alloca_wrap.na_box .alloca_info .term strong {
+.v_signalStreng.globalStock #wrap .sub_search .sub_mid.tabs_area .alloca_wrap.alloca_wrap .alloca_info .term b, .v_signalStreng.globalStock #wrap .sub_search .sub_mid.tabs_area .alloca_wrap.alloca_wrap .alloca_info .term strong {
   color: var(--Font-primary-blue, #4168F6);
   font-size: var(--Size-md-16, 16px);
   font-weight: var(--Weight-600, 600);
+}
+.v_signalStreng.globalStock #wrap .sub_search .sub_mid.tabs_area .alloca_wrap.alloca_wrap .alloca_info .allocachart_area {
+  margin-top: 40px;
+  padding: 32px 0 0;
+  border-top: 8px solid var(--Background-fill-background, #F1F4F6);
+}
+.v_signalStreng.globalStock #wrap .sub_search .sub_mid.tabs_area .alloca_wrap.alloca_wrap .alloca_info .allocachart_area .title {
+  display: flex;
+  align-items: center;
+  gap: 8px 8px;
+  padding: 0 20px 16px;
+  color: var(--Font-secondary-title, #24282C);
+  font-family: var(--Title, Pretendard);
+  font-size: var(--Size-2xl, 20px);
+  font-style: normal;
+  font-weight: var(--Weight-600, 600);
+  line-height: var(--Line-height-2xl, 26px); /* 130% */
+  letter-spacing: var(--Tracking-md, -0.3px);
+}
+.v_signalStreng.globalStock #wrap .sub_search .sub_mid.tabs_area .alloca_wrap.alloca_wrap .alloca_info .allocachart_area .title .unit {
+  margin-left: auto;
+  color: #8C98A7;
+  font-family: var(--Body, Pretendard);
+  font-size: var(--Size-xs-13, 13px);
+  font-style: normal;
+  font-weight: var(--Weight-400, 400);
+  line-height: var(--Line-height-xs-13, 16px); /* 123.077% */
+  letter-spacing: var(--Tracking-md, -0.3px);
+}
+.v_signalStreng.globalStock #wrap .sub_search .sub_mid.tabs_area .alloca_wrap.alloca_wrap .alloca_info .allocachart_area .containeralloca1 {
+  border-top: 1px solid var(--Border-secondary-border, #F1F4F6);
+  height: 200px;
+  margin: 0 20px;
+  padding-top: 15px;
+}
+.v_signalStreng.globalStock #wrap .sub_search .sub_mid.tabs_area .alloca_wrap.alloca_wrap .alloca_info .allocachart_area .containeralloca1 .highcharts-data-labels .highcharts-label text {
+  font-size: 12px !important;
+  color: #6A727B !important;
+  fill: #6A727B !important;
+  text-shadow: none;
+  stroke-width: 0;
+  font-weight: 400 !important;
+}
+.v_signalStreng.globalStock #wrap .sub_search .sub_mid.tabs_area .alloca_wrap.alloca_wrap .alloca_info .allocachart_area .containeralloca1 .highcharts-label.highcharts-tooltip span {
+  line-height: 1.2;
+}
+.v_signalStreng.globalStock #wrap .sub_search .sub_mid.tabs_area .alloca_wrap.alloca_wrap .alloca_info .allocachart_area .containeralloca1 .highcharts-xaxis .highcharts-axis-line {
+  stroke: #DADCE0;
+}
+.v_signalStreng.globalStock #wrap .sub_search .sub_mid.tabs_area .alloca_wrap.alloca_wrap .alloca_info .allocachart_area .containeralloca1 rect.highcharts-point {
+  stroke-width: 0;
+}
+.v_signalStreng.globalStock #wrap .sub_search .sub_mid.tabs_area .alloca_wrap.alloca_wrap .alloca_info .allocachart_area .containeralloca1 .highcharts-axis-labels text {
+  font-size: 12px !important;
+  color: #8C98A7 !important;
+  fill: #8C98A7 !important;
+  font-weight: 500 !important;
+}
+.v_signalStreng.globalStock #wrap .sub_search .sub_mid.tabs_area .alloca_wrap.alloca_wrap .alloca_info .allocachart_area .containeralloca1#alloc_line_chart1 rect.highcharts-point {
+  fill: #4168F6 !important;
+  background: #4168F6 !important;
+}
+.v_signalStreng.globalStock #wrap .sub_search .sub_mid.tabs_area .alloca_wrap.alloca_wrap .alloca_info .allocachart_area .containeralloca1#alloc_line_chart1 rect.highcharts-point.point_color {
+  fill: #B0B8C1 !important;
+  background: #B0B8C1 !important;
+}
+.v_signalStreng.globalStock #wrap .sub_search .sub_mid.tabs_area .alloca_wrap.alloca_wrap .alloca_info .allocachart_area .containeralloca1#alloc_line_chart2 rect.highcharts-point {
+  fill: #6B7684 !important;
+  background: #6B7684 !important;
+}
+.v_signalStreng.globalStock #wrap .sub_search .sub_mid.tabs_area .alloca_wrap.alloca_wrap .alloca_info .allocachart_area .containeralloca1#alloc_line_chart2 rect.highcharts-point.point_color {
+  fill: #B0B8C1 !important;
+  background: #B0B8C1 !important;
+}
+.v_signalStreng.globalStock #wrap .sub_search .sub_mid.tabs_area .alloca_wrap.alloca_wrap .alloca_info .allocachart_area .containeralloca1#alloc_line_chart3 rect.highcharts-point {
+  fill: #4168F6 !important;
+  background: #4168F6 !important;
+}
+.v_signalStreng.globalStock #wrap .sub_search .sub_mid.tabs_area .alloca_wrap.alloca_wrap .alloca_info .allocachart_area .containeralloca1#alloc_line_chart3 rect.highcharts-point.point_color {
+  fill: #B0B8C1 !important;
+  background: #B0B8C1 !important;
+}
+.v_signalStreng.globalStock #wrap .sub_search .sub_mid.tabs_area .alloca_wrap.alloca_wrap .alloca_info .allocachart_area .chart_guide {
+  position: relative;
+  top: -12px;
+  font-size: 0.75rem;
+  line-height: 1.3;
+  font-weight: 400;
+  color: #969ea7;
+  padding: 0 16px 10px 24px;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+.v_signalStreng.globalStock #wrap .sub_search .sub_mid.tabs_area .alloca_wrap.alloca_wrap .alloca_info .allocachart_area .chart_guide::before {
+  content: "";
+  position: absolute;
+  left: 12px;
+  top: 5px;
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #c7cbe9;
 }
 
 .v_signalStreng.globalStock .containerArea_1 .highcharts-tick {

@@ -6586,72 +6586,7 @@
 	color: #0094FF;
 }
 
-.globalStock .sub_search .sub_mid.tabs_area .alloca_info .allocachart_area {
-	margin-top: 30px;
-	padding: 0 15px;
-}
 
-.globalStock .sub_search .sub_mid.tabs_area .alloca_info .allocachart_area .title {
-	border-bottom: 1px solid #939393;
-	color: #333;
-	margin-top: 15px;
-	padding-bottom: 15px;
-	font-size: 0.9375rem;
-}
-
-.globalStock .sub_search .sub_mid.tabs_area .alloca_info .allocachart_area .title .unit {
-	float: right;
-	color: #939393;
-	font-size: 0.75rem;
-	font-weight: normal;
-}
-
-.globalStock .sub_search .sub_mid.tabs_area .alloca_info .allocachart_area .containeralloca1 {
-	margin: 10px 0;
-	height: 200px;
-
-	rect.highcharts-point.point_color {
-		fill: #EDEEEF !important;
-		background: #EDEEEF !important;
-	}
-}
-
-.globalStock .sub_search .sub_mid.tabs_area .alloca_info .allocachart_area .containeralloca1 .highcharts-data-label:nth-child(8),
-.globalStock .sub_search .sub_mid.tabs_area .alloca_info .allocachart_area .containeralloca1 .highcharts-data-label:nth-child(9),
-.globalStock .sub_search .sub_mid.tabs_area .alloca_info .allocachart_area .containeralloca1 .highcharts-data-label:nth-child(10) {
-	opacity: 1;
-}
-
-.globalStock .sub_search .sub_mid.tabs_area .alloca_info .allocachart_area .containeralloca1 .highcharts-data-label:nth-child(9) {
-	position: relative;
-	top: -10px;
-}
-
-.globalStock .sub_search .sub_mid.tabs_area .alloca_info .allocachart_area {
-	.chart_guide {
-		position: relative;
-		top: -12px;
-		font-size: 0.75rem;
-		line-height: 1.3;
-		font-weight: 400;
-		color: #969ea7;
-		padding: 0 16px 10px 24px;
-		word-break: break-all;
-		word-wrap: break-word;
-
-		&::before {
-			content: "";
-			position: absolute;
-			left: 12px;
-			top: 5px;
-			display: inline-block;
-			width: 4px;
-			height: 4px;
-			border-radius: 50%;
-			background: #c7cbe9;
-		}
-	}
-}
 
 
 .globalStock .sub_search .alloca_wrap.na_box .alloca_star {

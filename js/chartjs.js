@@ -1357,6 +1357,7 @@ $(document).ready(function () {
         createSpiderChart('MRIchart_analy04_small', [90, 30, 40, 50, 40], '<a href="">마이크로소프트</a>');
     }
 
+    
     // 검색 - 종목진단 - 투자매력탭 column 차트
     if ($('#containeralloca_star1_1').length) {
         Highcharts.chart('containeralloca_star1_1', {
@@ -4570,74 +4571,266 @@ $(document).ready(function () {
         });
     }
 
-    // 검색 - 배당탭 column 차트
-    if ($('#containeralloca1_1').length) {
-        Highcharts.chart('containeralloca1_1', {
+    // 검색 - 배당탭 스파이더 차트
+    if ($('#allocaScore_spider1').length) {
+
+        Highcharts.chart('allocaScore_spider1', {
             chart: {
-                type: 'column',
-                renderTo: 'containeralloca1_1',
+                polar: true,
+                type: 'area',
+                renderTo: 'allocaScore_spider1',
                 backgroundColor: {
-                    // linearGradient: { x1: 0, y1: 1, x2: 1, y2: 0 },
                     stops: [
                         [0, '#ffffff'],
                         [1, '#ffffff']
                     ]
                 },
-                style: {
-
-                },
-                plotBorderColor: null,
-                plotBorderWidth: null,
-                plotShadow: false
-            },
-
-            colors: ["#404fc3", "#545872", "#d3d3d3"],
-
-            tooltip: {
-                shared: true,
-                useHTML: true,
-                formatter: function () {
-                    const point = this.points[0].point;
-                    const changeValue = point.change;
-
-                    return `${point.date}<br/>${this.points[0].series.name}: <b>${point.y}</b>`;
-                }
-            },
-
-
-            xAxis: [{
-                categories: ['2015', '2016', '2017', '2018', '2019', '2020', '2021', '2022', '2023', '2024'],
-                crosshair: true,
-                labels: {
-                    style: {
-                        color: '#939393',
-                        fontSize: '0.7rem'
+                margin: [55, 0, 45, 0],
+                events: {
+                    load: function () {
+                        alignCenterElements(this);
+                    },
+                    redraw: function () {
+                        alignCenterElements(this);
                     }
                 }
-            }],
+            },
+
+            title: {
+                text: ''
+            },
+
+            // colors: ["rgba(131, 145, 246, 1)"],
+
+            tooltip: {
+                enabled: false,
+            },
+
+            pane: {
+                size: '100%',
+                center: ['50%', '50%'],
+            },
+
+            // 100, 80, 40, 100, 70
+            xAxis: {
+                categories: ['배당성향<br><strong>100</strong> ', '연속배당률<br><strong>80</strong>', '배당금인상<br><strong>40</strong>', '배당수익률<br><strong>100</strong>', 'EPS성장률<br><strong>70</strong>'],
+                tickmarkPlacement: 'on',
+                lineWidth: 0,
+                gridLineColor: 'transparent',
+                labels: {
+                    style: {
+                        color: '#6B7684',
+                        fontSize: '13px',
+                        textAlign: 'center',
+                        fontWeight: '400',
+                    },
+                    formatter: function () {
+                        // Y 좌표와 X 좌표의 보정값을 미리 정의된 배열로 설정
+                        var labelYPositions = [-17, -7, 24, 24, -7]; // 각 인덱스별 Y 좌표 보정값
+                        var labelXPositions = [0, 0, -12, 12, 0]; // 각 인덱스별 X 좌표 보정값, 예시값
+
+                        // 현재 카테고리 인덱스에 해당하는 보정값을 가져옴
+                        var labelYPosition = labelYPositions[this.pos] || 0; // 기본값 0
+                        var labelXPosition = labelXPositions[this.pos] || 0; // 기본값 0
+
+                        // 'y' 속성을 사용해 레이블의 y 좌표를 조정합니다.
+                        return '<span style="position:relative; top:' + labelYPosition + 'px; left:' + labelXPosition + 'px;">' + this.value + '</span>';
+                    },
+                    useHTML: true,
+                }
+            },
 
             yAxis: {
-                title: {
-                    text: null
-                },
-                lineColor: null,
-                minorGridLineWidth: 1,
-                gridLineWidth: 0,
-                lineWidth: 1,
-                plotLines: [{
-                    color: '#c8c8c8',
-                    width: 1,
-                    value: 0
-                }],
-                alternateGridColor: null,
-                showFirstLabel: false,
-                // breaks: [{
-                //     from: 0,
-                //     to: 100
-                // }],
+                gridLineInterpolation: 'polygon',
+                gridLineColor: 'transparent',
+                min: 0,
+                max: 100,
                 labels: {
                     enabled: false
                 }
+            },
+
+            exporting: {
+                enabled: false
+            },
+
+            credits: {
+                enabled: false
+            },
+
+            legend: {
+                enabled: false,
+            },
+
+            series: [{
+                name: '투자매력도',
+                data: [0, 100, 100, 90, 70],
+                pointPlacement: 'on',
+                color: '#06A69A', // 시리즈 선의 색상을 설정
+                lineWidth: 1, // 시리즈 선의 너비를 설정
+                fillColor: 'rgba(189, 243, 239, 0.7)', // 단색 반투명으로 변경
+                zIndex: 2,
+                marker: {
+                    enabled: true,
+                    fillColor: '#06A69A',
+                    lineColor: '#EAFAF9', // 마커 테두리 색상을 설정
+                    width: 6,
+                    lineWidth: 1, // 마커 테두리 두께
+                    radius: 2.7 // 마커의 반지름
+                }
+            }],
+
+            plotOptions: {
+                series: {
+                    lineWidth: 1,
+                    states: {
+                        hover: {
+                            enabled: false
+                        }
+                    }
+                },
+            },
+        });
+        // 차트 리사이즈 계산
+        function alignCenterElements(chart) {
+            var paneSize = chart.pane[0].options.size,
+                paneCenter = chart.pane[0].center,
+                centerX = paneCenter[0],
+                centerY = paneCenter[1] + 42, // centerY 조정
+                size = Math.min(chart.plotWidth, chart.plotHeight) * (parseInt(paneSize) / 100),
+                radius = size / 2;
+
+            // 기존에 추가된 배경 이미지와 텍스트가 있다면 제거
+            if (chart.bgImage) {
+                chart.bgImage.destroy();
+            }
+            if (chart.centerText) {
+                chart.centerText.destroy();
+            }
+
+            // 배경 이미지 추가 (size 값을 조절하여 이미지 크기를 변경할 수 있습니다)
+            // 예시: 이미지 크기를 80%로 줄이고 싶다면, size * 0.8로 설정
+            var bgImageScale = 1.1; // 1이면 원래 크기, 0.8이면 80% 크기
+            var bgImageSize = size * bgImageScale;
+            chart.bgImage = chart.renderer.image(
+                    '../img/bg_circlespider.svg',
+                    centerX - bgImageSize / 2,
+                    centerY - bgImageSize / 2,
+                    bgImageSize,
+                    bgImageSize
+                )
+                .attr({
+                    zIndex: -1
+                })
+                .add()
+                .translate(0, 14);
+
+            // 중앙의 값 텍스트 추가
+            chart.centerText = chart.renderer.text('95', centerX, centerY)
+                .css({
+                    color: '#06A69A',
+                    fontSize: '30px',
+                    textAlign: 'center',
+                    fontWeight: '700',
+                    fontFamily: "Pretendard Variable, Pretendard",
+                })
+                .attr({
+                    zIndex: 5,
+                    align: 'center'
+                })
+                .add()
+                .translate(-1.5, 25);
+        }
+    }
+
+    // 검색 - 배당탭 column 차트
+    if ($('#alloc_line_chart1').length) {
+        Highcharts.chart('alloc_line_chart1', {
+
+            chart: {
+                chart: {
+                    type: 'column'
+                },
+                backgroundColor: {
+                    // linearGradient: { x1: 0, y1: 1, x2: 1, y2: 0 },
+                },
+            },
+            // 하단 네비게이션 제거
+            navigator: {
+                enabled: false
+            },
+
+            // 스크롤바 제거
+            scrollbar: {
+                enabled: false
+            },
+
+            // 기간범위선택 
+            rangeSelector: {
+                enabled: false,
+                // allButtonsEnabled: true,                
+                // selected: 0,                
+            },
+
+            legend: {
+                enabled: false,
+            },
+
+            credits: {
+                enabled: false
+            },
+
+            lang: {
+                noData: "해당 데이터가 없습니다",
+            },
+
+            exporting: {
+                enabled: false
+            },
+
+            tooltip: {
+                shadow: false,
+                split: false,
+                shared: true,
+                useHTML: true,
+                backgroundColor: '#fff',
+                borderWidth: 1,
+                borderRadius: 32,
+                borderColor: '#608CFA',
+                padding: 12,
+                xDateFormat: '%Y.%m/%d',
+                // outside: true, // 툴팁이 차트 밖으로 나가도 표시되도록 설정                
+                style: {
+                    // pointerEvents: 'auto',
+                    zIndex: 9999 // z-index를 높게 설정해 y축 위에 올라오도록 함
+                },
+                formatter: function () {
+                    const point = this.points[0].point;                    
+                    // 소수점 여부에 따라 포맷 다르게 처리
+                    let formattedValue;
+                    if (point.y % 1 === 0) {
+                        // 소수점 없는 경우
+                        formattedValue = new Intl.NumberFormat('en-US', {
+                            maximumFractionDigits: 0
+                        }).format(point.y);
+                    } else {
+                        // 소수점 있는 경우
+                        formattedValue = new Intl.NumberFormat('en-US', {
+                            minimumFractionDigits: 2,
+                            maximumFractionDigits: 2
+                        }).format(point.y);
+                    }
+
+                    return `${point.date}<br/>${this.points[0].series.name}: <b>${formattedValue}</b>`;
+                },
+            },
+
+            rangeSelector: {
+                selected: 1
+            },
+
+            lang: {
+                noData: "해당 데이터가 없습니다",
             },
 
             title: {
@@ -4650,57 +4843,63 @@ $(document).ready(function () {
                 text: ''
             },
 
-            credits: {
-                enabled: false
+            lang: {
+                noData: "해당 데이터가 없습니다",
             },
 
-            exporting: {
-                enabled: false
-            },
+            xAxis: [{
+                categories: ['2022', '2023', '2024', '2025', '2026 <br><span>(예상)</span>'],
+                crosshair: true,
+                labels: {
+                    style: {
+                        color: '#939393',
+                        fontSize: '0.85rem'
+                    }
+                }
+            }],
 
-            legend: {
-                enabled: false,
+            yAxis: {
+                title: {
+                    text: null
+                },
+                gridLineWidth: 0,
+                labels: {
+                    enabled: false
+                },
+                plotLines: [{
+                    color: '#edeeef',
+                    width: 1,
+                    value: 0
+                }],
             },
 
             series: [{
+                type: 'column',
                 name: '시가배당률',
                 data: [{
-                    y: 2.70,
-                    date: '2024',
-                }, {
-                    y: 2.70,
-                    date: '2024',
-                }, {
-                    y: 2.20,
-                    date: '2024',
+                    y: 97,
+                    date: '2022', // 툴팁에 년.월 표시
+                    change: '0.00%' // 상승률 표시
                 },
                 {
-                    y: 1.70,
-                    date: '2024',
+                    y: 45,
+                    date: '2023',
+                    change: '-53.07%'
                 },
                 {
-                    y: 1.30,
+                    y: 75,
                     date: '2024',
+                    change: '+65.20%',                    
                 },
                 {
-                    y: 1.00,
-                    date: '2024',
+                    y: 85,
+                    date: '2025',
+                    change: '+65.20%',                    
                 },
                 {
-                    y: 0.80,
-                    date: '2024',
-                },
-                {
-                    y: 0.90,
-                    date: '2024',
-                },
-                {
-                    y: 0.80,
-                    date: '2024',
-                },
-                {
-                    y: 0.70,
-                    date: '2024',
+                    y: 95.988,
+                    date: '2026(예상)',
+                    change: '+65.20%',
                     className: 'point_color'
                 }]
             }],
@@ -4709,8 +4908,11 @@ $(document).ready(function () {
                 series: {
                     marker: {
                         enabled: false,
-                    }
+                    },
+                    // borderRadius: 3,                    
+                    // pointWidth: 28
                 },
+
                 column: {
                     minPointLength: 5,
                     dataLabels: {
@@ -4719,77 +4921,102 @@ $(document).ready(function () {
                         color: '#939393',
                         overflow: 'none',
                         format: '{point.y:,.2f}',
-                    }
+                    },
+
                 }
             },
+
         });
     }
-    if ($('#containeralloca1_2').length) {
-        Highcharts.chart('containeralloca1_2', {
+    if ($('#alloc_line_chart2').length) {
+        Highcharts.chart('alloc_line_chart2', {
+
             chart: {
-                type: 'column',
-                renderTo: 'containeralloca1_2',
+                chart: {
+                    type: 'column'
+                },
                 backgroundColor: {
                     // linearGradient: { x1: 0, y1: 1, x2: 1, y2: 0 },
-                    stops: [
-                        [0, '#ffffff'],
-                        [1, '#ffffff']
-                    ]
                 },
-                style: {
-
-                },
-                plotBorderColor: null,
-                plotBorderWidth: null,
-                plotShadow: false
+            },
+            // 하단 네비게이션 제거
+            navigator: {
+                enabled: false
             },
 
-            colors: ["#545872"],
+            // 스크롤바 제거
+            scrollbar: {
+                enabled: false
+            },
+
+            // 기간범위선택 
+            rangeSelector: {
+                enabled: false,
+                // allButtonsEnabled: true,                
+                // selected: 0,                
+            },
+
+            legend: {
+                enabled: false,
+            },
+
+            credits: {
+                enabled: false
+            },
+
+            lang: {
+                noData: "해당 데이터가 없습니다",
+            },
+
+            exporting: {
+                enabled: false
+            },
 
             tooltip: {
+                shadow: false,
+                split: false,
                 shared: true,
                 useHTML: true,
+                backgroundColor: '#fff',
+                borderWidth: 1,
+                borderRadius: 32,
+                borderColor: '#608CFA',
+                padding: 12,
+                xDateFormat: '%Y.%m/%d',
+                // outside: true, // 툴팁이 차트 밖으로 나가도 표시되도록 설정                
+                style: {
+                    // pointerEvents: 'auto',
+                    zIndex: 9999 // z-index를 높게 설정해 y축 위에 올라오도록 함
+                },
                 formatter: function () {
-                    const point = this.points[0].point;
-                    const changeValue = point.change;
+                    const point = this.points[0].point;                    
+                    // 소수점 여부에 따라 포맷 다르게 처리
+                    let formattedValue;
+                    if (point.y % 1 === 0) {
+                        // 소수점 없는 경우
+                        formattedValue = new Intl.NumberFormat('en-US', {
+                            maximumFractionDigits: 0
+                        }).format(point.y);
+                    } else {
+                        // 소수점 있는 경우
+                        formattedValue = new Intl.NumberFormat('en-US', {
+                            minimumFractionDigits: 2,
+                            maximumFractionDigits: 2
+                        }).format(point.y);
+                    }
 
-                    return `${point.date}<br/>${this.points[0].series.name}: <b>${point.y}</b>`;
-                }
+                    return `${point.date}<br/>${this.points[0].series.name}: <b>${formattedValue}</b>`;
+                },
             },
 
-            xAxis: [{
-                categories: ['2015', '2016', '2017', '2018', '2019', '2020', '2021', '2022', '2023', '2024'],
-                crosshair: true,
-                labels: {
-                    style: {
-                        color: '#939393',
-                        fontSize: '0.7rem'
-                    }
-                }
-            }],
 
-            yAxis: {
-                title: {
-                    text: null
-                },
-                lineColor: null,
-                minorGridLineWidth: 1,
-                gridLineWidth: 0,
-                lineWidth: 1,
-                plotLines: [{
-                    color: '#c8c8c8',
-                    width: 1,
-                    value: 0
-                }],
-                alternateGridColor: null,
-                showFirstLabel: false,
-                // breaks: [{
-                //     from: 0,
-                //     to: 100
-                // }],
-                labels: {
-                    enabled: false
-                }
+
+            rangeSelector: {
+                selected: 1
+            },
+
+            lang: {
+                noData: "해당 데이터가 없습니다",
             },
 
             title: {
@@ -4802,120 +5029,17 @@ $(document).ready(function () {
                 text: ''
             },
 
-            credits: {
-                enabled: false
-            },
-
-            exporting: {
-                enabled: false
-            },
-
-            legend: {
-                enabled: false,
-            },
-
-            series: [{
-                name: '주당배당금',
-                data: [{
-                    y: 2.70,
-                    date: '2024',
-                }, {
-                    y: 2.70,
-                    date: '2024',
-                }, {
-                    y: 2.20,
-                    date: '2024',
-                },
-                {
-                    y: 1.70,
-                    date: '2024',
-                },
-                {
-                    y: 1.30,
-                    date: '2024',
-                },
-                {
-                    y: 1.00,
-                    date: '2024',
-                },
-                {
-                    y: 0.80,
-                    date: '2024',
-                },
-                {
-                    y: 0.90,
-                    date: '2024',
-                },
-                {
-                    y: 0.80,
-                    date: '2024',
-                },
-                {
-                    y: 0.70,
-                    date: '2024',
-                    className: 'point_color'
-                }]
-            }],
-
-            plotOptions: {
-                series: {
-                    marker: {
-                        enabled: false,
-                    }
-                },
-                column: {
-                    minPointLength: 5,
-                    dataLabels: {
-                        enabled: true,
-                        crop: false,
-                        color: '#939393',
-                        overflow: 'none',
-                        format: '{point.y:,.2f}',
-                    }
-                }
-            },
-        });
-    }
-    if ($('#containeralloca1_3').length) {
-        Highcharts.chart('containeralloca1_3', {
-            chart: {
-                type: 'column',
-                renderTo: 'containeralloca1_3',
-                backgroundColor: {
-                    // linearGradient: { x1: 0, y1: 1, x2: 1, y2: 0 },
-                    stops: [
-                        [0, '#ffffff'],
-                        [1, '#ffffff']
-                    ]
-                },
-                style: {
-
-                },
-                plotBorderColor: null,
-                plotBorderWidth: null,
-                plotShadow: false
-            },
-
-            // colors: ["#d3d3d3"],
-
-            tooltip: {
-                shared: true,
-                useHTML: true,
-                formatter: function () {
-                    const point = this.points[0].point;
-                    const changeValue = point.change;
-
-                    return `${point.date}<br/>${this.points[0].series.name}: <b>${point.y}</b>`;
-                }
+            lang: {
+                noData: "해당 데이터가 없습니다",
             },
 
             xAxis: [{
-                categories: ['2015', '2016', '2017', '2018', '2019', '2020', '2021', '2022', '2023', '2024'],
+                categories: ['2022', '2023', '2024', '2025', '2026 <br> <span>(예상)</span>'],
                 crosshair: true,
                 labels: {
                     style: {
                         color: '#939393',
-                        fontSize: '0.7rem'
+                        fontSize: '0.85rem'
                     }
                 }
             }],
@@ -4924,24 +5048,158 @@ $(document).ready(function () {
                 title: {
                     text: null
                 },
-                lineColor: null,
-                minorGridLineWidth: 1,
                 gridLineWidth: 0,
-                lineWidth: 1,
+                labels: {
+                    enabled: false
+                },
                 plotLines: [{
-                    color: '#c8c8c8',
+                    color: '#edeeef',
                     width: 1,
                     value: 0
                 }],
-                alternateGridColor: null,
-                showFirstLabel: false,
-                // breaks: [{
-                //     from: 0,
-                //     to: 100
-                // }],
-                labels: {
-                    enabled: false
+            },
+
+            series: [{
+                type: 'column',
+                name: '시가배당률',
+                data: [{
+                    y: 97,
+                    date: '2022', // 툴팁에 년.월 표시
+                    change: '0.00%' // 상승률 표시
+                },
+                {
+                    y: 45,
+                    date: '2023',
+                    change: '-53.07%'
+                },
+                {
+                    y: 75,
+                    date: '2024',
+                    change: '+65.20%',                    
+                },
+                {
+                    y: 85,
+                    date: '2025',
+                    change: '+65.20%',                    
+                },
+                {
+                    y: 95.988,
+                    date: '2026(예상)',
+                    change: '+65.20%',
+                    className: 'point_color'
+                }]
+            }],
+
+            plotOptions: {
+                series: {
+                    marker: {
+                        enabled: false,
+                    },
+                    // borderRadius: 3,                    
+                    // pointWidth: 28
+                },
+
+                column: {
+                    minPointLength: 5,
+                    dataLabels: {
+                        enabled: true,
+                        crop: false,
+                        color: '#939393',
+                        overflow: 'none',
+                        format: '{point.y:,.2f}',
+                    },
+
                 }
+            },
+
+        });
+    }
+    if ($('#alloc_line_chart3').length) {
+        Highcharts.chart('alloc_line_chart3', {
+
+            chart: {
+                chart: {
+                    type: 'column'
+                },
+                backgroundColor: {
+                    // linearGradient: { x1: 0, y1: 1, x2: 1, y2: 0 },
+                },
+            },
+            // 하단 네비게이션 제거
+            navigator: {
+                enabled: false
+            },
+
+            // 스크롤바 제거
+            scrollbar: {
+                enabled: false
+            },
+
+            // 기간범위선택 
+            rangeSelector: {
+                enabled: false,
+                // allButtonsEnabled: true,                
+                // selected: 0,                
+            },
+
+            legend: {
+                enabled: false,
+            },
+
+            credits: {
+                enabled: false
+            },
+
+            lang: {
+                noData: "해당 데이터가 없습니다",
+            },
+
+            exporting: {
+                enabled: false
+            },
+
+            tooltip: {
+                shadow: false,
+                split: false,
+                shared: true,
+                useHTML: true,
+                backgroundColor: '#fff',
+                borderWidth: 1,
+                borderRadius: 32,
+                borderColor: '#608CFA',
+                padding: 12,
+                xDateFormat: '%Y.%m/%d',
+                // outside: true, // 툴팁이 차트 밖으로 나가도 표시되도록 설정                
+                style: {
+                    // pointerEvents: 'auto',
+                    zIndex: 9999 // z-index를 높게 설정해 y축 위에 올라오도록 함
+                },
+                formatter: function () {
+                    const point = this.points[0].point;                    
+                    // 소수점 여부에 따라 포맷 다르게 처리
+                    let formattedValue;
+                    if (point.y % 1 === 0) {
+                        // 소수점 없는 경우
+                        formattedValue = new Intl.NumberFormat('en-US', {
+                            maximumFractionDigits: 0
+                        }).format(point.y);
+                    } else {
+                        // 소수점 있는 경우
+                        formattedValue = new Intl.NumberFormat('en-US', {
+                            minimumFractionDigits: 2,
+                            maximumFractionDigits: 2
+                        }).format(point.y);
+                    }
+
+                    return `${point.date}<br/>${this.points[0].series.name}: <b>${formattedValue}</b>`;
+                },
+            },
+            rangeSelector: {
+                selected: 1
+            },
+
+            lang: {
+                noData: "해당 데이터가 없습니다",
             },
 
             title: {
@@ -4954,57 +5212,74 @@ $(document).ready(function () {
                 text: ''
             },
 
-            credits: {
-                enabled: false
+            lang: {
+                noData: "해당 데이터가 없습니다",
             },
 
-            exporting: {
-                enabled: false
-            },
+            xAxis: [{
+                categories: ['2023', '2024', '2025', '2026', '2024', '2025', '2026 <br> <span>(예상)</span>'],
+                crosshair: true,
+                labels: {
+                    style: {
+                        color: '#939393',
+                        fontSize: '0.85rem'
+                    }
+                }
+            }],
 
-            legend: {
-                enabled: false,
+            yAxis: {
+                title: {
+                    text: null
+                },
+                gridLineWidth: 0,
+                labels: {
+                    enabled: false
+                },
+                plotLines: [{
+                    color: '#edeeef',
+                    width: 1,
+                    value: 0
+                }],
             },
 
             series: [{
-                name: '배당성향',
+                type: 'column',
+                name: '시가배당률',
                 data: [{
-                    y: 2.70,
-                    date: '2024',
-                }, {
-                    y: 2.70,
-                    date: '2024',
-                }, {
-                    y: 2.20,
-                    date: '2024',
+                    y: -45,
+                    date: '2023',
+                    change: '-53.07%'
                 },
                 {
-                    y: 1.70,
+                    y: 0,
                     date: '2024',
+                    change: '+65.20%',                    
                 },
                 {
-                    y: 1.30,
-                    date: '2024',
+                    y: 85,
+                    date: '2025',
+                    change: '+65.20%',                    
                 },
                 {
-                    y: 1.00,
-                    date: '2024',
+                    y: 95.988,
+                    date: '2026',
+                    change: '+65.20%',                    
                 },
                 {
-                    y: 0.80,
+                    y: 0,
                     date: '2024',
+                    change: '+65.20%',                    
                 },
                 {
-                    y: 0.90,
-                    date: '2024',
+                    y: 85,
+                    date: '2025',
+                    change: '+65.20%',                    
                 },
                 {
-                    y: 0.80,
-                    date: '2024',
-                },
-                {
-                    y: 0.70,
-                    date: '2024',
+                    y: 95.988,
+                    date: '2026(예상)',
+                    change: '+65.20%',
+                    className: 'point_color'
                 }]
             }],
 
@@ -5012,8 +5287,11 @@ $(document).ready(function () {
                 series: {
                     marker: {
                         enabled: false,
-                    }
+                    },
+                    // borderRadius: 3,                    
+                    // pointWidth: 28
                 },
+
                 column: {
                     minPointLength: 5,
                     dataLabels: {
@@ -5022,9 +5300,11 @@ $(document).ready(function () {
                         color: '#939393',
                         overflow: 'none',
                         format: '{point.y:,.2f}',
-                    }
+                    },
+
                 }
             },
+
         });
     }
 
