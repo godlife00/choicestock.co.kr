@@ -108,27 +108,69 @@
             <!-- //gnb -->
             <!-- 주요 콘텐츠 -->
             <div class="sub_top view">
-                <div class="chart_area">
-                    <div class="chartData">
-                        <h2 class="title" title="Microsoft Corp">
-                            <a href="../search/search_outline.html">월트디즈니월트디즈니월트디즈니월트디즈니월트디즈니월트디즈니월트디즈니월트디즈니</a>
-                        </h2>
-                        <a href="../search/search_outline.html" class="more"><img src="../img/more_Black.png"
-                                alt="더보기"></a>
-                        <ul class="info">
-                            <li class="sum"><span class="eng">MSFT</span> </li>
-                            <li class="port">포트편입</li>                            
-                        </ul>
-                        <!-- //info -->
-                        <ul class="detail">
-                            <li class="num">154.<b>53</b></li>
-                            <li class="per">
-                                <span class="increase">+ 4.<b>81</b> <span>(+3.33<b>%</b>)</span></span>
-                                <!-- increase 증가, decrease 감소 -->
+                <!-- 검색 종목 -->
+                <div class="recom_company">
+                    <div class="list_wrap">
+                        <div class="company_info">
+                            <div class="list company_name">
+                                <div class="company_nm" id="originalCompanyName">테슬라</div>
+                            </div>
+                            <div class="list company_details">
+                                <div class="ticker">TSLA</div>
+                                <div class="stock_index">
+                                    <span>NASDAQ</span>
+                                    <span>S&amp;P500</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- //company_info -->
+                        <ul class="list">
+                            <li class="detail">
+                                <div class="num">
+                                    <span id="last_price">295.<b>10</b></span>
+                                </div>
+                                <div class="per">
+                                    <span class="increase" id="diff">+10.40</span>
+                                    <span class="increase" id="diff_rate">(+3.65<b>%</b>)</span>
+                                    <span class="day">06/06, 장마감</span>
+                                </div>
                             </li>
-                            <li class="day">19.05/15, USD</li>
-                        </ul>
+                            <!-- 애프터마켓 -->
+                            <li class="detail market_status">
+                                <div class="after_market">
+                                    애프터마켓
+                                </div>
+                                <div class="num">
+                                    <span id="over_last_price"><b>297</b>.38</span>
+                                </div>
+                                <div class="per">
+                                    <span id="over_diff" class="increase"><b>+2</b>.24</span>
+                                    <span id="over_diff_rate" class="increase">(<b>+0</b>.76%)</span>
+                                    <span id="over_price_date" class="day">장마감, USD</span>
+                                </div>
+                            </li>
+                            <!-- 프리마켓 -->
+                            <li class="detail market_status">
+                                <div class="pre_market">
+                                    프리마켓
+                                </div>
+                                <div class="num">
+                                    <span><b>898.</b>00</span>
+                                </div>
+                                <div class="per">
+                                    <span class="decrease"><b>-89.</b>89</span>
+                                    <span class="decrease">(<b>-89.</b>89%)</span>
+                                    <!-- increase 증가, decrease 감소, 보합은 same -->
+                                    <span class="day">11:35, USD</span>
+                                </div>
+                            </li>
 
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="chart_area">
+                    <div class="chartData">                        
                         <div class="detail_data">
                             <table cellspacing="0" border="1" class="tableRanking">
                                 <colgroup>
