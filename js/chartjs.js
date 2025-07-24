@@ -4909,8 +4909,8 @@ $(document).ready(function () {
                     marker: {
                         enabled: false,
                     },
-                    // borderRadius: 3,                    
-                    // pointWidth: 28
+                    borderRadius: 3,                    
+                    pointWidth: 28
                 },
 
                 column: {
@@ -5095,8 +5095,8 @@ $(document).ready(function () {
                     marker: {
                         enabled: false,
                     },
-                    // borderRadius: 3,                    
-                    // pointWidth: 28
+                    borderRadius: 4,                    
+                    pointWidth: 28
                 },
 
                 column: {
@@ -5288,8 +5288,8 @@ $(document).ready(function () {
                     marker: {
                         enabled: false,
                     },
-                    // borderRadius: 3,                    
-                    // pointWidth: 28
+                    borderRadius: 6,                    
+                    pointWidth: 28
                 },
 
                 column: {
