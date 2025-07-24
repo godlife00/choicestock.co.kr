@@ -1,5 +1,5 @@
 // window.alert 재정의
-window.alert = function(message) {
+window.alert = function(message, bottomPosition = '55px') {
     // alertWin 요소 찾기
     var alertWin = document.getElementById('alertWin');
     var hideTimeout;
@@ -10,7 +10,7 @@ window.alert = function(message) {
         alertWin.id = 'alertWin';
         alertWin.style.position = 'fixed';
         alertWin.style.left = '50%';
-        alertWin.style.bottom = '55px';
+        alertWin.style.bottom = bottomPosition; // 파라미터로 받은 값 사용
         alertWin.style.transform = 'translate(-50%, -50%)';
         alertWin.style.display = 'none';
         alertWin.style.zIndex = '99';
@@ -89,10 +89,26 @@ window.alert = function(message) {
 };
 
 // 확인 버튼이 포함된 alert 창 (버튼 타입 토스트 스타일)
-window.confirmAlert = function(message, callback, btnText) {
+window.confirmAlert = function(message, callback, btnText, bottomPosition = '55px') {
     var confirmWin = document.getElementById('confirmWin');
-    var txtP, spanMsg, strongGroup, confirmBtn;
+    var overlay = document.getElementById('overlay'); // 오버레이 요소
+    var txtP, spanMsg, confirmBtn;
     btnText = btnText || '확인';
+
+    // 오버레이가 없으면 생성
+    if (!overlay) {
+        overlay = document.createElement('div');
+        overlay.id = 'overlay';
+        overlay.style.position = 'fixed';
+        overlay.style.top = '0';
+        overlay.style.left = '0';
+        overlay.style.width = '100%';
+        overlay.style.height = '100%';        
+        overlay.style.backgroundColor = 'rgba(0, 0, 0, 0.3)';
+        overlay.style.zIndex = '98'; // confirmWin보다 낮은 z-index
+        overlay.style.display = 'none';
+        document.body.appendChild(overlay);
+    }
 
     // confirmWin이 없으면 생성
     if (!confirmWin) {
@@ -102,7 +118,7 @@ window.confirmAlert = function(message, callback, btnText) {
         // 스타일 적용
         confirmWin.style.position = 'fixed';
         confirmWin.style.left = '50%';
-        confirmWin.style.bottom = '55px';
+        confirmWin.style.bottom = bottomPosition; // 파라미터로 받은 값 사용
         confirmWin.style.transform = 'translate(-50%, -50%)';
         confirmWin.style.display = 'none';
         confirmWin.style.zIndex = '99';
@@ -140,7 +156,7 @@ window.confirmAlert = function(message, callback, btnText) {
         txtP.style.letterSpacing = '-0.3px';
         txtP.style.margin = '0';
 
-        // <span><strong class="group_name">...</strong>에 등록되었습니다.</span>
+        // <span>메시지</span>
         spanMsg = document.createElement('span');
         spanMsg.style.flex = '1 1 0';
         spanMsg.style.overflow = 'hidden';
@@ -155,21 +171,7 @@ window.confirmAlert = function(message, callback, btnText) {
         spanMsg.style.fontWeight = '400';
         spanMsg.style.lineHeight = '24px';
         spanMsg.style.letterSpacing = '-0.3px';
-
-        strongGroup = document.createElement('strong');
-        strongGroup.className = 'group_name';
-        strongGroup.style.display = 'inline-block';
-        strongGroup.style.overflow = 'hidden';
-        strongGroup.style.textOverflow = 'ellipsis';
-        strongGroup.style.whiteSpace = 'nowrap';
-        strongGroup.style.verticalAlign = 'middle';
-        strongGroup.style.maxWidth = '40ch';
-        strongGroup.style.color = '#FFF';
-        strongGroup.style.fontFamily = 'Pretendard, sans-serif';
-        strongGroup.style.fontSize = '15px';
-        strongGroup.style.fontWeight = '600';
-        strongGroup.style.lineHeight = '24px';
-        strongGroup.style.letterSpacing = '-0.3px';
+        spanMsg.textContent = message; // 메시지 설정
 
         // <button class="toast_btn">변경</button>
         confirmBtn = document.createElement('button');
@@ -197,7 +199,6 @@ window.confirmAlert = function(message, callback, btnText) {
         confirmBtn.style.letterSpacing = '-0.3px';
 
         // 구조 조립
-        spanMsg.appendChild(strongGroup);
         txtP.appendChild(spanMsg);
         txtP.appendChild(confirmBtn);
         confirmWin.appendChild(txtP);
@@ -205,24 +206,12 @@ window.confirmAlert = function(message, callback, btnText) {
     } else {
         txtP = confirmWin.querySelector('.txt');
         spanMsg = txtP.querySelector('span');
-        strongGroup = spanMsg.querySelector('.group_name');
         confirmBtn = txtP.querySelector('.toast_btn');
+        spanMsg.textContent = message; // 메시지 설정
     }
 
-    // 메시지 세팅: message가 "그룹명+메시지" 형태일 때 그룹명 강조
-    // 예: "사고싶다사고... 에 등록되었습니다." → 그룹명: 사고싶다사고..., 나머지: 에 등록되었습니다.
-    var groupMatch = message.match(/^([\S]+)(.*)$/);
-    if (groupMatch) {
-        strongGroup.textContent = groupMatch[1];
-        spanMsg.childNodes.length > 1 && spanMsg.removeChild(spanMsg.childNodes[1]);
-        var restText = document.createTextNode(groupMatch[2]);
-        spanMsg.appendChild(restText);
-    } else {
-        strongGroup.textContent = message;
-        spanMsg.childNodes.length > 1 && spanMsg.removeChild(spanMsg.childNodes[1]);
-    }
-
-    // 표시
+    // 오버레이와 confirmWin 표시
+    overlay.style.display = 'block';
     confirmWin.style.display = 'flex';
     confirmWin.style.animation = 'fadeIn 0.8s, slideIn50 0.4s linear';
     confirmWin.addEventListener('animationend', function clearAnim(e) {
@@ -230,9 +219,101 @@ window.confirmAlert = function(message, callback, btnText) {
         confirmWin.removeEventListener('animationend', clearAnim);
     });
 
-    // 버튼 클릭 시 닫기 및 콜백 실행
+    // 확인 버튼 클릭 시 오버레이와 confirmWin 숨기기
     confirmBtn.onclick = function() {
+        overlay.style.display = 'none';
         confirmWin.style.display = 'none';
-        if (typeof callback === 'function') callback();
+        if (callback) callback();
     };
+};
+
+// 확인 버튼이 포함된 alert 창 (버튼 타입 디자인 팝업)
+window.confirmWithCancel = function(message, confirmCallback, cancelCallback, confirmText = '확인', cancelText = '취소') {
+    var confirmWin = document.getElementById('confirmWinWithCancel');
+    var overlay = document.getElementById('overlayWithCancel');
+    var txtP, spanMsg, confirmBtn, cancelBtn;
+
+    if (!overlay) {
+        overlay = document.createElement('div');
+        overlay.id = 'overlayWithCancel';
+        overlay.style.position = 'fixed';
+        overlay.style.top = '0';
+        overlay.style.left = '0';
+        overlay.style.width = '100%';
+        overlay.style.height = '100%';        
+        overlay.style.backgroundColor = 'rgba(0, 0, 0, 0.3)';
+        overlay.style.zIndex = '98';
+        overlay.style.display = 'none';
+        document.body.appendChild(overlay);
+    }
+
+    if (!confirmWin) {
+        confirmWin = document.createElement('div');
+        confirmWin.id = 'confirmWinWithCancel';
+        confirmWin.className = 'modal modal_popup alert_popup';
+        confirmWin.style.position = 'fixed';
+        confirmWin.style.left = '50%';
+        confirmWin.style.top = '50%';
+        confirmWin.style.transform = 'translate(-50%, -50%)';
+        confirmWin.style.display = 'none';
+        confirmWin.style.zIndex = '99';
+        confirmWin.style.maxWidth = '340px';
+        confirmWin.style.margin = '0 auto';
+        confirmWin.style.background = '#FFF';
+        confirmWin.style.borderRadius = '12px';
+        confirmWin.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.1)';
+
+        // var header = document.createElement('div');
+        // header.className = 'pop_header';
+        // var title = document.createElement('h1');
+        // title.className = 'pop_title txt_c';
+        // title.textContent = '시스템 타입';
+        // header.appendChild(title);
+
+        var content = document.createElement('div');
+        content.className = 'pop_con';
+        txtP = document.createElement('p');
+        txtP.className = 'txt align_c';
+        txtP.innerHTML = message;
+        content.appendChild(txtP);
+
+        var footer = document.createElement('div');
+        footer.className = 'pop_footer';
+        var btnArea = document.createElement('div');
+        btnArea.className = 'btnArea payBtn';
+
+        confirmBtn = document.createElement('a');
+        confirmBtn.href = '#';
+        confirmBtn.className = 'btn btn_save';
+        confirmBtn.textContent = confirmText;
+        confirmBtn.onclick = function(e) {
+            e.preventDefault();
+            overlay.style.display = 'none';
+            confirmWin.style.display = 'none';
+            if (confirmCallback) confirmCallback();
+        };
+
+        cancelBtn = document.createElement('a');
+        cancelBtn.href = '#';
+        cancelBtn.className = 'btn btn_cncl';
+        cancelBtn.textContent = cancelText;
+        cancelBtn.onclick = function(e) {
+            e.preventDefault();
+            overlay.style.display = 'none';
+            confirmWin.style.display = 'none';
+            if (cancelCallback) cancelCallback();
+        };
+
+        btnArea.appendChild(cancelBtn);
+        btnArea.appendChild(confirmBtn);
+        footer.appendChild(btnArea);
+
+        // confirmWin.appendChild(header);
+        confirmWin.appendChild(content);
+        confirmWin.appendChild(footer);
+        document.body.appendChild(confirmWin);
+    }
+
+    overlay.style.display = 'block';
+    confirmWin.style.display = 'block';
 };

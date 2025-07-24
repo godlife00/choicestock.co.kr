@@ -244,13 +244,41 @@
                             </svg>
                         </a>
                     </div>
-                    <!-- //hm -->
+                    <!-- //hm -->                    
                 </div>
                 <!-- //headerTop -->
             </div>
 
             <!-- 메인 상단 그라데이션 bg 영역 -->
             <div class="main_top_bg">
+                
+                <button style="background-color: #2C295D;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                font-size: 14px;
+                padding: 4px 6px;
+                text-decoration: none;" onclick="window.alert('유료서비스 이용 중 입니다', '50%')">텍스트 alert</button>
+                <button style="background-color: #2C295D;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                font-size: 14px;
+                padding: 4px 6px;
+                text-decoration: none;" onclick="window.confirmAlert('생년월일(사업자등록번호)을 입력해 주세요.', function() {
+                    // 버튼 클릭 시 실행할 코드
+                })">텍스트+버튼 alert</button>
+                <button style="background-color: #2C295D;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                font-size: 14px;
+                padding: 4px 6px;
+                text-decoration: none;" onclick="window.confirmWithCancel('포함된 관심종목 데이터는<br>모두 삭제됩니다.', '확인', '취소')">텍스트+버튼 alert</button>
+                
                 <!-- 로그인 체크 -->
                 <div class="log_chk">
                     <!-- 회원로그인 -->
