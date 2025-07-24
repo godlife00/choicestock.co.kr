@@ -4877,7 +4877,7 @@ $(document).ready(function () {
                 type: 'column',
                 name: '시가배당률',
                 data: [{
-                    y: 97,
+                    y: 897,
                     date: '2022', // 툴팁에 년.월 표시
                     change: '0.00%' // 상승률 표시
                 },
@@ -5253,7 +5253,8 @@ $(document).ready(function () {
                 {
                     y: 0,
                     date: '2024',
-                    change: '+65.20%',                    
+                    change: '+65.20%',   
+                    className: 'zero-value' // y 값이 0일 때 클래스 추가                 
                 },
                 {
                     y: 85,
@@ -5269,6 +5270,7 @@ $(document).ready(function () {
                     y: 0,
                     date: '2024',
                     change: '+65.20%',                    
+                    className: 'zero-value' // y 값이 0일 때 클래스 추가                 
                 },
                 {
                     y: 85,
@@ -5289,7 +5291,7 @@ $(document).ready(function () {
                         enabled: false,
                     },
                     borderRadius: 6,                    
-                    pointWidth: 28
+                    pointWidth: 28,
                 },
 
                 column: {

@@ -37218,6 +37218,11 @@ body.v_signalStreng {
   fill: #B0B8C1 !important;
   background: #B0B8C1 !important;
 }
+.v_signalStreng.globalStock #wrap .sub_search .sub_mid.tabs_area .alloca_wrap.alloca_wrap .alloca_info .allocachart_area .containeralloca1#alloc_line_chart3 rect.highcharts-point.zero-value {
+  rx: 3 !important;
+  ry: 3 !important;
+  border-radius: 0px !important;
+}
 .v_signalStreng.globalStock #wrap .sub_search .sub_mid.tabs_area .alloca_wrap.alloca_wrap .alloca_info .allocachart_area .chart_guide {
   position: relative;
   top: -12px;

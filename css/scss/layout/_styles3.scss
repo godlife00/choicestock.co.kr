@@ -14633,6 +14633,11 @@ body.v_signalStreng {
 						fill: #B0B8C1 !important;
 						background: #B0B8C1 !important;
 					}
+					&.zero-value {
+						rx: 3 !important;
+    					ry: 3 !important;						
+						border-radius: 0px !important;
+					}
 				}
 				
 			
