@@ -6865,10 +6865,18 @@ table.tableRanking td {
 	background: #fff;
 
 	.recom_company {
+		position: relative;
 		&::after {
 			display: none !important;
 		}
+		.company_nm,
+		.company_nm a {
+			max-width: calc(100% - 80px);
+		}
 		.company_info .link_btn {
+			position: absolute;
+			right: 20px;
+			top: 13px;
 			display: inline-flex;
 			align-items: center;
 			justify-content: center;

@@ -7623,10 +7623,20 @@ table.tableRanking td {
 .globalStock .sub_recom .sub_top.view {
   background: #fff;
 }
+.globalStock .sub_recom .sub_top.view .recom_company {
+  position: relative;
+}
 .globalStock .sub_recom .sub_top.view .recom_company::after {
   display: none !important;
 }
+.globalStock .sub_recom .sub_top.view .recom_company .company_nm,
+.globalStock .sub_recom .sub_top.view .recom_company .company_nm a {
+  max-width: calc(100% - 80px);
+}
 .globalStock .sub_recom .sub_top.view .recom_company .company_info .link_btn {
+  position: absolute;
+  right: 20px;
+  top: 13px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
