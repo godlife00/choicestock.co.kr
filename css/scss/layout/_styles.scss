@@ -6863,393 +6863,409 @@ table.tableRanking td {
 /* 종목추천 (투자포인트,종목진단) */
 .globalStock .sub_recom .sub_top.view {
 	background: #fff;
-}
 
-.globalStock .sub_recom .sub_top.view .chart_area {
-	width: 100%;
-	margin: 0;
-	margin-top: 16px;
-	display: block;
-}
-
-.globalStock .sub_recom .sub_top.view .chart_area .chartData {
-	padding: 30px 0 0;
-	box-sizing: border-box;
-	background: #fff;
-}
-
-.v_signalStreng.globalStock .sub_recom .sub_top.view .chart_area .chartData {
-	padding-top: 0;
-}
-
-.globalStock .sub_recom .sub_top.view .chart_area .chartData>.title {
-	font-size: 1.25rem;
-	padding: 0 15px;
-	float: left;
-	width: 100%;
-	max-width: calc(100% - 34px);
-	box-sizing: border-box;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	white-space: nowrap;
-	font-weight: normal;
-}
-
-.globalStock .sub_recom .sub_top.view .chart_area .chartData>.title a {
-	color: #333;
-	font-size: 1.25rem;
-	display: inline-block;
-	width: 100%;
-	line-height: normal;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	white-space: nowrap;
-}
-
-.globalStock .sub_recom .sub_top.view .chart_area .chartData .more {
-	// display: inline-block;
-	float: right;
-	width: 10px;
-	padding-top: 5px;
-	padding-right: 20px;
-	height: 15px;
-	text-align: right;
-
-	img {
-		display: inline-block;
+	.recom_company {
+		&::after {
+			display: none !important;
+		}
+		.company_info .link_btn {
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+			gap: 4px 4px;
+			padding: 8px 8px;
+			border-radius: 8px;
+			background: var(--Blue-blue100, #ECF0FF);
+			color: var(--Font-primary-blue, #4168F6);
+			font-family: Pretendard;
+			font-size: 13px;
+			font-style: normal;
+			font-weight: var(--Weight-500, 500);
+			line-height: normal;
+			letter-spacing: -0.39px;
+		}
 	}
-}
 
-.globalStock .sub_recom .sub_top.view .chart_area .chartData.fix_data .more {
-	img {
-		display: none;
+	.chart_area {
+		width: 100%;
+		margin: 0;
+		// margin-top: 16px;
+		display: block;
+
+		.chartData {
+			// padding: 30px 0 0;
+			box-sizing: border-box;
+			background: #fff;
+
+			// .title {
+			// 	font-size: 1.25rem;
+			// 	padding: 0 15px;
+			// 	float: left;
+			// 	width: 100%;
+			// 	max-width: calc(100% - 34px);
+			// 	box-sizing: border-box;
+			// 	overflow: hidden;
+			// 	text-overflow: ellipsis;
+			// 	white-space: nowrap;
+			// 	font-weight: normal;
+
+			// 	a {
+			// 		color: #333;
+			// 		font-size: 1.25rem;
+			// 		display: inline-block;
+			// 		width: 100%;
+			// 		line-height: normal;
+			// 		overflow: hidden;
+			// 		text-overflow: ellipsis;
+			// 		white-space: nowrap;
+			// 	}
+			// }
+
+			.more {
+				// display: inline-block;
+				float: right;
+				width: 10px;
+				padding-top: 5px;
+				padding-right: 20px;
+				height: 15px;
+				text-align: right;
+
+				img {
+					display: inline-block;
+				}
+			}
+
+			.info {
+				margin-top: 5px;
+				margin-bottom: 3px;
+				padding: 0 15px;
+				position: relative;
+				clear: both;
+
+				.eng {
+					color: #939393;
+					font-size: 0.75rem;
+				}
+
+				li {
+					color: #939393;
+					font-size: 0.75rem;
+					line-height: normal;
+
+					&.sum {
+						display: inline-block;
+					}
+
+					&.port {
+						display: inline-block;
+						border-radius: 3px;
+						border: solid 1px #d3d3d3;
+						font-size: 9px;
+						font-weight: normal;
+						color: #939393;
+						margin-left: 5px;
+						padding: 1px 2px;
+						position: relative;
+						top: -1px;
+					}
+
+					&.day {
+						color: #939393;
+						font-size: 0.85rem;
+						position: absolute;
+						right: 15px;
+						top: 0;
+					}
+				}
+			}
+
+			.detail {
+				display: inline-block;
+				width: 100%;
+				padding: 0 15px;
+				box-sizing: border-box;
+				margin-top: 9px;
+				position: relative;
+
+				li {
+					display: inline-block;
+					font-size: 1rem;
+				}
+
+				.num,
+				.per {
+					color: #333;
+					font-size: 1.2rem;
+
+					b {
+						font-weight: normal;
+						// opacity: 0.7;
+					}
+				}
+
+				.num {
+					&.increase {
+						color: #F8385A;
+
+						b {
+							color: #F8385A;
+							font-weight: normal;
+							opacity: 0.7;
+						}
+					}
+
+					&.decrease {
+						color: #0094FF;
+
+						b {
+							color: #0094FF;
+							font-weight: normal;
+							opacity: 0.7;
+						}
+					}
+				}
+
+				.per {
+					padding-left: 6px;
+
+					.increase,
+					.increase span {
+						color: #F8385A;
+						font-weight: normal;
+						font-size: 1rem;
+					}
+
+					.decrease,
+					.decrease span {
+						color: #0094FF;
+						font-weight: normal;
+						font-size: 1rem;
+					}
+
+					.increase b {
+						color: #F8385A;
+						font-weight: normal;
+						opacity: 1;
+					}
+
+					.decrease b {
+						color: #0094FF;
+						font-weight: normal;
+						opacity: 1;
+					}
+
+					span {
+						color: #0094FF;
+					}
+				}
+
+				.day {
+					color: #939393;
+					font-size: 0.85rem;
+					position: absolute;
+					right: 15px;
+					top: 4px;
+				}
+			}
+
+			.detail_data {
+				margin: 20px auto 0;
+				width: calc(100% - 20px);
+				background: #404fc3;
+				border-radius: 10px;
+				position: relative;
+
+				table {
+					th,
+					td {
+						text-align: left;
+						border-right: 1px solid #4e5cc8;
+						font-size: 1rem;
+					}
+
+					th {
+						padding: 15px 11px 6px;
+
+						.day {
+							font-size: 0.75rem;
+							padding-left: 5px;
+						}
+
+						span {
+							color: #fff;
+							opacity: 0.7;
+							font-size: 0.73rem;
+							font-weight: 300;
+						}
+					}
+
+					td {
+						padding: 6px 11px 15px;
+
+						span {
+							color: #fff;
+							font-size: 1.28rem;
+							font-weight: 500;
+
+							b {
+								color: #fff;
+								font-weight: normal;
+								opacity: 0.7;
+							}
+						}
+
+						&.goal_num span {
+							color: #ffda0d;
+
+							b {
+								color: #ffda0d;
+							}
+						}
+					}
+
+					tr {
+						th:last-child,
+						td:last-child {
+							border-right: none;
+						}
+					}
+				}
+			}
+
+			&.fix_data {
+				::before {
+					content: "";
+					display: block;
+					position: fixed;
+					left: 0;
+					right: 0;
+					top: 0;
+					padding: 10px 17px;
+					margin: 0;
+					width: 100%;
+					height: 54px;
+					box-sizing: border-box;
+					z-index: 999;
+					box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.08);
+					background-color: #404fc3;
+				}
+
+				.title {
+					width: calc(100% - 130px);
+					font-size: 1rem;
+					vertical-align: top;
+					color: #fff;
+					text-align: left;
+					position: fixed;
+					left: 0;
+					right: 0;
+					top: 17px;
+					z-index: 999;
+
+					a {
+						font-size: 1rem;
+						color: #fff;
+						box-sizing: border-box;
+						display: inline-block;
+						overflow: hidden;
+						width: 100%;
+						text-overflow: ellipsis;
+						white-space: nowrap;
+						font-weight: normal;
+					}
+				}
+
+				.detail {
+					position: fixed;
+					left: 0;
+					right: 17px;
+					top: 0;
+					z-index: 999;
+					text-align: right;
+					margin-top: 19px;
+
+					.day {
+						display: none;
+					}
+
+					.num,
+					.per,
+					.num span,
+					.per span,
+					.num b,
+					.per b {
+						font-size: 1rem;
+						vertical-align: top;
+						color: #fff;
+						text-align: right;
+					}
+
+					.num b,
+					.per b {
+						// font-weight: 100;
+						opacity: 1;
+					}
+
+					.per {
+						margin-top: 2px;
+
+						.decrease,
+						.increase,
+						.decrease b,
+						.increase b {
+							font-size: 0;
+						}
+
+						.decrease span,
+						.increase span {
+							font-size: 0.82rem;
+							vertical-align: top;
+							color: #fff;
+						}
+
+						.decrease span b,
+						.increase span b {
+							font-size: 0.82rem;
+							vertical-align: top;
+							color: #fff;
+						}
+					}
+				}
+			}
+
+			.revenue_box,
+			.attainment_box {
+				position: absolute;
+				left: auto;
+				right: 12px;
+				top: auto;
+				bottom: -15px;
+				display: inline-block;
+				padding: 5px 15px;
+				color: #333;
+				font-size: 0.73rem;
+				box-sizing: border-box;
+				border-radius: 20px;
+
+				&.loss_cut {
+					background: #7fc594;
+
+					.title {
+						color: #fff;
+						opacity: 1;
+					}
+				}
+			}
+
+			.containerArea_1 {
+				margin-top: 15px;
+				height: 200px;
+			}
+			
+		}
 	}
-}
 
-.globalStock .sub_recom .sub_top.view .chart_area .chartData .info {
-	margin-top: 5px;
-	margin-bottom: 3px;
-	padding: 0 15px;
-	position: relative;
-	clear: both;
-}
-
-.globalStock .sub_recom .sub_top.view .chart_area .chartData .info .eng {
-	color: #939393;
-	font-size: 0.75rem;
-}
-
-.globalStock .sub_recom .sub_top.view .chart_area .chartData .info li {
-	color: #939393;
-	font-size: 0.75rem;
-	line-height: normal;
-}
-
-.globalStock .sub_recom .sub_top.view .chart_area .chartData .info li.sum {
-	display: inline-block;
-}
-
-.globalStock .sub_recom .sub_top.view .chart_area .chartData .info li.port {
-	display: inline-block;
-	border-radius: 3px;
-	border: solid 1px #d3d3d3;
-	font-size: 9px;
-	font-weight: normal;
-	color: #939393;
-	margin-left: 5px;
-	padding: 1px 2px;
-	position: relative;
-	top: -1px;
-}
-
-.globalStock .sub_recom .sub_top.view .chart_area .chartData .info li.day {
-	color: #939393;
-	font-size: 0.85rem;
-	position: absolute;
-	right: 15px;
-	top: 0;
-}
-
-.globalStock .sub_recom .sub_top.view .chart_area .chartData .detail {
-	display: inline-block;
-	width: 100%;
-	padding: 0 15px;
-	box-sizing: border-box;
-	margin-top: 9px;
-	position: relative;
-}
-
-.globalStock .sub_recom .sub_top.view .chart_area .chartData .detail li {
-	display: inline-block;
-	font-size: 1rem;
-}
-
-.globalStock .sub_recom .sub_top.view .chart_area .chartData .detail .num,
-.globalStock .sub_recom .sub_top.view .chart_area .chartData .detail .per {
-	color: #333;
-	font-size: 1.2rem;
-}
-
-.globalStock .sub_recom .sub_top.view .chart_area .chartData .detail .num b,
-.globalStock .sub_recom .sub_top.view .chart_area .chartData .detail .per b {
-	font-weight: normal;
-	// opacity: 0.7;
-}
-
-.globalStock .sub_recom .sub_top.view .chart_area .chartData .detail .num.increase {
-	color: #F8385A;
-}
-
-.globalStock .sub_recom .sub_top.view .chart_area .chartData .detail .num.decrease {
-	color: #0094FF;
-}
-
-.globalStock .sub_recom .sub_top.view .chart_area .chartData .detail .num.increase b {
-	color: #F8385A;
-	font-weight: normal;
-	opacity: 0.7;
-}
-
-.globalStock .sub_recom .sub_top.view .chart_area .chartData .detail .num.decrease b {
-	color: #0094FF;
-	font-weight: normal;
-	opacity: 0.7;
-}
-
-.globalStock .sub_recom .sub_top.view .chart_area .chartData .detail .per {
-	padding-left: 6px;
-}
-
-.globalStock .sub_recom .sub_top.view .chart_area .chartData .detail .per .increase,
-.globalStock .sub_recom .sub_top.view .chart_area .chartData .detail .per .increase span {
-	color: #F8385A;
-	font-weight: normal;
-	font-size: 1rem;
-}
-
-.globalStock .sub_recom .sub_top.view .chart_area .chartData .detail .per .decrease,
-.globalStock .sub_recom .sub_top.view .chart_area .chartData .detail .per .decrease span {
-	color: #0094FF;
-	font-weight: normal;
-	font-size: 1rem;
-}
-
-.globalStock .sub_recom .sub_top.view .chart_area .chartData .detail .per .increase b {
-	color: #F8385A;
-	font-weight: normal;
-	opacity: 1;
-}
-
-.globalStock .sub_recom .sub_top.view .chart_area .chartData .detail .per .decrease b {
-	color: #0094FF;
-	font-weight: normal;
-	opacity: 1;
-}
-
-.globalStock .sub_recom .sub_top.view .chart_area .chartData .detail .per span {
-	color: #0094FF;
-}
-
-.globalStock .sub_recom .sub_top.view .chart_area .chartData .detail .day {
-	color: #939393;
-	font-size: 0.85rem;
-	position: absolute;
-	right: 15px;
-	top: 4px;
-}
-
-.globalStock .sub_recom .sub_top.view .chart_area .chartData .detail_data {
-	margin: 20px auto 0;
-	width: calc(100% - 20px);
-	background: #404fc3;
-	border-radius: 10px;
-	position: relative;
-}
-
-.globalStock .sub_recom .sub_top.view .chart_area .chartData .detail_data table th,
-.globalStock .sub_recom .sub_top.view .chart_area .chartData .detail_data table td {
-	text-align: left;
-	border-right: 1px solid #4e5cc8;
-	font-size: 1rem;
-}
-
-.globalStock .sub_recom .sub_top.view .chart_area .chartData .detail_data table th {
-	padding: 15px 11px 6px;
-}
-
-.globalStock .sub_recom .sub_top.view .chart_area .chartData .detail_data table td {
-	padding: 6px 11px 15px;
-}
-
-.globalStock .sub_recom .sub_top.view .chart_area .chartData .detail_data table tr th:last-child,
-.globalStock .sub_recom .sub_top.view .chart_area .chartData .detail_data table tr td:last-child {
-	border-right: none;
-}
-
-.globalStock .sub_recom .sub_top.view .chart_area .chartData .detail_data table th .day {
-	font-size: 0.75rem;
-	padding-left: 5px
-}
-
-.globalStock .sub_recom .sub_top.view .chart_area .chartData .detail_data table th span {
-	color: #fff;
-	opacity: 0.7;
-	font-size: 0.73rem;
-	font-weight: 300;
-}
-
-.globalStock .sub_recom .sub_top.view .chart_area .chartData .detail_data table td span {
-	color: #fff;
-	font-size: 1.28rem;
-	font-weight: 500;
-}
-
-.globalStock .sub_recom .sub_top.view .chart_area .chartData .detail_data table td span b {
-	color: #fff;
-	font-weight: normal;
-	opacity: 0.7;
-}
-
-.globalStock .sub_recom .sub_top.view .chart_area .chartData .detail_data table td.goal_num span {
-	color: #ffda0d;
-}
-
-.globalStock .sub_recom .sub_top.view .chart_area .chartData .detail_data table td.goal_num span b {
-	color: #ffda0d;
-}
-
-.globalStock .sub_recom .sub_top.view .chart_area .chartData.fix_data::before {
-	content: "";
-	display: block;
-	position: fixed;
-	left: 0;
-	right: 0;
-	top: 0;
-	padding: 10px 17px;
-	margin: 0;
-	width: 100%;
-	height: 54px;
-	position: fixed;
-	left: 0;
-	right: 0;
-	top: 0;
-	box-sizing: border-box;
-	z-index: 999;
-	box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.08);
-	background-color: #404fc3;
-}
-
-.globalStock .sub_recom .sub_top.view .chart_area .chartData.fix_data>.title {
-	width: calc(100% - 130px);
-	font-size: 1rem;
-	vertical-align: top;
-	color: #fff;
-	text-align: left;
-	position: fixed;
-	left: 0;
-	right: 0;
-	top: 17px;
-	z-index: 999;
-}
-
-.globalStock .sub_recom .sub_top.view .chart_area .chartData.fix_data>.title a {
-	font-size: 1rem;
-	color: #fff;
-	box-sizing: border-box;
-	display: inline-block;
-	overflow: hidden;
-	width: 100%;
-	text-overflow: ellipsis;
-	white-space: nowrap;
-	font-weight: normal;
-}
-
-.globalStock .sub_recom .sub_top.view .chart_area .chartData.fix_data .detail {
-	position: fixed;
-	left: 0;
-	right: 17px;
-	top: 0;
-	z-index: 999;
-	text-align: right;
-	margin-top: 19px;
-}
-
-.globalStock .sub_recom .sub_top.view .chart_area .chartData.fix_data .detail .day {
-	display: none;
-}
-
-.globalStock .sub_recom .sub_top.view .chart_area .chartData.fix_data .detail .num,
-.globalStock .sub_recom .sub_top.view .chart_area .chartData.fix_data .detail .per,
-.globalStock .sub_recom .sub_top.view .chart_area .chartData.fix_data .detail .num span,
-.globalStock .sub_recom .sub_top.view .chart_area .chartData.fix_data .detail .per span,
-.globalStock .sub_recom .sub_top.view .chart_area .chartData.fix_data .detail .num b,
-.globalStock .sub_recom .sub_top.view .chart_area .chartData.fix_data .detail .per b {
-	font-size: 1rem;
-	vertical-align: top;
-	color: #fff;
-	text-align: right;
-}
-
-.globalStock .sub_recom .sub_top.view .chart_area .chartData.fix_data .detail .num b,
-.globalStock .sub_recom .sub_top.view .chart_area .chartData.fix_data .detail .per b {
-	// font-weight: 100;
-	opacity: 1;
-}
-
-.globalStock .sub_recom .sub_top.view .chart_area .chartData.fix_data .detail .per {
-	margin-top: 2px;
-}
-
-.globalStock .sub_recom .sub_top.view .chart_area .chartData.fix_data .detail .per .decrease,
-.globalStock .sub_recom .sub_top.view .chart_area .chartData.fix_data .detail .per .increase,
-.globalStock .sub_recom .sub_top.view .chart_area .chartData.fix_data .detail .per .decrease b,
-.globalStock .sub_recom .sub_top.view .chart_area .chartData.fix_data .detail .per .increase b {
-	font-size: 0;
-}
-
-.globalStock .sub_recom .sub_top.view .chart_area .chartData.fix_data .detail .per .decrease span,
-.globalStock .sub_recom .sub_top.view .chart_area .chartData.fix_data .detail .per .increase span {
-	font-size: 0.82rem;
-	vertical-align: top;
-	color: #fff;
-}
-
-.globalStock .sub_recom .sub_top.view .chart_area .chartData.fix_data .detail .per .decrease span b,
-.globalStock .sub_recom .sub_top.view .chart_area .chartData.fix_data .detail .per .increase span b {
-	font-size: 0.82rem;
-	vertical-align: top;
-	color: #fff;
-}
-
-.globalStock .sub_recom .sub_top.view .revenue_box,
-.globalStock .sub_recom .sub_top.view .attainment_box {
-	position: absolute;
-	left: auto;
-	right: 12px;
-	top: auto;
-	bottom: -15px;
-	display: inline-block;
-	padding: 5px 15px;
-	color: #333;
-	font-size: 0.73rem;
-	box-sizing: border-box;
-	border-radius: 20px;
-}
-
-.globalStock .sub_recom .sub_top.view .revenue_box.loss_cut,
-.globalStock .sub_recom .sub_top.view .attainment_box.loss_cut {
-	background: #7fc594;
-}
-
-.globalStock .sub_recom .sub_top.view .revenue_box.loss_cut .title,
-.globalStock .sub_recom .sub_top.view .attainment_box.loss_cut .title {
-	color: #fff;
-	opacity: 1;
-}
-
-.globalStock .sub_recom .sub_top.view .containerArea_1 {
-	margin-top: 15px;
-	height: 200px;
+	
 }
 
 .globalStock .sub_recom .sub_mid .tabsArea {
