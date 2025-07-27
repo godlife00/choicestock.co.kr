@@ -7623,15 +7623,21 @@ table.tableRanking td {
 .globalStock .sub_recom .sub_top.view {
   background: #fff;
 }
-.globalStock .sub_recom .sub_top.view .recom_company {
-  position: relative;
-}
 .globalStock .sub_recom .sub_top.view .recom_company::after {
   display: none !important;
 }
-.globalStock .sub_recom .sub_top.view .recom_company .company_nm,
-.globalStock .sub_recom .sub_top.view .recom_company .company_nm a {
-  max-width: calc(100% - 80px);
+.globalStock .sub_recom .sub_top.view .recom_company .company_info:has(.stock_index) {
+  align-items: flex-start !important;
+  flex-direction: column !important;
+}
+.globalStock .sub_recom .sub_top.view .recom_company .company_info:has(.stock_index) .company_name {
+  max-width: calc(100% - 85px) !important;
+}
+.globalStock .sub_recom .sub_top.view .recom_company .company_info .company_name {
+  max-width: calc(100% - 135px);
+}
+.globalStock .sub_recom .sub_top.view .recom_company .company_info .company_details {
+  flex: none;
 }
 .globalStock .sub_recom .sub_top.view .recom_company .company_info .link_btn {
   position: absolute;

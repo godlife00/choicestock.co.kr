@@ -6864,14 +6864,34 @@ table.tableRanking td {
 .globalStock .sub_recom .sub_top.view {
 	background: #fff;
 
-	.recom_company {
-		position: relative;
+	.recom_company {		
 		&::after {
 			display: none !important;
 		}
-		.company_nm,
-		.company_nm a {
-			max-width: calc(100% - 80px);
+		
+		.company_info  {
+			&:has(.stock_index) {
+				align-items: flex-start !important;			
+				flex-direction: column !important;
+				.company_name {					
+					max-width: calc(100% - 85px) !important;
+				}
+			}
+
+			.company_name {
+				// width: 100%;
+				max-width: calc(100% - 135px);
+			}
+			.company_nm,
+			.company_nm a {
+				// max-width: calc(100% - 185px);
+			}
+
+		}
+		
+		.company_info .company_details {
+			// width: 100%;
+			flex: none;
 		}
 		.company_info .link_btn {
 			position: absolute;
