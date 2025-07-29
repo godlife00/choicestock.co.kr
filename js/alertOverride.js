@@ -1,4 +1,9 @@
-// window.alert 재정의
+/**
+ * 사용자에게 메시지를 표시하는 커스텀 alert 함수입니다.
+ * 
+ * @param {string} message - 사용자에게 표시할 메시지입니다.
+ * @param {string} [bottomPosition='55px'] - alert 창의 하단 위치를 지정하는 선택적 매개변수입니다. 기본값은 '55px'입니다.
+ */
 window.alert = function(message, bottomPosition = '55px') {
     // alertWin 요소 찾기
     var alertWin = document.getElementById('alertWin');
@@ -13,7 +18,7 @@ window.alert = function(message, bottomPosition = '55px') {
         alertWin.style.bottom = bottomPosition; // 파라미터로 받은 값 사용
         alertWin.style.transform = 'translate(-50%, -50%)';
         alertWin.style.display = 'none';
-        alertWin.style.zIndex = '99';
+        alertWin.style.zIndex = '10001';
         alertWin.style.maxWidth = '84%';
         alertWin.style.boxSizing = 'border-box';
         alertWin.style.margin = '0 auto';
