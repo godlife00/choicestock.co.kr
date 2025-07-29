@@ -8099,7 +8099,16 @@
 		$consumerMonopoly : #D6E0EA; //소비자독점
 		$profitTurnaround : #7694E7; //흑자전환
 		$goldenCross : #E36B6D; //골든크로스
-		$growthDiscovery : #E79366; //발굴성장주		
+		$growthDiscovery : #E79366; //발굴성장주
+		$aiSignalTrade : #608CFA; //AI신호매매
+		$memeTrend : #F8D95F; //밈 & 트렌드
+		$nDollarPenny : #87CD64; //N달러 동전주
+		$investmentMaster : #79D5A9; //투자 대가주
+		$undervaluedStocks : #975F47; //기업가치 대비 저평가주
+		$attractiveBlueChips : #E79366; //투자매력 우량주
+		$aiAttractiveStocks : #76BCE7; //AI투자매력주
+		$pegGrowthStocks : #D6E0EA; //피터린치의 PEG성장주 발굴
+		$deadCrossCheck : #E7B676; //주가하락 체크! 데드크로스
 		$wh : 164px;
 		margin-top: 0;
 
@@ -8139,11 +8148,11 @@
 		.sub_mid.recipe_tabs .box_tabs .list_masonry {
 			display: flex;
 			flex-wrap: wrap;
-			gap: 48px 14px;
+			gap: 48px 16px;
 		}
 
 		.sub_mid.recipe_tabs .box_tabs .list_masonry>.figure {
-			width: calc(50% - 7px);
+			width: calc(50% - 8px);
 			min-width: 150px;
 
 			@media (min-width: 576px) {
@@ -8184,28 +8193,44 @@
 			&.profitTurnaround a,
 			&.goldenCross a,
 			&.growthDiscovery a,
-			&.rocketBooster a {
+			&.rocketBooster a,
+			&.aiSignalTrade a,
+			&.memeTrend a,
+			&.nDollarPenny a,
+			&.investmentMaster a,
+			&.undervaluedStocks a,
+			&.attractiveBlueChips a,
+			&.aiAttractiveStocks a,
+			&.pegGrowthStocks a,
+			&.deadCrossCheck a {
 				display: block;
 				background: none;
-				padding: 0 8px;
+				padding: 0;
 				text-align: left;
-				color: #6A727B;
-				font-size: 13px;
-				font-weight: 400;
-				line-height: 1.3;
+				color: var(--Font-primary-subtitle, #6B7684);
+				font-family: var(--Body, Pretendard);
+				font-size: var(--Size-sm, 14px);
+				font-style: normal;
+				font-weight: var(--Weight-400, 400);
+				line-height: var(--Line-height-lg, 21px); /* 150% */
+				letter-spacing: var(--Tracking-md, -0.3px);
 				word-break: break-all;
 				word-wrap: break-word;
 				overflow: hidden;
 				display: -webkit-box;
 				-webkit-line-clamp: 5;
-				-webkit-box-orient: vertical;
+				-webkit-box-orient: vertical;				
 
 				strong {
 					display: block;
-					color: #333;
-					font-size: 18px;
-					font-weight: 700;
-					padding-bottom: 8px;
+					color: var(--Font-secondary-title, #24282C);
+					font-family: var(--Title, Pretendard);
+					font-size: var(--Size-xl-01, 18px);
+					font-style: normal;
+					font-weight: var(--Weight-600, 600);
+					line-height: var(--Line-height-xl-01, 24px); /* 133.333% */
+					letter-spacing: var(--Tracking-md, -0.3px);
+					padding-bottom: 4px;
 				}
 			}
 
@@ -8309,10 +8334,90 @@
 			}
 
 			&.rocketBooster {
-
-				// 발굴성장주
+				// 로켓부스터
 				&::before {
 					background: $rocketBooster url('/img/rocketBooster.png') no-repeat center 14px;
+					background-size: auto 132px;
+				}
+			}
+
+			&.aiSignalTrade {
+
+				// AI신호매매
+				&::before {
+					background: $aiSignalTrade url('/img/aiSignalTrade.png') no-repeat center 14px;
+					background-size: auto 132px;
+				}
+			}
+
+			&.memeTrend {
+
+				// 밈 & 트렌드
+				&::before {
+					background: $memeTrend url('/img/memeTrend.png') no-repeat center 14px;
+					background-size: auto 132px;
+				}
+			}
+
+			&.nDollarPenny {
+
+				// N달러 동전주
+				&::before {
+					background: $nDollarPenny url('/img/nDollarPenny.png') no-repeat center 14px;
+					background-size: auto 132px;
+				}
+			}
+
+			&.investmentMaster {
+
+				// 투자 대가주
+				&::before {
+					background: $investmentMaster url('/img/investmentMaster.png') no-repeat center 14px;
+					background-size: auto 132px;
+				}
+			}
+
+			&.undervaluedStocks {
+
+				// 기업가치 대비 저평가주
+				&::before {
+					background: $undervaluedStocks url('/img/undervaluedStocks.png') no-repeat center 14px;
+					background-size: auto 132px;
+				}
+			}
+
+			&.attractiveBlueChips {
+
+				// 투자매력 우량주
+				&::before {
+					background: $attractiveBlueChips url('/img/attractiveBlueChips.png') no-repeat center 14px;
+					background-size: auto 132px;
+				}
+			}
+
+			&.aiAttractiveStocks {
+
+				// AI투자매력주
+				&::before {
+					background: $aiAttractiveStocks url('/img/aiAttractiveStocks.png') no-repeat center 14px;
+					background-size: auto 132px;
+				}
+			}
+
+			&.pegGrowthStocks {
+
+				// 피터린치의 PEG성장주 발굴
+				&::before {
+					background: $pegGrowthStocks url('/img/pegGrowthStocks.png') no-repeat center 14px;
+					background-size: auto 132px;
+				}
+			}
+
+			&.deadCrossCheck {
+
+				// 주가하락 체크! 데드크로스
+				&::before {
+					background: $deadCrossCheck url('/img/deadCrossCheck.png') no-repeat center 14px;
 					background-size: auto 132px;
 				}
 			}
@@ -8327,6 +8432,7 @@
 
 		// 레시피 뷰
 		.sub_top.view {
+			background-color: $jump;
 			.update_info {
 				color: #939393;
 				font-size: 12px;
@@ -8585,6 +8691,163 @@
 				.update_info {
 					color: rgba(255, 255, 255, 0.7);
 
+				}
+			}
+
+			&.aiSignalTrade {
+
+				// AI신호매매
+				.box_tabs {
+					background-color: $aiSignalTrade;
+
+					&::before {
+						background: $aiSignalTrade url('/img/aiSignalTrade.png') no-repeat center center;
+					}
+				}
+
+				.update_info {
+					color: rgba(255, 255, 255, 0.7);
+
+				}
+			}
+
+			&.memeTrend {
+
+				// 밈 & 트렌드
+				.box_tabs {
+					strong {
+						color: #333;
+					}
+
+					color: rgba(51, 51, 51, 0.70);
+					background-color: $memeTrend;
+
+					&::before {
+						background: $memeTrend url('/img/memeTrend.png') no-repeat center center;
+					}
+				}
+			}
+
+			&.nDollarPenny {
+
+				// N달러 동전주
+				.box_tabs {
+					background-color: $nDollarPenny;
+
+					&::before {
+						background: $nDollarPenny url('/img/nDollarPenny.png') no-repeat center center;
+					}
+				}
+
+				.update_info {
+					color: rgba(255, 255, 255, 0.7);
+
+				}
+			}
+
+			&.investmentMaster {
+
+				// 투자 대가주
+				.box_tabs {
+					background-color: $investmentMaster;
+
+					&::before {
+						background: $investmentMaster url('/img/investmentMaster.png') no-repeat center center;
+					}
+				}
+
+				.update_info {
+					color: rgba(255, 255, 255, 0.7);
+
+				}
+			}
+
+			&.undervaluedStocks {
+
+				// 기업가치 대비 저평가주
+				.box_tabs {
+					background-color: $undervaluedStocks;
+
+					&::before {
+						background: $undervaluedStocks url('/img/undervaluedStocks.png') no-repeat center center;
+					}
+				}
+
+				.update_info {
+					color: rgba(255, 255, 255, 0.7);
+
+				}
+			}
+
+			&.attractiveBlueChips {
+
+				// 투자매력 우량주
+				.box_tabs {
+					background-color: $attractiveBlueChips;
+
+					&::before {
+						background: $attractiveBlueChips url('/img/attractiveBlueChips.png') no-repeat center center;
+					}
+				}
+
+				.update_info {
+					color: rgba(255, 255, 255, 0.7);
+
+				}
+			}
+
+			&.aiAttractiveStocks {
+
+				// AI투자매력주
+				.box_tabs {
+					background-color: $aiAttractiveStocks;
+
+					&::before {
+						background: $aiAttractiveStocks url('/img/aiAttractiveStocks.png') no-repeat center center;
+					}
+				}
+
+				.update_info {
+					color: rgba(255, 255, 255, 0.7);
+
+				}
+			}
+
+			&.pegGrowthStocks {
+
+				// 피터린치의 PEG성장주 발굴!
+				.box_tabs {
+					strong {
+						color: #333;
+					}
+
+					color: rgba(51, 51, 51, 0.70);
+					background-color: $pegGrowthStocks;
+
+					&::before {
+						background: $pegGrowthStocks url('/img/pegGrowthStocks.png') no-repeat center center;
+					}
+					.reference {
+						color: rgba(51, 51, 51, 0.7);
+					}
+					
+				}
+			}
+
+			&.deadCrossCheck {
+
+				// 주가하락 체크! 데드크로스
+				.box_tabs {
+					strong {
+						color: #333;
+					}
+
+					color: rgba(51, 51, 51, 0.70);
+					background-color: $deadCrossCheck;
+
+					&::before {
+						background: $deadCrossCheck url('/img/deadCrossCheck.png') no-repeat center center;
+					}
 				}
 			}
 		}
