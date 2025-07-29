@@ -18738,10 +18738,10 @@ table.tableRanking td {
 .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .box_tabs .list_masonry {
   display: flex;
   flex-wrap: wrap;
-  gap: 48px 14px;
+  gap: 48px 16px;
 }
 .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .box_tabs .list_masonry > .figure {
-  width: calc(50% - 7px);
+  width: calc(50% - 8px);
   min-width: 150px;
   box-sizing: border-box;
 }
@@ -18771,15 +18771,18 @@ table.tableRanking td {
   margin: 0 auto;
   border-radius: 16px;
 }
-.v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .box_tabs .list_masonry > .figure.jump a, .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .box_tabs .list_masonry > .figure.top50 a, .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .box_tabs .list_masonry > .figure.sale a, .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .box_tabs .list_masonry > .figure.earnings a, .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .box_tabs .list_masonry > .figure.dividend a, .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .box_tabs .list_masonry > .figure.growth a, .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .box_tabs .list_masonry > .figure.superStocks a, .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .box_tabs .list_masonry > .figure.consumerMonopoly a, .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .box_tabs .list_masonry > .figure.profitTurnaround a, .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .box_tabs .list_masonry > .figure.goldenCross a, .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .box_tabs .list_masonry > .figure.growthDiscovery a, .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .box_tabs .list_masonry > .figure.rocketBooster a {
+.v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .box_tabs .list_masonry > .figure.jump a, .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .box_tabs .list_masonry > .figure.top50 a, .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .box_tabs .list_masonry > .figure.sale a, .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .box_tabs .list_masonry > .figure.earnings a, .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .box_tabs .list_masonry > .figure.dividend a, .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .box_tabs .list_masonry > .figure.growth a, .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .box_tabs .list_masonry > .figure.superStocks a, .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .box_tabs .list_masonry > .figure.consumerMonopoly a, .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .box_tabs .list_masonry > .figure.profitTurnaround a, .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .box_tabs .list_masonry > .figure.goldenCross a, .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .box_tabs .list_masonry > .figure.growthDiscovery a, .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .box_tabs .list_masonry > .figure.rocketBooster a, .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .box_tabs .list_masonry > .figure.aiSignalTrade a, .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .box_tabs .list_masonry > .figure.memeTrend a, .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .box_tabs .list_masonry > .figure.nDollarPenny a, .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .box_tabs .list_masonry > .figure.investmentMaster a, .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .box_tabs .list_masonry > .figure.undervaluedStocks a, .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .box_tabs .list_masonry > .figure.attractiveBlueChips a, .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .box_tabs .list_masonry > .figure.aiAttractiveStocks a, .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .box_tabs .list_masonry > .figure.pegGrowthStocks a, .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .box_tabs .list_masonry > .figure.deadCrossCheck a {
   display: block;
   background: none;
-  padding: 0 8px;
+  padding: 0;
   text-align: left;
-  color: #6A727B;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 1.3;
+  color: var(--Font-primary-subtitle, #6B7684);
+  font-family: var(--Body, Pretendard);
+  font-size: var(--Size-sm, 14px);
+  font-style: normal;
+  font-weight: var(--Weight-400, 400);
+  line-height: var(--Line-height-lg, 21px); /* 150% */
+  letter-spacing: var(--Tracking-md, -0.3px);
   word-break: break-all;
   word-wrap: break-word;
   overflow: hidden;
@@ -18787,12 +18790,16 @@ table.tableRanking td {
   -webkit-line-clamp: 5;
   -webkit-box-orient: vertical;
 }
-.v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .box_tabs .list_masonry > .figure.jump a strong, .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .box_tabs .list_masonry > .figure.top50 a strong, .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .box_tabs .list_masonry > .figure.sale a strong, .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .box_tabs .list_masonry > .figure.earnings a strong, .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .box_tabs .list_masonry > .figure.dividend a strong, .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .box_tabs .list_masonry > .figure.growth a strong, .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .box_tabs .list_masonry > .figure.superStocks a strong, .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .box_tabs .list_masonry > .figure.consumerMonopoly a strong, .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .box_tabs .list_masonry > .figure.profitTurnaround a strong, .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .box_tabs .list_masonry > .figure.goldenCross a strong, .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .box_tabs .list_masonry > .figure.growthDiscovery a strong, .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .box_tabs .list_masonry > .figure.rocketBooster a strong {
+.v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .box_tabs .list_masonry > .figure.jump a strong, .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .box_tabs .list_masonry > .figure.top50 a strong, .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .box_tabs .list_masonry > .figure.sale a strong, .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .box_tabs .list_masonry > .figure.earnings a strong, .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .box_tabs .list_masonry > .figure.dividend a strong, .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .box_tabs .list_masonry > .figure.growth a strong, .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .box_tabs .list_masonry > .figure.superStocks a strong, .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .box_tabs .list_masonry > .figure.consumerMonopoly a strong, .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .box_tabs .list_masonry > .figure.profitTurnaround a strong, .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .box_tabs .list_masonry > .figure.goldenCross a strong, .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .box_tabs .list_masonry > .figure.growthDiscovery a strong, .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .box_tabs .list_masonry > .figure.rocketBooster a strong, .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .box_tabs .list_masonry > .figure.aiSignalTrade a strong, .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .box_tabs .list_masonry > .figure.memeTrend a strong, .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .box_tabs .list_masonry > .figure.nDollarPenny a strong, .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .box_tabs .list_masonry > .figure.investmentMaster a strong, .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .box_tabs .list_masonry > .figure.undervaluedStocks a strong, .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .box_tabs .list_masonry > .figure.attractiveBlueChips a strong, .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .box_tabs .list_masonry > .figure.aiAttractiveStocks a strong, .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .box_tabs .list_masonry > .figure.pegGrowthStocks a strong, .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .box_tabs .list_masonry > .figure.deadCrossCheck a strong {
   display: block;
-  color: #333;
-  font-size: 18px;
-  font-weight: 700;
-  padding-bottom: 8px;
+  color: var(--Font-secondary-title, #24282C);
+  font-family: var(--Title, Pretendard);
+  font-size: var(--Size-xl-01, 18px);
+  font-style: normal;
+  font-weight: var(--Weight-600, 600);
+  line-height: var(--Line-height-xl-01, 24px); /* 133.333% */
+  letter-spacing: var(--Tracking-md, -0.3px);
+  padding-bottom: 4px;
 }
 .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .box_tabs .list_masonry > .figure.jump::before {
   background: #646FCD url("/img/jump.png") no-repeat center 14px;
@@ -18840,6 +18847,42 @@ table.tableRanking td {
 }
 .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .box_tabs .list_masonry > .figure.rocketBooster::before {
   background: #646FCD url("/img/rocketBooster.png") no-repeat center 14px;
+  background-size: auto 132px;
+}
+.v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .box_tabs .list_masonry > .figure.aiSignalTrade::before {
+  background: #608CFA url("/img/aiSignalTrade.png") no-repeat center 14px;
+  background-size: auto 132px;
+}
+.v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .box_tabs .list_masonry > .figure.memeTrend::before {
+  background: #F8D95F url("/img/memeTrend.png") no-repeat center 14px;
+  background-size: auto 132px;
+}
+.v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .box_tabs .list_masonry > .figure.nDollarPenny::before {
+  background: #87CD64 url("/img/nDollarPenny.png") no-repeat center 14px;
+  background-size: auto 132px;
+}
+.v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .box_tabs .list_masonry > .figure.investmentMaster::before {
+  background: #79D5A9 url("/img/investmentMaster.png") no-repeat center 14px;
+  background-size: auto 132px;
+}
+.v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .box_tabs .list_masonry > .figure.undervaluedStocks::before {
+  background: #975F47 url("/img/undervaluedStocks.png") no-repeat center 14px;
+  background-size: auto 132px;
+}
+.v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .box_tabs .list_masonry > .figure.attractiveBlueChips::before {
+  background: #E79366 url("/img/attractiveBlueChips.png") no-repeat center 14px;
+  background-size: auto 132px;
+}
+.v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .box_tabs .list_masonry > .figure.aiAttractiveStocks::before {
+  background: #76BCE7 url("/img/aiAttractiveStocks.png") no-repeat center 14px;
+  background-size: auto 132px;
+}
+.v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .box_tabs .list_masonry > .figure.pegGrowthStocks::before {
+  background: #D6E0EA url("/img/pegGrowthStocks.png") no-repeat center 14px;
+  background-size: auto 132px;
+}
+.v_signalStreng.globalStock .sub_recipe.new_recipe .sub_mid.recipe_tabs .box_tabs .list_masonry > .figure.deadCrossCheck::before {
+  background: #E7B676 url("/img/deadCrossCheck.png") no-repeat center 14px;
   background-size: auto 132px;
 }
 .v_signalStreng.globalStock .sub_recipe.new_recipe .banner_signal {
@@ -18932,6 +18975,9 @@ table.tableRanking td {
   font-weight: var(--Weight-600, 600);
   line-height: var(--Line-height-xs-13, 16px); /* 123.077% */
   letter-spacing: var(--Tracking-md, -0.3px);
+}
+.v_signalStreng.globalStock .sub_recipe.new_recipe .sub_top.view {
+  background-color: #646FCD;
 }
 .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_top.view .update_info {
   color: #939393;
@@ -19093,6 +19139,93 @@ table.tableRanking td {
 }
 .v_signalStreng.globalStock .sub_recipe.new_recipe .sub_top.view.rocketBooster .update_info {
   color: rgba(255, 255, 255, 0.7);
+}
+.v_signalStreng.globalStock .sub_recipe.new_recipe .sub_top.view.aiSignalTrade .box_tabs {
+  background-color: #608CFA;
+}
+.v_signalStreng.globalStock .sub_recipe.new_recipe .sub_top.view.aiSignalTrade .box_tabs::before {
+  background: #608CFA url("/img/aiSignalTrade.png") no-repeat center center;
+}
+.v_signalStreng.globalStock .sub_recipe.new_recipe .sub_top.view.aiSignalTrade .update_info {
+  color: rgba(255, 255, 255, 0.7);
+}
+.v_signalStreng.globalStock .sub_recipe.new_recipe .sub_top.view.memeTrend .box_tabs {
+  color: rgba(51, 51, 51, 0.7);
+  background-color: #F8D95F;
+}
+.v_signalStreng.globalStock .sub_recipe.new_recipe .sub_top.view.memeTrend .box_tabs strong {
+  color: #333;
+}
+.v_signalStreng.globalStock .sub_recipe.new_recipe .sub_top.view.memeTrend .box_tabs::before {
+  background: #F8D95F url("/img/memeTrend.png") no-repeat center center;
+}
+.v_signalStreng.globalStock .sub_recipe.new_recipe .sub_top.view.nDollarPenny .box_tabs {
+  background-color: #87CD64;
+}
+.v_signalStreng.globalStock .sub_recipe.new_recipe .sub_top.view.nDollarPenny .box_tabs::before {
+  background: #87CD64 url("/img/nDollarPenny.png") no-repeat center center;
+}
+.v_signalStreng.globalStock .sub_recipe.new_recipe .sub_top.view.nDollarPenny .update_info {
+  color: rgba(255, 255, 255, 0.7);
+}
+.v_signalStreng.globalStock .sub_recipe.new_recipe .sub_top.view.investmentMaster .box_tabs {
+  background-color: #79D5A9;
+}
+.v_signalStreng.globalStock .sub_recipe.new_recipe .sub_top.view.investmentMaster .box_tabs::before {
+  background: #79D5A9 url("/img/investmentMaster.png") no-repeat center center;
+}
+.v_signalStreng.globalStock .sub_recipe.new_recipe .sub_top.view.investmentMaster .update_info {
+  color: rgba(255, 255, 255, 0.7);
+}
+.v_signalStreng.globalStock .sub_recipe.new_recipe .sub_top.view.undervaluedStocks .box_tabs {
+  background-color: #975F47;
+}
+.v_signalStreng.globalStock .sub_recipe.new_recipe .sub_top.view.undervaluedStocks .box_tabs::before {
+  background: #975F47 url("/img/undervaluedStocks.png") no-repeat center center;
+}
+.v_signalStreng.globalStock .sub_recipe.new_recipe .sub_top.view.undervaluedStocks .update_info {
+  color: rgba(255, 255, 255, 0.7);
+}
+.v_signalStreng.globalStock .sub_recipe.new_recipe .sub_top.view.attractiveBlueChips .box_tabs {
+  background-color: #E79366;
+}
+.v_signalStreng.globalStock .sub_recipe.new_recipe .sub_top.view.attractiveBlueChips .box_tabs::before {
+  background: #E79366 url("/img/attractiveBlueChips.png") no-repeat center center;
+}
+.v_signalStreng.globalStock .sub_recipe.new_recipe .sub_top.view.attractiveBlueChips .update_info {
+  color: rgba(255, 255, 255, 0.7);
+}
+.v_signalStreng.globalStock .sub_recipe.new_recipe .sub_top.view.aiAttractiveStocks .box_tabs {
+  background-color: #76BCE7;
+}
+.v_signalStreng.globalStock .sub_recipe.new_recipe .sub_top.view.aiAttractiveStocks .box_tabs::before {
+  background: #76BCE7 url("/img/aiAttractiveStocks.png") no-repeat center center;
+}
+.v_signalStreng.globalStock .sub_recipe.new_recipe .sub_top.view.aiAttractiveStocks .update_info {
+  color: rgba(255, 255, 255, 0.7);
+}
+.v_signalStreng.globalStock .sub_recipe.new_recipe .sub_top.view.pegGrowthStocks .box_tabs {
+  color: rgba(51, 51, 51, 0.7);
+  background-color: #D6E0EA;
+}
+.v_signalStreng.globalStock .sub_recipe.new_recipe .sub_top.view.pegGrowthStocks .box_tabs strong {
+  color: #333;
+}
+.v_signalStreng.globalStock .sub_recipe.new_recipe .sub_top.view.pegGrowthStocks .box_tabs::before {
+  background: #D6E0EA url("/img/pegGrowthStocks.png") no-repeat center center;
+}
+.v_signalStreng.globalStock .sub_recipe.new_recipe .sub_top.view.pegGrowthStocks .box_tabs .reference {
+  color: rgba(51, 51, 51, 0.7);
+}
+.v_signalStreng.globalStock .sub_recipe.new_recipe .sub_top.view.deadCrossCheck .box_tabs {
+  color: rgba(51, 51, 51, 0.7);
+  background-color: #E7B676;
+}
+.v_signalStreng.globalStock .sub_recipe.new_recipe .sub_top.view.deadCrossCheck .box_tabs strong {
+  color: #333;
+}
+.v_signalStreng.globalStock .sub_recipe.new_recipe .sub_top.view.deadCrossCheck .box_tabs::before {
+  background: #E7B676 url("/img/deadCrossCheck.png") no-repeat center center;
 }
 .v_signalStreng.globalStock .sub_recipe.new_recipe .l_box {
   display: flex;
