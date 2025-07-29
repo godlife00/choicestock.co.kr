@@ -39667,6 +39667,125 @@ body.v_signalStreng {
   letter-spacing: var(--Tracking-md, -0.3px);
 }
 
+.globalStock.v_signalStreng .whyRise_main {
+  background-color: #fff;
+}
+.globalStock.v_signalStreng .whyRise_main .card_list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px 8px;
+  padding: 32px 20px;
+  box-sizing: border-box;
+  border-bottom: 8px solid #F1F4F6;
+}
+.globalStock.v_signalStreng .whyRise_main .card_list .news_card .news_header .title_logo {
+  display: flex;
+  align-items: center;
+}
+.globalStock.v_signalStreng .whyRise_main .card_list .news_card .news_header .title_logo .logo {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--Background-primary-light-background, #F1F4F6);
+  background-size: 36px 36px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.globalStock.v_signalStreng .whyRise_main .card_list .news_card .news_header .title_logo .logo img {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+}
+.globalStock.v_signalStreng .whyRise_main .card_list .news_card .news_header .badge {
+  position: relative;
+  left: -6px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px 4px;
+  padding: 3px 8px;
+  border-radius: 100px;
+  border: 1px solid #FFF;
+  color: #FFF;
+  font-family: Pretendard;
+  font-size: var(--Size-xs-13, 13px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: var(--Line-height-xs-13, 16px); /* 123.077% */
+  letter-spacing: var(--Tracking-md, -0.3px);
+}
+.globalStock.v_signalStreng .whyRise_main .card_list .news_card .news_header .badge.up {
+  background: var(--Red-red500, #F03E4C);
+}
+.globalStock.v_signalStreng .whyRise_main .card_list .news_card .news_header .badge.down {
+  background: var(--Font-down-blue, #097DF3);
+}
+.globalStock.v_signalStreng .whyRise_main .card_list .news_card .news_content .title {
+  color: var(--Font-primary-title, #1F242B);
+  font-family: var(--Title, Pretendard);
+  font-size: var(--Size-2xl, 20px);
+  font-style: normal;
+  font-weight: var(--Weight-600, 600);
+  line-height: var(--Line-height-2xl, 26px); /* 130% */
+  letter-spacing: var(--Tracking-md, -0.3px);
+}
+.globalStock.v_signalStreng .whyRise_main .card_list .news_card .news_content .timestamp {
+  color: var(--Font-secondary-caption, #6B7684);
+  font-family: var(--Body, Pretendard);
+  font-size: var(--Size-xs-13, 13px);
+  font-style: normal;
+  font-weight: var(--Weight-400, 400);
+  line-height: var(--Line-height-xs-13, 16px); /* 123.077% */
+  letter-spacing: var(--Tracking-md, -0.3px);
+}
+.globalStock.v_signalStreng .whyRise_main .card_list .news_card .news_content .analysis {
+  color: var(--Font-secondary-body, #4E5866);
+  font-family: var(--Body, Pretendard);
+  font-size: var(--Size-md-15, 15px);
+  font-style: normal;
+  font-weight: var(--Weight-400, 400);
+  line-height: var(--Line-height-xl-01, 24px); /* 160% */
+  letter-spacing: var(--Tracking-md, -0.3px);
+}
+.globalStock.v_signalStreng .whyRise_main .card_list .news_card .news_footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 4px;
+  width: 100%;
+}
+.globalStock.v_signalStreng .whyRise_main .card_list .news_card .news_footer .tag {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px 4px;
+  padding: 6px 8px;
+  border-radius: var(--Radius-r-02, 8px);
+  background: var(--Background-primary-light-background, #F1F4F6);
+  color: var(--Gray-gray600, #6B7684);
+  font-family: var(--Body, Pretendard);
+  font-size: var(--Size-xs-13, 13px);
+  font-style: normal;
+  font-weight: var(--Weight-500, 500);
+  line-height: var(--Line-height-xs-13, 16px); /* 123.077% */
+  letter-spacing: var(--Tracking-md, -0.3px);
+}
+.globalStock.v_signalStreng .whyRise_main .card_list .news_card .news_footer .alert {
+  background: var(--Red-red50, #FEF2F3);
+  color: var(--Red-red500, #F03E4C);
+}
+.globalStock.v_signalStreng .whyRise_main .card_list .news_card .news_footer .caution {
+  color: #E9835B;
+  background: var(--Beige-beige50, #FAF3EA);
+}
+.globalStock.v_signalStreng .whyRise_main .card_list .news_card .news_footer .good {
+  color: #4168F6;
+  background: var(--Blue-blue100, #ECF0FF);
+}
 #container.sub_view .view_con .video_box {
   display: flex;
   align-items: center;

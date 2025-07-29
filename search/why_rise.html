@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no" />
+    <title>초이스스탁</title>
+    <meta name="robots" content="데이터히어로 미국주식">
+    <meta name="description" content="투자를 쉽고 편리하게, 미국주식가이드, 종목분석, 종목토론, 데이터히어로">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="theme-color" content="#2C295D">
+    <!-- 오픈 그래프 -->
+    <meta property="og:title" content="데이터히어로 미국주식" />
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="투자를 쉽고 편리하게, 미국주식가이드, 종목분석, 종목토론, 데이터히어로">
+    <meta property="og:image" content="http://godlife.ivyro.net/test/img/choicestockus_thumb.png">
+    <meta property="og:image:width" content="410" />
+    <meta property="og:image:height" content="210" />
+    <meta property="og:url" content="http://us.itooza.com">
+    <!-- 검색엔진 SEO 최적화 -->
+    <!-- https://www.choicestock.co.kr/search/summary 검색결과 대표 표준 페이지로 지정 -->
+    <link rel="canonical" href="https://www.choicestock.co.kr/search/summary" />
+    <!-- jquery-1.12 -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <!-- highstock -->
+    <script src="http://godlife.ivyro.net/highcharts/stock/highstock.js"></script>
+    <script src="http://godlife.ivyro.net/highcharts/stock/modules/data.js"></script>
+    <script src="http://godlife.ivyro.net/highcharts/stock/modules/hollowcandlestick.js"></script>
+    <script src="http://godlife.ivyro.net/highcharts/stock/modules/no-data-to-display.js"></script>
+    <script src="http://godlife.ivyro.net/highcharts/stock/modules/treemap.js"></script>
+    <script src="http://godlife.ivyro.net/highcharts/stock/highcharts-more.js"></script>
+    <script src="http://godlife.ivyro.net/highcharts/stock/modules/exporting.js"></script>
+    <script src="http://godlife.ivyro.net/highcharts/stock/modules/export-data.js"></script>
+    <script src="http://godlife.ivyro.net/highcharts/stock/modules/accessibility.js"></script>
+    <script src="../js/chartjs.js?ver=250413"></script>
+    <!-- html2canvas js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.3.2/html2canvas.min.js"></script>
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="../css/scss/choicestock.css?ver=22233" />
+    <!-- js -->
+    <script src="../js/choicestock.js?ver=250413"></script>
+    <!-- 이 아래는 로컬에서만 사용되는 파일 -->
+    <!-- <script src="../js/local.js"></script> -->
+    <!-- 로컬에서만 사용되는 파일 종료  -->
+</head>
+
+<body class="v_signalStreng globalStock">
+    <div id="wrap">
+
+        <!-- 하단 GNB -->
+        <div class="gnb">
+            <ul class="list">
+                <li class="home active"><a href="index.html" class="home">홈</a></li>
+                <li class="sch"><a href="search/searching.html" class="sch">검색</a></li>
+                <li class="stock"><a href="stock/recom.html" class="stock">추천/신호</a></li>
+                <li class="excavation"><a href="stock/note.html" class="excavation">뉴스/발굴</a></li>
+                <li class="attention"><a href="search/searching_attention.html" class="attention">관심</a></li>
+            </ul>
+        </div>
+        <!-- //gnb -->         
+
+        <div id="header" class="header">
+            <div class="headerTop">
+                <div class="left">
+                    <h1 class="headerLogo"><span>이 종목, 왜 올랐을까?</span></h1>
+                </div>
+                <div class="cen"></div>
+                <div class="right">
+                    <a href="stock/menu.html" class="h_menu">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M21 18.8008C21.5523 18.8008 22 19.2485 22 19.8008C22 20.3531 21.5523 20.8008 21 20.8008H3C2.44772 20.8008 2 20.3531 2 19.8008C2 19.2485 2.44772 18.8008 3 18.8008H21ZM21 10.4004C21.5523 10.4004 22 10.8481 22 11.4004C22 11.9527 21.5523 12.4004 21 12.4004H3C2.44772 12.4004 2 11.9527 2 11.4004C2 10.8481 2.44772 10.4004 3 10.4004H21ZM21 2C21.5523 2 22 2.44772 22 3C22 3.55228 21.5523 4 21 4H3C2.44772 4 2 3.55228 2 3C2 2.44772 2.44772 2 3 2H21Z" fill="#24282C"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <!-- //headerTop -->
+        </div>
+
+        <!-- 왜 올랐을까? class = whyRise_main-->
+        <div id="container" class="whyRise_main">
+            <div class="card_list">
+
+                <div class="news_card">
+                    <div class="news_header">
+                        <div class="title_logo">
+                            <span class="logo"><img src="https://uslogo.datahero.co.kr/img/logo/us/mvl/AAPL.svg" alt=""></span>
+                            <div class="badge up">
+                                <!-- 급등 : up -->
+                                <svg xmlns="http://www.w3.org/2000/svg" width="9" height="10" viewBox="0 0 9 10" fill="none">
+                                    <path d="M5.3 2.56667C4.9 2.03333 4.1 2.03333 3.7 2.56667L1.2 5.9C0.705573 6.55924 1.17595 7.5 2 7.5L7 7.5C7.82405 7.5 8.29443 6.55924 7.8 5.9L5.3 2.56667Z" fill="white"/>
+                                </svg> 15% 이상 급등
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <!-- //news_header -->
+                    <div class="news_content">
+                        <h2 class="title">애플 2분기 실적발표. 매출 954억 달러, 전년 동기 대비 5% 증가</h2>
+                        <p class="timestamp">06.31 23:33 · 실적발표</p>
+                        <p class="analysis">[분석] 사면초가에 몰린 애플, 최악의 2025년 현주소 진단</p>
+                        <p class="analysis">퀄컴, 애플 결별로 70억 달러 타격 예상... AI 데이터센터...</p>
+                    </div>
+                    <!-- //news_content -->
+                    <div class="news_footer">
+                        <span class="tag alert">🔥 주가 급등중!</span>
+                        <span class="tag alert"><i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M7.42493 1.73888C7.50026 1.66317 7.5898 1.60309 7.68842 1.5621C7.78704 1.5211 7.89279 1.5 7.99959 1.5C8.1064 1.5 8.21214 1.5211 8.31076 1.5621C8.40938 1.60309 8.49893 1.66317 8.57426 1.73888L13.5756 6.31888L13.6003 6.34288C14.0723 6.83888 13.7849 7.76355 13.0109 7.76355H10.6316V13.6635C10.6316 14.1029 10.2863 14.5002 9.81026 14.5002H6.18893C5.71293 14.5002 5.36759 14.1029 5.36759 13.6629V7.76355H2.98826C2.21426 7.76355 1.92693 6.83888 2.39893 6.34355L2.42359 6.31955L7.42493 1.73888Z" fill="#F03E4C"/>
+                          </svg></i>스마트스코어 상승중!</span>
+                        <span class="tag caution">⚠️주의가 필요해요</span>
+                        <span class="tag good">👍지금 사면 좋아요</span>
+                        <span class="tag">지금 실검중</span>
+                        <span class="tag">로켓성장중</span>
+                    </div>
+                    <!-- //news_footer -->
+                </div>
+                <div class="news_card">
+                    <div class="news_header">
+                        <div class="title_logo">
+                            <span class="logo"><img src="https://uslogo.datahero.co.kr/img/logo/us/mvl/AAPL.svg" alt=""></span>
+                            <div class="badge down">
+                                <!-- 하락 : down -->
+                                <svg xmlns="http://www.w3.org/2000/svg" width="9" height="10" viewBox="0 0 9 10" fill="none">
+                                    <path d="M5.3 2.56667C4.9 2.03333 4.1 2.03333 3.7 2.56667L1.2 5.9C0.705573 6.55924 1.17595 7.5 2 7.5L7 7.5C7.82405 7.5 8.29443 6.55924 7.8 5.9L5.3 2.56667Z" fill="white"/>
+                                </svg> 15% 이상 급등
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <!-- //news_header -->
+                    <div class="news_content">
+                        <h2>애플 2분기 실적발표. 매출 954억 달러, 전년 동기 대비 5% 증가</h2>
+                        <p class="timestamp">06.31 23:33 · 실적발표</p>
+                        <p class="analysis">[분석] 사면초가에 몰린 애플, 최악의 2025년 현주소 진단</p>
+                        <p class="additional_info">퀄컴, 애플 결별로 70억 달러 타격 예상... AI 데이터센터...</p>
+                    </div>
+                    <!-- //news_content -->
+                    <div class="news_footer">
+                        <span class="alert">🔥 주가 급등중!</span>
+                        <span class="caution">⚠️ 주의가 필요해요</span>
+                        <span class="status">지금 실검중</span>
+                        <span class="growth">로켓성장중</span>
+                    </div>
+                    <!-- //news_footer -->
+                </div>
+
+            </div>
+            <!-- //card_list -->
+            
+        </div>
+        <!-- //container -->
+
+        <!-- 서브 푸터  class="chous_footer" -->
+        <div id="footer" class="chous_footer">
+            <div class="f_top">
+                <h5 class="f_title">투자유의</h5>
+                <p class="f_txt">데이터히어로가 제공하는 모든 정보는 투자 참고용으로만 제공되며 특정 주식 매매를 추천하거나 투자 결정의 유일한 근거로 사용되어서는 안 됩니다.</p>
+                <p class="f_txt">모든 투자에는 원금 손실 위험이 따르므로 투자 전 개인의 투자목표와 위험성향을 신중히 고려하여 본인 판단에 따라 투자하시기 바라며, 당사는 제공된 정보로
+                    인한 투자 결과에 대해 법적 책임을 지지 않습니다.</p>
+                <p class="dataLink">Data Powered by NASDAQ, S&P Global, and Benzinga</a>
+                </p>
+            </div>
+
+            <div class="foot_info">
+                <h5 class="f_title">© (주)데이터히어로</h5>
+                <ul class="term_list">
+                    <li><a href="/member/terms">이용약관</a></li>
+                    <li><a href="/member/policy"><strong>개인정보 처리방침</strong></a></li>
+                    <li><a href="https://flannel-twist-68c.notion.site/US-cd2eb85ff9694403b6430b83e546398d"
+                            target="_blank">서비스 FAQ</a></li>
+                </ul>
+            </div>
+
+        </div>
+        <!-- //footer -->
+    </div>
+    <!-- //wrap -->
+</body>
