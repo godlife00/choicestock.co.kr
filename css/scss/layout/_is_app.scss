@@ -1,7 +1,8 @@
 // 앱 환경에서 body.is-app 로 적용되는 스타일
-body.is-app {    
-    .chart_capture {
-        display: none;
-        opacity: 0;
-    }
-}
+// 이제 앱에서도 다운로드 가능해서 해당 스타일 삭제 250728
+// body.is-app {    
+//     .chart_capture {
+//         display: none;
+//         opacity: 0;
+//     }
+// }

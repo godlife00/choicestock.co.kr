@@ -3861,7 +3861,17 @@ table.tableRanking td {
   white-space: nowrap;
 }
 
-@media (min-width: 361px) and (max-width: 700px) {
+@media only screen and (min-width: 361px) and (max-width: 700px) and (device-aspect-ratio: 2/3) {
+  /* 아이폰용 스타일 */
+  .globalStock .main_mid.attention_area table.tableRanking .title a {
+    width: 120px;
+  }
+}
+@media only screen and (min-width: 361px) and (max-width: 700px) and (device-aspect-ratio: 16/9) {
+  /* 갤럭시 폰용 스타일 */
+  .globalStock .main_mid.attention_area table.tableRanking .title a {
+    width: 140px;
+  }
   .globalStock .main_mid.attention_area table.tableRanking .title a {
     width: 130px;
   }
@@ -49122,11 +49132,6 @@ body.v_signalStreng {
   margin-right: 4px;
   border-radius: 50%;
   background-size: 100% 100%;
-}
-
-body.is-app .chart_capture {
-  display: none;
-  opacity: 0;
 }
 
 #container {
