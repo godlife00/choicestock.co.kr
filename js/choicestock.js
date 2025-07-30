@@ -274,8 +274,6 @@ $(document).ready(function () {
     //검색 상단 고정 종목명,
     function initScrollFixElements() {
         var search_height = $('.globalStock .sub_search .search_top').height();
-        var recom_height = $('.globalStock .sub_recom .search_top').height();
-        var chartarea_height = $('.globalStock .sub_recom .sub_top.view .chart_area .chartData').height();
 
         $(window).scroll(function () {
             if ($(this).scrollTop() > 210) {
@@ -284,21 +282,13 @@ $(document).ready(function () {
             } else {
                 $('.globalStock .sub_search .search_top .data_area').removeClass('fix_data'); 
                 $('.globalStock .sub_search .search_top').css('height', 'auto');
-            };
-
-            if ($(this).scrollTop() > 210) {
-                $('.globalStock .sub_recom .sub_top.view .chart_area .chartData').addClass('fix_data');
-                $('.globalStock .sub_recom .search_top').css('height', recom_height);            
-            } else {
-                $('.globalStock .sub_recom .sub_top.view .chart_area .chartData').removeClass('fix_data');
-                $('.globalStock .sub_recom .search_top').css('height', 'auto');
             }
         });        
     }
     initScrollFixElements();
 
     // 종목검색 상단 고정 종목명,
-    if ($('.company_nm').length) {
+    if ($('.company_nm').length) {        
         function makeSticky() {        
             var sticky = $('.company_nm'), // 고정시키고 싶은 요소의 클래스 이름
                 stickyOffset = sticky.offset().top; // 요소의 초기 상단 위치
