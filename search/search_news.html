@@ -85,44 +85,86 @@
             <div class="gnb">
                 <ul class="list">
                     <li class="home"><a href="../index.html">홈</a></li>
-                    <li class="sch"><a href="../search/searching.html">검색</a></li>
-                    <li class="stock active"><a href="../stock/recom.html">추천</a></li>                
-                    <li class="excavation"><a href="../stock/note.html">발굴</a></li>                
-                    <li class="attention"><a href="../search/searching_attention.html">관심</a></li>                
+                    <li class="sch active"><a href="../search/searching.html">검색</a></li>
+                    <li class="stock"><a href="../stock/recom.html">추천/신호</a></li>
+                    <li class="excavation"><a href="../stock/note.html">뉴스/발굴</a></li>
+                    <li class="attention"><a href="../search/searching_attention.html">관심</a></li>
                 </ul>
             </div>
             <!-- //gnb -->
+            
             <!-- 검색 종목 -->
             <div class="recom_company">
-                <ul class="list">
-                    <li class="ticker">AAPL</li>
-                    <li class="stock_index"><span>NASDAQ</span><span>S&P500</span></li>
-                    <li class="company_nm">마이크로소프트</li>
-                    <li class="detail">
-                        <div class="num">
-                            <span><b>1,898.</b>00</span>
+                <div class="list_wrap">
+                    <div class="company_info">
+                        <div class="list company_name">
+                            <div class="company_nm" id="originalCompanyName">테슬라</div>
                         </div>
-                        <div class="per">
-                            <span class="increase"><b>+89.</b>89</span>
-                            <span class="increase">(<b>+89.</b>89%)</span>
-                            <!-- increase 증가, decrease 감소, 보합은 same -->
-                            <span class="day">23. 07/03 88:88 USD</span>
+                        <div class="list company_details">
+                            <div class="ticker">TSLA</div>
+                            <div class="stock_index">
+                                <span>NASDAQ</span>
+                                <span>S&amp;P500</span>
+                            </div>
                         </div>
-                    </li>
-                </ul>
+                    </div>
+                    <!-- //company_info -->
+                    <ul class="list">
+                        <li class="detail">
+                            <div class="num">
+                                <span id="last_price">295.<b>10</b></span>
+                            </div>
+                            <div class="per">
+                                <span class="increase" id="diff">+10.40</span>
+                                <span class="increase" id="diff_rate">(+3.65<b>%</b>)</span>
+                                <span class="day">06/06, 장마감</span>
+                            </div>
+                        </li>
+                        <!-- 애프터마켓 -->
+                        <li class="detail market_status">
+                            <div class="after_market">
+                                애프터마켓
+                            </div>
+                            <div class="num">
+                                <span id="over_last_price"><b>297</b>.38</span>
+                            </div>
+                            <div class="per">
+                                <span id="over_diff" class="increase"><b>+2</b>.24</span>
+                                <span id="over_diff_rate" class="increase">(<b>+0</b>.76%)</span>
+                                <span id="over_price_date" class="day">장마감, USD</span>
+                            </div>
+                        </li>
+                        <!-- 프리마켓 -->
+                        <li class="detail market_status">
+                            <div class="pre_market">
+                                프리마켓
+                            </div>
+                            <div class="num">
+                                <span><b>898.</b>00</span>
+                            </div>
+                            <div class="per">
+                                <span class="decrease"><b>-89.</b>89</span>
+                                <span class="decrease">(<b>-89.</b>89%)</span>
+                                <!-- increase 증가, decrease 감소, 보합은 same -->
+                                <span class="day">11:35, USD</span>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+
                 <div class="attention_box">
                     <ul>
-                        <li class="attention" id="catch_icon_one_sub"><i></i><strong id="catch_count_one">76</strong>명의
+                        <li class="attention" id="catch_icon_one_sub"><i></i><strong
+                                id="catch_count_one">7,817</strong>명의
                             관심</li>
                     </ul>
                     <div class="stock_tag">
-                        <span>#배당매력주</span>
-                        <span>#관심TOP50</span>
-                        <span>#이익성장주</span>
+                        <span><a href="/stock/recipe/moat">#소비자독점주</a></span> <span><a
+                                href="/stock/recipe/interest">#관심TOP50</a></span>
                     </div>
                 </div>
             </div>
-            <!-- //recom_company -->
 
             <div class="sub_mid nondata" style="display: none;">
                 <p class="nodata_guide"><strong>GOOG</strong>의 상세 기업정보는 <strong><a href="/search/invest_charm/GOOGL?pn=&amp;pg=">GOOGL</a></strong> 종목에서 확인할 수 있습니다.</p>

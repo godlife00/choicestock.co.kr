@@ -69,43 +69,85 @@
                 <ul class="list">
                     <li class="home"><a href="../index.html">홈</a></li>
                     <li class="sch active"><a href="../search/searching.html">검색</a></li>
-                    <li class="stock"><a href="../stock/recom.html">추천</a></li>
-                    <li class="excavation"><a href="../stock/note.html">발굴</a></li>
+                    <li class="stock"><a href="../stock/recom.html">추천/신호</a></li>
+                    <li class="excavation"><a href="../stock/note.html">뉴스/발굴</a></li>
                     <li class="attention"><a href="../search/searching_attention.html">관심</a></li>
                 </ul>
             </div>
             <!-- //gnb -->
+            
             <!-- 검색 종목 -->
             <div class="recom_company">
-                <ul class="list">
-                    <li class="ticker">AAPL</li>
-                    <li class="stock_index"><span>NASDAQ</span><span>S&P500</span></li>
-                    <li class="company_nm">마이크로소프트</li>
-                    <li class="detail">
-                        <div class="num">
-                            <span><b>1,898.</b>00</span>
+                <div class="list_wrap">
+                    <div class="company_info">
+                        <div class="list company_name">
+                            <div class="company_nm" id="originalCompanyName">테슬라</div>
                         </div>
-                        <div class="per">
-                            <span class="increase"><b>+89.</b>89</span>
-                            <span class="increase">(<b>+89.</b>89%)</span>
-                            <!-- increase 증가, decrease 감소, 보합은 same -->
-                            <span class="day">23. 07/03 88:88 USD</span>
+                        <div class="list company_details">
+                            <div class="ticker">TSLA</div>
+                            <div class="stock_index">
+                                <span>NASDAQ</span>
+                                <span>S&amp;P500</span>
+                            </div>
                         </div>
-                    </li>
-                </ul>
+                    </div>
+                    <!-- //company_info -->
+                    <ul class="list">
+                        <li class="detail">
+                            <div class="num">
+                                <span id="last_price">295.<b>10</b></span>
+                            </div>
+                            <div class="per">
+                                <span class="increase" id="diff">+10.40</span>
+                                <span class="increase" id="diff_rate">(+3.65<b>%</b>)</span>
+                                <span class="day">06/06, 장마감</span>
+                            </div>
+                        </li>
+                        <!-- 애프터마켓 -->
+                        <li class="detail market_status">
+                            <div class="after_market">
+                                애프터마켓
+                            </div>
+                            <div class="num">
+                                <span id="over_last_price"><b>297</b>.38</span>
+                            </div>
+                            <div class="per">
+                                <span id="over_diff" class="increase"><b>+2</b>.24</span>
+                                <span id="over_diff_rate" class="increase">(<b>+0</b>.76%)</span>
+                                <span id="over_price_date" class="day">장마감, USD</span>
+                            </div>
+                        </li>
+                        <!-- 프리마켓 -->
+                        <li class="detail market_status">
+                            <div class="pre_market">
+                                프리마켓
+                            </div>
+                            <div class="num">
+                                <span><b>898.</b>00</span>
+                            </div>
+                            <div class="per">
+                                <span class="decrease"><b>-89.</b>89</span>
+                                <span class="decrease">(<b>-89.</b>89%)</span>
+                                <!-- increase 증가, decrease 감소, 보합은 same -->
+                                <span class="day">11:35, USD</span>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+
                 <div class="attention_box">
                     <ul>
-                        <li class="attention" id="catch_icon_one_sub"><i></i><strong id="catch_count_one">76</strong>명의
+                        <li class="attention" id="catch_icon_one_sub"><i></i><strong
+                                id="catch_count_one">7,817</strong>명의
                             관심</li>
                     </ul>
                     <div class="stock_tag">
-                        <span>#배당매력주</span>
-                        <span>#관심TOP50</span>
-                        <span>#이익성장주</span>
+                        <span><a href="/stock/recipe/moat">#소비자독점주</a></span> <span><a
+                                href="/stock/recipe/interest">#관심TOP50</a></span>
                     </div>
                 </div>
             </div>
-            <!-- //recom_company -->
 
             <div class="sub_mid nondata" style="display: none;">
                 <p class="nodata_guide"><strong>GOOG</strong>의 상세 기업정보는 <strong><a
@@ -126,20 +168,42 @@
                 <!-- //tabs_5 -->
                 <!-- //프리미엄 서비스 부분 -->
 
-                <ul class="tabs_3 tabs_depth2">
-                    <li><a href="search_finance.html">재무제표</a></li>
-                    <li class="active"><a href="search_diagnosis_finance.html">재무차트</a></li>
-                    <li><a href="search_invest.html">투자지표</a></li>
-                </ul>
+                <div class="sub_mid research_board">
+                    <div class="filter-swiper">
+                        <div class="filter_list">
+                            <div class="swiper-slide">
+                                <a href="search_finance.html" class="filterBtn_link">재무제표</a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="search_diagnosis_finance.html" class="filterBtn_link active">재무차트</a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="search_invest.html" class="filterBtn_link">투자지표</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    
+                </div>
+                <!-- //research_board -->
 
                 <div class="investCharm_area">
                     <div class="tab_diagnosis_area">
                         <div class="financecachart_area">
-                            <div class="tabs_menu">
-                                <span class="active">연환산</span>
-                                <span>연간</span>
-                                <span>분기</span>
+                            <!-- 분기 선택 -->
+                            <div class="interest_list">
+                                <div class="select_area">
+                                    <div class="selectBoxList" style="width: 80px;">
+                                        <select>
+                                            <option selected>연환산</option>
+                                            <option value="category1">연간</option>
+                                            <option value="category2">분기</option>
+                                        </select>
+                                    </div>
+                                    <!-- //selectBoxList -->
+                                </div>                        
                             </div>
+                            <!-- //interest_list -->
 
                             <div class="chart_area">
                                 <div class="box">
@@ -407,48 +471,36 @@
         </div>
         <!-- //container -->
 
-        <div id="footer" class="chous_footer">
-            <div class="notice">
-                <div class="service_info">
-                    <p>본 서비스는 투자판단에 참고용으로만 사용하실 수 있으며, 모든 투자판단은 투자자 본인의 책임으로 당사는 그 결과에 대해 법적인 일체의 책임을 지지 않습니다.</p>
-                    <p class="dataLink">data from <a href="https://www.quandl.com/" target="_blank">Quandl and
-                            Sharadar</a>
-                    </p>
-                </div>
-
-                <ul class="terms_list">
-                    <li><a href="terms.html">이용약관</a></li>
-                    <li><a href="https://www.datahero.co.kr/choicestockus-faq/" target="_blank">서비스 FAQ</a></li>
-                    <li><a href="policy.html"><strong>개인정보처리방침</strong></a></li>
-                    <li><a href="https://www.datahero.co.kr/choicestockus-update/" target="_black">업데이트 소식</a>
-                    </li>
-                    <li><a href="https://www.datahero.co.kr" target="_blank">회사소개</a></li>
-                </ul>
-
-                <div class="foot_info">
-                    <div class="info_tel_box">
-                        <span class="cs"><a href="https://kq64o.channel.io/" target="blank">온라인 1:1 문의하기</a> (평일
-                            9:00~17:00, 점심 11:20~12:20/ 주말 및 공휴일 휴무) </span>
-                    </div>
-                    <!-- //info_tel_box -->
-                    <p class="copyright"><a href="https://www.datahero.co.kr" target="_blank">ⓒ (주)데이터히어로</a><i></i>
-                        <strong>대표자</strong> 김인중 <br>서울특별시 서초구 강남대로 311 <i></i> 사업자등록번호 291-88-01393 <i></i>
-                        <!-- <strong>대표번호 <a href="tel:02-6225-2300"><strong>02-6225-2300</strong></a></strong> -->
-                    </p>
-                </div>
-                <!-- //foot_info -->
-                <div class="family_site">
-                    <strong>Family</strong>&nbsp;&nbsp;&nbsp;&gt;&nbsp;&nbsp;&nbsp;
-                    <a href="https://super.choicestock.co.kr/?utm_source=choicestock&amp;utm_medium=banner&amp;utm_campaign=service"
-                        target="blank">슈퍼스톡스</a><i></i>
-                    <a href="https://value.choicestock.co.kr/?utm_source=choicestock&amp;utm_medium=banner&amp;utm_campaign=service"
-                        target="blank">밸류라인</a>
-                    <i></i> <a href="https://bigfinance.co.kr/" target="blank">빅파이낸스</a>
-                </div>
-                <!-- //family_site -->
-
+        <div class="page_desc_wrap">
+            <div class="page_desc_inner">
+                <h5 class="f_title">재무차트</h5>
+                <p class="f_txt">재무차트는 재무제표를 일반 투자자가 알기 쉽게 시계열 차트로 제공합니다.</p>
+                <p class="f_txt">SEC 실적발표 후 1~2일 내 업데이트 됩니다.
+                <br><a href="https://flannel-twist-68c.notion.site/6179ddfd795446bf9d4e7900b16a567e" class="faq_link">자주묻는 질문 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3.91992 4L8.07992 8.16L4.23992 12" stroke="#8C98A7" stroke-linecap="round"></path></svg> </a>
+                </p>
+                <p class="f_txt">출처 : NASDAQ, 초이스스탁US 데이터</p>
             </div>
-            <!-- //notice -->
+        </div>
+
+        <div id="footer" class="chous_footer">
+            <div class="f_top">
+                <h5 class="f_title">투자유의</h5>
+                <p class="f_txt">데이터히어로가 제공하는 모든 정보는 투자 참고용으로만 제공되며 특정 주식 매매를 추천하거나 투자 결정의 유일한 근거로 사용되어서는 안 됩니다.</p>
+                <p class="f_txt">모든 투자에는 원금 손실 위험이 따르므로 투자 전 개인의 투자목표와 위험성향을 신중히 고려하여 본인 판단에 따라 투자하시기 바라며, 당사는 제공된 정보로
+                    인한 투자 결과에 대해 법적 책임을 지지 않습니다.</p>
+                <p class="dataLink">Data Powered by NASDAQ, S&amp;P Global, and Benzinga
+                </p>
+            </div>
+
+            <div class="foot_info">
+                <h5 class="f_title">© (주)데이터히어로</h5>
+                <ul class="term_list">
+                    <li><a href="/member/terms">이용약관</a></li>
+                    <li><a href="/member/policy"><strong>개인정보 처리방침</strong></a></li>
+                    <li><a href="https://flannel-twist-68c.notion.site/US-cd2eb85ff9694403b6430b83e546398d" target="_blank">서비스 FAQ</a></li>
+                </ul>
+            </div>
+
         </div>
 
     </div>
