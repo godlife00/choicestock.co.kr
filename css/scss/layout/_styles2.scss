@@ -6379,19 +6379,18 @@
 				border-collapse: collapse; /* iOS에서 보더 두줄 문제 해결 */
 				-webkit-appearance: none; /* iOS Safari 기본 스타일 제거 */
 				th, td {
-					border-top: 1px solid var(--Border-tertiary-border, #DADCE0);
+					border-bottom: 1px solid var(--Border-tertiary-border, #DADCE0);
 					border-right: 1px solid var(--Border-tertiary-border, #DADCE0);
-					border-bottom: none;					
+					background-color: #fff;
+					border-top: none;					
 					border-left: none;
 					box-sizing: border-box; /* iOS에서 보더 계산 정확성 보장 */
 					-webkit-transform: translateZ(0); /* iOS에서 렌더링 최적화 */
 				}
 
-				thead {
-					tr {
-						// border-bottom: 1px solid var(--Gray-gray700, #4E5866);
-					}
+				thead {					
 					th, td {
+						border-top: 1px solid var(--Border-tertiary-border, #DADCE0);
 						padding: 8px 8px;
 						text-align: right;
 						color: var(--Font-tertiary-caption, #8C98A7);
@@ -6464,10 +6463,7 @@
 				td {
 					min-height: 44px;
 					width: 89px;					
-					box-sizing: border-box;
-					// border: 1px solid var(--Border-tertiary-border, #DADCE0);
-					border-bottom: none;					
-					border-left: none;
+					box-sizing: border-box;					
 					text-align: right;
 
 					&.th_2line {
