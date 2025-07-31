@@ -38,7 +38,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
     <!-- css -->
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <link rel="stylesheet" type="text/css" href="../css/scss/choicestock.css" />
+    <link rel="stylesheet" type="text/css" href="../css/scss/choicestock.css?v=21322" />
     <!-- js -->
     <script src="../js/choicestock.js"></script>
 </head>
@@ -124,7 +124,7 @@
                 </ul>
             </div>
             <!-- //gnb -->
-            
+
             <!-- 검색 종목 -->
             <div class="recom_company">
                 <div class="list_wrap">
@@ -231,585 +231,139 @@
                         </div>
 
                     </div>
-                    
+
                 </div>
-                <!-- //research_board -->  
+                <!-- //research_board -->
 
                 <div class="search_financials_area">
 
-                    <div class="tabs_menu">
-                        <span class="active">연환산</span>
-                        <span>연간</span>
-                        <span>분기</span>
+                    <!-- 분기 선택 -->
+                    <div class="interest_list">
+                        <div class="select_area">
+                            <div class="selectBoxList" style="width: 80px;">
+                                <select>
+                                    <option disabled selected>연환산</option>
+                                    <option value="category1">연간</option>
+                                    <option value="category2">분기</option>
+                                </select>
+                            </div>
+                            <!-- //selectBoxList -->
+                        </div>
+                        <button class="table_more">표 자세히 보기</button>
                     </div>
-                    <!-- //tabs_menu -->
+                    <!-- //interest_list -->
 
                     <div class="scroll_table_wrap">
                         <!-- 손익계산서 table -->
                         <h4 class="table_title">손익계산서 <strong class="unit">* 단위 : 백만달러</strong></h4>
                         <div class="scroll_table">
-                            <table cellspacing="0" border="1" class="tableRanking">
-                                <colgroup>
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                </colgroup>
+                            <table cellspacing="0" border="0" class="tableRanking">                                
                                 <thead>
                                     <tr>
-                                        <th><!--<h4 class="tltle">손익계산서</h4>--></th>
-                                        <th><span>22.12/31</span></th>
-                                        <th><span>22.09/30</span></th>
-                                        <th><span>22.06/30</span></th>
-                                        <th><span>22.03/31</span></th>
-                                        <th><span>21.12/31</span></th>
-                                        <th><span>21.09/30</span></th>
-                                        <th><span>21.06/30</span></th>
-                                        <th><span>21.03/31</span></th>
-                                        <th><span>20.12/31</span></th>
-                                        <th><span>20.09/30</span></th>
-                                        <th><span>20.06/30</span></th>
-                                        <th><span>20.03/31</span></th>
-                                        <th><span>19.12/31</span></th>
-                                        <th><span>19.09/30</span></th>
-                                        <th><span>19.06/30</span></th>
-                                        <th><span>19.03/31</span></th>
-                                        <th><span>18.12/31</span></th>
-                                        <th><span>18.09/30</span></th>
-                                        <th><span>18.06/30</span></th>
-                                        <th><span>18.03/31</span></th>
-                                        <th><span>17.12/31</span></th>
-                                        <th><span>17.09/30</span></th>
-                                        <th><span>17.06/30</span></th>
-                                        <th><span>17.03/31</span></th>
-                                        <th><span>16.12/31</span></th>
-                                        <th><span>16.09/30</span></th>
-                                        <th><span>16.06/30</span></th>
-                                        <th><span>16.03/31</span></th>
-                                        <th><span>15.12/31</span></th>
-                                        <th><span>15.09/30</span></th>
-                                        <th><span>15.06/30</span></th>
-                                        <th><span>15.03/31</span></th>
-                                        <th><span>14.12/31</span></th>
-                                        <th><span>14.09/30</span></th>
-                                        <th><span>14.06/30</span></th>
-                                        <th><span>14.03/31</span></th>
-                                        <th><span>13.12/31</span></th>
-                                        <th><span>13.09/30</span></th>
-                                        <th><span>13.06/30</span></th>
-                                        <th><span>13.03/31</span></th>
+                                        <td>항목</td>
+                                        <th><span>24.12.31</span></th>
+                                        <th><span>23.12.31</span></th>
+                                        <th><span>22.12.31</span></th>
+                                        <th><span>21.12.31</span></th>
+                                        <th><span>20.12.31</span></th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr class="tr_emphasis">
                                         <td>매출액</td>
-                                        <td>204,094</td>
-                                        <td>203,075</td>
-                                        <td>198,270</td>
-                                        <td>192,557</td>
-                                        <td>184,903</td>
-                                        <td>176,251</td>
-                                        <td>168,088</td>
-                                        <td>159,969</td>
-                                        <td>153,284</td>
-                                        <td>147,114</td>
-                                        <td>143,015</td>
-                                        <td>138,699</td>
-                                        <td>134,249</td>
-                                        <td>129,814</td>
-                                        <td>125,843</td>
-                                        <td>122,211</td>
-                                        <td>118,459</td>
-                                        <td>114,906</td>
-                                        <td>110,360</td>
-                                        <td>105,880</td>
-                                        <td>102,273</td>
-                                        <td>99,181</td>
-                                        <td>96,571</td>
-                                        <td>97,414</td>
-                                        <td>94,733</td>
-                                        <td>92,703</td>
-                                        <td>91,154</td>
-                                        <td>86,886</td>
-                                        <td>88,084</td>
-                                        <td>90,758</td>
-                                        <td>93,580</td>
-                                        <td>94,782</td>
-                                        <td>93,456</td>
-                                        <td>91,505</td>
-                                        <td>86,833</td>
-                                        <td>83,347</td>
-                                        <td>83,433</td>
-                                        <td>80,370</td>
-                                        <td>77,849</td>
-                                        <td>76,012</td>
+                                        <td>1,333,304</td>
+                                        <td class="decrease">-31,896</td>
+                                        <td>1,596,111</td>
+                                        <td>918,812</td>
+                                        <td>502,234</td>
                                     </tr>
                                     <tr>
                                         <td>매출원가</td>
-                                        <td>64,984</td>
-                                        <td>64,456</td>
-                                        <td>62,650</td>
-                                        <td>60,212</td>
-                                        <td>57,642</td>
-                                        <td>54,876</td>
-                                        <td>52,232</td>
-                                        <td>50,580</td>
-                                        <td>48,510</td>
-                                        <td>46,674</td>
-                                        <td>46,078</td>
-                                        <td>44,151</td>
-                                        <td>43,346</td>
-                                        <td>43,411</td>
-                                        <td>42,910</td>
-                                        <td>42,240</td>
-                                        <td>41,339</td>
-                                        <td>39,980</td>
-                                        <td>38,353</td>
-                                        <td>37,067</td>
-                                        <td>35,858</td>
-                                        <td>34,695</td>
-                                        <td>34,261</td>
-                                        <td>33,784</td>
-                                        <td>33,446</td>
-                                        <td>33,417</td>
-                                        <td>32,780</td>
-                                        <td>32,269</td>
-                                        <td>31,708</td>
-                                        <td>31,972</td>
-                                        <td>33,038</td>
-                                        <td>33,203</td>
-                                        <td>32,020</td>
-                                        <td>30,206</td>
-                                        <td>27,078</td>
-                                        <td>25,183</td>
-                                        <td>23,992</td>
-                                        <td>21,362</td>
-                                        <td>20,385</td>
-                                        <td>18,810</td>
+                                        <td>864,812</td>
+                                        <td class="decrease">-881,782</td>
+                                        <td>894,581</td>
+                                        <td>555,818</td>
+                                        <td>375,675</td>
                                     </tr>
                                     <tr>
                                         <td>매출총이익</td>
-                                        <td>139,110</td>
-                                        <td>138,619</td>
-                                        <td>135,620</td>
-                                        <td>132,345</td>
-                                        <td>127,261</td>
-                                        <td>121,375</td>
-                                        <td>115,856</td>
-                                        <td>109,389</td>
-                                        <td>104,774</td>
-                                        <td>100,440</td>
-                                        <td>96,937</td>
-                                        <td>94,548</td>
-                                        <td>90,903</td>
-                                        <td>86,403</td>
-                                        <td>82,933</td>
-                                        <td>79,971</td>
-                                        <td>77,120</td>
-                                        <td>74,926</td>
-                                        <td>72,007</td>
-                                        <td>68,813</td>
-                                        <td>66,415</td>
-                                        <td>64,486</td>
-                                        <td>62,310</td>
-                                        <td>63,630</td>
-                                        <td>61,287</td>
-                                        <td>59,286</td>
-                                        <td>58,374</td>
-                                        <td>54,617</td>
-                                        <td>56,376</td>
-                                        <td>58,786</td>
-                                        <td>60,542</td>
-                                        <td>61,579</td>
-                                        <td>61,436</td>
-                                        <td>61,299</td>
-                                        <td>59,755</td>
-                                        <td>58,164</td>
-                                        <td>59,441</td>
-                                        <td>59,008</td>
-                                        <td>57,464</td>
-                                        <td>57,202</td>
+                                        <td>468,493</td>
+                                        <td class="decrease">-550,114</td>
+                                        <td>701,529</td>
+                                        <td>362,994</td>
+                                        <td>126,559</td>
                                     </tr>
                                     <tr>
                                         <td>판매관리비</td>
-                                        <td>29,668</td>
-                                        <td>28,415</td>
-                                        <td>27,725</td>
-                                        <td>27,051</td>
-                                        <td>26,385</td>
-                                        <td>25,708</td>
-                                        <td>25,224</td>
-                                        <td>24,918</td>
-                                        <td>24,693</td>
-                                        <td>24,661</td>
-                                        <td>24,709</td>
-                                        <td>24,023</td>
-                                        <td>23,583</td>
-                                        <td>23,249</td>
-                                        <td>23,098</td>
-                                        <td>22,742</td>
-                                        <td>22,541</td>
-                                        <td>22,492</td>
-                                        <td>22,223</td>
-                                        <td>21,839</td>
-                                        <td>21,370</td>
-                                        <td>20,657</td>
-                                        <td>19,942</td>
-                                        <td>19,532</td>
-                                        <td>19,004</td>
-                                        <td>19,044</td>
-                                        <td>19,198</td>
-                                        <td>19,194</td>
-                                        <td>19,448</td>
-                                        <td>19,862</td>
-                                        <td>20,324</td>
-                                        <td>21,108</td>
-                                        <td>21,016</td>
-                                        <td>21,084</td>
-                                        <td>20,488</td>
-                                        <td>19,773</td>
-                                        <td>20,515</td>
-                                        <td>20,500</td>
-                                        <td>20,289</td>
-                                        <td>19,904</td>
+                                        <td>51,031</td>
+                                        <td>50,258</td>
+                                        <td>43,357</td>
+                                        <td>33,421</td>
+                                        <td>33,732</td>
                                     </tr>
                                     <tr>
                                         <td>연구개발비</td>
-                                        <td>26,627</td>
-                                        <td>25,541</td>
-                                        <td>24,512</td>
-                                        <td>23,350</td>
-                                        <td>22,248</td>
-                                        <td>21,389</td>
-                                        <td>20,716</td>
-                                        <td>20,243</td>
-                                        <td>19,926</td>
-                                        <td>19,630</td>
-                                        <td>19,269</td>
-                                        <td>18,568</td>
-                                        <td>17,997</td>
-                                        <td>17,464</td>
-                                        <td>16,876</td>
-                                        <td>16,296</td>
-                                        <td>15,695</td>
-                                        <td>15,129</td>
-                                        <td>14,726</td>
-                                        <td>14,307</td>
-                                        <td>13,947</td>
-                                        <td>13,505</td>
-                                        <td>13,037</td>
-                                        <td>12,669</td>
-                                        <td>12,294</td>
-                                        <td>12,132</td>
-                                        <td>11,988</td>
-                                        <td>11,936</td>
-                                        <td>11,940</td>
-                                        <td>11,943</td>
-                                        <td>12,046</td>
-                                        <td>12,075</td>
-                                        <td>11,834</td>
-                                        <td>11,679</td>
-                                        <td>11,381</td>
-                                        <td>11,041</td>
-                                        <td>10,938</td>
-                                        <td>10,718</td>
-                                        <td>10,411</td>
-                                        <td>10,222</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
                                     </tr>
                                     <tr class="tr_emphasis">
                                         <td>영업이익</td>
-                                        <td>82,815</td>
-                                        <td>84,663</td>
-                                        <td>83,383</td>
-                                        <td>81,944</td>
-                                        <td>78,628</td>
-                                        <td>74,278</td>
-                                        <td>69,916</td>
-                                        <td>64,228</td>
-                                        <td>60,155</td>
-                                        <td>56,149</td>
-                                        <td>52,959</td>
-                                        <td>51,957</td>
-                                        <td>49,323</td>
-                                        <td>45,690</td>
-                                        <td>42,959</td>
-                                        <td>40,933</td>
-                                        <td>38,884</td>
-                                        <td>37,305</td>
-                                        <td>35,058</td>
-                                        <td>32,361</td>
-                                        <td>30,792</td>
-                                        <td>30,018</td>
-                                        <td>29,025</td>
-                                        <td>30,319</td>
-                                        <td>28,879</td>
-                                        <td>27,000</td>
-                                        <td>26,078</td>
-                                        <td>15,049</td>
-                                        <td>16,360</td>
-                                        <td>18,110</td>
-                                        <td>18,161</td>
-                                        <td>26,696</td>
-                                        <td>27,076</td>
-                                        <td>27,269</td>
-                                        <td>27,759</td>
-                                        <td>27,350</td>
-                                        <td>27,988</td>
-                                        <td>27,790</td>
-                                        <td>26,764</td>
-                                        <td>20,883</td>
+                                        <td>384,630</td>
+                                        <td>417,590</td>
+                                        <td>602,298</td>
+                                        <td>296,977</td>
+                                        <td>71,818</td>
                                     </tr>
                                     <tr>
                                         <td>EBITDA</td>
-                                        <td>98,767</td>
-                                        <td>100,826</td>
-                                        <td>100,239</td>
-                                        <td>98,579</td>
-                                        <td>94,918</td>
-                                        <td>90,051</td>
-                                        <td>85,134</td>
-                                        <td>79,444</td>
-                                        <td>75,214</td>
-                                        <td>71,487</td>
-                                        <td>68,423</td>
-                                        <td>67,000</td>
-                                        <td>64,508</td>
-                                        <td>60,618</td>
-                                        <td>58,056</td>
-                                        <td>55,735</td>
-                                        <td>53,694</td>
-                                        <td>52,045</td>
-                                        <td>49,468</td>
-                                        <td>46,556</td>
-                                        <td>44,670</td>
-                                        <td>42,976</td>
-                                        <td>40,901</td>
-                                        <td>41,435</td>
-                                        <td>38,362</td>
-                                        <td>35,361</td>
-                                        <td>33,504</td>
-                                        <td>21,998</td>
-                                        <td>23,158</td>
-                                        <td>24,983</td>
-                                        <td>25,245</td>
-                                        <td>33,749</td>
-                                        <td>33,893</td>
-                                        <td>33,634</td>
-                                        <td>33,629</td>
-                                        <td>32,389</td>
-                                        <td>32,767</td>
-                                        <td>32,377</td>
-                                        <td>31,236</td>
-                                        <td>25,240</td>
+                                        <td>515,663</td>
+                                        <td>567,731</td>
+                                        <td>707,250</td>
+                                        <td>390,360</td>
+                                        <td>168,797</td>
                                     </tr>
                                     <tr>
                                         <td>영업외이익</td>
-                                        <td>1,762</td>
-                                        <td>2,125</td>
-                                        <td>2,396</td>
-                                        <td>2,810</td>
-                                        <td>3,302</td>
-                                        <td>3,520</td>
-                                        <td>3,532</td>
-                                        <td>3,370</td>
-                                        <td>3,031</td>
-                                        <td>2,868</td>
-                                        <td>2,668</td>
-                                        <td>2,827</td>
-                                        <td>3,161</td>
-                                        <td>3,112</td>
-                                        <td>3,415</td>
-                                        <td>3,528</td>
-                                        <td>3,752</td>
-                                        <td>4,141</td>
-                                        <td>4,149</td>
-                                        <td>4,107</td>
-                                        <td>4,047</td>
-                                        <td>3,497</td>
-                                        <td>3,098</td>
-                                        <td>2,771</td>
-                                        <td>1,884</td>
-                                        <td>1,384</td>
-                                        <td>804</td>
-                                        <td>744</td>
-                                        <td>785</td>
-                                        <td>883</td>
-                                        <td>1,127</td>
-                                        <td>847</td>
-                                        <td>871</td>
-                                        <td>679</td>
-                                        <td>658</td>
-                                        <td>586</td>
-                                        <td>528</td>
-                                        <td>588</td>
-                                        <td>717</td>
-                                        <td>788</td>
+                                        <td>-20,940</td>
+                                        <td>12,018</td>
+                                        <td>-16,338</td>
+                                        <td>-8,217</td>
+                                        <td>3,734</td>
+                                    </tr>
+                                    <tr>
+                                        <td>금융비용</td>
+                                        <td>103,193</td>
+                                        <td>103,841</td>
+                                        <td>80,273</td>
+                                        <td>44,316</td>
+                                        <td>39,298</td>
                                     </tr>
                                     <tr>
                                         <td>법인세</td>
-                                        <td>15,139</td>
-                                        <td>14,975</td>
-                                        <td>10,978</td>
-                                        <td>10,178</td>
-                                        <td>8,495</td>
-                                        <td>7,619</td>
-                                        <td>9,831</td>
-                                        <td>9,104</td>
-                                        <td>9,416</td>
-                                        <td>8,978</td>
-                                        <td>8,755</td>
-                                        <td>5,944</td>
-                                        <td>5,530</td>
-                                        <td>5,059</td>
-                                        <td>4,448</td>
-                                        <td>6,846</td>
-                                        <td>6,386</td>
-                                        <td>19,892</td>
-                                        <td>19,903</td>
-                                        <td>17,985</td>
-                                        <td>18,376</td>
-                                        <td>4,660</td>
-                                        <td>4,412</td>
-                                        <td>6,895</td>
-                                        <td>6,567</td>
-                                        <td>5,649</td>
-                                        <td>5,100</td>
-                                        <td>4,167</td>
-                                        <td>4,419</td>
-                                        <td>5,569</td>
-                                        <td>6,314</td>
-                                        <td>6,840</td>
-                                        <td>6,605</td>
-                                        <td>5,938</td>
-                                        <td>5,746</td>
-                                        <td>4,961</td>
-                                        <td>5,212</td>
-                                        <td>5,285</td>
-                                        <td>5,189</td>
-                                        <td>4,860</td>
+                                        <td>122,085</td>
+                                        <td>115,159</td>
+                                        <td>189,639</td>
+                                        <td>87,953</td>
+                                        <td>20,387</td>
                                     </tr>
-                                    <tr>
+                                    <tr class="tr_emphasis">
                                         <td>중단손익</td>
                                         <td>0</td>
                                         <td>0</td>
                                         <td>0</td>
                                         <td>0</td>
                                         <td>0</td>
-                                        <td>0</td>
-                                        <td>0</td>
-                                        <td>0</td>
-                                        <td>0</td>
-                                        <td>0</td>
-                                        <td>0</td>
-                                        <td>0</td>
-                                        <td>0</td>
-                                        <td>0</td>
-                                        <td>0</td>
-                                        <td>0</td>
-                                        <td>0</td>
-                                        <td>0</td>
-                                        <td>0</td>
-                                        <td>0</td>
-                                        <td>0</td>
-                                        <td>0</td>
-                                        <td>0</td>
-                                        <td>0</td>
-                                        <td>0</td>
-                                        <td>0</td>
-                                        <td>0</td>
-                                        <td>0</td>
-                                        <td>0</td>
-                                        <td>0</td>
-                                        <td>0</td>
-                                        <td>0</td>
-                                        <td>0</td>
-                                        <td>0</td>
-                                        <td>0</td>
-                                        <td>0</td>
-                                        <td>0</td>
-                                        <td>0</td>
-                                        <td>0</td>
-                                        <td>0</td>
                                     </tr>
-                                    <tr class="tr_emphasis">
+                                    <tr>
                                         <td>순이익</td>
-                                        <td>67,449</td>
-                                        <td>69,789</td>
-                                        <td>72,738</td>
-                                        <td>72,456</td>
-                                        <td>71,185</td>
-                                        <td>67,883</td>
-                                        <td>61,271</td>
-                                        <td>56,015</td>
-                                        <td>51,310</td>
-                                        <td>47,496</td>
-                                        <td>44,281</td>
-                                        <td>46,266</td>
-                                        <td>44,323</td>
-                                        <td>41,094</td>
-                                        <td>39,240</td>
-                                        <td>34,926</td>
-                                        <td>33,541</td>
-                                        <td>18,819</td>
-                                        <td>16,571</td>
-                                        <td>15,767</td>
-                                        <td>13,829</td>
-                                        <td>26,398</td>
-                                        <td>25,489</td>
-                                        <td>24,283</td>
-                                        <td>22,553</td>
-                                        <td>21,304</td>
-                                        <td>20,539</td>
-                                        <td>10,481</td>
-                                        <td>11,710</td>
-                                        <td>12,555</td>
-                                        <td>12,193</td>
-                                        <td>20,000</td>
-                                        <td>20,675</td>
-                                        <td>21,370</td>
-                                        <td>22,074</td>
-                                        <td>22,427</td>
-                                        <td>22,822</td>
-                                        <td>22,641</td>
-                                        <td>21,863</td>
-                                        <td>16,406</td>
+                                        <td>138,412</td>
+                                        <td>210,608</td>
+                                        <td>316,048</td>
+                                        <td>156,491</td>
+                                        <td>15,867</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -817,7 +371,7 @@
                         <!-- //scroll_table_wrap -->
 
                         <div class="scroll_table">
-                            <table cellspacing="0" border="1" class="tableRanking">
+                            <table cellspacing="0" border="0" class="tableRanking">
                                 <colgroup>
                                     <col width="">
                                     <col width="">
@@ -826,7 +380,7 @@
                                 </colgroup>
                                 <thead>
                                     <tr>
-                                        <th><!--<h4 class="tltle">손익계산서</h4>--></th>
+                                        <th>항목</th>
                                         <th><span>23.03/31</span></th>
                                         <th><span>22.03/31</span></th>
                                         <th><span>21.03/31</span></th>
@@ -903,87 +457,13 @@
                             </table>
                         </div>
 
-                        <div class="scroll_table">
-                            <table cellspacing="0" border="1" class="tableRanking">
-                                <colgroup>
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                </colgroup>
-                                <thead>
-                                    <tr>
-                                        <th></th>
-                                        <th></th>
-                                        <th><!--<h4 class="tltle">손익계산서</h4>--></th>
-                                        <th><span>23.03/31</span></th>
-                                        <th><span>22.03/31</span></th>
-                                        <th><span>21.03/31</span></th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr class="tr_emphasis">
-                                        <td>매출액</td>
-                                        <td>&nbsp;</td>
-                                        <td>&nbsp;</td>                                        
-                                        <td>2,679</td>
-                                        <td>2,703</td>
-                                        <td>2,027</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-
                         <!-- 재무상태표 table -->
                         <h4 class="table_title">재무상태표</h4>
                         <div class="scroll_table">
-                            <table cellspacing="0" border="1" class="tableRanking">
-                                <colgroup>
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                </colgroup>
+                            <table cellspacing="0" border="0" class="tableRanking">                                
                                 <thead>
                                     <tr>
-                                        <th><!--<h4 class="tltle">재무상태표</h4>--></th>
+                                        <th>항목</th>
                                         <th><span>22.12/31</span></th>
                                         <th><span>22.09/30</span></th>
                                         <th><span>22.06/30</span></th>
@@ -1980,53 +1460,10 @@
                         <!-- 현금흐름표 table -->
                         <h4 class="table_title">현금흐름표</h4>
                         <div class="scroll_table">
-                            <table cellspacing="0" border="1" class="tableRanking">
-                                <colgroup>
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                </colgroup>
+                            <table cellspacing="0" border="0" class="tableRanking">                                
                                 <thead>
                                     <tr>
-                                        <th><!--<h4 class="tltle">현금흐름표</h4>--></th>
+                                        <th>항목</th>
                                         <th><span>22.12/31</span></th>
                                         <th><span>22.09/30</span></th>
                                         <th><span>22.06/30</span></th>
@@ -2378,18 +1815,10 @@
                         <!-- 재무상태표2 table -->
                         <h4 class="table_title">재무상태표2</h4>
                         <div class="scroll_table">
-                            <table cellspacing="0" border="1" class="tableRanking">
-                                <colgroup>
-                                    <col width="70">
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                    <col width="">
-                                </colgroup>
+                            <table cellspacing="0" border="0" class="tableRanking">                                
                                 <thead>
                                     <tr>
-                                        <th><!--재무상태표2--></th>
+                                        <th>항목</th>
                                         <th><span>19.09/30</span></th>
                                         <th><span>19.09/30</span></th>
                                         <th><span>19.09/30</span></th>
