@@ -14272,6 +14272,7 @@ body.v_signalStreng {
 	// padding-bottom: 32px;
 	.filter_list {
 		@include filter_list;
+		margin-top: 0;		
 	}
 	.filter-swiper {				
 		@include filter_swiper;
