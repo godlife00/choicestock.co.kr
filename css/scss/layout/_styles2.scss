@@ -6235,7 +6235,7 @@
 			td, th {
 				height: 30px;
 				text-align: center;
-				border-bottom: 1px solid var(--Gray-gray700, #4E5866) !important;
+				border-bottom: 1px solid var(--Gray-gray700, #4E5866) !important;				
 			}
 		}
 
@@ -6378,9 +6378,9 @@
 				// background-color: #F4F4F5;
 				border-collapse: collapse; /* iOS에서 보더 두줄 문제 해결 */
 				-webkit-appearance: none; /* iOS Safari 기본 스타일 제거 */
-				th, td {
-					border-bottom: 1px solid var(--Border-tertiary-border, #DADCE0);
-					border-right: 1px solid var(--Border-tertiary-border, #DADCE0);
+				th, td {					
+					border-bottom: 1px solid var(--Border-primary-border, #E3E5E8);
+					border-right: 1px solid var(--Border-primary-border, #E3E5E8);
 					background-color: #fff;
 					border-top: none;					
 					border-left: none;
@@ -6393,13 +6393,13 @@
 						border-top: 1px solid var(--Border-tertiary-border, #DADCE0);
 						padding: 8px 8px;
 						text-align: right;
-						color: var(--Font-tertiary-caption, #8C98A7);
+						color: var(--Font-tertiary-caption, #8C98A7) !important;
 						font-family: var(--Body, Pretendard);
-						font-size: var(--Size-xs-13, 13px);
+						font-size: var(--Size-xs-13, 13px) !important;
 						font-style: normal;
-						font-weight: var(--Weight-500, 500);
+						font-weight: var(--Weight-500, 500) !important;
 						line-height: var(--Line-height-xs-13, 16px); /* 123.077% */
-						letter-spacing: var(--Tracking-md, -0.3px);
+						letter-spacing: var(--Tracking-md, -0.3px) !important;
 						span {
 							color: var(--Font-tertiary-caption, #8C98A7);
 							font-family: var(--Body, Pretendard);
@@ -6412,31 +6412,26 @@
 					}
 				}
 
-				tbody {
-					// &:last-child {
-					// 	td {
-					// 		border-bottom: 1px solid var(--Border-tertiary-border, #DADCE0);
-					// 	}
-					// }
+				tbody {					
 					tr {
-						// border-bottom: 1px solid #E0E4E9;
-
 						&.tr_emphasis,
-						&.tr_emphasis td {
-							// background: #ececf7;
+						&.tr_emphasis td {							
 							background: var(--Background-blue-background, #F6F8FF);							
 							font-size: var(--Size-sm, 14px);
 							font-weight: 500;							
 						}
+						&.tr_emphasis td:first-child,
+						&.tr_emphasis td:first-child span {
+							color: var(--Font-secondary-title, #24282C);
+							font-family: var(--Body, Pretendard);
+							font-size: var(--Size-sm, 14px);
+							font-style: normal;
+							font-weight: var(--Weight-600, 600);
+							line-height: var(--Line-height-sm, 18px); /* 128.571% */
+							letter-spacing: var(--Tracking-md, -0.3px);
 
-						// &.tr_emphasis td:nth-child(2n) {
-						// 	background: #F5F5FC;
-						// }
-
-						// &.tr_emphasis td:first-child,
-						// &.tr_emphasis td:first-child span {
-						// 	color: #525A95;
-						// }
+							
+						}
 					}
 				}
 
@@ -6467,8 +6462,13 @@
 					text-align: right;
 
 					&.th_2line {
-						padding: 5px 2px 4px 8px !important;
-						line-height: 1.2 !important;
+						color: var(--Font-secondary-title, #24282C);
+						font-family: var(--Body, Pretendard);
+						font-size: var(--Size-sm, 14px);
+						font-style: normal;
+						font-weight: var(--Weight-400, 400);
+						line-height: var(--Line-height-sm, 18px); /* 128.571% */
+						letter-spacing: var(--Tracking-md, -0.3px);
 					}
 				}
 
@@ -6479,9 +6479,29 @@
 					padding-left: 12px;					
 					box-sizing: border-box;
 					width: 108px;
-					background-color: #fff;
+					background-color: #fff;					
+					border-right: 1px solid var(--Border-tertiary-border, #DADCE0) !important;
+					color: var(--Font-secondary-title, #24282C);
+					font-family: var(--Body, Pretendard);
+					font-size: var(--Size-sm, 14px);
+					font-style: normal;
+					font-weight: var(--Weight-400, 400);
+					line-height: var(--Line-height-sm, 18px); /* 128.571% */
+					letter-spacing: var(--Tracking-md, -0.3px);
 					text-align: left;					
 					z-index: 1; /* 추가하여 우측 보더가 사라지는 문제 해결 */
+					&::after {
+						// 스크롤시 고정영역 우측 보더 사라지는 현상 해결
+						content: '';
+						position: absolute;
+						right: -1px;
+						top: 0;
+						bottom: 0;
+						display: inline-block;
+						width: 1px;
+						height: 100%;
+						background-color: var(--Border-tertiary-border, #DADCE0);
+					}
 				}
 
 				.table_search_invest {
