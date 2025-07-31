@@ -6379,8 +6379,8 @@
 				border-collapse: collapse; /* iOS에서 보더 두줄 문제 해결 */
 				-webkit-appearance: none; /* iOS Safari 기본 스타일 제거 */
 				th, td {
-					border-bottom: 1px solid var(--Border-tertiary-border, #DADCE0);
-					border-right: 1px solid var(--Border-tertiary-border, #DADCE0);
+					border-bottom: 1px solid var(--Border-primary-border, #E3E5E8);
+					border-right: 1px solid var(--Border-primary-border, #E3E5E8);					
 					background-color: #fff;
 					border-top: none;					
 					border-left: none;
@@ -6479,9 +6479,29 @@
 					padding-left: 12px;					
 					box-sizing: border-box;
 					width: 108px;
-					background-color: #fff;
+					background-color: #fff;					
+					border-right: 1px solid var(--Border-tertiary-border, #DADCE0) !important;
+					color: var(--Font-secondary-title, #24282C);
+					font-family: var(--Body, Pretendard);
+					font-size: var(--Size-sm, 14px);
+					font-style: normal;
+					font-weight: var(--Weight-400, 400);
+					line-height: var(--Line-height-sm, 18px); /* 128.571% */
+					letter-spacing: var(--Tracking-md, -0.3px);
 					text-align: left;					
 					z-index: 1; /* 추가하여 우측 보더가 사라지는 문제 해결 */
+					&::after {
+						// 스크롤시 고정영역 우측 보더 사라지는 현상 해결
+						content: '';
+						position: absolute;
+						right: -1px;
+						top: 0;
+						bottom: 0;
+						display: inline-block;
+						width: 1px;
+						height: 100%;
+						background-color: var(--Border-tertiary-border, #DADCE0);
+					}
 				}
 
 				.table_search_invest {
