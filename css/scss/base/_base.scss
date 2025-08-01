@@ -1,0 +1,546 @@
+// =============================================================================
+// CHOICESTOCK BASE STYLES
+// =============================================================================
+// 기본 HTML 요소들의 스타일 정의
+// 프로젝트 전반에 걸쳐 사용되는 기본 스타일들
+
+// =============================================================================
+// 📋 MAIN WRAPPER & CONTAINER
+// =============================================================================
+
+// 메인 래퍼 - 전체 레이아웃 컨테이너
+.globalStock {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  font-family: var(--font-family-primary);
+  
+  // 전체 컨테이너 스타일
+  #wrap {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--color-bg-primary);
+  }
+}
+
+// 페이지 컨테이너
+.container {
+  width: 100%;
+  max-width: 480px; // 모바일 최대 너비
+  margin: 0 auto;
+  padding: 0 var(--spacing-m);
+  box-sizing: border-box;
+}
+
+// 섹션 컨테이너
+.section {
+  padding: var(--spacing-l) 0;
+  
+  &--tight {
+    padding: var(--spacing-m) 0;
+  }
+  
+  &--loose {
+    padding: var(--spacing-xl) 0;
+  }
+}
+
+// =============================================================================
+// 🎯 BUTTONS
+// =============================================================================
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-m) var(--spacing-l);
+  border: none;
+  border-radius: var(--radius-s);
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-l);
+  font-weight: var(--font-weight-medium);
+  line-height: 1;
+  text-decoration: none;
+  cursor: pointer;
+  transition: var(--transition-fast);
+  user-select: none;
+  white-space: nowrap;
+  
+  &:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+  
+  // 기본 버튼 (Primary)
+  &,
+  &--primary {
+    background-color: var(--color-primary);
+    color: var(--color-bg-primary);
+    
+    &:hover {
+      background-color: var(--color-primary-dark);
+    }
+    
+    &:active {
+      transform: translateY(1px);
+    }
+  }
+  
+  // 보조 버튼 (Secondary)
+  &--secondary {
+    background-color: var(--color-bg-tertiary);
+    color: var(--color-text-primary);
+    border: 1px solid var(--color-border-primary);
+    
+    &:hover {
+      background-color: var(--color-bg-secondary);
+      border-color: var(--color-primary);
+    }
+  }
+  
+  // 위험 버튼 (Danger)
+  &--danger {
+    background-color: var(--color-danger);
+    color: var(--color-bg-primary);
+    
+    &:hover {
+      background-color: var(--color-danger-dark);
+    }
+  }
+  
+  // 성공 버튼 (Success)
+  &--success {
+    background-color: var(--color-success);
+    color: var(--color-bg-primary);
+    
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+  
+  // 아웃라인 버튼
+  &--outline {
+    background-color: transparent;
+    color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+    
+    &:hover {
+      background-color: var(--color-primary);
+      color: var(--color-bg-primary);
+    }
+  }
+  
+  // 크기 변형
+  &--small {
+    padding: var(--spacing-s) var(--spacing-m);
+    font-size: var(--font-size-sm);
+  }
+  
+  &--large {
+    padding: var(--spacing-l) var(--spacing-xl);
+    font-size: var(--font-size-xl);
+  }
+  
+  &--full {
+    width: 100%;
+  }
+}
+
+// =============================================================================
+// 📝 FORM ELEMENTS
+// =============================================================================
+
+// 폼 그룹
+.form-group {
+  margin-bottom: var(--spacing-m);
+  
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+// 라벨
+label {
+  display: block;
+  margin-bottom: var(--spacing-s);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text-primary);
+  font-size: var(--font-size-m);
+}
+
+// 입력 필드
+input,
+textarea,
+select {
+  width: 100%;
+  padding: var(--spacing-m);
+  border: 1px solid var(--color-border-primary);
+  border-radius: var(--radius-s);
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-l);
+  color: var(--color-text-primary);
+  background-color: var(--color-bg-primary);
+  transition: var(--transition-fast);
+  
+  &:focus {
+    outline: none;
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 2px rgba(65, 104, 246, 0.1);
+  }
+  
+  &:disabled {
+    background-color: var(--color-bg-secondary);
+    color: var(--color-text-disabled);
+    cursor: not-allowed;
+  }
+  
+  &::placeholder {
+    color: var(--color-text-disabled);
+  }
+}
+
+// 특별한 입력 타입들
+input[type="checkbox"],
+input[type="radio"] {
+  width: auto;
+  margin-right: var(--spacing-s);
+}
+
+// 텍스트 영역
+textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+// 셀렉트 박스
+select {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='m6 8 4 4 4-4'/%3e%3c/svg%3e");
+  background-position: right var(--spacing-m) center;
+  background-repeat: no-repeat;
+  background-size: 16px;
+  padding-right: calc(var(--spacing-m) + 20px);
+}
+
+// =============================================================================
+// 📊 TABLE ELEMENTS
+// =============================================================================
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin-bottom: var(--spacing-m);
+  background-color: var(--color-bg-primary);
+  border-radius: var(--radius-s);
+  overflow: hidden;
+  
+  th,
+  td {
+    padding: var(--spacing-m);
+    text-align: left;
+    border-bottom: 1px solid var(--color-border-primary);
+  }
+  
+  th {
+    background-color: var(--color-bg-secondary);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-text-primary);
+    font-size: var(--font-size-sm);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  
+  td {
+    font-size: var(--font-size-m);
+    color: var(--color-text-primary);
+  }
+  
+  tbody tr:hover {
+    background-color: var(--color-bg-secondary);
+  }
+  
+  // 테이블 변형
+  &--striped {
+    tbody tr:nth-child(even) {
+      background-color: var(--color-bg-secondary);
+    }
+  }
+  
+  &--bordered {
+    border: 1px solid var(--color-border-primary);
+    
+    th,
+    td {
+      border-right: 1px solid var(--color-border-primary);
+      
+      &:last-child {
+        border-right: none;
+      }
+    }
+  }
+  
+  // 반응형 테이블
+  &--responsive {
+    @include mobile-only {
+      border: 0;
+      
+      thead {
+        display: none;
+      }
+      
+      tbody,
+      tr,
+      td {
+        display: block;
+        width: 100%;
+      }
+      
+      tr {
+        border: 1px solid var(--color-border-primary);
+        border-radius: var(--radius-s);
+        margin-bottom: var(--spacing-m);
+        padding: var(--spacing-m);
+      }
+      
+      td {
+        border: none;
+        position: relative;
+        padding-left: 30%;
+        
+        &:before {
+          content: attr(data-label) ": ";
+          position: absolute;
+          left: 0;
+          top: 0;
+          font-weight: var(--font-weight-semibold);
+          color: var(--color-text-secondary);
+        }
+      }
+    }
+  }
+}
+
+// =============================================================================
+// 🖼️ MEDIA ELEMENTS
+// =============================================================================
+
+// 이미지
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  border-radius: var(--radius-s);
+  
+  &.img-rounded {
+    border-radius: var(--radius-l);
+  }
+  
+  &.img-circle {
+    border-radius: var(--radius-round);
+  }
+  
+  &.img-shadow {
+    box-shadow: var(--shadow-m);
+  }
+}
+
+// 비디오
+video {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--radius-s);
+}
+
+// 아이프레임 (임베드)
+iframe {
+  max-width: 100%;
+  border: none;
+  border-radius: var(--radius-s);
+}
+
+// =============================================================================
+// 📦 LAYOUT HELPERS
+// =============================================================================
+
+// 카드 컨테이너
+.card {
+  background-color: var(--color-bg-primary);
+  border: 1px solid var(--color-border-primary);
+  border-radius: var(--radius-l);
+  overflow: hidden;
+  box-shadow: var(--shadow-s);
+  
+  &__header {
+    padding: var(--spacing-l);
+    border-bottom: 1px solid var(--color-border-primary);
+    background-color: var(--color-bg-secondary);
+  }
+  
+  &__body {
+    padding: var(--spacing-l);
+  }
+  
+  &__footer {
+    padding: var(--spacing-l);
+    border-top: 1px solid var(--color-border-primary);
+    background-color: var(--color-bg-secondary);
+  }
+}
+
+// 구분선
+.divider {
+  border: none;
+  border-top: 1px solid var(--color-border-primary);
+  margin: var(--spacing-l) 0;
+  
+  &--thick {
+    border-top-width: 2px;
+  }
+  
+  &--dashed {
+    border-style: dashed;
+  }
+}
+
+// =============================================================================
+// 🎨 UTILITY COMPONENTS
+// =============================================================================
+
+// 배지
+.badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-xs) var(--spacing-s);
+  font-size: var(--font-size-s);
+  font-weight: var(--font-weight-medium);
+  border-radius: var(--radius-round);
+  white-space: nowrap;
+  
+  &--primary {
+    background-color: var(--color-primary);
+    color: var(--color-bg-primary);
+  }
+  
+  &--secondary {
+    background-color: var(--color-bg-tertiary);
+    color: var(--color-text-secondary);
+  }
+  
+  &--success {
+    background-color: var(--color-success);
+    color: var(--color-bg-primary);
+  }
+  
+  &--danger {
+    background-color: var(--color-danger);
+    color: var(--color-bg-primary);
+  }
+  
+  &--warning {
+    background-color: var(--color-warning);
+    color: var(--color-text-primary);
+  }
+}
+
+// 알림 박스
+.alert {
+  padding: var(--spacing-m) var(--spacing-l);
+  border-radius: var(--radius-s);
+  margin-bottom: var(--spacing-m);
+  border-left: 4px solid;
+  
+  &--info {
+    background-color: rgba(9, 125, 243, 0.1);
+    border-left-color: var(--color-info);
+    color: var(--color-info);
+  }
+  
+  &--success {
+    background-color: rgba(8, 189, 175, 0.1);
+    border-left-color: var(--color-success);
+    color: var(--color-success);
+  }
+  
+  &--warning {
+    background-color: rgba(255, 218, 77, 0.1);
+    border-left-color: var(--color-warning);
+    color: var(--color-text-primary);
+  }
+  
+  &--danger {
+    background-color: rgba(240, 62, 76, 0.1);
+    border-left-color: var(--color-danger);
+    color: var(--color-danger);
+  }
+}
+
+// 로딩 스피너
+.spinner {
+  @include loading-spinner(20px, var(--color-primary));
+  
+  &--large {
+    @include loading-spinner(40px, var(--color-primary));
+  }
+  
+  &--small {
+    @include loading-spinner(16px, var(--color-primary));
+  }
+}
+
+// =============================================================================
+// 📱 RESPONSIVE UTILITIES
+// =============================================================================
+
+// 모바일에서 숨김/표시
+@include mobile-only {
+  .hide-mobile { display: none !important; }
+  .show-mobile { display: block !important; }
+}
+
+@include tablet-up {
+  .hide-tablet { display: none !important; }
+  .show-tablet { display: block !important; }
+}
+
+@include desktop-up {
+  .hide-desktop { display: none !important; }
+  .show-desktop { display: block !important; }
+}
+
+// =============================================================================
+// 🔧 LEGACY COMPATIBILITY
+// =============================================================================
+
+// 기존 코드와의 호환성을 위한 임시 스타일
+// 리팩토링 완료 후 점진적으로 제거 예정
+
+// 구글 애드센스 반응형 (기존 유지)
+.example_responsive_1 {
+  width: 320px;
+  height: 100px;
+
+  @media (min-width: 500px) {
+    width: 468px;
+    height: 60px;
+  }
+
+  @media (min-width: 800px) {
+    width: 728px;
+    height: 90px;
+  }
+}
+
+// 기존 UI 프레임워크 호환성
+.ui-body-a,
+.ui-page-theme-a .ui-body-inherit,
+html .ui-bar-a .ui-body-inherit,
+html .ui-body-a .ui-body-inherit,
+html body .ui-group-theme-a .ui-body-inherit,
+html .ui-panel-page-container-a {
+  background: none;
+}

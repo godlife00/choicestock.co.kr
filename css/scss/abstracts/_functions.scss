@@ -1,0 +1,83 @@
+// =============================================================================
+// CHOICESTOCK SCSS FUNCTIONS
+// =============================================================================
+// 재사용 가능한 SCSS functions 정의
+
+// =============================================================================
+// 📏 SIZE FUNCTIONS
+// =============================================================================
+
+// px을 rem으로 변환
+@function rem($pixels, $context: 16) {
+  @return #{$pixels / $context}rem;
+}
+
+// px을 em으로 변환
+@function em($pixels, $context: 16) {
+  @return #{$pixels / $context}em;
+}
+
+// =============================================================================
+// 🎨 COLOR FUNCTIONS
+// =============================================================================
+
+// 투명도 적용
+@function alpha($color, $opacity) {
+  @return rgba($color, $opacity);
+}
+
+// 색상 밝게 만들기
+@function lighten-color($color, $amount: 10%) {
+  @return lighten($color, $amount);
+}
+
+// 색상 어둡게 만들기
+@function darken-color($color, $amount: 10%) {
+  @return darken($color, $amount);
+}
+
+// =============================================================================
+// 📱 RESPONSIVE FUNCTIONS
+// =============================================================================
+
+// 반응형 폰트 크기 계산
+@function responsive-font($min-size, $max-size, $min-width: 320, $max-width: 1200) {
+  @return calc(#{$min-size}px + (#{$max-size} - #{$min-size}) * ((100vw - #{$min-width}px) / (#{$max-width} - #{$min-width})));
+}
+
+// =============================================================================
+// 🔧 UTILITY FUNCTIONS
+// =============================================================================
+
+// z-index 관리
+@function z($layer: 'default') {
+  $z-indexes: (
+    'dropdown': 10,
+    'sticky': 20,
+    'fixed': 30,
+    'modal-backdrop': 40,
+    'modal': 50,
+    'popover': 60,
+    'tooltip': 70,
+    'toast': 80,
+    'max': 999
+  );
+
+  @if map-has-key($z-indexes, $layer) {
+    @return map-get($z-indexes, $layer);
+  } @else {
+    @warn "No z-index found for `#{$layer}` in $z-indexes map.";
+    @return 1;
+  }
+}
+
+// 간격 계산 (spacing system)
+@function spacing($multiplier: 1) {
+  $base-spacing: 8px;
+  @return $base-spacing * $multiplier;
+}
+
+// 그리드 column 너비 계산
+@function grid-width($columns, $total-columns: 12, $gutter: 20px) {
+  @return calc((100% - #{$gutter * ($total-columns - 1)}) / #{$total-columns} * #{$columns} + #{$gutter * ($columns - 1)});
+}

@@ -1,0 +1,212 @@
+// =============================================================================
+// CHOICESTOCK UTILITY HELPERS
+// =============================================================================
+// 자주 사용되는 헬퍼 클래스들
+
+// =============================================================================
+// 🔍 VISIBILITY UTILITIES
+// =============================================================================
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.invisible {
+  visibility: hidden !important;
+}
+
+// =============================================================================
+// 📏 SPACING UTILITIES
+// =============================================================================
+
+// Margin utilities
+.m-0 { margin: 0 !important; }
+.m-1 { margin: var(--spacing-xs) !important; }
+.m-2 { margin: var(--spacing-s) !important; }
+.m-3 { margin: var(--spacing-m) !important; }
+.m-4 { margin: var(--spacing-l) !important; }
+.m-5 { margin: var(--spacing-xl) !important; }
+
+.mt-0 { margin-top: 0 !important; }
+.mt-1 { margin-top: var(--spacing-xs) !important; }
+.mt-2 { margin-top: var(--spacing-s) !important; }
+.mt-3 { margin-top: var(--spacing-m) !important; }
+.mt-4 { margin-top: var(--spacing-l) !important; }
+.mt-5 { margin-top: var(--spacing-xl) !important; }
+
+.mb-0 { margin-bottom: 0 !important; }
+.mb-1 { margin-bottom: var(--spacing-xs) !important; }
+.mb-2 { margin-bottom: var(--spacing-s) !important; }
+.mb-3 { margin-bottom: var(--spacing-m) !important; }
+.mb-4 { margin-bottom: var(--spacing-l) !important; }
+.mb-5 { margin-bottom: var(--spacing-xl) !important; }
+
+// Padding utilities
+.p-0 { padding: 0 !important; }
+.p-1 { padding: var(--spacing-xs) !important; }
+.p-2 { padding: var(--spacing-s) !important; }
+.p-3 { padding: var(--spacing-m) !important; }
+.p-4 { padding: var(--spacing-l) !important; }
+.p-5 { padding: var(--spacing-xl) !important; }
+
+// =============================================================================
+// 🎨 COLOR UTILITIES
+// =============================================================================
+
+// Text colors
+.text-primary { color: var(--color-text-primary) !important; }
+.text-secondary { color: var(--color-text-secondary) !important; }
+.text-tertiary { color: var(--color-text-tertiary) !important; }
+.text-disabled { color: var(--color-text-disabled) !important; }
+
+.text-success { color: var(--color-success) !important; }
+.text-danger { color: var(--color-danger) !important; }
+.text-warning { color: var(--color-warning) !important; }
+.text-info { color: var(--color-info) !important; }
+
+// Background colors
+.bg-primary { background-color: var(--color-bg-primary) !important; }
+.bg-secondary { background-color: var(--color-bg-secondary) !important; }
+.bg-tertiary { background-color: var(--color-bg-tertiary) !important; }
+
+// =============================================================================
+// 📝 TYPOGRAPHY UTILITIES
+// =============================================================================
+
+// Font weights
+.fw-normal { font-weight: var(--font-weight-normal) !important; }
+.fw-medium { font-weight: var(--font-weight-medium) !important; }
+.fw-semibold { font-weight: var(--font-weight-semibold) !important; }
+.fw-bold { font-weight: var(--font-weight-bold) !important; }
+
+// Font sizes
+.fs-xs { font-size: var(--font-size-xs) !important; }
+.fs-s { font-size: var(--font-size-s) !important; }
+.fs-m { font-size: var(--font-size-m) !important; }
+.fs-l { font-size: var(--font-size-l) !important; }
+.fs-xl { font-size: var(--font-size-xl) !important; }
+
+// Text alignment
+.text-left { text-align: left !important; }
+.text-center { text-align: center !important; }
+.text-right { text-align: right !important; }
+
+// Text overflow
+.text-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+// =============================================================================
+// 🎯 LAYOUT UTILITIES
+// =============================================================================
+
+// Display
+.d-none { display: none !important; }
+.d-block { display: block !important; }
+.d-inline { display: inline !important; }
+.d-inline-block { display: inline-block !important; }
+.d-flex { display: flex !important; }
+.d-inline-flex { display: inline-flex !important; }
+
+// Flexbox utilities
+.flex-row { flex-direction: row !important; }
+.flex-column { flex-direction: column !important; }
+.flex-wrap { flex-wrap: wrap !important; }
+.flex-nowrap { flex-wrap: nowrap !important; }
+
+.justify-start { justify-content: flex-start !important; }
+.justify-center { justify-content: center !important; }
+.justify-end { justify-content: flex-end !important; }
+.justify-between { justify-content: space-between !important; }
+.justify-around { justify-content: space-around !important; }
+
+.align-start { align-items: flex-start !important; }
+.align-center { align-items: center !important; }
+.align-end { align-items: flex-end !important; }
+.align-stretch { align-items: stretch !important; }
+
+// Position
+.position-static { position: static !important; }
+.position-relative { position: relative !important; }
+.position-absolute { position: absolute !important; }
+.position-fixed { position: fixed !important; }
+.position-sticky { position: sticky !important; }
+
+// =============================================================================
+// 📱 RESPONSIVE UTILITIES
+// =============================================================================
+
+// Mobile only
+@include mobile-only {
+  .d-mobile-none { display: none !important; }
+  .d-mobile-block { display: block !important; }
+  .d-mobile-flex { display: flex !important; }
+}
+
+// Tablet and up
+@include tablet-up {
+  .d-tablet-none { display: none !important; }
+  .d-tablet-block { display: block !important; }
+  .d-tablet-flex { display: flex !important; }
+}
+
+// Desktop and up
+@include desktop-up {
+  .d-desktop-none { display: none !important; }
+  .d-desktop-block { display: block !important; }
+  .d-desktop-flex { display: flex !important; }
+}
+
+// =============================================================================
+// 🔧 INTERACTION UTILITIES
+// =============================================================================
+
+.pointer-events-none { pointer-events: none !important; }
+.pointer-events-auto { pointer-events: auto !important; }
+
+.user-select-none { user-select: none !important; }
+.user-select-all { user-select: all !important; }
+.user-select-auto { user-select: auto !important; }
+
+// =============================================================================
+// 🌟 SPECIAL UTILITIES
+// =============================================================================
+
+// Border radius
+.rounded-none { border-radius: 0 !important; }
+.rounded-xs { border-radius: var(--radius-xs) !important; }
+.rounded-s { border-radius: var(--radius-s) !important; }
+.rounded-m { border-radius: var(--radius-m) !important; }
+.rounded-l { border-radius: var(--radius-l) !important; }
+.rounded-xl { border-radius: var(--radius-xl) !important; }
+.rounded-full { border-radius: var(--radius-round) !important; }
+
+// Box shadow
+.shadow-none { box-shadow: none !important; }
+.shadow-xs { box-shadow: var(--shadow-xs) !important; }
+.shadow-s { box-shadow: var(--shadow-s) !important; }
+.shadow-m { box-shadow: var(--shadow-m) !important; }
+.shadow-l { box-shadow: var(--shadow-l) !important; }
+.shadow-xl { box-shadow: var(--shadow-xl) !important; }
+
+// Z-index
+.z-0 { z-index: 0 !important; }
+.z-10 { z-index: var(--z-index-dropdown) !important; }
+.z-20 { z-index: var(--z-index-sticky) !important; }
+.z-30 { z-index: var(--z-index-fixed) !important; }
+.z-40 { z-index: var(--z-index-modal-backdrop) !important; }
+.z-50 { z-index: var(--z-index-modal) !important; }

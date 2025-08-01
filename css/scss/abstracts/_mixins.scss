@@ -1,0 +1,736 @@
+// =============================================================================
+// CHOICESTOCK SCSS MIXINS
+// =============================================================================
+// 재사용 가능한 SCSS mixins 정의
+// 기존 helpers/_mixins.scss에서 정리하여 체계화
+
+// =============================================================================
+// 🔄 RESET & UTILITY MIXINS
+// =============================================================================
+
+// 기본 스타일 리셋
+@mixin reset-style {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: visible;
+  text-align: left;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+  text-decoration: none;
+  list-style: none;
+  transform: none;
+  transition: none;
+  animation: none;
+  opacity: 1;
+  visibility: visible;
+  z-index: auto;
+  pointer-events: auto;
+  cursor: default;
+  user-select: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+// 텍스트 말줄임 처리
+@mixin text-ellipsis($lines: 1) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  
+  @if $lines == 1 {
+    white-space: nowrap;
+  } @else {
+    display: -webkit-box;
+    -webkit-line-clamp: $lines;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+  }
+}
+
+// Flexbox 센터링
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// Flexbox 양쪽 정렬
+@mixin flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+// =============================================================================
+// 🔍 SEARCH COMPONENTS
+// =============================================================================
+
+// 검색창 스타일
+@mixin search-area {
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+  text-align: right;
+
+  .sch_title {
+    color: var(--color-text-primary);
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-bold);
+    text-align: left;
+    display: inline-block;
+    width: 45px;
+    line-height: 33px;
+
+    &.keydown {
+      display: none;
+    }
+  }
+
+  .searchInput {
+    outline: none;
+    width: 100%;
+    padding: 12px 50px 12px 24px;
+    box-sizing: border-box;
+    border-radius: 26px;
+    border: 1px solid var(--color-primary);
+    background: var(--color-bg-primary);
+    box-shadow: var(--shadow-custom);
+
+    color: var(--color-text-primary);
+    font-family: var(--font-family-body);
+    font-size: var(--font-size-l);
+    font-style: normal;
+    font-weight: var(--font-weight-medium);
+    line-height: var(--line-height-xxl);
+    letter-spacing: var(--letter-spacing-tight);
+
+    &.keydown {
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+      box-shadow: none;
+    }
+
+    &::placeholder {
+      color: var(--color-text-disabled);
+    }
+  }
+
+  .searchBtn {
+    display: inline-block;
+    width: 24px;
+    height: auto;
+    position: absolute;
+    right: 16px;
+    top: 14px;
+  }
+}
+
+// 검색 자동완성
+@mixin search-autocomplete {
+  background: var(--color-bg-primary);
+  border-bottom-left-radius: 26px;
+  border-bottom-right-radius: 26px;
+  display: none;
+  overflow: auto;
+  height: 100%;
+  margin: 0 auto;
+  width: 100%;
+
+  &.focus_on,
+  &._show {
+    display: block;
+  }
+
+  ul {
+    background: var(--color-bg-primary);
+    border-top: 0;
+    border-bottom-right-radius: 26px;
+    border-bottom-left-radius: 26px;
+
+    li {
+      display: inline-flex;
+      align-items: center;
+      width: 100%;
+      padding: 12px 16px;
+      box-sizing: border-box;
+      border: 1px solid var(--color-primary);
+      border-top: none;
+
+      &:last-child {
+        padding-bottom: 24px;
+        border-bottom-left-radius: 26px;
+        border-bottom-right-radius: 26px;
+      }
+
+      a {
+        display: flex;
+        align-items: center;
+        gap: 5px 10px;
+        width: 100%;
+        color: var(--color-text-primary);
+        font-family: var(--font-family-body);
+        font-size: var(--font-size-l);
+        font-style: normal;
+        font-weight: var(--font-weight-medium);
+        line-height: var(--line-height-xxl);
+        letter-spacing: var(--letter-spacing-tight);
+
+        .schCode {
+          color: var(--color-text-primary);
+          font-family: var(--font-family-body);
+          font-size: var(--font-size-l) !important;
+          width: 60px;
+          min-width: 48px;
+          max-width: 70px;
+          @include text-ellipsis(1);
+          flex-shrink: 0;
+        }
+
+        .schList {
+          color: var(--color-text-tertiary);
+          font-size: var(--font-size-l) !important;
+          max-width: calc(100% - 70px);
+          @include text-ellipsis(1);
+          flex: 1 1 0;
+
+          strong {
+            color: var(--color-text-tertiary);
+            font-weight: var(--font-weight-bold);
+          }
+        }
+      }
+    }
+
+    @media (max-width: 480px) {
+      li a {
+        .schCode {
+          width: 48px;
+          min-width: 40px;
+          max-width: 54px;
+          font-size: var(--font-size-md) !important;
+        }
+
+        .schList {
+          font-size: var(--font-size-md) !important;
+          max-width: calc(100% - 54px);
+        }
+      }
+    }
+  }
+
+  .no_result {
+    border: 1px solid var(--color-primary);
+    border-bottom-left-radius: 26px;
+    border-bottom-right-radius: 26px;
+    border-top: none;
+    padding: 30px 15px;
+    text-align: center;
+
+    p {
+      color: var(--color-text-tertiary);
+    }
+  }
+}
+
+// =============================================================================
+// 🎯 FILTER COMPONENTS
+// =============================================================================
+
+// 필터 리스트
+@mixin filter-list {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-s);
+  margin-top: var(--spacing-xl);
+
+  .swiper-slide {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    &:last-child {
+      margin-right: var(--spacing-xl) !important;
+    }
+
+    .filter_btn,
+    .filterBtn_link {
+      @include flex-center;
+      gap: var(--spacing-xs);
+      border-radius: var(--radius-xxl);
+      border: 1px solid var(--color-border-primary);
+      padding: 7px 16px;
+      box-sizing: border-box;
+
+      color: var(--color-text-secondary);
+      font-family: var(--font-family-body);
+      font-size: var(--font-size-md);
+      font-style: normal;
+      font-weight: var(--font-weight-medium);
+      line-height: var(--line-height-xl);
+      letter-spacing: var(--letter-spacing-tight);
+
+      &.active {
+        background: var(--color-text-primary);
+        color: var(--color-bg-primary);
+        font-weight: var(--font-weight-semibold);
+        border-color: transparent;
+      }
+    }
+  }
+}
+
+// 필터 스와이퍼
+@mixin filter-swiper {
+  padding: 0 20px;
+  box-sizing: border-box;
+
+  &.swiper-container-initialized {
+    visibility: visible;
+  }
+
+  .swiper-wrapper {
+    transition-timing-function: linear;
+  }
+
+  .swiper-slide {
+    display: block;
+    width: auto;
+  }
+}
+
+// =============================================================================
+// 🔔 TOOLTIP COMPONENTS
+// =============================================================================
+
+// 클릭 유도 툴팁
+@mixin tooltip-content {
+  pointer-events: none;
+  user-select: none;
+  position: absolute;
+  @include flex-center;
+  flex-wrap: wrap;
+  padding: var(--spacing-s);
+  border-radius: 100px;
+  background: var(--color-highlight);
+  max-width: 200px;
+  z-index: var(--z-index-tooltip);
+
+  .tooltip_icon {
+    position: absolute;
+    right: 20px;
+    top: -12px;
+  }
+
+  .tooltip_text {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  .txt {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    color: var(--color-text-primary);
+    text-align: left;
+    font-family: var(--font-family-body);
+    font-size: var(--font-size-xs);
+    font-style: normal;
+    font-weight: var(--font-weight-semibold);
+    line-height: var(--line-height-xs);
+    letter-spacing: var(--letter-spacing-tight);
+  }
+}
+
+// =============================================================================
+// 📱 APP DOWNLOAD COMPONENTS
+// =============================================================================
+
+// 앱 다운로드 섹션
+@mixin app-download {
+  max-width: 480px;
+  margin: var(--spacing-xxl) auto 0;
+  padding: var(--spacing-xl) var(--spacing-l) 28px;
+  box-sizing: border-box;
+  border-radius: var(--radius-xl);
+  background: var(--color-primary-light);
+
+  .appdown_box {
+    display: flex;
+    gap: var(--spacing-s);
+    width: 100%;
+
+    .app_box {
+      width: 100%;
+    }
+  }
+
+  .app_title {
+    color: var(--color-primary-lighter);
+    font-family: var(--font-family-body);
+    font-size: var(--font-size-md);
+    font-style: normal;
+    font-weight: var(--font-weight-normal);
+    line-height: normal;
+    letter-spacing: var(--letter-spacing-tight);
+  }
+
+  .app_sum {
+    margin-top: var(--spacing-xs);
+    color: var(--color-bg-primary);
+    font-family: var(--font-family-title);
+    font-size: var(--font-size-3xl);
+    font-style: normal;
+    font-weight: var(--font-weight-semibold);
+    line-height: var(--line-height-3xl);
+    letter-spacing: var(--letter-spacing-tight);
+  }
+
+  .appdown_img {
+    width: 72px;
+    height: 72px;
+    object-fit: contain;
+  }
+
+  .app_download_btn {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    margin-top: var(--spacing-l);
+
+    a {
+      @include flex-center;
+
+      img {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+}
+
+// =============================================================================
+// 🎨 BANNER COMPONENTS (통합)
+// =============================================================================
+
+// 기본 배너 스타일
+@mixin banner-base {
+  overflow: hidden;
+  border-radius: var(--radius-l);
+  margin: 0 auto var(--spacing-xl);
+
+  .premium_banner {
+    display: flex;
+    align-items: center;
+    gap: 4px 12px;
+    width: 100%;
+    height: 84px;
+    padding: 18px 20px;
+    box-sizing: border-box;
+    border-radius: var(--radius-l);
+    max-width: 340px;
+    margin: 0 auto;
+
+    @media (max-width: 374px) {
+      padding: 23px 16px;
+    }
+
+    .banner_bg {
+      position: relative;
+      display: inline-flex;
+      border-radius: 12px;
+      background-color: var(--color-bg-primary);
+      min-width: 48px;
+      width: 48px;
+      height: 48px;
+      flex-shrink: 0;
+
+      img {
+        @include flex-center;
+        width: 48px;
+        height: 48px;
+      }
+    }
+
+    .link_banner {
+      position: relative;
+      width: 100%;
+      box-sizing: border-box;
+      text-align: left;
+      display: inline-block;
+
+      color: var(--color-text-primary);
+      font-family: var(--font-family-primary);
+      font-size: var(--font-size-l);
+      font-style: normal;
+      font-weight: var(--font-weight-bold);
+      line-height: normal;
+      letter-spacing: normal;
+
+      b {
+        color: var(--color-text-primary);
+        font-weight: var(--font-weight-bold);
+      }
+
+      span {
+        display: block;
+        padding-bottom: var(--spacing-xs);
+        color: var(--color-text-secondary);
+        font-family: var(--font-family-primary);
+        font-size: var(--font-size-sm);
+        font-style: normal;
+        font-weight: var(--font-weight-medium);
+        line-height: normal;
+        letter-spacing: normal;
+      }
+    }
+
+    .banner_btn {
+      @include flex-center;
+      padding: 10px 12px;
+      box-sizing: border-box;
+      min-width: 95px;
+      border-radius: var(--radius-s);
+      background: var(--color-primary);
+      color: var(--color-bg-primary);
+      font-family: var(--font-family-body);
+      font-size: var(--font-size-sm);
+      font-style: normal;
+      font-weight: var(--font-weight-semibold);
+      line-height: var(--line-height-s);
+      letter-spacing: var(--letter-spacing-tight);
+    }
+  }
+}
+
+// 프로모션 배너 (1000원 이벤트 등)
+@mixin banner-promo {
+  overflow: hidden;
+  border-radius: var(--radius-l);
+  background: var(--color-primary);
+  margin: var(--spacing-m) 20px var(--spacing-xxl);
+  padding: 15px 16px 15px var(--spacing-xl);
+
+  .premium_banner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 4px 12px;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 340px;
+    margin: 0 auto;
+
+    .banner_bg {
+      position: relative;
+      display: inline-flex;
+      border-radius: 12px;
+      min-width: 100px;
+      width: 100px;
+      flex-shrink: 0;
+
+      img {
+        @include flex-center;
+        width: 100px;
+      }
+
+      @media (max-width: 374px) {
+        min-width: 90px;
+        width: 90px;
+
+        img {
+          width: 90px;
+        }
+      }
+    }
+
+    .link_banner {
+      position: relative;
+      width: 100%;
+      box-sizing: border-box;
+      text-align: left;
+      display: inline-block;
+      color: var(--color-bg-primary);
+      font-family: var(--font-family-title);
+      font-size: var(--font-size-l);
+      font-style: normal;
+      font-weight: var(--font-weight-semibold);
+      line-height: var(--line-height-l);
+      letter-spacing: var(--letter-spacing-tight);
+
+      b {
+        color: var(--color-bg-primary);
+        font-weight: var(--font-weight-semibold);
+
+        i {
+          color: var(--color-warning);
+          font-family: var(--font-family-title);
+          font-size: var(--font-size-l);
+          font-style: normal;
+          font-weight: var(--font-weight-semibold);
+          line-height: var(--line-height-l);
+          letter-spacing: var(--letter-spacing-tight);
+        }
+      }
+
+      span {
+        display: block;
+        padding-bottom: var(--spacing-xs);
+        color: var(--color-primary-lighter);
+        font-family: var(--font-family-primary);
+        font-size: var(--font-size-sm);
+        font-style: normal;
+        font-weight: var(--font-weight-medium);
+        line-height: normal;
+      }
+    }
+  }
+}
+
+// CTA 배너 (컨텐츠 중간/하단용)
+@mixin banner-cta {
+  overflow: hidden;
+  border-radius: var(--radius-l);
+  background: var(--color-bg-tertiary);
+  margin: 0 auto var(--spacing-xl);
+
+  .premium_banner {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-s) var(--spacing-m);
+    width: 100%;
+    padding: var(--spacing-l) 20px;
+    box-sizing: border-box;
+    max-width: 340px;
+    margin: 0 auto;
+
+    @media (max-width: 374px) {
+      padding: 23px 16px;
+    }
+
+    .banner_bg {
+      position: relative;
+      display: inline-flex;
+      border-radius: 12px;
+      background-color: var(--color-bg-primary);
+      min-width: 48px;
+      width: 48px;
+      height: 48px;
+      flex-shrink: 0;
+
+      img {
+        @include flex-center;
+        width: 48px;
+        height: 48px;
+      }
+    }
+
+    .link_banner {
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      gap: var(--spacing-xs);
+      width: 100%;
+      box-sizing: border-box;
+      color: var(--color-text-primary);
+      font-family: var(--font-family-title);
+      font-size: var(--font-size-l);
+      font-style: normal;
+      font-weight: var(--font-weight-semibold);
+      line-height: var(--line-height-l);
+      letter-spacing: var(--letter-spacing-tight);
+      word-break: break-all;
+      word-wrap: break-word;
+
+      b {
+        color: var(--color-text-primary);
+        font-weight: var(--font-weight-semibold);
+        line-height: var(--line-height-l);
+        word-break: break-all;
+        word-wrap: break-word;
+      }
+
+      span {
+        display: block;
+        color: var(--color-text-secondary);
+        font-family: var(--font-family-body);
+        font-size: var(--font-size-m);
+        font-style: normal;
+        font-weight: var(--font-weight-normal);
+        line-height: var(--line-height-sm);
+        letter-spacing: var(--letter-spacing-tight);
+      }
+    }
+
+    .banner_btn {
+      @include flex-center;
+      padding: 10px 12px;
+      box-sizing: border-box;
+      min-width: 95px;
+      border-radius: var(--radius-s);
+      background: var(--color-primary);
+      color: var(--color-bg-primary);
+      font-family: var(--font-family-body);
+      font-size: var(--font-size-sm);
+      font-style: normal;
+      font-weight: var(--font-weight-semibold);
+      line-height: var(--line-height-s);
+      letter-spacing: var(--letter-spacing-tight);
+    }
+  }
+}
+
+// =============================================================================
+// 📱 RESPONSIVE MIXINS
+// =============================================================================
+
+// 반응형 미디어 쿼리
+@mixin mobile-only {
+  @media (max-width: #{var(--bp-mobile-l) - 1px}) {
+    @content;
+  }
+}
+
+@mixin tablet-up {
+  @media (min-width: var(--bp-tablet)) {
+    @content;
+  }
+}
+
+@mixin desktop-up {
+  @media (min-width: var(--bp-desktop)) {
+    @content;
+  }
+}
+
+// =============================================================================
+// 🎨 VISUAL EFFECTS
+// =============================================================================
+
+// 로딩 애니메이션
+@mixin loading-spinner($size: 20px, $color: var(--color-primary)) {
+  display: inline-block;
+  width: $size;
+  height: $size;
+  border: 2px solid rgba($color, 0.3);
+  border-radius: 50%;
+  border-top-color: $color;
+  animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

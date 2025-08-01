@@ -1,0 +1,449 @@
+// =============================================================================
+// CHOICESTOCK TYPOGRAPHY SYSTEM
+// =============================================================================
+// 폰트 관련 스타일 정의 - 일관된 타이포그래피 시스템 구축
+
+// =============================================================================
+// 📝 HEADING STYLES
+// =============================================================================
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 var(--spacing-m) 0;
+  font-family: var(--font-family-title);
+  font-weight: var(--font-weight-semibold);
+  line-height: 1.2;
+  letter-spacing: var(--letter-spacing-tight);
+  color: var(--color-text-primary);
+}
+
+h1 {
+  font-size: var(--font-size-4xl);
+  line-height: var(--line-height-4xl);
+  font-weight: var(--font-weight-bold);
+  
+  @include mobile-only {
+    font-size: var(--font-size-3xl);
+    line-height: var(--line-height-3xl);
+  }
+}
+
+h2 {
+  font-size: var(--font-size-3xl);
+  line-height: var(--line-height-3xl);
+  
+  @include mobile-only {
+    font-size: var(--font-size-xxl);
+    line-height: var(--line-height-xxl);
+  }
+}
+
+h3 {
+  font-size: var(--font-size-xxl);
+  line-height: var(--line-height-xxl);
+  
+  @include mobile-only {
+    font-size: var(--font-size-xl);
+    line-height: var(--line-height-xl);
+  }
+}
+
+h4 {
+  font-size: var(--font-size-xl);
+  line-height: var(--line-height-xl);
+  
+  @include mobile-only {
+    font-size: var(--font-size-l);
+    line-height: var(--line-height-l);
+  }
+}
+
+h5 {
+  font-size: var(--font-size-l);
+  line-height: var(--line-height-l);
+}
+
+h6 {
+  font-size: var(--font-size-md);
+  line-height: var(--line-height-l);
+  font-weight: var(--font-weight-semibold);
+}
+
+// =============================================================================
+// 📄 BODY TEXT STYLES
+// =============================================================================
+
+p {
+  margin: 0 0 var(--spacing-m) 0;
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-l);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--line-height-xxl);
+  letter-spacing: var(--letter-spacing-tight);
+  color: var(--color-text-primary);
+  word-break: keep-all;
+  word-wrap: break-word;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  // 작은 텍스트
+  &.text-small {
+    font-size: var(--font-size-m);
+    line-height: var(--line-height-sm);
+  }
+
+  // 큰 텍스트
+  &.text-large {
+    font-size: var(--font-size-xl);
+    line-height: var(--line-height-xl);
+  }
+
+  // 리드 텍스트 (중요한 단락)
+  &.lead {
+    font-size: var(--font-size-xl);
+    line-height: var(--line-height-xl);
+    font-weight: var(--font-weight-medium);
+    color: var(--color-text-secondary);
+    margin-bottom: var(--spacing-l);
+  }
+}
+
+// =============================================================================
+// 🔗 LINK STYLES
+// =============================================================================
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: var(--transition-fast);
+  cursor: pointer;
+
+  &:hover {
+    color: var(--color-primary-dark);
+    text-decoration: underline;
+  }
+
+  &:focus {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+    border-radius: var(--radius-xs);
+  }
+
+  &:active {
+    color: var(--color-primary-dark);
+  }
+
+  // 외부 링크 표시
+  &[href^="http"]:not([href*="choicestock"]):after {
+    content: " ↗";
+    font-size: 0.8em;
+    opacity: 0.7;
+  }
+
+  // 전화번호 링크
+  &[href^="tel"] {
+    color: var(--color-primary);
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  // 이메일 링크
+  &[href^="mailto"] {
+    color: var(--color-primary);
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+// =============================================================================
+// ✨ TEXT FORMATTING
+// =============================================================================
+
+// 강조 텍스트
+strong,
+b {
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text-primary);
+}
+
+// 이탤릭 텍스트
+em,
+i {
+  font-style: italic;
+  color: var(--color-text-secondary);
+}
+
+// 작은 텍스트
+small {
+  font-size: var(--font-size-s);
+  line-height: var(--line-height-s);
+  color: var(--color-text-tertiary);
+}
+
+// 마크 (하이라이트)
+mark {
+  background-color: var(--color-warning);
+  color: var(--color-text-primary);
+  padding: 0 var(--spacing-xs);
+  border-radius: var(--radius-xs);
+}
+
+// 삭제된 텍스트
+del,
+s {
+  text-decoration: line-through;
+  color: var(--color-text-disabled);
+}
+
+// 삽입된 텍스트
+ins {
+  text-decoration: underline;
+  color: var(--color-success);
+  background-color: transparent;
+}
+
+// 인용문
+blockquote {
+  margin: var(--spacing-l) 0;
+  padding: var(--spacing-m) var(--spacing-l);
+  border-left: 4px solid var(--color-primary);
+  background-color: var(--color-bg-secondary);
+  border-radius: 0 var(--radius-s) var(--radius-s) 0;
+
+  p {
+    margin: 0;
+    font-style: italic;
+    color: var(--color-text-secondary);
+  }
+
+  cite {
+    display: block;
+    margin-top: var(--spacing-s);
+    font-size: var(--font-size-m);
+    color: var(--color-text-tertiary);
+    font-style: normal;
+
+    &:before {
+      content: "— ";
+    }
+  }
+}
+
+// 코드
+code {
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+  font-size: 0.9em;
+  background-color: var(--color-bg-tertiary);
+  color: var(--color-danger);
+  padding: 2px var(--spacing-xs);
+  border-radius: var(--radius-xs);
+  border: 1px solid var(--color-border-primary);
+}
+
+pre {
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+  background-color: var(--color-bg-tertiary);
+  border: 1px solid var(--color-border-primary);
+  border-radius: var(--radius-s);
+  padding: var(--spacing-m);
+  overflow-x: auto;
+  margin: var(--spacing-m) 0;
+
+  code {
+    background: none;
+    border: none;
+    padding: 0;
+    color: var(--color-text-primary);
+  }
+}
+
+// =============================================================================
+// 📋 LIST STYLES
+// =============================================================================
+
+ul,
+ol {
+  margin: 0 0 var(--spacing-m) 0;
+  padding-left: var(--spacing-l);
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  li {
+    margin-bottom: var(--spacing-xs);
+    font-family: var(--font-family-body);
+    font-size: var(--font-size-l);
+    line-height: var(--line-height-xxl);
+    color: var(--color-text-primary);
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+// 순서없는 목록
+ul {
+  list-style: none;
+
+  li {
+    position: relative;
+    padding-left: var(--spacing-m);
+
+    &:before {
+      content: "•";
+      color: var(--color-primary);
+      font-size: 1.2em;
+      position: absolute;
+      left: 0;
+      top: -2px;
+    }
+  }
+
+  // 중첩된 목록
+  ul {
+    margin-top: var(--spacing-xs);
+    margin-bottom: var(--spacing-xs);
+
+    li:before {
+      content: "◦";
+      font-size: 1em;
+      top: 0;
+    }
+  }
+}
+
+// 순서있는 목록
+ol {
+  list-style: none;
+  counter-reset: list-counter;
+
+  li {
+    position: relative;
+    padding-left: var(--spacing-l);
+    counter-increment: list-counter;
+
+    &:before {
+      content: counter(list-counter) ".";
+      color: var(--color-primary);
+      font-weight: var(--font-weight-semibold);
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+  }
+
+  // 중첩된 순서있는 목록
+  ol {
+    margin-top: var(--spacing-xs);
+    margin-bottom: var(--spacing-xs);
+    counter-reset: nested-counter;
+
+    li {
+      counter-increment: nested-counter;
+
+      &:before {
+        content: counter(list-counter) "." counter(nested-counter) ".";
+      }
+    }
+  }
+}
+
+// 설명 목록
+dl {
+  margin: 0 0 var(--spacing-m) 0;
+
+  dt {
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-text-primary);
+    margin-bottom: var(--spacing-xs);
+  }
+
+  dd {
+    margin: 0 0 var(--spacing-m) var(--spacing-l);
+    color: var(--color-text-secondary);
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+// =============================================================================
+// 🎨 UTILITY CLASSES
+// =============================================================================
+
+// 텍스트 색상 유틸리티
+.text-primary { color: var(--color-text-primary) !important; }
+.text-secondary { color: var(--color-text-secondary) !important; }
+.text-tertiary { color: var(--color-text-tertiary) !important; }
+.text-disabled { color: var(--color-text-disabled) !important; }
+.text-success { color: var(--color-success) !important; }
+.text-danger { color: var(--color-danger) !important; }
+.text-warning { color: var(--color-warning) !important; }
+.text-info { color: var(--color-info) !important; }
+
+// 폰트 크기 유틸리티
+.text-xs { font-size: var(--font-size-xs) !important; }
+.text-s { font-size: var(--font-size-s) !important; }
+.text-sm { font-size: var(--font-size-sm) !important; }
+.text-m { font-size: var(--font-size-m) !important; }
+.text-md { font-size: var(--font-size-md) !important; }
+.text-l { font-size: var(--font-size-l) !important; }
+.text-xl { font-size: var(--font-size-xl) !important; }
+.text-xxl { font-size: var(--font-size-xxl) !important; }
+.text-3xl { font-size: var(--font-size-3xl) !important; }
+.text-4xl { font-size: var(--font-size-4xl) !important; }
+
+// 폰트 두께 유틸리티
+.font-normal { font-weight: var(--font-weight-normal) !important; }
+.font-medium { font-weight: var(--font-weight-medium) !important; }
+.font-semibold { font-weight: var(--font-weight-semibold) !important; }
+.font-bold { font-weight: var(--font-weight-bold) !important; }
+
+// 텍스트 정렬 유틸리티
+.text-left { text-align: left !important; }
+.text-center { text-align: center !important; }
+.text-right { text-align: right !important; }
+.text-justify { text-align: justify !important; }
+
+// 텍스트 변환 유틸리티
+.text-uppercase { text-transform: uppercase !important; }
+.text-lowercase { text-transform: lowercase !important; }
+.text-capitalize { text-transform: capitalize !important; }
+
+// 줄 높이 유틸리티
+.leading-none { line-height: 1 !important; }
+.leading-tight { line-height: 1.25 !important; }
+.leading-normal { line-height: 1.5 !important; }
+.leading-relaxed { line-height: 1.75 !important; }
+.leading-loose { line-height: 2 !important; }
+
+// =============================================================================
+// 📱 RESPONSIVE TYPOGRAPHY
+// =============================================================================
+
+// 모바일에서 폰트 크기 조정
+@include mobile-only {
+  h1 { font-size: var(--font-size-3xl); }
+  h2 { font-size: var(--font-size-xxl); }
+  h3 { font-size: var(--font-size-xl); }
+  h4 { font-size: var(--font-size-l); }
+  
+  .text-4xl { font-size: var(--font-size-3xl) !important; }
+  .text-3xl { font-size: var(--font-size-xxl) !important; }
+  .text-xxl { font-size: var(--font-size-xl) !important; }
+}

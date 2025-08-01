@@ -1,0 +1,500 @@
+// =============================================================================
+// CHOICESTOCK RESET STYLES
+// =============================================================================
+// 브라우저 기본 스타일 초기화 - 일관된 기준점 제공
+// 기존 helpers/_reset.scss를 새로운 변수 시스템으로 개선
+
+@charset "utf-8";
+
+// =============================================================================
+// 🌐 FONT IMPORTS
+// =============================================================================
+// 외부 폰트 파일 import
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css");
+@import url('https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css');
+@import url('https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-jp.css');
+
+// =============================================================================
+// 🔄 RESET STYLES
+// =============================================================================
+
+// HTML5 display definitions
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+// 모든 요소 기본 스타일 초기화
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  line-height: normal;
+  font-weight: var(--font-weight-normal);
+  letter-spacing: var(--letter-spacing-tight);
+  color: var(--color-text-primary);
+  vertical-align: baseline;
+  word-break: keep-all;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
+  -webkit-tap-highlight-color: transparent;
+  text-shadow: none;
+  box-shadow: none;
+}
+
+// =============================================================================
+// 📱 DOCUMENT & BODY
+// =============================================================================
+
+html {
+  font-size: var(--font-size-l); // 16px 기본
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  box-sizing: border-box;
+
+  // 반응형 폰트 크기
+  @media (min-width: 320px) and (max-width: 358px) {
+    font-size: var(--font-size-m); // 14px for small screens
+  }
+
+  @media (min-width: 375px) and (max-width: 700px) {
+    font-size: var(--font-size-l); // 16px for mobile
+  }
+
+  @media (min-width: 701px) and (max-width: 759px) {
+    font-size: var(--font-size-l); // 16px for large mobile
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  word-break: break-all;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  font-family: var(--font-family-primary);
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
+}
+
+// =============================================================================
+// 🎵 MEDIA ELEMENTS
+// =============================================================================
+
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+img {
+  border: 0;
+  vertical-align: top;
+  max-width: 100%;
+  height: auto;
+}
+
+// =============================================================================
+// 📝 TEXT ELEMENTS
+// =============================================================================
+
+// Lists
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+// Quotes
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+// Links
+a {
+  text-decoration: none;
+  color: inherit;
+  background-color: transparent;
+
+  &[href^="tel"] {
+    font-style: normal;
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    text-decoration: none;
+    outline: 0;
+  }
+}
+
+// Text formatting
+b,
+strong {
+  font-weight: var(--font-weight-bold);
+}
+
+em,
+i {
+  font-style: italic;
+}
+
+address,
+caption,
+em,
+var {
+  font-style: normal;
+  font-weight: var(--font-weight-normal);
+}
+
+dfn {
+  font-style: italic;
+}
+
+sub,
+sup {
+  position: relative;
+  line-height: 0;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+pre {
+  overflow: auto;
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+hr {
+  height: 0;
+  box-sizing: content-box;
+  border: 0;
+  border-top: 1px solid var(--color-border-primary);
+  margin: var(--spacing-m) 0;
+}
+
+// =============================================================================
+// 📋 FORM ELEMENTS
+// =============================================================================
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  margin: 0;
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+}
+
+button {
+  overflow: visible;
+  cursor: pointer;
+  border-radius: 0;
+  -webkit-appearance: button;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+input {
+  vertical-align: middle;
+  line-height: normal;
+
+  &[type="text"],
+  &[type="password"],
+  &[type="email"],
+  &[type="number"],
+  &[type="tel"],
+  &[type="url"] {
+    border-radius: 0;
+    -webkit-appearance: none;
+    appearance: none;
+    border: 1px solid var(--color-border-primary);
+    padding: var(--spacing-s) var(--spacing-m);
+    background-color: var(--color-bg-primary);
+  }
+
+  &[type="checkbox"],
+  &[type="radio"] {
+    padding: 0;
+  }
+
+  &:checked[type="checkbox"] {
+    -webkit-appearance: checkbox;
+    appearance: checkbox;
+  }
+
+  &:checked[type="radio"] {
+    -webkit-appearance: radio;
+    appearance: radio;
+  }
+
+  &[type="button"],
+  &[type="submit"],
+  &[type="reset"],
+  &[type="file"] {
+    border-radius: 0;
+    -webkit-appearance: button;
+    appearance: button;
+  }
+}
+
+select {
+  text-transform: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: var(--color-bg-primary);
+  border: 1px solid var(--color-border-primary);
+  padding: var(--spacing-s) var(--spacing-m);
+}
+
+optgroup {
+  font-weight: var(--font-weight-bold);
+}
+
+textarea {
+  overflow: auto;
+  border: 1px solid var(--color-border-primary);
+  -webkit-appearance: none;
+  appearance: none;
+  resize: vertical;
+  padding: var(--spacing-s) var(--spacing-m);
+  background-color: var(--color-bg-primary);
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+legend {
+  padding: 0;
+  border: 0;
+  color: var(--color-text-primary);
+  font-weight: var(--font-weight-semibold);
+}
+
+// =============================================================================
+// 📊 TABLE ELEMENTS
+// =============================================================================
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+
+td,
+th {
+  padding: 0;
+  text-align: left;
+}
+
+// =============================================================================
+// 📱 MOBILE OPTIMIZATIONS
+// =============================================================================
+
+// iOS Safari 관련 최적화
+@supports (-webkit-touch-callout: none) {
+  input,
+  textarea,
+  select {
+    -webkit-border-radius: 0;
+    border-radius: 0;
+  }
+}
+
+// Android WebView 최적화
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  select,
+  textarea,
+  input {
+    font-size: var(--font-size-l);
+  }
+}
+
+// =============================================================================
+// 🎯 ACCESSIBILITY
+// =============================================================================
+
+// Focus styles
+:focus {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+// Skip to main content (for screen readers)
+.skip-to-main {
+  position: absolute;
+  top: -40px;
+  left: 6px;
+  background: var(--color-primary);
+  color: var(--color-bg-primary);
+  padding: 8px;
+  text-decoration: none;
+  border-radius: var(--radius-s);
+  z-index: var(--z-index-max);
+  
+  &:focus {
+    top: 6px;
+  }
+}
+
+// =============================================================================
+// 🚫 REMOVE BROWSER DEFAULTS
+// =============================================================================
+
+// Remove default browser styling for mobile
+* {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+// Allow text selection where needed
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+div,
+input,
+textarea {
+  -webkit-user-select: auto;
+  -moz-user-select: auto;
+  -ms-user-select: auto;
+  user-select: auto;
+}
