@@ -9175,7 +9175,7 @@
 .globalStock .sub_search .sub_mid.research_board {
 	margin: 0 auto 20px;
 	.filter_list {		
-		margin-top: 0;
+		margin-top: 0 !important;
 	}
 	.lst_type {
 		width: calc(100% - 30px);
@@ -14272,7 +14272,7 @@ body.v_signalStreng {
 	// padding-bottom: 32px;
 	.filter_list {
 		@include filter_list;
-		margin-top: 0;		
+		// margin-top: 0;		
 	}
 	.filter-swiper {				
 		@include filter_swiper;

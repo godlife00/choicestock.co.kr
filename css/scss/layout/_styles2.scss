@@ -6053,8 +6053,8 @@
 				position: absolute;
 				width: 16px;
 				height: 16px;
-				right: 0;
-				top: 2px;
+				right: 9px;
+				top: 9px;
 				z-index: 81;
 			}
 		}
@@ -6062,38 +6062,37 @@
 		select {
 			cursor: pointer;
 			width: 100%;
-			padding: 0 24px 0 12px;			
+			padding: 8px 12px;			
 			box-sizing: border-box;
-			border-radius: 8px;
 			border: none;
-			background-color: #fff;
+			border-radius: var(--Radius-r-02, 8px);
+			background: var(--Background-primary-light-background, #F1F4F6);
 			appearance: none; // 기본 셀렉트 스타일 제거
-			text-align: right !important;
-			color: var(--Font-secondary-body, #4E5866);
+			
+			color: var(--Font-secondary-body, #4E5866);			
 			font-family: var(--Body, Pretendard);
-			font-size: var(--Size-md-15, 15px);
+			font-size: var(--Size-sm, 14px);
 			font-style: normal;
 			font-weight: var(--Weight-500, 500);
-			line-height: var(--Line-height-xl-01, 24px); /* 160% */
-			letter-spacing: var(--Tracking-md, -0.3px);										
+			line-height: var(--Line-height-sm, 18px); /* 128.571% */
+			letter-spacing: var(--Tracking-md, -0.3px);								
 			opacity: 1;				
 			appearance: none; // 기본 셀렉트 스타일 제거		
 
 			option {
+				border: 1px solid var(--Background-primary-light-background, #F1F4F6);
 				background-color: #fff;
-				color: var(--Font-secondary-body, #4E5866);
+				color: var(--Font-secondary-body, #4E5866);			
 				font-family: var(--Body, Pretendard);
-				font-size: var(--Size-md-15, 15px);
+				font-size: var(--Size-sm, 14px);
 				font-style: normal;
 				font-weight: var(--Weight-500, 500);
-				line-height: var(--Line-height-xl-01, 24px); /* 160% */
+				line-height: var(--Line-height-sm, 18px); /* 128.571% */
 				letter-spacing: var(--Tracking-md, -0.3px);
-				padding: 8px 12px;				
-				text-align: right !important;							
 			}
 
 			option:checked {
-				text-align: right; // 선택된 항목만 우측 정렬
+				// text-align: right; // 선택된 항목만 우측 정렬
 				// color: red;
 			}
 
@@ -6270,8 +6269,21 @@
 			td, th {
 				height: 30px;
 				text-align: center;
-				border-bottom: 1px solid var(--Gray-gray700, #4E5866) !important;				
+				border-bottom: none !important;			
+				&::before {
+					content: "";
+					position: absolute;
+					top: auto;
+					left: auto;
+					right: 0;					
+					bottom: 0;
+					display: inline-block;
+					width: 100%;
+					height: 1px;
+					background-color: var(--Gray-gray700, #4E5866);				
+				}				
 			}
+
 		}
 
 		th {
@@ -6400,7 +6412,7 @@
 		.scroll_table {
 			margin-top: 16px;
 			margin-bottom: 30px;
-			padding-bottom: 1px;
+			padding-bottom: 5px;
 			width: 100%;
 			overflow: scroll;
 			overflow-y: hidden;						
@@ -6429,7 +6441,7 @@
 				thead {					
 					th, td {
 						border-top: 1px solid var(--Border-tertiary-border, #DADCE0);
-						padding: 8px 8px;
+						padding: 4px 8px;
 						text-align: right;
 						color: var(--Font-tertiary-caption, #8C98A7) !important;
 						font-family: var(--Body, Pretendard);
@@ -6487,8 +6499,8 @@
 
 					span {
 						display: inline-block;
-						text-align: center;
-						width: 58px;
+						// text-align: center;
+						// width: 58px;
 						color: #939393;
 					}
 				}
@@ -6517,7 +6529,7 @@
 					padding-left: 12px;					
 					box-sizing: border-box;
 					width: 108px;
-					background-color: #fff;					
+					background-color: #fff;										
 					border-right: 1px solid var(--Border-tertiary-border, #DADCE0) !important;
 					color: var(--Font-secondary-title, #24282C);
 					font-family: var(--Body, Pretendard);
